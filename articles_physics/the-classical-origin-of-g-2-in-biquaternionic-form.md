@@ -240,10 +240,10 @@ which are the same relation transported across the sector exchange. The numerica
 The classical vector model of the atom assembles the orbital and spin moments into a total moment and gives the effective factor
 
 $$
-g_J = 1 + \frac{j(j+1) + s(s+1) - l(l+1)}{2j(j+1)} .
+g_{s_{\mathrm{tot}}} = 1 + \frac{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1) + s(s+1) - l(l+1)}{2s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)} .
 $$
 
-For a pure orbital state, $s=0$ and $j=l$, the fraction vanishes and $g_J = 1$. For a pure spin state, $l=0$ and $j=s=\tfrac{1}{2}$, the fraction is $[\,3/4+3/4-0\,]/[\,2\cdot3/4\,] = 1$ and $g_J = 2$. The vector model therefore returns exactly the two values of this article, but it returns them as consequences of the two *input* gyromagnetic ratios $g_l = 1$ and $g_s = 2$. The biquaternion algebra supplies the missing input: $g_s = 2$ is the half-weight of the spin, so the vector model becomes complete once the algebra fixes it. The identity is a consistency check and not an independent derivation, and it is quoted here in that spirit.
+For a pure orbital state, $s=0$ and $s_{\mathrm{tot}}=l$, the fraction vanishes and $g_{s_{\mathrm{tot}}} = 1$. For a pure spin state, $l=0$ and $s_{\mathrm{tot}}=s=\tfrac{1}{2}$, the fraction is $[\,3/4+3/4-0\,]/[\,2\cdot3/4\,] = 1$ and $g_{s_{\mathrm{tot}}} = 2$. The vector model therefore returns exactly the two values of this article, but it returns them as consequences of the two *input* gyromagnetic ratios $g_l = 1$ and $g_s = 2$. The biquaternion algebra supplies the missing input: $g_s = 2$ is the half-weight of the spin, so the vector model becomes complete once the algebra fixes it. The identity is a consistency check and not an independent derivation, and it is quoted here in that spirit.
 
 ### The Relativistic Derivation
 
@@ -326,7 +326,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\tilde u(\theta+2\pi) = -\tilde u(\theta)$ | Double cover |
 | $w_{\mathrm{U}(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
 | $\mu/L = (ϙ/2m)\,w_{\mathrm{U}(1)}/w_{\rm rot}$ | Ratio of the two weights |
-| $g_J$ | Landé factor of the vector model |
+| $g_{s_{\mathrm{tot}}}$ | Landé factor of the vector model |
 | $\mu_B = e\hbar/2m_e$ | Bohr magneton |
 | $a = (g-2)/2$ | Anomalous magnetic moment |
 

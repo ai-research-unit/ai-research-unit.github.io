@@ -258,7 +258,7 @@ to relative order $c^{-2}$. The first three terms are the Pauli Hamiltonian of P
 
 $$
 \Delta E_{\rm kin}=-\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],\qquad
-\Delta E_{\rm SO}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\frac{j(j+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)},
+\Delta E_{\rm SO}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\frac{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)},
 $$
 
 $$

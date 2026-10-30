@@ -8,7 +8,7 @@ $$
 E_n = -\frac{m\kappa^2}{2\hbar^2 n^2},
 $$
 
-the eigenstates are labelled by the quantum numbers $n,l,m$, and each orbital level carries a two-valued spin factor.
+the eigenstates are labelled by the quantum numbers $n,l,l_z$, and each orbital level carries a two-valued spin factor.
 
 This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article *Angular Momentum and Spin in Biquaternionic Form* supplies the orbital operators $L_k e_t$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article *The Schrödinger Equation in Biquaternionic Form* supplies the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.
 
@@ -110,9 +110,9 @@ $$
 [H,L_k]=0, \qquad [H,\tilde S_k]=0, \qquad [H,L^2]=0, \qquad [H,\tilde S^2]=0,
 $$
 
-with the Casimir operators built from the operators of the companion article, $L^2e_t$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$. The orbital magnetic quantum number $m$, the orbital quantum number $l$, and the spin quantum numbers are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.
+with the Casimir operators built from the operators of the companion article, $L^2e_t$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$. The orbital weight $l_z$, the orbital quantum number $l$, and the spin weight $s_z$ are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.
 
-One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $H$ is spin-independent, the **total** angular momentum $\tilde J_k=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,j,m_j\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.
+One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $H$ is spin-independent, the **total** angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.
 
 A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.
 
@@ -121,10 +121,10 @@ A clarification is owed at this point, because the angular-momentum article intr
 The orbital angular momentum operators have the standard spherical-coordinate forms and spectra,
 
 $$
-L^2\,Y_l^m = \hbar^2 l(l+1)\,Y_l^m, \qquad L_z\,Y_l^m = \hbar m\,Y_l^m ,
+L^2\,Y_l^{l_z} = \hbar^2 l(l+1)\,Y_l^{l_z}, \qquad L_z\,Y_l^{l_z} = \hbar l_z\,Y_l^{l_z} ,
 $$
 
-with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces
+with $Y_l^{l_z}$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces
 
 $$
 \vec u_k\tilde S_k\,\tilde{\Pi}(\pm\vec u) = \pm\tfrac{\hbar}{2}\,\tilde{\Pi}(\pm\vec u),
@@ -147,11 +147,11 @@ which is the standard spin-1/2 expectation value, written as the plain form of $
 Separate the field as
 
 $$
-\boxed{\;\psi_{nlm m_s}(r,\theta,\phi) = R_{nl}(r)\,Y_l^m(\theta,\phi)\,\chi_{m_s}\;},
-\qquad \chi_{m_s}\in\mathbb{B}\tilde\Pi ,
+\boxed{\;\psi_{n l l_z s_z}(r,\theta,\phi) = R_{nl}(r)\,Y_l^{l_z}(\theta,\phi)\,\chi_{s_z}\;},
+\qquad \chi_{s_z}\in\mathbb{B}\tilde\Pi ,
 $$
 
-with $\chi_{m_s}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\hbar\,\partial/\partial t'\psi=H\psi$ and using the spherical decomposition of the Laplacian,
+with $\chi_{s_z}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\hbar\,\partial/\partial t'\psi=H\psi$ and using the spherical decomposition of the Laplacian,
 
 $$
 -\hbar^2\nabla^2 = \frac{L^2}{r^2} - \frac{\hbar^2}{r^2}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),
@@ -179,7 +179,7 @@ $$
 where $a_0=\hbar^2/(m\kappa)$ is the Bohr radius. For hydrogen, $a_0=0.529\,\text{Å}$ and $E_1=-13.6\,\text{eV}$. The principal quantum number is $n=n_r+l+1$ with radial quantum number $n_r=0,1,2,\dots$, so that for a given $n$,
 
 $$
-l=0,1,\dots,n-1, \qquad m=-l,\dots,+l, \qquad m_s=\pm\tfrac12 .
+l=0,1,\dots,n-1, \qquad l_z=-l,\dots,+l, \qquad s_z=\pm\tfrac12 .
 $$
 
 ### The degeneracy
@@ -212,11 +212,11 @@ $$
 The ground state is therefore
 
 $$
-\psi_{100}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\chi_{m_s},
+\psi_{100}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\chi_{s_z},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$
 
-a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
+a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^{l_z}\chi_{s_z}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
 
 ## Correspondence with the Standard Solution
 
@@ -256,16 +256,16 @@ A fifth, smaller point is worth a line. The corpus's biquaternion special-functi
 
 The companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* would begin from the biquaternion Dirac equation with the Coulomb potential rather than from the Schrödinger equation. Four differences from the present treatment are structural, and each is already visible in the framework's angular-momentum machinery.
 
-**The Hamiltonian ceases to be central.** The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde J_k=L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,
+**The Hamiltonian ceases to be central.** The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,
 
 $$
-\bigl(L_k\tilde S_k\bigr)_{j=l\pm\frac12} =
-\begin{cases} +\dfrac{\hbar^2 l}{2}, & j=l+\tfrac12,\\[6pt] -\dfrac{\hbar^2(l+1)}{2}, & j=l-\tfrac12, \end{cases}
+\bigl(L_k\tilde S_k\bigr)_{s_{\mathrm{tot}}=l\pm\frac12} =
+\begin{cases} +\dfrac{\hbar^2 l}{2}, & s_{\mathrm{tot}}=l+\tfrac12,\\[6pt] -\dfrac{\hbar^2(l+1)}{2}, & s_{\mathrm{tot}}=l-\tfrac12, \end{cases}
 $$
 
-and the relevant basis is the coupled one, $|n,l,j,m_j\rangle$, built with the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.
+and the relevant basis is the coupled one, $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, built with the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.
 
-**The good quantum numbers change.** In the non-relativistic problem the level depends on $n$ alone and $l,m,m_s$ are all good. Relativistically the level depends on $n$ and $j$, not on $l$: the $l$-degeneracy at fixed $n$ is lifted, and what survives is a degeneracy between the two $l=j\pm\tfrac12$ states at the same $j$ (with no partner for the extreme $j=n-\tfrac12$).
+**The good quantum numbers change.** In the non-relativistic problem the level depends on $n$ alone and $l,l_z,s_z$ are all good. Relativistically the level depends on $n$ and $s_{\mathrm{tot}}$, not on $l$: the $l$-degeneracy at fixed $n$ is lifted, and what survives is a degeneracy between the two $l=s_{\mathrm{tot}}\pm\tfrac12$ states at the same $s_{\mathrm{tot}}$ (with no partner for the extreme $s_{\mathrm{tot}}=n-\tfrac12$).
 
 **The spectrum is the Sommerfeld/Dirac form.** Writing $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ for the fine-structure constant, the exact bound-state energies are
 
@@ -301,7 +301,7 @@ $$
 E_n = -\frac{m\kappa^2}{2\hbar^2 n^2} = -\frac{\kappa}{2a_0n^2},
 $$
 
-the standard eigenstates $R_{nl}(r)Y_l^m(\theta,\phi)\chi_{m_s}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$.
+the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\phi)\chi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$.
 
 The framework's contribution is therefore structural, not spectral. It identifies the kinetic term as a biquaternion-norm object, places the observable in $\mathbb{M}_+$ and the generator in $\mathbb{M}_-$ along $ie_t$, and separates orbital from spin degrees of freedom by slot. It does not supply the bound-state space, which is not a module over the finite-dimensional algebra; it does not supply a position–momentum pair in $\mathbb{M}_+$; and it does not account for the $n^2$ degeneracy, whose $SO(4)$ origin remains an open question in the corpus. The spectrum and eigenstates are the standard ones, and no deviation is predicted. The relativistic case, where the spin couples and the degeneracy is lifted, is left to its own article.
 
@@ -326,7 +326,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $a_0=\hbar^2/(m\kappa)$ | Bohr radius |
 | $L_k e_t$, $L^2e_t$ | Orbital operators, scalar slot |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$ | Spin operators, vector slots |
-| $\tilde J_k=L_k+\tilde S_k$ | Total angular momentum (needed only relativistically) |
+| $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ | Total angular momentum (needed only relativistically) |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module of spinors $\psi$ |
 | $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ | Trace reading at normalisation (Born rule) |

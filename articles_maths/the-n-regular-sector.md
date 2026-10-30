@@ -20,7 +20,7 @@ $$
 
 a complex scalar; it is multiplicative and it decides invertibility. Its zero set is the **null cone** $\mathcal{N}$. The **spectral-degenerate cone** is $\mathcal{S}=\{B^2=0\}$. The product is the plain product, with unit $e_t$.
 
-The words are fixed as follows. A **sector** is one of the two halves selected by the norm, as in the title of this article; a **cell** is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together, called a sector in the spectral articles. The two uses are kept apart here. The **norm-one group** is $\mathbb{B}^{\times}_1=\{N=1\}$, called the **unit factor** in the polar articles; the word *unit* alone means an invertible element, an element of $\mathbb{B}^{\times}$. The two senses are kept apart, as in *Conventions in Mathematics*, §*The Form Convention, the Norm Convention and the Unitary Convention*.
+The words are fixed as follows. A **sector** is one of the two halves selected by the norm, as in the title of this article; a **cell** is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together, called a sector in the spectral articles. The two uses are kept apart here. The **norm-one group** is $\mathbb{B}^{\times}_1=\{N=1\}$, called the **unit factor** in the polar articles; the word *unit* alone means an invertible element, an element of $\mathbb{B}^{\times}$. The two senses are kept apart, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*.
 
 ## Definition and Characterisation
 

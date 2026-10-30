@@ -19,7 +19,7 @@ The conventions and the symbols are those of *Dual-Numbers Algebra* and of the c
 
 ### The Counting
 
-The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $q\neq0$, and the **group of units** $(\mathbb{D}')^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); here the unit elements $\langle Q\rangle=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
+The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $q\neq0$, and the **group of units** $(\mathbb{D}')^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*); here the unit elements $\langle Q\rangle=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
 
 $$
 \boxed{\;

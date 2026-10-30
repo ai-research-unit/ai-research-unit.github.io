@@ -1,13 +1,37 @@
 # __AI Maths__
 
-<a href="articles_maths/introduction-to-mathematics.html">Introduction to Mathematics</a>
-<!-- the entry point to the corpus: what the six parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Algebras shared by Parts I to III, and the further subjects each part adds after it, with geometry read along the same slots; the object ladder; the three rules of the ordering and the category rule of the reading unit, with the groups inside a category and the split of the involution on the elements from the adjoint on the operators; distance as the boundary between algebra and topology, the derivative and the measure as the boundary between topology and analysis, and geometry as the second intent of the same structure; the boundary tests that state what each part may not use; the synthetic progression of Part VI; the method of successive paths by which the corpus is learnt, a cycle through the six parts at one depth and then again one rung deeper; the transversal catalogues of Part V; the exclusion of physics. The notation and the corpus conventions are in *Conventions in Mathematics*. -->
+## Introduction and Conventions
+
+### Introduction to Mathematics
+
+<a href="articles_maths/introduction-to-the-mathematical-corpus.html">Introduction to the Mathematical Corpus</a>
+<!-- the entry point to the corpus: what the six parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Algebras shared by Parts I to III, and the further subjects each part adds after it, with geometry read along the same slots; the object ladder; the three rules of the ordering and the category rule of the reading unit, with the groups inside a category and the split of the involution on the elements from the adjoint on the operators; distance as the boundary between algebra and topology, the derivative and the measure as the boundary between topology and analysis, and geometry as the second intent of the same structure; the boundary tests that state what each part may not use; the synthetic progression of Part VI; the method of successive paths by which the corpus is learnt, a cycle through the six parts at one depth and then again one rung deeper; the transversal catalogues of Part V; the exclusion of physics. The notation and the corpus conventions are in the seven articles of *Conventions in Mathematics*. -->
 
 <a href="articles_maths/ai-maths-review.html">AI Maths Review</a>
 <!-- the digest of the mathematical corpus (no citations, no links): the corpus described — about 2,100 articles in six parts, pure mathematics with no physics and no application; how the corpus is organised, the six parts, the five-slot spine and the object ladder, the four groups of a category, the catalogues and the synthetic studies, the three rules of placement and the boundary tests, the successive paths, and the two exclusions; the new results, which are the corpus's own mathematics: the sesqualgebras and the conjugate module $A^{\varsigma}$, the structures of the number systems (two for the complex field, two for the split-complex ring, six for the quaternions, twelve for the biquaternions) with the classification of the twelve (two satisfy the identity of their kind, six fail it, and the twelve collapse to ten on real elements), and the Bochner theorem for the biquaternion transform in the Hermitian form and for the roots that are skew-adjoint for the Hermitian conjugation; the limits; ten common misreadings. the digest claims no result of its own; the corpus's new mathematics is reported. -->
 
+### Conventions in Mathematics
+
 <a href="articles_maths/conventions-in-mathematics.html">Conventions in Mathematics</a>
-<!-- the conventions every article assumes, stated once: the symbols; the arithmetic conventions; the marks of an algebra with an involution, the bar for the complex conjugation of the scalars, the natural sign for the intrinsic quaternion conjugation, the star for the Hermitian conjugation, the flat for its negative, and the dagger reserved for the adjoint of an operator; the number systems and their glyphs, the case for the scalar sector and the tilde for the quaternionic factor, and how the two are read with the marks to give the conjugate of a glyph; the two matrix models, the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ and the regular copy $M_4(\mathbb{C})_{\mathbb{B},L}\subset M_4(\mathbb{C})$ with its canonical Peirce frame; the typography of the source, with the possible subscripts; and the conventions of the corpus itself, the menu and its `+` marker, the five groups of a category, the article files and the skeleton, and the discipline of citing rather than restating. -->
+<!-- the first of the seven conventions articles and the one that fixes the base: groups, rings and operations; the base and its units, with the replacement of Hamilton's $i,j,k$ by $e_t,\vec e_x,\vec e_y,\vec e_z$; the element and its coefficients, the case rule and the tilde, the duo-complex points; the remarkable subspaces, the centre and the vector subspace, the quaternion and antiquaternion subspaces, the Hermitian and anti-Hermitian ones; the conjugations, the bar, the natural sign, the star and the flat, layer by layer; and the index of the glyphs of the series. conventions only. -->
+
+<a href="articles_maths/conventions-of-the-products-and-the-forms.html">Conventions of the Products and the Forms</a>
+<!-- the twelve products and their names: the four general products, their symmetric and antisymmetric parts, the three-letter code read letter by letter, and the reduced biquaternion space where four of the twelve collapse; the form as the scalar part of a product, the generic form and norm, the four brackets and their letters $P$, $N$, $H$, $K$, the table of the four, and the names in each layer. the norms are in the next article. -->
+
+<a href="articles_maths/conventions-of-the-norms-and-the-unitary-convention.html">Conventions of the Norms and the Unitary Convention</a>
+<!-- the four algebraic norms read with one argument, the qualified regular and degenerate, and the six layer tables with the form, the algebraic norm, the realified signature and the role of each bracket; the unitary convention layer by layer, with the unit circle, the unit hyperbola, the two dual lines and the unit groups; the letters $U$ and $u$ inside and outside the layers. -->
+
+<a href="articles_maths/conventions-of-the-special-elements.html">Conventions of the Special Elements</a>
+<!-- the root, the idempotent and the nilpotent as glyphs and not as new objects, with their case rule, coordinates and subscripts; the general Peirce convention and its biquaternion reading, the four levels, the Peirce components, the multiplication rule and the canonical frame of the standard pair. -->
+
+<a href="articles_maths/conventions-of-the-representations.html">Conventions of the Representations</a>
+<!-- the two matrix models: the $2\times2$ isomorphism and its four forced images, the trace and the determinant; the $4\times4$ regular representation, the left and right copies, the canonical Peirce frame, the gamma frame and the retirement of the label $M_4(\mathbb{C})_L$. -->
+
+<a href="articles_maths/conventions-of-the-operators-and-the-calculus.html">Conventions of the Operators and the Calculus</a>
+<!-- the operator that is its element, the named operators, the sandwich, the dagger, the array rule and the Fock exception; the derivative marks, the unhalved coordinate derivative, the gradient and the d'Alembertian; the plain, quaternionic, Hermitian and Krein products read on the gradient. -->
+
+<a href="articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Conventions of the Indices, the Notation and the Corpus</a>
+<!-- the superscripts $\mathrm{fop}$ and $\mathrm{opp}$; the subscript rules, the count against the role label and the admitted forms; the menus, the four groups of a category, the article files, the skeleton and the boundary rules; the LaTeX and typesetting rules; the index of the corpus tokens. -->
 
 ## PART I : ALGEBRA
 

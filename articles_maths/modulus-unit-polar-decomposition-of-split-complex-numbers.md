@@ -86,7 +86,7 @@ $$
 \langle u\rangle_{*} = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
 $$
 
-The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*.
+The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 

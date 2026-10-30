@@ -116,7 +116,7 @@ a nonzero element of the second idempotent line. The next power is $(\breve Q_{\
 
 **Corollary (the nilpotent set of every product is the two lines).** For the three products that have a nonzero nilpotent, the nilpotent set is the null cone $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, and the nilpotency index is the one of the table; the multiplication has no nonzero nilpotent.
 
-**Remark (the glyph).** The nilpotents of the reduced biquaternion layer carry, in the convention of *Conventions in Mathematics*, §*The Nilpotent Convention*, the plain capital and **no tilde**; but the only nilpotents here lie on the two idempotent lines and are already named by the idempotents, so this article names none of them and reads them as the cone.
+**Remark (the glyph).** The nilpotents of the reduced biquaternion layer carry, in the convention of *Conventions of the Special Elements*, §*The Nilpotent Convention*, the plain capital and **no tilde**; but the only nilpotents here lie on the two idempotent lines and are already named by the idempotents, so this article names none of them and reads them as the cone.
 
 ## The Radical
 

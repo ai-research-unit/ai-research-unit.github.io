@@ -151,16 +151,16 @@ which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = 
 
 ## The Spinor Functions
 
-The source's equation (20) encodes the two-component spinor harmonic — written there with the two radicals $C_1 = \sqrt{l\pm m_j+\tfrac12}$ and $C_2 = \sqrt{l\mp m_j+\tfrac12}$, and without the normalising factor $1/\sqrt{2l+1}$ that the standard harmonic carries, so that the source's $C$'s are the radicals as printed — as the single quaternion
+The source's equation (20) encodes the two-component spinor harmonic — written there with the two radicals $C_1 = \sqrt{l\pm s_{\mathrm{tot},z}+\tfrac12}$ and $C_2 = \sqrt{l\mp s_{\mathrm{tot},z}+\tfrac12}$, and without the normalising factor $1/\sqrt{2l+1}$ that the standard harmonic carries, so that the source's $C$'s are the radicals as printed — as the single quaternion
 
 $$
-\frac{1}{\sqrt2}\left(C_1Y_l^{m_j-\frac12}e_t - iC_1Y_l^{m_j-\frac12}\vec e_x - C_2Y_l^{m_j+\frac12}\vec e_y - iC_2Y_l^{m_j+\frac12}\vec e_z\right),
+\frac{1}{\sqrt2}\left(C_1Y_l^{s_{\mathrm{tot},z}-\frac12}e_t - iC_1Y_l^{s_{\mathrm{tot},z}-\frac12}\vec e_x - C_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_y - iC_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_z\right),
 $$
 
 that is, on any values of the two harmonics,
 
 $$
-C_1Y_l^{m_j-\frac12}\,q_+ + C_2Y_l^{m_j+\frac12}\,q_- ,
+C_1Y_l^{s_{\mathrm{tot},z}-\frac12}\,q_+ + C_2Y_l^{s_{\mathrm{tot},z}+\frac12}\,q_- ,
 $$
 
 the expansion of the angular spinor in the source's own two states, with the two components of the column as the coefficients. So the encoding is faithful and its convention is the same one that the states of the previous sections are written in. It is also the step that a corpus reader has to notice: the object on the left is a **spinor**, an element of the defining module $S$ of the algebra, and the object on the right is an element of the algebra. The corpus's articles keep the two apart — the state is a spinor, the idempotent is the state operator — and the source's representation writes the state and the state's operator as elements of one space.
@@ -186,7 +186,7 @@ $$
 which is the same pair the source's matrix route prints, $k$ the Dirac–Coulomb quantum number and $z a_0$ the Coulomb coupling in units of $\hbar c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions. Its closed-form solution is given by the source as Laguerre polynomials in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular spinors multiplied by $F(\rho)$ and $G(\rho)$, written first as a two-component column and then as the single quaternion of its equations (25) and (26), with the dual in (27). The scalar part of $\bar\Psi^*\Psi$, its (28), is the sum of the squared moduli of the two spinor components with $F^2$ and $G^2$ attached, and its (29) is that sum integrated over the angular variables,
 
 $$
-\rho = \int_{-a}^{a}\frac{1}{r^2}\left(C_1^2\left(Y_k^{m_j-\frac12}\right)^2F(r)^2 + C_2^2\left(Y_k^{m_j+\frac12}\right)^2F(r)^2 + C_3^2\left(Y_{-k}^{m_j-\frac12}\right)^2G(r)^2 + C_4^2\left(Y_{-k}^{m_j+\frac12}\right)^2G(r)^2\right)d\Omega ,
+\rho = \int_{-a}^{a}\frac{1}{r^2}\left(C_1^2\left(Y_k^{s_{\mathrm{tot},z}-\frac12}\right)^2F(r)^2 + C_2^2\left(Y_k^{s_{\mathrm{tot},z}+\frac12}\right)^2F(r)^2 + C_3^2\left(Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right)^2G(r)^2 + C_4^2\left(Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right)^2G(r)^2\right)d\Omega ,
 $$
 
 which is the standard probability density of the two-component radial solution. (The source calls this probability $\rho$, the same letter it uses for the radial variable $\rho = Cr$ in the closed forms; the collision is the source's, and the two are kept apart here by context.) The structure of (28) and (29) was checked against (25) and (26) and is consistent with them. The closed forms of $F(\rho)$ and $G(\rho)$ were **not** independently recomputed: the radicals and the Laguerre arguments do not survive extraction from the source's file in a form that can be transcribed without guesswork, and a half-guessed formula is worse than a recorded one. They are recorded as printed and marked unverified.

@@ -45,7 +45,7 @@ $$
 \exp(\vec\omega \theta) = \cos\theta + \vec\omega \sin\theta.
 $$
 
-This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is a **rotor** (*Conventions in Mathematics*, §*Symbols*). The sandwich by this rotor rotates by $2\theta$, twice the angle in the exponent, which is the half-angle rule of *Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*.
+This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is a **rotor** (*Conventions in Mathematics*, §*Summary of Notation*). The sandwich by this rotor rotates by $2\theta$, twice the angle in the exponent, which is the half-angle rule of *Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*.
 
 For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\theta = \sqrt{\langle\vec q\rangle_{\natural}}$,
 

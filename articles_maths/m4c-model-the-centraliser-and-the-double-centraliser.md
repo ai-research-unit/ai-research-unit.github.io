@@ -10,7 +10,7 @@ This article computes the three objects, their dimensions in each spectral type,
 
 **Boundaries.** The right image and the double centraliser of the whole image are treated in §*The Right Regular Image* below; the eigenbasis is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix*; the $2\times2$ commutant is *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The coefficient basis is the conjugate display: with $S$ the change of *The Product, the Trace and the Determinant*, $\mathsf M_{4,\mathrm{coef}}^{L}=S(I_2\otimes\mathsf M_2)S^{-1}$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The coefficient basis is the conjugate display: with $S$ the change of *The Product, the Trace and the Determinant*, $\mathsf M_{4,\mathrm{coef}}^{L}=S(I_2\otimes\mathsf M_2)S^{-1}$.
 
 ## The Commutant
 

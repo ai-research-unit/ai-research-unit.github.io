@@ -13,8 +13,7 @@ to be.
 The article owns the statement of the **extension problem**, the reason the centre caps it, and the two
 candidate interpretations. It owns no new theorem. The centre and its triviality are *The Centre of the Biquaternion
 Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
-Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions in the Biquaternion
-Universe*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
+Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions of the Special Elements*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
 carries is *The Physical Interpretation of the 12 Products*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 

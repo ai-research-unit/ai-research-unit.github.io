@@ -73,7 +73,7 @@ for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{r}
 
 **Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the $*$-unitary convention; the level set of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\mathrm{ts}}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
 
-*Proof.* Each level set is the norm-one set of its form, as *Conventions in Mathematics*, §*The Unitary Convention*, records; the shapes are those of *The Forms of the Algebra of the Reduced Biquaternions*, and the compactness of the sphere is the positive definiteness of $\langle\cdot\rangle_{\mathrm{ts}*}$.
+*Proof.* Each level set is the norm-one set of its form, as *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*, records; the shapes are those of *The Forms of the Algebra of the Reduced Biquaternions*, and the compactness of the sphere is the positive definiteness of $\langle\cdot\rangle_{\mathrm{ts}*}$.
 
 ## The Four Topologies
 

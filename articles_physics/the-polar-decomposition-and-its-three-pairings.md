@@ -62,7 +62,7 @@ The word exists if and only if $N\neq0$, that is, if and only if the element is 
 
 The failure is physical. A lightlike four-vector has no rest frame, so the scale degenerates and there is no boost split: there is no frame in which its spatial part vanishes and no rapidity that carries it to that frame. The algorithm stops on the cone for the same reason a boost parametrisation stops at the speed of light.
 
-The three pairings have smaller domains than the word, and the table states each once. The distinction between the **factorisation** and the **construction from the parts** is owned by *Conventions in the Biquaternion Universe*, §*The Domains of the Three Pairings*; it is restated here because every statement below must be read against it.
+The three pairings have smaller domains than the word, and the table states each once. The distinction between the **factorisation** and the **construction from the parts** is owned by *Conventions of the Norms and the Pairings*, §*The Domains of the Three Pairings*; it is restated here because every statement below must be read against it.
 
 | pairing | factorisation exists | construction exists | witness of the smaller domain |
 | --- | --- | --- | --- |
@@ -176,7 +176,7 @@ A split is a direct-sum decomposition of the algebra, not a bracketing of a prod
 | Hermitian vs. anti-Hermitian | $\mathbb{M}_+\oplus\mathbb{M}_-$ | the physical sectors; the Cartan exponents | the informational and material generators |
 | scalar vs. vector | $\mathbb{C}_{\mathbb{B}}\oplus\operatorname{Vect}(\mathbb{B})$ | the four-vector reading; the eigenvalue decomposition | time and space; the spectral axis |
 
-The quaternion construction uses the **first** split. The physical sectors are the **second**. Conflating them would identify the real part with the informational sector and the imaginary part with the material sector, and that is wrong: the material sector $\mathbb{M}_-$ has an imaginary scalar and a real vector, so it mixes the real and imaginary coefficient splits. A table of the sector action of the central $i$ is in *Conventions in the Biquaternion Universe*, §*The Central Map and Its Restrictions*.
+The quaternion construction uses the **first** split. The physical sectors are the **second**. Conflating them would identify the real part with the informational sector and the imaginary part with the material sector, and that is wrong: the material sector $\mathbb{M}_-$ has an imaginary scalar and a real vector, so it mixes the real and imaginary coefficient splits. A table of the sector action of the central $i$ is in *Conventions of the Special Elements*, §*The Central Map and Its Restrictions*.
 
 The three splits and the three pairings are different structures with the same number. A split asks what the algebra is made of; a pairing asks how the product is grouped. The word's four factors are grouped by the pairings and typed by the splits, and neither classification implies the other.
 
@@ -257,7 +257,7 @@ Three errors follow, and each is a check.
 - Using the frame rotor $\tilde U_{\mathrm b}(\psi)$ where the four-vector factor $\mathcal B=\tilde U_{\mathrm b}(\psi)^{-2}$ belongs halves the rapidity of the four-vector: $i mc\,\tilde U_{\mathrm b}(\psi)$ is a four-vector of rapidity $\psi/2$.
 - Identifying $\gamma$ with $\cosh\psi_w$ instead of $\cosh(\psi_w/2)$ overstates the energy.
 
-The four objects called a boost are separated in *Conventions in the Biquaternion Universe*, §*The Four Objects Called a Boost*.
+The four objects called a boost are separated in *Conventions of the Norms and the Pairings*, §*The Four Objects Called a Boost*.
 
 ## A Four-Vector Is Bilinear, a Spinor Is Linear
 
@@ -330,4 +330,4 @@ The pairings read the same data under different headings, and the readings are d
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.
 - [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the Cartan pair as strength and backaction and the effect spectrum $r^{2}e^{\pm\psi_w}$.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.
+- [Conventions of the Norms and the Pairings](conventions-of-the-norms-and-the-pairings.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.

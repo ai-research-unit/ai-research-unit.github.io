@@ -111,7 +111,7 @@ the group of invertible matrices under $\mathsf{M}_2$, of real dimension $8$, wi
 
 Physically the unit group is the whole linear group of the framework: $GL_2(\mathbb{C})$ is the group of invertible biquaternions, its centre $\mathbb{C}^{\times}$ is the complex phase that every conjugation ignores and the norm only sees through its modulus, and the unit-norm subgroup is the Lorentz group of the preceding sections.
 
-**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1,\lambda_2)\in\mathbb{Z}^2$ with $\lambda_1\geq\lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$, of dimension $\lambda_1-\lambda_2+1$, with central character $z\mapsto z^{\lambda_1+\lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j=\lambda_1-\lambda_2\geq0$, that is, the irreducible $V_j$ below with spin $j\in\tfrac12\mathbb{Z}_{\geq0}$.
+**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1,\lambda_2)\in\mathbb{Z}^2$ with $\lambda_1\geq\lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$, of dimension $\lambda_1-\lambda_2+1$, with central character $z\mapsto z^{\lambda_1+\lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2s=\lambda_1-\lambda_2\geq0$, that is, the irreducible $V_s$ below with spin $s\in\tfrac12\mathbb{Z}_{\geq0}$.
 
 ## Boosts Do Not Close: The Composition Law
 
@@ -254,13 +254,13 @@ Two remarks belong here.
 
 A finite-dimensional representation of the Lorentz group is a continuous homomorphism $SO^+(1,3)\to GL(V)$, or equivalently — because every such representation lifts — a representation of the double cover $SL(2,\mathbb{C})$ that is trivial on $\{\pm e_t\}$ (see the next section). Complex representations of the compact subgroup $SU(2)$ are completely reducible, and the same holds for $SL(2,\mathbb{C})$; so it suffices to describe the irreducible ones.
 
-**The label $(m,n)$.** Let $V_j$ denote the irreducible $\mathrm{SU}(2)$-module of dimension $2j+1$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
+**The label $(m,n)$.** Let $V_s$ denote the irreducible $\mathrm{SU}(2)$-module of dimension $2s+1$, $s\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{Sym}^{2s}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
 $$
 (m,n)=V_m\boxtimes V_n,\qquad m,n\in\tfrac12\mathbb{Z}_{\geq0},
 \qquad
 \dim_{\mathbb{C}}(m,n)=(2m+1)(2n+1).
 $$
-Equivalently, writing $m=j_1$, $n=j_2$, the labels $(j_1,j_2)$ are the highest weights of the two $\mathrm{SU}(2)$ halves of the preceding section. The first index refers to the holomorphic (self-dual) half and the second to the antiholomorphic (anti-self-dual) half.
+Equivalently, writing $m=s_1$, $n=s_2$, the labels $(s_1,s_2)$ are the highest weights of the two $\mathrm{SU}(2)$ halves of the preceding section. The first index refers to the holomorphic (self-dual) half and the second to the antiholomorphic (anti-self-dual) half.
 
 **Dictionary.** The low-lying representations have direct interpretations in the biquaternion framework.
 
@@ -297,7 +297,7 @@ $$
 $$
 of dimension $1+3+3+9=16=4\times4$.
 
-**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_j=\operatorname{Sym}^{2j}(\mathbb{C}^2)$ of the defining module, of highest weight $2j$ and spin $j$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
+**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_j=\operatorname{Sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
 $$
 \left\{\text{f.d. polynomial representations of }SL(2,\mathbb{C})\right\}\simeq\left\{\text{f.d. }{}^{*}\text{-unitary representations of }SU(2)\right\},
 $$
@@ -309,7 +309,7 @@ V_{1/2}^{\otimes N}\cong\bigoplus_{k=0}^{\lfloor N/2\rfloor}\left[\binom Nk-\bin
 $$
 the multiplicity of $V_{N/2-k}$ being the ballot (Catalan-triangle) number $\binom Nk-\binom N{k-1}$.
 
-**Physical interpretation: addition of angular momenta.** The Clebsch–Gordan rule is the quantum rule for combining two angular momenta: $V_j\otimes V_k$ is the state space of a composite system whose parts carry spins $j$ and $k$, and the decomposition lists its total-spin sectors. The case $V_{1/2}\otimes V_{1/2}\cong V_1\oplus V_0$ is the addition of two spin-$\tfrac12$ particles into a triplet and a singlet, and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$ is the quartet and the two doublets of three; the ballot numbers are the multiplicities with which each total spin occurs. The invariant $\varepsilon$ that produces the scalar $V_0$ is the antisymmetric two-particle state, the singlet of the framework.
+**Physical interpretation: addition of angular momenta.** The Clebsch–Gordan rule is the quantum rule for combining two angular momenta: $V_s\otimes V_k$ is the state space of a composite system whose parts carry spins $s$ and $k$, and the decomposition lists its total-spin sectors. The case $V_{1/2}\otimes V_{1/2}\cong V_1\oplus V_0$ is the addition of two spin-$\tfrac12$ particles into a triplet and a singlet, and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$ is the quartet and the two doublets of three; the ballot numbers are the multiplicities with which each total spin occurs. The invariant $\varepsilon$ that produces the scalar $V_0$ is the antisymmetric two-particle state, the singlet of the framework.
 
 **The defining representation and its two dualities.** The defining module $V_{1/2}=\mathbb{C}^2$ is **self-dual** for $SL(2,\mathbb{C})$: since the determinant is one, the alternating form $\varepsilon(u,v)=u_xv_2-u_yv_1$ is invariant and identifies $V_{1/2}^{*}$ with $V_{1/2}$. Its **conjugate** $\overline{V_{1/2}}=(0,\tfrac12)$ is a different, inequivalent representation — the other chirality — and parity exchanges the two; the direct sum is the Dirac spinor $\Delta=(\tfrac12,0)\oplus(0,\tfrac12)$ of the dictionary, and the tensor product is the four-vector representation $V_{1/2}\otimes\overline{V_{1/2}}\cong(\tfrac12,\tfrac12)$.
 
@@ -459,7 +459,7 @@ The group that carries the transformations is represented as follows. The group 
 | $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ | Group of units; real dimension $8$ |
 | $\mathrm{U}(2)$ | $*$-Unitary biquaternions; maximal compact subgroup of $\mathbb{B}^{\times}$ |
 | $(\lambda_1,\lambda_2)$ | Highest weight of an algebraic representation of $GL_2(\mathbb{C})$ |
-| $V_j$ | Irreducible representation of spin $j$, highest weight $2j$, dimension $2j+1$ |
+| $V_s$ | Irreducible representation of spin $s$, highest weight $2s$, dimension $2s+1$ |
 | $V_{1/2}^{\otimes N}$ | Ballot-number decomposition of the tensor powers of the spinor |
 | $\operatorname{Ind}_P^G(\chi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |

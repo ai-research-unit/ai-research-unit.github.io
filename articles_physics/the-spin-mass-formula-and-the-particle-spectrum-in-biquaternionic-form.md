@@ -80,10 +80,10 @@ $$
 \tau^{\frac12,0}\longrightarrow\tau^{1,\frac12}\longrightarrow\tau^{\frac32,1}\longrightarrow\tau^{2,\frac32}\longrightarrow\tau^{\frac52,2}\longrightarrow\cdots,
 $$
 
-that is, $\tau^{l\bar l}$ with $l=\frac{j+1}{2}$, $\bar l=\frac{j}{2}$, for $j=0,1,2,\dots$, all of spin $s=\frac12$ and of degree
+that is, $\tau^{l\bar l}$ with $l=\frac{n+1}{2}$, $\bar l=\frac{n}{2}$, for $n=0,1,2,\dots$, all of spin $s=\frac12$ and of degree
 
 $$
-\deg\tau^{\frac{j+1}{2},\frac j2} = (j+2)(j+1) = 2,\,6,\,12,\,20,\,30,\,42,\,56,\,72,\,90,\,110,\dots
+\deg\tau^{\frac{n+1}{2},\frac n2} = (n+2)(n+1) = 2,\,6,\,12,\,20,\,30,\,42,\,56,\,72,\,90,\,110,\dots
 $$
 
 The lower members of this chain are precisely the representations that appear in the massless and massive field literature — $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$ is the Dirac pair, $\tau^{1,\frac12}\oplus(\text{dual})$ appears in the Rarita–Schwinger and spin-$\frac32$ constructions, and the sequence is the one the corpus's *Higher Spin from Tensor Products* meets as the tensor powers of the fundamental. The chain is also a sequence of Clifford algebras, $\mathbb{C}_2\to\mathbb{C}_6\to\mathbb{C}_{10}\to\cdots$, and a sequence of spin spaces $S_2\to S_8\to S_{32}\to\cdots$; the biquaternion algebra sits at its head, since $\tau^{\frac12,0}$ on $\mathbb{C}^2$ is the defining module of $\mathbb{B}\cong\mathrm{Cl}_{3,0}$.
@@ -186,7 +186,7 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 | $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma^{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
 | Interlocking | $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$ |
-| Spin-$\frac12$ line | $\tau^{\frac{j+1}{2},\frac j2}$, degree $(j+1)(j+2)$ |
+| Spin-$\frac12$ line | $\tau^{\frac{n+1}{2},\frac n2}$, degree $(n+1)(n+2)$ |
 | $m/m_e=\deg/2$ | Ratio form, normalised to the electron |
 
 ## Further Reading

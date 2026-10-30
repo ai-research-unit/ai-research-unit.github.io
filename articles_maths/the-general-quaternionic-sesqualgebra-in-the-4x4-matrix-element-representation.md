@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The left regular representation carries the two conjugations of the algebra as two matrix operations. In the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the natural conjugation is the signed reversal
+The left regular representation carries the two conjugations of the algebra as two matrix operations. In the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, the natural conjugation is the signed reversal
 $$
 \mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad C=-\sigma_2\otimes\sigma_2,
 $$

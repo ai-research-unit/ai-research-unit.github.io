@@ -26,7 +26,7 @@ $$
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2.
 $$
 
-The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *The Six Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
+The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *The Six Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions of the Special Elements*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 

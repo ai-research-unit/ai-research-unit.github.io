@@ -40,7 +40,7 @@ S\;\cong\;\mathbb{B}\tilde\Pi_+ ,
 \tilde\Pi_\pm^{*}=\tilde\Pi_\pm .
 $$
 
-The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as §*The Idempotent Convention* requires.
+The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as *Conventions of the Special Elements*, §*The Idempotent Convention* requires.
 
 Two forms live on $S$, and the distinction is one of the framework's standing conventions.
 
@@ -144,7 +144,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums, tensor products and duals.
 
-The decomposition is computed by symmetry. On $S$ the total-spin operators are $J_i$, and $\Gamma(J_i)$ acts on $\Lambda S$ as the antisymmetric jet of $J_i$: as $0$ on the vacuum, as $J_i$ on $\Lambda^1S=S$, and as the induced (scalar) action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\vec J^2$ is the one-particle Casimir, $j(j+1)=\tfrac34$. The eigenvalues of $\vec J^2$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the total-spin operators are $\tilde S_i$, and $\Gamma(\tilde S_i)$ acts on $\Lambda S$ as the antisymmetric jet of $\tilde S_i$: as $0$ on the vacuum, as $\tilde S_i$ on $\Lambda^1S=S$, and as the induced (scalar) action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\tilde S^2$ is the one-particle Casimir, $s(s+1)=\tfrac34$. The eigenvalues of $\tilde S^2$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -164,15 +164,15 @@ $$
 S_i=\tfrac12\sum_{s,s_2}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}
 $$
 
-on the four-dimensional space $\Lambda S$ and diagonalising $\vec J^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+on the four-dimensional space $\Lambda S$ and diagonalising $\tilde S^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
-The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $j(j+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $J_i$ is the antisymmetrised pair
+The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $\tilde S_i$ is the antisymmetrised pair
 
 $$
 \Lambda^2\rho(J_i)=J_i\otimes I+I\otimes J_i\big|_{\Lambda^2 S}=\mathrm{tr}_S(J_i)=0 ,
 $$
 
-because the representing matrices of $\mathrm{SU}(2)$ on $S$ are traceless. Hence $\Lambda^2S$ is annihilated by every $J_i$ and is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the antisymmetric form $\varepsilon$ is the singlet's invariant bilinear, which is the reason $U^{\mathsf T}\varepsilon U=\varepsilon$ appears in the same role.
+because the representing matrices of $\mathrm{SU}(2)$ on $S$ are traceless. Hence $\Lambda^2S$ is annihilated by every $\tilde S_i$ and is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the antisymmetric form $\varepsilon$ is the singlet's invariant bilinear, which is the reason $U^{\mathsf T}\varepsilon U=\varepsilon$ appears in the same role.
 
 Three consequences are worth stating.
 
@@ -273,7 +273,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\vec J^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
+with $\tilde S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})=2\,\mathrm{Sc}(\tilde\Pi (H^{\mathrm{fop}})^{*})$, checked to machine precision.
 

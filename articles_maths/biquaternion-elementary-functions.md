@@ -234,7 +234,7 @@ This reduces to $\exp(\tilde{Q}) \vec e_k$ only when $\vec e_k$ commutes with $\
 
 ### The Hermitian Norm and the $*$-Unitary Flow
 
-The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of *Conventions in Mathematics*, §*The Form Convention, the Norm Convention and the Unitary Convention*, is not: it reads the vector part as well, and it separates the three data of the element.
+The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of *Conventions of the Norms and the Unitary Convention*, §*The Norm Convention*, is not: it reads the vector part as well, and it separates the three data of the element.
 
 **Proposition (the Hermitian norm of the flow).** Let $B\neq0$, let $\vec U=\vec Q/B$, and let $\theta\in\mathbb{R}$. Then
 

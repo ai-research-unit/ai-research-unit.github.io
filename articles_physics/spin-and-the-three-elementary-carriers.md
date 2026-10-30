@@ -30,7 +30,7 @@ The article has two theses. First, the **three carrier types are the elementary 
 
 ## The Three Elementary Carriers
 
-| carrier | action | complex dimension | weights of $\tilde S_{\vec u}$ | $j$ | physical reading |
+| carrier | action | complex dimension | weights of $\tilde S_{\vec u}$ | $s$ | physical reading |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | $\operatorname{ad}$ | $1$ | $0$ | $0$ | scalar, no internal index |
 | $S_+=\mathbb{B}\tilde\Pi_+$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | two-state spinor |
@@ -45,7 +45,7 @@ Here *elementary* means an isomorphism class of nonzero irreducible invariant su
 
 The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ is a traceless $2\times2$ matrix with $(2\tilde S_{\vec u})^2=1$; its weights are $\pm\tfrac12$ and $j=\tfrac12$. The associative left action therefore sees only $j=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $j=0$.
 
-The adjoint action is a Lie action. As a Lie algebra, $\mathbb{B}=\mathbb{C}e_t\oplus V$ with $V\cong\mathfrak{sl}_2(\mathbb{C})$. The centre is trivial, so $j=0$; the traceless part is the three-dimensional irreducible module, with weights $+1,0,-1$ under $\mathrm{ad}_{\tilde S_{\vec u}}$, so $j=1$. There is no other irreducible invariant subspace.
+The adjoint action is a Lie action. As a Lie algebra, $\mathbb{B}=\mathbb{C}e_t\oplus V$ with $V\cong\mathfrak{sl}_2(\mathbb{C})$. The centre is trivial, so $s=0$; the traceless part is the three-dimensional irreducible module, with weights $+1,0,-1$ under $\mathrm{ad}_{\tilde S_{\vec u}}$, so $j=1$. There is no other irreducible invariant subspace.
 
 The two constructions together give the elementary list
 $$
@@ -70,7 +70,7 @@ No observed elementary particle carries another spin. Four boundaries keep the t
 - **The graviton is not observed.** Spin $2$ is the quantum of the metric deviation, constructed from the symmetric traceless square of $V$. It belongs to the tensor construction, not to $\mathbb{B}$ alone.
 - **Hadrons are composites.** The $\Delta(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
 - **The match is not a prediction.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and says nothing about which particle carries which spin, nor about masses, generations, charges or colours.
-- **The spin is the rotation spin.** The number $j$ is the highest weight of the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ on the carrier, the rotation generator for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+- **The spin is the rotation spin.** The number $s$ is the highest weight of the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ on the carrier, the rotation generator for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(s_L,s_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 
 Two further physical qualifications belong to the carrier, not to the table.
 
@@ -370,10 +370,10 @@ The physics corpus states the same three values through different constructions.
 | reading | construction | carrier | value |
 |---|---|---|---|
 | the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
-| the adjoint integer | the halved inner derivations $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
+| the adjoint integer | the halved inner derivations $\tilde S^{(\mathrm{adj})}_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
-| the tensor powers of the spinor | the symmetric part of $S^{\otimes 2j}$ | $S^{\otimes 2j}$ | $j$ |
+| the tensor powers of the spinor | the symmetric part of $S^{\otimes 2s}$ | $S^{\otimes 2s}$ | $s$ |
 | the tensor powers of the vector | symmetric traceless rank-$s$ tensors of $V$ | $V^{\otimes s}$ | integer $s$ |
 
 The first four rows live on elementary carriers of $\mathbb{B}$ itself. The last two rows are not elementary: they are the construction that produces the higher spins, and they lie outside the closure proved in §*Why There Is No Fourth*. The half-angle row and the two-level row are the same carrier read through the rotor and through the metric; they do not add a second spin-$\tfrac12$ object.

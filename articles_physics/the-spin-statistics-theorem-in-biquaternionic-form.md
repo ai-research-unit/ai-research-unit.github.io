@@ -238,7 +238,7 @@ The table also displays what the framework does and does not explain. The *spin 
 **Gap, left visible.**
 
 - The framework does not *derive* spin–statistics. The spin dichotomy is algebraic; the bracket pairing is imposed. The one-mode coincidence that relates the spin ladder to the fermionic mode is exact but finite-dimensional, and the field algebra is infinite-dimensional, where both the exterior and the symmetric algebra are available on the same footing.
-- Higher spin is not algebraic in the same sense. The $j=1$ representation is the adjoint action, not a module, and higher spins need tensor products; whether the framework's integer-spin structure has a native quantization of its own is not established here.
+- Higher spin is not algebraic in the same sense. The $s=1$ representation is the adjoint action, not a module, and higher spins need tensor products; whether the framework's integer-spin structure has a native quantization of its own is not established here.
 
 ## Open Questions
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus fixes its derivative conventions once, in §*Conventions for Derivation* of *Conventions in Mathematics*, and this
+The corpus fixes its derivative conventions once, in §*Conventions for Derivation* of *Conventions of the Operators and the Calculus*, and this
 article walks that section in its own order: the subscripts, the prime, the two derivative operators, and the four general
 products read on the gradient, each with its product, its symmetric and antisymmetric parts, its form and its norm. Nothing is
 proved here. Every statement restates the convention or an article that owns it, and every owner is cited where it is used.
@@ -32,7 +32,7 @@ whether the letter names an element of the algebra, an element-valued field, a k
 **These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives
 are written with explicit operators, and the structural information is carried by the algebra of the objects themselves.**
 
-**The derivative marks.** No derivative is written with a dot. The total derivative is written $\frac{d}{dt}$ or $\frac{d}{d\tau}$ with the parameter named; the partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is $\frac{d^2}{dt^2}$. The prime marks only the imaginary coordinate of a complex coefficient ($\S$*The Derivative Marks* of *Conventions in Mathematics*); it is never a derivative mark, and a second derivative is written with $\partial$, never with a repeated prime. The scope mark of geometric calculus is an underline, not a dot. These rules are fixed in *Conventions in Mathematics*, §*The Derivative Marks*.
+**The derivative marks.** No derivative is written with a dot. The total derivative is written $\frac{d}{dt}$ or $\frac{d}{d\tau}$ with the parameter named; the partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is $\frac{d^2}{dt^2}$. The prime marks only the imaginary coordinate of a complex coefficient ($\S$*The Derivative Marks* of *Conventions in Mathematics*); it is never a derivative mark, and a second derivative is written with $\partial$, never with a repeated prime. The scope mark of geometric calculus is an underline, not a dot. These rules are fixed in *Conventions of the Operators and the Calculus*, §*The Derivative Marks*.
 
 ### The Gradient
 
@@ -45,13 +45,13 @@ $$
 \frac{\partial}{\partial Q_\mu}:=\frac{\partial}{\partial q_\mu}+\frac{\partial}{\partial(iq'_\mu)},\qquad Q_\mu=q_\mu+iq'_\mu,
 $$
 
-the unhalved derivative of *Conventions in Mathematics*, §*The Gradient*: with $Q_\mu$ and $\bar Q_\mu$ read as independent it gives $\partial Q_\mu/\partial Q_\mu=2$ and $\partial Q_\mu/\partial\bar Q_\mu=0$, and it is complex. On the material sector it is read as $\partial/\partial Q_t=-i\,\partial/\partial q'_t$. The **biquaternionic gradient** is the element-valued operator
+the unhalved derivative of *Conventions of the Operators and the Calculus*, §*The Gradient*: with $Q_\mu$ and $\bar Q_\mu$ read as independent it gives $\partial Q_\mu/\partial Q_\mu=2$ and $\partial Q_\mu/\partial\bar Q_\mu=0$, and it is complex. On the material sector it is read as $\partial/\partial Q_t=-i\,\partial/\partial q'_t$. The **biquaternionic gradient** is the element-valued operator
 
 $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 $$
 
-whose tilde marks its scalar part beside its vector part (*Conventions in Mathematics*, §*The Gradient*; *Biquaternion Analysis*),
+whose tilde marks its scalar part beside its vector part (*Conventions of the Operators and the Calculus*, §*The Gradient*; *Biquaternion Analysis*),
 with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and
 $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence
 $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$, and
@@ -70,7 +70,7 @@ $$
 $$
 
 **The forms stay four, the norms are two.** The four forms keep their four conventions, named in §*The Twelve Products and Their
-Names* of *Conventions in Mathematics*, each conjugating its own slot: the quaternionic form conjugates the first argument and
+Names* of *Conventions of the Products and the Forms*, each conjugating its own slot: the quaternionic form conjugates the first argument and
 the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal
 arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm and the Krein norm with the
 plain bilinear norm. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and
@@ -96,7 +96,7 @@ A **product** is algebra-valued, and this one holds the divergence, the gradient
 equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the material sector** the same product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, the space part being unchanged.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in §*The Twelve Products and Their
-Names* of *Conventions in Mathematics*. The half-sum keeps the form as its scalar part,
+Names* of *Conventions of the Products and the Forms*. The half-sum keeps the form as its scalar part,
 
 $$
 \tilde\nabla\bullet\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}+\tilde Q_{\mathrm f}\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-(\nabla,\vec Q_{\mathrm f})\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+Q_{\mathrm{f}t}\nabla=\Bigl[\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}t} ,

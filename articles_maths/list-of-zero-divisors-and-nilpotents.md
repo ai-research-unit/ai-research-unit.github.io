@@ -33,7 +33,7 @@ Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{
 | $\mathbb{B}$, the biquaternions | the pure zero divisors satisfying $\tilde{Q}^2 = 0$ | $2$ | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $6$, with $6^2 = 0$ | $2$ | *Modular Arithmetic and the Ring of Residues* |
 
-The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*).
+The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Conventions of the Special Elements*).
 
 ## The Idempotent Zero Divisors
 

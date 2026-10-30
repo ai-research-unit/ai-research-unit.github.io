@@ -18,7 +18,7 @@ The thesis is one sentence. **The Hamilton modulus $\Rho$ is the invariant of th
 
 The article is a synthesis. The pairing, its theorem and its domain are owned by *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*; the eigenvalue decomposition and the mass shell by *The Biquaternion Eigenvalue Decomposition* and *The Spectral Reading of a Four-Vector*; the branch of the modulus by *The Polar Decomposition of a N-Regular Biquaternion*. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, §*The Polar Word and the Three Pairings*, including its warning on the four objects called a boost. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.
+The conventions are those of *Conventions of the Norms and the Pairings*, §*The Polar Word and the Three Pairings*, including its warning on the four objects called a boost. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and the state glyph is $\tilde{Ϛ}$. The symbol $B$ here is the square root of the vector-part square, not the four-vector boost factor $\mathcal B$.
 
 ## The Results It Uses
 
@@ -28,7 +28,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*, §*The 
 | the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
 | the four factors and the branch of the modulus | [*The Polar Decomposition of a N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
 | the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$ |
-| the four objects called a boost and the factor of two | [*Conventions in the Biquaternion Universe*](conventions-in-the-biquaternion-universe.html), §*The Four Objects Called a Boost* | the $\psi/2$ versus $\psi$ warning |
+| the four objects called a boost and the factor of two | [*Conventions of the Norms and the Pairings*](conventions-of-the-norms-and-the-pairings.html), §*The Four Objects Called a Boost* | the $\psi/2$ versus $\psi$ warning |
 | multiplicativity of the norm | [*The Polar Decomposition of a N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Two Factors* | the modulus of a product |
 | the generalized pairing on the null cone | [*The Polar Decomposition of a N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Vanishing of the Modulus* | the massless limit |
 
@@ -252,6 +252,6 @@ The reading that changes the theory most is the identification of the modulus wi
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison with the quaternion and Cartan first factors.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the mass shell and the eigenvalues of a four-momentum.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the mass as a modulus and the isospectral family.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), §*The Four Objects Called a Boost*, for the rapidity conventions and the factor of two.
+- [Conventions of the Norms and the Pairings](conventions-of-the-norms-and-the-pairings.html), §*The Four Objects Called a Boost*, for the rapidity conventions and the factor of two.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the hub and the action of the factors.
 - [The Null Four-Momentum: What the Cone Derives and What It Does Not](the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html), for the massless limit.

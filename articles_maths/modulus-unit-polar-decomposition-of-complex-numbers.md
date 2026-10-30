@@ -59,7 +59,7 @@ $$
 
 The unit circle is a group under multiplication. If $\langle u\rangle_{*} = \langle v\rangle_{*} = 1$ then $\langle uv\rangle_{*} = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = \langle u\rangle_{*} = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*.
+The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 

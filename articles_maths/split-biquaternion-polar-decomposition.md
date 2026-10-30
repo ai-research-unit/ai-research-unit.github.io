@@ -266,7 +266,7 @@ $$
 
 the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ of the companion article on rotations.
 
-The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** $\mathbb{H}_{\mathbb{D}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
+The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** $\mathbb{H}_{\mathbb{D}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
 
 ### The Rotor as an Exponential
 

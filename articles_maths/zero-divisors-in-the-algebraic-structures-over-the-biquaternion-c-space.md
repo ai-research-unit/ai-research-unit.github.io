@@ -22,7 +22,7 @@ $$
 \mathcal{N}=\{\tilde Q_2\in\mathbb{B}:\mathrm{Norm}(\tilde Q_2)=0\} ,
 $$
 
-the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, after *Conventions in Mathematics* §*The form convention and the norm convention*, the norm of the statement at hand. This article instantiates it by the quaternionic norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$. It is the common zero-divisor set of the four general products.
+the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, after *Conventions of the Norms and the Unitary Convention* §*The Norm Convention*, the norm of the statement at hand. This article instantiates it by the quaternionic norm, $\mathrm{Norm}(\tilde Q_2)=Q_{2t}^{2}+Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2}$. It is the common zero-divisor set of the four general products.
 
 **Definition.** A subset of $\mathbb{B}$ is a **complex cone** when it contains $\lambda\tilde Q_2$ for every $\tilde Q_2$ it contains and every $\lambda\in\mathbb{C}$. Its **apex** is the origin.
 

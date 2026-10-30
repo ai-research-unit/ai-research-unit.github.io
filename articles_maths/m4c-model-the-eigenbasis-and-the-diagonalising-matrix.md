@@ -15,7 +15,7 @@ $$
 
 **Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Eigenbasis
 

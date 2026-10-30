@@ -219,7 +219,7 @@ are the two Peirce carriers of the algebra, the two minimal left ideals, and the
 
 ### The Nilpotent Regime
 
-Let $B=0$ and $\vec Q\neq0$. Then $\vec Q^{2}=0$, so $\vec\Upsilon=\vec Q$ is a pure nilpotent, written with the arrow and without the tilde by §*The Nilpotent Convention* of *Conventions in Mathematics*, and
+Let $B=0$ and $\vec Q\neq0$. Then $\vec Q^{2}=0$, so $\vec\Upsilon=\vec Q$ is a pure nilpotent, written with the arrow and without the tilde by §*The Nilpotent Convention* of *Conventions of the Special Elements*, and
 
 $$
 \tilde Q=Q_{t}e_{t}+\vec\Upsilon, \qquad \vec\Upsilon^{2}=0.

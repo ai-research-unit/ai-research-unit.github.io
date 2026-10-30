@@ -122,7 +122,7 @@ of complex dimension three and real dimension six (*N-Regularity and N-Degenerac
 
 The group is not compact. It contains the Hermitian positive elements of norm one, and those are unbounded: the element $c\,e_t+i\sqrt{c^{2}-1}\,\vec e_x$ has norm one for every $c\ge1$. This is the sharpest difference from the quaternion case, where the norm-one set is the sphere $S^{3}$. The biquaternion unit factor has three compact directions and three non-compact ones, and the split into boost and rotor separates them.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb B^{\times}$, the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions in Mathematics*, §*The Unitary Convention*. The group of units is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
+The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb B^{\times}$, the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*. The group of units is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
 
 **The count.** A biquaternion carries eight real parameters. The modulus carries two, the scale and the phase. The unit factor is constrained by the single complex equation $\langle\tilde U\rangle_{\natural}=1$, so it retains six real degrees of freedom. Thus
 

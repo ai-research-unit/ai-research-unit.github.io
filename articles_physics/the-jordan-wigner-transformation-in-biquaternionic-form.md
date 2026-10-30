@@ -106,9 +106,9 @@ The verification on $N=4$ returned a maximum error of exactly $0$ over all $16$ 
 **The number and the parity.** With the sign convention stated,
 
 $$
-m_j=c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j=\frac{I-\sigma^z_j}{2} ,
+n_j=c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j=\frac{I-\sigma^z_j}{2} ,
 \qquad
-(-1)^{m_j}=\sigma^z_j ,
+(-1)^{n_j}=\sigma^z_j ,
 $$
 
 so the occupied state is the spin-down state and the fermionic parity of a site *is* the site's $\sigma^z$. The first identity was checked term by term, the second follows from it in the two-dimensional site space and was checked as a matrix identity on the full chain.
@@ -125,7 +125,7 @@ and the inverse map returns the transverse spin components,
 $$
 \sigma^x_j=\Big(\prod_{k<j}\sigma^z_k\Big)\big(c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j\big) ,
 \qquad
-\sigma^z_j=I-2 m_j .
+\sigma^z_j=I-2 n_j .
 $$
 
 Both were verified bond by bond and site by site on the four-site chain, with maximum errors of $0$. The inverse displays the asymmetry of the transformation: recovering a spin operator requires the same string that the fermion carried, so the map is an isomorphism of algebras but the *fermion* mode is defined only relative to an ordering of the sites.
@@ -239,9 +239,9 @@ For $N$ sites, with $c^{\mathrm{fop}}_j=(\prod_{k<j}\sigma^z_k)\sigma^+_j$ and t
 $$
 \{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij} ,
 \qquad
-m_j=\frac{I-\sigma^z_j}{2} ,
+n_j=\frac{I-\sigma^z_j}{2} ,
 \qquad
-(-1)^{m_j}=\sigma^z_j ,
+(-1)^{n_j}=\sigma^z_j ,
 \qquad
 c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+\text{h.c.}=\tfrac12\big(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1}\big),
 $$
@@ -262,7 +262,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $\prod_{k<j}\sigma^z_k=\prod_{k<j}(-1)^{F_k}$ | The string as a product of one-site parities |
 | $(-1)^{F}=i\vec e_z=2\tilde S_z/\hbar$ | One-site parity, the string's factor |
 | $\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij}$, $\{c^{\mathrm{fop}}_i,c^{\mathrm{fop}}_j\}=0$ | Canonical anticommutators (verified, error $0$) |
-| $m_j=(I-\sigma^z_j)/2$, $(-1)^{m_j}=\sigma^z_j$ | Number and parity |
+| $n_j=(I-\sigma^z_j)/2$, $(-1)^{n_j}=\sigma^z_j$ | Number and parity |
 | $c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+\text{h.c.}=\tfrac12(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1})$ | Hopping = XY bond |
 | $\sigma^x_j=(\prod_{k<j}\sigma^z_k)(c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j)$ | Inverse map |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Both descriptions generate the full matrix algebra |

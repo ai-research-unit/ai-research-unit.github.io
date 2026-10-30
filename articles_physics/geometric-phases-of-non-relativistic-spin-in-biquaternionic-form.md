@@ -83,7 +83,7 @@ $$
 \Omega = 2\pi\left(1-\cos\theta_0\right),
 $$
 
-and the oriented value is $\Omega_{\mathrm{sgn}} = \pm\Omega$ according to the sense of traversal. The factor $\tfrac12$ is the spin-1/2 value; for spin $j$ it would be $j$ times the solid angle (with a sign), which is outside the scope of this subcategory.
+and the oriented value is $\Omega_{\mathrm{sgn}} = \pm\Omega$ according to the sense of traversal. The factor $\tfrac12$ is the spin-1/2 value; for spin $s$ it would be $s$ times the solid angle (with a sign), which is outside the scope of this subcategory.
 
 The formula has three immediate consequences. It is **reparametrisation invariant**, since the solid angle does not know the speed. It is **defined modulo $2\pi$**, since a phase is. And it is **sign-sensitive**: reversing the traversal of the same curve reverses the sign of the phase.
 

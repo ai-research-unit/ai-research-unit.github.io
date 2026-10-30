@@ -1,10 +1,10 @@
-# __Introduction to Mathematics__
+# __Introduction to the Mathematical Corpus__
 
 ## Introduction
 
 This article is the entry point to the mathematical corpus and describes how its articles are organised. It states what the corpus contains, the six parts and the five-slot spine they share, the object ladder, the ordering rules that decide where an article belongs, the boundaries between the parts and the local tests they give, the synthetic progression, the method by which the corpus is learnt, and the two exclusions — applications and physics. It introduces no mathematics of its own beyond the examples that make the organisation intelligible.
 
-The notation the articles assume is gathered separately, in the companion article *Conventions in Mathematics*. The two articles stand together at the head of the menu, outside the parts; what follows concerns the organisation alone.
+The notation the articles assume is gathered separately, in the six companions of *Conventions in Mathematics*. That article and its companions stand with this one in the front matter of the menu, outside the parts; what follows concerns the organisation alone.
 
 ## The Six Parts
 

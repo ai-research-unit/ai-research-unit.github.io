@@ -6,11 +6,11 @@ The biquaternion algebra is the algebra of the framework, and the fields of the 
 
 The algebra's content is bounded. Its defining module carries spin one-half; its centre carries spin zero; and it carries no other spin at all. Every field of integer spin or of spin three-halves in this corpus is built by **tensoring the defining module with itself** and imposing the constraints that remove the lower-spin admixture, or by carrying the four-vector index by conjugation rather than by module multiplication. The Proca field of the companion article is a biquaternion-valued four-vector, which is the tensor product of the defining module with its conjugate; the Rarita–Schwinger field is a biquaternion-valued four-vector further tensored with the defining module. Neither is a module over the algebra, and that is not an accident of the construction: it is forced.
 
-The article establishes three things. First, the module category of the algebra is trivial in the technical sense that it has a single isomorphism class of simple objects, so every module is a finite direct sum of copies of one two-dimensional module; the spin content of any module is therefore a finite number of copies of spin one-half, and there is no room in the category for a spin-one or higher module. Second, spin zero is nevertheless present, in the centre of the algebra and in the invariants of products of the defining module; it is the representation of the scalars, and it is the reason a scalar field is available in the framework. Third, the tensor products of the defining module generate every spin in the standard Lorentz classification, with spin $j$ appearing first in the $2j$-fold product and the pure spin-$j$ carrier being the totally symmetric part; the constraint structure of the resulting fields — which is explicit in the spin-one and spin-three-halves cases of the two preceding articles — is the price of extracting the pure spin from a product that contains it only in part.
+The article establishes three things. First, the module category of the algebra is trivial in the technical sense that it has a single isomorphism class of simple objects, so every module is a finite direct sum of copies of one two-dimensional module; the spin content of any module is therefore a finite number of copies of spin one-half, and there is no room in the category for a spin-one or higher module. Second, spin zero is nevertheless present, in the centre of the algebra and in the invariants of products of the defining module; it is the representation of the scalars, and it is the reason a scalar field is available in the framework. Third, the tensor products of the defining module generate every spin in the standard Lorentz classification, with spin $s$ appearing first in the $2s$-fold product and the pure spin-$s$ carrier being the totally symmetric part; the constraint structure of the resulting fields — which is explicit in the spin-one and spin-three-halves cases of the two preceding articles — is the price of extracting the pure spin from a product that contains it only in part.
 
-The article closes with the algebra-level version of the same statement. The tensor powers of the algebra are matrix algebras whose defining modules are the tensor powers of the defining module, so spin $j$ requires the $2j$-th tensor power of the algebra before it can appear even as a pure carrier. This is the precise sense in which the framework does not put higher spin in the algebra: higher spin lives in the algebra's tensor powers and in their modules, and the constraints are what select it.
+The article closes with the algebra-level version of the same statement. The tensor powers of the algebra are matrix algebras whose defining modules are the tensor powers of the defining module, so spin $s$ requires the $2s$-th tensor power of the algebra before it can appear even as a pure carrier. This is the precise sense in which the framework does not put higher spin in the algebra: higher spin lives in the algebra's tensor powers and in their modules, and the constraints are what select it.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$; its material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; and the defining, or spinor, module is written $S$, of complex dimension two. The finite-dimensional irreducible representations of the Lorentz group are labelled $(j,j_{\mathrm R})$, with $j$ the left-handed and $j_{\mathrm R}$ the right-handed label, and restriction to the rotation subgroup is written $\cdot|_{SU(2)}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$; its material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; and the defining, or spinor, module is written $S$, of complex dimension two. The finite-dimensional irreducible representations of the Lorentz group are labelled $(s,s_{\mathrm R})$, with $s$ the left-handed and $s_{\mathrm R}$ the right-handed label, and restriction to the rotation subgroup is written $\cdot|_{SU(2)}$.
 
 ## The Algebra and Its Defining Module
 
@@ -94,7 +94,7 @@ This is the ceiling in its sharpest form. It is not a statement about the algebr
 
 ### The dimension obstruction, and why it is not enough
 
-The modules have even complex dimension, $2k$, since each copy of $S$ contributes two. This excludes every representation of odd complex dimension, and among the Lorentz irreducibles $(j,j_{\mathrm R})$ those of odd dimension include $(1,0)$ and $(0,1)$, of dimension three, and more generally every $(j,0)$ and $(0,j_{\mathrm R})$ with $j$ and $j_{\mathrm R}$ integers. The representations with at least one half-integer label, whose dimension $(2j+1)(2j_{\mathrm R}+1)$ is even, escape this first filter; and the representation $(\tfrac12,\tfrac12)$ also escapes it, because its complex dimension is four. Those cases are excluded by the weight content instead. For the four-vector,
+The modules have even complex dimension, $2k$, since each copy of $S$ contributes two. This excludes every representation of odd complex dimension, and among the Lorentz irreducibles $(s,s_{\mathrm R})$ those of odd dimension include $(1,0)$ and $(0,1)$, of dimension three, and more generally every $(s,0)$ and $(0,s_{\mathrm R})$ with $s$ and $s_{\mathrm R}$ integers. The representations with at least one half-integer label, whose dimension $(2s+1)(2s_{\mathrm R}+1)$ is even, escape this first filter; and the representation $(\tfrac12,\tfrac12)$ also escapes it, because its complex dimension is four. Those cases are excluded by the weight content instead. For the four-vector,
 
 $$
 (\tfrac12,\tfrac12)\big|_{SU(2)} = 1\oplus0, \qquad \{+1,0,0,-1\},
@@ -124,10 +124,10 @@ Spin zero is thus native to the algebra, but it is native to the **centre** and 
 
 ### The decomposition rule
 
-Everything beyond spin one-half is obtained by tensoring the defining module with itself. The tensor powers decompose by the standard Clebsch–Gordan series for products of spin-$\tfrac12$: the highest spin in $S^{\otimes n}$ is $\tfrac n2$, the spins fall in integer steps, and the multiplicity of spin $j$ is
+Everything beyond spin one-half is obtained by tensoring the defining module with itself. The tensor powers decompose by the standard Clebsch–Gordan series for products of spin-$\tfrac12$: the highest spin in $S^{\otimes n}$ is $\tfrac n2$, the spins fall in integer steps, and the multiplicity of spin $s$ is
 
 $$
-m_j = \binom{n}{\frac n2 - j} - \binom{n}{\frac n2 - j - 1},
+n_s = \binom{n}{\frac n2 - j} - \binom{n}{\frac n2 - j - 1},
 $$
 
 with the binomial coefficient taken to vanish for a negative lower index. The small cases, computed from the weights, are
@@ -138,26 +138,26 @@ S^{\otimes3} = \tfrac32\oplus2\times\tfrac12, \qquad
 S^{\otimes4} = 2\oplus3\times1\oplus2\times0,
 $$
 
-of dimensions $4, 8, 16$, in agreement with the multiplicities $m_1=m_0=1$ for $n=2$, $m_{3/2}=1$, $m_{1/2}=2$ for $n=3$, and $m_2=1$, $m_1=3$, $m_0=2$ for $n=4$. The pattern is that spin $j$ appears for the first time in $S^{\otimes 2j}$: spin one in the square, spin three-halves in the cube, spin two in the fourth power, and in general the $2j$-fold product. This is the generation mechanism, and it is exactly the mechanism by which the standard Lorentz classification builds integer and higher spin from spinor indices.
+of dimensions $4, 8, 16$, in agreement with the multiplicities $n_1=n_0=1$ for $n=2$, $n_{3/2}=1$, $n_{1/2}=2$ for $n=3$, and $n_2=1$, $n_1=3$, $n_0=2$ for $n=4$. The pattern is that spin $s$ appears for the first time in $S^{\otimes 2s}$: spin one in the square, spin three-halves in the cube, spin two in the fourth power, and in general the $2s$-fold product. This is the generation mechanism, and it is exactly the mechanism by which the standard Lorentz classification builds integer and higher spin from spinor indices.
 
 ### Symmetric powers and the pure spin carriers
 
-The product $S^{\otimes 2j}$ contains spin $j$ together with lower spins, and the **pure** spin-$j$ carrier is the totally symmetric part. Its weight set is $\{+j,+j-1,\dots,-j\}$, one of each, so
+The product $S^{\otimes 2s}$ contains spin $s$ together with lower spins, and the **pure** spin-$s$ carrier is the totally symmetric part. Its weight set is $\{+s,+s-1,\dots,-s\}$, one of each, so
 
 $$
-\boxed{\;\mathrm{Sym}^{2j}(S)\big|_{SU(2)} = j, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2j}(S) = 2j+1\;},
+\boxed{\;\mathrm{Sym}^{2s}(S)\big|_{SU(2)} = s, \qquad \dim_\mathbb{C}\mathrm{Sym}^{2s}(S) = 2s+1\;},
 $$
 
-and its complex dimension is $2j+1$, odd: the carrier is not a direct sum of copies of $S$, which is the module-theoretic reason that a pure integer-spin carrier is not a module over $\mathbb{B}$. The antisymmetric parts carry the lower spins: $\Lambda^2 S$ is the trivial representation, of spin zero, as recorded above. In the Lorentz-group language the symmetric powers give the two conjugate three-dimensional families
+and its complex dimension is $2s+1$, odd: the carrier is not a direct sum of copies of $S$, which is the module-theoretic reason that a pure integer-spin carrier is not a module over $\mathbb{B}$. The antisymmetric parts carry the lower spins: $\Lambda^2 S$ is the trivial representation, of spin zero, as recorded above. In the Lorentz-group language the symmetric powers give the two conjugate three-dimensional families
 
 $$
-\mathrm{Sym}^{2j}(S) = (j,0), \qquad \mathrm{Sym}^{2j}(\bar S) = (0,j),
+\mathrm{Sym}^{2s}(S) = (s,0), \qquad \mathrm{Sym}^{2s}(\bar S) = (0,s),
 $$
 
-which for $j=1$ are the self-dual and anti-self-dual halves of the companion spin-one article. The general $(j,j_{\mathrm R})$ representation is reached by mixing the two families,
+which for $s=1$ are the self-dual and anti-self-dual halves of the companion spin-one article. The general $(s,s_{\mathrm R})$ representation is reached by mixing the two families,
 
 $$
-(j,j_{\mathrm R}) \;=\; \mathrm{Sym}^{2j}(S)\otimes_\mathbb{C}\mathrm{Sym}^{2j_{\mathrm R}}(\bar S),
+(s,s_{\mathrm R}) \;=\; \mathrm{Sym}^{2s}(S)\otimes_\mathbb{C}\mathrm{Sym}^{2s_{\mathrm R}}(\bar S),
 $$
 
 so the whole finite-dimensional representation theory of the Lorentz group is generated by the defining module and its conjugate, at the level of tensor products.
@@ -168,7 +168,7 @@ The two preceding articles of the subcategory are the concrete instances of the 
 
 ### Spin one
 
-Spin one is spin $j=1$, and its pure carriers are the symmetric squares
+Spin one is spin $s=1$, and its pure carriers are the symmetric squares
 
 $$
 \mathrm{Sym}^2(S) = (1,0), \qquad \mathrm{Sym}^2(\bar S) = (0,1),
@@ -178,7 +178,7 @@ of complex dimension three each. These are the self-dual and anti-self-dual halv
 
 ### Spin three-halves
 
-Spin three-halves is spin $j=\tfrac32$, and its carrier is obtained by tensoring the vector with the spinor,
+Spin three-halves is spin $s=\tfrac32$, and its carrier is obtained by tensoring the vector with the spinor,
 
 $$
 \left(\tfrac12,\tfrac12\right)\otimes\left[\left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right)\right]
@@ -189,7 +189,7 @@ of dimension sixteen, whose $SU(2)$ content is $2\times\tfrac32\oplus4\times\tfr
 
 ### The pattern
 
-The pattern that the two cases establish is general. To carry spin $j$ one needs the tensor product $S^{\otimes 2j}$, whose dimension grows as $2^{2j}$ while the pure spin-$j$ part grows only as $2j+1$; the difference is lower-spin admixture, and a field equation is required to remove it. The lower the spin, the smaller the admixture: spin one needs only the square, and its two-form needs no constraint beyond the antisymmetry; spin three-halves needs the cube, and its equation carries the algebraic trace and the subsidiary conditions; spin two, in the fourth power, needs the constraints that make a symmetric tensor into a graviton. None of these carriers is a module over the algebra, and the reason is always the same: their $SU(2)$ content is not a multiple of the defining module's.
+The pattern that the two cases establish is general. To carry spin $s$ one needs the tensor product $S^{\otimes 2s}$, whose dimension grows as $2^{2s}$ while the pure spin-$s$ part grows only as $2s+1$; the difference is lower-spin admixture, and a field equation is required to remove it. The lower the spin, the smaller the admixture: spin one needs only the square, and its two-form needs no constraint beyond the antisymmetry; spin three-halves needs the cube, and its equation carries the algebraic trace and the subsidiary conditions; spin two, in the fourth power, needs the constraints that make a symmetric tensor into a graviton. None of these carriers is a module over the algebra, and the reason is always the same: their $SU(2)$ content is not a multiple of the defining module's.
 
 ### Spin two, for the pattern's sake
 
@@ -220,17 +220,17 @@ $$
 
 **Proof sketch.** The algebra is $M_2(\mathbb{C}) = \mathrm{End}_\mathbb{C}(S)$, and the tensor product of endomorphism algebras is the endomorphism algebra of the tensor product of the modules, $\mathrm{End}(S)\otimes_\mathbb{C}\mathrm{End}(S) \cong \mathrm{End}(S\otimes_\mathbb{C}S)$; iterating gives the statement.
 
-The claim says that the operator that carries spin $j$ is available in the algebra's $2j$-th tensor power, whose defining module is $S^{\otimes 2j}$ and contains $\mathrm{Sym}^{2j}(S)$ as the pure spin-$j$ carrier. The base algebra itself, which is the first tensor power, contains only the spin-$\tfrac12$ module; the second tensor power contains the four-vector and the two-form; the fourth contains the spin-two carrier. Higher spin is thus not a property of the biquaternion algebra but a property of its tensor powers, and each power is a larger matrix algebra with a correspondingly larger category of modules.
+The claim says that the operator that carries spin $s$ is available in the algebra's $2s$-th tensor power, whose defining module is $S^{\otimes 2s}$ and contains $\mathrm{Sym}^{2s}(S)$ as the pure spin-$s$ carrier. The base algebra itself, which is the first tensor power, contains only the spin-$\tfrac12$ module; the second tensor power contains the four-vector and the two-form; the fourth contains the spin-two carrier. Higher spin is thus not a property of the biquaternion algebra but a property of its tensor powers, and each power is a larger matrix algebra with a correspondingly larger category of modules.
 
-This is the algebra-level form of the ceiling statement. There is no contradiction between "the algebra admits only spin $0$ and $\tfrac12$" and "spin $j$ appears in $\mathbb{B}^{\otimes 2j}$": the first is a statement about the modules of $\mathbb{B}$, the second about the modules of a larger algebra in which $\mathbb{B}$ sits diagonally. The fields of the corpus that carry higher spin are constructed on the larger algebra, and the framework's notation is a convenient way of writing them down, not a claim that the base algebra contains them.
+This is the algebra-level form of the ceiling statement. There is no contradiction between "the algebra admits only spin $0$ and $\tfrac12$" and "spin $s$ appears in $\mathbb{B}^{\otimes 2s}$": the first is a statement about the modules of $\mathbb{B}$, the second about the modules of a larger algebra in which $\mathbb{B}$ sits diagonally. The fields of the corpus that carry higher spin are constructed on the larger algebra, and the framework's notation is a convenient way of writing them down, not a claim that the base algebra contains them.
 
 ### The External Claim of One Equation for All Spins
 
 There is a claim in the literature that appears to contradict the ceiling, and it is worth stating why it does not. Gsponer and Hurni, in a four-page contribution to the Cornelius Lanczos centenary conference (1994; arXiv:hep-ph/0112317), report that the quaternionic equation of Lanczos, in the generalized form whose Lagrangian they attribute to **Einstein and Mayer (1933)**, describes particles of spin $0$, $\tfrac12$, $1$ and $\tfrac32$ in one framework. Read as a statement about **modules over $\mathbb{B}$**, that claim is false, and this article proves it false: the algebra's module category has one simple object, every module is a sum of copies of the two-complex-dimensional defining module, and the spin content of any module is therefore a whole number of copies of spin one-half, with spin zero available in the centre and no other spin anywhere.
 
-The claim is not about modules over $\mathbb{B}$, and it survives the ceiling because of what it is about. The Einstein–Mayer construction promotes the mass to a Clifford coefficient and treats wave equations of different spins as **semivectors of one larger system** — the carrier is a tensor object, graded by the spin it carries, exactly the object the previous section describes as a module of $\mathbb{B}^{\otimes 2j}$ rather than of $\mathbb{B}$. The corpus's own higher-spin fields have the same status: the Proca field is a biquaternion-valued four-vector, the Rarita–Schwinger field is a biquaternion-valued four-vector further tensored with the defining module, and neither is a module over the base algebra. A single generalized equation over such a carrier can therefore contain several spins at once, and the claim's "unified description" is a statement about the **carrier**, not a counterexample to the module classification.
+The claim is not about modules over $\mathbb{B}$, and it survives the ceiling because of what it is about. The Einstein–Mayer construction promotes the mass to a Clifford coefficient and treats wave equations of different spins as **semivectors of one larger system** — the carrier is a tensor object, graded by the spin it carries, exactly the object the previous section describes as a module of $\mathbb{B}^{\otimes 2s}$ rather than of $\mathbb{B}$. The corpus's own higher-spin fields have the same status: the Proca field is a biquaternion-valued four-vector, the Rarita–Schwinger field is a biquaternion-valued four-vector further tensored with the defining module, and neither is a module over the base algebra. A single generalized equation over such a carrier can therefore contain several spins at once, and the claim's "unified description" is a statement about the **carrier**, not a counterexample to the module classification.
 
-Three qualifications keep the comparison honest, and all three are properties of the source rather than of the algebra. It is four pages, it exhibits no derivation, and its title is a question. The spin content is asserted, not exhibited; in particular no constraint structure is given that would select the pure spin-$j$ parts from the carriers, which is the work this article's spin-one and spin-three-halves sections do explicitly. And the equality of the two statements — "one equation for all spins" and "the algebra admits only spin $0$ and $\tfrac12$" — is the corpus's interpretation of the former in the light of the latter, not an equivalence asserted by the source. What the source does establish, if its construction is sound, is a point of **history**: that the generalized-mass programme of the 1930s was already a higher-spin unification, and that the corpus's ceiling is a statement about the base algebra that the programme never needed to make.
+Three qualifications keep the comparison honest, and all three are properties of the source rather than of the algebra. It is four pages, it exhibits no derivation, and its title is a question. The spin content is asserted, not exhibited; in particular no constraint structure is given that would select the pure spin-$s$ parts from the carriers, which is the work this article's spin-one and spin-three-halves sections do explicitly. And the equality of the two statements — "one equation for all spins" and "the algebra admits only spin $0$ and $\tfrac12$" — is the corpus's interpretation of the former in the light of the latter, not an equivalence asserted by the source. What the source does establish, if its construction is sound, is a point of **history**: that the generalized-mass programme of the 1930s was already a higher-spin unification, and that the corpus's ceiling is a statement about the base algebra that the programme never needed to make.
 
 One part of the source's spin content *is* exhibited, and it points the same way as the ceiling. The paper lists the four rest-frame solutions of the Dirac–Lanczos equation as $D_0 = 1$, $\vec e_x$, $i\vec e_z$ and $i\vec e_y$ — spin up and down, particle and antiparticle — and then obtains the spin-$\tfrac32$ solutions by applying the operator $I = (\,)i\vec e_x$: "another quartet of solutions … together with the first one make the spin $\tfrac32$ solutions", while "pure spin $\tfrac12$ states are thus eigenstates of $I$". The higher-spin carrier is therefore built from the spin-$\tfrac12$ quartet by one further operator, which is a doubling of the lower carrier and not a counterexample to the classification above. It also supplies part of the selection statement that the qualifications above ask for: the eigenstates of $I$ are exactly the pure spin-$\tfrac12$ states, so $I$ is a constraint operator of the kind the spin-one and spin-three-halves sections of this article construct explicitly. What remains absent is the constraint structure for the spin-$\tfrac32$ part itself — the $\gamma$-tracelessness of Rarita–Schwinger — which the source does not give.
 
@@ -275,7 +275,7 @@ The point has a standard **physical interpretation**: the objects that transform
 The conventions and the explicit cases used above are those of five companion articles:
 
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its conjugate, and the Lorentz action.
-- Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the $(j,j_{\mathrm R})$ classification and the restriction to the rotation subgroup.
+- Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the $(s,s_{\mathrm R})$ classification and the restriction to the rotation subgroup.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the four-vector and field-strength content of the spin-one case.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the explicit spin-one case and its constraint structure.
 - Companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, for the explicit spin-three-halves case and its constraint structure.
@@ -292,7 +292,7 @@ The biquaternion algebra is $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\ma
 
 Spin zero is present, but not as a summand of a nonzero module: it is the representation of the centre $\mathbb{C}_{\mathbb{B}}$, the trivial representation of the invariant subspace and of the antisymmetric square $\Lambda^2 S\cong\mathbb{C}$, and the trivial representation on the endomorphism space $\mathrm{End}_\mathbb{B}(S)=\mathbb{C}$. The scalar field of the framework lives in the centre, and that is why the scalar sector is native while the higher-spin sectors are not.
 
-Higher spin is generated by tensor products. The tensor power $S^{\otimes n}$ decomposes into spins $\tfrac n2,\tfrac n2-1,\dots$, so spin $j$ appears first in $S^{\otimes 2j}$, and the pure spin-$j$ carrier is the symmetric power $\mathrm{Sym}^{2j}(S)=(j,0)$, of complex dimension $2j+1$; the antisymmetric parts carry the lower spins, with $\Lambda^2 S$ the scalar. Spin one is the square, realised by the self-dual and anti-self-dual halves of the field strength on the vector part of the algebra, with the four-vector $S\otimes\bar S$ as its linearly transforming parent; spin three-halves is the cube, realised by the Rarita–Schwinger vector-spinor, whose constraints remove the spin-$\tfrac12$ admixture. The carrier of spin $j$ is the module of the $2j$-th tensor power of the algebra, $\mathbb{B}^{\otimes 2j}\cong M_{2^{2j}}(\mathbb{C})$, whose defining module is $S^{\otimes 2j}$; higher spin belongs to the tensor powers, not to the base algebra.
+Higher spin is generated by tensor products. The tensor power $S^{\otimes n}$ decomposes into spins $\tfrac n2,\tfrac n2-1,\dots$, so spin $s$ appears first in $S^{\otimes 2s}$, and the pure spin-$s$ carrier is the symmetric power $\mathrm{Sym}^{2s}(S)=(s,0)$, of complex dimension $2s+1$; the antisymmetric parts carry the lower spins, with $\Lambda^2 S$ the scalar. Spin one is the square, realised by the self-dual and anti-self-dual halves of the field strength on the vector part of the algebra, with the four-vector $S\otimes\bar S$ as its linearly transforming parent; spin three-halves is the cube, realised by the Rarita–Schwinger vector-spinor, whose constraints remove the spin-$\tfrac12$ admixture. The carrier of spin $s$ is the module of the $2s$-th tensor power of the algebra, $\mathbb{B}^{\otimes 2s}\cong M_{2^{2s}}(\mathbb{C})$, whose defining module is $S^{\otimes 2s}$; higher spin belongs to the tensor powers, not to the base algebra.
 
 The ceiling is therefore a statement about the module category and not about the framework's reach: the algebra's own modules carry only spin zero and spin one-half, integer and higher spin arrive through tensor products and conjugations with the constraints that select them, and the structure that makes the whole tower work is the simplicity of the algebra and the concreteness of its defining module.
 
@@ -309,7 +309,7 @@ The ceiling is therefore a statement about the module category and not about the
 | $\mathbb{C}_{\mathbb{B}}=\{Q_te_t\}$ | Centre, carrier of the scalar (spin-zero) field |
 | $\Lambda^2 S\cong\mathbb{C}$ | Invariant (spin-zero) part of the antisymmetric square |
 | $S^{\otimes n}$ | $n$-fold tensor power, spins $\tfrac n2,\tfrac n2-1,\dots$ |
-| $\mathrm{Sym}^{2j}(S)=(j,0)$ | Pure spin-$j$ carrier, complex dimension $2j+1$ |
+| $\mathrm{Sym}^{2s}(S)=(s,0)$ | Pure spin-$s$ carrier, complex dimension $2s+1$ |
 | $(\tfrac12,\tfrac12)=S\otimes\bar S$ | Four-vector representation, not a module over $\mathbb{B}$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor powers; defining module $S^{\otimes n}$ |
 | $(1,0)\oplus(0,1)$ | Self-dual and anti-self-dual halves of the field strength |
@@ -319,7 +319,7 @@ The ceiling is therefore a statement about the module category and not about the
 - Richard Brauer and Hermann Weyl, "Spinors in $n$ dimensions", *American Journal of Mathematics* 57 (1935) 425–449, for the spinor representations and their tensor products.
 - Michael Artin, *Algebra* (Prentice Hall, 1991), for the Artin–Wedderburn theorem, simple algebras, and the structure of modules over a matrix algebra.
 - Irving Kaplansky, *Fields and Rings* (Chicago, 1972), for the Wedderburn theorems and the classification of semisimple rings.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the $(j,j_{\mathrm R})$ classification of the finite-dimensional Lorentz representations and the reduction of their tensor products.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the $(s,s_{\mathrm R})$ classification of the finite-dimensional Lorentz representations and the reduction of their tensor products.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the two-spinor description of the Lorentz representations and the symmetric spinor products that carry integer spin.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for minimal left ideals, the spinor module, and its relation to the even Clifford algebra.
 - Morris L. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Interscience, 1962), for the module theory of semisimple algebras and the Morita equivalence used here.

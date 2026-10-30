@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spin-$j$ state has $2j+1$ complex amplitudes, and up to normalization and an overall phase it has $2j$ real parameters. Majorana's observation of 1932 is that these parameters can be read geometrically: the state is represented by $2j$ points on the unit sphere — the **Majorana stars** — which are the roots of a degree-$2j$ polynomial built from the amplitudes. Under a rotation of the physical system the constellation of stars rotates rigidly; the representation is thus the rotationally covariant recasting of the state space as a configuration of points on the sphere. For a spin-1/2 there is exactly one star, and the constellation is the single point already known as the Bloch vector.
+A spin-$s$ state has $2s+1$ complex amplitudes, and up to normalization and an overall phase it has $2s$ real parameters. Majorana's observation of 1932 is that these parameters can be read geometrically: the state is represented by $2s$ points on the unit sphere — the **Majorana stars** — which are the roots of a degree-$2s$ polynomial built from the amplitudes. Under a rotation of the physical system the constellation of stars rotates rigidly; the representation is thus the rotationally covariant recasting of the state space as a configuration of points on the sphere. For a spin-1/2 there is exactly one star, and the constellation is the single point already known as the Bloch vector.
 
 This article treats the Majorana representation in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The construction is standard and is reproduced exactly; what the framework contributes is the placement of the star map within the algebra of idempotents and spinors, and the unification of three objects that the framework treats separately:
 
@@ -10,7 +10,7 @@ This article treats the Majorana representation in the biquaternion algebra $\ma
 2. **The spinor and its stereographic coordinate.** The star is the image of the ratio $\zeta = \psi_2/\psi_1$ of the two spinor components under inverse stereographic projection. The map from spinor to star is two-to-one, and the lost phase is exactly the geometric phase of the preceding articles.
 3. **The rotor.** The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\zeta$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{H}_{\mathbb{B}}$.
 
-The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2j=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
+The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
 
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
@@ -61,17 +61,17 @@ The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\
 
 ### The General Construction
 
-For spin $j$ the state $|\psi\rangle = \sum_{m=-j}^{j}c_m|j,m\rangle$ is represented by the degree-$2j$ polynomial
+For spin $s$ the state $|\psi\rangle = \sum_{s_z=-s}^{s}c_m|s,s_z\rangle$ is represented by the degree-$2s$ polynomial
 
 $$
-\boxed{\;P_\psi(z) = \sum_{m=-j}^{j}(-1)^{j-m}\binom{2j}{j+m}^{1/2} c_m\,z^{\,j+m}\;},
+\boxed{\;P_\psi(z) = \sum_{s_z=-s}^{s}(-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2} c_m\,z^{\,s+s_z}\;},
 $$
 
-whose $2j$ complex roots are the stereographic coordinates of the $2j$ Majorana stars. A global phase of $|\psi\rangle$ multiplies $P_\psi$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.
+whose $2s$ complex roots are the stereographic coordinates of the $2s$ Majorana stars. A global phase of $|\psi\rangle$ multiplies $P_\psi$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.
 
 ### The Spin-1/2 Case: a Single Star
 
-For $j = \tfrac{1}{2}$ the polynomial is linear,
+For $s = \tfrac{1}{2}$ the polynomial is linear,
 
 $$
 P_\psi(z) = c_{1/2}\,z - c_{-1/2} = \psi_1\,z - \psi_2,
@@ -87,7 +87,7 @@ which is exactly the stereographic coordinate of the star. The state is a single
 
 ### Coherent States and the Coincidence Limit
 
-A **spin coherent state** is the state obtained by rotating the north-pole state, $|\theta,\phi\rangle = \tilde{u}(\theta,\phi)|\!\uparrow\rangle$; its star is the single point $(\theta,\phi)$. In the algebra it is the idempotent $\tilde\Pi_1(\vec u_x(\theta,\phi))$, and the rotor $\tilde{u}$ is the unit real quaternion taking $\vec e_z$ to $\vec u_x$. For spin $j$ the coherent state has all $2j$ stars coincident at that point; the spin-1/2 case is the degenerate instance in which there is only one star to coincide with itself.
+A **spin coherent state** is the state obtained by rotating the north-pole state, $|\theta,\phi\rangle = \tilde{u}(\theta,\phi)|\!\uparrow\rangle$; its star is the single point $(\theta,\phi)$. In the algebra it is the idempotent $\tilde\Pi_1(\vec u_x(\theta,\phi))$, and the rotor $\tilde{u}$ is the unit real quaternion taking $\vec e_z$ to $\vec u_x$. For spin $s$ the coherent state has all $2s$ stars coincident at that point; the spin-1/2 case is the degenerate instance in which there is only one star to coincide with itself.
 
 ## Rotational Covariance
 
@@ -125,13 +125,13 @@ The rotational covariance of the star map is its defining property. It says that
 
 ### Symmetric States and the Constellation
 
-The natural extension of the construction is to $N$ spin-1/2 particles in the **symmetric** subspace, which is the subspace of states invariant under exchange of the particles. Such a state is a spin $N/2$ state — that is, it has total angular momentum $j = N/2$ — but its constituents are spin-1/2, and the $2j = N$ Majorana stars are the $N$ roots of the degree-$N$ polynomial. The constellation picture is thus a picture of a symmetric many-spin-1/2 state, and its rotationally covariant content is the geometry of $N$ points on the Bloch sphere. The representation theory of the total angular momentum $j\ge1$ — the Wigner–Eckart theorem and the generalized Bloch ball — belongs to the neighbouring subcategory on particles of spin $1$ and above; what is treated here is the spin-1/2 construction and its many-particle symmetric extension.
+The natural extension of the construction is to $N$ spin-1/2 particles in the **symmetric** subspace, which is the subspace of states invariant under exchange of the particles. Such a state is a spin $N/2$ state — that is, it has total angular momentum $s = N/2$ — but its constituents are spin-1/2, and the $2s = N$ Majorana stars are the $N$ roots of the degree-$N$ polynomial. The constellation picture is thus a picture of a symmetric many-spin-1/2 state, and its rotationally covariant content is the geometry of $N$ points on the Bloch sphere. The representation theory of the total angular momentum $j\ge1$ — the Wigner–Eckart theorem and the generalized Bloch ball — belongs to the neighbouring subcategory on particles of spin $1$ and above; what is treated here is the spin-1/2 construction and its many-particle symmetric extension.
 
 ### Examples
 
 - **Coherent (product) states.** All $N$ stars coincide at one point; the state is the product of $N$ identical spin-1/2 coherent states. The constellation is a single point of multiplicity $N$.
-- **The $W$ state.** The symmetric state with a single minority spin, $|W\rangle = \frac{1}{\sqrt{N}}\sum_i|\!\uparrow\cdots\downarrow_i\cdots\uparrow\rangle$, is the Dicke state $|j = N/2,\,m = N/2-1\rangle$. Its polynomial is proportional to $z^{N-1}$, so its constellation is $N-1$ stars at the north pole and one star at the south pole.
-- **The Dicke states.** In general $|j = N/2,\,m\rangle$ has polynomial proportional to $z^{\,j+m}$, so its constellation is $j+m$ stars at the north pole and $j-m$ stars at the south pole. The equatorial case $m = 0$ has $j$ stars at each pole, not a spread about the equator.
+- **The $W$ state.** The symmetric state with a single minority spin, $|W\rangle = \frac{1}{\sqrt{N}}\sum_i|\!\uparrow\cdots\downarrow_i\cdots\uparrow\rangle$, is the Dicke state $|s_{\mathrm{tot}} = N/2,\,s_{\mathrm{tot},z} = N/2-1\rangle$. Its polynomial is proportional to $z^{N-1}$, so its constellation is $N-1$ stars at the north pole and one star at the south pole.
+- **The Dicke states.** In general $|s_{\mathrm{tot}} = N/2,\,s_{\mathrm{tot},z}\rangle$ has polynomial proportional to $z^{\,s+s_z}$, so its constellation is $s+s_z$ stars at the north pole and $s-s_z$ stars at the south pole. The equatorial case $m = 0$ has $s$ stars at each pole, not a spread about the equator.
 
 The point of the constellation for many spins is that a rotationally covariant question about a symmetric state becomes a geometric question about $N$ points. This is the standard use of the Majorana representation in the study of symmetric multi-qubit states, and the algebra supplies the sphere and the rotor on which the picture rests.
 
@@ -143,7 +143,7 @@ $$
 |\mathrm{singlet}\rangle = \frac{1}{\sqrt2}\left(|\!\uparrow\downarrow\rangle - |\!\downarrow\uparrow\rangle\right)
 $$
 
-has total angular momentum $j = 0$, no symmetric polynomial of positive degree, and no constellation of stars in the sense above; it is annihilated by every component of the total spin. This is why the singlet is rotationally invariant and why it plays its special role in the companion exercise *Exercise: Two Spins in the Singlet State*; the Majorana picture and the singlet are complementary descriptions of the two-spin-1/2 Hilbert space, the symmetric and antisymmetric sectors.
+has total angular momentum $s_{\mathrm{tot}} = 0$, no symmetric polynomial of positive degree, and no constellation of stars in the sense above; it is annihilated by every component of the total spin. This is why the singlet is rotationally invariant and why it plays its special role in the companion exercise *Exercise: Two Spins in the Singlet State*; the Majorana picture and the singlet are complementary descriptions of the two-spin-1/2 Hilbert space, the symmetric and antisymmetric sectors.
 
 ## The Geometric Phase of the Star
 
@@ -244,13 +244,13 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 
 3. **Degenerate constellations.** When all the stars coincide the state is the coherent state along that axis, a highest-weight state of the corresponding component; for partial coincidences the polynomial has a multiple root, so the individual stars are no longer resolved by the roots on their own. How does the algebra handle the degeneration of the idempotents?
 
-4. **The geometric phase of the constellation.** For spin $j$ the geometric phase of a transported state is a sum over the stars of solid-angle terms; for spin-1/2 there is one star. Whether the multi-star formula has a natural algebraic interpretation is a question that belongs with the spin-$1$-and-above representation theory.
+4. **The geometric phase of the constellation.** For spin $s$ the geometric phase of a transported state is a sum over the stars of solid-angle terms; for spin-1/2 there is one star. Whether the multi-star formula has a natural algebraic interpretation is a question that belongs with the spin-$1$-and-above representation theory.
 
 5. **Empirical contact.** As elsewhere, the representation is standard and the framework reproduces it; whether it implies a measurable deviation is open.
 
 ## Summary
 
-The **Majorana representation** of a spin-$j$ state assigns $2j$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2j$ polynomial $P_\psi(z) = \sum_m (-1)^{j-m}\binom{2j}{j+m}^{1/2}c_m z^{j+m}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
+The **Majorana representation** of a spin-$s$ state assigns $2s$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2s$ polynomial $P_\psi(z) = \sum_m (-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2}c_m z^{s+s_z}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
 
 $$
 \boxed{\;\zeta = \frac{\psi_2}{\psi_1} = \tan\frac{\theta}{2}\exp(i\phi),
@@ -277,13 +277,13 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Idempotent; the state of a spin-1/2 |
 | $\vec u_x = \vec r$ | Bloch vector; the single Majorana star |
 | $\zeta = \psi_2/\psi_1 = \tan\tfrac{\theta}{2}\exp(i\phi)$ | Stereographic coordinate |
-| $P_\psi(z)$ | Majorana polynomial of degree $2j$ |
-| $2j$ | Number of Majorana stars; $1$ for spin-1/2 |
+| $P_\psi(z)$ | Majorana polynomial of degree $2s$ |
+| $2s$ | Number of Majorana stars; $1$ for spin-1/2 |
 | $g = \begin{pmatrix}a&b\\-b^*&a^*\end{pmatrix}\in SU(2)$ | Rotation acting on the spinor |
 | $\zeta\mapsto\dfrac{a^*\zeta-b^*}{b\zeta+a}$ | Möbius action on the star |
 | $\mathcal{A} = -\sin^2\tfrac{\theta}{2}\,d\phi$ | Berry connection in stereographic coordinates |
 | $-\tfrac12\Omega_{\mathrm{sgn}}$ | Geometric phase discarded by the star map |
-| $|W\rangle$, $|j,m\rangle$ | Symmetric multi-spin-1/2 states and Dicke states |
+| $|W\rangle$, $|s,s_z\rangle$ | Symmetric multi-spin-1/2 states and Dicke states |
 
 ## Further Reading
 

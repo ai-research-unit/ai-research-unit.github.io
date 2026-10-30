@@ -8,7 +8,7 @@ This article develops the Jordan basis and its coordinate model, the canonical a
 
 **Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. Put $B^2=\vec Q\cdot\vec Q=0$, $Q=\mathsf M_2(\vec Q)$, and $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$. The nilpotent $Q$ is rank one. The Jordan block is $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. The corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the chain order is $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$.
 
-The Hermitian form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Conventions in Mathematics*, §*The Form Convention, the Norm Convention and the Unitary Convention*, with norm $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$. The star is $\tilde Q^*=\bar Q_te_t-\overline{\vec Q}$, and $\mathsf M_2(\tilde Q^*)=M^{\dagger}$. The singular value of the nilpotent is
+The Hermitian form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Conventions of the Products and the Forms*, §*The Form Convention*, with norm $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$. The star is $\tilde Q^*=\bar Q_te_t-\overline{\vec Q}$, and $\mathsf M_2(\tilde Q^*)=M^{\dagger}$. The singular value of the nilpotent is
 
 $$
 s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}.

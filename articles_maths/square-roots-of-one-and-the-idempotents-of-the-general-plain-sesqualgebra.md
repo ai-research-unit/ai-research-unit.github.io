@@ -248,7 +248,7 @@ $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_t+\tilde\Xi\bigr),\qquad \tilde\Pi_-(\tilde\Xi)=\tfrac12\bigl(e_t-\tilde\Xi\bigr).
 $$
 
-The pair carries the two signs rather than two numbers, as §*The Idempotent Convention* of *Conventions in Mathematics* provides for a complete pair: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$, an attachment §*The Arithmetic of the Pair of Idempotents* computes.
+The pair carries the two signs rather than two numbers, as §*The Idempotent Convention* of *Conventions of the Special Elements* provides for a complete pair: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$, an attachment §*The Arithmetic of the Pair of Idempotents* computes.
 
 Each member is Hermitian, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, since $\tilde\Xi$ is, and a Hermitian element has the same square in the two products (§*The Reduction*), so each is idempotent for the block as soon as it is idempotent for the algebra:
 

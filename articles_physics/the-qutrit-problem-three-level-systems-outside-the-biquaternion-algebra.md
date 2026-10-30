@@ -222,7 +222,7 @@ $$
 \mathrm{Sym}^nV,\qquad \dim_{\mathbb{C}}\mathrm{Sym}^nV=n+1 ,
 $$
 
-that is, the spin-$j$ multiplet $V_j$ with $j=n/2$, as recorded in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and it appears as a summand of the $n$-fold tensor power, with multiplicities given by the ballot numbers. Since a single factor of the algebra carries only two levels, the counting is:
+that is, the spin-$s$ multiplet $V_s$ with $s=n/2$, as recorded in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and it appears as a summand of the $n$-fold tensor power, with multiplicities given by the ballot numbers. Since a single factor of the algebra carries only two levels, the counting is:
 
 | Spin | Multiplet $\dim=2s+1$ | Sector of | Factors needed |
 |---|---|---|---|

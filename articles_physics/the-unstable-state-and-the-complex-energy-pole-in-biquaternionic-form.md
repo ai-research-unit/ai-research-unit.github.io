@@ -317,7 +317,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 **What the algebra does not add.**
 
-- **No scale.** The algebra fixes no value of $\Gamma$. The decay rate is fixed by the coupling and the density of states, both of which are inputs. This is the same absence of scale recorded in §*Physical Units* of *Conventions in the Biquaternion Universe*, and it means the framework can describe a lifetime but cannot predict one.
+- **No scale.** The algebra fixes no value of $\Gamma$. The decay rate is fixed by the coupling and the density of states, both of which are inputs. This is the same absence of scale recorded in §*Physical Units* of *Conventions of the Units, the Indices and the Notation*, and it means the framework can describe a lifetime but cannot predict one.
 - **No prediction.** For a given coupling and continuum the framework gives the same exponential, the same width and the same level shift as the standard treatment. Nothing here distinguishes the two.
 - **No specific particle's lifetime.** A lifetime becomes a number only when the coupling is known. The neutron's beta decay, for instance, needs a weak chiral gauge structure the framework does not contain, and its lifetime therefore remains outside the framework; the mechanism by which a coupling becomes a lifetime is now stated, and is the boundary at which *The Neutron in Biquaternionic Form* now stands, but the coupling is not supplied.
 

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$, the Casimir $\tilde J^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{M}_+$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
+The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the Casimir $\tilde S_{\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{M}_+$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
 
 This article develops that remark into the general machinery. Its subject is the **addition of angular momenta and the Clebsch–Gordan coefficients** as they appear inside the biquaternion framework: the coupled operators, the coupled basis, the decomposition of a tensor product of rotation multiplets, and the explicit coefficients for the two cases the framework itself supports, $\tfrac12\otimes\tfrac12$ and $1\otimes1$.
 
-The distinction between what is algebraic and what is imported runs through everything below and is worth stating at the outset. The Clebsch–Gordan coefficients are pure numbers; they belong to the representation theory of the rotation group and are independent of any particular realisation of the spin operators. What the biquaternion framework supplies is three things: the spin-$\tfrac12$ factor as the fundamental module of $\mathbb{B}$, with its operators $\tilde S_k$ as elements of $\mathbb{M}_+$; the two-factor arena $\mathbb{B}\otimes\mathbb{B}$, in which a composite of two fundamental systems lives; and the identification of the $j=1$ and $j=0$ coupled subspaces with the symmetric and antisymmetric parts of the tensor square, which are canonically defined subspaces of the algebra. What the framework does not supply is a module of any dimension other than two. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, so it realises $j=0$ and $j=\tfrac12$ as modules and reaches $j\ge1$ only through tensor products, symmetric powers, or the adjoint action. The coupling of two spin-$\tfrac12$ factors is therefore the central case, and the coupling of two spin-$1$ factors is available only because each spin-$1$ factor is itself built from two fundamental ones.
+The distinction between what is algebraic and what is imported runs through everything below and is worth stating at the outset. The Clebsch–Gordan coefficients are pure numbers; they belong to the representation theory of the rotation group and are independent of any particular realisation of the spin operators. What the biquaternion framework supplies is three things: the spin-$\tfrac12$ factor as the fundamental module of $\mathbb{B}$, with its operators $\tilde S_k$ as elements of $\mathbb{M}_+$; the two-factor arena $\mathbb{B}\otimes\mathbb{B}$, in which a composite of two fundamental systems lives; and the identification of the $j=1$ and $j=0$ coupled subspaces with the symmetric and antisymmetric parts of the tensor square, which are canonically defined subspaces of the algebra. What the framework does not supply is a module of any dimension other than two. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, so it realises $j=0$ and $s_{\mathrm{tot}}=\tfrac12$ as modules and reaches $j\ge1$ only through tensor products, symmetric powers, or the adjoint action. The coupling of two spin-$\tfrac12$ factors is therefore the central case, and the coupling of two spin-$1$ factors is available only because each spin-$1$ factor is itself built from two fundamental ones.
 
 The article is organised as follows. The next section recalls the angular-momentum algebra and fixes the notation for the coupled problem. The section after that sets up two independent systems inside $\mathbb{B}\otimes\mathbb{B}$ and defines the total operators. Then the Clebsch–Gordan series is stated and its dimension count checked. The two cases are then worked out: $\tfrac12\otimes\tfrac12$, where the coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square and the coefficients are obtained by a one-line ladder computation; and $1\otimes1$, where the coefficients are tabulated. The following section treats the Clebsch–Gordan transformation as an element of the algebra and identifies the sense in which it is not a product of one-factor transformations. The recursion relations satisfied by the coefficients and the Condon–Shortley phase convention are then recorded, and a closing section separates the algebraic content from the imported content.
 
@@ -14,47 +14,47 @@ The article is organised as follows. The next section recalls the angular-moment
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, the cyclic relations $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for distinct $\mu,\nu\in\{x,y,z\}$. The scalar imaginary $i$ is central, $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ consists of elements with real scalar part and imaginary vector part.
 
-An angular momentum is a triple of Hermitian elements $\tilde J_1,\tilde J_2,\tilde J_3\in\mathbb{M}_+$ satisfying
+An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{M}_+$ satisfying
 
 $$
-[\tilde J_i,\tilde J_j]=i\hbar\,\epsilon_{ijk}\tilde J_k .
+[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\,\epsilon_{ijk}\tilde S_{\mathrm{tot},k} .
 $$
 
 The **Casimir** and the **ladder operators** are
 
 $$
-\tilde J^2=\sum_{k=1}^{3}\tilde J_k^2,\qquad
-\tilde J_\pm=\tilde J_1\pm i\tilde J_2 ,
+\tilde S_{\mathrm{tot}}^2=\sum_{k=1}^{3}\tilde S_{\mathrm{tot},k}^2,\qquad
+\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2} ,
 $$
 
 and they satisfy the standard relations
 
 $$
-[\tilde J^2,\tilde J_k]=0,\qquad
-[\tilde J_3,\tilde J_\pm]=\pm\hbar\tilde J_\pm,\qquad
-[\tilde J_+,\tilde J_-]=2\hbar\tilde J_3 .
+[\tilde S_{\mathrm{tot}}^2,\tilde S_{\mathrm{tot},k}]=0,\qquad
+[\tilde S_{\mathrm{tot},3},\tilde S_{\mathrm{tot},\pm}]=\pm\hbar\tilde S_{\mathrm{tot},\pm},\qquad
+[\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}]=2\hbar\tilde S_{\mathrm{tot},3} .
 $$
 
-The ladder operators are not Hermitian and do not lie in $\mathbb{M}_+$: they satisfy $\tilde J_\pm^{*}=\tilde J_\mp$, so that $\tilde J_\pm^{*}\ne\tilde J_\pm$ and $\tilde J_\pm$ lies in the full algebra. The Casimir may be written
+The ladder operators are not Hermitian and do not lie in $\mathbb{M}_+$: they satisfy $\tilde S_{\mathrm{tot},\pm}^{*}=\tilde S_{\mathrm{tot},\mp}$, so that $\tilde S_{\mathrm{tot},\pm}^{*}\ne\tilde S_{\mathrm{tot},\pm}$ and $\tilde S_{\mathrm{tot},\pm}$ lies in the full algebra. The Casimir may be written
 
 $$
-\tilde J^2=\tilde J_3^2+\tfrac{1}{2}\left(\tilde J_+\tilde J_-+\tilde J_-\tilde J_+\right).
+\tilde S_{\mathrm{tot}}^2=\tilde S_{\mathrm{tot},3}^2+\tfrac{1}{2}\left(\tilde S_{\mathrm{tot},+}\tilde S_{\mathrm{tot},-}+\tilde S_{\mathrm{tot},-}\tilde S_{\mathrm{tot},+}\right).
 $$
 
-The simultaneous eigenvectors $|j,m\rangle$ of $\tilde J^2$ and $\tilde J_3$ are defined by
+The simultaneous eigenvectors $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ of $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ are defined by
 
 $$
-\tilde J^2|j,m\rangle=j(j+1)\hbar^2\,|j,m\rangle,\qquad
-\tilde J_3|j,m\rangle=m\hbar\,|j,m\rangle,\qquad m=-j,-j+1,\dots,j,
+\tilde S_{\mathrm{tot}}^2|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad
+\tilde S_{\mathrm{tot},3}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=s_{\mathrm{tot},z}\hbar\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle,\qquad s_{\mathrm{tot},z}=-s_{\mathrm{tot}},-s_{\mathrm{tot}}+1,\dots,s_{\mathrm{tot}},
 $$
 
 and the ladder operators act by
 
 $$
-\tilde J_\pm|j,m\rangle=\hbar\sqrt{(j\mp m)(j\pm m+1)}\;|j,m\pm1\rangle .
+\tilde S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle .
 $$
 
-For the fundamental case $j=\tfrac12$ the algebra supplies the operators as algebra elements,
+For the fundamental case $s_{\mathrm{tot}}=\tfrac12$ the algebra supplies the operators as algebra elements,
 
 $$
 \tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k\in\mathbb{M}_+,
@@ -93,31 +93,31 @@ $$
 with the two factors acting on the separate slots,
 
 $$
-\tilde J_k^{(1)}=\tilde J_k\otimes e_t,\qquad
-\tilde J_k^{(2)}=e_t\otimes \tilde J_k .
+\tilde S_{1,k}=\tilde S_k\otimes e_t,\qquad
+\tilde S_{2,k}=e_t\otimes \tilde S_k .
 $$
 
 Because the products act on different slots, the cross-commutators vanish,
 
 $$
-[\tilde J_i^{(1)},\tilde J_j^{(2)}]=0 ,
+[\tilde S_{1,i},\tilde S_{2,j}]=0 ,
 $$
 
 and each factor satisfies its own commutation relations. The **total angular momentum** is the sum
 
 $$
-\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)} ,
+\tilde S_{\mathrm{tot},k}=\tilde S_{1,k}+\tilde S_{2,k} ,
 $$
 
-which again satisfies $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$, as a direct computation using the vanishing of the cross-commutators shows. Its Casimir is
+which again satisfies $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, as a direct computation using the vanishing of the cross-commutators shows. Its Casimir is
 
 $$
-\tilde J^2=\tilde J_{(1)}^2+\tilde J_{(2)}^2+2\sum_{k=1}^{3}\tilde J_k^{(1)}\tilde J_k^{(2)} ,
+\tilde S_{\mathrm{tot}}^2=\tilde S_1^2+\tilde S_2^2+2\sum_{k=1}^{3}\tilde S_{1,k}\tilde S_{2,k} ,
 $$
 
-where $\tilde J_{(a)}^2=\sum_k(\tilde J_k^{(a)})^2$. The last term is the **coupling term**; it is the only term that is not a sum of one-factor operators.
+where $\tilde S_a^2=\sum_k(\tilde S_{a,k})^2$. The last term is the **coupling term**; it is the only term that is not a sum of one-factor operators.
 
-The coupled states $|j,m\rangle_{*}$ are by definition the simultaneous eigenvectors of $\tilde J^2$ and $\tilde J_3$ in the tensor-product space. The product states $|j_1,m_1\rangle|j_2,m_2\rangle$ are eigenvectors of $\tilde J_3$ with eigenvalue $(m_1+m_2)\hbar$, but not of $\tilde J^2$ unless $j_1=0$ or $j_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde J_3^{(1)}$ and $\tilde J_3^{(2)}$ are diagonal, to the coupled basis, in which $\tilde J^2$ and $\tilde J_3$ are diagonal, is the Clebsch–Gordan transformation.
+The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by definition the simultaneous eigenvectors of $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ in the tensor-product space. The product states $|s_1,s_{1z}\rangle|s_2,s_{2z}\rangle$ are eigenvectors of $\tilde S_{\mathrm{tot},3}$ with eigenvalue $(s_{1z}+s_{2z})\hbar$, but not of $\tilde S_{\mathrm{tot}}^2$ unless $s_1=0$ or $s_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde S_{1,3}$ and $\tilde S_{2,3}$ are diagonal, to the coupled basis, in which $\tilde S_{\mathrm{tot}}^2$ and $\tilde S_{\mathrm{tot},3}$ are diagonal, is the Clebsch–Gordan transformation.
 
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
@@ -134,20 +134,20 @@ $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\vec u_z)\otimes \tilde\Pi(\pm\vec u_z)$.
 
-One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Modules over the Biquaternion Algebra* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The total angular momenta $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
+One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Modules over the Biquaternion Algebra* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The total angular momenta $\tilde S_{\mathrm{tot},k}=\tilde S_{1,k}+\tilde S_{2,k}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
 
 ## The Clebsch–Gordan Series
 
-Let $V_j$ denote the rotation multiplet of spin $j$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2j+1$: the representation carried by $|j,m\rangle$ with $m=-j,\dots,j$, and the irreducible module of highest weight $2j$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
+Let $V_{s_{\mathrm{tot}}}$ denote the rotation multiplet of spin $s_{\mathrm{tot}}$, $s_{\mathrm{tot}}\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2s_{\mathrm{tot}}+1$: the representation carried by $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with $s_{\mathrm{tot},z}=-s_{\mathrm{tot}},\dots,s_{\mathrm{tot}}$, and the irreducible module of highest weight $2s_{\mathrm{tot}}$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
 
 $$
-\boxed{\;V_{j_1}\otimes V_{j_2}\;\cong\;\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j\;},
+\boxed{\;V_{s_1}\otimes V_{s_2}\;\cong\;\bigoplus_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}V_{s_{\mathrm{tot}}}\;},
 $$
 
-the coupled spin running in unit steps from $j_1+j_2$ down to $|j_1-j_2|$. The dimension count is the product of the factor dimensions,
+the coupled spin running in unit steps from $s_1+s_2$ down to $|s_1-s_2|$. The dimension count is the product of the factor dimensions,
 
 $$
-(2j_1+1)(2j_2+1)=\sum_{j=|j_1-j_2|}^{j_1+j_2}(2j+1),
+(2s_1+1)(2s_2+1)=\sum_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}(2s_{\mathrm{tot}}+1),
 $$
 
 which is the standard sum of consecutive odd integers. For two fundamental multiplets and for two triplets,
@@ -160,22 +160,22 @@ $$
 1\otimes1=2\oplus1\oplus0,\qquad 9=5+3+1 .
 $$
 
-This is the Clebsch–Gordan rule of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, whose representations of the rotation algebra are the same $V_j$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
+This is the Clebsch–Gordan rule of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, whose representations of the rotation algebra are the same $V_{s_{\mathrm{tot}}}$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
 
 The coupled states are the linear combinations
 
 $$
-|j,m\rangle=\sum_{m_1+m_2=m}\langle j_1,m_1;j_2,m_2|j,m\rangle\,|j_1,m_1\rangle|j_2,m_2\rangle ,
+|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\sum_{s_{1z}+s_{2z}=s_{\mathrm{tot},z}}\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\,|s_1,s_{1z}\rangle|s_2,s_{2z}\rangle ,
 $$
 
-where the bracket is the **Clebsch–Gordan coefficient**. The coefficients vanish unless $m=m_1+m_2$ and $j$ lies in the range above. They are the matrix elements of the $*$-unitary change of basis between the product basis and the coupled basis, and therefore satisfy the orthogonality and completeness relations
+where the bracket is the **Clebsch–Gordan coefficient**. The coefficients vanish unless $s_{\mathrm{tot},z}=s_{1z}+s_{2z}$ and $s_{\mathrm{tot}}$ lies in the range above. They are the matrix elements of the $*$-unitary change of basis between the product basis and the coupled basis, and therefore satisfy the orthogonality and completeness relations
 
 $$
-\sum_{m_1,m_2}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1;j_2,m_2|j_{\mathrm{II}},m_{\mathrm{II}}\rangle=\delta_{j,j_{\mathrm{II}}}\delta_{m,m_{\mathrm{II}}} ,
+\sum_{s_{1z},s_{2z}}\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot,II}},s_{\mathrm{tot,II},z}\rangle=\delta_{s_{\mathrm{tot}},s_{\mathrm{tot,II}}}\delta_{s_{\mathrm{tot},z},s_{\mathrm{tot,II},z}} ,
 $$
 
 $$
-\sum_{j,m}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_{1,\mathrm{II}};j_2,m_{2,\mathrm{II}}|j,m\rangle=\delta_{m_1,m_{1,\mathrm{II}}}\delta_{m_2,m_{2,\mathrm{II}}} .
+\sum_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_1,s_{1z,\mathrm{II}};s_2,s_{2z,\mathrm{II}}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle=\delta_{s_{1z},s_{1z,\mathrm{II}}}\delta_{s_{2z},s_{2z,\mathrm{II}}} .
 $$
 
 Both relations are statements about numbers; neither involves the biquaternion realisation. What the realisation supplies is the identification of the factor multiplets with the fundamental module and its tensor powers.
@@ -184,11 +184,11 @@ The closed expression, Wigner's formula, is
 
 $$
 \begin{aligned}
-\langle j_1,m_1;j_2,m_2|j,m\rangle
-&=\delta_{m,\,m_1+m_2}\,
-\sqrt{\frac{(2j+1)\,(j_1+j_2-j)!\,(j_1-j_2+j)!\,(-j_1+j_2+j)!}{(j_1+j_2+j+1)!}}\\[4pt]
-&\quad\times\sqrt{(j_1+m_1)!\,(j_1-m_1)!\,(j_2+m_2)!\,(j_2-m_2)!\,(j+m)!\,(j-m)!}\\[4pt]
-&\quad\times\sum_k\frac{(-1)^k}{k!\,(j_1+j_2-j-k)!\,(j_1-m_1-k)!\,(j_2+m_2-k)!\,(j-j_2+m_1+k)!\,(j-j_1-m_2+k)!},
+\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+&=\delta_{s_{\mathrm{tot},z},\,s_{1z}+s_{2z}}\,
+\sqrt{\frac{(2s_{\mathrm{tot}}+1)\,(s_1+s_2-s_{\mathrm{tot}})!\,(s_1-s_2+s_{\mathrm{tot}})!\,(-s_1+s_2+s_{\mathrm{tot}})!}{(s_1+s_2+s_{\mathrm{tot}}+1)!}}\\[4pt]
+&\quad\times\sqrt{(s_1+s_{1z})!\,(s_1-s_{1z})!\,(s_2+s_{2z})!\,(s_2-s_{2z})!\,(s_{\mathrm{tot}}+s_{\mathrm{tot},z})!\,(s_{\mathrm{tot}}-s_{\mathrm{tot},z})!}\\[4pt]
+&\quad\times\sum_k\frac{(-1)^k}{k!\,(s_1+s_2-s_{\mathrm{tot}}-k)!\,(s_1-s_{1z}-k)!\,(s_2+s_{2z}-k)!\,(s_{\mathrm{tot}}-s_2+s_{1z}+k)!\,(s_{\mathrm{tot}}-s_1-s_{2z}+k)!},
 \end{aligned}
 $$
 
@@ -198,13 +198,13 @@ the sum running over all integers $k$ for which every factorial has a non-negati
 
 ### The coupled states
 
-Take $j_1=j_2=\tfrac12$, so that the product basis is
+Take $s_1=s_2=\tfrac12$, so that the product basis is
 
 $$
 |\!\uparrow\uparrow\rangle,\quad |\!\uparrow\downarrow\rangle,\quad |\!\downarrow\uparrow\rangle,\quad |\!\downarrow\downarrow\rangle,
 $$
 
-with $\tilde S_3$ eigenvalues $+\hbar,0,0,-\hbar$. The Clebsch–Gordan series gives a triplet $j=1$ and a singlet $j=0$,
+with $\tilde S_3$ eigenvalues $+\hbar,0,0,-\hbar$. The Clebsch–Gordan series gives a triplet $s_{\mathrm{tot}}=1$ and a singlet $s_{\mathrm{tot}}=0$,
 
 $$
 |1,1\rangle=|\!\uparrow\uparrow\rangle,\qquad
@@ -218,7 +218,7 @@ $$
 
 The coefficients $\pm\tfrac{1}{\sqrt2}$ are the whole of the $\tfrac12\otimes\tfrac12$ table.
 
-The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_-^{(1)}+\tilde S_-^{(2)}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(i\vec e_x+\vec e_y)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
+The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_{1,-}+\tilde S_{2,-}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(i\vec e_x+\vec e_y)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
 
 $$
 \tilde S_-|1,1\rangle=\hbar\left(|\!\downarrow\uparrow\rangle+|\!\uparrow\downarrow\rangle\right)=\sqrt{2}\,\hbar\,|1,0\rangle,
@@ -287,10 +287,10 @@ $$
 where the central term is the sum of the two one-factor Casimirs, $\tfrac{3\hbar^2}{4}e_t\otimes e_t$ from each factor. Its eigenvalues on the two coupled subspaces follow from the eigenvalues of $F$:
 
 $$
-\tilde S^2\big|_{j=1}=2\hbar^2,\qquad \tilde S^2\big|_{j=0}=0 ,
+\tilde S^2\big|_{s_{\mathrm{tot}}=1}=2\hbar^2,\qquad \tilde S^2\big|_{s_{\mathrm{tot}}=0}=0 ,
 $$
 
-that is, $j(j+1)\hbar^2$ with $j=1$ and $j=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
+that is, $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ with $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
 
 $$
 \boxed{\;\tilde S^2=2\hbar^2\,\tilde\Pi_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}}\;},
@@ -331,7 +331,7 @@ The transformation is not unique as a matrix. Only the coupled *idempotents* are
 
 ## The Coupling of Two Triplets
 
-The second case the framework supports explicitly is $1\otimes1$, where each factor is itself a composite of two fundamental modules. The coupled states therefore live in the four-fold tensor power of the spinor module, on which $\mathbb{B}^{\otimes4}$ acts; equivalently, in the tensor product of the two symmetric squares of the two-qubit subalgebras. The coupled states in the product basis $|m_1\rangle|m_2\rangle$, $m_a\in\{1,0,-1\}$, are
+The second case the framework supports explicitly is $1\otimes1$, where each factor is itself a composite of two fundamental modules. The coupled states therefore live in the four-fold tensor power of the spinor module, on which $\mathbb{B}^{\otimes4}$ acts; equivalently, in the tensor product of the two symmetric squares of the two-qubit subalgebras. The coupled states in the product basis $|s_{1z}\rangle|s_{2z}\rangle$, $m_a\in\{1,0,-1\}$, are
 
 $$
 |2,2\rangle=|1\rangle|1\rangle ,
@@ -355,37 +355,37 @@ $$
 |0,0\rangle=\tfrac{1}{\sqrt3}\left(|1\rangle|\!-\!1\rangle-|0\rangle|0\rangle+|\!-\!1\rangle|1\rangle\right),
 $$
 
-and the states with $m<0$ in the quintet follow by the symmetry $m\to-m$ with the standard phase. The states are simultaneous eigenvectors of the total Casimir and $\tilde S_3$: the quintet carries $j(j+1)=6$, the triplet $2$, the singlet $0$, in units of $\hbar^2$. This is the content of the decomposition $1\otimes1=2\oplus1\oplus0$.
+and the states with $m<0$ in the quintet follow by the symmetry $m\to-m$ with the standard phase. The states are simultaneous eigenvectors of the total Casimir and $\tilde S_3$: the quintet carries $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6$, the triplet $2$, the singlet $0$, in units of $\hbar^2$. This is the content of the decomposition $1\otimes1=2\oplus1\oplus0$.
 
-Three features of the table are worth naming. First, the **quintet and the singlet are symmetric** under the exchange of the two factors and the **triplet is antisymmetric**; the symmetry is $(-1)^{j_1+j_2-j}$, so the $j=1$ multiplet obtained from $1\otimes1$ is precisely the antisymmetric combination of the two vector factors, $\Lambda^2V_1\cong V_1$. Second, the singlet is the invariant $\epsilon_{m_1m_2}|m_1\rangle|m_2\rangle$ of the rotation group, and its coefficients are the entries of the alternating form; the same form appears in the two-qubit coupling of the previous section, with the alternating structure realised there by the idempotent $\tilde\Pi_{\mathrm{asym}}$. Third, the phases are the Condon–Shortley ones: in every row the coefficient of the largest $m_1$ is positive.
+Three features of the table are worth naming. First, the **quintet and the singlet are symmetric** under the exchange of the two factors and the **triplet is antisymmetric**; the symmetry is $(-1)^{s_1+s_2-s_{\mathrm{tot}}}$, so the $s_{\mathrm{tot}}=1$ multiplet obtained from $1\otimes1$ is precisely the antisymmetric combination of the two vector factors, $\Lambda^2V_1\cong V_1$. Second, the singlet is the invariant $\epsilon_{s_{1z}s_{2z}}|s_{1z}\rangle|s_{2z}\rangle$ of the rotation group, and its coefficients are the entries of the alternating form; the same form appears in the two-qubit coupling of the previous section, with the alternating structure realised there by the idempotent $\tilde\Pi_{\mathrm{asym}}$. Third, the phases are the Condon–Shortley ones: in every row the coefficient of the largest $s_{1z}$ is positive.
 
 The same construction iterates. In the biquaternion framework a multiplet of spin $s$ is obtained from the $2s$-fold tensor power of the fundamental module as the totally symmetric part, $V_{s}\cong\mathrm{Sym}^{2s}V_{1/2}$, of complex dimension $2s+1$; the completely symmetric projection of $V_{1/2}^{\otimes 2s}$ is the sum of the $2s+1$ totally symmetric idempotents of $(\mathbb{B}\otimes\mathbb{B})^{\otimes s}$, and the coupled states are obtained from the product states by the appropriate coefficients. This is the constructive meaning of the observation that higher spins are reached through symmetric powers rather than as modules.
 
 ## The Recursion Relations and the Condon–Shortley Phase
 
-The coefficients are not independent. Applying the raising operator to the definition of $|j,M\rangle$ and reading off the coefficient of $|j_1,m_1\rangle|j_2,m_2\rangle$ with $m_1+m_2=M$ gives, for every $j$ in the range,
+The coefficients are not independent. Applying the raising operator to the definition of $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ and reading off the coefficient of $|s_1,s_{1z}\rangle|s_2,s_{2z}\rangle$ with $s_{1z}+s_{2z}=s_{\mathrm{tot},z}$ gives, for every $s_{\mathrm{tot}}$ in the range,
 
 $$
-\sqrt{(j-M+1)(j+M)}\;\langle j_1,m_1;j_2,m_2|j,M\rangle
-=\sqrt{(j_1-m_1+1)(j_1+m_1)}\;\langle j_1,m_1-1;j_2,m_2|j,M-1\rangle
+\sqrt{(s_{\mathrm{tot}}-s_{\mathrm{tot},z}+1)(s_{\mathrm{tot}}+s_{\mathrm{tot},z})}\;\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+=\sqrt{(s_1-s_{1z}+1)(s_1+s_{1z})}\;\langle s_1,s_{1z}-1;s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}-1\rangle
 $$
 $$
-+\sqrt{(j_2-m_2+1)(j_2+m_2)}\;\langle j_1,m_1;j_2,m_2-1|j,M-1\rangle ,
++\sqrt{(s_2-s_{2z}+1)(s_2+s_{2z})}\;\langle s_1,s_{1z};s_2,s_{2z}-1|s_{\mathrm{tot}},s_{\mathrm{tot},z}-1\rangle ,
 $$
 
 and applying the lowering operator gives the mirror relation
 
 $$
-\sqrt{(j+M+1)(j-M)}\;\langle j_1,m_1;j_2,m_2|j,M\rangle
-=\sqrt{(j_1+m_1+1)(j_1-m_1)}\;\langle j_1,m_1+1;j_2,m_2|j,M+1\rangle
+\sqrt{(s_{\mathrm{tot}}+s_{\mathrm{tot},z}+1)(s_{\mathrm{tot}}-s_{\mathrm{tot},z})}\;\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+=\sqrt{(s_1+s_{1z}+1)(s_1-s_{1z})}\;\langle s_1,s_{1z}+1;s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}+1\rangle
 $$
 $$
-+\sqrt{(j_2+m_2+1)(j_2-m_2)}\;\langle j_1,m_1;j_2,m_2+1|j,M+1\rangle .
++\sqrt{(s_2+s_{2z}+1)(s_2-s_{2z})}\;\langle s_1,s_{1z};s_2,s_{2z}+1|s_{\mathrm{tot}},s_{\mathrm{tot},z}+1\rangle .
 $$
 
 These are the standard recursion relations of the Clebsch–Gordan coefficients, and they are exactly the statement that the coupled states are eigenvectors of the total ladder operators. They determine the whole table once the phase of one state in each multiplet is fixed, which is what makes a phase convention necessary.
 
-The convention used here and throughout the series is the **Condon–Shortley** one: the coefficients are real, and the coefficient of the largest $m_1$ in a coupled state is non-negative. In the two cases above this gives
+The convention used here and throughout the series is the **Condon–Shortley** one: the coefficients are real, and the coefficient of the largest $s_{1z}$ in a coupled state is non-negative. In the two cases above this gives
 
 $$
 \langle \tfrac12,\tfrac12;\tfrac12,-\tfrac12|0,0\rangle=+\tfrac{1}{\sqrt2},\qquad
@@ -395,13 +395,13 @@ $$
 
 and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\alpha)e_t$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.
 
-Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $j_1=j_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.
+Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $s_1=s_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.
 
 ## What Is Algebraic and What Is Imported
 
 It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.
 
-**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde J_k^{(1)}+\tilde J_k^{(2)}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
+**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde S_{1,k}+\tilde S_{2,k}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
 
 **Imported.** The Clebsch–Gordan coefficients themselves, including their numerical values, their orthogonality and completeness, the recursion relations, the closed Wigner formula, and the Condon–Shortley phase convention. These belong to the representation theory of the rotation group. The framework changes nothing about them; it supplies the objects on which they act.
 
@@ -423,15 +423,15 @@ The addition of angular momenta in the biquaternion framework is the standard co
 
 The article established the following.
 
-- **Coupling of two systems.** With $\tilde J_k^{(1)}=\tilde J_k\otimes e_t$ and $\tilde J_k^{(2)}=e_t\otimes\tilde J_k$, the cross-commutators vanish, the total operator $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde J^2=\tilde J_{(1)}^2+\tilde J_{(2)}^2+2\sum_k\tilde J_k^{(1)}\tilde J_k^{(2)}$.
-- **Clebsch–Gordan series.** $V_{j_1}\otimes V_{j_2}\cong\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j$, with $(2j_1+1)(2j_2+1)=\sum_j(2j+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
+- **Coupling of two systems.** With $\tilde S_{1,k}=\tilde S_k\otimes e_t$ and $\tilde S_{2,k}=e_t\otimes\tilde S_k$, the cross-commutators vanish, the total operator $\tilde S_{\mathrm{tot},k}=\tilde S_{1,k}+\tilde S_{2,k}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde S_{\mathrm{tot}}^2=\tilde S_1^2+\tilde S_2^2+2\sum_k\tilde S_{1,k}\tilde S_{2,k}$.
+- **Clebsch–Gordan series.** $V_{s_1}\otimes V_{s_2}\cong\bigoplus_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}V_{s_{\mathrm{tot}}}$, with $(2s_1+1)(2s_2+1)=\sum_{s_{\mathrm{tot}}}(2s_{\mathrm{tot}}+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
 - **The fundamental coupling.** The coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square,
   $$\tilde\Pi_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad \tilde\Pi_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
   of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2\tilde\Pi_{\mathrm{sym}}$.
 - **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
 - **The transformation.** The Clebsch–Gordan transformation is the $*$-unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
-- **The triplet coupling.** For $1\otimes1$ the coupled states carry $j(j+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
-- **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $m_1$ is positive.
+- **The triplet coupling.** For $1\otimes1$ the coupled states carry $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
+- **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $s_{1z}$ is positive.
 - **Division of labour.** The coefficients, their recursion, and their phase convention are imported from the representation theory of the rotation group; the operators that generate the coupling, the idempotents, and the exchange operator are elements of the biquaternion algebra and its tensor square.
 
 ## Summary of Notation
@@ -442,16 +442,16 @@ The article established the following.
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace (observables, states) |
-| $\tilde J_k$ | Angular-momentum operators, $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$ |
-| $\tilde J_\pm=\tilde J_1\pm i\tilde J_2$ | Ladder operators |
-| $\tilde J^2=\sum_k\tilde J_k^2$ | Casimir |
+| $\tilde S_{\mathrm{tot},k}$ | Angular-momentum operators, $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ |
+| $\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Ladder operators |
+| $\tilde S_{\mathrm{tot}}^2=\sum_k\tilde S_{\mathrm{tot},k}^2$ | Casimir |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{M}_+$ |
 | $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
-| $\tilde J_k^{(1)}=\tilde J_k\otimes e_t,\ \tilde J_k^{(2)}=e_t\otimes\tilde J_k$ | Factor operators |
+| $\tilde S_{1,k}=\tilde S_k\otimes e_t,\ \tilde S_{2,k}=e_t\otimes\tilde S_k$ | Factor operators |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
-| $V_j$ | Rotation multiplet of spin $j$, highest weight $2j$, $\dim_{\mathbb{C}}V_j=2j+1$ |
-| $\langle j_1,m_1;j_2,m_2|j,m\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
+| $V_{s_{\mathrm{tot}}}$ | Rotation multiplet of spin $s_{\mathrm{tot}}$, highest weight $2s_{\mathrm{tot}}$, $\dim_{\mathbb{C}}V_{s_{\mathrm{tot}}}=2s_{\mathrm{tot}}+1$ |
+| $\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Coupled idempotents for $\tfrac12\otimes\tfrac12$ |
 | $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Exchange operator, $F^2=e_t\otimes e_t$ |
 | $U$ | Clebsch–Gordan transformation matrix |

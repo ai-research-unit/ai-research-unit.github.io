@@ -17,7 +17,7 @@ The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and
 
 **Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Hermitian Basis
 

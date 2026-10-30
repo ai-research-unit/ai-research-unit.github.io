@@ -146,7 +146,7 @@ $$
 = c^2\left(\vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\,\boldsymbol\sigma\cdot\vec L\right)\phi .
 $$
 
-The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,j,m_j\rangle$: it commutes with $\vec J^2$, $\vec L^2$ and $\langle\cdot\rangle_{\natural}$. Its eigenvalues are the standard ones,
+The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$: it commutes with $\vec S_{\mathrm{tot}}^2$, $\vec L^2$ and $\langle\cdot\rangle_{\natural}$. Its eigenvalues are the standard ones,
 
 $$
 \frac{1}{\hbar}\,\boldsymbol\sigma\cdot\vec L =
@@ -281,8 +281,8 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 | $\vec L = \vec r\times\vec p$ | Orbital angular momentum |
 | $N = 2n_r + l$ | Total oscillator quantum number |
 | $n_r$ | Radial quantum number |
-| $E^2 = m^2c^4+4m\hbar\omega c^2 n_r$ ($j=l+\tfrac12$) | Aligned branch |
-| $E^2 = m^2c^4+2m\hbar\omega c^2(2n_r+2l+1)$ ($j=l-\tfrac12$) | Anti-aligned branch |
+| $E^2 = m^2c^4+4m\hbar\omega c^2 n_r$ ($s_{\mathrm{tot}}=l+\tfrac12$) | Aligned branch |
+| $E^2 = m^2c^4+2m\hbar\omega c^2(2n_r+2l+1)$ ($s_{\mathrm{tot}}=l-\tfrac12$) | Anti-aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2 n$ | One-dimensional spectrum |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
 | $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |

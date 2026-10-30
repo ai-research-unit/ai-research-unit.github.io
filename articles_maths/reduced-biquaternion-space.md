@@ -148,7 +148,7 @@ The algebra is associative and commutative throughout; it is **not** the algebra
 
 The algebra appears in three literatures under three names, and the corpus writes the first.
 
-- The **reduced biquaternion** algebra is the name of the engineering literature after Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding (2004), where it carries the idempotent decomposition and a ring-valued norm used in a signal transform; the corpus records this source in *Conventions in Mathematics*, §*Sources*.
+- The **reduced biquaternion** algebra is the name of the engineering literature after Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding (2004), where it carries the idempotent decomposition and a ring-valued norm used in a signal transform; the corpus records this source in *Conventions in Mathematics*, §*Further Reading*.
 - The **tessarines** are the historical name of James Cockle (1849), who introduced the commutative four-dimensional system $\{1,i,j,ij\}$ with $j^{2}=+1$; the same source is recorded in *Conventions in Mathematics*.
 - The **double-complex numbers** and the **commutative hypercomplex** algebra are the names current in the algebra and analysis literature, both recording the two-complex-coordinate reading $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$.
 

@@ -16,7 +16,7 @@ The projectors are $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$.
 
 **Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Spectral Projectors
 

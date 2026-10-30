@@ -107,7 +107,7 @@ The theorem is the module-level content of the complex type. It is also the reas
 
 ## Chirality: The Central Sign of the Complexification
 
-**Theorem (the complexification).** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$, written $\tilde\Xi_{\mathrm{ad}}$ with the role subscript of §*The Root Convention* of *Conventions in the Biquaternion Universe*: $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. Then
+**Theorem (the complexification).** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$, written $\tilde\Xi_{\mathrm{ad}}$ with the role subscript of §*The Root Convention* of *Conventions of the Special Elements*: $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. Then
 
 $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}
