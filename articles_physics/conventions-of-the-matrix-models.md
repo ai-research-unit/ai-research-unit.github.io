@@ -361,8 +361,10 @@ $$
 The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
 
 **The slash is not used.** The Dirac slash is not part of the notation of this corpus.
-A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum and
-$\gamma^\mu\partial/\partial Q_\mu$ for a derivative, with $Q_\mu$ the coordinates of the corpus.
+A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum.
+A derivative contraction is written in one frame and never across two: $i\gamma^\mu\partial/\partial x^\mu$ with the $x$-frame generators,
+or $\gamma^\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators $\gamma^0(Q)=\gamma^0$, $\gamma^k(Q)=i\gamma^k$.
+The mixed form $i\gamma^\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
 and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
 In the canonical frame the momentum contraction is a cell sum,

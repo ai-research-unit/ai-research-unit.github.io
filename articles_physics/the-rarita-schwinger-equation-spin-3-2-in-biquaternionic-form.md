@@ -222,12 +222,14 @@ $$
 \gamma^k\psi_k = \begin{pmatrix} 0 \\ -\sigma^k\chi_k \end{pmatrix},
 $$
 
-so the trace constraint reads, in its two chiral halves,
+so the trace constraint reads, in its upper and lower blocks,
 
 $$
 \boxed{\;\psi_0 = 0 \quad\text{(upper)}, \qquad
 -\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)}\;}.
 $$
+
+These are the upper and lower components of the Dirac basis, not chirality eigenstates: in this basis $\gamma_5$ is off-diagonal, so the trace constraint does not split into chiral halves.
 
 The lower equation gives $\boldsymbol{\sigma}\cdot\vec\chi=0$; the upper gives $\psi_0 = 0$. The trace constraint therefore forces the time component to vanish **and** imposes the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the three spatial amplitudes. The combined system of the Dirac equation on all four components and the trace constraint has nullity four, the constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ has nullity four, and the two solution spaces coincide.
 

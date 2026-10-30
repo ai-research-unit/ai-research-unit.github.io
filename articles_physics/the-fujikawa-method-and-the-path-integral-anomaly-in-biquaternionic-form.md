@@ -28,7 +28,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
+with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. These are the $x$-frame generators, and the derivative in every gamma display below is $\partial/\partial x^\mu$ with $x^0=t'$. The $Q$-frame set is $\gamma^0$, $i\gamma^k$ with $Q_t=ict'$; the mixed contraction $i\gamma^\mu\partial/\partial Q_\mu$ belongs to neither frame (*Conventions of the Matrix Models*). The gauge covariant derivative is $D_\mu=\partial/\partial x^\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
 
 The framework results used here are those of the companion articles:
 
@@ -63,12 +63,12 @@ $$
 where the phase is a real scalar function. The massless kinetic term is invariant,
 
 $$
-\bar{\psi}_2\,i\gamma^\mu\partial/\partial Q_\mu\,\psi_2
-=\bar{\psi}\,\exp(i\alpha\gamma_5)\,i\gamma^\mu\partial/\partial Q_\mu\,\exp(i\alpha\gamma_5)\psi
-=\bar{\psi}\,i\gamma^\mu\partial/\partial Q_\mu\,\psi + \text{(a derivative of }\alpha\text{)},
+\bar{\psi}_2\,i\gamma^\mu\partial/\partial x^\mu\,\psi_2
+=\bar{\psi}\,\exp(i\alpha\gamma_5)\,i\gamma^\mu\partial/\partial x^\mu\,\exp(i\alpha\gamma_5)\psi
+=\bar{\psi}\,i\gamma^\mu\partial/\partial x^\mu\,\psi + \text{(a derivative of }\alpha\text{)},
 $$
 
-because $\{\gamma_5,\gamma^\mu\}=0$ twice cancels the two phase factors in the bilinear. Under the *local* rotation the derivative term produces a term proportional to $\partial/\partial Q_\mu\,\alpha$, which is the current; under the *global* rotation it produces nothing. A mass term is not invariant, $\bar{\psi}_2m\psi_2=\bar{\psi}m \exp(2i\alpha\gamma_5)\psi$, which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
+because $\{\gamma_5,\gamma^\mu\}=0$ twice cancels the two phase factors in the bilinear. Under the *local* rotation the derivative term produces a term proportional to $\partial/\partial x^\mu\,\alpha$, which is the current; under the *global* rotation it produces nothing. A mass term is not invariant, $\bar{\psi}_2m\psi_2=\bar{\psi}m \exp(2i\alpha\gamma_5)\psi$, which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
 
 **The classical Ward identity, and the question.** Classically, the invariance of the massless action under the local rotation gives the conservation of the axial current, $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=0$. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
@@ -136,7 +136,7 @@ $$
 and the measure is not invariant. The coefficient is Fujikawa's, and it agrees with the Adler–Bell–Jackiw value computed from the triangle in the companion article on anomalies; the agreement is not an accident but the statement that the two derivations compute the same trace. Reinstating the mass term, the axial divergence is
 
 $$
-\partial/\partial Q_\mu j_5^\mu = 2im\,\bar{\psi}\gamma_5\psi + A(x)
+\partial/\partial x^\mu j_5^\mu = 2im\,\bar{\psi}\gamma_5\psi + A(x)
 = 2im\,\bar{\psi}\gamma_5\psi + \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 

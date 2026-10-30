@@ -18,7 +18,7 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $\gamma^\mu\partial/\partial Q_\mu+B$ squares to the scalar $\Box I$ exactly when the four $\gamma^\mu$ anticommute and square to $+1$. They generate $\mathrm{Cl}_4(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $\gamma^\mu\partial/\partial Q_\mu+B$, with the $Q$-frame Euclidean generators, squares to the scalar $\Box I$ exactly when the four $\gamma^\mu$ anticommute and square to $+1$. They generate $\mathrm{Cl}_4(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $i\vec e_k$ are Euclidean generators inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 - **The mass term is constrained.** The condition $\{B,\gamma^\mu\}=0$ forces $B=c\gamma_5$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
@@ -431,7 +431,7 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
 | $\gamma^\mu$ | Generators of the root, $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I$ |
 | $\gamma_5=\gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar generator, $iT_{e_t,e_z}=-\rho(\chi)$ |
-| $\mathsf D=\gamma^\mu\partial/\partial Q_\mu$ | Euclidean Dirac operator, $\mathsf D^2=\Box I$ |
+| $\mathsf D=\gamma^\mu\partial/\partial Q_\mu$ | Euclidean ($Q$-frame) Dirac operator, $\mathsf D^2=\Box I$ |
 | $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5$ | Single-square roots |
 | $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
 | $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |

@@ -26,7 +26,7 @@ $$
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
-which is unitarily equivalent to the Dirac representation used for the non-relativistic limit; the spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
+which is unitarily equivalent to the Dirac representation used for the non-relativistic limit; These are the $x$-frame generators, and every derivative in a gamma display below is with respect to $x^\mu=(t',x,y,z)$. The $Q$-frame set is $\gamma^0$, $i\gamma^k$ with $Q_t=ict'$; the two are not mixed. the spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
 $$
 \gamma_5=i\,\omega=\begin{pmatrix}-I_2&0\\ 0&I_2\end{pmatrix},\qquad
 \omega=\gamma^0\gamma^1\gamma^2\gamma^3=-i\gamma_5=\begin{pmatrix}iI_2&0\\ 0&-iI_2\end{pmatrix},
@@ -77,9 +77,9 @@ $$
 Then
 $$
 (\mathbb{D}-m)\,C[\psi]
-=\eta_C\Big(i\,\eta_C^{-1}\gamma^\mu\eta_C\,\partial/\partial Q_\mu-m\Big)\psi^{*},
+=\eta_C\Big(i\,\eta_C^{-1}\gamma^\mu\eta_C\,\partial/\partial x^\mu-m\Big)\psi^{*},
 $$
-while the complex conjugate of the Dirac equation is $(-i\gamma^{\mu*}\partial/\partial Q_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
+while the complex conjugate of the Dirac equation is $(-i\gamma^{\mu*}\partial/\partial x^\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
 $$
 \eta_C^{-1}\gamma^\mu\eta_C=-\gamma^{\mu*},\qquad\text{equivalently}\qquad \eta_C\gamma^{\mu*}\eta_C^{-1}=-\gamma^\mu .
 $$
@@ -94,8 +94,8 @@ $$
 Only the spatial derivatives change sign, and
 $$
 (\mathbb{D}-m)\,P[\psi]
-=\eta_P\Big(i\,\eta_P^{-1}\gamma^0\eta_P\,\partial/\partial Q_t
--i\,\eta_P^{-1}\gamma^k\eta_P\,\partial/\partial Q_k-m\Big)\psi(t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+=\eta_P\Big(i\,\eta_P^{-1}\gamma^0\eta_P\,\partial/\partial t'
+-i\,\eta_P^{-1}\gamma^k\eta_P\,\partial/\partial x^k-m\Big)\psi(t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 so $P[\psi]$ solves the equation when
 $$
@@ -112,8 +112,8 @@ $$
 The time derivative changes sign, the spatial derivatives do not, and the field is conjugated:
 $$
 (\mathbb{D}-m)\,T[\psi]
-=\eta_T\Big(-i\,\eta_T^{-1}\gamma^0\eta_T\,\partial/\partial Q_t
-+i\,\eta_T^{-1}\gamma^k\eta_T\,\partial/\partial Q_k-m\Big)\psi^{*},
+=\eta_T\Big(-i\,\eta_T^{-1}\gamma^0\eta_T\,\partial/\partial t'
++i\,\eta_T^{-1}\gamma^k\eta_T\,\partial/\partial x^k-m\Big)\psi^{*},
 $$
 evaluated at $(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, to be matched against the conjugate equation at the same argument. This requires
 $$

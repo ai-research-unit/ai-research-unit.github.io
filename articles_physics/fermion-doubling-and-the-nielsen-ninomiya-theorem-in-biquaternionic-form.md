@@ -15,8 +15,10 @@ The article is organised as follows. The next section sets up the naive discreti
 In Euclidean spacetime the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial/\partial Q_\mu + m\right)\psi(x).
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial/\partial Q_\mu + m\right)\psi(x),
 $$
+
+with $\gamma^\mu$ the Euclidean $Q$-frame generators, $(\gamma^\mu)^2=+1$ and $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}$.
 
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 

@@ -40,7 +40,7 @@ $$
 \begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
 
-The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma^\mu$ is the coordinate index, $\gamma^\mu$ is the coefficient of $\partial/\partial Q_\mu$, and the entry is the corresponding unit. That is the precise sense in which the gammas align with the coordinates.
+The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma^\mu$ is the coordinate index, $\gamma^\mu$ is the generator paired with $\partial/\partial x^\mu$ in the $x$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x^\mu=(t',x,y,z)$, not $Q_\mu$; the $Q$-frame coefficients are $\gamma^0$ and $i\gamma^k$. That is the precise sense in which the gammas align with the coordinates.
 
 The Dirac basis is the same set after $U=\frac1{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix}$:
 $$
@@ -58,8 +58,8 @@ In that basis $\gamma^0_d$ is diagonal and separates the upper and the lower pai
 
 | object | chiral form | entry | meaning |
 |---|---|---|---|
-| $\gamma^0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | coefficient of $\partial_{Q_t}$; exchanges the two chiral halves |
-| $\gamma^1,\gamma^2,\gamma^3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | coefficients of $\partial_{Q_k}$; each squares to $-1$ |
+| $\gamma^0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | generator paired with $\partial_{t'}$; exchanges the two chiral blocks |
+| $\gamma^1,\gamma^2,\gamma^3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | generators paired with $\partial_{x^k}$; each squares to $-1$ |
 | $\gamma_5$ | $\mathrm{diag}(-I_2,I_2)$ | $-e_t$ on the left, $+e_t$ on the right | chirality, $-1$ on the left and $+1$ on the right; $P_{L,R}=\tfrac12(1\mp\gamma_5)$ |
 | $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | $-i\gamma_5$ | $L_iR_{i\vec e_z}$ | volume element; $i\omega=\gamma_5$ |
 
