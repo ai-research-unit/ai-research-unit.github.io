@@ -11,7 +11,7 @@ It establishes four things.
   $$\mathcal T^2=U U^*=U^2=-e_t ,$$
   the same element that the spin–statistics companion identifies as the rotation through $2\pi$. Kramers degeneracy is the $2\pi$ sign seen on the state space.
 - **Kramers degeneracy.** For every $\mathcal T$-invariant Hamiltonian with $\mathcal T^2=-1$, the spectrum is even-degenerate, with a proof that uses only antiunitarity.
-- **The quaternionic structure.** The algebra's imaginary units supply the antiunitary $J$ with $J^2=-e_t$ that makes the state space a vector space over the quaternions; the commutant of $\mathcal T$ was computed and is two-complex-dimensional, which is the quaternionic line. Kramers degeneracy is the statement that the state space's unit is not $\mathbb{C}$ but $\mathbb{H}$.
+- **The quaternionic structure.** The algebra's imaginary units supply the antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-e_t$ that makes the state space a vector space over the quaternions; the commutant of $\mathcal T$ was computed and is two-complex-dimensional, which is the quaternionic line. Kramers degeneracy is the statement that the state space's unit is not $\mathbb{C}$ but $\mathbb{H}$.
 
 The article closes with what breaks the symmetry, and with the framework's standing disclaimer: the algebra names the axis along which the symmetry is lost, and does not choose it.
 
@@ -151,19 +151,19 @@ against $4N^2$ for a general Hermitian operator of the same size. The dimension 
 
 ## The Quaternionic Structure
 
-The commutant computation is not an accident of the two-dimensional example; it is the structure that the algebra explains. On a complex Hilbert space, an antiunitary $J$ with $J^2=-1$ is a **quaternionic structure**: it lets one define $j\,v=Jv$ and, together with the complex $i$, generate the quaternion units acting on the space. The state space then has two units, not one, and its dimension as a quaternionic vector space is half its complex dimension.
+The commutant computation is not an accident of the two-dimensional example; it is the structure that the algebra explains. On a complex Hilbert space, an antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-1$ is a **quaternionic structure**: it lets one define $j\,v=J_{\mathrm q}v$ and, together with the complex $i$, generate the quaternion units acting on the space. The state space then has two units, not one, and its dimension as a quaternionic vector space is half its complex dimension.
 
-The biquaternion algebra supplies such a $J$ intrinsically. Its imaginary units are precisely elements squaring to $-e_t$ — the same relation that $J$ satisfies — and the rotation element $U=n\cdot e$ of the construction is a *unit* imaginary element of the algebra. So the chain of identifications is
+The biquaternion algebra supplies such a $J_{\mathrm q}$ intrinsically. Its imaginary units are precisely elements squaring to $-e_t$ — the same relation that $J_{\mathrm q}$ satisfies — and the rotation element $U=n\cdot e$ of the construction is a *unit* imaginary element of the algebra. So the chain of identifications is
 
 $$
 U\ \text{(imaginary unit of }\mathbb{B}\text{)}
 \;\longrightarrow\;
-J=U K
+J_{\mathrm q}=U K
 \;\longrightarrow\;
-J^2=U U^*=-e_t ,
+J_{\mathrm q}^2=U U^*=-e_t ,
 $$
 
-and $J$ is the quaternionic structure. Two consequences follow.
+and $J_{\mathrm q}$ is the quaternionic structure. Two consequences follow.
 
 - **Kramers degeneracy is the quaternionic dimension.** If the state space is quaternionic with a $\mathbb{C}$-dimension of $2N$, every $\mathbb{C}$-energy level is at least doubly degenerate, because a quaternionic line has complex dimension two. The theorem and the structure are the same statement.
 - **The three imaginary units are the three axes of the symmetry.** $\mathbb{B}$ contains three independent imaginary elements $\vec e_x,\vec e_y,\vec e_z$, whose representatives are the three Pauli directions; the choice of which one names the axis of the time-reversal rotation is the choice of a spin axis. The algebra supplies all three and distinguishes none.
@@ -180,9 +180,9 @@ The value of $\mathcal T^2$ is not a detail of the operator; it selects the symm
 | $+e_t$ | orthogonal | real | none |
 | $-e_t$ | symplectic | quaternionic | Kramers (even) |
 
-The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J$ with $J^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
+The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J_{\mathrm q}^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
 
-The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
+The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J_{\mathrm q}$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
 
 ## What Breaks the Symmetry
 
@@ -223,12 +223,12 @@ a splitting of exactly $2b$ per pair and linear in the field, while a $\mathcal 
 
 ## What Is Standard and What the Algebra's
 
-**Standard, transcribed.** Antiunitarity, the decomposition $\mathcal T=UK$, the theorem $\mathcal T^2=(-1)^{2s}$, Kramers' theorem and its proof, the Kramers doublet and its splitting in a magnetic field, and the quaternionic structure of a Hilbert space with an antiunitary $J$ squaring to $-1$. All standard, in the parents' conventions.
+**Standard, transcribed.** Antiunitarity, the decomposition $\mathcal T=UK$, the theorem $\mathcal T^2=(-1)^{2s}$, Kramers' theorem and its proof, the Kramers doublet and its splitting in a magnetic field, and the quaternionic structure of a Hilbert space with an antiunitary $J_{\mathrm q}$ squaring to $-1$. All standard, in the parents' conventions.
 
 **The algebra's own.**
 
 - *The sign as the covering element.* $\mathcal T^2=UU^*=U^2=-e_t$ for the spinor, with $U=n\cdot e$ the real rotation element; the same $-e_t$ is the $2\pi$ rotor of the spin–statistics companion. Kramers degeneracy and the fermionic $2\pi$ phase are the same algebra fact.
-- *The three imaginary units as the axes.* $\mathbb{B}$'s imaginary elements are the candidate $J$'s; the realization is the module's, as the mass article insists, and the algebra's contribution to $\mathcal T$ is the sign and the axis set.
+- *The three imaginary units as the axes.* $\mathbb{B}$'s imaginary elements are the candidate $J_{\mathrm q}$'s; the realization is the module's, as the mass article insists, and the algebra's contribution to $\mathcal T$ is the sign and the axis set.
 
 **Open.**
 
@@ -253,7 +253,7 @@ so that $\mathcal T^2=(-1)^{2s}e_t$ is the covering sign that the spin–statist
 
 The theorem follows from antiunitarity alone: if $[\mathcal T,H]=0$ and $\mathcal T^2=-1$, the partner $\mathcal Tv$ of every eigenvector $v$ is degenerate ($[\mathcal T,H]=0$) and orthogonal ($\langle\mathcal Tv,v\rangle=-\overline{\langle v,\mathcal Tv\rangle}$), so every level is even-degenerate. All of it was recomputed: for $\mathcal T=i\sigma_yK$, $U$ real with $U^2=-I_2$, $\mathcal T^2=-1$, antiunitarity with error $0$, and $\langle\mathcal Tv,v\rangle=0$ for random $v$; on $\mathbb{C}^4$ a $[\mathcal T,H]=0$ model with $H=I_2\otimes h$, $h=\begin{pmatrix}1&2\\2&1\end{pmatrix}$ has the doubly degenerate pair $\{v,\mathcal Tv\}$ at $E=3$ with residuals $0$; a random real symmetric $H$ (the $\mathcal T^2=+1$ case) has four distinct levels, $\{-3.01553,-1.70328,0.12807,2.44612\}$, with minimum gap $1.31225$.
 
-The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the commutant of $\mathcal T$ on $\mathbb{C}^2$ was computed to be two-complex-dimensional — the quaternionic line. The counting of invariant Hamiltonians follows: on $\mathbb{C}^{2N}$ a $\mathcal T$-invariant Hermitian operator has block form $H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$ with $A=A^\dagger$, $B=-B^T$ and real dimension $N(2N-1)$ — $(1,6,15)$ for $N=1,2,3$, against $4N^2$ for a general Hermitian operator, with the constraint of rank $N(2N+1)$. The three symmetry classes are $\mathcal T^2$ absent, $+e_t$ (orthogonal, real) and $-e_t$ (symplectic, quaternionic), and only the last enforces degeneracy. A magnetic field, a term along a chosen imaginary direction, is what breaks the symmetry, and the framework's verdict is the familiar one: the algebra names the axis and does not choose it.
+The same antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-e_t$ is a quaternionic structure, and the commutant of $\mathcal T$ on $\mathbb{C}^2$ was computed to be two-complex-dimensional — the quaternionic line. The counting of invariant Hamiltonians follows: on $\mathbb{C}^{2N}$ a $\mathcal T$-invariant Hermitian operator has block form $H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$ with $A=A^\dagger$, $B=-B^T$ and real dimension $N(2N-1)$ — $(1,6,15)$ for $N=1,2,3$, against $4N^2$ for a general Hermitian operator, with the constraint of rank $N(2N+1)$. The three symmetry classes are $\mathcal T^2$ absent, $+e_t$ (orthogonal, real) and $-e_t$ (symplectic, quaternionic), and only the last enforces degeneracy. A magnetic field, a term along a chosen imaginary direction, is what breaks the symmetry, and the framework's verdict is the familiar one: the algebra names the axis and does not choose it.
 
 ## Summary of Notation
 
@@ -271,7 +271,7 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 | $H_{\text{field}}=-\vec\mu\cdot\vec B$ | $\mathcal T$-odd perturbation; lifts the degeneracy |
 | $\bar{\tilde Q}$, $\tilde Q^{*}$, $\tilde Q^\flat=-\tilde Q^{*}$ | The algebra's three antilinear involutions (companion) |
 | $\flat=+$ on $\mathbb{M}_-$, $- $ on $\mathbb{M}_+$ | Sector action of the algebra's real structure |
-| $J^2=-e_t$, $J=UK$ | Quaternionic structure of the state space |
+| $J_{\mathrm q}^2=-e_t$, $J_{\mathrm q}=UK$ | Quaternionic structure of the state space |
 | $\dim_\mathbb{C}\{M:[\mathcal T,M]=0\}=2$ | Quaternionic line; commutant computed by rank |
 | $\vec e_x,\vec e_y,\vec e_z$ | The three imaginary units = the three candidate axes |
 | $H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$, $A=A^\dagger$, $B=-B^T$ | $\mathcal T$-invariant Hermitian form on $\mathbb{C}^{2N}$ |
@@ -283,9 +283,9 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 - H. A. Kramers, "Théorie générale de la rotation paramagnétique dans les cristaux," *Proceedings of the Royal Academy of Amsterdam* **33** (1930) 959–972, for the degeneracy theorem.
 - E. P. Wigner, *Group Theory and Its Application to the Quantum Mechanics of Atomic Spectra* (Academic Press, 1959), for antiunitary operators, time reversal and the sign $\mathcal T^2=(-1)^{2s}$.
 - A. Messiah, *Quantum Mechanics*, Vol. 2 (North-Holland, 1962), for the Kramers theorem, its proof, and the magnetic-field splitting of a Kramers pair.
-- J. J. Sakurai, *Modern Quantum Mechanics* (Addison-Wesley, 1994), for the antiunitary time-reversal operator and its representation.
-- S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic structure of a Hilbert space with an antiunitary $J$, $J^2=-1$, and its physical consequences.
-- C. L. Kane and E. J. Mele, "Quantum spin Hall effect in graphene," *Physical Review Letters* **95** (2005) 226801, and J. E. Moore, "The birth of topological insulators," *Nature* **464** (2010) 194–198, for Kramers degeneracy and its topological protection.
+- J_{\mathrm q}. J_{\mathrm q}. Sakurai, *Modern Quantum Mechanics* (Addison-Wesley, 1994), for the antiunitary time-reversal operator and its representation.
+- S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic structure of a Hilbert space with an antiunitary $J_{\mathrm q}$, $J_{\mathrm q}^2=-1$, and its physical consequences.
+- C. L. Kane and E. J_{\mathrm q}. Mele, "Quantum spin Hall effect in graphene," *Physical Review Letters* **95** (2005) 226801, and J_{\mathrm q}. E. Moore, "The birth of topological insulators," *Nature* **464** (2010) 194–198, for Kramers degeneracy and its topological protection.
 - B. A. Bernevig and T. L. Hughes, *Topological Insulators and Topological Superconductors* (Princeton, 2013), for time reversal, Kramers pairs, and the $\mathbb{Z}_2$ classification.
 - F. Haake, *Quantum Signatures of Chaos* (Springer, 2010), for the three symmetry classes ($*$-unitary, orthogonal, symplectic) selected by $\mathcal T^2=0,\pm1$.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the conjugation involutions of the biquaternion/Clifford algebra and their fixed spaces.

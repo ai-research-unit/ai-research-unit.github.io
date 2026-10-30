@@ -191,7 +191,7 @@ $$
 = \left\{ G \in \mathbb{B} : G + \bar{G} = 0 \right\},
 $$
 
-six real dimensions, with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$ of the read list. Since this Lie algebra is a subspace of $\mathbb{B}$, a connection 1-form and its curvature 2-form can both be carried as $\mathbb{B}$-valued objects — specifically, as objects valued in that six-dimensional subspace. The spin connection of the tetrad formalism is therefore not foreign to the algebra; it sits inside it.
+six real dimensions, with the rotation generators $\vec e_k$ and the boost generators $K_k = i\vec e_k$ of the read list. Since this Lie algebra is a subspace of $\mathbb{B}$, a connection 1-form and its curvature 2-form can both be carried as $\mathbb{B}$-valued objects — specifically, as objects valued in that six-dimensional subspace. The spin connection of the tetrad formalism is therefore not foreign to the algebra; it sits inside it.
 
 The trap concerns the covariant derivative. The group acts on the material sector by the two-sided formula $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, so the infinitesimal action of a generator $G$ is
 
@@ -490,7 +490,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient (needs a global chart) |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \tilde{E}_\mu dx^\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
-| $J_k = \vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
+| $\vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
 | $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$ | Dual frame (inverse tetrad) |

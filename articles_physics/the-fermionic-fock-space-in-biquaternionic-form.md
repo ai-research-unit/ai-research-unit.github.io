@@ -164,12 +164,12 @@ $$
 S_i=\tfrac12\sum_{s,s_2}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}
 $$
 
-on the four-dimensional space $\Lambda S$ and diagonalising $\tilde S^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+on the four-dimensional space $\Lambda S$ and diagonalising $\tilde S^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $s_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
 The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $\tilde S_i$ is the antisymmetrised pair
 
 $$
-\Lambda^2\rho(J_i)=J_i\otimes I+I\otimes J_i\big|_{\Lambda^2 S}=\mathrm{tr}_S(J_i)=0 ,
+\Lambda^2\rho(\tilde S_i)=\tilde S_i\otimes I+I\otimes \tilde S_i\big|_{\Lambda^2 S}=\mathrm{tr}_S(\tilde S_i)=0 ,
 $$
 
 because the representing matrices of $\mathrm{SU}(2)$ on $S$ are traceless. Hence $\Lambda^2S$ is annihilated by every $\tilde S_i$ and is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the antisymmetric form $\varepsilon$ is the singlet's invariant bilinear, which is the reason $U^{\mathsf T}\varepsilon U=\varepsilon$ appears in the same role.

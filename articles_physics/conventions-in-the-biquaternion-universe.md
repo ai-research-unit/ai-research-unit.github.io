@@ -437,7 +437,7 @@ The glyphs a reader meets in every article are collected once, with the role, th
 - [Conventions of the Products and the Forms](conventions-of-the-products-and-the-forms.html), for the twelve products and the four forms.
 - [Conventions of the Norms and the Pairings](conventions-of-the-norms-and-the-pairings.html), for the four norms, the unitary convention, the polar word and the three pairings.
 - [Conventions of the Special Elements](conventions-of-the-special-elements.html), for the central map, the root, the idempotent, the nilpotent and spin.
-- [Conventions of the Matrix Models](conventions-of-the-matrix-models.html), for the $2\times2$ isomorphism, the $4\times4$ regular representation and the Clifford map.
+- [Conventions of the Matrix Models](conventions-of-the-matrix-models.html), for the $2\times2$ isomorphism, the $4\times4$ regular representation and the Clifford structure.
 - [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the operators and for the derivative marks, the gradient and the d'Alembertian.
 - [Conventions of the Units, the Indices and the Notation](conventions-of-the-units-the-indices-and-the-notation.html), for the SI units, the two superscript tokens and the rules of the subscripts.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.

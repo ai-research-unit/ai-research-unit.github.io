@@ -36,7 +36,7 @@ $$
 \mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad
 \mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}.
 $$
-The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the change $S$ of *The Product, the Trace and the Determinant*, and $S$ does not preserve transposition, only the operator.
+The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*, and $C_{\Pi}$ does not preserve transposition, only the operator.
 
 **The invariants.** The trace and the determinant read
 $$
@@ -83,7 +83,7 @@ $$
 $$
 while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The factor two is the dimension of the module: the regular trace is four times the scalar part, where the $2\times2$ trace is twice it.
 
-**The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the congruent matrix $S^{\mathsf T}I_4S$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.
+**The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the congruent matrix $C_{\Pi}^{\mathsf T}I_4C_{\Pi}$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.
 
 **The null set.** The form vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$, that is when the block $\mathsf M_2(\tilde Q)$ is singular. The regular matrix then has rank at most two, and the null set is the zero-divisor cone, of real dimension $6$ in $\mathbb R^8$. It is not the null set of the plain form, which is $\{0\}$.
 

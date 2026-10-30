@@ -49,7 +49,7 @@ P_\mu=\partial_\mu,\qquad D=x^\nu\partial_\nu,\qquad
 M_{\mu\nu}=x_\mu\partial_\nu-x_\nu\partial_\mu,\qquad
 \mathcal{K}_\mu=2x_\mu x^\nu\partial_\nu-x^2\partial_\mu,
 $$
-with $x^2=\eta_{\rho\sigma}x^\rho x^\sigma$. In this real form the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[J_j,J_k]=2\varepsilon_{jkl}J_l$, $[J_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}J_l$ for $J_k=\vec e_k$, $K_k=i\vec e_k$. The brackets are
+with $x^2=\eta_{\rho\sigma}x^\rho x^\sigma$. In this real form the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_k]=2\varepsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l$ for $\vec e_k$, $K_k=i\vec e_k$. The brackets are
 $$
 [D,P_\mu]=-P_\mu,\qquad [D,\mathcal{K}_\mu]=\mathcal{K}_\mu,
 \qquad [D,M_{\mu\nu}]=0,
@@ -65,7 +65,7 @@ $$
 $$
 together with the standard Lorentz brackets for $[M_{\mu\nu},M_{\rho\sigma}]$.
 
-**Where the generators live.** The Lorentz generators $J_k=\vec e_k$ and $K_k=i\vec e_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
+**Where the generators live.** The Lorentz generators $\vec e_k$ and $K_k=i\vec e_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
 
 ### How the Group Entered Physics
 
@@ -229,7 +229,7 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and scalar subspaces |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; its zero set is the null cone |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\sum_\mu Q_{1\mu} Q_{2\mu}$ | Polar form of $\langle\cdot\rangle_{\natural}$; Minkowski inner product on $\mathbb{M}_-$ |
-| $\tilde{U}$, $J_k=\vec e_k$, $K_k=i\vec e_k$ | Lorentz rotor and its rotation/boost generators (in $\mathbb{B}$) |
+| $\tilde{U}$, $\vec e_k$, $K_k=i\vec e_k$ | Lorentz rotor and its rotation/boost generators (in $\mathbb{B}$) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation (four-vector action) |
 | $SL(2,\mathbb{C})\cong\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=e_t\}$ | Unit-norm biquaternions, Lorentz double cover, real dimension $6$ |
 | $M_{\mu\nu}$, $P_\mu$, $D$, $\mathcal{K}_\mu$ | Conformal generators: Lorentz (6), translations (4), dilation (1), special conformal (4) |

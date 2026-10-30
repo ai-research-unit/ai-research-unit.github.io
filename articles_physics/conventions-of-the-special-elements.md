@@ -108,7 +108,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 ### The Spin Convention
 
-**Spin is the intrinsic angular momentum of a particle.** In the rest frame the one-particle states satisfy $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$; relativistically $s$ labels the little-group $SU(2)$ representation, and for a massless particle the label is helicity. The algebra supplies the rotation action and the weights of its generator on a carrier, but neither the rest-frame one-particle space nor the unit $\hbar$: those are physical inputs. The half-angle is the exponential coordinate of the rotor; the Peirce index is a copy label; and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
+**Spin is the intrinsic angular momentum of a particle.** In the rest frame the one-particle states satisfy $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$; relativistically $s$ labels the little-group $SU(2)$ representation, and for a massless particle the label is helicity. The algebra supplies the rotation action and the weights of its generator on a carrier, but neither the rest-frame one-particle space nor the unit $\hbar$: those are physical inputs. The half-angle is the exponential coordinate of the rotor; the Peirce index is a copy label; and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
 
 ## Summary
 
@@ -116,7 +116,7 @@ Multiplication by $i$ is one map. On the centre it is the global phase; on the c
 
 The special glyphs are notational: a root $\tilde\Xi$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Conventions of the Units, the Indices and the Notation*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 
-Spin is defined once, as the intrinsic angular momentum of a particle: $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$ in the rest frame, with $s$ an integer or half-integer, and helicity for the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
+Spin is defined once, as the intrinsic angular momentum of a particle: $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$ in the rest frame, with $s$ an integer or half-integer, and helicity for the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ Spin is defined once, as the intrinsic angular momentum of a particle: $S^2=\hba
 | $\tilde\Pi$ | An idempotent, $\tilde\Pi^2=\tilde\Pi$; in the reduced layer written $\Pi_\pm$ |
 | $\tilde\nu$, $\tilde\Upsilon$ | A nilpotent, $\tilde\nu^2=0$; the biquaternion layer writes $\tilde\Upsilon$ |
 | $\vec\Upsilon_1,\vec\Upsilon_2$ | The standard Peirce pair, $\tfrac12(i\vec e_x\mp\vec e_y)$, pure and written with the arrow |
-| $s$, $m_s$ | Spin and its projection, $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$ |
+| $s$, $m_s$ | Spin and its projection, $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$ |
 
 ## Further Reading
 

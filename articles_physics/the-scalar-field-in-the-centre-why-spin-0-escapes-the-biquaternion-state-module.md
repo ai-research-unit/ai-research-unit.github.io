@@ -76,20 +76,20 @@ and the representation so obtained is the defining two-dimensional representatio
 The rotation subgroup is $SU(2)=SL(2,\mathbb{C})\cap \mathrm{U}(2)$, whose elements are the unit real quaternions, $\tilde{u}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ a unit pure real quaternion. Its Lie algebra is spanned by the generators
 
 $$
-J_\mu=\tfrac{i}{2}\vec e_\mu,
+\tilde S_\mu=\tfrac{i}{2}\vec e_\mu,
 $$
 
-which satisfy $[J_\nu,J_\mu]=i\varepsilon_{\nu\mu\lambda}J_\lambda$. On the state module these act as left multiplication, and one verifies directly from the quaternion relations that the left-multiplication operators satisfy the quaternion product rule; in the matrix representation they become $L_\mu=\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
+which satisfy $[\tilde S_\nu,\tilde S_\mu]=i\varepsilon_{\nu\mu\lambda}\tilde S_\lambda$. On the state module these act as left multiplication, and one verifies directly from the quaternion relations that the left-multiplication operators satisfy the quaternion product rule; in the matrix representation they become $L_\mu=\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
 
 $$
-J_\mu\;\longmapsto\;\tfrac{1}{2}\sigma_\mu .
+\tilde S_\mu\;\longmapsto\;\tfrac{1}{2}\sigma_\mu .
 $$
 
 The quadratic Casimir is therefore
 
 $$
 \boxed{\;
-J_1^2+J_2^2+J_3^2
+\tilde S_1^2+\tilde S_2^2+\tilde S_3^2
 =\tfrac{1}{4}\left(\sigma_1^2+\sigma_2^2+\sigma_3^2\right)
 =\tfrac{1}{4}\cdot 3 I_2
 =\tfrac{3}{4}e_t\;}.
@@ -346,7 +346,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 ## Summary
 
-A scalar field carries the trivial representation of the Lorentz group, and the biquaternion framework must therefore be asked where a trivial-representation field can live. The framework's state module is the minimal left ideal $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, and it carries the defining two-dimensional, spin-$\tfrac{1}{2}$ representation of $SL(2,\mathbb{C})$: the left action of the rotation generators $J_\mu=\tfrac{i}{2}\vec e_\mu$ on the module has Casimir $\tfrac{3}{4}e_t$. Its primitive idempotent is built from a spatial axis, and rotations move that axis around the two-sphere, so the module is not rotationally invariant.
+A scalar field carries the trivial representation of the Lorentz group, and the biquaternion framework must therefore be asked where a trivial-representation field can live. The framework's state module is the minimal left ideal $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, and it carries the defining two-dimensional, spin-$\tfrac{1}{2}$ representation of $SL(2,\mathbb{C})$: the left action of the rotation generators $\tilde S_\mu=\tfrac{i}{2}\vec e_\mu$ on the module has Casimir $\tfrac{3}{4}e_t$. Its primitive idempotent is built from a spatial axis, and rotations move that axis around the two-sphere, so the module is not rotationally invariant.
 
 The unique rotationally invariant subspace of $\mathbb{B}$ is the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$ and is not a left ideal; it meets the state module only at zero. This gives three equivalent reasons why spin $0$ escapes the state module. The algebra $M_2(\mathbb{C})$ is simple and has only one simple module, $\mathbb{C}^2$, so there is no one-dimensional module for the trivial representation. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial representation appears in the tensor square — in $S\otimes\bar{S}=\mathbb{C}\oplus\mathbb{C}^3$ under the rotation subgroup, and in the symplectic channel of $S\otimes S$ and the mixed left-right pairing under the full Lorentz group — not as a submodule of either factor, so a scalar is a bilinear in the module rather than an element of it.
 
@@ -366,7 +366,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Primitive Hermitian idempotent, $\vec u$ a unit pure real quaternion |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\psi$ | Spinor, an element of the state module |
-| $J_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_t$ on the module |
+| $\tilde S_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $\tilde S_1^2+\tilde S_2^2+\tilde S_3^2=\tfrac{3}{4}e_t$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |

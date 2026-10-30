@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The angular-momentum algebra is the Lie algebra $\mathfrak{su}(2)$ with a chosen basis. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ it appears in two normalisations: as the anti-Hermitian pure quaternions $g_k=-\tfrac12\vec e_k$, which are the elements of the Lie algebra, and as the Hermitian elements $J_k=\tfrac12 i\vec e_k=-ig_k$, which are the same generators multiplied by $-i$. The factor $-i$ is what makes them self-adjoint, and it is the only difference between the two pictures.
+The angular-momentum algebra is the Lie algebra $\mathfrak{su}(2)$ with a chosen basis. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ it appears in two normalisations: as the anti-Hermitian pure quaternions $g_k=-\tfrac12\vec e_k$, which are the elements of the Lie algebra, and as the Hermitian elements $\tilde S_k=\tfrac12 i\vec e_k=-ig_k$, which are the same generators multiplied by $-i$. The factor $-i$ is what makes them self-adjoint, and it is the only difference between the two pictures.
 
 This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, and the tensor products. It is the pure-mathematical counterpart of *Angular Momentum and Spin in Biquaternionic Form*; the symbols are the same, and the difference is that the present article sets $\hbar=1$ and never leaves the algebra.
 
-The constant $\hbar$ is a unit of action, not an element of $\mathbb{B}$. Every operator below is $J_k=\tfrac12 i\vec e_k$; the dimensionful operator of the physics article is $\hbar J_k$, and every algebraic statement is homogeneous in $J_k$. Restoring $\hbar$ is the substitution $J_k\mapsto\hbar J_k$, which multiplies every weight by $\hbar$ and the Casimir by $\hbar^2$.
+The constant $\hbar$ is a unit of action, not an element of $\mathbb{B}$. Every operator below is $\tilde S_k=\tfrac12 i\vec e_k$; the physical article writes the same operator with the dimensionful factor, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, and every algebraic statement is homogeneous in $\tilde S_k$. Restoring $\hbar$ is the substitution $\tilde S_k\mapsto\hbar \tilde S_k$, which multiplies every weight by $\hbar$ and the Casimir by $\hbar^2$.
 
 The article also proves one statement that the dimension count does not give. The multiplication map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ is equivariant for conjugation, and its kernel contains the whole spin-two summand of the tensor square. The product of two biquaternions therefore carries no spin two, and the reason is not arithmetic but a vanishing map.
 
@@ -68,55 +68,55 @@ $$
 and the Hermitian basis
 
 $$
-J_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [J_i,J_j]=i\epsilon_{ijk}J_k,\qquad J_k^*=J_k.
+\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$
 
-They are related by $J_k=-ig_k$. The bracket of the $J_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form.
+They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form.
 
 **Proposition (the exponential).** For a unit $\vec u\in\mathfrak{g}$ and real $\theta$,
 
 $$
 \exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(i\theta\,\vec u\cdot\vec J),
+=\exp(i\theta\,\vec u\cdot\vec{\tilde S}),
 $$
 
 and the result is a unit real quaternion.
 
-*Proof.* The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $J_k=-ig_k$.
+*Proof.* The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$.
 
 The group generated is $G=SU(2)$, which is the double cover of $SO(3)$.
 
-**The action on a carrier.** A carrier is a pair $(W,\rho)$ with $W$ a finite-dimensional complex space and $\rho$ either an algebra homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(W)$ or a Lie-algebra homomorphism $\mathfrak{g}\to\operatorname{End}_{\mathbb{C}}(W)$. In the first case the generator acts as $\rho(J_k)$ with $J_k\in\mathbb{B}$; in the second, $\rho$ extends $\mathbb{C}$-linearly to $\mathfrak{g}_{\mathbb{C}}$ and again $\rho(J_k)$ is defined. The two cases are kept apart: only the first is a module over the associative algebra. A carrier is **unitary** when $\rho(X^*)=\rho(X)^\dagger$ in the algebra case, equivalently $\rho(X)^\dagger=-\rho(X)$ for $X\in\mathfrak{g}$ in the Lie case. The carriers of this article are unitary for the trace form.
+**The action on a carrier.** A carrier is a pair $(W,\rho)$ with $W$ a finite-dimensional complex space and $\rho$ either an algebra homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(W)$ or a Lie-algebra homomorphism $\mathfrak{g}\to\operatorname{End}_{\mathbb{C}}(W)$. In the first case the generator acts as $\rho(\tilde S_k)$ with $\tilde S_k\in\mathbb{B}$; in the second, $\rho$ extends $\mathbb{C}$-linearly to $\mathfrak{g}_{\mathbb{C}}$ and again $\rho(\tilde S_k)$ is defined. The two cases are kept apart: only the first is a module over the associative algebra. A carrier is **unitary** when $\rho(X^*)=\rho(X)^\dagger$ in the algebra case, equivalently $\rho(X)^\dagger=-\rho(X)$ for $X\in\mathfrak{g}$ in the Lie case. The carriers of this article are unitary for the trace form.
 
 **Lemma (self-adjointness).** For $X\in\mathbb{B}$, the adjoint of $\operatorname{ad}_X$ with respect to the trace form is $\operatorname{ad}_{X^*}$.
 
 *Proof.* Using $\operatorname{tr}((XY-YX)^*Z)=\operatorname{tr}((X^*Z-ZX^*)Y)$ by cyclicity and $(XY)^*=Y^*X^*$, one gets $\langle\operatorname{ad}_X Y,Z\rangle=\langle Y,\operatorname{ad}_{X^*}Z\rangle$.
 
-Consequently $\operatorname{ad}_{J_k}$ is self-adjoint and $\operatorname{ad}_{g_k}$ is skew-adjoint; $L_{J_k}$ is self-adjoint on the defining module.
+Consequently $\operatorname{ad}_{\tilde S_k}$ is self-adjoint and $\operatorname{ad}_{g_k}$ is skew-adjoint; $L_{\tilde S_k}$ is self-adjoint on the defining module.
 
 ## The Casimir and the Definition of Spin
 
 Let
 
 $$
-C=J_1^2+J_2^2+J_3^2\in U(\mathfrak{g}).
+C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2\in U(\mathfrak{g}).
 $$
 
-**Proposition (centrality).** $[C,J_l]=0$ for $l=1,2,3$.
+**Proposition (centrality).** $[C,\tilde S_l]=0$ for $l=1,2,3$.
 
-*Proof.* $\sum_i[J_i^2,J_l]=\sum_i\bigl(J_i[J_i,J_l]+[J_i,J_l]J_i\bigr)=\sum_i\bigl(i\epsilon_{ilj}J_iJ_j+i\epsilon_{ilj}J_jJ_i\bigr)$, which is antisymmetric under $i\leftrightarrow j$ and vanishes.
+*Proof.* $\sum_i[\tilde S_i^2,\tilde S_l]=\sum_i\bigl(\tilde S_i[\tilde S_i,\tilde S_l]+[\tilde S_i,\tilde S_l]\tilde S_i\bigr)=\sum_i\bigl(i\epsilon_{ilj}\tilde S_i\tilde S_j+i\epsilon_{ilj}\tilde S_j\tilde S_i\bigr)$, which is antisymmetric under $i\leftrightarrow j$ and vanishes.
 
-**Definition (spin).** Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec J)$ is self-adjoint. The **spin** of the carrier is
+**Definition (spin).** Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec{\tilde S})$ is self-adjoint. The **spin** of the carrier is
 
 $$
-s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec J)\bigr),
+s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec{\tilde S})\bigr),
 $$
 
 the maximum being independent of $\vec u$. The spin is a real number in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector.
 
-**Proposition (independence of the axis).** The spectrum of $\rho(\vec u\cdot\vec J)$ does not depend on the unit vector $\vec u$.
+**Proposition (independence of the axis).** The spectrum of $\rho(\vec u\cdot\vec{\tilde S})$ does not depend on the unit vector $\vec u$.
 
-*Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec J)\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec J)\bigr)=\rho\bigl((R\vec u)\cdot\vec J\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
+*Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec{\tilde S})\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec{\tilde S})\bigr)=\rho\bigl((R\vec u)\cdot\vec{\tilde S}\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
 
 **Theorem (the Casimir value and the dimension).** Let $(W,\rho)$ be an irreducible unitary carrier of spin $s$. Then
 
@@ -124,7 +124,7 @@ $$
 \rho(C)=s(s+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2s+1,\qquad s\in\tfrac12\mathbb{Z}_{\ge0}.
 $$
 
-*Proof.* Choose an eigenvector $v$ of $\rho(J_3)$ with the maximal eigenvalue $s$. Then $\rho(J_+)v=0$, since otherwise $\rho(J_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(J_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $J_+J_-=C-J_3^2+J_3$, one has $\rho(J_+J_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(J_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+2s)v_0=s(s+1)v_0$.
+*Proof.* Choose an eigenvector $v$ of $\rho(\tilde S_3)$ with the maximal eigenvalue $s$. Then $\rho(\tilde S_+)v=0$, since otherwise $\rho(\tilde S_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(\tilde S_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $\tilde S_+\tilde S_-=C-\tilde S_3^2+\tilde S_3$, one has $\rho(\tilde S_+\tilde S_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(\tilde S_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+2s)v_0=s(s+1)v_0$.
 
 **Remark.** The algebra sees $SU(2)$ and not $SO(3)$: $s$ ranges over the half-integers. The integer values are the ones on which the centre $\pm e_t$ of $G$ acts trivially, and they are the representations that descend to $SO(3)$.
 
@@ -133,18 +133,18 @@ $$
 The ladder operators are
 
 $$
-J_\pm=J_1\pm iJ_2,\qquad [J_3,J_\pm]=\pm J_\pm,\qquad [J_+,J_-]=2J_3.
+\tilde S_\pm=\tilde S_1\pm i\tilde S_2,\qquad [\tilde S_3,\tilde S_\pm]=\pm\tilde S_\pm,\qquad [\tilde S_+,\tilde S_-]=2\tilde S_3.
 $$
 
 **Theorem (the irreducible modules).** For every integer $n\ge0$ there is, up to isomorphism, exactly one irreducible module $\mathcal{V}_n$ of dimension $n+1$. In a basis $v_0,\dots,v_n$,
 
 $$
-J_3v_k=\bigl(k-\tfrac{n}{2}\bigr)v_k,\qquad
-J_+v_k=\sqrt{(n-k)(k+1)}\,v_{k+1},\qquad
-J_-v_k=\sqrt{k(n-k+1)}\,v_{k-1},
+\tilde S_3v_k=\bigl(k-\tfrac{n}{2}\bigr)v_k,\qquad
+\tilde S_+v_k=\sqrt{(n-k)(k+1)}\,v_{k+1},\qquad
+\tilde S_-v_k=\sqrt{k(n-k+1)}\,v_{k-1},
 $$
 
-with $J_+v_n=0$ and $J_-v_0=0$. The spin is $s=n/2$ and the Casimir is $s(s+1)$.
+with $\tilde S_+v_n=0$ and $\tilde S_-v_0=0$. The spin is $s=n/2$ and the Casimir is $s(s+1)$.
 
 *Proof.* The preceding theorem gives existence and the dimension. The formulas are the standard ones, and they satisfy the brackets directly. Uniqueness follows because a highest-weight vector generates the module and its weight fixes $n$.
 
@@ -162,6 +162,8 @@ the sum over $k$ of the same parity as $m+n$.
 
 ## The Left Module: Spin One Half
 
+The operator carries the tilde, $\tilde S_k$; the simple module and its minimal left ideals do not, and are written $S$ and $S_\pm(\vec u)$.
+
 Let
 
 $$
@@ -177,12 +179,12 @@ $$
 and the action of the generators is
 
 $$
-J_3w_\pm=\pm\tfrac12 w_\pm,\qquad J_+w_+=0,\qquad J_-w_+=w_-,\qquad J_+w_-=w_+,\qquad J_-w_-=0.
+\tilde S_3w_\pm=\pm\tfrac12 w_\pm,\qquad \tilde S_+w_+=0,\qquad \tilde S_-w_+=w_-,\qquad \tilde S_+w_-=w_+,\qquad \tilde S_-w_-=0.
 $$
 
 **Proposition.** On $S_+$, $C=\tfrac34 e_t$ and $s=\tfrac12$.
 
-*Proof.* The weights are $\pm\tfrac12$, so $s=\tfrac12$ and $C=s(s+1)=\tfrac34$; directly, $(J_1^2+J_2^2+J_3^2)w_+=\tfrac14(1+1+1)w_+$.
+*Proof.* The weights are $\pm\tfrac12$, so $s=\tfrac12$ and $C=s(s+1)=\tfrac34$; directly, $(\tilde S_1^2+\tilde S_2^2+\tilde S_3^2)w_+=\tfrac14(1+1+1)w_+$.
 
 **The second plane.** The idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is orthogonal to $\tilde\Pi_+$, and
 
@@ -207,17 +209,17 @@ Each $S_\pm(\vec u)$ is a minimal left ideal, and $\mathbb{B}=S_+(\vec u)\oplus 
 **Proposition (the states in a copy).** In $S_+(\vec u)$,
 
 $$
-(\vec u\cdot\vec J)\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
-(\vec u\cdot\vec J)\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
+(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
+(\vec u\cdot\vec{\tilde S})\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
 $$
 
-*Proof.* $(\vec u\cdot\vec J)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
+*Proof.* $(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
 
 The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
 
-**The double cover.** On $S_+$, $\exp(2\pi iJ_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{J_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
+**The double cover.** On $S_+$, $\exp(2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
 
-*Proof.* The eigenvalues of $J_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{J_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.
+*Proof.* The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.
 
 ## The Adjoint Module: Spins Zero and One
 
@@ -242,16 +244,16 @@ $$
 with
 
 $$
-[J_3,v_\pm]=\pm v_\pm,\qquad [J_3,v_0]=0,\qquad [J_+,v_+]=0,\qquad [J_-,v_+]=-2v_0,\qquad [J_-,v_0]=v_-.
+[\tilde S_3,v_\pm]=\pm v_\pm,\qquad [\tilde S_3,v_0]=0,\qquad [\tilde S_+,v_+]=0,\qquad [\tilde S_-,v_+]=-2v_0,\qquad [\tilde S_-,v_0]=v_-.
 $$
 
 **Proposition.** On $Z$ the Casimir is $0$ and the spin is $0$; on $V$ the Casimir is $2$ and the spin is $1$.
 
-*Proof.* The weights of $V$ are $\pm1,0$, so $s=1$ and $C=s(s+1)=2$. Directly, $\sum_k\operatorname{ad}_{J_k}^2$ acts on $v_+$ as $2v_+$ and on $v_0$ as $2v_0$.
+*Proof.* The weights of $V$ are $\pm1,0$, so $s=1$ and $C=s(s+1)=2$. Directly, $\sum_k\operatorname{ad}_{\tilde S_k}^2$ acts on $v_+$ as $2v_+$ and on $v_0$ as $2v_0$.
 
 **Remark (the highest-weight vector is nilpotent).** The vector $v_+=\vec e_x+i\vec e_y$ is a highest-weight vector of the adjoint, and $v_+^2=0$ in the algebra. The highest-weight vector of the adjoint is a nilpotent element; the same vector is not null for the trace form, which is positive definite. The two notions of length, the product and the form, must be kept apart.
 
-**Remark (why the shortcut fails).** One cannot compute the adjoint Casimir as $\operatorname{ad}_{J_k^2}$, because $\operatorname{ad}$ is a representation of the Lie algebra and not of the associative algebra. For example,
+**Remark (why the shortcut fails).** One cannot compute the adjoint Casimir as $\operatorname{ad}_{\tilde S_k^2}$, because $\operatorname{ad}$ is a representation of the Lie algebra and not of the associative algebra. For example,
 
 $$
 \operatorname{ad}_{\vec e_x}^2\vec e_y=[\vec e_x,[\vec e_x,\vec e_y]]=[\vec e_x,2\vec e_z]=-4\vec e_y,
@@ -270,7 +272,7 @@ A **subcarrier** of the regular module is a nonzero subspace $W\subseteq\mathbb{
 1. under left multiplication, the minimal left ideals $S_\pm(\vec u)$, $\vec u$ a unit real vector, all isomorphic to $S\cong\mathcal{V}_1$;
 2. under conjugation, $Z\cong\mathcal{V}_0$ and $V\cong\mathcal{V}_2$.
 
-*Proof.* The left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose image lies in a fixed subspace, and the minimal ones are those whose image is a line; these are the $S_\pm(\vec u)$ by the proposition above; $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$. For the adjoint action, let $W$ be invariant and irreducible. If $W\subseteq V$, then $W=V$, because the string $v_+,J_-v_+,J_-^2v_+$ spans $V$. If $W$ has a nonzero component in $Z$, then either $W=Z$ (when $W\cap V=0$) or $W$ contains $Z$ and a nonzero subspace of $V$, hence contains $V$, and then $W=\mathbb{B}$, which is reducible.
+*Proof.* The left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose image lies in a fixed subspace, and the minimal ones are those whose image is a line; these are the $S_\pm(\vec u)$ by the proposition above; $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$. For the adjoint action, let $W$ be invariant and irreducible. If $W\subseteq V$, then $W=V$, because the string $v_+,S_-v_+,S_-^2v_+$ spans $V$. If $W$ has a nonzero component in $Z$, then either $W=Z$ (when $W\cap V=0$) or $W$ contains $Z$ and a nonzero subspace of $V$, hence contains $V$, and then $W=\mathbb{B}$, which is reducible.
 
 **Corollary.** The spins of the irreducible subcarriers are $0$, $\tfrac12$ and $1$, of complex dimensions $1$, $2$ and $3$.
 
@@ -324,26 +326,26 @@ as $G$-modules.
 
 *Proof.* The Laplacian maps the degree-$l$ part onto the degree-$(l-2)$ part, so $\dim\mathcal{H}_l=\binom{l+2}{2}-\binom{l}{2}=2l+1$. The polynomial $(x+iy)^l$ is harmonic, has weight $l$, and is killed by $L_+$; it is therefore a highest-weight vector of spin $l$, and the module it generates is all of $\mathcal{H}_l$.
 
-**Remark (the orbital part is outer).** The $L_k$ are derivations of the polynomial algebra and are not inner: the algebra is commutative, so $\operatorname{ad}=0$ and no element of $\mathbb{C}[x,y,z]$ acts as $L_k$. The orbital angular momentum is an outer derivation; the spin angular momentum is the inner derivation $\operatorname{ad}_{J_k}$ of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
+**Remark (the orbital part is outer).** The $L_k$ are derivations of the polynomial algebra and are not inner: the algebra is commutative, so $\operatorname{ad}=0$ and no element of $\mathbb{C}[x,y,z]$ acts as $L_k$. The orbital angular momentum is an outer derivation; the spin angular momentum is the inner derivation $\operatorname{ad}_{\tilde S_k}$ of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
 
 ## The Total Angular Momentum
 
 On the tensor product $\mathcal{H}_l\otimes S$ of an orbital module and the spin-half module, the total generator is
 
 $$
-J_k^{\mathrm{tot}}=L_k\otimes1+1\otimes J_k.
+\tilde S_{\mathrm{tot},k}=L_k\otimes1+1\otimes \tilde S_k.
 $$
 
 Since the two summands commute and each satisfies the angular-momentum brackets, so does the sum. The Casimir expands as
 
 $$
-C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_k\otimes J_k.
+C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_k\otimes \tilde S_k.
 $$
 
 The last term is the spin–orbit operator,
 
 $$
-\vec L\cdot\vec S=\sum_k L_k\otimes J_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
+\vec L\cdot\vec{\tilde S}=\sum_k L_k\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
 $$
 
 **Theorem (the addition of angular momenta).** For $l\ge1$,
@@ -359,14 +361,14 @@ and for $l=0$ it is $\mathcal{V}_1$. The total spin is $s_{\mathrm{tot}}=l\pm\tf
 **Corollary (the spin–orbit eigenvalues).** On the summand of total spin $s_{\mathrm{tot}}$,
 
 $$
-\vec L\cdot\vec S=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
+\vec L\cdot\vec{\tilde S}=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
 $$
 
 that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$.
 
 *Proof.* Evaluate the Casimir expansion on the summand.
 
-**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_k\otimes J_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
+**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_k\otimes \tilde S_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
 
 ## Tensor Products and the Absence of Spin Two
 
@@ -409,7 +411,7 @@ $$
 v_+^2=(\vec e_x+i\vec e_y)^2=\bigl(-e_t+i\vec e_z\bigr)+\bigl(-i\vec e_z+e_t\bigr)=0,
 $$
 
-and the four descendants obtained by applying $\operatorname{ad}_{J_-}\otimes1+1\otimes\operatorname{ad}_{J_-}$ also multiply to zero. This is the five-dimensional summand, and it vanishes under the product.
+and the four descendants obtained by applying $\operatorname{ad}_{\tilde S_-}\otimes1+1\otimes\operatorname{ad}_{\tilde S_-}$ also multiply to zero. This is the five-dimensional summand, and it vanishes under the product.
 
 **Remark (why the left picture does not give the theorem).** Under left multiplication $\mathbb{B}\cong2\mathcal{V}_1$ and $\mathbb{B}\otimes\mathbb{B}\cong4(\mathcal{V}_0\oplus\mathcal{V}_2)$, but $m$ is not equivariant for that action, because $(ga)(gb)\neq g(ab)$. The argument must be run in the adjoint picture, where conjugation is an algebra automorphism.
 
@@ -427,7 +429,7 @@ The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module st
 
 ## Summary
 
-The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $J_k=\tfrac12 i\vec e_k$, related by $J_k=-ig_k$. The Casimir is $C=\sum J_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight.
+The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight.
 
 | Structure | Carrier | Spin | Dimension | Casimir |
 |---|---|---|---|---|
@@ -435,7 +437,7 @@ The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermit
 | Conjugation | $Z\cong\mathcal{V}_0$ | $0$ | $1$ | $0$ |
 | Conjugation | $V\cong\mathcal{V}_2$ | $1$ | $3$ | $2$ |
 
-The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation of the polynomial algebra; the spin part is the inner derivation $\operatorname{ad}_{J_k}$.
+The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation of the polynomial algebra; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
 
 The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing, and not the dimension count, is the algebraic reason the algebra realises the three subcarrier types and no fourth.
 
@@ -451,8 +453,8 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 | $G=SU(2)$ | The unit real quaternions |
 | $\mathfrak{g}=\mathfrak{su}(2)$ | The real pure quaternions |
 | $g_k=-\tfrac12\vec e_k$ | The anti-Hermitian generators |
-| $J_k=\tfrac12 i\vec e_k$ | The Hermitian generators |
-| $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
+| $\tilde S_k=\tfrac12 i\vec e_k$ | The Hermitian generators |
+| $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2$ | The Casimir |
 | $s$ | The spin, the maximal weight |
 | $\mathcal{V}_n$ | The irreducible module of dimension $n+1$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis $\vec u$ |

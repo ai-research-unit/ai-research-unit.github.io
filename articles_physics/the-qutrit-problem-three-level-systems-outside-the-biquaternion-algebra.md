@@ -201,7 +201,7 @@ The ledger between the algebra and the tensor square can be drawn item by item. 
 |---|---|
 | Three orthonormal levels | the triplet sector $\mathrm{Sym}^2V\subset V\otimes V$ |
 | The three spectral projectors $E_{mm}$ | symmetric elements of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, selected by $P_{\mathrm{sym}}$ |
-| Raising and lowering $J_\pm$ ($J_+^3=0$) | $\tilde S_\pm^{(1)}+\tilde S_\pm^{(2)}$ restricted to the sector |
+| Raising and lowering $\tilde S_\pm$ ($\tilde S_+^3=0$) | $\tilde S_\pm^{(1)}+\tilde S_\pm^{(2)}$ restricted to the sector |
 | The spin vector $\langle\vec F\rangle$ | the adjoint action of $\mathbb{B}$ on the traceless part |
 | Coherent states | symmetrised products $P_{\mathrm{sym}}(\tilde\Pi_+\otimes \tilde\Pi_+)P_{\mathrm{sym}}$ |
 | Gell-Mann basis, structure constants | not in $\mathbb{B}$; reachable as polynomials in $I_3,F_1,F_2,F_3$ |

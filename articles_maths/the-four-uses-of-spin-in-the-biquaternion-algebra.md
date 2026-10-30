@@ -48,22 +48,22 @@ with Lie algebra $\mathfrak{g}=\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-=\operator
 **Generators.** For a carrier $(W,\rho)$, the rotation generators are
 
 $$
-J_k=\tfrac12\rho(i\vec e_k),
+\tilde S_k=\tfrac12\rho(i\vec e_k),
 $$
 
-so that $[J_i,J_j]=i\epsilon_{ijk}J_k$. The map $\rho$ is extended $\mathbb{C}$-linearly, so $\rho(i\vec e_k)$ is defined although $i\vec e_k\notin\mathfrak{g}$. On the carriers below the trace form $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$ makes each $J_k$ self-adjoint, hence with real spectrum; here $X^*$ is the biquaternion conjugate, complex conjugation composed with quaternion conjugation.
+so that $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$. The tilde distinguishes the operator from the simple module $S$ and its minimal left ideals $S_\pm$, which carry no tilde. The map $\rho$ is extended $\mathbb{C}$-linearly, so $\rho(i\vec e_k)$ is defined although $i\vec e_k\notin\mathfrak{g}$. On the carriers below the trace form $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$ makes each $\tilde S_k$ self-adjoint, hence with real spectrum; here $X^*$ is the biquaternion conjugate, complex conjugation composed with quaternion conjugation.
 
 **Spin.** For a unit $\vec u\in\mathfrak{g}$, $uu^*=e_t$, the **spin** of an irreducible carrier is the real number
 
 $$
-s=\max\operatorname{spec}\bigl(\vec u\cdot\vec J\bigr).
+s=\max\operatorname{spec}\bigl(\vec u\cdot\vec{\tilde S}\bigr).
 $$
 
 It lies in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector. The value does not depend on $\vec u$: any two unit elements of $\mathfrak{g}$ are conjugate in $G$, and conjugate operators have the same spectrum.
 
-**Proposition.** On an irreducible carrier, $C=J_1^2+J_2^2+J_3^2=s(s+1)$ and $2s+1=\dim_{\mathbb{C}}W$.
+**Proposition.** On an irreducible carrier, $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2=s(s+1)$ and $2s+1=\dim_{\mathbb{C}}W$.
 
-**Proof.** Take $\vec u=\vec e_z$. The space $W$ is a finite-dimensional complex space, so $J_3$ has an eigenvector; let $s$ be the largest eigenvalue. The ladder operators $J_\pm=J_1\pm iJ_2$ satisfy $[J_3,J_\pm]=\pm J_\pm$, so they shift weights by $1$. Finite dimension stops the ladder above at the highest weight $s$ and below at the lowest weight $s'$. The string generated from the top is invariant and nonzero, so by irreducibility it is all of $W$; its weights are $s,s-1,\dots,s'$. On a top vector $v$, $J_+v=0$ and $C=J_-J_++J_3(J_3+1)$ give $C=s(s+1)$. On a bottom vector $v'$, $J_-v'=0$ and $C=J_+J_-+J_3(J_3-1)$ give $C=s'(s'-1)$. Hence $s'(s'-1)=s(s+1)$, whose only solution with $s'\le s$ is $s'=-s$. The weights are $-s,-s+1,\dots,s$, there are $2s+1$ of them, and $C=s(s+1)$.
+**Proof.** Take $\vec u=\vec e_z$. The space $W$ is a finite-dimensional complex space, so $\tilde S_3$ has an eigenvector; let $s$ be the largest eigenvalue. The ladder operators $\tilde S_\pm=\tilde S_1\pm i\tilde S_2$ satisfy $[\tilde S_3,\tilde S_\pm]=\pm \tilde S_\pm$, so they shift weights by $1$. Finite dimension stops the ladder above at the highest weight $s$ and below at the lowest weight $s'$. The string generated from the top is invariant and nonzero, so by irreducibility it is all of $W$; its weights are $s,s-1,\dots,s'$. On a top vector $v$, $\tilde S_+v=0$ and $C=\tilde S_-\tilde S_++\tilde S_3(\tilde S_3+1)$ give $C=s(s+1)$. On a bottom vector $v'$, $\tilde S_-v'=0$ and $C=\tilde S_+\tilde S_-+\tilde S_3(\tilde S_3-1)$ give $C=s'(s'-1)$. Hence $s'(s'-1)=s(s+1)$, whose only solution with $s'\le s$ is $s'=-s$. The weights are $-s,-s+1,\dots,s$, there are $2s+1$ of them, and $C=s(s+1)$.
 
 The formula $s=(n-1)/2$, with $n=\dim_{\mathbb{C}}W$, is therefore a theorem about the pair, never a definition applied to a bare dimension.
 
@@ -110,11 +110,11 @@ $$
 
 with $S_+\cong S_-\cong S$ the simple left module, of complex dimension $2$. Every left module over $\mathbb{B}\cong M_2(\mathbb{C})$ is a direct sum of copies of $S$, so the only irreducible left carrier is $S$, and it occurs twice.
 
-**The weights.** With $J_k=\tfrac12\lambda_{i\vec e_k}$ and the standard family $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$,
+**The weights.** With $\tilde S_k=\tfrac12\lambda_{i\vec e_k}$ and the standard family $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$,
 
 $$
-J_3\tilde\Pi_+=\tfrac12\tilde\Pi_+,\qquad
-J_3\vec\Upsilon_{-+}=-\tfrac12\vec\Upsilon_{-+},
+\tilde S_3\tilde\Pi_+=\tfrac12\tilde\Pi_+,\qquad
+\tilde S_3\vec\Upsilon_{-+}=-\tfrac12\vec\Upsilon_{-+},
 $$
 
 on the adapted basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$ of $S_+$, with $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$. The first identity uses $(i\vec e_z)^2=+e_t$, so that $i\vec e_z\tilde\Pi_+=\tilde\Pi_+$.
@@ -140,7 +140,7 @@ $$
 
 The centre is one-dimensional and trivial. The traceless part is the adjoint representation of $\mathfrak{sl}_2(\mathbb{C})$.
 
-**The weights.** With $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ and
+**The weights.** With $\tilde S_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ and
 
 $$
 \varepsilon_\pm=\mp\tfrac{1}{\sqrt2}(\vec e_x\pm i\vec e_y),\qquad\varepsilon_0=\vec e_z,
@@ -149,18 +149,18 @@ $$
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive. One has
 
 $$
-J_3\varepsilon_\pm=\pm\varepsilon_\pm,\qquad J_3\varepsilon_0=0,\qquad J_3 e_t=0.
+\tilde S_3\varepsilon_\pm=\pm\varepsilon_\pm,\qquad \tilde S_3\varepsilon_0=0,\qquad \tilde S_3 e_t=0.
 $$
 
-With $J_\pm=J_1\pm iJ_2$, the nonzero ladder actions are
+With $\tilde S_\pm=\tilde S_1\pm i\tilde S_2$, the nonzero ladder actions are
 
 $$
-J_+\varepsilon_-=\sqrt2\,\varepsilon_0,\qquad J_+\varepsilon_0=\sqrt2\,\varepsilon_+,\qquad J_-\varepsilon_+=\sqrt2\,\varepsilon_0,\qquad J_-\varepsilon_0=\sqrt2\,\varepsilon_-,
+\tilde S_+\varepsilon_-=\sqrt2\,\varepsilon_0,\qquad \tilde S_+\varepsilon_0=\sqrt2\,\varepsilon_+,\qquad \tilde S_-\varepsilon_+=\sqrt2\,\varepsilon_0,\qquad \tilde S_-\varepsilon_0=\sqrt2\,\varepsilon_-,
 $$
 
-and $J_+\varepsilon_+=J_-\varepsilon_-=0$.
+and $\tilde S_+\varepsilon_+=\tilde S_-\varepsilon_-=0$.
 
-**The Casimir.** Using $C=J_3^2+\tfrac12(J_+J_-+J_-J_+)$: on $\varepsilon_\pm$, $J_3^2=1$ and $\tfrac12(J_+J_-+J_-J_+)=1$; on $\varepsilon_0$, $J_3^2=0$ and $\tfrac12(J_+J_-+J_-J_+)=2$. In all three cases $C=2$. On $Z$ the Casimir is $0$. The value $2$ is $s(s+1)$ at $s=1$.
+**The Casimir.** Using $C=\tilde S_3^2+\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)$: on $\varepsilon_\pm$, $\tilde S_3^2=1$ and $\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)=1$; on $\varepsilon_0$, $\tilde S_3^2=0$ and $\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)=2$. In all three cases $C=2$. On $Z$ the Casimir is $0$. The value $2$ is $s(s+1)$ at $s=1$.
 
 **The result.** Two carriers, of dimensions $1$ and $3$, with spins $0$ and $1$.
 
@@ -266,8 +266,8 @@ The closure theorem states that these are all the irreducible subcarriers. There
 | $\mathrm{Ad}_u$, $\mathrm{ad}_a$ | Conjugation and its differential |
 | $S$ | The simple left module, of complex dimension $2$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | The two minimal left ideals |
-| $J_k$ | The rotation generators of a carrier |
-| $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
+| $\tilde S_k$ | The rotation generators of a carrier |
+| $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2$ | The Casimir |
 | $s$ | The spin, the maximal weight |
 | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | The complexification, the double; its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The standard orthogonal idempotents |

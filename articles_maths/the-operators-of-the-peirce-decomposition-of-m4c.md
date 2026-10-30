@@ -45,7 +45,7 @@ $$
 
 **Proof.** The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.
 
-**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra* uses the same letters for $a,b\in\mathbb{B}$, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $N(a)^2N(b)^2$ there.
+**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra* uses the letters $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ for the same two parameters, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$ there.
 
 **The matrices.** Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then
 

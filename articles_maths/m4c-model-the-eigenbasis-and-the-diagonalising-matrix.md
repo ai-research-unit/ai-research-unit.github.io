@@ -15,7 +15,7 @@ $$
 
 **Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=C_{\Pi}\,(I_2\otimes\mathsf M_2)\,C_{\Pi}^{-1}$ with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*.
 
 ## The Eigenbasis
 
@@ -61,7 +61,7 @@ $$
 $$
 for every spectrally regular element, independently of $Q$.
 
-*Proof.* The map $X\mapsto\mathsf{C}_Q\,X\,\mathsf{C}_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf{C}_Q)^2/(\det\mathsf{C}_Q)^2=1$. It sends the standard matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. In the canonical frame the coordinate column of $P_{ij}$ is $\operatorname{vec}(P_{ij})=(\mathsf C_Q^{-\mathsf T}\otimes\mathsf C_Q)\operatorname{vec}(E_{ij})$, and the Kronecker factor has determinant $1$. The columns are ordered $(11,12,21,22)$, while the canonical basis is ordered $(11,21,12,22)$; the transposition of the two middle columns contributes $-1$. Hence $\det\mathsf{C}_Q^{(4)}=-1$. In the coefficient basis the same change is $S\,\mathsf{C}_Q^{(4)}$, of determinant $\tfrac14$.
+*Proof.* The map $X\mapsto\mathsf{C}_Q\,X\,\mathsf{C}_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf{C}_Q)^2/(\det\mathsf{C}_Q)^2=1$. It sends the standard matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. In the canonical frame the coordinate column of $P_{ij}$ is $\operatorname{vec}(P_{ij})=(\mathsf C_Q^{-\mathsf T}\otimes\mathsf C_Q)\operatorname{vec}(E_{ij})$, and the Kronecker factor has determinant $1$. The columns are ordered $(11,12,21,22)$, while the canonical basis is ordered $(11,21,12,22)$; the transposition of the two middle columns contributes $-1$. Hence $\det\mathsf{C}_Q^{(4)}=-1$. In the coefficient basis the same change is $C_{\Pi}\,\mathsf{C}_Q^{(4)}$, of determinant $\tfrac14$.
 
 The $2\times2$ determinant $2B(B-Q_z)$ cancels in the similarity. The regular diagonalising matrix is therefore never singular on the spectrally regular sector, even when the $2\times2$ chart degenerates. What degenerates is the chart, not the $4\times4$ basis.
 
@@ -84,7 +84,7 @@ $$
 \mathsf{M}_4^{L}(\vec\Upsilon_-)=\operatorname{diag}(E_{12},E_{12}),\qquad
 \mathsf{M}_4^{L}(\tilde\Pi_-)=\operatorname{diag}(E_{22},E_{22}).
 $$
-They are the conjugates of the matrix units by the identity, so the eigenbasis coordinates and the canonical coordinates agree on the spectral basis. In the coefficient basis the same four matrices are $S\operatorname{diag}(E_{ij},E_{ij})S^{-1}$.
+They are the conjugates of the matrix units by the identity, so the eigenbasis coordinates and the canonical coordinates agree on the spectral basis. In the coefficient basis the same four matrices are $C_{\Pi}\operatorname{diag}(E_{ij},E_{ij})C_{\Pi}^{-1}$.
 
 **The diagonal form.** In the eigenbasis the regular matrix of $\tilde Q$ is
 $$
@@ -167,7 +167,7 @@ It is the matrix of the change of spectral coordinates, and it is defined up to 
 
 ## Summary
 
-The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$. In it the regular matrix is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, with each eigenvalue twice. The diagonalising matrix has determinant $-1$ in the canonical frame ($\tfrac14$ in the coefficient basis) for every spectrally regular element, because the $2\times2$ similarity has determinant one and the $2\times2$ factor cancels. The freedom is $GL_2\times GL_2$ for distinct eigenvalues, reduced to $U(2)\times U(2)$ in the normal case. The fixed Peirce change $S$ is not a diagonalisation; it is the reduction to the two copies that makes the diagonalisation a doubled $2\times2$ problem.
+The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$. In it the regular matrix is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, with each eigenvalue twice. The diagonalising matrix has determinant $-1$ in the canonical frame ($\tfrac14$ in the coefficient basis) for every spectrally regular element, because the $2\times2$ similarity has determinant one and the $2\times2$ factor cancels. The freedom is $GL_2\times GL_2$ for distinct eigenvalues, reduced to $U(2)\times U(2)$ in the normal case. The fixed Peirce change $C_{\Pi}$ is not a diagonalisation; it is the reduction to the two copies that makes the diagonalisation a doubled $2\times2$ problem.
 
 ## Summary of Notation
 

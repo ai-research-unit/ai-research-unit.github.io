@@ -16,7 +16,7 @@ The projectors are $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$.
 
 **Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=C_{\Pi}\,(I_2\otimes\mathsf M_2)\,C_{\Pi}^{-1}$ with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*.
 
 ## The Spectral Projectors
 
@@ -115,7 +115,7 @@ N_-=\operatorname{diag}(E_{12},E_{12}),
 \qquad
 N_+=\operatorname{diag}(E_{21},E_{21}).
 $$
-In the coefficient basis the same matrices are $S N_\pm S^{-1}$.
+In the coefficient basis the same matrices are $C_{\Pi} N_\pm C_{\Pi}^{-1}$.
 For a general element they are the conjugates of these by the $4\times4$ diagonalising matrix, and their entries are the same as the $2\times2$ entries, repeated in the two blocks.
 
 ## The Projectors as Residues
@@ -171,7 +171,7 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 | $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$ | the rank-two spectral projectors |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, each double |
 | $N_\pm$ | the rank-two spectral nilpotents |
-| $S$ | the Peirce change |
+| $C_{\Pi}$ | the Peirce change |
 
 ## Further Reading
 

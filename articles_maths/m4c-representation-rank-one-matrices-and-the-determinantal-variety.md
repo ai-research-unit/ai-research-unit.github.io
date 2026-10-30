@@ -10,13 +10,13 @@ This article develops the factorisation, the two strata of the regular determina
 
 **Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Nilpotents*; the rank-one elements and the Peirce corners are *The Peirce Decomposition of the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=C_{\Pi}\,(I_2\otimes\mathsf M_2)\,C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*.
 
 ## The Factorisation
 
 **Theorem.** A nonzero matrix $M\in M_4(\mathbb{C})_{\mathbb{B},L}$ has rank two exactly when there are nonzero vectors $u,v\in\mathbb{C}^2$ with
 $$
-M=S\operatorname{diag}(uv^{\mathsf T},uv^{\mathsf T})S^{-1}.
+M=C_{\Pi}\operatorname{diag}(uv^{\mathsf T},uv^{\mathsf T})C_{\Pi}^{-1}.
 $$
 Equivalently, in the fixed basis, $M=u_1v_1^{\mathsf T}+u_2v_2^{\mathsf T}$ with
 $$
@@ -82,7 +82,7 @@ The two conditions are exclusive and exhaustive on the nonzero cone, and they ar
 $$
 P=\frac{uv^{\mathsf T}}{v^{\mathsf T}u}
 $$
-satisfies $P^2=P$, $\operatorname{Tr}P=1$ and $\det P=0$. Its double $S\operatorname{diag}(P,P)S^{-1}$ satisfies $P_L^2=P_L$, $\operatorname{Tr}P_L=2$ and $\operatorname{rank}P_L=2$. It is a rank-two idempotent, the projector onto the two-dimensional space $\mathbb{C}u\oplus\mathbb{C}u$ along the kernel $\ker v^{\mathsf T}\oplus\ker v^{\mathsf T}$. The non-pure stratum is the set of nonzero complex multiples of these idempotents.
+satisfies $P^2=P$, $\operatorname{Tr}P=1$ and $\det P=0$. Its double $C_{\Pi}\operatorname{diag}(P,P)C_{\Pi}^{-1}$ satisfies $P_L^2=P_L$, $\operatorname{Tr}P_L=2$ and $\operatorname{rank}P_L=2$. It is a rank-two idempotent, the projector onto the two-dimensional space $\mathbb{C}u\oplus\mathbb{C}u$ along the kernel $\ker v^{\mathsf T}\oplus\ker v^{\mathsf T}$. The non-pure stratum is the set of nonzero complex multiples of these idempotents.
 
 **The pure stratum as a graph of duality.** The condition $v^{\mathsf T}u=0$ says that the line $\mathbb{C}u$ is the kernel of the covector $v^{\mathsf T}$, so the point $[u]$ and the covector line $[v]$ determine each other. The pure stratum is the graph of the projective duality $[u]\mapsto[u^{\perp}]$, a conic in $\mathbb{P}^1(\mathbb{C})\times\mathbb{P}^1(\mathbb{C})$. It is the cone over that conic, of real dimension four. The regular model doubles the vector $u$ and the covector $v$, but the parameter line and the conic are the same.
 

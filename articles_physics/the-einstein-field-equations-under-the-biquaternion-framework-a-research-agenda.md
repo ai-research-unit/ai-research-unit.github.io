@@ -272,7 +272,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \eta^{\mu\nu}\partial/\partial Q_\mu\,\partial/\partial Q_\nu$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula | inherited |
-| $J_k = \vec e_k$, $K_k = i\vec e_k$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
+| $\vec e_k$, $K_k = i\vec e_k$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
 | $\tilde{E}_\mu$, $\vec\Gamma_\mu$ | frame field in $\mathbb{M}_-$; Lie-subspace-valued connection one-form | inherited from the curved-spacetime and linearised articles |
 | $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | metric carried by the frame | inherited |
 | $\delta\tilde{E}_\mu$, $\bar{\delta\tilde{E}}_\mu$ | frame perturbation and its trace-reversed form | inherited |

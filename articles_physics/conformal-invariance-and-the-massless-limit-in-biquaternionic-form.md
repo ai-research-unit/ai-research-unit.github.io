@@ -52,7 +52,7 @@ with $x^2 = \eta_{\rho\sigma}x^\rho x^\sigma$. The conformal group contains the 
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = \vec e_k$ and the boosts $K_k = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $K_k = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad

@@ -4,7 +4,7 @@
 
 The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Conventions in the Biquaternion Universe* and the products of *Conventions of the Products and the Forms*.
 
-The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford map closes the article, and it is neither of the two.
+The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the comparison map $\iota_{\mathrm{Cl}}$ is its real-linear link to the even subalgebra.
 
 ## The Matrix Representations
 
@@ -156,12 +156,31 @@ $$
 $$
 The determinant is the square of the biquaternion norm and the trace is four times the scalar part; both are properties of the element, read in the regular representation. The explicit frame, the product, the determinant and the volume identity are *The General Quaternionic Algebra in the $4\times4$ Left Regular Representation* in the mathematics corpus, and the operator reading is *The Element and Operator Representations*.
 
-**No entry is read without the frame.** Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in the canonical frame alone. The explicit matrices of the mathematics model articles are in the coefficient basis, and $S$ carries them to the canonical frame; the physics articles use the canonical frame. The copy and the element are what the frame does not change.
+**No entry is read without the frame.** Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in the canonical frame alone. The explicit matrices of the mathematics model articles are in the canonical frame unless an article names the coefficient basis; the Peirce change $C_{\Pi}$ carries the canonical display to the coefficient display, and the physics articles use the canonical frame. The copy and the element are what the frame does not change.
 
-### The Clifford Map
+### The Clifford Structure and the Gamma Matrices
 
-**The Clifford map is $\iota_{\mathrm{Cl}}$, and it is not a regular matrix.** The articles on the Dirac algebra identify the biquaternion algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$ by
+**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $T_{e_\mu,e_\nu}=L_{e_\mu}R_{e_\nu}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by $T_{e_\mu,e_\nu}T_{e_\rho,e_\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{op}}\mapsto T_{e_\mu,e_\nu}$ is an algebra isomorphism
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
+$$
+The sixteen gamma products span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The full Clifford structure, odd part included, is a structure of the two-sided operators themselves. It is not an external tool, and the even part is not a limitation.
 
+**The five generators are cells.** In the canonical frame
+$$
+\gamma^0=iT_{e_t,e_x},\qquad
+\gamma^1=iT_{e_x,e_y},\qquad
+\gamma^2=iT_{e_y,e_y},\qquad
+\gamma^3=iT_{e_z,e_y},\qquad
+\gamma_5=-iT_{e_t,e_z},
+$$
+and they obey the Clifford and chirality relations of §*The 4×4 Matrix Representation*. The matrices displayed there are these cells evaluated in that frame.
+
+**A gamma matrix is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\gamma^\mu S^{-1}$ with $S$ invertible. A change of gamma basis is a change of frame, and the frames of the normal form are those of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*The Gamma Frame*. No statement of the corpus depends on the basis written.
+
+**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by the gamma matrices. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen $\gamma^0$. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The gamma algebra is recovered from these data; the data are not recovered from the gamma algebra.
+
+**The comparison map $\iota_{\mathrm{Cl}}$.** It is the $\mathbb{R}$-linear map
 $$
 \iota_{\mathrm{Cl}}(e_t)=I_4,\qquad
 \iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3,\qquad
@@ -169,9 +188,11 @@ $$
 \iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2,\qquad
 \iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3 .
 $$
-The five generators are the matrices of §*The 4×4 Matrix Representation*, read in the same frame.
-
-The two are different objects: $\mathsf{M}_4^{L}$ is the matrix of left multiplication on $\mathbb{B}$, in the canonical frame, while $\iota_{\mathrm{Cl}}$ identifies $\mathbb{B}$ with the even subalgebra of $\mathrm{Cl}_{1,3}$. Their images are both $4\times4$ matrices, and that is all they share. A bare $\mathsf{M}_4$ is written for neither. The regular matrices carry $L$ or $R$, and the Clifford map carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
+In the canonical frame it is read entirely in cells, $\iota_{\mathrm{Cl}}(e_\mu)=T_{e_\mu,e_t}$ and $\iota_{\mathrm{Cl}}(i)=T_{e_t,e_z}$, so its image is the real span of the eight cells $T_{e_\mu,e_t}$ and $T_{e_\mu,e_z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$,
+$$
+\iota_{\mathrm{Cl}}(i\tilde Q)=T_{e_t,e_z}\,\iota_{\mathrm{Cl}}(\tilde Q)\neq i\,\iota_{\mathrm{Cl}}(\tilde Q),
+$$
+and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the comparison carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
 
 ## Summary
 
@@ -179,7 +200,7 @@ The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I
 
 The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four unit matrices are written out, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $L_{e_\mu}R_{e_\nu}$, each with a coefficient of unit modulus. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
 
-The Clifford map $\iota_{\mathrm{Cl}}$ identifies the algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$. It is not a regular matrix, and the two share only the size of their images.
+The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{op}}\mapsto T_{e_\mu,e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma^0=iT_{e_t,e_x}$, $\gamma^1=iT_{e_x,e_y}$, $\gamma^2=iT_{e_y,e_y}$, $\gamma^3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$, and a change of gamma basis is a change of frame. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{e_\mu,e_t}$ and $\iota_{\mathrm{Cl}}(i)=T_{e_t,e_z}$.
 
 ## Summary of Notation
 
@@ -192,7 +213,8 @@ The Clifford map $\iota_{\mathrm{Cl}}$ identifies the algebra with the even suba
 | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
 | $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The regular matrix in the canonical frame |
 | $\gamma^0,\dots,\gamma^3,\gamma_5$ | The five Dirac generators of the canonical frame |
-| $\iota_{\mathrm{Cl}}$ | The identification with the even subalgebra of $\mathrm{Cl}_{1,3}$; not a regular matrix |
+| $T_{e_\mu,e_\nu}=L_{e_\mu}R_{e_\nu}$ | The sixteen cells; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{e_\mu,e_t}$, $\iota_{\mathrm{Cl}}(i)=T_{e_t,e_z}$ |
 
 ## Further Reading
 
@@ -201,4 +223,5 @@ The Clifford map $\iota_{\mathrm{Cl}}$ identifies the algebra with the even suba
 - [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the left and right multiplications these matrices represent.
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html), for the change of frame between the coefficient basis and the canonical frame.
-- [The Dirac Algebra and Biquaternions — A Dictionary](the-dirac-algebra-and-biquaternions-a-dictionary.html), for the Clifford map.
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
+- [The Dirac Algebra and Biquaternions — A Dictionary](the-dirac-algebra-and-biquaternions-a-dictionary.html), for the dictionary with the gamma matrices and the comparison map $\iota_{\mathrm{Cl}}$.

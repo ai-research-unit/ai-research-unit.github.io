@@ -412,11 +412,11 @@ where $\mathsf{E}_{rc}$ is the matrix unit of the Peirce basis. The corresponden
 | $2$ | $\mathsf{E}_{12}$ | $\mathsf{E}_{14}$ | $\mathsf{E}_{32}$ | $\mathsf{E}_{34}$ |
 | $3$ | $\mathsf{E}_{22}$ | $\mathsf{E}_{24}$ | $\mathsf{E}_{42}$ | $\mathsf{E}_{44}$ |
 
-**Proof.** The four Peirce elements form a system of $2\times2$ matrix units, not four orthogonal idempotents: their table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of the model article. Multiplying the four elements in the coefficient basis, and conjugating each of the sixteen products $L_{P_i}R_{P_j}$ by the Peirce change $S$, gives a matrix with a single nonzero entry in the Peirce basis, at the position of the table, with value $+1$. The computation is sixteen products of $4\times4$ matrices, and no case is exceptional.
+**Proof.** The four Peirce elements form a system of $2\times2$ matrix units, not four orthogonal idempotents: their table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of the model article. Multiplying the four elements in the coefficient basis, and conjugating each of the sixteen products $L_{P_i}R_{P_j}$ by the Peirce change $C_{\Pi}$, gives a matrix with a single nonzero entry in the Peirce basis, at the position of the table, with value $+1$. The computation is sixteen products of $4\times4$ matrices, and no case is exceptional.
 
 **The two bases are adapted to different questions.** The coefficient basis makes the $T_{\mu\nu}$ signed permutations. The Peirce basis makes the products $L_{P_i}R_{P_j}$ matrix units. Neither basis does both: in the Peirce basis the $T_{\mu\nu}$ are monomial with entries in $\{1,-1,i,-i\}$ but not matrix units; in the coefficient basis the Peirce products are sums of four $T$'s whose coefficient array has rank one, so each is a single product.
 
-**Why the two are consistent.** Both are bases of the same sixteen-dimensional algebra. The change of basis between them is the Peirce change $S$ of the model article, of determinant $-\tfrac14$, and the lengths agree because the length is basis-independent.
+**Why the two are consistent.** Both are bases of the same sixteen-dimensional algebra. The change of basis between them is the Peirce change $C_{\Pi}$ of the model article, of determinant $-\tfrac14$, and the lengths agree because the length is basis-independent.
 
 ## The Coefficient Matrix and the Length
 
