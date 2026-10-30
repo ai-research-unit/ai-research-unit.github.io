@@ -197,12 +197,7 @@ No gamma matrix appears.
 
 ### Setting up
 
-**Time convention.** The check is performed in the $x$ frame, with $x^0=t'$ and the Dirac-basis generators declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial_{t'}=i\partial_{Q_t}$, not by relabelling $Q_t$ as $t'$. The operator $i\gamma^\mu\partial_{x^\mu}-m$ is, in the $Q$ coordinate,
-$$
-i\gamma^0\partial_{t'}+i\gamma^k\partial_k-m
-=-\gamma^0\partial_{Q_t}+i\gamma^k\partial_k-m.
-$$
-The mixed contraction $i\gamma^\mu\partial/\partial Q_\mu-m$ is a third object: at rest it is $-m(1+i\gamma^0)$, which has no kernel. The upper-component result below therefore belongs to the $x$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
+**Time convention.** The check is performed in the $x$ frame, with $x^0=t'$ and the Dirac-basis generators declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial_{t'}=i\partial_{Q_t}$, not by relabelling $Q_t$ as $t'$. The substitution is applied to the whole operator, $i\gamma^\mu\partial_{x^\mu}-m$, at once. The mixed contraction $i\gamma^\mu\partial/\partial Q_\mu-m$ is a different operator, obtained by replacing only the time derivative; at rest it is $-m(1+i\gamma^0)$, which has no kernel. The upper-component result below therefore belongs to the $x$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
 
 The computation below is a frame check: it evaluates the standard transcription in the Dirac basis. The invariant statement is the pair and the constraints. Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units; the derivative is $\partial_{t'}\to -im$, equivalently $\partial_{Q_t}\to -m$. The Dirac operator becomes
 
