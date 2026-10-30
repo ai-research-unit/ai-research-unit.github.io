@@ -6,7 +6,7 @@
 
 The article defines the trace form and the three norms, proves the norm inequalities, describes the determinant and the singular set, stratifies the singular set by rank with the dimension of each stratum, and compares the definite case with the null cone of the biquaternion algebra and its link.
 
-The involution and the positive definite form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*.
+The involution and the positive definite form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
 ## The Forms
 
@@ -250,7 +250,7 @@ $$
 N(\tilde Q)=Q_t^2+B^2,
 $$
 
-which is complex-valued and has a nonzero zero set. Its zero set is the **null cone** of the zero divisors: the cone of nonzero elements whose norm vanishes. The regular model $M_4(\mathbb{C})_L$ has determinant equal to the square of the norm, and its singular set is that null cone. The full algebra $M_4(\mathbb{C})$ has the positive definite trace form and no null cone; its singular set is the determinantal hypersurface, which is a different object.
+which is complex-valued and has a nonzero zero set. Its zero set is the **null cone** of the zero divisors: the cone of nonzero elements whose norm vanishes. The regular model $M_4(\mathbb{C})_{\mathbb{B},L}$ has determinant equal to the square of the norm, and its singular set is that null cone. The full algebra $M_4(\mathbb{C})$ has the positive definite trace form and no null cone; its singular set is the determinantal hypersurface, which is a different object.
 
 **The comparison of the links.** The null cone of $\mathbb{B}$ is a complex cone of complex dimension $3$ and real dimension $6$; its link in the unit sphere $S^7$ is a real algebraic variety of dimension $5$, a circle bundle over the quadric surface $\mathbb{P}^1\times\mathbb{P}^1$. The singular set $\Sigma$ of $M_4$ is a complex cone of complex dimension $15$ and real dimension $30$; its link in the unit sphere $S^{31}$ is a real algebraic hypersurface of dimension $29$, singular along the rank-at-most-two locus. The projectivised first link is the quadric surface; the link itself is a circle bundle over it. The second link is the link of the determinantal hypersurface, stratified by rank. The two cones are not homeomorphic, and the definite form of $M_4$ does not produce a null cone.
 
@@ -304,4 +304,4 @@ $$
 - [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the singular value decomposition.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectral radius and the eigenvalues.
-- [$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone of the regular model.
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone of the regular model.

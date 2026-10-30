@@ -129,7 +129,7 @@ The reduced biquaternion algebra carries four algebraic norms. The definite one,
 | $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ | the two complex coordinates |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates, $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ |
 | $\mathbb{P}^{3}_{\mathbb{R}}$ | the real projective space of the algebra read as a real four-space |
-| $\mathbb{P}^{1}_{\mathbb{C}}$ | the complex projective space of the algebra read as a complex two-space |
+| $\mathbb{P}^{1}_{\mathbb{C}}$ | the complex projective space of the algebra read as the duo-complex numbers $\mathbb{C}^2$ |
 | $\mathcal{F}_{1}(\phi)=\{Q_{\blacktriangledown}=e^{i\phi}Q_{\blacktriangle}\}$ | the first ruling of totally isotropic planes |
 | $\mathcal{F}_{2}(\phi)=\{Q_{\blacktriangledown}=e^{i\phi}\bar Q_{\blacktriangle}\}$ | the second ruling of totally isotropic planes |
 | $\mathbb{C}\Pi_+=\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}$, $\mathbb{C}\Pi_-=\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}$ | the two minimal ideals, the two lines of the reduced norm |

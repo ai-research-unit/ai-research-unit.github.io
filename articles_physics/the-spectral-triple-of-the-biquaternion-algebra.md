@@ -62,9 +62,9 @@ It is self-adjoint with respect to the pairing above, and its commutator with a 
 
 **The chirality.** The triple's chirality is the central sign of the complexification,
 $$
-\chi=ij=\operatorname{diag}(-I_2,I_2)
+\chi=i\tilde\Xi_{\mathrm{ad}}=\operatorname{diag}(-I_2,I_2)
 $$
-on $\Delta=S\oplus S^{\mathrm{c}}$, the nontrivial central involution of $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$. It is an involution, it is self-adjoint, it commutes with the $\mathbb{B}_{\mathbb{R}}$ action, and it anticommutes with $D_F$. The Peirce index $P=R_{i\vec e_z}$ is not this operator: it grades $S_+\cong S_-\cong S$, two isomorphic copies. Its relation to $J$ is one of the three signs of the reality axiom.
+on $\Delta=S\oplus S^{\mathrm{c}}$, the nontrivial central involution of the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$. It is an involution, it is self-adjoint, it commutes with the $\mathbb{B}_{\mathbb{R}}$ action, and it anticommutes with $D_F$. The Peirce index $P=R_{i\vec e_z}$ is not this operator: it grades $S_+\cong S_-\cong S$, two isomorphic copies. Its relation to $J$ is one of the three signs of the reality axiom.
 
 **The commutator with the algebra, and the first-order condition.** The gradient part of the commutator is computed directly. For $a\in\mathbb{B}_{\mathbb{R}}$ acting by $L_a$,
 $$
@@ -238,7 +238,7 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 | $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace reading of the Hermitian form |
 | $J$ | Real structure of a spectral triple; antilinear |
 | $\epsilon,\epsilon_2,\epsilon_3$ | Signs $J^2=\epsilon$, $JD=\epsilon_2DJ$, $J\chi=\epsilon_3\chi J$ |
-| $\chi=ij$ | Chirality operator of the triple, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$ |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality operator of the triple, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$ |
 | $\flat=-{}^{*}$ | The framework's real structure; $\flat^2=+1$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic structure of the module |
 | $d(x,y)=\sup\{\vert\varphi(a)-\omega(a)\vert:\|[D,a]\|\le1\}$ | Distance formula |

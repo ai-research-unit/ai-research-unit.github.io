@@ -4,7 +4,7 @@
 
 This article treats the analysis of holomorphic functions of two complex variables on the space $\mathbb{C}^2$ itself: the Cauchy–Riemann equations, the ring of entire functions, the maximum principle, the identity theorem, the iterated Cauchy formula on the polydisc, and the one-variable facts that fail. It is the first of the four analytical articles of the category; the model domains are *The Ball and the Bicylinder in $\mathbb{C}^2$*, the inhomogeneous Cauchy–Riemann equation is *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*, and the Fourier and Radon analysis is *Harmonic Analysis on $\mathbb{C}^2$*.
 
-The general theory of holomorphic functions of $n$ variables, of domains of holomorphy, of pseudoconvexity and of the Cousin problems is *Several Complex Variables*. That article develops the theory for a variable number of variables and for arbitrary domains; this one fixes the space $\mathbb{C}^2$ and the functions defined on all of it, and it states what the case of two variables adds to the one-variable theory of *Complex Analysis*. The differential forms and the operators $\partial$ and $\bar\partial$ are from *Differential Forms and Stokes' Theorem*, and the notation is that of *Complex Two-Space*: a point is $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, and the polydisc of multiradius $r=(r_1,r_2)$ about $Q_0$ is
+The general theory of holomorphic functions of $n$ variables, of domains of holomorphy, of pseudoconvexity and of the Cousin problems is *Several Complex Variables*. That article develops the theory for a variable number of variables and for arbitrary domains; this one fixes the space $\mathbb{C}^2$ and the functions defined on all of it, and it states what the case of two variables adds to the one-variable theory of *Complex Analysis*. The differential forms and the operators $\partial$ and $\bar\partial$ are from *Differential Forms and Stokes' Theorem*, and the notation is that of *Duo-Complex Numbers*: a point is $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, and the polydisc of multiradius $r=(r_1,r_2)$ about $Q_0$ is
 $$
 \Delta(Q_0,r)=\{Q:\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1,\ \lvert Q_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert<r_2\}.
 $$
@@ -269,11 +269,11 @@ Five one-variable facts fail. There are no isolated singularities: a holomorphic
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space, the coordinates and the Hermitian form.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the real coordinates and the operators $\partial$ and $\bar\partial$.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space, the coordinates and the Hermitian form.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the real coordinates and the operators $\partial$ and $\bar\partial$.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), the next article, for the model domains and the failure of the Riemann mapping theorem.
 - [The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$](the-dbar-problem-and-the-bochner-martinelli-integral.html), for the inhomogeneous equation and the boundary kernel.
-- [Harmonic Analysis on $\mathbb{C}^2$](harmonic-analysis-on-the-complex-two-space.html), for the Fourier and Radon transforms and the Laplacian.
+- [Harmonic Analysis on $\mathbb{C}^2$](harmonic-analysis-on-the-duo-complex-numbers.html), for the Fourier and Radon transforms and the Laplacian.
 - [Several Complex Variables](several-complex-variables.html), for the general theory, the Hartogs phenomenon, domains of holomorphy and the Weierstrass preparation theorem.
 - [Complex Analysis](complex-analysis.html), for the one-variable Cauchy theory, the maximum principle and the argument principle.
 - [Differential Forms and Stokes' Theorem](differential-forms-and-stokes-theorem.html), for the operators $\partial$ and $\bar\partial$ and the integration of forms.

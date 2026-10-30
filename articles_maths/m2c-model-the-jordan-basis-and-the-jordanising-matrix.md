@@ -14,7 +14,7 @@ $$
 s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}.
 $$
 
-**Boundaries.** The construction of the flag, the corners and the Jordan pair is *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the canonical pair is there, §*The Canonical Frame*. The spectral projectors of the regular case are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the $4\times4$ model is *$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix*; the eigenbasis model is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+**Boundaries.** The construction of the flag, the corners and the Jordan pair is *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the canonical pair is there, §*The Canonical Frame*. The spectral projectors of the regular case are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the $4\times4$ model is *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Jordan Basis and the Jordanising Matrix*; the eigenbasis model is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
 ## The Jordan Basis
 
@@ -395,7 +395,7 @@ The Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a 
 ## Further Reading
 
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the flag, the corners, the Jordan pair and the canonical frame
-- [$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
 - [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the regular counterpart
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the fixed matrix units
 - [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the dual numbers

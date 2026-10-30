@@ -430,7 +430,7 @@ The spinor rotation has period $4\pi$ because $j=\tfrac12$; the integer represen
 
 - **The half-angle is not the spin.** It is the exponent coordinate of the rotor; the coefficient of $\theta$ in $\theta/2$ equals the spin only at $j=\tfrac12$, and the equality is numerical. At $j=1$ the coefficient is $\tfrac12$ and the spin is $1$.
 - **The adjoint's half is not a half-angle.** The factor $\tfrac12$ in $J_k$ is the Hermitian normalisation; the adjoint weights are integers.
-- **The Peirce index is not the chirality.** The right action of $S$ is $\pm\tfrac12$ on the two Peirce planes; that sign labels two copies of one left module. The chirality is the central $\chi=ij$ of the complexified algebra, $\chi^2=1$, equivalently the grading $S\oplus S^{\mathrm c}$; the Peirce index is a copy index.
+- **The Peirce index is not the chirality.** The right action of $S$ is $\pm\tfrac12$ on the two Peirce planes; that sign labels two copies of one left module. The chirality is the central $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, $\chi^2=1$, equivalently the grading $S\oplus S^{\mathrm c}$; the Peirce index is a copy index.
 - **The triple is not the definition.** It is the certificate that the weight string is full. The definition is the highest weight; the triple makes the string concrete.
 - **The polar cells are not the Jordan type.** Four cells versus $p(n)$ orbits. The cells cannot separate the zero nilpotent from the nonzero one.
 - **Integer and half-integer spin are not a contradiction.** They are the two carriers: the adjoint and the spinor.
@@ -527,7 +527,7 @@ For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content 
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided half-angle and the two-sided full angle.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html) and [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the regular and degenerate polar words.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html) and [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the two carrier bases.
-- [Chirality: The Conjugate Pair](chirality-the-conjugate-pair.html), for the statement that the half-angle is not the spin and for the central $\chi=ij$.
+- [Chirality: The Conjugate Pair](chirality-the-conjugate-pair.html), for the statement that the half-angle is not the spin and for the central $\chi=i\tilde\Xi_{\mathrm{ad}}$.
 - [Spinors as Peirce Coordinates in $M_3(\mathbb{C})$](spinors-as-peirce-coordinates-in-m3c.html) (and the same passage in $M_4$ to $M_6$), for the absence of a half-angle in the Peirce data; [in $n$ dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for where a half-angle can enter.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html) and [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the Jordan type.
 - [Peirce Coordinates and Companion Nilpotents](peirce-coordinates-and-companion-nilpotents.html), for the frame and its nilpotents.

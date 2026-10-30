@@ -415,13 +415,13 @@ and the four descendants obtained by applying $\operatorname{ad}_{J_-}\otimes1+1
 
 ## Real Forms and the Rotation Subgroup
 
-The algebra is real, and its complexification by a central imaginary unit $j$, with $j^2=-e_t$, is
+The algebra is real, and its complexification by the central root of $-1$, $\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, is
 
 $$
-\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=ij,\qquad \chi^2=+e_t.
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde\Xi_{\mathrm{ad}},\qquad \chi^2=+e_t.
 $$
 
-The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{B}[j]$, the same notation as in *Chirality: The Conjugate Pair*. The letter $j$ in $\mathbb{B}[j]$ is the central imaginary unit, an element of the algebra; the spin is the real number $s$.
+The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *Chirality: The Conjugate Pair*. Its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
 
 The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *Chirality: The Conjugate Pair*; nothing in the present article depends on them.
 
@@ -470,7 +470,7 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spinor spaces and the ladder.
 - [The Casimir Operator](the-casimir-operator.html), for the Casimir in the general theory.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification and the Clebsch–Gordan rule.
-- [The Tensor Square of the Complex Two-Space](the-tensor-square-of-the-complex-two-space.html), for the decomposition of the tensor square.
+- [The Tensor Square of the Duo-Complex Numbers](the-tensor-square-of-the-duo-complex-numbers.html), for the decomposition of the tensor square.
 - [Chirality: The Conjugate Pair in the Biquaternion Algebra](chirality-the-conjugate-pair.html), for the central sign and the conjugate module.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz action and its labels.
 - [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html), for the physics counterpart and the units.

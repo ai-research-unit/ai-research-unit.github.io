@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article classifies the subspaces of the complex two-space: the complex subspaces, the real subspaces, the subspaces selected by the three canonical forms, and the Grassmannians that parametrise them. It is the place where the forms of the previous article acquire a geometric meaning: the isotropic lines of $B$ and the Lagrangian planes of $\omega$ and $\Omega$ are subspaces, and their classification is the first geometric statement of the category.
+This article classifies the subspaces of the duo-complex numbers: the complex subspaces, the real subspaces, the subspaces selected by the three canonical forms, and the Grassmannians that parametrise them. It is the place where the forms of the previous article acquire a geometric meaning: the isotropic lines of $B$ and the Lagrangian planes of $\omega$ and $\Omega$ are subspaces, and their classification is the first geometric statement of the category.
 
 The article treats the subspaces as sets and as points of a Grassmannian. It does not treat the topology of the Grassmannians beyond their dimension and their identification, which are *Grassmannians and Stiefel Manifolds* and *Projective Geometry*; it does not treat the group actions, which are *The Classical Groups of $\mathbb{C}^2$*; and it does not treat the projective compactification, which is *The Compactifications of $\mathbb{C}^2$*.
 
@@ -215,12 +215,12 @@ The real subspaces have dimensions $0$ to $4$. A real $2$-plane is either a comp
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space, the bases and the complex structure.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), for the definitions of $B$, $\omega$ and $\Omega$ and the isotropic and Lagrangian computations.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the real reading of the subspaces and the map $J$.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space, the bases and the complex structure.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), for the definitions of $B$, $\omega$ and $\Omega$ and the isotropic and Lagrangian computations.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the real reading of the subspaces and the map $J$.
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form.html), for the cone, its real picture and its projective image.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), for the two linked circles and the fibration of $S^3$.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for the group actions on the lines and on the Lagrangian planes.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for the group actions on the lines and on the Lagrangian planes.
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the general theory of the Grassmannians and the Plücker embedding.
 - [Projective Geometry](projective-geometry.html), for the projective line, the duality and the incidence.
 - [Split-Complex Null Quadric and Projective Geometry](split-complex-null-quadric-and-projective-geometry.html), for the real two-line cone that this cone complexifies.

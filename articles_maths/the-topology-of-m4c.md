@@ -362,7 +362,7 @@ The rank-one idempotents form an affine bundle of rank $1$ over $\mathbb{P}^1$, 
 
 **The determinant bundle.** The determinant line bundle over $U(2)$ has first Chern class $1$; over $\mathbb{P}^1$ the tautological bundle $\mathcal{O}(-1)$ has $c_1=-1$ and the dual $\mathcal{O}(1)$ has $c_1=1$. The pattern is the $n=2$ case of the $n=4$ formulas.
 
-**The comparison with the regular model.** The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The regular model $M_4(\mathbb{C})_L$ is a four-dimensional complex subspace with the null cone as its singular set; the full algebra's singular set is the determinantal hypersurface.
+**The comparison with the regular model.** The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The regular model $M_4(\mathbb{C})_{\mathbb{B},L}$ is a four-dimensional complex subspace with the null cone as its singular set; the full algebra's singular set is the determinantal hypersurface.
 
 ## Summary
 

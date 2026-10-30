@@ -295,7 +295,7 @@ $$
 N(\tilde Q)=Q_t^2+B^2,
 $$
 
-which is complex-valued and isotropic on a nonzero cone; its zero set is the **null cone** of the zero divisors. The regular representation $M_4(\mathbb{C})_L$ inherits the determinant as the square of the norm, and its singular set is the null cone. The full algebra $M_4(\mathbb{C})$ is different: its determinant is not a norm, and its singular set is not the zero set of a definite form. The positive definite form $\operatorname{tr}(A^*B)$ exists on the full algebra, but its zero set is only the origin. The null cone of $\mathbb{B}$ and the singular set of $M_4$ are different objects.
+which is complex-valued and isotropic on a nonzero cone; its zero set is the **null cone** of the zero divisors. The regular representation $M_4(\mathbb{C})_{\mathbb{B},L}$ inherits the determinant as the square of the norm, and its singular set is the null cone. The full algebra $M_4(\mathbb{C})$ is different: its determinant is not a norm, and its singular set is not the zero set of a definite form. The positive definite form $\operatorname{tr}(A^*B)$ exists on the full algebra, but its zero set is only the origin. The null cone of $\mathbb{B}$ and the singular set of $M_4$ are different objects.
 
 **The two determinants.** The determinant of the full algebra is the usual $4\times4$ determinant; the determinant of the regular model is the square of the biquaternion norm. The full determinant vanishes on the singular matrices; the biquaternion norm vanishes on the null cone. The two singular sets have different dimensions and different geometry. The full algebra has no null cone; the regular model does.
 

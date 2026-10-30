@@ -45,7 +45,7 @@ $$
 
 **Proof.** The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.
 
-**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra* uses the same letters for $a,b\in\mathbb{B}$, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $N(a)^2N(b)^2$ there.
+**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra* uses the same letters for $a,b\in\mathbb{B}$, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $N(a)^2N(b)^2$ there.
 
 **The matrices.** Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then
 
@@ -320,4 +320,4 @@ $$
 - [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of $T_{a,b}$ and the product bound.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the conjugation action and its orbits.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of the algebra from the sandwich map and the four-dimensional case.
-- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the same construction on the four-dimensional carrier.
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the same construction on the four-dimensional carrier.

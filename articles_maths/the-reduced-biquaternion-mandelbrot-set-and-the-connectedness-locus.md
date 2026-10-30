@@ -40,7 +40,7 @@ the product of the Mandelbrot set with itself, read in the idempotent coordinate
 
 **Proof.** The filled Julia set is the product $K_{c_{1}}\times K_{c_{2}}$, and a product of two non-empty compact sets is connected exactly when both factors are connected and non-empty; the factors are non-empty always, so connectivity of $\mathcal{K}_{C}$ is the conjunction of the two complex connectivities, which is the product statement.
 
-**Corollary (the elementary properties).** The locus $\mathfrak{M}$ is compact, connected and full in the complex two-space; its boundary is the union of the two products of a boundary with the whole,
+**Corollary (the elementary properties).** The locus $\mathfrak{M}$ is compact, connected and full in the duo-complex numbers $\mathbb{C}^2$; its boundary is the union of the two products of a boundary with the whole,
 
 $$
 \boxed{\;

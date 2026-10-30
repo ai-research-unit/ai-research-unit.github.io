@@ -257,9 +257,9 @@ The cell decompositions are $\mathbb{CP}^2=e^0\cup e^2\cup e^4$ and $S^4=e^0\cup
 
 ## Further Reading
 
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), the previous article, for the space, the ball and the sphere.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), the previous article, for the space, the ball and the sphere.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), the next article, for the Hopf map that attaches the boundary of the projective compactification.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the projective line and the complex directions.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the projective line and the complex directions.
 - [Projective Geometry](projective-geometry.html), for the projective plane, duality and the line at infinity in general.
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the Grassmannians and the cell decompositions of the projective spaces.
 - [Simplicial and Singular Homology](simplicial-and-singular-homology.html), for the cellular homology used in the computations.

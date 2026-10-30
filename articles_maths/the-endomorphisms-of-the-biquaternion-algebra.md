@@ -8,7 +8,7 @@ This article opens the group *Operators* of the Biquaternions chapter and takes 
 
 **The scope of the word.** In this article an **endomorphism** is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the **algebra** endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form the group $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of dimension three. The two uses of the word are separated in §*The Two Kinds of Endomorphism*, and confusing them is the first trap of the subject.
 
-**The other route.** The corpus also builds $M_4(\mathbb{C})$ from the two-sided operators $T_{a,b}=L_aR_b$. That is the route of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and of *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The two routes reach the same algebra and answer different questions: the endomorphism route says what the algebra is, the two-sided route says how the multiplication generates it. §*The Bridge to the Two-Sided Operators* compares them.
+**The other route.** The corpus also builds $M_4(\mathbb{C})$ from the two-sided operators $T_{a,b}=L_aR_b$. That is the route of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The two routes reach the same algebra and answer different questions: the endomorphism route says what the algebra is, the two-sided route says how the multiplication generates it. §*The Bridge to the Two-Sided Operators* compares them.
 
 **Three objects.** The rest of the article keeps apart the carrier, its left regular image and its full operator algebra.
 
@@ -18,9 +18,9 @@ This article opens the group *Operators* of the Biquaternions chapter and takes 
 | $L(\mathbb{B})$ | the left multiplications $x\mapsto ax$ | $4$ | a $4\times4$ subalgebra |
 | $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | all complex-linear maps | $16$ | $M_4(\mathbb{C})$ after a basis |
 
-$L(\mathbb{B})$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ are both made of $4\times4$ matrices in the coefficient basis. They are not the same object: the first has dimension four, the second dimension sixteen. The subscript $L$ in $M_4(\mathbb{C})_L$ records the first.
+$L(\mathbb{B})$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ are both made of $4\times4$ matrices in the coefficient basis. They are not the same object: the first has dimension four, the second dimension sixteen. The subscript $L$ in $M_4(\mathbb{C})_{\mathbb{B},L}$ records the first.
 
-**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*. The matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The ambient operator space in general is *The Operators on an Algebra*; the regular representations and the double centraliser are *The Regular Representation as an Algebra of Operators*. The two-sided operators are *Two-Sided Operators on the Biquaternion Algebra*, and their matrix form is *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract isomorphism with the enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The article is pure algebra: no bilinear form, no topology, and the only norm it uses is the multiplicative quaternionic norm.
+**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*. The matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The ambient operator space in general is *The Operators on an Algebra*; the regular representations and the double centraliser are *The Regular Representation as an Algebra of Operators*. The two-sided operators are *Two-Sided Operators on the Biquaternion Algebra*, and their matrix form is *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract isomorphism with the enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The article is pure algebra: no bilinear form, no topology, and the only norm it uses is the multiplicative quaternionic norm.
 
 ## The Carrier and Its Linear Maps
 
@@ -74,7 +74,7 @@ $$
 
 *Proof.* Both sides have the same $j$-th column: the coordinate column of $F$ applied to the $j$-th vector of $\mathcal{B}'$, read in $\mathcal{B}'$.
 
-**Remark (the isomorphism is not canonical).** There is no basis-free identification of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ with the algebra of $4\times4$ matrices. The operator space is canonical; its matrix form depends on a basis, and two bases give two conjugate matrix algebras. A statement about an operator is therefore a statement invariant under $[F]\mapsto S^{-1}[F]S$. This is why the corpus can speak of *the* matrix algebra $M_4(\mathbb{C})$ only after a basis has been fixed, and why it names the basis: the coefficient basis in the $M_4(\mathbb{C})_L$ model, the Peirce basis for the chiral blocks.
+**Remark (the isomorphism is not canonical).** There is no basis-free identification of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ with the algebra of $4\times4$ matrices. The operator space is canonical; its matrix form depends on a basis, and two bases give two conjugate matrix algebras. A statement about an operator is therefore a statement invariant under $[F]\mapsto S^{-1}[F]S$. This is why the corpus can speak of *the* matrix algebra $M_4(\mathbb{C})$ only after a basis has been fixed, and why it names the basis: the coefficient basis in the $M_4(\mathbb{C})_{\mathbb{B},L}$ model, the Peirce basis for the chiral blocks.
 
 **Definition (trace, determinant, spectrum).** The **trace** and the **determinant** of an operator are those of any of its matrices,
 
@@ -307,7 +307,7 @@ $$
 \operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 
-They are displayed and tabulated in *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+They are displayed and tabulated in *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
 ### The Cone of Products and the Length
 
@@ -355,7 +355,7 @@ The notation $M_4(\mathbb{C})$ hides three different objects in the corpus, and 
 | Object | What an element is | Complex dimension | Where it is written |
 |---|---|---|---|
 | $\mathbb{B}$ | a biquaternion | $4$ | $2\times2$ matrix in the $M_2(\mathbb{C})$ model |
-| $M_4(\mathbb{C})_L=L(\mathbb{B})$ | a left multiplication | $4$ | $4\times4$ matrix, block diagonal in the Peirce basis |
+| $M_4(\mathbb{C})_{\mathbb{B},L}=L(\mathbb{B})$ | a left multiplication | $4$ | $4\times4$ matrix, block diagonal in the Peirce basis |
 | $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | an arbitrary operator | $16$ | $4\times4$ matrix in a basis of $\mathbb{B}$ |
 
 The second row is a subalgebra of the third, not a quotient and not a different matrix size. A $4\times4$ matrix can therefore be an element of the four-dimensional left model or an element of the sixteen-dimensional operator algebra; the matrix size alone does not tell which. The label and the context do.
@@ -364,13 +364,13 @@ The second row is a subalgebra of the third, not a quotient and not a different 
 
 **The dimension sixteen.** It is $4\times4$: four basis vectors, four coordinates each. No multiplication is used.
 
-**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
+**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
 
 $$
 S^{-1}L_aS=\operatorname{diag}\bigl(\mathsf{M}_2(a),\mathsf{M}_2(a)\bigr),
 $$
 
-so every eigenvalue of $\mathsf{M}_2(a)$ occurs twice. Hence $\operatorname{tr}L_a=2\operatorname{tr}\mathsf{M}_2(a)=4a_t$ and $\det L_a=\det\mathsf{M}_2(a)^2=N(a)^2$. The formulas of the $M_4(\mathbb{C})_L$ model are read off the operator spectrum, without a determinant computation.
+so every eigenvalue of $\mathsf{M}_2(a)$ occurs twice. Hence $\operatorname{tr}L_a=2\operatorname{tr}\mathsf{M}_2(a)=4a_t$ and $\det L_a=\det\mathsf{M}_2(a)^2=N(a)^2$. The formulas of the $M_4(\mathbb{C})_{\mathbb{B},L}$ model are read off the operator spectrum, without a determinant computation.
 
 **Why the two regular families are mutual commutants.** An operator commuting with every left multiplication is a right multiplication, and conversely. The proof is the two-line evaluation at $e_t$ of §*The Double Centraliser*, and it does not use matrices.
 
@@ -414,7 +414,7 @@ is a sum of four products and of no fewer. The simplest rank-one projection is t
 
 ## Summary
 
-The complex-linear maps of the biquaternion algebra into itself form the endomorphism algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. A basis of $\mathbb{B}$ identifies it with $M_4(\mathbb{C})$, and the identification is a choice: a change of basis conjugates the matrices and preserves the trace, the determinant, the spectrum and the rank. The multiplication singles out the left multiplications $L_a$, the right multiplications $R_b$ and the natural conjugation $D$; the first two are four-dimensional subalgebras, their mutual commutants, and together they generate the whole operator space. The derivations are the three-dimensional inner derivations $L_a-R_a$, and the automorphisms form the three-dimensional group $PGL_2(\mathbb{C})$. The two-sided operators $T_{a,b}=L_aR_b$ are the elementary tensors of the enveloping algebra; their span is the whole operator space, but the family itself is a seven-dimensional cone, and the least number of products in a sum is the rank of the coefficient matrix. The endomorphism route and the two-sided route reach the same algebra from opposite ends: the first defines the space, the second exhibits the generating operators. The label $M_4(\mathbb{C})_L$ denotes the four-dimensional left regular image, not the sixteen-dimensional endomorphism algebra, although both are written with $4\times4$ matrices.
+The complex-linear maps of the biquaternion algebra into itself form the endomorphism algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. A basis of $\mathbb{B}$ identifies it with $M_4(\mathbb{C})$, and the identification is a choice: a change of basis conjugates the matrices and preserves the trace, the determinant, the spectrum and the rank. The multiplication singles out the left multiplications $L_a$, the right multiplications $R_b$ and the natural conjugation $D$; the first two are four-dimensional subalgebras, their mutual commutants, and together they generate the whole operator space. The derivations are the three-dimensional inner derivations $L_a-R_a$, and the automorphisms form the three-dimensional group $PGL_2(\mathbb{C})$. The two-sided operators $T_{a,b}=L_aR_b$ are the elementary tensors of the enveloping algebra; their span is the whole operator space, but the family itself is a seven-dimensional cone, and the least number of products in a sum is the rank of the coefficient matrix. The endomorphism route and the two-sided route reach the same algebra from opposite ends: the first defines the space, the second exhibits the generating operators. The label $M_4(\mathbb{C})_{\mathbb{B},L}$ denotes the four-dimensional left regular image, not the sixteen-dimensional endomorphism algebra, although both are written with $4\times4$ matrices.
 
 ## Summary of Notation
 
@@ -444,10 +444,10 @@ The complex-linear maps of the biquaternion algebra into itself form the endomor
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the matrix algebra and the distinction from the regular model
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ and its criteria
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the construction from $L_a$ and $R_b$ and the sixteen matrices
-- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma frame and the product question
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma frame and the product question
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the general ambient space and the subspace-group rule
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the double centraliser of the regular bimodule
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the derivations and automorphisms at matrix level
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation of the corpus

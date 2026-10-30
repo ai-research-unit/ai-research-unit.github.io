@@ -144,7 +144,7 @@ $$
 
 under the pair, where $V_{m}$ is the spin-$(m-1)/2$ module of dimension $m$: for $n=4$, two spin-$\tfrac12$ modules; for $n=6$, two spin-$1$ modules. The off-diagonal block is the part the Peirce chain uses to move between the halves.
 
-**At $n=2$.** $m=1$, $\Gamma=H=\operatorname{diag}(1,-1)$, and the two halves are the two coordinate lines. The carrier is a minimal left ideal, a column; $\Gamma$ splits that column into its two coordinate lines. The two columns are copies of the simple module $S$, distinguished by the Peirce index, and each column contains both lines. This degenerate case is the biquaternion one. The biquaternion chirality is not $\Gamma$: it is the central sign $\chi=ij$ of the complexification, which grades $S$ against $S^{\mathrm{c}}$ and is treated in *Chirality: The Conjugate Pair*.
+**At $n=2$.** $m=1$, $\Gamma=H=\operatorname{diag}(1,-1)$, and the two halves are the two coordinate lines. The carrier is a minimal left ideal, a column; $\Gamma$ splits that column into its two coordinate lines. The two columns are copies of the simple module $S$, distinguished by the Peirce index, and each column contains both lines. This degenerate case is the biquaternion one. The biquaternion chirality is not $\Gamma$: it is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification, which grades $S$ against $S^{\mathrm{c}}$ and is treated in *Chirality: The Conjugate Pair*.
 
 ### The Three Readings of the Root
 

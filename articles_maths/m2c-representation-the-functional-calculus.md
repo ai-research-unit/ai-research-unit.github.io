@@ -502,7 +502,7 @@ A square root commutes with its matrix, so the square-root equation is solved in
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the general calculus and its convergence
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion closed form, the logarithm and the branch families
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the one-parameter subgroups and the Lie correspondence
-- [$M_4(\mathbb{C})_L$ Representation : The Functional Calculus](m4c-representation-the-functional-calculus.html), for the $4\times4$ version
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Functional Calculus](m4c-representation-the-functional-calculus.html), for the $4\times4$ version
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model
 - [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the commutant used in both reductions
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the polar factors

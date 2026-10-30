@@ -253,10 +253,10 @@ On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-clo
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the coordinates.
-- [Analysis on $\mathbb{C}^2$](analysis-on-the-complex-two-space.html), the earlier article, for the Cauchy–Riemann equations, the polydisc and the Cauchy formula.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the coordinates.
+- [Analysis on $\mathbb{C}^2$](analysis-on-the-duo-complex-numbers.html), the earlier article, for the Cauchy–Riemann equations, the polydisc and the Cauchy formula.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), the previous article, for the model domains and their boundaries.
-- [Harmonic Analysis on $\mathbb{C}^2$](harmonic-analysis-on-the-complex-two-space.html), the next article, for the Fourier transform and the Laplacian.
+- [Harmonic Analysis on $\mathbb{C}^2$](harmonic-analysis-on-the-duo-complex-numbers.html), the next article, for the Fourier transform and the Laplacian.
 - [Several Complex Variables](several-complex-variables.html), for the Dolbeault complex, the $\bar\partial$-equation, pseudoconvexity, the Hartogs theorem and the solution of the Levi problem.
 - [Differential Forms and Stokes' Theorem](differential-forms-and-stokes-theorem.html), for the calculus of forms, the operators $\partial$ and $\bar\partial$ and Stokes' theorem.
 - [Sheaf Cohomology](sheaf-cohomology.html), for the cohomological form of the Dolbeault theorem and Cartan's theorem B.

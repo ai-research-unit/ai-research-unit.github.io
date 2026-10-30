@@ -213,7 +213,7 @@ The first identity is the $\mathbb{C}$-linearity of the first slot and the secon
 
 ### The Gate: a Central Element of Square $-1$
 
-**The gate, applied here, is empty.** For an algebra, a complex structure compatible with the product is the same thing as a central element $j$ with $j^2=-1$, the scalar action being $(a+ib)\tilde Q_1=a\tilde Q_1+bj\tilde Q_1$ (*The Biquaternion Algebra*, §*The Gate: a Central Element of Square $-1$*). Here no element plays the part, because the centre is trivial: there is no central element at all, and a fortiori none of square $-1$. The scalar imaginary $i$, which has $i^2=-1$, is not central, and its failure is one computation:
+**The gate, applied here, is empty.** For an algebra, a complex structure compatible with the product is the same thing as a central root of $-1$, an element $\tilde\Xi$ with $\tilde\Xi^2=-e_t$ and $\tilde\Xi$ central (§*The Root Convention*), the scalar action being $(a+ib)\tilde Q_1=a\tilde Q_1+b\tilde\Xi\tilde Q_1$ (*The Biquaternion Algebra*, §*The Gate: a Central Element of Square $-1$*). Here no element plays the part, because the centre is trivial: there is no central element at all, and a fortiori none of square $-1$. The scalar imaginary $i$, which has $i^2=-1$, is not central, and its failure is one computation:
 
 $$
 (ie_t)\star \vec e_x=ie_t\cdot \vec e_x^{*}=ie_t\cdot(-\vec e_x)=-i\vec e_x , \qquad

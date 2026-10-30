@@ -20,7 +20,7 @@ The carrier is $\mathbb{B}\cong\mathbb{C}^4$; it is not $M_4(\mathbb{C})$.
 
 **The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, §*The Gamma Frame* records the physics frame, and §*Why These Matrices* states the case. The worked computation is the companion article.
 
-**Sources and boundaries.** The left regular model and its product rules are *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*; the Peirce coordinates are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *The Dirac Algebra and Biquaternions: A Dictionary*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
+**Sources and boundaries.** The left regular model and its product rules are *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Product, the Trace and the Determinant*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *The Dirac Algebra and Biquaternions: A Dictionary*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
 
 ## The Starting Point
 
@@ -397,7 +397,7 @@ $$
 
 ## The Peirce Dictionary
 
-**The Peirce basis.** Let $P_0=\tilde\Pi_+$, $P_1=\vec\Upsilon_y$, $P_2=\vec\Upsilon_x$, $P_3=\tilde\Pi_-$, the four Peirce elements of *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*, in the order $(t,x,y,z)$ of the coefficient basis.
+**The Peirce basis.** Let $P_0=\tilde\Pi_+$, $P_1=\vec\Upsilon_y$, $P_2=\vec\Upsilon_x$, $P_3=\tilde\Pi_-$, the four Peirce elements of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*, in the order $(t,x,y,z)$ of the coefficient basis.
 
 **Theorem.** In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units, with coefficient $+1$:
 $$
@@ -556,9 +556,9 @@ $$
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the construction, the gamma frame and the product question.
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the left regular model and its trace and determinant.
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the construction, the gamma frame and the product question.
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the left regular model and its trace and determinant.
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra, the matrix units and the construction from the two-sided map.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the operators $L_a,R_a,T_{a,b}$ on the sixteen-dimensional algebra.
 - [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the sixteen traces, the rank and the factorisation of one matrix.

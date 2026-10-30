@@ -423,7 +423,7 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 - The **spinor**, a coordinate on a Peirce carrier, in the sense of *Spinors as Peirce Coordinates*. It is the carrier's coordinate, not the number.
 - The **spin group** $\mathrm{Spin}(3)$, the double cover of the rotation group, a subgroup of the units of $\mathbb H$. It is the group that fixes integrality.
 
-**Remark (the Peirce index is not a fifth role).** The right action of the root gives $R_{\tilde\Xi}=+1$ on $S_+$ and $-1$ on $S_-$. That sign is the **Peirce index**: the two planes are isomorphic, and the index distinguishes two copies of one module. It is not the spin weight, which is the left eigenvalue $+\tfrac12,-\tfrac12$ on both planes, and it is not a chirality. The chirality is the central sign $\chi=ij$, which grades $S$ against $S^{\mathrm{c}}$, as in *Chirality: The Conjugate Pair*.
+**Remark (the Peirce index is not a fifth role).** The right action of the root gives $R_{\tilde\Xi}=+1$ on $S_+$ and $-1$ on $S_-$. That sign is the **Peirce index**: the two planes are isomorphic, and the index distinguishes two copies of one module. It is not the spin weight, which is the left eigenvalue $+\tfrac12,-\tfrac12$ on both planes, and it is not a chirality. The chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, which grades $S$ against $S^{\mathrm{c}}$, as in *Chirality: The Conjugate Pair*.
 
 ## Summary
 

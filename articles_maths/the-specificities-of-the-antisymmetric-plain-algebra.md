@@ -180,7 +180,7 @@ derivations are the adjoints of the vector subspace, and the outer derivations a
 is *The Lie Algebra of the Antisymmetric Plain Algebra*, and the two matrix models are
 *Introduction to the Symmetric Plain Algebra*
 and *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation
-$M_4(\mathbb{C})_L$*, faithful on the derived algebra and with the centre as kernel.
+$M_4(\mathbb{C})_{\mathbb{B},L}$*, faithful on the derived algebra and with the centre as kernel.
 
 **Remark (alternation and the criterion).** Two different laws are in force in the block, and they
 are kept apart. **Alternation** is the law that makes the square of every element vanish, and it is

@@ -129,7 +129,7 @@ Let $N := \alpha^{\dagger}\alpha$ be the **number operator** and $P := \alpha\al
 $$
 \{\alpha,\alpha^{\dagger}\} = 1, \qquad \alpha\alpha^{\dagger}+\alpha^{\dagger}\alpha = 1 .
 $$
-Hence $\operatorname{span}_{\mathbb{C}}\{\alpha\}$ is a maximal totally isotropic subspace of the complex two-space $\operatorname{span}\{E_1,E_2\}$, and $\operatorname{span}\{\alpha^{\dagger}\}$ is its conjugate.
+Hence $\operatorname{span}_{\mathbb{C}}\{\alpha\}$ is a maximal totally isotropic subspace of the complex two-dimensional space $\operatorname{span}\{E_1,E_2\}$, and $\operatorname{span}\{\alpha^{\dagger}\}$ is its conjugate.
 
 *Proof.* Expansion in the Clifford relations: $\alpha^2=\tfrac14(E_1^2+i(E_1E_2+E_2E_1)+i^2E_2^2)=\tfrac14(-1+0+1)=0$, and likewise for the mixed anticommutator, which equals $\tfrac14(E_1^2+E_2^2)$ with the cross terms cancelling. Both were computed with zero residual.
 

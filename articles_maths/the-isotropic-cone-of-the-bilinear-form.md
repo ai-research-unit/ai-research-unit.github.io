@@ -180,11 +180,11 @@ The real locus of the cone is only the origin, but the cone as a real algebraic 
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the Hermitian form.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), for $H$, $B$ and $\omega$ and their signatures.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the complex lines, the Lagrangian lines and the isotropic subspaces.
-- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), the previous article, for $g$, $\omega$ and the relation among the forms.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), the next article, for $O(2,\mathbb{C})$ and the stabilizer of the cone.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the Hermitian form.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), for $H$, $B$ and $\omega$ and their signatures.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the complex lines, the Lagrangian lines and the isotropic subspaces.
+- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-duo-complex-numbers.html), the previous article, for $g$, $\omega$ and the relation among the forms.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), the next article, for $O(2,\mathbb{C})$ and the stabilizer of the cone.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), for the Hopf fibration and the linking number.
 - [Split-Complex Algebra](split-complex-algebra.html), for the null quadric $x^2-y^2=0$.
 - [Dual-Numbers Algebra](dual-numbers-algebra.html), for the degenerate null quadric $u^2=0$.

@@ -200,9 +200,9 @@ The degree of $H^n$ is $2^n$, the dynamical degree is $2$, and the topological e
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the polynomial maps.
-- [The Affine and Polynomial Automorphisms of $\mathbb{C}^2$](the-affine-and-polynomial-automorphisms-of-the-complex-two-space.html), the previous article, for the degree, the tame automorphisms and the Jacobian.
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), for the compactness and the escape to infinity.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the polynomial maps.
+- [The Affine and Polynomial Automorphisms of $\mathbb{C}^2$](the-affine-and-polynomial-automorphisms-of-the-duo-complex-numbers.html), the previous article, for the degree, the tame automorphisms and the Jacobian.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), for the compactness and the escape to infinity.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), for the model domains and the boundary geometry.
 - [Hyperbolic Dynamics and Anosov Systems](hyperbolic-dynamics-and-anosov-systems.html), for the horseshoe and the uniformly hyperbolic theory.
 - [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic Green functions and the currents.

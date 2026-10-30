@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article treats the algebra of the operators on the complex two-space: the complex-linear endomorphisms, their identification with the matrix algebra $M_2(\mathbb{C})$, the group of units and the projective quotient, the conjugate-linear maps, and the two centralisers cut out by the complex structure. The algebra is the first non-commutative object of the synthetic part, and it is the algebra whose simple module is the space itself.
+This article treats the algebra of the operators on the duo-complex numbers: the complex-linear endomorphisms, their identification with the matrix algebra $M_2(\mathbb{C})$, the group of units and the projective quotient, the conjugate-linear maps, and the two centralisers cut out by the complex structure. The algebra is the first non-commutative object of the synthetic part, and it is the algebra whose simple module is the space itself.
 
 The article states the structure of the algebra as an operator algebra on $\mathbb{C}^2$. It does not restate the matrix theory: the product rule, the trace, the determinant, the six subspaces, the centraliser and the double centraliser of a matrix and the Jordan form are the subject of the $M_2(\mathbb{C})$ Model articles of the biquaternion category, cited at each point. The tensor square is *The Tensor Square of $\mathbb{C}^2$*; the classical groups as groups of matrices are *The Classical Groups of $\mathbb{C}^2$*; the general theory of endomorphism algebras is *Endomorphisms of a Linear Space* and *The Endomorphism Algebra of a Module*.
 
@@ -166,10 +166,10 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the complex structure.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
-- [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-the-complex-two-space.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the complex structure.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
+- [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-the-duo-complex-numbers.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the matrix computations of the product, the trace and the determinant.
 - [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single matrix and the bicommutant.
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the groups and the determinant.

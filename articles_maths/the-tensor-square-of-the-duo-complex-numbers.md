@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article treats the tensor square $V\otimes V$ of the complex two-space. The square has complex dimension $4$, and it decomposes canonically into the symmetric square and the alternating square,
+This article treats the tensor square $V\otimes V$ of the duo-complex numbers. The square has complex dimension $4$, and it decomposes canonically into the symmetric square and the alternating square,
 $$
 V\otimes V=\operatorname{Sym}^2V\oplus\Lambda^2V,\qquad 4=3+1.
 $$
@@ -229,9 +229,9 @@ The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and its forms.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), the previous article, for the algebra $M_2(\mathbb{C})$ and its identification with the biquaternion algebra.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), for the forms $B$ and $\omega$ used in the twisted product.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and its forms.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-duo-complex-numbers.html), the previous article, for the algebra $M_2(\mathbb{C})$ and its identification with the biquaternion algebra.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), for the forms $B$ and $\omega$ used in the twisted product.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and its simple module.
 - [Tensor Products of Algebras](tensor-products-of-algebras.html), for the universal property and the general theory of the tensor product.
 - [The Exterior Algebra](the-exterior-algebra.html), for the alternating powers and the determinant.

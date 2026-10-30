@@ -309,12 +309,12 @@ The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}
 
 ## Further Reading
 
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), the earlier article, for the sphere as a topological space.
-- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-complex-two-space.html), the previous article, for the Hopf map as the attaching map at infinity.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the projective line and the complex directions.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), the earlier article, for the sphere as a topological space.
+- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-duo-complex-numbers.html), the previous article, for the Hopf map as the attaching map at infinity.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the projective line and the complex directions.
 - [Homotopy Groups and Fibrations](homotopy-groups-and-fibrations.html), for the long exact sequence, the Hopf invariant and the four Hopf fibrations.
 - [The Fundamental Group and Covering Spaces](the-fundamental-group-and-covering-spaces.html), for simple connectivity and covering spaces.
 - [Knot Theory](knot-theory.html), for the linking number and Seifert surfaces.
 - [Quaternion Topology](quaternion-topology.html), for the quaternionic sphere and its topology.
 - [Introduction to Topology on the Quaternions](introduction-to-topology-on-the-quaternions.html), for the topology of the quaternion algebra.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their homogeneous spaces.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their homogeneous spaces.

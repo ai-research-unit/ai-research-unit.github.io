@@ -193,7 +193,7 @@ $$
 
 Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the spatial generators are complex-linear and the timelike generator alone is antilinear; the entry for the volume element is a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $i_3$ of the mass term. That pattern is a property of the definition of $A$ and not of the Clifford relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
 
-**The chirality sign.** The source's volume element is the negative of the corpus's: it sets $\gamma_5 = -i\gamma_0\gamma_1\gamma_2\gamma_3$, whereas the matrix representative of the central sign $\chi=ij$ in the biquaternion basis of *Chirality and the Central Sign* below is $\gamma_5 = +i\gamma^0\gamma^1\gamma^2\gamma^3$. In the corpus's convention the last identity above therefore reads $A(\gamma_5\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $i_3$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
+**The chirality sign.** The source's volume element is the negative of the corpus's: it sets $\gamma_5 = -i\gamma_0\gamma_1\gamma_2\gamma_3$, whereas the matrix representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the biquaternion basis of *Chirality and the Central Sign* below is $\gamma_5 = +i\gamma^0\gamma^1\gamma^2\gamma^3$. In the corpus's convention the last identity above therefore reads $A(\gamma_5\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $i_3$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
 
 **Which conjugation.** The $C$ of the dictionary is the algebra's **complex conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces — $\bar{\cdot}$ fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\flat$ fixes the material sector $\mathbb{M}_-$ — and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = mD^{*}i\vec{\nu}$ of *The Lanczos Route* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $M_{i_3}$ standing where the Lanczos unit vector $\vec{\nu}$ stands. The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
 
@@ -280,7 +280,7 @@ $$
 
 which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies, in one object, the two helicities as the two minimal left ideals of the shifted pair — which is the framework's own statement (*The Biquaternion Vacuum as a Minimal Idempotent*) that a helicity state is a rank-one Hermitian idempotent of the algebra, here with the parameter's direction in place of the vacuum's.
 
-**Which pair, and which splitting.** The projectors $P_\pm$ are **not** the chirality projectors of the following subsection. The chirality pair is built from the central sign $\chi=ij$, $\tfrac12(e_t\pm\chi)$, and it is Hermitian and orthogonal; its matrix representative is $\tfrac12(1\pm\gamma_5)$ in the biquaternion basis. The pair $P_\pm$ is built from the shift parameter and acts by right multiplication, so its elements are non-Hermitian and, as the algebra requires, not orthogonal. Helicity and chirality coincide only for a massless field; at $m\neq0$ the two pairs are genuinely different splittings of the same space, and the neutrino or antineutrino identification is a statement about the helicity pair and not about $\chi$. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary null idempotents, one for each sign of the frequency — and the name *neutrino* is the source's, not the algebra's.
+**Which pair, and which splitting.** The projectors $P_\pm$ are **not** the chirality projectors of the following subsection. The chirality pair is built from the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\tfrac12(e_t\pm\chi)$, and it is Hermitian and orthogonal; its matrix representative is $\tfrac12(1\pm\gamma_5)$ in the biquaternion basis. The pair $P_\pm$ is built from the shift parameter and acts by right multiplication, so its elements are non-Hermitian and, as the algebra requires, not orthogonal. Helicity and chirality coincide only for a massless field; at $m\neq0$ the two pairs are genuinely different splittings of the same space, and the neutrino or antineutrino identification is a statement about the helicity pair and not about $\chi$. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary null idempotents, one for each sign of the frequency — and the name *neutrino* is the source's, not the algebra's.
 
 ### The Integral Representation of the Harmonic Spinor Field
 
@@ -300,24 +300,24 @@ and with that one remark the three theorems of the hyperholomorphic theory hold 
 
 ### Chirality and the Central Sign
 
-**The chirality of the biquaternion Dirac field is the central sign $\chi=ij$ of the complexification, not a Clifford matrix.**
+**The chirality of the biquaternion Dirac field is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification, not a Clifford matrix.**
 
-Let $j$ be the new central imaginary that complexifies $\mathbb{B}_{\mathbb{R}}$, with $j^2=-1$ and $[j,i]=0$. The algebra $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ is $\mathbb{B}\oplus\mathbb{B}$, with central idempotents
+Let $\tilde\Xi_{\mathrm{ad}}$ be the central root of $-1$ that complexifies $\mathbb{B}_{\mathbb{R}}$, with $\tilde\Xi_{\mathrm{ad}}^2=-1$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. The algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ is $\mathbb{B}\oplus\mathbb{B}$, with central idempotents
 
 $$
-e_+=\tfrac12(1+ij),\qquad e_-=\tfrac12(1-ij),\qquad e_++e_-=e_t,\qquad e_+e_-=0,
+e_+=\tfrac12(1+i\tilde\Xi_{\mathrm{ad}}),\qquad e_-=\tfrac12(1-i\tilde\Xi_{\mathrm{ad}}),\qquad e_++e_-=e_t,\qquad e_+e_-=0,
 $$
 
 and chirality
 
 $$
-\chi=ij=e_+-e_-,\qquad \chi^2=e_t,\qquad [\chi,a]=0\quad(a\in\mathbb{B}[j]).
+\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-,\qquad \chi^2=e_t,\qquad [\chi,a]=0\quad(a\in\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}).
 $$
 
 On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ the representation is
 
 $$
-\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(j)=iI_4,\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
+\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\tilde\Xi_{\mathrm{ad}})=iI_4,\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
 $$
 
 The chiral projectors are
@@ -813,7 +813,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R
 $$
 
-for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component in each chiral half, $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, and the mass term is the linear off-diagonal pairing. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=ij$ of $\mathbb{B}[j]$; $\gamma_5$ is its matrix representative. The massless equation has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
+for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component in each chiral half, $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, and the mass term is the linear off-diagonal pairing. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$; $\gamma_5$ is its matrix representative. The massless equation has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\circ\overline{d\tilde{R}}$.
 
@@ -834,7 +834,7 @@ The same construction has two consequences that belong to the equation rather th
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\chi=ij$ | Chirality, the central sign of $\mathbb{B}[j]$; $\chi^2=e_t$; $\gamma_5$ is its matrix representative |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality, the central sign of the double; $\chi^2=e_t$; $\gamma_5$ is its matrix representative |
 | $i_1,i_2,i_3$ | The source's symbols for the quaternion units of the dictionary, the $\vec e_x,\vec e_y,\vec e_z$ above; the scalar imaginary is its $i$ as here |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |

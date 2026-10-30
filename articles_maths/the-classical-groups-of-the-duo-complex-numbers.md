@@ -199,11 +199,11 @@ with $SU(2)\cong S^3$ as the common compact core. The unitary groups act transit
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the forms.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), for $H$, $B$ and $\omega$ and the groups they define.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the lines, the Lagrangian planes and the isotropic lines.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), for $M_2(\mathbb{C})$, $GL_2$ and $PGL_2$.
-- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), for $\mathbb{C}^2\rtimes U(2)$ and the holomorphic isometries.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the forms.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), for $H$, $B$ and $\omega$ and the groups they define.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the lines, the Lagrangian planes and the isotropic lines.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-duo-complex-numbers.html), for $M_2(\mathbb{C})$, $GL_2$ and $PGL_2$.
+- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-duo-complex-numbers.html), for $\mathbb{C}^2\rtimes U(2)$ and the holomorphic isometries.
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form.html), the previous article, for the two isotropic points and the orthogonal action.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), for $S^3\cong SU(2)$ and the Hopf fibration.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), for $PU(2,1)$ and the automorphisms of the ball.

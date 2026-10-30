@@ -1,12 +1,12 @@
-# __Complex Two-Space__
+# __Duo-Complex Numbers__
 
 ## Introduction
 
-The complex two-space is the set of ordered pairs of complex numbers,
+A duo-complex number is an ordered pair of complex numbers.
 $$
-\mathbb{C}^2=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
+\mathbb{C}^2=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\}.
 $$
-with its two scalar structures: the complex one, which makes it a complex vector space of dimension two, and the real one, which makes it a real vector space of dimension four. This article fixes the **space**: the set, the two structures, the bases, the complex structure $J$, the Hermitian form $H$ and the norm, and the three canonical forms $H$, $B$ and $\omega$ announced but not developed. It is the entry point of the category.
+The set carries two scalar structures: the complex one, which makes it a complex vector space of dimension two, and the real one, which makes it a real vector space of dimension four. This article fixes the **space**: the set, the two structures, the bases, the complex structure $J$, the Hermitian form $H$ and the norm, and the three canonical forms $H$, $B$ and $\omega$ announced but not developed. It is the entry point of the category.
 
 The article states the definitions and the elementary propositions that every later article assumes. It does not prove the properties of the three forms — their Gram matrices, their isotropy and their real pictures are *The Three Canonical Forms on $\mathbb{C}^2$* — and it does not treat the topology, the analysis or the geometry of the space, which are the articles that follow. The general theory of holomorphic functions of several variables is not restated here; it is *Several Complex Variables*, and this category reads its two-variable case on the space fixed below.
 
@@ -18,7 +18,7 @@ The space is also the natural module of the matrix algebra. The algebra $M_2(\ma
 
 **The set carries two scalar multiplications, one by the field $\mathbb{C}$ and one by its subfield $\mathbb{R}$, and the two are not interchangeable.**
 
-**Definition.** The **complex two-space** is the set $\mathbb{C}^2$ with the addition
+**Definition.** The **duo-complex numbers** are the set $\mathbb{C}^2$ with the addition
 $$
 (Q_{1\blacktriangle},Q_{1\blacktriangledown})+(Q_{2\blacktriangle},Q_{2\blacktriangledown})=(Q_{1\blacktriangle}+Q_{2\blacktriangle},\,Q_{1\blacktriangledown}+Q_{2\blacktriangledown})
 $$
@@ -204,15 +204,15 @@ the Lagrange identity for two complex variables. Second, $\operatorname{Im}H$ is
 
 ## The Position Among the Objects of Part VI
 
-**The space is not an algebra, and it is placed after the number systems for that reason: it is the first object of the synthetic part that is a module and not a ring.**
+**The duo-complex numbers are not an algebra, and they are placed after the number systems for that reason: they are the first object of the synthetic part that is a module and not a ring.**
 
-The categories that precede it are algebras: $\mathbb{C}$, the split-complex numbers, the dual numbers, and the variants gathered in the complexoid and split-complexoid categories, each with a product, a conjugation and a norm. The space $\mathbb{C}^2$ has none of these as part of its definition. Its product-like structures are the three forms, which take two arguments and return a scalar; its operators are the matrices, which are treated in the next two articles. **The reader who expects a multiplication table will not find one here, and the absence is the point.**
+The categories that precede them are algebras: $\mathbb{C}$, the split-complex numbers, the dual numbers, and the variants gathered in the complexoid and split-complexoid categories, each with a product, a conjugation and a norm. The set $\mathbb{C}^2$ has none of these as part of its definition. Its product-like structures are the three forms, which take two arguments and return a scalar; its operators are the matrices, which are treated in the next two articles. **The reader who expects a multiplication table will not find one here, and the absence is the point.** **The name records the two complex coordinates, and the multiplication that would make a pair an algebra is the reduced biquaternion product of the next category.**
 
 The space is nevertheless the module of the algebras that follow. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by matrix multiplication, and its group of units $\mathrm{GL}_2(\mathbb{C})$ acts faithfully and transitively on the nonzero vectors: for any two nonzero vectors there is an invertible matrix sending one to the other. The algebra $M_2(\mathbb{C})$ is isomorphic to the biquaternion algebra $\mathbb{B}$, so the space is the **simple module** of $\mathbb{B}$, and the classification of the simple modules of a matrix algebra, which is the contents of *The Endomorphisms of $\mathbb{C}^2$* and of the biquaternion category, has this space as its unique object up to isomorphism.
 
 ## Summary
 
-The complex two-space is the set $\mathbb{C}^2$ of ordered pairs of complex numbers. It is a complex vector space of dimension $2$, with basis $e_1=(1,0)$ and $e_2=(0,1)$, and a real vector space of dimension $4$, with basis $e_1,ie_1,e_2,ie_2$; a point is $Q=Q_{\blacktriangle}e_1+Q_{\blacktriangledown}e_2$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, and the two readings are related by the complex structure
+The duo-complex numbers are the set $\mathbb{C}^2$ of ordered pairs of complex numbers. The set is a complex vector space of dimension $2$, with basis $e_1=(1,0)$ and $e_2=(0,1)$, and a real vector space of dimension $4$, with basis $e_1,ie_1,e_2,ie_2$; a point is $Q=Q_{\blacktriangle}e_1+Q_{\blacktriangledown}e_2$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, and the two readings are related by the complex structure
 $$
 J(Q_{\blacktriangle},Q_{\blacktriangledown})=(iQ_{\blacktriangle},iQ_{\blacktriangledown}),\qquad J^2=-I,
 $$
@@ -226,8 +226,8 @@ The notation is distinguished four ways: $\mathbb{C}^2$ is the pair space, contr
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^2$ | the set of ordered pairs of complex numbers, with the complex and the real scalar structures |
-| $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ | a point, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ |
+| $\mathbb{C}^2$ | the duo-complex numbers: ordered pairs of complex numbers, with the complex and the real scalar structures |
+| $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ | a duo-complex number, a point, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ |
 | $e_1,e_2$ | the standard complex basis, $e_1=(1,0)$, $e_2=(0,1)$ |
 | $e_1,ie_1,e_2,ie_2$ | the standard real basis |
 | $J$ | the complex structure, $JQ=iQ$, $J^2=-I$ |
@@ -244,12 +244,12 @@ The notation is distinguished four ways: $\mathbb{C}^2$ is the pair space, contr
 ## Further Reading
 
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the glyphs, the case rule of the elements and the typographic conventions of the corpus.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), below in this category, for the real reading of the space, the linear and conjugate-linear maps and the dictionary.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), below in this category, for the Gram matrices, the isotropy and the relations among $H$, $B$ and $\omega$.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), below in this category, for the lines, the hyperplanes, the isotropic lines and the Lagrangian planes.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), below in this category, for the matrix algebra $M_2(\mathbb{C})$ and the conjugate-linear maps.
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), below in this category, for the topology of the space, the sphere $S^3$ and the group $\mathrm{GL}_2(\mathbb{C})$.
-- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-complex-two-space.html), below in this category, for the one-point compactification $S^4$ and the projective compactification $\mathbb{CP}^2$.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), below in this category, for the real reading of the space, the linear and conjugate-linear maps and the dictionary.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), below in this category, for the Gram matrices, the isotropy and the relations among $H$, $B$ and $\omega$.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), below in this category, for the lines, the hyperplanes, the isotropic lines and the Lagrangian planes.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-duo-complex-numbers.html), below in this category, for the matrix algebra $M_2(\mathbb{C})$ and the conjugate-linear maps.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), below in this category, for the topology of the space, the sphere $S^3$ and the group $\mathrm{GL}_2(\mathbb{C})$.
+- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-duo-complex-numbers.html), below in this category, for the one-point compactification $S^4$ and the projective compactification $\mathbb{CP}^2$.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), below in this category, for the Hopf bundle $S^1\to S^3\to S^2$.
 - [Several Complex Variables](several-complex-variables.html), for the general theory of holomorphic functions of several variables, of which this category treats the case of two variables.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ whose simple module is this space.

@@ -275,11 +275,11 @@ The Radon transform integrates over the affine hyperplanes of $\mathbb{R}^4$; th
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space, the realification and the Hermitian form.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the identification with $\mathbb{R}^4$ and the complex structure $J$.
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), for the group structure and the sphere $S^3$.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space, the realification and the Hermitian form.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the identification with $\mathbb{R}^4$ and the complex structure $J$.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), for the group structure and the sphere $S^3$.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), for the Hopf fibration and the action of $S^1$ on $S^3$.
-- [Analysis on $\mathbb{C}^2$](analysis-on-the-complex-two-space.html), for the harmonic and pluriharmonic functions and the Laplacian.
+- [Analysis on $\mathbb{C}^2$](analysis-on-the-duo-complex-numbers.html), for the harmonic and pluriharmonic functions and the Laplacian.
 - [The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$](the-dbar-problem-and-the-bochner-martinelli-integral.html), for the complex-line transform and the boundary kernel.
 - [Fourier Analysis on Euclidean Spaces](fourier-analysis-on-euclidean-spaces.html), for the Fourier transform, convolution, the Paley–Wiener theorem and the fundamental solution.
 - [Differential Forms and Stokes' Theorem](differential-forms-and-stokes-theorem.html), for the calculus of forms and the divergence theorem.

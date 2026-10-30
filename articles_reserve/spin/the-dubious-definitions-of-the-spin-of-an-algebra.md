@@ -161,7 +161,7 @@ e_+\mathbb{D}e_-=0,
 $$
 because every product is symmetric. The two idempotents do not make a chain; the length is $1$ and the spin is $0$. The same algebra has the spectral label $\tfrac12$ from $S=(1,-1)$, but no chain of length $2$ and no ladder. The idempotents alone are not a spin.
 
-**The chirality caution.** The $\pm$ of $e_\pm$ is a copy index. It is not the chirality of the biquaternion. The chirality is the nontrivial central involution of the complexification, $\chi=ij$ with $i$ and $j$ the two commuting imaginary units, $\chi^2=1$; it is central and outside the real biquaternion, equivalently the grading $S\oplus S^{\mathrm c}$. A Peirce pair is not that grading.
+**The chirality caution.** The $\pm$ of $e_\pm$ is a copy index. It is not the chirality of the biquaternion. The chirality is the nontrivial central involution of the complexification, $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $i$ and $j$ the two commuting imaginary units, $\chi^2=1$; it is central and outside the real biquaternion, equivalently the grading $S\oplus S^{\mathrm c}$. A Peirce pair is not that grading.
 
 **What it captures.** The corner chain of $M_n$. It sees the matrix units and the nonzero corners. It is blind to division algebras and to commutative algebras.
 
@@ -939,7 +939,7 @@ inside $\mathbb{B}^{\otimes 2j}\cong M_{2^{2j}}(\mathbb{C})$. The constraints of
 
 **4. The half-angle.** The rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on the defining spinor with exponent $\pm i\theta/2$ and on the vector with exponent $\pm i\theta$. The half-angle is the coordinate of the defining representation. It is not the spin.
 
-**5. The Peirce index.** The right action of the root gives $R_{\tilde\Xi}=+1$ on $S_+$ and $-1$ on $S_-$. That sign labels two isomorphic copies of one left module. It is not a spin and not a chirality. Chirality is the central sign $\chi=ij$, which grades $S$ against $S^{\mathrm{c}}$.
+**5. The Peirce index.** The right action of the root gives $R_{\tilde\Xi}=+1$ on $S_+$ and $-1$ on $S_-$. That sign labels two isomorphic copies of one left module. It is not a spin and not a chirality. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, which grades $S$ against $S^{\mathrm{c}}$.
 
 ### The Rule
 
@@ -956,6 +956,6 @@ inside $\mathbb{B}^{\otimes 2j}\cong M_{2^{2j}}(\mathbb{C})$. The constraints of
 - [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html), for the $(j_L,j_R)$ labels and the rotation content.
 - [The Spinor-Helicity Formalism and Biquaternions](../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html), for helicity as the massless little-group label.
 - [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the tensor construction of the higher carriers.
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the central sign $\chi=ij$ and the separation from the Peirce index.
+- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ and the separation from the Peirce index.
 - [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the rotation triple and the weights, now stated as a computation.
 - [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents and the corners.

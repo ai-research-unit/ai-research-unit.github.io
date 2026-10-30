@@ -361,5 +361,5 @@ The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multipl
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the standard coordinate model
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight worked matrices, including the normal example
 - [The Spectrum](the-spectrum.html), for the spectral criterion
-- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 model
+- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 model
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the matrix theorem

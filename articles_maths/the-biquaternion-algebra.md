@@ -159,7 +159,7 @@ which is the bilinearity proposition read as the axiom of an algebra: the first 
 
 ### The Gate: a Central Element of Square $-1$
 
-**The gate, applied here.** A $\mathbb{C}$-algebra structure on a real algebra, whose structure map lands in the centre, is the same thing as a **central element $j$ with $j^2 = -1$**, the scalar action being $(a + ib)\tilde Q = a\tilde Q + bj\tilde Q$. For $\mathbb{B}$ that element is the central imaginary $i$ itself — $j = i$ — and the complex structure it induces on the underlying real space is the real-linear map
+**The gate, applied here.** A $\mathbb{C}$-algebra structure on a real algebra, whose structure map lands in the centre, is the same thing as a **central root of $-1$**, an element $\tilde\Xi$ with $\tilde\Xi^2 = -e_t$ and $\tilde\Xi$ central (§*The Root Convention*), the scalar action being $(a + ib)\tilde Q = a\tilde Q + b\tilde\Xi\tilde Q$. For $\mathbb{B}$ that root is the central imaginary $i$ itself — $\tilde\Xi = i$ — and the complex structure it induces on the underlying real space is the real-linear map
 
 $$
 J : \mathbb{B} \longrightarrow \mathbb{B} , \qquad J(\tilde Q) = i\tilde Q , \qquad J^2 = -\mathrm{id} ,

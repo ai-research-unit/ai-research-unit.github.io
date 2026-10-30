@@ -169,12 +169,12 @@ The holomorphic isometries are the affine maps $Q\mapsto AQ+Q_0$ with $A\in\math
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the Hermitian form.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the identification with $\mathbb{R}^4$ and the complex structure $J$.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), for $H$, $B$ and the holomorphic symplectic form $\omega$, and their signatures.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the complex lines, the Lagrangian planes and the isotropic lines.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the Hermitian form.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the identification with $\mathbb{R}^4$ and the complex structure $J$.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), for $H$, $B$ and the holomorphic symplectic form $\omega$, and their signatures.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the complex lines, the Lagrangian planes and the isotropic lines.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), for the negatively curved model and its Bergman metric.
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form.html), the next article, for the null cone of $B$.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and the other groups of the space.
-- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-complex-two-space.html), for the Fubini–Study comparison.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and the other groups of the space.
+- [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-duo-complex-numbers.html), for the Fubini–Study comparison.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the glyphs and the typographic conventions of the corpus.

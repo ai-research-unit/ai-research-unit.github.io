@@ -560,7 +560,7 @@ The following are candidate articles, not results. None of them is written, and 
 - The choice of frame as a choice of Clifford structure: which gradings the algebra admits, and how they are related.
 - A dictionary, frame by frame, between the explicit gamma matrices of the physics articles and the tensor basis. The corpus has eighteen explicit representations, and they need not use the same $(\beta,\delta)$.
 - Which physical statements are frame-independent, and which are artefacts of a table. The mass bilinear, the axial current and the chiral projectors are the first candidates.
-- The $\gamma_5$ sign and the choice of the second imaginary $\chi=ij$; the two conventions must not be mixed inside one computation.
+- The $\gamma_5$ sign and the choice of the second central root of $-1$, the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$; the two conventions must not be mixed inside one computation.
 - The Peirce image of a general frame, and the spinor-basis change that relates two frames.
 - The Segre length in physics: the equations are known, since the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.

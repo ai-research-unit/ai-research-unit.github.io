@@ -90,7 +90,7 @@ The maths corpus keeps the following, and none of them defines spin.
 - **$\mathfrak{sl}_2$ representation theory.** Triples, ladder operators, irreducible modules, the Clebsch–Gordan decomposition. The triple is studied as a Lie-algebra object, not as a definition of spin.
 - **Peirce decomposition and spinors.** Idempotents, corners, minimal left ideals, the spinor as a coordinate. A spinor is a coordinate on a carrier; it is not a spin.
 - **Spin groups and Clifford modules.** $\mathrm{Spin}(n)$, $\mathrm{Pin}(n)$, Clifford modules and their representations. These are groups and representations, not the spin quantum number. The word *spin* in their names is historical.
-- **Chirality.** The central sign $\chi=ij$ of the biquaternion complexification, which grades $S$ against $S^{\mathrm{c}}$. It is not a spin and not a Peirce index.
+- **Chirality.** The central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the biquaternion complexification, which grades $S$ against $S^{\mathrm{c}}$. It is not a spin and not a Peirce index.
 
 **The rule.** No article in `articles_maths` states a mathematical definition of spin. When the weight of a grading element is meant, the article writes *highest weight* or *weight*, not *spin*. The word *spin* in the maths corpus is reserved for the names of the spin group and the spinor, which are different objects, and for citations of the physics corpus.
 

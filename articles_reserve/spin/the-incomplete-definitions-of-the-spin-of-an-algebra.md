@@ -136,7 +136,7 @@ e_+\mathbb{D}e_-=0,
 $$
 because every product is symmetric. The two idempotents do not make a chain; the length is $1$ and the spin is $0$. The same algebra has the spectral label $\tfrac12$ from $S=(1,-1)$, but no chain of length $2$ and no ladder. The idempotents alone are not a spin.
 
-**The chirality caution.** The $\pm$ of $e_\pm$ is a copy index. It is not the chirality of the biquaternion. The chirality is the nontrivial central involution of the complexification, $\chi=ij$ with $i$ and $j$ the two commuting imaginary units, $\chi^2=1$; it is central and outside the real biquaternion, equivalently the grading $S\oplus S^{\mathrm c}$. A Peirce pair is not that grading.
+**The chirality caution.** The $\pm$ of $e_\pm$ is a copy index. It is not the chirality of the biquaternion. The chirality is the nontrivial central involution of the complexification, $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $i$ and $j$ the two commuting imaginary units, $\chi^2=1$; it is central and outside the real biquaternion, equivalently the grading $S\oplus S^{\mathrm c}$. A Peirce pair is not that grading.
 
 **What it captures.** The corner chain of $M_n$. It sees the matrix units and the nonzero corners. It is blind to division algebras and to commutative algebras.
 

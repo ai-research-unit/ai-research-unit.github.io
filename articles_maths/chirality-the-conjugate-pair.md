@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Chirality is the grading of the conjugate pair, not the sign of the Peirce decomposition.** The Peirce sign is an inner involution of the regular module; its two eigenspaces are minimal left ideals and both are isomorphic to the simple module $S$. The chiral sign is the nontrivial central involution of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$; its two eigenspaces are $S$ and its conjugate $S^{\mathrm{c}}$, which are not isomorphic. The article proves the no-go statements that separate the notions, constructs the chiral grading, identifies it with the central idempotents $\tfrac12(1\pm ij)$, and shows that the mass is the off-diagonal invariant pairing between the two halves, not an algebra element and not a Peirce nilpotent. A section separates the one definition of spin from the three labels that sit beside it: the Peirce index, the chirality and the adjoint carrier. No Clifford algebra is used.
+**Chirality is the grading of the conjugate pair, not the sign of the Peirce decomposition.** The Peirce sign is an inner involution of the regular module; its two eigenspaces are minimal left ideals and both are isomorphic to the simple module $S$. The chiral sign is the nontrivial central involution of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$; its two eigenspaces are $S$ and its conjugate $S^{\mathrm{c}}$, which are not isomorphic. The article proves the no-go statements that separate the notions, constructs the chiral grading, identifies it with the central idempotents $\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}})$, and shows that the mass is the off-diagonal invariant pairing between the two halves, not an algebra element and not a Peirce nilpotent. A section separates the one definition of spin from the three labels that sit beside it: the Peirce index, the chirality and the adjoint carrier. No Clifford algebra is used.
 
 The Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the simple module and its endomorphisms are *The Category of Modules*; the conjugate module is *Conjugate-Linear Maps and the Conjugate Dual*; the matrix model and its $\epsilon$ are *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*; the invariant form of the spinor module is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. The physical interpretation is *Biquaternion Physical Interpretation of Chirality*.
 
@@ -107,30 +107,30 @@ The theorem is the module-level content of the complex type. It is also the reas
 
 ## Chirality: The Central Sign of the Complexification
 
-**Theorem (the complexification).** Let $j$ be a new central imaginary unit, $j^2=-1$, commuting with $i$. Then
+**Theorem (the complexification).** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$, written $\tilde\Xi_{\mathrm{ad}}$ with the role subscript of §*The Root Convention* of *Conventions in the Biquaternion Universe*: $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. Then
 
 $$
-\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}
 $$
 
 as real algebras, and the central idempotents are
 
 $$
-e_+=\tfrac12(1+ij),\qquad e_-=\tfrac12(1-ij),\qquad
+e_+=\tfrac12(1+i\tilde\Xi_{\mathrm{ad}}),\qquad e_-=\tfrac12(1-i\tilde\Xi_{\mathrm{ad}}),\qquad
 e_++e_-=e_t,\qquad e_+e_-=0.
 $$
 
-*Proof.* The map $a+bj\mapsto(a+ib,\,a-ib)$ is an isomorphism of real algebras onto $\mathbb{B}\oplus\mathbb{B}$, with inverse $(A,B)\mapsto\tfrac12(A+B)+\tfrac{1}{2i}(A-B)j$. The images of $e_\pm$ are $(0,e_t)$ and $(e_t,0)$ in one order, so $e_\pm$ are the central idempotents.
+*Proof.* The map $a+b\tilde\Xi_{\mathrm{ad}}\mapsto(a+ib,\,a-ib)$ is an isomorphism of real algebras onto $\mathbb{B}\oplus\mathbb{B}$, with inverse $(A,B)\mapsto\tfrac12(A+B)+\tfrac{1}{2i}(A-B)\tilde\Xi_{\mathrm{ad}}$. The images of $e_\pm$ are $(0,e_t)$ and $(e_t,0)$ in one order, so $e_\pm$ are the central idempotents.
 
 **Definition.** The **chirality** is
 
 $$
-\chi=ij=e_+-e_-.
+\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-.
 $$
 
 **Proposition.** $\chi^2=e_t$, $\chi$ is central, and $\chi\notin\mathbb{B}_{\mathbb{R}}$.
 
-*Proof.* $i$ and $j$ commute, $i^2=j^2=-1$, so $(ij)^2=1$. Centrality is inherited from $i$ and $j$. If $\chi\in\mathbb{B}_{\mathbb{R}}$, then $j=\chi/i\in\mathbb{B}_{\mathbb{R}}$ because $i^{-1}\in\mathbb{B}_{\mathbb{R}}$ and $\mathbb{B}_{\mathbb{R}}$ is a subalgebra. But $j\notin\mathbb{B}_{\mathbb{R}}$: every element of $\mathbb{B}_{\mathbb{R}}=1\otimes\mathbb{B}_{\mathbb{R}}$ has first tensor factor $1$, while $j=i_{\mathrm{new}}\otimes1$ has first factor $i_{\mathrm{new}}$.
+*Proof.* $i$ and $\tilde\Xi_{\mathrm{ad}}$ commute, $i^2=\tilde\Xi_{\mathrm{ad}}^2=-1$, so $(i\tilde\Xi_{\mathrm{ad}})^2=1$. Centrality is inherited from $i$ and $\tilde\Xi_{\mathrm{ad}}$. If $\chi\in\mathbb{B}_{\mathbb{R}}$, then $\tilde\Xi_{\mathrm{ad}}=\chi/i\in\mathbb{B}_{\mathbb{R}}$ because $i^{-1}\in\mathbb{B}_{\mathbb{R}}$ and $\mathbb{B}_{\mathbb{R}}$ is a subalgebra. But $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}_{\mathbb{R}}$: every element of $\mathbb{B}_{\mathbb{R}}=1\otimes\mathbb{B}_{\mathbb{R}}$ has first tensor factor $1$, while $\tilde\Xi_{\mathrm{ad}}=i_{\mathrm{new}}\otimes1$ has first factor $i_{\mathrm{new}}$.
 
 **The Dirac module.** Let
 
@@ -150,16 +150,16 @@ $$
 \rho(a)=\operatorname{diag}\bigl(\mathsf{M}_2(a),\ \epsilon\,\overline{\mathsf{M}_2(a)}\,\epsilon^{-1}\bigr),
 $$
 
-and the nontrivial extension to $\mathbb{B}[j]$ is $\rho(j)=iI_4$ (the other choice, $\rho(j)=\operatorname{diag}(iI_2,-iI_2)$, gives the trivial grading). Then
+and the nontrivial extension to the double is $\rho(\tilde\Xi_{\mathrm{ad}})=iI_4$ (the other choice, $\rho(\tilde\Xi_{\mathrm{ad}})=\operatorname{diag}(iI_2,-iI_2)$, gives the trivial grading). Then
 
 $$
 \rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad
-\rho(\chi)=\rho(i)\rho(j)=\operatorname{diag}(-I_2,I_2).
+\rho(\chi)=\rho(i)\rho(\tilde\Xi_{\mathrm{ad}})=\operatorname{diag}(-I_2,I_2).
 $$
 
-*Proof.* The first display is the definition of the $\epsilon$-dressed conjugate action: on $S$ the element $i$ acts as $iI$, and on $S^{\mathrm{c}}$ it acts as $\epsilon\overline{iI}\epsilon^{-1}=-iI$. The second is the product with the scalar $iI_4$ that represents $j$.
+*Proof.* The first display is the definition of the $\epsilon$-dressed conjugate action: on $S$ the element $i$ acts as $iI$, and on $S^{\mathrm{c}}$ it acts as $\epsilon\overline{iI}\epsilon^{-1}=-iI$. The second is the product with the scalar $iI_4$ that represents $\tilde\Xi_{\mathrm{ad}}$.
 
-*Remark (the dictionary sign).* The representative $\rho(j)=iI_4$ is what makes $\rho(\chi)=+\gamma_5$. The $\mathbb{C}$-linear extension of the algebra dictionary $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ must then carry $\mathsf{M}_4(j)=-i_{\mathrm{Cl}}$, since $\mathsf{M}_4(i)=-\omega$ and $\mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(j)$ is to equal $+\gamma_5$. The other extension, $\mathsf{M}_4(j)=+i_{\mathrm{Cl}}$, sends $\chi$ to $-\gamma_5$ and exchanges $e_+$ and $e_-$, that is, the labels left and right. The exchange is a relabelling of the two summands and not a complex conjugation of the spinor: it leaves $\bar\Psi\Psi$ invariant and reverses $\bar\Psi\gamma_5\Psi$. The two signs must not be mixed in one computation. The dictionary is [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html).
+*Remark (the dictionary sign).* The representative $\rho(\tilde\Xi_{\mathrm{ad}})=iI_4$ is what makes $\rho(\chi)=+\gamma_5$. The $\mathbb{C}$-linear extension of the algebra dictionary $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ must then carry $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=-i_{\mathrm{Cl}}$, since $\mathsf{M}_4(i)=-\omega$ and $\mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})$ is to equal $+\gamma_5$. The other extension, $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=+i_{\mathrm{Cl}}$, sends $\chi$ to $-\gamma_5$ and exchanges $e_+$ and $e_-$, that is, the labels left and right. The exchange is a relabelling of the two summands and not a complex conjugation of the spinor: it leaves $\bar\Psi\Psi$ invariant and reverses $\bar\Psi\gamma_5\Psi$. The two signs must not be mixed in one computation. The dictionary is [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html).
 
 **Theorem (the chiral projectors).** The operators
 
@@ -182,7 +182,7 @@ $$
 
 **Theorem (chirality is not a biquaternion).** No element of $\mathbb{B}_{\mathbb{R}}$ acts as $\chi$ on $\Delta$. In the matrix model, an element $a$ acts as $\operatorname{diag}(A,\epsilon\bar A\epsilon^{-1})$ with $A=\mathsf{M}_2(a)$, and $\operatorname{diag}(A,\epsilon\bar A\epsilon^{-1})=\operatorname{diag}(-I,I)$ would require $A=-I$ and $\epsilon\bar A\epsilon^{-1}=I$, hence $\bar A=I$, which contradicts $A=-I$.
 
-**Remark (the two signs).** The Peirce sign $P=R_{i\vec e_z}$ is inner, implemented by the element $i\vec e_z\in\mathbb{B}$, and grades $S_+\cong S_-$; the chiral sign $\chi=ij$ is not in $\mathbb{B}$ and grades $S\not\cong S^{\mathrm{c}}$. The first is inner and non-central; the second is central and outside the algebra. The two signs are different objects, and only the second is chirality.
+**Remark (the two signs).** The Peirce sign $P=R_{i\vec e_z}$ is inner, implemented by the element $i\vec e_z\in\mathbb{B}$, and grades $S_+\cong S_-$; the chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is not in $\mathbb{B}$ and grades $S\not\cong S^{\mathrm{c}}$. The first is inner and non-central; the second is central and outside the algebra. The two signs are different objects, and only the second is chirality.
 
 ## The Mass Is the Off-Diagonal Pairing
 
@@ -236,7 +236,7 @@ The proposition is the precise reason the mass is a pairing and not an operator 
 
 **The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. It is a **copy label**, not a weight and not a chirality. It says which of two isomorphic copies a vector lies in.
 
-**The chirality.** The central sign $\chi=ij$ grades $S$ against $S^{\mathrm{c}}$. It is a **sign**, not a magnitude and not a weight. It says which of two inequivalent halves a field lies in. A field can carry both a weight and a chiral sign; the two are independent labels.
+**The chirality.** The central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ grades $S$ against $S^{\mathrm{c}}$. It is a **sign**, not a magnitude and not a weight. It says which of two inequivalent halves a field lies in. A field can carry both a weight and a chiral sign; the two are independent labels.
 
 **The adjoint carrier.** In *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, the integer carriers are the adjoint action of the rotation algebra on the material sector $\mathbb{M}_-$ and its symmetric traceless tensors. The carrier is not a definition: its highest weight is $2$ on $V$, so the half-weight is $1$, read with the operator $h/2$. It supplies the integer multiplets, not the chiral halves.
 
@@ -245,26 +245,26 @@ The proposition is the precise reason the mass is a pairing and not an operator 
 | weight | $\lambda_{\max}(\rho(h))$ | a carrier $W$ | the top weight |
 | half-weight | $\lambda_{\max}(\rho(h))/2$ | a carrier $W$ | the label $j$ |
 | Peirce index | $P=R_{i\vec e_z}$ | $S_+\oplus S_-$ | the copy |
-| chirality | $\chi=ij$ | $S\oplus S^{\mathrm{c}}$ | the chiral half |
+| chirality | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | $S\oplus S^{\mathrm{c}}$ | the chiral half |
 | adjoint carrier | $\rho=\operatorname{ad}$, operator $h/2$ | $\mathbb{M}_-$, symmetric traceless tensors | the integer multiplet |
 
 **The weights and the three labels answer different questions.** The root supplies the weights; the Peirce decomposition supplies the copies; the complexification supplies the chiral sign; the adjoint action supplies a carrier on which the same weight computation gives the integer labels. No row is a definition of spin.
 
 ## Summary
 
-Chirality is the central sign of the complexification, not the inner sign of the Peirce decomposition. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades the two minimal left ideals $S_+\cong S_-\cong S$. The chiral sign $\chi=ij$ is the nontrivial central involution of
+Chirality is the central sign of the complexification, not the inner sign of the Peirce decomposition. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades the two minimal left ideals $S_+\cong S_-\cong S$. The chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the nontrivial central involution of
 
 $$
-\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}\quad\text{(as real algebras)},
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}\quad\text{(as real algebras)},
 \qquad
-e_\pm=\tfrac12(1\pm ij),
+e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}}),
 $$
 
 and it grades the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ into two non-isomorphic halves. The two halves are real-isomorphic and complex-inequivalent: $S\not\cong S^{\mathrm{c}}$ as complex $\mathbb{B}_{\mathbb{R}}$-modules, while the identity is a real isomorphism. The mass is the unique $SL_2(\mathbb{C})$-invariant sesquilinear pairing $S\times S^{\mathrm{c}}\to\mathbb{C}$, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator, and it is not the Peirce nilpotent.
 
 $$
 \boxed{\;
-\chi=ij,\quad \chi^2=e_t,\quad \chi\notin\mathbb{B},\quad
+\chi=i\tilde\Xi_{\mathrm{ad}},\quad \chi^2=e_t,\quad \chi\notin\mathbb{B},\quad
 \Delta=S\oplus S^{\mathrm{c}},\quad \chi=\operatorname{diag}(-I_2,I_2),\quad
 P=R_{i\vec e_z}\in\mathbb{B},\quad S_+\cong S_-\cong S.
 \;}
@@ -273,7 +273,7 @@ $$
 | Sign | Operator | Type | Eigenspaces | Carrier |
 | --- | --- | --- | --- | --- |
 | Peirce index | $P=R_{i\vec e_z}$ | inner, non-central | $S_+$, $S_-$ | $S_+\oplus S_-$ |
-| Chirality | $\chi=ij$ | central, outside $\mathbb{B}$ | $S$, $S^{\mathrm{c}}$ | $\Delta$ |
+| Chirality | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | central, outside $\mathbb{B}$ | $S$, $S^{\mathrm{c}}$ | $\Delta$ |
 | Sector | ${}^{*}$ | antilinear involution | $\mathbb{M}_+$, $\mathbb{M}_-$ | $\mathbb{B}_{\mathbb{R}}$ |
 | Root | $H=i\vec e_z$ | root of $+1$ in $\mathbb{B}$ | $S_+$, $S_-$ | $S_+\oplus S_-$ |
 
@@ -291,10 +291,10 @@ The first and the fourth rows are the same decomposition read as a right multipl
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the Peirce carriers, both $\cong S$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | the off-diagonal nilpotents |
 | $P=R_{i\vec e_z}$ | the Peirce sign, a copy index |
-| $j$ | a new central imaginary unit, $j^2=-1$ |
-| $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | the one-step complexification |
-| $e_\pm=\tfrac12(1\pm ij)$ | the central idempotents |
-| $\chi=ij=e_+-e_-$ | the chirality |
+| $\tilde\Xi_{\mathrm{ad}}$ | the adjoined central root of $-1$ of the double, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ |
+| $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | the one-step complexification, the double |
+| $e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}})$ | the central idempotents |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$ | the chirality |
 | $\Delta=S\oplus S^{\mathrm{c}}$ | the Dirac module |
 | $P_L=\tfrac12(1-\chi)$, $P_R=\tfrac12(1+\chi)$ | the chiral projectors |
 | $\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | the invariant form of the spinor module |

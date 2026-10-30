@@ -12,7 +12,7 @@ $$
 $$
 Both are bounded, convex, contractible and simply connected, both are domains of holomorphy, and both are homogeneous under a large group of biholomorphisms. They are nevertheless not biholomorphic, and the failure is the first structural difference between the analysis of one variable and the analysis of two.
 
-This article treats the two domains, their automorphism groups, the proof that they are not biholomorphic, their boundary geometry, the failure of the Riemann mapping theorem that they exhibit, and the Reinhardt domains to which both belong. The general theory of domains of holomorphy and pseudoconvexity is *Several Complex Variables*; the Cauchy–Riemann equations and the maximum principle are *Analysis on $\mathbb{C}^2$*; the boundary integral is *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*. The notation is that of *Complex Two-Space*, and the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$.
+This article treats the two domains, their automorphism groups, the proof that they are not biholomorphic, their boundary geometry, the failure of the Riemann mapping theorem that they exhibit, and the Reinhardt domains to which both belong. The general theory of domains of holomorphy and pseudoconvexity is *Several Complex Variables*; the Cauchy–Riemann equations and the maximum principle are *Analysis on $\mathbb{C}^2$*; the boundary integral is *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*. The notation is that of *Duo-Complex Numbers*, and the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$.
 
 **The ball and the bicylinder have the same topology and the same dimension, and different complex geometry.** The difference is read in three ways: the automorphism groups have dimensions $8$ and $6$, the boundary of the ball is strongly pseudoconvex everywhere while the boundary of the bicylinder is nowhere strongly pseudoconvex at its smooth points, and the Bergman metric of the ball has constant holomorphic sectional curvature while that of the bicylinder does not. The first is the classical proof of Poincaré, and it is the one given here in full.
 
@@ -282,9 +282,9 @@ The Riemann mapping theorem fails in $\mathbb{C}^2$: the ball and the bicylinder
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space, the norm and the Hermitian form.
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), for the ball, the sphere $S^3$ and simple connectivity.
-- [Analysis on $\mathbb{C}^2$](analysis-on-the-complex-two-space.html), the previous article, for the Cauchy formula on the polydisc and the failure of the Riemann mapping theorem.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space, the norm and the Hermitian form.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), for the ball, the sphere $S^3$ and simple connectivity.
+- [Analysis on $\mathbb{C}^2$](analysis-on-the-duo-complex-numbers.html), the previous article, for the Cauchy formula on the polydisc and the failure of the Riemann mapping theorem.
 - [The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$](the-dbar-problem-and-the-bochner-martinelli-integral.html), for the boundary integral on a general domain.
 - [Several Complex Variables](several-complex-variables.html), for domains of holomorphy, pseudoconvexity, the Levi form and the theorem of Poincaré on the automorphisms of the ball and the polydisc.
 - [Complex Analysis](complex-analysis.html), for the Riemann mapping theorem and the automorphisms of the disc.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The complex two-space carries three canonical forms: the Hermitian form $H$, the complex bilinear symmetric form $B$ and the complex bilinear alternating form $\omega$. They are defined in *Complex Two-Space* and announced there; this article computes them. It gives their Gram matrices, their symmetry and nondegeneracy, their isotropic sets, their real and imaginary parts, the relations among them, and the distinction between $\operatorname{Im}H$ and $\omega$, which is the point at which the three are most often confused.
+The duo-complex numbers carry three canonical forms: the Hermitian form $H$, the complex bilinear symmetric form $B$ and the complex bilinear alternating form $\omega$. They are defined in *Duo-Complex Numbers* and announced there; this article computes them. It gives their Gram matrices, their symmetry and nondegeneracy, their isotropic sets, their real and imaginary parts, the relations among them, and the distinction between $\operatorname{Im}H$ and $\omega$, which is the point at which the three are most often confused.
 
 The article treats the forms on the space alone. The isometry groups are *The Classical Groups of $\mathbb{C}^2$*; the Kähler structure they define is *The Flat Kähler Structure of $\mathbb{C}^2$*; the real signatures are also read in *The Realification of $\mathbb{C}^2$*, and the computations are repeated here only where the complex statement needs them. The general theory of bilinear and sesquilinear forms is *Bilinear Forms* and *The Sesquilinear Structure of the Endomorphism Algebra*; this article does not restate it.
 
@@ -236,11 +236,11 @@ The three are related by $H(Q_1,Q_2)=B(Q_1,\overline{Q}_2)$, by the Lagrange ide
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), the previous article, for the definitions of the forms and the space.
-- [The Realification of $\mathbb{C}^2$](the-realification-of-the-complex-two-space.html), for the real and imaginary parts, the signatures and the dictionary.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the isotropic lines, the Lagrangian lines and the Lagrangian planes.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), the previous article, for the definitions of the forms and the space.
+- [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the real and imaginary parts, the signatures and the dictionary.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), for the isotropic lines, the Lagrangian lines and the Lagrangian planes.
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form.html), for the cone as a real object and its image in $\mathbb{CP}^1$.
-- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), for the metric, the Kähler form and the isometries.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for the groups that preserve each form.
+- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-duo-complex-numbers.html), for the metric, the Kähler form and the isometries.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for the groups that preserve each form.
 - [Bilinear Forms](bilinear-forms.html), for the general theory of symmetric and alternating forms.
 - [The Sesquilinear Structure of the Endomorphism Algebra](the-sesquilinear-structure-of-the-endomorphism-algebra.html), for the general theory of Hermitian forms.

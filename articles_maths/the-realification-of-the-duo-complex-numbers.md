@@ -4,7 +4,7 @@
 
 The realification of $\mathbb{C}^2$ is the real vector space $\mathbb{C}^2_{\mathbb{R}}$ obtained by forgetting the multiplication by $i$ and keeping only the multiplication by real scalars. As a set and as an abelian group it is the same space; as a vector space it is $\mathbb{R}^4$. This article reads the complex space through its realification: it fixes the real basis and the real coordinates, states what the complex structure adds, separates the complex-linear from the conjugate-linear maps, and computes the real picture of the three canonical forms. It closes with the dictionary between the complex statements and the real ones.
 
-The article is the bridge between the space of the previous article and the real topology, analysis and geometry that follow. It does not restate the general theory of the change of scalars, which is *The Realification and the Effect of the Change of Scalars on the Complexoid*; it reads that theory on the two-dimensional complex space. The forms are defined in *Complex Two-Space* and computed in *The Three Canonical Forms on $\mathbb{C}^2$*; the topology is *The Topology of $\mathbb{C}^2$*.
+The article is the bridge between the space of the previous article and the real topology, analysis and geometry that follow. It does not restate the general theory of the change of scalars, which is *The Realification and the Effect of the Change of Scalars on the Complexoid*; it reads that theory on the two-dimensional complex space. The forms are defined in *Duo-Complex Numbers* and computed in *The Three Canonical Forms on $\mathbb{C}^2$*; the topology is *The Topology of $\mathbb{C}^2$*.
 
 **The guiding statement is that the realification loses exactly one datum, the operator $J$, and that every complex notion is a real notion plus a condition of compatibility with $J$.** The article makes that statement precise in the four places where it bears: the dimensions, the maps, the forms and the dictionary.
 
@@ -16,13 +16,13 @@ The article is the bridge between the space of the previous article and the real
 $$
 \mathbb{R}\times V\longrightarrow V,\qquad (a,Q)\longmapsto aQ,
 $$
-where the right side is the complex product of $Q$ by the real number $a$. The complex multiplication is forgotten as a structure and remembered as the operator $J$ of *Complex Two-Space*.
+where the right side is the complex product of $Q$ by the real number $a$. The complex multiplication is forgotten as a structure and remembered as the operator $J$ of *Duo-Complex Numbers*.
 
 **Proposition (the dimension doubles).** For every finite-dimensional complex vector space $V$, $\dim_{\mathbb{R}}V_{\mathbb{R}}=2\dim_{\mathbb{C}}V$. In particular $\dim_{\mathbb{R}}\mathbb{C}^2_{\mathbb{R}}=4$.
 
 *Proof.* A complex basis $v_1,\dots,v_n$ gives the real basis $v_1,iv_1,\dots,v_n,iv_n$: it spans, since every complex coefficient splits into its real and imaginary parts, and it is independent over $\mathbb{R}$, since a real relation separates into the real and imaginary parts of a complex relation. Hence the real dimension is $2n$.
 
-The real basis and the real coordinates are those of *Complex Two-Space*:
+The real basis and the real coordinates are those of *Duo-Complex Numbers*:
 $$
 Q=q_{\blacktriangle}e_1+q'_{\blacktriangle}(ie_1)+q_{\blacktriangledown}e_2+q'_{\blacktriangledown}(ie_2),\qquad Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle},\quad Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}.
 $$
@@ -193,10 +193,10 @@ Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), the previous article of this category, for the space, the bases and the complex structure.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), below in this category, for the Gram matrices and the computations of the real and imaginary parts.
-- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), below in this category, for the $J$-invariant and the totally real subspaces.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), below in this category, for the matrix form $T(Q)=AQ+B\overline{Q}$ and the trace and determinant identities.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), the previous article of this category, for the space, the bases and the complex structure.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-duo-complex-numbers.html), below in this category, for the Gram matrices and the computations of the real and imaginary parts.
+- [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-duo-complex-numbers.html), below in this category, for the $J$-invariant and the totally real subspaces.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-duo-complex-numbers.html), below in this category, for the matrix form $T(Q)=AQ+B\overline{Q}$ and the trace and determinant identities.
 - [The Realification and the Effect of the Change of Scalars on the Complexoid](the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.html), for the general theory of the change of scalars read on an algebra rather than on a space.
-- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), for the metric, the Kähler form and the isometries.
+- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-duo-complex-numbers.html), for the metric, the Kähler form and the isometries.
 - [Real Topology](real-topology.html), for the topology of $\mathbb{R}^4$, which is the topology of the realification.

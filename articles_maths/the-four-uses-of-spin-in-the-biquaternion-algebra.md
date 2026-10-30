@@ -17,13 +17,13 @@ The highest-weight question has two module structures, and the values $0,\tfrac1
 | highest weight | the representation | Casimir of a module structure | $0,\ \tfrac12,\ 1$ |
 | adjoint action (traceless part) | the vector carrier | conjugation on the algebra | $1$ |
 | Peirce index | the copy | Peirce decomposition | $+$ or $-$ |
-| chirality | the Lorentz half | central sign in $\mathbb{B}[j]$ | $+$ or $-$ |
+| chirality | the Lorentz half | central sign in the double | $+$ or $-$ |
 
 The first two rows are one notion. The adjoint action carries the two integer cases, $s=0$ on the centre and $s=1$ on the traceless part; the row records the $s=1$ carrier. The last two rows are signs, and neither is a weight.
 
 **The Peirce index.** A complete family $\tilde\Pi_+,\tilde\Pi_-$ cuts the algebra into four lines $\mathbb{B}_{rt}=\tilde\Pi_r\mathbb{B}\tilde\Pi_t$, with $r,t\in\{+,-\}$. The indices $r,t$ are the Peirce indices; they are written $r,t$ here to leave $s$ for the spin. The right index selects the copy: $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$. Both copies carry spin $\tfrac12$. The Peirce index does not distinguish a spin from another spin; it distinguishes two copies of the same spin.
 
-**The chirality.** In the complexification $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$, with $j$ a central imaginary unit, $j^2=-e_t$, commuting with the algebra, the chirality is $\chi=ij$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The letter $j$ in $\mathbb{B}[j]$ is the central imaginary unit, an element of the algebra; the spin is the real number $s$.
+**The chirality.** In the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, with $\tilde\Xi_{\mathrm{ad}}$ its central root of $-1$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, commuting with the algebra, the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The root $\tilde\Xi_{\mathrm{ad}}$ is an element of the double; the spin is the real number $s$.
 
 So the four uses reduce to one definition, one instance and two signs. The rest of the article is the definition and its two structures.
 
@@ -230,7 +230,7 @@ $$
 
 so $P$ is $+1$ on $S_+$ and $-1$ on $S_-$. It is implemented by the element $i\vec e_z$, which is not central: $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value. Right multiplication by the nilpotent $\vec\Upsilon_{+-}$ gives the module isomorphism $S_+\to S_-$, but it is not the grading: $\vec\Upsilon_{+-}^2=0$, so it cannot be an involution.
 
-**Chirality is central, but not a spin.** In $\mathbb{B}[j]$ the chirality $\chi=ij$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.
+**Chirality is central, but not a spin.** In the double the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.
 
 The three signs are therefore distinct: a central sign that marks integer against half-integer, an inner non-central sign that separates two copies of one half-integer carrier, and a central sign in a doubled algebra that separates two Lorentz halves. Only the first tracks the integrality of a spin; none of the three is a spin value.
 
@@ -269,7 +269,7 @@ The closure theorem states that these are all the irreducible subcarriers. There
 | $J_k$ | The rotation generators of a carrier |
 | $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
 | $s$ | The spin, the maximal weight |
-| $\mathbb{B}[j]$ | The complexification by the central imaginary unit $j$, $j^2=-e_t$ |
+| $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | The complexification, the double; its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The standard orthogonal idempotents |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The mixed units; $\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ |
 | $X^*$ | The biquaternion conjugate |

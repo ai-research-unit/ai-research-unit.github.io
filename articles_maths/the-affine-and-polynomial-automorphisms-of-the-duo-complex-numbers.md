@@ -178,10 +178,10 @@ In dimension three the Nagata automorphism is a polynomial automorphism of Jacob
 
 ## Further Reading
 
-- [Complex Two-Space](the-complex-two-space.html), for the space and the linear maps.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), for $GL_2(\mathbb{C})$ and the linear part of the affine group.
-- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for the linear groups.
-- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), for the affine group and the isometries.
+- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the linear maps.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-duo-complex-numbers.html), for $GL_2(\mathbb{C})$ and the linear part of the affine group.
+- [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for the linear groups.
+- [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-duo-complex-numbers.html), for the affine group and the isometries.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), for the biholomorphisms of the model domains.
 - [The Hénon Maps](the-henon-maps.html), the next article, for the degree-two polynomial automorphisms and their dynamics.
 - [Lie Groups](lie-groups.html), for the affine group as a Lie group.
