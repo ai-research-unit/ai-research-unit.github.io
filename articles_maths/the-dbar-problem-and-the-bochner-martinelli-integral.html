@@ -81,7 +81,7 @@ where $g$ is a $(0,1)$-form and $u$ is a function. In one variable the equation 
 <p><strong>On $\mathbb{C}^2$ the complexified exterior algebra splits by bidegree, and the operator $\bar\partial$ raises the second degree by one and squares to zero.</strong></p>
 <p><strong>Definition.</strong> Let $D\subset\mathbb{C}^2$ be open. A <strong>form of type $(p,q)$</strong> on $D$ is a sum of terms
 $$
-f\,dz_{i_1}\wedge\cdots\wedge dz_{i_p}\wedge d\bar z_{j_1}\wedge\cdots\wedge d\bar z_{j_q},\qquad 1\le i_1<\cdots<i_p\le2,\quad 1\le j_1<\cdots<j_q\le2,
+f\,dQ_{I}\wedge d\overline{Q}_{J},\qquad I,J\subseteq\{\blacktriangle,\blacktriangledown\},\quad \lvert I\rvert=p,\ \lvert J\rvert=q,
 $$
 with $f\in C^\infty(D)$. The space of such forms is $\Omega^{p,q}(D)$, and
 $$
@@ -99,8 +99,8 @@ of dimensions $1,2,2,4,1,1,2,2,1$.</p>
 <p><em>Proof.</em> A $(p,q)$-form is determined by the choice of $p$ holomorphic and $q$ anti-holomorphic coordinate differentials among the two of each kind; the choices are independent.</p>
 <p><strong>Definition.</strong> The <strong>Dolbeault operators</strong> are
 $$
-\partial f=\sum_{k=1}^{2}\frac{\partial f}{\partial z_k}\,dz_k,\qquad
-\bar\partial f=\sum_{k=1}^{2}\frac{\partial f}{\partial\bar z_k}\,d\bar z_k,
+\partial f=\frac{\partial f}{\partial Q_{\blacktriangle}}\,dQ_{\blacktriangle}+\frac{\partial f}{\partial Q_{\blacktriangledown}}\,dQ_{\blacktriangledown},\qquad
+\bar\partial f=\frac{\partial f}{\partial\overline{Q}_{\blacktriangle}}\,d\overline{Q}_{\blacktriangle}+\frac{\partial f}{\partial\overline{Q}_{\blacktriangledown}}\,d\overline{Q}_{\blacktriangledown},
 $$
 extended to forms by linearity and the Leibniz rule with the sign $(-1)^{p+q}$ for a form of type $(p,q)$.</p>
 <p><strong>Proposition (the bidegrees).</strong> The operator $\partial$ raises $p$ by one and leaves $q$ fixed; the operator $\bar\partial$ raises $q$ by one and leaves $p$ fixed; and
@@ -108,7 +108,7 @@ $$
 \partial^2=0,\qquad \bar\partial^2=0,\qquad \partial\bar\partial+\bar\partial\partial=0.
 $$</p>
 <p><em>Proof.</em> The bidegree is read on the definition. The squares vanish because the partial derivatives commute and the wedge product of a repeated differential is zero; the last identity is $d^2=0$ for $d=\partial+\bar\partial$, separated by bidegree.</p>
-<p><strong>Remark (the real and the holomorphic reading).</strong> A function is holomorphic exactly when $\bar\partial f=0$, which is the Cauchy–Riemann system of <em>Analysis on $\mathbb{C}^2$</em>. <strong>A $(0,1)$-form is the datum of the $\bar\partial$-problem</strong>, and a $(1,0)$-form is the datum of a holomorphic differential; the two are conjugate, and the real forms are the fixed points of the conjugation that exchanges $dz_k$ and $d\bar z_k$.</p>
+<p><strong>Remark (the real and the holomorphic reading).</strong> A function is holomorphic exactly when $\bar\partial f=0$, which is the Cauchy–Riemann system of <em>Analysis on $\mathbb{C}^2$</em>. <strong>A $(0,1)$-form is the datum of the $\bar\partial$-problem</strong>, and a $(1,0)$-form is the datum of a holomorphic differential; the two are conjugate, and the real forms are the fixed points of the conjugation that exchanges $dQ_{\blacktriangle}$ with $d\overline{Q}_{\blacktriangle}$, and $dQ_{\blacktriangledown}$ with $d\overline{Q}_{\blacktriangledown}$.</p>
 <h2 id="the-dolbeault-complex">The Dolbeault Complex</h2>
 <p><strong>The operator $\bar\partial$ makes the forms of fixed $p$ into a complex, the Dolbeault complex, whose cohomology measures the obstruction to solving $\bar\partial u=g$.</strong></p>
 <p><strong>Definition.</strong> For fixed $p$, the <strong>Dolbeault complex</strong> is
@@ -128,83 +128,83 @@ $$
 the sheaf cohomology of $D$ with coefficients in the sheaf $\Omega^p$ of holomorphic $p$-forms.</p>
 <p><em>Proof.</em> This is the Dolbeault isomorphism, proved by the fine resolution of $\Omega^p$ by the Dolbeault complex and the acyclicity of the sheaves of $C^\infty$ forms (<em>Several Complex Variables</em> and <em>Sheaf Cohomology</em>).</p>
 <p><strong>Remark (the meaning of the vanishing).</strong> The group $H^{0,1}_{\bar\partial}(D)$ vanishes exactly when every $\bar\partial$-closed $(0,1)$-form is $\bar\partial$-exact, that is, exactly when the inhomogeneous Cauchy–Riemann equation is solvable on $D$ for every datum. <strong>The vanishing is a property of the domain and not of the equation</strong>: it holds on the polydisc and on $\mathbb{C}^2$, and it fails on domains with holes in the appropriate sense.</p>
-<h2 id="the-math85-poincare-lemma-on-the-polydisc">The $\bar\partial$-Poincaré Lemma on the Polydisc</h2>
+<h2 id="the-math87-poincare-lemma-on-the-polydisc">The $\bar\partial$-Poincaré Lemma on the Polydisc</h2>
 <p><strong>On a polydisc every $\bar\partial$-closed $(0,1)$-form is exact; the proof solves the equation one variable at a time and uses the integrability condition to remove the second component.</strong></p>
-<p><strong>Theorem (the $\bar\partial$-Poincaré lemma).</strong> Let $\Delta(a,r)\subset\mathbb{C}^2$ be a polydisc and let
+<p><strong>Theorem (the $\bar\partial$-Poincaré lemma).</strong> Let $\Delta(Q_0,r)\subset\mathbb{C}^2$ be a polydisc and let
 $$
-g=g_1\,d\bar z_1+g_2\,d\bar z_2
+g=g_{\blacktriangle}\,d\overline{Q}_{\blacktriangle}+g_{\blacktriangledown}\,d\overline{Q}_{\blacktriangledown}
 $$
 be a $C^\infty$ $(0,1)$-form on $\Delta(a,r)$ with $\bar\partial g=0$. Then there is $u\in C^\infty(\Delta(a,r))$ with $\bar\partial u=g$.</p>
 <p><em>Proof.</em> The integrability condition is
 $$
-\frac{\partial g_2}{\partial\bar z_1}=\frac{\partial g_1}{\partial\bar z_2}.
+\frac{\partial g_{\blacktriangledown}}{\partial\overline{Q}_{\blacktriangle}}=\frac{\partial g_{\blacktriangle}}{\partial\overline{Q}_{\blacktriangledown}}.
 $$
-By the one-variable $\bar\partial$-Poincaré lemma on the disc in the $z_1$ direction, with $z_2$ as a parameter, there is $u_1$ with $\partial u_1/\partial\bar z_1=g_1$; the solution is given by the Cauchy–Green integral and depends smoothly on the parameter. Then
+By the one-variable $\bar\partial$-Poincaré lemma on the disc in the $Q_{\blacktriangle}$ direction, with $Q_{\blacktriangledown}$ as a parameter, there is $u_1$ with $\partial u_1/\partial\overline{Q}_{\blacktriangle}=g_{\blacktriangle}$; the solution is given by the Cauchy–Green integral and depends smoothly on the parameter. Then
 $$
-\bar\partial u_1-g=\Bigl(\frac{\partial u_1}{\partial\bar z_2}-g_2\Bigr)d\bar z_2=h\,d\bar z_2,
+\bar\partial u_1-g=\Bigl(\frac{\partial u_1}{\partial\overline{Q}_{\blacktriangledown}}-g_{\blacktriangledown}\Bigr)d\overline{Q}_{\blacktriangledown}=h\,d\overline{Q}_{\blacktriangledown},
 $$
-and $h$ is holomorphic in $z_1$, because $\bar\partial(h\,d\bar z_2)=0$ and $\bar\partial g=0$ give $\partial h/\partial\bar z_1=0$. The one-variable lemma in the $z_2$ direction, applied with the holomorphic parameter $z_1$, gives $v$ with $\partial v/\partial\bar z_2=h$ and $v$ holomorphic in $z_1$. Then $u=u_1-v$ satisfies $\bar\partial u=g$.</p>
+and $h$ is holomorphic in $Q_{\blacktriangle}$, because $\bar\partial(h\,d\overline{Q}_{\blacktriangledown})=0$ and $\bar\partial g=0$ give $\partial h/\partial\overline{Q}_{\blacktriangle}=0$. The one-variable lemma in the $Q_{\blacktriangledown}$ direction, applied with the holomorphic parameter $Q_{\blacktriangle}$, gives $v$ with $\partial v/\partial\overline{Q}_{\blacktriangledown}=h$ and $v$ holomorphic in $Q_{\blacktriangle}$. Then $u=u_1-v$ satisfies $\bar\partial u=g$.</p>
 <p><strong>Corollary (the general bidegree).</strong> On a polydisc, every $\bar\partial$-closed $(p,q)$-form with $q\ge1$ is $\bar\partial$-exact.</p>
-<p><em>Proof.</em> Write the form as a sum of terms $f\,dz_I\wedge d\bar z_J$ and apply the lemma to the coefficient form of type $(0,q)$ for each multi-index $I$; the operators commute with the holomorphic factor $dz_I$.</p>
+<p><em>Proof.</em> Write the form as a sum of terms $f\,dQ_I\wedge d\overline{Q}_J$ and apply the lemma to the coefficient form of type $(0,q)$ for each multi-index $I$; the operators commute with the holomorphic factor $dQ_I$.</p>
 <p><strong>Remark (the shape of the solution).</strong> The proof is an induction on the number of variables, and it is the same induction that gives the Hartogs phenomenon. <strong>The polydisc is a product of discs, and the $\bar\partial$-problem on a product is solved one factor at a time</strong>; on a domain that is not a product, the induction fails and the solvability becomes a condition on the domain, the condition of pseudoconvexity.</p>
 <h2 id="the-bochnermartinelli-kernel">The Bochner–Martinelli Kernel</h2>
-<p><strong>The Bochner–Martinelli kernel is a $(2,1)$-form on the boundary that plays the role of the Cauchy kernel; it is not holomorphic in the interior variable, and its denominator is the squared distance.</strong></p>
-<p><strong>Definition.</strong> For $z,\zeta\in\mathbb{C}^2$ with $\zeta\neq z$, the <strong>Bochner–Martinelli kernel</strong> is
+<p><strong>The Bochner–Martinelli kernel is a $(2,1)$-form on the boundary that plays the role of the Cauchy kernel; it is not holomorphic in the interior variable, and its denominator is the fourth power of the distance.</strong></p>
+<p><strong>Definition.</strong> For $Q,\zeta\in\mathbb{C}^2$ with $\zeta\neq Q$, the <strong>Bochner–Martinelli kernel</strong> is
 $$
-K_{BM}(z,\zeta)=\frac{1}{(2\pi i)^2}\,
-\frac{(\bar\zeta_1-\bar z_1)\,d\bar\zeta_2-(\bar\zeta_2-\bar z_2)\,d\bar\zeta_1}{\lVert\zeta-z\rVert^4}
-\wedge d\zeta_1\wedge d\zeta_2.
+K_{BM}(Q,\zeta)=\frac{1}{(2\pi i)^2}\,
+\frac{(\bar\zeta_{\blacktriangle}-\bar Q_{\blacktriangle})\,d\bar\zeta_{\blacktriangledown}-(\bar\zeta_{\blacktriangledown}-\bar Q_{\blacktriangledown})\,d\bar\zeta_{\blacktriangle}}{\lVert\zeta-Q\rVert^4}
+\wedge d\zeta_{\blacktriangle}\wedge d\zeta_{\blacktriangledown}.
 $$</p>
-<p><strong>Proposition (the bidegree and the singularity).</strong> The kernel is a form of type $(2,1)$ in $\zeta$, of real degree $3$. Near the diagonal $\zeta=z$ its numerator vanishes to first order and its denominator is of order $\lVert\zeta-z\rVert^4$, so the kernel is of order $\lVert\zeta-z\rVert^{-3}$; the angular factor in the numerator has zero mean, so the boundary integral is defined as a Cauchy principal value.</p>
-<p><em>Proof.</em> The numerator is a $(0,1)$-form and $d\zeta_1\wedge d\zeta_2$ is a $(2,0)$-form, so the type is $(2,1)$. The numerator is a sum of terms linear in $\bar\zeta_j-\bar z_j$, and the denominator is the square of the squared norm; the quotient is of order $\lVert\zeta-z\rVert^{-3}$.</p>
+<p><strong>Proposition (the bidegree and the singularity).</strong> The kernel is a form of type $(2,1)$ in $\zeta$, of real degree $3$. Near the diagonal $\zeta=Q$ its numerator vanishes to first order and its denominator is of order $\lVert\zeta-Q\rVert^4$, so the kernel is of order $\lVert\zeta-Q\rVert^{-3}$; the angular factor in the numerator has zero mean, so the boundary integral is defined as a Cauchy principal value.</p>
+<p><em>Proof.</em> The numerator is a $(0,1)$-form and $d\zeta_{\blacktriangle}\wedge d\zeta_{\blacktriangledown}$ is a $(2,0)$-form, so the type is $(2,1)$. The numerator is a sum of terms linear in $\bar\zeta_{\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\zeta_{\blacktriangledown}-\bar Q_{\blacktriangledown}$, and the denominator is the square of the squared norm; the quotient is of order $\lVert\zeta-Q\rVert^{-3}$.</p>
 <p><strong>Theorem (the one-variable reduction).</strong> For $n=1$ the same formula reduces to the Cauchy kernel,
 $$
 K_{BM}(z,\zeta)=\frac{1}{2\pi i}\,\frac{d\zeta}{\zeta-z}.
 $$</p>
 <p><em>Proof.</em> In one variable the numerator is $(\bar\zeta-\bar z)\,d\zeta$ and the denominator is $\lvert\zeta-z\rvert^2=(\zeta-z)(\bar\zeta-\bar z)$, so the quotient is $d\zeta/(\zeta-z)$ times $1/(2\pi i)$.</p>
-<p><strong>Remark (why the kernel is not holomorphic).</strong> The numerator contains $\bar\zeta_j-\bar z_j$, so the kernel is not holomorphic in $\zeta$. <strong>It cannot be replaced by a kernel holomorphic in $\zeta$ alone</strong>: the boundary of a domain in $\mathbb{C}^2$ has real dimension three, while a holomorphic $2$-form integrates over a real two-dimensional set, so the one-variable contour integral has no direct analogue over the whole boundary. The Bochner–Martinelli kernel is the replacement, and its non-holomorphicity is exactly what allows it to reproduce a function from data on a three-dimensional boundary.</p>
+<p><strong>Remark (why the kernel is not holomorphic).</strong> The numerator contains $\bar\zeta_{\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\zeta_{\blacktriangledown}-\bar Q_{\blacktriangledown}$, so the kernel is not holomorphic in $\zeta$. <strong>It cannot be replaced by a kernel holomorphic in $\zeta$ alone</strong>: the boundary of a domain in $\mathbb{C}^2$ has real dimension three, while a holomorphic $2$-form integrates over a real two-dimensional set, so the one-variable contour integral has no direct analogue over the whole boundary. The Bochner–Martinelli kernel is the replacement, and its non-holomorphicity is exactly what allows it to reproduce a function from data on a three-dimensional boundary.</p>
 <h2 id="the-bochnermartinelli-formula">The Bochner–Martinelli Formula</h2>
 <p><strong>For a $C^1$ function on a bounded domain with smooth boundary, the boundary integral of $f$ against the Bochner–Martinelli kernel reproduces $f$ inside the domain up to the integral of $\bar\partial f$ over the domain.</strong></p>
-<p><strong>Theorem (the Bochner–Martinelli formula).</strong> Let $D\subset\mathbb{C}^2$ be a bounded domain with $C^1$ boundary, oriented as the boundary of $D$, and let $f\in C^1(\overline{D})$. Then for $z\in D$,
+<p><strong>Theorem (the Bochner–Martinelli formula).</strong> Let $D\subset\mathbb{C}^2$ be a bounded domain with $C^1$ boundary, oriented as the boundary of $D$, and let $f\in C^1(\overline{D})$. Then for $Q\in D$,
 $$
-f(z)=\int_{\partial D}f(\zeta)\,K_{BM}(z,\zeta)-\int_{D}\bar\partial f(\zeta)\wedge K_{BM}(z,\zeta),
+f(Q)=\int_{\partial D}f(\zeta)\,K_{BM}(Q,\zeta)-\int_{D}\bar\partial f(\zeta)\wedge K_{BM}(Q,\zeta),
 $$
-and for $z\notin\overline{D}$,
+and for $Q\notin\overline{D}$,
 $$
-0=\int_{\partial D}f(\zeta)\,K_{BM}(z,\zeta)-\int_{D}\bar\partial f(\zeta)\wedge K_{BM}(z,\zeta).
+0=\int_{\partial D}f(\zeta)\,K_{BM}(Q,\zeta)-\int_{D}\bar\partial f(\zeta)\wedge K_{BM}(Q,\zeta).
 $$</p>
-<p><em>Proof.</em> The proof is the application of Stokes' theorem to the form $fK_{BM}$ on $D$ with a small ball around $z$ removed. The kernel is $\bar\partial$-closed in $\zeta$ off the diagonal, so $d(fK_{BM})=\bar\partial f\wedge K_{BM}$ there; the boundary of the small ball contributes $f(z)$ in the limit, by the one-variable reduction and the Bochner–Martinelli computation. The details are in <em>Several Complex Variables</em>.</p>
-<p><strong>Corollary (the Cauchy–Fantappiè formula).</strong> If $f$ is holomorphic on a neighbourhood of $\overline{D}$, then for $z\in D$,
+<p><em>Proof.</em> The proof is the application of Stokes' theorem to the form $fK_{BM}$ on $D$ with a small ball around $Q$ removed. The kernel is closed in $\zeta$ off the diagonal, and the term $\partial f\wedge K_{BM}$ vanishes by type, so $d(fK_{BM})=\bar\partial f\wedge K_{BM}$ there; the boundary of the small ball contributes $f(z)$ in the limit, by the one-variable reduction and the Bochner–Martinelli computation. The details are in <em>Several Complex Variables</em>.</p>
+<p><strong>Corollary (the Cauchy–Fantappiè formula).</strong> If $f$ is holomorphic on a neighbourhood of $\overline{D}$, then for $Q\in D$,
 $$
-f(z)=\int_{\partial D}f(\zeta)\,K_{BM}(z,\zeta).
+f(Q)=\int_{\partial D}f(\zeta)\,K_{BM}(Q,\zeta).
 $$</p>
 <p><em>Proof.</em> The second term vanishes because $\bar\partial f=0$ on $D$.</p>
 <p><strong>Remark (the polydisc against the ball).</strong> For the polydisc, the iterated Cauchy formula of <em>Analysis on $\mathbb{C}^2$</em> integrates over the two-dimensional distinguished boundary $T^2$, while the Bochner–Martinelli formula integrates over the full three-dimensional boundary $\partial\Delta^2$. <strong>Both reproduce a holomorphic function, although the integrals are taken over sets of different dimension.</strong> For the ball there is no distinguished boundary of product form, and the Bochner–Martinelli formula is the only one of the two that applies.</p>
 <h2 id="the-jump-formula">The Jump Formula</h2>
 <p><strong>The boundary integral defines a function on both sides of the boundary, and the two boundary values differ by the value of $f$: this is the jump formula.</strong></p>
-<p><strong>Definition.</strong> For $f\in C^1(\overline{D})$ and $z\notin\partial D$, the <strong>Bochner–Martinelli integral</strong> is
+<p><strong>Definition.</strong> For $f\in C^1(\overline{D})$ and $Q\notin\partial D$, the <strong>Bochner–Martinelli integral</strong> is
 $$
-Sf(z)=\int_{\partial D}f(\zeta)\,K_{BM}(z,\zeta).
+Sf(Q)=\int_{\partial D}f(\zeta)\,K_{BM}(Q,\zeta).
 $$
-For $z_0\in\partial D$, the <strong>principal value</strong> $\mathrm{PV}\,Sf(z_0)$ is the limit of $Sf(z)$ as $z$ tends to $z_0$ through a ball with a small piece of the boundary removed, averaged over the two sides.</p>
-<p><strong>Theorem (the jump formula).</strong> Let $f\in C^1(\overline{D})$ and $z_0\in\partial D$ a smooth boundary point. Then the boundary values from inside and outside exist and satisfy
+For $Q_0\in\partial D$, the <strong>principal value</strong> $\mathrm{PV}\,Sf(Q_0)$ is the limit of $Sf(Q)$ as $Q$ tends to $Q_0$ through a ball with a small piece of the boundary removed, averaged over the two sides.</p>
+<p><strong>Theorem (the jump formula).</strong> Let $f\in C^1(\overline{D})$ and $Q_0\in\partial D$ a smooth boundary point. Then the boundary values from inside and outside exist and satisfy
 $$
-S^{+}f(z_0)=\mathrm{PV}\,Sf(z_0)+\tfrac12 f(z_0),\qquad
-S^{-}f(z_0)=\mathrm{PV}\,Sf(z_0)-\tfrac12 f(z_0),
+S^{+}f(Q_0)=\mathrm{PV}\,Sf(Q_0)+\tfrac12 f(Q_0),\qquad
+S^{-}f(Q_0)=\mathrm{PV}\,Sf(Q_0)-\tfrac12 f(Q_0),
 $$
 so that
 $$
-S^{+}f(z_0)-S^{-}f(z_0)=f(z_0).
+S^{+}f(Q_0)-S^{-}f(Q_0)=f(Q_0).
 $$</p>
-<p><em>Proof.</em> The Bochner–Martinelli formula gives, for $z\in D$,
+<p><em>Proof.</em> The Bochner–Martinelli formula gives, for $Q\in D$,
 $$
-Sf(z)=f(z)+\int_{D}\bar\partial f\wedge K_{BM}(z,\zeta),
+Sf(Q)=f(Q)+\int_{D}\bar\partial f\wedge K_{BM}(Q,\zeta),
 $$
-and for $z\notin\overline{D}$,
+and for $Q\notin\overline{D}$,
 $$
-Sf(z)=\int_{D}\bar\partial f\wedge K_{BM}(z,\zeta).
+Sf(Q)=\int_{D}\bar\partial f\wedge K_{BM}(Q,\zeta).
 $$
-The domain integral is continuous across the boundary, because its kernel is integrable and the singularity lies on the boundary of the domain of integration; hence the two boundary values differ by $f(z_0)$. The principal value is the average of the two.</p>
+The domain integral is continuous across the boundary, because its kernel is integrable and the singularity lies on the boundary of the domain of integration; hence the two boundary values differ by $f(Q_0)$. The principal value is the average of the two.</p>
 <p><strong>Corollary (the holomorphic case).</strong> If $f$ is holomorphic on a neighbourhood of $\overline{D}$, then $Sf=f$ inside $D$ and $Sf=0$ outside $\overline{D}$; the jump across the boundary is $f$.</p>
 <p><em>Proof.</em> The domain integral vanishes, so the two formulas of the theorem reduce to $S^{+}f=f$ and $S^{-}f=0$.</p>
 <p><strong>Remark (the meaning of the jump).</strong> The jump formula is the two-variable form of the Plemelj–Sokhotski formula of one variable. <strong>The boundary integral of a holomorphic function is a holomorphic function inside and zero outside, and the discontinuity across the boundary is the function itself</strong>; the boundary data determine the function, and the jump is the measure of the failure of the boundary values to be the restriction of a holomorphic function.</p>
@@ -217,11 +217,11 @@ The domain integral is continuous across the boundary, because its kernel is int
 $$
 f_0=\begin{cases}(1-\chi)f & \text{on } D\setminus K,\\ 0 & \text{on } K.\end{cases}
 $$
-Then $f_0\in C^\infty_c(D)$, because $1-\chi$ vanishes near $K$ and $\chi$ is compactly supported; and $f_0=f$ near $\partial D$, because $\chi=0$ there. The form $\bar\partial f_0$ is a $\bar\partial$-closed $(0,1)$-form with compact support in $D$. By the lemma, there is $u\in C^\infty_c(\mathbb{C}^2)$ with $\bar\partial u=\bar\partial f_0$. Then $F=f_0-u$ is holomorphic on $D$. Near $\partial D$ the form $\bar\partial f_0$ vanishes, so $u$ is holomorphic there; being compactly supported, $u$ vanishes on the unbounded component of its domain, hence near $\partial D$ by the identity theorem. Therefore $F=f$ near $\partial D$, and by the identity theorem on the connected set $D\setminus K$, $F=f$ there. Hence $F$ is the required extension.</p>
+Then $f_0\in C^\infty(D)$, and $\bar\partial f_0=-\bar\partial\chi\,f$ is a $\bar\partial$-closed $(0,1)$-form with compact support in $D$. By the lemma, there is $u\in C^\infty_c(\mathbb{C}^2)$ with $\bar\partial u=\bar\partial f_0$. Then $F=f_0-u$ is holomorphic on $D$. On $D\setminus K$ one has $F-f=-\chi f-u$; the function $\chi f+u$ is holomorphic on $D\setminus K$, because $\bar\partial(\chi f+u)=\bar\partial\chi\,f+\bar\partial u=0$, and it is compactly supported, so it vanishes identically on the connected set $D\setminus K$. Hence $F=f$ on $D\setminus K$, and $F$ is the required extension.</p>
 <p><strong>Corollary (no isolated singularities).</strong> A function holomorphic on $\mathbb{C}^2\setminus\{0\}$ extends to $\mathbb{C}^2$.</p>
 <p><em>Proof.</em> Take $K=\{0\}$, a compact set whose complement is connected.</p>
 <p><strong>Remark (the role of the kernel).</strong> The Hartogs theorem is usually proved by the Hartogs figure and the iterated Cauchy formula; <strong>the proof by the Bochner–Martinelli kernel is the same theorem read through the $\bar\partial$-equation</strong>. The kernel produces the compactly supported solution, and the solution absorbs the $\bar\partial$-obstruction of the cutoff; what remains is holomorphic and agrees with $f$ near the boundary of the domain.</p>
-<h2 id="the-dolbeault-cohomology-of-math261">The Dolbeault Cohomology of $\mathbb{C}^2$</h2>
+<h2 id="the-dolbeault-cohomology-of-math258">The Dolbeault Cohomology of $\mathbb{C}^2$</h2>
 <p><strong>The space $\mathbb{C}^2$ is Stein, so its Dolbeault cohomology vanishes in every positive anti-holomorphic degree, and the $\bar\partial$-problem is solvable globally for every bidegree.</strong></p>
 <p><strong>Theorem (the vanishing).</strong> For every $p\in\{0,1,2\}$ and every $q\ge1$,
 $$
@@ -234,7 +234,7 @@ In particular every $\bar\partial$-closed $(0,1)$-form on $\mathbb{C}^2$ is $\ba
 <p><strong>Remark (the vanishing is not true on every domain).</strong> The unit ball and the bicylinder are Stein, so the vanishing holds there too; but a domain with a hole in the appropriate sense can have $H^{0,1}\neq0$. <strong>The vanishing is a theorem about the domain, and the Bochner–Martinelli formula is the effective form of the theorem on domains with smooth boundary.</strong> The general criterion is pseudoconvexity, and the general theorem is the solution of the Levi problem (<em>Several Complex Variables</em>).</p>
 <h2 id="summary">Summary</h2>
 <p>A $(p,q)$-form on $\mathbb{C}^2$ is a sum of terms with $p$ holomorphic and $q$ anti-holomorphic differentials, of dimension $\binom{2}{p}\binom{2}{q}$ at a point, and the Dolbeault operator $\bar\partial$ raises $q$ by one and squares to zero. The Dolbeault complex has length two in the anti-holomorphic direction, and its cohomology $H^{p,q}_{\bar\partial}$ is the obstruction to solving $\bar\partial u=g$; by the Dolbeault theorem it is the sheaf cohomology $H^q(D,\Omega^p)$.</p>
-<p>On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-closed $(0,1)$-form is exact, and the proof solves the equation one variable at a time. The solution on a general domain is given by the Bochner–Martinelli kernel, a $(2,1)$-form with denominator $\lVert\zeta-z\rVert^4$ that integrates over the three-dimensional boundary; the Bochner–Martinelli formula reproduces a $C^1$ function inside the domain up to the integral of $\bar\partial f$, and the jump formula states that the boundary integral has boundary values differing by $f$. The compactly supported $\bar\partial$-lemma, applied to a cutoff of a function holomorphic off a compact set, gives the Hartogs extension theorem. The space $\mathbb{C}^2$ is Stein, so $H^{p,q}_{\bar\partial}(\mathbb{C}^2)=0$ for $q\ge1$, and the $\bar\partial$-problem is solvable globally for every datum.</p>
+<p>On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-closed $(0,1)$-form is exact, and the proof solves the equation one variable at a time. The solution on a general domain is given by the Bochner–Martinelli kernel, a $(2,1)$-form with denominator $\lVert\zeta-Q\rVert^4$ that integrates over the three-dimensional boundary; the Bochner–Martinelli formula reproduces a $C^1$ function inside the domain up to the integral of $\bar\partial f$, and the jump formula states that the boundary integral has boundary values differing by $f$. The compactly supported $\bar\partial$-lemma, applied to a cutoff of a function holomorphic off a compact set, gives the Hartogs extension theorem. The space $\mathbb{C}^2$ is Stein, so $H^{p,q}_{\bar\partial}(\mathbb{C}^2)=0$ for $q\ge1$, and the $\bar\partial$-problem is solvable globally for every datum.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -257,15 +257,15 @@ In particular every $\bar\partial$-closed $(0,1)$-form on $\mathbb{C}^2$ is $\ba
 <td>the Dolbeault cohomology</td>
 </tr>
 <tr>
-<td>$\Delta(a,r)$</td>
-<td>the polydisc of multiradius $r$ about $a$</td>
+<td>$\Delta(Q_0,r)$</td>
+<td>the polydisc of multiradius $r$ about $Q_0$</td>
 </tr>
 <tr>
-<td>$K_{BM}(z,\zeta)$</td>
+<td>$K_{BM}(Q,\zeta)$</td>
 <td>the Bochner–Martinelli kernel, a $(2,1)$-form in $\zeta$</td>
 </tr>
 <tr>
-<td>$Sf(z)$</td>
+<td>$Sf(Q)$</td>
 <td>the Bochner–Martinelli integral of $f$</td>
 </tr>
 <tr>

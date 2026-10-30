@@ -112,16 +112,16 @@ $$</p>
 <p><em>Proof.</em> For $A$ with $d=\det A\neq0$, choose $\lambda$ with $\lambda^2d=1$ and replace $A$ by $\lambda A$; the determinant becomes $1$ and the class in the quotient is unchanged. The kernel of the map is the set of scalars of determinant $1$, that is $\{\pm I\}$, which is exactly the subgroup quotiented out. The dimension is $8-2=6$.</p>
 <p><strong>Proposition (the action on the projective line).</strong> The group $\mathrm{PGL}_2(\mathbb{C})$ acts on $\mathbb{CP}^1$ by
 $$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot[z_1:z_2]=[az_1+bz_2:cz_1+dz_2],
+\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot[Q_{\blacktriangle}:Q_{\blacktriangledown}]=[aQ_{\blacktriangle}+bQ_{\blacktriangledown}:cQ_{\blacktriangle}+dQ_{\blacktriangledown}],
 $$
 the action is faithful and sharply $3$-transitive, and the stabiliser of a point has real dimension $4$.</p>
 <p><em>Proof.</em> The formula is well defined because the scalar matrices act trivially, and it is an action because the product of matrices corresponds to the composition. The kernel is the scalars, so the action is faithful. Three distinct points are sent to three distinct points by a unique element: in the chart $[t:1]$ the condition is the interpolation of a Möbius map at three points, which has a unique solution with $ad-bc\neq0$. The orbit of a point is $\mathbb{CP}^1$ of real dimension $2$, so the stabiliser has dimension $6-2=4$.</p>
 <p><strong>Remark (two actions, two quotients).</strong> The group $\mathrm{GL}_2(\mathbb{C})$ acts on $\mathbb{C}^2$ and on $\mathbb{CP}^1$; the group $\mathrm{PGL}_2(\mathbb{C})$ acts on $\mathbb{CP}^1$ only, and the scalar matrices are exactly the kernel of the second action. <strong>The two actions are not the same action read twice</strong>: the first is transitive on the nonzero vectors, the second on the lines, and the first does not descend to the projective line without the quotient. The Möbius action is <em>The Projective Line and the Möbius Action</em> in the $M_2(\mathbb{C})$ Model, and the groups as classical groups are <em>The Classical Groups of $\mathbb{C}^2$</em>.</p>
 <h2 id="conjugate-linear-maps">Conjugate-Linear Maps</h2>
 <p><strong>The conjugate-linear endomorphisms form a real vector space of dimension $8$; the product of two of them is complex-linear, and together with the complex-linear maps they fill the real endomorphism algebra.</strong></p>
-<p><strong>Definition.</strong> A map $T:\mathbb{C}^2\to\mathbb{C}^2$ is <strong>conjugate-linear</strong> when it is additive and $T(\lambda z)=\overline{\lambda}T(z)$ for every $\lambda\in\mathbb{C}$. The space is written $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$.</p>
-<p><strong>Proposition (the dimension and the model).</strong> The space $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$ is a complex vector space of complex dimension $4$ and real dimension $8$. Every element is uniquely $A\circ c$, where $A\in\operatorname{End}(V)$ and $c$ is the coefficientwise conjugation $c(z)=\overline{z}$; the map $A\mapsto A\circ c$ is a complex-linear isomorphism of vector spaces.</p>
-<p><em>Proof.</em> The map $c$ is conjugate-linear and invertible, with $c^2=I$. If $T$ is conjugate-linear, then $A=T\circ c^{-1}=T\circ c$ is complex-linear, because $A(\lambda z)=T(\overline{\lambda}\overline{z})=\overline{\overline{\lambda}}T(\overline{z})=\lambda A(z)$; and $T=A\circ c$. The correspondence is bijective and complex-linear in $A$. The dimension is that of $\operatorname{End}(V)$.</p>
+<p><strong>Definition.</strong> A map $T:\mathbb{C}^2\to\mathbb{C}^2$ is <strong>conjugate-linear</strong> when it is additive and $T(\lambda Q)=\overline{\lambda}T(Q)$ for every $\lambda\in\mathbb{C}$. The space is written $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$.</p>
+<p><strong>Proposition (the dimension and the model).</strong> The space $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$ is a complex vector space of complex dimension $4$ and real dimension $8$. Every element is uniquely $A\circ c$, where $A\in\operatorname{End}(V)$ and $c$ is the coefficientwise conjugation $c(Q)=\overline{Q}$; the map $A\mapsto A\circ c$ is a complex-linear isomorphism of vector spaces.</p>
+<p><em>Proof.</em> The map $c$ is conjugate-linear and invertible, with $c^2=I$. If $T$ is conjugate-linear, then $A=T\circ c^{-1}=T\circ c$ is complex-linear, because $A(\lambda Q)=T(\overline{\lambda}\overline{Q})=\overline{\overline{\lambda}}T(\overline{Q})=\lambda A(Q)$; and $T=A\circ c$. The correspondence is bijective and complex-linear in $A$. The dimension is that of $\operatorname{End}(V)$.</p>
 <p><strong>Theorem (the splitting of the real algebra).</strong> The real endomorphism algebra is the direct sum
 $$
 \operatorname{End}_{\mathbb{R}}(V)=\operatorname{End}_{\mathbb{C}}(V)\oplus\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V),
@@ -129,8 +129,8 @@ $$
 of two complex vector spaces of complex dimension $4$, hence of real dimensions $8+8=16$.</p>
 <p><em>Proof.</em> This is the splitting $T=T_++T_-$ of <em>The Realification of $\mathbb{C}^2$</em>, with $T_+=\tfrac12(T-JTJ)$ and $T_-=\tfrac12(T+JTJ)$.</p>
 <p><strong>Proposition (the product rule).</strong> The product of two conjugate-linear maps is complex-linear, the product of a complex-linear and a conjugate-linear map is conjugate-linear in either order, and the product of two complex-linear maps is complex-linear.</p>
-<p><em>Proof.</em> For conjugate-linear $S,T$ and $\lambda\in\mathbb{C}$, $ST(\lambda z)=S(\overline{\lambda}T(z))=\overline{\overline{\lambda}}S(T(z))=\lambda ST(z)$. The other two cases are the same computation with one or with no conjugation.</p>
-<p><strong>Remark (a graded algebra).</strong> The decomposition is a $\mathbb{Z}_2$-grading of the real algebra, with the even part $\operatorname{End}_{\mathbb{C}}(V)$ and the odd part $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$. <strong>The odd part is not a subalgebra; it is a bimodule over the even part</strong>, and its square lies in the even part. In the standard basis every real-linear map is $T(z)=Az+B\overline{z}$ with $A,B\in M_2(\mathbb{C})$, the complex-linear maps are those with $B=0$ and the conjugate-linear ones those with $A=0$; the form is <em>The Realification of $\mathbb{C}^2$</em>.</p>
+<p><em>Proof.</em> For conjugate-linear $S,T$ and $\lambda\in\mathbb{C}$, $ST(\lambda Q)=S(\overline{\lambda}T(Q))=\overline{\overline{\lambda}}S(T(Q))=\lambda ST(Q)$. The other two cases are the same computation with one or with no conjugation.</p>
+<p><strong>Remark (a graded algebra).</strong> The decomposition is a $\mathbb{Z}_2$-grading of the real algebra, with the even part $\operatorname{End}_{\mathbb{C}}(V)$ and the odd part $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$. <strong>The odd part is not a subalgebra; it is a bimodule over the even part</strong>, and its square lies in the even part. In the standard basis every real-linear map is $T(Q)=AQ+B\overline{Q}$ with $A,B\in M_2(\mathbb{C})$, the complex-linear maps are those with $B=0$ and the conjugate-linear ones those with $A=0$; the form is <em>The Realification of $\mathbb{C}^2$</em>.</p>
 <h2 id="the-centraliser-of-math152-and-the-double-centraliser">The Centraliser of $J$ and the Double Centraliser</h2>
 <p><strong>The operators commuting with the complex structure are exactly the complex-linear ones; the operators commuting with all of them are exactly the complex scalars.</strong></p>
 <p><strong>Theorem (the centraliser of $J$).</strong> In $\operatorname{End}_{\mathbb{R}}(V)$,
@@ -139,7 +139,7 @@ $$
 $$
 of real dimension $8$.</p>
 <p><em>Proof.</em> The condition $TJ=JT$ is the condition of complex linearity, by the proposition of <em>The Realification of $\mathbb{C}^2$</em>. The dimension is that of $M_2(\mathbb{C})$ over $\mathbb{R}$.</p>
-<p><strong>Theorem (the double centraliser).</strong> The operators commuting with every complex-linear operator are the maps $z\mapsto\alpha z$ with $\alpha\in\mathbb{C}$, that is
+<p><strong>Theorem (the double centraliser).</strong> The operators commuting with every complex-linear operator are the maps $Q\mapsto\alpha Q$ with $\alpha\in\mathbb{C}$, that is
 $$
 \{T\in\operatorname{End}_{\mathbb{R}}(V):TS=ST\text{ for all }S\in\operatorname{End}_{\mathbb{C}}(V)\}=\{aI+bJ:a,b\in\mathbb{R}\}\cong\mathbb{C},
 $$
@@ -158,7 +158,7 @@ $$
 e_t\mapsto I,\qquad \vec e_x\mapsto\begin{pmatrix}i&0\\0&-i\end{pmatrix},\qquad \vec e_y\mapsto\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad \vec e_z\mapsto\begin{pmatrix}0&i\\i&0\end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> The four matrices are complex-linear and satisfy the quaternion relations: the three vector images square to $-I$, their pairwise products are the images of the corresponding vector units, and they are linearly independent over $\mathbb{C}$. They therefore define a $\mathbb{C}$-algebra homomorphism from $\mathbb{B}$, which is of dimension $4$ over $\mathbb{C}$, into $M_2(\mathbb{C})$, also of dimension $4$; the map is injective because the images are independent, hence bijective.</p>
-<p><strong>Theorem (the simple module).</strong> The space $\mathbb{C}^2$ is a simple left module over $\operatorname{End}_{\mathbb{C}}(\mathbb{C}^2)$ under $T\cdot z=T(z)$; it is the unique simple module up to isomorphism, and the action is faithful.</p>
+<p><strong>Theorem (the simple module).</strong> The space $\mathbb{C}^2$ is a simple left module over $\operatorname{End}_{\mathbb{C}}(\mathbb{C}^2)$ under $T\cdot Q=T(Q)$; it is the unique simple module up to isomorphism, and the action is faithful.</p>
 <p><em>Proof.</em> A submodule is a complex subspace stable under every operator; the only such subspaces are $0$ and the whole space, since the operators $E_{jk}$ move any nonzero vector to any other. Faithfulness is the definition of the endomorphism algebra as a subalgebra of the maps. Uniqueness is the classification of the simple modules over a matrix algebra (<em>The Regular Module in the Biquaternion Algebra</em> and <em>Modules over an Algebra</em>).</p>
 <p><strong>Remark (the choices behind the identification).</strong> The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is not canonical: it depends on the choice of the complex basis of $\mathbb{C}^2$ and on the identification of the quaternion units with the three matrices above. <strong>What is canonical is the algebra of operators and its action on the space</strong>; the matrix model is a coordinate reading, and the conjugations of the biquaternion algebra are read on the matrices by the corresponding conjugations (<em>The Element, the Coordinates and the Conjugations</em> and <em>The Conjugations and the Adjoints</em> in the $M_2(\mathbb{C})$ Model).</p>
 <h2 id="summary">Summary</h2>
@@ -198,7 +198,7 @@ $$</p>
 <td>the conjugate-linear endomorphisms, complex dimension $4$</td>
 </tr>
 <tr>
-<td>$c(z)=\overline{z}$</td>
+<td>$c(Q)=\overline{Q}$</td>
 <td>the coefficientwise conjugation, a conjugate-linear involution</td>
 </tr>
 <tr>
@@ -218,7 +218,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-complex-two-space.html">Complex Two-Space</a>, for the space and the complex structure.</li>
-<li><a href="the-realification-of-the-complex-two-space.html">The Realification of $\mathbb{C}^2$</a>, for the splitting of the real endomorphisms and the matrix form $T(z)=Az+B\overline{z}$.</li>
+<li><a href="the-realification-of-the-complex-two-space.html">The Realification of $\mathbb{C}^2$</a>, for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.</li>
 <li><a href="the-tensor-square-of-the-complex-two-space.html">The Tensor Square of $\mathbb{C}^2$</a>, the next article, for $V\otimes V$ and its relation to the endomorphism algebra.</li>
 <li><a href="the-classical-groups-of-the-complex-two-space.html">The Classical Groups of $\mathbb{C}^2$</a>, for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.</li>
 <li><a href="m2c-model-the-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>, for the matrix computations of the product, the trace and the determinant.</li>

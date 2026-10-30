@@ -74,7 +74,7 @@
 <p>This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the relative commutant and classified by spectral type. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : The Functional Calculus</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The image of $\tilde Q$ is $X=\mathsf{M}_4^{L}(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.</p>
 <p><strong>Boundaries.</strong> The general holomorphic calculus is <em>Holomorphic Functional Calculus</em>; the biquaternion closed form and the logarithm are <em>Biquaternion Elementary Functions</em>; the Lie algebra and the correspondence are <em>Biquaternion Lie Group and Exponential Structure</em>; the algebra classification of square roots is <em>Square Roots of an Element</em>; the roots of $\pm1$ and of $0$ are <em>Idempotents</em> and <em>Nilpotents</em>; the polar decomposition is <em>$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : The Functional Calculus</em>.</p>
-<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, is the Peirce frame reached by the change $S$ of <em>The Product, the Trace and the Determinant</em>: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.</p>
+<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of <em>The Product, the Trace and the Determinant</em>.</p>
 <h2 id="the-functional-calculus">The Functional Calculus</h2>
 <p><strong>Definition.</strong> Let $X\in M_4(\mathbb{C})$ and let $f$ be holomorphic on an open set containing the spectrum of $X$. Let $\gamma$ be a finite union of positively oriented closed contours that encloses the spectrum and lies in the domain of $f$. The <strong>functional calculus</strong> is
 $$
@@ -92,11 +92,11 @@ $$
 The two formulas are the residue theorem read on the spectral types. They show that $f(X)$ depends only on the values of $f$ on the spectrum, and on the derivatives at a repeated eigenvalue.</p>
 <p><strong>The regular identity.</strong> If $X=\mathsf{M}_4^{L}(\tilde Q)$ and $f$ is holomorphic on a neighbourhood of the spectrum of $\tilde Q$, the resolvent identity
 $$
-(z\mathrm I_4-\mathsf{M}_4^{L}(\tilde Q))^{-1}=\mathsf{M}_4\bigl((z e_t-\tilde Q)^{-1}\bigr)
+(z\mathrm I_4-\mathsf{M}_4^{L}(\tilde Q))^{-1}=\mathsf{M}_4^{L}\bigl((z e_t-\tilde Q)^{-1}\bigr)
 $$
 and the contour integral give
 $$
-f\bigl(\mathsf{M}_4^{L}(\tilde Q)\bigr)=\mathsf{M}_4\bigl(f(\tilde Q)\bigr).
+f\bigl(\mathsf{M}_4^{L}(\tilde Q)\bigr)=\mathsf{M}_4^{L}\bigl(f(\tilde Q)\bigr).
 $$
 Every function of a regular matrix in the image therefore lies in the image, and the calculus on the image is the biquaternion calculus read through $\mathsf{M}_4^{L}$.</p>
 <p><strong>Proposition (the calculus is a homomorphism).</strong> For two functions holomorphic on a common neighbourhood of the spectrum,
@@ -156,7 +156,7 @@ $$
 The series converges for every $X$, uniformly on bounded sets, by comparison with $e^{\lVert X\rVert}$. The series is the Cauchy integral of $e^z$ written as a power series at the origin.</p>
 <p><strong>The algebra identity.</strong> Since $\mathsf{M}_4^{L}$ is an algebra homomorphism and the series is an infinite sum of products,
 $$
-\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4\bigl(\exp\tilde Q\bigr),
+\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4^{L}\bigl(\exp\tilde Q\bigr),
 $$
 where the exponential on the right is the biquaternion exponential of <em>Biquaternion Elementary Functions</em>. The identity is the reason every formula below is the image of an algebra formula.</p>
 <p><strong>The basic identities.</strong> The exponential sends $0$ to $\mathrm I_4$, and $\exp X$ is invertible with inverse $\exp(-X)$. The derivative along the exponential line is

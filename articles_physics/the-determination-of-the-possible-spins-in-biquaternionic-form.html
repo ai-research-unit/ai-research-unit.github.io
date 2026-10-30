@@ -75,23 +75,23 @@
 <p>The distribution over two structures is already recorded in <em>Spin and the Three Elementary Carriers</em>: left multiplication sees the spinor twice, and the adjoint action sees the scalar and the vector. This article takes that distribution as its starting point and asks what it means physically. A single action cannot contain all three, because distinct irreducible submodules intersect trivially and $1+2+3=6$ would exceed $\dim_{\mathbb{C}}\mathbb{B}=4$.</p>
 <p>The article fixes what spin is, gives the two lists, interprets each carrier physically, proves that there is no fourth, and then treats the relativistic label, the statistics sign and the classical limit. The carrier table and the particle assignments are developed at length in <em>Spin and the Three Elementary Carriers</em>; the present article owns the physical interpretation and the reason for the list.</p>
 <h2 id="spin-is-the-casimir-label">Spin Is the Casimir Label</h2>
-<p><strong>The label.</strong> Spin is the highest weight $j$ of the rotation action on a carrier, defined by the Casimir:</p>
+<p><strong>The label.</strong> Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:</p>
 <p>$$
-\tilde J^2=\hbar^2j(j+1)\,e_t .
+\tilde J^2=\hbar^2s(s+1)\,e_t .
 $$</p>
-<p>On an irreducible carrier the Casimir is a scalar, so $j$ is one number for the whole carrier. The number of states is $2j+1$.</p>
-<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $J_3=\hbar m$ on the state $|j,m\rangle$. The axis is a measurement setting. At $j=0$ no axis exists, so a direction cannot be the definition of spin.</p>
+<p>On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.</p>
+<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $J_3=\hbar m$ on the state $|s,m\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.</p>
 <p><strong>The classical picture.</strong> A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has</p>
 <p>$$
-\langle\vec J\rangle=\hbar j\,\vec u,\qquad
-\langle\vec J^2\rangle=\hbar^2j(j+1).
+\langle\vec J\rangle=\hbar s\,\vec u,\qquad
+\langle\vec J^2\rangle=\hbar^2s(s+1).
 $$</p>
-<p>The expectation is a vector of length $\hbar j$; the Casimir length is $\hbar\sqrt{j(j+1)}$. The two agree only in the limit $j\gg1$. The vector is a shadow of the representation, not the representation.</p>
+<p>The expectation is a vector of length $\hbar s$; the Casimir length is $\hbar\sqrt{s(s+1)}$. The two agree only in the limit $s\gg1$. The vector is a shadow of the representation, not the representation.</p>
 <p><strong>The boundary.</strong> The direction is a continuous coordinate on the sphere of states. The spin is the discrete label of the carrier, and it does not vary with the direction.</p>
 <h2 id="the-two-structures-and-the-two-lists">The Two Structures and the Two Lists</h2>
 <p>The product of $\mathbb{B}$ induces two actions of the rotation group, and they are of different kinds.</p>
 <p><strong>Left multiplication</strong> is an algebra homomorphism. It makes $\mathbb{B}$ a left module over itself and gives two copies of the defining action on the spinor module. This is the structure of a matter field: the defining representation is the simplest matter multiplet.</p>
-<p><strong>Conjugation</strong> is a group action, whose differential is the Lie bracket. It makes $\mathbb{B}$ a module over the rotation Lie algebra, not over the associative algebra. This is the structure of a gauge field: the gauge field sits in the adjoint representation.</p>
+<p><strong>Conjugation</strong> is a group action, whose differential is the Lie bracket. It makes $\mathbb{B}$ a module over the rotation Lie algebra, not over the associative algebra. This is the structure of a vector field: a vector carries the adjoint representation of the rotation group.</p>
 <p>The two structures give two lists:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -124,12 +124,12 @@ $$</p>
 </tbody>
 </table></div>
 <p>The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorphism class. The three spin values are the union of the two lists.</p>
-<p><strong>Why the union is forced.</strong> Distinct irreducible submodules intersect trivially, so their dimensions add. A carrier of spin $j$ has $2j+1$ states, and a single structure on $\mathbb{B}$ would have to contain $1+2+3=6$ of them, but $\dim_{\mathbb{C}}\mathbb{B}=4$. So the three values are never the constituents of one action. This is arithmetic, and it is the reason the question has no single-list answer.</p>
+<p><strong>Why the union is forced.</strong> Distinct irreducible submodules intersect trivially, so their dimensions add. A carrier of spin $s$ has $2s+1$ states, and a single structure on $\mathbb{B}$ would have to contain $1+2+3=6$ of them, but $\dim_{\mathbb{C}}\mathbb{B}=4$. So the three values are never the constituents of one action. This is arithmetic, and it is the reason the question has no single-list answer.</p>
 <p><strong>Why these two and not another pair.</strong> These are the two actions the product supplies without a choice: left multiplication and conjugation. The right action is the mirror of the left and gives the same list. Other actions require extra data, such as a form or a grading, and are not carried by the product alone.</p>
 <h2 id="the-scalar-spin-zero">The Scalar: Spin Zero</h2>
 <p><strong>The carrier.</strong> The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.</p>
 <p><strong>The generator.</strong> $J_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.</p>
-<p><strong>The physical interpretation.</strong> A scalar field. The Higgs is the observed elementary instance. A real scalar has one degree of freedom at each point in space, and that single state is the carrier.</p>
+<p><strong>The physical interpretation.</strong> A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.</p>
 <p><strong>What the carrier does not carry.</strong> No direction, no polarization, no double-cover sign: a $2\pi$ rotation acts as the identity on $Z$.</p>
 <h2 id="the-spinor-spin-one-half">The Spinor: Spin One Half</h2>
 <p><strong>The carrier.</strong> The Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ has complex dimension two, with basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.</p>
@@ -177,40 +177,40 @@ J_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
 J_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
 J_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
 $$</p>
-<p>which give $C=2\hbar^2$ on all three states. The value is $\hbar^2j(j+1)$ at $j=1$. There are three states.</p>
+<p>which give $C=2\hbar^2$ on all three states. The value is $\hbar^2s(s+1)$ at $s=1$. There are three states.</p>
 <p><strong>The physical interpretation.</strong> A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.</p>
 <p><strong>The massless count and the cone.</strong> The two helicities are the self-dual and the anti-self-dual halves of the field strength, $\vec E+i c\vec B$ and $\vec E-i c\vec B$. The removed state is the longitudinal direction $\vec u_k$, the unit vector along the momentum, which is the helicity-zero eigenvector. The algebra exhibits the third eigenvector; it does not remove it. The removal is a gauge condition, and the gauge-fixing principle is imported.</p>
-<p><strong>Masslessness, the cone and $N=0$.</strong> The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.</p>
+<p><strong>Masslessness, the cone and $N=0$.</strong> The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.</p>
 <h2 id="why-there-is-no-fourth">Why There Is No Fourth</h2>
-<p><strong>The counting.</strong> An irreducible carrier of spin $j$ has $2j+1$ states. The irreducible subcarriers of $\mathbb{B}$ have dimensions $1$, $2$ and $3$. A fourth value would need an irreducible subcarrier of dimension $4$ or more.</p>
-<p><strong>No such carrier exists.</strong> Under the left action the invariant subspaces have dimensions $0$, $2$ and $4$; under conjugation they have dimensions $0$, $1$, $3$ and $4$. The only four-dimensional one is $\mathbb{B}$ itself, and it is reducible in both structures: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation. There is therefore no irreducible carrier above dimension $3$.</p>
-<p><strong>What lies beyond.</strong> Spin $\tfrac32$ would need dimension $4$, and spin $2$ would need dimension $5$. Neither is a subcarrier of $\mathbb{B}$. The graviton is spin $2$ and lives in the symmetric square $V\odot V$, which is not a subspace of $\mathbb{B}$. The higher-spin hadrons are composites, not elementary states.</p>
+<p><strong>The counting.</strong> An irreducible carrier of spin $s$ has $2s+1$ states. The irreducible subcarriers of $\mathbb{B}$ have dimensions $1$, $2$ and $3$. A fourth value would need an irreducible subcarrier of dimension $4$ or more.</p>
+<p><strong>No such carrier exists.</strong> Under the left action the invariant subspaces have dimensions $0$, $2$ and $4$; under conjugation they have dimensions $0$, $1$, $3$ and $4$. The only four-dimensional one is $\mathbb{B}$ itself, and it is reducible in both structures: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation. There is therefore no irreducible subcarrier above dimension $3$.</p>
+<p><strong>What lies beyond.</strong> Spin $\tfrac32$ would need dimension $4$, and spin $2$ would need dimension $5$. Neither is a subcarrier of $\mathbb{B}$. The graviton is spin $2$ and lives in the traceless symmetric square of $V$, the $\mathcal{V}_4$ summand of $V\odot V$, which is not a subspace of $\mathbb{B}$. The higher-spin hadrons are composites, not elementary states.</p>
 <p><strong>What the match says.</strong> The three values are the spins of all observed elementary particles. The match is a match of labels. The algebra does not say which particle carries which label, and it does not derive the particle content of the Standard Model.</p>
 <h2 id="mass-the-little-group-and-helicity">Mass, the Little Group and Helicity</h2>
 <p><strong>The little group.</strong> For a particle of four-momentum $\tilde P$, the little group is the stabiliser</p>
 <p>$$
 G_{\tilde P}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P\tilde U^{*}=\tilde P\}.
 $$</p>
-<p>For a massive particle $\tilde P$ is timelike and $G_{\tilde P}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $j$, and the rest-frame carrier has $2j+1$ states. For a massless particle $\tilde P$ is null and $G_{\tilde P}\cong E(2)$; the finite-dimensional unitary representations are labelled by the helicity, and a massless state has two helicities $\pm j$.</p>
-<p>The passage from $SU(2)$ to $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.</p>
+<p>For a massive particle $\tilde P$ is timelike and $G_{\tilde P}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P$ is null and $G_{\tilde P}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.</p>
+<p>The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.</p>
 <p><strong>The covariant label.</strong> The Pauli–Lubanski vector is</p>
 <p>$$
 W^\mu=\tfrac12\epsilon^{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$</p>
-<p>In the rest frame $W^0=0$ and $\vec W=mc\vec J$, so $\vec W^2=m^2c^2\hbar^2j(j+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=N\hbar^2j(j+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.</p>
-<p><strong>The Lorentz label.</strong> Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is reached through the real structure and is not a module over the algebra. The rotation spin $j$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.</p>
+<p>In the rest frame $W^0=0$ and $\vec W=mc\vec J$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.</p>
+<p><strong>The Lorentz label.</strong> Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is the conjugate module $S^{\mathrm c}$, with a conjugate-linear action; it is not a complex $\mathbb{B}$-module. The rotation spin $s$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.</p>
 <h2 id="spin-and-statistics">Spin and Statistics</h2>
-<p><strong>The sign.</strong> The exchange sign of a spin-$j$ state is $(-1)^{2j}$: integer spin gives $+1$, half-integer spin gives $-1$.</p>
+<p><strong>The sign.</strong> The exchange sign of a spin-$s$ state is $(-1)^{2s}$: integer spin gives $+1$, half-integer spin gives $-1$.</p>
 <p><strong>The algebraic split.</strong> In the algebra the half-integer carrier is the left module $S_\pm$, on which $-e_t$ acts as $-1$. The integer carriers are $Z$ and $V$, on which the conjugation action of $-e_t$ is trivial. The module and the adjoint sector therefore track the two integrality classes.</p>
 <p><strong>The boundary.</strong> The algebraic split matches the two classes, but it does not prove the spin–statistics theorem. The theorem is a statement about quantum fields, locality and positivity, and it is imported from quantum field theory. The algebra respects it; it does not derive it. The spin–statistics article states the theorem and identifies exactly which of its ingredients the algebra supplies.</p>
 <h2 id="the-classical-limit">The Classical Limit</h2>
 <p><strong>The coherent-state action.</strong> The spin path integral is written on the sphere of coherent states. Its kinetic term is the Wess–Zumino term</p>
 <p>$$
-S_{WZ}=i\hbar\oint\langle z|\partial_{t'}|z\rangle\,dt'=-j\hbar\,\Omega,
+S_{WZ}=i\hbar\oint\langle z|\partial_{t'}|z\rangle\,dt'=-s\hbar\,\Omega,
 $$</p>
-<p>where $\Omega$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$j$ coherent state. For $j=\tfrac12$ the value is $-\hbar\Omega/2$, the spinor phase.</p>
-<p><strong>The two quantities.</strong> The direction is the loop on the sphere; the spin is the coefficient of the term. The Berry phase of the spin-$j$ coherent state carries the factor $j$, and the classical Hannay angle does not. The factor is the label; the trajectory is the direction.</p>
-<p><strong>The boundary.</strong> The vector picture is the classical limit. The spin vector $\langle\vec J\rangle=\hbar j\vec u$ is an expectation value, not the definition. The definition is the Casimir label.</p>
+<p>where $\Omega$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\hbar\Omega/2$, the spinor phase.</p>
+<p><strong>The two quantities.</strong> The direction is the loop on the sphere; the spin is the coefficient of the term. The Berry phase of the spin-$s$ coherent state carries the factor $s$, and the classical Hannay angle does not. The factor is the label; the trajectory is the direction.</p>
+<p><strong>The boundary.</strong> The vector picture is the classical limit. The spin vector $\langle\vec J\rangle=\hbar s\vec u$ is an expectation value, not the definition. The definition is the Casimir label.</p>
 <h2 id="what-the-framework-does-not-say">What the Framework Does Not Say</h2>
 <p><strong>No particle content.</strong> The algebra lists the possible labels. It does not say which particle carries which, and it does not derive the spectrum.</p>
 <p><strong>No mass and no dynamics.</strong> The Casimir is kinematical. No mass, no Hamiltonian and no equation of motion follow from it.</p>
@@ -219,9 +219,9 @@ $$</p>
 <p><strong>No derivation of statistics.</strong> The spin–statistics theorem is imported.</p>
 <p><strong>No single structure.</strong> The three values are the union of the left-module list and the adjoint list. Any statement that presents them as the constituents of one action is false, and the arithmetic $1+2+3=6>4$ is the proof.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion framework carries exactly three spins: $0$, $\tfrac12$ and $1$. They are distributed over two module structures. Left multiplication gives the spinor $S_\pm$, of dimension two, with Casimir $\tfrac34\hbar^2$ and spin $\tfrac12$. Conjugation gives the scalar $Z=\mathbb{C}e_t$, of dimension one, with spin $0$, and the vector $V=\ker\operatorname{tr}$, of dimension three, with Casimir $2\hbar^2$ and spin $1$.</p>
+<p>The regular module of the biquaternion algebra contains exactly three irreducible subcarrier spins: $0$, $\tfrac12$ and $1$. They are distributed over two module structures. Left multiplication gives the spinor $S_\pm$, of dimension two, with Casimir $\tfrac34\hbar^2$ and spin $\tfrac12$. Conjugation gives the scalar $Z=\mathbb{C}e_t$, of dimension one, with spin $0$, and the vector $V=\ker\operatorname{tr}$, of dimension three, with Casimir $2\hbar^2$ and spin $1$.</p>
 <p>There is no fourth: the irreducible subcarriers have dimensions $1$, $2$ and $3$, and the only four-dimensional invariant subspace is the whole algebra, which is reducible. The arithmetic $1+2+3=6>4$ shows that the three can never be the constituents of a single action.</p>
-<p>The physical interpretation is the scalar, the spinor and the vector, and the observed elementary particles carry exactly these three spins. The match is a match of labels, not a prediction of the particle content. Spin is the Casimir label of a carrier, not a direction: the direction labels a state, and the spin labels the representation. The relativistic label is the little-group label, $SU(2)$ for a massive particle and $E(2)$ with helicity for a massless one. The spin–statistics theorem is respected by the algebraic split but is not proved by it. Masslessness is not derived: the cone marks $N=0$, and the gauge condition that removes the longitudinal state is imported.</p>
+<p>The physical interpretation is the scalar, the spinor and the vector, and the observed elementary particles carry exactly these three spins. The match is a match of labels, not a prediction of the particle content. Spin is the Casimir label of a carrier, not a direction: the direction labels a state, and the spin labels the representation. The relativistic label is the little-group label, $SU(2)$ for a massive particle and the double cover of $E(2)$ with helicity for a massless one. The spin–statistics theorem is respected by the algebraic split but is not proved by it. Masslessness is not derived: the cone marks $N=0$, and the gauge condition that removes the longitudinal state is imported.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -272,7 +272,7 @@ $$</p>
 <td>The Casimir</td>
 </tr>
 <tr>
-<td>$j$</td>
+<td>$s$</td>
 <td>The spin label</td>
 </tr>
 <tr>

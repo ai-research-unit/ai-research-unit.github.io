@@ -88,8 +88,8 @@ Sp(2,\mathbb{C})&=\{A\in GL_2(\mathbb{C}):A^{T}\Omega A=\Omega\},
 \end{aligned}
 $$
 where $\Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
-<p><strong>Proposition (the defining forms).</strong> The group $U(2)$ is the stabiliser of the Hermitian form $H(z,w)=z_1\overline{w_1}+z_2\overline{w_2}$; the group $O(2,\mathbb{C})$ is the stabiliser of the bilinear form $B(z,w)=z_1w_1+z_2w_2$; the group $Sp(2,\mathbb{C})$ is the stabiliser of the symplectic form $\omega$; and $SL_2(\mathbb{C})$ is the kernel of the determinant.</p>
-<p><em>Proof.</em> The identities $H(Az,Aw)=H(z,w)$, $B(Az,Aw)=B(z,w)$ and $\omega(Az,Aw)=\omega(z,w)$ are exactly the matrix equations $A^*A=I$, $A^TA=I$ and $A^T\Omega A=\Omega$. The determinant is a homomorphism $GL_2(\mathbb{C})\to\mathbb{C}^*$ with kernel $SL_2(\mathbb{C})$.</p>
+<p><strong>Proposition (the defining forms).</strong> The group $U(2)$ is the stabiliser of the Hermitian form $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$; the group $O(2,\mathbb{C})$ is the stabiliser of the bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$; the group $Sp(2,\mathbb{C})$ is the stabiliser of the symplectic form $\omega$; and $SL_2(\mathbb{C})$ is the kernel of the determinant.</p>
+<p><em>Proof.</em> The identities $H(AQ_1,AQ_2)=H(Q_1,Q_2)$, $B(AQ_1,AQ_2)=B(Q_1,Q_2)$ and $\omega(AQ_1,AQ_2)=\omega(Q_1,Q_2)$ are exactly the matrix equations $A^*A=I$, $A^TA=I$ and $A^T\Omega A=\Omega$. The determinant is a homomorphism $GL_2(\mathbb{C})\to\mathbb{C}^*$ with kernel $SL_2(\mathbb{C})$.</p>
 <p><strong>Proposition (the symplectic group is special linear).</strong> In complex dimension two,
 $$
 Sp(2,\mathbb{C})=SL_2(\mathbb{C}).
@@ -205,7 +205,7 @@ U(2)\subset GL_2(\mathbb{C}),\qquad SU(2)\subset SL_2(\mathbb{C}),\qquad SO(2)\s
 $$
 <strong>The compact group is the fixed point set of the Cartan involution</strong> $A\mapsto(A^*)^{-1}$ in the unitary case, and the corresponding involutions in the other cases.</p>
 <h2 id="the-actions-on-math144-and-math145">The Actions on $S^3$ and $\mathbb{CP}^1$</h2>
-<p><strong>The unitary groups act transitively on the sphere and on the projective line; the complex groups act transitively on the projective line and on the sphere, but not by isometries; the orthogonal group preserves the two isotropic points of the projective line.</strong></p>
+<p><strong>The unitary groups act transitively on the sphere and on the projective line; the complex groups act transitively on the projective line, and on the nonzero vectors of $\mathbb{C}^2$, but not by isometries; the orthogonal group preserves the two isotropic points of the projective line.</strong></p>
 <p><strong>Proposition (the action on $S^3$).</strong> The groups $U(2)$ and $SU(2)$ act transitively on $S^3$. The stabiliser of a point in $U(2)$ is a circle $U(1)$, so $S^3=U(2)/U(1)$; the stabiliser in $SU(2)$ is trivial, so $SU(2)\to S^3$ is a diffeomorphism.</p>
 <p><em>Proof.</em> For $v\in S^3$ there is a unitary matrix sending $e_1$ to $v$; the stabiliser of $e_1$ in $U(2)$ is the set of matrices acting on the orthogonal complement by a unit scalar, a circle. In $SU(2)$ the scalar must have determinant one, hence is $1$, so the stabiliser is trivial; the orbit map is bijective, and it is a diffeomorphism because $SU(2)$ is compact.</p>
 <p><strong>Proposition (the action on $\mathbb{CP}^1$).</strong> The groups $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$, $U(2)$ and $SU(2)$ act transitively on $\mathbb{CP}^1$. The kernels are $\mathbb{C}^*$, $\{\pm I\}$, $U(1)$ and $\{\pm I\}$ respectively, so the faithful quotients are $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, $PU(2)\cong SO(3)$ and $PSU(2)\cong SO(3)$.</p>
@@ -214,7 +214,7 @@ $$
 $$
 z\longmapsto\frac{az+b}{cz+d},\qquad ad-bc\neq0.
 $$
-<strong>The group is sharply $3$-transitive</strong>: it sends any three distinct points to any three distinct points, and the stabiliser of a point is the Borel subgroup of upper triangular matrices. The subgroup $PU(2)\cong SO(3)$ is the group of the round metric of $S^2=\mathbb{CP}^1$.</p>
+<strong>The group is sharply $3$-transitive</strong>: any three distinct points are sent to any three distinct points by a unique element, and the stabiliser of a point is the Borel subgroup of upper triangular matrices. The subgroup $PU(2)\cong SO(3)$ is the group of the round metric of $S^2=\mathbb{CP}^1$.</p>
 <p><strong>Remark (the orthogonal group and the isotropic points).</strong> The group $O(2,\mathbb{C})$ preserves the bilinear form $B$, hence preserves the two isotropic points $[\pm i:1]$ of <em>The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</em>. <strong>It acts on $\mathbb{CP}^1$ by permuting the two points and preserving the pair</strong>, so its image in $PGL_2(\mathbb{C})$ is the normaliser of the diagonal torus, of dimension $1$; it does not act transitively.</p>
 <h2 id="the-decompositions">The Decompositions</h2>
 <p><strong>The polar decomposition writes every invertible matrix as a unitary matrix times a positive definite Hermitian matrix, and the Iwasawa decomposition writes it as a unitary matrix times an upper triangular matrix with positive diagonal.</strong></p>
@@ -243,7 +243,7 @@ $$
 U(2)\cap SL_2(\mathbb{C})=U(2)\cap Sp(2,\mathbb{C})=SU(2),\qquad
 U(2)\cap O(2,\mathbb{C})=O(2),
 $$
-with $SU(2)\cong S^3$ as the common compact core. The groups act transitively on $S^3$ and on $\mathbb{CP}^1$ according to their kernels, the projective quotients are $PGL_2\cong PSL_2$ and $PU(2)\cong PSU(2)\cong SO(3)$, and the polar and Iwasawa decompositions exhibit the compact and the solvable directions.</p>
+with $SU(2)\cong S^3$ as the common compact core. The unitary groups act transitively on $S^3$, and the groups listed act transitively on $\mathbb{CP}^1$ according to their kernels; the projective quotients are $PGL_2\cong PSL_2$ and $PU(2)\cong PSU(2)\cong SO(3)$, and the polar and Iwasawa decompositions exhibit the compact and the solvable directions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

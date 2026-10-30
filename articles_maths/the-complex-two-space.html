@@ -72,27 +72,27 @@
 <h2 id="introduction">Introduction</h2>
 <p>The complex two-space is the set of ordered pairs of complex numbers,
 $$
-\mathbb{C}^2=\{(z_1,z_2):z_1,z_2\in\mathbb{C}\},
+\mathbb{C}^2=\{(Q_{\blacktriangle},Q_{\blacktriangledown}):Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
 $$
 with its two scalar structures: the complex one, which makes it a complex vector space of dimension two, and the real one, which makes it a real vector space of dimension four. This article fixes the <strong>space</strong>: the set, the two structures, the bases, the complex structure $J$, the Hermitian form $H$ and the norm, and the three canonical forms $H$, $B$ and $\omega$ announced but not developed. It is the entry point of the category.</p>
 <p>The article states the definitions and the elementary propositions that every later article assumes. It does not prove the properties of the three forms — their Gram matrices, their isotropy and their real pictures are <em>The Three Canonical Forms on $\mathbb{C}^2$</em> — and it does not treat the topology, the analysis or the geometry of the space, which are the articles that follow. The general theory of holomorphic functions of several variables is not restated here; it is <em>Several Complex Variables</em>, and this category reads its two-variable case on the space fixed below.</p>
 <p>One warning is stated at once. <strong>The number that measures the size of $\mathbb{C}^2$ is not a property of the set: it is $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.</strong> The two numbers are both correct, they count different things, and no statement in this category is allowed to leave the field implicit.</p>
-<p>The space is also the natural module of the matrix algebra. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by $Tz$, and $M_2(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the space is therefore the simple module, or the spinor module, of the biquaternion algebra (<em>The Endomorphisms of $\mathbb{C}^2$</em>, and <em>The Biquaternion Algebra</em>). Nothing of that reading is used below: the space is fixed first, and the operators come after.</p>
+<p>The space is also the natural module of the matrix algebra. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by $TQ$, and $M_2(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the space is therefore the simple module, or the spinor module, of the biquaternion algebra (<em>The Endomorphisms of $\mathbb{C}^2$</em>, and <em>The Biquaternion Algebra</em>). Nothing of that reading is used below: the space is fixed first, and the operators come after.</p>
 <h2 id="the-set-and-the-two-scalar-structures">The Set and the Two Scalar Structures</h2>
 <p><strong>The set carries two scalar multiplications, one by the field $\mathbb{C}$ and one by its subfield $\mathbb{R}$, and the two are not interchangeable.</strong></p>
 <p><strong>Definition.</strong> The <strong>complex two-space</strong> is the set $\mathbb{C}^2$ with the addition
 $$
-(z_1,z_2)+(w_1,w_2)=(z_1+w_1,z_2+w_2)
+(Q_{1\blacktriangle},Q_{1\blacktriangledown})+(Q_{2\blacktriangle},Q_{2\blacktriangledown})=(Q_{1\blacktriangle}+Q_{2\blacktriangle},\,Q_{1\blacktriangledown}+Q_{2\blacktriangledown})
 $$
 and the <strong>complex scalar multiplication</strong>
 $$
-\lambda\cdot(z_1,z_2)=(\lambda z_1,\lambda z_2),\qquad \lambda\in\mathbb{C}.
+\lambda\cdot(Q_{\blacktriangle},Q_{\blacktriangledown})=(\lambda Q_{\blacktriangle},\lambda Q_{\blacktriangledown}),\qquad \lambda\in\mathbb{C}.
 $$</p>
 <p>The same formula with $\lambda$ restricted to $\mathbb{R}$ makes $\mathbb{C}^2$ a real vector space. The second structure is the <strong>restriction of scalars</strong> of the first: every complex scalar is a real scalar, and the real multiplication is the complex one read on the subfield $\mathbb{R}\subset\mathbb{C}$.</p>
 <p><strong>Proposition (the two dimensions).</strong> The space $\mathbb{C}^2$ has dimension $2$ over $\mathbb{C}$ and dimension $4$ over $\mathbb{R}$.</p>
-<p><em>Proof.</em> The pair $e_1=(1,0)$, $e_2=(0,1)$ is a complex basis: every $z$ is $z_1e_1+z_2e_2$ with complex coefficients, and the two vectors are independent over $\mathbb{C}$. For the real reading, every complex coefficient $z_k=x_k+iy_k$ splits as $x_k+iy_k$ with real $x_k,y_k$, so
+<p><em>Proof.</em> The pair $e_1=(1,0)$, $e_2=(0,1)$ is a complex basis: every $Q$ is $Q_{\blacktriangle}e_1+Q_{\blacktriangledown}e_2$ with complex coefficients, and the two vectors are independent over $\mathbb{C}$. For the real reading, each complex coordinate splits, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ with real parameters, so
 $$
-z=x_1e_1+y_1(ie_1)+x_2e_2+y_2(ie_2),
+Q=q_{\blacktriangle}e_1+q'_{\blacktriangle}(ie_1)+q_{\blacktriangledown}e_2+q'_{\blacktriangledown}(ie_2),
 $$
 and the four vectors $e_1,ie_1,e_2,ie_2$ are independent over $\mathbb{R}$: a real relation $a_1e_1+b_1ie_1+a_2e_2+b_2ie_2=0$ reads $(a_1+ib_1,a_2+ib_2)=0$, hence $a_1=b_1=a_2=b_2=0$. Hence $4=2\cdot 2$.</p>
 <p>The two structures are collected in one table.</p>
@@ -125,21 +125,21 @@ and the four vectors $e_1,ie_1,e_2,ie_2$ are independent over $\mathbb{R}$: a re
 </table></div>
 <p><strong>Remark (the restriction is not reversible).</strong> Every complex vector space is a real vector space by restriction, but a real vector space of even dimension is not a complex one until a complex structure is chosen. <strong>The passage from the complex reading to the real reading loses information, and the information lost is exactly $J$.</strong> The real space $\mathbb{R}^4$ carries many complex structures, not one (<em>The Realification of $\mathbb{C}^2$</em>).</p>
 <h2 id="the-basis-and-the-coordinates">The Basis and the Coordinates</h2>
-<p><strong>The complex basis has two vectors, the real basis four, and the coordinates of a point are read in the two bases without a prime or a second letter.</strong></p>
+<p><strong>The complex basis has two vectors, the real basis four, and the coordinates of a point carry the same triangle in the two bases.</strong></p>
 <p><strong>Definition.</strong> The <strong>standard complex basis</strong> is $e_1=(1,0)$ and $e_2=(0,1)$. A point is written
 $$
-z=z_1e_1+z_2e_2,\qquad z_k=x_k+iy_k,
+Q=Q_{\blacktriangle}e_1+Q_{\blacktriangledown}e_2,\qquad Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle},\quad Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown},
 $$
-with $x_k,y_k\in\mathbb{R}$. The <strong>standard real basis</strong> is
+with the four parameters real. The <strong>standard real basis</strong> is
 $$
 e_1=(1,0),\qquad ie_1=(i,0),\qquad e_2=(0,1),\qquad ie_2=(0,i),
 $$
 in this order, and the same point is
 $$
-z=x_1e_1+y_1(ie_1)+x_2e_2+y_2(ie_2).
+Q=q_{\blacktriangle}e_1+q'_{\blacktriangle}(ie_1)+q_{\blacktriangledown}e_2+q'_{\blacktriangledown}(ie_2).
 $$</p>
 <p><strong>Remark (the real basis is not a complex basis).</strong> The four real basis vectors are dependent over $\mathbb{C}$, since $ie_1=i\,e_1$ and $ie_2=i\,e_2$. <strong>The real basis has four elements and the complex basis two; the complex basis is a sublist of the real one, but it is a basis only over $\mathbb{C}$, and the real basis is a basis only over $\mathbb{R}$.</strong></p>
-<p>The coordinates are gathered below. The subscript $k$ labels the complex coordinate and takes the values $1,2$; it never labels a real coordinate, and the real coordinates $x_k,y_k$ carry the same $k$ as the complex coordinate they compose.</p>
+<p>The coordinates are gathered below. <strong>The triangles label the two coordinates and the digits label the basis.</strong> The ascending triangle marks the first coordinate and the descending triangle the second; the real and imaginary parts of a coordinate carry its triangle, $q_{\blacktriangle}$ and $q'_{\blacktriangle}$ for the first and $q_{\blacktriangledown}$ and $q'_{\blacktriangledown}$ for the second, and the prime marks the imaginary part.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -150,9 +150,9 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$z$</td>
-<td>$(z_1,z_2)$</td>
-<td>$(x_1,y_1,x_2,y_2)$</td>
+<td>$Q$</td>
+<td>$(Q_{\blacktriangle},Q_{\blacktriangledown})$</td>
+<td>$(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$</td>
 </tr>
 <tr>
 <td>$e_1$</td>
@@ -176,22 +176,22 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="the-complex-structure-math90">The Complex Structure $J$</h2>
+<h2 id="the-complex-structure-math88">The Complex Structure $J$</h2>
 <p><strong>The complex structure is the real operator of multiplication by $i$; it is the single datum that distinguishes the complex reading of $\mathbb{R}^4$ from the real one.</strong></p>
 <p><strong>Definition.</strong> The <strong>complex structure</strong> is the map
 $$
-J:\mathbb{C}^2\longrightarrow\mathbb{C}^2,\qquad J(z_1,z_2)=(iz_1,iz_2).
+J:\mathbb{C}^2\longrightarrow\mathbb{C}^2,\qquad J(Q_{\blacktriangle},Q_{\blacktriangledown})=(iQ_{\blacktriangle},iQ_{\blacktriangledown}).
 $$</p>
-<p>In the real coordinates $(x_1,y_1,x_2,y_2)$ of the standard basis it is
+<p>In the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ of the standard basis it is
 $$
-J(x_1,y_1,x_2,y_2)=(-y_1,x_1,-y_2,x_2),
+J(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})=(-q'_{\blacktriangle},q_{\blacktriangle},-q'_{\blacktriangledown},q_{\blacktriangledown}),
 $$
 with matrix
 $$
 J=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
 $$</p>
 <p><strong>Proposition (the defining identity).</strong> The operator $J$ is real-linear, it satisfies $J^2=-I$, and it is complex-linear.</p>
-<p><em>Proof.</em> The map is real-linear because multiplication by $i$ is real-linear on each coordinate. Applying it twice returns $(i^2z_1,i^2z_2)=(-z_1,-z_2)$. It is complex-linear because $J(\lambda z)=i\lambda z=\lambda(iz)=\lambda J(z)$ for every $\lambda\in\mathbb{C}$.</p>
+<p><em>Proof.</em> The map is real-linear because multiplication by $i$ is real-linear on each coordinate. Applying it twice returns $(i^2Q_{\blacktriangle},i^2Q_{\blacktriangledown})=(-Q_{\blacktriangle},-Q_{\blacktriangledown})$. It is complex-linear because $J(\lambda Q)=i\lambda Q=\lambda(iQ)=\lambda J(Q)$ for every $\lambda\in\mathbb{C}$.</p>
 <p><strong>Theorem (a complex structure is an operator with square $-1$).</strong> Let $W$ be a real vector space and $T:W\to W$ a real-linear map with $T^2=-I$. Then $W$ is a complex vector space under
 $$
 (\alpha+i\beta)\,w=\alpha w+\beta T w,\qquad \alpha,\beta\in\mathbb{R},
@@ -204,41 +204,41 @@ $$
 $$
 using $T^2=-I$ in the second equality, which is the associativity of the action. The converse is the identity $i^2=-1$. The axioms of a complex vector space follow, and the two constructions are inverse because $T$ is multiplication by $i$ in the structure it defines.</p>
 <p><strong>Proposition (the eigenvalues).</strong> As a real operator, $J$ has no eigenvector. As a complex-linear operator on $\mathbb{C}^2$, it is the scalar $i$ and has the single eigenvalue $i$. On the complexification $\mathbb{C}^2\otimes_{\mathbb{R}}\mathbb{C}$ it has the eigenvalues $i$ and $-i$, each with eigenspace of complex dimension $2$.</p>
-<p><em>Proof.</em> A real eigenvector would satisfy $Jz=\lambda z$ with $\lambda\in\mathbb{R}$, hence $-z=J^2z=\lambda^2z$ and $\lambda^2=-1$, which has no real solution. Over $\mathbb{C}$, $J$ is multiplication by $i$ on the whole space, so the eigenvalue is $i$ and the eigenspace is the whole space. The complexification splits as $V\oplus\bar V$, and $J$ acts as $i$ on the first summand and as $-i$ on the second, by the definition of the conjugate structure.</p>
+<p><em>Proof.</em> A real eigenvector would satisfy $JQ=\lambda Q$ with $\lambda\in\mathbb{R}$, hence $-Q=J^2Q=\lambda^2Q$ and $\lambda^2=-1$, which has no real solution. Over $\mathbb{C}$, $J$ is multiplication by $i$ on the whole space, so the eigenvalue is $i$ and the eigenspace is the whole space. The complexification splits as $V\oplus\bar V$, and $J$ acts as $i$ on the first summand and as $-i$ on the second, by the definition of the conjugate structure.</p>
 <p><strong>Remark (no real eigenvector is not a defect).</strong> The absence of a real eigenvector is what makes $J$ a rotation by a quarter turn in each coordinate plane, and it is the reason a real-linear map that commutes with $J$ has a block structure rather than a diagonal one. <strong>The operator $J$ is not diagonalisable over $\mathbb{R}$ and is diagonalisable over $\mathbb{C}$, with the two eigenvalues $\pm i$.</strong></p>
 <h2 id="the-hermitian-form-and-the-norm">The Hermitian Form and the Norm</h2>
 <p><strong>The Hermitian form is the positive definite form of the space, and it is the only one of the three canonical forms that defines a norm.</strong></p>
 <p><strong>Definition.</strong> The <strong>Hermitian form</strong> is
 $$
-H(z,w)=\sum_{k=1}^{2}z_k\overline{w_k}=z_1\overline{w_1}+z_2\overline{w_2}.
+H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}.
 $$
-The <strong>norm</strong> is $\lVert z\rVert=\sqrt{H(z,z)}=\sqrt{\lvert z_1\rvert^2+\lvert z_2\rvert^2}$, and the <strong>distance</strong> is $d(z,w)=\lVert z-w\rVert$.</p>
-<p>The form is linear in its first slot and conjugate-linear in its second: $H(\lambda z,w)=\lambda H(z,w)$ and $H(z,\lambda w)=\overline{\lambda}H(z,w)$. It is <strong>Hermitian</strong>,
+The <strong>norm</strong> is $\lVert Q\rVert=\sqrt{H(Q,Q)}=\sqrt{\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2}$, and the <strong>distance</strong> is $d(Q_1,Q_2)=\lVert Q_1-Q_2\rVert$.</p>
+<p>The form is linear in its first slot and conjugate-linear in its second: $H(\lambda Q_1,Q_2)=\lambda H(Q_1,Q_2)$ and $H(Q_1,\lambda Q_2)=\overline{\lambda}H(Q_1,Q_2)$. It is <strong>Hermitian</strong>,
 $$
-H(w,z)=\overline{H(z,w)},
+H(Q_2,Q_1)=\overline{H(Q_1,Q_2)},
 $$
-and <strong>positive definite</strong>, $H(z,z)>0$ for $z\neq0$.</p>
+and <strong>positive definite</strong>, $H(Q,Q)>0$ for $Q\neq0$.</p>
 <p><strong>Proposition (the norm is the Euclidean norm of $\mathbb{R}^4$).</strong> In the real coordinates,
 $$
-H(z,z)=x_1^2+y_1^2+x_2^2+y_2^2.
+H(Q,Q)=q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2.
 $$</p>
-<p><em>Proof.</em> $\lvert z_k\rvert^2=x_k^2+y_k^2$ for each $k$, and the sum is the displayed expression.</p>
-<p><strong>Proposition (Cauchy–Schwarz and the triangle inequality).</strong> For all $z,w\in\mathbb{C}^2$,
+<p><em>Proof.</em> $\lvert Q_{\blacktriangle}\rvert^2=q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2$ and likewise for the descending triangle, and the sum is the displayed expression.</p>
+<p><strong>Proposition (Cauchy–Schwarz and the triangle inequality).</strong> For all $Q_1,Q_2\in\mathbb{C}^2$,
 $$
-\lvert H(z,w)\rvert\le\lVert z\rVert\,\lVert w\rVert,\qquad \lVert z+w\rVert\le\lVert z\rVert+\lVert w\rVert.
+\lvert H(Q_1,Q_2)\rvert\le\lVert Q_1\rVert\,\lVert Q_2\rVert,\qquad \lVert Q_1+Q_2\rVert\le\lVert Q_1\rVert+\lVert Q_2\rVert.
 $$</p>
-<p><em>Proof.</em> The first is the Cauchy–Schwarz inequality for the positive definite Hermitian form: the discriminant of the non-negative quadratic $t\mapsto\lVert z+tw\rVert^2$ is non-positive. The second follows from the first applied to $\lVert z+w\rVert^2=\lVert z\rVert^2+2\operatorname{Re}H(z,w)+\lVert w\rVert^2$.</p>
+<p><em>Proof.</em> The first is the Cauchy–Schwarz inequality for the positive definite Hermitian form: the discriminant of the non-negative quadratic $t\mapsto\lVert Q_1+tQ_2\rVert^2$ is non-positive. The second follows from the first applied to $\lVert Q_1+Q_2\rVert^2=\lVert Q_1\rVert^2+2\operatorname{Re}H(Q_1,Q_2)+\lVert Q_2\rVert^2$.</p>
 <p><strong>Theorem (polarisation).</strong> The form is recovered from its norm by
 $$
-H(z,w)=\tfrac14\Bigl(\lVert z+w\rVert^2-\lVert z-w\rVert^2+i\lVert z+iw\rVert^2-i\lVert z-iw\rVert^2\Bigr).
+H(Q_1,Q_2)=\tfrac14\Bigl(\lVert Q_1+Q_2\rVert^2-\lVert Q_1-Q_2\rVert^2+i\lVert Q_1+iQ_2\rVert^2-i\lVert Q_1-iQ_2\rVert^2\Bigr).
 $$</p>
-<p><em>Proof.</em> Expanding the four squares and using the sesquilinearity of $H$, the real terms give $4\operatorname{Re}H(z,w)$ and the two imaginary terms give $4i\operatorname{Im}H(z,w)$; the sum is $4H(z,w)$.</p>
-<p><strong>Remark (the product is not complex-bilinear).</strong> The form $H$ cannot be $\mathbb{C}$-bilinear: $H(iz,w)=iH(z,w)$ but $H(z,iw)=-iH(z,w)$. <strong>The asymmetry of the two slots is the mark of a Hermitian form, and it is the reason the real and imaginary parts of $H$ are two different real forms</strong>, the Euclidean metric and a symplectic form (<em>The Realification of $\mathbb{C}^2$</em>).</p>
+<p><em>Proof.</em> Expanding the four squares and using the sesquilinearity of $H$, the real terms give $4\operatorname{Re}H(Q_1,Q_2)$ and the two imaginary terms give $4i\operatorname{Im}H(Q_1,Q_2)$; the sum is $4H(Q_1,Q_2)$.</p>
+<p><strong>Remark (the product is not complex-bilinear).</strong> The form $H$ cannot be $\mathbb{C}$-bilinear: $H(iQ_1,Q_2)=iH(Q_1,Q_2)$ but $H(Q_1,iQ_2)=-iH(Q_1,Q_2)$. <strong>The asymmetry of the two slots is the mark of a Hermitian form, and it is the reason the real and imaginary parts of $H$ are two different real forms</strong>, the Euclidean metric and a symplectic form (<em>The Realification of $\mathbb{C}^2$</em>).</p>
 <h2 id="the-three-canonical-forms-announced">The Three Canonical Forms Announced</h2>
 <p><strong>The space carries three canonical forms, one Hermitian, one complex bilinear symmetric and one complex bilinear alternating; they are distinct objects, and only the first defines a norm.</strong></p>
 <p><strong>Definition.</strong> Besides $H$, the space carries
 $$
-B(z,w)=z_1w_1+z_2w_2,\qquad \omega(z,w)=z_1w_2-z_2w_1.
+B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown},\qquad \omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}.
 $$</p>
 <p>The three are collected below. The column <em>realified signature</em> records the signature of the real bilinear form obtained by taking the real or the imaginary part, as appropriate; the construction is <em>The Realification of $\mathbb{C}^2$</em>, and the signatures are proved in <em>The Three Canonical Forms on $\mathbb{C}^2$</em>.</p>
 <div class="table-scroll"><table>
@@ -255,25 +255,25 @@ $$</p>
 <tbody>
 <tr>
 <td>$H$</td>
-<td>$\sum_k z_k\overline{w_k}$</td>
+<td>$Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$</td>
 <td>sesquilinear, antilinear in the second slot</td>
-<td>$H(w,z)=\overline{H(z,w)}$</td>
+<td>$H(Q_2,Q_1)=\overline{H(Q_1,Q_2)}$</td>
 <td>$(4,0)$</td>
 <td>$\{0\}$</td>
 </tr>
 <tr>
 <td>$B$</td>
-<td>$\sum_k z_kw_k$</td>
+<td>$Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$</td>
 <td>$\mathbb{C}$-bilinear</td>
-<td>$B(w,z)=B(z,w)$</td>
+<td>$B(Q_2,Q_1)=B(Q_1,Q_2)$</td>
 <td>$(2,2)$ for $\operatorname{Re}B$, $(2,2)$ for $\operatorname{Im}B$</td>
-<td>the two lines $z_1=\pm iz_2$</td>
+<td>the two lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$</td>
 </tr>
 <tr>
 <td>$\omega$</td>
-<td>$z_1w_2-z_2w_1$</td>
+<td>$Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$</td>
 <td>$\mathbb{C}$-bilinear</td>
-<td>$\omega(w,z)=-\omega(z,w)$</td>
+<td>$\omega(Q_2,Q_1)=-\omega(Q_1,Q_2)$</td>
 <td>$\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ symplectic</td>
 <td>every complex line</td>
 </tr>
@@ -282,9 +282,9 @@ $$</p>
 <p><strong>Remark (three forms, three roles).</strong> The form $H$ is <strong>definite</strong>: its only isotropic vector is $0$, and it carries the topology. The form $B$ is <strong>symmetric and indefinite</strong>: its isotropic set is a cone of two complex lines, and it is the form whose isometry group is the complex orthogonal group. The form $\omega$ is <strong>alternating and nondegenerate</strong>: every complex line is isotropic for it, and it is the holomorphic symplectic form, whose isometry group is $\mathrm{Sp}(2,\mathbb{C})$. <strong>No one of the three may be substituted for another, and the same symbol is never used for two of them.</strong></p>
 <p>The three are related by the complex structure and by the real and imaginary parts, and the relations are stated where they are proved. Two of them are needed at once. First, $B$ and $\omega$ satisfy
 $$
-B(z,w)^2+\omega(z,w)^2=B(z,z)\,B(w,w),
+B(Q_1,Q_2)^2+\omega(Q_1,Q_2)^2=B(Q_1,Q_1)\,B(Q_2,Q_2),
 $$
-the Lagrange identity for two complex variables. Second, $\operatorname{Im}H$ is not $\omega$: the first is a real alternating form of type $(1,1)$, invariant under $J$, and the second is a complex alternating form of type $(2,0)$, anti-invariant under $J$ in the sense that $\omega(Jz,Jw)=-\omega(z,w)$. <strong>The Kähler form of the space is $-\operatorname{Im}H$, not $\omega$</strong>, and the confusion of the two is the commonest error in the reading of the forms (<em>The Three Canonical Forms on $\mathbb{C}^2$</em>).</p>
+the Lagrange identity for two complex variables. Second, $\operatorname{Im}H$ is not $\omega$: the first is a real alternating form of type $(1,1)$, invariant under $J$, and the second is a complex alternating form of type $(2,0)$, anti-invariant under $J$ in the sense that $\omega(JQ_1,JQ_2)=-\omega(Q_1,Q_2)$. <strong>The Kähler form of the space is $-\operatorname{Im}H$, not $\omega$</strong>, and the confusion of the two is the commonest error in the reading of the forms (<em>The Three Canonical Forms on $\mathbb{C}^2$</em>).</p>
 <h2 id="the-distinctions-of-notation">The Distinctions of Notation</h2>
 <p><strong>Four different objects are written with the same letter $\mathbb{C}$ and the same exponent $2$, and only one of them is the space of this article.</strong></p>
 <p><strong>Definition.</strong> The four are the following.</p>
@@ -339,15 +339,15 @@ the Lagrange identity for two complex variables. Second, $\operatorname{Im}H$ is
 <p><strong>Remark (the function spaces are not the space).</strong> The notation $\mathbb{C}^2(\Omega)$ is read "the maps from $\Omega$ to $\mathbb{C}^2$", not "$\mathbb{C}^2$ evaluated at $\Omega$". <strong>A function space is infinite-dimensional and carries a topology of its own, and its study is the subject of <em>Several Complex Variables</em>, not of this article.</strong> The distinction matters because a statement about $\mathbb{C}^2$ is a statement about points, and a statement about $\mathbb{C}^2(\Omega)$ is a statement about functions.</p>
 <h2 id="the-position-among-the-objects-of-part-vi">The Position Among the Objects of Part VI</h2>
 <p><strong>The space is not an algebra, and it is placed after the number systems for that reason: it is the first object of the synthetic part that is a module and not a ring.</strong></p>
-<p>The categories that precede it are algebras: $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{B}_{\mathrm{r}}$ and their quaternionic companions, each with a product, a conjugation and a norm. The space $\mathbb{C}^2$ has none of these as part of its definition. Its product-like structures are the three forms, which take two arguments and return a scalar; its operators are the matrices, which are treated in the next two articles. <strong>The reader who expects a multiplication table will not find one here, and the absence is the point.</strong></p>
-<p>The space is nevertheless the module of the algebras that follow. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by matrix multiplication, and the action is faithful and transitive on the nonzero vectors: for any two nonzero vectors there is an invertible matrix sending one to the other. The algebra $M_2(\mathbb{C})$ is isomorphic to the biquaternion algebra $\mathbb{B}$, so the space is the <strong>simple module</strong> of $\mathbb{B}$, and the classification of the simple modules of a matrix algebra, which is the contents of <em>The Endomorphisms of $\mathbb{C}^2$</em> and of the biquaternion category, has this space as its unique object up to isomorphism.</p>
+<p>The categories that precede it are algebras: $\mathbb{C}$, the split-complex numbers, the dual numbers, and the variants gathered in the complexoid and split-complexoid categories, each with a product, a conjugation and a norm. The space $\mathbb{C}^2$ has none of these as part of its definition. Its product-like structures are the three forms, which take two arguments and return a scalar; its operators are the matrices, which are treated in the next two articles. <strong>The reader who expects a multiplication table will not find one here, and the absence is the point.</strong></p>
+<p>The space is nevertheless the module of the algebras that follow. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by matrix multiplication, and its group of units $\mathrm{GL}_2(\mathbb{C})$ acts faithfully and transitively on the nonzero vectors: for any two nonzero vectors there is an invertible matrix sending one to the other. The algebra $M_2(\mathbb{C})$ is isomorphic to the biquaternion algebra $\mathbb{B}$, so the space is the <strong>simple module</strong> of $\mathbb{B}$, and the classification of the simple modules of a matrix algebra, which is the contents of <em>The Endomorphisms of $\mathbb{C}^2$</em> and of the biquaternion category, has this space as its unique object up to isomorphism.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex two-space is the set $\mathbb{C}^2$ of ordered pairs of complex numbers. It is a complex vector space of dimension $2$, with basis $e_1=(1,0)$ and $e_2=(0,1)$, and a real vector space of dimension $4$, with basis $e_1,ie_1,e_2,ie_2$; a point is $z=z_1e_1+z_2e_2$ with $z_k=x_k+iy_k$, and the two readings are related by the complex structure
+<p>The complex two-space is the set $\mathbb{C}^2$ of ordered pairs of complex numbers. It is a complex vector space of dimension $2$, with basis $e_1=(1,0)$ and $e_2=(0,1)$, and a real vector space of dimension $4$, with basis $e_1,ie_1,e_2,ie_2$; a point is $Q=Q_{\blacktriangle}e_1+Q_{\blacktriangledown}e_2$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, and the two readings are related by the complex structure
 $$
-J(z_1,z_2)=(iz_1,iz_2),\qquad J^2=-I,
+J(Q_{\blacktriangle},Q_{\blacktriangledown})=(iQ_{\blacktriangle},iQ_{\blacktriangledown}),\qquad J^2=-I,
 $$
 which is real-linear and complex-linear and has no real eigenvector.</p>
-<p>The <strong>Hermitian form</strong> is $H(z,w)=\sum_k z_k\overline{w_k}$, positive definite and conjugate-linear in the second slot; its norm is the Euclidean norm of $\mathbb{R}^4$, $\lVert z\rVert^2=\sum_k(x_k^2+y_k^2)$, and the form is recovered from the norm by polarisation. The space carries two further canonical forms, the complex bilinear symmetric form $B(z,w)=\sum_k z_kw_k$ and the complex bilinear alternating form $\omega(z,w)=z_1w_2-z_2w_1$; only $H$ is definite, $B$ has the isotropic cone $z_1=\pm iz_2$, and $\omega$ vanishes on every complex line. The Kähler form of the space is $-\operatorname{Im}H$, and it is not $\omega$.</p>
+<p>The <strong>Hermitian form</strong> is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, positive definite and conjugate-linear in the second slot; its norm is the Euclidean norm of $\mathbb{R}^4$, $\lVert Q\rVert^2=q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2$, and the form is recovered from the norm by polarisation. The space carries two further canonical forms, the complex bilinear symmetric form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ and the complex bilinear alternating form $\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$; only $H$ is definite, $B$ has the isotropic cone $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$, and $\omega$ vanishes on every complex line. The Kähler form of the space is $-\operatorname{Im}H$, and it is not $\omega$.</p>
 <p>The notation is distinguished four ways: $\mathbb{C}^2$ is the pair space, contractible and of real dimension $4$; $\mathbb{C}^2(\Omega)$ is the space of holomorphic maps on a domain, infinite-dimensional; $\mathbb{C}^2(X)$ is the space of sections of a trivial bundle over $X$; and $\mathbb{CP}^2$ is the compact projective plane, not a vector space. The space is the simple module of $M_2(\mathbb{C})\cong\mathbb{B}$, and it is the entry point of the category.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -363,8 +363,8 @@ which is real-linear and complex-linear and has no real eigenvector.</p>
 <td>the set of ordered pairs of complex numbers, with the complex and the real scalar structures</td>
 </tr>
 <tr>
-<td>$z=(z_1,z_2)$</td>
-<td>a point, with $z_k=x_k+iy_k$</td>
+<td>$Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$</td>
+<td>a point, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$</td>
 </tr>
 <tr>
 <td>$e_1,e_2$</td>
@@ -376,30 +376,30 @@ which is real-linear and complex-linear and has no real eigenvector.</p>
 </tr>
 <tr>
 <td>$J$</td>
-<td>the complex structure, $Jz=iz$, $J^2=-I$</td>
+<td>the complex structure, $JQ=iQ$, $J^2=-I$</td>
 </tr>
 <tr>
-<td>$H(z,w)=\sum_k z_k\overline{w_k}$</td>
+<td>$H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$</td>
 <td>the Hermitian form</td>
 </tr>
 <tr>
-<td>$\lVert z\rVert=\sqrt{H(z,z)}$</td>
+<td>$\lVert Q\rVert=\sqrt{H(Q,Q)}$</td>
 <td>the norm, the Euclidean norm of $\mathbb{R}^4$</td>
 </tr>
 <tr>
-<td>$d(z,w)=\lVert z-w\rVert$</td>
+<td>$d(Q_1,Q_2)=\lVert Q_1-Q_2\rVert$</td>
 <td>the distance</td>
 </tr>
 <tr>
-<td>$B(z,w)=\sum_k z_kw_k$</td>
+<td>$B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$</td>
 <td>the complex bilinear symmetric form</td>
 </tr>
 <tr>
-<td>$\omega(z,w)=z_1w_2-z_2w_1$</td>
+<td>$\omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}$</td>
 <td>the holomorphic symplectic form</td>
 </tr>
 <tr>
-<td>$\Omega=-\operatorname{Im}H=\sum_k dx_k\wedge dy_k$</td>
+<td>$\Omega=-\operatorname{Im}H=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$</td>
 <td>the Kähler form</td>
 </tr>
 <tr>
