@@ -152,23 +152,49 @@ T_{xy}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix}.
 $$
 Its first column is the coordinate column of $e_x\tilde\Pi_+e_y=i\tilde\Pi_-$, because $\tilde\Pi_+e_y=-\vec\Upsilon_-$ and $e_x\vec\Upsilon_-=-i\tilde\Pi_-$.
 
-**The sixteen, in four families.** In full,
+**The sixteen, in four families.** The four families are
 $$
 T_{tt}=\mathrm I_4,\qquad
 T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
 T_{kt}=-i\,\mathrm I_2\otimes\sigma_k,\qquad
 T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
 $$
-For example
+
+**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
 $$
-T_{tx}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
-T_{ty}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},
+T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+T_{tx}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+$$
+$$
+T_{ty}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+T_{tz}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
 $$
 $$
 T_{xt}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-T_{xy}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix}.
+T_{xx}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
-The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $S\,T_{\mu\nu}\,S^{-1}$.
+$$
+T_{xy}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
+T_{xz}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+$$
+$$
+T_{yt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+T_{yx}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+$$
+$$
+T_{yy}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+T_{yz}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+$$
+$$
+T_{zt}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+T_{zx}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+$$
+$$
+T_{zy}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
+T_{zz}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+$$
+
+Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $S\,T_{\mu\nu}\,S^{-1}$.
 
 **Composition.** The product of two basis operators is a signed basis operator:
 $$
@@ -362,24 +388,26 @@ The reference frame is $(\beta,\delta)=(e_y,e_x)$, so $\beta\delta=-e_z$. It is 
 
 **In this frame the sixteen products are the sixteen cells.** The products of the frame, in increasing grade, are
 
-| Grade | Product | Cell | Scalar |
-|---|---|---|---|
-| $0$ | $1$ | $T_{tt}$ | $1$ |
-| $1$ | $\gamma^0$ | $T_{tx}$ | $i$ |
-| $1$ | $\gamma^1$ | $T_{xy}$ | $i$ |
-| $1$ | $\gamma^2$ | $T_{yy}$ | $i$ |
-| $1$ | $\gamma^3$ | $T_{zy}$ | $i$ |
-| $2$ | $\gamma^0\gamma^1$ | $T_{xz}$ | $1$ |
-| $2$ | $\gamma^0\gamma^2$ | $T_{yz}$ | $1$ |
-| $2$ | $\gamma^0\gamma^3$ | $T_{zz}$ | $1$ |
-| $2$ | $\gamma^1\gamma^2$ | $T_{zt}$ | $1$ |
-| $2$ | $\gamma^1\gamma^3$ | $T_{yt}$ | $-1$ |
-| $2$ | $\gamma^2\gamma^3$ | $T_{xt}$ | $1$ |
-| $3$ | $\gamma^0\gamma^1\gamma^2$ | $T_{zx}$ | $i$ |
-| $3$ | $\gamma^0\gamma^1\gamma^3$ | $T_{yx}$ | $-i$ |
-| $3$ | $\gamma^0\gamma^2\gamma^3$ | $T_{xx}$ | $i$ |
-| $3$ | $\gamma^1\gamma^2\gamma^3$ | $T_{ty}$ | $-i$ |
-| $4$ | $\gamma^0\gamma^1\gamma^2\gamma^3$ | $T_{tz}$ | $-1$ |
+| Grade | $\gamma$-product | Cell | $c$ | Conversion |
+|---|---|---|---|---|
+| $0$ | $1$ | $T_{tt}$ | $1$ | $T_{tt}=\mathrm I_4$ |
+| $1$ | $\gamma^0$ | $T_{tx}$ | $i$ | $T_{tx}=-i\,\gamma^0$ |
+| $1$ | $\gamma^1$ | $T_{xy}$ | $i$ | $T_{xy}=-i\,\gamma^1$ |
+| $1$ | $\gamma^2$ | $T_{yy}$ | $i$ | $T_{yy}=-i\,\gamma^2$ |
+| $1$ | $\gamma^3$ | $T_{zy}$ | $i$ | $T_{zy}=-i\,\gamma^3$ |
+| $2$ | $\gamma^0\gamma^1$ | $T_{xz}$ | $1$ | $T_{xz}=\gamma^0\gamma^1$ |
+| $2$ | $\gamma^0\gamma^2$ | $T_{yz}$ | $1$ | $T_{yz}=\gamma^0\gamma^2$ |
+| $2$ | $\gamma^0\gamma^3$ | $T_{zz}$ | $1$ | $T_{zz}=\gamma^0\gamma^3$ |
+| $2$ | $\gamma^1\gamma^2$ | $T_{zt}$ | $1$ | $T_{zt}=\gamma^1\gamma^2$ |
+| $2$ | $\gamma^1\gamma^3$ | $T_{yt}$ | $-1$ | $T_{yt}=-\gamma^1\gamma^3$ |
+| $2$ | $\gamma^2\gamma^3$ | $T_{xt}$ | $1$ | $T_{xt}=\gamma^2\gamma^3$ |
+| $3$ | $\gamma^0\gamma^1\gamma^2$ | $T_{zx}$ | $i$ | $T_{zx}=-i\,\gamma^0\gamma^1\gamma^2$ |
+| $3$ | $\gamma^0\gamma^1\gamma^3$ | $T_{yx}$ | $-i$ | $T_{yx}=i\,\gamma^0\gamma^1\gamma^3$ |
+| $3$ | $\gamma^0\gamma^2\gamma^3$ | $T_{xx}$ | $i$ | $T_{xx}=-i\,\gamma^0\gamma^2\gamma^3$ |
+| $3$ | $\gamma^1\gamma^2\gamma^3$ | $T_{ty}$ | $-i$ | $T_{ty}=i\,\gamma^1\gamma^2\gamma^3$ |
+| $4$ | $\gamma^0\gamma^1\gamma^2\gamma^3$ | $T_{tz}$ | $-1$ | $T_{tz}=i\,\gamma_5=-\gamma^0\gamma^1\gamma^2\gamma^3$ |
+
+The fourth column is $c$, the coefficient that makes the product equal $c\,T_{\mu\nu}$; the fifth writes $T_{\mu\nu}$ in terms of the product. Since $c\in\{1,-1,i,-i\}$, the inverse coefficient is $\bar c$.
 
 *Proof.* Direct multiplication with $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$; the sixteen entries are distinct, so the products are the sixteen cells in some order, each with a unit coefficient. The pseudoscalar is the last row multiplied by $i$, which is the identity $\gamma_5=iT_{e_t,\beta\delta}$ with $\beta\delta=-e_z$.
 
