@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The mathematics article <em>Chirality: The Conjugate Pair</em> proves that chirality is the central sign of the conjugate pair, not the sign of the Peirce decomposition. This article gives the physical interpretation of that result. It states the result in brief, gives six labelled interpretations, and records the limits. It proves nothing: the proofs are in the mathematics article, one click away.</p>
 <p>The distinction is not a matter of notation. The Standard Model is chiral: its left- and right-handed fermions carry inequivalent representations. A sign that grades two copies of one module cannot supply that distinction, however it is drawn. The Peirce sign grades $S_+\cong S_-\cong S$; the chiral sign grades $S$ against its conjugate $S^{\mathrm{c}}$. The first is a copy index, the second is the chirality. The whole physical content of the article is in that difference.</p>
-<p>The biquaternion algebra supplies the second sign only after one step: the central idempotents live in $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, not in $\mathbb{B}$. A biquaternion is therefore never chiral by itself; the Dirac field is a pair, and the chirality is the grading of the pair.</p>
+<p>The biquaternion algebra supplies the second sign only after one step: the central idempotents live in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, not in $\mathbb{B}$. A biquaternion is therefore never chiral by itself; the Dirac field is a pair, and the chirality is the grading of the pair.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -99,7 +99,7 @@
 <td><a href="../articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair</a></td>
 </tr>
 <tr>
-<td>The central idempotents $e_\pm=\tfrac12(1\pm ij)$, the chirality $\chi=ij$ and its action on $\Delta$</td>
+<td>The central idempotents $e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}})$, the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ and its action on $\Delta$</td>
 <td><a href="../articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair</a></td>
 </tr>
 <tr>
@@ -118,13 +118,13 @@ P(s)=s\ \text{on }S_+,
 P(s)=-s\ \text{on }S_- .
 $$</p>
 <p>It is implemented by the element $i\vec e_z\in\mathbb{B}$, it is $\mathbb{B}$-linear, and it grades two copies of one module. The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, with no nontrivial idempotent; no element of $\mathbb{B}$ implements a grading into two non-isomorphic summands.</p>
-<p>The conjugate module $S^{\mathrm{c}}$ is $S$ with the conjugate scalar action. It is isomorphic to $S$ as a real $\mathbb{B}_{\mathbb{R}}$-module and not isomorphic to $S$ as a complex $\mathbb{B}_{\mathbb{R}}$-module. The complexification $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, with $j$ a new central imaginary unit, has the central idempotents</p>
+<p>The conjugate module $S^{\mathrm{c}}$ is $S$ with the conjugate scalar action. It is isomorphic to $S$ as a real $\mathbb{B}_{\mathbb{R}}$-module and not isomorphic to $S$ as a complex $\mathbb{B}_{\mathbb{R}}$-module. The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, with $\tilde\Xi_{\mathrm{ad}}$ its central root of $-1$, has the central idempotents</p>
 <p>$$
-e_+=\tfrac12(1+ij),\qquad e_-=\tfrac12(1-ij),
+e_+=\tfrac12(1+i\tilde\Xi_{\mathrm{ad}}),\qquad e_-=\tfrac12(1-i\tilde\Xi_{\mathrm{ad}}),
 $$</p>
 <p>and the chirality is</p>
 <p>$$
-\chi=ij=e_+-e_- .
+\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_- .
 $$</p>
 <p>On the Dirac module</p>
 <p>$$
@@ -188,13 +188,13 @@ $$</p>
 <li><strong>The central phase's representation is an input.</strong> Vector-like on $S\oplus S$, axial on $\Delta$; the algebra alone does not choose.</li>
 <li><strong>The Peirce copy flip is not the chiral mass.</strong> The two couplings act on different pairs of spaces and have different invariance.</li>
 <li><strong>No claim that every fermion is a Dirac pair.</strong> Weyl and Majorana fermions are separate cases.</li>
-<li><strong>No claim that chirality is an element of $\mathbb{B}$.</strong> It is an endomorphism of $\Delta$ outside the algebra, equivalently the central element $ij$ of the complexification.</li>
+<li><strong>No claim that chirality is an element of $\mathbb{B}$.</strong> It is an endomorphism of $\Delta$ outside the algebra, equivalently the central sign $i\tilde\Xi_{\mathrm{ad}}$ of the double.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=ij$ is the nontrivial central involution of $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.</p>
+<p>Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the nontrivial central involution of the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.</p>
 <p>$$
 \boxed{\;
-\chi=ij,\quad \chi=\operatorname{diag}(-I_2,I_2),\quad
+\chi=i\tilde\Xi_{\mathrm{ad}},\quad \chi=\operatorname{diag}(-I_2,I_2),\quad
 P_L=\tfrac12(1-\chi),\quad P_R=\tfrac12(1+\chi),\quad
 \Delta=S\oplus S^{\mathrm{c}},\quad
 P=R_{i\vec e_z}\in\mathbb{B}.
@@ -238,11 +238,11 @@ $$</p>
 <td>the two Peirce planes, both $\cong S$</td>
 </tr>
 <tr>
-<td>$j$</td>
-<td>a new central imaginary unit, $j^2=-1$</td>
+<td>$\tilde\Xi_{\mathrm{ad}}$</td>
+<td>the adjoined central root of $-1$ of the double, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$</td>
 </tr>
 <tr>
-<td>$\chi=ij$</td>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
 <td>the chirality</td>
 </tr>
 <tr>

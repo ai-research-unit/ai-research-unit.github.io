@@ -106,14 +106,14 @@
 <tr>
 <td>chirality</td>
 <td>the Lorentz half</td>
-<td>central sign in $\mathbb{B}[j]$</td>
+<td>central sign in the double</td>
 <td>$+$ or $-$</td>
 </tr>
 </tbody>
 </table></div>
 <p>The first two rows are one notion. The adjoint action carries the two integer cases, $s=0$ on the centre and $s=1$ on the traceless part; the row records the $s=1$ carrier. The last two rows are signs, and neither is a weight.</p>
 <p><strong>The Peirce index.</strong> A complete family $\tilde\Pi_+,\tilde\Pi_-$ cuts the algebra into four lines $\mathbb{B}_{rt}=\tilde\Pi_r\mathbb{B}\tilde\Pi_t$, with $r,t\in\{+,-\}$. The indices $r,t$ are the Peirce indices; they are written $r,t$ here to leave $s$ for the spin. The right index selects the copy: $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$. Both copies carry spin $\tfrac12$. The Peirce index does not distinguish a spin from another spin; it distinguishes two copies of the same spin.</p>
-<p><strong>The chirality.</strong> In the complexification $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$, with $j$ a central imaginary unit, $j^2=-e_t$, commuting with the algebra, the chirality is $\chi=ij$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The letter $j$ in $\mathbb{B}[j]$ is the central imaginary unit, an element of the algebra; the spin is the real number $s$.</p>
+<p><strong>The chirality.</strong> In the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, with $\tilde\Xi_{\mathrm{ad}}$ its central root of $-1$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, commuting with the algebra, the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The root $\tilde\Xi_{\mathrm{ad}}$ is an element of the double; the spin is the real number $s$.</p>
 <p>So the four uses reduce to one definition, one instance and two signs. The rest of the article is the definition and its two structures.</p>
 <h2 id="the-definition">The Definition</h2>
 <p><strong>The algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$. The real quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$. The conjugate is $e_t^*=e_t$, $\vec e_k^*=-\vec e_k$, $i^*=-i$, and the two sectors are $\mathbb{M}_\pm=\{X\in\mathbb{B}:X^*=\pm X\}$. The symbol $\operatorname{tr}$ is the matrix trace under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$.</p>
@@ -238,7 +238,7 @@ $$</p>
 P\tilde\Pi_+=\tilde\Pi_+,\qquad P\tilde\Pi_-=-\tilde\Pi_-,
 $$</p>
 <p>so $P$ is $+1$ on $S_+$ and $-1$ on $S_-$. It is implemented by the element $i\vec e_z$, which is not central: $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value. Right multiplication by the nilpotent $\vec\Upsilon_{+-}$ gives the module isomorphism $S_+\to S_-$, but it is not the grading: $\vec\Upsilon_{+-}^2=0$, so it cannot be an involution.</p>
-<p><strong>Chirality is central, but not a spin.</strong> In $\mathbb{B}[j]$ the chirality $\chi=ij$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.</p>
+<p><strong>Chirality is central, but not a spin.</strong> In the double the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.</p>
 <p>The three signs are therefore distinct: a central sign that marks integer against half-integer, an inner non-central sign that separates two copies of one half-integer carrier, and a central sign in a doubled algebra that separates two Lorentz halves. Only the first tracks the integrality of a spin; none of the three is a spin value.</p>
 <h2 id="what-the-algebra-does-not-determine">What the Algebra Does Not Determine</h2>
 <p><strong>Which structure a particle uses.</strong> The algebra carries both lists. It does not say that the electron uses the left module and the photon the adjoint; that assignment is physics.</p>
@@ -311,8 +311,8 @@ $$</p>
 <td>The spin, the maximal weight</td>
 </tr>
 <tr>
-<td>$\mathbb{B}[j]$</td>
-<td>The complexification by the central imaginary unit $j$, $j^2=-e_t$</td>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$</td>
+<td>The complexification, the double; its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$</td>
