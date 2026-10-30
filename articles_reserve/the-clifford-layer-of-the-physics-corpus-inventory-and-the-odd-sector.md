@@ -98,8 +98,9 @@ $$
 
 *The derivative part of the Dirac equation.*
 $$
-\gamma^\mu\partial_\mu\psi
-=i\psi_{,t}e_x+i\sum_{k=1}^{3}e_k\,\psi_{,k}\,e_y .
+\gamma^\mu\frac{\partial}{\partial Q_\mu}\psi
+=i\frac{\partial\psi}{\partial Q_t}e_x
++i\sum_{k=1}^{3}e_k\,\frac{\partial\psi}{\partial Q_k}\,e_y .
 $$
 The left side is the usual notation, the right side is four multiplications. Both are on the page; neither replaces the other.
 
@@ -141,7 +142,7 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 |---|---|---:|
 | $\gamma^\mu$ | $iT_{e_\mu,e_\nu}$ | 1 |
 | $\gamma^\mu\gamma^\nu$ | $\pm T_{a,b}$ | 1 |
-| $\gamma^\mu\partial_\mu$ | $\sum_\mu$ | 4 |
+| $\gamma^\mu\partial/\partial Q_\mu$ | $\sum_\mu$ | 4 |
 | $P_\pm$ | $\tfrac12(\mathbf 1\mp iT)$ | 2 |
 | $e^{i\alpha\gamma_5}$ | $R_{\exp(i\alpha e_z)}$ | 1 |
 | $\operatorname{tr}$ | $4\,\mathrm{Sc}\otimes\mathrm{Sc}$ | 1 functional |

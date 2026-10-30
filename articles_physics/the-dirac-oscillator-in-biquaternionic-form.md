@@ -146,7 +146,7 @@ $$
 = c^2\left(\vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\,\boldsymbol\sigma\cdot\vec L\right)\phi .
 $$
 
-The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$: it commutes with $\vec S_{\mathrm{tot}}^2$, $\vec L^2$ and $\langle\cdot\rangle_{\natural}$. Its eigenvalues are the standard ones,
+The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$: it commutes with $\tilde S_{\mathrm{tot}}^2$, $\vec L^2$ and $\langle\cdot\rangle_{\natural}$. Its eigenvalues are the standard ones,
 
 $$
 \frac{1}{\hbar}\,\boldsymbol\sigma\cdot\vec L =

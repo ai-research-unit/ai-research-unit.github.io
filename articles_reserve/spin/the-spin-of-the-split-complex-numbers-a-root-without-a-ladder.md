@@ -234,7 +234,7 @@ The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to
 | $h$ | root $e_+-e_-=j$ |
 | $L_x$ | left multiplication by $x$ |
 | $\operatorname{ad}_x$ | $y\mapsto xy-yx$ |
-| $W_j$ | irreducible carrier of a triple, dimension $2j+1$ |
+| $W_s$ | irreducible carrier of a triple, dimension $2s+1$ |
 
 ## Further Reading
 

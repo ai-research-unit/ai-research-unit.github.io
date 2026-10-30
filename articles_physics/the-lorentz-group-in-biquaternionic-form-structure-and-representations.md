@@ -297,7 +297,7 @@ $$
 $$
 of dimension $1+3+3+9=16=4\times4$.
 
-**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_j=\operatorname{Sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
+**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_s=\operatorname{Sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
 $$
 \left\{\text{f.d. polynomial representations of }SL(2,\mathbb{C})\right\}\simeq\left\{\text{f.d. }{}^{*}\text{-unitary representations of }SU(2)\right\},
 $$

@@ -174,14 +174,14 @@ The multiplicities sum to $9$. The weighted sum is $0$, which is $\operatorname{
 
 ### The Content
 
-**Proposition (multiplicity formula).** If $W\cong\bigoplus_j m_jW_j$ and $\mu(m)$ is the multiplicity of the weight $m$, then
+**Proposition (multiplicity formula).** If $W\cong\bigoplus_s m_sW_s$ and $\mu(m)$ is the multiplicity of the weight $m$, then
 
 $$
-\mu(m)=\sum_{j\ge\lvert m\rvert,\ j-m\in\mathbb{Z}}m_j,\qquad
-m_j=\mu(j)-\mu(j+1).
+\mu(m)=\sum_{s\ge\lvert m\rvert,\ s-m\in\mathbb{Z}}m_s,\qquad
+m_s=\mu(s)-\mu(s+1).
 $$
 
-*Proof.* The module $W_j$ has the weights $j,j-1,\dots,-j$, one each. It contributes one to $\mu(m)$ exactly when $j\ge\lvert m\rvert$ and $j-m$ is an integer. Subtract the formula for $j+1$ from the formula for $j$; every term cancels except $m_j$.
+*Proof.* The module $W_s$ has the weights $s,s-1,\dots,-s$, one each. It contributes one to $\mu(m)$ exactly when $s\ge\lvert m\rvert$ and $s-m$ is an integer. Subtract the formula for $s+1$ from the formula for $s$; every term cancels except $m_j$.
 
 Apply it:
 
@@ -197,7 +197,7 @@ $$
 
 ### The Highest Weight Vectors
 
-A highest weight vector of weight $j$ is a nonzero $h$ with $\operatorname{ad}_Sh=jh$ and $\operatorname{ad}_Uh=0$. The three candidates are
+A highest weight vector of weight $s$ is a nonzero $h$ with $\operatorname{ad}_Sh=sh$ and $\operatorname{ad}_Uh=0$. The three candidates are
 
 $$
 h_0=I,\qquad h_1=E_{12}+E_{23},\qquad h_2=E_{13}.
@@ -223,7 +223,7 @@ $$
 
 Applying $\operatorname{ad}_V$:
 
-| $j$ | chain |
+| $s$ | chain |
 |---|---|
 | $0$ | $I\mapsto0$ |
 | $1$ | $E_{12}+E_{23}\mapsto\sqrt2(E_{33}-E_{11})\mapsto-2(E_{21}+E_{32})\mapsto0$ |
@@ -249,10 +249,10 @@ $$
 **Result.** The three chains are independent and their sum is direct:
 
 $$
-\mathfrak{gl}_3=W_0\oplus W_1\oplus W_2,\qquad \dim W_j=2j+1.
+\mathfrak{gl}_3=W_0\oplus W_1\oplus W_2,\qquad \dim W_s=2s+1.
 $$
 
-The chain of $h_j$ spans $W_j$.
+The chain of $h_s$ spans $W_s$.
 
 ## The Adjoint Carriers
 
@@ -352,7 +352,7 @@ $$
 C=S^2+\tfrac12(UV+VU)=\operatorname{diag}(1,0,1)+\operatorname{diag}(1,2,1)=2I.
 $$
 
-The eigenvalue is $j(j+1)=2$ for $j=1$, as it must be.
+The eigenvalue is $s(s+1)=2$ for $s=1$, as it must be.
 
 On the adjoint module, the image of $C$ is $\operatorname{ad}_S^2+\tfrac12(\operatorname{ad}_U\operatorname{ad}_V+\operatorname{ad}_V\operatorname{ad}_U)$. Its characteristic polynomial is
 
@@ -360,7 +360,7 @@ $$
 \lambda(\lambda-6)^5(\lambda-2)^3.
 $$
 
-The eigenvalues are $0$, $2$ and $6$, with multiplicities $1$, $3$ and $5$. These are $j(j+1)$ for $j=0,1,2$, and the multiplicities are the dimensions $2j+1$. This gives the adjoint content $0,1,2$ a second time, without counting weights.
+The eigenvalues are $0$, $2$ and $6$, with multiplicities $1$, $3$ and $5$. These are $s(s+1)$ for $s=0,1,2$, and the multiplicities are the dimensions $2s+1$. This gives the adjoint content $0,1,2$ a second time, without counting weights.
 
 **Result.** The Casimir confirms both decompositions: $2$ on $\mathbb{C}^3$, and $0,2,6$ with multiplicities $1,3,5$ on $\mathfrak{gl}_3$.
 
@@ -402,9 +402,9 @@ The eigenvalues are $0$, $2$ and $6$, with multiplicities $1$, $3$ and $5$. Thes
 | $S$ | spin element $\tfrac12[U,V]=\operatorname{diag}(1,0,-1)$ |
 | $U,V$ | ladders |
 | $\operatorname{ad}_X$ | $Y\mapsto XY-YX$ |
-| $W_j$ | irreducible carrier, dimension $2j+1$ |
+| $W_s$ | irreducible carrier, dimension $2s+1$ |
 | $\mu(m)$ | multiplicity of the weight $m$ |
-| $m_j$ | multiplicity of $W_j$ |
+| $m_s$ | multiplicity of $W_s$ |
 | $C$ | Casimir element $S^2+\tfrac12(UV+VU)$ |
 | $\rho_1$ | defining representation on $\mathbb{C}^3$ |
 | $\rho_{\mathrm{ad}}$ | adjoint representation on $\mathfrak{gl}_3$ |
@@ -417,5 +417,5 @@ The eigenvalues are $0$, $2$ and $6$, with multiplicities $1$, $3$ and $5$. Thes
 - [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](../articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general chain.
 - [The Triplet Spin One and the Adjoint of $M_3(\mathbb{C})$](../articles_maths/the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the spin-one triplet.
 - [Representations of Lie Algebras](../articles_maths/representations-of-lie-algebras.html), for the highest weight classification.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
+- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $s(s+1)$.
 - [The Weight of a Frame Root and the Spin Quantum Number](../articles_maths/the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the carrier, the weight and the root.

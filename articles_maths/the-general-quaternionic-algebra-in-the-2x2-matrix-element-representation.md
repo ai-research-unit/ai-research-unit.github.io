@@ -82,7 +82,7 @@ $$
 
 the trace pairing in which the second argument is adjugated.
 
-*Proof.* $\operatorname{adj}\mathsf{M}_2(\tilde Q_2)=\mathsf{M}_2(\tilde Q_2^{\natural})$, so the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2^{\natural}))=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ by the trace identity $\mathrm{Sc}(\tilde Q_4\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_4)\mathsf{M}_2(\tilde{S}))$.
+*Proof.* $\operatorname{adj}\mathsf{M}_2(\tilde Q_2)=\mathsf{M}_2(\tilde Q_2^{\natural})$, so the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2^{\natural}))=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ by the trace identity $\mathrm{Sc}(\tilde Q_4\tilde Q_5)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_4)\mathsf{M}_2(\tilde Q_5))$.
 
 **Theorem (the diagonal is the determinant).** On the diagonal,
 

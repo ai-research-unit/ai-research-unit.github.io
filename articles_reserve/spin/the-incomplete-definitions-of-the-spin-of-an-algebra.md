@@ -35,9 +35,9 @@ The companion article, *Possible General Definitions of the Spin of an Algebra*,
 | spectral count | $\{0,\tfrac12\}$ | incomplete | eigenvalue count |
 | adjoint alone | $\{0,1\}$ | incomplete | spin-$1$ carrier |
 | half-angle | $\tfrac12$ and $1$ | normalization | rotor parameter |
-| unrestricted highest weight | all $j\ge0$ | overcomplete | representation label |
-| unrestricted Casimir | all $j\ge0$ | overcomplete | representation label |
-| unrestricted coadjoint | all $j\ge0$ | overcomplete | orbit label |
+| unrestricted highest weight | all $s\ge0$ | overcomplete | representation label |
+| unrestricted Casimir | all $s\ge0$ | overcomplete | representation label |
+| unrestricted coadjoint | all $s\ge0$ | overcomplete | orbit label |
 | circle weight | $0$ or $\{0,\tfrac12\}$ mod $1$ | incomplete | parity |
 | ribbon twist | $0$ | wrong value | topological spin |
 
@@ -47,7 +47,7 @@ The companion article, *Possible General Definitions of the Spin of an Algebra*,
 
 **Definition.** Let $A$ be a finite-dimensional $k$-algebra and $V$ a simple left $A$-module. The **dimension spin** is
 $$
-j=\frac{\dim_k V-1}{2}.
+s=\frac{\dim_k V-1}{2}.
 $$
 The **left list** is the set over the simple modules. The definition uses no nilpotent, no grading, and no triple.
 
@@ -78,7 +78,7 @@ $$
 $$
 be the nilpotency index. The **ladder spin** is
 $$
-j=\frac{\operatorname{ind}(u)-1}{2}.
+s=\frac{\operatorname{ind}(u)-1}{2}.
 $$
 The **ladder list** is the set over all nilpotent $u\in A$. The **regular spin** is the maximum of the list.
 
@@ -113,7 +113,7 @@ e_iAe_{i+1}\neq0,\qquad i=1,\ldots,\ell-1.
 $$
 The **chain spin** is
 $$
-j=\frac{\ell-1}{2}.
+s=\frac{\ell-1}{2}.
 $$
 The **Peirce list** is the set over all chains; the maximum is $0$ when no chain of length $2$ exists.
 
@@ -146,7 +146,7 @@ because every product is symmetric. The two idempotents do not make a chain; the
 
 **Definition.** Let $A$ be finite-dimensional over a field. Its **Ext quiver** has one vertex for each simple module and one arrow for each basis element of $\operatorname{Ext}^1$ between two simple modules. When the field is algebraically closed, Gabriel's theorem identifies the basic algebra Morita equivalent to $A$ with $kQ/I$, with $Q$ a finite quiver and $I$ an admissible ideal. Let $\ell_Q$ be one plus the maximum number of arrows in a nonzero path of $kQ/I$. The **quiver spin** is
 $$
-j_Q=\frac{\ell_Q-1}{2}.
+s_Q=\frac{\ell_Q-1}{2}.
 $$
 
 **The six algebras.**
@@ -170,13 +170,13 @@ $$
 
 **Definition.** Let $S\in A$ be semisimple over the algebraic closure, and let $L_S$ be left multiplication by $S$ on $A$. Suppose the distinct eigenvalues of $L_S$ are
 $$
-jd,\ (j-1)d,\ \ldots,\ -jd
+sd,\ (s-1)d,\ \ldots,\ -sd
 $$
-for some $j\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The **spectral spin** is the number of levels minus one over two,
+for some $s\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The **spectral spin** is the number of levels minus one over two,
 $$
-j=\frac{r-1}{2},
+s=\frac{r-1}{2},
 $$
-where $r=2j+1$ is the number of distinct eigenvalues. The **spectral list** is the set over all such $S$.
+where $r=2s+1$ is the number of distinct eigenvalues. The **spectral list** is the set over all such $S$.
 
 **The six algebras.**
 
@@ -201,9 +201,9 @@ where $r=2j+1$ is the number of distinct eigenvalues. The **spectral list** is t
 
 **Definition.** Let $(S,U,V)$ be a spin triple and let $A$ act on itself by the adjoint action. The weights of $\operatorname{ad}_S$ are the differences $\lambda_i-\lambda_j$ of the weights of $S$. The **adjoint spin** is the top weight
 $$
-j_{\mathrm{ad}}=2j_{\mathrm{def}},
+s_{\mathrm{ad}}=2s_{\mathrm{def}},
 $$
-where $j_{\mathrm{def}}$ is the defining spin. The **adjoint list** is the set over all triples.
+where $s_{\mathrm{def}}$ is the defining spin. The **adjoint list** is the set over all triples.
 
 **The six algebras.**
 
@@ -264,15 +264,15 @@ with the half-angle. The coefficient $\tfrac12$ is the top eigenvalue of the gen
 
 ## 9. The Unrestricted Representation Labels
 
-**Highest weight.** Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The **highest-weight spin** is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $j=\lambda(H)/2$.
+**Highest weight.** Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The **highest-weight spin** is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $s=\lambda(H)/2$.
 
 **Casimir.** Let $\mathfrak{g}$ be semisimple with an invariant form and Casimir $C$, and let $C|_V=c_V I$. For $\mathfrak{sl}_2$ the **Casimir spin** is
 $$
-j=\frac{-1+\sqrt{1+4c_V}}{2}.
+s=\frac{-1+\sqrt{1+4c_V}}{2}.
 $$
 The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of the full algebra.
 
-**Coadjoint orbit.** Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $j=\operatorname{Area}(O_f)/(4\pi)$.
+**Coadjoint orbit.** Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $s=\operatorname{Area}(O_f)/(4\pi)$.
 
 **The six algebras.** The table gives the unrestricted range, that is, the values over all representations of the chosen algebra.
 
@@ -280,12 +280,12 @@ The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of
 |---|---|---|---|
 | $\mathbb{C}$ | $0$ | $0$ | $0$ |
 | $\mathbb{D}$ | $0$ | $0$ | $0$ |
-| $\mathbb{H}$ | all $j\ge0$ | all $j\ge0$ | all $j\ge0$ |
-| $M_2(\mathbb{C})$ | all $j\ge0$ | all $j\ge0$ | all $j\ge0$ |
-| $M_3(\mathbb{C})$ | all $j$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
-| $M_5(\mathbb{C})$ | all $j$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
+| $\mathbb{H}$ | all $s\ge0$ | all $s\ge0$ | all $s\ge0$ |
+| $M_2(\mathbb{C})$ | all $s\ge0$ | all $s\ge0$ | all $s\ge0$ |
+| $M_3(\mathbb{C})$ | all $s$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
+| $M_5(\mathbb{C})$ | all $s$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
 
-**Why it fails on $M_2(\mathbb{C})$.** Over all representations, every $j\ge0$ occurs. The set is infinite; it does not produce the finite experimental list. The restricted versions, read on the natural family, are in the general article.
+**Why it fails on $M_2(\mathbb{C})$.** Over all representations, every $s\ge0$ occurs. The set is infinite; it does not produce the finite experimental list. The restricted versions, read on the natural family, are in the general article.
 
 **On $M_3$ and $M_5$.** The highest weight of $\mathfrak{sl}_n$ is a vector, not a single number. The Casimir of the full algebra on the defining module gives $0.758$ and $1.128$, which are not half-integers. The coadjoint orbit is a flag variety, and the area formula does not produce a single spin. The definitions are $A_1$ definitions; they need a chosen $\mathfrak{sl}_2$ and a chosen representation.
 
@@ -295,7 +295,7 @@ The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of
 
 ## 10. The Circle Weight and the Ribbon Twist
 
-**Circle weight.** Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ijt}$ on the highest-weight space. The **weight** is $j\in\mathbb{R}/\mathbb{Z}$, and the **$2\pi$ sign** is $(-1)^{2j}$. Only $j$ modulo $1$ is defined; the integer part requires a lift.
+**Circle weight.** Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ist}$ on the highest-weight space. The **weight** is $s\in\mathbb{R}/\mathbb{Z}$, and the **$2\pi$ sign** is $(-1)^{2s}$. Only $s$ modulo $1$ is defined; the integer part requires a lift.
 
 **Ribbon twist.** Let $\mathcal{C}$ be a ribbon category, $X$ a simple object, and $\theta_X$ its twist. Write $\theta_X=e^{2\pi ih_X}$ with $h_X\in\mathbb{Q}/\mathbb{Z}$; $h_X$ is the **topological spin**.
 

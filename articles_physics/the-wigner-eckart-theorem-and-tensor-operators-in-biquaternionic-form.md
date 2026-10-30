@@ -118,7 +118,7 @@ $$
 
 where the first factor is the Clebsch–Gordan coefficient of the coupling $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\otimes|kq\rangle\to|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle$ and the second is the **reduced matrix element**, a number that depends on $s_{\mathrm{tot}},s_{\mathrm{fin}},k$ and on the operator but not on $s_{\mathrm{tot},z},s_{\mathrm{fin},z},\mu$. The conventions are those of the companion problem of the coupling: the Clebsch–Gordan coefficients satisfy the Condon–Shortley phase convention, and the reduced matrix element is defined by the equation above.
 
-The content of the theorem is the factorisation. The dependence on the magnetic quantum numbers is carried entirely by the Clebsch–Gordan coefficient, which is pure geometry; all the dynamics of the operator is compressed into one number per triple $(s_{\mathrm{fin}},k,j)$. Equivalently: **for fixed $s_{\mathrm{fin}},k,j$ the ratios**
+The content of the theorem is the factorisation. The dependence on the magnetic quantum numbers is carried entirely by the Clebsch–Gordan coefficient, which is pure geometry; all the dynamics of the operator is compressed into one number per triple $(s_{\mathrm{fin}},k,s_{\mathrm{tot}})$. Equivalently: **for fixed $s_{\mathrm{fin}},k,s_{\mathrm{tot}}$ the ratios**
 
 $$
 \frac{\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle}{\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle}
@@ -127,7 +127,7 @@ $$
 
 are equal for every choice of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ permitted by the selection rules.
 
-The proof is standard and short. Both sides of the claimed identity satisfy the same recursion relation obtained by commuting the tensor operator with the ladder operators. The recursion determines all the matrix elements of a given $(s_{\mathrm{fin}},k,j)$ from one of them, and the claimed form satisfies it by construction; the ratio is therefore the same for every allowed triple. Equivalently, the theorem is the statement of Schur's lemma for the intertwining operators of the rotation group. The result is imported here as standard, together with the formal proof; the citations at the end of the article give the derivation.
+The proof is standard and short. Both sides of the claimed identity satisfy the same recursion relation obtained by commuting the tensor operator with the ladder operators. The recursion determines all the matrix elements of a given $(s_{\mathrm{fin}},k,s_{\mathrm{tot}})$ from one of them, and the claimed form satisfies it by construction; the ratio is therefore the same for every allowed triple. Equivalently, the theorem is the statement of Schur's lemma for the intertwining operators of the rotation group. The result is imported here as standard, together with the formal proof; the citations at the end of the article give the derivation.
 
 Two selection rules follow from the Clebsch–Gordan factor and hold independently of the dynamics:
 
@@ -136,7 +136,7 @@ $$
 |s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k\;},
 $$
 
-the first from the vanishing of the Clebsch–Gordan coefficient unless the magnetic quantum numbers add, the second from the multiplet range of the coupling. For a scalar operator, $k=\mu=0$ and $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};0,0|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle=\delta_{j s_{\mathrm{fin}}}\delta_{m m_2}$, so the theorem reduces to the statement that a scalar operator is diagonal in the multiplets and has one reduced matrix element per $s_{\mathrm{tot}}$ — the content of Schur's lemma for the trivial representation. For a vector operator, $k=1$ and the selection rule is $\Delta j\in\{-1,0,+1\}$ with $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$.
+the first from the vanishing of the Clebsch–Gordan coefficient unless the magnetic quantum numbers add, the second from the multiplet range of the coupling. For a scalar operator, $k=\mu=0$ and $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};0,0|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle=\delta_{s_{\mathrm{tot}} s_{\mathrm{fin}}}\delta_{m m_2}$, so the theorem reduces to the statement that a scalar operator is diagonal in the multiplets and has one reduced matrix element per $s_{\mathrm{tot}}$ — the content of Schur's lemma for the trivial representation. For a vector operator, $k=1$ and the selection rule is $\Delta s_{\mathrm{tot}}\in\{-1,0,+1\}$ with $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$.
 
 ## Verification in the Coupled Two-Spin Space
 

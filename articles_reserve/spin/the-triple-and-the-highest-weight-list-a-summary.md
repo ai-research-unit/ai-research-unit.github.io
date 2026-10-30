@@ -23,13 +23,13 @@ Let $A$ be a finite-dimensional unital algebra over a field of characteristic ze
 - the **weight string**, the multiset of those eigenvalues;
 - the **highest weight**, the largest eigenvalue for a chosen order;
 - an **$\mathfrak{sl}_2$ triple** $(h,u,v)$ with $[h,u]=2u$, $[h,v]=-2v$ and $[u,v]=h$, when the brackets close;
-- the **irreducible modules** $W_j$ of that triple, of dimension $2j+1$ and weights $j,j-1,\dots,-j$.
+- the **irreducible modules** $W_s$ of that triple, of dimension $2s+1$ and weights $s,s-1,\dots,-s$.
 
-These are standard representation theory. They are correct. They are not a definition of spin, because none of them names a physical quantity. The passage from the highest weight $j$ to the spin requires the identification $h=2S_z/\hbar$, the identification of $\rho$ with the rotation action, and the identification of $W$ with the rest-frame one-particle space. Those three identifications are physical hypotheses. They are not supplied by $A$, by $h$, or by the triple.
+These are standard representation theory. They are correct. They are not a definition of spin, because none of them names a physical quantity. The passage from the highest weight $s$ to the spin requires the identification $h=2S_z/\hbar$, the identification of $\rho$ with the rotation action, and the identification of $W$ with the rest-frame one-particle space. Those three identifications are physical hypotheses. They are not supplied by $A$, by $h$, or by the triple.
 
 ## The Triple as a General Definition
 
-**The proposal.** For every finite-dimensional algebra $A$, define the spin list as the set of spins $j$ of the irreducible carriers of every $\mathfrak{sl}_2$ triple contained in $A$ (or in $A\otimes_{\mathbb{R}}\mathbb{C}$). On $M_2(\mathbb{C})$ this returns $\{0,\tfrac12,1\}$: the centre, the defining module and the traceless part of the adjoint.
+**The proposal.** For every finite-dimensional algebra $A$, define the spin list as the set of spins $s$ of the irreducible carriers of every $\mathfrak{sl}_2$ triple contained in $A$ (or in $A\otimes_{\mathbb{R}}\mathbb{C}$). On $M_2(\mathbb{C})$ this returns $\{0,\tfrac12,1\}$: the centre, the defining module and the traceless part of the adjoint.
 
 **Why it is not a definition.**
 
@@ -50,7 +50,7 @@ These are standard representation theory. They are correct. They are not a defin
 1. **It is a list of top weights.** The output is $\{\lambda_{\max}(\rho(h|_W))/2\}$ over a selected family $W$. The selection of the family is extra data, and the normalisation by $2$ is a convention imported from the $\mathfrak{sl}_2$ case.
 2. **It agrees with the triple only where the family is the triple's modules.** At $M_2(\mathbb{C})$ the natural family is exactly the three carriers of the triple. Above $M_2(\mathbb{C})$ the family and the triple diverge. The agreement at $n=2$ is the coincidence, not the rule.
 3. **The list is not closed under the operations of the algebra.** Tensor products, direct sums and quotients change the list in a way that no single algebraic definition controls.
-4. **It is either finite by an arbitrary cut or infinite.** Without a cut, every $j\ge0$ occurs over all modules; with a cut, the cut is the definition, not the algebra.
+4. **It is either finite by an arbitrary cut or infinite.** Without a cut, every $s\ge0$ occurs over all modules; with a cut, the cut is the definition, not the algebra.
 
 **What survives.** The highest weight is a correct invariant of a carrier. The article *Representations of Lie Algebras* remains. The claim that the highest-weight list defines spin does not survive.
 
@@ -67,7 +67,7 @@ Neither is a definition of spin.
 
 The test was: a definition is pertinent if it returns exactly $\{0,\tfrac12,1\}$ on $M_2(\mathbb{C})$. The test is necessary for matching the three observed values of the biquaternion sector. It is not sufficient, for three reasons.
 
-1. **At $M_2(\mathbb{C})$ the semisimple part is $\mathfrak{sl}_2$.** The adjoint is the defining module, the Casimir is $j(j+1)$, and the highest weight is the spin of the triple by construction. Every formula that is correct for $\mathfrak{sl}_2$ passes.
+1. **At $M_2(\mathbb{C})$ the semisimple part is $\mathfrak{sl}_2$.** The adjoint is the defining module, the Casimir is $s(s+1)$, and the highest weight is the spin of the triple by construction. Every formula that is correct for $\mathfrak{sl}_2$ passes.
 2. **The test selects by the answer.** It accepts any method that happens to produce the three numbers. A fit is not a definition.
 3. **The next case rejects the fit.** The Casimir list passes the test and returns $0.758$ and $1.303$ at $M_3(\mathbb{C})$. The module list and the orbit list pass at $M_2$ and fail above it. Passing at $M_2$ is an accident of the smallest semisimple case.
 
@@ -77,7 +77,7 @@ The symbol $\tfrac12$ occurs in four roles in the withdrawn material. None of th
 
 | occurrence | what it is | what it is not |
 |---|---|---|
-| $j=\lambda_{\max}/2$ | conversion from root weight to highest-weight label | not a definition of spin |
+| $s=\lambda_{\max}/2$ | conversion from root weight to highest-weight label | not a definition of spin |
 | $S=\tfrac12[U,V]$ | antisymmetrisation of the product | not a normalisation of spin |
 | $\theta/2$ in $\exp(\theta h/2)$ | exponential coordinate of the rotor | not the spin |
 | $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$ | Hermitian normalisation of the adjoint generator | not a half-angle |

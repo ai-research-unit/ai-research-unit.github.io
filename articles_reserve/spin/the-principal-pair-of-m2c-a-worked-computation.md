@@ -140,13 +140,13 @@ The multiplicities are $\mu(-1)=1$, $\mu(0)=2$, $\mu(1)=1$.
 
 ### The Content
 
-**Proposition (multiplicity formula).** If $W\cong\bigoplus_j m_jW_j$ and $\mu(m)$ is the multiplicity of the weight $m$, then
+**Proposition (multiplicity formula).** If $W\cong\bigoplus_s m_sW_s$ and $\mu(m)$ is the multiplicity of the weight $m$, then
 
 $$
-\mu(m)=\sum_{j\ge\lvert m\rvert}m_j,\qquad m_j=\mu(j)-\mu(j+1).
+\mu(m)=\sum_{s\ge\lvert m\rvert}m_s,\qquad m_s=\mu(s)-\mu(s+1).
 $$
 
-*Proof.* The module $W_j$ has exactly one weight at each of $j,j-1,\dots,-j$. It contributes to $\mu(m)$ exactly when $j\ge\lvert m\rvert$; subtracting the formula for $j+1$ leaves $m_j$.
+*Proof.* The module $W_s$ has exactly one weight at each of $s,s-1,\dots,-s$. It contributes to $\mu(m)$ exactly when $s\ge\lvert m\rvert$; subtracting the formula for $s+1$ leaves $m_s$.
 
 Here $m_0=\mu(0)-\mu(1)=2-1=1$ and $m_1=\mu(1)-\mu(2)=1-0=1$.
 
@@ -156,7 +156,7 @@ Here $m_0=\mu(0)-\mu(1)=2-1=1$ and $m_1=\mu(1)-\mu(2)=1-0=1$.
 
 ### The Highest Weight Vectors
 
-A highest weight vector of weight $j$ is a nonzero $h$ with $\operatorname{ad}_Sh=jh$ and $\operatorname{ad}_Uh=0$. The candidates are
+A highest weight vector of weight $s$ is a nonzero $h$ with $\operatorname{ad}_Sh=sh$ and $\operatorname{ad}_Uh=0$. The candidates are
 
 $$
 h_0=I,\qquad h_1=E_{12}.
@@ -168,7 +168,7 @@ From the table of §*The Images of the Matrix Units*, $\operatorname{ad}_UI=0$, 
 
 Applying $\operatorname{ad}_V$:
 
-| $j$ | chain |
+| $s$ | chain |
 |---|---|
 | $0$ | $I\mapsto0$ |
 | $1$ | $E_{12}\mapsto E_{22}-E_{11}\mapsto-2E_{21}\mapsto0$ |
@@ -188,7 +188,7 @@ form a basis of $\mathfrak{gl}_2$. In the basis order $(E_{11},E_{12},E_{21},E_{
 **Result.** The chains are independent and their sum is direct:
 
 $$
-\mathfrak{gl}_2=W_0\oplus W_1,\qquad \dim W_j=2j+1.
+\mathfrak{gl}_2=W_0\oplus W_1,\qquad \dim W_s=2s+1.
 $$
 
 ## The Adjoint Carriers
@@ -245,7 +245,7 @@ $$
 C=\tfrac14I+\tfrac12I=\tfrac34I.
 $$
 
-The eigenvalue is $j(j+1)=\tfrac34$ for $j=\tfrac12$, as it must be.
+The eigenvalue is $s(s+1)=\tfrac34$ for $s=\tfrac12$, as it must be.
 
 On the adjoint module the image of $C$ has characteristic polynomial
 
@@ -253,7 +253,7 @@ $$
 \lambda(\lambda-2)^3,
 $$
 
-with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ and $3$.
+with eigenvalues $0$ and $2=s(s+1)$ for $s=0$ and $s=1$, of multiplicities $1$ and $3$.
 
 **Result.** The Casimir confirms both decompositions.
 
@@ -292,9 +292,9 @@ with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ a
 | $S$ | spin element $\tfrac12[U,V]=\operatorname{diag}(\tfrac12,-\tfrac12)$ |
 | $U,V$ | ladders $E_{12},E_{21}$ |
 | $\operatorname{ad}_X$ | $Y\mapsto XY-YX$ |
-| $W_j$ | irreducible carrier, dimension $2j+1$ |
+| $W_s$ | irreducible carrier, dimension $2s+1$ |
 | $\mu(m)$ | multiplicity of the weight $m$ |
-| $m_j$ | multiplicity of $W_j$ |
+| $m_s$ | multiplicity of $W_s$ |
 | $C$ | Casimir element $S^2+\tfrac12(UV+VU)$ |
 
 ## Further Reading
@@ -303,4 +303,4 @@ with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ a
 - [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the same row in the biquaternion frame.
 - [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](../articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general chain.
 - [Representations of Lie Algebras](../articles_maths/representations-of-lie-algebras.html), for the highest weight classification.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
+- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $s(s+1)$.

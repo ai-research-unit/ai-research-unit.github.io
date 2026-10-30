@@ -113,7 +113,7 @@ The multiplicities sum to $16$.
 
 ### The Content
 
-With $\mu(m)$ as above and the multiplicity formula $m_j=\mu(j)-\mu(j+1)$,
+With $\mu(m)$ as above and the multiplicity formula $m_s=\mu(s)-\mu(s+1)$,
 
 $$
 m_0=4-3=1,\qquad m_1=3-2=1,\qquad m_2=2-1=1,\qquad m_3=1-0=1.
@@ -125,7 +125,7 @@ $$
 
 ### The Highest Weight Vectors
 
-A highest weight vector of weight $j$ satisfies $\operatorname{ad}_Sh=jh$ and $\operatorname{ad}_Uh=0$. The four are
+A highest weight vector of weight $s$ satisfies $\operatorname{ad}_Sh=sh$ and $\operatorname{ad}_Uh=0$. The four are
 
 $$
 h_0=I,\qquad h_1=E_{12}+\tfrac{2}{\sqrt3}E_{23}+E_{34},\qquad h_2=E_{13}+E_{24},\qquad h_3=E_{14}.
@@ -137,14 +137,14 @@ The coefficients of $h_1$ are forced by $\operatorname{ad}_Uh_1=0$: the coeffici
 
 Applying $\operatorname{ad}_V$:
 
-| $j$ | chain length |
+| $s$ | chain length |
 |---|---|
 | $0$ | $1$ |
 | $1$ | $3$ |
 | $2$ | $5$ |
 | $3$ | $7$ |
 
-The lengths are $2j+1$, the dimensions of $W_j$. The chain of $h_3=E_{14}$ begins
+The lengths are $2s+1$, the dimensions of $W_s$. The chain of $h_3=E_{14}$ begins
 
 $$
 E_{14}\mapsto\sqrt3\,(E_{24}-E_{13})\mapsto 2\sqrt3\,(E_{12}-\sqrt3\,E_{23}+E_{34}).
@@ -152,7 +152,7 @@ $$
 
 ### Independence
 
-The $16$ chain vectors, ordered by $j$ and then by lowering, form a basis of $\mathfrak{gl}_4$. In the basis order $(E_{11},E_{12},\dots,E_{44})$ the determinant of the matrix of columns is
+The $16$ chain vectors, ordered by $s$ and then by lowering, form a basis of $\mathfrak{gl}_4$. In the basis order $(E_{11},E_{12},\dots,E_{44})$ the determinant of the matrix of columns is
 
 $$
 -2^{28}3^{8}5^{5}\neq0.
@@ -220,7 +220,7 @@ $$
 C=S^2+\tfrac12(UV+VU)=\tfrac{15}{4}I,
 $$
 
-and $\tfrac{15}{4}=j(j+1)$ for $j=\tfrac32$.
+and $\tfrac{15}{4}=s(s+1)$ for $s=\tfrac32$.
 
 On $\mathfrak{gl}_4$ the characteristic polynomial of the image of $C$ is
 
@@ -228,7 +228,7 @@ $$
 \lambda(\lambda-12)^7(\lambda-6)^5(\lambda-2)^3.
 $$
 
-The eigenvalues are $0,2,6,12$, which are $j(j+1)$ for $j=0,1,2,3$, with multiplicities $1,3,5,7$.
+The eigenvalues are $0,2,6,12$, which are $s(s+1)$ for $s=0,1,2,3$, with multiplicities $1,3,5,7$.
 
 **Result.** The Casimir recovers the content $0,1,2,3$ without counting weights.
 
@@ -267,10 +267,10 @@ The eigenvalues are $0,2,6,12$, which are $j(j+1)$ for $j=0,1,2,3$, with multipl
 | $S$ | spin element $\operatorname{diag}(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32)$ |
 | $U,V$ | ladders $U^{\mathsf T}=V$ |
 | $\operatorname{ad}_X$ | $Y\mapsto XY-YX$ |
-| $W_j$ | irreducible carrier, dimension $2j+1$ |
+| $W_s$ | irreducible carrier, dimension $2s+1$ |
 | $\mu(m)$ | multiplicity of the weight $m$ |
-| $m_j$ | multiplicity of $W_j$ |
-| $h_j$ | highest weight vector of weight $j$ |
+| $m_s$ | multiplicity of $W_s$ |
+| $h_s$ | highest weight vector of weight $s$ |
 | $C$ | Casimir element $S^2+\tfrac12(UV+VU)$ |
 
 ## Further Reading
@@ -279,4 +279,4 @@ The eigenvalues are $0,2,6,12$, which are $j(j+1)$ for $j=0,1,2,3$, with multipl
 - [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the adjoint decomposition.
 - [The Spin of the Principal Pair of $M_3(\mathbb{C})$](the-principal-pair-of-m3c-a-worked-computation.html), for the case where the two columns agree.
 - [Representations of Lie Algebras](../articles_maths/representations-of-lie-algebras.html), for the highest weight classification.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
+- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $s(s+1)$.

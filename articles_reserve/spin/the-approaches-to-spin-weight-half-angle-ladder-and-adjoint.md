@@ -7,21 +7,21 @@
 **The invariant.** Let $A$ be a finite-dimensional algebra over a field of characteristic zero, $h$ a grading element (a frame root, a Cartan element), and $W$ a carrier on which $h$ acts. The weights are the eigenvalues of $\rho(h)$; the spin is half the highest weight:
 
 $$
-j(W)=\frac{\lambda_{\max}\bigl(\rho(h|_W)\bigr)}{2}.
+s(W)=\frac{\lambda_{\max}\bigl(\rho(h|_W)\bigr)}{2}.
 $$
 
 The factor $\tfrac12$ converts the root's weights, which are twice the spin weights, to the spin. Equivalently, with $S=\tfrac12 h$, the spin is the highest weight of $S$.
 
 **The four readings.**
 
-- **Weight.** $j=\lambda_{\max}/2$. The frame root $h=2e-1$ of the biquaternion has weights $\pm1$ on the spinor and $0,\pm2$ on the traceless part, giving $j=\tfrac12$ and $j=1$.
+- **Weight.** $s=\lambda_{\max}/2$. The frame root $h=2e-1$ of the biquaternion has weights $\pm1$ on the spinor and $0,\pm2$ on the traceless part, giving $s=\tfrac12$ and $s=1$.
 - **Half-angle.** The rotor is $\exp(\theta h/2)$. The exponent is $\theta/2$; the phase on a weight-$m$ vector is $e^{i\theta m}$. The half-angle is the coordinate, not the spin.
-- **Ladder.** A chain of length $\ell$ carries $W_{(\ell-1)/2}$; the spin is $j=(\ell-1)/2$. The chain is the weight string made concrete.
-- **Adjoint.** The adjoint action doubles the defining weights; its spin is $2j$. Integer spins live on the adjoint, half-integer spins on the defining or spinor module.
+- **Ladder.** A chain of length $\ell$ carries $W_{(\ell-1)/2}$; the spin is $s=(\ell-1)/2$. The chain is the weight string made concrete.
+- **Adjoint.** The adjoint action doubles the defining weights; its spin is $2s$. Integer spins live on the adjoint, half-integer spins on the defining or spinor module.
 
-**The correction.** The polar articles do not identify the half-angle with the spin. *Chirality: The Conjugate Pair* says that the half-angle is not the spin and not a normalisation of the spin. *The General Definition of Spin* says that it is a coordinate of the weight, not the highest weight. *Spinors as Peirce Coordinates in $M_n(\mathbb{C})$* (the $M_3$ to $M_6$ articles) says that the Peirce spinor carries no half-angle at all. *Integer-Spin Quantization and the Adjoint Action on the Material Sector* says that the factor $\tfrac12$ in the adjoint generator is the Hermitian normalisation, not a half-angle. The apparent conflict is a surface reading. At $j=\tfrac12$ the coefficient $\tfrac12$ in $\theta/2$ and the spin are both $\tfrac12$, and the numerical coincidence hides the difference; at $j=1$ the coefficient is still $\tfrac12$ while the spin is $1$.
+**The correction.** The polar articles do not identify the half-angle with the spin. *Chirality: The Conjugate Pair* says that the half-angle is not the spin and not a normalisation of the spin. *The General Definition of Spin* says that it is a coordinate of the weight, not the highest weight. *Spinors as Peirce Coordinates in $M_n(\mathbb{C})$* (the $M_3$ to $M_6$ articles) says that the Peirce spinor carries no half-angle at all. *Integer-Spin Quantization and the Adjoint Action on the Material Sector* says that the factor $\tfrac12$ in the adjoint generator is the Hermitian normalisation, not a half-angle. The apparent conflict is a surface reading. At $s=\tfrac12$ the coefficient $\tfrac12$ in $\theta/2$ and the spin are both $\tfrac12$, and the numerical coincidence hides the difference; at $s=1$ the coefficient is still $\tfrac12$ while the spin is $1$.
 
-**The four halves.** The symbol $\tfrac12$ occurs four times in the story, with four different roles: the weight-to-spin conversion $j=\lambda_{\max}/2$; the antisymmetrisation $S=\tfrac12[U,V]$; the half-angle $\theta/2$ of the rotor; and the Hermitian normalisation $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$. They are not the same half. Conflating them is the source of most of the confusion, and §6 separates them in a table.
+**The four halves.** The symbol $\tfrac12$ occurs four times in the story, with four different roles: the weight-to-spin conversion $s=\lambda_{\max}/2$; the antisymmetrisation $S=\tfrac12[U,V]$; the half-angle $\theta/2$ of the rotor; and the Hermitian normalisation $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$. They are not the same half. Conflating them is the source of most of the confusion, and §6 separates them in a table.
 
 **Roadmap.** §1 states the weight-first definition and the biquaternion. §2 treats the half-angle and the polar word. §3 treats the ladder, the Peirce width and the general-$n$ content. §4 treats the adjoint and integer spin. §5 treats the Jordan type and the degrees of degeneracy. §6 collects the four halves and the reconciliations. §7 checks the numbers. The four principal-pair articles of the reserve have been rewritten to cover every width; this article is a synthesis of *The General Definition of Spin*, *The Spin of a Biquaternion*, *The Weight of a Frame Root and the Spin Quantum Number*, *The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$*, *Integer-Spin Quantization and the Adjoint Action on the Material Sector*, *Chirality: The Conjugate Pair* and the polar-operator articles.
 
@@ -40,14 +40,14 @@ A **frame root** is a linear combination $h=\sum_i s_i e_i$ with scalar weights 
 **Definition (carrier, weight, spin).** A **carrier** is a module of the triple or of the algebra on which $h$ acts. Its **weights** are the eigenvalues of $\rho(h)$; its **highest weight** is $\lambda_{\max}$; its **spin** is
 
 $$
-j=\frac{\lambda_{\max}}{2}.
+s=\frac{\lambda_{\max}}{2}.
 $$
 
 The spin is a property of the carrier and the root, not of the algebra alone.
 
 **The factor of two.** The spin element $S$ has weights $m$, and the frame root is $h=2S$, with weights $2m$. The spin is the highest $m$, hence half the highest weight of $h$. In the corpus's notation the root is written $H=2S$ when the integer weights are wanted, and $S$ when the spin weights are wanted. The two notations name the same triple.
 
-**Remark (a root with gaps).** A frame root whose weights on a carrier do not form a full string $j,j-1,\dots,-j$ does not define an irreducible carrier. The highest weight divided by two is then the top of a reducible content, not the spin of a single summand. The weight-first definition is therefore used with a root that is the grading of a spin triple; the string is full by construction. The ladder of §3 is the certificate of fullness.
+**Remark (a root with gaps).** A frame root whose weights on a carrier do not form a full string $s,s-1,\dots,-s$ does not define an irreducible carrier. The highest weight divided by two is then the top of a reducible content, not the spin of a single summand. The weight-first definition is therefore used with a root that is the grading of a spin triple; the string is full by construction. The ladder of §3 is the certificate of fullness.
 
 ### The Biquaternion
 
@@ -67,16 +67,16 @@ $$
 **The spinor carrier.** On $S_+=\mathbb{B}\tilde\Pi_+$, with basis $(\tilde\Pi_+,\vec\Upsilon_+)$, the left action of $h$ has weights $+1$ and $-1$. The highest weight is $1$, so
 
 $$
-j=\frac{1}{2}.
+s=\frac{1}{2}.
 $$
 
 **The traceless carrier.** On $V=\ker\operatorname{tr}$, with basis $(\vec\Upsilon_-,\tilde\Xi,\vec\Upsilon_+)$, the adjoint action of $h$ has weights $+2,0,-2$. The highest weight is $2$, so
 
 $$
-j=\frac{2}{2}=1.
+s=\frac{2}{2}=1.
 $$
 
-**The centre.** On $\mathbb{C}e_t$ the adjoint action of $h$ is zero, so $j=0$.
+**The centre.** On $\mathbb{C}e_t$ the adjoint action of $h$ is zero, so $s=0$.
 
 The three carriers give the elementary list
 
@@ -103,7 +103,7 @@ The weights of $h$ are $n-1,n-3,\dots,-(n-1)$, and the spin is $(n-1)/2$. This i
 
 **The general root.** A root of the diagonal frame, $h=\sum_i s_iE_{ii}$, has weights $s_i$; the spin is $\max s_i/2$ when the weights form a full string. The frame root is thus the general form of the weight-first definition, and the biquaternion root $2e-1$ is the two-idempotent case.
 
-**Result.** The weight-first definition is one formula, $j=\lambda_{\max}(\rho(h))/2$, and it gives $0,\tfrac12,1$ for the biquaternion and $(n-1)/2$ for the principal chain. The ladder and adjoint readings compute the same invariant on other objects.
+**Result.** The weight-first definition is one formula, $s=\lambda_{\max}(\rho(h))/2$, and it gives $0,\tfrac12,1$ for the biquaternion and $(n-1)/2$ for the principal chain. The ladder and adjoint readings compute the same invariant on other objects.
 
 ## 2. The Half-Angle
 
@@ -123,7 +123,7 @@ $$
 
 in the compact case, and $e^{\theta m}$ in the hyperbolic case. The exponent coefficient is $\theta/2$; the phase angle is $\theta m$. The **half-angle** is $\theta/2$; the **spin** is the largest $m$.
 
-For the spinor, $m=\pm\tfrac12$: the rotor acts by $e^{\pm i\theta/2}$, and the coefficient of $\theta$ in $\theta/2$ is $\tfrac12$. For the vector, $m=\pm1,0$: the rotor acts by $e^{\pm i\theta}$, and the coefficient is still $\tfrac12$, while the spin is $1$. The coefficient does not change with the carrier; the spin does. The equality at the spinor is the numerical coincidence of $j=\tfrac12$ with the coefficient $\tfrac12$, not an identity of the two notions.
+For the spinor, $m=\pm\tfrac12$: the rotor acts by $e^{\pm i\theta/2}$, and the coefficient of $\theta$ in $\theta/2$ is $\tfrac12$. For the vector, $m=\pm1,0$: the rotor acts by $e^{\pm i\theta}$, and the coefficient is still $\tfrac12$, while the spin is $1$. The coefficient does not change with the carrier; the spin does. The equality at the spinor is the numerical coincidence of $s=\tfrac12$ with the coefficient $\tfrac12$, not an identity of the two notions.
 
 **Result.** The rotor stores half the rotation angle in its exponent; the spin is the highest weight on which the rotor acts. The half-angle is a coordinate of the rotor, not a property of the carrier.
 
@@ -166,7 +166,7 @@ The spin ladder is on the degenerate side: the nilpotents $U,V$ have norm zero, 
 The corpus states the separation in four places, and the synthesis only collects them.
 
 - *Chirality: The Conjugate Pair*: "The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier... The half-angle is not the spin and it is not a normalisation of the spin."
-- *The General Definition of Spin*: "The angle $\theta/2$ of the rotor is half the exponential coordinate $\theta$ of the spin operator; it is a coordinate of the weight, not the highest weight. The spin is $j$."
+- *The General Definition of Spin*: "The angle $\theta/2$ of the rotor is half the exponential coordinate $\theta$ of the spin operator; it is a coordinate of the weight, not the highest weight. The spin is $s$."
 - *Spinors as Peirce Coordinates in $M_n(\mathbb{C})$* (the $M_3$ to $M_6$ articles): "The Peirce spinor carries no half-angle. A half-angle requires two further choices: a one-parameter path of families generated by rotations, and a lift of that path to a double cover of the rotation group... the half-angle is a path-and-lift parameter, not a Peirce object."
 - *Integer-Spin Quantization and the Adjoint Action on the Material Sector*: "The factor $\tfrac12$ in $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$ is the Hermitian normalisation, not a half-angle... The half-angle belongs to the one-sided exponent of a unit rotor, not to this generator."
 
@@ -188,19 +188,19 @@ $$
 [S,U]=U,\qquad [S,V]=-V,\qquad [U,V]=2S .
 $$
 
-**Theorem (the chain lemma).** Let $U$ be nilpotent and $x_0,\dots,x_{\ell-1}$ a Jordan chain, $Ux_0=0$, $Ux_k=x_{k-1}$. Put $j=(\ell-1)/2$ and define
+**Theorem (the chain lemma).** Let $U$ be nilpotent and $x_0,\dots,x_{\ell-1}$ a Jordan chain, $Ux_0=0$, $Ux_k=x_{k-1}$. Put $s=(\ell-1)/2$ and define
 
 $$
-Sx_k=(j-k)x_k,\qquad
+Sx_k=(s-k)x_k,\qquad
 Vx_k=(k+1)(\ell-1-k)x_{k+1}\ (k<\ell-1),\qquad
 Vx_{\ell-1}=0 .
 $$
 
-Then $(S,U,V)$ is a spin triple on the span of the chain, the weights of $S$ are $j,j-1,\dots,-j$, and the spin is $j$.
+Then $(S,U,V)$ is a spin triple on the span of the chain, the weights of $S$ are $s,s-1,\dots,-s$, and the spin is $s$.
 
-*Proof.* The three relations are checked on the chain: $[S,U]x_k=Ux_k$, $[S,V]x_k=-Vx_k$, and $[U,V]x_k=2(j-k)x_k=2Sx_k$. The weights are the eigenvalues of $S$.
+*Proof.* The three relations are checked on the chain: $[S,U]x_k=Ux_k$, $[S,V]x_k=-Vx_k$, and $[U,V]x_k=2(s-k)x_k=2Sx_k$. The weights are the eigenvalues of $S$.
 
-**Result.** A chain of length $\ell$ carries $W_{(\ell-1)/2}$; the spin is half the length minus one half. The triple is the certificate that the string $j,j-1,\dots,-j$ is full, not a second definition of spin.
+**Result.** A chain of length $\ell$ carries $W_{(\ell-1)/2}$; the spin is half the length minus one half. The triple is the certificate that the string $s,s-1,\dots,-s$ is full, not a second definition of spin.
 
 **Remark (the antisymmetrisation half).** The factor $\tfrac12$ in $S=\tfrac12[U,V]$ is the antisymmetrisation of the product. It is not the weight-to-spin factor and not the half-angle. The symmetric part is the central scalar $\tfrac12\{\tilde\Upsilon_-,\tilde\Upsilon_+\}=\tfrac12e_t$ in the biquaternion, and it carries no weight; the antisymmetric part carries the whole weight content.
 
@@ -214,7 +214,7 @@ $$
 [\vec\Upsilon_-,\vec\Upsilon_+]=\tilde\Pi_+-\tilde\Pi_-=2\tilde S_{\vec u}.
 $$
 
-On the spinor $S_+$ the chain has length $2$, so $j=\tfrac12$. On the traceless part the adjoint chain has length $3$, so $j=1$. The ladder reproduces the weight-first numbers without computing an eigenvalue.
+On the spinor $S_+$ the chain has length $2$, so $s=\tfrac12$. On the traceless part the adjoint chain has length $3$, so $s=1$. The ladder reproduces the weight-first numbers without computing an eigenvalue.
 
 ### The General $n$ Content
 
@@ -227,10 +227,10 @@ $$
 so the defining spin is
 
 $$
-j_{\mathrm{def}}=\frac{\lambda_1-1}{2},
+s_{\mathrm{def}}=\frac{\lambda_1-1}{2},
 $$
 
-and the multiplicity of $W_j$ is the number of blocks of size $2j+1$. The Jordan type is recovered from the content; the degeneracy type and the spin content are one datum.
+and the multiplicity of $W_s$ is the number of blocks of size $2s+1$. The Jordan type is recovered from the content; the degeneracy type and the spin content are one datum.
 
 The adjoint content is
 
@@ -242,7 +242,7 @@ $$
 with the Clebsch–Gordan decomposition of each product. The adjoint spin is
 
 $$
-j_{\mathrm{adj}}=\lambda_1-1=2j_{\mathrm{def}},
+s_{\mathrm{adj}}=\lambda_1-1=2s_{\mathrm{def}},
 $$
 
 and the content can contain half-integer summands even though the adjoint spin is an integer. The elementary list is
@@ -255,7 +255,7 @@ which is the principal list of $M_{\lambda_1}$. The possible lists are the princ
 
 **Example ($M_5$).**
 
-| $\lambda$ | $\lambda_1$ | $\dim\mathcal O_\lambda$ | $j_{\mathrm{def}}$ | adjoint content |
+| $\lambda$ | $\lambda_1$ | $\dim\mathcal O_\lambda$ | $s_{\mathrm{def}}$ | adjoint content |
 |---|---|---|---|---|
 | $(5)$ | $5$ | $20$ | $2$ | $0,1,2,3,4$ |
 | $(4,1)$ | $4$ | $18$ | $\tfrac32$ | $0(2),1(1),\tfrac32(2),2(1),3(1)$ |
@@ -265,7 +265,7 @@ which is the principal list of $M_{\lambda_1}$. The possible lists are the princ
 | $(2,1,1,1)$ | $2$ | $8$ | $\tfrac12$ | $0(10),\tfrac12(6),1(1)$ |
 | $(1^5)$ | $1$ | $0$ | no pair | $0(25)$ |
 
-The notation $j(m)$ means the summand $W_j$ with multiplicity $m$; an entry without a parenthesis has multiplicity one. The two types $(3,2)$ and $(3,1,1)$ have the same defining spin and the same elementary list, but different adjoint content.
+The notation $s(m)$ means the summand $W_s$ with multiplicity $m$; an entry without a parenthesis has multiplicity one. The two types $(3,2)$ and $(3,1,1)$ have the same defining spin and the same elementary list, but different adjoint content.
 
 ### The Peirce Width
 
@@ -275,11 +275,11 @@ The Jordan type is one way to organise the content. A second is the Peirce frame
 $$
 P_kP_l=\delta_{kl}P_k,\qquad \sum_{k=1}^{m}P_k=1_{B_m}.
 $$
-The labels are $j_k=(m+1)/2-k$, and the grading element is $S=\sum_{k=1}^{m}j_kP_k$.
+The labels are $s_k=(m+1)/2-k$, and the grading element is $S=\sum_{k=1}^{m}s_kP_k$.
 
 **The Peirce table.** On the line $A_{kl}=P_kAP_l=\mathbb{C}E_{kl}$,
 $$
-L_S(E_{k1})=j_kE_{k1},\qquad \operatorname{ad}_S(E_{kl})=(l-k)E_{kl}.
+L_S(E_{k1})=s_kE_{k1},\qquad \operatorname{ad}_S(E_{kl})=(l-k)E_{kl}.
 $$
 The first column $B_mP_1$ is $W_{(m-1)/2}$, of spin $(m-1)/2$. The block $B_m$ under the adjoint action is $W_0\oplus\cdots\oplus W_{m-1}$, of spin $m-1$.
 
@@ -324,7 +324,7 @@ $$
 J_3\vec e_x=i\vec e_y,\qquad J_3\vec e_y=-i\vec e_x,\qquad J_3\vec e_z=0,
 $$
 
-so the weights are $+1,-1,0$, and the spin is $1$. The quadratic Casimir is $J^2=2I$, which is $j(j+1)$ at $j=1$. The weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ is the polarization triad of the massive vector field.
+so the weights are $+1,-1,0$, and the spin is $1$. The quadratic Casimir is $J^2=2I$, which is $s(s+1)$ at $s=1$. The weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ is the polarization triad of the massive vector field.
 
 **The material sector.** The material sector splits as
 
@@ -340,7 +340,7 @@ of real dimensions $1$ and $3$: the scalar direction carries spin $0$, the vecto
 
 Two different halves are visible in the adjoint formula. The factor $\tfrac12$ in $J_k$ is the Hermitian normalisation, and the factor $2$ in $\operatorname{ad}_{\vec u}=2[\vec u\times]$ is the doubling that turns the exponent $\theta/2$ into the full angle $\theta$. Neither is the weight-to-spin factor. The half-angle of the one-sided spinor action belongs to $L$, not to $\operatorname{ad}$.
 
-The adjoint's spin is read from the weights: $+1,0,-1$ give $j=1$, and in general the adjoint spin is $2j_{\mathrm{def}}$. The half in $J_k$ does not halve the spin; the weights are already integers.
+The adjoint's spin is read from the weights: $+1,0,-1$ give $s=1$, and in general the adjoint spin is $2s_{\mathrm{def}}$. The half in $J_k$ does not halve the spin; the weights are already integers.
 
 ### The Two Integrality Classes
 
@@ -349,7 +349,7 @@ The two carriers of the biquaternion separate the two integrality classes:
 - the **spinor module** $S_+$ (or $S_-$), a minimal left ideal, carries half-integer spin $\tfrac12$;
 - the **adjoint module** $\mathfrak{gl}_2=\mathbb{C}e_t\oplus V$ carries the integer spins $0$ and $1$.
 
-The separation is structural, not a convention. For the biquaternion, the left action on the spinor has half-integer weights; the adjoint action on the algebra has integer weights. In $M_n(\mathbb{C})$ the same distinction separates the defining carrier $\mathbb{C}^n$, whose spin depends on the triple, from the adjoint $\mathfrak{gl}_n$, whose spin is $2j_{\mathrm{def}}$. The defining carrier is a spinor module only at $n=2$.
+The separation is structural, not a convention. For the biquaternion, the left action on the spinor has half-integer weights; the adjoint action on the algebra has integer weights. In $M_n(\mathbb{C})$ the same distinction separates the defining carrier $\mathbb{C}^n$, whose spin depends on the triple, from the adjoint $\mathfrak{gl}_n$, whose spin is $2s_{\mathrm{def}}$. The defining carrier is a spinor module only at $n=2$.
 
 **Corollary.** The integer-spin quantization of the material sector and the half-integer spin of the spinor are not rival readings of one carrier. They are the two carriers. The adjoint gives the integer tower $0,1,2,\dots$ (the centre, the vector, the symmetric traceless tensors); the defining gives the half-integer value of the biquaternion and the general-$n$ content of §3.
 
@@ -393,7 +393,7 @@ and the orbit of $\lambda$ lies in the closure of the orbit of $\mu$ exactly whe
 
 | occurrence | where | role | what it is not |
 |---|---|---|---|
-| $j=\lambda_{\max}/2$ | weight-first | root weights to spin weights | not the half-angle |
+| $s=\lambda_{\max}/2$ | weight-first | root weights to spin weights | not the half-angle |
 | $S=\tfrac12[U,V]$ | triple | antisymmetrisation of the product | not the weight-to-spin factor |
 | $\exp(\theta h/2)$ | rotor | exponent coefficient (half-angle) | not the spin |
 | $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$ | adjoint | Hermitian normalisation | not a half-angle |
@@ -404,11 +404,11 @@ The table is the whole correction in one place: the same symbol marks four diffe
 
 | approach | object | formula | carrier | what it is not |
 |---|---|---|---|---|
-| weight / frame root | $h$ | $j=\lambda_{\max}(\rho(h))/2$ | defining or adjoint | not the half-angle |
+| weight / frame root | $h$ | $s=\lambda_{\max}(\rho(h))/2$ | defining or adjoint | not the half-angle |
 | half-angle / polar | rotor $\exp(\theta h/2)$ | exponent $\theta/2$ | one-sided spinor action | not the spin |
-| ladder / triple | chain length $\ell$ | $j=(\ell-1)/2$ | triple module | not a new definition |
-| adjoint / material | $\operatorname{ad}_h$ | $j_{\mathrm{adj}}=\lambda_{\max}/2=2j$ | adjoint $\mathfrak{gl}_n$ | not the defining spin |
-| Peirce width | frame $P_1,\dots,P_m$ | $j=(m-1)/2$ on $B_mP_1$; $m-1$ on $B_m$ | block $B_m$ | not a spin by itself; the frame gives the carriers |
+| ladder / triple | chain length $\ell$ | $s=(\ell-1)/2$ | triple module | not a new definition |
+| adjoint / material | $\operatorname{ad}_h$ | $s_{\mathrm{adj}}=\lambda_{\max}/2=2s$ | adjoint $\mathfrak{gl}_n$ | not the defining spin |
+| Peirce width | frame $P_1,\dots,P_m$ | $s=(m-1)/2$ on $B_mP_1$; $m-1$ on $B_m$ | block $B_m$ | not a spin by itself; the frame gives the carriers |
 | Jordan type | partition $\lambda$ | $\bigoplus_iW_{(\lambda_i-1)/2}$ | defining | not the polar cell |
 | Peirce / chirality | Peirce index | — | — | not the spin, not the chirality |
 
@@ -416,19 +416,19 @@ The first four rows are the four readings; the fifth and sixth are two forms of 
 
 ### The Common Formula
 
-For a triple whose defining spin is $j$,
+For a triple whose defining spin is $s$,
 
 $$
-j=\frac{\lambda_{\max}(\rho(h))}{2}=\frac{\ell-1}{2}=\frac{\lambda_1-1}{2},
+s=\frac{\lambda_{\max}(\rho(h))}{2}=\frac{\ell-1}{2}=\frac{\lambda_1-1}{2},
 \qquad
-j_{\mathrm{adj}}=2j=\lambda_1-1 .
+s_{\mathrm{adj}}=2s=\lambda_1-1 .
 $$
 
-The spinor rotation has period $4\pi$ because $j=\tfrac12$; the integer representation has period $2\pi$ because $j$ is an integer. The period is a property of the weight, not of the half-angle.
+The spinor rotation has period $4\pi$ because $s=\tfrac12$; the integer representation has period $2\pi$ because $s$ is an integer. The period is a property of the weight, not of the half-angle.
 
 ### The Corrections
 
-- **The half-angle is not the spin.** It is the exponent coordinate of the rotor; the coefficient of $\theta$ in $\theta/2$ equals the spin only at $j=\tfrac12$, and the equality is numerical. At $j=1$ the coefficient is $\tfrac12$ and the spin is $1$.
+- **The half-angle is not the spin.** It is the exponent coordinate of the rotor; the coefficient of $\theta$ in $\theta/2$ equals the spin only at $s=\tfrac12$, and the equality is numerical. At $s=1$ the coefficient is $\tfrac12$ and the spin is $1$.
 - **The adjoint's half is not a half-angle.** The factor $\tfrac12$ in $J_k$ is the Hermitian normalisation; the adjoint weights are integers.
 - **The Peirce index is not the chirality.** The right action of $S$ is $\pm\tfrac12$ on the two Peirce planes; that sign labels two copies of one left module. The chirality is the central $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, $\chi^2=1$, equivalently the grading $S\oplus S^{\mathrm c}$; the Peirce index is a copy index.
 - **The triple is not the definition.** It is the certificate that the weight string is full. The definition is the highest weight; the triple makes the string concrete.
@@ -440,7 +440,7 @@ The spinor rotation has period $4\pi$ because $j=\tfrac12$; the integer represen
 
 ### The Biquaternion Case
 
-The root $h=i\vec e_z$ has weights $+1,-1$ on the spinor and $+2,0,-2$ on the traceless part. The weights of $S=h/2$ are $\pm\tfrac12$ and $\pm1,0$, so $j=\tfrac12$ and $j=1$. The rotor $R(\theta)=\exp(\theta\vec e_z/2)$ acts on the spinor by $e^{\pm i\theta/2}$ and on the vector by $e^{\pm i\theta}$; the coefficient of $\theta$ in $\theta/2$ is $\tfrac12$ in both, the spin is not. The adjoint generator $J_3=\tfrac12\operatorname{ad}_{i\vec e_z}$ has weights $+1,-1,0$ on the vector part and Casimir $2$.
+The root $h=i\vec e_z$ has weights $+1,-1$ on the spinor and $+2,0,-2$ on the traceless part. The weights of $S=h/2$ are $\pm\tfrac12$ and $\pm1,0$, so $s=\tfrac12$ and $s=1$. The rotor $R(\theta)=\exp(\theta\vec e_z/2)$ acts on the spinor by $e^{\pm i\theta/2}$ and on the vector by $e^{\pm i\theta}$; the coefficient of $\theta$ in $\theta/2$ is $\tfrac12$ in both, the spin is not. The adjoint generator $J_3=\tfrac12\operatorname{ad}_{i\vec e_z}$ has weights $+1,-1,0$ on the vector part and Casimir $2$.
 
 ### $M_3(\mathbb{C})$
 
@@ -468,22 +468,22 @@ The principal type $(4)$ has $S=\operatorname{diag}(\tfrac32,\tfrac12,-\tfrac12,
 
 ### The Casimir
 
-On a chain of length $\ell=2j+1$, the Casimir $C=S^2+\tfrac12(UV+VU)$ acts by $j(j+1)$. For the type $\lambda$ the characteristic polynomial is
+On a chain of length $\ell=2s+1$, the Casimir $C=S^2+\tfrac12(UV+VU)$ acts by $s(s+1)$. For the type $\lambda$ the characteristic polynomial is
 
 $$
 \prod_{i=1}^{r}\left(X-\frac{\lambda_i-1}{2}\cdot\frac{\lambda_i+1}{2}\right)^{\lambda_i}.
 $$
 
-For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content $W_1\oplus W_{1/2}$ requires. The triple relations and the chain coefficients are checked in the width tables of the four reserve articles *The Spin of $M_n(\mathbb{C})$* for $n=2,3,4,5$; the Casimir eigenvalues are $j(j+1)$.
+For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content $W_1\oplus W_{1/2}$ requires. The triple relations and the chain coefficients are checked in the width tables of the four reserve articles *The Spin of $M_n(\mathbb{C})$* for $n=2,3,4,5$; the Casimir eigenvalues are $s(s+1)$.
 
 ## 8. Summary
 
-- The corpus's approaches to spin are four readings of one invariant. The invariant is $j=\lambda_{\max}(\rho(h))/2$ for a grading $h$; with $S=h/2$, the spin is the highest weight of $S$.
-- The weight reading gives $j=\lambda_{\max}/2$; the biquaternion root $h=2e-1$ gives $j=\tfrac12$ on the spinor and $j=1$ on the traceless part.
-- The half-angle reading gives the exponent $\theta/2$ of the rotor. The coefficient of $\theta$ in $\theta/2$ is not the spin; it coincides with it only at $j=\tfrac12$. The one-sided operator produces the half-angle; the sandwich produces the full angle, because $\operatorname{ad}=2[\times]$.
-- The ladder reading gives $j=(\ell-1)/2$. The triple is the certificate that the weight string is full, not a new definition.
+- The corpus's approaches to spin are four readings of one invariant. The invariant is $s=\lambda_{\max}(\rho(h))/2$ for a grading $h$; with $S=h/2$, the spin is the highest weight of $S$.
+- The weight reading gives $s=\lambda_{\max}/2$; the biquaternion root $h=2e-1$ gives $s=\tfrac12$ on the spinor and $s=1$ on the traceless part.
+- The half-angle reading gives the exponent $\theta/2$ of the rotor. The coefficient of $\theta$ in $\theta/2$ is not the spin; it coincides with it only at $s=\tfrac12$. The one-sided operator produces the half-angle; the sandwich produces the full angle, because $\operatorname{ad}=2[\times]$.
+- The ladder reading gives $s=(\ell-1)/2$. The triple is the certificate that the weight string is full, not a new definition.
 - The adjoint reading gives integer spins: the vector part has weights $\pm1,0$, spin $1$; the factor $\tfrac12$ in $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$ is the Hermitian normalisation, not a half-angle.
-- In general $n$, the Jordan type $\lambda$ gives the defining content $\bigoplus_iW_{(\lambda_i-1)/2}$, the spin $(\lambda_1-1)/2$, the adjoint spin $\lambda_1-1=2j$, and the elementary list $\{0,(\lambda_1-1)/2,\lambda_1-1\}$. The possible lists are the principal lists of $M_1,\dots,M_n$; the possible defining spins are $0,\tfrac12,\dots,\tfrac{n-1}{2}$.
+- In general $n$, the Jordan type $\lambda$ gives the defining content $\bigoplus_iW_{(\lambda_i-1)/2}$, the spin $(\lambda_1-1)/2$, the adjoint spin $\lambda_1-1=2s$, and the elementary list $\{0,(\lambda_1-1)/2,\lambda_1-1\}$. The possible lists are the principal lists of $M_1,\dots,M_n$; the possible defining spins are $0,\tfrac12,\dots,\tfrac{n-1}{2}$.
 - The Peirce width $m$ gives the same data directly: the defining carrier $B_mP_1$ has spin $(m-1)/2$, the adjoint block $B_m$ has spin $m-1$, and the union over $m=2,\dots,n$ is $\{0\}\cup\{k/2:1\le k\le n-1\}\cup\{1,\dots,n-1\}$. The principal list is the single width $m=n$.
 - The degrees of degeneracy are the nilpotent orbits, $p(n)$ of them, not the four polar cells. The spectral partition is not enough: $J_3(0)$ and $J_2(0)\oplus0$ have the same spectrum and different spins. More degeneracy does not mean more spin.
 - The four occurrences of $\tfrac12$ — weight-to-spin, antisymmetrisation, half-angle, Hermitian normalisation — are different operations. Separating them removes the apparent conflict between the polar, ladder, adjoint and weight readings.
@@ -501,14 +501,14 @@ For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content 
 | $B_m$ | Peirce block $\cong M_m(\mathbb{C})$ |
 | $m$ | width of the Peirce frame |
 | $\Sigma_P$ | all-frame spin list |
-| $j=\lambda_{\max}/2$ | spin of a carrier |
-| $W_j$ | irreducible module, dimension $2j+1$, weights $j,\dots,-j$ |
+| $s=\lambda_{\max}/2$ | spin of a carrier |
+| $W_s$ | irreducible module, dimension $2s+1$, weights $s,\dots,-s$ |
 | $U,V$ | ladder operators, nilpotent |
 | $[S,U]=U$, $[S,V]=-V$, $[U,V]=2S$ | triple relations |
-| $\ell=2j+1$ | chain length |
+| $\ell=2s+1$ | chain length |
 | $\lambda=(\lambda_1,\dots,\lambda_r)$ | Jordan type, partition of $n$ |
-| $j_{\mathrm{def}}=(\lambda_1-1)/2$ | defining spin |
-| $j_{\mathrm{adj}}=\lambda_1-1=2j_{\mathrm{def}}$ | adjoint spin |
+| $s_{\mathrm{def}}=(\lambda_1-1)/2$ | defining spin |
+| $s_{\mathrm{adj}}=\lambda_1-1=2s_{\mathrm{def}}$ | adjoint spin |
 | $p(n)$ | number of partitions of $n$ |
 | $\Sigma_{ij}$ | polar cells of $\mathbb{B}$ |
 | $L_{\tilde u}$ | one-sided operator (left multiplication) |
@@ -532,4 +532,4 @@ For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content 
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html) and [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the Jordan type.
 - [Peirce Coordinates and Companion Nilpotents](peirce-coordinates-and-companion-nilpotents.html), for the frame and its nilpotents.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), [of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), [of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html) and [of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the nilpotent orbits and their dimensions.
-- [Representations of Lie Algebras](representations-of-lie-algebras.html) and [The Casimir Operator](the-casimir-operator.html), for the highest-weight theorem and the eigenvalue $j(j+1)$.
+- [Representations of Lie Algebras](representations-of-lie-algebras.html) and [The Casimir Operator](the-casimir-operator.html), for the highest-weight theorem and the eigenvalue $s(s+1)$.

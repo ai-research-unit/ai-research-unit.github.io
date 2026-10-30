@@ -147,7 +147,7 @@ $\mathbb{C}$ has none of these properties. It is commutative, its only idempoten
 | $[z,w]$ | $zw-wz$ |
 | $\bar z$ | complex conjugate |
 | $U(1)$ | unit circle, the double cover of $SO(2)$ |
-| $W_j$ | irreducible carrier of a triple, dimension $2j+1$ |
+| $W_s$ | irreducible carrier of a triple, dimension $2s+1$ |
 | $S$ | $\tfrac12[U,V]$, the spin element a pair would give; absent here |
 
 ## Further Reading

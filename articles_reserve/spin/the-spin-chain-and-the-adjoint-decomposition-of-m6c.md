@@ -5,9 +5,9 @@
 The frame carries a principal $\mathfrak{su}_2$, and the carrier is its spin-$\tfrac52$ module. The algebra, read as the adjoint module, decomposes into one irreducible summand for each spin from $0$ to $5$:
 
 $$
-M_6(\mathbb{C})\cong\bigoplus_{j=0}^{5}V_{2j},
+M_6(\mathbb{C})\cong\bigoplus_{s=0}^{5}V_{2s},
 \qquad
-\dim V_{2j}=2j+1,
+\dim V_{2s}=2s+1,
 \qquad
 1+3+5+7+9+11=36 .
 $$
@@ -105,7 +105,7 @@ $$
 
 Since $C$ commutes with the algebra and the carrier is irreducible (§*The Carrier*), $C$ is the scalar $\tfrac{35}{4}$ on the whole carrier.
 
-The value $\tfrac{35}{4}=j(j+1)$ at $j=\tfrac52$ is the Casimir eigenvalue of the spin-$\tfrac52$ representation. **The carrier is the spin-$\tfrac52$ module.**
+The value $\tfrac{35}{4}=s(s+1)$ at $s=\tfrac52$ is the Casimir eigenvalue of the spin-$\tfrac52$ representation. **The carrier is the spin-$\tfrac52$ module.**
 
 ### The Ladder in the Frame
 
@@ -217,68 +217,68 @@ with the second summand absent when $6-r>5$, and $A_0=W_0$. In particular the gr
 
 ### The Highest Weight Vectors
 
-**Definition.** For $j=0,\dots,5$ let $h_j\in M_6(\mathbb{C})$ be
+**Definition.** For $s=0,\dots,5$ let $h_s\in M_6(\mathbb{C})$ be
 
 $$
-h_j=\sum_{k=1}^{6-j}c_{j,k}E_{k,k+j},
+h_s=\sum_{k=1}^{6-s}c_{s,k}E_{k,k+s},
 \qquad
-c_{j,1}=1,\qquad
-c_{j,k+1}=c_{j,k}\frac{\sqrt{(k+j)(6-k-j)}}{\sqrt{k(6-k)}} .
+c_{s,1}=1,\qquad
+c_{s,k+1}=c_{s,k}\frac{\sqrt{(k+s)(6-k-s)}}{\sqrt{k(6-k)}} .
 $$
 
 The coefficients are real and nonzero.
 
-**Proposition.** For each $j$, $h_j$ is a highest weight vector of weight $j$:
+**Proposition.** For each $s$, $h_s$ is a highest weight vector of weight $s$:
 
 $$
-\operatorname{ad}_{J_3}(h_j)=j\,h_j,\qquad
-\operatorname{ad}_{J_+}(h_j)=0 .
+\operatorname{ad}_{J_3}(h_s)=s\,h_s,\qquad
+\operatorname{ad}_{J_+}(h_s)=0 .
 $$
 
-**Proof.** Every term $E_{k,k+j}$ has weight $(k+j)-k=j$, so the sum has weight $j$. For the annihilation, use
+**Proof.** Every term $E_{k,k+s}$ has weight $(k+s)-k=s$, so the sum has weight $s$. For the annihilation, use
 
 $$
-\operatorname{ad}_{J_+}(E_{k,k+j})
-=\sqrt{(k-1)(7-k)}\,E_{k-1,k+j}
--\sqrt{(k+j)(6-k-j)}\,E_{k,k+j+1},
+\operatorname{ad}_{J_+}(E_{k,k+s})
+=\sqrt{(k-1)(7-k)}\,E_{k-1,k+s}
+-\sqrt{(k+s)(6-k-s)}\,E_{k,k+s+1},
 $$
 
-with the first term absent at $k=1$ and the second absent at $k=6-j$. The coefficient of $E_{k,k+j+1}$ in $\operatorname{ad}_{J_+}(h_j)$ is
+with the first term absent at $k=1$ and the second absent at $k=6-s$. The coefficient of $E_{k,k+s+1}$ in $\operatorname{ad}_{J_+}(h_s)$ is
 
 $$
-c_{j,k+1}\sqrt{k(6-k)}-c_{j,k}\sqrt{(k+j)(6-k-j)},
+c_{s,k+1}\sqrt{k(6-k)}-c_{s,k}\sqrt{(k+s)(6-k-s)},
 $$
 
 which vanishes by the recursion. So all terms cancel and the sum is zero.
 
-**Theorem (the decomposition).** Let $V_{(j)}$ be the span of $h_j$ and its lowers $\operatorname{ad}_{J_-}^r(h_j)$, $r=0,\dots,2j$. Then
+**Theorem (the decomposition).** Let $V_{(s)}$ be the span of $h_s$ and its lowers $\operatorname{ad}_{J_-}^r(h_s)$, $r=0,\dots,2s$. Then
 
 $$
-M_6(\mathbb{C})=\bigoplus_{j=0}^{5}V_{(j)},
+M_6(\mathbb{C})=\bigoplus_{s=0}^{5}V_{(s)},
 \qquad
-\dim V_{(j)}=2j+1,
+\dim V_{(s)}=2s+1,
 \qquad
-V_{(j)}\cong\operatorname{Sym}^{2j}(\mathbb{C}^2).
+V_{(s)}\cong\operatorname{Sym}^{2s}(\mathbb{C}^2).
 $$
 
-**Proof.** The lowers of a highest weight vector of weight $j$ have weights $j,j-1,\dots,-j$; the chain has $2j+1$ terms and the last is killed by $\operatorname{ad}_{J_-}$, so the span has dimension $2j+1$ and is the irreducible module of spin $j$. The dimensions sum to $\sum_{j=0}^{5}(2j+1)=36$, which is $\dim M_6(\mathbb{C})$. The sum is direct: the modules have distinct Casimir eigenvalues $j(j+1)$, and generalized eigenspaces of a single operator for distinct eigenvalues are independent. So the sum is the whole algebra.
+**Proof.** The lowers of a highest weight vector of weight $s$ have weights $s,s-1,\dots,-s$; the chain has $2s+1$ terms and the last is killed by $\operatorname{ad}_{J_-}$, so the span has dimension $2s+1$ and is the irreducible module of spin $s$. The dimensions sum to $\sum_{s=0}^{5}(2s+1)=36$, which is $\dim M_6(\mathbb{C})$. The sum is direct: the modules have distinct Casimir eigenvalues $s(s+1)$, and generalized eigenspaces of a single operator for distinct eigenvalues are independent. So the sum is the whole algebra.
 
-**Corollary (the Casimir eigenvalues).** On $V_{(j)}$ the Casimir acts by $j(j+1)$, and the eigenvalues and multiplicities on the adjoint module are
+**Corollary (the Casimir eigenvalues).** On $V_{(s)}$ the Casimir acts by $s(s+1)$, and the eigenvalues and multiplicities on the adjoint module are
 
-| $j$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+| $s$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
 |---|---|---|---|---|---|---|
-| $j(j+1)$ | $0$ | $2$ | $6$ | $12$ | $20$ | $30$ |
-| $2j+1$ | $1$ | $3$ | $5$ | $7$ | $9$ | $11$ |
+| $s(s+1)$ | $0$ | $2$ | $6$ | $12$ | $20$ | $30$ |
+| $2s+1$ | $1$ | $3$ | $5$ | $7$ | $9$ | $11$ |
 
-**Proof.** The eigenvalue is the standard Casimir eigenvalue of the spin-$j$ representation; on the highest weight vector $C h_j=j(j+1)h_j$, and $C$ commutes with the algebra. The multiplicity is the dimension $2j+1$.
+**Proof.** The eigenvalue is the standard Casimir eigenvalue of the spin-$s$ representation; on the highest weight vector $C h_s=s(s+1)h_s$, and $C$ commutes with the algebra. The multiplicity is the dimension $2s+1$.
 
-**Corollary (the trivial summand).** $V_{(0)}$ is spanned by $h_0=I_6$. The traceless part is the sum of the five summands $j=1,\dots,5$, of dimension
+**Corollary (the trivial summand).** $V_{(0)}$ is spanned by $h_0=I_6$. The traceless part is the sum of the five summands $s=1,\dots,5$, of dimension
 
 $$
 3+5+7+9+11=35=\dim\mathfrak{sl}_6(\mathbb{C}).
 $$
 
-**Proof.** $h_0=\sum_{k=1}^{6}E_{kk}=I_6$ by the recursion with $j=0$. The identity spans the trivial summand of the adjoint module, and the complement is the traceless part, which is $\mathfrak{sl}_6$.
+**Proof.** $h_0=\sum_{k=1}^{6}E_{kk}=I_6$ by the recursion with $s=0$. The identity spans the trivial summand of the adjoint module, and the complement is the traceless part, which is $\mathfrak{sl}_6$.
 
 ### The Character Check
 
@@ -287,7 +287,7 @@ $$
 $$
 \chi(q)=\sum_{k,l=1}^{6}q^{l-k}
 =\left(\sum_{r=1}^{6}q^{\frac72-r}\right)\left(\sum_{s=1}^{6}q^{s-\frac72}\right)
-=\sum_{j=0}^{5}\left(q^j+q^{j-1}+\cdots+q^{-j}\right).
+=\sum_{s=0}^{5}\left(q^s+q^{s-1}+\cdots+q^{-s}\right).
 $$
 
 The last sum is the sum of the characters of the irreducible modules of spins $0,1,\dots,5$, each once.
@@ -295,16 +295,16 @@ The last sum is the sum of the characters of the irreducible modules of spins $0
 **Proof.** The first equality is the weight decomposition of the adjoint module. The second is the product of the carrier character and its dual. The identity
 
 $$
-[6]_q[6]_{q^{-1}}=\sum_{j=0}^{5}[2j+1]_q,
+[6]_q[6]_{q^{-1}}=\sum_{s=0}^{5}[2s+1]_q,
 \qquad
 [m]_q=\frac{q^{m/2}-q^{-m/2}}{q^{1/2}-q^{-1/2}},
 $$
 
-is the $q$-integer form of the Clebsch–Gordan decomposition $\operatorname{Sym}^5\otimes\operatorname{Sym}^5{}^*\cong\bigoplus_{j=0}^{5}\operatorname{Sym}^{2j}$; the coefficient of $q^j$ in the right-hand side is the number of summands of spin at least $j$, which is one for each $j=0,\dots,5$.
+is the $q$-integer form of the Clebsch–Gordan decomposition $\operatorname{Sym}^5\otimes\operatorname{Sym}^5{}^*\cong\bigoplus_{s=0}^{5}\operatorname{Sym}^{2s}$; the coefficient of $q^s$ in the right-hand side is the number of summands of spin at least $s$, which is one for each $s=0,\dots,5$.
 
-**Corollary.** The multiplicity of the spin-$j$ module in the adjoint is one for every $j=0,\dots,5$, and there is no other summand.
+**Corollary.** The multiplicity of the spin-$s$ module in the adjoint is one for every $s=0,\dots,5$, and there is no other summand.
 
-**Proof.** The coefficient of $q^j$ in $\sum_i[2i+1]_q$ is the number of $i\ge j$, namely $6-j$; it is also the dimension $6-\lvert j\rvert$ of the weight space $W_j$. The multiplicity of the highest weight $q^j$ is the difference between the coefficients of $q^j$ and $q^{j+1}$ (with the coefficient of $q^6$ equal to zero), namely $(6-j)-(5-j)=1$. So each spin occurs once.
+**Proof.** The coefficient of $q^s$ in $\sum_i[2i+1]_q$ is the number of $i\ge s$, namely $6-s$; it is also the dimension $6-\lvert s\rvert$ of the weight space $W_s$. The multiplicity of the highest weight $q^s$ is the difference between the coefficients of $q^s$ and $q^{s+1}$ (with the coefficient of $q^6$ equal to zero), namely $(6-s)-(5-s)=1$. So each spin occurs once.
 
 ### The Peirce Table of the Decomposition
 
@@ -317,7 +317,7 @@ h_1=\sum_{k=1}^{5}\sqrt{\frac{(k+1)(5-k)}{k(6-k)}}\,E_{k,k+1},
 h_5=E_{16}.
 $$
 
-For $j=1$ the coefficients are $1,\sqrt{8/5},3/\sqrt5,\sqrt{8/5},1$, so $h_1=J_+/\sqrt5$. For $j=5$ the sum has the single term $E_{16}$.
+For $s=1$ the coefficients are $1,\sqrt{8/5},3/\sqrt5,\sqrt{8/5},1$, so $h_1=J_+/\sqrt5$. For $s=5$ the sum has the single term $E_{16}$.
 
 | Summand | Highest weight | Dimension | Support |
 |---|---|---|---|
@@ -328,7 +328,7 @@ For $j=1$ the coefficients are $1,\sqrt{8/5},3/\sqrt5,\sqrt{8/5},1$, so $h_1=J_+
 | $V_{(4)}$ | $h_4$ | $9$ | the weight levels $4,\dots,-4$ |
 | $V_{(5)}$ | $E_{16}$ | $11$ | all weight levels $5,\dots,-5$ |
 
-**Proof.** The support of $V_{(j)}$ is the union of the diagonals of weight $j,j-1,\dots,-j$, because each application of $\operatorname{ad}_{J_-}$ lowers the weight by one. The number of weight levels is $2j+1$.
+**Proof.** The support of $V_{(s)}$ is the union of the diagonals of weight $s,s-1,\dots,-s$, because each application of $\operatorname{ad}_{J_-}$ lowers the weight by one. The number of weight levels is $2s+1$.
 
 ## The Two Chiralities
 
@@ -394,14 +394,14 @@ that is $1+3=4$.
 **The pattern.** For $M_n(\mathbb{C})$ with the principal chain, the carrier is $\operatorname{Sym}^{n-1}(\mathbb{C}^2)$ and the adjoint decomposes as
 
 $$
-M_n(\mathbb{C})\cong\bigoplus_{j=0}^{n-1}\operatorname{Sym}^{2j}(\mathbb{C}^2),
+M_n(\mathbb{C})\cong\bigoplus_{s=0}^{n-1}\operatorname{Sym}^{2s}(\mathbb{C}^2),
 \qquad
-\sum_{j=0}^{n-1}(2j+1)=n^2 .
+\sum_{s=0}^{n-1}(2s+1)=n^2 .
 $$
 
 At $n=2$ this is $1+3$; at $n=6$ it is $1+3+5+7+9+11$. The number of summands is $n$, and the largest spin is $n-1$.
 
-**Proof.** The character of the adjoint is $[n]_q[n]_{q^{-1}}$, and the $q$-integer identity gives $\sum_{j=0}^{n-1}[2j+1]_q$.
+**Proof.** The character of the adjoint is $[n]_q[n]_{q^{-1}}$, and the $q$-integer identity gives $\sum_{s=0}^{n-1}[2s+1]_q$.
 
 **Remark (the contrast of the two chiralities).** For $n=2$ the chirality split is $1+1$, and each half is a line; the pair of halves is the spin-$\tfrac12$ carrier. For $n=6$ the split is $3+3$, each half is three-dimensional, and the halves are modules for the block $M_3$ but not for the Peirce $\mathfrak{su}_2$ of the carrier. The passage from $n=2$ to $n=6$ replaces the two lines by the two triples; the spin-$\tfrac12$ is the $n=2$ carrier, and the spin-$\tfrac52$ is the $n=6$ carrier.
 
@@ -418,7 +418,7 @@ $$
 with $[J_3,J_\pm]=\pm J_\pm$ and $[J_+,J_-]=2J_3$. The carrier is $\operatorname{Sym}^5(\mathbb{C}^2)$, of spin $\tfrac52$, with ladder coefficients $\sqrt5,\sqrt8,3,\sqrt8,\sqrt5$ and Casimir $\tfrac{35}{4}I_6$.
 
 $$
-\boxed{\ M_6(\mathbb{C})\cong\bigoplus_{j=0}^{5}\operatorname{Sym}^{2j}(\mathbb{C}^2),\qquad 1+3+5+7+9+11=36 .\ }
+\boxed{\ M_6(\mathbb{C})\cong\bigoplus_{s=0}^{5}\operatorname{Sym}^{2s}(\mathbb{C}^2),\qquad 1+3+5+7+9+11=36 .\ }
 $$
 
 The Peirce line $A_{kl}$ is the weight line $l-k$. The chirality $\Gamma$ commutes with $J_3$ and anticommutes with $J_\pm$, so the two chiral halves are preserved by the Cartan and exchanged by the ladder: the chain is irreducible and mixes chirality.
@@ -441,8 +441,8 @@ The Peirce line $A_{kl}$ is the weight line $l-k$. The chirality $\Gamma$ commut
 | $J_+,J_-$ | the raising and lowering operators of the chain |
 | $C$ | the Casimir $J_3^2+\tfrac12(J_+J_-+J_-J_+)$ |
 | $W_w$ | the weight space of weight $w$, $\dim W_w=6-\lvert w\rvert$ |
-| $h_j$ | the highest weight vector of spin $j$, $j=0,\dots,5$ |
-| $V_{(j)}$ | the irreducible summand of spin $j$, of dimension $2j+1$ |
+| $h_s$ | the highest weight vector of spin $s$, $s=0,\dots,5$ |
+| $V_{(s)}$ | the irreducible summand of spin $s$, of dimension $2s+1$ |
 | $\Gamma$ | the chirality involution $\operatorname{diag}(1,-1,1,-1,1,-1)$ |
 | $\mathbb{C}^3_\pm$ | the two chiral halves, of dimension three |
 

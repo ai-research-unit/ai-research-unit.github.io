@@ -92,7 +92,7 @@ The lower members of this chain are precisely the representations that appear in
 
 There is a dual spin-$\frac12$ line, the complex-conjugate chain $\tau^{0,\frac12}\to\tau^{\frac12,1}\to\cdots$, with the same degrees; the particle and antiparticle of one charge multiplet sit on the two lines. The spin-$0$ line is $\tau^{s,s}$, of degree $(2s+1)^{2}=1,4,9,16,\dots$, and the spin-$1$ line is $\tau^{s+1,s}$, of degree $(2s+3)(2s+1)$; each carries the bosonic multiplets.
 
-The ordering of a chain by degree is the ordering by mass, since $m\propto\deg$. The "periodic system" the programme draws — particles arranged by spin line and by degree — is therefore a **mass-ordered** spectrum, and the interlocking diagram is a statement that successive degrees on a line differ by successive even increments, $(j+2)(j+1)-(j+1)j = 2(j+1)$.
+The ordering of a chain by degree is the ordering by mass, since $m\propto\deg$. The "periodic system" the programme draws — particles arranged by spin line and by degree — is therefore a **mass-ordered** spectrum, and the interlocking diagram is a statement that successive degrees on a line differ by successive even increments, $(s+2)(s+1)-(s+1)s = 2(s+1)$.
 
 ## The Spectrum
 
@@ -139,7 +139,7 @@ Third, the interlocking relation is the corpus's own tensor-product relation, an
 
 - The mass formula in dimension form, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, is the identity $(l+\frac12)(\bar l+\frac12)=\frac14(2l+1)(2\bar l+1)$ applied to the programme's asymptotic formula; it is an algebraic identity, verified here.
 - The determinant factorisation and the eigenvalue relation $m_i=\mu_0\lambda_i$ (with $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
-- The degrees along the spin-$\frac12$ line are $(j+1)(j+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$.
+- The degrees along the spin-$\frac12$ line are $(s+1)(s+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$.
 - The next interlocking representation after $\tau^{59/2,29}$ on the same chain is $\tau^{30,29/2}$, of degree $3660$ and ratio $1830$; the programme's claim that it is $\tau^{67/2,33}$ skips eight places and is inconsistent with its own chain.
 
 **Transcribed, not derived.**
@@ -169,7 +169,7 @@ Third, the interlocking relation is the corpus's own tensor-product relation, an
 
 ## Summary
 
-The finite-dimensional Bhabha–Gel'fand–Yaglom equation assigns to each Lorentz representation $\tau^{l\bar l}$ a discrete mass spectrum whose leading term is $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)$, equal to $\frac{\mu_0}{4}$ times the dimension of the representation, with $s=|l-\bar l|$. Normalising to the electron, the fundamental representation of degree $2$, gives $m/m_e=\deg/2$. The representations are organised into interlocking chains; on the spin-$\frac12$ chain the degrees are $(j+1)(j+2)$ and the members are the electron, the nucleon, the $\Sigma$, and the higher resonances; on the spin-$0$ chain they are the squares. The formula reproduces the $\Sigma$ to $2.4\%$, the electron position exactly, and the proton and $\pi$ to about $3\%$, with the neighbour of the proton's representation doing distinctly better than the assignment the programme makes.
+The finite-dimensional Bhabha–Gel'fand–Yaglom equation assigns to each Lorentz representation $\tau^{l\bar l}$ a discrete mass spectrum whose leading term is $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)$, equal to $\frac{\mu_0}{4}$ times the dimension of the representation, with $s=|l-\bar l|$. Normalising to the electron, the fundamental representation of degree $2$, gives $m/m_e=\deg/2$. The representations are organised into interlocking chains; on the spin-$\frac12$ chain the degrees are $(s+1)(s+2)$ and the members are the electron, the nucleon, the $\Sigma$, and the higher resonances; on the spin-$0$ chain they are the squares. The formula reproduces the $\Sigma$ to $2.4\%$, the electron position exactly, and the proton and $\pi$ to about $3\%$, with the neighbour of the proton's representation doing distinctly better than the assignment the programme makes.
 
 What is transcribed is the formula, the chains, and the assignments; what is established is the dimension identity, the arithmetic of the chain and of the ratios, and the observation that the naturally next representation after the proton's is not the one the programme picks. What remains open is the scale $\mu_0$, the principle that selects the occupied representations, and the extension of the formula to the framework's own fields.
 

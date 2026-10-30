@@ -67,13 +67,13 @@ and $\mathcal{T}_{e_t,e_t}$ is the involution of the algebra.
 
 **Proof.** $\mathcal{T}_{e_t,e_t}(\tilde Q_1)=e_t\tilde Q_1^{*}e_t=\tilde Q_1^{*}$; $\mathcal{T}_{\tilde Q,e_t}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}=L_{\tilde Q}(\tilde Q_1)$ by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Definition*; and $\mathcal{T}_{e_t,\tilde Q_2}(\tilde Q_1)=\tilde Q_1^{*}\tilde Q_2^{*}$.
 
-**Remark.** The sandwich with a unit in the second slot is the left multiplication, and with a unit in the first slot it is the composite of the involution with the right multiplication. The two are not the two one-sided multiplications: the right multiplication is $S_{?}$ with a unit in the *first* slot only in the ordinary two-sided notation, and here the involution enters the middle. The asymmetry is the asymmetry of the multiplication, whose unit is a right unit alone.
+**Remark.** The sandwich with a unit in the second slot is the left multiplication, and with a unit in the first slot it is the composite of the involution with the right multiplication. The two are not the two one-sided multiplications: the right multiplication is $T_{e_t,\tilde Q_2}$, the two-sided multiplication with a unit in the *first* slot only in the ordinary two-sided notation, and here the involution enters the middle. The asymmetry is the asymmetry of the multiplication, whose unit is a right unit alone.
 
 ## The Composition
 
 ### The Two Families Together
 
-**Theorem (the composition table).** For all $\tilde Q_8,\tilde Q_2,\tilde Q_3,\tilde Q_9,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde S$,
+**Theorem (the composition table).** For all $\tilde Q_8,\tilde Q_2,\tilde Q_3,\tilde Q_9,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde Q_{10}$,
 
 $$
 \mathcal{T}_{\tilde Q_3,\tilde Q_9}\mathcal{T}_{\tilde Q_8,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}} , \qquad
@@ -81,7 +81,7 @@ T_{\tilde Q,\tilde Q_7}\mathcal{T}_{\tilde Q_8,\tilde Q_2}=\mathcal{T}_{\tilde Q
 $$
 $$
 \mathcal{T}_{\tilde Q_3,\tilde Q_9}T_{\tilde Q,\tilde Q_7}=\mathcal{T}_{\tilde Q_3\tilde Q_7^{*},\tilde Q_9\tilde Q} , \qquad
-T_{\tilde Q,\tilde Q_7}T_{\tilde Q_6,\tilde S}=T_{\tilde Q\tilde Q_6,\tilde S\tilde Q_7} .
+T_{\tilde Q,\tilde Q_7}T_{\tilde Q_6,\tilde Q_{10}}=T_{\tilde Q\tilde Q_6,\tilde Q_{10}\tilde Q_7} .
 $$
 
 **Proof.** Each is the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, transported to the sandwich $\mathcal{T}_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$; the first is the direct computation $\mathcal{T}_{\tilde Q_3,\tilde Q_9}(\mathcal{T}_{\tilde Q_8,\tilde Q_2}(\tilde Q_1))=\tilde Q_3(\tilde Q_8\tilde Q_1^{*}\tilde Q_2^{*})^{*}\tilde Q_9^{*}=\tilde Q_3\tilde Q_2\tilde Q_1\tilde Q_8^{*}\tilde Q_9^{*}$, and the others are the same computation with one factor of the involution and one two-sided multiplication in each order.
@@ -208,7 +208,7 @@ $$
 
 and the four composition laws of §*The Two Families Together* say that this action closes under composition and contains the identity.
 
-**Proof.** The identity is §*The Definition*, and the closure is the composition table; the identity of the action is $S_{?}$ with both parameters the unit only in the ordinary two-sided reading, namely $T_{e_t,e_t}$, while $\mathcal{T}_{e_t,e_t}={}^{*}$ is the involution and not the identity.
+**Proof.** The identity is §*The Definition*, and the closure is the composition table; the identity of the action is the two-sided multiplication with both parameters the unit, $T_{e_t,e_t}$, while $\mathcal{T}_{e_t,e_t}={}^{*}$ is the involution and not the identity.
 
 **Remark.** The two-sided action therefore does not contain the identity among the sandwiches: the identity is a two-sided multiplication and not a sandwich, exactly as the right unit $e_t$ is a right unit and not a left unit. The action is nevertheless a monoid once the two-sided multiplications are adjoined, and it is the largest operator family the sesqualgebra carries; the ordinary two-sided multiplications are the linear half and the sandwiches the conjugate-linear half.
 

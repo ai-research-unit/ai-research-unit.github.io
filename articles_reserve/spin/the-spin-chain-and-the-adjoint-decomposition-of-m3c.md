@@ -96,7 +96,7 @@ J_{-}|1,1\rangle=\sqrt2\,|1,0\rangle,\qquad
 J_{-}|1,0\rangle=\sqrt2\,|1,-1\rangle.
 $$
 
-The two coefficients are the same, $\sqrt2$, because the spin is one; the general coefficient is $\sqrt{j(j+1)-m(m\pm1)}$, which at $j=1$ takes the values $\sqrt2$ at both steps. The chain has length three and ends at the highest weight $e_{1}$ and the lowest weight $e_{3}$.
+The two coefficients are the same, $\sqrt2$, because the spin is one; the general coefficient is $\sqrt{s(s+1)-m(m\pm1)}$, which at $s=1$ takes the values $\sqrt2$ at both steps. The chain has length three and ends at the highest weight $e_{1}$ and the lowest weight $e_{3}$.
 
 **The identification with $\operatorname{Sym}^{2}(\mathbb{C}^{2})$.** Let $x,y$ be a basis of $\mathbb{C}^{2}$ and put
 
@@ -352,10 +352,10 @@ The $1$ is the trace line, the $3$ is the spin-one summand isomorphic to the car
 | $J_{3}$ | $\operatorname{diag}(1,0,-1)$, the Cartan generator |
 | $J_{+},J_{-}$ | the raising and lowering operators, $\sqrt2(E_{12}+E_{23})$, $\sqrt2(E_{21}+E_{32})$ |
 | $e_{1},e_{2},e_{3}$ | the carrier basis, weights $1,0,-1$ |
-| $V_{j}$ | the irreducible module of spin $j$ and dimension $2j+1$ |
+| $V_{s}$ | the irreducible module of spin $s$ and dimension $2s+1$ |
 | $u_{m}$ | the orthonormal basis of $V_{2}$, weight $m$ |
 | $w_{m}$ | the orthonormal basis of $V_{1}$, weight $m$ |
-| $\chi_{j}$ | the character of $V_{j}$ |
+| $\chi_{s}$ | the character of $V_{s}$ |
 
 ## Further Reading
 

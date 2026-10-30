@@ -13,13 +13,13 @@ $$
 
 with $s\in\{0,\tfrac12,1,\tfrac32,2,\dots\}$ and $m_s=-s,-s+1,\dots,s$. The multiplicity is $2s+1$, and the operator satisfies $[S_i,S_j]=i\hbar\,\epsilon_{ijk}S_k$. Relativistically, $s$ is the label of the little-group $SU(2)$ representation carried by the time-like unitary irreducible representation of the Poincaré group; mass and spin label the particle. For a massless particle the Lorentz-invariant label is helicity, $\lambda=\hat p\cdot\vec J=\pm s$. Integer $s$ is bosonic and half-integer $s$ is fermionic.
 
-**A weight is not a definition.** The number $j=\lambda_{\max}(\rho(H))/2$ is a theorem about a carrier of a triple. It becomes the spin when $H=2S_z/\hbar$, when $\rho$ is the rotation action, and when the carrier is the rest-frame one-particle space. None of those conditions is algebraic. They are physical, and the programme never stated them.
+**A weight is not a definition.** The number $s=\lambda_{\max}(\rho(H))/2$ is a theorem about a carrier of a triple. It becomes the spin when $H=2S_z/\hbar$, when $\rho$ is the rotation action, and when the carrier is the rest-frame one-particle space. None of those conditions is algebraic. They are physical, and the programme never stated them.
 
 **What this file contains.** Part I records the methods that the programme rejected as incomplete. Part II records the four methods that it accepted as general definitions. Part III states the verdict. The tables are kept because many of them are correct computations of weights, dimensions and orbit labels. They are not computations of spin.
 
 **The rule for the reader.** Do not cite any formula in this file as a definition of spin. Cite it, if at all, as a statement about the representation theory of $\mathfrak{sl}_2$ or of $M_n(\mathbb{C})$. The physical definition is the one above, and the physics corpus states it in *Spin and the Three Elementary Carriers* and in *The Spin–Statistics Theorem in Biquaternionic Form*.
 
-**The four halves, kept apart.** The symbol $\tfrac12$ occurs in four different roles in the material below, and conflating them is the source of most of the error. They are: the weight-to-spin conversion $j=\lambda_{\max}/2$; the antisymmetrisation $S=\tfrac12[U,V]$; the half-angle $\theta/2$ of the rotor; and the Hermitian normalisation $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$. Only the first is a conversion to a spin label, and only under the physical conditions above.
+**The four halves, kept apart.** The symbol $\tfrac12$ occurs in four different roles in the material below, and conflating them is the source of most of the error. They are: the weight-to-spin conversion $s=\lambda_{\max}/2$; the antisymmetrisation $S=\tfrac12[U,V]$; the half-angle $\theta/2$ of the rotor; and the Hermitian normalisation $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$. Only the first is a conversion to a spin label, and only under the physical conditions above.
 
 ## Part I — The Incomplete Definitions
 
@@ -59,9 +59,9 @@ on $M_2(\mathbb{C})$. This test is recorded here, not endorsed: it selects by th
 | spectral count | $\{0,\tfrac12\}$ | incomplete | eigenvalue count |
 | adjoint alone | $\{0,1\}$ | incomplete | spin-$1$ carrier |
 | half-angle | $\tfrac12$ and $1$ | normalization | rotor parameter |
-| unrestricted highest weight | all $j\ge0$ | overcomplete | representation label |
-| unrestricted Casimir | all $j\ge0$ | overcomplete | representation label |
-| unrestricted coadjoint | all $j\ge0$ | overcomplete | orbit label |
+| unrestricted highest weight | all $s\ge0$ | overcomplete | representation label |
+| unrestricted Casimir | all $s\ge0$ | overcomplete | representation label |
+| unrestricted coadjoint | all $s\ge0$ | overcomplete | orbit label |
 | circle weight | $0$ or $\{0,\tfrac12\}$ mod $1$ | incomplete | parity |
 | ribbon twist | $0$ | wrong value | topological spin |
 | Casimir list, natural family | $\{0,\tfrac12,1\}$ | dubious | $\mathfrak{su}(2)$ formula |
@@ -72,7 +72,7 @@ on $M_2(\mathbb{C})$. This test is recorded here, not endorsed: it selects by th
 
 **Definition.** Let $A$ be a finite-dimensional $k$-algebra and $V$ a simple left $A$-module. The **dimension spin** is
 $$
-j=\frac{\dim_k V-1}{2}.
+s=\frac{\dim_k V-1}{2}.
 $$
 The **left list** is the set over the simple modules. The definition uses no nilpotent, no grading, and no triple.
 
@@ -103,7 +103,7 @@ $$
 $$
 be the nilpotency index. The **ladder spin** is
 $$
-j=\frac{\operatorname{ind}(u)-1}{2}.
+s=\frac{\operatorname{ind}(u)-1}{2}.
 $$
 The **ladder list** is the set over all nilpotent $u\in A$. The **regular spin** is the maximum of the list.
 
@@ -138,7 +138,7 @@ e_iAe_{i+1}\neq0,\qquad i=1,\ldots,\ell-1.
 $$
 The **chain spin** is
 $$
-j=\frac{\ell-1}{2}.
+s=\frac{\ell-1}{2}.
 $$
 The **Peirce list** is the set over all chains; the maximum is $0$ when no chain of length $2$ exists.
 
@@ -171,7 +171,7 @@ because every product is symmetric. The two idempotents do not make a chain; the
 
 **Definition.** Let $A$ be finite-dimensional over a field. Its **Ext quiver** has one vertex for each simple module and one arrow for each basis element of $\operatorname{Ext}^1$ between two simple modules. When the field is algebraically closed, Gabriel's theorem identifies the basic algebra Morita equivalent to $A$ with $kQ/I$, with $Q$ a finite quiver and $I$ an admissible ideal. Let $\ell_Q$ be one plus the maximum number of arrows in a nonzero path of $kQ/I$. The **quiver spin** is
 $$
-j_Q=\frac{\ell_Q-1}{2}.
+s_Q=\frac{\ell_Q-1}{2}.
 $$
 
 **The six algebras.**
@@ -195,13 +195,13 @@ $$
 
 **Definition.** Let $S\in A$ be semisimple over the algebraic closure, and let $L_S$ be left multiplication by $S$ on $A$. Suppose the distinct eigenvalues of $L_S$ are
 $$
-jd,\ (j-1)d,\ \ldots,\ -jd
+sd,\ (s-1)d,\ \ldots,\ -sd
 $$
-for some $j\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The **spectral spin** is the number of levels minus one over two,
+for some $s\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The **spectral spin** is the number of levels minus one over two,
 $$
-j=\frac{r-1}{2},
+s=\frac{r-1}{2},
 $$
-where $r=2j+1$ is the number of distinct eigenvalues. The **spectral list** is the set over all such $S$.
+where $r=2s+1$ is the number of distinct eigenvalues. The **spectral list** is the set over all such $S$.
 
 **The six algebras.**
 
@@ -226,9 +226,9 @@ where $r=2j+1$ is the number of distinct eigenvalues. The **spectral list** is t
 
 **Definition.** Let $(S,U,V)$ be a spin triple and let $A$ act on itself by the adjoint action. The weights of $\operatorname{ad}_S$ are the differences $\lambda_i-\lambda_j$ of the weights of $S$. The **adjoint spin** is the top weight
 $$
-j_{\mathrm{ad}}=2j_{\mathrm{def}},
+s_{\mathrm{ad}}=2s_{\mathrm{def}},
 $$
-where $j_{\mathrm{def}}$ is the defining spin. The **adjoint list** is the set over all triples.
+where $s_{\mathrm{def}}$ is the defining spin. The **adjoint list** is the set over all triples.
 
 **The six algebras.**
 
@@ -289,15 +289,15 @@ with the half-angle. The coefficient $\tfrac12$ is the top eigenvalue of the gen
 
 ## 9. The Unrestricted Representation Labels
 
-**Highest weight.** Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The **highest-weight spin** is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $j=\lambda(H)/2$.
+**Highest weight.** Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The **highest-weight spin** is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $s=\lambda(H)/2$.
 
 **Casimir.** Let $\mathfrak{g}$ be semisimple with an invariant form and Casimir $C$, and let $C|_V=c_V I$. For $\mathfrak{sl}_2$ the **Casimir spin** is
 $$
-j=\frac{-1+\sqrt{1+4c_V}}{2}.
+s=\frac{-1+\sqrt{1+4c_V}}{2}.
 $$
 The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of the full algebra.
 
-**Coadjoint orbit.** Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $j=\operatorname{Area}(O_f)/(4\pi)$.
+**Coadjoint orbit.** Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $s=\operatorname{Area}(O_f)/(4\pi)$.
 
 **The six algebras.** The table gives the unrestricted range, that is, the values over all representations of the chosen algebra.
 
@@ -305,12 +305,12 @@ The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of
 |---|---|---|---|
 | $\mathbb{C}$ | $0$ | $0$ | $0$ |
 | $\mathbb{D}$ | $0$ | $0$ | $0$ |
-| $\mathbb{H}$ | all $j\ge0$ | all $j\ge0$ | all $j\ge0$ |
-| $M_2(\mathbb{C})$ | all $j\ge0$ | all $j\ge0$ | all $j\ge0$ |
-| $M_3(\mathbb{C})$ | all $j$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
-| $M_5(\mathbb{C})$ | all $j$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
+| $\mathbb{H}$ | all $s\ge0$ | all $s\ge0$ | all $s\ge0$ |
+| $M_2(\mathbb{C})$ | all $s\ge0$ | all $s\ge0$ | all $s\ge0$ |
+| $M_3(\mathbb{C})$ | all $s$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
+| $M_5(\mathbb{C})$ | all $s$ after a choice of $\mathfrak{sl}_2$ | non-half-integers | flag variety |
 
-**Why it fails on $M_2(\mathbb{C})$.** Over all representations, every $j\ge0$ occurs. The set is infinite; it does not produce the finite experimental list. The restricted versions, read on the natural family, are in the general article.
+**Why it fails on $M_2(\mathbb{C})$.** Over all representations, every $s\ge0$ occurs. The set is infinite; it does not produce the finite experimental list. The restricted versions, read on the natural family, are in the general article.
 
 **On $M_3$ and $M_5$.** The highest weight of $\mathfrak{sl}_n$ is a vector, not a single number. The Casimir of the full algebra on the defining module gives $0.758$ and $1.128$, which are not half-integers. The coadjoint orbit is a flag variety, and the area formula does not produce a single spin. The definitions are $A_1$ definitions; they need a chosen $\mathfrak{sl}_2$ and a chosen representation.
 
@@ -320,7 +320,7 @@ The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of
 
 ## 10. The Circle Weight and the Ribbon Twist
 
-**Circle weight.** Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ijt}$ on the highest-weight space. The **weight** is $j\in\mathbb{R}/\mathbb{Z}$, and the **$2\pi$ sign** is $(-1)^{2j}$. Only $j$ modulo $1$ is defined; the integer part requires a lift.
+**Circle weight.** Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ist}$ on the highest-weight space. The **weight** is $s\in\mathbb{R}/\mathbb{Z}$, and the **$2\pi$ sign** is $(-1)^{2s}$. Only $s$ modulo $1$ is defined; the integer part requires a lift.
 
 **Ribbon twist.** Let $\mathcal{C}$ be a ribbon category, $X$ a simple object, and $\theta_X$ its twist. Write $\theta_X=e^{2\pi ih_X}$ with $h_X\in\mathbb{Q}/\mathbb{Z}$; $h_X$ is the **topological spin**.
 
@@ -382,7 +382,7 @@ The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of
 $$
 \Sigma_C(A)=\left\{\frac{-1+\sqrt{1+4c_W}}{2}:\ W\in\mathcal{F}(A)\right\}.
 $$
-Write $j(c)=(-1+\sqrt{1+4c})/2$ for one entry.
+Write $s(c)=(-1+\sqrt{1+4c})/2$ for one entry.
 
 **It passes the test.** At $M_2(\mathbb{C})$ the centre, the defining module, and the adjoint have $c=0,\tfrac34,2$. The formula gives $0,\tfrac12,1$.
 
@@ -406,11 +406,11 @@ Write $j(c)=(-1+\sqrt{1+4c})/2$ for one entry.
 | $M_4(\mathbb{C})$ | $\{0,0.958,1.562\}$ |
 | $M_5(\mathbb{C})$ | $\{0,1.128,1.791\}$ |
 | $M_6(\mathbb{C})$ | $\{0,1.280,2\}$ |
-| $M_n(\mathbb{C})$ | $\{0,j(\tfrac{n^2-1}{2n}),j(n)\}$ |
+| $M_n(\mathbb{C})$ | $\{0,s(\tfrac{n^2-1}{2n}),s(n)\}$ |
 
 **The failure on $M_n$.** The table gives the defining and the adjoint entries for $n=2,\ldots,6$.
 
-| $n$ | $c$ on $\mathbb{C}^n$ | $j$ | $c$ on $\mathfrak{sl}_n$ | $j$ |
+| $n$ | $c$ on $\mathbb{C}^n$ | $s$ | $c$ on $\mathfrak{sl}_n$ | $s$ |
 |---|---|---|---|---|
 | $2$ | $\tfrac34$ | $\tfrac12$ | $2$ | $1$ |
 | $3$ | $\tfrac43$ | $0.758$ | $3$ | $1.303$ |
@@ -420,7 +420,7 @@ Write $j(c)=(-1+\sqrt{1+4c})/2$ for one entry.
 
 **Why the numbers are not spins.** A spin is a half-integer. For $n=3$ the defining entry is $0.758$ and the adjoint entry is $1.303$. Neither is a half-integer. The values are square roots of rationals, and they drift with $n$. At $n=6$ the adjoint entry is $2$, a half-integer, so this one entry looks like a spin. It is a coincidence of $6=2\cdot3$, and the adjoint spin there is $5$. A plausible value is not a certificate.
 
-**Why the test passes.** At $n=2$ the two Casimirs coincide, because the semisimple part is $\mathfrak{sl}_2$ and the adjoint is its defining module. The normalization $c=j(j+1)$ is then the right one: $\tfrac34=\tfrac12\cdot\tfrac32$ and $2=1\cdot2$. For $\mathfrak{sl}_n$ the defining module has $c=(n^2-1)/(2n)$, which is not $j(j+1)$ for a half-integer $j$ when $n\ge3$. At $n=3$, $c=\tfrac43$; $j=\tfrac12$ would give $\tfrac34$, and $j=1$ would give $2$. The inversion formula returns the real number $0.758$, which is not a label.
+**Why the test passes.** At $n=2$ the two Casimirs coincide, because the semisimple part is $\mathfrak{sl}_2$ and the adjoint is its defining module. The normalization $c=s(s+1)$ is then the right one: $\tfrac34=\tfrac12\cdot\tfrac32$ and $2=1\cdot2$. For $\mathfrak{sl}_n$ the defining module has $c=(n^2-1)/(2n)$, which is not $s(s+1)$ for a half-integer $s$ when $n\ge3$. At $n=3$, $c=\tfrac43$; $s=\tfrac12$ would give $\tfrac34$, and $s=1$ would give $2$. The inversion formula returns the real number $0.758$, which is not a label.
 
 **Why it is dangerous.** The test accepts it. A filter that only checks $M_2(\mathbb{C})$ keeps the Casimir list. The next case rejects it. This is why the test is necessary but not sufficient, and why the method needs a separate section instead of a place among the four.
 
@@ -469,7 +469,7 @@ Write $j(c)=(-1+\sqrt{1+4c})/2$ for one entry.
 | $M_6(\mathbb{C})$ | $\mathbb{C}$ | $6$ | $\mathbb{C}^6$ of dimension $6$ | index $6$ | matrix units | yes |
 | $M_n(\mathbb{C})$ | $\mathbb{C}$ | $n$ | $\mathbb{C}^n$ of dimension $n$ | index $n$ | matrix units | yes |
 
-**The commutative algebras.** $\mathbb{C}$ over $\mathbb{R}$ and over $\mathbb{C}$ is a field: every nonzero element is invertible, the only idempotents are $0$ and $1$, and every bracket vanishes. $\mathbb{D}$ is not a field: it has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the zero divisors $1\pm j$. The dual numbers $\mathbb{D}'$ have the nilpotent $\varepsilon$ and the maximal ideal $(\varepsilon)$, and only the idempotents $0,1$. The nilpotent does not give a triple: every element of $\mathbb{D}'$ has the single eigenvalue $a$ (its scalar part), so no $S$ has the spectrum $j,j-1,\ldots,-j$ with $j>0$. The reduced biquaternions $\mathbb{B}_{\mathrm r}$ have the two central idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and two non-isomorphic simple modules $\mathbb{C}_\pm$. All of them are commutative, so every bracket vanishes and every element is central; none has a spin triple.
+**The commutative algebras.** $\mathbb{C}$ over $\mathbb{R}$ and over $\mathbb{C}$ is a field: every nonzero element is invertible, the only idempotents are $0$ and $1$, and every bracket vanishes. $\mathbb{D}$ is not a field: it has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the zero divisors $1\pm j$. The dual numbers $\mathbb{D}'$ have the nilpotent $\varepsilon$ and the maximal ideal $(\varepsilon)$, and only the idempotents $0,1$. The nilpotent does not give a triple: every element of $\mathbb{D}'$ has the single eigenvalue $a$ (its scalar part), so no $S$ has the spectrum $s,s-1,\ldots,-s$ with $s>0$. The reduced biquaternions $\mathbb{B}_{\mathrm r}$ have the two central idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and two non-isomorphic simple modules $\mathbb{C}_\pm$. All of them are commutative, so every bracket vanishes and every element is central; none has a spin triple.
 
 **The quaternions.** $\mathbb{H}$ over $\mathbb{R}$ is a division algebra. Its only nilpotent is $0$ and its only idempotents are $0$ and $1$. It has no spin triple in itself: for every $S\in\mathbb{H}$ the eigenvalues of $\operatorname{ad}_S$ are $0$ and $\pm2i\lvert s\rvert$, where $s$ is the imaginary part, and the value $1$ never occurs, so $[S,U]=U$ has no nonzero real solution. The triple exists in the complexification $\mathbb{B}$. The split biquaternions $\mathbb{H}_{\mathbb D}\cong\mathbb{H}\times\mathbb{H}$ are a product of two division algebras, so they have no nilpotent and no spin triple either; their complexification is $\mathbb{B}\times\mathbb{B}$.
 
@@ -577,11 +577,11 @@ Ux_0=0,\qquad Ux_k=x_{k-1}\quad(k=1,\dots,\ell-1),
 $$
 so $x_0$ is the top and $x_{\ell-1}$ is the bottom. A nilpotent is intrinsic data: it exists in $M_n$, in $\mathbb{B}$ and in $\mathbb{D}'$, and it does not exist in the division algebras $\mathbb{H}$ and $\mathbb{C}$. The chain is the sequence of states that $U$ steps through.
 
-**The grading $S$.** The chain is finite, so it has a top and a bottom. Label the levels as a spin: the top is $j$, the bottom is $-j$, and consecutive levels differ by one. With $\ell$ levels this forces $j=(\ell-1)/2$ and
+**The grading $S$.** The chain is finite, so it has a top and a bottom. Label the levels as a spin: the top is $s$, the bottom is $-s$, and consecutive levels differ by one. With $\ell$ levels this forces $s=(\ell-1)/2$ and
 $$
-Sx_k=(j-k)x_k.
+Sx_k=(s-k)x_k.
 $$
-The labels are the only symmetric unit-step labelling of a finite chain. The spectrum $j,j-1,\dots,-j$ is the level number, not an assumption.
+The labels are the only symmetric unit-step labelling of a finite chain. The spectrum $s,s-1,\dots,-s$ is the level number, not an assumption.
 
 **The partner $V$.** The operator $U$ steps one level up, toward $x_0$. A carrier also needs the step down, so let
 $$
@@ -591,7 +591,7 @@ Then
 $$
 [U,V]x_k=(c_k-c_{k-1})x_k,\qquad c_{-1}=0.
 $$
-The requirement $[U,V]=2S$ gives $c_k-c_{k-1}=2(j-k)$. With $c_{-1}=0$ the sum is
+The requirement $[U,V]=2S$ gives $c_k-c_{k-1}=2(s-k)$. With $c_{-1}=0$ the sum is
 $$
 c_k=(k+1)(\ell-1-k).
 $$
@@ -740,9 +740,9 @@ $$
 
 ## 20. The Orbit List
 
-**Definition.** Choose a principal $\mathfrak{sl}_2$ in the semisimple part. Let $O_f$ be a coadjoint orbit of that $\mathfrak{sl}_2$, normalized so that the unit sphere of $\mathfrak{su}(2)$ has area $4\pi$. The orbit method gives $j\in\tfrac12\mathbb{Z}_{\ge0}$. The **orbit list** cuts this set at the largest constituent:
+**Definition.** Choose a principal $\mathfrak{sl}_2$ in the semisimple part. Let $O_f$ be a coadjoint orbit of that $\mathfrak{sl}_2$, normalized so that the unit sphere of $\mathfrak{su}(2)$ has area $4\pi$. The orbit method gives $s\in\tfrac12\mathbb{Z}_{\ge0}$. The **orbit list** cuts this set at the largest constituent:
 $$
-\Sigma_{\mathrm{orb}}(A)=\left\{j\in\tfrac12\mathbb{Z}_{\ge0}:\ 2j+1\le\max_{W\in\mathcal{F}(A)}\dim_k W\right\}.
+\Sigma_{\mathrm{orb}}(A)=\left\{s\in\tfrac12\mathbb{Z}_{\ge0}:\ 2s+1\le\max_{W\in\mathcal{F}(A)}\dim_k W\right\}.
 $$
 
 **The cases.**
@@ -769,7 +769,7 @@ $$
 
 **The rows without a semisimple part.** $\mathbb{R}$, $\mathbb{C}$ over $\mathbb{R}$, $\mathbb{C}$ over $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, and $\mathbb{B}_{\mathrm r}$ have no semisimple part, so they have no $\mathfrak{sl}_2$ orbits; their list is $\{0\}$ even when the cut would allow more. The same remark applies to the highest-weight list.
 
-**What it gives.** It is exact at $M_2(\mathbb{C})$ because $\dim\mathfrak{sl}_2=3$ gives the cut $j\le1$. For $M_n$ with $n\ge3$ the list uses the principal $\mathfrak{sl}_2$; the cut is the adjoint dimension. It is overcomplete for $n\ge3$: the adjoint of $\mathfrak{sl}_3$ has dimension $8$, and the cut admits spins up to $\tfrac72$; at $M_6$ the cut admits spins up to $17$. The cut is not intrinsic to the orbit; it uses the module dimensions.
+**What it gives.** It is exact at $M_2(\mathbb{C})$ because $\dim\mathfrak{sl}_2=3$ gives the cut $s\le1$. For $M_n$ with $n\ge3$ the list uses the principal $\mathfrak{sl}_2$; the cut is the adjoint dimension. It is overcomplete for $n\ge3$: the adjoint of $\mathfrak{sl}_3$ has dimension $8$, and the cut admits spins up to $\tfrac72$; at $M_6$ the cut admits spins up to $17$. The cut is not intrinsic to the orbit; it uses the module dimensions.
 
 **Verdict.** Rejected. It is an orbit label with a dimension cut. The cut is extra data, and the list is overcomplete above $n=2$.
 
@@ -782,7 +782,7 @@ $$
 | triple | the brackets on all carriers | $\{0,\tfrac12,1\}$ |
 | module list | dimensions of the natural family | $\{0,\tfrac12,1\}$ |
 | highest-weight list | top weights on the natural family | $\{0,\tfrac12,1\}$ |
-| orbit list | orbits with $2j+1\le3$ | $\{0,\tfrac12,1\}$ |
+| orbit list | orbits with $2s+1\le3$ | $\{0,\tfrac12,1\}$ |
 
 **The three values are the three carriers.** The centre gives $0$; the defining module gives $\tfrac12$; the traceless part of the adjoint gives $1$. The four definitions read the same three carriers.
 
@@ -816,19 +816,19 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **The adjoint.** $\operatorname{ad}_S$ has eigenvalues $0$ of multiplicity $2$ and $\pm1$. These are the adjoint weights $0,\pm1$; the adjoint spin is $1$.
 
-**The orbit cut.** The largest constituent has dimension $3$, so $2j+1\le3$ gives $j\le1$.
+**The orbit cut.** The largest constituent has dimension $3$, so $2s+1\le3$ gives $s\le1$.
 
 **The quaternion check.** $\operatorname{ad}_i$ has eigenvalues $0$ of multiplicity $2$ and $\pm2i$; the normalized generator $J_3=\tfrac12\operatorname{ad}_{ie_3}$ has $0$ of multiplicity $2$ and $\pm1$. This is the spin-$1$ content of the adjoint carrier in $\mathbb{B}$.
 
 | check | computation | result |
 |---|---|---|
 | $M_2$ triple | brackets with $S,U,V$ | $\mathfrak{sl}_2$ |
-| $M_2$ defining | weights $\pm\tfrac12$ | $j=\tfrac12$ |
-| $M_2$ adjoint | weights $0,\pm1$ | $j=1$ |
-| $M_2$ centre | fixed | $j=0$ |
+| $M_2$ defining | weights $\pm\tfrac12$ | $s=\tfrac12$ |
+| $M_2$ adjoint | weights $0,\pm1$ | $s=1$ |
+| $M_2$ centre | fixed | $s=0$ |
 | $M_2$ left multiplication | eigenvalues $\pm\tfrac12$, multiplicity $2$ | weights $\pm\tfrac12$ |
 | $M_2$ adjoint spectrum | $0$ (multiplicity $2$), $\pm1$ | weights $0,\pm1$ |
-| $M_2$ orbit cut | $2j+1\le3$ | $j\le1$ |
+| $M_2$ orbit cut | $2s+1\le3$ | $s\le1$ |
 | $\mathbb{H}$ adjoint | $0$ (multiplicity $2$), $\pm2i$ | normalized $0,\pm1$ |
 
 ## 24. The Four Methods in All Cases
@@ -867,7 +867,7 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **Two different obstructions.** $\mathbb{D}'$ has a nonzero nilpotent but no semisimple element with distinct eigenvalues; $\mathbb{H}$ over $\mathbb{R}$ has a spin-$\tfrac12$ carrier but no nilpotent. Neither has a triple. A triple needs both a nilpotent and a semisimple grading element, and neither condition alone suffices.
 
-**The Casimir is not in the table.** It passes the $M_2(\mathbb{C})$ test, but on $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$. These are not half-integers, so they are not spins. The formula $j=(-1+\sqrt{1+4c})/2$ is an $\mathfrak{su}(2)$ formula; it is meaningful only when the semisimple part is $\mathfrak{sl}_2$. The Casimir is therefore a representation label, not a definition of the algebra's spin list. It is in §13.
+**The Casimir is not in the table.** It passes the $M_2(\mathbb{C})$ test, but on $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$. These are not half-integers, so they are not spins. The formula $s=(-1+\sqrt{1+4c})/2$ is an $\mathfrak{su}(2)$ formula; it is meaningful only when the semisimple part is $\mathfrak{sl}_2$. The Casimir is therefore a representation label, not a definition of the algebra's spin list. It is in §13.
 
 **What the table selects.** The $M_2(\mathbb{C})$ test is passed by all four because the natural family there is exactly the centre, the defining module, and the traceless part, of dimensions $1,2,3$. The test does not separate them, and it does not reject the Casimir either. The test is invalid as a test of spin: it selects by the answer. The divergence on $M_n$ for $n\ge3$ shows only that the four computations are different.
 
@@ -888,7 +888,7 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **5. The carriers were confused with the particles.** The centre, the Peirce plane and the traceless part are three carriers of $\mathbb{B}$. They are not three particles. The centre carries the trivial representation; the Peirce plane carries the defining representation of $M_2(\mathbb{C})$, which is the spin-$\tfrac12$ representation of the rotation subgroup; the traceless part carries the adjoint representation of the rotation subgroup, which is spin $1$. Those are correct statements about the rotation action. They do not say that the Higgs is the centre, the electron is a Peirce plane, or the photon is $\mathfrak{sl}_2$. The physical identification is an interpretation supplied by the Standard Model, and it is not derived.
 
-**6. The half-angle was confused with the weight.** The rotor is $\exp(\tfrac{\theta}{2}\vec u)$ for every spin. On a carrier of spin $j$ the rotation operator is $\exp(-i\theta\,\hat n\cdot\vec J/\hbar)$, whose eigenvalues are $e^{-im_s\theta}$, with $m_s=-j,\dots,j$. The exponent coefficient is $m_s$, not $\theta/2$. The $\theta/2$ is the coordinate of the defining spinor, where $m_s=\pm\tfrac12$. It is a coordinate of the rotor, not the spin, and it equals the spin only at $j=\tfrac12$, and then only numerically.
+**6. The half-angle was confused with the weight.** The rotor is $\exp(\tfrac{\theta}{2}\vec u)$ for every spin. On a carrier of spin $s$ the rotation operator is $\exp(-i\theta\,\hat n\cdot\vec J/\hbar)$, whose eigenvalues are $e^{-im_s\theta}$, with $m_s=-s,\dots,s$. The exponent coefficient is $m_s$, not $\theta/2$. The $\theta/2$ is the coordinate of the defining spinor, where $m_s=\pm\tfrac12$. It is a coordinate of the rotor, not the spin, and it equals the spin only at $s=\tfrac12$, and then only numerically.
 
 **7. The adjoint was confused with the spin.** The adjoint of $\mathfrak{so}(3)$ on $\mathbb{R}^3$ is the spin-$1$ representation. The adjoint of $\mathfrak{so}(3,1)$ on $\mathbb{R}^4$ is the six-dimensional antisymmetric tensor, not the four-vector. The adjoint of $\mathbb{B}$ is a carrier of the rotation subgroup; its spatial part is the triplet. The triplet carries spin $1$; it is not the definition of spin $1$, and the higher integer carriers are symmetric traceless tensors, not the adjoint of $M_n$ for $n>2$.
 
@@ -905,15 +905,15 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **The triple.** A spin triple is a copy of $\mathfrak{sl}_2$ with a normalisation. The relations $[S,U]=U$, $[S,V]=-V$ and $[U,V]=2S$ define the triple, not the spin. A two-level atom, an isospin doublet and a beam splitter all carry such a triple. The triple becomes the rotation triple only when $S$ is identified with $S_z/\hbar$ and the carrier with the rest-frame space. That identification is physical.
 
-**The module list.** The formula $j=(\dim V-1)/2$ reads the size of a module. It gives the correct defining spin of $M_n$ on $\mathbb{C}^n$ and the wrong value on the adjoint. It cannot see a weight.
+**The module list.** The formula $s=(\dim V-1)/2$ reads the size of a module. It gives the correct defining spin of $M_n$ on $\mathbb{C}^n$ and the wrong value on the adjoint. It cannot see a weight.
 
 **The highest-weight list.** This is the closest of the four, and it is still not a definition. It needs a choice of Cartan, a positive system and a principal $\mathfrak{sl}_2$. Different choices give different lists. The highest weight is a representation label; the spin is the little-group label of the physical state.
 
-**The orbit list.** The orbit method gives the spin of a representation of $SU(2)$ after a choice of normalisation. The cut $2j+1\le\dim W$ is extra data. It is a geometric realisation of a representation label, not a property of the algebra.
+**The orbit list.** The orbit method gives the spin of a representation of $SU(2)$ after a choice of normalisation. The cut $2s+1\le\dim W$ is extra data. It is a geometric realisation of a representation label, not a property of the algebra.
 
 ### The Casimir
 
-The Casimir list is the one method that passes the $M_2(\mathbb{C})$ test and still fails. At $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$, which are not half-integers. The formula $j=(-1+\sqrt{1+4c})/2$ is the $\mathfrak{su}(2)$ formula $c=j(j+1)$ inverted. It is valid only when the semisimple part is $\mathfrak{sl}_2$ and the module is an $\mathfrak{sl}_2$ module. For $\mathfrak{sl}_n$ with $n\ge3$ the Casimir of the defining module is $(n^2-1)/(2n)$, not $j(j+1)$ for a half-integer $j$. The list is a formula applied outside its domain.
+The Casimir list is the one method that passes the $M_2(\mathbb{C})$ test and still fails. At $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$, which are not half-integers. The formula $s=(-1+\sqrt{1+4c})/2$ is the $\mathfrak{su}(2)$ formula $c=s(s+1)$ inverted. It is valid only when the semisimple part is $\mathfrak{sl}_2$ and the module is an $\mathfrak{sl}_2$ module. For $\mathfrak{sl}_n$ with $n\ge3$ the Casimir of the defining module is $(n^2-1)/(2n)$, not $s(s+1)$ for a half-integer $s$. The list is a formula applied outside its domain.
 
 ### What Survives
 
@@ -929,13 +929,13 @@ are the rotation generators in the Hermitian subspace. On the Peirce plane $S_+=
 
 **2. The centre is the trivial carrier.** $\mathbb{C}_{\mathbb{B}}$ carries the trivial representation of the rotation group. It is the carrier of a scalar field. It is not "spin $0$" by definition; it is the space on which the rotation acts trivially.
 
-**3. The tensor construction.** The pure spin-$j$ carrier is the symmetric part of the $2j$-fold tensor power of the defining module,
+**3. The tensor construction.** The pure spin-$s$ carrier is the symmetric part of the $2s$-fold tensor power of the defining module,
 
 $$
-\mathrm{Sym}^{2j}(S),\qquad \dim_{\mathbb{C}}=2j+1,
+\mathrm{Sym}^{2s}(S),\qquad \dim_{\mathbb{C}}=2s+1,
 $$
 
-inside $\mathbb{B}^{\otimes 2j}\cong M_{2^{2j}}(\mathbb{C})$. The constraints of the field equation select the pure spin from the product. This is the correct route to higher spin, and it is not a property of $\mathbb{B}$ alone.
+inside $\mathbb{B}^{\otimes 2s}\cong M_{2^{2s}}(\mathbb{C})$. The constraints of the field equation select the pure spin from the product. This is the correct route to higher spin, and it is not a property of $\mathbb{B}$ alone.
 
 **4. The half-angle.** The rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on the defining spinor with exponent $\pm i\theta/2$ and on the vector with exponent $\pm i\theta$. The half-angle is the coordinate of the defining representation. It is not the spin.
 
@@ -953,7 +953,7 @@ inside $\mathbb{B}^{\otimes 2j}\cong M_{2^{2j}}(\mathbb{C})$. The constraints of
 - [The Spin–Statistics Theorem in Biquaternionic Form](../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html), for the rotation double cover and the statistics pairing.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint action as the spin-$1$ carrier of the rotation subgroup.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the defining module and its Lorentz action.
-- [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html), for the $(j_L,j_R)$ labels and the rotation content.
+- [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html), for the $(s_L,s_R)$ labels and the rotation content.
 - [The Spinor-Helicity Formalism and Biquaternions](../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html), for helicity as the massless little-group label.
 - [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the tensor construction of the higher carriers.
 - [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ and the separation from the Peirce index.

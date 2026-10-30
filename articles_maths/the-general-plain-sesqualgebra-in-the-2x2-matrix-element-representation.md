@@ -110,7 +110,7 @@ $$
 \boxed{\; \langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2)\bigr) \;},
 $$
 
-the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{Q})^{\dagger}=\mathsf{M}_2(\tilde{Q}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_2))=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.
+the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{Q})^{\dagger}=\mathsf{M}_2(\tilde{Q}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_2))=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde Q_5)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde Q_5))$.
 
 **Theorem (the Frobenius norm).** On the diagonal,
 

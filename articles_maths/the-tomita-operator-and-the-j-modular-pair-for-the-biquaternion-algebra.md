@@ -13,12 +13,12 @@ The general theory is *The Indefinite Modular Operator*, *Krein–Tomita–Takes
 **Proposition (the Hilbert algebra).** With the involution ${}^{*}$, the trace $\tau=\mathrm{Sc}$ and the form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$, the biquaternion algebra is a Hilbert algebra: the form is positive definite and Hermitian, and the adjoint axiom
 
 $$
-\langle\tilde Q\tilde S,\tilde Q_3\rangle=\langle\tilde S,\tilde Q^{*}\tilde Q_3\rangle
+\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle
 $$
 
-holds for all $\tilde Q,\tilde S,\tilde Q_3$.
+holds for all $\tilde Q,\tilde Q_4,\tilde Q_3$.
 
-**Proof.** Positive definiteness is $\langle\tilde Q,\tilde Q\rangle=\sum_\mu|Q_\mu|^{2}>0$ for $\tilde Q\neq0$, and Hermitian symmetry is immediate from the coefficient expansion. For the adjoint axiom, $\langle\tilde Q\tilde S,\tilde Q_3\rangle=\mathrm{Sc}((\tilde Q\tilde S)^{*}\tilde Q_3)=\mathrm{Sc}(\tilde S^{*}\tilde Q^{*}\tilde Q_3)$, and the last expression is $\langle\tilde S,\tilde Q^{*}\tilde Q_3\rangle$; the trace property of $\mathrm{Sc}$ is not even needed, associativity alone giving the identity.
+**Proof.** Positive definiteness is $\langle\tilde Q,\tilde Q\rangle=\sum_\mu|Q_\mu|^{2}>0$ for $\tilde Q\neq0$, and Hermitian symmetry is immediate from the coefficient expansion. For the adjoint axiom, $\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\mathrm{Sc}((\tilde Q\tilde Q_4)^{*}\tilde Q_3)=\mathrm{Sc}(\tilde Q_4^{*}\tilde Q^{*}\tilde Q_3)$, and the last expression is $\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle$; the trace property of $\mathrm{Sc}$ is not even needed, associativity alone giving the identity.
 
 **Proposition (the cyclic and separating unit).** Let $\xi=\iota(1)=e_t$. The orbit is $\mathcal{M}\xi=\{\tilde Q e_t\}=\mathbb{B}$, so $\xi$ is cyclic for $\mathcal{M}$, and $L_{\tilde Q}\xi=\tilde Q=0$ forces $\tilde Q=0$, so $\xi$ is separating for $\mathcal{M}$. Hence the Tomita operator of the pair $(\mathcal{M},\xi)$ is defined and densely defined.
 
@@ -78,7 +78,7 @@ $$
 \jmath\,\mathcal{M}\,\jmath=\mathcal{M}' \;}.
 $$
 
-**Proof.** For every $\tilde S$, $(\jmath L_{\tilde Q}\jmath)(\tilde S)=(\tilde Q\,\tilde S^{*})^{*}=\tilde S\,\tilde Q^{*}=R_{\tilde Q^{*}}(\tilde S)$; as $\tilde Q$ ranges over $\mathbb{B}$ the right multiplications range over $\mathcal{M}'$, which gives the second identity. This is the commutant theorem of Tomita in the definite case, $\jmath\mathcal{M}\jmath=\mathcal{M}'$, computed on the biquaternion algebra.
+**Proof.** For every $\tilde Q_4$, $(\jmath L_{\tilde Q}\jmath)(\tilde Q_4)=(\tilde Q\,\tilde Q_4^{*})^{*}=\tilde Q_4\,\tilde Q^{*}=R_{\tilde Q^{*}}(\tilde Q_4)$; as $\tilde Q$ ranges over $\mathbb{B}$ the right multiplications range over $\mathcal{M}'$, which gives the second identity. This is the commutant theorem of Tomita in the definite case, $\jmath\mathcal{M}\jmath=\mathcal{M}'$, computed on the biquaternion algebra.
 
 **Remark (the definite shadow of an indefinite identity).** The exchange of the sides is the same phenomenon as the indefinite identity $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*, with the star in place of the bar: the definite modular conjugation realizes by an antiunitary operator what the indefinite adjoint realizes by a conjugate-linear adjoint. The star and the bar are the two conjugations through which the two theories exchange the sides.
 
@@ -92,7 +92,7 @@ $$
 
 **Proof.** Take $T$ the rank-one operator with image the line $\mathbb{C}\xi$ composed with a projection onto the orthogonal complement of $\xi$, so that $T\xi=0$ while $T\neq0$; separatingness of $\xi$ would require $T=0$. So no vector is separating for the full operator algebra, and the three data of the indefinite modular theory — algebra, $J$-cyclic and $J$-separating vector, self-dual cone — cannot be completed for the envelope.
 
-**Remark (the twisted symmetries).** For the twisted fundamental symmetries $J'=R_c$ of *The Biquaternion Algebra and the Krein–von Neumann Property*, with $c^{*}=c$ and $c^{2}=e_t$, the image $\mathcal{M}$ *is* a $J'$-algebra and $\xi=e_t$ is $J'$-cyclic and $J'$-separating, with $S'={}^{*}$ and $\Delta'=\mathrm{id}$ exactly as in the definite case. But the modular conjugation must commute with the fundamental symmetry, $\jmath'J'=J'\jmath'$, and here $\jmath'J'(\tilde S)=c\tilde S^{*}$ while $J'\jmath'(\tilde S)=\tilde S^{*}c$, so the two agree only for central $c$. For every non-central $c$ the twisted pair is a Krein–von Neumann algebra **without** a $J'$-modular conjugation. Definiteness of the modular theory is not recovered by the twist; it is recovered only by the definite reading $J=\mathrm{id}$.
+**Remark (the twisted symmetries).** For the twisted fundamental symmetries $J'=R_c$ of *The Biquaternion Algebra and the Krein–von Neumann Property*, with $c^{*}=c$ and $c^{2}=e_t$, the image $\mathcal{M}$ *is* a $J'$-algebra and $\xi=e_t$ is $J'$-cyclic and $J'$-separating, with $S'={}^{*}$ and $\Delta'=\mathrm{id}$ exactly as in the definite case. But the modular conjugation must commute with the fundamental symmetry, $\jmath'J'=J'\jmath'$, and here $\jmath'J'(\tilde Q_4)=c\tilde Q_4^{*}$ while $J'\jmath'(\tilde Q_4)=\tilde Q_4^{*}c$, so the two agree only for central $c$. For every non-central $c$ the twisted pair is a Krein–von Neumann algebra **without** a $J'$-modular conjugation. Definiteness of the modular theory is not recovered by the twist; it is recovered only by the definite reading $J=\mathrm{id}$.
 
 ## Worked Examples
 

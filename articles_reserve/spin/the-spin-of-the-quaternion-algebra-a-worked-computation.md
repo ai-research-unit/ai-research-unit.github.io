@@ -35,7 +35,7 @@ The last line is the decomposition of the adjoint module, not a fourth carrier. 
 
 ### The Point of the Row
 
-The real dimension of the spin-$\tfrac12$ carrier is $4$, not $2$. The complexification of $\mathbb{H}$ as a left $\mathbb{H}$-module is $\mathbb{C}^2\oplus\mathbb{C}^2=2W_{1/2}$, and the spin is read from that complex module. The bound $2j+1\le N$ applies to the dimension of an irreducible complex carrier, not to the real dimension of a real form. This is why the row has $\tfrac12$ beside $4$.
+The real dimension of the spin-$\tfrac12$ carrier is $4$, not $2$. The complexification of $\mathbb{H}$ as a left $\mathbb{H}$-module is $\mathbb{C}^2\oplus\mathbb{C}^2=2W_{1/2}$, and the spin is read from that complex module. The bound $2s+1\le N$ applies to the dimension of an irreducible complex carrier, not to the real dimension of a real form. This is why the row has $\tfrac12$ beside $4$.
 
 ## The Algebra and Its Matrix Model
 
@@ -212,7 +212,7 @@ As a left $\mathbb{H}$-module, $\mathbb{H}$ is simple: every nonzero element is 
 
 **Result.** The elementary associative carrier is $\mathbb{H}$ itself, of real dimension $4$ and spin $\tfrac12$. The carrier is quaternionic: its endomorphism ring is $\mathbb{H}$, not $\mathbb{C}$.
 
-**Remark (dimension and spin).** The formula $\dim W_j=2j+1$ gives $2$ for $j=\tfrac12$. The complexified carrier has complex dimension $4=2\cdot2$, and the real carrier has real dimension $4$. The number $4$ is the real dimension of $\mathbb{H}$, and also the complex dimension of its complexification $2W_{1/2}$; it is not the dimension of an irreducible complex carrier.
+**Remark (dimension and spin).** The formula $\dim W_s=2s+1$ gives $2$ for $s=\tfrac12$. The complexified carrier has complex dimension $4=2\cdot2$, and the real carrier has real dimension $4$. The number $4$ is the real dimension of $\mathbb{H}$, and also the complex dimension of its complexification $2W_{1/2}$; it is not the dimension of an irreducible complex carrier.
 
 ## The Adjoint Action: Content $0,1$
 
@@ -296,7 +296,7 @@ $$
 C=S^2+\tfrac12(UV+VU)=\tfrac14+\tfrac12\cdot1=\tfrac34,
 $$
 
-which is $j(j+1)$ for $j=\tfrac12$.
+which is $s(s+1)$ for $s=\tfrac12$.
 
 On the adjoint module the image of $C$ has characteristic polynomial
 
@@ -304,7 +304,7 @@ $$
 \lambda(\lambda-2)^3,
 $$
 
-with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ and $3$.
+with eigenvalues $0$ and $2=s(s+1)$ for $s=0$ and $s=1$, of multiplicities $1$ and $3$.
 
 **Result.** The Casimir confirms the left spin $\tfrac12$ and the adjoint content $0,1$.
 
@@ -345,7 +345,7 @@ with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ a
 | $S$ | spin element $\tfrac{i}{2}e_z$ |
 | $U,V$ | ladders |
 | $\operatorname{ad}_X$ | $Y\mapsto XY-YX$ |
-| $W_j$ | irreducible carrier, dimension $2j+1$ |
+| $W_s$ | irreducible carrier, dimension $2s+1$ |
 | $C$ | Casimir element $S^2+\tfrac12(UV+VU)$ |
 
 ## Further Reading
@@ -355,4 +355,4 @@ with eigenvalues $0$ and $2=j(j+1)$ for $j=0$ and $j=1$, of multiplicities $1$ a
 - [The Quaternion Algebra in the 2x2 Matrix Element Representation](../articles_maths/the-quaternion-algebra-in-the-2x2-matrix-element-representation.html), for the embedding used here.
 - [The Spin of the Principal Pair of $M_2(\mathbb{C})$](the-principal-pair-of-m2c-a-worked-computation.html), for the matrix form of the same row.
 - [Modules over the Quaternion Algebra](../articles_maths/modules-over-the-quaternion-algebra.html), for the simple module.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
+- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $s(s+1)$.

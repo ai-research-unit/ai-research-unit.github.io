@@ -68,7 +68,7 @@ the analogue for this block of $\operatorname{Tr}(L_{\tilde Q_1}L_{\tilde Q_2})$
 $$
 \tau(\tilde Q_1,\tilde Q_2)=2\operatorname{Re}\bigl(Q_{1t}\overline{Q_{2t}}\bigr).
 $$
-The trace form is **degenerate**: its radical is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of real dimension six, its rank is two, and it sees the real and the imaginary parts of the central coordinate $Q_t$ alone. in the block's own terms it is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde Q_1$, which is neither multiplication, as *The Multiplication Operators of the Symmetric Plain Sesqualgebra* computes.
+The trace form is **degenerate**: its radical is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of real dimension six, its rank is two, and it sees the real and the imaginary parts of the central coordinate $Q_t$ alone. in the block's own terms it is the conjugate-linear map $\tilde Q_7\mapsto\overline{Q_{7t}}\tilde Q_1$, which is neither multiplication, as *The Multiplication Operators of the Symmetric Plain Sesqualgebra* computes.
 
 ### What Is Specific to This Product Read over $\mathbb{R}$
 

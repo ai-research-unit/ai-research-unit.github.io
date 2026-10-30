@@ -9,7 +9,7 @@ $$
 \qquad 1+3+5+7+9=25,
 $$
 
-with $V_j$ the irreducible module of highest weight $j$. This article exhibits the **chain**: an explicit highest weight vector $X_j\in V_j$ for each $j$, the lowering formula for the adjoint action of $J_-$, and the weight diagram of the whole algebra. The highest weight vectors are
+with $V_s$ the irreducible module of highest weight $s$. This article exhibits the **chain**: an explicit highest weight vector $X_s\in V_s$ for each $s$, the lowering formula for the adjoint action of $J_-$, and the weight diagram of the whole algebra. The highest weight vectors are
 
 $$
 X_0=I,\qquad X_1=J_+,\qquad X_2=2E_{13}+\sqrt6E_{24}+2E_{35},\qquad X_3=E_{14}+E_{25},\qquad X_4=E_{15},
@@ -98,10 +98,10 @@ $$
 X_0=I,\qquad X_1=J_+,\qquad X_2=2E_{13}+\sqrt6E_{24}+2E_{35},\qquad X_3=E_{14}+E_{25},\qquad X_4=E_{15}.
 $$
 
-**Theorem.** For each $j=0,\dots,4$, the vector $X_j$ is a highest weight vector of weight $j$:
+**Theorem.** For each $s=0,\dots,4$, the vector $X_s$ is a highest weight vector of weight $s$:
 
 $$
-\operatorname{ad}_{J_3}X_j=jX_j,\qquad \operatorname{ad}_{J_+}X_j=0.
+\operatorname{ad}_{J_3}X_s=sX_s,\qquad \operatorname{ad}_{J_+}X_s=0.
 $$
 
 **Proof.** The weights are read on the matrix units: $I$ has weight $0$; $J_+=\sum_kc_kE_{k,k+1}$ is a sum of units of weight $+1$; $X_2$ is a sum of units $E_{13},E_{24},E_{35}$ of weight $2$; $X_3$ is a sum of units $E_{14},E_{25}$ of weight $3$; $X_4=E_{15}$ has weight $4$. The annihilation by $\operatorname{ad}_{J_+}$ is checked term by term.
@@ -149,12 +149,12 @@ $$
 
 ### The Cyclic Modules
 
-**Theorem.** The cyclic module $V(j)=\mathbb{C}[J_-,J_3]X_j$ is irreducible of highest weight $j$, of dimension $2j+1$. The five modules $V(0),\dots,V(4)$ are the summands of the adjoint decomposition.
+**Theorem.** The cyclic module $V(s)=\mathbb{C}[J_-,J_3]X_s$ is irreducible of highest weight $s$, of dimension $2s+1$. The five modules $V(0),\dots,V(4)$ are the summands of the adjoint decomposition.
 
-**Proof.** Each $X_j$ is a highest weight vector, so the module it generates is irreducible of highest weight $j$ by the standard highest-weight theory of $\mathfrak{sl}_2$; the dimension is $2j+1$. The five modules have dimensions $1,3,5,7,9$, whose sum is $25=\dim\mathfrak{gl}_5$. Their characters are $\sum_{m=-j}^{j}t^m$, whose sum is
+**Proof.** Each $X_s$ is a highest weight vector, so the module it generates is irreducible of highest weight $s$ by the standard highest-weight theory of $\mathfrak{sl}_2$; the dimension is $2s+1$. The five modules have dimensions $1,3,5,7,9$, whose sum is $25=\dim\mathfrak{gl}_5$. Their characters are $\sum_{m=-s}^{s}t^m$, whose sum is
 
 $$
-\sum_{j=0}^{4}\sum_{m=-j}^{j}t^m=\sum_{r=-4}^{4}(5-|r|)t^r,
+\sum_{s=0}^{4}\sum_{m=-s}^{s}t^m=\sum_{r=-4}^{4}(5-|r|)t^r,
 $$
 
 which is the character of $\mathfrak{gl}_5$ under $\operatorname{ad}_{J_3}$. Since both modules are semisimple and have the same character, the sum of the five cyclic modules is the whole algebra and the decomposition is direct. The summand $V(j)$ is the $V_j$ of the Clebsch–Gordan decomposition.
@@ -249,13 +249,13 @@ The five summands contribute the following weights:
 
 The sum of the multiplicities in each weight is the multiplicity in the table: at weight $0$, all five modules contribute, $1+1+1+1+1=5$; at weight $1$, the modules $V_1,V_2,V_3,V_4$ contribute, $4$; at weight $4$, only $V_4$ contributes, $1$.
 
-**Proposition.** The weight multiplicities determine the chain: the multiplicity of $V_j$ is the difference of the multiplicities of the weights $j$ and $j+1$,
+**Proposition.** The weight multiplicities determine the chain: the multiplicity of $V_s$ is the difference of the multiplicities of the weights $s$ and $s+1$,
 
 $$
-m_j=5-|j|-(5-|j+1|)=1,\qquad j=0,1,2,3,4.
+m_s=5-|s|-(5-|s+1|)=1,\qquad s=0,1,2,3,4.
 $$
 
-**Proof.** In a sum of highest-weight modules, the multiplicity of the weight $r$ is $\sum_{j\ge|r|}m_j$; subtracting consecutive weights gives $m_j$. The values are $5-4=1$, $4-3=1$, $3-2=1$, $2-1=1$, $1-0=1$.
+**Proof.** In a sum of highest-weight modules, the multiplicity of the weight $r$ is $\sum_{s\ge|r|}m_s$; subtracting consecutive weights gives $m_s$. The values are $5-4=1$, $4-3=1$, $3-2=1$, $2-1=1$, $1-0=1$.
 
 ### The Chain from $E_{15}$
 
@@ -347,8 +347,8 @@ with $c_0=c_5=0$. The weight multiplicities are $1,2,3,4,5,4,3,2,1$; the chain f
 |---|---|
 | $J_3,J_+,J_-$ | The spin-two generators, with $J_-=J_+^{\mathsf T}$ |
 | $c_k=\sqrt{k(5-k)}$ | The ladder coefficients $2,\sqrt6,\sqrt6,2$ |
-| $X_j$ | The highest weight vector of the summand $V_j$ |
-| $V_j$ | The irreducible module of highest weight $j$, dimension $2j+1$ |
+| $X_s$ | The highest weight vector of the summand $V_s$ |
+| $V_s$ | The irreducible module of highest weight $s$, dimension $2s+1$ |
 | $\operatorname{ad}_{J_-}$ | The lowering operator of the adjoint representation |
 | $E_{ij}$ | The matrix unit, of weight $j-i$ |
 

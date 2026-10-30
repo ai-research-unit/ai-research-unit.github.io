@@ -8,7 +8,7 @@ $$
 [S,U]=U,\qquad [S,V]=-V,\qquad [U,V]=2S
 $$
 
-spans a copy of $\mathfrak{sl}_2$, and on an irreducible finite-dimensional module the eigenvalues of $S$ are $j,j-1,\dots,-j$. The largest, $j$, is the spin.
+spans a copy of $\mathfrak{sl}_2$, and on an irreducible finite-dimensional module the eigenvalues of $S$ are $s,s-1,\dots,-s$. The largest, $s$, is the spin.
 
 **The one step of this article is where the triple comes from.** It need not be given as Lie data. In an associative algebra the product splits into a symmetric and an antisymmetric part,
 
@@ -20,7 +20,7 @@ and the antisymmetric part $\tfrac12[U,V]$ is an element of the same algebra. A 
 
 **The rest is the standard representation theory of that triple.** Once the triple exists, the carrier is a module, the weights are the eigenvalues of $S$, and the spin is their maximum. The article proves the structure theorem once, computes the elementary lists for the matrix algebras, the commutative algebras and the products, and separates the spin from the labels beside it. The lists belong to the pair, not to the algebra alone: $M_n(\mathbb{C})$ carries a principal pair and a balanced Peirce pair, and they give different spins.
 
-The base field is $\mathbb{R}$ or $\mathbb{C}$, of characteristic zero, and a real algebra is complexified when a pair is needed; the indexing is $1$-based, and no form and no Clifford algebra are used. The $\mathfrak{sl}_2$ modules, the enveloping algebra and the Casimir element are those of *Representations of Lie Algebras* and *The Casimir Operator*, cited rather than reproved. The other articles write the Cartan as $H=2S$, with weights $2j,2j-2,\dots,-2j$; this article writes $S$, so that the spin is a weight and not half a weight.
+The base field is $\mathbb{R}$ or $\mathbb{C}$, of characteristic zero, and a real algebra is complexified when a pair is needed; the indexing is $1$-based, and no form and no Clifford algebra are used. The $\mathfrak{sl}_2$ modules, the enveloping algebra and the Casimir element are those of *Representations of Lie Algebras* and *The Casimir Operator*, cited rather than reproved. The other articles write the Cartan as $H=2S$, with weights $2s,2s-2,\dots,-2s$; this article writes $S$, so that the spin is a weight and not half a weight.
 
 ## The Spin Structure
 
@@ -70,12 +70,12 @@ For a real algebra with a pair in $A_{\mathbb{C}}$, a carrier of the triple is a
 **Definition (weights, weight string, spin).** The **weights** of a carrier of the triple are the eigenvalues of $\rho(S)$, counted with multiplicity. The **weight string** is the multiset of weights. The **highest weight** $\lambda_{\max}$ is the largest weight. The **spin** is the largest weight,
 
 $$
-\boxed{\;j=\lambda_{\max}(\rho(S))=\max\operatorname{spec}\rho(S)\;}
+\boxed{\;s=\lambda_{\max}(\rho(S))=\max\operatorname{spec}\rho(S)\;}
 $$
 
-and the carrier is a **spin-$j$ carrier**. The element $S$ is the **spin operator**.
+and the carrier is a **spin-$s$ carrier**. The element $S$ is the **spin operator**.
 
-**Remark (a vector has a weight, not a spin).** A nonzero $w\in W$ with $\rho(S)w=mw$ has weight $m$; it is a state of magnetic quantum number $m$ in a carrier of spin $j\ge\lvert m\rvert$. The spin $j$ is the highest weight of the whole carrier, not the weight of one vector. The vector alone does not determine $j$; the carrier does.
+**Remark (a vector has a weight, not a spin).** A nonzero $w\in W$ with $\rho(S)w=mw$ has weight $m$; it is a state of magnetic quantum number $m$ in a carrier of spin $s\ge\lvert m\rvert$. The spin $s$ is the highest weight of the whole carrier, not the weight of one vector. The vector alone does not determine $s$; the carrier does.
 
 **Remark (the trace of $S$ is zero).** Since $S=\tfrac12[U,V]$, $\operatorname{tr}\rho(S)=\tfrac12\operatorname{tr}[\rho(U),\rho(V)]=0$. The weights of a carrier sum to zero. The trace of $S$ is therefore not the spin, and it cannot distinguish carriers.
 
@@ -85,7 +85,7 @@ $$
 H=2S=[U,V],
 $$
 
-so that $[H,U]=2U$ and the weights of $H$ are the integers $2j,2j-2,\dots,-2j$. This article writes $S$ and the weights $j,j-1,\dots,-j$. The two are the same triple; the factor $2$ is the antisymmetrisation of the product, moved from the definition of $S$ into the relation $[H,U]=2U$. The table of the cases quotes the spin $j$, which is the same number in both notations.
+so that $[H,U]=2U$ and the weights of $H$ are the integers $2s,2s-2,\dots,-2s$. This article writes $S$ and the weights $s,s-1,\dots,-s$. The two are the same triple; the factor $2$ is the antisymmetrisation of the product, moved from the definition of $S$ into the relation $[H,U]=2U$. The table of the cases quotes the spin $s$, which is the same number in both notations.
 
 **Remark (real algebras).** A real algebra need not contain a real spin pair. The quaternions contain $\mathfrak{su}(2)$, not $\mathfrak{sl}_2(\mathbb{R})$: for $S\in\operatorname{Im}\mathbb{H}$ the operator $\operatorname{ad}_S$ has eigenvalues $0,\pm2i\lvert S\rvert$ over $\mathbb{C}$ and no nonzero real eigenvalue, so $[S,U]=U$ has no nonzero real solution. The pair of $\mathbb{H}$ lives in the complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}=\mathbb{B}$. For a real algebra $A$, a **spin structure** is a spin pair in $A_{\mathbb{C}}=A\otimes_{\mathbb{R}}\mathbb{C}$; a real carrier is complexified with the algebra. The split quaternions $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ do contain a real pair, and no complexification is needed for the pair itself.
 
@@ -103,35 +103,35 @@ so that $[H,U]=2U$ and the weights of $H$ are the integers $2j,2j-2,\dots,-2j$. 
 
 ### The Irreducibles
 
-**Theorem (the carriers of a spin triple).** Let $k$ be algebraically closed of characteristic zero. Every finite-dimensional module of $\mathfrak{sl}_2(k)$ is a direct sum of irreducibles $W_j$, $j\in\tfrac12\mathbb{Z}_{\ge0}$, where $\dim W_j=2j+1$ and the weights of $W_j$ are
+**Theorem (the carriers of a spin triple).** Let $k$ be algebraically closed of characteristic zero. Every finite-dimensional module of $\mathfrak{sl}_2(k)$ is a direct sum of irreducibles $W_s$, $s\in\tfrac12\mathbb{Z}_{\ge0}$, where $\dim W_s=2s+1$ and the weights of $W_s$ are
 
 $$
-j,\ j-1,\ \dots,\ -j .
+s,\ s-1,\ \dots,\ -s .
 $$
 
-The highest weight is $j$, and the spin of $W_j$ is $j$. A carrier $W$ therefore has a well-defined spin, the largest $j$ of its summands, and the multiset of the highest weights of its summands is a complete invariant of $W$ as a module of the triple.
+The highest weight is $s$, and the spin of $W_s$ is $s$. A carrier $W$ therefore has a well-defined spin, the largest $s$ of its summands, and the multiset of the highest weights of its summands is a complete invariant of $W$ as a module of the triple.
 
-*Proof.* This is the standard representation theory of $\mathfrak{sl}_2$ over an algebraically closed field of characteristic zero (the real case is read after complexification to $\mathbb{C}$): a highest-weight vector generates an irreducible module of dimension $2j+1$, the ladder moves between weight spaces in steps of one, and Weyl's theorem makes every finite-dimensional module a direct sum of these. The triple is a copy of $\mathfrak{sl}_2$ by the previous remark.
+*Proof.* This is the standard representation theory of $\mathfrak{sl}_2$ over an algebraically closed field of characteristic zero (the real case is read after complexification to $\mathbb{C}$): a highest-weight vector generates an irreducible module of dimension $2s+1$, the ladder moves between weight spaces in steps of one, and Weyl's theorem makes every finite-dimensional module a direct sum of these. The triple is a copy of $\mathfrak{sl}_2$ by the previous remark.
 
-**Corollary (the spin is the highest weight).** On a carrier $W$, the eigenvalues of $\rho(S)$ are the weights; the largest is $j$.
+**Corollary (the spin is the highest weight).** On a carrier $W$, the eigenvalues of $\rho(S)$ are the weights; the largest is $s$.
 
-**Corollary (integrality).** The spin is a nonnegative integer or half-integer, $j\in\tfrac12\mathbb{Z}_{\ge0}$; equivalently $2j\in\mathbb{Z}_{\ge0}$.
+**Corollary (integrality).** The spin is a nonnegative integer or half-integer, $s\in\tfrac12\mathbb{Z}_{\ge0}$; equivalently $2s\in\mathbb{Z}_{\ge0}$.
 
-**Corollary (the weight string is the union).** If $W=\bigoplus_\alpha W_{j_\alpha}$, the weights of $W$ are the union, with multiplicity, of the strings $j_\alpha,j_\alpha-1,\dots,-j_\alpha$. The highest weight is $\max_\alpha j_\alpha$.
+**Corollary (the weight string is the union).** If $W=\bigoplus_\alpha W_{s_\alpha}$, the weights of $W$ are the union, with multiplicity, of the strings $s_\alpha,s_\alpha-1,\dots,-s_\alpha$. The highest weight is $\max_\alpha s_\alpha$.
 
-**Corollary (the multiplicity formula).** Let $\mu(m)$ be the multiplicity of the weight $m$. Each $W_j$ contributes one to $\mu(m)$ for every weight $m$ of $W_j$, so
+**Corollary (the multiplicity formula).** Let $\mu(m)$ be the multiplicity of the weight $m$. Each $W_s$ contributes one to $\mu(m)$ for every weight $m$ of $W_s$, so
 
 $$
-\mu(m)=\sum_{j\ge\lvert m\rvert,\ j-m\in\mathbb{Z}}m_j
+\mu(m)=\sum_{s\ge\lvert m\rvert,\ s-m\in\mathbb{Z}}m_s
 $$
 
 and therefore
 
 $$
-m_j=\mu(j)-\mu(j+1),
+m_s=\mu(s)-\mu(s+1),
 $$
 
-where $m_j$ is the multiplicity of $W_j$ in the carrier.
+where $m_s$ is the multiplicity of $W_s$ in the carrier.
 
 ### The Casimir
 
@@ -141,25 +141,25 @@ $$
 C=S^2+\tfrac12(UV+VU)=S^2+\tfrac12\{U,V\}
 $$
 
-commutes with $S,U,V$ and acts on $W_j$ as the scalar $j(j+1)$.
+commutes with $S,U,V$ and acts on $W_s$ as the scalar $s(s+1)$.
 
-*Proof.* The commutators $[C,U]$ and $[C,V]$ vanish by the relations, and $[C,S]=0$ because $[UV+VU,S]=0$; hence $C$ commutes with the triple. On a highest-weight vector $v$ of $W_j$, $\rho(S)v=jv$, $\rho(U)v=0$ and $\rho(V)\rho(U)v=0$; the relation $[U,V]=2S$ gives $\rho(U)\rho(V)v=2jv$. Hence $Cv=(j^2+j)v=j(j+1)v$. Since $C$ is central in the span of the triple and $W_j$ is irreducible, it acts by this scalar on all of $W_j$.
+*Proof.* The commutators $[C,U]$ and $[C,V]$ vanish by the relations, and $[C,S]=0$ because $[UV+VU,S]=0$; hence $C$ commutes with the triple. On a highest-weight vector $v$ of $W_s$, $\rho(S)v=sv$, $\rho(U)v=0$ and $\rho(V)\rho(U)v=0$; the relation $[U,V]=2S$ gives $\rho(U)\rho(V)v=2sv$. Hence $Cv=(s^2+s)v=s(s+1)v$. Since $C$ is central in the span of the triple and $W_s$ is irreducible, it acts by this scalar on all of $W_s$.
 
-**Remark (the Casimir is not the spin).** The Casimir acts by $j(j+1)$, a function of the spin; it is not the spin. On a carrier with summands of different spins it is not scalar, and its largest eigenvalue gives $j$ by solving $j(j+1)=\lambda$.
+**Remark (the Casimir is not the spin).** The Casimir acts by $s(s+1)$, a function of the spin; it is not the spin. On a carrier with summands of different spins it is not scalar, and its largest eigenvalue gives $s$ by solving $s(s+1)=\lambda$.
 
 ### The Period and the Half-Angle
 
-**Proposition (the period).** On $W_j$, the operator $\exp(-2\pi iS)$ is the scalar $(-1)^{2j}$: $+1$ for integer $j$ and $-1$ for half-integer $j$. For $j>0$, the rotor $T\mapsto\exp(-iTS)$ has period $2\pi$ on an integer-spin carrier and $4\pi$ on a half-integer one; the spin-$0$ carrier carries the trivial rotor.
+**Proposition (the period).** On $W_s$, the operator $\exp(-2\pi iS)$ is the scalar $(-1)^{2s}$: $+1$ for integer $s$ and $-1$ for half-integer $s$. For $s>0$, the rotor $T\mapsto\exp(-iTS)$ has period $2\pi$ on an integer-spin carrier and $4\pi$ on a half-integer one; the spin-$0$ carrier carries the trivial rotor.
 
-*Proof.* The eigenvalues of $S$ on $W_j$ are $j,j-1,\dots,-j$; each differs from $j$ by an integer, so $e^{-2\pi i m}=e^{-2\pi i j}=(-1)^{2j}$ for every weight $m$. The period is the smallest $T>0$ with $e^{-iTS}=1$; it is $2\pi$ when $2j$ is even and $4\pi$ when $2j$ is odd.
+*Proof.* The eigenvalues of $S$ on $W_s$ are $s,s-1,\dots,-s$; each differs from $s$ by an integer, so $e^{-2\pi i m}=e^{-2\pi i s}=(-1)^{2s}$ for every weight $m$. The period is the smallest $T>0$ with $e^{-iTS}=1$; it is $2\pi$ when $2s$ is even and $4\pi$ when $2s$ is odd.
 
-**Remark (the half-angle).** The half-angle is not the spin. The rotor $\exp(-i\theta S)$ has exponent $\theta$ times the spin operator and acts on a weight-$m$ state by the phase $e^{-i\theta m}$. When the spin operator is written as $\tfrac12 i\vec u$, the angle in the rotor is $\theta/2$; that half is the coordinate of the weight, not the highest weight. Two carriers with the same polar angle and different $j$ have different spins. The half-angle is why a spinor rotation has period $4\pi$; it is not a normalisation of the spin.
+**Remark (the half-angle).** The half-angle is not the spin. The rotor $\exp(-i\theta S)$ has exponent $\theta$ times the spin operator and acts on a weight-$m$ state by the phase $e^{-i\theta m}$. When the spin operator is written as $\tfrac12 i\vec u$, the angle in the rotor is $\theta/2$; that half is the coordinate of the weight, not the highest weight. Two carriers with the same polar angle and different $s$ have different spins. The half-angle is why a spinor rotation has period $4\pi$; it is not a normalisation of the spin.
 
 ### The Bound
 
-**Proposition (the bound).** On a carrier of dimension $N$, the spin satisfies $2j+1\le N$, so $j\le(N-1)/2$. On the regular module of an algebra of dimension $d$, $j\le(d-1)/2$.
+**Proposition (the bound).** On a carrier of dimension $N$, the spin satisfies $2s+1\le N$, so $s\le(N-1)/2$. On the regular module of an algebra of dimension $d$, $s\le(d-1)/2$.
 
-*Proof.* $W_j$ has dimension $2j+1$ and is a subspace of the carrier; hence $2j+1\le N$. The regular module has dimension $d$.
+*Proof.* $W_s$ has dimension $2s+1$ and is a subspace of the carrier; hence $2s+1\le N$. The regular module has dimension $d$.
 
 **Remark (higher spin).** The bound applies to the carriers of the triple. The tensor product of two carriers is a carrier of the triple, with the diagonal action, but not of the algebra unless the algebra has a coproduct. The spins $3/2,2,\dots$ therefore occur on the triple's tensor products while the algebra's own elementary list stays bounded. This is the distinction developed in *Higher Spin from Tensor Products*.
 
@@ -169,7 +169,7 @@ commutes with $S,U,V$ and acts on $W_j$ as the scalar $j(j+1)$.
 
 **Definition (elementary carrier and spin list).** Let $(A,\mathfrak{s})$ be a spin algebra. An **elementary carrier** is a nonzero irreducible carrier of the algebra under one of the two actions: a simple left $A$-module for the associative action, or an irreducible $\operatorname{ad}(A)$-stable subspace of $A$ for the adjoint action. The **spin content** of a carrier is the multiset of the spins of its simple summands as a module of the triple. The **spin** of the carrier is the largest element of its content. The **elementary spin list** $\Sigma(A,\mathfrak{s})$ is the set of the spins of the elementary carriers.
 
-**Proposition (where the list comes from).** The associative elementary carriers are the simple left $A$-modules; when $A$ is semisimple, they are the simple summands of the left regular module $A$. The adjoint elementary carriers are the irreducible modules for $A^-$ inside the adjoint module; when $A$ is semisimple, $A^-$ is reductive and they are its simple summands. The list is the union of the spins of the two families. The finer decomposition of an elementary carrier into the $W_j$ is its spin content; the lower $j$ are triple components of that carrier, not additional elementary carriers.
+**Proposition (where the list comes from).** The associative elementary carriers are the simple left $A$-modules; when $A$ is semisimple, they are the simple summands of the left regular module $A$. The adjoint elementary carriers are the irreducible modules for $A^-$ inside the adjoint module; when $A$ is semisimple, $A^-$ is reductive and they are its simple summands. The list is the union of the spins of the two families. The finer decomposition of an elementary carrier into the $W_s$ is its spin content; the lower $s$ are triple components of that carrier, not additional elementary carriers.
 
 **Remark (the list is relative to the pair).** The same algebra with two pairs has two lists. The next two subsections compute the two canonical pairs of $M_n(\mathbb{C})$ and show that they differ.
 
@@ -293,7 +293,7 @@ The reduced biquaternion algebra has a Peirce frame and nontrivial idempotents, 
 
 The complex algebra $\mathbb{B}$ has two real forms, $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$; reading $\mathbb{B}$ over $\mathbb{R}$ is the realification, not a third real form. The Frobenius–Schur type, read from the endomorphism ring, is quaternionic, complex and real. The spin is $\tfrac12$ in all three; the real dimension and the endomorphism ring are not.
 
-**The general principle.** The spin is computed after complexification, so it is the same for a real algebra and for its complexification. The real form fixes the type of the carrier: real, complex or quaternionic, with endomorphism ring $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$. The same spin can therefore be carried by modules of different real dimensions; the type is read from the endomorphism ring, not from $j$.
+**The general principle.** The spin is computed after complexification, so it is the same for a real algebra and for its complexification. The real form fixes the type of the carrier: real, complex or quaternionic, with endomorphism ring $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$. The same spin can therefore be carried by modules of different real dimensions; the type is read from the endomorphism ring, not from $s$.
 
 **The spin-two example.** The real algebras $M_5(\mathbb{R})$, $M_5(\mathbb{C})$ read over $\mathbb{R}$, and $M_5(\mathbb{H})$ give the same spin $2$ on the defining carrier, with different real dimensions:
 
@@ -305,13 +305,13 @@ The complex algebra $\mathbb{B}$ has two real forms, $\mathbb{H}$ and $\mathbb{H
 
 ## What Is Not a Definition
 
-**The definition has one form: $j=\lambda_{\max}(\rho(S))$ on a carrier of a nonzero spin pair.** The following are not definitions.
+**The definition has one form: $s=\lambda_{\max}(\rho(S))$ on a carrier of a nonzero spin pair.** The following are not definitions.
 
 - **The dimension.** A carrier of dimension $2$ can be $W_{1/2}$ or $W_0\oplus W_0$; a carrier of dimension $3$ can be $W_1$ or $W_{1/2}\oplus W_0$. The dimension bounds the spin but does not determine it.
 - **The rank or determinant of a multiplication operator.** On a spinor plane of $\mathbb{B}$, the determinant of $L_{\tilde Q}$ is the norm and its rank is $2$ or $1$; the spin stays $\tfrac12$. Half the rank is $1$ or $\tfrac12$; the rank does not determine the spin. This is the computation of *The Spin of a Biquaternion*.
 - **The Peirce index.** The right action of the root $2S$ is $+1$ on one plane and $-1$ on the other; the right action of $S$ is $\pm\tfrac12$. That sign labels two copies of one left module. It is a Peirce index, not the spin and not a chirality. In the real form $\mathbb{B}_{\mathbb{R}}$, the chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification $\mathbb{B}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}$, $\chi^2=1$, which grades $S$ against $S^{\mathrm{c}}$; it is not in $\mathbb{B}_{\mathbb{R}}$.
-- **The half-angle.** The angle $\theta/2$ of the rotor is half the exponential coordinate $\theta$ of the spin operator; it is a coordinate of the weight, not the highest weight. The spin is $j$. A spinor rotation has period $4\pi$ because $j=\tfrac12$, not because the half-angle is the spin.
-- **The Casimir value.** The Casimir acts by $j(j+1)$; it is a function of the spin. On a carrier with summands of different spins it is not a single number, and its largest eigenvalue gives $j$ by solving $j(j+1)=\lambda$.
+- **The half-angle.** The angle $\theta/2$ of the rotor is half the exponential coordinate $\theta$ of the spin operator; it is a coordinate of the weight, not the highest weight. The spin is $s$. A spinor rotation has period $4\pi$ because $s=\tfrac12$, not because the half-angle is the spin.
+- **The Casimir value.** The Casimir acts by $s(s+1)$; it is a function of the spin. On a carrier with summands of different spins it is not a single number, and its largest eigenvalue gives $s$ by solving $s(s+1)=\lambda$.
 - **The weight of a vector.** A vector of weight $m$ has magnetic quantum number $m$; it is not a carrier of spin $m$. The spin is the highest weight of the carrier that contains it.
 - **The algebra or the element.** An algebra has no spin; an element has no spin. The element $S$ is the spin operator; the element $U$ is a ladder operator.
 - **The zero pair.** The zero pair satisfies the double-commutator conditions and assigns spin $0$ to everything; it is excluded because $[U,V]=0$, so the antisymmetric part vanishes.
@@ -321,9 +321,9 @@ The complex algebra $\mathbb{B}$ has two real forms, $\mathbb{H}$ and $\mathbb{H
 
 - A spin is a property of a carrier of a chosen spin pair $(U,V)$, with $[U,V]\neq0$, $[[U,V],U]=2U$ and $[[U,V],V]=-2V$; the algebra alone has no spin.
 - The spin element is the antisymmetric part of the product, $S=\tfrac12(UV-VU)=\tfrac12[U,V]$; it satisfies $[S,U]=U$, $[S,V]=-V$, $[U,V]=2S$, and the span of $S,U,V$ is $\mathfrak{sl}_2$. The other articles write $H=2S$.
-- A carrier of the triple is a finite-dimensional module for the triple; a carrier of the algebra is also a module for $A$ under the associative action, or for the Lie algebra $A^-$ under the adjoint action. The weights are the eigenvalues of $\rho(S)$, the highest weight is the largest, and the spin is $j=\lambda_{\max}$.
-- The Casimir $C=S^2+\tfrac12(UV+VU)$ acts by $j(j+1)$.
-- Every finite-dimensional carrier of the triple is a direct sum of $W_j$, with $\dim W_j=2j+1$ and weights $j,j-1,\dots,-j$; the multiset of the summands is the spin content, the spin is its maximum, and the multiplicity formula is $m_j=\mu(j)-\mu(j+1)$.
+- A carrier of the triple is a finite-dimensional module for the triple; a carrier of the algebra is also a module for $A$ under the associative action, or for the Lie algebra $A^-$ under the adjoint action. The weights are the eigenvalues of $\rho(S)$, the highest weight is the largest, and the spin is $s=\lambda_{\max}$.
+- The Casimir $C=S^2+\tfrac12(UV+VU)$ acts by $s(s+1)$.
+- Every finite-dimensional carrier of the triple is a direct sum of $W_s$, with $\dim W_s=2s+1$ and weights $s,s-1,\dots,-s$; the multiset of the summands is the spin content, the spin is its maximum, and the multiplicity formula is $m_s=\mu(s)-\mu(s+1)$.
 - The elementary carriers are the simple left modules and the irreducible $\operatorname{ad}(A)$-stable subspaces of the adjoint module; for a semisimple algebra the second family is the simple summands of the adjoint. The elementary spin list is their union, and it depends on the pair.
 - For $M_n(\mathbb{C})$ with the principal pair, the defining spin is $(n-1)/2$, the adjoint's spin content is $0,\dots,n-1$, and the elementary carriers are the centre ($0$), the defining module ($(n-1)/2$) and the traceless part ($n-1$); the elementary list is $\{0,(n-1)/2,n-1\}$. For $M_5(\mathbb{C})$ the list is $0,2,4$ and the adjoint content is $0,\dots,4$.
 - For $M_n(\mathbb{C})$ with the balanced Peirce pair of an idempotent of rank $n/2$, the list is $0,\tfrac12,1$ and the adjoint content is $0,1$ for every even $n$; the biquaternion is the case $n=2$.
@@ -344,13 +344,13 @@ The complex algebra $\mathbb{B}$ has two real forms, $\mathbb{H}$ and $\mathbb{H
 | $(S,U,V)$ | spin triple, $[S,U]=U$, $[S,V]=-V$, $[U,V]=2S$ |
 | $H=2S$ | the Cartan in the doubled notation of the other articles |
 | $\rho$ | action of the triple, and of $A$ when the carrier is a carrier of the algebra |
-| $W_j$ | irreducible carrier of the triple, of spin $j$, dimension $2j+1$, weights $j,\dots,-j$ |
+| $W_s$ | irreducible carrier of the triple, of spin $s$, dimension $2s+1$, weights $s,\dots,-s$ |
 | spin content | the multiset of the spins of the triple summands of a carrier |
 | elementary carrier | a nonzero irreducible module for $A$ (associative) or an irreducible $\operatorname{ad}(A)$-stable subspace of $A$ (adjoint) |
 | $\lambda$, $\mu(\lambda)$ | a weight of $S$ and its multiplicity |
 | $\lambda_{\max}$ | highest weight |
-| $j=\lambda_{\max}$ | spin |
-| $C=S^2+\tfrac12(UV+VU)$ | Casimir, eigenvalue $j(j+1)$ |
+| $s=\lambda_{\max}$ | spin |
+| $C=S^2+\tfrac12(UV+VU)$ | Casimir, eigenvalue $s(s+1)$ |
 | $\Sigma(A,\mathfrak{s})$ | elementary spin list |
 | $M_n(\mathbb{C})$ | matrix algebra, $1$-based indices |
 | $J_3,J_\pm$ | principal triple of $M_n(\mathbb{C})$, with $S=J_3$ |

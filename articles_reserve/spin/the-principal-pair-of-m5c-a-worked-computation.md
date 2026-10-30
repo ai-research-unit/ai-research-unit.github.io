@@ -113,7 +113,7 @@ The multiplicities sum to $25$.
 
 ### The Content
 
-With $m_j=\mu(j)-\mu(j+1)$,
+With $m_s=\mu(s)-\mu(s+1)$,
 
 $$
 m_0=5-4=1,\quad m_1=4-3=1,\quad m_2=3-2=1,\quad m_3=2-1=1,\quad m_4=1-0=1.
@@ -125,7 +125,7 @@ $$
 
 ### The Highest Weight Vectors
 
-A highest weight vector of weight $j$ satisfies $\operatorname{ad}_Sh=jh$ and $\operatorname{ad}_Uh=0$. The five are
+A highest weight vector of weight $s$ satisfies $\operatorname{ad}_Sh=sh$ and $\operatorname{ad}_Uh=0$. The five are
 
 $$
 h_0=I,\quad
@@ -139,9 +139,9 @@ The coefficients are fixed by the cancellation of consecutive raising steps. In 
 
 ### The Chains
 
-Applying $\operatorname{ad}_V$ gives chains of lengths $2j+1$:
+Applying $\operatorname{ad}_V$ gives chains of lengths $2s+1$:
 
-| $j$ | chain length |
+| $s$ | chain length |
 |---|---|
 | $0$ | $1$ |
 | $1$ | $3$ |
@@ -157,7 +157,7 @@ $$
 
 ### Independence
 
-The $25$ chain vectors, ordered by $j$ and then by lowering, form a basis of $\mathfrak{gl}_5$. In the basis order $(E_{11},E_{12},\dots,E_{55})$ the determinant of the matrix of columns is
+The $25$ chain vectors, ordered by $s$ and then by lowering, form a basis of $\mathfrak{gl}_5$. In the basis order $(E_{11},E_{12},\dots,E_{55})$ the determinant of the matrix of columns is
 
 $$
 -2^{55}3^{18}5^{10}7^{7}\sqrt6\neq0.
@@ -225,7 +225,7 @@ $$
 C=S^2+\tfrac12(UV+VU)=6I,
 $$
 
-and $6=j(j+1)$ for $j=2$.
+and $6=s(s+1)$ for $s=2$.
 
 On $\mathfrak{gl}_5$ the characteristic polynomial of the image of $C$ is
 
@@ -233,7 +233,7 @@ $$
 \lambda(\lambda-20)^9(\lambda-12)^7(\lambda-6)^5(\lambda-2)^3.
 $$
 
-The eigenvalues are $0,2,6,12,20$, which are $j(j+1)$ for $j=0,1,2,3,4$, with multiplicities $1,3,5,7,9$.
+The eigenvalues are $0,2,6,12,20$, which are $s(s+1)$ for $s=0,1,2,3,4$, with multiplicities $1,3,5,7,9$.
 
 **Result.** The Casimir recovers the content $0,1,2,3,4$ without counting weights.
 
@@ -272,10 +272,10 @@ The eigenvalues are $0,2,6,12,20$, which are $j(j+1)$ for $j=0,1,2,3,4$, with mu
 | $S$ | spin element $\operatorname{diag}(2,1,0,-1,-2)$ |
 | $U,V$ | ladders $U^{\mathsf T}=V$ |
 | $\operatorname{ad}_X$ | $Y\mapsto XY-YX$ |
-| $W_j$ | irreducible carrier, dimension $2j+1$ |
+| $W_s$ | irreducible carrier, dimension $2s+1$ |
 | $\mu(m)$ | multiplicity of the weight $m$ |
-| $m_j$ | multiplicity of $W_j$ |
-| $h_j$ | highest weight vector of weight $j$ |
+| $m_s$ | multiplicity of $W_s$ |
+| $h_s$ | highest weight vector of weight $s$ |
 | $C$ | Casimir element $S^2+\tfrac12(UV+VU)$ |
 
 ## Further Reading
@@ -285,4 +285,4 @@ The eigenvalues are $0,2,6,12,20$, which are $j(j+1)$ for $j=0,1,2,3,4$, with mu
 - [The Spin Two Chain and the Adjoint of $M_5(\mathbb{C})$](../articles_maths/the-spin-two-chain-and-the-adjoint-of-m5c.html), for the spin-two carrier.
 - [The Spin of the Principal Pair of $M_3(\mathbb{C})$](the-principal-pair-of-m3c-a-worked-computation.html), for the case where the list and the content agree.
 - [Representations of Lie Algebras](../articles_maths/representations-of-lie-algebras.html), for the highest weight classification.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
+- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $s(s+1)$.

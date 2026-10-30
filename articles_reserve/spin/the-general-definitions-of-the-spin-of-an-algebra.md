@@ -22,7 +22,7 @@ $$
 $$
 The bound is $d-1$: a carrier has dimension at most $d$, so a defining spin is at most $(d-1)/2$, and the adjoint top of a triple is at most $d-1$. A method that returns real values that are not half-integers is not a spin list. The Casimir list is such a method; it is not one of the four, and the companion article explains why.
 
-**What is excluded.** A definition that quantifies over all representations of an external Lie algebra, or that uses an unnormalized continuous scale, can produce infinitely many values. The highest weight over all representations of $\mathfrak{su}(2)$ is the standard example: every $j\ge0$ occurs. Such a definition is a definition of a representation, not of the algebra's own list. Those definitions are in the companion article.
+**What is excluded.** A definition that quantifies over all representations of an external Lie algebra, or that uses an unnormalized continuous scale, can produce infinitely many values. The highest weight over all representations of $\mathfrak{su}(2)$ is the standard example: every $s\ge0$ occurs. Such a definition is a definition of a representation, not of the algebra's own list. Those definitions are in the companion article.
 
 The conventions are those of the corpus. The field is $\mathbb{R}$ or $\mathbb{C}$ as stated. The indexing is $1$-based. Matrix notation is used only for the matrix algebras. No Clifford algebra is used. The biquaternion is $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$.
 
@@ -52,7 +52,7 @@ The conventions are those of the corpus. The field is $\mathbb{R}$ or $\mathbb{C
 | $M_6(\mathbb{C})$ | $\mathbb{C}$ | $6$ | $\mathbb{C}^6$ of dimension $6$ | index $6$ | matrix units | yes |
 | $M_n(\mathbb{C})$ | $\mathbb{C}$ | $n$ | $\mathbb{C}^n$ of dimension $n$ | index $n$ | matrix units | yes |
 
-**The commutative algebras.** $\mathbb{C}$ over $\mathbb{R}$ and over $\mathbb{C}$ is a field: every nonzero element is invertible, the only idempotents are $0$ and $1$, and every bracket vanishes. $\mathbb{D}$ is not a field: it has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the zero divisors $1\pm j$. The dual numbers $\mathbb{D}'$ have the nilpotent $\varepsilon$ and the maximal ideal $(\varepsilon)$, and only the idempotents $0,1$. The nilpotent does not give a triple: every element of $\mathbb{D}'$ has the single eigenvalue $a$ (its scalar part), so no $S$ has the spectrum $j,j-1,\ldots,-j$ with $j>0$. The reduced biquaternions $\mathbb{B}_{\mathrm r}$ have the two central idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and two non-isomorphic simple modules $\mathbb{C}_\pm$. All of them are commutative, so every bracket vanishes and every element is central; none has a spin triple.
+**The commutative algebras.** $\mathbb{C}$ over $\mathbb{R}$ and over $\mathbb{C}$ is a field: every nonzero element is invertible, the only idempotents are $0$ and $1$, and every bracket vanishes. $\mathbb{D}$ is not a field: it has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the zero divisors $1\pm j$. The dual numbers $\mathbb{D}'$ have the nilpotent $\varepsilon$ and the maximal ideal $(\varepsilon)$, and only the idempotents $0,1$. The nilpotent does not give a triple: every element of $\mathbb{D}'$ has the single eigenvalue $a$ (its scalar part), so no $S$ has the spectrum $s,s-1,\ldots,-s$ with $s>0$. The reduced biquaternions $\mathbb{B}_{\mathrm r}$ have the two central idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and two non-isomorphic simple modules $\mathbb{C}_\pm$. All of them are commutative, so every bracket vanishes and every element is central; none has a spin triple.
 
 **The quaternions.** $\mathbb{H}$ over $\mathbb{R}$ is a division algebra. Its only nilpotent is $0$ and its only idempotents are $0$ and $1$. It has no spin triple in itself: for every $S\in\mathbb{H}$ the eigenvalues of $\operatorname{ad}_S$ are $0$ and $\pm2i\lvert s\rvert$, where $s$ is the imaginary part, and the value $1$ never occurs, so $[S,U]=U$ has no nonzero real solution. The triple exists in the complexification $\mathbb{B}$. The split biquaternions $\mathbb{H}_{\mathbb D}\cong\mathbb{H}\times\mathbb{H}$ are a product of two division algebras, so they have no nilpotent and no spin triple either; their complexification is $\mathbb{B}\times\mathbb{B}$.
 
@@ -160,11 +160,11 @@ Ux_0=0,\qquad Ux_k=x_{k-1}\quad(k=1,\dots,\ell-1),
 $$
 so $x_0$ is the top and $x_{\ell-1}$ is the bottom. A nilpotent is intrinsic data: it exists in $M_n$, in $\mathbb{B}$ and in $\mathbb{D}'$, and it does not exist in the division algebras $\mathbb{H}$ and $\mathbb{C}$. The chain is the sequence of states that $U$ steps through.
 
-**The grading $S$.** The chain is finite, so it has a top and a bottom. Label the levels as a spin: the top is $j$, the bottom is $-j$, and consecutive levels differ by one. With $\ell$ levels this forces $j=(\ell-1)/2$ and
+**The grading $S$.** The chain is finite, so it has a top and a bottom. Label the levels as a spin: the top is $s$, the bottom is $-s$, and consecutive levels differ by one. With $\ell$ levels this forces $s=(\ell-1)/2$ and
 $$
-Sx_k=(j-k)x_k.
+Sx_k=(s-k)x_k.
 $$
-The labels are the only symmetric unit-step labelling of a finite chain. The spectrum $j,j-1,\dots,-j$ is the level number, not an assumption.
+The labels are the only symmetric unit-step labelling of a finite chain. The spectrum $s,s-1,\dots,-s$ is the level number, not an assumption.
 
 **The partner $V$.** The operator $U$ steps one level up, toward $x_0$. A carrier also needs the step down, so let
 $$
@@ -174,7 +174,7 @@ Then
 $$
 [U,V]x_k=(c_k-c_{k-1})x_k,\qquad c_{-1}=0.
 $$
-The requirement $[U,V]=2S$ gives $c_k-c_{k-1}=2(j-k)$. With $c_{-1}=0$ the sum is
+The requirement $[U,V]=2S$ gives $c_k-c_{k-1}=2(s-k)$. With $c_{-1}=0$ the sum is
 $$
 c_k=(k+1)(\ell-1-k).
 $$
@@ -323,9 +323,9 @@ $$
 
 ## 6. The Orbit List
 
-**Definition.** Choose a principal $\mathfrak{sl}_2$ in the semisimple part. Let $O_f$ be a coadjoint orbit of that $\mathfrak{sl}_2$, normalized so that the unit sphere of $\mathfrak{su}(2)$ has area $4\pi$. The orbit method gives $j\in\tfrac12\mathbb{Z}_{\ge0}$. The **orbit list** cuts this set at the largest constituent:
+**Definition.** Choose a principal $\mathfrak{sl}_2$ in the semisimple part. Let $O_f$ be a coadjoint orbit of that $\mathfrak{sl}_2$, normalized so that the unit sphere of $\mathfrak{su}(2)$ has area $4\pi$. The orbit method gives $s\in\tfrac12\mathbb{Z}_{\ge0}$. The **orbit list** cuts this set at the largest constituent:
 $$
-\Sigma_{\mathrm{orb}}(A)=\left\{j\in\tfrac12\mathbb{Z}_{\ge0}:\ 2j+1\le\max_{W\in\mathcal{F}(A)}\dim_k W\right\}.
+\Sigma_{\mathrm{orb}}(A)=\left\{s\in\tfrac12\mathbb{Z}_{\ge0}:\ 2s+1\le\max_{W\in\mathcal{F}(A)}\dim_k W\right\}.
 $$
 
 **The cases.**
@@ -352,7 +352,7 @@ $$
 
 **The rows without a semisimple part.** $\mathbb{R}$, $\mathbb{C}$ over $\mathbb{R}$, $\mathbb{C}$ over $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$, and $\mathbb{B}_{\mathrm r}$ have no semisimple part, so they have no $\mathfrak{sl}_2$ orbits; their list is $\{0\}$ even when the cut would allow more. The same remark applies to the highest-weight list.
 
-**What it gives.** It is exact at $M_2(\mathbb{C})$ because $\dim\mathfrak{sl}_2=3$ gives the cut $j\le1$. For $M_n$ with $n\ge3$ the list uses the principal $\mathfrak{sl}_2$; the cut is the adjoint dimension. It is overcomplete for $n\ge3$: the adjoint of $\mathfrak{sl}_3$ has dimension $8$, and the cut admits spins up to $\tfrac72$; at $M_6$ the cut admits spins up to $17$. The cut is not intrinsic to the orbit; it uses the module dimensions.
+**What it gives.** It is exact at $M_2(\mathbb{C})$ because $\dim\mathfrak{sl}_2=3$ gives the cut $s\le1$. For $M_n$ with $n\ge3$ the list uses the principal $\mathfrak{sl}_2$; the cut is the adjoint dimension. It is overcomplete for $n\ge3$: the adjoint of $\mathfrak{sl}_3$ has dimension $8$, and the cut admits spins up to $\tfrac72$; at $M_6$ the cut admits spins up to $17$. The cut is not intrinsic to the orbit; it uses the module dimensions.
 
 **Verdict.** Passes the $M_2(\mathbb{C})$ test with the cut; overcomplete above $n=2$. The cut is extra data.
 
@@ -365,7 +365,7 @@ $$
 | triple | the brackets on all carriers | $\{0,\tfrac12,1\}$ |
 | module list | dimensions of the natural family | $\{0,\tfrac12,1\}$ |
 | highest-weight list | top weights on the natural family | $\{0,\tfrac12,1\}$ |
-| orbit list | orbits with $2j+1\le3$ | $\{0,\tfrac12,1\}$ |
+| orbit list | orbits with $2s+1\le3$ | $\{0,\tfrac12,1\}$ |
 
 **The three values are the three carriers.** The centre gives $0$; the defining module gives $\tfrac12$; the traceless part of the adjoint gives $1$. The four definitions read the same three carriers.
 
@@ -399,19 +399,19 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **The adjoint.** $\operatorname{ad}_S$ has eigenvalues $0$ of multiplicity $2$ and $\pm1$. These are the adjoint weights $0,\pm1$; the adjoint spin is $1$.
 
-**The orbit cut.** The largest constituent has dimension $3$, so $2j+1\le3$ gives $j\le1$.
+**The orbit cut.** The largest constituent has dimension $3$, so $2s+1\le3$ gives $s\le1$.
 
 **The quaternion check.** $\operatorname{ad}_i$ has eigenvalues $0$ of multiplicity $2$ and $\pm2i$; the normalized generator $J_3=\tfrac12\operatorname{ad}_{ie_3}$ has $0$ of multiplicity $2$ and $\pm1$. This is the spin-$1$ content of the adjoint carrier in $\mathbb{B}$.
 
 | check | computation | result |
 |---|---|---|
 | $M_2$ triple | brackets with $S,U,V$ | $\mathfrak{sl}_2$ |
-| $M_2$ defining | weights $\pm\tfrac12$ | $j=\tfrac12$ |
-| $M_2$ adjoint | weights $0,\pm1$ | $j=1$ |
-| $M_2$ centre | fixed | $j=0$ |
+| $M_2$ defining | weights $\pm\tfrac12$ | $s=\tfrac12$ |
+| $M_2$ adjoint | weights $0,\pm1$ | $s=1$ |
+| $M_2$ centre | fixed | $s=0$ |
 | $M_2$ left multiplication | eigenvalues $\pm\tfrac12$, multiplicity $2$ | weights $\pm\tfrac12$ |
 | $M_2$ adjoint spectrum | $0$ (multiplicity $2$), $\pm1$ | weights $0,\pm1$ |
-| $M_2$ orbit cut | $2j+1\le3$ | $j\le1$ |
+| $M_2$ orbit cut | $2s+1\le3$ | $s\le1$ |
 | $\mathbb{H}$ adjoint | $0$ (multiplicity $2$), $\pm2i$ | normalized $0,\pm1$ |
 
 ## 10. The Four Methods in All Cases
@@ -450,7 +450,7 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **Two different obstructions.** $\mathbb{D}'$ has a nonzero nilpotent but no semisimple element with distinct eigenvalues; $\mathbb{H}$ over $\mathbb{R}$ has a spin-$\tfrac12$ carrier but no nilpotent. Neither has a triple. A triple needs both a nilpotent and a semisimple grading element, and neither condition alone suffices.
 
-**The Casimir is not in the table.** It passes the $M_2(\mathbb{C})$ test, but on $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$. These are not half-integers, so they are not spins. The formula $j=(-1+\sqrt{1+4c})/2$ is an $\mathfrak{su}(2)$ formula; it is meaningful only when the semisimple part is $\mathfrak{sl}_2$. The Casimir is therefore a representation label, not a definition of the algebra's spin list. It is in the companion article, under *Dubious Methods*.
+**The Casimir is not in the table.** It passes the $M_2(\mathbb{C})$ test, but on $M_3(\mathbb{C})$ it returns $0.758$ and $1.303$. These are not half-integers, so they are not spins. The formula $s=(-1+\sqrt{1+4c})/2$ is an $\mathfrak{su}(2)$ formula; it is meaningful only when the semisimple part is $\mathfrak{sl}_2$. The Casimir is therefore a representation label, not a definition of the algebra's spin list. It is in the companion article, under *Dubious Methods*.
 
 **What the table selects.** The $M_2(\mathbb{C})$ test is passed by all four because the natural family there is exactly the centre, the defining module, and the traceless part, of dimensions $1,2,3$. The test does not separate them, and it does not reject the Casimir either. The test is necessary, not sufficient. The separation is the behavior on $M_n$ for $n\ge3$ and on the compact real forms.
 
