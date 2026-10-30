@@ -6,10 +6,10 @@ The earlier reading of this corpus put the Clifford algebra outside the biquater
 
 In the canonical frame the five Dirac generators are cells of the two-sided operator algebra:
 $$
-\gamma^0=iT_{e_t,e_x},\qquad
-\gamma^1=iT_{e_x,e_y},\qquad
-\gamma^2=iT_{e_y,e_y},\qquad
-\gamma^3=iT_{e_z,e_y},\qquad
+\gamma_0=iT_{e_t,e_x},\qquad
+\gamma_1=iT_{e_x,e_y},\qquad
+\gamma_2=iT_{e_y,e_y},\qquad
+\gamma_3=iT_{e_z,e_y},\qquad
 \gamma_5=-iT_{e_t,e_z}.
 $$
 They are not merely isomorphic to cells; they are cells, with the coefficients displayed. The sixteen products of the five generators are, up to $\pm1$ and $\pm i$, the sixteen cells $T_{e_\mu,e_\nu}=L_{e_\mu}R_{e_\nu}$, and the assignment extends to an algebra isomorphism
@@ -43,21 +43,21 @@ The split is a judgment about the subject of each article, not about its symbol 
 
 | product | cell | product | cell |
 |---|---|---|---|
-| $1$ | $T_{e_t,e_t}$ | $\gamma^1\gamma^2$ | $T_{e_z,e_t}$ |
-| $\gamma^0$ | $iT_{e_t,e_x}$ | $\gamma^1\gamma^3$ | $-T_{e_y,e_t}$ |
-| $\gamma^1$ | $iT_{e_x,e_y}$ | $\gamma^1\gamma^2\gamma^3$ | $-iT_{e_t,e_y}$ |
-| $\gamma^2$ | $iT_{e_y,e_y}$ | $\gamma^0\gamma^2$ | $T_{e_y,e_z}$ |
-| $\gamma^3$ | $iT_{e_z,e_y}$ | $\gamma^0\gamma^3$ | $T_{e_z,e_z}$ |
-| $\gamma^0\gamma^1$ | $T_{e_x,e_z}$ | $\gamma^0\gamma^2\gamma^3$ | $iT_{e_x,e_x}$ |
-| $\gamma^0\gamma^1\gamma^2$ | $iT_{e_z,e_x}$ | $\gamma^0\gamma^1\gamma^3$ | $-iT_{e_y,e_x}$ |
-| $\gamma^0\gamma^1\gamma^2\gamma^3$ | $-T_{e_t,e_z}$ | $\gamma^2\gamma^3$ | $T_{e_x,e_t}$ |
+| $1$ | $T_{e_t,e_t}$ | $\gamma_1\gamma_2$ | $T_{e_z,e_t}$ |
+| $\gamma_0$ | $iT_{e_t,e_x}$ | $\gamma_1\gamma_3$ | $-T_{e_y,e_t}$ |
+| $\gamma_1$ | $iT_{e_x,e_y}$ | $\gamma_1\gamma_2\gamma_3$ | $-iT_{e_t,e_y}$ |
+| $\gamma_2$ | $iT_{e_y,e_y}$ | $\gamma_0\gamma_2$ | $T_{e_y,e_z}$ |
+| $\gamma_3$ | $iT_{e_z,e_y}$ | $\gamma_0\gamma_3$ | $T_{e_z,e_z}$ |
+| $\gamma_0\gamma_1$ | $T_{e_x,e_z}$ | $\gamma_0\gamma_2\gamma_3$ | $iT_{e_x,e_x}$ |
+| $\gamma_0\gamma_1\gamma_2$ | $iT_{e_z,e_x}$ | $\gamma_0\gamma_1\gamma_3$ | $-iT_{e_y,e_x}$ |
+| $\gamma_0\gamma_1\gamma_2\gamma_3$ | $-T_{e_t,e_z}$ | $\gamma_2\gamma_3$ | $T_{e_x,e_t}$ |
 
 The five generators are the first five rows, each equal to $i$ times a cell, and every cell is a product of generators up to the phase shown. A calculation written in cells is therefore a calculation written in gammas, and the passage between the two is a substitution of notation, in either direction.
 
 **The one-term dictionary.** When the article needs no general cell, the generators act as fixed sandwiches. With $L_a(\psi)=a\psi$ and $R_b(\psi)=\psi b$,
 $$
-\gamma^0\psi=\psi\,(i\vec e_x),\qquad
-\gamma^k\psi=i\vec e_k\,\psi\,\vec e_y,\qquad
+\gamma_0\psi=\psi\,(i\vec e_x),\qquad
+\gamma_k\psi=i\vec e_k\,\psi\,\vec e_y,\qquad
 \gamma_5\psi=-i\,\psi\,\vec e_z .
 $$
 Each is a product of the spinor with fixed units, on the left, on the right, or both. That is pure biquaternion notation: no array, no operator symbol, no trace. Each line was checked numerically on random states; the residual is zero.
@@ -80,13 +80,13 @@ an identity in $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ written beside the origin
 
 **Worked examples.**
 
-*The generators.* With $T_{a,b}\psi=a\psi b$ and $L_{e_t}=R_{e_t}=\mathbf 1$, the sandwiches are those of the one-term dictionary, $\gamma^0\psi=i\psi e_x$, $\gamma^k\psi=i e_k\,\psi\,e_y$ and $\gamma_5\psi=-i\psi e_z$.
+*The generators.* With $T_{a,b}\psi=a\psi b$ and $L_{e_t}=R_{e_t}=\mathbf 1$, the sandwiches are those of the one-term dictionary, $\gamma_0\psi=i\psi e_x$, $\gamma_k\psi=i e_k\,\psi\,e_y$ and $\gamma_5\psi=-i\psi e_z$.
 
-*A product.* From the table, $\gamma^0\gamma^1=T_{e_x,e_z}$, hence $\gamma^0\gamma^1\psi=e_x\psi e_z$.
+*A product.* From the table, $\gamma_0\gamma_1=T_{e_x,e_z}$, hence $\gamma_0\gamma_1\psi=e_x\psi e_z$.
 
 *The derivative part of the Dirac equation.*
 $$
-\gamma^\mu\frac{\partial}{\partial Q_\mu}\psi
+\gamma_\mu\frac{\partial}{\partial Q_\mu}\psi
 =i\frac{\partial\psi}{\partial Q_t}e_x
 +i\sum_{k=1}^{3}e_k\,\frac{\partial\psi}{\partial Q_k}\,e_y .
 $$
@@ -112,7 +112,7 @@ $$
 \qquad
 \operatorname{tr}\gamma_5=-i\operatorname{tr}T_{e_t,e_z}=0,
 \qquad
-\operatorname{tr}\gamma^\mu=0 .
+\operatorname{tr}\gamma_\mu=0 .
 $$
 Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose scalar part is zero.
 
@@ -130,9 +130,9 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 
 | gamma object | cell side | terms |
 |---|---|---:|
-| $\gamma^\mu$ | $iT_{e_\mu,e_\nu}$ | 1 |
-| $\gamma^\mu\gamma^\nu$ | $\pm T_{a,b}$ | 1 |
-| $\gamma^\mu\partial/\partial Q_\mu$ | $\sum_\mu$ | 4 |
+| $\gamma_\mu$ | $iT_{e_\mu,e_\nu}$ | 1 |
+| $\gamma_\mu\gamma_\nu$ | $\pm T_{a,b}$ | 1 |
+| $\gamma_\mu\partial/\partial Q_\mu$ | $\sum_\mu$ | 4 |
 | $P_\pm$ | $\tfrac12(\mathbf 1\mp iT)$ | 2 |
 | $e^{i\alpha\gamma_5}$ | $R_{\exp(i\alpha e_z)}$ | 1 |
 | $\operatorname{tr}$ | $4\,\mathrm{Sc}\otimes\mathrm{Sc}$ | 1 functional |
@@ -183,11 +183,11 @@ A one-term row is the one-term equality. A multi-term row is the multi-term equa
 
 **What a one-term equality looks like.** A gamma is a cell, and a cell acts by two multiplications. In the canonical frame
 $$
-\gamma^0\psi=i\psi e_x,\qquad
-\gamma^k\psi=i e_k\,\psi\,e_y,\qquad
+\gamma_0\psi=i\psi e_x,\qquad
+\gamma_k\psi=i e_k\,\psi\,e_y,\qquad
 \gamma_5\psi=-i\psi e_z .
 $$
-Each line is a product of the spinor with fixed units: on the right for $\gamma^0$ and $\gamma_5$, on both sides for the three spacelike generators. The multipliers do not depend on the spinor, on the momentum, or on the state. That is the one-term equality. Under the display, the second line writes $\psi$, $e_x$, $e_y$, $e_z$ and gives each gamma one of the three forms. It needs no $4\times4$ array, no general $T_{a,b}$ and no trace over a carrier. The Dirac equation, its plane-wave solutions, the chiral projectors, the non-relativistic limit and the bound-state computations all fall here, because every gamma in them is one of the three lines above.
+Each line is a product of the spinor with fixed units: on the right for $\gamma_0$ and $\gamma_5$, on both sides for the three spacelike generators. The multipliers do not depend on the spinor, on the momentum, or on the state. That is the one-term equality. Under the display, the second line writes $\psi$, $e_x$, $e_y$, $e_z$ and gives each gamma one of the three forms. It needs no $4\times4$ array, no general $T_{a,b}$ and no trace over a carrier. The Dirac equation, its plane-wave solutions, the chiral projectors, the non-relativistic limit and the bound-state computations all fall here, because every gamma in them is one of the three lines above.
 
 The one-term equality is a property of the content, not of the current typesetting. Several one-term articles still print a gamma block in a comparison or an appendix, and it stays there; the note in the table says what the cell equality under it is.
 
@@ -230,23 +230,23 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 | [The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form](../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html) | 71 | the bilinears are products |
 | [The Electron in Biquaternionic Form](../articles_physics/the-electron-in-biquaternionic-form.html) | 14 | the bound-state computation |
 | [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html) | 3 | the bound-state computation |
-| [Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom](../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html) | 2 | the $\gamma^0$ block as a comparison |
+| [Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom](../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html) | 2 | the $\gamma_0$ block as a comparison |
 | [Exercise: The Non-Relativistic Limit and the Pauli Equation](../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html) | 7 | the Pauli matrices are the quaternion units |
 | [The Foldy–Wouthuysen Transformation in Biquaternionic Form](../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html) | 40 | the projectors $(\mathbf{1}\pm\kappa)/2$ |
 | [Zitterbewegung in Biquaternionic Form](../articles_physics/zitterbewegung-in-biquaternionic-form.html) | 22 | the velocity as a left multiplication |
 | [The Dirac Oscillator in Biquaternionic Form](../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html) | 12 | the oscillator algebra |
 | [The Dirac Path Integral in Biquaternionic Form](../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html) | 9 | the Dirac operator |
 | [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | 0 | no gamma matrix, no cell $T_{\mu\nu}$, enters |
-| [Dual Equivalence of the Dirac and Topologically Massive Gauge Fields](../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) | 1 | $\gamma^\mu$ in a quoted current |
+| [Dual Equivalence of the Dirac and Topologically Massive Gauge Fields](../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) | 1 | $\gamma_\mu$ in a quoted current |
 | *— Biquaternion Quantum Fields —* | | |
 | [The Wick Theorem in Biquaternionic Form](../articles_physics/the-wick-theorem-in-biquaternionic-form.html) | 1 | the Dirac operator |
 | [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | 1 | $\bar\psi=i\psi^\dagger T_{tx}$ and the slash, in a table |
 | [Canonical Quantization of the Biquaternion Dirac Field](../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html) | 27 | the adjoint and the anticommutator |
 | [The Quantized Dirac Field in Biquaternionic Form](../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html) | 14 | the mode expansion |
-| [The Fermionic Fock Space in Biquaternionic Form](../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html) | 1 | the $\gamma^\mu$ are odd operators, as the article says |
+| [The Fermionic Fock Space in Biquaternionic Form](../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html) | 1 | the $\gamma_\mu$ are odd operators, as the article says |
 | [The Feynman Propagator in Biquaternionic Form](../articles_physics/the-feynman-propagator-in-biquaternionic-form.html) | 3 | the propagator |
 | [The Fermionic Path Integral in Biquaternionic Form](../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html) | 12 | the Dirac operator |
-| [The Jordan–Wigner Transformation in Biquaternionic Form](../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html) | 3 | $\mathsf{M}_2(i\vec e_k)=\gamma^0\gamma^k$ |
+| [The Jordan–Wigner Transformation in Biquaternionic Form](../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html) | 3 | $\mathsf{M}_2(i\vec e_k)=\gamma_0\gamma_k$ |
 | *— Biquaternion Particle Physics and Gauge Fields —* | | |
 | [The Gauge Principle in Biquaternionic Form](../articles_physics/the-gauge-principle-in-biquaternionic-form.html) | 2 | $\gamma_5$ in the axial current |
 | [The Theta Parameter and Strong CP in Biquaternionic Form](../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) | 2 | the axial rotation $e^{i\alpha\gamma_5}$ |
@@ -256,8 +256,8 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 | [The Pion and the Chiral Lagrangian in Biquaternionic Form](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) | 3 | $\gamma_\mu\gamma_5$ in the quoted currents |
 | [The Neutron in Biquaternionic Form](../articles_physics/the-neutron-in-biquaternionic-form.html) | 7 | the bound-state computation |
 | [The Proton in Biquaternionic Form](../articles_physics/the-proton-in-biquaternionic-form.html) | 14 | the bound-state computation |
-| [The CKM Matrix and CP Violation in Biquaternionic Form](../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) | 5 | $\gamma^\mu$ in the quoted charged current |
-| [Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form](../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html) | 1 | $\gamma^\mu$ in a quoted wave equation |
+| [The CKM Matrix and CP Violation in Biquaternionic Form](../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) | 5 | $\gamma_\mu$ in the quoted charged current |
+| [Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form](../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html) | 1 | $\gamma_\mu$ in a quoted wave equation |
 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | 7 | $\gamma$ in the quoted couplings |
 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 0 | the Dirac operator, fixed sandwiches |
 
@@ -281,7 +281,7 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 | [The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation](../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html) | 6 | the cyclic representation |
 | [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html) | 24 | spacetime algebra is the subject |
 | [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html) | 1 | four bases and the discrete symmetries |
-| [The Reflection and the Rotation in Biquaternionic Form](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) | 88 | Pin, conjugation by $\gamma^0$, the odd half |
+| [The Reflection and the Rotation in Biquaternionic Form](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) | 88 | Pin, conjugation by $\gamma_0$, the odd half |
 | [The Spinor Module in Biquaternionic Form and Its Lorentz Action](../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) | 11 | the module and its Lorentz action |
 | [The s-Vector Representation of the Dirac Spinor in Biquaternionic Form](../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html) | 49 | the spinor representation |
 | [Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form](../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html) | 15 | triality and the octonionic construction |
@@ -331,10 +331,10 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 | article | the gamma that stays | the cell added |
 |---|---|---|
 | *— Introduction and Conventions —* | | |
-| [Conventions of the Matrix Models (mathematics)](../articles_maths/conventions-of-the-matrix-models.html) | the five generators, the sixteen products and the comparison map | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the sixteen products are the sixteen cells |
-| [Conventions of the Operators and the Differential Calculus](../articles_maths/conventions-of-the-operators-and-the-differential-calculus.html) | the gamma frame is five of the sixteen operators, up to $i$ | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| [Conventions of the Matrix Models (mathematics)](../articles_maths/conventions-of-the-matrix-models.html) | the five generators, the sixteen products and the comparison map | $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the sixteen products are the sixteen cells |
+| [Conventions of the Operators and the Differential Calculus](../articles_maths/conventions-of-the-operators-and-the-differential-calculus.html) | the gamma frame is five of the sixteen operators, up to $i$ | $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | *— Biquaternions —* | | |
-| [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | the frame derived from the grading; the canonical arrays | $\gamma^0=iT_{e_t,e_x}$, $\gamma^1=iT_{e_x,e_y}$, $\gamma^2=iT_{e_y,e_y}$, $\gamma^3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$ |
+| [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | the frame derived from the grading; the canonical arrays | $\gamma_0=iT_{e_t,e_x}$, $\gamma_1=iT_{e_x,e_y}$, $\gamma_2=iT_{e_y,e_y}$, $\gamma_3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$ |
 | [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html) | a gamma frame is a further choice; the view supplies no gamma frame | five of the sixteen cells, up to $i$; no five cells singled out up to $i$ |
 | *— $M_4(\mathbb{C})$ —* | | |
 | [The Matrix Algebra $M_4(\mathbb{C})$](../articles_maths/the-matrix-algebra-m4c.html) | it chooses no gamma frame | no five of the sixteen cells $T_{\mu\nu}$ are singled out up to $i$ |
@@ -348,19 +348,19 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 |---|---|---|
 | *— Biquaternion Universe Conventions —* | | |
 | [Conventions of the Matrix Models (physics)](../articles_physics/conventions-of-the-matrix-models.html) | the same five generators and the same sixteen products | the same five cells, repeated for this corpus |
-| [Conventions of the Operators and the Calculus](../articles_physics/conventions-of-the-operators-and-the-calculus.html) | the gamma frame | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| [Conventions of the Operators and the Calculus](../articles_physics/conventions-of-the-operators-and-the-calculus.html) | the gamma frame | $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | *— Biquaternion Universe —* | | |
-| [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) | the parity-reflecting frame element $\gamma^0$; $\gamma^0$ anticommutes with the grading | $\gamma^0=iT_{tx}$; $iT_{tx}$ anticommutes with it |
+| [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) | the parity-reflecting frame element $\gamma_0$; $\gamma_0$ anticommutes with the grading | $\gamma_0=iT_{tx}$; $iT_{tx}$ anticommutes with it |
 | *— Biquaternion Electromagnetism —* | | |
 | [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | the fifth gamma matrix | $\gamma_5=-iT_{tz}$ |
 | *— Biquaternion Relativistic Quantum Theory —* | | |
 | [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | no gamma matrix enters | no cell $T_{\mu\nu}$ enters |
 | *— Biquaternion Quantum Fields —* | | |
-| [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | the $\gamma^\mu$; gamma matrices | the five cells $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the cells $T_{\mu\nu}$ |
-| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | $\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
-| [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | $\bar\psi=\psi^\dagger\gamma^0$; the slash | $=i\psi^\dagger T_{tx}$; $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
+| [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | the $\gamma_\mu$; gamma matrices | the five cells $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the cells $T_{\mu\nu}$ |
+| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | $\gamma_\mu p_\mu=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ | $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
+| [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | $\bar\psi=\psi^\dagger\gamma_0$; the slash | $=i\psi^\dagger T_{tx}$; $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
 
-**Removed, not patched.** Four mentions carried no structure. In *The Coefficient Matrix of a Two-Sided Operator* the Further Reading line loses "and the gamma frame". In *Biquaternion Physical Interpretation of Chirality* it loses "stated there in the $\gamma_5$ language". In *The Klein–Gordon Propagator and Its Green's Functions* the sentence loses "and no gamma matrix appears". In *The Spinor Representation of the Lorentz Group* the two prose mentions become "the Dirac matrices", and the comparison with $\tfrac14[\gamma^a,\gamma^b]$ becomes "the Lorentz algebra". The first article is not in the inventory; the other three rows leave Part II, and the counts are adjusted.
+**Removed, not patched.** Four mentions carried no structure. In *The Coefficient Matrix of a Two-Sided Operator* the Further Reading line loses "and the gamma frame". In *Biquaternion Physical Interpretation of Chirality* it loses "stated there in the $\gamma_5$ language". In *The Klein–Gordon Propagator and Its Green's Functions* the sentence loses "and no gamma matrix appears". In *The Spinor Representation of the Lorentz Group* the two prose mentions become "the Dirac matrices", and the comparison with $\tfrac14[\gamma_a,\gamma_b]$ becomes "the Lorentz algebra". The first article is not in the inventory; the other three rows leave Part II, and the counts are adjusted.
 
 ## What the Split Says
 

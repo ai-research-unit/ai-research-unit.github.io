@@ -32,19 +32,19 @@ $$
 \bar u u = 1, \qquad \bar v v = -1, \qquad \bar u v = 0,
 $$
 
-where $\bar u = u^\dagger\gamma^0$ is the Dirac conjugate. The vector and spinor units are tied together by
+where $\bar u = u^\dagger\gamma_0$ is the Dirac conjugate. The vector and spinor units are tied together by
 
 $$
-u = j_\mu i\gamma^\mu v, \qquad k_\mu\gamma^\mu u = u, \qquad k_\mu\gamma^\mu v = -v .
+u = j_\mu i\gamma_\mu v, \qquad k_\mu\gamma_\mu u = u, \qquad k_\mu\gamma_\mu v = -v .
 $$
 
-The two spinors are therefore the two eigenvectors of the Clifford element $k_\mu\gamma^\mu$ with eigenvalues $+1$ and $-1$, and $j_\mu i\gamma^\mu$ exchanges them. In the Dirac representation and the coordinate system
+The two spinors are therefore the two eigenvectors of the Clifford element $k_\mu\gamma_\mu$ with eigenvalues $+1$ and $-1$, and $j_\mu i\gamma_\mu$ exchanges them. In the Dirac representation and the coordinate system
 
 $$
 u = (1,0,0,0)^{\mathsf T}, \quad v = (0,0,i,0)^{\mathsf T}, \quad k^\mu = (1,0,0,0), \quad j^\mu = (0,0,0,1),
 $$
 
-all four relations hold. (The source's pair $u = j_\mu i\gamma^\mu v$, $v = j_\mu i\gamma^\mu u$ needs $j_\mu$ in its lowered form $j_\mu = (0,0,0,-1)$ for the *first* relation; the second then holds with the opposite sign, a convention the source leaves implicit.)
+all four relations hold. (The source's pair $u = j_\mu i\gamma_\mu v$, $v = j_\mu i\gamma_\mu u$ needs $j_\mu$ in its lowered form $j_\mu = (0,0,0,-1)$ for the *first* relation; the second then holds with the opposite sign, a convention the source leaves implicit.)
 
 ### The Null Basis
 
@@ -63,7 +63,7 @@ $$
 and
 
 $$
-k_\mu\gamma^\mu r = l, \qquad k_\mu^+\gamma^\mu r = 0, \qquad k_\mu\gamma^\mu l = r, \qquad k_\mu^-\gamma^\mu l = 0 .
+k_\mu\gamma_\mu r = l, \qquad k_\mu^+\gamma_\mu r = 0, \qquad k_\mu\gamma_\mu l = r, \qquad k_\mu^-\gamma_\mu l = 0 .
 $$
 
 The names are the source's: $r$ is the right-handed and $l$ the left-handed *pure spinor* of the pair. The two null vectors $k_+$ and $k_-$ are the two null directions into which $k$ and $j$ resolve.
@@ -73,14 +73,14 @@ The names are the source's: $r$ is the right-handed and $l$ the left-handed *pur
 Every Dirac spinor decomposes into two semi-spinors, each carrying four independent real components,
 
 $$
-\Psi = \Psi_1 + \Psi_2, \qquad \Psi_1 = B^\mu g_{\mu\nu} i\gamma^\nu v, \qquad \Psi_2 = N^\mu g_{\mu\nu} i\gamma^\nu u,
+\Psi = \Psi_1 + \Psi_2, \qquad \Psi_1 = B^\mu g_{\mu\nu} i\gamma_\nu v, \qquad \Psi_2 = N^\mu g_{\mu\nu} i\gamma_\nu u,
 $$
 
 with
 
 $$
-B^\mu = \tfrac12\bigl(\bar v\, i\gamma^\mu\Psi - \bar\Psi\, i\gamma^\mu v\bigr), \qquad
-N^\mu = \tfrac12\bigl(\bar\Psi\, i\gamma^\mu u - \bar u\, i\gamma^\mu\Psi\bigr) .
+B^\mu = \tfrac12\bigl(\bar v\, i\gamma_\mu\Psi - \bar\Psi\, i\gamma_\mu v\bigr), \qquad
+N^\mu = \tfrac12\bigl(\bar\Psi\, i\gamma_\mu u - \bar u\, i\gamma_\mu\Psi\bigr) .
 $$
 
 The two coefficients $B^\mu$ and $N^\mu$ are **real four-vectors**, and the reconstruction $\Psi \mapsto (B, N) \mapsto \Psi$ is exact. This is the first half of the statement that a Dirac spinor is a pair of real four-vectors.
@@ -92,12 +92,12 @@ The two coefficients $B^\mu$ and $N^\mu$ are **real four-vectors**, and the reco
 Two four-index tensors are read off the gamma matrices:
 
 $$
-{t'}^{\mu\nu\lambda\rho} = \tfrac14\,\mathrm{tr}\bigl(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho\bigr)
+{t'}^{\mu\nu\lambda\rho} = \tfrac14\,\mathrm{tr}\bigl(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\bigr)
 = g^{\mu\nu}g^{\lambda\rho} + g^{\mu\rho}g^{\nu\lambda} - g^{\mu\lambda}g^{\nu\rho},
 $$
 
 $$
-\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\,\mathrm{tr}\bigl(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho\bigr),
+\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\,\mathrm{tr}\bigl(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\bigr),
 \qquad \varepsilon^{0123} = 1 .
 $$
 
@@ -160,9 +160,9 @@ $$
 so that $B$ is timelike-positive and $\langle\cdot\rangle_{\natural}$ spacelike-negative in the source's sign convention. The passage to the null basis gives a cleaner pair. Define
 
 $$
-R = \tfrac12 G^\mu g_{\mu\nu}\gamma^\nu l, \qquad L = -\tfrac12 G^{*\mu} g_{\mu\nu}\gamma^\nu r,
+R = \tfrac12 G^\mu g_{\mu\nu}\gamma_\nu l, \qquad L = -\tfrac12 G^{*\mu} g_{\mu\nu}\gamma_\nu r,
 \qquad
-G^\mu = B^\mu + i N^\mu = \tfrac12\bigl(\bar r\gamma^\mu R - \bar L\gamma^\mu l\bigr).
+G^\mu = B^\mu + i N^\mu = \tfrac12\bigl(\bar r\gamma_\mu R - \bar L\gamma_\mu l\bigr).
 $$
 
 Then $\Psi = R + L$: the complex vector $G^\mu$ is the combined object, and its real and imaginary parts are the two semi-spinors. The source calls $G^\mu$ an **s-vector**, because it transforms under left multiplication $S_1(q)$ by a unit biquaternion, whereas an ordinary spacetime vector $x^\mu$ transforms under the mixed left–right map $\Lambda(q)$. Two different linear representations of the same $SL(2,\mathbb{C})$ act on the same four-dimensional index.
@@ -180,15 +180,15 @@ $$
 $$
 
 $$
-\bar\Psi\gamma^\mu\Psi = G^*_\nu\, c^{\nu\mu\lambda}\, G_\lambda,
+\bar\Psi\gamma_\mu\Psi = G^*_\nu\, c^{\nu\mu\lambda}\, G_\lambda,
 \qquad
-\bar\Psi\gamma_5\gamma^\mu\Psi = -G^*_\nu\, \check c^{\nu\mu\lambda}\, G_\lambda .
+\bar\Psi\gamma_5\gamma_\mu\Psi = -G^*_\nu\, \check c^{\nu\mu\lambda}\, G_\lambda .
 $$
 
-The charge current is $e\,\pi^\mu = e\, G^*_\rho c^{\rho\mu\sigma}G_\sigma$, the source's first bilinear. The last line carries a sign that the source prints as a plus; with $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ and the $\check c$ of the normed condition above, the identity holds with the minus sign. The source further rewrites the mass form as
+The charge current is $e\,\pi^\mu = e\, G^*_\rho c^{\rho\mu\sigma}G_\sigma$, the source's first bilinear. The last line carries a sign that the source prints as a plus; with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ and the $\check c$ of the normed condition above, the identity holds with the minus sign. The source further rewrites the mass form as
 
 $$
-\bar\Psi\Psi = \bar\Psi\, K_\mu\gamma^\mu\Psi
+\bar\Psi\Psi = \bar\Psi\, K_\mu\gamma_\mu\Psi
 $$
 
 for a unit complex vector $K^\mu$ built from $\Psi$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
@@ -204,14 +204,14 @@ $$
 which leaves the trilinear form
 
 $$
-A_\mu\bigl(\bar\Psi_{(1)}\gamma^\mu\Psi_{(2)} + \bar\Psi_{(2)}\gamma^\mu\Psi_{(1)}\bigr)
+A_\mu\bigl(\bar\Psi_{(1)}\gamma_\mu\Psi_{(2)} + \bar\Psi_{(2)}\gamma_\mu\Psi_{(1)}\bigr)
 = 2\, A_\mu\, \varepsilon^{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda
 $$
 
 invariant. This is the *ding*: the fourth-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and the vector, the timelike unit $k$ and the two semi-spinors playing the roles the three eight-dimensional spaces play in the $\mathrm{Spin}(8)$ case. The fuller cubic form
 
 $$
-C = A_\mu\,\bar\Psi\gamma^\mu\Psi
+C = A_\mu\,\bar\Psi\gamma_\mu\Psi
 = A_\mu\, {t'}^{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon^{\nu\mu\lambda}B_\nu N_\lambda
 $$
 
@@ -222,7 +222,7 @@ completes the dictionary of the three quadratic forms and the one cubic form tha
 Passing from the spinor to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\bigl[\bar\Psi i\gamma^\mu(\partial_\mu - ieA_\mu)\Psi - \bigl((\partial_\mu + ieA_\mu)\bar\Psi\bigr)i\gamma^\mu\Psi\bigr] - m\bar\Psi\Psi
+\tfrac12\bigl[\bar\Psi i\gamma_\mu(\partial_\mu - ieA_\mu)\Psi - \bigl((\partial_\mu + ieA_\mu)\bar\Psi\bigr)i\gamma_\mu\Psi\bigr] - m\bar\Psi\Psi
 $$
 
 $$
@@ -367,7 +367,7 @@ These questions are open.
 
 ## Summary
 
-A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma^\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma^\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma_\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma_\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G^{\mu\nu} = \tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial_\mu G^\mu - imj_\mu G^{*\mu} = 0$, with the two-form $H^{\mu\nu} = G^*_\lambda\check c^{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
@@ -384,8 +384,8 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $u, v$ | Unit semi-spinors, $\bar u u = 1$, $\bar v v = -1$, $\bar u v = 0$ |
 | $r = u+iv$, $l = u-iv$ | Pure spinors, $\bar r l = \bar l r = 2$ |
 | $k_\pm^\mu = \tfrac12(k^\mu\pm j^\mu)$ | Null vectors formed from the neutral pair |
-| ${t'}^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
-| $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123}=1$ |
+| ${t'}^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
+| $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123}=1$ |
 | $c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
 | $\check c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5^{\mu\nu} = -g^{\mu\mu}\check c^{\mu\nu\lambda}k_\lambda$ | The algebra's "gamma five"; $(c_5)^2 = 1$ |

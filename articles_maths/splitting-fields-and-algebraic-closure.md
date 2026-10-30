@@ -194,11 +194,11 @@ A finite extension is finitely generated, say $K = F(\alpha_1, \ldots, \alpha_m)
 
 ### Necessity of Separability
 
-Separability cannot be dropped. Let $F = \mathbb{F}_p(x^p, y^p) \subseteq K = \mathbb{F}_p(x, y)$. Then $K = F(x, y)$, and $x, y$ have minimal polynomials $X^p - x^p = (X - x)^p$ and $Y^p - y^p = (Y - y)^p$ over $F$. Each of these is irreducible of degree $p$ over $F$ (the same argument as for $x^p - t$), so $[K:F] = p^2$. Every element of $K$ satisfies $\gamma^p \in F$: an element of $K = \mathbb{F}_p(x,y) = F(x,y)$ is a quotient $u(x,y)/v(x,y)$ of polynomials with coefficients in $\mathbb{F}_p$ and $v \neq 0$, and the freshman's dream gives
+Separability cannot be dropped. Let $F = \mathbb{F}_p(x^p, y^p) \subseteq K = \mathbb{F}_p(x, y)$. Then $K = F(x, y)$, and $x, y$ have minimal polynomials $X^p - x^p = (X - x)^p$ and $Y^p - y^p = (Y - y)^p$ over $F$. Each of these is irreducible of degree $p$ over $F$ (the same argument as for $x^p - t$), so $[K:F] = p^2$. Every element of $K$ satisfies $\gamma_p \in F$: an element of $K = \mathbb{F}_p(x,y) = F(x,y)$ is a quotient $u(x,y)/v(x,y)$ of polynomials with coefficients in $\mathbb{F}_p$ and $v \neq 0$, and the freshman's dream gives
 $$
-\gamma^p = \frac{u(x,y)^p}{v(x,y)^p} = \frac{u(x^p, y^p)}{v(x^p, y^p)} \in \mathbb{F}_p(x^p, y^p) = F .
+\gamma_p = \frac{u(x,y)^p}{v(x,y)^p} = \frac{u(x^p, y^p)}{v(x^p, y^p)} \in \mathbb{F}_p(x^p, y^p) = F .
 $$
-Hence $\gamma$ is a root of $X^p - \gamma^p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 > p$. No single element generates $K$, and $K/F$ is not simple.
+Hence $\gamma$ is a root of $X^p - \gamma_p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 > p$. No single element generates $K$, and $K/F$ is not simple.
 
 ---
 

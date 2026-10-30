@@ -84,37 +84,37 @@ Charge conjugation is a **conjugate-linear** map on the Dirac module. In four di
 $$
 \psi^{c} \;=\; C\,\bar{\psi}^{\,T},
 \qquad
-\bar{\psi} \;=\; \psi^{\dagger}\gamma^0 ,
+\bar{\psi} \;=\; \psi^{\dagger}\gamma_0 ,
 $$
 
 and the matrix is fixed by the requirement that the kinetic term be preserved,
 
 $$
-C\,\gamma^{\mu\,T}\,C^{-1} \;=\; -\,\gamma^{\mu}.
+C\,\gamma_{\mu\,}^{T}\,C^{-1} \;=\; -\,\gamma_{\mu}.
 $$
 
 
 The transpose, not the inverse or the conjugate, appears because $C$ is the matrix of a bilinear pairing on the module. Two features of this definition must be stated before it is used, and they are the two traps of the subject.
 
-**The matrix is basis-dependent, and the reality condition is basis-dependent in form.** A change of Clifford basis $\gamma^\mu\mapsto S\gamma^\mu S^{-1}$ sends $C\mapsto SCS^{T}$, so the explicit matrix changes with the basis even though the map it defines does not. In the block basis of the Conventions, with $g=\mathrm{diag}(+,-,-,-)$, the choice
+**The matrix is basis-dependent, and the reality condition is basis-dependent in form.** A change of Clifford basis $\gamma_\mu\mapsto S\gamma_\mu S^{-1}$ sends $C\mapsto SCS^{T}$, so the explicit matrix changes with the basis even though the map it defines does not. In the block basis of the Conventions, with $g=\mathrm{diag}(+,-,-,-)$, the choice
 
 $$
-C \;=\; i\gamma^2\gamma^0 \;=\; \begin{pmatrix}\epsilon&0\\ 0&-\epsilon\end{pmatrix},
+C \;=\; i\gamma_2\gamma_0 \;=\; \begin{pmatrix}\epsilon&0\\ 0&-\epsilon\end{pmatrix},
 \qquad
 \epsilon \;=\; i\sigma_2 \;=\; \begin{pmatrix}0&1\\ -1&0\end{pmatrix},
 $$
 
-is antisymmetric, $C^{T}=-C$, with $C^2=-I_4$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\gamma^{\mu T}C^{-1}=-\gamma^\mu$ for $\mu=0,1,2,3$. The same map written in the Dirac basis $\gamma_{\mathrm D}^{0}=\mathrm{diag}(I_2,-I_2)$ has the charge-conjugation matrix $S C S^{T}$, which is a different matrix. The existence of a charge-conjugation matrix is a statement about the signature, not about the basis; its form is a statement about the basis. A calculation that fixes a sign by comparing "$C$" across two papers that use different Clifford bases is comparing two different matrices.
+is antisymmetric, $C^{T}=-C$, with $C^2=-I_4$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\gamma_{\mu}^{T}C^{-1}=-\gamma_\mu$ for $\mu=0,1,2,3$. The same map written in the Dirac basis $\gamma_{\mathrm D}^{0}=\mathrm{diag}(I_2,-I_2)$ has the charge-conjugation matrix $S C S^{T}$, which is a different matrix. The existence of a charge-conjugation matrix is a statement about the signature, not about the basis; its form is a statement about the basis. A calculation that fixes a sign by comparing "$C$" across two papers that use different Clifford bases is comparing two different matrices.
 
 | Statement | Verification |
 |---|---|
-| $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=\mathrm{diag}(-I_2,I_2)$ | all $16$ commutators and anticommutators, exact |
-| $C^{T}=-C$, $C^2=-I_4$, $C^\dagger=C^{-1}$ | exact, $C=i\gamma^2\gamma^0$ |
-| $C\gamma^{\mu T}C^{-1}=-\gamma^\mu$ | all $\mu=0,1,2,3$ |
+| $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=\mathrm{diag}(-I_2,I_2)$ | all $16$ commutators and anticommutators, exact |
+| $C^{T}=-C$, $C^2=-I_4$, $C^\dagger=C^{-1}$ | exact, $C=i\gamma_2\gamma_0$ |
+| $C\gamma_{\mu}^{T}C^{-1}=-\gamma_\mu$ | all $\mu=0,1,2,3$ |
 
 **Remaining issue.** $C^{-1}$ in the defining relation. Line 74 states $C^{\dagger}=C^{-1}$, and the notation row at 119 repeats it. The inverse is already the Hermitian adjoint.
 
-**Fix.** $C^{-1}\to C^{\dagger}$ at lines 61 and 120. Value unchanged. The transpose of $\gamma^{\mu}$ remains, and a biquaternion sandwich has no transpose.
+**Fix.** $C^{-1}\to C^{\dagger}$ at lines 61 and 120. Value unchanged. The transpose of $\gamma_{\mu}$ remains, and a biquaternion sandwich has no transpose.
 
 ### 4. [The Biquaternion Basis of a Unified Field Fibre Bundle](../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html), lines 116, 220
 
@@ -223,7 +223,7 @@ $$
 A\;\mapsto\;\bar{A}=\Pi\,A^{*}\,\Pi^{-1},
 $$
 
-the **complex conjugation** of the algebra element followed by the inner automorphism by a matrix $\Pi$. Here $\Pi$ is a product of Clifford generators and is determined only up to a scalar, and it does not preserve the real subalgebra — it conjugates the generators with a sign, $\Pi\gamma_{a^{\mathrm{fop}}}\Pi^{-1}=-\gamma_{a^{\mathrm{fop}}}$ — which is exactly why the map is a *pseudo*automorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. Theorem 1 of the source fixes the form of $\Pi$ by the division ring of the real subalgebra: for a real division ring $K\cong\mathbb{R}$ it is proportional to the unit matrix, and for a quaternionic one $K\cong\mathbb{H}$ it is a product of generators with $\Pi\bar{\Pi}=\pm I$. The matrix $\Pi$ is the charge-conjugation matrix, and it is at the algebra level the object that the module computation above fixes to $\eta_C=i\gamma^2$ up to the free phase; the classification is also where that free phase comes from, since $\Pi$ is determined only up to a scalar. The twisted character of $C$ — that it is not one of the algebra's three untwisted involutions — is the classification's form of this article's operational finding that $C$'s internal matrix is **odd** and outside $\mathbb{B}$.
+the **complex conjugation** of the algebra element followed by the inner automorphism by a matrix $\Pi$. Here $\Pi$ is a product of Clifford generators and is determined only up to a scalar, and it does not preserve the real subalgebra — it conjugates the generators with a sign, $\Pi\gamma_{a^{\mathrm{fop}}}\Pi^{-1}=-\gamma_{a^{\mathrm{fop}}}$ — which is exactly why the map is a *pseudo*automorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. Theorem 1 of the source fixes the form of $\Pi$ by the division ring of the real subalgebra: for a real division ring $K\cong\mathbb{R}$ it is proportional to the unit matrix, and for a quaternionic one $K\cong\mathbb{H}$ it is a product of generators with $\Pi\bar{\Pi}=\pm I$. The matrix $\Pi$ is the charge-conjugation matrix, and it is at the algebra level the object that the module computation above fixes to $\eta_C=i\gamma_2$ up to the free phase; the classification is also where that free phase comes from, since $\Pi$ is determined only up to a scalar. The twisted character of $C$ — that it is not one of the algebra's three untwisted involutions — is the classification's form of this article's operational finding that $C$'s internal matrix is **odd** and outside $\mathbb{B}$.
 
 The Clifford-algebra literature supplies a second interpretation of the same eight operations: they are the three non-trivial fundamental automorphisms of $\mathrm{Cl}_{n,m}$ — the grade involution, the reversion and their composite, the Clifford conjugation — together with their composites with the charge-conjugation pseudoautomorphism $A\mapsto\Pi A^{*}\Pi^{-1}$, and they generate $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$. The algebra's own conjugations $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ are exactly the three untwisted maps, while $C$ is the twisted one, which is the algebraic form of the article's finding that $C$ is not an inner operation of $\mathbb{B}$. That classification is transcribed, and the step from it to the module intertwiners is left open.
 
@@ -239,7 +239,7 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 |---|---|---|---|
 | 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{M}_-$; the **shape** of a charge-conjugation pairing |
 | 2, the Clifford algebra | $\bar{A}=\Pi A^{*}\Pi^{-1}$ | $\mathrm{Cl}_{n,m}$ | the charge-conjugation **pseudoautomorphism**; $\Pi$ is odd and lies outside $\mathbb{B}$ |
-| 3, the module | $C[\psi]=i\gamma^{2}\psi^{*}$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation |
+| 3, the module | $C[\psi]=i\gamma_{2}\psi^{*}$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation |
 | 4, the module real structure | $\bar{\cdot}$ | $\Delta\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{H}_{\mathbb{B}}$ |
 
 **Remaining issue.** Level 2 of a four-level table. Deleting the row leaves three levels and breaks the classification. The same row states that $\Pi$ is odd and outside $\mathbb{B}$.

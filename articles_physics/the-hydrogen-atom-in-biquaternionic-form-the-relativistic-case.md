@@ -43,7 +43,7 @@ The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi(\v
 
 $$
 i\hbar\,\partial/\partial t'\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
-\qquad \boldsymbol\alpha^k = \gamma^0\gamma^k, \quad \beta = \gamma^0,
+\qquad \boldsymbol\alpha^k = \gamma_0\gamma_k, \quad \beta = \gamma_0,
 $$
 
 with $V(r) = ϙ\phi = -\kappa/r$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation

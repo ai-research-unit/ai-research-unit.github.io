@@ -17,12 +17,12 @@ This article treats both in the biquaternion framework. The framework's contribu
 The article is organised as follows. A section states the anomaly as a quantum failure of a classical symmetry. A section gives the axial anomaly and its biquaternion density. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A closing section separates what is supplied, transcribed, and missing.
 
 $$
-\gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
+\gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. For the abelian anomaly we use the field strength $\tilde{\mathcal{F}}=\tilde\nabla\tilde A$, the totally antisymmetric symbol with $\epsilon^{0123}=+1$, and the components $F_{ti}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; for the non-abelian factor we use $\mathcal{A}_\mu\in\mathrm{SU}(2)$ and $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$, with $\kappa=ϙ/\hbar$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
+with $\gamma_5=i\omega$ and $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ the volume element. For the abelian anomaly we use the field strength $\tilde{\mathcal{F}}=\tilde\nabla\tilde A$, the totally antisymmetric symbol with $\epsilon^{0123}=+1$, and the components $F_{ti}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; for the non-abelian factor we use $\mathcal{A}_\mu\in\mathrm{SU}(2)$ and $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$, with $\kappa=ϙ/\hbar$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
 The framework results used here are those of the companion articles:
 
@@ -40,16 +40,16 @@ The framework results used here are those of the companion articles:
 **The biquaternion entry point.** The framework's contribution is the identity of the gamma-matrix trace that produces the anomaly. In the block basis of the Conventions the Clifford trace is
 
 $$
-\mathrm{tr}\big(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\big) = -4i\,\epsilon^{\mu\nu\rho\sigma},
+\mathrm{tr}\big(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big) = -4i\,\epsilon^{\mu\nu\rho\sigma},
 \qquad
-\mathrm{tr}\big(\gamma_5\gamma^0\gamma^1\gamma^2\gamma^3\big) = -4i ,
+\mathrm{tr}\big(\gamma_5\gamma_0\gamma_1\gamma_2\gamma_3\big) = -4i ,
 $$
 
 which was recomputed for all $4!=24$ permutations: the trace vanishes unless the four indices are distinct, and then it is $-4i$ times the sign of the permutation, with $\epsilon^{0123}=+1$. Every anomaly coefficient in the article is this single number multiplied by the appropriate trace of gauge generators.
 
 ## The Axial Anomaly
 
-**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ satisfies
+**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_5^\mu=\bar{\psi}\gamma_\mu\gamma_5\psi$ satisfies
 
 $$
 \boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;},
@@ -218,7 +218,7 @@ with one factor of each left- and each right-handed field. The operator has the 
 
 ## The Traces Involved, and the One That Is Not
 
-**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon^{\mu\nu\rho\sigma}$ through $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
+**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon^{\mu\nu\rho\sigma}$ through $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
 
 **The chiral trace is a difference of Weyl traces.** In the block decomposition $\Delta=S\oplus\bar{S}$ with $\gamma_5=\mathrm{diag}(-I_2,I_2)$, a trace with a chirality insertion splits:
 
@@ -234,7 +234,7 @@ so the chirality-weighted trace is the **difference** of the two Weyl traces. Fo
 
 | Item | Status |
 |---|---|
-| The gamma-matrix trace underlying every anomaly, $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
+| The gamma-matrix trace underlying every anomaly, $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
 | The identification $\gamma_5=i\omega$ with the volume element | **Supplied** by the Clifford isomorphism |
 | The axial anomaly density as the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied** (with the instanton article's normalization); the coefficient is standard |
 | The exactness of the anomaly coefficient (Adler–Bardeen) | **Transcribed**; the index-theoretic reason belongs to the general gauge apparatus |
@@ -252,7 +252,7 @@ $$
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi + \frac{e^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
-and the anomalous density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The gamma-matrix identity behind every anomaly, $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, and the identification $\gamma_5=i\omega$ of the chirality operator with the volume element, are supplied by the framework's Clifford structure and were recomputed.
+and the anomalous density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The gamma-matrix identity behind every anomaly, $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, and the identification $\gamma_5=i\omega$ of the chirality operator with the volume element, are supplied by the framework's Clifford structure and were recomputed.
 
 The gauge anomaly is the triangle coefficient $\mathrm{Tr}[T^a\{T^b,T^c\}]$, and its vanishing is a consistency condition on the chiral spectrum. The article verified the Standard Model's four conditions — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour sum — exactly, for one generation, with a left-minus-right sign convention; the cubic sum cancels by a genuine left–right conspiracy rather than per field. The conditions constrain the hypercharges and colour assignments but not the number of generations, since each generation contributes a zero.
 
@@ -267,10 +267,10 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the vector-like abelian factor |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian, series convention |
 | $\Delta=S\oplus\bar{S}$, $\gamma_5=\mathrm{diag}(-I_2,I_2)$ | Dirac module and chirality operator |
-| $\omega=\gamma^0\gamma^1\gamma^2\gamma^3=-i\gamma_5$ | Volume element; $\gamma_5=i\omega$ |
-| $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |
+| $\omega=\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ | Volume element; $\gamma_5=i\omega$ |
+| $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |
 | $\epsilon^{\mu\nu\rho\sigma}$, $\epsilon^{0123}=+1$ | Totally antisymmetric symbol |
-| $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ | Axial current |
+| $j_5^\mu=\bar{\psi}\gamma_\mu\gamma_5\psi$ | Axial current |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi+\dfrac{e^2}{16\pi^2}\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ) |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |

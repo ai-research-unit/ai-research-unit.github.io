@@ -130,7 +130,7 @@ with $P_L=\tfrac12(1-\gamma_5)$ the left projector, and the sum running over the
 $$
 \mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}Z_\mu J_Z^\mu ,
 \qquad
-J_Z^\mu=\sum_f\bar f\gamma^\mu\left(T_3^f P_L-Q_f\sin^2\theta_W\right)f ,
+J_Z^\mu=\sum_f\bar f\gamma_\mu\left(T_3^f P_L-Q_f\sin^2\theta_W\right)f ,
 $$
 where $T_3^f$ is the weak isospin of the fermion and $Q_f$ its electric charge. The coupling of the photon is $eQ_f$, with $Q_f=T_3^f+Y_f$. The non-abelian structure produces the gauge self-couplings, whose Lorentz structure is standard:
 $$
@@ -211,7 +211,7 @@ A massive vector has three polarizations, and the third — the longitudinal mod
 
 ## The Currents and the Vector-Like Obstruction
 
-The charged current interaction is chiral: the W couples to $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_3^fP_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
+The charged current interaction is chiral: the W couples to $J^{+\mu}=\bar\psi_{\mathrm u}\gamma_\mu P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_3^fP_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
 
 The electromagnetic current is a different case, and it is reached. The unbroken generator of the electroweak group is $Ϙ=T_3+Y$, its gauge field is the photon, and the coupling is $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The abelian gauge principle of the companion articles is the central phase, and the photon is the massless central-material combination. The framework reaches the photon exactly; it reaches the Z as a massive neutral material vector with a mixing angle that is imported; and it reaches the W as a massive charged adjoint excitation with a mass and a chiral coupling that are imported.
 
@@ -252,7 +252,7 @@ e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W ,
 $$
 all hold in the standard theory and were verified as identities with the standard inputs ($v=246.22$ GeV from $G_F$); the measured masses, $M_W=80.377$ GeV and $M_Z=91.1876$ GeV, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.
 
-The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
+The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma_\mu P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
 
 ## Summary of Notation
 
@@ -277,8 +277,8 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
 | $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
-| $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$ | Charged current (chiral) |
-| $J_Z^\mu=\sum_f\bar f\gamma^\mu(T_3^fP_L-Q_f\sin^2\theta_W)f$ | Neutral current |
+| $J^{+\mu}=\bar\psi_{\mathrm u}\gamma_\mu P_L\psi_d$ | Charged current (chiral) |
+| $J_Z^\mu=\sum_f\bar f\gamma_\mu(T_3^fP_L-Q_f\sin^2\theta_W)f$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa f^{abc}(\partial\mathcal{A})\mathcal{A}\mathcal{A}$, $\mathcal{L}_4\sim\kappa^2 f^{abe}f^{cde}\mathcal{A}^4$ | Trilinear and quartic self-couplings |
 | $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12M^2A_\mu A^\mu$ | Proca Lagrangian; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
 | $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness |

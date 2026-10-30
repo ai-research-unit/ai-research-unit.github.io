@@ -311,7 +311,7 @@ $$
 \rho\colon(\mathbb{B},\star,{}^{*})\longrightarrow\bigl(M_2(\mathbb{C}),\,(A,B)\mapsto AB^{\dagger},\,{}^{\dagger}\bigr).
 $$
 
-**Proof.** $\rho=\varphi\circ\tau$ is multiplicative because the two reversals cancel, and it carries the involution to the adjoint because $\tau$ commutes with it and $\varphi$ does so in the sense above; and $\rho(\beta\star\gamma)=\rho(\beta\gamma^{*})=\rho(\beta)\rho(\gamma^{*})=\rho(\beta)\rho(\gamma)^{*}$.
+**Proof.** $\rho=\varphi\circ\tau$ is multiplicative because the two reversals cancel, and it carries the involution to the adjoint because $\tau$ commutes with it and $\varphi$ does so in the sense above; and $\rho(\beta\star\gamma)=\rho(\beta\gamma_{}^{*})=\rho(\beta)\rho(\gamma_{}^{*})=\rho(\beta)\rho(\gamma)^{*}$.
 
 **Corollary (one realization for each point of the lattice).** The block therefore has a $2\times2$ matrix realization for each point of the projective line of its right $\star$-ideals: the matrix of a parameter $\beta$ is the coordinate matrix of the operator $\tilde Q_1\mapsto\tilde Q_1\tau(\beta)$ in the basis $ue_i^{\mathrm{T}}$ of $R_w$, and the standard model $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions* is the member of the family at the standard pair $R_w=\tilde\Pi_+(\vec u_z)\mathbb{B}$.
 

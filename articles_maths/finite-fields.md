@@ -109,7 +109,7 @@ This is a special case of the general fact that every finite subgroup of the mul
 
 **Theorem.** Let $q = p^n$. The number of primitive elements of $\mathbb{F}_q$ is $\varphi(q - 1)$, where $\varphi$ is the Euler totient function; the number of monic primitive polynomials of degree $n$ over $\mathbb{F}_p$ is $\varphi(q-1)/n$.
 
-**Proof.** The generators of the cyclic group of order $q - 1$ are exactly the $\gamma^k$ with $\gcd(k, q-1) = 1$, so there are $\varphi(q-1)$ of them. Each monic primitive polynomial of degree $n$ has exactly $n$ roots in $\mathbb{F}_q$, namely the conjugates of a primitive element under the Frobenius, and the sets of roots of distinct such polynomials are disjoint, partitioning the $\varphi(q-1)$ primitive elements into classes of size $n$.
+**Proof.** The generators of the cyclic group of order $q - 1$ are exactly the $\gamma_k$ with $\gcd(k, q-1) = 1$, so there are $\varphi(q-1)$ of them. Each monic primitive polynomial of degree $n$ has exactly $n$ roots in $\mathbb{F}_q$, namely the conjugates of a primitive element under the Frobenius, and the sets of roots of distinct such polynomials are disjoint, partitioning the $\varphi(q-1)$ primitive elements into classes of size $n$.
 
 **Corollary (number of irreducibles).** The number of monic irreducible polynomials of degree $n$ over $\mathbb{F}_p$ is
 

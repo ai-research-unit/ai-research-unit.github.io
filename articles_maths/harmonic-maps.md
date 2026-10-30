@@ -14,7 +14,7 @@ $$
 the norm of the differential being taken with respect to the metric of the source and that of the target. Its Euler–Lagrange operator is the **tension field** $\tau(\phi) = \operatorname{trace}_g\nabla d\phi$, and $\phi$ is harmonic when $\tau(\phi)=0$; in local coordinates the equation is
 
 $$
-\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0 ,
+\Delta_g\phi^\alpha + g_{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0 ,
 $$
 
 a semilinear elliptic system whose nonlinearity is quadratic in the gradient and whose coefficients are the Christoffel symbols of the target. The system is the Laplace equation when the target is flat, the geodesic equation when the source is one-dimensional, and the minimal surface equation when the source is a surface and the map is conformal.
@@ -50,7 +50,7 @@ $$
 Hence $\phi$ is a critical point of the energy if and only if $\tau(\phi)=0$, and in local coordinates this is the system
 
 $$
-\boxed{\;\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N\;} ,
+\boxed{\;\Delta_g\phi^\alpha + g_{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N\;} ,
 $$
 
 where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the Christoffel symbols of $(N,h)$.
@@ -175,7 +175,7 @@ with $V$ restricted to be perpendicular to $\phi$. The identity map of $S^m$ is 
 
 ## Summary
 
-A harmonic map $\phi : (M,g)\to(N,h)$ is a critical point of the energy $E(\phi) = \frac12\int|d\phi|^2dV_g$, and its Euler–Lagrange equation is the vanishing of the tension field, $\tau(\phi) = \operatorname{trace}_g\nabla d\phi = 0$, which in coordinates reads $\Delta_g\phi^\alpha + g^{ij}\Gamma^\alpha_{\beta\gamma}\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma=0$. The theory specialises to harmonic functions for a flat target, to geodesics for a one-dimensional source, and to minimal surfaces for a conformal source of dimension two, and it includes the holomorphic maps between Kähler manifolds. The harmonic map flow $\partial/\partial t\,\phi=\tau(\phi)$ is the gradient flow of the energy and is quasilinear parabolic; for a compact target of nonpositive curvature it exists for all time and converges, which is the Eells–Sampson theorem and gives a harmonic representative in every homotopy class. Harmonic maps from surfaces are smooth; from higher-dimensional domains they are smooth off a closed singular set of codimension at least three, and the result is sharp, as the map $x/|x|$ shows in dimension three. The Bochner formula for the energy density combines the Ricci curvature of the source and the Riemann curvature of the target and gives the Eells–Wood vanishing theorem; and the second variation defines the index form and stability, the identity map of a sphere being unstable.
+A harmonic map $\phi : (M,g)\to(N,h)$ is a critical point of the energy $E(\phi) = \frac12\int|d\phi|^2dV_g$, and its Euler–Lagrange equation is the vanishing of the tension field, $\tau(\phi) = \operatorname{trace}_g\nabla d\phi = 0$, which in coordinates reads $\Delta_g\phi^\alpha + g_{ij}\Gamma^\alpha_{\beta\gamma}\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma=0$. The theory specialises to harmonic functions for a flat target, to geodesics for a one-dimensional source, and to minimal surfaces for a conformal source of dimension two, and it includes the holomorphic maps between Kähler manifolds. The harmonic map flow $\partial/\partial t\,\phi=\tau(\phi)$ is the gradient flow of the energy and is quasilinear parabolic; for a compact target of nonpositive curvature it exists for all time and converges, which is the Eells–Sampson theorem and gives a harmonic representative in every homotopy class. Harmonic maps from surfaces are smooth; from higher-dimensional domains they are smooth off a closed singular set of codimension at least three, and the result is sharp, as the map $x/|x|$ shows in dimension three. The Bochner formula for the energy density combines the Ricci curvature of the source and the Riemann curvature of the target and gives the Eells–Wood vanishing theorem; and the second variation defines the index form and stability, the identity map of a sphere being unstable.
 
 ## Summary of Notation
 

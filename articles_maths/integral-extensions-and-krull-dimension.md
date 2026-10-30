@@ -44,7 +44,7 @@ Conversely, if $R[\alpha] = R + R\alpha + \cdots + R\alpha^m$, then $\alpha^{m+1
 
 **Proposition.** Integrality is transitive: if $R \subseteq S \subseteq T$, if $S$ is integral over $R$ and $T$ is integral over $S$, then $T$ is integral over $R$.
 
-**Proof.** Let $\gamma \in T$ satisfy $\gamma^n + s_{n-1}\gamma^{n-1} + \cdots + s_0 = 0$ with $s_i \in S$. Each $s_i$ is integral over $R$, so the subring $S_0 = R[s_0, \ldots, s_{n-1}]$ is a finitely generated $R$-submodule of $S$, and $S_0[\gamma]$ is a finitely generated $S_0$-submodule. Hence $S_0[\gamma]$ is a finitely generated $R$-submodule of $T$ containing $\gamma$ and closed under multiplication by $\gamma$, so $\gamma$ is integral over $R$.
+**Proof.** Let $\gamma \in T$ satisfy $\gamma_n + s_{n-1}\gamma_{n-1} + \cdots + s_0 = 0$ with $s_i \in S$. Each $s_i$ is integral over $R$, so the subring $S_0 = R[s_0, \ldots, s_{n-1}]$ is a finitely generated $R$-submodule of $S$, and $S_0[\gamma]$ is a finitely generated $S_0$-submodule. Hence $S_0[\gamma]$ is a finitely generated $R$-submodule of $T$ containing $\gamma$ and closed under multiplication by $\gamma$, so $\gamma$ is integral over $R$.
 
 **Proposition.** Let $R \subseteq S$ be integral and let $T \subseteq R$ be a subring. Then $R$ is integral over $T$ if and only if $S$ is integral over $T$.
 

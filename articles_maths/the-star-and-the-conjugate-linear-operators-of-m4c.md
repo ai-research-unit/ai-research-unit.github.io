@@ -205,25 +205,25 @@ This is the precise structural difference between the two involutions. The bar g
 
 **Theorem (the bar dictionary).** Put
 $$
-\gamma^0=\bar{\cdot},\qquad
-\gamma^k=\bar{\cdot}\circ L_{-i\vec e_k}\quad(k=1,2,3),
+\gamma_0=\bar{\cdot},\qquad
+\gamma_k=\bar{\cdot}\circ L_{-i\vec e_k}\quad(k=1,2,3),
 \qquad
-\gamma^5=R_{-i\vec e_z}.
+\gamma_5=R_{-i\vec e_z}.
 $$
 Then
 $$
-(\gamma^0)^2=I,\qquad (\gamma^k)^2=-I,\qquad
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I,
+(\gamma_0)^2=I,\qquad (\gamma_k)^2=-I,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I,
 $$
 with $g=\operatorname{diag}(1,-1,-1,-1)$, and
 $$
-\{\gamma^5,\gamma^\mu\}=0,\qquad (\gamma^5)^2=I .
+\{\gamma_5,\gamma_\mu\}=0,\qquad (\gamma_5)^2=I .
 $$
-The operators $\gamma^0,\gamma^k$ are conjugate-linear; $\gamma^5$ is linear. They act on $\mathbb{B}$ as a real eight-dimensional Clifford module.
+The operators $\gamma_0,\gamma_k$ are conjugate-linear; $\gamma_5$ is linear. They act on $\mathbb{B}$ as a real eight-dimensional Clifford module.
 
 **Proof.** The square of the bar is the identity. For the spacelike gammas, use the fact that the bar is an **automorphism**, so $\bar{\cdot}\circ L_a\circ\bar{\cdot}=L_{\bar a}$:
 $$
-(\gamma^k)^2
+(\gamma_k)^2
 =\bar{\cdot}L_{-i e_k}\bar{\cdot}L_{-i e_k}
 =L_{\overline{-i e_k}}L_{-i e_k}
 =L_{i e_k}L_{-i e_k}
@@ -232,31 +232,31 @@ $$
 $$
 For $j\neq k$,
 $$
-\gamma^j\gamma^k+\gamma^k\gamma^j
+\gamma_j\gamma_k+\gamma_k\gamma_j
 =L_{e_je_k}+L_{e_ke_j}
 =L_{e_je_k+e_ke_j}=0,
 $$
-because $e_j,e_k$ anticommute. The mixed anticommutator with $\gamma^0$ is
+because $e_j,e_k$ anticommute. The mixed anticommutator with $\gamma_0$ is
 $$
 \bar{\cdot}\bigl((-i e_k)\bar x\bigr)+(-i e_k)\bar{\cdot}\bar x
 =\overline{(-i e_k)\bar x}+(-i e_k)x
 =i e_kx-i e_kx=0 .
 $$
-Finally $\gamma^5$ is right multiplication by $-i e_z$, so its square is $R_{(-i e_z)^2}=R_{-e_z^2}=I$, and it anticommutes with each $\gamma^\mu$ because $L$ and $R$ commute and the multipliers anticommute up to the scalar. $\square$
+Finally $\gamma_5$ is right multiplication by $-i e_z$, so its square is $R_{(-i e_z)^2}=R_{-e_z^2}=I$, and it anticommutes with each $\gamma_\mu$ because $L$ and $R$ commute and the multipliers anticommute up to the scalar. $\square$
 
 **The volume element.** In this dictionary the product of the four gammas is central:
 $$
-\gamma^0\gamma^1\gamma^2\gamma^3=iI .
+\gamma_0\gamma_1\gamma_2\gamma_3=iI .
 $$
-The volume element of the real Clifford module is the central imaginary $i$, not an independent chirality. The chirality $\gamma^5$ is a separate right multiplication by $-i e_z$; it is the grading of the Dirac module, not the product of the four gammas. This is the exact sense in which the real module has a volume element and a chirality that are different operators.
+The volume element of the real Clifford module is the central imaginary $i$, not an independent chirality. The chirality $\gamma_5$ is a separate right multiplication by $-i e_z$; it is the grading of the Dirac module, not the product of the four gammas. This is the exact sense in which the real module has a volume element and a chirality that are different operators.
 
 **The even part.** The even products of the gammas are left multiplications:
 $$
-\gamma^0\gamma^k=\bar{\cdot}\,\bar{\cdot}L_{-i e_k}=L_{-i e_k},
+\gamma_0\gamma_k=\bar{\cdot}\,\bar{\cdot}L_{-i e_k}=L_{-i e_k},
 \qquad
-\gamma^j\gamma^k=L_{e_j e_k},
+\gamma_j\gamma_k=L_{e_j e_k},
 \qquad
-\gamma^5\gamma^\mu=-\gamma^\mu\gamma^5 .
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5 .
 $$
 The algebra they generate is the left regular image
 $$
@@ -268,32 +268,32 @@ $$
 $$
 and the carrier remains $\mathbb{B}$.
 
-**The chirality action.** The operator $\gamma^5=R_{-i e_z}$ commutes with every left multiplication and anticommutes with every $\gamma^\mu$. Its eigenspaces are the two chiral halves of the bimodule; on the left regular module it is a right multiplication, which is the algebraic reason the chirality is not in the left factor.
+**The chirality action.** The operator $\gamma_5=R_{-i e_z}$ commutes with every left multiplication and anticommutes with every $\gamma_\mu$. Its eigenspaces are the two chiral halves of the bimodule; on the left regular module it is a right multiplication, which is the algebraic reason the chirality is not in the left factor.
 
 ## The Complex-Linear Dictionary
 
 **Theorem (the coefficient-frame dictionary).** In the same algebra,
 $$
-\gamma^0=R_{i e_x},\qquad
-\gamma^k=L_{i e_k}R_{e_y}\quad(k=1,2,3),
+\gamma_0=R_{i e_x},\qquad
+\gamma_k=L_{i e_k}R_{e_y}\quad(k=1,2,3),
 \qquad
-\gamma^5=R_{-i e_z}
+\gamma_5=R_{-i e_z}
 $$
-satisfy the same Clifford relations, with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$. These operators are $\mathbb{C}$-linear, and they are the five elements
+satisfy the same Clifford relations, with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. These operators are $\mathbb{C}$-linear, and they are the five elements
 $$
-\gamma^0=iT_{tx},\qquad
-\gamma^k=iT_{ky},\qquad
-\gamma^5=-iT_{tz}
+\gamma_0=iT_{tx},\qquad
+\gamma_k=iT_{ky},\qquad
+\gamma_5=-iT_{tz}
 $$
 of the two-sided basis.
 
-**Proof.** The relations were checked in *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and are reproduced here for the comparison. The square of $\gamma^0$ is $R_{(i e_x)^2}=R_{-e_x^2}=I$. The square of $\gamma^k$ is
+**Proof.** The relations were checked in *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and are reproduced here for the comparison. The square of $\gamma_0$ is $R_{(i e_x)^2}=R_{-e_x^2}=I$. The square of $\gamma_k$ is
 $$
 L_{i e_k}R_{e_y}L_{i e_k}R_{e_y}
 =L_{-e_k^2}R_{e_y^2}
 =L_{1}R_{-1}=-I .
 $$
-The anticommutators follow from the anticommutation of the quaternion units and the commutation of $L$ and $R$. The product identity is the definition of $\gamma^5$ in the coefficient frame. $\square$
+The anticommutators follow from the anticommutation of the quaternion units and the commutation of $L$ and $R$. The product identity is the definition of $\gamma_5$ in the coefficient frame. $\square$
 
 **The even part.** The even products of this dictionary generate the **complexified** even Clifford algebra
 $$
@@ -305,19 +305,19 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 
 | feature | real-linear dictionary | complex-linear dictionary |
 |---|---|---|
-| $\gamma^0$ | $\bar{\cdot}$ (antilinear) | $R_{i e_x}$ (linear) |
-| $\gamma^k$ | $\bar{\cdot}L_{-i e_k}$ (antilinear) | $L_{i e_k}R_{e_y}$ (linear) |
-| $\gamma^5$ | $R_{-i e_z}$ (linear) | $R_{-i e_z}$ (linear) |
-| $\gamma^0\gamma^1\gamma^2\gamma^3$ | $iI$ | $-i\gamma^5$ |
+| $\gamma_0$ | $\bar{\cdot}$ (antilinear) | $R_{i e_x}$ (linear) |
+| $\gamma_k$ | $\bar{\cdot}L_{-i e_k}$ (antilinear) | $L_{i e_k}R_{e_y}$ (linear) |
+| $\gamma_5$ | $R_{-i e_z}$ (linear) | $R_{-i e_z}$ (linear) |
+| $\gamma_0\gamma_1\gamma_2\gamma_3$ | $iI$ | $-i\gamma_5$ |
 | even part | $L(\mathbb{B})\cong\mathbb{B}$ | $M_2\oplus M_2$ |
 | odd part | $\bar{\cdot}L(\mathbb{B})$ | the off-diagonal block |
 | carrier | $\mathbb{B}$ as a real $8$-module | $\mathbb{B}$ as a complex $4$-module |
 
-**The choice.** The two dictionaries are two realizations of $\mathrm{Cl}(1,3)$ on the same eight-real-dimensional carrier. The real one uses the coefficient conjugation as the odd generator; the complex one uses the right and left multiplications. They are not equal as operators, and neither is a relabelling of the other: the first is antilinear, the second is linear. The choice between them is the choice of which complex structure is declared to be the scalar $i$ of the module. The real dictionary declares the central $i$ of $\mathbb{B}$ to be the volume element $iI$; the complex dictionary declares it to be $-\omega=i\gamma^5$, the negative of the volume element. The physics uses the complex dictionary for the $4\times4$ matrices and the real dictionary for the operation-level statement that the odd sector is the bar and a left multiplication.
+**The choice.** The two dictionaries are two realizations of $\mathrm{Cl}(1,3)$ on the same eight-real-dimensional carrier. The real one uses the coefficient conjugation as the odd generator; the complex one uses the right and left multiplications. They are not equal as operators, and neither is a relabelling of the other: the first is antilinear, the second is linear. The choice between them is the choice of which complex structure is declared to be the scalar $i$ of the module. The real dictionary declares the central $i$ of $\mathbb{B}$ to be the volume element $iI$; the complex dictionary declares it to be $-\omega=i\gamma_5$, the negative of the volume element. The physics uses the complex dictionary for the $4\times4$ matrices and the real dictionary for the operation-level statement that the odd sector is the bar and a left multiplication.
 
 ## The Star and the Adjoint
 
-**The Dirac adjoint.** The Dirac adjoint of a spinor is $\bar\psi=\psi^{*}\gamma^0$. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the gamma (the odd operation). The star is not the gamma; the gamma is the bar, or the right multiplication, depending on the dictionary. The composite is the adjoint.
+**The Dirac adjoint.** The Dirac adjoint of a spinor is $\bar\psi=\psi^{*}\gamma_0$. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the gamma (the odd operation). The star is not the gamma; the gamma is the bar, or the right multiplication, depending on the dictionary. The composite is the adjoint.
 
 **The Hermitian form.** The Hermitian form on $\mathbb{B}$ is
 $$
@@ -339,17 +339,17 @@ The conjugate-linear operators $C_b=\bar{\cdot}L_b$ and $C'_b=L_b\bar{\cdot}$ fo
 
 The real-linear Clifford dictionary is
 $$
-\gamma^0=\bar{\cdot},\qquad
-\gamma^k=\bar{\cdot}L_{-i\vec e_k},\qquad
-\gamma^5=R_{-i\vec e_z},
+\gamma_0=\bar{\cdot},\qquad
+\gamma_k=\bar{\cdot}L_{-i\vec e_k},\qquad
+\gamma_5=R_{-i\vec e_z},
 $$
-with $(\gamma^0)^2=I$, $(\gamma^k)^2=-I$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I$, and $\{\gamma^5,\gamma^\mu\}=0$. The product of the four gammas is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear dictionary is
+with $(\gamma_0)^2=I$, $(\gamma_k)^2=-I$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I$, and $\{\gamma_5,\gamma_\mu\}=0$. The product of the four gammas is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear dictionary is
 $$
-\gamma^0=R_{i e_x},\qquad
-\gamma^k=L_{i e_k}R_{e_y},\qquad
-\gamma^5=R_{-i e_z},
+\gamma_0=R_{i e_x},\qquad
+\gamma_k=L_{i e_k}R_{e_y},\qquad
+\gamma_5=R_{-i e_z},
 $$
-with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, five elements of the two-sided basis, and the complexified even algebra $M_2\oplus M_2$. The two dictionaries are different realizations on the same carrier, one antilinear and one linear; the first is the operation-level form of the odd sector, the second is the coefficient-frame matrix form.
+with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, five elements of the two-sided basis, and the complexified even algebra $M_2\oplus M_2$. The two dictionaries are different realizations on the same carrier, one antilinear and one linear; the first is the operation-level form of the odd sector, the second is the coefficient-frame matrix form.
 
 | object | value |
 |---|---|
@@ -364,10 +364,10 @@ with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, five elements of the two-side
 | $C_aC_b$ | $L_{\bar a b}$ |
 | $C'_aC'_b$ | $L_{a\bar b}$ |
 | $S_aS_b$ | $T_{b,a^{*}}$ |
-| real dictionary | $\gamma^0=\bar{\cdot}$, $\gamma^k=\bar{\cdot}L_{-i e_k}$, $\gamma^5=R_{-i e_z}$ |
-| real volume element | $\gamma^0\gamma^1\gamma^2\gamma^3=iI$ |
-| complex dictionary | $\gamma^0=R_{i e_x}$, $\gamma^k=L_{i e_k}R_{e_y}$, $\gamma^5=R_{-i e_z}$ |
-| complex volume element | $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$ |
+| real dictionary | $\gamma_0=\bar{\cdot}$, $\gamma_k=\bar{\cdot}L_{-i e_k}$, $\gamma_5=R_{-i e_z}$ |
+| real volume element | $\gamma_0\gamma_1\gamma_2\gamma_3=iI$ |
+| complex dictionary | $\gamma_0=R_{i e_x}$, $\gamma_k=L_{i e_k}R_{e_y}$, $\gamma_5=R_{-i e_z}$ |
+| complex volume element | $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
 ## Summary of Notation
 
@@ -384,8 +384,8 @@ with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, five elements of the two-side
 | $L_b,R_b$ | left and right multiplication by $b$ |
 | $T_{a,b}$ | the two-sided operator $L_aR_b$ |
 | $C_b,C'_b$ | the conjugate-linear operators $\bar{\cdot}L_b$ and $L_b\bar{\cdot}$ |
-| $\gamma^\mu$ | the gamma operators of the chosen dictionary |
-| $\gamma^5$ | the chirality operator |
+| $\gamma_\mu$ | the gamma operators of the chosen dictionary |
+| $\gamma_5$ | the chirality operator |
 
 ## Further Reading
 

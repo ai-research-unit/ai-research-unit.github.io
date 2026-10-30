@@ -65,7 +65,7 @@ where $\varphi$ is the angle between $\vec u_x$ and $\vec u_y$, i.e. between $\v
 
 **Statement.** Put $d\vec v=\vec a\,dt'$. Expand (4) to first order in $dt'$ and show that the rest frame precesses with angular velocity
 $$
-\boxed{\ \vec\omega_T=\frac{1}{c^2}\left(\frac{\gamma^2}{\gamma+1}\right)\,\vec a\times\vec v\ }
+\boxed{\ \vec\omega_T=\frac{1}{c^2}\left(\frac{\gamma_2}{\gamma+1}\right)\,\vec a\times\vec v\ }
 \tag{5}
 $$
 with axis along $\vec a\times\vec v$, and that in the non-relativistic limit $\vec\omega_T\approx \frac{1}{2c^2}\vec a\times\vec v$.
@@ -95,7 +95,7 @@ $$
 
 *The rapidity $\psi_1$.* Since $\tanh\psi=v/c$, the change of rapidity under $v\mapsto v+(\vec a\cdot\vec u_v)dt'$ is
 $$
-d\psi=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma^2}{c}(\vec a\cdot\vec u_v)\,dt'+O(d{t'}^2),
+d\psi=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma_2}{c}(\vec a\cdot\vec u_v)\,dt'+O(d{t'}^2),
 \qquad\text{so}\qquad \psi_1=\psi+d\psi,\quad \psi_2=\psi .
 \tag{9}
 $$
@@ -146,10 +146,10 @@ $$
 $$
 The coefficient can be written in the standard form by using
 $$
-\frac{\gamma-1}{v^2}=\frac{\gamma^2}{c^2(\gamma+1)},
+\frac{\gamma-1}{v^2}=\frac{\gamma_2}{c^2(\gamma+1)},
 \tag{14}
 $$
-which follows from $v^2/c^2=1-\gamma^{-2}$ and $\gamma^2-1=(\gamma-1)(\gamma+1)$. Substituting (14) into (13) gives the magnitude in (5).
+which follows from $v^2/c^2=1-\gamma_{-2}$ and $\gamma_2-1=(\gamma-1)(\gamma+1)$. Substituting (14) into (13) gives the magnitude in (5).
 
 *The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
 $$
@@ -162,12 +162,12 @@ $$
 $$
 where the last step uses $\vec a_\perp\times\vec u_v=\frac{1}{v}(\vec a\times\vec v)$. Its direction is $\vec u_{\vec a\times\vec v}$, so the precession is along $\vec a\times\vec v$ and (5) holds as a vector equation.
 
-*Non-relativistic limit.* As $v\to0$, $\gamma\to1$ and $\gamma^2/(\gamma+1)\to\tfrac12$, so
+*Non-relativistic limit.* As $v\to0$, $\gamma\to1$ and $\gamma_2/(\gamma+1)\to\tfrac12$, so
 $$
 \vec\omega_T\approx\frac{1}{2c^2}\,\vec a\times\vec v.
 \tag{15}
 $$
-The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the value at $\gamma=1$ of $\gamma^2/(\gamma+1)$, and it comes in through the expansion of the denominator in (11) to the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.
+The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the value at $\gamma=1$ of $\gamma_2/(\gamma+1)$, and it comes in through the expansion of the denominator in (11) to the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.
 
 *Only the transverse acceleration precesses the frame.* Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration ($\vec a\parallel\vec v$) gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the rest frame's rotation axis. This is the first sign that the collinear case cannot test the direction of (5).
 
@@ -191,7 +191,7 @@ $$
 $$
 Equation (5) gives
 $$
-\vec\omega_T=-\frac{\gamma^2}{\gamma+1}\frac{av}{c^2}\,\vec e_z .
+\vec\omega_T=-\frac{\gamma_2}{\gamma+1}\frac{av}{c^2}\,\vec e_z .
 \tag{16}
 $$
 Directly from the parent's formula: here $d\vec v=a\,dt'\,\vec e_y$, $\psi_1=\psi_2=\psi+O(d{t'}^2)$ (the acceleration is perpendicular to $\vec v$, so $d\psi=0$ by (9)), $\delta=a\,dt'/v$, and $\varphi=\pi-\delta$. Then (4) collapses to
@@ -205,13 +205,13 @@ $$
 $$
 which is the direction of $\vec a\times\vec v=a\,\vec e_y\times v\,\vec e_x=-av\,\vec e_z$. The sign in (16) is therefore not a convention chosen at the end: it is what the parent's own formula produces, once the composition order is the one in (1).
 
-For $v=0.6c$ and $a$ such that $av/c^2=|a\times v|/c^2=0.6$ per unit time (units $c=1$), $\gamma=1.25$, $\gamma^2/(\gamma+1)=0.694444$, and
+For $v=0.6c$ and $a$ such that $av/c^2=|a\times v|/c^2=0.6$ per unit time (units $c=1$), $\gamma=1.25$, $\gamma_2/(\gamma+1)=0.694444$, and
 $$
 \boxed{\;|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z\;}.
 $$
 The parent's formula (4) evaluated on the same step gives $\theta_W/dt'=0.41666667$ rad per unit time, to the printed digits.
 
-**(c)** The reverse-order rotor is $\tilde U_{\mathrm{int,rev}}=\tilde U_{\vec v}^{-1}\tilde U_{\vec v+d\vec v}$. To first order in $dt'$ its rotation factor is $\tilde{u}^{-1}$: the same angle $\theta_W$ with the opposite axis. Equation (5) then reads $-\frac{\gamma^{2}}{\gamma+1}\frac{\vec a\times\vec v}{c^{2}}$, and the circular result of Problem 4 reverses its sense, becoming prograde instead of retrograde. The collinear check of (a) is blind to this; the non-collinear computation of (b) is not.
+**(c)** The reverse-order rotor is $\tilde U_{\mathrm{int,rev}}=\tilde U_{\vec v}^{-1}\tilde U_{\vec v+d\vec v}$. To first order in $dt'$ its rotation factor is $\tilde{u}^{-1}$: the same angle $\theta_W$ with the opposite axis. Equation (5) then reads $-\frac{\gamma_{2}}{\gamma+1}\frac{\vec a\times\vec v}{c^{2}}$, and the circular result of Problem 4 reverses its sense, becoming prograde instead of retrograde. The collinear check of (a) is blind to this; the non-collinear computation of (b) is not.
 
 The rotor *direction* is a separate question, and it is settled by the same computation. If $\tilde U_{\vec v}$ is read as the rest-to-lab rotor, the lab-to-rest rotor is $\tilde U_{\vec v}^{-1}$, and the interval rotor built from it is $\tilde U_{\mathrm{int,inv}}=\tilde U_{\vec v+d\vec v}^{-1}\tilde U_{\vec v}$, which inverts each factor of $\tilde U_{\mathrm{int}}$ while keeping the order. To first order in $dt'$ its rotation vector is the *same* as that of $\tilde U_{\mathrm{int}}$, not the opposite one: inverting both factors together changes the boost part but not the first-order rotation. So the unstated direction of the parent's rotor, applied consistently, does not by itself flip the sign; the sign is fixed by the order of composition. That the sign is nevertheless delicate is why (5) is stated with its axis and not with its magnitude alone.
 
@@ -236,10 +236,10 @@ $$
 =-\Omega^2 R^2\,\vec\Omega
 =-\Omega v^2\,\vec e_z .
 $$
-Equation (5) gives $\vec\omega_T=\frac{\gamma^2}{\gamma+1}(-\Omega v^2/c^2)\vec e_z$. Using $v^2/c^2=1-\gamma^{-2}$,
+Equation (5) gives $\vec\omega_T=\frac{\gamma_2}{\gamma+1}(-\Omega v^2/c^2)\vec e_z$. Using $v^2/c^2=1-\gamma_{-2}$,
 $$
-\frac{\gamma^2}{\gamma+1}\left(1-\frac{1}{\gamma^2}\right)
-=\frac{\gamma^2-1}{\gamma+1}=\gamma-1,
+\frac{\gamma_2}{\gamma+1}\left(1-\frac{1}{\gamma_2}\right)
+=\frac{\gamma_2-1}{\gamma+1}=\gamma-1,
 $$
 which is (17). The precession is **opposite to the orbital angular velocity**: it is retrograde.
 
@@ -248,7 +248,7 @@ $$
 \boxed{\;\Delta\theta=|\vec\omega_T|\,T=(\gamma-1)\,\Omega\,\frac{2\pi}{\Omega}=2\pi(\gamma-1)
 \quad\text{with the sense opposite to }\vec\Omega\;},
 $$
-i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma^2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).
+i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma_2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).
 
 **(c)** The four-force of the parent article is $\tilde{K}_{\mathrm{f}}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_t+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{M}_-$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. *Exercise: The Non-Relativistic Limit and the Pauli Equation* records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.
 
@@ -274,7 +274,7 @@ We have taken the discrete Thomas–Wigner rotation of the parent articles to it
 
 2. **The rate.** Expanding the parent's Wigner-angle formula to first order in $dt'$ gives the Thomas precession
 $$
-\vec\omega_T=\frac{1}{c^2}\left(\frac{\gamma^2}{\gamma+1}\right)\vec a\times\vec v,
+\vec\omega_T=\frac{1}{c^2}\left(\frac{\gamma_2}{\gamma+1}\right)\vec a\times\vec v,
 $$
 along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\frac{1}{2c^2}\vec a\times\vec v$ — the Thomas half. Only the transverse part of the acceleration precesses the frame.
 

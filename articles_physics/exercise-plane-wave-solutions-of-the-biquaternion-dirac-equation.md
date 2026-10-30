@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a worked exercise on the biquaternion Dirac equation, written **in the biquaternion algebra**. The gamma matrices are displayed once, in full, so that they can be identified with the parent's; after that the symbols $\gamma^\mu$ and $\gamma_5$ name left and right multiplications, and the working objects are biquaternions, not columns. The parent article, *The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit*, supplies the equation, the field, the two bases, and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the explicit spinors, the normalisation in the biquaternion pairing, the spin sums as operator identities, the massless limit, the algebra of the generators and the change of basis.
+This is a worked exercise on the biquaternion Dirac equation, written **in the biquaternion algebra**. The gamma matrices are displayed once, in full, so that they can be identified with the parent's; after that the symbols $\gamma_\mu$ and $\gamma_5$ name left and right multiplications, and the working objects are biquaternions, not columns. The parent article, *The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit*, supplies the equation, the field, the two bases, and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the explicit spinors, the normalisation in the biquaternion pairing, the spin sums as operator identities, the massless limit, the algebra of the generators and the change of basis.
 
 The translation is a dictionary of operators. A Dirac spinor is a biquaternion $\tilde\Psi$. Write $R_a$ and $L_a$ for right and left multiplication,
 
@@ -22,54 +22,54 @@ The factor $i$ is not decoration. $\sigma_k$ is Hermitian; $\vec e_k$ alone maps
 
 **The five matrices, complete.** The Dirac space is $\mathbb C^4$, the same four complex dimensions as $\mathbb B$. Order the four components as $(\psi_{L1},\psi_{L2},\psi_{R1},\psi_{R2})$, the parent's chiral order. As block matrices over $\mathbb B$, acting on a pair $(\xi,\eta)$ of biquaternions,
 $$
-\gamma^0=\begin{pmatrix}0&e_t\\e_t&0\end{pmatrix},\qquad
-\gamma^k=\begin{pmatrix}0&i\vec e_k\\-i\vec e_k&0\end{pmatrix},\qquad
+\gamma_0=\begin{pmatrix}0&e_t\\e_t&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&i\vec e_k\\-i\vec e_k&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-e_t&0\\0&e_t\end{pmatrix}.
 $$
 The off-diagonal blocks exchange the two slots; each entry multiplies its slot by the coordinate unit. Under $M$ each block becomes a $2\times2$ complex matrix; assembling the four blocks, the five objects read
 $$
-\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
-\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=
 \begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
 
-The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma^\mu$ is the coordinate index, $\gamma^\mu$ is the generator paired with $\partial/\partial x^\mu$ in the $x$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x^\mu=(t',x,y,z)$, not $Q_\mu$; the $Q$-frame coefficients are $\gamma^0$ and $i\gamma^k$. That is the precise sense in which the gammas align with the coordinates.
+The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma_\mu$ is the coordinate index, $\gamma_\mu$ is the generator paired with $\partial/\partial x^\mu$ in the $x$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x^\mu=(t',x,y,z)$, not $Q_\mu$; the $Q$-frame coefficients are $\gamma_0$ and $i\gamma_k$. That is the precise sense in which the gammas align with the coordinates.
 
 The Dirac basis is the same set after $U=\frac1{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix}$:
 $$
-\gamma^0_d=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix}=
+\gamma_0_d=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix}=
 \begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},\qquad
-\gamma^k_d=\gamma^k,
+\gamma_k_d=\gamma_k,
 $$
 $$
 \gamma_5^d=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}=
 \begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix}.
 $$
-In that basis $\gamma^0_d$ is diagonal and separates the upper and the lower pair; that is why the non-relativistic limit is simplest there. The spatial matrices do not change.
+In that basis $\gamma_0_d$ is diagonal and separates the upper and the lower pair; that is why the non-relativistic limit is simplest there. The spatial matrices do not change.
 
 **What each matrix means.**
 
 | object | chiral form | entry | meaning |
 |---|---|---|---|
-| $\gamma^0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | generator paired with $\partial_{t'}$; exchanges the two chiral blocks |
-| $\gamma^1,\gamma^2,\gamma^3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | generators paired with $\partial_{x^k}$; each squares to $-1$ |
+| $\gamma_0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | generator paired with $\partial_{t'}$; exchanges the two chiral blocks |
+| $\gamma_1,\gamma_2,\gamma_3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | generators paired with $\partial_{x^k}$; each squares to $-1$ |
 | $\gamma_5$ | $\mathrm{diag}(-I_2,I_2)$ | $-e_t$ on the left, $+e_t$ on the right | chirality, $-1$ on the left and $+1$ on the right; $P_{L,R}=\tfrac12(1\mp\gamma_5)$ |
-| $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | $-i\gamma_5$ | $L_iR_{i\vec e_z}$ | volume element; $i\omega=\gamma_5$ |
+| $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | $-i\gamma_5$ | $L_iR_{i\vec e_z}$ | volume element; $i\omega=\gamma_5$ |
 
 **Why the four units cannot be four left multiplications.** $e_t=1$ is the identity, so it commutes with every $\vec e_k$: $\{e_t,\vec e_k\}=2\vec e_k\neq0$, while the generators must anticommute. No scalar helps, since a scalar commutes with everything. So no assignment of the four units to four left multiplications can satisfy the Clifford relations. Left multiplication is an injective complex-linear map $L:\mathbb B\to\mathrm{End}_{\mathbb C}(\mathbb B)$, so any family of left multiplications generates at most a four-complex-dimensional algebra. The Clifford algebra generated by four anticommuting generators has complex dimension sixteen. One generator must act elsewhere.
 
-**The three completions.** There are three, and they are not equivalent. (a) The star: $\gamma^0=\varkappa$, $\gamma^k=\varkappa L_{-i\vec e_k}$ on the real eight-dimensional $\mathbb B$. (b) Left and right multiplications: the dictionary below, with $\gamma^0$ and $\gamma_5$ right multiplications and $\gamma^k$ a product of a left and a right multiplication. (c) An odd generator: the double $\mathbb B\oplus\mathbb B\gamma$, whose block matrices are exactly the biquaternion-entry matrices displayed above.
+**The three completions.** There are three, and they are not equivalent. (a) The star: $\gamma_0=\varkappa$, $\gamma_k=\varkappa L_{-i\vec e_k}$ on the real eight-dimensional $\mathbb B$. (b) Left and right multiplications: the dictionary below, with $\gamma_0$ and $\gamma_5$ right multiplications and $\gamma_k$ a product of a left and a right multiplication. (c) An odd generator: the double $\mathbb B\oplus\mathbb B\gamma$, whose block matrices are exactly the biquaternion-entry matrices displayed above.
 
-The star is antilinear in the coefficient $i$: $\varkappa L_i=-L_i\varkappa$. In (a) the coefficient $i$ is therefore not the quantum complex structure, and the standard chirality $i\gamma^0\gamma^1\gamma^2\gamma^3$ is $\pm1$. Forms (b) and (c) are complex-linear and isomorphic as Clifford modules; they differ in the carrier, (b) one biquaternion with a spin and a chirality index, (c) a pair of chiral biquaternions. The exercise uses (b), because its spinors are single biquaternions and it needs $P_L\neq P_R$.
+The star is antilinear in the coefficient $i$: $\varkappa L_i=-L_i\varkappa$. In (a) the coefficient $i$ is therefore not the quantum complex structure, and the standard chirality $i\gamma_0\gamma_1\gamma_2\gamma_3$ is $\pm1$. Forms (b) and (c) are complex-linear and isomorphic as Clifford modules; they differ in the carrier, (b) one biquaternion with a spin and a chirality index, (c) a pair of chiral biquaternions. The exercise uses (b), because its spinors are single biquaternions and it needs $P_L\neq P_R$.
 
-**The carrier is $\mathbb C^4$; the gammas are $4\times4$.** The biquaternion algebra has complex dimension four, on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. The Dirac spinor is one biquaternion, so it has four complex components, and each $\gamma^\mu$ is a $4\times4$ complex matrix on them. This is forced by dimension: $\mathrm{Cl}_{1,3}\otimes\mathbb C\cong M_4(\mathbb C)$ has complex dimension sixteen, and its irreducible module is $\mathbb C^4$. A $2\times2$ gamma cannot exist.
+**The carrier is $\mathbb C^4$; the gammas are $4\times4$.** The biquaternion algebra has complex dimension four, on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. The Dirac spinor is one biquaternion, so it has four complex components, and each $\gamma_\mu$ is a $4\times4$ complex matrix on them. This is forced by dimension: $\mathrm{Cl}_{1,3}\otimes\mathbb C\cong M_4(\mathbb C)$ has complex dimension sixteen, and its irreducible module is $\mathbb C^4$. A $2\times2$ gamma cannot exist.
 
 The corpus carries three matrix languages for the same four-dimensional space, and they must not be confused.
 
@@ -100,8 +100,8 @@ The gammas are linear combinations of these products. That is why they are $4\ti
 
 **The two-sided products and the gamma matrices.** A gamma is not a sandwich: it is a single two-sided operator $T_{a,b}=L_aR_b$ whose pair $(a,b)$ is fixed by the gamma index, or a star/left multiplication in the real-linear frame. A sandwich has the second slot tied to the first, $b=a^{*}$; the gamma frame leaves it free. The two-sided product $T_{a,b}=L_aR_b$ sends $x$ to $axb$, and in the matrix representation the gammas are the three cases
 $$
-\gamma^0=T_{1,\,i\vec e_x},\qquad
-\gamma^k=T_{i\vec e_k,\,\vec e_y},\qquad
+\gamma_0=T_{1,\,i\vec e_x},\qquad
+\gamma_k=T_{i\vec e_k,\,\vec e_y},\qquad
 \gamma_5=T_{1,\,-i\vec e_z}.
 $$
 In matrix form $T_{a,b}=\mathsf M_4^L(a)\mathsf M_4^R(b)$. The gamma matrices are products of the corpus's left regular matrix and its right counterpart. The $M_4(\mathbb C)_{\mathbb{B},L}$ model supplies one factor of each product.
@@ -114,18 +114,18 @@ which are real for real $b$. None of the gammas is one of them. The Peirce basis
 $$
 \mathsf M_4^L(b)=\mathrm{diag}\bigl(\mathsf M_2(b),\mathsf M_2(b)\bigr),
 $$
-so the left action preserves the two chiral planes and acts by the same block on each. $\gamma^0$ and $\gamma^k$ exchange the two planes, and $\gamma_5$ acts on them with opposite signs. The left regular image cannot contain them.
+so the left action preserves the two chiral planes and acts by the same block on each. $\gamma_0$ and $\gamma_k$ exchange the two planes, and $\gamma_5$ acts on them with opposite signs. The left regular image cannot contain them.
 
 The gammas use the right factor:
 $$
-\gamma^0=i\mathsf M_4^R(\vec e_x),\qquad
-\gamma^k=i\mathsf M_4^L(\vec e_k)\mathsf M_4^R(\vec e_y),\qquad
+\gamma_0=i\mathsf M_4^R(\vec e_x),\qquad
+\gamma_k=i\mathsf M_4^L(\vec e_k)\mathsf M_4^R(\vec e_y),\qquad
 \gamma_5=-i\mathsf M_4^R(\vec e_z).
 $$
 The time and chirality gammas are pure right matrices; the spatial ones are products. The factor $i$ is the scalar of $\mathbb B$, which multiplies the matrix. In the Peirce basis the contrast is one line:
 $$
 \mathsf M_4^L(i\vec e_x)=\mathrm{diag}(\sigma_x,\sigma_x),\qquad
-\gamma^0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}.
+\gamma_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}.
 $$
 Both are $4\times4$ and both use $\sigma_x$; the left matrix acts on each chiral plane separately, the gamma exchanges the two.
 
@@ -139,7 +139,7 @@ L_a=1\otimes\mathsf M_2(a),\qquad R_b=\mathsf M_2(b)^{T}\otimes1,
 $$
 the dictionary is a set of Kronecker products:
 $$
-\gamma^0=\sigma_x\otimes1,\qquad \gamma^k=i\sigma_y\otimes\sigma_k,\qquad \gamma_5=-\sigma_z\otimes1 .
+\gamma_0=\sigma_x\otimes1,\qquad \gamma_k=i\sigma_y\otimes\sigma_k,\qquad \gamma_5=-\sigma_z\otimes1 .
 $$
 These are $4\times4$ matrices. The first factor is chirality, the second is spin. The formula is the tensor factorization of the chiral representation, and the two factors are two $M_2(\mathbb C)$ models, not the two halves of a $2\times2$ gamma.
 
@@ -158,27 +158,27 @@ R_{i\vec e_x}=\sigma_x\otimes 1,\quad R_{\vec e_y}=i\sigma_y\otimes 1,\quad R_{i
 $$
 The three left multiplications form a Pauli triple of the spin factor; the three right multiplications form a Pauli triple of the chirality factor. The side on which a unit multiplies is what decides which factor it acts on. The dictionary
 $$
-\gamma^0=R_{i\vec e_x},\qquad \gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5=R_{-i\vec e_z}
+\gamma_0=R_{i\vec e_x},\qquad \gamma_k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5=R_{-i\vec e_z}
 $$
 reproduces the five matrices above.
 
-The unit $\vec e_y$ is not a spatial direction in this formula. On the right it is the chirality epsilon $i\sigma_y$, not a rotation. The formula assigns the three chirality units so that $(\gamma^0)^2=1$, $(\gamma^k)^2=-1$ and $\gamma_5^2=1$; the asymmetry is the asymmetry of the Pauli triple, not a choice of spatial axis.
+The unit $\vec e_y$ is not a spatial direction in this formula. On the right it is the chirality epsilon $i\sigma_y$, not a rotation. The formula assigns the three chirality units so that $(\gamma_0)^2=1$, $(\gamma_k)^2=-1$ and $\gamma_5^2=1$; the asymmetry is the asymmetry of the Pauli triple, not a choice of spatial axis.
 
 **Frame covariance.** The formula is written in a frame, and no direction is privileged. Let $(t_1,t_2,t_3)$ be an orthonormal triad and $(u,w)$ an orthonormal pair of real unit vectors; then
 $$
-\gamma^0=R_{iw},\qquad \gamma^k=L_{i t_k}R_u
+\gamma_0=R_{iw},\qquad \gamma_k=L_{i t_k}R_u
 $$
 satisfy the same Clifford relations for every such choice (verified on twenty random frames). The exercise takes $t_k=\vec e_k$, $u=\vec e_y$, $w=\vec e_x$, the frame in which the chirality factor is the standard $(\sigma_x,i\sigma_y,\sigma_z)$. A change of the triad is a spatial rotation; a change of $(u,w)$ is a change of chirality basis, conjugation by a unit biquaternion. Neither changes the physics.
 
 The check is the algebra itself. Since $R$ and $L$ commute and $(i\vec e_x)^2=(i\vec e_k)^2=e_t$, while $\vec e_y^2=-e_t$,
 $$
-(\gamma^0)^2=R_{e_t}=1,\qquad (\gamma^k)^2=L_{e_t}R_{-e_t}=-1,
+(\gamma_0)^2=R_{e_t}=1,\qquad (\gamma_k)^2=L_{e_t}R_{-e_t}=-1,
 $$
 $$
-\gamma^0\gamma^k+\gamma^k\gamma^0=L_{i\vec e_k}\bigl(R_{i\vec e_z}+R_{-i\vec e_z}\bigr)=0,\qquad
-\gamma^j\gamma^k+\gamma^k\gamma^j=L_{\vec e_j\vec e_k+\vec e_k\vec e_j}=0 .
+\gamma_0\gamma_k+\gamma_k\gamma_0=L_{i\vec e_k}\bigl(R_{i\vec e_z}+R_{-i\vec e_z}\bigr)=0,\qquad
+\gamma_j\gamma_k+\gamma_k\gamma_j=L_{\vec e_j\vec e_k+\vec e_k\vec e_j}=0 .
 $$
-So $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, without a matrix.
+So $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, without a matrix.
 
 **The star still appears, but elsewhere.** $\varkappa$ is not a generator in this dictionary; it is the real structure that defines the Dirac adjoint, and it enters the pairing $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x)$ of Problem 2. The same algebra carries both the generators (left and right multiplications) and the antilinear operations (the star); they are different roles, and the exercise keeps them apart.
 
@@ -219,10 +219,10 @@ In the Dirac basis the same two components are the large and the small component
 **The momentum-space operator.** For a plane wave of four-momentum $p^\mu=(E,\vec p)$, the Dirac operator is
 
 $$
-\gamma^{\mu} p_{\mu}=\gamma^0E-\gamma^k p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
+\gamma_{\mu} p_{\mu}=\gamma_0E-\gamma_k p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
 $$
 
-and the equation is $\gamma^{\mu} p_{\mu}\,\tilde\Psi=m\tilde\Psi$. Written on the element,
+and the equation is $\gamma_{\mu} p_{\mu}\,\tilde\Psi=m\tilde\Psi$. Written on the element,
 
 $$
 E\,\tilde\Psi\,i\vec e_x-(\vec p\cdot\vec e)\,\tilde\Psi\,\vec e_y=m\,\tilde\Psi .
@@ -250,7 +250,7 @@ The six problems are: **(1)** the spinors at rest and at general momentum; **(2)
 
 ## Problem 1: The spinors at rest and at general momentum
 
-**Statement.** Solve $\gamma^{\mu} p_{\mu}\,\tilde w=m\tilde w$ and $\gamma^{\mu} p_{\mu}\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the chiral and in the Dirac basis.
+**Statement.** Solve $\gamma_{\mu} p_{\mu}\,\tilde w=m\tilde w$ and $\gamma_{\mu} p_{\mu}\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the chiral and in the Dirac basis.
 
 **Solution.** The equation was written above as a pair on the Peirce coordinates. In the **chiral basis** the pair is
 
@@ -335,14 +335,14 @@ These are the four-component spinors of the parent, read as coordinates in the t
 
 **Statement.** Verify $\bar w^{(r)}w^{(s)}=2m\delta^{rs}$, $\bar v^{(r)}v^{(s)}=-2m\delta^{rs}$, $\bar w^{(r)}v^{(s)}=0$, and the Hermitian products.
 
-**Solution.** Write $\bar w w=\langle\tilde w,\tilde w\rangle_{\mathrm D}$ for the Dirac bilinear. The Dirac adjoint is the Hermitian pairing twisted by the representative of $\gamma^0$. In the chiral basis,
+**Solution.** Write $\bar w w=\langle\tilde w,\tilde w\rangle_{\mathrm D}$ for the Dirac bilinear. The Dirac adjoint is the Hermitian pairing twisted by the representative of $\gamma_0$. In the chiral basis,
 
 $$
 \langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)
 =\psi_+^\dagger\phi_-+\psi_-^\dagger\phi_+ ,
 $$
 
-and in the Dirac basis the twist is $i\vec e_z$, the representative of $\gamma^0$ there. The single algebraic input is the unit-vector identity
+and in the Dirac basis the twist is $i\vec e_z$, the representative of $\gamma_0$ there. The single algebraic input is the unit-vector identity
 
 $$
 (i\vec u_p)^2=e_t,
@@ -392,8 +392,8 @@ The bilinear $\bar ww=\langle\tilde w,\tilde w\rangle_{\mathrm D}$ is a Lorentz 
 **Statement.** Verify the completeness relations
 
 $$
-\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\gamma^{\mu} p_{\mu}+m,\qquad
-\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\gamma^{\nu} p_{\nu}-m .
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}+m,\qquad
+\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\gamma_{\nu} p_{\nu}-m .
 $$
 
 **Solution.** The left-hand side is an operator on $\mathbb{B}$, of rank two: for every $\tilde\Phi$,
@@ -414,32 +414,32 @@ and their conjugates. Restoring the algebra, $E I_2-|\vec p|\,\boldsymbol\sigma\
 
 $$
 \sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}
-=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y}+m=\gamma^{\mu} p_{\mu}+m .
+=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y}+m=\gamma_{\mu} p_{\mu}+m .
 $$
 
-The negative-frequency sum is identical in structure with the roles of the two Peirce components interchanged, and gives $\gamma^{\mu} p_{\mu}-m$.
+The negative-frequency sum is identical in structure with the roles of the two Peirce components interchanged, and gives $\gamma_{\mu} p_{\mu}-m$.
 
-**The on-shell identity.** The two sums are consistent with the normalisations because the trace of $\gamma^{\mu} p_{\mu}+m$ over the four-dimensional amplitude space is $4m$, and because
-
-$$
-(\gamma^{\nu} p_{\nu}+m)(\gamma^{\rho} p_{\rho}-m)=(\gamma^{\mu} p_{\mu})^2-m^2 .
-$$
-
-The operator $\gamma^{\mu} p_{\mu}$ squares to a multiple of the identity:
+**The on-shell identity.** The two sums are consistent with the normalisations because the trace of $\gamma_{\mu} p_{\mu}+m$ over the four-dimensional amplitude space is $4m$, and because
 
 $$
-(\gamma^{\mu} p_{\mu})^2=E^2R_{(i\vec e_x)^2}-p_jp_kL_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
+(\gamma_{\nu} p_{\nu}+m)(\gamma_{\rho} p_{\rho}-m)=(\gamma_{\mu} p_{\mu})^2-m^2 .
+$$
+
+The operator $\gamma_{\mu} p_{\mu}$ squares to a multiple of the identity:
+
+$$
+(\gamma_{\mu} p_{\mu})^2=E^2R_{(i\vec e_x)^2}-p_jp_kL_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
 =E^2-p_jp_kL_{-\vec e_j\vec e_k}R_{-e_t}
 =E^2-\vec p^2 ,
 $$
 
-the cross terms vanishing because $R_{i\vec e_x}$ and $L_{i\vec e_k}R_{\vec e_y}$ anticommute. On the mass shell $(\gamma^{\mu} p_{\mu})^2=m^2$, so the two branches close the amplitude space, exactly as $(\gamma^{\mu} p_{\mu}+m)(\gamma^{\nu} p_{\nu}-m)=0$ in the matrix language.
+the cross terms vanishing because $R_{i\vec e_x}$ and $L_{i\vec e_k}R_{\vec e_y}$ anticommute. On the mass shell $(\gamma_{\mu} p_{\mu})^2=m^2$, so the two branches close the amplitude space, exactly as $(\gamma_{\mu} p_{\mu}+m)(\gamma_{\nu} p_{\nu}-m)=0$ in the matrix language.
 
 **Check in the Dirac basis.** The same relations hold with the spin index $r$ replacing the helicity index, once the Dirac-basis spinors of Problem 1 are used:
 
 $$
-\sum_{r=1}^{2}\tilde w^{(r)}\bigl\langle\tilde w^{(r)},\cdot\bigr\rangle_{\mathrm D}=\gamma^{\mu} p_{\mu}+m,\qquad
-\sum_{r=1}^{2}\tilde v^{(r)}\bigl\langle\tilde v^{(r)},\cdot\bigr\rangle_{\mathrm D}=\gamma^{\nu} p_{\nu}-m .
+\sum_{r=1}^{2}\tilde w^{(r)}\bigl\langle\tilde w^{(r)},\cdot\bigr\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}+m,\qquad
+\sum_{r=1}^{2}\tilde v^{(r)}\bigl\langle\tilde v^{(r)},\cdot\bigr\rangle_{\mathrm D}=\gamma_{\nu} p_{\nu}-m .
 $$
 
 The proof uses $\sum_r\xi^{(r)}\xi^{(r)\dagger}=I_2$ in place of the helicity sums. A numerical evaluation at the same kinematics confirms both equalities on a basis of $\mathbb{B}$.
@@ -448,10 +448,10 @@ The proof uses $\sum_r\xi^{(r)}\xi^{(r)\dagger}=I_2$ in place of the helicity su
 
 **Statement.** Take $m=0$ and exhibit the helicity–chirality locking in the Peirce components.
 
-**Solution.** In the chiral basis the massless equation $\gamma^{\mu} p_{\mu}\,\tilde\Psi=0$ splits into its two Peirce components,
+**Solution.** In the chiral basis the massless equation $\gamma_{\mu} p_{\mu}\,\tilde\Psi=0$ splits into its two Peirce components,
 
 $$
-\bigl(\gamma^{\mu} p_{\mu}\,\tilde\Psi\bigr)\tilde\Pi_+=0,\qquad \bigl(\gamma^{\nu} p_{\nu}\,\tilde\Psi\bigr)\tilde\Pi_-=0,
+\bigl(\gamma_{\mu} p_{\mu}\,\tilde\Psi\bigr)\tilde\Pi_+=0,\qquad \bigl(\gamma_{\nu} p_{\nu}\,\tilde\Psi\bigr)\tilde\Pi_-=0,
 $$
 
 which are the two Weyl equations
@@ -485,23 +485,23 @@ $$
 \gamma_5=R_{-i\vec e_z},\qquad \gamma_5^2=R_{(-i\vec e_z)^2}=1,
 $$
 
-and it anticommutes with every generator: with $\gamma^0=R_{i\vec e_x}$ and $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$,
+and it anticommutes with every generator: with $\gamma_0=R_{i\vec e_x}$ and $\gamma_k=L_{i\vec e_k}R_{\vec e_y}$,
 
 $$
-\gamma_5\gamma^0+\gamma^0\gamma_5=R_{-i\vec e_z i\vec e_x+i\vec e_x(-i\vec e_z)}=0,
+\gamma_5\gamma_0+\gamma_0\gamma_5=R_{-i\vec e_z i\vec e_x+i\vec e_x(-i\vec e_z)}=0,
 \qquad
-\gamma_5\gamma^k+\gamma^k\gamma_5=L_{i\vec e_k}\bigl(R_{-i\vec e_z\vec e_y+\vec e_y(-i\vec e_z)}\bigr)=0 .
+\gamma_5\gamma_k+\gamma_k\gamma_5=L_{i\vec e_k}\bigl(R_{-i\vec e_z\vec e_y+\vec e_y(-i\vec e_z)}\bigr)=0 .
 $$
 
 The projectors are $P_L=R_{\tilde\Pi_+}$ and $P_R=R_{\tilde\Pi_-}$; they satisfy $P_L+P_R=1$, $P_LP_R=0$, and $P_L\gamma_5=-P_L$, $P_R\gamma_5=P_R$. They are the Peirce projectors of the algebra; in the Peirce basis they project onto the two chiral blocks.
 
 **The action on the two chiral columns.** On the pair $(\psi_+,\psi_-)$ the three operators act as
 $$
-\gamma^0:(\psi_+,\psi_-)\mapsto(\psi_-,\psi_+),\qquad
+\gamma_0:(\psi_+,\psi_-)\mapsto(\psi_-,\psi_+),\qquad
 \gamma_5:(\psi_+,\psi_-)\mapsto(-\psi_+,\psi_-),\qquad
-\gamma^k:(\psi_+,\psi_-)\mapsto(\sigma_k\psi_-,-\sigma_k\psi_+).
+\gamma_k:(\psi_+,\psi_-)\mapsto(\sigma_k\psi_-,-\sigma_k\psi_+).
 $$
-These are the blocks of the parent's chiral matrices: the exchange block of $\gamma^0$, the diagonal blocks $(-I_2,I_2)$ of $\gamma_5$, and the off-diagonal $\sigma_k$ blocks of $\gamma^k$. The blocks follow from the multiplication table of the four units.
+These are the blocks of the parent's chiral matrices: the exchange block of $\gamma_0$, the diagonal blocks $(-I_2,I_2)$ of $\gamma_5$, and the off-diagonal $\sigma_k$ blocks of $\gamma_k$. The blocks follow from the multiplication table of the four units.
 
 **The change of basis.** Right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$ is a unit-norm biquaternion, and it sends the chiral basis to the Dirac basis:
 
@@ -512,16 +512,16 @@ $$
 The generators transform by conjugation. Since $\tilde W^{-1}i\vec e_x\tilde W=i\vec e_z$ and $\tilde W^{-1}(-i\vec e_z)\tilde W=i\vec e_x$,
 
 $$
-\gamma^0_d=R_{i\vec e_z},\qquad \gamma^k_d=\gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5^d=R_{i\vec e_x}.
+\gamma_0_d=R_{i\vec e_z},\qquad \gamma_k_d=\gamma_k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5^d=R_{i\vec e_x}.
 $$
 
-The spatial generators are unchanged because $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$; only $\gamma^0$ and $\gamma_5$ change. In the Dirac basis $\gamma^0_d$ is diagonal on the Peirce components, which is why that basis separates the large and the small component in the non-relativistic limit. The $4\times4$ matrix $U$ of the parent is the regular representation of this right multiplication on the four-dimensional space of the two Peirce coordinates.
+The spatial generators are unchanged because $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$; only $\gamma_0$ and $\gamma_5$ change. In the Dirac basis $\gamma_0_d$ is diagonal on the Peirce components, which is why that basis separates the large and the small component in the non-relativistic limit. The $4\times4$ matrix $U$ of the parent is the regular representation of this right multiplication on the four-dimensional space of the two Peirce coordinates.
 
-**The Lorentz generators.** The generators of the spinor representation are $S^{\mu\nu}=\frac i4[\gamma^\mu,\gamma^\nu]$. In the algebra they are again left and right multiplications:
+**The Lorentz generators.** The generators of the spinor representation are $S^{\mu\nu}=\frac i4[\gamma_\mu,\gamma_\nu]$. In the algebra they are again left and right multiplications:
 
 $$
-S^{0k}=\frac i4[\gamma^0,\gamma^k]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
-S^{jk}=\frac i4[\gamma^j,\gamma^k]=\frac i2\,L_{\vec e_j\vec e_k}.
+S^{0k}=\frac i4[\gamma_0,\gamma_k]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
+S^{jk}=\frac i4[\gamma_j,\gamma_k]=\frac i2\,L_{\vec e_j\vec e_k}.
 $$
 
 Both are block diagonal on the Peirce components, so $[S^{\mu\nu},\gamma_5]=0$. The rotations $S^{jk}$ carry no chirality factor and act with the same sign on the two components; the boosts $S^{0k}$ carry the chirality sign, since $R_{i\vec e_z}=-\gamma_5$ and
@@ -530,7 +530,7 @@ $$
 S^{0k}=\frac i2\,L_{i\vec e_k}\,\gamma_5 .
 $$
 
-This is the algebraic content of the parent's statement that rotations are chirality-even and boosts are chirality-odd. The signs are the ones of the exercise: the commutator $[\gamma^0,\gamma^k]$ is $-2L_{i\vec e_k}R_{i\vec e_z}$ with the present convention.
+This is the algebraic content of the parent's statement that rotations are chirality-even and boosts are chirality-odd. The signs are the ones of the exercise: the commutator $[\gamma_0,\gamma_k]$ is $-2L_{i\vec e_k}R_{i\vec e_z}$ with the present convention.
 
 ## Problem 6: The biquaternionic mass-shell condition
 
@@ -570,9 +570,9 @@ The six problems test the parent's plane-wave solutions and confirm them in the 
 
 1. **The spinors.** In the chiral basis, $\tilde w_\pm=\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$ and $\tilde v_\pm=-\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$; in the Dirac basis, $\tilde w^{(r)}=\sqrt{E+m}\,\Psi_+(\xi^{(r)})+\sqrt{E-m}\,\Psi_-(\boldsymbol\sigma\cdot\vec u_p\,\xi^{(r)})$ and $\tilde v^{(r)}=\sqrt{E-m}\,\Psi_+(\boldsymbol\sigma\cdot\vec u_p\,\eta^{(r)})+\sqrt{E+m}\,\Psi_-(\eta^{(r)})$. At rest the positive-frequency amplitude has equal Peirce coordinates and the negative-frequency amplitude opposite ones; in the Dirac basis each sits in a single Peirce component.
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.
-3. **Spin sums.** The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=\gamma^{\mu} p_{\mu}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=\gamma^{\mu} p_{\mu}-m$ hold as operator identities on $\mathbb{B}$, and $(\gamma^{\mu} p_{\mu}+m)(\gamma^{\nu} p_{\nu}-m)=0$ on shell.
+3. **Spin sums.** The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}-m$ hold as operator identities on $\mathbb{B}$, and $(\gamma_{\mu} p_{\mu}+m)(\gamma_{\nu} p_{\nu}-m)=0$ on shell.
 4. **Massless limit.** Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.
-5. **Generators.** The Clifford algebra is the multiplication table: $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\gamma^0$ to $R_{i\vec e_z}$ and leaves $\gamma^k$ unchanged; the Lorentz generators are $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$.
+5. **Generators.** The Clifford algebra is the multiplication table: $\gamma_0=R_{i\vec e_x}$, $\gamma_k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\gamma_0$ to $R_{i\vec e_z}$ and leaves $\gamma_k$ unchanged; the Lorentz generators are $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 
 Two objects are needed by the exercise and are not displayed in the parent: the chiral negative-frequency spinors $\tilde v_\pm$ (Problem 1) and the change-of-basis biquaternion $\tilde W$ (Problem 5). The constructions above reproduce the parent's stated results.
@@ -585,14 +585,14 @@ Two objects are needed by the exercise and are not displayed in the parent: the 
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $R_a,L_a$ | Right and left multiplication, $R_a(\tilde Q)=\tilde Q a$, $L_a(\tilde Q)=a\tilde Q$ |
-| $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$ | The Dirac generators as algebra operations |
+| $\gamma_0=R_{i\vec e_x}$, $\gamma_k=L_{i\vec e_k}R_{\vec e_y}$ | The Dirac generators as algebra operations |
 | $\gamma_5=R_{-i\vec e_z}$ | Chirality operator |
 | $\tilde\Pi_\pm=\frac12(e_t\pm i\vec e_z)$ | Peirce idempotents; $P_{L,R}=R_{\tilde\Pi_\pm}$ |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | Off-diagonal matrix units |
 | $\Psi_\pm(\chi)$ | Spinor realised in $\mathbb B\tilde\Pi_\pm$ |
 | $\tilde\Psi=\Psi_+(\psi_+)+\Psi_-(\psi_-)$ | The Dirac field as a biquaternion |
 | $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^*\tilde\Phi\,i\vec e_x)$ | Dirac pairing in the chiral basis |
-| $\gamma^{\mu} p_{\mu}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space Dirac operator |
+| $\gamma_{\mu} p_{\mu}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space Dirac operator |
 | $\tilde W=(e_t+\vec e_y)/\sqrt2$ | Change of basis, chiral $\to$ Dirac |
 | $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |

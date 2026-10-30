@@ -4,9 +4,9 @@
 
 The Dirac equation describes particles and antiparticles on the same footing, and its four-component solutions mix the two. The Foldy–Wouthuysen (FW) transformation, introduced by Leslie Foldy and Siegfried Wouthuysen in 1950, is the $*$-unitary transformation that separates them. It block-diagonalises the Dirac Hamiltonian so that the upper two components describe the positive-frequency (particle) degrees of freedom and the lower two the negative-frequency (antiparticle) degrees of freedom, and in doing so it produces the systematic expansion of the relativistic Hamiltonian in powers of $1/c$ whose leading terms are the Schrödinger and Pauli Hamiltonians. It is the tool that every non-relativistic reduction in this corpus uses, and it is the tool the companion articles on the electron and on the hydrogen atom presuppose.
 
-The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is written as a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves carry the two minimal left ideals of $\mathbb{B}$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore has to keep two gradings apart: the chirality grading, in which the mass is off-diagonal and the biquaternion pair is written, and the frame grading by $\gamma^0$, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either. Making the distinction explicit is the biquaternion content of the transformation.
+The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is written as a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves carry the two minimal left ideals of $\mathbb{B}$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore has to keep two gradings apart: the chirality grading, in which the mass is off-diagonal and the biquaternion pair is written, and the frame grading by $\gamma_0$, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either. Making the distinction explicit is the biquaternion content of the transformation.
 
-The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial^2/\partial Q_t^2 + \Delta$, the Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$, and the chiral mass pair is
+The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial^2/\partial Q_t^2 + \Delta$, the Clifford generators satisfy $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma_0)^2 = +I_4$, and the chiral mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -14,7 +14,7 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x^\mu - iqA_\mu/\hbar$ of the parent article, in the $x$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma_\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x^\mu - iqA_\mu/\hbar$ of the parent article, in the $x$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma_0$, and set $\alpha^k = \gamma_0\gamma_k$, $\beta = \gamma_0$. The result is
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
@@ -22,7 +22,7 @@ H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
 
-where $\vec p = -i\hbar\vec\nabla$, $A^0$ is the electrostatic potential, and we have used $\gamma^0\gamma^0 = I_4$. In the Dirac representation the matrices are
+where $\vec p = -i\hbar\vec\nabla$, $A^0$ is the electrostatic potential, and we have used $\gamma_0\gamma_0 = I_4$. In the Dirac representation the matrices are
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
@@ -46,7 +46,7 @@ $$
 
 The odd part $O$ is what couples the upper and lower components, and hence what makes the positive- and negative-frequency sectors talk to each other. The FW transformation is the $*$-unitary transformation that removes $O$ order by order.
 
-It is important to say at once which grading this is. The split into even and odd under $\beta$ is the **Clifford parity** associated with the timelike generator: $\beta = \gamma^0$ is the generator whose square is $+I_4$, and conjugation by it is the reflection that the companion article *The Reflection and the Rotation in Biquaternionic Form* identifies as the frame. It is **not** the chirality grading. The chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, it anticommutes with each $\gamma^\mu$, and in particular it **anticommutes** with $\beta = \gamma^0$; the two gradings are different involutions on the same space, and the mass term is even under the first while it connects the two chiral halves, hence off-diagonal, under the second. A reader who identifies "odd" with "chirality-changing" will misread the transformation the whole way through.
+It is important to say at once which grading this is. The split into even and odd under $\beta$ is the **Clifford parity** associated with the timelike generator: $\beta = \gamma_0$ is the generator whose square is $+I_4$, and conjugation by it is the reflection that the companion article *The Reflection and the Rotation in Biquaternionic Form* identifies as the frame. It is **not** the chirality grading. The chirality operator is $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$, it anticommutes with each $\gamma_\mu$, and in particular it **anticommutes** with $\beta = \gamma_0$; the two gradings are different involutions on the same space, and the mass term is even under the first while it connects the two chiral halves, hence off-diagonal, under the second. A reader who identifies "odd" with "chirality-changing" will misread the transformation the whole way through.
 
 ## The Transformation and Its Generator
 
@@ -108,15 +108,15 @@ Two features of the iteration are worth keeping in view. First, the transformati
 
 ### The Generator in the Biquaternion Basis
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\iota_{\mathrm{Cl}}$ of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, $\iota_{\mathrm{Cl}}(e_t) = I_4$, $\iota_{\mathrm{Cl}}(\vec e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma^0$, which is not in $\iota_{\mathrm{Cl}}(\mathbb{B})$. The kinetic operator is
+The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\iota_{\mathrm{Cl}}$ of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, $\iota_{\mathrm{Cl}}(e_t) = I_4$, $\iota_{\mathrm{Cl}}(\vec e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma_0$, which is not in $\iota_{\mathrm{Cl}}(\mathbb{B})$. The kinetic operator is
 
 $$
 O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha^k\pi_k,
 \qquad
-\beta O = c\,\beta\alpha^k\pi_k = c\,\gamma^k\pi_k ,
+\beta O = c\,\beta\alpha^k\pi_k = c\,\gamma_k\pi_k ,
 $$
 
-where $\gamma^k = \beta\alpha^k$ are the spacelike generators. The kinetic term is thus the spacelike part of the Clifford vector $\gamma^\mu\pi_\mu$ — the mass multiplying $\beta$ is its timelike part — and the FW transformation is the rotation that removes the spacelike (odd) part in favour of the timelike (even) one. In the algebra this is the cleanest statement of what the transformation does: it rotates the Clifford vector so that its timelike component is the whole of the leading Hamiltonian. The generator is proportional to the spacelike component itself, which is why it lies outside the even subalgebra and why the transformation must be carried out in the enlarged algebra.
+where $\gamma_k = \beta\alpha^k$ are the spacelike generators. The kinetic term is thus the spacelike part of the Clifford vector $\gamma_\mu\pi_\mu$ — the mass multiplying $\beta$ is its timelike part — and the FW transformation is the rotation that removes the spacelike (odd) part in favour of the timelike (even) one. In the algebra this is the cleanest statement of what the transformation does: it rotates the Clifford vector so that its timelike component is the whole of the leading Hamiltonian. The generator is proportional to the spacelike component itself, which is why it lies outside the even subalgebra and why the transformation must be carried out in the enlarged algebra.
 
 ## The Free Particle in Closed Form
 
@@ -194,9 +194,9 @@ The transformation can now be located in the two gradings of the algebra, and th
 
 **The frame basis is where the FW transformation works.** In the Dirac (large/small) basis, $\beta = \mathrm{diag}(I_2,-I_2)$ is diagonal and the mass term $m\beta$ is diagonal; the kinetic term $c\boldsymbol\alpha\cdot\vec\pi$ is the off-diagonal odd piece. The two bases are related by the fixed $*$-unitary that exchanges $\beta$ and $\gamma_5$, and the FW transformation is the momentum-dependent completion of that exchange: it rotates the field so that the mass — off-diagonal in chirality — becomes diagonal, while the kinetic term, which was diagonal in chirality, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
-**FW does not separate chirality.** After the transformation the Hamiltonian is block diagonal in the large/small basis, not in the chiral basis. The chirality operator in the transformed basis is momentum-dependent: $\gamma_5^{FW} = U\gamma_5U^\dagger = \gamma_5 \exp(-A\theta)$ has upper block $(\boldsymbol\sigma\cdot\vec u_p)\sin\theta = (\boldsymbol\sigma\cdot\vec u_p)\,pc/E$ — the helicity for a massless field, reduced by the factor $pc/E$ for a massive one — and off-block part $\cos\theta\,I_2 = (mc^2/E)I_2$, which is the chirality-mixing term and is of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency** — the two signs of $\beta$ — and not left from right. In the algebra, the grading it diagonalises is the frame grading by $\gamma^0$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the chirality grading is a different reflection, and no $*$-unitary rotation of the field can diagonalise both simultaneously because $\beta$ and $\gamma_5$ anticommute. The FW basis and the chiral basis are complementary, and the mass is the object that measures their incompatibility.
+**FW does not separate chirality.** After the transformation the Hamiltonian is block diagonal in the large/small basis, not in the chiral basis. The chirality operator in the transformed basis is momentum-dependent: $\gamma_5^{FW} = U\gamma_5U^\dagger = \gamma_5 \exp(-A\theta)$ has upper block $(\boldsymbol\sigma\cdot\vec u_p)\sin\theta = (\boldsymbol\sigma\cdot\vec u_p)\,pc/E$ — the helicity for a massless field, reduced by the factor $pc/E$ for a massive one — and off-block part $\cos\theta\,I_2 = (mc^2/E)I_2$, which is the chirality-mixing term and is of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency** — the two signs of $\beta$ — and not left from right. In the algebra, the grading it diagonalises is the frame grading by $\gamma_0$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the chirality grading is a different reflection, and no $*$-unitary rotation of the field can diagonalise both simultaneously because $\beta$ and $\gamma_5$ anticommute. The FW basis and the chiral basis are complementary, and the mass is the object that measures their incompatibility.
 
-**The generator is outside the algebra's rotors.** The biquaternion rotors are the even, unit-norm elements of $\mathbb{B}$; they act on the module and generate the Lorentz group. The FW generator $S_1 = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi$ contains $\beta = \gamma^0$, which is Clifford-odd and does not belong to the even subalgebra $\iota_{\mathrm{Cl}}(\mathbb{B})$. The FW transformation is therefore not one of the algebra's own rotations: it is a transformation in the enlarged Clifford algebra that adjoins the frame $\gamma^0$. The biquaternion content it carries is not a new rotor but the identification of the odd part $O$ with the frame-odd mixing term and of the diagonal mass with the frame-even large term. This is consistent with the reflection article's finding that the frame is required to state chirality and parity: the FW transformation needs the frame for the same reason.
+**The generator is outside the algebra's rotors.** The biquaternion rotors are the even, unit-norm elements of $\mathbb{B}$; they act on the module and generate the Lorentz group. The FW generator $S_1 = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi$ contains $\beta = \gamma_0$, which is Clifford-odd and does not belong to the even subalgebra $\iota_{\mathrm{Cl}}(\mathbb{B})$. The FW transformation is therefore not one of the algebra's own rotations: it is a transformation in the enlarged Clifford algebra that adjoins the frame $\gamma_0$. The biquaternion content it carries is not a new rotor but the identification of the odd part $O$ with the frame-odd mixing term and of the diagonal mass with the frame-even large term. This is consistent with the reflection article's finding that the frame is required to state chirality and parity: the FW transformation needs the frame for the same reason.
 
 ## The Pauli Limit and the Residual Terms
 
@@ -225,7 +225,7 @@ The transformation was constructed here with the large term being the mass. If a
 
 ## Summary
 
-The Foldy–Wouthuysen transformation is the $*$-unitary $U = \exp(iS)$ that block-diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency sectors. With $H = \beta mc^2 + O + \mathcal{E}$, $O = c\boldsymbol\alpha\cdot\vec\pi$ odd under conjugation by $\beta = \gamma^0$, the leading generator is
+The Foldy–Wouthuysen transformation is the $*$-unitary $U = \exp(iS)$ that block-diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency sectors. With $H = \beta mc^2 + O + \mathcal{E}$, $O = c\boldsymbol\alpha\cdot\vec\pi$ odd under conjugation by $\beta = \gamma_0$, the leading generator is
 
 $$
 S_1 = -\frac{i}{2mc^2}\beta O = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi,
@@ -243,16 +243,16 @@ $$
 
 checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec Q$.
 
-The biquaternion interpretation turns on two gradings that must not be conflated. The frame grading, conjugation by $\gamma^0$, is what the FW transformation diagonalises and in which the mass is diagonal; the chirality grading, $\gamma_5$, is what the biquaternion mass pair is written in and in which the mass is off-diagonal. The two gradings anticommute, so no single $*$-unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator contains $\gamma^0$ and therefore lies outside the even subalgebra $\iota_{\mathrm{Cl}}(\mathbb{B})$: the transformation is not one of the algebra's Lorentz rotors but a transformation in the enlarged Clifford algebra that adjoins the frame.
+The biquaternion interpretation turns on two gradings that must not be conflated. The frame grading, conjugation by $\gamma_0$, is what the FW transformation diagonalises and in which the mass is diagonal; the chirality grading, $\gamma_5$, is what the biquaternion mass pair is written in and in which the mass is off-diagonal. The two gradings anticommute, so no single $*$-unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator contains $\gamma_0$ and therefore lies outside the even subalgebra $\iota_{\mathrm{Cl}}(\mathbb{B})$: the transformation is not one of the algebra's Lorentz rotors but a transformation in the enlarged Clifford algebra that adjoins the frame.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\beta = \gamma^0$ | The frame; the generator with $(\gamma^0)^2 = +I_4$ |
-| $\boldsymbol\alpha$ | $\alpha^k = \gamma^0\gamma^k$, the Dirac velocity matrices |
-| $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ | Chirality operator, $\gamma_5^2 = I_4$ |
+| $\beta = \gamma_0$ | The frame; the generator with $(\gamma_0)^2 = +I_4$ |
+| $\boldsymbol\alpha$ | $\alpha^k = \gamma_0\gamma_k$, the Dirac velocity matrices |
+| $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator, $\gamma_5^2 = I_4$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $O = c\,\boldsymbol\alpha\cdot\vec\pi$ | Odd (frame-anticommuting) part |

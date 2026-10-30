@@ -172,7 +172,7 @@ $$
 The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation
 
 $$
-\boxed{\;\gamma^{\mu}\frac{\partial\psi}{\partial x^{\mu}}+m_e\psi = 0\;}.
+\boxed{\;\gamma_{\mu}\frac{\partial\psi}{\partial x^{\mu}}+m_e\psi = 0\;}.
 $$
 
 Mapping the Dirac equation into $\mathbb{R}^6$ gives generators $\Lambda^{1/2,0}_j$ and $\Lambda^{*\,0,1/2}_j$ whose explicit matrices — built from $\mathbf{1}$ and the companion $2\times2$ block — coincide with the **Pauli matrices** $\sigma_j$ when their normalisation constant takes the value $c_{\frac12,\frac12}=2$. This is the concrete way in which the algebra's first member is the Dirac equation's carrier, and it is the same statement the corpus makes in its Dirac–Hestenes and bispinor articles.

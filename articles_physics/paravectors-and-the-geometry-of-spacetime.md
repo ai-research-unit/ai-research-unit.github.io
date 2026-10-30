@@ -66,8 +66,8 @@ The **invariant interval** between two events is the squared modulus $p\bar p$, 
 $$
 \tilde V_{\mathrm p} = \gamma\left(e_t + \beta\vec u_v\right),
 \qquad
-\tilde V_{\mathrm p}\,\tilde V_{\mathrm p}^{\natural} = \gamma^2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
-= \gamma^2\left(1 - \beta^2\right)e_t = e_t .
+\tilde V_{\mathrm p}\,\tilde V_{\mathrm p}^{\natural} = \gamma_2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
+= \gamma_2\left(1 - \beta^2\right)e_t = e_t .
 $$
 
 The unimodularity is the paravector form of the constant length of the four-velocity. The corpus's four-velocity is $\tilde V = \gamma(ic\,e_t + \vec v)\in\mathbb{M}_-$, and the two are related by

@@ -56,7 +56,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 \qquad
 \langle iR\,e_t+\vec R\rangle_{\natural} = 0,
 \qquad
-\langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma^2},
+\langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma_2},
 $$
 with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\phi$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\phi$.
 
@@ -100,9 +100,9 @@ $$
 $$
 a zero divisor of $\mathbb{B}$ and a point of the light cone; and the four-velocity is timelike, of fixed norm,
 $$
-\langle\tilde{V}\rangle_{\natural} = \gamma^2\left[(ic)^2 + |\vec v|^2\right] = -c^2\gamma^2\left(1-\beta^2\right) = -c^2 ,
+\langle\tilde{V}\rangle_{\natural} = \gamma_2\left[(ic)^2 + |\vec v|^2\right] = -c^2\gamma_2\left(1-\beta^2\right) = -c^2 ,
 $$
-so that the coordinate velocity $\tilde{V}/\gamma$ has $\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2/\gamma^2$.
+so that the coordinate velocity $\tilde{V}/\gamma$ has $\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2/\gamma_2$.
 Thus the whole construction is built from one null and one timelike element of $\mathbb{M}_-$, paired through the single scale $D$.
 
 **Solution (c).** Writing $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ and using $\epsilon\mu c^2 = 1$,
@@ -112,7 +112,7 @@ $$
 \vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\phi .
 $$
 
-The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.
+The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma_2| = 0$.
 
 ## Problem 2: The Field Strength and the Velocity–Acceleration Split
 

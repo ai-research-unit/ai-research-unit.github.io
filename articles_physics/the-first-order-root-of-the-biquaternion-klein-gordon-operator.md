@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(\gamma^0)^2=+1$ and $(\gamma^k)^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
+The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
 
 The equation is
 
@@ -18,9 +18,9 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $i\gamma^\mu\partial_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma^\mu$ mutually anticommute with $(\gamma^0)^2=+1$ and $(\gamma^k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $i\gamma_\mu\partial_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma_\mu$ mutually anticommute with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
-- **The mass term is constrained.** The condition $\{B,\gamma^\mu\}=0$ forces $B=c\gamma_5$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
+- **The mass term is constrained.** The condition $\{B,\gamma_\mu\}=0$ forces $B=c\gamma_5$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
 The Clifford classification is standard. The identification of its generators with cells of the two-sided algebra is the corpus's dictionary, and the mass dichotomy read as the reason for the chiral pair is the synthesis offered here. Nothing in the article predicts a mass or a coupling.
 
@@ -97,7 +97,7 @@ $$
 
 Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its covector is $k_\mu=g_{\mu\nu}k^\nu=(\omega/c,-\vec k)$. On the plane wave the root $i\gamma^\mu\partial_\mu$ has symbol $\gamma^\mu k_\mu$, whose square is $g^{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma^\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its covector is $k_\mu=g_{\mu\nu}k^\nu=(\omega/c,-\vec k)$. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
@@ -106,9 +106,9 @@ In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its 
 Let
 
 $$
-D=i\gamma^\mu\frac{\partial}{\partial x^\mu}+B=i\gamma^0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma^k\frac{\partial}{\partial x^k}+B,
+D=i\gamma_\mu\frac{\partial}{\partial x^\mu}+B=i\gamma_0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma_k\frac{\partial}{\partial x^k}+B,
 \qquad
-\gamma^\mu,B\in M_n(\mathbb{C})\ \text{constant}.
+\gamma_\mu,B\in M_n(\mathbb{C})\ \text{constant}.
 $$
 
 This is the most general first-order operator with constant coefficients and no derivative term beyond the first order. The matrices are constant because the classification below is a classification of the algebraic form; position-dependent coefficients are a separate problem, taken up in §*What the Root Does Not Carry*.
@@ -120,7 +120,7 @@ Because the partial derivatives commute, the quadratic term symmetrizes:
 $$
 D^2
 =-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-+i\{\gamma^\mu,B\}\frac{\partial}{\partial x^\mu}
++i\{\gamma_\mu,B\}\frac{\partial}{\partial x^\mu}
 +B^2 .
 $$
 
@@ -133,9 +133,9 @@ $$
 gives three conditions:
 
 $$
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_n,
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_n,
 \qquad
-\{\gamma^\mu,B\}=0,
+\{\gamma_\mu,B\}=0,
 \qquad
 B^2=-\mu^2I_n .
 $$
@@ -148,7 +148,7 @@ The signs are those of $\Box$ in the $x$ coordinates, where the metric is $g=\ma
 
 ### The Clifford algebra
 
-Four generators with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
+Four generators with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
 
 $$
 n\ge 4,
@@ -156,28 +156,28 @@ $$
 
 and $n=4$ is both minimal and realised. The real dimension of the minimal module is eight, the same as the real dimension of $\mathbb{B}$.
 
-The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $\gamma^\mu\gamma^\nu$ with $\mu<\nu$, the four products $\gamma^\mu\gamma_5$, and $\gamma_5$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the Dirac matrices.
+The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $\gamma_\mu\gamma_\nu$ with $\mu<\nu$, the four products $\gamma_\mu\gamma_5$, and $\gamma_5$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the Dirac matrices.
 
 The minimal realisation is explicit, and it uses both sides of the algebra. With $T_{a,b}=L_aR_b$,
 
 $$
-\gamma^0=iT_{e_t,e_x},
+\gamma_0=iT_{e_t,e_x},
 \qquad
-\gamma^1=iT_{e_x,e_y},
+\gamma_1=iT_{e_x,e_y},
 \qquad
-\gamma^2=iT_{e_y,e_y},
+\gamma_2=iT_{e_y,e_y},
 \qquad
-\gamma^3=iT_{e_z,e_y},
+\gamma_3=iT_{e_z,e_y},
 \qquad
-\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=-iT_{e_t,e_z},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iT_{e_t,e_z},
 $$
 
 and the split of each cell between the two sides is
 
 | $T$ | $L$ | $R$ |
 |---|---|---|
-| $\gamma^0=iT_{e_t,e_x}$ | $L_{e_t}=I$ | $R_{e_x}$ |
-| $\gamma^k=iT_{e_k,e_y}$ | $iL_{e_k}$ | $R_{e_y}$ |
+| $\gamma_0=iT_{e_t,e_x}$ | $L_{e_t}=I$ | $R_{e_x}$ |
+| $\gamma_k=iT_{e_k,e_y}$ | $iL_{e_k}$ | $R_{e_y}$ |
 | $\gamma_5=-iT_{e_t,e_z}$ | $L_{e_t}=I$ | $-iR_{e_z}$ |
 
 The fourth generator has $L=I$: it is a pure right multiplication, which is why the biquaternion algebra alone does not contain it. The three space generators have both factors. The split is what the next two subsections use: the three space generators carry a left factor from $\mathbb{B}$, the fourth carries only a right factor.
@@ -225,9 +225,9 @@ $$
 with $\mathbb{C}^2_{\mathrm{mult}}$ the multiplicity factor and $S$ the biquaternion spinor module. In this frame the four generators read
 
 $$
-\gamma^0=\sigma_1\otimes I_2,
+\gamma_0=\sigma_1\otimes I_2,
 \qquad
-\gamma^k=i\sigma_2\otimes\sigma_k,
+\gamma_k=i\sigma_2\otimes\sigma_k,
 \qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
@@ -237,7 +237,7 @@ The first acts on the multiplicity factor alone and as the identity on $S$; the 
 The cell form exhibits the same fact. The fourth generator is
 
 $$
-\gamma^0=iT_{e_t,e_x}=R_{i\vec e_x},
+\gamma_0=iT_{e_t,e_x}=R_{i\vec e_x},
 $$
 
 a right multiplication, and it commutes with every left multiplication, so it lies in the commutant $\mathbb{B}_R$ of the left copy $\mathbb{B}_L$. A right multiplication is invisible to $\mathbb{B}_L$; this is the precise sense in which the fourth direction is the second side. The algebra generated by $\mathbb{B}_L$ and $\mathbb{B}_R$ is
@@ -246,7 +246,7 @@ $$
 \mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}).
 $$
 
-The three space generators are cells that use both sides, $iT_{e_k,e_y}=iL_{e_k}R_{e_y}$, and the anticommutator with $\gamma^0$ comes from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.
+The three space generators are cells that use both sides, $iT_{e_k,e_y}=iL_{e_k}R_{e_y}$, and the anticommutator with $\gamma_0$ comes from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.
 
 The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimension eight, the same as $\mathbb{B}$. The root does not enlarge the field space relative to a biquaternion field; it changes the module structure. Relative to a single complex scalar, of course, it is a fourfold complex enlargement.
 
@@ -257,10 +257,10 @@ The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimen
 The second root condition is
 
 $$
-\{B,\gamma^\mu\}=0\quad\text{for all }\mu .
+\{B,\gamma_\mu\}=0\quad\text{for all }\mu .
 $$
 
-The anticommutant of the four generators is one-dimensional. If $B$ anticommutes with every $\gamma^\mu$, then $B\gamma_5$ commutes with every $\gamma^\mu$. The four generate $M_4(\mathbb{C})$, whose commutant is $\mathbb{C}I$, so $B\gamma_5=cI$ and $B=c\gamma_5$.
+The anticommutant of the four generators is one-dimensional. If $B$ anticommutes with every $\gamma_\mu$, then $B\gamma_5$ commutes with every $\gamma_\mu$. The four generate $M_4(\mathbb{C})$, whose commutant is $\mathbb{C}I$, so $B\gamma_5=cI$ and $B=c\gamma_5$.
 
 The third condition then gives
 
@@ -275,7 +275,7 @@ So the single-square roots are
 $$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5,
 \qquad
-\mathsf D=i\gamma^\mu\frac{\partial}{\partial x^\mu},
+\mathsf D=i\gamma_\mu\frac{\partial}{\partial x^\mu},
 \qquad
 \mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I .
 $$
@@ -288,7 +288,7 @@ The pseudoscalar mass is not an accident of the construction. It is the only mas
 
 The invariant statement is the anticommutator, not the matrix shape. The scalar mass commutes with $\mathsf D$; the pseudoscalar mass anticommutes with it. No change of frame alters which of the two holds, because the two conditions are statements about the algebra and not about a basis.
 
-The corpus knows this channel. It is the $\chi$-type coupling of *The Dirac Equation in Biquaternionic Form*, the pseudoscalar potential that multiplies the central imaginary $i$ and is the $\gamma^5$-type in the matrix dictionary. The single first-order root is therefore not new machinery; it is the corpus's pseudoscalar channel read as a mass.
+The corpus knows this channel. It is the $\chi$-type coupling of *The Dirac Equation in Biquaternionic Form*, the pseudoscalar potential that multiplies the central imaginary $i$ and is the $\gamma_5$-type in the matrix dictionary. The single first-order root is therefore not new machinery; it is the corpus's pseudoscalar channel read as a mass.
 
 The sign is fixed by the conventions:
 
@@ -296,7 +296,7 @@ $$
 \gamma_5=\rho(\chi),
 $$
 
-so the pseudoscalar mass reads $i\mu\gamma_5\leftrightarrow i\mu\chi$ in the biquaternion dictionary. The chirality operator of the corpus is $\chi$; the matrix $\gamma_5$ is its representative in the Lorentz frame, where $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$.
+so the pseudoscalar mass reads $i\mu\gamma_5\leftrightarrow i\mu\chi$ in the biquaternion dictionary. The chirality operator of the corpus is $\chi$; the matrix $\gamma_5$ is its representative in the Lorentz frame, where $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
 
 The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
 
@@ -305,7 +305,7 @@ The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation,
 The physical mass is a scalar: it multiplies the identity and commutes with every generator. It fails the second condition,
 
 $$
-\{\mu I,\gamma^\mu\}=2\mu\gamma^\mu\neq0,
+\{\mu I,\gamma_\mu\}=2\mu\gamma_\mu\neq0,
 $$
 
 so no single operator of the form $\mathsf D+B$ with a scalar mass squares to the Klein–Gordon operator. Each factor alone carries a first-order remainder:
@@ -401,14 +401,14 @@ The identities were recomputed before they were written. The cell frame was buil
 
 | Check | Result |
 |---|---|
-| $\{\gamma^\mu,\gamma^\nu\}-2g^{\mu\nu}I$ | $0$ (exact) |
-| $\gamma_5^2-I$ and $\{\gamma_5,\gamma^\mu\}$ | $0$ (exact) |
-| $\gamma_5-i\gamma^0\gamma^1\gamma^2\gamma^3$ | $0$ (exact) |
+| $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I$ | $0$ (exact) |
+| $\gamma_5^2-I$ and $\{\gamma_5,\gamma_\mu\}$ | $0$ (exact) |
+| $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ | $0$ (exact) |
 | Tensor form satisfies the same Clifford relations | $0$ (exact) |
 | Anticommutant of all four generators is one-dimensional | rank $15$, nullity $1$ |
 | $\mathsf D_{\mathrm{ps},+}^2-(\Box-\mu^2)I$ on $100$ random $K$ | $2.4\times10^{-15}$ |
 | $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}-(\Box-\mu^2)I$ on $100$ random $K$ | $3.6\times10^{-15}$ |
-| $\left(\gamma^\mu k_\mu\right)^2-g^{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
+| $\left(\gamma_\mu k_\mu\right)^2-g_{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
 | $\det\mathsf D_{\mathrm{ps},\pm}-(\Box-\mu^2)^2$ on $100$ random $K$ | $2.3\times10^{-13}$ |
 | Frame squares $(+1,-1,-1,-1)$ and anticommutators | $0$ (exact) |
 
@@ -418,7 +418,7 @@ The numerical checks are checks of polynomial identities at random points. The p
 
 The first-order root of the biquaternion Klein–Gordon operator exists, and its size is fixed by the norm form. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
 
-The mass term is constrained by $\{B,\gamma^\mu\}=0$. The only single-operator solution is $B=\pm i\mu\gamma_5$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
+The mass term is constrained by $\{B,\gamma_\mu\}=0$. The only single-operator solution is $B=\pm i\mu\gamma_5$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
 
 The scalar Klein–Gordon field, taken as a central scalar, has no first-order root. The results are a classification of form: no mass, no coupling, and no dynamics are predicted. The open questions are the gauged, curved, position-dependent, and real-structure extensions.
 
@@ -440,10 +440,10 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\tilde K=\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Corpus four-wavevector |
 | $\tilde K_{\mathrm s}=i\tilde K$ | Symbol of the gradient; $K_\mu$ its components |
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
-| $\gamma^\mu$ | Generators of the root, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I$ |
-| $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar generator, $-iT_{e_t,e_z}=\rho(\chi)$ |
-| $\mathsf D=i\gamma^\mu\partial/\partial x^\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
-| $\gamma^\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k^\mu=(\omega/c,\vec k)$ |
+| $\gamma_\mu$ | Generators of the root, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I$ |
+| $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ | Pseudoscalar generator, $-iT_{e_t,e_z}=\rho(\chi)$ |
+| $\mathsf D=i\gamma_\mu\partial/\partial x^\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
+| $\gamma_\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k^\mu=(\omega/c,\vec k)$ |
 | $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5$ | Single-square roots |
 | $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
 | $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |

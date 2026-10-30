@@ -23,12 +23,12 @@ The article states the index theorem as the standard result it is, derives the s
 On a four-manifold with a spin structure and a gauge bundle in a representation $R$ of the structure group, the twisted Dirac operator is
 
 $$
-\mathcal{D}_R \;=\; \gamma^\mu D_\mu ,
+\mathcal{D}_R \;=\; \gamma_\mu D_\mu ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
 
-with $\gamma^\mu$ the Clifford generators, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality grading $\gamma_5$ into the positive and negative chirality zero-mode spaces,
+with $\gamma_\mu$ the Clifford generators, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality grading $\gamma_5$ into the positive and negative chirality zero-mode spaces,
 
 $$
 \ker\mathcal{D}_R \;=\; \ker^+\!\mathcal{D}_R \oplus \ker^-\!\mathcal{D}_R ,
@@ -192,7 +192,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\mathcal{D}_R=\gamma^\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
+| $\mathcal{D}_R=\gamma_\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
 | $\gamma_5$ | Chirality grading; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
 | $\mathrm{ind}\,\mathcal{D}_R=n_+-n_-$ | Index of the Dirac operator |

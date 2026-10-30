@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field (Grassmann-functional) integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-The conventions are the series conventions. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; its component form is the standard Dirac equation on the spinor module, with Clifford generators $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ and $g = \mathrm{diag}(+1,-1,-1,-1)$. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$, and the propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{R}\in\mathbb{M}_-$.
+The conventions are the series conventions. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; its component form is the standard Dirac equation on the spinor module, with Clifford generators $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ and $g = \mathrm{diag}(+1,-1,-1,-1)$. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$, and the propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{R}\in\mathbb{M}_-$.
 
 ## The Dirac Propagator and the Square
 
@@ -16,7 +16,7 @@ The object the path integral must compute is the Feynman propagator for the spin
 
 $$
 S_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
-\frac{i\left(\gamma^{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
+\frac{i\left(\gamma_{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
 \exp(-ip\cdot(x-x_2)),
 $$
 
@@ -250,7 +250,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (\mathbb{D} + mc/\hbar)\Delta_F$, the identity following from $\mathbb{D}^2=\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\psi^\mu$ is added at each point with kinetic term $\frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 g^{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part, $\iota_{\mathrm{Cl}}(\mathbb{B}) = \mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in $\iota_{\mathrm{Cl}}(\mathbb{B})$, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\gamma^{\nu} p_{\nu} - \mu)(\gamma^{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
+In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part, $\iota_{\mathrm{Cl}}(\mathbb{B}) = \mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in $\iota_{\mathrm{Cl}}(\mathbb{B})$, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\gamma_{\nu} p_{\nu} - \mu)(\gamma_{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
 
 ## Summary of Notation
 
@@ -263,7 +263,7 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 | $S_F(x-x_2)$ | Dirac (Feynman) propagator |
 | $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator |
 | $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$ | Propagator equation |
-| $(\gamma^{\mu} p_{\mu} - mc/\hbar)(\gamma^{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
+| $(\gamma_{\mu} p_{\mu} - mc/\hbar)(\gamma_{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dx^{\mu}/d\tau$ | Worldline and its tangent |
 | $S_0[x] = \int_0^T d\tau\left(\tfrac14dx^{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right)$ | Scalar worldline action |

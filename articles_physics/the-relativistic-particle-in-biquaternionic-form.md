@@ -77,9 +77,9 @@ It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_t$ is the imaginary scal
 
 $$
 \langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\tilde{V}^{\natural}
-= \gamma^2\left[(ic)^2 + \vec v^2\right]
-= \gamma^2\left(-c^2 + \vec v^2\right)
-= -c^2\gamma^2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
+= \gamma_2\left[(ic)^2 + \vec v^2\right]
+= \gamma_2\left(-c^2 + \vec v^2\right)
+= -c^2\gamma_2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
 $$
 
 The four-velocity is therefore a **unit timelike vector**: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$ inside $\mathbb{M}_-$.

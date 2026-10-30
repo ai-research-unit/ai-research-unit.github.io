@@ -53,10 +53,10 @@ $$
 \langle V, W\rangle_{L^2} = \int_a^b \langle V(t), W(t)\rangle_{\gamma(t)}\,dt ,
 $$
 
-the metric at the running point being the fibre metric, and the space of the fields is completed to a Hilbert space; the **formal adjoint** $L_\gamma^{*}$ of the geodesic operator is the operator with
+the metric at the running point being the fibre metric, and the space of the fields is completed to a Hilbert space; the **formal adjoint** $L_\gamma_{}^{*}$ of the geodesic operator is the operator with
 
 $$
-\langle L_\gamma V, W\rangle_{L^2} = \langle V, L_\gamma^{*}W\rangle_{L^2}
+\langle L_\gamma V, W\rangle_{L^2} = \langle V, L_\gamma_{}^{*}W\rangle_{L^2}
 $$
 
 for all smooth fields $V$ and $W$ vanishing at the endpoints $a$ and $b$.
@@ -76,7 +76,7 @@ $$
 because the curvature tensor is symmetric in the pairs $(V, d\gamma/dt)$ and $(W, d\gamma/dt)$; and the geodesic operator is **self-adjoint**,
 
 $$
-\boxed{\;L_\gamma^{*} = L_\gamma\;} ,
+\boxed{\;L_\gamma_{}^{*} = L_\gamma\;} ,
 $$
 
 the square of the skew-adjoint derivative being self-adjoint and the sum of two self-adjoint operators being self-adjoint.
@@ -95,7 +95,7 @@ for the fields vanishing at the endpoints, which is the skew-adjointness. The se
 
 ### The Adjoint on the Operator Layer
 
-**Proposition.** The geodesic operator acts on the operator layer of the fields along the geodesic, and the adjoint operation is the formal adjoint for the $L^2$ pairing; the operator commutes with the reversal of the geodesic, $L_{\gamma^{-1}} = L_\gamma$ read on the fields pulled back by the reversal, so the self-adjointness is compatible with the geodesic involution of *Hermitian Manifolds and the Geodesic Involution*. The self-adjointness of $L_\gamma$ is the operator-layer form of the fact that the curvature operator is symmetric.
+**Proposition.** The geodesic operator acts on the operator layer of the fields along the geodesic, and the adjoint operation is the formal adjoint for the $L^2$ pairing; the operator commutes with the reversal of the geodesic, $L_{\gamma_{-1}} = L_\gamma$ read on the fields pulled back by the reversal, so the self-adjointness is compatible with the geodesic involution of *Hermitian Manifolds and the Geodesic Involution*. The self-adjointness of $L_\gamma$ is the operator-layer form of the fact that the curvature operator is symmetric.
 
 **Proof.** The formal adjoint is the operator-layer operation of *Real Structures on the Operator Layer* and of the involutions of the operator layer, and the computation above identifies it with the operator; the reversal of the geodesic carries the covariant derivative to its negative and the curvature term to itself, so the operator is invariant up to the pullback. The last statement is the identification of the curvature term with the symmetric curvature operator.
 
@@ -145,7 +145,7 @@ the boundary term being zero because the fields vanish at the endpoints; the cur
 
 The **geodesic operator** along a geodesic $\gamma$ is the second-order operator $L_\gamma = \frac{D^2}{dt^2} + \mathcal{R}_{d\gamma/dt}$, the linearisation of the geodesic flow, with $\mathcal R_{d\gamma/dt}(V) = R(V,d\gamma/dt)d\gamma/dt$ the curvature operator in the direction of the geodesic; its kernel is the space of the **Jacobi fields**, of dimension $2n$, which are the derivatives of the variations of the geodesic by geodesics and the images of the differential of the exponential map. The **Jacobi equation** $L_\gamma V = 0$ is the kernel equation, and the fields $td\gamma/dt$ and the parallel fields are its tangent solutions.
 
-For the $L^2$ pairing with the fields vanishing at the ends of the geodesic, the covariant derivative is **skew-adjoint**, $(\frac{D}{dt})^*=-\frac{D}{dt}$, and the curvature term is **self-adjoint** because the curvature tensor is symmetric; hence the geodesic operator is **self-adjoint**, $L_\gamma^{*}=L_\gamma$, with a real spectrum and orthogonal eigenfields, and it is a symmetric Sturm–Liouville operator whose potential is the curvature. Its quadratic form is the **index form** $I(V,W) = \int(\langle V',W'\rangle-\langle R(V,d\gamma/dt)d\gamma/dt,W\rangle)$, symmetric and with the Jacobi fields as its kernel; the index of the index form counts the conjugate points with multiplicity and the nullity is the dimension of the Jacobi fields vanishing at the ends, which is the Morse index theorem. The geodesic operator is invariant under the reversal of the geodesic, and its self-adjointness is the operator-layer form of the symmetry of the curvature operator. The flat space, the sphere and the hyperbolic space are the constant-potential examples, with index zero, with conjugate points at the multiples of $\pi$, and with no conjugate point respectively.
+For the $L^2$ pairing with the fields vanishing at the ends of the geodesic, the covariant derivative is **skew-adjoint**, $(\frac{D}{dt})^*=-\frac{D}{dt}$, and the curvature term is **self-adjoint** because the curvature tensor is symmetric; hence the geodesic operator is **self-adjoint**, $L_\gamma_{}^{*}=L_\gamma$, with a real spectrum and orthogonal eigenfields, and it is a symmetric Sturm–Liouville operator whose potential is the curvature. Its quadratic form is the **index form** $I(V,W) = \int(\langle V',W'\rangle-\langle R(V,d\gamma/dt)d\gamma/dt,W\rangle)$, symmetric and with the Jacobi fields as its kernel; the index of the index form counts the conjugate points with multiplicity and the nullity is the dimension of the Jacobi fields vanishing at the ends, which is the Morse index theorem. The geodesic operator is invariant under the reversal of the geodesic, and its self-adjointness is the operator-layer form of the symmetry of the curvature operator. The flat space, the sphere and the hyperbolic space are the constant-potential examples, with index zero, with conjugate points at the multiples of $\pi$, and with no conjugate point respectively.
 
 ## Summary of Notation
 
@@ -157,7 +157,7 @@ For the $L^2$ pairing with the fields vanishing at the ends of the geodesic, the
 | $\langle V,W\rangle_{L^2} = \int_a^b\langle V,W\rangle dt$ | $L^2$ pairing of the fields along the geodesic |
 | $(\frac{D}{dt})^*=-\frac{D}{dt}$ | The covariant derivative is skew-adjoint |
 | $\mathcal R_{d\gamma/dt}^{*}=\mathcal R_{d\gamma/dt}$ | The curvature term is self-adjoint (symmetric curvature) |
-| $L_\gamma^{*}=L_\gamma$ | The geodesic operator is self-adjoint |
+| $L_\gamma_{}^{*}=L_\gamma$ | The geodesic operator is self-adjoint |
 | $I(V,W)$ | Index form; the quadratic form of the geodesic operator |
 | Index, nullity | Number of conjugate points; dimension of the Jacobi fields vanishing at the ends |
 

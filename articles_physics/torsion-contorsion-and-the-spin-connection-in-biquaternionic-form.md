@@ -113,19 +113,19 @@ called the **Weitzenböck connection**, was computed for that tetrad together wi
 In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is sourced *algebraically* by the spin density of matter. For a Dirac field the spin density is the completely antisymmetric bilinear
 
 $$
-\Sigma^{\lambda\mu\nu} = \bar\psi\,\gamma^{[\lambda}\gamma^{\mu}\gamma^{\nu]}\,\psi ,
+\Sigma^{\lambda\mu\nu} = \bar\psi\,\gamma_{[\lambda}\gamma_{\mu}\gamma_{\nu]}\,\psi ,
 $$
 
 and the axial current is
 
 $$
-A^\mu = \bar\psi\,\gamma_5\gamma^\mu\,\psi .
+A^\mu = \bar\psi\,\gamma_5\gamma_\mu\,\psi .
 $$
 
 **The antisymmetric spin density is the dual of the axial current.** On the antisymmetrised triple product,
 
 $$
-\bar\psi\,\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\,\psi = i\,\epsilon_{\lambda\mu\nu\rho}\,\bar\psi\,\gamma_5\gamma^\rho\,\psi ,
+\bar\psi\,\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\,\psi = i\,\epsilon_{\lambda\mu\nu\rho}\,\bar\psi\,\gamma_5\gamma_\rho\,\psi ,
 $$
 
 which is exact, at every index triple and for every spinor, with the constant verified to be $+i$. A direct consequence is that the spin density is *not* a general third-rank tensor: its antisymmetric part is fixed entirely by the axial four-vector, so the 24 components of a general third-rank tensor collapse to four. This is the same counting as in the metric-compatibility condition above, and it is not a coincidence: the physical torsion and the physical spin density live in the same four-dimensional subspace.
@@ -182,7 +182,7 @@ A connection with torsion splits into a metric part, the Christoffel symbols, an
 
 The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda \partial_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
-The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma^{\lambda\mu\nu} = \bar\psi\gamma^{[\lambda}\gamma^\mu\gamma^{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma^\rho\psi$, and its square is six times the axial current squared, $\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6A_\rho A^\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
+The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma^{\lambda\mu\nu} = \bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma_\rho\psi$, and its square is six times the axial current squared, $\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6A_\rho A^\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
 Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.
 
@@ -200,8 +200,8 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\omega^{ab}{}_\mu(e)$ | its Levi-Civita part |
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
 | $\tilde E_\mu$ | the $\mathbb{M}_-$-valued frame of Route Two |
-| $\Sigma^{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi\gamma^{[\lambda}\gamma^\mu\gamma^{\nu]}\psi$ |
-| $A^\mu$ | axial current, $\bar\psi\gamma_5\gamma^\mu\psi$ |
+| $\Sigma^{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$ |
+| $A^\mu$ | axial current, $\bar\psi\gamma_5\gamma_\mu\psi$ |
 | $\kappa = 8\pi G$ | Einstein gravitational constant |
 
 ## Further Reading

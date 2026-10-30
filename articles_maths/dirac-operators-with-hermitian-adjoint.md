@@ -61,7 +61,7 @@ and the two summands are orthogonal and $D$-invariant.
 
 **Proof.** For a self-adjoint operator on a Hermitian space, $\overline{\operatorname{im}D} = (\ker D)^{\perp}$, because $s \perp \operatorname{im}D$ iff $(s, Dt) = 0$ for all $t$ iff $(Ds,t) = 0$ for all $t$ iff $Ds = 0$; in finite dimensions the orthogonal complement of the kernel is exactly the image, and both are invariant under $D$ because $D$ commutes with itself and preserves its kernel.
 
-**Corollary (the index is an obstruction of the kernel alone).** If the module carries a chirality grading $\gamma$ with $\gamma^{2} = 1$, $\gamma^{*} = \gamma$, and the operator is odd, $\gamma D = -D\gamma$, then $D$ interchanges the two chiral halves and the **index** $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.
+**Corollary (the index is an obstruction of the kernel alone).** If the module carries a chirality grading $\gamma$ with $\gamma_{2} = 1$, $\gamma_{}^{*} = \gamma$, and the operator is odd, $\gamma D = -D\gamma$, then $D$ interchanges the two chiral halves and the **index** $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.
 
 ## The Finite-Dimensional Model
 

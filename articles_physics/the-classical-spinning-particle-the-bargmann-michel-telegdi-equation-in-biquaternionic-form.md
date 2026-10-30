@@ -325,7 +325,7 @@ which is the Larmor equation with angular velocity $\vec\omega_L=-(gq/2m)\vec B$
 The relativistic corrections organize as follows. The first term, $(g/2)F^{\mu\nu}S_\nu$, transports the spin along the worldline; on its own it does not preserve the orthogonality $S_\mu v^\mu=0$, and the second term, $-(g/2-1)(1/c^{2})v^\mu B$, is precisely the correction that restores it. Equivalently, the second term is what makes the instantaneous rest-frame reduction a pure gyromagnetic torque with no kinematic contribution. Since the orthogonality of the spin to the four-velocity is the covariant expression of the rotation of the rest frame, the second term is the term that carries the kinematic **Thomas precession** in the laboratory frame, and its coefficient $g/2-1$ is the anomalous part that remains when $g\neq2$. For $g=2$ the second term vanishes and the spin follows the velocity, so the Thomas rotation is not visible as a precession of the spin relative to the frame it defines; for $g\neq2$ the two terms together give the observed precession, whose non-relativistic limit in a central electric field is the spin–orbit term with the Thomas half. The kinematic rate itself is the free-field result
 
 $$
-\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v,
+\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma_{2}}{\gamma+1}\right)\vec a\times\vec v,
 \qquad
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v
 \quad (v\ll c),
@@ -419,7 +419,7 @@ $$
 The transcription was verified by recomputation on random field and velocity configurations: the biquaternion and component right-hand sides agree to machine precision; the orthogonality $S_\mu v^\mu=0$ is preserved to machine precision; and the rest-frame reduction gives $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ together with the time component required by orthogonality. In the rest frame the equation is the pure gyromagnetic torque, so $g$ is the only dynamical input. At $g=2$ the second term vanishes, the equation becomes $dS^\mu/d\tau=(ϙ/m)F^{\mu\nu}S_\nu$, identical to the Lorentz-force equation for the four-velocity, and the spin follows the velocity with no anomalous precession. The non-relativistic limit is the Larmor precession of the magnetic moment; the second term is the covariant expression of the Thomas precession, whose free-field rate
 
 $$
-\vec\omega_T=\frac{1}{c^{2}}\frac{\gamma^{2}}{\gamma+1}\,\vec a\times\vec v
+\vec\omega_T=\frac{1}{c^{2}}\frac{\gamma_{2}}{\gamma+1}\,\vec a\times\vec v
 $$
 
 is the subject of the companion article of this subcategory. The equation's two-term form, the field-action projection, and the pairing form of the orthogonality are the structural content that the biquaternion algebra supplies; the equation itself is the standard result of Bargmann, Michel and Telegdi.
@@ -449,7 +449,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $F^{\mu\nu}V_\nu$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_1^0Q_2^0+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
 | $B=S_\lambda F^{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
-| $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
+| $\vec\omega_T=\frac{\gamma_2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 
 ## Further Reading

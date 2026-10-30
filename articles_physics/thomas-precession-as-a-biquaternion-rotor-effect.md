@@ -5,7 +5,7 @@
 A particle that moves on a curved worldline carries an instantaneous rest frame whose orientation changes from one event to the next even when no torque acts on it. The rotation of that frame relative to the laboratory is the **Thomas precession**, and its angular velocity is fixed by the acceleration and the velocity alone,
 
 $$
-\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v,
+\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma_{2}}{\gamma+1}\right)\vec a\times\vec v,
 \qquad
 \gamma=\frac{1}{\sqrt{1-\vec v^{2}/c^{2}}} ,
 $$
@@ -18,7 +18,7 @@ The first step is that the transformation that carries the laboratory to the ins
 
 The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ of two boost rotors, each a Lorentz rotor, is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}=\tilde U_{\mathrm b}\tilde{u}$ into a pure boost $\tilde U_{\mathrm b}$ and a rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is determined by the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
 
-The third step is to **take the continuous limit**. The rest frames at two laboratory times $t'$ and $t'+dt'$ are related by the interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dt'$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma^{2}/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
+The third step is to **take the continuous limit**. The rest frames at two laboratory times $t'$ and $t'+dt'$ are related by the interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dt'$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma_{2}/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
 
 Three boundaries are respected. The **Wigner rotation as an information-theoretic object** belongs to the sibling quantum series, `Biquaternion Relativistic Quantum Theory`, subcategory on informational aspects; the present article is the kinematic statement. The **cover of the Lorentz group** and its topology belong to `Biquaternion Relativistic Non Quantum Theory`, subcategory `generalities`; here the cover is used only through the statement that the boost rotors are unit-norm biquaternions and that $SL(2,\mathbb{C})$ is a double cover of $SO^{+}(1,3)$. The **Larmor precession** of a magnetic moment in a magnetic field is a non-relativistic effect and belongs to `Biquaternion Non Relativistic Non Quantum Theory`, subcategory on effects with intrinsic magnetism; it appears here only as the non-relativistic limit against which the Thomas term is read.
 
@@ -133,7 +133,7 @@ $$
 \vec a_\perp=\vec a-\frac{\vec a\cdot\vec v}{v^{2}}\vec v,
 $$
 
-the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\psi=\gamma^{2}(\vec a\cdot\vec u_v)dt'/c$, and to leading order
+the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\psi=\gamma_{2}(\vec a\cdot\vec u_v)dt'/c$, and to leading order
 
 $$
 \sin\varphi=\delta+O(d{t'}^{3}),
@@ -155,23 +155,23 @@ $$
 \omega_T=\frac{d\theta_W}{dt'}=(\gamma-1)\frac{|\vec a_\perp|}{v}
 =\frac{\gamma-1}{v^{2}}\,|\vec a\times\vec v|,
 \qquad
-\frac{\gamma-1}{v^{2}}=\frac{\gamma^{2}}{c^{2}(\gamma+1)},
+\frac{\gamma-1}{v^{2}}=\frac{\gamma_{2}}{c^{2}(\gamma+1)},
 $$
 
 and restoring the vector character with the axis $\vec u_{\vec a\times\vec v}$ gives the boxed result
 
 $$
-\boxed{\;\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v\;}.
+\boxed{\;\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma_{2}}{\gamma+1}\right)\vec a\times\vec v\;}.
 $$
 
-The **Thomas half** is the non-relativistic value of the coefficient: as $v\to0$ one has $\gamma\to1$ and $\gamma^{2}/(\gamma+1)\to\tfrac12$, so
+The **Thomas half** is the non-relativistic value of the coefficient: as $v\to0$ one has $\gamma\to1$ and $\gamma_{2}/(\gamma+1)\to\tfrac12$, so
 
 $$
 \vec\omega_T\;\approx\;\frac{1}{2c^{2}}\,\vec a\times\vec v
 \qquad (v\ll c).
 $$
 
-The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^{2}/(\gamma+1)$, and it arises in the expansion through the cancellation of the $d\psi$ terms in the denominator, which leaves the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.
+The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma_{2}/(\gamma+1)$, and it arises in the expansion through the cancellation of the $d\psi$ terms in the denominator, which leaves the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
@@ -233,11 +233,11 @@ and the rate becomes
 
 $$
 \boxed{\ \vec\omega_T
-=\frac{\gamma^{2}}{\gamma+1}\left(-\Omega\frac{v^{2}}{c^{2}}\right)\vec e_z
+=\frac{\gamma_{2}}{\gamma+1}\left(-\Omega\frac{v^{2}}{c^{2}}\right)\vec e_z
 =-(\gamma-1)\,\Omega\,\vec e_z\ } ,
 $$
 
-using $\gamma^{2}v^{2}/c^{2}=\gamma^{2}-1=(\gamma-1)(\gamma+1)$. The precession is therefore **retrograde**: it is opposite in sense to the orbital motion. Over one orbit the laboratory time is $T=2\pi/\Omega$, and the frame turns through
+using $\gamma_{2}v^{2}/c^{2}=\gamma_{2}-1=(\gamma-1)(\gamma+1)$. The precession is therefore **retrograde**: it is opposite in sense to the orbital motion. Over one orbit the laboratory time is $T=2\pi/\Omega$, and the frame turns through
 
 $$
 \Delta\theta_T=-(\gamma-1)\,\Omega\,T=-2\pi(\gamma-1),
@@ -273,7 +273,7 @@ It is useful to separate the algebraic content of the derivation from the standa
 
 **Standard relativistic kinematics transcribed.**
 
-- The Thomas precession rate $\vec\omega_T=c^{-2}\gamma^{2}(\gamma+1)^{-1}\vec a\times\vec v$, its non-relativistic limit $\tfrac{1}{2c^{2}}\vec a\times\vec v$, and the retrograde circular result $-2\pi(\gamma-1)$ per orbit are the standard results of Thomas and of the subsequent literature.
+- The Thomas precession rate $\vec\omega_T=c^{-2}\gamma_{2}(\gamma+1)^{-1}\vec a\times\vec v$, its non-relativistic limit $\tfrac{1}{2c^{2}}\vec a\times\vec v$, and the retrograde circular result $-2\pi(\gamma-1)$ per orbit are the standard results of Thomas and of the subsequent literature.
 - The connection to the spin–orbit factor $\tfrac12$ and to the anomalous magnetic moment is standard atomic and particle physics.
 - The polar decomposition of $SL(2,\mathbb{C})$, the contraction onto $SU(2)$, and the fibration of the Lorentz group over hyperbolic three-space are standard Lie-group theory, recorded in the companion article on the two-sheeted cover.
 
@@ -323,7 +323,7 @@ $$
 whose rotation factor is the Thomas–Wigner rotation of the interval. Its continuous limit is the Thomas precession
 
 $$
-\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma^{2}}{\gamma+1}\right)\vec a\times\vec v,
+\vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma_{2}}{\gamma+1}\right)\vec a\times\vec v,
 \qquad
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v\quad(v\ll c),
 $$
@@ -354,7 +354,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\varphi$, $\theta_W$, $\omega$ | Angle between boost directions; Wigner angle |
 | $\vec a=d\vec v/dt'$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ | Interval rotor between neighbouring rest frames |
-| $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
+| $\vec\omega_T=\frac{\gamma_2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\vec\Omega$ | Orbital angular velocity (circular motion) |
 | $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ | Thomas rotor (half-angle) |
 | $\vec r=r_\mu\vec e_\mu$ | Material spatial vector |

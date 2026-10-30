@@ -261,7 +261,7 @@ $$
 \vec B_2 = \gamma\left(\vec B - \frac{1}{c^2}\,\vec v\times\vec E\right) - \frac{\gamma-1}{\vec v^2}\left(\vec v\cdot\vec B\right)\vec v.
 $$
 
-The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$, the cross terms cancel and the factors combine to $1/\gamma^2$ in precisely the way required, giving
+The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$, the cross terms cancel and the factors combine to $1/\gamma_2$ in precisely the way required, giving
 
 $$
 \vec E_2^2 - c^2\vec B_2^2 = \vec E^2 - c^2\vec B^2,

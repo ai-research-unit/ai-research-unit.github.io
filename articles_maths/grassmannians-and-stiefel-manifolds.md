@@ -284,7 +284,7 @@ The Grassmannian embeds in the projective space of the $k$-th exterior power by 
 | $e_\lambda$, $X_\lambda$, $|\lambda| = \sum(\lambda_i - i)$ | Schubert cell, Schubert variety, dimension of a cell |
 | $\binom{n}{k}_t$, $\chi = \binom{n}{k}_{t=-1}$ | Gaussian binomial; cell-count generating function; Euler characteristic |
 | $BO(k) = \mathrm{Gr}_k(\mathbb{R}^\infty)$ | Classifying space of rank-$k$ real bundles |
-| $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ | Gauss map; $\nu^*\gamma = NM$, $\nu^*\gamma^\perp = TM$ |
+| $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ | Gauss map; $\nu^*\gamma = NM$, $\nu^*\gamma_\perp = TM$ |
 | $\mathrm{Gr}_k(\mathbb{K}^n)$ | Complex ($\mathbb{K}=\mathbb{C}$) and quaternionic ($\mathbb{K}=\mathbb{H}$) Grassmannians |
 
 

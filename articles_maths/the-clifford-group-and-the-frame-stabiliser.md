@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A gamma frame is a choice. The Clifford relations fix the algebra, not the five matrices: any conjugate $U\gamma^\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each gamma; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the gammas up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
+A gamma frame is a choice. The Clifford relations fix the algebra, not the five matrices: any conjugate $U\gamma_\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each gamma; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the gammas up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
 
 The distinction is the exact content of the phrase "the frame is not canonical". The Clifford relations are invariant under the Clifford group; the five-element subset is invariant only under the scalars. The spin group is the even part of Pin and the double cover of $SO(4,\mathbb{C})$; in the biquaternion picture its two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group of the two-sided matrices is a discrete subgroup of the Clifford group, of order $32$, and its image in the orthogonal group is the group of sign changes of the frame.
 
@@ -10,14 +10,14 @@ This article fixes the stabilisers, proves the exact sequence, computes the Lie 
 
 ## The Action on Frames
 
-**The action.** Let $\gamma^0,\gamma^1,\gamma^2,\gamma^3$ be a frame in $M_4(\mathbb{C})$, satisfying
+**The action.** Let $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ be a frame in $M_4(\mathbb{C})$, satisfying
 $$
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I,\qquad
 g=\operatorname{diag}(1,-1,-1,-1).
 $$
 For $U\in GL_4(\mathbb{C})$, put
 $$
-U\cdot\gamma^\mu=U\gamma^\mu U^{-1}.
+U\cdot\gamma_\mu=U\gamma_\mu U^{-1}.
 $$
 The conjugated matrices satisfy the same relations, because conjugation preserves anticommutators and the identity. The action is a left action of $GL_4(\mathbb{C})$ on the set of frames.
 
@@ -29,7 +29,7 @@ where $\operatorname{Stab}(\gamma)$ is the stabiliser of the ordered tuple.
 
 **The stabiliser of the tuple.** The five gammas generate $M_4(\mathbb{C})$: the sixteen antisymmetrised products are a basis. If $U$ commutes with all five, it commutes with the whole algebra, hence lies in its centre:
 $$
-\operatorname{Stab}(\gamma^0,\dots,\gamma^3)
+\operatorname{Stab}(\gamma_0,\dots,\gamma_3)
 =\mathbb{C}^{\times}I .
 $$
 This is the exact stabiliser. It has complex dimension one, and the frame space has dimension $16-1=15$.
@@ -40,12 +40,12 @@ This is the exact stabiliser. It has complex dimension one, and the frame space 
 
 **The definition.** The **Clifford group** of the frame is
 $$
-\Gamma=\{U\in GL_4(\mathbb{C}):U\gamma^\mu U^{-1}=\Lambda^{\mu}_{\ \nu}\gamma^\nu
+\Gamma=\{U\in GL_4(\mathbb{C}):U\gamma_\mu U^{-1}=\Lambda^{\mu}_{\ \nu}\gamma_\nu
 \text{ for some }\Lambda\in O(4,\mathbb{C})\}.
 $$
 It is the stabiliser of the **span**
 $$
-V_\gamma=\operatorname{span}_{\mathbb{C}}\{\gamma^0,\gamma^1,\gamma^2,\gamma^3\},
+V_\gamma=\operatorname{span}_{\mathbb{C}}\{\gamma_0,\gamma_1,\gamma_2,\gamma_3\},
 $$
 not of the tuple.
 
@@ -85,7 +85,7 @@ The scalars are the kernel; the Pin group is the norm-$\pm1$ part. In the real L
 
 **The Lie algebra of the Clifford group.** An element $X\in\mathfrak{gl}_4(\mathbb{C})$ is in the Lie algebra of $\Gamma$ when
 $$
-[X,\gamma^\mu]\in V_\gamma
+[X,\gamma_\mu]\in V_\gamma
 $$
 for every $\mu$. The solutions are the scalars and the bivectors:
 $$
@@ -95,10 +95,10 @@ of dimension $1+6=7$.
 
 **The proof.** The bivectors satisfy
 $$
-[\gamma^{\mu\nu},\gamma^\rho]
-=2\bigl(g^{\nu\rho}\gamma^\mu-g^{\mu\rho}\gamma^\nu\bigr)\in V_\gamma,
+[\gamma_{\mu\nu},\gamma_\rho]
+=2\bigl(g_{\nu\rho}\gamma_\mu-g_{\mu\rho}\gamma_\nu\bigr)\in V_\gamma,
 $$
-so $\Lambda^{2}V_\gamma$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,\gamma^\mu]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,\gamma^\mu]$ is $2g(X_1,\gamma^\mu)$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators. $\square$
+so $\Lambda^{2}V_\gamma$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,\gamma_\mu]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,\gamma_\mu]$ is $2g(X_1,\gamma_\mu)$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators. $\square$
 
 **The structure.** The Lie algebra is the direct sum of the centre $\mathbb{C}I$ and the semisimple $\Lambda^{2}V_\gamma\cong\mathfrak{so}(4,\mathbb{C})$. The bracket of two bivectors is a bivector, and the centre is central. The Lie algebra is reductive, not semisimple: the centre is one-dimensional.
 
@@ -168,8 +168,8 @@ The first fixes the five matrices; the second fixes their span up to an orthogon
 
 | group | condition | dimension |
 |---|---|---|
-| $\operatorname{Stab}(\gamma)$ | $U\gamma^\mu U^{-1}=\gamma^\mu$ | $1$ |
-| $\Gamma$ | $U\gamma^\mu U^{-1}=\Lambda^\mu_{\ \nu}\gamma^\nu$ | $7$ |
+| $\operatorname{Stab}(\gamma)$ | $U\gamma_\mu U^{-1}=\gamma_\mu$ | $1$ |
+| $\Gamma$ | $U\gamma_\mu U^{-1}=\Lambda^\mu_{\ \nu}\gamma_\nu$ | $7$ |
 | $GL_4(\mathbb{C})$ | — | $16$ |
 | $O(4,\mathbb{C})$ | $\Lambda$ orthogonal | $6$ |
 | $\mathrm{Spin}(4,\mathbb{C})$ | even part, norm one | $6$ |
@@ -229,7 +229,7 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V_\gamma$.
 
 | Symbol | Meaning |
 |---|---|
-| $\gamma^\mu$ | the four gammas of the frame |
+| $\gamma_\mu$ | the four gammas of the frame |
 | $V_\gamma$ | the span of the four gammas |
 | $\Gamma$ | the Clifford group of the frame |
 | $\Gamma^{+}$ | its even part |

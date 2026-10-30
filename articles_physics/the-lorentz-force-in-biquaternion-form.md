@@ -358,7 +358,7 @@ Three consequences follow at once.
 
 $$
 \left(i\frac{\gamma P_{\text{mech}}}{c}\right)\left(i\gamma mc\right) + \left(\gamma\vec f\right)\cdot\left(\gamma m\vec v\right)
-= -\gamma^2 m\,P_{\text{mech}} + \gamma^2 m\left(\vec f\cdot\vec v\right) = 0,
+= -\gamma_2 m\,P_{\text{mech}} + \gamma_2 m\left(\vec f\cdot\vec v\right) = 0,
 $$
 
 since $\vec f\cdot\vec v = ϙ(\vec E + \vec v\times\vec B)\cdot\vec v = ϙ\,\vec E\cdot\vec v = P_{\text{mech}}$. The cancellation is exact.
@@ -406,7 +406,7 @@ $$
 is a Lorentz scalar; it is not conserved along the motion. Substituting the component form,
 
 $$
-\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \gamma^2 ϙ^2\left[\left|\vec E + \vec v\times\vec B\right|^2 - \frac{\left(\vec E\cdot\vec v\right)^2}{c^2}\right].
+\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \gamma_2 ϙ^2\left[\left|\vec E + \vec v\times\vec B\right|^2 - \frac{\left(\vec E\cdot\vec v\right)^2}{c^2}\right].
 $$
 
 Evaluated in the instantaneous rest frame of the particle, where $\vec v = 0$ and $\gamma = 1$, this is $ϙ^2\vec E_{\text{rest}}^2$, and since $\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural}$ is a Lorentz scalar,

@@ -8,9 +8,9 @@ This article writes the Rarita–Schwinger system in biquaternionic form and red
 
 Two features of the standard theory are recorded and read in the algebra. First, in the massless case the system has a gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$, with $\epsilon$ an arbitrary Dirac spinor; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The Clifford generators are used as a translation tool; they are a frame in the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not elements of $\mathbb{B}$, and the frame is a coordinate choice. The informational basis is $\hat e^0=e_t$, $\hat e^k=i\vec e_k$, distinct from the coordinate basis $e_\mu$. With the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$, one has $(\gamma^0)^2=+I_4$, $(\gamma^k)^2=-I_4$, and $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$. The Dirac representation $\gamma^0=\mathrm{diag}(I_2,-I_2)$, $\gamma^k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$ is used for the explicit rest-frame computation. The chirality operator is $\gamma_5 = i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$, with $i_{\mathrm{Cl}}$ the scalar imaginary of the complexified Clifford algebra rather than the biquaternion imaginary, and the total antisymmetrizations are $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ and $\gamma^{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma^\mu\gamma^\nu\gamma^\rho$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The Clifford generators are used as a translation tool; they are a frame in the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not elements of $\mathbb{B}$, and the frame is a coordinate choice. The informational basis is $\hat e^0=e_t$, $\hat e^k=i\vec e_k$, distinct from the coordinate basis $e_\mu$. With the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$, one has $(\gamma_0)^2=+I_4$, $(\gamma_k)^2=-I_4$, and $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$. The Dirac representation $\gamma_0=\mathrm{diag}(I_2,-I_2)$, $\gamma_k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$ is used for the explicit rest-frame computation. The chirality operator is $\gamma_5 = i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$, with $i_{\mathrm{Cl}}$ the scalar imaginary of the complexified Clifford algebra rather than the biquaternion imaginary, and the total antisymmetrizations are $\gamma_{\mu\nu}=\tfrac12[\gamma_\mu,\gamma_\nu]$ and $\gamma_{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu\gamma_\nu\gamma_\rho$.
 
-**Coordinates and frames.** The gamma displays are written in the $x$ frame, with $\partial_\mu\equiv\partial/\partial x^\mu$ the derivative in the physical coordinates $x^\mu=(t',x,y,z)$ and the generators above satisfying $\{\gamma^\mu,\gamma^\nu\}=2\eta^{\mu\nu}I_4$, $\eta=\operatorname{diag}(1,-1,-1,-1)$. The algebra's coordinate is $Q_t=ict'$, and $\partial_{t'}=i\partial_{Q_t}$; the gradient is $\tilde\nabla=e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$. A gamma display with $\partial/\partial Q_\mu$ in place of $\partial_{x^\mu}$ is not a frame: the mixed contraction $i\gamma^\mu(x)\partial/\partial Q_\mu$ belongs to neither frame and is not used (*Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*).
+**Coordinates and frames.** The gamma displays are written in the $x$ frame, with $\partial_\mu\equiv\partial/\partial x^\mu$ the derivative in the physical coordinates $x^\mu=(t',x,y,z)$ and the generators above satisfying $\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}I_4$, $\eta=\operatorname{diag}(1,-1,-1,-1)$. The algebra's coordinate is $Q_t=ict'$, and $\partial_{t'}=i\partial_{Q_t}$; the gradient is $\tilde\nabla=e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$. A gamma display with $\partial/\partial Q_\mu$ in place of $\partial_{x^\mu}$ is not a frame: the mixed contraction $i\gamma_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame and is not used (*Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*).
 
 ## The Standard Rarita–Schwinger Field
 
@@ -22,71 +22,71 @@ $$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = 0,
 $$
 
-equivalently $\gamma^{\mu\nu\rho}\partial/\partial x^\rho\,\psi_\nu=0$, the constant between the two standard writings being the one carried by the $\epsilon$–$\gamma_5$ duality of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices* and being immaterial when $m=0$. In the massive case the equation is
+equivalently $\gamma_{\mu\nu\rho}\partial/\partial x^\rho\,\psi_\nu=0$, the constant between the two standard writings being the one carried by the $\epsilon$–$\gamma_5$ duality of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices* and being immaterial when $m=0$. In the massive case the equation is
 
 $$
-\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma + m\,\gamma^{\mu\nu}\psi_\nu = 0,
+\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma + m\,\gamma_{\mu\nu}\psi_\nu = 0,
 $$
 
-equivalently, in the trivector form, $(i\gamma^{\mu\nu\rho}\partial/\partial x^\rho - m\gamma^{\mu\nu})\psi_\nu=0$; the two writings are related by the duality identity
+equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho - m\gamma_{\mu\nu})\psi_\nu=0$; the two writings are related by the duality identity
 
 $$
-\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = -i\,\gamma^{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma,
+\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = -i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma,
 $$
 
-which *Conventions of the Matrix Models* fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma^{\mu}\partial_{x^\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
+which *Conventions of the Matrix Models* fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma_{\mu}\partial_{x^\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
 
-The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma^{\mu\nu}\psi_\nu$,
+The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu$,
 
 $$
-\mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\,\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma - \tfrac12\,m\,\bar{\psi}_\mu\gamma^{\mu\nu}\psi_\nu ,
+\mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\,\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma - \tfrac12\,m\,\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu ,
 $$
 
-up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $\gamma^{\mu\nu}$, not the Clifford metric $g^{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2A_\mu A^\mu$.
+up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $\gamma_{\mu\nu}$, not the Clifford metric $g_{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2A_\mu A^\mu$.
 
 ### The constraint and the reduction
 
-The massive equation implies the trace in two contractions, and the same two contractions deliver the reduced dynamics. Write $S := \gamma^\sigma\psi_\sigma$ for the trace spinor. Taking the divergence of the equation kills the kinetic term, because $\gamma^{\mu\sigma\rho}$ is antisymmetric in its first and third indices, and leaves, using $\gamma^{\mu\sigma} = \gamma^\mu\gamma^\sigma - g^{\mu\sigma}$,
+The massive equation implies the trace in two contractions, and the same two contractions deliver the reduced dynamics. Write $S := \gamma_\sigma\psi_\sigma$ for the trace spinor. Taking the divergence of the equation kills the kinetic term, because $\gamma_{\mu\sigma\rho}$ is antisymmetric in its first and third indices, and leaves, using $\gamma_{\mu\sigma} = \gamma_\mu\gamma_\sigma - g_{\mu\sigma}$,
 
 $$
-0 = \gamma^{\mu\sigma}\partial/\partial x^\mu\,\psi_\sigma = \gamma^{\nu}\partial/\partial x^\nu\,S - \partial^\sigma\psi_\sigma .
+0 = \gamma_{\mu\sigma}\partial/\partial x^\mu\,\psi_\sigma = \gamma_{\nu}\partial/\partial x^\nu\,S - \partial^\sigma\psi_\sigma .
 $$
 
-Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\gamma_\mu\gamma^{\mu\sigma\rho} = 2\gamma^{\sigma\rho}$ and $\gamma_\mu\gamma^{\mu\sigma} = 3\gamma^\sigma$, leaves
+Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\gamma_\mu\gamma_{\mu\sigma\rho} = 2\gamma_{\sigma\rho}$ and $\gamma_\mu\gamma_{\mu\sigma} = 3\gamma_\sigma$, leaves
 
 $$
-2i\,\gamma^{\sigma\rho}\partial/\partial x^\sigma\,\psi_\rho = 3m\,S .
+2i\,\gamma_{\sigma\rho}\partial/\partial x^\sigma\,\psi_\rho = 3m\,S .
 $$
 
-The left-hand side vanishes as well, again by $\gamma^{\sigma\rho}=\gamma^\sigma\gamma^\rho-g^{\sigma\rho}$ together with the relation just obtained, so for $m\neq0$ the trace vanishes,
+The left-hand side vanishes as well, again by $\gamma_{\sigma\rho}=\gamma_\sigma\gamma_\rho-g_{\sigma\rho}$ together with the relation just obtained, so for $m\neq0$ the trace vanishes,
 
 $$
-\gamma^\mu\psi_\mu = 0 ,
+\gamma_\mu\psi_\mu = 0 ,
 $$
 
 and with it the divergence $\partial^\mu\psi_\mu = 0$ follows from the first relation. The trace is therefore a consequence of the massive equation and not an independent condition.
 
-The trace in turn linearises the double product. Multiplying the identity $\gamma^\mu\gamma^\sigma = \gamma^{\mu\sigma}+g^{\mu\sigma}$ by $\psi_\sigma$ and summing over $\sigma$ gives $\gamma^{\mu\sigma}\psi_\sigma = -g^{\mu\mu}\psi_\mu$ when the trace vanishes, with no sum on $\mu$. Substituting this, and the vanishing of $\gamma^{\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ and of $\gamma^\sigma\partial^\mu\psi_\sigma = \partial^\mu S$, into the equation written through $\gamma^{\mu\sigma\rho} = \gamma^\mu\gamma^{\sigma\rho}-g^{\mu\sigma}\gamma^\rho+g^{\mu\rho}\gamma^\sigma$, leaves
+The trace in turn linearises the double product. Multiplying the identity $\gamma_\mu\gamma_\sigma = \gamma_{\mu\sigma}+g_{\mu\sigma}$ by $\psi_\sigma$ and summing over $\sigma$ gives $\gamma_{\mu\sigma}\psi_\sigma = -g_{\mu\mu}\psi_\mu$ when the trace vanishes, with no sum on $\mu$. Substituting this, and the vanishing of $\gamma_{\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ and of $\gamma_\sigma\partial^\mu\psi_\sigma = \partial^\mu S$, into the equation written through $\gamma_{\mu\sigma\rho} = \gamma_\mu\gamma_{\sigma\rho}-g_{\mu\sigma}\gamma_\rho+g_{\mu\rho}\gamma_\sigma$, leaves
 
 $$
-E_\mu = \bigl(i\gamma^{\nu}\partial/\partial x^\nu - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
+E_\mu = \bigl(i\gamma_{\nu}\partial/\partial x^\nu - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
 $$
 
 which vanishes exactly when the component Dirac equation holds,
 
 $$
-(i\gamma^{\nu}\partial/\partial x^\nu - m)\psi_\mu = 0 \quad\text{for each }\mu .
+(i\gamma_{\nu}\partial/\partial x^\nu - m)\psi_\mu = 0 \quad\text{for each }\mu .
 $$
 
 The antisymmetrized equation is thus equivalent to the Dirac equation on each component together with the trace, and, through them, the divergence. The mass term regenerates the Dirac operator on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac spinor's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single contraction.
 
-The massless case separates the constraints, and the separation is what the gauge freedom is for. For $m=0$ the same two contractions no longer force the trace: $\gamma^\mu\psi_\mu=0$ is not contained in the equation, and adjoining it lowers the solution space from six dimensions to four. The divergence is a different matter, because its four components are linear combinations of the components of the equation: $\partial^\mu\psi_\mu=0$ remains a consequence of the equation even when the mass vanishes. It is in the massless case that the **gauge freedom**
+The massless case separates the constraints, and the separation is what the gauge freedom is for. For $m=0$ the same two contractions no longer force the trace: $\gamma_\mu\psi_\mu=0$ is not contained in the equation, and adjoining it lowers the solution space from six dimensions to four. The divergence is a different matter, because its four components are linear combinations of the components of the equation: $\partial^\mu\psi_\mu=0$ remains a consequence of the equation even when the mass vanishes. It is in the massless case that the **gauge freedom**
 
 $$
 \psi_\mu \longrightarrow \psi_\mu + \partial/\partial x^\mu\,\epsilon,
 $$
 
-appears, with $\epsilon$ an arbitrary Dirac spinor: the antisymmetrized kinetic structure is built from the field strength $\partial/\partial x^\rho\,\psi_\sigma$, which changes by a symmetric derivative that the antisymmetrization discards. The gauge freedom is the spin-$\tfrac32$ analogue of the electromagnetic gauge freedom, it is what removes the spin-$\tfrac12$ branch that the vector index introduces, and it is also what makes the trace usable: the trace values that occur on the massless solution space are exactly the ones a gauge transformation can shift, so the gauge $\gamma^\mu\psi_\mu=0$ is attainable and the trace is a complete gauge choice rather than a derived constraint.
+appears, with $\epsilon$ an arbitrary Dirac spinor: the antisymmetrized kinetic structure is built from the field strength $\partial/\partial x^\rho\,\psi_\sigma$, which changes by a symmetric derivative that the antisymmetrization discards. The gauge freedom is the spin-$\tfrac32$ analogue of the electromagnetic gauge freedom, it is what removes the spin-$\tfrac12$ branch that the vector index introduces, and it is also what makes the trace usable: the trace values that occur on the massless solution space are exactly the ones a gauge transformation can shift, so the gauge $\gamma_\mu\psi_\mu=0$ is attainable and the trace is a complete gauge choice rather than a derived constraint.
 
 ### Representation content
 
@@ -114,13 +114,13 @@ under $SU(2)$, of dimensions $2\cdot4 + 4\cdot2 = 16$. Two spin-$\tfrac32$ multi
 
 ### Counting the physical states
 
-Two independent conditions remove the spin-$\tfrac12$ content, and because they act on different structures their effects add. The **algebraic trace** $\gamma^\mu\psi_\mu=0$ removes one Dirac spinor's worth of components, which is two spin-$\tfrac12$ multiplets. The **gauge freedom** in the massless case removes another Dirac spinor's worth, another two spin-$\tfrac12$ multiplets. What is left is the two spin-$\tfrac32$ multiplets, of total dimension eight, and for each frequency sign that is the four-dimensional quartet of a spin-$\tfrac32$ particle. In the massive case the gauge freedom is absent, and the second pair of spin-$\tfrac12$ multiplets is removed instead by the subsidiary conditions that follow from the equation; the physical count is the same four states per charge.
+Two independent conditions remove the spin-$\tfrac12$ content, and because they act on different structures their effects add. The **algebraic trace** $\gamma_\mu\psi_\mu=0$ removes one Dirac spinor's worth of components, which is two spin-$\tfrac12$ multiplets. The **gauge freedom** in the massless case removes another Dirac spinor's worth, another two spin-$\tfrac12$ multiplets. What is left is the two spin-$\tfrac32$ multiplets, of total dimension eight, and for each frequency sign that is the four-dimensional quartet of a spin-$\tfrac32$ particle. In the massive case the gauge freedom is absent, and the second pair of spin-$\tfrac12$ multiplets is removed instead by the subsidiary conditions that follow from the equation; the physical count is the same four states per charge.
 
 The counting is therefore representation-theoretic and does not depend on the detailed form of the antisymmetrizations: any first-order equation whose solutions are pure spin-$\tfrac32$ must remove exactly the four spin-$\tfrac12$ multiplets from the tensor product, and the trace constraint and the gauge freedom are the two mechanisms that do it. This is the reason the field is the minimal carrier of spin $\tfrac32$: the next tensor product that could carry it, the three-index object, would carry still more lower-spin admixture, and the two-index object is the smallest that contains $\tfrac32$ at all.
 
 ### The known difficulties
 
-In the massive case the constraint structure is rigid: the components of $\gamma^\mu\psi_\mu$ and of $\gamma_\mu(\text{equation})$ form a chain of algebraic conditions with no gauge freedom, and the resulting theory has the right free-field content but is known to be inconsistent upon minimal coupling to an external electromagnetic field. The propagation becomes acausal for sufficiently strong backgrounds — the Velo–Zwanziger obstruction — and a consistent interacting spin-$\tfrac32$ theory requires a gravitational or gauge principle rather than a fixed background. This is the standard status of the field, and it is recorded here because the biquaternion formulation does not alter it: the algebra rewrites the free equation faithfully, and the difficulties belong to the coupling.
+In the massive case the constraint structure is rigid: the components of $\gamma_\mu\psi_\mu$ and of $\gamma_\mu(\text{equation})$ form a chain of algebraic conditions with no gauge freedom, and the resulting theory has the right free-field content but is known to be inconsistent upon minimal coupling to an external electromagnetic field. The propagation becomes acausal for sufficiently strong backgrounds — the Velo–Zwanziger obstruction — and a consistent interacting spin-$\tfrac32$ theory requires a gravitational or gauge principle rather than a fixed background. This is the standard status of the field, and it is recorded here because the biquaternion formulation does not alter it: the algebra rewrites the free equation faithfully, and the difficulties belong to the coupling.
 
 ## The Vector-Spinor Field in the Biquaternion Framework
 
@@ -136,19 +136,19 @@ that is, a family of four elements of the algebra, one for each spacetime index.
 
 ### The components of the equation
 
-The standard equation is transcribed component by component, using the correspondence between the Clifford generators and the algebra's units. The correspondence is the frame identity of *Conventions of the Matrix Models*, in which the four generators are written in terms of the fixed odd frame $\gamma^0$ and four representatives carrying the directions,
+The standard equation is transcribed component by component, using the correspondence between the Clifford generators and the algebra's units. The correspondence is the frame identity of *Conventions of the Matrix Models*, in which the four generators are written in terms of the fixed odd frame $\gamma_0$ and four representatives carrying the directions,
 
 $$
-\gamma^\mu = \gamma^0\,\iota_{\mathrm{Cl}}(\hat e^\mu), \qquad \hat e^0 = e_t, \qquad \hat e^k = i \vec e_k ,
+\gamma_\mu = \gamma_0\,\iota_{\mathrm{Cl}}(\hat e^\mu), \qquad \hat e^0 = e_t, \qquad \hat e^k = i \vec e_k ,
 $$
 
-with $\iota_{\mathrm{Cl}}$ the comparison map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the multiplicativity of the comparison map, $\iota_{\mathrm{Cl}}(\tilde{Q}_1\tilde{Q}_2) = \iota_{\mathrm{Cl}}(\tilde{Q}_1)\iota_{\mathrm{Cl}}(\tilde{Q}_2)$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma^0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
+with $\iota_{\mathrm{Cl}}$ the comparison map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the multiplicativity of the comparison map, $\iota_{\mathrm{Cl}}(\tilde{Q}_1\tilde{Q}_2) = \iota_{\mathrm{Cl}}(\tilde{Q}_1)\iota_{\mathrm{Cl}}(\tilde{Q}_2)$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma_0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
 
 $$
-\gamma^\mu\gamma^\nu = s_\mu\,\iota_{\mathrm{Cl}}(\hat e^\mu\hat e^\nu), \qquad s_0 = +1, \quad s_k = -1 ,
+\gamma_\mu\gamma_\nu = s_\mu\,\iota_{\mathrm{Cl}}(\hat e^\mu\hat e^\nu), \qquad s_0 = +1, \quad s_k = -1 ,
 $$
 
-a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma^{0k} = \iota_{\mathrm{Cl}}(i\vec e_k)$ for the timelike pairs and $\gamma^{jk} = \iota_{\mathrm{Cl}}(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma^{\mu\nu\rho} = \gamma^0\,\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Conventions of the Matrix Models* records. Chirality is the one place where the correspondence needs a word. The comparison map assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\iota_{\mathrm{Cl}}(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
+a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma_{0k} = \iota_{\mathrm{Cl}}(i\vec e_k)$ for the timelike pairs and $\gamma_{jk} = \iota_{\mathrm{Cl}}(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma_{\mu\nu\rho} = \gamma_0\,\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Conventions of the Matrix Models* records. Chirality is the one place where the correspondence needs a word. The comparison map assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\iota_{\mathrm{Cl}}(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
 
 $$
 \gamma_5 = i_{\mathrm{Cl}}\,\omega = -\Phi_{\mathbb{C}}\!\left(i_{\mathrm{Cl}}\,i\right),
@@ -174,16 +174,16 @@ where $\hat e^0=e_t$, $\hat e^k=i\vec e_k$ are the four elements of the informat
 
 The equivalence with the antisymmetrized equation is the standard free-field reduction. If each component satisfies the chiral pair, and if the trace and divergence constraints hold, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the pair and the trace, and the divergence. The gamma form of the pair is the module transcription of the first line, and the trace is the module transcription of the second; the biquaternion form is the pair and the constraints.
 
-**The trace is frame-free.** The gamma trace and the algebra trace are the same condition. With $\gamma^\mu=\gamma^0\iota_{\mathrm{Cl}}(\hat e^\mu)$,
+**The trace is frame-free.** The gamma trace and the algebra trace are the same condition. With $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$,
 $$
-\sum_\mu\gamma^\mu\Psi_\mu
-=\gamma^0\iota_{\mathrm{Cl}}\Big(\sum_\mu\hat e^\mu\Psi_\mu\Big).
+\sum_\mu\gamma_\mu\Psi_\mu
+=\gamma_0\iota_{\mathrm{Cl}}\Big(\sum_\mu\hat e^\mu\Psi_\mu\Big).
 $$
-The frame $\gamma^0$ is an invertible cell and $\iota_{\mathrm{Cl}}$ is injective, so the left-hand side vanishes exactly when the algebra element $\sum_\mu\hat e^\mu\Psi_\mu$ does. The gamma form needs the fixed odd frame; the algebra form does not.
+The frame $\gamma_0$ is an invertible cell and $\iota_{\mathrm{Cl}}$ is injective, so the left-hand side vanishes exactly when the algebra element $\sum_\mu\hat e^\mu\Psi_\mu$ does. The gamma form needs the fixed odd frame; the algebra form does not.
 
-**The mass term is frame-free.** With the comparison-map values $\gamma^{0k}=\iota_{\mathrm{Cl}}(i\vec e_k)$ and $\gamma^{jk}=\iota_{\mathrm{Cl}}(\pm\vec e_l)$, the mass term of the $\mu$-th equation is left multiplication by an element of $\mathbb{B}$,
+**The mass term is frame-free.** With the comparison-map values $\gamma_{0k}=\iota_{\mathrm{Cl}}(i\vec e_k)$ and $\gamma_{jk}=\iota_{\mathrm{Cl}}(\pm\vec e_l)$, the mass term of the $\mu$-th equation is left multiplication by an element of $\mathbb{B}$,
 $$
-m\,\gamma^{\mu\nu}\tilde\Psi_\nu=m\,\iota_{\mathrm{Cl}}\big(\Gamma^{\mu\nu}\big)\tilde\Psi_\nu,
+m\,\gamma_{\mu\nu}\tilde\Psi_\nu=m\,\iota_{\mathrm{Cl}}\big(\Gamma^{\mu\nu}\big)\tilde\Psi_\nu,
 \qquad
 \Gamma^{0k}=i\vec e_k,\quad \Gamma^{k0}=-i\vec e_k,\quad
 \Gamma^{jk}=\pm\vec e_l ,
@@ -197,24 +197,24 @@ No gamma matrix appears.
 
 ### Setting up
 
-**Time convention.** The check is performed in the $x$ frame, with $x^0=t'$ and the Dirac-basis generators declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial_{t'}=i\partial_{Q_t}$, not by relabelling $Q_t$ as $t'$. The substitution is applied to the whole operator, $i\gamma^\mu\partial_{x^\mu}-m$, at once. The mixed contraction $i\gamma^\mu\partial/\partial Q_\mu-m$ is a different operator, obtained by replacing only the time derivative; at rest it is $-m(1+i\gamma^0)$, which has no kernel. The upper-component result below therefore belongs to the $x$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
+**Time convention.** The check is performed in the $x$ frame, with $x^0=t'$ and the Dirac-basis generators declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial_{t'}=i\partial_{Q_t}$, not by relabelling $Q_t$ as $t'$. The substitution is applied to the whole operator, $i\gamma_\mu\partial_{x^\mu}-m$, at once. The mixed contraction $i\gamma_\mu\partial/\partial Q_\mu-m$ is a different operator, obtained by replacing only the time derivative; at rest it is $-m(1+i\gamma_0)$, which has no kernel. The upper-component result below therefore belongs to the $x$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
 
 The computation below is a frame check: it evaluates the standard transcription in the Dirac basis. The invariant statement is the pair and the constraints. Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units; the derivative is $\partial_{t'}\to -im$, equivalently $\partial_{Q_t}\to -m$. The Dirac operator becomes
 
 $$
-i\gamma^{\mu}\partial_{x^\mu} - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
+i\gamma_{\mu}\partial_{x^\mu} - m \;\longrightarrow\; i\gamma_0(-im) - m = m\left(\gamma_0 - I_4\right),
 $$
 
-acting on each component. Since $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, the operator $m(\gamma^0-I_4)$ annihilates exactly the **upper** components and annihilates nothing else; the Dirac equation on the spatial components therefore forces them to their upper two-component parts.
+acting on each component. Since $\gamma_0 = \mathrm{diag}(I_2,-I_2)$, the operator $m(\gamma_0-I_4)$ annihilates exactly the **upper** components and annihilates nothing else; the Dirac equation on the spatial components therefore forces them to their upper two-component parts.
 
 The algebra gives the same count without the frame split. At rest $\tilde\nabla\to -me_t$, and the pair becomes the rest-frame form of the off-diagonal mass pairing: the first member determines $\tilde\Psi_{\mu,L}$ from $\tilde\Psi_{\mu,R}$ through that pairing, and the second returns the same relation, so the pair is consistent and leaves two complex components per $\mu$, eight in all. The trace constraint $\sum_\mu\hat e^\mu\tilde\Psi_\mu=0$ is four complex conditions, so the free solution space is four complex dimensional, the same count as the gamma reduction. The split into upper and lower components is the $x$-frame energy split, not a property of the algebra.
 
 ### The trace constraint at rest
 
-Write $\psi_0$ and $\psi_k$ for the components, and use the trace constraint $\gamma^\mu\psi_\mu = \gamma^0\psi_0 + \gamma^k\psi_k = 0$. The Dirac equation forces $\psi_0$ upper and $\psi_k$ upper. Writing $\psi_k = (\chi_k, 0)$ with $\chi_k$ a two-component spinor and using $\gamma^k = \big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$,
+Write $\psi_0$ and $\psi_k$ for the components, and use the trace constraint $\gamma_\mu\psi_\mu = \gamma_0\psi_0 + \gamma_k\psi_k = 0$. The Dirac equation forces $\psi_0$ upper and $\psi_k$ upper. Writing $\psi_k = (\chi_k, 0)$ with $\chi_k$ a two-component spinor and using $\gamma_k = \big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$,
 
 $$
-\gamma^k\psi_k = \begin{pmatrix} 0 \\ -\sigma^k\chi_k \end{pmatrix},
+\gamma_k\psi_k = \begin{pmatrix} 0 \\ -\sigma^k\chi_k \end{pmatrix},
 $$
 
 so the trace constraint reads, in its upper and lower blocks,
@@ -240,7 +240,7 @@ and the condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ removes exactly the spin-
 
 ### Verification
 
-The reduction was checked by explicit complex-matrix computation in the Dirac representation, with $\gamma^0=\mathrm{diag}(I_2,-I_2)$, $\gamma^k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$, and $m$ a fixed nonzero parameter. At rest the Dirac operator on the sixteen amplitudes is $m(\gamma^0-I_4)$ on each component block; the trace constraint was assembled as the $4\times16$ matrix of $\gamma^\mu$ on the four component blocks; and the null space of the combined $20\times16$ system was computed by direct elimination. Its dimension is four. The null space of the single condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the six spatial upper components is also four, and the two spaces agree element by element. The antisymmetrized form of the equation gives the same four-dimensional null space, confirming the equivalence of the trace form and the antisymmetrized form at the level of the free solutions. The check was performed on a basis of the solution space, not on a single wavefunction, and the representation is the one declared above.
+The reduction was checked by explicit complex-matrix computation in the Dirac representation, with $\gamma_0=\mathrm{diag}(I_2,-I_2)$, $\gamma_k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$, and $m$ a fixed nonzero parameter. At rest the Dirac operator on the sixteen amplitudes is $m(\gamma_0-I_4)$ on each component block; the trace constraint was assembled as the $4\times16$ matrix of $\gamma_\mu$ on the four component blocks; and the null space of the combined $20\times16$ system was computed by direct elimination. Its dimension is four. The null space of the single condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the six spatial upper components is also four, and the two spaces agree element by element. The antisymmetrized form of the equation gives the same four-dimensional null space, confirming the equivalence of the trace form and the antisymmetrized form at the level of the free solutions. The check was performed on a basis of the solution space, not on a single wavefunction, and the representation is the one declared above.
 
 Three further checks were run at a generic on-shell momentum, where $\vec k$ has three distinct nonzero components, so that no rest-frame degeneracy can hide a mismatch. The duality identity was verified as a matrix identity in the free vector index at four momenta, generic and lightlike, with residual zero, and the two writings of the massive equation were verified to have the same null space. The antisymmetrized equation has null space of dimension $4$, and it coincides with the null space of the component-Dirac-plus-trace system and with that of the same system augmented by the contracted divergence condition $\partial^\mu\psi_\mu=0$, so that in the massive case the trace and the divergence are consequences of the equation rather than additional conditions; a single-component amplitude was checked to fail the equation by an amount of order $m$, so that the solution space is genuinely a constrained subspace and not the whole space. For the massless equation at a generic lightlike momentum the same computation gives a null space of dimension $6$, of which the four-dimensional space of pure-gauge modes $\psi_\mu\propto\partial/\partial x^\mu\,\epsilon$ is a subspace; the trace condition is not implied, the divergence condition is, and the two-dimensional quotient is the two helicities. The trace values of the massless solutions span exactly the two-dimensional space of trace shifts that the gauge transformation can produce, which is the precise sense in which the trace condition is a gauge choice and the counting is unchanged.
 
@@ -261,7 +261,7 @@ $$
 
 using $\sigma_k\sigma_k = 3I_2$, and it annihilates exactly the longitudinal direction: for $\chi_k$ proportional to $\sigma_k$ acting on any spinor, $\boldsymbol{\sigma}\cdot\vec\chi=\sigma_k\sigma_k\xi = 3\xi \neq 0$, so the longitudinal combination is removed, while for $\boldsymbol{\sigma}\cdot\vec\chi=0$ one has $P_{ij}\chi_j = \chi_i$. Its trace in the vector index is $3-1=2$, so it projects the three spatial directions onto two, and combined with the two spinor components it leaves the four states of spin $\tfrac32$.
 
-The projector is the rest-frame form of the covariant spin-$\tfrac32$ projector of the standard theory, which is obtained by replacing the rest-frame $\gamma^0$ by $\gamma^{\mu} p_{\mu}/m$ and the spatial delta by the transverse projector with respect to $p^\mu$. In the biquaternion framework the boost is effected by rotor conjugation, so the covariant projector is the rotor conjugate of the rest-frame combination above; the algebra supplies the boost without a separate construction.
+The projector is the rest-frame form of the covariant spin-$\tfrac32$ projector of the standard theory, which is obtained by replacing the rest-frame $\gamma_0$ by $\gamma_{\mu} p_{\mu}/m$ and the spatial delta by the transverse projector with respect to $p^\mu$. In the biquaternion framework the boost is effected by rotor conjugation, so the covariant projector is the rotor conjugate of the rest-frame combination above; the algebra supplies the boost without a separate construction.
 
 ## The Massless Case and the Gauge Freedom
 
@@ -284,12 +284,12 @@ The physical content of the massless field is therefore two states per wavevecto
 For $m\neq0$ the mass term
 
 $$
-- m\,\gamma^{\mu\nu}\tilde{\Psi}_\nu
+- m\,\gamma_{\mu\nu}\tilde{\Psi}_\nu
 $$
 
 is the antisymmetrized pair of Clifford generators acting on the field; its biquaternion image is left multiplication by the algebra element $\iota_{\mathrm{Cl}}(\Gamma^{\mu\nu})$ given above, contracted with the corresponding component of the field. In the trace form of the equation it is simply the Dirac mass on each component. The mass term plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the gauge freedom is absent, and it fixes the dispersion relation on the physical shell through the Dirac operator. In the rest frame the massive reduction above is the whole story: time component zero, spatial components upper, $\boldsymbol{\sigma}\cdot\vec\chi=0$, four states.
 
-The massive case is also where the known difficulty lives. The constraint analysis that produces $\gamma^\mu\psi_\mu=0$ and $\partial^\mu\psi_\mu=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
+The massive case is also where the known difficulty lives. The constraint analysis that produces $\gamma_\mu\psi_\mu=0$ and $\partial^\mu\psi_\mu=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
 
 ### The dispersion relation
 
@@ -341,9 +341,9 @@ The conventions are those of three companion articles:
 
 ## Summary
 
-The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\gamma^{\mu\nu}\psi_\nu$, equivalently, in the trivector form, $(i\gamma^{\mu\nu\rho}\partial/\partial x^\rho-m\gamma^{\mu\nu})\psi_\nu=0$. The two writings are related by the duality identity $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\gamma^{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to\gamma_5\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $\gamma^\mu\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
+The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\gamma_{\mu\nu}\psi_\nu$, equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$. The two writings are related by the duality identity $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to\gamma_5\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $\gamma_\mu\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
 
-In the biquaternion framework the carrier is a family of biquaternion-valued components $\tilde{\Psi}_\mu\in\mathbb{B}$, one for each spacetime index, and the free system is the chiral pair on each component together with the algebraic constraints $\sum_\mu\hat e^\mu\tilde{\Psi}_\mu=0$ and $\sum_\mu\partial^\mu\tilde{\Psi}_\mu=0$. Every term is an element of $\mathbb{B}$ or a derivative of one. Chirality is the product of the two square roots of $-1$ of the comparison, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, and the Clifford generators are a frame in the cell algebra, $\gamma^\mu=\gamma^0\iota_{\mathrm{Cl}}(\hat e^\mu)$ with $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$; the compact antisymmetrized equation is the cell transcription of the pair.
+In the biquaternion framework the carrier is a family of biquaternion-valued components $\tilde{\Psi}_\mu\in\mathbb{B}$, one for each spacetime index, and the free system is the chiral pair on each component together with the algebraic constraints $\sum_\mu\hat e^\mu\tilde{\Psi}_\mu=0$ and $\sum_\mu\partial^\mu\tilde{\Psi}_\mu=0$. Every term is an element of $\mathbb{B}$ or a derivative of one. Chirality is the product of the two square roots of $-1$ of the comparison, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, and the Clifford generators are a frame in the cell algebra, $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$ with $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$; the compact antisymmetrized equation is the cell transcription of the pair.
 
 In the rest frame the system forces the time component to vanish and the spatial amplitudes to satisfy $\boldsymbol{\sigma}\cdot\vec\chi=0$. The surviving space is four-dimensional and carries the spin-$\tfrac32$ quartet; the projector onto it is $P_{ij}=\delta_{ij}-\tfrac13\sigma_i\sigma_j$, idempotent and of vector-index rank two. The representation content $2\times\tfrac32\oplus4\times\tfrac12$ loses its four spin-$\tfrac12$ multiplets to the constraint and the gauge freedom, and the massless field retains the two helicities $\pm\tfrac32$.
 
@@ -357,18 +357,18 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\iota_{\mathrm{Cl}}$, $\gamma^\mu=\gamma^0\iota_{\mathrm{Cl}}(\hat e^\mu)$ | Dictionary map onto the even Clifford algebra; $\hat e^0=e_t$, $\hat e^k=i\vec e_k$; the gammas are cells, not elements of $\mathbb{B}$ |
+| $\iota_{\mathrm{Cl}}$, $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$ | Dictionary map onto the even Clifford algebra; $\hat e^0=e_t$, $\hat e^k=i\vec e_k$; the gammas are cells, not elements of $\mathbb{B}$ |
 | $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ | Cell algebra of the regular module; the gamma frame lives here, not in $\mathbb{B}$ |
 | $\hat e^0=e_t$, $\hat e^k=i\vec e_k$ | Informational basis; frame-free trace and mass terms |
 | $i_{\mathrm{Cl}}$, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$ | External imaginary of the complexified Clifford algebra and the chirality operator |
 | $\tilde{\Psi}_\mu\in\mathbb{B}$ | Biquaternion-valued components of the vector-spinor |
 | $\epsilon$ | Dirac-spinor parameter of the massless shift symmetry |
-| $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ | Clifford generators, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
-| $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma^{\mu\nu}$ |
+| $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ | Clifford generators, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $\gamma_{\mu\nu}=\tfrac12[\gamma_\mu,\gamma_\nu]$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma^{\mu\nu}$ |
 | $\Gamma^{0k}=i\vec e_k$, $\Gamma^{k0}=-i\vec e_k$, $\Gamma^{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
-| $\gamma^{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
-| $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\,\gamma^{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ | Duality identity relating the two writings of the equation |
-| $\tilde{\Psi}^{\text{tr}}=\sum_\mu\hat e^\mu\tilde{\Psi}_\mu$ | Trace constraint in $\mathbb{B}$, image of $\gamma^\mu\psi_\mu=0$ |
+| $\gamma_{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
+| $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ | Duality identity relating the two writings of the equation |
+| $\tilde{\Psi}^{\text{tr}}=\sum_\mu\hat e^\mu\tilde{\Psi}_\mu$ | Trace constraint in $\mathbb{B}$, image of $\gamma_\mu\psi_\mu=0$ |
 | $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\psi_\mu=(\chi_\mu,\eta_\mu)$ | Upper and lower two-component parts in the Dirac representation |
 | $\vec\chi$ | Spatial amplitudes; constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ |

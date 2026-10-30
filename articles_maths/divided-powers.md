@@ -107,13 +107,13 @@ On degree-one elements the divided powers are $\gamma_n(cx) = c^n\gamma_n$, and 
 Now let $M$ be free with basis $e_1, \ldots, e_d$. For a multi-index $a = (a_1, \ldots, a_d)$ of non-negative integers write
 
 $$
-\gamma^{(a)} = \gamma_{a_1}(e_1)\,\gamma_{a_2}(e_2) \cdots \gamma_{a_d}(e_d).
+\gamma_{(a)} = \gamma_{a_1}(e_1)\,\gamma_{a_2}(e_2) \cdots \gamma_{a_d}(e_d).
 $$
 
-**Theorem.** If $M$ is free with basis $e_1, \ldots, e_d$, then $\Gamma(M)$ is free as an $R$-module with basis the **divided monomials** $\gamma^{(a)}$, for all multi-indices $a$, and the product is
+**Theorem.** If $M$ is free with basis $e_1, \ldots, e_d$, then $\Gamma(M)$ is free as an $R$-module with basis the **divided monomials** $\gamma_{(a)}$, for all multi-indices $a$, and the product is
 
 $$
-\boxed{\;\gamma^{(a)} \gamma^{(b)} = \binom{a+b}{a} \gamma^{(a+b)}, \qquad \binom{a+b}{a} = \prod_{i=1}^{d} \binom{a_i+b_i}{a_i}\;}.
+\boxed{\;\gamma_{(a)} \gamma_{(b)} = \binom{a+b}{a} \gamma_{(a+b)}, \qquad \binom{a+b}{a} = \prod_{i=1}^{d} \binom{a_i+b_i}{a_i}\;}.
 $$
 
 *Proof.* The formula makes $\Gamma(M)$ a graded commutative algebra, and the divided monomials are independent by construction; the product formula is the product formula of the one-generator case applied in each coordinate. The assertion that this is the free divided power algebra on $M$ is the standard normal-form theorem for divided power algebras (Berthelot–Ogus, §3, or Roby 1965), applied to the free module; we use it as the model of $\Gamma(M)$.
@@ -121,7 +121,7 @@ $$
 The divided powers of a general degree-one element $u = \sum_{i=1}^{d} c_i e_i$ are
 
 $$
-\gamma_n(u) = \sum_{|a| = n} c^a \gamma^{(a)}, \qquad c^a = \prod_{i=1}^{d} c_i^{a_i}.
+\gamma_n(u) = \sum_{|a| = n} c^a \gamma_{(a)}, \qquad c^a = \prod_{i=1}^{d} c_i^{a_i}.
 $$
 
 **Proposition.** For every $u, v \in M$ and $m, n \geq 0$, the additivity relation holds:
@@ -133,14 +133,14 @@ $$
 *Proof.* Write $u = \sum_i c_i e_i$, $v = \sum_i d_i e_i$. Then
 
 $$
-\gamma_n(u+v) = \sum_{|a| = n} (c+d)^a \gamma^{(a)} = \sum_{|a| = n} \Bigl(\prod_i (c_i+d_i)^{a_i}\Bigr) \gamma^{(a)}.
+\gamma_n(u+v) = \sum_{|a| = n} (c+d)^a \gamma_{(a)} = \sum_{|a| = n} \Bigl(\prod_i (c_i+d_i)^{a_i}\Bigr) \gamma_{(a)}.
 $$
 
 On the other side,
 
 $$
-\sum_{i+j=n} \gamma_i(u)\gamma_j(v) = \sum_{|a|+|b| = n} c^a d^b \binom{a+b}{a} \gamma^{(a+b)}
-= \sum_{|e| = n} \Bigl(\sum_{a+b=e} \binom{e}{a} c^a d^b\Bigr) \gamma^{(e)}.
+\sum_{i+j=n} \gamma_i(u)\gamma_j(v) = \sum_{|a|+|b| = n} c^a d^b \binom{a+b}{a} \gamma_{(a+b)}
+= \sum_{|e| = n} \Bigl(\sum_{a+b=e} \binom{e}{a} c^a d^b\Bigr) \gamma_{(e)}.
 $$
 
 The inner sum is $\prod_i \sum_{a_i+b_i=e_i} \binom{e_i}{a_i} c_i^{a_i} d_i^{b_i} = \prod_i (c_i+d_i)^{e_i} = (c+d)^e$, by the binomial theorem. The two sides agree.
@@ -182,10 +182,10 @@ which is the stated sum with $a_k = j$.
 **Corollary.** For a free module with basis $e_1, \ldots, e_d$ and $u = \sum_i c_i e_i$,
 
 $$
-\gamma_n(u) = \sum_{|a| = n} c^a \gamma^{(a)},
+\gamma_n(u) = \sum_{|a| = n} c^a \gamma_{(a)},
 $$
 
-consistent with the divided monomial basis; the coefficient of $\gamma^{(a)}$ is $c^a = \prod_i c_i^{a_i}$.
+consistent with the divided monomial basis; the coefficient of $\gamma_{(a)}$ is $c^a = \prod_i c_i^{a_i}$.
 
 **Example.** Over $\mathbb{Q}$, with $\gamma_n(u) = u^n/n!$, the multinomial expansion becomes the classical statement
 
@@ -230,8 +230,8 @@ Conversely, suppose $c$ is an isomorphism. Take a free module of rank one, $M = 
 | Notion | Symmetric algebra $\operatorname{Sym}(M)$ | Divided power algebra $\Gamma(M)$ |
 |---|---|---|
 | Degree-one part | $M$ | $M$ |
-| Basis for $M$ free, $|a| = n$ | $\exp(a)$ | $\gamma^{(a)}$ |
-| Product | $\exp(a) \exp(b) = \exp(a+b)$ | $\gamma^{(a)}\gamma^{(b)} = \binom{a+b}{a}\gamma^{(a+b)}$ |
+| Basis for $M$ free, $|a| = n$ | $\exp(a)$ | $\gamma_{(a)}$ |
+| Product | $\exp(a) \exp(b) = \exp(a+b)$ | $\gamma_{(a)}\gamma_{(b)} = \binom{a+b}{a}\gamma_{(a+b)}$ |
 | Powers of one element | $x^m x^n = x^{m+n}$ | $\gamma_m(x)\gamma_n(x) = \binom{m+n}{m}\gamma_{m+n}(x)$ |
 | Composition | $x \mapsto x$ | $\gamma_m(\gamma_n(x)) = \frac{(mn)!}{m!(n!)^m}\gamma_{mn}(x)$ |
 | Concrete model over $\mathbb{Q}$ | polynomials $x^a$ | $x^a/a!$ |
@@ -282,13 +282,13 @@ $$
 \Gamma^{\leq N}(M) = \Gamma(M) \big/ \Gamma^{>N}(M), \qquad \Gamma^{>N}(M) = \bigoplus_{n > N} \Gamma^n(M),
 $$
 
-the quotient by the ideal of elements of degree greater than $N$; that ideal is preserved by the divided powers, because the operations raise degree, $\gamma_m(\Gamma^k(M)) \subseteq \Gamma^{mk}(M)$, as the normal form theorem quoted above shows, and the additivity law writes $\gamma_m$ of a sum of homogeneous pieces as a sum of products of such homogeneous divided powers, each of total degree greater than $N$. Its degree-$n$ part therefore vanishes for $n > N$, and a morphism of divided power algebras out of $\Gamma^{\leq N}(M)$ is a morphism out of $\Gamma(M)$ that vanishes on $\Gamma^n(M)$ for every $n > N$; the truncation is the largest quotient of $\Gamma(M)$ whose higher degrees vanish. For $M$ free with basis $e_1, \ldots, e_d$ it has basis the divided monomials $\gamma^{(a)}$ with $|a| \leq N$; the product of two elements is $\binom{a+b}{a}\gamma^{(a+b)}$ if $|a+b| \leq N$ and $0$ otherwise.
+the quotient by the ideal of elements of degree greater than $N$; that ideal is preserved by the divided powers, because the operations raise degree, $\gamma_m(\Gamma^k(M)) \subseteq \Gamma^{mk}(M)$, as the normal form theorem quoted above shows, and the additivity law writes $\gamma_m$ of a sum of homogeneous pieces as a sum of products of such homogeneous divided powers, each of total degree greater than $N$. Its degree-$n$ part therefore vanishes for $n > N$, and a morphism of divided power algebras out of $\Gamma^{\leq N}(M)$ is a morphism out of $\Gamma(M)$ that vanishes on $\Gamma^n(M)$ for every $n > N$; the truncation is the largest quotient of $\Gamma(M)$ whose higher degrees vanish. For $M$ free with basis $e_1, \ldots, e_d$ it has basis the divided monomials $\gamma_{(a)}$ with $|a| \leq N$; the product of two elements is $\binom{a+b}{a}\gamma_{(a+b)}$ if $|a+b| \leq N$ and $0$ otherwise.
 
 **Example.** $\Gamma^{\leq 1}(M) = R \oplus M$ is the **square-zero** algebra on $M$: the product of two elements of $M$ vanishes. The truncation $\Gamma^{\leq N}$ is the algebra of divided power jets of order $N$, and the filtration of an algebra by the powers of an ideal, together with the divided power structures on the successive quotients, is the algebraic content of the theory of thickenings and of formal groups.
 
 ## Summary
 
-The **divided power algebra** $\Gamma(M)$ is the free divided power algebra on the module $M$: a graded commutative $R$-algebra with degree-one part $M$, generated by the divided powers $\gamma_n(x)$, and universal among divided power algebras. It is defined by the additivity law $\gamma_n(x+y) = \sum_{i+j=n}\gamma_i(x)\gamma_j(y)$, the product law $\gamma_m(x)\gamma_n(x) = \binom{m+n}{m}\gamma_{m+n}(x)$, the scaling law $\gamma_n(\lambda x) = \lambda^n\gamma_n(x)$, and the composition law $\gamma_m(\gamma_n(x)) = \frac{(mn)!}{m!(n!)^m}\gamma_{mn}(x)$, whose coefficient is a positive integer. For $M$ free with basis $e_1, \ldots, e_d$ it has the divided monomial basis $\gamma^{(a)}$ with product $\gamma^{(a)}\gamma^{(b)} = \binom{a+b}{a}\gamma^{(a+b)}$. There is a canonical comparison homomorphism $\operatorname{Sym}(M) \to \Gamma(M)$ carrying $x$ to $\gamma_1(x)$; it is an isomorphism exactly when every factorial is invertible in $R$, and in characteristic $p$ it fails in the most visible way, with $\gamma_1\gamma_{p-1} = 0$ while $\gamma_p \neq 0$. The construction is functorial and commutes with base change, and the relative divided power envelope $D_A(I)$ is the standard tool of crystalline and deformation theory.
+The **divided power algebra** $\Gamma(M)$ is the free divided power algebra on the module $M$: a graded commutative $R$-algebra with degree-one part $M$, generated by the divided powers $\gamma_n(x)$, and universal among divided power algebras. It is defined by the additivity law $\gamma_n(x+y) = \sum_{i+j=n}\gamma_i(x)\gamma_j(y)$, the product law $\gamma_m(x)\gamma_n(x) = \binom{m+n}{m}\gamma_{m+n}(x)$, the scaling law $\gamma_n(\lambda x) = \lambda^n\gamma_n(x)$, and the composition law $\gamma_m(\gamma_n(x)) = \frac{(mn)!}{m!(n!)^m}\gamma_{mn}(x)$, whose coefficient is a positive integer. For $M$ free with basis $e_1, \ldots, e_d$ it has the divided monomial basis $\gamma_{(a)}$ with product $\gamma_{(a)}\gamma_{(b)} = \binom{a+b}{a}\gamma_{(a+b)}$. There is a canonical comparison homomorphism $\operatorname{Sym}(M) \to \Gamma(M)$ carrying $x$ to $\gamma_1(x)$; it is an isomorphism exactly when every factorial is invertible in $R$, and in characteristic $p$ it fails in the most visible way, with $\gamma_1\gamma_{p-1} = 0$ while $\gamma_p \neq 0$. The construction is functorial and commutes with base change, and the relative divided power envelope $D_A(I)$ is the standard tool of crystalline and deformation theory.
 
 ## Summary of Notation
 
@@ -300,7 +300,7 @@ The **divided power algebra** $\Gamma(M)$ is the free divided power algebra on t
 | $\Gamma^n(M)$ | Degree-$n$ divided power, $\Gamma^0(M) = R$, $\Gamma^1(M) = M$ |
 | $\gamma_n : M \to \Gamma^n(M)$ | Divided power map, $\gamma_0 = 1$, $\gamma_1 = \operatorname{id}$ |
 | $x^{(n)} = \gamma_n(x)$ | Divided power of an element |
-| $\gamma^{(a)} = \prod_i \gamma_{a_i}(e_i)$ | Divided monomials, for $M$ free with basis $(e_i)$ |
+| $\gamma_{(a)} = \prod_i \gamma_{a_i}(e_i)$ | Divided monomials, for $M$ free with basis $(e_i)$ |
 | $\binom{m+n}{m}$ | Coefficient in the product law |
 | $\frac{(mn)!}{m!(n!)^m}$ | Coefficient in the composition law |
 | $\operatorname{Sym}(M)$ | Symmetric algebra, compared with $\Gamma(M)$ via $c$ |

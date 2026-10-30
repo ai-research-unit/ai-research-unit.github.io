@@ -10,7 +10,7 @@ $$
 c^{\mu\nu\lambda} = \bigl(t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ and $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ are the gamma traces and $k^\mu$ is a neutral vector. The composition
+where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ and $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ are the gamma traces and $k^\mu$ is a neutral vector. The composition
 
 $$
 (G \star H)^\lambda = G_\mu\, c^{\mu\lambda\nu} H_\nu
@@ -95,7 +95,7 @@ $$
 = \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}\;}.
 $$
 
-Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($A_\mu\bar\Psi\gamma^\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
+Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($A_\mu\bar\Psi\gamma_\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
 
 ### The Block Structure
 
@@ -140,8 +140,8 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $G, H, K$ | Elements of $V$ |
 | $G \star H$ | The composition, $(G\star H)^\lambda = G_\mu c^{\mu\lambda\nu}H_\nu$ |
 | $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
-| $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
-| $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol |
+| $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
+| $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol |
 | $k^\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |

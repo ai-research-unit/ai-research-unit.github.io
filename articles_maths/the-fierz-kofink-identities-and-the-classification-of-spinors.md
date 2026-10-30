@@ -65,7 +65,7 @@ $$
 Z = \sigma\,\mathbb 1 + J + iS + K\gamma_5 - i\omega\gamma_5,
 $$
 
-where $J=J_\mu\gamma^\mu$, $K=K_\mu\gamma^\mu$ and $S=S_{\mu\nu}\gamma^{\mu\nu}$ are read as Clifford elements with the covariant coefficients.
+where $J=J_\mu\gamma_\mu$, $K=K_\mu\gamma_\mu$ and $S=S_{\mu\nu}\gamma_{\mu\nu}$ are read as Clifford elements with the covariant coefficients.
 
 **Statement (the aggregate form of the FPK identities).** The aggregate satisfies
 

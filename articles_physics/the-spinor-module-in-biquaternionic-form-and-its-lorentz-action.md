@@ -184,7 +184,7 @@ $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \;\cong\; M_2(\mathbb{C}) \oplus M_2(\mathbb{C}),
 $$
 
-the two central summands being the two chiralities. The corresponding central idempotents are $\tfrac{1}{2}(1\pm i_{\mathbb{C}}\omega)$, with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the volume element; under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ the volume element is the image of the biquaternion scalar imaginary, so these are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section *The Even Subalgebra and the Origin of the Action*).
+the two central summands being the two chiralities. The corresponding central idempotents are $\tfrac{1}{2}(1\pm i_{\mathbb{C}}\omega)$, with $\omega = \gamma_0\gamma_1\gamma_2\gamma_3$ the volume element; under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ the volume element is the image of the biquaternion scalar imaginary, so these are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section *The Even Subalgebra and the Origin of the Action*).
 
 The **Dirac spinor module** is the direct sum of the two halves,
 
@@ -463,7 +463,7 @@ The reason the spinor action is one-sided, and the four-vector action two-sided,
 $$
 \mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}),
 \qquad
-\vec e_x\mapsto\gamma^2\gamma^3,\quad \vec e_y\mapsto\gamma^3\gamma^1,\quad \vec e_z\mapsto\gamma^2\gamma^1,\quad i\mapsto\gamma^0\gamma^1\gamma^2\gamma^3 .
+\vec e_x\mapsto\gamma_2\gamma_3,\quad \vec e_y\mapsto\gamma_3\gamma_1,\quad \vec e_z\mapsto\gamma_2\gamma_1,\quad i\mapsto\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
 The full Clifford algebra acts on its spinor module by **left multiplication**; restricting to the even subalgebra $\mathbb{B}$ gives the action considered in this article. The spin group sits inside the even subalgebra,

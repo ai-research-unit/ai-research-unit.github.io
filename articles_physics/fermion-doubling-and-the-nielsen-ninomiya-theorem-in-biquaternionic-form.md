@@ -15,18 +15,18 @@ The article is organised as follows. The next section sets up the naive discreti
 The biquaternion field is Lorentzian. In the $x$ coordinates $x^0=ct'$, $x^k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma^\mu\partial_\mu - m\right)\psi(x),
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial_\mu - m\right)\psi(x),
 \qquad
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
-The lattice path integral is defined on the Euclidean section. Write $\gamma^E_0=\gamma^0$ and $\gamma^E_k=i\gamma^k$; then $(\gamma^E_\mu)^2=+1$ and $\{\gamma^E_\mu,\gamma^E_\nu\}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $Q$-frame of the biquaternion algebra. The Euclidean action is
+The lattice path integral is defined on the Euclidean section. Write $\gamma_0^{E}=\gamma_0$ and $\gamma_k^{E}=i\gamma_k$; then $(\gamma_\mu^{E})^2=+1$ and $\{\gamma_\mu^{E},\gamma_{\nu\}^{E}}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $Q$-frame of the biquaternion algebra. The Euclidean action is
 
 $$
-S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma^E_\mu\partial^E_\mu + m\right)\psi(x),
+S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu^{E}\partial^E_\mu + m\right)\psi(x),
 $$
 
-and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma^E_\mu$ and $\gamma_5=\gamma^E_0\gamma^E_1\gamma^E_2\gamma^E_3$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
+and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma_\mu^{E}$ and $\gamma_5=\gamma_0^{E}\gamma_{1\gamma}^{E}^E_2\gamma_{3}^{E}$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
 
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 

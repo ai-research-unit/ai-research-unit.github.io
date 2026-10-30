@@ -141,7 +141,7 @@ The isometry $\gamma$ is **elliptic** if some orbit is bounded (equivalently, if
 
 **(a)** $\gamma$ is elliptic if and only if some (hence every) orbit is bounded; if $X$ is a tree or $\mathbf{H}^n$ then $\gamma$ is elliptic exactly when it has a fixed point.
 
-**(b)** $\gamma$ is loxodromic if and only if it has an **axis**: a geodesic $A$ with $\gamma A = A$ and $\gamma$ acting on $A$ by a translation of length $\tau(\gamma) > 0$. A loxodromic isometry has exactly two fixed points in $\partial X$, the endpoints of the axis, and for every $x\in X$ the orbit $\{\gamma^n x\}$ lies at bounded distance from the axis.
+**(b)** $\gamma$ is loxodromic if and only if it has an **axis**: a geodesic $A$ with $\gamma A = A$ and $\gamma$ acting on $A$ by a translation of length $\tau(\gamma) > 0$. A loxodromic isometry has exactly two fixed points in $\partial X$, the endpoints of the axis, and for every $x\in X$ the orbit $\{\gamma_n x\}$ lies at bounded distance from the axis.
 
 **(c)** $\gamma$ is parabolic if and only if $\tau(\gamma) = 0$ and some orbit is unbounded; a parabolic isometry fixes exactly one point of $\partial X$ and no point of $X$, and its orbits escape to that boundary point.
 

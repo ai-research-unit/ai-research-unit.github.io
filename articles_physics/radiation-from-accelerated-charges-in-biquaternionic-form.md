@@ -106,9 +106,9 @@ $$
 with biquaternion norms
 
 $$
-\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 + \vec v^2 = -c^2(1 - \beta^2) = -\frac{c^2}{\gamma^2},
+\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 + \vec v^2 = -c^2(1 - \beta^2) = -\frac{c^2}{\gamma_2},
 \qquad
-\langle\tilde{V}\rangle_{\natural} = \gamma^2\,\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 ,
+\langle\tilde{V}\rangle_{\natural} = \gamma_2\,\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 ,
 \qquad \gamma = \frac{1}{\sqrt{1 - \beta^2}} .
 $$
 
@@ -285,13 +285,13 @@ with $\vec H_{v,a} = \vec B_{v,a}/\mu$. Both parts are pure-vector biquaternions
 
 The field $\tilde{F}_v$ depends only on the position and velocity of the charge at the retarded time, not on its acceleration. It falls as $1/R^2$, exactly as a static field does, and it is the field that is "carried along" by the charge.
 
-The factor $1-\beta^2 = 1/\gamma^2$ makes $\vec E_v$ a **contracted** Coulomb field: at $\vec\beta = 0$ it reduces to the ordinary Coulomb field
+The factor $1-\beta^2 = 1/\gamma_2$ makes $\vec E_v$ a **contracted** Coulomb field: at $\vec\beta = 0$ it reduces to the ordinary Coulomb field
 
 $$
 \vec E_v \;\xrightarrow{\ \vec\beta=0\ }\; \frac{ϙ}{4\pi\epsilon}\frac{\vec u_R}{R^2},
 $$
 
-in agreement with the static solution of the Maxwell article, and in general the $1/\gamma^2$ factor and the replacement $\vec u_R\to\vec u_R-\vec\beta$ are precisely the Lorentz contraction of the Coulomb field in the direction of motion. The magnetic field is the accompanying $\vec u_R\times\vec E_v/c$; the whole structure is the boosted static field of the charge.
+in agreement with the static solution of the Maxwell article, and in general the $1/\gamma_2$ factor and the replacement $\vec u_R\to\vec u_R-\vec\beta$ are precisely the Lorentz contraction of the Coulomb field in the direction of motion. The magnetic field is the accompanying $\vec u_R\times\vec E_v/c$; the whole structure is the boosted static field of the charge.
 
 The velocity field is **not** a radiation field, and in the language of the companion article on invariants it is not null. Because $\vec B_v = \vec u_R\times\vec E_v/c$, the second invariant vanishes identically,
 
@@ -395,22 +395,22 @@ where in the second expression the index contraction uses the Minkowski metric. 
 For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With the derivative taken this time with respect to $t'$ (not $t'_r$),
 
 $$
-P = \frac{ϙ^2\gamma^6}{6\pi\epsilon c}\left[\left(d\vec\beta/dt'\right)^{2} - \left(\vec\beta\times\,d\vec\beta/dt'\right)^2\right].
+P = \frac{ϙ^2\gamma_6}{6\pi\epsilon c}\left[\left(d\vec\beta/dt'\right)^{2} - \left(\vec\beta\times\,d\vec\beta/dt'\right)^2\right].
 $$
 
 Two special cases are standard and useful. For **linear acceleration**, $d\vec\beta/dt'_r\parallel\vec\beta$ and
 
 $$
-P_{\text{lin}} = \frac{ϙ^2\gamma^6\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
+P_{\text{lin}} = \frac{ϙ^2\gamma_6\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
 $$
 
-the well-known $\gamma^6$ enhancement. For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$ and
+the well-known $\gamma_6$ enhancement. For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$ and
 
 $$
-P_{\text{circ}} = \frac{ϙ^2\gamma^4\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
+P_{\text{circ}} = \frac{ϙ^2\gamma_4\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
 $$
 
-a $\gamma^4$ enhancement, because for the same $|d\vec\beta/dt'_r|$ the radiated power from transverse acceleration is smaller than that from longitudinal acceleration by a factor of $\gamma^2$. Both follow from the invariant expression; no new physics is introduced by the biquaternion formulation, but the way the power is organized — one biquaternion norm instead of a three-vector combination — is the characteristic simplification of the algebraic language.
+a $\gamma_4$ enhancement, because for the same $|d\vec\beta/dt'_r|$ the radiated power from transverse acceleration is smaller than that from longitudinal acceleration by a factor of $\gamma_2$. Both follow from the invariant expression; no new physics is introduced by the biquaternion formulation, but the way the power is organized — one biquaternion norm instead of a three-vector combination — is the characteristic simplification of the algebraic language.
 
 ## The Angular Distribution
 
@@ -441,17 +441,17 @@ For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$. Choosing $\vec\beta$ 
 
 $$
 \left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2
-= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right],
+= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma_2}\right],
 $$
 
 and hence
 
 $$
 \frac{dP}{d\Omega} = \frac{ϙ^2\left(d\beta/dt'_r\right)^{2}}{16\pi^2\epsilon c\,\kappa^6}
-\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right].
+\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma_2}\right].
 $$
 
-Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
+Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma_{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma_{-2}$ at angles away from the forward direction.
 
 **A remark on the temporal convention.** The distributions above are written per unit of the observer's time $t'$ and with $d\vec\beta/dt'_r$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t'_r$; because $dt' = \kappa\,dt'_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The physical total power is the same in either convention; the two distributions themselves are not, since they differ pointwise by the direction-dependent factor $\kappa$, so the sphere integral must be taken with that factor in the retarded-time form.
 
@@ -546,7 +546,7 @@ $$
 P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right),
 $$
 
-the relativistic Larmor formula, with the standard $\gamma^6$ (linear) and $\gamma^4$ (circular) enhancements as special cases. The angular distribution carries the forward-beaming factor $\kappa^{-6}$, which concentrates the radiation into a cone of half-angle of order $1/\gamma$ at high speed. The radiation-reaction force $K^\mu_{\mathrm{rad}}$ is orthogonal to the worldline, though the standard pathologies of the point-charge self-force remain. An external derivation of the Lorentz–Dirac equation from Maxwell's theory — in a Colombeau algebra of nonlinear generalized functions, with the biquaternion representation supplying the closed-form integrations — gives the rigorous balance between the radiated energy–momentum rate and the self-interaction force and identifies the correct point-charge self-energy as a $\delta^2$ integral rather than the Coulomb one.
+the relativistic Larmor formula, with the standard $\gamma_6$ (linear) and $\gamma_4$ (circular) enhancements as special cases. The angular distribution carries the forward-beaming factor $\kappa^{-6}$, which concentrates the radiation into a cone of half-angle of order $1/\gamma$ at high speed. The radiation-reaction force $K^\mu_{\mathrm{rad}}$ is orthogonal to the worldline, though the standard pathologies of the point-charge self-force remain. An external derivation of the Lorentz–Dirac equation from Maxwell's theory — in a Colombeau algebra of nonlinear generalized functions, with the biquaternion representation supplying the closed-form integrations — gives the rigorous balance between the radiated energy–momentum rate and the self-interaction force and identifies the correct point-charge self-energy as a $\delta^2$ integral rather than the Coulomb one.
 
 The construction is explicit enough that the two downstream exercises are direct applications: R4 is the case $d\vec\beta/dt'_r = 0$, and E1 is the general case.
 

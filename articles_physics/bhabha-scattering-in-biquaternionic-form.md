@@ -40,8 +40,8 @@ The two tree-level diagrams contribute
 
 $$
 \boxed{\;
-\mathcal M = -e^2\left(\bar v_k\gamma^\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2}\gamma_\mu w_p\right)
-\;+\; e^2\left(\bar v_k\gamma^\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right)\;},
+\mathcal M = -e^2\left(\bar v_k\gamma_\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2}\gamma_\mu w_p\right)
+\;+\; e^2\left(\bar v_k\gamma_\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right)\;},
 $$
 
 the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.

@@ -353,9 +353,9 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 | $\tilde S\tilde S^{*}=e_t$ | Matrix-$*$-unitary biquaternion $\Leftrightarrow \mathrm{U}(2)$ |
 | $\tilde S=\tilde A\tilde U$, $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ | Cartan pairing of the S-matrix; $\tilde A=e_t$ exactly when $\tilde S\tilde S^{*}=e_t$ |
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\tilde u\tilde u^{\natural}=e_t$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |
-| $\psi$, $\bar\psi=\psi^\dagger\gamma^0=i\psi^\dagger T_{tx}$ | Spinor-module representative and its adjoint |
+| $\psi$, $\bar\psi=\psi^\dagger\gamma_0=i\psi^\dagger T_{tx}$ | Spinor-module representative and its adjoint |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=-g$ | Clifford and $ict'$ metrics |
-| $\gamma^{\mu} p_{\mu}=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ | Feynman contraction |
+| $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol{\gamma}\cdot\vec p=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ | Feynman contraction |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Particle and antiparticle mode operators (parent's notation) |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $S=T\exp(-i\int d^4x\,\mathcal{H}_I)$ | S-matrix; time-ordered exponential (Dyson series) |

@@ -51,10 +51,10 @@ The symbol map sends the filtration layer $\mathrm{Cl}^{\le k}$ to the quotient 
 | grade | basis | dimension | parity |
 |---|---|---|---|
 | 0 | $I$ | 1 | even |
-| 1 | $\gamma^\mu$ | 4 | odd |
-| 2 | $\gamma^{\mu\nu}$ | 6 | even |
-| 3 | $\gamma^{\mu\nu\rho}$ | 4 | odd |
-| 4 | $\gamma^5$ | 1 | even |
+| 1 | $\gamma_\mu$ | 4 | odd |
+| 2 | $\gamma_{\mu\nu}$ | 6 | even |
+| 3 | $\gamma_{\mu\nu\rho}$ | 4 | odd |
+| 4 | $\gamma_5$ | 1 | even |
 
 The even part has dimension $1+6+1=8$; the odd part has dimension $4+4=8$. The odd slot is therefore the sum of the vector and trivector grades, not one grade.
 
@@ -66,12 +66,12 @@ $$
 \qquad
 \dim V=4,\quad\dim\Lambda^{3}V=4 .
 $$
-The four vectors are the $\gamma^\mu$; the four trivectors are the $\gamma^{\mu\nu\rho}$. The split is the grade split of the odd part.
+The four vectors are the $\gamma_\mu$; the four trivectors are the $\gamma_{\mu\nu\rho}$. The split is the grade split of the odd part.
 
 **The module structure.** The odd slot is a left $\mathbb{B}$-module, $\mathrm{Cl}^{1}=\mathbb{B}u$, of real dimension eight. The left multiplication by an even element preserves the parity but not the grade: a bivector times a vector is a vector plus a trivector,
 $$
-\gamma^{\mu\nu}\gamma^{\rho}
-=\gamma^{\mu\nu\rho}+g^{\nu\rho}\gamma^{\mu}-g^{\mu\rho}\gamma^{\nu},
+\gamma_{\mu\nu}\gamma_{\rho}
+=\gamma_{\mu\nu\rho}+g_{\nu\rho}\gamma_{\mu}-g_{\mu\rho}\gamma_{\nu},
 $$
 so the split $V\oplus\Lambda^{3}V$ is **not** a $\mathbb{B}$-submodule split. The odd slot is a copy of $\mathbb{B}$ as a module, but the copy does not respect the vector/trivector split. This is the algebraic reason the split is recovered from the frame, not from the module.
 
@@ -79,14 +79,14 @@ so the split $V\oplus\Lambda^{3}V$ is **not** a $\mathbb{B}$-submodule split. Th
 $$
 *:\Lambda^{1}V\longrightarrow\Lambda^{3}V,
 \qquad
-\gamma^{\mu}\longmapsto \gamma^{\mu\nu\rho}\propto\varepsilon^{\mu\nu\rho\sigma}\gamma_{\sigma}\gamma^{5},
+\gamma_{\mu}\longmapsto \gamma_{\mu\nu\rho}\propto\varepsilon^{\mu\nu\rho\sigma}\gamma_{\sigma}\gamma_{5},
 $$
 with $*^2=\pm1$ on the odd slot. The four pairs
 $$
-(\gamma^{0},\gamma^{123}),\quad
-(\gamma^{1},\gamma^{023}),\quad
-(\gamma^{2},\gamma^{013}),\quad
-(\gamma^{3},\gamma^{012})
+(\gamma_{0},\gamma_{123}),\quad
+(\gamma_{1},\gamma_{023}),\quad
+(\gamma_{2},\gamma_{013}),\quad
+(\gamma_{3},\gamma_{012})
 $$
 are the Hodge pairs. Each pair spans a two-dimensional subspace of the odd slot. The Hodge star exchanges the vector and the trivector of the pair, and the Clifford product of the two is a scalar plus a scalar multiple of the pseudoscalar.
 
@@ -102,14 +102,14 @@ for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the 
 
 | $T_{\mu\nu}$ | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
 |---|---|---|---|---|
-| $\mu=t$ | $I$ (0) | $-i\gamma^{0}$ (1) | $i\gamma^{123}$ (3) | $i\gamma^{5}$ (4) |
-| $\mu=x$ | $\gamma^{23}$ (2) | $-i\gamma^{023}$ (3) | $-i\gamma^{1}$ (1) | $\gamma^{01}$ (2) |
-| $\mu=y$ | $-\gamma^{13}$ (2) | $i\gamma^{013}$ (3) | $-i\gamma^{2}$ (1) | $\gamma^{02}$ (2) |
-| $\mu=z$ | $\gamma^{12}$ (2) | $-i\gamma^{012}$ (3) | $-i\gamma^{3}$ (1) | $\gamma^{03}$ (2) |
+| $\mu=t$ | $I$ (0) | $-i\gamma_{0}$ (1) | $i\gamma_{123}$ (3) | $i\gamma_{5}$ (4) |
+| $\mu=x$ | $\gamma_{23}$ (2) | $-i\gamma_{023}$ (3) | $-i\gamma_{1}$ (1) | $\gamma_{01}$ (2) |
+| $\mu=y$ | $-\gamma_{13}$ (2) | $i\gamma_{013}$ (3) | $-i\gamma_{2}$ (1) | $\gamma_{02}$ (2) |
+| $\mu=z$ | $\gamma_{12}$ (2) | $-i\gamma_{012}$ (3) | $-i\gamma_{3}$ (1) | $\gamma_{03}$ (2) |
 
 **The verification.** The table follows from the definitions $L_\mu(x)=e_\mu x$, $R_\nu(x)=xe_\nu$, the multiplication table of the biquaternion units, and the correspondence
 $$
-e_t\mapsto I,\quad e_x\mapsto\gamma^{2}\gamma^{3},\quad e_y\mapsto\gamma^{3}\gamma^{1},\quad e_z\mapsto\gamma^{1}\gamma^{2},\quad i\mapsto i\gamma^{5}.
+e_t\mapsto I,\quad e_x\mapsto\gamma_{2}\gamma_{3},\quad e_y\mapsto\gamma_{3}\gamma_{1},\quad e_z\mapsto\gamma_{1}\gamma_{2},\quad i\mapsto i\gamma_{5}.
 $$
 Each product $e_\mu x e_\nu$ is a signed basis element, and the scalar $i$ is the pseudoscalar. The signs are those of the quaternion multiplication table; a direct computation gives the sixteen entries. $\square$
 
@@ -121,11 +121,11 @@ The counts are the dimensions of the exterior algebra; the table is a bijection 
 
 **The five gammas.** The frame is the five entries
 $$
-\gamma^{0}=iT_{tx},\qquad
-\gamma^{1}=iT_{xy},\qquad
-\gamma^{2}=iT_{yy},\qquad
-\gamma^{3}=iT_{zy},\qquad
-\gamma^{5}=-iT_{tz}.
+\gamma_{0}=iT_{tx},\qquad
+\gamma_{1}=iT_{xy},\qquad
+\gamma_{2}=iT_{yy},\qquad
+\gamma_{3}=iT_{zy},\qquad
+\gamma_{5}=-iT_{tz}.
 $$
 The first four are the four vectors; the last is the pseudoscalar. The four vectors are the staircase
 $$
@@ -140,28 +140,28 @@ T_{xy}\leftrightarrow T_{xx},\qquad
 T_{yy}\leftrightarrow T_{yx},\qquad
 T_{zy}\leftrightarrow T_{zx}.
 $$
-Each pair is one Hodge pair $(\gamma^\mu,\gamma^{\nu\rho\sigma})$. The pattern is the frame written twice: the vector entry and its trivector partner differ by the exchange of the second index and the sign of the scalar $i$.
+Each pair is one Hodge pair $(\gamma_\mu,\gamma_{\nu\rho\sigma})$. The pattern is the frame written twice: the vector entry and its trivector partner differ by the exchange of the second index and the sign of the scalar $i$.
 
 ## What the Biquaternion Product Sees
 
 **The parity.** The product of two even elements is even, and the product of an even and an odd element is odd. This is visible in the multiplication of $\mathbb{B}$ and in the rule for the odd slot; no frame is needed.
 
-**The grade.** The grade is not visible. The multiplication table of $\mathbb{B}$ does not distinguish a scalar from a pseudoscalar: both are central in $\mathbb{B}$, and the product of two bivectors can be a scalar plus a pseudoscalar plus a bivector. The splitting into grades requires the frame, which supplies the $\gamma^\mu$ and hence the grade projectors.
+**The grade.** The grade is not visible. The multiplication table of $\mathbb{B}$ does not distinguish a scalar from a pseudoscalar: both are central in $\mathbb{B}$, and the product of two bivectors can be a scalar plus a pseudoscalar plus a bivector. The splitting into grades requires the frame, which supplies the $\gamma_\mu$ and hence the grade projectors.
 
-**The central imaginary and the pseudoscalar.** In $\mathbb{B}$ the element $i$ is central. In $\mathrm{Cl}$ the pseudoscalar $\gamma^{5}$ is even but not central: it commutes with the even part and anticommutes with the odd part. The identification $i\mapsto i\gamma^{5}$ is an isomorphism of real algebras, but it does not preserve the centre in the ambient algebra: the image of the centre is the real plane spanned by $I$ and $i\gamma^{5}$, which is central in the even part and not in the whole Clifford algebra. This is the algebraic reason the chirality is not a scalar.
+**The central imaginary and the pseudoscalar.** In $\mathbb{B}$ the element $i$ is central. In $\mathrm{Cl}$ the pseudoscalar $\gamma_{5}$ is even but not central: it commutes with the even part and anticommutes with the odd part. The identification $i\mapsto i\gamma_{5}$ is an isomorphism of real algebras, but it does not preserve the centre in the ambient algebra: the image of the centre is the real plane spanned by $I$ and $i\gamma_{5}$, which is central in the even part and not in the whole Clifford algebra. This is the algebraic reason the chirality is not a scalar.
 
 **The odd slot as an operation.** The odd elements are not in $\mathbb{B}$; as operations on $\mathbb{B}$ they are the bar and the left multiplications,
 $$
-\gamma^{0}=\bar{\cdot},\qquad
-\gamma^{k}=\bar{\cdot}L_{-i e_k},
+\gamma_{0}=\bar{\cdot},\qquad
+\gamma_{k}=\bar{\cdot}L_{-i e_k},
 $$
 in the real-linear dictionary. The grade of the operation is recovered from the frame, not from the biquaternion product. The operation-level statement is *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*.
 
 **The two dictionaries.** The complex-linear dictionary
 $$
-\gamma^{0}=R_{i e_x},\qquad
-\gamma^{k}=L_{i e_k}R_{e_y},\qquad
-\gamma^{5}=R_{-i e_z}
+\gamma_{0}=R_{i e_x},\qquad
+\gamma_{k}=L_{i e_k}R_{e_y},\qquad
+\gamma_{5}=R_{-i e_z}
 $$
 uses the same five entries up to the scalar $i$; its even part is the complexified even Clifford algebra $M_2\oplus M_2$, not the left factor $\mathbb{B}$. The real-linear dictionary has the left factor as its even part. The grade table is the same in both, because it is a table of the same sixteen two-sided operators against the same abstract Clifford basis; the difference is which operators represent the frame, not the grades.
 
@@ -169,7 +169,7 @@ uses the same five entries up to the scalar $i$; its even part is the complexifi
 
 **The canonical part.** The filtration and the parity are canonical: they are defined by the Clifford algebra and the vector space $V$, with no choice of frame. The dimensions $1,4,6,4,1$ are canonical.
 
-**The frame part.** The assignment of a grade to a particular $T_{\mu\nu}$ is frame-dependent. A different frame $\tilde\gamma^\mu=U\gamma^\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.
+**The frame part.** The assignment of a grade to a particular $T_{\mu\nu}$ is frame-dependent. A different frame $\tilde\gamma_\mu=U\gamma_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.
 
 **The invariant statement.** The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five gammas are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.
 
@@ -179,13 +179,13 @@ The Clifford algebra of four dimensions is $\mathbb{Z}$-filtered, with associate
 $$
 \begin{array}{c|cccc}
  & t & x & y & z\\ \hline
-t & I & -i\gamma^0 & i\gamma^{123} & i\gamma^5\\
-x & \gamma^{23} & -i\gamma^{023} & -i\gamma^1 & \gamma^{01}\\
-y & -\gamma^{13} & i\gamma^{013} & -i\gamma^2 & \gamma^{02}\\
-z & \gamma^{12} & -i\gamma^{012} & -i\gamma^3 & \gamma^{03}
+t & I & -i\gamma_0 & i\gamma_{123} & i\gamma_5\\
+x & \gamma_{23} & -i\gamma_{023} & -i\gamma_1 & \gamma_{01}\\
+y & -\gamma_{13} & i\gamma_{013} & -i\gamma_2 & \gamma_{02}\\
+z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
 \end{array}
 $$
-and the five gammas are $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma^5=-iT_{tz}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
+and the five gammas are $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
 
 | quantity | value |
 |---|---|
@@ -193,10 +193,10 @@ and the five gammas are $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy
 | filtration | $\operatorname{gr}\mathrm{Cl}\cong\Lambda^{\bullet}V$ |
 | grade dimensions | $1,4,6,4,1$ |
 | odd slot | $V\oplus\Lambda^3V$, $4+4$ |
-| Hodge pairs | $(\gamma^0,\gamma^{123})$, $(\gamma^1,\gamma^{023})$, $(\gamma^2,\gamma^{013})$, $(\gamma^3,\gamma^{012})$ |
+| Hodge pairs | $(\gamma_0,\gamma_{123})$, $(\gamma_1,\gamma_{023})$, $(\gamma_2,\gamma_{013})$, $(\gamma_3,\gamma_{012})$ |
 | five gammas | $iT_{tx},iT_{xy},iT_{yy},iT_{zy},-iT_{tz}$ |
 | scalar | $T_{tt}=I$ |
-| pseudoscalar | $T_{tz}=i\gamma^5$ |
+| pseudoscalar | $T_{tz}=i\gamma_5$ |
 | vectors | $T_{tx},T_{xy},T_{yy},T_{zy}$ |
 | trivectors | $T_{ty},T_{xx},T_{yx},T_{zx}$ |
 | bivectors | $T_{xt},T_{xz},T_{yt},T_{yz},T_{zt},T_{zz}$ |
@@ -209,9 +209,9 @@ and the five gammas are $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy
 | $\mathrm{Cl}^{\le k}$ | the filtration layer of products of at most $k$ vectors |
 | $\operatorname{gr}\mathrm{Cl}$ | the associated graded algebra, $\Lambda^{\bullet}V$ |
 | $\alpha$ | the grade involution |
-| $\gamma^\mu$ | the four vector gammas |
-| $\gamma^{\mu\nu}$, $\gamma^{\mu\nu\rho}$ | the bivectors and trivectors |
-| $\gamma^5$ | the pseudoscalar |
+| $\gamma_\mu$ | the four vector gammas |
+| $\gamma_{\mu\nu}$, $\gamma_{\mu\nu\rho}$ | the bivectors and trivectors |
+| $\gamma_5$ | the pseudoscalar |
 | $T_{\mu\nu}$ | the two-sided operator $L_\mu R_\nu$ |
 | $\mathbb{B}$ | the biquaternion algebra, $\mathrm{Cl}^{0}$ |
 | $V$ | the Lorentzian vector space, grade 1 |

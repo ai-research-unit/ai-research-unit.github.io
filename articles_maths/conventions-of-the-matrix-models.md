@@ -225,26 +225,26 @@ The sixteen products of the five generators span over $\mathbb{R}$ the algebra $
 
 **The gamma frame.** The five Dirac generators are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Differential Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
-\boxed{\;\gamma^0=iR_x=iT_{tx},\qquad
-\gamma^1=iL_xR_y=iT_{xy},\qquad
-\gamma^2=iL_yR_y=iT_{yy},\qquad
-\gamma^3=iL_zR_y=iT_{zy},\qquad
+\boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
+\gamma_1=iL_xR_y=iT_{xy},\qquad
+\gamma_2=iL_yR_y=iT_{yy},\qquad
+\gamma_3=iL_zR_y=iT_{zy},\qquad
 \gamma_5=-iR_z=-iT_{tz}\;}
 $$
 In the canonical frame their matrices are
 $$
-\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $(\gamma^k)^2=-I_4$ and $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$. In the Pauli form the same five are
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
-\gamma^0=\sigma_1\otimes I_2,\qquad
-\gamma^k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_0=\sigma_1\otimes I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 
@@ -253,37 +253,37 @@ $$
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
 | $0$ | $1$ | $T_{tt}$ | $T_{tt}=I_4$ |
-| $1$ | $\gamma^0$ | $T_{tx}$ | $T_{tx}=-i\,\gamma^0$ |
-| $1$ | $\gamma^1$ | $T_{xy}$ | $T_{xy}=-i\,\gamma^1$ |
-| $1$ | $\gamma^2$ | $T_{yy}$ | $T_{yy}=-i\,\gamma^2$ |
-| $1$ | $\gamma^3$ | $T_{zy}$ | $T_{zy}=-i\,\gamma^3$ |
-| $2$ | $\gamma^0\gamma^1$ | $T_{xz}$ | $T_{xz}=\gamma^0\gamma^1$ |
-| $2$ | $\gamma^0\gamma^2$ | $T_{yz}$ | $T_{yz}=\gamma^0\gamma^2$ |
-| $2$ | $\gamma^0\gamma^3$ | $T_{zz}$ | $T_{zz}=\gamma^0\gamma^3$ |
-| $2$ | $\gamma^1\gamma^2$ | $T_{zt}$ | $T_{zt}=\gamma^1\gamma^2$ |
-| $2$ | $\gamma^1\gamma^3$ | $T_{yt}$ | $T_{yt}=-\gamma^1\gamma^3$ |
-| $2$ | $\gamma^2\gamma^3$ | $T_{xt}$ | $T_{xt}=\gamma^2\gamma^3$ |
-| $3$ | $\gamma^0\gamma^1\gamma^2$ | $T_{zx}$ | $T_{zx}=-i\,\gamma^0\gamma^1\gamma^2$ |
-| $3$ | $\gamma^0\gamma^1\gamma^3$ | $T_{yx}$ | $T_{yx}=i\,\gamma^0\gamma^1\gamma^3$ |
-| $3$ | $\gamma^0\gamma^2\gamma^3$ | $T_{xx}$ | $T_{xx}=-i\,\gamma^0\gamma^2\gamma^3$ |
-| $3$ | $\gamma^1\gamma^2\gamma^3$ | $T_{ty}$ | $T_{ty}=i\,\gamma^1\gamma^2\gamma^3$ |
-| $4$ | $\gamma^0\gamma^1\gamma^2\gamma^3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma^0\gamma^1\gamma^2\gamma^3$ |
+| $1$ | $\gamma_0$ | $T_{tx}$ | $T_{tx}=-i\,\gamma_0$ |
+| $1$ | $\gamma_1$ | $T_{xy}$ | $T_{xy}=-i\,\gamma_1$ |
+| $1$ | $\gamma_2$ | $T_{yy}$ | $T_{yy}=-i\,\gamma_2$ |
+| $1$ | $\gamma_3$ | $T_{zy}$ | $T_{zy}=-i\,\gamma_3$ |
+| $2$ | $\gamma_0\gamma_1$ | $T_{xz}$ | $T_{xz}=\gamma_0\gamma_1$ |
+| $2$ | $\gamma_0\gamma_2$ | $T_{yz}$ | $T_{yz}=\gamma_0\gamma_2$ |
+| $2$ | $\gamma_0\gamma_3$ | $T_{zz}$ | $T_{zz}=\gamma_0\gamma_3$ |
+| $2$ | $\gamma_1\gamma_2$ | $T_{zt}$ | $T_{zt}=\gamma_1\gamma_2$ |
+| $2$ | $\gamma_1\gamma_3$ | $T_{yt}$ | $T_{yt}=-\gamma_1\gamma_3$ |
+| $2$ | $\gamma_2\gamma_3$ | $T_{xt}$ | $T_{xt}=\gamma_2\gamma_3$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $T_{zx}$ | $T_{zx}=-i\,\gamma_0\gamma_1\gamma_2$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $T_{yx}$ | $T_{yx}=i\,\gamma_0\gamma_1\gamma_3$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $T_{xx}$ | $T_{xx}=-i\,\gamma_0\gamma_2\gamma_3$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
 Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*A Gamma Frame, and the Choice Behind It* of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, equivalently $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, equivalently $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
-A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum.
-A derivative contraction is $i\gamma^\mu\partial/\partial x^\mu$ with $x^0=t'$.
-If the $Q$ frame is used, it is written $\gamma^\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators,
-and never with the $x$-frame generators: the mixed form $i\gamma^\mu\partial/\partial Q_\mu$ belongs to neither frame.
+A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
+A derivative contraction is $i\gamma_\mu\partial/\partial x^\mu$ with $x^0=t'$.
+If the $Q$ frame is used, it is written $\gamma_\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators,
+and never with the $x$-frame generators: the mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\gamma^\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+\gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
 $$
 so the frame is visible in the formula.
 
@@ -317,7 +317,7 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $\gamma^\mu,\gamma_5$ | The generators of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| $\gamma_\mu,\gamma_5$ | The generators of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
 | $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
 

@@ -14,7 +14,7 @@ This article states the definition and the axioms, derives the distance formula,
 1. the commutators $[D,\pi(a)]$ extend to bounded operators on $H$ for all $a\in A$, and
 2. $D$ has compact resolvent, $(D-i)^{-1}$ compact.
 
-The triple is **even** if there is a $\mathbb{Z}/2$-grading $\gamma$ on $H$, $\gamma=\gamma^{*}$, $\gamma^{2}=1$, with $\gamma D=-D\gamma$ and $\gamma\pi(a)=\pi(a)\gamma$ for all $a\in A$; and **odd** otherwise.
+The triple is **even** if there is a $\mathbb{Z}/2$-grading $\gamma$ on $H$, $\gamma=\gamma_{}^{*}$, $\gamma_{2}=1$, with $\gamma D=-D\gamma$ and $\gamma\pi(a)=\pi(a)\gamma$ for all $a\in A$; and **odd** otherwise.
 
 **Definition.** The **dimension** of a spectral triple is the number $p>0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(\exp(-tD^{2}))\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following **axioms**: *regularity*, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; *finiteness*, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; *reality*, the existence of a real structure (below); *first order*, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and *orientation*, that the Hochschild cycle representing the volume element maps to the chirality operator.
 
@@ -197,7 +197,7 @@ The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\do
 | $\pi\colon A\to\mathcal{B}(H)$ | Representation of $A$ |
 | $[D,\pi(a)]$ bounded | First-order condition; $D$ is a first-order operator |
 | $(D-i)^{-1}$ compact | Compact-resolvent condition; closed geometry |
-| $\gamma$ | Chirality grading, $\gamma^{2}=1$, $\gamma D=-D\gamma$ |
+| $\gamma$ | Chirality grading, $\gamma_{2}=1$, $\gamma D=-D\gamma$ |
 | $d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$ | Connes distance |
 | $[D,f]=c(df)$ | Commutator of the operator with a function; Clifford multiplication by the gradient |
 | $J$ | Real structure, antilinear isometry |

@@ -461,20 +461,20 @@ $$
 
 **The five matrices.** In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
 $$
-\gamma^0=iT_{tx},\qquad
-\gamma^1=iT_{xy},\qquad
-\gamma^2=iT_{yy},\qquad
-\gamma^3=iT_{zy},\qquad
+\gamma_0=iT_{tx},\qquad
+\gamma_1=iT_{xy},\qquad
+\gamma_2=iT_{yy},\qquad
+\gamma_3=iT_{zy},\qquad
 \gamma_5=-iT_{tz}.
 $$
 
 **The Clifford relations.** With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
 $$
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}\mathrm{I}_4,
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
 \qquad
-\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3,
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
 \qquad
-\{\gamma_5,\gamma^\mu\}=0.
+\{\gamma_5,\gamma_\mu\}=0.
 $$
 
 **The chirality projectors.**
@@ -551,7 +551,7 @@ $$
 | $c(A)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ |
 | $\ell(A)$ | the length, the least number of products |
 | $Q_8$ | the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$ |
-| $\gamma^\mu,\gamma_5$ | the gamma frame of the corpus |
+| $\gamma_\mu,\gamma_5$ | the gamma frame of the corpus |
 | $D$ | $\operatorname{diag}(1,-1,-1,-1)$, the carrier of the right family |
 
 ## Further Reading

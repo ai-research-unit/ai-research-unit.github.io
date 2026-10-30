@@ -63,11 +63,11 @@ $$
 the field of a charge in uniform motion is, in closed form about the **present** position,
 $$
 \vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2 + (1-\beta^2)\,d_\perp^2\right)^{3/2}}
-= \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2 + d_\perp^2/\gamma^2\right)^{3/2}},
+= \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2 + d_\perp^2/\gamma_2\right)^{3/2}},
 \qquad
 \vec B = \frac{1}{c^2}\,\vec v\times\vec E,
 $$
-with $\gamma = (1-\beta^2)^{-1/2}$. The electric field is radial *from the present position*, falls as $1/d^2$ at fixed direction, and is anisotropic: enhanced by $\gamma$ in the plane transverse to the motion and suppressed by $1/\gamma^2$ along it. Surfaces of constant $D$ — hence of constant scalar potential — are oblate spheroids flattened along the direction of motion, which is the "Heaviside ellipsoid" of the title.
+with $\gamma = (1-\beta^2)^{-1/2}$. The electric field is radial *from the present position*, falls as $1/d^2$ at fixed direction, and is anisotropic: enhanced by $\gamma$ in the plane transverse to the motion and suppressed by $1/\gamma_2$ along it. Surfaces of constant $D$ — hence of constant scalar potential — are oblate spheroids flattened along the direction of motion, which is the "Heaviside ellipsoid" of the title.
 
 ## The Problem
 
@@ -132,7 +132,7 @@ $$
 D = \sqrt{\beta^2 d_\parallel^2 + (1-\beta^2)d^2}
 = \sqrt{d_\parallel^2 + (1-\beta^2)d_\perp^2},
 $$
-where $d^2 = d_\parallel^2+d_\perp^2$ was used in the last step. Equivalently $D = \sqrt{d_\parallel^2 + d_\perp^2/\gamma^2}$. For the first present-position identity, divide the retarded-separation identity by $R$:
+where $d^2 = d_\parallel^2+d_\perp^2$ was used in the last step. Equivalently $D = \sqrt{d_\parallel^2 + d_\perp^2/\gamma_2}$. For the first present-position identity, divide the retarded-separation identity by $R$:
 $$
 \vec u_R - \vec\beta = \frac{\vec R - R\vec\beta}{R} = \frac{\vec d}{R}.
 $$
@@ -170,13 +170,13 @@ $$
 $$
 because $\vec E\parallel\vec d$, and hence $\vec B = \frac{1}{c}\vec u_R\times\vec E = \frac{1}{c}\vec\beta\times\vec E = \frac{1}{c^2}\vec v\times\vec E$. It follows that $\vec B\perp\vec E$ for every configuration.
 
-**Solution (b).** At a fixed direction $\vec u_d$ one has $D = d\sqrt{\cos^2\theta + \sin^2\theta/\gamma^2}$, where $\theta$ is the angle between $\vec d$ and $\vec v$, so $D\propto d$ and
+**Solution (b).** At a fixed direction $\vec u_d$ one has $D = d\sqrt{\cos^2\theta + \sin^2\theta/\gamma_2}$, where $\theta$ is the angle between $\vec d$ and $\vec v$, so $D\propto d$ and
 $$
-|\vec E| = \frac{ϙ}{4\pi\epsilon}\,\frac{1-\beta^2}{d^2\left(\cos^2\theta + \sin^2\theta/\gamma^2\right)^{3/2}} \propto \frac{1}{d^2}.
+|\vec E| = \frac{ϙ}{4\pi\epsilon}\,\frac{1-\beta^2}{d^2\left(\cos^2\theta + \sin^2\theta/\gamma_2\right)^{3/2}} \propto \frac{1}{d^2}.
 $$
 The falloff is therefore inverse-square about the present position, with no residual $\kappa$-dependence once the direction is held fixed. The surfaces of constant scalar potential, $\phi = \frac{ϙ}{4\pi\epsilon D} = \text{const}$, are
 $$
-d_\parallel^2 + \frac{d_\perp^2}{\gamma^2} = D_0^2 ,
+d_\parallel^2 + \frac{d_\perp^2}{\gamma_2} = D_0^2 ,
 $$
 ellipsoids of revolution about the velocity axis with semiaxis $D_0$ along the motion and $\gamma D_0$ transverse to it: flattened along the direction of motion, the **Heaviside ellipsoid**. The same flattening is visible in the field: it is enhanced in the transverse plane and suppressed along the motion, as Problem 4 makes quantitative.
 
@@ -216,25 +216,25 @@ where $E_C = \frac{ϙ}{4\pi\epsilon d^2}$ is the Coulomb field at the same dista
 
 **Statement.** (a) With $\theta$ the angle between $\vec d$ and $\vec v$, write the field magnitude as
 $$
-|\vec E| = \frac{ϙ}{4\pi\epsilon d^2}\,\frac{1}{\gamma^2\left(1-\beta^2\sin^2\theta\right)^{3/2}},
+|\vec E| = \frac{ϙ}{4\pi\epsilon d^2}\,\frac{1}{\gamma_2\left(1-\beta^2\sin^2\theta\right)^{3/2}},
 $$
-and show that it is peaked at $\theta=\pi/2$, enhanced by $\gamma$ over the Coulomb field at the same distance, suppressed by $1/\gamma^2$ at $\theta=0$, and of angular width of order $1/\gamma$. (b) Determine in exactly what sense the field becomes purely transverse. (c) Show that the $1/d^2$ law and the radial direction survive the limit.
+and show that it is peaked at $\theta=\pi/2$, enhanced by $\gamma$ over the Coulomb field at the same distance, suppressed by $1/\gamma_2$ at $\theta=0$, and of angular width of order $1/\gamma$. (b) Determine in exactly what sense the field becomes purely transverse. (c) Show that the $1/d^2$ law and the radial direction survive the limit.
 
 **Solution (a).** With $d_\parallel = d\cos\theta$ and $d_\perp = d\sin\theta$,
 $$
-D = d\sqrt{\cos^2\theta + \frac{\sin^2\theta}{\gamma^2}} = d\sqrt{1-\beta^2\sin^2\theta},
+D = d\sqrt{\cos^2\theta + \frac{\sin^2\theta}{\gamma_2}} = d\sqrt{1-\beta^2\sin^2\theta},
 $$
 so
 $$
-\frac{|\vec E|}{E_C} = \frac{1}{\gamma^2\left(1-\beta^2\sin^2\theta\right)^{3/2}},
+\frac{|\vec E|}{E_C} = \frac{1}{\gamma_2\left(1-\beta^2\sin^2\theta\right)^{3/2}},
 \qquad
 E_C = \frac{ϙ}{4\pi\epsilon d^2}.
 $$
-At $\theta=\pi/2$ the factor is $1/(\gamma^2(1-\beta^2)^{3/2}) = 1/(\gamma^2\gamma^{-3}) = \gamma$: the transverse field is larger than the Coulomb field at the same distance by $\gamma$. At $\theta=0$ it is $1/\gamma^2$. The profile is monotone in $\theta\in[0,\pi/2]$ and symmetric about the transverse plane. Expanding near $\theta=\pi/2$, with $\delta = \pi/2-\theta$,
+At $\theta=\pi/2$ the factor is $1/(\gamma_2(1-\beta^2)^{3/2}) = 1/(\gamma_2\gamma_{-3}) = \gamma$: the transverse field is larger than the Coulomb field at the same distance by $\gamma$. At $\theta=0$ it is $1/\gamma_2$. The profile is monotone in $\theta\in[0,\pi/2]$ and symmetric about the transverse plane. Expanding near $\theta=\pi/2$, with $\delta = \pi/2-\theta$,
 $$
-\frac{|\vec E|}{E_C} \approx \frac{1}{\gamma^2\left(\delta^2+\gamma^{-2}\right)^{3/2}},
+\frac{|\vec E|}{E_C} \approx \frac{1}{\gamma_2\left(\delta^2+\gamma_{-2}\right)^{3/2}},
 $$
-so the half-maximum condition gives $\delta_{1/2}^2 = (2^{2/3}-1)/\gamma^2$, i.e.
+so the half-maximum condition gives $\delta_{1/2}^2 = (2^{2/3}-1)/\gamma_2$, i.e.
 $$
 \delta_{1/2} = \frac{\sqrt{2^{2/3}-1}}{\gamma} \approx \frac{0.766}{\gamma}.
 $$
@@ -248,7 +248,7 @@ $$
 $$
 - At a fixed **impact parameter** $b = d_\perp$, the field is concentrated in $|d_\parallel|\lesssim b/\gamma$. The transverse peak at $d_\parallel = 0$ is $\gamma ϙ/(4\pi\epsilon b^2)$, while the longitudinal component has a $\gamma$-independent maximum. From
 $$
-E_\parallel = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,d_\parallel}{\left(d_\parallel^2+b^2/\gamma^2\right)^{3/2}},
+E_\parallel = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,d_\parallel}{\left(d_\parallel^2+b^2/\gamma_2\right)^{3/2}},
 $$
 the maximum occurs at $d_\parallel = -b/(\sqrt{2}\gamma)$ and equals
 $$
@@ -261,9 +261,9 @@ $$
 $$
 In this precise sense — the pancake at fixed impact parameter — the ultrarelativistic field becomes **purely transverse**: the longitudinal component is a factor $1/\gamma$ down, and the field in the transverse plane is exactly perpendicular to the motion. The weaker interpretation ("$\vec E$ is transverse at every point") is false at every finite $\gamma$ and is not what the limit delivers; we record the caveat rather than smooth it over.
 
-**Solution (c).** At fixed $\theta$ the magnitude is $E_C/(\gamma^2(1-\beta^2\sin^2\theta)^{3/2}) \propto 1/d^2$: the inverse-square law about the present position is untouched by the limit, which only moves magnitude from the axis into the transverse plane. Because $\vec E\parallel\vec d$ for every $\beta$, the field remains radial from the present position; in the transverse plane that radial direction is itself perpendicular to $\vec v$.
+**Solution (c).** At fixed $\theta$ the magnitude is $E_C/(\gamma_2(1-\beta^2\sin^2\theta)^{3/2}) \propto 1/d^2$: the inverse-square law about the present position is untouched by the limit, which only moves magnitude from the axis into the transverse plane. Because $\vec E\parallel\vec d$ for every $\beta$, the field remains radial from the present position; in the transverse plane that radial direction is itself perpendicular to $\vec v$.
 
-**Evidence.** For $\beta = 0.9,\,0.99,\,0.999,\,0.9999$ (i.e. $\gamma = 2.294$ through $70.712$), the transverse field in the plane $d_\parallel=0$ equalled $\gamma$ times the Coulomb field and the axial field $1/\gamma^2$ times it, to the displayed digits; the ratio $E_\parallel/E_\perp$ at $45^\circ$ was $1.000000$ for every $\gamma$; the half-width from the exact profile matched $0.766/\gamma$; and at fixed $b=1$ the ratio $\max|E_\parallel|/E_\perp$ was $1.68\times10^{-1},\,5.43\times10^{-2},\,1.72\times10^{-2},\,5.44\times10^{-3}$ as $\gamma$ grew, i.e. proportional to $1/\gamma$ with the analytic coefficient $0.385$, while $\max|E_\parallel| = 0.030629 = 0.3849/(4\pi)$ was $\gamma$-independent. The $1/d^2$ falloff at fixed direction was verified separately by scaling $d$ by $2,4,8$.
+**Evidence.** For $\beta = 0.9,\,0.99,\,0.999,\,0.9999$ (i.e. $\gamma = 2.294$ through $70.712$), the transverse field in the plane $d_\parallel=0$ equalled $\gamma$ times the Coulomb field and the axial field $1/\gamma_2$ times it, to the displayed digits; the ratio $E_\parallel/E_\perp$ at $45^\circ$ was $1.000000$ for every $\gamma$; the half-width from the exact profile matched $0.766/\gamma$; and at fixed $b=1$ the ratio $\max|E_\parallel|/E_\perp$ was $1.68\times10^{-1},\,5.43\times10^{-2},\,1.72\times10^{-2},\,5.44\times10^{-3}$ as $\gamma$ grew, i.e. proportional to $1/\gamma$ with the analytic coefficient $0.385$, while $\max|E_\parallel| = 0.030629 = 0.3849/(4\pi)$ was $\gamma$-independent. The $1/d^2$ falloff at fixed direction was verified separately by scaling $d$ by $2,4,8$.
 
 ## Problem 5: The Boost Rotor and the Field as a Boosted Coulomb Field
 
@@ -301,7 +301,7 @@ Now let the charge move with velocity $\vec v = \vec v_b$ in the lab, and let $\
 $$
 \vec d_2 = \gamma\,d_\parallel\,\vec u_v + \vec d_\perp,
 \qquad
-d_2 = \sqrt{\gamma^2d_\parallel^2+d_\perp^2} = \gamma D :
+d_2 = \sqrt{\gamma_2d_\parallel^2+d_\perp^2} = \gamma D :
 $$
 the parallel component is stretched by $\gamma$, which is length contraction read in the inverse direction — the rest-frame sphere of radius $d_2$ appears in the lab as the Heaviside ellipsoid of Problem 2. The rest-frame field is
 $$
@@ -314,7 +314,7 @@ $$
 Transforming back to the lab, $\vec E_\parallel = \vec E_{2,\parallel}$ and $\vec E_\perp = \gamma\vec E_{2,\perp}$ (since $\vec B_2=0$), so
 $$
 \vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{\gamma\,\vec d}{d_2^3}
-= \frac{ϙ}{4\pi\epsilon}\,\frac{\gamma\,\vec d}{\gamma^3 D^3}
+= \frac{ϙ}{4\pi\epsilon}\,\frac{\gamma\,\vec d}{\gamma_3 D^3}
 = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{D^3},
 $$
 which is exactly the closed form of Problem 2. The magnetic field carried back by the boost is $\vec B = \frac{1}{c^2}\vec v\times\vec E$.
@@ -337,7 +337,7 @@ $$
 \qquad
 \Lambda(\theta) = \frac{1-\beta^2}{\left(1-\beta^2\sin^2\theta\right)^{3/2}} = \frac{(1-\beta^2)\,d^3}{D^3}.
 $$
-The scalar factor $\Lambda$ runs from $1/\gamma^2$ along the motion to $\gamma$ in the transverse plane, so the present-position Coulomb formula fails by an anisotropic factor that is not a small correction at relativistic speeds. Nor is the retarded-position Coulomb formula correct: $\vec E_C^{\text{ret}} = \frac{ϙ}{4\pi\epsilon}\vec u_R/R^2$ points along $\vec u_R$, not along $\vec d$, and its magnitude differs as well. The correct statement is the exact one of Problem 2: the field is radial *from the present position* with the Heaviside magnitude; neither the retarded nor the present position alone determines it.
+The scalar factor $\Lambda$ runs from $1/\gamma_2$ along the motion to $\gamma$ in the transverse plane, so the present-position Coulomb formula fails by an anisotropic factor that is not a small correction at relativistic speeds. Nor is the retarded-position Coulomb formula correct: $\vec E_C^{\text{ret}} = \frac{ϙ}{4\pi\epsilon}\vec u_R/R^2$ points along $\vec u_R$, not along $\vec d$, and its magnitude differs as well. The correct statement is the exact one of Problem 2: the field is radial *from the present position* with the Heaviside magnitude; neither the retarded nor the present position alone determines it.
 
 **Solution (c).** With $\vec B = \frac{1}{c^2}\vec v\times\vec E$ one has $\vec E\perp\vec B$ and
 $$
@@ -355,17 +355,17 @@ $$
 $$
 The field is of electric type, is **not** null, and is not a zero divisor: $\langle\tilde{F}\rangle_{\natural}\neq0$ and $\tilde{F}^2\neq0$. It therefore carries no radiation, in agreement with $d\vec\beta/dt'_r=0$; the contrast with the parent's acceleration field, whose $\tilde{F}_a$ *is* a zero divisor, is exact.
 
-**Evidence.** (a) The three checks just listed gave $2.1\times10^{-17}$ (rotor boost), the exact $\beta^2$ law of Problem 3, and the exact $\gamma$ and $1/\gamma^2$ laws of Problem 4. (b) The ratio $|\vec E|/|\vec E_C^{\text{present}}| = \Lambda(\theta)$ was computed at $\beta=0.5,0.9,0.99$: at $\beta=0.9$ it was $0.190$ along the motion, $0.267$ at $30^\circ$, $0.773$ at $60^\circ$, and $2.294=\gamma$ transverse; at $\beta=0.99$ it was $0.0199$, $0.0303$, $0.1459$, and $7.089$. (c) Over thirty random uniform worldlines, $|I_1-(\vec u_R\cdot\vec E)^2| \le 1.7\times10^{-18}$, $|I_2|\le 4.1\times10^{-20}$, and $|\langle\tilde{F}\rangle_{\natural}+\epsilon I_1| \le 8.7\times10^{-19}$; $\tilde{F}^2$ was nonzero (of order $10^{-3}$ in the sample), so the field is not a zero divisor.
+**Evidence.** (a) The three checks just listed gave $2.1\times10^{-17}$ (rotor boost), the exact $\beta^2$ law of Problem 3, and the exact $\gamma$ and $1/\gamma_2$ laws of Problem 4. (b) The ratio $|\vec E|/|\vec E_C^{\text{present}}| = \Lambda(\theta)$ was computed at $\beta=0.5,0.9,0.99$: at $\beta=0.9$ it was $0.190$ along the motion, $0.267$ at $30^\circ$, $0.773$ at $60^\circ$, and $2.294=\gamma$ transverse; at $\beta=0.99$ it was $0.0199$, $0.0303$, $0.1459$, and $7.089$. (c) Over thirty random uniform worldlines, $|I_1-(\vec u_R\cdot\vec E)^2| \le 1.7\times10^{-18}$, $|I_2|\le 4.1\times10^{-20}$, and $|\langle\tilde{F}\rangle_{\natural}+\epsilon I_1| \le 8.7\times10^{-19}$; $\tilde{F}^2$ was nonzero (of order $10^{-3}$ in the sample), so the field is not a zero divisor.
 
 ## What the Uniform Case Adds, and What It Leaves Open
 
-**What it adds.** The uniform case turns the parent's implicit retarded construction into explicit algebra. The retarded position is available in closed form, and the identity $\vec u_R-\vec\beta = \vec d/R$ shows *why* the parent's velocity field can be written about the present position at all: the retarded combination that appears in the numerator is always parallel to the present separation, while the denominator collapses to $D=\sqrt{d_\parallel^2+d_\perp^2/\gamma^2}$. The resulting closed form is exactly the boost of the Coulomb field, so the parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor" is confirmed as an exact statement, with the similarity law doing the work. The two limits are then checked independently, and the ultrarelativistic pancake is made quantitative.
+**What it adds.** The uniform case turns the parent's implicit retarded construction into explicit algebra. The retarded position is available in closed form, and the identity $\vec u_R-\vec\beta = \vec d/R$ shows *why* the parent's velocity field can be written about the present position at all: the retarded combination that appears in the numerator is always parallel to the present separation, while the denominator collapses to $D=\sqrt{d_\parallel^2+d_\perp^2/\gamma_2}$. The resulting closed form is exactly the boost of the Coulomb field, so the parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor" is confirmed as an exact statement, with the similarity law doing the work. The two limits are then checked independently, and the ultrarelativistic pancake is made quantitative.
 
 **What it leaves open, recorded rather than closed.**
 
 1. **"Purely transverse" is a statement about the pancake, not about every direction.** The exact content is: in the transverse plane the field is exactly perpendicular to $\vec v$, and at fixed impact parameter the longitudinal component is a factor $0.385/\gamma$ below the transverse peak. At a fixed direction the longitudinal fraction is $\cos\theta$, independent of $\gamma$, so the naive interpretation is false at every finite $\gamma$. This is a clarification, not a defect, but it is the step most easily smoothed over.
 2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $d\vec v/dt'_r\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
-3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
+3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma_2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
 4. **The similarity law is used, not derived.** We inherited $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
 5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
@@ -382,13 +382,13 @@ $$
 The second of these is the key: the retarded combination in the numerator of the parent's velocity field is **parallel to the present separation**, so the field can be written entirely in terms of $\vec d$. Substituting into the parent's $\vec E_v$ gives the Heaviside ellipsoid field
 $$
 \boxed{\;
-\vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2+d_\perp^2/\gamma^2\right)^{3/2}},
+\vec E = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\,\vec d}{\left(d_\parallel^2+d_\perp^2/\gamma_2\right)^{3/2}},
 \qquad
 \vec B = \frac{1}{c^2}\,\vec v\times\vec E\;},
 $$
 which is radial from the *present* position, falls as $1/d^2$ at fixed direction, and is flattened along the motion. The acceleration field vanishes identically, so the field is of electric type and not null: $I_1 = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{D^2}\right)^2>0$, $I_2=0$, $\langle\tilde{F}\rangle_{\natural}=-\epsilon I_1\neq0$, $\tilde{F}^2=\epsilon I_1\neq0$; it is never a zero divisor and never radiation.
 
-The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma^2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde U_{\vec v_b}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\vec v_b$ carries the laboratory to the frame moving with $+\vec v_b$, and that the field transforms by the similarity $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by four-vector rotor conjugation.
+The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma_2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde U_{\vec v_b}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\vec v_b$ carries the laboratory to the frame moving with $+\vec v_b$, and that the field transforms by the similarity $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by four-vector rotor conjugation.
 
 Two things are recorded rather than closed. The first is a clarification: "purely transverse in the ultrarelativistic limit" is exact for the transverse plane and at fixed impact parameter, but false at every finite $\gamma$ if read as a statement about every fixed direction, where the longitudinal fraction is $\gamma$-independent. The second is that the exact reduction to the boosted Coulomb field assumes strictly uniform motion; a charge only instantaneously unaccelerated still carries an acceleration field at the emission event.
 
@@ -415,7 +415,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\kappa = 1-\vec u_R\cdot\vec\beta$, $D = R\kappa$ | Retarded denominator (inherited) |
 | $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, $d = |\vec d|$, $\vec u_d = \vec d/d$ | Present separation from the charge's present position |
 | $d_\parallel = \vec u_v\cdot\vec d$, $d_\perp^2 = d^2-d_\parallel^2$ | Components parallel and perpendicular to the motion |
-| $D = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2} = \sqrt{d_\parallel^2+d_\perp^2/\gamma^2}$ | Retarded denominator in closed form |
+| $D = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2} = \sqrt{d_\parallel^2+d_\perp^2/\gamma_2}$ | Retarded denominator in closed form |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor of the (constant) velocity |
 | $\vec u_R-\vec\beta = \vec d/R$, $\vec u_R\cdot\vec d = D$ | Present-position identities of Problem 1 |
 | $\vec E, \vec B$ | Electric field and magnetic induction; $\vec B = \vec v\times\vec E/c^2$ |

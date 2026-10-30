@@ -124,7 +124,7 @@ $$
 
 where $V$ is the parallel section with $V(a) = v$.
 
-**Theorem.** The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma^{-1}} = P_\gamma^{-1}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the **holonomy group**, and its identity component is the holonomy group of the connection.
+**Theorem.** The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma_{-1}} = P_\gamma_{-1}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the **holonomy group**, and its identity component is the holonomy group of the connection.
 
 *Proof.* Linearity and invertibility are the linearity of the equation and the reversibility of the curve. Reparametrisation invariance is the chain rule, which replaces $d\gamma/dt$ by a positive multiple and leaves the equation's solution set unchanged. The concatenation and inverse laws are the uniqueness of the solution of the initial-value problem applied to the two subintervals and to the reversed curve. The group laws follow, and the closed curves at a fixed base give a subgroup of the linear group of the fibre, which is a Lie subgroup because the transport depends smoothly on the curve.
 
@@ -140,7 +140,7 @@ as $\epsilon \to 0$. Consequently the curvature endomorphisms $R(X,Y)(x)$ span t
 
 ### The Autoparallel Curves
 
-**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $d^2\gamma^{i}/dt^2 + \sum_{j,k}\Gamma^i_{jk}d\gamma^{j}/dt d\gamma^{k}/dt = 0$.
+**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $d^2\gamma_{i}/dt^2 + \sum_{j,k}\Gamma^i_{jk}d\gamma_{j}/dt d\gamma_{k}/dt = 0$.
 
 The autoparallel curves are the straight lines of the connection: they are the curves whose velocity is parallel along themselves, and in a flat frame they are the linear curves. For the Levi–Civita connection of a Riemannian metric they are the geodesics, and the metric geometry of those curves — the exponential map, the length-minimising property, the completeness — is *Riemannian Geometry* and *Curvature and Geodesics* in Part IV; what belongs to the present article is the differential equation, its existence and uniqueness by *Ordinary Differential Equations*, and the fact that the equation is the same for every connection on the tangent bundle.
 

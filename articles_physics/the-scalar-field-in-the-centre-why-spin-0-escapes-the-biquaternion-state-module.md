@@ -306,7 +306,7 @@ $$
 \tilde{U}\,\psi\chi^{*}\,\tilde{U}^{*} ,
 $$
 
-which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde Q^{*}=\tilde Q^{-1}$, but **not** under boosts, where $\tilde Q^{*}\tilde Q\neq e_t$. The object $\psi\chi^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
+which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde Q^{*}=\tilde Q^{-1}$, but **not** under boosts, where $\tilde Q^{*}\tilde Q\neq e_t$. The object $\psi\chi^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma_\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
 
 The Lorentz-invariant scalars are instead the two pairings developed in the companion article on the spinor module. The **symplectic pairing** of two spinors of the same chirality,
 

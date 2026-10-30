@@ -75,19 +75,19 @@ where $\psi_L$ and $\psi_R$ are the left- and right-handed Weyl spinors. The Dir
 
 ### The Isomorphism
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a **real algebra**, to the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the real Clifford algebra $\mathrm{Cl}_{1,3}$. The even subalgebra consists of products of an even number of gamma matrices: the identity $I$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$. It has real dimension $8$, matching the real dimension of $\mathbb{B}$.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a **real algebra**, to the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the real Clifford algebra $\mathrm{Cl}_{1,3}$. The even subalgebra consists of products of an even number of gamma matrices: the identity $I$, the six bivectors $\gamma_\mu\gamma_\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma_0\gamma_1\gamma_2\gamma_3$. It has real dimension $8$, matching the real dimension of $\mathbb{B}$.
 
 **A note on the convention.** It is important to keep two things distinct. The biquaternion algebra $\mathbb{B}$ is a **real algebra of dimension 8**, and it is the even part of the **real** Clifford algebra. It is **not** the even part of the **complexified** Clifford algebra $\mathbb{C}\otimes \mathrm{Cl}_{1,3}$, which has complex dimension 8 (real dimension 16) and is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
 
-**The isomorphism.** The bivectors of $\mathrm{Cl}_{1,3}^+$ span a 6-dimensional real space. Three of them are timelike-spacelike, $\gamma^0\gamma^k$, and have square $+I$. Three are spacelike-spacelike, $\gamma^j\gamma^k$ with $j,k \in \{1,2,3\}$, and have square $-I$. The three spacelike bivectors generate a copy of the quaternions $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$. The isomorphism is given by mapping the quaternion units to three mutually anticommuting spacelike bivectors, oriented so that $\vec e_x \vec e_y = \vec e_z$. Concretely, one valid assignment is
+**The isomorphism.** The bivectors of $\mathrm{Cl}_{1,3}^+$ span a 6-dimensional real space. Three of them are timelike-spacelike, $\gamma_0\gamma_k$, and have square $+I$. Three are spacelike-spacelike, $\gamma_j\gamma_k$ with $j,k \in \{1,2,3\}$, and have square $-I$. The three spacelike bivectors generate a copy of the quaternions $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$. The isomorphism is given by mapping the quaternion units to three mutually anticommuting spacelike bivectors, oriented so that $\vec e_x \vec e_y = \vec e_z$. Concretely, one valid assignment is
 
 $$
-\vec e_x \mapsto \gamma^2\gamma^3, \qquad \vec e_y \mapsto \gamma^3\gamma^1, \qquad \vec e_z \mapsto \gamma^1\gamma^2.
+\vec e_x \mapsto \gamma_2\gamma_3, \qquad \vec e_y \mapsto \gamma_3\gamma_1, \qquad \vec e_z \mapsto \gamma_1\gamma_2.
 $$
 
-The choice of which bivector corresponds to which quaternion unit is a convention; different choices are related by rotations of the spatial frame. With the mostly-minus generators the three signs can be taken positive simultaneously, since $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$ and $\vec e_x \vec e_y = \vec e_z$; under the opposite sign of the metric that is impossible, and one of the three bivectors must be reversed.
+The choice of which bivector corresponds to which quaternion unit is a convention; different choices are related by rotations of the spatial frame. With the mostly-minus generators the three signs can be taken positive simultaneously, since $(\gamma_2\gamma_3)(\gamma_3\gamma_1) = \gamma_1\gamma_2$ and $\vec e_x \vec e_y = \vec e_z$; under the opposite sign of the metric that is impossible, and one of the three bivectors must be reversed.
 
-The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$ of $\mathrm{Cl}_{1,3}$, up to a sign. This correspondence is what makes the complexification of the quaternions inside $\mathbb{B}$ match the complexification of the even Clifford algebra.
+The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma_0\gamma_1\gamma_2\gamma_3$ of $\mathrm{Cl}_{1,3}$, up to a sign. This correspondence is what makes the complexification of the quaternions inside $\mathbb{B}$ match the complexification of the even Clifford algebra.
 
 ### The Gamma Matrices as a Frame in the Cell Algebra
 
@@ -96,25 +96,25 @@ The gamma matrices are a chosen frame in the cell algebra, not an element of $\m
 Write the biquaternion algebra as $M_2(\mathbb{C})$ by $e_t \mapsto I_2$, $\vec e_k \mapsto -i\sigma^k$, $i \mapsto iI_2$, so that $i\vec e_k \leftrightarrow \sigma^k$, and arrange the units in $2 \times 2$ blocks:
 
 $$
-\gamma^0 = \begin{pmatrix} 0 & e_t \\ e_t & 0 \end{pmatrix}, \qquad
-\gamma^k = \begin{pmatrix} 0 & i \vec e_k \\ -i \vec e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
+\gamma_0 = \begin{pmatrix} 0 & e_t \\ e_t & 0 \end{pmatrix}, \qquad
+\gamma_k = \begin{pmatrix} 0 & i \vec e_k \\ -i \vec e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
 $$
 
-that is, $\gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma^k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $\vec e_k^2 = -e_t$,
+that is, $\gamma_0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma_k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $\vec e_k^2 = -e_t$,
 
 $$
-(\gamma^0)^2 = e_t^2 = +I_4, \qquad (\gamma^k)^2 = (i\vec e_k)(-i\vec e_k) = -i^2 \vec e_k^2 = -I_4 .
+(\gamma_0)^2 = e_t^2 = +I_4, \qquad (\gamma_k)^2 = (i\vec e_k)(-i\vec e_k) = -i^2 \vec e_k^2 = -I_4 .
 $$
 
-The mixed products are block diagonal: $\gamma^0\gamma^k = \mathrm{diag}(-i\vec e_k,\, i\vec e_k)$ and $\gamma^k\gamma^0 = -\gamma^0\gamma^k$, while $\gamma^j\gamma^k = \mathrm{diag}(\vec e_j \vec e_k,\, \vec e_j \vec e_k)$ and $\gamma^k\gamma^j = -\, \gamma^j\gamma^k$ because $\vec e_j \vec e_k = -\vec e_k \vec e_j$. Hence
+The mixed products are block diagonal: $\gamma_0\gamma_k = \mathrm{diag}(-i\vec e_k,\, i\vec e_k)$ and $\gamma_k\gamma_0 = -\gamma_0\gamma_k$, while $\gamma_j\gamma_k = \mathrm{diag}(\vec e_j \vec e_k,\, \vec e_j \vec e_k)$ and $\gamma_k\gamma_j = -\, \gamma_j\gamma_k$ because $\vec e_j \vec e_k = -\vec e_k \vec e_j$. Hence
 
 $$
-\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu} I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu} I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. This is the declared metric of the introduction and of the section above. The overall sign of the metric is a convention: replacing every generator by $i\gamma^\mu$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so the mostly-plus set is $i$ times the set displayed here.
+and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. This is the declared metric of the introduction and of the section above. The overall sign of the metric is a convention: replacing every generator by $i\gamma_\mu$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so the mostly-plus set is $i$ times the set displayed here.
 
-**A change of basis.** These generators are not the Dirac-basis generators of the standard review: here $\gamma^0$ is off-diagonal, while the standard review takes $\gamma^0$ diagonal. The two sets are related by a unitary change of basis, and $\gamma_5$ is diagonal only in the present one. The biquaternion construction uses this basis because it is the one in which $\gamma_5$ equals the central sign $\chi$ of the chiral grading.
+**A change of basis.** These generators are not the Dirac-basis generators of the standard review: here $\gamma_0$ is off-diagonal, while the standard review takes $\gamma_0$ diagonal. The two sets are related by a unitary change of basis, and $\gamma_5$ is diagonal only in the present one. The biquaternion construction uses this basis because it is the one in which $\gamma_5$ equals the central sign $\chi$ of the chiral grading.
 
 ### The Biquaternionic Gradient
 
@@ -181,7 +181,7 @@ $$
 
 Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the spatial generators are complex-linear and the timelike generator alone is antilinear; the entry for the volume element is a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $i_3$ of the mass term. That pattern is a property of the definition of $A$ and not of the Clifford relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
 
-**The chirality sign.** The source's volume element is the negative of the corpus's: it sets $\gamma_5 = -i\gamma_0\gamma_1\gamma_2\gamma_3$, whereas the matrix representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the biquaternion basis of *Chirality and the Central Sign* below is $\gamma_5 = +i\gamma^0\gamma^1\gamma^2\gamma^3$. In the corpus's convention the last identity above therefore reads $A(\gamma_5\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $i_3$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
+**The chirality sign.** The source's volume element is the negative of the corpus's: it sets $\gamma_5 = -i\gamma_0\gamma_1\gamma_2\gamma_3$, whereas the matrix representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the biquaternion basis of *Chirality and the Central Sign* below is $\gamma_5 = +i\gamma_0\gamma_1\gamma_2\gamma_3$. In the corpus's convention the last identity above therefore reads $A(\gamma_5\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $i_3$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
 
 **Which conjugation.** The $C$ of the dictionary is the algebra's **complex conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces — $\bar{\cdot}$ fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\flat$ fixes the material sector $\mathbb{M}_-$ — and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = mD^{*}i\vec{\nu}$ of *The Lanczos Route* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $M_{i_3}$ standing where the Lanczos unit vector $\vec{\nu}$ stands. The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
 
@@ -318,19 +318,19 @@ and they project onto $S$ and $S^{\mathrm{c}}$. They are not the Peirce idempote
 
 **Idempotent is not central.** The difference is visible without a module. $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ satisfies $\tilde\Pi_+^2=\tilde\Pi_+$, but $i\vec e_z$ does not commute with $\vec e_x$ — their commutator is $2i\vec e_y$ — so $\tilde\Pi_+$ does not commute with $\vec e_x$ either. The chiral projectors $\tfrac12(e_t\pm\chi)$ are central, because $\chi$ is. Both pairs are idempotent; only the second is central, and that is why only the second splits the complexified algebra.
 
-**The gamma-five operator is the matrix representative of $\chi$.** In the basis of *The Gamma Matrices from the Biquaternion Units*, where $\gamma^0$ is off-diagonal, the Clifford volume element is $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ and
+**The gamma-five operator is the matrix representative of $\chi$.** In the basis of *The Gamma Matrices from the Biquaternion Units*, where $\gamma_0$ is off-diagonal, the Clifford volume element is $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ and
 
 $$
-\gamma_5=i\omega=i\gamma^0\gamma^1\gamma^2\gamma^3=\operatorname{diag}(-I_2,I_2)=\rho(\chi).
+\gamma_5=i\omega=i\gamma_0\gamma_1\gamma_2\gamma_3=\operatorname{diag}(-I_2,I_2)=\rho(\chi).
 $$
 
-In the Dirac basis of the standard review, where $\gamma^0$ is diagonal, the same operator is off-diagonal,
+In the Dirac basis of the standard review, where $\gamma_0$ is diagonal, the same operator is off-diagonal,
 
 $$
 \gamma_5=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}.
 $$
 
-The two displays are one operator in two bases; the change of basis is unitary and preserves $\gamma_5^2=1$ and $\{\gamma_5,\gamma^\mu\}=0$. The biquaternion object is $\chi$; $\gamma_5$ is its Clifford shadow. The matrix display is the representation on $\Delta$, not the definition. No Clifford algebra is needed to define the grading: $\chi$ is the central sign of $\mathbb{B}[j]$.
+The two displays are one operator in two bases; the change of basis is unitary and preserves $\gamma_5^2=1$ and $\{\gamma_5,\gamma_\mu\}=0$. The biquaternion object is $\chi$; $\gamma_5$ is its Clifford shadow. The matrix display is the representation on $\Delta$, not the definition. No Clifford algebra is needed to define the grading: $\chi$ is the central sign of $\mathbb{B}[j]$.
 
 **The sign is one bit, fixed here.** The dictionary extends to the complexified algebra only after the adjoined root is placed, and both $\iota(\tilde\Xi_{\mathrm{ad}})=+i_{\mathrm{Cl}}$ and $-i_{\mathrm{Cl}}$ are admissible; the display above is the choice $\chi\mapsto+\gamma_5$. The other choice gives $-\gamma_5$ and exchanges the names left and right. The mass bilinear is even under the exchange and the axial bilinear is odd, so the choice is made once and held; this article holds the one above.
 
@@ -377,7 +377,7 @@ $$
 is the Lorentz factor. The four-velocity satisfies the **normalization condition**
 
 $$
-\tilde{V}\tilde{V}^{\natural} = \gamma^2\big(-c^2 + \vec v^2\big) = -c^2.
+\tilde{V}\tilde{V}^{\natural} = \gamma_2\big(-c^2 + \vec v^2\big) = -c^2.
 $$
 
 This is the biquaternion form of the standard relativistic normalization $v^\mu v_\mu = -c^2$.
@@ -711,9 +711,9 @@ is strictly equivalent to Dirac's equation. The unit vector on the right is the 
 
 Every equation of this article so far is free. The standard Dirac potentials — the **electric** (the time component of a four-vector), the **magnetic** (its spatial part), the **scalar**, and the **pseudoscalar** — are usually attached one at a time in the gamma-matrix formalism, each changing the operator differently. Kravchenko's monograph attaches all four in one place, and the result is a statement about the algebra rather than about the potentials. The free quaternionic operator and the free classical Dirac operator are related by **one constant linear transformation** — a change of basis; the monograph's Lemma 3 — and the *same* transformation, together with one permutation of the gamma indices, carries each of the four potentials into the corresponding quaternionic operator. The four potentials therefore do not enlarge the formalism. Each is an explicit coefficient function multiplying one of the algebra's basis directions, and the quaternionic Dirac equation with any one of them is the same first-order equation with a different coefficient.
 
-The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, which is the algebra's image of $\gamma^0\gamma^1\gamma^2\gamma^3$ under the dictionary above; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_\mu A_\mu \vec e_\mu$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
+The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, which is the algebra's image of $\gamma_0\gamma_1\gamma_2\gamma_3$ under the dictionary above; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_\mu A_\mu \vec e_\mu$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
 
-**The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to $i$ — the $\chi$-type, chirality-sensitive coupling (the $\gamma^5$-type in the matrix dictionary), not the minimal coupling of the companion article, which uses the four-vector direction. For a time-harmonic field the pseudoscalar-potential equation reduces to
+**The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to $i$ — the $\chi$-type, chirality-sensitive coupling (the $\gamma_5$-type in the matrix dictionary), not the minimal coupling of the companion article, which uses the four-vector direction. For a time-harmonic field the pseudoscalar-potential equation reduces to
 
 $$
 \bigl(D + \varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)I + M\bigr)f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = 0,
@@ -758,7 +758,7 @@ The biquaternion formulation adds three things:
 A different representation of the same spinor makes the mass look like a *phase*. Liu Yu-Fen's observation is that the mass term of the massive Dirac equation can be written as a coupling to a four-vector built from the field itself,
 
 $$
-m\,\bar\Psi\Psi = \bar\Psi\,K_\mu\gamma^\mu\Psi,
+m\,\bar\Psi\Psi = \bar\Psi\,K_\mu\gamma_\mu\Psi,
 $$
 
 with $K_\mu$ a unit complex four-vector. Read this way the massive equation is the massless equation with the ordinary derivative replaced by a "covariant" derivative along $K$, and the mass is a phase rather than a scalar. The phase is **non-integrable**: if $K_\mu = \partial/\partial Q_\mu\,\theta$ were a gradient, the change of variable $\Psi \mapsto \exp(i\theta)\Psi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial/\partial Q_\mu K_\nu - \partial/\partial Q_\nu K_\mu$.
@@ -854,8 +854,8 @@ The same construction has two consequences that belong to the equation rather th
 | $D_\alpha$, $\alpha=-i\omega\,\vec e_x$ | Shifted amplitude operator of the massless harmonic spinor field |
 | $K_\omega = A^{-1} K A$ | Its Cauchy-type operator; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$ hold for it |
 | $\tilde{P}/\hbar$ | Wave biquaternion |
-| $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi K_\mu\gamma^\mu\Psi$; $K_\mu=p_\mu/m$ on shell, $K_\mu K^\mu=1$ |
-| $B^\mu, N^\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=B^\mu g_{\mu\nu}i\gamma^\nu v$, $\Psi_2=N^\mu g_{\mu\nu}i\gamma^\nu u$ |
+| $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi K_\mu\gamma_\mu\Psi$; $K_\mu=p_\mu/m$ on shell, $K_\mu K^\mu=1$ |
+| $B^\mu, N^\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=B^\mu g_{\mu\nu}i\gamma_\nu v$, $\Psi_2=N^\mu g_{\mu\nu}i\gamma_\nu u$ |
 | $G^\mu = B^\mu + iN^\mu$ | s-Vector, the vector representation of the same spinor |
 | $m$ | Fermion mass |
 
@@ -881,6 +881,6 @@ The same construction has two consequences that belong to the equation rather th
 - V. V. Kravchenko, *Applied Quaternionic Analysis* (Research and Exposition in Mathematics 28, Heldermann, 2003), §§4.2.1–4.2.2.1, for the four standard Dirac potentials — electric, scalar, pseudoscalar, magnetic — in quaternionic form, for the single constant transformation that relates the classical and quaternionic Dirac operators with potentials, and for the reduction of the pseudoscalar-potential equation to a pair of scalar-coefficient equations.
 - V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the **reality** of the conjugation-free quaternionic Dirac operator — $R = D-\partial/\partial t'M_{i_1}-mM_{i_2}$, with coefficients in the real quaternion algebra, hence $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ — and for the **involutive symmetry** $\Phi_{\mathrm{inv}}=iZ_c\Phi$ that follows, the symmetry itself attributed there to J. Niederle and A. G. Nikitin, "Involutive symmetries, supersymmetries and reductions of the Dirac equation," *J. Phys. A: Math. Gen.* **30** (1997) 999–1010; for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(x_1))$, $dG/dx_1=g$; for the condition $k^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and for the quaternionic current-conservation equation $\partial/\partial t'|F|^2 = -\hbar[(DF^{\dagger})F+F^{*}(DF)]$ with the identity $|F|^2=|\Phi|^2$ of the biquaternion modulus and the Dirac density. The paper's factors $u^{\pm}$ of the factorisation $\mathcal{N}=u^{+}Ru^{-}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.
 - V. G. Bagrov and D. M. Gitman, *Exact Solutions of Relativistic Wave Equations* (Kluwer, Dordrecht, 1990), for the encyclopaedic compendium and review of the known exact solutions of the Dirac equation up to the late 1980s.
-- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\bar\Psi K_\mu\gamma^\mu\Psi$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
+- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\bar\Psi K_\mu\gamma_\mu\Psi$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the same interpretation in the order-$\ell$ ding language, and for the parent-action duality recorded in *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
 

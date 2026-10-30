@@ -221,7 +221,7 @@ As a check, for $M = 100$, $(m_1,m_2,m_3) = (20,30,40)$ the right-hand side is $
 
 ## Problem 4: Threshold and the Opening Angle
 
-**Statement.** (a) State the threshold condition and show that it follows from $p^{*2} \ge 0$. (b) Show that the opening angle between the daughters in the COM frame is $\pi$. (c) Derive the laboratory angle of a daughter. (d) For two massless daughters, derive the minimum opening angle $\Theta_{\min} = \arccos(1 - 2/\gamma^2)$ and its beamed limit.
+**Statement.** (a) State the threshold condition and show that it follows from $p^{*2} \ge 0$. (b) Show that the opening angle between the daughters in the COM frame is $\pi$. (c) Derive the laboratory angle of a daughter. (d) For two massless daughters, derive the minimum opening angle $\Theta_{\min} = \arccos(1 - 2/\gamma_2)$ and its beamed limit.
 
 **Solution (a).** Problem 1 gives
 $$
@@ -258,13 +258,13 @@ $$
 
 **Solution (d).** For two massless daughters (for example $\pi^0 \to \gamma\gamma$) one has $E_1^* = E_2^* = Mc^2/2$ and $p^* = Mc/2$, so $\beta_a^* = 1$. Emit the two photons at COM angles $\theta^*$ and $\pi - \theta^*$ relative to $\vec V$; their lab angles $\theta_1, \theta_2$ measured from $\vec V$ obey the formula of part (c), and the opening angle is $\Theta = \theta_1 + \theta_2$. A direct calculation gives
 $$
-\cos\Theta = \frac{\gamma^2 - 2 - \gamma^2\beta^2\cos^2\theta^*}{\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)} .
+\cos\Theta = \frac{\gamma_2 - 2 - \gamma_2\beta^2\cos^2\theta^*}{\gamma_2\left(1 - \beta^2\cos^2\theta^*\right)} .
 $$
-As $\cos^2\theta^*$ runs from $0$ to $1$ this expression decreases monotonically, its derivative with respect to $\cos^2\theta^*$ being $-\,2\beta^2/\left[\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)^2\right]$, which is negative for $\gamma > 1$. Hence $\cos\Theta$ is largest at $\cos\theta^* = 0$ (symmetric emission) and smallest at $\cos^2\theta^* = 1$ (collinear emission). The **minimum** opening angle is therefore
+As $\cos^2\theta^*$ runs from $0$ to $1$ this expression decreases monotonically, its derivative with respect to $\cos^2\theta^*$ being $-\,2\beta^2/\left[\gamma_2\left(1 - \beta^2\cos^2\theta^*\right)^2\right]$, which is negative for $\gamma > 1$. Hence $\cos\Theta$ is largest at $\cos\theta^* = 0$ (symmetric emission) and smallest at $\cos^2\theta^* = 1$ (collinear emission). The **minimum** opening angle is therefore
 $$
-\cos\Theta_{\min} = 1 - \frac{2}{\gamma^2},
+\cos\Theta_{\min} = 1 - \frac{2}{\gamma_2},
 \qquad
-\Theta_{\min} = \arccos\!\left(1 - \frac{2}{\gamma^2}\right),
+\Theta_{\min} = \arccos\!\left(1 - \frac{2}{\gamma_2}\right),
 \qquad
 \tan\frac{\Theta_{\min}}{2} = \frac{1}{\gamma\beta},
 $$
@@ -400,7 +400,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 3. **Three-body decay.** The pair mass is $M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle\tilde{P}_i,\tilde{P}_j\rangle$; equivalently $M_{12}^2c^4 = (Mc^2 - E_3^*)^2 - p_3^{*2}c^2$, with $(m_1+m_2) \le M_{12} \le M - m_3$ and $\sum_{i<j}M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2$.
 
-4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\Theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
+4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\Theta_{\min} = \arccos(1 - 2/\gamma_2) \approx 2/\gamma$ at symmetric emission.
 
 5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $K_{\pi^+} = 108.5454$ MeV, $K_{\pi^0} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_\mu$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
 

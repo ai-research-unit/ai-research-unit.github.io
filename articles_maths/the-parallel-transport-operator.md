@@ -35,12 +35,12 @@ $$
 it depends only on the curve and not on its parametrisation up to reparametrisation, it is the identity along a constant curve, and the transports compose and reverse:
 
 $$
-P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}, \qquad P_{\gamma^{-1}} = (P_\gamma)^{-1} = (P_\gamma)^{*},
+P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}, \qquad P_{\gamma_{-1}} = (P_\gamma)^{-1} = (P_\gamma)^{*},
 $$
 
-where $\gamma_2 * \gamma_1$ is the concatenation, $\gamma^{-1}$ is the reversed curve, and the star is the adjoint for the two metrics; consequently the transport along a closed curve starting and ending at $p$ is an element of the orthogonal group $O(T_pM, g_p)$. The transport depends only on the homotopy class of the curve when the curvature vanishes on the enclosed region.
+where $\gamma_2 * \gamma_1$ is the concatenation, $\gamma_{-1}$ is the reversed curve, and the star is the adjoint for the two metrics; consequently the transport along a closed curve starting and ending at $p$ is an element of the orthogonal group $O(T_pM, g_p)$. The transport depends only on the homotopy class of the curve when the curvature vanishes on the enclosed region.
 
-**Proof.** For two parallel fields $V, W$ along $\gamma$ one has $\frac{d}{dt}g(V,W) = g(\frac{DV}{dt},W)+g(V,\frac{DW}{dt}) = 0$ by the metricity of $\nabla$, so $g(V,W)$ is constant and the transport is an isometry. A reparametrisation multiplies $\gamma'$ by a scalar and the covariant derivative by the same scalar, so the equation $DV/dt = 0$ is unchanged. The transport along a constant curve fixes every vector, and the covariant derivative along a concatenation is the covariant derivative along each piece, which gives the composition; the reversed parallel field along $\gamma^{-1}$ has energy of the same sign and gives the inverse, which is also the adjoint by the isometry. The homotopy statement is the holonomy theorem below in the flat case, which is the classical monodromy of a flat connection and is *Fibre Bundles, Connections and Curvature* read on the tangent bundle.
+**Proof.** For two parallel fields $V, W$ along $\gamma$ one has $\frac{d}{dt}g(V,W) = g(\frac{DV}{dt},W)+g(V,\frac{DW}{dt}) = 0$ by the metricity of $\nabla$, so $g(V,W)$ is constant and the transport is an isometry. A reparametrisation multiplies $\gamma'$ by a scalar and the covariant derivative by the same scalar, so the equation $DV/dt = 0$ is unchanged. The transport along a constant curve fixes every vector, and the covariant derivative along a concatenation is the covariant derivative along each piece, which gives the composition; the reversed parallel field along $\gamma_{-1}$ has energy of the same sign and gives the inverse, which is also the adjoint by the isometry. The homotopy statement is the holonomy theorem below in the flat case, which is the classical monodromy of a flat connection and is *Fibre Bundles, Connections and Curvature* read on the tangent bundle.
 
 ### The Transport of Tensors
 
@@ -67,10 +67,10 @@ $$
 and the **restricted holonomy group** $\operatorname{Hol}^0_p$ is the subgroup of the transports along the null-homotopic loops. Both are subgroups of the orthogonal group, $\operatorname{Hol}^0_p$ is the identity component of $\operatorname{Hol}_p$, and the groups at different points are conjugate:
 
 $$
-\operatorname{Hol}_q = P_\gamma\,\operatorname{Hol}_p\,P_\gamma^{-1}, \qquad q = \gamma(1).
+\operatorname{Hol}_q = P_\gamma\,\operatorname{Hol}_p\,P_\gamma_{-1}, \qquad q = \gamma(1).
 $$
 
-**Proof.** The loop transports form a subgroup because the concatenation of two loops is a loop, the reverse of a loop is a loop, and the transport along a constant loop is the identity; the isometry is the first theorem above. The restricted group is **normal** in $\operatorname{Hol}_p$: for a loop $\eta$ null-homotopic at $p$ and a path $\gamma$ from $p$ to $p$, the conjugate loop $\gamma^{-1}*\eta*\gamma$ is null-homotopic, so $P_\gamma^{-1}P_\eta P_\gamma = P_{\gamma^{-1}*\eta*\gamma}\in\operatorname{Hol}^0_p$. The restricted group is the identity component of $\operatorname{Hol}_p$: it is a subgroup of the identity component because a null-homotopic loop can be contracted through the loops based at $p$, giving a continuous path of the transports to the identity, and it contains the identity component because the holonomy group is a Lie subgroup of the orthogonal group, whose identity component is connected; this is the standard theorem, proved with the closed-subgroup theorem for the holonomy group. The conjugation statement is the composition of the transports along a path from $p$ to $q$, its reverse and a loop at $p$, which is a loop at $q$ in the right class, and conversely.
+**Proof.** The loop transports form a subgroup because the concatenation of two loops is a loop, the reverse of a loop is a loop, and the transport along a constant loop is the identity; the isometry is the first theorem above. The restricted group is **normal** in $\operatorname{Hol}_p$: for a loop $\eta$ null-homotopic at $p$ and a path $\gamma$ from $p$ to $p$, the conjugate loop $\gamma_{-1}*\eta*\gamma$ is null-homotopic, so $P_\gamma_{-1}P_\eta P_\gamma = P_{\gamma_{-1}*\eta*\gamma}\in\operatorname{Hol}^0_p$. The restricted group is the identity component of $\operatorname{Hol}_p$: it is a subgroup of the identity component because a null-homotopic loop can be contracted through the loops based at $p$, giving a continuous path of the transports to the identity, and it contains the identity component because the holonomy group is a Lie subgroup of the orthogonal group, whose identity component is connected; this is the standard theorem, proved with the closed-subgroup theorem for the holonomy group. The conjugation statement is the composition of the transports along a path from $p$ to $q$, its reverse and a loop at $p$, which is a loop at $q$ in the right class, and conversely.
 
 ### The Holonomy Representation and the Reduction
 
@@ -119,7 +119,7 @@ equivalently $\left(dV^{k}/dt\right)(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'
 **Theorem (Ambrose–Singer).** The Lie algebra $\mathfrak{hol}_p$ of the restricted holonomy group is spanned by the curvature operators transported to $p$:
 
 $$
-\boxed{\;\mathfrak{hol}_p = \operatorname{span}\Bigl\{P_\gamma^{-1}\,R\bigl(X, Y\bigr)\,P_\gamma \ :\ \gamma \text{ a path from } \gamma(0) \text{ to } p,\ X, Y \in T_{\gamma(0)}M \Bigr\}\;},
+\boxed{\;\mathfrak{hol}_p = \operatorname{span}\Bigl\{P_\gamma_{-1}\,R\bigl(X, Y\bigr)\,P_\gamma \ :\ \gamma \text{ a path from } \gamma(0) \text{ to } p,\ X, Y \in T_{\gamma(0)}M \Bigr\}\;},
 $$
 
 where $R(X,Y)$ is read as the endomorphism $Z \mapsto R(X,Y)Z$ of the tangent space and $P_\gamma$ transports endomorphisms to $p$ by conjugation. Consequently the holonomy is generated by the curvature, the restricted holonomy is trivial exactly when the metric is locally flat, and the holonomy fixes a parallel tensor exactly when the curvature does.
@@ -147,9 +147,9 @@ The **holonomy principle** says that a tensor field is parallel exactly when it 
 | $P_\gamma$, $P_t$ | Parallel transport along a curve; along a subcurve |
 | $\frac{DV}{dt} = 0$ | The parallel-field equation along a curve |
 | $P_{\gamma_2*\gamma_1} = P_{\gamma_2}P_{\gamma_1}$ | Composition of transports |
-| $P_{\gamma^{-1}} = P_\gamma^{-1} = P_\gamma^{*}$ | Reversal as inverse and as metric adjoint |
+| $P_{\gamma_{-1}} = P_\gamma_{-1} = P_\gamma_{}^{*}$ | Reversal as inverse and as metric adjoint |
 | $\operatorname{Hol}_p$, $\operatorname{Hol}^0_p$ | Holonomy group at $p$; restricted holonomy |
-| $\operatorname{Hol}_q = P_\gamma\operatorname{Hol}_pP_\gamma^{-1}$ | Conjugation of the holonomy along a path |
+| $\operatorname{Hol}_q = P_\gamma\operatorname{Hol}_pP_\gamma_{-1}$ | Conjugation of the holonomy along a path |
 | $\rho_p$ | Holonomy representation, into $O(T_pM,g_p)$ |
 | Holonomy bundle, $G$-structure | Reduction of the frame bundle to the holonomy group |
 | Holonomy principle | Parallel tensors $\leftrightarrow$ holonomy-fixed tensors |

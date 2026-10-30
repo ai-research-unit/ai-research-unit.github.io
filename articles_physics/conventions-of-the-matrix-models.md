@@ -229,34 +229,34 @@ The sixteen gamma products span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}
 
 **The gamma frame.** The five Dirac generators are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
-\boxed{\;\gamma^0=iR_x=iT_{tx},\qquad
-\gamma^1=iL_xR_y=iT_{xy},\qquad
-\gamma^2=iL_yR_y=iT_{yy},\qquad
-\gamma^3=iL_zR_y=iT_{zy},\qquad
+\boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
+\gamma_1=iL_xR_y=iT_{xy},\qquad
+\gamma_2=iL_yR_y=iT_{yy},\qquad
+\gamma_3=iL_zR_y=iT_{zy},\qquad
 \gamma_5=-iR_z=-iT_{tz}\;}
 $$
 In the canonical frame their matrices are
 $$
-\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $(\gamma^k)^2=-I_4$ and $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$.
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
 
 **These are the $x$-frame generators.** In the $Q$ frame of the series, where $Q_t=ict'$, the set whose four members all square to $+I_4$ is
 $$
-\gamma^0(Q)=\gamma^0(x),\qquad \gamma^k(Q)=i\,\gamma^k(x),\quad k=1,2,3,
+\gamma_0(Q)=\gamma_0(x),\qquad \gamma_k(Q)=i\,\gamma_k(x),\quad k=1,2,3,
 $$
-so that $(\gamma^\mu(Q))^2=+I_4$ for every $\mu$ and $\{\gamma^\mu(Q),\gamma^\nu(Q)\}=2\delta^{\mu\nu}I_4$. Its complex span is $M_4(\mathbb{C})$, the same as that of $\mathrm{Cl}_{1,3}(\mathbb{C})$, and it is the frame in which $\bigl(\gamma^\mu(Q)\partial/\partial Q_\mu\bigr)^2=\Box I_4$. The two frames are related by the factor $i$ on the spatial generators and are not to be mixed: the contraction $i\gamma^\mu(x)\partial/\partial Q_\mu$ belongs to neither and is not used. The printed matrices above are the $x$-frame ones; the $Q$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.
+so that $(\gamma_\mu(Q))^2=+I_4$ for every $\mu$ and $\{\gamma_\mu(Q),\gamma_\nu(Q)\}=2\delta_{\mu\nu}I_4$. Its complex span is $M_4(\mathbb{C})$, the same as that of $\mathrm{Cl}_{1,3}(\mathbb{C})$, and it is the frame in which $\bigl(\gamma_\mu(Q)\partial/\partial Q_\mu\bigr)^2=\Box I_4$. The two frames are related by the factor $i$ on the spatial generators and are not to be mixed: the contraction $i\gamma_\mu(x)\partial/\partial Q_\mu$ belongs to neither and is not used. The printed matrices above are the $x$-frame ones; the $Q$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.
 
 In the Pauli form the same five are
 $$
-\gamma^0=\sigma_1\otimes I_2,\qquad
-\gamma^k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_0=\sigma_1\otimes I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 
@@ -265,35 +265,35 @@ $$
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
 | $0$ | $1$ | $T_{tt}$ | $T_{tt}=I_4$ |
-| $1$ | $\gamma^0$ | $T_{tx}$ | $T_{tx}=-i\,\gamma^0$ |
-| $1$ | $\gamma^1$ | $T_{xy}$ | $T_{xy}=-i\,\gamma^1$ |
-| $1$ | $\gamma^2$ | $T_{yy}$ | $T_{yy}=-i\,\gamma^2$ |
-| $1$ | $\gamma^3$ | $T_{zy}$ | $T_{zy}=-i\,\gamma^3$ |
-| $2$ | $\gamma^0\gamma^1$ | $T_{xz}$ | $T_{xz}=\gamma^0\gamma^1$ |
-| $2$ | $\gamma^0\gamma^2$ | $T_{yz}$ | $T_{yz}=\gamma^0\gamma^2$ |
-| $2$ | $\gamma^0\gamma^3$ | $T_{zz}$ | $T_{zz}=\gamma^0\gamma^3$ |
-| $2$ | $\gamma^1\gamma^2$ | $T_{zt}$ | $T_{zt}=\gamma^1\gamma^2$ |
-| $2$ | $\gamma^1\gamma^3$ | $T_{yt}$ | $T_{yt}=-\gamma^1\gamma^3$ |
-| $2$ | $\gamma^2\gamma^3$ | $T_{xt}$ | $T_{xt}=\gamma^2\gamma^3$ |
-| $3$ | $\gamma^0\gamma^1\gamma^2$ | $T_{zx}$ | $T_{zx}=-i\,\gamma^0\gamma^1\gamma^2$ |
-| $3$ | $\gamma^0\gamma^1\gamma^3$ | $T_{yx}$ | $T_{yx}=i\,\gamma^0\gamma^1\gamma^3$ |
-| $3$ | $\gamma^0\gamma^2\gamma^3$ | $T_{xx}$ | $T_{xx}=-i\,\gamma^0\gamma^2\gamma^3$ |
-| $3$ | $\gamma^1\gamma^2\gamma^3$ | $T_{ty}$ | $T_{ty}=i\,\gamma^1\gamma^2\gamma^3$ |
-| $4$ | $\gamma^0\gamma^1\gamma^2\gamma^3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma^0\gamma^1\gamma^2\gamma^3$ |
+| $1$ | $\gamma_0$ | $T_{tx}$ | $T_{tx}=-i\,\gamma_0$ |
+| $1$ | $\gamma_1$ | $T_{xy}$ | $T_{xy}=-i\,\gamma_1$ |
+| $1$ | $\gamma_2$ | $T_{yy}$ | $T_{yy}=-i\,\gamma_2$ |
+| $1$ | $\gamma_3$ | $T_{zy}$ | $T_{zy}=-i\,\gamma_3$ |
+| $2$ | $\gamma_0\gamma_1$ | $T_{xz}$ | $T_{xz}=\gamma_0\gamma_1$ |
+| $2$ | $\gamma_0\gamma_2$ | $T_{yz}$ | $T_{yz}=\gamma_0\gamma_2$ |
+| $2$ | $\gamma_0\gamma_3$ | $T_{zz}$ | $T_{zz}=\gamma_0\gamma_3$ |
+| $2$ | $\gamma_1\gamma_2$ | $T_{zt}$ | $T_{zt}=\gamma_1\gamma_2$ |
+| $2$ | $\gamma_1\gamma_3$ | $T_{yt}$ | $T_{yt}=-\gamma_1\gamma_3$ |
+| $2$ | $\gamma_2\gamma_3$ | $T_{xt}$ | $T_{xt}=\gamma_2\gamma_3$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $T_{zx}$ | $T_{zx}=-i\,\gamma_0\gamma_1\gamma_2$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $T_{yx}$ | $T_{yx}=i\,\gamma_0\gamma_1\gamma_3$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $T_{xx}$ | $T_{xx}=-i\,\gamma_0\gamma_2\gamma_3$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
 Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The cells are labelled by the frame units, not by spacetime indices: $L_\mu R_\nu$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are §*A Gamma Frame, and the Choice Behind It* of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
 
-**A gamma matrix is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\gamma^\mu S^{-1}$ with $S$ invertible. A change of gamma basis is a change of frame, and the frames of the normal form are those of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*A Gamma Frame, and the Choice Behind It*. No statement of the corpus depends on the basis written.
+**A gamma matrix is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\gamma_\mu S^{-1}$ with $S$ invertible. A change of gamma basis is a change of frame, and the frames of the normal form are those of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*A Gamma Frame, and the Choice Behind It*. No statement of the corpus depends on the basis written.
 
-**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by the gamma matrices. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen $\gamma^0$. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The gamma algebra is recovered from these data; the data are not recovered from the gamma algebra.
+**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by the gamma matrices. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen $\gamma_0$. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The gamma algebra is recovered from these data; the data are not recovered from the gamma algebra.
 
 **The comparison map $\iota_{\mathrm{Cl}}$.** It is the $\mathbb{R}$-linear map
 $$
 \iota_{\mathrm{Cl}}(e_t)=I_4,\qquad
-\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3,\qquad
-\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1,\qquad
-\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2,\qquad
-\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3 .
+\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3,\qquad
+\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1,\qquad
+\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2,\qquad
+\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 In the canonical frame it is read entirely in cells, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, so its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$,
 $$
@@ -306,29 +306,29 @@ and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\math
 | $\tilde Q$ | $\iota_{\mathrm{Cl}}(\tilde Q)$ | cell |
 |---|---|---|
 | $e_t$ | $I_4$ | $T_{tt}$ |
-| $\vec e_x$ | $\gamma^2\gamma^3$ | $T_{xt}$ |
-| $\vec e_y$ | $\gamma^3\gamma^1$ | $T_{yt}$ |
-| $\vec e_z$ | $\gamma^1\gamma^2$ | $T_{zt}$ |
+| $\vec e_x$ | $\gamma_2\gamma_3$ | $T_{xt}$ |
+| $\vec e_y$ | $\gamma_3\gamma_1$ | $T_{yt}$ |
+| $\vec e_z$ | $\gamma_1\gamma_2$ | $T_{zt}$ |
 | $i$ | $-\omega$ | $T_{tz}$ |
-| $i\vec e_x$ | $\gamma^0\gamma^1$ | $T_{xz}$ |
-| $i\vec e_y$ | $\gamma^0\gamma^2$ | $T_{yz}$ |
-| $i\vec e_z$ | $\gamma^0\gamma^3$ | $T_{zz}$ |
+| $i\vec e_x$ | $\gamma_0\gamma_1$ | $T_{xz}$ |
+| $i\vec e_y$ | $\gamma_0\gamma_2$ | $T_{yz}$ |
+| $i\vec e_z$ | $\gamma_0\gamma_3$ | $T_{zz}$ |
 
 The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the map sits on $i$ itself, $\iota_{\mathrm{Cl}}(i)=-\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
 
-**The odd part.** The comparison lands in the even part. Multiplication by the fixed generator $\gamma^0$ reaches the odd part, and the two real sectors separate:
+**The odd part.** The comparison lands in the even part. Multiplication by the fixed generator $\gamma_0$ reaches the odd part, and the two real sectors separate:
 
 $$
-\gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_+)=\text{vectors},\qquad
-\gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_-)=\text{trivectors}.
+\gamma_0\,\iota_{\mathrm{Cl}}(\mathbb{M}_+)=\text{vectors},\qquad
+\gamma_0\,\iota_{\mathrm{Cl}}(\mathbb{M}_-)=\text{trivectors}.
 $$
 
-So a four-vector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, and a trivector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_-$. The frame $\gamma^0$ is the one choice in the odd half of the comparison, and it is fixed by the representation.
+So a four-vector is $\gamma_0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, and a trivector is $\gamma_0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_-$. The frame $\gamma_0$ is the one choice in the odd half of the comparison, and it is fixed by the representation.
 
-**Lorentz generators.** For $\mu\neq\nu$ the commutator is $\gamma^\mu\gamma^\nu-\gamma^\nu\gamma^\mu=2\gamma^\mu\gamma^\nu$, so
+**Lorentz generators.** For $\mu\neq\nu$ the commutator is $\gamma_\mu\gamma_\nu-\gamma_\nu\gamma_\mu=2\gamma_\mu\gamma_\nu$, so
 
 $$
-\sigma^{\mu\nu}=\tfrac14[\gamma^\mu,\gamma^\nu]=\tfrac12\gamma^\mu\gamma^\nu
+\sigma^{\mu\nu}=\tfrac14[\gamma_\mu,\gamma_\nu]=\tfrac12\gamma_\mu\gamma_\nu
 $$
 
 is half a bivector. Read in cells and in biquaternions,
@@ -342,9 +342,9 @@ is half a bivector. Read in cells and in biquaternions,
 | $\sigma^{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
 | $\sigma^{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
 
-The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma^\mu\gamma^\nu$ is the bivector and the Lorentz generator is half of it.
+The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma_\mu\gamma_\nu$ is the bivector and the Lorentz generator is half of it.
 
-**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma^{\mu_1}\cdots\gamma^{\mu_k})=\gamma^{\mu_k}\cdots\gamma^{\mu_1}$, is quaternion conjugation under the comparison,
+**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the comparison,
 
 $$
 \iota_{\mathrm{Cl}}(\tilde Q^{\natural})=\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde Q)\bigr),
@@ -361,15 +361,15 @@ $$
 The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
 
 **The slash is not used.** The Dirac slash is not part of the notation of this corpus.
-A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum.
-A derivative contraction is written in one frame and never across two: $i\gamma^\mu\partial/\partial x^\mu$ with the $x$-frame generators,
-or $\gamma^\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators $\gamma^0(Q)=\gamma^0$, $\gamma^k(Q)=i\gamma^k$.
-The mixed form $i\gamma^\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
+A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
+A derivative contraction is written in one frame and never across two: $i\gamma_\mu\partial/\partial x^\mu$ with the $x$-frame generators,
+or $\gamma_\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators $\gamma_0(Q)=\gamma_0$, $\gamma_k(Q)=i\gamma_k$.
+The mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
 and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\gamma^\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+\gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
 $$
 so the frame is visible in the formula.
 
@@ -379,7 +379,7 @@ The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I
 
 The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_\mu$ and the four right matrices $R_\nu$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$, written out entry by entry and tabulated against the gamma products. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
 
-The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of frame. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma^0\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ is the vector space and $\gamma^0\iota_{\mathrm{Cl}}(\mathbb{M}_-)$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma^{\mu\nu}=\tfrac12\gamma^\mu\gamma^\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
+The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of frame. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma_0\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ is the vector space and $\gamma_0\iota_{\mathrm{Cl}}(\mathbb{M}_-)$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma^{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
 
 ## Summary of Notation
 
@@ -395,9 +395,9 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $\gamma^0,\dots,\gamma^3,\gamma_5$ | The five Dirac generators of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| $\gamma_0,\dots,\gamma_3,\gamma_5$ | The five Dirac generators of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
-| $\sigma^{\mu\nu}=\tfrac12\gamma^\mu\gamma^\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
+| $\sigma^{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 
 ## Further Reading
 

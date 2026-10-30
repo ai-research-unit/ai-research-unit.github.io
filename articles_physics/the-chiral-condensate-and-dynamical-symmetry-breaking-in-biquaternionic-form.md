@@ -20,12 +20,12 @@ This article asks what the framework supplies for the condensate. The answer is 
 The article is organised as follows. A section fixes the chiral symmetry of the linear mass term and its axial current. A section shows that the condensate is the order parameter and identifies it algebraically. A section transcribes the gap equation and verifies its numbers. A section gives the biquaternion interpretation. A section records the Goldstone counting and where the pion is treated. A closing section separates what the framework supplies, transcribes, and does not supply.
 
 $$
-\gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
+\gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict'$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict'$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto\omega=\gamma_0\gamma_1\gamma_2\gamma_3$, so that $\gamma_5=i\omega$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 
@@ -53,7 +53,7 @@ $$
 
 rotates them oppositely. In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two.
 
-Both are symmetries of the massless equation, because $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma^\mu\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
+Both are symmetries of the massless equation, because $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma_\mu\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
 
 $$
 \mathrm{U}(1)_V\times \mathrm{U}(1)_A ,
@@ -80,7 +80,7 @@ This is the framework form of the standard fact that a Dirac mass breaks the axi
 **The axial current.** For the module representative the axial current is
 
 $$
-j_5^\mu = \bar{\psi}\gamma^\mu\gamma_5\psi ,
+j_5^\mu = \bar{\psi}\gamma_\mu\gamma_5\psi ,
 $$
 
 and its divergence is the textbook anomaly-free identity for a massive free field,
@@ -94,7 +94,7 @@ which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and t
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears:
 
 $$
-j^\mu = \bar{\psi}\gamma^\mu\psi , \qquad j_5^\mu = \bar{\psi}\gamma^\mu\gamma_5\psi ,
+j^\mu = \bar{\psi}\gamma_\mu\psi , \qquad j_5^\mu = \bar{\psi}\gamma_\mu\gamma_5\psi ,
 \qquad
 \langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi .
 $$
@@ -106,7 +106,7 @@ The scalar bilinear $S=\bar{\psi}\psi$ is the one that will acquire a vacuum exp
 **The bilinear.** In the block basis of the Conventions the scalar bilinear is
 
 $$
-\bar{\Psi}\Psi = \Psi^{*}\gamma^0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L ,
+\bar{\Psi}\Psi = \Psi^{*}\gamma_0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L ,
 $$
 
 the **Dirac mass bilinear**. It is off-diagonal in the chiral blocks, it is a Lorentz scalar and parity-even, and under the axial transformation it is not invariant:
@@ -292,11 +292,11 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $\tilde{\nabla}\tilde{\Psi}=0$ | Massless biquaternion Dirac equation |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Linear chiral mass pair (canonical form) |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Weyl, conjugate Weyl, and Dirac modules |
-| $\gamma_5=\mathrm{diag}(-I_2,I_2)=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | Chirality operator; the volume element under the Clifford isomorphism |
+| $\gamma_5=\mathrm{diag}(-I_2,I_2)=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator; the volume element under the Clifford isomorphism |
 | $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ | Chiral projectors |
 | $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
 | $i\bar{\Psi}\gamma_5\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
-| $j^\mu=\bar{\psi}\gamma^\mu\psi$, $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ | Vector and axial currents |
+| $j^\mu=\bar{\psi}\gamma_\mu\psi$, $j_5^\mu=\bar{\psi}\gamma_\mu\gamma_5\psi$ | Vector and axial currents |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi$ | Axial divergence (explicit breaking by $m$) |
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |

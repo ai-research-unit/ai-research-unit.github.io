@@ -21,12 +21,12 @@ The biquaternion framework makes a structural statement about the EDM operator t
 The article is organised as follows. A section defines the EDM operator and its discrete symmetries. A section establishes the anti-Hermitian structure and the Hodge duality. A section gives the form-factor decomposition and contrasts the EDM with the magnetic moment. A section treats the origin of the CP-odd phase. A section collects the bounds and the scales they probe. A closing section separates what is supplied, transcribed, and missing.
 
 $$
-\gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\quad
-\gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\quad
-\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1),
+\gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\quad
+\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\quad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon^{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
+with $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon^{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 
 The framework results used here are those of the companion articles:
 
@@ -74,7 +74,7 @@ $$
 \sigma^{0k}\gamma_5 = \text{(anti-Hermitian)},\qquad \sigma^{ij}\gamma_5 = \text{(Hermitian)}.
 $$
 
-The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with each $\gamma^\mu$, commutes with the bilinear $\sigma^{\mu\nu}$ and so leaves its Hermiticity unchanged. **The $\vec E$-coupling insertion is the anti-Hermitian one.**
+The pattern is the standard one: $\gamma_0$ is Hermitian and $\gamma_k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with each $\gamma_\mu$, commutes with the bilinear $\sigma^{\mu\nu}$ and so leaves its Hermiticity unchanged. **The $\vec E$-coupling insertion is the anti-Hermitian one.**
 
 **The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol,
 
@@ -97,7 +97,7 @@ an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly 
 
 The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and the magnetic-moment insertion is its Hermitian, informational-sector dual. This is the article's central structural statement; it was verified entry by entry in the block basis.
 
-**The dictionary form of the EDM insertion.** The placement can be made exact rather than a Hermiticity match. Under the dictionary that carries the biquaternion basis to the Clifford generators, $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$, the EDM insertion *is* the image of a basis element of the material sector:
+**The dictionary form of the EDM insertion.** The placement can be made exact rather than a Hermiticity match. Under the dictionary that carries the biquaternion basis to the Clifford generators, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, the EDM insertion *is* the image of a basis element of the material sector:
 
 $$
 \boxed{\;\sigma^{0k}\gamma_5 = -\mathsf{M}_2(\vec e_k) = \mathsf{M}_2(-\vec e_k), \qquad -\vec e_k \in \mathbb{M}_-\;},
@@ -144,8 +144,8 @@ the stated nonrelativistic limit. The chain is a derivation of the limit from th
 **The bilinears and their transformation.** The four insertion families fall into two parity classes, and the classes determine the discrete symmetries of the observables. The bilinears
 
 $$
-\text{(vector)}\ \bar{\psi}\gamma^\mu\psi,\quad
-\text{(axial)}\ \bar{\psi}\gamma^\mu\gamma_5\psi,\quad
+\text{(vector)}\ \bar{\psi}\gamma_\mu\psi,\quad
+\text{(axial)}\ \bar{\psi}\gamma_\mu\gamma_5\psi,\quad
 \text{(tensor)}\ \bar{\psi}\sigma^{\mu\nu}\psi,\quad
 \text{(pseudotensor)}\ \bar{\psi}\sigma^{\mu\nu}\gamma_5\psi
 $$
@@ -154,7 +154,7 @@ transform under $\mathbf{P}$ and $\mathbf{T}$ in the standard way, and the elect
 
 | Observable | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|
-| Charge | $\bar{\psi}\gamma^\mu\psi$ ($\mu=0$) | even | even | — | $\gamma^0$ (Hermitian) |
+| Charge | $\bar{\psi}\gamma_\mu\psi$ ($\mu=0$) | even | even | — | $\gamma_0$ (Hermitian) |
 | Magnetic moment | $\bar{\psi}\sigma^{ij}\psi$ | even | even | even | $\sigma^{ij}$ (Hermitian) |
 | EDM | $\bar{\psi}\sigma^{0k}\gamma_5\psi$ | odd | odd | odd | $\sigma^{0k}\gamma_5$ (anti-Hermitian) |
 | CP-odd "magnetic" | $\bar{\psi}\sigma^{ij}\gamma_5\psi$ | odd | odd | odd | $\sigma^{ij}\gamma_5$ (Hermitian) |
@@ -170,7 +170,7 @@ The EDM sits in the antisymmetric tensor with the axial insertion, and the patte
 **The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p_2-p$, is
 
 $$
-\Gamma^\mu(p_2,p) = \gamma^\mu F_1(k^2) + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\,F_2(k^2)
+\Gamma^\mu(p_2,p) = \gamma_\mu F_1(k^2) + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\,F_2(k^2)
 + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\gamma_5\,F_3(k^2) + \cdots ,
 $$
 
@@ -266,7 +266,7 @@ $$
 
 verified for all pairs $(\mu,\nu)$ with residual exactly zero, and the $i$ of the duality exchanges Hermiticity between the pair. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian and is the algebra's marker of the CP-odd coefficient.
 
-The form-factor decomposition $\Gamma^\mu=\gamma^\mu F_1+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu F_2+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu\gamma_5F_3+\cdots$ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, and the framework places them in the informational and material sectors. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term's constraint ($|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$). The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d\sim e\,m_e\sin\varphi/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
+The form-factor decomposition $\Gamma^\mu=\gamma_\mu F_1+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu F_2+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu\gamma_5F_3+\cdots$ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, and the framework places them in the informational and material sectors. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term's constraint ($|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$). The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d\sim e\,m_e\sin\varphi/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
 
 ## Summary of Notation
 
@@ -275,8 +275,8 @@ The form-factor decomposition $\Gamma^\mu=\gamma^\mu F_1+\tfrac{i}{2m}\sigma^{\m
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\Delta=S\oplus\bar{S}$ | Dirac module; $S=\mathbb{C}^2=(\tfrac12,0)$ |
-| $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$ | Lorentz generators |
-| $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | Chirality operator and volume element |
+| $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | Lorentz generators |
+| $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator and volume element |
 | $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ | Hodge duality of the insertions |
 | $\sigma^{0k},\sigma^{0k}\gamma_5$ | Anti-Hermitian, $\mathbb{M}_-$ (EDM insertion) |
 | $\sigma^{ij},\sigma^{ij}\gamma_5$ | Hermitian, $\mathbb{M}_+$ (magnetic insertion) |

@@ -289,14 +289,14 @@ for all $x, y$. The skew-conjugate-symmetric half is scalar-free, and the conjug
 **Proposition (the exchange on the constants).** Let $A$ be free with basis $(e_{1},\dots,e_{n})$ and write
 
 $$
-e_{i} \star e_{j} = \sum_{k} c^{k}{}_{ij}\, e_{k}, \qquad c(e_{i}) = \sum_{l} \gamma^{l}{}_{i}\, e_{l} .
+e_{i} \star e_{j} = \sum_{k} c^{k}{}_{ij}\, e_{k}, \qquad c(e_{i}) = \sum_{l} \gamma_{l}{}_{i}\, e_{l} .
 $$
 
 Then the constants of the exchanged product are
 
 $$
 e_{i} \star^{c} e_{j} = \sum_{l} d^{\,l}{}_{ij}\, e_{l},
-\qquad d^{\,l}{}_{ij} = \sum_{k} \gamma^{l}{}_{k}\, \varsigma\bigl(c^{k}{}_{ji}\bigr).
+\qquad d^{\,l}{}_{ij} = \sum_{k} \gamma_{l}{}_{k}\, \varsigma\bigl(c^{k}{}_{ji}\bigr).
 $$
 
 When the basis is fixed by the conjugation, $c(e_{i}) = e_{i}$ for every $i$, this reads
@@ -505,7 +505,7 @@ The construction needs $2$ invertible, and in characteristic two the two halves 
 | $\star_{+}$, $\star_{-}$ | The conjugate-symmetric and skew-conjugate-symmetric parts, $\tfrac12(x\star y \pm c(y\star x))$ |
 | $p$, $q$ | The projections of a product onto its two halves, $p^{2} = p$, $q^{2} = q$, $pq = 0$, $p + q = \mathrm{id}$ |
 | $\varepsilon$, $s = \varepsilon \circ \star$ | An additive $R$-linear form compatible with $c$; the scalar form of the product |
-| $c^{k}{}_{ij}$, $\gamma^{l}{}_{i}$ | The structure constants $e_{i}\star e_{j} = \sum_{k}c^{k}{}_{ij}e_{k}$, and the matrix of the conjugation $c(e_{i}) = \sum_{l}\gamma^{l}{}_{i}e_{l}$ |
+| $c^{k}{}_{ij}$, $\gamma_{l}{}_{i}$ | The structure constants $e_{i}\star e_{j} = \sum_{k}c^{k}{}_{ij}e_{k}$, and the matrix of the conjugation $c(e_{i}) = \sum_{l}\gamma_{l}{}_{i}e_{l}$ |
 
 ## Further Reading
 

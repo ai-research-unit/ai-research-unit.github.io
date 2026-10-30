@@ -56,7 +56,7 @@ $$
 again an element of the material sector: imaginary scalar part $i\gamma c$, real vector part $\gamma\vec v$. Its biquaternion norm is fixed,
 
 $$
-\boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2\;},
+\boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma_2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$
 
 which is the biquaternion form of the relativistic normalization $v^\mu v_\mu = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{M}_-$.
