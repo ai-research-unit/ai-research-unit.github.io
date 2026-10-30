@@ -112,7 +112,7 @@ $$
 
 with the Casimir operators built from the operators of the companion article, $L^2e_t$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$. The orbital weight $l_z$, the orbital quantum number $l$, and the spin weight $s_z$ are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.
 
-One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $H$ is spin-independent, the **total** angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.
+One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $H$ is spin-independent, the **total** angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,l_z\rangle\,|\!\uparrow\rangle,|n,l,l_z\rangle\,|\!\downarrow\rangle$.
 
 A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.
 
@@ -270,7 +270,7 @@ and the relevant basis is the coupled one, $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot
 **The spectrum is the Sommerfeld/Dirac form.** Writing $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ for the fine-structure constant, the exact bound-state energies are
 
 $$
-E_{n,s_{\mathrm{tot}}} = mc^2\left[1+\frac{(Z\alpha)^2}{\bigl(n-\delta_{s_{\mathrm{tot}}}\bigr)^2}\right]^{-1/2},
+E_{n s_{\mathrm{tot}}} = mc^2\left[1+\frac{(Z\alpha)^2}{\bigl(n-\delta_{s_{\mathrm{tot}}}\bigr)^2}\right]^{-1/2},
 \qquad
 \delta_{s_{\mathrm{tot}}} = s_{\mathrm{tot}}+\tfrac12-\sqrt{\bigl(s_{\mathrm{tot}}+\tfrac12\bigr)^2-(Z\alpha)^2},
 $$

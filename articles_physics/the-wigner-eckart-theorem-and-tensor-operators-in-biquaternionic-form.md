@@ -140,7 +140,7 @@ the first from the vanishing of the Clebsch–Gordan coefficient unless the magn
 
 ## Verification in the Coupled Two-Spin Space
 
-The theorem can be checked against explicit matrices in the two-qubit space, where the coupled multiplets are the triplet $j=1$ and the singlet $j=0$ and the Clebsch–Gordan coefficients are known. The operator used is
+The theorem can be checked against explicit matrices in the two-qubit space, where the coupled multiplets are the triplet $s_{\mathrm{tot}}=1$ and the singlet $s_{\mathrm{tot}}=0$ and the Clebsch–Gordan coefficients are known. The operator used is
 
 $$
 T^{(1)}_\mu=\tilde S^{(1)}_\mu ,
@@ -170,7 +170,7 @@ $$
 
 whose ratio to the one-particle value $\hbar/\sqrt2$ is $2$: the total spin is twice the symmetric part of the one-particle spin, exactly as $\tilde S_\mu=\tilde S^{(1)}_\mu+\tilde S^{(2)}_\mu$ and the two terms contribute equally in the symmetric sector. All three columns are consistent with the theorem and would be impossible if the Clebsch–Gordan factorisation failed.
 
-A last check of the theorem's content is the vanishing of matrix elements that the selection rules permit. For the one-particle operator the $(1,0)$ and $(0,1)$ entries above are nonzero, so no accidental vanishing occurs here; but a rank-$2$ operator built from the same material has no matrix element connecting $s_{\mathrm{fin}}=1$ to $j=0$, because the triangle condition $|1-2|\le s_{\mathrm{fin}}\le3$ excludes $s_{\mathrm{fin}}=0$. The selection rules, not the dynamics, decide which triples can be nonzero.
+A last check of the theorem's content is the vanishing of matrix elements that the selection rules permit. For the one-particle operator the $(1,0)$ and $(0,1)$ entries above are nonzero, so no accidental vanishing occurs here; but a rank-$2$ operator built from the same material has no matrix element connecting $s_{\mathrm{fin}}=1$ to $s_{\mathrm{tot}}=0$, because the triangle condition $|1-2|\le s_{\mathrm{fin}}\le3$ excludes $s_{\mathrm{fin}}=0$. The selection rules, not the dynamics, decide which triples can be nonzero.
 
 ### A self-contained example: the adjoint multiplet
 

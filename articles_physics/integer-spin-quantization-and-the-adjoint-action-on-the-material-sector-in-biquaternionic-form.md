@@ -178,7 +178,7 @@ $$
 \qquad
 \tilde L_k=(\vec x\times\vec p)_k,
 \qquad
-\tilde S^{(\mathrm{adj})}_k=\tfrac12\mathrm{ad}_{i\vec e_k}.
+\tilde S^{(\mathrm{adj})}_k=\tfrac12\mathrm{ad}_{i\vec e_k},
 $$
 
 with $\tilde L_k$ acting on the argument and $\tilde S_k$ on the value. The two commute, because they act on different slots, and the total generators satisfy the same algebra. The scalar field of the companion spin-$0$ subcategory has $\tilde S_k=0$ because its values lie in the centre; the spin-$\tfrac12$ field has $\tilde S_k$ equal to the left-ideal action of the companion subcategory. The integer-spin field of spin one is the first case in which the internal action is the adjoint action, $\tilde S_k=\tilde S^{(\mathrm{adj})}_k$, and the reason is that the field is a material **vector**, the representation of $\mathbb{B}$ that the algebra naturally acts on by bracketing.

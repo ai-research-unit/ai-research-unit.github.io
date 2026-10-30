@@ -4,7 +4,7 @@
 
 These are the conventions of the operators and of the calculus. An operator acting by multiplication is the element it multiplies by, and its glyph is the glyph of that element; the article fixes the named operators, the dagger, the Kraus operator and the Fock exception. The calculus follows: the derivative marks, the gradient and the d'Alembertian, and the four product-form-norm readings of the gradient that the field equations use.
 
-The article assumes the base of *Conventions in the Biquaternion Universe*, the products and forms of *Conventions of the Products and the Forms*, and the norms of *Conventions of the Norms and the Pairings*. The representations are in *Conventions of the Representations*; the superscripts on operators are in *Conventions of the Units, the Indices and the Notation*.
+The article assumes the base of *Conventions in the Biquaternion Universe*, the products and forms of *Conventions of the Products and the Forms*, and the norms of *Conventions of the Norms and the Pairings*. The matrix models are in *Conventions of the Matrix Models*; the superscripts on operators are in *Conventions of the Units, the Indices and the Notation*.
 
 ## The Operators
 

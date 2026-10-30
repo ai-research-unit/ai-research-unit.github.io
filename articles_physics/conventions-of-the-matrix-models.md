@@ -1,26 +1,10 @@
-# __Conventions of the Representations__
+# __Conventions of the Matrix Models__
 
 ## Introduction
 
-The algebra is written in three presentations: the coefficient quadruple, the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries the last two, after the four-vector. It assumes the base of *Conventions in the Biquaternion Universe* and the products of *Conventions of the Products and the Forms*.
+The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Conventions in the Biquaternion Universe* and the products of *Conventions of the Products and the Forms*.
 
 The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford map closes the article, and it is neither of the two.
-
-## The Four-Vector Representation
-
-The algebra is read as the quadruple of its complex coefficients, in *The Biquaternion Algebra*, §*The Coordinate Systems*. Each unit is one coordinate place,
-
-$$
-e_t \longleftrightarrow (1,0,0,0), \qquad \vec e_x \longleftrightarrow (0,1,0,0), \qquad \vec e_y \longleftrightarrow (0,0,1,0), \qquad \vec e_z \longleftrightarrow (0,0,0,1),
-$$
-
-so that an element is its quadruple of coefficients,
-
-$$
-\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \;\longleftrightarrow\; (Q_t, Q_x, Q_y, Q_z).
-$$
-
-**No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict'$ convention is what puts the metric into the coefficient — $(ict', \vec q)$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components.
 
 ## The Matrix Representations
 
@@ -34,7 +18,7 @@ The algebra is read in matrices in two ways, and the two answer different questi
 
 **The letter $M$ belongs to matrices.** It names a matrix and nothing else: the images $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{L}(\tilde Q)$, the matrix algebras $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$, and an entrywise matrix in a proof. No element of the algebra is written $M$, with or without a tilde.
 
-**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other. $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the ambient operator algebra and is never called a biquaternion algebra. The writing $M_4(\mathbb{C})_L$, read as the name of an algebra, is retired and is read here as $M_4(\mathbb{C})_{\mathbb{B},L}$; the same holds on the right. The convention is fixed in *Conventions of the Matrix Models*, §*The Matrix Models*.
+**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other. $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the ambient operator algebra and is never called a biquaternion algebra. The writing $M_4(\mathbb{C})_L$, read as the name of an algebra, is retired and is read here as $M_4(\mathbb{C})_{\mathbb{B},L}$; the same holds on the right. The convention is stated here.
 
 ### The 2×2 Matrix Representation
 
@@ -87,7 +71,7 @@ $$
 $$
 and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image is the four-dimensional subspace $\mathbb{B}_L=\rho_L(\mathbb{B})$ of the ambient $M_4(\mathbb{C})$, not the ambient algebra, and likewise $\mathbb{B}_R$ on the right. Each copy is a subalgebra isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other.
 
-**The canonical frame.** The frame is fixed in *Conventions of the Matrix Models*, §*The Matrix Models*: the standard pair and the mixed units
+**The canonical frame.** The frame is fixed here: the standard pair and the mixed units
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
 \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
@@ -190,8 +174,6 @@ The five generators are the matrices of §*The 4×4 Matrix Representation*, read
 The two are different objects: $\mathsf{M}_4^{L}$ is the matrix of left multiplication on $\mathbb{B}$, in the canonical frame, while $\iota_{\mathrm{Cl}}$ identifies $\mathbb{B}$ with the even subalgebra of $\mathrm{Cl}_{1,3}$. Their images are both $4\times4$ matrices, and that is all they share. A bare $\mathsf{M}_4$ is written for neither. The regular matrices carry $L$ or $R$, and the Clifford map carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
 
 ## Summary
-
-The four-vector presentation reads the element as its quadruple of complex coefficients, one place to a unit. No index is raised or lowered anywhere in the series; the coefficient and the element are read in the same position.
 
 The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, and the three vector units to $-i$ times the Pauli matrices, with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace is twice the scalar part, the determinant is the biquaternion norm, and conjugating entries on their own is not an involution of the algebra. A bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
