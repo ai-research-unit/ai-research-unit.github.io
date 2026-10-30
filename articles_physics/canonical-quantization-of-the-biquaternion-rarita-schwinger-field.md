@@ -27,7 +27,7 @@ The article is organized as follows. The field, its constraint, and the conseque
 The Rarita–Schwinger field satisfies the field equation
 
 $$
-\left(i\gamma^{\nu}\partial/\partial x^{\nu} - m\right)\psi_\mu = 0 ,
+\left(i\gamma^{\nu}\partial/\partial Q_\nu - m\right)\psi_\mu = 0 ,
 $$
 
 together with the algebraic irreducibility constraint
@@ -247,7 +247,7 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## Summary
 
-The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\gamma^{\nu}\partial/\partial x^{\nu}-m)\psi_\mu=0$ and the irreducibility constraint $\gamma^\mu\psi_\mu=0$. Contracting the field equation with $\gamma^\mu$ and using $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$ gives the transversality condition $p^\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit gamma matrices. The constraint is imposed by the projector $P^{\mu\nu}=g^{\mu\nu}-\tfrac14\gamma^\mu\gamma^\nu$, which is idempotent and annihilates the $\gamma$-trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
+The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\gamma^{\nu}\partial/\partial Q_\nu-m)\psi_\mu=0$ and the irreducibility constraint $\gamma^\mu\psi_\mu=0$. Contracting the field equation with $\gamma^\mu$ and using $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$ gives the transversality condition $p^\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit gamma matrices. The constraint is imposed by the projector $P^{\mu\nu}=g^{\mu\nu}-\tfrac14\gamma^\mu\gamma^\nu$, which is idempotent and annihilates the $\gamma$-trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
 
 The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\psi_\mu\mapsto\psi_\mu+\partial/\partial Q_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the $\gamma$-trace gauge fixing requires Faddeev–Popov spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r,a_s^\dagger\}=(2\pi)^3\delta_{rs}\delta^{(3)}$, and a completeness relation whose transverse projector is built from the same Clifford structure.
 
@@ -258,7 +258,7 @@ In the biquaternion framework the field is the tensor product of the material ve
 | Symbol | Meaning |
 |---|---|
 | $\psi_\mu$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
-| $(i\gamma^{\nu}\partial/\partial x^{\nu}-m)\psi_\mu=0$ | Rarita–Schwinger field equation |
+| $(i\gamma^{\nu}\partial/\partial Q_\nu-m)\psi_\mu=0$ | Rarita–Schwinger field equation |
 | $\gamma^\mu\psi_\mu=0$ | Irreducibility constraint; removes the $\left(\tfrac12\right)$ component |
 | $p^\mu\psi_\mu=0$ | Transversality; follows from the constraint and the field equation |
 | $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$ | Clifford identity used (verified) |

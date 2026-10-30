@@ -253,7 +253,7 @@ $$
 a multiple of the identity. Substituting the expansion gives
 
 $$
-\boxed{\;\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial x^{\mu}+m)\,\Delta_{\mathrm{A}}(x-y)\;},
+\boxed{\;\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\,\Delta_{\mathrm{A}}(x-y)\;},
 $$
 
 where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
@@ -261,7 +261,7 @@ where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch p
 **The commutator is not.** Replacing the anticommutator by the commutator gives
 
 $$
-\langle0|\,[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]\,|0\rangle=(i\gamma^{\mu}\partial/\partial x^{\mu}+m)\,G_{\mathrm{S}}(x-y),
+\langle0|\,[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]\,|0\rangle=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\,G_{\mathrm{S}}(x-y),
 $$
 
 with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion,
@@ -320,7 +320,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial x^{\mu}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\gamma^{\mu} p_{\mu}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\gamma^{\mu} p_{\mu}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -347,7 +347,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde P=iHe_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\vec\Upsilon_x=\tilde S_+/\hbar$, $\vec\Upsilon_y=\tilde S_-/\hbar$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
-| $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial x^{\mu}+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
+| $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\vec\Delta)=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |

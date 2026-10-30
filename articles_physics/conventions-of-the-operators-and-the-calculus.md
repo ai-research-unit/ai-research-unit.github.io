@@ -109,14 +109,6 @@ $$
 \tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}\,e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
 $$
 
-### The Gamma Contraction
-
-A Dirac contraction uses the real-time derivative and is written out: $\gamma^\mu\partial/\partial x^\mu$ with $x^\mu=(ct',x,y,z)$. This is the operator whose square is $\Box$,
-$$
-\Bigl(i\gamma^\mu\frac{\partial}{\partial x^\mu}\Bigr)^2=\Box .
-$$
-The contraction $\gamma^\mu\partial/\partial Q_\mu$ is not used. Because $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$, its square is $\partial^2/\partial Q_t^2-\Delta$, and that differs from $\Box=\partial^2/\partial Q_t^2+\Delta$ by $-2\Delta$. The Feynman slash is retired: it is not written anywhere in the corpus, and the contraction is always given in gamma and cell form. The first-order operator of this article remains the biquaternionic gradient $\tilde\nabla$.
-
 ### The Plain Bilinear Product, Its Form and Its Norm
 
 **The product.** The general plain bilinear product is one of the four of *Conventions of the Products and the Forms*, §*The Twelve Products and Their Names*. On the gradient, with an element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, it is read with $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j \vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit,

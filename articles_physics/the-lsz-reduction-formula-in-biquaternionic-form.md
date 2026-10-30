@@ -149,12 +149,12 @@ The two cases differ in exactly one place: whether the amputation operator is ce
 $$
 \langle f|S|i\rangle_{\text{spinor}}
 = \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(\pm ip_j\cdot x_j)\Big]
-\Big[\prod_{\text{legs}}\big(i\gamma^{\mu}\partial/\partial x_j^{\mu}-m\big)\Big]
+\Big[\prod_{\text{legs}}\big(i\gamma^{\mu}\partial/\partial Q_{j\mu}-m\big)\Big]
 \big\langle 0\big|T\,\tilde\Psi(x_1)\cdots\tilde\Psi^{\natural}(x_n)\big|0\big\rangle\Big|_{\text{on shell}} ,
 $$
-with the $\tilde\Psi^{\natural}$ legs amputated by $i\gamma^{\mu}\partial/\partial x_j^{\mu}+m$. The operator is now a matrix and the reduction does not factorize; the internal indices of the module are contracted with the external spinors. This is the standard spinor LSZ formula, and the framework's contribution is the module on which the spinors live and the chirality-off-diagonal form of the mass.
+with the $\tilde\Psi^{\natural}$ legs amputated by $i\gamma^{\mu}\partial/\partial Q_{j\mu}+m$. The operator is now a matrix and the reduction does not factorize; the internal indices of the module are contracted with the external spinors. This is the standard spinor LSZ formula, and the framework's contribution is the module on which the spinors live and the chirality-off-diagonal form of the mass.
 
-**A consistency check.** The spin sums and the relation $(\gamma^{\mu} p_{\mu}-m)(\gamma^{\nu} p_{\nu}+m)=(p^2-m^2)I_4$, which the propagator article verifies, are exactly what makes the spinor amputation extract the residue: the matrix $(i\gamma^{\mu}\partial/\partial x^{\mu}-m)$ inverts the spinor propagator's numerator structure. The framework adds nothing to this identity; it identifies the module and the mass operator.
+**A consistency check.** The spin sums and the relation $(\gamma^{\mu} p_{\mu}-m)(\gamma^{\nu} p_{\nu}+m)=(p^2-m^2)I_4$, which the propagator article verifies, are exactly what makes the spinor amputation extract the residue: the matrix $(i\gamma^{\mu}\partial/\partial Q_\mu-m)$ inverts the spinor propagator's numerator structure. The framework adds nothing to this identity; it identifies the module and the mass operator.
 
 ## The One-Mode Truncation and the Module Gap
 

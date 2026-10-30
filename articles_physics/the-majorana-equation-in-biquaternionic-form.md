@@ -141,7 +141,7 @@ $$
 W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2\;}.
 $$
 
-The anticommutator identity was checked for all sixteen pairs $(\mu,\nu)$, and it is the two-component statement of the Clifford relation: the d'Alembertian is the **product** of the two Weyl operators, not the square of either alone. This is why the first-order two-component operators are called square roots of the Klein–Gordon operator, and it is the two-component counterpart of the matrix identity $(\gamma^{\mu}\partial/\partial x^{\mu})^{2}=-\gamma^{\nu}\partial/\partial x^{\nu}^{2}=\Box$ used in *Klein–Gordon from the Dirac Square in Biquaternionic Form* for the four-component case. The mass term supplies the $-m^{2}$, so that the second-order equation of the self-conjugate field is the massive Klein–Gordon equation $(\Box-m^{2})\psi=0$, exactly as in the four-component case verified below.
+The anticommutator identity was checked for all sixteen pairs $(\mu,\nu)$, and it is the two-component statement of the Clifford relation: the d'Alembertian is the **product** of the two Weyl operators, not the square of either alone. This is why the first-order two-component operators are called square roots of the Klein–Gordon operator, and it is the two-component counterpart of the matrix square used in *Klein–Gordon from the Dirac Square in Biquaternionic Form* for the four-component case. The mass term supplies the $-m^{2}$, so that the second-order equation of the self-conjugate field is the massive Klein–Gordon equation $(\Box-m^{2})\psi=0$, exactly as in the four-component case verified below.
 
 ## The Charge-Conjugation Eigenstates and the ELKO Companion
 
@@ -177,7 +177,7 @@ $$
 =\;m^{2}\psi .
 $$
 
-Since $(\gamma^{\rho}\partial/\partial x^{\rho})^{2}=g^{\mu\nu}\partial_\mu\partial_\nu=-\Box$ and $i^{2}=-1$, the left side is $\Box\psi$, so
+Since $(\gamma^{\rho}\partial/\partial Q_\rho)^{2}=g^{\mu\nu}\partial_\mu\partial_\nu=-\Box$ and $i^{2}=-1$, the left side is $\Box\psi$, so
 
 $$
 \boxed{\;(\Box-m^{2})\psi \;=\;0\;}.

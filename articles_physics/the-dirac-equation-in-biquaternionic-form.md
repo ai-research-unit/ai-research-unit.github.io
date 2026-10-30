@@ -10,7 +10,7 @@ $$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2g^{\mu\nu} I,
 $$
 
-where $g^{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ is the Clifford metric of the generators and $I$ is the identity matrix. The gamma matrices generate the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, and the Dirac equation is the statement that the Dirac operator $\gamma^{\nu}\partial/\partial x^{\nu}$ annihilates the spinor field.
+where $g^{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ is the Clifford metric of the generators and $I$ is the identity matrix. The gamma matrices generate the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, and the Dirac equation is the statement that the Dirac operator $\gamma^{\nu}\partial/\partial Q_\nu$ annihilates the spinor field.
 
 This article develops the biquaternionic formulation of the Dirac equation. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a real algebra, to the **even subalgebra** of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternionic gradient $\tilde{\nabla}$ plays the role of the Dirac operator. The Dirac equation in biquaternionic form is therefore a first-order equation on the biquaternion algebra.
 
@@ -39,33 +39,31 @@ $$
 
 where $\sigma^k$ are the Pauli matrices. These are the usual **mostly-minus** Dirac representation, and they satisfy the metric declared above: $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$, so squaring reproduces $(\gamma^\mu)^2 = g^{\mu\mu} I_4$ and the anticommutation relation holds as stated.
 
-### The Dirac Equation
+### The Equation in the Algebra
 
-The **Dirac equation** for a free fermion of mass $m$ is
-
-$$
-(i\gamma^{\mu}\partial/\partial x^{\mu} - m)\psi = 0,
-$$
-
-where $\gamma^{\nu}\partial/\partial x^{\nu}$ is the **Dirac operator**, $\psi$ is a four-component complex **Dirac spinor**, and $m$ is the mass. With the mostly-minus generators the factor of $i$ is explicit, as in the standard treatment; in natural units $\hbar = c = 1$ the equation is
+The dynamics of this article is the **chiral pair**
 
 $$
-(i\gamma^\mu\partial/\partial x^\mu - m)\psi = 0.
+\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;}
 $$
 
-For a massless fermion ($m = 0$), the equation reduces to
+for a field of mass $m$, and the single equation
 
 $$
-i\gamma^{\mu}\partial/\partial x^{\mu}\psi = 0.
+\tilde{\nabla}\tilde{\Psi} = 0
 $$
 
-Squaring the Dirac operator gives the Klein–Gordon operator:
+for $m=0$. Each member is first order, both are linear in the field, and the mass couples the two chiral halves. Applying $\tilde{\nabla}^{\natural}$ to the first member and using the second gives
 
 $$
-(i\gamma^{\sigma}\partial/\partial x^{\sigma})^2 = -(\gamma^{\rho}\partial/\partial x^{\rho})^2 = -g^{\mu\nu}\partial/\partial x^\mu\,\partial/\partial x^\nu = \eta^{\mu\nu}\partial/\partial x^\mu\,\partial/\partial x^\nu = \Box,
+\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = m^2\tilde{\Psi}_R,
+\qquad\text{that is}\qquad
+\left(\Box - m^2\right)\tilde{\Psi}_R = 0,
 $$
 
-where $\Box = \eta^{\mu\nu} \partial/\partial Q_\mu \partial/\partial Q_\nu = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$ is the d'Alembertian, with $\eta = -g$ the $ict'$ metric of the material sector. So every solution of the massless Dirac equation is a solution of the wave equation.
+and symmetrically for $\tilde{\Psi}_L$. So each chiral half obeys the Klein–Gordon equation, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ is the central scalar. The factorisation is the one the algebra supplies; no matrix square is used and no Clifford metric enters.
+
+The matrix form with gamma matrices is a realization of the same content, recorded in the dictionary section below. It is not a second dynamics, and the contraction $\gamma^\mu\partial/\partial Q_\mu$ is not the gradient.
 
 ### Spinors and the Lorentz Group
 
@@ -130,7 +128,7 @@ $$
 \tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z
 $$
 
-is the biquaternion form of the Dirac operator. The correspondence with the gamma-matrix Dirac operator $\gamma^{\nu}\partial/\partial x^{\nu}$ is through the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $\vec e_\mu$ correspond to spacelike bivectors, and the scalar unit $e_t$ corresponds to the identity $I$.
+is the biquaternion form of the Dirac operator. Its image in the Clifford algebra is fixed by the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $\vec e_\mu$ correspond to spacelike bivectors, and the scalar unit $e_t$ corresponds to the identity $I$.
 
 The biquaternionic gradient satisfies the factorization
 
@@ -138,17 +136,17 @@ $$
 \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box,
 $$
 
-which is the biquaternion form of the factorization $(\gamma^{\mu}\partial/\partial x^{\mu})^2 = \Box$. The two factorizations use the same algebraic relation between the basis elements and the metric.
+and it is the only root of $\Box$ in the module. The contraction $\gamma^{\mu}\partial/\partial Q_\mu$ is not that root: in the $Q$ coordinates it squares to $\partial^2/\partial Q_t^2-\Delta$, while $\Box=\partial^2/\partial Q_t^2+\Delta$. The image of $\tilde{\nabla}$ under $\iota_{\mathrm{Cl}}$ is $\partial/\partial Q_t+i\gamma^0\gamma^k\partial/\partial Q_k$, which does square to $\Box$.
 
 ### The Difference from the Matrix Form
 
-The matrix Dirac operator $\gamma^{\mu}\partial/\partial x^{\mu}$ acts on four-component complex spinors (the Dirac spinors), while the biquaternionic gradient $\tilde{\nabla}$ acts on biquaternions. The two formulations are related by the isomorphism
+The matrix Dirac operator $\gamma^{\mu}\partial/\partial Q_\mu$ acts on four-component complex spinors (the Dirac spinors), while the biquaternionic gradient $\tilde{\nabla}$ acts on biquaternions. The two formulations are related by the isomorphism
 
 $$
 \mathrm{Cl}_{1,3} \cong M_4(\mathbb{C}),
 $$
 
-under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$, and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of $\gamma^{\mu}\partial/\partial x^{\mu}$ on a two-dimensional complex spinor module.
+under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$, and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of its image under $\iota_{\mathrm{Cl}}$ on a two-component complex spinor module.
 
 So the biquaternion formulation of the Dirac equation is expressed in terms of the biquaternion algebra, whose elements can be viewed as **pairs of two-component Weyl spinors**. The full four-component Dirac spinor is recovered by taking the direct sum of the two-component spinor module with its complex conjugate.
 
@@ -450,7 +448,7 @@ $$
 \boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;}.
 $$
 
-Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. On the spinor module the same statement is the matrix equation $(\gamma^{\mu}\partial/\partial x^{\mu} - m)\psi = 0$ of the first section, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors.
+Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. On the spinor module the same statement is the matrix equation $(\gamma^{\mu}\partial/\partial Q_\mu - m)\psi = 0$ of the first section, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors.
 
 A **single-string form** of the same pair is recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing the wave function in the light-cone coordinates and using that article's outer and inner products, the chiral pair becomes one expression, $F^- \odot \bar D + D \otimes F^+ = im\overset{⤺}{F}$, in which the two products carry the two chiralities and the cyclic conjugation $\overset{⤺}{\phantom{x}}$ carries the mass term. The equivalence of that expression with the Weyl system is verified row by row there. The pair above remains the definitional home of the biquaternionic Dirac equation; the single-string form is a repackaging in a different product, not a different equation.
 
@@ -516,7 +514,7 @@ $$
 \left(\Box - m^2c^2/\hbar^2\right)\tilde{\Psi} = 0 ,
 $$
 
-in agreement with the companion article on the Klein–Gordon equation, whose operator is $\Box - m^2c^2/\hbar^2$. This is the biquaternion form of the standard statement that the square of the Dirac operator is the Klein–Gordon operator, $(\gamma^{\mu}\partial/\partial x^{\mu} + m)(\gamma^{\nu}\partial/\partial x^{\nu} - m) = \Box - m^2$.
+in agreement with the companion article on the Klein–Gordon equation, whose operator is $\Box - m^2c^2/\hbar^2$. This is the biquaternion form of the statement that the square of the first-order operator is the Klein–Gordon operator.
 
 ## Plane-Wave Solutions
 

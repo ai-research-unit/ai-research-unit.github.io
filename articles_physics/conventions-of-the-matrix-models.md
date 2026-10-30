@@ -293,21 +293,16 @@ $$
 $$
 and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the comparison carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
 
-**The slash is not used.** The Dirac slash is not part of the notation of this corpus. The contraction is written out: $\gamma^\mu p_\mu$ for a momentum, and $\gamma^\mu\partial/\partial x^\mu$ for a derivative, with $x^\mu=(ct',x,y,z)$ the real-time coordinates of the gamma layer. In the canonical frame the momentum contraction is a cell sum,
+**The slash is not used.** The Dirac slash is not part of the notation of this corpus.
+A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum and
+$\gamma^\mu\partial/\partial Q_\mu$ for a derivative, with $Q_\mu$ the coordinates of the corpus.
+No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
+and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
+In the canonical frame the momentum contraction is a cell sum,
 $$
 \gamma^\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
 $$
-so the frame is visible in the formula. The derivative is not taken with respect to $Q_\mu$. Since $\partial/\partial Q_t=-i/c\,\partial/\partial t'$,
-$$
-\Bigl(\gamma^\mu\frac{\partial}{\partial Q_\mu}\Bigr)^2=\frac{\partial^2}{\partial Q_t^2}-\Delta=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}-\Delta,
-\qquad
-\Box=\frac{\partial^2}{\partial Q_t^2}+\Delta=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta,
-$$
-and the two differ by $-2\Delta$: the $Q$-derivative contraction is not the d'Alembertian. With the real-time derivative the square is the d'Alembertian,
-$$
-\Bigl(i\gamma^\mu\frac{\partial}{\partial x^\mu}\Bigr)^2=\Box,
-$$
-and only with it. A slash over $\partial/\partial Q_\mu$ is therefore not a square root of $\Box$, and no article writes one. Where the corpus needs a first-order operator it writes the biquaternionic gradient $\tilde\nabla$, which is a cell and not a gamma contraction.
+so the frame is visible in the formula.
 
 ## Summary
 

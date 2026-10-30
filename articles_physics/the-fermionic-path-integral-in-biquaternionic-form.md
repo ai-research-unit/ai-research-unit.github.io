@@ -40,7 +40,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,i\gamma^{\mu}\partial/\partial x^{\mu}\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
+**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,i\gamma^{\mu}\partial/\partial Q_\mu\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
 
 ### Sources
 
@@ -78,7 +78,7 @@ $$
 S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$
 
-where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial x^{\mu}-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
+where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial Q_\mu-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
 
 $$
 \boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
@@ -123,7 +123,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 **For the field** the same computation gives the free generating functional
 
 $$
-Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;
+Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;
 \exp\Big[\,i\!\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big],
 $$
 
@@ -140,7 +140,7 @@ $$
 the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:
 
 $$
-\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$
 
 formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -265,7 +265,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\int\prod d\bar\psi d\psi\,\exp(-\bar\psi M\psi)=\det M$ | Gaussian = determinant |
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
-| $Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
+| $Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial Q_\mu-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |

@@ -265,7 +265,7 @@ so that the identity holds exactly on the solution set of the four equations and
 
 ## Recovering the Standard Minimal Coupling
 
-The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient plays the role of the Dirac operator $\gamma^{\nu}\partial/\partial x^{\nu}$ on the spinor module. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma^\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
+The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient plays the role of the Dirac operator $\gamma^{\nu}\partial/\partial Q_\nu$ on the spinor module. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma^\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
 
 $$
 \boxed{\;\left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\;},

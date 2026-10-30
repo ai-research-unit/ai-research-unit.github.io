@@ -165,7 +165,7 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\gamma^{\mu} p_{\mu}+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\gamma^{\mu} p_{\mu}-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator satisfies
 
 $$
-(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
+(i\gamma^{\mu}\partial/\partial Q_\mu-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
 $$
 
 in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x^0\gtrless y^0$.
@@ -180,7 +180,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(i\gamma^{\mu}\partial/\partial x^{\mu}-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
+**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(i\gamma^{\mu}\partial/\partial Q_\mu-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 
 **What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and the location of the deformation in the centre $\mathbb{C}_{\mathbb{B}}$, along the $ict'$ axis of the material sector $\mathbb{M}_-$.
 

@@ -32,7 +32,7 @@ $$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial Q_\rho\,\psi_\sigma = -i\,\gamma^{\mu\sigma\rho}\partial/\partial Q_\rho\,\psi_\sigma,
 $$
 
-which the companion dictionary fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
+which the companion dictionary fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma^{\mu}\partial/\partial Q_\mu-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
 
 The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma^{\mu\nu}\psi_\nu$,
 
@@ -47,7 +47,7 @@ up to the overall normalisation, which is a convention; varying with respect to 
 The massive equation implies the trace in two contractions, and the same two contractions deliver the reduced dynamics. Write $S := \gamma^\sigma\psi_\sigma$ for the trace spinor. Taking the divergence of the equation kills the kinetic term, because $\gamma^{\mu\sigma\rho}$ is antisymmetric in its first and third indices, and leaves, using $\gamma^{\mu\sigma} = \gamma^\mu\gamma^\sigma - g^{\mu\sigma}$,
 
 $$
-0 = \gamma^{\mu\sigma}\partial/\partial x^\mu\,\psi_\sigma = \gamma^{\nu}\partial/\partial x^{\nu}\,S - \partial^\sigma\psi_\sigma .
+0 = \gamma^{\mu\sigma}\partial/\partial Q_\mu\,\psi_\sigma = \gamma^{\nu}\partial/\partial Q_\nu\,S - \partial^\sigma\psi_\sigma .
 $$
 
 Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\gamma_\mu\gamma^{\mu\sigma\rho} = 2\gamma^{\sigma\rho}$ and $\gamma_\mu\gamma^{\mu\sigma} = 3\gamma^\sigma$, leaves
@@ -67,13 +67,13 @@ and with it the divergence $\partial^\mu\psi_\mu = 0$ follows from the first rel
 The trace in turn linearises the double product. Multiplying the identity $\gamma^\mu\gamma^\sigma = \gamma^{\mu\sigma}+g^{\mu\sigma}$ by $\psi_\sigma$ and summing over $\sigma$ gives $\gamma^{\mu\sigma}\psi_\sigma = -g^{\mu\mu}\psi_\mu$ when the trace vanishes, with no sum on $\mu$. Substituting this, and the vanishing of $\gamma^{\sigma\rho}\partial/\partial Q_\rho\,\psi_\sigma$ and of $\gamma^\sigma\partial^\mu\psi_\sigma = \partial^\mu S$, into the equation written through $\gamma^{\mu\sigma\rho} = \gamma^\mu\gamma^{\sigma\rho}-g^{\mu\sigma}\gamma^\rho+g^{\mu\rho}\gamma^\sigma$, leaves
 
 $$
-E_\mu = \bigl(i\gamma^{\nu}\partial/\partial x^{\nu} - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
+E_\mu = \bigl(i\gamma^{\nu}\partial/\partial Q_\nu - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
 $$
 
 which vanishes exactly when the component Dirac equation holds,
 
 $$
-(i\gamma^{\nu}\partial/\partial x^{\nu} - m)\psi_\mu = 0 \quad\text{for each }\mu .
+(i\gamma^{\nu}\partial/\partial Q_\nu - m)\psi_\mu = 0 \quad\text{for each }\mu .
 $$
 
 The antisymmetrized equation is thus equivalent to the Dirac equation on each component together with the trace, and, through them, the divergence. The mass term regenerates the Dirac operator on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac spinor's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single contraction.
@@ -159,7 +159,7 @@ the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra
 For the free field the antisymmetrized equation is equivalent to the pair of equations
 
 $$
-\boxed{\;(i\gamma^{\nu}\partial/\partial x^{\nu}-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
+\boxed{\;(i\gamma^{\nu}\partial/\partial Q_\nu-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
 $$
 
 in the following sense. If each component satisfies the Dirac equation, if the trace constraint holds and if the divergence constraint $\partial^\mu\psi_\mu=0$ holds, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the component Dirac equations and the trace, and in the massive case the divergence as well. The reduction is standard for the free theory, and it is the form adapted to the algebra, because the Dirac equation on a biquaternion component is exactly the biquaternionic Dirac equation of the companion article, and the trace constraint is an algebraic condition on the index contraction. In the rest frame the two descriptions have the same four-dimensional solution space, and the explicit computation below verifies this.
@@ -179,7 +179,7 @@ up to the index-position conventions that translate $\gamma^\mu$ into the basis,
 Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units, and the derivative is $\partial/\partial Q_t\to -im$. The Dirac operator becomes
 
 $$
-i\gamma^{\mu}\partial/\partial x^{\mu} - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
+i\gamma^{\mu}\partial/\partial Q_\mu - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
 $$
 
 acting on each component. Since $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, the operator $m(\gamma^0-I_4)$ annihilates exactly the **upper** components and annihilates nothing else; the Dirac equation on the spatial components therefore forces them to their upper two-component parts.

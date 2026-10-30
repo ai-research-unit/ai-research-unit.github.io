@@ -39,7 +39,7 @@ The reason the axial-axial channel is the physically motivated one is geometric,
 The Thirring model is defined in $1+1$ dimensions by the Lagrangian density
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\nu}\partial/\partial x^{\nu} - m\right)\psi
+\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\nu}\partial/\partial Q_\nu - m\right)\psi
 - \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
 $$
 
@@ -52,11 +52,11 @@ The **massless** Thirring model is exactly solvable: the multipoint correlation 
 The Soler model is defined in $3+1$ dimensions by
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\mu}\partial/\partial x^{\mu} - m\right)\psi
+\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\mu}\partial/\partial Q_\mu - m\right)\psi
 + \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$
 
-with $\psi$ a four-component spinor and $\gamma^{\mu}\partial/\partial x^{\mu}$ the four-dimensional Dirac operator. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.
+with $\psi$ a four-component spinor and $\gamma^{\mu}\partial/\partial Q_\mu$ the four-dimensional Dirac operator. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.
 
 Recently, exact solutions of the Soler model in closed form have been found, which is why the model is of more than illustrative interest: it is one of the few interacting fermion equations with explicit non-perturbative solutions.
 

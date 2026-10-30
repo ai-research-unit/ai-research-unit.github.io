@@ -128,25 +128,25 @@ $$
 \qquad
 \beta = \begin{pmatrix} 0 & I_2 \\ I_2 & 0\end{pmatrix},
 \qquad
-i\gamma^{\nu}\partial/\partial x^{\nu} = i\begin{pmatrix} 0 & \sigma^\mu\partial/\partial x^\mu \\ \bar\sigma^\mu\partial/\partial x^\mu & 0\end{pmatrix},
+i\gamma^{\nu}\partial/\partial Q_\nu = i\begin{pmatrix} 0 & \sigma^\mu\partial/\partial x^\mu \\ \bar\sigma^\mu\partial/\partial x^\mu & 0\end{pmatrix},
 $$
 
 where $\sigma^\mu = (I_2,\boldsymbol\sigma)$ and $\bar\sigma^\mu = (I_2,-\boldsymbol\sigma)$ in the standard conventions. Two facts are immediate from the block structure.
 
-- The **supercharge is off-diagonal**: $i\gamma^{\mu}\partial/\partial x^{\mu}$ has no diagonal blocks in the chiral basis, so it maps a left-handed field to a right-handed one and back, exactly as the biquaternion pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. It anticommutes with the diagonal $\gamma_5$,
+- The **supercharge is off-diagonal**: $i\gamma^{\mu}\partial/\partial Q_\mu$ has no diagonal blocks in the chiral basis, so it maps a left-handed field to a right-handed one and back, exactly as the biquaternion pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. It anticommutes with the diagonal $\gamma_5$,
 
 $$
-\{i\gamma^{\mu}\partial/\partial x^{\mu},\gamma_5\} = 0 ,
+\{i\gamma^{\mu}\partial/\partial Q_\mu,\gamma_5\} = 0 ,
 $$
 
 which is the statement that the supercharge is odd under the grading.
-- The **Hamiltonian is even**: $(i\gamma^{\mu}\partial/\partial x^{\mu})^2 = \Box\,I_4$ (the Dirac square of the companion article), which is diagonal in the chiral basis and commutes with $\gamma_5$. It is the supersymmetric Hamiltonian $H$, and the mass term $m\beta$, off-diagonal in this basis, is the superpotential that pairs the two sectors.
+- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ (the companion article), which is diagonal in the chiral basis and commutes with $\gamma_5$. It is the supersymmetric Hamiltonian $H$, and the mass term $m\beta$, off-diagonal in this basis, is the superpotential that pairs the two sectors.
 
 In the biquaternion language the same statement reads: the gradient $\tilde{\nabla}$ is odd under the chirality $\mathbb{Z}_2$ of the two minimal left ideals; the central $\Box$ is even; and the mass, being off-diagonal, is odd. The superalgebra is the anticommutation $\{$odd, odd$\}=$ even, realised concretely as $\{$Dirac operator, Dirac operator$\}=$ scalar.
 
 ### The Two Gradings Must Not Be Conflated
 
-The supersymmetric grading is the **chirality** grading (left/right, $\gamma_5$), and it is not the frame grading (large/small, $\beta$) that the Foldy–Wouthuysen transformation diagonalises. The distinction, already drawn in the companion article on the transformation, matters here for the same reason: $\beta$ and $\gamma_5$ anticommute, so a supercharge that is odd under one is even under the other, and the two interpretations of the same first-order operator organise it differently. In the chirality grading the supercharge is $i\gamma^{\mu}\partial/\partial x^{\mu}$ and the mass is the off-diagonal superpotential; in the frame grading the object that the non-relativistic reduction removes is the kinetic term $O = c\boldsymbol\alpha\cdot\vec\pi$, which is odd under $\beta$. The biquaternion corpus uses the chirality grading when it writes the mass pair and the frame grading when it performs the non-relativistic reduction, and the supersymmetric structure belongs to the first. A reader who imports the frame intuition into the supersymmetry will expect the wrong object to be "odd"; this subsection is the standing warning against that.
+The supersymmetric grading is the **chirality** grading (left/right, $\gamma_5$), and it is not the frame grading (large/small, $\beta$) that the Foldy–Wouthuysen transformation diagonalises. The distinction, already drawn in the companion article on the transformation, matters here for the same reason: $\beta$ and $\gamma_5$ anticommute, so a supercharge that is odd under one is even under the other, and the two interpretations of the same first-order operator organise it differently. In the chirality grading the supercharge is $i\gamma^{\mu}\partial/\partial Q_\mu$ and the mass is the off-diagonal superpotential; in the frame grading the object that the non-relativistic reduction removes is the kinetic term $O = c\boldsymbol\alpha\cdot\vec\pi$, which is odd under $\beta$. The biquaternion corpus uses the chirality grading when it writes the mass pair and the frame grading when it performs the non-relativistic reduction, and the supersymmetric structure belongs to the first. A reader who imports the frame intuition into the supersymmetry will expect the wrong object to be "odd"; this subsection is the standing warning against that.
 
 ## The 1+1-Dimensional Realisation
 
