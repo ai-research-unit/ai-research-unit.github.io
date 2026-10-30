@@ -93,7 +93,7 @@ $$
 Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2),
 $$
 and for a central scalar operator on the biquaternion module the residue is the module residue, so each external leg carries $\sqrt{Z}$ with $Z$ the module value. This was checked on an explicit propagator with a nonzero residue and a regular part.</li>
-<li><strong>Established (algebra).</strong> For a <strong>scalar</strong> biquaternion field the reduction's kinematics is block diagonal with respect to the sector split, because the mass-shell operator is central and the external wavefunctions are central-phase plane waves; the amputation commutes with the sector projections, and the two sectors are related by multiplication by the central $i$ rather than being independent field copies. For a <strong>spinor</strong> field the amputation operator $\gamma^{\mu} p_{\mu}-m$ is matrix-valued and non-central, and the external legs are the spinors $w^{(r)},v^{(r)}$ of <em>The Feynman Propagator in Biquaternionic Form</em>; the reduction does not factor.</li>
+<li><strong>Established (algebra).</strong> For a <strong>scalar</strong> biquaternion field the reduction's kinematics is block diagonal with respect to the sector split, because the mass-shell operator is central and the external wavefunctions are central-phase plane waves; the amputation commutes with the sector projections, and the two sectors are related by multiplication by the central $i$ rather than being independent field copies. For a <strong>spinor</strong> field the amputation operator $\gamma_{\mu} p_{\mu}-m$ is matrix-valued and non-central, and the external legs are the spinors $w^{(r)},v^{(r)}$ of <em>The Feynman Propagator in Biquaternionic Form</em>; the reduction does not factor.</li>
 <li><strong>One-mode truncation.</strong> Conditional on the one-mode identification of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, the LSZ reduction for a single mode is a $2\times2$ matrix statement, and the algebra hosts at most that one mode. The field-level reduction is an operation on the module, not an element of $\mathbb{B}$; the same module gap that the S-matrix, Fock, and Bogoliubov articles record.</li>
 <li><strong>Standard, and transcribed.</strong> The derivation of LSZ from the asymptotic conditions, the adiabatic switching, the $Z$ factors, the free-field limit, and the momentum-conservation delta functions. The algebra supplies the mass-shell symbol and the plane waves, not the reduction theorem.</li>
 </ul>
@@ -185,7 +185,7 @@ approaching $Z=2.3$ as the step is refined. The residue is insensitive to the re
 <h2 id="the-scalar-and-spinor-reductions">The Scalar and Spinor Reductions</h2>
 <p>The two cases differ in exactly one place: whether the amputation operator is central.</p>
 <p><strong>Scalar case: block diagonality.</strong> For a scalar biquaternion field the mass-shell operator $\mathcal{M}(\tilde P)$ is central, the external wavefunctions are central-phase plane waves with module-valued amplitudes, and the amputation commutes with the sector projections. The reduction's kinematics is therefore block diagonal with respect to the sector split: the amputation acts on each sector's part of a correlation function independently, and the sector parts are related by the central $i$ rather than being independent fields. This is the LSZ counterpart of the block-diagonal quadratic form of the functional integral and the effective action. Its content is a component count: the biquaternion scalar's four real components per sector enter the reduction separately, and the algebra fixes the split. It is <strong>not</strong> a statement that a biquaternion scalar is a multiplicity of complex scalars, for the reason the functional-integral and harmonic-oscillator articles give.</p>
-<p><strong>Spinor case: no factorization.</strong> For a spinor field the amputation operator is $\mathbb{D}(p)-m$, where $\mathbb{D}$ is the pair operator of the conventions article, with $\mathbb{D}^2=\Box$; it is not central, it acts on the spinor module, and it mixes the two chiralities through the mass. The external legs are the spinors $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ of the propagator article, with the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\gamma^{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\gamma^{\mu} p_{\mu}-m$; the reduction reads
+<p><strong>Spinor case: no factorization.</strong> For a spinor field the amputation operator is $\mathbb{D}(p)-m$, where $\mathbb{D}$ is the pair operator of the conventions article, with $\mathbb{D}^2=\Box$; it is not central, it acts on the spinor module, and it mixes the two chiralities through the mass. The external legs are the spinors $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ of the propagator article, with the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\gamma_{\mu} p_{\mu}-m$; the reduction reads
 $$
 \langle f|S|i\rangle_{\text{spinor}}
 = \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(\pm ip_j\cdot x_j)\Big]
@@ -261,7 +261,7 @@ $$
 \qquad
 \tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t ,
 $$
-verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\gamma^{\mu} p_{\mu}-m$ is non-central, the legs are the spinors $w^{(r)},v^{(r)}$ with $\sum_r w^{(r)}\bar w^{(r)}=\gamma^{\mu} p_{\mu}+m$, and the reduction does not factor.</p>
+verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\gamma_{\mu} p_{\mu}-m$ is non-central, the legs are the spinors $w^{(r)},v^{(r)}$ with $\sum_r w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m$, and the reduction does not factor.</p>
 <p>The reduction theorem itself — the asymptotic conditions, the adiabatic switching, the $\sqrt Z$ normalization — is standard and transcribed. The algebra supplies the mass-shell symbol, the central-phase plane waves, and the internal module; the field-level S-matrix and its reduction live on the Fock module and not in $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -321,7 +321,7 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is
 <td>Central-phase plane wave (external leg)</td>
 </tr>
 <tr>
-<td>$\gamma^{\mu} p_{\mu}=\gamma^0E-\boldsymbol\gamma\cdot\vec p=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$</td>
+<td>$\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$</td>
 <td>Spinor mass-shell operator</td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is
 </tr>
 <tr>
 <td>$w^{(r)},v^{(r)}$</td>
-<td>External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\gamma^{\mu} p_{\mu}+m$</td>
+<td>External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m$</td>
 </tr>
 <tr>
 <td>$Z=Z_-+Z_+$</td>

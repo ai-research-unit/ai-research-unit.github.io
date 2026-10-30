@@ -88,34 +88,34 @@ $$</p>
 <h3 id="the-equations">The Equations</h3>
 <p>The Rarita–Schwinger field satisfies the field equation</p>
 <p>$$
-\left(i\gamma^{\nu}\partial/\partial x^\nu - m\right)\psi_\mu = 0 ,
+\left(i\gamma_{\nu}\partial/\partial x^\nu - m\right)\psi_\mu = 0 ,
 $$</p>
 <p>together with the algebraic irreducibility constraint</p>
 <p>$$
-\gamma^\mu\psi_\mu = 0 .
+\gamma_\mu\psi_\mu = 0 .
 $$</p>
-<p>The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain, and it is what makes the field irreducible. The fully antisymmetric form of the Rarita–Schwinger equation, $(i\gamma^{\mu\nu\rho}\partial/\partial x^\rho-m\gamma^{\mu\nu})\psi_\nu=0$, whose variation gives the field equation and the constraint for $m\neq0$, is the standard Lagrangian origin of the two equations and is cited below; for the purposes of quantization the two equations above are the starting point.</p>
-<p>The gamma matrices are the $x$-frame set, and the derivative is $\partial/\partial x^\mu$ with $x^0=t'$. The $Q$-frame set is $\gamma^0$, $i\gamma^k$ with $Q_t=ict'$; the mixed contraction $i\gamma^\mu\partial/\partial Q_\mu$ belongs to neither frame.</p>
+<p>The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain, and it is what makes the field irreducible. The fully antisymmetric form of the Rarita–Schwinger equation, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$, whose variation gives the field equation and the constraint for $m\neq0$, is the standard Lagrangian origin of the two equations and is cited below; for the purposes of quantization the two equations above are the starting point.</p>
+<p>The gamma matrices are the $x$-frame set, and the derivative is $\partial/\partial x^\mu$ with $x^0=t'$. The $Q$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.</p>
 <h3 id="transversality-from-the-constraint">Transversality from the Constraint</h3>
-<p>Contracting the field equation with $\gamma^\mu$ and using the Clifford identity</p>
+<p>Contracting the field equation with $\gamma_\mu$ and using the Clifford identity</p>
 <p>$$
-\gamma^\mu \gamma^{\nu} p_{\nu} = 2p^\mu - \gamma^{\rho} p_{\rho}\gamma^\mu ,
+\gamma_\mu \gamma_{\nu} p_{\nu} = 2p^\mu - \gamma_{\rho} p_{\rho}\gamma_\mu ,
 $$</p>
-<p>which is the antisymmetrized form of $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, gives, in momentum space,</p>
+<p>which is the antisymmetrized form of $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, gives, in momentum space,</p>
 <p>$$
-\gamma^\mu\left(\gamma^{\nu} p_{\nu}-m\right)\psi_\mu
-= 2p^\mu\psi_\mu - \gamma^{\rho} p_{\rho}\gamma^\mu\psi_\mu - m\gamma^\mu\psi_\mu
+\gamma_\mu\left(\gamma_{\nu} p_{\nu}-m\right)\psi_\mu
+= 2p^\mu\psi_\mu - \gamma_{\rho} p_{\rho}\gamma_\mu\psi_\mu - m\gamma_\mu\psi_\mu
 = 2p^\mu\psi_\mu = 0 ,
 $$</p>
 <p>where the constraint has been used in the last two terms. Hence the constraint and the field equation together imply the <strong>transversality</strong> condition</p>
 <p>$$
 \boxed{\;p^\mu\psi_\mu = 0\;},
 $$</p>
-<p>which is not independent but follows from the two. Both steps were verified with explicit gamma matrices in the Clifford convention: the Clifford algebra to machine precision, the identity $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$ to machine precision at random momenta, and the resulting contraction to zero.</p>
+<p>which is not independent but follows from the two. Both steps were verified with explicit gamma matrices in the Clifford convention: the Clifford algebra to machine precision, the identity $\gamma_\mu \gamma_{\nu} p_{\nu}=2p^\mu-\gamma_{\rho} p_{\rho}\gamma_\mu$ to machine precision at random momenta, and the resulting contraction to zero.</p>
 <h3 id="the-projector-onto-the-traceless-part">The Projector onto the Traceless Part</h3>
 <p>The constraint is imposed by the projector</p>
 <p>$$
-P^{\mu\nu} = g^{\mu\nu}I_4-\tfrac14\gamma^\mu\gamma^\nu ,
+P^{\mu\nu} = g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu ,
 $$</p>
 <p>which annihilates the $\gamma$-trace and is idempotent,</p>
 <p>$$
@@ -136,19 +136,19 @@ $$</p>
 <p>$$
 \psi_\mu \;\longmapsto\; \psi_\mu+\partial/\partial x^\mu\,\epsilon ,
 $$</p>
-<p>with $\epsilon$ an arbitrary spinor parameter. The transformation changes $\psi_\mu$ by a gradient of a spinor, and it is the spin-$\tfrac32$ analogue of the gauge transformation of the vector field; the constraint $\gamma^\mu\psi_\mu=0$ is preserved by a gauge transformation whose parameter satisfies the Dirac equation, and the field equation is preserved exactly. The gauge symmetry is a <strong>first-class</strong> structure: the constraint $\gamma^\mu\psi_\mu=0$ and its conjugate are the generators, and the physical content is the quotient of the constraint surface by the gauge orbits. Taking the $\gamma$-trace gauge $\gamma^\mu\psi_\mu=0$ is the analogue of the Lorentz gauge, and it leaves a residual gauge freedom whose quantization requires Faddeev–Popov ghosts — Grassmann-odd <strong>spinor</strong> ghosts, in the Dirac representation of the gauge parameter. The physical states are the two helicities $\pm\tfrac32$; the helicities $\pm\tfrac12$ that the massless field would otherwise carry are removed by the gauge structure, exactly as the longitudinal and timelike states of the massless vector are removed.</p>
+<p>with $\epsilon$ an arbitrary spinor parameter. The transformation changes $\psi_\mu$ by a gradient of a spinor, and it is the spin-$\tfrac32$ analogue of the gauge transformation of the vector field; the constraint $\gamma_\mu\psi_\mu=0$ is preserved by a gauge transformation whose parameter satisfies the Dirac equation, and the field equation is preserved exactly. The gauge symmetry is a <strong>first-class</strong> structure: the constraint $\gamma_\mu\psi_\mu=0$ and its conjugate are the generators, and the physical content is the quotient of the constraint surface by the gauge orbits. Taking the $\gamma$-trace gauge $\gamma_\mu\psi_\mu=0$ is the analogue of the Lorentz gauge, and it leaves a residual gauge freedom whose quantization requires Faddeev–Popov ghosts — Grassmann-odd <strong>spinor</strong> ghosts, in the Dirac representation of the gauge parameter. The physical states are the two helicities $\pm\tfrac32$; the helicities $\pm\tfrac12$ that the massless field would otherwise carry are removed by the gauge structure, exactly as the longitudinal and timelike states of the massless vector are removed.</p>
 <h3 id="the-count-of-physical-states">The Count of Physical States</h3>
 <p>The component counting makes the role of the constraints explicit. A vector-spinor has sixteen complex components. The $\gamma$-trace constraint removes four, leaving twelve; the transversality condition $p^\mu\psi_\mu=0$ removes a further four on shell, leaving eight; and the field equation projects the remaining spatial spinors onto positive frequency, halving the count. The result is the four polarizations of the massive spin-$\tfrac32$ multiplet — the helicities $\pm\tfrac32$ and $\pm\tfrac12$ — for the particle, with the same four for the antiparticle of the complex field. The two helicities of largest magnitude are the genuinely new content of spin $\tfrac32$; the two helicities $\pm\tfrac12$ are the members that the two-index structure would also allow a spin-$\tfrac12$ field to have, and it is precisely those that the constraint is designed to remove. In the massless case the gauge symmetry removes them again, leaving the two states $\pm\tfrac32$, so that the massless field has just two physical polarizations. The count was confirmed componentwise: the projector's rank of twelve is the statement that the $\gamma$-trace removes four of the sixteen components, and the remaining steps are the standard on-shell reduction.</p>
 <h3 id="the-massive-case">The Massive Case</h3>
-<p>When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant under $\psi_\mu\mapsto\psi_\mu+\partial/\partial x^\mu\,\epsilon$, because the mass term is not. The constraints are then <strong>second class</strong>: $\gamma^\mu\psi_\mu=0$ and its conjugate do not commute weakly, and the canonical quantization must use the Dirac bracket rather than the Poisson bracket. The count of physical polarizations is the standard $2s+1=4$ for $s=\tfrac32$ — the helicities $\pm\tfrac32$ and $\pm\tfrac12$ — and no ghosts appear, since there is no gauge redundancy to fix. This is the same contrast as in the vector case: the massless field has a gauge redundancy and two physical states, the massive field has no redundancy and three (or, for spin $\tfrac32$, four) states, and the extra states are the ones the gauge would have removed.</p>
+<p>When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant under $\psi_\mu\mapsto\psi_\mu+\partial/\partial x^\mu\,\epsilon$, because the mass term is not. The constraints are then <strong>second class</strong>: $\gamma_\mu\psi_\mu=0$ and its conjugate do not commute weakly, and the canonical quantization must use the Dirac bracket rather than the Poisson bracket. The count of physical polarizations is the standard $2s+1=4$ for $s=\tfrac32$ — the helicities $\pm\tfrac32$ and $\pm\tfrac12$ — and no ghosts appear, since there is no gauge redundancy to fix. This is the same contrast as in the vector case: the massless field has a gauge redundancy and two physical states, the massive field has no redundancy and three (or, for spin $\tfrac32$, four) states, and the extra states are the ones the gauge would have removed.</p>
 <h2 id="canonical-quantization">Canonical Quantization</h2>
 <h3 id="momenta-constraints-and-dirac-brackets">Momenta, Constraints, and Dirac Brackets</h3>
 <p>The canonical momentum conjugate to $\psi_\mu$ is, from the standard Rarita–Schwinger Lagrangian,</p>
 <p>$$
-\pi^\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)} = i\bar\psi_\nu\gamma^{\nu 0\mu}
-= i\psi_\nu^\dagger\gamma^0\gamma^{\nu 0\mu} ,
+\pi^\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)} = i\bar\psi_\nu\gamma_{\nu 0\mu}
+= i\psi_\nu^\dagger\gamma_0\gamma_{\nu 0\mu} ,
 $$</p>
-<p>with $\gamma^{\nu 0\mu}$ the antisymmetrized product of the three gamma matrices, and the canonical analysis gives the primary constraint $\pi^0\approx 0$ — automatic here, since $\gamma^{\nu 0 0}=0$ — together with the $\gamma$-trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket</p>
+<p>with $\gamma_{\nu 0\mu}$ the antisymmetrized product of the three gamma matrices, and the canonical analysis gives the primary constraint $\pi^0\approx 0$ — automatic here, since $\gamma_{\nu 0 0}=0$ — together with the $\gamma$-trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket</p>
 <p>$$
 \{A,B\}_D = \{A,B\}_P-\{A,\chi_a\}_P\,C^{ab}\,\{\chi_b,B\}_P ,
 \qquad
@@ -171,16 +171,16 @@ a_r(\vec p)\,\xi_{\mu,r}(p)\,\exp(-ip\cdot x)
 $$</p>
 <p>with $E_p=\sqrt{\vec p^2+m^2}$, and with the Rarita–Schwinger polarization spinors satisfying</p>
 <p>$$
-\left(\gamma^{\rho} p_{\rho}-m\right)\xi_{\mu,r}=0 ,
+\left(\gamma_{\rho} p_{\rho}-m\right)\xi_{\mu,r}=0 ,
 \qquad
-\gamma^\mu \xi_{\mu,r}=0 ,
+\gamma_\mu \xi_{\mu,r}=0 ,
 \qquad
 p^\mu \xi_{\mu,r}=0 ,
 \qquad
 \sum_{r=1}^{4}\xi_{\mu,r}\bar\xi_{\nu,r}
-= -\left(\gamma^{\sigma} p_{\sigma}+m\right)\Pi_{\mu\nu} ,
+= -\left(\gamma_{\sigma} p_{\sigma}+m\right)\Pi_{\mu\nu} ,
 $$</p>
-<p>the last being the completeness relation of the four polarizations. The object $\Pi_{\mu\nu}$ is the <strong>transverse</strong> $\gamma$-traceless projector, the on-shell projector onto the intersection of the two constraints, $\{\gamma^\mu\psi_\mu=0,\ p^\mu\psi_\mu=0\}$, of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and $p^\mu P_{\mu\nu}\neq0$, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra</p>
+<p>the last being the completeness relation of the four polarizations. The object $\Pi_{\mu\nu}$ is the <strong>transverse</strong> $\gamma$-traceless projector, the on-shell projector onto the intersection of the two constraints, $\{\gamma_\mu\psi_\mu=0,\ p^\mu\psi_\mu=0\}$, of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and $p^\mu P_{\mu\nu}\neq0$, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra</p>
 <p>$$
 \{a_r(\vec p),\,a_s^\dagger(\vec k)\}
 = \{b_r(\vec p),\,b_s^\dagger(\vec k)\}
@@ -193,7 +193,7 @@ $$</p>
 <h2 id="the-propagator-and-its-gauge-fixing">The Propagator and Its Gauge Fixing</h2>
 <p>The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the $\gamma$-traceless subspace. It is of the general form</p>
 <p>$$
-G_{\mu\nu}(p) = -\frac{i}{p^2-m^2}\left[\left(\gamma^{\rho} p_{\rho}+m\right)\Pi_{\mu\nu} + \text{(lower-spin terms)}\right] ,
+G_{\mu\nu}(p) = -\frac{i}{p^2-m^2}\left[\left(\gamma_{\rho} p_{\rho}+m\right)\Pi_{\mu\nu} + \text{(lower-spin terms)}\right] ,
 $$</p>
 <p>where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the $\gamma$-trace part of the projector with the algebra's $\gamma$-traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.</p>
 <p>The massless case requires the gauge fixing, and the gauge-fixing parameter enters the propagator in the same way as in the vector case, through the longitudinal-traceless decomposition of the field. The ghost fields are spinor and anticommuting, so they live in the Grassmann envelope of the algebra tensored with the spinor carrier; the BRST structure is the standard one, with the gauge parameter now a spinor.</p>
@@ -205,7 +205,7 @@ $$</p>
 \qquad
 3\cdot 2 = 4+2 ,
 $$</p>
-<p>the spin-$\tfrac32$ piece of dimension four and a spin-$\tfrac12$ piece of dimension two. The $\gamma$-trace constraint removes the spin-$\tfrac12$ piece, and the projector that does it is $P^{\mu\nu}=g^{\mu\nu}-\tfrac14\gamma^\mu\gamma^\nu$, whose rank on the sixteen components of the vector-spinor is twelve — the four removed components being exactly the spin-$\tfrac12$ trace. This was verified by the explicit rank computation. The massive multiplet is the spin-$\tfrac32$ piece, with its four polarizations; the massless field, when the gauge symmetry is present, keeps the two states of helicity $\pm\tfrac32$ and the gauge removes the $\pm\tfrac12$ members of the same multiplet.</p>
+<p>the spin-$\tfrac32$ piece of dimension four and a spin-$\tfrac12$ piece of dimension two. The $\gamma$-trace constraint removes the spin-$\tfrac12$ piece, and the projector that does it is $P^{\mu\nu}=g_{\mu\nu}-\tfrac14\gamma_\mu\gamma_\nu$, whose rank on the sixteen components of the vector-spinor is twelve — the four removed components being exactly the spin-$\tfrac12$ trace. This was verified by the explicit rank computation. The massive multiplet is the spin-$\tfrac32$ piece, with its four polarizations; the massless field, when the gauge symmetry is present, keeps the two states of helicity $\pm\tfrac32$ and the gauge removes the $\pm\tfrac12$ members of the same multiplet.</p>
 <p>The parallel with the integer-spin case is exact. There, the carrier is a tensor power of the material vector and the trace removal selects the top component: for the graviton, the symmetric trace-free square, $1\otimes1$ symmetric and traceless $=2$ with dimension five, verified by the transverse-traceless projection. Here, the carrier is the material vector tensored with the spinor, and the $\gamma$-trace removes the lower component: $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$, with the $\tfrac32$ of dimension four retained. In both cases the framework's statement is the same: the higher-spin field is obtained by tensoring the material vector with a lower-spin carrier and projecting onto the top component with a projector built from the algebra's own invariant form — the metric pairing for the integer-spin case, the $\gamma$-trace for the half-integer one. The difference is that the spinor carrier is a left ideal rather than a tensor power of the vector, and that is why the half-integer case requires the Clifford structure while the integer case does not.</p>
 <h2 id="consistency-of-the-coupled-theory">Consistency of the Coupled Theory</h2>
 <p>A spin-$\tfrac32$ field is not consistent as a fundamental field in an arbitrary background, and the reason is visible in the constraint structure developed above. Transversality followed from the field equation and the $\gamma$-trace constraint through the Clifford identity, and that derivation used the free field equation. Coupling the field to a background — an electromagnetic field or the gravitational field — changes the field equation, and the change modifies the contraction by terms involving the background field strength or curvature. The constraint then ceases to be preserved by the evolution unless the background satisfies its own equations of motion: for the gravitational coupling the consistency condition is that the background be a solution of the Einstein equations, which is the Deser–Kay–Stelle condition of supergravity, and for the electromagnetic coupling the analogous condition (the Velo–Zwanziger analysis) restricts the background field strength and, when it fails, admits modes propagating faster than light. In the framework's terms the statement is that the projector $P^{\mu\nu}$ commutes with the free dynamics but not with the coupled dynamics, so the removal of the $\left(\tfrac12\right)$ component is maintained only when the background is on shell. This is why the spin-$\tfrac32$ field is treated either as the gauge field of local supersymmetry, whose consistency is tied to the background geometry, or as an effective field with a cutoff; the framework does not change the conclusion, and it exhibits the mechanism through its projector.</p>
@@ -244,7 +244,7 @@ $$</p>
 </table></div>
 <p>The massless limit takes the count to two in every case, because the gauge symmetry removes the helicities below $s$; the framework sees this as the removal of the lower-spin components that the tensor product contains, and the projector that performs the removal is the same one that defines the field. The pattern is not a derivation of the fields — their existence and their couplings are inputs — but it is a uniform account of why the higher-spin fields have the carriers, the constraints, and the counts that they do.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-imports">What the Algebra Supplies and What It Imports</h2>
-<p><strong>Supplied by the algebra, and recomputed here.</strong> The vector index as the material triplet on which the adjoint action acts; the spinor index as the left ideal of the Dirac article; the tensor-product decomposition $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$; the $\gamma$-traceless projector $P^{\mu\nu}=g^{\mu\nu}-\tfrac14\gamma^\mu\gamma^\nu$, its idempotency, its transversality, and its rank twelve on the sixteen components, all verified with explicit gamma matrices in the Clifford convention; the transversality $p^\mu\psi_\mu=0$ as a consequence of the constraint and the field equation, verified through the identity $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$; and the completeness relation of the four polarization spinors, whose transverse projector is built from the same Clifford structure.</p>
+<p><strong>Supplied by the algebra, and recomputed here.</strong> The vector index as the material triplet on which the adjoint action acts; the spinor index as the left ideal of the Dirac article; the tensor-product decomposition $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$; the $\gamma$-traceless projector $P^{\mu\nu}=g_{\mu\nu}-\tfrac14\gamma_\mu\gamma_\nu$, its idempotency, its transversality, and its rank twelve on the sixteen components, all verified with explicit gamma matrices in the Clifford convention; the transversality $p^\mu\psi_\mu=0$ as a consequence of the constraint and the field equation, verified through the identity $\gamma_\mu \gamma_{\nu} p_{\nu}=2p^\mu-\gamma_{\rho} p_{\rho}\gamma_\mu$; and the completeness relation of the four polarization spinors, whose transverse projector is built from the same Clifford structure.</p>
 <p><strong>Imported, and left visible.</strong> The Rarita–Schwinger equation and its antisymmetric Lagrangian origin, which belong to the classical theory of higher spins; the canonical momentum and the constraint algebra; the Dirac bracket and the quantization of second-class systems; the fermionic mode algebra and the Fock space; the spin–statistics relation, cited to the companion article on the theorem; the propagator, its gauge-fixing dependence, and its dimensional continuation; the Faddeev–Popov ghosts of the massless case and the Grassmann envelope; and the BRST structure, cited to the standard literature.</p>
 <p><strong>Not supplied.</strong> The value of the mass; the choice of gauge; the odd coordinates; the physical identification of the spin-$\tfrac32$ field with any observed particle; and any empirical content. The framework organizes the field and its constraints, and it does so by exhibiting them as a tensor product and a projection; it does not derive the field's existence.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -269,7 +269,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\gamma^{\nu}\partial/\partial x^\nu-m)\psi_\mu=0$ and the irreducibility constraint $\gamma^\mu\psi_\mu=0$. Contracting the field equation with $\gamma^\mu$ and using $\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$ gives the transversality condition $p^\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit gamma matrices. The constraint is imposed by the projector $P^{\mu\nu}=g^{\mu\nu}-\tfrac14\gamma^\mu\gamma^\nu$, which is idempotent and annihilates the $\gamma$-trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.</p>
+<p>The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\gamma_{\nu}\partial/\partial x^\nu-m)\psi_\mu=0$ and the irreducibility constraint $\gamma_\mu\psi_\mu=0$. Contracting the field equation with $\gamma_\mu$ and using $\gamma_\mu \gamma_{\nu} p_{\nu}=2p^\mu-\gamma_{\rho} p_{\rho}\gamma_\mu$ gives the transversality condition $p^\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit gamma matrices. The constraint is imposed by the projector $P^{\mu\nu}=g_{\mu\nu}-\tfrac14\gamma_\mu\gamma_\nu$, which is idempotent and annihilates the $\gamma$-trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.</p>
 <p>The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\psi_\mu\mapsto\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the $\gamma$-trace gauge fixing requires Faddeev–Popov spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r,a_s^\dagger\}=(2\pi)^3\delta_{rs}\delta^{(3)}$, and a completeness relation whose transverse projector is built from the same Clifford structure.</p>
 <p>In the biquaternion framework the field is the tensor product of the material vector part $V$ — the adjoint-action triplet — with the left-ideal spinor carrier $S$, and the tensor product decomposes as $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$. The $\gamma$-trace constraint removes the $\left(\tfrac12\right)$ component, and the surviving spin-$\tfrac32$ is the field. The structure is the exact analogue, one tensor factor down, of the graviton's symmetric trace-free square of the material vector: in each case a lower-spin carrier is tensored with the material vector and projected onto the top component by a projector built from the algebra's invariant form. The mass, the gauge choice, the propagator's detailed form, the odd coordinates, and any empirical content are imported; the decomposition and the projection are the framework's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -286,11 +286,11 @@ $$</p>
 <td>Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed</td>
 </tr>
 <tr>
-<td>$(i\gamma^{\nu}\partial/\partial x^\nu-m)\psi_\mu=0$</td>
+<td>$(i\gamma_{\nu}\partial/\partial x^\nu-m)\psi_\mu=0$</td>
 <td>Rarita–Schwinger field equation</td>
 </tr>
 <tr>
-<td>$\gamma^\mu\psi_\mu=0$</td>
+<td>$\gamma_\mu\psi_\mu=0$</td>
 <td>Irreducibility constraint; removes the $\left(\tfrac12\right)$ component</td>
 </tr>
 <tr>
@@ -298,11 +298,11 @@ $$</p>
 <td>Transversality; follows from the constraint and the field equation</td>
 </tr>
 <tr>
-<td>$\gamma^\mu \gamma^{\nu} p_{\nu}=2p^\mu-\gamma^{\rho} p_{\rho}\gamma^\mu$</td>
+<td>$\gamma_\mu \gamma_{\nu} p_{\nu}=2p^\mu-\gamma_{\rho} p_{\rho}\gamma_\mu$</td>
 <td>Clifford identity used (verified)</td>
 </tr>
 <tr>
-<td>$P^{\mu\nu}=g^{\mu\nu}I_4-\tfrac14\gamma^\mu\gamma^\nu$</td>
+<td>$P^{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu$</td>
 <td>$\gamma$-traceless projector; $P\gamma=0$, $\gamma P=0$, $P^2=P$ (verified)</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ $$</p>
 <td>Transverse $\gamma$-traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions</td>
 </tr>
 <tr>
-<td>$\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=-(\gamma^{\rho} p_{\rho}+m)\Pi_{\mu\nu}$</td>
+<td>$\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=-(\gamma_{\rho} p_{\rho}+m)\Pi_{\mu\nu}$</td>
 <td>Completeness relation, carried by the transverse projector</td>
 </tr>
 <tr>
@@ -342,7 +342,7 @@ $$</p>
 <td>Propagator; inverse of the quadratic form on the traceless subspace</td>
 </tr>
 <tr>
-<td>$g=\mathrm{diag}(+1,-1,-1,-1)$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$</td>
+<td>$g=\mathrm{diag}(+1,-1,-1,-1)$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$</td>
 <td>Clifford metric (level 3); the $ict'$ metric is $\eta=-g$</td>
 </tr>
 </tbody>

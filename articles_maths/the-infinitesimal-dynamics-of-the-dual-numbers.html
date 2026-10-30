@@ -74,23 +74,23 @@
 <p>The article spends the tools of <em>The Dual-Number Quadratic Family</em> and of <em>The Fatou Components and the Classification of the Dynamics</em>; the algebra of the dual numbers and their parabolic interpretation are those of <em>Dual-Numbers Algebra</em> and <em>Shears and Parabolic Rotations</em>; the real quadratic dynamics is cited to the real theory of Part III; and the complex derivative cocycle and the multiplier of a hyperbolic component are those of <em>The Fatou Components and the Classification of the Dynamics</em> and <em>The Hyperbolic Geometry of the Split-Complex Julia Sets</em>. No physics is invoked, and every numerical value displayed was recomputed.</p>
 <h2 id="the-derivative-cocycle">The Derivative Cocycle</h2>
 <h3 id="the-fibre-map-is-the-derivative">The Fibre Map Is the Derivative</h3>
-<p><strong>Theorem (the cocycle).</strong> Let $x_n = g_\gamma^n(x_0)$ and $y_{n+1} = 2x_ny_n+\delta$ be the two coordinates of the orbit. Then the homogeneous solution is the derivative of the real iterate,</p>
+<p><strong>Theorem (the cocycle).</strong> Let $x_n = g_\gamma_n(x_0)$ and $y_{n+1} = 2x_ny_n+\delta$ be the two coordinates of the orbit. Then the homogeneous solution is the derivative of the real iterate,</p>
 <p>$$
-\prod_{k=0}^{n-1} 2x_k = (g_\gamma^n)'(x_0) ,
+\prod_{k=0}^{n-1} 2x_k = (g_\gamma_n)'(x_0) ,
 $$</p>
 <p>and the general solution is</p>
 <p>$$
-\boxed{\; y_n = (g_\gamma^n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
+\boxed{\; y_n = (g_\gamma_n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
 $$</p>
 <p><strong>Proof.</strong> The chain rule gives $(g^n)'(x_0) = \prod_{k=0}^{n-1} g'(x_k) = \prod_{k=0}^{n-1} 2x_k$. The affine recursion has the homogeneous solution $\prod 2x_k$ and the particular solution obtained by the variation of constants, which is the displayed sum.</p>
 <p><strong>Remark (what the dual direction records).</strong> The infinitesimal coordinate records two things, and only two: the derivative $(g^n)'(x_0)$ of the real iterate through the homogeneous part, and the accumulated affine term $\delta\sum\prod 2x_j$ through the parameter $\delta$. There is no nonlinearity, no rotation and no second dimension: the entire infinitesimal dynamics is the derivative cocycle of a one-dimensional real map.</p>
 <p><strong>Definition.</strong> The <strong>multiplier</strong> of a periodic orbit $x_0, \ldots, x_{p-1}$ of period $p$ of $g_\gamma$ is</p>
 <p>$$
-\boxed{\; \lambda = (g_\gamma^p)'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
+\boxed{\; \lambda = (g_\gamma_p)'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
 $$</p>
 <p>and the <strong>Lyapunov exponent</strong> of an orbit with respect to an invariant measure $\mu$ is</p>
 <p>$$
-\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma^n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
+\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma_n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
 $$</p>
 <p><strong>Theorem (what the infinitesimal dynamics reports).</strong> On a periodic orbit of period $p$ the infinitesimal coordinate is multiplied by the multiplier in one period,</p>
 <p>$$
@@ -111,7 +111,7 @@ $$</p>
 <p><strong>Example.</strong> For $\gamma = -2$ the real Julia set is the interval $[-2,2]$, so the dual Julia set is the strip $[-2,2]\times\mathbb{R}\varepsilon$ of Hausdorff dimension $2$, and for $\gamma = 0$ the real Julia set is the two points $\{\pm1\}$, so the dual Julia set is the two vertical lines $x = \pm1$ of dimension $1$. In both cases the fractal content is the real one; the dual coordinate contributes the straight factor.</p>
 <p><strong>Remark (the comparison with the complex derivative cocycle).</strong> In the complex quadratic family the derivative cocycle is the sequence of complex numbers $f_c'(z_n) = 2z_n$, whose product over a cycle is the complex multiplier $\lambda = (f_c^p)'(z_0)$, a rotation together with a scale. The dual cocycle is the real sequence $2x_n$, and its product is the real multiplier: the dual numbers see the modulus of the multiplier and not its argument. This is why the dual theory knows nothing of the rotational structure of <em>The Fatou Components and the Classification of the Dynamics</em>: the hyperbolic components, their multipliers and the rotation numbers are invisible without the imaginary direction, and the dual analogue of the multiplier is only the real contraction rate. The infinitesimal dynamics of the shears and the parabolic rotations, where the dual numbers are the linearisation of a rotation, is the subject of <em>Shears and Parabolic Rotations</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The infinitesimal coordinate of the dual quadratic map evolves by $y \mapsto 2xy+\delta$, and the homogeneous part of its $n$-th iterate is the derivative $(g_\gamma^n)'(x_0)$ of the real iterate: the infinitesimal dynamics <strong>is</strong> the derivative cocycle. Within one period it multiplies the coordinate by the real multiplier $\lambda = (g_\gamma^p)'(x_0)$, so the attracting, parabolic and repelling characters of the real cycles are read on the dual coordinate, and along a typical orbit the growth rate is the Lyapunov exponent $\chi = \int\log|2x|\,d\mu$. The Fatou and Julia sets of the dual map are the vertical cylinders over the real ones, $F(f_c) = \pi^{-1}(F(g_\gamma))$ and $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$: the dual Julia set is a union of vertical lines, of Hausdorff dimension $\dim_H J(g_\gamma)+1$ in the Euclidean metric and of dimension $\dim_H J(g_\gamma)$ in the infinitesimal reading. There is therefore no genuinely infinitesimal Julia set and no second fractal dimension from the dual coordinate. The complex derivative cocycle, whose multiplier carries a rotation that the real cocycle cannot see, is that of <em>The Fatou Components and the Classification of the Dynamics</em>, and the parabolic and shear interpretation of the dual numbers is that of <em>Shears and Parabolic Rotations</em>.</p>
+<p>The infinitesimal coordinate of the dual quadratic map evolves by $y \mapsto 2xy+\delta$, and the homogeneous part of its $n$-th iterate is the derivative $(g_\gamma_n)'(x_0)$ of the real iterate: the infinitesimal dynamics <strong>is</strong> the derivative cocycle. Within one period it multiplies the coordinate by the real multiplier $\lambda = (g_\gamma_p)'(x_0)$, so the attracting, parabolic and repelling characters of the real cycles are read on the dual coordinate, and along a typical orbit the growth rate is the Lyapunov exponent $\chi = \int\log|2x|\,d\mu$. The Fatou and Julia sets of the dual map are the vertical cylinders over the real ones, $F(f_c) = \pi^{-1}(F(g_\gamma))$ and $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$: the dual Julia set is a union of vertical lines, of Hausdorff dimension $\dim_H J(g_\gamma)+1$ in the Euclidean metric and of dimension $\dim_H J(g_\gamma)$ in the infinitesimal reading. There is therefore no genuinely infinitesimal Julia set and no second fractal dimension from the dual coordinate. The complex derivative cocycle, whose multiplier carries a rotation that the real cocycle cannot see, is that of <em>The Fatou Components and the Classification of the Dynamics</em>, and the parabolic and shear interpretation of the dual numbers is that of <em>Shears and Parabolic Rotations</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -122,7 +122,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$x_n = g_\gamma^n(x_0)$</td>
+<td>$x_n = g_\gamma_n(x_0)$</td>
 <td>Real part of the orbit, the base dynamics</td>
 </tr>
 <tr>
@@ -130,11 +130,11 @@ $$</p>
 <td>Infinitesimal coordinate, the fibre recursion</td>
 </tr>
 <tr>
-<td>$\prod_{k=0}^{n-1}2x_k = (g_\gamma^n)'(x_0)$</td>
+<td>$\prod_{k=0}^{n-1}2x_k = (g_\gamma_n)'(x_0)$</td>
 <td>The derivative cocycle</td>
 </tr>
 <tr>
-<td>$\lambda = (g_\gamma^p)'(x_0)$</td>
+<td>$\lambda = (g_\gamma_p)'(x_0)$</td>
 <td>Multiplier of a periodic orbit (real)</td>
 </tr>
 <tr>

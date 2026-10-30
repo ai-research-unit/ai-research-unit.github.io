@@ -219,11 +219,11 @@ If $\sigma(\beta) = \tau(\beta)$ then the equality would force $\sigma(\alpha) =
 <p><strong>Corollary (finitely many intermediate fields).</strong> A finite separable extension has only finitely many intermediate fields.</p>
 <p><strong>Proof.</strong> By the theorem $K = F(\alpha)$, with $n = [K:F] = \deg m_{\alpha/F}$. An intermediate field $E$ determines the minimal polynomial $m_{\alpha/E}$, a monic divisor of $m_{\alpha/F}$ in the polynomial ring over a splitting field $M \supseteq K$ of $m_{\alpha/F}$; distinct intermediate fields give distinct polynomials, because $E$ is generated over $F$ by the coefficients of $m_{\alpha/E}$. A polynomial of degree $n$, whose $n$ roots counted with multiplicity lie in $M$, has at most $2^n$ monic divisors there, so there are at most $2^n$ intermediate fields.</p>
 <h3 id="necessity-of-separability">Necessity of Separability</h3>
-<p>Separability cannot be dropped. Let $F = \mathbb{F}_p(x^p, y^p) \subseteq K = \mathbb{F}_p(x, y)$. Then $K = F(x, y)$, and $x, y$ have minimal polynomials $X^p - x^p = (X - x)^p$ and $Y^p - y^p = (Y - y)^p$ over $F$. Each of these is irreducible of degree $p$ over $F$ (the same argument as for $x^p - t$), so $[K:F] = p^2$. Every element of $K$ satisfies $\gamma^p \in F$: an element of $K = \mathbb{F}_p(x,y) = F(x,y)$ is a quotient $u(x,y)/v(x,y)$ of polynomials with coefficients in $\mathbb{F}_p$ and $v \neq 0$, and the freshman's dream gives
+<p>Separability cannot be dropped. Let $F = \mathbb{F}_p(x^p, y^p) \subseteq K = \mathbb{F}_p(x, y)$. Then $K = F(x, y)$, and $x, y$ have minimal polynomials $X^p - x^p = (X - x)^p$ and $Y^p - y^p = (Y - y)^p$ over $F$. Each of these is irreducible of degree $p$ over $F$ (the same argument as for $x^p - t$), so $[K:F] = p^2$. Every element of $K$ satisfies $\gamma_p \in F$: an element of $K = \mathbb{F}_p(x,y) = F(x,y)$ is a quotient $u(x,y)/v(x,y)$ of polynomials with coefficients in $\mathbb{F}_p$ and $v \neq 0$, and the freshman's dream gives
 $$
-\gamma^p = \frac{u(x,y)^p}{v(x,y)^p} = \frac{u(x^p, y^p)}{v(x^p, y^p)} \in \mathbb{F}_p(x^p, y^p) = F .
+\gamma_p = \frac{u(x,y)^p}{v(x,y)^p} = \frac{u(x^p, y^p)}{v(x^p, y^p)} \in \mathbb{F}_p(x^p, y^p) = F .
 $$
-Hence $\gamma$ is a root of $X^p - \gamma^p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 > p$. No single element generates $K$, and $K/F$ is not simple.</p>
+Hence $\gamma$ is a root of $X^p - \gamma_p \in F[X]$, so $[F(\gamma):F] \leq p$ for every $\gamma$, while $[K:F] = p^2 > p$. No single element generates $K$, and $K/F$ is not simple.</p>
 <hr />
 <h2 id="algebraic-closure">Algebraic Closure</h2>
 <h3 id="definition-and-equivalent-conditions_1">Definition and Equivalent Conditions</h3>

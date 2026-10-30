@@ -71,11 +71,11 @@
         <h1 id="the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form"><strong>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A <strong>nonlinear Dirac equation</strong> is a Dirac equation with a self-interaction term. The free equation is linear in the field, so that solutions superpose; a term quadratic or cubic in the field destroys that superposability and makes the equation describe a fermion that acts on itself. The best-motivated case is not a guess. In the <strong>Einstein–Cartan–Sciama–Kibble</strong> extension of general relativity, the spin of matter is the source of the antisymmetric part of the connection, the torsion; that torsion couples to the spinor's axial current, and when it is eliminated from the field equations it leaves an effective <strong>axial-axial spin–spin self-interaction</strong> that is cubic in the spinor. The resulting equation is the standard example of a nonlinearly self-interacting Dirac field, and it is a toy model for the idea that the fermion's self-interaction regulates its own short-distance behaviour.</p>
-<p>Two models dominate the literature and stand for the two non-axial channels. The <strong>Thirring model</strong> (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, $\left(\bar\psi\gamma^\mu\psi\right)^2$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The <strong>Soler model</strong> (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\left(\bar\psi\psi\right)^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.</p>
-<p>This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a <strong>placement of the channels</strong>: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V^\mu = \bar\psi\gamma^\mu\psi$, the axial current $A^\mu = \bar\psi\gamma^\mu\gamma_5\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V^\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A^\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also <strong>bosonic</strong>: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.</p>
-<p>What the framework does <strong>not</strong> supply is equally definite, and follows from the minimal-coupling article. Every one of the bilinears above is a spinor-module object: the Dirac adjoint $\bar\psi = \psi^\dagger\gamma^0$ carries the Clifford-odd $\gamma^0$ and the axial current carries $\gamma_5$ as well, and neither is in the even subalgebra $\mathbb{B}$. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.</p>
+<p>Two models dominate the literature and stand for the two non-axial channels. The <strong>Thirring model</strong> (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, $\left(\bar\psi\gamma_\mu\psi\right)^2$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The <strong>Soler model</strong> (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\left(\bar\psi\psi\right)^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.</p>
+<p>This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a <strong>placement of the channels</strong>: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V^\mu = \bar\psi\gamma_\mu\psi$, the axial current $A^\mu = \bar\psi\gamma_\mu\gamma_5\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V^\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A^\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also <strong>bosonic</strong>: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.</p>
+<p>What the framework does <strong>not</strong> supply is equally definite, and follows from the minimal-coupling article. Every one of the bilinears above is a spinor-module object: the Dirac adjoint $\bar\psi = \psi^\dagger\gamma_0$ carries the Clifford-odd $\gamma_0$ and the axial current carries $\gamma_5$ as well, and neither is in the even subalgebra $\mathbb{B}$. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.</p>
 <p>The article is organised as follows. The next section explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section gives the Einstein–Cartan torsion route and the Hehl–Datta equation. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A short section records the verified two-dimensional relations. The closing sections are the open questions, the summary, the notation table and the literature.</p>
-<p>The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$. The dynamics in the algebra is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.</p>
+<p>The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma_0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$. The dynamics in the algebra is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.</p>
 <h2 id="why-the-dirac-equation-becomes-nonlinear">Why the Dirac Equation Becomes Nonlinear</h2>
 <h3 id="self-interaction-and-the-cubic-form">Self-interaction and the cubic form</h3>
 <p>The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term in the equation that is built from the field itself, and the lowest non-trivial such term that is compatible with the symmetries is quadratic in the <strong>bilinears</strong>. Since a bilinear is quadratic in $\psi$, a product of two bilinears is quartic in the field; an equation obtained by adding such a term to the Dirac equation, or by varying an action containing it, is called nonlinear even though the resulting Euler–Lagrange equation is often cubic in the field once one factor is used as the source. This is the sense in which the axial-axial term below is "cubic": writing $B(\psi)$ for the bilinear built from the field, the equation is</p>
@@ -91,9 +91,9 @@ $$</p>
 <p>The Thirring model is defined in $1+1$ dimensions by the Lagrangian density</p>
 <p>$$
 \boxed{\;\mathcal{L} = \bar\psi\left(\mathbb{D} - m\right)\psi
-- \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
+- \frac{g}{2}\left(\bar\psi\gamma_\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
 $$</p>
-<p>with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $g$ the coupling, $m$ the mass, and $\gamma^\mu$ the two-dimensional gamma matrices. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.</p>
+<p>with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $g$ the coupling, $m$ the mass, and $\gamma_\mu$ the two-dimensional gamma matrices. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.</p>
 <p>The <strong>massless</strong> Thirring model is exactly solvable: the multipoint correlation functions are known in closed form (Johnson; Hagen; Klaiber), and the theory satisfies the Osterwalder–Schrader axioms, so it is a genuine quantum field theory and not merely a Lagrangian. The <strong>massive</strong> model is solvable by the Bethe ansatz, which gives the exact mass spectrum and scattering matrix; multi-particle production cancels on shell. The massive Thirring model is exactly equivalent to the quantum <strong>sine-Gordon</strong> model, with the fundamental fermions of the one corresponding to the solitons of the other — the Coleman–Mandelstam equivalence, which the companion article on bosonisation develops in the framework's notation.</p>
 <h3 id="the-soler-model">The Soler model</h3>
 <p>The Soler model is defined in $3+1$ dimensions by</p>
@@ -106,8 +106,8 @@ $$</p>
 <h2 id="the-hehldatta-interaction-from-torsion">The Hehl–Datta Interaction from Torsion</h2>
 <p>The geometric route of the earlier section gives the equation</p>
 <p>$$
-\boxed{\;i\gamma^\mu\nabla_\mu\psi - m\psi
-+ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi = 0\;},
+\boxed{\;i\gamma_\mu\nabla_\mu\psi - m\psi
++ \frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma_\mu\gamma_5\psi = 0\;},
 $$</p>
 <p>where $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. The cubic term becomes significant only at densities of order $m^2/\kappa$, which are far outside laboratory matter; the interaction is a high-density effect.</p>
 <p>If the torsion is allowed to propagate rather than to be eliminated algebraically, the same nonlinear structure survives with the coefficient replaced by a term involving the spinor–torsion coupling $X$ and the torsion mass $M$, of the form $-X^2/M^2$. With the natural sign this self-interaction is <strong>repulsive</strong>, as in the Nambu–Jona-Lasinio model, and its scale is set by the torsion mass. The two routes — a non-propagating torsion fixed by gravity, and a propagating torsion with its own mass — therefore give the same axial-axial channel with different coefficients, which is the reason the channel is regarded as the generic one rather than a special choice.</p>
@@ -137,13 +137,13 @@ $$</p>
 <td>odd</td>
 </tr>
 <tr>
-<td>$V^\mu = \bar\psi\gamma^\mu\psi$</td>
+<td>$V^\mu = \bar\psi\gamma_\mu\psi$</td>
 <td>Vector (current)</td>
 <td>four-vector</td>
 <td>even</td>
 </tr>
 <tr>
-<td>$A^\mu = \bar\psi\gamma^\mu\gamma_5\psi$</td>
+<td>$A^\mu = \bar\psi\gamma_\mu\gamma_5\psi$</td>
 <td>Axial vector</td>
 <td>four-vector</td>
 <td>odd</td>
@@ -172,7 +172,7 @@ $$</p>
 <tr>
 <td>Thirring</td>
 <td>$1+1$</td>
-<td>$-\frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)^2$</td>
+<td>$-\frac{g}{2}\left(\bar\psi\gamma_\mu\psi\right)^2$</td>
 <td>vector current</td>
 <td>material sector $\mathbb{M}_-$</td>
 </tr>
@@ -193,7 +193,7 @@ $$</p>
 <tr>
 <td>Hehl–Datta (torsion)</td>
 <td>$3+1$</td>
-<td>$+\frac{3\kappa}{8}\left(\bar\psi\gamma^\mu\gamma_5\psi\right)^2$</td>
+<td>$+\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)^2$</td>
 <td>axial current</td>
 <td>the axial channel</td>
 </tr>
@@ -211,12 +211,12 @@ $$</p>
 <li><strong>The axial current $A^\mu$ is the channel conjugate to the mass.</strong> The linear mass breaks the axial symmetry and gives the axial-current divergence $\partial/\partial Q_\mu j_5^\mu = 2im\,\bar\psi\gamma_5\psi$; the torsion-induced interaction is built from $A^\mu$ itself. An axial-axial attraction is therefore a coupling in the channel whose conserved charge the mass destroys, which is exactly the channel in which a strong coupling can restore the symmetry by generating a mass — the mechanism the condensate article treats.</li>
 </ul>
 <h3 id="what-the-framework-does-not-supply">What the framework does not supply</h3>
-<p>The identification above is a placement, not a derivation, and the boundary should be stated in the same terms as the companion articles. Each bilinear in the table is a spinor-module object. The scalar and vector bilinears require the Clifford-odd $\gamma^0$ of the Dirac adjoint; the pseudoscalar and axial bilinears require $\gamma_5$ as well; neither element is in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde\Psi$ and $\tilde\Psi^{*}$ inside $\mathbb{B}$ cannot supply these objects, and the self-interaction, like the current, is irreducibly a spinor-module statement. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum, and no prediction.</p>
+<p>The identification above is a placement, not a derivation, and the boundary should be stated in the same terms as the companion articles. Each bilinear in the table is a spinor-module object. The scalar and vector bilinears require the Clifford-odd $\gamma_0$ of the Dirac adjoint; the pseudoscalar and axial bilinears require $\gamma_5$ as well; neither element is in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde\Psi$ and $\tilde\Psi^{*}$ inside $\mathbb{B}$ cannot supply these objects, and the self-interaction, like the current, is irreducibly a spinor-module statement. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum, and no prediction.</p>
 <p>Two further limits are inherited from other gaps. The Einstein–Cartan route needs a torsionful connection with a field equation; the companion article on curved spacetime records that the framework can carry the connection as an object of its own Lie subspace but generates no dynamics for it, so a biquaternion torsion is in that agenda and not in the constructed part. And the exact solubility of the massless Thirring model is a property of two-dimensional quantum field theory with no biquaternion counterpart; the framework's two-component reduction explains why two dimensions are special (a two-component spinor and a scalar have the same number of degrees of freedom), but it does not reproduce the solution.</p>
 <h2 id="verified-two-dimensional-relations">Verified Two-Dimensional Relations</h2>
-<p>The two-dimensional identities on which the Thirring model's "one coupling" rests were checked directly. With the mostly-minus two-dimensional generators $\gamma^0 = \sigma_z$, $\gamma^1 = i\sigma_y$, so that $\left(\gamma^0\right)^2 = I_2$, $\left(\gamma^1\right)^2 = -I_2$, $\{\gamma^0,\gamma^1\} = 0$, and with $\gamma_5 = \gamma^0\gamma^1$ (so $\gamma_5^2 = I_2$), the following held exactly over $100$ random two-component spinors — that is, with residual $0$ and not merely to numerical precision:</p>
+<p>The two-dimensional identities on which the Thirring model's "one coupling" rests were checked directly. With the mostly-minus two-dimensional generators $\gamma_0 = \sigma_z$, $\gamma_1 = i\sigma_y$, so that $\left(\gamma_0\right)^2 = I_2$, $\left(\gamma_1\right)^2 = -I_2$, $\{\gamma_0,\gamma_1\} = 0$, and with $\gamma_5 = \gamma_0\gamma_1$ (so $\gamma_5^2 = I_2$), the following held exactly over $100$ random two-component spinors — that is, with residual $0$ and not merely to numerical precision:</p>
 <ul>
-<li>the Clifford relations $\left(\gamma^0\right)^2 = I_2$, $\left(\gamma^1\right)^2 = -I_2$, $\{\gamma^0,\gamma^1\} = 0$ and $\gamma_5^2 = I_2$;</li>
+<li>the Clifford relations $\left(\gamma_0\right)^2 = I_2$, $\left(\gamma_1\right)^2 = -I_2$, $\{\gamma_0,\gamma_1\} = 0$ and $\gamma_5^2 = I_2$;</li>
 <li>the current duality $A^\mu \propto \epsilon^{\mu\nu}V_\nu$ — the axial current is the Hodge dual of the vector current;</li>
 <li>consequently $A^\mu A_\mu = -V^\mu V_\mu$, so the vector–vector and axial–axial quartic terms differ only by sign, and a single coupling exhausts the local quartic interactions.</li>
 </ul>
@@ -224,7 +224,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>A biquaternion-natural self-interaction.</strong> Is there a functional of $\mathbb{B}$-valued bilinears whose variation reproduces the Soler or Thirring interaction without the Clifford-odd $\gamma^0$ and $\gamma_5$? This is the current question of the minimal-coupling article met from the interaction side.</p>
+<p><strong>A biquaternion-natural self-interaction.</strong> Is there a functional of $\mathbb{B}$-valued bilinears whose variation reproduces the Soler or Thirring interaction without the Clifford-odd $\gamma_0$ and $\gamma_5$? This is the current question of the minimal-coupling article met from the interaction side.</p>
 </li>
 <li>
 <p><strong>Torsion in the framework's own notation.</strong> The curved-spacetime article carries the connection in the Lie subspace but gives it no equation. The antisymmetric (torsion) part of that connection, and the algebraic elimination that produces the Hehl–Datta term, are not written in the framework's notation.</p>
@@ -240,8 +240,8 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the spinor's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.</p>
-<p>The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction is a coupling in the channel conjugate to the mass — the channel in which a strong coupling restores the symmetry by generating a mass. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd $\gamma^0$ and $\gamma_5$, outside the even subalgebra $\mathbb{B}$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $A^\mu A_\mu = -V^\mu V_\mu$ and the Thirring model has a single coupling.</p>
+<p>A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the spinor's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma_\mu\gamma_5\psi$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.</p>
+<p>The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction is a coupling in the channel conjugate to the mass — the channel in which a strong coupling restores the symmetry by generating a mass. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd $\gamma_0$ and $\gamma_5$, outside the even subalgebra $\mathbb{B}$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $A^\mu A_\mu = -V^\mu V_\mu$ and the Thirring model has a single coupling.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -256,11 +256,11 @@ $$</p>
 <td>Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$</td>
 </tr>
 <tr>
-<td>$\bar\psi = \psi^\dagger\gamma^0$</td>
-<td>Dirac adjoint (carries the Clifford-odd $\gamma^0$)</td>
+<td>$\bar\psi = \psi^\dagger\gamma_0$</td>
+<td>Dirac adjoint (carries the Clifford-odd $\gamma_0$)</td>
 </tr>
 <tr>
-<td>$\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, $\gamma_5^2 = I_4$</td>
+<td>$\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$, $\gamma_5^2 = I_4$</td>
 <td>Chirality operator</td>
 </tr>
 <tr>
@@ -272,11 +272,11 @@ $$</p>
 <td>Pseudoscalar density</td>
 </tr>
 <tr>
-<td>$V^\mu = \bar\psi\gamma^\mu\psi$</td>
+<td>$V^\mu = \bar\psi\gamma_\mu\psi$</td>
 <td>Vector current (material sector in the framework)</td>
 </tr>
 <tr>
-<td>$A^\mu = \bar\psi\gamma^\mu\gamma_5\psi$</td>
+<td>$A^\mu = \bar\psi\gamma_\mu\gamma_5\psi$</td>
 <td>Axial current (channel broken by the mass)</td>
 </tr>
 <tr>
@@ -292,7 +292,7 @@ $$</p>
 <td>Einstein gravitational constant</td>
 </tr>
 <tr>
-<td>$\frac{3\kappa}{8}\left(\bar\psi\gamma^\mu\gamma_5\psi\right)^2$</td>
+<td>$\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)^2$</td>
 <td>Hehl–Datta torsion-induced axial-axial interaction</td>
 </tr>
 <tr>
