@@ -213,6 +213,7 @@ $$</p>
 <p>The honest summary is that this is a different framework, not an extension of the one developed here, and that it does not fill this article's gap. The missing dynamics is missing in both: C-spaces supply a richer arena and a unified action for free extended objects, but the corpus's boundary — the biquaternion framework contains the kinematical fibre of tetrad gravity and none of its dynamics — is neither crossed nor refuted by moving the algebra into the coordinates. What the position does establish is that the sentence <em>the algebra has no points</em> is a statement about $\mathbb{B}$ as this framework uses it, not a theorem about algebras. The empirical status of the scale that C-spaces make natural is recorded in <em>The Empirical Status of the Biquaternion Framework</em>.</p>
 <h2 id="the-biquaternion-dirac-equation-on-a-curved-background">The Biquaternion Dirac Equation on a Curved Background</h2>
 <p>The connection of the previous section was built for the material sector, where the field is a four-vector and the group acts by the two-sided rotor conjugation. The Dirac field is a different kind of object — a section of the spinor module, the Peirce carrier $\mathbb{B}\tilde\Pi$ (a minimal left ideal here) — and the difference in the kind of field, together with the difference in the kind of action, is exactly what the curved Dirac equation turns on. This section writes that equation in the framework's own notation. It is the item the agenda below records as the curved-space form of the biquaternion Dirac equation.</p>
+<p><strong>Frame note.</strong> The operator below is built from the material frame $\tilde E_\mu$ of Route Two. The gamma transcription of the corresponding Dirac operator uses the informational frame $\hat E^\mu$, and the dictionary between the two frames is stated in the Lorentz-gauging section.</p>
 <h3 id="the-one-sided-spinor-derivative">The one-sided spinor derivative</h3>
 <p>The Lorentz group acts on the spinor module by <strong>left multiplication</strong>, $\psi \mapsto \tilde U\psi$, not by rotor conjugation; the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore <strong>one-sided</strong>,</p>
 <p>$$
@@ -258,15 +259,31 @@ $$</p>
 <p>What it does not settle is everything the frame and the connection already failed to settle, and the Dirac equation is the most inviting place to overclaim, so the limits bear repeating. The equation contains the frame and the connection; it determines neither. Nothing in the algebra or in this equation fixes $\tilde E_\mu$ or $\vec\Gamma_\mu$, selects the Levi-Civita lift rather than a torsionful one, or supplies an action for either; the Einstein equation is as absent here as it was in Route Three. The equation is the correct curved-space transcription of the matter equation <strong>on a background</strong> whose geometry is inserted by hand, and that is exactly what it is. On the matter side, the source of the equation — the conserved current — remains the spinor-module object of the minimal-coupling and Gordon-decomposition articles, carrying the Clifford-odd $\gamma^0$ that a product in $\mathbb{B}$ cannot supply; the closed sourced system, in which the Dirac current feeds the curved biquaternion Maxwell equation, is still unwritten. And the global question survives untouched: whether spinor fields exist on the manifold at all is the topological condition of Route Two's agenda, and no local operator can answer it.</p>
 <h3 id="lorentz-gauging-and-the-eulerlagrange-variation">Lorentz Gauging and the Euler–Lagrange Variation</h3>
 <p>The coupling written above is the standard one: the flat equation with the rigid basis replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.</p>
+<p><strong>Frame caveat.</strong> The displays below are quoted in the source's gamma frame, and that frame is not the material frame of Route Two. Write $\iota_{\mathrm{Cl}}:\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ for the dictionary of the companion article: the $\mathbb{R}$-algebra isomorphism onto the <strong>even</strong> part, with $\iota_{\mathrm{Cl}}(e_t)=I$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$, and $\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+$$
+\gamma^a=\gamma^0\,\iota_{\mathrm{Cl}}(\hat e^a),
+\qquad
+\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)\in\mathbb{M}_+ .
+$$
+The composite $\gamma^0\iota_{\mathrm{Cl}}$, not $\iota_{\mathrm{Cl}}$ itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde E^\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma^a$, and a term-by-term substitution of $\tilde E^\mu$ for $e^\mu{}_a\gamma^a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
+$$
+\hat E^\mu=e^\mu{}_a\hat e^a,
+\qquad
+e^\mu{}_a\gamma^a=\gamma^0\iota_{\mathrm{Cl}}(\hat E^\mu),
+\qquad
+i e^\mu{}_a\gamma^a\partial/\partial Q_\mu\,\psi
+=i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big).
+$$
+The fixed $\gamma^0$ is the dictionary frame, not part of the derivative; the derivative is the biquaternion-valued $\hat E^\mu\partial/\partial Q_\mu$. The article's own operator $\tilde E^\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and the $ict'$ convention relate the two, so they are not term-by-term identical, and the substitution $\tilde E^\mu\leftrightarrow e^\mu{}_a\gamma^a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat E^\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.</p>
 <p>J. Fredsted, <em>Obtaining consistent Lorentz gauging for a gravitationally coupled fermion</em> (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial Q_\mu \to D_\mu$ and the Euler–Lagrange variation <strong>do not commute</strong>. Varying the gauged action gives</p>
 <p>$$
-E_{\mathrm{grav}} = (ie^\mu{}_a\gamma^a\partial/\partial Q_\mu - m)\psi
+E_{\mathrm{grav}} = i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big) - m\psi
 - \tfrac{i}{2}e^{\mu}{}_{b}\,\omega_{\mu}{}^{b}{}_{a}\gamma^a\psi
 + \tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}\{\gamma^a,S^{cd}\}\psi ,
 $$</p>
 <p>while substituting the same replacement into the flat equation of motion gives</p>
 <p>$$
-\tilde E_{\mathrm{grav}} = (ie^\mu{}_a\gamma^a\partial/\partial Q_\mu - m)\psi
+\tilde E_{\mathrm{grav}} = i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big) - m\psi
 + \tfrac{i}{2}e^\mu{}_a\,\omega_{\mu cd}\gamma^a S^{cd}\psi ,
 $$</p>
 <p>and the two differ by the anticommutator $\{\gamma^a,S^{cd}\}$ that the variation produces and the substitution does not. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with $\gamma^a$; gravity is exceptional, and the reason is that the Lorentz generator satisfies $[\gamma^c,S^{ab}] = V^{ab}{}_d\gamma^d$ rather than commuting.</p>
@@ -439,7 +456,19 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$</td>
-<td>Dual frame (inverse tetrad)</td>
+<td>Material dual frame (inverse tetrad)</td>
+</tr>
+<tr>
+<td>$\iota_{\mathrm{Cl}}$</td>
+<td>Dictionary: $\mathbb{R}$-algebra isomorphism $\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$</td>
+</tr>
+<tr>
+<td>$\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$</td>
+<td>Informational basis; $\iota_{\mathrm{Cl}}(\hat e^a)$ is even, $\gamma^a=\gamma^0\iota_{\mathrm{Cl}}(\hat e^a)$</td>
+</tr>
+<tr>
+<td>$\hat E^\mu=e^\mu{}_a\hat e^a$</td>
+<td>Informational dual frame; the exact gamma transcription of the Dirac operator uses it</td>
 </tr>
 <tr>
 <td>$D_\mu\psi = \partial/\partial Q_\mu\,\psi + \vec\Gamma_\mu\psi$</td>
