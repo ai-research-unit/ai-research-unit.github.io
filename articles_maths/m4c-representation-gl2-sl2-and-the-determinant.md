@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ The units of the biquaternion algebra are the invertible matrices, and the deter
 
 This article develops the group picture in the regular model: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, the $*$-unitary group and the polar decomposition, the Bruhat decomposition, the centre and the double covers. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$. The image is $M_4(\mathbb{C})_{\mathbb{B},L}=\mathsf{M}_4^{L}(\mathbb{B})$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$. The image is $M_4(\mathbb{C})_{\mathbb{B},L}=\mathsf{M}_4^{L}(\mathbb{B})$.
 
-**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
@@ -82,7 +82,7 @@ $$
 $$
 with the diagonal embedding. In the regular model the same action is read blockwise, and the level set is the image of the $2\times2$ one.
 
-**The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. In the regular model the cone is the intersection of the image with the determinant-zero locus, and it is the subject of *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*.
+**The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. In the regular model the cone is the intersection of the image with the determinant-zero locus, and it is the subject of *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
 ## The Unit Group and the $*$-Unitary Group
 
@@ -102,7 +102,7 @@ and the product is unique, because the two factors are the images of the $2\time
 $$
 SL_2(\mathbb{C})=Herm^{>0}_1\cdot SU(2),
 $$
-with $Herm^{>0}_1$ the positive Hermitian matrices of determinant one. The two factors have real dimensions three and three, and the product is a diffeomorphism. The statement is developed in *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+with $Herm^{>0}_1$ the positive Hermitian matrices of determinant one. The two factors have real dimensions three and three, and the product is a diffeomorphism. The statement is developed in *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*.
 
 **The topology.** The image of $GL_2(\mathbb{C})$ is connected and has the homotopy type of $U(2)$; its fundamental group is $\mathbb{Z}$, generated by the determinant circle. The norm-one subgroup is simply connected and has the homotopy type of $SU(2)=S^3$. The determinant sequence is the fibration that exhibits the first statement from the second. The details are *The Biquaternion Unit Group as a Topological Group*, §*The Homotopy Groups*.
 
@@ -128,7 +128,7 @@ GL_2(\mathbb{C})=B\sqcup BwB.
 $$
 The first cell has complex dimension three and the big cell complex dimension four; the big cell is the nonvanishing locus of the entry $c$, hence open and dense. In the regular model the same decomposition is read on the two blocks, with the Weyl element doubled.
 
-**The regular reading.** The Borel subgroup of the image is the stabiliser of a minimal left ideal, and the big cell is the complement of the stabiliser. The two cells are the two orbits of the Borel subgroup on the projective line, and the projective line is *$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
+**The regular reading.** The Borel subgroup of the image is the stabiliser of a minimal left ideal, and the big cell is the complement of the stabiliser. The two cells are the two orbits of the Borel subgroup on the projective line, and the projective line is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Projective Line and the Möbius Action*.
 
 ## The Centre and the Projective Group
 
@@ -236,9 +236,9 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 - [The N-Regular Sector](the-n-regular-sector.html), for the sector and its level sets
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the unit factor
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $U(2)$
-- [$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factorization
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factorization
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the double covers of $SO(3)$ and $SO^+(1,3)$
-- [$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m4c-representation-the-projective-line-and-the-mobius-action.html), for the Möbius cover
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Projective Line and the Möbius Action](m4c-representation-the-projective-line-and-the-mobius-action.html), for the Möbius cover
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the $2\times2$ version
 - [Lie Groups](lie-groups.html), for $GL_2$ and $SL_2$

@@ -8,7 +8,7 @@ The canonical frame changes no formula of this group. The two operations used he
 
 **Conventions.** The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$, with $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $\mathsf M_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
 
-**Boundaries.** The representation is *$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The representation is *$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Representation
 
@@ -129,7 +129,7 @@ In the canonical frame the left regular representation is a $*$-representation, 
 
 ## Further Reading
 
-- [$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
+- [$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operator reading
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the sesquilinear product on the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra

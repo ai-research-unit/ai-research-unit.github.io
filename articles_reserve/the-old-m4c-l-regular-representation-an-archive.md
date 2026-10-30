@@ -17,7 +17,7 @@
 | $M_4(\mathbb{C})_L$ | $M_4(\mathbb{C})_{\mathbb{B},L}=\mathbb{B}_L$ |
 | $M_4(\mathbb{C})_R$ | $M_4(\mathbb{C})_{\mathbb{B},R}=\mathbb{B}_R$ |
 | $\mathsf M_4(\tilde Q)$ for the left matrix | $\mathsf M_4^{L}(\tilde Q)$ |
-| $M_4(\mathbb{C})_L$ Model : $X$ | $M_4(\mathbb{C})$ Model : $X$ |
+| $M_4(\mathbb{C})_L$ Model : $X$ | $M_4(\mathbb{C})_{\mathbb{B}}$ Model : $X$ |
 
 **The old matrix is the coefficient display.** In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the left regular matrix has one coefficient per entry, with a sign and no sum. That is the display archived here. It is not the matrix of the element in the abstract sense: the element is $\tilde Q$, the operator is $\rho_L(\tilde Q)$, and the matrix depends on the frame.
 
@@ -332,8 +332,8 @@ The old $M_4(\mathbb{C})_L$ representation is the left regular matrix in the coe
 ## Further Reading
 
 - [Conventions in Mathematics](../articles_maths/conventions-in-mathematics.html), §*The Matrix Models*, for the current labels, the canonical frame and the retirement of $M_4(\mathbb{C})_L$
-- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html), for the current display and the change $S$
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html), for the current display and the change $S$
 - [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells and the gamma frame
-- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce table and the two planes
-- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](../articles_maths/m4c-representation-the-conjugations-and-the-adjoints.html), for the transpose and dagger dictionaries in the coefficient basis
-- [$M_4(\mathbb{C})$ Model : The Sandwich](../articles_maths/the-sandwich-in-the-m4c-l-model.html), for the congruence and its frame statement
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce table and the two planes
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints](../articles_maths/m4c-representation-the-conjugations-and-the-adjoints.html), for the transpose and dagger dictionaries in the coefficient basis
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich](../articles_maths/the-sandwich-in-the-m4c-l-model.html), for the congruence and its frame statement

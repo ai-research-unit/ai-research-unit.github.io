@@ -1542,7 +1542,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction of the eigenbasis, the nilpotent pair and the normalisation.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
-- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the same eight elements read through the polar word.
 - *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.

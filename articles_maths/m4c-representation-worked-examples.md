@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : Worked Examples__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Worked Examples__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ This article computes eight regular matrices through the same checklist used in 
 
 The article is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Worked Examples* and the capstone of the series.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. In the canonical frame,
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. In the canonical frame,
 $$
 \mathsf{M}_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
 \qquad
@@ -25,7 +25,7 @@ Q_z=\tfrac{i(a-d)}{2},
 $$
 for $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, each twice.
 
-**Boundaries.** The construction is *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the polar factors are *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the rank is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the groups are *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+**Boundaries.** The construction is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix*; the projectors are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors*; the polar factors are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*; the rank is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*; the groups are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
@@ -299,8 +299,8 @@ The eight examples exhibit the scalar, the Jordan block, the distinct case, the 
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the model
-- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the basis
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the model
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the basis
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the $2\times2$ version
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the algebra
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the algebra

@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Four Words and the Four Traces__
 
 ## Introduction
 
@@ -6,16 +6,16 @@ The four products of the biquaternion algebra become four words in the regular m
 
 This article writes the dictionary. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*, and the proof is the same trace identity with the normalization changed.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write
 $$
 X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4^{L}(\tilde R).
 $$
-The two matrix involutions are the transpose and the conjugate transpose. By *$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints*,
+The two matrix involutions are the transpose and the conjugate transpose. By *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints*,
 $$
 \mathsf{M}_4^{L}(\tilde P^{\natural})=X^{\mathsf T},\qquad \mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger}.
 $$
 
-**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
+**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -175,8 +175,8 @@ The four products are the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and 
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the two involutions
-- [$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the two involutions
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the $2\times2$ dictionary
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the products
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms

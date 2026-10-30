@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The four involutions of the biquaternion algebra become four matrix operations i
 
 This article proves the four formulas, identifies the fixed spaces and relates the operations to the right regular matrix. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The four involutions are
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
 \overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
@@ -15,7 +15,7 @@ $$
 $$
 The matrix is $M=\mathsf{M}_4^{L}(\tilde Q)$.
 
-**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
+**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -165,8 +165,8 @@ The four involutions become the transpose, the entrywise conjugation, the conjug
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the $2\times2$ dictionary
 - [The Group of Involutions](the-group-of-involutions.html), for the abstract involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints

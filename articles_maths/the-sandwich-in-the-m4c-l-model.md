@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Model : The Sandwich__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich__
 
 ## Introduction
 
@@ -10,11 +10,11 @@ In the regular model it is the congruence $X\mapsto MXM^{\dagger}$ on $4\times4$
 
 This article develops the sandwich in the regular model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Sandwich*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
 
-**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
-**Frame.** The statements of this article are frame-independent: they concern the operator $\Theta_{\tilde Q}$ and the congruence $X\mapsto MXM^{\dagger}$, not the entries of a particular display. Where a matrix display is read, this article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because the four-vector reading is entrywise there: a Hermitian element is a real scalar matrix plus $i$ times a real skew-symmetric matrix, and an anti-Hermitian element is the reverse. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. Each basis is orthogonal with all four vectors of one norm, so the star is the matrix dagger in both: $\mathsf M_4^{L}(\tilde Q^{*})=M^{\dagger}$. The frames differ in the transpose, not in the dagger; *The Old $M_4(\mathbb{C})_{\mathbb{B},L}$ Regular Representation : An Archive* records the two changes of frame and the retired order.
+**Frame.** The statements of this article are frame-independent: they concern the operator $\Theta_{\tilde Q}$ and the congruence $X\mapsto MXM^{\dagger}$, not the entries of a particular display. Where a matrix display is read, this article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because the four-vector reading is entrywise there: a Hermitian element is a real scalar matrix plus $i$ times a real skew-symmetric matrix, and an anti-Hermitian element is the reverse. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. Each basis is orthogonal with all four vectors of one norm, so the star is the matrix dagger in both: $\mathsf M_4^{L}(\tilde Q^{*})=M^{\dagger}$. The frames differ in the transpose, not in the dagger; *The Old $M_4(\mathbb{C})_L$ Regular Representation : An Archive* records the two changes of frame and the retired order.
 
 ## The Congruence
 
@@ -148,8 +148,8 @@ The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices.
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factors
-- [$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factors
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
 - [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the $2\times2$ version
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the operator

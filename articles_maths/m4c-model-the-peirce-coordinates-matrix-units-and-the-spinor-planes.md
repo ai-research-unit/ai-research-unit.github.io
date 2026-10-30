@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The left regular matrix reads a biquaternion as an operator on its own four-dime
 
 This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions in the $4\times4$ model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. It uses no form, no norm and no module.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: in the canonical frame its $j$-th column is the coordinate column of $\tilde Q P_j$; in the coefficient basis, where $P_j=e_j$, this is the coordinate column of $\tilde Q e_j$. The standard pair and the standard nilpotents are
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*: in the canonical frame its $j$-th column is the coordinate column of $\tilde Q P_j$; in the coefficient basis, where $P_j=e_j$, this is the coordinate column of $\tilde Q e_j$. The standard pair and the standard nilpotents are
 
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -37,7 +37,7 @@ $$
 
 and the change matrix $\mathsf S$, whose columns are these four elements in coefficient coordinates, carries the Peirce column to the coefficient column: $\mathsf M_{4,\mathrm{coef}}^{L}=\mathsf S\,(I_2\otimes\mathsf M_2)\,\mathsf S^{-1}$.
 
-**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
+**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $S$ the change of *The Product, the Trace and the Determinant*, the same operator reads $S(I_2\otimes\mathsf M_2(\tilde Q))S^{-1}$ there.
 
@@ -243,6 +243,6 @@ The Peirce coordinates of the standard pair are the entries of the $2\times2$ mo
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the Peirce table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their adapted bases and the exchange
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
-- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
 - [Nilpotents](nilpotents.html), for the nilpotent cone

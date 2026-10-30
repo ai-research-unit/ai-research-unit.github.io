@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ Every invertible regular matrix is the product of a positive Hermitian matrix an
 
 This article develops the matrix polar decomposition, its refinement by the determinant, its closed form, its behaviour on the singular matrices, and the singular value decomposition. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4^{L}(\tilde Q)=N^2$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4^{L}(\tilde Q)=N^2$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.
 
-**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *$M_4(\mathbb{C})$ Model : The Sandwich*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
@@ -178,7 +178,7 @@ $$
 
 **The partial isometry.** For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank two, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ is still unique if $P$ is required to be positive semidefinite and $V$ to vanish on the kernel.
 
-**The rank.** The regular model has rank two on the singular stratum, so $P$ has rank two, $V$ has rank two, and the product has rank two. The polar decomposition preserves the rank stratification of *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*.
+**The rank.** The regular model has rank two on the singular stratum, so $P$ has rank two, $V$ has rank two, and the product has rank two. The polar decomposition preserves the rank stratification of *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
 **The zero matrix.** At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.
 
@@ -250,8 +250,8 @@ Every invertible regular matrix is uniquely $M=PV$ with $P$ positive definite He
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
-- [$M_4(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the action of the factors
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the action of the factors
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the $2\times2$ version
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the algebra
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the singular case

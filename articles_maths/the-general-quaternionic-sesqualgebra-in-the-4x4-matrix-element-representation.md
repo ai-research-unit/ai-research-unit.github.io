@@ -12,7 +12,7 @@ The regular matrix is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$. The adj
 
 **Conventions.** The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$, with $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and $\mathsf M_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$. The natural conjugation is ${}^{\natural}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The Krein form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-**Boundaries.** The representation is *$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+**Boundaries.** The representation is *$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 ## The Representation
 
@@ -172,7 +172,7 @@ In the canonical frame the left regular representation is $\mathsf M_4^{L}(\tild
 
 ## Further Reading
 
-- [$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
+- [$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operator reading
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators of the form

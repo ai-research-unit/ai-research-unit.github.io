@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Functional Calculus__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Functional Calculus__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ The exponential, the logarithm and the square roots of a regular matrix are thre
 
 This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the relative commutant and classified by spectral type. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf{M}_4^{L}(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf{M}_4^{L}(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
 
-**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
+**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
@@ -127,7 +127,7 @@ $$
 $$
 \exp X\,\exp Y=\exp\Bigl(X+Y+\tfrac12[X,Y]+\tfrac1{12}\bigl([X,[X,Y]]-[Y,[X,Y]]\bigr)+\cdots\Bigr).
 $$
-The exponential is a local isomorphism from the Lie algebra to the group, not a global homomorphism. The defect is the Lie bracket, whose trace form is the subject of *$M_4(\mathbb{C})$ Representation : The Killing Form*.
+The exponential is a local isomorphism from the Lie algebra to the group, not a global homomorphism. The defect is the Lie bracket, whose trace form is the subject of *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Killing Form*.
 
 ## The Closed Form of the Exponential
 
@@ -497,8 +497,8 @@ The square roots in the image are the images of the biquaternion roots: four for
 
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the general calculus and its convergence
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the nilpotents and the rank-two projectors
-- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the relative commutant
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the nilpotents and the rank-two projectors
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the relative commutant
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion logarithm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie correspondence
 - [Square Roots of an Element](square-roots-of-an-element.html), for the algebra classification

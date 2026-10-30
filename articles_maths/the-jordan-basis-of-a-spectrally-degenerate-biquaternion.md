@@ -753,11 +753,11 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 ## Further Reading
 
 - [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](m2c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the matrix form, the Jordanising matrix and the defect
-- [$M_4(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the cone, the three strata and the similarity classification
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the complementary sector and the eigenbasis construction
-- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a cell, with the Peirce data and the degenerate limits of the eigenbasis
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a cell, with the same Peirce data
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the chain as the limit of a rescaled eigenbasis

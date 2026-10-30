@@ -16,7 +16,7 @@ $$
 $$
 The involution $C$ is $C=-\sigma_2\otimes\sigma_2$; it satisfies $C^2=I_4$ and $C=C^{\dagger}$.
 
-**Boundaries.** The representation and its first properties are *$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant*; the operator reading of the same group is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The representation and its first properties are *$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*; the operator reading of the same group is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Representation
 
@@ -183,7 +183,7 @@ The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tild
 
 ## Further Reading
 
-- [$M_4(\mathbb C)$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
+- [$M_4(\mathbb C)_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operator reading of the same group
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the quaternionic product on the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra

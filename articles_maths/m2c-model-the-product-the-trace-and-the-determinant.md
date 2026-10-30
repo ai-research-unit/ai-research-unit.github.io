@@ -213,7 +213,7 @@ The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector 
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two columns
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight matrices computed in the model
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the four involutions
-- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular representation
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular representation
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$
 - [The Realification of the General Quaternionic Algebra](the-realification-of-the-general-quaternionic-algebra.html), for the real reading of the complex model
 - F. R. Gantmacher, *The Theory of Matrices* (Chelsea, 1959).

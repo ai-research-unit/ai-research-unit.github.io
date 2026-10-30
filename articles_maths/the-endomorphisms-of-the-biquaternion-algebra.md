@@ -364,7 +364,7 @@ The second row is a subalgebra of the third, not a quotient and not a different 
 
 **The dimension sixteen.** It is $4\times4$: four basis vectors, four coordinates each. No multiplication is used.
 
-**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
+**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
 
 $$
 S^{-1}L_aS=\operatorname{diag}\bigl(\mathsf{M}_2(a),\mathsf{M}_2(a)\bigr),
@@ -448,6 +448,6 @@ The complex-linear maps of the biquaternion algebra into itself form the endomor
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the general ambient space and the subspace-group rule
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the double centraliser of the regular bimodule
-- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the derivations and automorphisms at matrix level
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation of the corpus

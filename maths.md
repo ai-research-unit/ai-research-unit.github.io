@@ -6574,13 +6574,13 @@
 <a href="articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>
 <!-- the model $\mathsf M_2$, the algebra isomorphism, the product rule, the four basis matrices and the Pauli form, the trace and the determinant, the standard basis and the conjugations, and the unit group. -->
 
-<a href="articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>
+<a href="articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</a>
 <!-- the regular matrix as the Cayley matrix of left multiplication, the injective algebra homomorphism, the block form, the image and the rank stratification. -->
 
 <a href="articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions</a>
 <!-- the centre, the vector subspace, the quaternion and anti-quaternion subspaces, and the Hermitian and anti-Hermitian subspaces as matrix conditions, with their traces, determinants and signatures. -->
 
-<a href="articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html">$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions</a>
+<a href="articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Six Subspaces as Matrix Conditions</a>
 <!-- the centre, the vector, the quaternion and anti-quaternion subspaces, and the Hermitian and anti-Hermitian subspaces as matrix conditions. -->
 
 <a href="articles_maths/the-square-of-an-element.html">The Square of an Element in the Biquaternion Algebra</a>
@@ -6610,7 +6610,7 @@
 <a href="articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>
 <!-- the Peirce table of the standard pair; the coordinate isomorphism and the trace pairing; the systems of matrix units and the reciprocal scaling; the nilpotents as the off-diagonal units; the two spinor planes as the two columns, the couples, the left action by the same matrix, the right action as the exchange and the star carrying a plane to a row. No form, no norm, no module. -->
 
-<a href="articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>
+<a href="articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>
 <!-- the Peirce table and the explicit rank-two matrices of the four Peirce elements; the coordinate isomorphism; the block form $\mathsf S^{-1}\mathsf M_4\mathsf S=\operatorname{diag}(\mathsf M_2,\mathsf M_2)$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$; the trace and the determinant; one system of $2\times2$ matrix units, duplicated; the two spinor planes as the two blocks, preserved on the left, swapped on the right, and distinct from the column spaces of the idempotents. No form, no norm, no module. -->
 
 #### The Modules in the Biquaternion Algebra
@@ -6622,7 +6622,7 @@
 <!-- the two spinor spaces as the two Peirce carriers, which here are the two minimal left ideals; the minimality; the direct sum $\mathbb{B}=S_+\oplus S_-$; every left ideal a sum of minimal ones and every minimal one of the form $\mathbb{B}\tilde\Pi$; the isomorphism class; and the simple module $\mathbb{C}^2$ with $i$ acting as a scalar. The spaces, the couples and the two actions are *The Spinor Spaces*. -->
 
 <a href="articles_maths/the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>
-<!-- the dictionary between representations and left modules, with dimension, subobjects, quotients, direct sums and equivalences; the modules over $\mathbb{B}\cong M_2(\mathbb{C})$, the algebra acting on its own additive group and the category of all its modules: the left regular module ${}_\mathbb{B}\mathbb{B}$, the right regular module $\mathbb{B}_\mathbb{B}$ and the regular bimodule ${}_\mathbb{B}\mathbb{B}_\mathbb{B}$; the submodules are the left, the right and the two-sided ideals, so the ideal theory of *The Regular Module* is the submodule theory of the regular object; cyclic on the unit, faithful, free of rank one on $\{e_t\}$, a generator and the identity of the tensor product, $M\otimes_\mathbb{B}{}_\mathbb{B}\mathbb{B}\cong M$ and ${}_\mathbb{B}\mathbb{B}\otimes_\mathbb{B}N\cong N$; the endomorphism rings $\operatorname{End}_\mathbb{B}(\mathbb{B}_\mathbb{B})\cong\mathbb{B}$, $\operatorname{End}_\mathbb{B}({}_\mathbb{B}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_t$; the defining module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ as the unique simple left module, with the left action in the idempotent basis and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$; the classification, every left module a direct sum $S^{\oplus k}$ and every module projective; ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$, so that $S\cong\mathbb{C}^2$ and the minimal left ideals $L_\ell$ are indexed by the lines of $\mathbb{C}^2$; the parity criterion for freeness, $S^{\oplus k}$ free iff $k$ is even, so that $S$ is projective and not free; the endomorphism algebras $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$, $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$ with automorphism group $\mathrm{GL}_k(\mathbb{C})$, and the double centralizer $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$; the standard bimodule ${}_\mathbb{B}S_\mathbb{C}$ with its commuting actions, the dual $S^*\cong S$ and quaternion conjugation as the adjugate $\mathsf{M}_2(\tilde Q^{\natural})=\varepsilon\mathsf{M}_2(\tilde Q)^{\mathrm T}\varepsilon^{-1}$; the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ and the doubling of every complex dimension; the degeneration of the naive torsion and the torsion-freeness of the category; the real structures of the modules obtained from $\mathbb{H}$ by extension of scalars, exactly the free ones; and $\mathbb{B}$ von Neumann regular and self-injective, so that ${}_\mathbb{B}\mathbb{B}$ is a projective generator and an injective cogenerator. The group of units is in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; the group-theoretic representations are in *Biquaternion Rotations and Lorentz Transformations*; the $4\times4$ regular matrices are in *$M_4(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*; and the involution, the twist and the canonical form are in *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. -->
+<!-- the dictionary between representations and left modules, with dimension, subobjects, quotients, direct sums and equivalences; the modules over $\mathbb{B}\cong M_2(\mathbb{C})$, the algebra acting on its own additive group and the category of all its modules: the left regular module ${}_\mathbb{B}\mathbb{B}$, the right regular module $\mathbb{B}_\mathbb{B}$ and the regular bimodule ${}_\mathbb{B}\mathbb{B}_\mathbb{B}$; the submodules are the left, the right and the two-sided ideals, so the ideal theory of *The Regular Module* is the submodule theory of the regular object; cyclic on the unit, faithful, free of rank one on $\{e_t\}$, a generator and the identity of the tensor product, $M\otimes_\mathbb{B}{}_\mathbb{B}\mathbb{B}\cong M$ and ${}_\mathbb{B}\mathbb{B}\otimes_\mathbb{B}N\cong N$; the endomorphism rings $\operatorname{End}_\mathbb{B}(\mathbb{B}_\mathbb{B})\cong\mathbb{B}$, $\operatorname{End}_\mathbb{B}({}_\mathbb{B}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_t$; the defining module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ as the unique simple left module, with the left action in the idempotent basis and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$; the classification, every left module a direct sum $S^{\oplus k}$ and every module projective; ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$, so that $S\cong\mathbb{C}^2$ and the minimal left ideals $L_\ell$ are indexed by the lines of $\mathbb{C}^2$; the parity criterion for freeness, $S^{\oplus k}$ free iff $k$ is even, so that $S$ is projective and not free; the endomorphism algebras $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$, $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$ with automorphism group $\mathrm{GL}_k(\mathbb{C})$, and the double centralizer $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$; the standard bimodule ${}_\mathbb{B}S_\mathbb{C}$ with its commuting actions, the dual $S^*\cong S$ and quaternion conjugation as the adjugate $\mathsf{M}_2(\tilde Q^{\natural})=\varepsilon\mathsf{M}_2(\tilde Q)^{\mathrm T}\varepsilon^{-1}$; the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ and the doubling of every complex dimension; the degeneration of the naive torsion and the torsion-freeness of the category; the real structures of the modules obtained from $\mathbb{H}$ by extension of scalars, exactly the free ones; and $\mathbb{B}$ von Neumann regular and self-injective, so that ${}_\mathbb{B}\mathbb{B}$ is a projective generator and an injective cogenerator. The group of units is in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Units*; the group-theoretic representations are in *Biquaternion Rotations and Lorentz Transformations*; the $4\times4$ regular matrices are in *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Matrix Product and the Algebra Structure*; and the involution, the twist and the canonical form are in *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. -->
 
 <a href="articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair in the Biquaternion Algebra</a>
 <!-- the two signs: the Peirce sign as an inner, non-central copy index grading $S_+\cong S_-\cong S$, and the chirality as the central sign of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, grading $S$ against the conjugate module $S^{\mathrm{c}}$; the centre of $\mathbb{B}$ with no nontrivial idempotent and the no-go for an inner chiral grading; the conjugate module, the real isomorphism and the complex inequivalence; the central idempotents $e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}})$ and $\chi=i\tilde\Xi_{\mathrm{ad}}$; the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ and the chiral projectors; the invariant pairing $\beta$ and the off-diagonal, chirality-odd mass operator; the Peirce nilpotent as a copy flip, not the chiral mass; the four algebraic uses of spin — the highest weight, the Peirce index, the chirality and the adjoint action. -->
@@ -6640,7 +6640,7 @@
 <a href="articles_maths/m2c-model-the-spectral-projectors.html">$M_2(\mathbb{C})$ Model : The Spectral Projectors</a>
 <!-- the spectral projectors $\rho_\pm$, the spectral decomposition, the nilpotents $N_\pm$, the Peirce relations, the standard axis and the degenerate limit. -->
 
-<a href="articles_maths/m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})$ Model : The Spectral Projectors</a>
+<a href="articles_maths/m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors</a>
 <!-- the spectral projectors of rank two, the nilpotents, the Jordan decomposition and the spectral theorem. -->
 
 <a href="articles_maths/the-centraliser.html">The Centraliser in the Biquaternion Algebra</a>
@@ -6649,7 +6649,7 @@
 <a href="articles_maths/m2c-model-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>
 <!-- the commutant and the double commutant, the three spectral types, the spectral projectors, the dual numbers, the eigenbasis ambiguity and the dimension count. -->
 
-<a href="articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>
+<a href="articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser</a>
 <!-- the commutant, the relative and full centralisers, the right regular matrix, the double centraliser and the dimension count. -->
 
 <a href="articles_maths/the-semisimple-nilpotent-split.html">The Semisimple–Nilpotent Split of a Biquaternion</a>
@@ -6661,7 +6661,7 @@
 <a href="articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</a>
 <!-- the eigenbasis, the coordinate model $\mathsf M_2^Q$, the diagonalising matrix $\mathsf C_Q$, the two charts, the freedom of the change and the cocycle of the transitions. -->
 
-<a href="articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</a>
+<a href="articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix</a>
 <!-- the eigenbasis, the diagonalising matrix, the ordered pair, the two copies and the spectral coordinates. -->
 
 <a href="articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html">Worked Examples of an Eigenbasis of a Biquaternion</a>
@@ -6673,13 +6673,13 @@
 <a href="articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html">$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</a>
 <!-- the Jordan basis and its matrix units, the coordinate model $\mathsf M_2^{\tilde Q}$, the Jordanising matrix, the canonical singular-value frame, its determinant and modulus, the unitary form and the defect, the Toeplitz freedom and the transitions. -->
 
-<a href="articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html">$M_4(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</a>
+<a href="articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Jordan Basis and the Jordanising Matrix</a>
 <!-- the $4\times4$ Jordan basis, the regular matrix $J_2(Q_t)\otimes\mathrm I_2$, the canonical Jordanising matrix and its fixed determinant $1/4$, the chain order and $-1/4$, the commutant $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$ and its unitary subgroup $U(2)$, the defect and the transitions. -->
 
 <a href="articles_maths/m2c-representation-worked-examples.html">$M_2(\mathbb{C})$ Representation : Worked Examples</a>
 <!-- the eight matrices, scalar, Jordan, distinct spectrum, singular, rank one, unitary, Hermitian and normal: the coordinates, the trace and the determinant, the spectrum and the minimal polynomial, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags, and the pattern of the eight. -->
 
-<a href="articles_maths/m4c-representation-worked-examples.html">$M_4(\mathbb{C})$ Representation : Worked Examples</a>
+<a href="articles_maths/m4c-representation-worked-examples.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Worked Examples</a>
 <!-- the eight matrices, the checklist of invariants, the projectors, the polar factors and the roster of the series. -->
 #### The Four General Products
 
@@ -6701,14 +6701,14 @@
 <a href="articles_maths/m2c-representation-the-four-words-and-the-four-traces.html">$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>
 <!-- the trace pairing, the four products and the four forms in the model, the adjugate and the dagger, the Gram matrices and their signatures, and the dictionary between the algebra words and the matrix words. -->
 
-<a href="articles_maths/m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>
+<a href="articles_maths/m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Four Words and the Four Traces</a>
 <!-- the trace pairing, the four products and forms, the adjugate and the dagger, the Gram matrices, the signatures and the dictionary. -->
 
 
 <a href="articles_maths/m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>
 <!-- the trace, the determinant, the characteristic polynomial and the eigenvalues, the adjugate, the quaternionic norm, the Cayley–Hamilton identity and the singular locus. -->
 
-<a href="articles_maths/m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>
+<a href="articles_maths/m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm</a>
 <!-- trace and determinant, the eigenvalue formula, the squared norm, the rank and the determinant identity. -->
 
 
@@ -6720,7 +6720,7 @@
 <a href="articles_maths/m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>
 <!-- the matrix polar decomposition, the positive Hermitian times unitary word $r\zeta M_bM_r$, the determinant split, the special linear case and the singular partial isometry. -->
 
-<a href="articles_maths/m4c-representation-the-polar-decomposition-of-a-matrix.html">$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>
+<a href="articles_maths/m4c-representation-the-polar-decomposition-of-a-matrix.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix</a>
 <!-- the polar factors, the determinant split, the closed form, the singular case and the Cartan decomposition. -->
 
 #### Algebra with the N Norm
@@ -6737,13 +6737,13 @@
 <a href="articles_maths/m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>
 <!-- the rank-one matrices, the outer product, the zero divisors, the determinantal variety, the Segre variety and the rank stratification. -->
 
-<a href="articles_maths/m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>
+<a href="articles_maths/m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety</a>
 <!-- the ranks 0, 2 and 4, the determinantal variety, the two strata and the singular locus. -->
 
 <a href="articles_maths/m2c-representation-spin-qubits-and-the-bloch-vector.html">$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</a>
 <!-- the Pauli basis of the Hermitian sector $\mathsf M_2(i\vec e_k)=\sigma_k$, the spin operators and their $\mathfrak{su}(2)$ algebra, the pure states as rank-one Hermitian idempotents on the null cone, the density matrix $\rho=\tfrac12(\mathrm I_2+\vec r\cdot\vec\sigma)$, the Bloch ball and its boundary, the measurement formulae, and the qubit as a spinor ray. -->
 
-<a href="articles_maths/m4c-representation-spin-qubits-and-the-bloch-vector.html">$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</a>
+<a href="articles_maths/m4c-representation-spin-qubits-and-the-bloch-vector.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Spin, Qubits and the Bloch Vector</a>
 <!-- the Hermitian basis, the spin operators, the pure and general states, the repeated Bloch vector, the purity and the Hopf fibration. -->
 
 <a href="articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>
@@ -6790,7 +6790,7 @@
 <a href="articles_maths/m2c-representation-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a>
 <!-- the four involutions as the adjugate, the $\epsilon$-dressed conjugation, the dagger and its negative, the fixed spaces, the four forms and the warning that complex conjugation is not entrywise. -->
 
-<a href="articles_maths/m4c-representation-the-conjugations-and-the-adjoints.html">$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a>
+<a href="articles_maths/m4c-representation-the-conjugations-and-the-adjoints.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Conjugations and the Adjoints</a>
 <!-- the four involutions as the adjugate, the dressed conjugation, the dagger and its negative, the fixed spaces and the forms. -->
 
 <a href="articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a>
@@ -6852,7 +6852,7 @@
 <a href="articles_maths/the-sandwich-in-the-m2c-model.html">$M_2(\mathbb{C})$ Model : The Sandwich</a>
 <!-- the sandwich as the congruence $MXM^{\dagger}$, the preservation of the two halves, the Lorentz action on the anti-Hermitian half, the congruence on the Hermitian half, the factor $r^4$ and the image $CO^{+}(1,3)$. -->
 
-<a href="articles_maths/the-sandwich-in-the-m4c-l-model.html">$M_4(\mathbb{C})$ Model : The Sandwich</a>
+<a href="articles_maths/the-sandwich-in-the-m4c-l-model.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich</a>
 <!-- the congruence, the two halves, the Lorentz action, the determinant scaling and the conformal group. -->
 
 ### Topology
@@ -6873,7 +6873,7 @@
 <a href="articles_maths/m2c-representation-gl2-sl2-and-the-determinant.html">$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>
 <!-- the unit group, $GL_2$ and $SL_2$, the determinant, $U(2)$ and $SU(2)$, the Lorentz group, the Lie algebras and the exact sequences. -->
 
-<a href="articles_maths/m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>
+<a href="articles_maths/m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>
 <!-- the unit group, the norm-one group, the two determinant sequences, the level sets, the unitary group and the polar decomposition. -->
 
 <a href="articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>
@@ -6908,7 +6908,7 @@
 <a href="articles_maths/m2c-representation-the-killing-form.html">$M_2(\mathbb{C})$ Representation : The Killing Form</a>
 <!-- the adjoint operator, the formula, the radical, the signature on the trace-free part, the invariance and the relation to the trace form. -->
 
-<a href="articles_maths/m4c-representation-the-killing-form.html">$M_4(\mathbb{C})$ Representation : The Killing Form</a>
+<a href="articles_maths/m4c-representation-the-killing-form.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Killing Form</a>
 <!-- the adjoint operator, the complex and real Killing forms, the radical, the signature and the trace form. -->
 
 <a href="articles_maths/biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>
@@ -6917,7 +6917,7 @@
 <a href="articles_maths/m2c-representation-the-functional-calculus.html">$M_2(\mathbb{C})$ Representation : The Functional Calculus</a>
 <!-- the holomorphic functional calculus for a matrix, its spectral form and its homomorphism property; the exponential series, the determinant identity, the group law, the closed forms, the one-parameter subgroups and the kernel; the logarithm equation, the branch families, the principal logarithm and its derivative; the square-root reduction, the spectral cases, the principal root and the classification. -->
 
-<a href="articles_maths/m4c-representation-the-functional-calculus.html">$M_4(\mathbb{C})$ Representation : The Functional Calculus</a>
+<a href="articles_maths/m4c-representation-the-functional-calculus.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Functional Calculus</a>
 <!-- the functional calculus on the regular image as the image of the biquaternion calculus, its spectral form and its homomorphism property; the exponential series, the determinant identity, the closed forms, the one-parameter subgroups and the kernel; the logarithm equation, the branch families, the principal logarithm and its derivative; the square-root reduction in the relative commutant, the spectral cases, the principal root, the classification and the ambient roots. -->
 
 <a href="articles_maths/biquaternion-higher-special-functions.html">Biquaternion Higher Special Functions</a>
@@ -7007,7 +7007,7 @@
 <a href="articles_maths/m2c-representation-the-projective-line-and-the-mobius-action.html">$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action</a>
 <!-- the minimal left ideals as image lines, the action of $GL_2(\mathbb{C})$, the kernel, the Möbius chart, the rank-one idempotents, the stabilisers, the cross-ratio and the real structure. -->
 
-<a href="articles_maths/m4c-representation-the-projective-line-and-the-mobius-action.html">$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action</a>
+<a href="articles_maths/m4c-representation-the-projective-line-and-the-mobius-action.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Projective Line and the Möbius Action</a>
 <!-- the right ideals and their left mirrors, the action of the unit group, the Möbius formula, the idempotents, the orbits and the cross-ratio. -->
 
 <a href="articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>

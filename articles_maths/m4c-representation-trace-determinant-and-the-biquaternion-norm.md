@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm__
+# __$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ The trace of the regular matrix is four times the scalar part and the determinan
 
 This article develops the two invariants, the four algebraic norms as matrix invariants, the characteristic and minimal polynomials, and the singular locus. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write $\mathsf{M}_4^{L}(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write $\mathsf{M}_4^{L}(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.
 
-**Boundaries.** The determinant as a group homomorphism is *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the rank stratification is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
+**Boundaries.** The determinant as a group homomorphism is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the rank stratification is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety*; the four forms are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Four Words and the Four Traces*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -135,8 +135,8 @@ The trace is $4Q_t$ and the determinant is the squared norm $\langle\tilde Q\ran
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces](m4c-representation-the-four-words-and-the-four-traces.html), for the trace normalization
-- [$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone
-- [$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Four Words and the Four Traces](m4c-representation-the-four-words-and-the-four-traces.html), for the trace normalization
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone
+- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the $2\times2$ version
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norms
