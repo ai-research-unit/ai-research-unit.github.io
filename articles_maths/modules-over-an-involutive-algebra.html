@@ -79,7 +79,7 @@
 \sigma^{2}=\mathrm{id}, \qquad \sigma(ab)=\sigma(b)\,\sigma(a) \qquad (a,b \in A);
 $$</p>
 <p>the pair $(A,\sigma)$ is an <strong>involutive algebra</strong>.</p>
-<p>The definition, the elementary properties and the examples are those of <em>Involutive Algebras</em>; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{opp}}$ as well, since for the opposite product $a \cdot_{\mathrm{op}} b=ba$ one has $\sigma(a \cdot_{\mathrm{op}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{op}} \sigma(a)$.</p>
+<p>The definition, the elementary properties and the examples are those of <em>Involutive Algebras</em>; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{opp}}$ as well, since for the opposite product $a \cdot_{\mathrm{opp}} b=ba$ one has $\sigma(a \cdot_{\mathrm{opp}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{opp}} \sigma(a)$.</p>
 <h3 id="the-twisted-module">The twisted module</h3>
 <p><strong>Definition.</strong> Let $M$ be a left $A$-module. The <strong>twisted module</strong> $M^{\sigma}$ is the same additive group $M$ with the action</p>
 <p>$$
@@ -118,9 +118,9 @@ $$</p>
 \boxed{\;\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji})\;},
 $$</p>
 <p>is an involution of the $R$-algebra $M_n(A^{\mathrm{opp}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.</p>
-<p><em>Proof.</em> Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{op}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has</p>
+<p><em>Proof.</em> Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{opp}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has</p>
 <p>$$
-\Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{op}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
+\Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{opp}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
 $$</p>
 <p>so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula.</p>
 <p><strong>Corollary.</strong> The involution of the algebra $A$ induces an involution of the endomorphism ring of every free module, and on the regular module this is $\sigma$ itself, recovering the proposition above at $n=1$.</p>
@@ -172,7 +172,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A^{\mathrm{opp}}$</td>
-<td>opposite algebra, product $a \cdot_{\mathrm{op}} b=ba$</td>
+<td>opposite algebra, product $a \cdot_{\mathrm{opp}} b=ba$</td>
 </tr>
 <tr>
 <td>$M$, $N$</td>
