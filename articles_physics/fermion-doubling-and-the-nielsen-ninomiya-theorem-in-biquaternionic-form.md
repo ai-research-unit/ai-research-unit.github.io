@@ -12,18 +12,26 @@ The article is organised as follows. The next section sets up the naive discreti
 
 ### The classical action and the lattice
 
-In Euclidean spacetime the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
+The biquaternion field is Lorentzian. In the $x$ coordinates $x^0=ct'$, $x^k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial/\partial Q_\mu + m\right)\psi(x),
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma^\mu\partial_\mu - m\right)\psi(x),
+\qquad
+\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
-with $\gamma^\mu$ the Euclidean $Q$-frame generators, $(\gamma^\mu)^2=+1$ and $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}$.
+The lattice path integral is defined on the Euclidean section. Write $\gamma^E_0=\gamma^0$ and $\gamma^E_k=i\gamma^k$; then $(\gamma^E_\mu)^2=+1$ and $\{\gamma^E_\mu,\gamma^E_\nu\}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $Q$-frame of the biquaternion algebra. The Euclidean action is
+
+$$
+S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma^E_\mu\partial^E_\mu + m\right)\psi(x),
+$$
+
+and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma^E_\mu$ and $\gamma_5=\gamma^E_0\gamma^E_1\gamma^E_2\gamma^E_3$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
 
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
-\partial/\partial Q_\mu\,\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
+\partial^E_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
 $$
 
 The naive action is then
@@ -32,7 +40,7 @@ $$
 S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\vec u}-\psi_{n-\vec u}}{2a} + m\psi_n\right),
 $$
 
-which reduces to the continuum action as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
+which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
 ### The propagator and the doubler poles
 
@@ -76,7 +84,7 @@ with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transform
 
 ### Statement and assumptions
 
-The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Ϙ$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:
+The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Q$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:
 
 - **translational invariance**, so that $F(x,y) = F(x-y)$;
 - **locality**, meaning $F(x-y)$ decays fast enough that its Fourier transform has continuous derivatives;
