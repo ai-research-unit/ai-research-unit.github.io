@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,11 +68,11 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-representation-rank-one-matrices-and-the-determinantal-variety"><strong>$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</strong></h1>
+        <h1 id="math0-representation-rank-one-matrices-and-the-determinantal-variety"><strong>$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Rank-One Matrices and the Determinantal Variety</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The zero divisors of the biquaternion algebra are the nonzero elements of vanishing quaternionic norm. In the regular model they are the nonzero singular matrices, and a nonzero singular matrix in the image has rank two: it is the direct sum of two identical rank-one blocks. Every one of them is the double of an outer product of two vectors, and the two vectors carry the two pieces of data the algebra sees: a direction and a covector.</p>
 <p>This article develops the factorisation, the two strata of the regular determinantal variety, the annihilators and the geometry of the cone. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em>. The title is inherited from the $2\times2$ article; the object in the regular model is the rank-two double of a rank-one matrix.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The norm is $N=Q_t^2+B^2$, and $\det\mathsf{M}_4^{L}(\tilde Q)=N^2$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The Peirce basis identifies the image with the block matrices $\operatorname{diag}(A,A)$.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</em>. The norm is $N=Q_t^2+B^2$, and $\det\mathsf{M}_4^{L}(\tilde Q)=N^2$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The Peirce basis identifies the image with the block matrices $\operatorname{diag}(A,A)$.</p>
 <p><strong>Boundaries.</strong> The null cone and its stratification are <em>The N-Degenerate Sector</em>; the nilpotents are <em>Nilpotents</em>; the rank-one elements and the Peirce corners are <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the singular matrices as a determinantal variety are also treated in <em>The Determinant and Alternating Forms</em>.</p>
 <p><strong>Frame.</strong> Unless a basis is named, matrices are written in the canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of <em>The Product, the Trace and the Determinant</em>.</p>
 <h2 id="the-factorisation">The Factorisation</h2>
@@ -207,7 +207,7 @@ $$
 E_{12}E_{21}=E_{11},\qquad E_{21}E_{12}=E_{22},\qquad
 E_{12}^2=E_{21}^2=0.
 $$
-The product of the two doubled nilpotents is the doubled idempotent of the opposite corner, and every rank-two idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in <em>$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
+The product of the two doubled nilpotents is the doubled idempotent of the opposite corner, and every rank-two idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
 <p><strong>The scaled idempotent.</strong> A rank-two idempotent is not nilpotent: $P_L^2=P_L$ and $P_L\neq0$. It is nevertheless a zero divisor, because $P_L(e_t-P_L)=0$; its annihilator is the ideal of the complementary plane. The distinction between the idempotent and the nilpotent is the distinction between the non-pure and the pure strata.</p>
 <h2 id="summary">Summary</h2>
 <p>A nonzero singular matrix in the regular image has rank two and is the double of a rank-one matrix $uv^{\mathsf T}$, uniquely up to reciprocal scaling. Its trace is twice $v^{\mathsf T}u$, and the trace splits the cone into the pure stratum $v^{\mathsf T}u=0$ of nilpotents, of real dimension four, and the non-pure stratum $v^{\mathsf T}u\neq0$ of scaled idempotents, of real dimension six. The left and right annihilators are the doubled ideals of the complementary line and covector, and the one-sided operators have rank two. The determinantal variety of the image is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with apex at the zero matrix; the pure stratum is the incidence line and the non-pure stratum its complement. Every nilpotent is conjugate to two copies of the Jordan block.</p>
@@ -260,8 +260,8 @@ The product of the two doubled nilpotents is the doubled idempotent of the oppos
 <li><a href="nilpotents.html">Nilpotents</a>, for the nilpotent cone</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the rank-one elements and the corners</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link and its topology</li>
-<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the matrix units</li>
-<li><a href="m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the determinant</li>
+<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the matrix units</li>
+<li><a href="m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the determinant</li>
 <li><a href="m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the $2\times2$ version</li>
 <li><a href="the-determinant-and-alternating-forms.html">The Determinant and Alternating Forms</a>, for determinantal varieties</li>
 </ul>

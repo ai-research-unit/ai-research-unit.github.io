@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Jordan Basis and the Jordanising Matrix — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,16 +68,16 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-model-the-jordan-basis-and-the-jordanising-matrix"><strong>$M_4(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</strong></h1>
+        <h1 id="math0-model-the-jordan-basis-and-the-jordanising-matrix"><strong>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Jordan Basis and the Jordanising Matrix</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A spectrally degenerate biquaternion has a single eigenvalue. In the left regular representation the eigenvalue occurs four times, in two Jordan blocks of size two. The Jordan basis of the algebra gives a basis of $\mathbb{C}^4$ in which the regular matrix is $J_2(Q_t)\otimes\mathrm I_2$, equivalently $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$ in the chain order, and the change to that basis is the $4\times4$ Jordanising matrix. The $2\times2$ similarity that builds the basis has determinant one, so the $4\times4$ determinant is fixed at $\tfrac14$, independent of the element, exactly as in the regular eigenbasis model.</p>
-<p>This article constructs the basis, proves the determinant theorem, identifies the freedom and its $*$-unitary subgroup, and describes the defect. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</em> and the degenerate counterpart of <em>$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</em>.</p>
-<p><strong>Conventions.</strong> The algebra and the $4\times4$ model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. The $2\times2$ model is $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$, with $Q=\mathsf M_2(\vec Q)$. The nilpotent has singular value</p>
+<p>This article constructs the basis, proves the determinant theorem, identifies the freedom and its $*$-unitary subgroup, and describes the defect. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</em> and the degenerate counterpart of <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the $4\times4$ model are those of <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</em>. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. The $2\times2$ model is $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$, with $Q=\mathsf M_2(\vec Q)$. The nilpotent has singular value</p>
 <p>$$
 s=\sqrt{2\langle\vec Q\rangle_*},\qquad Q=suv^{\dagger},
 $$</p>
 <p>with $u,v\in\mathbb{C}^2$ orthonormal. The $2\times2$ Jordanising matrix is $\mathsf S_Q=(u\ s^{-1}v)$. The Jordan basis is $\mathcal{J}=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$; the corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$.</p>
-<p><strong>Boundaries.</strong> The flag, the corners, the Jordan pair and the canonical pair are <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>; the $2\times2$ Jordanising matrix and its determinant are <em>$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</em>; the projectors are <em>$M_4(\mathbb{C})$ Model : The Spectral Projectors</em>; the centraliser is <em>$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</em>; the eigenbasis model is <em>$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</em>.</p>
+<p><strong>Boundaries.</strong> The flag, the corners, the Jordan pair and the canonical pair are <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>; the $2\times2$ Jordanising matrix and its determinant are <em>$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</em>; the projectors are <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors</em>; the centraliser is <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser</em>; the eigenbasis model is <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix</em>.</p>
 <p><strong>Frame.</strong> Unless a basis is named, matrices are written in the canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The Jordanising matrix below is displayed in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because its columns are the $P_{ij}$ in coefficient coordinates; the two displays differ by the change $S$ of <em>The Product, the Trace and the Determinant</em>.</p>
 <h2 id="the-jordan-basis">The Jordan Basis</h2>
 <p><strong>The spectral matrix units.</strong> Let</p>
@@ -272,10 +272,10 @@ $$</p>
 <ul>
 <li><a href="m2c-model-the-jordan-basis-and-the-jordanising-matrix.html">$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix</a>, for the $2\times2$ model</li>
 <li><a href="the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a>, for the flag, the corners and the canonical pair</li>
-<li><a href="m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the regular counterpart</li>
-<li><a href="m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})$ Model : The Spectral Projectors</a>, for the projectors</li>
-<li><a href="m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>, for the commutant</li>
-<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>, for the fixed model</li>
+<li><a href="m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the regular counterpart</li>
+<li><a href="m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors</a>, for the projectors</li>
+<li><a href="m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser</a>, for the commutant</li>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</a>, for the fixed model</li>
 <li><a href="m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the fixed Peirce change and its determinant</li>
 <li><a href="the-spectrum.html">The Spectrum</a>, for the spectral criterion</li>
 </ul>
