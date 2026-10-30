@@ -4,15 +4,15 @@
 
 The unit ball and the unit bicylinder are the two model bounded domains of $\mathbb{C}^2$: the ball
 $$
-\mathbb{B}^2=\{z:\lVert z\rVert^2=\lvert z_1\rvert^2+\lvert z_2\rvert^2<1\}
+\mathbb{B}^2=\{Q:\lVert Q\rVert^2=\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2<1\}
 $$
 and the bicylinder, also called the **polydisc**,
 $$
-\Delta^2=\{z:\lvert z_1\rvert<1,\ \lvert z_2\rvert<1\}.
+\Delta^2=\{Q:\lvert Q_{\blacktriangle}\rvert<1,\ \lvert Q_{\blacktriangledown}\rvert<1\}.
 $$
 Both are bounded, convex, contractible and simply connected, both are domains of holomorphy, and both are homogeneous under a large group of biholomorphisms. They are nevertheless not biholomorphic, and the failure is the first structural difference between the analysis of one variable and the analysis of two.
 
-This article treats the two domains, their automorphism groups, the proof that they are not biholomorphic, their boundary geometry, the failure of the Riemann mapping theorem that they exhibit, and the Reinhardt domains to which both belong. The general theory of domains of holomorphy and pseudoconvexity is *Several Complex Variables*; the Cauchy–Riemann equations and the maximum principle are *Analysis on $\mathbb{C}^2$*; the boundary integral is *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*. The notation is that of *Complex Two-Space*, and the Hermitian form is $H(z,w)=\sum_kz_k\overline{w_k}$.
+This article treats the two domains, their automorphism groups, the proof that they are not biholomorphic, their boundary geometry, the failure of the Riemann mapping theorem that they exhibit, and the Reinhardt domains to which both belong. The general theory of domains of holomorphy and pseudoconvexity is *Several Complex Variables*; the Cauchy–Riemann equations and the maximum principle are *Analysis on $\mathbb{C}^2$*; the boundary integral is *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*. The notation is that of *Complex Two-Space*, and the Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$.
 
 **The ball and the bicylinder have the same topology and the same dimension, and different complex geometry.** The difference is read in three ways: the automorphism groups have dimensions $8$ and $6$, the boundary of the ball is strongly pseudoconvex everywhere while the boundary of the bicylinder is nowhere strongly pseudoconvex at its smooth points, and the Bergman metric of the ball has constant holomorphic sectional curvature while that of the bicylinder does not. The first is the classical proof of Poincaré, and it is the one given here in full.
 
@@ -22,9 +22,9 @@ This article treats the two domains, their automorphism groups, the proof that t
 
 **Definition.** The **unit ball** and the **unit bicylinder** are
 $$
-\mathbb{B}^2=\{z:H(z,z)<1\},\qquad
+\mathbb{B}^2=\{Q:H(Q,Q)<1\},\qquad
 \Delta^2=\Delta\times\Delta,\qquad
-\Delta=\{w\in\mathbb{C}:\lvert w\rvert<1\}.
+\Delta=\{\zeta\in\mathbb{C}:\lvert\zeta\rvert<1\}.
 $$
 
 **Proposition (inclusion and volume).** The ball is contained in the bicylinder, $\mathbb{B}^2\subset\Delta^2$, and the inclusion is strict. The volumes are
@@ -33,7 +33,7 @@ $$
 $$
 so the ball has half the volume of the bicylinder.
 
-*Proof.* If $\lvert z_1\rvert^2+\lvert z_2\rvert^2<1$, then each summand is less than $1$, so $\lvert z_k\rvert<1$; the point $(1/\sqrt2,1/\sqrt2)$ lies in the bicylinder and on the sphere, so the inclusion is strict. The volume of the unit ball of $\mathbb{R}^4$ is $\pi^2/2$, and the volume of the bidisc is the square of the area $\pi$ of the disc.
+*Proof.* If $\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2<1$, then each summand is less than $1$, so $\lvert Q_{\blacktriangle}\rvert<1$ and $\lvert Q_{\blacktriangledown}\rvert<1$; the point $(1/\sqrt2,1/\sqrt2)$ lies in the bicylinder and on the sphere, so the inclusion is strict. The volume of the unit ball of $\mathbb{R}^4$ is $\pi^2/2$, and the volume of the bidisc is the square of the area $\pi$ of the disc.
 
 **Proposition (convexity).** The two domains are convex, bounded, contractible and simply connected. The ball is strictly convex; the bicylinder is not.
 
@@ -41,7 +41,7 @@ so the ball has half the volume of the bicylinder.
 
 **Proposition (the boundaries).** The boundary of the ball is the sphere
 $$
-\partial\mathbb{B}^2=S^3=\{z:\lVert z\rVert=1\}.
+\partial\mathbb{B}^2=S^3=\{Q:\lVert Q\rVert=1\}.
 $$
 The boundary of the bicylinder is the union of two smooth pieces
 $$
@@ -49,7 +49,7 @@ $$
 $$
 which meet along the **distinguished boundary**
 $$
-T^2=\partial\Delta\times\partial\Delta=\{z:\lvert z_1\rvert=\lvert z_2\rvert=1\},
+T^2=\partial\Delta\times\partial\Delta=\{Q:\lvert Q_{\blacktriangle}\rvert=\lvert Q_{\blacktriangledown}\rvert=1\},
 $$
 a real two-dimensional torus. The boundary of the ball is a smooth three-manifold; the boundary of the bicylinder is not a manifold along $T^2$.
 
@@ -73,7 +73,7 @@ $$
 $$
 The action is faithful, and the group has real dimension $8$.
 
-*Proof.* A matrix $A\in\mathrm{U}(2,1)$ preserves the Hermitian form $Z^{*}JZ$ of signature $(2,1)$, so it preserves the sign of the form on the class; the chart $Z_3\neq0$ with $z_k=Z_k/Z_3$ identifies the set with $\lVert z\rVert<1$. The centre acts trivially on classes, and the quotient acts faithfully. The Lie algebra consists of the matrices $X$ with $X^{*}J+JX=0$, a real vector space of dimension $9$; the centre has dimension $1$, so the projective group has dimension $8$.
+*Proof.* A matrix $A\in\mathrm{U}(2,1)$ preserves the Hermitian form $Z^{*}JZ$ of signature $(2,1)$, so it preserves the sign of the form on the class; the chart $Z_3\neq0$ with $Q_{\blacktriangle}=Z_1/Z_3$ and $Q_{\blacktriangledown}=Z_2/Z_3$ identifies the set with $\lVert Q\rVert<1$. The centre acts trivially on classes, and the quotient acts faithfully. The Lie algebra consists of the matrices $X$ with $X^{*}J+JX=0$, a real vector space of dimension $9$; the centre has dimension $1$, so the projective group has dimension $8$.
 
 **Theorem (the automorphisms are projective unitary).** Every biholomorphism of $\mathbb{B}^2$ is the restriction of an element of $\mathrm{PU}(2,1)$. Hence
 $$
@@ -91,20 +91,20 @@ as a homogeneous space.
 
 *Proof.* The transitivity is exhibited by the Möbius maps below. A projective unitary map fixing the origin fixes the complex line $[0:0:1]$, hence is represented by a block matrix $\operatorname{diag}(A,d)$ with $A\in\mathrm{U}(2)$ and $\lvert d\rvert=1$. Two such matrices represent the same projective map exactly when they differ by a scalar, and the class of $\operatorname{diag}(A,d)$ is determined by $A/d\in\mathrm{U}(2)$; hence the isotropy is $\mathrm{U}(2)$. The dimensions $8-4=4$ match the real dimension of the ball.
 
-**Theorem (the Möbius maps).** For $a\in\mathbb{B}^2$, let $P_a$ be the orthogonal projection of $\mathbb{C}^2$ onto the complex line $\mathbb{C}a$ and define
+**Theorem (the Möbius maps).** For $Q_0\in\mathbb{B}^2$, let $P_{Q_0}$ be the orthogonal projection of $\mathbb{C}^2$ onto the complex line $\mathbb{C}Q_0$ and define
 $$
-\varphi_a(z)=\frac{a-P_az-\sqrt{1-\lVert a\rVert^2}\,(I-P_a)z}{1-\langle z,a\rangle},\qquad \langle z,a\rangle=\sum_{k=1}^{2}z_k\overline{a_k}.
+\varphi_{Q_0}(Q)=\frac{Q_0-P_{Q_0}Q-\sqrt{1-\lVert Q_0\rVert^2}\,(I-P_{Q_0})Q}{1-\langle Q,Q_0\rangle},\qquad \langle Q,Q_0\rangle=Q_{\blacktriangle}\overline{Q_{0\blacktriangle}}+Q_{\blacktriangledown}\overline{Q_{0\blacktriangledown}}.
 $$
-Then $\varphi_a$ is a biholomorphism of $\mathbb{B}^2$ with
+Then $\varphi_{Q_0}$ is a biholomorphism of $\mathbb{B}^2$ with
 $$
-\varphi_a(0)=a,\qquad \varphi_a(a)=0,\qquad \varphi_a\circ\varphi_a=\mathrm{id},
+\varphi_{Q_0}(0)=Q_0,\qquad \varphi_{Q_0}(Q_0)=0,\qquad \varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id},
 $$
 and
 $$
-1-\lVert\varphi_a(z)\rVert^2=\frac{(1-\lVert a\rVert^2)(1-\lVert z\rVert^2)}{\lvert1-\langle z,a\rangle\rvert^2}.
+1-\lVert\varphi_{Q_0}(Q)\rVert^2=\frac{(1-\lVert Q_0\rVert^2)(1-\lVert Q\rVert^2)}{\lvert1-\langle Q,Q_0\rangle\rvert^2}.
 $$
 
-*Proof.* The value at $0$ is $a$ and the value at $a$ is $0$, because $P_aa=a$ and $(I-P_a)a=0$. The displayed identity is a direct computation with $\lVert P_az\rVert^2+\lVert(I-P_a)z\rVert^2=\lVert z\rVert^2$; it shows that $\lVert z\rVert<1$ implies $\lVert\varphi_a(z)\rVert<1$, and that the boundary goes to the boundary. The map is an involution, $\varphi_a\circ\varphi_a=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.
+*Proof.* The value at $0$ is $Q_0$ and the value at $Q_0$ is $0$, because $P_{Q_0}Q_0=Q_0$ and $(I-P_{Q_0})Q_0=0$. The displayed identity is a direct computation with $\lVert P_{Q_0}Q\rVert^2+\lVert(I-P_{Q_0})Q\rVert^2=\lVert Q\rVert^2$; it shows that $\lVert Q\rVert<1$ implies $\lVert\varphi_{Q_0}(Q)\rVert<1$, and that the boundary goes to the boundary. The map is an involution, $\varphi_{Q_0}\circ\varphi_{Q_0}=\mathrm{id}$, by direct substitution; hence it is a biholomorphism.
 
 **Remark (the model of the ball).** The ball is the bounded realisation of complex hyperbolic space $\mathbb{CH}^2$, and $\mathrm{PU}(2,1)$ is its group of holomorphic isometries for the Bergman metric. **The dimension $8$ is the dimension of the group, not of the space**; the space has real dimension $4$, and the isotropy has dimension $4$.
 
@@ -124,9 +124,9 @@ It is isomorphic to $\mathrm{PSL}_2(\mathbb{R})\cong\mathrm{PU}(1,1)$ and has re
 
 **Theorem (the automorphisms of the bicylinder).** Every biholomorphism of $\Delta^2$ is of the form
 $$
-(z_1,z_2)\longmapsto\bigl(\varphi_{\sigma(1)}(z_{\sigma(1)}),\varphi_{\sigma(2)}(z_{\sigma(2)})\bigr),
+(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto\bigl(\varphi_{\blacktriangle}(Q_{\blacktriangle}),\varphi_{\blacktriangledown}(Q_{\blacktriangledown})\bigr),
 $$
-where $\sigma\in S_2$ permutes the coordinates and $\varphi_j\in\operatorname{Aut}(\Delta)$. Hence
+where $\varphi_{\blacktriangle},\varphi_{\blacktriangledown}\in\operatorname{Aut}(\Delta)$ and the two are interchanged when $\sigma$ swaps the coordinates. Hence
 $$
 \operatorname{Aut}(\Delta^2)\cong\bigl(\operatorname{Aut}(\Delta)\bigr)^2\rtimes S_2
 \cong\bigl(\mathrm{PSL}_2(\mathbb{R})\bigr)^2\rtimes S_2,
@@ -167,33 +167,33 @@ a contradiction.
 
 **Remark (the dimension count is not the only proof).** The **Bergman metric** is a biholomorphic invariant, and its holomorphic sectional curvature is constant on the ball and not constant on the bicylinder: at the origin, the curvature of the bicylinder is the same in the coordinate directions and different in the diagonal direction, while the ball is homogeneous and has the same curvature in every direction. **The curvature is the analytic content of the difference**, and the dimension count is its group-theoretic shadow.
 
-**Remark (the role of the boundary).** A second proof compares the boundaries. The boundary of the ball is strongly pseudoconvex at every point; the boundary of the bicylinder is not strongly pseudoconvex at any of its smooth points, because at $(1,0)$ the Levi form vanishes in the $z_2$ direction. **Strong pseudoconvexity is a local biholomorphic invariant of a smooth boundary point**, so a biholomorphism that extends across the boundary would carry one kind of point to the other. The boundary argument is the geometric form of the theorem, and the group argument avoids the question of the extension of $F$ to the boundary.
+**Remark (the role of the boundary).** A second proof compares the boundaries. The boundary of the ball is strongly pseudoconvex at every point; the boundary of the bicylinder is not strongly pseudoconvex at any of its smooth points, because at $(1,0)$ the Levi form vanishes in the $Q_{\blacktriangledown}$ direction. **Strong pseudoconvexity is a local biholomorphic invariant of a smooth boundary point**, so a biholomorphism that extends across the boundary would carry one kind of point to the other. The boundary argument is the geometric form of the theorem, and the group argument avoids the question of the extension of $F$ to the boundary.
 
 ## The Boundary Geometry
 
 **The boundary of the ball is a strongly pseudoconvex sphere; the boundary of the bicylinder is a union of two Levi-flat pieces glued along a torus, and its distinguished boundary is the torus.**
 
-**Definition.** Let $\Omega=\{r<0\}$ be a domain with $C^2$ defining function $r$ and $\partial r\neq0$ on $\partial\Omega$. The **complex tangent space** at $p\in\partial\Omega$ is
+**Definition.** Let $\Omega=\{r<0\}$ be a domain with $C^2$ defining function $r$ and $\partial r\neq0$ on $\partial\Omega$. The **complex tangent space** at $Q_0\in\partial\Omega$ is
 $$
-T_p^{\mathbb{C}}\partial\Omega=\left\{v\in\mathbb{C}^2:\sum_{k=1}^{2}v_k\frac{\partial r}{\partial z_k}(p)=0\right\},
+T_{Q_0}^{\mathbb{C}}\partial\Omega=\left\{V\in\mathbb{C}^2:V_{\blacktriangle}\frac{\partial r}{\partial Q_{\blacktriangle}}(Q_0)+V_{\blacktriangledown}\frac{\partial r}{\partial Q_{\blacktriangledown}}(Q_0)=0\right\},
 $$
 and the **Levi form** is
 $$
-\mathcal{L}_r(p)(v)=\sum_{j,k=1}^{2}\frac{\partial^2r}{\partial z_j\partial\bar z_k}(p)\,v_j\overline{v_k},\qquad v\in T_p^{\mathbb{C}}\partial\Omega.
+\mathcal{L}_r(Q_0)(V)=\sum_{j,k\in\{\blacktriangle,\blacktriangledown\}}\frac{\partial^2r}{\partial Q_j\partial\overline{Q}_k}(Q_0)\,V_j\overline{V_k},\qquad V\in T_{Q_0}^{\mathbb{C}}\partial\Omega.
 $$
-The boundary is **strongly pseudoconvex** at $p$ when $\mathcal{L}_r(p)$ is positive definite on $T_p^{\mathbb{C}}\partial\Omega$, and **Levi-flat** when it vanishes.
+The boundary is **strongly pseudoconvex** at $Q_0$ when $\mathcal{L}_r(Q_0)$ is positive definite on $T_{Q_0}^{\mathbb{C}}\partial\Omega$, and **Levi-flat** when it vanishes.
 
-**Proposition (the ball is strongly pseudoconvex).** For the ball with $r=\lVert z\rVert^2-1$, the Levi form at every boundary point is
+**Proposition (the ball is strongly pseudoconvex).** For the ball with $r=\lVert Q\rVert^2-1$, the Levi form at every boundary point is
 $$
-\mathcal{L}_r(p)(v)=\lVert v\rVert^2,\qquad v\in T_p^{\mathbb{C}}\partial\Omega,
+\mathcal{L}_r(Q_0)(V)=\lVert V\rVert^2,\qquad V\in T_{Q_0}^{\mathbb{C}}\partial\Omega,
 $$
 which is positive definite on the complex tangent space of complex dimension $1$.
 
-*Proof.* The mixed second derivatives are $\partial^2r/\partial z_j\partial\bar z_k=\delta_{jk}$, so the form is $\sum_k\lvert v_k\rvert^2$. The complex tangent space at $p$ is the complex line $\{v:\langle v,p\rangle=0\}$, of complex dimension $1$, and the form is positive on it.
+*Proof.* The mixed second derivatives are $\partial^2r/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2r/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=1$, and the mixed ones vanish, so the form is $\lvert V_{\blacktriangle}\rvert^2+\lvert V_{\blacktriangledown}\rvert^2$. The complex tangent space at $Q_0$ is the complex line $\{V:\langle V,Q_0\rangle=0\}$, of complex dimension $1$, and the form is positive on it.
 
-**Proposition (the bicylinder is Levi-flat at its smooth points).** At the smooth boundary point $p=(1,0)$ of $\Delta^2$, with $r=\lvert z_1\rvert^2-1$, the complex tangent space is the $z_2$-line and the Levi form vanishes identically on it. Hence the boundary is not strongly pseudoconvex at $p$, and by symmetry at every smooth boundary point.
+**Proposition (the bicylinder is Levi-flat at its smooth points).** At the smooth boundary point $Q_0=(1,0)$ of $\Delta^2$, with $r=\lvert Q_{\blacktriangle}\rvert^2-1$, the complex tangent space is the $Q_{\blacktriangledown}$-line and the Levi form vanishes identically on it. Hence the boundary is not strongly pseudoconvex at $Q_0$, and by symmetry at every smooth boundary point.
 
-*Proof.* The defining function depends only on $z_1$; its mixed second derivative in $z_2$ is zero, so the Levi form is zero in the direction $v=(0,v_2)$. The point $(1,0)$ has $\lvert z_2\rvert=0<1$, so it is a smooth boundary point. The automorphisms of the bicylinder act transitively on the smooth boundary points, so the same holds everywhere.
+*Proof.* The defining function depends only on $Q_{\blacktriangle}$; its mixed second derivative in $Q_{\blacktriangledown}$ is zero, so the Levi form is zero in the direction $V=(0,V_{\blacktriangledown})$. The point $(1,0)$ has $\lvert Q_{\blacktriangledown}\rvert=0<1$, so it is a smooth boundary point. The automorphisms of the bicylinder act transitively on the smooth boundary points, so the same holds everywhere.
 
 **Remark (the shape of the two boundaries).** The boundary of the ball is a sphere $S^3$, foliated by the Hopf circles; it has no distinguished proper subset that carries the boundary values of holomorphic functions. **The boundary of the bicylinder has a distinguished boundary $T^2$**, the set where both coordinates have modulus $1$; the Cauchy formula of *Analysis on $\mathbb{C}^2$* integrates over this torus, and the other points of $\partial\Delta^2$ are not needed. The torus is the **Shilov boundary** of the bicylinder: the smallest closed set on which every continuous function holomorphic on the domain and continuous on the closure attains its maximum modulus. For the ball the Shilov boundary is the whole sphere.
 
@@ -213,9 +213,9 @@ which is positive definite on the complex tangent space of complex dimension $1$
 
 **Remark (there are infinitely many classes).** The failure is not a single exception. The **complex ellipsoids**
 $$
-E_m=\{z:\lvert z_1\rvert^2+\lvert z_2\rvert^{2m}<1\},\qquad m=1,2,3,\dots,
+E_m=\{Q:\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^{2m}<1\},\qquad m=1,2,3,\dots,
 $$
-are bounded, convex and simply connected. For $m=1$ the domain is the ball. For $m\ge2$ the Levi form at $(\pm1,0)$ vanishes to order $m-1$ in $\lvert z_2\rvert^2$, while the ball is strongly pseudoconvex there; the order of vanishing of the Levi form is a biholomorphic invariant of the smooth boundary point, so the domains $E_m$ are pairwise non-biholomorphic. **There are infinitely many biholomorphism classes of bounded simply connected domains in $\mathbb{C}^2$**, and no single model plays the role of the disc.
+are bounded, convex and simply connected. For $m=1$ the domain is the ball. For $m\ge2$ the Levi form at $(\pm1,0)$ vanishes to order $m-1$ in $\lvert Q_{\blacktriangledown}\rvert^2$, while the ball is strongly pseudoconvex there; the order of vanishing of the Levi form is a biholomorphic invariant of the smooth boundary point, so the domains $E_m$ are pairwise non-biholomorphic. **There are infinitely many biholomorphism classes of bounded simply connected domains in $\mathbb{C}^2$**, and no single model plays the role of the disc.
 
 **Remark (what replaces the Riemann map).** In one variable the disc is the universal model because the uniformisation theorem reduces every simply connected domain to it. **In two variables there is no uniformisation**: the classification of bounded simply connected domains up to biholomorphism is a hard problem, and the invariants are the automorphism group, the boundary geometry and the Bergman metric, not a single normal form. The domains of holomorphy of *Several Complex Variables* are the right class, and even among them the classification is open.
 
@@ -223,21 +223,21 @@ are bounded, convex and simply connected. For $m=1$ the domain is the ball. For 
 
 **A Reinhardt domain is invariant under the coordinatewise rotations of the torus $T^2$; the ball and the bicylinder are complete Reinhardt domains, and a complete Reinhardt domain is a domain of holomorphy exactly when its logarithmic image is convex.**
 
-**Definition.** A domain $D\subset\mathbb{C}^2$ is **Reinhardt** when $(e^{i\theta_1}z_1,e^{i\theta_2}z_2)\in D$ for every $z\in D$ and every $(\theta_1,\theta_2)\in\mathbb{R}^2$. It is **complete Reinhardt** when moreover $(\lambda_1z_1,\lambda_2z_2)\in D$ for every $z\in D$ and every $\lambda_1,\lambda_2$ with $\lvert\lambda_k\rvert\le1$.
+**Definition.** A domain $D\subset\mathbb{C}^2$ is **Reinhardt** when $(e^{i\theta_1}Q_{\blacktriangle},e^{i\theta_2}Q_{\blacktriangledown})\in D$ for every $Q\in D$ and every $(\theta_1,\theta_2)\in\mathbb{R}^2$. It is **complete Reinhardt** when moreover $(\lambda_1Q_{\blacktriangle},\lambda_2Q_{\blacktriangledown})\in D$ for every $Q\in D$ and every $\lambda_1,\lambda_2$ with $\lvert\lambda_k\rvert\le1$.
 
 **Proposition (the two models are complete Reinhardt).** The ball and the bicylinder are complete Reinhardt domains.
 
-*Proof.* Both are defined by conditions on $\lvert z_1\rvert$ and $\lvert z_2\rvert$ that are monotone in each modulus: $\lvert z_1\rvert^2+\lvert z_2\rvert^2<1$ and $\lvert z_k\rvert<1$. Multiplication by $e^{i\theta_k}$ leaves the moduli unchanged, and multiplication by $\lambda_k$ with $\lvert\lambda_k\rvert\le1$ decreases them.
+*Proof.* Both are defined by conditions on $\lvert Q_{\blacktriangle}\rvert$ and $\lvert Q_{\blacktriangledown}\rvert$ that are monotone in each modulus: $\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2<1$ and $\lvert Q_{\blacktriangle}\rvert<1$, $\lvert Q_{\blacktriangledown}\rvert<1$. Multiplication by $e^{i\theta_k}$ leaves the moduli unchanged, and multiplication by $\lambda_k$ with $\lvert\lambda_k\rvert\le1$ decreases them.
 
 **Definition.** The **logarithmic image** of a complete Reinhardt domain $D$ is
 $$
 \log D=\{(u_1,u_2)\in\mathbb{R}^2:(e^{u_1},e^{u_2})\in D\},
 $$
-with $u_k=\log\lvert z_k\rvert$; the domain is recovered from $\log D$ by rotation and by the completeness condition.
+with $u_1=\log\lvert Q_{\blacktriangle}\rvert$ and $u_2=\log\lvert Q_{\blacktriangledown}\rvert$; the domain is recovered from $\log D$ by rotation and by the completeness condition.
 
 **Theorem (the logarithmic image and holomorphy).** A complete Reinhardt domain $D\subset\mathbb{C}^2$ is a domain of holomorphy exactly when its logarithmic image is convex.
 
-*Proof.* This is the theorem of Hartogs on Reinhardt domains: the monomials $z^\alpha$ converge on the Reinhardt domain exactly when the logarithmic image is convex, and the convexity gives the holomorphic convexity that characterises domains of holomorphy (*Several Complex Variables*). The converse is the construction of a holomorphic function that blows up at a point outside the convex hull.
+*Proof.* This is the theorem of Hartogs on Reinhardt domains: the monomials $Q^\alpha$ converge on the Reinhardt domain exactly when the logarithmic image is convex, and the convexity gives the holomorphic convexity that characterises domains of holomorphy (*Several Complex Variables*). The converse is the construction of a holomorphic function that blows up at a point outside the convex hull.
 
 **Proposition (the two logarithmic images).** The logarithmic images are
 $$
@@ -252,7 +252,7 @@ Both are convex, as the theorem requires.
 
 **Remark (the Hartogs triangle).** A Reinhardt domain need not be complete: the **Hartogs triangle**
 $$
-H=\{z:\lvert z_1\rvert<\lvert z_2\rvert<1\}
+H=\{Q:\lvert Q_{\blacktriangle}\rvert<\lvert Q_{\blacktriangledown}\rvert<1\}
 $$
 is Reinhardt and is a domain of holomorphy, but it is not complete, because the point $(0,1/2)$ lies in $H$ while $(0,0)$ does not. **The completeness is the condition that the logarithmic image contains the whole negative orthant below each of its points**, and the triangle fails it at the origin.
 
@@ -268,17 +268,17 @@ The Riemann mapping theorem fails in $\mathbb{C}^2$: the ball and the bicylinder
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^2=\{z:\lVert z\rVert<1\}$ | the unit ball, a real four-dimensional domain |
+| $\mathbb{B}^2=\{Q:\lVert Q\rVert<1\}$ | the unit ball, a real four-dimensional domain |
 | $\Delta^2=\Delta\times\Delta$ | the unit bicylinder, or polydisc |
 | $T^2=\partial\Delta\times\partial\Delta$ | the distinguished boundary of the bicylinder |
 | $\mathrm{U}(2,1)$ | the matrices preserving $\operatorname{diag}(1,1,-1)$ |
 | $\mathrm{PU}(2,1)$ | the projective unitary group, $\operatorname{Aut}(\mathbb{B}^2)$ |
 | $\mathrm{PSL}_2(\mathbb{R})$ | the disc automorphism group, $\operatorname{Aut}(\Delta)$ |
-| $\varphi_a$ | the Möbius map of the ball sending $0$ to $a$ |
+| $\varphi_{Q_0}$ | the Möbius map of the ball sending $0$ to $Q_0$ |
 | $\mathcal{L}_r$ | the Levi form of the defining function $r$ |
 | strongly pseudoconvex | positive definite Levi form on the complex tangent space |
 | $\log D$ | the logarithmic image of a complete Reinhardt domain |
-| $E_m=\{\lvert z_1\rvert^2+\lvert z_2\rvert^{2m}<1\}$ | the complex ellipsoids |
+| $E_m=\{\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^{2m}<1\}$ | the complex ellipsoids |
 
 ## Further Reading
 

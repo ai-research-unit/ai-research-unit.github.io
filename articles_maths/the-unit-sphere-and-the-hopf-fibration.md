@@ -4,7 +4,7 @@
 
 This article treats the unit sphere $S^3\subset\mathbb{C}^2$ and the map
 $$
-h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2],
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(Q)=[Q_{\blacktriangle}:Q_{\blacktriangledown}],
 $$
 the **Hopf map**. The map is a fibre bundle with fibre the circle $S^1$, its base is the two-sphere, its total space is the three-sphere, and its class generates $\pi_3(S^2)\cong\mathbb{Z}$. The article computes the bundle, the exact sequence of homotopy groups, the linking number of two fibres, and the identification $S^3\cong\mathrm{SU}(2)$.
 
@@ -18,7 +18,7 @@ The article is the third of the topological articles of the category. The topolo
 
 **Definition.** The **unit sphere** is
 $$
-S^3=\{z=(z_1,z_2)\in\mathbb{C}^2:\lVert z\rVert=1\}.
+S^3=\{Q=(Q_{\blacktriangle},Q_{\blacktriangledown})\in\mathbb{C}^2:\lVert Q\rVert=1\}.
 $$
 
 **Proposition (the manifold and its invariants).** The sphere $S^3$ is a compact, connected, simply connected smooth manifold of dimension $3$, with
@@ -32,7 +32,7 @@ $$
 
 *Proof.* The sphere is closed and bounded in $\mathbb{C}^2\cong\mathbb{R}^4$, hence compact; it is connected for dimension at least $1$ and simply connected for dimension at least $2$ (*The Fundamental Group and Covering Spaces*); its homology is computed by the cell decomposition $S^3=e^0\cup e^3$ (*Simplicial and Singular Homology*); and the Hurewicz theorem gives $\pi_3(S^3)\cong H_3(S^3)=\mathbb{Z}$ because the sphere is simply connected (*Homotopy Groups and Fibrations*).
 
-**Proposition (the unitary action).** The unitary group $\mathrm{U}(2)$ acts transitively on $S^3$ by $A\cdot z=Az$, and the stabilizer of $e_1=(1,0)$ is the diagonal circle
+**Proposition (the unitary action).** The unitary group $\mathrm{U}(2)$ acts transitively on $S^3$ by $A\cdot Q=AQ$, and the stabilizer of $e_1=(1,0)$ is the diagonal circle
 $$
 \left\{\begin{pmatrix}1&0\\0&\lambda\end{pmatrix}:\lvert\lambda\rvert=1\right\}\cong\mathrm{U}(1).
 $$
@@ -61,22 +61,22 @@ The invariants are collected below.
 
 **Definition.** The **Hopf map** is
 $$
-h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2].
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(Q)=[Q_{\blacktriangle}:Q_{\blacktriangledown}].
 $$
 
-The map is well defined because $(z_1,z_2)\neq(0,0)$ on $S^3$, and it is smooth because it is the restriction of the smooth quotient map $\mathbb{C}^2\setminus\{0\}\to\mathbb{CP}^1$. The base is homeomorphic to $S^2$ by *The Subspaces of $\mathbb{C}^2$*, and the identification is written
+The map is well defined because $(Q_{\blacktriangle},Q_{\blacktriangledown})\neq(0,0)$ on $S^3$, and it is smooth because it is the restriction of the smooth quotient map $\mathbb{C}^2\setminus\{0\}\to\mathbb{CP}^1$. The base is homeomorphic to $S^2$ by *The Subspaces of $\mathbb{C}^2$*, and the identification is written
 $$
-\mathbb{CP}^1\longrightarrow S^2,\qquad [w_1:w_2]\longmapsto\frac{w_1}{w_2}\in\mathbb{C}\cup\{\infty\},
+\mathbb{CP}^1\longrightarrow S^2,\qquad [Q_{\blacktriangle}:Q_{\blacktriangledown}]\longmapsto\frac{Q_{\blacktriangle}}{Q_{\blacktriangledown}}\in\mathbb{C}\cup\{\infty\},
 $$
 with the value $\infty$ at $[1:0]$.
 
-**Proposition (the fibres).** For a unit vector $w=(w_1,w_2)\in S^3$, the fibre over $[w_1:w_2]$ is
+**Proposition (the fibres).** For a unit vector $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})\in S^3$, the fibre over $[Q_{\blacktriangle}:Q_{\blacktriangledown}]$ is
 $$
-h^{-1}([w_1:w_2])=\{\lambda w:\lambda\in\mathbb{C},\ \lvert\lambda\rvert=1\}\cong S^1.
+h^{-1}([Q_{\blacktriangle}:Q_{\blacktriangledown}])=\{\lambda Q:\lambda\in\mathbb{C},\ \lvert\lambda\rvert=1\}\cong S^1.
 $$
 The fibres are the orbits of the action of $\mathrm{U}(1)$ on $S^3$ by scalar multiplication, and two fibres are either equal or disjoint.
 
-*Proof.* If $h(z)=[w]$, then $z=\lambda w$ for some $\lambda\in\mathbb{C}^{\times}$; the condition $\lVert z\rVert=\lVert w\rVert=1$ gives $\lvert\lambda\rvert=1$. Conversely, every $\lambda w$ with $\lvert\lambda\rvert=1$ lies in $S^3$ and has the same class as $w$. The action is free: $\lambda w=w$ with $w\neq0$ forces $\lambda=1$.
+*Proof.* If $h(Q)=[Q_1]$, then $Q=\lambda Q_1$ for some $\lambda\in\mathbb{C}^{\times}$; the condition $\lVert Q\rVert=\lVert Q_1\rVert=1$ gives $\lvert\lambda\rvert=1$. Conversely, every $\lambda Q_1$ with $\lvert\lambda\rvert=1$ lies in $S^3$ and has the same class as $Q_1$. The action is free: $\lambda Q_1=Q_1$ with $Q_1\neq0$ forces $\lambda=1$.
 
 **Corollary (the quotient).** The map $h$ is the quotient map of the free action of $\mathrm{U}(1)$ on $S^3$, and
 $$
@@ -105,26 +105,26 @@ and these two circles lie in perpendicular complex coordinate planes of $\mathbb
 
 **Theorem (local trivializations).** Over the two standard charts
 $$
-U_2=\{[w_1:w_2]:w_2\neq0\},\qquad U_1=\{[w_1:w_2]:w_1\neq0\},
+U_2=\{[Q_{\blacktriangle}:Q_{\blacktriangledown}]:Q_{\blacktriangledown}\neq0\},\qquad U_1=\{[Q_{\blacktriangle}:Q_{\blacktriangledown}]:Q_{\blacktriangle}\neq0\},
 $$
-the map $h$ is trivial. On $U_2$, with $t=w_1/w_2$, the map
+the map $h$ is trivial. On $U_2$, with $t=Q_{\blacktriangle}/Q_{\blacktriangledown}$, the map
 $$
-\varphi_2:h^{-1}(U_2)\longrightarrow U_2\times S^1,\qquad \varphi_2(z)=\left([z_1:z_2],\frac{z_2}{\lvert z_2\rvert}\right),
+\varphi_2:h^{-1}(U_2)\longrightarrow U_2\times S^1,\qquad \varphi_2(Q)=\left([Q_{\blacktriangle}:Q_{\blacktriangledown}],\frac{Q_{\blacktriangledown}}{\lvert Q_{\blacktriangledown}\rvert}\right),
 $$
 is a homeomorphism with inverse
 $$
 (t,\lambda)\longmapsto\frac{\lambda(t,1)}{\sqrt{1+\lvert t\rvert^2}}.
 $$
-On $U_1$, with $s=w_2/w_1$, the analogous map uses $z_1/\lvert z_1\rvert$. On the overlap, the transition function is
+On $U_1$, with $s=Q_{\blacktriangledown}/Q_{\blacktriangle}$, the analogous map uses $Q_{\blacktriangle}/\lvert Q_{\blacktriangle}\rvert$. On the overlap, the transition function is
 $$
 g_{12}(t)=\frac{t}{\lvert t\rvert}\in\mathrm{U}(1).
 $$
 
-*Proof.* The inverse formula has norm $1$ and class $[t:1]$, and the two formulas are inverse by direct computation. The second component of $\varphi_2$ is unchanged when $z$ is multiplied by a unit scalar, so the trivialization is $\mathrm{U}(1)$-equivariant. The transition is computed by applying $\varphi_1$ to the point $\lambda(t,1)/\sqrt{1+\lvert t\rvert^2}$, whose first coordinate has modulus $\lvert t\rvert/\sqrt{1+\lvert t\rvert^2}$ and phase $\lambda t/\lvert t\rvert$.
+*Proof.* The inverse formula has norm $1$ and class $[t:1]$, and the two formulas are inverse by direct computation. The second component of $\varphi_2$ is unchanged when $Q$ is multiplied by a unit scalar, so the trivialization is $\mathrm{U}(1)$-equivariant. The transition is computed by applying $\varphi_1$ to the point $\lambda(t,1)/\sqrt{1+\lvert t\rvert^2}$, whose first coordinate has modulus $\lvert t\rvert/\sqrt{1+\lvert t\rvert^2}$ and phase $\lambda t/\lvert t\rvert$.
 
 **Corollary (the structure group).** The Hopf map is a principal $\mathrm{U}(1)$-bundle, with the action
 $$
-(z_1,z_2)\cdot\lambda=(\lambda z_1,\lambda z_2),\qquad \lvert\lambda\rvert=1.
+(Q_{\blacktriangle},Q_{\blacktriangledown})\cdot\lambda=(\lambda Q_{\blacktriangle},\lambda Q_{\blacktriangledown}),\qquad \lvert\lambda\rvert=1.
 $$
 
 *Proof.* The local trivializations are equivariant for the action, and the action is free and transitive on each fibre.
@@ -225,17 +225,17 @@ have linking number $1$.
 
 *Proof.* The set
 $$
-\Sigma=\{(z_1,z_2)\in S^3:\operatorname{Im}z_2=0,\ \operatorname{Re}z_2\ge0\}
+\Sigma=\{(Q_{\blacktriangle},Q_{\blacktriangledown})\in S^3:\operatorname{Im}Q_{\blacktriangledown}=0,\ \operatorname{Re}Q_{\blacktriangledown}\ge0\}
 $$
-is a closed disk: it is the graph of $z_2=\sqrt{1-\lvert z_1\rvert^2}$ over the closed unit disk in the $z_1$-plane. Its boundary is $C_1$. The circle $C_2$ meets $\Sigma$ exactly at the point $(0,1)$: a point of $C_2$ has $z_1=0$ and $z_2=e^{i\theta}$, and the conditions $\operatorname{Im}z_2=0$, $\operatorname{Re}z_2\ge0$ leave $\theta=0$. The intersection is transverse, since the tangent plane of $\Sigma$ at $(0,1)$ is $\{(v,0):v\in\mathbb{C}\}$ and the tangent line of $C_2$ is $\{(0,it):t\in\mathbb{R}\}$, which meet only at $0$. The intersection number is therefore $\pm1$, and with the orientations induced by increasing $\theta$ on both circles it is $+1$.
+is a closed disk: it is the graph of $Q_{\blacktriangledown}=\sqrt{1-\lvert Q_{\blacktriangle}\rvert^2}$ over the closed unit disk in the $Q_{\blacktriangle}$-plane. Its boundary is $C_1$. The circle $C_2$ meets $\Sigma$ exactly at the point $(0,1)$: a point of $C_2$ has $Q_{\blacktriangle}=0$ and $Q_{\blacktriangledown}=e^{i\theta}$, and the conditions $\operatorname{Im}Q_{\blacktriangledown}=0$, $\operatorname{Re}Q_{\blacktriangledown}\ge0$ leave $\theta=0$. The intersection is transverse, since the tangent plane of $\Sigma$ at $(0,1)$ is $\{(v,0):v\in\mathbb{C}\}$ and the tangent line of $C_2$ is $\{(0,it):t\in\mathbb{R}\}$, which meet only at $0$. The intersection number is therefore $\pm1$, and with the orientations induced by increasing $\theta$ on both circles it is $+1$.
 
 **Theorem (any two fibres).** Any two distinct fibres of $h$ have linking number $1$.
 
 *Proof.* The group $\mathrm{GL}_2(\mathbb{C})$ acts on $S^3$ by
 $$
-A\cdot z=\frac{Az}{\lVert Az\rVert},
+A\cdot Q=\frac{AQ}{\lVert AQ\rVert},
 $$
-and the action is smooth and sends fibres to fibres, because $h(A\cdot z)=[Az]=A\cdot[z]$. The group $\mathrm{GL}_2(\mathbb{C})$ is connected, so the action preserves the orientation of $S^3$; it covers the action of $\mathrm{PGL}_2(\mathbb{C})$ on $\mathbb{CP}^1$, which is $3$-transitive, hence $2$-transitive. Therefore any two distinct fibres are carried to $C_1$ and $C_2$ by an orientation-preserving homeomorphism of $S^3$, and the linking number is invariant under such a homeomorphism. The standard pair has linking number $1$, so every pair does.
+and the action is smooth and sends fibres to fibres, because $h(A\cdot Q)=[AQ]=A\cdot[Q]$. The group $\mathrm{GL}_2(\mathbb{C})$ is connected, so the action preserves the orientation of $S^3$; it covers the action of $\mathrm{PGL}_2(\mathbb{C})$ on $\mathbb{CP}^1$, which is $3$-transitive, hence $2$-transitive. Therefore any two distinct fibres are carried to $C_1$ and $C_2$ by an orientation-preserving homeomorphism of $S^3$, and the linking number is invariant under such a homeomorphism. The standard pair has linking number $1$, so every pair does.
 
 **Corollary (the Hopf invariant is the linking number).** The Hopf invariant of $h$ equals the linking number of two fibres, and both are $1$.
 
@@ -264,17 +264,17 @@ with values in the unit imaginary quaternions, which form a two-sphere. Its fibr
 
 *Proof.* For a unit quaternion $q$, the quaternion $qiq^{-1}$ is imaginary, because it is conjugate to $i$, and it has norm $1$; hence it lies in the unit imaginary quaternions. The map is surjective because every unit imaginary quaternion is conjugate to $i$. The fibre over $i$ is the set of unit quaternions commuting with $i$, which is the unit complex numbers.
 
-**Proposition (the homogeneous description).** The Hopf bundle is the quotient
+**Proposition (the homogeneous description).** In the quaternionic model the Hopf bundle is the quotient
 $$
 \mathrm{SU}(2)\longrightarrow\mathrm{SU}(2)/\mathrm{U}(1)\cong S^2
 $$
-by the left action of the diagonal circle
+by the right action of the diagonal circle
 $$
 \lambda\longmapsto\begin{pmatrix}\lambda&0\\0&\overline{\lambda}\end{pmatrix},\qquad \lvert\lambda\rvert=1.
 $$
-The left action of $\mathrm{SU}(2)$ by group multiplication is transitive and free, and the Hopf map is equivariant for it.
+The right action is free, its orbits are the fibres of $q\mapsto qiq^{-1}$, and the map is equivariant for the conjugation action of $\mathrm{SU}(2)$ on the base.
 
-*Proof.* Under the identification of the theorem, left multiplication by $\operatorname{diag}(\lambda,\overline{\lambda})$ sends $(\alpha,\beta)$ to $(\lambda\alpha,\lambda\beta)$, which is the scalar multiplication defining the fibres; since the circle is abelian, the same orbits are the orbits of the right action used in the local trivializations. The quotient is $\mathbb{CP}^1\cong S^2$. The left action of $\mathrm{SU}(2)$ on itself is transitive and free.
+*Proof.* The centraliser of $i$ in $\mathrm{SU}(2)$ is the diagonal circle, so the fibre of $q\mapsto qiq^{-1}$ over $i$ is this circle, and the fibre over $qiq^{-1}$ is the right coset $q\,\mathrm{U}(1)$. The right action is therefore free and its orbits are the fibres; the quotient is $\mathrm{SU}(2)/\mathrm{U}(1)\cong S^2$. The identity $(gq)i(gq)^{-1}=g(qiq^{-1})g^{-1}$ is the equivariance for the conjugation action.
 
 **Remark (the four Hopf fibrations).** The Hopf map is the complex member of a family of four fibrations, one for each normed division algebra.
 
@@ -289,7 +289,7 @@ The left action of $\mathrm{SU}(2)$ by group multiplication is transitive and fr
 
 ## Summary
 
-The unit sphere $S^3\subset\mathbb{C}^2$ is a compact, connected, simply connected three-manifold, with $H_3=\mathbb{Z}$ and $\pi_3=\mathbb{Z}$. The Hopf map $h(z_1,z_2)=[z_1:z_2]$ sends $S^3$ onto $\mathbb{CP}^1\cong S^2$, and its fibre over a point is the circle of unit multiples of a representative, so the fibres are the orbits of the free $\mathrm{U}(1)$ action by scalar multiplication. The map is a principal $\mathrm{U}(1)$-bundle, locally trivial over the two standard charts, with transition function $t/\lvert t\rvert$ of winding number $1$; it is the unit sphere bundle of the tautological line bundle, its first Chern class is a generator, and the bundle is not trivial because $S^3$ is simply connected and $S^2\times S^1$ is not.
+The unit sphere $S^3\subset\mathbb{C}^2$ is a compact, connected, simply connected three-manifold, with $H_3=\mathbb{Z}$ and $\pi_3=\mathbb{Z}$. The Hopf map $h(Q)=[Q_{\blacktriangle}:Q_{\blacktriangledown}]$ sends $S^3$ onto $\mathbb{CP}^1\cong S^2$, and its fibre over a point is the circle of unit multiples of a representative, so the fibres are the orbits of the free $\mathrm{U}(1)$ action by scalar multiplication. The map is a principal $\mathrm{U}(1)$-bundle, locally trivial over the two standard charts, with transition function $t/\lvert t\rvert$ of winding number $1$; it is the unit sphere bundle of the tautological line bundle, its first Chern class is a generator, and the bundle is not trivial because $S^3$ is simply connected and $S^2\times S^1$ is not.
 
 The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}$ and $\pi_3(S^2)=\mathbb{Z}$, the last generated by the Hopf map, whose Hopf invariant is $1$. The fibres are linked circles: the standard pair has linking number $1$, and the $\mathrm{GL}_2(\mathbb{C})$ action, which is orientation-preserving and $2$-transitive on the base, carries any pair of distinct fibres to the standard pair. The sphere is the Lie group $\mathrm{SU}(2)$ of unit quaternions, and in that model the Hopf map is $q\mapsto qiq^{-1}$, the quotient of $\mathrm{SU}(2)$ by the diagonal circle.
 
@@ -297,8 +297,8 @@ The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}
 
 | Symbol | Meaning |
 |---|---|
-| $S^3=\{z\in\mathbb{C}^2:\lVert z\rVert=1\}$ | the unit sphere |
-| $h(z_1,z_2)=[z_1:z_2]$ | the Hopf map $S^3\to\mathbb{CP}^1$ |
+| $S^3=\{Q\in\mathbb{C}^2:\lVert Q\rVert=1\}$ | the unit sphere |
+| $h(Q)=[Q_{\blacktriangle}:Q_{\blacktriangledown}]$ | the Hopf map $S^3\to\mathbb{CP}^1$ |
 | $C_1=\{(\lambda,0):\lvert\lambda\rvert=1\}$ | the fibre over $[1:0]$ |
 | $C_2=\{(0,\lambda):\lvert\lambda\rvert=1\}$ | the fibre over $[0:1]$ |
 | $\mathrm{U}(1)$ | the structure group, acting by scalar multiplication |
@@ -309,7 +309,7 @@ The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}
 
 ## Further Reading
 
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), the previous article, for the sphere as a topological space.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-the-complex-two-space.html), the earlier article, for the sphere as a topological space.
 - [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-complex-two-space.html), the previous article, for the Hopf map as the attaching map at infinity.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), for the projective line and the complex directions.
 - [Homotopy Groups and Fibrations](homotopy-groups-and-fibrations.html), for the long exact sequence, the Hopf invariant and the four Hopf fibrations.

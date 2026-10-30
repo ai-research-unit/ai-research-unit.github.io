@@ -10,7 +10,7 @@ This article develops the adjoint operator, the formula, the radical, the signat
 
 **Boundaries.** The Killing form of the algebra is *Biquaternion Lie Group and Exponential Structure*, §*The Killing Form*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace pairing is *$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Killing Form*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Adjoint Operator
 
@@ -44,7 +44,6 @@ $$
 \kappa_{\mathbb{C}}(X,Y)=2\operatorname{tr}(UV)
 =2\operatorname{tr}(XY)-\tfrac12\operatorname{tr}X\operatorname{tr}Y.
 $$
-$\square$
 
 **The coordinate form.**
 $$
@@ -72,7 +71,7 @@ $$
 $$
 in the complex normalization, and on the image it equals
 $$
-32\,\vec X\cdot\vec Y=4\kappa_{\mathbb{C}}(X,Y).
+-32\,\vec X\cdot\vec Y=4\kappa_{\mathbb{C}}(X,Y).
 $$
 The factor four is the contribution of the twelve transverse directions.
 
@@ -85,7 +84,7 @@ $$
 \operatorname{rad}\kappa=\mathbb{R}\mathrm I_4\oplus i\mathbb{R}\mathrm I_4.
 $$
 
-*Proof.* The coordinate form depends only on the vector parts, so every scalar matrix is in the radical. Conversely, if $\kappa(X,Y)=0$ for all $Y$, then $\vec X=0$, so $X$ is scalar. $\square$
+*Proof.* The coordinate form depends only on the vector parts, so every scalar matrix is in the radical. Conversely, if $\kappa(X,Y)=0$ for all $Y$, then $\vec X=0$, so $X$ is scalar.
 
 **The rank.** The complex form has rank three; the real form has rank six. The centre contributes two real radical directions.
 
@@ -127,7 +126,6 @@ $$
 =-\operatorname{tr}(\operatorname{ad}_Y[\operatorname{ad}_X,\operatorname{ad}_Z])
 =-\kappa(Y,[X,Z]).
 $$
-$\square$
 
 **The consequence.** The form is invariant under the adjoint action of the group, and it defines a symmetric invariant bilinear form on the Lie algebra. The trace form $4\langle\tilde X,\tilde Y\rangle$ is also invariant; the two differ by the centre and by a factor.
 

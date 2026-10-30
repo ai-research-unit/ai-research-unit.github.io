@@ -77,7 +77,7 @@ They are related by $J_k=-ig_k$. The bracket of the $J_k$ is the standard angula
 
 $$
 \exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(-i\theta\,\vec u\cdot\vec J),
+=\exp(i\theta\,\vec u\cdot\vec J),
 $$
 
 and the result is a unit real quaternion.
@@ -109,24 +109,24 @@ $$
 **Definition (spin).** Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec J)$ is self-adjoint. The **spin** of the carrier is
 
 $$
-j=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec J)\bigr),
+s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec J)\bigr),
 $$
 
-the maximum being independent of $\vec u$.
+the maximum being independent of $\vec u$. The spin is a real number in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector.
 
 **Proposition (independence of the axis).** The spectrum of $\rho(\vec u\cdot\vec J)$ does not depend on the unit vector $\vec u$.
 
 *Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec J)\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec J)\bigr)=\rho\bigl((R\vec u)\cdot\vec J\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
 
-**Theorem (the Casimir value and the dimension).** Let $(W,\rho)$ be an irreducible unitary carrier of spin $j$. Then
+**Theorem (the Casimir value and the dimension).** Let $(W,\rho)$ be an irreducible unitary carrier of spin $s$. Then
 
 $$
-\rho(C)=j(j+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2j+1,\qquad j\in\tfrac12\mathbb{Z}_{\ge0}.
+\rho(C)=s(s+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2s+1,\qquad s\in\tfrac12\mathbb{Z}_{\ge0}.
 $$
 
-*Proof.* Choose an eigenvector $v$ of $\rho(J_3)$ with the maximal eigenvalue $j$. Then $\rho(J_+)v=0$, since otherwise $\rho(J_+)$ would produce an eigenvector of weight $j+1$. Put $v_k=\rho(J_-)^kv$ and $m_k=j-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $J_+J_-=C-J_3^2+J_3$, one has $\rho(J_+J_-)v_k=(2j-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(J_+)v_{k+1}=(2j-k)(k+1)v_k$, so $k=2j$. Hence $v_0,\dots,v_{2j}$ are a basis and $\dim W=2j+1$. On $v_0$, $\rho(C)v_0=(j^2+2j)v_0=j(j+1)v_0$.
+*Proof.* Choose an eigenvector $v$ of $\rho(J_3)$ with the maximal eigenvalue $s$. Then $\rho(J_+)v=0$, since otherwise $\rho(J_+)$ would produce an eigenvector of weight $s+1$. Put $v_k=\rho(J_-)^kv$ and $m_k=s-k$. The span of the $v_k$ is invariant, so it is all of $W$. Since $J_+J_-=C-J_3^2+J_3$, one has $\rho(J_+J_-)v_k=(2s-k)(k+1)v_k$. If the string terminates, so that $v_{k+1}=0$ with $v_k\neq0$, then $0=\rho(J_+)v_{k+1}=(2s-k)(k+1)v_k$, so $k=2s$. Hence $v_0,\dots,v_{2s}$ are a basis and $\dim W=2s+1$. On $v_0$, $\rho(C)v_0=(s^2+2s)v_0=s(s+1)v_0$.
 
-**Remark.** The algebra sees $SU(2)$ and not $SO(3)$: $j$ ranges over the half-integers. The integer values are the ones on which the centre $\pm e_t$ of $G$ acts trivially, and they are the representations that descend to $SO(3)$.
+**Remark.** The algebra sees $SU(2)$ and not $SO(3)$: $s$ ranges over the half-integers. The integer values are the ones on which the centre $\pm e_t$ of $G$ acts trivially, and they are the representations that descend to $SO(3)$.
 
 ## The Ladder and the Classification
 
@@ -144,7 +144,7 @@ J_+v_k=\sqrt{(n-k)(k+1)}\,v_{k+1},\qquad
 J_-v_k=\sqrt{k(n-k+1)}\,v_{k-1},
 $$
 
-with $J_+v_n=0$ and $J_-v_0=0$. The spin is $j=n/2$ and the Casimir is $j(j+1)$.
+with $J_+v_n=0$ and $J_-v_0=0$. The spin is $s=n/2$ and the Casimir is $s(s+1)$.
 
 *Proof.* The preceding theorem gives existence and the dimension. The formulas are the standard ones, and they satisfy the brackets directly. Uniqueness follows because a highest-weight vector generates the module and its weight fixes $n$.
 
@@ -171,18 +171,18 @@ $$
 Then $\tilde\Pi_+$ is an idempotent of trace $1$ and rank one, and $S_+$ is a minimal left ideal, hence a simple module, of complex dimension $2$. A basis is
 
 $$
-s_+=\tilde\Pi_+,\qquad s_-=\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
+w_+=\tilde\Pi_+,\qquad w_-=\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
 and the action of the generators is
 
 $$
-J_3s_\pm=\pm\tfrac12 s_\pm,\qquad J_+s_+=0,\qquad J_-s_+=s_-,\qquad J_+s_-=s_+,\qquad J_-s_-=0.
+J_3w_\pm=\pm\tfrac12 w_\pm,\qquad J_+w_+=0,\qquad J_-w_+=w_-,\qquad J_+w_-=w_+,\qquad J_-w_-=0.
 $$
 
-**Proposition.** On $S_+$, $C=\tfrac34 e_t$ and $j=\tfrac12$.
+**Proposition.** On $S_+$, $C=\tfrac34 e_t$ and $s=\tfrac12$.
 
-*Proof.* The weights are $\pm\tfrac12$, so $j=\tfrac12$ and $C=j(j+1)=\tfrac34$; directly, $(J_1^2+J_2^2+J_3^2)s_+=\tfrac14(1+1+1)s_+$.
+*Proof.* The weights are $\pm\tfrac12$, so $s=\tfrac12$ and $C=s(s+1)=\tfrac34$; directly, $(J_1^2+J_2^2+J_3^2)w_+=\tfrac14(1+1+1)w_+$.
 
 **The second plane.** The idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is orthogonal to $\tilde\Pi_+$, and
 
@@ -213,7 +213,7 @@ $$
 
 *Proof.* $(\vec u\cdot\vec J)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
 
-The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $s_-$, which is nilpotent, $s_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
+The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
 
 **The double cover.** On $S_+$, $\exp(2\pi iJ_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{J_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
 
@@ -247,7 +247,7 @@ $$
 
 **Proposition.** On $Z$ the Casimir is $0$ and the spin is $0$; on $V$ the Casimir is $2$ and the spin is $1$.
 
-*Proof.* The weights of $V$ are $\pm1,0$, so $j=1$ and $C=j(j+1)=2$. Directly, $\sum_k\operatorname{ad}_{J_k}^2$ acts on $v_+$ as $2v_+$ and on $v_0$ as $2v_0$.
+*Proof.* The weights of $V$ are $\pm1,0$, so $s=1$ and $C=s(s+1)=2$. Directly, $\sum_k\operatorname{ad}_{J_k}^2$ acts on $v_+$ as $2v_+$ and on $v_0$ as $2v_0$.
 
 **Remark (the highest-weight vector is nilpotent).** The vector $v_+=\vec e_x+i\vec e_y$ is a highest-weight vector of the adjoint, and $v_+^2=0$ in the algebra. The highest-weight vector of the adjoint is a nilpotent element; the same vector is not null for the trace form, which is positive definite. The two notions of length, the product and the form, must be kept apart.
 
@@ -352,17 +352,17 @@ $$
 \mathcal{H}_l\otimes S\cong\mathcal{V}_{2l-1}\oplus\mathcal{V}_{2l+1},
 $$
 
-and for $l=0$ it is $\mathcal{V}_1$. The total spin is $j=l\pm\tfrac12$.
+and for $l=0$ it is $\mathcal{V}_1$. The total spin is $s_{\mathrm{tot}}=l\pm\tfrac12$.
 
 *Proof.* By the Clebsch–Gordan rule, $\mathcal{V}_{2l}\otimes\mathcal{V}_1=\mathcal{V}_{2l-1}\oplus\mathcal{V}_{2l+1}$ for $l\ge1$, and $\mathcal{V}_0\otimes\mathcal{V}_1=\mathcal{V}_1$.
 
-**Corollary (the spin–orbit eigenvalues).** On the summand of total spin $j$,
+**Corollary (the spin–orbit eigenvalues).** On the summand of total spin $s_{\mathrm{tot}}$,
 
 $$
-\vec L\cdot\vec S=\frac12\Bigl[j(j+1)-l(l+1)-\tfrac34\Bigr],
+\vec L\cdot\vec S=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
 $$
 
-that is, $+\tfrac{l}{2}$ for $j=l+\tfrac12$ and $-\tfrac{l+1}{2}$ for $j=l-\tfrac12$.
+that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$.
 
 *Proof.* Evaluate the Casimir expansion on the summand.
 
@@ -415,19 +415,19 @@ and the four descendants obtained by applying $\operatorname{ad}_{J_-}\otimes1+1
 
 ## Real Forms and the Rotation Subgroup
 
-The algebra is real, and its complexification by a central imaginary unit $\iota$, with $\iota^2=-e_t$, is
+The algebra is real, and its complexification by a central imaginary unit $j$, with $j^2=-e_t$, is
 
 $$
-\mathbb{B}[\iota]\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\iota,\qquad \chi^2=+e_t.
+\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=ij,\qquad \chi^2=+e_t.
 $$
 
-The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The unit $\iota$ is written $j$ in *Chirality: The Conjugate Pair*; the letter $j$ is reserved here for the spin.
+The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{B}[j]$, the same notation as in *Chirality: The Conjugate Pair*. The letter $j$ in $\mathbb{B}[j]$ is the central imaginary unit, an element of the algebra; the spin is the real number $s$.
 
 The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *Chirality: The Conjugate Pair*; nothing in the present article depends on them.
 
 ## Summary
 
-The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $J_k=\tfrac12 i\vec e_k$, related by $J_k=-ig_k$. The Casimir is $C=\sum J_k^2$; on an irreducible unitary carrier it is $j(j+1)$, the dimension is $2j+1$, and $j$ is the maximal weight.
+The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $J_k=\tfrac12 i\vec e_k$, related by $J_k=-ig_k$. The Casimir is $C=\sum J_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight.
 
 | Structure | Carrier | Spin | Dimension | Casimir |
 |---|---|---|---|---|
@@ -453,7 +453,7 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 | $g_k=-\tfrac12\vec e_k$ | The anti-Hermitian generators |
 | $J_k=\tfrac12 i\vec e_k$ | The Hermitian generators |
 | $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
-| $j$ | The spin, the maximal weight |
+| $s$ | The spin, the maximal weight |
 | $\mathcal{V}_n$ | The irreducible module of dimension $n+1$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis $\vec u$ |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents |

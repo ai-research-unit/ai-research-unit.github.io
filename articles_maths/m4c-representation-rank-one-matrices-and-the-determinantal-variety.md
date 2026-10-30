@@ -10,7 +10,7 @@ This article develops the factorisation, the two strata of the regular determina
 
 **Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Nilpotents*; the rank-one elements and the Peirce corners are *The Peirce Decomposition of the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Factorisation
 
@@ -24,7 +24,7 @@ u_1=(u,0),\quad v_1=(v,0),\quad u_2=(0,u),\quad v_2=(0,v).
 $$
 The pair $(u,v)$ is determined up to the reciprocal scaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$ with $\lambda\in\mathbb{C}^{\times}$.
 
-*Proof.* If $M$ is the double of $uv^{\mathsf T}$ with both vectors nonzero, its rank is twice the rank of $uv^{\mathsf T}$, hence two. Conversely, if the rank is two, the block form $M=\operatorname{diag}(A,A)$ has $\operatorname{rank}A=1$, so $A=uv^{\mathsf T}$, and the pair is unique up to reciprocal scaling by the $2\times2$ theorem. The decomposition into two rank-one matrices is the splitting of the two copies. $\square$
+*Proof.* If $M$ is the double of $uv^{\mathsf T}$ with both vectors nonzero, its rank is twice the rank of $uv^{\mathsf T}$, hence two. Conversely, if the rank is two, the block form $M=\operatorname{diag}(A,A)$ has $\operatorname{rank}A=1$, so $A=uv^{\mathsf T}$, and the pair is unique up to reciprocal scaling by the $2\times2$ theorem. The decomposition into two rank-one matrices is the splitting of the two copies.
 
 **The two invariants of the factorisation.**
 $$
@@ -61,7 +61,7 @@ Q_x=\tfrac{i}{2}(u_1v_2+u_2v_1),\qquad
 Q_y=\tfrac12(u_2v_1-u_1v_2),\qquad
 Q_z=\tfrac{i}{2}(u_1v_1-u_2v_2).
 $$
-The formulas are those of the $2\times2$ model, because the block $A$ is the $2\times2$ matrix of the element. The scalar part is half the contraction of the two vectors, and the three vector coefficients are the three contractions with the Pauli matrices. The factor $i$ is the same factor that makes $\mathsf M_4(\vec e_k)=-i\Sigma_k$.
+The formulas are those of the $2\times2$ model, because the block $A$ is the $2\times2$ matrix of the element. The scalar part is half the contraction of the two vectors, and the three vector coefficients are the three contractions with the Pauli matrices. The factor $i$ is the same factor that makes $\mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k$.
 
 **The scaling.** The reciprocal scaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$ leaves $uv^{\mathsf T}$ fixed and leaves every $Q_\mu$ fixed, because each formula is bilinear in the pair. The coefficients are therefore functions of the matrix, not of the chosen factorisation.
 

@@ -10,7 +10,7 @@ This article develops the matrix polar decomposition, its refinement by the dete
 
 **Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *$M_4(\mathbb{C})$ Model : The Sandwich*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Matrix Polar Decomposition
 
@@ -27,7 +27,7 @@ $$
 $$
 V^{\dagger}V=M^{\dagger}P^{-2}M=M^{\dagger}(MM^{\dagger})^{-1}M=\mathrm I_4,
 $$
-so $V$ is $*$-unitary. For uniqueness, $MM^{\dagger}=P^2=P'^2$ and the uniqueness of the positive square root give $P=P'$, hence $V=V'$. $\square$
+so $V$ is $*$-unitary. For uniqueness, $MM^{\dagger}=P^2=P'^2$ and the uniqueness of the positive square root give $P=P'$, hence $V=V'$.
 
 **The factors stay in the image.** Since $M=\mathsf{M}_4^{L}(\tilde Q)$, the product $MM^{\dagger}=\mathsf{M}_4^{L}(\tilde Q\tilde Q^{*})$ is the image of a Hermitian positive element. Its positive square root is a function of $\tilde Q\tilde Q^{*}$, hence lies in the image; the $*$-unitary factor is the product of two images. Therefore
 $$
@@ -72,7 +72,7 @@ P=(MM^{\dagger})^{1/2}
 $$
 with $N=\langle\tilde Q\rangle_{\natural}$ and $\lvert N\rvert=\lvert\det M\rvert^{1/2}$.
 
-*Check.* On the $a$-eigenspace the numerator is $a+\lvert N\rvert=a+\sqrt{ab}=\sqrt a(\sqrt a+\sqrt b)$, and the denominator is $\sqrt a+\sqrt b$; the quotient is $\sqrt a$. On the $b$-eigenspace it is $\sqrt b$. $\square$
+*Check.* On the $a$-eigenspace the numerator is $a+\lvert N\rvert=a+\sqrt{ab}=\sqrt a(\sqrt a+\sqrt b)$, and the denominator is $\sqrt a+\sqrt b$; the quotient is $\sqrt a$. On the $b$-eigenspace it is $\sqrt b$.
 
 **The $*$-unitary factor.** When $M$ is invertible,
 $$
@@ -170,7 +170,7 @@ $$
 \det V=\frac{N^2}{\lvert N\rvert^2}.
 $$
 
-*Proof.* The positive factor has positive real determinant, and the $*$-unitary factor has determinant of modulus one. The product is the determinant of $M$. For the regular matrix, $\det M=N^2$ and $\det P=(\lvert N\rvert)^2$. $\square$
+*Proof.* The positive factor has positive real determinant, and the $*$-unitary factor has determinant of modulus one. The product is the determinant of $M$. For the regular matrix, $\det M=N^2$ and $\det P=(\lvert N\rvert)^2$.
 
 **The phase.** The determinant of the $*$-unitary factor is a complex number of modulus one. It is the square of the phase of the norm, because the determinant is the square of the norm; equivalently it is the fourth power of the central phase $\zeta$.
 

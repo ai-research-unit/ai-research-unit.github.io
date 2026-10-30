@@ -12,7 +12,7 @@ The article treats the subspaces as sets and as points of a Grassmannian. It doe
 
 **A complex subspace of $\mathbb{C}^2$ has dimension $0$, $1$ or $2$, and the subspaces of dimension one are the points of the projective line.**
 
-**Definition.** A **complex subspace** is a subset $W\subset\mathbb{C}^2$ closed under addition and under multiplication by complex scalars. A **complex line** is a complex subspace of dimension $1$; a **complex hyperplane** is a complex subspace of dimension $1$ in the dual sense, that is the kernel of a nonzero complex-linear form.
+**Definition.** A **complex subspace** is a subset $W\subset\mathbb{C}^2$ closed under addition and under multiplication by complex scalars. A **complex line** is a complex subspace of dimension $1$; a **complex hyperplane** is a complex subspace of codimension one, that is the kernel of a nonzero complex-linear form.
 
 **Proposition (the three dimensions).** The complex subspaces are $\{0\}$, the complex lines $L=\mathbb{C}v$ with $v\neq0$, and $\mathbb{C}^2$.
 
@@ -22,11 +22,11 @@ The article treats the subspaces as sets and as points of a Grassmannian. It doe
 $$
 \mathbb{CP}^1=\{L\subset\mathbb{C}^2:\dim_{\mathbb{C}}L=1\}=\bigl(\mathbb{C}^2\setminus\{0\}\bigr)/\mathbb{C}^{\times},
 $$
-with homogeneous coordinates $[z_1:z_2]$, the class of $(z_1,z_2)$. The charts $z_2\neq0$ and $z_1\neq0$ identify $\mathbb{CP}^1$ with two copies of $\mathbb{C}$, glued by $t\mapsto 1/t$.
+with homogeneous coordinates $[Q_{\blacktriangle}:Q_{\blacktriangledown}]$, the class of $(Q_{\blacktriangle},Q_{\blacktriangledown})$. The charts $Q_{\blacktriangledown}\neq0$ and $Q_{\blacktriangle}\neq0$ identify $\mathbb{CP}^1$ with two copies of $\mathbb{C}$, glued by $t\mapsto 1/t$.
 
 **Proposition (the projective line is a sphere).** The space $\mathbb{CP}^1$ is homeomorphic to $S^2$, and its real dimension is $2$.
 
-*Proof.* The chart $z_2\neq0$ gives $[z_1:z_2]=[t:1]$ with $t=z_1/z_2$, and the chart $z_1\neq0$ gives $[1:s]$ with $s=z_2/z_1=1/t$; the two copies of $\mathbb{C}$ are glued by $t\mapsto 1/t$ on the punctured plane, which is the one-point compactification of $\mathbb{C}$, hence $S^2$. The real dimension is the complex dimension plus one, that is $2$.
+*Proof.* The chart $Q_{\blacktriangledown}\neq0$ gives $[Q_{\blacktriangle}:Q_{\blacktriangledown}]=[t:1]$ with $t=Q_{\blacktriangle}/Q_{\blacktriangledown}$, and the chart $Q_{\blacktriangle}\neq0$ gives $[1:s]$ with $s=Q_{\blacktriangledown}/Q_{\blacktriangle}=1/t$; the two copies of $\mathbb{C}$ are glued by $t\mapsto 1/t$ on the punctured plane, which is the one-point compactification of $\mathbb{C}$, hence $S^2$. The real dimension is twice the complex dimension, that is $2$.
 
 **Proposition (two lines span, two hyperplanes meet).** Two distinct complex lines span $\mathbb{C}^2$; two distinct complex hyperplanes meet only at the origin.
 
@@ -52,7 +52,7 @@ and the **flag variety** $\mathrm{Fl}(1,2;\mathbb{C}^2)$ is the set of such chai
 
 **The dual space has the same dimension, the annihilator reverses the inclusions, and a complex line corresponds to a hyperplane.**
 
-**Definition.** The **dual space** is $V^{*}=\operatorname{Hom}_{\mathbb{C}}(V,\mathbb{C})$, with dual basis $\ell^{1},\ell^{2}$ defined by $\ell^{k}(z)=z_k$. The **annihilator** of a subspace $W$ is
+**Definition.** The **dual space** is $V^{*}=\operatorname{Hom}_{\mathbb{C}}(V,\mathbb{C})$, with dual basis $\ell^{1},\ell^{2}$ defined by $\ell^{1}(Q)=Q_{\blacktriangle}$ and $\ell^{2}(Q)=Q_{\blacktriangledown}$. The **annihilator** of a subspace $W$ is
 $$
 W^{\circ}=\{\ell\in V^{*}:\ell(w)=0\text{ for all }w\in W\}.
 $$
@@ -109,23 +109,23 @@ The real subspaces are collected below. The two middle rows are the content of t
 
 ## The Isotropic Lines of $B$
 
-**The isotropic cone of $B$ is the union of two complex lines; the two lines are real $2$-planes whose links in the unit sphere are two linked circles, and the cone has no real point outside the origin.**
+**The isotropic cone of $B$ is the union of two complex lines; the two lines are real $2$-planes whose links in the unit sphere are two linked circles, and the only point of the cone with real coordinates is the origin.**
 
-**Theorem (the cone is two lines).** The set $\{z:B(z,z)=0\}$ is $L_+\cup L_-$, where
+**Theorem (the cone is two lines).** The set $\{Q:B(Q,Q)=0\}$ is $L_+\cup L_-$, where
 $$
-L_+=\{z_1=iz_2\},\qquad L_-=\{z_1=-iz_2\},
+L_+=\{Q:Q_{\blacktriangle}=iQ_{\blacktriangledown}\},\qquad L_-=\{Q:Q_{\blacktriangle}=-iQ_{\blacktriangledown}\},
 $$
 and the two lines meet only at the origin.
 
-*Proof.* This is the theorem of *The Three Canonical Forms on $\mathbb{C}^2$*: $B(z,z)=(z_1+iz_2)(z_1-iz_2)$ and $\mathbb{C}$ is a domain.
+*Proof.* This is the theorem of *The Three Canonical Forms on $\mathbb{C}^2$*: $B(Q,Q)=(Q_{\blacktriangle}+iQ_{\blacktriangledown})(Q_{\blacktriangle}-iQ_{\blacktriangledown})$ and $\mathbb{C}$ is a domain.
 
-**Proposition (the real picture).** The complex cone $B=0$ has no real point except the origin. Its two components are real $2$-planes, and each meets the unit sphere $S^3$ in a great circle; the two circles are disjoint.
+**Proposition (the real picture).** The complex cone $B=0$ has no point with real coordinates except the origin. Its two components are real $2$-planes, and each meets the unit sphere $S^3$ in a great circle; the two circles are disjoint.
 
-*Proof.* If $z\in\mathbb{R}^4$ and $B(z,z)=0$, then $z_1^2+z_2^2=0$ with $z_1,z_2$ real, hence $z_1=z_2=0$. Each line $L_\pm$ is a real $2$-plane through the origin, and its intersection with $S^3$ is a great circle. The two lines meet only at the origin, so the two circles are disjoint.
+*Proof.* If $Q$ has real coordinates and $B(Q,Q)=0$, then $Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0$ with both coordinates real, hence $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$. Each line $L_\pm$ is a real $2$-plane through the origin, and its intersection with $S^3$ is a great circle. The two lines meet only at the origin, so the two circles are disjoint.
 
 **Remark (the two circles are linked).** The circles $L_+\cap S^3$ and $L_-\cap S^3$ are two fibres of the Hopf fibration, over the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. **Two distinct fibres of the Hopf fibration have linking number $1$**, so the two circles are linked despite being disjoint (*The Unit Sphere and the Hopf Fibration*).
 
-**Remark (the real and imaginary parts are two quadrics).** The equation $B(z,z)=0$ is one complex equation and therefore two real equations, $\operatorname{Re}B(z,z)=0$ and $\operatorname{Im}B(z,z)=0$. Each defines a real quadric of signature $(2,2)$, a cone over a torus in $S^3$. **Their intersection is the isotropic cone $B=0$, the union of the two complex lines $L_+\cup L_-$**, which meets $S^3$ in the two linked circles above. The complex cone is not the zero set of a single real quadratic form: it is the intersection of the two real cones, not their union.
+**Remark (the real and imaginary parts are two quadrics).** The equation $B(Q,Q)=0$ is one complex equation and therefore two real equations, $\operatorname{Re}B(Q,Q)=0$ and $\operatorname{Im}B(Q,Q)=0$. Each defines a real quadric of signature $(2,2)$, a cone over a torus in $S^3$. **Their intersection is the isotropic cone $B=0$, the union of the two complex lines $L_+\cup L_-$**, which meets $S^3$ in the two linked circles above. The complex cone is not the zero set of a single real quadratic form: it is the intersection of the two real cones, not their union.
 
 **Remark (the image in $\mathbb{CP}^1$).** The projectivisation of the cone is the set of its complex lines, that is the two points
 $$
@@ -133,7 +133,7 @@ $$
 $$
 of $\mathbb{CP}^1$. **The quadric $B=0$ meets the line at infinity in these two points**, and the projective picture of the cone is a pair of points, not a curve.
 
-**Remark (the comparison with the split-complex null quadric).** In the split-complex plane the null quadric $x^2-y^2=0$ is the union of the two real lines $x=\pm y$. **The complex cone is the same phenomenon one complex dimension higher**: the two real lines become two complex lines, each of real dimension $2$, and the real points of the complex cone collapse to the origin because the two lines are not defined over $\mathbb{R}$. The split-complex picture is *Split-Complex Null Quadric and Projective Geometry*.
+**Remark (the comparison with the split-complex null quadric).** In the split-complex plane the null quadric $x^2-y^2=0$ is the union of the two real lines $x=\pm y$. **The complex cone is the same phenomenon one complex dimension higher**: the two real lines become two complex lines, each of real dimension $2$, and the points of the complex cone with real coordinates collapse to the origin because the two lines are not defined over $\mathbb{R}$. The split-complex picture is *Split-Complex Null Quadric and Projective Geometry*.
 
 ## The Lagrangian Planes
 
@@ -145,7 +145,7 @@ of $\mathbb{CP}^1$. **The quadric $B=0$ meets the line at infinity in these two 
 
 *Proof.* The complex dimension is $2$, so a Lagrangian complex subspace has complex dimension $1$, and every complex line is isotropic because $\omega$ is alternating and $\mathbb{C}$-bilinear. The classification of the isotropic subspaces is the theorem of *The Three Canonical Forms on $\mathbb{C}^2$*.
 
-**Definition.** The **Kähler form** is $\Omega=-\operatorname{Im}H=\sum_k dx_k\wedge dy_k$, a real symplectic form on $\mathbb{R}^4$.
+**Definition.** The **Kähler form** is $\Omega=-\operatorname{Im}H=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$, a real symplectic form on $\mathbb{R}^4$.
 
 **Theorem ($\Omega$-Lagrangian planes).** A real $2$-plane $W$ is Lagrangian for $\Omega$ exactly when $\Omega|_{W}=0$; every such plane is totally real; and the set of them is a $3$-parameter family, the homogeneous space $\mathrm{U}(2)/\mathrm{O}(2)$.
 
@@ -195,21 +195,21 @@ The dimensions are collected below. The complex Grassmannian of complex dimensio
 
 The complex subspaces of $\mathbb{C}^2$ are the origin, the complex lines and the whole space; the lines form $\mathbb{CP}^1\cong S^2$, and a flag $0\subset L\subset\mathbb{C}^2$ is determined by its line. The dual space has dimension $2$, the annihilator satisfies $\dim W+\dim W^{\circ}=2$, and it exchanges lines and hyperplanes; there is no canonical isomorphism $V\cong V^{*}$ without a bilinear form.
 
-The real subspaces have dimensions $0$ to $4$. A real $2$-plane is either a complex line or a totally real plane, according as $\dim(W\cap JW)$ is $2$ or $0$; a real $3$-plane always contains a complex line and is never totally real; a real line is always totally real. The isotropic cone of $B$ is the union of the two complex lines $z_1=\pm iz_2$, which meet only at the origin; it has no real point except the origin, its two components meet $S^3$ in two linked great circles, and its projectivisation is the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. The Lagrangian subspaces are the complex lines for $\omega$, forming $\mathbb{CP}^1$, and the $\Omega$-Lagrangian planes, the $3$-parameter family $\mathrm{U}(2)/\mathrm{O}(2)$ of totally real planes, for $\Omega$; no plane is Lagrangian for both. The Grassmannians are $\mathrm{Gr}_0$ a point, $\mathrm{Gr}_1=\mathbb{CP}^1$, $\mathrm{Gr}_2$ a point in the complex case, and $\mathbb{RP}^3$, the Klein quadric and $\mathbb{RP}^3$ in the real case.
+The real subspaces have dimensions $0$ to $4$. A real $2$-plane is either a complex line or a totally real plane, according as $\dim(W\cap JW)$ is $2$ or $0$; a real $3$-plane always contains a complex line and is never totally real; a real line is always totally real. The isotropic cone of $B$ is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$, which meet only at the origin; its only point with real coordinates is the origin, its two components meet $S^3$ in two linked great circles, and its projectivisation is the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. The Lagrangian subspaces are the complex lines for $\omega$, forming $\mathbb{CP}^1$, and the $\Omega$-Lagrangian planes, the $3$-parameter family $\mathrm{U}(2)/\mathrm{O}(2)$ of totally real planes, for $\Omega$; no plane is Lagrangian for both. The Grassmannians are $\mathrm{Gr}_0$ a point, $\mathrm{Gr}_1=\mathbb{CP}^1$, $\mathrm{Gr}_2$ a point in the complex case, and $\mathbb{RP}^3$, the Klein quadric and $\mathbb{RP}^3$ in the real case.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{CP}^1$ | the projective line, the set of complex lines of $\mathbb{C}^2$, homeomorphic to $S^2$ |
-| $[z_1:z_2]$ | the homogeneous coordinates of a complex line |
+| $[Q_{\blacktriangle}:Q_{\blacktriangledown}]$ | the homogeneous coordinates of a complex line |
 | $\mathrm{Fl}(1,2;\mathbb{C}^2)$ | the flag variety $\{0\subset L\subset\mathbb{C}^2\}$, identified with $\mathbb{CP}^1$ |
 | $V^{*}$ | the dual space, with dual basis $\ell^{1},\ell^{2}$ |
 | $W^{\circ}$ | the annihilator of $W$, of dimension $2-\dim W$ |
 | $JW$ | the image of $W$ under the complex structure |
 | totally real | $W\cap JW=\{0\}$ |
-| $L_\pm=\{z_1=\pm iz_2\}$ | the two isotropic lines of $B$ |
-| $\Omega=\sum_k dx_k\wedge dy_k$ | the Kähler form |
+| $L_\pm=\{Q:Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}\}$ | the two isotropic lines of $B$ |
+| $\Omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$ | the Kähler form |
 | $\mathrm{Gr}_k(F^n)$ | the Grassmannian of $k$-subspaces of $F^n$ |
 | $\Lambda_2=\mathrm{U}(2)/\mathrm{O}(2)$ | the Lagrangian Grassmannian of $\Omega$, of dimension $3$ |
 

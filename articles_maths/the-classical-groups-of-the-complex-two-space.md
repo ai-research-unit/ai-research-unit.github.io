@@ -26,9 +26,9 @@ Sp(2,\mathbb{C})&=\{A\in GL_2(\mathbb{C}):A^{T}\Omega A=\Omega\},
 $$
 where $\Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
 
-**Proposition (the defining forms).** The group $U(2)$ is the stabiliser of the Hermitian form $H(z,w)=z_1\overline{w_1}+z_2\overline{w_2}$; the group $O(2,\mathbb{C})$ is the stabiliser of the bilinear form $B(z,w)=z_1w_1+z_2w_2$; the group $Sp(2,\mathbb{C})$ is the stabiliser of the symplectic form $\omega$; and $SL_2(\mathbb{C})$ is the kernel of the determinant.
+**Proposition (the defining forms).** The group $U(2)$ is the stabiliser of the Hermitian form $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$; the group $O(2,\mathbb{C})$ is the stabiliser of the bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$; the group $Sp(2,\mathbb{C})$ is the stabiliser of the symplectic form $\omega$; and $SL_2(\mathbb{C})$ is the kernel of the determinant.
 
-*Proof.* The identities $H(Az,Aw)=H(z,w)$, $B(Az,Aw)=B(z,w)$ and $\omega(Az,Aw)=\omega(z,w)$ are exactly the matrix equations $A^*A=I$, $A^TA=I$ and $A^T\Omega A=\Omega$. The determinant is a homomorphism $GL_2(\mathbb{C})\to\mathbb{C}^*$ with kernel $SL_2(\mathbb{C})$.
+*Proof.* The identities $H(AQ_1,AQ_2)=H(Q_1,Q_2)$, $B(AQ_1,AQ_2)=B(Q_1,Q_2)$ and $\omega(AQ_1,AQ_2)=\omega(Q_1,Q_2)$ are exactly the matrix equations $A^*A=I$, $A^TA=I$ and $A^T\Omega A=\Omega$. The determinant is a homomorphism $GL_2(\mathbb{C})\to\mathbb{C}^*$ with kernel $SL_2(\mathbb{C})$.
 
 **Proposition (the symplectic group is special linear).** In complex dimension two,
 $$
@@ -126,7 +126,7 @@ $$
 
 ## The Actions on $S^3$ and $\mathbb{CP}^1$
 
-**The unitary groups act transitively on the sphere and on the projective line; the complex groups act transitively on the projective line and on the sphere, but not by isometries; the orthogonal group preserves the two isotropic points of the projective line.**
+**The unitary groups act transitively on the sphere and on the projective line; the complex groups act transitively on the projective line, and on the nonzero vectors of $\mathbb{C}^2$, but not by isometries; the orthogonal group preserves the two isotropic points of the projective line.**
 
 **Proposition (the action on $S^3$).** The groups $U(2)$ and $SU(2)$ act transitively on $S^3$. The stabiliser of a point in $U(2)$ is a circle $U(1)$, so $S^3=U(2)/U(1)$; the stabiliser in $SU(2)$ is trivial, so $SU(2)\to S^3$ is a diffeomorphism.
 
@@ -140,7 +140,7 @@ $$
 $$
 z\longmapsto\frac{az+b}{cz+d},\qquad ad-bc\neq0.
 $$
-**The group is sharply $3$-transitive**: it sends any three distinct points to any three distinct points, and the stabiliser of a point is the Borel subgroup of upper triangular matrices. The subgroup $PU(2)\cong SO(3)$ is the group of the round metric of $S^2=\mathbb{CP}^1$.
+**The group is sharply $3$-transitive**: any three distinct points are sent to any three distinct points by a unique element, and the stabiliser of a point is the Borel subgroup of upper triangular matrices. The subgroup $PU(2)\cong SO(3)$ is the group of the round metric of $S^2=\mathbb{CP}^1$.
 
 **Remark (the orthogonal group and the isotropic points).** The group $O(2,\mathbb{C})$ preserves the bilinear form $B$, hence preserves the two isotropic points $[\pm i:1]$ of *The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$*. **It acts on $\mathbb{CP}^1$ by permuting the two points and preserving the pair**, so its image in $PGL_2(\mathbb{C})$ is the normaliser of the diagonal torus, of dimension $1$; it does not act transitively.
 
@@ -180,7 +180,7 @@ $$
 U(2)\cap SL_2(\mathbb{C})=U(2)\cap Sp(2,\mathbb{C})=SU(2),\qquad
 U(2)\cap O(2,\mathbb{C})=O(2),
 $$
-with $SU(2)\cong S^3$ as the common compact core. The groups act transitively on $S^3$ and on $\mathbb{CP}^1$ according to their kernels, the projective quotients are $PGL_2\cong PSL_2$ and $PU(2)\cong PSU(2)\cong SO(3)$, and the polar and Iwasawa decompositions exhibit the compact and the solvable directions.
+with $SU(2)\cong S^3$ as the common compact core. The unitary groups act transitively on $S^3$, and the groups listed act transitively on $\mathbb{CP}^1$ according to their kernels; the projective quotients are $PGL_2\cong PSL_2$ and $PU(2)\cong PSU(2)\cong SO(3)$, and the polar and Iwasawa decompositions exhibit the compact and the solvable directions.
 
 ## Summary of Notation
 

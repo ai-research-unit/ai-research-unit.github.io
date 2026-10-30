@@ -64,7 +64,7 @@ and Euler characteristic $2$. Its homotopy groups begin with $\pi_1(S^4)=\pi_2(S
 
 *Proof.* The sphere is the boundary of the closed ball of $\mathbb{R}^5$, hence compact; it is connected and simply connected for dimension at least $2$; its cell decomposition $S^4=e^0\cup e^4$ gives the homology; and the low homotopy groups vanish because $S^4$ is $3$-connected (*Homotopy Groups and Fibrations*).
 
-**Remark (the point at infinity).** In $S^4$ all directions of escape are identified: every sequence with $\lVert z_n\rVert\to\infty$, whatever the angular behaviour, converges to the same point $\infty$. **The one-point compactification is direction-blind.** This is exactly what the projective compactification refines.
+**Remark (the point at infinity).** In $S^4$ all directions of escape are identified: every sequence with $\lVert Q_n\rVert\to\infty$, whatever the angular behaviour, converges to the same point $\infty$. **The one-point compactification is direction-blind.** This is exactly what the projective compactification refines.
 
 **Remark (no complex structure).** The sphere $S^4$ admits no almost complex structure, so the one-point compactification cannot be made a complex manifold compatible with $\mathbb{C}^2$. The obstruction is read on the Chern classes: a closed almost complex $4$-manifold satisfies $c_1^2=2\chi+3\sigma$, which for $S^4$ gives $4$, while $H^2(S^4;\mathbb{Z})=0$ forces $c_1=0$ and $c_1^2=0$ (*Characteristic Classes*). **The one-point compactification is the compactification of the real space, not of the complex one.**
 
@@ -80,7 +80,7 @@ with homogeneous coordinates $[Z_0:Z_1:Z_2]$, the class of $(Z_0,Z_1,Z_2)$.
 
 **Proposition (the affine chart).** The map
 $$
-\mathbb{C}^2\longrightarrow\mathbb{CP}^2,\qquad(z_1,z_2)\longmapsto[1:z_1:z_2]
+\mathbb{C}^2\longrightarrow\mathbb{CP}^2,\qquad(Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto[1:Q_{\blacktriangle}:Q_{\blacktriangledown}]
 $$
 is a homeomorphism onto the open set $U_0=\{Z_0\neq0\}$, whose complement is the **line at infinity**
 $$
@@ -100,11 +100,11 @@ Hence $\mathbb{CP}^2=\mathbb{C}^2\sqcup\mathbb{CP}^1$ as a set, with $\mathbb{C}
 
 **Theorem (the attaching map is the Hopf map).** The projective compactification is obtained from the closed ball by attaching its boundary sphere $S^3$ to $\mathbb{CP}^1$ along the Hopf map
 $$
-h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2].
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(Q_{\blacktriangle},Q_{\blacktriangledown})=[Q_{\blacktriangle}:Q_{\blacktriangledown}].
 $$
-Equivalently, $\mathbb{CP}^2$ is the quotient of the disjoint union $\overline{B}^4\sqcup\mathbb{CP}^1$ that identifies each boundary point $z\in S^3$ with $h(z)$.
+Equivalently, $\mathbb{CP}^2$ is the quotient of the disjoint union $\overline{B}^4\sqcup\mathbb{CP}^1$ that identifies each boundary point $Q\in S^3$ with $h(Q)$.
 
-*Proof.* The open ball is $\mathbb{C}^2$, the boundary is $S^3$, and the inclusion $\mathbb{C}^2\to\mathbb{CP}^2$ has the complement $L_\infty=\mathbb{CP}^1$. A sequence $z_n\in\mathbb{C}^2$ with $\lVert z_n\rVert\to\infty$ converges in $\mathbb{CP}^2$ to $[0:w]$ exactly when the classes $[z_n]\in\mathbb{CP}^1$ converge to $[0:w]$, that is when the directions $z_n/\lVert z_n\rVert$ approach the fibre of $h$ over $[0:w]$. Hence the boundary is attached by $h$.
+*Proof.* The open ball is $\mathbb{C}^2$, the boundary is $S^3$, and the inclusion $\mathbb{C}^2\to\mathbb{CP}^2$ has the complement $L_\infty=\mathbb{CP}^1$. A sequence $Q_n\in\mathbb{C}^2$ with $\lVert Q_n\rVert\to\infty$ converges in $\mathbb{CP}^2$ to $[0:w]$ exactly when the classes $[Q_n]\in\mathbb{CP}^1$ converge to $[0:w]$, that is when the directions $Q_n/\lVert Q_n\rVert$ approach the fibre of $h$ over $[0:w]$. Hence the boundary is attached by $h$.
 
 **Remark (the two boundaries).** The closed ball keeps the real directions $S^3$; the projective compactification collapses each circle of real directions inside a complex line to the single complex direction, which is a point of $\mathbb{CP}^1=S^2$. **The Hopf map is exactly the map from real directions to complex directions**, and it is the attaching map of the projective compactification. Its fibres are the circles of real directions that differ by a complex scalar.
 
@@ -176,7 +176,7 @@ The two decompositions are compared below.
 
 Each point $[0:Z_1:Z_2]$ of $L_\infty$ is the complex line $\mathbb{C}(Z_1,Z_2)\subset\mathbb{C}^2$, that is a complex direction. The affine line
 $$
-a z_1+b z_2=c,\qquad (a,b)\neq(0,0),
+a Q_{\blacktriangle}+b Q_{\blacktriangledown}=c,\qquad (a,b)\neq(0,0),
 $$
 has closure
 $$
@@ -184,7 +184,7 @@ aZ_1+bZ_2=cZ_0
 $$
 in $\mathbb{CP}^2$, and its point at infinity is $[0:b:-a]$, the direction of the line. Two affine lines are parallel exactly when their points at infinity coincide, so **parallel lines meet at infinity, and every two distinct projective lines meet in exactly one point.**
 
-**Proposition (directions: real against complex).** The set of real rays of $\mathbb{C}^2$ is $S^3$; the set of complex lines is $\mathbb{CP}^1=S^2$; and the map between them is the Hopf map $h(z)=[z_1:z_2]$. Its fibre over a complex line is the circle of real rays contained in that line.
+**Proposition (directions: real against complex).** The set of real rays of $\mathbb{C}^2$ is $S^3$; the set of complex lines is $\mathbb{CP}^1=S^2$; and the map between them is the Hopf map $h(Q)=[Q_{\blacktriangle}:Q_{\blacktriangledown}]$. Its fibre over a complex line is the circle of real rays contained in that line.
 
 *Proof.* A real ray is a point of $S^3$. A complex line is a point of $\mathbb{CP}^1$. The map $h$ sends a real ray to the complex line it spans, and the fibre is the set of real rays in that complex line, a circle.
 
@@ -210,7 +210,7 @@ $$
 $$
 that collapses the line at infinity to the point at infinity. It does not extend to a continuous map $S^4\to\mathbb{CP}^2$.
 
-*Proof.* Define $\pi([1:z_1:z_2])=(z_1,z_2)$ and $\pi([0:Z_1:Z_2])=\infty$. On the affine chart $\pi$ is the identity, hence continuous. At a point of $L_\infty$, a sequence $[1:z_1^n:z_2^n]$ converging to $[0:Z_1:Z_2]$ has $\lVert(z_1^n,z_2^n)\rVert\to\infty$, so $\pi$ sends the sequence to $\infty$; hence $\pi$ is continuous. For the second statement, suppose $F:S^4\to\mathbb{CP}^2$ extends the identity. The sequences $(n,0)$ and $(0,n)$ in $\mathbb{C}^2$ both tend to $\infty$ in $S^4$, so
+*Proof.* Define $\pi([1:Q_{\blacktriangle}:Q_{\blacktriangledown}])=(Q_{\blacktriangle},Q_{\blacktriangledown})$ and $\pi([0:Z_1:Z_2])=\infty$. On the affine chart $\pi$ is the identity, hence continuous. At a point of $L_\infty$, a sequence $[1:Q_{\blacktriangle}^n:Q_{\blacktriangledown}^n]$ converging to $[0:Z_1:Z_2]$ has $\lVert(Q_{\blacktriangle}^n,Q_{\blacktriangledown}^n)\rVert\to\infty$, so $\pi$ sends the sequence to $\infty$; hence $\pi$ is continuous. For the second statement, suppose $F:S^4\to\mathbb{CP}^2$ extends the identity. The sequences $(n,0)$ and $(0,n)$ in $\mathbb{C}^2$ both tend to $\infty$ in $S^4$, so
 $$
 F(\infty)=\lim_{n\to\infty}[1:n:0]=[0:1:0],\qquad F(\infty)=\lim_{n\to\infty}[1:0:n]=[0:0:1],
 $$

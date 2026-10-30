@@ -16,7 +16,7 @@ The projectors are $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$.
 
 **Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Spectral Projectors
 
@@ -41,7 +41,7 @@ $$
 $$
 M=Q_t\mathrm I_4+iB\,\mathsf{M}_4^{L}(\vec\Xi),
 $$
-which exhibits $M$ as a polynomial in $\mathsf{M}_4^{L}(\vec\Xi)$. $\square$
+which exhibits $M$ as a polynomial in $\mathsf{M}_4^{L}(\vec\Xi)$.
 
 **Not Hermitian in general.** For a general complex element the projectors are not Hermitian: $\rho_\pm^{\dagger}$ is the projector of the conjugate direction. They are Hermitian exactly when $\vec\Xi$ is Hermitian, in particular when the element lies in the Hermitian or the anti-Hermitian subspace.
 
@@ -63,7 +63,6 @@ $$
 =\tfrac12(\lambda_++\lambda_-)\mathrm I_4+\tfrac12(\lambda_+-\lambda_-)\mathsf{M}_4^{L}(\vec\Xi)
 =Q_t\mathrm I_4+iB\,\mathsf{M}_4^{L}(\vec\Xi)=M.
 $$
-$\square$
 
 **The invariants.** Taking the trace and the determinant,
 $$
@@ -106,16 +105,17 @@ N_+N_-=\rho_-,\qquad
 \rho_-N_+=N_+=N_+\rho_+.
 $$
 
-*Proof.* Apply $\mathsf{M}_4^{L}$ to the Peirce relations of the algebra. The rank is two because in the Peirce basis the matrix is the doubled off-diagonal unit $\operatorname{diag}(E_{12},E_{12})$ or $\operatorname{diag}(E_{21},E_{21})$. $\square$
+*Proof.* Apply $\mathsf{M}_4^{L}$ to the Peirce relations of the algebra. The rank is two because in the Peirce basis the matrix is the doubled off-diagonal unit $\operatorname{diag}(E_{12},E_{12})$ or $\operatorname{diag}(E_{21},E_{21})$.
 
 **The Jordan form.** A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. The two nilpotents $N_\pm$ are conjugate to each other and to the doubled off-diagonal units; the labels record the mixed corner, not a conjugacy class. The nilpotent is the off-diagonal entry that survives when the two eigenvalues coalesce.
 
-**The explicit matrices.** In the fixed Peirce basis the nilpotents are the doubled off-diagonal units:
+**The explicit matrices.** In the canonical frame the nilpotents are the doubled off-diagonal units:
 $$
-S^{-1}N_-S=\operatorname{diag}(E_{12},E_{12}),
+N_-=\operatorname{diag}(E_{12},E_{12}),
 \qquad
-S^{-1}N_+S=\operatorname{diag}(E_{21},E_{21}).
+N_+=\operatorname{diag}(E_{21},E_{21}).
 $$
+In the coefficient basis the same matrices are $S N_\pm S^{-1}$.
 For a general element they are the conjugates of these by the $4\times4$ diagonalising matrix, and their entries are the same as the $2\times2$ entries, repeated in the two blocks.
 
 ## The Projectors as Residues
@@ -147,8 +147,8 @@ $$
 $$
 The spectral projectors are the doubled diagonal units,
 $$
-\rho_+=S\operatorname{diag}(E_{22},E_{22})S^{-1},\qquad
-\rho_-=S\operatorname{diag}(E_{11},E_{11})S^{-1},
+\rho_+=\operatorname{diag}(E_{22},E_{22}),\qquad
+\rho_-=\operatorname{diag}(E_{11},E_{11}),
 $$
 and the nilpotents are the doubled off-diagonal units with the labels exchanged. The element is diagonal in the fixed model, and the spectral decomposition is the entry-by-entry decomposition.
 

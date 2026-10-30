@@ -16,7 +16,7 @@ with $u,v\in\mathbb{C}^2$ orthonormal. The $2\times2$ Jordanising matrix is $\ma
 
 **Boundaries.** The flag, the corners, the Jordan pair and the canonical pair are *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the $2\times2$ Jordanising matrix and its determinant are *$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix*; the projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the eigenbasis model is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The Jordanising matrix below is displayed in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because its columns are the $P_{ij}$ in coefficient coordinates; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*.
 
 ## The Jordan Basis
 
@@ -47,16 +47,16 @@ $$
 \mathsf M_2^{\tilde Q}(\tilde Q)=J_2(Q_t).
 $$
 
-**The $4\times4$ basis.** The coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis $e_t,\vec e_x,\vec e_y,\vec e_z$ form a basis of $\mathbb{C}^4$. It is the **Jordan basis** of the regular model. In the corner order the regular matrix of a general element is
+**The $4\times4$ basis.** The coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ form a basis of $\mathbb{C}^4$. It is the **Jordan basis** of the regular model. In the corner order the regular matrix of a general element is
 
 $$
-\mathsf M_4^{\tilde Q}(\tilde X)=\mathsf M_2^{\tilde Q}(\tilde X)\otimes\mathrm I_2,
+\mathsf{M}_4^{\tilde Q}(\tilde X)=\mathsf M_2^{\tilde Q}(\tilde X)\otimes\mathrm I_2,
 $$
 
 because left multiplication acts on the row index of the matrix units and leaves the copy index untouched. For the element,
 
 $$
-\mathsf M_4^{\tilde Q}(\tilde Q)=J_2(Q_t)\otimes\mathrm I_2
+\mathsf{M}_4^{\tilde Q}(\tilde Q)=J_2(Q_t)\otimes\mathrm I_2
 =\begin{pmatrix}
 Q_t&0&1&0\\
 0&Q_t&0&1\\
@@ -76,19 +76,19 @@ The two forms differ by the permutation that orders the two chains; the corner o
 **The invariants.** For every element $\tilde X$ with scalar part $X_t$,
 
 $$
-\operatorname{Tr}\mathsf M_4^{\tilde Q}(\tilde X)=4X_t,
+\operatorname{Tr}\mathsf{M}_4^{\tilde Q}(\tilde X)=4X_t,
 \qquad
-\det\mathsf M_4^{\tilde Q}(\tilde X)=\langle\tilde X\rangle_{\natural}^2.
+\det\mathsf{M}_4^{\tilde Q}(\tilde X)=\langle\tilde X\rangle_{\natural}^2.
 $$
 
 The trace is four times the scalar part and the determinant is the square of the central scalar, because the regular model is two copies of the $2\times2$ model.
 
 ## The Jordanising Matrix
 
-**Definition.** The **Jordanising matrix** $\mathsf S_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis. By construction,
+**Definition.** The **Jordanising matrix** $\mathsf S_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the coefficient basis. By construction,
 
 $$
-\bigl(\mathsf S_Q^{(4)}\bigr)^{-1}\mathsf M_4(\tilde Q)\,\mathsf S_Q^{(4)}
+\bigl(\mathsf S_Q^{(4)}\bigr)^{-1}\mathsf{M}_4^{L}(\tilde Q)\,\mathsf S_Q^{(4)}
 =J_2(Q_t)\otimes\mathrm I_2.
 $$
 
@@ -100,7 +100,7 @@ $$
 
 for every element of the sector off the scalar line, independently of $Q$.
 
-*Proof.* The map $X\mapsto\mathsf S_QX\mathsf S_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf S_Q)^2/(\det\mathsf S_Q)^2=1$. It sends the matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. The change from the matrix-unit basis to the quaternion coefficient basis is the fixed matrix $\mathsf T$ whose columns are the standard pair
+*Proof.* The map $X\mapsto\mathsf S_QX\mathsf S_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf S_Q)^2/(\det\mathsf S_Q)^2=1$. It sends the matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. The change from the matrix-unit basis to the coefficient basis is the fixed Peirce matrix $\mathsf T$ below, with the two mixed columns scaled by $s$ and $s^{-1}$; the scalars cancel, so the determinant is that of $\mathsf T$
 
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
@@ -169,25 +169,12 @@ of the commutant, the image of the Toeplitz group under the representation $G\ma
 
 ## The Defect
 
-**No normal non-scalar.** The regular matrix is
-
-$$
-\mathsf M_4(\tilde Q)=\mathsf M_2(\tilde Q)\otimes\mathrm I_2.
-$$
-
-Its conjugate transpose is $\mathsf M_2(\tilde Q)^{\dagger}\otimes\mathrm I_2$, so
-
-$$
-\mathsf M_4(\tilde Q)\mathsf M_4(\tilde Q)^{\dagger}
-=\bigl(\mathsf M_2(\tilde Q)\mathsf M_2(\tilde Q)^{\dagger}\bigr)\otimes\mathrm I_2,
-$$
-
-and similarly for the other order. The regular matrix is normal exactly when the $2\times2$ matrix is normal, that is exactly when $\tilde Q$ is scalar. Off the scalar line the $4\times4$ matrix is not normal, and there is no $*$-unitary diagonalisation.
+**No normal non-scalar.** Normality is a property of the operator, and it is read in the canonical frame, where the regular matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the involution $*$ acts on the second factor through $\mathsf M_2$. The regular matrix is normal exactly when the $2\times2$ matrix is normal, by the $2\times2$ computation applied to the block, and that is exactly when $\tilde Q$ is scalar. Off the scalar line the $4\times4$ matrix is not normal, and there is no $*$-unitary diagonalisation.
 
 **The $*$-unitary form.** In a $*$-unitary basis,
 
 $$
-U^{\dagger}\mathsf M_4(\tilde Q)U
+U^{\dagger}\mathsf{M}_4^{L}(\tilde Q)U
 =\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}\otimes\mathrm I_2,
 $$
 
@@ -214,7 +201,7 @@ $$
 **The affine family.** If $\tilde Q'=\tilde Q+b e_t$, the same basis works, and
 
 $$
-\mathsf M_4^{\tilde Q}(\tilde Q')=\mathsf M_4^{\tilde Q}(\tilde Q)+b\mathrm I_4.
+\mathsf{M}_4^{\tilde Q}(\tilde Q')=\mathsf{M}_4^{\tilde Q}(\tilde Q)+b\mathrm I_4.
 $$
 
 The determinant of the Jordanising matrix is unchanged.
@@ -239,7 +226,7 @@ The Jordan basis is the basis of $\mathbb{C}^4$ formed by the coordinate columns
 |---|---|
 | $P_{ij}=\mathsf S_QE_{ij}\mathsf S_Q^{-1}$ | the spectral matrix units |
 | $\mathsf M_2^{\tilde Q}$ | the $2\times2$ Jordan coordinate model |
-| $\mathsf M_4^{\tilde Q}$ | the $4\times4$ Jordan coordinate model |
+| $\mathsf{M}_4^{\tilde Q}$ | the $4\times4$ Jordan coordinate model |
 | $\mathsf S_Q^{(4)}$ | the $4\times4$ Jordanising matrix |
 | $\tfrac14$ | its determinant in the corner order |
 | $-\tfrac14$ | its determinant in the chain order |

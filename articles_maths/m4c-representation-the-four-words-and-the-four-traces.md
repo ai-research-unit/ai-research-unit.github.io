@@ -17,7 +17,7 @@ $$
 
 **Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=R_y=-i\sigma_2\otimes\mathrm I_2$.
 
 ## The Two Matrices and the Two Involutions
 
@@ -68,7 +68,7 @@ $$
 \tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
 $$
 
-*Proof.* The scalar part of a product is one quarter of its $4\times4$ trace, because the trace of $\mathsf{M}_4^{L}(\tilde R)$ is $4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words of the table. The trace of a product of images is the image of the trace, and the identities follow. $\square$
+*Proof.* The scalar part of a product is one quarter of its $4\times4$ trace, because the trace of $\mathsf{M}_4^{L}(\tilde R)$ is $4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words of the table. The trace of a product of images is the image of the trace, and the identities follow.
 
 **The coefficient forms.** Written on the coefficients,
 
@@ -96,7 +96,7 @@ G_{\mathrm{plain}}=G_{\natural*}=\operatorname{diag}(1,-1,-1,-1),
 G_{\natural}=G_{*}=\mathrm I_4.
 $$
 
-*Proof.* The Gram entries are the four forms evaluated on the basis elements. For the plain form, $\langle e_\mu,e_\nu\rangle$ is $1$ on $e_t$, $-1$ on each $\vec e_k$, and $0$ across. For the quaternionic form the signs of the vector part are reversed, giving the identity. The two Hermitian forms have the same matrices because the basis is real, so conjugation acts trivially on the coefficients of the basis elements. $\square$
+*Proof.* The Gram entries are the four forms evaluated on the basis elements. For the plain form, $\langle e_\mu,e_\nu\rangle$ is $1$ on $e_t$, $-1$ on each $\vec e_k$, and $0$ across. For the quaternionic form the signs of the vector part are reversed, giving the identity. The two Hermitian forms have the same matrices because the basis is real, so conjugation acts trivially on the coefficients of the basis elements.
 
 **The signatures.** Realifying the complex forms,
 
@@ -155,7 +155,7 @@ $$
 (X^{\mathsf T}Y^{\dagger})^{\dagger}=Y\overline{X}.
 $$
 
-*Proof.* The dagger is an anti-automorphism and the transpose is an anti-automorphism; the two commute with each other, because both act entrywise after transposition. The entrywise conjugate is $\overline{X}=\mathsf{M}_4^{L}(\overline{\tilde P})$, and $(X^{\mathsf T})^{\dagger}=\overline{X}$. $\square$
+*Proof.* The dagger is an anti-automorphism and the transpose is an anti-automorphism; the two commute with each other, because both act entrywise after transposition. The entrywise conjugate is $\overline{X}=\mathsf{M}_4^{L}(\overline{\tilde P})$, and $(X^{\mathsf T})^{\dagger}=\overline{X}$.
 
 The four words are therefore closed under the dagger up to the exchange of the two arguments and the entrywise conjugation, which is the matrix form of the Klein group of the four involutions.
 

@@ -19,15 +19,17 @@ The highest-weight question has two module structures, and the values $0,\tfrac1
 | Peirce index | the copy | Peirce decomposition | $+$ or $-$ |
 | chirality | the Lorentz half | central sign in $\mathbb{B}[j]$ | $+$ or $-$ |
 
-The first two rows are one notion. The adjoint action carries the two integer cases, $j=0$ on the centre and $j=1$ on the traceless part; the row records the $j=1$ carrier. The last two rows are signs, and neither is a weight.
+The first two rows are one notion. The adjoint action carries the two integer cases, $s=0$ on the centre and $s=1$ on the traceless part; the row records the $s=1$ carrier. The last two rows are signs, and neither is a weight.
 
-**The Peirce index.** A complete family $\tilde\Pi_+,\tilde\Pi_-$ cuts the algebra into four lines $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The indices $s,t$ are the Peirce indices. The right index selects the copy: $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$. Both copies carry spin $\tfrac12$. The Peirce index does not distinguish a spin from another spin; it distinguishes two copies of the same spin.
+**The Peirce index.** A complete family $\tilde\Pi_+,\tilde\Pi_-$ cuts the algebra into four lines $\mathbb{B}_{rt}=\tilde\Pi_r\mathbb{B}\tilde\Pi_t$, with $r,t\in\{+,-\}$. The indices $r,t$ are the Peirce indices; they are written $r,t$ here to leave $s$ for the spin. The right index selects the copy: $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$. Both copies carry spin $\tfrac12$. The Peirce index does not distinguish a spin from another spin; it distinguishes two copies of the same spin.
 
-**The chirality.** In the complexification $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$, with $j$ a central imaginary unit, $j^2=-e_t$, commuting with the algebra, the chirality is $\chi=ij$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin.
+**The chirality.** In the complexification $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$, with $j$ a central imaginary unit, $j^2=-e_t$, commuting with the algebra, the chirality is $\chi=ij$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The letter $j$ in $\mathbb{B}[j]$ is the central imaginary unit, an element of the algebra; the spin is the real number $s$.
 
 So the four uses reduce to one definition, one instance and two signs. The rest of the article is the definition and its two structures.
 
 ## The Definition
+
+**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$. The real quaternion subalgebra is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$. The conjugate is $e_t^*=e_t$, $\vec e_k^*=-\vec e_k$, $i^*=-i$, and the two sectors are $\mathbb{M}_\pm=\{X\in\mathbb{B}:X^*=\pm X\}$. The symbol $\operatorname{tr}$ is the matrix trace under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$.
 
 **The group.** Let $G$ be the group of unit real quaternions,
 
@@ -41,7 +43,7 @@ with Lie algebra $\mathfrak{g}=\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-=\operator
 
 **Irreducible.** A carrier is irreducible when its only invariant subspaces are $0$ and $W$. Irreducibility is a property of the pair, not of the dimension. A bare dimension carries no spin: over $\mathbb{B}\cong M_2(\mathbb{C})$ an associative module of complex dimension $n$ exists only for even $n$, and it is $S^{\oplus n/2}$.
 
-**Subcarrier.** A **subcarrier of the regular module** is a nonzero subspace $W\subseteq\mathbb{B}$, invariant under $\lambda$ or under $\mathrm{ad}$, with the restricted action. The closure theorem below classifies the irreducible subcarriers and says nothing about carriers that are not subspaces of $\mathbb{B}$: a Lie-algebra module of $\mathfrak{g}$ exists in every dimension $2j+1$, so spin $\tfrac32$ and spin $2$ are carriers under the definition even though no subspace of $\mathbb{B}$ carries them.
+**Subcarrier.** A **subcarrier of the regular module** is a nonzero subspace $W\subseteq\mathbb{B}$, invariant under $\lambda$ or under $\mathrm{ad}$, with the restricted action. The closure theorem below classifies the irreducible subcarriers and says nothing about carriers that are not subspaces of $\mathbb{B}$: a Lie-algebra module of $\mathfrak{g}$ exists in every dimension $2s+1$, as $s$ ranges over $\tfrac12\mathbb{Z}_{\ge0}$, so spin $\tfrac32$ and spin $2$ are carriers under the definition even though no subspace of $\mathbb{B}$ carries them.
 
 **Generators.** For a carrier $(W,\rho)$, the rotation generators are
 
@@ -49,21 +51,21 @@ $$
 J_k=\tfrac12\rho(i\vec e_k),
 $$
 
-so that $[J_i,J_j]=i\epsilon_{ijk}J_k$. The map $\rho$ is extended $\mathbb{C}$-linearly, so $\rho(i\vec e_k)$ is defined although $i\vec e_k\notin\mathfrak{g}$. On the two carriers below the trace form $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$ makes each $J_k$ self-adjoint, hence with real spectrum; here $X^*$ is the biquaternion conjugate, complex conjugation composed with quaternion conjugation.
+so that $[J_i,J_j]=i\epsilon_{ijk}J_k$. The map $\rho$ is extended $\mathbb{C}$-linearly, so $\rho(i\vec e_k)$ is defined although $i\vec e_k\notin\mathfrak{g}$. On the carriers below the trace form $\langle X,Y\rangle=\operatorname{tr}(X^*Y)$ makes each $J_k$ self-adjoint, hence with real spectrum; here $X^*$ is the biquaternion conjugate, complex conjugation composed with quaternion conjugation.
 
-**Spin.** For a unit $\vec u\in\mathfrak{g}$, $uu^*=e_t$, the **spin** of an irreducible carrier is
+**Spin.** For a unit $\vec u\in\mathfrak{g}$, $uu^*=e_t$, the **spin** of an irreducible carrier is the real number
 
 $$
-j=\max\operatorname{spec}\bigl(\vec u\cdot\vec J\bigr).
+s=\max\operatorname{spec}\bigl(\vec u\cdot\vec J\bigr).
 $$
 
-The value does not depend on $\vec u$: any two unit elements of $\mathfrak{g}$ are conjugate in $G$, and conjugate operators have the same spectrum.
+It lies in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector. The value does not depend on $\vec u$: any two unit elements of $\mathfrak{g}$ are conjugate in $G$, and conjugate operators have the same spectrum.
 
-**Proposition.** On an irreducible carrier, $C=J_1^2+J_2^2+J_3^2=j(j+1)$ and $2j+1=\dim_{\mathbb{C}}W$.
+**Proposition.** On an irreducible carrier, $C=J_1^2+J_2^2+J_3^2=s(s+1)$ and $2s+1=\dim_{\mathbb{C}}W$.
 
-**Proof.** Take $\vec u=\vec e_z$, so that $j$ is the largest eigenvalue of $J_3$. The ladder operators $J_\pm=J_1\pm iJ_2$ satisfy $[J_3,J_\pm]=\pm J_\pm$, so they shift weights by $1$. Finite dimension stops the ladder above at the highest weight $j$ and below at the lowest weight $j'$. The string generated from the top is invariant and nonzero, so by irreducibility it is all of $W$; its weights are $j,j-1,\dots,j'$. On a top vector $v$, $J_+v=0$ and $C=J_-J_++J_3(J_3+1)$ give $C=j(j+1)$. On a bottom vector $v'$, $J_-v'=0$ and $C=J_+J_-+J_3(J_3-1)$ give $C=j'(j'-1)$. Hence $j'(j'-1)=j(j+1)$, whose only solution with $j'\le j$ is $j'=-j$. The weights are $-j,-j+1,\dots,j$, there are $2j+1$ of them, and $C=j(j+1)$.
+**Proof.** Take $\vec u=\vec e_z$. The space $W$ is a finite-dimensional complex space, so $J_3$ has an eigenvector; let $s$ be the largest eigenvalue. The ladder operators $J_\pm=J_1\pm iJ_2$ satisfy $[J_3,J_\pm]=\pm J_\pm$, so they shift weights by $1$. Finite dimension stops the ladder above at the highest weight $s$ and below at the lowest weight $s'$. The string generated from the top is invariant and nonzero, so by irreducibility it is all of $W$; its weights are $s,s-1,\dots,s'$. On a top vector $v$, $J_+v=0$ and $C=J_-J_++J_3(J_3+1)$ give $C=s(s+1)$. On a bottom vector $v'$, $J_-v'=0$ and $C=J_+J_-+J_3(J_3-1)$ give $C=s'(s'-1)$. Hence $s'(s'-1)=s(s+1)$, whose only solution with $s'\le s$ is $s'=-s$. The weights are $-s,-s+1,\dots,s$, there are $2s+1$ of them, and $C=s(s+1)$.
 
-The formula $j=(n-1)/2$ is therefore a theorem about the pair, never a definition applied to a bare dimension.
+The formula $s=(n-1)/2$, with $n=\dim_{\mathbb{C}}W$, is therefore a theorem about the pair, never a definition applied to a bare dimension.
 
 ## The Two Module Structures
 
@@ -126,7 +128,7 @@ C=\frac14\sum_k\bigl(\lambda_{i\vec e_k}\bigr)^2
 =\frac34\operatorname{id}.
 $$
 
-**The result.** $C=\tfrac34=j(j+1)$ gives $j=\tfrac12$, and $2j+1=2$.
+**The result.** $C=\tfrac34=s(s+1)$ gives $s=\tfrac12$, and $2s+1=2$.
 
 ## The Adjoint Module: Dimensions One and Three
 
@@ -158,7 +160,7 @@ $$
 
 and $J_+\varepsilon_+=J_-\varepsilon_-=0$.
 
-**The Casimir.** Using $C=J_3^2+\tfrac12(J_+J_-+J_-J_+)$: on $\varepsilon_\pm$, $J_3^2=1$ and $\tfrac12(J_+J_-+J_-J_+)=1$; on $\varepsilon_0$, $J_3^2=0$ and $\tfrac12(J_+J_-+J_-J_+)=2$. In all three cases $C=2$. On $Z$ the Casimir is $0$. The value $2$ is $j(j+1)$ at $j=1$.
+**The Casimir.** Using $C=J_3^2+\tfrac12(J_+J_-+J_-J_+)$: on $\varepsilon_\pm$, $J_3^2=1$ and $\tfrac12(J_+J_-+J_-J_+)=1$; on $\varepsilon_0$, $J_3^2=0$ and $\tfrac12(J_+J_-+J_-J_+)=2$. In all three cases $C=2$. On $Z$ the Casimir is $0$. The value $2$ is $s(s+1)$ at $s=1$.
 
 **The result.** Two carriers, of dimensions $1$ and $3$, with spins $0$ and $1$.
 
@@ -170,7 +172,7 @@ The shortcut used for the left module does not apply here: $\mathrm{ad}_a^2\neq\
 
 **Proof for the left action.** A $\lambda$-invariant subspace is a left ideal. The left ideals of $M_2(\mathbb{C})$ are $0$, the minimal left ideals, and the whole algebra. Every minimal left ideal is $\mathbb{B}\tilde\Pi$ for an idempotent of rank one, and any two are isomorphic to $S$. The whole algebra is $S_+\oplus S_-$ and is reducible. So the irreducible ones are the minimal left ideals, all isomorphic to $S$.
 
-**Proof for the adjoint action.** An $\mathrm{ad}$-invariant subspace $W$ satisfies $[\mathbb{B},W]\subseteq W$. Since $[\mathbb{B},\mathbb{B}]=V$, the centre is fixed and $V$ is preserved. Let $W$ be invariant and not contained in $Z$, and let $\pi:\mathbb{B}\to V$ be the projection along $Z$. Then $\pi(W)$ is a nonzero $\mathrm{ad}$-submodule of $V$, hence $\pi(W)=V$ by the irreducibility of the adjoint representation.
+**Proof for the adjoint action.** An $\mathrm{ad}$-invariant subspace $W$ satisfies $[\mathbb{B},W]\subseteq W$. Since $[\mathbb{B},\mathbb{B}]=V$, the centre is fixed and $V$ is preserved. If $W\subseteq Z$, then $W=Z$. Otherwise $W$ is not contained in $Z$; let $\pi:\mathbb{B}\to V$ be the projection along $Z$. Then $\pi(W)$ is a nonzero $\mathrm{ad}$-submodule of $V$, hence $\pi(W)=V$ by the irreducibility of the adjoint representation. Since $\ker\pi=Z$ has dimension $1$, $\dim W\ge3$.
 
 If $\dim W=3$, then $W$ is the graph of a linear map $\varphi:V\to Z$, that is, $W=\{v+\varphi(v)\}$. For $v\in V$ and $a\in\mathbb{B}$,
 
@@ -180,11 +182,11 @@ $$
 
 because $\varphi(v)$ is central. This element lies in $W$, so it equals $u+\varphi(u)$ with $u=[a,v]$; hence $\varphi([a,v])=0$. As $a$ and $v$ vary, $[a,v]$ ranges over $V$, so $\varphi=0$ and $W=V$. If $\dim W=4$, then $W=\mathbb{B}$, which is reducible. The irreducible invariant subspaces are therefore $Z$ and $V$.
 
-**Corollary.** The irreducible subcarriers have dimensions $1$, $2$ and $3$. Since $2j+1=\dim_{\mathbb{C}}W$, the spins are $0$, $\tfrac12$ and $1$.
+**Corollary.** The irreducible subcarriers have dimensions $1$, $2$ and $3$. Since $2s+1=\dim_{\mathbb{C}}W$, the spins are $0$, $\tfrac12$ and $1$.
 
 **Corollary.** No irreducible invariant subspace has dimension $4$ or more. The only four-dimensional invariant subspace is $\mathbb{B}$ itself, and it is reducible in both structures: $S_+\oplus S_-$ on the left, $Z\oplus V$ under conjugation.
 
-**The obstruction.** Suppose a single structure on $\mathbb{B}$ contained all three subcarriers. They would be distinct irreducible submodules, since their dimensions $1,2,3$ differ, and distinct irreducible submodules intersect trivially, so their dimensions would add. A carrier of spin $j$ has $2j+1$ states, so the three would occupy
+**The obstruction.** Suppose a single structure on $\mathbb{B}$ contained all three subcarriers. They would be distinct irreducible submodules, since their dimensions $1,2,3$ differ, and distinct irreducible submodules intersect trivially, so their dimensions would add. A carrier of spin $s$ has $2s+1$ states, so the three would occupy
 
 $$
 1+2+3=6>4=\dim_{\mathbb{C}}\mathbb{B}
@@ -192,7 +194,7 @@ $$
 
 states. This is impossible. The three spins are therefore never the constituents of one action; they are the union of the constituents of two actions.
 
-**Remark, not a definition.** The two lists are the two restrictions of one irreducible object. Since $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ with $\dim_{\mathbb{C}}S=2$, the algebra is the space of endomorphisms of the simple module. It is irreducible of complex dimension $4$ under the action of $G\times G$ by left and right multiplication. Restricting to the left factor gives $S\oplus S$; restricting to the diagonal gives $Z\oplus V$. The two lists are the two shadows of one object, and this is why there are exactly two and not three. It is a remark about where the lists come from, and it is not the definition of spin.
+**Remark, not a definition.** The two lists are the two restrictions of one irreducible object. Since $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ with $\dim_{\mathbb{C}}S=2$, the algebra is the space of endomorphisms of the simple module. It is irreducible of complex dimension $4$ under the action of $G\times G$ by left and right multiplication. Restricting to the left factor gives $S\oplus S$; restricting to the diagonal gives $Z\oplus V$. The two lists are the two shadows of one object; these are the two restrictions that occur. It is a remark about where the lists come from, and it is not the definition of spin.
 
 ## Why the Dimensions Are One, Two and Three
 
@@ -200,15 +202,21 @@ Three descriptions of the same arithmetic.
 
 **Matrix arithmetic.** A left ideal of $M_2(\mathbb{C})$ is a sum of columns, each of dimension $2$. The centre is the line of scalar matrices. The traceless part is the complement, of dimension $4-1=3$.
 
-**Tensor degree.** The simple module $S$ has dimension $2$. The first three tensor degrees are
+**Tensor degree.** The simple module $S$ has dimension $2$. The first three tensor powers are
 
 $$
-\mathbb{C}\ (\text{degree }0),\qquad S\ (\text{degree }1),\qquad \operatorname{End}_{\mathbb{C}}(S)\ (\text{degree }2),
+\mathbb{C}\ (\text{degree }0),\qquad S\ (\text{degree }1),\qquad S\otimes S\ (\text{degree }2),
 $$
 
-of dimensions $1$, $2$ and $4$. The last splits as $\mathbf{1}\oplus\mathbf{3}$ under $G$: the identity matrix is the trivial summand and the traceless matrices are the adjoint. So the dimensions $1,2,3$ are the dimensions of the degree-$0$, degree-$1$ and traceless degree-$2$ objects.
+of dimensions $1$, $2$ and $4$. The invariant form identifies $S^*$ with $S$, so $S\otimes S\cong\operatorname{End}_{\mathbb{C}}(S)$; under $G$ it splits as
 
-**The truncation.** The list stops at degree $2$ because $\mathbb{B}$ *is* the degree-two object, the algebra of $2\times2$ matrices. Degree $3$ is $\operatorname{End}(S)\otimes S$, of dimension $8$, and it is not a subspace of $\mathbb{B}$. Higher spin therefore requires a tensor product: it is a carrier, but not a subcarrier of $\mathbb{B}$.
+$$
+S\otimes S=\Lambda^2S\oplus\operatorname{Sym}^2S\cong\mathbf{1}\oplus\mathbf{3}.
+$$
+
+The trivial summand is $\Lambda^2S$; under the identification $S\otimes S\cong\operatorname{End}(S)$ its spanning vector is the identity endomorphism. The traceless symmetric part is the adjoint. The dimensions $1,2,3$ are therefore those of the degree-$0$ object, the degree-$1$ object, and the traceless part of the degree-$2$ object.
+
+**The truncation.** The algebra $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ is the endomorphism object of $S$, of dimension $4$, and it splits as $\mathbf{1}\oplus\mathbf{3}$, the degree-$0$ and traceless degree-$2$ pieces. Degree $3$ is $S^{\otimes3}$, of dimension $8$, and it is not a subspace of $\mathbb{B}$. Higher spin therefore requires a tensor product: it is a carrier, but not a subcarrier of $\mathbb{B}$.
 
 ## The Three Signs
 
@@ -222,7 +230,7 @@ $$
 
 so $P$ is $+1$ on $S_+$ and $-1$ on $S_-$. It is implemented by the element $i\vec e_z$, which is not central: $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value. Right multiplication by the nilpotent $\vec\Upsilon_{+-}$ gives the module isomorphism $S_+\to S_-$, but it is not the grading: $\vec\Upsilon_{+-}^2=0$, so it cannot be an involution.
 
-**Chirality is central, but not a spin.** In $\mathbb{B}[j]$ the chirality $\chi=ij$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $j$.
+**Chirality is central, but not a spin.** In $\mathbb{B}[j]$ the chirality $\chi=ij$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.
 
 The three signs are therefore distinct: a central sign that marks integer against half-integer, an inner non-central sign that separates two copies of one half-integer carrier, and a central sign in a doubled algebra that separates two Lorentz halves. Only the first tracks the integrality of a spin; none of the three is a spin value.
 
@@ -238,7 +246,7 @@ The three signs are therefore distinct: a central sign that marks integer agains
 
 ## Summary
 
-Spin in the corpus has four uses, and they are not four notions. The highest weight of a module structure is the definition. The adjoint action carries its two integer instances, $j=0$ and $j=1$. The Peirce index and the chirality are signs, and neither is a weight.
+Spin in the corpus has four uses, and they are not four notions. The highest weight of a module structure is the definition. The adjoint action carries its two integer instances, $s=0$ and $s=1$. The Peirce index and the chirality are signs, and neither is a weight.
 
 The highest-weight question has two module structures. Left multiplication gives the simple module $S$, of dimension $2$, with weights $\pm\tfrac12$, Casimir $\tfrac34$ and spin $\tfrac12$. Conjugation gives the centre $Z$, of dimension $1$, with spin $0$, and the traceless part $V$, of dimension $3$, with weights $\pm1,0$, Casimir $2$ and spin $1$.
 
@@ -260,7 +268,7 @@ The closure theorem states that these are all the irreducible subcarriers. There
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | The two minimal left ideals |
 | $J_k$ | The rotation generators of a carrier |
 | $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
-| $j$ | The spin, the maximal weight |
+| $s$ | The spin, the maximal weight |
 | $\mathbb{B}[j]$ | The complexification by the central imaginary unit $j$, $j^2=-e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The standard orthogonal idempotents |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The mixed units; $\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ |

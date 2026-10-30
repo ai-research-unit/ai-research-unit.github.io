@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The centraliser of a regular matrix is larger than the centraliser of the corresponding $2\times2$ matrix, because the regular representation contains two copies of the defining module. The extra freedom is the mixing of the two copies. The relative centraliser inside the image is smaller, and the double centraliser of the whole image is the right regular image.
+The centraliser of a regular matrix is larger than the centraliser of the corresponding $2\times2$ matrix, because the regular representation contains two copies of the defining module. The extra freedom is the mixing of the two copies. The relative centraliser inside the image is smaller: the commutant of the whole image is the right regular image, and its double centraliser is the left image.
 
 This article computes the three objects, their dimensions in each spectral type, and the eigenbasis ambiguity they describe. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write $M=\mathsf{M}_4^{L}(\tilde Q)$, $A=\mathsf{M}_2(\tilde Q)$, and use the Peirce basis in which $M=\mathrm I_2\otimes A$. The centraliser of $M$ in $M_4(\mathbb{C})$ is written $C(M)$; the relative centraliser in the image is $C_{L}(M)$; the image and the right image are $M_4(\mathbb{C})_{\mathbb{B},L}$ and $M_4(\mathbb{C})_{\mathbb{B},R}$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write $M=\mathsf{M}_4^{L}(\tilde Q)=\mathrm I_2\otimes A$ in the canonical frame, with $A=\mathsf{M}_2(\tilde Q)$; the commutant is unchanged by a change of basis. The coefficient basis is used only where it is named. The centraliser of $M$ in $M_4(\mathbb{C})$ is written $C(M)$; the relative centraliser in the image is $C_{L}(M)$; the image and the right image are $M_4(\mathbb{C})_{\mathbb{B},L}$ and $M_4(\mathbb{C})_{\mathbb{B},R}$.
 
 **Boundaries.** The right image and the double centraliser of the whole image are treated in §*The Right Regular Image* below; the eigenbasis is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the $2\times2$ commutant is *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*.
 
-**Frame.** The Peirce basis used below is the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*; a matrix in the coefficient basis is carried to it by the change $S$ of *The Product, the Trace and the Determinant*, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The coefficient basis is the conjugate display: with $S$ the change of *The Product, the Trace and the Determinant*, $\mathsf M_{4,\mathrm{coef}}^{L}=S(I_2\otimes\mathsf M_2)S^{-1}$.
 
 ## The Commutant
 
-**Theorem.** In the Peirce basis,
+**Theorem.** In the canonical frame,
 $$
 C(M)=\{B\in M_4(\mathbb{C}):B(\mathrm I_2\otimes A)=(\mathrm I_2\otimes A)B\}
 =M_2(\mathbb{C})\otimes C(A),
@@ -26,7 +26,7 @@ where $C(A)=\{X\in M_2(\mathbb{C}):XA=AX\}$. Consequently,
 | scalar | $M_2(\mathbb{C})$ | $16$ |
 | non-scalar | $\mathbb{C}[A]$, of dimension $2$ | $8$ |
 
-*Proof.* Write $B$ as a $2\times2$ block matrix with blocks $B_{ij}\in M_2(\mathbb{C})$. The condition $BM=MB$ is $B_{ij}A=AB_{ij}$ for every pair $(i,j)$, so each block lies in $C(A)$. The block matrix is therefore an element of $M_2(\mathbb{C})\otimes C(A)$, and the dimension is $4\dim C(A)$. For a scalar $A=\lambda\mathrm I_2$, $C(A)=M_2(\mathbb{C})$; otherwise $C(A)=\mathbb{C}[A]$, of dimension two. $\square$
+*Proof.* Write $B$ as a $2\times2$ block matrix with blocks $B_{ij}\in M_2(\mathbb{C})$. The condition $BM=MB$ is $B_{ij}A=AB_{ij}$ for every pair $(i,j)$, so each block lies in $C(A)$. The block matrix is therefore an element of $M_2(\mathbb{C})\otimes C(A)$, and the dimension is $4\dim C(A)$. For a scalar $A=\lambda\mathrm I_2$, $C(A)=M_2(\mathbb{C})$; otherwise $C(A)=\mathbb{C}[A]$, of dimension two.
 
 **The meaning.** The tensor factor $M_2(\mathbb{C})$ acts on the multiplicity space of the two copies, and the factor $C(A)$ acts on the values. A matrix in $C(M)$ can mix the two copies arbitrarily and can act on each by a polynomial in $A$. The mixing is the new phenomenon of the regular model; in the $2\times2$ model there is no multiplicity space, and the commutant is only $C(A)$, of dimension $2$.
 
@@ -54,7 +54,7 @@ C_L(M)=L(C(\tilde Q))=\{\mathsf{M}_4^{L}(\tilde R):\tilde R\tilde Q=\tilde Q\til
 \begin{cases}4,&\tilde Q\text{ scalar},\\2,&\tilde Q\text{ non-scalar}.\end{cases}
 $$
 
-*Proof.* An element of the image is $\mathsf{M}_4^{L}(\tilde R)$, and it commutes with $\mathsf{M}_4^{L}(\tilde Q)$ exactly when $\tilde R$ commutes with $\tilde Q$, by injectivity. The centraliser of a non-scalar element of $M_2(\mathbb{C})$ is the algebra it generates, of dimension two; the centraliser of a scalar is the whole algebra, of dimension four. $\square$
+*Proof.* An element of the image is $\mathsf{M}_4^{L}(\tilde R)$, and it commutes with $\mathsf{M}_4^{L}(\tilde Q)$ exactly when $\tilde R$ commutes with $\tilde Q$, by injectivity. The centraliser of a non-scalar element of $M_2(\mathbb{C})$ is the algebra it generates, of dimension two; the centraliser of a scalar is the whole algebra, of dimension four.
 
 **The gap.** For a non-scalar element the full commutant has dimension eight and the relative commutant has dimension two. The six extra dimensions are the mixing of the two copies: they are visible in $M_4(\mathbb{C})$ but not in the image. For a scalar element the full commutant is all of $M_4(\mathbb{C})$, dimension sixteen, while the relative commutant is the four-dimensional image.
 
@@ -94,7 +94,7 @@ again of dimension eight, with $\mathrm I_2\otimes N$ the nilpotent direction. T
 
 **The transpose.** If $B$ commutes with $M$, then $B^{\mathsf T}$ commutes with $M^{\mathsf T}$, not with $M$. Hence
 $$
-C(M)^{\mathsf T}=C(M^{\mathsf T})=C(\mathsf{M}_4^{L}(\tilde Q^{\natural})),
+C(M)^{\mathsf T}=C(M^{\mathsf T})=C(\mathsf{M}_4^{L}(\tilde Q^{\natural}))\quad(\text{coefficient basis}),
 $$
 which is the centraliser of the quaternion conjugate. The two centralisers coincide only when $\tilde Q^{\natural}$ is a polynomial in $\tilde Q$, that is, when $\tilde Q$ is scalar or lies in a two-dimensional subalgebra closed under conjugation.
 
@@ -129,7 +129,7 @@ C(C(M))=\mathbb{C}[M]=\operatorname{span}\{\mathrm I_4,M\}.
 $$
 The dimension is one when $\tilde Q$ is scalar and two otherwise.
 
-*Proof.* If $A$ is non-scalar, $C(M)=M_2(\mathbb{C})\otimes C(A)$ with $C(A)=\mathbb{C}[A]$ commutative. The centraliser of $M_2(\mathbb{C})$ in $M_2(\mathbb{C})$ is the scalar line, and the centraliser of $C(A)$ in $M_2(\mathbb{C})$ is $C(A)$ itself, because $C(A)$ is a maximal commutative subalgebra. Hence the centraliser of the tensor product is $\mathrm I_2\otimes C(A)$, which is exactly the algebra generated by $\mathrm I_2\otimes A=M$. If $A$ is scalar, $C(M)=M_4(\mathbb{C})$ and its centraliser is the scalar line, which is again $\mathbb{C}[M]$. $\square$
+*Proof.* If $A$ is non-scalar, $C(M)=M_2(\mathbb{C})\otimes C(A)$ with $C(A)=\mathbb{C}[A]$ commutative. The centraliser of $M_2(\mathbb{C})$ in $M_2(\mathbb{C})$ is the scalar line, and the centraliser of $C(A)$ in $M_2(\mathbb{C})$ is $C(A)$ itself, because $C(A)$ is a maximal commutative subalgebra. Hence the centraliser of the tensor product is $\mathrm I_2\otimes C(A)$, which is exactly the algebra generated by $\mathrm I_2\otimes A=M$. If $A$ is scalar, $C(M)=M_4(\mathbb{C})$ and its centraliser is the scalar line, which is again $\mathbb{C}[M]$.
 
 **The two double centralisers.** The theorem is not the double centraliser theorem of the whole image, which is proved in §*The Right Regular Image*. There are three distinct statements:
 
@@ -141,28 +141,25 @@ The dimension is one when $\tilde Q$ is scalar and two otherwise.
 
 The element and the whole image behave differently because the element generates only a commutative subalgebra, while the image is the whole four-dimensional simple algebra. The double centraliser theorem recovers the algebra generated by the object, not the object itself.
 
-**The right regular image.** The right multiplication is the other side of the double centraliser. Its matrix is $\mathsf{M}_4^{R}(\tilde Q)$, the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $e_\mu\tilde Q$:
+**The right regular image.** The right multiplication is the other side of the double centraliser. Its matrix is $\mathsf{M}_4^{R}(\tilde Q)$, the matrix of $x\mapsto x\tilde Q$:
 $$
-\boxed{\;\mathsf{M}_4^{R}(\tilde Q)=
+\boxed{\;\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
+(Q_t-iQ_z)\mathrm I_2&(-iQ_x+Q_y)\mathrm I_2\\
+(-iQ_x-Q_y)\mathrm I_2&(Q_t+iQ_z)\mathrm I_2
 \end{pmatrix}\;}
 $$
-It differs from $\mathsf{M}_4^{L}(\tilde Q)$ only in the signs of the entries that mix the vector coordinates. It is anti-multiplicative,
+It acts on the copy label and is the identity on the value factor, so it is not block diagonal: it mixes the two copies, while left multiplication preserves each of them. It is anti-multiplicative,
 $$
 \mathsf{M}_4^{R}(\tilde P)\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_4^{R}(\tilde Q\tilde P),
 $$
-injective, and its image $M_4(\mathbb{C})_{\mathbb{B},R}$ is the commutant of the left image. With $D=\operatorname{diag}(1,-1,-1,-1)$,
+injective, and its image $M_4(\mathbb{C})_{\mathbb{B},R}$ is the commutant of the left image. In the coefficient basis the same matrix reads
 $$
-\mathsf{M}_4^{R}(\tilde Q)=D\,\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}D
+\mathsf M_{4,\mathrm{coef}}^{R}(\tilde Q)=S\bigl(\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2\bigr)S^{-1}
+=D\,\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}D
 =D\,\mathsf{M}_4^{L}(\tilde Q^{\natural})D,
-\qquad
-\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural}).
 $$
-In the Peirce basis it is not block diagonal: it mixes the two copies, while left multiplication preserves each of them. Both images have complex dimension four, and their intersection is the scalar line $\mathbb{C}\mathrm I_4$.
+with $D=\operatorname{diag}(1,-1,-1,-1)$; the last two equalities are statements about the coefficient basis, where transposition is quaternion conjugation. Both images have complex dimension four, and their intersection is the scalar line $\mathbb{C}\mathrm I_4$.
 
 **The double centraliser theorem.** The commutant of the left image is the right image, and conversely:
 $$
@@ -174,7 +171,7 @@ If $T$ commutes with every left multiplication, then $T(\tilde X)=T(\tilde X e_t
 
 ## Summary
 
-The full commutant of a non-scalar regular matrix is $M_2(\mathbb{C})\otimes C(A)$, of dimension eight; for a scalar it is all of $M_4(\mathbb{C})$. The relative commutant inside the image is the centraliser of the biquaternion, of dimension two or four. The right regular matrix is the anti-multiplicative matrix of right multiplication, and its image is the commutant of the left image. The bicommutant of the element is the algebra it generates, of dimension two or one, while the double centraliser of the whole image is the right image. The eigenbasis ambiguity is $GL_2\times GL_2$, larger than in the $2\times2$ model by the mixing of the two copies.
+The full commutant of a non-scalar regular matrix is $M_2(\mathbb{C})\otimes C(A)$, of dimension eight; for a scalar it is all of $M_4(\mathbb{C})$. The relative commutant inside the image is the centraliser of the biquaternion, of dimension two or four. The right regular matrix is the anti-multiplicative matrix of right multiplication, and its image is the commutant of the left image. The bicommutant of the element is the algebra it generates, of dimension two or one, while the double centraliser of the whole image is the left image. The eigenbasis ambiguity is $GL_2\times GL_2$, larger than in the $2\times2$ model by the mixing of the two copies.
 
 ## Summary of Notation
 

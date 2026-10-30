@@ -15,7 +15,7 @@ $$
 
 **Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient basis is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$ with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Eigenbasis
 
@@ -41,7 +41,7 @@ $$
 $$
 because $\tilde Q=\lambda_+P_{11}+\lambda_-P_{22}$.
 
-**The $4\times4$ eigenbasis.** The four coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis $e_t,\vec e_x,\vec e_y,\vec e_z$ form a basis of $\mathbb{C}^4$. It is the **eigenbasis** of the regular model. In the order $(P_{11},P_{12},P_{21},P_{22})$, the regular matrix of a general element is
+**The $4\times4$ eigenbasis.** The four elements $P_{11},P_{12},P_{21},P_{22}$ form a basis of $\mathbb{B}$; their coordinate columns in the canonical frame form a basis of $\mathbb{C}^4$. It is the **eigenbasis** of the regular model. In the order $(P_{11},P_{12},P_{21},P_{22})$, the regular matrix of a general element is
 $$
 \mathsf{M}_4^{Q}(\tilde X)=\mathsf{M}_2^{Q}(\tilde X)\otimes\mathrm I_2,
 $$
@@ -49,7 +49,7 @@ because left multiplication acts on the row index of the matrix units and the co
 
 ## The Diagonalising Matrix
 
-**Definition.** The **regular diagonalising matrix** $\mathsf{C}_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis. By construction,
+**Definition.** The **regular diagonalising matrix** $\mathsf{C}_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the canonical frame. By construction,
 $$
 \bigl(\mathsf{C}_Q^{(4)}\bigr)^{-1}\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{C}_Q^{(4)}
 =\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
@@ -57,18 +57,11 @@ $$
 
 **Theorem (the determinant is fixed).**
 $$
-\det\mathsf{C}_Q^{(4)}=\tfrac14
+\det\mathsf{C}_Q^{(4)}=-1
 $$
 for every spectrally regular element, independently of $Q$.
 
-*Proof.* The map $X\mapsto\mathsf{C}_Q\,X\,\mathsf{C}_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf{C}_Q)^2/(\det\mathsf{C}_Q)^2=1$. It sends the standard matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. The change from the standard matrix-unit basis to the quaternion coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the fixed matrix with columns
-$$
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
-\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y),\quad
-\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\quad
-\tilde\Pi_-=\tfrac12(e_t-i\vec e_z),
-$$
-whose determinant is $\tfrac14$. The two determinants multiply to $\tfrac14$. $\square$
+*Proof.* The map $X\mapsto\mathsf{C}_Q\,X\,\mathsf{C}_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf{C}_Q)^2/(\det\mathsf{C}_Q)^2=1$. It sends the standard matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. In the canonical frame the coordinate column of $P_{ij}$ is $\operatorname{vec}(P_{ij})=(\mathsf C_Q^{-\mathsf T}\otimes\mathsf C_Q)\operatorname{vec}(E_{ij})$, and the Kronecker factor has determinant $1$. The columns are ordered $(11,12,21,22)$, while the canonical basis is ordered $(11,21,12,22)$; the transposition of the two middle columns contributes $-1$. Hence $\det\mathsf{C}_Q^{(4)}=-1$. In the coefficient basis the same change is $S\,\mathsf{C}_Q^{(4)}$, of determinant $\tfrac14$.
 
 The $2\times2$ determinant $2B(B-Q_z)$ cancels in the similarity. The regular diagonalising matrix is therefore never singular on the spectrally regular sector, even when the $2\times2$ chart degenerates. What degenerates is the chart, not the $4\times4$ basis.
 
@@ -78,20 +71,20 @@ $$
 \qquad
 \det\mathsf{C}_Q'=-2B(B+Q_z),
 $$
-replaces $\mathsf{C}_Q$ in the construction of the $P_{ij}$; its determinant is nonzero at $B=Q_z$ because $B\neq0$. The determinant of the regular change is again $\tfrac14$, by the same similarity argument. The two determinants cannot both vanish, so one of the two charts always applies, and they agree on their overlap up to the freedom below.
+replaces $\mathsf{C}_Q$ in the construction of the $P_{ij}$; its determinant is nonzero at $B=Q_z$ because $B\neq0$. The determinant of the regular change is again $-1$ in the canonical frame, and $\tfrac14$ in the coefficient basis, by the same similarity argument. The two determinants cannot both vanish, so one of the two charts always applies, and they agree on their overlap up to the freedom below.
 
 ## The Eigenbasis in the Fixed Model
 
-**The basis elements are the conjugates of the matrix units.** In the fixed model,
+**The basis elements are the matrix units.** In the canonical frame the four left matrices are
 $$
-\mathsf M_4(\tilde\Pi_+)=S\operatorname{diag}(E_{11},E_{11})S^{-1},\qquad
-\mathsf M_4(\vec\Upsilon_+)=S\operatorname{diag}(E_{12},E_{12})S^{-1},
+\mathsf{M}_4^{L}(\tilde\Pi_+)=\operatorname{diag}(E_{11},E_{11}),\qquad
+\mathsf{M}_4^{L}(\vec\Upsilon_+)=\operatorname{diag}(E_{21},E_{21}),
 $$
 $$
-\mathsf M_4(\vec\Upsilon_-)=S\operatorname{diag}(E_{21},E_{21})S^{-1},\qquad
-\mathsf M_4(\tilde\Pi_-)=S\operatorname{diag}(E_{22},E_{22})S^{-1}.
+\mathsf{M}_4^{L}(\vec\Upsilon_-)=\operatorname{diag}(E_{12},E_{12}),\qquad
+\mathsf{M}_4^{L}(\tilde\Pi_-)=\operatorname{diag}(E_{22},E_{22}).
 $$
-The two assignments of the four basis elements — to the eigenbasis coordinates and to the fixed matrix units — differ by the change of basis $S$. This is the precise sense in which the eigenbasis model is the fixed model conjugated by the Peirce matrix.
+They are the conjugates of the matrix units by the identity, so the eigenbasis coordinates and the canonical coordinates agree on the spectral basis. In the coefficient basis the same four matrices are $S\operatorname{diag}(E_{ij},E_{ij})S^{-1}$.
 
 **The diagonal form.** In the eigenbasis the regular matrix of $\tilde Q$ is
 $$
@@ -112,9 +105,9 @@ because $\operatorname{Tr}(\tilde\Pi_\pm)=2$, $\operatorname{Tr}(\vec\Upsilon_\p
 
 **The invariants.** For every element $\tilde X$ with eigenbasis coordinates $X_{ij}$,
 $$
-\operatorname{Tr}\mathsf M_4^{Q}(\tilde X)=2(X_{11}+X_{22})=4X_t,
+\operatorname{Tr}\mathsf{M}_4^{Q}(\tilde X)=2(X_{11}+X_{22})=4X_t,
 \qquad
-\det\mathsf M_4^{Q}(\tilde X)=(X_{11}X_{22}-X_{12}X_{21})^2=\langle\tilde X\rangle_{\natural}^2.
+\det\mathsf{M}_4^{Q}(\tilde X)=(X_{11}X_{22}-X_{12}X_{21})^2=\langle\tilde X\rangle_{\natural}^2.
 $$
 The trace is four times the scalar part and the determinant is the square of the central scalar, as in the fixed model, because the two models differ by a conjugation.
 
@@ -133,7 +126,7 @@ GL_2(\mathbb{C})\times GL_2(\mathbb{C}),
 $$
 of complex dimension eight. The first factor changes the basis inside the two-dimensional $\lambda_+$ eigenspace and the second inside the two-dimensional $\lambda_-$ eigenspace. In the $2\times2$ model the same eigenvalues have multiplicity one and the freedom is $GL_1\times GL_1$, of dimension two. The extra six parameters are the mixing of the two copies.
 
-**The determinant and the freedom.** The determinant of the diagonalising matrix is multiplied by $\det G$ under the freedom. The value $\tfrac14$ is the determinant of one chosen basis, not an invariant of the element.
+**The determinant and the freedom.** The determinant of the diagonalising matrix is multiplied by $\det G$ under the freedom. The value $-1$ in the canonical frame, or $\tfrac14$ in the coefficient basis, is the determinant of one chosen basis, not an invariant of the element.
 
 **The degenerate case.** When $\lambda_+=\lambda_-$, a diagonalisable $M$ is scalar and its commutant is all of $GL_4(\mathbb{C})$; a non-scalar $M$ with repeated eigenvalue is a Jordan block, has no eigenbasis, and is handled by the Jordan decomposition.
 
@@ -150,7 +143,7 @@ M=U\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)U^{\dagger},
 U\in U(4).
 $$
 
-*Proof.* The map $\mathsf{M}_4^{L}$ is injective and satisfies $\mathsf{M}_4^{L}(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal. $\square$
+*Proof.* The map $\mathsf{M}_4^{L}$ is injective and satisfies $\mathsf{M}_4^{L}(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal.
 
 **The $*$-unitary ambiguity.** In the normal case the freedom is reduced to
 $$
@@ -174,7 +167,7 @@ It is the matrix of the change of spectral coordinates, and it is defined up to 
 
 ## Summary
 
-The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$. In it the regular matrix is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, with each eigenvalue twice. The diagonalising matrix has determinant $\tfrac14$ for every spectrally regular element, because the $2\times2$ similarity has determinant one and the $2\times2$ factor cancels. The freedom is $GL_2\times GL_2$ for distinct eigenvalues, reduced to $U(2)\times U(2)$ in the normal case. The fixed Peirce change $S$ is not a diagonalisation; it is the reduction to the two copies that makes the diagonalisation a doubled $2\times2$ problem.
+The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$. In it the regular matrix is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, with each eigenvalue twice. The diagonalising matrix has determinant $-1$ in the canonical frame ($\tfrac14$ in the coefficient basis) for every spectrally regular element, because the $2\times2$ similarity has determinant one and the $2\times2$ factor cancels. The freedom is $GL_2\times GL_2$ for distinct eigenvalues, reduced to $U(2)\times U(2)$ in the normal case. The fixed Peirce change $S$ is not a diagonalisation; it is the reduction to the two copies that makes the diagonalisation a doubled $2\times2$ problem.
 
 ## Summary of Notation
 

@@ -10,7 +10,7 @@ This article develops the calculus; the exponential series, its determinant iden
 
 **Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Functional Calculus
 
@@ -32,11 +32,11 @@ The two formulas are the residue theorem read on the spectral types. They show t
 
 **The regular identity.** If $X=\mathsf{M}_4^{L}(\tilde Q)$ and $f$ is holomorphic on a neighbourhood of the spectrum of $\tilde Q$, the resolvent identity
 $$
-(z\mathrm I_4-\mathsf{M}_4^{L}(\tilde Q))^{-1}=\mathsf{M}_4\bigl((z e_t-\tilde Q)^{-1}\bigr)
+(z\mathrm I_4-\mathsf{M}_4^{L}(\tilde Q))^{-1}=\mathsf{M}_4^{L}\bigl((z e_t-\tilde Q)^{-1}\bigr)
 $$
 and the contour integral give
 $$
-f\bigl(\mathsf{M}_4^{L}(\tilde Q)\bigr)=\mathsf{M}_4\bigl(f(\tilde Q)\bigr).
+f\bigl(\mathsf{M}_4^{L}(\tilde Q)\bigr)=\mathsf{M}_4^{L}\bigl(f(\tilde Q)\bigr).
 $$
 Every function of a regular matrix in the image therefore lies in the image, and the calculus on the image is the biquaternion calculus read through $\mathsf{M}_4^{L}$.
 
@@ -75,7 +75,7 @@ The series converges for every $X$, uniformly on bounded sets, by comparison wit
 
 **The algebra identity.** Since $\mathsf{M}_4^{L}$ is an algebra homomorphism and the series is an infinite sum of products,
 $$
-\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4\bigl(\exp\tilde Q\bigr),
+\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4^{L}\bigl(\exp\tilde Q\bigr),
 $$
 where the exponential on the right is the biquaternion exponential of *Biquaternion Elementary Functions*. The identity is the reason every formula below is the image of an algebra formula.
 

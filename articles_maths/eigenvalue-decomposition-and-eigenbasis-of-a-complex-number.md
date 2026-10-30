@@ -49,13 +49,13 @@ $$
 **Definition (the complexified algebra and its generator).** Let
 
 $$
-\iota=1\otimes i\in A_{\mathbb{C}},\qquad \iota^2=-1.
+i_1=i\otimes1\in A_{\mathbb{C}},\qquad i_2=1\otimes i\in A_{\mathbb{C}},\qquad i_1^2=i_2^2=-1.
 $$
 
-The element $\iota$ is the algebra generator of the second factor. The scalar $i$ of the complex structure is $i\otimes1$; it is a different element of $A_{\mathbb{C}}$, and both square to $-1$. Put
+The element $i_2$ is the algebra generator of the second factor, and $i_1$ is the scalar action of the complex structure. They are different elements of $A_{\mathbb{C}}$, and both square to $-1$. Put
 
 $$
-e_+=\frac{1}{2}\left(1-i\iota\right),\qquad e_-=\frac{1}{2}\left(1+i\iota\right).
+e_+=\frac{1}{2}\left(1-i_1i_2\right),\qquad e_-=\frac{1}{2}\left(1+i_1i_2\right).
 $$
 
 **Proposition (the idempotents).** The elements $e_+,e_-$ satisfy
@@ -64,9 +64,9 @@ $$
 e_+^2=e_+,\qquad e_-^2=e_-,\qquad e_+e_-=e_-e_+=0,\qquad e_++e_-=1,
 $$
 
-and $\iota=i(e_+-e_-)$.
+and $i_2=i_1(e_+-e_-)$.
 
-*Proof.* Since $(i\iota)^2=i^2\iota^2=1$, one has $e_+^2=\frac14(1-2i\iota+1)=e_+$, and the computation for $e_-$ is the same with $i$ replaced by $-i$. The product is $e_+e_-=\frac14(1-(i\iota)^2)=0$, and the sum is $1$. Finally $e_+-e_-=-i\iota$, so $i(e_+-e_-)=\iota$.
+*Proof.* Since $(i_1i_2)^2=i_1^2i_2^2=1$, one has $e_+^2=\frac14(1-2i_1i_2+1)=e_+$, and the computation for $e_-$ is the same with $i_1$ replaced by $-i_1$. The product is $e_+e_-=\frac14(1-(i_1i_2)^2)=0$, and the sum is $1$. Finally $e_+-e_-=-i_1i_2$, so $i_1(e_+-e_-)=i_2$.
 
 **Theorem (the splitting of the complexified algebra).** The map
 
@@ -80,7 +80,7 @@ $$
 \phi(e_+)=(1,0),\qquad \phi(e_-)=(0,1),\qquad \phi(1\otimes z)=(z,\bar z).
 $$
 
-*Proof.* Multiplicativity is $\phi((a\otimes\alpha)(b\otimes\beta))=(ab\alpha\beta,ab\bar\alpha\bar\beta)=\phi(a\otimes\alpha)\phi(b\otimes\beta)$. The inverse is checked by $(a+ci,a-ci)=(u,v)$ with $a=(u+v)/2$ and $c=(u-v)/(2i)$. For $e_+$, one has $i\iota=i\otimes i\mapsto(-1,1)$, so $e_+\mapsto\frac12((1,1)-(-1,1))=(1,0)$, and similarly $e_-\mapsto(0,1)$. For $1\otimes z$ with $z=t+bi$, the image is $(z,\bar z)$.
+*Proof.* Multiplicativity is $\phi((a\otimes\alpha)(b\otimes\beta))=(ab\alpha\beta,ab\bar\alpha\bar\beta)=\phi(a\otimes\alpha)\phi(b\otimes\beta)$. The inverse is checked by $(a+ci,a-ci)=(u,v)$ with $a=(u+v)/2$ and $c=(u-v)/(2i)$. For $e_+$, one has $i_1i_2=i\otimes i\mapsto(-1,1)$, so $e_+\mapsto\frac12((1,1)-(-1,1))=(1,0)$, and similarly $e_-\mapsto(0,1)$. For $1\otimes z$ with $z=t+bi$, the image is $(z,\bar z)$.
 
 **Theorem (the spectral decomposition).** For $z=t+bi$ with $b\neq0$,
 
@@ -108,7 +108,7 @@ $$
 E_+=\frac{A-\lambda_-I}{\lambda_+-\lambda_-}=\frac12\begin{pmatrix}1&i\\ -i&1\end{pmatrix},\qquad E_-=\frac{A-\lambda_+I}{\lambda_--\lambda_+}=\frac12\begin{pmatrix}1&-i\\ i&1\end{pmatrix},
 $$
 
-and $E_\pm$ are the matrices of $L_{e_\pm}$ in the complex basis $1,\iota$ of $V_{\mathbb{C}}$.
+and $E_\pm$ are the matrices of $L_{e_\pm}$ in the complex basis $1,i_2$ of $V_{\mathbb{C}}$.
 
 *Proof.* Substituting $A=tI+bJ$, $\lambda_\pm=t\pm ib$ gives the displays; the identification with $L_{e_\pm}$ is the previous corollary.
 
@@ -177,7 +177,7 @@ The complex algebra is a field, and its complexification $A_{\mathbb{C}}=\mathbb
 The spectral idempotents are
 
 $$
-e_+=\frac12(1-i\iota),\qquad e_-=\frac12(1+i\iota),\qquad \iota=1\otimes i.
+e_+=\frac12(1-i_1i_2),\qquad e_-=\frac12(1+i_1i_2),\qquad i_1=i\otimes1,\qquad i_2=1\otimes i.
 $$
 
 They are the two minimal idempotents of $A_{\mathbb{C}}$, they satisfy $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$, $e_++e_-=1$, and they give the decomposition $z=\lambda_+e_++\lambda_-e_-$. Under the isomorphism $\phi(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ they are the two standard idempotents $(1,0)$ and $(0,1)$ of $\mathbb{C}\oplus\mathbb{C}$, and $z$ is $(z,\bar z)$. The left multiplications $L_{e_\pm}$ are the spectral projectors, with matrices $E_\pm=(A-\lambda_\mp I)/(\lambda_\pm-\lambda_\mp)$.
@@ -197,8 +197,8 @@ The matrix $A=tI+bJ$ is normal, $A^{\mathsf{T}}A=|z|^2I$, and, for $z\neq0$, $A/
 | $v_+=(1,-i),\ v_-=(1,i)$ | the eigenvectors |
 | $P=\begin{pmatrix}1&1\\ -i&i\end{pmatrix}$ | the eigenbasis matrix, $\det P=2i$ |
 | $A_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the complexified algebra, isomorphic to $\mathbb{C}\oplus\mathbb{C}$ |
-| $\iota=1\otimes i$ | the algebra generator, $\iota^2=-1$ |
-| $e_\pm=\frac12(1\mp i\iota)$ | the spectral idempotents |
+| $i_1=i\otimes1$, $i_2=1\otimes i$ | the two algebra generators, $i_1^2=i_2^2=-1$ |
+| $e_\pm=\frac12(1\mp i_1i_2)$ | the spectral idempotents |
 | $\phi(a\otimes\alpha)=(a\alpha,a\bar\alpha)$ | the isomorphism $A_{\mathbb{C}}\to\mathbb{C}\oplus\mathbb{C}$ |
 | $E_\pm=\frac{A-\lambda_\mp I}{\lambda_\pm-\lambda_\mp}$ | the spectral projectors, matrices of $L_{e_\pm}$ |
 | $r=\lvert z\rvert=\sqrt{t^2+b^2}$ | the modulus |

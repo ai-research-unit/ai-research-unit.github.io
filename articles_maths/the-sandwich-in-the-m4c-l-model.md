@@ -14,7 +14,7 @@ This article develops the sandwich in the regular model. It is the $4\times4$ co
 
 **Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which $*$-conjugation is the matrix dagger: $\mathsf M_4^{L}(\tilde Q^{*})=M^{\dagger}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*, and the congruence reads $M\mapsto C M^{\dagger}C^{-1}$ there, with $C=R_y$.
 
 ## The Congruence
 
@@ -28,7 +28,7 @@ $$
 $$
 holds exactly when $M$ is a scalar multiple of a $*$-unitary matrix, because the two sides differ by the factor $M^{\dagger}M$.
 
-*Proof.* The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities. $\square$
+*Proof.* The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities.
 
 **The two halves are preserved.** If $X^{\dagger}=X$, then
 $$

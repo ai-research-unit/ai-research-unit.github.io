@@ -10,28 +10,28 @@ This article treats the Hermitian metric and the Kähler form, the complex struc
 
 ## The Hermitian Metric and the Kähler Form
 
-**The Hermitian metric is $h=\sum_kdz_k\otimes d\bar z_k$; its real part is the Euclidean metric and its imaginary part is minus the Kähler form, a closed and nondegenerate $2$-form.**
+**The Hermitian metric is $h=dQ_{\blacktriangle}\otimes d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\otimes d\overline{Q}_{\blacktriangledown}$; its real part is the Euclidean metric and its imaginary part is minus the Kähler form, a closed and nondegenerate $2$-form.**
 
 **Definition.** The **Hermitian metric** on $\mathbb{C}^2$ is
 $$
-h=\sum_{k=1}^{2}dz_k\otimes d\bar z_k,
+h=dQ_{\blacktriangle}\otimes d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\otimes d\overline{Q}_{\blacktriangledown},
 $$
 and its real and imaginary parts are
 $$
-g=\operatorname{Re}h=\sum_{k=1}^{2}\bigl(dx_k^2+dy_k^2\bigr),\qquad
-\Omega=-\operatorname{Im}h=\frac{i}{2}\sum_{k=1}^{2}dz_k\wedge d\bar z_k.
+g=\operatorname{Re}h=dq_{\blacktriangle}^2+dq'^2_{\blacktriangle}+dq_{\blacktriangledown}^2+dq'^2_{\blacktriangledown},\qquad
+\Omega=-\operatorname{Im}h=\frac{i}{2}\left(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown}\right).
 $$
 The form $\Omega$ is the **Kähler form** of the flat metric.
 
 **Proposition (the three readings).** The form $g$ is a Riemannian metric of signature $(4,0)$; the form $\Omega$ is a symplectic form; and
 $$
-\Omega=\sum_{k=1}^{2}dx_k\wedge dy_k,
+\Omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown},
 \qquad
 \Omega(X,Y)=g(JX,Y)
 $$
 for real vector fields $X,Y$. In particular $\Omega$ is nondegenerate and $J$ is an isometry of $g$.
 
-*Proof.* In real coordinates, $\frac{i}{2}dz_k\wedge d\bar z_k=dx_k\wedge dy_k$, so $\Omega$ is the standard symplectic form of $\mathbb{R}^4$. The identity $\Omega(X,Y)=g(JX,Y)$ is checked on the basis: $J\partial_{x_k}=\partial_{y_k}$, $J\partial_{y_k}=-\partial_{x_k}$, and $g(\partial_{x_k},\partial_{y_k})=0$, $g(J\partial_{x_k},\partial_{y_k})=1$. The metric is positive definite and $g(JX,JY)=g(X,Y)$.
+*Proof.* In real coordinates, $\frac{i}{2}dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}$, and the same with the descending triangle, so $\Omega$ is the standard symplectic form of $\mathbb{R}^4$. The identity $\Omega(X,Y)=g(JX,Y)$ is checked on the basis: $J\partial_{q_{\blacktriangle}}=\partial_{q'_{\blacktriangle}}$, $J\partial_{q'_{\blacktriangle}}=-\partial_{q_{\blacktriangle}}$, and $g(\partial_{q_{\blacktriangle}},\partial_{q'_{\blacktriangle}})=0$, $g(J\partial_{q_{\blacktriangle}},\partial_{q'_{\blacktriangle}})=1$. The metric is positive definite and $g(JX,JY)=g(X,Y)$.
 
 **Theorem (the Kähler condition).** The form $\Omega$ is closed, $d\Omega=0$, and the metric is Kähler. The complex structure $J$ is parallel, $\nabla J=0$, for the Levi-Civita connection of $g$.
 
@@ -39,48 +39,48 @@ for real vector fields $X,Y$. In particular $\Omega$ is nondegenerate and $J$ is
 
 **Remark (the orientation).** The volume form is
 $$
-\frac{\Omega^2}{2!}=dx_1\wedge dy_1\wedge dx_2\wedge dy_2,
+\frac{\Omega^2}{2!}=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}\wedge dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown},
 $$
 the Lebesgue volume of $\mathbb{R}^4$. **The Kähler form is the area form of the complex lines**: its restriction to a complex line is the Euclidean area form of that plane, with the orientation given by $J$.
 
 ## The Complex Structure and the Forms
 
-**The Hermitian form $H$, the bilinear form $B$ and the Kähler form $\Omega$ are three readings of the same metric data; $H=g-i\Omega$ on real vectors, and $B$ is $H$ composed with the conjugation of the second variable. The holomorphic symplectic form $\omega=dz_1\wedge dz_2$ is a fourth form, treated in *The Three Canonical Forms on $\mathbb{C}^2$*.**
+**The Hermitian form $H$, the bilinear form $B$ and the Kähler form $\Omega$ are three readings of the same metric data; $H=g-i\Omega$ on real vectors, and $B$ is $H$ composed with the conjugation of the second variable. The holomorphic symplectic form $\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$ is a fourth form, treated in *The Three Canonical Forms on $\mathbb{C}^2$*.**
 
 **Definition.** On $\mathbb{C}^2$,
 $$
-H(z,w)=\sum_{k=1}^{2}z_k\overline{w_k},\qquad
-B(z,w)=\sum_{k=1}^{2}z_kw_k,\qquad
+H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}},\qquad
+B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown},\qquad
 \Omega(X,Y)=g(JX,Y).
 $$
 
-**Proposition (the relation among the forms).** For real vectors $z,w\in\mathbb{C}^2\cong\mathbb{R}^4$,
+**Proposition (the relation among the forms).** For real vectors $Q_1,Q_2\in\mathbb{C}^2\cong\mathbb{R}^4$,
 $$
-H(z,w)=g(z,w)+i\operatorname{Im}H(z,w)=g(z,w)-i\,\Omega(z,w),
+H(Q_1,Q_2)=g(Q_1,Q_2)+i\operatorname{Im}H(Q_1,Q_2)=g(Q_1,Q_2)-i\,\Omega(Q_1,Q_2),
 $$
 and
 $$
-B(z,w)=H(z,\bar w).
+B(Q_1,Q_2)=H(Q_1,\overline{Q_2}).
 $$
 The form $B$ is complex bilinear and symmetric; the form $H$ is Hermitian; the form $\Omega$ is real and alternating.
 
-*Proof.* The real part of $H$ is $g$ by definition, and the imaginary part is $-\Omega$ by the computation of the previous section. The identity $B(z,w)=H(z,\bar w)$ is the definition of $B$ and the fact that $\overline{\bar w_k}=w_k$.
+*Proof.* The real part of $H$ is $g$ by definition, and the imaginary part is $-\Omega$ by the computation of the previous section. The identity $B(Q_1,Q_2)=H(Q_1,\overline{Q_2})$ is the definition of $B$ and the fact that $\overline{\bar w_k}=w_k$.
 
 **Remark (the signatures).** The real part of $B$ is the symmetric form
 $$
-\operatorname{Re}B(z,w)=x_1u_1-y_1v_1+x_2u_2-y_2v_2,
+\operatorname{Re}B(Q_1,Q_2)=q_{\blacktriangle}u_{\blacktriangle}-q'_{\blacktriangle}v_{\blacktriangle}+q_{\blacktriangledown}u_{\blacktriangledown}-q'_{\blacktriangledown}v_{\blacktriangledown},
 $$
 of signature $(2,2)$; the imaginary part is the symmetric form
 $$
-\operatorname{Im}B(z,w)=x_1v_1+y_1u_1+x_2v_2+y_2u_2,
+\operatorname{Im}B(Q_1,Q_2)=q_{\blacktriangle}v_{\blacktriangle}+q'_{\blacktriangle}u_{\blacktriangle}+q_{\blacktriangledown}v_{\blacktriangledown}+q'_{\blacktriangledown}u_{\blacktriangledown},
 $$
 also of signature $(2,2)$. **The form $B$ is the complexification of the split-complex norm**, and its isotropic cone is treated in *The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$*. The Kähler form $\Omega$ is nondegenerate on every complex line, and its sign is the orientation of the line.
 
 **Remark (the two almost-complex structures).** The complex structure $J$ is compatible with $g$ and with $\Omega$; the form $B$ is $\mathbb{C}$-bilinear and satisfies
 $$
-B(Jz,Jw)=-B(z,w),
+B(JQ_1,JQ_2)=-B(Q_1,Q_2),
 $$
-so it is $J$-anti-invariant. **The three forms $H$, $B$ and $\Omega$ are not independent data**: $g$ and $\Omega$ determine each other through $J$, and $B$ is the holomorphic reading of $H$; the holomorphic symplectic form is $\omega=dz_1\wedge dz_2$.
+so it is $J$-anti-invariant. **The three forms $H$, $B$ and $\Omega$ are not independent data**: $g$ and $\Omega$ determine each other through $J$, and $B$ is the holomorphic reading of $H$; the holomorphic symplectic form is $\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$.
 
 ## Flatness and Curvature
 
@@ -88,7 +88,7 @@ so it is $J$-anti-invariant. **The three forms $H$, $B$ and $\Omega$ are not ind
 
 **Theorem (zero curvature).** The Riemann curvature tensor of $g$ vanishes identically, and so do the Ricci tensor, the scalar curvature and the holomorphic sectional curvature. The geodesics are the affine real lines $t\mapsto a+tv$, and the exponential map at every point is the identity in the linear coordinates.
 
-*Proof.* In the linear coordinates $(x_1,y_1,x_2,y_2)$ the metric has constant coefficients, so the Christoffel symbols vanish, the curvature tensor is zero, and the geodesic equation is $\ddot x=0$. The exponential map is the identity because the geodesics are straight lines.
+*Proof.* In the linear coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the metric has constant coefficients, so the Christoffel symbols vanish, the curvature tensor is zero, and the geodesic equation is $\ddot x=0$. The exponential map is the identity because the geodesics are straight lines.
 
 **Corollary (the model).** Every complete simply connected flat Kähler manifold of complex dimension $2$ is isometric to $\mathbb{C}^2$ with the flat metric.
 
@@ -100,15 +100,15 @@ so it is $J$-anti-invariant. **The three forms $H$, $B$ and $\Omega$ are not ind
 
 ## The Holomorphic Isometries
 
-**The holomorphic isometries of the flat metric are the affine maps $z\mapsto Az+b$ with $A\in\mathrm{U}(2)$; they form the group $\mathbb{C}^2\rtimes\mathrm{U}(2)$ of real dimension $8$.**
+**The holomorphic isometries of the flat metric are the affine maps $Q\mapsto AQ+Q_0$ with $A\in\mathrm{U}(2)$; they form the group $\mathbb{C}^2\rtimes\mathrm{U}(2)$ of real dimension $8$.**
 
 **Theorem (the isometry group).** Every holomorphic isometry of $\mathbb{C}^2$ with the flat metric is of the form
 $$
-z\longmapsto Az+b,\qquad A\in\mathrm{U}(2),\ b\in\mathbb{C}^2.
+Q\longmapsto AQ+Q_0,\qquad A\in\mathrm{U}(2),\ Q_0\in\mathbb{C}^2.
 $$
 The group is the semidirect product $\mathbb{C}^2\rtimes\mathrm{U}(2)$, of real dimension $4+4=8$.
 
-*Proof.* An isometry of $\mathbb{R}^4$ is affine, $z\mapsto Az+b$ with $A\in\mathrm{O}(4)$; it is holomorphic exactly when $A$ commutes with $J$, that is, when $A\in\mathrm{O}(4)\cap\mathrm{GL}_2(\mathbb{C})=\mathrm{U}(2)$. The translations form the normal subgroup $\mathbb{C}^2$, and the linear parts form $\mathrm{U}(2)$.
+*Proof.* An isometry of $\mathbb{R}^4$ is affine, $Q\mapsto AQ+Q_0$ with $A\in\mathrm{O}(4)$; it is holomorphic exactly when $A$ commutes with $J$, that is, when $A\in\mathrm{O}(4)\cap\mathrm{GL}_2(\mathbb{C})=\mathrm{U}(2)$. The translations form the normal subgroup $\mathbb{C}^2$, and the linear parts form $\mathrm{U}(2)$.
 
 **Corollary (the full isometry group).** The isometry group of the flat metric, without the holomorphic condition, is $\mathbb{C}^2\rtimes\mathrm{O}(4)$, of real dimension $4+6=10$; the holomorphic isometries form the subgroup $\mathbb{C}^2\rtimes\mathrm{U}(2)$, of codimension two.
 
@@ -120,11 +120,11 @@ The group is the semidirect product $\mathbb{C}^2\rtimes\mathrm{U}(2)$, of real 
 
 ## The Kähler Potential and the Canonical Form
 
-**The flat Kähler form has the global potential $\varphi=\frac12\lVert z\rVert^2$, and the metric is the Hessian of $\varphi$; the canonical bundle is trivial and the space is Calabi–Yau.**
+**The flat Kähler form has the global potential $\varphi=\frac12\lVert Q\rVert^2$, and the metric is the Hessian of $\varphi$; the canonical bundle is trivial and the space is Calabi–Yau.**
 
 **Proposition (the potential).** The function
 $$
-\varphi(z)=\frac12\lVert z\rVert^2=\frac12\sum_{k=1}^{2}\lvert z_k\rvert^2
+\varphi(Q)=\frac12\lVert Q\rVert^2=\frac12\left(\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2\right)
 $$
 satisfies
 $$
@@ -132,15 +132,15 @@ $$
 $$
 Conversely, every Kähler potential of the flat form differs from $\varphi$ by a pluriharmonic function.
 
-*Proof.* The mixed second derivatives of $\varphi$ are $\partial^2\varphi/\partial z_j\partial\bar z_k=\frac12\delta_{jk}$, so $i\partial\bar\partial\varphi=\frac{i}{2}\sum_kdz_k\wedge d\bar z_k=\Omega$. If $\varphi'$ is another potential, then $\partial\bar\partial(\varphi'-\varphi)=0$, so $\varphi'-\varphi$ is pluriharmonic.
+*Proof.* The mixed second derivatives of $\varphi$ are $\partial^2\varphi/\partial Q_{\blacktriangle}\partial\overline{Q}_{\blacktriangle}=\partial^2\varphi/\partial Q_{\blacktriangledown}\partial\overline{Q}_{\blacktriangledown}=\frac12$ and the mixed ones vanish, so $i\partial\bar\partial\varphi=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=\Omega$. If $\varphi'$ is another potential, then $\partial\bar\partial(\varphi'-\varphi)=0$, so $\varphi'-\varphi$ is pluriharmonic.
 
-**Proposition (the metric as a Hessian).** In the real coordinates, the metric is the Hessian of $\frac12\lVert z\rVert^2$, and the Kähler form is the associated $(1,1)$-form. The form $\Omega$ is parallel for the Levi-Civita connection, and the pair $(g,\Omega)$ is a Kähler structure.
+**Proposition (the metric as a Hessian).** In the real coordinates, the metric is the Hessian of $\frac12\lVert Q\rVert^2$, and the Kähler form is the associated $(1,1)$-form. The form $\Omega$ is parallel for the Levi-Civita connection, and the pair $(g,\Omega)$ is a Kähler structure.
 
 *Proof.* The Hessian of a quadratic form is the constant form itself; the association is the one of the previous proposition.
 
 **Remark (the canonical bundle).** The holomorphic volume form
 $$
-\omega=dz_1\wedge dz_2
+\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}
 $$
 is parallel and nowhere vanishing, so the canonical bundle of $\mathbb{C}^2$ is trivial. **The flat Kähler metric is Ricci-flat and the space is a (noncompact) Calabi–Yau manifold of complex dimension $2$**; the form $\omega$ is the holomorphic symplectic form of *The Three Canonical Forms on $\mathbb{C}^2$*, and it is preserved by every holomorphic map with Jacobian determinant $1$.
 
@@ -148,22 +148,22 @@ is parallel and nowhere vanishing, so the canonical bundle of $\mathbb{C}^2$ is 
 
 ## Summary
 
-The flat Kähler structure of $\mathbb{C}^2$ is the Euclidean metric $g=\sum(dx_k^2+dy_k^2)$ together with the complex structure $J$ and the Kähler form $\Omega=\frac{i}{2}\sum dz_k\wedge d\bar z_k=\sum dx_k\wedge dy_k$. The Hermitian form is $H=g-i\Omega$ on real vectors, the bilinear form is $B(z,w)=H(z,\bar w)$, and $\Omega(X,Y)=g(JX,Y)$. The metric is flat: the curvature tensor, the Ricci tensor, the scalar curvature and the holomorphic sectional curvature vanish, the geodesics are the real lines and the exponential map is the identity.
+The flat Kähler structure of $\mathbb{C}^2$ is the Euclidean metric $g=dq_{\blacktriangle}^2+dq'^2_{\blacktriangle}+dq_{\blacktriangledown}^2+dq'^2_{\blacktriangledown}$ together with the complex structure $J$ and the Kähler form $\Omega=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$. The Hermitian form is $H=g-i\Omega$ on real vectors, the bilinear form is $B(Q_1,Q_2)=H(Q_1,\overline{Q_2})$, and $\Omega(X,Y)=g(JX,Y)$. The metric is flat: the curvature tensor, the Ricci tensor, the scalar curvature and the holomorphic sectional curvature vanish, the geodesics are the real lines and the exponential map is the identity.
 
-The holomorphic isometries are the affine maps $z\mapsto Az+b$ with $A\in\mathrm{U}(2)$, forming $\mathbb{C}^2\rtimes\mathrm{U}(2)$ of real dimension $8$; the full isometry group is $\mathbb{C}^2\rtimes\mathrm{O}(4)$ of dimension $10$. The Kähler form has the global potential $\frac12\lVert z\rVert^2$, the canonical bundle is trivial, and the space is a noncompact Calabi–Yau manifold. The flat structure is the zero-curvature model of a Kähler surface, and its compact quotients are the complex tori.
+The holomorphic isometries are the affine maps $Q\mapsto AQ+Q_0$ with $A\in\mathrm{U}(2)$, forming $\mathbb{C}^2\rtimes\mathrm{U}(2)$ of real dimension $8$; the full isometry group is $\mathbb{C}^2\rtimes\mathrm{O}(4)$ of dimension $10$. The Kähler form has the global potential $\frac12\lVert Q\rVert^2$, the canonical bundle is trivial, and the space is a noncompact Calabi–Yau manifold. The flat structure is the zero-curvature model of a Kähler surface, and its compact quotients are the complex tori.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $h=\sum_kdz_k\otimes d\bar z_k$ | the Hermitian metric |
+| $h=dQ_{\blacktriangle}\otimes d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\otimes d\overline{Q}_{\blacktriangledown}$ | the Hermitian metric |
 | $g=\operatorname{Re}h$ | the Euclidean metric of $\mathbb{R}^4$ |
-| $\Omega=-\operatorname{Im}h=\frac{i}{2}\sum_kdz_k\wedge d\bar z_k$ | the Kähler form |
+| $\Omega=-\operatorname{Im}h=\frac{i}{2}(dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}+dQ_{\blacktriangledown}\wedge d\overline{Q}_{\blacktriangledown})$ | the Kähler form |
 | $J$ | the complex structure, $J^2=-I$ |
-| $H(z,w)=\sum_kz_k\overline{w_k}$ | the Hermitian form |
-| $B(z,w)=\sum_kz_kw_k$ | the complex bilinear form |
-| $\varphi=\frac12\lVert z\rVert^2$ | the Kähler potential, $\Omega=i\partial\bar\partial\varphi$ |
-| $\omega=dz_1\wedge dz_2$ | the holomorphic symplectic form and volume form |
+| $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$ | the Hermitian form |
+| $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the complex bilinear form |
+| $\varphi=\frac12\lVert Q\rVert^2$ | the Kähler potential, $\Omega=i\partial\bar\partial\varphi$ |
+| $\omega=dQ_{\blacktriangle}\wedge dQ_{\blacktriangledown}$ | the holomorphic symplectic form and volume form |
 | $\mathbb{C}^2\rtimes\mathrm{U}(2)$ | the group of holomorphic isometries |
 | $\mathbb{C}^2\rtimes\mathrm{O}(4)$ | the full isometry group |
 

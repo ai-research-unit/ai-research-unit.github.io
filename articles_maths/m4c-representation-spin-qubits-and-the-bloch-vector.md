@@ -12,12 +12,12 @@ $$
 \qquad
 \mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k.
 $$
-In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
+In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.
 
 **Boundaries.** The two spinor planes are *$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Hermitian Basis
 
@@ -101,18 +101,18 @@ $$
 
 **Proposition.** $\tilde\Pi(\vec u)$ is a Hermitian idempotent of trace one and determinant zero, and
 $$
-\mathsf{M}_4\bigl(\tilde\Pi(\vec u)\bigr)
+\mathsf{M}_4^{L}\bigl(\tilde\Pi(\vec u)\bigr)
 =\tfrac12\bigl(\mathrm I_4+\vec u\cdot\vec\Sigma\bigr)
 =\operatorname{diag}\bigl(\tfrac12(\mathrm I_2+\vec u\cdot\vec\sigma),\ \tfrac12(\mathrm I_2+\vec u\cdot\vec\sigma)\bigr)
 \quad\text{(Peirce basis)}
 $$
 is a rank-two projector of trace two.
 
-*Proof.* The image is Hermitian because $\vec u$ is real. It squares to itself because $(\vec u\cdot\vec\Sigma)^2=|\vec u|^2\mathrm I_4=\mathrm I_4$. Its trace is $2$ and its determinant is $0$, so it has rank two; a rank-two Hermitian idempotent is the orthogonal projector onto its image, which is $W\oplus W$ for the line $W$ of the spinor of spin up along $\vec u$. $\square$
+*Proof.* The image is Hermitian because $\vec u$ is real. It squares to itself because $(\vec u\cdot\vec\Sigma)^2=|\vec u|^2\mathrm I_4=\mathrm I_4$. Its trace is $2$ and its determinant is $0$, so it has rank two; a rank-two Hermitian idempotent is the orthogonal projector onto its image, which is $W\oplus W$ for the line $W$ of the spinor of spin up along $\vec u$.
 
 **The normalized state.** The trace-one density matrix is
 $$
-\rho_4(\vec u)=\tfrac12\mathsf{M}_4\bigl(\tilde\Pi(\vec u)\bigr)
+\rho_4(\vec u)=\tfrac12\mathsf{M}_4^{L}\bigl(\tilde\Pi(\vec u)\bigr)
 =\tfrac14\bigl(\mathrm I_4+\vec u\cdot\vec\Sigma\bigr)
 =\tfrac12\mathrm I_2\otimes\tilde\Pi(\vec u),
 $$
@@ -120,7 +120,7 @@ where the first factor is the copy label and the tensor product is in the Peirce
 
 **The complementary state.** $\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)=e_t$, and
 $$
-\mathsf{M}_4\bigl(\tilde\Pi(-\vec u)\bigr)=\mathrm I_4-\mathsf{M}_4\bigl(\tilde\Pi(\vec u)\bigr),
+\mathsf{M}_4^{L}\bigl(\tilde\Pi(-\vec u)\bigr)=\mathrm I_4-\mathsf{M}_4^{L}\bigl(\tilde\Pi(\vec u)\bigr),
 $$
 so the two projectors are complementary and orthogonal.
 
@@ -205,17 +205,17 @@ and the four matrices $\mathrm I_4,\Sigma_1,\Sigma_2,\Sigma_3$ are a basis of th
 
 **The measurement formulae.** For a unit vector $\vec u$, the probability of the outcome $+$ in the measurement of the spin along $\vec u$ is
 $$
-p_+(\vec u)=\operatorname{Tr}\bigl(\rho_4\,\mathsf M_4(\tilde\Pi(\vec u))\bigr)
+p_+(\vec u)=\operatorname{Tr}\bigl(\rho_4\,\mathsf{M}_4^{L}(\tilde\Pi(\vec u))\bigr)
 =\tfrac12\bigl(1+\vec r\cdot\vec u\bigr),
 $$
 and the probability of the outcome $-$ is $p_-=\tfrac12(1-\vec r\cdot\vec u)$. The expectation of the spin is
 $$
-\langle S_{\vec u}\rangle=\operatorname{Tr}\bigl(\rho_4\,\mathsf M_4(\tilde S_{\vec u})\bigr)
+\langle S_{\vec u}\rangle=\operatorname{Tr}\bigl(\rho_4\,\mathsf{M}_4^{L}(\tilde S_{\vec u})\bigr)
 =\tfrac{\hbar}{2}\,\vec r\cdot\vec u.
 $$
 More generally, for a Hermitian observable $\tilde H=h_t e_t+i\vec h$ the expectation is
 $$
-\operatorname{Tr}\bigl(\rho_4\,\mathsf M_4(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
+\operatorname{Tr}\bigl(\rho_4\,\mathsf{M}_4^{L}(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
 $$
 which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Three Elementary Carriers* is the same identity written with the state idempotent, and the doubling cancels because both copies carry the same state.
 

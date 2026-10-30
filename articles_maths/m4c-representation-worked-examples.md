@@ -6,9 +6,9 @@ This article computes eight regular matrices through the same checklist used in 
 
 The article is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Worked Examples* and the capstone of the series.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. In the Peirce basis,
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. In the canonical frame,
 $$
-S^{-1}\mathsf{M}_4^{L}(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
+\mathsf{M}_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
 \qquad
 A=\mathsf{M}_2(\tilde Q),
 $$
@@ -27,7 +27,7 @@ for $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}\ma
 
 **Boundaries.** The construction is *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the polar factors are *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the rank is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the groups are *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
-**Frame.** The Peirce basis used below is the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*; a matrix in the coefficient basis is carried to it by the change $S$ of *The Product, the Trace and the Determinant*, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Method
 
@@ -272,9 +272,9 @@ The checks are collected in one table.
 | Spin, Qubits and the Bloch Vector | the states | $\rho_4=\tfrac12\mathrm I_2\otimes\rho$ |
 | The Polar Decomposition of a Matrix | the factors | $X=PV$, $P=(XX^{\dagger})^{1/2}$ |
 | The Spectral Projectors and the Nilpotents | the spectrum | $\rho_\pm$ of rank two |
-| The Eigenbasis and the Diagonalising Matrix | the basis | $S^{-1}XS=\operatorname{diag}(A,A)$ |
+| The Eigenbasis and the Diagonalising Matrix | the basis | $X=\operatorname{diag}(A,A)$ |
 | The Centraliser and the Double Centraliser | the commutants and the right matrix | $C_L(X)\cong\mathbb{C}[A]$, $C_L(C_L(X))\cong\mathbb{C}[A]$, $\mathsf{M}_4^{R}(\tilde Q)$ |
-| The Conjugations and the Adjoints | the involutions | $X^{\dagger}=M_X^{\dagger}$, $X^{\mathsf T}=M_{X^{\natural}}$ |
+| The Conjugations and the Adjoints | the involutions | $X^{\dagger}=M_X^{\dagger}$; $X^{\mathsf T}=M_{X^{\natural}}$ in the coefficient basis |
 | The Six Subspaces as Matrix Conditions | the real forms | Hermitian, anti-Hermitian, quaternion, anti-quaternion |
 | Worked Examples | this article | the eight matrices and the roster |
 | $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant | the groups | $\det X=N^2$, $\ker\det=\{N=\pm1\}$ |

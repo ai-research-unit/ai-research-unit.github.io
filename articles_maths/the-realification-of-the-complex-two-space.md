@@ -14,9 +14,9 @@ The article is the bridge between the space of the previous article and the real
 
 **Definition.** Let $V=\mathbb{C}^2$. The **realification** $V_{\mathbb{R}}$ is the abelian group $(V,+)$ with the scalar multiplication
 $$
-\mathbb{R}\times V\longrightarrow V,\qquad (a,z)\longmapsto az,
+\mathbb{R}\times V\longrightarrow V,\qquad (a,Q)\longmapsto aQ,
 $$
-where the right side is the complex product of $z$ by the real number $a$. The complex multiplication is forgotten as a structure and remembered as the operator $J$ of *Complex Two-Space*.
+where the right side is the complex product of $Q$ by the real number $a$. The complex multiplication is forgotten as a structure and remembered as the operator $J$ of *Complex Two-Space*.
 
 **Proposition (the dimension doubles).** For every finite-dimensional complex vector space $V$, $\dim_{\mathbb{R}}V_{\mathbb{R}}=2\dim_{\mathbb{C}}V$. In particular $\dim_{\mathbb{R}}\mathbb{C}^2_{\mathbb{R}}=4$.
 
@@ -24,7 +24,7 @@ where the right side is the complex product of $z$ by the real number $a$. The c
 
 The real basis and the real coordinates are those of *Complex Two-Space*:
 $$
-z=x_1e_1+y_1(ie_1)+x_2e_2+y_2(ie_2),\qquad z_k=x_k+iy_k.
+Q=q_{\blacktriangle}e_1+q'_{\blacktriangle}(ie_1)+q_{\blacktriangledown}e_2+q'_{\blacktriangledown}(ie_2),\qquad Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle},\quad Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}.
 $$
 The realification is recorded by the following table.
 
@@ -47,11 +47,11 @@ The realification is recorded by the following table.
 
 **A real-linear map of $\mathbb{C}^2$ is complex-linear exactly when it commutes with $J$ and conjugate-linear exactly when it anticommutes, and every real-linear map is the sum of one of each kind.**
 
-**Definition.** Let $T:V\to V$ be real-linear. The map is **complex-linear** when $T(\lambda z)=\lambda T(z)$ for every $\lambda\in\mathbb{C}$, and **conjugate-linear** when $T(\lambda z)=\overline{\lambda}T(z)$ for every $\lambda\in\mathbb{C}$.
+**Definition.** Let $T:V\to V$ be real-linear. The map is **complex-linear** when $T(\lambda Q)=\lambda T(Q)$ for every $\lambda\in\mathbb{C}$, and **conjugate-linear** when $T(\lambda Q)=\overline{\lambda}T(Q)$ for every $\lambda\in\mathbb{C}$.
 
 **Proposition (the two commutation rules).** A real-linear $T$ is complex-linear exactly when $TJ=JT$, and conjugate-linear exactly when $TJ=-JT$.
 
-*Proof.* The complex-linear condition is equivalent to its case $\lambda=i$, which is $T(iz)=iT(z)$, that is $TJ=JT$. The conjugate-linear condition is $T(iz)=-iT(z)$, that is $TJ=-JT$. The case of a general $\lambda$ follows from the case $\lambda=i$ together with real linearity: $\lambda=a+ib$ gives $T(\lambda z)=aT(z)+bT(iz)=aT(z)+bJT(z)$, which is $\lambda T(z)$ in the first case and $\bar\lambda T(z)$ in the second.
+*Proof.* The complex-linear condition is equivalent to its case $\lambda=i$, which is $T(iQ)=iT(Q)$, that is $TJ=JT$. The conjugate-linear condition is $T(iQ)=-iT(Q)$, that is $TJ=-JT$. The case of a general $\lambda$ follows from the case $\lambda=i$ together with real linearity: $\lambda=a+ib$ gives $T(\lambda Q)=aT(Q)+bT(iQ)=aT(Q)+bJT(Q)$, which is $\lambda T(Q)$ in the first case and $\bar\lambda T(Q)$ in the second.
 
 **Theorem (the splitting of the real endomorphisms).** Every real-linear $T:V\to V$ is uniquely
 $$
@@ -71,17 +71,17 @@ using $J^2=-I$, so $T_+$ is complex-linear; and
 $$
 T_-J=\tfrac12(TJ+JTJ^2)=\tfrac12(TJ-JT)=-J\tfrac12(T+JTJ)=-JT_-,
 $$
-so $T_-$ is conjugate-linear. Uniqueness follows because a map that is both complex-linear and conjugate-linear satisfies $T(iz)=iT(z)=-iT(z)$, hence $T=0$. The dimensions are those of $M_2(\mathbb{C})$ over $\mathbb{R}$, twice.
+so $T_-$ is conjugate-linear. Uniqueness follows because a map that is both complex-linear and conjugate-linear satisfies $T(iQ)=iT(Q)=-iT(Q)$, hence $T=0$. The dimensions are those of $M_2(\mathbb{C})$ over $\mathbb{R}$, twice.
 
-**Remark (the sum is not a sum of algebras).** The product of two conjugate-linear maps is complex-linear, because $T_-S_-(\lambda z)=T_-(S_-(\lambda z))=T_-(\bar\lambda S_-(z))=\bar{\bar\lambda}T_-(S_-(z))=\lambda T_-S_-(z)$. **The subspace $\operatorname{Hom}_{\bar{\mathbb{C}}}$ is an $\operatorname{End}_{\mathbb{C}}$-bimodule and not a subalgebra**, and $\operatorname{End}_{\mathbb{R}}$ is not the direct product of the two summands as a ring. The grading by the two kinds is a $\mathbb{Z}_2$-grading of the algebra, with the even part $\operatorname{End}_{\mathbb{C}}$ and the odd part $\operatorname{Hom}_{\bar{\mathbb{C}}}$.
+**Remark (the sum is not a sum of algebras).** The product of two conjugate-linear maps is complex-linear, because $T_-S_-(\lambda Q)=T_-(S_-(\lambda Q))=T_-(\bar\lambda S_-(Q))=\bar{\bar\lambda}T_-(S_-(Q))=\lambda T_-S_-(Q)$. **The subspace $\operatorname{Hom}_{\bar{\mathbb{C}}}$ is an $\operatorname{End}_{\mathbb{C}}$-bimodule and not a subalgebra**, and $\operatorname{End}_{\mathbb{R}}$ is not the direct product of the two summands as a ring. The grading by the two kinds is a $\mathbb{Z}_2$-grading of the algebra, with the even part $\operatorname{End}_{\mathbb{C}}$ and the odd part $\operatorname{Hom}_{\bar{\mathbb{C}}}$.
 
 **Proposition (the matrix form).** In the standard complex basis, every real-linear $T$ is
 $$
-T(z)=Az+B\overline{z},\qquad A,B\in M_2(\mathbb{C}),
+T(Q)=AQ+B\overline{Q},\qquad A,B\in M_2(\mathbb{C}),
 $$
-where $\overline{z}=(\overline{z_1},\overline{z_2})$. The map is complex-linear exactly when $B=0$ and conjugate-linear exactly when $A=0$.
+where $\overline{Q}=(\overline{Q}_{\blacktriangle},\overline{Q}_{\blacktriangledown})$. The map is complex-linear exactly when $B=0$ and conjugate-linear exactly when $A=0$.
 
-*Proof.* The expression is real-linear for every pair $A,B$. Conversely, a real-linear map is determined by its values on $e_1,ie_1,e_2,ie_2$, and the four values are the columns of a real $4\times4$ matrix; the pair $(A,B)$ collects the images of $e_1,e_2$ and of $ie_1,ie_2$ in the complex basis, and the two collections determine the map. The conditions follow from $T(iz)=iAz-iB\overline{z}$ compared with $iT(z)=iAz+iB\overline{z}$ and with $-iT(z)=-iAz-iB\overline{z}$.
+*Proof.* The expression is real-linear for every pair $A,B$. Conversely, a real-linear map is determined by its values on $e_1,ie_1,e_2,ie_2$, and the four values are the columns of a real $4\times4$ matrix; the pair $(A,B)$ collects the images of $e_1,e_2$ and of $ie_1,ie_2$ in the complex basis, and the two collections determine the map. The conditions follow from $T(iQ)=iAQ-iB\overline{Q}$ compared with $iT(Q)=iAQ+iB\overline{Q}$ and with $-iT(Q)=-iAQ-iB\overline{Q}$.
 
 **Remark (the conjugate space).** The conjugate vector space $\overline{V}$ has the same abelian group and the scalar multiplication $\lambda\cdot v=\overline{\lambda}v$. **A conjugate-linear map $V\to V$ is the same thing as a complex-linear map $\overline{V}\to V$**, and the identity map $V\to\overline{V}$ is conjugate-linear. The two summands of the splitting are $\operatorname{Hom}_{\mathbb{C}}(V,V)$ and $\operatorname{Hom}_{\mathbb{C}}(\overline{V},V)$, each of complex dimension $4$.
 
@@ -93,11 +93,11 @@ where $\overline{z}=(\overline{z_1},\overline{z_2})$. The map is complex-linear 
 
 **Proposition (the Cauchy–Riemann compatibility).** For a $\mathbb{C}$-bilinear $F$,
 $$
-\operatorname{Re}F(Jz,w)=-\operatorname{Im}F(z,w),\qquad \operatorname{Im}F(Jz,w)=\operatorname{Re}F(z,w),
+\operatorname{Re}F(JQ_1,Q_2)=-\operatorname{Im}F(Q_1,Q_2),\qquad \operatorname{Im}F(JQ_1,Q_2)=\operatorname{Re}F(Q_1,Q_2),
 $$
 and the same two identities hold with $J$ in the second slot.
 
-*Proof.* $F(Jz,w)=F(iz,w)=iF(z,w)$; taking real and imaginary parts gives the two identities. The second slot is the same computation with $F(z,iw)=iF(z,w)$.
+*Proof.* $F(JQ_1,Q_2)=F(iQ_1,Q_2)=iF(Q_1,Q_2)$; taking real and imaginary parts gives the two identities. The second slot is the same computation with $F(Q_1,iQ_2)=iF(Q_1,Q_2)$.
 
 **Theorem (the signatures).** On the real space $\mathbb{R}^4$:
 
@@ -106,11 +106,11 @@ and the same two identities hold with $J$ in the second slot.
 - $\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric and nondegenerate, each of signature $(2,2)$;
 - $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are alternating and nondegenerate, each of rank $4$.
 
-*Proof.* In the real basis $e_1,ie_1,e_2,ie_2$, the form $\operatorname{Re}H$ is $\sum_k(x_k^2+y_k^2)$, the identity matrix. The form $\operatorname{Im}H$ is $-\sum_k dx_k\wedge dy_k$, whose matrix is block diagonal with two copies of $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, of Pfaffian $1$. The form $\operatorname{Re}B$ is $\sum_k(x_k^2-y_k^2)$, of signature $(2,2)$; the form $\operatorname{Im}B$ is $2\sum_k x_ky_k$, whose matrix has the two eigenvalues $\pm1$ in each coordinate plane, again of signature $(2,2)$. The forms $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are computed in *The Three Canonical Forms on $\mathbb{C}^2$*, where their Pfaffians are $1$.
+*Proof.* In the real basis $e_1,ie_1,e_2,ie_2$, the form $\operatorname{Re}H$ is $q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2$, the identity matrix. The form $\operatorname{Im}H$ is $-(dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown})$, whose matrix is block diagonal with two copies of $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, of total Pfaffian $1$. The form $\operatorname{Re}B$ is $q_{\blacktriangle}^2-{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2-{q'_{\blacktriangledown}}^2$, of signature $(2,2)$; the form $\operatorname{Im}B$ is $2q_{\blacktriangle}q'_{\blacktriangle}+2q_{\blacktriangledown}q'_{\blacktriangledown}$, whose matrix has the two eigenvalues $\pm1$ in each coordinate plane, again of signature $(2,2)$. The forms $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are computed in *The Three Canonical Forms on $\mathbb{C}^2$*, where their Pfaffians are $1$.
 
 The four real pictures are collected below. The notation $\Omega$ is the Kähler form,
 $$
-\Omega=-\operatorname{Im}H=\sum_{k=1}^{2}dx_k\wedge dy_k,
+\Omega=-\operatorname{Im}H=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown},
 $$
 chosen with the sign that makes it positive on the complex lines.
 
@@ -122,10 +122,10 @@ chosen with the sign that makes it positive on the complex lines.
 
 **Theorem (the Hermitian form is the metric and the Kähler form).** The Hermitian form is recovered from its real part and the complex structure by
 $$
-H(z,w)=g(z,w)-i\Omega(z,w),\qquad g=\operatorname{Re}H,\qquad \Omega(z,w)=g(Jz,w).
+H(Q_1,Q_2)=g(Q_1,Q_2)-i\Omega(Q_1,Q_2),\qquad g=\operatorname{Re}H,\qquad \Omega(Q_1,Q_2)=g(JQ_1,Q_2).
 $$
 
-*Proof.* The first identity is the definition of the real and imaginary parts. For the second, $g(Jz,w)=\operatorname{Re}H(iz,w)=\operatorname{Re}\bigl(iH(z,w)\bigr)=-\operatorname{Im}H(z,w)=\Omega(z,w)$.
+*Proof.* The first identity is the definition of the real and imaginary parts. For the second, $g(JQ_1,Q_2)=\operatorname{Re}H(iQ_1,Q_2)=\operatorname{Re}\bigl(iH(Q_1,Q_2)\bigr)=-\operatorname{Im}H(Q_1,Q_2)=\Omega(Q_1,Q_2)$.
 
 **Remark (a complex form is two real forms plus a compatibility).** The pair $(\operatorname{Re}F,\operatorname{Im}F)$ is not an arbitrary pair: it satisfies the two Cauchy–Riemann identities above, which say that $\operatorname{Im}F$ is determined by $\operatorname{Re}F$ and $J$. **Conversely, a real bilinear form $G$ determines the complex bilinear form $F=G-iG(J\cdot,\cdot)$ exactly when $G$ is compatible with $J$**, and the compatibility is the symmetry of $F$ in the symmetric case or its alternation in the alternating case. The realification of a complex form is therefore a pair with a constraint, and the constraint is the complex structure again.
 
@@ -166,15 +166,15 @@ The real algebra $\operatorname{End}_{\mathbb{R}}(\mathbb{C}^2)$ has dimension $
 
 The same trap appears on the scalars. Multiplication by a complex number $\lambda=a+ib$ is the real-linear map $a\,\mathrm{id}+bJ$, two real parameters, not one. A complex vector space of dimension $n$ has $2n$ real parameters per vector, and a complex-linear map has $2n^2$ real parameters, against $4n^2$ for a real-linear one. **The factor is not a gain in structure but a loss of maps.**
 
-**Remark (the realification is not full).** The realification functor from complex vector spaces to real vector spaces with a complex structure is faithful but not full: it has more maps on the real side. **A statement about $\mathbb{C}^2$ is a statement about a real space together with a privileged operator, and the privileged operator is not visible to the real topology.** That is why the topology of $\mathbb{C}^2$ is the topology of $\mathbb{R}^4$ and carries no trace of the complex structure, while the analysis and the geometry of $\mathbb{C}^2$ do.
+**Remark (the realification is not full).** The realification functor from complex vector spaces to real vector spaces is faithful but not full: it has more maps on the real side. **A statement about $\mathbb{C}^2$ is a statement about a real space together with a privileged operator, and the privileged operator is not visible to the real topology.** That is why the topology of $\mathbb{C}^2$ is the topology of $\mathbb{R}^4$ and carries no trace of the complex structure, while the analysis and the geometry of $\mathbb{C}^2$ do.
 
 ## Summary
 
-The realification of $\mathbb{C}^2$ is the real vector space $\mathbb{R}^4$ obtained by restricting the scalars to $\mathbb{R}$; the complex basis $e_1,e_2$ becomes the real basis $e_1,ie_1,e_2,ie_2$, and the dimension doubles from $2$ to $4$. The information lost in the passage is the complex structure $J$, the real operator $Jz=iz$ with $J^2=-I$; a real space of dimension $4$ becomes complex only when such an operator is chosen, and the complex structures on $\mathbb{R}^4$ form the homogeneous space $\mathrm{GL}_4(\mathbb{R})/\mathrm{GL}_2(\mathbb{C})$ of dimension $8$.
+The realification of $\mathbb{C}^2$ is the real vector space $\mathbb{R}^4$ obtained by restricting the scalars to $\mathbb{R}$; the complex basis $e_1,e_2$ becomes the real basis $e_1,ie_1,e_2,ie_2$, and the dimension doubles from $2$ to $4$. The information lost in the passage is the complex structure $J$, the real operator $JQ=iQ$ with $J^2=-I$; a real space of dimension $4$ becomes complex only when such an operator is chosen, and the complex structures on $\mathbb{R}^4$ form the homogeneous space $\mathrm{GL}_4(\mathbb{R})/\mathrm{GL}_2(\mathbb{C})$ of dimension $8$.
 
-A real-linear endomorphism is complex-linear exactly when $TJ=JT$ and conjugate-linear exactly when $TJ=-JT$; every one splits uniquely as $T=T_++T_-$ with $T_\pm=\tfrac12(T\mp JTJ)$, so $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Hom}_{\bar{\mathbb{C}}}$ with dimensions $16=8+8$. In a complex basis every real-linear map is $T(z)=Az+B\overline{z}$, with $B=0$ for the complex-linear maps and $A=0$ for the conjugate-linear ones.
+A real-linear endomorphism is complex-linear exactly when $TJ=JT$ and conjugate-linear exactly when $TJ=-JT$; every one splits uniquely as $T=T_++T_-$ with $T_\pm=\tfrac12(T\mp JTJ)$, so $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Hom}_{\bar{\mathbb{C}}}$ with dimensions $16=8+8$. In a complex basis every real-linear map is $T(Q)=AQ+B\overline{Q}$, with $B=0$ for the complex-linear maps and $A=0$ for the conjugate-linear ones.
 
-Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H$ is the positive definite metric of signature $(4,0)$, $\operatorname{Im}H=-\Omega$ is the Kähler form, $\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric of signature $(2,2)$, and $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are symplectic. The Hermitian form is recovered by $H=g-i\Omega$ with $\Omega(z,w)=g(Jz,w)$, and the real traces and determinants are $\operatorname{tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{tr}_{\mathbb{C}}$ and $\det_{\mathbb{R}}=\lvert\det_{\mathbb{C}}\rvert^2$. The dictionary between the complex and the real statements is mechanical, and the count of real dimensions records a loss of structure rather than a gain of freedom.
+Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H$ is the positive definite metric of signature $(4,0)$, $\operatorname{Im}H=-\Omega$ is the Kähler form, $\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric of signature $(2,2)$, and $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are symplectic. The Hermitian form is recovered by $H=g-i\Omega$ with $\Omega(Q_1,Q_2)=g(JQ_1,Q_2)$, and the real traces and determinants are $\operatorname{tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{tr}_{\mathbb{C}}$ and $\det_{\mathbb{R}}=\lvert\det_{\mathbb{C}}\rvert^2$. The dictionary between the complex and the real statements is mechanical, and the count of real dimensions records a loss of structure rather than a gain of freedom.
 
 ## Summary of Notation
 
@@ -182,12 +182,12 @@ Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H
 |---|---|
 | $V_{\mathbb{R}}$ | the realification of $V=\mathbb{C}^2$, the real space $\mathbb{R}^4$ |
 | $e_1,ie_1,e_2,ie_2$ | the real basis |
-| $J$ | the complex structure, $Jz=iz$, $J^2=-I$ |
+| $J$ | the complex structure, $JQ=iQ$, $J^2=-I$ |
 | $\operatorname{End}_{\mathbb{C}}(V)$ | the complex-linear endomorphisms, $M_2(\mathbb{C})$, real dimension $8$ |
 | $\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$ | the conjugate-linear endomorphisms, real dimension $8$ |
 | $T_\pm=\tfrac12(T\mp JTJ)$ | the complex-linear and conjugate-linear parts of a real-linear $T$ |
 | $g=\operatorname{Re}H$ | the Euclidean metric, signature $(4,0)$ |
-| $\Omega=-\operatorname{Im}H$ | the Kähler form, $\sum_k dx_k\wedge dy_k$ |
+| $\Omega=-\operatorname{Im}H$ | the Kähler form, $dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown}$ |
 | $\omega$ | the holomorphic symplectic form, $\omega\wedge\overline{\omega}=2\Omega^2$ |
 | $\overline{V}$ | the conjugate space, with $\lambda\cdot v=\overline{\lambda}v$ |
 
@@ -196,7 +196,7 @@ Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H
 - [Complex Two-Space](the-complex-two-space.html), the previous article of this category, for the space, the bases and the complex structure.
 - [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-the-complex-two-space.html), below in this category, for the Gram matrices and the computations of the real and imaginary parts.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-the-complex-two-space.html), below in this category, for the $J$-invariant and the totally real subspaces.
-- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), below in this category, for the matrix form $T(z)=Az+B\overline{z}$ and the trace and determinant identities.
+- [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-the-complex-two-space.html), below in this category, for the matrix form $T(Q)=AQ+B\overline{Q}$ and the trace and determinant identities.
 - [The Realification and the Effect of the Change of Scalars on the Complexoid](the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.html), for the general theory of the change of scalars read on an algebra rather than on a space.
 - [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-the-complex-two-space.html), for the metric, the Kähler form and the isometries.
 - [Real Topology](real-topology.html), for the topology of $\mathbb{R}^4$, which is the topology of the realification.

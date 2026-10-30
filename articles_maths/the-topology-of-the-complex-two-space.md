@@ -6,27 +6,27 @@ This article treats the topology of the complex two-space as a real four-dimensi
 
 The article treats the space and its subsets only. The complex structure, the three canonical forms and the holomorphic structure are not topological data, and the point of the article is to say exactly what the topology does and does not see. The general theory of the fundamental group and of covering spaces is *The Fundamental Group and Covering Spaces*; the homology is *Simplicial and Singular Homology*; the homotopy groups and the fibrations are *Homotopy Groups and Fibrations*; and the topology of the real space $\mathbb{R}^4$ is *Real Topology*. None of these is restated here.
 
-**The topology of $\mathbb{C}^2$ is the topology of $\mathbb{R}^4$.** The complex structure is an extra operator, invisible to every topological invariant. The article makes that statement precise: the space is contractible, the punctured space is homotopy equivalent to the sphere $S^3$, and the general linear group is homotopy equivalent to $S^1\times S^3$.
+**The topology of $\mathbb{C}^2$ is the topology of $\mathbb{R}^4$.** The complex structure is an extra operator, not part of the topological data of the underlying space. The article makes that statement precise: the space is contractible, the punctured space is homotopy equivalent to the sphere $S^3$, and the general linear group is homotopy equivalent to $S^1\times S^3$.
 
 ## The Euclidean Topology
 
 **The norm and the distance make $\mathbb{C}^2$ a metric space isometric to $\mathbb{R}^4$, and the topology is the product topology of the four real coordinates.**
 
-**Definition.** The **norm** of $z=(z_1,z_2)$ is
+**Definition.** The **norm** of $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$ is
 $$
-\lVert z\rVert=\sqrt{\lvert z_1\rvert^2+\lvert z_2\rvert^2},
+\lVert Q\rVert=\sqrt{\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2},
 $$
-the **distance** is $d(z,w)=\lVert z-w\rVert$, and the **topology** is the metric topology of $d$.
+the **distance** is $d(Q_1,Q_2)=\lVert Q_1-Q_2\rVert$, and the **topology** is the metric topology of $d$.
 
 **Proposition (the linear isometry).** The map
 $$
-\Phi:\mathbb{C}^2\longrightarrow\mathbb{R}^4,\qquad (z_1,z_2)\longmapsto(x_1,y_1,x_2,y_2),
+\Phi:\mathbb{C}^2\longrightarrow\mathbb{R}^4,\qquad (Q_{\blacktriangle},Q_{\blacktriangledown})\longmapsto(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}),
 $$
-with $z_k=x_k+iy_k$, is a linear isometry onto $\mathbb{R}^4$ with the Euclidean norm. Hence the topology of $\mathbb{C}^2$ is the Euclidean topology of $\mathbb{R}^4$, equivalently the product of the two Euclidean topologies of the coordinate planes.
+with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, is a linear isometry onto $\mathbb{R}^4$ with the Euclidean norm. Hence the topology of $\mathbb{C}^2$ is the Euclidean topology of $\mathbb{R}^4$, equivalently the product of the two Euclidean topologies of the coordinate planes.
 
 *Proof.* The map is bijective and real-linear, and
 $$
-\lVert z\rVert^2=\lvert z_1\rvert^2+\lvert z_2\rvert^2=x_1^2+y_1^2+x_2^2+y_2^2=\lVert\Phi(z)\rVert^2.
+\lVert Q\rVert^2=\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2=q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2=\lVert\Phi(Q)\rVert^2.
 $$
 A linear isometry is a homeomorphism, and the Euclidean topology of $\mathbb{R}^4$ is the product topology of the four coordinates.
 
@@ -38,9 +38,9 @@ A linear isometry is a homeomorphism, and the Euclidean topology of $\mathbb{R}^
 
 *Proof.* The straight-line homotopy
 $$
-H:[0,1]\times\mathbb{C}^2\longrightarrow\mathbb{C}^2,\qquad H(t,z)=(1-t)z,
+H:[0,1]\times\mathbb{C}^2\longrightarrow\mathbb{C}^2,\qquad H(t,Q)=(1-t)Q,
 $$
-is continuous, with $H(0,z)=z$ and $H(1,z)=0$.
+is continuous, with $H(0,Q)=Q$ and $H(1,Q)=0$.
 
 **Corollary (the invariants).** The space $\mathbb{C}^2$ is path-connected and simply connected, its homotopy groups vanish in every degree,
 $$
@@ -84,7 +84,7 @@ is continuous, surjective and proper.
 
 *Proof.* Continuity is the triangle inequality. Surjectivity is the existence of the vector $(r,0)$ for $r\ge0$. For properness, let $K\subset[0,\infty)$ be compact; then $K\subset[0,R]$ for some $R$, and
 $$
-\lVert\cdot\rVert^{-1}(K)\subset\{z:\lVert z\rVert\le R\},
+\lVert\cdot\rVert^{-1}(K)\subset\{Q:\lVert Q\rVert\le R\},
 $$
 the closed ball of radius $R$. That ball is closed and bounded in $\mathbb{R}^4$, hence compact by Heine–Borel, and a closed subset of a compact set is compact.
 
@@ -94,9 +94,9 @@ the closed ball of radius $R$. That ball is closed and bounded in $\mathbb{R}^4$
 
 **Corollary (closed balls are compact).** For every $R\ge0$, the closed ball
 $$
-\overline{B}^4_R=\{z:\lVert z\rVert\le R\}
+\overline{B}^4_R=\{Q:\lVert Q\rVert\le R\}
 $$
-is compact, and the sphere $S^3_R=\{z:\lVert z\rVert=R\}$ is compact.
+is compact, and the sphere $S^3_R=\{Q:\lVert Q\rVert=R\}$ is compact.
 
 *Proof.* The ball is closed and bounded, hence compact; the sphere is a closed subset of the ball.
 
@@ -108,16 +108,16 @@ is compact, and the sphere $S^3_R=\{z:\lVert z\rVert=R\}$ is compact.
 
 **Definition.** The **open unit ball**, the **closed unit ball** and the **unit sphere** are
 $$
-B^4=\{z:\lVert z\rVert<1\},\qquad \overline{B}^4=\{z:\lVert z\rVert\le1\},\qquad S^3=\{z:\lVert z\rVert=1\}.
+B^4=\{Q:\lVert Q\rVert<1\},\qquad \overline{B}^4=\{Q:\lVert Q\rVert\le1\},\qquad S^3=\{Q:\lVert Q\rVert=1\}.
 $$
 
 **Proposition (the open ball is the space).** The map
 $$
-B^4\longrightarrow\mathbb{C}^2,\qquad w\longmapsto\frac{w}{1-\lVert w\rVert},
+B^4\longrightarrow\mathbb{C}^2,\qquad Q_1\longmapsto\frac{Q_1}{1-\lVert Q_1\rVert},
 $$
-is a homeomorphism with inverse $z\mapsto z/(1+\lVert z\rVert)$.
+is a homeomorphism with inverse $Q_2\mapsto Q_2/(1+\lVert Q_2\rVert)$.
 
-*Proof.* For $\lVert w\rVert<1$ the denominator is positive; for $z\in\mathbb{C}^2$, the point $z/(1+\lVert z\rVert)$ has norm $\lVert z\rVert/(1+\lVert z\rVert)<1$. The two formulas are inverse by direct computation, and both are continuous.
+*Proof.* For $\lVert Q_1\rVert<1$ the denominator is positive; for $Q_2\in\mathbb{C}^2$, the point $Q_2/(1+\lVert Q_2\rVert)$ has norm $\lVert Q_2\rVert/(1+\lVert Q_2\rVert)<1$. The two formulas are inverse by direct computation, and both are continuous.
 
 **Proposition (the closed ball).** The closed ball $\overline{B}^4$ is compact, contractible and a topological manifold with boundary $S^3$.
 
@@ -141,9 +141,9 @@ The three spaces are compared below.
 
 | Space | Definition | Compact | Contractible | Boundary |
 |---|---|---|---|---|
-| open ball $B^4$ | $\lVert z\rVert<1$ | no | yes | $S^3$ in the closure |
-| closed ball $\overline{B}^4$ | $\lVert z\rVert\le1$ | yes | yes | $S^3$ |
-| sphere $S^3$ | $\lVert z\rVert=1$ | yes | no | empty |
+| open ball $B^4$ | $\lVert Q\rVert<1$ | no | yes | $S^3$ in the closure |
+| closed ball $\overline{B}^4$ | $\lVert Q\rVert\le1$ | yes | yes | $S^3$ |
+| sphere $S^3$ | $\lVert Q\rVert=1$ | yes | no | empty |
 
 ## The Complement of the Origin
 
@@ -151,22 +151,22 @@ The three spaces are compared below.
 
 **Theorem (polar coordinates).** The map
 $$
-\mathbb{C}^2\setminus\{0\}\longrightarrow S^3\times(0,\infty),\qquad z\longmapsto\left(\frac{z}{\lVert z\rVert},\lVert z\rVert\right),
+\mathbb{C}^2\setminus\{0\}\longrightarrow S^3\times(0,\infty),\qquad Q\longmapsto\left(\frac{Q}{\lVert Q\rVert},\lVert Q\rVert\right),
 $$
 is a homeomorphism, with inverse $(\theta,r)\mapsto r\theta$.
 
-*Proof.* The map is continuous, and so is the inverse. It is bijective: every nonzero $z$ is $r\theta$ with $r=\lVert z\rVert>0$ and $\theta=z/\lVert z\rVert\in S^3$, and the pair is unique.
+*Proof.* The map is continuous, and so is the inverse. It is bijective: every nonzero $Q$ is $r\theta$ with $r=\lVert Q\rVert>0$ and $\theta=Q/\lVert Q\rVert\in S^3$, and the pair is unique.
 
 **Corollary (the deformation retraction).** The map
 $$
-r:\mathbb{C}^2\setminus\{0\}\longrightarrow S^3,\qquad r(z)=\frac{z}{\lVert z\rVert},
+r:\mathbb{C}^2\setminus\{0\}\longrightarrow S^3,\qquad r(Q)=\frac{Q}{\lVert Q\rVert},
 $$
 is a deformation retraction, with homotopy
 $$
-H(t,z)=\bigl((1-t)+t/\lVert z\rVert\bigr)z.
+H(t,Q)=\bigl((1-t)+t/\lVert Q\rVert\bigr)Q.
 $$
 
-*Proof.* At $t=0$ the map is the identity; at $t=1$ it is $r$; the formula is continuous on $\mathbb{C}^2\setminus\{0\}$ because $\lVert z\rVert>0$; and $r$ restricted to $S^3$ is the identity.
+*Proof.* At $t=0$ the map is the identity; at $t=1$ it is $r$; the formula is continuous on $\mathbb{C}^2\setminus\{0\}$ because $\lVert Q\rVert>0$; and $r$ restricted to $S^3$ is the identity.
 
 **Corollary (the invariants).** The punctured space is path-connected and simply connected, and
 $$
@@ -270,13 +270,13 @@ The groups are compared below. The column *homotopy type* records a space to whi
 | $\mathrm{SL}_2(\mathbb{C})$ | $\det A=1$ | $6$ | $S^3$ | $0$ | $\mathbb{Z}$ |
 | $\mathrm{U}(2)$ | $A^{*}A=I$ | $4$ | $S^1\times S^3$ | $\mathbb{Z}$ | $\mathbb{Z}$ |
 | $\mathrm{SU}(2)$ | $A^{*}A=I$, $\det A=1$ | $3$ | $S^3$ | $0$ | $\mathbb{Z}$ |
-| $\mathbb{C}^{\times}$ | $z\neq0$ | $2$ | $S^1$ | $\mathbb{Z}$ | $0$ |
+| $\mathbb{C}^{\times}$ | $Q\neq0$ | $2$ | $S^1$ | $\mathbb{Z}$ | $0$ |
 
 **Remark (the maximal compact subgroup).** The unitary group $\mathrm{U}(2)$ is a maximal compact subgroup of $\mathrm{GL}_2(\mathbb{C})$, and the polar decomposition is the Cartan decomposition of the group. **The group is an open eight-dimensional manifold homotopy equivalent to a compact four-dimensional manifold**, which is why its low-dimensional topology is that of $S^1\times S^3$ and not that of a point. The general theory of the classical groups is *The Classical Groups of $\mathbb{C}^2$*, and the matrix computations are the $M_2(\mathbb{C})$ Model articles of the biquaternion category.
 
 ## What the Topology Does Not See
 
-**The topology sees the real dimension and nothing else; the complex structure, the Hermitian form and the holomorphic structure are extra data that no topological invariant records.**
+**The topology sees the underlying real manifold and not the complex structure; the complex structure, the Hermitian form and the holomorphic structure are extra data that the underlying topological space does not determine.**
 
 The space $\mathbb{C}^2$ is homeomorphic to $\mathbb{R}^4$ and to the quaternions $\mathbb{H}$ read as a real vector space. Every real-linear isomorphism $\mathbb{C}^2\to\mathbb{R}^4$ is a homeomorphism, and it need not send the complex structure $J$ to the standard complex structure of $\mathbb{R}^4$; indeed $\mathbb{R}^4$ carries a whole family of complex structures, all with the same underlying topological space.
 
@@ -288,17 +288,17 @@ The space $\mathbb{C}^2$ is homeomorphic to $\mathbb{R}^4$ and to the quaternion
 
 The complex two-space is isometric to $\mathbb{R}^4$ with the Euclidean norm, and its topology is the Euclidean topology of $\mathbb{R}^4$. It is contractible, path-connected and simply connected, with $\pi_n=0$ for all $n\ge1$ and the homology of a point; it is complete, $\sigma$-compact and second countable, and it is not compact. The norm is a proper map, so closed balls are compact and Heine–Borel holds. The open unit ball is homeomorphic to the whole space, the closed unit ball is a compact contractible manifold with boundary $S^3$, and the sphere $S^3$ is compact, connected, simply connected, of homology $\mathbb{Z}$ in degrees $0$ and $3$, and not contractible; there is no retraction of the ball onto its boundary.
 
-The complement of the origin is homeomorphic to $S^3\times(0,\infty)$ and deformation retracts onto $S^3$, so it is simply connected with $\pi_3=\mathbb{Z}$ and $H_3=\mathbb{Z}$; it is not homeomorphic to the whole space. The general linear group $\mathrm{GL}_2(\mathbb{C})$ is an open dense complex Lie group of real dimension $8$; the polar decomposition retracts it onto the compact unitary group $\mathrm{U}(2)\cong\mathrm{SU}(2)\times\mathrm{U}(1)\cong S^3\times S^1$, so it has the homotopy type of $S^1\times S^3$, with $\pi_1=\mathbb{Z}$, $\pi_2=0$ and $\pi_3=\mathbb{Z}$, and it is not simply connected. The special linear group $\mathrm{SL}_2(\mathbb{C})$ retracts onto $\mathrm{SU}(2)\cong S^3$ and is simply connected. The topology sees the real dimension only; the complex structure is extra.
+The complement of the origin is homeomorphic to $S^3\times(0,\infty)$ and deformation retracts onto $S^3$, so it is simply connected with $\pi_3=\mathbb{Z}$ and $H_3=\mathbb{Z}$; it is not homeomorphic to the whole space. The general linear group $\mathrm{GL}_2(\mathbb{C})$ is an open dense complex Lie group of real dimension $8$; the polar decomposition retracts it onto the compact unitary group $\mathrm{U}(2)\cong\mathrm{SU}(2)\times\mathrm{U}(1)\cong S^3\times S^1$, so it has the homotopy type of $S^1\times S^3$, with $\pi_1=\mathbb{Z}$, $\pi_2=0$ and $\pi_3=\mathbb{Z}$, and it is not simply connected. The special linear group $\mathrm{SL}_2(\mathbb{C})$ retracts onto $\mathrm{SU}(2)\cong S^3$ and is simply connected. The topology sees the underlying real manifold and not the complex structure.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\lVert z\rVert=\sqrt{\lvert z_1\rvert^2+\lvert z_2\rvert^2}$ | the Euclidean norm |
-| $d(z,w)=\lVert z-w\rVert$ | the distance |
+| $\lVert Q\rVert=\sqrt{\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2}$ | the Euclidean norm |
+| $d(Q_1,Q_2)=\lVert Q_1-Q_2\rVert$ | the distance |
 | $B^4$ | the open unit ball, homeomorphic to $\mathbb{C}^2$ |
 | $\overline{B}^4$ | the closed unit ball, compact with boundary $S^3$ |
-| $S^3$ | the unit sphere, $\lVert z\rVert=1$ |
+| $S^3$ | the unit sphere, $\lVert Q\rVert=1$ |
 | $\mathbb{C}^2\setminus\{0\}\cong S^3\times(0,\infty)$ | the punctured space and its polar coordinates |
 | $\mathrm{GL}_2(\mathbb{C})$ | the invertible matrices, homotopy equivalent to $S^1\times S^3$ |
 | $\mathrm{SL}_2(\mathbb{C})$ | the matrices of determinant $1$, homotopy equivalent to $S^3$ |
@@ -313,5 +313,5 @@ The complement of the origin is homeomorphic to $S^3\times(0,\infty)$ and deform
 - [Simplicial and Singular Homology](simplicial-and-singular-homology.html), for the homology of the spheres and the cell decomposition.
 - [Homotopy Groups and Fibrations](homotopy-groups-and-fibrations.html), for the homotopy groups, the Hurewicz theorem and the long exact sequence.
 - [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-the-complex-two-space.html), the next article, for the one-point and the projective compactifications.
-- [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), the next article, for the bundle structure of $S^3$.
+- [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), the following article, for the bundle structure of $S^3$.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-complex-two-space.html), for the groups $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$ and $\mathrm{SU}(2)$ and their actions.

@@ -10,7 +10,7 @@ This article develops the parametrisation, the action and its kernel, the chart 
 
 **Boundaries.** The lattice of ideals and the parametrisation by $\mathbb{P}^1$ are *The Category of Modules*, §*The Lattice of Left Ideals*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *The Category of Modules*, §*The Projective Line and the Möbius Action*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: $\mathsf M_{4,\mathrm{coef}}^{L}=S\,(I_2\otimes\mathsf M_2)\,S^{-1}$, with $S$ the change of *The Product, the Trace and the Determinant*.
 
 ## The Lines and the Minimal Left Ideals
 
@@ -22,7 +22,7 @@ The adjoint $J_L^{\dagger}=\{M^{\dagger}:M\in J_L\}$ is a minimal left ideal. Th
 
 **Proposition.** $J_L$ is a minimal right ideal of the regular image, and every minimal right ideal of the image is $J_L$ for a unique $L$.
 
-*Proof.* The set $J_L$ is a right ideal, because $\operatorname{im}(MN)\subseteq\operatorname{im}M\subseteq L\oplus L$ for every $N$ in the image. In the eigenbasis it is the set of block matrices $\operatorname{diag}(A,A)$ with $\operatorname{im}A\subseteq L$, a complex subspace of dimension two. A nonzero element has rank two, and the right ideal it generates is the whole of $J_L$, so $J_L$ is minimal. Conversely, a minimal right ideal of the image is the image of a minimal right ideal of the algebra, which is $J_L$ for a unique line. $\square$
+*Proof.* The set $J_L$ is a right ideal, because $\operatorname{im}(MN)\subseteq\operatorname{im}M\subseteq L\oplus L$ for every $N$ in the image. In the eigenbasis it is the set of block matrices $\operatorname{diag}(A,A)$ with $\operatorname{im}A\subseteq L$, a complex subspace of dimension two. A nonzero element has rank two, and the right ideal it generates is the whole of $J_L$, so $J_L$ is minimal. Conversely, a minimal right ideal of the image is the image of a minimal right ideal of the algebra, which is $J_L$ for a unique line.
 
 **The two coordinate ideals.** With $L_\infty=\operatorname{span}\{e_1\}$ and $L_0=\operatorname{span}\{e_2\}$,
 $$
@@ -46,7 +46,7 @@ $$
 M\cdot J_L=J_{ML},\qquad M_1\cdot(M_2\cdot L)=(M_1M_2)\cdot L.
 $$
 
-*Proof.* An invertible matrix carries a one-dimensional subspace to a one-dimensional subspace, and the second statement is associativity of the matrix product. In the eigenbasis $M=\operatorname{diag}(A,A)$ acts on $L\oplus L$ as $A$ acts on $L$. $\square$
+*Proof.* An invertible matrix carries a one-dimensional subspace to a one-dimensional subspace, and the second statement is associativity of the matrix product. In the eigenbasis $M=\operatorname{diag}(A,A)$ acts on $L\oplus L$ as $A$ acts on $L$.
 
 **The kernel.** If $M$ acts trivially on every line, then every vector is an eigenvector of $M$, and a matrix with that property is scalar. Hence
 $$
@@ -94,7 +94,7 @@ $$
 $$
 where $u$ spans $W$ and $\eta$ is the linear form with $\eta(u)=1$ and $\eta(K)=0$. The fibre of the map $\Pi\mapsto\operatorname{im}\Pi$ over $W$ is an affine line, parametrised by the kernel $K\neq W$.
 
-*Proof.* The product $u\eta$ satisfies $(u\eta)^2=u\eta(u)\eta=u\eta$, has image $W$ and kernel $K$. Its image under $\mathsf{M}_4^{L}$ is a rank-two idempotent with image $W\oplus W$ and kernel $K\oplus K$. Conversely a rank-two idempotent of the image with image $W\oplus W$ is determined by its kernel, and the formula recovers it. The kernels $K\neq W$ form the affine line $\mathbb{P}^1\setminus\{W\}$. $\square$
+*Proof.* The product $u\eta$ satisfies $(u\eta)^2=u\eta(u)\eta=u\eta$, has image $W$ and kernel $K$. Its image under $\mathsf{M}_4^{L}$ is a rank-two idempotent with image $W\oplus W$ and kernel $K\oplus K$. Conversely a rank-two idempotent of the image with image $W\oplus W$ is determined by its kernel, and the formula recovers it. The kernels $K\neq W$ form the affine line $\mathbb{P}^1\setminus\{W\}$.
 
 **The conjugacy class.** Every rank-two idempotent of the image is conjugate, in the image, to $\operatorname{diag}(1,1,0,0)$. The image of the $GL_2$ action is transitive on the pairs (image, kernel) of lines, and the stabiliser of the standard idempotent is the diagonal torus of complex dimension two. The class in the image therefore has complex dimension two. In the ambient $GL_4$ the same projector has an eight-dimensional conjugacy class, because the image and the kernel can vary independently in $\mathbb{C}^4$; the image is the two-dimensional subfamily with image and kernel of the form $W\oplus W$ and $K\oplus K$.
 

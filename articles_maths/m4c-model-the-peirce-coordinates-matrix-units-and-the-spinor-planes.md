@@ -6,7 +6,7 @@ The left regular matrix reads a biquaternion as an operator on its own four-dime
 
 This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions in the $4\times4$ model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. It uses no form, no norm and no module.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf M_4$ are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: the $\mu$-th column of $\mathsf M_4(\tilde Q)$ is the coordinate column of $\tilde Q e_\mu$. The standard pair and the standard nilpotents are
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: in the canonical frame its $j$-th column is the coordinate column of $\tilde Q P_j$; in the coefficient basis, where $P_j=e_j$, this is the coordinate column of $\tilde Q e_j$. The standard pair and the standard nilpotents are
 
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -27,16 +27,19 @@ $$
 =(E_{11},E_{21},E_{12},E_{22}),
 $$
 
-which is the order that makes the two spinor planes contiguous. The change of basis $\mathsf S$ with these four coordinate columns satisfies
+which is the order that makes the two spinor planes contiguous. In this frame the regular matrix is the block matrix
 
 $$
-\mathsf S^{-1}\mathsf M_4(\tilde Q)\mathsf S
-=\begin{pmatrix}\mathsf M_2(\tilde Q)&0\\0&\mathsf M_2(\tilde Q)\end{pmatrix}.
+\mathsf{M}_4^{L}(\tilde Q)
+=\begin{pmatrix}\mathsf M_2(\tilde Q)&0\\0&\mathsf M_2(\tilde Q)\end{pmatrix}
+=I_2\otimes\mathsf M_2(\tilde Q),
 $$
+
+and the change matrix $\mathsf S$, whose columns are these four elements in coefficient coordinates, carries the Peirce column to the coefficient column: $\mathsf M_{4,\mathrm{coef}}^{L}=\mathsf S\,(I_2\otimes\mathsf M_2)\,\mathsf S^{-1}$.
 
 **Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
 
-**Frame.** The Peirce basis used below is the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*; a matrix in the coefficient basis is carried to it by the change $S$ of *The Product, the Trace and the Determinant*, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $S$ the change of *The Product, the Trace and the Determinant*, the same operator reads $S(I_2\otimes\mathsf M_2(\tilde Q))S^{-1}$ there.
 
 ## The Peirce Table
 
@@ -62,57 +65,21 @@ and the table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$.
 
 ## The Coordinate Isomorphism
 
-**The four Peirce elements go to four rank-two matrices, each duplicated in the two blocks.**
+**The four Peirce elements go to the four matrix units, each duplicated in the two blocks.**
 
 $$
-\mathsf M_4(\tilde\Pi_+)=
-\begin{pmatrix}
-\tfrac12&0&0&-\tfrac i2\\
-0&\tfrac12&-\tfrac i2&0\\
-0&\tfrac i2&\tfrac12&0\\
-\tfrac i2&0&0&\tfrac12
-\end{pmatrix},
+\mathsf{M}_4^{L}(\tilde\Pi_+)=I_2\otimes E_{11}=\operatorname{diag}(E_{11},E_{11}),
 \qquad
-\mathsf M_4(\vec\Upsilon_+)=
-\begin{pmatrix}
-0&-\tfrac i2&-\tfrac12&0\\
-\tfrac i2&0&0&\tfrac12\\
-\tfrac12&0&0&-\tfrac i2\\
-0&-\tfrac12&\tfrac i2&0
-\end{pmatrix},
+\mathsf{M}_4^{L}(\tilde\Pi_-)=I_2\otimes E_{22}=\operatorname{diag}(E_{22},E_{22}),
 $$
 
 $$
-\mathsf M_4(\vec\Upsilon_-)=
-\begin{pmatrix}
-0&-\tfrac i2&\tfrac12&0\\
-\tfrac i2&0&0&-\tfrac12\\
--\tfrac12&0&0&-\tfrac i2\\
-0&\tfrac12&\tfrac i2&0
-\end{pmatrix},
+\mathsf{M}_4^{L}(\vec\Upsilon_-)=I_2\otimes E_{12}=\operatorname{diag}(E_{12},E_{12}),
 \qquad
-\mathsf M_4(\tilde\Pi_-)=
-\begin{pmatrix}
-\tfrac12&0&0&\tfrac i2\\
-0&\tfrac12&\tfrac i2&0\\
-0&-\tfrac i2&\tfrac12&0\\
--\tfrac i2&0&0&\tfrac12
-\end{pmatrix}.
+\mathsf{M}_4^{L}(\vec\Upsilon_+)=I_2\otimes E_{21}=\operatorname{diag}(E_{21},E_{21}).
 $$
 
-Each has rank two, each is an idempotent or a square-zero element, and each satisfies
-
-$$
-\mathsf S^{-1}\mathsf M_4(\tilde\Pi_+)\mathsf S=\operatorname{diag}(E_{11},E_{11}),
-\qquad
-\mathsf S^{-1}\mathsf M_4(\tilde\Pi_-)\mathsf S=\operatorname{diag}(E_{22},E_{22}),
-$$
-
-$$
-\mathsf S^{-1}\mathsf M_4(\vec\Upsilon_-)\mathsf S=\operatorname{diag}(E_{12},E_{12}),
-\qquad
-\mathsf S^{-1}\mathsf M_4(\vec\Upsilon_+)\mathsf S=\operatorname{diag}(E_{21},E_{21}).
-$$
+Each has rank two, each is an idempotent or a square-zero element. In the coefficient basis the same four matrices are $S(I_2\otimes E_{ij})S^{-1}$, whose entries are the coefficients of the corresponding Peirce element.
 
 **Proposition.** Every element has a unique expansion
 
@@ -123,7 +90,10 @@ $$
 and the map $\tilde Q\mapsto\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}$ is an isomorphism $\mathbb{B}\to M_2(\mathbb{C})$. The left regular matrix is its inflation,
 
 $$
-\mathsf M_4(\tilde Q)=\mathsf S\bigl(\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))\bigr)\mathsf S^{-1}.
+\mathsf{M}_4^{L}(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))
+=I_2\otimes\mathsf M_2(\tilde Q),
+\qquad
+\mathsf M_{4,\mathrm{coef}}^{L}(\tilde Q)=\mathsf S\bigl(I_2\otimes\mathsf M_2(\tilde Q)\bigr)\mathsf S^{-1}.
 $$
 
 *Proof.* The Peirce basis is a basis, so the expansion is unique and the map is a linear bijection. It is multiplicative because the images of the four basis elements are the four matrix units. The second statement follows by applying the first to each basis element and extending by linearity; it is the explicit form of the block theorem of §*The Two Spinor Planes in the Regular Model*.
@@ -156,21 +126,26 @@ $$
 so that
 
 $$
-\mathsf M_4(\tilde Q)=\mathsf S
+\mathsf{M}_4^{L}(\tilde Q)=
 \begin{pmatrix}
 a_{11}&a_{12}&0&0\\
 a_{21}&a_{22}&0&0\\
 0&0&a_{11}&a_{12}\\
 0&0&a_{21}&a_{22}
-\end{pmatrix}\mathsf S^{-1}.
+\end{pmatrix}
+=I_2\otimes
+\begin{pmatrix}
+a_{11}&a_{12}\\
+a_{21}&a_{22}
+\end{pmatrix}.
 $$
 
 The two invariants are
 
 $$
-\operatorname{Tr}\mathsf M_4(\tilde Q)=2(a_{11}+a_{22})=4Q_t,
+\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=2(a_{11}+a_{22})=4Q_t,
 \qquad
-\det\mathsf M_4(\tilde Q)=(a_{11}a_{22}-a_{12}a_{21})^2=\langle\tilde Q\rangle_{\natural}^2 .
+\det\mathsf{M}_4^{L}(\tilde Q)=(a_{11}a_{22}-a_{12}a_{21})^2=\langle\tilde Q\rangle_{\natural}^2 .
 $$
 
 The trace is the trace of the $2\times2$ model multiplied by the dimension of the multiplicity space, and the determinant is its determinant squared. The four differences are
@@ -216,7 +191,7 @@ $$
 
 with $\mathbb{C}^4=S_+\oplus S_-$. The two blocks of the block form are exactly these planes.
 
-**Left multiplication.** By the block form, $\mathsf M_4(\tilde P)$ preserves each plane and acts on both by the same matrix:
+**Left multiplication.** By the block form, $\mathsf{M}_4^{L}(\tilde P)$ preserves each plane and acts on both by the same matrix:
 
 $$
 L_{\tilde P}|_{S_+}=L_{\tilde P}|_{S_-}=\mathsf M_2(\tilde P).
@@ -224,7 +199,7 @@ $$
 
 This is the matrix form of the proposition of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*. The two copies are the two chiralities, and left multiplication never mixes them.
 
-**A caution about the projector.** The column space of $\mathsf M_4(\tilde\Pi_+)$ is not $S_+$. It is the image of left multiplication by $\tilde\Pi_+$, which is $\tilde\Pi_+\mathbb{B}$, the right Peirce row $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$; in the Peirce basis it is the first and third coordinates. A rank-two idempotent matrix projects onto the row generated by its idempotent, not onto the plane that the idempotent generates from the left. The two planes of this section are the two blocks, not the column spaces of the two idempotents.
+**A caution about the projector.** The column space of $\mathsf{M}_4^{L}(\tilde\Pi_+)$ is not $S_+$. It is the image of left multiplication by $\tilde\Pi_+$, which is $\tilde\Pi_+\mathbb{B}$, the right Peirce row $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$; in the Peirce basis it is the first and third coordinates. A rank-two idempotent matrix projects onto the row generated by its idempotent, not onto the plane that the idempotent generates from the left. The two planes of this section are the two blocks, not the column spaces of the two idempotents.
 
 **Right multiplication and the exchange.** In the Peirce basis, right multiplication by the two mixed units is the pair of block swaps
 
@@ -242,21 +217,21 @@ Hence $\xi\vec\Upsilon_-$ lies in $S_-$ for every $\xi\in S_+$, and $S_-\vec\Ups
 
 **Every nilpotent is a scalar multiple of the image of an off-diagonal matrix unit, and every nonzero nilpotent is a square-zero rank-two matrix.**
 
-A nilpotent of $\mathbb{B}$ is a nonzero element of a mixed Peirce corner, so its image under $\mathsf M_4$ is a nonzero element of the image of $\mathbb{C}E_{12}$ or $\mathbb{C}E_{21}$ in the block form. Such an element is $\mu E_{12}\otimes\mathrm I_2$ or $\mu E_{21}\otimes\mathrm I_2$ with $\mu\in\mathbb{C}^{\times}$. Its square is zero, its trace is zero and its rank is two.
+A nilpotent of $\mathbb{B}$ is a nonzero element of a mixed Peirce corner, so its image under $\mathsf{M}_4^{L}$ is a nonzero element of the image of $\mathbb{C}E_{12}$ or $\mathbb{C}E_{21}$ in the block form. Such an element is $\mu E_{12}\otimes\mathrm I_2$ or $\mu E_{21}\otimes\mathrm I_2$ with $\mu\in\mathbb{C}^{\times}$. Its square is zero, its trace is zero and its rank is two.
 
 The two standard nilpotents give the two off-diagonal doubled units. Every other nilpotent is a nonzero scalar multiple of one of them, conjugated by an inner automorphism of the algebra; the scalar is the coordinate of the nilpotent in its corner, and the conjugacy is the change of the Peirce frame.
 
 ## Summary
 
-The Peirce coordinates of the standard pair are the entries of the $2\times2$ model, and the left regular matrix is that model duplicated: $\mathsf S^{-1}\mathsf M_4(\tilde Q)\mathsf S=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two diagonal blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The trace is four times the scalar part and the determinant is the square of the central scalar. The four Peirce elements are one system of $2\times2$ matrix units, duplicated, not a system of $4\times4$ units.
+The Peirce coordinates of the standard pair are the entries of the $2\times2$ model, and the left regular matrix is that model duplicated: $\mathsf{M}_4^{L}(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$ in the frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two diagonal blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The trace is four times the scalar part and the determinant is the square of the central scalar. The four Peirce elements are one system of $2\times2$ matrix units, duplicated, not a system of $4\times4$ units.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf M_4(\tilde Q)$ | the left regular matrix, $\mu$-th column $=$ coordinates of $\tilde Q e_\mu$ |
+| $\mathsf{M}_4^{L}(\tilde Q)$ | the left regular matrix, $\mu$-th column $=$ coordinates of $\tilde Q e_\mu$ |
 | $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the Peirce basis, ordered by contiguous planes |
-| $\mathsf S$ | the change of basis with the four Peirce coordinate columns |
+| $\mathsf S$ | the matrix whose columns are the four Peirce elements in coefficient coordinates |
 | $\mathsf M_2(\tilde Q)$ | the $2\times2$ model, $\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$ |
 | $a_{ij}$ | the four Peirce coordinates |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor planes, the two blocks |

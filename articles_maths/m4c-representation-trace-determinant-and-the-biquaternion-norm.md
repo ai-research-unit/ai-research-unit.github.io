@@ -10,7 +10,7 @@ This article develops the two invariants, the four algebraic norms as matrix inv
 
 **Boundaries.** The determinant as a group homomorphism is *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the rank stratification is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
-**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
+**Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=R_y=-i\sigma_2\otimes\mathrm I_2$.
 
 ## The Trace
 
@@ -41,7 +41,7 @@ $$
 =(Q_t^2+B^2)^2.
 $$
 
-*Proof.* The block form gives $\det M=\det\mathsf{M}_2(\tilde Q)^2$ and $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. $\square$
+*Proof.* The block form gives $\det M=\det\mathsf{M}_2(\tilde Q)^2$ and $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
 
 The determinant is multiplicative, $\det(M_PM_Q)=\det M_P\det M_Q$, and invariant under conjugation, $\det(PMP^{-1})=\det M$. Its modulus is the squared modulus of the norm, and its argument is twice the argument of the norm:
 $$
@@ -74,7 +74,7 @@ The four algebraic norms are four quarter-traces of words in $M$ and its transpo
 | Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
 | Krein $K$ | $\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$ | $\mathbb{R}$ | no |
 
-*Proof.* The block form and the identities $M^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4^{L}(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part. $\square$
+*Proof.* The block form and the identities $M^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4^{L}(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part.
 
 **The quaternionic norm is not the determinant.** In the $2\times2$ model $\det\mathsf{M}_2(\tilde Q)=N$. In the $4\times4$ model $\det M=N^2$, and $N$ itself is the quarter-trace of $M^{\mathsf T}M$. The determinant is the square of the norm because the regular representation contains two copies of the defining module; the norm is recovered from the matrix by a word, not by the determinant.
 
@@ -89,7 +89,7 @@ $$
 =t^4-4Q_tt^3+(4Q_t^2+2\langle\tilde Q\rangle_{\natural})t^2-4Q_t\langle\tilde Q\rangle_{\natural}t+\langle\tilde Q\rangle_{\natural}^2.
 $$
 
-*Proof.* The block form gives $\chi_M(t)=\chi_{\mathsf{M}_2(\tilde Q)}(t)^2$. $\square$
+*Proof.* The block form gives $\chi_M(t)=\chi_{\mathsf{M}_2(\tilde Q)}(t)^2$.
 
 The roots are $\lambda_+=Q_t+iB$ and $\lambda_-=Q_t-iB$, each of algebraic multiplicity two. The discriminant of the quadratic factor is $-4B^2$, so the eigenvalues are distinct exactly when $B^2\neq0$. When $B^2=0$, the four eigenvalues coincide at $Q_t$.
 

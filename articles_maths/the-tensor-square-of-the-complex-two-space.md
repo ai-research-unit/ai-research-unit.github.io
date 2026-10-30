@@ -62,21 +62,21 @@ and a basis of the alternating square is $e_1\wedge e_2=e_1\otimes e_2-e_2\otime
 
 **Proposition (binary quadratic forms).** After the choice of the basis, the symmetric square is identified with the space of homogeneous polynomials of degree $2$ in two variables,
 $$
-\operatorname{Sym}^2V\cong\{az_1^2+bz_1z_2+cz_2^2:a,b,c\in\mathbb{C}\},
+\operatorname{Sym}^2V\cong\{aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2:a,b,c\in\mathbb{C}\},
 $$
 of dimension $3$.
 
-*Proof.* The identification sends $e_i\odot e_j$ to the monomial $z_iz_j$; the three monomials are a basis, and the correspondence is linear and bijective.
+*Proof.* The identification sends $e_1\odot e_1$, $e_1\odot e_2=e_2\odot e_1$ and $e_2\odot e_2$ to $Q_{\blacktriangle}^2$, $Q_{\blacktriangle}Q_{\blacktriangledown}$ and $Q_{\blacktriangledown}^2$; the three monomials are a basis, and the correspondence is linear and bijective.
 
 **Definition.** The **Veronese map** is
 $$
-\nu:\mathbb{P}(V)\longrightarrow\mathbb{P}(\operatorname{Sym}^2V),\qquad[z]\longmapsto[z\odot z].
+\nu:\mathbb{P}(V)\longrightarrow\mathbb{P}(\operatorname{Sym}^2V),\qquad[Q]\longmapsto[Q\odot Q].
 $$
 Its image is the **Veronese conic** in $\mathbb{CP}^2=\mathbb{P}(\operatorname{Sym}^2V)$.
 
-**Proposition (the rank stratification).** An element of $\operatorname{Sym}^2V$ has rank $2$, $1$ or $0$ as a symmetric form. The rank-$1$ elements are exactly the squares $z\odot z$ of nonzero vectors, and their projectivisation is the Veronese conic; the rank-$0$ element is $0$.
+**Proposition (the rank stratification).** An element of $\operatorname{Sym}^2V$ has rank $2$, $1$ or $0$ as a symmetric form. The rank-$1$ elements are exactly the squares $Q\odot Q$ of nonzero vectors, and their projectivisation is the Veronese conic; the rank-$0$ element is $0$.
 
-*Proof.* In a basis, the element is a symmetric bilinear form on $V^{*}$; its rank is the rank of the symmetric matrix. A rank-one symmetric matrix is $zz^{T}$ for a nonzero vector $z$, that is $z\odot z$; the rank-zero element is the zero matrix. The image of $\nu$ is the set of the classes of the rank-one elements, which is a conic because it is the zero set of the discriminant $b^2-4ac$, an irreducible quadratic.
+*Proof.* In a basis, the element is a symmetric bilinear form on $V^{*}$; its rank is the rank of the symmetric matrix. A rank-one symmetric matrix is $QQ^{T}$ for a nonzero vector $Q$, that is $Q\odot Q$; the rank-zero element is the zero matrix. The image of $\nu$ is the set of the classes of the rank-one elements, which is a conic because it is the zero set of the discriminant $b^2-4ac$, an irreducible quadratic.
 
 **Remark (the discriminant and the conic).** The discriminant $\Delta=b^2-4ac$ is the equation of the conic. **The nondegenerate forms are the complement of the conic, the rank-one forms are the conic itself, and the origin is the only rank-zero form**; the conic is smooth because its equation has no repeated factor. The dual conic, read in the dual plane, is the set of the tangent lines, and it is the image of the dual Veronese map.
 
@@ -178,7 +178,7 @@ $$
 $$
 A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad C=\begin{pmatrix}0&1\\1&1\end{pmatrix},
 $$
-the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the skew matrices, and the product of two skew matrices is symmetric in general, so it also leaves the line.
+the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the skew matrices, and in this dimension the product of two skew matrices is always symmetric, so it also leaves the line.
 
 **Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and skew matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *The Product, the Trace and the Determinant*.
 
@@ -207,9 +207,9 @@ where $\operatorname{Sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ i
 
 ## Summary
 
-The tensor square $V\otimes V$ has dimension $4$ and decomposes canonically under the swap into the symmetric square of dimension $3$ and the alternating square of dimension $1$: $4=3+1$, or $6+2$ over $\mathbb{R}$. The symmetric square is, after a basis, the space of binary quadratic forms $az_1^2+bz_1z_2+cz_2^2$, with the rank-one elements forming the Veronese conic $b^2-4ac=0$ in $\mathbb{CP}^2$; the alternating square is the line of the determinant, on which $g$ acts by $\det g$, and it has no canonical generator.
+The tensor square $V\otimes V$ has dimension $4$ and decomposes canonically under the swap into the symmetric square of dimension $3$ and the alternating square of dimension $1$: $4=3+1$, or $6+2$ over $\mathbb{R}$. The symmetric square is, after a basis, the space of binary quadratic forms $aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2$, with the rank-one elements forming the Veronese conic $b^2-4ac=0$ in $\mathbb{CP}^2$; the alternating square is the line of the determinant, on which $g$ acts by $\det g$, and it has no canonical generator.
 
-The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(w\mapsto\ell(w)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(w\mapsto F(v,w)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}F^{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
+The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}F^{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
 
 ## Summary of Notation
 
@@ -221,8 +221,8 @@ The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\
 | $\Lambda^2V$ | the alternating square, the anti-fixed space of $\tau$, dimension $1$ |
 | $u\odot v=\tfrac12(u\otimes v+v\otimes u)$ | the symmetric product |
 | $u\wedge v=u\otimes v-v\otimes u$ | the alternating product |
-| $\nu([z])=[z\odot z]$ | the Veronese map, with image the conic $b^2-4ac=0$ |
-| $V\otimes V^{*}\cong\operatorname{End}(V)$ | the canonical isomorphism, $u\otimes\ell\mapsto(w\mapsto\ell(w)u)$ |
+| $\nu([Q])=[Q\odot Q]$ | the Veronese map, with image the conic $b^2-4ac=0$ |
+| $V\otimes V^{*}\cong\operatorname{End}(V)$ | the canonical isomorphism, $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$ |
 | $F^{\flat}:V\to V^{*}$ | the isomorphism $v\mapsto F(v,\cdot)$ given by a nondegenerate form |
 | $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ | the twisted product |
 | $1_F=\sum_{ij}F^{ij}e_i\otimes e_j$ | its identity, the inverse form |
