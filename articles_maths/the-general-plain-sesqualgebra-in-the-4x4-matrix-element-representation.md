@@ -1,4 +1,4 @@
-# __The General Plain Sesqualgebra in the $4\times4$ Left Regular Representation $\mathbb{B}_L$__
+# __The General Plain Sesqualgebra in the $4\times4$ Left Regular Representation__
 
 ## Introduction
 
@@ -61,9 +61,9 @@ $$
 $$
 so the Frobenius norm of the regular matrix is twice the definite norm of the element.
 
-**The signature and the null set.** The pairing is positive definite: on the sixteen complex coordinates of the left copy it has signature $(32,0)$, and its null set is $\{0\}$ alone. The form is the restriction to $\mathbb B_L$ of the Hilbert–Schmidt form of $M_4(\mathbb C)$, not the whole of it.
+**The signature and the null set.** The pairing is positive definite: on the four complex coordinates of the left copy it has signature $(8,0)$, and its null set is $\{0\}$ alone. The form is the restriction to $\mathbb B_L$ of the Hilbert–Schmidt form of $M_4(\mathbb C)$, not the whole of it.
 
-**The automorphism group.** The Hilbert–Schmidt form on $M_4(\mathbb C)$ has automorphism group the unitary group $\mathrm U(16)$. Among its isometries, those that preserve the algebra structure are the maps $X\mapsto UXV^{\dagger}$, forming $\mathrm U(4)\times\mathrm U(4)$ modulo the common centre.
+**The isometry group.** The Hilbert–Schmidt form on the left copy has isometry group the unitary group $\mathrm U(4)$. The algebra automorphisms that are isometries are the inner maps $X\mapsto UXU^{\dagger}$ with $U\in\mathrm U(2)$, forming $PU(2)$. The larger family $X\mapsto UXV^{\dagger}$ with $U,V\in\mathrm U(2)$, forming $\mathrm U(2)\times\mathrm U(2)$ modulo the common centre, preserves the two-sided module structure but not the product.
 
 **The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb M_+$ a definite space of real dimension $4$, and the norm-one group $G=SL_2(\mathbb C)$ acts on it by $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{*}$, preserving the norm:
 $$
@@ -114,7 +114,7 @@ and at $Y=\mathsf M_4^{L}(\vec e_x)$ the left action returns the negative, $Y^{\
 
 ## Summary
 
-In the canonical frame the left regular representation is a $*$-representation, $\mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}$, and it reads the sesquilinear product as $\mathsf M_4^{L}(\tilde Q\star\tilde Q_2)=\mathsf M_4^{L}(\tilde Q)\mathsf M_4^{L}(\tilde Q_2)^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)^{\dagger}\mathsf M_4^{L}(\tilde Q_2))=2\langle\tilde Q_2,\tilde Q_1\rangle_{*}$, positive definite of signature $(32,0)$ on the left copy, with Frobenius norm $\lVert\mathsf M_4^{L}(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$ and null set $\{0\}$; its automorphism group is $\mathrm U(16)$, whose algebra-preserving part is $\mathrm U(4)\times\mathrm U(4)$ modulo the centre. The two-sided action of the norm-one group $SL_2(\mathbb C)$ on the Hermitian subspace gives the double cover $SL_2(\mathbb C)\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb C)$.
+In the canonical frame the left regular representation is a $*$-representation, $\mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}$, and it reads the sesquilinear product as $\mathsf M_4^{L}(\tilde Q\star\tilde Q_2)=\mathsf M_4^{L}(\tilde Q)\mathsf M_4^{L}(\tilde Q_2)^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)^{\dagger}\mathsf M_4^{L}(\tilde Q_2))=2\langle\tilde Q_2,\tilde Q_1\rangle_{*}$, positive definite of signature $(8,0)$ on the left copy, with Frobenius norm $\lVert\mathsf M_4^{L}(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$ and null set $\{0\}$; its isometry group is $\mathrm U(4)$, with isometric algebra automorphisms $PU(2)$. The two-sided action of the norm-one group $SL_2(\mathbb C)$ on the Hermitian subspace gives the double cover $SL_2(\mathbb C)\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb C)$.
 
 ## Summary of Notation
 

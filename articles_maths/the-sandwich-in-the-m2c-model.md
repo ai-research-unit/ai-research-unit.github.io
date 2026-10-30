@@ -10,7 +10,7 @@ $$
 
 In the matrix model it is the congruence $X\mapsto MXM^{\dagger}$. On the anti-Hermitian half the congruence is a Lorentz transformation; on the Hermitian half it is a congruence of a real quadratic form, and Sylvester's law of inertia governs it. The same formula does both, and the two readings differ only by the factor $i$ that exchanges the halves.
 
-This article develops the sandwich in the matrix model. It is the matrix form of *The Polar Decomposition and Remarkable Subspaces*, §*The Action on the Two Halves* and §*Which Subspaces the Sandwich Preserves*, and the $2\times2$ counterpart of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Sandwich*.
+This article develops the sandwich in the matrix model. It is the matrix form of *The Polar Decomposition and Remarkable Subspaces*, §*The Action on the Two Halves* and §*Which Subspaces the Sandwich Preserves*, and the $2\times2$ counterpart of *$M_4(\mathbb{C})$ Model : The Sandwich*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian matrices, and $\mathbb{M}_-$, the anti-Hermitian matrices. The quaternionic norm is $N=\det M$. The modulus is $r=|\det M|^{1/2}$.
 

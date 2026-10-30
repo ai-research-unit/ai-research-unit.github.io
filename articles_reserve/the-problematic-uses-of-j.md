@@ -18,7 +18,7 @@ This is a live audit. Each section states one use, says what is wrong with it, a
 | index of a sum or a basis | confined | most of the corpus |
 | second central imaginary named $\iota$ | resolved | none |
 
-## The Four Meanings
+## The Meanings
 
 | use | value | carrier | state |
 |---|---|---|---|
@@ -136,7 +136,7 @@ The replacement therefore had to be semantic, and it followed the order of depen
 
 1. **$j$ is the hyperbolic unit.** It is written only in the reduced biquaternion layer, with $j^2=+1$, $ji=ij$, and the basis $1,i,j,ij$. No other use of the letter is sanctioned.
 2. **No $i,j,k$ for quaternion vector units.** The vector units are $\vec e_x,\vec e_y,\vec e_z$. A source that writes them as $i,j,k$ is translated, not copied.
-3. **The second central imaginary is a root, and it carries the root glyph.** The double is written $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, and its adjoined generator $\tilde\Xi_{\mathrm{ad}}$, a central root of $-1$ with the role subscript; the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$. The glyph is registered in *Conventions in the Biquaternion Universe*, §*The Root Convention*. A name is not chosen inside an article.
+3. **The second central imaginary is a root, and it carries the root glyph.** The double is written $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, and its adjoined generator is $\tilde\Xi_{\mathrm{ad}}$, a central root of $-1$ with the role subscript; the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$. The glyph is registered in *Conventions in the Biquaternion Universe*, §*The Root Convention*. A name is not chosen inside an article.
 4. **The spin is $s$.** In the biquaternion corpus the labels are $s$ and $m_s$; $j$ is not a spin label. A cited source that writes $j$ is quoted with its own letter and translated in the surrounding text.
 5. **An index may be $j$ only where it cannot be read as an element or a label.** In the presence of an algebra element or a spin, the index is renamed.
 
@@ -146,11 +146,11 @@ The replacement therefore had to be semantic, and it followed the order of depen
 
 - **The adjoined generator named $\iota$.** The notation was replaced in *Eigenvalue Decomposition and Eigenbasis of a Complex Number* by $i_1=i\otimes1$ and $i_2=1\otimes i$, with $e_\pm=\tfrac12(1\mp i_1i_2)$; the file now has zero occurrences of $\iota$. It remains only in its established senses — the Clifford map, the involution, the inner automorphism $\iota_u$, the canonical embedding, the Newman–Penrose dyad element — never as a central imaginary.
 - **The dummy of the gate criterion.** The criterion is now stated as a central root of $-1$, with the root glyph $\tilde\Xi$ of §*The Root Convention*, and its instantiation reads $\tilde\Xi=i$. Applied in *The Biquaternion Algebra*, §*The Gate*, in *Introduction to the General Quaternionic Sesqualgebra*, §*The Gate*, and in *Roots, Idempotents and Observables*. The reserved letter is no longer a bound variable anywhere in the corpus.
-- **The second central imaginary.** The adjoined generator is a root like any other: $\tilde\Xi_{\mathrm{ad}}$, central, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and outside $\mathbb{B}_{\mathbb{R}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$. The double is written $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ where it is defined, and *the double* after that. The glyph is registered in *Conventions in the Biquaternion Universe*, §*The Root Convention*. Applied in the sixteen built entries, the seven unbuilt drafts, the menu comments and `_reserve/BRAINSTORMING.md`; no occurrence of $\mathbb{B}[j]$, $\chi=ij$, $\rho(j)$ or $\iota_{\mathrm{Cl}}(j)$ remains.
+- **The second central imaginary.** The adjoined generator is a root like any other: $\tilde\Xi_{\mathrm{ad}}$, central, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and outside $\mathbb{B}_{\mathbb{R}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$. The double is written $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ where it is defined, and *the double* after that. The glyph is registered in *Conventions in the Biquaternion Universe*, §*The Root Convention*. Applied in the fifteen built articles, the menu comments, the seven unbuilt drafts and `_reserve/BRAINSTORMING.md`; no occurrence of $\mathbb{B}[j]$, $\chi=ij$, $\rho(j)$ or $\iota_{\mathrm{Cl}}(j)$ remains in the corpus; the four strings survive only in this record.
 - **False positive struck from the secondary-imaginary inventory.** *Split-Complex Element Representations* writes $\rho(j)=\pm1$: there $j$ is the hyperbolic unit and $\rho$ is a character, not the adjoined generator. It is not a carrier and is no longer listed.
 
 ## Summary
 
-The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. Two other meanings are in circulation: Hamilton's vector unit and the spin label. The second central imaginary, formerly the worst of the three, is closed: it is the root $\tilde\Xi_{\mathrm{ad}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$ (§*Resolved*). The spin label still collides with both reserved letters and duplicates a label the corpus has already fixed as $s$.
+The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. Two other meanings are in circulation: Hamilton's vector unit and the spin label. The second central imaginary, formerly the worst of the four, is closed: it is the root $\tilde\Xi_{\mathrm{ad}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$ (§*Resolved*). The spin label still collides with both reserved letters and duplicates a label the corpus has already fixed as $s$.
 
 The second central imaginary no longer appears in the built corpus, in the menu or in the drafts. One article still carries Hamilton's vector unit; twenty-nine built articles carry the spin label, twenty-two in the physics corpus and seven in the mathematical one, plus nineteen unbuilt drafts. The remaining repair is the translation of Hamilton's vector unit into $\vec e_y$ and the renaming of the spin label to $s$, with the summation and basis indices left alone. The definition in *Chirality: The Conjugate Pair* was the place to start for the generator, because every other occurrence was a copy of it.

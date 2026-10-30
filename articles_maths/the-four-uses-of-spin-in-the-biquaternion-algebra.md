@@ -17,7 +17,7 @@ The highest-weight question has two module structures, and the values $0,\tfrac1
 | highest weight | the representation | Casimir of a module structure | $0,\ \tfrac12,\ 1$ |
 | adjoint action (traceless part) | the vector carrier | conjugation on the algebra | $1$ |
 | Peirce index | the copy | Peirce decomposition | $+$ or $-$ |
-| chirality | the Lorentz half | central sign in the double | $+$ or $-$ |
+| chirality | the Lorentz half | central sign in $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | $+$ or $-$ |
 
 The first two rows are one notion. The adjoint action carries the two integer cases, $s=0$ on the centre and $s=1$ on the traceless part; the row records the $s=1$ carrier. The last two rows are signs, and neither is a weight.
 

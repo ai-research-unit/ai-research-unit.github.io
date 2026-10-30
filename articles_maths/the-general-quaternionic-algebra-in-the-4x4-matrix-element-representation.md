@@ -1,4 +1,4 @@
-# __The General Quaternionic Algebra in the $4\times4$ Left Regular Representation $\mathbb{B}_L$__
+# __The General Quaternionic Algebra in the $4\times4$ Left Regular Representation__
 
 ## Introduction
 
@@ -83,9 +83,9 @@ $$
 $$
 while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The factor two is the dimension of the module: the regular trace is four times the scalar part, where the $2\times2$ trace is twice it.
 
-**The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the conjugate $S^{\mathsf T}I_4S$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.
+**The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the congruent matrix $S^{\mathsf T}I_4S$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.
 
-**The null set.** The form vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$, that is when the block $\mathsf M_2(\tilde Q)$ is singular. The regular matrix then has rank two, and the null set is the zero-divisor cone, of real dimension $6$ in $\mathbb R^8$. It is distinct from the complex cone of the plain bilinear form.
+**The null set.** The form vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$, that is when the block $\mathsf M_2(\tilde Q)$ is singular. The regular matrix then has rank at most two, and the null set is the zero-divisor cone, of real dimension $6$ in $\mathbb R^8$. It is not the null set of the plain form, which is $\{0\}$.
 
 **The automorphisms.** The isometry group is the complex orthogonal group $O_4(\mathbb C)$, of complex dimension $6$, whose realification is the split group $O(4,4)$. The transposition-carrier $C(\cdot)^{\mathsf T}C^{-1}$ is an isometry, and the conjugations by the units form its inner part.
 
@@ -95,7 +95,7 @@ while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The
 
 **A basis element.** For $\tilde Q=\vec e_x$,
 $$
-\mathsf M_4^{L}(\vec e_x)=-\sigma_1\otimes I_2
+\mathsf M_4^{L}(\vec e_x)=-i\,I_2\otimes\sigma_1
 =\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 and $C\mathsf M_4^{L}(\vec e_x)^{\mathsf T}C^{-1}=-\mathsf M_4^{L}(\vec e_x)$. The product theorem at $\vec e_x\star\vec e_x=\vec e_x^{\natural}\vec e_x=-\vec e_x^{2}=e_t$ reads
@@ -167,7 +167,7 @@ the plain, the quaternionic, the Hermitian and the Krein form. The factor is $\t
 
 ## Summary
 
-The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its automorphism group is $O_4(\mathbb C)$, of realification $O(4,4)$.
+The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.
 
 ## Summary of Notation
 
@@ -179,7 +179,7 @@ The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tild
 | $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ | the natural conjugation |
 | $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$ | the quaternionic product |
 | $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the general quaternionic bilinear form |
-| $O_4(\mathbb C)$, $O(4,4)$ | the automorphism group and its realification |
+| $O_4(\mathbb C)$, $O(4,4)$ | the isometry group and its realification |
 
 ## Further Reading
 

@@ -447,7 +447,7 @@ $$
 \det\mathsf M_4(\tilde\nabla)=\langle\tilde\nabla\rangle_{\natural}^2=\Box^2 ,
 $$
 
-read on the symbol, because the determinant of the left regular matrix of an element is the square of its quaternionic norm (*$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*). The agreement is a consistency check, not a construction: the determinant sees the square of the shifted d'Alembertian, while the kernel of the single root is a chiral half. A determinant identity is not a square root.
+read on the symbol, because the determinant of the left regular matrix of an element is the square of its quaternionic norm (*$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*). The agreement is a consistency check, not a construction: the determinant sees the square of the shifted d'Alembertian, while the kernel of the single root is a chiral half. A determinant identity is not a square root.
 
 ## The Classification of Carriers
 

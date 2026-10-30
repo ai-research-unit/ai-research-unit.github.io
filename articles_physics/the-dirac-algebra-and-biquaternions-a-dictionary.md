@@ -389,7 +389,7 @@ $$
 
 where $\Phi_{\mathbb{C}}$ is the $\mathbb{C}$-linear extension of $\iota_{\mathrm{Cl}}$ to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. In words: **the chirality operator is the product of the two commuting square roots of $-1$**, the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra and the biquaternion imaginary $i$ (whose Clifford image is minus the pseudoscalar). This is the precise sense in which $\gamma_5$ is *not* an element of $\mathbb{B}$: it needs both square roots, and their product is a new central element of the complexified algebra.
 
-The formula fixes the image of the second imaginary only after a choice. Since $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, $\iota_{\mathrm{Cl}}$ does not determine $\iota_{\mathrm{Cl}}(\tilde\Xi_{\mathrm{ad}})$; the $\mathbb{C}$-linear extension to the double requires one binary choice. The convention that $\gamma_5$ is the image of $\chi=i\tilde\Xi_{\mathrm{ad}}$ selects it:
+The formula fixes the image of the adjoined root only after a choice. Since $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, $\iota_{\mathrm{Cl}}$ does not determine $\iota_{\mathrm{Cl}}(\tilde\Xi_{\mathrm{ad}})$; the $\mathbb{C}$-linear extension to the double requires one binary choice. The convention that $\gamma_5$ is the image of $\chi=i\tilde\Xi_{\mathrm{ad}}$ selects it:
 
 $$
 \boxed{\;\iota_{\mathrm{Cl}}(\tilde\Xi_{\mathrm{ad}})=-i_{\mathrm{Cl}}\quad\Longleftrightarrow\quad \iota_{\mathrm{Cl}}(\chi)=\iota_{\mathrm{Cl}}(i)\iota_{\mathrm{Cl}}(\tilde\Xi_{\mathrm{ad}})=+\gamma_5\;},\qquad \chi=i\tilde\Xi_{\mathrm{ad}} .

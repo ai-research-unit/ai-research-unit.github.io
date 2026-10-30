@@ -1,4 +1,4 @@
-# __The General Quaternionic Sesqualgebra in the $4\times4$ Left Regular Representation $\mathbb{B}_L$__
+# __The General Quaternionic Sesqualgebra in the $4\times4$ Left Regular Representation__
 
 ## Introduction
 
@@ -83,13 +83,13 @@ $$
 $$
 with $\varepsilon=(1,-1,-1,-1)$. The algebraic norm of the form is $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$, of complex inertia $(1,3)$ and real signature $(2,6)$; its isotropic set is the real cone $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}=0$, of real dimension $7$. It is not the set of singular matrices: $e_t+\vec e_x$ is a unit and is isotropic.
 
-**The automorphism group.** The form is of signature $(1,3)$ over $\mathbb C$, so its isometry group is the indefinite unitary group $\mathrm U(1,3)$, of real dimension $16$; its realification has automorphism group $O(2,6)$.
+**The isometry group.** The form is of inertia $(1,3)$ over $\mathbb C$, so its isometry group is the indefinite unitary group $\mathrm U(1,3)$, of real dimension $16$; its realification has isometry group $O(2,6)$.
 
 ## Worked Examples
 
 **The identity.** For $\tilde Q=e_t$, $\mathsf M_4^{L}(e_t)=I_4$, $\operatorname{adj}I_4=I_4$ and $\langle e_t\rangle_{\natural}=1$, so the identity reads $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t,e_t\rangle_{\natural*}$.
 
-**A vector unit.** For $\tilde Q=\vec e_x$, $\mathsf M_4^{L}(\vec e_x)=-\sigma_1\otimes I_2$ is anti-Hermitian, so $\mathsf M_4^{L}(\vec e_x)^{\dagger}=-\mathsf M_4^{L}(\vec e_x)$ and $\operatorname{adj}\mathsf M_4^{L}(\vec e_x)=-\mathsf M_4^{L}(\vec e_x)$. Hence
+**A vector unit.** For $\tilde Q=\vec e_x$, $\mathsf M_4^{L}(\vec e_x)=-i\,I_2\otimes\sigma_1$ is anti-Hermitian, so $\mathsf M_4^{L}(\vec e_x)^{\dagger}=-\mathsf M_4^{L}(\vec e_x)$ and $\operatorname{adj}\mathsf M_4^{L}(\vec e_x)=-\mathsf M_4^{L}(\vec e_x)$. Hence
 $$
 \tfrac12\operatorname{Tr}\bigl(\operatorname{adj}X\,X^{\dagger}\bigr)
 =\tfrac12\operatorname{Tr}\bigl((-X)(-X)\bigr)=\tfrac12\operatorname{Tr}(X^{2})=-2=2\langle\vec e_x,\vec e_x\rangle_{\natural*},
@@ -116,7 +116,7 @@ A=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
 $$
 with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$.
 
-**The two conjugations, entry by entry.** The natural conjugation is $C X^{\mathsf T}C^{-1}=2Q_tI_4-X$, and the Hermitian conjugation is $X^{\dagger}$. On the vector units the two agree, because such a matrix is anti-Hermitian and the carrier returns its negative:
+**The two conjugations, entry by entry.** The natural conjugation is $C X^{\mathsf T}C^{-1}=2Q_tI_4-X$, and the Hermitian conjugation is $X^{\dagger}$. On the basis vector units the two agree, because such a matrix is anti-Hermitian and the carrier returns its negative:
 $$
 C\,\mathsf M_4^{L}(\vec e_x)^{\mathsf T}C^{-1}=-\mathsf M_4^{L}(\vec e_x)=\mathsf M_4^{L}(\vec e_x)^{\dagger}.
 $$
@@ -155,7 +155,7 @@ the factor two being the ratio of the regular trace to the scalar part.
 
 ## Summary
 
-In the canonical frame the left regular representation is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is $C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the dagger. The general quaternionic sesquilinear product is the carried sesquilinear product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)^{\dagger}$, whose fundamental symmetry is $J={}^{\natural}$, with $+1$ eigenspace the complex scalar line and $-1$ eigenspace the vector subspace. The general quaternionic sesquilinear form is the trace of the adjugated product, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf M_4^{L}(\tilde Q_1)\mathsf M_4^{L}(\tilde Q_2)^{\dagger})=2\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, which on the norm-one slice is twice the form; it has complex inertia $(1,3)$, real signature $(2,6)$, the real cone of real dimension $7$ as isotropic set, and automorphism group $\mathrm U(1,3)$, of realification $O(2,6)$.
+In the canonical frame the left regular representation is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is $C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the dagger. The general quaternionic sesquilinear product is the carried sesquilinear product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)^{\dagger}$, whose fundamental symmetry is $J={}^{\natural}$, with $+1$ eigenspace the complex scalar line and $-1$ eigenspace the vector subspace. The general quaternionic sesquilinear form is the trace of the adjugated product, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf M_4^{L}(\tilde Q_1)\mathsf M_4^{L}(\tilde Q_2)^{\dagger})=2\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, which on the norm-one slice is twice the form; it has complex inertia $(1,3)$, real signature $(2,6)$, the real cone of real dimension $7$ as isotropic set, and isometry group $\mathrm U(1,3)$, of realification $O(2,6)$.
 
 ## Summary of Notation
 
@@ -168,7 +168,7 @@ In the canonical frame the left regular representation is $\mathsf M_4^{L}(\tild
 | $\operatorname{adj}\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}\mathsf M_4^{L}(\tilde Q^{\natural})$ | the adjugate |
 | $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)^{\dagger}$ | the general quaternionic sesquilinear product |
 | $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf M_4^{L}(\tilde Q_1)\mathsf M_4^{L}(\tilde Q_2)^{\dagger})=2\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the general quaternionic sesquilinear form |
-| $\mathrm U(1,3)$, $O(2,6)$ | the automorphism group and its realification |
+| $\mathrm U(1,3)$, $O(2,6)$ | the isometry group and its realification |
 
 ## Further Reading
 

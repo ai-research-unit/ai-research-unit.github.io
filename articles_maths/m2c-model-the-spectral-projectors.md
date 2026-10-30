@@ -236,4 +236,4 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 - [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix $\mathsf C_Q$
 - [Nilpotents](nilpotents.html), for the nilpotent cone
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the characteristic polynomial
-- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 spectral representation
+- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 spectral representation

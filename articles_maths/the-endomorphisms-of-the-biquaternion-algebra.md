@@ -8,7 +8,7 @@ This article opens the group *Operators* of the Biquaternions chapter and takes 
 
 **The scope of the word.** In this article an **endomorphism** is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the **algebra** endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form the group $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of dimension three. The two uses of the word are separated in §*The Two Kinds of Endomorphism*, and confusing them is the first trap of the subject.
 
-**The other route.** The corpus also builds $M_4(\mathbb{C})$ from the two-sided operators $T_{a,b}=L_aR_b$. That is the route of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The two routes reach the same algebra and answer different questions: the endomorphism route says what the algebra is, the two-sided route says how the multiplication generates it. §*The Bridge to the Two-Sided Operators* compares them.
+**The other route.** The corpus also builds $M_4(\mathbb{C})$ from the two-sided operators $T_{a,b}=L_aR_b$. That is the route of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The two routes reach the same algebra and answer different questions: the endomorphism route says what the algebra is, the two-sided route says how the multiplication generates it. §*The Bridge to the Two-Sided Operators* compares them.
 
 **Three objects.** The rest of the article keeps apart the carrier, its left regular image and its full operator algebra.
 
@@ -20,7 +20,7 @@ This article opens the group *Operators* of the Biquaternions chapter and takes 
 
 $L(\mathbb{B})$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ are both made of $4\times4$ matrices in the coefficient basis. They are not the same object: the first has dimension four, the second dimension sixteen. The subscript $L$ in $M_4(\mathbb{C})_{\mathbb{B},L}$ records the first.
 
-**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*. The matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The ambient operator space in general is *The Operators on an Algebra*; the regular representations and the double centraliser are *The Regular Representation as an Algebra of Operators*. The two-sided operators are *Two-Sided Operators on the Biquaternion Algebra*, and their matrix form is *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract isomorphism with the enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The article is pure algebra: no bilinear form, no topology, and the only norm it uses is the multiplicative quaternionic norm.
+**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*. The matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The ambient operator space in general is *The Operators on an Algebra*; the regular representations and the double centraliser are *The Regular Representation as an Algebra of Operators*. The two-sided operators are *Two-Sided Operators on the Biquaternion Algebra*, and their matrix form is *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract isomorphism with the enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The article is pure algebra: no bilinear form, no topology, and the only norm it uses is the multiplicative quaternionic norm.
 
 ## The Carrier and Its Linear Maps
 
@@ -307,7 +307,7 @@ $$
 \operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 
-They are displayed and tabulated in *$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+They are displayed and tabulated in *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
 ### The Cone of Products and the Length
 
@@ -364,7 +364,7 @@ The second row is a subalgebra of the third, not a quotient and not a different 
 
 **The dimension sixteen.** It is $4\times4$: four basis vectors, four coordinates each. No multiplication is used.
 
-**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
+**The trace and the determinant of a left multiplication.** In the Peirce basis of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, $L_a$ is two copies of the $2\times2$ matrix of $a$,
 
 $$
 S^{-1}L_aS=\operatorname{diag}\bigl(\mathsf{M}_2(a),\mathsf{M}_2(a)\bigr),
@@ -444,10 +444,10 @@ The complex-linear maps of the biquaternion algebra into itself form the endomor
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the matrix algebra and the distinction from the regular model
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ and its criteria
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the construction from $L_a$ and $R_b$ and the sixteen matrices
-- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma frame and the product question
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma frame and the product question
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the general ambient space and the subspace-group rule
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the double centraliser of the regular bimodule
-- [$M_4(\mathbb{C})_{\mathbb{B},L}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
+- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single regular matrix
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the derivations and automorphisms at matrix level
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation of the corpus
