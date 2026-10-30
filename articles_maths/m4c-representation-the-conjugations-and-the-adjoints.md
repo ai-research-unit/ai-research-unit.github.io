@@ -17,7 +17,7 @@ The matrix is $M=\mathsf{M}_4^{L}(\tilde Q)$.
 
 **Boundaries.** The fixed spaces are *$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
-**Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=R_y=-i\sigma_2\otimes\mathrm I_2$.
+**Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
 ## The Four Involutions
 

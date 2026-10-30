@@ -4,9 +4,7 @@
 
 **The letter $j$ carries four incompatible meanings in this corpus, and one of them contradicts the conventions.** It is the hyperbolic unit, $j^2=+1$; Hamilton's second vector unit, $j^2=-1$; a second central imaginary adjoined to the biquaternion algebra, again $j^2=-1$ but outside $\mathbb{B}$; and the spin label, a number, in $j(j+1)$ and $2j+1$. Two further uses, the dummy variable of a general statement and the index of a sum, are harmless only because they are local.
 
-A reader who meets $j$ in a display cannot tell which of the four is meant without reconstructing the context. That is the defect this article records. The article inventories each use, states what is wrong with it, lists the articles that carry it, and proposes the rule that removes it. It is a reserve article: it documents a notation fault and a proposed correction, not a result of the algebra. No other file is changed by it.
-
-The order of the sections follows the severity. The sanctioned use comes first, so that the rule has a fixed point. The dummy variable comes next, because it is the point at which a placeholder becomes an element. Then the two uses that damage the biquaternion corpus: the second central imaginary, which contradicts the conventions, and the spin label, which collides with all of the above. The index uses and the inventory close the article.
+A reader who meets $j$ in a display cannot tell which of the four is meant without reconstructing the context. That is the defect this article records. Each section states one use, says what is wrong with it, and closes with the full list of the articles that carry it, linked. The sanctioned use is the exception and is marked as such. This is a reserve article: it documents a notation fault and a proposed correction, not a result of the algebra. No other file is changed by it.
 
 ## The Four Meanings
 
@@ -29,9 +27,11 @@ $$
 \breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown},\qquad j^2=+1,\qquad ji=ij,
 $$
 
-on the basis $1,i,j,ij$, with $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$. The same section records that the split-complex numbers $\mathbb{D}$ use the same unit with the same sign, $j^2=+1$; what separates the two layers is the second, independent imaginary $i$, and the basis $1,i,j,ij$ rather than $1,j$. The sign $+1$ is what the two share, and it is what separates both from every use of $j$ with $j^2=-1$.
+on the basis $1,i,j,ij$, with $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$. The same section records that the split-complex numbers $\mathbb{D}$ use the same unit with the same sign, $j^2=+1$; what separates the two layers is the second, independent imaginary $i$, and the basis $1,i,j,ij$ rather than $1,j$.
 
 Nothing in this article touches that use. The rule proposed at the end keeps it, and every other use yields to it. The reason is not aesthetic: the sign of $j^2$ is what separates the hyperbolic layers from the definite ones, and the dictionary of the twelve products, the four forms and the four norms is read off that sign.
+
+**Articles using this sense.** This use is not a defect, so it is not inventoried article by article. Its carriers are the reduced biquaternion and split-complex corpus, indexed in *The Mathematical Corpus*, together with §*The Base and Its Units* and §*The Elements and their Coefficients* of [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html).
 
 ## The Dummy Variable
 
@@ -39,7 +39,14 @@ Nothing in this article touches that use. The rule proposed at the end keeps it,
 
 In that paragraph $j$ is a dummy. It names no element of $\mathbb{B}$; it is the slot that the central imaginary fills. Read alone, the paragraph is correct. Read beside *Chirality: The Conjugate Pair*, where $j$ is introduced as a **new** central imaginary with $j^2=-1$ commuting with $i$, the two statements are indistinguishable in symbols and opposite in content: in the first, $j$ is $i$; in the second, $j$ is not $i$ and not in $\mathbb{B}$ at all.
 
-The same dummy appears in *Introduction to the General Quaternionic Sesqualgebra*, §*The Gate: a Central Element of Square $-1$*, where the gate is empty because the centre is trivial. There the letter is harmless because no element follows it. The lesson is not that the dummy is wrong. The lesson is that a dummy and an element must not share a glyph, and that the passage from one to the other must be written as a construction, not as a rename.
+The same dummy appears in *Introduction to the General Quaternionic Sesqualgebra*, §*The Gate: a Central Element of Square $-1$*, where the gate is empty because the centre is trivial, and again in *Roots, Idempotents and Observables*, which cites the criterion. In *Split-Biquaternion Exponential and Lie Group Structure* the phrase "the central element $j$" names the hyperbolic unit itself, with $j^2=+e_t$: the same words, the opposite sign, and neither is a second scalar field. The lesson is not that the dummy is wrong. The lesson is that a dummy and an element must not share a glyph, and that the passage from one to the other must be written as a construction, not as a rename.
+
+**Articles using this sense.**
+
+- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html) — the criterion, $j=i$.
+- [Introduction to the General Quaternionic Sesqualgebra](../articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.html) — the criterion, the gate empty.
+- [Roots, Idempotents and Observables](../articles_physics/roots-idempotents-and-observables.html) — the criterion cited.
+- [Split-Biquaternion Exponential and Lie Group Structure](../articles_maths/split-biquaternion-exponential-and-lie-group-structure.html) — "the central element $j$", $j^2=+e_t$.
 
 ## Hamilton's Vector Unit
 
@@ -54,6 +61,10 @@ with $j^2=-1$ and $jz=\bar z j$, and uses the splitting $\mathbb{H}=\mathbb{C}\o
 It is nevertheless the second sign on the same glyph. In this article $j^2=-1$; in the reduced biquaternion layer $j^2=+1$. A reader who carries the first into the second, or the second into the first, gets a wrong algebra with no visible error. The article is also the exact case that *Conventions in the Biquaternion Universe*, §*The Base and Its Units*, forbids: a vector unit written as $i$ or $j$ rather than as $\vec e_x$ or $\vec e_y$.
 
 The repair is local and does not change a single product. Write $z=a+b\vec e_x$, $w=c+d\vec e_x$, and replace $j$ by $\vec e_y$ throughout; the relation $\vec e_y z=\bar z\,\vec e_y$ and the matrix $\rho(z+w\vec e_y)$ are unchanged. The article then uses one convention and no exception.
+
+**Articles using this sense.**
+
+- [Matrix Groups and Classical Groups](../articles_maths/matrix-groups-and-classical-groups.html) — the splitting $\mathbb{H}=\mathbb{C}\oplus\mathbb{C}j$ and the map $\rho(z+wj)$.
 
 ## The Second Central Imaginary
 
@@ -80,6 +91,27 @@ The defect has already propagated into the conventions themselves. *Conventions 
 
 **The repair.** Write the double as $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and the adjoined generator as $1\otimes i$; both are already used in the chirality article, in the same section, and are unambiguous. Introduce no letter. If the repetition becomes unmanageable, a short name may be adopted, but only after it is registered in *Conventions in the Biquaternion Universe*; a name chosen inside one article is how the present defect began.
 
+**Articles using this sense.** The count is the number of occurrences of $\mathbb{B}[j]$, $\chi=ij$, $\rho(j)$ or $\iota_{\mathrm{Cl}}(j)$ in the file.
+
+- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) — 18, the definition and its consequences.
+- [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) — 13, chirality projectors, mass pairing, $\gamma_5$.
+- [Biquaternion Physical Interpretation of Chirality](../articles_physics/biquaternion-physical-interpretation-of-chirality.html) — 10, the physical reading of the central sign.
+- [The Dirac Algebra and Biquaternions — A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html) — 9, the choice of $\iota_{\mathrm{Cl}}(j)$.
+- [The Four Uses of Spin in the Biquaternion Algebra](../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html) — 7, the chirality as one of the four uses.
+- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html) — 4, the doubled algebra in the spin article.
+- [The Clifford Layer of the Physics Corpus](../articles_reserve/the-clifford-layer-of-the-physics-corpus-inventory-and-the-odd-sector.html) — 3, inventory of the complexified layer.
+- [The Spectral Triple of the Biquaternion Algebra](../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html) — 3, the chirality operator of the triple.
+- [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html) — 2, cross-reference.
+- [The Two Chiralities of $M_6(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m6c.html) — 2, cross-reference.
+- [$M_2(\mathbb{C})$ Model: Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html) — 1, cross-reference.
+- [$M_4(\mathbb{C})$ Representation: The Two-Sided Operators](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) — 1, cross-reference.
+- [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) — 1, the internal contradiction.
+- [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html) — 1, the chiral mass pairing.
+- [The Schwinger–Dyson Equations](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) — 1, the axial current.
+- [The Mathematical Corpus, menu](../maths.html) — 3, the menu comments.
+
+The file `_reserve/BRAINSTORMING.md` carries three further occurrences and is outside the built corpus.
+
 ## The Spin Label
 
 **The conventions fix the spin as $s$, and the physics articles write it as $j$.** *Conventions in the Biquaternion Universe*, §*The Special Elements: Root, Idempotent and Nilpotent*, defines the spin by $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$, and states that the algebra supplies the rotation action and the weights of its generator but not the one-particle space. The physics articles instead write
@@ -94,65 +126,48 @@ This is the standard physics notation, and that is the difficulty: it is not an 
 
 The collision is also redundant. The corpus already has $s$ and $m_s$, fixed in the conventions article, and the two edited spin articles of the mathematical corpus already use $s$. The repair is a replacement of labels, not of mathematics: $j\to s$, $m\to m_s$, $V_j\to V_s$, $j_1,j_2\to s_1,s_2$, $m_j\to m_s$. The replacement is not textual: in the Clebsch–Gordan series $j$ is also a summation index, and in $\epsilon_{ijk}$ it is a spatial index, so the two must be left alone.
 
+**Articles using this sense, physics corpus.** The count is the number of occurrences of $2j+1$, $j(j+1)$, $|j,m\rangle$ or spin-$j$ in the file.
+
+- [Addition of Angular Momenta and Clebsch–Gordan Coefficients](../articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html) — 26.
+- [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html) — 18.
+- [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html) — 13.
+- [Spin Squeezing and the Tavis–Cummings Model](../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html) — 12.
+- [The Hydrogen Atom, the Relativistic Case](../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html) — 11.
+- [The Classical Coulomb Problem and Its Hidden $SO(4)$ Symmetry](../articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html) — 8.
+- [The Majorana Representation](../articles_physics/the-majorana-representation-in-biquaternionic-form.html) — 6.
+- [The Spinor Representation of the Lorentz Group](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) — 6.
+- [Two Spin-Half Particles](../articles_physics/two-spin-half-particles-in-biquaternionic-form.html) — 3.
+- [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html) — 2.
+- [The Classical Origin of $g=2$](../articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html) — 2.
+- [The Fermionic Fock Space](../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html) — 2.
+- [The Lorentz Group in Biquaternionic Form](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — 2.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) — 2.
+- [The Spin-Half Path Integral](../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html) — 2.
+- [The Spin–Statistics Theorem](../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html) — 2.
+- [AI Physics Review](../articles_physics/ai-physics-review.html) — 1.
+- [Exercise: The Non-Relativistic Limit and the Pauli Equation](../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html) — 1.
+- [Frames, Rotations and the Lorentz Group](../articles_physics/frames-rotations-and-the-lorentz-group.html) — 1.
+- [The Dirac Oscillator](../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html) — 1.
+- [The Qutrit Problem](../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html) — 1.
+- [The Scalar Field in the Centre](../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) — 1.
+
+**Articles using this sense, mathematical corpus.** The label is the standard $\mathrm{SU}(2)$ label there and is not a defect, because the biquaternion convention $s$ is not in force; the files are listed because a reader acquires the habit there and because a cross-reference can carry the label into a physics display.
+
+- [Analysis on Compact Groups](../articles_maths/analysis-on-compact-groups.html) — 8.
+- [The Peter–Weyl Theorem](../articles_maths/the-peter-weyl-theorem.html) — 7.
+- [Spinors as Peirce Coordinates in $M_6(\mathbb{C})$](../articles_maths/spinors-as-peirce-coordinates-in-m6c.html) — 4.
+- [Representation Theory of Locally Compact Groups](../articles_maths/representation-theory-of-locally-compact-groups.html) — 3.
+- [Spinors as Peirce Coordinates in $M_3(\mathbb{C})$](../articles_maths/spinors-as-peirce-coordinates-in-m3c.html) — 3.
+- [Spinors as Peirce Coordinates in $M_4(\mathbb{C})$](../articles_maths/spinors-as-peirce-coordinates-in-m4c.html) — 3.
+- [Spinors as Peirce Coordinates in $M_5(\mathbb{C})$](../articles_maths/spinors-as-peirce-coordinates-in-m5c.html) — 3.
+
 ## The Index Uses
 
 **Two uses are harmless, and only because they are local.** The first is the summation index of a Clebsch–Gordan sum or of $\epsilon_{ijk}$; it is bound, it never denotes an element, and it disappears from the result. The second is the basis label $e_j$ of a Clifford algebra, which is a subscript on a fixed symbol and cannot be read as a scalar.
 
-Both become harmful the moment they share an expression with an element or a spin. The rule below therefore does not ban them; it confines them. An index may be $j$ when the expression contains no algebra element and no spin labelled $j$; otherwise it is renamed. The confined uses are not counted in the inventory, because they are not defects and a count of them would obscure the count of the defects.
+Both become harmful the moment they share an expression with an element or a spin. The rule below therefore does not ban them; it confines them. An index may be $j$ when the expression contains no algebra element and no spin labelled $j$; otherwise it is renamed.
 
-## The Inventory
-
-**The articles that carry the defective notation.** The count is the number of occurrences of $\mathbb{B}[j]$ or $\chi=ij$ in the file. The role is what the file does with the notation.
-
-| article | count | role |
-|---|---|---|
-| [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) | 12 | the definition and its consequences |
-| [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | 11 | chirality projectors, mass pairing, $\gamma_5$ |
-| [Biquaternion Physical Interpretation of Chirality](../articles_physics/biquaternion-physical-interpretation-of-chirality.html) | 8 | the physical reading of the central sign |
-| [The Four Uses of Spin in the Biquaternion Algebra](../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html) | 7 | the chirality as one of the four uses |
-| [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html) | 4 | the doubled algebra in the spin article |
-| [The Dirac Algebra and Biquaternions — A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html) | 4 | the choice of $\iota_{\mathrm{Cl}}(j)$ |
-| [The Spectral Triple of the Biquaternion Algebra](../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html) | 3 | the chirality operator of the triple |
-| [The Clifford Layer of the Physics Corpus](../articles_reserve/the-clifford-layer-of-the-physics-corpus-inventory-and-the-odd-sector.html) | 3 | inventory of the complexified layer |
-| [The Mathematical Corpus, menu](../maths.html) | 3 | menu comments |
-| [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html) | 2 | cross-reference |
-| [The Two Chiralities of $M_6(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m6c.html) | 2 | cross-reference |
-| [$M_2(\mathbb{C})$ Model: The Peirce Coordinates](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html) | 1 | cross-reference |
-| [$M_4(\mathbb{C})$ Representation: The Two-Sided Operators](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | 1 | cross-reference |
-| [The Schwinger–Dyson Equations](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) | 1 | the axial current |
-| [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | 1 | the internal contradiction |
-| [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html) | 1 | the chiral mass pairing |
-
-The file `_reserve/BRAINSTORMING.md` carries three further occurrences and is outside the built corpus.
-
-**The physics articles that use $j$ as the spin label.** The count is the number of occurrences of $2j+1$, $j(j+1)$, $|j,m\rangle$ or spin-$j$ in the file.
-
-| article | count |
-|---|---|
-| [Addition of Angular Momenta and Clebsch–Gordan Coefficients](../articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html) | 26 |
-| [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html) | 18 |
-| [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html) | 13 |
-| [The Hydrogen Atom, the Relativistic Case](../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html) | 11 |
-| [The Classical Coulomb Problem and Its Hidden $SO(4)$ Symmetry](../articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html) | 8 |
-| [Spin Squeezing and the Tavis–Cummings Model](../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html) | 7 |
-| [The Spinor Representation of the Lorentz Group](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) | 6 |
-| [The Majorana Representation](../articles_physics/the-majorana-representation-in-biquaternionic-form.html) | 5 |
-| [Two Spin-Half Particles](../articles_physics/two-spin-half-particles-in-biquaternionic-form.html) | 3 |
-| [The Self-Dual and Anti-Self-Dual Split Spin 1](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | 2 |
-| [The Classical Origin of $g-2$](../articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html) | 2 |
-| [The Spin-Half Path Integral](../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html) | 2 |
-| [The Lorentz Group in Biquaternionic Form](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) | 2 |
-| [The Spin–Statistics Theorem](../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html) | 2 |
-| [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html) | 2 |
-| [The Fermionic Fock Space](../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html) | 2 |
-| [Exercise: The Non-Relativistic Limit and the Pauli Equation](../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html) | 1 |
-| [The Dirac Oscillator](../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html) | 1 |
-| [AI Physics Review](../articles_physics/ai-physics-review.html) | 1 |
-| [Frames, Rotations and the Lorentz Group](../articles_physics/frames-rotations-and-the-lorentz-group.html) | 1 |
-| [The Scalar Field in the Centre](../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) | 1 |
-| [The Qutrit Problem](../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html) | 1 |
-
-**The mathematical corpus.** Seven articles use $j$ as the standard $\mathrm{SU}(2)$ label rather than as an element: *Analysis on Compact Groups*, *The Peter–Weyl Theorem*, *Representation Theory of Locally Compact Groups*, and the four *Spinors as Peirce Coordinates* articles. In those articles the label is the standard one and is not a defect, because the biquaternion convention $s$ is not in force there. They are listed because they are where a reader of the mathematical corpus acquires the habit, and because a cross-reference from a physics article can carry the label into a display that also contains a quaternion unit.
+**Articles using this sense.** This use is not a defect and is not inventoried. The bound index occurs in most of the corpus — the Clebsch–Gordan sums, the $\epsilon_{ijk}$ of the rotation algebra, the $e_j$ of the Clifford basis — so a list would name several hundred files and would not distinguish a defect from a formula. The rule is what matters here, not a count.
 
 ## Why a Single Replacement Is Unsafe
 
@@ -170,6 +185,6 @@ The replacement must therefore be semantic, and it must follow the order of depe
 
 ## Summary
 
-The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. Three other meanings are in circulation: Hamilton's vector unit, a second central imaginary adjoined to the biquaternion algebra, and the spin label. The second contradicts the conventions outright — the same letter cannot have both signs, and the conventions article itself now uses both — and it hides a tensor product, a pair of conjugate summands and a binary choice in the Clifford dictionary. The third collides with the first two and duplicates a label the corpus has already fixed as $s$. Sixteen files carry the defective notation, twenty-two physics articles carry the spin label, and the defect reaches the conventions article and the menu.
+The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. Three other meanings are in circulation: Hamilton's vector unit, a second central imaginary adjoined to the biquaternion algebra, and the spin label. The second contradicts the conventions outright — the same letter cannot have both signs, and the conventions article itself now uses both — and it hides a tensor product, a pair of conjugate summands and a binary choice in the Clifford dictionary. The third collides with the first two and duplicates a label the corpus has already fixed as $s$.
 
-The repair is not a substitution. It is the removal of one object — the second central imaginary — from the letter $j$, the confinement of $j$ to the hyperbolic layer, the translation of Hamilton's vector unit into $\vec e_y$, and the renaming of the spin label to $s$. The definition in *Chirality: The Conjugate Pair* is the place to start, because every other occurrence is a copy of it.
+Sixteen entries carry the second central imaginary, one article carries Hamilton's vector unit, four carry the dummy, and twenty-nine carry the spin label, twenty-two in the physics corpus and seven in the mathematical one. The defect reaches the conventions article and the menu. The repair is not a substitution. It is the removal of one object — the second central imaginary — from the letter $j$, the confinement of $j$ to the hyperbolic layer, the translation of Hamilton's vector unit into $\vec e_y$, and the renaming of the spin label to $s$. The definition in *Chirality: The Conjugate Pair* is the place to start, because every other occurrence is a copy of it.
