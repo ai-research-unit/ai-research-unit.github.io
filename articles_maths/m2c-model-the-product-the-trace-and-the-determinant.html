@@ -78,8 +78,14 @@
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
 $$</p>
 <p>and extended by $\mathbb{C}$-linearity. This article owns the assignment itself and the algebra structure it transports: the product, the unit, the centre, the units and their inverses, and the sense in which the assignment is a choice.</p>
-<p>The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
+<p>The three matrices are $-i$ times the Pauli matrices,</p>
+<p>$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$</p>
+<p>so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices defined above, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
 <p><strong>Boundaries.</strong> The four forms and the four products are <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>; the trace and the determinant are <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>; the Peirce coordinates, the matrix units and the two spinor planes are <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>. The $4\times4$ regular representation is <em>Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_{\mathbb{B},L}$ of Biquaternions</em>. The algebra itself is <em>The Biquaternion Algebra</em>.</p>
 <h2 id="the-assignment-on-the-basis">The Assignment on the Basis</h2>
 <p><strong>The four units go to four matrices, and the four coefficients go to one matrix.</strong></p>
@@ -88,6 +94,7 @@ $$</p>
 <tr>
 <th>Unit</th>
 <th>Matrix</th>
+<th>Pauli form</th>
 <th>Square</th>
 <th>Determinant</th>
 </tr>
@@ -96,24 +103,28 @@ $$</p>
 <tr>
 <td>$e_t$</td>
 <td>$\mathrm I_2$</td>
+<td>—</td>
 <td>$\mathrm I_2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$\vec e_x$</td>
 <td>$\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$</td>
+<td>$-i\sigma_1$</td>
 <td>$-\mathrm I_2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$\vec e_y$</td>
 <td>$\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>$-i\sigma_2$</td>
 <td>$-\mathrm I_2$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$\vec e_z$</td>
 <td>$\begin{pmatrix}-i&0\\0&i\end{pmatrix}$</td>
+<td>$-i\sigma_3$</td>
 <td>$-\mathrm I_2$</td>
 <td>$1$</td>
 </tr>
@@ -125,7 +136,8 @@ $$</p>
 \begin{pmatrix}
 Q_t-iQ_z&-iQ_x-Q_y\\
 -iQ_x+Q_y&Q_t+iQ_z
-\end{pmatrix}.
+\end{pmatrix}
+=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3).
 $$</p>
 <p>The entries are linear combinations of two coefficients each. The four entries and the four coefficients carry the same data in two arrangements, and the arrangement is fixed by the assignment, not chosen per element.</p>
 <p><strong>The inverse map.</strong> Reading the coefficients back off the matrix,</p>
@@ -152,12 +164,9 @@ $$</p>
 <p><strong>Corollary (the centre).</strong> The centre of $\mathbb{B}$ is the line $\mathbb{C}e_t$, and its image is the scalar matrices.</p>
 <p><em>Proof.</em> A matrix commuting with every matrix is a scalar matrix, and $\mathsf{M}_2(Q_te_t)=Q_t\mathrm I_2$.</p>
 <h2 id="the-signs-and-the-pauli-matrices">The Signs and the Pauli Matrices</h2>
-<p><strong>The factor $i$ is forced.</strong> A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices multiplied by $-i$:</p>
-<p>$$
-\mathsf{M}_2(\vec e_k)=-i\sigma_k,\qquad
-\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
-\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\quad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+<p><strong>The factor $i$ is forced.</strong> A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices of the Introduction multiplied by $-i$:
+$$
+\mathsf{M}_2(\vec e_k)=-i\sigma_k.
 $$</p>
 <p>Each $\sigma_k$ is Hermitian and squares to $\mathrm I_2$, so $-i\sigma_k$ squares to $-\mathrm I_2$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_2$ carries no real line to itself, and the complex structure it defines is the multiplication by $i$ that the representation must carry.</p>
 <p><strong>The signs are forced by the cross-relations.</strong> If $\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_y)$ are chosen as above, the product is $\mathsf{M}_2(\vec e_z)$, not $-\mathsf{M}_2(\vec e_z)$. The alternative assignment $\vec e_k\mapsto-\mathsf{M}_2(\vec e_k)$ reverses the sign of every vector image and preserves the squares but reverses the cross-products; it is the composition of $\mathsf M_2$ with the anti-automorphism that negates the vector part, so it is an anti-isomorphism, not an algebra isomorphism on the same basis. The sign pattern is therefore determined once the three matrices are fixed, and the three matrices are determined up to conjugation.</p>
@@ -251,7 +260,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\sigma_1,\sigma_2,\sigma_3$</td>
-<td>the Pauli matrices; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$</td>
+<td>the Pauli matrices $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\begin{pmatrix}0&-i\\i&0\end{pmatrix}$, $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$</td>
 </tr>
 <tr>
 <td>$\epsilon=\mathsf{M}_2(-\vec e_y)$</td>
