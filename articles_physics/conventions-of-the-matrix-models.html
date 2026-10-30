@@ -137,25 +137,22 @@ each equal to $I_2\otimes\mathsf M_2(\vec e_k)$, with $\mathsf M_2(\vec e_k)=-i\
 $$
 \mathsf M_4^{L}(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z=I_2\otimes\mathsf M_2(\tilde Q).
 $$</p>
-<p><strong>The four right matrices.</strong> Write $R_\nu=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the permutation that fixes the two idempotents and exchanges the two mixed Peirce units,
+<p><strong>The four right matrices.</strong> Write $R_\nu=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
 \mathsf S\vec\Upsilon_-=\vec\Upsilon_+,
 $$
-the permutation of the second and third coordinates of the canonical frame. Then
+the permutation of the second and third coordinates of the canonical frame. Its matrix there is
 $$
-\boxed{\;\mathsf M_4^{R}(\tilde Q)=\mathsf S\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
-R_\nu=\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}\;}
+\mathsf S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
 $$
-and, unit by unit,
+symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication. The right matrix is then
 $$
-R_t=L_t,\qquad
-R_x=\mathsf S L_x\mathsf S^{-1},\qquad
-R_y=-\mathsf S L_y\mathsf S^{-1},\qquad
-R_z=\mathsf S L_z\mathsf S^{-1},
+\mathsf M_4^{R}(\tilde Q)=\mathsf S\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
+R_\nu=\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}.
 $$
-the sign of $R_y$ being the one of the antisymmetric $L_y$. Explicitly,
+Explicitly,
 $$
 R_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 R_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -195,12 +192,12 @@ T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
 $$</p>
 <p>The sixteen, with their left and right factors, are
 $$
-\begin{aligned}
+\boxed{\;\begin{aligned}
 &T_{tt}=L_tR_t,\quad T_{tx}=L_tR_x,\quad T_{ty}=L_tR_y,\quad T_{tz}=L_tR_z,\\
 &T_{xt}=L_xR_t,\quad T_{xx}=L_xR_x,\quad T_{xy}=L_xR_y,\quad T_{xz}=L_xR_z,\\
 &T_{yt}=L_yR_t,\quad T_{yx}=L_yR_x,\quad T_{yy}=L_yR_y,\quad T_{yz}=L_yR_z,\\
 &T_{zt}=L_zR_t,\quad T_{zx}=L_zR_x,\quad T_{zy}=L_zR_y,\quad T_{zz}=L_zR_z.
-\end{aligned}
+\end{aligned}\;}
 $$</p>
 <p><strong>The sixteen, entry by entry.</strong> In the canonical frame, grouped by the left index $\mu$,
 $$
@@ -442,11 +439,11 @@ and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\math
 </tr>
 <tr>
 <td>$\mathsf S$</td>
-<td>The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$</td>
+<td>The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis</td>
 </tr>
 <tr>
 <td>$L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$</td>
-<td>The four left and the four right matrices; the correspondence is $R_t=L_t$, $R_x=\mathsf S L_x\mathsf S^{-1}$, $R_y=-\mathsf S L_y\mathsf S^{-1}$, $R_z=\mathsf S L_z\mathsf S^{-1}$</td>
+<td>The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$</td>
 </tr>
 <tr>
 <td>$T_{\mu\nu}=L_\mu R_\nu$</td>

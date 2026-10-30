@@ -119,13 +119,18 @@ $$</p>
 <p><strong>The image is four-dimensional.</strong> The matrices $L_\mu$ are linearly independent, and every product $L_{\tilde Q_1}L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2}$ stays in their span. So $L(\mathbb{B})$ is a copy of $\mathbb{B}$, not the whole of $M_4(\mathbb{C})$.</p>
 <h2 id="the-four-right-matrices">The Four Right Matrices</h2>
 <p><strong>Definition.</strong> The right multiplication is $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$. Its matrix is not $\mathsf{M}_4^{L}(\tilde Q)$: the two families commute, and $R_{\tilde Q}$ is the commuting partner of $L_{\tilde Q}$.</p>
-<p><strong>Proposition (the right matrix is a transpose of the left one).</strong> Let $\mathsf S$ be the permutation of the canonical frame that fixes the two idempotents and exchanges the two mixed Peirce units,</p>
+<p><strong>Proposition (the right matrix is a transpose of the left one).</strong> Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,</p>
 <p>$$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
 \mathsf S\vec\Upsilon_-=\vec\Upsilon_+ .
 $$</p>
-<p>Then</p>
+<p><strong>The matrix.</strong> In the canonical frame
+$$
+\mathsf S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$
+the permutation of the second and third coordinates. It is symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication.</p>
+<p>With this exchange,</p>
 <p>$$
 \boxed{\;R_{\tilde Q}=\mathsf S\,L_{\tilde Q}^{\mathsf T}\,\mathsf S^{-1}\;}
 $$</p>
@@ -770,7 +775,7 @@ Column $j$ is the coordinate column of $\tilde Q_1\,P_j\,e_x$ in the canonical f
 </tr>
 <tr>
 <td>$\mathsf S$</td>
-<td>the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$</td>
+<td>the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis; $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$</td>
 </tr>
 <tr>
 <td>$C_{\Pi}$</td>
