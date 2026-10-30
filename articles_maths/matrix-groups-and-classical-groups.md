@@ -147,13 +147,13 @@ The symbol $Sp$ carries two standard meanings that must be distinguished. In thi
 
 ### The Representation of the Quaternion Algebra
 
-Write a quaternion as $q = z + w j$ with $z = a + b i$ and $w = c + d i$, where $i = \vec e_x$, $j = \vec e_y$ and $i j = \vec e_z$; this is the splitting $\mathbb{H} = \mathbb{C} \oplus \mathbb{C} j$ with $j^2 = -1$ and $j z = \bar z j$.
+Write a quaternion as $q = z + w \vec e_y$ with $z = a + b \vec e_x$ and $w = c + d \vec e_x$, where $\vec e_x \vec e_y = \vec e_z$; this is the splitting $\mathbb{H} = \mathbb{C} \oplus \mathbb{C}\vec e_y$ with $\vec e_y^2 = -e_t$ and $\vec e_y z = \bar z \vec e_y$.
 
 **Theorem.** The map
 
 $$
 \rho : \mathbb{H} \longrightarrow M_2(\mathbb{C}), \qquad
-\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix},
+\rho(z + w\vec e_y) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix},
 $$
 
 is an injective homomorphism of $\mathbb{R}$-algebras, and
@@ -162,7 +162,7 @@ $$
 \det \rho(q) = z \bar z + w \bar w = N(q) .
 $$
 
-**Proof.** Multiplicativity is the identity $(z + wj)(z' + w'j) = (zz' - w\bar w') + (zw' + w\bar z')j$, obtained from $jz' = \bar z' j$ and $j^2 = -1$, which is exactly the matrix product $\rho(z + wj)\rho(z' + w'j) = \rho((z + wj)(z' + w'j))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $q^{\natural} / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$.
+**Proof.** Multiplicativity is the identity $(z + w\vec e_y)(z' + w'\vec e_y) = (zz' - w\bar w') + (zw' + w\bar z')\vec e_y$, obtained from $\vec e_y z' = \bar z' \vec e_y$ and $\vec e_y^2 = -e_t$, which is exactly the matrix product $\rho(z + w\vec e_y)\rho(z' + w'\vec e_y) = \rho((z + w\vec e_y)(z' + w'\vec e_y))$; the entries of the product matrix are $zz' - w\bar w'$, $zw' + w\bar z'$, $-\overline{zw' + w\bar z'}$ and $\overline{zz' - w\bar w'}$. So $\rho$ is a homomorphism, and it is injective because $q \neq 0$ has an inverse, namely $q^{\natural} / N(q)$. The determinant is $z\bar z - w(-\bar w) = |z|^2 + |w|^2 = N(q)$.
 
 **Example.** With the Pauli matrices
 
@@ -182,7 +182,7 @@ $$
 \boxed{\;\mathbb{H}^1 \longrightarrow SU(2), \qquad \mathbb{H}^1 = S^3\;} .
 $$
 
-**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(q^{\natural})\rho(q) = \rho(q^{\natural} q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + wj$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
+**Proof.** For $q \in \mathbb{H}^1$ the matrix $\rho(q)$ is unitary, since $\rho(q)^* \rho(q) = \rho(q^{\natural})\rho(q) = \rho(q^{\natural} q) = \rho(1) = I$, and it has determinant $N(q) = 1$, so the image lies in $SU(2)$. Conversely, if $A = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is unitary of determinant $1$ then $|z|^2 + |w|^2 = 1$, so $A = \rho(q)$ with $q = z + w\vec e_y$ of norm $1$. The map is a homeomorphism because it is a continuous bijection between compact Hausdorff spaces.
 
 **Corollary.** $SU(2) \cong Sp(1) \cong \mathbb{H}^1 \cong S^3$; consequently $SU(2)$ is connected and simply connected, and its centre is $\{\pm I\}$, corresponding to the quaternions $\pm 1$.
 
@@ -287,7 +287,7 @@ The definitions are collected here, with the invariants used throughout. In the 
 
 The classical groups are the transformation groups of a vector space equipped with a form, and their matrix forms are read off from the preservation of the form. The orthogonal group $O(n)$ is $\{A : A^TA = I\}$, compact, with $\det A = \pm 1$, and its kernel-of-determinant $SO(n)$ is the connected component of the identity, isomorphic to $S^1$ when $n = 2$. The unitary group $\mathrm{U}(n) = \{A : A^*A = I\}$ is compact and connected with determinant of modulus one, and $\mathrm{U}(n) \cong (SU(n) \times \mathrm{U}(1))/\mu_n$, while the centres are the scalar matrices, so $Z(SU(n)) \cong \mathbb{Z}/n\mathbb{Z}$. The compact symplectic group $Sp(n)$ is the quaternionic unitary group, of dimension $n(2n+1)$, contained in $SU(2n)$; the two uses of the symbol $Sp$ in the literature are distinguished by rank versus the dimension of the space acted on.
 
-The representations of the quaternion algebra make the lowest cases explicit. The map $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is an algebra isomorphism of $\mathbb{H}$ with a subalgebra of $M_2(\mathbb{C})$ and has determinant $N(q)$, so the unit quaternions are exactly $SU(2)$, a group isomorphic to $S^3$ and to $Sp(1)$. Conjugation by a unit quaternion is a rotation of the pure quaternions with trace $4a^2 - 1$, hence a rotation through the angle determined by $a = \cos(\theta/2)$ and an axis given by the vector part: the assignment $u \mapsto (x \mapsto ux u^{\natural})$ is a surjective homomorphism $\mathbb{H}^1 \to SO(3)$ with kernel $\{\pm 1\}$, exhibiting $SO(3) \cong \mathbb{RP}^3 = SU(2)/\{\pm I\}$ and the two-to-one cover. The two-sided action $(u,v) \mapsto (q \mapsto uqv^{\natural})$ gives the surjection $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ and $SO(4)$ is not simple. The remaining low-dimensional coincidences, $SO(5) \cong Sp(2)/\{\pm I\}$ and $SO(6) \cong SU(4)/\{\pm I\}$, follow the same pattern at the level of root systems and are cited as standard.
+The representations of the quaternion algebra make the lowest cases explicit. The map $\rho(z + w\vec e_y) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is an algebra isomorphism of $\mathbb{H}$ with a subalgebra of $M_2(\mathbb{C})$ and has determinant $N(q)$, so the unit quaternions are exactly $SU(2)$, a group isomorphic to $S^3$ and to $Sp(1)$. Conjugation by a unit quaternion is a rotation of the pure quaternions with trace $4a^2 - 1$, hence a rotation through the angle determined by $a = \cos(\theta/2)$ and an axis given by the vector part: the assignment $u \mapsto (x \mapsto ux u^{\natural})$ is a surjective homomorphism $\mathbb{H}^1 \to SO(3)$ with kernel $\{\pm 1\}$, exhibiting $SO(3) \cong \mathbb{RP}^3 = SU(2)/\{\pm I\}$ and the two-to-one cover. The two-sided action $(u,v) \mapsto (q \mapsto uqv^{\natural})$ gives the surjection $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ and $SO(4)$ is not simple. The remaining low-dimensional coincidences, $SO(5) \cong Sp(2)/\{\pm I\}$ and $SO(6) \cong SU(4)/\{\pm I\}$, follow the same pattern at the level of root systems and are cited as standard.
 
 ## Summary of Notation
 
@@ -305,7 +305,7 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $Sp(2n, K)$ | Symplectic group of an alternating form, as in the companion article |
 | $\mathbb{H}$, $N(q) = q q^{\natural}$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm, scalar and vector parts |
 | $\mathbb{H}^1 = S^3$ | Unit quaternions; also written $Sp(1)$ |
-| $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
+| $\rho(z + w\vec e_y) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
 | $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(\vec e_x) = i\sigma_z$, $\rho(\vec e_y) = i\sigma_y$, $\rho(\vec e_z) = i\sigma_x$ |
 | $\varphi_u(x) = u x u^{\natural}$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
 | $\psi_{(u,v)}(q) = u q  v^{\natural}$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |

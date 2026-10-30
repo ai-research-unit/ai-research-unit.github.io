@@ -18,7 +18,7 @@ $$
 c_u : J \longrightarrow J, \qquad c_u(x) = u\,\alpha(x)\,u^{-1} .
 $$
 
-It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ of *The Signed Sandwich on a Jordan Algebra*.
+It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ of *The Signed Sandwich on a Jordan Algebra*.
 
 **Theorem.** For every unit $u$, the signed conjugation $c_u$ is an automorphism of the Jordan algebra $J$.
 

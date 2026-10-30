@@ -65,16 +65,16 @@ $$
 **Proposition (boundedness and the three readings).** The pair operator is $\mathbb{K}$-linear, bounded, and
 
 $$
-\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert , \qquad \Theta_{x,y} = T_{x \star y,\,1} , \qquad \Theta_{x,y}(z) = S_{x,z}(y) = T_{1,\,y^{*}z}(x) .
+\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert , \qquad \Theta_{x,y} = T_{x \star y,\,1} , \qquad \Theta_{x,y}(z) = \mathcal{T}_{x,z}(y) = T_{1,\,y^{*}z}(x) .
 $$
 
 The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^{\varsigma} \to B(A)$ of norm at most one.
 
-*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $S_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
+*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $\mathcal{T}_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
 
-**Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $S_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
+**Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $\mathcal{T}_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
 
-*Proof.* $\{x,y,z\} = x y^{*} z = S_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Interpretations*.
+*Proof.* $\{x,y,z\} = x y^{*} z = \mathcal{T}_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Interpretations*.
 
 ### The Lie Triple System
 
@@ -178,7 +178,7 @@ $$
 
 ## Summary
 
-The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star z^{*}$, linear in the two outer variables and conjugate-linear in the middle, and on a normed sesqualgebra with submultiplicative norm and isometric involution it is bounded with the constant one, $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, so the object is a normed triple system and the product factors through the projective tensor product with a linear map of norm at most one. The pair operators $\Theta_{x,y}(z) = \{x,y,z\}$ are bounded with $\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$, they are the left multiplications by the derived products, their middle reading is the sandwich $S_{x,z}$, the pair map is bounded bilinear on $A \times A^{\varsigma}$, and the pair operators form a bounded Lie triple system under the commutator with the Lie companion $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ the bounded inner derivation of the pair. The completion $\widehat{A}$ carries the extended product, involution and triple product, the bound survives, and the Jordan triple identity survives because both of its sides are continuous and agree on the dense subset, so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple. In the unital case the ternary product determines the binary product and the involution, $\{x,y,1\} = x \star y$ and $\{1,y,1\} = y^{*}$, and the completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*.
+The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star z^{*}$, linear in the two outer variables and conjugate-linear in the middle, and on a normed sesqualgebra with submultiplicative norm and isometric involution it is bounded with the constant one, $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, so the object is a normed triple system and the product factors through the projective tensor product with a linear map of norm at most one. The pair operators $\Theta_{x,y}(z) = \{x,y,z\}$ are bounded with $\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$, they are the left multiplications by the derived products, their middle reading is the sandwich $\mathcal{T}_{x,z}$, the pair map is bounded bilinear on $A \times A^{\varsigma}$, and the pair operators form a bounded Lie triple system under the commutator with the Lie companion $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ the bounded inner derivation of the pair. The completion $\widehat{A}$ carries the extended product, involution and triple product, the bound survives, and the Jordan triple identity survives because both of its sides are continuous and agree on the dense subset, so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple. In the unital case the ternary product determines the binary product and the involution, $\{x,y,1\} = x \star y$ and $\{1,y,1\} = y^{*}$, and the completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*.
 
 ## Summary of Notation
 
@@ -189,7 +189,7 @@ The ternary product of a sesquilinear product is $\{x,y,z\} = (x \star y) \star 
 | $A \widehat{\otimes}_{\pi} A \widehat{\otimes}_{\pi} A \to A$ | the factorisation of the triple product |
 | $\Theta_{x,y}(z) = \{x,y,z\}$ | the pair operator, linear and bounded |
 | $\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert$ | the bound of the pair operator |
-| $\Theta_{x,y}(z) = x\,y^{*}\,z = S_{x,z}(y)$ | the pair operator as a left multiplication and as a sandwich |
+| $\Theta_{x,y}(z) = x\,y^{*}\,z = \mathcal{T}_{x,z}(y)$ | the pair operator as a left multiplication and as a sandwich |
 | $[\Theta_{x,y},\Theta_{u,v}]$ | the bracket of the pair operators, a Lie triple system |
 | $\delta_{x,y} = \mathrm{ad}_{[x,y]}$ | the Lie companion, a bounded inner derivation |
 | $\lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert$ | the defining inequality of a bounded triple product |

@@ -9,11 +9,11 @@ $$
 \ell_a(x) = a\,\alpha(x) .
 $$
 
-It is the signed sandwich with right parameter $1$, $\ell_a = S_{a,1}$, and it is the model of a graded module action: a graded algebra acts on itself through $\ell_a$, and a graded module is acted on by the same operator with the argument in the module. The twist changes the action in one place, the argument, and it moves the operator into the coset $L(A)\alpha$ of the ordinary left multiplications: the product of a signed left multiplication with an unsigned one is signed, the product of two signed ones is unsigned, and the group that the two families generate together is a semidirect product of the left multiplications with the two-element group $\{\mathrm{id},\alpha\}$. This article treats the signed left multiplication on an involutive Banach algebra: it fixes the operator, proves its continuity and its bounds, computes the composition laws, identifies the fixed elements, relates the family to the unsigned left multiplications, and records the degenerate cases.
+It is the signed sandwich with right parameter $1$, $\ell_a = \mathcal{T}_{a,1}$, and it is the model of a graded module action: a graded algebra acts on itself through $\ell_a$, and a graded module is acted on by the same operator with the argument in the module. The twist changes the action in one place, the argument, and it moves the operator into the coset $L(A)\alpha$ of the ordinary left multiplications: the product of a signed left multiplication with an unsigned one is signed, the product of two signed ones is unsigned, and the group that the two families generate together is a semidirect product of the left multiplications with the two-element group $\{\mathrm{id},\alpha\}$. This article treats the signed left multiplication on an involutive Banach algebra: it fixes the operator, proves its continuity and its bounds, computes the composition laws, identifies the fixed elements, relates the family to the unsigned left multiplications, and records the degenerate cases.
 
 The article assumes the signed sandwich, its decomposition, its table and its inverse from *The Signed Sandwich on a Banach Algebra*; the Banach algebra, its norm, the unit group and the centre from *Topological Algebras and Banach Algebras*; the bounded operators, the operator norm and the one-sided multiplications from *Operators on a Banach Algebra*; the grade involution and the grading from *Involutive Topological Algebras*; and the abstract signed left multiplication from *The Signed Left Multiplication on an Algebra*. The anti-automorphism involution $\sigma$ is the structure of the `- * Theory` group of this category and is not used here; the graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*, later still.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, centre $Z(A)$ and unit group $A^\times$; $\alpha$ is a continuous involutive automorphism, the **grade involution**, with $\alpha^2 = \mathrm{id}$ and $\lVert\alpha\rVert < +\infty$; $L_a(x) = ax$ and $R_b(x) = xb$ are the unsigned one-sided multiplications; the **signed left multiplication** is $\ell_a = L_a\alpha = S_{a,1}$, $\ell_a(x) = a\alpha(x)$; the **signed right multiplication** is $\varrho_b = \alpha R_b = S_{1,b}$, $\varrho_b(x) = \alpha(x)b$; and $A = A^+\oplus A^-$ is the grading.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, centre $Z(A)$ and unit group $A^\times$; $\alpha$ is a continuous involutive automorphism, the **grade involution**, with $\alpha^2 = \mathrm{id}$ and $\lVert\alpha\rVert < +\infty$; $L_a(x) = ax$ and $R_b(x) = xb$ are the unsigned one-sided multiplications; the **signed left multiplication** is $\ell_a = L_a\alpha = \mathcal{T}_{a,1}$, $\ell_a(x) = a\alpha(x)$; the **signed right multiplication** is $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$, $\varrho_b(x) = \alpha(x)b$; and $A = A^+\oplus A^-$ is the grading.
 
 ## Definition and Decomposition
 
@@ -22,7 +22,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach
 **Proposition (factorisation, boundedness and the coset).** For all $a,b \in A$,
 
 $$
-\boxed{\;\ell_a = L_a\circ\alpha = S_{a,1} , \qquad \varrho_b = \alpha\circ R_b = S_{1,b}\;} ,
+\boxed{\;\ell_a = L_a\circ\alpha = \mathcal{T}_{a,1} , \qquad \varrho_b = \alpha\circ R_b = \mathcal{T}_{1,b}\;} ,
 $$
 
 and $\ell_a$, $\varrho_b$ are bounded linear operators with
@@ -33,7 +33,7 @@ $$
 
 with equality in the isometric case $\lVert\alpha\rVert = 1$. The signed left multiplications are the coset $L(A)\circ\alpha$ of the unsigned left multiplications by the twist, and $\ell_1 = \varrho_1 = \alpha$.
 
-**Proof.** $\ell_a(x) = a\alpha(x) = L_a(\alpha(x)) = S_{a,1}(x)$ because $S_{a,1}(x) = a\alpha(x)1$; the factorisation, boundedness and norm bound follow from those of $L_a$ and $\alpha$, and $\varrho_b$ is the mirror image. The coset description is the factorisation, and $\ell_1 = L_1\alpha = \alpha$.
+**Proof.** $\ell_a(x) = a\alpha(x) = L_a(\alpha(x)) = \mathcal{T}_{a,1}(x)$ because $\mathcal{T}_{a,1}(x) = a\alpha(x)1$; the factorisation, boundedness and norm bound follow from those of $L_a$ and $\alpha$, and $\varrho_b$ is the mirror image. The coset description is the factorisation, and $\ell_1 = L_1\alpha = \alpha$.
 
 ## Composition and the Generated Group
 
@@ -127,7 +127,7 @@ and the signed family carries no information beyond the unsigned family and the 
 
 ## Summary
 
-On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = S_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = T_{a,\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the `- * Theory` group. The graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
+On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = \mathcal{T}_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = T_{a,\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the `- * Theory` group. The graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
 
 ## Summary of Notation
 
@@ -136,8 +136,8 @@ On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade
 | $A$, $\lVert\cdot\rVert$, $A^\times$, $Z(A)$ | Banach algebra, norm, units, centre |
 | $\alpha$, $\lVert\alpha\rVert$ | Continuous grade involution (involutive automorphism) |
 | $L_a$, $R_b$ | Unsigned left and right multiplications |
-| $\ell_a = L_a\alpha = S_{a,1}$ | Signed left multiplication, $\ell_a(x)=a\alpha(x)$ |
-| $\varrho_b = \alpha R_b = S_{1,b}$ | Signed right multiplication, $\varrho_b(x)=\alpha(x)b$ |
+| $\ell_a = L_a\alpha = \mathcal{T}_{a,1}$ | Signed left multiplication, $\ell_a(x)=a\alpha(x)$ |
+| $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$ | Signed right multiplication, $\varrho_b(x)=\alpha(x)b$ |
 | $\ell_aL_b=\ell_{a\alpha(b)}$, $L_a\ell_b=\ell_{ab}$ | Mixed laws |
 | $\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=T_{a,\alpha(b)}$ | Signed products are unsigned |
 | $\ell_u^{-1}=\ell_{\alpha(u)^{-1}}$ | Inverse, for $u$ a unit |

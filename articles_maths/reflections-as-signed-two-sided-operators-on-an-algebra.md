@@ -8,7 +8,7 @@ $$
 \rho_u(x) = u\,\alpha(x)\,u^{-1},
 $$
 
-one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a **signed two-sided operator**, the signed sandwich $S_{u,u^{-1}}$ of *The Signed Sandwich on an Algebra*, and it is an automorphism of the algebra of order two. The present article studies the correspondence between these reflections and the units that produce them, computes the fixed subalgebra and the negated part, and records the cases in which the correspondence fails.
+one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a **signed two-sided operator**, the signed sandwich $\mathcal{T}_{u,u^{-1}}$ of *The Signed Sandwich on an Algebra*, and it is an automorphism of the algebra of order two. The present article studies the correspondence between these reflections and the units that produce them, computes the fixed subalgebra and the negated part, and records the cases in which the correspondence fails.
 
 Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory belongs to *Superalgebras and Graded Structures*. The signed sandwich and the signed conjugation are those of *The Signed Sandwich on an Algebra*, the automorphisms and the inner automorphisms are those of *Automorphisms and Derivations of Algebras*, and the operator-theoretic conventions are those of the group `- Operator Theory` of this category.
 
@@ -25,7 +25,7 @@ $$
 that is, a unit whose product with its twist is central. The **reflection** determined by a reflector $u$ is the signed conjugation
 
 $$
-\rho_u : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} = S_{u,\,u^{-1}}(x).
+\rho_u : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} = \mathcal{T}_{u,\,u^{-1}}(x).
 $$
 
 The set of reflectors is written $R^\times(A,\alpha)$ and the set of reflections is written $\mathrm{Ref}(A,\alpha)$.
@@ -168,7 +168,7 @@ Let $A = \Lambda(V)$ with the degree grading. For a unit $u$ the signed conjugat
 
 ## Summary
 
-A **reflector** is a unit $u$ with $u\alpha(u)$ central, and the **reflection** it determines is the signed two-sided operator $\rho_u(x) = u\alpha(x)u^{-1} = S_{u,u^{-1}}(x)$. Each reflection is an automorphism of $A$ of order two, being the composite $\iota_u\alpha$ of the inner automorphism by $u$ and the fixed involutive automorphism $\alpha$; the square is $\rho_u^2 = \iota_{u\alpha(u)}$, so the reflector condition is exactly the condition that the reflection be of order two. A reflection is determined by its fixed subalgebra $A^+_\rho$, the decomposition $A = A^+_\rho \oplus A^-_\rho$ has the multiplication table of a $\mathbb{Z}/2$-grading, and the negated part is a Part II object when it is read geometrically.
+A **reflector** is a unit $u$ with $u\alpha(u)$ central, and the **reflection** it determines is the signed two-sided operator $\rho_u(x) = u\alpha(x)u^{-1} = \mathcal{T}_{u,u^{-1}}(x)$. Each reflection is an automorphism of $A$ of order two, being the composite $\iota_u\alpha$ of the inner automorphism by $u$ and the fixed involutive automorphism $\alpha$; the square is $\rho_u^2 = \iota_{u\alpha(u)}$, so the reflector condition is exactly the condition that the reflection be of order two. A reflection is determined by its fixed subalgebra $A^+_\rho$, the decomposition $A = A^+_\rho \oplus A^-_\rho$ has the multiplication table of a $\mathbb{Z}/2$-grading, and the negated part is a Part II object when it is read geometrically.
 
 The correspondence between reflections and reflectors is $\mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)/Z(A)^\times$, with $\rho_u = \rho_v$ exactly when $v^{-1}u$ is central; the class of the central units is the reflection $\rho_1 = \alpha$. The reflections are the involutive automorphisms in the coset $\iota_{A^\times}\alpha$ of the inner automorphism group. The correspondence fails in the degenerate cases: a signed conjugation with $u\alpha(u)$ noncentral is an automorphism of infinite order and not a reflection; the central units all give $\alpha$; when $\alpha = \mathrm{id}$ the reflections are the inner involutions $u^2 \in Z(A)$; and an involutive automorphism that is outer is not a signed conjugation at all. On $M_n(k)$ with a diagonal twist the reflections are the inner automorphisms by the products $UD$, and on a group algebra with a parity they are the conjugations dressed by the parity.
 

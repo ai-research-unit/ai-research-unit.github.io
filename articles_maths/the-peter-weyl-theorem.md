@@ -172,9 +172,9 @@ $$
 p_t(x) = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\,d_\pi\,\chi_\pi(x) ,
 $$
 
-the convergence for $t > 0$ being absolute and uniform because $\lambda_\pi \to \infty$ and $\chi_\pi$ is bounded by $d_\pi$, with the Weyl asymptotics controlling the growth. This is the analytic form of the same decomposition: the spectral resolution of the Laplacian is the Peter–Weyl expansion, and for $K = SU(2)$ it gives $p_t(t_\theta) = \sum_{j\geq0} \exp(-j(j+1)t)(2j+1)\frac{\sin((2j+1)\theta)}{\sin\theta}$, with $-\Delta$ normalised so that the Casimir eigenvalue of $V_j$ is $j(j+1)$.
+the convergence for $t > 0$ being absolute and uniform because $\lambda_\pi \to \infty$ and $\chi_\pi$ is bounded by $d_\pi$, with the Weyl asymptotics controlling the growth. This is the analytic form of the same decomposition: the spectral resolution of the Laplacian is the Peter–Weyl expansion, and for $K = SU(2)$ it gives $p_t(t_\theta) = \sum_{s\geq0} \exp(-s(s+1)t)(2s+1)\frac{\sin((2s+1)\theta)}{\sin\theta}$, with $-\Delta$ normalised so that the Casimir eigenvalue of $V_s$ is $s(s+1)$.
 
-**Example (the circle and $SU(2)$).** For $K = S^1$ the Peter–Weyl basis is $\{\exp(2\pi i n\theta)\}_{n\in\mathbb{Z}}$ and the heat kernel is the Jacobi theta function $\sum_{n\in\mathbb{Z}}\exp(-4\pi^2n^2t)\exp(2\pi in\theta)$. For $K = SU(2)$ the summands are the $V_j$ with $d_j = 2j+1$ and the characters $\chi_j(t_\theta) = \sin((2j+1)\theta)/\sin\theta$, and the summand $V_j\otimes V_j^*$ has dimension $(2j+1)^2$; the two examples are the two ends of the classification of the simply connected compact groups of rank one.
+**Example (the circle and $SU(2)$).** For $K = S^1$ the Peter–Weyl basis is $\{\exp(2\pi i n\theta)\}_{n\in\mathbb{Z}}$ and the heat kernel is the Jacobi theta function $\sum_{n\in\mathbb{Z}}\exp(-4\pi^2n^2t)\exp(2\pi in\theta)$. For $K = SU(2)$ the summands are the $V_s$ with $d_s = 2s+1$ and the characters $\chi_s(t_\theta) = \sin((2s+1)\theta)/\sin\theta$, and the summand $V_s\otimes V_s^*$ has dimension $(2s+1)^2$; the two examples are the two ends of the classification of the simply connected compact groups of rank one.
 
 ## The Abelian Case
 

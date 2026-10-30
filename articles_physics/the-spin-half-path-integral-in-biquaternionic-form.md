@@ -57,7 +57,7 @@ $$
 \mathbb{1} = \frac{2}{\pi}\int_{\mathbb{CP}^1}\frac{d^2z}{(1+|z|^2)^2}\,|z\rangle\langle z|,
 $$
 
-where $d^2z$ is the ordinary area element in the complex plane. The measure is the invariant measure of $\mathbb{CP}^1$ in the coordinate $z$, and the factor $2$ is $2j+1$ at $j = \tfrac{1}{2}$. Both statements are standard; they are the input that makes the coherent-state path integral well defined.
+where $d^2z$ is the ordinary area element in the complex plane. The measure is the invariant measure of $\mathbb{CP}^1$ in the coordinate $z$, and the factor $2$ is $2s+1$ at $s = \tfrac{1}{2}$. Both statements are standard; they are the input that makes the coherent-state path integral well defined.
 
 ### The Discretised Integral
 
@@ -211,7 +211,7 @@ $$
 \left|\int_{S^2}\omega\right| = 2\pi\hbar,
 $$
 
-the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $j$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\Omega/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
+the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $s$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\Omega/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
 
 ### Spin Tunnelling and Its Quenching
 
@@ -225,7 +225,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 
 - **The action is algebraic data.** The energy is the Hermitian form, read through the trace, $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*})$, the path is a curve of idempotents, and the Wess–Zumino term is the central phase of the rotor along the curve. The two-level path integral is the quantisation of this data.
 - **The double cover is the two formulations.** The idempotent integral and the spinor integral are the sphere and its double cover; the Wess–Zumino term is the fibre.
-- **The topological term is the curvature.** The non-exactness of the symplectic form is the non-zero Chern number of the geometric-phase analysis, and the coefficient $j = \tfrac12$ is the spin.
+- **The topological term is the curvature.** The non-exactness of the symplectic form is the non-zero Chern number of the geometric-phase analysis, and the coefficient $s = \tfrac12$ is the spin.
 - **The saddle point is a rotor.** Larmor precession is conjugation by a time-dependent unit real quaternion, the classical limit of the quantum evolution.
 
 **What the algebra does not supply.** The Hamiltonian, the magnetic field and the initial and final states are external data. The path integral is a representation of the dynamics, not a substitute for the dynamics.

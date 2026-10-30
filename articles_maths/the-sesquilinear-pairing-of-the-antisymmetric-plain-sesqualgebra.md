@@ -4,7 +4,7 @@
 
 The vector space $\mathbb{B}$ carries the Hermitian form $\langle\tilde Q,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q_2^{*})=\sum_\mu Q_\mu\overline{Q_{2\mu}}$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the operation of the block has values in the vector subspace, so the form can be applied to the values. This article reads the two pairings that result: the **sesqui-trilinear pairing** $\langle\tilde Q\diamond\tilde Q_2,\tilde Q_3\rangle_{*}$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and the third, and the **quadratic form** $\langle\tilde Q\diamond\tilde Q_2,\tilde Q\diamond\tilde Q_2\rangle_{*}$ of the value with itself, which is the square of the value read by the form. Around the two it computes the trace form, which vanishes and is checked here and not assumed, the Gram matrix of the block on the basis pairs, which has rank three and a radical of dimension thirteen, and the space of the forms $\beta$ that are invariant under the block in the sense $\beta(\tilde Q\diamond\tilde Q_2,\tilde Q_3)=-\overline{\beta(\tilde Q,\tilde Q_2\diamond\tilde Q_3)}$, which is one-complex-dimensional and spanned by the scalar-slot form, so that the invariance of $\langle\cdot,\cdot\rangle_{*}$ itself fails.
 
-Two structural facts organise the reading. The first is the compatibility of the block with the sesquilinear sandwich of the row, $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ of *The Sesquilinear Sandwich on the Biquaternion*: the left operator of the block is the **vector part** of the sandwich with second parameter $e_t$, which is the left multiplication of the general plain sesqualgebra, and the sandwich with the two parameters equal is that left multiplication followed by the right multiplication. The second is the positivity: on the values the form $\langle\cdot,\cdot\rangle_{*}$ is positive definite, its vanishing is exactly the vanishing of the value, and the set of the values that the form cannot separate is therefore the single value $0$. No length, no distance and no limit enters either reading; the form is algebraic throughout, and the positivity that is used is the positivity of the diagonal $\langle\tilde Q_2,\tilde Q_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ on the ordered real part.
+Two structural facts organise the reading. The first is the compatibility of the block with the sesquilinear sandwich of the row, $\mathcal{T}_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ of *The Sesquilinear Sandwich on the Biquaternion*: the left operator of the block is the **vector part** of the sandwich with second parameter $e_t$, which is the left multiplication of the general plain sesqualgebra, and the sandwich with the two parameters equal is that left multiplication followed by the right multiplication. The second is the positivity: on the values the form $\langle\cdot,\cdot\rangle_{*}$ is positive definite, its vanishing is exactly the vanishing of the value, and the set of the values that the form cannot separate is therefore the single value $0$. No length, no distance and no limit enters either reading; the form is algebraic throughout, and the positivity that is used is the positivity of the diagonal $\langle\tilde Q_2,\tilde Q_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ on the ordered real part.
 
 The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra*; the product that is split is *Introduction to the General Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its cone are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the sandwich and its operators are *The Sesquilinear Sandwich on the Biquaternion* and *The Adjoint of the Sesquilinear Sandwich on the Biquaternion*; the left multiplication of the row is *The Left and Right Multiplications of the Biquaternion Sesqualgebra*; the trace form and the four pairings of the algebra are *The Four General Products and Their Relations over the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; and the remarkable subspaces are *The Six Subspaces*.
 
@@ -94,7 +94,7 @@ the form that reads the two scalar parts. On that form the invariance holds **de
 **Definition.** The **sesquilinear sandwich** of *The Sesquilinear Sandwich on the Biquaternion* is the operator
 
 $$
-S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*},
+\mathcal{T}_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*},
 $$
 
 conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second.
@@ -102,22 +102,22 @@ conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parame
 **Theorem (the block is the vector part of the sandwich with $e_t$).** For every biquaternion $\tilde Q_4$,
 
 $$
-L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ S_{\tilde Q_4,e_t},\qquad
-S_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}=L^{\diamond}_{\tilde Q_4}(\tilde Q_3)+\langle\tilde Q_4,\tilde Q_3\rangle_{*}\,e_t .
+L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ \mathcal{T}_{\tilde Q_4,e_t},\qquad
+\mathcal{T}_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}=L^{\diamond}_{\tilde Q_4}(\tilde Q_3)+\langle\tilde Q_4,\tilde Q_3\rangle_{*}\,e_t .
 $$
 
-*Proof.* $S_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}e_t^{*}=\tilde Q_4\tilde Q_3^{*}$, the left multiplication of the sesqualgebra by $\tilde Q_4$, and $\tilde Q_4\tilde Q_3^{*}=\mathrm{Sc}(\tilde Q_4\tilde Q_3^{*})e_t+\mathrm{Vect}(\tilde Q_4\tilde Q_3^{*})=\langle\tilde Q_4,\tilde Q_3\rangle_{*}e_t+L^{\diamond}_{\tilde Q_4}(\tilde Q_3)$.
+*Proof.* $\mathcal{T}_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}e_t^{*}=\tilde Q_4\tilde Q_3^{*}$, the left multiplication of the sesqualgebra by $\tilde Q_4$, and $\tilde Q_4\tilde Q_3^{*}=\mathrm{Sc}(\tilde Q_4\tilde Q_3^{*})e_t+\mathrm{Vect}(\tilde Q_4\tilde Q_3^{*})=\langle\tilde Q_4,\tilde Q_3\rangle_{*}e_t+L^{\diamond}_{\tilde Q_4}(\tilde Q_3)$.
 
-**Corollary (the two-parameter sandwich).** $S_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3^{*}\tilde Q_2^{*}$ is the composite of the left multiplication by $\tilde Q_2$ with the right multiplication by $\tilde Q_2^{*}$,
+**Corollary (the two-parameter sandwich).** $\mathcal{T}_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3^{*}\tilde Q_2^{*}$ is the composite of the left multiplication by $\tilde Q_2$ with the right multiplication by $\tilde Q_2^{*}$,
 
 $$
-S_{\tilde Q_2,\tilde Q_2}=R_{\tilde Q_2}\circ S_{\tilde Q_2,e_t},\qquad
-S_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)=L^{\diamond}_{\tilde Q_2}(\tilde Q_3)\,\tilde Q_2^{*}+\langle\tilde Q_2,\tilde Q_3\rangle_{*}\,\tilde Q_2^{*},
+\mathcal{T}_{\tilde Q_2,\tilde Q_2}=R_{\tilde Q_2}\circ \mathcal{T}_{\tilde Q_2,e_t},\qquad
+\mathcal{T}_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)=L^{\diamond}_{\tilde Q_2}(\tilde Q_3)\,\tilde Q_2^{*}+\langle\tilde Q_2,\tilde Q_3\rangle_{*}\,\tilde Q_2^{*},
 $$
 
 so its vector part is the operator of the block followed by the right multiplication by $\tilde Q_2^{*}$, and its scalar part is the form $\langle\tilde Q_2,\tilde Q_3\rangle_{*}$ times $\tilde Q_2^{*}$.
 
-**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde Q_4}$ is conjugate-linear, the sandwich $S_{\tilde Q_4,e_t}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q_2}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternion* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $\langle\tilde Q_4,\cdot\rangle_{*}$.
+**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde Q_4}$ is conjugate-linear, the sandwich $\mathcal{T}_{\tilde Q_4,e_t}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q_2}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternion* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $\langle\tilde Q_4,\cdot\rangle_{*}$.
 
 ## The Pairing, the Norm of the Value and the Quadric
 
@@ -175,8 +175,8 @@ The pairing of the block with the Hermitian form is $\langle\tilde Q\diamond\til
 | $G_{(I,J),(K,L)}=\langle e_I\diamond e_J,e_K\diamond e_L\rangle_{*}$ | the Gram matrix on the basis pairs, rank three |
 | $\beta(\tilde Q\diamond\tilde Q_2,\tilde Q_3)=-\overline{\beta(\tilde Q,\tilde Q_2\diamond\tilde Q_3)}$ | the invariance of a form under the block |
 | $Q_{1t}\overline{Q_{2t}}$ | the unique invariant form up to a scalar, degenerate |
-| $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ | the sesquilinear sandwich of the row |
-| $L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ S_{\tilde Q_4,e_t}$ | the operator of the block as the vector part of the left multiplication |
+| $\mathcal{T}_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ | the sesquilinear sandwich of the row |
+| $L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ \mathcal{T}_{\tilde Q_4,e_t}$ | the operator of the block as the vector part of the left multiplication |
 
 ## Further Reading
 

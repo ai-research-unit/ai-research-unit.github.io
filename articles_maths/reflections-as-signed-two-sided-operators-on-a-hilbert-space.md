@@ -8,7 +8,7 @@ $$
 \rho_U(T)=U\,\alpha(T)\,U^{-1},
 $$
 
-one for each operator $U$ whose product $U\alpha(U)$ with its twist is central, that is, a scalar. Each such $\rho_U$ is the signed sandwich $S_{U,U^{-1}}$ of *The Signed Sandwich on a Hilbert Space*, and the present article studies the correspondence between these reflections and the operators that produce them, computes the fixed part and the negated part, records the isometry and unitarity properties that the Hilbert structure makes available, and isolates the cases in which the correspondence degenerates.
+one for each operator $U$ whose product $U\alpha(U)$ with its twist is central, that is, a scalar. Each such $\rho_U$ is the signed sandwich $\mathcal{T}_{U,U^{-1}}$ of *The Signed Sandwich on a Hilbert Space*, and the present article studies the correspondence between these reflections and the operators that produce them, computes the fixed part and the negated part, records the isometry and unitarity properties that the Hilbert structure makes available, and isolates the cases in which the correspondence degenerates.
 
 The algebra $B(H)$ and the involution are *Bounded Operators on a Hilbert Space*; the signed sandwich, its composition table and its invertibility are *The Signed Sandwich on a Hilbert Space*; the algebraic correspondence, of which the present article is the Hilbert-space reading, is *Reflections as Signed Two-Sided Operators on an Algebra* (Part I). The graded modules and the adjoint theory of the reflections are *The Graded Action on a Module over a Hilbert Space* and *The Signed Adjoint of the Reflection on a Hilbert Space*.
 
@@ -25,7 +25,7 @@ $$
 that is, an invertible operator whose product with its twist is a scalar. The **reflection** determined by a reflector $U$ is
 
 $$
-\rho_U:B(H)\longrightarrow B(H),\qquad \rho_U(T)=U\,\alpha(T)\,U^{-1}=S_{U,U^{-1}}(T).
+\rho_U:B(H)\longrightarrow B(H),\qquad \rho_U(T)=U\,\alpha(T)\,U^{-1}=\mathcal{T}_{U,U^{-1}}(T).
 $$
 
 The set of reflectors is $R^\times(H,\alpha)$ and the set of reflections is $\mathrm{Ref}(H,\alpha)$.
@@ -134,7 +134,7 @@ so a unitary reflector produces the conjugation by the unitary $U\Gamma$, and ev
 
 ## Summary
 
-On a graded Hilbert space with grade involution $\alpha(T)=\Gamma T\Gamma$, the signed conjugations $\rho_U(T)=U\alpha(T)U^{-1}=S_{U,U^{-1}}$ are automorphisms of $B(H)$; they are involutive exactly when $U\alpha(U)$ is central, that is for the **reflectors** $U$, and then they are the reflections of the algebra, with the fixed part and the negated part giving a direct sum decomposition of $B(H)$ and with $\rho_U(U)=\alpha(U)$ and $\rho_U=\iota_U\alpha$. The assignment $U\mapsto\rho_U$ maps the reflectors onto the reflections and is constant exactly on the cosets of the scalars, so $\mathrm{Ref}(H,\alpha)\cong R^\times(H,\alpha)/\mathbb{K}^\times$ and the grade involution is the class of the scalars. Every reflection is isometric, and for a unitary reflector it is implemented on the Hilbert–Schmidt space by the unitary $L_U$ and is the operator form of the geometric reflection; the correspondence degenerates when the grading is trivial, in which case only the inner automorphisms remain, when a factor $U\alpha(U)$ is non-central, in which case the signed conjugation has infinite order and is not a reflection, and when the two graded summands have different dimensions, in which case the centre of the parity-invariant subalgebra is larger than the scalars and the reflector condition acquires extra parameters.
+On a graded Hilbert space with grade involution $\alpha(T)=\Gamma T\Gamma$, the signed conjugations $\rho_U(T)=U\alpha(T)U^{-1}=\mathcal{T}_{U,U^{-1}}$ are automorphisms of $B(H)$; they are involutive exactly when $U\alpha(U)$ is central, that is for the **reflectors** $U$, and then they are the reflections of the algebra, with the fixed part and the negated part giving a direct sum decomposition of $B(H)$ and with $\rho_U(U)=\alpha(U)$ and $\rho_U=\iota_U\alpha$. The assignment $U\mapsto\rho_U$ maps the reflectors onto the reflections and is constant exactly on the cosets of the scalars, so $\mathrm{Ref}(H,\alpha)\cong R^\times(H,\alpha)/\mathbb{K}^\times$ and the grade involution is the class of the scalars. Every reflection is isometric, and for a unitary reflector it is implemented on the Hilbert–Schmidt space by the unitary $L_U$ and is the operator form of the geometric reflection; the correspondence degenerates when the grading is trivial, in which case only the inner automorphisms remain, when a factor $U\alpha(U)$ is non-central, in which case the signed conjugation has infinite order and is not a reflection, and when the two graded summands have different dimensions, in which case the centre of the parity-invariant subalgebra is larger than the scalars and the reflector condition acquires extra parameters.
 
 ## Summary of Notation
 

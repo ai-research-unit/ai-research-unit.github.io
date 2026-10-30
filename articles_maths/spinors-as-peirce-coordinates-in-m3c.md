@@ -94,7 +94,7 @@ $$
 j=\frac{3-1}{2}=1 .
 $$
 
-This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_3P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=3$ it gives $1$ and the column has $2j+1=3$ components.
+This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_3P_l$. For $n=2$ it gives $s=\tfrac12$ and the column is the two-component spinor. For $n=3$ it gives $1$ and the column has $2s+1=3$ components.
 
 The column has three entries. Under the chain, $J_3$ has weights $1,0,-1$, so the column is the highest-weight-$1$ space. This is the first case in which the Peirce spinor is not a two-component object: it has three components, and the word *spinor* names a coordinate column, not a highest-weight-$\tfrac12$ state.
 
@@ -118,7 +118,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 | $\psi^{(l)}$ | The column of index $l$, a spinor |
 | $t_k$ | A gauge parameter |
 | $J_3$ | The chain generator |
-| $j$ | The spin, $(3-1)/2$ |
+| $s$ | The spin, $(3-1)/2$ |
 
 ## Further Reading
 

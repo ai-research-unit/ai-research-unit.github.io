@@ -12,19 +12,19 @@ so the family of reflections is closed under adjunction, and the adjoint operati
 
 This article fixes the reflector and the reflection, the adjoint of the reflection and its closed form, the unitarity of the reflection for a unitary reflector, the self-adjointness criterion, the eigenvalue decomposition of a self-adjoint reflection, and the failure in the degenerate case $\alpha=\mathrm{id}$. The reflections and their algebra are *Reflections as Signed Two-Sided Operators on a Hilbert Space*; the signed sandwich and its composition table are *The Signed Sandwich on a Hilbert Space*; the adjoint of the sandwich is *The Signed Adjoint Sandwich on a Hilbert Space*; the one-sided adjoints are *The Adjoint of the Left Multiplication on a Hilbert Space* and *The Signed Adjoint of the Left Multiplication on a Hilbert Space*; the unitary operators are *Unitary Operators*.
 
-Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$, grade involution $\alpha(T)=\Gamma T\Gamma$ and Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$; a **reflector** is an invertible $U$ with $U\alpha(U)=\lambda I$ scalar, and the **reflection** is the signed conjugation $\rho_U=S_{U,U^{-1}}$, $\rho_U(T)=U\alpha(T)U^{-1}$. The adjoint is taken with respect to the Hilbert–Schmidt form and is written with a star.
+Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$, grade involution $\alpha(T)=\Gamma T\Gamma$ and Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$; a **reflector** is an invertible $U$ with $U\alpha(U)=\lambda I$ scalar, and the **reflection** is the signed conjugation $\rho_U=\mathcal{T}_{U,U^{-1}}$, $\rho_U(T)=U\alpha(T)U^{-1}$. The adjoint is taken with respect to the Hilbert–Schmidt form and is written with a star.
 
 ## The Adjoint of the Reflection
 
 **Theorem (the adjoint).** For every reflector $U$ the reflection has adjoint
 
 $$
-\boxed{\;(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)}\;},
+\boxed{\;(\rho_U)^*=\mathcal{T}_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)}\;},
 $$
 
 so the adjoint of a reflection is the reflection by the $\alpha$-adjoint reflector; the adjoint operation on the reflections is an involution, $((\rho_U)^*)^*=\rho_U$, and it commutes with the scalar ambiguity of the reflector.
 
-*Proof.* The reflection is the signed sandwich $S_{U,U^{-1}}$, whose adjoint is $S_{\alpha(U^*),\alpha((U^{-1})^*)}$ by *The Signed Adjoint Sandwich on a Hilbert Space*; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the sandwich is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.
+*Proof.* The reflection is the signed sandwich $\mathcal{T}_{U,U^{-1}}$, whose adjoint is $\mathcal{T}_{\alpha(U^*),\alpha((U^{-1})^*)}$ by *The Signed Adjoint Sandwich on a Hilbert Space*; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the sandwich is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.
 
 **Corollary (the unitary case).** If $U$ is unitary then $\alpha(U^*)=\alpha(U)^{-1}$ and
 
@@ -96,7 +96,7 @@ For a reflector $U$, the reflection $\rho_U(T)=U\alpha(T)U^{-1}$ has adjoint $(\
 
 | Symbol | Meaning |
 |---|---|
-| $\rho_U(T)=U\alpha(T)U^{-1}=S_{U,U^{-1}}(T)$ | the reflection |
+| $\rho_U(T)=U\alpha(T)U^{-1}=\mathcal{T}_{U,U^{-1}}(T)$ | the reflection |
 | $U\alpha(U)=\lambda I$, $|\lambda|=1$ | the reflector condition |
 | $(\rho_U)^*=\rho_{\alpha(U^*)}$ | the adjoint of the reflection |
 | $(\rho_U)^*=\rho_U^{-1}\iff\alpha(U^*)U$ scalar | the unitarity criterion |

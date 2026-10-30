@@ -63,7 +63,7 @@ Hence the reflection of the form is a signed two-sided operator and the unsigned
 **Proposition (why the one-sided form is not a reflection).** The signed sandwich with one vector parameter,
 
 $$
-S^{\alpha}_{u,e}(x) = u\,\alpha(x), \qquad S^{\alpha}_{e,u}(x) = \alpha(x)\,u,
+\mathcal{T}^{\alpha}_{u,e}(x) = u\,\alpha(x), \qquad \mathcal{T}^{\alpha}_{e,u}(x) = \alpha(x)\,u,
 $$
 
 is a bijection of the Clifford algebra, with inverses $y \mapsto \alpha(u^{-1}y)$ and $y \mapsto \alpha(yu^{-1})$, but it does **not** preserve the subspace $V$ of vectors, so it restricts to no operator of the quadratic space and is not a reflection. The two-sided operator $x \mapsto u\,\alpha(x)\,u^{-1}$ does preserve $V$, and it is the reflection.
@@ -143,7 +143,7 @@ No adjoint is taken here; the adjoint of the reflection as a signed operator is 
 | $u^{\perp}$ | the fixed hyperplane of $\rho_u$ |
 | $\mathrm{Ad}^{\alpha}_u$ | the signed inner conjugation by $u$; restricts to $\rho_u$ on $V$ |
 | $\mathrm{Ad}_u$ | the unsigned inner conjugation; restricts to $-\rho_u$ on $V$ |
-| $S^{\alpha}_{a,b}$ | the signed sandwich; the reflection is the diagonal with a vector |
+| $\mathcal{T}^{\alpha}_{a,b}$ | the signed sandwich; the reflection is the diagonal with a vector |
 | $\operatorname{O}(V,\mathfrak{Q})$, $\operatorname{O}^+(V,\mathfrak{Q})$ | orthogonal and rotation groups |
 | $\operatorname{Pin}(V,\mathfrak{Q})$, $\operatorname{Spin}(V,\mathfrak{Q})$ | pin and spin groups; the double covers of the orthogonal and rotation groups |
 | $V^{\perp}$ | the radical of a degenerate form |

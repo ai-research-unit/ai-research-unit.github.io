@@ -94,7 +94,7 @@ $$
 j=\frac{4-1}{2}=\tfrac32 .
 $$
 
-This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_4P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=4$ it gives $\tfrac32$ and the column has $2j+1=4$ components.
+This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_4P_l$. For $n=2$ it gives $s=\tfrac12$ and the column is the two-component spinor. For $n=4$ it gives $\tfrac32$ and the column has $2s+1=4$ components.
 
 The column has four entries. Under the chain, $J_3$ has weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, so the column is the highest-weight-$\tfrac32$ space. The chirality $H^{2}$ splits it $2+2$. The biquaternion case $n=2$ is the only case whose Peirce column is a highest-weight-$\tfrac12$ pair.
 
@@ -118,7 +118,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 | $\psi^{(l)}$ | The column of index $l$, a spinor |
 | $t_k$ | A gauge parameter |
 | $J_3$ | The chain generator |
-| $j$ | The spin, $(4-1)/2$ |
+| $s$ | The spin, $(4-1)/2$ |
 
 ## Further Reading
 

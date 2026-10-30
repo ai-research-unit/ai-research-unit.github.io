@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $T_{x\star y,1}$ by the derived product, the middle slot the sandwich $S_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
+The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $T_{x\star y,1}$ by the derived product, the middle slot the sandwich $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
 
 $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},
@@ -13,7 +13,7 @@ the adjoint of the ternary operator of a pair being the ternary operator of the 
 Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\varphi(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and
 
 $$
-\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad S_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
+\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
 $$
 
 The adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, and the adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$; both exist and are unique by *The Sesquilinear Adjoint Operator*.
@@ -85,10 +85,10 @@ The three readings of the ternary product each have an adjoint of the same group
 **Theorem (the readings and their adjoints).** For all $x,y,z\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad S_{x,z}^{\dagger}=S_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
+\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
 $$
 
-**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=S_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.
+**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.
 
 **Corollary (no new adjoint).** The adjoint of the ternary operator of a pair is the plain left multiplication by the star of its derived product,
 
@@ -161,7 +161,7 @@ The ternary operator $\Theta_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its 
 | $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$ | the reversal of the triple |
 | $\Theta_{x,x}^{\dagger}=\Theta_{x,x}=T_{x\star x,1}$ | the diagonal is self-adjoint: the quadratic representation |
 | $\Theta_{x,y}^{\dagger}=\Theta_{x,y}\iff(x\star y)^{*}=x\star y$ | the Hermitian criterion |
-| $S_{a,b}^{\dagger}=S_{b,a}$ | the adjoint of the sandwich |
+| $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the adjoint of the sandwich |
 | $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$ | the adjoint of the plain two-sided operator |
 | $\Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}=T_{y\star x,1}$ | the adjoint as a plain left multiplication |
 

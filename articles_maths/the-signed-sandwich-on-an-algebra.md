@@ -5,7 +5,7 @@
 The sandwich operator of the group `- Operator Theory` multiplies an element on the left and on the right, $x \mapsto a x b$. When the algebra carries an automorphism $\alpha$ of order two, the product can be twisted by it in the middle, and the **signed sandwich**
 
 $$
-S_{a,b}(x) = a\,\alpha(x)\,b
+\mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b
 $$
 
 is the result. The twist is by the **grade involution** when the algebra is $\mathbb{Z}/2$-graded — the automorphism that is $+1$ on the even part and $-1$ on the odd part — and it is by an arbitrary involutive automorphism in general. The twisted operator is the one that realises the reflections of the algebra, and it is the reason the reflections are two-sided operators and not one-sided ones.
@@ -55,64 +55,64 @@ The identity $A = A^+ \oplus A^-$ is the reason an involutive automorphism is an
 **Definition.** Let $a, b \in A$. The **signed sandwich** determined by $a$ and $b$ is the operator
 
 $$
-S_{a,b} : A \to A, \qquad S_{a,b}(x) = a\,\alpha(x)\,b .
+\mathcal{T}_{a,b} : A \to A, \qquad \mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b .
 $$
 
-The **signed sandwich space** is the image of the bilinear map $S : A \times A \to \operatorname{End}_k(A)$, $(a,b) \mapsto S_{a,b}$.
+The **signed sandwich space** is the image of the bilinear map $\mathcal{T} : A \times A \to \operatorname{End}_k(A)$, $(a,b) \mapsto \mathcal{T}_{a,b}$.
 
-The signed sandwich is $k$-linear in $x$, because $\alpha$ and the two multiplications are; and it is $k$-bilinear in $a$ and in $b$. The definition differs from that of $T_{a,b}$ in exactly one place, the middle argument, which is now $\alpha(x)$ in place of $x$. When $\alpha = \mathrm{id}$ the signed sandwich is the unsigned one, $S_{a,b} = T_{a,b}$, and the two theories coincide.
+The signed sandwich is $k$-linear in $x$, because $\alpha$ and the two multiplications are; and it is $k$-bilinear in $a$ and in $b$. The definition differs from that of $T_{a,b}$ in exactly one place, the middle argument, which is now $\alpha(x)$ in place of $x$. When $\alpha = \mathrm{id}$ the signed sandwich is the unsigned one, $\mathcal{T}_{a,b} = T_{a,b}$, and the two theories coincide.
 
 ### Elementary Properties
 
 **Proposition.** For all $a, b \in A$ and $x \in A$,
 
-**(a)** $S_{1,1} = \alpha$;
+**(a)** $\mathcal{T}_{1,1} = \alpha$;
 
-**(b)** $S_{a,b} = T_{a,b} \circ \alpha = \alpha \circ T_{\alpha(a), \alpha(b)}$;
+**(b)** $\mathcal{T}_{a,b} = T_{a,b} \circ \alpha = \alpha \circ T_{\alpha(a), \alpha(b)}$;
 
-**(c)** $S_{a,b}(1) = a\,b$;
+**(c)** $\mathcal{T}_{a,b}(1) = a\,b$;
 
-**(d)** $S_{a,b}\bigl(\alpha(y)\,\alpha(c)\bigr) = S_{a,b}\bigl(\alpha(y)\bigr)\,\alpha(c)$, so $S_{a,b}$ is right $A$-linear on the image of $\alpha$.
+**(d)** $\mathcal{T}_{a,b}\bigl(\alpha(y)\,\alpha(c)\bigr) = \mathcal{T}_{a,b}\bigl(\alpha(y)\bigr)\,\alpha(c)$, so $\mathcal{T}_{a,b}$ is right $A$-linear on the image of $\alpha$.
 
-*Proof.* (a) $S_{1,1}(x) = \alpha(x)$. (b) $T_{a,b}(\alpha(x)) = a\alpha(x)b = S_{a,b}(x)$, and $\alpha(T_{\alpha(a),\alpha(b)}(x)) = \alpha(\alpha(a)x\alpha(b)) = a\alpha(x)b$. (c) $\alpha(1) = 1$. (d) By multiplicativity of $\alpha$, $S_{a,b}(\alpha(y)\alpha(c)) = a\alpha(\alpha(y)\alpha(c))b = a\,y\,\alpha(c)\,b = S_{a,b}(\alpha(y))\,\alpha(c)$.
+*Proof.* (a) $\mathcal{T}_{1,1}(x) = \alpha(x)$. (b) $T_{a,b}(\alpha(x)) = a\alpha(x)b = \mathcal{T}_{a,b}(x)$, and $\alpha(T_{\alpha(a),\alpha(b)}(x)) = \alpha(\alpha(a)x\alpha(b)) = a\alpha(x)b$. (c) $\alpha(1) = 1$. (d) By multiplicativity of $\alpha$, $\mathcal{T}_{a,b}(\alpha(y)\alpha(c)) = a\alpha(\alpha(y)\alpha(c))b = a\,y\,\alpha(c)\,b = \mathcal{T}_{a,b}(\alpha(y))\,\alpha(c)$.
 
-The identity (b) is the precise sense in which the signed sandwich is the unsigned sandwich followed by the involution: $S_{a,b} = T_{a,b}\alpha$ as operators, the involution acting first. It is the reason the signed operator can be read off from the unsigned one whenever $\alpha$ is known, and the reason a statement about the signed sandwich is a statement about the pair $(T_{a,b}, \alpha)$.
+The identity (b) is the precise sense in which the signed sandwich is the unsigned sandwich followed by the involution: $\mathcal{T}_{a,b} = T_{a,b}\alpha$ as operators, the involution acting first. It is the reason the signed operator can be read off from the unsigned one whenever $\alpha$ is known, and the reason a statement about the signed sandwich is a statement about the pair $(T_{a,b}, \alpha)$.
 
 ### Composition
 
 **Theorem.** For all $a, b, c, d \in A$,
 
 $$
-\boxed{\;S_{a,b}\,T_{c,d} = S_{a\alpha(c),\,\alpha(d)b}, \qquad
-T_{a,b}\,S_{c,d} = S_{ac,\,db}, \qquad
-S_{a,b}\,S_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
+\boxed{\;\mathcal{T}_{a,b}\,T_{c,d} = \mathcal{T}_{a\alpha(c),\,\alpha(d)b}, \qquad
+T_{a,b}\,\mathcal{T}_{c,d} = \mathcal{T}_{ac,\,db}, \qquad
+\mathcal{T}_{a,b}\,\mathcal{T}_{c,d} = T_{a\alpha(c),\,\alpha(d)b}\;} .
 $$
 
 In particular the product of two signed sandwiches is an unsigned sandwich, and the signed sandwiches are not closed under composition unless $\alpha = \mathrm{id}$.
 
-*Proof.* Use the two readings $S_{p,q} = T_{p,q}\alpha = \alpha T_{\alpha(p),\alpha(q)}$ of elementary property (b) and $\alpha^2 = \mathrm{id}$. For the first, $S_{a,b}T_{c,d} = T_{a,b}\alpha T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha = S_{a\alpha(c),\alpha(d)b}$. For the second, $T_{a,b}S_{c,d} = T_{a,b}T_{c,d}\alpha = S_{ac,db}$. For the third, multiply the first two: $S_{a,b}S_{c,d} = T_{a,b}\alpha T_{c,d}\alpha = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha^2 = T_{a\alpha(c),\alpha(d)b}$.
+*Proof.* Use the two readings $\mathcal{T}_{p,q} = T_{p,q}\alpha = \alpha T_{\alpha(p),\alpha(q)}$ of elementary property (b) and $\alpha^2 = \mathrm{id}$. For the first, $\mathcal{T}_{a,b}T_{c,d} = T_{a,b}\alpha T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha = \mathcal{T}_{a\alpha(c),\alpha(d)b}$. For the second, $T_{a,b}\mathcal{T}_{c,d} = T_{a,b}T_{c,d}\alpha = \mathcal{T}_{ac,db}$. For the third, multiply the first two: $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = T_{a,b}\alpha T_{c,d}\alpha = T_{a,b}T_{\alpha(c),\alpha(d)}\alpha^2 = T_{a\alpha(c),\alpha(d)b}$.
 
 **Remark.** The three rules are the complete multiplication table of the two-sided operators: a signed sandwich followed by an unsigned one is signed, an unsigned followed by a signed is signed, and two signed sandwiches compose to an unsigned one. The signed sandwiches are the coset $G_0\alpha$ of the group $G_0$ of invertible unsigned sandwiches, and the union $G_0 \cup G_0\alpha$ is a subgroup of $\operatorname{End}_k(A)$ of index two over $G_0$ generated by $\alpha$; the multiplication is the one displayed.
 
 **Corollary.** The map
 
 $$
-a \otimes b \longmapsto S_{a,b}, \qquad A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A)
+a \otimes b \longmapsto \mathcal{T}_{a,b}, \qquad A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A)
 $$
 
 is $k$-linear onto the signed sandwich space, and its products obey the table above; when $\alpha = \mathrm{id}$ it is the sandwich homomorphism of *The Sandwich Operator on an Algebra* and the three rules collapse to $T_{a,b}T_{c,d} = T_{ac,db}$.
 
 ### Invertibility
 
-**Theorem.** Let $A$ be finite-dimensional. The signed sandwich $S_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
+**Theorem.** Let $A$ be finite-dimensional. The signed sandwich $\mathcal{T}_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
 
 $$
-\boxed{\;S_{a,b}^{-1} = S_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
+\boxed{\;\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
 $$
 
-*Proof.* The form $S_{a,b} = T_{a,b}\alpha$ is the composite of the invertible operator $\alpha$ with the sandwich $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; by *The Sandwich Operator on an Algebra* this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed sandwiches: $S_{a,b}S_{\alpha(a)^{-1},\alpha(b)^{-1}} = T_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = T_{a\alpha(a)^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
+*Proof.* The form $\mathcal{T}_{a,b} = T_{a,b}\alpha$ is the composite of the invertible operator $\alpha$ with the sandwich $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; by *The Sandwich Operator on an Algebra* this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed sandwiches: $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = T_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = T_{a\alpha(a)^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
 
-**Remark.** The inverse $S_{\alpha(a)^{-1},\alpha(b)^{-1}}$ is again a signed sandwich, so the invertible signed sandwiches are stable under inversion; they are not stable under composition, because the product of two of them is an unsigned sandwich. The stable object is the union of the invertible signed and the invertible unsigned sandwiches, which is the subgroup $G_0 \cup G_0\alpha$ of the remark above. When $\alpha = \mathrm{id}$ the signed and the unsigned sandwiches coincide and this union is the ordinary group of invertible sandwiches.
+**Remark.** The inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ is again a signed sandwich, so the invertible signed sandwiches are stable under inversion; they are not stable under composition, because the product of two of them is an unsigned sandwich. The stable object is the union of the invertible signed and the invertible unsigned sandwiches, which is the subgroup $G_0 \cup G_0\alpha$ of the remark above. When $\alpha = \mathrm{id}$ the signed and the unsigned sandwiches coincide and this union is the ordinary group of invertible sandwiches.
 
 ## The Signed Sandwich and the Reflections
 
@@ -121,7 +121,7 @@ $$
 **Definition.** For a unit $u \in A$ the **signed conjugation**, or **signed inner automorphism**, by $u$ is the operator
 
 $$
-\rho_u = S_{u,\, u^{-1}} : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} .
+\rho_u = \mathcal{T}_{u,\, u^{-1}} : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} .
 $$
 
 The signed conjugation is the signed sandwich with $b = u^{-1}$, exactly as the inner automorphism $\iota_u$ is the unsigned sandwich with $b = u^{-1}$. It is an automorphism of $A$ for every unit $u$, being the composite of the automorphisms $\alpha$ and $\iota_u$. The reflections are the signed conjugations of order two, and their detailed study is *Reflections as Signed Two-Sided Operators on an Algebra*; the present article fixes the operator and states the criterion for it to be a reflection.
@@ -145,7 +145,7 @@ Hence $\rho_u$ is an involution — a reflection — exactly when $u\,\alpha(u)$
 **Proposition.** The signed sandwich and the unsigned sandwich determine one another through the involution,
 
 $$
-\boxed{\;S_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = S_{a,b}\,\alpha\;} .
+\boxed{\;\mathcal{T}_{a,b} = T_{a,b}\,\alpha = \alpha\, T_{\alpha(a),\, \alpha(b)}, \qquad T_{a,b} = \mathcal{T}_{a,b}\,\alpha\;} .
 $$
 
 *Proof.* The first identity is elementary property (b). For the second, compose the first on the right with $\alpha$ and use $\alpha^2 = \mathrm{id}$.
@@ -158,11 +158,11 @@ The corollary is the reason the signed theory is not a second theory but the uns
 
 ### A Trivial Grading
 
-Let $A = A^0$ be concentrated in even degree; then $\alpha = \mathrm{id}$, the signed sandwich is the unsigned sandwich, $S_{a,b} = T_{a,b}$, and every statement of the article reduces to the corresponding statement of *The Sandwich Operator on an Algebra*. This is the degenerate case, and it is the reason the word "signed" is reserved for the case in which $\alpha \neq \mathrm{id}$.
+Let $A = A^0$ be concentrated in even degree; then $\alpha = \mathrm{id}$, the signed sandwich is the unsigned sandwich, $\mathcal{T}_{a,b} = T_{a,b}$, and every statement of the article reduces to the corresponding statement of *The Sandwich Operator on an Algebra*. This is the degenerate case, and it is the reason the word "signed" is reserved for the case in which $\alpha \neq \mathrm{id}$.
 
 ### A Group Algebra with a Parity
 
-Let $A = k[G]$ for a group $G$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism; extending $\chi$ linearly gives an involutive automorphism $\alpha$ of $A$, the grade involution of the grading that puts each $g$ in degree $\chi(g)$. Then $S_{a,b}$ is the sandwich twisted by the sign of the group elements, and for $a = g$, $b = g^{-1}$ the signed conjugation acts on a group element by
+Let $A = k[G]$ for a group $G$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism; extending $\chi$ linearly gives an involutive automorphism $\alpha$ of $A$, the grade involution of the grading that puts each $g$ in degree $\chi(g)$. Then $\mathcal{T}_{a,b}$ is the sandwich twisted by the sign of the group elements, and for $a = g$, $b = g^{-1}$ the signed conjugation acts on a group element by
 $$
 \rho_g(x_h) = g\,\alpha(x_h)\,g^{-1} = \chi(h)\,x_{ghg^{-1}} = \alpha\bigl(x_{ghg^{-1}}\bigr),
 $$
@@ -174,9 +174,9 @@ Let $A = \Lambda(V)$ be the exterior algebra of a $k$-module $V$, graded by the 
 
 ## Summary
 
-Fix an involutive automorphism $\alpha$ of $A$, $k$-linear and multiplicative with $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance, and the grading theory itself belongs to *Superalgebras and Graded Structures*. The **signed sandwich** is $S_{a,b}(x) = a\alpha(x)b$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $S_{1,1} = \alpha$, $S_{a,b}(1) = ab$, and the two readings $S_{a,b} = T_{a,b}\alpha = \alpha T_{\alpha(a),\alpha(b)}$ of the unsigned sandwich. The signed sandwiches satisfy $S_{a,b}T_{c,d} = S_{a\alpha(c),\alpha(d)b}$, $T_{a,b}S_{c,d} = S_{ac,db}$ and $S_{a,b}S_{c,d} = T_{a\alpha(c),\alpha(d)b}$, so the product of two signed sandwiches is an unsigned sandwich; and $S_{a,b}$ is invertible exactly when $a$ and $b$ are units, with inverse $S_{\alpha(a)^{-1},\alpha(b)^{-1}}$.
+Fix an involutive automorphism $\alpha$ of $A$, $k$-linear and multiplicative with $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance, and the grading theory itself belongs to *Superalgebras and Graded Structures*. The **signed sandwich** is $\mathcal{T}_{a,b}(x) = a\alpha(x)b$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $\mathcal{T}_{1,1} = \alpha$, $\mathcal{T}_{a,b}(1) = ab$, and the two readings $\mathcal{T}_{a,b} = T_{a,b}\alpha = \alpha T_{\alpha(a),\alpha(b)}$ of the unsigned sandwich. The signed sandwiches satisfy $\mathcal{T}_{a,b}T_{c,d} = \mathcal{T}_{a\alpha(c),\alpha(d)b}$, $T_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = T_{a\alpha(c),\alpha(d)b}$, so the product of two signed sandwiches is an unsigned sandwich; and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, with inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$.
 
-The signed conjugation $\rho_u = S_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, is an automorphism for every unit $u$ and satisfies $\rho_u^2 = \iota_{u\alpha(u)}$; hence $\rho_u$ is a reflection exactly when $u\alpha(u)$ is central, which for an odd element $u$ of a graded algebra with $u^2$ central is the case $u\alpha(u) = -u^2$. The reflections are the signed conjugations of order two and are treated in *Reflections as Signed Two-Sided Operators on an Algebra*; the one-sided signed operators are the subject of *The Signed Left Multiplication on an Algebra*, and the signed adjoints are the subject of *The Signed Adjoint Sandwich on an Algebra*.
+The signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, is an automorphism for every unit $u$ and satisfies $\rho_u^2 = \iota_{u\alpha(u)}$; hence $\rho_u$ is a reflection exactly when $u\alpha(u)$ is central, which for an odd element $u$ of a graded algebra with $u^2$ central is the case $u\alpha(u) = -u^2$. The reflections are the signed conjugations of order two and are treated in *Reflections as Signed Two-Sided Operators on an Algebra*; the one-sided signed operators are the subject of *The Signed Left Multiplication on an Algebra*, and the signed adjoints are the subject of *The Signed Adjoint Sandwich on an Algebra*.
 
 ## Summary of Notation
 
@@ -187,11 +187,11 @@ The signed conjugation $\rho_u = S_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, 
 | $\alpha$ | an involutive automorphism, $\alpha^2 = \mathrm{id}$ |
 | $A = A^+ \oplus A^-$ | the $\pm1$ eigenspaces, a $\mathbb{Z}/2$-grading |
 | $T_{a,b}(x) = axb$ | the unsigned sandwich |
-| $S_{a,b}(x) = a\alpha(x)b$ | the signed sandwich |
-| $\mathcal{S}^{\mathrm{s}}(A)$ | the signed sandwich space |
-| $S_{a,b} = T_{a,b}\alpha = \alpha T_{\alpha(a),\alpha(b)}$ | the relation to the unsigned sandwich |
-| $S_{a,b}S_{c,d} = T_{a\alpha(c),\alpha(d)b}$ | the composition rule for two signed sandwiches |
-| $\rho_u = S_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$ | the signed conjugation |
+| $\mathcal{T}_{a,b}(x) = a\alpha(x)b$ | the signed sandwich |
+| $\mathcal{T}^{\mathrm{s}}(A)$ | the signed sandwich space |
+| $\mathcal{T}_{a,b} = T_{a,b}\alpha = \alpha T_{\alpha(a),\alpha(b)}$ | the relation to the unsigned sandwich |
+| $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = T_{a\alpha(c),\alpha(d)b}$ | the composition rule for two signed sandwiches |
+| $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$ | the signed conjugation |
 | $\rho_u^2 = \iota_{u\alpha(u)}$ | the square of a signed conjugation |
 
 ## Further Reading

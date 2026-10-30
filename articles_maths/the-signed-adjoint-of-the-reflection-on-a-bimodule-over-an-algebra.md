@@ -5,7 +5,7 @@
 
 A reflection of a graded bimodule is the signed sandwich $r_u(x)=u\,\alpha(x)\,u^{-1}$ by a unit $u$, an operator of order two when $u\alpha(u)$ is central. This article computes the adjoint of a reflection with respect to an $\alpha$-invariant pairing and asks when a reflection is self-adjoint. The adjoint of $r_u$ is the reflection $r_{\beta(u)}$ by the parameter transformed by the composite $\beta=\alpha\sigma$, so the reflections are permuted by the adjoint; a reflection is self-adjoint exactly when its parameter is fixed by $\beta$, and this criterion fails in the degenerate case where distinct parameters give the same reflection.
 
-The article is the fifth of the `* Operator Theory` group of this category. It assumes the reflections of *Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra*, the signed sandwich and its adjoint from *The Signed Sandwich on a Bimodule over an Algebra* and *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, and the self-adjoint and unitary elements of *Module Operators with an Involution*. It is the operator-level counterpart, for the graded bimodule, of *The Adjoint of the Sandwich on a Bimodule over an Algebra*, and the one-sided partner is *The Signed Adjoint of the Left Multiplication on a Module over an Algebra*. The article stays inside Part I: no distance, norm, angle, form with a norm, topology or limit; a reflection means an operator of order two, with no geometric reading. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded $(A,A)$-bimodule with $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and for a unit $u \in A^{\times}$ the reflection is $r_u=S^{\alpha}_{u,u^{-1}}$, $r_u(x)=u\,\alpha(x)\,u^{-1}$.
+The article is the fifth of the `* Operator Theory` group of this category. It assumes the reflections of *Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra*, the signed sandwich and its adjoint from *The Signed Sandwich on a Bimodule over an Algebra* and *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, and the self-adjoint and unitary elements of *Module Operators with an Involution*. It is the operator-level counterpart, for the graded bimodule, of *The Adjoint of the Sandwich on a Bimodule over an Algebra*, and the one-sided partner is *The Signed Adjoint of the Left Multiplication on a Module over an Algebra*. The article stays inside Part I: no distance, norm, angle, form with a norm, topology or limit; a reflection means an operator of order two, with no geometric reading. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded $(A,A)$-bimodule with $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and for a unit $u \in A^{\times}$ the reflection is $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$, $r_u(x)=u\,\alpha(x)\,u^{-1}$.
 
 ## The Reflection and Its Adjoint
 
@@ -14,13 +14,13 @@ The article is the fifth of the `* Operator Theory` group of this category. It a
 **Definition.** For a unit $u \in A^{\times}$ the **reflection** with parameter $u$ is the signed sandwich
 
 $$
-r_u=S^{\alpha}_{u,u^{-1}}, \qquad r_u(x)=u\,\alpha(x)\,u^{-1} .
+r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}, \qquad r_u(x)=u\,\alpha(x)\,u^{-1} .
 $$
 
 **Proposition.** The square of a reflection is the inner conjugation by $u\alpha(u)$,
 
 $$
-r_u^{2}=S_{u\alpha(u),\,(u\alpha(u))^{-1}}=\operatorname{conj}_{u\alpha(u)},
+r_u^{2}=\mathcal{T}_{u\alpha(u),\,(u\alpha(u))^{-1}}=\operatorname{conj}_{u\alpha(u)},
 $$
 
 so $r_u$ is an operator of order two, a genuine reflection, exactly when $u\alpha(u)$ is central in $A$.
@@ -37,7 +37,7 @@ $$
 \boxed{\;(r_u)^{*}=r_{\beta(u)}, \qquad \beta(u)=\alpha(\sigma(u))\;} .
 $$
 
-*Proof.* The adjoint of a signed sandwich is $\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}$ by *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; for $(a,b)=(u,u^{-1})$ this is $S^{\alpha}_{\beta(u),\beta(u^{-1})}$, and $\beta(u^{-1})=\beta(u)^{-1}$, so the adjoint is $r_{\beta(u)}$.
+*Proof.* The adjoint of a signed sandwich is $\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)}$ by *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; for $(a,b)=(u,u^{-1})$ this is $\mathcal{T}^{\alpha}_{\beta(u),\beta(u^{-1})}$, and $\beta(u^{-1})=\beta(u)^{-1}$, so the adjoint is $r_{\beta(u)}$.
 
 **Corollary.** The adjoint permutes the set of reflections: $\{r_u\}^{*}=\{r_u\}$, and the permutation is the map $u \mapsto \beta(u)$ on the parameters. Since $\beta$ is an involution, the adjoint acts on the reflections as an involution on the parameters, and $(r_u)^{**}=r_{\beta^{2}(u)}=r_u$.
 
@@ -61,7 +61,7 @@ $$
 
 **Corollary.** The $\beta$-symmetric units form a subgroup $A^{\times}_{\beta}=\{u \in A^{\times} : \beta(u)=u\}$ of the unit group, because $\beta$ is an involution of the algebra, and the reflection map restricts to a map $A^{\times}_{\beta}\to\{r_u : (r_u)^{*}=r_u\}$ onto the self-adjoint reflections when the parameter map is injective. The restriction is multiplicative only when $u\alpha(v)$ is central for all $u,v \in A^{\times}_{\beta}$, as it is in a commutative algebra; in general the product of two reflections is a conjugation and not a reflection.
 
-*Proof.* $A^{\times}_{\beta}$ is a subgroup because $\beta$ is an algebra automorphism with $\beta^{2}=\mathrm{id}$; the image lies in the self-adjoint reflections by the theorem; the product $r_ur_v=S_{u\alpha(v),\,\alpha(v)^{-1}u^{-1}}$ is a reflection exactly when $u\alpha(v)$ is central, by the criterion for a diagonal sandwich to be a reflection.
+*Proof.* $A^{\times}_{\beta}$ is a subgroup because $\beta$ is an algebra automorphism with $\beta^{2}=\mathrm{id}$; the image lies in the self-adjoint reflections by the theorem; the product $r_ur_v=\mathcal{T}_{u\alpha(v),\,\alpha(v)^{-1}u^{-1}}$ is a reflection exactly when $u\alpha(v)$ is central, by the criterion for a diagonal sandwich to be a reflection.
 
 The corollary stops short of a group isomorphism, because $r_ur_v$ is a reflection only under the centrality condition; the self-adjoint reflections therefore do not automatically form a group.
 
@@ -121,9 +121,9 @@ The commutative case is the extreme degeneracy: the reflections collapse to a si
 
 ### The degenerate pairing
 
-**Proposition.** If the pairing is not $\alpha$-invariant then $\alpha^{*}\neq\alpha$ and $(r_u)^{*}=\alpha^{*}S_{\sigma(u),\sigma(u)^{-1}}$, which need not be a reflection; in this case the adjoint of a reflection need not be a reflection at all.
+**Proposition.** If the pairing is not $\alpha$-invariant then $\alpha^{*}\neq\alpha$ and $(r_u)^{*}=\alpha^{*}\mathcal{T}_{\sigma(u),\sigma(u)^{-1}}$, which need not be a reflection; in this case the adjoint of a reflection need not be a reflection at all.
 
-*Proof.* The adjoint of a signed sandwich is $\alpha^{*}S_{\sigma(a),\sigma(b)}$ without invariance; for a reflection this is $\alpha^{*}r'$ with $r'$ the reflection by $\sigma(u)$ in the unsigned sense, and $\alpha^{*}r'$ is a reflection only when $\alpha^{*}$ is a signed sandwich, which fails when $\alpha$ is not self-adjoint.
+*Proof.* The adjoint of a signed sandwich is $\alpha^{*}\mathcal{T}_{\sigma(a),\sigma(b)}$ without invariance; for a reflection this is $\alpha^{*}r'$ with $r'$ the reflection by $\sigma(u)$ in the unsigned sense, and $\alpha^{*}r'$ is a reflection only when $\alpha^{*}$ is a signed sandwich, which fails when $\alpha$ is not self-adjoint.
 
 ## Unitarity and the Self-Adjoint Reflections
 
@@ -174,8 +174,8 @@ For a graded bimodule with an $\alpha$-invariant balanced $\sigma$-sesquilinear 
 | $R$, $(A,\sigma)$ | base ring, involutive $R$-algebra |
 | $\alpha$ | grade involution, commuting with $\sigma$ |
 | $\beta=\alpha\sigma$ | the composite involution |
-| $r_u=S^{\alpha}_{u,u^{-1}}$ | the reflection, $r_u(x)=u\alpha(x)u^{-1}$ |
-| $r_u^{2}=S_{u\alpha(u),(u\alpha(u))^{-1}}$ | the square is a conjugation |
+| $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ | the reflection, $r_u(x)=u\alpha(x)u^{-1}$ |
+| $r_u^{2}=\mathcal{T}_{u\alpha(u),(u\alpha(u))^{-1}}$ | the square is a conjugation |
 | $(r_u)^{*}=r_{\beta(u)}$ | the adjoint of the reflection |
 | $\beta(u)=u$ | the $\beta$-symmetry of the parameter |
 | $\beta(u)u^{-1}\in Z(A)$ | the self-adjointness criterion in general |

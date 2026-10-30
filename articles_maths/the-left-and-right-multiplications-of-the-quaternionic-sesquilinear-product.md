@@ -23,7 +23,7 @@ $$
 L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\,\overline{\tilde Q_2}} , \qquad R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\,\tilde Q_5^{*}} ,
 $$
 
-where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde Q_5} = S_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
+where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde Q_5} = \mathcal{T}_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
 
 The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *The Four General Products and Their Relations over the Biquaternion Algebra* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
 
@@ -42,10 +42,10 @@ The two families are $\mathcal{L} = \{ L_{\tilde Q_5} : \tilde Q_5 \in \mathbb{B
 **Proposition (the closed forms).** For every $\tilde Q_5$ and $\tilde Q_1$,
 
 $$
-L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*} = S_{\tilde Q_5^{\natural},\,e_t}(\tilde Q_1) , \qquad R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*} ,
+L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*} = \mathcal{T}_{\tilde Q_5^{\natural},\,e_t}(\tilde Q_1) , \qquad R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*} ,
 $$
 
-where $S_{a,b}(\tilde Q_1) = a\tilde Q_1^{*}b$ is the sesquilinear sandwich of *The Sesquilinear Sandwich Operator*; so every left multiplication is the sandwich with parameters $\tilde Q_5^{\natural}$ and $e_t$.
+where $\mathcal{T}_{a,b}(\tilde Q_1) = a\tilde Q_1^{*}b$ is the sesquilinear sandwich of *The Sesquilinear Sandwich Operator*; so every left multiplication is the sandwich with parameters $\tilde Q_5^{\natural}$ and $e_t$.
 
 **Proof.** The first display is the rule; the sandwich with second parameter $e_t$ is $a\tilde Q_1^{*}e_t = a\tilde Q_1^{*}$, which is the left multiplication with $a = \tilde Q_5^{\natural}$. The second display is the rule read on the right slot.
 
@@ -111,18 +111,18 @@ which is $T_{\tilde Q_5^{\natural},\overline{\tilde Q_2}}(\tilde Q_1)$.
 
 ### The Sandwich Algebra
 
-**Theorem (the generated monoid).** The left multiplications are the sandwiches $L_{\tilde Q_5} = S_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate under composition is the sandwich monoid of *The Sesquilinear Sandwich Operator*, the set
+**Theorem (the generated monoid).** The left multiplications are the sandwiches $L_{\tilde Q_5} = \mathcal{T}_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate under composition is the sandwich monoid of *The Sesquilinear Sandwich Operator*, the set
 
 $$
-\{ T_{\tilde Q_1,\tilde Q_2} : \tilde Q_1, \tilde Q_2 \in \mathbb{B} \} \cup \{ S_{a,b} : a, b \in \mathbb{B} \} ,
+\{ T_{\tilde Q_1,\tilde Q_2} : \tilde Q_1, \tilde Q_2 \in \mathbb{B} \} \cup \{ \mathcal{T}_{a,b} : a, b \in \mathbb{B} \} ,
 $$
 
 with unit $T_{e_t,e_t} = \mathrm{id}$.
 
-**Proof.** The identification $L_{\tilde Q_5} = S_{\tilde Q_5^{\natural},e_t}$ is the closed form of the first proposition. The composition table of *The Sesquilinear Sandwich Operator* gives $S_{a,b} \circ S_{c,d} = T_{a d^{*},\, c^{*} b}$ and $T_{p,q} \circ T_{r,s} = T_{pr,\, sq}$, so the product of two left multiplications is
+**Proof.** The identification $L_{\tilde Q_5} = \mathcal{T}_{\tilde Q_5^{\natural},e_t}$ is the closed form of the first proposition. The composition table of *The Sesquilinear Sandwich Operator* gives $\mathcal{T}_{a,b} \circ \mathcal{T}_{c,d} = T_{a d^{*},\, c^{*} b}$ and $T_{p,q} \circ T_{r,s} = T_{pr,\, sq}$, so the product of two left multiplications is
 
 $$
-S_{\tilde Q_5^{\natural},e_t} \circ S_{\tilde Q_2^{\natural},e_t}
+\mathcal{T}_{\tilde Q_5^{\natural},e_t} \circ \mathcal{T}_{\tilde Q_2^{\natural},e_t}
 = T_{\tilde Q_5^{\natural} e_t^{*},\, (\tilde Q_2^{\natural})^{*} e_t} 
 = T_{\tilde Q_5^{\natural},\,\overline{\tilde Q_2}} ,
 $$
@@ -251,7 +251,7 @@ $$
 
 ## Summary
 
-The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*}$ and $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde Q_5 \mapsto L_{\tilde Q_5}$ is $\mathbb{C}$-linear and the map $\tilde Q_5 \mapsto R_{\tilde Q_5}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\overline{\tilde Q_2}}$ and $R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\tilde Q_5^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde Q_5}R_{\tilde Q_2} = \tilde Q_5^{\natural}\tilde Q_2\overline{\tilde Q_1}$ and $R_{\tilde Q_2}L_{\tilde Q_5} = \overline{\tilde Q_1}\tilde Q_5\tilde Q_2^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $S_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_t,e_t}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four general products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
+The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5^{\natural}\tilde Q_1^{*}$ and $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde Q_5^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde Q_5 \mapsto L_{\tilde Q_5}$ is $\mathbb{C}$-linear and the map $\tilde Q_5 \mapsto R_{\tilde Q_5}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\overline{\tilde Q_2}}$ and $R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\tilde Q_5^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde Q_5}R_{\tilde Q_2} = \tilde Q_5^{\natural}\tilde Q_2\overline{\tilde Q_1}$ and $R_{\tilde Q_2}L_{\tilde Q_5} = \overline{\tilde Q_1}\tilde Q_5\tilde Q_2^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $\mathcal{T}_{\tilde Q_5^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_t,e_t}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four general products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
 
 ## Summary of Notation
 
@@ -259,7 +259,7 @@ The left and right multiplications of the general quaternionic sesquilinear mult
 |---|---|
 | $L_{\tilde Q_5}(\tilde Q_1) = \tilde Q_5 \star \tilde Q_1 = \tilde Q_5^{\natural}\tilde Q_1^{*}$ | the left multiplication, conjugate-linear |
 | $R_{\tilde Q_5}(\tilde Q_1) = \tilde Q_1 \star \tilde Q_5 = \tilde Q_1^{\natural}\tilde Q_5^{*}$ | the right multiplication, linear |
-| $L_{\tilde Q_5} = S_{\tilde Q_5^{\natural},e_t}$ | the left multiplication as a sandwich |
+| $L_{\tilde Q_5} = \mathcal{T}_{\tilde Q_5^{\natural},e_t}$ | the left multiplication as a sandwich |
 | $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ | the ordinary two-sided operator |
 | $L_{\tilde Q_5} \circ L_{\tilde Q_2} = T_{\tilde Q_5^{\natural},\overline{\tilde Q_2}}$ | the composition of two left multiplications |
 | $R_{\tilde Q_5} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\tilde Q_5^{*}}$ | the composition of two right multiplications |

@@ -20,9 +20,9 @@ The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algeb
 
 **Definition.** The **signed conjugation** by the unit $u$ is $r_u(x) = u\,\alpha(x)\,u^{-1}$; it is an automorphism of $J$, and it is a **reflection** when $r_u^2 = \mathrm{id}$, which holds exactly when the **twisted square** $u\alpha(u)$ is central.
 
-**Proposition (the symmetrised form).** The reflection by a **symmetry** $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$, and the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ has this symmetrisation.
+**Proposition (the symmetrised form).** The reflection by a **symmetry** $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$, and the diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ has this symmetrisation.
 
-*Proof.* The symmetrisation of the sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in *The Signed Sandwich on a Jordan Algebra*.
+*Proof.* The symmetrisation of the sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in *The Signed Sandwich on a Jordan Algebra*.
 
 ### The Adjoint
 

@@ -101,12 +101,12 @@ and the restriction of $\ell_U$ to the even and odd parts is $L_U$ and $-L_U$ re
 **Proposition.** The signed sandwich factors through the one-sided multiplications in two ways:
 
 $$
-S_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
+\mathcal{T}_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
 $$
 
 and the unsigned sandwich is $T_{U,V}=L_UR_V$. So the signed sandwich is the signed right multiplication followed by the left multiplication by $U$, or equivalently the signed left multiplication followed by the right multiplication by $\alpha(V)$.
 
-*Proof.* $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=S_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.
+*Proof.* $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=\mathcal{T}_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.
 
 **Corollary (the composition table recovered).** The products of the signed sandwich computed in *The Signed Sandwich on a Hilbert Space* are the products of the factors displayed here, and the parity of the signed length is the parity of the numbers of signed one-sided factors.
 
@@ -124,7 +124,7 @@ so the signed left multiplication is the ordinary one with the off-diagonal bloc
 
 ## Summary
 
-The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$, bounded with $\|\ell_U\|=\|U\|$, injective in $U$, and equal to the ordinary left multiplication with the sign $-1$ on the odd part. Its products obey $\ell_U\ell_V=L_{U\alpha(V)}$ and $L_U\ell_V=\ell_{UV}$, so the signed left multiplications form the coset $L(B(H))\alpha$ of the unsigned ones inside $B(B(H))$, with the parity of the signed length adding modulo two; it is invertible exactly when $U$ is, with $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$, is isometric exactly when $U$ is, and is unitary exactly when $U$ is. Its kernel is $\alpha(\ker U)$ and its image is $U\,B(H)$. The signed sandwich factors through the two one-sided multiplications, $S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$, which recovers the composition table of the sandwich and exhibits the signed left multiplication as the elementary building block of the two-sided theory.
+The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$, bounded with $\|\ell_U\|=\|U\|$, injective in $U$, and equal to the ordinary left multiplication with the sign $-1$ on the odd part. Its products obey $\ell_U\ell_V=L_{U\alpha(V)}$ and $L_U\ell_V=\ell_{UV}$, so the signed left multiplications form the coset $L(B(H))\alpha$ of the unsigned ones inside $B(B(H))$, with the parity of the signed length adding modulo two; it is invertible exactly when $U$ is, with $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$, is isometric exactly when $U$ is, and is unitary exactly when $U$ is. Its kernel is $\alpha(\ker U)$ and its image is $U\,B(H)$. The signed sandwich factors through the two one-sided multiplications, $\mathcal{T}_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$, which recovers the composition table of the sandwich and exhibits the signed left multiplication as the elementary building block of the two-sided theory.
 
 ## Summary of Notation
 
@@ -138,7 +138,7 @@ The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T
 | $\ell(B(H))=L(B(H))\alpha$ | the coset of signed left multiplications |
 | $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$ | the inverse |
 | $\ker\ell_U=\alpha(\ker U)$ | the kernel |
-| $S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$ | the sandwich as a composite |
+| $\mathcal{T}_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$ | the sandwich as a composite |
 
 ## Further Reading
 

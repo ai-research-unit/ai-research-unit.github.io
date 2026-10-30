@@ -25,7 +25,7 @@ with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction
 
 ## Integer Spin and the Representation It Needs
 
-The finite-dimensional irreducible representations of the Lorentz group are labelled by a pair $(s,s_2)$ of half-integers, with complex dimension $(2s+1)(2s_2+1)$, and the restriction to the rotation subgroup is by the Clebsch–Gordan rule $j\otimes s_2$. Two entries of the list are relevant before any field equation is written.
+The finite-dimensional irreducible representations of the Lorentz group are labelled by a pair $(s,s_2)$ of half-integers, with complex dimension $(2s+1)(2s_2+1)$, and the restriction to the rotation subgroup is by the Clebsch–Gordan rule $s\otimes s_2$. Two entries of the list are relevant before any field equation is written.
 
 The **four-vector representation** is $(\tfrac12,\tfrac12)$, of complex dimension four. Its restriction to the rotation subgroup is
 

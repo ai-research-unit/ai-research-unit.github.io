@@ -9,9 +9,9 @@ $$
 r_u(x) = u\,\alpha(x)\,u^{-1},
 $$
 
-the conjugation by a unit composed with the grade involution; on a graded algebra it is the reflection in the hyperplane of the elements fixed by $u$ up to the sign rule, and algebraically it is the signed sandwich $S_{u,u^{-1}}$. Its signed adjoint with respect to the twisted pairing is the sandwich $S_{\delta(u),\delta(u)^{-1}}$ with $\delta = \sigma\alpha$, and the reflection is **self-adjoint** exactly when the two sandwiches coincide, which happens exactly when $\delta(u)u^{-1}$ is central. The nondegenerate case is $\delta(u) = u$, a $\delta$-symmetric unit; the failure of self-adjointness occurs as soon as $\delta(u)u^{-1}$ is not central, and the reflection is then a signed operator whose adjoint is a genuinely different reflection.
+the conjugation by a unit composed with the grade involution; on a graded algebra it is the reflection in the hyperplane of the elements fixed by $u$ up to the sign rule, and algebraically it is the signed sandwich $\mathcal{T}_{u,u^{-1}}$. Its signed adjoint with respect to the twisted pairing is the sandwich $\mathcal{T}_{\delta(u),\delta(u)^{-1}}$ with $\delta = \sigma\alpha$, and the reflection is **self-adjoint** exactly when the two sandwiches coincide, which happens exactly when $\delta(u)u^{-1}$ is central. The nondegenerate case is $\delta(u) = u$, a $\delta$-symmetric unit; the failure of self-adjointness occurs as soon as $\delta(u)u^{-1}$ is not central, and the reflection is then a signed operator whose adjoint is a genuinely different reflection.
 
-This article reads the reflection as a signed operator, computes its square and its fixed set, identifies the self-adjointness condition and exhibits the failure in the degenerate case. It assumes *Reflections as Signed Two-Sided Operators on a Ring* for the operator, *The Signed Adjoint Sandwich on a Ring* for the adjoint, and *Involutions of the Endomorphism Ring* for the pairings. Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, $\tau$ is a $\sigma$-invariant trace, $\alpha$ is a grade involution commuting with $\sigma$, $\delta = \sigma\alpha$, the twisted pairing is $\{x,y\} = \tau(x\sigma(y))$, $u$ is a unit, and $r_u = S_{u,u^{-1}}$.
+This article reads the reflection as a signed operator, computes its square and its fixed set, identifies the self-adjointness condition and exhibits the failure in the degenerate case. It assumes *Reflections as Signed Two-Sided Operators on a Ring* for the operator, *The Signed Adjoint Sandwich on a Ring* for the adjoint, and *Involutions of the Endomorphism Ring* for the pairings. Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, $\tau$ is a $\sigma$-invariant trace, $\alpha$ is a grade involution commuting with $\sigma$, $\delta = \sigma\alpha$, the twisted pairing is $\{x,y\} = \tau(x\sigma(y))$, $u$ is a unit, and $r_u = \mathcal{T}_{u,u^{-1}}$.
 
 ## The Reflection and its Square
 
@@ -32,26 +32,26 @@ Hence $r_u$ is an **involution**, $r_u^2 = \mathrm{id}$, exactly when $u\alpha(u
 **Theorem.** With respect to the twisted pairing,
 
 $$
-\boxed{\;r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)}\;} ,
+\boxed{\;r_u^{*_\sigma} = \mathcal{T}_{\delta(u),\delta(u)^{-1}} = r'_{\delta(u)}\;} ,
 $$
 
-where $r'_v$ denotes the signed sandwich $S_{v,v^{-1}}$; the signed adjoint of a reflection is the reflection in $\delta(u)$.
+where $r'_v$ denotes the signed sandwich $\mathcal{T}_{v,v^{-1}}$; the signed adjoint of a reflection is the reflection in $\delta(u)$.
 
-**Proof.** This is $S_{u,u^{-1}}^{*_\sigma} = S_{\delta(u),\delta(u^{-1})}$ of *The Signed Adjoint Sandwich on a Ring*, together with $\delta(u^{-1}) = \delta(u)^{-1}$ because $\delta$ is an involution.
+**Proof.** This is $\mathcal{T}_{u,u^{-1}}^{*_\sigma} = \mathcal{T}_{\delta(u),\delta(u^{-1})}$ of *The Signed Adjoint Sandwich on a Ring*, together with $\delta(u^{-1}) = \delta(u)^{-1}$ because $\delta$ is an involution.
 
 **Theorem (self-adjointness).** The reflection is self-adjoint, $r_u^{*_\sigma} = r_u$, exactly when
 
 $$
-\boxed{\;S_{\delta(u),\delta(u)^{-1}} = S_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A)\;} .
+\boxed{\;\mathcal{T}_{\delta(u),\delta(u)^{-1}} = \mathcal{T}_{u,u^{-1}} \iff \delta(u) = \lambda u \ \text{ for some central } \lambda \iff \delta(u)u^{-1} \in Z(A)\;} .
 $$
 
 In particular a **$\delta$-symmetric** unit, $\delta(u) = u$, gives a self-adjoint reflection, and so does $\delta(u) = \lambda u$ with $\lambda$ central.
 
-**Proof.** The equality $S_{c,d} = S_{a,b}$ of two sandwiches as maps holds exactly when the rank-one tensors $c\otimes d$ and $a\otimes b$ agree, that is $c = \lambda a$, $d = \lambda^{-1}b$ for a central $\lambda$; with $a = d = u$, $b = c = u^{-1}$ (since $\delta(u^{-1}) = \delta(u)^{-1}$) this is $\delta(u) = \lambda u$. Dividing by $u$ gives the centrality of $\delta(u)u^{-1}$.
+**Proof.** The equality $\mathcal{T}_{c,d} = \mathcal{T}_{a,b}$ of two sandwiches as maps holds exactly when the rank-one tensors $c\otimes d$ and $a\otimes b$ agree, that is $c = \lambda a$, $d = \lambda^{-1}b$ for a central $\lambda$; with $a = d = u$, $b = c = u^{-1}$ (since $\delta(u^{-1}) = \delta(u)^{-1}$) this is $\delta(u) = \lambda u$. Dividing by $u$ gives the centrality of $\delta(u)u^{-1}$.
 
 **Corollary (failure in the degenerate case).** If $\delta(u)u^{-1}$ is not central, the reflection is not self-adjoint: its adjoint is the reflection $r'_{\delta(u)}$, which conjugates by the different unit $\delta(u)$, and the two operators agree only on the elements commuting with $\delta(u)u^{-1}$. The self-adjointness therefore holds for the nondegenerate reflections, the $\delta$-symmetric units and their central multiples, and fails as soon as the unitarity defect leaves the centre.
 
-**Proof.** The adjoint is $S_{\delta(u),\delta(u)^{-1}}$ and the two sandwiches differ when $\delta(u)u^{-1}$ is not central, by the same rank-one argument read in the converse direction; the agreement on the centraliser is the comparison of the two conjugations.
+**Proof.** The adjoint is $\mathcal{T}_{\delta(u),\delta(u)^{-1}}$ and the two sandwiches differ when $\delta(u)u^{-1}$ is not central, by the same rank-one argument read in the converse direction; the agreement on the centraliser is the comparison of the two conjugations.
 
 ## Examples
 
@@ -65,17 +65,17 @@ In particular a **$\delta$-symmetric** unit, $\delta(u) = u$, gives a self-adjoi
 
 ## Summary
 
-The reflection $r_u(x) = u\alpha(x)u^{-1} = S_{u,u^{-1}}$ has square the conjugation by $u\alpha(u)$, so it is an involution $\iff$ $u\alpha(u)$ is central, with fixed set $\{x : u\alpha(x) = xu\}$. Its signed adjoint with respect to the twisted pairing is $r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}}$, the reflection in $\delta(u) = \sigma\alpha(u)$; the reflection is **self-adjoint** exactly when $\delta(u)u^{-1}$ is central, in particular for the $\delta$-symmetric units and their central multiples. When $\delta(u)u^{-1}$ is not central the self-adjointness **fails** — the degenerate case — and the adjoint is the reflection in the different unit $\delta(u)$, agreeing with $r_u$ only on the centraliser of the defect.
+The reflection $r_u(x) = u\alpha(x)u^{-1} = \mathcal{T}_{u,u^{-1}}$ has square the conjugation by $u\alpha(u)$, so it is an involution $\iff$ $u\alpha(u)$ is central, with fixed set $\{x : u\alpha(x) = xu\}$. Its signed adjoint with respect to the twisted pairing is $r_u^{*_\sigma} = \mathcal{T}_{\delta(u),\delta(u)^{-1}}$, the reflection in $\delta(u) = \sigma\alpha(u)$; the reflection is **self-adjoint** exactly when $\delta(u)u^{-1}$ is central, in particular for the $\delta$-symmetric units and their central multiples. When $\delta(u)u^{-1}$ is not central the self-adjointness **fails** — the degenerate case — and the adjoint is the reflection in the different unit $\delta(u)$, agreeing with $r_u$ only on the centraliser of the defect.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $r_u(x) = u\alpha(x)u^{-1}$ | Reflection as a signed operator |
-| $r_u = S_{u,u^{-1}}$ | The reflection is a signed sandwich |
+| $r_u = \mathcal{T}_{u,u^{-1}}$ | The reflection is a signed sandwich |
 | $r_u^2 = \operatorname{inn}_{u\alpha(u)}$ | Square; involution iff $u\alpha(u)$ central |
 | $\operatorname{Fix}(r_u) = \{x : u\alpha(x) = xu\}$ | Fixed set |
-| $r_u^{*_\sigma} = S_{\delta(u),\delta(u)^{-1}}$ | Signed adjoint |
+| $r_u^{*_\sigma} = \mathcal{T}_{\delta(u),\delta(u)^{-1}}$ | Signed adjoint |
 | $\delta(u)u^{-1}\in Z(A)$ | Self-adjointness condition |
 | $\delta(u) = u$ | Nondegenerate ($\delta$-symmetric) self-adjoint reflection |
 | $r'_{\delta(u)}$ | Adjoint reflection in the degenerate case |

@@ -115,17 +115,17 @@ The theorem is the precise form of the assertion that the grading imposes a sign
 
 ### The two-sided operators and their parity
 
-**Proposition.** Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $S_{a,b}=L_aR_b$ be the unsigned sandwich of *The Signed Sandwich on a Bimodule over an Algebra*. Then
+**Proposition.** Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $T_{a,b}=L_aR_b$ be the unsigned sandwich of *The Signed Sandwich on a Bimodule over an Algebra*. Then
 
 $$
-\boxed{\;S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b}\;},
+\boxed{\;T_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,T_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,T_{a,b}\;},
 $$
 
-and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.
+and $T_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $\mathcal{T}^{\alpha}_{a,b}=T_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.
 
-*Proof.* $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary.
+*Proof.* $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $T_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary.
 
-Since $\alpha$ has parity $0$ but acts on odd elements by $-1$, the signed sandwich $S^{\alpha}_{a,b}$ is the unsigned one with the middle factor sign-flipped on the odd part; this is the operator form of the Koszul sign, and it agrees with the composition rule of *The Signed Sandwich on a Bimodule over an Algebra*.
+Since $\alpha$ has parity $0$ but acts on odd elements by $-1$, the signed sandwich $\mathcal{T}^{\alpha}_{a,b}$ is the unsigned one with the middle factor sign-flipped on the odd part; this is the operator form of the Koszul sign, and it agrees with the composition rule of *The Signed Sandwich on a Bimodule over an Algebra*.
 
 ## The Graded Endomorphism Algebra
 
@@ -169,13 +169,13 @@ and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogene
 
 **(c) The matrix algebra with an even/odd grading.** For $A=M_2(k)$, $J=\operatorname{diag}(1,-1)$, $\alpha(X)=JXJ^{-1}$: the graded-commutativity is vacuous because $A$ is not graded-commutative, and the Koszul right action exists only on modules killed by $[A,A]$-type obstructions. The sign rule $\alpha T\alpha^{-1}=(-1)^{\deg T}T$ holds for every homogeneous operator.
 
-**(d) The group algebra of $\mathbb{Z}/2$.** For $A=k[\mathbb{Z}/2]=k\oplus k\epsilon$ with $\epsilon$ odd and $\epsilon^{2}=1$, the algebra is graded-commutative; every graded module is a graded bimodule with $m\cdot\epsilon=(-1)^{\deg m}\epsilon m$, and $R_\epsilon=L_\epsilon\alpha$. The two-sided operators $S_{1,\epsilon}=L_\epsilon\alpha=L^{\alpha}_\epsilon$ are the signed left multiplications of *The Signed Left Multiplication on a Module over an Algebra*.
+**(d) The group algebra of $\mathbb{Z}/2$.** For $A=k[\mathbb{Z}/2]=k\oplus k\epsilon$ with $\epsilon$ odd and $\epsilon^{2}=1$, the algebra is graded-commutative; every graded module is a graded bimodule with $m\cdot\epsilon=(-1)^{\deg m}\epsilon m$, and $R_\epsilon=L_\epsilon\alpha$. The two-sided operators $T_{1,\epsilon}=L_\epsilon\alpha=L^{\alpha}_\epsilon$ are the signed left multiplications of *The Signed Left Multiplication on a Module over an Algebra*.
 
 **(e) A purely even algebra.** If $A=A_{\bar0}$ then every module is graded with $M=M_{\bar0}$, the grade involution is the identity, the Koszul sign is always $+1$, and all the graded statements reduce to the ungraded ones.
 
 ## Summary
 
-A graded algebra $A=A_{\bar0}\oplus A_{\bar1}$ acts on a graded module $M=M_{\bar0}\oplus M_{\bar1}$ with the compatibility $A_iM_j\subseteq M_{i+j}$, equivalently through a grade involution $\alpha$ with $\alpha(am)=\alpha(a)\alpha(m)$; the action is even, sending $A_i$ to the operators of parity $i$. The grading imposes the Koszul sign: for homogeneous $a$, $\alpha L_a\alpha^{-1}=(-1)^{\deg a}L_a$, and for every homogeneous operator $T$, $\alpha T\alpha^{-1}=(-1)^{\deg T}T$. When $A$ is graded-commutative, the sign $R_b(m)=(-1)^{\deg b\deg m}bm$ makes any graded left module a graded bimodule, with $R_b=L_b\alpha^{\deg b}$; without graded-commutativity this right action fails to be associative. The graded endomorphism algebra $\operatorname{End}_R(M)=\operatorname{End}_{\bar0}\oplus\operatorname{End}_{\bar1}$ is a graded algebra on which the grade involution acts by conjugation with eigenvalue $(-1)^{i}$ on $\operatorname{End}_i$, and it carries the graded commutator $[S,T]=ST-(-1)^{\deg S\deg T}TS$, for which the action is a homomorphism of graded algebras. The two-sided sandwiches $S_{a,b}$ have parity $\deg a+\deg b$ and obey the same sign rule.
+A graded algebra $A=A_{\bar0}\oplus A_{\bar1}$ acts on a graded module $M=M_{\bar0}\oplus M_{\bar1}$ with the compatibility $A_iM_j\subseteq M_{i+j}$, equivalently through a grade involution $\alpha$ with $\alpha(am)=\alpha(a)\alpha(m)$; the action is even, sending $A_i$ to the operators of parity $i$. The grading imposes the Koszul sign: for homogeneous $a$, $\alpha L_a\alpha^{-1}=(-1)^{\deg a}L_a$, and for every homogeneous operator $T$, $\alpha T\alpha^{-1}=(-1)^{\deg T}T$. When $A$ is graded-commutative, the sign $R_b(m)=(-1)^{\deg b\deg m}bm$ makes any graded left module a graded bimodule, with $R_b=L_b\alpha^{\deg b}$; without graded-commutativity this right action fails to be associative. The graded endomorphism algebra $\operatorname{End}_R(M)=\operatorname{End}_{\bar0}\oplus\operatorname{End}_{\bar1}$ is a graded algebra on which the grade involution acts by conjugation with eigenvalue $(-1)^{i}$ on $\operatorname{End}_i$, and it carries the graded commutator $[S,T]=ST-(-1)^{\deg S\deg T}TS$, for which the action is a homomorphism of graded algebras. The two-sided sandwiches $T_{a,b}$ have parity $\deg a+\deg b$ and obey the same sign rule.
 
 ## Summary of Notation
 
@@ -189,7 +189,7 @@ A graded algebra $A=A_{\bar0}\oplus A_{\bar1}$ acts on a graded module $M=M_{\ba
 | $L_a$, $L^{\alpha}_a$ | unsigned and signed left multiplications |
 | $R_b(m)=(-1)^{\deg b\deg m}bm$ | Koszul right multiplication on a graded bimodule |
 | $R_b=L_b\alpha^{\deg b}$ | right multiplication in terms of the left one |
-| $S_{a,b}=L_aR_b$ | two-sided operator of parity $\deg a+\deg b$ |
+| $T_{a,b}=L_aR_b$ | two-sided operator of parity $\deg a+\deg b$ |
 | $\alpha T\alpha^{-1}=(-1)^{\deg T}T$ | the sign rule for a homogeneous operator |
 | $\operatorname{End}_i$ | operators shifting degree by $i$ |
 | $[S,T]=ST-(-1)^{\deg S\deg T}TS$ | the graded commutator |

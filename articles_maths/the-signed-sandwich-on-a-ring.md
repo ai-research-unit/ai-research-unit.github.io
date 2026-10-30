@@ -4,9 +4,9 @@
 ## Introduction
 
 A two-sided operator on a ring dresses one element between a left and a right factor: for $a, b \in A$ the **unsigned sandwich** is
-$S_{a,b}(x) = axb$. When the ring carries an automorphism $\alpha$ of order two — the **grade involution** — the sandwich can be twisted in the middle, and the **signed sandwich** is $S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$. The twist is a single substitution of $\alpha(x)$ for $x$, and it is the operator form of the parity sign that the graded algebras carry: an element of odd degree changes sign under $\alpha$, and the sandwich records that sign in the middle factor.
+$\mathcal{T}_{a,b}(x) = axb$. When the ring carries an automorphism $\alpha$ of order two — the **grade involution** — the sandwich can be twisted in the middle, and the **signed sandwich** is $\mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$. The twist is a single substitution of $\alpha(x)$ for $x$, and it is the operator form of the parity sign that the graded algebras carry: an element of odd degree changes sign under $\alpha$, and the sandwich records that sign in the middle factor.
 
-This article defines the two sandwiches, computes how each is built from the one-sided multiplications of *Left and Right Multiplication in a Ring*, and shows the exact relation between them: $S^{\alpha}_{a,b} = S_{a,b}\circ\alpha$, so the signed sandwich is the unsigned one precomposed with the grade involution, and the two coincide when $\alpha = \mathrm{id}$. It then specialises to the **reflections**, the signed sandwiches $S^{\alpha}_{u,u^{-1}}$ by a unit, and determines when such an operator is an involution: exactly when $u\,\alpha(u)$ is central.
+This article defines the two sandwiches, computes how each is built from the one-sided multiplications of *Left and Right Multiplication in a Ring*, and shows the exact relation between them: $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed sandwich is the unsigned one precomposed with the grade involution, and the two coincide when $\alpha = \mathrm{id}$. It then specialises to the **reflections**, the signed sandwiches $\mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit, and determines when such an operator is an involution: exactly when $u\,\alpha(u)$ is central.
 
 The article assumes a ring with a grade involution. No involution of the elements is used; the involution $\sigma$ of a ring and the dagger built from it belong to the `* Theory` and `* Operator Theory` groups of this category, and the Hermitian sandwich, which pairs an element with its dagger, is the corresponding object there. The article stays inside Part I: no distance, norm, form or measure occurs, and the "reflection" is defined algebraically as an operator of order two, without any geometric reading. Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a **grade involution** of $A$, that is, an automorphism with $\alpha^2 = \mathrm{id}$; and $L_a$, $R_b$ are the one-sided multiplications.
 
@@ -17,34 +17,34 @@ The article assumes a ring with a grade involution. No involution of the element
 **Definition.** For $a, b \in A$ the **unsigned sandwich** with parameters $a$ and $b$ is the additive map
 
 $$
-S_{a,b} : A \to A, \qquad S_{a,b}(x) = a\,x\,b .
+\mathcal{T}_{a,b} : A \to A, \qquad \mathcal{T}_{a,b}(x) = a\,x\,b .
 $$
 
-It is the composite $S_{a,b} = L_a \circ R_b = R_b \circ L_a$ of a left multiplication by $a$ and a right multiplication by $b$, and it is **additive** because the multiplications are, while it is **quadratic** in its parameters: it is linear in neither $a$ nor $b$ alone when $A$ is noncommutative, since $S_{aa',b}(x) = a a' x b = S_{a,b}(a'xb)$.
+It is the composite $\mathcal{T}_{a,b} = L_a \circ R_b = R_b \circ L_a$ of a left multiplication by $a$ and a right multiplication by $b$, and it is **additive** because the multiplications are, while it is **quadratic** in its parameters: it is linear in neither $a$ nor $b$ alone when $A$ is noncommutative, since $\mathcal{T}_{aa',b}(x) = a a' x b = \mathcal{T}_{a,b}(a'xb)$.
 
 **Proposition.** For all $a, b, c, d \in A$,
 
 $$
-S_{a,b} \circ S_{c,d} = S_{ac,\,db}, \qquad S_{a,b}(1) = ab .
+\mathcal{T}_{a,b} \circ \mathcal{T}_{c,d} = \mathcal{T}_{ac,\,db}, \qquad \mathcal{T}_{a,b}(1) = ab .
 $$
 
-The vanishing of the operator is the two-sided condition $S_{a,b} = 0 \iff aAb = 0$, and its kernel is the additive subgroup $\ker S_{a,b} = \{x : axb = 0\}$, which is not in general an ideal.
+The vanishing of the operator is the two-sided condition $\mathcal{T}_{a,b} = 0 \iff aAb = 0$, and its kernel is the additive subgroup $\ker \mathcal{T}_{a,b} = \{x : axb = 0\}$, which is not in general an ideal.
 
-**Proof.** Composition and the value at the unit are immediate from associativity and the definition. $S_{a,b} = 0$ says $a x b = 0$ for every $x$, which is the two-sided condition $aAb = 0$; the kernel is the definition. In a noncommutative ring the single product $ab$ does not control the operator: in $M_2(k)$ take $a = E_{11}$ and $b = E_{22}$, so that $ab = 0$, yet $aE_{12}b = E_{12} \neq 0$ and $S_{a,b} \neq 0$.
+**Proof.** Composition and the value at the unit are immediate from associativity and the definition. $\mathcal{T}_{a,b} = 0$ says $a x b = 0$ for every $x$, which is the two-sided condition $aAb = 0$; the kernel is the definition. In a noncommutative ring the single product $ab$ does not control the operator: in $M_2(k)$ take $a = E_{11}$ and $b = E_{22}$, so that $ab = 0$, yet $aE_{12}b = E_{12} \neq 0$ and $\mathcal{T}_{a,b} \neq 0$.
 
 ### The generated operators
 
-The unsigned sandwiches are exactly the products of one left and one right multiplication, and the composition law $S_{a,b}S_{c,d} = S_{ac,db}$ exhibits them as a monoid isomorphic to $A \times A^{\mathrm{opp}}$ acting on $A$.
+The unsigned sandwiches are exactly the products of one left and one right multiplication, and the composition law $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ exhibits them as a monoid isomorphic to $A \times A^{\mathrm{opp}}$ acting on $A$.
 
-**Proposition.** The sandwiches form a submonoid of $\operatorname{End}(A)$ under composition, with identity $S_{1,1} = \mathrm{id}$, and $S_{a,b}$ is invertible exactly when $a$ and $b$ are units, in which case
+**Proposition.** The sandwiches form a submonoid of $\operatorname{End}(A)$ under composition, with identity $\mathcal{T}_{1,1} = \mathrm{id}$, and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, in which case
 
 $$
-S_{a,b}^{-1} = S_{a^{-1},\,b^{-1}} .
+\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{a^{-1},\,b^{-1}} .
 $$
 
-**Proof.** The composition law is closure, and $S_{1,1}(x) = x$. For invertibility, $S_{a,b}S_{a^{-1},b^{-1}} = S_{1,1} = S_{a^{-1},b^{-1}}S_{a,b}$ when $a, b$ are units; conversely if $S_{a,b}$ is invertible then $S_{a,b}(A) = aAb = A$, which forces $a$ and $b$ to be units (take $1$ in the image: $a x_1 b = 1 = a x_2 b$ gives left and right inverses).
+**Proof.** The composition law is closure, and $\mathcal{T}_{1,1}(x) = x$. For invertibility, $\mathcal{T}_{a,b}\mathcal{T}_{a^{-1},b^{-1}} = \mathcal{T}_{1,1} = \mathcal{T}_{a^{-1},b^{-1}}\mathcal{T}_{a,b}$ when $a, b$ are units; conversely if $\mathcal{T}_{a,b}$ is invertible then $\mathcal{T}_{a,b}(A) = aAb = A$, which forces $a$ and $b$ to be units (take $1$ in the image: $a x_1 b = 1 = a x_2 b$ gives left and right inverses).
 
-**Remark.** The diagonal sandwich $S_{u,u^{-1}}$ with $u$ a unit is the **inner conjugation** $\operatorname{conj}_u(x) = uxu^{-1}$ of *Inner Automorphisms of a Ring*, and the composition law reads $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. The non-diagonal sandwiches, with $b \neq a^{-1}$, are the general two-sided operators and are not automorphisms.
+**Remark.** The diagonal sandwich $\mathcal{T}_{u,u^{-1}}$ with $u$ a unit is the **inner conjugation** $\operatorname{conj}_u(x) = uxu^{-1}$ of *Inner Automorphisms of a Ring*, and the composition law reads $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. The non-diagonal sandwiches, with $b \neq a^{-1}$, are the general two-sided operators and are not automorphisms.
 
 ## The Grade Involution
 
@@ -69,12 +69,12 @@ the **even** and **odd** parts, defined whenever $2$ is invertible in $A$.
 **Proposition.** For all $a, b \in A$,
 
 $$
-\alpha\,L_a\,\alpha^{-1} = L_{\alpha(a)}, \qquad \alpha\,R_b\,\alpha^{-1} = R_{\alpha(b)}, \qquad \alpha\,S_{a,b}\,\alpha^{-1} = S_{\alpha(a),\alpha(b)} .
+\alpha\,L_a\,\alpha^{-1} = L_{\alpha(a)}, \qquad \alpha\,R_b\,\alpha^{-1} = R_{\alpha(b)}, \qquad \alpha\,\mathcal{T}_{a,b}\,\alpha^{-1} = \mathcal{T}_{\alpha(a),\alpha(b)} .
 $$
 
 **Proof.** $\alpha(L_a(\alpha^{-1}(x))) = \alpha(a\,\alpha^{-1}(x)) = \alpha(a)x = L_{\alpha(a)}(x)$; the right case is the mirror, and the sandwich case is the two together.
 
-**Corollary.** The grade involution acts on the monoid of sandwiches by the simultaneous substitution $a \mapsto \alpha(a)$, $b \mapsto \alpha(b)$; it fixes the sandwich $S_{a,b}$ exactly when $\alpha(a) = a$ and $\alpha(b) = b$, that is, when both parameters are even.
+**Corollary.** The grade involution acts on the monoid of sandwiches by the simultaneous substitution $a \mapsto \alpha(a)$, $b \mapsto \alpha(b)$; it fixes the sandwich $\mathcal{T}_{a,b}$ exactly when $\alpha(a) = a$ and $\alpha(b) = b$, that is, when both parameters are even.
 
 ## The Signed Sandwich
 
@@ -83,54 +83,54 @@ $$
 **Definition.** For $a, b \in A$ the **signed sandwich** is
 
 $$
-S^{\alpha}_{a,b} : A \to A, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b .
+\mathcal{T}^{\alpha}_{a,b} : A \to A, \qquad \mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b .
 $$
 
-It is the composite $S^{\alpha}_{a,b} = L_a \circ R_b \circ \alpha = S_{a,b}\circ\alpha$ of the unsigned sandwich with the grade involution, and it is additive.
+It is the composite $\mathcal{T}^{\alpha}_{a,b} = L_a \circ R_b \circ \alpha = \mathcal{T}_{a,b}\circ\alpha$ of the unsigned sandwich with the grade involution, and it is additive.
 
 **Theorem (the signed sandwich is the unsigned sandwich at $\alpha$).** For all $a, b \in A$,
 
 $$
-\boxed{\;S^{\alpha}_{a,b} = S_{a,b} \circ \alpha, \qquad\text{and}\qquad S^{\alpha}_{a,b} = \alpha \circ S_{\alpha^{-1}(a),\alpha^{-1}(b)}\;} .
+\boxed{\;\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b} \circ \alpha, \qquad\text{and}\qquad \mathcal{T}^{\alpha}_{a,b} = \alpha \circ \mathcal{T}_{\alpha^{-1}(a),\alpha^{-1}(b)}\;} .
 $$
 
-In particular the two sandwiches coincide exactly when $\alpha = \mathrm{id}$, and $S^{\alpha}_{a,b}(x) = S_{a,b}(\alpha(x))$ for every $x$.
+In particular the two sandwiches coincide exactly when $\alpha = \mathrm{id}$, and $\mathcal{T}^{\alpha}_{a,b}(x) = \mathcal{T}_{a,b}(\alpha(x))$ for every $x$.
 
-**Proof.** $S_{a,b}(\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$, which is the first identity. For the second, $\alpha(S_{\alpha^{-1}(a),\alpha^{-1}(b)}(x)) = \alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b)) = a\,\alpha(x)\,b$.
+**Proof.** $\mathcal{T}_{a,b}(\alpha(x)) = a\alpha(x)b = \mathcal{T}^{\alpha}_{a,b}(x)$, which is the first identity. For the second, $\alpha(\mathcal{T}_{\alpha^{-1}(a),\alpha^{-1}(b)}(x)) = \alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b)) = a\,\alpha(x)\,b$.
 
-**Corollary (linearity in the parameters up to the sign).** The signed sandwich is linear in $a$ and in $b$ as additive maps, $S^{\alpha}_{a+a',b} = S^{\alpha}_{a,b} + S^{\alpha}_{a',b}$, and it is $\alpha$-twisted in the **middle** argument: it is additive there, and it is the unsigned sandwich that carries the twist, not the parameters.
+**Corollary (linearity in the parameters up to the sign).** The signed sandwich is linear in $a$ and in $b$ as additive maps, $\mathcal{T}^{\alpha}_{a+a',b} = \mathcal{T}^{\alpha}_{a,b} + \mathcal{T}^{\alpha}_{a',b}$, and it is $\alpha$-twisted in the **middle** argument: it is additive there, and it is the unsigned sandwich that carries the twist, not the parameters.
 
 ### Composition
 
 **Proposition.** For all $a, b, c, d \in A$,
 
 $$
-\boxed{\;S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)}\;} .
+\boxed{\;\mathcal{T}^{\alpha}_{a,b} \circ \mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\,\alpha(c),\; b\,\alpha(d)}\;} .
 $$
 
-**Proof.** Using $S^{\alpha}_{c,d} = S_{c,d}\alpha$ and the commutation $\alpha S_{c,d} = S_{\alpha(c),\alpha(d)}\alpha$ of the previous section, the composite is $S_{a,b}\alpha S_{c,d}\alpha = S_{a,b}S_{\alpha(c),\alpha(d)}\alpha^2 = S_{a\alpha(c),\,b\alpha(d)}$, and this is $S^{\alpha}_{a\alpha(c),b\alpha(d)}$ by the definition.
+**Proof.** Using $\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}_{c,d}\alpha$ and the commutation $\alpha \mathcal{T}_{c,d} = \mathcal{T}_{\alpha(c),\alpha(d)}\alpha$ of the previous section, the composite is $\mathcal{T}_{a,b}\alpha \mathcal{T}_{c,d}\alpha = \mathcal{T}_{a,b}\mathcal{T}_{\alpha(c),\alpha(d)}\alpha^2 = \mathcal{T}_{a\alpha(c),\,b\alpha(d)}$, and this is $\mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$ by the definition.
 
-**Corollary.** The signed sandwiches form a submonoid of $\operatorname{End}(A)$, with identity $S^{\alpha}_{1,1} = \alpha$. The monoid law is not the sandwich law of the unsigned case: the composite of $S^{\alpha}_{a,b}$ and $S^{\alpha}_{c,d}$ inserts $\alpha$ into the parameters, which is the operator form of the sign rule the grading imposes.
+**Corollary.** The signed sandwiches form a submonoid of $\operatorname{End}(A)$, with identity $\mathcal{T}^{\alpha}_{1,1} = \alpha$. The monoid law is not the sandwich law of the unsigned case: the composite of $\mathcal{T}^{\alpha}_{a,b}$ and $\mathcal{T}^{\alpha}_{c,d}$ inserts $\alpha$ into the parameters, which is the operator form of the sign rule the grading imposes.
 
 **Proposition (the diagonal case).** For a unit $u$,
 
 $$
-S^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1},
+\mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1},
 $$
 
 the **signed inner conjugation** by $u$, and
 
 $$
-\bigl(S^{\alpha}_{u,u^{-1}}\bigr)^2 = S^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})} = \operatorname{conj}_{u\alpha(u)} .
+\bigl(\mathcal{T}^{\alpha}_{u,u^{-1}}\bigr)^2 = \mathcal{T}^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})} = \operatorname{conj}_{u\alpha(u)} .
 $$
 
-**Proof.** The first display is the definition with $b=u^{-1}$. The square follows from the composition law: $S^{\alpha}_{u,u^{-1}}\circ S^{\alpha}_{u,u^{-1}} = S^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})}$, and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ because $\alpha(u^{-1}) = \alpha(u)^{-1}$, so the composite is the inner conjugation by $u\alpha(u)$.
+**Proof.** The first display is the definition with $b=u^{-1}$. The square follows from the composition law: $\mathcal{T}^{\alpha}_{u,u^{-1}}\circ \mathcal{T}^{\alpha}_{u,u^{-1}} = \mathcal{T}^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})}$, and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ because $\alpha(u^{-1}) = \alpha(u)^{-1}$, so the composite is the inner conjugation by $u\alpha(u)$.
 
 ## Reflections Realised by the Signed Sandwich
 
 ### Definition and the involutive case
 
-**Definition.** A **reflection** of the graded ring $(A,\alpha)$ is a signed two-sided operator $r_u = S^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^2 = \mathrm{id}$.
+**Definition.** A **reflection** of the graded ring $(A,\alpha)$ is a signed two-sided operator $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^2 = \mathrm{id}$.
 
 **Theorem.** Let $u \in A^\times$. The signed inner conjugation $r_u$ is an involution if and only if $u\,\alpha(u)$ is central; it is then the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two, and it can be written
 
@@ -144,7 +144,7 @@ $$
 
 ### Examples
 
-**(a) The trivial grade involution.** If $\alpha = \mathrm{id}$, then $S^{\alpha}_{a,b} = S_{a,b}$ and $r_u = \operatorname{conj}_u$; here $r_u^2 = \operatorname{conj}_{u^2}$, which is the identity exactly when $u^2 \in Z(A)$, the same criterion as in the general case with $\alpha(u) = u$.
+**(a) The trivial grade involution.** If $\alpha = \mathrm{id}$, then $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}$ and $r_u = \operatorname{conj}_u$; here $r_u^2 = \operatorname{conj}_{u^2}$, which is the identity exactly when $u^2 \in Z(A)$, the same criterion as in the general case with $\alpha(u) = u$.
 
 **(b) The matrix ring with an even/odd grading.** Let $A = M_2(k)$ and let $\alpha$ be the automorphism $X \mapsto JXJ^{-1}$ with $J = \operatorname{diag}(1,-1)$, so that $\alpha^2 = \mathrm{id}$ and the even part is the diagonal matrices and the odd part the off-diagonal ones. For the unit $u = E_{12} + E_{21}$ one has $\alpha(u) = -u$, so $u\alpha(u) = -u^2$; and $u^2 = E_{11} + E_{22} = I$ is central, so $u\alpha(u) = -I$ is central and $r_u$ is an involution. Explicitly $r_u(x) = u\alpha(x)u^{-1}$, and since $u^{-1} = u$ and $\alpha(u)=-u$, one computes $r_u^2(x) = u\alpha(u)x(u\alpha(u))^{-1} = (-I)x(-I)^{-1} = x$.
 
@@ -152,9 +152,9 @@ $$
 
 ## Summary
 
-For a ring $A$ with a grade involution $\alpha$, the **unsigned sandwich** is $S_{a,b}(x) = axb = L_aR_b$, with composition $S_{a,b}S_{c,d} = S_{ac,db}$ and inverses $S_{a^{-1},b^{-1}}$ on the units, and the **signed sandwich** is $S^{\alpha}_{a,b}(x) = a\alpha(x)b$. The two are related by $S^{\alpha}_{a,b} = S_{a,b}\circ\alpha$, so the signed sandwich is the unsigned one at the grade-involution of its argument, and they coincide exactly when $\alpha = \mathrm{id}$. The signed sandwiches compose as $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),b\alpha(d)}$, a monoid law with identity $\alpha$ that inserts the grade involution into the parameters, which is the sign rule of the grading.
+For a ring $A$ with a grade involution $\alpha$, the **unsigned sandwich** is $\mathcal{T}_{a,b}(x) = axb = L_aR_b$, with composition $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and inverses $\mathcal{T}_{a^{-1},b^{-1}}$ on the units, and the **signed sandwich** is $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$. The two are related by $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed sandwich is the unsigned one at the grade-involution of its argument, and they coincide exactly when $\alpha = \mathrm{id}$. The signed sandwiches compose as $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$, a monoid law with identity $\alpha$ that inserts the grade involution into the parameters, which is the sign rule of the grading.
 
-The diagonal signed sandwich $r_u = S^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x \mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$. It is therefore an involution, a **reflection**, exactly when $u\,\alpha(u)$ is central; this covers the case $u^2 \in Z(A)$ for either parity of $u$, and it fails in the degenerate case of a non-central $u\alpha(u)$, where the operator is an automorphism of infinite order. No involution of the elements, no dagger and no form occurs; the Hermitian sandwich, in which the right factor is the dagger of the left, is the corresponding construction of the `* Operator Theory` group of this category.
+The diagonal signed sandwich $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x \mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$. It is therefore an involution, a **reflection**, exactly when $u\,\alpha(u)$ is central; this covers the case $u^2 \in Z(A)$ for either parity of $u$, and it fails in the degenerate case of a non-central $u\alpha(u)$, where the operator is an automorphism of infinite order. No involution of the elements, no dagger and no form occurs; the Hermitian sandwich, in which the right factor is the dagger of the left, is the corresponding construction of the `* Operator Theory` group of this category.
 
 ## Summary of Notation
 
@@ -162,12 +162,12 @@ The diagonal signed sandwich $r_u = S^{\alpha}_{u,u^{-1}}$ is the signed inner c
 |---|---|
 | $A$ | Ring with $1 \neq 0$, not assumed commutative |
 | $\alpha$ | Grade involution, an automorphism with $\alpha^2 = \mathrm{id}$ |
-| $S_{a,b}(x) = axb$ | Unsigned sandwich, the two-sided operator $L_aR_b$ |
-| $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ | Signed sandwich |
-| $S^{\alpha}_{a,b} = S_{a,b}\circ\alpha$ | The signed sandwich is the unsigned one at $\alpha$ |
-| $S_{a,b}S_{c,d} = S_{ac,db}$ | Composition of unsigned sandwiches |
-| $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),b\alpha(d)}$ | Composition of signed sandwiches |
-| $r_u = S^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ | Reflection, signed inner conjugation by a unit |
+| $\mathcal{T}_{a,b}(x) = axb$ | Unsigned sandwich, the two-sided operator $L_aR_b$ |
+| $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ | Signed sandwich |
+| $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$ | The signed sandwich is the unsigned one at $\alpha$ |
+| $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ | Composition of unsigned sandwiches |
+| $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$ | Composition of signed sandwiches |
+| $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ | Reflection, signed inner conjugation by a unit |
 | $r_u^2 = \operatorname{conj}_{u\alpha(u)}$ | A reflection is an involution iff $u\alpha(u) \in Z(A)$ |
 | $A_{\bar 0}, A_{\bar 1}$ | Even and odd parts of the grading by $\alpha$ |
 

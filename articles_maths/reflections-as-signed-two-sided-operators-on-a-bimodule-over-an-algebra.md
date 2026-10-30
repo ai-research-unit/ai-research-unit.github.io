@@ -3,9 +3,9 @@
 
 ## Introduction
 
-A reflection of a graded bimodule is a two-sided operator of order two whose middle factor carries the grade involution. *The Signed Sandwich on a Bimodule over an Algebra* defined the operator $r_u=S^{\alpha}_{u,u^{-1}}$ and found that its square is the inner conjugation by $u\alpha(u)$; this article reads the construction backwards. Given an operator of order two that is built from a unit and the grade involution, which unit realises it, and when is the operator genuinely an involution? The answer pairs the reflections with the **elements acting by an involution**, that is, the units $u$ with $u\alpha(u)$ in the centralizer of the bimodule, and it fails in two ways: when $u\alpha(u)$ is not in that centralizer the operator has infinite order, and when the bimodule is not faithful different units realise the same reflection.
+A reflection of a graded bimodule is a two-sided operator of order two whose middle factor carries the grade involution. *The Signed Sandwich on a Bimodule over an Algebra* defined the operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ and found that its square is the inner conjugation by $u\alpha(u)$; this article reads the construction backwards. Given an operator of order two that is built from a unit and the grade involution, which unit realises it, and when is the operator genuinely an involution? The answer pairs the reflections with the **elements acting by an involution**, that is, the units $u$ with $u\alpha(u)$ in the centralizer of the bimodule, and it fails in two ways: when $u\alpha(u)$ is not in that centralizer the operator has infinite order, and when the bimodule is not faithful different units realise the same reflection.
 
-The article assumes the graded bimodule of *The Signed Sandwich on a Bimodule over an Algebra*, and the operator layer of *Left and Right Multiplication of a Module* and *Module Endomorphisms*. The signed operators built from the involution of the elements and from the adjoint belong to the `* Operator Theory` group and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and *reflection* means an operator of order two without any geometric reading. Throughout, $A$ is a unital associative $R$-algebra with a grade involution $\alpha$, ${}_A M_A$ is a graded $(A,A)$-bimodule, $C_A(M)=\{w \in A : wx=xw \text{ for all } x \in M\}$ is the centralizer of the bimodule, and $r_u=S^{\alpha}_{u,u^{-1}}$.
+The article assumes the graded bimodule of *The Signed Sandwich on a Bimodule over an Algebra*, and the operator layer of *Left and Right Multiplication of a Module* and *Module Endomorphisms*. The signed operators built from the involution of the elements and from the adjoint belong to the `* Operator Theory` group and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and *reflection* means an operator of order two without any geometric reading. Throughout, $A$ is a unital associative $R$-algebra with a grade involution $\alpha$, ${}_A M_A$ is a graded $(A,A)$-bimodule, $C_A(M)=\{w \in A : wx=xw \text{ for all } x \in M\}$ is the centralizer of the bimodule, and $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$.
 
 ## Reflections and the Signed Sandwich
 
@@ -14,7 +14,7 @@ The article assumes the graded bimodule of *The Signed Sandwich on a Bimodule ov
 **Definition.** Let $u \in A^{\times}$. The **signed inner conjugation** by $u$ is the operator
 
 $$
-r_u=S^{\alpha}_{u,u^{-1}} : M \to M, \qquad r_u(x)=u\,\alpha(x)\,u^{-1}.
+r_u=\mathcal{T}^{\alpha}_{u,u^{-1}} : M \to M, \qquad r_u(x)=u\,\alpha(x)\,u^{-1}.
 $$
 
 A **reflection** of the graded bimodule is a signed two-sided operator $r_u$ that is an involution, $r_u^{2}=\mathrm{id}_M$.
@@ -33,7 +33,7 @@ $$
 
 where $\operatorname{conj}_w(x)=wxw^{-1}$. The product of two reflections is therefore an inner conjugation, and it is a reflection only when it can be rewritten in the form $r_w$; in general the reflections are not closed under composition.
 
-*Proof.* The inverse is the corollary on invertibility of *The Signed Sandwich on a Bimodule over an Algebra*. For the product, the composition law gives $r_ur_v=S_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup.
+*Proof.* The inverse is the corollary on invertibility of *The Signed Sandwich on a Bimodule over an Algebra*. For the product, the composition law gives $r_ur_v=\mathcal{T}_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $\mathcal{T}_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup.
 
 ### The criterion
 
@@ -162,7 +162,7 @@ For a graded bimodule ${}_A M_A$ with grade involution $\alpha$, the signed inne
 | $A$ | unital associative $R$-algebra with grade involution $\alpha$ |
 | ${}_A M_A$ | graded $(A,A)$-bimodule |
 | $\alpha$ | grade involution, $\alpha^{2}=\mathrm{id}$, compatible with the bimodule |
-| $r_u=S^{\alpha}_{u,u^{-1}}$ | signed inner conjugation by a unit, $x\mapsto u\alpha(x)u^{-1}$ |
+| $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ | signed inner conjugation by a unit, $x\mapsto u\alpha(x)u^{-1}$ |
 | $r_u^{2}=\operatorname{conj}_{u\alpha(u)}$ | the square is an inner conjugation |
 | $C_A(M)$ | centralizer of the bimodule, $\{w : wx=xw \text{ for all } x\}$ |
 | $C_A(M)^{\times}$ | the units of $C_A(M)$, a subgroup of $A^{\times}$ |

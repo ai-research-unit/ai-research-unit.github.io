@@ -94,7 +94,7 @@ $$
 j=\frac{5-1}{2}=2 .
 $$
 
-This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_5P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=5$ it gives $2$ and the column has $2j+1=5$ components.
+This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_5P_l$. For $n=2$ it gives $s=\tfrac12$ and the column is the two-component spinor. For $n=5$ it gives $2$ and the column has $2s+1=5$ components.
 
 The column has five entries. Under the chain, $J_3$ has weights $2,1,0,-1,-2$, so the column is the highest-weight-$2$ space. A balanced chiral split does not exist; a split $2+3$ requires an extra sign function.
 
@@ -118,7 +118,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 | $\psi^{(l)}$ | The column of index $l$, a spinor |
 | $t_k$ | A gauge parameter |
 | $J_3$ | The chain generator |
-| $j$ | The spin, $(5-1)/2$ |
+| $s$ | The spin, $(5-1)/2$ |
 
 ## Further Reading
 

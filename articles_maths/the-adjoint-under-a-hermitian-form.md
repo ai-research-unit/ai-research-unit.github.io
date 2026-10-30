@@ -124,26 +124,26 @@ $$
 
 *Proof.* The compatibility is exactly $h(xz,y) = h(z,x^{*}y) = h(z,m_{x^{*}}y)$, and $m_{x^{*}}$ is $R$-linear because the product is linear in its first slot.
 
-**Theorem (the conjugate sandwich).** Let $h$ be compatible and nonsingular, and let $S_{a,b}(z) = az^{*}b$. Then $S_{a,b}$ is $\varsigma$-semilinear and
+**Theorem (the conjugate sandwich).** Let $h$ be compatible and nonsingular, and let $\mathcal{T}_{a,b}(z) = az^{*}b$. Then $\mathcal{T}_{a,b}$ is $\varsigma$-semilinear and
 
 $$
-S_{a,b}^{\dagger} = S_{b,a} .
+\mathcal{T}_{a,b}^{\dagger} = \mathcal{T}_{b,a} .
 $$
 
-*Proof.* Iterating the two forms of the compatibility, $h(xy,z) = h(y,x^{*}z)$ and $h(x,yz) = h(y^{*}x,z)$, together with the Hermitian property, gives $h(az^{*}b,y) = \varsigma\bigl(h(z,by^{*}a)\bigr) = \varsigma\bigl(h(z,S_{b,a}y)\bigr)$; this is the computation of *The Sesquilinear Adjoint Operator*, §*The One-Sided Multiplications* read for the general form $h$. The semilinearity in $z$ is that of the involution.
+*Proof.* Iterating the two forms of the compatibility, $h(xy,z) = h(y,x^{*}z)$ and $h(x,yz) = h(y^{*}x,z)$, together with the Hermitian property, gives $h(az^{*}b,y) = \varsigma\bigl(h(z,by^{*}a)\bigr) = \varsigma\bigl(h(z,\mathcal{T}_{b,a}y)\bigr)$; this is the computation of *The Sesquilinear Adjoint Operator*, §*The One-Sided Multiplications* read for the general form $h$. The semilinearity in $z$ is that of the involution.
 
-**Corollary (the conjugate left multiplication).** Let $\Lambda_{x}(z) = x\star z = xz^{*} = S_{x,1}(z)$ be the multiplication by the derived product. Then
+**Corollary (the conjugate left multiplication).** Let $\Lambda_{x}(z) = x\star z = xz^{*} = \mathcal{T}_{x,1}(z)$ be the multiplication by the derived product. Then
 
 $$
-\Lambda_{x}^{\dagger}(y) = S_{1,x}(y) = y^{*}x ,
+\Lambda_{x}^{\dagger}(y) = \mathcal{T}_{1,x}(y) = y^{*}x ,
 $$
 
 so the adjoint of a one-sided multiplication in the derived product is a conjugate **sandwich** and not another one-sided multiplication: the family of the one-sided multiplications is not stable under the adjoint.
 
-**Corollary (the right multiplication).** Let $R_{b}(z) = zb^{*}$, so that $R_{b} = (*)\circ S_{b,1}$ and $R_{b^{*}} = S_{1,b}\circ (*)$. The involution is self-adjoint, $(*)^{\dagger} = *$, so
+**Corollary (the right multiplication).** Let $R_{b}(z) = zb^{*}$, so that $R_{b} = (*)\circ \mathcal{T}_{b,1}$ and $R_{b^{*}} = \mathcal{T}_{1,b}\circ (*)$. The involution is self-adjoint, $(*)^{\dagger} = *$, so
 
 $$
-R_{b}^{\dagger} = S_{b,1}^{\dagger}\circ (*)^{\dagger} = S_{1,b}\circ * = R_{b^{*}} ,
+R_{b}^{\dagger} = \mathcal{T}_{b,1}^{\dagger}\circ (*)^{\dagger} = \mathcal{T}_{1,b}\circ * = R_{b^{*}} ,
 $$
 
 and the right multiplication is adjoint to the right multiplication by the image of the parameter under the involution.

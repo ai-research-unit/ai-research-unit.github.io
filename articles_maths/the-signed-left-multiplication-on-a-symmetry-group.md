@@ -89,7 +89,7 @@ and it is a **left action up to the grade involution**: $\Lambda^{\alpha}_a\Lamb
 
 **Proof.** Compose $\Lambda^{\alpha}_a$ with $\Lambda^{\alpha}_{\alpha(a)^{-1}}$ and use the first composition rule: $L_{a\,\alpha(\alpha(a)^{-1})} = L_{a\,a^{-1}} = L_e = \mathrm{id}$, since $\alpha^2=\mathrm{id}$; the inverse is thus the stated signed operator. The non-homomorphism is immediate from the same rule: the parameter of the composite is $a\alpha(b)$, not $ab$.
 
-**Remark (the contrast with the sandwich).** The signed **sandwich** $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ is closed under composition, $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),\alpha(d)b}$, because the right factor supplies the second half of the parameter; the signed **left** multiplication has no such factor, and its composite collapses to the unsigned layer. This is the operator form of the fact that a reflection needs two sides: the one-sided operator is not an involution of the space, and the two-sided one is.
+**Remark (the contrast with the sandwich).** The signed **sandwich** $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ is closed under composition, $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),\alpha(d)b}$, because the right factor supplies the second half of the parameter; the signed **left** multiplication has no such factor, and its composite collapses to the unsigned layer. This is the operator form of the fact that a reflection needs two sides: the one-sided operator is not an involution of the space, and the two-sided one is.
 
 ## The Inverse and the Fixed Elements
 

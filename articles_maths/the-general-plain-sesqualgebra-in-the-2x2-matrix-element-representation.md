@@ -64,7 +64,7 @@ $$
 
 the two groupings of the product being $(X\star Y)\star Z=XY^{\dagger}Z^{\dagger}$ and $X\star(Y\star Z)=XZY^{\dagger}$.
 
-**The sandwich, the commutator and the symmetrised product.** The sandwich operator $S_{\tilde{Q}_1,\tilde{Q}_2}$ is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, the commutator is the antisymmetric part $X\mapsto XY^{\dagger}-YX^{\dagger}$, and the symmetrised product is $\tfrac12(XY^{\dagger}+YX^{\dagger})$, whose diagonal is the Hermitian part of $XY^{\dagger}$. The rank of an element is the rank of its matrix, and the rank of a sandwich is at most the smaller of the ranks of its two parameters.
+**The sandwich, the commutator and the symmetrised product.** The sandwich operator $\mathcal{T}_{\tilde{Q}_1,\tilde{Q}_2}$ is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, the commutator is the antisymmetric part $X\mapsto XY^{\dagger}-YX^{\dagger}$, and the symmetrised product is $\tfrac12(XY^{\dagger}+YX^{\dagger})$, whose diagonal is the Hermitian part of $XY^{\dagger}$. The rank of an element is the rank of its matrix, and the rank of a sandwich is at most the smaller of the ranks of its two parameters.
 
 **The idempotents.** The idempotents of the multiplication are the **Hermitian idempotents**: $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ is $\mathsf{M}_2(\tilde\Pi)\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)$, that is $\mathsf{M}_2(\tilde\Pi)$ is Hermitian of square itself. Their matrix images are $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$; the rank-one ones form the complex projective line $\mathbb{CP}^{1}\cong S^{2}$.
 
@@ -92,7 +92,7 @@ The model collects the objects of the group in one dictionary.
 | idempotents of the multiplication | the Hermitian idempotents; their matrix images the orthogonal projections, the rank-one ones the projective line $\mathbb{CP}^{1}$ |
 | simplicity | $M_2(\mathbb{C})$ simple, centre $\mathbb{C}I$ |
 | left and right multiplications | $Y\mapsto AY^{\dagger}$, $Y\mapsto YA^{\dagger}$ |
-| sandwich $S_{\tilde{Q}_1,\tilde{Q}_2}$ | $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$ |
+| sandwich $\mathcal{T}_{\tilde{Q}_1,\tilde{Q}_2}$ | $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$ |
 | commutator $[\tilde{Q}_1,\tilde{Q}_2]_\varsigma$ | $XY^{\dagger}-YX^{\dagger}$ |
 | symmetrised product $\tilde{Q}_1\circ\tilde{Q}_2$ | $\tfrac12(XY^{\dagger}+YX^{\dagger})$ |
 | norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ | $\det \mathsf{M}_2(\tilde{Q})$ |

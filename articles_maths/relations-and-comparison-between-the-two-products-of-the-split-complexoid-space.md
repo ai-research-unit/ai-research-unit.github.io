@@ -190,7 +190,7 @@ The transpose keeps the parameter and the adjoint conjugates it, so the transpos
 
 **Proof.** For the first pair, $\langle QX,Y\rangle=QXY$ and $\langle X,QY\rangle=XQY$ are equal because the ring is commutative, so $L^{\mathrm{alg}}_{Q}$ is its own transpose; and $\langle QX,Y\rangle_{*}=QX\bar Y$ while $\langle X,\bar QY\rangle_{*}=X\overline{\bar QY}=XQ\bar Y$, so the adjoint of $L^{\mathrm{alg}}_{Q}$ is $L^{\mathrm{alg}}_{\bar Q}$. For the second pair, $\langle X\bar Q,Y\rangle=X\bar QY$ and $\langle X,\bar QY\rangle=X\bar QY$, so the transpose of $R_{Q}$ is $L^{\mathrm{alg}}_{\bar Q}$; and $\langle X\bar Q,Y\rangle_{*}=X\bar Q\bar Y$ while $\langle X,QY\rangle_{*}=X\bar Q\bar Y$, so the adjoint of $R_{Q}$ is $L^{\mathrm{alg}}_{Q}$. The two agree exactly at $Q=\bar Q$, that is at the real $Q$.
 
-**Remark (the conjugate-linear family).** The sesqualgebra left multiplication $L_{Q}(X)=Q\bar X$ is $\bar\cdot$-semilinear and self-adjoint for $\langle\cdot,\cdot\rangle_{*}$, and the two projections onto the idempotent lines are mutually adjoint, $S_{\Pi_1,\Pi_2}^{\dagger}=S_{\Pi_2,\Pi_1}$; the adjoints of the one-sided multiplications and of the sandwich are computed in *The Sesquilinear Product of the Split-Complexoid Space*.
+**Remark (the conjugate-linear family).** The sesqualgebra left multiplication $L_{Q}(X)=Q\bar X$ is $\bar\cdot$-semilinear and self-adjoint for $\langle\cdot,\cdot\rangle_{*}$, and the two projections onto the idempotent lines are mutually adjoint, $\mathcal{T}_{\Pi_1,\Pi_2}^{\dagger}=\mathcal{T}_{\Pi_2,\Pi_1}$; the adjoints of the one-sided multiplications and of the sandwich are computed in *The Sesquilinear Product of the Split-Complexoid Space*.
 
 ## Summary
 

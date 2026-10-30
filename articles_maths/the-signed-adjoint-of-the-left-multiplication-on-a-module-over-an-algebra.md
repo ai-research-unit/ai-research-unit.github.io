@@ -17,7 +17,7 @@ $$
 \boxed{\;\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma\;} .
 $$
 
-*Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
+*Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=\mathcal{T}^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(\mathcal{T}^{\alpha}_{a,1}\bigr)^{*}=\mathcal{T}^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $\mathcal{T}^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
 
 **Proof (direct).** Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and *The Adjoint of a Sandwich on a Bimodule over an Algebra* gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of *The Signed Left Multiplication on a Module over an Algebra*.
 
@@ -44,18 +44,18 @@ $$
 **Proposition.** For all $a,b \in A$ the signed sandwich factors through the signed left multiplication,
 
 $$
-S^{\alpha}_{a,b}=L^{\alpha}_a\circ R_{\alpha(b)}, \qquad L^{\alpha}_a=S^{\alpha}_{a,1}, \qquad R^{\alpha}_b:=S^{\alpha}_{1,b} .
+\mathcal{T}^{\alpha}_{a,b}=L^{\alpha}_a\circ R_{\alpha(b)}, \qquad L^{\alpha}_a=\mathcal{T}^{\alpha}_{a,1}, \qquad R^{\alpha}_b:=\mathcal{T}^{\alpha}_{1,b} .
 $$
 
-*Proof.* $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=S^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices.
+*Proof.* $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=\mathcal{T}^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices.
 
 **Corollary.** The adjoint of the signed sandwich is the composite of the adjoints of its factors in the reverse order, and the one-sided adjoints assemble it:
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*}=\bigl(R_{\alpha(b)}\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*}=R_{\sigma(\alpha(b))}L^{\alpha}_{\beta(a)}=R_{\beta(b)}L^{\alpha}_{\beta(a)}=S^{\alpha}_{\beta(a),\beta(b)} .
+\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}=\bigl(R_{\alpha(b)}\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*}=R_{\sigma(\alpha(b))}L^{\alpha}_{\beta(a)}=R_{\beta(b)}L^{\alpha}_{\beta(a)}=\mathcal{T}^{\alpha}_{\beta(a),\beta(b)} .
 $$
 
-*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Sandwich on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=S^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$.
+*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Sandwich on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=\mathcal{T}^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$.
 
 The one-sided case is therefore not an analogy but a factorisation: the sandwich is a signed left multiplication composed with a right multiplication, and its adjoint is the composite of the one-sided adjoints.
 
@@ -142,7 +142,7 @@ For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pa
 | $L^{\alpha}_a=L_a\alpha$ | signed left multiplication, $L^{\alpha}_a(m)=a\alpha(m)$ |
 | $(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$ | the adjoint of the signed left multiplication |
 | $\alpha L_b=L^{\alpha}_{\alpha(b)}$ | the conjugation identity used in the proof |
-| $S^{\alpha}_{a,b}=L^{\alpha}_a R_{\alpha(b)}$ | the signed sandwich through the one-sided operators |
+| $\mathcal{T}^{\alpha}_{a,b}=L^{\alpha}_a R_{\alpha(b)}$ | the signed sandwich through the one-sided operators |
 | $\operatorname{Ann}_A(M)$ | the annihilator, source of the degenerate criteria |
 | $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ | the kernel of the adjoint |
 

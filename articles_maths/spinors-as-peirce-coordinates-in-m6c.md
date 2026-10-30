@@ -94,9 +94,9 @@ $$
 j=\frac{6-1}{2}=\tfrac52 .
 $$
 
-This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_6P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2j+1=6$ components.
+This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_6P_l$. For $n=2$ it gives $s=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2s+1=6$ components.
 
-The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the highest-weight-$5/2$ space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2j+1=6$, as it must be for the irreducible space of spin $j=\tfrac52$.
+The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the highest-weight-$5/2$ space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2s+1=6$, as it must be for the irreducible space of spin $s=\tfrac52$.
 
 ## The Half-Angle
 
@@ -118,7 +118,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 | $\psi^{(l)}$ | The column of index $l$, a spinor |
 | $t_k$ | A gauge parameter |
 | $J_3$ | The chain generator |
-| $j$ | The spin, $(6-1)/2$ |
+| $s$ | The spin, $(6-1)/2$ |
 
 ## Further Reading
 

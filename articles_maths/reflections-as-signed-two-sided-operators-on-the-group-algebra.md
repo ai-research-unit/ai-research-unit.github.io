@@ -10,7 +10,7 @@ The article assumes the group, its Haar measure and the modular function from *L
 Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$; $\mathcal{A} = L^1(G)$ is the group algebra with convolution $f*g$, norm $\|f\|_1$, centre $Z(\mathcal{A})$ and unit group $\mathcal{A}^\times$; $\alpha$ is a continuous involutive automorphism, $\mathrm{A}f = \alpha(f)$, and $c_t(f) = t*f*t^{-1}$ is the inner automorphism by a unit $t$; the **reflector** set and the **reflection** family are
 
 $$
-R^\times(\mathcal{A},\alpha) = \{u \in \mathcal{A}^\times : u*\alpha(u) \in Z(\mathcal{A})\}, \qquad \rho_u = c_u\alpha = S_{u,u^{-1}} , \quad \rho_u(f) = u*\alpha(f)*u^{-1} ,
+R^\times(\mathcal{A},\alpha) = \{u \in \mathcal{A}^\times : u*\alpha(u) \in Z(\mathcal{A})\}, \qquad \rho_u = c_u\alpha = \mathcal{T}_{u,u^{-1}} , \quad \rho_u(f) = u*\alpha(f)*u^{-1} ,
 $$
 
 and $\mathcal{A}^\pm_\rho$ are the $\pm1$-eigenspaces of a reflection $\rho$ when $2$ is invertible.
@@ -33,15 +33,15 @@ so $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly whe
 
 **Proof.** $1*\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$; $\rho_u = \mathrm{id}$ is $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$.
 
-**Proposition (the reflection is an operator of the sandwich family).** The reflection is the signed sandwich whose second factor is the inverse of the first, $\rho_u = S_{u,u^{-1}}$; conversely the signed sandwich is recovered from the reflections and the one-sided operators by
+**Proposition (the reflection is an operator of the sandwich family).** The reflection is the signed sandwich whose second factor is the inverse of the first, $\rho_u = \mathcal{T}_{u,u^{-1}}$; conversely the signed sandwich is recovered from the reflections and the one-sided operators by
 
 $$
-S_{a,b} = \rho_a\,R_{\alpha(b)*\alpha(a)} \qquad (a \in \mathcal{A}^\times),
+\mathcal{T}_{a,b} = \rho_a\,R_{\alpha(b)*\alpha(a)} \qquad (a \in \mathcal{A}^\times),
 $$
 
 so the reflections together with the right convolutions generate the whole signed family.
 
-**Proof.** $S_{u,u^{-1}}(f) = u*\alpha(f)*u^{-1} = \rho_u(f)$. For the reconstruction, $\rho_aR_{\alpha(b)*\alpha(a)}(f) = \rho_a(f*\alpha(b)*\alpha(a)) = a*\alpha(f)*\alpha(\alpha(b)*\alpha(a))*a^{-1} = a*\alpha(f)*(b*a)*a^{-1} = a*\alpha(f)*b = S_{a,b}(f)$, using $\alpha^2 = \mathrm{id}$ and the associativity of convolution.
+**Proof.** $\mathcal{T}_{u,u^{-1}}(f) = u*\alpha(f)*u^{-1} = \rho_u(f)$. For the reconstruction, $\rho_aR_{\alpha(b)*\alpha(a)}(f) = \rho_a(f*\alpha(b)*\alpha(a)) = a*\alpha(f)*\alpha(\alpha(b)*\alpha(a))*a^{-1} = a*\alpha(f)*(b*a)*a^{-1} = a*\alpha(f)*b = \mathcal{T}_{a,b}(f)$, using $\alpha^2 = \mathrm{id}$ and the associativity of convolution.
 
 ## The Eigenvalue Decomposition
 
@@ -119,7 +119,7 @@ so that the restriction of $\rho_{\delta_h}$ to the point masses is exactly the 
 
 ## Summary
 
-A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the invertible twist $\alpha$ is the signed conjugation $\rho_u(f) = u*\alpha(f)*u^{-1} = S_{u,u^{-1}}$, a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and square $c_{u*\alpha(u)}$; it is an involutive automorphism exactly when $u$ is a **reflector**, $u*\alpha(u)\in Z(\mathcal{A})$. An involutive reflection splits $\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho$ into a closed fixed subalgebra and a closed negated part with the multiplication table of a grading, and it is determined by its fixed subalgebra. The map $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections with kernel the central units, so the reflections are parametrised by $R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$, and they are exactly the involutive automorphisms in the coset $\mathrm{Inn}(\mathcal{A})\alpha$, mapping to $\mathrm{Out}(\mathcal{A})$ by the class of the inner part. When $\alpha$ is inner every reflection is an inner automorphism, $c_{u*z}$; when $G$ is abelian every unit is a reflector, every reflection equals $\alpha$, and the family collapses to $\{\mathrm{id},\alpha\}$. The correspondence is neither injective nor, for a non-inner $\alpha$, surjective onto all involutive automorphisms, and the reflections form a coset of the inner automorphisms rather than a subgroup. On a discrete group the point masses reproduce the signed conjugations of the topological-group theory; the adjoint and the measure algebra are the `- * Operator Theory` group and *The Involution on the Measure Algebra*.
+A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the invertible twist $\alpha$ is the signed conjugation $\rho_u(f) = u*\alpha(f)*u^{-1} = \mathcal{T}_{u,u^{-1}}$, a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and square $c_{u*\alpha(u)}$; it is an involutive automorphism exactly when $u$ is a **reflector**, $u*\alpha(u)\in Z(\mathcal{A})$. An involutive reflection splits $\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho$ into a closed fixed subalgebra and a closed negated part with the multiplication table of a grading, and it is determined by its fixed subalgebra. The map $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections with kernel the central units, so the reflections are parametrised by $R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$, and they are exactly the involutive automorphisms in the coset $\mathrm{Inn}(\mathcal{A})\alpha$, mapping to $\mathrm{Out}(\mathcal{A})$ by the class of the inner part. When $\alpha$ is inner every reflection is an inner automorphism, $c_{u*z}$; when $G$ is abelian every unit is a reflector, every reflection equals $\alpha$, and the family collapses to $\{\mathrm{id},\alpha\}$. The correspondence is neither injective nor, for a non-inner $\alpha$, surjective onto all involutive automorphisms, and the reflections form a coset of the inner automorphisms rather than a subgroup. On a discrete group the point masses reproduce the signed conjugations of the topological-group theory; the adjoint and the measure algebra are the `- * Operator Theory` group and *The Involution on the Measure Algebra*.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the inv
 |---|---|
 | $\mathcal{A} = L^1(G)$, $Z(\mathcal{A})$, $\mathcal{A}^\times$ | Group algebra, centre, unit group |
 | $\alpha$, $\mathrm{A}f = \alpha(f)$, $c_t(f) = t*f*t^{-1}$ | Grade involution; inner automorphism |
-| $\rho_u = c_u\alpha = S_{u,u^{-1}}$ | Reflection by the unit $u$, $\rho_u(f) = u*\alpha(f)*u^{-1}$ |
+| $\rho_u = c_u\alpha = \mathcal{T}_{u,u^{-1}}$ | Reflection by the unit $u$, $\rho_u(f) = u*\alpha(f)*u^{-1}$ |
 | $R^\times(\mathcal{A},\alpha)$ | Reflectors: units with $u*\alpha(u)\in Z(\mathcal{A})$ |
 | $\mathrm{Ref}(\mathcal{A},\alpha)\cong R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$ | Reflections and their parametrisation |
 | $\rho_u^2 = c_{u*\alpha(u)}$ | Square; involution iff $u$ is a reflector |

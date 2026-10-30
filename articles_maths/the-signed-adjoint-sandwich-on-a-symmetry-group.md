@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The signed sandwich is the two-sided operator $S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$ on a graded group, the sandwich twisted by the grade involution $\alpha$; its **adjoint** with respect to the invariant form is again a signed sandwich, with the two entries replaced by the involuted and adjointed parameters: $(S^{\alpha}_{a,b})^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}$. The adjoint operator is therefore of the same shape as the operator, the sign structure survives the passage to the adjoint, and the passage is the operator form of the inversion of the parameters: for the unsigned sandwich, $\alpha = \mathrm{id}$, the formula is the familiar $(S_{a,b})^{*} = S_{a^{*},b^{*}}$. The diagonal case is the signed inner conjugation, whose adjoint is the signed inner conjugation by the adjointed parameter, and whose unitarity is the single condition $\alpha(a)^{*} = a^{-1}$.
+The signed sandwich is the two-sided operator $\mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$ on a graded group, the sandwich twisted by the grade involution $\alpha$; its **adjoint** with respect to the invariant form is again a signed sandwich, with the two entries replaced by the involuted and adjointed parameters: $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}$. The adjoint operator is therefore of the same shape as the operator, the sign structure survives the passage to the adjoint, and the passage is the operator form of the inversion of the parameters: for the unsigned sandwich, $\alpha = \mathrm{id}$, the formula is the familiar $(\mathcal{T}_{a,b})^{*} = \mathcal{T}_{a^{*},b^{*}}$. The diagonal case is the signed inner conjugation, whose adjoint is the signed inner conjugation by the adjointed parameter, and whose unitarity is the single condition $\alpha(a)^{*} = a^{-1}$.
 
 The article treats the invariant form on the graded algebra, the adjoint of the signed sandwich, the diagonal case with its unitarity, and the boundary with the group `- * Theory`. The signed sandwich, its composition law, the parity sign and the reflection it realises are *The Signed Sandwich on a Symmetry Group* and *Reflections as Signed Two-Sided Operators on a Symmetry Group*, the operators whose adjoints are computed; the adjoint of a single operator, the unitarity theorem and the operator involution are *The Adjoint of a Symmetry Operator*, the first article of this group; the graded structure, the Clifford algebra, the pin group and the signed inner conjugation are *Clifford Algebras*, *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *Involutive Graded Algebras*; the trace form and the involution of the algebra are *The Adjoint in an Involutive Algebra* and *The Group Algebra as an Involutive Algebra*. The adjoint in the complex-vector-space setting is treated in *Geometry on Linear Spaces*, written in parallel. The grade involution $\alpha$ is the parity of the grading and **not** the involution of the group `- * Theory`; the two-structures question, whether an involution on the elements agrees with the adjoint on the operators, is settled in this group for the general operator and is only touched here.
 
@@ -36,12 +36,12 @@ $$
 **Theorem (the signed adjoint sandwich).** The adjoint of the signed sandwich on the graded group algebra is the signed sandwich with the involuted and adjointed parameters,
 
 $$
-\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(S^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*}\;} .
+\boxed{\;\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}}, \qquad\text{that is}\qquad \bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}(y) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*}\;} .
 $$
 
 **Proof.** Compute the defining identity of the adjoint:
 $$
-\langle S^{\alpha}_{a,b}(x), y\rangle = \tau\bigl((a\,\alpha(x)\,b)^{*}\,y\bigr) = \tau\bigl(b^{*}\,\alpha(x)^{*}\,a^{*}\,y\bigr).
+\langle \mathcal{T}^{\alpha}_{a,b}(x), y\rangle = \tau\bigl((a\,\alpha(x)\,b)^{*}\,y\bigr) = \tau\bigl(b^{*}\,\alpha(x)^{*}\,a^{*}\,y\bigr).
 $$
 Using the `*`-automorphism property $\alpha(x)^{*} = \alpha(x^{*})$ and the trace property $\tau(uv) = \tau(vu)$,
 $$
@@ -51,19 +51,19 @@ the last step by the trace invariance $\tau(\alpha(u)w) = \tau(u\,\alpha^{-1}(w)
 $$
 \alpha(a^{*}yb^{*}) = \alpha(a)^{*}\,\alpha(y)\,\alpha(b)^{*},
 $$
-so $\langle S^{\alpha}_{a,b}(x), y\rangle = \tau\bigl(x^{*}\,\alpha(a)^{*}\alpha(y)\alpha(b)^{*}\bigr) = \langle x, S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}(y)\rangle$, which is the claimed adjoint.
+so $\langle \mathcal{T}^{\alpha}_{a,b}(x), y\rangle = \tau\bigl(x^{*}\,\alpha(a)^{*}\alpha(y)\alpha(b)^{*}\bigr) = \langle x, \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}(y)\rangle$, which is the claimed adjoint.
 
 ### The Parity Sign
 
-**Proposition.** The adjoint of the signed sandwich is obtained from the adjoint of the unsigned sandwich by replacing the two parameters by their images under the grade involution; for $\alpha = \mathrm{id}$ it is the familiar $(S_{a,b})^{*} = S_{a^{*},b^{*}}$. The composite $(S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}$ is an **unsigned** sandwich, because the composition of two signed sandwiches is unsigned: by the composition law $S^{\alpha}_{a,b}\circ S^{\alpha}_{c,d} = S_{a\alpha(c),\,\alpha(d)b}$ of *The Signed Sandwich on a Symmetry Group*,
+**Proposition.** The adjoint of the signed sandwich is obtained from the adjoint of the unsigned sandwich by replacing the two parameters by their images under the grade involution; for $\alpha = \mathrm{id}$ it is the familiar $(\mathcal{T}_{a,b})^{*} = \mathcal{T}_{a^{*},b^{*}}$. The composite $(\mathcal{T}^{\alpha}_{a,b})^{*}\mathcal{T}^{\alpha}_{a,b}$ is an **unsigned** sandwich, because the composition of two signed sandwiches is unsigned: by the composition law $\mathcal{T}^{\alpha}_{a,b}\circ \mathcal{T}^{\alpha}_{c,d} = \mathcal{T}_{a\alpha(c),\,\alpha(d)b}$ of *The Signed Sandwich on a Symmetry Group*,
 
 $$
-\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{*}\,S^{\alpha}_{a,b} = S_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}}\;},
+\boxed{\;\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*}\,\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{\alpha(a)^{*}\alpha(a),\ \alpha(b)\alpha(b)^{*}}\;},
 $$
 
-so $S^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ and $\alpha(b)^{*} = \alpha(b)^{-1}$.
+so $\mathcal{T}^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ and $\alpha(b)^{*} = \alpha(b)^{-1}$.
 
-**Proof.** The first statement is the theorem with $a, b$ replaced by $\alpha(a), \alpha(b)$; the composite is the composition law applied to $S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ and $S^{\alpha}_{a,b}$, which gives the unsigned sandwich displayed, since the two grade involutions in the middle multiply to the identity; the composite is the identity operator exactly when both of its parameters are the unit, which is the unitarity condition.
+**Proof.** The first statement is the theorem with $a, b$ replaced by $\alpha(a), \alpha(b)$; the composite is the composition law applied to $\mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ and $\mathcal{T}^{\alpha}_{a,b}$, which gives the unsigned sandwich displayed, since the two grade involutions in the middle multiply to the identity; the composite is the identity operator exactly when both of its parameters are the unit, which is the unitarity condition.
 
 **Remark.** The **sign structure survives the adjoint**: the adjoint of a signed sandwich is again a signed sandwich, not an unsigned one, and the grading enters the adjoint formula only through the grade involution applied to the two parameters. The adjoint reverses the order of the factors, $b$ before $a$, and the sign of the grading does not change that. This is the precise sense in which the adjoint is "signed": the involution $\alpha$ commutes with the adjoint passage without being the adjoint itself.
 
@@ -71,7 +71,7 @@ so $S^{\alpha}_{a,b}$ is unitary exactly when $\alpha(a)^{*} = \alpha(a)^{-1}$ a
 
 ### The Signed Inner Conjugation
 
-**Definition.** The **signed inner conjugation** is the diagonal signed sandwich $\mathrm{Ad}^{\alpha}_{a} = S^{\alpha}_{a,a^{-1}}$, $\mathrm{Ad}^{\alpha}_{a}(x) = a\,\alpha(x)\,a^{-1}$; it is the operator of the reflection of a quadratic space, *Reflections as Signed Two-Sided Operators on a Symmetry Group*.
+**Definition.** The **signed inner conjugation** is the diagonal signed sandwich $\mathrm{Ad}^{\alpha}_{a} = \mathcal{T}^{\alpha}_{a,a^{-1}}$, $\mathrm{Ad}^{\alpha}_{a}(x) = a\,\alpha(x)\,a^{-1}$; it is the operator of the reflection of a quadratic space, *Reflections as Signed Two-Sided Operators on a Symmetry Group*.
 
 **Proposition.** The adjoint of the signed inner conjugation is the signed inner conjugation by the adjointed parameter,
 
@@ -81,7 +81,7 @@ $$
 
 and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoint is the inverse; the reflection $\rho_u = \mathrm{Ad}^{\alpha}_{u}$ is self-adjoint when the vector $u$ satisfies $u^{*} = u$, and then $\rho_u^{*} = \rho_u = \rho_u^{-1}$.
 
-**Proof.** Put $b = a^{-1}$ in the formula: $(\mathrm{Ad}^{\alpha}_a)^{*} = S^{\alpha}_{\alpha(a)^{*},\alpha(a^{-1})^{*}}$; since $^{*}$ is an anti-automorphism, $\alpha(a^{-1})^{*} = (\alpha(a)^{-1})^{*} = (\alpha(a)^{*})^{-1}$, so the second parameter is the inverse of the first and the adjoint is the signed inner conjugation by $\alpha(a)^{*}$. It is unitary, $(\mathrm{Ad}^{\alpha}_a)^{*} = (\mathrm{Ad}^{\alpha}_a)^{-1} = \mathrm{Ad}^{\alpha}_{a^{-1}}$, exactly when $\alpha(a)^{*} = a^{-1}$; for a reflection, $u^{*} = u$ gives $\alpha(u)^{*} = u$ and unitarity follows from $u^2 = \mathfrak{Q}(u)$ and $u^{-1} = \mathfrak{Q}(u)^{-1}u$ in the Clifford realisation.
+**Proof.** Put $b = a^{-1}$ in the formula: $(\mathrm{Ad}^{\alpha}_a)^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(a^{-1})^{*}}$; since $^{*}$ is an anti-automorphism, $\alpha(a^{-1})^{*} = (\alpha(a)^{-1})^{*} = (\alpha(a)^{*})^{-1}$, so the second parameter is the inverse of the first and the adjoint is the signed inner conjugation by $\alpha(a)^{*}$. It is unitary, $(\mathrm{Ad}^{\alpha}_a)^{*} = (\mathrm{Ad}^{\alpha}_a)^{-1} = \mathrm{Ad}^{\alpha}_{a^{-1}}$, exactly when $\alpha(a)^{*} = a^{-1}$; for a reflection, $u^{*} = u$ gives $\alpha(u)^{*} = u$ and unitarity follows from $u^2 = \mathfrak{Q}(u)$ and $u^{-1} = \mathfrak{Q}(u)^{-1}u$ in the Clifford realisation.
 
 **Remark.** The unitarity condition $\alpha(a)^{*} = a^{-1}$ is the **signed** unitarity condition: it differs from the unsigned $a^{*} = a^{-1}$ by the grading, and the two agree on the even part and differ on the odd part. On the odd part the signed inner conjugation is the reflection, and the reflection is self-adjoint for a real vector; the difference between the signed and the unsigned unitarity is the whole geometric content of the sign.
 
@@ -93,9 +93,9 @@ and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoi
 
 ## Worked Cases
 
-**Example (the Clifford and pin case).** Let $G = \mathrm{Pin}(V,\mathfrak{Q})$ and $A$ the Clifford algebra with its conjugation involution $x \mapsto x^{*}$; the trace form is the Clifford trace form and the grade involution is the grade involution of the algebra, a `*`-automorphism preserving the trace. The signed sandwich $S^{\alpha}_{a,b}$ is the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and its adjoint is $S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ by the theorem. The reflection $\rho_u = \mathrm{Ad}^{\alpha}_u$ is self-adjoint for a vector $u$ with $u^{*} = u$, which is the real vector case, and the self-adjointness is the operator form of the fact that a reflection is an involution.
+**Example (the Clifford and pin case).** Let $G = \mathrm{Pin}(V,\mathfrak{Q})$ and $A$ the Clifford algebra with its conjugation involution $x \mapsto x^{*}$; the trace form is the Clifford trace form and the grade involution is the grade involution of the algebra, a `*`-automorphism preserving the trace. The signed sandwich $\mathcal{T}^{\alpha}_{a,b}$ is the signed inner conjugation of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and its adjoint is $\mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ by the theorem. The reflection $\rho_u = \mathrm{Ad}^{\alpha}_u$ is self-adjoint for a vector $u$ with $u^{*} = u$, which is the real vector case, and the self-adjointness is the operator form of the fact that a reflection is an involution.
 
-**Example (the trivial grading).** Let the grading be trivial, $G = G_0$ and $\alpha = \mathrm{id}$; then the signed sandwich is the unsigned sandwich and the theorem reduces to $(S_{a,b})^{*} = S_{a^{*},b^{*}}$ of the `*`-algebra theory, with the unitarity condition $a^{*} = a^{-1}$ for the inner conjugation. The example is the check that the signed formula specialises correctly and that the sign is the only difference.
+**Example (the trivial grading).** Let the grading be trivial, $G = G_0$ and $\alpha = \mathrm{id}$; then the signed sandwich is the unsigned sandwich and the theorem reduces to $(\mathcal{T}_{a,b})^{*} = \mathcal{T}_{a^{*},b^{*}}$ of the `*`-algebra theory, with the unitarity condition $a^{*} = a^{-1}$ for the inner conjugation. The example is the check that the signed formula specialises correctly and that the sign is the only difference.
 
 **Example (the quaternion group).** Let $G$ be the quaternion group of order eight, with the central involution $z = -1$ and the grading the sign in the Clifford algebra $\mathbb{H}$; the grade involution is $\alpha(a) = \pm a$ according to the parity, and the adjoint of the signed inner conjugation by $a$ is the signed inner conjugation by $\alpha(a)^{*}$, which for a unit quaternion $a$ is the inverse of $a$ when $a$ is even and the negative of the inverse when $a$ is odd. The unitarity condition $\alpha(a)^{*} = a^{-1}$ therefore holds on the even part and fails on the odd part, which is the reflection case.
 
@@ -106,10 +106,10 @@ and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoi
 On the graded group algebra $A = kG$ with the trace form $\langle x,y\rangle = \tau(x^{*}y)$, the grade involution $\alpha$ is a unitary self-adjoint operator when it is a `*`-automorphism preserving the trace, the left and right multiplications have adjoints $L_a^{*} = L_{a^{*}}$ and $R_b^{*} = R_{b^{*}}$, and the **signed adjoint sandwich** is again a signed sandwich,
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*} = S^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}},
+\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\,\alpha(b)^{*}},
 $$
 
-with the grading entering only through the two parameters; the unsigned case is $(S_{a,b})^{*} = S_{a^{*},b^{*}}$. The diagonal case is the signed inner conjugation, $(\mathrm{Ad}^{\alpha}_a)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}}$, unitary exactly when $\alpha(a)^{*} = a^{-1}$, so the signed unitarity condition differs from the unsigned one only on the odd part; the reflection $\rho_u = \mathrm{Ad}^{\alpha}_u$ is self-adjoint when $u^{*} = u$. The grade involution is a parity and not the involution of the group `- * Theory`; the agreement of an involution on the elements with the adjoint on the operators is the two-structures theorem of *The Adjoint of a Symmetry Operator*, never assumed. The adjoint of the reflection alone is *The Signed Adjoint of the Reflection on a Symmetry Group*, the next article.
+with the grading entering only through the two parameters; the unsigned case is $(\mathcal{T}_{a,b})^{*} = \mathcal{T}_{a^{*},b^{*}}$. The diagonal case is the signed inner conjugation, $(\mathrm{Ad}^{\alpha}_a)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}}$, unitary exactly when $\alpha(a)^{*} = a^{-1}$, so the signed unitarity condition differs from the unsigned one only on the odd part; the reflection $\rho_u = \mathrm{Ad}^{\alpha}_u$ is self-adjoint when $u^{*} = u$. The grade involution is a parity and not the involution of the group `- * Theory`; the agreement of an involution on the elements with the adjoint on the operators is the two-structures theorem of *The Adjoint of a Symmetry Operator*, never assumed. The adjoint of the reflection alone is *The Signed Adjoint of the Reflection on a Symmetry Group*, the next article.
 
 ## Summary of Notation
 
@@ -119,9 +119,9 @@ with the grading entering only through the two parameters; the unsigned case is 
 | $A = kG$ | the group algebra, a `*`-algebra |
 | $\langle x,y\rangle = \tau(x^{*}y)$ | the trace form |
 | $\tau$ | the trace functional, $\tau(xy) = \tau(yx)$ |
-| $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ | the signed sandwich |
-| $(S^{\alpha}_{a,b})^{*} = S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ | the signed adjoint sandwich |
-| $\mathrm{Ad}^{\alpha}_a = S^{\alpha}_{a,a^{-1}}$ | the signed inner conjugation |
+| $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ | the signed sandwich |
+| $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ | the signed adjoint sandwich |
+| $\mathrm{Ad}^{\alpha}_a = \mathcal{T}^{\alpha}_{a,a^{-1}}$ | the signed inner conjugation |
 | $(\mathrm{Ad}^{\alpha}_a)^{*} = \mathrm{Ad}^{\alpha}_{\alpha(a)^{*}}$ | its adjoint |
 | $\alpha(a)^{*} = a^{-1}$ | the signed unitarity condition |
 | $\rho_u = \mathrm{Ad}^{\alpha}_u$ | the reflection; self-adjoint when $u^{*} = u$ |

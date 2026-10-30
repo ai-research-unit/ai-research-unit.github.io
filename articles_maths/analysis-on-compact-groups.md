@@ -253,19 +253,19 @@ and only finitely many multiplicities are nonzero; the characters multiply as $\
 
 **The circle and the torus.** $\operatorname{Irr}(S^1) = \{\chi_n : n \in \mathbb{Z}\}$ with $\chi_n(\theta) = \exp(2\pi i n\theta)$ and $d_n = 1$; the transform is the Fourier series of *Harmonic Analysis on Groups*, §The Standard Cases, and the orthogonality relation is the elementary $\int_0^1 \exp(2\pi i(n-m)\theta)d\theta = \delta_{nm}$. For $T^n$ the dual is $\mathbb{Z}^n$ with characters $\chi_m(x) = \exp(2\pi i\langle m,x\rangle)$ and the theory is the multiple Fourier series.
 
-**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_j$ of the defining two-dimensional representation, indexed by $j \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of highest weight $2j$ and dimension $d_j = 2j+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(\exp(i\theta),\exp(-i\theta))$:
+**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_s$ of the defining two-dimensional representation, indexed by $s \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of highest weight $2s$ and dimension $d_s = 2s+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(\exp(i\theta),\exp(-i\theta))$:
 
 $$
-\chi_j(t_\theta) = \frac{\sin\bigl((2j+1)\theta\bigr)}{\sin\theta} , \qquad 0 \leq \theta \leq \pi ,
+\chi_s(t_\theta) = \frac{\sin\bigl((2s+1)\theta\bigr)}{\sin\theta} , \qquad 0 \leq \theta \leq \pi ,
 $$
 
-the sum of the $2j+1$ eigenvalues $\exp(2ij\theta), \exp(2i(j-1)\theta), \dots, \exp(-2ij\theta)$. The class functions on $SU(2)$ are the functions of $\theta$, and $L^2(K)^K$ has orthonormal basis $(\chi_j)$ by the character orthogonality, with
+the sum of the $2s+1$ eigenvalues $\exp(2is\theta), \exp(2i(s-1)\theta), \dots, \exp(-2is\theta)$. The class functions on $SU(2)$ are the functions of $\theta$, and $L^2(K)^K$ has orthonormal basis $(\chi_s)$ by the character orthogonality, with
 
 $$
-\int_{SU(2)} |\chi_j|^2\,dk = \frac{2}{\pi}\int_0^\pi \frac{\sin^2((2j+1)\theta)}{\sin^2\theta}\,\sin^2\theta\,d\theta = \frac{2}{\pi}\int_0^\pi \sin^2((2j+1)\theta)\,d\theta = 1 ,
+\int_{SU(2)} |\chi_s|^2\,dk = \frac{2}{\pi}\int_0^\pi \frac{\sin^2((2s+1)\theta)}{\sin^2\theta}\,\sin^2\theta\,d\theta = \frac{2}{\pi}\int_0^\pi \sin^2((2s+1)\theta)\,d\theta = 1 ,
 $$
 
-which is equivalent to $\frac{2}{\pi}\int_0^\pi \sin((2j+1)\theta)\sin((2l+1)\theta)\,d\theta = \delta_{jl}$, and it fixes the normalisation of the Haar measure displayed above. The representations of $SO(3) = SU(2)/\{\pm I\}$ are the $V_j$ with $j \in \mathbb{Z}_{\geq0}$, since the centre acts by $(-1)^{2j}$; the half-integer spins descend to projective representations of $SO(3)$, that is, to genuine representations of its double cover. The matrix coefficients relative to a weight basis $(v_{j,m})_{m=-j,\dots,j}$ of $\mathcal{H}_j$ are the **Wigner $D$-functions** $D^j_{mn}$, and Peter–Weyl says that the functions $\sqrt{2j+1}\,D^j_{mn}$ form an orthonormal basis of $L^2(SU(2))$, the analytic form of the decomposition of the tensor product of two irreducibles.
+which is equivalent to $\frac{2}{\pi}\int_0^\pi \sin((2s+1)\theta)\sin((2l+1)\theta)\,d\theta = \delta_{sl}$, and it fixes the normalisation of the Haar measure displayed above. The representations of $SO(3) = SU(2)/\{\pm I\}$ are the $V_s$ with $s \in \mathbb{Z}_{\geq0}$, since the centre acts by $(-1)^{2s}$; the half-integer spins descend to projective representations of $SO(3)$, that is, to genuine representations of its double cover. The matrix coefficients relative to a weight basis $(v_{s,m})_{m=-s,\dots,s}$ of $\mathcal{H}_s$ are the **Wigner $D$-functions** $D^s_{mn}$, and Peter–Weyl says that the functions $\sqrt{2s+1}\,D^s_{mn}$ form an orthonormal basis of $L^2(SU(2))$, the analytic form of the decomposition of the tensor product of two irreducibles.
 
 **Finite groups.** For a finite group $K$ the normalised counting measure makes the theory discrete: $\operatorname{Irr}(K)$ is finite, the orthogonality relation is $\frac{1}{|K|}\sum_{k\in K}\pi_{ij}(k)\overline{\sigma_{lm}(k)} = d_\pi^{-1}\delta_{\pi\sigma}\delta_{il}\delta_{jm}$, and the transform of the group algebra is the decomposition $\mathbb{C}[K] \cong \bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$ of Wedderburn–Artin. For $K = S_3$ the dual consists of the trivial, the sign and the two-dimensional reflection representation, of dimensions $1,1,2$, with $\sum_\pi d_\pi^2 = 6 = |K|$; the Plancherel identity is the Parseval identity of the discrete Fourier analysis on $S_3$.
 

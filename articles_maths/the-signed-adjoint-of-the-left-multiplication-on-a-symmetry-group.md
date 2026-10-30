@@ -82,18 +82,18 @@ which is the identity exactly when the parameter is the unit.
 **Proposition.** The signed sandwich factors as a signed left multiplication followed by a right multiplication,
 
 $$
-\boxed{\;S^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b\;},
+\boxed{\;\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a, \qquad \mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b\;},
 $$
 
 and its adjoint factors the same way, in reverse order:
 
 $$
-\bigl(S^{\alpha}_{a,b}\bigr)^{*} = \bigl(\Lambda^{\alpha}_a\bigr)^{*}\circ R_b^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}\circ R_{b^{*}} ,
+\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{*} = \bigl(\Lambda^{\alpha}_a\bigr)^{*}\circ R_b^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}\circ R_{b^{*}} ,
 $$
 
-which is the formula $(S^{\alpha}_{a,b})^{*} = S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of *The Signed Adjoint Sandwich on a Symmetry Group*.
+which is the formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of *The Signed Adjoint Sandwich on a Symmetry Group*.
 
-**Proof.** The factorisation is the associativity of the product, $a\alpha(x)b = (a\alpha(x))b$; the adjoint of a composite reverses the order, and $R_b^{*} = R_{b^{*}}$, giving $\Lambda^{\alpha}_{\alpha(a)^{*}}R_{b^{*}}$; evaluating at $y$ gives $\alpha(a)^{*}\alpha(y)b^{*}$, which is $S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}(y)$ since $\alpha(b)^{*} = \alpha(b^{*})$ and $R_{b^{*}}(y) = yb^{*}$.
+**Proof.** The factorisation is the associativity of the product, $a\alpha(x)b = (a\alpha(x))b$; the adjoint of a composite reverses the order, and $R_b^{*} = R_{b^{*}}$, giving $\Lambda^{\alpha}_{\alpha(a)^{*}}R_{b^{*}}$; evaluating at $y$ gives $\alpha(a)^{*}\alpha(y)b^{*}$, which is $\mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}(y)$ since $\alpha(b)^{*} = \alpha(b^{*})$ and $R_{b^{*}}(y) = yb^{*}$.
 
 ### The Two-Sided Case from the One-Sided Case
 
@@ -121,7 +121,7 @@ $$
 \bigl(\Lambda^{\alpha}_a\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}},
 $$
 
-proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using $L_b^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$; the general formula for the unsigned case is $L_a^{*} = L_{a^{*}}$. The operator is unitary exactly when $\alpha(a)^{*}\alpha(a) = e$, a single equation, because the composite of the adjoint with the operator is the ordinary left multiplication $L_{\alpha(a)^{*}\alpha(a)}$. The signed sandwich factors as $S^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ and its adjoint factors the same way in reverse order, giving the two-sided formula $(S^{\alpha}_{a,b})^{*} = S^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of the previous article; the one-sided case is the atomic factor of the two-sided one. The adjoint on a module over the group is the subject of the next article.
+proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using $L_b^{*} = L_{b^{*}}$, $\alpha^{*} = \alpha$; the general formula for the unsigned case is $L_a^{*} = L_{a^{*}}$. The operator is unitary exactly when $\alpha(a)^{*}\alpha(a) = e$, a single equation, because the composite of the adjoint with the operator is the ordinary left multiplication $L_{\alpha(a)^{*}\alpha(a)}$. The signed sandwich factors as $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ and its adjoint factors the same way in reverse order, giving the two-sided formula $(\mathcal{T}^{\alpha}_{a,b})^{*} = \mathcal{T}^{\alpha}_{\alpha(a)^{*},\alpha(b)^{*}}$ of the previous article; the one-sided case is the atomic factor of the two-sided one. The adjoint on a module over the group is the subject of the next article.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ proved by factorising $\Lambda^{\alpha}_a = \alpha\circ L_{\alpha(a)}$ and using
 | $(\Lambda^{\alpha}_a)^{*} = \Lambda^{\alpha}_{\alpha(a)^{*}}$ | the signed adjoint of the left multiplication |
 | $(\Lambda^{\alpha}_a)^{*}\Lambda^{\alpha}_a = L_{\alpha(a)^{*}\alpha(a)}$ | the composite; the unitarity condition |
 | $\alpha(a)^{*} = \alpha(a)^{-1}$ | the unitarity of the signed left multiplication |
-| $S^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ | the sandwich as a one-sided operator times a right multiplication |
+| $\mathcal{T}^{\alpha}_{a,b} = R_b\circ\Lambda^{\alpha}_a$ | the sandwich as a one-sided operator times a right multiplication |
 
 ## Further Reading
 

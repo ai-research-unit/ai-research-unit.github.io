@@ -127,7 +127,7 @@ Spin zero is thus native to the algebra, but it is native to the **centre** and 
 Everything beyond spin one-half is obtained by tensoring the defining module with itself. The tensor powers decompose by the standard Clebsch–Gordan series for products of spin-$\tfrac12$: the highest spin in $S^{\otimes n}$ is $\tfrac n2$, the spins fall in integer steps, and the multiplicity of spin $s$ is
 
 $$
-n_s = \binom{n}{\frac n2 - j} - \binom{n}{\frac n2 - j - 1},
+n_s = \binom{n}{\frac n2 - s} - \binom{n}{\frac n2 - s - 1},
 $$
 
 with the binomial coefficient taken to vanish for a negative lower index. The small cases, computed from the weights, are

@@ -15,10 +15,10 @@ Three consequences are drawn, and they are the same three as in the algebraic la
 Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesqualgebra of *Banach Sesqualgebras*: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded linear operators are $B(A)$ and the bounded $\varsigma$-semilinear ones $B^{\varsigma}(A)$, of *Bounded Operators on a Sesqualgebra*; the canonical pairing is $h(x,y)=x^{*}y$, and the operator families are
 
 $$
-\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\},\qquad S_{a,b}(x)=ax^{*}b,\qquad L_{c}(x)=cx,\qquad T_{p,q}(x)=pxq .
+\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\},\qquad \mathcal{T}_{a,b}(x)=ax^{*}b,\qquad L_{c}(x)=cx,\qquad T_{p,q}(x)=pxq .
 $$
 
-As in *Adjoints of Bounded Sesquilinear Operators*, the symbol $L_{c}$ is the **plain** left multiplication, the multiplication for the associative product; *The Bounded Left and Right Multiplication Operators of a Sesqualgebra* reserves $L_{c}$ for the multiplication $c\star x=cx^{*}$ by the derived product, which is $S_{c,1}$ here.
+As in *Adjoints of Bounded Sesquilinear Operators*, the symbol $L_{c}$ is the **plain** left multiplication, the multiplication for the associative product; *The Bounded Left and Right Multiplication Operators of a Sesqualgebra* reserves $L_{c}$ for the multiplication $c\star x=cx^{*}$ by the derived product, which is $\mathcal{T}_{c,1}$ here.
 
 The adjoint of a bounded linear operator is defined by $h(Tx,y)=h(x,T^{\dagger}y)$ and that of a bounded conjugate-linear operator by the twisted rule $h(Sx,y)=h(x,S^{\dagger}y)^{*}$, both of *Adjoints of Bounded Sesquilinear Operators*, where the adjointable linear operators are characterised as the left multiplications.
 
@@ -91,12 +91,12 @@ The pair operator is therefore self-adjoint exactly when the derived product of 
 **Theorem (the readings and their adjoints).** For all $x,y,z\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad S_{x,z}^{\dagger}=S_{z,x},\qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1},
+\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x},\qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1},
 $$
 
 the last two being read modulo the reduction of the pairing by a central functional, where they are the sandwich adjoint and the two-sided adjoint of Part I.
 
-**Proof.** The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of *Adjoints of Bounded Sesquilinear Operators*, §*The Reduction to a Scalar Form*, and there they are $S_{b,a}$ and $T_{p^{*},q^{*}}$. With the factorisation $\Theta_{x,y}=T_{x\star y,1}$ the third reproduces the first.
+**Proof.** The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of *Adjoints of Bounded Sesquilinear Operators*, §*The Reduction to a Scalar Form*, and there they are $\mathcal{T}_{b,a}$ and $T_{p^{*},q^{*}}$. With the factorisation $\Theta_{x,y}=T_{x\star y,1}$ the third reproduces the first.
 
 **Corollary (no new adjoint).** The adjoint of the pair operator of $(x,y)$ is a pair operator again,
 

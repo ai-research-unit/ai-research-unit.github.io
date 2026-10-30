@@ -23,7 +23,7 @@ The article assumes the base of *Conventions in Mathematics*, the products and f
 | inner derivation | $\operatorname{ad}_{\tilde Q_4}(\tilde Q_1)=[\tilde Q_4,\tilde Q_1]$ |
 | automorphism | $\operatorname{Ad}_{\tilde Q_4}$ |
 
-**The default sandwich.** *Sandwich* with no qualifier is the **bilinear sandwich** $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$. The qualifier separates it from the **sesquilinear sandwich** $S_{a,b}=T_{a,b}\circ\varkappa$, $S_{a,b}(\tilde X)=a\tilde X^{*}b$, whose star acts on the argument. The bilinear sandwich is quadratic in $\tilde Q$, not bilinear: $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The word *bilinear* names the family $T_{a,b}$ from which the sandwich is cut. The dagger is the adjoint of an operator and is never part of an operator's name.
+**The default sandwich.** *Sandwich* with no qualifier is the **bilinear sandwich** $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$. The qualifier separates it from the **sesquilinear sandwich** $\mathcal{T}_{a,b}=T_{a,b}\circ\varkappa$, $\mathcal{T}_{a,b}(\tilde X)=a\tilde X^{*}b$, whose star acts on the argument. The bilinear sandwich is quadratic in $\tilde Q$, not bilinear: $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The word *bilinear* names the family $T_{a,b}$ from which the sandwich is cut. The dagger is the adjoint of an operator and is never part of an operator's name.
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $T_{\tilde Q_1,\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
 
@@ -285,7 +285,7 @@ The four products are read on the gradient: the plain bilinear product holds the
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | Left and right multiplication by the element |
 | $T_{\tilde Q_1,\tilde Q_2}$ | The two-sided operator, $L_{\tilde Q_1}R_{\tilde Q_2}$ |
-| $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ | The bilinear sandwich; $S_{a,b}$ the sesquilinear one |
+| $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ | The bilinear sandwich; $\mathcal{T}_{a,b}$ the sesquilinear one |
 | $\operatorname{ad}_{\tilde Q}$, $\operatorname{Ad}_{\tilde Q}$ | The inner derivation and the automorphism |
 | ${}^{\dagger}$ | The general adjoint of an operator, never of an element |
 | $\partial/\partial Q_\mu$ | The unhalved coordinate derivative |

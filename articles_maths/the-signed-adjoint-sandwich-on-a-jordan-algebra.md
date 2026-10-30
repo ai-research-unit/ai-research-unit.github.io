@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The two-sided operators of a special Jordan algebra $J = A^+$ are the sandwich $S_{a,b}(x) = axb$ of the ambient associative algebra and its symmetrisation, the **quadratic representation** $U_{a,b} = \tfrac12(U_{a+b}-U_a-U_b)$; when the ambient algebra carries a **grade involution** $\alpha$, the sandwich admits the **signed** version $S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$, whose symmetrisation is
+The two-sided operators of a special Jordan algebra $J = A^+$ are the sandwich $\mathcal{T}_{a,b}(x) = axb$ of the ambient associative algebra and its symmetrisation, the **quadratic representation** $U_{a,b} = \tfrac12(U_{a+b}-U_a-U_b)$; when the ambient algebra carries a **grade involution** $\alpha$, the sandwich admits the **signed** version $\mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$, whose symmetrisation is
 
 $$
 \Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha ,
@@ -16,7 +16,7 @@ $$
 
 the adjoint of the signed sandwich is the signed sandwich at the images of its parameters. The signed sandwich is **unitary** when $U_{a,b}$ is an involution, $U_{a,b}^2 = \mathrm{id}$, the Jordan form of the condition $u^{*}u = uu^{*} = 1$.
 
-After the definitions the article proves the $\alpha$-invariance of the trace form, computes the adjoint of the quadratic representation and then of the signed sandwich, specialises to the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ and to the symmetrisation at a symmetry, and states the **unitarity condition** $U_{a,b}^2 = \mathrm{id}$. The article assumes *The Signed Sandwich on a Jordan Algebra* for the signed sandwich, its symmetrisation and the diagonal case; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation and the fundamental formula; *The Adjoint of an Endomorphism* for the adjoint with respect to a pairing; and *Involutive Algebras* for the involution of the endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$ (an automorphism of order two, hence an automorphism of $J$), $T$ is the trace form, and ${}^{\dagger}$ is its adjoint; no norm, form, distance or geometric reflection occurs. The reflection case is *The Signed Adjoint of the Reflection on a Jordan Algebra*, and the one-sided case is *The Signed Adjoint of the Left Multiplication on a Jordan Algebra*.
+After the definitions the article proves the $\alpha$-invariance of the trace form, computes the adjoint of the quadratic representation and then of the signed sandwich, specialises to the diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ and to the symmetrisation at a symmetry, and states the **unitarity condition** $U_{a,b}^2 = \mathrm{id}$. The article assumes *The Signed Sandwich on a Jordan Algebra* for the signed sandwich, its symmetrisation and the diagonal case; *The Adjoint of the Left Multiplication on a Jordan Algebra* for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; *The Left and Right Multiplication Operators on a Jordan Algebra* for the quadratic representation and the fundamental formula; *The Adjoint of an Endomorphism* for the adjoint with respect to a pairing; and *Involutive Algebras* for the involution of the endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$ (an automorphism of order two, hence an automorphism of $J$), $T$ is the trace form, and ${}^{\dagger}$ is its adjoint; no norm, form, distance or geometric reflection occurs. The reflection case is *The Signed Adjoint of the Reflection on a Jordan Algebra*, and the one-sided case is *The Signed Adjoint of the Left Multiplication on a Jordan Algebra*.
 
 ## The Natural Pairing and Its Compatibility
 
@@ -56,11 +56,11 @@ $$
 
 *Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{\dagger} = \Psi^{\dagger}\circ\Phi^{\dagger}$, so $(U_{a,b}\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ U_{a,b}^{\dagger} = \alpha\circ U_{a,b}$. Since $\alpha$ is an automorphism, $\alpha\,U_{a,b}\,\alpha^{-1} = U_{\alpha(a),\alpha(b)}$, that is $\alpha\,U_{a,b} = U_{\alpha(a),\alpha(b)}\,\alpha$; substituting gives the displayed sandwich. The symmetry $U_{a,b} = U_{b,a}$ of the quadratic representation leaves the parameter order, so only the images under $\alpha$ intervene.
 
-**Corollary (the special-algebra form).** On a special Jordan algebra the unsigned sandwich $S_{a,b}(x) = axb$ has the unsigned adjoint $S^{\dagger}_{a,b}$ given by the same rule at the images of the parameters when the ambient algebra is commutative, and its symmetrisation $\Sigma^{\alpha}_{a,b}$ has the adjoint $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ by the theorem; the adjoint of the signed sandwich is again a signed sandwich.
+**Corollary (the special-algebra form).** On a special Jordan algebra the unsigned sandwich $\mathcal{T}_{a,b}(x) = axb$ has the unsigned adjoint $\mathcal{T}^{\dagger}_{a,b}$ given by the same rule at the images of the parameters when the ambient algebra is commutative, and its symmetrisation $\Sigma^{\alpha}_{a,b}$ has the adjoint $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ by the theorem; the adjoint of the signed sandwich is again a signed sandwich.
 
 ### The Diagonal Signed Sandwich
 
-**Theorem.** The diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1}$ has as symmetrisation the twisted quadratic representation $U_u\circ\alpha$, whose adjoint is
+**Theorem.** The diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1}$ has as symmetrisation the twisted quadratic representation $U_u\circ\alpha$, whose adjoint is
 
 $$
 \bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
@@ -96,7 +96,7 @@ $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
 $$
 
-The signed sandwich is **unitary** exactly when $U_{a,b}^2 = \mathrm{id}$, the Jordan form of the condition $u^{*}u = uu^{*} = 1$. The diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ has the adjoint $U_{\alpha(u)}\circ\alpha$. The identity and the symmetric matrices are the worked examples. No norm, form, distance or geometric reflection occurs.
+The signed sandwich is **unitary** exactly when $U_{a,b}^2 = \mathrm{id}$, the Jordan form of the condition $u^{*}u = uu^{*} = 1$. The diagonal signed sandwich $\mathcal{T}^{\alpha}_{u,u^{-1}}$ has the adjoint $U_{\alpha(u)}\circ\alpha$. The identity and the symmetric matrices are the worked examples. No norm, form, distance or geometric reflection occurs.
 
 ## Summary of Notation
 

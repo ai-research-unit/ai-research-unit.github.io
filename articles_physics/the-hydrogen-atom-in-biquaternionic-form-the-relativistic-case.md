@@ -152,7 +152,7 @@ with the labels of the previous section. The spectrum depends on $n$ and $s_{\ma
 The formula is the standard exact Dirac–Coulomb result. It is quoted, not derived here, and it is not derived anywhere in the corpus: the companion solutions article and its exercise carry out the non-relativistic limit and the $c^{-2}$ corrections, and check those corrections against this formula, but the exact bound-state solution — the radial Dirac–Coulomb equations and their confluent-hypergeometric solution — is standard material that is not reproduced. The domain of the formula is
 
 $$
-\mathfrak{Z}\alpha < j + \tfrac12 ,
+\mathfrak{Z}\alpha < s_{\mathrm{tot}} + \tfrac12 ,
 $$
 
 since otherwise the square root is imaginary. For the lowest value $s_{\mathrm{tot}} = \tfrac12$ this is $\mathfrak{Z} < 137$; a point-Coulomb Dirac problem beyond that coupling has no bound states in this formula, and the description of the supercritical regime is outside the article.

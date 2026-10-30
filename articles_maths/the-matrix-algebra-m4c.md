@@ -374,12 +374,12 @@ $$
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |
 | $B$ | the Borel subgroup of upper triangular matrices |
 | $\Sigma=\{\det=0\}$ | the singular set |
-| $L$ | the left regular representation of $\mathbb{B}$, with image $M_4(\mathbb{C})_{\mathbb{B},L}$; $L_a=L(a)$ |
+| $L$ | the left regular representation of $\mathbb{B}$, with image $M_4(\mathbb{C})_{\mathbb{B},L}$; $L_{\tilde Q}=L(\tilde Q)$ |
 | $R_b$ | right multiplication on $A$, $R_b(X)=Xb$ |
 | $T_{a,b}=L_aR_b$ | the two-sided operator $X\mapsto aXb$ |
 | $F_{ij}$ | matrix units of $A=M_n(\mathbb{C})$ in the construction |
 | $c^{\lambda}_{\ \mu\rho}$ | structure constants of $\mathbb{B}$, $e_\mu e_\rho=\sum_\lambda c^{\lambda}_{\ \mu\rho}e_\lambda$ |
-| $N$ | the biquaternion norm, $N(a)=a_t^2+a_x^2+a_y^2+a_z^2$ |
+| $N$ | the biquaternion norm, $N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 
 ## Further Reading
 
