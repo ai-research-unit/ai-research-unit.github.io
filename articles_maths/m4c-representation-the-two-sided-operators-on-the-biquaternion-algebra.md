@@ -20,7 +20,7 @@ $$
 
 of complex dimension sixteen; its **matrix representation** in the canonical frame is $M_4(\mathbb{C})$. The sixteen basis matrices are the images of the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$.
 
-**The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $\tilde Q_3\mapsto e_\mu\tilde Q_3 e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and in the canonical frame it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; that display is the legacy Pauli form recorded in the remark of §*The Four Right Matrices*. The construction used here is the ordinary product $T_{\mu\nu}=L_\mu R_\nu$ of two $4\times4$ matrices, with $R_\nu$ read from $L_\nu$ by transposition and one exchange. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
+**The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $\tilde Q_3\mapsto e_\mu\tilde Q_3 e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and in the canonical frame it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; that display is the Pauli form recorded in the remark of §*The Four Right Matrices* and evaluated in the displays marked *Pauli form* below. The construction used here is the ordinary product $T_{\mu\nu}=L_\mu R_\nu$ of two $4\times4$ matrices, with $R_\nu$ read from $L_\nu$ by transposition and one exchange. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
 
 **Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write $L_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)$ for left multiplication by $\tilde Q$, and $R_{\tilde Q}$ for right multiplication, $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$; write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$ for the four basis matrices. A matrix written without a superscript is in the canonical frame; in the coefficient basis the same operators are $L_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}L_{\tilde Q}C_{\Pi}^{-1}$ and $R_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}R_{\tilde Q}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame, where
 
@@ -48,6 +48,13 @@ $$
 L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
+
+**Pauli form.** With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices, the same four matrices are
+$$
+L_t=\mathrm I_2\otimes\mathrm I_2,\qquad
+L_k=-i\,\mathrm I_2\otimes\sigma_k .
+$$
+The Kronecker factors are $2\times2$; the product is $4\times4$.
 
 A general element is
 
@@ -118,7 +125,7 @@ R_y=+i\,\sigma_2\otimes\mathrm I_2,\quad
 R_z=-i\,\sigma_3\otimes\mathrm I_2,
 $$
 
-and for general parameters $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. These are evaluations of the L-based identities above; they are kept as a dictionary, not used in the construction of $R$ and $T$. The same shorthand displays the gammas of §*A Gamma Frame, and the Choice Behind It*; the definitions there are in terms of $L$, $R$ and $T$.
+and for general parameters $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. These are evaluations of the L-based identities above; they are kept as a dictionary, not used in the construction of $R$ and $T$. The same shorthand is used, once per section, for the complementary displays marked *Pauli form* in §*The Four Left Matrices*, §*The Sixteen Basis Matrices* and §*A Gamma Frame, and the Choice Behind It*; in each case the definition stands above in $L$, $R$ and $T$, and the Pauli line is its evaluation.
 
 ## The Sixteen Basis Matrices
 
@@ -168,6 +175,13 @@ T_{tt}=L_t,\qquad
 T_{tk}=R_k,\qquad
 T_{kt}=L_k,\qquad
 T_{jk}=L_jR_k .
+$$
+In the Pauli form these are
+$$
+T_{tt}=\mathrm I_4,\qquad
+T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
+T_{kt}=-i\,\mathrm I_2\otimes\sigma_k,\qquad
+T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
 $$
 
 **The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
@@ -324,7 +338,12 @@ $$
 $$
 \gamma_5=-iT_{e_t,e_z}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-Each has trace $0$, determinant $1$ and rank $4$.
+Each has trace $0$, determinant $1$ and rank $4$. In the Pauli form the same five are
+$$
+\gamma^0=\sigma_1\otimes\mathrm I_2,\qquad
+\gamma^k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_5=-\sigma_3\otimes\mathrm I_2 .
+$$
 
 **The grading construction.** The frame is generated by the left action and one grading of the multiplicity factor. Take
 $$
@@ -517,7 +536,7 @@ $$
 $$
 In particular $\operatorname{rank}M=4$ exactly when $\tilde Q_1$ and $\tilde Q_2$ are units, and no product has rank $3$.
 
-*Proof.* By the legacy Pauli form of §*The Four Right Matrices*, $T_{\tilde Q_1,\tilde Q_2}=\mathsf{M}_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf{M}_2(\tilde Q_1)$. The singular values of a Kronecker product are the pairwise products of the singular values of the factors, so its rank is the product of the ranks. For $\mathsf{M}_2(\tilde Q_1)$ the determinant is $\langle\tilde Q_1\rangle_{\natural}$, so the rank is $2$ when $\langle\tilde Q_1\rangle_{\natural}\neq0$, $1$ when $\tilde Q_1\neq0$ and $\langle\tilde Q_1\rangle_{\natural}=0$, and $0$ when $\tilde Q_1=0$; the same holds for $\tilde Q_2$.
+*Proof.* By the Pauli form of §*The Four Right Matrices*, $T_{\tilde Q_1,\tilde Q_2}=\mathsf{M}_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf{M}_2(\tilde Q_1)$. The singular values of a Kronecker product are the pairwise products of the singular values of the factors, so its rank is the product of the ranks. For $\mathsf{M}_2(\tilde Q_1)$ the determinant is $\langle\tilde Q_1\rangle_{\natural}$, so the rank is $2$ when $\langle\tilde Q_1\rangle_{\natural}\neq0$, $1$ when $\tilde Q_1\neq0$ and $\langle\tilde Q_1\rangle_{\natural}=0$, and $0$ when $\tilde Q_1=0$; the same holds for $\tilde Q_2$.
 
 **Theorem 5 (the two ranks are independent).** Neither $\operatorname{rank}M$ nor $\operatorname{rank}c(M)$ determines the other.
 (i) The rank-one matrix $M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}$, with $u_i$ the $i$-th standard column of $\mathbb{C}^4$, has $\operatorname{rank}M_1=1$ and $\ell(M_1)=4$.

@@ -27,6 +27,8 @@ The article assumes the base of *Conventions in Mathematics*, the products and f
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $T_{\tilde Q_1,\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
 
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis, the gamma frame and the cell table of *Conventions of the Matrix Models*, §*The Clifford Structure*.
+
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
 - A glyph read with its scalar part, four components: the tilde. The biquaternionic gradient $\tilde\nabla$ of §*The Gradient* is the algebraic example, and the canonical momentum $\tilde p=p_te_t+\vec p$ is the physical one.

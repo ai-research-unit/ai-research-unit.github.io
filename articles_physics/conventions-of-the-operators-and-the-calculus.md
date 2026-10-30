@@ -23,6 +23,8 @@ The article assumes the base of *Conventions in the Biquaternion Universe*, the 
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.
 
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis, the gamma frame and the cell table of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*.
+
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
 - A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla$ of §*The Gradient*; the gauge-covariant derivative $\tilde D$.
