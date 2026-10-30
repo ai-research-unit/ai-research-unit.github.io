@@ -152,7 +152,7 @@ $$
 R(z)=\sum_{k=1}^{N}\frac{N_k}{(z-\lambda)^k}+\text{holomorphic},
 $$
 
-where $N_k$ are nilpotent matrices supported on the generalized eigenspace. The residue at $\lambda$ is the spectral projector:
+where $N_k=N^{k-1}P_\lambda$ on the generalized eigenspace, with $N$ nilpotent; the leading coefficient $N_1=P_\lambda$ is the spectral projector, not a nilpotent matrix. The residue at $\lambda$ is the spectral projector:
 
 $$
 P_\lambda=\frac{1}{2\pi i}\oint_{\gamma_\lambda}R(z)\,dz,

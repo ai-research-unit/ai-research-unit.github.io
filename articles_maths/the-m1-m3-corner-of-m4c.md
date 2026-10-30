@@ -145,7 +145,7 @@ of dimension $1+3+9=13$. It contains the stabiliser of $P$, and the quotient $P(
 
 ## Summary
 
-A rank-one idempotent splits $M_4(\mathbb{C})$ into the four Peirce blocks of dimensions $1$, $3$, $3$ and $9$. The diagonal corners are $\mathbb{C}$ with unit $P$ and $M_3(\mathbb{C})$ with unit $Q$; the off-diagonal blocks are the standard module of $M_3$ and its dual. The ambient trace is the sum of the corner traces, while the ambient determinant is the product $a\det D$ of the two corner determinants. The stabiliser of $P$ in $GL_4$ is the parabolic $P(1,3)$ of dimension $13$, and the orbit is the affine bundle of rank-one idempotents over $\mathbb{P}^{3}$, of dimension $6$. For a Hermitian $P$ the corner is a $*$-subalgebra and the compact stabiliser is $U(1)\times U(3)$.
+A rank-one idempotent splits $M_4(\mathbb{C})$ into the four Peirce blocks of dimensions $1$, $3$, $3$ and $9$. The diagonal corners are $\mathbb{C}$ with unit $P$ and $M_3(\mathbb{C})$ with unit $Q$; the off-diagonal blocks are the standard module of $M_3$ and its dual. The ambient trace is the sum of the corner traces, while the ambient determinant is the product $a\det D$ of the two corner determinants. The stabiliser of $P$ in $GL_4$ is the block-diagonal $GL_1\times GL_3$ of dimension $10$; the parabolic $P(1,3)$ that stabilises the line $L$ has dimension $13$. The orbit is the affine bundle of rank-one idempotents over $\mathbb{P}^{3}$, of dimension $6$. For a Hermitian $P$ the corner is a $*$-subalgebra and the compact stabiliser is $U(1)\times U(3)$.
 
 | Quantity | Value |
 |---|---|
@@ -154,7 +154,8 @@ A rank-one idempotent splits $M_4(\mathbb{C})$ into the four Peirce blocks of di
 | $\dim A_{21}$ | $3$ |
 | $\dim A_{22}$ | $9$ |
 | $\dim(A_{11}\oplus A_{22})$ | $10$ |
-| Stabiliser of $P$ in $GL_4$ | $13$ |
+| Stabiliser of $P$ in $GL_4$ | $10$ |
+| Parabolic $P(1,3)$ | $13$ |
 | Rank-one idempotents | $6$ |
 | $\operatorname{Gr}(1,4)=\mathbb{P}^{3}$ | $3$ |
 | Full flag variety | $6$ |

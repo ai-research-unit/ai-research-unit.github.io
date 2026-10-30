@@ -102,7 +102,7 @@ $$
 \mathfrak{sl}_5(\mathbb{C})=3\oplus5\oplus7\oplus9
 $$
 
-as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,9$. The column $\mathbb{C}^{5}$ has highest weight $4$. Both statements are the standard $\mathfrak{sl}_2$ computation on the column; they are recorded here because the number of lines and the number of components must agree with them.
+as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,9$. The column $\mathbb{C}^{5}$ has highest weight $2$. Both statements are the standard $\mathfrak{sl}_2$ computation on the column; they are recorded here because the number of lines and the number of components must agree with them.
 
 ## What the Cut Does Not Give
 

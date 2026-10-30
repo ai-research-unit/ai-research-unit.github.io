@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the highest-weight-one weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides.
+A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the highest-weight-$\tfrac12$ weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides.
 
 The subspace is the **Peirce carrier**
 
@@ -56,7 +56,7 @@ $$
 
 each weight occurring once over $D=eAe$; that is, $C(e)=L_+\oplus L_-$ with $hx=\pm x$ for $x\in L_\pm$. A **spinor frame** is the pair of $e$ and a companion frame $(\nu_1,\dots,\nu_s)$; in that frame the spinor is its coordinate vector $(d_0;d_1,\dots,d_s)\in D^{1+s}$.
 
-When the weight condition fails, $C(e)$ is a **Peirce carrier** and its coordinate vector is a Peirce coordinate, not a spinor. The definition has four ingredients: an idempotent, the subspace it fixes on the right, the companion corner that completes it, and the weight condition on the half-root. The last condition supplies the highest-weight-one structure; irreducibility alone does not.
+When the weight condition fails, $C(e)$ is a **Peirce carrier** and its coordinate vector is a Peirce coordinate, not a spinor. The definition has four ingredients: an idempotent, the subspace it fixes on the right, the companion corner that completes it, and the weight condition on the half-root. The last condition supplies the highest-weight-$\tfrac12$ structure; irreducibility alone does not.
 
 **Theorem (the matrix case).** Let $A=M_N(k)$ and $e=E_{11}$. Then $C(e)$ is a spinor space exactly when $N=2$.
 
@@ -139,7 +139,7 @@ with two simple components, the two chiralities; a primitive idempotent of eithe
 | $6$ | $M_8(\mathbb{C})$ | $3$ | $7$ | $8$ |
 | $8$ | $M_{16}(\mathbb{C})$ | $4$ | $15$ | $16$ |
 
-**The Clifford reading.** In this table "spinor dimension" is the dimension of the Clifford module carried by the Peirce ideal, not a claim that the half-root alone supplies the weights $\pm\tfrac12$. The Clifford spin structure is the action of the bivectors. At $N=2$ the Peirce root and the Clifford vector agree, and the two-dimensional ideal is the highest-weight-one module. At $N=4$ the four-dimensional ideal is the Dirac module; under the volume element it splits into two two-dimensional half-spin modules of spin $\tfrac12$. The Peirce carrier is the module; the bivector action is what makes it a spinor representation.
+**The Clifford reading.** In this table "spinor dimension" is the dimension of the Clifford module carried by the Peirce ideal, not a claim that the half-root alone supplies the weights $\pm\tfrac12$. The Clifford spin structure is the action of the bivectors. At $N=2$ the Peirce root and the Clifford vector agree, and the two-dimensional ideal is the highest-weight-$\tfrac12$ module. At $N=4$ the four-dimensional ideal is the Dirac module; under the volume element it splits into two two-dimensional half-spin modules of spin $\tfrac12$. The Peirce carrier is the module; the bivector action is what makes it a spinor representation.
 
 ## Summary
 

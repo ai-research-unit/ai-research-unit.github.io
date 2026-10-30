@@ -44,7 +44,7 @@ $$
 
 **Proof.** The first three relations are proved by the weight computation on the matrix units. The last three follow by taking real and imaginary parts of $J_\pm=J_1\pm iJ_2$.
 
-**The representation is irreducible.** The carrier $\mathbb{C}^4$ is the highest-weight-three module: the weights of $J_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once, and the ladder coefficients are $\sqrt3,2,\sqrt3$. A nonzero invariant subspace contains a highest weight vector, which is a multiple of $e_1$, and the lowering chain reaches $e_2,e_3,e_4$; hence the only invariant subspaces are $0$ and $\mathbb{C}^4$.
+**The representation is irreducible.** The carrier $\mathbb{C}^4$ is the highest-weight-$\tfrac32$ module: the weights of $J_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once, and the ladder coefficients are $\sqrt3,2,\sqrt3$. A nonzero invariant subspace contains a highest weight vector, which is a multiple of $e_1$, and the lowering chain reaches $e_2,e_3,e_4$; hence the only invariant subspaces are $0$ and $\mathbb{C}^4$.
 
 **The action on the chirality.** The chirality involution is
 
@@ -140,7 +140,7 @@ X(\mathbb{C}^2_+)\subseteq\mathbb{C}^2_+,\qquad
 X(\mathbb{C}^2_-)\subseteq\mathbb{C}^2_- .
 $$
 
-Each chirality is the fundamental highest-weight-one module of one of the two factors. The first factor acts on $\mathbb{C}^2_+$ and trivially on $\mathbb{C}^2_-$; the second acts on $\mathbb{C}^2_-$ and trivially on $\mathbb{C}^2_+$.
+Each chirality is the fundamental highest-weight-$\tfrac12$ module of one of the two factors. The first factor acts on $\mathbb{C}^2_+$ and trivially on $\mathbb{C}^2_-$; the second acts on $\mathbb{C}^2_-$ and trivially on $\mathbb{C}^2_+$.
 
 **The matrices.** In the standard basis the six generators are
 
@@ -225,7 +225,7 @@ $$
 
 of dimension $8$, which is strictly smaller than $M_4$. The chiral algebra is reducible, and its commutant is larger.
 
-**The contrast.** The Peirce algebra is irreducible with commutant $\mathbb{C}I$ and envelope $M_4$; the chiral algebra is reducible with commutant $\operatorname{span}\{I,\Gamma\}$ and envelope the even part $\mathcal{A}\oplus\mathcal{D}$. The first is a highest-weight-three chain; the second is a pair of highest-weight-one chains.
+**The contrast.** The Peirce algebra is irreducible with commutant $\mathbb{C}I$ and envelope $M_4$; the chiral algebra is reducible with commutant $\operatorname{span}\{I,\Gamma\}$ and envelope the even part $\mathcal{A}\oplus\mathcal{D}$. The first is a highest-weight-$\tfrac32$ chain; the second is a pair of highest-weight-$\tfrac12$ chains.
 
 ## The Branchings
 
@@ -286,11 +286,11 @@ $$
 
 The extra singlet $\Gamma$ is the chirality generator; it is traceless and lies in the even part, but it is not in the chiral algebra because it is a block scalar rather than a traceless block.
 
-**The two decompositions are incompatible.** The Peirce decomposition into $\mathcal{V}_0,\dots,\mathcal{V}_3$ and the chiral decomposition into the six pieces above are different. The mass block $\mathcal{B}$ is four-dimensional and contains the Peirce lines $\mathcal{A}_{12},\mathcal{A}_{14},\mathcal{A}_{32},\mathcal{A}_{34}$, which lie in different Peirce modules; the Peirce modules are not chiral-invariant. Neither decomposition refines the other. The Peirce decomposition is the decomposition of the highest-weight-three chain; the chiral decomposition is the decomposition of the two highest-weight-one chains.
+**The two decompositions are incompatible.** The Peirce decomposition into $\mathcal{V}_0,\dots,\mathcal{V}_3$ and the chiral decomposition into the six pieces above are different. The mass block $\mathcal{B}$ is four-dimensional and contains the Peirce lines $\mathcal{A}_{12},\mathcal{A}_{14},\mathcal{A}_{32},\mathcal{A}_{34}$, which lie in different Peirce modules; the Peirce modules are not chiral-invariant. Neither decomposition refines the other. The Peirce decomposition is the decomposition of the highest-weight-$\tfrac32$ chain; the chiral decomposition is the decomposition of the two highest-weight-$\tfrac12$ chains.
 
 ## The Biquaternion Case
 
-**At $n=2$ the two structures degenerate.** The carrier is $\mathbb{C}^2$, the highest-weight-one module. The Peirce algebra is the full $\mathfrak{su}_2$ of $2\times2$ traceless Hermitian matrices, of dimension $3$:
+**At $n=2$ the two structures degenerate.** The carrier is $\mathbb{C}^2$, the highest-weight-$\tfrac12$ module. The Peirce algebra is the full $\mathfrak{su}_2$ of $2\times2$ traceless Hermitian matrices, of dimension $3$:
 
 $$
 J_3=\operatorname{diag}\left(\frac12,-\frac12\right),\qquad
@@ -307,7 +307,7 @@ $$
 
 At $n=4$ the block-diagonal traceless algebra grows from $0$ to $\mathfrak{su}_2\oplus\mathfrak{su}_2$ of dimension $6$, and its intersection with the Peirce algebra drops from the Cartan to $0$. The passage from two lines to two planes is the passage from a degenerate block-diagonal algebra to a genuine product of two $\mathfrak{su}_2$'s.
 
-**The general pattern.** For $M_n(\mathbb{C})$ with $n=2m$, the Peirce algebra is the irreducible highest-weight-$n-1$ algebra of dimension $3$, and the traceless block-diagonal algebra is $\mathfrak{sl}_m\oplus\mathfrak{sl}_m\oplus\mathbb{C}\Gamma$, of dimension $2(m^2-1)+1$. The **chiral algebra** $\mathfrak{sl}_m\oplus\mathfrak{sl}_m$ has dimension $2(m^2-1)$: it is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ of dimension $6$ for $n=4$, and $\mathfrak{sl}_3\oplus\mathfrak{sl}_3$ of dimension $16$ for $n=6$. For $n=2$ the two factors are $\mathfrak{sl}_1$, which is zero; the centraliser of $\Gamma$ in $\mathfrak{sl}_2$ is the Cartan $\mathbb{C}\Gamma$. The product of two $\mathfrak{su}_2$'s is therefore specific to $n=4$, where each chirality is two-dimensional. The Peirce algebra and the chiral algebra are different for every $n\ge4$; at $n=2$ the block-diagonal traceless algebra is zero, and the Cartan centraliser of $\Gamma$ is contained in the Peirce algebra.
+**The general pattern.** For $M_n(\mathbb{C})$ with $n=2m$, the Peirce algebra is the irreducible highest-weight-$\frac{n-1}{2}$ algebra of dimension $3$, and the traceless block-diagonal algebra is $\mathfrak{sl}_m\oplus\mathfrak{sl}_m\oplus\mathbb{C}\Gamma$, of dimension $2(m^2-1)+1$. The **chiral algebra** $\mathfrak{sl}_m\oplus\mathfrak{sl}_m$ has dimension $2(m^2-1)$: it is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ of dimension $6$ for $n=4$, and $\mathfrak{sl}_3\oplus\mathfrak{sl}_3$ of dimension $16$ for $n=6$. For $n=2$ the two factors are $\mathfrak{sl}_1$, which is zero; the centraliser of $\Gamma$ in $\mathfrak{sl}_2$ is the Cartan $\mathbb{C}\Gamma$. The product of two $\mathfrak{su}_2$'s is therefore specific to $n=4$, where each chirality is two-dimensional. The Peirce algebra and the chiral algebra are different for every $n\ge4$; at $n=2$ the block-diagonal traceless algebra is zero, and the Cartan centraliser of $\Gamma$ is contained in the Peirce algebra.
 
 ## Summary
 
@@ -329,7 +329,7 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $J_3,J_\pm$ | the Peirce highest-weight-three generators |
+| $J_3,J_\pm$ | the Peirce highest-weight-$\tfrac32$ generators |
 | $\mathfrak{su}_2^{\mathrm{P}}$ | the Peirce algebra, the real span of $J_1,J_2,J_3$ |
 | $K_a^L$ | the $\mathfrak{su}_2$ generators on the chirality $+$ plane |
 | $K_a^R$ | the $\mathfrak{su}_2$ generators on the chirality $-$ plane |

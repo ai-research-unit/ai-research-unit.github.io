@@ -275,7 +275,7 @@ $$
 1+1+1+1,
 $$
 
-and the carrier $C(P)=PMP\oplus PMQ$ is the first row, of dimension $1+1=2$. It is the minimal right ideal $P M_2$, dual to the first column $M_2P$, which is the highest-weight-one carrier. The biquaternion case is the $n=2$ case of the same column-row duality.
+and the carrier $C(P)=PMP\oplus PMQ$ is the first row, of dimension $1+1=2$. It is the minimal right ideal $P M_2$, dual to the first column $M_2P$, which is the highest-weight-$\tfrac12$ carrier. The biquaternion case is the $n=2$ case of the same column-row duality.
 
 **The comparison.** At $n=4$ the minimal left ideals are four-dimensional and there are four of them; at $n=2$ they are two-dimensional and there are two. The simple module is always unique up to isomorphism, and the algebra is always the full endomorphism algebra of the simple module. The number of minimal left ideals is $n$, and their common dimension is $n$; the product is $n^2$, the dimension of the algebra.
 

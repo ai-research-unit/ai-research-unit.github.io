@@ -96,7 +96,7 @@ $$
 
 This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_6P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2j+1=6$ components.
 
-The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the highest-weight-five space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2j+1=6$, as it must be for the irreducible space of spin $j=\tfrac52$.
+The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the highest-weight-$5/2$ space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2j+1=6$, as it must be for the irreducible space of spin $j=\tfrac52$.
 
 ## The Half-Angle
 
@@ -108,7 +108,7 @@ A spinor is not an arbitrary element of $M_6(\mathbb{C})$; it is one column of t
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{6 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{6-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-five space, so the number of components is $6=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{6 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{6-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$5/2$ space, so the number of components is $6=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
 
 ## Summary of Notation
 

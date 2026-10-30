@@ -83,7 +83,7 @@ $$
 \Delta=256r^{3}-128p^{2}r^{2}+144pq^{2}r-27q^{4}+16p^{4}r-4p^{3}q^{2}.
 $$
 
-**Proof.** The discriminant is the resultant of the quartic and its derivative, divided by the leading coefficient; for the depressed quartic the resultant is a polynomial in $p,q,r$ that is homogeneous of weighted degree $12$ when $p,q,r$ carry the weights $1,2,3$. The six monomials displayed are the monomials of that weighted degree that occur, and their coefficients are fixed by evaluation at six convenient quartics: $y^{4}-1$, $y^{4}+1$, $(y^{2}-1)^{2}$, $(y-1)^{4}$, $y^{4}+y$ and $y^{4}+y^{2}$. Each evaluation is a direct computation of the root differences, and the resulting linear system has the displayed solution. Equivalently, the formula is the standard discriminant of a quartic, written in the depressed variables.
+**Proof.** The discriminant is the resultant of the quartic and its derivative, divided by the leading coefficient; for the depressed quartic the resultant is a polynomial in $p,q,r$ that is homogeneous of weighted degree $12$ when $p,q,r$ carry the weights $2,3,4$ (their degrees in the roots). The six monomials displayed are the monomials of that weighted degree that occur, and their coefficients are fixed by evaluation at six convenient quartics: $y^{4}-1$, $y^{4}+1$, $(y^{2}-1)^{2}$, $(y-1)^{4}$, $y^{4}+y$ and $y^{4}+y^{2}$. Each evaluation is a direct computation of the root differences, and the resulting linear system has the displayed solution. Equivalently, the formula is the standard discriminant of a quartic, written in the depressed variables.
 
 **The general form.** Substituting $p,q,r$ in the theorem gives $\Delta$ as a polynomial in $c_1,\dots,c_4$ of degree six. In the entries of $A$ it is homogeneous of degree twelve, because $c_k$ has degree $k$ and every monomial of the displayed polynomial has weighted degree twelve.
 
@@ -137,7 +137,7 @@ $$
 u^{2}\bigl(u^{4}+2pu^{2}+p^{2}-4r\bigr)=q^{2},
 $$
 
-that is, $z=u^{2}$ is a root of the resolvent cubic. Conversely, every root $z$ of the resolvent with a square root $u$ produces a factorisation.
+that is, $z=-u^{2}$ is a root of the resolvent cubic. Conversely, every root $z$ of the resolvent with a square root $u$ produces a factorisation.
 
 **The four roots.** Let $z_1,z_2,z_3$ be the roots of the resolvent and let $u_k$ be square roots with $u_1^{2}=-z_1$, $u_2^{2}=-z_2$, $u_3^{2}=-z_3$, chosen so that
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The algebra $M_4(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{32}$ and contractible; its group of units $GL_4(\mathbb{C})$ is homotopy equivalent to $U(4)$, with $\pi_1=\mathbb{Z}$ and $\pi_2=0$.** The idempotents of rank $p$ are homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,4)$; the full flag variety $GL_4/B$ is simply connected; the determinant bundle has first Chern class the generator of $H^2$, and the determinant bundles over the Grassmannians have first Chern class the hyperplane class.
+**The algebra $M_4(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{32}$ and contractible; its group of units $GL_4(\mathbb{C})$ is homotopy equivalent to $U(4)$, with $\pi_1=\mathbb{Z}$ and $\pi_2=0$.** The idempotents of rank $p$ are homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,4)$; the full flag variety $GL_4/B$ is simply connected; the determinant bundle over $GL_4$ has first Chern class the generator of $H^2$, over $\operatorname{Gr}(p,4)$ the Plücker bundle has first Chern class the hyperplane class and the determinant of the tautological bundle has its negative.
 
 The article computes the homotopy type of the algebra and its group of units, the homotopy groups, the topology of the idempotents and the Grassmannians, the cohomology of the flag variety, and the determinant bundles and their first Chern classes.
 

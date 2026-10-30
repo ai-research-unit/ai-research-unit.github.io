@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The gauge is a complex rescaling of the frame; the polar decomposition is a factorization over the compact $*$-unitary group. The gauge has three complex parameters; the polar decomposition of the mass block has two real singular values and one phase. The article compares them and records the degeneration at $n=2$, where the gauge has a single parameter $\lambda$.
+**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The gauge is a complex rescaling of the frame; the polar decomposition is a factorization over the compact $*$-unitary group. The gauge has three complex parameters; the polar decomposition of the mass block has two real singular values and a $*$-unitary mixing, whose determinant contributes one phase. The article compares them and records the degeneration at $n=2$, where the gauge has a single parameter $\lambda$.
 
 The article recalls the three-parameter gauge and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
 

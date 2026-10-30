@@ -102,7 +102,7 @@ $$
 \mathfrak{sl}_3(\mathbb{C})=3\oplus5
 $$
 
-as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,5$. The column $\mathbb{C}^{3}$ has highest weight $2$. Both statements are the standard $\mathfrak{sl}_2$ computation on the column; they are recorded here because the number of lines and the number of components must agree with them.
+as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,5$. The column $\mathbb{C}^{3}$ has highest weight $1$. Both statements are the standard $\mathfrak{sl}_2$ computation on the column; they are recorded here because the number of lines and the number of components must agree with them.
 
 ## What the Cut Does Not Give
 

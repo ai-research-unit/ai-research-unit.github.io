@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, the general plain sesquilinear product the *Hermitian Adjoint* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
+The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, the general plain sesquilinear product the *Hermitian Adjoint* family, and the general quaternionic sesquilinear product the Krein form, with the indefinite Hermitian sandwich and the Krein adjoint. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
 
-This article states that division of labour precisely, with the matrices of one element read through all four insertions. It opens the group *Operators* and carries the passage from a product to an operator.
+**Scope.** This article states that division of labour precisely, with the matrices of one element read through all four insertions. It does not introduce the operator space: the complex-linear maps of $\mathbb{B}$ into itself, their matrices and the regular families are *The Endomorphisms of the Biquaternion Algebra*, which opens the group. This article is the narrower question that follows. Given that an operator is an element acting with an insertion, what do the four products decide about it?
 
-The answer to the question of the title is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
+The answer to that question is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
 
 The four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four pairings and their Gram matrices are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four adjoints and the reading of the family names are *The Four Adjoints of the Biquaternion Algebra in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra. The two insertions are also the subject of a group: each is an involution, they commute, and the four readings of a rule form the group $\mathbb{Z}_2\times\mathbb{Z}_2$. Read on a general algebra with two commuting anti-involutions, the same construction gives the slot family, whose second slot governs the composition and whose first slot governs the form, and the table of the slots records the four settings. That is §*The Four Readings and Their Group*.
 
@@ -74,7 +74,7 @@ $$
 (\tilde Q_1,\tilde Q_2)\longmapsto f(\tilde Q_1,\tilde Q_2^{*}).
 $$
 
-The **four readings** of $f$ are $f$ itself, its image under the first insertion, its image under the second insertion, and its image under the composite of the two. Following the convention of *Introduction to the Operators of the Biquaternion Algebra*, the readings are written (none), (${}^{\natural}$), (${}^{*}$) and (both), the label naming the insertions made: none, the first insertion, the second insertion, or both.
+The **four readings** of $f$ are $f$ itself, its image under the first insertion, its image under the second insertion, and its image under the composite of the two. Following the convention of this article, the readings are written (none), (${}^{\natural}$), (${}^{*}$) and (both), the label naming the insertions made: none, the first insertion, the second insertion, or both.
 
 **Remark (why four readings and not sixteen).** The involutions at hand are four — $\mathrm{id}$, ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ — so insertions built from all four would a priori give sixteen readings. The four general products use only $\mathrm{id}$ or ${}^{\natural}$ in the first slot and only $\mathrm{id}$ or ${}^{*}$ in the second, and two features of that choice matter in this part. The first slot is $\mathbb{C}$-linear and never conjugates the coefficients, while the second is conjugate-linear whenever it is not the identity; that asymmetry is why the two slots are not interchangeable, and it is the source of every entry of §*The Table of the Slots*. And the two conjugations chosen are the ones that produce the split read in *The Four General Products and Their Relations over the Biquaternion Algebra*, §*Which of the Four Is a Multiplication*, in which the second slot alone decides whether the product is the multiplication of an algebra over $\mathbb{C}$. The part asserts nothing about the other readings, and every statement in it is about the four.
 
@@ -113,7 +113,7 @@ in the order (none), (${}^{\natural}$), (${}^{*}$), (both). The four are pairwis
 
 **Remark (the group of the operations is not the group of the involutions).** The four readings are operations on rules, and the group they form is generated by the two insertions; the group of *The Group of Involutions*, generated by the natural conjugation ${}^{\natural}$ and the coefficient conjugation $\bar{\cdot}$, is a group of maps of the algebra. Both are elementary abelian of order four, and they are not the same group: the elements of the first are readings of a rule and the elements of the second are conjugations of an element. **A reading is not a conjugation of an element**, and the four general products are the four readings of one rule and not the four conjugations of one element.
 
-**Remark (the identity element, and what the group does not produce).** The group has an identity element, the reading with no insertion, and read on the general plain bilinear product that reading is the general plain bilinear product itself. The four general products are nevertheless introduced independently, one by one on the coordinates, in *The Four General Products and Their Relations over the Biquaternion Algebra*, and the group is read on the four afterwards; it is read in the same way on the four pairings, which are the scalar parts. What the group does not produce is an operator: its four elements act on rules, an operator acts on elements, and an operator needs an element of the algebra beside the reading (*Introduction to the Operators of the Biquaternion Algebra*).
+**Remark (the identity element, and what the group does not produce).** The group has an identity element, the reading with no insertion, and read on the general plain bilinear product that reading is the general plain bilinear product itself. The four general products are nevertheless introduced independently, one by one on the coordinates, in *The Four General Products and Their Relations over the Biquaternion Algebra*, and the group is read on the four afterwards; it is read in the same way on the four pairings, which are the scalar parts. What the group does not produce is an operator: its four elements act on rules, an operator acts on elements, and an operator needs an element of the algebra beside the reading.
 
 ### The Operation on a General Algebra
 
@@ -187,7 +187,10 @@ The table says that the second slot governs the **composition**: iterating the o
 
 $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}
-\quad\text{has the square}\quad
+\quad\text{has the }\natural\text{-square}\quad
+\begin{pmatrix}0&1\\0&0\end{pmatrix}^{\mathsf T}
+\begin{pmatrix}0&1\\0&0\end{pmatrix}
+=
 \begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
 
@@ -212,8 +215,19 @@ $$
 |---|---|---|---|---|
 | $\mathrm{id}$ | $\mathrm{id}$ | $\tilde Q_4$ | $\tilde Q\mapsto\tilde Q_4\tilde Q\tilde Q_4$ | $\tilde Q_4^{2}$ |
 | $\mathrm{id}$ | $\alpha$ | $\tilde Q_4^{\natural}$ | the conjugation sandwich, the operator of *Two-Sided Operators on the General Quaternionic Algebra* | $\langle\tilde Q_4\rangle_{\natural}=\tilde Q_4\tilde Q_4^{\natural}$, central |
-| $\sigma$ | $\mathrm{id}$ | $\bar{\tilde Q_4}$ | $\tilde Q\mapsto\tilde Q_4\tilde Q\bar{\tilde Q_4}$ | $\tilde Q_4\bar{\tilde Q_4}$, scalar part the split norm |
+| $\sigma$ | $\mathrm{id}$ | $\bar{\tilde Q_4}$ | $\tilde Q\mapsto\tilde Q_4\tilde Q\bar{\tilde Q_4}$ | $\tilde Q_4\bar{\tilde Q_4}$, scalar part the Krein norm |
 | $\sigma$ | $\alpha$ | $\tilde Q_4^{\ast}$ | the Hermitian sandwich, $\tilde Q\mapsto\tilde Q_4\tilde Q\tilde Q_4^{\ast}$ | $\tilde Q_4\tilde Q_4^{\ast}$, Hermitian |
+
+**Example (the four forms at one unit).** For $\tilde Q_4=(1+i)e_t+\vec e_x$, a unit with $\langle\tilde Q_4\rangle_{\natural}=1+2i$, the four operators evaluated at $e_t$ give
+
+$$
+\tilde Q_4^{2}=(-1+2i)e_t+2(1+i)\vec e_x,\quad
+\tilde Q_4\tilde Q_4^{\natural}=(1+2i)e_t,\quad
+\tilde Q_4\bar{\tilde Q_4}=e_t+2\vec e_x,\quad
+\tilde Q_4\tilde Q_4^{\ast}=3e_t-2i\vec e_x,
+$$
+
+whose scalar parts $-1+2i$, $1+2i$, $1$, $3$ are the plain, the quaternionic, the Krein and the Hermitian form of $\tilde Q_4$. The four numbers are pairwise distinct, so the four settings are distinct on this unit.
 
 The fifth conjugation of the algebra, the reversal $\flat=-\ast$ of *The Group of Involutions*, is the last row with the extra central sign: $\tilde Q_4^{\flat}=-\tilde Q_4^{\ast}$, so the reversal sandwich is minus the Hermitian sandwich.
 
@@ -313,9 +327,9 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 **Remark (the sentence of the corpus, translated).** *The Signed Sandwich on a Clifford Algebra* says that the ordinary sandwich by a vector is the **negative** of the reflection, and that inserting the grade involution *repairs the sign*. The theorem above is that sentence in the biquaternion model: the plain product gives $-\rho_{\tilde Q_4}$, the involution of $V$ whose fixed space has codimension one, and the sign insertion gives $\rho_{\tilde Q_4}$. This is the one place where the algebra forces a choice rather than permitting one.
 
-**Corollary (where a determinant plus one lives).** On the algebra $\mathbb{B}$ itself, of complex dimension four, all four operators have determinant $+1$; the sign shows in the determinant only on the odd-dimensional restriction $V$, or on a real form of odd dimension. A "rotation" and a "reflection" are therefore read on $V$.
+**Corollary (where a determinant plus one lives).** On the algebra $\mathbb{B}$ itself, of complex dimension four, the two insertions that read the parameter as it stands have determinant $+1$. The two starred insertions have determinant $\bigl(N(\tilde Q_4)/\overline{N(\tilde Q_4)}\bigr)^{2}$, of modulus one and generally not $1$. The sign shows in the determinant only on the odd-dimensional restriction $V$, or on a real form of odd dimension. A "rotation" and a "reflection" are therefore read on $V$.
 
-*Proof.* The operators are products $L_{\tilde Q_4}R_{\tilde Q_1}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde Q_4})\det(R_{\tilde Q_1})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
+*Proof.* The operators are products $L_{\tilde Q_4}R_{\tilde Q_1}$, whose determinant on $\mathbb{B}$ is $N(\tilde Q_4)^{2}N(\tilde Q_1)^{2}$. For the reading (none), $\tilde Q_1=\tilde Q_4^{-1}$, so the operator is the identity and the determinant is $1$. For the sign insertion, $\tilde Q_1=(\tilde Q_4^{\natural})^{-1}$ and $N(\tilde Q_4^{\natural})=N(\tilde Q_4)$, so the determinant is again $1$. For the two starred insertions, $\tilde Q_1=(\tilde Q_4^{\ast})^{-1}$ and $N(\tilde Q_4^{\ast})=\overline{N(\tilde Q_4)}$, so the determinant is $\bigl(N(\tilde Q_4)/\overline{N(\tilde Q_4)}\bigr)^{2}$, of modulus one. On the four-dimensional algebra the sign $-1$ on a parameter contributes $(-1)^{4}=+1$, so the sign is invisible there and visible only on the three-dimensional $V$.
 
 ### The Sign Is Invisible on the Centre and on Even Parameters
 
@@ -334,9 +348,9 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 | $i \vec e_x$ | $+1$ | $-1$ | $+1$ | $-1$ |
 | $e_t+\vec e_x$ | $+1$ | $0$ | $0$ | $+1$ |
 
-The zero entries are the starred insertions of a mixed parameter, whose operator does not preserve $V$, so that the restricted determinant is $0$ and is not a rotation-reflection marker; the star and both columns are read on $V$ only for the rows whose parameter has a real or purely imaginary coefficient vector.
+The zero entries are the insertions whose operator does not preserve $V$ — the sign and the star for the mixed parameter $e_t+\vec e_x$ — so that the restricted determinant is $0$ and is not a rotation-reflection marker; a determinant on $V$ is read only where $V$ is preserved.
 
-*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde Q_4^{*})^{-1}=i e_t$, which gives $-e_t$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
+*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde Q_4^{*})^{-1}=i e_t$, which gives $-e_t$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose sign and star insertions do not keep $V$ stable while the none and both insertions do.
 
 **Remark (the two central rows).** The proposition and the table together show the two independent choices: the *sign* $\natural$ is invisible on the centre and reads only the odd part, while the *star* is invisible on the real directions and reads the coefficient imaginary. Neither is a property of the product; both are properties of the insertion into the chosen element.
 
@@ -350,7 +364,7 @@ The zero entries are the starred insertions of a mixed parameter, whose operator
 | complex conjugation $\bar{\cdot}$ | grade involution $\alpha$ | $+,-,+,-$ | fixes $\vec e_x,\vec e_y,\vec e_z$, reverses $i$ |
 | Hermitian conjugation ${}^{*}$ | reversion $X^{r}$ | $+,+,-,-$ | $-1$ on $\vec e_x,\vec e_y,\vec e_z$ and $-1$ on $ie_t$ |
 
-So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is *not* the grade involution of that Clifford reading: the grade involution is the coefficient conjugation, and on $V$, which is the grade-two part there, it is the identity. Two consequences follow, and both answer the question of the title. First, the corpus's choice of $\natural$ as the sign is a convention of the biquaternion model, fixed by the coefficient formula and not by an abstract parity. Second, the reflection theorem is nevertheless not a convention: with the sign $\natural$ it holds, and with the grade involution, which is trivial on $V$, it fails.
+So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is *not* the grade involution of that Clifford reading: the grade involution is the coefficient conjugation, and on $V$, which is the grade-two part there, it is the identity. Two consequences follow, and both answer the question of this article. First, the corpus's choice of $\natural$ as the sign is a convention of the biquaternion model, fixed by the coefficient formula and not by an abstract parity. Second, the reflection theorem is nevertheless not a convention: with the sign $\natural$ it holds, and with the grade involution, which is trivial on $V$, it fails.
 
 **Remark (parameter or argument).** The sign may be inserted in the **parameter**, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}$, which is the *signed inner conjugation* of the corpus, or in the **argument**, $\tilde Q_2\mapsto\tilde Q_4\,\tilde Q_2^{\natural}\,\tilde Q_4^{-1}$, which is the *signed sandwich* of *The Signed Sandwich on a Clifford Algebra*. On the vector subspace the two agree, because both act by the sign $-\mathrm{id}$ there; on the whole algebra they differ, and the general corpus keeps the two families apart on purpose, the one twisting the parameter and the other the argument.
 
@@ -384,6 +398,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 
 ## Further Reading
 
+- [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, its matrix form, the regular families and the double centraliser that this article presupposes
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four rules, the statement that they differ in one insertion alone, and the table of the four side by side
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms, their Gram matrices, their signatures and their isometry groups
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the four adjoints on explicit operators and the naming rule of the operator families

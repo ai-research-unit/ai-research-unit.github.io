@@ -96,7 +96,7 @@ $$
 
 This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_5P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=5$ it gives $2$ and the column has $2j+1=5$ components.
 
-The column has five entries. Under the chain, $J_3$ has weights $2,1,0,-1,-2$, so the column is the highest-weight-four space. A balanced chiral split does not exist; a split $2+3$ requires an extra sign function.
+The column has five entries. Under the chain, $J_3$ has weights $2,1,0,-1,-2$, so the column is the highest-weight-$2$ space. A balanced chiral split does not exist; a split $2+3$ requires an extra sign function.
 
 ## The Half-Angle
 
@@ -108,7 +108,7 @@ A spinor is not an arbitrary element of $M_5(\mathbb{C})$; it is one column of t
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{5 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{5-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-four space, so the number of components is $5=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{5 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{5-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$2$ space, so the number of components is $5=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
 
 ## Summary of Notation
 

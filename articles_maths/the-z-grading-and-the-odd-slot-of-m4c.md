@@ -90,11 +90,11 @@ $$
 $$
 are the Hodge pairs. Each pair spans a two-dimensional subspace of the odd slot. The Hodge star exchanges the vector and the trivector of the pair, and the Clifford product of the two is a scalar plus a scalar multiple of the pseudoscalar.
 
-**The product rule.** With $u$ a unit timelike vector and $\mathrm{Cl}^{1}=\mathbb{B}u$,
+**The product rule.** With $u$ a unit timelike vector and $\mathrm{Cl}^{1}=\mathbb{B}u$, let $\theta(c)=ucu^{-1}$ be the conjugation by $u$, an automorphism of $\mathbb{B}$. Then
 $$
-(b_1+b_2u)(c_1+c_2u)=(b_1c_1+b_2c_2)+(b_1c_2+b_2c_1)u,
+(b_1+b_2u)(c_1+c_2u)=\bigl(b_1c_1+b_2\theta(c_2)\bigr)+\bigl(b_1c_2+b_2\theta(c_1)\bigr)u,
 $$
-for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The odd slot is closed under left multiplication by $\mathbb{B}$ and under the product with itself into the even part. The product of two odd elements is even, and the product of an even and an odd element is odd; this is the parity grading in operation form.
+for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the bivectors that the vector $u$ defines; it is not the identity on the whole of $\mathbb{B}$, because an even element need not commute with $u$. The twisted rule is the multiplication of the Clifford algebra written over its even part. The product of two odd elements is even, and the product of an even and an odd element is odd; this is the parity grading in operation form.
 
 ## The Sixteen Two-Sided Operators
 

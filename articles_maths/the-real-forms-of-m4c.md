@@ -108,7 +108,7 @@ $$
 Sp(2)=\{A\in M_2(\mathbb{H}):A^{*}A=I\},
 $$
 
-of real dimension $10$. It is the compact real form of $Sp(2,\mathbb{C})$ and the maximal compact subgroup of $SU^{*}(4)\cong SO(5,1)$. The algebra $\mathfrak{sp}(2)$ is the compact real form of $\mathfrak{sp}(2,\mathbb{C})\cong\mathfrak{so}(5,\mathbb{C})$, and it appears here as the fixed algebra of the quaternionic involution on $\mathfrak{sl}_4(\mathbb{C})$; the two roles are the two sides of the isomorphism $SU^{*}(4)\cong SO(5,1)$ of *The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$*.
+of real dimension $10$. It is the compact real form of $Sp(2,\mathbb{C})$ and the maximal compact subgroup of $SU^{*}(4)\cong Spin(5,1)$. The algebra $\mathfrak{sp}(2)$ is the compact real form of $\mathfrak{sp}(2,\mathbb{C})\cong\mathfrak{so}(5,\mathbb{C})$, and it appears here as the fixed algebra of the quaternionic involution on $\mathfrak{sl}_4(\mathbb{C})$; the two roles are the two sides of the isomorphism $SU^{*}(4)\cong Spin(5,1)$ of *The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$*.
 
 **The embedding.** The scalar quaternions give a copy of $\mathbb{H}$ inside $M_2(\mathbb{H})$, and the complexification of that copy is $M_2(\mathbb{C})=\mathbb{B}$. The chain
 

@@ -4,7 +4,7 @@
 
 **One element of order four with simple spectrum produces the four idempotents of the frame.** The element is a matrix $H\in M_4(\mathbb{C})$ with $H^4=I$ and four distinct eigenvalues; the idempotents are the Lagrange projectors of its spectrum. They are polynomials in $H$, they are orthogonal and complete, and no second element is needed to produce them. This is the root-first construction of the category $M_4(\mathbb{C})$.
 
-The article states the spectral resolution $H=\sum_k\zeta_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$* to $n=4$.
+The article states the spectral resolution $H=\sum_k\zeta_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$* to $n=4$.
 
 The Peirce decomposition that the idempotents produce is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the vectors inside the resulting lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_4(\mathbb{C})$*; the orbit of the root and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The algebra itself is *The Matrix Algebra $M_4(\mathbb{C})$*. No form, no norm and no topology are used.
 

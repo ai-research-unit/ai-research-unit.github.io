@@ -96,7 +96,7 @@ $$
 
 This is the highest-weight computation read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_4P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=4$ it gives $\tfrac32$ and the column has $2j+1=4$ components.
 
-The column has four entries. Under the chain, $J_3$ has weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, so the column is the highest-weight-three space. The chirality $H^{2}$ splits it $2+2$. The biquaternion case $n=2$ is the only case whose Peirce column is a highest-weight-one pair.
+The column has four entries. Under the chain, $J_3$ has weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, so the column is the highest-weight-$\tfrac32$ space. The chirality $H^{2}$ splits it $2+2$. The biquaternion case $n=2$ is the only case whose Peirce column is a highest-weight-$\tfrac12$ pair.
 
 ## The Half-Angle
 
@@ -108,7 +108,7 @@ A spinor is not an arbitrary element of $M_4(\mathbb{C})$; it is one column of t
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{4 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{4-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-three space, so the number of components is $4=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{4 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{4-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$\tfrac32$ space, so the number of components is $4=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
 
 ## Summary of Notation
 

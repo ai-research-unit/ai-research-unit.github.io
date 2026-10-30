@@ -194,6 +194,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Operators
 
+- [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html)
 - [Introduction to the Operators of the Biquaternion Algebra](../articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.html)
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)

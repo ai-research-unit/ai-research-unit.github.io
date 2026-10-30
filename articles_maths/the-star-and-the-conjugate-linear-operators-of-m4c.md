@@ -187,9 +187,9 @@ $$
 
 **The reading.** The conjugate-linear operators form a copy of $\mathbb{B}$: the map $b\mapsto C_b$ is conjugate-linear, and the product of two of them is a **left multiplication**, an even operation. The odd sector is therefore not an algebra of elements but an algebra of operations: the conjugate-linear family is the odd slot, and its square lands in the even left factor, exactly as the Clifford grading requires. The bar is an automorphism, so its conjugation preserves the left regular action; this is why the products stay one-sided.
 
-**The star version.** Replacing the bar by the star multiplies every operator by the even map $D$:
+**The star version.** The left family is multiplied by the even map $D$; the right family becomes the star composed with a right multiplication:
 $$
-S_b=*\circ L_b=D\circ C_b,\qquad S'_b=L_b\circ *=D\circ C'_b .
+S_b=*\circ L_b=D\circ C_b,\qquad S'_b=L_b\circ *=*\circ R_{b^{*}} .
 $$
 The star is an **antiautomorphism**, and its conjugation reverses the left action:
 $$

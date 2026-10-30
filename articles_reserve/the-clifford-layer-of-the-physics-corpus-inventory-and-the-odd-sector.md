@@ -10,15 +10,15 @@ $$
 
 The line is a theorem. It is also a boundary. The Clifford algebra has sixteen real dimensions; the even part has eight. The other eight — the odd part, spanned by the four vectors $\gamma^\mu$ and the four trivectors — are **not** in $\mathbb{B}$. No product of even elements is odd, so no inner operation of $\mathbb{B}$ can produce an odd element. The odd part is a module over $\mathbb{B}$, not a subalgebra of it.
 
-The physics needs that module. Parity is $\gamma^0$. Charge conjugation is $i\gamma^2$. Time reversal is $\gamma^1\gamma^3$. The Dirac adjoint is $\psi^\dagger\gamma^0$. A reflection with normal $u$ is $x\mapsto-\epsilon(u)\,u\,x\,u$. Parity, charge conjugation, the Dirac adjoint and the reflection carry odd elements; time reversal does not: $\gamma^1\gamma^3=-\vec e_y$ is even, a bivector, and belongs to $\mathbb{B}$. It is the antilinear part of $T$ that the even algebra does not supply, and that part is the star. So the discrete operations are not uniformly odd; the odd sector carries $P$ and $C$, and the star carries the antilinearity of $C$ and $T$.
+The physics needs that module. Parity is $\gamma^0$. Charge conjugation is $i\gamma^2$. Time reversal is $\gamma^1\gamma^3$. The Dirac adjoint is $\psi^\dagger\gamma^0$. A reflection with normal $u$ is $x\mapsto-\epsilon(u)\,u\,x\,u$. Parity, charge conjugation, the Dirac adjoint and the reflection carry odd elements; time reversal does not: $\gamma^1\gamma^3=-\vec e_y$ is even, a bivector, and belongs to $\mathbb{B}$. It is the antilinear part of $T$ that the even algebra does not supply, and that part is the coefficient conjugation. So the discrete operations are not uniformly odd; the odd sector carries $P$ and $C$, and the coefficient conjugation carries the antilinearity of $C$ and $T$.
 
 This article records how far the borrowing goes, and what can replace it.
 
 **The counts.** A scan of the 395 physics articles finds **115** that carry a Clifford marker: an indexed $\gamma$, an explicit gamma-matrix representation, a Clifford symbol $\mathrm{Cl}_{p,q}$, or the dictionary map $\mathsf{M}_4$. Of these, **51** are structural (an explicit matrix block, at least ten indexed gamma occurrences, or at least five Clifford symbols), **47** use the layer in passing, and **17** name it only. **18** write an explicit gamma-matrix representation (the first pass counted 17; the Klein–Gordon article adds one). **52** contain $\gamma^5$ or $\gamma_5$. The borrowing reaches **9 of the 12** categories of `physics.md`. The first pass counted 109; the six additions are the Klein–Gordon square, the CKM matrix, the trace anomaly, the spinor representation of the Lorentz group, the scalar field in the centre, and the dual equivalence of the Dirac and topological massive gauge fields. Their bands are in the tables below.
 
-**The sharp case.** *The Reflection and the Rotation in Biquaternionic Form* is the purest instance. Its subject is the part of the Clifford algebra that $\mathbb{B}$ does not contain, and it says so: "The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative." The sentence is exact about elements. It is not a statement about operations: the article's own section *Conjugation by $\gamma^0$ Is Complex Conjugation* shows that the reflection is conjugation by $\gamma^0$, which is the star $\varkappa$ up to the sign $\epsilon(u)$. The odd generator is the intermediate; the operation is biquaternionic. This is the clearest case of the distinction, not the clearest case of an irreducible import.
+**The sharp case.** *The Reflection and the Rotation in Biquaternionic Form* is the purest instance. Its subject is the part of the Clifford algebra that $\mathbb{B}$ does not contain, and it says so: "The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative." The sentence is exact about elements. It is not a statement about operations: the article's own section *Conjugation by $\gamma^0$ Is Complex Conjugation* shows that the reflection is conjugation by $\gamma^0$, which is the coefficient conjugation $\varkappa$ up to the sign $\epsilon(u)$. The odd generator is the intermediate; the operation is biquaternionic. This is the clearest case of the distinction, not the clearest case of an irreducible import.
 
-The first part is an inventory. The second part is the replacement study. The answer is yes, but not uniformly: **32 of the 51 band-1 articles can be rewritten by substitution in the biquaternion formalism; 19 cannot without deleting their subject.** No article needs the odd generator $\mathbb{B}\oplus\mathbb{B}\gamma$ to do its physics. The star $\varkappa(b)=\bar b$ is needed only where an antilinear operation appears: parity, charge conjugation, time reversal, the Dirac adjoint, the real structure. The double is needed only where the odd element is the object. §*The Split: What Can Be Rewritten, and What Cannot* gives both lists and the reasons. §*The Gamma Matrices as Biquaternion Operations* gives the dictionary.
+The first part is an inventory. The second part is the replacement study. The answer is yes, but not uniformly: **32 of the 51 band-1 articles can be rewritten by substitution in the biquaternion formalism; 19 cannot without deleting their subject.** No article needs the odd generator $\mathbb{B}\oplus\mathbb{B}\gamma$ to do its physics. The coefficient conjugation $\varkappa(b)=\bar b$ is needed only where an antilinear operation appears: parity, charge conjugation, time reversal, the Dirac adjoint, the real structure. The graded double is needed only where the odd element is the object. §*The Split: What Can Be Rewritten, and What Cannot* gives both lists and the reasons. §*The Gamma Matrices as Biquaternion Operations* gives the dictionary.
 
 ## The Split: What Can Be Rewritten, and What Cannot
 
@@ -32,7 +32,7 @@ Thirty-two of the 51 band-1 articles can be rewritten, or need no rewrite at all
 
 ### A. Articles That Can Switch to the Biquaternion Formalism
 
-The rewrite uses the operations of §*The Gamma Matrices as Biquaternion Operations*: the product, the left and right multiplications, and the star $\varkappa(b)=\bar b$ only where an antilinear operation appears. No article in this part needs the odd generator $\mathbb{B}\oplus\mathbb{B}\gamma$.
+The rewrite uses the operations of §*The Gamma Matrices as Biquaternion Operations*: the product, the left and right multiplications, and the coefficient conjugation $\varkappa(b)=\bar b$ only where an antilinear operation appears. No article in this part needs the odd generator $\mathbb{B}\oplus\mathbb{B}\gamma$.
 
 #### A1. The Dirac equation and its solutions (11)
 
@@ -111,7 +111,7 @@ These 19 are not a backlog. Each has an obstacle that a notation change does not
 |---|---|
 | [The Reflection and the Rotation](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) | The Pin group, the grading and the determinant table are the theorem; the operations can be stated in $\mathbb{B}$, but the article is about the odd half. |
 | [The Grading, Fermion Parity and the Two Sectors](../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html) | The $\mathbb{Z}/2$ grading and the odd slot are the object; $\mathbb{B}$ is the even slot. Its subject is the grading, so it stays in $\mathrm{Cl}$. |
-| [The Superalgebra Reading and the Odd Extension](../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html) | The graded commutator and the odd extension are the object; the double is the algebra being studied. |
+| [The Superalgebra Reading and the Odd Extension](../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html) | The graded commutator and the odd extension are the object; the graded double is the algebra being studied. |
 | [Supersymmetric Quantum Physics](../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html) | The supercharge is odd; the graded algebra is the frame. |
 | [The Spectral Triple](../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html) | The Dirac operator, the real structure and the grading define the triple; $\mathbb{B}$ has no Dirac operator without the module. |
 | [Left-Right Symmetric Fermions](../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html) | The bioctonion algebra is the point; it is larger than $\mathbb{B}$. |
@@ -180,7 +180,7 @@ Six imports make up the layer.
 | the generators | $\gamma^\mu$ | 4 odd | no |
 | the pseudoscalar | $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | grade 4, even | even, not odd |
 | the chirality element | $\gamma^5=i\omega$ | grade 4, even | even, not odd |
-| the reflection group | $\mathrm{Pin}(1,3)$ | odd coset of $\mathrm{Spin}$ | no |
+| the reflection group | $\mathrm{Pin}(1,3)$ | even part plus odd part; only the even part is in $\mathbb{B}$ | no |
 | the dictionary map | $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ | 8 real | isomorphism |
 
 The even part is not the problem. $\omega$ and $\gamma^5$ are even, and the chirality projectors $\tfrac12(1\pm\gamma^5)$ are even. The problem is the first, second and fifth rows: the generators, the odd part they span, and the reflection group built from them.
@@ -211,6 +211,8 @@ The dictionary is a chain of isomorphisms, and the audit's vocabulary is exact o
 |---|---|
 | [The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$](../articles_maths/the-m1-m3-corner-of-m4c.html) | the Peirce corner, the block multiplication and the spin chain |
 | [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html) | $\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4$, the gamma relations and the trace orthogonality |
+| [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) | $T_{\mu\nu}=L_\mu R_\nu$, the sixteen signed permutations, the gamma frame and its non-canonicity |
+| [The Coefficient Matrix of a Two-Sided Operator — A Worked Computation](../articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html) | a worked check of the frame $\gamma^0=iT_{tx}$, $\gamma^k=iT_{e_k,y}$, $\gamma_5=-iT_{tz}$ |
 | [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](../articles_maths/the-lie-algebra-gl4-and-sl4-of-m4c.html) | the bracket, the roots and the five real forms |
 | [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](../articles_maths/the-derivations-and-the-automorphisms-of-m4c.html) | $\operatorname{Der}=\operatorname{ad}\mathfrak{sl}_4$ and $\operatorname{Aut}=PGL_4$ |
 | [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](../articles_maths/the-kronecker-factorisation-of-m4c.html) | $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ and the two commuting copies |
@@ -229,6 +231,69 @@ The dictionary is a chain of isomorphisms, and the audit's vocabulary is exact o
 
 With the frame displayed, the replacement question is sharpened: it is not "can $\mathbb{B}$ do the work of $M_4$" — it cannot, by dimension — but "can the operations on $\mathbb{B}$ be written without the matrix representation". Part II answers that question.
 
+## The $M_4(\mathbb{C})$ Layer: The Convention in One Place
+
+The physics inventory counts the Clifford layer in the physics corpus. The mathematical layer it imports is written in the $44$ articles of the $M_4(\mathbb{C})$ category. The convention is not stated in one article; it is a chain of choices, and the chain is what a rewrite must respect.
+
+**The convention.** The metric is $g=\operatorname{diag}(1,-1,-1,-1)$. The sixteen two-sided operators are $T_{\mu\nu}=L_\mu R_\nu$; the five gammas are five of them up to the scalar $i$,
+$$
+\gamma^0=iT_{tx},\qquad
+\gamma^k=iT_{e_k,y},\qquad
+\gamma_5=-iT_{tz},
+$$
+with $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$. The names $e_x,e_y,e_z$ are the three imaginary quaternion units; the index $y$ in the spatial gammas is the chirality direction. The odd slot is $\mathbb{B}u$ for a unit timelike $u$, a left $\mathbb{B}$-module with the product rule
+$$
+(b_1+b_2u)(c_1+c_2u)=b_1c_1+b_2\theta(c_2)+\bigl(b_1c_2+b_2\theta(c_1)\bigr)u,
+\qquad \theta(c)=u\,c\,u .
+$$
+The coefficient conjugation is $\varkappa(b)=\bar b$. The Pin group is the norm-$\pm1$ versor group; the spin group is its norm-one even component. The reflection is $\rho_\xi(\eta)=-\varepsilon(\xi)\xi\eta\xi$ with $\varepsilon(\xi)=q(\xi)=\xi^2$. The regular trace is the sum of the vector and axial Dirac traces, $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,\gamma_5}$. The frame is not canonical: a different orthonormal pair $(\beta,\delta)$ gives a different five-element subset of the sixteen $T_{\mu\nu}$.
+
+**Where the Clifford convention lies.** The broad table above, *Where the algebra is written*, lists seventeen articles that write the algebra of the category; the ten below are the ones that fix the Clifford convention itself. The two additions to the broad table are the two-sided method, which constructs the $T_{\mu\nu}$ and chooses the frame, and the coefficient computation, which checks the choice on a worked example.
+
+| article | what it fixes |
+|---|---|
+| [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) | $T_{\mu\nu}=L_\mu R_\nu$, the sixteen signed permutations and the gamma frame |
+| [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html) | $\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4$, the relations, the trace orthogonality and the non-canonicity |
+| [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html) | the grade table, the odd slot $\mathbb{B}u$ and the product rule |
+| [The Pin Group of the Gamma Frame](../articles_maths/the-pin-group-of-the-gamma-frame.html) | Pin/Spin, the reflection formula and the finite group |
+| [The Clifford Group and the Frame Stabiliser](../articles_maths/the-clifford-group-and-the-frame-stabiliser.html) | $\Gamma\to O(4,\mathbb{C})$, the spin group and the stabilisers |
+| [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html) | the bar, the natural conjugation, the star and the two dictionaries |
+| [The Vector and the Axial Traces of $M_4(\mathbb{C})$](../articles_maths/the-vector-and-the-axial-traces-of-m4c.html) | the vector and axial traces and the trace identity |
+| [The Coefficient Matrix of a Two-Sided Operator — A Worked Computation](../articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html) | a worked check of the frame |
+| [The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$](../articles_maths/the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html) | $G=\{\pm T_{\mu\nu}\}\cong Q_8\circ Q_8$, of order $32$ |
+| [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](../articles_maths/the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html) | the bivectors, $\mathfrak{so}(4,\mathbb{C})$ and the Pfaffian |
+
+The spectral, topological and decomposition articles are independent of the Clifford frame once the matrix algebra is fixed.
+
+**The three routes, read in the $M_4(\mathbb{C})$ layer.** The element route is closed by the dimension count: $\mathrm{Cl}(1,3)$ is sixteen real, $\mathbb{B}$ is eight, and no product of even elements is odd. The action route is open and is written: the coefficient conjugation and the left multiplications are real-linear operators on $\mathbb{B}$, and the $T_{\mu\nu}$ are the complex-linear frame. The derivation route is closed where the classification, the Pin group or the trace is the theorem; the $M_4(\mathbb{C})$ articles state those structures but do not derive them from $\mathbb{B}$. This is the same three-way split as §*Three Meanings of Replacement*, now with the matrix layer displayed.
+
+| route | form | verdict |
+|---|---|---|
+| element | no odd element in $\mathbb{B}$ | closed by dimension |
+| action | $\gamma^0=\varkappa$, $\gamma^k=\varkappa L_{-i\vec e_k}$ on $\mathbb{B}$ | open; the recommended route |
+| double | $\mathbb{B}\oplus\mathbb{B}\gamma$, one odd generator | open; optional, for the graded articles |
+| derivation | $\mathrm{Cl}(1,3)$ and its classification from $\mathbb{B}$ | closed; the theorems are about $\mathrm{Cl}$ |
+
+**The corrections made in the review.** The review of the $44$ articles found and fixed substantive errors. They are recorded here because they change the convention, not only the prose.
+
+| article | correction |
+|---|---|
+| [The Pin Group of the Gamma Frame](../articles_maths/the-pin-group-of-the-gamma-frame.html) | The even part of Pin is $\mathrm{Spin}\cup\zeta\,\mathrm{Spin}$, not $\mathrm{Spin}$ alone; $\mathrm{Spin}$ is the norm-one component. The four-coset decomposition, the determinant paragraph, the finite group and the summary are corrected. |
+| [The $\mathbb{Z}$-Grading and the Odd Slot](../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html) | The odd product rule carries $\theta(c)=u c u$ in the second factor; without it the square of an odd element is wrong. |
+| [The Gamma Frame and the Complexified Dirac Algebra](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html) | The spin group is the norm-one part of the even Clifford group, not the even part itself. |
+| [The Clifford Group and the Frame Stabiliser](../articles_maths/the-clifford-group-and-the-frame-stabiliser.html) | $\mathrm{Spin}(4,\mathbb{C})\cong SL_2(\mathbb{C})\times SL_2(\mathbb{C})$; the quotient by the simultaneous sign is $SO(4,\mathbb{C})$, not $\mathrm{Spin}(4,\mathbb{C})$. The complex Pin is the norm-$\pm1$ part. |
+| [The Quartic, the Discriminant and the Spectral Strata](../articles_maths/the-quartic-the-discriminant-and-the-spectral-strata-of-m4c.html) | The Ferrari root is $z=-u^2$, not $+u^2$. |
+| [Spectral Theory and the Spectral Projectors](../articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html) | The Laurent coefficient is $N^{k-1}$, not $N^k$; $N_1=P$. |
+| [The Star and the Conjugate-Linear Operators](../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html) | The conjugate-linear product is $S'_b={}^{*}\circ R_{b^{*}}$, not $L_b\circ{}^{*}$. |
+| [The Antisymmetric Sector, the Pfaffian and the Klein Quadric](../articles_maths/the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html) | The Pfaffian vanishes on rank at most two, not exactly on rank two. |
+| [The Topology of $M_4(\mathbb{C})$](../articles_maths/the-topology-of-m4c.html) | The determinant of the tautological bundle over $\operatorname{Gr}(p,4)$ has first Chern class the negative of the hyperplane class; the Plücker bundle has the positive class. |
+| [The Three-Parameter Gauge and the Chiral Polar Decomposition](../articles_maths/the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html) | The polar factor is a $*$-unitary mixing, not one phase; only its determinant contributes one phase. |
+| [The Quaternionic Structure and the Real Forms](../articles_maths/the-real-forms-of-m4c.html) | $SU^{*}(4)\cong Spin(5,1)$, not $SO(5,1)$; the maximal compact is $Sp(2)$. |
+| [The $M_1\oplus M_3$ Corner](../articles_maths/the-m1-m3-corner-of-m4c.html) | The corner summary states $L(G)$ of dimension $12$, the gauge $3$ and the frame $15$; it no longer calls the gauge the four-torus. |
+| [Roots of Unity and the Lagrange Idempotents](../articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m4c.html) | The root-set paragraph refers to $\operatorname{PGL}_4/T$, not to the article itself. |
+
+These corrections are local. They do not change the algebra of the replacement, the counts of the physics inventory, or the three-way split. They change the convention that a rewrite must cite, which is the point of the review.
+
 ## The Odd-Sector Theorem
 
 The obstruction is elementary and exact.
@@ -241,7 +306,7 @@ Three consequences follow, and together they are the content of this article.
 
 - **The odd elements are not recoverable.** They are not hidden in $\mathbb{B}$ under another name. They are the other half of a larger algebra, and the isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}$ is precisely the statement that the other half is absent.
 - **The operations that need them are not inner.** Parity, time reversal, charge conjugation, reflection and the Dirac adjoint are module maps. They act on the spinor module, not on $\mathbb{B}$ by left multiplication. They cannot be written as $X\mapsto UXU^{-1}$ or $X\mapsto UXU^{*}$ with $U\in\mathbb{B}$. As real-linear operations on $\mathbb{B}$ they are $\varkappa$ and $\varkappa L_b$; as elements they are inner in $\mathbb{B}\oplus\mathbb{B}\gamma$, but not in $\mathbb{B}$.
-- **The absence is structural for elements, not for operations.** A change of basis inside $\mathbb{B}$ cannot supply an odd element. Only an enlargement of the algebra can, and the minimal enlargement is one generator, $\mathbb{B}\oplus\mathbb{B}\gamma$. The physics does not need the enlargement: parity, time reversal, charge conjugation and the Dirac adjoint are the star and left multiplication on $\mathbb{B}$, as §*Element, Operation, Carrier* shows. The enlargement is needed only when an odd *element* is wanted, as in the superalgebra.
+- **The absence is structural for elements, not for operations.** A change of basis inside $\mathbb{B}$ cannot supply an odd element. Only an enlargement of the algebra can, and the minimal enlargement is one generator, $\mathbb{B}\oplus\mathbb{B}\gamma$. The physics does not need the enlargement: parity, time reversal, charge conjugation and the Dirac adjoint are the coefficient conjugation and left multiplication on $\mathbb{B}$, as §*Element, Operation, Carrier* shows. The enlargement is needed only when an odd *element* is wanted, as in the superalgebra.
 
 The last point separates this layer from the gauge layer. The gauge articles write an external index $\mu$; the Clifford articles write an external grading. Both are outside $\mathbb{B}$ as elements. The gauge index has no known replacement inside the algebra; the odd sector has one: the operations $\varkappa L_b$ on $\mathbb{B}$.
 
@@ -256,7 +321,7 @@ The odd-sector theorem is exact, and its scope must be read precisely. It answer
 | Is there an odd **action** on a biquaternion carrier? | yes | real-linear operator |
 | Is there an algebra generated by $\mathbb{B}$ and one odd generator? | yes, $\mathbb{B}\oplus\mathbb{B}\gamma\cong\mathrm{Cl}_{1,3}$ | graded algebra |
 
-The distinction is between an **element** and an **operation**. The star $\bar{\cdot}$ is not an element of $\mathbb{B}$; it is a real-linear operation on $\mathbb{B}$. The left multiplication $L_b$ is an operation; the element $b$ is its parameter. The odd generators are not elements of $\mathbb{B}$, but they are operations on $\mathbb{B}$:
+The distinction is between an **element** and an **operation**. The coefficient conjugation $\bar{\cdot}$ is not an element of $\mathbb{B}$; it is a real-linear operation on $\mathbb{B}$. The left multiplication $L_b$ is an operation; the element $b$ is its parameter. The odd generators are not elements of $\mathbb{B}$, but they are operations on $\mathbb{B}$:
 $$
 \gamma^0=\varkappa,\qquad \gamma^k=\varkappa L_{-i\vec e_k}=L_{i\vec e_k}\varkappa,
 $$
@@ -289,7 +354,7 @@ The decisive sentence is in §*One Algebra, Read Twice*:
 
 > The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group.
 
-The article then builds the reflection group, the determinant table, the Pin action and the anti-linear case on that outside. The construction is correct. In the vocabulary fixed in §*The Operator Vocabulary*, the Pin map is an **inner conjugation** $T_{u,u^{-1}}$, up to the sign $\epsilon(u)$, not a generic two-sided operator with independent parameters. The title is right about operations: the article's own §*Conjugation by $\gamma^0$ Is Complex Conjugation* proves that conjugation by $\gamma^0$ is the star $\varkappa$ on $\mathbb{B}$, so the reflection is a biquaternion operation. The odd objects are not elements of $\mathbb{B}$; they are the real-linear operations $\varkappa$ and $\varkappa L_b$. Read as a statement about elements, the title is wrong; read as a statement about operations, it is right. The distinction is the one §*Element, Operation, Carrier* makes.
+The article then builds the reflection group, the determinant table, the Pin action and the anti-linear case on that outside. The construction is correct. In the vocabulary fixed in §*The Operator Vocabulary*, the Pin map is an **inner conjugation** $T_{u,u^{-1}}$, up to the sign $\epsilon(u)$, not a generic two-sided operator with independent parameters. The title is right about operations: the article's own §*Conjugation by $\gamma^0$ Is Complex Conjugation* proves that conjugation by $\gamma^0$ is the coefficient conjugation $\varkappa$ on $\mathbb{B}$, so the reflection is a biquaternion operation. The odd objects are not elements of $\mathbb{B}$; they are the real-linear operations $\varkappa$ and $\varkappa L_b$. Read as a statement about elements, the title is wrong; read as a statement about operations, it is right. The distinction is the one §*Element, Operation, Carrier* makes.
 
 This is the clearest single case in the corpus because the subject and the obstruction coincide. In the other articles the odd element is a tool; here it is the topic.
 
@@ -299,7 +364,7 @@ This is the clearest single case in the corpus because the subject and the obstr
 
 As a dictionary, the article is exact. As a source, it is the root of the layer: once $\mathsf{M}_4$ is fixed, the odd part is available, and the downstream articles use it. The dictionary carries 41 Clifford symbols, 88 occurrences of $\mathsf{M}_4$ and four explicit matrix blocks. The Dirac equation article, which imports the same structure, is cited by 30 physics articles.
 
-The distinction matters for the count. A dictionary is a bridge; the problem is that the bridge became the road. In the replacement interpretation, the dictionary is the even half of the isomorphism of Part II: it identifies $\mathbb{B}$ with $\mathrm{Cl}^+_{1,3}$, and the odd half is the operators $\varkappa L(\mathbb{B})$, or the single module $\mathbb{B}\gamma$ in the double presentation. The matrix dictionary becomes a translation table again, and the biquaternion algebra is the road.
+The distinction matters for the count. A dictionary is a bridge; the problem is that the bridge became the road. In the replacement interpretation, the dictionary is the even half of the isomorphism of Part II: it identifies $\mathbb{B}$ with $\mathrm{Cl}^+_{1,3}$, and the odd half is the operators $\varkappa L(\mathbb{B})$, or the single module $\mathbb{B}\gamma$ in the graded presentation. The matrix dictionary becomes a translation table again, and the biquaternion algebra is the road.
 
 ## The Odd Part in Use
 
@@ -509,7 +574,7 @@ The useful replacement is the second. It preserves the physics because it is an 
 
 ### The Odd Extension: $\mathbb{B}\oplus\mathbb{B}\gamma$
 
-This section describes the clean presentation of the odd sector. It is **not** needed for the physics: the biquaternion product carries the even sector and the chirality, and the star carries the antilinear operations. The double is the natural presentation when the odd sector is the subject, and it is the form the superalgebra article uses. §*The Gamma Matrices as Biquaternion Operations* gives the operator form.
+This section describes the clean presentation of the odd sector. It is **not** needed for the physics: the biquaternion product carries the even sector and the chirality, and the coefficient conjugation carries the antilinear operations. The graded double is the natural presentation when the odd sector is the subject, and it is the form the superalgebra article uses. §*The Gamma Matrices as Biquaternion Operations* gives the operator form.
 
 The corpus already contains the algebra. *The Superalgebra Reading and the Odd Extension* states that one odd generator suffices: $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$. What it does not state in the form needed here is the multiplication rule and the dictionary of the four generators. They are as follows.
 
@@ -543,6 +608,8 @@ as follows from $\gamma b=\bar b\gamma$ and $\vec e_j\vec e_k+\vec e_k\vec e_j=-
 
 The theorem was checked on the eight-real basis: the product is associative on random elements, the four generators satisfy $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, the volume element is $i$ in the ordering above, and it anticommutes with all four generators. The check is elementary and is recorded because the signs are easy to get wrong.
 
+**The general case.** The theorem fixes one involution, $\theta=\bar{\cdot}$, and one sign, $\gamma^2=+1$. The general graded double allows any conjugate-linear involution $\theta$; different $\theta$ give non-isomorphic algebras. §*The Several Doubles* classifies them and places this theorem as the physical case.
+
 **What the theorem buys.** The four $4\times4$ gamma matrices are replaced by one odd unit $\gamma$ and the three biquaternion units $i\vec e_k$. The $4\times4$ matrix algebra is replaced by the $2\times2$ biquaternion multiplication table. The algebra is still sixteen-real-dimensional; the odd sector is still there, but it is **one generator**, not four matrices. The physical operations are read in this algebra, up to the phases fixed by the dictionary:
 
 | Clifford object | biquaternion form in $\mathbb{B}\oplus\mathbb{B}\gamma$ |
@@ -557,11 +624,57 @@ The theorem was checked on the eight-real basis: the product is associative on r
 
 The chirality operator needs a word of caution. In the real algebra the volume element is an even element with $\omega^2=-1$; the physical chirality involution is the complexification $i_{\mathrm{ext}}\omega$, and the external $i_{\mathrm{ext}}$ is not the biquaternion scalar $i$ that represents $\omega$. The corpus fixes the relation in *The Dirac Algebra and Biquaternions — A Dictionary*; the replacement theorem is independent of the sign, but every rewrite must use the dictionary's convention and must not conflate the two $i$'s.
 
-**The price of the double.** The double keeps the odd sector as an *element*. The carrier is $\mathbb{B}$ (eight real) and the odd slot is $\mathbb{B}\gamma$ (eight real); the full algebra is sixteen real. The $4\times4$ matrix representation is gone, but one odd symbol remains. The physics is preserved by the isomorphism; the interpretation changes: the gamma matrices are no longer a matrix representation of vectors, they are one odd unit times biquaternion elements.
+### The Several Doubles, and What They Preserve
+
+The theorem above is one double, not *the* double. It fixes the involution $\theta=\bar{\cdot}$ and the sign $\gamma^2=+1$. The general graded double is
+$$
+A=B\oplus B\gamma,\qquad \gamma^2=\varepsilon,\qquad \gamma b=\theta(b)\gamma,
+$$
+where $\theta$ is an involution of $B$ and $\varepsilon=\pm1$. For a real Clifford double $\theta$ must be conjugate-linear, because $\gamma$ must anticommute with the volume element $i$; a complex-linear $\theta$ leaves $i$ central and gives the complex Clifford algebra $\mathrm{Cl}(4,\mathbb{C})$, not a real form. Beyond the graded double there are the chiral, matrix and enveloping doubles. They are distinguished by the center, the kernel and the module.
+
+**Definition (presentation).** A *biquaternion presentation of the Dirac layer* is a tuple $(A,\iota,M,\pi)$ with $A$ a real algebra of real dimension $16$, or a complex algebra of complex dimension $16$ (real dimension $32$), $\iota:B\hookrightarrow A$ an injective algebra map, $M$ a left $A$-module that is a complex vector space of dimension $4$ (or a real vector space of dimension $4$ whose complexification is such a space), and $\pi:A\to\operatorname{End}_\mathbb{R}(M)$ the representation. The invariants are the center $Z(A)$, the kernel of the contraction $A\to B$, the kernel of the representation $\pi$, and the commutant $\operatorname{End}_A(M)$.
+
+The graded doubles are those where $\iota(B)$ is the even part of a $\mathbb{Z}/2$-grading. The matrix and enveloping doubles are operator presentations: $\iota(B)$ is a diagonal or one-sided copy, and the even part of the natural grading is larger than $B$.
+
+**The graded doubles.** Write $\theta=\operatorname{Ad}_U\circ\bar{\cdot}$ with $U\in B^\times$. Then
+$$
+\theta^2=\operatorname{Ad}_{U\bar U},
+$$
+so $\theta$ is an involution exactly when $U\bar U$ is central. The two conjugacy classes are represented by $U=1$ and by a unit imaginary quaternion $U$. The invariant is the fixed algebra $B^\theta$, a real form of $B$: it is $\mathbb{H}$ in the first case and $M_2(\mathbb{R})$ in the second. The two simple graded doubles are
+$$
+B\oplus B\gamma\cong
+\begin{cases}
+M_2(\mathbb{H}), & B^\theta=\mathbb{H},\\[2pt]
+M_4(\mathbb{R}), & B^\theta=M_2(\mathbb{R}).
+\end{cases}
+$$
+The first is the physical $\mathrm{Cl}(1,3)$; the second is the split real form, $\mathrm{Cl}(2,2)$ in the standard table. Both have center $\mathbb{R}$. They are distinguished by the module: $M_2(\mathbb{H})$ acts on $\mathbb{H}^2$, of real dimension $8$ and complex dimension $4$; $M_4(\mathbb{R})$ acts on $\mathbb{R}^4$, of real dimension $4$. The Dirac spinor is the first; the second is the split real form, whose complexification is the Dirac module.
+
+**The chiral double.** If $\theta=\mathrm{id}$, the generator $\gamma$ is central and $A=B\oplus B\gamma\cong B\oplus B$. With $\gamma^2=-1$ this is $B[j]=B\otimes_\mathbb{R}\mathbb{C}$; its center is $\mathbb{C}\oplus\mathbb{C}$, and the two central idempotents $(1\pm ij)/2$ are the chiral projectors. The projection onto one factor has kernel the other factor. The chiral double is the algebra of the two chiralities, not of the Dirac spinor: the mass term couples the two factors and is off-diagonal.
+
+**The complex doubles.** The matrix double $M_2(B)=B\otimes_\mathbb{C}M_2(\mathbb{C})\cong M_4(\mathbb{C})$ and the enveloping double $B\otimes_\mathbb{C}B^{\mathrm{op}}\cong M_4(\mathbb{C})$ are the same algebra with different distinguished copies of $B$. Both have center $\mathbb{C}$ and a faithful module $\mathbb{C}^4$. The contraction $M_2(B)\to B$ is the trace, with kernel $\mathfrak{sl}_2(B)$ of complex dimension $12$; the contraction $B\otimes B^{\mathrm{op}}\to B$ is the multiplication, with kernel the augmentation ideal, also of complex dimension $12$. These are the doubles that keep the central $i$; the real graded double does not.
+
+**The table.**
+
+| double | $A$ | $\dim_\mathbb{R}$ | $Z(A)$ | contraction kernel | $\ker\pi$ | module |
+|---|---|---|---|---|---|---|
+| graded, $\theta=\bar{\cdot}$ | $M_2(\mathbb{H})$ | 16 | $\mathbb{R}$ | $B\gamma$, real 8 | 0 | $\mathbb{H}^2$, $\mathbb{R}^8$ |
+| graded, $\theta=\operatorname{Ad}_U\circ\bar{\cdot}$, $U\bar U=-1$ | $M_4(\mathbb{R})$ | 16 | $\mathbb{R}$ | $B\gamma$, real 8 | 0 | $\mathbb{R}^4$ |
+| chiral, $\theta=\mathrm{id}$ | $B\oplus B$ | 16 | $\mathbb{C}\oplus\mathbb{C}$ | the other factor, complex 4 | the other factor | $\mathbb{C}^2$ |
+| matrix | $M_4(\mathbb{C})$ | 32 | $\mathbb{C}$ | $\mathfrak{sl}_2(B)$, complex 12 | 0 | $\mathbb{C}^4$ |
+| enveloping | $M_4(\mathbb{C})$ | 32 | $\mathbb{C}$ | augmentation ideal, complex 12 | 0 | $B$ |
+
+The module double $\Delta=S\oplus S^{\mathrm{c}}$ is the carrier of the first two rows, not a sixth algebra. For the chiral double the module column is one chirality; on the full module $\mathbb{C}^2\oplus\mathbb{C}^2=\mathbb{C}^4$ the representation is faithful and the kernel is zero.
+
+**The left ideals.** The minimal left ideals of $B$ are the $B\Pi$ for rank-one idempotents $\Pi$; they are all isomorphic to $\mathbb{C}^2$, and their set is $\mathbb{P}^1(\mathbb{C})$. The left ideal is the natural carrier of a spinor: the algebra acts on it by left multiplication, and the idempotent $\Pi$ is the polarization that cuts it out. The Peirce decomposition $B=B\Pi\oplus B(1-\Pi)$ gives the two chiralities. But the ideal is only the module; the idempotent, the complement and the right action are extra data. On the doubles the classification is one class per simple factor: $\mathbb{H}^2$ for $M_2(\mathbb{H})$, $\mathbb{R}^4$ for $M_4(\mathbb{R})$, $\mathbb{C}^4$ for $M_4(\mathbb{C})$, and two classes $\mathbb{C}^2,\mathbb{C}^2$ for $B\oplus B$. This is the whole of the left-ideal classification, and it is blind to the center, the kernel and the commutant. It does not see the center: the central $i$ acts as a scalar on the module, and a double with a larger center has more scalars. It does not see the kernel: faithfulness is a property of the representation, not of the module, and the chiral projection has a kernel that the module isomorphism does not show. It does not see the commutant: the right action $\operatorname{End}_A(M)$ is what supplies chirality and the mass pairing. The correct classification is by the triple $(A,M,\operatorname{End}_A(M))$ together with $Z(A)$ — the Morita datum — not by the left ideal alone.
+
+**Which double for which article.** The real Dirac equation, the discrete operations and the Pin group use the graded double $\mathrm{Cl}(1,3)$: $P$ and $C$ are the coefficient conjugation composed with left multiplication, $T$'s internal matrix is even, and the reflection is the coefficient conjugation up to sign. The complex-linear gamma frame, the trace and the operator algebra use the matrix double $M_4(\mathbb{C})$, where the central $i$ is an element and the gammas are the $T_{\mu\nu}$. The chiral projectors and the mass term use the chiral double $B\oplus B$, where they are the two central idempotents and the off-diagonal pairing. The superalgebra uses the graded double with the odd element explicit. No article needs more than one double at a time; the dictionary between them is the dictionary of §*The Bimodule Reading*.
+
+**The price, restated.** The graded double keeps the odd sector as an element and loses the central $i$; the matrix double keeps the central $i$ and complexifies the grading; the chiral double keeps the projectors and loses the other chirality under projection. The physics is preserved because each double is isomorphic to the same Clifford algebra on the module it is built for. The choice is a choice of which invariant to make manifest, not a choice of physics.
 
 ### The Gamma Matrices as Biquaternion Operations
 
-The odd symbol is not necessary for the physics. The product alone carries the even sector; the star is added only where an antilinear operation appears. On $\mathbb{B}$ define the coefficient conjugation $\varkappa(b)=\bar b$ and the left multiplication $L_a(b)=ab$. Then
+The odd symbol is not necessary for the physics. The product alone carries the even sector; the coefficient conjugation is added only where an antilinear operation appears. On $\mathbb{B}$ define the coefficient conjugation $\varkappa(b)=\bar b$ and the left multiplication $L_a(b)=ab$. Then
 $$
 \Gamma^0=\varkappa,\qquad \Gamma^k=\varkappa L_{-i\vec e_k}=L_{i\vec e_k}\varkappa
 $$
@@ -569,7 +682,7 @@ are real-linear operators on $\mathbb{B}$. They satisfy the Clifford relations
 $$
 (\Gamma^0)^2=\mathrm{id},\qquad (\Gamma^k)^2=-\mathrm{id},\qquad \Gamma^\mu\Gamma^\nu+\Gamma^\nu\Gamma^\mu=2g^{\mu\nu}\mathrm{id},
 $$
-and the sixteen products $\mathrm{id}$, $\Gamma^\mu$, $\Gamma^\mu\Gamma^\nu$, $\Gamma^\mu\Gamma^\nu\Gamma^\rho$, $\Gamma^0\Gamma^1\Gamma^2\Gamma^3$ are linearly independent. The carrier is $\mathbb{B}$ (eight real), the even operators are $L(\mathbb{B})$, the odd operators are $\varkappa L(\mathbb{B})$, and no symbol is added. The star is part of the biquaternion structure, not an extra import: it is the coefficient conjugation that distinguishes $\mathbb{B}=\mathbb{C}\otimes\mathbb{H}$ from $\mathbb{H}$. The identification of this left-regular model with the physical Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ is the real-linear Daviau dictionary of §*The Bimodule Reading*, not the identity; the model is isomorphic to $\Delta$ as a $\mathrm{Cl}$-module, but the isomorphism is not $\mathbb{B}$-linear.
+and the sixteen products $\mathrm{id}$, $\Gamma^\mu$, $\Gamma^\mu\Gamma^\nu$, $\Gamma^\mu\Gamma^\nu\Gamma^\rho$, $\Gamma^0\Gamma^1\Gamma^2\Gamma^3$ are linearly independent. The carrier is $\mathbb{B}$ (eight real), the even operators are $L(\mathbb{B})$, the odd operators are $\varkappa L(\mathbb{B})$, and no symbol is added. The coefficient conjugation is part of the biquaternion structure, not an extra import: it is the bar that distinguishes $\mathbb{B}=\mathbb{C}\otimes\mathbb{H}$ from $\mathbb{H}$. The identification of this left-regular model with the physical Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ is the real-linear Daviau dictionary of §*The Bimodule Reading*, not the identity; the model is isomorphic to $\Delta$ as a $\mathrm{Cl}$-module, but the isomorphism is not $\mathbb{B}$-linear.
 
 This was checked on the eight-real basis: the relations hold and the sixteen products have rank sixteen. The symbol $\varkappa$ is the coefficient conjugation; it is not the corpus's $J=L_{-i}$, the complex structure.
 
@@ -599,11 +712,11 @@ are sixteen distinct signed permutation matrices, linearly independent, a basis 
 
 The algebra of this dictionary is the operator algebra, not one regular image. $L(\mathbb{B})$ and $R(\mathbb{B})$ have complex dimension four each and meet in the scalars, since $L_{e_t}=R_{e_t}=1$, so their sum is seven-dimensional. Their products span the operator algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, whose matrix representation is $M_4(\mathbb{C})$, of complex dimension sixteen (real dimension thirty-two): on the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are the sixteen matrix units. This is why the gammas are $4\times4$, and why neither regular image alone can hold them. The corpus's $M_4(\mathbb{C})_L$ tables are the left factor; in the Peirce basis that image is $\mathrm{diag}(\mathsf M_2(b),\mathsf M_2(b))$, block diagonal, so it preserves the two chiral planes. The gammas exchange the planes and therefore lie outside it.
 
-**The double is the same algebra, written as a direct sum.** $\mathbb{B}\oplus\mathbb{B}\gamma$ is convenient when an article needs the odd sector as an *element*: the supercharge, the graded algebra, a Dirac operator written as one object. It makes the grading manifest. It is not needed for the physics: every odd operator is $\varkappa L_b$, and every product of two odd operators is
+**The graded double is the same algebra, written as a direct sum.** $\mathbb{B}\oplus\mathbb{B}\gamma$ is convenient when an article needs the odd sector as an *element*: the supercharge, the graded algebra, a Dirac operator written as one object. It makes the grading manifest. It is not needed for the physics: every odd operator is $\varkappa L_b$, and every product of two odd operators is
 $$
 (\varkappa L_b)(\varkappa L_c)=L_{\varkappa(b)}\,\varkappa\,\varkappa\,L_c=L_{\varkappa(b)c},
 $$
-an even operator. The double buys one symbol and a direct-sum notation; it does not buy a physical result that the operator form cannot reach. The price of the double is the extra symbol and the sign conventions; the price of the operator form is that the odd generators are real-linear and antilinear, not elements.
+an even operator. The graded double buys one symbol and a direct-sum notation; it does not buy a physical result that the operator form cannot reach. The price of the graded double is the extra symbol and the sign conventions; the price of the operator form is that the odd generators are real-linear and antilinear, not elements.
 
 | Clifford object | double $\mathbb{B}\oplus\mathbb{B}\gamma$ | operator on $\mathbb{B}$ |
 |---|---|---|
@@ -616,7 +729,7 @@ an even operator. The double buys one symbol and a direct-sum notation; it does 
 
 The right action $R(\mathbb{B})$ is not in the sixteen-dimensional algebra generated by $\varkappa$ and $L$; it is the commutant, and it supplies the chirality. The full carrier is $\mathbb{B}$ with $L$, $R$ and $\varkappa$.
 
-The double and the operator form present the same Clifford algebra; the chirality is carried by the right action in the operator form and by the complexified volume element in the double. The rest of this article uses the double when it speaks of odd *elements* and the operator form when it speaks of odd *operations*. The distinction is the one §*Element, Operation, Carrier* makes.
+The graded double and the operator form present the same Clifford algebra; the chirality is carried by the right action in the operator form and by the complexified volume element in the double. The rest of this article uses the graded double when it speaks of odd *elements* and the operator form when it speaks of odd *operations*. The distinction is the one §*Element, Operation, Carrier* makes.
 
 ### The Bimodule Reading: Chirality Is a Right Action
 
@@ -626,13 +739,13 @@ The dictionary in the bimodule picture is:
 
 | Clifford object | biquaternion operation |
 |---|---|
-| $\gamma^0$ | $\varkappa$ (the star) |
+| $\gamma^0$ | $\varkappa$ (the coefficient conjugation) |
 | $\gamma^k$ | $J L_{-i\vec e_k}=L_{i\vec e_k}J$ |
 | $\gamma^5$ | $R_{i\vec e_z}$ on $\mathbb{B}$ (the image of the grading on $\Delta$, up to the volume-element sign) |
 | chiral projectors | $R_{(e_t\pm i\vec e_z)/2}$ |
 | Lorentz action | the left action of $\mathbb{B}$ on $\Delta$ ($b$ on $S$, $\bar b$ on $S^{\mathrm{c}}$), a real-linear action on $\mathbb{B}$ under that dictionary |
 | mass | $m\,\varphi^{*}$ (Daviau) or the off-diagonal chiral pairing |
-| Dirac adjoint | the star composed with the Hermitian conjugation; a real-linear pairing |
+| Dirac adjoint | the star and the coefficient conjugation ($\gamma^0$); a real-linear pairing |
 | trace | the pair of Dirac traces (vector and axial) on $\Delta=S\oplus S^{\mathrm{c}}$, not the regular trace alone |
 
 The trace is the delicate entry. The regular trace on $\mathbb{B}$ is the complex-linear trace of the left-regular representation: for $b=a_0+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$ it is $4a_0$, so the central $i$ has trace $4i$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ the vector trace is $4\operatorname{Re}a_0$ and the axial trace with $\gamma_5$ is $4i\operatorname{Im}a_0$ (up to the overall sign of $\gamma_5$). The regular trace is their sum:
@@ -660,7 +773,7 @@ Two different objects carry the name **two-sided** in the corpus, and **sandwich
 
 A statement about one bivector or one spinor acting by $Q(\cdot)Q^{*}$ is a bilinear-sandwich statement, not a generic two-sided statement, because the second parameter is tied to the first by the star. The bilinear-sandwich family is the image of the graph $b=Q^{*}$ inside the eight-complex-dimensional pair; it is a real cone of dimension seven, and the Lorentz group is a three-complex-dimensional subgroup of it. The full operator algebra is the span of the two-sided family by linear combination, not the two-sided family itself: the family is the cone of decomposable tensors, of complex dimension seven (real dimension fourteen).
 
-**The Clifford translation.** The gamma matrices have two completions, and they must not be conflated. In the real-linear frame the dictionary uses the star and left multiplications, $\gamma^0=\varkappa$ and $\gamma^k=\varkappa L_{-i\vec e_k}$ on the eight-real-dimensional $\mathbb{B}$. In the complex-linear frame it uses single two-sided operators,
+**The Clifford translation.** The gamma matrices have two completions, and they must not be conflated. In the real-linear frame the dictionary uses the coefficient conjugation and left multiplications, $\gamma^0=\varkappa$ and $\gamma^k=\varkappa L_{-i\vec e_k}$ on the eight-real-dimensional $\mathbb{B}$. In the complex-linear frame it uses single two-sided operators,
 $$
 \gamma^0=T_{1,\,i\vec e_x},\qquad \gamma^k=T_{i\vec e_k,\,\vec e_y},\qquad \gamma_5=T_{1,\,-i\vec e_z},
 $$
@@ -685,26 +798,28 @@ The overview *Two-Sided Operators on the Biquaternion Algebra* was rewritten to 
 
 ### Possible Routes to Migrate from Clifford to the Biquaternion Algebra
 
-**Remark (the answer in one line).** Six routes are available. **B** is the biquaternion product with left and right multiplication; it covers the field, the equation, the bilinears, the chiral projectors and the traces. **C** adds the star, and is needed only for the antilinear operations. **D** adds one symbol and is a *presentation* of the same algebra, used when the odd element is the subject. The route is fixed by the operation the article performs, not by its family.
+**Remark (the answer in one line).** Six routes are available. **B** is the biquaternion product with left and right multiplication; it covers the field, the equation, the bilinears, the chiral projectors and the traces. **C** adds the coefficient conjugation, and is needed only for the antilinear operations. **D** adds one symbol and is a *presentation* of the same algebra, used when the odd element is the subject. The route is fixed by the operation the article performs, not by its family.
 
 | route | algebra / carrier | new symbol? | captures | does not capture | use |
 |---|---|---|---|---|---|
 | A left regular | $\mathbb{B}$ acting on itself | no | even sector, Lorentz, gauge, mass | chirality, odd operations, Dirac adjoint | the current "$\mathbb{B}$-valued field" articles |
 | B bimodule | $\mathbb{B}$ with $L$ and $R$ | no | even sector, chirality, $\gamma_5$, traces, mass pairing | antilinear $P/C/T$, odd operators | most of the physics |
-| C $\mathbb{B}$ + star | $\mathbb{B}$ with $L$, $R$, $\varkappa$ | no | full $\mathrm{Cl}_{1,3}$ action: odd operators $\varkappa L_b$, $P$, $C$, $T$, Dirac adjoint | derivation of the gauge group; odd elements as elements | the star, for antilinear operations |
-| D graded double | $\mathbb{B}\oplus\mathbb{B}\gamma$ | yes ($\gamma$) | the odd sector as an element, the graded algebra | $\mathbb{B}$-only purity | presentation for the superalgebra articles |
+| C $\mathbb{B}$ + coefficient conjugation | $\mathbb{B}$ with $L$, $R$, $\varkappa$ | no | full $\mathrm{Cl}_{1,3}$ action: odd operators $\varkappa L_b$, $P$, $C$, $T$, Dirac adjoint | derivation of the gauge group; odd elements as elements | the coefficient conjugation, for antilinear operations |
+| D graded double | $\mathrm{Cl}(1,3)$ or $\mathrm{Cl}(2,2)$, as $\mathbb{B}\oplus\mathbb{B}\gamma$ | yes ($\gamma$) | the odd sector as an element, the graded algebra | the central $i$; the other real form | superalgebra, discrete operations |
 | E complexified $\mathbb{B}[j]$ | $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$ | no | central chirality, chiral projectors, mass pairing | the odd sector | a chiral presentation; equivalent to $\mathbb{B}$ for the traces |
 | F keep $\mathrm{Cl}$ | $\mathrm{Cl}_{1,3}$ | no | everything | $\mathbb{B}$-only purity | structural and classification articles |
 
-The recommendation is route B for the product, route C for the star, route D only where the odd element is the subject, route E where the central chirality is the subject, and route F where the Clifford algebra is the subject. Route C is not a better B: it is B with the star turned on for the articles that perform an antilinear operation. Route D is a presentation of C, not a stronger route.
+The recommendation is route B for the product, route C for the coefficient conjugation, route D only where the odd element is the subject, route E where the central chirality is the subject, and route F where the Clifford algebra is the subject. Route C is not a better B: it is B with the coefficient conjugation turned on for the articles that perform an antilinear operation. Route D is a presentation of C, not a stronger route.
+
+Route D is a family, not one algebra. *The Several Doubles* classifies its two graded forms, $\mathrm{Cl}(1,3)$ and $\mathrm{Cl}(2,2)$, and the chiral, matrix and enveloping doubles, with their centers, their kernels and their modules. A rewrite that says "the double" without naming which one has not fixed the algebra.
 
 The article-by-article assignment is in §*The Split: What Can Be Rewritten, and What Cannot*.
 
 ### Does Any Article Need the Odd Generator?
 
-No. The odd generator is needed only when the odd sector must be an *element*: the supercharge, the graded algebra, a Dirac operator written as one object. Two articles use it that way, and both are about the graded algebra; even they can be written in the operator form. The other forty-nine do not need it: thirty-two can be written with the product, adding the star only where an antilinear operation appears, and seventeen keep the Clifford algebra for their subject or their theorem. §*The Split: What Can Be Rewritten, and What Cannot* gives the article-by-article assignment.
+No. The odd generator is needed only when the odd sector must be an *element*: the supercharge, the graded algebra, a Dirac operator written as one object. Two articles use it that way, and both are about the graded algebra; even they can be written in the operator form. The other forty-nine do not need it: thirty-two can be written with the product, adding the coefficient conjugation only where an antilinear operation appears, and seventeen keep the Clifford algebra for their subject or their theorem. §*The Split: What Can Be Rewritten, and What Cannot* gives the article-by-article assignment.
 
-**What changes in practice.** In the B route, the four $4\times4$ gamma matrices disappear into the product: the field, the bilinears and the projectors are products, and chirality is $R_{i\vec e_z}$. Where the article applies an odd generator or the adjoint, the star is added: $\gamma^0=\varkappa$, $\gamma^k=\varkappa L_{-i\vec e_k}$. In the D presentation, they become one odd unit $\gamma$ and the three biquaternion units $i\vec e_k$. The matrix algebra becomes the $2\times2$ biquaternion multiplication table. In D the chirality is the volume element up to the convention sign; in B and C it is $R_{i\vec e_z}$. The trace becomes the pair of vector and axial Dirac traces on $\Delta=S\oplus S^{\mathrm{c}}$, not the regular trace alone. The signs to fix are: $\varkappa(b)=\bar b$, $\omega=\pm i$, and the external $i$ of the chirality involution, which is not the biquaternion scalar $i$.
+**What changes in practice.** In the B route, the four $4\times4$ gamma matrices disappear into the product: the field, the bilinears and the projectors are products, and chirality is $R_{i\vec e_z}$. Where the article applies an odd generator or the adjoint, the coefficient conjugation is added: $\gamma^0=\varkappa$, $\gamma^k=\varkappa L_{-i\vec e_k}$. In the D presentation, they become one odd unit $\gamma$ and the three biquaternion units $i\vec e_k$. The matrix algebra becomes the $2\times2$ biquaternion multiplication table. In D the chirality is the volume element up to the convention sign; in B and C it is $R_{i\vec e_z}$. The trace becomes the pair of vector and axial Dirac traces on $\Delta=S\oplus S^{\mathrm{c}}$, not the regular trace alone. The signs to fix are: $\varkappa(b)=\bar b$, $\omega=\pm i$, and the external $i$ of the chirality involution, which is not the biquaternion scalar $i$.
 
 **What does not migrate.**
 
@@ -720,8 +835,8 @@ No. The odd generator is needed only when the odd sector must be an *element*: t
 | Dirac equation, mass shell, plane waves | A/B/C | the isomorphism preserves the equation |
 | Lorentz covariance | A/B/C | the left action of the rotor on the module |
 | chirality, chiral projectors | B/C/E | right multiplication or the central sign |
-| parity, charge conjugation, time reversal, $CPT$ | C | the star for the antilinear parts and left multiplication; $T$'s internal matrix is even |
-| Dirac adjoint and bilinears | C | star and Hermitian conjugation; real-linear |
+| parity, charge conjugation, time reversal, $CPT$ | C | the coefficient conjugation for the antilinear parts and left multiplication; $T$'s internal matrix is even |
+| Dirac adjoint and bilinears | C | coefficient conjugation and Hermitian conjugation; real-linear |
 | axial anomaly and $\gamma_5$ traces | B/C/E | the trace must be recomputed; the pair of vector and axial Dirac traces on $\Delta$ is the candidate, not the regular trace alone |
 | spin–statistics | B/C | the graded bracket on the mode operators; $(-1)^F=i\vec e_z\in\mathbb{B}$ |
 | chiral gauge couplings | B/E | the chiral halves are represented; the gauge group is external in both approaches |
@@ -735,8 +850,8 @@ The table is the answer to "does the replacement respect the physical results?" 
 
 The rewrite has a dependency order. The first step is the one the corpus is missing.
 
-1. **Write the calculus.** The algebra is now written in the $M_4(\mathbb{C})$ category: *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states $\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$, the gamma relations, the trace orthogonality and the non-canonicity of the frame; *The Kronecker Factorisation* states $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; *The Quaternionic Structure and the Real Forms* states the two real forms; *The Extraspecial Group* states the discrete structure of the frame. Two operator-theoretic pieces complete the calculus: [The Sylvester Operator and the Kronecker Sum](../articles_maths/the-sylvester-operator-and-the-kronecker-sum-of-m4c.html) treats the difference $L_A-R_B$, its spectrum $\lambda_i(A)-\lambda_j(B)$ and the linear equations $AX-XB=C$, $AX+XB=C$ and $AXB-X=C$; [The Numerical Range and the Field of Values](../articles_maths/the-numerical-range-and-the-field-of-values-of-m4c.html) treats the numerical radius, the elliptical range of the $2\times2$ compressions, and the disk $\cos(\pi/5)$ of the nilpotent chain. The missing piece is the dictionary section itself: the operator dictionary $\varkappa$, $L$ and $R$, the double as an optional presentation, the trace rules and the sign conventions. Every other article should cite it rather than repeat a gamma-matrix convention.
-2. **Rewrite the dictionary.** *The Dirac Algebra and Biquaternions — A Dictionary* is the root. Replace the four matrices by $\varkappa$ and $\varkappa L_{-i\vec e_k}$, and keep the old matrix dictionary as a translation table for the articles not yet rewritten. The double $\mathbb{B}\oplus\mathbb{B}\gamma$ is the optional presentation for the two graded-algebra articles.
+1. **Write the calculus.** The algebra is now written in the $M_4(\mathbb{C})$ category: *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states $\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$, the gamma relations, the trace orthogonality and the non-canonicity of the frame; *The Kronecker Factorisation* states $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; *The Quaternionic Structure and the Real Forms* states the two real forms; *The Extraspecial Group* states the discrete structure of the frame. Two operator-theoretic pieces complete the calculus: [The Sylvester Operator and the Kronecker Sum](../articles_maths/the-sylvester-operator-and-the-kronecker-sum-of-m4c.html) treats the difference $L_A-R_B$, its spectrum $\lambda_i(A)-\lambda_j(B)$ and the linear equations $AX-XB=C$, $AX+XB=C$ and $AXB-X=C$; [The Numerical Range and the Field of Values](../articles_maths/the-numerical-range-and-the-field-of-values-of-m4c.html) treats the numerical radius, the elliptical range of the $2\times2$ compressions, and the disk $\cos(\pi/5)$ of the nilpotent chain. The missing piece is the dictionary section itself: the operator dictionary $\varkappa$, $L$ and $R$, the graded double as an optional presentation, the trace rules and the sign conventions. Every other article should cite it rather than repeat a gamma-matrix convention.
+2. **Rewrite the dictionary.** *The Dirac Algebra and Biquaternions — A Dictionary* is the root. Replace the four matrices by $\varkappa$ and $\varkappa L_{-i\vec e_k}$, and keep the old matrix dictionary as a translation table for the articles not yet rewritten. The graded double $\mathbb{B}\oplus\mathbb{B}\gamma$ is the optional presentation for the two graded-algebra articles.
 3. **Rewrite the Dirac equation and the spinor module.** These are the most cited and they fix the carrier: the bimodule, the left Lorentz action, the right chirality. The Daviau article is the model; it already writes the equation in the space-Clifford form.
 4. **Settle the trace before rewriting the trace articles.** *The Fujikawa Method* and *Anomalies and Anomaly Cancellation* are research tasks, not substitutions: the biquaternion trace, the real-linear determinant and the factor of two must be computed and checked against the known coefficient. Until that check exists, leave them in $\mathrm{Cl}$. Then rewrite the EDM, the chiral condensate, the chiral fermions and the bosonization, which use the projector and the bilinear, not the measure.
 5. **Rewrite the local odd operations.** Zitterbewegung, the nonlinear Dirac equation and canonical quantization are local: the odd operator is $\varkappa L_b$ and the phase is fixed by the dictionary. *The Reflection and the Rotation*, *The CPT Theorem* and *The Spin–Statistics Theorem* stay in $\mathrm{Cl}$ as the reference; add a biquaternion section to them, not a rewrite.
@@ -745,35 +860,37 @@ The rewrite has a dependency order. The first step is the one the corpus is miss
 
 ### Open Questions
 
-1. **The phases of $C$, $P$ and $T$.** The structural form is clear: $P$, $C$ and $T$ are compositions of the star $\varkappa$ with left multiplications. The exact factors, the composition rule for the anti-linear parts and the sign of $\gamma_5$ are convention-dependent and need a dedicated dictionary. The CPT article's open question about a $\mathbb{B}$-intrinsic $C$ and $P$ is answered at the level of operations, not at the level of elements; the phase dictionary is not.
+1. **The phases of $C$, $P$ and $T$.** The structural form is clear: $P$, $C$ and $T$ are compositions of the coefficient conjugation $\varkappa$ with left multiplications. The exact factors, the composition rule for the anti-linear parts and the sign of $\gamma_5$ are convention-dependent and need a dedicated dictionary. The CPT article's open question about a $\mathbb{B}$-intrinsic $C$ and $P$ is answered at the level of operations, not at the level of elements; the phase dictionary is not.
 2. **The trace and the measure.** The regular trace on $\mathbb{B}$ is the sum of the vector and axial Dirac traces: $\operatorname{Tr}_{\mathrm{reg}}(b)=\operatorname{Tr}_{\Delta}(b)+\operatorname{Tr}_{\Delta}(b\gamma_5)$. The Fujikawa measure, the real-linear determinant and the factor of two must be fixed before the anomaly articles can be called rewritten.
 3. **The chiral gauge group.** $\mathbb{B}[j]$ represents the two chiral halves and their projectors. It does not supply an independent $SU(2)_L$; the gauge group is external in both approaches. Whether the bimodule can host the gauge action more naturally than the Clifford module is open.
 4. **The index theorem and the spectral triple.** The Dirac operator in the biquaternion language, the real structure $J$, the grading and the Fredholm index are not yet written. The index is a Clifford/module invariant; a biquaternion computation should reproduce it, but the spectral-triple article is the natural test.
 5. **Spin–statistics.** The star and the graded bracket on the mode operators give the anticommutation and the odd slot. The theorem itself is an import; whether the biquaternion framework can derive the spin–statistics connection, rather than transcribe it, is open.
-6. **The real structure $\flat$ and the star $\varkappa$.** The corpus's Majorana-type pairing $\flat=-{}^{*}$ and the star $\varkappa$ are different maps. The relation between them, and the charge conjugation $C$ built on each, is the subject of the neutrino article and is not settled.
-7. **The Pin group.** The reflection group generated by the odd operators $\varkappa L_u$ or $\gamma b$ carries the sign $\epsilon(u)$ and the determinant table. The biquaternion form of the Pin group and its relation to the versors is open.
+6. **The real structure $\flat$ and the coefficient conjugation $\varkappa$.** The corpus's Majorana-type pairing $\flat=-{}^{*}$ and the coefficient conjugation $\varkappa$ are different maps. The relation between them, and the charge conjugation $C$ built on each, is the subject of the neutrino article and is not settled.
+7. **The Pin group.** The reflection group generated by the odd operators $\varkappa L_u$ or $\gamma b$ carries the sign $\epsilon(u)$ and the determinant table. The $M_4(\mathbb{C})$ category now writes the even Pin and its finite subgroup: *The Pin Group of the Gamma Frame* states that the even Pin is $\mathrm{Spin}\cup\zeta\,\mathrm{Spin}$, that the spin group is the norm-one component $\mathbb{B}^{\times}_1$, and that the frame gives a finite group of order $32$. What remains open is the phase dictionary: the exact identification of the odd cosets with the operations $\varkappa L_b$, the sign of $\gamma_5$, and the action on the physical module.
 8. **The geometric interpretation.** The $\mathbb{Z}$-grading is not manifest: $\mathbb{B}\oplus\mathbb{B}\gamma$ carries only the parity grading, so the split of the odd part into four vectors and four trivectors is recovered from the dictionary, not from the biquaternion product. The algebra still contains the vector subspace, but the presentation does not display it. Whether the framework can supply a geometric interpretation that does not pass through the dictionary is the interpretive price of the route.
 
 ### Findings
 
-- **The audit's headline is too strong.** "The odd sector cannot be removed by notation" is true for elements and for inner operations. It is too strong for actions: the odd generators are real-linear operations on $\mathbb{B}$, $\gamma^0=\varkappa$ and $\gamma^k=\varkappa L_{-i\vec e_k}$. The correct statement is: *the odd sector cannot be removed from the algebra, but it can be carried by the product, the star and left multiplication on $\mathbb{B}$; the odd generator is a presentation, and most articles do not need it.*
-- **The rewrite is not uniform.** The biquaternion formalism carries 32 of the 51 articles: the field, the equation, the bilinears, the chiral projectors and the trace of a product; the star is added only where an antilinear operation appears. The star is needed only for the antilinear operations; the odd generator only where the odd element is the subject. Nineteen cannot be rewritten without deleting their subject: twelve are about the Clifford algebra or its relation to another formalism, and seven need a trace or a representation theorem rebuilt.
+- **The audit's headline is too strong.** "The odd sector cannot be removed by notation" is true for elements and for inner operations. It is too strong for actions: the odd generators are real-linear operations on $\mathbb{B}$, $\gamma^0=\varkappa$ and $\gamma^k=\varkappa L_{-i\vec e_k}$. The correct statement is: *the odd sector cannot be removed from the algebra, but it can be carried by the product, the coefficient conjugation and left multiplication on $\mathbb{B}$; the odd generator is a presentation, and most articles do not need it.*
+- **The rewrite is not uniform.** The biquaternion formalism carries 32 of the 51 articles: the field, the equation, the bilinears, the chiral projectors and the trace of a product; the coefficient conjugation is added only where an antilinear operation appears. The coefficient conjugation is needed only for the antilinear operations; the odd generator only where the odd element is the subject. Nineteen cannot be rewritten without deleting their subject: twelve are about the Clifford algebra or its relation to another formalism, and seven need a trace or a representation theorem rebuilt.
 - **The obstruction catalogue's O22 needs a correction.** Left multiplication is chirality-preserving, not chirality-blind; on the Dirac module it acts as $b\oplus\bar b$, not with the same matrix on both halves. Right multiplication is chirality-sensitive. The conclusion — the chiral gauge group is an import — stands.
-- **One correction on the discrete operations.** Time reversal's internal matrix $\gamma^1\gamma^3=-\vec e_y$ is even and belongs to $\mathbb{B}$; it is parity and charge conjugation that carry odd elements. The first draft's sentence "every one of these is odd", and the CPT row of the odd-object table, said otherwise; both are corrected. The correction changes no count and no split: the CPT article itself states that $T$'s matrix is even, and the replacement of $T$ still needs the star for its antilinear part.
-- **The operator vocabulary is fixed.** *Two-sided* is reserved for $T_{a,b}$ with independent parameters; the single-element congruence is a *sandwich*. The six sector articles have been renamed and the overview rewritten. The mismatch was not cosmetic: it made the Lorentz congruence look like a free two-parameter family and obscured that the gamma matrices are single two-sided operators $T_{a,b}$ in the complex-linear frame — four tensor-basis elements up to the scalar $i$ — and not sandwiches. In the real-linear frame they are star and left multiplications. Neither frame makes them free two-parameter families.
+- **One correction on the discrete operations.** Time reversal's internal matrix $\gamma^1\gamma^3=-\vec e_y$ is even and belongs to $\mathbb{B}$; it is parity and charge conjugation that carry odd elements. The first draft's sentence "every one of these is odd", and the CPT row of the odd-object table, said otherwise; both are corrected. The correction changes no count and no split: the CPT article itself states that $T$'s matrix is even, and the replacement of $T$ still needs the coefficient conjugation for its antilinear part.
+- **The operator vocabulary is fixed.** *Two-sided* is reserved for $T_{a,b}$ with independent parameters; the single-element congruence is a *sandwich*. The six sector articles have been renamed and the overview rewritten. The mismatch was not cosmetic: it made the Lorentz congruence look like a free two-parameter family and obscured that the gamma matrices are single two-sided operators $T_{a,b}$ in the complex-linear frame — four tensor-basis elements up to the scalar $i$ — and not sandwiches. In the real-linear frame they are coefficient conjugation and left multiplications. Neither frame makes them free two-parameter families.
+- **The $M_4(\mathbb{C})$ layer is now audited.** The $44$ articles of the mathematical category were read against the convention they fix. The review corrected the even Pin ($\mathrm{Spin}$ is the norm-one component, not the whole even part), the odd product rule (the $\theta$ in the second factor), the complex spin group ($SL_2\times SL_2$, not its quotient by the simultaneous sign), the Ferrari root ($z=-u^2$), the Laurent coefficient ($N^{k-1}$), the conjugate-linear product (${}^{*}\circ R_{b^{*}}$), the Pfaffian rank range, the Grassmannian determinant sign, the polar parameter count and the $SU^{*}(4)$ group. The list is in §*The $M_4(\mathbb{C})$ Layer: The Convention in One Place*. None of the corrections changes the replacement split.
+- **"The double" is not one algebra.** The graded double is a family. The case $\theta=\bar{\cdot}$ gives $\mathrm{Cl}(1,3)\cong M_2(\mathbb{H})$, with center $\mathbb{R}$ and the Dirac module $\mathbb{H}^2$; the other real form gives $\mathrm{Cl}(2,2)\cong M_4(\mathbb{R})$, with center $\mathbb{R}$ and the real module $\mathbb{R}^4$. The chiral double $B[j]\cong B\oplus B$ has center $\mathbb{C}\oplus\mathbb{C}$ and a nonzero kernel on one chirality; the matrix and enveloping doubles are $M_4(\mathbb{C})$, with center $\mathbb{C}$ and a faithful module. The left-ideal classification gives the module and nothing else: it is blind to the center, the kernel and the commutant. A rewrite must name the double it uses and the invariants it keeps.
 - **The trace is not the regular trace.** The regular trace on $\mathbb{B}$ is the sum of the vector and axial Dirac traces, $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,\gamma_5}$. The central $i$ has trace $4i$ in the regular trace and $0$ in the vector trace. A biquaternion anomaly computation must use the pair, not the regular trace alone.
 - **The physics is preserved by construction.** The replacement is an isomorphism of real algebras. The results that depend on the Clifford action are preserved; the imports (gauge group, scales, spin–statistics, index theorem) remain imports. The replacement adds no prediction and removes none; the trace bullet above is the one representation-level exception.
-- **The value is a simpler presentation.** Four $4\times4$ gamma matrices become the product, with the star only for antilinear operations; in the double they become one odd unit. The matrix algebra becomes the $2\times2$ biquaternion multiplication table; the odd sector becomes explicit instead of hidden in matrices. The price is a set of sign conventions, and one symbol in the two D articles.
+- **The value is a simpler presentation.** Four $4\times4$ gamma matrices become the product, with the coefficient conjugation only for antilinear operations; in the graded double they become one odd unit. The matrix algebra becomes the $2\times2$ biquaternion multiplication table; the odd sector becomes explicit instead of hidden in matrices. The price is a set of sign conventions, and one symbol in the two D articles.
 - **The rewrite has a clear order.** Calculus first, then the dictionary, the Dirac equation and the spinor module, then the chirality/trace articles, then the odd-operation articles. The structural articles stay in $\mathrm{Cl}$.
 - **The counts measure the rewrite, not the obstruction.** 115 articles carry the layer, 51 are structural; but the number of articles that *cannot* be rewritten in the biquaternion calculus is much smaller. It is the set whose subject is the Clifford algebra itself, not the set that uses a gamma matrix.
 
 ## What the Counts Do Not Say
 
-- **They do not report a mathematical error.** The isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is a theorem, the dictionary is exact, and the gamma-matrix computations are correct. Nothing in the corpus is numerically wrong because of this layer.
+- **They do not report a mathematical error in the physics layer.** The isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is a theorem, the dictionary is exact, and the gamma-matrix computations of the physics corpus are correct. The $M_4(\mathbb{C})$ review found and fixed errors in the mathematical articles, listed in §*The $M_4(\mathbb{C})$ Layer: The Convention in One Place*; none of them changes a physical coefficient.
 - **They do not count every mention as a use.** Band 3 contains articles that name Clifford once, often in a comparison or a further-reading line. The working set is band 1: 51 articles.
 - **They do not single out the Dirac articles.** The layer is heaviest in Relativistic Quantum Theory (36 articles, 18 in band 1), Particle Physics and Gauge Fields (29, 14) and Quantum Fields (24, 12). It is not a defect of one series.
-- **They do not prescribe one route.** The odd part cannot be removed from the algebra. The product carries the even sector; the star carries the antilinear operations; the double is the subject of two articles. The counts measure the size of the rewrite, not the impossibility of one.
-- **They do not distinguish the element question from the action question.** The 115 articles use the odd sector as matrices; the replacement uses the product, the star, or one generator in the double. The count of articles is not the count of obstructions.
+- **They do not prescribe one route.** The odd part cannot be removed from the algebra. The product carries the even sector; the coefficient conjugation carries the antilinear operations; the graded double is the subject of two articles. The counts measure the size of the rewrite, not the impossibility of one.
+- **They do not distinguish the element question from the action question.** The 115 articles use the odd sector as matrices; the replacement uses the product, the coefficient conjugation, or one generator in the graded double. The count of articles is not the count of obstructions.
 
 ## Conclusion
 
@@ -783,6 +900,6 @@ The first is the tensor layer: an index $\mu$, a derivative $\partial_\mu$, four
 
 The sharpest trace is the odd sector. $\mathbb{B}$ is the even half of $\mathrm{Cl}_{1,3}$; the physics of parity, charge conjugation and reflection lives in the other half. The articles say so, in the CPT theorem, in Zitterbewegung, and above all in *The Reflection and the Rotation*, whose subject is precisely the part that the biquaternion algebra does not contain.
 
-The replacement is not a removal. The odd sector is real, and it is the reason the biquaternion algebra is not the whole story. The replacement is local: the product for the even sector, the star for the antilinear operations, one odd unit only where the odd element is the subject. The physics is preserved because the algebra is the same. The work is to write the corpus in the smaller presentation, not to pretend the odd sector is absent.
+The replacement is not a removal. The odd sector is real, and it is the reason the biquaternion algebra is not the whole story. The replacement is local: the product for the even sector, the coefficient conjugation for the antilinear operations, one odd unit only where the odd element is the subject. The physics is preserved because the algebra is the same. The work is to write the corpus in the smaller presentation, not to pretend the odd sector is absent.
 
 **115 articles carry the layer, 51 are structural, 18 write the matrices, 52 carry $\gamma^5$, and one article is about the odd part in substance. The layer is not an irreducible foreign body: 32 of the 51 structural articles can be rewritten with the biquaternion formalism, 19 cannot without deleting their subject, and no article needs the odd generator to do its physics. The odd generator is a presentation, not a requirement.**
