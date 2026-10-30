@@ -704,6 +704,9 @@
 <a href="articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a>
 <!-- the state module and the spin it carries; the centre and its trivial representation; three obstructions, one reason; the sector question; the scalar field in the centre; scalars from the module by the composite route. -->
 
+<a href="articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a>
+<!-- the norm form and its symbol; the two senses of first-order root, single square and factorisation; the Clifford condition and the dimension count; why three biquaternion generators are not enough and the fourth is the two-sided direction; one $\gamma$ frame, written as $L$ and $R$ cells; the mass condition, pseudoscalar single square versus scalar factorisation; the even determinant face and the odd root; what the root does not carry; verification. -->
+
 
 <a href="articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>
 <!-- the operator and the defining equation; the poles and the four prescriptions; the retarded Green's function in position space; the advanced kernel and the boundary condition; microcausality and the Pauli–Jordan function; the Feynman propagator and time ordering. -->
