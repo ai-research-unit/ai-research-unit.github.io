@@ -75,7 +75,7 @@
 <p>The article is organised as follows. The next section sets up the two diagrams, the kinematics and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The closing sections are the open questions, the summary, the notation table and the literature.</p>
 <h2 id="the-process-and-its-two-diagrams">The Process and Its Two Diagrams</h2>
 <h3 id="kinematics">Kinematics</h3>
-<p>Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\not p_i = m$ on shell, $m = m_e$. The <strong>Mandelstam variables</strong> are</p>
+<p>Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\gamma^\mu p_{i\mu} = m$ on shell, $m = m_e$. The <strong>Mandelstam variables</strong> are</p>
 <p>$$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
 \qquad
@@ -119,15 +119,15 @@ $$</p>
 <p>Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives</p>
 <p>$$
 \frac14\sum_{\mathrm{spins}}|\mathcal M|^2
-= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_2+m)\gamma_\nu(\not p_4+m)]
+= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma^\mu(\gamma^{\rho} (p_{1})_{\rho}+m)\gamma^\nu(\gamma^{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma^{\lambda} (p_{2})_{\lambda}+m)\gamma_\nu(\gamma^{\alpha} (p_{4})_{\alpha}+m)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma^\mu(\not p_2+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_1+m)\gamma_\nu(\not p_4+m)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma^\mu(\gamma^{\rho} (p_{2})_{\rho}+m)\gamma^\nu(\gamma^{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma^{\lambda} (p_{1})_{\lambda}+m)\gamma_\nu(\gamma^{\alpha} (p_{4})_{\alpha}+m)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\not p_3+m)\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_4+m)\gamma_\mu(\not p_2+m)\gamma_\nu] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\gamma^{\rho} (p_{3})_{\rho}+m)\gamma^\mu(\gamma^{\sigma} (p_{1})_{\sigma}+m)\gamma^\nu(\gamma^{\lambda} (p_{4})_{\lambda}+m)\gamma_\mu(\gamma^{\alpha} (p_{2})_{\alpha}+m)\gamma_\nu] \Big\},
 $$</p>
-<p>using the spin sum $\sum_s w^s(p)\bar w^s(p) = \not p+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives</p>
+<p>using the spin sum $\sum_s w^s(p)\bar w^s(p) = \gamma^{\mu} p_{\mu}+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives</p>
 <p>$$
 \boxed{\;
 \overline{|\mathcal M|^2} = 2e^4\Big\{ \frac{1}{t^2}\left(s^2+u^2-8m^2(s+u)+24m^4\right) + \frac{1}{u^2}\left(s^2+t^2-8m^2(s+t)+24m^4\right) + \frac{2}{tu}\left(s^2-8m^2s+12m^4\right) \Big\}\;}.
