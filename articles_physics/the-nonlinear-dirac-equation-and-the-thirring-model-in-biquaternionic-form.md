@@ -12,7 +12,7 @@ What the framework does **not** supply is equally definite, and follows from the
 
 The article is organised as follows. The next section explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section gives the Einstein–Cartan torsion route and the Hehl–Datta equation. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A short section records the verified two-dimensional relations. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
+The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$. The dynamics in the algebra is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -21,7 +21,7 @@ The conventions are those of the companion articles. The Clifford generators sat
 The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term in the equation that is built from the field itself, and the lowest non-trivial such term that is compatible with the symmetries is quadratic in the **bilinears**. Since a bilinear is quadratic in $\psi$, a product of two bilinears is quartic in the field; an equation obtained by adding such a term to the Dirac equation, or by varying an action containing it, is called nonlinear even though the resulting Euler–Lagrange equation is often cubic in the field once one factor is used as the source. This is the sense in which the axial-axial term below is "cubic": writing $B(\psi)$ for the bilinear built from the field, the equation is
 
 $$
-\left(i\gamma^\mu\partial/\partial Q_\mu - m\right)\psi + B(\psi)\,\psi = 0,
+\left(\mathbb{D} - m\right)\psi + B(\psi)\,\psi = 0,
 $$
 
 in which the bilinear is quadratic in $\psi$ and the explicit field supplies the third power.
@@ -39,7 +39,7 @@ The reason the axial-axial channel is the physically motivated one is geometric,
 The Thirring model is defined in $1+1$ dimensions by the Lagrangian density
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\nu}\partial/\partial Q_\nu - m\right)\psi
+\boxed{\;\mathcal{L} = \bar\psi\left(\mathbb{D} - m\right)\psi
 - \frac{g}{2}\left(\bar\psi\gamma^\mu\psi\right)\left(\bar\psi\gamma_\mu\psi\right)\;},
 $$
 
@@ -52,11 +52,11 @@ The **massless** Thirring model is exactly solvable: the multipoint correlation 
 The Soler model is defined in $3+1$ dimensions by
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\left(i\gamma^{\mu}\partial/\partial Q_\mu - m\right)\psi
+\boxed{\;\mathcal{L} = \bar\psi\left(\mathbb{D} - m\right)\psi
 + \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$
 
-with $\psi$ a four-component spinor and $\gamma^{\mu}\partial/\partial Q_\mu$ the four-dimensional Dirac operator. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.
+with $\psi$ a four-component spinor and $\mathbb{D}$ the pair operator acting on the module in the chiral basis. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $\left(i\bar\psi\gamma_5\psi\right)^2$, and the two together are the chirally invariant combination of the NJL interaction.
 
 Recently, exact solutions of the Soler model in closed form have been found, which is why the model is of more than illustrative interest: it is one of the few interacting fermion equations with explicit non-perturbative solutions.
 

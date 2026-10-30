@@ -72,7 +72,7 @@ $$
 \gamma^k = \begin{pmatrix}0 & \sigma^k\\ -\sigma^k & 0\end{pmatrix},
 $$
 
-satisfying $\{\gamma^{\mu},\gamma^{\nu}\} = 2g^{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The Dirac equation is $i\gamma^{\mu}\partial/\partial Q_\mu\,\Psi = m\Psi$. Inserting $\Psi = (\psi_L,\psi_R)^{T}$ and the block form of the gammas gives, after collecting the two blocks,
+satisfying $\{\gamma^{\mu},\gamma^{\nu}\} = 2g^{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
 
 $$
 i\left(\partial/\partial t' + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = m\,\psi_L, \qquad

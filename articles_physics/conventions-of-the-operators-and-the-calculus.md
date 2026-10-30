@@ -109,6 +109,14 @@ $$
 \tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}\,e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
 $$
 
+**The dynamics.** The first-order dynamics of the series is the chiral pair $\tilde\nabla\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde\nabla^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with massless limit $\tilde\nabla\tilde{\Psi}=0$. Every component equation in the series is a **coordinate form** of that pair and not a second dynamics.
+
+**The pair operator.** The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\Psi=(\Psi_L,\Psi_R)$ and
+$$
+\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr).
+$$
+Then $\mathbb{D}^2=\Box I$, and the massive equation is $(\mathbb{D}-m)\Psi=0$. Its Green matrix is $\mathcal{S}=(\mathbb{D}+m)G$ with $(\Box-m^2)G=\delta$, so $(\mathbb{D}-m)\mathcal{S}=\delta I$. The operator is the pair written once; it is not a new object, and it contains no matrix generator.
+
 ### The Plain Bilinear Product, Its Form and Its Norm
 
 **The product.** The general plain bilinear product is one of the four of *Conventions of the Products and the Forms*, §*The Twelve Products and Their Names*. On the gradient, with an element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, it is read with $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j \vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit,

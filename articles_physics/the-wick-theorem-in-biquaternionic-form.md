@@ -185,9 +185,9 @@ Two entries carry the sign. For $\langle\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon
 
 ## The Contraction Is the Propagator
 
-For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module the propagator of the biquaternion Dirac field satisfies
+For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, the propagator of the biquaternion Dirac field satisfies
 $$
-\big(i\gamma^\mu\partial/\partial Q_\mu - m\big) S_F(x-y) = \delta^{(4)}(x-y),
+\big(\mathcal{D} - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$
 and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -m^2$, in the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict'$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
 

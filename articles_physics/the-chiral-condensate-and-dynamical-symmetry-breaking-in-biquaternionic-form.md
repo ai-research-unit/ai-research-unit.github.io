@@ -37,7 +37,7 @@ The framework results used here are those of the companion articles:
 
 ## The Chiral Symmetry of the Linear Mass Term
 
-**The massless equation and its two phases.** The massless biquaternion Dirac equation is $\tilde{\nabla}\tilde{\Psi}=0$, whose spinor-module representative is $i\gamma^\mu\partial/\partial Q_\mu\psi=0$. Two one-parameter phase symmetries act on it. The **vector** (central) phase
+**The massless equation and its two phases.** The massless biquaternion Dirac equation is $\tilde{\nabla}\tilde{\Psi}=0$, whose spinor-module representative is $\mathbb{D}\psi=0$, with $\mathbb{D}$ the pair operator of the conventions article and $\mathbb{D}^2=\Box$. Two one-parameter phase symmetries act on it. The **vector** (central) phase
 
 $$
 V:\ \psi\ \longmapsto\ \exp(i\alpha)\psi ,
@@ -53,7 +53,7 @@ $$
 
 rotates them oppositely. In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two.
 
-Both are symmetries of the massless equation, because $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma^\mu\}=0$, and therefore commutes with the kinetic operator $i\gamma^\mu\partial/\partial Q_\mu$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
+Both are symmetries of the massless equation, because $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma^\mu\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
 
 $$
 \mathrm{U}(1)_V\times \mathrm{U}(1)_A ,
@@ -67,7 +67,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L , \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-whose module representative is $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$. The two phase transformations act on the mass term as follows. Under the **vector** phase both chiralities acquire the same factor, so the two sides of the first equation acquire $\exp(i\alpha)$ and $\exp(i\alpha)$: the equation is invariant. Under the **axial** phase the left side acquires $\exp(-i\alpha)$ and the right side $\exp(+i\alpha)$, and the equation is *not* invariant unless $m=0$. The algebraic statement is exact:
+whose module representative is $(\mathbb{D}-m)\psi=0$. The two phase transformations act on the mass term as follows. Under the **vector** phase both chiralities acquire the same factor, so the two sides of the first equation acquire $\exp(i\alpha)$ and $\exp(i\alpha)$: the equation is invariant. Under the **axial** phase the left side acquires $\exp(-i\alpha)$ and the right side $\exp(+i\alpha)$, and the equation is *not* invariant unless $m=0$. The algebraic statement is exact:
 
 $$
 V:\ \exp(i\alpha)\ \text{central, passes through } m \ \Longrightarrow\ \text{conserved};
@@ -142,7 +142,7 @@ with $G$ the coupling of the four-fermion interaction that produces the condensa
 **The model.** The standard mean-field model of a dynamical fermion mass is the Nambu–Jona-Lasinio (NJL) Lagrangian, a four-fermion interaction
 
 $$
-\mathcal{L} = \bar{\psi}\big(i\gamma^\mu\partial/\partial Q_\mu\big)\psi + G\left[(\bar{\psi}\psi)^2+(\bar{\psi}i\gamma_5\psi)^2\right],
+\mathcal{L} = \bar{\psi}\big(\mathbb{D}\big)\psi + G\left[(\bar{\psi}\psi)^2+(\bar{\psi}i\gamma_5\psi)^2\right],
 $$
 
 in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination $(\bar{\psi}\psi)^2+(\bar{\psi}i\gamma_5\psi)^2$ is the invariant of the axial rotation noted above, because the pair $(\bar{\psi}\psi,\,i\bar{\psi}\gamma_5\psi)$ rotates as a two-vector. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.

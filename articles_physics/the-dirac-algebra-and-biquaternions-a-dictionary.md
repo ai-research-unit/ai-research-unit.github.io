@@ -566,10 +566,14 @@ which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since re
 The gamma-matrix Dirac operator is the **odd** element
 
 $$
-\gamma^{\rho}\partial/\partial Q_\rho, \qquad (\gamma^{\nu}\partial/\partial Q_\nu)^2 = \bigl(-(1/c^2)\partial^2/\partial {t'}^2 + \Delta\bigr)I_4 = \Box\,I_4,
+\gamma^{\rho}\partial/\partial Q_\rho .
 $$
 
-where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\gamma^{\mu}\partial/\partial Q_\mu$ and the even gradient $\iota_{\mathrm{Cl}}(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
+With the $x$-frame generators, $(\gamma^{\nu}\partial/\partial Q_\nu)^2=(\partial^2/\partial Q_t^2-\Delta)I_4$: the contraction is a square root of the wave operator in the $x$ frame, not of the $Q$-frame $\Box$. The $Q$-frame generators are the all-plus set $\gamma^0(Q)=\gamma^0$, $\gamma^k(Q)=i\gamma^k$, related to the $x$-frame ones by $\gamma^k(Q)=i\gamma^k(x)$; with them,
+$$
+\bigl(\gamma^{\mu}(Q)\partial/\partial Q_\mu\bigr)^2=\Bigl(\partial^2/\partial Q_t^2+\Delta\Bigr)I_4=\Box\,I_4 .
+$$
+So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\gamma^{\mu}(Q)\partial/\partial Q_\mu$ and the even gradient $\iota_{\mathrm{Cl}}(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. The mixed object $i\gamma^{\mu}(x)\partial/\partial Q_\mu$ is neither: it squares to $\partial^2/\partial Q_t^2-\Delta$ times $(-1)$, and it is not used. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
 
 ## Summary
 

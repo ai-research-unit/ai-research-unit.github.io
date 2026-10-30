@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Canonical Quantization of the Biquaternion Dirac Field* promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$, the conjugate momentum $\pi=i\psi^\dagger$ with its second-class constraint, the equal-time anticommutators, the expansion in the plane-wave solutions of the solutions article, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was treated through its spinor-module representative, and the question of what kind of object the operator-valued biquaternion field is was left standing.
+The companion article *Canonical Quantization of the Biquaternion Dirac Field* promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$, the conjugate momentum $\pi=i\psi^\dagger$ with its second-class constraint, the equal-time anticommutators, the expansion in the plane-wave solutions of the solutions article, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was treated through its spinor-module representative, and the question of what kind of object the operator-valued biquaternion field is was left standing.
 
 This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object *is* in the biquaternion framework, and it develops the four structures that make the operator field more than a transcription:
 
@@ -90,8 +90,8 @@ $$
 \tilde{\nabla}\tilde\Psi^{\mathrm{fop}}_R=m\,\tilde\Psi^{\mathrm{fop}}_L,
 \qquad
 \tilde{\nabla}^{\natural}\tilde\Psi^{\mathrm{fop}}_L=m\,\tilde\Psi^{\mathrm{fop}}_R,
-\qquad\text{equivalently on the module}\qquad
-(i\gamma^\mu\partial_\mu-m)\psi^{\mathrm{fop}}=0 .
+\qquad\text{equivalently on the module, with }\mathbb{D}\text{ the pair operator,}\qquad
+(\mathbb{D}-m)\psi^{\mathrm{fop}}=0 .
 $$
 
 The operator ordering is immaterial here because the gradient differentiates only $x$-dependent $c$-number spinors, and the mode operators are $x$-independent. The equal-time anticommutator is likewise consistent with the equation: applying the gradient to $\{\psi^{\mathrm{fop}}_a(x),{\psi^{\mathrm{fop}}_b}^\dagger(y)\}$ and using the mode algebra reproduces $i\partial/\partial Q_t$ of the delta against the Hamiltonian, which is the field equation in bracket form. This is the standard consistency check of canonical quantization and is recorded, not rederived, as it is in the parent.
@@ -253,7 +253,7 @@ $$
 a multiple of the identity. Substituting the expansion gives
 
 $$
-\boxed{\;\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\,\Delta_{\mathrm{A}}(x-y)\;},
+\boxed{\;\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\;},
 $$
 
 where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
@@ -261,7 +261,7 @@ where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch p
 **The commutator is not.** Replacing the anticommutator by the commutator gives
 
 $$
-\langle0|\,[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]\,|0\rangle=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\,G_{\mathrm{S}}(x-y),
+\langle0|\,[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]\,|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
 $$
 
 with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion,
@@ -320,7 +320,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\gamma^{\mu} p_{\mu}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\gamma^{\mu} p_{\mu}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -347,7 +347,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde P=iHe_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\vec\Upsilon_x=\tilde S_+/\hbar$, $\vec\Upsilon_y=\tilde S_-/\hbar$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
-| $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\gamma^{\mu}\partial/\partial Q_\mu+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
+| $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\vec\Delta)=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |

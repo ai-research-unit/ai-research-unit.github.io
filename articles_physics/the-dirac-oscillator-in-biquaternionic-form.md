@@ -30,10 +30,10 @@ Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a v
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining; the spectrum is discrete; and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and it is the reason the spectrum consists of bound levels with the mass gap at their base.
 
-The covariant form of the equation, obtained by multiplying the Hamiltonian equation by $\beta$ and using $\beta\boldsymbol\alpha = \boldsymbol\gamma$, is
+The covariant form of the module representative, obtained by multiplying the Hamiltonian equation by $\beta$ and using $\beta\boldsymbol\alpha = \boldsymbol\gamma$, is, with $\mathbb{D}$ the pair operator,
 
 $$
-\left(i\gamma^\mu\partial/\partial Q_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
+\left(\mathbb{D} - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
 $$
 
 The right-hand side is a spacelike Clifford vector times the frame, linear in $x$: the non-minimal term is a position-dependent generator of the odd part. This is the form in which the biquaternion interpretation is made below.

@@ -6,9 +6,11 @@ A **Dirac fermion** is a four-component field whose left- and right-handed parts
 
 The immediate physical application is the neutrino. In the Standard Model the neutrino is a left-handed Weyl fermion: the weak interaction couples only to its left-handed part, and no renormalisable mass term survives. Whether the neutrino is in fact Dirac or Majorana is one of the few places where the algebra of spinors meets experiment directly, and the answer is not settled. This article asks what the biquaternion framework, in the notation of the companion articles, supplies for that distinction.
 
+The dynamics in the algebra is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$. The equations below are its spinor-module representatives; the Majorana equation is the representative restricted to the real form $\psi^{c}=\psi$, and whether that restriction descends to the algebra is the question this article tests rather than assumes.
+
 The presentation is organized around one question — *which real structure on the spinor module is the charge conjugation, and does the algebra's own material/informational split supply it?* — and the answer is split, at the outset, into three categories.
 
-- **Established, and recomputed below.** The Dirac module $\Delta=S\oplus\bar{S}$ of the read list is self-conjugate: it carries a conjugate-linear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$ that commutes with the kinetic Dirac operator and **exchanges the two chiral halves**. Its fixed space is the Majorana spinor space, of real dimension four. A Majorana–Weyl structure would have to preserve each half and does not exist in this signature. The Majorana equation $i\gamma^\mu\partial/\partial Q_\mu\,\psi=m\psi^{c}$ is consistent with the constraint $\psi^{c}=\psi$, and the mass-shell condition $p^2=m^2$ is unchanged: the mass is permitted while the vector current vanishes.
+- **Established, and recomputed below.** The Dirac module $\Delta=S\oplus\bar{S}$ of the read list is self-conjugate: it carries a conjugate-linear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$ that commutes with the kinetic Dirac operator and **exchanges the two chiral halves**. Its fixed space is the Majorana spinor space, of real dimension four. A Majorana–Weyl structure would have to preserve each half and does not exist in this signature. The Majorana equation $\mathbb{D}\,\psi=m\psi^{c}$ is consistent with the constraint $\psi^{c}=\psi$, and the mass-shell condition $p^2=m^2$ is unchanged: the mass is permitted while the vector current vanishes.
 - **Established from the read list, and sharpened here.** The framework's conjugations on $\mathbb{B}$ are the quaternion conjugate ${}^{\natural}$, the coefficient complex conjugate $\bar{\cdot}$, the Hermitian conjugate ${}^{*}=({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$, the algebra's real structure. Of these, only $\bar{\cdot}$ is a conjugate-linear **algebra automorphism**; ${}^{*}$ and $\flat$ reverse the order of products. Charge conjugation, which must be a module map compatible with left multiplication, is therefore tied to $\bar{\cdot}$ — the real structure whose fixed points are $\mathbb{H}_{\mathbb{B}}$ — and not to the order-reversing real structure $\flat$.
 
 - **Gap, left visible.** The two-sector split $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ is a decomposition of the *algebra* by ${}^{*}$, not a real structure of the *module*. Its anti-Hermitian summand $\mathbb{M}_-$ is the fixed space of $\flat$ and has real dimension four, superficially matching the Majorana count; but the Dirac operator does not preserve $\mathbb{M}_-$ (left multiplication by a spatial generator carries it out of the subspace), so the sector split cannot be the Majorana reality condition. An attempted identification of Majorana with $\mathbb{M}_-$ fails on the equation, not merely on taste.
@@ -91,7 +93,7 @@ $$
 \boxed{\;K\,\gamma^{\mu\,*}\,K^{-1} \;=\; -\,\gamma^{\mu}\;},
 $$
 
-which holds for $\mu=0,1,2,3$ in the block basis. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant matrix $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(i\gamma^\mu\partial/\partial Q_\mu\,\psi)=i\gamma^\mu\partial/\partial Q_\mu\,(\mathcal{C}\psi)$ if and only if $K(i\gamma^\mu)^{*}K^{-1}=i\gamma^\mu$, which is exactly the displayed condition. In words: **charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators**. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.
+which holds for $\mu=0,1,2,3$ in the block basis. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant matrix $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(\mathbb{D}\,\psi)=\mathbb{D}\,(\mathcal{C}\psi)$ if and only if $K(i\gamma^\mu)^{*}K^{-1}=i\gamma^\mu$, which is exactly the displayed condition. In words: **charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators**. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.
 
 **Block form, and the exchange of the chiral halves.** In blocks $K$ is off-diagonal,
 
@@ -136,26 +138,26 @@ $$
 
 and it determines $\psi_R$ from $\psi_L$. It is not an extra equation imposed on the field after the fact; it is a restriction of the spinor module to a real form, and the question that has to be answered is whether the restricted fields solve a sensible massive equation.
 
-**The massive equation.** For a single self-conjugate field the mass term cannot be the Dirac term $m\bar{\psi}\psi$ of a Dirac field, because the two chiral halves are conjugate, not independent. The equation that carries a mass is the **Majorana equation**
+**The massive equation.** For a single self-conjugate field the mass term cannot be the Dirac term $m\bar{\psi}\psi$ of a Dirac field, because the two chiral halves are conjugate, not independent. Here and below $\mathbb{D}$ is the pair operator of the conventions article, acting on the module in the chiral basis, with $\mathbb{D}^2=\Box$. The equation that carries a mass is the **Majorana equation**
 
 $$
-\boxed{\;i\gamma^\mu\partial/\partial Q_\mu \psi \;=\; m\,\psi^{c}\;}.
+\boxed{\;\mathbb{D} \psi \;=\; m\,\psi^{c}\;}.
 $$
 
-If its solution also satisfies $\psi^{c}=\psi$, then it satisfies the ordinary massive Dirac equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$; conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The content is therefore in the consistency of the constraint with the equation, and that consistency is a computation, not a convention.
+If its solution also satisfies $\psi^{c}=\psi$, then it satisfies the ordinary massive Dirac equation $(\mathbb{D}-m)\psi=0$; conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The content is therefore in the consistency of the constraint with the equation, and that consistency is a computation, not a convention.
 
-**Consistency is verified, not assumed.** Apply the real structure $\mathcal{C}$ to the Majorana equation. Since $\mathcal{C}$ is conjugate-linear and commutes with $i\gamma^\mu\partial/\partial Q_\mu$ (the previous section, verified on all $\mu$), and since $\mathcal{C}^{2}=1$,
+**Consistency is verified, not assumed.** Apply the real structure $\mathcal{C}$ to the Majorana equation. Since $\mathcal{C}$ is conjugate-linear and commutes with $\mathbb{D}$ (the previous section, verified on all $\mu$), and since $\mathcal{C}^{2}=1$,
 
 $$
-\mathcal{C}\!\left(i\gamma^\mu\partial/\partial Q_\mu\,\psi\right)=i\gamma^\mu\partial/\partial Q_\mu\,\psi^{c},
+\mathcal{C}\!\left(\mathbb{D}\,\psi\right)=\mathbb{D}\,\psi^{c},
 \qquad
 \mathcal{C}\!\left(m\psi^{c}\right)=m\,\psi .
 $$
 
-Applying $\mathcal{C}$ to the equation therefore returns $i\gamma^\mu\partial/\partial Q_\mu\,\psi^{c}=m\psi$, which is the same equation with $\psi$ and $\psi^{c}$ interchanged. Subtracting the two equations,
+Applying $\mathcal{C}$ to the equation therefore returns $\mathbb{D}\,\psi^{c}=m\psi$, which is the same equation with $\psi$ and $\psi^{c}$ interchanged. Subtracting the two equations,
 
 $$
-i\gamma^\mu\partial/\partial Q_\mu\,\left(\psi-\psi^{c}\right) \;=\; -\,m\left(\psi-\psi^{c}\right),
+\mathbb{D}\,\left(\psi-\psi^{c}\right) \;=\; -\,m\left(\psi-\psi^{c}\right),
 $$
 
 so the deviation $\chi=\psi-\psi^{c}$ satisfies the same form of equation as the field itself, and the subspace $\chi=0$ is preserved by the evolution. A field that is self-conjugate at one time stays self-conjugate; the constraint is consistent with the massive equation, not merely imposed on it. This is the point requested of every displayed identity: the consistency is checked by applying the real structure and using the anticommutation of $\mathcal{C}$ with the generators, and it does not hold for a generic conjugate-linear map — it uses the verified identity $K\gamma^{\mu*}K^{-1}=-\gamma^\mu$.
@@ -308,7 +310,7 @@ None of this is derived by the framework. The hyperboloid models are a standard-
 
 A Dirac fermion is an arbitrary element of $\Delta=S\oplus\bar{S}$, with independent chiral halves and eight real components. A Weyl fermion is an element of one half, chiral and — while its chirality is protected — massless. A Majorana fermion is a fixed point of a conjugate-linear real structure $\mathcal{C}$ on $\Delta$ with $\mathcal{C}^2=1$, with four real components, no vector current, and a permitted mass. In the Lorentzian signature $(1,3)$ Majorana spinors exist and Majorana–Weyl spinors do not, because the real structure that makes a spinor Majorana exchanges the two chiral halves instead of preserving them.
 
-The charge conjugation of the Dirac module was constructed explicitly in the block (chiral) basis with $g=\mathrm{diag}(+,-,-,-)$: the matrix $C=i\gamma^2\gamma^0$ satisfies $C\gamma^{\mu T}C^{-1}=-\gamma^\mu$ and defines an antilinear involution $\psi^{c}=K\psi^{*}$, $K=C\gamma^{0T}$, with $KK^{*}=I_4$ and $K\gamma^{\mu*}K^{-1}=-\gamma^\mu$. The last identity is what makes the Majorana constraint $\psi^{c}=\psi$ consistent with the massive equation $i\gamma^\mu\partial/\partial Q_\mu\,\psi=m\psi^{c}$, rather than merely imposed on it: the constraint is propagated, and a massive plane wave exists for every $m>0$. The vector current vanishes for a self-conjugate Grassmann field and the scalar and axial bilinears survive; those statements are properties of the anticommuting field, and a commuting c-number computation gives the opposite pattern.
+The charge conjugation of the Dirac module was constructed explicitly in the block (chiral) basis with $g=\mathrm{diag}(+,-,-,-)$: the matrix $C=i\gamma^2\gamma^0$ satisfies $C\gamma^{\mu T}C^{-1}=-\gamma^\mu$ and defines an antilinear involution $\psi^{c}=K\psi^{*}$, $K=C\gamma^{0T}$, with $KK^{*}=I_4$ and $K\gamma^{\mu*}K^{-1}=-\gamma^\mu$. The last identity is what makes the Majorana constraint $\psi^{c}=\psi$ consistent with the massive equation $\mathbb{D}\,\psi=m\psi^{c}$, rather than merely imposed on it: the constraint is propagated, and a massive plane wave exists for every $m>0$. The vector current vanishes for a self-conjugate Grassmann field and the scalar and axial bilinears survive; those statements are properties of the anticommuting field, and a commuting c-number computation gives the opposite pattern.
 
 In the biquaternion framework the charge conjugation is the real structure carried by the **coefficient complex conjugation** $\bar{\cdot}$, the only one of the algebra's conjugations that is a conjugate-linear automorphism, with fixed points $\mathbb{H}_{\mathbb{B}}$; the Hermitian conjugate and the real structure $\flat$ are order-reversing and cannot serve as module real structures. The material/informational split is the algebra's decomposition by ${}^{*}$, and although $\mathbb{M}_-$ is the four-real-dimensional fixed space of the real structure $\flat$ and superficially matches the Majorana count, the Dirac operator does not preserve it ($\vec e_x\in\mathbb{M}_-$ but $\vec e_x \vec e_x=-e_t\in\mathbb{M}_+$). The sector split therefore obstructs the reality condition and cannot be used as it stands; the Majorana real form lives on the spinor module, not on a subspace of the algebra. Finally, the left-handedness of the neutrino under the weak interaction is empirical input, the real structure $\flat$ carries a genuinely antilinear Majorana-type pairing that is compatible with but does not derive a Majorana neutrino, while the parent's own mass term is linear and conserves fermion number; the mass value and its consequences are outside the algebra.
 
@@ -339,7 +341,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $\mathcal{C}:\psi\mapsto K\psi^{*}$ | Charge conjugation as an antilinear involution |
 | $\psi^{c} = \mathcal{C}\psi$ | Charge conjugate; $\psi^{c}=\psi$ defines Majorana |
 | $\psi_R=-\epsilon\psi_L^{*}$ | Majorana condition in the block basis |
-| $i\gamma^\mu\partial/\partial Q_\mu\,\psi=m\psi^{c}$ | Majorana equation |
+| $\mathbb{D}\,\psi=m\psi^{c}$ | Majorana equation |
 | $\bar{\psi}\gamma^\mu\psi$, $\bar{\psi}\psi$, $\bar{\psi}\gamma^\mu\gamma_5\psi$ | Vector, scalar and axial bilinears |
 | $S C S^{T}$ | Charge-conjugation matrix in a basis $S\gamma^\mu S^{-1}$ |
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |

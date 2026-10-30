@@ -12,13 +12,7 @@ The article is organised as follows. The next section recalls the standard pictu
 
 ## The Standard Picture
 
-The free Dirac equation in the parent's spinor-module form is
-
-$$
-(i\hbar\gamma^\mu\partial/\partial Q_\mu - mc)\psi = 0,
-$$
-
-or, in natural units $\hbar = c = 1$, $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$. Multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
+The dynamics in the algebra is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, whose spinor-module representative is the free Dirac equation. On the module, multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
 
 $$
 i\,\partial/\partial t'\,\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,

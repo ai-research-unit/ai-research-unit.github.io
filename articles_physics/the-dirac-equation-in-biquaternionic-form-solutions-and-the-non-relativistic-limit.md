@@ -48,19 +48,13 @@ so the same $\Box$ results whichever way the sign is assigned. With the Clifford
 
 ## The Dirac field and its two bases
 
-In the spinor module, the biquaternionic Dirac equation is the standard Dirac equation
+In the algebra the biquaternionic Dirac equation is the chiral pair
 
 $$
-(i\hbar\gamma^\mu\partial/\partial Q_\mu - mc)\psi = 0,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-or, in natural units,
-
-$$
-(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0,
-$$
-
-with $\psi$ a four-component complex Dirac spinor. The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this spinor: it is the element of $\mathbb{B} \cong M_2(\mathbb{C})$ that acts on, and encodes, the two-component spinor module, and the operator $\tilde{\nabla}$ is its Dirac operator. The mass term of the companion article is the linear, chirality-off-diagonal coupling of its chiral pair — the algebra-level representative of the spinor mass term above. The conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is a separate object, the algebra's real structure (the fixed space of $\flat$ is the anti-Hermitian sector $\mathbb{M}_-$), and is *not* the mass term.
+with massless limit $\tilde{\nabla}\tilde{\Psi}=0$. The solutions below are computed on the **spinor module** of the algebra, with $\psi$ a four-component complex Dirac spinor in the chiral basis. The module equations are the coordinate form of the pair; the dynamics is the pair. The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this spinor: it is the element of $\mathbb{B} \cong M_2(\mathbb{C})$ that acts on, and encodes, the two-component spinor module, and the operator $\tilde{\nabla}$ is its Dirac operator. The mass term of the companion article is the linear, chirality-off-diagonal coupling of its chiral pair — the algebra-level representative of the spinor mass term above. The conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is a separate object, the algebra's real structure (the fixed space of $\flat$ is the anti-Hermitian sector $\mathbb{M}_-$), and is *not* the mass term.
 
 Because $\mathbb{B} \cong M_2(\mathbb{C})$ acts naturally on a two-dimensional complex module, the biquaternion field carries two two-component spinors. In the chiral representation these are the left- and right-handed Weyl spinors,
 
@@ -88,7 +82,7 @@ $$
 \psi(x) = w(\vec p)\, \exp(-i(Et' - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2},
 $$
 
-where $w(\vec p)$ is a four-component constant spinor. Substituting into $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$ gives the momentum-space Dirac equation
+where $w(\vec p)$ is a four-component constant spinor. Substituting into the module form of the pair gives the momentum-space equation
 
 $$
 (\gamma^\mu p_\mu - m)\,w(\vec p) = 0, \qquad \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p,
@@ -435,7 +429,7 @@ select the two components, and the biquaternion algebra contains their algebraic
 
 ## Summary
 
-The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \gamma^\mu p_\mu+m$, $\sum_r v\bar{v} = \gamma^\mu p_\mu-m$.
+The biquaternionic Dirac equation, on its spinor module, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \gamma^\mu p_\mu+m$, $\sum_r v\bar{v} = \gamma^\mu p_\mu-m$.
 
 The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_t + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 

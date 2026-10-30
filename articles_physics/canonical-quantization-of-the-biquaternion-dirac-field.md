@@ -12,7 +12,7 @@ This article is a first attempt at that extension. Its subject is the canonical 
 
 The article has to be read with a clear division in mind, and we state it at the outset because it governs everything that follows.
 
-- **The standard part.** The spinor-module form of the biquaternion Dirac equation is the ordinary Dirac equation, $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ in the notation of the companion articles. Its canonical quantization — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
+- **The standard part.** The spinor-module form of the biquaternion Dirac equation is the ordinary Dirac equation, $(\mathbb{D}-m)\psi=0$, where $\mathbb{D}$ is the pair operator of the conventions article acting on the module in the chiral basis. Its canonical quantization — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
 - **The open part.** What is *not* standard, and what this article cannot settle, is the intrinsic formulation of the quantization in the algebra $\mathbb{B}$ itself: whether the operator-valued field should be taken to be $\mathbb{B}$-valued or valued in the spinor module on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts; what the correct $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are; what the biquaternion Fock space is; and how the $\mathbb{Z}/2$ grading required by fermionic statistics is to be embedded in $\mathbb{B}$.
 
 We therefore make no claim that the extension is canonical in the biquaternion framework. The claim is narrower: the extension can be carried out on the spinor module with the parent article's solutions, and it supplies exactly the operator structure — anticommuting modes and a fermion-parity grading — that the KMS article identifies as missing. Whether that structure lifts to a genuinely biquaternionic one is the open question this article is meant to expose.
@@ -32,7 +32,7 @@ with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; here $\tilde{\Psi}=\tilde{\P
 The companion solutions article works with its spinor-module representative, the four-component complex Dirac spinor $\psi$, on whose underlying two-component spinor module the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the equation is the standard Dirac equation
 
 $$
-(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0,
+(\mathbb{D}-m)\psi=0,
 $$
 
 whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation.
@@ -42,10 +42,10 @@ whose solutions, normalizations, and spin sums are established in the parent art
 The classical field theory is defined by the Lagrangian density
 
 $$
-\mathcal{L}=\bar{\psi}\,(i\gamma^\mu\partial/\partial Q_\mu-m)\,\psi,
+\mathcal{L}=\bar{\psi}\,(\mathbb{D}-m)\,\psi,
 $$
 
-a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\gamma^0$. This is the standard Lagrangian of a free Dirac field, written in the gamma-matrix convention of the companion articles.
+a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\gamma^0$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
 
 ### The Conjugate Momentum and Its Constraint
 
@@ -55,7 +55,7 @@ $$
 \pi=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t\,\psi)}=i\,\psi^\dagger .
 $$
 
-The step is worth displaying, because it is the origin of the entire fermionic structure. The only term in $\mathcal{L}$ containing the time derivative is $\bar{\psi}\,i\gamma^0\partial/\partial Q_t\,\psi$. Since $\bar{\psi}\gamma^0=\psi^\dagger$ and $(\gamma^0)^2=I_4$, that term is $i\,\psi^\dagger\partial/\partial Q_t\,\psi$. Differentiating with respect to $\partial/\partial Q_t\,\psi_a$ therefore returns $i\psi^\dagger_a$, i.e. $\pi=i\psi^\dagger$.
+The step is worth displaying, because it is the origin of the entire fermionic structure. The only term in $\mathcal{L}$ containing the time derivative is the one that carries $\partial/\partial Q_t$. On the module it is $i\,\psi^\dagger\partial/\partial Q_t\,\psi$, the off-diagonal time block of $\bar\psi\mathbb{D}\psi$. Differentiating with respect to $\partial/\partial Q_t\,\psi_a$ therefore returns $i\psi^\dagger_a$, i.e. $\pi=i\psi^\dagger$.
 
 The result is not $\partial\psi/\partial t'$, and this is the essential difference from a scalar field. The Dirac equation is first order in time, so the momentum is algebraically tied to the field by
 
@@ -349,7 +349,7 @@ Because the question addressed here is itself an open question of the framework,
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ and the conjugate momentum $\pi=i\psi^\dagger$, together with the second-class constraint $\pi-i\psi^\dagger\approx0$.
+- The Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ and the conjugate momentum $\pi=i\psi^\dagger$, together with the second-class constraint $\pi-i\psi^\dagger\approx0$.
 - The equal-time anticommutation relations, imposed and verified, and the three reasons anticommutation rather than commutation is forced.
 - The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\bar w w=2m$, $w^\dagger w=2E$, and the parent's spin sums.
 - The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(a^{\mathrm{fop}\dagger})^2=0$.
@@ -371,7 +371,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 
 ## Summary
 
-The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
+The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
 
 $$
 \{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
@@ -407,7 +407,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
-| $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Dirac Lagrangian density |
+| $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |

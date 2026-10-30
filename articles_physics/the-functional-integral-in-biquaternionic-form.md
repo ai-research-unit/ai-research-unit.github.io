@@ -227,9 +227,9 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 
 **The gap.** The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra *does* supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.
 
-**Fermionic fields.** For a fermionic field the functional integral is over Grassmann-valued fields, and the Gaussian integral returns a determinant rather than an inverse square root,
+**Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with $\mathbb{D}$ the pair operator of the conventions article, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
-\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;\exp(\,\tilde\Psi^{\natural}\big(i\gamma^\mu\partial/\partial Q_\mu-m\big)\tilde\Psi) = \det\big(i\gamma^\mu\partial/\partial Q_\mu-m\big),
+\int\mathcal{D}\bar\psi\,\mathcal{D}\psi\;\exp\big(\bar\psi\,(\mathbb{D}-m)\,\psi\big) = \det(\mathbb{D}-m),
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.
 
@@ -292,7 +292,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $t'\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
-| $\det(i\gamma^\mu\partial/\partial Q_\mu-m)$ | Fermionic Gaussian result (Grassmann integral) |
+| $\det(\mathbb{D}-m)$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

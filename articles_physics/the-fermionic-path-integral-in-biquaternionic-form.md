@@ -19,20 +19,24 @@ The boundary with the neighbouring subjects is sharp and is stated where it occu
 The classical field theory is defined by the parent article's Lagrangian density,
 
 $$
-\mathcal{L}=\bar\psi\,(i\gamma^\mu\partial/\partial Q_\mu-m)\,\psi ,
+\mathcal{L}=\bar\psi\,(\mathbb{D}-m)\,\psi ,
 $$
 
-a real Lorentz scalar whose variation returns $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.
+a real Lorentz scalar whose variation returns $(\mathbb{D}-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.
 
-**The biquaternion transcription, and what it does not fix.** On the module the kinetic operator is $i\gamma^\mu\partial/\partial Q_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict'$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial/\partial Q_\mu$:
+**The biquaternion transcription, and what it does not fix.** The dynamics in the algebra is the chiral pair
 
 $$
-i\gamma^\mu\partial/\partial Q_\mu\;\longleftrightarrow\;\tilde{\nabla}=e_t\,\partial/\partial Q_t+e_k\,\partial/\partial Q_k ,
-\qquad
-\bar\psi\,i\gamma^\mu\partial/\partial Q_\mu\,\psi\;\longleftrightarrow\;\mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big) ,
+\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
-with the scalar part as the natural pairing. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
+and the Lagrangian above is its **spinor-module representative**, not a second dynamics. The algebra bilinear is
+
+$$
+S=\int \mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big),
+$$
+
+with the scalar part as the natural pairing. The operator $\mathbb{D}$ is built from the gradient and its conjugate; it is the same dynamics, written once. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
 Three properties of the action are used below.
 
@@ -40,7 +44,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,i\gamma^{\mu}\partial/\partial Q_\mu\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
+**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
 
 ### Sources
 
@@ -78,7 +82,7 @@ $$
 S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$
 
-where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial Q_\mu-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
+where $M$ is the matrix of the bilinear (for the field, the operator $\mathbb{D}-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
 
 $$
 \boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
@@ -123,7 +127,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 **For the field** the same computation gives the free generating functional
 
 $$
-Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;
+Z_0[\eta,\bar\eta]=\det\big(\mathbb{D}-m\big)\;
 \exp\Big[\,i\!\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big],
 $$
 
@@ -140,7 +144,7 @@ $$
 the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:
 
 $$
-\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(\mathbb{D}-m\big)=\det\big(\Box-m^2\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$
 
 formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -178,7 +182,7 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)\psi ,
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\tilde\nabla_{\mathrm{E}}+m\big)\psi ,
 $$
 
 with the kinetic operator now anti-Hermitian and the mass Hermitian, so that the quadratic form has a definite real part off the zero modes.
@@ -195,7 +199,7 @@ which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\be
 
 $$
 Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
-=\det\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)_{\text{AP}} ,
+=\det\big(\tilde\nabla_{\mathrm{E}}+m\big)_{\text{AP}} ,
 $$
 
 whose logarithm is the free energy of the fermion gas. The identity is the standard finite-temperature reduction of the fermionic integral and is recorded, not recomputed; what the biquaternion framework adds is again only the location of the deformation and the centrality of the phase. The companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
@@ -256,7 +260,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 
 | Symbol | Meaning |
 |---|---|
-| $S=\int d^4x\,\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Biquaternion Dirac action (bilinear) |
+| $S=\int d^4x\,\bar\psi(\mathbb{D}-m)\psi$ | Biquaternion Dirac action (bilinear) |
 | $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ | Action as a trace reading of the Hermitian form |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict'$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
@@ -265,13 +269,13 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\int\prod d\bar\psi d\psi\,\exp(-\bar\psi M\psi)=\det M$ | Gaussian = determinant |
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
-| $Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial Q_\mu-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
+| $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($ict'$ direction becomes real) |
 | $\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic thermal boundary condition |
-| $Z(\beta)=\det(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m)_{\text{AP}}$ | Finite-temperature free partition function |
+| $Z(\beta)=\det(\tilde\nabla_{\mathrm{E}}+m)_{\text{AP}}$ | Finite-temperature free partition function |
 
 ## Further Reading
 

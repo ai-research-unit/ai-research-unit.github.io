@@ -4,7 +4,7 @@
 
 The companion article *Canonical Quantization of the Biquaternion Dirac Field* quantizes the biquaternion Dirac field on its spinor module: it promotes the field to an operator-valued distribution, imposes the equal-time anticommutators, expands the field in the plane-wave solutions, and builds the Fock space. It closes with an explicit accounting of what is standard and what remains open, and it concludes that the construction is a transcription of ordinary canonical quantization rather than a derivation from the algebra $\mathbb{B}$.
 
-This article is about the next object in that construction: the **two-point function** of the quantized field, the Feynman propagator
+The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$. This article is about the next object in that construction: the **two-point function** of the quantized field on the spinor-module representative, the Feynman propagator
 
 $$
 \boxed{\;S_F(x-y) \;=\; \langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle\;},
@@ -162,10 +162,13 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 
 ## The Propagator as a Distribution
 
-It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\gamma^{\mu} p_{\mu}+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\gamma^{\mu} p_{\mu}-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator satisfies
+It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\gamma^{\mu} p_{\mu}+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\gamma^{\mu} p_{\mu}-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator on the spinor-module representative of the chiral pair, with $\mathbb{D}$ the pair operator of the conventions article satisfies
 
 $$
-(i\gamma^{\mu}\partial/\partial Q_\mu-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
+(\mathbb{D}-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y),
+\qquad
+\mathcal{S}_F=(\mathbb{D}+m)\,G_F,\quad
+(\Box-m^2)G_F=i\delta^{(4)}
 $$
 
 in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x^0\gtrless y^0$.
@@ -180,7 +183,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(i\gamma^{\mu}\partial/\partial Q_\mu-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
+**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(\mathbb{D}-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 
 **What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and the location of the deformation in the centre $\mathbb{C}_{\mathbb{B}}$, along the $ict'$ axis of the material sector $\mathbb{M}_-$.
 
