@@ -83,20 +83,22 @@
 <h2 id="the-action-in-biquaternion-form">The Action in Biquaternion Form</h2>
 <p>The classical field theory is defined by the parent article's Lagrangian density,</p>
 <p>$$
-\mathcal{L}=\bar\psi\,(i\gamma^\mu\partial/\partial Q_\mu-m)\,\psi ,
+\mathcal{L}=\bar\psi\,(\mathbb{D}-m)\,\psi ,
 $$</p>
-<p>a real Lorentz scalar whose variation returns $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.</p>
-<p><strong>The biquaternion transcription, and what it does not fix.</strong> On the module the kinetic operator is $i\gamma^\mu\partial/\partial Q_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict'$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial/\partial Q_\mu$:</p>
+<p>a real Lorentz scalar whose variation returns $(\mathbb{D}-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.</p>
+<p><strong>The biquaternion transcription, and what it does not fix.</strong> The dynamics in the algebra is the chiral pair</p>
 <p>$$
-i\gamma^\mu\partial/\partial Q_\mu\;\longleftrightarrow\;\tilde{\nabla}=e_t\,\partial/\partial Q_t+e_k\,\partial/\partial Q_k ,
-\qquad
-\bar\psi\,i\gamma^\mu\partial/\partial Q_\mu\,\psi\;\longleftrightarrow\;\mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big) ,
+\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$</p>
-<p>with the scalar part as the natural pairing. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is <em>not</em> fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.</p>
+<p>and the Lagrangian above is its <strong>spinor-module representative</strong>, not a second dynamics. The algebra bilinear is</p>
+<p>$$
+S=\int \mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big),
+$$</p>
+<p>with the scalar part as the natural pairing. The operator $\mathbb{D}$ is built from the gradient and its conjugate; it is the same dynamics, written once. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is <em>not</em> fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.</p>
 <p>Three properties of the action are used below.</p>
 <p><strong>It is even.</strong> The action is quadratic in the fermionic field, hence bosonic: it commutes with fermion parity and is a $c$-number functional of the field. This is why $\exp(iS)$ is a genuine phase and not an operator.</p>
 <p><strong>Its phase is central.</strong> $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.</p>
-<p><strong>Its kinetic part is Hermitian and its mass part is the linear chiral pair.</strong> $\bar\psi\,i\gamma^{\mu}\partial/\partial Q_\mu\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the <em>Euclidean</em> continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.</p>
+<p><strong>Its kinetic part is Hermitian and its mass part is the linear chiral pair.</strong> $\bar\psi\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the <em>Euclidean</em> continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.</p>
 <h3 id="sources">Sources</h3>
 <p>The sources are Grassmann-valued: the generating functional</p>
 <p>$$
@@ -118,7 +120,7 @@ $$</p>
 <p>$$
 S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$</p>
-<p>where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial Q_\mu-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:</p>
+<p>where $M$ is the matrix of the bilinear (for the field, the operator $\mathbb{D}-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:</p>
 <p>$$
 \boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
 $$</p>
@@ -147,7 +149,7 @@ $$</p>
 <p>to machine precision (ratio $1+0i$), and the four two-point amplitudes divided by $\det M$, in the order $(a,b)=(0,0),(0,1),(1,0),(1,1)$, are $1.023132849-0.154659617i$, $-0.437541309+0.182419035i$, $-0.847323199-0.22075347i$ and $1.512227363+0.003965631i$, which are exactly $(M^{-1})_{00},(M^{-1})_{01},(M^{-1})_{10},(M^{-1})_{11}$. The index order $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ is visible in the middle two entries, which differ: $M$ is not symmetric, and the anticommuting order of the measure fixes which index each of the two fields contracts with.</p>
 <p><strong>For the field</strong> the same computation gives the free generating functional</p>
 <p>$$
-Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;
+Z_0[\eta,\bar\eta]=\det\big(\mathbb{D}-m\big)\;
 \exp\Big[\,i\!\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big],
 $$</p>
 <p>where $S_F$ is the propagator amplitude of the companion article in configuration space. The determinant, the trace-log and the systematic evaluation of the functional determinant are outside this article's subject; what belongs here is the biquaternion form of the result.</p>
@@ -158,7 +160,7 @@ S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsil
 $$</p>
 <p>the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:</p>
 <p>$$
-\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(\mathbb{D}-m\big)=\det\big(\Box-m^2\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$</p>
 <p>formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.</p>
 <h2 id="the-pfaffian-and-the-real-structure">The Pfaffian and the Real Structure</h2>
@@ -181,7 +183,7 @@ $$</p>
 <p>$$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)\psi ,
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\tilde\nabla_{\mathrm{E}}+m\big)\psi ,
 $$</p>
 <p>with the kinetic operator now anti-Hermitian and the mass Hermitian, so that the quadratic form has a definite real part off the zero modes.</p>
 <p><strong>Antiperiodic boundary conditions.</strong> The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=1/T$ with the fermions antiperiodic,</p>
@@ -192,7 +194,7 @@ $$</p>
 <p><strong>The partition function.</strong> On the Euclidean circle the free integral is a determinant,</p>
 <p>$$
 Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
-=\det\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)_{\text{AP}} ,
+=\det\big(\tilde\nabla_{\mathrm{E}}+m\big)_{\text{AP}} ,
 $$</p>
 <p>whose logarithm is the free energy of the fermion gas. The identity is the standard finite-temperature reduction of the fermionic integral and is recorded, not recomputed; what the biquaternion framework adds is again only the location of the deformation and the centrality of the phase. The companion article <em>The KMS Condition and the Biquaternion Framework</em> treats the analytic structure that the antiperiodicity generates.</p>
 <h2 id="parity-sectors-the-phase-and-the-sign-problem">Parity Sectors, the Phase and the Sign Problem</h2>
@@ -244,7 +246,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$S=\int d^4x\,\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$</td>
+<td>$S=\int d^4x\,\bar\psi(\mathbb{D}-m)\psi$</td>
 <td>Biquaternion Dirac action (bilinear)</td>
 </tr>
 <tr>
@@ -280,7 +282,7 @@ $$</p>
 <td>Free generating functional</td>
 </tr>
 <tr>
-<td>$Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial Q_\mu-m)\exp[i\!\int\bar\eta S_F\eta]$</td>
+<td>$Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[i\!\int\bar\eta S_F\eta]$</td>
 <td>Field-level free functional</td>
 </tr>
 <tr>
@@ -304,7 +306,7 @@ $$</p>
 <td>Antiperiodic thermal boundary condition</td>
 </tr>
 <tr>
-<td>$Z(\beta)=\det(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m)_{\text{AP}}$</td>
+<td>$Z(\beta)=\det(\tilde\nabla_{\mathrm{E}}+m)_{\text{AP}}$</td>
 <td>Finite-temperature free partition function</td>
 </tr>
 </tbody>

@@ -75,7 +75,7 @@
 <p>What no companion article yet does is treat the <strong>equation itself</strong>: the three standard forms under which it is written and the proof that they agree, the two-component Majorana operator and the pair of Weyl operators whose product is the d'Alembertian, the eigenstructure of the charge-conjugation operator with its Majorana and ELKO sectors, and the counting of independent solutions. The present article supplies those, in the conventions of the series, and it defers the module-level reality discussion to the companion articles rather than repeating it.</p>
 <p>The presentation is split three ways, as in the companions.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> In the block (chiral) basis with $g=\mathrm{diag}(+,-,-,-)$, the matrix $C=i\gamma^{2}\gamma^{0}$ is real, antisymmetric, $C^{T}=-C$ and $C^{2}=-I_4$, and $C\gamma^{\mu T}C^{-1}=-\gamma^{\mu}$ for all four $\mu$. The antilinear map $\mathcal{C}\psi=K\psi^{*}$ with $K=C\gamma^{0T}$ is a real structure, $\mathcal{C}^{2}=1$, whose matrix $K$ is real with $K^{2}=I_4$, and it satisfies $K\gamma^{\mu*}K^{-1}=-\gamma^{\mu}$ for all four $\mu$. It commutes with the kinetic operator $i\gamma^{\mu}\partial_\mu$. Its eigenspaces for the eigenvalues $\pm1$ are each of <strong>real dimension four</strong> and span the module. Both eigenspaces are on the mass shell, $(\Box-m^{2})\psi=0$; on the $+1$ eigenspace the Majorana equation is the Dirac equation, and on the $-1$ eigenspace it is the Dirac equation with the opposite sign of the mass term. The two-component Weyl operators satisfy $W_{R}W_{L}=\Box$, so the left- and right-handed Weyl operators are the two square roots of the d'Alembertian. In the opposite signature the Clifford algebra $\mathrm{Cl}_{3,1}$ is the real matrix algebra $M_4(\mathbb{R})$, and a representation with <strong>all generators real</strong> exists; that is the real form of the equation.</li>
+<li><strong>Established, and recomputed below.</strong> In the block (chiral) basis with $g=\mathrm{diag}(+,-,-,-)$, the matrix $C=i\gamma^{2}\gamma^{0}$ is real, antisymmetric, $C^{T}=-C$ and $C^{2}=-I_4$, and $C\gamma^{\mu T}C^{-1}=-\gamma^{\mu}$ for all four $\mu$. The antilinear map $\mathcal{C}\psi=K\psi^{*}$ with $K=C\gamma^{0T}$ is a real structure, $\mathcal{C}^{2}=1$, whose matrix $K$ is real with $K^{2}=I_4$, and it satisfies $K\gamma^{\mu*}K^{-1}=-\gamma^{\mu}$ for all four $\mu$. It commutes with the kinetic operator $\mathbb{D}$. Its eigenspaces for the eigenvalues $\pm1$ are each of <strong>real dimension four</strong> and span the module. Both eigenspaces are on the mass shell, $(\Box-m^{2})\psi=0$; on the $+1$ eigenspace the Majorana equation is the Dirac equation, and on the $-1$ eigenspace it is the Dirac equation with the opposite sign of the mass term. The two-component Weyl operators satisfy $W_{R}W_{L}=\Box$, so the left- and right-handed Weyl operators are the two square roots of the d'Alembertian. In the opposite signature the Clifford algebra $\mathrm{Cl}_{3,1}$ is the real matrix algebra $M_4(\mathbb{R})$, and a representation with <strong>all generators real</strong> exists; that is the real form of the equation.</li>
 <li><strong>Transcribed, and cited.</strong> The module-level construction of $\mathcal{C}$, the exchange of the chiral halves, the identification of $\bar{\cdot}$ as the charge conjugation, the fixed space of real dimension four, and the vanishing of the vector current are the content of the neutrino article and are used here, not rebuilt.</li>
 <li><strong>Not supplied.</strong> The functional-analytic content of the two-component square root identity in the continuum, the observability of the neutrino's Majorana nature, the Majorana phases and the lepton-number-violating rates, and any selection principle that would make one fermion Majorana rather than Dirac, are outside the algebra.</li>
 </ul>
@@ -92,9 +92,9 @@ $$</p>
 <h2 id="the-equation-and-its-three-forms">The Equation and Its Three Forms</h2>
 <p>The Majorana equation is written in three ways, and the reason the three matter is that each displays a different property: the real form displays the reality of the solutions, the charge-conjugate form displays the role of charge conjugation, and the two-component form displays the contact with the Lorentz group. We state all three and prove that they agree.</p>
 <h3 id="the-charge-conjugate-form">The Charge-Conjugate Form</h3>
-<p>The equation is</p>
+<p>Here and below $\mathbb{D}$ is the pair operator of <em>Conventions of the Operators and the Calculus</em>, acting on the module in the chiral basis, with $\mathbb{D}^2=\Box$. The equation is</p>
 <p>$$
-\boxed{\;i\gamma^{\mu}\partial_\mu\,\psi \;=\; m\,\psi^{c},
+\boxed{\;\mathbb{D}\,\psi \;=\; m\,\psi^{c},
 \qquad
 \psi^{c} \;=\; C\,\bar\psi^{T} \;=\; C\gamma^{0T}\psi^{*}\;},
 $$</p>
@@ -122,15 +122,15 @@ K^{2}\;=\;I_4,
 \qquad
 K\,\gamma^{\mu*}\,K^{-1}\;=\;-\,\gamma^{\mu}\quad(\mu=0,1,2,3).
 $$</p>
-<p>The first relation is the statement that $\mathcal{C}:\psi\mapsto K\psi^{*}$ is an <strong>involution</strong>, $\mathcal{C}^{2}=1$, and the second is what makes it commute with the kinetic operator. Because $\mathcal{C}$ is conjugate-linear, commuting with $i\gamma^{\mu}\partial_\mu$ is exactly the displayed condition:</p>
+<p>The first relation is the statement that $\mathcal{C}:\psi\mapsto K\psi^{*}$ is an <strong>involution</strong>, $\mathcal{C}^{2}=1$, and the second is what makes it commute with the kinetic operator. Because $\mathcal{C}$ is conjugate-linear, commuting with $\mathbb{D}$ is exactly the displayed condition:</p>
 <p>$$
-\mathcal{C}\!\left(i\gamma^{\mu}\partial_\mu\psi\right)
+\mathcal{C}\!\left(\mathbb{D}\psi\right)
 =\;K\,(i\gamma^{\mu})^{*}\,\partial_\mu\psi^{*}
-=\;i\gamma^{\mu}\partial_\mu\!\left(K\psi^{*}\right)
-=\;i\gamma^{\mu}\partial_\mu\,\mathcal{C}\psi ,
+=\;\mathbb{D}\!\left(K\psi^{*}\right)
+=\;\mathbb{D}\,\mathcal{C}\psi ,
 $$</p>
-<p>using $K(i\gamma^{\mu})^{*}K^{-1}=i\gamma^{\mu}$, which is the second relation. This is the same verified identity the neutrino article records, and it is the whole reason the constraint is consistent with the equation: applying $\mathcal{C}$ to $i\gamma^{\mu}\partial_\mu\psi=m\psi^{c}$ returns the same equation with $\psi$ and $\psi^{c}$ interchanged, so the deviation $\psi-\psi^{c}$ is preserved by the evolution and a field self-conjugate at one time stays self-conjugate.</p>
-<p><strong>On the fixed space it is the Dirac equation.</strong> If $\psi$ satisfies the Majorana equation and the constraint $\psi^{c}=\psi$, then $i\gamma^{\mu}\partial_\mu\psi=m\psi$, which is the massive Dirac equation. Conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The two equations are therefore the same equation on the Majorana sector and different equations off it; the content is the consistency of the constraint, which is a computation and was performed above.</p>
+<p>using $K(i\gamma^{\mu})^{*}K^{-1}=i\gamma^{\mu}$, which is the second relation. This is the same verified identity the neutrino article records, and it is the whole reason the constraint is consistent with the equation: applying $\mathcal{C}$ to $\mathbb{D}\psi=m\psi^{c}$ returns the same equation with $\psi$ and $\psi^{c}$ interchanged, so the deviation $\psi-\psi^{c}$ is preserved by the evolution and a field self-conjugate at one time stays self-conjugate.</p>
+<p><strong>On the fixed space it is the Dirac equation.</strong> If $\psi$ satisfies the Majorana equation and the constraint $\psi^{c}=\psi$, then $\mathbb{D}\psi=m\psi$, which is the massive Dirac equation. Conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The two equations are therefore the same equation on the Majorana sector and different equations off it; the content is the consistency of the constraint, which is a computation and was performed above.</p>
 <h3 id="the-real-form">The Real Form</h3>
 <p>A spinor is <strong>real</strong> when it equals its own conjugate, and the reason the equation can be written in a form in which that reality is visible is the reality type of the Clifford algebra.</p>
 <p><strong>The real representation exists in the opposite signature.</strong> The two real Clifford algebras of four dimensions are not isomorphic over $\mathbb{R}$: the corpus's mostly-minus algebra is the quaternionic matrix algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, and the mostly-plus algebra is the real matrix algebra $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$. In the mostly-plus signature the generators can be taken <strong>purely real</strong>, and the following set does it, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$:</p>
@@ -179,22 +179,19 @@ $$</p>
 <p><strong>The $+1$ eigenspace is the Majorana sector.</strong> In blocks the condition $K\psi^{*}=+\psi$ reads $\psi_R=-\epsilon\psi_L^{*}$ and $\psi_L=\epsilon\psi_R^{*}$, which are consistent, so the fixed space is parametrised by $\psi_L$ alone and has real dimension four. This is the Majorana condition of the neutrino article, and on this space the Majorana equation is the Dirac equation, as shown above. The bilinears of this sector — no vector current, a permitted scalar mass, a permitted axial current — are the Grassmann-level statements the neutrino article computes, and they are not re-derived here.</p>
 <p><strong>The $-1$ eigenspace is the ELKO companion.</strong> The condition $K\psi^{*}=-\psi$ reads $\psi_R=+\epsilon\psi_L^{*}$, which is the same equation with the opposite sign, and it too is consistent and four-real-dimensional. A spinor of this sector satisfies the <strong>sign-flipped</strong> equation</p>
 <p>$$
-i\gamma^{\mu}\partial_\mu\,\psi \;=\; -\,m\,\psi ,
+\mathbb{D}\,\psi \;=\; -\,m\,\psi ,
 $$</p>
 <p>which is the Dirac equation with the wrong sign on the mass term. It is therefore <strong>not</strong> a solution of the Dirac equation for $m\neq0$, and it is the spinor called ELKO in the literature — the "eigenspinor of the charge-conjugation operator" of Lounesto's class 5. Its defining feature is exactly that charge conjugation returns minus the spinor, so the coupling to the central phase is obstructed even more strongly than for the Majorana sector: the antilinear article records that Majorana and ELKO spinors are both <strong>neutral</strong> for this reason, while the Dirac spinor carries the phase.</p>
-<p><strong>Both sectors are on the same mass shell.</strong> This follows from the involution alone and needs no knowledge of which sector a field lies in. Let $\psi$ solve $i\gamma^{\mu}\partial_\mu\psi=m\psi^{c}$. Apply the kinetic operator again and use that $\mathcal{C}$ commutes with it and is an involution:</p>
+<p><strong>Both sectors are on the same mass shell.</strong> This follows from the algebra alone and needs no matrix square. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; applying $\tilde{\nabla}^{\natural}$ to the first member and using the second gives $\Box\tilde{\Psi}_R=m^2\tilde{\Psi}_R$, and symmetrically for the left half. In the spinor-module language, let $\psi$ solve $\mathbb{D}\psi=m\psi^{c}$; applying the kinetic operator again and using that $\mathcal{C}$ commutes with it and is an involution gives</p>
 <p>$$
-(i\gamma^{\mu}\partial_\mu)^{2}\psi
-=\;m\,i\gamma^{\mu}\partial_\mu\,\psi^{c}
-=\;m\,\mathcal{C}\!\left(i\gamma^{\mu}\partial_\mu\psi\right)
+(\mathbb{D})^{2}\psi
+=\;m\,\mathbb{D}\,\psi^{c}
+=\;m\,\mathcal{C}\!\left(\mathbb{D}\psi\right)
 =\;m\,\mathcal{C}\!\left(m\psi^{c}\right)
 =\;m^{2}\psi .
 $$</p>
-<p>Since $(\gamma^{\rho}\partial/\partial Q_\rho)^{2}=g^{\mu\nu}\partial_\mu\partial_\nu=-\Box$ and $i^{2}=-1$, the left side is $\Box\psi$, so</p>
-<p>$$
-\boxed{\;(\Box-m^{2})\psi \;=\;0\;}.
-$$</p>
-<p>Every solution of the Majorana equation, in either eigenspace, obeys the massive Klein–Gordon equation; the ELKO companion is on the mass shell even though it is not a Dirac solution. The two sectors differ in the first-order equation, not in the dispersion, and this is the precise sense in which ELKO "solves Klein–Gordon but not Dirac".</p>
+<p>The chain returns the eigenvalue $m^{2}$. The mass-shell equation itself is the algebra's: applying $\tilde{\nabla}^{\natural}$ to the first member of the pair and using the second gives $\Box\tilde{\Psi}_R=m^{2}\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$. The module chain above is the component check of that eigenvalue.</p>
+<p>Every solution of the Majorana equation, in either eigenspace, obeys the massive Klein–Gordon equation in this sense; the ELKO companion is on the mass shell even though it is not a Dirac solution. The two sectors differ in the first-order equation, not in the dispersion, and this is the precise sense in which ELKO "solves Klein–Gordon but not Dirac".</p>
 <p><strong>What the split does and does not say.</strong> The two eigenspaces are the two real forms of the Dirac module under the same involution, and the four-component Majorana spinor is the $+1$ one. What the split does <strong>not</strong> provide is a mass term for the ELKO sector: the sign-flipped equation has the mass with the opposite sign, and no rewriting of the algebra turns the $+1$ Majorana equation into the $-1$ one without changing the sign of $m$. Whether the ELKO sector is realised in nature is an open empirical question, and no claim is made here.</p>
 <h2 id="solutions-and-the-counting-of-states">Solutions and the Counting of States</h2>
 <p>The counting is the sharpest difference between the Majorana and Dirac equations, and it is a statement about the field rather than about a single plane wave.</p>
@@ -300,7 +297,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$i\gamma^{\mu}\partial_\mu\psi=m\psi^{c}$</td>
+<td>$\mathbb{D}\psi=m\psi^{c}$</td>
 <td>The Majorana equation</td>
 </tr>
 <tr>
@@ -325,7 +322,7 @@ $$</p>
 </tr>
 <tr>
 <td>$K\gamma^{\mu*}K^{-1}=-\gamma^{\mu}$</td>
-<td>$\mathcal{C}$ commutes with $i\gamma^{\mu}\partial_\mu$</td>
+<td>$\mathcal{C}$ commutes with $\mathbb{D}$</td>
 </tr>
 <tr>
 <td>$\psi^{c}=+\psi$</td>
@@ -336,7 +333,7 @@ $$</p>
 <td>ELKO condition; the $-1$ eigenspace, real dimension four</td>
 </tr>
 <tr>
-<td>$i\gamma^{\mu}\partial_\mu\psi=-m\psi$</td>
+<td>$\mathbb{D}\psi=-m\psi$</td>
 <td>Sign-flipped equation of the ELKO sector</td>
 </tr>
 <tr>
