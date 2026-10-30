@@ -70,14 +70,14 @@
       <div class="article-body">
         <h1 id="the-adjoint-of-the-ternary-product"><strong>The Adjoint of the Ternary Product</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $T_{x\star y,1}$ by the derived product, the middle slot the sandwich $S_{x,z}$, and the first slot the plain right multiplication, as <em>The Ternary Product as an Operator</em> records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of <em>The Sesquilinear Adjoint Operator</em>, and the whole article turns on the single identity</p>
+<p>The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $T_{x\star y,1}$ by the derived product, the middle slot the sandwich $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as <em>The Ternary Product as an Operator</em> records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of <em>The Sesquilinear Adjoint Operator</em>, and the whole article turns on the single identity</p>
 <p>$$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},
 $$</p>
 <p>the adjoint of the ternary operator of a pair being the ternary operator of the swapped pair. Three consequences are drawn. The diagonal $\Theta_{x,x}$ is self-adjoint for every element, so the quadratic representation of the Jordan theory is self-adjoint. The operator $\Theta_{x,y}$ is self-adjoint if and only if the derived product $x\star y$ is Hermitian, which ties the operator theory to <em>Hermitian and Skew-Hermitian Elements</em>. And the adjoint operation permutes the three readings of the ternary product among themselves, so the ternary product introduces no adjoint that the sandwich and the plain one-sided operators had not already named; this is the operator form of the reversibility that the $J^{*}$-triples carry.</p>
 <p>Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\varphi(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and</p>
 <p>$$
-\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad S_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
+\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
 $$</p>
 <p>The adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, and the adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$; both exist and are unique by <em>The Sesquilinear Adjoint Operator</em>.</p>
 <h2 id="the-operator-and-its-adjoint">The Operator and its Adjoint</h2>
@@ -118,9 +118,9 @@ $$</p>
 <p>The three readings of the ternary product each have an adjoint of the same group, and the adjoint operation permutes them.</p>
 <p><strong>Theorem (the readings and their adjoints).</strong> For all $x,y,z\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad S_{x,z}^{\dagger}=S_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
+\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
 $$</p>
-<p><strong>Proof.</strong> The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of <em>The Sesquilinear Adjoint Operator</em>, read with the middle reading $\Theta_{x,y}(z)=S_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.</p>
+<p><strong>Proof.</strong> The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of <em>The Sesquilinear Adjoint Operator</em>, read with the middle reading $\Theta_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.</p>
 <p><strong>Corollary (no new adjoint).</strong> The adjoint of the ternary operator of a pair is the plain left multiplication by the star of its derived product,</p>
 <p>$$
 \Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}=T_{y\star x,1},
@@ -186,7 +186,7 @@ $$</p>
 <td>the Hermitian criterion</td>
 </tr>
 <tr>
-<td>$S_{a,b}^{\dagger}=S_{b,a}$</td>
+<td>$\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$</td>
 <td>the adjoint of the sandwich</td>
 </tr>
 <tr>

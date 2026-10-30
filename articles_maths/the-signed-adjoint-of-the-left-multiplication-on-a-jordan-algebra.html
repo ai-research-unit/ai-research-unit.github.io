@@ -79,7 +79,7 @@ $$</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \bigl(L_a\circ\alpha\bigr)^{\dagger} = \alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)} .
 $$</p>
-<p>The adjoint of the signed left multiplication is thus the signed left multiplication by the <strong>image of the parameter under the grade involution</strong>; it is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and it is <strong>unitary exactly when the unsigned left multiplication is an involution, $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$, and the adjoint of that product is computed from the adjoints of its factors, recovering the rule of the signed adjoint sandwich.</p>
+<p>The adjoint of the signed left multiplication is thus the signed left multiplication by the <strong>image of the parameter under the grade involution</strong>; it is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and it is <strong>unitary exactly when the unsigned left multiplication is an involution, $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$, and the adjoint of that product is computed from the adjoints of its factors, recovering the rule of the signed adjoint sandwich.</p>
 <p>The article assumes <em>The Signed Left Multiplication on a Jordan Algebra</em> for the signed one-sided action, its homogeneity and the fixed elements; <em>The Signed Adjoint Sandwich on a Jordan Algebra</em> for the signed sandwich and its adjoint; <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em> for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the quadratic representation and the symmetries; and <em>The Operators on an Algebra</em> for the ambient endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $L_a$ is the Jordan left multiplication, $\ell^{\alpha}_a = L_a\circ\alpha$ is the signed left multiplication, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs.</p>
 <h2 id="the-signed-left-multiplication-and-its-adjoint">The Signed Left Multiplication and Its Adjoint</h2>
 <h3 id="the-definition-and-the-unsigned-case">The Definition and the Unsigned Case</h3>
@@ -104,12 +104,12 @@ $$</p>
 <p>that is, exactly when $a$ is a <strong>symmetry</strong>.</p>
 <p><em>Proof.</em> $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition.</p>
 <h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
-<p><strong>Theorem.</strong> The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is</p>
+<p><strong>Theorem.</strong> The signed sandwich is the product of a signed and an unsigned one-sided action, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is</p>
 <p>$$
-\boxed{\;\bigl(S^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}\;} ,
+\boxed{\;\bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}\;} ,
 $$</p>
 <p>which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
-<p><em>Proof.</em> The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
+<p><em>Proof.</em> The anti-multiplicativity of the adjoint gives $(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
 <p><strong>Corollary.</strong> The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of <em>The Signed Adjoint of the Left Multiplication on a Ring</em>.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed left multiplication is the unsigned one, $\ell^{\alpha}_a = L_a$, which is self-adjoint for every $a$; the unitarity condition is $L_a^2 = \mathrm{id}$, the symmetry condition, and it holds for the symmetries.</p>
@@ -120,7 +120,7 @@ $$</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} ,
 $$</p>
-<p>because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$. It is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and <strong>unitary exactly when $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ has the adjoint computed from the adjoints of its factors, and its symmetrisation recovers $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>; the signed left multiplication is the one-sided case of that rule. The identity involution, the transpose involution and the odd element are the worked examples. No norm, form, distance or geometric reflection occurs.</p>
+<p>because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$. It is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and <strong>unitary exactly when $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ has the adjoint computed from the adjoints of its factors, and its symmetrisation recovers $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>; the signed left multiplication is the one-sided case of that rule. The identity involution, the transpose involution and the odd element are the worked examples. No norm, form, distance or geometric reflection occurs.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -155,11 +155,11 @@ $$</p>
 <td>Unitarity condition (symmetry)</td>
 </tr>
 <tr>
-<td>$S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$</td>
+<td>$\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$</td>
 <td>Signed sandwich as a product</td>
 </tr>
 <tr>
-<td>$(S^{\alpha}_{a,b})^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}$</td>
+<td>$(\mathcal{T}^{\alpha}_{a,b})^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}$</td>
 <td>Adjoint of the sandwich from the factors</td>
 </tr>
 </tbody>

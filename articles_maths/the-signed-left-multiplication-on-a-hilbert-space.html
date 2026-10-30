@@ -128,10 +128,10 @@ $$</p>
 <h2 id="the-sandwich-as-a-composite">The Sandwich as a Composite</h2>
 <p><strong>Proposition.</strong> The signed sandwich factors through the one-sided multiplications in two ways:</p>
 <p>$$
-S_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
+\mathcal{T}_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
 $$</p>
 <p>and the unsigned sandwich is $T_{U,V}=L_UR_V$. So the signed sandwich is the signed right multiplication followed by the left multiplication by $U$, or equivalently the signed left multiplication followed by the right multiplication by $\alpha(V)$.</p>
-<p><em>Proof.</em> $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=S_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.</p>
+<p><em>Proof.</em> $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=\mathcal{T}_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.</p>
 <p><strong>Corollary (the composition table recovered).</strong> The products of the signed sandwich computed in <em>The Signed Sandwich on a Hilbert Space</em> are the products of the factors displayed here, and the parity of the signed length is the parity of the numbers of signed one-sided factors.</p>
 <p><em>Proof.</em> Substituting the factorisations into the four general products and using $\alpha^2=\mathrm{id}$ gives the table.</p>
 <p><strong>Example (finite dimension).</strong> For $H=\mathbb{K}^{p+q}$ with $\Gamma=\operatorname{diag}(I_p,-I_q)$ the signed left multiplication by a block matrix $U=\begin{pmatrix}A&B\\C&D\end{pmatrix}$ acts on a block matrix $T=\begin{pmatrix}P&Q\\R&S\end{pmatrix}$ by</p>
@@ -141,7 +141,7 @@ $$</p>
 <p>so the signed left multiplication is the ordinary one with the off-diagonal blocks of the argument negated. The unsigned left multiplication is the same product without the sign, and the kernel is the kernel of $U$ transported by the sign reversal of the off-diagonal blocks.</p>
 <p><strong>Example (the normal basis of a graded Hilbert space).</strong> When $H$ has a homogeneous orthonormal basis, the signed left multiplication by a diagonal $U$ acts on the matrix units by $\ell_U(e_m\otimes\bar e_n)=\varepsilon_n u_m\,e_m\otimes\bar e_n$, where $\varepsilon_n$ is the sign of the grading of $e_n$; the eigenvalues of $\ell_U$ in this basis are the products of the diagonal entries with the graded signs, and $\ell_U$ is isometric exactly when these products all have modulus one.</p>
 <h2 id="summary">Summary</h2>
-<p>The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$, bounded with $\|\ell_U\|=\|U\|$, injective in $U$, and equal to the ordinary left multiplication with the sign $-1$ on the odd part. Its products obey $\ell_U\ell_V=L_{U\alpha(V)}$ and $L_U\ell_V=\ell_{UV}$, so the signed left multiplications form the coset $L(B(H))\alpha$ of the unsigned ones inside $B(B(H))$, with the parity of the signed length adding modulo two; it is invertible exactly when $U$ is, with $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$, is isometric exactly when $U$ is, and is unitary exactly when $U$ is. Its kernel is $\alpha(\ker U)$ and its image is $U\,B(H)$. The signed sandwich factors through the two one-sided multiplications, $S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$, which recovers the composition table of the sandwich and exhibits the signed left multiplication as the elementary building block of the two-sided theory.</p>
+<p>The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$, bounded with $\|\ell_U\|=\|U\|$, injective in $U$, and equal to the ordinary left multiplication with the sign $-1$ on the odd part. Its products obey $\ell_U\ell_V=L_{U\alpha(V)}$ and $L_U\ell_V=\ell_{UV}$, so the signed left multiplications form the coset $L(B(H))\alpha$ of the unsigned ones inside $B(B(H))$, with the parity of the signed length adding modulo two; it is invertible exactly when $U$ is, with $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$, is isometric exactly when $U$ is, and is unitary exactly when $U$ is. Its kernel is $\alpha(\ker U)$ and its image is $U\,B(H)$. The signed sandwich factors through the two one-sided multiplications, $\mathcal{T}_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$, which recovers the composition table of the sandwich and exhibits the signed left multiplication as the elementary building block of the two-sided theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -184,7 +184,7 @@ $$</p>
 <td>the kernel</td>
 </tr>
 <tr>
-<td>$S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$</td>
+<td>$\mathcal{T}_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$</td>
 <td>the sandwich as a composite</td>
 </tr>
 </tbody>

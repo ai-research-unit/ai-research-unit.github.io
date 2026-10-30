@@ -70,13 +70,13 @@
       <div class="article-body">
         <h1 id="reflections-as-signed-two-sided-operators-on-a-bimodule-over-an-algebra"><strong>Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A reflection of a graded bimodule is a two-sided operator of order two whose middle factor carries the grade involution. <em>The Signed Sandwich on a Bimodule over an Algebra</em> defined the operator $r_u=S^{\alpha}_{u,u^{-1}}$ and found that its square is the inner conjugation by $u\alpha(u)$; this article reads the construction backwards. Given an operator of order two that is built from a unit and the grade involution, which unit realises it, and when is the operator genuinely an involution? The answer pairs the reflections with the <strong>elements acting by an involution</strong>, that is, the units $u$ with $u\alpha(u)$ in the centralizer of the bimodule, and it fails in two ways: when $u\alpha(u)$ is not in that centralizer the operator has infinite order, and when the bimodule is not faithful different units realise the same reflection.</p>
-<p>The article assumes the graded bimodule of <em>The Signed Sandwich on a Bimodule over an Algebra</em>, and the operator layer of <em>Left and Right Multiplication of a Module</em> and <em>Module Endomorphisms</em>. The signed operators built from the involution of the elements and from the adjoint belong to the <code>* Operator Theory</code> group and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and <em>reflection</em> means an operator of order two without any geometric reading. Throughout, $A$ is a unital associative $R$-algebra with a grade involution $\alpha$, ${}_A M_A$ is a graded $(A,A)$-bimodule, $C_A(M)=\{w \in A : wx=xw \text{ for all } x \in M\}$ is the centralizer of the bimodule, and $r_u=S^{\alpha}_{u,u^{-1}}$.</p>
+<p>A reflection of a graded bimodule is a two-sided operator of order two whose middle factor carries the grade involution. <em>The Signed Sandwich on a Bimodule over an Algebra</em> defined the operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ and found that its square is the inner conjugation by $u\alpha(u)$; this article reads the construction backwards. Given an operator of order two that is built from a unit and the grade involution, which unit realises it, and when is the operator genuinely an involution? The answer pairs the reflections with the <strong>elements acting by an involution</strong>, that is, the units $u$ with $u\alpha(u)$ in the centralizer of the bimodule, and it fails in two ways: when $u\alpha(u)$ is not in that centralizer the operator has infinite order, and when the bimodule is not faithful different units realise the same reflection.</p>
+<p>The article assumes the graded bimodule of <em>The Signed Sandwich on a Bimodule over an Algebra</em>, and the operator layer of <em>Left and Right Multiplication of a Module</em> and <em>Module Endomorphisms</em>. The signed operators built from the involution of the elements and from the adjoint belong to the <code>* Operator Theory</code> group and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and <em>reflection</em> means an operator of order two without any geometric reading. Throughout, $A$ is a unital associative $R$-algebra with a grade involution $\alpha$, ${}_A M_A$ is a graded $(A,A)$-bimodule, $C_A(M)=\{w \in A : wx=xw \text{ for all } x \in M\}$ is the centralizer of the bimodule, and $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$.</p>
 <h2 id="reflections-and-the-signed-sandwich">Reflections and the Signed Sandwich</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $u \in A^{\times}$. The <strong>signed inner conjugation</strong> by $u$ is the operator</p>
 <p>$$
-r_u=S^{\alpha}_{u,u^{-1}} : M \to M, \qquad r_u(x)=u\,\alpha(x)\,u^{-1}.
+r_u=\mathcal{T}^{\alpha}_{u,u^{-1}} : M \to M, \qquad r_u(x)=u\,\alpha(x)\,u^{-1}.
 $$</p>
 <p>A <strong>reflection</strong> of the graded bimodule is a signed two-sided operator $r_u$ that is an involution, $r_u^{2}=\mathrm{id}_M$.</p>
 <p><strong>Proposition.</strong> The signed inner conjugations are invertible, with</p>
@@ -88,7 +88,7 @@ $$</p>
 r_u\,r_v=\operatorname{conj}_{u\alpha(v)} \qquad (u,v \in A^{\times}),
 $$</p>
 <p>where $\operatorname{conj}_w(x)=wxw^{-1}$. The product of two reflections is therefore an inner conjugation, and it is a reflection only when it can be rewritten in the form $r_w$; in general the reflections are not closed under composition.</p>
-<p><em>Proof.</em> The inverse is the corollary on invertibility of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. For the product, the composition law gives $r_ur_v=S_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup.</p>
+<p><em>Proof.</em> The inverse is the corollary on invertibility of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. For the product, the composition law gives $r_ur_v=\mathcal{T}_{u\alpha(v),\,\alpha(v^{-1})u^{-1}}$; since $\alpha(v^{-1})=\alpha(v)^{-1}$ the second parameter is $\alpha(v)^{-1}u^{-1}=(u\alpha(v))^{-1}$, so the composite is the unsigned diagonal sandwich $\mathcal{T}_{w,w^{-1}}$ with $w=u\alpha(v)$, that is $\operatorname{conj}_w$. A reflection as a set of operators is the image of $A^{\times}$ under $u\mapsto r_u$, which need not be a subgroup.</p>
 <h3 id="the-criterion">The criterion</h3>
 <p><strong>Theorem.</strong> For $u \in A^{\times}$ the operator $r_u$ is a reflection if and only if $u\alpha(u) \in C_A(M)$:</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 <td>grade involution, $\alpha^{2}=\mathrm{id}$, compatible with the bimodule</td>
 </tr>
 <tr>
-<td>$r_u=S^{\alpha}_{u,u^{-1}}$</td>
+<td>$r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$</td>
 <td>signed inner conjugation by a unit, $x\mapsto u\alpha(x)u^{-1}$</td>
 </tr>
 <tr>

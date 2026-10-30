@@ -74,8 +74,8 @@
 <p>$$
 \ell^{\alpha}_a : J \to J, \qquad \ell^{\alpha}_a(x) = a\,\alpha(x) ,
 $$</p>
-<p>and the signed right multiplication is $\rho^{\alpha}_a(x) = \alpha(x)\,a$. The signed one-sided actions combine with the unsigned ones to give the signed sandwich of <em>The Signed Sandwich on a Jordan Algebra</em>, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, a product of one unsigned and one signed one-sided action.</p>
-<p>The article defines the signed one-sided actions on the underlying module of a special graded Jordan algebra, relates them to the unsigned ones by $\ell^{\alpha}_a = \ell_a\circ\alpha$ and $\rho^{\alpha}_a = \rho_a\circ\alpha$, and records that the signed sandwich is their product with an <strong>unsigned</strong> partner, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and determines their <strong>homogeneity</strong>: the signed left multiplication by $a$ shifts the parity by the parity of $a$, so it is a graded operator of degree $|a|$ and not a degree-preserving one; this is the sign rule the grading imposes on the one-sided layer, and it is the precise difference from the unsigned left multiplication, which preserves the degree. The article then computes the <strong>elements fixed</strong> by the signed left multiplication: on even elements the equation is $ax = x$, on odd elements it is $ax = -x$, so the fixed space is the even part of the eigenvalue-one space of $\ell_a$ together with the odd part of its eigenvalue-minus-one space; in particular the signed left multiplication by the unit $1$ fixes exactly the even part $A_{\bar 0}$. The symmetrisation of the two signed one-sided actions is the quadratic representation twisted by $\alpha$, $\tfrac12(\ell^{\alpha}_a\rho^{\alpha}_a + \rho^{\alpha}_a\ell^{\alpha}_a) = U_a\circ\alpha$, which is where the signed left multiplication meets the structure group.</p>
+<p>and the signed right multiplication is $\rho^{\alpha}_a(x) = \alpha(x)\,a$. The signed one-sided actions combine with the unsigned ones to give the signed sandwich of <em>The Signed Sandwich on a Jordan Algebra</em>, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, a product of one unsigned and one signed one-sided action.</p>
+<p>The article defines the signed one-sided actions on the underlying module of a special graded Jordan algebra, relates them to the unsigned ones by $\ell^{\alpha}_a = \ell_a\circ\alpha$ and $\rho^{\alpha}_a = \rho_a\circ\alpha$, and records that the signed sandwich is their product with an <strong>unsigned</strong> partner, $\mathcal{T}^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and determines their <strong>homogeneity</strong>: the signed left multiplication by $a$ shifts the parity by the parity of $a$, so it is a graded operator of degree $|a|$ and not a degree-preserving one; this is the sign rule the grading imposes on the one-sided layer, and it is the precise difference from the unsigned left multiplication, which preserves the degree. The article then computes the <strong>elements fixed</strong> by the signed left multiplication: on even elements the equation is $ax = x$, on odd elements it is $ax = -x$, so the fixed space is the even part of the eigenvalue-one space of $\ell_a$ together with the odd part of its eigenvalue-minus-one space; in particular the signed left multiplication by the unit $1$ fixes exactly the even part $A_{\bar 0}$. The symmetrisation of the two signed one-sided actions is the quadratic representation twisted by $\alpha$, $\tfrac12(\ell^{\alpha}_a\rho^{\alpha}_a + \rho^{\alpha}_a\ell^{\alpha}_a) = U_a\circ\alpha$, which is where the signed left multiplication meets the structure group.</p>
 <p>The article assumes <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for $L_a$, $U_a$ and the quadratic representation, <em>Left and Right Multiplication in a Ring</em> for $\ell_a$ and $\rho_a$, <em>The Signed Sandwich on a Jordan Algebra</em> for the signed sandwich and the grade involution, and <em>Jordan Algebras</em> for the special algebra $A^+$. The adjoint of the signed left multiplication with respect to the pairing of the category is <em>The Signed Adjoint of the Left Multiplication on a Jordan Algebra</em>, in the <code>* Operator Theory</code> group; the <code>*</code> involution of the elements is not used here. Throughout, $A$ is an associative unital $R$-algebra, $J = A^+$ is the special Jordan algebra with the halved product, and $\alpha$ is a grade involution of $A$. No form, norm, distance or geometric reflection occurs.</p>
 <h2 id="the-unsigned-one-sided-actions">The Unsigned One-Sided Actions</h2>
 <h3 id="the-associative-multiplications">The Associative Multiplications</h3>
@@ -83,7 +83,7 @@ $$</p>
 <p>$$
 \ell_a : A \to A, \quad \ell_a(x) = ax , \qquad \rho_a : A \to A, \quad \rho_a(x) = xa ,
 $$</p>
-<p>the one-sided multiplications of <em>Left and Right Multiplication in a Ring</em>. They are the operators whose products are the sandwiches, $S_{a,b} = \ell_a\rho_b$, with the composition laws $\ell_a\ell_b = \ell_{ab}$ and $\rho_a\rho_b = \rho_{ba}$ of that article.</p>
+<p>the one-sided multiplications of <em>Left and Right Multiplication in a Ring</em>. They are the operators whose products are the sandwiches, $\mathcal{T}_{a,b} = \ell_a\rho_b$, with the composition laws $\ell_a\ell_b = \ell_{ab}$ and $\rho_a\rho_b = \rho_{ba}$ of that article.</p>
 <h3 id="the-jordan-left-multiplication-as-a-symmetrisation">The Jordan Left Multiplication as a Symmetrisation</h3>
 <p>The Jordan left multiplication of $J = A^+$ is</p>
 <p>$$
@@ -99,7 +99,7 @@ $$</p>
 \ell^{\alpha}_a : J \to J, \quad \ell^{\alpha}_a(x) = a\,\alpha(x) , \qquad
 \rho^{\alpha}_a : J \to J, \quad \rho^{\alpha}_a(x) = \alpha(x)\,a .
 $$</p>
-<p>They are linear in the parameter $a$ and additive in $x$, and they are the operators composing to the signed sandwich: $S^{\alpha}_{a,b} = \ell^{\alpha}_a\rho^{\alpha}_b$, since $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\,\alpha(\alpha(x)b) = a\,x\,\alpha(b)$, which is $S_{a,\alpha(b)}$ and agrees with the definition $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ exactly when the middle factor is read correctly, namely $S^{\alpha}_{a,b} = \ell^{\alpha}_a\circ\rho^{\alpha}_{\alpha(b)}$. This identication is recorded as a proposition below.</p>
+<p>They are linear in the parameter $a$ and additive in $x$, and they are the operators composing to the signed sandwich: $\mathcal{T}^{\alpha}_{a,b} = \ell^{\alpha}_a\rho^{\alpha}_b$, since $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\,\alpha(\alpha(x)b) = a\,x\,\alpha(b)$, which is $\mathcal{T}_{a,\alpha(b)}$ and agrees with the definition $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$ exactly when the middle factor is read correctly, namely $\mathcal{T}^{\alpha}_{a,b} = \ell^{\alpha}_a\circ\rho^{\alpha}_{\alpha(b)}$. This identication is recorded as a proposition below.</p>
 <h3 id="relation-to-the-unsigned-action">Relation to the Unsigned Action</h3>
 <p><strong>Theorem.</strong> For every $a \in J$,</p>
 <p>$$
@@ -110,10 +110,10 @@ $$</p>
 <p><strong>Corollary.</strong> The signed left multiplication is the unsigned left multiplication read at the twisted argument, and the two coincide exactly when $\alpha = \mathrm{id}$; in particular $\ell^{\alpha}_1 = \alpha$ is the grade involution itself, while $\ell_1 = \mathrm{id}$.</p>
 <p><strong>Proposition (composition with the signed sandwich).</strong> For all $a, b \in J$,</p>
 <p>$$
-S^{\alpha}_{a,b} = \rho_b\circ\ell^{\alpha}_a = \ell_a\circ\rho^{\alpha}_b ,
+\mathcal{T}^{\alpha}_{a,b} = \rho_b\circ\ell^{\alpha}_a = \ell_a\circ\rho^{\alpha}_b ,
 $$</p>
-<p>so the signed sandwich is the product of one <strong>unsigned</strong> and one <strong>signed</strong> one-sided action, in either order; the product of two signed actions is instead $\ell^{\alpha}_a\rho^{\alpha}_b(x) = a\,x\,\alpha(b) = S_{a,\alpha(b)}(x)$, an unsigned sandwich at the twisted right parameter.</p>
-<p><em>Proof.</em> $\rho_b(\ell^{\alpha}_a(x)) = \rho_b(a\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$; the second expression is identical. For the last identity, $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\alpha(\alpha(x)b) = ax\alpha(b) = S_{a,\alpha(b)}(x)$.</p>
+<p>so the signed sandwich is the product of one <strong>unsigned</strong> and one <strong>signed</strong> one-sided action, in either order; the product of two signed actions is instead $\ell^{\alpha}_a\rho^{\alpha}_b(x) = a\,x\,\alpha(b) = \mathcal{T}_{a,\alpha(b)}(x)$, an unsigned sandwich at the twisted right parameter.</p>
+<p><em>Proof.</em> $\rho_b(\ell^{\alpha}_a(x)) = \rho_b(a\alpha(x)) = a\alpha(x)b = \mathcal{T}^{\alpha}_{a,b}(x)$; the second expression is identical. For the last identity, $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\alpha(\alpha(x)b) = ax\alpha(b) = \mathcal{T}_{a,\alpha(b)}(x)$.</p>
 <h3 id="homogeneity-and-the-sign-rule">Homogeneity and the Sign Rule</h3>
 <p><strong>Theorem (the sign rule).</strong> Let $A = A_{\bar 0}\oplus A_{\bar 1}$ be the grading by $\alpha$ and let $a$ be homogeneous of parity $|a| \in \{0,1\}$. Then</p>
 <p>$$
@@ -197,7 +197,7 @@ $$</p>
 <td>Symmetrisation</td>
 </tr>
 <tr>
-<td>$S^{\alpha}_{a,b}$</td>
+<td>$\mathcal{T}^{\alpha}_{a,b}$</td>
 <td>Signed sandwich (Article 7)</td>
 </tr>
 </tbody>

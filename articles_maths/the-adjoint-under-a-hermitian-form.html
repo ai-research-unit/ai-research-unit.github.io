@@ -140,19 +140,19 @@ $$</p>
 m_{x}^{\dagger} = m_{x^{*}} .
 $$</p>
 <p><em>Proof.</em> The compatibility is exactly $h(xz,y) = h(z,x^{*}y) = h(z,m_{x^{*}}y)$, and $m_{x^{*}}$ is $R$-linear because the product is linear in its first slot.</p>
-<p><strong>Theorem (the conjugate sandwich).</strong> Let $h$ be compatible and nonsingular, and let $S_{a,b}(z) = az^{*}b$. Then $S_{a,b}$ is $\varsigma$-semilinear and</p>
+<p><strong>Theorem (the conjugate sandwich).</strong> Let $h$ be compatible and nonsingular, and let $\mathcal{T}_{a,b}(z) = az^{*}b$. Then $\mathcal{T}_{a,b}$ is $\varsigma$-semilinear and</p>
 <p>$$
-S_{a,b}^{\dagger} = S_{b,a} .
+\mathcal{T}_{a,b}^{\dagger} = \mathcal{T}_{b,a} .
 $$</p>
-<p><em>Proof.</em> Iterating the two forms of the compatibility, $h(xy,z) = h(y,x^{*}z)$ and $h(x,yz) = h(y^{*}x,z)$, together with the Hermitian property, gives $h(az^{*}b,y) = \varsigma\bigl(h(z,by^{*}a)\bigr) = \varsigma\bigl(h(z,S_{b,a}y)\bigr)$; this is the computation of <em>The Sesquilinear Adjoint Operator</em>, §<em>The One-Sided Multiplications</em> read for the general form $h$. The semilinearity in $z$ is that of the involution.</p>
-<p><strong>Corollary (the conjugate left multiplication).</strong> Let $\Lambda_{x}(z) = x\star z = xz^{*} = S_{x,1}(z)$ be the multiplication by the derived product. Then</p>
+<p><em>Proof.</em> Iterating the two forms of the compatibility, $h(xy,z) = h(y,x^{*}z)$ and $h(x,yz) = h(y^{*}x,z)$, together with the Hermitian property, gives $h(az^{*}b,y) = \varsigma\bigl(h(z,by^{*}a)\bigr) = \varsigma\bigl(h(z,\mathcal{T}_{b,a}y)\bigr)$; this is the computation of <em>The Sesquilinear Adjoint Operator</em>, §<em>The One-Sided Multiplications</em> read for the general form $h$. The semilinearity in $z$ is that of the involution.</p>
+<p><strong>Corollary (the conjugate left multiplication).</strong> Let $\Lambda_{x}(z) = x\star z = xz^{*} = \mathcal{T}_{x,1}(z)$ be the multiplication by the derived product. Then</p>
 <p>$$
-\Lambda_{x}^{\dagger}(y) = S_{1,x}(y) = y^{*}x ,
+\Lambda_{x}^{\dagger}(y) = \mathcal{T}_{1,x}(y) = y^{*}x ,
 $$</p>
 <p>so the adjoint of a one-sided multiplication in the derived product is a conjugate <strong>sandwich</strong> and not another one-sided multiplication: the family of the one-sided multiplications is not stable under the adjoint.</p>
-<p><strong>Corollary (the right multiplication).</strong> Let $R_{b}(z) = zb^{*}$, so that $R_{b} = (*)\circ S_{b,1}$ and $R_{b^{*}} = S_{1,b}\circ (*)$. The involution is self-adjoint, $(*)^{\dagger} = *$, so</p>
+<p><strong>Corollary (the right multiplication).</strong> Let $R_{b}(z) = zb^{*}$, so that $R_{b} = (*)\circ \mathcal{T}_{b,1}$ and $R_{b^{*}} = \mathcal{T}_{1,b}\circ (*)$. The involution is self-adjoint, $(*)^{\dagger} = *$, so</p>
 <p>$$
-R_{b}^{\dagger} = S_{b,1}^{\dagger}\circ (*)^{\dagger} = S_{1,b}\circ * = R_{b^{*}} ,
+R_{b}^{\dagger} = \mathcal{T}_{b,1}^{\dagger}\circ (*)^{\dagger} = \mathcal{T}_{1,b}\circ * = R_{b^{*}} ,
 $$</p>
 <p>and the right multiplication is adjoint to the right multiplication by the image of the parameter under the involution.</p>
 <p><strong>Remark (the asymmetry of the two slots).</strong> In the layer of the form, the two multiplications are adjoint in pairs, $m_{x} \leftrightarrow m_{x^{*}}$, but the multiplication by the derived product, $z \mapsto xz^{*}$, is conjugate-linear and its adjoint is the sandwich $z \mapsto z^{*}x$, not a one-sided multiplication in any product of the layer. This is the form-level image of the failure of the family of one-sided multiplications to close under the adjoint, and it is the reason the operator theory of the layer is stated for the sandwiches and not only for the multiplications, as in <em>The Bounded Sesquilinear Sandwich</em>.</p>
