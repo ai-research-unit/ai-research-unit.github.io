@@ -229,8 +229,9 @@ $$</p>
 <p><em>A product.</em> From the table, $\gamma^0\gamma^1=T_{e_x,e_z}$, hence $\gamma^0\gamma^1\psi=e_x\psi e_z$.</p>
 <p><em>The derivative part of the Dirac equation.</em>
 $$
-\gamma^\mu\partial_\mu\psi
-=i\psi_{,t}e_x+i\sum_{k=1}^{3}e_k\,\psi_{,k}\,e_y .
+\gamma^\mu\frac{\partial}{\partial Q_\mu}\psi
+=i\frac{\partial\psi}{\partial Q_t}e_x
++i\sum_{k=1}^{3}e_k\,\frac{\partial\psi}{\partial Q_k}\,e_y .
 $$
 The left side is the usual notation, the right side is four multiplications. Both are on the page; neither replaces the other.</p>
 <p><em>The chirality projector.</em>
@@ -283,7 +284,7 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 <td style="text-align: right;">1</td>
 </tr>
 <tr>
-<td>$\gamma^\mu\partial_\mu$</td>
+<td>$\gamma^\mu\partial/\partial Q_\mu$</td>
 <td>$\sum_\mu$</td>
 <td style="text-align: right;">4</td>
 </tr>

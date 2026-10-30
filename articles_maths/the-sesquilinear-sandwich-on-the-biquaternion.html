@@ -108,17 +108,17 @@ $$</p>
 $$</p>
 <p>and $\mathcal{T}_{e_t,e_t}$ is the involution of the algebra.</p>
 <p><strong>Proof.</strong> $\mathcal{T}_{e_t,e_t}(\tilde Q_1)=e_t\tilde Q_1^{*}e_t=\tilde Q_1^{*}$; $\mathcal{T}_{\tilde Q,e_t}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}=L_{\tilde Q}(\tilde Q_1)$ by <em>The Left and Right Multiplications of the Biquaternion Sesqualgebra</em>, §<em>The Definition</em>; and $\mathcal{T}_{e_t,\tilde Q_2}(\tilde Q_1)=\tilde Q_1^{*}\tilde Q_2^{*}$.</p>
-<p><strong>Remark.</strong> The sandwich with a unit in the second slot is the left multiplication, and with a unit in the first slot it is the composite of the involution with the right multiplication. The two are not the two one-sided multiplications: the right multiplication is $S_{?}$ with a unit in the <em>first</em> slot only in the ordinary two-sided notation, and here the involution enters the middle. The asymmetry is the asymmetry of the multiplication, whose unit is a right unit alone.</p>
+<p><strong>Remark.</strong> The sandwich with a unit in the second slot is the left multiplication, and with a unit in the first slot it is the composite of the involution with the right multiplication. The two are not the two one-sided multiplications: the right multiplication is $T_{e_t,\tilde Q_2}$, the two-sided multiplication with a unit in the <em>first</em> slot only in the ordinary two-sided notation, and here the involution enters the middle. The asymmetry is the asymmetry of the multiplication, whose unit is a right unit alone.</p>
 <h2 id="the-composition">The Composition</h2>
 <h3 id="the-two-families-together">The Two Families Together</h3>
-<p><strong>Theorem (the composition table).</strong> For all $\tilde Q_8,\tilde Q_2,\tilde Q_3,\tilde Q_9,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde S$,</p>
+<p><strong>Theorem (the composition table).</strong> For all $\tilde Q_8,\tilde Q_2,\tilde Q_3,\tilde Q_9,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde Q_{10}$,</p>
 <p>$$
 \mathcal{T}_{\tilde Q_3,\tilde Q_9}\mathcal{T}_{\tilde Q_8,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}} , \qquad
 T_{\tilde Q,\tilde Q_7}\mathcal{T}_{\tilde Q_8,\tilde Q_2}=\mathcal{T}_{\tilde Q\tilde Q_8,\tilde Q_7^{*}\tilde Q_2} ,
 $$
 $$
 \mathcal{T}_{\tilde Q_3,\tilde Q_9}T_{\tilde Q,\tilde Q_7}=\mathcal{T}_{\tilde Q_3\tilde Q_7^{*},\tilde Q_9\tilde Q} , \qquad
-T_{\tilde Q,\tilde Q_7}T_{\tilde Q_6,\tilde S}=T_{\tilde Q\tilde Q_6,\tilde S\tilde Q_7} .
+T_{\tilde Q,\tilde Q_7}T_{\tilde Q_6,\tilde Q_{10}}=T_{\tilde Q\tilde Q_6,\tilde Q_{10}\tilde Q_7} .
 $$</p>
 <p><strong>Proof.</strong> Each is the composition table of <em>The Sesquilinear Sandwich Operator</em>, §<em>The Multiplication Table</em>, transported to the sandwich $\mathcal{T}_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$; the first is the direct computation $\mathcal{T}_{\tilde Q_3,\tilde Q_9}(\mathcal{T}_{\tilde Q_8,\tilde Q_2}(\tilde Q_1))=\tilde Q_3(\tilde Q_8\tilde Q_1^{*}\tilde Q_2^{*})^{*}\tilde Q_9^{*}=\tilde Q_3\tilde Q_2\tilde Q_1\tilde Q_8^{*}\tilde Q_9^{*}$, and the others are the same computation with one factor of the involution and one two-sided multiplication in each order.</p>
 <p><strong>Corollary (the parity of a composite).</strong> Two sandwiches compose to a two-sided multiplication, a sandwich and a two-sided multiplication in either order compose to a sandwich, and two two-sided multiplications compose to a two-sided multiplication. The set</p>
@@ -218,7 +218,7 @@ $$</p>
 \mathcal{T}_{\tilde Q,\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q} ,
 $$</p>
 <p>and the four composition laws of §<em>The Two Families Together</em> say that this action closes under composition and contains the identity.</p>
-<p><strong>Proof.</strong> The identity is §<em>The Definition</em>, and the closure is the composition table; the identity of the action is $S_{?}$ with both parameters the unit only in the ordinary two-sided reading, namely $T_{e_t,e_t}$, while $\mathcal{T}_{e_t,e_t}={}^{*}$ is the involution and not the identity.</p>
+<p><strong>Proof.</strong> The identity is §<em>The Definition</em>, and the closure is the composition table; the identity of the action is the two-sided multiplication with both parameters the unit, $T_{e_t,e_t}$, while $\mathcal{T}_{e_t,e_t}={}^{*}$ is the involution and not the identity.</p>
 <p><strong>Remark.</strong> The two-sided action therefore does not contain the identity among the sandwiches: the identity is a two-sided multiplication and not a sandwich, exactly as the right unit $e_t$ is a right unit and not a left unit. The action is nevertheless a monoid once the two-sided multiplications are adjoined, and it is the largest operator family the sesqualgebra carries; the ordinary two-sided multiplications are the linear half and the sandwiches the conjugate-linear half.</p>
 <p><strong>Remark (the ordinary two-sided multiplication).</strong> The ordinary two-sided multiplication is the sandwich composed with the involution, $T_{\tilde Q,\tilde Q_2}=\mathcal{T}_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$, because $\mathcal{T}_{\tilde Q,\tilde Q_2^{*}}({}^{*}\tilde Q_1)=\tilde Q(\tilde Q_1^{*})^{*}(\tilde Q_2^{*})^{*}=\tilde Q\tilde Q_1\tilde Q_2$. It is the linear shadow of the sandwich, and hence the whole operator theory of the algebra is generated by the two-sided family and the involution; the sandwich is the operator of the sesquilinear structure and the ordinary two-sided multiplication its linear rescaling, exactly as the left multiplication is the conjugate-linear shadow of the ordinary left multiplication.</p>
 <h2 id="worked-cases">Worked Cases</h2>

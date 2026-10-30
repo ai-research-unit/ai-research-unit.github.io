@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-problematic-uses-of-math0"><strong>The Problematic Uses of $j$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The letter $j$ has carried four incompatible meanings in this corpus, and one of them contradicted the conventions.</strong> It is the hyperbolic unit, $j^2=+1$; Hamilton's second vector unit, $j^2=-1$; a second central imaginary adjoined to the biquaternion algebra, again $j^2=-1$ but outside $\mathbb{B}$; and the spin label, a number, in $j(j+1)$ and $2j+1$. The second central imaginary is closed by the root convention and written $\tilde\Xi_{\mathrm{ad}}$ (§<em>Resolved</em>); the bound variable of the old gate criterion is closed the same way. One further use, the index of a sum, is harmless only because it is local. The uppercase letter carried a parallel collision, in the fundamental symmetry of a Krein space, the modular conjugation, the almost-complex structure, the quaternionic structure of a complex Hilbert space, the root of a central value, the angular-momentum operator and the exchange constant; it is closed, and §<em>The Uppercase Letter</em> records the distinction and the repairs.</p>
+<p><strong>The letter $j$ has carried four incompatible meanings in this corpus, and one of them contradicted the conventions.</strong> It is the hyperbolic unit, $j^2=+1$; Hamilton's second vector unit, $j^2=-1$; a second central imaginary adjoined to the biquaternion algebra, again $j^2=-1$ but outside $\mathbb{B}$; and the spin label, a number, in $j(j+1)$ and $2j+1$. The second central imaginary is closed by the root convention and written $\tilde\Xi_{\mathrm{ad}}$ (§<em>Resolved</em>); the bound variable of the old gate criterion is closed the same way. One further use, the index of a sum, is harmless only because it is local. The uppercase letter carried a parallel collision, in the fundamental symmetry of a Krein space, the modular conjugation, the almost-complex structure, the quaternionic structure of a complex Hilbert space, the root of a central value, the angular-momentum operator and the exchange constant; it is closed, and §<em>The Uppercase Letter</em> records the distinction and the repairs. Hamilton's vector unit is now $\vec e_y$ in the one article that used it, and the physics spin label is $s$; the mathematical corpus keeps the textbook $V_j$, and the unbuilt drafts still carry the spin label.</p>
 <p>This is a live audit. Each section states one use, says what is wrong with it, and closes with every file that carries it, or with the reason a list would be noise. A closed issue is removed from the body and recorded once in §<em>Resolved</em>, so the list of open defects stays exact; the uppercase letter keeps its section because that section is the record of the distinction between the four involutions. This is a reserve article: it documents a notation fault and a proposed correction, not a result of the algebra. No other file is changed by it.</p>
 <h2 id="status">Status</h2>
 <div class="table-scroll"><table>
@@ -94,8 +94,8 @@
 </tr>
 <tr>
 <td>Hamilton's vector unit</td>
-<td><strong>open</strong></td>
-<td>1 article</td>
+<td>resolved</td>
+<td>1 article, now $\vec e_y$</td>
 </tr>
 <tr>
 <td>second central imaginary</td>
@@ -103,9 +103,19 @@
 <td>the root convention</td>
 </tr>
 <tr>
-<td>spin label</td>
+<td>spin label, physics corpus</td>
+<td>resolved</td>
+<td>22 articles, now zero occurrences</td>
+</tr>
+<tr>
+<td>spin label, mathematical corpus</td>
+<td>standard, not a defect</td>
+<td>5 articles keep $V_j$; the 7 inventoried files are now zero</td>
+</tr>
+<tr>
+<td>spin label, unbuilt drafts</td>
 <td><strong>open</strong></td>
-<td>22 physics articles, 7 maths articles, 19 drafts</td>
+<td>19 files, 113 occurrences</td>
 </tr>
 <tr>
 <td>index of a sum or a basis</td>
@@ -180,13 +190,13 @@
 <td>vector unit</td>
 <td>$j^2=-1$</td>
 <td>$\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_y$</td>
-<td>local, contrary to the naming rule</td>
+<td>resolved, now $\vec e_y$</td>
 </tr>
 <tr>
 <td>spin label</td>
-<td>$j\in\tfrac12\mathbb{Z}_{\geq0}$</td>
-<td>$j(j+1)$, $2j+1$, $\lvert j,m\rangle$</td>
-<td><strong>collision</strong></td>
+<td>$s\in\tfrac12\mathbb{Z}_{\geq0}$</td>
+<td>$s(s+1)$, $2s+1$, $\lvert s,s_z\rangle$</td>
+<td>resolved in physics, standard in maths, open in drafts</td>
 </tr>
 <tr>
 <td>summation index</td>
@@ -244,7 +254,7 @@
 </tr>
 </tbody>
 </table></div>
-<p>The vector-unit row is written in the corpus with the letter of the first row. The first four rows are then the whole problem of the lowercase letter in one place: one glyph, three incompatible values, and three different types of object — an algebra element of the reduced layer, a vector unit of the quaternion layer, and a real number. The uppercase rows are the letter's other table: three established meanings, told apart by linearity and by the square, and four uses that were collisions and are now resolved.</p>
+<p>The vector-unit row was written in the corpus with the letter of the first row, and it is now resolved. The first four rows are the whole history of the lowercase letter in one place: one glyph, three incompatible values, and three different types of object — an algebra element of the reduced layer, a vector unit of the quaternion layer, and a real number. Only the drafts still carry the third. The uppercase rows are the letter's other table: three established meanings, told apart by linearity and by the square, and four uses that were collisions and are now resolved.</p>
 <h2 id="the-hyperbolic-unit">The Hyperbolic Unit</h2>
 <p><strong>This is the only use the conventions sanction.</strong> <em>Conventions in the Biquaternion Universe</em>, §<em>The Base and Its Units</em>, states that the letters $i$ and $j$ are already taken: $i$ is the central imaginary and $j$ is the hyperbolic unit. §<em>The Elements and their Coefficients</em> fixes the layer: the reduced biquaternion is written</p>
 <p>$$
@@ -253,68 +263,34 @@ $$</p>
 <p>on the basis $1,i,j,ij$, with $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$. The same section records that the split-complex numbers $\mathbb{D}$ use the same unit with the same sign, $j^2=+1$; what separates the two layers is the second, independent imaginary $i$, and the basis $1,i,j,ij$ rather than $1,j$.</p>
 <p>Nothing in this article touches that use. The rule of §<em>The Rule for $j$</em> keeps it, and every other use yields to it. The reason is not aesthetic: the sign of $j^2$ is what separates the hyperbolic layers from the definite ones, and the dictionary of the twelve products, the four forms and the four norms is read off that sign.</p>
 <p><strong>Carriers.</strong> This use is not a defect, so it is not inventoried article by article. Its carriers are the reduced biquaternion and split-complex corpus, indexed in <em>The Mathematical Corpus</em>, together with §<em>The Base and Its Units</em> and §<em>The Elements and their Coefficients</em> of <a href="../articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>.</p>
-<h2 id="hamiltons-vector-unit">Hamilton's Vector Unit</h2>
-<p><strong>A standard notation, local to one article, contrary to the corpus rule.</strong> <em>Matrix Groups and Classical Groups</em>, §<em>The Representation of the Quaternion Algebra</em>, splits a quaternion over the second vector unit. Transcribed into the base, the object and its $2\times2$ image are</p>
-<p>$$
-q=z+w\vec e_y,\qquad z=a+b\vec e_x,\qquad w=c+d\vec e_x,\qquad \vec e_y^2=-e_t,\qquad \vec e_y z=\bar z\,\vec e_y,
-$$</p>
-<p>$$
-\rho(q)=\rho(z+w\vec e_y)=\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix},
-$$</p>
-<p>and the splitting $\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_y$ is what the matrix block represents. The source prints the two vector units with the letters that the conventions reserve for the central imaginary and for the hyperbolic unit; the notation is the textbook one and the computation is correct.</p>
-<p>It is nevertheless the second sign on a reserved letter. In the source the second vector unit squares to $-1$; the hyperbolic unit of the conventions squares to $+1$. A reader who carries one sign into the other gets a wrong algebra with no visible error. The article is also the exact case that <em>Conventions in the Biquaternion Universe</em>, §<em>The Base and Its Units</em>, forbids: a vector unit written with a reserved letter rather than with $\vec e_x$ or $\vec e_y$.</p>
-<p>The repair is local and changes no product: it is the transcription above. The relation $\vec e_y z=\bar z\,\vec e_y$ and the matrix $\rho(z+w\vec e_y)$ are unchanged, and only the glyph moves. The article then uses one convention and no exception.</p>
-<p><strong>Articles using this sense.</strong></p>
-<ul>
-<li><a href="../articles_maths/matrix-groups-and-classical-groups.html">Matrix Groups and Classical Groups</a> — nine occurrences, the splitting $\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_y$ and the map $\rho(z+w\vec e_y)$.</li>
-</ul>
 <h2 id="the-spin-label">The Spin Label</h2>
-<p><strong>The conventions fix the spin as $s$, and the physics articles write it as $j$.</strong> <em>Conventions of the Special Elements</em>, §<em>The Special Elements: Root, Idempotent and Nilpotent</em>, defines the spin by $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$, and states that the algebra supplies the rotation action and the weights of its generator but not the one-particle space. The physics articles instead write</p>
+<p><strong>The spin label is $s$, and the physics corpus now writes it so.</strong> <em>Conventions of the Special Elements</em>, §<em>The Special Elements: Root, Idempotent and Nilpotent</em>, defines the spin by $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar s_z$, with $s$ an integer or half-integer and $s_z=-s,\dots,s$. The physics articles wrote the standard physics letter</p>
 <p>$$
 \tilde{J}^2|j,m\rangle=j(j+1)\hbar^2|j,m\rangle,\qquad
 \dim V_j=2j+1,\qquad
 j=\tfrac12,\tfrac32,\dots
 $$</p>
-<p>This is the standard physics notation, and that is the difficulty: it is not an error of physics, it is a collision of alphabets. In a display that also contains the quaternion unit $j$, as several of these articles do, the same glyph is a number in one term and an element in the next. The reader has no rule for telling them apart, and neither does a search.</p>
-<p>The collision is also redundant. The corpus already has $s$ and $m_s$, fixed in the conventions article, and the two edited spin articles of the mathematical corpus already use $s$. The repair is a replacement of labels, not of mathematics: $j\to s$, $m\to m_s$, $V_j\to V_s$, $j_1,j_2\to s_1,s_2$, $m_j\to m_s$. The replacement is not textual: in the Clebsch–Gordan series $j$ is also a summation index, and in $\epsilon_{ijk}$ it is a spatial index, so the two must be left alone.</p>
-<p><strong>Physics corpus.</strong> The count is the number of occurrences of $2j+1$, $j(j+1)$, $\lvert j,m\rangle$ or spin-$j$ in the file.</p>
+<p>and they no longer do. The count of $2j+1$, $j(j+1)$, $\lvert j,m\rangle$ and spin-$j$ is zero in all twenty-two physics articles that carried the label. The last occurrences outside those forms were in six articles, and they are repaired:</p>
 <ul>
-<li><a href="../articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients</a> — 26.</li>
-<li><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a> — 18.</li>
-<li><a href="../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html">Higher Spin from Tensor Products</a> — 13.</li>
-<li><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model</a> — 12.</li>
-<li><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom, the Relativistic Case</a> — 11.</li>
-<li><a href="../articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html">The Classical Coulomb Problem and Its Hidden $SO(4)$ Symmetry</a> — 8.</li>
-<li><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation</a> — 6.</li>
-<li><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group</a> — 6.</li>
-<li><a href="../articles_physics/two-spin-half-particles-in-biquaternionic-form.html">Two Spin-Half Particles</a> — 3.</li>
-<li><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a> — 2.</li>
-<li><a href="../articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$</a> — 2.</li>
-<li><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space</a> — 2.</li>
-<li><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form</a> — 2.</li>
-<li><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1</a> — 2.</li>
-<li><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral</a> — 2.</li>
-<li><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem</a> — 2.</li>
-<li><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a> — 1.</li>
-<li><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a> — 1.</li>
-<li><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a> — 1.</li>
-<li><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator</a> — 1.</li>
-<li><a href="../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html">The Qutrit Problem</a> — 1.</li>
-<li><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre</a> — 1.</li>
+<li><em>Higher Multipoles and the Field-Strength Decomposition</em> — "quanta of $j=l$" is now $s=l$.</li>
+<li><em>The Spin Mass Formula</em> — the increment $(j+2)(j+1)-(j+1)j$ is now $(s+2)(s+1)-(s+1)s$.</li>
+<li><em>The Rarita–Schwinger Equation</em> — $j\otimes j_{\mathrm R}$ is now $s\otimes s_{\mathrm R}$.</li>
+<li><em>The Wigner–Eckart Theorem</em> — the triple $(s_{\mathrm{fin}},k,j)$ is now $(s_{\mathrm{fin}},k,s_{\mathrm{tot}})$, with $\delta_{s_{\mathrm{tot}}s_{\mathrm{fin}}}$ and $\Delta s_{\mathrm{tot}}$.</li>
+<li><em>Quantum Gravity</em> — the three representation labels $j\in\tfrac12\mathbb{N}$, $j\in-\tfrac12\mathbb{N}$ and $j\in\mathbb{R}_+$ are now $s$ throughout.</li>
+<li><em>The Lorentz Group</em> — $V_j=\operatorname{Sym}^{2s}(\mathbb{C}^2)$ is now $V_s=\operatorname{Sym}^{2s}(\mathbb{C}^2)$.</li>
 </ul>
-<p><strong>Mathematical corpus.</strong> The label is the standard $\mathrm{SU}(2)$ label there and is not a defect, because the biquaternion convention $s$ is not in force; the files are listed because a reader acquires the habit there and because a cross-reference can carry the label into a physics display. Incidental matches elsewhere — an exponent, a summation index — are excluded.</p>
+<p><strong>Why the physics label was the hard case.</strong> This is the standard physics notation, and that was the difficulty: it is not an error of physics, it is a collision of alphabets. In a display that also contains the quaternion unit $j$, as several of these articles do, the same glyph is a number in one term and an element in the next. The corpus already had $s$ and $s_z$, fixed in the conventions article, and the repair was a replacement of labels, not of mathematics: $j\to s$, $m\to s_z$, $V_j\to V_s$, $j_1,j_2\to s_1,s_2$, $m_j\to s_z$. The replacement was not textual: in the Clebsch–Gordan series $j$ is also a summation index, and in $\epsilon_{ijk}$ it is a spatial index, so the two were left alone.</p>
+<p><strong>Mathematical corpus.</strong> The seven files inventoried in the first pass now have zero occurrences of the four forms. The wider mathematical corpus keeps the standard $\mathrm{SU}(2)$ label, because the biquaternion convention $s$ is not in force there and $V_j$ is the textbook symbol; the files are listed so that a cross-reference into physics can be translated.</p>
 <ul>
-<li><a href="../articles_maths/analysis-on-compact-groups.html">Analysis on Compact Groups</a> — 8.</li>
-<li><a href="../articles_maths/the-peter-weyl-theorem.html">The Peter–Weyl Theorem</a> — 7.</li>
-<li><a href="../articles_maths/spinors-as-peirce-coordinates-in-m6c.html">Spinors as Peirce Coordinates in $M_6(\mathbb{C})$</a> — 4.</li>
-<li><a href="../articles_maths/representation-theory-of-locally-compact-groups.html">Representation Theory of Locally Compact Groups</a> — 3.</li>
-<li><a href="../articles_maths/spinors-as-peirce-coordinates-in-m3c.html">Spinors as Peirce Coordinates in $M_3(\mathbb{C})$</a> — 3.</li>
-<li><a href="../articles_maths/spinors-as-peirce-coordinates-in-m4c.html">Spinors as Peirce Coordinates in $M_4(\mathbb{C})$</a> — 3.</li>
-<li><a href="../articles_maths/spinors-as-peirce-coordinates-in-m5c.html">Spinors as Peirce Coordinates in $M_5(\mathbb{C})$</a> — 3.</li>
+<li><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a> — $V_j$, $2j$, spin $j$.</li>
+<li><a href="../articles_maths/noncommutative-harmonic-analysis.html">Noncommutative Harmonic Analysis</a> — $V_j$, $d_j=2j+1$.</li>
+<li><a href="../articles_maths/the-plancherel-theorem.html">The Plancherel Theorem</a> — $2j+1$.</li>
+<li><a href="../articles_maths/unitary-representations-and-the-adjoint-operator.html">Unitary Representations and the Adjoint Operator</a> — spin $j$, $j(j+1)$.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a> — $(j,j')$.</li>
 </ul>
-<p><strong>Unbuilt drafts.</strong> The files in <code>articles_reserve/spin/</code> carry the same label and are outside the build.</p>
+<p><strong>Unbuilt drafts.</strong> The files in <code>articles_reserve/spin/</code> carry the same label and are outside the build. The count is the same four forms; $113$ occurrences remain in $19$ files:</p>
 <ul>
-<li><code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m6c.md</code> — 19; <code>spin/the-approaches-to-spin-weight-half-angle-ladder-and-adjoint.md</code> — 17; <code>spin/the-general-definition-of-spin.md</code> — 17; <code>spin/the-dubious-definitions-of-the-spin-of-an-algebra.md</code> — 15; <code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m5c.md</code> — 11; <code>spin/the-spin-of-the-quaternion-algebra-a-worked-computation.md</code> — 8; <code>spin/the-spin-of-a-biquaternion.md</code> — 7; <code>spin/the-principal-pair-of-m2c-a-worked-computation.md</code> — 6; <code>spin/the-principal-pair-of-m3c-a-worked-computation.md</code> — 6; <code>spin/the-general-definitions-of-the-spin-of-an-algebra.md</code> — 5; <code>spin/the-principal-pair-of-m4c-a-worked-computation.md</code> — 5; <code>spin/the-principal-pair-of-m5c-a-worked-computation.md</code> — 5; <code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m3c.md</code> — 3; <code>spin/the-spin-two-chain-and-the-adjoint-of-m5c.md</code> — 3; <code>spin/the-triple-and-the-highest-weight-list-a-summary.md</code> — 2; <code>spin/the-incomplete-definitions-of-the-spin-of-an-algebra.md</code> — 1; <code>spin/the-spin-of-the-complex-numbers-the-absence-of-a-pair.md</code> — 1; <code>spin/the-spin-of-the-split-complex-numbers-a-root-without-a-ladder.md</code> — 1; <code>spin/the-weight-of-a-frame-root-and-the-spin-quantum-number.md</code> — 1.</li>
+<li><code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m6c.md</code> — 19; <code>spin/the-general-definition-of-spin.md</code> — 16; <code>spin/the-dubious-definitions-of-the-spin-of-an-algebra.md</code> — 12; <code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m5c.md</code> — 11; <code>spin/the-approaches-to-spin-weight-half-angle-ladder-and-adjoint.md</code> — 8; <code>spin/the-spin-of-the-quaternion-algebra-a-worked-computation.md</code> — 6; <code>spin/the-principal-pair-of-m3c-a-worked-computation.md</code> — 6; <code>spin/the-principal-pair-of-m2c-a-worked-computation.md</code> — 5; <code>spin/the-principal-pair-of-m4c-a-worked-computation.md</code> — 5; <code>spin/the-principal-pair-of-m5c-a-worked-computation.md</code> — 5; <code>spin/the-spin-of-a-biquaternion.md</code> — 4; <code>spin/the-general-definitions-of-the-spin-of-an-algebra.md</code> — 4; <code>spin/the-spin-chain-and-the-adjoint-decomposition-of-m3c.md</code> — 3; <code>spin/the-spin-two-chain-and-the-adjoint-of-m5c.md</code> — 3; <code>spin/the-triple-and-the-highest-weight-list-a-summary.md</code> — 2; <code>spin/the-incomplete-definitions-of-the-spin-of-an-algebra.md</code> — 1; <code>spin/the-spin-of-the-complex-numbers-the-absence-of-a-pair.md</code> — 1; <code>spin/the-spin-of-the-split-complex-numbers-a-root-without-a-ladder.md</code> — 1; <code>spin/the-weight-of-a-frame-root-and-the-spin-quantum-number.md</code> — 1.</li>
 </ul>
 <h2 id="the-index-uses">The Index Uses</h2>
 <p><strong>Two uses are harmless, and only because they are local.</strong> The first is the summation index of a Clebsch–Gordan sum or of $\epsilon_{ijk}$; it is bound, it never denotes an element, and it disappears from the result. The second is the basis label $e_j$ of a Clifford algebra, which is a subscript on a fixed symbol and cannot be read as a scalar.</p>
@@ -323,7 +299,7 @@ $$</p>
 <h2 id="why-a-single-replacement-is-unsafe">Why a Single Replacement Is Unsafe</h2>
 <p><strong>The same glyph means three things, so a blind substitution corrupts at least two of them.</strong> The traps are concrete. A replacement of every $j$ by $s$ would rewrite $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ as a split-complex element with the wrong unit, would rewrite $e_j$ of a Clifford basis as $e_s$, would rewrite $\epsilon_{ijk}$ as $\epsilon_{isk}$, and would rewrite the Clebsch–Gordan summation index, which is bound and must stay. A replacement of every $j$ by $i$ would collapse the hyperbolic unit into the central imaginary.</p>
 <p>The replacement therefore had to be semantic, and it followed the order of dependence: first the definition in <em>Chirality: The Conjugate Pair</em>, then the articles that copy its notation, then the cross-references, then the menus. The definition is the only place where the object is introduced; every other occurrence is either a copy or a citation of it.</p>
-<h2 id="the-rule-for-math117">The Rule for $j$</h2>
+<h2 id="the-rule-for-math131">The Rule for $j$</h2>
 <ol>
 <li><strong>$j$ is the hyperbolic unit.</strong> It is written only in the reduced biquaternion layer, with $j^2=+1$, $ji=ij$, and the basis $1,i,j,ij$. No other use of the letter is sanctioned.</li>
 <li><strong>No $i,j,k$ for quaternion vector units.</strong> The vector units are $\vec e_x,\vec e_y,\vec e_z$. A source that writes them as $i,j,k$ is translated, not copied.</li>
@@ -379,6 +355,9 @@ $$</p>
 <h2 id="resolved">Resolved</h2>
 <p><strong>Closed items are removed from the body and recorded here once.</strong></p>
 <ul>
+<li><strong>Hamilton's vector unit in <em>Matrix Groups and Classical Groups</em>.</strong> The nine occurrences of the second vector unit written $j$ are now $\vec e_y$: $q=z+w\vec e_y$, $z=a+b\vec e_x$, $w=c+d\vec e_x$, $\vec e_y^2=-e_t$ and $\vec e_y z=\bar z\,\vec e_y$. The matrix $\rho(q)=\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$ and the splitting $\mathbb{H}=\mathbb{C}\oplus\mathbb{C}\vec e_y$ are unchanged.</li>
+<li><strong>The spin label in the physics corpus.</strong> The twenty-two articles that wrote the label now write $s$: $j(j+1)\to s(s+1)$, $2j+1\to2s+1$, $\lvert j,m\rangle\to\lvert s,s_z\rangle$ and $V_j\to V_s$. The occurrences outside those forms — in <em>Higher Multipoles</em>, <em>The Spin Mass Formula</em>, <em>The Rarita–Schwinger Equation</em>, <em>The Wigner–Eckart Theorem</em>, <em>Quantum Gravity</em> and <em>The Lorentz Group</em> — are repaired, and the count of the four forms is zero.</li>
+<li><strong>The seven inventoried mathematical files.</strong> <em>Analysis on Compact Groups</em>, <em>The Peter–Weyl Theorem</em>, the four <em>Spinors as Peirce Coordinates</em> files and <em>Representation Theory of Locally Compact Groups</em> now write $s$ where they wrote the spin label $j$. The wider mathematical corpus keeps the textbook $V_j$ label, which is standard there and is not counted as a defect.</li>
 <li><strong>The adjoint Cartan generator in <em>The W and Z Bosons</em>.</strong> Eight occurrences of $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}$ are now $\tilde S^{(\mathrm{adj})}_3$, the glyph established in <em>The Wigner–Eckart Theorem and Tensor Operators</em>, where $\tilde S^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$. The object, the eigenvalues $\pm1$ and the table rows are unchanged.</li>
 <li><strong>The spin weight and the induced generator in <em>The Fermionic Fock Space</em>.</strong> The weight $J_z$ is now $s_z$, and the four occurrences of $J_i$ under $\Lambda^2\rho$ are now $\tilde S_i$, matching the $\tilde S_i$ of the same paragraph. The traces, the vanishing and the singlet conclusion are unchanged.</li>
 <li><strong>The quaternionic structure in <em>Kramers Degeneracy and Antiunitary Symmetry</em>.</strong> The antiunitary operator is now $J_{\mathrm q}$ throughout, with $J_{\mathrm q}^2=-e_t$; the sign is stated at the definition, and the theorem, the commutant and the table are unchanged.</li>
@@ -398,8 +377,8 @@ $$</p>
 <li><strong>False positive struck from the secondary-imaginary inventory.</strong> <em>Split-Complex Element Representations</em> writes $\rho(j)=\pm1$: there $j$ is the hyperbolic unit and $\rho$ is a character, not the adjoined generator. It is not a carrier and is no longer listed.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. Two other meanings are in circulation: Hamilton's vector unit and the spin label. The second central imaginary, formerly the worst of the four, is closed: it is the root $\tilde\Xi_{\mathrm{ad}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$ (§<em>Resolved</em>). The spin label still collides with both reserved letters and duplicates a label the corpus has already fixed as $s$.</p>
-<p>The second central imaginary no longer appears in the built corpus, in the menu or in the drafts. One article still carries Hamilton's vector unit; twenty-nine built articles carry the spin label, twenty-two in the physics corpus and seven in the mathematical one, plus nineteen unbuilt drafts. The remaining repair is the translation of Hamilton's vector unit into $\vec e_y$ and the renaming of the spin label to $s$, with the summation and basis indices left alone. The definition in <em>Chirality: The Conjugate Pair</em> was the place to start for the generator, because every other occurrence was a copy of it.</p>
+<p>The letter $j$ is the hyperbolic unit of the reduced biquaternion layer, and that is the only meaning the conventions give it. The other two meanings are closed: Hamilton's vector unit is written $\vec e_y$, and the spin label is $s$ in the physics corpus. The second central imaginary, formerly the worst of the four, is closed: it is the root $\tilde\Xi_{\mathrm{ad}}$, and the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$ (§<em>Resolved</em>).</p>
+<p>The second central imaginary no longer appears in the built corpus, in the menu or in the drafts. The built physics corpus no longer carries the spin label: the twenty-two inventoried articles are at zero, and the late occurrences in six articles are repaired. The mathematical corpus keeps the textbook $V_j$ label in five pure-mathematics articles; a cross-reference translates it. The unbuilt drafts still carry the label: $113$ occurrences of the four forms in nineteen files, outside the build. The summation and basis indices are left alone.</p>
 <p>The uppercase letter is closed. The Krein fundamental symmetry and the modular conjugation share the glyph and the square $J^2=+1$ and differ in linearity; the indefinite theory separates them as $J$ and $\jmath$. The almost-complex structure is linear with $J^2=-1$, and the quaternionic structure is antiunitary with the same square and is now $J_{\mathrm q}$. The root of a central value is $\tilde\Xi$, with $\vec\Xi$ for the pure case; the angular momentum is $\tilde S_k$ in both corpora, with the totals $\tilde S_{\mathrm{tot},k}$; the exchange constant is $J_{\mathrm{ex}}$. Thirteen physics articles and three mathematical files carried the letter and no longer do. The only remaining $J$ uses are the confined ones: the marked currents, the source of $Z[J]$, the Bessel functions, the Jarlskog invariant, the state kets, the deformed generators, the quoted real structure, the horizon angular momentum and the $J$-names.</p>
       </div>
     </main>
