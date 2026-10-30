@@ -27,7 +27,7 @@ The article is organised as follows. The gradient and the d'Alembertian are esta
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order equation the operator carries.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order equation built from the gradient and the spinor on which it acts.
 - Companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, for the solution theory of the shifted operator: its fundamental solution on the light cone, the general solution of the inhomogeneous equation, the harmonic bispinors, and the class in which the homogeneous equation has only the trivial solution.
-- Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for the reversal and the trace formula used in the kernel identities.
+- Companion article *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, for the reversal and the trace formula used in the kernel identities.
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the rotation relating the causal and invariant kernels.
 
 ## The Biquaternionic Gradient

@@ -31,9 +31,9 @@ What differs between articles is only the length of the second equality:
 
 The gamma matrices are a coordinate on the cell algebra. They are never a third algebra. An article that writes them is a cell-algebra article in a particular basis, and every display of it can carry the cell equality underneath.
 
-**The counts.** A scan of the 403 physics articles and the 2,390 mathematics articles counts an article when its text contains any $\gamma$ carrying a Dirac index, upper or lower and in any position, or the phrase "gamma matrix" in either number. A bare $\gamma$ with no index is excluded: it is also the Lorentz factor, a spectral projector and the Euler constant. Two files that a looser scan caught are false positives and are removed by hand: a notation list that mentions the retired macro `\slashed`, and a field exercise where $\gamma$ is only the Lorentz factor.
+**The counts.** A scan of the 402 physics articles and the 2,390 mathematics articles counts an article when its text contains any $\gamma$ carrying a Dirac index, upper or lower and in any position, or the phrase "gamma matrix" in either number. A bare $\gamma$ with no index is excluded: it is also the Lorentz factor, a spectral projector and the Euler constant. Two files that a looser scan caught are false positives and are removed by hand: a notation list that mentions the retired macro `\slashed`, and a field exercise where $\gamma$ is only the Lorentz factor.
 
-The scan finds **108** gamma-using articles, **20** in mathematics and **88** in physics. Three of them are already patched and are listed only in §*The Patched Articles*; the other **105** form the inventory, where **52** carry a one-term equality, **52** a multi-term equality, and **1** lies outside the cell algebra. The table with the patched row, the in-cell row and the dagger row is §*The Counts*.
+The scan finds **107** gamma-using articles, **20** in mathematics and **87** in physics. Three of them are already patched and are listed only in §*The Patched Articles*; the other **104** form the inventory, where **52** carry a one-term equality, **51** a multi-term equality, and **1** lies outside the cell algebra. The table with the patched row, the in-cell row and the dagger row is §*The Counts*.
 
 The split is a judgment about the subject of each article, not about its symbol count. An article with eighty gammas can have a one-term equality, and an article with two can have a multi-term one. The tables below give the reason for every row.
 
@@ -179,7 +179,7 @@ A one-term row is the one-term equality. A multi-term row is the multi-term equa
 
 ## Part II — The Physics Articles
 
-**Eighty-seven articles.** Forty-six have a one-term second equality: each gamma in them is a fixed sandwich. Forty need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. The last physics article, *Conventions of the Matrix Models* (physics), is patched and is listed only in §*The Patched Articles*. Rows follow the order of `physics.md`, and an italic row marks the category. The two equalities are tabled apart, so one category can appear in both.
+**Eighty-six articles.** Forty-six have a one-term second equality: each gamma in them is a fixed sandwich. Thirty-nine need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. The last physics article, *Conventions of the Matrix Models* (physics), is patched and is listed only in §*The Patched Articles*. Rows follow the order of `physics.md`, and an italic row marks the category. The two equalities are tabled apart, so one category can appear in both.
 
 **What a one-term equality looks like.** A gamma is a cell, and a cell acts by two multiplications. In the canonical frame
 $$
@@ -202,7 +202,7 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 
 **What the dagger means.** A dagger marks a statement whose second equality holds but whose proof does not transfer in one step. The four groups are the trace, the index, the real structure and the representation theorem. In each, the symbols can be replaced by cells, but the argument uses a property of the matrix representation that has no one-line cell counterpart. The trace of $\gamma_5$ against a heat kernel, the Fredholm index of the Dirac operator, the charge-conjugation matrix that makes a spinor real, and the spin-statistics link between spin and bracket each require the proof to be rebuilt. The dagger is a statement about the proof, not about the physics: the result stands, and its biquaternion form is a computation still to be written.
 
-**The counts do not follow the symbol count.** *The Dirac Algebra and Biquaternions — A Dictionary* has 287 gammas and a multi-term equality, because the dictionary is its subject. *Maxwell's Equations in Biquaternionic Form* has 3 gammas, all in a Further Reading citation, and a one-term equality. The classification follows what the article does with the algebra, not how often it writes it.
+**The counts do not follow the symbol count.** *The CPT Theorem in Biquaternionic Form* has 140 gammas and a multi-term equality, because the antiunitary operations and the trace over the carrier are its subject. *Maxwell's Equations in Biquaternionic Form* has 3 gammas, all in a Further Reading citation, and a one-term equality. The classification follows what the article does with the algebra, not how often it writes it.
 
 ### The one-term equality (46)
 
@@ -261,7 +261,7 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | 7 | $\gamma$ in the quoted couplings |
 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 0 | the Dirac operator, fixed sandwiches |
 
-### The multi-term equality (40)
+### The multi-term equality (39)
 
 | article | $\gamma$ | what remains |
 |---|---:|---|
@@ -279,7 +279,6 @@ Two further articles have a multi-term equality for a different reason: *Matter 
 | [The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module](../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) | 1 | why spin 0 escapes the module |
 | [The First-Order Root of the Biquaternion Klein–Gordon Operator](../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) | 73 | the $\gamma$ frame as $L$ and $R$ cells |
 | [The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation](../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html) | 6 | the cyclic representation |
-| [The Dirac Algebra and Biquaternions — A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html) | 287 | the dictionary itself, kept side by side |
 | [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html) | 24 | spacetime algebra is the subject |
 | [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html) | 1 | four bases and the discrete symmetries |
 | [The Reflection and the Rotation in Biquaternionic Form](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) | 88 | Pin, conjugation by $\gamma^0$, the odd half |
@@ -369,7 +368,7 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 
 **The earlier count of 19 unrewritable articles was wrong.** It counted what the left action $\mathbb{B}_L$ can reach, not what the algebra can reach. The odd part is outside $\mathbb{B}_L$ and inside $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; an article about parity, charge conjugation or the grading is an article about the second action, not an article about a foreign algebra.
 
-**The one-term equality is the common case, not the goal.** Fifty-two of the 105 inventory articles carry a one-term equality and fifty-two carry several terms; the last one lies outside the cell algebra. The split is a statement about each subject, not about its possibility.
+**The one-term equality is the common case, not the goal.** Fifty-two of the 104 inventory articles carry a one-term equality and fifty-one carry several terms; the last one lies outside the cell algebra. The split is a statement about each subject, not about its possibility.
 
 **The dagger entries are recomputations, not obstructions.** Thirteen articles state a result whose proof uses a trace over the four-dimensional carrier, a Fredholm index, or a real structure. The statement gains its cell equality; the proof must be redone in the cell algebra. They fall into four groups:
 
@@ -382,16 +381,16 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 
 | | mathematics | physics | total |
 |---|---:|---:|---:|
-| articles in the corpus | 2,390 | 403 | 2,793 |
-| gamma users | 20 | 88 | 108 |
+| articles in the corpus | 2,390 | 402 | 2,792 |
+| gamma users | 20 | 87 | 107 |
 | already patched, §*The Patched Articles* | 2 | 1 | 3 |
-| in the inventory | 18 | 87 | 105 |
-| in the cell algebra | 18 | 86 | 104 |
+| in the inventory | 18 | 86 | 104 |
+| in the cell algebra | 18 | 85 | 103 |
 | one-term equality | 6 | 46 | 52 |
-| multi-term equality | 12 | 40 | 52 |
+| multi-term equality | 12 | 39 | 51 |
 | uses a larger algebra | 0 | 1 | 1 |
 | of which dagger (proof to rebuild) | 0 | 13 | 13 |
-| explicit gamma-matrix display | 2 | 21 | 23 |
+| explicit gamma-matrix display | 2 | 20 | 22 |
 
 ## Conclusion
 

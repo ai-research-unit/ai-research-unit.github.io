@@ -18,7 +18,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma^{\mu} p_{\mu}=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ for $p^\mu=(E,\vec p)$. The dictionary companion fixes $\iota_{\mathrm{Cl}}(e_t)=I_4$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$, $\iota_{\mathrm{Cl}}(i)=-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$, hence $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma^0\gamma^\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
+the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma^{\mu} p_{\mu}=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ for $p^\mu=(E,\vec p)$. The companion *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, fixes $\iota_{\mathrm{Cl}}(e_t)=I_4$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$, $\iota_{\mathrm{Cl}}(i)=-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$, hence $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma^0\gamma^\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
 S_F(p)=\frac{i(\gamma^{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}=-\frac{i(\gamma^{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
@@ -257,7 +257,7 @@ The on-shell spinors were built as $w=(\gamma^{\mu} p_{\mu}+m)\omega$ for random
 
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the propagator conventions and the $i\epsilon$ of the internal fermion line.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators whose matrix the magnetic bivector reproduces.
-- Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for the identification $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma^\mu\gamma^\rho$, $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma^0\gamma^\mu$ and $\iota_{\mathrm{Cl}}(i)=-\omega$.
+- Companion article *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $\iota_{\mathrm{Cl}}(i)=-\omega$.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the field operators whose electromagnetic three-point function is the vertex.
 
 ## Summary

@@ -395,6 +395,6 @@ with $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, five elements of the two-side
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$ and $T_{a,b}$ on the sixteen-dimensional algebra.
 - [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-real-forms-of-m4c.html), for the antilinear involutions and the real forms.
 - [The Sesquilinear Sandwich on the Biquaternion](the-sesquilinear-sandwich-on-the-biquaternion.html), for the star in the argument of a sandwich.
-- [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html), for the explicit matrices and the even-part identification.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Gamma Matrices*.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the bar, the natural conjugation and the star.
 - [The Pin and the Spin Groups with Signed Hermitian Adjoint](the-pin-and-spin-groups-with-signed-hermitian-adjoint.html), for the group of the antilinear operations.

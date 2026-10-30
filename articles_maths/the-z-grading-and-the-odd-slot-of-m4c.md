@@ -226,4 +226,4 @@ and the five gammas are $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy
 - [The Vector and the Axial Traces of $M_4(\mathbb{C})$](the-vector-and-the-axial-traces-of-m4c.html), for the two coordinates $T_{tt}$ and $T_{tz}$ that the traces read.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the operation-level form of the odd generators.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality and its relation to the pseudoscalar.
-- [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html), for the explicit matrices and the even-part identification.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Gamma Matrices*.

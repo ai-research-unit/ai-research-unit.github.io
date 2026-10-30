@@ -14,7 +14,7 @@ the quaternionic norm of the gradient. This article asks for a first-order opera
 
 The question has two answers, and they are different. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A **factorisation** is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half. A **Clifford root** is a first-order operator of the form $D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu+B$ with constant matrices $\gamma^\mu,B$; this article classifies the Clifford roots.
 
-**The results.** The d'Alembertian has no Clifford root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $i\vec e_k$ supply a three-generator Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted root is $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.
+**The results.** The d'Alembertian has no Clifford root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $i\vec e_k$ supply a three-generator Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted cell root is $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The coefficients of $\mathsf D$ are cells of the enveloping algebra $\mathbb{B}^{\mathrm e}$, not elements of $\mathbb{B}$; the biquaternion object is the gradient, and the biquaternion factorisation of the unshifted operator is $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The single square is the cell root. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.
 
 **The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*). The gradient takes values in that algebra, and the d'Alembertian is its scalar norm; the target representation is $M_2(\mathbb{C})$, not $M_4(\mathbb{C})$. The four-dimensional space of this article is the regular module $\mathbb{B}$, on which the algebra acts by left multiplication. The $M_4(\mathbb{C})$ that appears below is the algebra of **operators** on that module, the enveloping algebra $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, not a second representation of $\mathbb{B}$. The distinction is the reason the root is two-sided: the d'Alembertian is a scalar operator read in the algebra, while the root lives in the operator algebra of the regular module.
 
@@ -264,7 +264,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I,
 $$
 
-they are two-sided operators, and they generate $M_4(\mathbb{C})$. The root acts on the regular module $\mathbb{B}$.
+they are two-sided operators, and they generate $M_4(\mathbb{C})$. The cell root acts on the regular module $\mathbb{B}$.
 
 *Proof.* The square of $\gamma^t$ is $R_u^2=R_{u^2}=I$. The square of $\gamma^k$ is $L_{\gamma_k}^2G^2=I$, because $\gamma_k^2=e_t$ and $G^2=I$. For $j\ne k$,
 
@@ -320,7 +320,7 @@ Each generator squares to the identity, distinct generators anticommute, and $\g
 
 **Remark (the chiral halves are not the ideals).** The eigenspaces of $\gamma_5$ are two-dimensional and mix $S_+$ and $S_-$; they are not left ideals. The minimal left ideals are the two copies of $S$, and the chiral projectors of $\gamma_5$ are a different split. The distinction is the one of *The Two Chiralities of $M_4(\mathbb{C})$*, read on the regular module.
 
-## The Unshifted Root
+## The Unshifted Cell Root
 
 **Theorem.** Let
 
@@ -339,11 +339,11 @@ $$
 =\Box I_4 .
 $$
 
-The operator $\mathsf D$ is a two-sided differential operator: each $\gamma^\mu$ is a two-sided constant operator, so $\mathsf D$ is a sum of terms $T_{a,b}\partial/\partial Q_\mu$. It acts on $\mathbb{B}$-valued fields, and its square is the scalar d'Alembertian.
+The operator $\mathsf D$ is a two-sided differential operator: each $\gamma^\mu$ is a two-sided constant operator, so $\mathsf D$ is a sum of terms $T_{a,b}\partial/\partial Q_\mu$. It acts on $\mathbb{B}$-valued fields, and its square is the scalar d'Alembertian. It is not left multiplication by an element of $\mathbb{B}$: the timelike generator is the exchange $R_u$, and the spatial generators are left multiplications corrected by the grading. Its coefficients are cells of $\mathbb{B}^{\mathrm e}$, and the gradient $\tilde\nabla$ is the element of $\mathbb{B}$ that supplies the factorisation $\tilde\nabla\tilde\nabla^{\natural}=\Box$.
 
-**The kernel at $\lambda=0$.** The equation $\mathsf D\psi=0$ is the unshifted root. In the chiral frame of §*The Chiral Form* it decouples into $D_-\psi_-=0$ and $D_+\psi_+=0$; its kernel is a chiral half of the full solution space of $\Box\psi=0$.
+**The kernel at $\lambda=0$.** The equation $\mathsf D\psi=0$ is the unshifted cell root. In the chiral frame of §*The Chiral Form* it decouples into $D_-\psi_-=0$ and $D_+\psi_+=0$; its kernel is a chiral half of the full solution space of $\Box\psi=0$.
 
-**Non-uniqueness.** The root is unique up to similarity, not canonical. The canonical frame fixes the Peirce basis, and the root still depends on the exchange $u$; the biquaternion structure gives a canonical decomposition into the two minimal left ideals, but not a canonical root. The sign of $\gamma_5$ and the exchange of $c$ with $-c$ give the same operator up to a change of frame.
+**Non-uniqueness.** The cell root is unique up to similarity, not canonical. A formula that names a particular $\gamma$-frame is therefore frame data; the invariant statement is the factorisation in $\mathbb{B}$. The canonical frame fixes the Peirce basis, and the root still depends on the exchange $u$; the biquaternion structure gives a canonical decomposition into the two minimal left ideals, but not a canonical root. The sign of $\gamma_5$ and the exchange of $c$ with $-c$ give the same operator up to a change of frame.
 
 ## The Shifted D'Alembertian
 
@@ -405,7 +405,7 @@ $$
 D_-D_+=D_+D_-=\Box I_2 .
 $$
 
-The last identity is the chiral block form of $\mathsf D^2=\Box I_4$. The root is
+The last identity is the chiral block form of $\mathsf D^2=\Box I_4$. The cell root is
 
 $$
 \mathsf D_\lambda=\begin{pmatrix}cI_2&D_-\\ D_+&-cI_2\end{pmatrix}.
@@ -486,7 +486,7 @@ The table classifies the carriers on which the constant-coefficient Clifford ans
 | $\mathbb{B}=S_+\oplus S_-$ | $4$ | four generators | yes | yes, pseudoscalar shift | yes, scalar shift |
 | $\mathbb{B}^{\oplus m}$, $m>1$ | $4m$ | four generators | yes | yes | yes, not minimal |
 
-**The minimal carrier.** The regular module is minimal. Any larger carrier is a direct sum of copies of it, and the root acts componentwise; the Clifford system has the same four generators, and the root is not new. The simple module carries the three-generator system generated by the three $i\vec e_k$, but no four-generator system, by the dimension count. The central scalar carries none.
+**The minimal carrier.** The regular module is minimal. Any larger carrier is a direct sum of copies of it, and the cell root acts componentwise; the Clifford system has the same four generators, and the root is not new. The simple module carries the three-generator system generated by the three $i\vec e_k$, but no four-generator system, by the dimension count. The central scalar carries none.
 
 **The scope.** The table is a classification of the carriers of the Clifford ansatz, not a classification of all first-order operators whose square is scalar. A first-order operator with a non-Clifford principal symbol is outside the article.
 
@@ -514,7 +514,7 @@ $$
 
 The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $\sum_\mu q_\mu^2=\lambda$. On the quadric the symbol has a two-dimensional kernel.
 
-**The unshifted root on a constant spinor.** A constant $v\in\mathbb{C}^4$ satisfies $\mathsf D v=0$ and $\Box v=0$. The example shows that the root has a nontrivial kernel already at $\lambda=0$. The constant solutions of $\Box$ are all of $\mathbb{C}^4$, and $\mathsf D$ vanishes on all of them, so the constant part of the kernel does not distinguish the chiral halves; the half appears on the non-constant solutions of §*The Chiral Form*.
+**The unshifted cell root on a constant spinor.** A constant $v\in\mathbb{C}^4$ satisfies $\mathsf D v=0$ and $\Box v=0$. The example shows that the cell root has a nontrivial kernel already at $\lambda=0$. The constant solutions of $\Box$ are all of $\mathbb{C}^4$, and $\mathsf D$ vanishes on all of them, so the constant part of the kernel does not distinguish the chiral halves; the half appears on the non-constant solutions of §*The Chiral Form*.
 
 **Promotion of a chiral solution.** Let $\psi_+$ solve $(\Box-\lambda)\psi_+=0$ with $c\ne0$, and put $\psi_-=\frac1cD_+\psi_+$. Then
 
@@ -538,7 +538,7 @@ the square of the symbol of $\Box$, the same expression as the determinant of th
 
 ## Summary
 
-The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra itself is $M_2(\mathbb{C})$; the four-dimensional carrier is its regular module, and the $M_4(\mathbb{C})$ of the root is the operator algebra on that module, not a second representation of $\mathbb{B}$. It has no Clifford root on the two-dimensional simple module of $\mathbb{B}$: the three generators $i\vec e_k$ supply a three-generator Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted root is $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box-\kappa^2$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame.
+The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra itself is $M_2(\mathbb{C})$; the four-dimensional carrier is its regular module, and the $M_4(\mathbb{C})$ of the root is the operator algebra on that module, not a second representation of $\mathbb{B}$. It has no Clifford root on the two-dimensional simple module of $\mathbb{B}$: the three generators $i\vec e_k$ supply a three-generator Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted cell root is $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$; its coefficients lie in the enveloping algebra $\mathbb{B}^{\mathrm e}$, not in $\mathbb{B}$, and the biquaternion object is the factorisation of the unshifted operator, $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box-\kappa^2$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The cell root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame, and a formula naming a particular frame is frame data.
 
 ## Summary of Notation
 
@@ -554,7 +554,7 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic 
 | $\gamma_5=\gamma^t\gamma^x\gamma^y\gamma^z$ | the volume element, $\gamma_5^2=I$ |
 | $T_{a,b}=L_aR_b$ | the two-sided cell, acting by $\tilde Q\mapsto a\tilde Qb$ |
 | $\gamma^t=T_{e_t,u}$, $\gamma^k=T_{\gamma_k,\tilde\Pi_+}-T_{\gamma_k,\tilde\Pi_-}$, $\gamma_5=iT_{e_t,\vec\Upsilon_{+-}}-iT_{e_t,\vec\Upsilon_{-+}}$ | the frame as cells of $T$ |
-| $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$ | the unshifted root, $\mathsf D^2=\Box I$ |
+| $\mathsf D=\sum_\mu\gamma^\mu\partial/\partial Q_\mu$ | the unshifted **cell** root in $\mathbb{B}^{\mathrm e}$, $\mathsf D^2=\Box I$; not an element of $\mathbb{B}$ |
 | $\mathsf D_\lambda=\mathsf D+c\gamma_5$, $c^2=-\lambda$ | the single root of $\Box-\lambda$ |
 | $\kappa$, $(\mathsf D-\kappa)(\mathsf D+\kappa)$ | the scalar shift and its factorisation |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the two copies of the simple module |

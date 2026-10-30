@@ -438,7 +438,7 @@ $$
 \gamma^k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix},\qquad
 \gamma_5=\operatorname{diag}(-1,-1,1,1).
 $$
-These are entry for entry the matrices of *The Dirac Algebra and Biquaternions: A Dictionary*, §*The Isomorphism*, and no change of spinor basis is needed. In the coefficient basis the same matrices are $C_{\Pi}\,\gamma^\mu\,C_{\Pi}^{-1}$. The two blocks are the two Weyl spinors; $\gamma_5$ is their sign; the four generators exchange them.
+These are entry for entry the matrices of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, and no change of spinor basis is needed. In the coefficient basis the same matrices are $C_{\Pi}\,\gamma^\mu\,C_{\Pi}^{-1}$. The two blocks are the two Weyl spinors; $\gamma_5$ is their sign; the four generators exchange them.
 
 **The projectors are products, not cells.** The chirality projectors are
 $$
@@ -657,4 +657,4 @@ For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the congruence $MXM^{\dagger}$
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model and the Kronecker factors
-- [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality

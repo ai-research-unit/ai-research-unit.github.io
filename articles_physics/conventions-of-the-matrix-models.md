@@ -299,7 +299,66 @@ In the canonical frame it is read entirely in cells, $\iota_{\mathrm{Cl}}(e_\mu)
 $$
 \iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)\neq i\,\iota_{\mathrm{Cl}}(\tilde Q),
 $$
-and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the comparison carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
+and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the comparison carries $\iota_{\mathrm{Cl}}$.
+
+**The basis, read in cells.** On the eight real units the comparison reads
+
+| $\tilde Q$ | $\iota_{\mathrm{Cl}}(\tilde Q)$ | cell |
+|---|---|---|
+| $e_t$ | $I_4$ | $T_{tt}$ |
+| $\vec e_x$ | $\gamma^2\gamma^3$ | $T_{xt}$ |
+| $\vec e_y$ | $\gamma^3\gamma^1$ | $T_{yt}$ |
+| $\vec e_z$ | $\gamma^1\gamma^2$ | $T_{zt}$ |
+| $i$ | $-\omega$ | $T_{tz}$ |
+| $i\vec e_x$ | $\gamma^0\gamma^1$ | $T_{xz}$ |
+| $i\vec e_y$ | $\gamma^0\gamma^2$ | $T_{yz}$ |
+| $i\vec e_z$ | $\gamma^0\gamma^3$ | $T_{zz}$ |
+
+The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the map sits on $i$ itself, $\iota_{\mathrm{Cl}}(i)=-\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
+
+**The odd part.** The comparison lands in the even part. Multiplication by the fixed generator $\gamma^0$ reaches the odd part, and the two real sectors separate:
+
+$$
+\gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_+)=\text{vectors},\qquad
+\gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_-)=\text{trivectors}.
+$$
+
+So a four-vector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, and a trivector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_-$. The frame $\gamma^0$ is the one choice in the odd half of the comparison, and it is fixed by the representation.
+
+**Lorentz generators.** For $\mu\neq\nu$ the commutator is $\gamma^\mu\gamma^\nu-\gamma^\nu\gamma^\mu=2\gamma^\mu\gamma^\nu$, so
+
+$$
+\sigma^{\mu\nu}=\tfrac14[\gamma^\mu,\gamma^\nu]=\tfrac12\gamma^\mu\gamma^\nu
+$$
+
+is half a bivector. Read in cells and in biquaternions,
+
+| generator | cell | biquaternion |
+|---|---|---|
+| $\sigma^{23}$ | $\tfrac12T_{xt}$ | $\tfrac12\vec e_x$ |
+| $\sigma^{31}$ | $\tfrac12T_{yt}$ | $\tfrac12\vec e_y$ |
+| $\sigma^{12}$ | $\tfrac12T_{zt}$ | $\tfrac12\vec e_z$ |
+| $\sigma^{01}$ | $\tfrac12T_{xz}$ | $\tfrac12 i\vec e_x$ |
+| $\sigma^{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
+| $\sigma^{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
+
+The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma^\mu\gamma^\nu$ is the bivector and the Lorentz generator is half of it.
+
+**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma^{\mu_1}\cdots\gamma^{\mu_k})=\gamma^{\mu_k}\cdots\gamma^{\mu_1}$, is quaternion conjugation under the comparison,
+
+$$
+\iota_{\mathrm{Cl}}(\tilde Q^{\natural})=\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde Q)\bigr),
+$$
+
+checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal, $\iota_{\mathrm{Cl}}(\tilde Q)\,\mathrm{rev}(\iota_{\mathrm{Cl}}(\tilde Q))=\iota_{\mathrm{Cl}}(\tilde Q\tilde Q^{\natural})$.
+
+Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}_2$, and it equals twice the scalar part. The $4\times4$ trace of the comparison is
+
+$$
+\operatorname{Tr}_4\,\iota_{\mathrm{Cl}}(\tilde Q)=2\,\mathrm{Re}\operatorname{Tr}_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
+$$
+
+The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
 
 **The slash is not used.** The Dirac slash is not part of the notation of this corpus.
 A contraction is written out with the index repeated in the same position, $\gamma^\mu p_\mu$ for a momentum and
@@ -318,7 +377,7 @@ The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I
 
 The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_\mu$ and the four right matrices $R_\nu$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$, written out entry by entry and tabulated against the gamma products. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
 
-The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of frame. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$.
+The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of frame. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma^0\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ is the vector space and $\gamma^0\iota_{\mathrm{Cl}}(\mathbb{M}_-)$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma^{\mu\nu}=\tfrac12\gamma^\mu\gamma^\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
 
 ## Summary of Notation
 
@@ -336,6 +395,7 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 | $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $\gamma^0,\dots,\gamma^3,\gamma_5$ | The five Dirac generators of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
+| $\sigma^{\mu\nu}=\tfrac12\gamma^\mu\gamma^\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 
 ## Further Reading
 
@@ -345,4 +405,3 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html), for the change of frame between the coefficient basis and the canonical frame.
 - [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
-- [The Dirac Algebra and Biquaternions — A Dictionary](the-dirac-algebra-and-biquaternions-a-dictionary.html), for the dictionary with the gamma matrices and the comparison map $\iota_{\mathrm{Cl}}$.

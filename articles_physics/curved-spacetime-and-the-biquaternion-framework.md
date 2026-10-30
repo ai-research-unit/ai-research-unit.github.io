@@ -237,6 +237,8 @@ The honest summary is that this is a different framework, not an extension of th
 
 The connection of the previous section was built for the material sector, where the field is a four-vector and the group acts by the two-sided rotor conjugation. The Dirac field is a different kind of object — a section of the spinor module, the Peirce carrier $\mathbb{B}\tilde\Pi$ (a minimal left ideal here) — and the difference in the kind of field, together with the difference in the kind of action, is exactly what the curved Dirac equation turns on. This section writes that equation in the framework's own notation. It is the item the agenda below records as the curved-space form of the biquaternion Dirac equation.
 
+**Frame note.** The operator below is built from the material frame $\tilde E_\mu$ of Route Two. The gamma transcription of the corresponding Dirac operator uses the informational frame $\hat E^\mu$, and the dictionary between the two frames is stated in the Lorentz-gauging section.
+
 ### The one-sided spinor derivative
 
 The Lorentz group acts on the spinor module by **left multiplication**, $\psi \mapsto \tilde U\psi$, not by rotor conjugation; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore **one-sided**,
@@ -308,10 +310,27 @@ What it does not settle is everything the frame and the connection already faile
 
 The coupling written above is the standard one: the flat equation with the rigid basis replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.
 
+**Frame caveat.** The displays below are quoted in the source's gamma frame, and that frame is not the material frame of Route Two. Write $\iota_{\mathrm{Cl}}:\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ for the dictionary of the companion article: the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $\iota_{\mathrm{Cl}}(e_t)=I$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$, and $\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+$$
+\gamma^a=\gamma^0\,\iota_{\mathrm{Cl}}(\hat e^a),
+\qquad
+\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)\in\mathbb{M}_+ .
+$$
+The composite $\gamma^0\iota_{\mathrm{Cl}}$, not $\iota_{\mathrm{Cl}}$ itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde E^\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma^a$, and a term-by-term substitution of $\tilde E^\mu$ for $e^\mu{}_a\gamma^a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
+$$
+\hat E^\mu=e^\mu{}_a\hat e^a,
+\qquad
+e^\mu{}_a\gamma^a=\gamma^0\iota_{\mathrm{Cl}}(\hat E^\mu),
+\qquad
+i e^\mu{}_a\gamma^a\partial/\partial Q_\mu\,\psi
+=i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big).
+$$
+The fixed $\gamma^0$ is the dictionary frame, not part of the derivative; the derivative is the biquaternion-valued $\hat E^\mu\partial/\partial Q_\mu$. The article's own operator $\tilde E^\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and the $ict'$ convention relate the two, so they are not term-by-term identical, and the substitution $\tilde E^\mu\leftrightarrow e^\mu{}_a\gamma^a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat E^\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.
+
 J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial Q_\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Varying the gauged action gives
 
 $$
-E_{\mathrm{grav}} = (ie^\mu{}_a\gamma^a\partial/\partial Q_\mu - m)\psi
+E_{\mathrm{grav}} = i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big) - m\psi
 - \tfrac{i}{2}e^{\mu}{}_{b}\,\omega_{\mu}{}^{b}{}_{a}\gamma^a\psi
 + \tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}\{\gamma^a,S^{cd}\}\psi ,
 $$
@@ -319,7 +338,7 @@ $$
 while substituting the same replacement into the flat equation of motion gives
 
 $$
-\tilde E_{\mathrm{grav}} = (ie^\mu{}_a\gamma^a\partial/\partial Q_\mu - m)\psi
+\tilde E_{\mathrm{grav}} = i\gamma^0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial Q_\mu\,\psi\big) - m\psi
 + \tfrac{i}{2}e^\mu{}_a\,\omega_{\mu cd}\gamma^a S^{cd}\psi ,
 $$
 
@@ -493,7 +512,10 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
-| $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$ | Dual frame (inverse tetrad) |
+| $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$ | Material dual frame (inverse tetrad) |
+| $\iota_{\mathrm{Cl}}$ | Dictionary: $\mathbb{R}$-algebra isomorphism $\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ |
+| $\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; $\iota_{\mathrm{Cl}}(\hat e^a)$ is even, $\gamma^a=\gamma^0\iota_{\mathrm{Cl}}(\hat e^a)$ |
+| $\hat E^\mu=e^\mu{}_a\hat e^a$ | Informational dual frame; the exact gamma transcription of the Dirac operator uses it |
 | $D_\mu\psi = \partial/\partial Q_\mu\,\psi + \vec\Gamma_\mu\psi$ | Covariant derivative on the spinor module (one-sided, left action) |
 | $\tilde E^\mu D_\mu$ | Curved biquaternion Dirac operator |
 | $(\tilde E^{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$ | Lichnerowicz square; $\Box_g$ Laplace–Beltrami on spinors, $R$ Ricci scalar |

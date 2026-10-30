@@ -18,7 +18,7 @@ This article computes the two traces, proves the identity
 $$
 \operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,\gamma^5},
 $$
-identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The Clifford frame and the $\mathsf{M}_4$ map are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *The Dirac Algebra and Biquaternions: A Dictionary*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
+identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The Clifford frame and the $\mathsf{M}_4$ map are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
 ## The Real-Linear Embedding
 
@@ -226,5 +226,5 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $T_{tt}=I$, $T_{tz}=i\gamma^5$ and the grades of the other fourteen.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the projectors $P_\pm$ and the chiral blocks.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the trace form and the Hermitian structure.
-- [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html), for the real-linear embedding and the explicit matrices.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the real-linear embedding and the explicit matrices, §*The Clifford Structure and the Gamma Matrices*.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the bar, the star and the two Clifford dictionaries.
