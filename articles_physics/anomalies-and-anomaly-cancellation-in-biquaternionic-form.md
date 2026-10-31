@@ -49,7 +49,7 @@ which was recomputed for all $4!=24$ permutations: the trace vanishes unless the
 
 ## The Axial Anomaly
 
-**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_5^\mu=\bar{\psi}\gamma_\mu\gamma_5\psi$ satisfies
+**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_{5\mu}=\bar{\psi}\gamma_\mu\gamma_5\psi$ satisfies
 
 $$
 \boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\gamma_5\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;},
@@ -67,7 +67,7 @@ $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-whose two real invariants of the biquaternion norm are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$; the companion article on instantons computes the topological density $(1/4)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ and finds it proportional to $I_2$, with the factor of $i$ that the $ict'$ convention carries in the time components. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant. Two structural remarks follow. First, the density is a **pseudoscalar**: it is parity-odd, which is why it can appear on the right-hand side of the divergence of an axial (parity-odd) current. Second, it is a **total derivative** in the abelian case, $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\partial/\partial Q_\mu J_{\mathrm{CS}}^\mu$ with $J_{\mathrm{CS}}^\mu$ the Chern–Simons current of the companion article on instantons, which is why it is not renormalised and why it is fixed by topology. Both statements are standard; what the framework adds is that the density is not an alien object but the second invariant of its own field, and that $\gamma_5=i\omega$ is the volume element.
+whose two real invariants of the biquaternion norm are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$; the companion article on instantons computes the topological density $(1/4)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ and finds it proportional to $I_2$, with the factor of $i$ that the $ict'$ convention carries in the time components. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant. Two structural remarks follow. First, the density is a **pseudoscalar**: it is parity-odd, which is why it can appear on the right-hand side of the divergence of an axial (parity-odd) current. Second, it is a **total derivative** in the abelian case, $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}$ the Chern–Simons current of the companion article on instantons, which is why it is not renormalised and why it is fixed by topology. Both statements are standard; what the framework adds is that the density is not an alien object but the second invariant of its own field, and that $\gamma_5=i\omega$ is the volume element.
 
 **The physical consequence, stated and not developed.** The anomaly makes $\pi^0\to\gamma\gamma$ possible at the observed rate and makes the axial $\mathrm{U}(1)$ of quantum chromodynamics explicitly broken at the quantum level; the $\mathrm{U}(1)_A$ problem and its resolution by the $\theta$ parameter and the axion belong to the corpus's other subcategories and are not treated here. The point for the fermion sector is the divergence identity itself: the axial current of any single massless Dirac fermion is not conserved quantum-mechanically, and no choice of regulator removes the term without moving the breaking elsewhere.
 
@@ -173,7 +173,7 @@ The consequence is worth stating plainly: **the biquaternion framework's own gau
 $$
 \langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} = \tfrac12\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} ,
 \qquad
-J_{\mathrm{CS}}^\mu = \epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma} ,
+J_{\mathrm{CS},\mu} = \sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma} ,
 $$
 
 so the anomaly is invisible in the local equations of motion of the gauge field and is detected only by the charge it transports:
@@ -270,7 +270,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ | Volume element; $\gamma_5=i\omega$ |
 | $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |
 | $\epsilon_{\mu\nu\rho\sigma}$, $\epsilon_{0123}=+1$ | Totally antisymmetric symbol |
-| $j_5^\mu=\bar{\psi}\gamma_\mu\gamma_5\psi$ | Axial current |
+| $j_{5\mu}=\bar{\psi}\gamma_\mu\gamma_5\psi$ | Axial current |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi+\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ) |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |

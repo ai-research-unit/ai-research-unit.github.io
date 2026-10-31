@@ -4,11 +4,11 @@
 
 The corpus states one rule for indices in *Operator and Calculus Conventions*: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.
 
-The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 71 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,548 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
+The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 50 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,458 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
 
 The remainder is not one problem. Four kinds occur, and they cost different things. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label; in the fourth it is a genuine upper index — a spinor index, a local frame index or an internal-symmetry index — which the spacetime rule does not reach and which must be left alone. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, correct for the third, and an error for the fourth.
 
-Sixty-one files have been repaired. Twenty-two were repaired while this article was written: seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. Thirty-nine more were migrated afterwards, by rewriting each display rather than relettering it; they are listed in §*What Was Already Lowered* and are no longer in the inventory. Every count here is after both passes.
+Every file listed in §*What Was Already Lowered* is repaired. Twenty-two were repaired while this article was written: seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. Thirty-nine more were migrated afterwards, by rewriting each display rather than relettering it; they are listed in §*What Was Already Lowered* and are no longer in the inventory. Every count here is after both passes.
 
 The examples in this article quote the offending notation. They are the object of study, not the notation of the article.
 
@@ -18,7 +18,7 @@ The count is made on the mathematics regions only, the text between single or do
 
 | Corpus | Articles | Superscripts | Index-like tokens | Articles with an index |
 |---|---:|---:|---:|---:|
-| Physics | 402 | 43,460 | 1,548 | 71 |
+| Physics | 402 | 43,460 | 1,458 | 50 |
 | Part VI mathematics | 884 | 65,868 | 73 | 12 |
 
 The count does not include numeric components, because $x^2$ the square and $x^2$ the second component are the same string. The four physics articles that wrote only numeric time components have been lowered and no longer appear.
@@ -53,7 +53,7 @@ F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.
 
-Sixty-three physics articles and six Part VI articles are in this class. Between them they hold 1,086 paired occurrences, 1,050 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
+Forty-two physics articles and six Part VI articles are in this class. Between them they hold 1,020 paired occurrences, 984 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
 
 ### Class C — the superscript is only a label
 
@@ -68,7 +68,7 @@ The superscript is an exponent, a parameter label, a star, a dual or an inverse.
 | Class | Role of the superscript | Lowering is | Repair | Physics articles | Part VI articles |
 |---|---|---|---|---|---|
 | A | a slot | destructive | matrix, slot order, cell form | 8 | 3 |
-| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 63 | 6 |
+| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 42 | 6 |
 | C | a label | safe | local relabel | 0 | 3 |
 | D | not an index | not applicable | none | excluded | excluded |
 | E | an index of another kind | safe with a carrier | bar, declared slot order, or plain label | 11 (58 occ.) | 0 |
@@ -128,6 +128,27 @@ The pass took the files whose raised index carries no structure: in those files 
 | [Spin Entropy and the Lorentz Group in Biquaternionic Form](../articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.html) | 1 |
 | [Exercise: The Electromagnetic Field of a Moving Charge](../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html) | 1 |
 | [Exercise: Duality Rotation and the Riemann–Silberstein Vector](../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html) | 1 |
+| [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | 3 |
+| [The Determination of the Possible Spins in Biquaternionic Form](../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html) | 3 |
+| [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) | 3 |
+| [The Electron in Biquaternionic Form](../articles_physics/the-electron-in-biquaternionic-form.html) | 3 |
+| [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) | 3 |
+| [The Effective Optical Metric of the Local Complex Structure](../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html) | 4 |
+| [The Biquaternion Basis of a Unified-Field Fibre Bundle](../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html) | 4 |
+| [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) | 4 |
+| [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html) | 4 |
+| [Cosmology under the Biquaternion Framework — A Research Agenda](../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html) | 4 |
+| [Electric–Magnetic Duality and the Modular Group in Biquaternionic Form](../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html) | 4 |
+| [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html) | 4 |
+| [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | 5 |
+| [The Poincaré Group and the Biquaternion Frame](../articles_physics/the-poincare-group-and-the-biquaternion-frame.html) | 5 |
+| [Anomalies and Anomaly Cancellation in Biquaternionic Form](../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) | 5 |
+| [The Gauge Principle in Biquaternionic Form](../articles_physics/the-gauge-principle-in-biquaternionic-form.html) | 5 |
+| [The Higgs Mechanism as an Erasure of Information in Biquaternionic Form](../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html) | 5 |
+| [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) | 5 |
+| [Hawking Radiation in Biquaternionic Form](../articles_physics/hawking-radiation-in-biquaternionic-form.html) | 5 |
+| [The Skyrme Model and the Topological Baryon in Biquaternionic Form](../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) | 6 |
+| [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) | 6 |
 
 The three Part VI rows are the element representations, whose indices $Q_0$, $Q_1$, $\tilde q_0$ are tuple slots rather than spacetime events. They were lowered with the rest; if the Part VI tuple convention wants the upper form back, the change is local and the value is unaffected.
 
@@ -217,8 +238,6 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | $\mathbb{B}$ | 25 | 2 | 19 | 4 | $T^{\mu}$ (22), $\partial^{\mu}$ (2), $\eta^{\mu\nu}$ (1) |
 | [Radiation from Accelerated Charges in Biquaternionic Form](../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html) | $\mathbb{B}$ | 19 | 6 | 6 | 7 | $K^{\mu}$ (7), $du^{\nu}$ (5), $d^{\mu}$ (3), $u^{\mu}$ (3), +1 more |
 | [The Lorentz Transformation as a Biquaternionic Rotation](../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html) | $\mathbb{B}$ | 11 | 1 | 1 | 9 | $L^{\mu}$ (3), $E^{\mu}$ (2), $q^{\mu}$ (2), $F^{\mu\nu}$ (1), +3 more |
-| [Hawking Radiation in Biquaternionic Form](../articles_physics/hawking-radiation-in-biquaternionic-form.html) | $\mathbb{B}$ | 5 | 1 | 4 | 0 | $v^{\mu}$ (2), $\chi^{\nu}$ (1), $\delta^{\mu}$ (1), $\nabla^{\mu}$ (1) |
-| [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 5 | 1 | 3 | 1 | $K^{\mu}$ (3), $F^{\mu\nu}$ (1), $j^{\mu}$ (1) |
 
 ### Class B articles
 
@@ -268,25 +287,6 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) | — | 8 | 0 | 3 | 5 | $M^{\mu}$ (3), $\psi^{\rho}$ (3), $N^{\rho}$ (1), $S^{\mu}$ (1) |
 | [The Berry Phase and Geometric Phases in Biquaternionic Form](../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html) | $\mathbb{B}$ | 7 | 0 | 7 | 0 | $dR^{\mu}$ (4), $R^{\mu}$ (1), $\lambda^{\mu}$ (1), $dS^{\mu\nu}$ (1) |
 | [The Theta Vacuum in Biquaternionic Form](../articles_physics/the-theta-vacuum-in-biquaternionic-form.html) | both | 7 | 0 | 7 | 0 | $F^{\mu\nu}$ (7) |
-| [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) | $\mathbb{B}$ | 6 | 0 | 6 | 0 | $j^{\mu}$ (4), $F^{\mu\nu}$ (2) |
-| [The Skyrme Model and the Topological Baryon in Biquaternionic Form](../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) | $\mathbb{B}$ | 6 | 0 | 5 | 1 | $B^{\mu}$ (6) |
-| [Anomalies and Anomaly Cancellation in Biquaternionic Form](../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) | $\mathbb{B}$ | 5 | 0 | 4 | 1 | $J^{\mu}$ (3), $j^{\mu}$ (2) |
-| [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | $\mathbb{M}_-$ | 5 | 0 | 1 | 4 | $S^{\mu\nu}$ (2), $x^{\mu}$ (2), $p^{\mu}$ (1) |
-| [The Gauge Principle in Biquaternionic Form](../articles_physics/the-gauge-principle-in-biquaternionic-form.html) | $\mathbb{B}$ | 5 | 0 | 5 | 0 | $dx^{\mu}$ (2), $j^{\mu}$ (2), $x^{\mu}$ (1) |
-| [The Higgs Mechanism as an Erasure of Information in Biquaternionic Form](../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html) | $\mathbb{B}$ | 5 | 0 | 5 | 0 | $g^{\mu\nu}$ (4), $F^{\mu\nu}$ (1) |
-| [The Poincaré Group and the Biquaternion Frame](../articles_physics/the-poincare-group-and-the-biquaternion-frame.html) | $\mathbb{M}_-$ | 5 | 0 | 2 | 3 | $a^{\mu}$ (2), $x^{\mu}$ (2), $\Lambda^{\mu}$ (1) |
-| [Cosmology under the Biquaternion Framework — A Research Agenda](../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{M}_-$ | 4 | 0 | 4 | 0 | $T^{\mu\nu}$ (2), $\eta^{\mu\nu}$ (2) |
-| [Electric–Magnetic Duality and the Modular Group in Biquaternionic Form](../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html) | $\mathbb{B}$ | 4 | 0 | 4 | 0 | $F^{\mu\nu}$ (4) |
-| [The Biquaternion Basis of a Unified-Field Fibre Bundle](../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html) | $\mathbb{M}_-$ | 4 | 0 | 2 | 2 | $J^{\nu\lambda}$ (3), $\delta^{\nu}$ (1) |
-| [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html) | both | 4 | 0 | 3 | 1 | $\Sigma^{\mu}$ (3), $x^{\mu}$ (1) |
-| [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 4 | 0 | 4 | 0 | $J^{\mu}$ (4) |
-| [The Effective Optical Metric of the Local Complex Structure](../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html) | $\mathbb{B}$ | 4 | 0 | 1 | 3 | $v^{\mu}$ (4) |
-| [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) | $\mathbb{B}$ | 4 | 0 | 2 | 2 | $F^{\mu\nu}$ (2), $x^{\mu}$ (2) |
-| [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | both | 3 | 0 | 1 | 2 | $T^{\mu}$ (2), $J^{\nu}$ (1) |
-| [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $j^{\mu}$ (2), $F^{\mu\nu}$ (1) |
-| [The Determination of the Possible Spins in Biquaternionic Form](../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html) | — | 3 | 0 | 1 | 2 | $W^{\mu}$ (3) |
-| [The Electron in Biquaternionic Form](../articles_physics/the-electron-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $j^{\mu}$ (3) |
-| [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $F^{\mu\nu}$ (2), $j^{\mu}$ (1) |
 
 ## The Part VI Inventory
 
@@ -311,7 +311,7 @@ The other 29 index-shaped tokens in Part VI are not indices. They are the order 
 
 ## What a Pass Would Cost
 
-The 1,548 physics occurrences divide as 51 slots, 1,050 paired and 447 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 479 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
+The 1,458 physics occurrences divide as 49 slots, 984 paired and 425 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 457 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
 
 The Frame column splits the work by kind of decision, not by difficulty. The 280 $\mathbb{M}_-$ pairs lower as relabels under one explicit $\varepsilon$ sum, because the two weights coincide there. The 729 $\mathbb{B}$ pairs do not: $g$ and $\varepsilon$ differ, so each display must declare which contraction it means. The 154 *both* pairs carry the same choice, made per display inside one article. A pass in the order A, B, C is still the cheap order. Class A is 11 articles and 56 slots, and every one needs a decision about the slot before any edit. Class B is 70 physics and 6 Part VI articles holding 1,069 paired occurrences. Most are textbook formulas quoted in the middle of a biquaternion argument, and the decision is editorial before it is technical: does the article own the formula, or quote it? A quotation may keep its notation if the article says so; an owned formula may not. Class C is 3 Part VI articles and a local relabel.
 

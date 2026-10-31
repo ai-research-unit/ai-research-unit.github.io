@@ -17,7 +17,7 @@ $$
 g = \mathrm{diag}(-1,+1,+1,+1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 
@@ -157,12 +157,12 @@ $$
 so the gauge-invariant kinetic term becomes a quadratic form in the connection,
 
 $$
--\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\mathrm{vac}}
-= -\,\frac{ϙ^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu
+-\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\mathrm{vac}}
+= -\,\frac{ϙ^2v^2}{2\hbar^2}\,\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$
 
-the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\vec A^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides would differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ gives the mass
+the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = A_0^2+\vec A^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides would differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ gives the mass
 
 $$
 \boxed{\;M_A^2 = \frac{ϙ^2v^2}{\hbar^2},
@@ -170,7 +170,7 @@ $$
 M_A = \frac{ϙv}{\hbar}\;}.
 $$
 
-This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = ϙ/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\langle\tilde{A}\rangle_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = ϙ^2v^2/\hbar^2$, with $ϙv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
+This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = ϙ/\hbar = 0.7$ and $v = 1.3$. Directly from $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\langle\tilde{A}\rangle_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = ϙ^2v^2/\hbar^2$, with $ϙv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
 
 The informational interpretation is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
 

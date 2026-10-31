@@ -160,10 +160,10 @@ where $\mathfrak D = \partial/\partial x^0 e_t + i \vec e_y\partial/\partial Q_x
 The spacetime-algebra formulation writes the Dirac equation for an even multivector $\Psi$ of $\mathrm{Cl}_{1,3}$ as
 
 $$
-\Sigma^\mu\partial/\partial x^\mu\,\Psi\,i\Sigma_3 = -m\,\Psi^{*} + q\,\Sigma^\mu A_\mu\,\Psi ,
+\sum_\mu\Sigma_\mu\,\partial/\partial x_\mu\,\Psi\,i\Sigma_3 = -m\,\Psi^{*} + q\sum_\mu\Sigma_\mu A_\mu\,\Psi ,
 $$
 
-with $\Sigma^\mu$ the spacetime basis vectors of the formulation and the same star conjugation. Fauser proves that this equation and the Daviau equation are the same equation, and that the passage between them is made of three explicit operations.
+with $\Sigma_\mu$ the spacetime basis vectors of the formulation and the same star conjugation. Fauser proves that this equation and the Daviau equation are the same equation, and that the passage between them is made of three explicit operations.
 
 **Statement (the equivalence).** Daviau's formulation and Hestenes' formulation are equivalent. The map $z$ that carries the spacetime basis to the space-Clifford basis is a **cyclic relabelling** of the three space directions,
 

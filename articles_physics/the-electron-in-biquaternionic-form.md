@@ -44,7 +44,7 @@ The electron field carries the electron's data in the following objects.
 | Charge | the coupling $ϙ=-e$ inserted in the gradient (see below) |
 | Spin state | an idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$ |
 | Spin observables | Hermitian elements $\tilde{H} = i h_k\vec e_k\in\mathbb{M}_+$ |
-| Conserved current | $\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-$ |
+| Conserved current | $\tilde{J} = ic\,j_0 e_t + \vec j\in\mathbb{M}_-$ |
 | Chiral halves | the left- and right-handed Weyl spinors of the spinor module |
 
 The placement of these objects already contains the article's main structural observation: the electron's state-like data (its spin) and its field-strength-like data (its Coulomb field) are $\mathbb{M}_+$ objects, its current is an $\mathbb{M}_-$ object, the algebra's real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two chiralities, and it is the rest-energy phase that rotates one sector into the other. There is no single sector of the algebra in which "the electron" lives.
@@ -85,10 +85,10 @@ The free biquaternion Dirac equation contains no charge. Charge enters only thro
 
 Four statements are worth separating.
 
-**The current is derived.** Given the equation, the Dirac current $j^\mu = \bar{\psi}\gamma_\mu\psi$ is conserved, and in the series' notation it is the four-vector biquaternion
+**The current is derived.** Given the equation, the Dirac current $j_\mu = \bar{\psi}\gamma_\mu\psi$ is conserved, and in the series' notation it is the four-vector biquaternion
 
 $$
-\boxed{\;\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-, \qquad j^0 = \psi^\dagger\psi \ge 0\;}.
+\boxed{\;\tilde{J} = ic\,j_0 e_t + \vec j\in\mathbb{M}_-, \qquad j_0 = \psi^\dagger\psi \ge 0\;}.
 $$
 
 That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption.
@@ -197,7 +197,7 @@ Two structural points and two cautions.
 | Spin states, observables, expectation values | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 | Spin magnitude $\hbar/2$ | Represented | normalisation of $S_k = \tfrac{\hbar}{2}\sigma_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m$ coefficient from the mass term plus minimal coupling |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu = \bar{\psi}\gamma_\mu\psi$, $\partial_\mu j^\mu = 0$ |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu = \bar{\psi}\gamma_\mu\psi$, $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_\mu = 0$ |
 | Coulomb field $\tilde{F}\in\mathbb{M}_+$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
 | Mass term couples the two chiralities (central ideals), off-diagonally | Derived | linear chiral pair; Weyl decomposition |
 | Rest-energy phase rotates sectors at $mc^2/\hbar$ | Derived | $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
@@ -235,7 +235,7 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading at normalisation (expectation values) |
-| $\tilde{J} = ic\,j^0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
+| $\tilde{J} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |
 | $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Four-wavevector; $\langle\tilde P/\hbar\rangle_{\natural} = -m^2c^2/\hbar^2$ |
 | $m_e$, $e$, $\hbar$ | Electron mass, elementary charge, reduced Planck constant |

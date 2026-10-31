@@ -40,7 +40,7 @@ $$
 \begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
 
-The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma_\mu$ is the coordinate index, $\gamma_\mu$ is the generator paired with $\partial/\partial x^\mu$ in the $\mathbb{M}_-$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x^\mu=(t',x,y,z)$, not $Q_\mu$; the $\mathbb{B}$-frame coefficients are $\gamma_0$ and $i\gamma_k$. That is the precise sense in which the gammas align with the coordinates.
+The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $\gamma_\mu$ is the coordinate index, $\gamma_\mu$ is the generator paired with $\partial/\partial x_\mu$ in the $\mathbb{M}_-$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x_\mu=(t',x,y,z)$, not $Q_\mu$; the $\mathbb{B}$-frame coefficients are $\gamma_0$ and $i\gamma_k$. That is the precise sense in which the gammas align with the coordinates.
 
 The Dirac basis is the same set after $U=\frac1{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix}$:
 $$
@@ -216,7 +216,7 @@ $$
 
 In the Dirac basis the same two components are the large and the small component; they are still the Peirce components, but there they are not the chirality projectors.
 
-**The momentum-space operator.** For a plane wave of four-momentum $p^\mu=(E,\vec p)$, the Dirac operator is
+**The momentum-space operator.** For a plane wave of four-momentum $p_\mu=(E,\vec p)$, the Dirac operator is
 
 $$
 \gamma_{\mu} p_{\mu}=\gamma_0E-\gamma_k p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
@@ -517,17 +517,17 @@ $$
 
 The spatial generators are unchanged because $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$; only $\gamma_0$ and $\gamma_5$ change. In the Dirac basis $\gamma_0_d$ is diagonal on the Peirce components, which is why that basis separates the large and the small component in the non-relativistic limit. The $4\times4$ matrix $U$ of the parent is the regular representation of this right multiplication on the four-dimensional space of the two Peirce coordinates.
 
-**The Lorentz generators.** The generators of the spinor representation are $S^{\mu\nu}=\frac i4[\gamma_\mu,\gamma_\nu]$. In the algebra they are again left and right multiplications:
+**The Lorentz generators.** The generators of the spinor representation are $S_{\mu\nu}=\frac i4[\gamma_\mu,\gamma_\nu]$. In the algebra they are again left and right multiplications:
 
 $$
-S^{0k}=\frac i4[\gamma_0,\gamma_k]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
-S^{jk}=\frac i4[\gamma_j,\gamma_k]=\frac i2\,L_{\vec e_j\vec e_k}.
+S_{0k}=\frac i4[\gamma_0,\gamma_k]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
+S_{jk}=\frac i4[\gamma_j,\gamma_k]=\frac i2\,L_{\vec e_j\vec e_k}.
 $$
 
-Both are block diagonal on the Peirce components, so $[S^{\mu\nu},\gamma_5]=0$. The rotations $S^{jk}$ carry no chirality factor and act with the same sign on the two components; the boosts $S^{0k}$ carry the chirality sign, since $R_{i\vec e_z}=-\gamma_5$ and
+Both are block diagonal on the Peirce components, so $[S_{\mu\nu},\gamma_5]=0$. The rotations $S_{jk}$ carry no chirality factor and act with the same sign on the two components; the boosts $S_{0k}$ carry the chirality sign, since $R_{i\vec e_z}=-\gamma_5$ and
 
 $$
-S^{0k}=\frac i2\,L_{i\vec e_k}\,\gamma_5 .
+S_{0k}=\frac i2\,L_{i\vec e_k}\,\gamma_5 .
 $$
 
 This is the algebraic content of the parent's statement that rotations are chirality-even and boosts are chirality-odd. The signs are the ones of the exercise: the commutator $[\gamma_0,\gamma_k]$ is $-2L_{i\vec e_k}R_{i\vec e_z}$ with the present convention.
@@ -572,7 +572,7 @@ The six problems test the parent's plane-wave solutions and confirm them in the 
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.
 3. **Spin sums.** The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=\gamma_{\mu} p_{\mu}-m$ hold as operator identities on $\mathbb{B}$, and $(\gamma_{\mu} p_{\mu}+m)(\gamma_{\nu} p_{\nu}-m)=0$ on shell.
 4. **Massless limit.** Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.
-5. **Generators.** The Clifford algebra is the multiplication table: $\gamma_0=R_{i\vec e_x}$, $\gamma_k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\gamma_0$ to $R_{i\vec e_z}$ and leaves $\gamma_k$ unchanged; the Lorentz generators are $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$.
+5. **Generators.** The Clifford algebra is the multiplication table: $\gamma_0=R_{i\vec e_x}$, $\gamma_k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\gamma_0$ to $R_{i\vec e_z}$ and leaves $\gamma_k$ unchanged; the Lorentz generators are $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 
 Two objects are needed by the exercise and are not displayed in the parent: the chiral negative-frequency spinors $\tilde v_\pm$ (Problem 1) and the change-of-basis biquaternion $\tilde W$ (Problem 5). The constructions above reproduce the parent's stated results.
@@ -594,7 +594,7 @@ Two objects are needed by the exercise and are not displayed in the parent: the 
 | $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^*\tilde\Phi\,i\vec e_x)$ | Dirac pairing in the chiral basis |
 | $\gamma_{\mu} p_{\mu}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space Dirac operator |
 | $\tilde W=(e_t+\vec e_y)/\sqrt2$ | Change of basis, chiral $\to$ Dirac |
-| $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
+| $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 

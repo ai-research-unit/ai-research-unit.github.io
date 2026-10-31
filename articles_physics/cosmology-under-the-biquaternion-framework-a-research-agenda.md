@@ -32,7 +32,7 @@ $$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho 
 \qquad
 \frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
-where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\nabla_\mu T^{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
+where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
 
 $$
 T_{\mu\nu} = \left(\rho + p\right)\frac{v_\mu v_\nu}{c^2} + p\,g_{\mu\nu},
@@ -129,7 +129,7 @@ Each obstacle is stated with what is known, what is open, and the computation th
 
 ### Obstacle with a known route: transcribing the Friedmann equations
 
-*Known:* the Einstein equations are the framework's central open question, treated in the companion agenda; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. *Open:* whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. *Would settle it:* the object is the same action of the gravitational agenda, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\nabla_\mu T^{\mu\nu} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be *transcribed* — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the gravitational agenda exists to prevent.
+*Known:* the Einstein equations are the framework's central open question, treated in the companion agenda; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. *Open:* whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. *Would settle it:* the object is the same action of the gravitational agenda, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be *transcribed* — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the gravitational agenda exists to prevent.
 
 This obstacle inherits a hard ceiling: because the framework has not derived the Einstein equations, it has not derived the Friedmann equations, and no cosmological result can be reported as a framework result while that remains so. The agenda's contribution is to say where the cosmological case sits in that structure, not to break the ceiling.
 
@@ -140,7 +140,7 @@ This is the obstacle specific to cosmology, and it is where the framework's inva
 The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object. The bilinear sum
 
 $$
-\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t\;}
+\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu}\right) e_t\;}
 $$
 
 collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology: for a traceless symmetric object the packaging vanishes identically. The consequences for the cosmological source are immediate and sharp.
@@ -244,7 +244,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\tilde{E}_\mu \in \mathbb{M}_-$, $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(t')$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt'\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
-| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\eta^{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
+| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 

@@ -180,7 +180,7 @@ $$
 \mathrm{Sc}\!\left(\bar{e}_\mu e_\nu\right) = \delta_{\mu\nu}, \qquad \mathrm{Vect}\!\left(\bar{e}_\mu e_\nu\right) = -\,\mathrm{Vect}\!\left(\bar{e}_\nu e_\mu\right),
 $$
 
-the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial/\partial Q_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial Q_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial Q_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}F_{\mu\nu}\,dx^\mu\wedge dx^\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
+the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial/\partial Q_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial Q_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial Q_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,dx_\mu\wedge dx_\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
 
 This also explains, structurally, why the field strength is not a four-vector. The biquaternion algebra is the even part of the Clifford algebra $\mathrm{Cl}_{1,3}$, whose even elements are the scalars, the six bivectors, and the pseudoscalar. The six real components of a 2-form sit in the vector part of the biquaternion; the field strength, with vanishing scalar part and a six-real-component vector part, is a bivector, exactly as *The Material Sector: Four-Vectors, Interval and Lorentz Action* states when it notes that the field strength is not in $\mathbb{M}_-$.
 
@@ -259,14 +259,14 @@ Its mass term is **linear** in the field, so a central phase passes through it: 
 What the mass term breaks is the **axial** symmetry, not the phase. The chirality rotation $\tilde{\Psi}_R \mapsto \exp(i\alpha)\tilde{\Psi}_R$, $\tilde{\Psi}_L \mapsto \exp(-i\alpha)\tilde{\Psi}_L$ leaves the mass bilinear $\tilde{\Psi}^{\natural}\tilde{\Psi}$ invariant but is not a symmetry of the linear mass pair, and the corresponding axial current obeys
 
 $$
-\partial/\partial Q_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
+\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu} = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
 $$
 
 which vanishes only when $m = 0$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two chiral ideals** of $\mathbb{B}$ — the two chiralities — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $\mathrm{U}(1)$ that the algebra canonically carries is untouched.
 
 Two things should be said about this, one established and one open.
 
-- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\partial/\partial Q_\mu j_5^\mu / (2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $\mathrm{U}(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
+- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu j_{5\mu} / (2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $\mathrm{U}(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
 - **Open, and left open.** Whether the chirality-rotating symmetry can be *gauged*, and whether the framework's central-element structure supplies anything analogous to the would-be Goldstone statement for the axial breaking, is not decided here. A gauged axial symmetry, if it exists, is a question for the non-abelian extension, where the phase no longer commutes with the algebra.
 
 ## An External Construction That Gets a Local U(1) Without Frames
@@ -278,7 +278,7 @@ J. Fredsted (*Spinor fields without Lorentz frames in curved spacetime using com
 $$
 \omega_{2,\mu} = \omega_\mu - i\partial/\partial Q_\mu\,\phi, \qquad
 \psi_{L,2} = \exp(+i\phi)\psi_L, \qquad
-\psi_{R,2} = \exp(-i\phi)\psi_R, \qquad \phi = \phi(x^\mu) \in \mathbb{R},
+\psi_{R,2} = \exp(-i\phi)\psi_R, \qquad \phi = \phi(x_\mu) \in \mathbb{R},
 $$
 
 and it leaves the covariant derivatives covariant, $(D_{2,\mu}\psi_{L,2}) = \exp(+i\phi)D_\mu\psi_L$ and $(D_{2,\mu}\psi_{R,2}) = \exp(-i\phi)D_\mu\psi_R$, exactly as the local phase $\lambda = \exp(iϙ\Gamma/\hbar)$ of this article leaves $D_\mu\tilde\Psi$ covariant. With the central phase identified as $\phi = ϙ\Gamma/\hbar$ and the connection's scalar part written $-i\omega_\mu = (iϙ/\hbar)A_\mu$, the source's transformation is this article's $\tilde A_2 = \tilde A - \tilde\nabla\Gamma$ restricted to the central direction; the source's $\mathrm{U}(1)$ is the imaginary-scalar direction of $\mathbb{B}$, that is, the corpus's centre $\mathbb{C}_{\mathbb{B}}$, and the left-action sign for $\psi_L$ matches the left action this article's parent uses for the charged massive field.

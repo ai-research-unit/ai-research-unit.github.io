@@ -13,7 +13,7 @@ Two of the framework's own results enter directly. First, the topological charge
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S=\frac{1}{2g^2}\int\mathrm{Tr}\bigl(F_{\mu\nu}F^{\mu\nu}\bigr)\ge\frac{8\pi^2}{g^2}|Ϙ| ,
+S=\frac{1}{2g^2}\int\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\bigr)\ge\frac{8\pi^2}{g^2}|Ϙ| ,
 $$
 
 with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
@@ -57,7 +57,7 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 
 ## The One-Instanton Measure and Collective Coordinates
 
-The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_0^\mu$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
+The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\mu}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
 
 $$
 Z_1^{\mathrm{cl}} \;\propto\; \int d^4x_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
@@ -213,14 +213,14 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact factor; home of the instanton |
 | $\mathcal A_\mu$, $F_{\mu\nu}$ | Gauge connection and curvature |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge |
-| $S=\frac{1}{2g^2}\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Euclidean action |
+| $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ | Euclidean action |
 | $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ|$ | Saturated (Bogomolny) classical action |
 | $Z=\int\mathcal D\mathcal A\,\exp(-S)$ | Euclidean partition function |
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
 | $|\theta\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function |
 | $\mathcal E(\theta)$, $\chi_t$ | Vacuum energy density and topological susceptibility |
-| $x_0^\mu$, $\rho$ | Instanton collective coordinates (translation, scale) |
+| $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |
 | $8k$, $8k-3$ | ADHM moduli dimensions; collective-coordinate count |
 | $I_2=\vec E\cdot\vec B$ | Abelian topological density (framework invariant) |
 | $\mathrm{Tr}(F\wedge F)$ | Non-abelian density (matrix trace, not biquaternion norm) |

@@ -168,10 +168,10 @@ The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massles
 **The covariant label.** The Pauli–Lubanski vector is
 
 $$
-W^\mu=\tfrac12\epsilon_{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
+W_\mu=\tfrac12\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$
 
-In the rest frame $W^0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
+In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $-\sum_\mu W_\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
 
 **The Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is the conjugate module $S^{\mathrm c}$, with a conjugate-linear action; it is not a complex $\mathbb{B}$-module. The rotation spin $s$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.
 
@@ -236,7 +236,7 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
 | $N=\langle\tilde P\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |
-| $W^\mu$ | The Pauli–Lubanski vector |
+| $W_\mu$ | The Pauli–Lubanski vector |
 
 ## Further Reading
 

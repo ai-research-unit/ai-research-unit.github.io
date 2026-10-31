@@ -18,17 +18,17 @@ Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ w
 
 ### Gordon's construction
 
-Maxwell's equations in a medium with permittivity $\epsilon$ and permeability $\mu$ have the same form as in vacuum with a different metric. Gordon's observation is that for a dielectric of index $n$ moving with four-velocity $v^\mu$, the field equations in the medium are equivalent to the vacuum field equations in the effective metric
+Maxwell's equations in a medium with permittivity $\epsilon$ and permeability $\mu$ have the same form as in vacuum with a different metric. Gordon's observation is that for a dielectric of index $n$ moving with four-velocity $v_\mu$, the field equations in the medium are equivalent to the vacuum field equations in the effective metric
 $$
 g^{\mathrm{J}}_{\mu\nu}=\eta_{\mu\nu}+\left(1-\frac{1}{n^2}\right)v_\mu v_\nu ,
 \qquad
 \eta_{\mu\nu}=\mathrm{diag}(-1,1,1,1),
 $$
-with $v^\mu v_\mu=-1$. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
+with $\sum_{\mu,\nu}\eta_{\mu\nu}v_\mu v_\nu=-1$. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
 
 ### The static case
 
-For a medium at rest, $v^\mu=(1,0,0,0)$ and $v_tv_t=1$, so
+For a medium at rest, $v_\mu=(1,0,0,0)$ and $v_tv_t=1$, so
 $$
 g^{\mathrm{J}}=\mathrm{diag}\!\left(-\frac{1}{n^2},\,1,\,1,\,1\right).
 $$
@@ -70,7 +70,7 @@ g^{\mathrm{J}}_{ti}=(-0.183150,\,0,\,0)\qquad(i=x,y,z),
 $$
 and these are the terms responsible for the Fresnel drag of light in moving matter (Fizeau, 1851). The framework's local metric has $g^{\mathrm{J}}_{ti}=0$ identically: the local complex structure is defined in the medium's rest frame and **rescales** the imaginary axis by the real positive scale $c$ without rotating or shifting it, so it cannot produce a cross term.
 
-The boundary is therefore exact, and it is the sharper form of the caution in the parent article: the framework's local complex structure supplies the *conformal* half of the optical metric and not the *drag* half. A moving medium carries one more datum than the structure does, the four-velocity $v^\mu$ of the material, and the framework must import it. This is not a defect of the construction — the rest-frame metric is the object the algebra can define — but it is the precise sense in which the framework does not derive the optical metric of a moving dielectric. The corpus's own treatment of Fizeau drag belongs to *The Lorentz Transformation as a Biquaternionic Rotation*, where the drag is a kinematic consequence of the boost and not an algebraic one.
+The boundary is therefore exact, and it is the sharper form of the caution in the parent article: the framework's local complex structure supplies the *conformal* half of the optical metric and not the *drag* half. A moving medium carries one more datum than the structure does, the four-velocity $v_\mu$ of the material, and the framework must import it. This is not a defect of the construction — the rest-frame metric is the object the algebra can define — but it is the precise sense in which the framework does not derive the optical metric of a moving dielectric. The corpus's own treatment of Fizeau drag belongs to *The Lorentz Transformation as a Biquaternionic Rotation*, where the drag is a kinematic consequence of the boost and not an algebraic one.
 
 ### Anisotropy and birefringence: one scale cannot carry two indices
 

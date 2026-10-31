@@ -42,12 +42,12 @@ The Peccei–Quinn mechanism is a response to strong CP, and this section states
 **The theta term.** Quantum chromodynamics admits the CP-odd term
 
 $$
-S_\theta = \frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} ,
+S_\theta = \frac{\theta}{32\pi^2}\int d^4x\,\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu} ,
 \qquad
-{F^{\mathrm{dual}}}^{a\,\mu\nu} = \frac12\epsilon_{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
+F^{\mathrm{dual},a}_{\mu\nu} = \frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
 $$
 
-whose integrand is a total derivative but whose integral is the topological charge, $Ϙ = \frac{1}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}\in\mathbb{Z}$, so that $S_\theta = \theta Ϙ$ and the vacuum is a superposition of sectors weighted by $\exp(i\theta Ϙ)$; this is why $\theta$ is a parameter of the theory and not a coupling that can be removed. The gauge coupling is absorbed into the normalisation of $F$ in this convention, which is the companion article's. The companion article shows that in the biquaternion framework this density is proportional to the framework's second invariant, $F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu} = \frac{4i}{c}I_2$ with $I_2 = \vec E\cdot\vec B$ in the $ict'$ convention, so the CP-odd character of the theta term is visible in the algebra as the parity of the pseudoscalar invariant. The theta dependence, its periodicity and its vacuum structure are the subject of that article; this article takes $\theta$, and the physical combination $\bar\theta = \theta+\arg\det M_q$, as given.
+whose integrand is a total derivative but whose integral is the topological charge, $Ϙ = \frac{1}{32\pi^2}\int d^4x\,\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu}\in\mathbb{Z}$, so that $S_\theta = \theta Ϙ$ and the vacuum is a superposition of sectors weighted by $\exp(i\theta Ϙ)$; this is why $\theta$ is a parameter of the theory and not a coupling that can be removed. The gauge coupling is absorbed into the normalisation of $F$ in this convention, which is the companion article's. The companion article shows that in the biquaternion framework this density is proportional to the framework's second invariant, $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu} = \frac{4i}{c}I_2$ with $I_2 = \vec E\cdot\vec B$ in the $ict'$ convention, so the CP-odd character of the theta term is visible in the algebra as the parity of the pseudoscalar invariant. The theta dependence, its periodicity and its vacuum structure are the subject of that article; this article takes $\theta$, and the physical combination $\bar\theta = \theta+\arg\det M_q$, as given.
 
 **The problem.** A chiral rotation of the quark fields shifts $\theta$ by $-2N_f\alpha$ and $\arg\det M_q$ by $+2N_f\alpha$, so the physical parameter is the invariant sum $\bar\theta$, and $\theta = 0$ with complex masses is physically equivalent to $\theta\neq0$ with real masses. Nothing in the Standard Model forces $\bar\theta$ to vanish; the natural expectation is $\bar\theta\sim1$, but the neutron electric dipole moment bounds it by
 
@@ -180,16 +180,16 @@ The potential of the previous section is the vacuum energy of the theta vacuum p
 **The coupling.** The Peccei–Quinn current is anomalous, and its divergence is the topological density,
 
 $$
-\partial/\partial Q_\mu\,j^\mu_{PQ} = \frac{1}{32\pi^2}\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} .
+\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{PQ,\mu} = \frac{1}{32\pi^2}\,\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu} .
 $$
 
-That density is itself a total derivative, $F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} = \partial/\partial Q_\mu\,K^\mu$, with $K^\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
+That density is itself a total derivative, $\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu} = \sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,K_\mu$, with $K_\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
 
 $$
-\mathcal{L}_{aGG} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} ,
+\mathcal{L}_{aGG} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu} ,
 $$
 
-and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\partial/\partial Q_\mu\,a\,K^\mu$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
+and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,a\,K_\mu$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
 
 **Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4x\,FF^{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
 
