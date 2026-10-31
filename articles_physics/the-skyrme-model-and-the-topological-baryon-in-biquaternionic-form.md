@@ -171,7 +171,7 @@ is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the c
 $$
 \tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \cos F(r)\,e_t + \sin F(r)\,\vec u_r ,
 \qquad
-\vec u_r = \frac{x^a}{r}e_a ,
+\vec u_r = \frac{1}{r}\sum_a x_a e_a ,
 \qquad
 r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$
@@ -278,7 +278,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
 | $B = \int d^3x\,B_0$ | Winding number; baryon number |
 | $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
-| $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$ | Hedgehog ansatz |
+| $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = \sum_a x_a e_a/r$ | Hedgehog ansatz |
 | $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |
 | $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$ | Hedgehog winding number |
 | $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |

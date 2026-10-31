@@ -229,7 +229,7 @@ $$
 
 both recomputed from the component convention of the field-strength article. So the imaginary part of the biquaternion norm, which is $I_2$, *is* the Pontryagin density up to the stated constant. The framework does not need a new invariant to write the abelian topological charge; it already has the density, and the charge is its integral. This is a genuine affirmative finding: in the Maxwell sector the topological density is not foreign to the framework's invariant theory but is one of its two invariants.
 
-**The non-abelian case: no, and the reason is a rank-two limitation.** The non-abelian density is $\mathrm{Tr}(F\wedge F)$, and it needs two things that the abelian density does not: the **wedge** of two algebra-valued two-forms, and the **matrix trace** over the gauge algebra. The wedge is available — the parent packs the components into the single biquaternion $\mathcal{F}=\tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ — but the trace is not, and the biquaternion norm that produces $I_1$ and $I_2$ is the wrong bilinear for it. The biquaternion norm is a **rank-two bilinear of a single algebra element**: it pairs $\tilde{F}$ with $\tilde{F}^{\natural}$ through the quaternion product and produces one scalar, using its one algebra slot. The non-abelian density pairs *two* gauge-algebra-valued objects in a matrix trace, and the biquaternion norm has no second slot in which to do that. The point is not a matter of notation; it is visible in the transformation law. Under a gauge transformation with $\tilde U\in SU(2)$ the components transform as $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$, which does *not* extend to a conjugation of $\mathcal{F}$, because $\tilde U^{-1}$ does not commute with the basis elements $\bar{e}_\mu e_\nu$:
+**The non-abelian case: no, and the reason is a rank-two limitation.** The non-abelian density is $\mathrm{Tr}(F\wedge F)$, and it needs two things that the abelian density does not: the **wedge** of two algebra-valued two-forms, and the **matrix trace** over the gauge algebra. The wedge is available — the parent packs the components into the single biquaternion $\mathcal{F}=\tfrac12\sum_{\mu,\nu} F_{\mu\nu}\bar{e}_\mu e_\nu$ — but the trace is not, and the biquaternion norm that produces $I_1$ and $I_2$ is the wrong bilinear for it. The biquaternion norm is a **rank-two bilinear of a single algebra element**: it pairs $\tilde{F}$ with $\tilde{F}^{\natural}$ through the quaternion product and produces one scalar, using its one algebra slot. The non-abelian density pairs *two* gauge-algebra-valued objects in a matrix trace, and the biquaternion norm has no second slot in which to do that. The point is not a matter of notation; it is visible in the transformation law. Under a gauge transformation with $\tilde U\in SU(2)$ the components transform as $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$, which does *not* extend to a conjugation of $\mathcal{F}$, because $\tilde U^{-1}$ does not commute with the basis elements $\bar{e}_\mu e_\nu$:
 
 $$
 \mathcal{F}\;\longmapsto\;\mathcal{F}_2=\tfrac12\sum_{\mu\nu}\left(\tilde UF_{\mu\nu}\tilde U^{-1}\right)\bar{e}_\mu e_\nu
@@ -257,7 +257,7 @@ $$
 the second following from $\vec e_a=-i\sigma_a$ and $\mathrm{Tr}(\sigma_a\sigma_b)=2\delta_{ab}$. Write the connection and curvature as
 
 $$
-\mathcal{A}_\mu=\mathcal{A}_\mu^a T_a,
+\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a,
 \qquad
 \tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac12[\mathcal{A},\mathcal{A}].
 $$
@@ -265,12 +265,12 @@ $$
 The instanton is
 
 $$
-\boxed{\;\mathcal{A}_\mu^a(x)=2\,\eta^a_{\mu\nu}\,\frac{x_\nu}{r^2+\rho^2},
+\boxed{\;\mathcal{A}_{\mu a}(x)=2\sum_\nu\eta_{\mu\nu a}\,\frac{x_\nu}{r^2+\rho^2},
 \qquad
 r^2=x_4^2+x_1^2+x_2^2+x_3^2\;},
 $$
 
-where $\eta^a_{\mu\nu}$ are the self-dual 't Hooft symbols ($\eta^a_{jk}=\epsilon_{ajk}$ for spatial indices, $\eta^a_{4k}=\delta_{ak}$, $\eta^a_{k4}=-\delta_{ak}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}^a_{jk}=\epsilon_{ajk}$, $\bar{\eta}^a_{4k}=-\delta_{ak}$, $\bar{\eta}^a_{k4}=\delta_{ak}$) gives the anti-instanton.
+where $\eta_{\mu\nu a}$ are the self-dual 't Hooft symbols ($\eta_{jka}=\epsilon_{ajk}$ for spatial indices, $\eta_{4ka}=\delta_{ak}$, $\eta_{k4a}=-\delta_{ak}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}_{jka}=\epsilon_{ajk}$, $\bar{\eta}_{4ka}=-\delta_{ak}$, $\bar{\eta}_{k4a}=\delta_{ak}$) gives the anti-instanton.
 
 The configuration was checked by substitution, not quoted. At a generic point $x=(0.4,-1.2,0.7,1.5)$ with $\rho=0.6$, the curvature was formed by central finite differences and contracted with the epsilon symbol. The results are:
 
@@ -298,7 +298,7 @@ for a quaternion-valued $g$, with $D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\
 
 One convention point belongs here because it is a signature effect and not a detail. The parent article's curvature carries an explicit factor $i$ in the commutator term, $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, tied to the $ict'$ structure of the Lorentzian convention. On the Euclidean slice the curvature is written without it, as above, with the $i$ either dropped or absorbed into Hermitian generators and a real coupling. Keeping the Lorentzian factor literally, on anti-Hermitian $\mathcal{A}_\mu$ and with $\kappa=1$, the BPST configuration is *not* self-dual: the same numerical check gives $\max|F-\star F|\approx 0.54$ and $\max|F+\star F|\approx 0.60$. The Euclidean continuation of the framework's non-abelian curvature is therefore fixed only up to the placement of the factor $i$, and the placement that carries the instanton is the one without it in the commutator. This is the same signature split that governs the whole article, appearing once more at the level of the equations: the factor $i$ is a Lorentzian structure, and the Euclidean solution does not carry it. The exact form of the continuation — whether the factor migrates into the generators or into the coupling — is a convention question that this article leaves visible rather than resolves.
 
-The biquaternion packaging of the solution is the parent's, $\mathcal{F}=\tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$. The representative is a single biquaternion; the instanton therefore has a biquaternionic form, and the self-duality condition can be read as a condition on it. But, as the previous section showed, the *invariant* content of $\mathcal{F}$ is its matrix trace, not its biquaternion norm: the representative is the framework's object, and the topological density is not the framework's invariant. The instanton is thus expressible in the framework, while its charge is computed by the one bilinear the framework's invariant calculus does not supply.
+The biquaternion packaging of the solution is the parent's, $\mathcal{F}=\tfrac12\sum_{\mu,\nu} F_{\mu\nu}\bar{e}_\mu e_\nu$. The representative is a single biquaternion; the instanton therefore has a biquaternionic form, and the self-duality condition can be read as a condition on it. But, as the previous section showed, the *invariant* content of $\mathcal{F}$ is its matrix trace, not its biquaternion norm: the representative is the framework's object, and the topological density is not the framework's invariant. The instanton is thus expressible in the framework, while its charge is computed by the one bilinear the framework's invariant calculus does not supply.
 
 ## Solitons: What Stability Requires
 
@@ -374,9 +374,9 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |
 | $I_1=\vec E^2-c^2\vec B^2,\ I_2=\vec E\cdot\vec B$ | The two field-strength invariants |
 | $\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-\epsilon(I_1+2icI_2)$ | The biquaternion norm |
-| $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
-| $\mathcal{F}=\tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the non-abelian curvature |
-| $T_a=\tfrac12 \vec e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\epsilon_{abc}T_c$ |
+| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a}\vec e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathcal{F}=\tfrac12\sum_{\mu,\nu} F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the non-abelian curvature |
+| $T_a=\tfrac12 \vec e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\sum_c\epsilon_{abc}T_c$ |
 | $D_\mu$ | Gauge-covariant derivative |
 | $\mathrm{Tr}$ | Matrix trace on the gauge factor |
 | $\mathrm{Sc},\ \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part and the inherited trace formula |
@@ -388,6 +388,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\epsilon_{\mu\nu\rho\sigma}$ | Totally antisymmetric symbol, $\epsilon_{0123}=+1$ |
 | $g,\ \kappa=ϙ/\hbar$ | Gauge coupling and the parent's coupling convention |
 | $\rho$ | Instanton radius (a modulus) |
+| $a$ | Colour index of $\mathrm{SU}(2)$, written low; every contraction over it is an explicit sum |
 
 ## Further Reading
 

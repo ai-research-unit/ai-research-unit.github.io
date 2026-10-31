@@ -76,7 +76,7 @@ The totally antisymmetric case is the one the corpus meets physically. The spin 
 
 ## The Tetrad Postulate and the Spin Connection
 
-The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_{a\mu}$ defined by $\sum_\mu\exp(a){}_\mu e_{b\mu} = \delta^a{}_b$ and $\sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu}$, and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
+The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_{a\mu}$ defined by $\sum_\mu\exp(a){}_\mu e_{b\mu} = \delta_{ab}$ and $\sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu}$, and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
 
 $$
 \nabla_\mu \exp(a){}_\nu = \partial/\partial x_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
@@ -98,7 +98,7 @@ with $\omega_{ab\mu}(e)$ the Levi-Civita spin connection of the tetrad alone and
 
 Two exact statements were checked here, with a two-dimensional tetrad whose components depend on the time coordinate, in exact rational arithmetic.
 
-**The tetrad postulate is satisfiable with a non-flat tetrad.** For $\exp(a){}_\mu = \delta^a{}_\mu + x_0M^a{}_\mu$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu \exp(a){}_\nu = 0$ identically.
+**The tetrad postulate is satisfiable with a non-flat tetrad.** For $\exp(a){}_\mu = \delta_{a\mu} + x_0M_{a\mu}$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu \exp(a){}_\nu = 0$ identically.
 
 **The Weitzenböck connection is curvature-free and torsionful.** The connection built from the tetrad alone,
 

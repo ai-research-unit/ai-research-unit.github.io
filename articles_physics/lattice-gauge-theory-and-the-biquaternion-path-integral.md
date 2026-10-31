@@ -12,7 +12,7 @@ for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec
 
 The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its gauge law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the **physical interpretation** rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The compact gauge algebra is taken in the Hermitian-generator realization: the generators are $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, Hermitian and traceless, with the standard algebra and normalization $[T_a,T_b]=i\varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\mathcal{A}_\mu^a T_a$, the coupling is $\kappa=ϙ/\hbar$, the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{M}_-$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in Euclidean signature the $ict'$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The lattice is introduced in Euclidean signature, where the weight is $\exp(-S_W)$ with $S_W$ real and positive; the rotation that relates the two signatures is the one of the companion articles. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The compact gauge algebra is taken in the Hermitian-generator realization: the generators are $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, Hermitian and traceless, with the standard algebra and normalization $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, the coupling is $\kappa=ϙ/\hbar$, the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{M}_-$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in Euclidean signature the $ict'$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The lattice is introduced in Euclidean signature, where the weight is $\exp(-S_W)$ with $S_W$ real and positive; the rotation that relates the two signatures is the one of the companion articles. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed.
 
 - Companion article *The Functional Integral in Biquaternionic Form*, for the measure, the Gaussian evaluation and the Euclidean rotation.
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian gauge orbit and the gauge-fixing determinant.
@@ -53,7 +53,7 @@ $$
 \tilde U_\mu(n)=\exp\!\big(ia\kappa\mathcal{A}_\mu(n)\big)
 =\sum_{m=0}^{\infty}\frac{1}{m!}\big(ia\kappa\mathcal{A}_\mu(n)\big)^m ,
 $$
-which for $\mathcal{A}_\mu=\mathcal{A}_\mu^aT_a$ is a unit quaternion, $\tilde U_\mu(n)\bar{\tilde U}_\mu(n)=e_t$. The exponential is the ordinary algebra product; the fact that it lands in the group, and not merely in the algebra, is the statement that the compact factor exponentiates into the compact group, and it is the reason the link variable is bounded.
+which for $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a}T_a$ is a unit quaternion, $\tilde U_\mu(n)\bar{\tilde U}_\mu(n)=e_t$. The exponential is the ordinary algebra product; the fact that it lands in the group, and not merely in the algebra, is the statement that the compact factor exponentiates into the compact group, and it is the reason the link variable is bounded.
 
 ### The Lattice Gauge Transformation
 
@@ -111,7 +111,7 @@ The numerical check of the previous paragraph confirmed the coefficient: for a c
 $$
 S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4x\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 $$
-with the standard identification of the sum over $\mu<\nu$ with half the double sum. Matching to the Euclidean Yang–Mills density $+\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ — in this normalization $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=\tfrac12F^a_{\mu\nu}F^a_{\mu\nu}$, so this is the standard $\tfrac14F^a_{\mu\nu}F^a_{\mu\nu}$ — fixes
+with the standard identification of the sum over $\mu<\nu$ with half the double sum. Matching to the Euclidean Yang–Mills density $+\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ — in this normalization $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=\tfrac12\sum_a F_{\mu\nu a}F_{\mu\nu a}$, so this is the standard $\tfrac14\sum_a F_{\mu\nu a}F_{\mu\nu a}$ — fixes
 $$
 \beta=\frac{2N}{\kappa^2}=\frac{4}{\kappa^2}
 \qquad (N=2),
@@ -146,7 +146,7 @@ The Euclidean lattice theory has a transfer matrix: writing the four-dimensional
 
 In the framework's terms, the lattice accomplishes the following.
 
-- The formal measure $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_\mu^a$ becomes the finite product of Haar measures on the unit quaternions, with the potential $\mathcal{A}_\mu$ replaced by the group element $\tilde U_\mu=\exp(ia\kappa\mathcal{A}_\mu)$.
+- The formal measure $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_{\mu a}$ becomes the finite product of Haar measures on the unit quaternions, with the potential $\mathcal{A}_\mu$ replaced by the group element $\tilde U_\mu=\exp(ia\kappa\mathcal{A}_\mu)$.
 - The formal action becomes the sum over plaquettes, whose small-$a$ limit is the Yang–Mills density, with $\beta=2N/\kappa^2$.
 - The gauge redundancy becomes a finite-dimensional compact symmetry, so that the integral converges without gauge fixing; the gauge-fixing determinant reappears only in the continuum description.
 - The lattice spacing $a$ is a cutoff, and the limit $a\to0$ is taken with the physical scale fixed by the renormalization group.
@@ -267,11 +267,11 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, $[T_a,T_b]=i\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |
-| $\mathcal{A}_\mu=\mathcal{A}_\mu^a T_a$, $\kappa=ϙ/\hbar$ | Connection and coupling |
+| $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |
+| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, $\kappa=ϙ/\hbar$ | Connection and coupling |
 | $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
 | $a$ | Lattice spacing |
 | $\tilde U_\mu(n)=\exp(ia\kappa\mathcal{A}_\mu(n))\in SU(2)$ | Link variable (unit quaternion) |
@@ -291,6 +291,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
+| $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |
 
 ## Further Reading
 

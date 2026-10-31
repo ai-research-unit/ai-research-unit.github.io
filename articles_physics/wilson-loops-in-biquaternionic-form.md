@@ -34,10 +34,10 @@ For a non-abelian connection the potential is a Lie-algebra-valued one-form, and
 
 $$
 W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)
-= \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_\mu\varepsilon_\mu A^a_\mu T^a\,dx_\mu\right),
+= \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a} T_a\,dx_\mu\right),
 $$
 
-where the generators $T^a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
+where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
 
 ## Gauge Invariance and Stokes' Theorem
 
@@ -81,13 +81,13 @@ The trace is invariant under conjugation, and the Wilson loop is therefore gauge
 
 ## The Small Loop and the Field Strength
 
-A small loop is the local probe of the field strength. For a loop of area $a^2$ in the $\mu\nu$ plane, the holonomy expands as
+A small loop is the local probe of the field strength. For a loop of area $\ell^2$ in the $\mu\nu$ plane, the holonomy expands as
 
 $$
-\boxed{\;W(C) = 1 + i\,a^2 F_{\mu\nu} + O(a^4)\;}
+\boxed{\;W(C) = 1 + i\,\ell^2 F_{\mu\nu} + O(\ell^4)\;}
 $$
 
-in the abelian case, and in the non-abelian case as $W=1+ia^2F^a_{\mu\nu}T^a+O(a^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $a=10^{-3}$: the ratio of the deviation of the plaquette from unity to $a^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
+in the abelian case, and in the non-abelian case as $W=1+i\ell^2\sum_a F_{\mu\nu a}T_a+O(\ell^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $\ell=10^{-3}$: the ratio of the deviation of the plaquette from unity to $\ell^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
 
 Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, its square is a central element,
 
@@ -254,7 +254,7 @@ The Wilson loop is the trace of the holonomy of the gauge connection around a cl
 
 For the abelian theory the loop is $\exp(i\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
-For a small loop the holonomy expands as $W=1+ia^2F_{\mu\nu}+O(a^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,
+For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,
 
 $$
 \tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
@@ -270,16 +270,18 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $\tilde{A}=\sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu$ | Connection one-form; $\tilde{A}_\mu\in\mathbb{M}_-$ |
 | $W(C)=\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Abelian Wilson loop; a phase |
 | $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy (group element), non-abelian |
-| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A^a_\mu T^a dx_\mu)$ | Non-abelian Wilson loop |
+| $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(i\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a}T_a dx_\mu)$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
-| $T^a=i\vec e_a\in\mathbb{M}_+$ | Gauge generators realized in the informational sector |
+| $T_a=i\vec e_a\in\mathbb{M}_+$ | Gauge generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu=\frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}d\Sigma_{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
-| $W=1+i a^2F_{\mu\nu}+O(a^4)$ | Small-loop expansion; exponentiated field strength |
+| $W=1+i \ell^2F_{\mu\nu}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |
 | $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$ | Field strength biquaternion |
 | $\tilde{F}^2=(E^2-H^2)e_t+2i(E\cdot H)e_t$ | Central element; its two scalar parts are the Maxwell invariants (verified) |
 | $\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$ | Perimeter law (screening) / area law (confinement) |
 | $\sigma$ | String tension |
+| $\ell$ | Side length of the small loop; its area is $\ell^2$ |
+| $a$ | Colour index of the gauge algebra, written low; every contraction over it is an explicit sum. The loop size is $\ell$. |
 
 ## Further Reading
 

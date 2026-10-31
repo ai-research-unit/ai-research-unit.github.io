@@ -46,7 +46,7 @@ $$
 \Lambda_8 = -\tfrac1{\sqrt3}\bigl(\alpha_1^\dagger\alpha_1+\alpha_2^\dagger\alpha_2-2\alpha_3^\dagger\alpha_3\bigr),
 $$
 
-satisfy $[\tfrac12\Lambda_a,\tfrac12\Lambda_b] = if^{abc}\tfrac12\Lambda_c$ with the standard structure constants, coincide with the octonionic automorphism generators fixing $e_7$, and commute with $N$ and with $e_7$. The algebra $\mathrm{su}(3)\oplus\mathrm{u}(1)$ so obtained acts on the complexified six-space $\mathbb{C}^6$, where the generators are the antisymmetric bilinears in the $\alpha$ and $\alpha^\dagger$, and the representation of $\mathrm{su}(3)\oplus\mathrm{u}(1)$ on that six-space will be needed below.
+satisfy $[\tfrac12\Lambda_a,\tfrac12\Lambda_b] = i\sum_c f_{abc}\tfrac12\Lambda_c$ with the standard structure constants, coincide with the octonionic automorphism generators fixing $e_7$, and commute with $N$ and with $e_7$. The algebra $\mathrm{su}(3)\oplus\mathrm{u}(1)$ so obtained acts on the complexified six-space $\mathbb{C}^6$, where the generators are the antisymmetric bilinears in the $\alpha$ and $\alpha^\dagger$, and the representation of $\mathrm{su}(3)\oplus\mathrm{u}(1)$ on that six-space will be needed below.
 
 ## The Minimal Left Ideal and the Charges of One Generation
 
@@ -195,6 +195,7 @@ The complex octonionic chain algebra is $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; F
 | $N = \sum_i\alpha_i^\dagger\alpha_i$ | Number operator; eigenvalues $0,1,2,3$ with multiplicities $1,3,3,1$ |
 | $Ϙ = \tfrac13 N$ | Charge; values $0,\tfrac13,\tfrac23,1$ on one ideal |
 | $\Lambda_1,\dots,\Lambda_8$ | Generators of the intrinsic $\mathrm{su}(3)$ |
+| $f_{abc}$ | Structure constants of $\mathrm{su}(3)$, all three indices low |
 | $\Pi = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ | Primitive idempotent; rank one |
 | $S^u = \mathrm{Cl}(6)\Pi$, $S^{u,c} = \mathrm{Cl}(6)\Pi^c$ | The two eight-dimensional minimal left ideals |
 | $\mathbf 6 = \mathbf 3_{2/3}\oplus\bar{\mathbf 3}_{-2/3}$ | Branching of the six-space under $\mathrm{su}(3)\oplus\mathrm{u}(1)$ |

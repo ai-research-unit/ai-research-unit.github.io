@@ -8,7 +8,7 @@ This article computes the two-sided family in the two displays. It gives the six
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $B=\mathsf M_2(\tilde Q)$ is its $2\times2$ matrix, with $\det B=\langle\tilde Q\rangle_{\natural}$. The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, so that $L_{\tilde Q}=I_2\otimes B$ and $R_{\tilde P}=B_P^{\mathsf T}\otimes I_2$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
-**Boundaries.** The operator statements are *Two-Sided Operators on the Biquaternion Algebra*; the two one-sided families are *Matrix Representations : The Left Regular Operators* and *Matrix Representations : The Right Regular Operators*; the Hermitian sandwich is *Matrix Representations : The Hermitian Sandwich*; the frame change is *Matrix Representations : The Models and the Change of Frame*; the gamma frame in the coefficient display is *The Two-Sided Operators and the Spin Group*.
+**Boundaries.** The operator statements are *Two-Sided Operators on the Biquaternion Algebra*; the two one-sided families are *Matrix Representations : The Left Regular Operators* and *Matrix Representations : The Right Regular Operators*; the frame change is *Matrix Representations : The Models and the Change of Frame*; the gamma frame in the coefficient display is *The Two-Sided Operators and the Spin Group*.
 
 ## Common Aspects
 
@@ -456,7 +456,6 @@ The two-sided operator $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ has matrix $
 
 - [Matrix Representations : The Left Regular Operators](matrix-representations-the-left-regular-operators.html), for the left family
 - [Matrix Representations : The Right Regular Operators](matrix-representations-the-right-regular-operators.html), for the right family
-- [Matrix Representations : The Hermitian Sandwich](matrix-representations-the-hermitian-sandwich.html), for $\tilde QX\tilde Q^{*}$
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the frames
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operator statements
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and the one-sided identities

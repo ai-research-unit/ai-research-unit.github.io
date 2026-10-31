@@ -201,10 +201,10 @@ where $C_2(G)$ is the quadratic Casimir of the adjoint representation and $T(r)$
 The group-theory ingredient is the adjoint Casimir, and it is worth checking rather than quoting. For $SU(N)$ the structure constants satisfy
 
 $$
-\sum_{c,d} f^{acd}f^{bcd} = C_2(G)\,\delta^{ab} = N\,\delta^{ab}.
+\sum_{c,d} f_{acd}f_{bcd} = C_2(G)\,\delta_{ab} = N\,\delta_{ab}.
 $$
 
-This was recomputed explicitly in the companion: from the antisymmetric symbol for $SU(2)$ one gets $2\,\delta^{ab}$, and from the Gell-Mann structure constants $f^{abc} = -\frac{i}{4}\mathrm{Tr}([\lambda^a,\lambda^b]\lambda^c)$ for $SU(3)$ one gets $3\,\delta^{ab}$. The two cases $N = 2$ and $N = 3$ agree with $C_2(G) = N$; the $SU(3)$ value is the one that motivates the formula in QCD, and the $SU(2)$ value was computed as an independent check, so that the formula is not tested only on the case that suggested it.
+This was recomputed explicitly in the companion: from the antisymmetric symbol for $SU(2)$ one gets $2\,\delta_{ab}$, and from the Gell-Mann structure constants $f_{abc} = -\frac{i}{4}\mathrm{Tr}([\lambda_a,\lambda_b]\lambda_c)$ for $SU(3)$ one gets $3\,\delta_{ab}$. The two cases $N = 2$ and $N = 3$ agree with $C_2(G) = N$; the $SU(3)$ value is the one that motivates the formula in QCD, and the $SU(2)$ value was computed as an independent check, so that the formula is not tested only on the case that suggested it.
 
 For pure $SU(N)$ Yang–Mills, $b_0 = \frac{11}{3}N > 0$, so
 

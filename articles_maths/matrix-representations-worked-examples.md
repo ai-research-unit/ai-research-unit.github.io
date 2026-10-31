@@ -21,9 +21,9 @@ Q_x=\tfrac{i(b+c)}{2},\qquad
 Q_y=\tfrac{c-b}{2},\qquad
 Q_z=\tfrac{i(a-d)}{2}.
 $$
-The regular matrix is $X=L(\tilde Q)=\operatorname{diag}(A,A)$ in the Peirce frame. The variable of the characteristic polynomial is $t$, and the eigenvalues of $A$ are $\lambda_\pm$.
+The $4\times4$ regular matrix is $X=L(\tilde Q)=\operatorname{diag}(A,A)$ in the Peirce frame. The variable of the characteristic polynomial is $t$, and the eigenvalues of $A$ are $\lambda_\pm$.
 
-**Boundaries.** The construction is *Matrix Representations : The Models and the Change of Frame*; the spectral theory is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*; the polar factors are *Matrix Representations : The Polar Decomposition of a Matrix*; the rank-one theory is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the group theory is *Matrix Representations : GL2, SL2 and the Determinant*.
+**Boundaries.** The construction is *Matrix Representations : The Models and the Change of Frame*; the spectral theory is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*; the polar factors are *Matrix Representations : The Polar Decomposition of a Matrix*; the rank-one theory is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*.
 
 ## Common Aspects
 
@@ -107,7 +107,7 @@ The coordinates are the four complex numbers $Q_\mu$ of the block, not the four 
 
 **The rank reading.** The singular example and the rank-one example both have determinant zero. The first is a Hermitian projector up to scale, the second a non-Hermitian idempotent up to scale. The difference is the normality flag.
 
-**The group reading.** The $*$-unitary example lies in $SU(2)$; the normal example is $\sqrt2$ times an element of $SU(2)$; the Jordan block lies in $SL_2(\mathbb{C})$; the distinct-spectrum matrix has determinant $-2$ and is not in $SL_2$. The scalar is central.
+**The determinant reading.** The $*$-unitary example is unitary of determinant one; the normal example is $\sqrt2$ times a unitary matrix of determinant one; the Jordan block has determinant one; the distinct-spectrum matrix has determinant $-2$. The scalar is central.
 
 **The doubling in one line.** The regular column has the doubled trace, the squared determinant, the doubled rank and each eigenvalue twice; the minimal polynomial and the flags are unchanged.
 
@@ -165,7 +165,7 @@ $$
 p_A(t)=t^2-\sqrt2\,t+1,\qquad
 \lambda_\pm=e^{\pm i\pi/4}.
 $$
-The eigenvalues have modulus one. The matrix lies in $SU(2)$.
+The eigenvalues have modulus one. The matrix is unitary of determinant one.
 
 ### The Hermitian Matrix
 
@@ -183,7 +183,7 @@ $$
 p_A(t)=t^2-2t+2,\qquad
 \lambda_\pm=1\pm i .
 $$
-The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a matrix in $SU(2)$.
+The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a unitary matrix of determinant one.
 
 ## The Peirce Frame
 
@@ -197,13 +197,13 @@ The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $
 
 **Regular model.** $X=J\oplus J$ has $\operatorname{Tr}X=4$, $\det X=1$, $p_X(t)=(t-1)^4$ and $m_X(t)=(t-1)^2$; the rank is four. The Jordan form has two blocks of size two, not one block of size four.
 
-**Reading.** The block is neither diagonalisable nor normal. It lies in $SL_2(\mathbb{C})$ and its regular image in the image of $SL_2$.
+**Reading.** The block is neither diagonalisable nor normal, and both the entry block and the regular matrix have determinant one.
 
 ### The Distinct Eigenvalues
 
 **Regular model.** $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=10$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice. The projectors are $\operatorname{diag}(\Pi_\pm,\Pi_\pm)$, of rank two.
 
-**Reading.** The matrix is diagonalisable and not normal. It lies in $GL_2(\mathbb{C})$ with determinant $-2$, so it is not in $SL_2$.
+**Reading.** The matrix is diagonalisable and not normal. Its entry matrix is invertible with determinant $-2$.
 
 ### The Singular Matrix
 
@@ -221,23 +221,23 @@ The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $
 
 **Regular model.** $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2\sqrt2$, $\det X=1$, the same minimal polynomial, and each eigenvalue twice. It is $*$-unitary.
 
-**Reading.** The matrix is normal and not Hermitian. Its polar decomposition is $P=\mathrm I_2$ and $V=A$.
+**Reading.** The matrix is normal and not Hermitian. Its polar decomposition is $P=\mathrm I_4$ and $V=X$.
 
 ### The Hermitian Matrix
 
 **Regular model.** $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2$, $\det X=16$, the same minimal polynomial, and each eigenvalue twice. It is Hermitian of rank four.
 
-**Reading.** The matrix is Hermitian and normal. Its polar factor is $P=\lvert A\rvert$ and its unitary factor is the sign of $A$.
+**Reading.** The matrix is Hermitian and normal. Its polar factors are the doubled entry factors, $P=\operatorname{diag}(\lvert A\rvert,\lvert A\rvert)$ and $V=\operatorname{diag}(\operatorname{sign}A,\operatorname{sign}A)$.
 
 ### The Normal Matrix
 
 **Regular model.** $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=4$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice.
 
-**Reading.** The matrix is the example that separates normality from the two stronger flags. Its polar decomposition is $P=\sqrt2\,\mathrm I_2$ and $V=A/\sqrt2\in SU(2)$.
+**Reading.** The matrix is the example that separates normality from the two stronger flags. Its polar decomposition is $P=\sqrt2\,\mathrm I_4$ and $V=X/\sqrt2$, which is unitary of determinant one.
 
 ## Summary
 
-The eight matrices cover the three spectral types and the three normality flags. The scalar has minimal polynomial of degree one; the Jordan block is the only non-diagonalisable case and the only non-normal case with a repeated eigenvalue; the distinct-spectrum, singular, rank-one, $*$-unitary, Hermitian and normal matrices are diagonalisable, and among them the rank-one and distinct-spectrum examples are not normal. The singular example is a scaled Hermitian projector and the rank-one example a scaled non-Hermitian idempotent, so the two singular cases differ exactly by the normality flag. In the regular model every trace, determinant, rank and eigenvalue multiplicity is doubled, and the minimal polynomial and the flags are read blockwise.
+The eight matrices cover the three spectral types and the three normality flags. The scalar has minimal polynomial of degree one; the Jordan block is the only non-diagonalisable case and the only non-normal case with a repeated eigenvalue; the distinct-spectrum, singular, rank-one, $*$-unitary, Hermitian and normal matrices are diagonalisable, and among them the rank-one and distinct-spectrum examples are not normal. The singular example is a scaled Hermitian projector and the rank-one example a scaled non-Hermitian idempotent, so the two singular cases differ exactly by the normality flag. In the regular model the trace, the rank and every eigenvalue multiplicity are doubled, the determinant is squared, and the minimal polynomial and the flags are read blockwise.
 
 ## Summary of Notation
 

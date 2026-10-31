@@ -20,7 +20,7 @@ The Peirce frame is written in the corpus order
 $$
 \mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
 $$
-so that $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.
+so that the $4\times4$ regular matrix is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
 **Boundaries.** The operator statements are *The Left Regular Operators on the Biquaternion Algebra*; the Peirce change is *Matrix Representations : The Models and the Change of Frame*; the $2\times2$ model is *Matrix Representations : The Product, the Trace and the Determinant*; the right family is *Matrix Representations : The Right Regular Operators*; the rank stratification is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*.
 

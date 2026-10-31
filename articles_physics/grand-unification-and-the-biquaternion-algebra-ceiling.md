@@ -76,7 +76,7 @@ $$
 and the two summands are the algebra's non-abelian and abelian gauge algebras. A gauge field valued in $\mathbb M_-$ is, in components,
 
 $$
-\mathcal A_\mu=\mathcal A_\mu^aT_a+\mathcal A_\mu^0T_0 ,
+\mathcal A_\mu=\sum_a\mathcal A_{\mu a}T_a+\mathcal A_{\mu 0}T_0 ,
 \qquad
 T_a=\tfrac12\vec e_a,\quad T_0=\tfrac12ie_t ,
 $$

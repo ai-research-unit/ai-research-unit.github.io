@@ -4,7 +4,7 @@
 
 A spectrally regular biquaternion has two distinct eigenvalues, and its matrix can be put in diagonal form by a change of basis. The change is not the same object in the two displays. In the $2\times2$ model it is one matrix $\mathsf C_Q$, built from two eigenvectors. In the $4\times4$ regular model it is a matrix of four columns, two for each eigenvalue, and the two eigenvalues are repeated. The repetition is the only numerical difference: the $4\times4$ diagonalising matrix is the $2\times2$ one doubled inside each eigenspace.
 
-This article develops the spectral matrix units, the diagonalising matrix in each display, the determinant of the change, its freedom, the normal case and the transitions between two elements. It is the regular counterpart of *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+This article develops the spectral matrix units, the diagonalising matrix in each display, the determinant of the change, its freedom, the normal case and the transitions between two elements. It is the regular counterpart of the degenerate case.
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are
 $$
@@ -16,7 +16,7 @@ $$
 $$
 where $\vec\Upsilon_-$ and $\vec\Upsilon_+$ are the two spectral nilpotents. This is the order in which the first and last elements are the corners and the two middle elements are mixed. The fixed Peirce basis of the corpus is the transposition of the two middle elements of $\mathcal E$.
 
-**Boundaries.** The construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the projectors are *Matrix Representations : The Spectral Projectors*; the Peirce frame is *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*; the Jordan case is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*; the normal matrices are *Eigenvalues and Diagonalisation*.
+**Boundaries.** The construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the projectors are *Matrix Representations : The Spectral Projectors*; the Peirce frame is *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*; the degenerate case is treated separately; the normal case is treated here.
 
 ## Common Aspects
 
@@ -184,7 +184,6 @@ A spectrally regular element has an eigenbasis $\mathcal E=(\tilde\Pi_+,\vec\Ups
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the frames and the change law
 - [Matrix Representations : The Spectral Projectors](matrix-representations-the-spectral-projectors.html), for the projectors and the nilpotents
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the planes and the corner order
-- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the degenerate case
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the matrix theorem
 - [Nilpotents](nilpotents.html), for the spectral nilpotents

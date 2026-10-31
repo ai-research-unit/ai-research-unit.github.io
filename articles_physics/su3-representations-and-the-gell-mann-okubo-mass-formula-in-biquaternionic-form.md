@@ -48,7 +48,7 @@ A^{2}_{\ 2}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
 A^{3}_{\ 3}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$
 
-the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The pair is mixed, $i$ fundamental and $k$ antifundamental: the height records the representation, not a frame slot. It is what carries the trace $A^{k}_{\ k}$, the matrix product $A^{i}_{\ k}A^{k}_{\ l}$ and the invariant mixed delta $\delta^{i}_{\ k}$, which is not a metric. The commutation relations are
+the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The pair is mixed, $i$ fundamental and $k$ antifundamental: the height records the representation, not a frame slot. It is what carries the trace $\sum_k A^{k}_{\ k}$, the matrix product $\sum_k A^{i}_{\ k}A^{k}_{\ l}$ and the invariant mixed delta $\delta^{i}_{\ k}$, which is not a metric. The commutation relations are
 
 $$
 \bigl[A^{i}_{\ k},A^{l}_{\ m}\bigr] = \delta^{i}_{\ m}A^{l}_{\ k}-\delta^{l}_{\ k}A^{i}_{\ m}.
@@ -57,7 +57,7 @@ $$
 This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives
 
 $$
-a^{i}_{\ j} = A^{i}_{\ j}-\tfrac12\delta^{i}_{\ j}A^{k}_{\ k},
+a^{i}_{\ j} = A^{i}_{\ j}-\tfrac12\delta^{i}_{\ j}\sum_k A^{k}_{\ k},
 $$
 
 whose units satisfy the $\mathfrak{su}(2)$ relations, so **I-spin** is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A^{1}_{\ 1}$ and $A^{3}_{\ 3}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins
@@ -132,10 +132,10 @@ $$
 m^2 = m_0^2+\delta m^2,
 $$
 
-where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = D^{a}_{\ b}Z^{b}_{\ a}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
+where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,k}D^{i}_{\ k}Z^{k}_{\ i}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
 
 $$
-D^{a}_{\ b} = \lambda\delta^{a}_{\ b}\mathbf{1}+\mu A^{a}_{\ b}+\nu A^{a}_{\ c}A^{c}_{\ b}+\dots,
+D^{i}_{\ k} = \lambda\delta^{i}_{\ k}\mathbf{1}+\mu A^{i}_{\ k}+\nu\sum_l A^{i}_{\ l}A^{l}_{\ k}+\dots,
 $$
 
 $$
@@ -144,7 +144,7 @@ Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
 \qquad |C_2|\ll|C| .
 $$
 
-The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m_2^2=\xi_2A^{1}_{\ 1}+\eta_2A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi_2=\theta\xi$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
+The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta\sum_l A^{3}_{\ l}A^{l}_{\ 3}$ and $\delta m_2^2=\xi_2A^{1}_{\ 1}+\eta_2\sum_l A^{1}_{\ l}A^{l}_{\ 1}$ with $\xi_2=\theta\xi$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
 
 $$
 m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)
@@ -261,10 +261,11 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 | $T^{a_1\dots a_n}_{b_1\dots b_m}$ | Traceless bisymmetric tensor carrying the representation |
 | $N(n,m)=\tfrac12(n+1)(m+1)(n+m+2)$ | Degree of the representation |
 | $A^{i}_{\ k}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
+| $i,k,l$ | flavour representation slots of a 3×3 matrix: $i$ fundamental, $k$ antifundamental; not frame slots |
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |
 | $Y,Ϙ,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
 | $m^2=m_0^2+\delta m^2+\delta m_2^2$ | Mass operator split into symmetric and breaking parts |
-| $Z$, $D^{a}_{\ b}$ | $*$-Unitary field and $*$-unitary moment of the Zeeman analogy |
+| $Z$, $D^{i}_{\ k}$ | $*$-Unitary field and $*$-unitary moment of the Zeeman analogy |
 | $\theta$ | Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$ |
 | $m_\Xi+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$ | Gell-Mann–Okubo relation, baryon octet |
 | $n-m\equiv0\pmod3$ | Admissibility condition for a hadron supermultiplet |

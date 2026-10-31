@@ -4,13 +4,13 @@
 
 The trace of the $2\times2$ model is twice the scalar part and the trace of the $4\times4$ model is four times it. The determinant of the first is the quaternionic norm and the determinant of the second is its square. The norm itself survives in the $4\times4$ display as a quarter-trace of a word, not as the determinant.
 
-**The subject.** This article develops the four algebraic norms as matrix invariants, the characteristic and minimal polynomials in the two sizes, and the singular locus. The basic trace and determinant are *Matrix Representations : The Product, the Trace and the Determinant*; this article uses them and goes to the finer invariants.
+**The subject.** This article develops the four algebraic norms as matrix invariants, the characteristic and minimal polynomials in the two sizes, and the singular set. The basic trace and determinant are *Matrix Representations : The Product, the Trace and the Determinant*; this article uses them and goes to the finer invariants.
 
 **The one law.** Every difference between the two sizes follows from the block form $\mathsf M_4^{L}=\mathrm I_2\otimes\mathsf M_2$: the trace doubles, the determinant squares, the characteristic polynomial squares, and the minimal polynomial does not.
 
 **Conventions.** The algebra is that of *The Biquaternion Algebra*; the displays and the change $C_{\Pi}$ are those of *Matrix Representations : The Models and the Change of Frame*. Write $\mathsf{M}_4^{L}(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.
 
-**Boundaries.** The determinant as a group homomorphism is *Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the rank stratification is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the four forms are *Matrix Representations : The Four Words and the Four Traces*; the basic invariants are *Matrix Representations : The Product, the Trace and the Determinant*.
+**Boundaries.** The four forms are *Matrix Representations : The Four Words and the Four Traces*; the basic invariants are *Matrix Representations : The Product, the Trace and the Determinant*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of *Matrix Representations : The Models and the Change of Frame*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -31,7 +31,7 @@ $$
 \arg\det M=2\arg\langle\tilde Q\rangle_{\natural}.
 $$
 
-**Invertibility and the null cone.** The matrix is invertible exactly when the norm is nonzero, and a nonzero singular regular matrix has rank two, never rank one. The singular nonzero elements form the null cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, with the zero matrix as its apex. The cone is the determinantal variety of the regular model.
+**Invertibility and the null cone.** The matrix is invertible exactly when the norm is nonzero, and a nonzero singular regular matrix has rank two, never rank one. The singular nonzero elements form the null cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, with the zero matrix as its apex. The cone is the singular set of the regular model.
 
 **The four norms.** The plain, quaternionic, Hermitian and Krein norms are the scalar parts of the products $\tilde Q^2$, $\tilde Q^{\natural}\tilde Q$, $\tilde Q^{*}\tilde Q$ and $\tilde Q^{\natural}\tilde Q^{*}$:
 
@@ -127,7 +127,7 @@ $$
 
 and likewise for $M^{\mathsf T}M$, $M^{\dagger}M$ and $M^{\mathsf T}M^{\dagger}$.
 
-**The singular locus.** The singular nonzero matrices are exactly the block matrices with $\det B=0$ and $B\neq0$, of rank two. The null cone is the set $\{\langle\tilde Q\rangle_{\natural}=0\}$, and the block display shows its cause: the two identical blocks vanish together, so the rank drops from four to two and never to one or three.
+**The singular set.** The singular nonzero matrices are exactly the block matrices with $\det B=0$ and $B\neq0$, of rank two. The null cone is the set $\{\langle\tilde Q\rangle_{\natural}=0\}$, and the block display shows its cause: the two identical blocks vanish together, so the rank drops from four to two and never to one or three.
 
 ## Summary
 
@@ -146,7 +146,5 @@ The trace is $4Q_t$ and the determinant is the squared norm $\langle\tilde Q\ran
 ## Further Reading
 
 - [Matrix Representations : The Four Words and the Four Traces](matrix-representations-the-four-words-and-the-four-traces.html), for the trace normalization
-- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the null cone
-- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the groups
 - [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the basic invariants
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norms

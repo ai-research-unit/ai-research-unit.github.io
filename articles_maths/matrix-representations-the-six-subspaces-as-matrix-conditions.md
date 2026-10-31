@@ -4,7 +4,7 @@
 
 **The subject.** The six remarkable subspaces of the biquaternion algebra are the fixed and anti-fixed spaces of the four conjugations and the two halves of the scalar--vector split. This article writes each one as a condition on a matrix, in the $2\times2$ entry model and in the $4\times4$ operator model.
 
-**What changes with the display.** In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so each condition characterises the subspace among all matrices. In the $4\times4$ model the image is a proper subalgebra of complex dimension four inside a sixteen-dimensional algebra, so each condition must be intersected with the image. In the Peirce frame the $4\times4$ condition is a block condition, because $\mathsf M_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$.
+**What changes with the display.** In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so each condition characterises the subspace among all matrices. In the $4\times4$ model the image is a proper subalgebra of complex dimension four inside a sixteen-dimensional algebra, so each condition must be intersected with the image. In the block frame the $4\times4$ condition is a block condition, because $\mathsf M_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$.
 
 **The six conditions in one line.** Scalar, traceless, real, purely imaginary, Hermitian, anti-Hermitian: the six words are the same in both sizes, and only their scope changes.
 
@@ -15,9 +15,9 @@ $$
 \tilde Q^{*}=\overline{\tilde Q^{\natural}},\qquad
 \tilde Q^{\flat}=-\tilde Q^{*}.
 $$
-The models and the change $C_{\Pi}$ are those of *Matrix Representations : The Models and the Change of Frame*.
+The models and the frame change $C_{\Pi}$ are those of *Matrix Representations : The Models and the Change of Frame*.
 
-**Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *Matrix Representations : Trace, Determinant and the Biquaternion Norm*; the sandwich action on them is *Matrix Representations : The Hermitian Sandwich*.
+**Boundaries.** The subspaces are defined in *The Six Subspaces*; their intersections are *The Subspaces and Their Relations*; the matrix conditions are the subject of this article.
 
 ## Common Aspects
 
@@ -56,7 +56,7 @@ The first is the trace decomposition, of real dimensions two and six. The second
 
 **The scalar and the vector.** The centre is the line $M=\lambda\mathrm I_4$, of real dimension two, the only commutative subspace and the only one of real dimension two. The vector subspace is $\operatorname{Tr}M=0$, which inside the image is equivalent to $M^{\mathsf T}=-M$: the transpose is ${}^{\natural}$, and $Q^{\natural}=-Q$ exactly when $Q_t=0$. Its image is the three-complex-dimensional space of regular matrices with zero scalar part, of real dimension six. It is closed under the commutator and not under the product.
 
-**The two chiral halves.** The three matrices $L_x,L_y,L_z$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two chiral halves of $\mathfrak{so}_4(\mathbb{C})$. The other half is not in the image. In $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional; the image selects a three-dimensional subspace, the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$.
+**The two halves of $\mathfrak{so}_4(\mathbb{C})$.** The three matrices $L_x,L_y,L_z$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two halves. The other half is not in the image. In $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional; the image selects a three-dimensional subspace, the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$.
 
 **The real and the imaginary.** Complex conjugation is entrywise in the coefficient frame, so $\mathbb{H}_{\mathbb{B}}$ is the set of regular matrices with real entries and $i\mathbb{H}_{\mathbb{B}}$ the set with purely imaginary entries. Both are four-real-dimensional. The first is closed under multiplication and is a division algebra; the second is not closed, because the product of two purely imaginary matrices is real. The trace is $4q_t$ on the first and $4iq'_t$ on the second; the determinant of the entry image is $\sum q_\mu^2$ on the first and $-\sum(q'_\mu)^2$ on the second, non-negative and non-positive respectively and zero only at the origin.
 
@@ -64,7 +64,7 @@ The first is the trace decomposition, of real dimensions two and six. The second
 
 ## The Entry Model
 
-**The six sets.** In the entry model, whose standard basis is the $z$ Peirce pair, the six subspaces are:
+**The six sets.** In the entry model, whose standard basis is the matrix-unit basis, the six subspaces are:
 
 $$
 \begin{aligned}
@@ -79,15 +79,15 @@ $$
 
 The entry model is an isomorphism onto $M_2(\mathbb{C})$, so each condition is exact among all matrices: the scalar matrices are the centre, the traceless matrices are $\mathfrak{sl}_2(\mathbb{C})$, and the quaternion pattern is the conjugate-linear form of the real quaternions. The two Hermitian halves are the usual Hermitian and anti-Hermitian matrices.
 
-**The determinants.** On the six rows the determinant $Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$. The signs separate the four real forms: the quaternion subspace has a non-negative determinant, the anti-quaternion subspace a non-positive one, and the two Hermitian subspaces take both signs.
+**The determinants.** On the six rows the determinant $Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$. The signs separate the four subspaces: the quaternion subspace has a non-negative determinant, the anti-quaternion subspace a non-positive one, and the two Hermitian subspaces take both signs.
 
-## The Peirce Frame
+## The Block Frame
 
-**The block form.** In the Peirce frame the regular matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. Every condition of the entry model is imposed on $B$ and repeated twice: $B=\lambda\mathrm I_2$, $\operatorname{tr}B=0$, $B=\bar B$, $B=-\bar B$, $B=B^{\dagger}$, $B=-B^{\dagger}$. The carrier is two copies of the $2\times2$ space, and the two planes carry the same condition.
+**The block form.** In the block frame the regular matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. Every condition of the entry model is imposed on $B$ and repeated twice: $B=\lambda\mathrm I_2$, $\operatorname{tr}B=0$, $B=\bar B$, $B=-\bar B$, $B=B^{\dagger}$, $B=-B^{\dagger}$. The carrier is two copies of the $2\times2$ space, and the two planes carry the same condition.
 
 **The invariants.** The trace is twice the entry trace, $4Q_t$, and the determinant is the square of the entry determinant, $\langle\tilde Q\rangle_{\natural}^2$. The real dimensions are those of the entry model, because the block is repeated and adds no parameter: $2,6,4,4,4,4$.
 
-**The chiral reading.** The three matrices $\mathsf M_4^{L}(\vec e_k)$ act on each plane by the corresponding Pauli matrix and are block-diagonal. Their span is the diagonal copy of the chiral half, and the other chiral half of $\mathfrak{so}_4(\mathbb{C})$ is the off-diagonal copy, which is not in the left image. This is the block form of the statement that the image selects one half.
+**The two halves of $\mathfrak{so}_4(\mathbb{C})$.** The three matrices $\mathsf M_4^{L}(\vec e_k)$ act on each plane by the corresponding Pauli matrix and are block-diagonal. Their span is the diagonal copy of that half, and the other half of $\mathfrak{so}_4(\mathbb{C})$ is the off-diagonal copy, which is not in the left image. This is the block form of the statement that the image selects one half.
 
 ## Summary
 
@@ -106,5 +106,3 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 
 - [The Six Subspaces](the-six-subspaces.html), for the definitions
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
-- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the matrix involutions
-- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant

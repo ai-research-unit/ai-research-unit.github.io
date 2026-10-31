@@ -4,7 +4,7 @@
 
 A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. In the $2\times2$ model the four corner coordinates are the four entries of the matrix, and the four corner elements are the four matrix units. In the $4\times4$ regular model the same four elements become rank-two matrices, and the corner matrix is duplicated: the regular matrix is $\operatorname{diag}(B,B)$ in the Peirce frame. The duplication is the two spinor planes, and the $2\times2$ model is the compression of the regular matrix to one of them.
 
-This article develops the Peirce table, the corner coordinates, the regular matrix as the duplicated corner matrix, the system of matrix units, the two spinor planes, the left and right actions, the column spaces of the idempotents and the nilpotents. It uses no form and no module; the only invariant it reads is the determinant of the corner matrix.
+This article develops the Peirce table, the corner coordinates, the regular matrix as the duplicated corner matrix, the system of matrix units, the two spinor planes, the left and right actions, the column spaces of the idempotents and the nilpotents. It uses no form; the only invariant it reads is the determinant of the corner matrix.
 
 **Conventions.** The algebra and the models are those of *Matrix Representations : The Models and the Change of Frame*. The standard pair and the standard nilpotents are
 $$
@@ -22,9 +22,9 @@ $$
 \mathsf M_4^L(\tilde Q)=\operatorname{diag}\bigl(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q)\bigr)
 =I_2\otimes\mathsf M_2(\tilde Q).
 $$
-The coefficient basis is the conjugate display, related by the Peirce change $C_{\Pi}$.
+The block frame of *Matrix Representations : The Models and the Change of Frame* is this Peirce frame; the two names denote the same ordered basis. The coefficient basis is the conjugate display, related by the Peirce change $C_{\Pi}$.
 
-**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the right regular matrix is *Matrix Representations : The Centraliser and the Double Centraliser*; the diagonalising matrix is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix*.
+**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the left and right actions are computed in this article.
 
 ## Common Aspects
 
@@ -144,7 +144,7 @@ a_{21}&a_{22}&0&0\\
 \end{pmatrix}
 =\operatorname{diag}(B,B).
 $$
-The two blocks are identical. The duplication is the regular representation: every element acts on the algebra by left multiplication, and the algebra is the direct sum of two copies of the same module.
+The two blocks are identical. The duplication is the regular representation: every element acts on the algebra by left multiplication, and the algebra is the direct sum of two copies of the same plane.
 
 **The rank-two units.** Each Peirce element goes to
 $$
@@ -160,7 +160,7 @@ of rank two, idempotent or square-zero, spanning four complex dimensions. The re
 
 **The two planes and the actions.** The two blocks are $S_+$ and $S_-$. Left multiplication acts on each by the same $B$ and never mixes them; right multiplication by $\vec\Upsilon_-$ sends $S_+$ to $S_-$ and kills $S_-$, and right multiplication by $\vec\Upsilon_+$ does the reverse. The two maps are inverse on the planes. The column space of $I_2\otimes E_{11}$ is the right Peirce row, spanned by the first and third Peirce coordinates, not the left plane $S_+$; the two groupings of the four entries by columns and by rows are different, and the first column and the first row meet in $E_{11}$ and together span a three-dimensional space that is neither a left plane nor a right plane.
 
-**The nilpotents.** The nilpotents are $\mu\,I_2\otimes E_{12}$ and $\mu\,I_2\otimes E_{21}$, of rank two, square-zero, traceless, and conjugate to the direct sum of two Jordan blocks, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.
+**The nilpotents.** The nilpotents are $\mu\,I_2\otimes E_{12}$ and $\mu\,I_2\otimes E_{21}$, of rank two, square-zero, traceless, and conjugate to the direct sum of two square-zero blocks, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.
 
 ## Summary
 
@@ -181,9 +181,8 @@ The four Peirce elements are one system of $2\times2$ matrix units; in the regul
 
 ## Further Reading
 
-- [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the models, the Peirce change and the compression
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the regular matrix and the Peirce frame
-- *Matrix Representations : The Centraliser and the Double Centraliser*, for the right regular matrix
+- [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the models, the frame change $C_{\Pi}$ and the compression
+- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the regular matrix and the block frame
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the planes and the exchange
 - [Nilpotents](nilpotents.html), for the nilpotent cone

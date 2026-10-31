@@ -16,7 +16,7 @@ Q_t-iQ_z&-iQ_x-Q_y\\
 \qquad
 \det B=\langle\tilde Q\rangle_{\natural}.
 $$
-The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, so that $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$ and $\mathsf M_4^{R}(\tilde Q)=B^{\mathsf T}\otimes I_2$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.
+The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, so that the $4\times4$ regular matrices are $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$ and $\mathsf M_4^{R}(\tilde Q)=B^{\mathsf T}\otimes I_2$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
 **Boundaries.** The operator statements are *The Right Regular Operators on the Biquaternion Algebra*; the left matrix is *Matrix Representations : The Left Regular Operators*; the commutant of the two images is *Matrix Representations : The Centraliser and the Double Centraliser*; the two-sided family is *Matrix Representations : The Two-Sided Operators*.
 

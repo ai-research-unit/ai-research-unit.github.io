@@ -6,9 +6,9 @@ The zero divisors of the biquaternion algebra are the matrices of rank one in th
 
 This article develops the factorisation, the coefficients, the two strata, the annihilators, the determinantal variety and the nilpotent corner. It is the article in which the null cone of *Matrix Representations : Trace, Determinant and the Biquaternion Norm* becomes a projective variety with two rulings.
 
-**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$, $N=\det B$ and regular matrix $L=I_2\otimes B$. In the Peirce frame the regular matrix is the block matrix of two copies of $B$.
+**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$, $N=\det B$ and $4\times4$ regular matrix $L=I_2\otimes B$. In the Peirce frame the regular matrix is the block matrix of two copies of $B$.
 
-**Boundaries.** The matrix statements are *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the cone and its topology are *The Topology of the Zero-Divisor Cone* and *The Null Cone and the Zero Divisors*; the nilpotents are *Nilpotents*; the Jordan form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+**Boundaries.** The matrix statements are the subject of this article; the cone is the zero-divisor cone of *Zero Divisors and Units*; the nilpotents are *Nilpotents*; the degenerate normal form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
 ## Common Aspects
 
@@ -217,7 +217,7 @@ the matrices whose image lies in $\mathbb{C}u$; it is the minimal right ideal of
 
 ## Summary
 
-A nonzero singular matrix has rank one in the entry model and rank two in the regular model, and factorises as $uv^{\mathsf T}$ or as its double, uniquely up to reciprocal scaling. Its trace is $v^{\mathsf T}u$, doubled in the regular model, and the trace splits the cone into the pure stratum $v^{\mathsf T}u=0$ of nilpotents, of real dimension four, and the non-pure stratum $v^{\mathsf T}u\neq0$ of scaled idempotents, of real dimension six. The annihilators are the minimal ideals of the complementary line and covector, and the one-sided operators have rank two in both displays. The determinantal variety is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with apex at the zero matrix; the pure stratum is the incidence conic and the non-pure stratum its complement. Every nilpotent is conjugate to the Jordan block, doubled in the regular display.
+A nonzero singular matrix has rank one in the entry model and rank two in the regular model, and factorises as $uv^{\mathsf T}$ or as its double, uniquely up to reciprocal scaling. Its trace is $v^{\mathsf T}u$, doubled in the regular model, and the trace splits the cone into the pure stratum $v^{\mathsf T}u=0$ of nilpotents, of real dimension four, and the non-pure stratum $v^{\mathsf T}u\neq0$ of scaled idempotents, of real dimension six. The annihilators are the minimal ideals of the complementary line and covector. The determinantal variety is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with apex at the zero matrix; the pure stratum is the incidence conic and the non-pure stratum its complement. Every nilpotent is conjugate to the Jordan block, doubled in the regular display.
 
 ## Summary of Notation
 
@@ -238,4 +238,3 @@ A nonzero singular matrix has rank one in the entry model and rank two in the re
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the nilpotent form
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the corners
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the topology

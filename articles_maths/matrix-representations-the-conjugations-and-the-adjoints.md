@@ -19,7 +19,7 @@ P=-\sigma_2\otimes\sigma_2=
 $$
 The Peirce change is $C_{\Pi}$, with columns the four Peirce elements in coefficient coordinates.
 
-**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the automorphisms that commute with them are *Biquaternion Automorphisms and Derivations*. The $2\times2$ and $4\times4$ source articles are *Matrix Representations : The Conjugations and the Adjoints*.
+**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the $2\times2$ and $4\times4$ computations are the subject of this article.
 
 ## Common Aspects
 
@@ -147,4 +147,3 @@ The four words are the quaternion conjugation, the complex conjugation, the Herm
 - [Matrix Representations : The Four Words and the Four Traces](matrix-representations-the-four-words-and-the-four-traces.html), for the four forms and their traces
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant and the norm
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms
-- [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphisms commuting with the words

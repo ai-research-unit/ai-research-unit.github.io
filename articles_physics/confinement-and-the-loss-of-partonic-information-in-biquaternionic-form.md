@@ -396,7 +396,7 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Informational and material sectors |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{M}_-$ | Gauge connection (material sector) |
-| $T^a = ie_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
+| $T_a = ie_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
 | $U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; order parameter |
 | $\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{per}}\,\mathrm{perim})$ | Perimeter law (screening) |

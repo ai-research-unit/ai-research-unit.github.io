@@ -62,10 +62,10 @@ the unit-norm real quaternions. This is the group of rotors of pure spatial rota
 Let the connection be a one-form with values in this Lie algebra,
 
 $$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \;\in\; \mathrm{SU}(2), \qquad \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
+\mathcal{A}_\mu(\tilde{Q}) = \sum_a\mathcal{A}_{\mu a}(\tilde{Q})\,e_a \;\in\; \mathrm{SU}(2), \qquad \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
 $$
 
-with real coefficient functions $\mathcal{A}_\mu^{a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
+with real coefficient functions $\mathcal{A}_{\mu a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
 
 $$
 D_\mu = \partial/\partial Q_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\nabla} + i\kappa\,\mathcal{A},
@@ -355,8 +355,9 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
 | $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Lie-algebra decomposition of the material sector |
 | $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
+| $a,b,c$ | colour indices of the gauge algebra, written low |
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
-| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
+| $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = ϙ/\hbar$ | Coupling |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
 | $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$ | Non-abelian transformation of the connection |

@@ -19,7 +19,7 @@ The division between what is established and what is interpretation is kept expl
 
 Let the connection be a one-form with values in the compact factor of the material sector,
 $$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,\vec e_a \in \mathrm{SU}(2), \qquad
+\mathcal{A}_\mu(\tilde{Q}) = \sum_a\mathcal{A}_{\mu a}(\tilde{Q})\,\vec e_a \in \mathrm{SU}(2), \qquad
 \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
 $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
@@ -310,13 +310,14 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra inside $\mathbb{M}_-$ |
 | $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
-| $\mathcal{A}_\mu = \mathcal{A}_\mu^a \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
+| $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = ϙ/\hbar$ | Coupling |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
 | $\partial/\partial Q_t = -i\partial/\partial t'$ | $ict'$ time derivative |
 | $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
 | $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |
+| $a,b$ | colour index of the gauge algebra, written low |
 | $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |

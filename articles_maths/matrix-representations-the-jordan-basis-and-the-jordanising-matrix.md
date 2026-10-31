@@ -77,7 +77,7 @@ $$
 U^{\dagger}\mathsf M_4^{L}(\tilde Q)U
 =\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}\otimes\mathrm I_2.
 $$
-This is two copies of the singular Jordan block. The defect is the same $s$ in both blocks, and it is the norm of the nilpotent. The canonical change is $*$-unitary exactly when $s=1$, a normalisation of the element, not a generic property. For a real quaternion, $\vec Q\in\mathbb{R}^3$ and $\vec Q^2=0$ force $\vec Q=0$: the defective sector has no real points except the real scalars.
+This is two copies of the defective Jordan block. The defect is the same $s$ in both blocks, and it is the norm of the nilpotent. The canonical change is $*$-unitary exactly when $s=1$, a normalisation of the element, not a generic property. For a real quaternion, $\vec Q\in\mathbb{R}^3$ and $\vec Q^2=0$ force $\vec Q=0$: the defective sector has no real points except the real scalars.
 
 **Transitions.** If $\tilde Q'=\tilde Q+be_t$, the flag and the frame are unchanged, and $\mathsf M_2^{\tilde Q}(\tilde Q')=J_2(Q_t+b)$ with the same Jordanising matrix. If $\tilde Q'=a\tilde Q$ with $a\neq0$, the canonical frame transforms by $\tilde\Pi_\pm'=\tilde\Pi_\pm$, $\vec\Upsilon_-'=a\vec\Upsilon_-$, $\vec\Upsilon_+'=a^{-1}\vec\Upsilon_+$, and the coordinate model by $D=\operatorname{diag}(1,a)$; the Jordanising matrix becomes $\mathsf S_{Q'}=\mathsf S_QD^{-1}$ up to a phase. For two elements with different vector lines, $T_{Q'Q}=\mathsf S_Q^{-1}\mathsf S_{Q'}$ satisfies the cocycle $T_{Q''Q}T_{Q'Q''}=T_{Q'Q}$; it preserves the block structure only when the vector parts are proportional. Two non-scalar elements commute exactly when their vector parts are proportional, because the centraliser is $\mathbb{C}[\tilde Q]$.
 
@@ -111,30 +111,26 @@ in the chain order, and to $J_2(Q_t)\otimes\mathrm I_2$ in the corner order. The
 
 ## The Entry Model
 
-**The canonical matrix.** Let
+**The canonical matrix.** Let $u$ be a unit vector spanning the image of $Q$, and let $v$ be a unit vector orthogonal to $u$. Then $U=(u\ v)$ is $*$-unitary, and
 $$
-Q=suv^{\dagger},\qquad s=\sqrt{2\langle\vec Q\rangle_*},
+Qu=0,\qquad Qv=su,\qquad s=\sqrt{2\langle\vec Q\rangle_*}.
 $$
-be the singular-value decomposition of the nilpotent, with $u,v\in\mathbb{C}^2$ orthonormal. Then
+The first relation holds because $Q^2=0$ and the image is the kernel; the second defines $s$, the size of the nilpotent. Put
 $$
-\mathsf S_Q=\bigl(u\ \ s^{-1}v\bigr)
+\mathsf S_Q=\bigl(u\ \ s^{-1}v\bigr).
 $$
-is Jordanising: its first column is annihilated by $Q$ and its second is a preimage of the first. Equivalently, if $c$ is a nonzero column of $Q$,
-$$
-\mathsf S_Q=\left(\frac{c}{\lVert c\rVert}\ \ \frac{Q^{\dagger}c}{2\langle\vec Q\rangle_*\lVert c\rVert}\right).
-$$
-The formula is uniform: one of the two columns of $Q$ is nonzero, and the two choices give the same first column up to a phase. There is no second chart.
+It is Jordanising: its first column is annihilated by $Q$ and its second is a preimage of the first. The two choices of $u$ differ by a phase, and the two choices of $v$ by a phase; the resulting $\mathsf S_Q$ differs by the same phase, so there is no second chart.
 
 **The theorem.** The matrix is Jordanising, and
 $$
 \mathsf M_2(\tilde\Pi_+)=uu^{\dagger},\qquad
-\mathsf M_2(\vec\Upsilon_-)=suv^{\dagger}=Q,\qquad
+\mathsf M_2(\vec\Upsilon_-)=Q,\qquad
 \mathsf M_2(\vec\Upsilon_+)=s^{-1}vu^{\dagger},\qquad
 \mathsf M_2(\tilde\Pi_-)=vv^{\dagger}.
 $$
 The columns are a chain: $Qu=0$ and $Q(s^{-1}v)=u$, so $Q\mathsf S_Q=\mathsf S_QE_{12}$ and $M\mathsf S_Q=\mathsf S_QJ_2(Q_t)$.
 
-**The determinant and the singular values.** Since $u$ and $v$ are orthonormal,
+**The determinant and the defect.** Since $u$ and $v$ are orthonormal,
 $$
 \mathsf S_Q^{\dagger}\mathsf S_Q=\operatorname{diag}(1,s^{-2}),
 \qquad
@@ -144,7 +140,7 @@ The modulus is invariant; the phase is not, because a common phase of $u$ and $v
 $$
 U^{\dagger}MU=\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}.
 $$
-The superdiagonal $s$ is the singular value of the nilpotent. No $*$-unitary change removes it: a $*$-unitary diagonalisation would make $M$ normal, and a normal matrix with the single eigenvalue $Q_t$ is $Q_t\mathrm I_2$. The canonical matrix is $\mathsf S_Q=U\operatorname{diag}(1,s^{-1})$, the product of the $*$-unitary frame and the real scaling that normalises the superdiagonal to one.
+The superdiagonal $s$ is the size of the nilpotent. No $*$-unitary change removes it: a $*$-unitary diagonalisation would make $M$ normal, and a normal matrix with the single eigenvalue $Q_t$ is $Q_t\mathrm I_2$. The canonical matrix is $\mathsf S_Q=U\operatorname{diag}(1,s^{-1})$, the product of the $*$-unitary frame and the real scaling that normalises the superdiagonal to one.
 
 **The freedom.** If $\mathsf S$ is one Jordanising matrix, the others are $\mathsf S\mathsf G$ with
 $$
@@ -187,11 +183,11 @@ $$
 U^{\dagger}\mathsf M_4^{L}(\tilde Q)U
 =\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}\otimes\mathrm I_2,
 $$
-two copies of the singular Jordan block with the same $s$. The regular defect is the entry defect doubled, and the canonical change is $*$-unitary exactly when $s=1$.
+two copies of the defective Jordan block with the same $s$. The regular defect is the entry defect doubled, and the canonical change is $*$-unitary exactly when $s=1$.
 
 ## Summary
 
-The Jordan basis $\mathcal J=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a system of matrix units; in the corner order the element is $J_2(Q_t)$. The canonical Jordanising matrix is $\mathsf S_Q=(u\ s^{-1}v)$ from the singular-value decomposition $Q=suv^{\dagger}$, with $s=\sqrt{2\langle\vec Q\rangle_*}$; it satisfies $\mathsf S_Q^{-1}M\mathsf S_Q=J_2(Q_t)$ and $\lvert\det\mathsf S_Q\rvert=s^{-1}$. In the regular model the same basis gives $J_2(Q_t)\otimes\mathrm I_2$ in the corner order and $\operatorname{diag}(J_2,J_2)$ in the chain order. The determinant of the regular change is $\tfrac14$ in the coefficient frame and $-1$ in the Peirce frame, independent of the element, because the $2\times2$ scalars cancel in the similarity; the chain order flips both signs. The freedom is $\mathbb{C}^{\times}\ltimes\mathbb{C}$ in $2\times2$ and $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$ in $4\times4$, with $*$-unitary subgroup $U(2)$. No non-scalar element is normal, the best $*$-unitary form is the singular Jordan block doubled, and the defect is the singular value $s$.
+The Jordan basis $\mathcal J=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a system of matrix units; in the corner order the element is $J_2(Q_t)$. The canonical Jordanising matrix is $\mathsf S_Q=(u\ s^{-1}v)$, with $u$ a unit vector spanning the image and $v$ a unit vector orthogonal to it, and $s=\sqrt{2\langle\vec Q\rangle_*}$; it satisfies $\mathsf S_Q^{-1}M\mathsf S_Q=J_2(Q_t)$ and $\lvert\det\mathsf S_Q\rvert=s^{-1}$. In the regular model the same basis gives $J_2(Q_t)\otimes\mathrm I_2$ in the corner order and $\operatorname{diag}(J_2,J_2)$ in the chain order. The determinant of the regular change is $\tfrac14$ in the coefficient frame and $-1$ in the Peirce frame, independent of the element, because the $2\times2$ scalars cancel in the similarity; the chain order flips both signs. The freedom is $\mathbb{C}^{\times}\ltimes\mathbb{C}$ in $2\times2$ and $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$ in $4\times4$, with $*$-unitary subgroup $U(2)$. No non-scalar element is normal, the best $*$-unitary form is the defective Jordan block doubled, and the defect is $s$.
 
 ## Summary of Notation
 
@@ -201,8 +197,8 @@ The Jordan basis $\mathcal J=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilo
 | $\mathcal E=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ | the same basis in corner order |
 | $\mathsf M_2^{\tilde Q}$ | the Jordan coordinate model |
 | $J_2(Q_t)$ | the Jordan block |
-| $s=\sqrt{2\langle\vec Q\rangle_*}$ | the singular value of the nilpotent |
-| $Q=suv^{\dagger}$ | its singular-value decomposition |
+| $s=\sqrt{2\langle\vec Q\rangle_*}$ | the size of the nilpotent |
+| $u,v$ | unit vectors spanning the image and orthogonal to it |
 | $\mathsf S_Q=(u\ s^{-1}v)$ | the canonical Jordanising matrix |
 | $s^{-1}$ | the modulus of its determinant |
 | $\mathsf S_Q^{(4)}$ | the regular Jordanising matrix |

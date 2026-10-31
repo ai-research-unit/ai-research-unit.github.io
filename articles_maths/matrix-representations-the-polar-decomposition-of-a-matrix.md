@@ -4,11 +4,11 @@
 
 Every invertible matrix is the product of a positive definite matrix and a unitary one. The decomposition is unique, it is a diffeomorphism, and it splits the determinant into modulus and phase. In the biquaternion algebra the two factors have names: the positive factor is the boost, the unitary factor is the rotor, and the determinant carries the scale and the central phase.
 
-This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the exponential of *Matrix Representations : The Functional Calculus* and the unitarities of *Matrix Representations : The Hermitian Sandwich* into a factorisation of every element.
+This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the matrix exponential and the unitary matrices into a factorisation of every element.
 
-**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the Hermitian adjoint of *Matrix Representations : The Hermitian Sandwich*, and $*$-unitary means $V^{\dagger}V=\mathrm I$.
+**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the conjugate transpose, and $*$-unitary means $V^{\dagger}V=\mathrm I$.
 
-**Boundaries.** The matrix theorem is *Matrix Representations : The Polar Decomposition of a Matrix*; the algebra word is *The Polar Decomposition of a Biquaternion*; the exponential is *Matrix Representations : The Functional Calculus*; the singular value decomposition is *The Singular Value Decomposition of a Biquaternion*; the boost and the rotor are *The Two Halves*.
+**Boundaries.** The matrix theorem is classical; the algebra word is *The Polar Decomposition of a Biquaternion*; the determinant split is computed here.
 
 ## Common Aspects
 
@@ -111,7 +111,7 @@ with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the 
 
 **The partial isometry.** For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank equal to the rank of $M$, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ remains unique if $P$ is required positive semidefinite and $V$ to vanish on the kernel.
 
-**The regular singular stratum.** In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank stratification.
+**The regular singular stratum.** In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank.
 
 **The zero matrix.** At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.
 
@@ -201,7 +201,7 @@ s_1^2s_2^2=r^4=\lvert\det M\rvert,
 $$
 each repeated twice in the regular display. The singular values coincide exactly when the boost is trivial.
 
-**The rank.** The rank is the number of nonzero singular values counted with multiplicity: four generically, two on the nonzero part of the determinantal variety, zero at the zero matrix. This is twice the rank of the $2\times2$ model, as the rank stratification requires.
+**The rank.** The rank is the number of nonzero singular values counted with multiplicity: four generically, two on the nonzero part of the singular set, zero at the zero matrix. This is twice the rank of the $2\times2$ model.
 
 **The normal case.** The multiset of singular values equals the multiset of eigenvalue moduli exactly when $M$ is normal. In the regular display the eigenvalues are doubled, and the condition is the normality of the underlying element.
 
@@ -225,8 +225,5 @@ Every invertible matrix is uniquely $M=PV$, with $P$ positive definite and $V$ u
 
 ## Further Reading
 
-- [Matrix Representations : The Functional Calculus](matrix-representations-the-functional-calculus.html), for the square root
-- [Matrix Representations : The Hermitian Sandwich](matrix-representations-the-hermitian-sandwich.html), for the unitary slice
-- [Matrix Representations : GL2, SL2 and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the determinant split
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the algebra word

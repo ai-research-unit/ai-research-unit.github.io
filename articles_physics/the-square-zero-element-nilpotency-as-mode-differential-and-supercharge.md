@@ -224,10 +224,10 @@ The mode supplies the occupation quantum, the two rungs, the exclusion principle
 A differential is an odd operator $Q$ on a graded complex with $Q^2=0$. The BRST complex of a gauge theory is the corpus's principal example. The gauge field, the ghost $c$, the antighost $\bar c$ and the Nakanishi–Lautrup field $B$ carry ghost numbers $0,1,-1,0$, and the BRST transformation is
 
 $$
-sA_\mu^a=-D_\mu c^a,\qquad
-sc^a=-\tfrac{g}{2}f^{abc}c^bc^c,\qquad
-s\bar c^a=B^a,\qquad
-sB^a=0 .
+sA_{\mu a}=-D_\mu c_a,\qquad
+sc_a=-\tfrac{g}{2}\sum_{b,c}f_{abc}c_b c_c,\qquad
+s\bar c_a=B_a,\qquad
+sB_a=0 .
 $$
 
 The nilpotency $s^2=0$ is the Jacobi identity of the gauge algebra in disguise. In the biquaternion framework the gauge algebra is realized by the commutator inside $\mathbb{B}$, and the Jacobi identity is a rearrangement of the associativity of the product; the nilpotency is therefore inherited from associativity rather than postulated. The ghosts themselves are not elements of $\mathbb{B}$: they are odd generators adjoined in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, and the BRST charge is an operator on the resulting Fock space, not an element of the four-dimensional algebra.
@@ -588,6 +588,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\mathrm{Cl}^1=\mathbb{B}\gamma$ | the odd slot, a rank-one module |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |
+| $a,b,c$ | colour and ghost indices, written low; each contraction is an explicit sum |
 | $\Lambda$ | the Grassmann algebra of odd labels |
 | $\theta_i$ | a Grassmann label, $\theta_i^2=0$ |
 | $Q$, $Q^\dagger$ | the supersymmetric supercharge pair |

@@ -6,7 +6,7 @@ A qubit is a Hermitian element of trace one and non-negative norm. Its matrix is
 
 This article develops the Hermitian basis, the spin operators, the pure states, the general state and the Bloch ball, the Born rule, the reconstruction of the vector, the spinor and the Hopf fibration, and the limits of the correspondence. It is the article in which the real form $\mathbb M_+$ of *Matrix Representations : The Six Subspaces as Matrix Conditions* becomes a state space.
 
-**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and regular matrix $L=I_2\otimes B$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\mathsf M_2(\vec e_k)=-i\sigma_k$. The Hermitian adjoint is that of *Matrix Representations : The Hermitian Sandwich*.
+**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $2\times2$ entry matrix $B=\mathsf M_2(\tilde Q)$ and $4\times4$ regular matrix $L=I_2\otimes B$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\mathsf M_2(\vec e_k)=-i\sigma_k$. The Hermitian adjoint is the conjugate transpose.
 
 **Boundaries.** The matrix statements are *Matrix Representations : Spin, Qubits and the Bloch Vector*; the real form is *Matrix Representations : The Six Subspaces as Matrix Conditions*; the Pauli correspondence is *The Pauli Correspondence and the Matrix Image*; the spinor carriers are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the measurement rule is *Spin and the Three Elementary Carriers*.
 
@@ -326,7 +326,6 @@ The Hermitian units map to the Pauli matrices, $\mathsf M_2(i\vec e_k)=\sigma_k$
 ## Further Reading
 
 - [Matrix Representations : The Six Subspaces as Matrix Conditions](matrix-representations-the-six-subspaces-as-matrix-conditions.html), for the real form $\mathbb M_+$
-- [Matrix Representations : The Hermitian Sandwich](matrix-representations-the-hermitian-sandwich.html), for the unitary slice
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the spinor carrier
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the correspondence

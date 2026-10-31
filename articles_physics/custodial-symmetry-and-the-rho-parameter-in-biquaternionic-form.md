@@ -51,9 +51,9 @@ $$
 so that the electroweak group acts on the left and the hypercharge acts on the right,
 
 $$
-H \;\longmapsto\; \exp(\,i\alpha^a T^a_L)\,H\,\exp(\,i\beta T_3^{R}) ,
+H \;\longmapsto\; \exp\bigl(i\sum_a\alpha_a T_{La}\bigr)\,H\,\exp(\,i\beta T_3^{R}) ,
 \qquad
-T^a_L = \frac{\tau^a}{2},\quad T_3^R = \frac{\tau^3}{2} .
+T_{La} = \frac{\tau_a}{2},\quad T_3^R = \frac{\tau_3}{2} .
 $$
 
 The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
@@ -302,6 +302,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $\rho = \frac{\sum_i v_i^2[T_i(T_i+1)-T_{3i}^2]}{\sum_i 2v_i^2T_{3i}^2}$ | General multiplet formula |
 | $g, g_{\mathrm Y}$ | Weak and hypercharge couplings (standard notation; framework couplings are $\kappa$ and $ϙ$) |
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
+| $a$ | weak-isospin index, written low; the sum over it is explicit |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

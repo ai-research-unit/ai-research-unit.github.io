@@ -12,12 +12,12 @@ The four products of the biquaternion algebra become four words in a matrix, its
 $$
 X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4^{L}(\tilde R).
 $$
-The two matrix involutions are the transpose and the conjugate transpose. By *Matrix Representations : The Conjugations and the Adjoints*,
+The two matrix involutions are the transpose and the conjugate transpose. In the coefficient frame, quaternion conjugation is transposition and the Hermitian adjoint is the conjugate transpose:
 $$
 \mathsf{M}_4^{L}(\tilde P^{\natural})=X^{\mathsf T},\qquad \mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger}.
 $$
 
-**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *Matrix Representations : The Conjugations and the Adjoints*; the trace and determinant are *Matrix Representations : Trace, Determinant and the Biquaternion Norm*.
+**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the trace and the determinant are the subject of the next article.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -168,7 +168,5 @@ The four products are the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and 
 
 ## Further Reading
 
-- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the two involutions
-- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the trace and the norm
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the products
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms

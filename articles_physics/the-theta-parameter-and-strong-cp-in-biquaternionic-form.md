@@ -39,17 +39,17 @@ with all indices summed in the $ict'$ convention as in the companion gauge artic
 The theta term of a non-abelian gauge theory is
 
 $$
-\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu}
+\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}
 =\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$
 
-so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
+so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
-\sum_{\mu,\nu}F^a_{\mu\nu}F^{\mathrm{dual},a}_{\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} ,
+\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} ,
 \qquad
-J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\Bigl(A^a_\nu F^a_{\rho\sigma}
--\tfrac{g}{3}\,\epsilon^{abc}A^a_\nu A^b_\rho A^c_\sigma\Bigr),
+J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\sum_a\epsilon_{\mu\nu\rho\sigma}\Bigl(A_{\nu a}F_{\rho\sigma a}
+-\tfrac{g}{3}\sum_{b,c}\epsilon_{abc}A_{\nu a}A_{\rho b}A_{\sigma c}\Bigr),
 $$
 
 the standard non-abelian Chern–Simons current, whose abelian part is the primitive $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of *Instantons and Solitons in Biquaternionic Form* and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.
@@ -185,6 +185,7 @@ The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutro
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix (imported) |
+| $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading
 
