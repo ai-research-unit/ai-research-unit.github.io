@@ -12,7 +12,7 @@ The article is organised as follows. The next section sets up the naive discreti
 
 ### The classical action and the lattice
 
-The biquaternion field is Lorentzian. In the $x$ coordinates $x^0=ct'$, $x^k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
+The biquaternion field is Lorentzian. In the $x$ coordinates $x_0=ct'$, $x^k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
 S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial_\mu - m\right)\psi(x),

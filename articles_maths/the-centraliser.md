@@ -113,4 +113,4 @@ The four types of the split — scalar, semisimple, Jordan, nilpotent — are th
 
 - [The Spectrum](the-spectrum.html), for the discriminant and the two eigenvalues.
 - [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split.html), for the decomposition.
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the matrix form.
+- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the matrix form.

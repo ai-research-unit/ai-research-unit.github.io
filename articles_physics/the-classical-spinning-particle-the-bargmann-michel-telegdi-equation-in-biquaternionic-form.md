@@ -74,7 +74,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
 $$
 
-The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with the Lorentz boost rotor $\tilde U_{\mathrm L,\vec v}$, the rest-frame spin is
+The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS_{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with the Lorentz boost rotor $\tilde U_{\mathrm L,\vec v}$, the rest-frame spin is
 
 $$
 \vec s=\tilde U_{\mathrm L,\vec v}\,\tilde{S}\,\tilde U_{\mathrm L,\vec v}^{*}\Big|_{\rm vec},
@@ -83,7 +83,7 @@ $$
 and the orthogonality condition may be solved for the time component,
 
 $$
-S^{0}=\frac{\vec S_{\rm vec}\cdot\vec v}{c},
+S_{0}=\frac{\vec S_{\rm vec}\cdot\vec v}{c},
 $$
 
 so that the four components of $\tilde{S}$ carry exactly the three components of the rest-frame spin. The **magnitude** of the spin,
@@ -185,11 +185,11 @@ The orthogonality of the spin and the four-velocity is thus preserved **identica
 
 $$
 \frac{ds^k}{d\tau}
-=\frac{ϙ}{m}\,\alpha\,\Big(F^{kt}S_0+F^{kj}S_j\Big)
+=\frac{ϙ}{m}\,\alpha\,\Big(F_{kt}S_0+F_{kj}S_j\Big)
 =\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_k ,
 $$
 
-because $S_0=-S^{0}=0$ removes the electric contribution. Matching the gyromagnetic torque in the rest frame, $d\vec s/d\tau=\gamma_g\,\vec s\times\vec B=(gq/2m)\,\vec s\times\vec B$, gives
+because $S_0=0$ removes the electric contribution. Matching the gyromagnetic torque in the rest frame, $d\vec s/d\tau=\gamma_g\,\vec s\times\vec B=(gq/2m)\,\vec s\times\vec B$, gives
 
 $$
 \alpha=\frac{g}{2},
@@ -244,13 +244,13 @@ $$
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right],
 $$
 
-in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu v_\nu=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS^{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
+in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu v_\nu=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS_{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
 
 The transcription is a statement about the **structure** of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{M}_-$.
 
 ## The Rest Frame and the Meaning of $g$
 
-The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v_\mu=(c,\mathbf{0})$, $S^{0}=0$, and $\tilde{S}=(0,\vec s)$. The field action on the spin is
+The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v_\mu=(c,\mathbf{0})$, $S_{0}=0$, and $\tilde{S}=(0,\vec s)$. The field action on the spin is
 
 $$
 \mathrm{F}(\tilde{S})\Big|_{\rm rest}
@@ -268,7 +268,7 @@ $$
 which defines the magnetic moment $\vec\mu=(gq/2m)\vec s$, and the time component
 
 $$
-\frac{dS^{0}}{d\tau}
+\frac{dS_{0}}{d\tau}
 =\frac{ϙ}{m}\left[\frac{g}{2}\frac{\vec E\cdot\vec s}{c}
 -\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,c\,(\vec E\cdot\vec s)\right]
 =\frac{ϙ}{m}\,\frac{\vec E\cdot\vec s}{c},
@@ -311,7 +311,7 @@ shows that the departure from spin-follows-velocity is governed by $(g/2-1)$ and
 
 ## The Laboratory-Frame Limit: Larmor and Thomas
 
-The non-relativistic limit of the BMT equation reproduces the **Larmor precession** of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S^{0}\to0$, and $d/d\tau\to d/dt'$. Then
+The non-relativistic limit of the BMT equation reproduces the **Larmor precession** of a magnetic moment by the usual argument. Let $\vec v\to\mathbf{0}$, so that $\gamma\to1$, $S_{0}\to0$, and $d/d\tau\to d/dt'$. Then
 
 $$
 \frac{d\vec S_{\rm vec}}{dt'}
@@ -438,7 +438,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
-| $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu v_\nu=0$ |
+| $\tilde{S}=iS_0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu v_\nu=0$ |
 | $\tilde U_{\mathrm L,\vec v}$ | Lorentz boost rotor to the momentary rest frame |
 | $\vec s$ | Rest-frame spin, $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu=\vec s^2$ |
 | $S_{\mu\nu}$ | Antisymmetric spin tensor, $S_\mu=\frac{1}{2c}\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |

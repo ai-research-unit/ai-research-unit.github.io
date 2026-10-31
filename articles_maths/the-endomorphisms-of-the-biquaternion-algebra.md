@@ -8,7 +8,7 @@
 
 **What the article does not do.** The operators produced by the multiplication itself, the left and the right regular families and their products, are the subject of Parts II, III and IV. This article needs one display of them, the inner derivation $\tilde Qx-x\tilde Q$, and one pointer: the two summands of that display are the regular operators, and they are defined and studied in Part II and Part III, not here. The matrix form of the ambient space is the subject of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*; this article states the dimension and leaves the matrix to the article that fixes the frame.
 
-**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
+**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
 
 ## The Carrier and Its Linear Maps
 

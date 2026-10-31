@@ -36,7 +36,7 @@ $$
 \quad\text{on }\mathbb{M}_- .
 $$
 
-In the $x$ coordinates $x^0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
+In the $x$ coordinates $x_0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
 $$
 \Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
@@ -461,4 +461,4 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the periodicity and the module dimensions.
 - V. V. Kravchenko, *Quaternionic Analysis and Its Applications* (Birkhäuser, 2003), for the quaternionic Dirac operator and its relation to the Euclidean Clifford algebra.
 - The corpus articles *The Klein–Gordon Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Biquaternion D'Alembertian and Its Green's Functions*, and *Algebra and Element Conventions* for the conventions and the results this article builds on.
-- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes* for the two-sided algebra, the nilpotent that swaps the minimal left ideals, and the $M_2$/$M_4$ dictionary.
+- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes* for the two-sided algebra, the nilpotent that swaps the minimal left ideals, and the $M_2$/$M_4$ dictionary.

@@ -62,7 +62,7 @@ in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expre
 Time ordering for a fermion field carries the anticommutation sign:
 
 $$
-S_F(x-y)=\theta(x^0-y^0)\,W_+(x-y)-\theta(y^0-x^0)\,W_-(x-y).
+S_F(x-y)=\theta(x_0-y_0)\,W_+(x-y)-\theta(y_0-x_0)\,W_-(x-y).
 $$
 
 The relative minus is not a convention; it is the statement that the two field operators anticommute. Every sign in what follows traces back to it, and it is the quantity a recomputation must reproduce.
@@ -77,29 +77,29 @@ $$
 \qquad \epsilon\to0^+\;}.
 $$
 
-The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p^0$ integral reproduce the two branches with their relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
+The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches with their relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
 
-Write the $p^0$ integral at fixed $\vec p$. Since $p^2-m^2=(p^0)^2-E_{\vec p}^2$, the integrand has poles where
+Write the $p_0$ integral at fixed $\vec p$. Since $p^2-m^2=(p_0)^2-E_{\vec p}^2$, the integrand has poles where
 
 $$
-\boxed{\;(p^0)^2-E_{\vec p}^2+i\epsilon=0,
+\boxed{\;(p_0)^2-E_{\vec p}^2+i\epsilon=0,
 \qquad\text{i.e.}\qquad
-p^0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
+p_0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
 =\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2)\;}.
 $$
 
-The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $\exp(-ip^0(x^0-y^0))$ then selects one pole or the other:
+The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $\exp(-ip^0(x_0-y_0))$ then selects one pole or the other:
 
-- for $x^0-y^0>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}$;
-- for $x^0-y^0<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}$.
+- for $x_0-y_0>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}$;
+- for $x_0-y_0<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}$.
 
 The residues are
 
 $$
-\operatorname*{Res}_{p^0=+E_{\vec p}}\frac{\gamma_{\rho} p_{\rho}+m}{(p^0)^2-E_{\vec p}^2}
+\operatorname*{Res}_{p_0=+E_{\vec p}}\frac{\gamma_{\rho} p_{\rho}+m}{(p_0)^2-E_{\vec p}^2}
 =\frac{\gamma_{\mu} (p_{+})_{\mu}+m}{2E_{\vec p}},
 \qquad
-\operatorname*{Res}_{p^0=-E_{\vec p}}\frac{\gamma_{\sigma} p_{\sigma}+m}{(p^0)^2-E_{\vec p}^2}
+\operatorname*{Res}_{p_0=-E_{\vec p}}\frac{\gamma_{\sigma} p_{\sigma}+m}{(p_0)^2-E_{\vec p}^2}
 =\frac{\gamma_{\nu} (p_{-})_{\nu}+m}{-2E_{\vec p}},
 $$
 
@@ -109,9 +109,9 @@ $$
 \gamma_{\mu} (p_{-})_{\mu}+m=-\big(\gamma_{\nu} (p_{+})_{\nu}(-\vec p)-m\big),
 $$
 
-and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x^0-y^0>0$ and $-W_-$ for $x^0-y^0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
+and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x_0-y_0>0$ and $-W_-$ for $x_0-y_0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
 
-**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\gamma_{\mu} p_{\mu}-m)w^{(r)}=0$ and $(\gamma_{\mu} p_{\mu}+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\gamma_{\mu} p_{\mu}-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\gamma_{\mu} p_{\mu}-m)(\gamma_{\nu} p_{\nu}+m)=(p^2-m^2)I_4$, which uses $(\gamma_\mu p_\mu)^2=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
+**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\gamma_{\mu} p_{\mu}-m)w^{(r)}=0$ and $(\gamma_{\mu} p_{\mu}+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\gamma_{\mu} p_{\mu}-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\gamma_{\mu} p_{\mu}-m)(\gamma_{\nu} p_{\nu}+m)=(p^2-m^2)I_4$, which uses $(\gamma_\mu p_\mu)^2=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p_0$ integral along the real axis reproduces the residue expressions for both signs of $x_0-y_0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x_0-y_0)W_+-\theta(y_0-x_0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -119,11 +119,11 @@ The pole structure makes the choice of propagator explicit. Three prescriptions 
 
 | Prescription | Denominator | Poles (to first order in $\epsilon$) |
 |---|---|---|
-| Feynman | $(p^0)^2-E_{\vec p}^2+i\epsilon$ | $+E_{\vec p}$ below, $-E_{\vec p}$ above |
-| Retarded | $(p^0+i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}-i\epsilon$ (both below) |
-| Advanced | $(p^0-i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}+i\epsilon$ (both above) |
+| Feynman | $(p_0)^2-E_{\vec p}^2+i\epsilon$ | $+E_{\vec p}$ below, $-E_{\vec p}$ above |
+| Retarded | $(p_0+i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}-i\epsilon$ (both below) |
+| Advanced | $(p_0-i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}+i\epsilon$ (both above) |
 
-The three are distinguished by whether the displacements are **opposite** (Feynman) or **common** (retarded and advanced). For $\epsilon=10^{-3}$ and the same momentum, the retarded poles are at $1.61245155-i\,10^{-3}$ and $-1.61245155-i\,10^{-3}$, and the advanced poles at the same points with $+i\,10^{-3}$: both on the same side, as the table states. Closing the contour then shows at once why the retarded propagator vanishes for $x^0-y^0<0$ and the advanced one for $x^0-y^0>0$: with both poles on one side, one of the two half-planes contains no pole.
+The three are distinguished by whether the displacements are **opposite** (Feynman) or **common** (retarded and advanced). For $\epsilon=10^{-3}$ and the same momentum, the retarded poles are at $1.61245155-i\,10^{-3}$ and $-1.61245155-i\,10^{-3}$, and the advanced poles at the same points with $+i\,10^{-3}$: both on the same side, as the table states. Closing the contour then shows at once why the retarded propagator vanishes for $x_0-y_0<0$ and the advanced one for $x_0-y_0>0$: with both poles on one side, one of the two half-planes contains no pole.
 
 This is the physical content of the $i\epsilon$, and it is exactly the content the algebra does not supply. The Feynman choice encodes the time-ordered vacuum correlation; the retarded choice encodes causal response to a source; the advanced choice is its mirror. They solve the *same* differential equation off the source and differ only in support. A choice among them is a boundary condition on the distributional inverse, and boundary conditions are not algebraic data. The companion article on the biquaternion Maxwell equation meets the same situation in the first-order problem: it selects the retarded Green's function, and it notes explicitly that the retarded kernel is a different object from the elliptic Cauchy kernel of the analysis articles, related by the Wick rotation. The selection there is made on physical grounds, not read off the algebra, and the same is true here.
 
@@ -171,7 +171,7 @@ $$
 (\Box-m^2)G_F=i\delta^{(4)}
 $$
 
-in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x^0\gtrless y^0$.
+in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0\gtrless y_0$.
 
 This is the sharpest way to see why the question "does the algebra supply the $i\epsilon$?" cannot be answered by finding an $i$ in the algebra. The equation of motion supplies a differential operator, and a differential operator has many distributional inverses; the algebra supplies the operator $\tilde{\nabla}$ (or its second-order companion $\tilde{\nabla}\tilde{\nabla}^{\natural}$) and hence the same many inverses. Distinguishing the Feynman one requires a condition that is not an equation of motion. The complex structure enters when that condition is *represented* — as a contour in $\mathbb{C}_{\mathbb{B}}$, or as a point in the complexified time plane — and not when it is *chosen*.
 
@@ -204,7 +204,7 @@ $$
 S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\gamma_{\mu} p_{\mu}+m}{p^2-m^2+i\epsilon}.
 $$
 
-The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
+The $p_0$ integral has poles at $p_0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
 
 Writing the wave biquaternion $\tilde{P}=iE\,e_t+\vec p$, so that $\tilde{P}\tilde{P}^{\natural}=-p^2$, the propagator amplitude becomes
 

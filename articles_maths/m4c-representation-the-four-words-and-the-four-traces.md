@@ -6,7 +6,7 @@ The four products of the biquaternion algebra become four words in the regular m
 
 This article writes the dictionary. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*, and the proof is the same trace identity with the normalization changed.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant*. Write
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant*. Write
 $$
 X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4^{L}(\tilde R).
 $$

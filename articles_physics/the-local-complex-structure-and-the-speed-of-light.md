@@ -74,7 +74,7 @@ The way out is not to look for a better $J$ but to change the space: **complexif
 
 ### The global $ict'$ is a coordinate device
 
-The $ict'$ convention is often described as making the complex structure global. It is worth being exact about what is global there. The substitution $x^0=ic_0t'$ is a change of coordinates, and it converts the Minkowski interval into a Euclidean form,
+The $ict'$ convention is often described as making the complex structure global. It is worth being exact about what is global there. The substitution $x_0=ic_0t'$ is a change of coordinates, and it converts the Minkowski interval into a Euclidean form,
 $$
 ds^2=(ic_0\,dt')^2+dx^2+dy^2+dz^2 .
 $$
@@ -201,7 +201,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$ | d'Alembertian |
-| $x^0=ict'$ | Complex time coordinate |
+| $x_0=ict'$ | Complex time coordinate |
 
 ## Further Reading
 

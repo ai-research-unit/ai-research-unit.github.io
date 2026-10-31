@@ -96,10 +96,10 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Three Eigenspace Decompositions](../articles_maths/the-three-eigenspace-decompositions.html)
 - [The Square of an Element](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html)
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html)
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](../articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html)
+- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](../articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](../articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html)
 
 #### The Frame
 
@@ -107,8 +107,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Idempotents](../articles_maths/idempotents.html)
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
 
 #### The Modules
 
@@ -120,19 +120,19 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Element
 
 - [The Spectrum](../articles_maths/the-spectrum.html)
-- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](../articles_maths/m2c-model-the-spectral-projectors.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Spectral Projectors](../articles_maths/m4c-model-the-spectral-projectors.html)
+- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](../articles_maths/m2c-model-the-spectral-projectors.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Spectral Projectors](../articles_maths/m4c-model-the-spectral-projectors.html)
 - [The Centraliser](../articles_maths/the-centraliser.html)
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](../articles_maths/m2c-model-the-centraliser-and-the-double-centraliser.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser](../articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html)
+- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](../articles_maths/m2c-model-the-centraliser-and-the-double-centraliser.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser](../articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html)
 - [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html)
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
 - [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
-- [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html)
+- [$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html)
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html)
 - [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html)
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](../articles_maths/m2c-representation-worked-examples.html)
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Worked Examples](../articles_maths/m4c-representation-worked-examples.html)

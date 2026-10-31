@@ -4,13 +4,13 @@
 
 **The subject.** The endomorphism algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is fixed in *The Endomorphisms of the Biquaternion Algebra* as an algebra of complex dimension sixteen. This article fixes its **display**: the matrix of a general operator in a frame, the law of change of that matrix, the invariants read on it, the units of the operator space, the two frames of the corpus and the change between them.
 
-**What it defines.** Three glyphs are fixed here for the whole operator group: the bracket $[F]_{\mathcal{B}}$, the matrix units $E_{ij}$ in the coefficient frame, and the Peirce change $C_{\Pi}$. The bracket is new; the units are the matrix units of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, written here in the coefficient frame; the change is the one of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, §*The Algebra in Matrix Form*. The article fixes their use in the operator space and repeats no definition that those articles already give.
+**What it defines.** Three glyphs are fixed here for the whole operator group: the bracket $[F]_{\mathcal{B}}$, the matrix units $E_{ij}$ in the coefficient frame, and the Peirce change $C_{\Pi}$. The bracket is new; the units are the matrix units of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, written here in the coefficient frame; the change is the one of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, §*The Algebra in Matrix Form*. The article fixes their use in the operator space and repeats no definition that those articles already give.
 
 **What it does not do.** It states no property of the four families $L$, $R$, $T$, $\Theta$. It does not prove that a family is closed under anything, that it has a dimension, or that it sits inside another. The closing section counts the defining data of the four families and stops at the count. The definitions and the properties are the subject of Parts II, III, IV and V.
 
 **The matrix is not canonical.** A matrix is the display of an operator in a frame. There is no frame-free matrix, and this article never writes "the matrix of $F$" without a frame. The invariants of §*Trace, Determinant, Spectrum, Rank* are the exception that proves the rule: they are read on a matrix and belong to the operator.
 
-**Boundaries.** The algebra and its basis are *The Biquaternion Algebra*; the operator space and its dimension are *The Endomorphisms of the Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the Peirce decomposition is *Special Element and Peirce Conventions*; the two frames and their use are *Matrix Representations Conventions*, §*The Matrix Models*.
+**Boundaries.** The algebra and its basis are *The Biquaternion Algebra*; the operator space and its dimension are *The Endomorphisms of the Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*; the Peirce decomposition is *Special Element and Peirce Conventions*; the two frames and their use are *Matrix Representations Conventions*, §*The Matrix Models*.
 
 ## The Matrix in a Basis
 
@@ -257,7 +257,7 @@ C_{\Pi}^{-1}=\begin{pmatrix}
 \end{pmatrix},
 $$
 
-and $\det C_{\Pi}=-\tfrac14$. The change is the one of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, §*The Algebra in Matrix Form*; the display is repeated here because every operator article uses it.
+and $\det C_{\Pi}=-\tfrac14$. The change is the one of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, §*The Algebra in Matrix Form*; the display is repeated here because every operator article uses it.
 
 **The direction.** The columns of $C_{\Pi}$ are the Peirce elements in coefficient coordinates, so $C_{\Pi}$ carries a Peirce coordinate column to a coefficient coordinate column:
 
@@ -340,7 +340,7 @@ A general operator has sixteen entries and no canonical form. The four families 
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra of matrices and its units.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the two frames and the regular representation.
 - [Special Element and Peirce Conventions](conventions-of-the-special-elements-and-the-peirce-decomposition.html), for the matrix units and the Peirce decomposition.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the Peirce change and its inverse.
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the Peirce change and its inverse.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the first family and its matrix.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the second family and its matrix.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the third family and its criteria.

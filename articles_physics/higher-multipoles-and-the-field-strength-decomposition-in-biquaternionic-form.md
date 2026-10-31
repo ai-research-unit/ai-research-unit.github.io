@@ -58,7 +58,7 @@ $$
 whose expansion in powers of $k\vec u\cdot(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
 
 $$
-k^0:\ E_1 ,
+k_0:\ E_1 ,
 \qquad
 k^1:\ M_1,\ E_2 ,
 \qquad
@@ -69,7 +69,7 @@ k^2:\ \mathsf{M}_2,\ E_3 ,
 k^n:\ M_n,\ E_{n+1} .
 $$
 
-The pairing is worth holding on to: at each order in $k$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k$, the electric octupole and the magnetic quadrupole at order $k^2$, and so on. The electric dipole stands alone at order $k^0$: there is no magnetic term at that order.
+The pairing is worth holding on to: at each order in $k$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k$, the electric octupole and the magnetic quadrupole at order $k^2$, and so on. The electric dipole stands alone at order $k_0$: there is no magnetic term at that order.
 
 ### The Vector Spherical Harmonics
 

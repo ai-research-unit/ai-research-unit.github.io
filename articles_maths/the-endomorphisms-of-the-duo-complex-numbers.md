@@ -170,8 +170,8 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 - [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
 - [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-the-duo-complex-numbers.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the matrix computations of the product, the trace and the determinant.
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single matrix and the bicommutant.
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the matrix computations of the product, the trace and the determinant.
+- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single matrix and the bicommutant.
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the groups and the determinant.
 - [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m2c-representation-the-projective-line-and-the-mobius-action.html), for the action on $\mathbb{CP}^1$.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its isomorphism with $M_2(\mathbb{C})$.

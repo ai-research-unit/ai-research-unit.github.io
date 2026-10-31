@@ -32,16 +32,16 @@ which is the property that distinguishes it from the inner automorphisms impleme
 
 ### The Action on Spinors
 
-On spinors the pseudoautomorphism acts through the antisymmetric symbol. The spinor slots are written low on both sides; the bar marks the conjugate representation and carries the conjugation. If $\xi_{\alpha}$ is a spinor of the fundamental representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, the conjugated spinor is
+On spinors the pseudoautomorphism acts through the antisymmetric symbol. If $\xi^{\alpha}$ is a spinor of the fundamental representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, the conjugated spinor is
 
 $$
-\bar{\xi}_{\bar{\alpha}}=\Pi_{\bar{\alpha}\alpha}\,\xi_{\alpha},
+\bar{\xi}^{\,\bar{\alpha}}=\Pi^{\bar{\alpha}\alpha}\,\xi_{\alpha},
 $$
 
 and conjugating twice returns
 
 $$
-\boxed{\;\bar{\bar{\xi}}_{\alpha}=\Pi_{\alpha\bar{\alpha}}\bigl(\Pi_{\beta\bar{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi_{\alpha}\;},
+\boxed{\;\bar{\bar{\xi}}^{\,\alpha}=\Pi^{\alpha\bar{\alpha}}\bigl(\Pi^{\beta\bar{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi^{\alpha}\;},
 $$
 
 the sign being that of $\Pi\bar{\Pi}$ — the product of $\Pi$ with its own conjugate — so that the relation between a particle and its antiparticle is controlled entirely by $\Pi$. This is the first appearance of the division ring in the question: the allowed matrices $\Pi$ are not arbitrary, and which ones occur is fixed by the algebra's division ring.
@@ -105,7 +105,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 **Established, and recomputed.**
 
 - The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\gamma_{\vec u_a}\Pi^{-1}=-\gamma_{\vec u_a}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
-- The twice-conjugated spinor is $\bar{\bar{\xi}}_{\alpha}=\pm\xi_{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
+- The twice-conjugated spinor is $\bar{\bar{\xi}}^{\,\alpha}=\pm\xi^{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
 - Over a real division ring the matrix is $\Pi\propto I$ and the pseudoautomorphism is the identity; the corresponding particles are truly neutral. The three charge classes $+1$, $0$, $\bar{0}$ are respectively the complex representations, the real quaternionic representations, and the real representations of real type.
 
 **Transcribed, not derived.**
@@ -146,7 +146,7 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
 | $\Pi$ | Charge-conjugation matrix; $\Pi\gamma_{\vec u_a}\Pi^{-1}=-\gamma_{\vec u_a}$, fixed only up to a scalar |
-| $\bar{\xi}_{\bar\alpha}=\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
+| $\bar{\xi}^{\,\bar\alpha}=\Pi^{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
 | $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
 | $C[\psi]=i\gamma_{2}\psi^{*}$ | Module form of charge conjugation (CPT article) |
 | $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |

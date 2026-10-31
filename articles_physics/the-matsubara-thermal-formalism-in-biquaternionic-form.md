@@ -86,9 +86,9 @@ $$
 \exp(i\omega_n(\tau+\beta))=-\exp(i\omega_n\tau) \Rightarrow \omega_n=\frac{(2n+1)\pi}{\beta},
 \qquad n\in\mathbb{Z},
 $$
-which are the **bosonic** and **fermionic Matsubara frequencies**. The discrete spectrum replaces the continuous $p^0$ integral of the vacuum theory by a sum:
+which are the **bosonic** and **fermionic Matsubara frequencies**. The discrete spectrum replaces the continuous $p_0$ integral of the vacuum theory by a sum:
 $$
-\int\frac{dp^0}{2\pi}\,f(p^0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
+\int\frac{dp^0}{2\pi}\,f(p_0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
 $$
 and the corresponding thermal wave biquaternion is the material element $\tilde P_E=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_E,\tilde P_E\rangle_{*}=\omega_n^2+\vec p^2=k_E^2$.
 
@@ -215,7 +215,7 @@ and the passage from the discrete grid to the real axis is the **analytic contin
 
 The interaction theory is the vacuum perturbation theory with the discrete sums and the modified propagator, and the framework's conventions pass through unchanged.
 
-**The rules.** Each internal line is the Euclidean propagator $D_E(\tilde P_E)=1/(k_E^2+m^2)$ with $k_E^0$ drawn from the appropriate frequency set; each internal frequency is summed as $(1/\beta)\sum_n$; each vertex is $-S_{\mathrm{int}}$ as in the vacuum theory, with the conservation of the discrete frequency imposed by the vertex; and the external legs are on the Matsubara grid, or continued to real frequency for a real-time response. The Euclidean theory is the analytic continuation of the real-time ones, and the retarded and advanced propagators are recovered by continuation from the discrete grid, as the propagator article notes for the thermal case.
+**The rules.** Each internal line is the Euclidean propagator $D_E(\tilde P_E)=1/(k_E^2+m^2)$ with $k_{E,0}$ drawn from the appropriate frequency set; each internal frequency is summed as $(1/\beta)\sum_n$; each vertex is $-S_{\mathrm{int}}$ as in the vacuum theory, with the conservation of the discrete frequency imposed by the vertex; and the external legs are on the Matsubara grid, or continued to real frequency for a real-time response. The Euclidean theory is the analytic continuation of the real-time ones, and the retarded and advanced propagators are recovered by continuation from the discrete grid, as the propagator article notes for the thermal case.
 
 **The zero mode.** The $n=0$ bosonic mode, $\omega_0=0$, is special: it is static, its Euclidean propagator is $1/(\vec p^2+m^2)$, and for a massless field it contributes a non-analytic zero mode that is the origin of the infrared problems of thermal field theory and of the dimensional reduction of the high-temperature limit. In the framework the zero mode is the mode whose phase is independent of the material time, i.e. constant along the thermal circle; it is the material-sector analogue of a topological sector, and it is where the thermal circle's compactification is most visible.
 

@@ -198,7 +198,7 @@ A_\mu(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
 \right],
 $$
 
-with $p^0=\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$. The mode operators satisfy the bosonic commutators
+with $p_0=\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$. The mode operators satisfy the bosonic commutators
 
 $$
 \left[a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\right]

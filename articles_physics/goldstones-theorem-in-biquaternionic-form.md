@@ -55,7 +55,7 @@ is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the compon
 Three consequences must be distinguished, because they are often conflated.
 
 - **The symmetry is still a symmetry of the dynamics.** The current is conserved, and the generator, where it is defined, commutes with the Hamiltonian; what fails is that the vacuum is not invariant, $U^{\mathrm{fop}}_\alpha|0\rangle\ne|0\rangle$ up to a phase.
-- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J^0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
+- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J_0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
 - **The order parameter is central.** This is the framework's structural statement: the field whose modulus is the order parameter is central-valued, so the breaking is a breaking of a symmetry acting on the centre. The Goldstone mode that results is likewise central-valued, and the theorem's content is entirely within the scalar sector.
 
 ## The Potential, the Vacuum Manifold and the Order Parameter
@@ -135,7 +135,7 @@ The broken symmetry's current is the Noether current of the companion article. O
 $$
 \tilde J=i\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
 \qquad
-Ϙ=\int d^3x\,J^0 ,
+Ϙ=\int d^3x\,J_0 ,
 $$
 
 which in the real components is
@@ -169,7 +169,7 @@ $$
 \qquad
 f=\sqrt2\,v,
 $$
-so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J^0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
+so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J_0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
 
 ## The Theorem and Its Proof
 
@@ -181,7 +181,7 @@ $$
 \langle0|\big[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}(0)\big]|0\rangle\ne0 ,
 $$
 
-and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J^0$, the current–field commutator cannot vanish identically. Define the matrix element
+and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J_0$, the current–field commutator cannot vanish identically. Define the matrix element
 
 $$
 F(x-y)=\langle0|\big[\tilde J(x),\phi^{\mathrm{fop}}(y)\big]|0\rangle ,

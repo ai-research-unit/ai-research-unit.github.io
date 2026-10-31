@@ -1,12 +1,12 @@
-# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
+# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes__
 
 ## Introduction
 
 The left regular matrix reads a biquaternion as an operator on its own four-dimensional complex space. It is an injective algebra map whose image is a four-dimensional subalgebra of $M_4(\mathbb{C})$. In the Peirce basis the image is block diagonal with two identical $2\times2$ blocks, and the two blocks are the two spinor planes.
 
-This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions in the $4\times4$ model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. It uses no form, no norm and no module.
+This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions in the $4\times4$ model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*. It uses no form, no norm and no module.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant*: in the canonical frame its $j$-th column is the coordinate column of $\tilde Q P_j$; in the coefficient basis, where $P_j=e_j$, this is the coordinate column of $\tilde Q e_j$. The standard pair and the standard nilpotents are
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant*: in the canonical frame its $j$-th column is the coordinate column of $\tilde Q P_j$; in the coefficient basis, where $P_j=e_j$, this is the coordinate column of $\tilde Q e_j$. The standard pair and the standard nilpotents are
 
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -37,7 +37,7 @@ $$
 
 and the Peirce change $C_{\Pi}$, whose columns are these four elements in coefficient coordinates, carries the Peirce column to the coefficient column: $\mathsf M_{4,\mathrm{coef}}^{L}=C_{\Pi}\,(I_2\otimes\mathsf M_2)\,C_{\Pi}^{-1}$.
 
-**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
+**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
 
 **Frame.** Unless a basis is named, matrices are written in the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*, the same operator reads $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))C_{\Pi}^{-1}$ there.
 
@@ -162,7 +162,7 @@ so the four corner coordinates and the four coefficients carry the same informat
 
 **The four Peirce elements are a system of $2\times2$ matrix units inside a four-dimensional algebra; they are not a system of $4\times4$ matrix units, and the regular model shows why.**
 
-A system of $2\times2$ matrix units is a family $\{E_{ij}\}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $E_{11}+E_{22}=e_t$. The four Peirce elements satisfy the relations of §*Systems of Matrix Units* of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. In the regular model each of them goes to a rank-two matrix, because the regular representation doubles every element: the image of $E_{ij}$ is $E_{ij}\otimes\mathrm I_2$, the block matrix with $E_{ij}$ in each diagonal block.
+A system of $2\times2$ matrix units is a family $\{E_{ij}\}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $E_{11}+E_{22}=e_t$. The four Peirce elements satisfy the relations of §*Systems of Matrix Units* of *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*. In the regular model each of them goes to a rank-two matrix, because the regular representation doubles every element: the image of $E_{ij}$ is $E_{ij}\otimes\mathrm I_2$, the block matrix with $E_{ij}$ in each diagonal block.
 
 This is not a system of $4\times4$ matrix units. Such a system would have sixteen elements, and the image of $\mathbb{B}$ has dimension four. The regular model carries one system of $2\times2$ units, duplicated; it does not carry the sixteen units of $M_4(\mathbb{C})$.
 
@@ -197,7 +197,7 @@ $$
 L_{\tilde P}|_{S_+}=L_{\tilde P}|_{S_-}=\mathsf M_2(\tilde P).
 $$
 
-This is the matrix form of the proposition of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*. The two copies are the two chiralities, and left multiplication never mixes them.
+This is the matrix form of the proposition of *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*. The two copies are the two chiralities, and left multiplication never mixes them.
 
 **A caution about the projector.** The column space of $\mathsf{M}_4^{L}(\tilde\Pi_+)$ is not $S_+$. It is the image of left multiplication by $\tilde\Pi_+$, which is $\tilde\Pi_+\mathbb{B}$, the right Peirce row $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$; in the Peirce basis it is the first and third coordinates. A rank-two idempotent matrix projects onto the row generated by its idempotent, not onto the plane that the idempotent generates from the left. The two planes of this section are the two blocks, not the column spaces of the two idempotents.
 
@@ -242,7 +242,7 @@ The Peirce coordinates of the standard pair are the entries of the $2\times2$ mo
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the Peirce table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their adapted bases and the exchange
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
-- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ version
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
+- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
 - [Nilpotents](nilpotents.html), for the nilpotent cone

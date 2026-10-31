@@ -1,14 +1,14 @@
-# __$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser__
+# __$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser__
 
 ## Introduction
 
 For a non-scalar matrix the elements commuting with it form a commutative algebra, the plane of polynomials in the matrix, of complex dimension two; for a scalar matrix the commutant is the whole matrix algebra, of complex dimension four, which is not commutative. The double centraliser returns the same algebra in every case.
 
-This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*, §*The Commutant*.
+This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*, §*The Commutant*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The matrix of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$, and $\mathbb{C}[X]$ is the algebra of polynomials in $X$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The matrix of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$, and $\mathbb{C}[X]$ is the algebra of polynomials in $X$.
 
-**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *The Centraliser* and *The Category of Modules*, §*Endomorphisms and the Standard Bimodule*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
+**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *The Centraliser* and *The Category of Modules*, §*Endomorphisms and the Standard Bimodule*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors*.
 
 ## The Commutant
 
@@ -154,7 +154,7 @@ The commutant of a non-scalar $2\times2$ matrix is the plane $\mathbb{C}[X]=\ope
 ## Further Reading
 
 - [The Category of Modules](the-category-of-modules.html), for the commutant of an element and the double centraliser theorem
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis and its construction
-- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the projectors and the Jordan types
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis and its construction
+- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the projectors and the Jordan types
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the use of the commutant in both reductions
 - [Idempotents](idempotents.html), for the spectral projectors in the algebra

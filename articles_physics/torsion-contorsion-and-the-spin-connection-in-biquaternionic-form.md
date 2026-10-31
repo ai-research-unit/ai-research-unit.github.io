@@ -98,7 +98,7 @@ with $\omega_{ab\mu}(e)$ the Levi-Civita spin connection of the tetrad alone and
 
 Two exact statements were checked here, with a two-dimensional tetrad whose components depend on the time coordinate, in exact rational arithmetic.
 
-**The tetrad postulate is satisfiable with a non-flat tetrad.** For $\exp(a){}_\mu = \delta^a{}_\mu + x^0 M^a{}_\mu$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu \exp(a){}_\nu = 0$ identically.
+**The tetrad postulate is satisfiable with a non-flat tetrad.** For $\exp(a){}_\mu = \delta^a{}_\mu + x_0M^a{}_\mu$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu \exp(a){}_\nu = 0$ identically.
 
 **The Weitzenböck connection is curvature-free and torsionful.** The connection built from the tetrad alone,
 

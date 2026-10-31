@@ -126,7 +126,7 @@ for $B_0$. The reduction is the representation-theoretic content behind "the eig
 
 ## The Gell-Mann–Okubo Mass Formula
 
-Within a supermultiplet the particles have different masses; the difference is the mass splitting, and $\mathrm{SU}(3)$ symmetry alone predicts its form. The programme's account follows the **Zeeman analogy**. In the atomic Zeeman effect the energy operator splits as $H=H_0+H_1$ with $H_1=d_{\alpha\beta}H_{\alpha\beta}$, a magnetic moment contracted with the field; the mass operator of a supermultiplet splits in the same way,
+Within a supermultiplet the particles have different masses; the difference is the mass splitting, and $\mathrm{SU}(3)$ symmetry alone predicts its form. The programme's account follows the **Zeeman analogy**. In the atomic Zeeman effect the energy operator splits as $H=H_0+H_1$ with $H_1=d_{\alpha\beta}H^{\alpha\beta}$, a magnetic moment contracted with the field; the mass operator of a supermultiplet splits in the same way,
 
 $$
 m^2 = m_0^2+\delta m^2,

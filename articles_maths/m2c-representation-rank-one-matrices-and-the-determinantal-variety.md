@@ -6,7 +6,7 @@ The zero divisors of the biquaternion algebra are the nonzero elements of vanish
 
 This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of *The N-Degenerate Sector*, §*The Stratification of the Cone*, and of *The Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Coordinates and the Matrix Model*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $N=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The standard idempotents are $\tilde\Pi_\pm$ and the standard nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The norm is $N=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The standard idempotents are $\tilde\Pi_\pm$ and the standard nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$.
 
 **Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Nilpotents*; the rank-one elements and the Peirce corners are *The Peirce Decomposition of the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
@@ -164,7 +164,7 @@ E_{12}E_{21}=E_{11},\qquad E_{21}E_{12}=E_{22},\qquad
 E_{12}^2=E_{21}^2=0.
 $$
 
-The product of the two nilpotents is the idempotent of the opposite corner, and every rank-one idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+The product of the two nilpotents is the idempotent of the opposite corner, and every rank-one idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 **The scaled idempotent.** A rank-one idempotent is not nilpotent: $P^2=P$ and $P\neq0$. It is nevertheless a zero divisor, because $P(e_t-P)=0$ and $e_t-P\neq0$; its annihilator is the ideal of the complementary line. The distinction between the idempotent and the nilpotent is the distinction between the non-pure and the pure strata.
 
@@ -190,6 +190,6 @@ A nonzero singular matrix has rank one and factorises as $uv^{\mathsf T}$, uniqu
 - [Nilpotents](nilpotents.html), for the nilpotent cone
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the rank-one elements and the corners
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link and its topology
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for determinantal varieties

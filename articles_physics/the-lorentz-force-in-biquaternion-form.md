@@ -55,7 +55,7 @@ $$
 \tilde{K}_{\mathrm{f}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $K_\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict'$ convention, so the coefficient of $e_t$ is the $ict'$ time component $K^0$.
+This is the biquaternion transcription of the Minkowski force $K_\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict'$ convention, so the coefficient of $e_t$ is the $ict'$ time component $K_0$.
 
 **Origin in the field tensor.** The component form is the contraction $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$. In the $ict'$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
@@ -69,16 +69,16 @@ F_{\mu\nu} =
 \end{pmatrix},
 $$
 
-that is, $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$. The time component of the contraction is
+that is, $F_{0k} = iE_k/c$ and $F_{jk} = \epsilon_{jkl}B_l$. The time component of the contraction is
 
 $$
-K^0 = ϙ\,F^{0k}u_k = ϙ\,\frac{iE_k}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0k}u_k = ϙ\,\frac{iE_k}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$
 
 and the spatial components are
 
 $$
-K^k = ϙ\,F^{k0}u_0 + ϙ\,F^{kj}u_j
+K^k = ϙ\,F_{k0}u_0 + ϙ\,F^{kj}u_j
 = ϙ\left(-\frac{iE_k}{c}\right)(i\gamma c) + ϙ\,\epsilon_{kjl}B_l\,\gamma v_j
 = \gamma ϙ\,E_k + \gamma ϙ\left(\vec v\times\vec B\right)_k,
 $$
@@ -400,7 +400,7 @@ which, as shown above, is preserved by the Lorentz force because the force is or
 The biquaternion norm of the four-force itself,
 
 $$
-\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \langle\tilde{K}_{\mathrm{f}},\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \tilde{K}_{\mathrm{f}}\tilde{K}_{\mathrm{f}}^{\natural} = -\left(K^0\right)^2 + \left|\vec K\right|^2,
+\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \langle\tilde{K}_{\mathrm{f}},\tilde{K}_{\mathrm{f}}\rangle_{\natural} = \tilde{K}_{\mathrm{f}}\tilde{K}_{\mathrm{f}}^{\natural} = -\left(K_0\right)^2 + \left|\vec K\right|^2,
 $$
 
 is a Lorentz scalar; it is not conserved along the motion. Substituting the component form,
@@ -492,14 +492,14 @@ $$
 an element of $\mathbb{M}_+$ (Hermitian, unit norm). The rotor conjugation then reproduces the standard component transformation
 
 $$
-K_2^0 = \gamma_b\left(K^0 - i\,\frac{\vec v_b\cdot\vec K}{c}\right),
+K_2^0 = \gamma_b\left(K_0 - i\,\frac{\vec v_b\cdot\vec K}{c}\right),
 $$
 
 $$
-\vec K_2 = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K^0}{c}\,\vec v_b.
+\vec K_2 = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K_0}{c}\,\vec v_b.
 $$
 
-Written in the biquaternion variables, with $\tilde{K}_{\mathrm{f}} = K^0e_t + \vec K$ and $\tilde{K}_{\mathrm{f},2} = K_2^0e_t + \vec K_2$, these are exactly the components of $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
+Written in the biquaternion variables, with $\tilde{K}_{\mathrm{f}} = K_0e_t + \vec K$ and $\tilde{K}_{\mathrm{f},2} = K_2^0e_t + \vec K_2$, these are exactly the components of $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
 
 **How the field transforms.** The field strength is *not* a four-vector, and it does not transform like one. Under the same boost it transforms in the rank-two (bivector) representation,
 

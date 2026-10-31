@@ -90,7 +90,7 @@ It is a complex subspace of $\mathbb{B}$.
 
 *Proof.* $L_{\tilde Q}(X)=0$ is $\tilde QX=0$, which is the defining condition of the right annihilator.
 
-**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, where $\tilde Q$ is a $2\times2$ matrix:
+**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, where $\tilde Q$ is a $2\times2$ matrix:
 
 - if $\tilde Q$ is a unit, $\operatorname{Ann}_r(\tilde Q)=0$, of complex dimension $0$;
 - if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its kernel is a line, and the right annihilator is the complex two-dimensional space of matrices whose columns lie in that line;
@@ -191,6 +191,6 @@ The three statements — the law, the rank trichotomy and the criterion — are 
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the matrix of a general operator and the units.
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the other side and the exchange.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the determinant and the norm.
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the determinant and the norm.
 - [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $L$, the slots and the set names.

@@ -10,7 +10,7 @@ $$
 \nabla\varphi\,i\sigma_1 = m\varphi^{*} + qA\,\varphi ,
 $$
 
-where $\nabla = \partial/\partial x^0 + \sigma_2\partial/\partial Q_x + \sigma_3\partial/\partial Q_y + \sigma_1\partial/\partial Q_z$ is a gradient with the three space derivatives cyclically permuted among the Pauli units, $A = A_0 + A_1\sigma_2 + A_2\sigma_3 + A_3\sigma_1$ is the electromagnetic potential in the same basis, and $\varphi^{*} = \sigma_2\bar\varphi\,\sigma_2$ is the **star conjugation** of the algebra. The equation is a Dirac equation: the spinor has the right number of components, the mass term has the right structure, and the coupling is the minimal coupling. What is distinctive is that the spinor is not a column of four components but an element of the algebra itself, and that the equation acts on it partly from the left and partly from the right.
+where $\nabla = \partial/\partial x_0+ \sigma_2\partial/\partial Q_x + \sigma_3\partial/\partial Q_y + \sigma_1\partial/\partial Q_z$ is a gradient with the three space derivatives cyclically permuted among the Pauli units, $A = A_0 + A_1\sigma_2 + A_2\sigma_3 + A_3\sigma_1$ is the electromagnetic potential in the same basis, and $\varphi^{*} = \sigma_2\bar\varphi\,\sigma_2$ is the **star conjugation** of the algebra. The equation is a Dirac equation: the spinor has the right number of components, the mass term has the right structure, and the coupling is the minimal coupling. What is distinctive is that the spinor is not a column of four components but an element of the algebra itself, and that the equation acts on it partly from the left and partly from the right.
 
 The article is organised as follows. The space Clifford algebra is set up and identified with the biquaternion algebra, with the dictionary stated. The Daviau map is written down and its expansion on the basis verified. The star conjugation is analysed and identified with the corpus's complex conjugation — this is the article's main algebraic point. The equivalence of the Daviau equation with the Dirac–Hestenes equation is then stated and reduced to three explicit differences: the sign of the mass, a cyclic relabelling of the space basis, and the star. The right-hand multiplication is read through the algebra's bi-module structure. The article closes with the open questions and the usual summary.
 
@@ -132,14 +132,14 @@ $$
 with the gradient, the potential and the star
 
 $$
-\nabla = \partial/\partial x^0 + \sigma_2\partial/\partial Q_x + \sigma_3\partial/\partial Q_y + \sigma_1\partial/\partial Q_z,
+\nabla = \partial/\partial x_0+ \sigma_2\partial/\partial Q_x + \sigma_3\partial/\partial Q_y + \sigma_1\partial/\partial Q_z,
 \qquad
 A = A_0 + A_1\sigma_2 + A_2\sigma_3 + A_3\sigma_1,
 \qquad
 \varphi^{*} = \sigma_2\bar\varphi\sigma_2 ,
 $$
 
-where $\partial/\partial x^0$ and $\partial/\partial x^k=\partial/\partial x^k$ are the four derivatives and $A_\mu$ the four potential components. The equation is to be read in the algebra: $\nabla$ acts on $\varphi$ from the left through the first factor, and the factor $i\sigma_1$ multiplies on the right. The mass term is the **star** of the spinor, and the coupling term is the left multiplication by $A$.
+where $\partial/\partial x_0$ and $\partial/\partial x^k=\partial/\partial x^k$ are the four derivatives and $A_\mu$ the four potential components. The equation is to be read in the algebra: $\nabla$ acts on $\varphi$ from the left through the first factor, and the factor $i\sigma_1$ multiplies on the right. The mass term is the **star** of the spinor, and the coupling term is the left multiplication by $A$.
 
 **Proposition (the equation is a Dirac equation).** In the corpus's conventions the right factor is $i\sigma_1 = -\vec e_x$ and the star is the complex conjugation, so the Daviau equation reads
 
@@ -147,7 +147,7 @@ $$
 \mathfrak D\,\varphi\,(-\vec e_x) = m\,\varphi^{*} + q\,\tilde A\,\varphi ,
 $$
 
-where $\mathfrak D = \partial/\partial x^0 e_t + i \vec e_y\partial/\partial Q_x + i \vec e_z\partial/\partial Q_y + i \vec e_x\partial/\partial Q_z$ and $\tilde A = A_0 e_t + A_1 i\vec e_y + A_2 i\vec e_z + A_3 i\vec e_x$ are the corpus's elements whose matrix images are $\nabla$ and $A$. Every term is a biquaternion equation for a general biquaternion $\varphi$, with one left multiplication, one right multiplication and one conjugate-linear term.
+where $\mathfrak D = \partial/\partial x_0e_t + i \vec e_y\partial/\partial Q_x + i \vec e_z\partial/\partial Q_y + i \vec e_x\partial/\partial Q_z$ and $\tilde A = A_0 e_t + A_1 i\vec e_y + A_2 i\vec e_z + A_3 i\vec e_x$ are the corpus's elements whose matrix images are $\nabla$ and $A$. Every term is a biquaternion equation for a general biquaternion $\varphi$, with one left multiplication, one right multiplication and one conjugate-linear term.
 
 *Proof.* The dictionary of the first section gives $\mathsf{M}_2(\mathfrak D)=\nabla$, $\mathsf{M}_2(\tilde A)=A$, $\mathsf{M}_2(-\vec e_x)=i\sigma_1$ and $\mathsf{M}_2(\varphi^{*})=\sigma_2\bar\varphi\sigma_2$ by the star theorem. Applying $\mathsf{M}_2$ to the corpus form reproduces the Daviau form term by term.
 
@@ -212,7 +212,7 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $\varphi$ | Daviau spinor, a general element of $\mathcal P$ |
 | $a,\dots,h$ | The eight real parameters of $\varphi$ |
 | $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$ | The star conjugation; the corpus's complex conjugation $\bar{\cdot}$ |
-| $\nabla=\partial/\partial x^0+\sigma_2\partial/\partial Q_x+\sigma_3\partial/\partial Q_y+\sigma_1\partial/\partial Q_z$ | The cyclically permuted gradient |
+| $\nabla=\partial/\partial x_0+\sigma_2\partial/\partial Q_x+\sigma_3\partial/\partial Q_y+\sigma_1\partial/\partial Q_z$ | The cyclically permuted gradient |
 | $A=A_0+A_1\sigma_2+A_2\sigma_3+A_3\sigma_1$ | The potential in the same basis |
 | $\nabla\varphi\,i\sigma_1=m\varphi^{*}+qA\varphi$ | The Daviau equation |
 | $z\colon\sigma_k\mapsto\Sigma_{k-1}$ (cyclic) | The map relating the space and spacetime bases |

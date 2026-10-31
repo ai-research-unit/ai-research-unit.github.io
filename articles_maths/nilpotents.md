@@ -275,7 +275,7 @@ The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\vec p
 
 **Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the nilpotents are exactly the nonzero matrices that are trace-free and singular, equivalently the nonzero rank-one matrices conjugate to the strictly triangular matrix $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.**
 
-In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, the criterion becomes the linear algebra of a trace-free singular matrix.
+In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, the criterion becomes the linear algebra of a trace-free singular matrix.
 
 **Theorem.** Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde Q_1)=Q_{1t}\mathrm I_2-iQ_{1x}\sigma_1-iQ_{1y}\sigma_2-iQ_{1z}\sigma_3$, the following coincide: $\tilde Q_1$ is a nilpotent; $\mathsf M_2(\tilde Q_1)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde Q_1)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde Q_1)=2Q_{1t}=0$, and singular, $\det\mathsf M_2(\tilde Q_1)=C(\tilde Q_1)=0$.
 

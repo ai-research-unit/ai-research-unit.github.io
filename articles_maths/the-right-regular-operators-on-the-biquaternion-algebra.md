@@ -96,7 +96,7 @@ It is a complex subspace of $\mathbb{B}$.
 
 *Proof.* $R_{\tilde Q}(X)=0$ is $X\tilde Q=0$, which is the defining condition of the left annihilator.
 
-**The three cases.** In the $2\times2$ model of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, $X\tilde Q=0$ says that every row of $X$ is a left null vector of $\tilde Q$:
+**The three cases.** In the $2\times2$ model of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, $X\tilde Q=0$ says that every row of $X$ is a left null vector of $\tilde Q$:
 
 - if $\tilde Q$ is a unit, the left annihilator is $0$, of complex dimension $0$;
 - if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its left null space is a line, and the left annihilator is the complex two-dimensional space of matrices whose rows lie in that line;

@@ -161,7 +161,7 @@ without using any equation of motion: the divergence is a sum of terms that canc
 **The charge.** The charge
 
 $$
-B = \int d^3x\, B^0
+B = \int d^3x\, B_0
 $$
 
 is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_t$ at spatial infinity. Because $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).
@@ -179,13 +179,13 @@ $$
 which is the most general spherically symmetric map with the identity embedded at the origin, the winding-number density is
 
 $$
-B^0(r) = -\frac{1}{2\pi^2}\,\frac{\sin^2 F(r)\,\frac{dF}{dr}(r)}{r^2} ,
+B_0(r) = -\frac{1}{2\pi^2}\,\frac{\sin^2 F(r)\,\frac{dF}{dr}(r)}{r^2} ,
 $$
 
 and the charge reduces to the radial integral
 
 $$
-\boxed{\;B = 4\pi\int_0^\infty r^2 B^0(r)\,dr
+\boxed{\;B = 4\pi\int_0^\infty r^2 B_0(r)\,dr
 = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr
 = \frac{1}{\pi}\Big[F - \frac12\sin 2F\Big]_{F(\infty)}^{F(0)}\;}
 $$
@@ -256,7 +256,7 @@ B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\,\
 \sum_\mu\varepsilon_\mu\,\partial_\mu B_\mu = 0 \text{ identically.}
 $$
 
-For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
+For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
 
 The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.
 
@@ -276,10 +276,10 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $\mathcal{L}_4 = \frac{1}{16e^2}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ | Skyrme term |
 | $f_\pi, e$ | Decay constant; dimensionless Skyrme parameter |
 | $B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
-| $B = \int d^3x\,B^0$ | Winding number; baryon number |
+| $B = \int d^3x\,B_0$ | Winding number; baryon number |
 | $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
 | $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$ | Hedgehog ansatz |
-| $B^0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |
+| $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |
 | $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$ | Hedgehog winding number |
 | $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |
 | $F(0) = \pi$, $F(\infty) = 0$ | Boundary conditions of the unit-charge skyrmion |

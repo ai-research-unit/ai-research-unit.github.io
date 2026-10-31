@@ -35,16 +35,16 @@ $$
 \varepsilon_0 = i\,e_t, \qquad \varepsilon_1 = \vec e_x, \qquad \varepsilon_2 = \vec e_y, \qquad \varepsilon_3 = \vec e_z,
 $$
 
-which is the basis used in the parent article; its Gram matrix is $\eta_{\mu\nu} = \langle \varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1, 1, 1, 1)$. This is the metric of the material sector, and it is the flat background of the linearized theory. Second, the coordinates in which the components $h_{\mu\nu}$ are written are the **real** components of the frame, $x_\mu = (ct', x, y, z)$, so that a four-vector is $\tilde{Q} = X_\mu\varepsilon_\mu$ and $X^0 = ct'$. The framework's imaginary time is related to the same coordinate by $ict' = i\,x^0$, so
+which is the basis used in the parent article; its Gram matrix is $\eta_{\mu\nu} = \langle \varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1, 1, 1, 1)$. This is the metric of the material sector, and it is the flat background of the linearized theory. Second, the coordinates in which the components $h_{\mu\nu}$ are written are the **real** components of the frame, $x_\mu = (ct', x, y, z)$, so that a four-vector is $\tilde{Q} = X_\mu\varepsilon_\mu$ and $X_0 = ct'$. The framework's imaginary time is related to the same coordinate by $ict' = i\,x_0$, so
 
 $$
-\partial/\partial Q_t = -i\,\partial/\partial x^0, \qquad \partial/\partial x^0 = \frac{\partial}{\partial(ct')},
+\partial/\partial Q_t = -i\,\partial/\partial x_0, \qquad \partial/\partial x_0= \frac{\partial}{\partial(ct')},
 $$
 
 and therefore
 
 $$
-\Box = \partial^2/\partial Q_t^2 + \Delta = -\partial^2/\partial(x^0)^2 + \Delta = \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial x_\mu\partial x_\nu .
+\Box = \partial^2/\partial Q_t^2 + \Delta = -\partial^2/\partial(x_0)^2 + \Delta = \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial x_\mu\partial x_\nu .
 $$
 
 Both the biquaternionic d'Alembertian and the tensorial wave operator are the same operator in these coordinates; only the naming of the time variable differs. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
@@ -404,8 +404,8 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\varepsilon_\mu = (ie_t, \vec e_x, \vec e_y, \vec e_z)$ | Material basis of $\mathbb{M}_-$ |
 | $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ | Flat metric of the material sector |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $x_\mu = (ct',x,y,z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; $ict' = i x^0$ |
-| $\partial/\partial Q_t = -i\partial/\partial x^0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x^0$ |
+| $x_\mu = (ct',x,y,z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; $ict' = i x_0$ |
+| $\partial/\partial Q_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial x_\mu\partial x_\nu$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$ | Linearized metric |
 | $\tilde{E}_\mu = \varepsilon_\mu + \delta\tilde{E}_\mu$ | Frame field and frame perturbation, $\delta\tilde{E}_\mu \in \mathbb{M}_-$ |

@@ -18,11 +18,11 @@ The FW transformation is best stated for the Hamiltonian form of the Dirac equat
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
-H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
+H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA_0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
 
-where $\vec p = -i\hbar\vec\nabla$, $A^0$ is the electrostatic potential, and we have used $\gamma_0\gamma_0 = I_4$. In the Dirac representation the matrices are
+where $\vec p = -i\hbar\vec\nabla$, $A_0$ is the electrostatic potential, and we have used $\gamma_0\gamma_0 = I_4$. In the Dirac representation the matrices are
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
@@ -33,7 +33,7 @@ $$
 and they satisfy $\beta^2 = I_4$, $(\alpha^k)^2 = I_4$, $\{\alpha^j,\alpha^k\} = 2\delta^{jk}I_4$, $\{\alpha^k,\beta\} = 0$. The Hamiltonian splits into an **even** part and an **odd** part,
 
 $$
-H = \beta mc^2 + \underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O} + \underbrace{ϙA^0}_{\textstyle\mathcal{E}},
+H = \beta mc^2 + \underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O} + \underbrace{ϙA_0}_{\textstyle\mathcal{E}},
 $$
 
 where even and odd are defined by conjugation with $\beta$,
@@ -203,12 +203,12 @@ The transformation can now be located in the two gradings of the algebra, and th
 With an external electromagnetic field, $\vec\pi = \vec p-ϙ\vec A$ and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. To order $1/c^2$ the upper block is the Pauli Hamiltonian
 
 $$
-\boxed{\;H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA^0 - \frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
+\boxed{\;H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA_0 - \frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
 - \frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
-+ \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0)\;},
++ \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0)\;},
 $$
 
-whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
+whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A_0$, where the identity $\nabla\cdot\vec E = -\nabla^2A_0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
 
 The lower block is the same Hamiltonian with the sign of the mass reversed, i.e. the negative-energy (antiparticle) sector, and the two blocks are exactly degenerate at this order. The splitting between them, $2mc^2$, is the mass gap that the transformation has made manifest. This is the sense in which the FW transformation "separates particles from antiparticles": not by projecting them apart, which the fields do not allow, but by diagonalising the Hamiltonian so that the gap is explicit and the mixing is small.
 

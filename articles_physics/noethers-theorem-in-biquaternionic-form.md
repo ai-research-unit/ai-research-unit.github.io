@@ -99,7 +99,7 @@ $$
 \qquad (\tilde{\Phi} = \phi\,e_t).
 $$
 
-**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J^0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
+**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
 
 **Conservation.** Forming the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 

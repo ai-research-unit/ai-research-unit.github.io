@@ -16,7 +16,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 
 ### The field and its equation
 
-The Rarita–Schwinger field is a vector-spinor: Both slots are written low, the vector slot first and the spinor slot second. a four-vector index and a Dirac spinor index, written $\psi_{\mu\alpha}$ with $\mu=0,1,2,3$ and $\alpha=1,\dots,4$. In the massless case the equation is
+The Rarita–Schwinger field is a vector-spinor: a four-vector index and a Dirac spinor index, written $\psi_\mu{}^\alpha$ with $\mu=0,1,2,3$ and $\alpha=1,\dots,4$. In the massless case the equation is
 
 $$
 \epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x_\rho\,\psi_\sigma = 0,
@@ -185,7 +185,7 @@ The frame $\gamma_0$ is an invertible cell and the reading is injective, so the 
 $$
 \Gamma_{\mu\nu}\longmapsto\gamma_{\mu\nu},
 \qquad
-\Gamma^{0k}=i\vec e_k,\quad \Gamma^{k0}=-i\vec e_k,\quad
+\Gamma_{0k}=i\vec e_k,\quad \Gamma_{k0}=-i\vec e_k,\quad
 \Gamma^{jk}=\pm\vec e_l ,
 $$
 with $\Gamma^{00}=0$ and the sign of $\Gamma^{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$, as in *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*.
@@ -365,7 +365,7 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $\epsilon$ | Dirac-spinor parameter of the massless shift symmetry |
 | $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ | Clifford generators, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\gamma_{\mu\nu}=\tfrac12[\gamma_\mu,\gamma_\nu]$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma_{\mu\nu}$ |
-| $\Gamma^{0k}=i\vec e_k$, $\Gamma^{k0}=-i\vec e_k$, $\Gamma^{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
+| $\Gamma_{0k}=i\vec e_k$, $\Gamma_{k0}=-i\vec e_k$, $\Gamma^{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
 | $\gamma_{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
 | $\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x_\rho\,\psi_\sigma=-i\,\gamma_{\mu\sigma\rho}\partial/\partial x_\rho\,\psi_\sigma$ | Duality identity relating the two writings of the equation |
 | $\tilde{\Psi}^{\text{tr}}=\sum_\mu\hat e_\mu\tilde{\Psi}_\mu$ | Trace constraint in $\mathbb{B}$, image of $\gamma_\mu\psi_\mu=0$ |

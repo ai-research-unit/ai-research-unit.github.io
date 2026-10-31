@@ -26,7 +26,7 @@ The component description consists of four objects and two operations.
 $$
 F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+i\kappa[A_\mu,A_\nu],
 \qquad
-D_\mu F^{\mu\nu}=J^\nu,
+\sum_\mu D_\mu F_{\mu\nu}=J_\nu,
 \qquad
 D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0.
 $$

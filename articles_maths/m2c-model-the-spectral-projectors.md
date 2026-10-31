@@ -1,12 +1,12 @@
-# __$M_2(\mathbb{C})$ Model : The Spectral Projectors__
+# __$M_2(\mathbb{C})$ Representation : The Spectral Projectors__
 
 ## Introduction
 
 A spectrally regular biquaternion has two distinct eigenvalues, and the matrix model turns its spectral decomposition into a pair of complementary rank-one projectors. The projectors are polynomials in the matrix, their columns are the eigenvectors, and the two mixed Peirce elements are the nilpotents that complete the eigenbasis.
 
-This article develops the projectors and the nilpotents in the matrix model. It is the matrix form of *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, §*The Eigenprojections in the Model*, and it uses the eigenbasis of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+This article develops the projectors and the nilpotents in the matrix model. It is the matrix form of *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, §*The Eigenprojections in the Model*, and it uses the eigenbasis of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The spectral direction is
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The spectral direction is
 
 $$
 \vec\Xi=-\frac{i}{B}\vec Q,\qquad
@@ -15,7 +15,7 @@ $$
 
 and $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *The Spectrum*; the eigenbasis construction is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Nilpotents*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the eigenbasis construction is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Nilpotents*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Spectral Projectors
 
@@ -125,7 +125,7 @@ $$
 
 ## The Nilpotents
 
-**Definition.** Let $\mathsf C_Q$ be the diagonalising matrix of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*. The two spectral nilpotents are
+**Definition.** Let $\mathsf C_Q$ be the diagonalising matrix of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*. The two spectral nilpotents are
 
 $$
 N_-=\mathsf C_QE_{12}\mathsf C_Q^{-1},\qquad
@@ -233,7 +233,7 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction of the eigenbasis and the nilpotents
 - [The Spectrum](the-spectrum.html), for the criterion
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix $\mathsf C_Q$
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix $\mathsf C_Q$
 - [Nilpotents](nilpotents.html), for the nilpotent cone
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the characteristic polynomial
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 spectral representation
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 spectral representation

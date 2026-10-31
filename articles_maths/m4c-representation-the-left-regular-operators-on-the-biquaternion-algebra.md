@@ -16,7 +16,7 @@ unless a display says otherwise. The frame is the canonical frame of *Matrix Rep
 
 **What the article does not do.** It does not reprove the operator statements: the law, the kernel, the image and the criterion are in the operator article. It does not treat the right family, whose matrix is the transpose, nor the two-sided family. The two frames and the change $C_{\Pi}$ are fixed in the general article; this article uses them.
 
-**Boundaries.** The $2\times2$ model, its product, its trace and its determinant are *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the left regular operator is *The Left Regular Operators on the Biquaternion Algebra*; the frame and the change are *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*; the norm is *Norm and Unitary Conventions*.
+**Boundaries.** The $2\times2$ model, its product, its trace and its determinant are *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*; the left regular operator is *The Left Regular Operators on the Biquaternion Algebra*; the frame and the change are *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*; the norm is *Norm and Unitary Conventions*.
 
 ## The Matrix $I_2\otimes\mathsf M_2(\tilde Q)$
 
@@ -111,7 +111,7 @@ $$
 
 The notation $L_k$ is the one of the table, with $k$ running over the three vector directions; the direction is read from the letter, and the index is not a row index.
 
-**The factor $-i$.** The vector units of the $2\times2$ model are $-i\sigma_k$, not $\sigma_k$. The factor is fixed in *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, and it is carried here by the tensor product. A display that writes $I_2\otimes\sigma_k$ without the factor is the matrix of another operator, and the sign is not a convention of this article.
+**The factor $-i$.** The vector units of the $2\times2$ model are $-i\sigma_k$, not $\sigma_k$. The factor is fixed in *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, and it is carried here by the tensor product. A display that writes $I_2\otimes\sigma_k$ without the factor is the matrix of another operator, and the sign is not a convention of this article.
 
 **The anticommutation.** The four matrices satisfy
 
@@ -236,7 +236,7 @@ In the coefficient frame the matrix is $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))
 
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the operator statements that this article computes.
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the Peirce frame, the coefficient frame and the change.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the factor $-i$ and the determinant.
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the factor $-i$ and the determinant.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the transpose family and the exchange.
 - [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the canonical frame and the regular representation.

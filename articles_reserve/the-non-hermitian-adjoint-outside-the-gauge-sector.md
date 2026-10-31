@@ -154,7 +154,7 @@ $$
 
 - **Established, and recomputed below.** The topological current
 $$
-B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
+B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
 j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U ,
 $$

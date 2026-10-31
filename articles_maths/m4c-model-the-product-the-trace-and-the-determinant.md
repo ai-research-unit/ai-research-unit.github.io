@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant__
+# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant__
 
 ## Introduction
 
@@ -6,14 +6,14 @@ The left regular matrix is the biquaternion read as a linear operator on its own
 
 The image is not the whole of $M_4(\mathbb{C})$: the algebra has complex dimension four and the matrix algebra has sixteen. What the regular model loses in surjectivity it gains in structure: the image is the algebra acting on itself, and after a fixed change of basis it is two identical copies of the $2\times2$ model.
 
-This article owns the assignment, the isomorphism, the signs and the Pauli matrices, the algebra in matrix form, the structure map and the real form, and the sense in which the model is a choice. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
+This article owns the assignment, the isomorphism, the signs and the Pauli matrices, the algebra in matrix form, the structure map and the real form, and the sense in which the model is a choice. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and the $2\times2$ model is $\mathsf{M}_2$, fixed by
 $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
 
-**Boundaries.** The right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the trace and the determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*. The abstract algebra is *The Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
+**Boundaries.** The right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*; the trace and the determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*. The abstract algebra is *The Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*.
 
 ## The Assignment on the Basis
 
@@ -26,7 +26,7 @@ $$
 | $\vec e_y$ | $L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
 | $\vec e_z$ | $L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
 
-equivalently, with $\mathsf M_2$ the $2\times2$ model of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant* and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+equivalently, with $\mathsf M_2$ the $2\times2$ model of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant* and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
 
 $$
 \boxed{\;\begin{aligned}
@@ -245,9 +245,9 @@ so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. T
 
 **What the choice fixes.** The choice fixes the four columns, the diagonal axis, the two column pairs and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.
 
-**The conjugations that change nothing.** A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4^{L}(\tilde Q)P=\mathsf{M}_4^{L}(\tilde Q)$. The commutant is the right regular image of *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.
+**The conjugations that change nothing.** A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4^{L}(\tilde Q)P=\mathsf{M}_4^{L}(\tilde Q)$. The commutant is the right regular image of *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.
 
-**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 ## Summary
 
@@ -273,9 +273,9 @@ The assignment $\mathsf{M}_4^{L}$ sends $e_t$ to $\mathrm I_4$ and the three vec
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and its two products
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
 - [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices that span the full operator algebra
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
-- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model
+- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$

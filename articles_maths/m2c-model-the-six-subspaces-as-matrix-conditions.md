@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions__
+# __$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The six remarkable subspaces of the biquaternion algebra are defined by the four
 
 This article collects the six descriptions and their determinants. It is the matrix form of *The Six Subspaces*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$, the unprimed $q_\mu$ real and the primed $q'_\mu$ real. The conjugations are quaternion conjugation ${}^{\natural}$, complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$ and anti-Hermitian conjugation ${}^{\flat}=-{}^{*}$. The four matrix basis images are
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*: $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$, the unprimed $q_\mu$ real and the primed $q'_\mu$ real. The conjugations are quaternion conjugation ${}^{\natural}$, complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$ and anti-Hermitian conjugation ${}^{\flat}=-{}^{*}$. The four matrix basis images are
 
 $$
 \mathsf{M}_2(e_t)=\mathrm I_2,\quad

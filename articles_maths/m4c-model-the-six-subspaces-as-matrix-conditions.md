@@ -1,12 +1,12 @@
-# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Six Subspaces as Matrix Conditions__
+# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions__
 
 ## Introduction
 
 The six remarkable subspaces of the biquaternion algebra are the fixed and anti-fixed spaces of the four conjugations and the two halves of the scalar–vector split. In the regular model each becomes an entrywise matrix condition: scalar, traceless, real, purely imaginary, Hermitian, anti-Hermitian. The conditions are exact only inside the four-dimensional image; the ambient matrix algebra is much larger, and this is the main difference from the $2\times2$ model.
 
-This article collects the six descriptions, their dimensions, traces and determinants. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
+This article collects the six descriptions, their dimensions, traces and determinants. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant*. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant*. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. The four involutions are
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
 \overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
@@ -14,7 +14,7 @@ $$
 \tilde Q^{\flat}=-\tilde Q^{*}.
 $$
 
-**Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
+**Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
@@ -154,4 +154,4 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the matrix involutions
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version
+- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version

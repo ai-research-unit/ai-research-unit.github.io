@@ -83,7 +83,7 @@ all four checked by exact matrix multiplication: $\mathsf{M}_2(\vec e_x\vec e_y)
 
 ## The Many-Site Map
 
-Let the chain carry $N$ spins, The spin component is written first and the site second, $\sigma_{\alpha,j}$. with Hilbert space $\mathcal{H}=\bigotimes_{j=1}^N\mathbb{C}^2$ and Pauli operators $\sigma_{\alpha,j}$ acting on site $j$. Define the fermionic modes by the Jordan–Wigner prescription in the convention above,
+Let the chain carry $N$ spins, with Hilbert space $\mathcal{H}=\bigotimes_{j=1}^N\mathbb{C}^2$ and Pauli operators $\sigma^\alpha_j$ acting on site $j$. Define the fermionic modes by the Jordan–Wigner prescription in the convention above,
 
 $$
 c^{\mathrm{fop}}_j=\Big(\prod_{k=1}^{j-1}\sigma^z_k\Big)\sigma^+_j ,
@@ -159,7 +159,7 @@ one factor of $i\vec e_z$ per site to the left. This is the biquaternion content
 
 The Jordan–Wigner map has a sharp algebraic description that the biquaternion framework makes transparent.
 
-**Both algebras are the full matrix algebra.** The spin operators $\sigma_{\alpha,j}$ generate $\bigotimes_j M_2(\mathbb{C})=M_{2^N}(\mathbb{C})$; the fermionic modes $c^{\mathrm{fop}}_j,c^{\mathrm{fop}\dagger}_j$ generate the same matrix algebra, since $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). The Jordan–Wigner map is the explicit isomorphism between these two presentations of the same algebra, and it is unital.
+**Both algebras are the full matrix algebra.** The spin operators $\sigma^\alpha_j$ generate $\bigotimes_j M_2(\mathbb{C})=M_{2^N}(\mathbb{C})$; the fermionic modes $c^{\mathrm{fop}}_j,c^{\mathrm{fop}\dagger}_j$ generate the same matrix algebra, since $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). The Jordan–Wigner map is the explicit isomorphism between these two presentations of the same algebra, and it is unital.
 
 **It does not preserve the grading.** The spin operators are even in the fermions — $\sigma^z_j=I-2c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j$ and $\sigma^x_j$ is a *pair* of odd terms times the string — while the $c^{\mathrm{fop}}_j$ are odd. So the map sends the spin algebra into the even part of the fermionic algebra, and the fermionic odd elements have no spin preimage: it is an isomorphism of algebras that is not an isomorphism of graded algebras. The fermionic grading is **not** the spin's tensor-product grading; it is the grading whose parity operator is the string-laden product of on-site $\sigma^z$'s, and it is not the grading the spin chain naturally carries.
 
@@ -257,7 +257,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | One-site fermionic mode inside $\mathbb{B}$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | CAR inside the algebra; commutator not central |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_+=\hbar\,\vec\Upsilon_x$, $\tilde S_-=\hbar\,\vec\Upsilon_y$ | Spin generators; one-site JW identity $\vec\Upsilon_x=\tilde S_+/\hbar$ |
-| $\sigma_{\alpha,j}$, $\sigma^\pm_j=\tfrac12(\sigma^x_j\pm i\sigma^y_j)$ | Pauli operators on site $j$ |
+| $\sigma^\alpha_j$, $\sigma^\pm_j=\tfrac12(\sigma^x_j\pm i\sigma^y_j)$ | Pauli operators on site $j$ |
 | $c^{\mathrm{fop}}_j=(\prod_{k<j}\sigma^z_k)\sigma^+_j$ | Jordan–Wigner fermion (spin-down occupied) |
 | $\prod_{k<j}\sigma^z_k=\prod_{k<j}(-1)^{F_k}$ | The string as a product of one-site parities |
 | $(-1)^{F}=i\vec e_z=2\tilde S_z/\hbar$ | One-site parity, the string's factor |

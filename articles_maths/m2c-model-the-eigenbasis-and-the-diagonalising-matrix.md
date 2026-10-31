@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix__
+# __$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ A spectrally regular element has a basis of eigenvectors, and in that basis its 
 
 This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*, §*The Matrix Model* and §*Change of Basis*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$. The two mixed elements are written $\vec\Upsilon_-$ and $\vec\Upsilon_+$, with $\vec\Upsilon_-\mapsto E_{12}$ and $\vec\Upsilon_+\mapsto E_{21}$ in the eigenbasis model.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$. The two mixed elements are written $\vec\Upsilon_-$ and $\vec\Upsilon_+$, with $\vec\Upsilon_-\mapsto E_{12}$ and $\vec\Upsilon_+\mapsto E_{21}$ in the eigenbasis model.
 
-**Boundaries.** The construction of the basis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the spectral projectors are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The construction of the basis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Eigenbasis
 
@@ -297,7 +297,7 @@ $$
 =\tfrac12\begin{pmatrix}1&\mp i\\\pm i&1\end{pmatrix},
 $$
 
-the orthogonal projectors onto the eigenvectors $(1,i)$ and $(1,-i)$ respectively. The eigenvalues are $1\pm i$, neither real nor of modulus one: the matrix is normal, but neither Hermitian nor $*$-unitary. The example is computed with the other seven in *$M_2(\mathbb{C})$ Model : Worked Examples*.
+the orthogonal projectors onto the eigenvectors $(1,i)$ and $(1,-i)$ respectively. The eigenvalues are $1\pm i$, neither real nor of modulus one: the matrix is normal, but neither Hermitian nor $*$-unitary. The example is computed with the other seven in *$M_2(\mathbb{C})$ Representation : Worked Examples*.
 
 **What the normal case adds to the eigenbasis.** In the normal case the diagonalising matrix can be chosen $*$-unitary. The freedom of the change is then the freedom of multiplying by a diagonal $*$-unitary, not an arbitrary invertible diagonal matrix. The Lagrange formula for the projectors is the same as in the general case; only the Hermitian property is new. The normal case is the exact intersection of the eigenbasis construction with the spectral theorem.
 
@@ -357,9 +357,9 @@ The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multipl
 ## Further Reading
 
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction of the basis and the change of basis
-- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the projectors
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the standard coordinate model
+- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the projectors
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the standard coordinate model
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight worked matrices, including the normal example
 - [The Spectrum](the-spectrum.html), for the spectral criterion
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 model
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 model
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the matrix theorem

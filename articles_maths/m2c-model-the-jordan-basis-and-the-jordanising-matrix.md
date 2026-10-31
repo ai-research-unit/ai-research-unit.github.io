@@ -1,12 +1,12 @@
-# __$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix__
+# __$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix__
 
 ## Introduction
 
 A spectrally degenerate biquaternion has one eigenvalue. Off the scalar line its matrix has a single Jordan block, its eigenspace is two-dimensional while the algebra is four-dimensional, and the two missing vectors are supplied by a chain. The change from the fixed model to a Jordan basis is the Jordanising matrix. It cannot be $*$-unitary, because a non-scalar Jordan block is not normal. The definite Hermitian form nevertheless selects a canonical chain, and the Jordanising matrix becomes the singular-value frame of the nilpotent.
 
-This article develops the Jordan basis and its coordinate model, the canonical and general Jordanising matrices, their determinants and freedom, the trace pairing, the $*$-unitary form and the defect, and the transitions between elements. It is the matrix form of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Jordan Basis*, §*The Canonical Frame*, §*The Matrix Model* and §*Expansion of Every Biquaternion*, and the degenerate counterpart of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+This article develops the Jordan basis and its coordinate model, the canonical and general Jordanising matrices, their determinants and freedom, the trace pairing, the $*$-unitary form and the defect, and the transitions between elements. It is the matrix form of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Jordan Basis*, §*The Canonical Frame*, §*The Matrix Model* and §*Expansion of Every Biquaternion*, and the degenerate counterpart of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
-**Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. Put $B^2=\vec Q\cdot\vec Q=0$, $Q=\mathsf M_2(\vec Q)$, and $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$. The nilpotent $Q$ is rank one. The Jordan block is $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. The corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the chain order is $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$.
+**Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. Put $B^2=\vec Q\cdot\vec Q=0$, $Q=\mathsf M_2(\vec Q)$, and $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$. The nilpotent $Q$ is rank one. The Jordan block is $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. The corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the chain order is $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$.
 
 The Hermitian form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Product and Form Conventions*, §*The Form Convention*, with norm $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$. The star is $\tilde Q^*=\bar Q_te_t-\overline{\vec Q}$, and $\mathsf M_2(\tilde Q^*)=M^{\dagger}$. The singular value of the nilpotent is
 
@@ -14,7 +14,7 @@ $$
 s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}.
 $$
 
-**Boundaries.** The construction of the flag, the corners and the Jordan pair is *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the canonical pair is there, §*The Canonical Frame*. The spectral projectors of the regular case are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the $4\times4$ model is *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Jordan Basis and the Jordanising Matrix*; the eigenbasis model is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+**Boundaries.** The construction of the flag, the corners and the Jordan pair is *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the canonical pair is there, §*The Canonical Frame*. The spectral projectors of the regular case are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors*; the centraliser is *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*; the $4\times4$ model is *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix*; the eigenbasis model is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
 ## The Jordan Basis
 
@@ -395,10 +395,10 @@ The Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a 
 ## Further Reading
 
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the flag, the corners, the Jordan pair and the canonical frame
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the regular counterpart
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the fixed matrix units
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the dual numbers
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the fixed model
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the regular counterpart
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the fixed matrix units
+- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the dual numbers
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the fixed model
 - [The Spectrum](the-spectrum.html), for the spectral criterion
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the Hermitian form and norm

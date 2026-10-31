@@ -1,4 +1,4 @@
-# __$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
+# __$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ A Peirce decomposition with two primitive idempotents writes every biquaternion 
 
 This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions on them. It is the matrix form of *The Peirce Decomposition of the Biquaternion Algebra* and *Spinors as Peirce Coordinates in the Biquaternion Algebra*. It uses no form, no norm and no module.
 
-**Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The standard idempotent pair is
+**Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The standard idempotent pair is
 
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
@@ -20,7 +20,7 @@ $$
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y).
 $$
 
-In the generic Peirce labelling of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, $\vec\Upsilon_x=\vec\Upsilon_{+-}$ and $\vec\Upsilon_y=\vec\Upsilon_{-+}$. The labels $x,y$ are the labels of the standard pair; a general element uses the labelling $(\tilde\Pi_+,\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+In the generic Peirce labelling of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, $\vec\Upsilon_x=\vec\Upsilon_{+-}$ and $\vec\Upsilon_y=\vec\Upsilon_{-+}$. The labels $x,y$ are the labels of the standard pair; a general element uses the labelling $(\tilde\Pi_+,\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
 **Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes, their adapted bases and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the nilpotent cone is *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*. The module reading of the two planes is *The Minimal Left Ideals* and is not used here.
 
@@ -291,8 +291,8 @@ The Peirce coordinates of the standard pair are the matrix entries, and the four
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners, the Peirce table and the systems of matrix units
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their adapted bases and the exchange
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the fixed model
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the fixed model
 - [Nilpotents](nilpotents.html), for the nilpotent cone
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis labelling
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis labelling
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms
 - [Matrix Algebras](matrix-algebras.html), for systems of matrix units
