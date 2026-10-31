@@ -18,6 +18,8 @@ The article closes by separating what has been constructed from what remains an 
 
 The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. For two observables of the informational sector the plain form is $\langle\tilde H_1,\tilde H_2\rangle=\mathrm{Sc}(\tilde H_1\tilde H_2)$, read as the trace pairing $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
+Two conventions govern the indices, and they are stated once. Every spacetime index is low. A repeated Greek label is a sum. The signs of the metric are written, not implied. Where the old pair was a metric contraction — one index up and one down — they are carried by $g_{\mu\nu}$ where $g$ is written, by the object itself where that object was defined by lowering (the dual frame $\tilde F_\mu = g_{\mu\nu}\tilde E_\nu$ and the inverse vierbein $e_{\mu a}$ carry $g$ inside them), and otherwise by the sign vector $\epsilon_\mu$, with $\epsilon_0=1$ and $\epsilon_k=-1$. Where the old pair was a pairing and not a metric contraction — a coordinate differential against a derivative or a frame, as in $\tilde E_\mu dx_\mu$, $\partial/\partial x_\mu$, and $\hat F_\mu\partial/\partial x_\mu$ — the sum is plain and no sign vector appears. Latin labels $a,b,c,d$ and $i,j,k$ are frame labels, not spacetime indices: they are never lowered by $g$, and where a frame contraction pairs a low slot with a high one, as in $\omega_\mu{}^b{}_a S^{cd}$, the source's heights are kept. Where slots of different kinds meet the order is fixed: in $e_{\mu a}$ the world slot comes first and the frame slot second; in $\omega_\mu{}^b{}_a$ the world slot, then the frame row (up), then the frame column (down); in $S_{\alpha\beta\mu\nu}$ the generator pair, then the row and the column. A dual basis is written with a different letter, never by raising: $\varsigma_\mu$ is dual to $s_\mu$, and $\tilde F_\mu$ is dual to $\tilde E_\mu$.
+
 ## What the Flat Machinery Assumes
 
 The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q}_1 = iq_{1t} + \vec q_1$ and $\tilde{Q}_2 = iq_{2t} + \vec q_2$ in $\mathbb{M}_-$,
@@ -61,7 +63,7 @@ An algebra has no points, so it cannot have a curvature. The statement is worth 
 Two forms of that map are available, and they are the two routes examined below:
 
 - a **scale** on the imaginary time axis, $ict' \mapsto i\,c(x)\,t'$, which is the framework's own local complex structure; and
-- a **frame**, $dx^\mu \mapsto \tilde{E}_\mu(x)\,dx^\mu$, which is the tetrad of the standard spinor formulation of general relativity.
+- a **frame**, $dx_\mu \mapsto \tilde{E}_\mu(x)\,dx_\mu$, which is the tetrad of the standard spinor formulation of general relativity.
 
 They are different devices, and it is a mistake to treat them as the same one. The first makes a piece of the embedding's scale local while leaving the frame rigid; the second makes the frame local while leaving every scale to the frame itself. The first is the framework's proposal and yields too little to be general relativity; the second yields everything kinematically and is no longer specifically biquaternionic.
 
@@ -93,7 +95,7 @@ so the displacement biquaternion is $d\tilde{R} = i(c\,dt' + t'\,dc)e_t + d(x\,\
 
 $$
 ds^2 = -c^2\,d{t'}^2 - 2ct'\,dt'\,dc - {t'}^2 (dc)^2 +dx^2+dy^2+dz^2
-= -c^2\,d{t'}^2 - 2ct'\,\partial/\partial Q_i c\,dt'\,dx^i - {t'}^2\,\partial/\partial Q_i c\,\partial/\partial Q_j c\,dx^i dx^j +dx^2+dy^2+dz^2 .
+= -c^2\,d{t'}^2 - 2ct'\,\sum_i\partial/\partial Q_i c\,dt'\,dx_i - {t'}^2\,\sum_{i,j}\partial/\partial Q_i c\,\partial/\partial Q_j c\,dx_i dx_j +dx^2+dy^2+dz^2 .
 $$
 
 The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t',x,y,z)$ — but it is **flat**. The map $(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(x^2+y^2+z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
@@ -151,10 +153,10 @@ The profile agrees with the local-scale route's $c^2=c_0^2(1-r_s/r)$ to first or
 The general way to make the embedding of spacetime into the algebra local is to allow the coordinate differentials to be carried into $\mathbb{M}_-$ by a point-dependent frame:
 
 $$
-d\tilde{R} = \tilde{E}_\mu(x)\,dx^\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
+d\tilde{R} = \sum_\mu \tilde{E}_\mu(x)\,dx_\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
 $$
 
-The interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde{R} = \tilde{E}_\mu dx^\mu$,
+The interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde{R} = \sum_\mu\tilde{E}_\mu dx_\mu$,
 
 $$
 \boxed{\;g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle_{\natural}
@@ -171,7 +173,7 @@ $$
 
 leaves $g_{\mu\nu}$ unchanged at every point, because rotor conjugation preserves the bilinear form. So the local gauge group supplied by the algebra is exactly a copy of $SL(2,\mathbb{C})$ at each point, with the double cover, the Lie algebra, and the $\left(m,n\right)$ representation theory of the read list applying pointwise. This is the standard tetrad or vierbein structure of the spinor formulation of general relativity, written in the algebra's own notation; the interplay of the sixteen frame functions with the six local rotor parameters leaves $16 - 6 = 10$ independent components, which is the number of components of $g_{\mu\nu}$.
 
-The corresponding flatness statement is exact and instructive. If the frame is *pure rotor gauge*, $\tilde{E}_\mu = \tilde U(x)\,\epsilon_\mu\,\tilde U(x)^{*}$ for a fixed basis $\epsilon_\mu$ of $\mathbb{M}_-$, then $g_{\mu\nu}(x) = \langle \epsilon_\mu, \epsilon_\nu\rangle_{\natural}$ is a constant matrix, and the metric is flat. A point-dependent rotor field applied to a rigid basis produces no curvature whatever. Curvature in this route is exactly that part of the frame which is not of this pure-gauge form, and no amount of rotor-field machinery detects it.
+The corresponding flatness statement is exact and instructive. If the frame is *pure rotor gauge*, $\tilde{E}_\mu = \tilde U(x)\,u_\mu\,\tilde U(x)^{*}$ for a fixed basis $u_\mu$ of $\mathbb{M}_-$, then $g_{\mu\nu}(x) = \langle \epsilon_\mu, \epsilon_\nu\rangle_{\natural}$ is a constant matrix, and the metric is flat. A point-dependent rotor field applied to a rigid basis produces no curvature whatever. Curvature in this route is exactly that part of the frame which is not of this pure-gauge form, and no amount of rotor-field machinery detects it.
 
 Two honest qualifications keep this from sounding like more than it is.
 
@@ -208,12 +210,12 @@ $$
 mixing the time and $\vec e_x$ components as a boost must, whereas $[G,\tilde{Q}]$ is $2\epsilon(-iq_z\,\vec e_y + iq_y\,\vec e_z)$, a rotation in the $\vec e_y \vec e_z$ plane — a different transformation altogether. A biquaternionic covariant derivative must therefore be written in the two-sided form
 
 $$
-\boxed{\;D_\mu \tilde{Q} = \partial/\partial x^\mu \tilde{Q} + \vec\Gamma_\mu \tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}\;},
+\boxed{\;D_\mu \tilde{Q} = \partial/\partial x_\mu \tilde{Q} + \vec\Gamma_\mu \tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}\;},
 $$
 
-with $\vec\Gamma_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial/\partial x^\mu + [\vec\Gamma_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
+with $\vec\Gamma_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial/\partial x_\mu + [\vec\Gamma_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
 
-One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde U(x)$ is unit-norm, then both $\tilde U^{\natural}\,\partial/\partial x^\mu\,\tilde U$ and $\partial/\partial x^\mu\,\tilde U\,\tilde U^{\natural}$ are traceless, hence lie in the Lie algebra, because $\tilde U^{\natural}\tilde U = e_t$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathrm{SL}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
+One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde U(x)$ is unit-norm, then both $\tilde U^{\natural}\,\partial/\partial x_\mu\,\tilde U$ and $\partial/\partial x_\mu\,\tilde U\,\tilde U^{\natural}$ are traceless, hence lie in the Lie algebra, because $\tilde U^{\natural}\tilde U = e_t$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathrm{SL}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
 
 What is not automatic is everything one would want. Metric compatibility and the vanishing of torsion are conditions, not consequences; nothing in the algebra selects the Levi-Civita lift. And the whole dynamics is absent: there is no action, no field equation for $\tilde{E}_\mu$ or $\vec\Gamma_\mu$, and therefore no Einstein equation. The algebra can hold the objects of the spin-connection formalism in the same notation in which it holds the rotors and the four-vectors. It does not generate a single equation for them.
 
@@ -224,10 +226,10 @@ The three routes above accept the article's premise and look for the map that at
 The construction is *extended relativity in Clifford spaces*, whose principal review is by Castro and Pavšič (2004). The coordinates are themselves Clifford valued; for a four-dimensional base one writes
 
 $$
-X = \sigma\,1 + x^\mu\gamma_\mu + \tfrac12 x^{\mu\nu}\gamma_\mu\wedge\gamma_\nu + \check x^\mu I\gamma_\mu + \check\sigma I ,
+X = \sigma\,1 + \sum_\mu x_\mu\gamma_\mu + \tfrac12\sum_{\mu,\nu}x_{\mu\nu}\gamma_\mu\wedge\gamma_\nu + \sum_\mu\check x_\mu I\gamma_\mu + \check\sigma I ,
 $$
 
-one coefficient for each grade — scalar, vector, bivector, pseudovector, pseudoscalar — so that a "point" carries a line, an area, a volume and a hyper-volume, and the arena is called a **Clifford space** (C-space). The invariant interval generalizes accordingly, $|dX|^2 = d\sigma^2 + dx_\mu dx^\mu + \tfrac12 dx_{\mu\nu}dx^{\mu\nu} - d\check x_\mu d\check x^\mu - d\check\sigma^2$, the signs of the last two terms being fixed by the square of the volume element, $I^2 = -1$ in signature $(+,-,-,-)$; and the transformations that preserve it generalize the Lorentz transformations by mixing objects of different grade, so that a history of one dimension is reshuffled into a history of another.
+one coefficient for each grade — scalar, vector, bivector, pseudovector, pseudoscalar — so that a "point" carries a line, an area, a volume and a hyper-volume, and the arena is called a **Clifford space** (C-space). The invariant interval generalizes accordingly, $|dX|^2 = d\sigma^2 + \sum_\mu\epsilon_\mu\,dx_\mu dx_\mu + \tfrac12\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,dx_{\mu\nu}dx_{\mu\nu} - \sum_\mu\epsilon_\mu\,d\check x_\mu d\check x_\mu - d\check\sigma^2$, the signs of the last two terms being fixed by the square of the volume element, $I^2 = -1$ in signature $(+,-,-,-)$; and the transformations that preserve it generalize the Lorentz transformations by mixing objects of different grade, so that a history of one dimension is reshuffled into a history of another.
 
 The trade is exact, and it should be stated as a trade rather than as a solution. What the construction buys is the opposite of what this article has been recording: the extended objects — closed strings, membranes, $p$-branes — are not fields *on* the arena, they are among its coordinates, so a single action covers all $p$; and a fundamental length, the Planck scale, has a natural place to enter, as the parameter that bridges grades. What it costs is the manifold. The coordinates are **non-commuting** polyvectors, so there is no space of points, and distance, connection, dimension and even signature have to be rebuilt — the review's own proposal is that the signature is relative to a chosen slice through C-space, which is a notion the corpus does not have and does not need (see the remark on signature in *The Realification and the Effect of the Change of Scalars*). Two things must not be conflated: a C-space is an **algebra of coordinates**, while the corpus's $\mathbb{B}$ is an **algebra of fields and observables**; the corpus's algebra is the even part of a four-dimensional Clifford algebra, and the review's arena is a manifold of Clifford numbers.
 
@@ -237,32 +239,32 @@ The honest summary is that this is a different framework, not an extension of th
 
 The connection of the previous section was built for the material sector, where the field is a four-vector and the group acts by the two-sided rotor conjugation. The Dirac field is a different kind of object — a section of the spinor module, the Peirce carrier $\mathbb{B}\tilde\Pi$ (a minimal left ideal here) — and the difference in the kind of field, together with the difference in the kind of action, is exactly what the curved Dirac equation turns on. This section writes that equation in the framework's own notation. It is the item the agenda below records as the curved-space form of the biquaternion Dirac equation.
 
-**Frame note.** The operator below is built from the material frame $\tilde E_\mu\in\mathbb{M}_-$ of Route Two, indexed by the physical coordinates $x^\mu=(t',x,y,z)$. The gamma transcription uses the informational frame $\hat E^\mu$, built from $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$. The two frames are related but not interchangeable: the time leg of the material frame is $ie_t$, the time leg of the informational frame is $e_t$, and only the informational frame contracts with $e^\mu{}_a\gamma_a$. The relation is stated in the Lorentz-gauging section, and the two flat limits are computed below.
+**Frame note.** The operator below is built from the material frame $\tilde E_\mu\in\mathbb{M}_-$ of Route Two, indexed by the physical coordinates $x_\mu=(t',x,y,z)$. The gamma transcription uses the informational frame $\hat F_\mu$, built from $\hat e_0=e_t$ and $\hat e_k=i\vec e_k$. The two frames are related but not interchangeable: the time leg of the material frame is $ie_t$, the time leg of the informational frame is $e_t$, and only the informational frame contracts with $e_{\mu a}\gamma_a$. The relation is stated in the Lorentz-gauging section, and the two flat limits are computed below.
 
 ### The one-sided spinor derivative
 
 The Lorentz group acts on the spinor module by **left multiplication**, $\psi \mapsto \tilde U\psi$, not by rotor conjugation; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore **one-sided**,
 
 $$
-D_\mu\psi = \partial/\partial x^\mu\,\psi + \vec\Gamma_\mu\psi,
+D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi,
 \qquad
 \vec\Gamma_\mu \in \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B},
 $$
 
-which is not the two-sided prescription of the material sector, $D_\mu\tilde{Q} = \partial/\partial x^\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$. The two must not be conflated. The vector carries the transformation twice, once on each side, $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, and so receives two connection terms; the spinor carries it once, $\psi \mapsto \tilde U\psi$, and so receives one. Both connection terms live in the same six-dimensional Lie subspace, and each is the standard inhomogeneous connection of the module it belongs to.
+which is not the two-sided prescription of the material sector, $D_\mu\tilde{Q} = \partial/\partial x_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$. The two must not be conflated. The vector carries the transformation twice, once on each side, $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, and so receives two connection terms; the spinor carries it once, $\psi \mapsto \tilde U\psi$, and so receives one. Both connection terms live in the same six-dimensional Lie subspace, and each is the standard inhomogeneous connection of the module it belongs to.
 
 Covariance fixes the transformation law. If $\psi \mapsto \tilde U\psi$, then $D_\mu\psi \mapsto \tilde U D_\mu\psi$ precisely when the connection transforms as
 
 $$
 \vec\Gamma_\mu \longmapsto \tilde U\vec\Gamma_\mu\tilde U^{-1}
-- \left(\partial/\partial x^\mu\,\tilde U\right)\tilde U^{-1},
+- \left(\partial/\partial x_\mu\,\tilde U\right)\tilde U^{-1},
 $$
 
-which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\vec\Gamma_\mu = -\left(\partial/\partial x^\mu\,\tilde U\right)\tilde U^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.
+which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\vec\Gamma_\mu = -\left(\partial/\partial x_\mu\,\tilde U\right)\tilde U^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.
 
 ### The curved Dirac operator and the equation
 
-The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial_{Q_t} + \vec e_k\,\partial_k$, with $Q_t=ict'$. In the physical coordinates $x^\mu=(t',x,y,z)$ it reads
+The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial_{Q_t} + \vec e_k\,\partial_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
 $$
 \tilde\nabla = -i\,e_t\,\partial_{t'} + \vec e_k\,\partial_k,
 $$
@@ -270,55 +272,55 @@ because $\partial_{t'}=i\partial_{Q_t}$. Its curved replacement substitutes the 
 $$
 \tilde E_0=ie_t,\qquad \tilde E_k=\vec e_k,
 \qquad
-\tilde E^0=-ie_t,\qquad \tilde E^k=\vec e_k,
+\tilde F_0=-ie_t,\qquad \tilde F_k=\vec e_k,
 $$
 with $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$. The curved object is
 
 $$
-\tilde E^\mu D_\mu,
+\tilde F_\mu D_\mu,
 \qquad
-\tilde E^\mu = g^{\mu\nu}\tilde E_\nu,
+\tilde F_\mu = g_{\mu\nu}\tilde E_\nu,
 \qquad
-\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu,
+\langle \tilde F_\mu, \tilde E_\nu\rangle_{\natural} = \delta_{\mu\nu},
 $$
 
-where $\tilde E^\mu$ is the **dual frame**, the inverse tetrad of the frame field $\tilde E_\mu$ of Route Two. The operator is biquaternion-valued and first order, and it is the object the whole tetrad machinery was assembled to define. The **massless** equation is
+where $\tilde F_\mu$ is the **dual frame**, the inverse tetrad of the frame field $\tilde E_\mu$ of Route Two. The operator is biquaternion-valued and first order, and it is the object the whole tetrad machinery was assembled to define. The **massless** equation is
 
 $$
-\tilde E^{\mu} D_{\mu}\psi = 0,
+\tilde F_{\mu} D_{\mu}\psi = 0,
 $$
 
 identical in form to the flat massless equation. The **massive** equation is the chiral pair
 
-$$\boxed{\;\tilde E^{\nu} D_{\nu}\tilde\Psi_R = m\tilde\Psi_L,
+$$\boxed{\;\tilde F_{\nu} D_{\nu}\tilde\Psi_R = m\tilde\Psi_L,
 \qquad
-(\tilde E^{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R\;},$$
+(\tilde F_{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R\;},$$
 
-where $(\tilde E^{\mu} D_{\mu})^{\natural}$ is the quaternion-conjugate operator, built from the conjugate frame and the conjugate connection and reducing to $\tilde\nabla^{\natural}$ when the frame is rigid and the connection vanishes. The mass term is unchanged: it is the field-independent, chirality-off-diagonal pairing of the parent, and the curvature enters only through the derivative. That is the structural point of the pair, and it is worth stating in the framework's language: the mass is a constant right multiplication acting between the two minimal left ideals, and no amount of frame or connection is needed to write it.
+where $(\tilde F_{\mu} D_{\mu})^{\natural}$ is the quaternion-conjugate operator, built from the conjugate frame and the conjugate connection and reducing to $\tilde\nabla^{\natural}$ when the frame is rigid and the connection vanishes. The mass term is unchanged: it is the field-independent, chirality-off-diagonal pairing of the parent, and the curvature enters only through the derivative. That is the structural point of the pair, and it is worth stating in the framework's language: the mass is a constant right multiplication acting between the two minimal left ideals, and no amount of frame or connection is needed to write it.
 
 ### Flat limit and the square
 
 Two consistency statements locate the construction.
 
-The **flat limit** is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde E^0=-ie_t$, $\tilde E^k=\vec e_k$ and $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, and take $\vec\Gamma_\mu=0$. Then
+The **flat limit** is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde F_0=-ie_t$, $\tilde F_k=\vec e_k$ and $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, and take $\vec\Gamma_\mu=0$. Then
 $$
-\tilde E^{\mu} D_{\mu}=\tilde E^{\mu}\partial_{x^\mu}
+\tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial_{x_\mu}
 =-i\,e_t\,\partial_{t'}+\vec e_k\,\partial_k
 =e_t\,\partial_{Q_t}+\vec e_k\,\partial_k=\tilde\nabla,
 $$
-where the last equality uses $Q_t=ict'$ and $\partial_{t'}=i\partial_{Q_t}$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat E^\mu\partial_{x^\mu}=e_t\partial_{t'}+i\vec e_k\partial_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
+where the last equality uses $Q_t=ict'$ and $\partial_{t'}=i\partial_{Q_t}$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial_{x_\mu}=e_t\partial_{t'}+i\vec e_k\partial_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
 
 The **square** is the Lichnerowicz formula. Squaring the Dirac operator gives
 
 $$
-\boxed{\;(\tilde E^{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R\;},
+\boxed{\;(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R\;},
 $$
 
-where $\Box_g = \frac{1}{\sqrt{-\det g}}\,D_\mu\!\left(\sqrt{-\det g}\,g^{\mu\nu}D_\nu\right)$ is the Laplace–Beltrami operator acting on spinors and $R$ is the Ricci scalar (the statement is the standard one, in the sign convention of the cited literature). The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $-R/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $F_{\mu\nu}\Sigma^{\mu\nu}$, the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $-R/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.
+where $\Box_g = \frac{1}{\sqrt{-\det g}}\,D_\mu\!\left(\sqrt{-\det g}\,g_{\mu\nu}D_\nu\right)$ is the Laplace–Beltrami operator acting on spinors and $R$ is the Ricci scalar (the statement is the standard one, in the sign convention of the cited literature). The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $-R/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu F_{\mu\nu}\Sigma_{\mu\nu}$, the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $-R/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.
 
 ### What this does and does not settle
 
-It settles the agenda item that asked for the curved-space form of the biquaternion Dirac equation written in the framework's own notation. The operator $\tilde E^\mu D_\mu$, the one-sided derivative, the connection transformation, the massless equation and the massive chiral pair, the flat limit, and the Lichnerowicz square are now written, and every object in them — the frame, the dual frame, the connection, the one-sided derivative — is an object the algebra already carries. Two features separate the curved Dirac equation from the curved metric: the field's derivative is one-sided and its connection transformation inhomogeneous, while the frame's derivative is two-sided and its metric is bilinear in the frame; and the curvature couples to the field through $-R/4$ even without a source, so the curved Dirac square is not the naive curved Klein–Gordon operator.
+It settles the agenda item that asked for the curved-space form of the biquaternion Dirac equation written in the framework's own notation. The operator $\tilde F_\mu D_\mu$, the one-sided derivative, the connection transformation, the massless equation and the massive chiral pair, the flat limit, and the Lichnerowicz square are now written, and every object in them — the frame, the dual frame, the connection, the one-sided derivative — is an object the algebra already carries. Two features separate the curved Dirac equation from the curved metric: the field's derivative is one-sided and its connection transformation inhomogeneous, while the frame's derivative is two-sided and its metric is bilinear in the frame; and the curvature couples to the field through $-R/4$ even without a source, so the curved Dirac square is not the naive curved Klein–Gordon operator.
 
 What it does not settle is everything the frame and the connection already failed to settle, and the Dirac equation is the most inviting place to overclaim, so the limits bear repeating. The equation contains the frame and the connection; it determines neither. Nothing in the algebra or in this equation fixes $\tilde E_\mu$ or $\vec\Gamma_\mu$, selects the Levi-Civita lift rather than a torsionful one, or supplies an action for either; the Einstein equation is as absent here as it was in Route Three. The equation is the correct curved-space transcription of the matter equation **on a background** whose geometry is inserted by hand, and that is exactly what it is. On the matter side, the source of the equation — the conserved current — remains the spinor-module object of the minimal-coupling and Gordon-decomposition articles, carrying the Clifford-odd $\gamma_0$ that a product in $\mathbb{B}$ cannot supply; the closed sourced system, in which the Dirac current feeds the curved biquaternion Maxwell equation, is still unwritten. And the global question survives untouched: whether spinor fields exist on the manifold at all is the topological condition of Route Two's agenda, and no local operator can answer it.
 
@@ -326,34 +328,34 @@ What it does not settle is everything the frame and the connection already faile
 
 The coupling written above is the standard one: the flat equation with the rigid material frame replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.
 
-**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, is a dictionary, not an identity: it is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
 $$
-\hat e^a\longmapsto\gamma_0\,\gamma_a,
+\hat e_a\longmapsto\gamma_0\,\gamma_a,
 \qquad
-\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)\in\mathbb{M}_+ .
+\hat e_a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)\in\mathbb{M}_+ .
 $$
-Multiplication by $\gamma_0$, not the reading itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde E^\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma_a$, and a term-by-term substitution of $\tilde E^\mu$ for $e^\mu{}_a\gamma_a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
+Multiplication by $\gamma_0$, not the reading itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde F_\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma_a$, and a term-by-term substitution of $\tilde F_\mu$ for $e_{\mu a}\gamma_a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
 $$
-\hat E^\mu=e^\mu{}_a\hat e^a\ \longmapsto\ \gamma_0\,e^\mu{}_a\gamma_a,
+\hat F_\mu=e_{\mu a}\hat e_a\ \longmapsto\ \gamma_0\,e_{\mu a}\gamma_a,
 \qquad
-i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi
-=i\gamma_0\,\bigl(\text{image of }\hat E^\mu\partial/\partial x^\mu\,\psi\bigr).
+i\,e_{\mu a}\gamma_a\partial/\partial x_\mu\,\psi
+=i\gamma_0\,\bigl(\text{image of }\hat F_\mu\partial/\partial x_\mu\,\psi\bigr).
 $$
-The fixed $\gamma_0$ is the frame element, not part of the derivative; the derivative is the biquaternion-valued $\hat E^\mu\partial/\partial x^\mu$. The article's own operator $\tilde E^\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and $\partial_{t'}=i\partial_{Q_t}$ relate the two, so they are not term-by-term identical, and the substitution $\tilde E^\mu\leftrightarrow e^\mu{}_a\gamma_a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat E^\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.
+The fixed $\gamma_0$ is the frame element, not part of the derivative; the derivative is the biquaternion-valued $\hat F_\mu\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and $\partial_{t'}=i\partial_{Q_t}$ relate the two, so they are not term-by-term identical, and the substitution $\tilde F_\mu\leftrightarrow e_{\mu a}\gamma_a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat F_\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.
 
-J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x^\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Varying the gauged action gives
+J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x_\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Varying the gauged action gives
 
 $$
-E_{\mathrm{grav}} = i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi - m\psi
-- \tfrac{i}{2}e^{\mu}{}_{b}\,\omega_{\mu}{}^{b}{}_{a}\gamma_a\psi
-+ \tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}\{\gamma_a,S^{cd}\}\psi ,
+E_{\mathrm{grav}} = i\,e_{\mu a}\gamma_a\partial/\partial x_\mu\,\psi - m\psi
+- \tfrac{i}{2}e_{\mu b}\,\omega_\mu{}^b{}_a\gamma_a\psi
++ \tfrac{i}{4}e_{\mu a}\,\omega_{\mu cd}\{\gamma_a,S^{cd}\}\psi ,
 $$
 
 while substituting the same replacement into the flat equation of motion gives
 
 $$
-\tilde E_{\mathrm{grav}} = i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi - m\psi
-+ \tfrac{i}{2}e^\mu{}_a\,\omega_{\mu cd}\gamma_a S^{cd}\psi ,
+\tilde E_{\mathrm{grav}} = i\,e_{\mu a}\gamma_a\partial/\partial x_\mu\,\psi - m\psi
++ \tfrac{i}{2}e_{\mu a}\,\omega_{\mu cd}\gamma_a S^{cd}\psi ,
 $$
 
 and the two do not differ by an anticommutator. With $S^{cd}=\tfrac14[\gamma_c,\gamma_d]$,
@@ -364,71 +366,71 @@ $$
 so the substituted equation already carries the anticommutator term with the same coefficient $\tfrac{i}{4}$ that the variation produces. The difference is the vector term
 $$
 E_{\mathrm{grav}}-\tilde E_{\mathrm{grav}}
-=-\tfrac{i}{2}e^\mu{}_b\omega_\mu{}^b{}_a\gamma_a
--\tfrac{i}{4}e^\mu{}_a\omega_{\mu cd}[\gamma_a,S^{cd}]
-=-\,i\,e^\mu{}_b\omega_\mu{}^b{}_a\gamma_a,
+=-\tfrac{i}{2}e_{\mu b}\omega_\mu{}^b{}_a\gamma_a
+-\tfrac{i}{4}e_{\mu a}\omega_{\mu cd}[\gamma_a,S^{cd}]
+=-\,i\,e_{\mu b}\omega_\mu{}^b{}_a\gamma_a,
 $$
 where the second equality uses $[\gamma_a,S^{cd}]=\tfrac12(g_{ac}\gamma_d-g_{ad}\gamma_c)$ for distinct indices and the antisymmetry of $\omega_{\mu cd}$. Both surviving terms are grade one: the trivector parts of the two equations agree, and the mismatch is a vector connection term — the derivative of the frame — not a trivector. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with $\gamma_a$; gravity is exceptional, and the reason is that the Lorentz generator satisfies $[\gamma_c,S^{ab}] = V^{ab}{}_d\gamma_d$ rather than commuting.
 
-The corpus's curved equation is the substitution form. The section above writes $\tilde E^{\mu} D_{\mu}\psi = 0$ and the chiral pair $\tilde E^{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde E^{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$ by replacing the rigid material frame and the partial derivative, and the article supplies no action for the coupled system whose variation could be compared with them. So this article does not take a side in the ambiguity. What the external source establishes is that the side matters: the corpus has been writing one of two inequivalent forms without saying which.
+The corpus's curved equation is the substitution form. The section above writes $\tilde F_{\mu} D_{\mu}\psi = 0$ and the chiral pair $\tilde F_{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde F_{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$ by replacing the rigid material frame and the partial derivative, and the article supplies no action for the coupled system whose variation could be compared with them. So this article does not take a side in the ambiguity. What the external source establishes is that the side matters: the corpus has been writing one of two inequivalent forms without saying which.
 
-**The world-index repair.** The same source then constructs a formalism in which the two procedures commute again, and the construction differs from the corpus's in a way worth stating. The spinor field carries a **world (coordinate) index** $\psi^\rho$, not a Lorentz spinor index, and no Lorentz indices appear at all, neither vector nor spinor. The local Lorentz frame is carried by one timelike and three spacelike world vector fields $n^\mu$ and $n^\mu{}_i$ obeying
+**The world-index repair.** The same source then constructs a formalism in which the two procedures commute again, and the construction differs from the corpus's in a way worth stating. The spinor field carries a **world (coordinate) index** $\psi_\rho$, not a Lorentz spinor index, and no Lorentz indices appear at all, neither vector nor spinor. The local Lorentz frame is carried by one timelike and three spacelike world vector fields $n_\mu$ and $n_{\mu i}$ obeying
 
 $$
 n\!\cdot\!n = 1, \qquad n\!\cdot\!n_i = 0, \qquad n_i\!\cdot\!n_j = -\delta_{ij},
 $$
 
-so a vierbein is hidden in them and never used, and the metric is $g_{\mu\nu} = n_\mu n_\nu - \delta^{ij}n_{i\mu}n_{j\nu}$. Two families of matrices replace the gamma matrices: $M^\mu{}_{\rho\sigma}$ built from $n^\mu$ and $N_i{}^\rho{}_\sigma$ built from $n^\mu{}_i$,
+so a vierbein is hidden in them and never used, and the metric is $g_{\mu\nu} = n_\mu n_\nu - \delta_{ij}n_{i\mu}n_{j\nu}$. Two families of matrices replace the gamma matrices: $M_{\mu\rho\sigma}$ built from $n_\mu$ and $N_{i\rho\sigma}$ built from $n_{\mu i}$,
 
 $$
-M^{\mu\rho\sigma} = \bigl(g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho} - g^{\mu\nu}g^{\rho\sigma} - i\varepsilon^{\mu\nu\rho\sigma}\bigr)n_\nu,
+M_{\mu\rho\sigma} = \bigl(g_{\mu\rho}g_{\nu\sigma} + g_{\mu\sigma}g_{\nu\rho} - g_{\mu\nu}g_{\rho\sigma} - i\varepsilon_{\mu\nu\rho\sigma}\bigr)n_\nu,
 $$
 
 $$
-N_i{}^{\rho\sigma} = -\bigl(g^{\mu\rho}g^{\nu\sigma} - g^{\mu\sigma}g^{\nu\rho} - i\varepsilon^{\mu\nu\rho\sigma}\bigr)n_\mu n_{\nu i},
+N_{i\rho\sigma} = -\bigl(g_{\mu\rho}g_{\nu\sigma} - g_{\mu\sigma}g_{\nu\rho} - i\varepsilon_{\mu\nu\rho\sigma}\bigr)n_\mu n_{\nu i},
 $$
 
 and they obey the algebra
 
 $$
 M_\mu M_\nu^* + M_\nu M_\mu^* = 2g_{\mu\nu}\mathbf{1}, \qquad
-M^\mu N_i^* + N_i M^\mu = 0, \qquad
+M_\mu N_i^* + N_i M_\mu = 0, \qquad
 N_i N_j = \delta_{ij}\mathbf{1} + i\varepsilon_{ijk}N_k,
 $$
 
 which is the role the Dirac algebra plays in the standard formalism; the free Lagrangian is Klein–Gordon compatible because of it. The covariant derivative is
 
 $$
-\partial/\partial x^\mu\,\psi^\rho \;\longmapsto\;
-D_\mu\psi^\rho = \Bigl(\delta^\rho{}_\sigma\nabla_\mu + \tfrac12\omega_{\alpha\beta\mu}S^{\alpha\beta\,\rho}{}_\sigma\Bigr)\psi^\sigma ,
+\partial/\partial x_\mu\,\psi_\rho \;\longmapsto\;
+D_\mu\psi_\rho = \Bigl(\delta_{\rho\sigma}\nabla_\mu + \tfrac12\sum_{\alpha,\beta}\epsilon_\alpha\epsilon_\beta\,\omega_{\alpha\beta\mu}S_{\alpha\beta\rho\sigma}\Bigr)\psi_\sigma ,
 $$
 
-where the Levi-Civita $\nabla_\mu$ appears explicitly because the index is a world index, and $S_{\mu\nu}$ is the spinor generator, $4S_{\mu\nu} = M_\mu M_\nu^* - M_\nu M_\mu^*$, related to the vector generator by $2S_{\mu\nu} = V_{\mu\nu} + i\varepsilon_{\mu\nu}$, self-dual, and satisfying the source's Eq. (27), the same algebra as $\tfrac14[\gamma_a,\gamma_b]$. The Lorentz rotation acts on the field through $\delta\psi^\mu = \tfrac12(d\theta^{\alpha\beta})S_{\alpha\beta}{}^\mu{}_\nu\psi^\nu$. With these objects the varied equation is **identically** the substituted equation, so the gauging and the variation commute by construction and the ambiguity of the standard vierbein coupling is removed.
+where the Levi-Civita $\nabla_\mu$ appears explicitly because the index is a world index, and $S_{\mu\nu}$ is the spinor generator, $4S_{\mu\nu} = M_\mu M_\nu^* - M_\nu M_\mu^*$, related to the vector generator by $2S_{\mu\nu} = V_{\mu\nu} + i\varepsilon_{\mu\nu}$, self-dual, and satisfying the source's Eq. (27), the same algebra as $\tfrac14[\gamma_a,\gamma_b]$. The Lorentz rotation acts on the field through $\delta\psi_\mu = \tfrac12\sum_{\alpha,\beta}\epsilon_\alpha\epsilon_\beta\,(d\theta_{\alpha\beta})S_{\alpha\beta\mu\nu}\psi_\nu$. With these objects the varied equation is **identically** the substituted equation, so the gauging and the variation commute by construction and the ambiguity of the standard vierbein coupling is removed.
 
-**The geometry the repair rests on: the connection is solved, not postulated.** The frame fields are not free parameters of the source's formalism; the connection is built out of them rather than assumed beside them. The metric is the polar form of the frame, $g_{\mu\nu} = n_\mu n_\nu - n_{i\mu}n_{i\nu}$ with $i$ summed, so that the frame is orthonormal by construction; and the source's connection $\omega^\mu{}_{\nu\rho}$ is fixed by requiring the frame to be covariantly constant,
+**The geometry the repair rests on: the connection is solved, not postulated.** The frame fields are not free parameters of the source's formalism; the connection is built out of them rather than assumed beside them. The metric is the polar form of the frame, $g_{\mu\nu} = n_\mu n_\nu - n_{i\mu}n_{i\nu}$ with $i$ summed, so that the frame is orthonormal by construction; and the source's connection $\omega_{\mu\nu\rho}$ is fixed by requiring the frame to be covariantly constant,
 
 $$
-D_\rho n^\mu = 0 , \qquad D_\rho n^\mu{}_i = 0 .
+D_\rho n_\mu = 0 , \qquad D_\rho n_{\mu i} = 0 .
 $$
 
 Metric compatibility then follows by the Leibniz rule instead of being imposed, $D_\rho g_{\mu\nu} = 0$, because $g$ is built from the $n$'s. With the frame so fixed the source computes the curvature of $\omega$ and finds
 
 $$
-\Omega^\mu{}_{\nu\rho\sigma} = -R^\mu{}_{\nu\rho\sigma} ,
+\Omega_{\mu\nu\rho\sigma} = -R_{\mu\nu\rho\sigma} ,
 $$
 
-the Riemann tensor of the Levi-Civita symbols, the two sides differing by a sign and nothing else, because the commutator $[D_\rho,D_\sigma]$ annihilates each frame field and the frame is complete. The gravitational action is therefore still the Einstein–Hilbert one, as the source's abstract claims: $g^{\mu\rho}g^{\nu\sigma}\Omega_{\mu\nu\rho\sigma} = -R$ is the Einstein–Hilbert Lagrangian up to a sign. The identity has a second face, and it is the one that matters for this article. Because $\omega$ has been solved for in terms of the metric, it is **not an independent field**, the formalism is not a local-Lorentz gauge theory in the sense of Route Three above, there is no field strength of $\omega$ to vary separately, and the compatibility failure of the standard vierbein coupling cannot arise because the object that produced it has been eliminated. What the construction therefore exhibits is a Lorentz-invariant formalism with no Lorentz index anywhere and with the Einstein–Hilbert action intact — at the cost of having no independent Lorentz connection to add dynamics to.
+the Riemann tensor of the Levi-Civita symbols, the two sides differing by a sign and nothing else, because the commutator $[D_\rho,D_\sigma]$ annihilates each frame field and the frame is complete. The gravitational action is therefore still the Einstein–Hilbert one, as the source's abstract claims: $g_{\mu\rho}g_{\nu\sigma}\Omega_{\mu\nu\rho\sigma} = -R$ is the Einstein–Hilbert Lagrangian up to a sign. The identity has a second face, and it is the one that matters for this article. Because $\omega$ has been solved for in terms of the metric, it is **not an independent field**, the formalism is not a local-Lorentz gauge theory in the sense of Route Three above, there is no field strength of $\omega$ to vary separately, and the compatibility failure of the standard vierbein coupling cannot arise because the object that produced it has been eliminated. What the construction therefore exhibits is a Lorentz-invariant formalism with no Lorentz index anywhere and with the Einstein–Hilbert action intact — at the cost of having no independent Lorentz connection to add dynamics to.
 
-**The world index, and why the coordinate connection cannot be dropped.** The substitution takes the spinor-index form $\partial/\partial x^\mu\,\psi \to \partial/\partial x^\mu\,\psi + \tfrac12\omega_{\alpha\beta\mu}S^{\alpha\beta}\psi$ of the standard theory to
+**The world index, and why the coordinate connection cannot be dropped.** The substitution takes the spinor-index form $\partial/\partial x_\mu\,\psi \to \partial/\partial x_\mu\,\psi + \tfrac12\sum_{\alpha,\beta}\epsilon_\alpha\epsilon_\beta\,\omega_{\alpha\beta\mu}S_{\alpha\beta}\psi$ of the standard theory to
 
 $$
-\partial/\partial x^\mu\,\psi^\rho \;\longmapsto\; D_\mu\psi^\rho
-= \Bigl(\delta^\rho{}_\sigma\nabla_\mu + \tfrac12\omega_{\alpha\beta\mu}\,(S^{\alpha\beta})^\rho{}_\sigma\Bigr)\psi^\sigma ,
+\partial/\partial x_\mu\,\psi_\rho \;\longmapsto\; D_\mu\psi_\rho
+= \Bigl(\delta_{\rho\sigma}\nabla_\mu + \tfrac12\omega_{\alpha\beta\mu}\,(S_{\alpha\beta})_{\rho\sigma}\Bigr)\psi_\sigma ,
 $$
 
-and the sentence the source attaches to it carries the whole point: the Levi-Civita covariant derivative appears explicitly **because the spinor now carries a world index**, "in contrast to Eq. (1), where $\psi$ carries only a spinor index". In the standard coupling the spinor index is a Lorentz spinor index, so the partial derivative is promoted by the spin connection alone and no coordinate connection ever appears; the vierbein is then what converts a world vector index into a Lorentz one, and that conversion, performed on the frame in the varied action, is precisely the origin of the anticommutator $\{\gamma_a,S^{cd}\}$. Once the spinor's index is a world index there is nothing to convert, so nothing produces an anticommutator and the varied and substituted equations coincide by construction. The formalism's parsimony is thus not decorative: the absence of Lorentz indices is the same fact as the commutativity of the gauging, seen from the other side. The diacritics of the algebra are the metric transpose, $(V^{\mathsf{T}})_\mu = g_{\mu\nu}V^\nu$ and $(A^{\mathsf{T}})^\mu{}_\nu = g_{\mu\rho}g_{\nu\sigma}A^\sigma{}_\rho$, which reduce to the ordinary transpose when the metric is flat; the $M_\mu$ are metric-hermitian and the $N_i$ metric-antisymmetric (Eqs. (22)–(23) of the source), which is what makes the Lagrangian real.
+and the sentence the source attaches to it carries the whole point: the Levi-Civita covariant derivative appears explicitly **because the spinor now carries a world index**, "in contrast to Eq. (1), where $\psi$ carries only a spinor index". In the standard coupling the spinor index is a Lorentz spinor index, so the partial derivative is promoted by the spin connection alone and no coordinate connection ever appears; the vierbein is then what converts a world vector index into a Lorentz one, and that conversion, performed on the frame in the varied action, is precisely the origin of the anticommutator $\{\gamma_a,S^{cd}\}$. Once the spinor's index is a world index there is nothing to convert, so nothing produces an anticommutator and the varied and substituted equations coincide by construction. The formalism's parsimony is thus not decorative: the absence of Lorentz indices is the same fact as the commutativity of the gauging, seen from the other side. The diacritics of the algebra are the metric transpose, $(V^{\mathsf{T}})_\mu = g_{\mu\nu}V_\nu$ and $(A^{\mathsf{T}})_{\mu\nu} = g_{\mu\rho}g_{\nu\sigma}A_{\sigma\rho}$, which reduce to the ordinary transpose when the metric is flat; the $M_\mu$ are metric-hermitian and the $N_i$ metric-antisymmetric (Eqs. (22)–(23) of the source), which is what makes the Lagrangian real.
 
-**Status here.** This is an external construction, recorded and not adopted. It is worth recording in this article because it names a gap the boundary list below does not yet contain: the corpus's curved Dirac equation is the substituted form of a gauged flat equation, and the source shows that the substituted form and the varied form are different when the gauge group is the Lorentz group. Its structural relations were recomputed for this article on a constant Levi-Civita frame in signature $(1,3)$ — the matrix algebra of the source's Eqs. (19)–(21), the hat-hermiticity and hat-antisymmetry (22)–(23), the self-duality of $S_{\mu\nu}$ and $S_{\mu\nu}+S_{\mu\nu}^{\mathsf{T}}=0$, and the spinor algebra (27) — and all hold; the mixed-index position of the epsilon in the relation $2S_{\mu\nu} = V_{\mu\nu} + i\varepsilon_{\mu\nu}$ is the one that makes it an identity. What the construction does not supply is the corpus's question: it is a formalism for a **background** metric handed in through $n^\mu$ and $n^\mu{}_i$, with no action for those fields, no Einstein equation, and no selection of the metric, so it removes the coupling ambiguity without touching the dynamical void this article has recorded throughout.
+**Status here.** This is an external construction, recorded and not adopted. It is worth recording in this article because it names a gap the boundary list below does not yet contain: the corpus's curved Dirac equation is the substituted form of a gauged flat equation, and the source shows that the substituted form and the varied form are different when the gauge group is the Lorentz group. Its structural relations were recomputed for this article on a constant Levi-Civita frame in signature $(1,3)$ — the matrix algebra of the source's Eqs. (19)–(21), the hat-hermiticity and hat-antisymmetry (22)–(23), the self-duality of $S_{\mu\nu}$ and $S_{\mu\nu}+S_{\mu\nu}^{\mathsf{T}}=0$, and the spinor algebra (27) — and all hold; the mixed-index position of the epsilon in the relation $2S_{\mu\nu} = V_{\mu\nu} + i\varepsilon_{\mu\nu}$ is the one that makes it an identity. What the construction does not supply is the corpus's question: it is a formalism for a **background** metric handed in through $n_\mu$ and $n_{\mu i}$, with no action for those fields, no Einstein equation, and no selection of the metric, so it removes the coupling ambiguity without touching the dynamical void this article has recorded throughout.
 
 ## The Informational Sector on a Curved Background
 
@@ -444,7 +446,7 @@ The two kinds of relativistic tensor dynamics — the antisymmetric one of elect
 
 What such a claim is: a **representational unification at the level of the kinematical fibre**. It shows that one notation can carry a symmetric rank-two tensor and an antisymmetric one at once — which is the vicinity of this article's own bookkeeping problem, since the framework's fields are four-vectors in $\mathbb{M}_-$ while the gravitating source is a symmetric rank-two tensor, $(1,1)\oplus(0,0)$ in the vocabulary of the list below in *What Is Constructed and What Is Agenda*.
 
-What it is **not**: a field equation. The paper supplies no action for the frame or for the connection, no selection of a metric, and no Einstein equation; by its author's own statement it presents known relativistic tensor dynamics in a new formalism, and it derives nothing. It is therefore not a partial answer to *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*, and it does not advance the central open question there. The one thing it claims **about the algebra** — that the formulation produces no extra terms beyond the standard relativistic language, the condition being the Lorenz gauge $F_0 = \partial_\nu A^\nu = 0$ — is recorded, with its cautions, in *Relativistic Mechanics in Biquaternionic Form*.
+What it is **not**: a field equation. The paper supplies no action for the frame or for the connection, no selection of a metric, and no Einstein equation; by its author's own statement it presents known relativistic tensor dynamics in a new formalism, and it derives nothing. It is therefore not a partial answer to *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*, and it does not advance the central open question there. The one thing it claims **about the algebra** — that the formulation produces no extra terms beyond the standard relativistic language, the condition being the Lorenz gauge $F_0 = \partial_\nu A_\nu = 0$ — is recorded, with its cautions, in *Relativistic Mechanics in Biquaternionic Form*.
 
 The boundary of this article is unchanged by the claim, and the claim is unchanged by the boundary: one is about notation at a point, the other about dynamics for the field that attaches the notation to a curved manifold.
 
@@ -468,13 +470,13 @@ which is this article's own $g_{\mu\nu} = \langle \tilde E_\mu, \tilde E_\nu\ran
 
 What makes the construction worth recording here is its connection. A **single** algebra-valued $\omega_\mu \in \mathbb{C}\otimes\mathbb{H}$, subject only to the reality condition $\mathrm{Sc}(\omega_\mu + \bar{\omega}_\mu^*) = 0$, carries everything: its imaginary-scalar part $\mathrm{Sc}(\omega_\mu) \in i\mathbb{R}$ is a local $\mathrm{U}(1)$ freedom, which the source speculates may be electromagnetism, and its vector part $\mathrm{Vect}(\omega_\mu) \in \mathbb{C}\otimes\mathrm{Vec}(\mathbb{H})$ is the Lorentz connection. The spinor fields transform one-sidedly, $\psi_L \mapsto \Lambda\psi_L$ and $\psi_R \mapsto \psi_R\bar{\Lambda}$, and their covariant derivatives are correspondingly one-sided, with the connection inserted on the left for $\psi_L$ and on the right for $\psi_R$. This is the two-connections situation of *The Covariant Derivative and Gauge Connection in Biquaternionic Form* seen from the other side: the corpus keeps its central $\mathrm{U}(1)$ connection $\tilde A_\mu$ and its traceless Lorentz connection $\vec\Gamma_\mu$ apart and says no relation between them is asserted; the source has one algebra-valued connection whose two parts are the two objects. It also differs from the corpus's construction in that $\omega_\mu$ is a general biquaternion subject to one scalar condition, not restricted to the six-dimensional Lie subspace.
 
-**The connection is derived, not inserted.** This is the part of the construction that goes beyond the frame route of this article. The source's covariant derivative of the basis is $D_\rho s_\nu = \nabla_\rho s_\nu + \omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*$ with $\nabla_\rho s_\nu = \partial/\partial x^\rho s_\nu - \Gamma^\mu{}_{\nu\rho}s_\mu$, and the connection coefficients are then **determined**, not chosen, by the source's "minimality condition" $D_\rho s_\nu \equiv 0$:
+**The connection is derived, not inserted.** This is the part of the construction that goes beyond the frame route of this article. The source's covariant derivative of the basis is $D_\rho s_\nu = \nabla_\rho s_\nu + \omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*$ with $\nabla_\rho s_\nu = \partial/\partial x_\rho s_\nu - \Gamma_{\mu\nu\rho}s_\mu$, and where $\varsigma_\mu$ is the dual basis, $\langle\varsigma_\mu,s_\nu\rangle=\delta_{\mu\nu}$; the connection coefficients are then **determined**, not chosen, by the source's "minimality condition" $D_\rho s_\nu \equiv 0$:
 
 $$
-\Gamma^\mu{}_{\nu\rho} = \left\langle s^\mu,\ \partial/\partial x^\rho s_\nu + \omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*\right\rangle .
+\Gamma_{\mu\nu\rho} = \left\langle \varsigma_\mu,\ \partial/\partial x_\rho s_\nu + \omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*\right\rangle .
 $$
 
-The bracketed element lies in $\mathbb{M}_-$ — it is a sum of the $\mathbb{M}_-$-valued derivative $\partial/\partial x^\rho s_\nu$ and of terms $\omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*$, which combine into an $\mathbb{M}_-$ element — and the bilinear form is real on $\mathbb{M}_-$, so $\Gamma^\mu{}_{\nu\rho}$ is real-valued; this, together with the metric-compatibility computation below, was recomputed here. Two consequences deserve naming. First, **metric compatibility is a consequence, not a condition**: $\nabla_\rho g_{\mu\nu} = 0$ follows from the minimality of $\Gamma$ together with the reality condition on $\omega_\mu$, whereas Route Three above records metric compatibility and the vanishing of torsion as conditions the framework must impose from outside. Second, $\Gamma^\mu{}_{\nu\rho}$ **need not be symmetric** under the exchange of its two last labels — the source states this, and the asymmetry is exactly what makes $\nabla_\mu A_\nu - \nabla_\nu A_\mu$ differ from $\partial/\partial x^\mu A_\nu - \partial/\partial x^\nu A_\mu$ for the connection's own $\mathrm{U}(1)$ part.
+The bracketed element lies in $\mathbb{M}_-$ — it is a sum of the $\mathbb{M}_-$-valued derivative $\partial/\partial x_\rho s_\nu$ and of terms $\omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^*$, which combine into an $\mathbb{M}_-$ element — and the bilinear form is real on $\mathbb{M}_-$, so $\Gamma_{\mu\nu\rho}$ is real-valued; this, together with the metric-compatibility computation below, was recomputed here. Two consequences deserve naming. First, **metric compatibility is a consequence, not a condition**: $\nabla_\rho g_{\mu\nu} = 0$ follows from the minimality of $\Gamma$ together with the reality condition on $\omega_\mu$, whereas Route Three above records metric compatibility and the vanishing of torsion as conditions the framework must impose from outside. Second, $\Gamma_{\mu\nu\rho}$ **need not be symmetric** under the exchange of its two last labels — the source states this, and the asymmetry is exactly what makes $\nabla_\mu A_\nu - \nabla_\nu A_\mu$ differ from $\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$ for the connection's own $\mathrm{U}(1)$ part.
 
 **The curvature, and the Lagrangian the source leaves unsettled.** The field strength of the single connection is $\Omega_{\rho\sigma} = \nabla_\rho\omega_\sigma - \nabla_\sigma\omega_\rho + [\omega_\rho,\omega_\sigma]$, and the minimality condition turns the double commutator of covariant derivatives into the identity
 
@@ -482,7 +484,7 @@ $$
 [\nabla_\rho,\nabla_\sigma]s_\mu + \Omega_{\rho\sigma}s_\mu + s_\mu\bar\Omega_{\rho\sigma}^* = 0 ,
 $$
 
-whose last two terms are the same two-sided sandwiching — left action of $\Omega$, right action of its conjugate — that Route Three's derivative $\partial/\partial x^\mu\,\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$ exhibits. With the connection split as $\omega_\mu = \chi_\mu + igA_\mu$, where $\chi_\mu \in \mathbb{C}\otimes\mathrm{Vec}(\mathbb{H})$ and $A_\mu \in \mathbb{R}$, the field strength splits as $\Omega_{\mu\nu} = K_{\mu\nu} + igF_{\mu\nu}$ with $K_{\mu\nu} = \nabla_\mu\chi_\nu - \nabla_\nu\chi_\mu + [\chi_\mu,\chi_\nu]$ and $F_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu$; both the split and the term-by-term decomposition were verified here. The scalar piece of the one connection therefore produces a Maxwell-type field strength and the vector piece a Yang–Mills-type curvature. The source then proposes an Einstein–Hilbert-like Lagrangian, $(1/\kappa)L = R^{\mu\nu}{}_{\mu\nu}(\Gamma)$ with $R^\mu{}_{\nu\rho\sigma}(\Gamma) = \langle s^\mu,[\nabla_\rho,\nabla_\sigma]s_\nu\rangle$, and an alternative $(1/\kappa)L = \mathrm{Re}\langle\Omega^{\mu\nu},\Omega_{\mu\nu}\rangle$, and judges both unsettled; both are recorded, with the reason for each verdict, in *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*.
+whose last two terms are the same two-sided sandwiching — left action of $\Omega$, right action of its conjugate — that Route Three's derivative $\partial/\partial x_\mu\,\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$ exhibits. With the connection split as $\omega_\mu = \chi_\mu + igA_\mu$, where $\chi_\mu \in \mathbb{C}\otimes\mathrm{Vec}(\mathbb{H})$ and $A_\mu \in \mathbb{R}$, the field strength splits as $\Omega_{\mu\nu} = K_{\mu\nu} + igF_{\mu\nu}$ with $K_{\mu\nu} = \nabla_\mu\chi_\nu - \nabla_\nu\chi_\mu + [\chi_\mu,\chi_\nu]$ and $F_{\mu\nu} = \nabla_\mu A_\nu - \nabla_\nu A_\mu$; both the split and the term-by-term decomposition were verified here. The scalar piece of the one connection therefore produces a Maxwell-type field strength and the vector piece a Yang–Mills-type curvature. The source then proposes an Einstein–Hilbert-like Lagrangian, $(1/\kappa)L = R_{\mu\nu\mu\nu}(\Gamma)$ with $R_{\mu\nu\rho\sigma}(\Gamma) = \langle \varsigma_\mu,[\nabla_\rho,\nabla_\sigma]s_\nu\rangle$, and an alternative $(1/\kappa)L = \mathrm{Re}\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\langle\Omega_{\mu\nu},\Omega_{\mu\nu}\rangle$, and judges both unsettled; both are recorded, with the reason for each verdict, in *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*.
 
 **Weight of the instance.** A constructed instance is more than the bundle claim above, and it should be counted as what it is. It shows that the biquaternionic basis is not idle: four elements of $\mathbb{M}_-$ determine a Lorentzian metric through the algebra's own bilinear form, and one algebra-valued connection suffices for the tensor and spinor fields alike. It does not show more. There is no settled action for $s_\mu$ or $\omega_\mu$ and no field equation; the Riemann tensor of the induced connection and its identity with the field strength are written, but nothing is varied and no dynamics is attached to them, so the metric is general while its dynamics are absent, which is the same void this article records for the frame route. Nor is it a construction of the principal bundle $P(G,M)$ of the first source above: the basis is a basis of the algebra over the manifold, not the basis of a principal bundle with a structural group. The instance therefore raises the bundle claim's floor — from proposal to construction — without raising its ceiling.
 
@@ -490,7 +492,7 @@ whose last two terms are the same two-sided sandwiching — left action of $\Ome
 
 The boundary can be drawn as a list, and drawing it is this article's main result.
 
-**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The curved biquaternion Dirac operator $\tilde E^\mu D_\mu$, built from the dual frame and the one-sided spinor derivative $D_\mu\psi = \partial/\partial x^\mu\,\psi + \vec\Gamma_\mu\psi$, with its covariant connection transformation, its exact flat limit, and its Lichnerowicz square $(\tilde E^{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$. The induced metrics of the local-scale route in both interpretations, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
+**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The curved biquaternion Dirac operator $\tilde F_\mu D_\mu$, built from the dual frame and the one-sided spinor derivative $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with its covariant connection transformation, its exact flat limit, and its Lichnerowicz square $(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$. The induced metrics of the local-scale route in both interpretations, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
 
 **Agenda** (nothing constructed). An action principle or field equation for the frame or the connection, and hence any Einstein equation. Coupling to sources, with the bookkeeping problem that the gravitating objects are symmetric rank-2 tensors, $\left(1,1\right)\oplus\left(0,0\right)$, while the framework's own fields are four-vectors in $\mathbb{M}_-$. The curved-space form of the biquaternion **Maxwell** equation written in the framework's own notation, for which the background-dependence of $\tilde{\nabla}$ is precisely the obstacle; the corresponding **Dirac** form is constructed in the section *The Biquaternion Dirac Equation on a Curved Background* above, on a background whose frame and connection are still inserted by hand and whose current source remains the spinor-module object of the companion articles. The **coupling ambiguity** of the Lorentz gauge group: the Dirac form written here is the substituted form of a gauged flat equation, and the source recorded in *Lorentz Gauging and the Euler–Lagrange Variation* shows that the varied form differs, because the Lorentz generator does not commute with $\gamma_a$; whether the corpus should adopt the varied form, or the world-index formalism that removes the difference, is open. Global and topological structure of every kind: the algebra is a point, so causal structure, horizons, singularities, and topology are outside it, and even the existence of spinor fields on a manifold is a topological condition — the vanishing of the second Stiefel–Whitney class — that the algebra cannot see; the globalisation of the spinor module to a bundle over a curved background is recorded as a separate open item in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The discrete symmetries, which are not in the connected rotor group. The informational sector, as above. And empirical contact, which remains the framework's central open question and is not advanced by anything here.
 
@@ -512,7 +514,7 @@ Within the second interpretation's class — one function, no shift, flat spatia
 
 A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{R} + \tilde{R}G^{*}$, not the commutator, the two differing precisely for the boosts.
 
-The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde U\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial x^\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\vec\Gamma_\mu \mapsto \tilde U\vec\Gamma_\mu\tilde U^{-1} - (\partial/\partial x^\mu\,\tilde U)\tilde U^{-1}$. With the dual frame $\tilde E^\mu = g_{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\tilde E^\mu D_\mu$, whose massless equation is $\tilde E^{\mu} D_{\mu}\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\tilde E^{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde E^{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$ with vanishing connection, and its square is the Lichnerowicz formula $(\tilde E^{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma_0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
+The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde U\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\vec\Gamma_\mu \mapsto \tilde U\vec\Gamma_\mu\tilde U^{-1} - (\partial/\partial x_\mu\,\tilde U)\tilde U^{-1}$. With the dual frame $\tilde F_\mu = g_{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\tilde F_\mu D_\mu$, whose massless equation is $\tilde F_{\mu} D_{\mu}\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\tilde F_{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde F_{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$ with vanishing connection, and its square is the Lichnerowicz formula $(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma_0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
 
 What is missing is not a technical detail but the theory. Nothing determines the frame, the connection, or the metric; there is no action, no field equation, and no Einstein equation; the gravitating rank-2 tensors are not the framework's four-vectors; diffeomorphism invariance has no algebraic counterpart; global and topological structure is outside a pointwise algebra; and the informational sector's trace formula is a fibre trace with no measure and no integral, so its curved-space extension is not merely unwritten but unlocated. The framework contains the kinematical fibre of tetrad gravity and none of its dynamics; the title names a framework, and that is exactly what it is.
 
@@ -533,17 +535,21 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict'$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$ | Biquaternionic gradient, $Q_t=ict'$; needs a global chart |
-| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \tilde{E}_\mu dx^\mu$ |
+| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \sum_\mu\tilde{E}_\mu dx_\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
 | $\vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
-| $D_\mu\tilde{Q} = \partial/\partial x^\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
-| $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$ | Material dual frame (inverse tetrad) |
-| $\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; its image is even, $\hat e^a\mapsto\gamma_0\gamma_a$ |
-| $\hat E^\mu=e^\mu{}_a\hat e^a$ | Informational dual frame; the exact gamma transcription of the Dirac operator uses it |
-| $D_\mu\psi = \partial/\partial x^\mu\,\psi + \vec\Gamma_\mu\psi$ | Covariant derivative on the spinor module (one-sided, left action) |
-| $\tilde E^\mu D_\mu$ | Curved biquaternion Dirac operator |
-| $(\tilde E^{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$ | Lichnerowicz square; $\Box_g$ Laplace–Beltrami on spinors, $R$ Ricci scalar |
+| $D_\mu\tilde{Q} = \partial/\partial x_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
+| $\tilde F_\mu = g_{\mu\nu}\tilde E_\nu$, $\langle \tilde F_\mu, \tilde E_\nu\rangle_{\natural} = \delta_{\mu\nu}$ | Material dual frame (inverse tetrad) |
+| $\hat e_a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; its image is even, $\hat e_a\mapsto\gamma_0\gamma_a$ |
+| $\hat F_\mu=e_{\mu a}\hat e_a$ | Informational dual frame; the exact gamma transcription of the Dirac operator uses it |
+| $e_{\mu a}$ | Inverse vierbein components; world slot first, frame label second |
+| $\omega_\mu{}^b{}_a$ | Spin connection; world slot, then frame row (up), then frame column (down) |
+| $\epsilon_\mu$ | Sign vector, $\epsilon_0=1$, $\epsilon_k=-1$: the metric as a form (the permittivity is $\epsilon$, without an index) |
+| $\varsigma_\mu$ | Dual basis to $s_\mu$, $\langle\varsigma_\mu,s_\nu\rangle=\delta_{\mu\nu}$ |
+| $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$ | Covariant derivative on the spinor module (one-sided, left action) |
+| $\tilde F_\mu D_\mu$ | Curved biquaternion Dirac operator |
+| $(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R$ | Lichnerowicz square; $\Box_g$ Laplace–Beltrami on spinors, $R$ Ricci scalar |
 | $u = c$, $f = c^2$ | Local scale factor and its square, in the local-scale route |
 | $R_{00}=u\Delta u$, $R_{0i}=0$, $R_{ij}=-\partial^2/\partial Q_i\partial Q_j u/u$ | Ricci tensor of $g=\mathrm{diag}(-c^2,1,1,1)$, corpus convention |
 | $(m,n)$, $\left(\tfrac12,\tfrac12\right)$, $\left(1,1\right)\oplus\left(0,0\right)$ | Lorentz representations: four-vectors; symmetric rank-2 tensors |
@@ -554,7 +560,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the tetrad formalism and the distinction between coordinate and orthonormal frames in general relativity.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the metric, the curvature tensors, and the spinor formulation of curved spacetime.
 - A. Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963) 7–9, for the square of the Dirac operator and the $\tfrac14 R$ curvature term.
-- J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external construction recorded in *Lorentz Gauging and the Euler–Lagrange Variation*: the non-commutativity of Lorentz gauging with the Euler–Lagrange variation in the standard vierbein coupling of a Dirac fermion to gravity; the world-index formalism — the frame fields $n^\mu$ and $n^\mu{}_i$, the matrices $M_\mu$ and $N_i$ with their Dirac-like algebra, and the covariant derivative carrying the explicit Levi-Civita connection — in which the two procedures commute; and the geometry of that formalism, in which the frame is covariantly constant, the connection is thereby solved in terms of the metric, its curvature is minus the Riemann tensor, and the gravitational action remains the Einstein–Hilbert one. Cited as an external claim; the source's equations were recomputed here, and the formalism is not adopted.
+- J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external construction recorded in *Lorentz Gauging and the Euler–Lagrange Variation*: the non-commutativity of Lorentz gauging with the Euler–Lagrange variation in the standard vierbein coupling of a Dirac fermion to gravity; the world-index formalism — the frame fields $n_\mu$ and $n_{\mu i}$, the matrices $M_\mu$ and $N_i$ with their Dirac-like algebra, and the covariant derivative carrying the explicit Levi-Civita connection — in which the two procedures commute; and the geometry of that formalism, in which the frame is covariantly constant, the connection is thereby solved in terms of the metric, its curvature is minus the Riemann tensor, and the gravitational action remains the Einstein–Hilbert one. Cited as an external claim; the source's equations were recomputed here, and the formalism is not adopted.
 - J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction recorded in *An External Claim That the Bundle Basis Is Biquaternionic*: a coordinate-covariant and locally Lorentz invariant formalism in which the basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ is biquaternionic, the metric is the polar form $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$, and a single algebra-valued connection $\omega_\mu$ carries both the local $\mathrm{U}(1)$ freedom and the Lorentz freedom. Cited as an external construction that reproduces the frame route of this article in the source's notation; the corpus does not adopt it.
 - L. Parker and D. Toms, *Quantum Field Theory in Curved Spacetime: Quantized Fields and Gravity* (Cambridge, 2009), for the spinor covariant derivative, the Dirac equation on a curved background and its squared Klein–Gordon form.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984) and Vol. 2 (Cambridge, 1986), for the two-spinor calculus and the tetrad and spin-connection formalism in Lorentzian signature.

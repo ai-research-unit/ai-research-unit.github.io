@@ -22,7 +22,7 @@ One caveat, stated once. The complex statement is exact. Over $\mathbb{R}$ the s
 
 **No article is converted.** Every formula that writes a gamma gains a second equality with the cell form. The gamma stays; the cell form is added beside it. The isomorphism is what guarantees that the second equality exists, and it is exact over $\mathbb{C}$. One article in the corpus uses a larger algebra by design and is marked separately.
 
-**Three articles were patched before this pass.** The two *Conventions of the Matrix Models* articles and *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra* already carry both notations, so they are listed with the patched articles and are not to be patched again. Duplication among them is normal: a conventions article fixes the frame, the representation article derives it, and the second corpus repeats the first so that each corpus stands alone.
+**Three articles were patched before this pass.** The two *Conventions of the Matrix Models* articles and *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra* already carry both notations, so they are listed with the patched articles and are not to be patched again. Duplication among them is normal: a conventions article fixes the frame, the representation article derives it, and the second corpus repeats the first so that each corpus stands alone.
 
 What differs between articles is only the length of the second equality:
 
@@ -334,7 +334,7 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 | [Conventions of the Matrix Models (mathematics)](../articles_maths/conventions-of-the-matrix-models.html) | the five generators, the sixteen products and the comparison map | $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the sixteen products are the sixteen cells |
 | [Conventions of the Operators and the Differential Calculus](../articles_maths/conventions-of-the-operators-and-the-differential-calculus.html) | the gamma frame is five of the sixteen operators, up to $i$ | $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | *— Biquaternions —* | | |
-| [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | the frame derived from the grading; the canonical arrays | $\gamma_0=iT_{e_t,e_x}$, $\gamma_1=iT_{e_x,e_y}$, $\gamma_2=iT_{e_y,e_y}$, $\gamma_3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$ |
+| [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | the frame derived from the grading; the canonical arrays | $\gamma_0=iT_{e_t,e_x}$, $\gamma_1=iT_{e_x,e_y}$, $\gamma_2=iT_{e_y,e_y}$, $\gamma_3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$ |
 | [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html) | a gamma frame is a further choice; the view supplies no gamma frame | five of the sixteen cells, up to $i$; no five cells singled out up to $i$ |
 | *— $M_4(\mathbb{C})$ —* | | |
 | [The Matrix Algebra $M_4(\mathbb{C})$](../articles_maths/the-matrix-algebra-m4c.html) | it chooses no gamma frame | no five of the sixteen cells $T_{\mu\nu}$ are singled out up to $i$ |

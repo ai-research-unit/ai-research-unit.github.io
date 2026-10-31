@@ -1,12 +1,12 @@
-# __The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$__
+# __The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$__
 
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ of
 *Introduction to the Antisymmetric Plain Algebra*. This article reads the operation on
-the **left regular representation** $M_4(\mathbb{R})_L$ of *Introduction to the $4\times4$ Matrix
-Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, where the plain product becomes the matrix
+the **left regular representation** $M_4(\mathbb{R})_{\mathbb{H}_L}$ of *Introduction to the $4\times4$ Matrix
+Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions*, where the plain product becomes the matrix
 product and the antisymmetrization becomes the **halved commutator** of the regular matrices. It gives
 the commutator identity, the image, the structure constants, the two commuting regular copies, the
 trace form and the comparison with the plain algebra on the same model.
@@ -21,8 +21,8 @@ ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $
 nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
 The model and its multiplicativity are *Introduction to the $4\times4$ Matrix Element Representation
-$M_4(\mathbb{R})_L$ of Quaternions* and *The General Plain Algebra in the $4\times4$ Matrix Element
-Representation $M_4(\mathbb{R})_L$*; the bracket and its structure are *The Lie Algebra of the
+$M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions* and *The General Plain Algebra in the $4\times4$ Matrix Element
+Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the bracket and its structure are *The Lie Algebra of the
 Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Algebra*, below this
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the $2\times2$
 Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this category.
@@ -137,7 +137,7 @@ on pure elements $\langle\cdot,\cdot\rangle=-\vec q_1\cdot\vec q_2$, and the Kil
 | | the plain algebra | the antisymmetric plain block |
 |---|---|---|
 | the operation in the model | the matrix product $\mathsf{M}_4(\tilde q_1)\mathsf{M}_4(\tilde q_2)$ | the halved commutator |
-| the model | the algebra morphism $\mathbb{H}\to M_4(\mathbb{R})_L$ | the same, read on the commutator |
+| the model | the algebra morphism $\mathbb{H}\to M_4(\mathbb{R})_{\mathbb{H}_L}$ | the same, read on the commutator |
 | the image | the four-dimensional algebra of the regular matrices | the trace-free part, of dimension three |
 | the trace of a value | $4\,\mathrm{Sc}(\tilde q_1\tilde q_2)$ | $0$ |
 | the two copies | the left and the right, commuting | the left copy alone carries the block |
@@ -146,7 +146,7 @@ on pure elements $\langle\cdot,\cdot\rangle=-\vec q_1\cdot\vec q_2$, and the Kil
 matrices, a four-dimensional algebra isomorphic to $\mathbb{H}$ and split from $M_4(\mathbb{R})$ by the
 representation; the antisymmetric block is the commutator on the same matrices, of image the trace-free
 part, and the right copy commutes with it without belonging to it. The plain reading is *The General
-Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
+Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*.
 
 ## Summary
 
@@ -175,7 +175,7 @@ four-dimensional regular algebra as image.
 
 ## Further Reading
 
-- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions](introduction-to-the-4x4-matrix-element-representation-of-quaternions.html), for the model and its basis matrices, and for the plain product on the same model.
+- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions](introduction-to-the-4x4-matrix-element-representation-of-quaternions.html), for the model and its basis matrices, and for the plain product on the same model.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the two commuting regular copies and the two-sided operators.
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html) and [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), both below this article in this category, for the structure and the form read here on the model.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), above this article in this category, for the companion model.

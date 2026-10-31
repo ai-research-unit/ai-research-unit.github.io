@@ -1,4 +1,4 @@
-# __The General Quaternionic Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$__
+# __The General Quaternionic Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$__
 
 ## Introduction
 

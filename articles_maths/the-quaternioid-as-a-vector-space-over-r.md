@@ -42,7 +42,7 @@ Both are real-linear, and the assignments $\tilde p\mapsto L_{\tilde p}$ and $\t
 $$
 \boxed{\;L_{\tilde p}L_{\tilde q}=L_{\tilde p\tilde q} , \qquad R_{\tilde p}R_{\tilde q}=R_{\tilde q\tilde p}\;},
 $$
-the first from associativity $\tilde p(\tilde q\tilde q_3)=(\tilde p\tilde q)\tilde q_3$ and the second from $(\tilde q_3\tilde p)\tilde q=\tilde q_3(\tilde p\tilde q)$. The two images commute, $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, both being the left and the right multiplication by fixed elements, and this is associativity again. The left regular representation $\tilde p\mapsto L_{\tilde p}$ is the quaternion algebra read as a four-dimensional subalgebra of $M_4(\mathbb{R})$; it is written $M_4(\mathbb{R})_L$ in the corpus and is the subject of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category.
+the first from associativity $\tilde p(\tilde q\tilde q_3)=(\tilde p\tilde q)\tilde q_3$ and the second from $(\tilde q_3\tilde p)\tilde q=\tilde q_3(\tilde p\tilde q)$. The two images commute, $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, both being the left and the right multiplication by fixed elements, and this is associativity again. The left regular representation $\tilde p\mapsto L_{\tilde p}$ is the quaternion algebra read as a four-dimensional subalgebra of $M_4(\mathbb{R})$; it is written $M_4(\mathbb{R})_{\mathbb{H}_L}$ in the corpus and is the subject of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions*, below this article in this category.
 
 ## The Scalar and Vector Subspaces
 
@@ -76,7 +76,7 @@ The quaternion algebra is a four-dimensional real vector space on the basis $e_t
 | $\mathbb{R}_{\mathbb{H}}$ | the scalar subspace $\mathbb{R}e_t$, dimension one |
 | $\mathrm{Vect}(\mathbb{H})$ | the vector subspace $\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, dimension three |
 | $L_{\tilde p},R_{\tilde q}$ | the left and the right multiplication by $\tilde p$ and by $\tilde q$ |
-| $M_4(\mathbb{R})_L$ | the image of $\tilde p\mapsto L_{\tilde p}$, the left regular representation |
+| $M_4(\mathbb{R})_{\mathbb{H}_L}$ | the image of $\tilde p\mapsto L_{\tilde p}$, the left regular representation |
 | ${}^{\natural}$ | the natural conjugation $\tilde q\mapsto q_t-\vec q$ |
 
 ## Further Reading

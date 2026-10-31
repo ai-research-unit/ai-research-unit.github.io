@@ -277,7 +277,7 @@ The conventions below are those used throughout the corpus.
 | $\mathbb{H}$ | The real quaternions |
 | $\mathbb{H}_{\mathrm{s}}$ | The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
 | $\mathbb{B}$ | The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\mathbb{B}_L$, $M_4(\mathbb{C})_{\mathbb{B},L}$ | The image of the left regular representation, a four-dimensional subalgebra of $M_4(\mathbb{C})$; the right copy $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}$ is its commutant |
+| $\mathbb{B}_L$, $M_4(\mathbb{C})_{\mathbb{B}_L}$ | The image of the left regular representation, a four-dimensional subalgebra of $M_4(\mathbb{C})$; the right copy $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant |
 | $\mathsf{M}_4^{L}(\tilde Q)$, $\mathsf{M}_4^{R}(\tilde Q)$ | The matrices of left and right multiplication by $\tilde Q$ in the basis the article names |
 | $\mathbb{H}_{\mathbb{D}}$ | The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | Lower case, upper case | The scalar sector is the reals, or larger than the reals |

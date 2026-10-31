@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra__
+# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra__
 
 ## Introduction
 
@@ -238,7 +238,7 @@ In the coefficient frame the matrix is $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the Peirce frame, the coefficient frame and the change.
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the factor $-i$ and the determinant.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the transpose family and the exchange.
-- [$M_4(\mathbb{C})$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.
+- [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the canonical frame and the regular representation.
 - [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $L$, the slots and the matrix letters.

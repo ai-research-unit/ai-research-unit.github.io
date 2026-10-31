@@ -11,7 +11,7 @@ $$
 \tilde q = 1 + 2\vec e_x - \vec e_y + 3\vec e_z,
 $$
 
-with scalar part $q_t = 1$ and vector part $\vec q = 2\vec e_x - \vec e_y + 3\vec e_z$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
+with scalar part $q_t = 1$ and vector part $\vec q = 2\vec e_x - \vec e_y + 3\vec e_z$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
 
 Throughout, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with
 

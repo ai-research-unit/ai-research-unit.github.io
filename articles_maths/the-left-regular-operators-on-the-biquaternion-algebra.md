@@ -6,7 +6,7 @@
 
 **What the article proves.** Four things, in this order. The map $\tilde Q\mapsto L_{\tilde Q}$ is injective and complex-linear. It is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, so its image is a copy of the algebra inside the operator algebra. The kernel and the image of a single $L_{\tilde Q}$ are the right annihilator and the right ideal $\tilde Q\mathbb{B}$. The operator $L_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, and its inverse is $L_{\tilde Q^{-1}}$.
 
-**What the article does not do.** The matrix of $L_{\tilde Q}$ is the subject of *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.
+**What the article does not do.** The matrix of $L_{\tilde Q}$ is the subject of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.
 
 **The letters.** The operator is $L_{\tilde Q}$, the element is $\tilde Q$, and the argument is $X$. The letter $L$ names left multiplication and is not an index. The conventions of the four letters, the slots and the matrix are *Operator Family Conventions*; this article uses them and defines none of them.
 
@@ -171,7 +171,7 @@ The left regular operator of $\tilde Q$ is $L_{\tilde Q}(X)=\tilde QX$. The assi
 
 The kernel of $L_{\tilde Q}$ is the right annihilator of $\tilde Q$, and the image is the right ideal $\tilde Q\mathbb{B}$. The rank is four for a unit, two for a nonzero zero divisor, and zero for the zero element. The operator is invertible exactly when $N(\tilde Q)\neq0$, and then its inverse is $L_{\tilde Q^{-1}}$.
 
-The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*, where the same three statements are read entry by entry in the Peirce frame.
+The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*, where the same three statements are read entry by entry in the Peirce frame.
 
 ## Summary of Notation
 
@@ -189,7 +189,7 @@ The three statements — the law, the rank trichotomy and the criterion — are 
 
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and the complex dimension sixteen.
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the matrix of a general operator and the units.
-- [$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the other side and the exchange.
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the determinant and the norm.
 - [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.

@@ -1,8 +1,8 @@
-# __The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$__
+# __The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$__
 
 ## Introduction
 
-The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices. On that image the quaternion product is the matrix product, the plain form is half the trace pairing, and the invariants of the quaternion are the trace and the determinant of its image. The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the form and the transpose are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the operators are *Two-Sided Operators on the Quaternion Algebra*, above this article in this category; the left regular model is *The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
+The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices. On that image the quaternion product is the matrix product, the plain form is half the trace pairing, and the invariants of the quaternion are the trace and the determinant of its image. The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the form and the transpose are *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the operators are *Two-Sided Operators on the Quaternion Algebra*, above this article in this category; the left regular model is *The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*, below this article in this category.
 
 ## The Embedding
 

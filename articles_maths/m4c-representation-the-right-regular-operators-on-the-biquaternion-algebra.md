@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Representation : The Right Regular Operators on the Biquaternion Algebra__
+# __$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra__
 
 ## Introduction
 
@@ -10,7 +10,7 @@ $$
 \mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
 $$
 
-unless a display says otherwise. The frame, its order and the change $C_{\Pi}$ are fixed in *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*; the left matrix in the same frame is the subject of *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*, and this article uses its display as the left-hand side of the exchange.
+unless a display says otherwise. The frame, its order and the change $C_{\Pi}$ are fixed in *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*; the left matrix in the same frame is the subject of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*, and this article uses its display as the left-hand side of the exchange.
 
 **What the article proves.** The matrix is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$, with scalar blocks $M_{ij}(\tilde Q)I_2$. Its trace is $4Q_t$, its determinant $N(\tilde Q)^2$, its rank twice the rank of $\mathsf M_2(\tilde Q)$, and its spectrum the spectrum of $\mathsf M_2(\tilde Q)$ with every eigenvalue doubled. The exchange $R_{\tilde Q}=S L_{\tilde Q}^{\mathsf T}S^{-1}$ is verified on the four generators, entry by entry, and the sign on the $y$ generator is positive, $R_{\vec e_y}=+i\sigma_2\otimes I_2$.
 
@@ -126,7 +126,7 @@ $$
 R_\mu=S\,L_\mu^{\mathsf T}\,S^{-1},\qquad \mu=t,x,y,z.
 $$
 
-The four left matrices are the ones of *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Peirce Frame*. The identity is a matrix identity in the Peirce frame; the operator $S$ is the flip of the two mixed Peirce units, and its matrix there is the permutation of the second and third coordinates.
+The four left matrices are the ones of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Peirce Frame*. The identity is a matrix identity in the Peirce frame; the operator $S$ is the flip of the two mixed Peirce units, and its matrix there is the permutation of the second and third coordinates.
 
 **The four checks.** The generators fall into three types:
 
@@ -219,7 +219,7 @@ the square of the $2\times2$ characteristic polynomial. The minimal polynomial i
 
 **The degenerate cases.** For a unit, the eigenvalues are the two roots of $\lambda^2-2Q_t\lambda+N(\tilde Q)$, each doubled. For a nonzero zero divisor, one eigenvalue is zero and the other is $2Q_t$, each doubled. For the zero element, the only eigenvalue is zero, with multiplicity four.
 
-**The same spectrum as the left family.** The left matrix has the spectrum $\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\}$ by *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Eigenvalues of $\mathsf M_2(\tilde Q)$, Doubled*, and the right matrix has the same spectrum. The two operators are different, but the spectrum does not see the side.
+**The same spectrum as the left family.** The left matrix has the spectrum $\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\}$ by *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Eigenvalues of $\mathsf M_2(\tilde Q)$, Doubled*, and the right matrix has the same spectrum. The two operators are different, but the spectrum does not see the side.
 
 ## The Two Families Side by Side
 
@@ -283,7 +283,7 @@ The two families share the trace, the determinant, the rank and the spectrum, an
 ## Further Reading
 
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the operator statements that this article computes.
-- [$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the left matrix transposed here.
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the left matrix transposed here.
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the Peirce frame, the coefficient frame and the change.
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the factor $-i$ and the determinant.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the commutation and the two centralisers.

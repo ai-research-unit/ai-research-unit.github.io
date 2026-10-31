@@ -5,7 +5,7 @@
 
 The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications.
 
-The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebra*: the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* and *Quaternion 2x2 Matrix Element Representation*, and the subspaces in coordinates are from *The Scalar and Vector Subspaces of $\mathbb{H}$*.
+The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebra*: the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$* and *Quaternion 2x2 Matrix Element Representation*, and the subspaces in coordinates are from *The Scalar and Vector Subspaces of $\mathbb{H}$*.
 
 The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.
 
@@ -63,7 +63,7 @@ $$
 
 *Proof.* The scalar formula is symmetric in $\tilde q_2$ and $\tilde q_1$; in the vector formula the terms $q_{2t}\vec q_1+q_{1t}\vec q_2$ exchange under the swap while the cross product changes sign.
 
-**Remark.** The four coordinate functions of the product are the components of the matrix product $L_{\tilde q_2}[\tilde q_1]$ with the left regular matrix $L_{\tilde q_2}$ of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.
+**Remark.** The four coordinate functions of the product are the components of the matrix product $L_{\tilde q_2}[\tilde q_1]$ with the left regular matrix $L_{\tilde q_2}$ of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.
 
 ## The Three Involutions in Coordinates
 

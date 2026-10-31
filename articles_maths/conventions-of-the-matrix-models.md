@@ -17,8 +17,8 @@ The order is: the table of objects, the $2\times2$ isomorphism with its four for
 | the algebra | $\mathbb{B}$ | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ |
 | the isomorphism | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the element read as a $2\times2$ matrix |
 | the ambient | $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ | operators on the algebra as a vector space |
-| the left copy | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}=\rho_L(\mathbb{B})$ | four-dimensional subalgebra |
-| the right copy | $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}=\rho_R(\mathbb{B})$ | the commutant of $\mathbb{B}_L$ |
+| the left copy | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}=\rho_L(\mathbb{B})$ | four-dimensional subalgebra |
+| the right copy | $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}=\rho_R(\mathbb{B})$ | the commutant of $\mathbb{B}_L$ |
 | the matrix of an element | $\mathsf{M}_4^{L}(\tilde Q)$, $\mathsf{M}_4^{R}(\tilde Q)$ | the matrices of $\rho_L(\tilde Q)$, $\rho_R(\tilde Q)$ in the frame the article names; canonical by default |
 
 ### The 2×2 Isomorphism
@@ -61,9 +61,9 @@ The determinant is multiplicative, which is what makes the matrix model compute 
 
 **The maps.** Left multiplication is the linear map $\rho_L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The target is the ambient operator algebra $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$.
 
-**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and $\mathbb{B}_R$ is the commutant of $\mathbb{B}_L$ in $M_4(\mathbb{C})$.
+**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and $\mathbb{B}_R$ is the commutant of $\mathbb{B}_L$ in $M_4(\mathbb{C})$.
 
-A bare $M_4(\mathbb{C})_{\mathbb{B}}$ means the left copy; the side is $L$ unless written. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is an operator algebra, carries no biquaternion structure and takes no biquaternion name.
+The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy, $M_4(\mathbb{C})_{\mathbb{B}_R}$ the right, and $M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ both. A bare $M_4(\mathbb{C})$ is the ambient, $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$; it carries no biquaternion structure and takes no biquaternion name. The two cones are written $M_4(\mathbb{C})_{\mathcal{T}}$ for the two-sided operators and $M_4(\mathbb{C})_{\Theta}$ for the sandwiches, whose names are in *Conventions of the Operator Families*.
 
 **The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Operator and Calculus Conventions*, §*The Operators*. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
 
@@ -211,9 +211,9 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 
 **The frame is not the object.** Another gauge, another order of the four basis elements, or another Peirce family gives another matrix of the same operator; the two formulas above hold in the canonical frame alone. An article that uses another frame says so and gives the change of frame. What the frame does not change is the copy and the element: the matrix is an image of the element, never the element and never the algebra.
 
-**The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
+**The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant*. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
 
-**The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B},L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B},R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.
+**The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B}_L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B}_R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.
 
 ### The Clifford Structure
 
@@ -269,7 +269,7 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*The Gamma Set, and the Choice Behind It* of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The gamma set is one set among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
+Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*The Gamma Set, and the Choice Behind It* of *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The gamma set is one set among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
 
@@ -292,7 +292,7 @@ so the frame is visible in the formula.
 
 The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
 
-The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
+The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
 
 The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
 
@@ -312,7 +312,7 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 | $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
-| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
+| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
 | $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
 | $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
@@ -326,5 +326,5 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the gamma sets and the proof of the cell table.
+- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the gamma sets and the proof of the cell table.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the gamma set, §*The Clifford Structure and the Gamma Matrices*.

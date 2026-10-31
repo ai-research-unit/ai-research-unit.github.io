@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant__
+# __$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : The Product, the Trace and the Determinant__
 
 ## Introduction
 
@@ -13,7 +13,7 @@ $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
 
-**Boundaries.** The right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the trace and the determinant are *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm*. The abstract algebra is *The Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
+**Boundaries.** The right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the trace and the determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*. The abstract algebra is *The Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
 
 ## The Assignment on the Basis
 
@@ -99,7 +99,7 @@ Hence $\mathsf{M}_4^{L}$ is an injective algebra homomorphism, and its image is 
 
 *Proof.* On the basis, associativity gives $\tilde P(\tilde Q e_\mu)=(\tilde P\tilde Q)e_\mu$ for every $\mu$, so the two matrices agree on the four columns of the identity. The four columns are the coordinate columns of $\tilde Q P_j$ for the frame $P_j$; since the $P_j$ are a basis of $\mathbb{B}$, vanishing of the matrix forces $\tilde Q=0$.
 
-**The image.** Write $M_4(\mathbb{C})_{\mathbb{B},L}=\mathsf{M}_4^{L}(\mathbb{B})$. It is a complex subspace of dimension $4$ inside the $16$ of $M_4(\mathbb{C})$, closed under multiplication and containing the identity. The inverse of an invertible element is $\mathsf{M}_4^{L}(\tilde Q)^{-1}=\mathsf{M}_4^{L}(\tilde Q^{-1})$, with $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
+**The image.** Write $M_4(\mathbb{C})_{\mathbb{B}_L}=\mathsf{M}_4^{L}(\mathbb{B})$. It is a complex subspace of dimension $4$ inside the $16$ of $M_4(\mathbb{C})$, closed under multiplication and containing the identity. The inverse of an invertible element is $\mathsf{M}_4^{L}(\tilde Q)^{-1}=\mathsf{M}_4^{L}(\tilde Q^{-1})$, with $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 
 **The image is not everything.** Every two-by-two complex matrix is the image of exactly one biquaternion, but not every four-by-four matrix is. The image has dimension four, the ambient algebra has dimension sixteen, and the twelve missing dimensions are the multiplicity of the two copies. The regular model is therefore an isomorphism onto a subalgebra, not onto the matrix algebra, and the difference is the subject of the rest of the series.
 
@@ -192,13 +192,13 @@ The third identity holds when either side exists, that is when $\langle\tilde Q\
 
 **The invariants.** The block form turns every invariant of $\mathsf{M}_4^{L}(\tilde Q)$ into an invariant of $\mathsf{M}_2(\tilde Q)$ read twice.
 
-| Invariant | $M_2(\mathbb{C})$ | $M_4(\mathbb{C})_{\mathbb{B},L}$ |
+| Invariant | $M_2(\mathbb{C})$ | $M_4(\mathbb{C})_{\mathbb{B}_L}$ |
 |---|---|---|
 | trace | $2Q_t$ | $4Q_t$ |
 | determinant | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}^2$ |
 | rank | $0,1,2$ | $0,2,4$ |
 
-**The centre.** The centre of the image is the line $\mathbb{C}\mathrm I_4$, the image of the line $\mathbb{C}e_t$; it is the same line as the centre of $M_4(\mathbb{C})$. The centraliser of the image is larger: it is the right image $M_4(\mathbb{C})_{\mathbb{B},R}$ of *The Centraliser and the Double Centraliser*, of complex dimension four, and the two images meet in the scalars.
+**The centre.** The centre of the image is the line $\mathbb{C}\mathrm I_4$, the image of the line $\mathbb{C}e_t$; it is the same line as the centre of $M_4(\mathbb{C})$. The centraliser of the image is larger: it is the right image $M_4(\mathbb{C})_{\mathbb{B}_R}$ of *The Centraliser and the Double Centraliser*, of complex dimension four, and the two images meet in the scalars.
 
 **The rank.** The rank of $\mathsf{M}_4^{L}(\tilde Q)$ is twice the rank of $\mathsf{M}_2(\tilde Q)$, because the two blocks are equal. It takes the values $0,2,4$ and never $1$ or $3$. The null cone is the set of singular regular matrices, and the rank stratification is the even refinement of the $2\times2$ one.
 
@@ -206,12 +206,12 @@ The third identity holds when either side exists, that is when $\langle\tilde Q\
 
 **The structure map.** The scalars act through
 $$
-\varphi:\mathbb{C}\longrightarrow Z\bigl(M_4(\mathbb{C})_{\mathbb{B},L}\bigr),\qquad
+\varphi:\mathbb{C}\longrightarrow Z\bigl(M_4(\mathbb{C})_{\mathbb{B}_L}\bigr),\qquad
 \varphi(A)=A\mathrm I_4,
 $$
 whose image is the line of scalar matrices. The scalar action is $M\mapsto AM$, and it is compatible with the product because $A\mathrm I_4$ is central. In the algebra the same map is $\varphi(A)=Ae_t$; the matrix form shows that its image is exactly the centre of the image.
 
-**The presentation.** The images $X=\mathsf{M}_4^{L}(\vec e_x)$ and $Y=\mathsf{M}_4^{L}(\vec e_y)$ generate $M_4(\mathbb{C})_{\mathbb{B},L}$ as a $\mathbb{C}$-algebra with unit, because $\vec e_x$ and $\vec e_y$ generate $\mathbb{B}$ and $\mathsf{M}_4^{L}$ is injective. They satisfy
+**The presentation.** The images $X=\mathsf{M}_4^{L}(\vec e_x)$ and $Y=\mathsf{M}_4^{L}(\vec e_y)$ generate $M_4(\mathbb{C})_{\mathbb{B}_L}$ as a $\mathbb{C}$-algebra with unit, because $\vec e_x$ and $\vec e_y$ generate $\mathbb{B}$ and $\mathsf{M}_4^{L}$ is injective. They satisfy
 $$
 X^2=Y^2=-\mathrm I_4,\qquad XY+YX=0,
 $$
@@ -219,7 +219,7 @@ and these are the defining relations. The algebra with two generators and those 
 
 **The real form.** Read over $\mathbb{R}$, the image has real dimension eight, and
 $$
-J:M_4(\mathbb{C})_{\mathbb{B},L}\longrightarrow M_4(\mathbb{C})_{\mathbb{B},L},\qquad J(M)=iM,
+J:M_4(\mathbb{C})_{\mathbb{B}_L}\longrightarrow M_4(\mathbb{C})_{\mathbb{B}_L},\qquad J(M)=iM,
 $$
 is a central complex structure, $J^2=-\mathrm{id}$, commuting with both one-sided multiplications. It is the image of multiplication by the central imaginary $i$ of $\mathbb{B}$, and the complex basis $(\mathrm I_4,-i\Sigma_1,-i\Sigma_2,-i\Sigma_3)$ is the image of the complex basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; together with $i$ times it, it gives a real basis of the eight real dimensions. The realified matrix in the basis $(e_\mu,ie_\mu)$ is the block matrix
 $$
@@ -245,9 +245,9 @@ so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. T
 
 **What the choice fixes.** The choice fixes the four columns, the diagonal axis, the two column pairs and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.
 
-**The conjugations that change nothing.** A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4^{L}(\tilde Q)P=\mathsf{M}_4^{L}(\tilde Q)$. The commutant is the right regular image of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.
+**The conjugations that change nothing.** A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4^{L}(\tilde Q)P=\mathsf{M}_4^{L}(\tilde Q)$. The commutant is the right regular image of *$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.
 
-**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 ## Summary
 
@@ -262,7 +262,7 @@ The assignment $\mathsf{M}_4^{L}$ sends $e_t$ to $\mathrm I_4$ and the three vec
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $\mathsf{M}_4^{L}=\mathsf{M}_4^{L}(\tilde Q)$ | the left regular matrix |
 | $L_\mu=\mathsf M_4^{L}(e_\mu)=\mathrm I_2\otimes\mathsf M_2(e_\mu)$ | the canonical-frame matrix of $e_\mu$: $L_t=\mathrm I_4$, $L_k=-i\mathrm I_2\otimes\sigma_k$ |
-| $M_4(\mathbb{C})_{\mathbb{B},L}$ | its image in $M_4(\mathbb{C})$ |
+| $M_4(\mathbb{C})_{\mathbb{B}_L}$ | its image in $M_4(\mathbb{C})$ |
 | $\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k)=-i\mathsf{M}_4^{L}(\vec e_k)$ | the Pauli matrices, repeated in the two copies |
 | $C_{\Pi}$ | the Peirce change: its columns are the four Peirce elements in coefficient coordinates, $\det C_{\Pi}=-\tfrac14$ |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the four elements of the canonical frame, columns of $C_{\Pi}$ |
@@ -272,10 +272,10 @@ The assignment $\mathsf{M}_4^{L}$ sends $e_t$ to $\mathrm I_4$ and the three vec
 ## Further Reading
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and its two products
-- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
-- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices that span the full operator algebra
-- [$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
-- [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
+- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices that span the full operator algebra
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
+- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$

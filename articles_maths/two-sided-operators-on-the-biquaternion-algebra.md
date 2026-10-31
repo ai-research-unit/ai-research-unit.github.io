@@ -22,7 +22,7 @@ with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the gen
 
 **What the article proves.** The composition law $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde P\tilde Q=\pm e_t$ and $\tilde Q\tilde P=e_t$, the isometry group, and the absence of a pin group in the family.
 
-**What the article does not do.** The matrix of $T_{\tilde Q,\tilde P}$ is *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*.
+**What the article does not do.** The matrix of $T_{\tilde Q,\tilde P}$ is *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*.
 
 **The letters.** The parameters are $\tilde Q,\tilde P,\tilde R,\tilde S$, the argument is $X$, and the operator is $T_{\tilde Q,\tilde P}$. The letter $T$ names the two-sided family; the sandwich $\Theta$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are *Operator Family Conventions*.
 
@@ -127,7 +127,7 @@ which is not of the form $T_{\tilde Q,\tilde P}$.
 
 **The two closures.** The family is a multiplicative monoid and not an additive one. Its linear span is a subspace, and the span is the subject of §*The Generation Theorem*; the family itself is the cone inside that span, not the whole span.
 
-**The sum of two products.** A sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*The Criterion for a Single Product*.
+**The sum of two products.** A sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*The Criterion for a Single Product*.
 
 ## The Generation Theorem
 
@@ -444,7 +444,7 @@ The plain adjoint exchanges the parameters, $(T_{\tilde Q,\tilde P})^{\approx}=T
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices, the coefficient matrix and the length.
+- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices, the coefficient matrix and the length.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the isomorphism that the generation theorem supports.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html) and [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the two boundary families.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection used in the ladder.

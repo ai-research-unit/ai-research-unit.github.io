@@ -6,7 +6,7 @@
 
 **What the article proves.** Five things. The map $\tilde Q\mapsto R_{\tilde Q}$ is injective and complex-linear. It is anti-multiplicative, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$, so its image is a copy of the opposite algebra inside the operator algebra. The kernel and the image of a single $R_{\tilde Q}$ are the left annihilator and the left ideal $\mathbb{B}\tilde Q$. The rank has the same three values as the left family, and the operator is invertible exactly when $N(\tilde Q)\neq0$, with inverse $R_{\tilde Q^{-1}}$. Finally, the right matrix is the transpose of the left one, conjugated by a fixed involution $S$.
 
-**What the article does not do.** The matrix of $R_{\tilde Q}$ is the subject of *$M_4(\mathbb{C})$ Representation : The Right Regular Operators on the Biquaternion Algebra*: this article proves the operator statements, and the matrix article computes them in a frame and verifies the exchange entry by entry. The commutant of the two families is *The Commutant of the Two Regular Families*. The association of the two families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*; this article states no adjoint identity.
+**What the article does not do.** The matrix of $R_{\tilde Q}$ is the subject of *$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra*: this article proves the operator statements, and the matrix article computes them in a frame and verifies the exchange entry by entry. The commutant of the two families is *The Commutant of the Two Regular Families*. The association of the two families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*; this article states no adjoint identity.
 
 **The letters.** The operator is $R_{\tilde Q}$, the element is $\tilde Q$, and the argument is $X$. The letter $R$ names the right family and nothing else in this group; the closed ray of the Hermitian sandwich is written without it. The conventions of the four letters, the slots and the matrix are *Operator Family Conventions*; this article uses them and defines none of them.
 
@@ -220,7 +220,7 @@ $$
 
 The transpose is the matrix transpose in the Peirce frame.
 
-*Proof.* In the Peirce frame $[L_{\tilde Q}]=I_2\otimes\mathsf M_2(\tilde Q)$, by *$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Rule*. The transpose of a tensor product is the tensor product of the transposes, and $I_2^{\mathsf T}=I_2$, so $[L_{\tilde Q}]^{\mathsf T}=I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip $S$ conjugates $A\otimes B$ to $B\otimes A$, so
+*Proof.* In the Peirce frame $[L_{\tilde Q}]=I_2\otimes\mathsf M_2(\tilde Q)$, by *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra*, §*The Rule*. The transpose of a tensor product is the tensor product of the transposes, and $I_2^{\mathsf T}=I_2$, so $[L_{\tilde Q}]^{\mathsf T}=I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip $S$ conjugates $A\otimes B$ to $B\otimes A$, so
 
 $$
 S\,[L_{\tilde Q}]^{\mathsf T}\,S^{-1}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 .
@@ -262,8 +262,8 @@ In the Peirce frame the right matrix is the transpose of the left one conjugated
 ## Further Reading
 
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the mirror family and the two annihilators.
-- [$M_4(\mathbb{C})$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ and the verification of the exchange.
+- [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ and the verification of the exchange.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the commutation and the two centralisers.
-- [$M_4(\mathbb{C})$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$ transposed here.
+- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$ transposed here.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient space and the natural conjugation.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $R$, the slots and the set names.
