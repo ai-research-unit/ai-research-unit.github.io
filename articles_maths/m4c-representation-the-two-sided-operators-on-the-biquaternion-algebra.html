@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="math0-representation-the-two-sided-operators-on-the-biquaternion-algebra"><strong>$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The $4\times4$ model reads each biquaternion $\tilde Q$ as one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$, whose image is the four-dimensional copy $M_4(\mathbb{C})_{\mathbb{B},L}$. This article is one of a series; it records the construction and one gamma frame, and it takes the frame of the corpus from <em>Conventions of the Matrix Models</em>, §<em>The Matrix Models</em>. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.</p>
+<p>The $4\times4$ model reads each biquaternion $\tilde Q$ as one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$, whose image is the four-dimensional copy $M_4(\mathbb{C})_{\mathbb{B},L}$. This article is one of a series; it records the construction and one choice of gamma set, and it takes the frame of the corpus from <em>Conventions of the Matrix Models</em>, §<em>The Matrix Models</em>. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.</p>
 <p>The operator $\tilde Q_3\mapsto\tilde Q_1\,\tilde Q_3\,\tilde Q_2$ is not a left multiplication when $\tilde Q_2$ is not a scalar. It needs the right multiplication as well. The pair $(\tilde Q_1,\tilde Q_2)$ defines the <strong>two-sided operator</strong></p>
 <p>$$
 T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\,\tilde Q_3\,\tilde Q_2 .
@@ -160,7 +160,7 @@ R_x=-i\,\sigma_1\otimes\mathrm I_2,\quad
 R_y=+i\,\sigma_2\otimes\mathrm I_2,\quad
 R_z=-i\,\sigma_3\otimes\mathrm I_2,
 $$</p>
-<p>and for general parameters $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. These are evaluations of the L-based identities above; they are kept as a dictionary, not used in the construction of $R$ and $T$. The same shorthand is used, once per section, for the complementary displays marked <em>Pauli form</em> in §<em>The Four Left Matrices</em>, §<em>The Sixteen Basis Matrices</em> and §<em>A Gamma Frame, and the Choice Behind It</em>; in each case the definition stands above in $L$, $R$ and $T$, and the Pauli line is its evaluation.</p>
+<p>and for general parameters $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. These are evaluations of the L-based identities above; they are kept as a dictionary, not used in the construction of $R$ and $T$. The same shorthand is used, once per section, for the complementary displays marked <em>Pauli form</em> in §<em>The Four Left Matrices</em>, §<em>The Sixteen Basis Matrices</em> and §<em>The Gamma Set, and the Choice Behind It</em>; in each case the definition stands above in $L$, $R$ and $T$, and the Pauli line is its evaluation.</p>
 <h2 id="the-sixteen-basis-matrices">The Sixteen Basis Matrices</h2>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ set</p>
 <p>$$
@@ -327,8 +327,8 @@ $$
 \Theta_{\vec e_y}=T_{\vec e_y,-\vec e_y}=-T_{yy}=
 \begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$</p>
-<p><strong>The gamma matrices are not sandwiches.</strong> They are $i$ times five cells of the tensor basis in the reference frame, and the pair of directions in those cells is free; §<em>A Gamma Frame, and the Choice Behind It</em> treats them.</p>
-<h2 id="a-gamma-frame-and-the-choice-behind-it">A Gamma Frame, and the Choice Behind It</h2>
+<p><strong>The gamma matrices are not sandwiches.</strong> They are $i$ times five cells of the tensor basis in the reference frame, and the pair of directions in those cells is free; §<em>The Gamma Set, and the Choice Behind It</em> treats them.</p>
+<h2 id="the-gamma-set-and-the-choice-behind-it">The Gamma Set, and the Choice Behind It</h2>
 <p><strong>Status.</strong> This section records one frame, not the frame. The Clifford relations hold for every frame of the normal form below; the cell table holds for one frame only.</p>
 <p><strong>The five operators.</strong> In the reference frame the Dirac generators are five cells multiplied by $i$:
 $$
@@ -379,7 +379,7 @@ the Peirce grading. The two frames use the same left action and the same left ma
 $$
 \mathrm I_4,\qquad \Gamma_t\Gamma_1,\qquad \Gamma_t\Gamma_2,\qquad -\Gamma_1\Gamma_2
 $$
-square to $-\mathrm I_4$ in the three vector slots, anticommute, and multiply as the quaternion units. They are a valid representation of $\mathbb{B}$, and they are not the left action: the two diagonal blocks of $\Gamma_t\Gamma_1$ differ by a sign, whereas those of $L_{i\vec e_x}$ are equal. Choosing this block as the gamma frame is a choice of representation, not the only one; it is the choice that makes the generators of the frame the left matrices times one grading.</p>
+square to $-\mathrm I_4$ in the three vector slots, anticommute, and multiply as the quaternion units. They are a valid representation of $\mathbb{B}$, and they are not the left action: the two diagonal blocks of $\Gamma_t\Gamma_1$ differ by a sign, whereas those of $L_{i\vec e_x}$ are equal. Choosing this block as the gamma set is a choice of representation, not the only one; it is the choice that makes the generators of the frame the left matrices times one grading.</p>
 <p><strong>The frame is a choice of two directions.</strong> The following normal form gives a frame for every orthogonal pair. Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta,
@@ -719,7 +719,7 @@ Column $j$ is the coordinate column of $\tilde Q_1\,P_j\,e_x$ in the canonical f
 <h2 id="what-remains-open">What Remains Open</h2>
 <p>The following are candidate articles, not results. None of them is written, and the frame question is not settled by this article.</p>
 <ul>
-<li>The classification of Clifford frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?</li>
+<li>The classification of gamma sets in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?</li>
 <li>The choice of frame as a choice of Clifford structure: which gradings the algebra admits, and how they are related.</li>
 <li>A dictionary, frame by frame, between the explicit gamma matrices of the physics articles and the tensor basis. The corpus has eighteen explicit representations, and they need not use the same $(\beta,\delta)$.</li>
 <li>Which physical statements are frame-independent, and which are artefacts of a table. The mass bilinear, the axial current and the chiral projectors are the first candidates.</li>
@@ -795,7 +795,7 @@ Column $j$ is the coordinate column of $\tilde Q_1\,P_j\,e_x$ in the canonical f
 </tr>
 <tr>
 <td>$G=-iT_{ty}$</td>
-<td>the grading in the multiplicity factor of the gamma frame</td>
+<td>the grading in the multiplicity factor of the gamma set</td>
 </tr>
 <tr>
 <td>$\Gamma_t,\Gamma_1,\Gamma_2,\Gamma_3$</td>

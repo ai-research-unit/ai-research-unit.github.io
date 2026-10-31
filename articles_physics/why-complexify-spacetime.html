@@ -91,25 +91,25 @@ $$</p>
 </blockquote>
 <p>The $ict'$ convention is a precise expression of this union. It says: space and time are unified not by a metric with mixed signs, but by a <strong>complex structure</strong>. The imaginary unit is not a computational trick; it is the algebraic expression of the fact that time is not simply another spatial dimension.</p>
 <h2 id="what-math15-does">What $ict'$ Does</h2>
-<p>With the substitution $x^0 = ic_0\,t'$, the Minkowski interval becomes</p>
+<p>With the substitution $Q_t = ic_0\,t'$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes</p>
 <p>$$
-ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2,
+ds^2 = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2,
 $$</p>
-<p>which is the ordinary Euclidean quadratic form in four real variables. Three consequences follow.</p>
-<p><strong>1. Lorentz transformations look like rotations.</strong> A boost becomes a rotation in a plane mixing time and space, but with an <strong>imaginary angle</strong>. The mathematics of rotations — simpler than the mathematics of boosts — carries over almost unchanged. The Lorentz group $SO(3,1)$ is a real form of the complex rotation group $SO(4,\mathbb{C})$, and it acts on the variables $(x^0, x^1, x^2, x^3)$ through the complex rotations that preserve the Euclidean form.</p>
+<p>which is the ordinary Euclidean quadratic form in the four coordinates. Three consequences follow.</p>
+<p><strong>1. Lorentz transformations look like rotations.</strong> A boost becomes a rotation in a plane mixing time and space, but with an <strong>imaginary angle</strong>. The mathematics of rotations — simpler than the mathematics of boosts — carries over almost unchanged. The Lorentz group $SO(3,1)$ is a real form of the complex rotation group $SO(4,\mathbb{C})$, and it acts on the variables $(Q_t, Q_x, Q_y, Q_z)$ through the complex rotations that preserve the Euclidean form.</p>
 <p><strong>2. The wave equation becomes the Laplacian.</strong> The d'Alembertian</p>
 <p>$$
 \Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {t'}^2} + \nabla^2
 $$</p>
-<p>becomes, with $x^0 = ic_0 t'$,</p>
+<p>becomes, with $Q_t = ic_0 t'$,</p>
 <p>$$
-\boxed{\;\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2\;},
+\boxed{\;\Box = \frac{\partial^2}{\partial Q_t^2} + \nabla^2\;},
 $$</p>
 <p>which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.</p>
 <p><strong>3. The signature is algebraic, not postulated.</strong> The minus sign in the time–time component arises from $i^2 = -1$. It is not an independent input; it is a consequence of the complex structure of the time coordinate. In the metric convention, the minus sign is put in by hand. In the $ict'$ convention, it is derived.</p>
 <h2 id="what-was-lost-and-why-the-loss-is-technical">What Was Lost — and Why the Loss Is Technical</h2>
 <p>The switch away from $ict'$ happened for good technical reasons, and it is worth being precise about them before asking whether the insight survives.</p>
-<p><strong>1. Curved spacetime.</strong> In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $x^0 = ict'$ does for flat spacetime. The $ict'$ convention is tied to the existence of a global inertial frame.</p>
+<p><strong>1. Curved spacetime.</strong> In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t = ict'$ does for flat spacetime. The $ict'$ convention is tied to the existence of a global inertial frame.</p>
 <p><strong>2. Quantum field theory.</strong> The Wick rotation $t' \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $ict'$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.</p>
 <p><strong>3. Spinors and the Dirac equation.</strong> The Dirac equation is naturally written in terms of a Lorentzian metric. The $ict'$ convention interacts awkwardly with the spinor formalism, because spinors transform under the Lorentz group in a way that depends on the signature.</p>
 <p><strong>4. Vectors and one-forms.</strong> In differential geometry, tangent vectors and cotangent vectors are genuinely different objects. The $ict'$ convention lets you avoid distinguishing them, because the Euclidean-looking metric has no off-diagonal structure. This is a pedagogical simplification that becomes a liability in more advanced contexts.</p>
@@ -117,7 +117,7 @@ $$</p>
 <p>This article takes the second view. The technical problems are real, but they are problems with the global $ict'$ convention, not with the underlying insight. The insight — that the Lorentzian signature is a projection of a complex structure — survives, and it points toward a larger structure that the metric convention obscures.</p>
 <h2 id="the-debate-and-what-is-not-new-in-it">The Debate, and What Is Not New in It</h2>
 <p>The arguments above are not the invention of this series. They were put and answered by others, and the exchange is worth recording, because it shows which parts of the case are contested and which are settled.</p>
-<p>The defence of $ict'$ rests on the observation that the substitution $x^0 = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\chi$ the identities</p>
+<p>The defence of $ict'$ rests on the observation that the substitution $Q_t = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\chi$ the identities</p>
 <p>$$
 \cos i\chi = \cosh\chi, \qquad \sin i\chi = i\sinh\chi
 $$</p>
@@ -207,11 +207,11 @@ $$</p>
 <td>Speed of light in vacuum (global constant)</td>
 </tr>
 <tr>
-<td>$x^0 = ict'$</td>
+<td>$Q_t = ict'$</td>
 <td>Complex time coordinate (local)</td>
 </tr>
 <tr>
-<td>$x^0 = ic_0 t'$</td>
+<td>$Q_t = i c_0 t'$</td>
 <td>Complex time coordinate (vacuum)</td>
 </tr>
 <tr>
