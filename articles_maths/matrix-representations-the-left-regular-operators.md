@@ -24,7 +24,11 @@ so that $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$. The coefficient frame is $\mat
 
 **Boundaries.** The operator statements are *The Left Regular Operators on the Biquaternion Algebra*; the Peirce change is *Matrix Representations : The Models and the Change of Frame*; the $2\times2$ model is *Matrix Representations : The Product, the Trace and the Determinant*; the right family is *Matrix Representations : The Right Regular Operators*; the rank stratification is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*.
 
-## The Operator
+## Common Aspects
+
+
+
+### The Operator
 
 **The definition.** For $\tilde Q\in\mathbb{B}$, the left regular operator is
 $$
@@ -75,7 +79,57 @@ $$
 $$
 The minimal polynomial is the minimal polynomial of $B$, not its square, because the two copies are equal.
 
-## The Peirce Display
+## The $S_3$ Frame
+
+
+
+### The Coefficient Display
+
+**The matrix.** In the coefficient frame,
+$$
+[L_{\tilde Q}]_{\mathcal B}=C_{\Pi}\,\bigl(I_2\otimes B\bigr)\,C_{\Pi}^{-1}.
+$$
+Written out,
+$$
+[L_{\tilde Q}]_{\mathcal B}=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix}.
+$$
+The first column is the element itself. The other three are the products with the three vector units, read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
+
+**The trace and the determinant.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$, as in the Peirce display, because a change of frame preserves both. The entries are not preserved: no $2\times2$ block of the coefficient matrix equals $B$ or $-B$.
+
+**The four units.** At $Q=e_t$ the matrix is $\mathrm I_4$. At a vector unit it is the corresponding monomial matrix, with nonzero entries in $\{\pm1,\pm i\}$. All four have determinant $1$, and their traces are $4,0,0,0$.
+
+**The image and the kernel in the frame.** The image is the column space of the coefficient matrix, of dimension $2\operatorname{rank}B$. The kernel is its null space, of dimension $4-2\operatorname{rank}B$. For a unit the columns span $\mathbb{C}^4$; for a nonzero zero divisor they span a two-dimensional right ideal; for zero they span nothing.
+
+## The $2\times2$ $z$ Frame
+
+
+
+### The $2\times2$ Reading
+
+**The block.** The $2\times2$ matrix $B$ is not a separate display of the operator; it is the block of the Peirce display. The operator lives on the four-dimensional carrier, and the $2\times2$ model lives on the defining module. The Peirce frame is the only frame in which the operator is a block diagonal matrix with two copies of the element's matrix.
+
+**What the block gives.** The block gives the rank, the trace, the determinant and the spectrum of the operator by the rules of the tensor product:
+$$
+\operatorname{rank}L_{\tilde Q}=2\operatorname{rank}B,\qquad
+\operatorname{tr}L_{\tilde Q}=2\operatorname{tr}B,\qquad
+\det L_{\tilde Q}=(\det B)^2,
+$$
+and the spectrum is the spectrum of $B$, doubled. The factor two is the dimension of the Peirce column.
+
+**What the block does not give.** The block does not give the kernel or the image as subspaces of the coefficient space. The kernel and the image are subspaces of the carrier; the block only gives their dimensions. The subspaces themselves require the frame change to the coefficient display, or the operator statement in the algebra.
+
+## The $4\times4$ $z$ Frame
+
+
+
+### The Peirce Display
 
 **The matrix.**
 $$
@@ -125,44 +179,6 @@ $$
 The determinant vanishes exactly when $B$ is not invertible, which is the criterion $\langle\tilde Q\rangle_{\natural}\neq0$.
 
 **The spectrum in the display.** The eigenvalues of $I_2\otimes B$ are the eigenvalues of $B$, each twice, by the same tensor argument. The trace is the sum of the four eigenvalues, $2(\lambda_++\lambda_-)=4Q_t$, and the determinant is their product, $(\lambda_+\lambda_-)^2=\langle\tilde Q\rangle_{\natural}^2$.
-
-## The Coefficient Display
-
-**The matrix.** In the coefficient frame,
-$$
-[L_{\tilde Q}]_{\mathcal B}=C_{\Pi}\,\bigl(I_2\otimes B\bigr)\,C_{\Pi}^{-1}.
-$$
-Written out,
-$$
-[L_{\tilde Q}]_{\mathcal B}=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
-\end{pmatrix}.
-$$
-The first column is the element itself. The other three are the products with the three vector units, read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
-
-**The trace and the determinant.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$, as in the Peirce display, because a change of frame preserves both. The entries are not preserved: no $2\times2$ block of the coefficient matrix equals $B$ or $-B$.
-
-**The four units.** At $Q=e_t$ the matrix is $\mathrm I_4$. At a vector unit it is the corresponding monomial matrix, with nonzero entries in $\{\pm1,\pm i\}$. All four have determinant $1$, and their traces are $4,0,0,0$.
-
-**The image and the kernel in the frame.** The image is the column space of the coefficient matrix, of dimension $2\operatorname{rank}B$. The kernel is its null space, of dimension $4-2\operatorname{rank}B$. For a unit the columns span $\mathbb{C}^4$; for a nonzero zero divisor they span a two-dimensional right ideal; for zero they span nothing.
-
-## The $2\times2$ Reading
-
-**The block.** The $2\times2$ matrix $B$ is not a separate display of the operator; it is the block of the Peirce display. The operator lives on the four-dimensional carrier, and the $2\times2$ model lives on the defining module. The Peirce frame is the only frame in which the operator is a block diagonal matrix with two copies of the element's matrix.
-
-**What the block gives.** The block gives the rank, the trace, the determinant and the spectrum of the operator by the rules of the tensor product:
-$$
-\operatorname{rank}L_{\tilde Q}=2\operatorname{rank}B,\qquad
-\operatorname{tr}L_{\tilde Q}=2\operatorname{tr}B,\qquad
-\det L_{\tilde Q}=(\det B)^2,
-$$
-and the spectrum is the spectrum of $B$, doubled. The factor two is the dimension of the Peirce column.
-
-**What the block does not give.** The block does not give the kernel or the image as subspaces of the coefficient space. The kernel and the image are subspaces of the carrier; the block only gives their dimensions. The subspaces themselves require the frame change to the coefficient display, or the operator statement in the algebra.
 
 ## Summary
 

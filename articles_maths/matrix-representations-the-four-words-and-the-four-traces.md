@@ -21,27 +21,11 @@ $$
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 
-## The Two Matrices and the Two Involutions
+## Common Aspects
 
-Write
-$$
-X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q).
-$$
-The two involutions of the model are the adjugate and the conjugate transpose:
-$$
-\operatorname{adj}X=\det(X)\,X^{-1},\qquad
-X^{\dagger}=\overline{X^{\mathsf T}}.
-$$
-They are the images of quaternion conjugation and of Hermitian conjugation:
-$$
-\mathsf{M}_4^{L}(\tilde P^{\natural})=N^{-1}\operatorname{adj}X,\qquad
-\mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger},
-$$
-where $N=\langle\tilde P\rangle_{\natural}$. The scalar is forced by the size: the adjugate of a $4\times4$ matrix is homogeneous of degree three, while $\mathsf{M}_4^{L}(\tilde P^{\natural})$ is linear, so the two differ by the quadratic norm. The adjugate is an anti-automorphism, $\operatorname{adj}(XY)=\operatorname{adj}(Y)\operatorname{adj}(X)$, and it satisfies $X\operatorname{adj}X=(\det X)\mathrm I_4$. The dagger is an anti-automorphism of the real algebra, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$. Both are involutions: $\operatorname{adj}(\operatorname{adj}X)=X$ and $(X^{\dagger})^{\dagger}=X$.
+The four products of the biquaternion algebra become four words in a matrix, its transpose and its dagger; the four forms become the four traces of those words. The dictionary is the same at both sizes. What changes is the normalization: the scalar part is one half of the $2\times2$ trace and one quarter of the $4\times4$ trace, because the identity has trace $2$ in the first and $4$ in the second.
 
-## The Four Words
-
-**Each product is one word in $X$, $Y$ and the two involutions.**
+**The four words.** Each product is one word in $X$, $Y$ and the two involutions:
 
 | Product | First slot | Second slot | Matrix word |
 |---|---|---|---|
@@ -50,29 +34,9 @@ where $N=\langle\tilde P\rangle_{\natural}$. The scalar is forced by the size: t
 | general plain sesquilinear | $X$ | $Y^{\dagger}$ | $XY^{\dagger}$ |
 | general quaternionic sesquilinear | $X^{\mathsf T}$ | $Y^{\dagger}$ | $X^{\mathsf T}Y^{\dagger}$ |
 
-The table is the matrix form of the definition of the four products: the first slot carries the choice of conjugation on the left factor, the second the choice on the right. The two choices are independent.
+The first slot carries the choice of conjugation on the left factor, the second the choice on the right; the two choices are independent. The words are not all distinct as matrices: they coincide where the involutions act trivially, $X^{\mathsf T}=X$ on the quaternion subspace and $Y^{\dagger}=Y$ on the Hermitian subspace, and both on the centre. The table is a table of operations, not of values.
 
-**The words are not all distinct as matrices.** They coincide on the subspaces where the involutions act trivially: $X^{\mathsf T}=X$ on the quaternion subspace, $Y^{\dagger}=Y$ on the Hermitian subspace, and both hold on the centre. The table is a table of operations, not of values.
-
-**The symmetric and antisymmetric halves.** For a word $W(X,Y)$, the symmetric part is $\tfrac12(W(X,Y)+W(Y,X))$ and the antisymmetric part is $\tfrac12(W(X,Y)-W(Y,X))$. Applied to the four words, the operation reproduces the twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products*. The matrix form makes the symmetrization a symmetrization of words.
-
-## The Four Traces
-
-**Theorem (the four forms are four quarter-traces).** For all $\tilde P,\tilde Q$,
-
-$$
-\tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
-$$
-
-$$
-\tfrac14\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
-$$
-
-*Proof.* The scalar part of a product is one quarter of its $4\times4$ trace, because the trace of $\mathsf{M}_4^{L}(\tilde R)$ is $4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words of the table. The trace of a product of images is the image of the trace, and the identities follow.
-
-**The coefficient forms.** Written on the coefficients,
+**The four forms.** The four forms are the four words closed by a trace. On the coefficients,
 
 $$
 \langle\tilde P,\tilde Q\rangle=P_tQ_t-\vec P\cdot\vec Q,\qquad
@@ -86,34 +50,6 @@ $$
 
 The first two are complex bilinear, the last two Hermitian in the second slot.
 
-**The normalization.** In the $2\times2$ model the scalar part is one half of the trace. In the $4\times4$ model it is one quarter, because the identity has trace $4$. The forms themselves are unchanged: they live on the algebra, and the representation only changes the size of the trace that computes them.
-
-**The $2\times2$ normalization.** In the entry model the same theorem reads
-
-$$
-\tfrac12\operatorname{tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac12\operatorname{tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
-$$
-
-$$
-\tfrac12\operatorname{tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
-\tfrac12\operatorname{tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*},
-$$
-
-with $X=\mathsf M_2(\tilde P)$ and $Y=\mathsf M_2(\tilde Q)$. The four forms are the same four functions of the elements; the trace that computes them is the one of the display. The two normalizations agree because $\operatorname{tr}\mathsf M_4^{L}=2\operatorname{tr}\mathsf M_2$ and the two words are the two copies of the entry word.
-
-## The Trace Pairing
-
-**On the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$,**
-
-$$
-G_{\mathrm{plain}}=G_{\natural*}=\operatorname{diag}(1,-1,-1,-1),
-\qquad
-G_{\natural}=G_{*}=\mathrm I_4.
-$$
-
-*Proof.* The Gram entries are the four forms evaluated on the basis elements. For the plain form, $\langle e_\mu,e_\nu\rangle$ is $1$ on $e_t$, $-1$ on each $\vec e_k$, and $0$ across. For the quaternionic form the signs of the vector part are reversed, giving the identity. The two Hermitian forms have the same matrices because the basis is real, so conjugation acts trivially on the coefficients of the basis elements.
-
 **The signatures.** Realifying the complex forms,
 
 | Form | Inertia over $\mathbb{C}$ | Signature over $\mathbb{R}$ |
@@ -123,57 +59,98 @@ $$
 | Hermitian | $(4,0)$ | $(8,0)$ |
 | Krein | $(1,3)$ | $(2,6)$ |
 
-The signatures are those of the $2\times2$ article: they are invariants of the algebra and do not depend on the representation. What changes is the dimension of the matrix that carries them, not the form.
+The signatures are invariants of the algebra and do not depend on the representation. What changes is the dimension of the matrix that carries them, not the form.
 
+**The words compose.** The product of two words is a word, and the composition is the matrix product: $(\operatorname{adj}X\,Y)(Z^{\dagger})=\operatorname{adj}X\,YZ^{\dagger}$, the word of the quaternionic sesquilinear product with the middle factor $Y$. The twelve operations of the two chapters are the twelve ways of putting two involutions and two factors in a word; the four products are the four words with one factor in each slot, and the remaining eight are the compositions and the symmetrisations.
 
-**The plain form is the trace pairing.**
-
-$$
-\langle\tilde P,\tilde Q\rangle=\tfrac14\operatorname{Tr}(XY)=\tfrac14\operatorname{Tr}(YX).
-$$
-
-It is symmetric, non-degenerate, and its isometry group on the coefficient space is
-$$
-\{T\in GL_4(\mathbb{C}):T^{\mathsf T}G_{\mathrm{plain}}T=G_{\mathrm{plain}}\}\cong O_4(\mathbb{C}),
-$$
-of complex dimension $6$. The unit group of the algebra is $GL_2(\mathbb{C})$, of complex dimension $4$, and it is not the isometry group. The two groups act on the same four-dimensional space and are different: the plain form is not the algebra product.
-
-**The invariance.** The pairing is invariant under both one-sided multiplications:
-$$
-\langle\tilde P\tilde X,\tilde Q\rangle=\langle\tilde X,\tilde P^{\natural}\tilde Q\rangle,
-\qquad
-\langle\tilde X\tilde P,\tilde Q\rangle=\langle\tilde X,\tilde Q\tilde P^{\natural}\rangle.
-$$
-In matrices, these are the cyclicity of the trace,
-$$
-\operatorname{Tr}(X_PX_XY_Q)=\operatorname{Tr}(X_X X_P^{\mathsf T}Y_Q),
-$$
-and the transpose identity $X_P^{\mathsf T}=\mathsf{M}_4^{L}(\tilde P^{\natural})$. The invariance is the reason the trace pairing is the natural duality of the regular bimodule.
-
-## The Four Words in the Algebra
-
-**The words compose.** The product of two words is a word, and the composition is the matrix product. For example,
-$$
-(\operatorname{adj}X\,Y)(Z^{\dagger})=\operatorname{adj}X\,YZ^{\dagger},
-$$
-which is the word of the quaternionic sesquilinear product with the middle factor $Y$. The twelve operations of the two chapters are the twelve ways of putting two involutions and two factors in a word; the four products are the four words with one factor in each slot, and the remaining eight are the compositions and the symmetrisations.
-
-**The words and the four forms.** The four forms are the four words closed by a trace. The trace kills the antisymmetric part of a word, so the form of a product and the form of its symmetrisation agree; the antisymmetric part contributes only to the bracket. This is why the four forms are symmetric or conjugate-symmetric while the four products are not. In the regular model the trace is four times the scalar part, and the four forms are the $2\times2$ forms read twice.
-
-## The Conjugate of a Word
-
-**Proposition.** The Hermitian adjoint of a word reverses the order and exchanges the two involutions:
+**The conjugate of a word.** The Hermitian adjoint reverses the order and exchanges the two involutions:
 
 $$
 (XY)^{\dagger}=Y^{\dagger}X^{\dagger},\qquad
-(X^{\mathsf T}Y)^{\dagger}=Y^{\dagger}\overline{X},
-\qquad
+(X^{\mathsf T}Y)^{\dagger}=Y^{\dagger}\overline{X},\qquad
 (X^{\mathsf T}Y^{\dagger})^{\dagger}=Y\overline{X}.
 $$
 
-*Proof.* The dagger is an anti-automorphism and the transpose is an anti-automorphism; the two commute with each other, because both act entrywise after transposition. The entrywise conjugate is $\overline{X}=\mathsf{M}_4^{L}(\overline{\tilde P})$, and $(X^{\mathsf T})^{\dagger}=\overline{X}$.
+The four words are therefore closed under the dagger up to the exchange of the arguments and the entrywise conjugation, which is the matrix form of the Klein group of the four involutions.
 
-The four words are therefore closed under the dagger up to the exchange of the two arguments and the entrywise conjugation, which is the matrix form of the Klein group of the four involutions.
+## The $S_3$ Frame
+
+**The frame.** The coefficient frame is the frame in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde P^{\natural})=X^{\mathsf T}$ and $\mathsf M_4^{L}(\tilde P^{*})=X^{\dagger}$, with $X=\mathsf M_4^{L}(\tilde P)$ and $Y=\mathsf M_4^{L}(\tilde Q)$. The scalar part is one quarter of the trace, $\operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf M_4^{L}(\tilde R)$.
+
+**The four quarter-traces.** For all $\tilde P,\tilde Q$,
+
+$$
+\tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
+$$
+
+$$
+\tfrac14\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
+$$
+
+The proof is the trace identity: the scalar part of a product is one quarter of its $4\times4$ trace, because $\operatorname{Tr}\mathsf M_4^{L}(\tilde R)=4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words.
+
+**The Gram matrices.** On the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
+
+$$
+G_{\mathrm{plain}}=G_{\natural*}=\operatorname{diag}(1,-1,-1,-1),
+\qquad
+G_{\natural}=G_{*}=\mathrm I_4.
+$$
+
+The entries are the four forms evaluated on the basis elements: the plain form is $1$ on $e_t$ and $-1$ on each $\vec e_k$, the quaternionic form has the signs reversed, and the two Hermitian forms agree because the basis is real.
+
+**The plain pairing and its isometry group.** The plain form is the trace pairing $\langle\tilde P,\tilde Q\rangle=\tfrac14\operatorname{Tr}(XY)=\tfrac14\operatorname{Tr}(YX)$. Its isometry group on the coefficient space is
+$$
+\{T\in GL_4(\mathbb{C}):T^{\mathsf T}G_{\mathrm{plain}}T=G_{\mathrm{plain}}\}\cong O_4(\mathbb{C}),
+$$
+of complex dimension $6$. The unit group of the algebra is $GL_2(\mathbb{C})$, of complex dimension $4$, and it is not the isometry group: the plain form is not the algebra product.
+
+**Invariance.** The pairing is invariant under both one-sided multiplications,
+$$
+\langle\tilde P\tilde X,\tilde Q\rangle=\langle\tilde X,\tilde P^{\natural}\tilde Q\rangle,
+\qquad
+\langle\tilde X\tilde P,\tilde Q\rangle=\langle\tilde X,\tilde Q\tilde P^{\natural}\rangle,
+$$
+which in matrices is the cyclicity of the trace,
+$$
+\operatorname{Tr}(X_PX_XY_Q)=\operatorname{Tr}(X_XX_P^{\mathsf T}Y_Q),
+$$
+together with $X_P^{\mathsf T}=\mathsf M_4^{L}(\tilde P^{\natural})$. This invariance is the reason the trace pairing is the natural duality of the regular bimodule.
+
+## The $2\times2$ $z$ Frame
+
+**The half-traces.** In the entry model, with $X=\mathsf M_2(\tilde P)$ and $Y=\mathsf M_2(\tilde Q)$, the same theorem reads
+
+$$
+\tfrac12\operatorname{tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac12\operatorname{tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
+$$
+
+$$
+\tfrac12\operatorname{tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac12\operatorname{tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
+$$
+
+The four forms are the same four functions of the elements; the trace that computes them is the one of the display. The two normalizations agree because $\operatorname{tr}\mathsf M_4^{L}=2\operatorname{tr}\mathsf M_2$ and the regular word is two copies of the entry word.
+
+**The entry words.** The table of four words is read on $M_2(\mathbb{C})$ without a qualifier, because the entry model is onto. The transpose is the entry transpose, and on the natural subspaces it coincides with the algebra involutions: it fixes the quaternion pattern and the Hermitian matrices where those conditions say it should. The half-trace is the scalar part, and the identity has trace $2$.
+
+## The $4\times4$ $z$ Frame
+
+**The block words.** In the Peirce frame $X=\mathrm I_2\otimes P$ and $Y=\mathrm I_2\otimes Q$ with $P=\mathsf M_2(\tilde P)$ and $Q=\mathsf M_2(\tilde Q)$. The plain and dagger words decompose blockwise:
+
+$$
+XY=\mathrm I_2\otimes(PQ),\qquad
+XY^{\dagger}=\mathrm I_2\otimes(PQ^{\dagger}),
+$$
+
+and likewise $X^{\mathsf T}Y=\mathrm I_2\otimes(P^{\mathsf T}Q)$ and $X^{\mathsf T}Y^{\dagger}=\mathrm I_2\otimes(P^{\mathsf T}Q^{\dagger})$. Each word is two copies of the entry word.
+
+**The transpose is the entry transpose.** The block display does not make $X^{\mathsf T}$ the image of $\tilde P^{\natural}$. In the Peirce frame quaternion conjugation is not entrywise transposition; it is $M\mapsto C M^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates. The naive transpose of the block is the entry transpose, which agrees with ${}^{\natural}$ only in the coefficient frame. The four words are therefore block words, and their identification with the four products is a statement about the coefficient frame.
+
+**The normalization.** The trace of a block word is twice the trace of the entry word, so $\tfrac14\operatorname{Tr}=\tfrac12\operatorname{tr}$. Every form is computed by the same half-trace at size two and quarter-trace at size four, and the two agree. The block display shows the doubling directly: the identity is $\mathrm I_2\otimes\mathrm I_2$, of trace $4$, and the scalar part is one quarter of that.
 
 ## Summary
 

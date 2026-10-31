@@ -10,7 +10,11 @@ This article computes the two-sided family in the two displays. It gives the six
 
 **Boundaries.** The operator statements are *Two-Sided Operators on the Biquaternion Algebra*; the two one-sided families are *Matrix Representations : The Left Regular Operators* and *Matrix Representations : The Right Regular Operators*; the Hermitian sandwich is *Matrix Representations : The Hermitian Sandwich*; the frame change is *Matrix Representations : The Models and the Change of Frame*; the gamma frame in the coefficient display is *The Two-Sided Operators and the Spin Group*.
 
-## The Operator
+## Common Aspects
+
+
+
+### The Operator
 
 **The definition.**
 $$
@@ -49,140 +53,7 @@ $$
 \mathsf T(\tilde Q,\tilde P)^{-1}=\mathsf T(\tilde Q^{-1},\tilde P^{-1}).
 $$
 
-## The Sixteen Basis Matrices
-
-**The definition.** For $\mu,\nu\in\{t,x,y,z\}$ put
-$$
-T_{\mu\nu}=\mathsf T(e_\mu,e_\nu)=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu).
-$$
-The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$.
-
-**The table in four families.**
-
-| | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
-|---|---|---|---|---|
-| $\mu=t$ | $T_{tt}=\mathrm I_4$ | $T_{tx}=R_x$ | $T_{ty}=R_y$ | $T_{tz}=R_z$ |
-| $\mu=x$ | $T_{xt}=L_x$ | $T_{xx}=L_xR_x$ | $T_{xy}=L_xR_y$ | $T_{xz}=L_xR_z$ |
-| $\mu=y$ | $T_{yt}=L_y$ | $T_{yx}=L_yR_x$ | $T_{yy}=L_yR_y$ | $T_{yz}=L_yR_z$ |
-| $\mu=z$ | $T_{zt}=L_z$ | $T_{zx}=L_zR_x$ | $T_{zy}=L_zR_y$ | $T_{zz}=L_zR_z$ |
-
-The first row is the right family and the first column the left family; the identity is $T_{tt}$; the remaining nine cells are genuinely two-sided.
-
-**The Pauli evaluation.** With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
-$$
-T_{tt}=\mathrm I_4,\qquad
-T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
-T_{kt}=-i\,I_2\otimes\sigma_k,\qquad
-T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
-$$
-The last display covers $j,k\in\{x,y,z\}$. The transpose on the right factor is the only place where the side of the multiplication shows in the $2\times2$ model.
-
-**An entry.** The matrix $T_{xy}=L_xR_y$ is
-$$
-T_{xy}=
-\begin{pmatrix}
-0&0&0&-i\\
-0&0&-i&0\\
-0&i&0&0\\
-i&0&0&0
-\end{pmatrix},
-$$
-and its first column is $i$ times the coordinate column of $\tilde\Pi_-$. The entry is the check that the two-sided table agrees with the exchange.
-
-**The complete product table.** The product of two basis matrices is again a basis matrix up to sign,
-$$
-T_{\mu\nu}T_{\rho\sigma}=\epsilon\epsilon'\,T_{\mu'\nu'},
-\qquad
-e_\mu e_\rho=\epsilon e_{\mu'},\quad e_\sigma e_\nu=\epsilon' e_{\nu'}.
-$$
-The sixteen are closed under multiplication up to sign and contain the identity, but they do not form a group: the product of two cells is a cell only up to sign, and $-T_{\mu\nu}$ is not one of the sixteen. It is nevertheless a product, $-T_{\mu\nu}=T_{-e_\mu,e_\nu}$, because the parameter map is bilinear. The full family is a monoid and not a group, since it contains singular products.
-
-**All sixteen are units.** Every basis matrix has determinant $1$ and rank $4$. The algebra is nevertheless $M_4(\mathbb{C})$, which has many zero divisors; a basis of invertible matrices does not make an algebra a division algebra. For instance,
-$$
-T_{tt}+T_{xx}=\mathrm I_4+L_xR_x=
-\begin{pmatrix}
-1&0&0&-1\\
-0&1&-1&0\\
-0&-1&1&0\\
--1&0&0&1
-\end{pmatrix}
-$$
-has rank two.
-
-## Orthogonality and the Coefficient Matrix
-
-**The orthogonality theorem.** For the Hilbert–Schmidt form $\langle A,B\rangle=\operatorname{Tr}(A^{\dagger}B)$,
-$$
-\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma},
-$$
-so the sixteen are orthogonal and each has Hilbert–Schmidt norm $2$.
-
-**The coefficient matrix.** Every $M\in M_4(\mathbb{C})$ has a unique expansion
-$$
-M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu},
-\qquad
-c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr).
-$$
-The $4\times4$ matrix $c(M)=(c_{\mu\nu})$ is the coefficient matrix, and $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself.
-
-**The coefficient of a product.** For $M=T_{\tilde Q,\tilde P}$,
-$$
-c(M)=[Q]\,[P]^{\mathsf T},
-$$
-where $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ is the coefficient column. The coefficient matrix of a product is therefore a rank-one matrix, and every rank-one matrix arises from a product. This is the criterion of §*The Cone of Products*.
-
-**The coefficient display.** In the coefficient frame the sixteen are signed permutation matrices,
-$$
-T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1},
-$$
-with $C_{\Pi}$ the Peirce change. Conjugation changes the entries and not the algebra; the trace, the determinant, the rank and the orthogonality are unchanged.
-
-## The Gamma Frame
-
-**The five cells.** In the Peirce frame define
-$$
-\gamma_0=iT_{e_t,e_x},\quad
-\gamma_1=iT_{e_x,e_y},\quad
-\gamma_2=iT_{e_y,e_y},\quad
-\gamma_3=iT_{e_z,e_y},\quad
-\gamma_5=-iT_{e_t,e_z}.
-$$
-In the $2\times2$ evaluation,
-$$
-\gamma_0=\sigma_1\otimes I_2,\qquad
-\gamma_k=i\sigma_2\otimes\sigma_k,\qquad
-\gamma_5=-\sigma_3\otimes I_2 .
-$$
-
-**The Clifford relations.**
-$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
-(\gamma_5)^2=\mathrm I_4,\qquad
-\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
-$$
-with $g=\operatorname{diag}(1,-1,-1,-1)$, and
-$$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
-$$
-The sixteen products of the five are the sixteen cells up to units, so the frame identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$.
-
-**The normal form.** Let $\beta,\delta$ be orthogonal unit spatial directions. Then
-$$
-\gamma_0=iL_{e_t}R_\delta,\qquad
-\gamma_k=iL_{e_k}R_\beta,\qquad
-\gamma_5=iT_{e_t,\beta\delta}
-$$
-satisfy the same relations. The reference frame is $(\beta,\delta)=(e_y,e_x)$. Nothing in the Clifford relations selects the pair: $\beta$ is the common right factor of the three spatial generators, $\delta$ the right factor of the time generator, and $\beta\delta$ the right factor of the pseudoscalar. The free pair is a genuine parameter of the frame, not a choice of notation.
-
-**The chirality projectors.**
-$$
-P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr).
-$$
-In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$, both of rank two. They are single two-sided operators, but not cells: a single product can be singular.
-
-**The left image does not hold the frame.** The left image is block diagonal in the Peirce frame and preserves the two chiral blocks; the four generators exchange them. The Dirac algebra needs the two-sided family.
-
-## The Cone of Products
+### The Cone of Products
 
 **The bilinear map.** Put
 $$
@@ -266,7 +137,7 @@ The matrix $M_1$ has coefficient matrix $\tfrac12\operatorname{diag}(1,-1,1,1)$,
 
 **How to decide.** Compute the sixteen numbers $\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$ and form $c$. If $\operatorname{rank}c=1$, take a nonzero column of $c$ for $[Q]$ and the corresponding row, divided by the pivot, for $[P]^{\mathsf T}$. If the rank is $r>1$, a rank factorization of $c$ gives the $r$ terms.
 
-## The Tensor Reading
+### The Tensor Reading
 
 **The isomorphism.** The bilinear map
 $$
@@ -298,7 +169,7 @@ $$
 
 **The reading.** "The operator is a single product" and "the tensor is pure" are the same statement. The length is the tensor rank: the least number of decomposable tensors whose sum is the given tensor. The generation theorem says that this tensor rank is at most four. This is the structural content of the factorization, and it is where the number four comes from.
 
-## The Adjoints and the Three Criteria
+### The Adjoints and the Three Criteria
 
 **The two adjoints.** The Hilbert–Schmidt adjoint is
 $$
@@ -363,13 +234,207 @@ $$
 $$
 Hence no level set is a subgroup, and the family carries no pin group. The isometry group is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of dimension three, not the full orthogonal group of dimension six; the pin group of the quadratic space is built in the Clifford algebra and is not contained in the family. There is also no nonzero skew-adjoint member: $(T_{\tilde Q,\tilde P})^{\approx}=-T_{\tilde Q,\tilde P}$ forces $T_{\tilde Q,\tilde P}=0$.
 
-## What the Factorization Buys
+### What the Factorization Buys
 
 **It gives.** The factorization gives five things at once: a parametrisation of the cone by two biquaternions, eight complex parameters modulo the scaling, hence seven effective parameters; a composition law, hence powers, inverses and the monoid structure; the rank-one criterion for a single product; the length formula $\ell(M)=\operatorname{rank}c(M)$, with length at most four; and a type theory, the two adjoints and the three criteria of §*The Adjoints and the Three Criteria*.
 
 **It does not give.** It gives no additivity: the image is a cone, not a subspace, and the sum of two products is generally not a product. It gives no universality: not every matrix in $M_4(\mathbb{C})$ is a single product, four are needed generically, and four always suffice. It gives no division algebra: the sixteen cells are units, but the cone contains singular products and the span contains zero divisors. It gives no pin group: the form $\operatorname{Sc}(\tilde Q^2)$ is not multiplicative, and the isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of dimension three.
 
 **The one-line form.** Every two-sided operator is one product $T_{\tilde Q,\tilde P}=L_{\tilde Q}R_{\tilde P}=B_P^{\mathsf T}\otimes B_Q$; the set of products is the seven-dimensional cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}=M_4(\mathbb{C})$, cut out by $\operatorname{rank}c(M)\le1$, closed under composition with the second slot reversed and not under addition, with length $\operatorname{rank}c(M)\in\{0,1,2,3,4\}$ and matrix rank in $\{0,1,2,4\}$.
+
+## The $S_3$ Frame
+
+
+
+**The coefficient display.** In the coefficient frame the sixteen basis matrices are
+$$
+T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1},
+$$
+and they are signed permutation matrices. Conjugation changes the entries and not the algebra: the trace, the determinant, the rank and the orthogonality are unchanged. The coefficient matrix $c(M)$ of a general matrix is the same coordinate matrix in the new basis; the basis vectors change, not the linear map.
+
+**The gamma frame in the coefficient frame.** The five cells become
+$$
+\gamma_\mu^{\mathrm{coef}}=C_{\Pi}\gamma_\mu C_{\Pi}^{-1},
+\qquad
+\{\gamma_\mu^{\mathrm{coef}},\gamma_\nu^{\mathrm{coef}}\}=2g_{\mu\nu}\mathrm I_4,
+\qquad
+(\gamma_5^{\mathrm{coef}})^2=\mathrm I_4,
+\qquad
+\gamma_5^{\mathrm{coef}}\gamma_\mu^{\mathrm{coef}}=-\gamma_\mu^{\mathrm{coef}}\gamma_5^{\mathrm{coef}}.
+$$
+The Clifford relations are frame-independent, because conjugation by $C_{\Pi}$ is an algebra automorphism. The chirality projectors are $P_\pm^{\mathrm{coef}}=C_{\Pi}P_\pm C_{\Pi}^{-1}=\tfrac12(\mathrm I_4\pm\gamma_5^{\mathrm{coef}})$, of rank two. The frame still identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$, and the free pair of spatial directions is still a parameter of the frame, not a choice of notation. This is the display used in *The Two-Sided Operators and the Spin Group*, where the spin group acts on the coefficient space by conjugation.
+
+**What the coefficient frame adds.** The Peirce frame displays the product structure $B_P^{\mathsf T}\otimes B_Q$ in blocks. The coefficient frame displays the same matrices as signed permutations and makes the Clifford generators directly comparable with the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The two displays are related by $C_{\Pi}$, and neither is preferred by the algebra.
+
+## The $2\times2$ $z$ Frame
+
+
+
+**The block.** In the Peirce frame the two-sided matrix is
+$$
+\mathsf T(\tilde Q,\tilde P)=B_P^{\mathsf T}\otimes B_Q,
+$$
+a Kronecker product of two $2\times2$ matrices. Both factors are supplied by the entry model: $B_Q=\mathsf M_2(\tilde Q)$ acts on the left index and $B_P^{\mathsf T}$ on the right index. The operator itself is four-dimensional; the $2\times2$ model supplies the two blocks, not a separate display.
+
+**The Pauli evaluation.** With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+$$
+T_{tt}=\mathrm I_4,\qquad
+T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
+T_{kt}=-i\,I_2\otimes\sigma_k,\qquad
+T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j,
+$$
+for $j,k\in\{x,y,z\}$. The transpose on the right factor is the only place where the side of the multiplication shows in the entry model.
+
+**The invariants.** The block gives
+$$
+\operatorname{Tr}\mathsf T(\tilde Q,\tilde P)=\operatorname{tr}(B_P^{\mathsf T})\operatorname{tr}(B_Q)=4Q_tP_t,
+$$
+$$
+\det\mathsf T(\tilde Q,\tilde P)=\det(B_P^{\mathsf T})^2\det(B_Q)^2
+=\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2,
+\qquad
+\operatorname{rank}\mathsf T(\tilde Q,\tilde P)=\operatorname{rank}B_Q\cdot\operatorname{rank}B_P.
+$$
+The rank of a product is the product of two entry ranks, each in $\{0,1,2\}$, so it takes the values $4,2,1,0$ and never $3$. The factor four in the trace is the dimension of the carrier, and the square in the determinant is the doubling of each one-sided determinant.
+
+**The sixteen cells.** The sixteen $T_{\mu\nu}$ are the Kronecker products of the four basis matrices of the left family and the four of the right family. Their entry-level multiplication is the multiplication of the corresponding $2\times2$ matrices, with the right factor transposed; the sign in the product table comes from the multiplication of the units.
+
+## The $4\times4$ $z$ Frame
+
+
+
+### The Sixteen Basis Matrices
+
+**The definition.** For $\mu,\nu\in\{t,x,y,z\}$ put
+$$
+T_{\mu\nu}=\mathsf T(e_\mu,e_\nu)=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu).
+$$
+The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$.
+
+**The table in four families.**
+
+| | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
+|---|---|---|---|---|
+| $\mu=t$ | $T_{tt}=\mathrm I_4$ | $T_{tx}=R_x$ | $T_{ty}=R_y$ | $T_{tz}=R_z$ |
+| $\mu=x$ | $T_{xt}=L_x$ | $T_{xx}=L_xR_x$ | $T_{xy}=L_xR_y$ | $T_{xz}=L_xR_z$ |
+| $\mu=y$ | $T_{yt}=L_y$ | $T_{yx}=L_yR_x$ | $T_{yy}=L_yR_y$ | $T_{yz}=L_yR_z$ |
+| $\mu=z$ | $T_{zt}=L_z$ | $T_{zx}=L_zR_x$ | $T_{zy}=L_zR_y$ | $T_{zz}=L_zR_z$ |
+
+The first row is the right family and the first column the left family; the identity is $T_{tt}$; the remaining nine cells are genuinely two-sided.
+
+**The Pauli evaluation.** With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+$$
+T_{tt}=\mathrm I_4,\qquad
+T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
+T_{kt}=-i\,I_2\otimes\sigma_k,\qquad
+T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
+$$
+The last display covers $j,k\in\{x,y,z\}$. The transpose on the right factor is the only place where the side of the multiplication shows in the $2\times2$ model.
+
+**An entry.** The matrix $T_{xy}=L_xR_y$ is
+$$
+T_{xy}=
+\begin{pmatrix}
+0&0&0&-i\\
+0&0&-i&0\\
+0&i&0&0\\
+i&0&0&0
+\end{pmatrix},
+$$
+and its first column is $i$ times the coordinate column of $\tilde\Pi_-$. The entry is the check that the two-sided table agrees with the exchange.
+
+**The complete product table.** The product of two basis matrices is again a basis matrix up to sign,
+$$
+T_{\mu\nu}T_{\rho\sigma}=\epsilon\epsilon'\,T_{\mu'\nu'},
+\qquad
+e_\mu e_\rho=\epsilon e_{\mu'},\quad e_\sigma e_\nu=\epsilon' e_{\nu'}.
+$$
+The sixteen are closed under multiplication up to sign and contain the identity, but they do not form a group: the product of two cells is a cell only up to sign, and $-T_{\mu\nu}$ is not one of the sixteen. It is nevertheless a product, $-T_{\mu\nu}=T_{-e_\mu,e_\nu}$, because the parameter map is bilinear. The full family is a monoid and not a group, since it contains singular products.
+
+**All sixteen are units.** Every basis matrix has determinant $1$ and rank $4$. The algebra is nevertheless $M_4(\mathbb{C})$, which has many zero divisors; a basis of invertible matrices does not make an algebra a division algebra. For instance,
+$$
+T_{tt}+T_{xx}=\mathrm I_4+L_xR_x=
+\begin{pmatrix}
+1&0&0&-1\\
+0&1&-1&0\\
+0&-1&1&0\\
+-1&0&0&1
+\end{pmatrix}
+$$
+has rank two.
+
+### Orthogonality and the Coefficient Matrix
+
+**The orthogonality theorem.** For the Hilbert–Schmidt form $\langle A,B\rangle=\operatorname{Tr}(A^{\dagger}B)$,
+$$
+\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma},
+$$
+so the sixteen are orthogonal and each has Hilbert–Schmidt norm $2$.
+
+**The coefficient matrix.** Every $M\in M_4(\mathbb{C})$ has a unique expansion
+$$
+M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu},
+\qquad
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr).
+$$
+The $4\times4$ matrix $c(M)=(c_{\mu\nu})$ is the coefficient matrix, and $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself.
+
+**The coefficient of a product.** For $M=T_{\tilde Q,\tilde P}$,
+$$
+c(M)=[Q]\,[P]^{\mathsf T},
+$$
+where $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ is the coefficient column. The coefficient matrix of a product is therefore a rank-one matrix, and every rank-one matrix arises from a product. This is the criterion of §*The Cone of Products*.
+
+**The coefficient display.** In the coefficient frame the sixteen are signed permutation matrices,
+$$
+T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1},
+$$
+with $C_{\Pi}$ the Peirce change. Conjugation changes the entries and not the algebra; the trace, the determinant, the rank and the orthogonality are unchanged.
+
+### The Gamma Frame
+
+**The five cells.** In the Peirce frame define
+$$
+\gamma_0=iT_{e_t,e_x},\quad
+\gamma_1=iT_{e_x,e_y},\quad
+\gamma_2=iT_{e_y,e_y},\quad
+\gamma_3=iT_{e_z,e_y},\quad
+\gamma_5=-iT_{e_t,e_z}.
+$$
+In the $2\times2$ evaluation,
+$$
+\gamma_0=\sigma_1\otimes I_2,\qquad
+\gamma_k=i\sigma_2\otimes\sigma_k,\qquad
+\gamma_5=-\sigma_3\otimes I_2 .
+$$
+
+**The Clifford relations.**
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
+(\gamma_5)^2=\mathrm I_4,\qquad
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
+$$
+with $g=\operatorname{diag}(1,-1,-1,-1)$, and
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
+$$
+The sixteen products of the five are the sixteen cells up to units, so the frame identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$.
+
+**The normal form.** Let $\beta,\delta$ be orthogonal unit spatial directions. Then
+$$
+\gamma_0=iL_{e_t}R_\delta,\qquad
+\gamma_k=iL_{e_k}R_\beta,\qquad
+\gamma_5=iT_{e_t,\beta\delta}
+$$
+satisfy the same relations. The reference frame is $(\beta,\delta)=(e_y,e_x)$. Nothing in the Clifford relations selects the pair: $\beta$ is the common right factor of the three spatial generators, $\delta$ the right factor of the time generator, and $\beta\delta$ the right factor of the pseudoscalar. The free pair is a genuine parameter of the frame, not a choice of notation.
+
+**The chirality projectors.**
+$$
+P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr).
+$$
+In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$, both of rank two. They are single two-sided operators, but not cells: a single product can be singular.
+
+**The left image does not hold the frame.** The left image is block diagonal in the Peirce frame and preserves the two chiral blocks; the four generators exchange them. The Dirac algebra needs the two-sided family.
 
 ## Summary
 

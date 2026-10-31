@@ -19,9 +19,11 @@ The models and the change $C_{\Pi}$ are those of *Matrix Representations : The M
 
 **Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *Matrix Representations : Trace, Determinant and the Biquaternion Norm*; the sandwich action on them is *Matrix Representations : The Hermitian Sandwich*.
 
-## The Table
+## Common Aspects
 
-The table gives the condition on the element, the image in the $2\times2$ model, the condition on the $4\times4$ matrix **inside the image**, and the real dimension.
+The six remarkable subspaces are the fixed and anti-fixed spaces of the four conjugations and the two halves of the scalar–vector split. Each is a condition on the element, and the same six words survive every display: scalar, traceless, real, purely imaginary, Hermitian, anti-Hermitian. What changes is the scope of the condition. In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so the condition characterises the subspace among all matrices. In the $4\times4$ model the image is a four-complex-dimensional subalgebra of a sixteen-dimensional algebra, so every condition must be intersected with the image.
+
+**The table.** The condition on the element, the image in the entry model, the condition on the regular matrix inside the image, and the real dimension:
 
 | Subspace | Condition on the element | $2\times2$ image | Condition on $M=\mathsf M_4^{L}(\tilde Q)$ | Real dim. |
 |---|---|---|---|---|
@@ -32,97 +34,9 @@ The table gives the condition on the element, the image in the $2\times2$ model,
 | $\mathbb{M}_+$ | $\tilde Q^{*}=\tilde Q$ | Hermitian matrices | $M=M^{\dagger}$ | $4$ |
 | $\mathbb{M}_-$ | $\tilde Q^{\flat}=\tilde Q$ | $i$ times Hermitian matrices | $M=-M^{\dagger}$ | $4$ |
 
-**The two sizes together.** Column three is a condition on the element; column four is the corresponding condition on the left regular matrix. The correspondence is exact, and it is the same six words. The $2\times2$ column is the sharper one, because it has no ambient algebra to exclude; the $4\times4$ column needs the qualifier "inside the image".
+**The determinants.** On the element, $\det\mathsf M_2(\tilde Q)=Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$ on the six rows. On the operator the determinant is the square of each value, because $\det\mathsf M_4^{L}=\det(\mathsf M_2)^2$.
 
-**The determinants.** On the element, $\det\mathsf M_2(\tilde Q)=Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$ on the six rows. On the operator, the determinant is the square of each value, because $\det\mathsf M_4^{L}=\det(\mathsf M_2)^2$.
-
-**The warning.** The conditions in the fourth column are not sufficient in the ambient $M_4(\mathbb{C})$. The Hermitian matrices alone form a real space of dimension $16$, not $4$; the real matrices alone form a real space of dimension $16$, not $4$. The six subspaces are the intersections of those conditions with the image, and the dimensions in the table are the dimensions of the intersections. In the $2\times2$ model the image is all of $M_2(\mathbb{C})$, so no warning is needed there.
-
-**The Peirce display.** In the Peirce frame the element acts as the same block $B$ on each of the two planes, so the six conditions read on $B$ and are repeated twice. The coefficient frame is used below, because it is the frame in which ${}^{\natural}$ is transposition.
-
-## The Centre Subspace
-
-**The scalar matrices.**
-
-$$
-\mathsf{M}_4^{L}(Q_te_t)=Q_t\mathrm I_4,
-\qquad
-\operatorname{Tr}M=4Q_t,
-\qquad
-\det M=Q_t^4.
-$$
-
-The image is the complex line of scalar matrices, of real dimension two. It is the only commutative subspace and the only one of real dimension two. It meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_4$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_4$.
-
-## The Vector Subspace
-
-**The traceless matrices.**
-
-$$
-\operatorname{Tr}M=4Q_t=0
-\iff
-Q_t=0.
-$$
-
-The condition is equivalent, inside the image, to skew-symmetry:
-$$
-\operatorname{Tr}M=0
-\iff
-M^{\mathsf T}=-M,
-$$
-because the transpose is quaternion conjugation and $Q^{\natural}=-Q$ exactly when $Q_t=0$. The image is the three-dimensional complex space of regular matrices with zero scalar part, of real dimension six. It is closed under the commutator and not under the product.
-
-**The two chiral halves.** The three matrices $\mathsf{M}_4^{L}(\vec e_k)$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two chiral halves of $\mathfrak{so}_4(\mathbb{C})$. The other half is not in the image. This is the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$: in $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional, and the image selects a three-dimensional subspace.
-
-## The Quaternion Subspace
-
-**The real matrices.**
-$$
-\mathsf{M}_4^{L}(\tilde Q)=\overline{\mathsf{M}_4^{L}(\tilde Q)}
-\iff
-Q_\mu\in\mathbb{R}\ \text{for all }\mu.
-$$
-The image is the space of real matrices of the regular form, of real dimension four. It is closed under multiplication and is a division algebra.
-
-**The trace and the determinant.** On the quaternion subspace the trace is $4q_t$, real, and the determinant of the $2\times2$ image is the sum $\sum q_\mu^2$, non-negative, and zero only at the origin.
-
-**The contrast with $2\times2$.** In the $2\times2$ model the quaternion subspace is the conjugate-linear pattern $\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$, not the real matrices. In the regular model complex conjugation is entrywise, so the pattern disappears and the condition becomes realness of all entries. The price is that the image is only four real-dimensional.
-
-## The Anti-Quaternion Subspace
-
-**The purely imaginary matrices.**
-$$
-\mathsf{M}_4^{L}(\tilde Q)=-\overline{\mathsf{M}_4^{L}(\tilde Q)}
-\iff
-Q_\mu\in i\mathbb{R}\ \text{for all }\mu.
-$$
-The image is the space of purely imaginary matrices of the regular form, of real dimension four. It is not closed under multiplication: the product of two purely imaginary matrices is real.
-
-**The trace and the determinant.** On the anti-quaternion subspace the trace is $4iq'_t$, purely imaginary, and the determinant of the $2\times2$ image is $-\sum(q'_\mu)^2$, non-positive, and zero only at the origin.
-
-## The Hermitian Subspace
-
-**The Hermitian matrices.**
-$$
-\mathsf{M}_4^{L}(\tilde Q)^{\dagger}=\mathsf{M}_4^{L}(\tilde Q)
-\iff
-\tilde Q^{*}=\tilde Q.
-$$
-The image is the space of Hermitian matrices of the regular form, of real dimension four. The trace is real on it, and the determinant of the $2\times2$ image takes both signs.
-
-## The Anti-Hermitian Subspace
-
-**The anti-Hermitian matrices.**
-$$
-\mathsf{M}_4^{L}(\tilde Q)^{\dagger}=-\mathsf{M}_4^{L}(\tilde Q)
-\iff
-\tilde Q^{*}=-\tilde Q.
-$$
-The image is the space of anti-Hermitian matrices of the regular form, of real dimension four. The trace is purely imaginary on it, and the determinant of the $2\times2$ image takes both signs, opposite to the Hermitian determinant.
-
-**The warning repeated.** The ambient Hermitian matrices are sixteen real-dimensional; the image of $\mathbb{M}_+$ is the four-dimensional subspace of Hermitian matrices of the form $\mathsf{M}_4^{L}(\tilde Q)$ with $\tilde Q^{*}=\tilde Q$. The distinction is the regular analogue of the fact that a general $2\times2$ Hermitian matrix need not be of the form $\mathsf{M}_2(\tilde Q)$; there the image is everything, here it is not.
-
-## How They Fit Together
+**The warning.** The conditions in the fourth column are not sufficient in the ambient $M_4(\mathbb{C})$. The Hermitian matrices alone form a real space of dimension $16$, and the real matrices alone another; the six subspaces are the intersections of those conditions with the image. The dimensions in the table are the dimensions of the intersections. In the entry model the image is everything, so no warning is needed.
 
 **The three splits.**
 
@@ -132,13 +46,48 @@ $$
 =\mathbb{M}_+\oplus\mathbb{M}_-.
 $$
 
-The first is the trace decomposition, of real dimensions two and six. The second and the third are four-plus-four, and neither refines the other.
-
-**The intersections.** The centre meets $\mathbb{M}_+$ in $\mathbb{R}e_t$ and $\mathbb{M}_-$ in $i\mathbb{R}e_t$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the pure quaternions, of real dimension three, and $i\mathbb{H}_{\mathbb{B}}$ in the pure anti-quaternions. It meets $\mathbb{M}_+$ in $i$ times the real vector space, and $\mathbb{M}_-$ in the real vector space. The quaternion and anti-quaternion subspaces meet only at the origin, and so do the Hermitian and anti-Hermitian subspaces.
+The first is the trace decomposition, of real dimensions two and six. The second and the third are four-plus-four, and neither refines the other. The centre meets $\mathbb{M}_+$ in $\mathbb{R}e_t$ and $\mathbb{M}_-$ in $i\mathbb{R}e_t$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the pure quaternions, of real dimension three, and $i\mathbb{H}_{\mathbb{B}}$ in the pure anti-quaternions; it meets $\mathbb{M}_+$ in $i$ times the real vector space and $\mathbb{M}_-$ in the real vector space. The quaternion and anti-quaternion subspaces meet only at the origin, and so do the Hermitian and anti-Hermitian subspaces.
 
 **The subalgebras.** The centre and the quaternion subspace are subalgebras; the vector subspace is a Lie subalgebra; the anti-quaternion subspace and the two Hermitian subspaces are neither. The statements are read from the matrix conditions and from the closure of the corresponding coefficient conditions.
 
-**The real structure.** The regular model is a complex model, and it displays the two as the Hermitian and the anti-Hermitian matrices. They are not isomorphic: their determinants have opposite signs, and multiplication by $i$ exchanges them.
+## The $S_3$ Frame
+
+**The frame.** The coefficient frame is the frame in which ${}^{\natural}$ is transposition. The regular matrix of $\tilde Q$ is $L_{\tilde Q}=Q_t\mathrm I_4+Q_xL_x+Q_yL_y+Q_zL_z$, with $L_t=\mathrm I_4$ and the three real signed permutations of the product rule. The six conditions are therefore entry conditions: transposition, entrywise conjugation, and the adjoint.
+
+**The scalar and the vector.** The centre is the line $M=\lambda\mathrm I_4$, of real dimension two, the only commutative subspace and the only one of real dimension two. The vector subspace is $\operatorname{Tr}M=0$, which inside the image is equivalent to $M^{\mathsf T}=-M$: the transpose is ${}^{\natural}$, and $Q^{\natural}=-Q$ exactly when $Q_t=0$. Its image is the three-complex-dimensional space of regular matrices with zero scalar part, of real dimension six. It is closed under the commutator and not under the product.
+
+**The two chiral halves.** The three matrices $L_x,L_y,L_z$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two chiral halves of $\mathfrak{so}_4(\mathbb{C})$. The other half is not in the image. In $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional; the image selects a three-dimensional subspace, the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$.
+
+**The real and the imaginary.** Complex conjugation is entrywise in the coefficient frame, so $\mathbb{H}_{\mathbb{B}}$ is the set of regular matrices with real entries and $i\mathbb{H}_{\mathbb{B}}$ the set with purely imaginary entries. Both are four-real-dimensional. The first is closed under multiplication and is a division algebra; the second is not closed, because the product of two purely imaginary matrices is real. The trace is $4q_t$ on the first and $4iq'_t$ on the second; the determinant of the entry image is $\sum q_\mu^2$ on the first and $-\sum(q'_\mu)^2$ on the second, non-negative and non-positive respectively and zero only at the origin.
+
+**The Hermitian pair.** $\mathbb{M}_+$ is $M=M^{\dagger}$ and $\mathbb{M}_-$ is $M=-M^{\dagger}$. Both are four-real-dimensional inside the image. The trace is real on the first and purely imaginary on the second. The determinants of the entry images take both signs, with opposite signs on the two subspaces. The ambient Hermitian matrices are sixteen-real-dimensional; the image is the four-dimensional subspace of those of the regular form, which is why the qualifier "inside the image" is part of the statement.
+
+## The $2\times2$ $z$ Frame
+
+**The six sets.** In the entry model, whose standard basis is the $z$ Peirce pair, the six subspaces are:
+
+$$
+\begin{aligned}
+\mathbb{C}_{\mathbb{B}} &: && M=\lambda\mathrm I_2,\\
+\mathrm{Vect}(\mathbb{B}) &: && \operatorname{tr}M=0,\\
+\mathbb{H}_{\mathbb{B}} &: && M=\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix},\\
+i\mathbb{H}_{\mathbb{B}} &: && M=i\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix},\\
+\mathbb{M}_+ &: && M=M^{\dagger},\\
+\mathbb{M}_- &: && M=-M^{\dagger}.
+\end{aligned}
+$$
+
+The entry model is an isomorphism onto $M_2(\mathbb{C})$, so each condition is exact among all matrices: the scalar matrices are the centre, the traceless matrices are $\mathfrak{sl}_2(\mathbb{C})$, and the quaternion pattern is the conjugate-linear form of the real quaternions. The two Hermitian halves are the usual Hermitian and anti-Hermitian matrices.
+
+**The determinants.** On the six rows the determinant $Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$. The signs separate the four real forms: the quaternion subspace has a non-negative determinant, the anti-quaternion subspace a non-positive one, and the two Hermitian subspaces take both signs.
+
+## The $4\times4$ $z$ Frame
+
+**The block form.** In the Peirce frame the regular matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. Every condition of the entry model is imposed on $B$ and repeated twice: $B=\lambda\mathrm I_2$, $\operatorname{tr}B=0$, $B=\bar B$, $B=-\bar B$, $B=B^{\dagger}$, $B=-B^{\dagger}$. The carrier is two copies of the $2\times2$ space, and the two planes carry the same condition.
+
+**The invariants.** The trace is twice the entry trace, $4Q_t$, and the determinant is the square of the entry determinant, $\langle\tilde Q\rangle_{\natural}^2$. The real dimensions are those of the entry model, because the block is repeated and adds no parameter: $2,6,4,4,4,4$.
+
+**The chiral reading.** The three matrices $\mathsf M_4^{L}(\vec e_k)$ act on each plane by the corresponding Pauli matrix and are block-diagonal. Their span is the diagonal copy of the chiral half, and the other chiral half of $\mathfrak{so}_4(\mathbb{C})$ is the off-diagonal copy, which is not in the left image. This is the block form of the statement that the image selects one half.
 
 ## Summary
 

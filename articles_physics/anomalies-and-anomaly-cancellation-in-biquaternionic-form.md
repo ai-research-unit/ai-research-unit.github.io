@@ -10,7 +10,7 @@ An **anomaly** is a symmetry of a classical action that does not survive quantis
 This article treats both in the biquaternion framework. The framework's contribution is structural and is stated at the outset.
 
 - **Established, and recomputed below.** The axial anomaly is the failure of the chiral rotation $\tilde{\Psi}\mapsto \exp(i\alpha\gamma_5)\tilde{\Psi}$ to be a symmetry of the measure. Its density is built from $\gamma_5$, which the Clifford isomorphism identifies with the volume element, $\gamma_5=i\omega$, and it is proportional to the **second invariant** $I_2=\vec E\cdot\vec B$ of the biquaternion field — the topological density computed in the companion article on instantons. The anomaly is therefore not foreign to the framework: its density is one of the framework's two field invariants.
-- **Established, and recomputed below.** The anomaly coefficient of a gauge theory is the symmetrised trace $\mathrm{Tr}\,[T^a\{T^b,T^c\}]$ over the left-handed Weyl fermions. The framework's **own** gauge structure — the central $\mathrm{U}(1)$ and the $\mathrm{SU}(2)$ inside $\mathbb{M}_-$ — is anomaly-free: the central phase is vector-like, so its cubic trace cancels identically, and $\mathrm{SU}(2)$ has no cubic Casimir, so its triangle coefficient vanishes identically. The framework cannot be inconsistent by a gauge anomaly of the algebra's own gauge fields.
+- **Established, and recomputed below.** The anomaly coefficient of a gauge theory is the symmetrised trace $\mathrm{Tr}\,[T_a\{T_b,T_c\}]$ over the left-handed Weyl fermions. The framework's **own** gauge structure — the central $\mathrm{U}(1)$ and the $\mathrm{SU}(2)$ inside $\mathbb{M}_-$ — is anomaly-free: the central phase is vector-like, so its cubic trace cancels identically, and $\mathrm{SU}(2)$ has no cubic Casimir, so its triangle coefficient vanishes identically. The framework cannot be inconsistent by a gauge anomaly of the algebra's own gauge fields.
 - **Standard, transcribed.** The anomaly cancellation conditions of the Standard Model's chiral spectrum — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour conditions — are standard, and the article verifies all of them generation by generation. They constrain the hypercharges and the colour assignments; they do not constrain the **number** of generations.
 - **Gap, left visible.** The framework has no chiral gauge group of its own — the central phase is vector-like and the $\mathrm{SU}(2)$ acts vector-like on the algebra's module — so it cannot *derive* the Standard Model's chiral spectrum from which the cancellation conditions are read. It transcribes the conditions and hosts their solution; it does not select it.
 
@@ -75,29 +75,29 @@ whose two real invariants of the biquaternion norm are $I_1=\vec E^2-c^2\vec B^2
 
 ## The Triangle Coefficient and the Group Factors
 
-**The general anomaly coefficient.** For a gauge theory with generators $T^a$ acting on a left-handed Weyl fermion in a representation $R$, the coefficient of the triangle anomaly is the **symmetrised trace**
+**The general anomaly coefficient.** For a gauge theory with generators $T_a$ acting on a left-handed Weyl fermion in a representation $R$, the coefficient of the triangle anomaly is the **symmetrised trace**
 
 $$
-A^{abc}(R) \;=\; \mathrm{Tr}_R\big[T^a\{T^b,T^c\}\big] .
+A_{abc}(R) \;=\; \mathrm{Tr}_R\big[T_a\{T_b,T_c\}\big] .
 $$
 
 The anomaly is the sum over all left-handed Weyl fermions, with a right-handed Weyl fermion contributing the negative of a left-handed one (equivalently, a right-handed field in $R$ contributes as a left-handed field in the conjugate $\bar{R}$). The consistency condition for a chiral gauge theory is
 
 $$
-\sum_{\text{left-handed}} A^{abc}(R) \;-\; \sum_{\text{right-handed}} A^{abc}(R) \;=\; 0
+\sum_{\text{left-handed}} A_{abc}(R) \;-\; \sum_{\text{right-handed}} A_{abc}(R) \;=\; 0
 \qquad\text{for all } a,b,c .
 $$
 
 For an abelian factor this reduces to $\sum Y^3=0$ over the charged left-handed content (with the right-handed sign); for a simple factor it reduces to the vanishing of the appropriate cubic Casimir. Both are standard.
 
-**The $\mathrm{SU}(2)$ factor vanishes identically.** For $SU(2)$ in any representation the symmetrised trace of three generators is zero, because there is no cubic Casimir. For the doublet with $T^a=\tfrac12\sigma^a$ the proof is one line:
+**The $\mathrm{SU}(2)$ factor vanishes identically.** For $SU(2)$ in any representation the symmetrised trace of three generators is zero, because there is no cubic Casimir. For the doublet with $T_a=\tfrac12\sigma_a$ the proof is one line:
 
 $$
-\{T^b,T^c\}=\tfrac14\{\sigma^b,\sigma^c\}=\tfrac12\delta^{bc}I_2 ,
+\{T_b,T_c\}=\tfrac14\{\sigma_b,\sigma_c\}=\tfrac12\delta_{bc}I_2 ,
 \qquad
-T^a\{T^b,T^c\}=\tfrac14\delta^{bc}\sigma^a ,
+T_a\{T_b,T_c\}=\tfrac14\delta_{bc}\sigma_a ,
 \qquad
-\mathrm{Tr}\,\big[T^a\{T^b,T^c\}\big]=\tfrac14\delta^{bc}\,\mathrm{Tr}\,\sigma^a = 0 .
+\mathrm{Tr}\,\big[T_a\{T_b,T_c\}\big]=\tfrac14\delta_{bc}\,\mathrm{Tr}\,\sigma_a = 0 .
 $$
 
 The same conclusion holds for every $SU(2)$ representation: each is real or pseudoreal, the cubic invariant does not exist, and the triangle coefficient vanishes. The step that makes this useful is the sign rule: because a left-handed doublet and a right-handed doublet contribute with opposite signs, and because each is separately anomalous only through a coefficient that is already zero, **$SU(2)$ is anomaly-free whatever its fermion content.** This is a property of the group, not of the model.
@@ -198,9 +198,9 @@ the difference between the number of right- and left-handed zero modes of the ma
 
 ## The Non-Abelian Anomaly and Its Consistency
 
-**The consistency problem.** For a non-abelian gauge theory the anomalous divergence is not simply $\langle\tilde\nabla,\tilde J^{a}\rangle_{\natural}\propto A^{abc}\epsilon FF$; the current itself is defined only up to a local polynomial in the gauge field (the Bardeen counterterm), and the requirement is not just that the coefficient vanish but that the anomaly be expressible as the transformation of a local functional — the Wess–Zumino term — so that the gauge variation of the effective action is local and the theory remains consistent. The condition on the matter spectrum is the vanishing of the symmetrised trace $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$ used above; the finer statement is that the anomaly is a **consistent** (Bardeen) anomaly, whose form is fixed by the Wess–Zumino consistency condition rather than by the covariant triangle alone. Both are standard, and the corpus transcribes them; the fermion sector needs only the condition $A^{abc}=0$.
+**The consistency problem.** For a non-abelian gauge theory the anomalous divergence is not simply $\langle\tilde\nabla,\tilde J_a\rangle_{\natural}\propto\sum_{b,c}A_{abc}\,\epsilon FF$; the current itself is defined only up to a local polynomial in the gauge field (the Bardeen counterterm), and the requirement is not just that the coefficient vanish but that the anomaly be expressible as the transformation of a local functional — the Wess–Zumino term — so that the gauge variation of the effective action is local and the theory remains consistent. The condition on the matter spectrum is the vanishing of the symmetrised trace $A_{abc}=\mathrm{Tr}[T_a\{T_b,T_c\}]$ used above; the finer statement is that the anomaly is a **consistent** (Bardeen) anomaly, whose form is fixed by the Wess–Zumino consistency condition rather than by the covariant triangle alone. Both are standard, and the corpus transcribes them; the fermion sector needs only the condition $A_{abc}=0$.
 
-**The obstruction to a covariant current.** One structural point belongs here because it is easy to state wrongly. In four dimensions the anomaly is a total derivative, yet one cannot have a current that is simultaneously **covariant** and **conserved**: the covariant current has a nonzero divergence and the conserved current is not gauge covariant, and the two differ by the Chern–Simons term. The framework's gauge currents, built on the $\mathrm{SU}(2)$ connection of the companion articles, inherit this; there is nothing in the algebra that removes it, and the resolution is the standard Bardeen counterterm, not a biquaternion identity. The condition for consistency is the vanishing of $A^{abc}$, and the framework's own $A^{abc}$ vanishes identically, so the framework never has to face the obstruction for its own gauge fields.
+**The obstruction to a covariant current.** One structural point belongs here because it is easy to state wrongly. In four dimensions the anomaly is a total derivative, yet one cannot have a current that is simultaneously **covariant** and **conserved**: the covariant current has a nonzero divergence and the conserved current is not gauge covariant, and the two differ by the Chern–Simons term. The framework's gauge currents, built on the $\mathrm{SU}(2)$ connection of the companion articles, inherit this; there is nothing in the algebra that removes it, and the resolution is the standard Bardeen counterterm, not a biquaternion identity. The condition for consistency is the vanishing of $A_{abc}$, and the framework's own $A_{abc}$ vanishes identically, so the framework never has to face the obstruction for its own gauge fields.
 
 **Anomaly matching.** A further standard consequence is 't Hooft's anomaly matching: the anomaly coefficients of the unbroken global symmetries must be the same in the ultraviolet and in the infrared, because the anomaly is one-loop-exact and cannot be generated or destroyed by the strong dynamics. For quantum chromodynamics this is one of the constraints on the spectrum of massless composite fermions. The framework has no confinement and no composite spectrum, so it cannot use the matching conditions; it records them as a property of the anomaly that survives any dynamics, and therefore as a constraint any future framework completion would have to satisfy.
 
@@ -218,7 +218,7 @@ with one factor of each left- and each right-handed field. The operator has the 
 
 ## The Traces Involved, and the One That Is Not
 
-**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon_{\mu\nu\rho\sigma}$ through $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
+**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon_{\mu\nu\rho\sigma}$ through $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A_{abc}=\mathrm{Tr}[T_a\{T_b,T_c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
 
 **The chiral trace is a difference of Weyl traces.** In the block decomposition $\Delta=S\oplus\bar{S}$ with $\gamma_5=\mathrm{diag}(-I_2,I_2)$, a trace with a chirality insertion splits:
 
@@ -254,7 +254,7 @@ $$
 
 and the anomalous density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The gamma-matrix identity behind every anomaly, $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$, and the identification $\gamma_5=i\omega$ of the chirality operator with the volume element, are supplied by the framework's Clifford structure and were recomputed.
 
-The gauge anomaly is the triangle coefficient $\mathrm{Tr}[T^a\{T^b,T^c\}]$, and its vanishing is a consistency condition on the chiral spectrum. The article verified the Standard Model's four conditions — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour sum — exactly, for one generation, with a left-minus-right sign convention; the cubic sum cancels by a genuine left–right conspiracy rather than per field. The conditions constrain the hypercharges and colour assignments but not the number of generations, since each generation contributes a zero.
+The gauge anomaly is the triangle coefficient $\mathrm{Tr}[T_a\{T_b,T_c\}]$, and its vanishing is a consistency condition on the chiral spectrum. The article verified the Standard Model's four conditions — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour sum — exactly, for one generation, with a left-minus-right sign convention; the cubic sum cancels by a genuine left–right conspiracy rather than per field. The conditions constrain the hypercharges and colour assignments but not the number of generations, since each generation contributes a zero.
 
 The framework's **own** gauge structure is anomaly-free identically: the central $\mathrm{U}(1)$ is vector-like, so its cubic charge sum vanishes, and $\mathrm{SU}(2)\subset\mathbb{M}_-$ has no cubic Casimir, so its triangle coefficient vanishes for every representation. A gauge anomaly is therefore a failure mode the framework does not have — for the structural reason that the framework is not chiral where it gauges. The Standard Model's chiral spectrum, on which cancellation is nontrivial, is an input the framework hosts and constrains but does not select.
 
@@ -274,12 +274,13 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi+\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ) |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
-| $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$ | Triangle anomaly coefficient |
+| $A_{abc}=\mathrm{Tr}[T_a\{T_b,T_c\}]$ | Triangle anomaly coefficient |
 | $\sum_L-\sum_R$ | Left-handed minus right-handed anomaly sum |
-| $T^a=\tfrac12\sigma^a$ | $SU(2)$ generators; $T^a\{T^b,T^c\}=\tfrac14\delta^{bc}\sigma^a$ |
+| $T_a=\tfrac12\sigma_a$ | $SU(2)$ generators; $T_a\{T_b,T_c\}=\tfrac14\delta_{bc}\sigma_a$ |
 | $Y=Ϙ-T_3$ | Hypercharge convention |
 | $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-model gauge group (standard notation, not framework objects) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
+| $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 
 ## Further Reading
 
