@@ -20,7 +20,7 @@ The corpus is not the intended audience, and the source does not engage with it.
 
 ## The Source's Algebra, and Four Displays That Do Not Reproduce
 
-The source builds a gamma representation out of quaternions in its Section 2. With the quaternion units $q_0 = 1$, $q_k = -i\sigma^k$ it prints $\gamma_0$ as the off-diagonal unit block and $\gamma_k$ as the off-diagonal blocks built from $q_k$,
+The source builds a gamma representation out of quaternions in its Section 2. With the quaternion units $q_0 = 1$, $q_k = -i\sigma_k$ it prints $\gamma_0$ as the off-diagonal unit block and $\gamma_k$ as the off-diagonal blocks built from $q_k$,
 
 $$
 \gamma_0 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} ,
@@ -30,11 +30,11 @@ $$
 
 where the entries of the first display stand for $2\times2$ blocks, and asserts that the Clifford algebra $\{\gamma_\mu,\gamma_\nu\} = 2\eta_{\mu\nu}$ follows. Four displays in that section and the next do not reproduce under recomputation.
 
-**The gamma map is off by the factor $i$.** With $q_k = -i\sigma^k$ and the printed signs, squaring the printed $\gamma_k$ gives $+I_4$, that is $\{\gamma_i,\gamma_j\} = +2\delta_{ij}$, which is the *negative* of the convention the source itself displays one page later. Putting $+q_k$ in the lower block instead gives $-I_4$. The block map is therefore not a Clifford map for the $q_k$ the source defines; the consistent choice for that $q_k$ is the sign the source does not print.
+**The gamma map is off by the factor $i$.** With $q_k = -i\sigma_k$ and the printed signs, squaring the printed $\gamma_k$ gives $+I_4$, that is $\{\gamma_i,\gamma_j\} = +2\delta_{ij}$, which is the *negative* of the convention the source itself displays one page later. Putting $+q_k$ in the lower block instead gives $-I_4$. The block map is therefore not a Clifford map for the $q_k$ the source defines; the consistent choice for that $q_k$ is the sign the source does not print.
 
-**The trace normalisation contradicts the embedding.** The source's Appendix A.5 fixes the normalisation by $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\delta_{\mu\nu}$. With $q_k = -i\sigma^k$ the computed values are $+2$ for the time–time entry and $-2$ for the three spatial ones, so $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\eta_{\mu\nu}$, not $2\delta_{\mu\nu}$. The printed $2\delta_{\mu\nu}$ is the normalisation of $q_k = +\sigma^k$, not of the $q_k$ the same section defines. This is the seed of a second inconsistency, in the Fierz identity below.
+**The trace normalisation contradicts the embedding.** The source's Appendix A.5 fixes the normalisation by $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\delta_{\mu\nu}$. With $q_k = -i\sigma_k$ the computed values are $+2$ for the time–time entry and $-2$ for the three spatial ones, so $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\eta_{\mu\nu}$, not $2\delta_{\mu\nu}$. The printed $2\delta_{\mu\nu}$ is the normalisation of $q_k = +\sigma_k$, not of the $q_k$ the same section defines. This is the seed of a second inconsistency, in the Fierz identity below.
 
-**The completeness relation is over a four-element basis, not sixteen.** The source's Eq. (2) expands $\sum_A q^A\otimes q_A = 1\otimes 1 + \tfrac12\sum_\mu q_\mu\otimes q_\mu + \tfrac{1}{2!}\sum_{\mu<\nu} q_{\mu\nu}\otimes q_{\mu\nu} + \cdots$, with the comment that the coefficient $\tfrac12$ ensures $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\delta_{\mu\nu}$. The listed elements, however, are the four quaternion units and their products: for the units, $[q_0,q^i] = 0$ for all three spatial $i$, and $[q^i,q^j]$ is parallel to $q_k$. So $q_0i} = 0$ and the $q^{ij}$ add no new directions; the list spans **four** independent elements of $\mathbb H_{\mathbb C}$, not the sixteen of the Clifford basis $\{1,\gamma_5,\gamma_\mu,\gamma_5\gamma_\mu,\gamma_{\mu\nu}\}$ that its own Appendix B.1 uses. The ellipsis is doing the work of an unstated doubling.
+**The completeness relation is over a four-element basis, not sixteen.** The source's Eq. (2) expands $\sum_A q^A\otimes q_A = 1\otimes 1 + \tfrac12\sum_\mu q_\mu\otimes q_\mu + \tfrac{1}{2!}\sum_{\mu<\nu} q_{\mu\nu}\otimes q_{\mu\nu} + \cdots$, with the comment that the coefficient $\tfrac12$ ensures $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu) = 2\delta_{\mu\nu}$. The listed elements, however, are the four quaternion units and their products: for the units, $[q_0,q_i] = 0$ for all three spatial $i$, and $[q_i,q_j]$ is parallel to $q_k$. So $q_{0i}=q_i$ and the $q_{ij}$ add no new directions; the list spans **four** independent elements of $\mathbb H_{\mathbb C}$, not the sixteen of the Clifford basis $\{1,\gamma_5,\gamma_\mu,\gamma_5\gamma_\mu,\gamma_{\mu\nu}\}$ that its own Appendix B.1 uses. The ellipsis is doing the work of an unstated doubling.
 
 **The Fierz identity has the wrong coefficient and the wrong argument structure.** The source's Eq. (3),
 
@@ -217,7 +217,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | symbol | meaning |
 | --- | --- |
 | $\Psi$, $\bar\Psi$ | the source's bi-quaternionic spinor and its Dirac adjoint |
-| $q_\mu$ | the quaternion units, $q_0 = 1$, $q_k = -i\sigma^k$ |
+| $q_\mu$ | the quaternion units, $q_0 = 1$, $q_k = -i\sigma_k$ |
 | $\kappa = 8\pi G$ | the source's single coupling, used with both signs of power |
 | $\exp(a){}_\mu$ | the source's composite tetrad, Eq. (4) |
 | $T_\rho{}_{\mu\nu}$ | the source's composite torsion, Eq. (5) |

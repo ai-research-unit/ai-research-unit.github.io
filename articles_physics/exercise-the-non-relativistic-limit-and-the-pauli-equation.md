@@ -33,7 +33,7 @@ The Clifford metric $g$ is carried by the generators; it is the negative of the 
 $$
 i\hbar\,\partial/\partial t'\,\psi=H\psi,\qquad
 H=c\,\boldsymbol\alpha\cdot\vec\pi+\beta mc^2+ϙ\phi_0,
-\qquad \alpha^k=\gamma_0\gamma_k=\begin{pmatrix}0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
+\qquad \alpha_k=\gamma_0\gamma_k=\begin{pmatrix}0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
 $$
 
 Write $H=\beta mc^2+O+E$ with
@@ -98,7 +98,7 @@ $$
 H_1=\beta mc^2+ϙ\phi_0+\frac{\beta O^2}{2mc^2}+O_1+O(c^{-2}).
 $$
 
-*Step 5: evaluating $O^2$.* With $\alpha^i\alpha^j=\delta^{ij}+i\epsilon^{ijk}\Sigma_k$ and $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$,
+*Step 5: evaluating $O^2$.* With $\alpha_i\alpha_j=\delta_{ij}+i\sum_k\varepsilon_{ijk}\Sigma_k$ and $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$,
 
 $$
 O^2=c^2\big(\vec\pi^2+i\,\boldsymbol\Sigma\cdot(\vec\pi\times\vec\pi)\big).
@@ -349,7 +349,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
 | $\mathbb M_+,\mathbb M_-$ | Hermitian / anti-Hermitian subspaces |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$ | Isomorphism, Pauli matrices |
-| $\beta=\gamma_0$, $\alpha^k=\gamma_0\gamma_k$ | Dirac-basis matrices |
+| $\beta=\gamma_0$, $\alpha_k=\gamma_0\gamma_k$ | Dirac-basis matrices |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; $g=-\eta$ |
 | $\vec\pi=p-ϙ\vec A$ | Kinetic momentum |
 | $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |

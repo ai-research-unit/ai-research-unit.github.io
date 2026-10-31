@@ -69,7 +69,7 @@ Take the mostly-minus counterpart of the parent's block gamma matrices,
 
 $$
 \gamma_0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
-\gamma_k = \begin{pmatrix}0 & \sigma^k\\ -\sigma^k & 0\end{pmatrix},
+\gamma_k = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
 $$
 
 satisfying $\{\gamma_{\mu},\gamma_{\nu}\} = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,

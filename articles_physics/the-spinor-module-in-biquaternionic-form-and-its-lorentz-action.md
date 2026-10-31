@@ -413,7 +413,7 @@ a Hermitian triple satisfying
 $$
 \varsigma_i\varsigma_j=\eta_{ij}-i\sum_{k,l}\varepsilon_{ijk}\,\eta_{kl}\,\varsigma_l ,
 $$
-with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$. The metric sits in $\eta$, not in the height of the index, so the contraction is written out; both this identity and the Hermiticity of $\sigma_3\varsigma_i$ were verified here. The three homogeneous spaces are then modelled on spinors of the module:
+with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$. The signs of the contraction are carried by $\eta_{kl}$, so the sum is written out; both this identity and the Hermiticity of $\sigma_3\varsigma_i$ were verified here. The three homogeneous spaces are then modelled on spinors of the module:
 $$
 v_i=\langle z|\sigma_i|z\rangle\ \ (S^2),\qquad
 v_i=\tfrac12\,\langle z|\sigma_3\varsigma_i|z\rangle\ \ (H^\pm),\qquad

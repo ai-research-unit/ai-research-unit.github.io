@@ -21,7 +21,7 @@ For the matrix form of the Clifford algebra we use the **block (chiral) basis**
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad k=1,2,3,
+\gamma_k=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad k=1,2,3,
 $$
 
 with **signature** $g=\mathrm{diag}(+,-,-,-)$, so that $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=\mathrm{diag}(-I_2,I_2)$. This is the basis and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed in it below. We record that the signature and the basis must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
@@ -284,9 +284,9 @@ The Majorana spinor is treated in this article as the carrier of a fermion. It a
 
 The setting is the spinfoam boundary of three-dimensional Lorentzian quantum gravity. A boundary triangle is labelled by a holonomy whose group depends on causal character: $SU(2)$ when the triangle and its tetrahedron are space-like, and $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$, and the oscillator's dynamical group — in the two time-like cases. The external paper cited below models the three homogeneous spaces of these groups on spinors of the defining module with the indefinite pairing $[w|v]=w^{\dagger}\sigma_3v$:
 
-- the sphere $S^2$, from one Weyl spinor, $v^i=\langle z|\sigma^i|z\rangle$;
-- the two-sheeted time-like hyperboloid $H^\pm$, from one Weyl spinor with the indefinite pairing, $v^i=\tfrac12\langle z|\sigma_3\varsigma^i|z\rangle$;
-- the one-sheeted hyperboloid $H^{sl}$, from a **pair** of Majorana spinors, $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$, with a real structure that commutes with $SU(1,1)$ taking the place of the complex conjugation of the other two cases.
+- the sphere $S^2$, from one Weyl spinor, $v_i=\langle z|\sigma_i|z\rangle$;
+- the two-sheeted time-like hyperboloid $H^\pm$, from one Weyl spinor with the indefinite pairing, $v_i=\tfrac12\langle z|\sigma_3\varsigma_i|z\rangle$ with $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$;
+- the one-sheeted hyperboloid $H^{sl}$, from a **pair** of Majorana spinors, $v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle$, with a real structure that commutes with $SU(1,1)$ taking the place of the complex conjugation of the other two cases.
 
 Two points connect this to the present article. First, the operation that appears here is the *same kind* of object as the module real structure $\mathcal{C}$ of the preceding sections — a conjugate-linear involution used to select a real form of a complex module — although it acts on the indefinite form rather than on the Dirac module, and it is required to commute with $SU(1,1)$ rather than with the full Clifford action. Second, the reason the one-sheeted case needs a *pair* is stated in the paper as a sign statement: a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign that a time-like surface requires. That is the same style of argument as the one used above for the Majorana mass, where it is the reality of the mass term, not the geometry, that selects the conjugate-linear structure.
 
@@ -348,7 +348,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 | $[w|v]=w^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing (external geometric usage) |
-| $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$ | Majorana-pair bilinear modelling the one-sheeted hyperboloid $H^{sl}$ |
+| $v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle$ | Majorana-pair bilinear modelling the one-sheeted hyperboloid $H^{sl}$ |
 
 ## Further Reading
 

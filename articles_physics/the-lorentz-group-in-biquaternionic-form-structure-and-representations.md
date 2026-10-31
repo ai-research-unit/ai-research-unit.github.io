@@ -402,15 +402,19 @@ S^2=SU(2)/\mathrm{U}(1),\qquad H^\pm=SU(1,1)/\mathrm{U}(1),\qquad H^{sl}\ (\text
 $$
 the sphere in $\mathbb{R}^3$ with $\eta^{(3)}=\mathrm{diag}(-1,-1,-1)$, and the two hyperboloids of $\mathbb{R}^{1,2}$ with $\eta^{(1,2)}=\mathrm{diag}(1,-1,-1)$ — the **two-sheeted** time-like one, $t^2-x^2-y^2=1$, whose compact stabiliser $\mathrm{U}(1)$ is what the discrete series attaches to, and the **one-sheeted** space-like one, $t^2-x^2-y^2=-1$, whose non-compact stabiliser is what the continuous series attaches to. Each is modelled on spinors of the defining module, and the models are the ones the external paper cited below constructs. With the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$, invariant under $SU(1,1)$ and not under all of $SL(2,\mathbb{C})$, and the triple
 $$
-\varsigma=(\sigma_3,\,i\sigma_2,\,-i\sigma_1)=\sigma_3(1,\sigma_1,\sigma_2),
+\varsigma_1=\sigma_3,\qquad \varsigma_2=i\sigma_2,\qquad \varsigma_3=-i\sigma_1,\qquad \varsigma=\sigma_3(1,\sigma_1,\sigma_2),
 $$
-satisfying $\varsigma^i\varsigma^j=\eta^{(1,2)ij}-i\varepsilon^{ijk}\eta^{(1,2)}_{kl}\varsigma^l$ (verified here, as is the Hermiticity of $\sigma_3\varsigma^i$), the vector maps are
+which satisfies
 $$
-v^i=\langle z|\sigma^i|z\rangle\ \text{for }S^2,\qquad
-v^i=\tfrac12\,\langle z|\sigma_3\varsigma^i|z\rangle\ \text{for }H^\pm,\qquad
-v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle\ \text{for }H^{sl},
+\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_{k,l}\varepsilon_{ijk}\,\eta^{(1,2)}_{kl}\,\varsigma_l
 $$
-the first from one Weyl spinor with the definite pairing, the second from one Weyl spinor with the indefinite pairing, and the third from a **pair** of Majorana spinors with a real structure commuting with $SU(1,1)$ in place of the complex conjugation of the other two. The bilinears close, under a symplectic form on the spinor space, into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, with the paper's form $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$; the closure was recomputed here on generic elements.
+(verified here, as is the Hermiticity of $\sigma_3\varsigma_i$). The signs of the contraction are carried by $\eta^{(1,2)}_{kl}$, so the sum is written out; the vector maps are
+$$
+v_i=\langle z|\sigma_i|z\rangle\ \text{for }S^2,\qquad
+v_i=\tfrac12\,\langle z|\sigma_3\varsigma_i|z\rangle\ \text{for }H^\pm,\qquad
+v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle\ \text{for }H^{sl},
+$$
+the first from one Weyl spinor with the definite pairing, the second from one Weyl spinor with the indefinite pairing, and the third from a **pair** of Majorana spinors with a real structure commuting with $SU(1,1)$ in place of the complex conjugation of the other two. The bilinears close, under a symplectic form on the spinor space, into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, with the paper's form $\{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ijk}\eta_{kl}v_l$; the closure was recomputed here on generic elements.
 
 **Physical interpretation: the group a boundary triangle sees.** The distinction matters because the causal character of a triangle and of its tetrahedron selects the subgroup of the local Lorentz group in which the triangle's holonomy lies. A space-like triangle of a space-like tetrahedron gives the compact $SU(2)$ and a discrete spin label; the two time-like cases give $SU(1,1)$ and a label drawn from the discrete or the continuous series. A compact group has finite-dimensional $*$-unitary multiplets and a non-compact one does not, so it is exactly the non-compact case that carries an infinite-dimensional boundary label — which is why the time-like triangle is the difficult one in the spinfoam programme.
 
@@ -465,7 +469,7 @@ The group that carries the transformations is represented as follows. The group 
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
 | $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |
-| $\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$ | Triple of $SU(1,1)$ generators; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ |
+| $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$ | Triple of $SU(1,1)$ generators; $\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_{k,l}\varepsilon_{ijk}\eta^{(1,2)}_{kl}\varsigma_l$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 

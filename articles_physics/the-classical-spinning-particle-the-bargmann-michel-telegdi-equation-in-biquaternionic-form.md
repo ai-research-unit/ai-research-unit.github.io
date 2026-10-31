@@ -54,9 +54,9 @@ $$
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
 
 $$
-F^{tk}=\frac{E_k}{c},
+F_{tk}=\frac{E_k}{c},
 \qquad
-F^{jk}=\epsilon_{jkl}B_l
+F_{jk}=\epsilon_{jkl}B_l
 \qquad\text{(real components)},
 $$
 
@@ -181,10 +181,10 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v^k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F^{kt}=-E_k/c$ and $F^{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v_k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_k/c$ and $F_{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
 
 $$
-\frac{ds^k}{d\tau}
+\frac{ds_k}{d\tau}
 =\frac{ϙ}{m}\,\alpha\,\Big(F_{kt}S_0+F_{kj}S_j\Big)
 =\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_k ,
 $$
@@ -214,7 +214,7 @@ $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
 
-**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$, one has
+**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$, one has
 
 $$
 \mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
@@ -257,7 +257,7 @@ $$
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F^{tk}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF^{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F_{tk}S_k=(E_k/c)s_k$ and $F_{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
@@ -292,10 +292,10 @@ $$
 \frac{du_\mu}{d\tau}=\frac{ϙ}{m}\,\sum_\nu F_{\mu\nu}v_\nu .
 $$
 
-The map $\tilde{Q}\mapsto (ϙ/m)F_{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
+The map $\tilde{Q}\mapsto (ϙ/m)F_{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F_{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
-\frac{dX^k}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
+\frac{dX_k}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
 $$
 
 where $\vec X$ is the spatial part of the four-vector in question. Thus $S_{\rm vec}$ and $\gamma\vec v$ precess about $\vec B$ at the same proper-time rate, of magnitude $|ϙ||\vec B|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\vec v$ agree identically, so a spin initially parallel to the velocity remains parallel.
@@ -445,9 +445,9 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict'$: $F^{tk}=iE_k/c$) |
+| $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict'$: $F_{tk}=iE_k/c$) |
 | $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_1^0Q_2^0+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
 | $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma_2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |

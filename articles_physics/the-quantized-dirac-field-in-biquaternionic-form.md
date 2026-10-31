@@ -232,10 +232,10 @@ In biquaternion terms, $J_\mu$ is the spinor-module representative of an operato
 
 ### Spin
 
-The spin operator is the spatial integral of the bilinear with the spin matrix $\Sigma^k=\mathrm{diag}(\sigma^k,\sigma^k)$,
+The spin operator is the spatial integral of the bilinear with the spin matrix $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$,
 
 $$
-S^k=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\,\frac{\hbar}{2}\Sigma^k\,\psi^{\mathrm{fop}}\!: .
+S_k=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\,\frac{\hbar}{2}\Sigma_k\,\psi^{\mathrm{fop}}\!: .
 $$
 
 It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. In biquaternion terms the spin generator is the informational-sector element $S_k=\tfrac{\hbar}{2}i\vec e_k$; the bilinear realizes it on the module, and the sector interpretation is the one the electron companion records.
@@ -342,7 +342,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
 | $(-1)^F$ | Fermion parity; $(-1)^F\psi^{\mathrm{fop}}(-1)^F=-\psi^{\mathrm{fop}}$ |
-| $H,P^{\mathrm{fop}},Ϙ^{\mathrm{fop}},J_\mu,S^k$ | Operator-valued energy, momentum, charge, current, spin |
+| $H,P^{\mathrm{fop}},Ϙ^{\mathrm{fop}},J_\mu,S_k$ | Operator-valued energy, momentum, charge, current, spin |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\tilde P=iHe_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |

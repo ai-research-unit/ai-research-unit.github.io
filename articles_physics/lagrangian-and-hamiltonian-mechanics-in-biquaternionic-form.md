@@ -89,10 +89,10 @@ $$
 \frac{d}{dt'}\frac{\partial L}{\partial\left(dq_{i}/dt'\right)}-\frac{\partial L}{\partial q_i}=-\frac{\partial F}{\partial\left(dq_{i}/dt'\right)},
 $$
 
-with **Rayleigh's dissipation function** $F=\tfrac12b_{ij}dq^{i}/dt' dq^{j}/dt'$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/d{t'}^2+bdq/dt'+dV/dq(q)=0$. The energy $E=\sum_idq^{i}/dt'\partial L/\partial\left(dq^{i}/dt'\right)-L$ is no longer conserved; it decreases at the rate
+with **Rayleigh's dissipation function** $F=\tfrac12\sum_{ij}b_{ij}\,dq_i/dt'\,dq_j/dt'$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/d{t'}^2+bdq/dt'+dV/dq(q)=0$. The energy $E=\sum_i dq_i/dt'\,\partial L/\partial\left(dq_i/dt'\right)-L$ is no longer conserved; it decreases at the rate
 
 $$
-\frac{dE}{dt'}=-\sum_idq^{i}/dt'\frac{\partial F}{\partial\left(dq^{i}/dt'\right)}=-2F,
+\frac{dE}{dt'}=-\sum_i dq_i/dt'\,\frac{\partial F}{\partial\left(dq_i/dt'\right)}=-2F,
 $$
 
 the last equality because $F$ is homogeneous of degree two in the velocities. The dissipation function is therefore half the rate at which the energy falls, and it vanishes only at rest.

@@ -14,7 +14,7 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma_\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma_0$, and set $\alpha^k = \gamma_0\gamma_k$, $\beta = \gamma_0$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma_\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma_0$, and set $\alpha_k = \gamma_0\gamma_k$, $\beta = \gamma_0$. The result is
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
@@ -27,10 +27,10 @@ where $\vec p = -i\hbar\vec\nabla$, $A_0$ is the electrostatic potential, and we
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
 \qquad
-\alpha^k = \begin{pmatrix} 0 & \sigma^k \\ \sigma^k & 0\end{pmatrix},
+\alpha_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0\end{pmatrix},
 $$
 
-and they satisfy $\beta^2 = I_4$, $(\alpha^k)^2 = I_4$, $\{\alpha^j,\alpha^k\} = 2\delta^{jk}I_4$, $\{\alpha^k,\beta\} = 0$. The Hamiltonian splits into an **even** part and an **odd** part,
+and they satisfy $\beta^2 = I_4$, $(\alpha_k)^2 = I_4$, $\{\alpha_j,\alpha_k\} = 2\delta_{jk}I_4$, $\{\alpha_k,\beta\} = 0$. The Hamiltonian splits into an **even** part and an **odd** part,
 
 $$
 H = \beta mc^2 + \underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O} + \underbrace{ϙA_0}_{\textstyle\mathcal{E}},
@@ -108,15 +108,15 @@ Two features of the iteration are worth keeping in view. First, the transformati
 
 ### The Generator in the Biquaternion Basis
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. With the dictionary of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, $e_t\mapsto I_4$, $\vec e_k\mapsto -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma_0$, which is not in the even subalgebra. The kinetic operator is
+The identification of $O$ as the frame-odd part can be written directly in the algebra. With the dictionary of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, $e_t\mapsto I_4$, $\vec e_k\mapsto -i\sigma_k$ in the relevant $2\times2$ blocks, the even generators are $\alpha_k$, and the frame is $\beta = \gamma_0$, which is not in the even subalgebra. The kinetic operator is
 
 $$
-O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha^k\pi_k,
+O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha_k\pi_k,
 \qquad
-\beta O = c\,\beta\alpha^k\pi_k = c\,\gamma_k\pi_k ,
+\beta O = c\,\beta\alpha_k\pi_k = c\,\gamma_k\pi_k ,
 $$
 
-where $\gamma_k = \beta\alpha^k$ are the spacelike generators. The kinetic term is thus the spacelike part of the Clifford vector $\gamma_\mu\pi_\mu$ — the mass multiplying $\beta$ is its timelike part — and the FW transformation is the rotation that removes the spacelike (odd) part in favour of the timelike (even) one. In the algebra this is the cleanest statement of what the transformation does: it rotates the Clifford vector so that its timelike component is the whole of the leading Hamiltonian. The generator is proportional to the spacelike component itself, which is why it lies outside the even subalgebra and why the transformation must be carried out in the enlarged algebra.
+where $\gamma_k = \beta\alpha_k$ are the spacelike generators. The kinetic term is thus the spacelike part of the Clifford vector $\gamma_\mu\pi_\mu$ — the mass multiplying $\beta$ is its timelike part — and the FW transformation is the rotation that removes the spacelike (odd) part in favour of the timelike (even) one. In the algebra this is the cleanest statement of what the transformation does: it rotates the Clifford vector so that its timelike component is the whole of the leading Hamiltonian. The generator is proportional to the spacelike component itself, which is why it lies outside the even subalgebra and why the transformation must be carried out in the enlarged algebra.
 
 ## The Free Particle in Closed Form
 
@@ -251,7 +251,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\beta = \gamma_0$ | The frame; the generator with $(\gamma_0)^2 = +I_4$ |
-| $\boldsymbol\alpha$ | $\alpha^k = \gamma_0\gamma_k$, the Dirac velocity matrices |
+| $\boldsymbol\alpha$ | $\alpha_k = \gamma_0\gamma_k$, the Dirac velocity matrices |
 | $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator, $\gamma_5^2 = I_4$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |

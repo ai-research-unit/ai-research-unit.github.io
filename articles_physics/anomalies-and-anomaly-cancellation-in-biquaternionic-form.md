@@ -18,7 +18,7 @@ The article is organised as follows. A section states the anomaly as a quantum f
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
@@ -181,7 +181,7 @@ so the anomaly is invisible in the local equations of motion of the gauge field 
 $$
 \frac{d}{dt'}\int d^3x\,j_5^0
 = \frac{e^2}{16\pi^2}\int d^3x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= \frac{e^2}{8\pi^2}\oint dS_i\,K^i .
+= \frac{e^2}{8\pi^2}\sum_i\oint dS_i\,K_i .
 $$
 
 The axial charge of the vacuum therefore changes only through a boundary term — a large gauge configuration, an instanton. This is the standard topological interpretation of the anomaly, and the companion article on instantons supplies the framework's form of the topological charge: the density is proportional to $I_2=\vec E\cdot\vec B$, whose integral over a configuration is the instanton number. In the biquaternion language the anomaly transports axial charge into the winding of the material-sector gauge field; both are framework objects, and neither needs an object beyond the algebra.

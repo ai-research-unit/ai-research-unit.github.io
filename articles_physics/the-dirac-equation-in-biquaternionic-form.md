@@ -93,14 +93,14 @@ The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma
 
 The gamma matrices are a chosen frame in the cell algebra, not an element of $\mathbb{B}$ alone. The biquaternion algebra is $\mathrm{Cl}^+_{1,3}$; the gamma algebra is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The matrices below are $2\times2$ blocks of biquaternion units, hence elements of $M_2(\mathbb{B})\cong M_4(\mathbb{C})$: they exhibit one frame of that algebra, and a different frame is related by a change of basis.
 
-Write the biquaternion algebra as $M_2(\mathbb{C})$ by $e_t \mapsto I_2$, $\vec e_k \mapsto -i\sigma^k$, $i \mapsto iI_2$, so that $i\vec e_k \leftrightarrow \sigma^k$, and arrange the units in $2 \times 2$ blocks:
+Write the biquaternion algebra as $M_2(\mathbb{C})$ by $e_t \mapsto I_2$, $\vec e_k \mapsto -i\sigma_k$, $i \mapsto iI_2$, so that $i\vec e_k \leftrightarrow \sigma_k$, and arrange the units in $2 \times 2$ blocks:
 
 $$
 \gamma_0 = \begin{pmatrix} 0 & e_t \\ e_t & 0 \end{pmatrix}, \qquad
 \gamma_k = \begin{pmatrix} 0 & i \vec e_k \\ -i \vec e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
 $$
 
-that is, $\gamma_0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma_k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $\vec e_k^2 = -e_t$,
+that is, $\gamma_0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $\vec e_k^2 = -e_t$,
 
 $$
 (\gamma_0)^2 = e_t^2 = +I_4, \qquad (\gamma_k)^2 = (i\vec e_k)(-i\vec e_k) = -i^2 \vec e_k^2 = -I_4 .

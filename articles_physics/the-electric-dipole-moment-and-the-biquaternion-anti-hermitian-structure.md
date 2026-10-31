@@ -22,7 +22,7 @@ The article is organised as follows. A section defines the EDM operator and its 
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\quad
-\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\quad
+\gamma_k=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\quad
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
@@ -112,22 +112,22 @@ verified for $k=1,2,3$ with residual exactly zero. The EDM insertion is thus not
 **From the covariant operator to $-d\,\vec E\cdot\boldsymbol{\sigma}$.** The EDM coupling reduces to the nonrelativistic Hamiltonian by an identity that the block basis makes explicit. In the Dirac representation the spin operator is
 
 $$
-\Sigma^k = \mathrm{diag}(\sigma^k,\sigma^k),\qquad (\Sigma^k)^\dagger=\Sigma^k,\qquad
-\sigma_{0k}\gamma_5 = i\,\Sigma^k ,
+\Sigma_k = \mathrm{diag}(\sigma_k,\sigma_k),\qquad (\Sigma_k)^\dagger=\Sigma_k,\qquad
+\sigma_{0k}\gamma_5 = i\,\Sigma_k ,
 $$
 
-which was verified entry by entry: $\sigma_{01}\gamma_5 = i\,\mathrm{diag}(\sigma^1,\sigma^1)$, and similarly for the other two components. The identity shows both facts at once — that $\sigma_{0k}\gamma_5$ is $i$ times a Hermitian matrix (hence anti-Hermitian), and that the matrix it multiplies is the spin matrix.
+which was verified entry by entry: $\sigma_{01}\gamma_5 = i\,\mathrm{diag}(\sigma_1,\sigma_1)$, and similarly for the other two components. The identity shows both facts at once — that $\sigma_{0k}\gamma_5$ is $i$ times a Hermitian matrix (hence anti-Hermitian), and that the matrix it multiplies is the spin matrix.
 
 Substituting into the Lagrangian, with $F_{0k}=E_k$ and the sum over $k$,
 
 $$
 \mathcal{L}_{\mathrm{EDM}} = -\frac{i}{2}d\,\bar{\psi}\sigma_{\mu\nu}\gamma_5\psi F_{\mu\nu}
 \supset -\,i\,d\,E_k\,\bar{\psi}\sigma_{0k}\gamma_5\psi
-= -\,i\,d\,E_k\,\bar{\psi}\,(i\Sigma^k)\psi
-= d\,E_k\,\bar{\psi}\Sigma^k\psi .
+= -\,i\,d\,E_k\,\bar{\psi}\,(i\Sigma_k)\psi
+= d\,E_k\,\bar{\psi}\Sigma_k\psi .
 $$
 
-On the upper (positive-energy) components the bilinear $\bar{\psi}\Sigma^k\psi$ reduces to the spin density $\psi^\dagger\sigma^k\psi$, so
+On the upper (positive-energy) components the bilinear $\bar{\psi}\Sigma_k\psi$ reduces to the spin density $\psi^\dagger\sigma_k\psi$, so
 
 $$
 \mathcal{L}_{\mathrm{EDM}} \;\longrightarrow\; d\,\vec E\cdot(\psi^\dagger\boldsymbol{\sigma}\psi),
@@ -137,7 +137,7 @@ $$
 
 the stated nonrelativistic limit. The chain is a derivation of the limit from the covariant operator, and it exhibits the $i$ of the Lagrangian turning into the $i$ of $\sigma_{0k}\gamma_5$. The magnetic-moment coupling reduces in the same way with $\sigma_{ij}$ and the field $\vec B$, but with a Hermitian insertion and no compensating $i$.
 
-**The spin operator and the sector.** The spin operator $\Sigma^k$ is Hermitian and lies in the informational sector $\mathbb{M}_+$, and the EDM insertion is $i$ times it: the material-sector insertion is the central imaginary times the informational-sector spin. This is the algebraic statement of the CP-odd character of the EDM in the framework's language — the observable couples to the spin, and the coupling is made CP-odd by the central imaginary that moves the operator into the material sector.
+**The spin operator and the sector.** The spin operator $\Sigma_k$ is Hermitian and lies in the informational sector $\mathbb{M}_+$, and the EDM insertion is $i$ times it: the material-sector insertion is the central imaginary times the informational-sector spin. This is the algebraic statement of the CP-odd character of the EDM in the framework's language — the observable couples to the spin, and the coupling is made CP-odd by the central imaginary that moves the operator into the material sector.
 
 ## The Discrete Symmetries of the Insertions
 

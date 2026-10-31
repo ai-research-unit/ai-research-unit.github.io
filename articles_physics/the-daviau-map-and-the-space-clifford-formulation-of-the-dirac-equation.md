@@ -139,7 +139,7 @@ A = A_0 + A_1\sigma_2 + A_2\sigma_3 + A_3\sigma_1,
 \varphi^{*} = \sigma_2\bar\varphi\sigma_2 ,
 $$
 
-where $\partial/\partial x_0$ and $\partial/\partial x^k=\partial/\partial x^k$ are the four derivatives and $A_\mu$ the four potential components. The equation is to be read in the algebra: $\nabla$ acts on $\varphi$ from the left through the first factor, and the factor $i\sigma_1$ multiplies on the right. The mass term is the **star** of the spinor, and the coupling term is the left multiplication by $A$.
+where $\partial/\partial x_0$ and $\partial/\partial x_k$ are the four derivatives and $A_\mu$ the four potential components. The equation is to be read in the algebra: $\nabla$ acts on $\varphi$ from the left through the first factor, and the factor $i\sigma_1$ multiplies on the right. The mass term is the **star** of the spinor, and the coupling term is the left multiplication by $A$.
 
 **Proposition (the equation is a Dirac equation).** In the corpus's conventions the right factor is $i\sigma_1 = -\vec e_x$ and the star is the complex conjugation, so the Daviau equation reads
 

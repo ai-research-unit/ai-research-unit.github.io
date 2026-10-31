@@ -286,7 +286,7 @@ What the algebra does **not** supply is the commutator itself or the ordering th
 
 Both ambiguities that the flat time slicing conceals appear when the configuration space is curved, and they are the two external objects the ledger already names.
 
-**The operator-ordering problem.** If the kinetic term carries a position-dependent metric — for a particle on a curved manifold, $\tfrac12 m\,g_{ij}(x)dx^{i}/dt' dx^{j}/dt'$, or in a general coordinate system — then the Hamiltonian contains a product of the momentum and a function of the position, and the two do not commute. The Schrödinger equation's kinetic operator must be an ordering of $p_i$ and $g^{ij}(x)$, and different orderings are not equivalent: they differ by terms involving the curvature of the configuration space. The smallest of these is the double commutator
+**The operator-ordering problem.** If the kinetic term carries a position-dependent metric — for a particle on a curved manifold, $\tfrac12 m\sum_{i,j}g_{ij}(x)\,dx_i/dt'\,dx_j/dt'$, or in a general coordinate system — then the Hamiltonian contains a product of the momentum and a function of the position, and the two do not commute. The Schrödinger equation's kinetic operator must be an ordering of $p_i$ and $(g^{-1})_{ij}(x)$, and different orderings are not equivalent: they differ by terms involving the curvature of the configuration space. The smallest of these is the double commutator
 $$
 [p,[p,g]]=-\hbar^2\,\frac{d^2g}{dx^2} ,
 $$

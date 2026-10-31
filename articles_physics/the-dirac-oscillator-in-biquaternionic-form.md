@@ -14,7 +14,7 @@ introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. The substitution is
 
 It belongs in this subcategory as the **exactly solvable external-potential problem** of the biquaternionic Dirac theory. The hydrogen atom, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, is exactly solvable by a different mechanism (a Coulomb central field and a second-order radial reduction); the oscillator is exactly solvable because the first-order operator can be **squared in closed form**, and the square is again a central second-order operator plus a spin–orbit term. That is the same square as in *Klein–Gordon from the Dirac Square in Biquaternionic Form*, now with the position-dependent addition that makes the square a harmonic oscillator. The two features together make the model the natural place to see, concretely, how the biquaternionic first-order operator behaves under squaring.
 
-The article derives the substitution, the reduction to a pair of two-component equations, the exact operator identity on squaring, and the spectrum; it then reads the result in the algebra, works the one-dimensional case for which everything is transparent, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. The conventions are the series conventions: the Clifford generators satisfy $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, $\beta = \gamma_0$, $\alpha^k = \gamma_0\gamma_k$, and the biquaternion mass pair is
+The article derives the substitution, the reduction to a pair of two-component equations, the exact operator identity on squaring, and the spectrum; it then reads the result in the algebra, works the one-dimensional case for which everything is transparent, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. The conventions are the series conventions: the Clifford generators satisfy $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, $\beta = \gamma_0$, $\alpha_k = \gamma_0\gamma_k$, and the biquaternion mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -26,7 +26,7 @@ Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a v
 
 **It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r) = (\boldsymbol\alpha\beta)\cdot\vec r = -(\beta\boldsymbol\alpha)\cdot\vec r$ is frame-**odd**: it is a spacelike Clifford vector contracted with the position, in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$ and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the resulting square is again central.
 
-**It is imaginary, and it is Hermitian.** The coefficient is $i$, not a real coupling: a gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$, whereas the substitution multiplies the position by $im\omega$, so that the imaginary coefficient comes paired with the matrix $\boldsymbol\alpha\beta$, which is itself anti-Hermitian. The product is Hermitian all the same. Writing $\beta = \gamma_0$ and $\alpha^k = \gamma_0\gamma_k$ gives $\alpha^k\beta = -\gamma_k$, and $\gamma_k$ is anti-Hermitian, $(\gamma_k)^\dagger = -\gamma_k$, since $\gamma_0\gamma_k\gamma_0 = -\gamma_k$ with $\gamma_0$ Hermitian and anticommuting with $\gamma_k$; the added operator is therefore $-icm\omega(\boldsymbol\alpha\beta)\cdot\vec r = +icm\omega\,\boldsymbol\gamma\cdot\vec r$, and $i$ times an anti-Hermitian matrix is Hermitian. What the imaginary coefficient signals is not a complex deformation — the oscillator Hamiltonian is Hermitian and its spectrum real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
+**It is imaginary, and it is Hermitian.** The coefficient is $i$, not a real coupling: a gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$, whereas the substitution multiplies the position by $im\omega$, so that the imaginary coefficient comes paired with the matrix $\boldsymbol\alpha\beta$, which is itself anti-Hermitian. The product is Hermitian all the same. Writing $\beta = \gamma_0$ and $\alpha_k = \gamma_0\gamma_k$ gives $\alpha_k\beta = -\gamma_k$, and $\gamma_k$ is anti-Hermitian, $(\gamma_k)^\dagger = -\gamma_k$, since $\gamma_0\gamma_k\gamma_0 = -\gamma_k$ with $\gamma_0$ Hermitian and anticommuting with $\gamma_k$; the added operator is therefore $-icm\omega(\boldsymbol\alpha\beta)\cdot\vec r = +icm\omega\,\boldsymbol\gamma\cdot\vec r$, and $i$ times an anti-Hermitian matrix is Hermitian. What the imaginary coefficient signals is not a complex deformation — the oscillator Hamiltonian is Hermitian and its spectrum real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining; the spectrum is discrete; and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and it is the reason the spectrum consists of bound levels with the mass gap at their base.
 
@@ -45,7 +45,7 @@ Write the four-spinor as a pair of two-spinors, $\psi = (\phi,\chi)^{\mathsf T}$
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
 \qquad
-\alpha^k = \begin{pmatrix} 0 & \sigma^k \\ \sigma^k & 0 \end{pmatrix}.
+\alpha_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
 $$
 
 Since $\beta\vec r = \mathrm{diag}(\vec r,-\vec r)$, the substitution acts differently in the two blocks:
@@ -271,7 +271,7 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian (informational) sector |
-| $\beta = \gamma_0$, $\alpha^k = \gamma_0\gamma_k$ | Frame and Dirac velocity matrices |
+| $\beta = \gamma_0$, $\alpha_k = \gamma_0\gamma_k$ | Frame and Dirac velocity matrices |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $H = c\,\boldsymbol\alpha\cdot(\vec p-im\omega\beta\vec r) + \beta mc^2$ | Dirac-oscillator Hamiltonian |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution (frame-odd shift) |

@@ -48,7 +48,7 @@ A^{2}_{\ 2}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
 A^{3}_{\ 3}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$
 
-the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The commutation relations are
+the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The pair is mixed, $i$ fundamental and $k$ antifundamental: the height records the representation, not a frame slot. It is what carries the trace $A^{k}_{\ k}$, the matrix product $A^{i}_{\ k}A^{k}_{\ l}$ and the invariant mixed delta $\delta^{i}_{\ k}$, which is not a metric. The commutation relations are
 
 $$
 \bigl[A^{i}_{\ k},A^{l}_{\ m}\bigr] = \delta^{i}_{\ m}A^{l}_{\ k}-\delta^{l}_{\ k}A^{i}_{\ m}.

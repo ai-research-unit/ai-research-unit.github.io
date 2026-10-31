@@ -18,25 +18,25 @@ $$
 i\,\partial/\partial t'\,\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
 $$
 
-where $\beta = \gamma_0$ and $\boldsymbol{\alpha}^k = \gamma_0\gamma_k$; we restore $\hbar$ and $c$ when a physical statement is made. The matrices satisfy
+where $\beta = \gamma_0$ and $\boldsymbol{\alpha}_k = \gamma_0\gamma_k$; we restore $\hbar$ and $c$ when a physical statement is made. The matrices satisfy
 
 $$
-\{\alpha^j,\alpha^k\} = 2\delta^{jk}I, \qquad \{\alpha^k,\beta\} = 0, \qquad (\alpha^k)^2 = I,
+\{\alpha_j,\alpha_k\} = 2\delta_{jk}I, \qquad \{\alpha_k,\beta\} = 0, \qquad (\alpha_k)^2 = I,
 $$
 
 so the velocity operator $c\boldsymbol{\alpha}$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\vec p^2c^2 + m^2c^4}$.
 
-The oscillation follows from the Heisenberg equation. Because $\{\alpha^k,H\} = 2cp_k$ as an operator identity, the velocity in the Heisenberg picture has the exact form (natural units)
+The oscillation follows from the Heisenberg equation. Because $\{\alpha_k,H\} = 2cp_k$ as an operator identity, the velocity in the Heisenberg picture has the exact form (natural units)
 
 $$
-\alpha^k(t') \;=\; \frac{cp_k}{H} \;+\; \exp(iH t')\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'),
+\alpha_k(t') \;=\; \frac{cp_k}{H} \;+\; \exp(iH t')\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'),
 \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
 $$
 
 in which the first term is the constant drift velocity and the second is the *trembling* term. Its phase evolves as $\exp(\pm 2iEt')$ on the two energy branches, so the angular frequency is $2E/\hbar$, and integrating once gives the position
 
 $$
-\boxed{\;x^k(t') = x^k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\;}.
+\boxed{\;x_k(t') = x_k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\;}.
 $$
 
 At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt'/\hbar)$ and a negative-frequency component $\exp(+iEt'/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.
@@ -92,17 +92,17 @@ $$
 \gamma_k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0\end{pmatrix},
 $$
 
-satisfying $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. From these, $\beta = \gamma_0$ and $\alpha^k = \gamma_0\gamma_k = \mathrm{diag}(-\sigma_k,\sigma_k)$, and the relations $\{\alpha^j,\alpha^k\} = 2\delta_{jk}I$, $\{\alpha^k,\beta\} = 0$, and $H^2 = E^2I$ all follow and were recomputed.
+satisfying $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. From these, $\beta = \gamma_0$ and $\alpha_k = \gamma_0\gamma_k = \mathrm{diag}(-\sigma_k,\sigma_k)$, and the relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}I$, $\{\alpha_k,\beta\} = 0$, and $H^2 = E^2I$ all follow and were recomputed.
 
 The operator identity for the Heisenberg velocity is the exact statement
 
 $$
-\boxed{\;\alpha^k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar)\;},
+\boxed{\;\alpha_k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar)\;},
 $$
 
-in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is a matrix. Because $H$ anticommutes with $\alpha^k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt'/\hbar)$.
+in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is a matrix. Because $H$ anticommutes with $\alpha_k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt'/\hbar)$.
 
-The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t' = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $\exp(iHt'/\hbar)\alpha^k \exp(-iHt'/\hbar)$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
+The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t' = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $\exp(iHt'/\hbar)\alpha_k \exp(-iHt'/\hbar)$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
 
 The frequency is $2E/\hbar$ on general grounds and $2mc^2/\hbar$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\hbar = 6.582119569\times10^{-22}$ MeV s, are
 
@@ -149,7 +149,7 @@ $$
 P_+(\vec p) = \tfrac12\Big(I + \frac{c\,\boldsymbol{\alpha}\cdot\vec p + \beta mc^2}{E}\Big) = \tfrac12\Big(I + \frac{H}{E}\Big),
 $$
 
-and it contains $\beta = \gamma_0$. But $\gamma_0$ is an **odd** element of the Clifford algebra: it is a single generator, and $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. An odd element has no representative in $\mathbb{B}$ at all, and a fortiori none in either sector. This is not a convention; it is tested by the parity grading. With $\omega = \gamma_0\gamma_1\gamma_2\gamma_3$ the volume element, even elements commute with $\omega$ and odd elements anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha^k,\omega] = 0$ (so the $\alpha^k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\vec p)$ by $\beta$, which is outside $\mathbb{B}$, and the sector projectors $\tfrac12(I\pm{}^{*})$ by Hermitian conjugation, which is inside it.
+and it contains $\beta = \gamma_0$. But $\gamma_0$ is an **odd** element of the Clifford algebra: it is a single generator, and $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. An odd element has no representative in $\mathbb{B}$ at all, and a fortiori none in either sector. This is not a convention; it is tested by the parity grading. With $\omega = \gamma_0\gamma_1\gamma_2\gamma_3$ the volume element, even elements commute with $\omega$ and odd elements anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha_k,\omega] = 0$ (so the $\alpha_k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\vec p)$ by $\beta$, which is outside $\mathbb{B}$, and the sector projectors $\tfrac12(I\pm{}^{*})$ by Hermitian conjugation, which is inside it.
 
 **They are also splits of different objects.** The sector split is a decomposition of the *algebra element* $\tilde\Psi \in \mathbb{B}$ into $\tilde\Psi_+ + \tilde\Psi_-$. The energy-sign split is a decomposition of the *spinor module* — of the four-component Dirac spinor, with positive and negative energy each two-dimensional. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on a two-dimensional complex module; the four-component spinor is the direct sum of that module with its conjugate, and the energy projection mixes the two summands. Identifying a decomposition of the algebra with a decomposition of the module, without a stated dictionary, is a category error, and the parent article explicitly leaves the dictionary as a convention.
 
@@ -187,7 +187,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a co
 
 ## Summary
 
-The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t') = cp_k/H + \exp(iHt'/\hbar)(\alpha^k(0)-cp_k/H)\exp(-iHt'/\hbar)$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
+The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(t') = cp_k/H + \exp(iHt'/\hbar)(\alpha_k(0)-cp_k/H)\exp(-iHt'/\hbar)$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
 
 The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t'/\hbar) = \cos(mc^2t'/\hbar)e_t - \sin(mc^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
@@ -206,7 +206,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde P\tilde P^{\natural} = -m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi^{(r)}, \chi^{(r)}$ | Positive- and negative-frequency spinors |
-| $\beta = \gamma_0$, $\alpha^k = \gamma_0\gamma_k$ | Dirac matrices; $\beta$ odd, $\alpha^k$ even |
+| $\beta = \gamma_0$, $\alpha_k = \gamma_0\gamma_k$ | Dirac matrices; $\beta$ odd, $\alpha_k$ even |
 | $H = c\boldsymbol{\alpha}\cdot p + \beta mc^2$ | Dirac Hamiltonian, $H^2 = E^2I$ |
 | $\omega = \gamma_0\gamma_1\gamma_2\gamma_3$ | Volume element (parity grading) |
 | $\omega_Z = 2E/\hbar$ | Zitterbewegung angular frequency |
