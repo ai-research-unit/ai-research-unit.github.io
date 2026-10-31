@@ -32,7 +32,7 @@ $$
 
 the set of matrices whose only possibly nonzero entries lie in the \(j\)-th column.
 
-The name is exact: \(L_j\) is a left ideal, because \(A \cdot L_j \subseteq AE_{jj} = L_j\), and it is not a right ideal for \(n \geq 2\), because \(E_{ij}E_{jk} = E_{ik}\) carries the matrix unit \(E_{ij}\) of column \(j\) into column \(k \neq j\). The left ideals of \(M_n(k)\) over a field are exactly the sets of matrices whose columns lie in a fixed subspace, and the minimal ones are the columns, the set \(L_j = I_{V_j}\) with \(V_j = De_j\) in that article's notation; that classification is *Matrix Algebras*, §*Ideals and Simplicity*; the regular module is the direct sum \(\bigoplus_j L_j\) of the \(n\) columns, whose rank and length are *Direct Sums, Free Modules and Rank*.
+The name is exact: \(L_j\) is a left ideal, because \(A \cdot L_j \subseteq AE_{jj} = L_j\), and it is not a right ideal for \(n \geq 2\), because \(E_{ij}E_{jk} = E_{ik}\) carries the matrix unit \(E_{ij}\) of column \(j\) into column \(k \neq j\). The left ideals of \(M_n(k)\) over a field are exactly the sets of matrices whose rows lie in a fixed subspace, and the minimal ones are the columns, the set \(L_j = I_{V_j}\) with \(V_j\) the line of the \(j\)-th coordinate in that article's notation; that classification is *Matrix Algebras*, §*Ideals and Simplicity*; the regular module is the direct sum \(\bigoplus_j L_j\) of the \(n\) columns, whose rank and length are *Direct Sums, Free Modules and Rank*.
 
 ### The Corners of the Algebra
 

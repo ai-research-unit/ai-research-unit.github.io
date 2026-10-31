@@ -43,16 +43,16 @@ The units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity t
 
 ## The Matrix Algebras over a Field
 
-Over a field the matrix ring is simple, its left ideals are the sets of matrices whose columns lie in a subspace, and its regular module is a direct sum of copies of the unique simple module.
+Over a field the matrix ring is simple, its left ideals are the sets of matrices whose rows lie in a subspace, and its regular module is a direct sum of copies of the unique simple module.
 
 | Algebra | The property it has | Introduced in |
 |---|---|---|
 | $M_n(k)$, the matrix algebra over a field | simple: the only two-sided ideals are $0$ and $M_n(k)$ | *Matrix Algebras* |
-| A left ideal $I_V$ | the matrices whose columns lie in a subspace $V \subseteq k^n$; the left ideals are in bijection with the subspaces | *Matrix Algebras* |
+| A left ideal $I_V$ | the matrices whose rows lie in a subspace $V \subseteq k^n$; the left ideals are in bijection with the subspaces | *Matrix Algebras* |
 | The regular module | a direct sum of $n$ copies of the simple module $k^n$ | *Matrix Algebras* |
 | The simple module $k^n$ | the unique simple left $M_n(k)$-module up to isomorphism | *Matrix Algebras* |
 
-Over a field the two-sided ideal structure is trivial, so a proper nonzero two-sided ideal is the one thing a matrix algebra does not have; the left ideals are not trivial, and they are classified by the subspaces of the column space.
+Over a field the two-sided ideal structure is trivial, so a proper nonzero two-sided ideal is the one thing a matrix algebra does not have; the left ideals are not trivial, and they are classified by the subspaces of the row space.
 
 ## The Centre, the Units and the Ideals
 

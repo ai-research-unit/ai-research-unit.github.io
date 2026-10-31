@@ -18,6 +18,8 @@ This article develops the sandwich in the regular model. It is the $4\times4$ co
 
 ## The Congruence
 
+### The Map $\Theta_M(X)=MXM^{\dagger}$
+
 **Proposition.** For invertible $M$ and any $X$,
 $$
 \Theta_M(X)=MXM^{\dagger}
@@ -29,6 +31,8 @@ $$
 holds exactly when $M$ is $*$-unitary, because the two sides differ by the factor $M^{\dagger}M$.
 
 *Proof.* The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities.
+
+### The Two Halves and the Null Cone
 
 **The two halves are preserved.** If $X^{\dagger}=X$, then
 $$
@@ -99,6 +103,8 @@ because $\mathsf M_2(e_y)^{\mathsf T}=-\mathsf M_2(e_y)$; it sends $(1,0,0,1)^{\
 
 ## The Anti-Hermitian Half as Four-Vectors
 
+### The Minkowski Form on the Anti-Hermitian Half
+
 **The four-vector.** An anti-Hermitian element is written
 $$
 X=i a e_t+\vec b\cdot\vec e,
@@ -116,6 +122,8 @@ $$
 $$
 the square of the Minkowski form. The four-dimensional real subspace is the image of the anti-Hermitian elements; on it the congruence acts as a Lorentz transformation, while on the full complex sixteen-dimensional space it preserves the quartic determinant.
 
+### The Unit-Norm Slice and the Cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$
+
 **The unit-norm action.** Let $\lvert N(Q)\rvert=1$, so $\lvert\det M\rvert=1$. Then
 $$
 \det(MXM^{\dagger})=\det X,
@@ -132,6 +140,8 @@ $$
 $$
 The rotor acts by rotating $\vec b$ and fixing $a$; the boost acts by a hyperbolic transformation mixing $a$ and the component of $\vec b$ along its axis, and fixing the orthogonal component. The two actions are the rotation and the boost of the Lorentz group, and their product is a general proper orthochronous transformation.
 
+### The General Element and the Conformal Factor
+
 **The general element.** For $M=r\zeta\mathsf{M}_4^{L}(U)$ with $\lvert N(U)\rvert=1$,
 $$
 \Theta_M=r^2\,\Theta_U,
@@ -139,6 +149,8 @@ $$
 because the central scalars commute and $\zeta\bar\zeta=1$. The image is a conformal transformation: a Lorentz transformation composed with the dilation of ratio $r^2$ on the matrix, $r^4$ on the norm and $r^8$ on the $4\times4$ determinant. The image of the unit group is the conformal group $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$.
 
 ## The Hermitian Half as a Congruence
+
+### Sylvester's Law and the Signature
 
 **The congruence.** For Hermitian $X$ and invertible $M$, the matrix $MXM^{\dagger}$ is Hermitian. It is a congruence of $X$ by $M$, not a similarity: the two factors are $M$ and $M^{\dagger}$, not $M$ and $M^{-1}$.
 
@@ -150,6 +162,8 @@ $$
 $$
 because $\lvert\det M\rvert=\lvert N\rvert^2=r^4$. The determinant is not preserved; it is scaled by the eighth power of the modulus $r$. The sign of the determinant is preserved, so the two cones of positive and negative determinant are each preserved.
 
+### The Positivity Cone
+
 **The Minkowski reading.** On the real four-dimensional Hermitian subspace, write $X=a e_t+i\vec b\cdot\vec e$ with $a,b$ real; the norm is
 $$
 N(X)=a^2-\lvert\vec b\rvert^2,
@@ -160,6 +174,8 @@ of signature $(1,3)$. The congruence is a linear transformation of the real four
 
 ## The Two Halves Are One Action
 
+### Multiplication by $i$
+
 **Multiplication by $i$.** The central element $i$ commutes with every element, and multiplication by $i$ exchanges the Hermitian and anti-Hermitian halves:
 $$
 X\in\mathbb{M}_+\iff iX\in\mathbb{M}_-.
@@ -168,9 +184,13 @@ The sandwich commutes with this exchange, because $i$ is central. The two halves
 
 **The invariant form.** The determinant is the invariant of the congruence up to the conformal factor. On the real four-dimensional subspaces it is the square of the Minkowski form; on the full complex sixteen-dimensional space it is the quartic invariant. The two readings have the same conformal group and the same causal structure.
 
+### The Kernel and the Image
+
 **The kernel and the image.** The kernel of the action on the anti-Hermitian subspace is $\{\pm\mathrm I_4\}$, the same as in the $2\times2$ model. The image is the proper orthochronous Lorentz group for the unit-norm elements, and the conformal group for the general elements.
 
 ## Which Subspaces the Sandwich Preserves
+
+### The Criterion on the Element
 
 **The general rule.** Every sandwich preserves the two halves and the null cone. It preserves the other four remarkable subspaces exactly when the element is a central multiple of a real unit quaternion.
 
@@ -179,6 +199,8 @@ The sandwich commutes with this exchange, because $i$ is central. The two halves
 **The vector subspace.** A traceless matrix is sent to a matrix whose trace is $\operatorname{Tr}(MXM^{\dagger})$, which need not vanish. The vector subspace is preserved exactly when the sandwich is a similarity of the trace form, that is when $M$ is a central multiple of a real unit quaternion.
 
 **The quaternion and anti-quaternion subspaces.** The condition $X=\epsilon\bar X\epsilon^{-1}$ is not preserved by a general congruence; it is preserved when $M$ commutes with the conjugate-linear structure, which is the same condition.
+
+### The Four Subspaces and the Two Sectors
 
 **The table.** The four non-sector subspaces are preserved by the sandwich of a central multiple of a real unit quaternion, and by no other element. The two sectors are preserved by every invertible element. The statement is the matrix form of the table of *The Polar Decomposition and Remarkable Subspaces*, §*Which Subspaces the Sandwich Preserves*.
 

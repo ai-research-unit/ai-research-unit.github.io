@@ -4,7 +4,7 @@
 
 The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Algebra and Element Conventions* and the products of *Product and Form Conventions*.
 
-The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the comparison map $\iota_{\mathrm{Cl}}$ is its real-linear link to the even subalgebra.
+The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the Clifford reading is its real-linear link to the even subalgebra.
 
 ## The Matrix Representations
 
@@ -296,23 +296,19 @@ Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; th
 
 **The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by the gamma matrices. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen $\gamma_0$. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The gamma algebra is recovered from these data; the data are not recovered from the gamma algebra.
 
-**The comparison map $\iota_{\mathrm{Cl}}$.** It is the $\mathbb{R}$-linear map
+**The Clifford reading.** The eight real units of $\mathbb{B}$ read as gamma products:
 $$
-\iota_{\mathrm{Cl}}(e_t)=I_4,\qquad
-\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3,\qquad
-\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1,\qquad
-\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2,\qquad
-\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3 .
+e_t\mapsto I_4,\qquad
+\vec e_x\mapsto\gamma_2\gamma_3,\qquad
+\vec e_y\mapsto\gamma_3\gamma_1,\qquad
+\vec e_z\mapsto\gamma_1\gamma_2,\qquad
+i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
-In the canonical frame it is read entirely in cells, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, so its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$,
-$$
-\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)\neq i\,\iota_{\mathrm{Cl}}(\tilde Q),
-$$
-and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the comparison carries $\iota_{\mathrm{Cl}}$.
+The reading is $\mathbb{R}$-linear, and in the canonical frame it is read entirely in cells, $e_\mu\mapsto T_{\mu t}$ and $i\mapsto T_{tz}$, so its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$: $i\tilde Q$ reads as $T_{tz}$ times the image of $\tilde Q$, not as $i$ times that image. That is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the reading carries no symbol of its own.
 
-**The basis, read in cells.** On the eight real units the comparison reads
+**The basis, read in cells.** On the eight real units the reading is
 
-| $\tilde Q$ | $\iota_{\mathrm{Cl}}(\tilde Q)$ | cell |
+| $\tilde Q$ | Clifford image | cell |
 |---|---|---|
 | $e_t$ | $I_4$ | $T_{tt}$ |
 | $\vec e_x$ | $\gamma_2\gamma_3$ | $T_{xt}$ |
@@ -323,16 +319,9 @@ and that is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\math
 | $i\vec e_y$ | $\gamma_0\gamma_2$ | $T_{yz}$ |
 | $i\vec e_z$ | $\gamma_0\gamma_3$ | $T_{zz}$ |
 
-The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the map sits on $i$ itself, $\iota_{\mathrm{Cl}}(i)=-\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
+The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the reading sits on $i$ itself, $i\mapsto-\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
 
-**The odd part.** The comparison lands in the even part. Multiplication by the fixed generator $\gamma_0$ reaches the odd part, and the two real sectors separate:
-
-$$
-\gamma_0\,\iota_{\mathrm{Cl}}(\mathbb{M}_+)=\text{vectors},\qquad
-\gamma_0\,\iota_{\mathrm{Cl}}(\mathbb{M}_-)=\text{trivectors}.
-$$
-
-So a four-vector is $\gamma_0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, and a trivector is $\gamma_0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_-$. The frame $\gamma_0$ is the one choice in the odd half of the comparison, and it is fixed by the representation.
+**The odd part.** The reading lands in the even part. Multiplication by the fixed generator $\gamma_0$ reaches the odd part, and the two real sectors separate: $\gamma_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\gamma_0$ times the image of $\mathbb{M}_-$ the trivector space. So a four-vector is $\gamma_0$ times the image of $w\in\mathbb{M}_+$, and a trivector is $\gamma_0$ times the image of $w\in\mathbb{M}_-$. The frame $\gamma_0$ is the one choice in the odd half of the reading, and it is fixed by the representation.
 
 **Lorentz generators.** For $\mu\neq\nu$ the commutator is $\gamma_\mu\gamma_\nu-\gamma_\nu\gamma_\mu=2\gamma_\mu\gamma_\nu$, so
 
@@ -353,18 +342,12 @@ is half a bivector. Read in cells and in biquaternions,
 
 The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma_\mu\gamma_\nu$ is the bivector and the Lorentz generator is half of it.
 
-**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the comparison,
+**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading: reversing the image of $\tilde Q$ gives the image of $\tilde Q^{\natural}$, checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal: the image of $\tilde Q\tilde Q^{\natural}$ is the product of the image of $\tilde Q$ with its reversal.
+
+Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}_2$, and it equals twice the scalar part. The $4\times4$ trace of the image is twice the real part of that trace,
 
 $$
-\iota_{\mathrm{Cl}}(\tilde Q^{\natural})=\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde Q)\bigr),
-$$
-
-checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal, $\iota_{\mathrm{Cl}}(\tilde Q)\,\mathrm{rev}(\iota_{\mathrm{Cl}}(\tilde Q))=\iota_{\mathrm{Cl}}(\tilde Q\tilde Q^{\natural})$.
-
-Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}_2$, and it equals twice the scalar part. The $4\times4$ trace of the comparison is
-
-$$
-\operatorname{Tr}_4\,\iota_{\mathrm{Cl}}(\tilde Q)=2\,\mathrm{Re}\operatorname{Tr}_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
+2\,\mathrm{Re}\operatorname{Tr}_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
 $$
 
 The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
@@ -388,7 +371,7 @@ The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I
 
 The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_\mu$ and the four right matrices $R_\nu$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$, written out entry by entry and tabulated against the gamma products. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
 
-The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of basis. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma_0\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ is the vector space and $\gamma_0\iota_{\mathrm{Cl}}(\mathbb{M}_-)$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
+The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of basis. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $e_\mu\mapsto T_{\mu t}$ and $i\mapsto T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\gamma_0$ times the image of $\mathbb{M}_-$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
 
 ## Summary of Notation
 
@@ -405,7 +388,6 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 | $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $\gamma_0,\dots,\gamma_3,\gamma_5$ | The five Dirac generators of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
 | $\sigma_{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 
 ## Further Reading

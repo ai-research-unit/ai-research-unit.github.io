@@ -326,27 +326,25 @@ What it does not settle is everything the frame and the connection already faile
 
 The coupling written above is the standard one: the flat equation with the rigid material frame replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.
 
-**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. Write $\iota_{\mathrm{Cl}}:\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ for the comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*: the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $\iota_{\mathrm{Cl}}(e_t)=I$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$, and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
 $$
-\gamma_a=\gamma_0\,\iota_{\mathrm{Cl}}(\hat e^a),
+\hat e^a\longmapsto\gamma_0\,\gamma_a,
 \qquad
 \hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)\in\mathbb{M}_+ .
 $$
-The composite $\gamma_0\iota_{\mathrm{Cl}}$, not $\iota_{\mathrm{Cl}}$ itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde E^\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma_a$, and a term-by-term substitution of $\tilde E^\mu$ for $e^\mu{}_a\gamma_a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
+Multiplication by $\gamma_0$, not the reading itself, carries $\mathbb{M}_+$ to the vector generators; on $\mathbb{M}_-$ it gives trivectors. A material frame $\tilde E^\mu\in\mathbb{M}_-$ therefore maps to a trivector, not to $\gamma_a$, and a term-by-term substitution of $\tilde E^\mu$ for $e^\mu{}_a\gamma_a$ is invalid. The quoted kinetic factor translates through the informational dual frame,
 $$
-\hat E^\mu=e^\mu{}_a\hat e^a,
+\hat E^\mu=e^\mu{}_a\hat e^a\ \longmapsto\ \gamma_0\,e^\mu{}_a\gamma_a,
 \qquad
-e^\mu{}_a\gamma_a=\gamma_0\iota_{\mathrm{Cl}}(\hat E^\mu),
-\qquad
-i e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi
-=i\gamma_0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial x^\mu\,\psi\big).
+i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi
+=i\gamma_0\,\bigl(\text{image of }\hat E^\mu\partial/\partial x^\mu\,\psi\bigr).
 $$
 The fixed $\gamma_0$ is the frame element, not part of the derivative; the derivative is the biquaternion-valued $\hat E^\mu\partial/\partial x^\mu$. The article's own operator $\tilde E^\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and $\partial_{t'}=i\partial_{Q_t}$ relate the two, so they are not term-by-term identical, and the substitution $\tilde E^\mu\leftrightarrow e^\mu{}_a\gamma_a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat E^\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.
 
 J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x^\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Varying the gauged action gives
 
 $$
-E_{\mathrm{grav}} = i\gamma_0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial x^\mu\,\psi\big) - m\psi
+E_{\mathrm{grav}} = i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi - m\psi
 - \tfrac{i}{2}e^{\mu}{}_{b}\,\omega_{\mu}{}^{b}{}_{a}\gamma_a\psi
 + \tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}\{\gamma_a,S^{cd}\}\psi ,
 $$
@@ -354,7 +352,7 @@ $$
 while substituting the same replacement into the flat equation of motion gives
 
 $$
-\tilde E_{\mathrm{grav}} = i\gamma_0\iota_{\mathrm{Cl}}\big(\hat E^\mu\partial/\partial x^\mu\,\psi\big) - m\psi
+\tilde E_{\mathrm{grav}} = i\,e^\mu{}_a\gamma_a\partial/\partial x^\mu\,\psi - m\psi
 + \tfrac{i}{2}e^\mu{}_a\,\omega_{\mu cd}\gamma_a S^{cd}\psi ,
 $$
 
@@ -541,8 +539,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial/\partial x^\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
 | $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$, $\langle \tilde E^\mu, \tilde E_\nu\rangle_{\natural} = \delta^\mu{}_\nu$ | Material dual frame (inverse tetrad) |
-| $\iota_{\mathrm{Cl}}$ | Comparison map: $\mathbb{R}$-algebra isomorphism $\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$ |
-| $\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; $\iota_{\mathrm{Cl}}(\hat e^a)$ is even, $\gamma_a=\gamma_0\iota_{\mathrm{Cl}}(\hat e^a)$ |
+| $\hat e^a=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | Informational basis; its image is even, $\hat e^a\mapsto\gamma_0\gamma_a$ |
 | $\hat E^\mu=e^\mu{}_a\hat e^a$ | Informational dual frame; the exact gamma transcription of the Dirac operator uses it |
 | $D_\mu\psi = \partial/\partial x^\mu\,\psi + \vec\Gamma_\mu\psi$ | Covariant derivative on the spinor module (one-sided, left action) |
 | $\tilde E^\mu D_\mu$ | Curved biquaternion Dirac operator |

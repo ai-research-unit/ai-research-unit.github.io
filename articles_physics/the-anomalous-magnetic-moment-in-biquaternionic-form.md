@@ -18,7 +18,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, fixes $\iota_{\mathrm{Cl}}(e_t)=I_4$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$, $\iota_{\mathrm{Cl}}(i)=-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
+the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, fixes $e_t\mapsto I_4$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, $i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
 S_F(p)=\frac{i(\gamma_{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}=-\frac{i(\gamma_{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
@@ -71,22 +71,22 @@ The biquaternion algebra enters the vertex through the dictionary, and it names 
 **The generators and the bivectors.** The dictionary identifies the even Clifford elements with the algebra:
 
 $$
-\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3 ,
+\vec e_x\mapsto\gamma_2\gamma_3 ,
 \quad
-\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1 ,
+\vec e_y\mapsto\gamma_3\gamma_1 ,
 \quad
-\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2 ,
+\vec e_z\mapsto\gamma_1\gamma_2 ,
 \qquad
-\iota_{\mathrm{Cl}}(i\vec e_x)=\gamma_0\gamma_1 ,
+i\vec e_x\mapsto\gamma_0\gamma_1 ,
 \quad
-\iota_{\mathrm{Cl}}(i\vec e_y)=\gamma_0\gamma_2 ,
+i\vec e_y\mapsto\gamma_0\gamma_2 ,
 \quad
-\iota_{\mathrm{Cl}}(i\vec e_z)=\gamma_0\gamma_3 ,
+i\vec e_z\mapsto\gamma_0\gamma_3 ,
 \qquad
-\iota_{\mathrm{Cl}}(i)=-\omega .
+i\mapsto-\omega .
 $$
 
-Every one of these was verified by explicit multiplication, with residual $0$: $\iota_{\mathrm{Cl}}(i)=-\omega$, the three spacelike bivectors equal to $\iota_{\mathrm{Cl}}(\vec e_\mu)$, the three timelike bivectors equal to $\iota_{\mathrm{Cl}}(i\vec e_\mu)$, and $\iota_{\mathrm{Cl}}(\vec e_x\vec e_y)=\iota_{\mathrm{Cl}}(\vec e_z)$. The six bivectors of the vertex therefore *are* the six directions of the algebra: the spacelike (rotation-type, magnetic) bivectors $\gamma_\mu\gamma_\rho$ correspond to the quaternion units $\vec e_\mu$, and the timelike (boost-type, electric) bivectors $\gamma_0\gamma_\mu$ correspond to $i\vec e_\mu$.
+Every one of these was verified by explicit multiplication, with residual $0$: $i\mapsto-\omega$, the three spacelike bivectors equal to the images of $\vec e_\mu$, the three timelike bivectors equal to the images of $i\vec e_\mu$, and $\vec e_x\vec e_y$ reading as $\vec e_z$. The six bivectors of the vertex therefore *are* the six directions of the algebra: the spacelike (rotation-type, magnetic) bivectors $\gamma_\mu\gamma_\rho$ correspond to the quaternion units $\vec e_\mu$, and the timelike (boost-type, electric) bivectors $\gamma_0\gamma_\mu$ correspond to $i\vec e_\mu$.
 
 **The sector interpretation.** The two groups lie in different sectors, and this is the framework's contribution to the bookkeeping:
 
@@ -113,7 +113,7 @@ $$
 \big(S_{0\mu}\big)^\dagger=-S_{0\mu}\in\mathbb{M}_- \quad(\text{boosts, electric}).
 $$
 
-The bivector part of a rotation-type generator is $\gamma_\mu\gamma_\rho=\iota_{\mathrm{Cl}}(\vec e_\nu)$, a material-sector direction, while the Hermitian generator itself, $\tfrac12\sigma_{\mu\rho}=\tfrac{i}{2}\gamma_\mu\gamma_\rho$, is the spin matrix that the anomaly multiplies, and that is the level at which the informational-sector label $i\vec e_\nu$ applies. The magnetic bivector is the spin matrix itself: $\sigma_{12}=\mathrm{diag}(\sigma^3,\sigma^3)=\Sigma^3$, verified entry by entry, which is the matrix statement that the anomalous coupling multiplies the spin matrix of the companion quantization article. Two sectors, one bivector algebra: the anomaly's structure is the informational one.
+The bivector part of a rotation-type generator is $\gamma_\mu\gamma_\rho$, the image of $\vec e_\nu$, a material-sector direction, while the Hermitian generator itself, $\tfrac12\sigma_{\mu\rho}=\tfrac{i}{2}\gamma_\mu\gamma_\rho$, is the spin matrix that the anomaly multiplies, and that is the level at which the informational-sector label $i\vec e_\nu$ applies. The magnetic bivector is the spin matrix itself: $\sigma_{12}=\mathrm{diag}(\sigma^3,\sigma^3)=\Sigma^3$, verified entry by entry, which is the matrix statement that the anomalous coupling multiplies the spin matrix of the companion quantization article. Two sectors, one bivector algebra: the anomaly's structure is the informational one.
 
 **The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on four contraction identities of the generators, all verified in the metric $g=\mathrm{diag}(+1,-1,-1,-1)$:
 
@@ -223,7 +223,7 @@ All numerics are exact matrix arithmetic in plain Python, in the representatives
 | Squares | $(\gamma_0)^2=I_4$, $(\gamma_\mu)^2=-I_4$: residual $0$ |
 | Traces | $\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu}$ and the four-generator trace: residual $0$ |
 | Contractions | $\gamma_\mu\gamma_\mu=4I_4$; $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$; $\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4$; the five-generator identity: residual $0$ |
-| Dictionary | $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma_\mu\gamma_\rho$, $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$, $\iota_{\mathrm{Cl}}(i)=-\omega$, $\iota_{\mathrm{Cl}}(\vec e_x\vec e_y)=\iota_{\mathrm{Cl}}(\vec e_z)$: residual $0$ |
+| Dictionary | $\vec e_\mu\mapsto\gamma_\mu\gamma_\rho$, $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$, $i\mapsto-\omega$; $\vec e_x\vec e_y$ and $\vec e_z$ have the same image: residual $0$ |
 | Bivector algebra | $[S_{\mu\nu},S_{\rho\sigma}]=i(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho})$ with $S_{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]$: residual $0$ |
 | Generator Hermiticity | $(S_{\mu\rho})^\dagger=S_{\mu\rho}$, $(S_{0k})^\dagger=-S_{0k}$, and $\sigma_{12}=2S_{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$ |
 | Sectors | $\vec e_\mu$ anti-Hermitian ($\mathbb{M}_-$), $i\vec e_\mu$ Hermitian ($\mathbb{M}_+$); rotation-type generators Hermitian at the $i\vec e_\mu$ level, boost-type anti-Hermitian at the $\vec e_\mu$ level |
@@ -257,7 +257,7 @@ The on-shell spinors were built as $w=(\gamma_{\mu} p_{\mu}+m)\omega$ for random
 
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the propagator conventions and the $i\epsilon$ of the internal fermion line.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators whose matrix the magnetic bivector reproduces.
-- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $\iota_{\mathrm{Cl}}(i)=-\omega$.
+- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $i\mapsto-\omega$.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the field operators whose electromagnetic three-point function is the vertex.
 
 ## Summary
@@ -272,7 +272,7 @@ $$
 g=2(1+F_2(0)) ,
 $$
 
-with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two generators, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}$; the Gordon decomposition exhibits the split on shell and was verified to $3.0\times10^{-15}$ on random on-shell spinors. Under the dictionary the six bivectors are the six algebra directions, $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma_\mu\gamma_\rho$ and $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$, so the magnetic structure is the informational-sector ($\mathbb{M}_+$) object $i\vec e_\mu$ at the level of the Hermitian generators — the same sector as the spin — with bivector part $\iota_{\mathrm{Cl}}(\vec e_\mu)$, and the convection structure is central.
+with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two generators, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}$; the Gordon decomposition exhibits the split on shell and was verified to $3.0\times10^{-15}$ on random on-shell spinors. Under the dictionary the six bivectors are the six algebra directions, $\vec e_\mu\mapsto\gamma_\mu\gamma_\rho$ and $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$, so the magnetic structure is the informational-sector ($\mathbb{M}_+$) object $i\vec e_\mu$ at the level of the Hermitian generators — the same sector as the spin — with bivector part the image of $\vec e_\mu$, and the convection structure is central.
 
 The one-loop representation of $F_2$ reduces at $k^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.1596521807\times10^{-3}$ at the $5\times10^{-11}$ level. The Clifford trace and contraction identities on which the reduction rests were verified with residual $0$.
 
@@ -293,7 +293,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict'$ metric (level 2) |
 | $\gamma_\mu\gamma_\mu=4$, $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$ | Contraction identities (residual $0$) |
 | $\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu}$ | Trace identity (residual $0$) |
-| $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma_\mu\gamma_\rho$, $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$, $\iota_{\mathrm{Cl}}(i)=-\omega$ | Dictionary (verified) |
+| $\vec e_\mu\mapsto\gamma_\mu\gamma_\rho$, $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$, $i\mapsto-\omega$ | Dictionary (verified) |
 | $\vec e_\mu\in\mathbb{M}_-$ (anti-Hermitian), $i\vec e_\mu\in\mathbb{M}_+$ (Hermitian) | Sectors; rotation-type generators at the $i\vec e_\mu$ level ($\mathbb{M}_+$), boost-type at the $\vec e_\mu$ level ($\mathbb{M}_-$) |
 | $F_2(0)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(\Sigma-1)\frac{2m^2z(1-z)}{m^2(1-z)^2+xyk^2}$ | One-loop parameter representation |
 | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ | Leading (Schwinger) anomaly |

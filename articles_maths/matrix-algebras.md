@@ -108,14 +108,14 @@ since $E_{pi}A E_{jq}$ has $(p,q)$-entry $A_{ij}$ and all other entries zero. As
 **Theorem (left ideals).** Let $k$ be a field. The left ideals of $M_n(k)$ are exactly the sets
 
 $$
-I_V = \{ A \in M_n(k) : \operatorname{col}(A) \subseteq V \},
+I_V = \{ A \in M_n(k) : \operatorname{row}(A) \subseteq V \},
 $$
 
-where $V \subseteq k^n$ is a subspace and $\operatorname{col}(A)$ is the span of the columns of $A$.
+where $V \subseteq k^n$ is a subspace and $\operatorname{row}(A)$ is the span of the rows of $A$.
 
-*Proof.* Each $I_V$ is a left ideal, because left multiplication replaces the columns by linear combinations of them. Conversely, if $I$ is a left ideal, let $V$ be the span of the columns of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose columns span $V$. Every vector of $V$ is $Ay$ for some $y$, so every matrix $B$ with columns in $V$ has the form $B = AC$ for a suitable $C$; since $I$ is a left ideal, $AC \in I$ and hence $B \in I$.
+*Proof.* Each $I_V$ is a left ideal: row $i$ of $AB$ is $\sum_jA_{ij}\,(\text{row }j\text{ of }B)$, a linear combination of the rows of $B$, hence in $V$ when $B \in I_V$. Conversely, if $I$ is a left ideal, let $V$ be the span of the rows of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose rows span $V$. Every vector of $V$ is $yA$ for a row vector $y$, so every matrix $B$ with rows in $V$ has the form $B = CA$ for a suitable $C$; since $I$ is a left ideal, $CA \in I$ and hence $B \in I$.
 
-The left ideals are therefore in bijection with the subspaces of $k^n$, the two trivial ideals corresponding to $V = 0$ and $V = k^n$ and the others to the proper subspaces; over $\mathbb{R}$ and $n = 2$ the minimal ones form the projective line. The minimal left ideals are the $I_V$ with $\dim V = 1$, each isomorphic to $k^n$ as a left module. The right ideals are described by the rows in the same way, and the two-sided ideals are the two trivial ones, in agreement with simplicity.
+The left ideals are therefore in bijection with the subspaces of $k^n$, the two trivial ideals corresponding to $V = 0$ and $V = k^n$ and the others to the proper subspaces; over $\mathbb{R}$ and $n = 2$ the minimal ones form the projective line. The minimal left ideals are the $I_V$ with $\dim V = 1$, each isomorphic to $k^n$ as a left module. The right ideals are described by the columns in the same way, and the two-sided ideals are the two trivial ones, in agreement with simplicity.
 
 **Corollary (the centre).** For a commutative ring $R$, $Z(M_n(R)) = R I_n$, and $M_n(R)$ is a central $R$-algebra.
 
@@ -254,7 +254,7 @@ The matrix algebra $M_n(R)$ over a commutative ring $R$ has $R$-basis the matrix
 | $\operatorname{adj}(A)$ | Adjugate, $A\operatorname{adj}(A) = (\det A)I_n$ |
 | $\mathrm{GL}_n(k)$ | Units of $M_n(k)$, $= \{A : \det A \neq 0\}$ |
 | $\operatorname{End}_R(R^n)$ | Endomorphism algebra, $\cong M_n(R)$ |
-| $I_V$ | Left ideal of matrices with columns in $V$ |
+| $I_V$ | Left ideal of matrices with rows in $V$ |
 | $M_n(D)$ | Matrix algebra over a division ring $D$ |
 | $\langle A,B\rangle = \operatorname{Tr}(AB)$ | Trace form |
 | $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$ | Automorphisms, all of them inner; $\operatorname{Out}_k(M_n(k)) = 1$ |

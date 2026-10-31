@@ -139,16 +139,16 @@ that is, a family of four elements of the algebra, one for each spacetime index.
 The standard equation is transcribed component by component, using the correspondence between the Clifford generators and the algebra's units. The correspondence is the frame identity of *Matrix Representations Conventions*, in which the four generators are written in terms of the fixed odd frame $\gamma_0$ and four representatives carrying the directions,
 
 $$
-\gamma_\mu = \gamma_0\,\iota_{\mathrm{Cl}}(\hat e^\mu), \qquad \hat e^0 = e_t, \qquad \hat e^k = i \vec e_k ,
+\hat e^\mu \longmapsto \gamma_0\,\gamma_\mu, \qquad \hat e^0 = e_t, \qquad \hat e^k = i \vec e_k ,
 $$
 
-with $\iota_{\mathrm{Cl}}$ the comparison map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the multiplicativity of the comparison map, $\iota_{\mathrm{Cl}}(\tilde{Q}_1\tilde{Q}_2) = \iota_{\mathrm{Cl}}(\tilde{Q}_1)\iota_{\mathrm{Cl}}(\tilde{Q}_2)$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma_0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
+with the comparison map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the multiplicativity of the reading, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma_0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
 
 $$
-\gamma_\mu\gamma_\nu = s_\mu\,\iota_{\mathrm{Cl}}(\hat e^\mu\hat e^\nu), \qquad s_0 = +1, \quad s_k = -1 ,
+\hat e^\mu\hat e^\nu \longmapsto s_\mu\,\gamma_\mu\gamma_\nu, \qquad s_0 = +1, \quad s_k = -1 ,
 $$
 
-a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma_{0k} = \iota_{\mathrm{Cl}}(i\vec e_k)$ for the timelike pairs and $\gamma_{jk} = \iota_{\mathrm{Cl}}(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma_{\mu\nu\rho} = \gamma_0\,\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Matrix Representations Conventions* records. Chirality is the one place where the correspondence needs a word. The comparison map assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\iota_{\mathrm{Cl}}(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
+a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma_{0k}$, the image of $i\vec e_k$, for the timelike pairs and $\gamma_{jk}$, the image of $\pm \vec e_\lambda$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma_0$ times the image of $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Matrix Representations Conventions* records. Chirality is the one place where the correspondence needs a word. The comparison map sends the biquaternion imaginary to minus the pseudoscalar, $i\mapsto-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
 
 $$
 \gamma_5 = i_{\mathrm{Cl}}\,\omega = -\Phi_{\mathbb{C}}\!\left(i_{\mathrm{Cl}}\,i\right),
@@ -174,16 +174,16 @@ where $\hat e^0=e_t$, $\hat e^k=i\vec e_k$ are the four elements of the informat
 
 The equivalence with the antisymmetrized equation is the standard free-field reduction. If each component satisfies the chiral pair, and if the trace and divergence constraints hold, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the pair and the trace, and the divergence. The gamma form of the pair is the module transcription of the first line, and the trace is the module transcription of the second; the biquaternion form is the pair and the constraints.
 
-**The trace is frame-free.** The gamma trace and the algebra trace are the same condition. With $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$,
+**The trace is frame-free.** The gamma trace and the algebra trace are the same condition. With $\hat e^\mu\mapsto\gamma_0\gamma_\mu$, the sum $\sum_\mu\gamma_\mu\Psi_\mu$ is $\gamma_0$ times the image of $\sum_\mu\hat e^\mu\Psi_\mu$:
 $$
 \sum_\mu\gamma_\mu\Psi_\mu
-=\gamma_0\iota_{\mathrm{Cl}}\Big(\sum_\mu\hat e^\mu\Psi_\mu\Big).
+=\gamma_0\,\Bigl(\text{image of }\sum_\mu\hat e^\mu\Psi_\mu\Bigr).
 $$
-The frame $\gamma_0$ is an invertible cell and $\iota_{\mathrm{Cl}}$ is injective, so the left-hand side vanishes exactly when the algebra element $\sum_\mu\hat e^\mu\Psi_\mu$ does. The gamma form needs the fixed odd frame; the algebra form does not.
+The frame $\gamma_0$ is an invertible cell and the reading is injective, so the left-hand side vanishes exactly when the algebra element $\sum_\mu\hat e^\mu\Psi_\mu$ does. The gamma form needs the fixed odd frame; the algebra form does not.
 
-**The mass term is frame-free.** With the comparison-map values $\gamma_{0k}=\iota_{\mathrm{Cl}}(i\vec e_k)$ and $\gamma_{jk}=\iota_{\mathrm{Cl}}(\pm\vec e_l)$, the mass term of the $\mu$-th equation is left multiplication by an element of $\mathbb{B}$,
+**The mass term is frame-free.** With $\gamma_{0k}$ the image of $i\vec e_k$ and $\gamma_{jk}$ the image of $\pm\vec e_l$, the mass term of the $\mu$-th equation is left multiplication by an element of $\mathbb{B}$,
 $$
-m\,\gamma_{\mu\nu}\tilde\Psi_\nu=m\,\iota_{\mathrm{Cl}}\big(\Gamma^{\mu\nu}\big)\tilde\Psi_\nu,
+\Gamma^{\mu\nu}\longmapsto\gamma_{\mu\nu},
 \qquad
 \Gamma^{0k}=i\vec e_k,\quad \Gamma^{k0}=-i\vec e_k,\quad
 \Gamma^{jk}=\pm\vec e_l ,
@@ -287,7 +287,7 @@ $$
 - m\,\gamma_{\mu\nu}\tilde{\Psi}_\nu
 $$
 
-is the antisymmetrized pair of Clifford generators acting on the field; its biquaternion image is left multiplication by the algebra element $\iota_{\mathrm{Cl}}(\Gamma^{\mu\nu})$ given above, contracted with the corresponding component of the field. In the trace form of the equation it is simply the Dirac mass on each component. The mass term plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the gauge freedom is absent, and it fixes the dispersion relation on the physical shell through the Dirac operator. In the rest frame the massive reduction above is the whole story: time component zero, spatial components upper, $\boldsymbol{\sigma}\cdot\vec\chi=0$, four states.
+is the antisymmetrized pair of Clifford generators acting on the field; its biquaternion image is left multiplication by the algebra element $\Gamma^{\mu\nu}$ given above, contracted with the corresponding component of the field. In the trace form of the equation it is simply the Dirac mass on each component. The mass term plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the gauge freedom is absent, and it fixes the dispersion relation on the physical shell through the Dirac operator. In the rest frame the massive reduction above is the whole story: time component zero, spatial components upper, $\boldsymbol{\sigma}\cdot\vec\chi=0$, four states.
 
 The massive case is also where the known difficulty lives. The constraint analysis that produces $\gamma_\mu\psi_\mu=0$ and $\partial^\mu\psi_\mu=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
 
@@ -343,7 +343,7 @@ The conventions are those of three companion articles:
 
 The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\gamma_{\mu\nu}\psi_\nu$, equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$. The two writings are related by the duality identity $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to\gamma_5\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $\gamma_\mu\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
 
-In the biquaternion framework the carrier is a family of biquaternion-valued components $\tilde{\Psi}_\mu\in\mathbb{B}$, one for each spacetime index, and the free system is the chiral pair on each component together with the algebraic constraints $\sum_\mu\hat e^\mu\tilde{\Psi}_\mu=0$ and $\sum_\mu\partial^\mu\tilde{\Psi}_\mu=0$. Every term is an element of $\mathbb{B}$ or a derivative of one. Chirality is the product of the two square roots of $-1$ of the comparison, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, and the Clifford generators are a frame in the cell algebra, $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$ with $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$; the compact antisymmetrized equation is the cell transcription of the pair.
+In the biquaternion framework the carrier is a family of biquaternion-valued components $\tilde{\Psi}_\mu\in\mathbb{B}$, one for each spacetime index, and the free system is the chiral pair on each component together with the algebraic constraints $\sum_\mu\hat e^\mu\tilde{\Psi}_\mu=0$ and $\sum_\mu\partial^\mu\tilde{\Psi}_\mu=0$. Every term is an element of $\mathbb{B}$ or a derivative of one. Chirality is the product of the two square roots of $-1$ of the comparison, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, and the Clifford generators are a frame in the cell algebra, read as $\hat e^\mu\mapsto\gamma_0\gamma_\mu$ with $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$; the compact antisymmetrized equation is the cell transcription of the pair.
 
 In the rest frame the system forces the time component to vanish and the spatial amplitudes to satisfy $\boldsymbol{\sigma}\cdot\vec\chi=0$. The surviving space is four-dimensional and carries the spin-$\tfrac32$ quartet; the projector onto it is $P_{ij}=\delta_{ij}-\tfrac13\sigma_i\sigma_j$, idempotent and of vector-index rank two. The representation content $2\times\tfrac32\oplus4\times\tfrac12$ loses its four spin-$\tfrac12$ multiplets to the constraint and the gauge freedom, and the massless field retains the two helicities $\pm\tfrac32$.
 
@@ -357,7 +357,7 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\iota_{\mathrm{Cl}}$, $\gamma_\mu=\gamma_0\iota_{\mathrm{Cl}}(\hat e^\mu)$ | Dictionary map onto the even Clifford algebra; $\hat e^0=e_t$, $\hat e^k=i\vec e_k$; the gammas are cells, not elements of $\mathbb{B}$ |
+| Dictionary | Map onto the even Clifford algebra; $\hat e^\mu\mapsto\gamma_0\gamma_\mu$, $\hat e^0=e_t$, $\hat e^k=i\vec e_k$; the gammas are cells, not elements of $\mathbb{B}$ |
 | $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ | Cell algebra of the regular module; the Clifford map lands here, not in $\mathbb{B}$ |
 | $\hat e^0=e_t$, $\hat e^k=i\vec e_k$ | Informational basis; frame-free trace and mass terms |
 | $i_{\mathrm{Cl}}$, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$ | External imaginary of the complexified Clifford algebra and the chirality operator |

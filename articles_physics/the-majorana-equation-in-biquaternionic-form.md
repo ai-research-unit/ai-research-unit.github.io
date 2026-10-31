@@ -20,7 +20,7 @@ The article is organised as follows. The next section states the equation and it
 
 $$
 \gamma_{0}=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma_{k}=\begin{pmatrix}0&\sigma^{k}\\ -\sigma^{k}&0\end{pmatrix},\qquad k=1,2,3,
+\gamma_{k}=\begin{pmatrix}0&\sigma_{k}\\ -\sigma_{k}&0\end{pmatrix},\qquad k=1,2,3,
 $$
 
 with $g=\mathrm{diag}(+,-,-,-)$ so that $\{\gamma_{\mu},\gamma_{\nu}\}=2g_{\mu\nu}I_4$, and $\gamma_5=i\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}=\mathrm{diag}(-I_2,I_2)$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=C\gamma_{0}^{T}\psi^{*}$. The d'Alembertian is the series convention
@@ -29,7 +29,7 @@ $$
 \Box=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2,
 $$
 
-so that the relativistic second-order equation reads $(\Box-m^{2})\psi=0$ in natural units, and the mass is measured in inverse-length units where a distinction is needed. The symbols $\sigma^{\mu}=(I_2,\boldsymbol{\sigma})$ and $\bar\sigma^{\mu}=(I_2,-\boldsymbol{\sigma})$ are the two-component Weyl vectors, and $\epsilon=i\sigma_2$ is the real antisymmetric $2\times2$ matrix, $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$, the symplectic form of the spinor module.
+so that the relativistic second-order equation reads $(\Box-m^{2})\psi=0$ in natural units, and the mass is measured in inverse-length units where a distinction is needed. The symbols $\sigma_{\mu}=(I_2,-\boldsymbol{\sigma})$ and $\bar\sigma_{\mu}=(I_2,+\boldsymbol{\sigma})$ are the two-component Weyl vectors, lowered with $g=\mathrm{diag}(+,-,-,-)$, and $\epsilon=i\sigma_2$ is the real antisymmetric $2\times2$ matrix, $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$, the symplectic form of the spinor module.
 
 ## The Equation and Its Three Forms
 
@@ -95,34 +95,34 @@ using $K(i\gamma_{\mu})^{*}K^{-1}=i\gamma_{\mu}$, which is the second relation. 
 
 A spinor is **real** when it equals its own conjugate, and the reason the equation can be written in a form in which that reality is visible is the reality type of the Clifford algebra.
 
-**The real representation exists in the opposite signature.** The two real Clifford algebras of four dimensions are not isomorphic over $\mathbb{R}$: the corpus's mostly-minus algebra is the quaternionic matrix algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, and the mostly-plus algebra is the real matrix algebra $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$. In the mostly-plus signature the generators can be taken **purely real**, and the following set does it, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$:
+**The real representation exists in the opposite signature.** The two real Clifford algebras of four dimensions are not isomorphic over $\mathbb{R}$: the corpus's mostly-minus algebra is the quaternionic matrix algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, and the mostly-plus algebra is the real matrix algebra $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$. In the mostly-plus signature the generators can be taken **purely real**, and the following set does it, with $\mathring\eta=\mathrm{diag}(-1,+1,+1,+1)$:
 
 $$
-r^{0}=\begin{pmatrix}0&1&0&0\\ -1&0&0&0\\ 0&0&0&1\\ 0&0&-1&0\end{pmatrix},\quad
-r^{1}=\begin{pmatrix}0&1&0&0\\ 1&0&0&0\\ 0&0&0&1\\ 0&0&1&0\end{pmatrix},
+r_{0}=\begin{pmatrix}0&1&0&0\\ -1&0&0&0\\ 0&0&0&1\\ 0&0&-1&0\end{pmatrix},\quad
+r_{1}=\begin{pmatrix}0&1&0&0\\ 1&0&0&0\\ 0&0&0&1\\ 0&0&1&0\end{pmatrix},
 $$
 
 $$
-r^{2}=\begin{pmatrix}0&0&1&0\\ 0&0&0&-1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\quad
-r^{3}=\begin{pmatrix}1&0&0&0\\ 0&-1&0&0\\ 0&0&-1&0\\ 0&0&0&1\end{pmatrix}.
+r_{2}=\begin{pmatrix}0&0&1&0\\ 0&0&0&-1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\quad
+r_{3}=\begin{pmatrix}1&0&0&0\\ 0&-1&0&0\\ 0&0&-1&0\\ 0&0&0&1\end{pmatrix}.
 $$
 
-Each matrix is real; $r^{0}$ is antisymmetric with $(r^{0})^{2}=-I_4$ and $r^{1},r^{2},r^{3}$ are symmetric with $(r^{k})^{2}=+I_4$; and the four anticommute in pairs, so that $\{r^{\mu},r^{\nu}\}=2\eta^{\mu\nu}I_4$. In this representation the Dirac operator $i r^{\mu}\partial_\mu$ has real matrix coefficients, its massless part preserves the real subspace of real four-component spinors, and a solution of the massless equation can be chosen **purely real**; with a real mass term through the charge conjugation the massive solutions are the Majorana spinors. This is the sense in which the Majorana equation is "the Dirac equation written so that it has purely real solutions", the first of the three standard forms.
+Each matrix is real; $r_{0}$ is antisymmetric with $(r_{0})^{2}=-I_4$ and $r_{1},r_{2},r_{3}$ are symmetric with $(r_{k})^{2}=+I_4$; and the four anticommute in pairs, so that $\{r_{\mu},r_{\nu}\}=2\mathring\eta_{\mu\nu}I_4$. In this representation the Dirac operator $i\sum_\mu r_\mu\partial_\mu$ has real matrix coefficients, its massless part preserves the real subspace of real four-component spinors, and a solution of the massless equation can be chosen **purely real**; with a real mass term through the charge conjugation the massive solutions are the Majorana spinors. This is the sense in which the Majorana equation is "the Dirac equation written so that it has purely real solutions", the first of the three standard forms.
 
 **Why the corpus's signature does not have it, and what replaces it.** In the mostly-minus signature the algebra is quaternionic and no representation with all generators real exists; that is the algebraic reason the corpus works with a complex Dirac module and an antilinear real structure $\mathcal{C}$ rather than with real spinors. The two pictures are the two normalisations of one structure, exchanged by the volume element, and the companion *Real Spinors and Reality Conditions* records that the roles of the two signs are exchanged in the two conventions. A reader comparing a "real" Majorana spinor in one signature with a "self-conjugate" Majorana spinor in the other is comparing the two normalisations, and the comparison must state which is in force. The framework's own carrier of the reality is the antilinear $\mathcal{C}$ of the previous subsection.
 
 ### The Two-Component Form
 
-The third form acts on a complex two-component spinor and is the form in contact with the Lorentz group. With the Weyl vectors $\sigma^{\mu}=(I_2,\boldsymbol{\sigma})$ and $\bar\sigma^{\mu}=(I_2,-\boldsymbol{\sigma})$, the **Majorana operator** is the Weyl operator together with an antilinear mass term,
+The third form acts on a complex two-component spinor and is the form in contact with the Lorentz group. With the Weyl vectors $\sigma_{\mu}=(I_2,-\boldsymbol{\sigma})$ and $\bar\sigma_{\mu}=(I_2,+\boldsymbol{\sigma})$, the **Majorana operator** is the Weyl operator together with an antilinear mass term,
 
 $$
-D_L \;=\; i\,\bar\sigma^{\mu}\partial_\mu \;-\; m\,\epsilon\,(\,\cdot\,)^{*},
+D_L \;=\; i\sum_\mu\bar\sigma_{\mu}\partial_\mu \;-\; m\,\epsilon\,(\,\cdot\,)^{*},
 $$
 
 acting on a left-handed Weyl spinor $\psi_L\in S$, so that the two-component Majorana equation is
 
 $$
-i\,\bar\sigma^{\mu}\partial_\mu\,\psi_L \;=\; m\,\epsilon\,\psi_L^{*}.
+i\sum_\mu\bar\sigma_{\mu}\partial_\mu\,\psi_L \;=\; m\,\epsilon\,\psi_L^{*}.
 $$
 
 The mass term is exactly the conjugation $\mathcal{C}$ written in two-component language: $\epsilon\,\psi_L^{*}$ is the right-handed conjugate that the four-component $\psi^{c}$ produces in its lower half, and the equation pairs the field with that conjugate rather than with an independent right-handed field. The matrix $\epsilon$ is the antisymmetric form that defines the symplectic pairing of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, and it is the same object as the off-diagonal block of $K$; the two-component form is therefore not a different equation but the same equation in the defining representation.
@@ -130,17 +130,17 @@ The mass term is exactly the conjugation $\mathcal{C}$ written in two-component 
 **The two Weyl operators are the two square roots of the d'Alembertian.** Set
 
 $$
-W_L=i\,\bar\sigma^{\mu}\partial_\mu,
+W_L=i\sum_\mu\bar\sigma_{\mu}\partial_\mu,
 \qquad
-W_R=i\,\sigma^{\mu}\partial_\mu .
+W_R=i\sum_\mu\sigma_{\mu}\partial_\mu .
 $$
 
 Then
 
 $$
-\boxed{\;\sigma^{\mu}\bar\sigma^{\nu}+\sigma^{\nu}\bar\sigma^{\mu}=2\eta^{\mu\nu}I_2
+\boxed{\;\sigma_{\mu}\bar\sigma_{\nu}+\sigma_{\nu}\bar\sigma_{\mu}=2\eta_{\mu\nu}I_2
 \qquad\Longrightarrow\qquad
-W_RW_L \;=\; -\,\sigma^{\mu}\bar\sigma^{\nu}\partial_\mu\partial_\nu \;=\; -\,\eta^{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2\;}.
+W_RW_L \;=\; -\,\sum_{\mu,\nu}\sigma_{\mu}\bar\sigma_{\nu}\partial_\mu\partial_\nu \;=\; -\,\sum_{\mu,\nu}\eta_{\mu\nu}\partial_\mu\partial_\nu\,I_2 \;=\;\Box\,I_2\;}.
 $$
 
 The anticommutator identity was checked for all sixteen pairs $(\mu,\nu)$, and it is the two-component statement of the Clifford relation: the d'Alembertian is the **product** of the two Weyl operators, not the square of either alone. This is why the first-order two-component operators are called square roots of the Klein–Gordon operator, and it is the two-component counterpart of the matrix square used in *Klein–Gordon from the Dirac Square in Biquaternionic Form* for the four-component case. The mass term supplies the $-m^{2}$, so that the second-order equation of the self-conjugate field is the massive Klein–Gordon equation $(\Box-m^{2})\psi=0$, exactly as in the four-component case verified below.
@@ -253,11 +253,11 @@ The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ fie
 | $\mathbb{D}\psi=-m\psi$ | Sign-flipped equation of the ELKO sector |
 | $(\Box-m^{2})\psi=0$ | Common mass shell of both sectors |
 | $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$ | Real form: generators real, purely real solutions |
-| $r^{0},r^{1},r^{2},r^{3}$ | The exhibited real generators, $\{r^{\mu},r^{\nu}\}=2\eta^{\mu\nu}I_4$ |
-| $\sigma^{\mu}=(I_2,\boldsymbol{\sigma})$, $\bar\sigma^{\mu}=(I_2,-\boldsymbol{\sigma})$ | Weyl vectors |
+| $r_{0},r_{1},r_{2},r_{3}$ | The exhibited real generators, $\{r_{\mu},r_{\nu}\}=2\mathring\eta_{\mu\nu}I_4$ |
+| $\sigma_{\mu}=(I_2,-\boldsymbol{\sigma})$, $\bar\sigma_{\mu}=(I_2,+\boldsymbol{\sigma})$ | Weyl vectors (lowered, mostly-minus frame) |
 | $\epsilon=i\sigma_2$ | Symplectic form; $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$ |
-| $D_L=i\bar\sigma^{\mu}\partial_\mu-m\epsilon(\,\cdot\,)^{*}$ | Two-component Majorana operator |
-| $W_L=i\bar\sigma^{\mu}\partial_\mu$, $W_R=i\sigma^{\mu}\partial_\mu$ | Weyl operators; $W_RW_L=\Box$ |
+| $D_L=i\sum_\mu\bar\sigma_{\mu}\partial_\mu-m\epsilon(\,\cdot\,)^{*}$ | Two-component Majorana operator |
+| $W_L=i\sum_\mu\bar\sigma_{\mu}\partial_\mu$, $W_R=i\sum_\mu\sigma_{\mu}\partial_\mu$ | Weyl operators; $W_RW_L=\Box$ |
 | $\Box=\Delta-\partial^2/\partial {t'}^2$ | d'Alembertian, series convention |
 
 ## Further Reading
