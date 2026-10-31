@@ -4,6 +4,8 @@
 
 This article records a short external programme, that of S. I. Kruglov as presented in *Maxwell's Theory on Non-Commutative Spaces and Quaternions* (arXiv:hep-th/0110059, 2001). The arena is different from the corpus's. The coordinates do not commute,
 
+**Frame.** The corpus displays are read in the $\mathbb{B}$ frame, with the corpus position $\tilde R=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z$; formulas quoted from the source keep the source's $x^\mu$.
+
 $$
 [x^\mu,x^\nu] = i\theta^{\mu\nu},
 $$

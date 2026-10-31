@@ -33,14 +33,14 @@ Throughout this section the ground field is $\mathbb{C}$.
 
 **Definition.** A **$\mathbb{C}$-algebra automorphism** of $\mathbb{B}$ is a bijective $\mathbb{C}$-linear map $\sigma : \mathbb{B} \to \mathbb{B}$ with $\sigma(\tilde{Q}_2\tilde{Q}_4) = \sigma(\tilde{Q}_2)\sigma(\tilde{Q}_4)$ and $\sigma(e_t) = e_t$. These maps form a group under composition, written $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$.
 
-**Inner automorphisms.** For any invertible $g \in \mathbb{B}$ the map $\iota_g(\tilde{Q}_2) = g \tilde{Q}_2 g^{-1}$ is a $\mathbb{C}$-algebra automorphism, the **inner automorphism** determined by $g$. Since $\mathbb{C}$ is central, $\iota_g = \iota_{\lambda g}$ for every nonzero $\lambda \in \mathbb{C}$, so $\iota_g$ depends only on the class of $g$ modulo the scalars.
+**Inner automorphisms.** For any invertible $g \in \mathbb{B}$ the map $\operatorname{Ad}_g(\tilde{Q}_2) = g \tilde{Q}_2 g^{-1}$ is a $\mathbb{C}$-algebra automorphism, the **inner automorphism** determined by $g$. Since $\mathbb{C}$ is central, $\operatorname{Ad}_g = \operatorname{Ad}_{\lambda g}$ for every nonzero $\lambda \in \mathbb{C}$, so $\operatorname{Ad}_g$ depends only on the class of $g$ modulo the scalars.
 
 **Theorem (Skolem–Noether).** For any field $k$ and $n \geq 1$, every $k$-algebra automorphism of $M_n(k)$ is inner: for each $\sigma$ there exists $g \in GL_n(k)$ with $\sigma(\tilde{Q}_2) = g\tilde{Q}_2g^{-1}$ for all $\tilde{Q}_2$.
 
-Applied to $\mathbb{B}$, which is central simple over $\mathbb{C}$, the theorem says that **every $\mathbb{C}$-linear automorphism of $\mathbb{B}$ is inner**: each has the form $\iota_g$ for an invertible $g \in \mathbb{B}^{\times}$. Since $\iota_g$ depends only on $g$ modulo the central scalars, there is a surjection
+Applied to $\mathbb{B}$, which is central simple over $\mathbb{C}$, the theorem says that **every $\mathbb{C}$-linear automorphism of $\mathbb{B}$ is inner**: each has the form $\operatorname{Ad}_g$ for an invertible $g \in \mathbb{B}^{\times}$. Since $\operatorname{Ad}_g$ depends only on $g$ modulo the central scalars, there is a surjection
 
 $$
-\mathbb{B}^{\times} \longrightarrow \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}), \qquad g \longmapsto \iota_g,
+\mathbb{B}^{\times} \longrightarrow \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}), \qquad g \longmapsto \operatorname{Ad}_g,
 $$
 
 whose kernel is the group of nonzero central scalars $\mathbb{C}^{\times} e_t$. Hence
@@ -63,7 +63,7 @@ the complex orthogonal group in three variables. The reason is visible in the ac
 
 **Remark (automorphisms against isometries).** The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.
 
-**Example.** For $g = \vec e_x$, with $\vec e_x^{-1} = -\vec e_x$, conjugation fixes $\vec e_x$, $e_t$, $i$ and reverses the signs of $\vec e_y$ and $\vec e_z$: $\iota_{\vec e_x}(\vec e_x) = \vec e_x$, $\iota_{\vec e_x}(\vec e_y) = -\vec e_y$, $\iota_{\vec e_x}(\vec e_z) = -\vec e_z$. Indeed $\vec e_x \vec e_y \vec e_x^{-1} = -(\vec e_x \vec e_y)\vec e_x = -\vec e_z \vec e_x = -\vec e_y$, using $\vec e_x \vec e_y = \vec e_z$ and $\vec e_z \vec e_x = \vec e_y$.
+**Example.** For $g = \vec e_x$, with $\vec e_x^{-1} = -\vec e_x$, conjugation fixes $\vec e_x$, $e_t$, $i$ and reverses the signs of $\vec e_y$ and $\vec e_z$: $\operatorname{Ad}_{\vec e_x}(\vec e_x) = \vec e_x$, $\operatorname{Ad}_{\vec e_x}(\vec e_y) = -\vec e_y$, $\operatorname{Ad}_{\vec e_x}(\vec e_z) = -\vec e_z$. Indeed $\vec e_x \vec e_y \vec e_x^{-1} = -(\vec e_x \vec e_y)\vec e_x = -\vec e_z \vec e_x = -\vec e_y$, using $\vec e_x \vec e_y = \vec e_z$ and $\vec e_z \vec e_x = \vec e_y$.
 
 **Remark.** Quaternion conjugation satisfies $(\tilde{Q}_2\tilde{Q}_4)^{\natural} = \tilde{Q}_4^{\natural}\,\tilde{Q}_2^{\natural}$ and is an **anti-automorphism**, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.
 
@@ -83,7 +83,7 @@ $$
 \boxed{\;\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2\;},
 $$
 
-the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\iota_g \mapsto \iota_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(\tilde{Q}_2) = g \tilde{Q}_2 g^{-1}$ or $\sigma(\tilde{Q}_2) = g\, \bar{\tilde{Q}_2}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of **conjugate-linear** automorphisms.
+the generator acting on $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ by $\operatorname{Ad}_g \mapsto \operatorname{Ad}_{g^{*}}$. Concretely, every real automorphism of $\mathbb{B}$ has exactly one of the two forms $\sigma(\tilde{Q}_2) = g \tilde{Q}_2 g^{-1}$ or $\sigma(\tilde{Q}_2) = g\, \bar{\tilde{Q}_2}\, g^{-1}$, with $g \in \mathbb{B}^{\times}$ determined up to a nonzero complex scalar. The first family is the identity coset of $\mathbb{C}$-linear inner automorphisms; the second is the coset of $c$, consisting of **conjugate-linear** automorphisms.
 
 **Dimension and scope.** As a real Lie group, $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$ has real dimension $6$ and exactly two connected components, each a copy of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; it is larger and is a real group rather than a complex one. Skolem–Noether describes the identity component $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; the conjugate-linear coset exists because $\mathbb{C}/\mathbb{R}$ has a nontrivial Galois automorphism, and it is not inner.
 

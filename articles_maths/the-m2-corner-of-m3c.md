@@ -171,11 +171,11 @@ of dimensions $4+2+2+1$. The corner $PMP$ is the $M_{2}$ corner; the corner $QMQ
 **The embedding.** Choose a basis of $\mathbb{C}^{3}$ adapted to $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In this basis the map
 
 $$
-\iota:M_{2}(\mathbb{C})\longrightarrow M_{3}(\mathbb{C}),\qquad
+\operatorname{inc}:M_{2}(\mathbb{C})\longrightarrow M_{3}(\mathbb{C}),\qquad
 B\longmapsto\begin{pmatrix}B&0\\0&0\end{pmatrix},
 $$
 
-is an injective algebra homomorphism with image $PMP$, and it is unital onto the corner: $\iota(I_{2})=P$. It is not unital into $M_{3}$, because $\iota(I_{2})=P\neq I$. The unit of the ambient algebra is not the unit of the corner.
+is an injective algebra homomorphism with image $PMP$, and it is unital onto the corner: $\operatorname{inc}(I_{2})=P$. It is not unital into $M_{3}$, because $\operatorname{inc}(I_{2})=P\neq I$. The unit of the ambient algebra is not the unit of the corner.
 
 **The complement as a quotient direction.** The projection $Q$ is the unit of the complement; the mixed corners are the off-diagonal blocks that connect the two units. The element $Q$ is the image of the identity under the other corner embedding $\mathbb{C}\to M_{3}$, $1\mapsto Q$. The two corner embeddings are the two diagonal blocks of the coarse Peirce decomposition.
 
@@ -268,7 +268,7 @@ The corner is a unital $*$-algebra exactly when $P=P^{*}$. For a non-Hermitian i
 | $\operatorname{tr}_{P}$ | the inherited trace, the restriction of the ambient trace |
 | $\det_{P}$ | the determinant of the compressed endomorphism |
 | $P^{*}$ | the conjugate transpose of $P$ |
-| $\iota:M_{2}\to M_{3}$ | the block embedding with image $PMP$ |
+| $\operatorname{inc}:M_{2}\to M_{3}$ | the block embedding with image $PMP$ |
 
 ## Further Reading
 

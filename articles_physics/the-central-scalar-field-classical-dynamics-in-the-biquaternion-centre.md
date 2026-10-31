@@ -176,10 +176,10 @@ evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterp
 The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. Its energy density is
 
 $$
-T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
 $$
 
-positive for every field configuration, and its conservation is the statement $\partial/\partial Q_\mu T^{\mu\nu}=0$ on shell. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T^{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
+positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
 
 ### The Energy of the Static Field
 
@@ -268,9 +268,9 @@ $$
 \langle\tilde\nabla,\tilde J\rangle_{\natural}=0\ \text{on shell},
 $$
 
-whose conservation was checked on a superposition of two on-shell plane waves of different momenta. The time component $j^0$ is the charge density and its integral is the charge; the spatial components are the current. The current vanishes identically for a real field, which is the classical statement that a real scalar is its own antiparticle and carries no charge.
+whose conservation was checked on a superposition of two on-shell plane waves of different momenta. The time component $j_t$ is the charge density and its integral is the charge; the spatial components are the current. The current vanishes identically for a real field, which is the classical statement that a real scalar is its own antiparticle and carries no charge.
 
-That the current's normalization is a convention, while its conservation is not, is worth stating: any multiple of $j^\nu$ is conserved, and the unit of charge fixes the multiple. What the framework supplies here is not the normalization but the identification of the symmetry with the algebra's central phase.
+That the current's normalization is a convention, while its conservation is not, is worth stating: any multiple of $j_\nu$ is conserved, and the unit of charge fixes the multiple. What the framework supplies here is not the normalization but the identification of the symmetry with the algebra's central phase.
 
 ## Why There Is No Intrinsic Magnetism
 
@@ -347,7 +347,7 @@ $$
 \tilde{\Phi}=\frac{gQ}{4\pi r}\,e_t .
 $$
 
-The static field's energy density is $T^{tt}=\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
+The static field's energy density is $T_{tt}=\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
 
 A test source of coupling $g_{\mathrm t}$ has the central potential energy
 
@@ -363,7 +363,7 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; central $i$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; central $i$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
@@ -378,7 +378,7 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{\Phi}=gQ\exp(-\mu r)/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$ |
 | $\vec\beta$, $R$, $t'_r$ | Source velocity over $c$, retarded distance, retarded time |
-| $T^{tt}=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
+| $T_{tt}=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\nabla E=g_{\mathrm t}\,\nabla\phi=g_{\mathrm t}\,(d\phi/dr)\,\vec u_r$ | Central force on the test source (inward) |

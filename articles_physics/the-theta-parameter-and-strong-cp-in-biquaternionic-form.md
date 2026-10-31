@@ -6,6 +6,8 @@
 
 The framework's contribution to this subject is unusually direct, and it rests on a result established earlier in the series. In the abelian sector the topological density is not a foreign object: it is proportional to the framework's second invariant,
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the $ict'$ convention for sums over indices.
+
 $$
 \tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =\tfrac12\,F_{\mu\nu}\star F^{\mu\nu}

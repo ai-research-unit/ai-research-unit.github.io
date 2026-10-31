@@ -190,7 +190,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Ϙ=ϙI_4$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$ |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu=\bar{\psi}\gamma_\mu\psi$ |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\gamma_\mu\psi$ |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $|ϙ_p|=|ϙ_e|$, opposite signs | Outside | no framework structure; independent parameters |

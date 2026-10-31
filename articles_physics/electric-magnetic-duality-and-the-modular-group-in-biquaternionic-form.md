@@ -4,6 +4,8 @@
 
 The central algebraic fact of electric–magnetic duality in this framework is that the duality rotation acts on the field-strength biquaternion by multiplication by a scalar phase,
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, in its Euclidean form.
+
 $$
 F^{\mathrm{dual}} \;\longmapsto\; \exp(-i\theta)F^{\mathrm{dual}} ,
 \qquad

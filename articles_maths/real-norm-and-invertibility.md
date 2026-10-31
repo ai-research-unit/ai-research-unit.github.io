@@ -205,10 +205,10 @@ The two factors are the **scale** $r = |q| \in \mathbb{R}_{>0}$, a positive real
 
 ### The Inverse Map
 
-The inversion map $\iota : \mathbb{R}^\times \to \mathbb{R}^\times$, $\iota(q) = q^{-1}$, is a group automorphism of order two, and writing $q = r\sigma$ with $r = |q| > 0$ and $\sigma = \operatorname{sgn}q$ it reads
+The inversion $q \mapsto q^{-1}$ on $\mathbb{R}^\times$ is a group automorphism of order two, and writing $q = r\sigma$ with $r = |q| > 0$ and $\sigma = \operatorname{sgn}q$ it reads
 
 $$
-\iota(r\sigma) = r^{-1}\sigma^{-1} = r^{-1}\sigma ,
+(r\sigma)^{-1} = r^{-1}\sigma^{-1} = r^{-1}\sigma ,
 $$
 
 because $\sigma^{-1} = \sigma$ for $\sigma = \pm1$. Inversion therefore inverts the scale and fixes the sign. The smoothness of the operation and its differential at the identity are Lie-group data, and they are analytic: they belong to *Real Exponential and Lie Group Structure*, the analytic article of this category, and are named here only. In the complex case inversion inverts the scale and conjugates the phase; here the sign is discrete and inversion fixes it.

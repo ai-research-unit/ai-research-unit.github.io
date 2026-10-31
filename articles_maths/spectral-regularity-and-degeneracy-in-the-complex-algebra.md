@@ -135,7 +135,7 @@ and it is squarefree. Thus $L_z^{\mathbb{C}}$ is diagonalisable and $z$ is not d
 
 *Proof.* The first four statements are immediate from $A=tI$. For the fifth, the complexified algebra is commutative, so every idempotent $e$ satisfies $ze=te$; the spectral idempotents are exactly the idempotents commuting with $z$, which is all of them.
 
-**Remark (the real axis).** On the axis the canonical spectral decomposition is the one-term writing $z=t\cdot1$. In the complexified algebra the idempotents $e_\pm=\tfrac12(1\mp i\iota)$, with $\iota=1\otimes i$, still satisfy $e_++e_-=1$ and give
+**Remark (the real axis).** On the axis the canonical spectral decomposition is the one-term writing $z=t\cdot1$. In the complexified algebra the idempotents $e_\pm=\tfrac12(1\mp i\,(1\otimes i))$ still satisfy $e_++e_-=1$ and give
 
 $$
 z=t\,e_+ + t\,e_-,

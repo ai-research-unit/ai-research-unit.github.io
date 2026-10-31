@@ -8,6 +8,8 @@ The subject straddles a boundary that this corpus keeps sharp. The path integral
 
 Two of the framework's own results enter directly. First, the topological charge and its density were identified in *Instantons and Solitons in Biquaternionic Form*: the abelian density is the framework's invariant $I_2=\vec E\cdot\vec B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the biquaternion norm does not supply. Second, the moduli space of the saddle is the ADHM quotient of *The ADHM Construction and Biquaternion Instanton Data*, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, in its Euclidean form.
+
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad

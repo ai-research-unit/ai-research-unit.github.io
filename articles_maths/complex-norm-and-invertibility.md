@@ -216,10 +216,10 @@ The two factors are the **scale** $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R
 
 ### The Inverse Map
 
-The inversion map $\iota : \mathbb{C}^\times \to \mathbb{C}^\times$, $\iota(Q) = Q^{-1}$, is a continuous group automorphism of order two, and in the polar coordinates it reads
+The inversion $Q \mapsto Q^{-1}$ on $\mathbb{C}^\times$ is a continuous group automorphism of order two, and in the polar coordinates it reads
 
 $$
-\iota(ru) = r^{-1} u^{-1} = r^{-1} \bar{u},
+(ru)^{-1} = r^{-1} u^{-1} = r^{-1} \bar{u},
 $$
 
 because for a unit $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts the scale and conjugates the phase.

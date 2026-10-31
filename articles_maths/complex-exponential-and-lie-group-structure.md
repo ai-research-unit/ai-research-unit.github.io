@@ -43,7 +43,7 @@ a group under multiplication with identity $1$, abelian, and at the same time a 
 
 **Dimension, openness and density.** As a real manifold $\mathbb{C}^\times$ has dimension $2$; it is open in $\mathbb{C}$ (the preimage $N^{-1}((0,\infty))$ of an open set) and dense, its complement being the single point $\{0\}$, of real dimension $0$. It is connected and non-compact, and its centre is itself, since the group is abelian.
 
-**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the units are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $\iota(Q) = Q^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian.
+**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the units are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $Q \mapsto Q^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian.
 
 **The norm-one group.** Because $\langle\cdot\rangle_{*}$ is multiplicative and $\langle 1\rangle_{*} = 1$, the level set
 

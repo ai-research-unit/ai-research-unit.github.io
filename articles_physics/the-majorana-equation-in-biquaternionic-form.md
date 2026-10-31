@@ -16,6 +16,8 @@ The presentation is split three ways, as in the companions.
 
 The article is organised as follows. The next section states the equation and its three forms and proves the equivalence. A section then treats the charge-conjugation eigenstates and the ELKO companion. A section counts the independent solutions against the Dirac count. A closing section separates what the framework supplies, transcribes, and does not supply.
 
+**Frame.** The coordinate displays are read in the $\mathbb{B}$ frame, with $Q_t=ict'$; the gamma displays carry the generator metric $g=\mathrm{diag}(+,-,-,-)$ and are read in the $\mathbb{M}_-$ frame.
+
 $$
 \gamma_{0}=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
 \gamma_{k}=\begin{pmatrix}0&\sigma^{k}\\ -\sigma^{k}&0\end{pmatrix},\qquad k=1,2,3,

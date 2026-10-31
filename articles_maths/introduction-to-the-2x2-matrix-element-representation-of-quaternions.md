@@ -67,11 +67,11 @@ The last statement is the article's caution. The scalar imaginary $i$ is part of
 
 **Proposition.** The natural conjugation of $\mathbb{H}$ becomes the conjugate transpose,
 $$ \boxed{\; \mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}, \qquad \dagger=\text{conjugate transpose} \;} .$$
-The inner involution $\iota_\nu$ becomes conjugation by the matrix of $\nu$,
+The inner involution $\operatorname{Ad}_\nu$ becomes conjugation by the matrix of $\nu$,
 $$
-\mathsf{M}_2(\iota_\nu \tilde q)=\mathsf{M}_2(\nu)\,\mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\nu)^{-1},
+\mathsf{M}_2(\operatorname{Ad}_\nu \tilde q)=\mathsf{M}_2(\nu)\,\mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\nu)^{-1},
 $$
-and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian, $\mathsf{M}_2(\nu)^{\dagger}=-\mathsf{M}_2(\nu)$, with $\mathsf{M}_2(\nu)^{\dagger}\mathsf{M}_2(\nu)=I_2$, so the inner involutions are conjugations by matrices of the image satisfying that condition. The reflection $\rho_\nu=-\iota_\nu$ is minus the same conjugation.
+and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian, $\mathsf{M}_2(\nu)^{\dagger}=-\mathsf{M}_2(\nu)$, with $\mathsf{M}_2(\nu)^{\dagger}\mathsf{M}_2(\nu)=I_2$, so the inner involutions are conjugations by matrices of the image satisfying that condition. The reflection $\rho_\nu=-\operatorname{Ad}_\nu$ is minus the same conjugation.
 
 **Proof.** For the general entry, the conjugate transpose of $\mathsf{M}_2(\tilde q)$ is $\left(\begin{smallmatrix}\overline z&-w\\ \overline w&z\end{smallmatrix}\right)$, which is $\mathsf{M}_2(q_t-\vec q)$ read from the pattern with $z'=\overline z$, $w'=-w$; this is $\mathsf{M}_2(\tilde q^{\natural})$. The inner statement is the multiplicativity. For a unit imaginary $\nu$, $\mathsf{M}_2(\nu)^{\dagger}=\mathsf{M}_2(\nu^{\natural})=\mathsf{M}_2(-\nu)=-\mathsf{M}_2(\nu)$ and $\det\mathsf{M}_2(\nu)=\langle \nu\rangle_{\natural}=1$.
 

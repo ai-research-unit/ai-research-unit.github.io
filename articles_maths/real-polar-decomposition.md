@@ -173,7 +173,7 @@ $$
 
 The identity component is the positive ray $\mathbb{R}_{>0} = \exp(\mathbb{R})$, and the nontrivial component is its negative $-\mathbb{R}_{>0}$. The sign group is therefore the group of components, $\{\pm1\} \cong \mathbb{R}^\times/\mathbb{R}_{>0}$, and it is identified with the orthogonal group $O(1)$ of the line. In the complex case the second factor $\mathrm{U}(1)$ is connected, so $\mathbb{C}^\times$ has one component; the passage from two components to one is the first effect of the two-dimensional definite case.
 
-Inversion in the polar coordinates reads $\iota(r\sigma) = r^{-1}\sigma$, inverting the scale and fixing the sign; the two components are each stable under inversion, and the fixed points of inversion are $\pm1$.
+Inversion in the polar coordinates reads $(r\sigma)^{-1} = r^{-1}\sigma$, inverting the scale and fixing the sign; the two components are each stable under inversion, and the fixed points of inversion are $\pm1$.
 
 ## The Matrix Picture
 

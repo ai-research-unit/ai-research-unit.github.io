@@ -25,14 +25,14 @@ The automorphism group and the derivation algebra are governed by two structural
 
 **Definition.** An **$\mathbb{R}$-algebra automorphism** of $\mathbb{H}_{\mathrm{s}}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $\sigma(\tilde q_1 \tilde q_2) = \sigma(\tilde q_1)\sigma(\tilde q_2)$ and $\sigma(1) = 1$. They form a group under composition, written $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$.
 
-**Inner automorphisms.** For an invertible $g \in \mathbb{H}_{\mathrm{s}}$ the map $\iota_g(\tilde q) = g\tilde q g^{-1}$ is an automorphism, the **inner automorphism** determined by $g$. Since the centre is $\mathbb{R}$, the automorphism $\iota_g$ depends only on the class of $g$ modulo nonzero scalars, so $\iota_g = \iota_{\lambda g}$ for $\lambda \in \mathbb{R}^\times$.
+**Inner automorphisms.** For an invertible $g \in \mathbb{H}_{\mathrm{s}}$ the map $\operatorname{Ad}_g(\tilde q) = g\tilde q g^{-1}$ is an automorphism, the **inner automorphism** determined by $g$. Since the centre is $\mathbb{R}$, the automorphism $\operatorname{Ad}_g$ depends only on the class of $g$ modulo nonzero scalars, so $\operatorname{Ad}_g = \operatorname{Ad}_{\lambda g}$ for $\lambda \in \mathbb{R}^\times$.
 
 **Theorem (Skolem–Noether).** For any field $k$ and $n \geq 1$, every $k$-algebra automorphism of $M_n(k)$ is inner: for each $\sigma$ there exists $g \in GL_n(k)$ with $\sigma(\tilde q) = g\tilde q g^{-1}$ for all $\tilde q$.
 
 **Theorem.** Every $\mathbb{R}$-algebra automorphism of $\mathbb{H}_{\mathrm{s}}$ is inner, and the map
 
 $$
-\mathbb{H}_{\mathrm{s}}^\times \longrightarrow \mathrm{Aut}(\mathbb{H}_{\mathrm{s}}), \qquad g \longmapsto \iota_g,
+\mathbb{H}_{\mathrm{s}}^\times \longrightarrow \mathrm{Aut}(\mathbb{H}_{\mathrm{s}}), \qquad g \longmapsto \operatorname{Ad}_g,
 $$
 
 is surjective with kernel the centre $\mathbb{R}^\times$. Hence
@@ -43,7 +43,7 @@ $$
 \;}.
 $$
 
-**Proof.** The Skolem–Noether theorem for a central simple algebra applies: every automorphism is inner, which gives the surjectivity and the identification of the automorphism group with the quotient. The kernel of $g \mapsto \iota_g$ is the set of units $g$ with $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. the units of the centre, $\mathbb{R}^\times$. The last isomorphism is the adjoint action on $V$ of *Split-Quaternion Rotations and the Lorentz Group*, which identifies $\mathrm{PGL}_2(\mathbb{R})$ with $SO(2,1)$.
+**Proof.** The Skolem–Noether theorem for a central simple algebra applies: every automorphism is inner, which gives the surjectivity and the identification of the automorphism group with the quotient. The kernel of $g \mapsto \operatorname{Ad}_g$ is the set of units $g$ with $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. the units of the centre, $\mathbb{R}^\times$. The last isomorphism is the adjoint action on $V$ of *Split-Quaternion Rotations and the Lorentz Group*, which identifies $\mathrm{PGL}_2(\mathbb{R})$ with $SO(2,1)$.
 
 **Dimension and components.** Since the unit group has real dimension $4$ and the centre $\mathbb{R}^\times$ has dimension $1$, the group has real dimension $3$. The sign of the split-quaternion norm splits the unit group into the two components $\{N>0\}$ and $\{N<0\}$, and since $\langle \lambda g\rangle_{\natural} = \lambda^2 \langle g\rangle_{\natural}$ the quotient keeps the sign of the split-quaternion norm, so $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}}) \cong PGL_2(\mathbb{R})$ has **two components**, matching the two components of $SO(2,1)$. The identity component is
 
@@ -53,11 +53,11 @@ $$
 \;},
 $$
 
-which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \iota_g$.
+which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \operatorname{Ad}_g$.
 
-**Invariants.** Every automorphism preserves the split-quaternion norm, $\langle\sigma(\tilde q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$, because $\iota_g$ is inner and $\langle\cdot\rangle_{\natural}$ is multiplicative; hence it preserves the group of units, the zero-divisor set, the rank-one idempotents and the subspaces defined by $\langle\cdot\rangle_{\natural}$. It also preserves the centre pointwise.
+**Invariants.** Every automorphism preserves the split-quaternion norm, $\langle\sigma(\tilde q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$, because $\operatorname{Ad}_g$ is inner and $\langle\cdot\rangle_{\natural}$ is multiplicative; hence it preserves the group of units, the zero-divisor set, the rank-one idempotents and the subspaces defined by $\langle\cdot\rangle_{\natural}$. It also preserves the centre pointwise.
 
-**Example.** For $g = \vec e_z$, with $\vec e_z^{-1} = \vec e_z$ (since $\langle \vec e_z\rangle_{\natural} = -1$ and $\vec e_z^{\natural} = -\vec e_z$, so $\vec e_z^{-1} = -\vec e_z/(-1) = \vec e_z$), the inner automorphism acts on the vector subspace by $\iota_{\vec e_z}(\vec e_x) = -\vec e_x$, $\iota_{\vec e_z}(\vec e_y) = -\vec e_y$, $\iota_{\vec e_z}(\vec e_z) = \vec e_z$, the matrix $\operatorname{diag}(-1,-1,1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$. This transformation is in $SO(2,1)$ but not in its identity component: it fixes the spacelike direction $\vec e_z$ and reverses the sheet of the timelike hyperboloid.
+**Example.** For $g = \vec e_z$, with $\vec e_z^{-1} = \vec e_z$ (since $\langle \vec e_z\rangle_{\natural} = -1$ and $\vec e_z^{\natural} = -\vec e_z$, so $\vec e_z^{-1} = -\vec e_z/(-1) = \vec e_z$), the inner automorphism acts on the vector subspace by $\operatorname{Ad}_{\vec e_z}(\vec e_x) = -\vec e_x$, $\operatorname{Ad}_{\vec e_z}(\vec e_y) = -\vec e_y$, $\operatorname{Ad}_{\vec e_z}(\vec e_z) = \vec e_z$, the matrix $\operatorname{diag}(-1,-1,1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$. This transformation is in $SO(2,1)$ but not in its identity component: it fixes the spacelike direction $\vec e_z$ and reverses the sheet of the timelike hyperboloid.
 
 ## Derivations
 
@@ -119,7 +119,7 @@ $$
 \operatorname{Lie}\bigl(\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})\bigr) \;=\; \mathrm{Der}(\mathbb{H}_{\mathrm{s}}) \;\cong\; \mathrm{SL}_2(\mathbb{R}) \;\cong\; \mathrm{SO}(2,1).
 $$
 
-The correspondence is the exponential of the inner derivations, $\exp(t\,\mathrm{ad}_a) = \iota_{\exp(ta)}$, which is the usual Lie-theoretic identification of the inner derivations with the Lie algebra of the inner automorphism group. Since $\mathrm{Aut}$ has two components, its Lie algebra is generated by the identity component alone; the two components are distinguished by the determinant, and any automorphism of negative determinant, such as $\iota_{\vec e_z}$ of the example above, lies in the non-identity component.
+The correspondence is the exponential of the inner derivations, $\exp(t\,\mathrm{ad}_a) = \operatorname{Ad}_{\exp(ta)}$, which is the usual Lie-theoretic identification of the inner derivations with the Lie algebra of the inner automorphism group. Since $\mathrm{Aut}$ has two components, its Lie algebra is generated by the identity component alone; the two components are distinguished by the determinant, and any automorphism of negative determinant, such as $\operatorname{Ad}_{\vec e_z}$ of the example above, lies in the non-identity component.
 
 ## Worked Examples
 
@@ -129,7 +129,7 @@ The correspondence is the exponential of the inner derivations, $\exp(t\,\mathrm
 
 **Example (a derivation that is not a scalar multiple of a basis one).** For $a = \vec e_x + \vec e_y$ the derivation $\mathrm{ad}_a$ has $\mathrm{ad}_a(\vec e_z) = [\vec e_x + \vec e_y, \vec e_z] = -2\vec e_x - 2\vec e_y$ and mixes the two involutions' eigenspaces, so it is not proportional to any of $\mathrm{ad}_{\vec e_x}, \mathrm{ad}_{\vec e_y}, \mathrm{ad}_{\vec e_z}$.
 
-**Example (an automorphism of the outer component).** The inner automorphism $\iota_{\vec e_z}$ of the example above has matrix $\operatorname{diag}(-1,-1,1)$ on $V$, of determinant $+1$, in the component of $SO(2,1)$ away from the identity. Its square is the identity.
+**Example (an automorphism of the outer component).** The inner automorphism $\operatorname{Ad}_{\vec e_z}$ of the example above has matrix $\operatorname{diag}(-1,-1,1)$ on $V$, of determinant $+1$, in the component of $SO(2,1)$ away from the identity. Its square is the identity.
 
 ## The Contrast with the Biquaternion Case
 
@@ -155,7 +155,7 @@ Every derivation is inner, so $\mathrm{Der}(\mathbb{H}_{\mathrm{s}}) = \mathrm{a
 | $Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$ | the centre, one-dimensional over $\mathbb{R}$ | *Split-Quaternion Scalar and Vector Subspaces* |
 | $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$ | the algebra automorphisms, $\cong \mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ | this article |
 | $\mathrm{Inn}(\mathbb{H}_{\mathrm{s}})$, $\mathrm{Out}(\mathbb{H}_{\mathrm{s}})$ | inner and outer automorphism groups; $\mathrm{Out} = 1$ | this article |
-| $\iota_g(\tilde q) = g\tilde q g^{-1}$ | the inner automorphism by a unit $g$ | this article |
+| $\operatorname{Ad}_g(\tilde q) = g\tilde q g^{-1}$ | the inner automorphism by a unit $g$ | this article |
 | $\mathrm{Der}(\mathbb{H}_{\mathrm{s}})$ | the derivations, $\cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | this article |
 | $\mathrm{ad}_a(\tilde q) = [a,\tilde q]$ | the inner derivation by $a$ | this article |
 | $V, \mathrm{SL}_2(\mathbb{R})$ | the vector subspace and the traceless matrices | *Split-Quaternion Scalar and Vector Subspaces* |

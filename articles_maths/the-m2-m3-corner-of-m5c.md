@@ -96,18 +96,18 @@ with unit $P+Q=I$. The off-diagonal blocks are not a subalgebra: their products 
 **Definition.** The **block embedding** of $M_2(\mathbb{C})\oplus M_3(\mathbb{C})$ into $M_5(\mathbb{C})$ is
 
 $$
-\iota(A,B)=\begin{pmatrix}A&0\\0&B\end{pmatrix}.
+\operatorname{inc}(A,B)=\begin{pmatrix}A&0\\0&B\end{pmatrix}.
 $$
 
-**Proposition.** The map $\iota$ is an injective unital algebra homomorphism, and its image is $PM_5P\oplus QM_5Q$. The projections onto the two factors are the compressions
+**Proposition.** The map $\operatorname{inc}$ is an injective unital algebra homomorphism, and its image is $PM_5P\oplus QM_5Q$. The projections onto the two factors are the compressions
 
 $$
-\iota^{-1}\bigl(\iota(A,B)\bigr)=(PAP,QBQ).
+\operatorname{inc}^{-1}\bigl(\operatorname{inc}(A,B)\bigr)=(PAP,QBQ).
 $$
 
-**Proof.** The block product of two diagonal block matrices is the diagonal block matrix of the products, and the unit is $I$. The image is exactly the set of block-diagonal matrices, which is $PM_5P\oplus QM_5Q$. The compression of $\iota(A,B)$ to the first block is $A$ and to the second is $B$.
+**Proof.** The block product of two diagonal block matrices is the diagonal block matrix of the products, and the unit is $I$. The image is exactly the set of block-diagonal matrices, which is $PM_5P\oplus QM_5Q$. The compression of $\operatorname{inc}(A,B)$ to the first block is $A$ and to the second is $B$.
 
-**Remark.** The embedding is unital in $M_5$, but the **corner** $PM_5P$ is not unital in $M_5$: its unit is $P$, not $I$. The map $A\mapsto\iota(A,0)$ is an algebra homomorphism onto the corner with unit $P$, and it is unital as a map into the corner. The distinction matters when the corner is used as an algebra in its own right, as in the biquaternion model.
+**Remark.** The embedding is unital in $M_5$, but the **corner** $PM_5P$ is not unital in $M_5$: its unit is $P$, not $I$. The map $A\mapsto\operatorname{inc}(A,0)$ is an algebra homomorphism onto the corner with unit $P$, and it is unital as a map into the corner. The distinction matters when the corner is used as an algebra in its own right, as in the biquaternion model.
 
 ### The Two Corners
 

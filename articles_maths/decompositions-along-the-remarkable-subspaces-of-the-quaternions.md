@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The involutions of the quaternion algebra cut $\mathbb{H}$ into three additive decompositions, and the product adds a fourth, multiplicative one. This article states all four: the scalar–vector decomposition $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$ of dimensions $1+3$, cut by the natural sign; the axis decomposition $\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp$ of dimensions $2+2$ along a unit imaginary quaternion $\nu$, cut by the inner involution; the twist decomposition $\mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu$ of dimensions $3+1$, its companion on the same axis, cut by the twist ${}^{\natural}\iota_\nu$; and the polar decomposition $\tilde q=|\tilde q|\,u$ of a nonzero quaternion into a positive real modulus and a unit quaternion. It then proves that the list is complete. The element and the basis are those of *Quaternion Algebra*; the two subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*; the involutions that cut them are *Quaternion Involutions and Projections*.
+The involutions of the quaternion algebra cut $\mathbb{H}$ into three additive decompositions, and the product adds a fourth, multiplicative one. This article states all four: the scalar–vector decomposition $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$ of dimensions $1+3$, cut by the natural sign; the axis decomposition $\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp$ of dimensions $2+2$ along a unit imaginary quaternion $\nu$, cut by the inner involution; the twist decomposition $\mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu$ of dimensions $3+1$, its companion on the same axis, cut by the twist ${}^{\natural}\operatorname{Ad}_\nu$; and the polar decomposition $\tilde q=|\tilde q|\,u$ of a nonzero quaternion into a positive real modulus and a unit quaternion. It then proves that the list is complete. The element and the basis are those of *Quaternion Algebra*; the two subspaces are *Introduction to the Remarkable Subspaces of the Quaternions*; the involutions that cut them are *Quaternion Involutions and Projections*.
 
 The article is an offer of the group: the scalar–vector decomposition is developed in *Introduction to the Remarkable Subspaces of the Quaternions*, the axis and the twist decompositions in the two articles just named, and the polar decomposition is the subject of *Modulus–Unit Polar Decomposition of Quaternions*, below this article in this category.
 
@@ -18,13 +18,13 @@ they are idempotent, $\mathrm{Sc}+\mathrm{vec}=\operatorname{id}$, and they cut 
 
 ## The Axis Decomposition
 
-Let $\nu$ be a unit imaginary quaternion and let $\iota_\nu(\tilde q)=\nu \tilde q\nu^{-1}$ be the inner involution of *Quaternion Involutions and Projections*. Its fixed space is the plane
+Let $\nu$ be a unit imaginary quaternion and let $\operatorname{Ad}_\nu(\tilde q)=\nu \tilde q\nu^{-1}$ be the inner involution of *Quaternion Involutions and Projections*. Its fixed space is the plane
 $$
 \mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu=\{a+b\nu:a,b\in\mathbb{R}\},
 $$
 a commutative two-dimensional subalgebra, and its anti-fixed space is the orthogonal complement $\nu^\perp=\{\vec q\in\mathrm{Vect}(\mathbb{H}):\nu\cdot\vec q=0\}$, a plane. The eigenspace decomposition is therefore
 $$ \boxed{\; \mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp, \qquad 2+2=4 \;} ,$$
-with the projections $\tilde q\mapsto\tfrac12(\tilde q+\iota_\nu \tilde q)$ onto $\mathbb{C}_\nu$ and $\tilde q\mapsto\tfrac12(\tilde q-\iota_\nu \tilde q)$ onto $\nu^\perp$. The reflection $\rho_\nu=-\iota_\nu$ has the same two eigenspaces with the labels exchanged, so it cuts the same decomposition.
+with the projections $\tilde q\mapsto\tfrac12(\tilde q+\operatorname{Ad}_\nu \tilde q)$ onto $\mathbb{C}_\nu$ and $\tilde q\mapsto\tfrac12(\tilde q-\operatorname{Ad}_\nu \tilde q)$ onto $\nu^\perp$. The reflection $\rho_\nu=-\operatorname{Ad}_\nu$ has the same two eigenspaces with the labels exchanged, so it cuts the same decomposition.
 
 The **axis decomposition** of the vector subspace is the refinement of the previous line,
 $$
@@ -40,7 +40,7 @@ Combining with the scalar–vector decomposition gives the three-term splitting 
 
 The axis supplies a second involution beside the inner one, the **twist**
 $$
-\alpha_\nu={}^{\natural}\circ\iota_\nu=\iota_\nu\circ{}^{\natural}, \qquad \alpha_\nu(\tilde q)=\nu \tilde q^{\natural}\nu^{-1},
+\alpha_\nu={}^{\natural}\circ\operatorname{Ad}_\nu=\operatorname{Ad}_\nu\circ{}^{\natural}, \qquad \alpha_\nu(\tilde q)=\nu \tilde q^{\natural}\nu^{-1},
 $$
 of *Quaternion Involutions and Projections*. It is an involutive anti-automorphism: $\alpha_\nu^2=\operatorname{id}$ on the elements and $\alpha_\nu(\tilde q_1\tilde q_2)=\alpha_\nu(\tilde q_2)\alpha_\nu(\tilde q_1)$ on the product, and it fixes every element of the plane
 $$
@@ -48,7 +48,7 @@ $$
 $$
 scalar part plus the plane orthogonal to the axis, while reversing the axis line $\mathbb{R}\nu$ alone. Its eigenspace decomposition is therefore
 $$ \boxed{\; \mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu, \qquad 3+1=4 \;} ,$$
-with the projections $\tilde q\mapsto\tfrac12(\tilde q+\alpha_\nu\tilde q)$ onto the plane and $\tilde q\mapsto\tfrac12(\tilde q-\alpha_\nu\tilde q)$ onto the axis line. The twist is the companion of the inner involution on the same axis: $\iota_\nu$ isolates the negated plane $\nu^\perp$ against the axis plane $\mathbb{C}_\nu$, and $\alpha_\nu$ isolates the axis line against the scalar line and that plane. The three involutions ${}^{\natural}$, $\iota_\nu$ and $\alpha_\nu$ thus cut the orthogonal splitting $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\nu\oplus\nu^\perp$ into its three two-sided groupings, and the twist decomposition is the one in which the axis line stands alone.
+with the projections $\tilde q\mapsto\tfrac12(\tilde q+\alpha_\nu\tilde q)$ onto the plane and $\tilde q\mapsto\tfrac12(\tilde q-\alpha_\nu\tilde q)$ onto the axis line. The twist is the companion of the inner involution on the same axis: $\operatorname{Ad}_\nu$ isolates the negated plane $\nu^\perp$ against the axis plane $\mathbb{C}_\nu$, and $\alpha_\nu$ isolates the axis line against the scalar line and that plane. The three involutions ${}^{\natural}$, $\operatorname{Ad}_\nu$ and $\alpha_\nu$ thus cut the orthogonal splitting $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\nu\oplus\nu^\perp$ into its three two-sided groupings, and the twist decomposition is the one in which the axis line stands alone.
 
 The plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ is not a subalgebra: for $\nu=\vec e_x$ the units $\vec e_y$ and $\vec e_z$ of the plane multiply to $\vec e_x$, outside it. The decomposition depends on the axis $\mathbb{R}\nu$ and not on the unit chosen to name it, and the negative twist $-\alpha_\nu$ cuts the same two eigenspaces with the labels exchanged, as the reflection does for the inner involution.
 
@@ -68,21 +68,21 @@ On the two remarkable subspaces the polar decomposition specialises. A nonzero s
 
 **Theorem.** The additive decompositions of $\mathbb{H}$ cut out by its involutions, and the multiplicative decomposition cut out by the norm, are exactly these four: the scalar–vector decomposition of dimensions $1+3$, the axis decomposition of dimensions $2+2$ along a unit imaginary, the twist decomposition of dimensions $3+1$ along the same axis, and the polar decomposition.
 
-**Proof.** The involutions available on the elements of $\mathbb{H}$, up to sign, are of three kinds, by *Quaternion Involutions and Projections*. The coordinate involution is ${}^{\natural}$ and its negative, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}$ and $\mathrm{Vect}(\mathbb{H})$, giving the scalar–vector decomposition; the inner involutions are the $\iota_\nu$, one per axis line, and their negatives $\rho_\nu$, with the two eigenspaces $\mathbb{C}_\nu$ and $\nu^\perp$, giving the axis decomposition; and the twists are the $\alpha_\nu={}^{\natural}\iota_\nu$, one per axis line, and their negatives, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and $\mathbb{R}\nu$, giving the twist decomposition. No other involution is available, and the eigenspace decomposition of an involution is determined by it, so the additive list is complete. For the multiplicative one, the norm is the only quadratic form on the element with $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ and positive values, its positive square root is the modulus, and normalising by it gives the rotor; there is no second multiplicative decomposition, the modulus being one-dimensional.
+**Proof.** The involutions available on the elements of $\mathbb{H}$, up to sign, are of three kinds, by *Quaternion Involutions and Projections*. The coordinate involution is ${}^{\natural}$ and its negative, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}$ and $\mathrm{Vect}(\mathbb{H})$, giving the scalar–vector decomposition; the inner involutions are the $\operatorname{Ad}_\nu$, one per axis line, and their negatives $\rho_\nu$, with the two eigenspaces $\mathbb{C}_\nu$ and $\nu^\perp$, giving the axis decomposition; and the twists are the $\alpha_\nu={}^{\natural}\operatorname{Ad}_\nu$, one per axis line, and their negatives, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and $\mathbb{R}\nu$, giving the twist decomposition. No other involution is available, and the eigenspace decomposition of an involution is determined by it, so the additive list is complete. For the multiplicative one, the norm is the only quadratic form on the element with $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ and positive values, its positive square root is the modulus, and normalising by it gives the rotor; there is no second multiplicative decomposition, the modulus being one-dimensional.
 
 ## Summary
 
-The quaternion algebra decomposes four ways. Additively by the natural sign into the scalar line and the vector space, of dimensions $1+3$, with the projections $\tfrac12(\tilde q\pm \tilde q^{\natural})$. Additively along a unit imaginary $\nu$, by the inner involution, into the plane $\mathbb{C}_\nu$ and the orthogonal plane $\nu^\perp$, of dimensions $2+2$, refining the vector part as $\mathbb{R}\nu\oplus\nu^\perp$; and, on the same axis, by the twist ${}^{\natural}\iota_\nu$, into the plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and the axis line $\mathbb{R}\nu$ alone, of dimensions $3+1$, with the axis line isolated. Multiplicatively, by the positive square root of the norm, into a modulus and a unit rotor, $\tilde q=|\tilde q|u$. These four are all the decompositions the involutions and the norm provide.
+The quaternion algebra decomposes four ways. Additively by the natural sign into the scalar line and the vector space, of dimensions $1+3$, with the projections $\tfrac12(\tilde q\pm \tilde q^{\natural})$. Additively along a unit imaginary $\nu$, by the inner involution, into the plane $\mathbb{C}_\nu$ and the orthogonal plane $\nu^\perp$, of dimensions $2+2$, refining the vector part as $\mathbb{R}\nu\oplus\nu^\perp$; and, on the same axis, by the twist ${}^{\natural}\operatorname{Ad}_\nu$, into the plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and the axis line $\mathbb{R}\nu$ alone, of dimensions $3+1$, with the axis line isolated. Multiplicatively, by the positive square root of the norm, into a modulus and a unit rotor, $\tilde q=|\tilde q|u$. These four are all the decompositions the involutions and the norm provide.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$ | the scalar–vector decomposition, dimensions $1+3$ |
-| $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ | the plane of the inner involution $\iota_\nu$, a commutative subalgebra |
-| $\nu^\perp$ | the orthogonal plane, the anti-fixed space of $\iota_\nu$ |
+| $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ | the plane of the inner involution $\operatorname{Ad}_\nu$, a commutative subalgebra |
+| $\nu^\perp$ | the orthogonal plane, the anti-fixed space of $\operatorname{Ad}_\nu$ |
 | $\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp$ | the axis decomposition, dimensions $2+2$ |
-| $\alpha_\nu={}^{\natural}\iota_\nu$ | the twist, the involutive anti-automorphism of the axis |
+| $\alpha_\nu={}^{\natural}\operatorname{Ad}_\nu$ | the twist, the involutive anti-automorphism of the axis |
 | $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ | the fixed plane of the twist, scalar part plus the orthogonal plane |
 | $\mathbb{H}=(\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp)\oplus\mathbb{R}\nu$ | the twist decomposition, dimensions $3+1$ |
 | $\lvert \tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus of a nonzero quaternion, positive real |

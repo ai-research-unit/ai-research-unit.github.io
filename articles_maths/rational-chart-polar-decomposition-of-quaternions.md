@@ -339,7 +339,7 @@ The cut and the missing point are exactly as in the complex case: one unit facto
 
 ### The Cayley Transform in SU(2)
 
-Let $V=\iota(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and
+Let $V=\operatorname{Mat}(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and
 
 $$
 V^{\dagger}=-V, \qquad V^2=-\langle \vec v\rangle_{\natural} I .
@@ -348,7 +348,7 @@ $$
 The chart is the **Cayley transform** of $V$:
 
 $$
-M(\vec v) = \iota\bigl(u(\vec v)\bigr) = (I-V)(I+V)^{-1}.
+M(\vec v) = \operatorname{Mat}\bigl(u(\vec v)\bigr) = (I-V)(I+V)^{-1}.
 $$
 
 The matrices $I-V$ and $I+V$ commute, and $I+V$ is invertible because its eigenvalues are $1\pm i\sqrt{\langle \vec v\rangle_{\natural}}$. The matrix $M(\vec v)$ is $*$-unitary,
@@ -465,7 +465,7 @@ The chart is rational in both directions and misses the unit factor $-1$, so the
 | $\vec v=(1-u)(1+u)^{-1}$ | the inverse chart |
 | $\mathbb{H}\setminus(-\infty,0]$ | the domain of the chart decomposition |
 | $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$ | the group law in the coordinate |
-| $V=\iota(\vec v)$ | the skew-Hermitian matrix of $\vec v$ |
+| $V=\operatorname{Mat}(\vec v)$ | the skew-Hermitian matrix of $\vec v$ |
 | $M(\vec v)=(I-V)(I+V)^{-1}$ | the Cayley transform into $SU(2)$ |
 
 ## Further Reading

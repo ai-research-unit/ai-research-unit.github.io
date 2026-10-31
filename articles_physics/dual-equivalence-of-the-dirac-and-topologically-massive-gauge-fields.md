@@ -6,7 +6,7 @@ A massive spin-1 field can acquire its mass in more than one way. The **Proca** 
 
 This article records that equivalence and the machinery it uses. It is the physics companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* and of *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*: the parent action is written in the s-vector variables, and the two eliminations pass through the self-dual field strength and the cubic (order-three ding) form of those articles.
 
-The conventions are those of the companion articles: four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon^{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon^{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article.
+The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry its generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon^{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon^{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article. The conventions are those of the companion articles.
 
 ## The Parent Action
 

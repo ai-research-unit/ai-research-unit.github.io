@@ -345,28 +345,28 @@ of dimension $(p-1)+(5-p)+1=5$.
 **Definition.** For $k=1,\dots,5$ let $E_k=\operatorname{diag}(I_k,0_{6-k})$. The **corner embedding** of $M_k$ is
 
 $$
-\iota_k:M_k(\mathbb{C})\longrightarrow M_6(\mathbb{C}),
+\operatorname{inc}_k:M_k(\mathbb{C})\longrightarrow M_6(\mathbb{C}),
 \qquad
-\iota_k(A)=\begin{pmatrix}A&0\\0&0\end{pmatrix}=E_kAE_k .
+\operatorname{inc}_k(A)=\begin{pmatrix}A&0\\0&0\end{pmatrix}=E_kAE_k .
 $$
 
 The **unital embedding** is
 
 $$
-\widehat\iota_k(A)=\begin{pmatrix}A&0\\0&I_{6-k}\end{pmatrix}.
+\operatorname{inc}^{\mathrm{un}}_k(A)=\begin{pmatrix}A&0\\0&I_{6-k}\end{pmatrix}.
 $$
 
-**Proposition.** $\iota_k$ is an injective algebra homomorphism with unit $E_k$; $\widehat\iota_k$ is an injective unital algebra homomorphism with unit $I_6$. On the images,
+**Proposition.** $\operatorname{inc}_k$ is an injective algebra homomorphism with unit $E_k$; $\operatorname{inc}^{\mathrm{un}}_k$ is an injective unital algebra homomorphism with unit $I_6$. On the images,
 
 $$
-\operatorname{tr}_{M_6}\iota_k(A)=\operatorname{tr}_{M_k}A,
+\operatorname{tr}_{M_6}\operatorname{inc}_k(A)=\operatorname{tr}_{M_k}A,
 \qquad
-\det\widehat\iota_k(A)=\det_{M_k}A,
+\det\operatorname{inc}^{\mathrm{un}}_k(A)=\det_{M_k}A,
 \qquad
-\det\iota_k(A)=0\ \text{for }k<6 .
+\det\operatorname{inc}_k(A)=0\ \text{for }k<6 .
 $$
 
-**Proof.** The block products are the products of the blocks. The trace of $\iota_k(A)$ is the trace of $A$ plus $6-k$ zeros. The determinant of the unital embedding is the product of $\det A$ and $\det I_{6-k}=1$; the corner embedding has a zero block, so its determinant vanishes.
+**Proof.** The block products are the products of the blocks. The trace of $\operatorname{inc}_k(A)$ is the trace of $A$ plus $6-k$ zeros. The determinant of the unital embedding is the product of $\det A$ and $\det I_{6-k}=1$; the corner embedding has a zero block, so its determinant vanishes.
 
 **Corollary (the chain of categories).** The unital embeddings give a chain
 
@@ -463,7 +463,7 @@ the two traceless corner tori and the relative scale. The relative scale is the 
 | $N$ | the transpose mass block $FME$ |
 | $T_p,T_{6-p}$ | the traceless corner tori, of dimensions $p-1$ and $5-p$ |
 | $t/s$ | the relative scale |
-| $\iota_k,\widehat\iota_k$ | the corner and unital embeddings of $M_k$ |
+| $\operatorname{inc}_k,\operatorname{inc}^{\mathrm{un}}_k$ | the corner and unital embeddings of $M_k$ |
 
 ## Further Reading
 

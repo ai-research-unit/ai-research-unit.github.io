@@ -15,11 +15,11 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 **Definition.** An **automorphism** of $\mathbb{H}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}\to\mathbb{H}$ with $\sigma(\tilde q_1\tilde q_2) = \sigma(\tilde q_1)\sigma(\tilde q_2)$ and $\sigma(1) = 1$. The automorphisms form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$.
 
-**Definition.** For a unit $u\in\mathbb{H}$ the map $\iota_u(\tilde q) = u\tilde qu^{-1}$ is the **inner automorphism** determined by $u$. Since the centre is $\mathbb{R}$, one has $\iota_u = \iota_{\lambda u}$ for every non-zero real $\lambda$, so $\iota_u$ depends only on the class of $u$ in $Sp(1)/\{\pm1\}$.
+**Definition.** For a unit $u\in\mathbb{H}$ the map $\operatorname{Ad}_u(\tilde q) = u\tilde qu^{-1}$ is the **inner automorphism** determined by $u$. Since the centre is $\mathbb{R}$, one has $\operatorname{Ad}_u = \operatorname{Ad}_{\lambda u}$ for every non-zero real $\lambda$, so $\operatorname{Ad}_u$ depends only on the class of $u$ in $Sp(1)/\{\pm1\}$.
 
-**Proposition.** $\iota_u$ is an automorphism for every unit $u$, the assignment $u\mapsto\iota_u$ is a group homomorphism $Sp(1)\to\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$, and its kernel is $\{\pm1\}$.
+**Proposition.** $\operatorname{Ad}_u$ is an automorphism for every unit $u$, the assignment $u\mapsto\operatorname{Ad}_u$ is a group homomorphism $Sp(1)\to\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$, and its kernel is $\{\pm1\}$.
 
-*Proof.* For units $u,v$, $\iota_u\iota_v = \iota_{uv}$, and $\iota_u^{-1} = \iota_{u^{-1}}$, so the assignment is a homomorphism into bijective $\mathbb{R}$-algebra maps. Its kernel consists of the units with $u\tilde qu^{-1} = \tilde q$ for all $\tilde q$, namely the units of the centre $\mathbb{R}$, that is $\{\pm1\}$.
+*Proof.* For units $u,v$, $\operatorname{Ad}_u\operatorname{Ad}_v = \operatorname{Ad}_{uv}$, and $\operatorname{Ad}_u^{-1} = \operatorname{Ad}_{u^{-1}}$, so the assignment is a homomorphism into bijective $\mathbb{R}$-algebra maps. Its kernel consists of the units with $u\tilde qu^{-1} = \tilde q$ for all $\tilde q$, namely the units of the centre $\mathbb{R}$, that is $\{\pm1\}$.
 
 **Theorem (Skolem–Noether for $\mathbb{H}$).** Every $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ is inner. Consequently the homomorphism $Sp(1)\to\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ is surjective and
 
@@ -27,9 +27,9 @@ $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong Sp(1)/\{\pm1\}.
 $$
 
-*Proof.* The algebra $\mathbb{H}$ is central simple over $\mathbb{R}$ by *Quaternion Ideals and Simplicity*, and the Skolem–Noether theorem states that every $k$-algebra automorphism of a finite-dimensional central simple $k$-algebra is inner; quoting it as standard gives surjectivity of $u\mapsto\iota_u$ onto the automorphism group. The kernel is $\{\pm1\}$ by the proposition, so the first isomorphism theorem gives the displayed isomorphism.
+*Proof.* The algebra $\mathbb{H}$ is central simple over $\mathbb{R}$ by *Quaternion Ideals and Simplicity*, and the Skolem–Noether theorem states that every $k$-algebra automorphism of a finite-dimensional central simple $k$-algebra is inner; quoting it as standard gives surjectivity of $u\mapsto\operatorname{Ad}_u$ onto the automorphism group. The kernel is $\{\pm1\}$ by the proposition, so the first isomorphism theorem gives the displayed isomorphism.
 
-**Remark.** The anti-automorphism $\tilde q\mapsto\tilde q^{\natural}$ is not an automorphism, since it reverses products, and it is not the identity $\iota_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.
+**Remark.** The anti-automorphism $\tilde q\mapsto\tilde q^{\natural}$ is not an automorphism, since it reverses products, and it is not the identity $\operatorname{Ad}_u$ for any unit; it is excluded from the automorphism group. There is no second coset of automorphisms here, because the centre of $\mathbb{H}$ is $\mathbb{R}$, which has no non-trivial field automorphism.
 
 ## The Automorphism Group as the Rotation Group
 
@@ -39,15 +39,15 @@ $$ \boxed{\; \operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3) \;} ,$$
 
 the rotation group of the three-dimensional space $\operatorname{Im}\mathbb{H}$.
 
-*Proof.* An automorphism $\sigma$ fixes the centre $\mathbb{R}e_t$ and preserves squares, so it preserves the set $\operatorname{Im}\mathbb{H} = \{\vec q : \vec q^2\in\mathbb{R}e_t,\ \vec q^2\leq0\}$: a quaternion has real square exactly when it is real or pure, and the square is non-positive exactly when it is pure (or zero). On that set the quaternion norm is $\langle \vec q\rangle_{\natural} = -\vec q^2$, whence $\sigma$ preserves the quaternion norm. Thus every automorphism restricts to an orthogonal map of $\operatorname{Im}\mathbb{H}$; since by Skolem–Noether every automorphism is inner and every inner automorphism is the adjoint action of a unit, the restriction has determinant $+1$ by *Quaternion Rotations and Reflections*. Conversely every rotation of $\operatorname{Im}\mathbb{H}$ extends to an automorphism — it is the adjoint action of a unit quaternion — and the extension is unique because $\mathbb{H}$ is generated by $\operatorname{Im}\mathbb{H}$. Identifying the cover $Sp(1)\to SO(3)$ with $u\mapsto\iota_u$ gives the isomorphism.
+*Proof.* An automorphism $\sigma$ fixes the centre $\mathbb{R}e_t$ and preserves squares, so it preserves the set $\operatorname{Im}\mathbb{H} = \{\vec q : \vec q^2\in\mathbb{R}e_t,\ \vec q^2\leq0\}$: a quaternion has real square exactly when it is real or pure, and the square is non-positive exactly when it is pure (or zero). On that set the quaternion norm is $\langle \vec q\rangle_{\natural} = -\vec q^2$, whence $\sigma$ preserves the quaternion norm. Thus every automorphism restricts to an orthogonal map of $\operatorname{Im}\mathbb{H}$; since by Skolem–Noether every automorphism is inner and every inner automorphism is the adjoint action of a unit, the restriction has determinant $+1$ by *Quaternion Rotations and Reflections*. Conversely every rotation of $\operatorname{Im}\mathbb{H}$ extends to an automorphism — it is the adjoint action of a unit quaternion — and the extension is unique because $\mathbb{H}$ is generated by $\operatorname{Im}\mathbb{H}$. Identifying the cover $Sp(1)\to SO(3)$ with $u\mapsto\operatorname{Ad}_u$ gives the isomorphism.
 
 **Corollary.** As a real manifold, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ is diffeomorphic to the projective space $\mathbb{RP}^3$ and has dimension $3$; it is connected and compact, and it is isomorphic to the group of orientation-preserving isometries of $\operatorname{Im}\mathbb{H}$ fixing the origin.
 
 *Proof.* $Sp(1)/\{\pm1\}\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, of dimension three; $SO(3)$ is connected and compact.
 
-**Example.** For $u = \vec e_x$ the inner automorphism $\iota_{\vec e_x}$ fixes $\vec e_x$ and the centre and reverses the signs of $\vec e_y$ and $\vec e_z$: indeed $\vec e_x\vec e_y\vec e_x^{-1} = -(\vec e_x\vec e_y)\vec e_x = -\vec e_z\vec e_x = -\vec e_y$, using $\vec e_x\vec e_y = \vec e_z$ and $\vec e_z\vec e_x = \vec e_y$. It is the half-turn about the axis $\vec e_x$.
+**Example.** For $u = \vec e_x$ the inner automorphism $\operatorname{Ad}_{\vec e_x}$ fixes $\vec e_x$ and the centre and reverses the signs of $\vec e_y$ and $\vec e_z$: indeed $\vec e_x\vec e_y\vec e_x^{-1} = -(\vec e_x\vec e_y)\vec e_x = -\vec e_z\vec e_x = -\vec e_y$, using $\vec e_x\vec e_y = \vec e_z$ and $\vec e_z\vec e_x = \vec e_y$. It is the half-turn about the axis $\vec e_x$.
 
-**Remark.** The automorphisms of order two are exactly the halfturns about the axes. An inner automorphism $\iota_u$ satisfies $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the identity, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $\iota_u = \iota_\nu$, which fixes the plane $\operatorname{span}(e_t,\nu)$ and is the half-turn about the axis line $\mathbb{R}\nu$. There is thus one non-trivial automorphism of order two for each axis line of $\operatorname{Im}\mathbb{H}$, and they are the involutions of *Quaternion Involutions and Projections*.
+**Remark.** The automorphisms of order two are exactly the halfturns about the axes. An inner automorphism $\operatorname{Ad}_u$ satisfies $\operatorname{Ad}_u^2 = \operatorname{Ad}_{u^2} = \mathrm{id}$ exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the identity, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $\operatorname{Ad}_u = \operatorname{Ad}_\nu$, which fixes the plane $\operatorname{span}(e_t,\nu)$ and is the half-turn about the axis line $\mathbb{R}\nu$. There is thus one non-trivial automorphism of order two for each axis line of $\operatorname{Im}\mathbb{H}$, and they are the involutions of *Quaternion Involutions and Projections*.
 
 ## Derivations of the Quaternion Algebra
 
@@ -89,7 +89,7 @@ $$
 
 and it is the Lie algebra of the automorphism group: $\operatorname{Lie}\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Der}_{\mathbb{R}}(\mathbb{H})$.
 
-*Proof.* With the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ the vector subspace is the cross-product Lie algebra, isomorphic to $\mathrm{SO}(3)$, equivalently to $\mathrm{SU}(2)$; the two are isomorphic as real Lie algebras. The exponential identity $\exp(t\operatorname{ad}_a)(\tilde q) = \exp(ta)\,\tilde q\,\exp(-ta) = \iota_{\exp(ta)}(\tilde q)$ holds by the standard series computation, so every inner derivation integrates to an inner automorphism and the Lie functor applied to $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3)$ recovers the derivation algebra.
+*Proof.* With the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ the vector subspace is the cross-product Lie algebra, isomorphic to $\mathrm{SO}(3)$, equivalently to $\mathrm{SU}(2)$; the two are isomorphic as real Lie algebras. The exponential identity $\exp(t\operatorname{ad}_a)(\tilde q) = \exp(ta)\,\tilde q\,\exp(-ta) = \operatorname{Ad}_{\exp(ta)}(\tilde q)$ holds by the standard series computation, so every inner derivation integrates to an inner automorphism and the Lie functor applied to $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3)$ recovers the derivation algebra.
 
 **Proposition.** Every element of $\operatorname{Im}\mathbb{H}$ gives an inner derivation, and $\operatorname{ad}_a$ depends only on the class of $a$ modulo the centre; the exponential of a derivation acts on the imaginary subspace as the rotation generated by the cross-product field of the corresponding vector.
 
@@ -99,7 +99,7 @@ and it is the Lie algebra of the automorphism group: $\operatorname{Lie}\operato
 
 Every $\mathbb{R}$-algebra automorphism of the quaternion algebra is inner, by Skolem–Noether applied to the central simple algebra $\mathbb{H}$, and the inner automorphisms form the group $Sp(1)/\{\pm1\}\cong SO(3)$ of rotations of the imaginary subspace; the group is connected and compact, diffeomorphic to $\mathbb{RP}^3$, of dimension three, and the anti-automorphism of quaternion conjugation is not among its elements. There is no further coset of automorphisms, because the centre $\mathbb{R}$ has no non-trivial automorphism.
 
-Every derivation of $\mathbb{H}$ is inner, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H}$, a three-dimensional real Lie algebra with basis $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$ and brackets $[D_1,D_2] = D_3$ and cyclic; under the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ it is $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, and $\exp(t\operatorname{ad}_a) = \iota_{\exp(ta)}$ identifies it as the Lie algebra of the automorphism group.
+Every derivation of $\mathbb{H}$ is inner, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H}$, a three-dimensional real Lie algebra with basis $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$ and brackets $[D_1,D_2] = D_3$ and cyclic; under the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ it is $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, and $\exp(t\operatorname{ad}_a) = \operatorname{Ad}_{\exp(ta)}$ identifies it as the Lie algebra of the automorphism group.
 
 The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the smallness of its centre leaves no further coset of automorphisms.
 
@@ -112,7 +112,7 @@ The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the 
 | ${}^{\natural}$ | Quaternion conjugation, an anti-automorphism, not in $\operatorname{Aut}$ |
 | $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t$ | Centre; kernel of every derivation |
 | $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ | Unit quaternions |
-| $\iota_u(\tilde q) = u\tilde qu^{-1}$ | Inner automorphism determined by the unit $u$ |
+| $\operatorname{Ad}_u(\tilde q) = u\tilde qu^{-1}$ | Inner automorphism determined by the unit $u$ |
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong Sp(1)/\{\pm1\}\cong SO(3)$ | Automorphism group, $\cong\mathbb{RP}^3$ |
 | $\operatorname{ad}_a(\tilde q) = [a,\tilde q]$ | Inner derivation determined by $a$ |
 | $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\operatorname{Im}\mathbb{H}$ | Derivation algebra, dimension $3$ |

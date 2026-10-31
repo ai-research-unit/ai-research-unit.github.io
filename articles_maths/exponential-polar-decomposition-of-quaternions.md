@@ -377,7 +377,7 @@ which is not $\vec e_x$, because the two exponents do not commute. The fibre of 
 
 ### The Exponential of a Conformal Matrix
 
-Let $\iota$ be the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. For a unit pure quaternion $\vec n$, the matrix $N=\iota(\vec n)$ satisfies
+Let $\operatorname{Mat}$ be the embedding of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Embedding in M_2(C)*. For a unit pure quaternion $\vec n$, the matrix $N=\operatorname{Mat}(\vec n)$ satisfies
 
 $$
 N^{\dagger}=-N, \qquad N^2=-I, \qquad \operatorname{tr}N=0 .
@@ -386,11 +386,11 @@ $$
 The exponential form of a quaternion reads, in matrices,
 
 $$
-M_{\tilde q}=\iota(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
+M_{\tilde q}=\operatorname{Mat}(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
 =r\bigl(\cos\theta\,I+\sin\theta\,N\bigr),
 $$
 
-with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\iota(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is
+with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\operatorname{Mat}(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is
 
 $$
 \det M_{\tilde q}=r^2=\langle\tilde q\rangle_{\natural},
@@ -610,7 +610,7 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 | $\tilde q_{\log}=q_{\log}e_t+\vec q_{\log}$ | the exponent, principal when $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ |
 | $q_{\log}=\ln r$, $\vec q_{\log}=\vec v=\theta\vec n$ | the scalar and vector coordinates of the exponent |
 | $\log\tilde q=\ln r+\theta\vec n$ | the principal logarithm, on $\mathbb{H}\setminus(-\infty,0]$ |
-| $N=\iota(\vec n)$ | the skew-Hermitian matrix of the unit axis |
+| $N=\operatorname{Mat}(\vec n)$ | the skew-Hermitian matrix of the unit axis |
 | $M_{\tilde q}=\exp(\ln r\,I+\theta N)$ | the matrix exponential |
 | $\mathbb{H}\setminus(-\infty,0]$ | the image of the principal coordinates |
 

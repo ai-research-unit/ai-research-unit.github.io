@@ -227,7 +227,7 @@ $$
 $$
 and the two statements together are the content of the model: flatness is what distinguishes the group-valued field from a general algebra-valued gauge potential.
 
-**What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j^{\mu 5}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model agenda record for the spinor sector, seen here at the level of the target manifold.
+**What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j_{5\mu}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model agenda record for the spinor sector, seen here at the level of the target manifold.
 
 ## The Abelian Target, the Compact Phase and the Axion
 

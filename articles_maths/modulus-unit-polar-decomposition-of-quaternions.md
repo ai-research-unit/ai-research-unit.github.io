@@ -190,35 +190,35 @@ Both subspaces are definite, unlike the split-quaternion case, where the pure su
 The algebra $\mathbb{H}$ embeds in $M_2(\mathbb{C})$ by
 
 $$
-\iota(e_t)=\begin{pmatrix}1&0\\0&1\end{pmatrix}, \qquad
-\iota(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}, \qquad
-\iota(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad
-\iota(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\operatorname{Mat}(e_t)=\begin{pmatrix}1&0\\0&1\end{pmatrix}, \qquad
+\operatorname{Mat}(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}, \qquad
+\operatorname{Mat}(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad
+\operatorname{Mat}(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
 On a general quaternion,
 
 $$
-\iota(\tilde q)=\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\-iq_x+q_y&q_t+iq_z\end{pmatrix}.
+\operatorname{Mat}(\tilde q)=\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\-iq_x+q_y&q_t+iq_z\end{pmatrix}.
 $$
 
 Two identities hold. The determinant is the quaternion norm,
 
 $$
-\det\iota(\tilde q)=q_t^2+q_x^2+q_y^2+q_z^2=\langle\tilde q\rangle_{\natural},
+\det\operatorname{Mat}(\tilde q)=q_t^2+q_x^2+q_y^2+q_z^2=\langle\tilde q\rangle_{\natural},
 $$
 
 and the image of the unit sphere is the special $*$-unitary group,
 
 $$
-\iota\bigl(\mathrm{Sp}(1)\bigr)=SU(2).
+\operatorname{Mat}\bigl(\mathrm{Sp}(1)\bigr)=SU(2).
 $$
 
 The image of $\mathbb{H}$ is the real subspace of matrices of the form $\begin{pmatrix}\alpha&\beta\\-\bar\beta&\bar\alpha\end{pmatrix}$ with $\alpha,\beta\in\mathbb{C}$; it is a real form of $M_2(\mathbb{C})$, not the whole algebra.
 
 ### The Matrix of a Unit
 
-For a unit $\tilde u_{\mathrm r}$ the matrix $M_{\tilde u}=\iota(\tilde u_{\mathrm r})$ satisfies
+For a unit $\tilde u_{\mathrm r}$ the matrix $M_{\tilde u}=\operatorname{Mat}(\tilde u_{\mathrm r})$ satisfies
 
 $$
 M_{\tilde u}^{\dagger}M_{\tilde u}=I, \qquad \det M_{\tilde u}=1,
@@ -232,10 +232,10 @@ $$
 
 ### The Matrix Polar Decomposition
 
-Let $B=M_{\tilde q}$. Since $\iota$ is an algebra homomorphism and $\iota(\tilde q^{\natural})=B^{\dagger}$, the norm identity reads
+Let $B=M_{\tilde q}$. Since $\operatorname{Mat}$ is an algebra homomorphism and $\operatorname{Mat}(\tilde q^{\natural})=B^{\dagger}$, the norm identity reads
 
 $$
-B^{\dagger}B = \iota(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = r^2 I .
+B^{\dagger}B = \operatorname{Mat}(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = r^2 I .
 $$
 
 The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ $*$-unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the $*$-unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.
@@ -327,7 +327,7 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 | $\mathbb{R}_{\mathbb{H}}$ | the scalar line, the Hermitian subspace |
 | $\operatorname{Im}\mathbb{H}$ | the pure quaternions, the anti-Hermitian subspace |
 | $SO(3)\cong S^3/\{\pm1\}$ | the rotation group, the adjoint quotient |
-| $\iota$ | the embedding $\mathbb{H}\to M_2(\mathbb{C})$ |
+| $\operatorname{Mat}$ | the embedding $\mathbb{H}\to M_2(\mathbb{C})$ |
 | $M_{\tilde q}$ | the matrix of $\tilde q$ |
 | $M_{\tilde u}\in SU(2)$ | the matrix of a unit factor |
 

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the seven companions, whose glyphs it indexes.
+This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.
 
 The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 
-The article is the last of the eight and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
+The article is the last of the nine and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
 
 ## The Superscripts
 

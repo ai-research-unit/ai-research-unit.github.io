@@ -13,15 +13,15 @@ Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x
 
 ## The Spinor Representation
 
-**Definition.** The **spinor representation** of the quaternion algebra is the action of $\mathbb{H}$ on the two-component complex vectors $\mathbb{C}^2$ by the matrix realization $\iota$ of *Quaternion 2x2 Matrix Element Representation*:
+**Definition.** The **spinor representation** of the quaternion algebra is the action of $\mathbb{H}$ on the two-component complex vectors $\mathbb{C}^2$ by the matrix realization $\operatorname{Mat}$ of *Quaternion 2x2 Matrix Element Representation*:
 
 $$
-\tilde q\cdot v = \iota(\tilde q)\,v, \qquad v\in\mathbb{C}^2.
+\tilde q\cdot v = \operatorname{Mat}(\tilde q)\,v, \qquad v\in\mathbb{C}^2.
 $$
 
 **Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional $*$-unitary representation of $Sp(1)\cong SU(2)$.
 
-*Proof.* The action is a representation because $\iota$ is multiplicative, and it is faithful because $\iota$ is injective. For a unit $u$, $\iota(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\iota(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
+*Proof.* The action is a representation because $\operatorname{Mat}$ is multiplicative, and it is faithful because $\operatorname{Mat}$ is injective. For a unit $u$, $\operatorname{Mat}(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\operatorname{Mat}(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
 
 **Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{Sym}^2\oplus\Lambda^2$, of dimensions three and one.
 
@@ -29,7 +29,7 @@ $$
 
 **Corollary.** The spinor representation is complex and of complex dimension two, so it is not equivalent to any real representation of $\mathbb{H}$; the quaternionic multiplication by $\vec e_x,\vec e_y,\vec e_z$ supplies the three complex structures on $\mathbb{C}^2$ that make it a quaternionic line.
 
-*Proof.* If the module were real of dimension two, the representation would be an injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, which does not exist by *Quaternion 2x2 Matrix Element Representation*. The three images $\iota(\vec e_k)$ satisfy $\iota(\vec e_k)^2 = -I$ and pairwise anticommute, so they are three complex structures on $\mathbb{C}^2$.
+*Proof.* If the module were real of dimension two, the representation would be an injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, which does not exist by *Quaternion 2x2 Matrix Element Representation*. The three images $\operatorname{Mat}(\vec e_k)$ satisfy $\operatorname{Mat}(\vec e_k)^2 = -I$ and pairwise anticommute, so they are three complex structures on $\mathbb{C}^2$.
 
 ## The Clifford Algebra Identification
 
@@ -75,9 +75,9 @@ $$ \boxed{\; \mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R}) \;} .$$
 
 ## The Role of Choices
 
-**Proposition.** Each of the identifications above depends on a choice: the Clifford identification $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ on the choice of an orthonormal basis $(f_1,f_2)$ of the negative plane; the spinor representation on the choice of the isomorphism $\iota$; and the complex module structure on the choice of root $\tilde\xi$.
+**Proposition.** Each of the identifications above depends on a choice: the Clifford identification $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ on the choice of an orthonormal basis $(f_1,f_2)$ of the negative plane; the spinor representation on the choice of the isomorphism $\operatorname{Mat}$; and the complex module structure on the choice of root $\tilde\xi$.
 
-*Proof.* An orthonormal basis of the negative plane determines the generators $f_1,f_2$ and hence the identification; the matrix realization $\iota$ is fixed by a specific choice of the images of $\vec e_x,\vec e_y,\vec e_z$; and $\mathbb{C}_{\tilde\xi}$ depends on $\tilde\xi$.
+*Proof.* An orthonormal basis of the negative plane determines the generators $f_1,f_2$ and hence the identification; the matrix realization $\operatorname{Mat}$ is fixed by a specific choice of the images of $\vec e_x,\vec e_y,\vec e_z$; and $\mathbb{C}_{\tilde\xi}$ depends on $\tilde\xi$.
 
 **Theorem.** Two choices in any of these three lists differ by the action of the compact group $Sp(1)$ (equivalently $SO(3)$ on the imaginary subspace), and all the structural statements of the article are invariant under this action.
 
@@ -85,7 +85,7 @@ $$ \boxed{\; \mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R}) \;} .$$
 
 ## Summary
 
-The spinor representation of the quaternion algebra is the action on two-component complex vectors by the matrix realization $\iota$; it is faithful, its restriction to $Sp(1)$ is the defining $*$-unitary representation, and its symmetric square is the adjoint representation, so it is the source of the double cover $Sp(1)\to SO(3)$. The module carries three anticommuting complex structures $\iota(\vec e_x),\iota(\vec e_y),\iota(\vec e_z)$ and is therefore a quaternionic line.
+The spinor representation of the quaternion algebra is the action on two-component complex vectors by the matrix realization $\operatorname{Mat}$; it is faithful, its restriction to $Sp(1)$ is the defining $*$-unitary representation, and its symmetric square is the adjoint representation, so it is the source of the double cover $Sp(1)\to SO(3)$. The module carries three anticommuting complex structures $\operatorname{Mat}(\vec e_x),\operatorname{Mat}(\vec e_y),\operatorname{Mat}(\vec e_z)$ and is therefore a quaternionic line.
 
 The Clifford identifications are $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, with the scalar subspace as the degree-zero part and the vector subspace as the sum of the degree-one and degree-two parts of the first.
 
@@ -97,8 +97,8 @@ The regular module of $\mathbb{H}$ is simple, with endomorphism ring $\mathbb{H}
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$ |
-| $\iota : \mathbb{H}\to M_2(\mathbb{C})$ | Matrix realization, used for the spinor action |
-| $\tilde q\cdot v = \iota(\tilde q)v$, $v\in\mathbb{C}^2$ | Spinor representation |
+| $\operatorname{Mat} : \mathbb{H}\to M_2(\mathbb{C})$ | Matrix realization, used for the spinor action |
+| $\tilde q\cdot v = \operatorname{Mat}(\tilde q)v$, $v\in\mathbb{C}^2$ | Spinor representation |
 | $Sp(1)\cong SU(2)$ | Unit quaternions, the spin group |
 | $\mathrm{Sym}^2,\Lambda^2$ | Symmetric and alternating squares of the spinor module |
 | $\mathrm{Cl}(V,\tilde q)$, $\mathrm{Cl}_{p,\tilde q}$, $\mathrm{Cl}^0$ | Clifford algebra, real signature form, even part |

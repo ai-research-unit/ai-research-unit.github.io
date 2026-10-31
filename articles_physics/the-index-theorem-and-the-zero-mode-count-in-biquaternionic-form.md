@@ -22,6 +22,8 @@ The article states the index theorem as the standard result it is, derives the s
 
 On a four-manifold with a spin structure and a gauge bundle in a representation $R$ of the structure group, the twisted Dirac operator is
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
+
 $$
 \mathcal{D}_R \;=\; \gamma_\mu D_\mu ,
 \qquad

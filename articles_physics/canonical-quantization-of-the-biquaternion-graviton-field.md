@@ -6,6 +6,8 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
+
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
 \qquad

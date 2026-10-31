@@ -18,6 +18,8 @@ The plan is the algebra first, because the paper's product is not the corpus's a
 
 The paper uses the scalar–vector form. A biquaternion is a pair
 
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
+
 $$
 \mathcal{B} = (s, \vec q), \qquad s \in \mathbb{C}, \quad \vec q \in \mathbb{C}^3,
 $$

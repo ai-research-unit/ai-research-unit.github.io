@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article is the first of the eight conventions articles of the mathematical corpus, and the one that fixes the base: the base and its units, the shape of a generic element and its coefficients, the remarkable subspaces and the conjugations. It assumes nothing beyond the vocabulary of a set, a group and a ring, which it recalls only where a convention depends on it.
+This article is the first of the nine conventions articles of the mathematical corpus, and the one that fixes the base: the base and its units, the shape of a generic element and its coefficients, the remarkable subspaces and the conjugations. It assumes nothing beyond the vocabulary of a set, a group and a ring, which it recalls only where a convention depends on it.
 
 It states conventions only. The proofs and the properties of the objects it names belong to the articles cited beside them. A convention recorded here is not a claim that the alternative is wrong: several of these choices are freely made where either choice would be defensible, and what is not free is *consistency*, since every later article inherits them.
 
-The seven companion articles carry the rest, in dependency order: *Product and Form Conventions*, *Norm and Unitary Conventions*, *Special Element and Peirce Conventions*, *Frame Conventions*, *Matrix Representations Conventions*, *Operator and Calculus Conventions*, and *Index, Notation and Corpus Conventions*. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the $\mathbb{B}$ frame, the $\mathbb{M}_-$ frame, the Clifford map and the metric each frame carries, the fifth the two matrix models, the sixth the operators and the calculus, and the seventh the indices, the working conventions of the corpus and the typography.
+The eight companion articles carry the rest, in dependency order: *Product and Form Conventions*, *Norm and Unitary Conventions*, *Special Element and Peirce Conventions*, *Frame Conventions*, *Matrix Representations Conventions*, *Operator and Calculus Conventions*, *Operator Family Conventions*, and *Index, Notation and Corpus Conventions*. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the $\mathbb{B}$ frame, the $\mathbb{M}_-$ frame, the Clifford map and the metric each frame carries, the fifth the two matrix models, the sixth the operators and the calculus, the seventh the four letters, the names of the sets and the four adjoint signs of the operator families, and the eighth the indices, the working conventions of the corpus and the typography.
 
-The order is the order of dependence. The base is read first; the products come before the forms, the forms before the norms; the special elements follow the base and precede the frames, which precede the representations, whose canonical frame is their Peirce frame; the calculus follows the products and the forms; and the indices come last because they index the seven. The table at the end of the article is the index of the glyphs of the whole series.
+The order is the order of dependence. The base is read first; the products come before the forms, the forms before the norms; the special elements follow the base and precede the frames, which precede the representations, whose canonical frame is their Peirce frame; the calculus follows the products and the forms, the operator families follow the calculus; and the indices come last because they index the eight. The table at the end of the article is the index of the glyphs of the whole series.
 
 ## Groups, Rings and Operations
 
@@ -262,7 +262,7 @@ The biquaternion algebra splits into the centre $\mathbb{C}_{\mathbb{B}}$ and th
 
 The biquaternion algebra carries three involutions — the coefficient bar, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the natural sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.
 
-This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus and the indices are the subjects of the seven companions, and the table below is the index of the glyphs they share.
+This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families and the indices are the subjects of the eight companions, and the table below is the index of the glyphs they share.
 
 ## Summary of Notation
 

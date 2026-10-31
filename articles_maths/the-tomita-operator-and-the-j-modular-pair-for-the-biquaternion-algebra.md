@@ -20,7 +20,7 @@ holds for all $\tilde Q,\tilde Q_4,\tilde Q_3$.
 
 **Proof.** Positive definiteness is $\langle\tilde Q,\tilde Q\rangle=\sum_\mu|Q_\mu|^{2}>0$ for $\tilde Q\neq0$, and Hermitian symmetry is immediate from the coefficient expansion. For the adjoint axiom, $\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\mathrm{Sc}((\tilde Q\tilde Q_4)^{*}\tilde Q_3)=\mathrm{Sc}(\tilde Q_4^{*}\tilde Q^{*}\tilde Q_3)$, and the last expression is $\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle$; the trace property of $\mathrm{Sc}$ is not even needed, associativity alone giving the identity.
 
-**Proposition (the cyclic and separating unit).** Let $\xi=\iota(1)=e_t$. The orbit is $\mathcal{M}\xi=\{\tilde Q e_t\}=\mathbb{B}$, so $\xi$ is cyclic for $\mathcal{M}$, and $L_{\tilde Q}\xi=\tilde Q=0$ forces $\tilde Q=0$, so $\xi$ is separating for $\mathcal{M}$. Hence the Tomita operator of the pair $(\mathcal{M},\xi)$ is defined and densely defined.
+**Proposition (the cyclic and separating unit).** Let $\xi=e_t$, the unit. The orbit is $\mathcal{M}\xi=\{\tilde Q e_t\}=\mathbb{B}$, so $\xi$ is cyclic for $\mathcal{M}$, and $L_{\tilde Q}\xi=\tilde Q=0$ forces $\tilde Q=0$, so $\xi$ is separating for $\mathcal{M}$. Hence the Tomita operator of the pair $(\mathcal{M},\xi)$ is defined and densely defined.
 
 **Proof.** $L_{\tilde Q}\xi=\tilde Q$, and the map $\tilde Q\mapsto\tilde Q$ is onto $\mathbb{B}$ and injective. Density is trivial in finite dimension, and separatingness is the injectivity just used.
 

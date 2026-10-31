@@ -21,7 +21,7 @@ $$
 **Theorem (the isometry).** The coefficient map
 
 $$
-\iota:\mathbb{B}\longrightarrow\mathbb{R}^{8},\qquad \tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu\longmapsto(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z),
+\operatorname{coef}:\mathbb{B}\longrightarrow\mathbb{R}^{8},\qquad \tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu\longmapsto(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z),
 $$
 
 is a linear isometry of $(\mathbb{B},(\cdot,\cdot)_{\mathbb{R}})$ onto $\mathbb{R}^{8}$ with the standard inner product.
@@ -124,7 +124,7 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 |---|---|
 | $(\tilde{Q}_1,\tilde{Q}_2)_{\mathbb{R}}=\sum_\mu(q_{1\mu} q_{2\mu}+q'_{1\mu} q'_{2\mu})$ | Real inner product; positive definite |
 | $\|\tilde{Q}\|_E=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$ | Euclidean norm |
-| $\iota:\mathbb{B}\to\mathbb{R}^{8}$ | Linear isometry onto $\mathbb{R}^{8}$ |
+| $\operatorname{coef}:\mathbb{B}\to\mathbb{R}^{8}$ | Linear isometry onto $\mathbb{R}^{8}$ |
 | $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$ | Normed-algebra inequality, sharp |
 | $H(t,\tilde{Q})=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
 | $S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$ | Euclidean unit sphere; not a group |
