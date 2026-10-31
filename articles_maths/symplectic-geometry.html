@@ -100,9 +100,9 @@ $$</p>
 <p>$$
 \theta_p(v) = p\,(d\pi_p\, v),
 $$</p>
-<p>so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q^1, \ldots, q^m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq^i$. The form</p>
+<p>so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q_1, \ldots, q_m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq_i$. The form</p>
 <p>$$
-\omega = -\,d\theta = \sum_{i=1}^{m} dq^i \wedge dp_i
+\omega = -\,d\theta = \sum_{i=1}^{m} dq_i \wedge dp_i
 $$</p>
 <p>is closed because it is exact, and nondegenerate because in the coordinates $(q, p)$ it has the standard shape; so $(T^*Q, -d\theta)$ is a symplectic manifold, the <strong>cotangent bundle</strong> of $Q$. It is the source of the examples in mechanics and of the local model for a Lagrangian neighbourhood below.</p>
 <p><strong>Example.</strong> An oriented surface $\Sigma$ with an area form $\omega$ is symplectic: a $2$-form on a surface is automatically closed, and nondegeneracy is exactly the nowhere-vanishing condition. The symplectomorphisms are the area-preserving diffeomorphisms, and the symplectic volume is the area. In dimension two, symplectic geometry is thus the geometry of area, and the Darboux theorem says that any two area forms are locally the same; the global invariants are the total area and, more subtly, the isotopy class of the area form.</p>
@@ -184,7 +184,7 @@ $$</p>
 <p><strong>Proposition.</strong> Let $L$ be an isotropic submanifold of a symplectic manifold of dimension $2m$. Then $\dim L \leq m$, and $L$ is Lagrangian if and only if it is isotropic of dimension $m$. If $L$ is Lagrangian then $TL = TL^{\perp}$ and $T^*L \cong TL^{\perp}$ by the bundle isomorphism $v \mapsto \omega(v, \cdot)|_{TL}$.</p>
 <p><strong>Proof.</strong> At each point the tangent space $T_xL$ is an isotropic subspace of the symplectic vector space $T_xM$, so the dimension bound and the characterisation of the Lagrangian case are those of <em>Symplectic Forms and Poisson Brackets</em>. When $\dim L = m$ the isotropic subspace is maximal isotropic, hence equals its own orthogonal complement, and $TL^{\perp}/TL \cong T^*L$.</p>
 <p><strong>Example.</strong> Let $Q$ be a manifold and let $Q_0 \subseteq T^*Q$ be the zero section, $Q_0 = \{(q, 0)\}$. Then $\theta$ restricts to zero on $Q_0$, since $p = 0$ there, so $\omega = -d\theta$ restricts to zero; hence $Q_0$ is Lagrangian. The same holds for the graph of a closed $1$-form $\beta$ on $Q$: the graph is the image of $s_\beta(q) = (q, \beta_q)$, and $s_\beta^*\omega = s_\beta^*(-d\theta) = -d(\beta) = 0$ exactly when $d\beta = 0$. Thus the closed $1$-forms on $Q$ parametrise the Lagrangian sections of $T^*Q$.</p>
-<p><strong>Example.</strong> Let $N \subseteq Q$ be a submanifold. Its <strong>conormal bundle</strong> $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q^{k+1} = \cdots = q^m = 0$, it is described by $q^{k+1} = \cdots = q^m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq^i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.</p>
+<p><strong>Example.</strong> Let $N \subseteq Q$ be a submanifold. Its <strong>conormal bundle</strong> $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q_{k+1} = \cdots = q_m = 0$, it is described by $q_{k+1} = \cdots = q_m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq_i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.</p>
 <p><strong>Theorem (Lagrangian neighbourhood theorem).</strong> Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $\Xi$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : \Xi \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.</p>
 <p><strong>Proof sketch.</strong> The bundle isomorphism $TL^{\perp} \cong T^*L$ identifies the normal bundle of $L$ with $T^*L$, and the exponential map of an auxiliary Riemannian metric provides a diffeomorphism from a neighbourhood of the zero section of $TL^{\perp}$ to a neighbourhood of $L$. Pulling $\omega$ back to $T^*L$ gives a closed form agreeing with the standard form along the zero section; the Moser argument of the Darboux theorem, applied with the linear homotopy between the two forms and the fact that they are cohomologous, produces a diffeomorphism of a possibly smaller neighbourhood correcting the difference.</p>
 <p><strong>Remark.</strong> The theorem is the local normal form for a Lagrangian submanifold and the exact analogue of the Darboux theorem for a symplectic point: a neighbourhood of a Lagrangian is modelled on a neighbourhood of the zero section of a cotangent bundle, and no further invariant survives. The global theory of Lagrangians — their intersections, their generating functions, their Floer theory — is the subject of the companion articles in this Part.</p>
@@ -261,7 +261,7 @@ $$</p>
 <td>Symplectic volume form; orients $M$</td>
 </tr>
 <tr>
-<td>$\theta = \sum_i p_i\,dq^i$</td>
+<td>$\theta = \sum_i p_i\,dq_i$</td>
 <td>Tautological $1$-form on $T^*Q$; $\omega = -d\theta$</td>
 </tr>
 <tr>

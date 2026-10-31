@@ -76,7 +76,7 @@
 <h2 id="riemannian-metrics">Riemannian Metrics</h2>
 <p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth family of inner products, that is, a smooth section $g$ of $S^2T^*M$ that is positive definite on each fibre: $g(X,Y)=g(Y,X)$ and $g(X,X)>0$ for $X\neq0$.</p>
 <p>The metric provides the musical isomorphisms $\flat : TM \to T^*M$, $X \mapsto g(X,\cdot)$ and its inverse $\sharp$, the metric volume form $\mathrm{vol}_g$ in the chosen orientation, the Hodge star $\star$, the codifferential and the Laplace–Beltrami operator of the operator group, and the length of a curve. All of these are the metric <strong>used as a tool</strong>; the metric as an object — its curvature, its geodesics, its isometries — is <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> in Part IV, and is not developed here.</p>
-<p><strong>Example.</strong> On $\mathbb{R}^n$ the <strong>Euclidean metric</strong> has $g = \sum_i dx^i\otimes dx^i$ in the standard coordinates; on a submanifold of $\mathbb{R}^n$ the <strong>induced metric</strong> is the restriction of the Euclidean metric to the tangent spaces; on a Lie group the <strong>bi-invariant metrics</strong> come from an invariant inner product on the Lie algebra, as in <em>Lie Groups</em> in this Part. The flat torus and the round sphere are the two basic closed examples.</p>
+<p><strong>Example.</strong> On $\mathbb{R}^n$ the <strong>Euclidean metric</strong> has $g = \sum_i dx_i\otimes dx_i$ in the standard coordinates; on a submanifold of $\mathbb{R}^n$ the <strong>induced metric</strong> is the restriction of the Euclidean metric to the tangent spaces; on a Lie group the <strong>bi-invariant metrics</strong> come from an invariant inner product on the Lie algebra, as in <em>Lie Groups</em> in this Part. The flat torus and the round sphere are the two basic closed examples.</p>
 <h2 id="the-fundamental-theorem">The Fundamental Theorem</h2>
 <p><strong>Theorem (fundamental theorem of Riemannian geometry).</strong> On a Riemannian manifold $(M,g)$ there is exactly one connection $\nabla$ on the tangent bundle that is metric-compatible and torsion-free, the <strong>Levi-Civita connection</strong>. It is determined by the Koszul formula</p>
 <p>$$
@@ -84,7 +84,7 @@
 $$</p>
 <p>and in a coordinate chart its components are the Christoffel symbols</p>
 <p>$$
-\boxed{\;\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr)\;}.
+\boxed{\;\Gamma_{ijk} = \tfrac12 \sum_l (g^{-1})_{il}\bigl(\partial/\partial x_j g_{kl} + \partial/\partial x_k g_{jl} - \partial/\partial x_l g_{jk}\bigr)\;}.
 $$</p>
 <p><em>Proof.</em> This is the theorem of <em>The Covariant Derivative</em> in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.</p>
 <p><strong>Proposition (properties of the Levi-Civita connection).</strong> Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{d\gamma/dt}d\gamma/dt=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.</p>
@@ -159,7 +159,7 @@ $$</p>
 <td>The unique metric-compatible torsion-free connection</td>
 </tr>
 <tr>
-<td>$\Gamma^i_{jk} = \tfrac12g^{il}(\partial/\partial x^j\,g_{kl}+\partial/\partial x^k\,g_{jl}-\partial/\partial x^l\,g_{jk})$</td>
+<td>$\Gamma_{ijk} = \tfrac12(g^{-1})_{il}(\partial/\partial x_j\,g_{kl}+\partial/\partial x_k\,g_{jl}-\partial/\partial x_l\,g_{jk})$</td>
 <td>Christoffel symbols</td>
 </tr>
 <tr>

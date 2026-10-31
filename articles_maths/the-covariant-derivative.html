@@ -84,11 +84,11 @@ $$</p>
 \boxed{\;\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E)\;}.
 $$</p>
 <p>Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.</p>
-<p><em>Proof.</em> The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)^a = X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s^a)$ on each component; the symbol follows.</p>
+<p><em>Proof.</em> The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)_a = X(s_a) + \sum_b \omega_{ab}(X)\,s_b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s_a)$ on each component; the symbol follows.</p>
 <h3 id="local-expression-and-the-affine-space-of-connections">Local Expression and the Affine Space of Connections</h3>
-<p>In a local frame $e = (e_1, \ldots, e_r)$ over an open set $U$, the connection form $\omega = (\omega^a_{\ b})$ is the matrix of $1$-forms defined by $\nabla e_b = \sum_a \omega^a_{\ b}\otimes e_a$, and a section $s = \sum_b s^b e_b$ has</p>
+<p>In a local frame $e = (e_1, \ldots, e_r)$ over an open set $U$, the connection form $\omega = (\omega_{ab})$ is the matrix of $1$-forms defined by $\nabla e_b = \sum_a \omega_{ab}\otimes e_a$, and a section $s = \sum_b s_b e_b$ has</p>
 <p>$$
-\nabla_X s = \sum_a \Bigl(X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b\Bigr) e_a, \qquad \text{equivalently} \quad \nabla = d + \omega
+\nabla_X s = \sum_a \Bigl(X(s_a) + \sum_b \omega_{ab}(X)\,s_b\Bigr) e_a, \qquad \text{equivalently} \quad \nabla = d + \omega
 $$</p>
 <p>on the components, where $d$ is the exterior derivative of the coefficient functions. Under a change of frame $e' = eg$ the form transforms as $\omega' = g^{-1}\omega g + g^{-1}dg$.</p>
 <p><strong>Proposition.</strong> The operators $\nabla_X$ arising from the connections on $E$ form an affine space: if $\nabla$ and $\nabla'$ are connections, then $\nabla' - \nabla$ is a $C^\infty(M)$-linear map $\Gamma(E) \to \Gamma(T^*M \otimes E)$, that is, a section of $T^*M \otimes \operatorname{End}(E)$, and every such section arises.</p>
@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p>an equation whose local form in a frame pulled back to $[a,b]$ is the linear system of ordinary differential equations</p>
 <p>$$
-\left(dV^{a}/dt\right)(t) + \sum_b \omega^a_{\ b}(\left(d\gamma/dt\right)(t))\, V^b(t) = 0, \qquad a = 1, \ldots, r .
+\left(dV_a/dt\right)(t) + \sum_b \omega_{ab}(\left(d\gamma/dt\right)(t))\, V_b(t) = 0, \qquad a = 1, \ldots, r .
 $$</p>
 <p><strong>Theorem (existence and uniqueness).</strong> For every curve $\gamma$ and every initial value $v \in E_{\gamma(a)}$ there is a unique parallel section $V$ along $\gamma$ with $V(a) = v$.</p>
 <p><em>Proof.</em> Locally the equation is a linear system of ordinary differential equations with continuous coefficients, so the theorem of <em>Ordinary Differential Equations</em>, later in this Part, gives a unique local solution for each initial value; the solutions on the overlaps of a cover of the compact interval agree by uniqueness, and a finite cover glued by the composition of the flows gives the global solution on $[a,b]$. The solution depends smoothly on the initial value because the flow of a linear system is linear in the initial condition.</p>
@@ -150,7 +150,7 @@ $$</p>
 <p>as $\epsilon \to 0$. Consequently the curvature endomorphisms $R(X,Y)(x)$ span the Lie algebra of the holonomy group, and the connection is flat if and only if the parallel transport around every contractible loop is the identity.</p>
 <p><em>Proof sketch.</em> Write the parallel transport as the flow of the linear system $dV/dt = -\omega(d\gamma/dt)V$ and expand the ordered product of the four flows in powers of $\epsilon$ by the Lie–Trotter product formula; the first-order terms cancel by the opposite traversals, and the second-order term is the commutator $d\omega + \omega\wedge\omega$ evaluated on $X\wedge Y$, which is $R(X,Y)$. The span statement is the theorem of Ambrose and Singer, quoted from <em>Fibre Bundles, Connections and Curvature</em>; the flatness criterion follows because a flat connection has a flat local frame, in which $P_\epsilon = \mathrm{id}$.</p>
 <h3 id="the-autoparallel-curves">The Autoparallel Curves</h3>
-<p><strong>Definition.</strong> A smooth curve $\gamma$ in $M$ is <strong>autoparallel</strong> for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $d^2\gamma_{i}/dt^2 + \sum_{j,k}\Gamma^i_{jk}d\gamma_{j}/dt d\gamma_{k}/dt = 0$.</p>
+<p><strong>Definition.</strong> A smooth curve $\gamma$ in $M$ is <strong>autoparallel</strong> for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma_{ijk}$ the equation reads $d^2\gamma_{i}/dt^2 + \sum_{j,k}\Gamma_{ijk}d\gamma_{j}/dt d\gamma_{k}/dt = 0$.</p>
 <p>The autoparallel curves are the straight lines of the connection: they are the curves whose velocity is parallel along themselves, and in a flat frame they are the linear curves. For the Levi–Civita connection of a Riemannian metric they are the geodesics, and the metric geometry of those curves — the exponential map, the length-minimising property, the completeness — is <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> in Part IV; what belongs to the present article is the differential equation, its existence and uniqueness by <em>Ordinary Differential Equations</em>, and the fact that the equation is the same for every connection on the tangent bundle.</p>
 <h2 id="the-metric-compatible-and-torsion-free-case">The Metric-Compatible and Torsion-Free Case</h2>
 <p><strong>Definition.</strong> Let $E$ carry a metric $h$, a smooth family of inner products on the fibres. A connection $\nabla$ on $E$ is <strong>metric-compatible</strong> (or <strong>metric</strong>) if</p>
@@ -188,7 +188,7 @@ $$</p>
 <td>Leibniz rule; $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$</td>
 </tr>
 <tr>
-<td>$\omega = (\omega^a_{\ b})$, $\nabla = d + \omega$</td>
+<td>$\omega = (\omega_{ab})$, $\nabla = d + \omega$</td>
 <td>Connection form in a frame; local components</td>
 </tr>
 <tr>
