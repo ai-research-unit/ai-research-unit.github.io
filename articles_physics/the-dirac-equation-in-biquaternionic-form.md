@@ -124,7 +124,7 @@ $$
 \tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z
 $$
 
-is the first-order operator of the algebra. Its image under $\iota_{\mathrm{Cl}}$ lies in $\mathrm{Cl}_{1,3}^+\cong\mathbb{B}$: the spatial units $\vec e_k$ correspond to spacelike bivectors, and $e_t$ corresponds to the identity. The odd Dirac operator on the four-component module is a different object; it lives in the cell algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and the gamma matrices are a frame chosen in that algebra. The gradient is primary; the contraction is a frame-dependent representative.
+is the first-order operator of the algebra. Its Clifford image lies in $\mathrm{Cl}_{1,3}^+\cong\mathbb{B}$: the spatial units $\vec e_k$ correspond to spacelike bivectors, and $e_t$ corresponds to the identity. The odd Dirac operator on the four-component module is a different object; it lives in the cell algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and the gamma matrices are a frame chosen in that algebra. The gradient is primary; the contraction is a frame-dependent representative.
 
 The biquaternionic gradient satisfies the factorization
 
@@ -332,7 +332,7 @@ $$
 
 The two displays are one operator in two bases; the change of basis is unitary and preserves $\gamma_5^2=1$ and $\{\gamma_5,\gamma_\mu\}=0$. The biquaternion object is $\chi$; $\gamma_5$ is its Clifford shadow. The matrix display is the representation on $\Delta$, not the definition. No Clifford algebra is needed to define the grading: $\chi$ is the central sign of $\mathbb{B}[j]$.
 
-**The sign is one bit, fixed here.** The dictionary extends to the complexified algebra only after the adjoined root is placed, and both $\iota_{\mathrm{Cl}}(\tilde\Xi_{\mathrm{ad}})=+i_{\mathrm{Cl}}$ and $-i_{\mathrm{Cl}}$ are admissible; the display above is the choice $\chi\mapsto+\gamma_5$. The other choice gives $-\gamma_5$ and exchanges the names left and right. The mass bilinear is even under the exchange and the axial bilinear is odd, so the choice is made once and held; this article holds the one above.
+**The sign is one bit, fixed here.** The dictionary extends to the complexified algebra only after the adjoined root is placed, and both $+i_{\mathrm{Cl}}$ and $-i_{\mathrm{Cl}}$ are admissible as the image of $\tilde\Xi_{\mathrm{ad}}$; the display above is the choice $\chi\mapsto+\gamma_5$. The other choice gives $-\gamma_5$ and exchanges the names left and right. The mass bilinear is even under the exchange and the axial bilinear is odd, so the choice is made once and held; this article holds the one above.
 
 **The Peirce sign is not this sign.** The right multiplication $P=R_{i\vec e_z}$ acts as $+1$ on $S_+$ and $-1$ on $S_-$; both are copies of $S$. It is inner, non-central, and left $\mathbb{B}$-linear. The chiral sign $\chi$ is central, outside $\mathbb{B}_{\mathbb{R}}$, and grades $S$ against $S^{\mathrm{c}}$. The two signs answer different questions: $P$ says which copy, $\chi$ says which chirality.
 

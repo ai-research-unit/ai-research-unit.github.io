@@ -50,10 +50,10 @@ $$
 **The field.** The relativistic scalar field of the framework is the complex biquaternion field $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\phi$ a complex scalar function. Its action is $S[\tilde{\Phi}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density
 
 $$
-\mathcal{L} = +\,\mathrm{Sc}\!\left[(\tilde{\nabla}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right].
+\mathcal{L} = +\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right] + \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right].
 $$
 
-Expanding the scalar parts, $\mathcal{L} = +(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) - \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) - (m^2c^2/\hbar^2)\phi^*\phi$, and its Euler–Lagrange equation is the biquaternion Klein–Gordon equation
+Expanding the scalar parts, $\mathcal{L} = +(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) + \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) + (m^2c^2/\hbar^2)\phi^*\phi$, and its Euler–Lagrange equation is the biquaternion Klein–Gordon equation
 
 $$
 \left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
@@ -89,17 +89,17 @@ leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central
 
 $$
 J_\nu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\nu\,\tilde{\Phi})}\,\delta\tilde{\Phi} + \frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\nu\,\tilde{\Phi}^{*})}\,\delta\tilde{\Phi}^{*}
-= -i\left(\phi^*\partial/\partial Q_\nu\,\phi - \phi\,\partial/\partial Q_\nu\,\phi^*\right),
+= i\left(\phi^*\partial/\partial Q_\nu\,\phi - \phi\,\partial/\partial Q_\nu\,\phi^*\right),
 $$
 
-the second equality after using $\partial\mathcal{L}/\partial(\partial/\partial Q_\nu\,\phi) = +\partial/\partial Q_\nu\,\phi^*$ and $\partial\mathcal{L}/\partial(\partial/\partial Q_\nu\,\phi^*) = +\partial/\partial Q_\nu\,\phi$, and setting $\alpha = 1$. Packaged as a biquaternion,
+the second equality after using $\partial\mathcal{L}/\partial(\partial/\partial Q_\nu\,\phi) = -\partial/\partial Q_\nu\,\phi^*$ and $\partial\mathcal{L}/\partial(\partial/\partial Q_\nu\,\phi^*) = -\partial/\partial Q_\nu\,\phi$, and setting $\alpha = 1$. Packaged as a biquaternion,
 
 $$
-\boxed{\ \tilde{J} = -i\left[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}\right] = \sum_\nu J_\nu e_\nu\ }
+\boxed{\ \tilde{J} = i\left[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}\right] = \sum_\nu J_\nu e_\nu\ }
 \qquad (\tilde{\Phi} = \phi\,e_t).
 $$
 
-**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = -i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $-\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = -\frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = -i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J^0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
+**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J^0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
 
 **Conservation.** Forming the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 
@@ -129,7 +129,7 @@ which is the continuity equation $\partial/\partial t'\rho + \mathrm{div}\,\vec 
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
 
-**Relation to the current already in the corpus.** *The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho = \frac{i\hbar}{2mc^2}(\tilde{\Phi}^*\partial/\partial t'\tilde{\Phi} - \tilde{\Phi}\partial/\partial t'\tilde{\Phi}^*)$ and $\vec j = -\frac{i\hbar}{2m}(\tilde{\Phi}^*\nabla\tilde{\Phi} - \tilde{\Phi}\nabla\tilde{\Phi}^*)$. Comparing component by component, that current equals $+\frac{\hbar}{2m}\tilde{J}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $-\hbar/2m$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
+**Relation to the current already in the corpus.** *The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho = \frac{i\hbar}{2mc^2}(\tilde{\Phi}^*\partial/\partial t'\tilde{\Phi} - \tilde{\Phi}\partial/\partial t'\tilde{\Phi}^*)$ and $\vec j = -\frac{i\hbar}{2m}(\tilde{\Phi}^*\nabla\tilde{\Phi} - \tilde{\Phi}\nabla\tilde{\Phi}^*)$. Comparing component by component, that current equals $-\frac{\hbar}{2m}\tilde{J}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $-\hbar/2m$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
 
 **Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ with $\tilde J = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = \sqrt{\mu}\,(\partial/\partial t'\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
 
@@ -220,14 +220,14 @@ The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\r
 The same translation symmetry applied to the field action gives the **canonical energy–momentum**, the Noether current of spacetime translations. For the complex scalar field it is
 
 $$
-\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} + \eta_{\mu\nu}\,\mathcal{L}_\phi\;}
+\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} - \eta_{\mu\nu}\,\mathcal{L}_\phi\;}
 $$
 
 with the scalar Lagrangian of the same frame,
 
 $$
-\mathcal{L}_\phi = -\sum_{\mu,\nu}\eta_{\mu\nu}\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} - \frac{m^2c^2}{\hbar^2}|\phi|^2
-= \frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 - |\nabla\phi|^2 - \frac{m^2c^2}{\hbar^2}|\phi|^2 .
+\mathcal{L}_\phi = \sum_{\mu,\nu}\eta_{\mu\nu}\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{m^2c^2}{\hbar^2}|\phi|^2
+= -\frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 .
 $$
 
 Here $x_\mu=(ct',x,y,z)$ is the real frame with $\eta=\mathrm{diag}(-1,+1,+1,+1)$, distinct from the $Q_\mu$ frame of the gradient: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not, and the tensor's time component is real only in the second frame. Translation invariance gives
@@ -248,7 +248,7 @@ positive for every configuration because each term is a square. This was checked
 
 **The Maxwell case in the corpus form.** For the electromagnetic field the corpus's object is $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S\in\mathbb{M}_+$, with $W$ the energy density and $\vec S = \vec E\times\vec H$ the Poynting vector, and the conservation law is $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ with $\tilde{P}$ the power–force density; the source-free case is $\tilde{\nabla}\tilde{W} = 0$. Its scalar part is the Poynting theorem, and the sign structure is the one the energy–momentum exercise verifies: the Hermitian form passes the test, while the real form $W + \frac{1}{c}\vec S$ does not, by a factor $i$ on the Poynting part. Read as a Noether statement, $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ says that the translation current of the Maxwell field is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
 
-**A caution on the $ict'$ convention.** The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: for a plane wave $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=\frac{1}{c^2}|\dot\phi|^2-|\nabla\phi|^2-\mu^2|\phi|^2$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative. This is the same caution the energy–momentum exercise records for the trace.
+**A caution on the $ict'$ convention.** The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: for a plane wave $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=-\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -300,7 +300,7 @@ Noether's theorem in biquaternionic form joins the action of *Relativistic Mecha
 
 $$
 \tilde{J} = i\left[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}\right] = \sum_\nu J_\nu e_\nu,
-\qquad J_\nu = -i\left(\phi^*\partial/\partial Q_\nu\,\phi - \phi\,\partial/\partial Q_\nu\,\phi^*\right),
+\qquad J_\nu = i\left(\phi^*\partial/\partial Q_\nu\,\phi - \phi\,\partial/\partial Q_\nu\,\phi^*\right),
 $$
 
 which lies in $\mathbb{M}_-$ and satisfies the Noether identity
@@ -342,12 +342,12 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{R}_0\in\mathbb{M}_-$ | Constant translation (displacement) |
 | $\tilde{\Phi} = \phi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Complex biquaternion scalar field |
-| $\mathcal{L} = \sum_\mu\varepsilon_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) - \frac{m^2c^2}{\hbar^2}|\phi|^2$ | Field Lagrangian density |
+| $\mathcal{L} = \sum_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\phi|^2$ | Field Lagrangian density, $Q$ frame |
 | $\tilde{J} = i[\tilde{\Phi}^{*}\tilde{\nabla}\tilde{\Phi} - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}]$ | Central-phase Noether current, in $\mathbb{M}_-$ |
 | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ | Framework form of current conservation |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J$; $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ is charge conservation |
 | $x_\mu = (ct',x,y,z)$, $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Real frame of the energy–momentum tensor, distinct from $Q_\mu$ |
-| $T_{\mu\nu} = (\partial_\mu\phi^*)(\partial_\nu\phi) + (\partial_\mu\phi)(\partial_\nu\phi^*) + \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum of the field |
+| $T_{\mu\nu} = (\partial_\mu\phi^*)(\partial_\nu\phi) + (\partial_\mu\phi)(\partial_\nu\phi^*) - \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum of the field |
 | $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{M}_+$ |
 | $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\vec{L} = \tfrac12\sum L_{\mu\nu}\bar{e}_\mu e_\nu$ | Angular momentum and its bivector |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{M}_-$ |

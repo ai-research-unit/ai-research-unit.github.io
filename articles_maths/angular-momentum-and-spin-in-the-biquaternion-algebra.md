@@ -204,7 +204,7 @@ Each $S_\pm(\vec u)$ is a minimal left ideal, and $\mathbb{B}=S_+(\vec u)\oplus 
 
 **Proposition (the sphere of minimal left ideals).** The map $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere of $\mathfrak{g}$ onto the set of minimal left ideals of $\mathbb{B}$.
 
-*Proof.* The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose image lies in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of $\vec u\cdot\vec\sigma$, and $\vec u\mapsto$ that line is the standard identification.
+*Proof.* The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of $\vec u\cdot\vec\sigma$, and $\vec u\mapsto$ that line is the standard identification.
 
 **Proposition (the states in a copy).** In $S_+(\vec u)$,
 
@@ -272,7 +272,7 @@ A **subcarrier** of the regular module is a nonzero subspace $W\subseteq\mathbb{
 1. under left multiplication, the minimal left ideals $S_\pm(\vec u)$, $\vec u$ a unit real vector, all isomorphic to $S\cong\mathcal{V}_1$;
 2. under conjugation, $Z\cong\mathcal{V}_0$ and $V\cong\mathcal{V}_2$.
 
-*Proof.* The left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose image lies in a fixed subspace, and the minimal ones are those whose image is a line; these are the $S_\pm(\vec u)$ by the proposition above; $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$. For the adjoint action, let $W$ be invariant and irreducible. If $W\subseteq V$, then $W=V$, because the string $v_+,S_-v_+,S_-^2v_+$ spans $V$. If $W$ has a nonzero component in $Z$, then either $W=Z$ (when $W\cap V=0$) or $W$ contains $Z$ and a nonzero subspace of $V$, hence contains $V$, and then $W=\mathbb{B}$, which is reducible.
+*Proof.* The left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed subspace, and the minimal ones are those whose rows lie in a line; these are the $S_\pm(\vec u)$ by the proposition above; $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for every $\vec u$. For the adjoint action, let $W$ be invariant and irreducible. If $W\subseteq V$, then $W=V$, because the string $v_+,S_-v_+,S_-^2v_+$ spans $V$. If $W$ has a nonzero component in $Z$, then either $W=Z$ (when $W\cap V=0$) or $W$ contains $Z$ and a nonzero subspace of $V$, hence contains $V$, and then $W=\mathbb{B}$, which is reducible.
 
 **Corollary.** The spins of the irreducible subcarriers are $0$, $\tfrac12$ and $1$, of complex dimensions $1$, $2$ and $3$.
 

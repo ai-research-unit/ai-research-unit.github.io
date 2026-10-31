@@ -109,7 +109,7 @@ One article needed a frame change, not a lowering. [Why Complexify Spacetime?](.
 
 The pass left every file that mixes a slot or a pairing untouched. A partial lowering inside one formula would put two heights in one contraction, which is the error the rule exists to prevent.
 
-**The migration pass.** Twenty-eight further physics articles were rewritten after this article, and their rows are removed from the inventory above. Here each display was rewritten in the corpus form — a weight in the sum, a native algebraic product, or a relabel — and checked against the article's own expression; no display was relettered blindly.
+**The migration pass.** Thirty further physics articles were rewritten after this article, and their rows are removed from the inventory above. Here each display was rewritten in the corpus form — a weight in the sum, a native algebraic product, or a relabel — and checked against the article's own expression; no display was relettered blindly.
 
 | Article | The rewrite | Check |
 |---|---|---|
@@ -141,6 +141,8 @@ The pass left every file that mixes a slot or a pairing untouched. A partial low
 | [The Functional Determinant in Biquaternionic Form](../articles_physics/the-functional-determinant-in-biquaternionic-form.html) | $T^\mu{}_\mu\to\sum_\mu\varepsilon_\mu T_{\mu\mu}$, the variation left in $g_{\mu\nu}$ | label; the trace is the weighted sum |
 | [Gravitational Waves in Biquaternionic Form](../articles_physics/gravitational-waves-in-biquaternionic-form.html) | $\partial^\lambda\to\sum_\lambda\eta_{\lambda\lambda}\partial_\lambda$; $\eta^{\mu\nu}\to\sum_{\mu,\nu}\eta_{\mu\nu}$, $k^\mu\to k_\mu$ | exact; real frame $\eta=\mathrm{diag}(-1,+1,+1,+1)$, physical components kept |
 | [Maxwell's Equations in the Biquaternionic Formulation](../articles_physics/maxwells-equations-in-biquaternionic-form.html) | $A^\mu\to A_\mu$, $F^{\mu\nu}\to F_{\mu\nu}$, $J^\mu\to J_\mu$; $\partial/\partial Q_\mu A^\mu\to\sum_\mu\partial A_\mu/\partial Q_\mu$ | labels; the $i$ in $A_0$ carries the temporal sign, the divergence stays a plain sum |
+| [Exercise: The Electromagnetic Energy–Momentum Tensor](../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html) | $T^\mu{}_{\nu}\to\Pi_{\mu\nu}$ (first index the row); $T^{\mu\nu}\to T_{\mu\nu}$; $\partial_\mu T^{\mu\nu}\to\sum_\mu\partial_\mu\Pi_{\mu\nu}$; $\eta^{\mu\nu}\to\sum\eta_{\mu\nu}$ | $T_{00}=W$ and $\sum_\mu\Pi_{\mu\mu}=0$ recomputed; divergences vanish to $10^{-10}$; symmetry residual $0$ |
+| [The Majorana Equation in Biquaternionic Form](../articles_physics/the-majorana-equation-in-biquaternionic-form.html) | $\sigma^\mu\to\sigma_\mu$, $\bar\sigma^\mu\to\bar\sigma_\mu$, $r^\mu\to r_\mu$; $\eta^{\mu\nu}\to\mathring\eta_{\mu\nu}$ in the real block | Clifford relations and charge conjugation verified exactly; $\sigma_\mu\bar\sigma_\nu+\sigma_\nu\bar\sigma_\mu=2\eta_{\mu\nu}I_2$ |
 
 
 ## The Frames of the Inventory

@@ -249,7 +249,7 @@ $$
 h(X,Y)=\tau(XY^{*}),
 $$
 
-which is positive definite and compatible with the product. A Hermitian matrix $a$ has the spectral resolution $a=\sum_{i}\lambda_{i}P_{i}$ with real eigenvalues and orthogonal projections $P_{i}$; the eigenspace $AP_{i}$ is the space of matrices whose columns lie in the eigenspace of $\lambda_{i}$, and the form restricts to it as the positive definite trace form. The eigenprojectors are pairwise orthogonal, $h(P_{i},P_{j})=\tau(P_{i}P_{j})=\delta_{ij}\operatorname{rank}P_{i}$, and the Rayleigh quotient at $P_{i}$ is $\lambda_{i}$. The spectral resolution is the orthogonal direct sum of the spaces $AP_{i}$, and the form is block-diagonal on them.
+which is positive definite and compatible with the product. A Hermitian matrix $a$ has the spectral resolution $a=\sum_{i}\lambda_{i}P_{i}$ with real eigenvalues and orthogonal projections $P_{i}$; the eigenspace $AP_{i}$ is the space of matrices whose rows lie in the eigenspace of $\lambda_{i}$, and the form restricts to it as the positive definite trace form. The eigenprojectors are pairwise orthogonal, $h(P_{i},P_{j})=\tau(P_{i}P_{j})=\delta_{ij}\operatorname{rank}P_{i}$, and the Rayleigh quotient at $P_{i}$ is $\lambda_{i}$. The spectral resolution is the orthogonal direct sum of the spaces $AP_{i}$, and the form is block-diagonal on them.
 
 ### The Group Algebra
 

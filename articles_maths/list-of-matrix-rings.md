@@ -147,7 +147,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\langle A,B\rangle = \operatorname{Tr}(AB)$ | the trace form |
 | $\mathrm{GL}_n(k)$, $\mathrm{PGL}_n(k)$ | the units and the projective general linear group |
 | $\operatorname{End}_R(R^n)$ | the endomorphism ring, isomorphic to $M_n(R)$ |
-| $I_V$ | the left ideal of matrices whose columns lie in the subspace $V$ |
+| $I_V$ | the left ideal of matrices whose rows lie in the subspace $V$ |
 | $D$, $D^n$ | a division ring and its $n$-fold direct sum, the simple module |
 | $\prod_i M_{n_i}(D_i)$ | the Wedderburn–Artin decomposition of a semisimple ring |
 | $\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{O}$ | quaternions, biquaternions, split-complex numbers, dual numbers, octonions |
