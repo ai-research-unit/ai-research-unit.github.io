@@ -106,7 +106,7 @@ $$</p>
 <p>$$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
 \frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$</p>
-<p>where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is <strong>closed by an equation of state</strong>, usually $p = w\rho$, together with the conservation law $\nabla_\mu T^{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor</p>
+<p>where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is <strong>closed by an equation of state</strong>, usually $p = w\rho$, together with the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor</p>
 <p>$$
 T_{\mu\nu} = \left(\rho + p\right)\frac{v_\mu v_\nu}{c^2} + p\,g_{\mu\nu},
 $$</p>
@@ -169,13 +169,13 @@ $$</p>
 <h3 id="obstacle-with-a-known-route-the-spatial-curvature-frame">Obstacle with a known route: the spatial-curvature frame</h3>
 <p><em>Known:</em> the frame carries the $k=0$ FLRW metric exactly, and the pointwise linear-algebra construction of a frame for a constant-curvature slice is standard. <em>Open:</em> an explicit $\mathbb{M}_-$-valued frame $\tilde{E}_i$ with $\langle\tilde{E}_i,\tilde{E}_j\rangle_{\natural}$ equal to a constant-curvature $a^2\gamma_{ij}$, and its consistency in the two steps the route needs. <em>Would settle it:</em> the object is a pointwise linear isometry from the tangent space of a constant-curvature three-manifold, with its form of signature $(3,0)$, into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with the restricted form $\mathrm{diag}(1,1,1)$; the computation is to build it and verify the Gram matrix for $k=\pm1$. This is a finite-dimensional construction at each point and should close promptly. A negative result — that the pointwise isometry exists but cannot be glued into a frame with the required differentiability — would itself be a finding about the carrier, not a failure of the arithmetic.</p>
 <h3 id="obstacle-with-a-known-route-transcribing-the-friedmann-equations">Obstacle with a known route: transcribing the Friedmann equations</h3>
-<p><em>Known:</em> the Einstein equations are the framework's central open question, treated in the companion agenda; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. <em>Open:</em> whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. <em>Would settle it:</em> the object is the same action of the gravitational agenda, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\nabla_\mu T^{\mu\nu} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be <em>transcribed</em> — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the gravitational agenda exists to prevent.</p>
+<p><em>Known:</em> the Einstein equations are the framework's central open question, treated in the companion agenda; the Friedmann equations are that question on a homogeneous and isotropic ansatz, and the algebraic steps from the ansatz to the equations are standard. <em>Open:</em> whether the framework reproduces them, which it cannot do more strongly than it reproduces the Einstein equations themselves. <em>Would settle it:</em> the object is the same action of the gravitational agenda, restricted to the FLRW ansatz; the computation is to evaluate its variation on that ansatz and check the two equations, including the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$ that closes them. Until that action exists, the Friedmann equations in this framework can only be <em>transcribed</em> — written in the framework's notation on a carried FLRW metric — and a transcription is not a derivation. Stating them as derived would be exactly the promotion the gravitational agenda exists to prevent.</p>
 <p>This obstacle inherits a hard ceiling: because the framework has not derived the Einstein equations, it has not derived the Friedmann equations, and no cosmological result can be reported as a framework result while that remains so. The agenda's contribution is to say where the cosmological case sits in that structure, not to break the ceiling.</p>
 <h3 id="obstacle-with-no-route-yet-the-cosmological-source-in-rank-two-form">Obstacle with no route yet: the cosmological source in rank-two form</h3>
 <p>This is the obstacle specific to cosmology, and it is where the framework's invariant structure bites.</p>
 <p>The Friedmann equations require the <strong>perfect-fluid stress–energy tensor</strong>, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object. The bilinear sum</p>
 <p>$$
-\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t\;}
+\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu}\right) e_t\;}
 $$</p>
 <p>collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology: for a traceless symmetric object the packaging vanishes identically. The consequences for the cosmological source are immediate and sharp.</p>
 <ul>
@@ -345,7 +345,7 @@ $$</p>
 <td>standard notation</td>
 </tr>
 <tr>
-<td>$\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\eta^{\mu\nu}T_{\mu\nu})e_t$</td>
+<td>$\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu})e_t$</td>
 <td>the bilinear collapses a rank-two tensor to its trace</td>
 <td>recomputed here from an inherited identity</td>
 </tr>
