@@ -30,7 +30,7 @@ $$
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$
 
-with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\xi B_aB_a$ and the ghost term $-\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g f_{abc}A_{\mu b} c_c$.
+with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\xi\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.
 
 The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
 
@@ -278,6 +278,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$; has nilpotents, but is ungraded and has no odd elements |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational and material sectors; gauge field in $\mathbb{M}_-$, generators in $\mathbb{M}_+$ |
 | $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ | Gauge potential biquaternion |
+| $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f_{abc}$ | Structure constants; Jacobi identity required for nilpotency |
 | $g$, $D_\mu=\partial/\partial Q_\mu+gA_\mu$ | Coupling and covariant derivative |

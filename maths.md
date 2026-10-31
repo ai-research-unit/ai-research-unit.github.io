@@ -6709,7 +6709,7 @@
 <!-- $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$; an anti-representation with kernel the left annihilator; the matrix $B^{\mathsf T}\otimes I_2$; the four basis matrices and the same rank trichotomy. -->
 
 <a href="articles_maths/matrix-representations-the-two-sided-operators.html">Matrix Representations : The Two-Sided Operators</a>
-<!-- $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ with matrix $B_P^{\mathsf T}\otimes B_Q$; trace $4Q_tP_t$, determinant $N_Q^2N_P^2$, rank the product of the two ranks; the sixteen $T_{\mu\nu}=L_\mu R_\nu$ a basis of $M_4(\mathbb{C})$. -->
+<!-- $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ with matrix $B_P^{\mathsf T}\otimes B_Q$; the sixteen cells a basis; the coefficient matrix and the cone of products. The factorization is a bilinear map with one-dimensional fibres, so the image is a seven-dimensional cone and not a subspace, a monoid and not an additive semigroup. The length is the coefficient rank; the cone is the pure-tensor cone in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; the two adjoints, self-adjointness $\tilde P=\lambda\tilde Q$, isometry $\tilde P\tilde Q=\pm e_t$, multiplicativity $\tilde P=\tilde Q^{-1}$; no pin group. -->
 
 <a href="articles_maths/matrix-representations-the-hermitian-sandwich.html">Matrix Representations : The Hermitian Sandwich</a>
 <!-- $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$; multiplicative with defect $\tilde Q^{*}\tilde Q$; the automorphism group the $*$-unitary slice; the preservation of the Hermitian and anti-Hermitian halves and the vector action. -->
