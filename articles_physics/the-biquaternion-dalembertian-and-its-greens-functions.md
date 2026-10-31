@@ -110,7 +110,7 @@ $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial Q_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial Q_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
+= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
 = -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4x .
 $$
 The algebraic identity
@@ -436,7 +436,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | Symbol | Meaning |
 |---|---|
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient, $\partial/\partial Q_t = \partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$ |
-| $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial Q_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_k\partial/\partial Q_k$ |
+| $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial Q_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_k\,\vec e_k\partial/\partial Q_k$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k^2$ |
 | $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\tilde{\nabla}}^\flat = \tilde{G}_{\tilde{\nabla}}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\tilde{\nabla}} \in \mathbb{M}_+$ |

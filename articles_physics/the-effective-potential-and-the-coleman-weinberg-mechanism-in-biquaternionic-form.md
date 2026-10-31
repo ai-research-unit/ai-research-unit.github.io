@@ -302,7 +302,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
+| $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{\Phi} = \varphi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
 | $\tilde\Phi_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde\Phi_{\mathrm{cl}}=\varphi_c\,e_t$ for a constant background |
 | $\delta\tilde{\Phi}$ | Fluctuation about the background, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde{\Phi}$ |

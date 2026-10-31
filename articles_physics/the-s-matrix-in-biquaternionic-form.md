@@ -345,7 +345,7 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (home of the rotation rotors) |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of the algebra; home of the S-matrix's overall phase |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\langle\tilde S\rangle_{\natural} = \langle\tilde S,\tilde S\rangle_{\natural}=\tilde S\tilde S^{\natural}=\sum_\mu S_\mu^2=\det\mathsf{M}_2(\tilde S)$ | Biquaternion norm; unit-norm (Lorentz-rotor) condition $\langle\tilde S\rangle_{\natural}=e_t$ |

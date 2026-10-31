@@ -191,7 +191,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $i$ | Central scalar imaginary |
 | $\mathbb M_+,\mathbb M_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
-| $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
+| $\tilde\nabla=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\mathcal{D}_R=\gamma_\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
 | $\gamma_5$ | Chirality grading; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |

@@ -62,11 +62,11 @@ $$
 $$
 Only one of them can be the object whose biquaternionic gradient is the power–force density. The rest of this problem tests which.
 
-**Solution (c).** Write $\tilde W = We_t + \frac{1}{c}\vec S$, with $W$ and $\vec S$ real, and apply the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$. The scalar part receives one contribution from the scalar part and one from the vector part:
+**Solution (c).** Write $\tilde W = We_t + \frac{1}{c}\vec S$, with $W$ and $\vec S$ real, and apply the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial Q_t + \sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$. The scalar part receives one contribution from the scalar part and one from the vector part:
 $$
 \mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = \partial/\partial Q_t\,W - \frac{1}{c}\,\partial/\partial Q_\mu\,S_\mu = -\frac{i}{c}\,\partial/\partial t'W - \frac{1}{c}\,\mathrm{div}\,\vec S,
 $$
-where we used $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, the vanishing of the scalar part of $\vec e_\mu\,\partial/\partial Q_\mu(We_t)$ and of $e_t\partial/\partial Q_t(\frac{1}{c}\vec S)$, and $\mathrm{Sc}(\vec e_\mu \vec e_\nu) = -\delta_{\mu\nu}$. So
+where we used $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, the vanishing of the scalar part of $\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu(We_t)$ and of $e_t\partial/\partial Q_t(\frac{1}{c}\vec S)$, and $\mathrm{Sc}(\vec e_\mu \vec e_\nu) = -\delta_{\mu\nu}$. So
 $$
 \mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\,\partial/\partial t'W - \frac{1}{c}\,\mathrm{div}\,\vec S.
 $$

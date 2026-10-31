@@ -206,7 +206,7 @@ particular dimensions of the pieces are properties of the system, computed by th
 recursion; the operator is the same.
 
 **Remark (why the multiplier is the conjugate variable).** In the corpus's sign convention the
-operator $D$ carries $+e_\mu\,\partial/\partial x_\mu$ and satisfies $D\bar D=\Delta$, so the *dual* multiplier — the
+operator $D$ carries $+\sum_\mu\,e_\mu\,\partial/\partial x_\mu$ and satisfies $D\bar D=\Delta$, so the *dual* multiplier — the
 one for which $D$ acts triangularly with positive diagonal — is
 $x^{\natural}=x_0-\sum_{i\ge1}x_ie_i$, whose Clifford norm is $|x|^2$; the conjugate operator
 $\bar D$ plays the mirror role and pairs with the plain variable $x$. The point is that the

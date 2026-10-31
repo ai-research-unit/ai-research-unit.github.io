@@ -115,7 +115,7 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 **The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\phi/c$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
-\tilde{\nabla}\Gamma = e_t\,\partial/\partial Q_t\,\Gamma + \vec e_\mu\,\partial/\partial Q_\mu\,\Gamma,
+\tilde{\nabla}\Gamma = e_t\,\partial/\partial Q_t\,\Gamma + \sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu\,\Gamma,
 $$
 
 and for real $\Gamma$ the scalar coefficient $\partial/\partial Q_t\,\Gamma = -\frac{i}{c}\partial/\partial t'\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial Q_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{M}_-$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
@@ -350,8 +350,8 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre of the algebra, source of the abelian gauge group |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{\Psi}, \tilde{\Phi}$ | Charged biquaternion fields (spinor and complex scalar) |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate, ${}^{*} = ({}^{\natural})^{\,*}$ |

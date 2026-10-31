@@ -332,7 +332,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
 | $\tilde{Q}^\flat=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, not the mass |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\tilde\Psi^{\mathrm{fop}}$ | Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription) |
 | $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\gamma_0$ | Module-valued quantized field and its adjoint |

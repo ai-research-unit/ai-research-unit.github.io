@@ -143,7 +143,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html)
 - [The Category of Modules](../articles_maths/the-category-of-modules.html)
 - [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html)
-
 - [The Four Uses of Spin in the Biquaternion Algebra](../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html)
 - [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html)
 
@@ -241,7 +240,6 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [$M_2(\mathbb{C})$ Representation : The Hermitian Sandwich](../articles_maths/the-sandwich-in-the-m2c-model.html)
 - [$M_4(\mathbb{C})_{\Theta}$ Representation : The Hermitian Sandwich](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
-
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](../articles_maths/m4c-representation-the-general-endomorphisms.html)
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html)
 - [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html)

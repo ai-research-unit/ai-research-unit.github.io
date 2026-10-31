@@ -265,7 +265,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the vector-like abelian factor |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian, series convention |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian, series convention |
 | $\Delta=S\oplus\bar{S}$, $\gamma_5=\mathrm{diag}(-I_2,I_2)$ | Dirac module and chirality operator |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ | Volume element; $\gamma_5=i\omega$ |
 | $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |

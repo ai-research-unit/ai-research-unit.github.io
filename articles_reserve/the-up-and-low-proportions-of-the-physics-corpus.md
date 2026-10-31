@@ -1,14 +1,14 @@
 # __The Up and Low Proportions of the Physics Corpus__
 
-The corpus is the 403 Markdown files of `articles_physics`. The count reads only the mathematics regions, inline and display: 105,570 regions holding 3,188,809 characters. One mark is one caret or one underscore.
+The corpus is the 403 Markdown files of `articles_physics`. The count reads only the mathematics regions, inline and display: 105,583 regions holding 3,188,809 characters. One mark is one caret or one underscore.
 
 | Mark | Count | Share |
 |---|---:|---:|
 | Raised | 40,554 | 25.3% |
-| Low | 119,670 | 74.7% |
-| All | 160,224 | 100% |
+| Low | 119,741 | 74.7% |
+| All | 160,295 | 100% |
 
-The count was re-taken after the repair of the abbreviated derivatives (see *The Abbreviated Derivative*). That repair moved 458 low marks off $\partial$ onto the variable and added 30 power carets; the pre-repair figures were 40,524 raised and 119,756 low. The class breakdowns below are the pre-repair split.
+The count was re-taken after the repair of the abbreviated derivatives (see *The Abbreviated Derivative*). That repair moved 458 low marks off $\partial$ onto the variable and added 30 power carets. The gradient pass then added 56 explicit sums, each contributing one low mark, and the convention text accounts for the rest. The pre-repair figures were 40,524 raised and 119,756 low. The class breakdowns below are the pre-repair split.
 
 The rest of the article sorts the marks into what the convention validates and what it leaves open. The validation is about the job of the mark, not about its height alone.
 
@@ -49,7 +49,7 @@ Two classes of low mark are open.
 | Class | What it carries | Count | Share |
 |---|---|---:|---:|
 | Upright role name | $\mathrm{tot}$, $\mathrm b$, $\mathrm L$, $\mathrm r$ | 5,784 | 4.9% |
-| Operator or derivative index | $\sum_\mu$, $\partial_\mu$ | 4,316 | 3.7% |
+| Operator or derivative index | $\sum_\mu$, $\partial/\partial Q_\mu$ | 4,316 | 3.7% |
 
 The upright role names are the low names of the count above. They are written low in every case, and the open question is whether a role such as $\mathrm{tot}$ or $\mathrm L$ is a name, which the rule would raise, or a label of a slot, which the rule keeps low.
 

@@ -264,9 +264,9 @@ which is the inhomogeneous transformation expected of a connection on a module. 
 
 ### The curved Dirac operator and the equation
 
-The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
+The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial/\partial Q_t + \sum_k\,\vec e_k\,\partial/\partial Q_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
 $$
-\tilde\nabla = -i\,e_t\,\partial/\partial t' + \vec e_k\,\partial/\partial x_k,
+\tilde\nabla = -i\,e_t\,\partial/\partial t' + \sum_k\,\vec e_k\,\partial/\partial x_k,
 $$
 because $\partial/\partial t'=i\partial/\partial Q_t$. Its curved replacement substitutes the frame field for the **rigid material frame** and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
 $$
@@ -305,10 +305,10 @@ Two consistency statements locate the construction.
 The **flat limit** is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde F_0=-ie_t$, $\tilde F_k=\vec e_k$ and $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, and take $\vec\Gamma_\mu=0$. Then
 $$
 \tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial/\partial x_\mu
-=-i\,e_t\,\partial/\partial t'+\vec e_k\,\partial/\partial x_k
-=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
+=-i\,e_t\,\partial/\partial t'+\sum_k\,\vec e_k\,\partial/\partial x_k
+=e_t\,\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
 $$
-where the last equality uses $Q_t=ict'$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
+where the last equality uses $Q_t=ict'$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\sum_k\,\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
 
 The **square** is the Lichnerowicz formula. Squaring the Dirac operator gives
 
@@ -534,7 +534,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict'$ | Local imaginary time coordinate, material sector |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\vec e_k\partial/\partial x_k$ | Biquaternionic gradient, $Q_t=ict'$; needs a global chart |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\sum_k\,\vec e_k\partial/\partial x_k$ | Biquaternionic gradient, $Q_t=ict'$; needs a global chart |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \sum_\mu\tilde{E}_\mu dx_\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
 | $\vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |

@@ -253,7 +253,7 @@ $$
 \frac{\hbar}{2mc}\,\mathsf{M}_2\!\left(\mathrm{Vect}\,\tilde\nabla\right) = \frac{\boldsymbol\sigma\cdot p}{2mc},
 $$
 
-because $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ carries $\mathrm{Vect}\,\tilde\nabla = \vec e_k\partial/\partial Q_k$ to $-i\boldsymbol\sigma\cdot\nabla$. The identity is exact. Applied to the large functions, the operator produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two components of
+because $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ carries $\mathrm{Vect}\,\tilde\nabla = \sum_k\,\vec e_k\partial/\partial Q_k$ to $-i\boldsymbol\sigma\cdot\nabla$. The identity is exact. Applied to the large functions, the operator produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two components of
 
 $$
 \tfrac{\hbar}{2mc}\,\mathsf{M}_2\!\left(\mathrm{Vect}\,\tilde\nabla\right)f_\mu .

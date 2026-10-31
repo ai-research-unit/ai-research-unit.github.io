@@ -32,7 +32,7 @@ The tilde sits in the subscript because it belongs to the element, not to the op
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
 - A glyph read with its scalar part, four components: the tilde. The biquaternionic gradient $\tilde\nabla$ of §*The Gradient* is the algebraic example, and the canonical momentum $\tilde p=p_te_t+\vec p$ is the physical one.
-- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\hbar\nabla=\vec e_kp_k$ is the physical example, and $\nabla=\vec e_k\,\partial/\partial Q_k$ is the fixed spatial gradient, which carries no second mark (§*The Gradient*).
+- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\hbar\nabla=\sum_k\vec e_kp_k$ is the physical example, and $\nabla=\sum_k\,\vec e_k\,\partial/\partial Q_k$ is the fixed spatial gradient, which carries no second mark (§*The Gradient*).
 
 The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $e_t$ term carries $\partial/\partial Q_t$, while $\nabla$ is pure. The case follows the layer: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$; where the letter already names another object of the layer, a subscript or the explicit form $-i\hbar\vec\nabla$ fixes the operator.
 
@@ -47,6 +47,8 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm b}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$.
 
 **These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.**
+
+**A contraction is written as an explicit sum.** Every index that is contracted is named under a $\sum$: the gradient is $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$, the spatial gradient $\sum_k\vec e_k\partial/\partial Q_k$, a basis-vector contraction $\sum_k\vec e_kA_k$, and a sign-symbol contraction $\sum_{i,j}\varepsilon_{ijk}A_iB_j$. No index is summed by convention, and a repeated index is never left without its sum.
 
 ### The Derivative Marks
 
@@ -81,6 +83,8 @@ $$
 $$
 
 whose tilde marks its scalar part beside its vector part (*Operator and Calculus Conventions*, §*The Gradient*; *Biquaternion Analysis*), with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector coordinates; on the material sector it is the physical $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$, where $Q_k=q_k$.
+
+**The sum is written.** The gradient is a sum, and the sum is always spelled out. The shorthand $\vec e_k\partial/\partial Q_k$ is not used, because it repeats the index without summing it; the same holds for every contraction of a basis vector, a gamma or a field component with a derivative.
 
 **The conjugates of the gradient.** The gradient is an operator, and the marks are read on its units at fixed coordinate: the derivative symbols are held fixed and only the units are conjugated. This fixes the scope of the star, and it is not a claim that $\partial/\partial Q_\mu$ is real; the unhalved derivative defined above is complex, and on an element-valued field the star is coefficientwise, carried through the derivative by $\partial/\partial\bar Q_\mu$ rather than by $\partial/\partial Q_\mu$. Read on the units, the quaternion conjugation reverses the three spatial units, and so does the Hermitian conjugation, so the two act on the gradient alike,
 
@@ -292,7 +296,7 @@ The four products are read on the gradient: the plain bilinear product holds the
 | ${}^{\dagger}$ | The general adjoint of an operator, never of an element |
 | $\partial/\partial Q_\mu$ | The unhalved coordinate derivative |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | The biquaternionic gradient |
-| $\nabla=\vec e_k\,\partial/\partial Q_k$ | The pure spatial gradient |
+| $\nabla=\sum_k\,\vec e_k\,\partial/\partial Q_k$ | The pure spatial gradient |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $\mathrm{fop}$ | The Fock-operator mark, the one exception to the element rule |
 

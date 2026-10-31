@@ -133,7 +133,7 @@ $$
 $$
 
 *Proof.* The derivative of a constant times a function is the constant times the derivative, and
-$\partial/\partial x_\mu(e_\mu f)=e_\mu\partial/\partial x_\mu f$.
+$\partial/\partial x_\mu(e_\mu f)=\sum_\mu\,e_\mu\partial/\partial x_\mu f$.
 
 ## The Square and the Failure of Symmetry
 
@@ -165,7 +165,7 @@ $$
 under the adjoint of the one-sided action, while the scalar coefficient $e_t=1$ is Hermitian;
 the coordinate derivative satisfies $(\partial/\partial x_\mu)^{*}=-\partial/\partial x_\mu$ on compactly
 supported functions. Reversing the factors in the adjoint of a product,
-$(e_\mu\partial/\partial x_\mu)^{*}=(\partial/\partial x_\mu)^{*}e_\mu^{*}=(-\partial/\partial x_\mu)e_\mu^{*}$, which is $-\partial/\partial x_t$
+$(\sum_\mu\,e_\mu\partial/\partial x_\mu)^{*}=(\partial/\partial x_\mu)^{*}e_\mu^{*}=(-\partial/\partial x_\mu)e_\mu^{*}$, which is $-\partial/\partial x_t$
 for the scalar term and $+e_i\partial/\partial x_i$ for $i\ge1$. Summing over $\mu$ gives
 $D^{*}=-\partial/\partial x_t+\sum_{i\ge1}e_i\partial/\partial x_i=-\bar D$.
 
