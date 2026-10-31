@@ -139,11 +139,11 @@ $$</p>
 <p>since $E_{pi}A E_{jq}$ has $(p,q)$-entry $A_{ij}$ and all other entries zero. As the matrix units span, $I = M_n(k)$.</p>
 <p><strong>Theorem (left ideals).</strong> Let $k$ be a field. The left ideals of $M_n(k)$ are exactly the sets</p>
 <p>$$
-I_V = \{ A \in M_n(k) : \operatorname{col}(A) \subseteq V \},
+I_V = \{ A \in M_n(k) : \operatorname{row}(A) \subseteq V \},
 $$</p>
-<p>where $V \subseteq k^n$ is a subspace and $\operatorname{col}(A)$ is the span of the columns of $A$.</p>
-<p><em>Proof.</em> Each $I_V$ is a left ideal, because left multiplication replaces the columns by linear combinations of them. Conversely, if $I$ is a left ideal, let $V$ be the span of the columns of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose columns span $V$. Every vector of $V$ is $Ay$ for some $y$, so every matrix $B$ with columns in $V$ has the form $B = AC$ for a suitable $C$; since $I$ is a left ideal, $AC \in I$ and hence $B \in I$.</p>
-<p>The left ideals are therefore in bijection with the subspaces of $k^n$, the two trivial ideals corresponding to $V = 0$ and $V = k^n$ and the others to the proper subspaces; over $\mathbb{R}$ and $n = 2$ the minimal ones form the projective line. The minimal left ideals are the $I_V$ with $\dim V = 1$, each isomorphic to $k^n$ as a left module. The right ideals are described by the rows in the same way, and the two-sided ideals are the two trivial ones, in agreement with simplicity.</p>
+<p>where $V \subseteq k^n$ is a subspace and $\operatorname{row}(A)$ is the span of the rows of $A$.</p>
+<p><em>Proof.</em> Each $I_V$ is a left ideal: row $i$ of $AB$ is $\sum_jA_{ij}\,(\text{row }j\text{ of }B)$, a linear combination of the rows of $B$, hence in $V$ when $B \in I_V$. Conversely, if $I$ is a left ideal, let $V$ be the span of the rows of all matrices in $I$; then $I \subseteq I_V$. For the reverse inclusion, choose $A \in I$ whose rows span $V$. Every vector of $V$ is $yA$ for a row vector $y$, so every matrix $B$ with rows in $V$ has the form $B = CA$ for a suitable $C$; since $I$ is a left ideal, $CA \in I$ and hence $B \in I$.</p>
+<p>The left ideals are therefore in bijection with the subspaces of $k^n$, the two trivial ideals corresponding to $V = 0$ and $V = k^n$ and the others to the proper subspaces; over $\mathbb{R}$ and $n = 2$ the minimal ones form the projective line. The minimal left ideals are the $I_V$ with $\dim V = 1$, each isomorphic to $k^n$ as a left module. The right ideals are described by the columns in the same way, and the two-sided ideals are the two trivial ones, in agreement with simplicity.</p>
 <p><strong>Corollary (the centre).</strong> For a commutative ring $R$, $Z(M_n(R)) = R I_n$, and $M_n(R)$ is a central $R$-algebra.</p>
 <p><em>Proof.</em> If $A$ commutes with every matrix unit, then $AE_{ij} = E_{ij}A$ for all $i,j$. Comparing the $(k,l)$-entries gives $A_{ki}\delta_{jl} = \delta_{ik}A_{jl}$. Taking $j = l$ yields $A_{ki} = \delta_{ik}A_{jj}$ for all $i,k,j$: with $i = k$ this gives $A_{ii} = A_{jj}$, so all diagonal entries are equal, and with $i \neq k$ it gives $A_{ki} = 0$, so all off-diagonal entries vanish. Hence $A = \lambda I_n$ with $\lambda \in R$.</p>
 <h2 id="tensor-products-of-matrix-algebras">Tensor Products of Matrix Algebras</h2>
@@ -176,7 +176,7 @@ $$</p>
 M_n(k) = I_{V_1} \oplus \dots \oplus I_{V_n},
 $$</p>
 <p>where $V_j = ke_j$ is the $j$-th coordinate line and $I_{V_j}$ is the minimal left ideal of matrices supported in the $j$-th column. Each $I_{V_j}$ is isomorphic to the simple module $k^n$ (column vectors), so the regular module is a direct sum of $n$ copies of the unique simple left module; this is the concrete form of the Wedderburn structure theory: $M_n(k)$ is the matrix algebra over the division ring $k$, and its regular module is $n$ copies of the unique simple module $k^n$. The same decomposition with $k$ replaced by a division ring $D$ describes $M_n(D)$, the general simple finite-dimensional algebra, whose simple module is $D^n$.</p>
-<h2 id="the-case-math207">The Case $n = 2$</h2>
+<h2 id="the-case-math213">The Case $n = 2$</h2>
 <p>For $n = 2$ the algebra is four-dimensional, with basis $E_{11}, E_{12}, E_{21}, E_{22}$ and multiplication</p>
 <p>$$
 E_{11}^2 = E_{11}, \quad E_{22}^2 = E_{22}, \quad E_{12}^2 = E_{21}^2 = 0, \quad E_{11}E_{22} = E_{22}E_{11} = 0,
@@ -277,7 +277,7 @@ $$</p>
 </tr>
 <tr>
 <td>$I_V$</td>
-<td>Left ideal of matrices with columns in $V$</td>
+<td>Left ideal of matrices with rows in $V$</td>
 </tr>
 <tr>
 <td>$M_n(D)$</td>

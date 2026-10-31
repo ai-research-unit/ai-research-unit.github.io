@@ -102,9 +102,9 @@ L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
 $$</p>
 <p><strong>The field.</strong> The relativistic scalar field of the framework is the complex biquaternion field $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\phi$ a complex scalar function. Its action is $S[\tilde{\Phi}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density</p>
 <p>$$
-\mathcal{L} = -\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right].
+\mathcal{L} = +\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right] + \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right].
 $$</p>
-<p>Expanding the scalar parts, $\mathcal{L} = -(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) - \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) - (m^2c^2/\hbar^2)\phi^*\phi$, and its Euler–Lagrange equation is the biquaternion Klein–Gordon equation</p>
+<p>Expanding the scalar parts, $\mathcal{L} = +(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) + \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) + (m^2c^2/\hbar^2)\phi^*\phi$, and its Euler–Lagrange equation is the biquaternion Klein–Gordon equation</p>
 <p>$$
 \left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi} = 0,
 \qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} .
@@ -217,12 +217,12 @@ $$</p>
 <h2 id="the-energymomentum-of-the-field">The Energy–Momentum of the Field</h2>
 <p>The same translation symmetry applied to the field action gives the <strong>canonical energy–momentum</strong>, the Noether current of spacetime translations. For the complex scalar field it is</p>
 <p>$$
-\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} + \eta_{\mu\nu}\,\mathcal{L}_\phi\;}
+\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} - \eta_{\mu\nu}\,\mathcal{L}_\phi\;}
 $$</p>
 <p>with the scalar Lagrangian of the same frame,</p>
 <p>$$
-\mathcal{L}_\phi = \sum_{\mu,\nu}\eta_{\mu\nu}\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} - \frac{m^2c^2}{\hbar^2}|\phi|^2
-= \frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 - |\nabla\phi|^2 - \frac{m^2c^2}{\hbar^2}|\phi|^2 .
+\mathcal{L}_\phi = \sum_{\mu,\nu}\eta_{\mu\nu}\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{m^2c^2}{\hbar^2}|\phi|^2
+= -\frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 .
 $$</p>
 <p>Here $x_\mu=(ct',x,y,z)$ is the real frame with $\eta=\mathrm{diag}(-1,+1,+1,+1)$, distinct from the $Q_\mu$ frame of the gradient: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not, and the tensor's time component is real only in the second frame. Translation invariance gives</p>
 <p>$$
@@ -235,7 +235,7 @@ $$</p>
 <p>positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $\sum_\mu\eta_{\mu\mu}\partial T_{\mu\nu}/\partial x_\mu$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.</p>
 <p><strong>Why the framework does not write this as one biquaternion.</strong> A symmetric rank-two tensor in four dimensions has ten independent components, while a biquaternion has four complex coefficients, that is eight real components, and $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ carries only four of them. So no single biquaternion can be $T_{\mu\nu}$; the framework writes the translation current as a <strong>bigeneral quaternionic bilinear</strong>, one basis element for each index. <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> constructs exactly this for the Maxwell field, $\Pi_{\mu\nu} = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ with the first index the row, and shows that the four-component object is its time row. The framework's energy–momentum biquaternion is therefore not the whole Noether current of translations; it is the energy–flux part of it.</p>
 <p><strong>The Maxwell case in the corpus form.</strong> For the electromagnetic field the corpus's object is $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S\in\mathbb{M}_+$, with $W$ the energy density and $\vec S = \vec E\times\vec H$ the Poynting vector, and the conservation law is $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ with $\tilde{P}$ the power–force density; the source-free case is $\tilde{\nabla}\tilde{W} = 0$. Its scalar part is the Poynting theorem, and the sign structure is the one the energy–momentum exercise verifies: the Hermitian form passes the test, while the real form $W + \frac{1}{c}\vec S$ does not, by a factor $i$ on the Poynting part. Read as a Noether statement, $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ says that the translation current of the Maxwell field is conserved up to the work done on the charges — the source is present, so the field alone is not closed.</p>
-<p><strong>A caution on the $ict'$ convention.</strong> The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: for a plane wave $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=\frac{1}{c^2}|\dot\phi|^2-|\nabla\phi|^2-\mu^2|\phi|^2$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative. This is the same caution the energy–momentum exercise records for the trace.</p>
+<p><strong>A caution on the $ict'$ convention.</strong> The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: for a plane wave $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=-\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative. This is the same caution the energy–momentum exercise records for the trace.</p>
 <h2 id="lorentz-invariance-and-the-angular-momentum-bivector">Lorentz Invariance and the Angular-Momentum Bivector</h2>
 <p>Lorentz invariance is a spacetime symmetry like translation, and it has a Noether current too. For a free particle the conserved quantity is the antisymmetric pair</p>
 <p>$$
@@ -367,8 +367,8 @@ $$</p>
 <td>Complex biquaternion scalar field</td>
 </tr>
 <tr>
-<td>$\mathcal{L} = \sum_\mu\varepsilon_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) - \frac{m^2c^2}{\hbar^2}|\phi|^2$</td>
-<td>Field Lagrangian density</td>
+<td>$\mathcal{L} = \sum_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\phi|^2$</td>
+<td>Field Lagrangian density, $Q$ frame</td>
 </tr>
 <tr>
 <td>$\tilde{J} = i[\tilde{\Phi}^{*}\tilde{\nabla}\tilde{\Phi} - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}]$</td>
@@ -387,7 +387,7 @@ $$</p>
 <td>Real frame of the energy–momentum tensor, distinct from $Q_\mu$</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu} = (\partial_\mu\phi^*)(\partial_\nu\phi) + (\partial_\mu\phi)(\partial_\nu\phi^*) + \eta_{\mu\nu}\mathcal{L}_\phi$</td>
+<td>$T_{\mu\nu} = (\partial_\mu\phi^*)(\partial_\nu\phi) + (\partial_\mu\phi)(\partial_\nu\phi^*) - \eta_{\mu\nu}\mathcal{L}_\phi$</td>
 <td>Canonical energy–momentum of the field</td>
 </tr>
 <tr>
