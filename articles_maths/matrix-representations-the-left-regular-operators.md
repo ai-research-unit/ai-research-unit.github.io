@@ -26,8 +26,6 @@ so that $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$. The coefficient frame is $\mat
 
 ## Common Aspects
 
-
-
 ### The Operator
 
 **The definition.** For $\tilde Q\in\mathbb{B}$, the left regular operator is
@@ -79,9 +77,7 @@ $$
 $$
 The minimal polynomial is the minimal polynomial of $B$, not its square, because the two copies are equal.
 
-## The $S_3$ Frame
-
-
+## The Coefficient Frame
 
 ### The Coefficient Display
 
@@ -107,9 +103,7 @@ The first column is the element itself. The other three are the products with th
 
 **The image and the kernel in the frame.** The image is the column space of the coefficient matrix, of dimension $2\operatorname{rank}B$. The kernel is its null space, of dimension $4-2\operatorname{rank}B$. For a unit the columns span $\mathbb{C}^4$; for a nonzero zero divisor they span a two-dimensional right ideal; for zero they span nothing.
 
-## The $2\times2$ $z$ Frame
-
-
+## The Entry Model
 
 ### The $2\times2$ Reading
 
@@ -125,9 +119,7 @@ and the spectrum is the spectrum of $B$, doubled. The factor two is the dimensio
 
 **What the block does not give.** The block does not give the kernel or the image as subspaces of the coefficient space. The kernel and the image are subspaces of the carrier; the block only gives their dimensions. The subspaces themselves require the frame change to the coefficient display, or the operator statement in the algebra.
 
-## The $4\times4$ $z$ Frame
-
-
+## The Peirce Frame
 
 ### The Peirce Display
 

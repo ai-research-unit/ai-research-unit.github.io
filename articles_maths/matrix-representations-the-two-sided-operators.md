@@ -12,8 +12,6 @@ This article computes the two-sided family in the two displays. It gives the six
 
 ## Common Aspects
 
-
-
 ### The Operator
 
 **The definition.**
@@ -242,9 +240,7 @@ Hence no level set is a subgroup, and the family carries no pin group. The isome
 
 **The one-line form.** Every two-sided operator is one product $T_{\tilde Q,\tilde P}=L_{\tilde Q}R_{\tilde P}=B_P^{\mathsf T}\otimes B_Q$; the set of products is the seven-dimensional cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}=M_4(\mathbb{C})$, cut out by $\operatorname{rank}c(M)\le1$, closed under composition with the second slot reversed and not under addition, with length $\operatorname{rank}c(M)\in\{0,1,2,3,4\}$ and matrix rank in $\{0,1,2,4\}$.
 
-## The $S_3$ Frame
-
-
+## The Coefficient Frame
 
 **The coefficient display.** In the coefficient frame the sixteen basis matrices are
 $$
@@ -266,9 +262,7 @@ The Clifford relations are frame-independent, because conjugation by $C_{\Pi}$ i
 
 **What the coefficient frame adds.** The Peirce frame displays the product structure $B_P^{\mathsf T}\otimes B_Q$ in blocks. The coefficient frame displays the same matrices as signed permutations and makes the Clifford generators directly comparable with the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The two displays are related by $C_{\Pi}$, and neither is preferred by the algebra.
 
-## The $2\times2$ $z$ Frame
-
-
+## The Entry Model
 
 **The block.** In the Peirce frame the two-sided matrix is
 $$
@@ -299,9 +293,7 @@ The rank of a product is the product of two entry ranks, each in $\{0,1,2\}$, so
 
 **The sixteen cells.** The sixteen $T_{\mu\nu}$ are the Kronecker products of the four basis matrices of the left family and the four of the right family. Their entry-level multiplication is the multiplication of the corresponding $2\times2$ matrices, with the right factor transposed; the sign in the product table comes from the multiplication of the units.
 
-## The $4\times4$ $z$ Frame
-
-
+## The Peirce Frame
 
 ### The Sixteen Basis Matrices
 

@@ -50,7 +50,7 @@ The first is the trace decomposition, of real dimensions two and six. The second
 
 **The subalgebras.** The centre and the quaternion subspace are subalgebras; the vector subspace is a Lie subalgebra; the anti-quaternion subspace and the two Hermitian subspaces are neither. The statements are read from the matrix conditions and from the closure of the corresponding coefficient conditions.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The frame.** The coefficient frame is the frame in which ${}^{\natural}$ is transposition. The regular matrix of $\tilde Q$ is $L_{\tilde Q}=Q_t\mathrm I_4+Q_xL_x+Q_yL_y+Q_zL_z$, with $L_t=\mathrm I_4$ and the three real signed permutations of the product rule. The six conditions are therefore entry conditions: transposition, entrywise conjugation, and the adjoint.
 
@@ -62,7 +62,7 @@ The first is the trace decomposition, of real dimensions two and six. The second
 
 **The Hermitian pair.** $\mathbb{M}_+$ is $M=M^{\dagger}$ and $\mathbb{M}_-$ is $M=-M^{\dagger}$. Both are four-real-dimensional inside the image. The trace is real on the first and purely imaginary on the second. The determinants of the entry images take both signs, with opposite signs on the two subspaces. The ambient Hermitian matrices are sixteen-real-dimensional; the image is the four-dimensional subspace of those of the regular form, which is why the qualifier "inside the image" is part of the statement.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The six sets.** In the entry model, whose standard basis is the $z$ Peirce pair, the six subspaces are:
 
@@ -81,7 +81,7 @@ The entry model is an isomorphism onto $M_2(\mathbb{C})$, so each condition is e
 
 **The determinants.** On the six rows the determinant $Q_t^2+B^2$ takes the values $Q_t^2$, $B^2$, $\lvert z\rvert^2+\lvert w\rvert^2$, $-\lvert z'\rvert^2-\lvert w'\rvert^2$, $q_t^2-\lvert\vec q'\rvert^2$ and $-(q'_t)^2+\lvert\vec q\rvert^2$. The signs separate the four real forms: the quaternion subspace has a non-negative determinant, the anti-quaternion subspace a non-positive one, and the two Hermitian subspaces take both signs.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The block form.** In the Peirce frame the regular matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. Every condition of the entry model is imposed on $B$ and repeated twice: $B=\lambda\mathrm I_2$, $\operatorname{tr}B=0$, $B=\bar B$, $B=-\bar B$, $B=B^{\dagger}$, $B=-B^{\dagger}$. The carrier is two copies of the $2\times2$ space, and the two planes carry the same condition.
 
@@ -108,4 +108,3 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
 - [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the matrix involutions
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [Matrix Representations : The Six Subspaces as Matrix Conditions](matrix-representations-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version

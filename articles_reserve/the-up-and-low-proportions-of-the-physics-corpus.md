@@ -18,9 +18,9 @@ The three open classes are open for different reasons, and the reason matters mo
 
 | Class | Count | Share of its height | The question |
 |---|---:|---:|---|
-| Raised name | 4,238 | 10.5% of the 40,554 carets | does the caret carry a grade, a parameter or a label, or a frame slot? |
-| Upright role name | 5,784 | 4.9% of the 119,741 lows | is a role a name, which rises, or a label of a slot, which stays low? |
-| Operator or derivative index | 4,316 | 3.7% of the lows | it is neither a slot nor a name, and the rule does not name it |
+| Raised name class | 4,238 | 10.5% of the 40,554 carets | does the caret carry a grade, a parameter or a label, or a frame slot? |
+| Upright role name | 5,784 | 4.8% of the 119,741 lows | is a role a name, which rises, or a label of a slot, which stays low? |
+| Operator or derivative index | 4,316 | 3.6% of the lows | it is neither a slot nor a name, and the rule does not name it |
 | All three | 14,338 | 8.9% of the 160,295 marks | |
 
 ### Upper: the name
@@ -37,7 +37,7 @@ The name is a residual class: every caret that is not a numeric power and not a 
 | Compound expression | 1,107 | 26.3% | $x^{2n}$, $\delta^{rs}$, $e^{-\psi/2}$, $(-1)^{\lvert a\rvert\lvert b\rvert}$ |
 | All | 4,215 | 100% | |
 
-The first two rows are labels in the intended sense, and a label is a name: it names the representation, the sector or the order. The remaining four rows are mixed. The Greek argument is sometimes a power, $e^{i\alpha}$, and sometimes an index pair, $\tau^{l\bar l}$. The multi-letter argument is a label when it is $H^{sl}$ and a colour index when it is $A^{abc}$. The compound expression is mostly a power. The single letter carries no job of its own, which is why it needs the second table.
+The first two rows are labels in the intended sense, and a label is a name: it names the representation, the sector or the order. The remaining four rows are mixed. The Greek argument is sometimes a power, $e^{i\alpha}$, and sometimes an index pair, $\tau^{l\bar l}$. The multi-letter argument is a label when it is $H^{sl}$ and a colour index when it is $A^{abc}$. The compound expression is mixed: a power in $x^{2n}$, a sign in $(-1)^{\lvert a\rvert\lvert b\rvert}$, a label in $g^{\mathrm{J}}$. The single letter carries no job of its own, which is why it needs the second table.
 
 | Single-letter argument | Count | Examples |
 |---|---:|---|
@@ -47,17 +47,17 @@ The first two rows are labels in the intended sense, and a label is a name: it n
 | Transpose $T$ | 194 | $L^T$, $\psi^T$ |
 | All | 1,550 | |
 
-Four parts of the class are not names. The transpose is a mark of the same kind as ${}^{*}$ and ${}^{\dagger}$: $T$, $\mathsf T$ and $\mathsf{T}$ together give 317 carets that belong with the marks, not with the names, and the mark screen found them because it did not read $T$. The symbolic exponents, 528 carets, are powers: the power screen tested the exponent for digits, so a letter or a composite expression fell through. About 250 more are powers written with a space or a compound exponent, $x^{\,2}$, $x^{2n}$, $e^{-\psi/2}$. The colour, gauge and spin indices, about 300, are the debt of the strict reading, the ten forms named in the earlier pass.
+The table shows why the class is a ceiling rather than a count. The transpose is a mark of the same kind as ${}^{*}$ and ${}^{\dagger}$: $T$, $\mathsf T$ and $\mathsf{T}$ together give 317 carets that belong with the marks, and the mark screen found them only because it did not read $T$. The powers are the largest leak: 528 carets carry a one-letter exponent, and these are powers on a numeric or exponential base, $2^n$, $e^K$, $(-1)^F$, but grades on a class base, $\mathrm{Cl}^i$; about 250 more carry a space or a compound exponent, $x^{\,2}$, $x^{2n}$, $e^{-\psi/2}$. Taking out the spin components, which are counted with the colour indices in the table below, leaves about 730 powers. The colour, gauge and spin indices, about 300, are the debt of the strict reading, the ten forms named in the earlier pass. What remains is the name proper: grades, parameters and labels.
 
 | Raised name case | Count |
 |---|---:|
 | Colour, gauge or spin index | about 300 |
 | Transpose mark | 317 |
-| Power with a space or a compound exponent | about 250 |
-| Grade, parameter or label | about 3,370 |
+| Power, letter or compound exponent | about 730 |
+| Grade, parameter or label | 2,891 |
 | All raised names | 4,238 |
 
-The corrections lower the count of names but not the height of any mark. What they change is the ratio: the names are about 3,370 raised against 5,784 low, or 36.8% up and 63.2% low, not the 42.2% that the raw class reports.
+The corrections lower the count of names but not the height of any mark. What they change is the ratio: the names are 2,891 raised against 5,784 low, or 33.3% up and 66.7% low, not the 42.2% that the raw class reports.
 
 The corpus average hides a wide spread.
 
@@ -97,7 +97,7 @@ Two classes of low mark are open.
 
 #### The upright role name
 
-The upright role names are the low counterparts of the names above. The census counts the pure form, a subscript whose whole content is a word; a further 1,269 subscripts put a role beside a frame slot, $s_{\mathrm{tot},z}$ or $T_{\mathrm b,1}$, and those are counted in the grouped class. The pure forms use 194 distinct words, and eight of them carry 58.7% of the 5,784.
+The upright role names are the low counterparts of the names above. The census counts the pure form, a subscript whose whole content is a word; a further 1,269 subscripts put a role beside a frame slot, $s_{\mathrm{tot},z}$ or $T_{\mathrm b,1}$, and those are counted in the grouped class. The pure forms use 194 distinct words, and eight of them carry 3,496 marks, about three in five.
 
 | Role | Count | Share | Typical use |
 |---|---:|---:|---|
@@ -121,7 +121,7 @@ The operator indices are the indices of a sum or a derivative. They are not fram
 | Sum subscript | 2,654 | $\sum_{\mu,\nu}$, $\sum_{i=1}^{n}$ |
 | — of which a range | 197 | $\sum_{i=1}^{n}$ |
 | Derivative denominator | 2,163 | $\partial/\partial Q_\mu$ |
-| Evaluation bar | 204 | $\big|_{t=0}$ |
+| Evaluation bar | 204 | $\big\lvert_{t=0}$ |
 
 The census puts the class at 4,316; the two families alone give 4,817, or 4,620 once the 197 ranges are set aside, which is 7% above it. The operator-label carve-out does not reach them: $\partial_n$ names a degree and $\partial_v$ a place, while $\sum_\mu$ and $\partial/\partial Q_\mu$ range over a set. A third kind of low mark is the honest description.
 
@@ -135,7 +135,7 @@ The census puts the class at 4,316; the two families alone give 4,817, or 4,620 
 | Both of the last two | 5,484 net to raised | 28.7% |
 | An operator index is a third kind of low mark | 0 | 25.3% |
 
-Two of the corrections to the name class, the transpose and the missed powers, move no mark between the heights: they reclassify a caret without changing it, so the corpus share stays at 25.3% and the open count falls from 4,238 to about 3,370. The colour correction is different: it would lower the 300 carets it names, which is the one change that pulls against the role question.
+Two of the corrections to the name class, the transpose and the missed powers, move no mark between the heights: they reclassify a caret without changing it, so the corpus share stays at 25.3%; with the colour correction as well, the open count falls from 4,238 to 2,891. The colour correction is different: it would lower the 300 carets it names, which is the one change that pulls against the role question.
 
 ## Validated
 

@@ -75,7 +75,7 @@ $$
 $$
 The family satisfies the cocycle identity $T_{Q''Q}T_{Q'Q''}=T_{Q'Q}$. A transition preserves the diagonal form exactly when the two elements commute; then their spectral directions are parallel, the eigenbases agree up to rescaling, and the transition is diagonal. A general pair has no simultaneous eigenbasis.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The change.** In the coefficient frame the diagonalising matrix is the coordinate matrix of the eigenbasis in the coefficient basis:
 $$
@@ -104,7 +104,7 @@ because $\operatorname{Tr}(\tilde\Pi_\pm)=2$, $\operatorname{Tr}(\vec\Upsilon_\p
 
 **The freedom.** The coefficient-frame change has the same freedom as the Peirce one: right multiplication by $GL_2\times GL_2$ when the eigenvalues are distinct, and by $U(2)\times U(2)$ in the normal case. The determinant $\tfrac14$ belongs to one chosen basis, not to the element.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The matrix.**
 $$
@@ -139,7 +139,7 @@ satisfies the same identity whenever $B\neq-Q_z$. The two determinants cannot bo
 
 **The labels.** The choice of the square root $B$ labels the eigenvalues. Replacing $B$ by $-B$ exchanges $\lambda_+$ and $\lambda_-$, the two columns of $\mathsf C_Q$ and the two diagonal entries. The pair of eigenvalues is unordered; only the labelling is a choice.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The change.** The regular diagonalising matrix $\mathsf C_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the Peirce frame, in that order. Equivalently, its four columns are the coordinate columns of the eigenbasis $\mathcal E$. It satisfies
 $$
@@ -188,5 +188,3 @@ A spectrally regular element has an eigenbasis $\mathcal E=(\tilde\Pi_+,\vec\Ups
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the matrix theorem
 - [Nilpotents](nilpotents.html), for the spectral nilpotents
-- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), for the $2\times2$ source
-- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), for the $4\times4$ source

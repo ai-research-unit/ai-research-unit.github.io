@@ -240,7 +240,7 @@ The sixteen units are a basis of the operator space, and the product rule is the
 
 **Two frames, two readings.** The coefficient frame reads the multiplication as signed permutations of the four units. The Peirce frame reads it as a $2\times2$ block structure with two copies of $M_2(\mathbb{C})$. Neither frame is preferred by the algebra, and each article declares the one it uses.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 The coefficient frame is the frame of the structure constants. It is where the signed entries, the explicit display of the regular operator and the Peirce change $C_{\Pi}$ are read.
 
@@ -306,11 +306,11 @@ $$
 
 Every entry is a signed combination of the four coefficients, and no $2\times2$ block of the display equals $\mathsf M_2(\tilde Q)$ or its negative. The change $C_{\Pi}$ below is the only matrix needed to pass from this display to the Peirce display.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
-The entry model displays an element, not an operator. Its entries are the Peirce coordinates of the $z$ frame at size two: the two diagonal entries are the idempotent coordinates and the two off-diagonal ones the mixed coordinates.
+The entry model displays an element, not an operator. Its entries are the Peirce coordinates at size two: the two diagonal entries are the idempotent coordinates and the two off-diagonal ones the mixed coordinates.
 
-### The Entry Model $\mathsf M_2$
+### The Assignment $\mathsf M_2$
 
 **Definition.** On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the **entry model** is the assignment
 
@@ -332,7 +332,7 @@ $$
 
 **The chosen direction.** The display singles out $\vec e_z$, because $\sigma_3$ is the diagonal one. The other two directions sit in the off-diagonal entries, and a relabelling of $x,y,z$ carries the model to a conjugate display. The choice is a choice of axis in the model, not a property of the algebra, and the series names the axis whenever an entry is read.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 The Peirce frame displays the operator as two copies of the entry model, $\mathrm I_2\otimes\mathsf M_2$, and is the only frame in which a $2\times2$ block of the $4\times4$ matrix equals the entry matrix.
 

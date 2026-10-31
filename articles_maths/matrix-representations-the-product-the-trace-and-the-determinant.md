@@ -40,7 +40,7 @@ the last when $\tilde Q$ is a unit. The identity holds in the entry model becaus
 
 **The centre.** The centre of the algebra is $\mathbb{C}e_t$, and its image is $\mathbb{C}\mathrm I_2$ in the entry model and $\mathbb{C}\mathrm I_4$ in either operator frame. The centraliser of the image is larger: it is the right regular image, of complex dimension four. The centre is the intersection of the left and the right images.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The coefficient frame.** The frame is $\mathcal{B}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, the frame of the structure constants. The identity is $L_t=\mathrm I_4$, and the three vector units act by signed permutations:
 
@@ -66,7 +66,7 @@ $$
 
 which is the display of the operator of $\tilde Q^{-1}$ by multiplicativity.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The assignment.** On the basis, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$,
 
@@ -111,7 +111,7 @@ The identity $\mathsf M_2(\tilde Q)\operatorname{adj}\mathsf M_2(\tilde Q)=\lang
 
 **The centre.** A matrix commuting with every matrix is scalar, so the centre of the image is $\mathbb{C}\mathrm I_2$, the image of $\mathbb{C}e_t$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The block form.** In the Peirce frame the left regular matrix is one object,
 

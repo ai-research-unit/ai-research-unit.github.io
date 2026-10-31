@@ -106,7 +106,7 @@ the right Peirce row, and in the Peirce basis it is the first and third coordina
 
 **The nilpotents and the idempotents.** A nilpotent is a nonzero element of a mixed Peirce corner, so its image is $\mu\,I_2\otimes E_{12}$ or $\mu\,I_2\otimes E_{21}$ with $\mu\in\mathbb{C}^{\times}$: square-zero, traceless and of rank two. Every nilpotent is a nonzero scalar multiple of one of the two standard nilpotents, conjugated by an inner automorphism. Every nontrivial idempotent is a product of two nilpotents from opposite corners, rescaled so that $uw=\tilde\Pi$; the trivial idempotent $e_t$ is the exception, because a product equal to a unit has unit factors and a nilpotent is not a unit.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The coefficient display.** In the coefficient basis the regular matrix is
 $$
@@ -118,7 +118,7 @@ The duplication is hidden there: the coefficient matrix is full, and the two blo
 
 **The exchange.** Right multiplication by the mixed units in the coefficient frame is the conjugate of the block swap, $C_{\Pi}R_{\vec\Upsilon_\pm}C_{\Pi}^{-1}$. It is not a simple permutation of the coefficient coordinates: the coefficient basis does not split the two planes. The block language is native to the Peirce frame, and the coefficient frame carries the same structure in dressed form.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The corner matrix.** The entry model is the corner matrix itself,
 $$
@@ -131,7 +131,7 @@ Its four entries are the four Peirce coordinates, and the four standard matrix u
 
 **The nilpotents.** The standard nilpotents are $E_{12}$ and $E_{21}$, of rank one and square-zero. Every nilpotent is a nonzero scalar multiple of one of them, conjugated by an inner automorphism of $M_2(\mathbb{C})$. Every nontrivial idempotent is a product of two of them, rescaled to $uw=E_{11}$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The duplicated corner matrix.** In the Peirce frame
 $$
@@ -187,5 +187,3 @@ The four Peirce elements are one system of $2\times2$ matrix units; in the regul
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the planes and the exchange
 - [Nilpotents](nilpotents.html), for the nilpotent cone
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ source
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $4\times4$ source

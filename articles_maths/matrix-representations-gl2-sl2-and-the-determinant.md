@@ -70,7 +70,7 @@ of complex dimension three; it is the group of algebra automorphisms of $M_2(\ma
 
 The last row is not a covering; it is the Hopf fibration, included for contrast.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The image and the determinant.** In the coefficient frame the regular matrix is $X=\mathsf M_4^L(\tilde Q)=Q_t\mathrm I_4+Q_xL_x+Q_yL_y+Q_zL_z$. The image is a closed four-complex-dimensional subgroup of $GL_4(\mathbb{C})$, and
 $$
@@ -91,7 +91,7 @@ with the positive Hermitian factor and the unitary factor both block diagonal. T
 
 **The covers.** The three double covers have kernel $\{\pm\mathrm I_4\}$ in the regular model, since $\mathsf M_4^L(-\mathrm I_2)=-\mathrm I_4$. The Hopf fibration remains $SU(2)\to S^2$ with fibre $S^1$ and is not a covering.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The groups.** The entry model gives $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$, with $\det\mathsf M_2(\tilde Q)=N$. The determinant sequence, the non-central splitting $s(\lambda)=\operatorname{diag}(\lambda,1)$, and the twofold cover $\mathbb{C}^{\times}\times SL_2\to GL_2$ are the entry-model statements of the common section.
 
@@ -107,7 +107,7 @@ with the big cell the nonvanishing locus of the lower-left entry. The two cells 
 
 **The covers.** $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^+(1,3)$ and $SL_2(\mathbb{C})\to PGL_2$ are double covers with kernel $\{\pm\mathrm I_2\}$. The Hopf map $SU(2)\to S^2$ has fibre $S^1$ and is not a covering. The image of $GL_2(\mathbb{C})$ is connected and has the homotopy type of $U(2)$, with fundamental group $\mathbb{Z}$; the norm-one subgroup is simply connected and has the homotopy type of $S^3$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The block group.** In the Peirce frame the image is the set of block-diagonal matrices $\mathrm I_2\otimes B=\operatorname{diag}(B,B)$ with $B\in GL_2(\mathbb{C})$. The group law is blockwise, the inverse is $\operatorname{diag}(B^{-1},B^{-1})$, and the determinant is $\det(B)^2=N^2$. The group is isomorphic to $GL_2(\mathbb{C})$ through the first block.
 
@@ -150,5 +150,3 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 - [The N-Regular Sector](the-n-regular-sector.html), for the level sets
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $U(2)$
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the double covers
-- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the $2\times2$ source
-- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the $4\times4$ source

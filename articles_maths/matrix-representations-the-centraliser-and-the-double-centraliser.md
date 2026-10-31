@@ -76,7 +76,7 @@ A^{\dagger}\in C(A)\iff AA^{\dagger}=A^{\dagger}A.
 $$
 For a normal matrix the spectral theorem makes $A^{\dagger}$ a polynomial in $A$; for a non-normal matrix the two do not commute. In the regular model the adjugate is $NM^{\natural}$, and since $M^{\natural}=2Q_t\mathrm I_4-M$, it is a polynomial in $M$ and lies in the commutant. The dagger lies in $C(M)$ exactly on the normal locus.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The right matrix.** In the coefficient frame the right regular matrix is
 $$
@@ -95,7 +95,7 @@ Its dimension is $2$ for a non-scalar element and $4$ for a scalar. The gap betw
 
 **The images and the scalars.** The left and right images are distinct four-dimensional subspaces meeting in $\mathbb{C}\mathrm I_4$, and the double centraliser of either is the other. In the coefficient frame the right matrix is not block diagonal in the same way as the left matrix, because the coefficient basis does not split the two spinor planes; the block form is a property of the Peirce frame. The scalar case is the same in both frames: $C(M)=M_4(\mathbb{C})$, of dimension sixteen, while the relative commutant is the four-dimensional image.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The commutant.** The entry model gives
 $$
@@ -113,7 +113,7 @@ The dimension is $4$ for a scalar and $2$ for a non-scalar. In the distinct case
 
 **The eigenbasis ambiguity.** For distinct eigenvalues the diagonalising matrix is defined up to right multiplication by the invertible diagonal group, of dimension two. The two parameters rescale the two eigenvectors independently.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The commutant of the matrix.** In the Peirce frame,
 $$
@@ -182,5 +182,3 @@ The commutant of a non-scalar $2\times2$ matrix is the plane $\mathbb{C}[X]=\ope
 - [The Centraliser](the-centraliser.html), for the module-theoretic statement
 - [The Category of Modules](the-category-of-modules.html), for the double centraliser theorem
 - [Idempotents](idempotents.html), for the spectral projectors
-- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the $2\times2$ source
-- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the $4\times4$ source

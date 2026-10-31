@@ -86,7 +86,7 @@ The Lagrange polynomials and the contour integral are the same projector, read a
 
 **The standard axis and the cone.** On the axis $\vec Q\parallel\vec e_z$ the spectral idempotents are the standard pair, exchanged, and the projectors are the diagonal units. For $\vec Q=0$ the element is scalar, the direction is undefined, and every projector is spectral: the decomposition is not unique. For $B=0$ and $\vec Q\neq0$ the two eigenvalues coincide and the matrix is $Q_t\mathrm I+N$ with $N$ a nonzero nilpotent; there is no pair of complementary spectral projectors, the only spectral projector is $\mathrm I$, and the nilpotent is not a difference of two projectors. If $\vec Q\to0$ along a fixed direction, the projectors tend to a pair of rank-one projectors depending on the direction, while $M\to Q_t\mathrm I$; the limit pair is not the spectral pair of the limit matrix, and the discontinuity is the matrix form of the failure of the spectral decomposition at the vertex.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The projectors.** The coefficient frame is real, so the projectors are
 $$
@@ -122,7 +122,7 @@ N_+^{(4)}=\operatorname{diag}(E_{12},E_{12}),
 $$
 with the labels exchanged with respect to the standard pair. The element is diagonal in the fixed model, and the spectral decomposition is the entry-by-entry decomposition.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The explicit projectors.** With $\vec\Xi=-i\vec Q/B$,
 $$
@@ -158,7 +158,7 @@ Since $M\rho_+=\lambda_+\rho_+$, the column space of $\rho_+$ is the whole eigen
 
 **The nilpotents and the axis.** The spectral nilpotents are $N_\pm^{(2)}=\mathsf M_2(\vec\Upsilon_\pm^{\mathrm{spec}})$, of rank one and square-zero. On the standard axis they are the off-diagonal units $E_{12}$ and $E_{21}$, exchanged; on the cone a nonzero nilpotent is a single Jordan block of rank one.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The inflation.** Because $\mathsf M_4^L(\vec\Xi)=\mathrm I_2\otimes\mathsf M_2(\vec\Xi)$,
 $$
@@ -204,5 +204,3 @@ For a spectrally regular element the spectral projectors are $\rho_\pm=\tfrac12(
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction
 - [The Spectrum](the-spectrum.html), for the criterion
 - [Nilpotents](nilpotents.html), for the nilpotent cone
-- [Matrix Representations : The Spectral Projectors](matrix-representations-the-spectral-projectors.html), for the $2\times2$ source
-- [Matrix Representations : The Spectral Projectors](matrix-representations-the-spectral-projectors.html), for the $4\times4$ source

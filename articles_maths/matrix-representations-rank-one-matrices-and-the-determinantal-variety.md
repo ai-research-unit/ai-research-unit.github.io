@@ -8,11 +8,9 @@ This article develops the factorisation, the coefficients, the two strata, the a
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$, $N=\det B$ and regular matrix $L=I_2\otimes B$. In the Peirce frame the regular matrix is the block matrix of two copies of $B$.
 
-**Boundaries.** The matrix statements are *Matrix Representations : Rank-One Matrices and the Determinantal Variety* and *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the cone and its topology are *The Topology of the Zero-Divisor Cone* and *The Null Cone and the Zero Divisors*; the nilpotents are *Nilpotents*; the Jordan form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+**Boundaries.** The matrix statements are *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the cone and its topology are *The Topology of the Zero-Divisor Cone* and *The Null Cone and the Zero Divisors*; the nilpotents are *Nilpotents*; the Jordan form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
 ## Common Aspects
-
-
 
 ### The Factorisation
 
@@ -153,9 +151,7 @@ The product of the two nilpotents is the idempotent of the opposite corner, and 
 
 **The scaled idempotent.** A rank-one idempotent is not nilpotent: $P^2=P$ and $P\neq0$. It is nevertheless a zero divisor, because $P(e_t-P)=0$ and $e_t-P\neq0$; its annihilator is the ideal of the complementary line. The distinction between idempotent and nilpotent is the distinction between the non-pure and the pure strata.
 
-## The $S_3$ Frame
-
-
+## The Coefficient Frame
 
 **The coefficient display.** In the coefficient frame the rank-one matrix is
 $$
@@ -171,9 +167,7 @@ The four coefficients are functions of the element, not of the display; the coef
 
 **The doubling.** The coefficient matrix is full, but it is the conjugate of the block matrix $\operatorname{diag}(uv^{\mathsf T},uv^{\mathsf T})$. The rank is two, the trace is $2v^{\mathsf T}u$, and the determinant is zero; the block structure is hidden, not changed.
 
-## The $2\times2$ $z$ Frame
-
-
+## The Entry Model
 
 **The factorisation.** A nonzero $2\times2$ matrix has rank one exactly when $M=uv^{\mathsf T}$ for nonzero vectors $u,v\in\mathbb{C}^2$, uniquely up to $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$. If $M=uv^{\mathsf T}$, every column is a multiple of $u$; conversely, two proportional columns give the pair.
 
@@ -190,9 +184,7 @@ and $\operatorname{Tr}M=v^{\mathsf T}u=2Q_t$, $\det M=0$. The factor $i$ makes $
 
 **The rank.** The rank is one for every nonzero singular matrix and zero only at $M=0$. The one-sided operators have rank two, so the entry element has rank one while its left and right multiplications have rank two; the doubling in the regular model makes the two ranks agree.
 
-## The $4\times4$ $z$ Frame
-
-
+## The Peirce Frame
 
 ### The Annihilators
 
@@ -246,6 +238,4 @@ A nonzero singular matrix has rank one in the entry model and rank two in the re
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the nilpotent form
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the corners
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the full entry-model treatment
-- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the full regular treatment
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the topology

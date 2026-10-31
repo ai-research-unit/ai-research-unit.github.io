@@ -48,7 +48,7 @@ The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on
 
 **The Euclidean norm.** $\lVert\tilde Q\rVert_E=\sqrt{H}$, and $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality $\lvert N\rvert\le H$ is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly when the four squares are non-negative real multiples of one another. Normality does not force equality: $\tilde Q=e_t+i\vec e_x$ is normal, with $N=0$ and $H=2$.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The trace and its powers.** In the coefficient frame $M=\mathsf M_4^{L}(\tilde Q)$ and $\operatorname{Tr}M=4Q_t$, so $Q_t=\tfrac14\operatorname{Tr}M$. Since $M=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$,
 
@@ -83,7 +83,7 @@ Cayley–Hamilton gives $M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=
 
 Each reduces to the scalar part of the corresponding product: $\tilde Q^{\natural}\tilde Q=Ne_t$, $\tilde Q^{*}\tilde Q=He_t$ and $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The determinant is the square of the quaternionic norm; the norm itself is recovered by the word $M^{\mathsf T}M$, not by the determinant.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The invariants.** In the entry model, with $X=\mathsf M_2(\tilde Q)$,
 
@@ -113,7 +113,7 @@ with roots $\lambda_\pm=Q_t\pm iB$. Its discriminant is $-4B^2$, so the roots ar
 
 The values are the same as in the regular model. The factor is $\tfrac12$ rather than $\tfrac14$ because the identity has trace $2$ rather than $4$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The block invariants.** In the Peirce frame $M=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. The trace is $2\operatorname{tr}B=4Q_t$, the determinant is $\det(B)^2=\langle\tilde Q\rangle_{\natural}^2$, and the inverse is $\operatorname{diag}(B^{-1},B^{-1})$. Every invariant is the entry invariant read twice, with the trace doubled and the determinant squared.
 

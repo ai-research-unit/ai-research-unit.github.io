@@ -22,8 +22,6 @@ The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tild
 
 ## Common Aspects
 
-
-
 ### The Operator
 
 **The definition.**
@@ -140,9 +138,7 @@ C\bigl(M_4(\mathbb{C})_{\mathbb{B}_R}\bigr)=M_4(\mathbb{C})_{\mathbb{B}_L}.
 $$
 The statement is proved in *Matrix Representations : The Centraliser and the Double Centraliser*.
 
-## The $S_3$ Frame
-
-
+## The Coefficient Frame
 
 ### The Coefficient Display
 
@@ -169,9 +165,7 @@ The first column is again the element itself, because $e_t\tilde Q=\tilde Q$. Th
 
 **The invariants.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$. The rank is twice the rank of $B$. The entries are different from the left coefficient matrix, and the eigenvalues are the same.
 
-## The $2\times2$ $z$ Frame
-
-
+## The Entry Model
 
 **The block.** Right multiplication is not a separate $2\times2$ display of the operator. The operator lives on the four-dimensional algebra; the entry model supplies the block $B$, and right multiplication on the defining module is $X\mapsto XB$, whose matrix in the matrix-unit basis is $B^{\mathsf T}\otimes\mathrm I_2$ — the Peirce display again. The block $B^{\mathsf T}$ is the compression of the right operator to one Peirce column, just as $B$ is the compression of the left operator to one Peirce row.
 
@@ -187,9 +181,7 @@ The regular invariants are obtained from these by doubling the trace and the spe
 
 **The anti-law.** On the defining module right multiplication satisfies $(XB)C=X(BC)$: the order of the factors is reversed, which is the entry-model form of the anti-representation law $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$. The transpose $B^{\mathsf T}$ is the matrix of the right action on the module, and transposition is the reason the right family has the same invariants as the left.
 
-## The $4\times4$ $z$ Frame
-
-
+## The Peirce Frame
 
 ### The Peirce Display
 

@@ -68,7 +68,7 @@ $$
 $$
 Since $\mathsf M_4^L(\vec e_k)^2=-\mathrm I_4$ for each $k$, the Casimir is $\Omega=\tfrac38\mathrm I_4$. It acts on each copy of the defining module by the scalar $\tfrac38$, and in the entry model it is $\tfrac38\mathrm I_2$. The value is the same because the vector part has three dimensions in both displays and the normalization of $\kappa_{\mathbb{C}}$ is the same.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The formula.** For $X=\mathsf M_4^L(\tilde X)$ and $Y=\mathsf M_4^L(\tilde Y)$,
 $$
@@ -89,7 +89,7 @@ On the image it equals $4\kappa_{\mathbb{C}}=-32\vec X\cdot\vec Y$. The factor f
 
 **The trace form and the Casimir.** The regular trace form is $\operatorname{tr}_4(XY)=4\langle\tilde X,\tilde Y\rangle$, of signature $(4,4)$ on the real algebra, and the Casimir is $\tfrac38\mathrm I_4$.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The formula.** For $X=\mathsf M_2(\tilde X)$ and $Y=\mathsf M_2(\tilde Y)$,
 $$
@@ -99,7 +99,7 @@ and on the vector part $\kappa_{\mathbb{C}}=-8\vec X\cdot\vec Y$. On the vector 
 
 **The trace form.** The entry trace form is $\operatorname{tr}_2(XY)=2\langle\tilde X,\tilde Y\rangle$, of signature $(4,4)$ after realification, and it is nondegenerate. The Casimir is $\tfrac38\mathrm I_2$. The factor two between the two trace forms is the factor two between the two traces: $\operatorname{tr}_4=2\operatorname{tr}_2$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The agreement.** In the Peirce frame $X=\mathrm I_2\otimes B_1$ and $Y=\mathrm I_2\otimes B_2$, so
 $$
@@ -141,5 +141,3 @@ The Killing form is one complex bilinear form, $\kappa_{\mathbb{C}}=4\operatorna
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the trace and the norm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie algebra and the Killing form
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms
-- [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the $2\times2$ source
-- [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the $4\times4$ source

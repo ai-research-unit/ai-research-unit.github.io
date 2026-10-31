@@ -14,7 +14,9 @@ and in the $2\times2$ model it is the conjugate transpose, $B(\tilde Q^{*})=B^{\
 
 **Boundaries.** The operator and its multiplicativity are *The Hermitian Sandwich : Definition and Multiplicativity*; the algebra instance is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*; the six subspaces are *Matrix Representations : The Six Subspaces as Matrix Conditions*; the two-sided family is *Matrix Representations : The Two-Sided Operators*; the unitary slice and the compact real form are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the Lorentz action is *Biquaternion Rotations and Lorentz Transformations*.
 
-## The Operator and Its Laws
+## Common Aspects
+
+### The Operator and Its Laws
 
 **The definition.**
 $$
@@ -76,7 +78,7 @@ $$
 $$
 that is, $\lvert\lambda_+\rvert^{2}$, $\lambda_+\overline{\lambda_-}$, $\overline{\lambda_+}\lambda_-$ and $\lvert\lambda_-\rvert^{2}$.
 
-## The Two Halves and the Finer Subspaces
+### The Two Halves and the Finer Subspaces
 
 **The two halves are always preserved.**
 $$
@@ -106,46 +108,23 @@ a dilation composed with a real rotation. The vector subspace is preserved becau
 
 **The two group readings.** The parameter set of the subspace-preserving maps is $\mathbb{C}^{\times}\times SO(3)$, of real dimension four; the parameter set of the automorphisms is the $*$-unitary group $U(2)$, of real dimension four; the two sets meet in $U(1)\times SO(3)$, where the scalars have modulus one. The automorphism group is not the whole subspace-preserving set, because a nontrivial dilation preserves the subspaces and is not an automorphism.
 
-## The Peirce Display
+### The Unitary Slice
 
-**The matrix.** In the Peirce frame,
+**The slice.** The $*$-unitary elements are those with $\tilde Q^{*}\tilde Q=e_t$. In the $2\times2$ model the dagger is the conjugate transpose, so the slice is
 $$
-\mathsf M(\Theta_{\tilde Q})
-=\mathsf M_4^{L}(\tilde Q)\,\mathsf M_4^{R}(\tilde Q^{*})
-=\bigl(B(\tilde Q^{*})^{\mathsf T}\otimes I_2\bigr)\bigl(I_2\otimes B\bigr)
-=B(\tilde Q^{*})^{\mathsf T}\otimes B .
+U=\{\tilde Q:B^{\dagger}B=\mathrm I_2\}=U(2),
 $$
-Since $B(\tilde Q^{*})=B^{\dagger}$, the first factor is $\overline B$, and
-$$
-\boxed{\ \mathsf M(\Theta_{\tilde Q})=\overline B\otimes B\ }.
-$$
-The sandwich is the only member of the two-sided family whose two Kronecker factors are conjugate.
+of real dimension four. Its determinant-one part is $SU(2)\cong\mathrm{Spin}(3)$.
 
-**The entries.** Writing $B=\begin{pmatrix}M_{11}&M_{12}\\M_{21}&M_{22}\end{pmatrix}$,
-$$
-\overline B\otimes B=
-\begin{pmatrix}
-\overline{M_{11}}\,B&\overline{M_{12}}\,B\\[2pt]
-\overline{M_{21}}\,B&\overline{M_{22}}\,B
-\end{pmatrix},
-$$
-a block matrix whose four blocks are scalar multiples of the same $2\times2$ matrix $B$. This is the display in which the sandwich is visibly a two-sided operator of rank-one coefficient type.
+**The two slices are different.** The $*$-unitary slice $U(2)$ acts by automorphisms and is compact. The norm-one slice $\lvert\langle\tilde Q\rangle_{\natural}\rvert=1$ is $SL_2(\mathbb{C})$ up to phase, of real dimension six, and acts by Lorentz similarities. The first fixes the dagger; the second scales the quaternion norm by one. They meet in $SU(2)$ up to the central phase.
 
-**The trace and the determinant.**
-$$
-\operatorname{Tr}(\overline B\otimes B)=\operatorname{Tr}\overline B\cdot\operatorname{Tr}B=(2\overline{Q_t})(2Q_t)=4\lvert Q_t\rvert^{2},
-$$
-and
-$$
-\det(\overline B\otimes B)=(\det\overline B)^{2}(\det B)^{2}=\lvert N\rvert^{4}.
-$$
-The rank is $\operatorname{rank}\overline B\cdot\operatorname{rank}B=\operatorname{rank}(B)^{2}$.
+**The Lie algebra.** The tangent space at the identity is the space of $*$-anti-Hermitian elements, that is, $\mathfrak{u}(2)$; its traceless part is $\mathfrak{su}(2)$. The Cartan decomposition of the group of units is the decomposition of $\mathfrak{sl}_2(\mathbb{C})$ into $\mathfrak{su}(2)$ and the boosts, and the sandwich is the exponential of the adjoint action on that decomposition.
 
-**The spectrum.** The eigenvalues of $\overline B\otimes B$ are the products $\overline{\lambda_i}\lambda_j$; the four values are real on the diagonal pairs and conjugate on the off-diagonal pairs. The trace is their sum, $2\operatorname{Re}(\lambda_+\overline{\lambda_-})+2\lvert\lambda_+\rvert^{2}$ in the notation above, which equals $4\lvert Q_t\rvert^{2}$ because $\lambda_++\lambda_-=2Q_t$.
+**The compact real form.** The positivity of the dagger, $\operatorname{Sc}(\tilde Q^{*}\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$, is what makes the slice compact. It is the same positivity that makes the Hermitian cone of the algebra the cone of $M_2(\mathbb{C})$.
 
-**The two halves in the block display.** A Hermitian $X$ has a Hermitian block coordinate in the Peirce frame, and the image under $\overline B\otimes B$ is again Hermitian by the general argument; the block display does not make the symmetry manifest, and the coefficient display does.
+## The Coefficient Frame
 
-## The Coefficient Display and the Lorentz Matrix
+### The Coefficient Display and the Lorentz Matrix
 
 **The matrix.** In the coefficient frame,
 $$
@@ -196,19 +175,70 @@ SL_2(\mathbb{C})\longrightarrow SO^{+}(1,3)
 $$
 is twofold with kernel $\{\pm e_t\}$.
 
-## The Unitary Slice
+## The Entry Model
 
-**The slice.** The $*$-unitary elements are those with $\tilde Q^{*}\tilde Q=e_t$. In the $2\times2$ model the dagger is the conjugate transpose, so the slice is
+**The defining module.** The $2\times2$ model carries the sandwich as the map
 $$
-U=\{\tilde Q:B^{\dagger}B=\mathrm I_2\}=U(2),
+X\longmapsto BXB^{\dagger}
 $$
-of real dimension four. Its determinant-one part is $SU(2)\cong\mathrm{Spin}(3)$.
+on $M_2(\mathbb{C})$. Its matrix in the matrix-unit basis is $\overline B\otimes B$, the same matrix as in the Peirce display; the entry model supplies the two factors $B$ and $B^{\dagger}$, not a smaller display, because the sandwich acts on the four-dimensional algebra.
 
-**The two slices are different.** The $*$-unitary slice $U(2)$ acts by automorphisms and is compact. The norm-one slice $\lvert\langle\tilde Q\rangle_{\natural}\rvert=1$ is $SL_2(\mathbb{C})$ up to phase, of real dimension six, and acts by Lorentz similarities. The first fixes the dagger; the second scales the quaternion norm by one. They meet in $SU(2)$ up to the central phase.
+**The defect and the slice.** The product of two images is
+$$
+(BXB^{\dagger})(BYB^{\dagger})=BX(B^{\dagger}B)YB^{\dagger},
+$$
+so the defect is $B^{\dagger}B$. The map is an algebra automorphism exactly when $B^{\dagger}B=\mathrm I_2$, that is, exactly when $B\in U(2)$. The central rule is $\Theta_{zB}=|z|^2\Theta_B$, and the phase of $B$ cancels.
 
-**The Lie algebra.** The tangent space at the identity is the space of $*$-anti-Hermitian elements, that is, $\mathfrak{u}(2)$; its traceless part is $\mathfrak{su}(2)$. The Cartan decomposition of the group of units is the decomposition of $\mathfrak{sl}_2(\mathbb{C})$ into $\mathfrak{su}(2)$ and the boosts, and the sandwich is the exponential of the adjoint action on that decomposition.
+**The invariants.** The norm scales by the squared modulus of the determinant:
+$$
+\det(BXB^{\dagger})=|N|^2\det X,
+\qquad
+N=\det B.
+$$
+The matrix of the operator has trace $4|Q_t|^2$, determinant $|N|^4$ and rank $\operatorname{rank}(B)^2\in\{4,1,0\}$; its eigenvalues are $\lambda_i\overline{\lambda_j}$ for the two eigenvalues of $B$.
 
-**The compact real form.** The positivity of the dagger, $\operatorname{Sc}(\tilde Q^{*}\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$, is what makes the slice compact. It is the same positivity that makes the Hermitian cone of the algebra the cone of $M_2(\mathbb{C})$.
+**The halves.** Hermitian and anti-Hermitian matrices are preserved for every $B$, by $(BXB^{\dagger})^{\dagger}=BX^{\dagger}B^{\dagger}$. The vector and quaternion subspaces are preserved exactly when $B=zu$ with $z\in\mathbb{C}$ and $u$ a real unit quaternion; then the map is $|z|^2$ times the rotation $X\mapsto uXu^{-1}$.
+
+## The Peirce Frame
+
+### The Peirce Display
+
+**The matrix.** In the Peirce frame,
+$$
+\mathsf M(\Theta_{\tilde Q})
+=\mathsf M_4^{L}(\tilde Q)\,\mathsf M_4^{R}(\tilde Q^{*})
+=\bigl(B(\tilde Q^{*})^{\mathsf T}\otimes I_2\bigr)\bigl(I_2\otimes B\bigr)
+=B(\tilde Q^{*})^{\mathsf T}\otimes B .
+$$
+Since $B(\tilde Q^{*})=B^{\dagger}$, the first factor is $\overline B$, and
+$$
+\boxed{\ \mathsf M(\Theta_{\tilde Q})=\overline B\otimes B\ }.
+$$
+The sandwich is the only member of the two-sided family whose two Kronecker factors are conjugate.
+
+**The entries.** Writing $B=\begin{pmatrix}M_{11}&M_{12}\\M_{21}&M_{22}\end{pmatrix}$,
+$$
+\overline B\otimes B=
+\begin{pmatrix}
+\overline{M_{11}}\,B&\overline{M_{12}}\,B\\[2pt]
+\overline{M_{21}}\,B&\overline{M_{22}}\,B
+\end{pmatrix},
+$$
+a block matrix whose four blocks are scalar multiples of the same $2\times2$ matrix $B$. This is the display in which the sandwich is visibly a two-sided operator of rank-one coefficient type.
+
+**The trace and the determinant.**
+$$
+\operatorname{Tr}(\overline B\otimes B)=\operatorname{Tr}\overline B\cdot\operatorname{Tr}B=(2\overline{Q_t})(2Q_t)=4\lvert Q_t\rvert^{2},
+$$
+and
+$$
+\det(\overline B\otimes B)=(\det\overline B)^{2}(\det B)^{2}=\lvert N\rvert^{4}.
+$$
+The rank is $\operatorname{rank}\overline B\cdot\operatorname{rank}B=\operatorname{rank}(B)^{2}$.
+
+**The spectrum.** The eigenvalues of $\overline B\otimes B$ are the products $\overline{\lambda_i}\lambda_j$; the four values are real on the diagonal pairs and conjugate on the off-diagonal pairs. The trace is their sum, $2\operatorname{Re}(\lambda_+\overline{\lambda_-})+2\lvert\lambda_+\rvert^{2}$ in the notation above, which equals $4\lvert Q_t\rvert^{2}$ because $\lambda_++\lambda_-=2Q_t$.
+
+**The two halves in the block display.** A Hermitian $X$ has a Hermitian block coordinate in the Peirce frame, and the image under $\overline B\otimes B$ is again Hermitian by the general argument; the block display does not make the symmetry manifest, and the coefficient display does.
 
 ## Summary
 

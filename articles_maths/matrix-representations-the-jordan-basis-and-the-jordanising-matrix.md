@@ -81,7 +81,7 @@ This is two copies of the singular Jordan block. The defect is the same $s$ in b
 
 **Transitions.** If $\tilde Q'=\tilde Q+be_t$, the flag and the frame are unchanged, and $\mathsf M_2^{\tilde Q}(\tilde Q')=J_2(Q_t+b)$ with the same Jordanising matrix. If $\tilde Q'=a\tilde Q$ with $a\neq0$, the canonical frame transforms by $\tilde\Pi_\pm'=\tilde\Pi_\pm$, $\vec\Upsilon_-'=a\vec\Upsilon_-$, $\vec\Upsilon_+'=a^{-1}\vec\Upsilon_+$, and the coordinate model by $D=\operatorname{diag}(1,a)$; the Jordanising matrix becomes $\mathsf S_{Q'}=\mathsf S_QD^{-1}$ up to a phase. For two elements with different vector lines, $T_{Q'Q}=\mathsf S_Q^{-1}\mathsf S_{Q'}$ satisfies the cocycle $T_{Q''Q}T_{Q'Q''}=T_{Q'Q}$; it preserves the block structure only when the vector parts are proportional. Two non-scalar elements commute exactly when their vector parts are proportional, because the centraliser is $\mathbb{C}[\tilde Q]$.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The change.** In the coefficient frame the Jordanising matrix is the coordinate matrix of the Jordan basis in the coefficient basis. Its columns are the four elements in the corner order, and
 $$
@@ -109,7 +109,7 @@ $$
 $$
 in the chain order, and to $J_2(Q_t)\otimes\mathrm I_2$ in the corner order. The two forms differ by the permutation that orders the two chains. The coefficient-frame matrix of the element is not in Jordan form until this change is applied.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The canonical matrix.** Let
 $$
@@ -154,7 +154,7 @@ $$
 $$
 a group isomorphic to $\mathbb{C}^{\times}\ltimes\mathbb{C}$, of complex dimension two. The parameter $\alpha$ is a global scale and $\beta$ a chain shift: with $b=-\beta/\alpha$, the frame becomes $\tilde\Pi_+(b)=\tilde\Pi_++b\vec Q$, $\tilde\Pi_-(b)=\tilde\Pi_--b\vec Q$, $\vec\Upsilon_-(b)=\vec Q$, the affine family of adapted pairs, with the canonical Hermitian pair at $b=0$. Since $\det\mathsf G=\alpha^2$, the determinant is multiplied by $\alpha^2$; the modulus $s^{-1}$ is attached to the canonical representative, and the shift does not change it.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The explicit form.** The regular Jordanising matrix $\mathsf S_Q^{(4)}$ has columns the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the Peirce frame, in the corner order. By construction,
 $$
@@ -221,5 +221,3 @@ The Jordan basis $\mathcal J=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilo
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the flag and the canonical pair
 - [Nilpotents](nilpotents.html), for the nilpotent cone
 - [The Spectrum](the-spectrum.html), for the spectral criterion
-- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the $2\times2$ source
-- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ source

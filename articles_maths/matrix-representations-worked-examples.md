@@ -27,8 +27,6 @@ The regular matrix is $X=L(\tilde Q)=\operatorname{diag}(A,A)$ in the Peirce fra
 
 ## Common Aspects
 
-
-
 ### The Method
 
 **The invariants.** Put $\tau=\operatorname{Tr}A$ and $\delta=\det A$. Then
@@ -113,9 +111,7 @@ The coordinates are the four complex numbers $Q_\mu$ of the block, not the four 
 
 **The doubling in one line.** The regular column has the doubled trace, the squared determinant, the doubled rank and each eigenvalue twice; the minimal polynomial and the flags are unchanged.
 
-## The $S_3$ Frame
-
-
+## The Coefficient Frame
 
 **The coefficient columns.** The eight elements have coefficient columns $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ listed in the table of §*The Eight Matrices*. The coefficient matrix of the regular display is
 $$
@@ -127,9 +123,7 @@ and its first column is $[Q]$, because $L(\tilde Q)e_t=\tilde Q$. The other thre
 
 **The invariants.** The coefficient display preserves the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$ and the doubled spectrum. The entries are not the four coordinates except in the first column; the coefficient frame dresses the corner structure in the fixed Peirce change.
 
-## The $2\times2$ $z$ Frame
-
-
+## The Entry Model
 
 ### The Scalar
 
@@ -191,9 +185,7 @@ p_A(t)=t^2-2t+2,\qquad
 $$
 The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a matrix in $SU(2)$.
 
-## The $4\times4$ $z$ Frame
-
-
+## The Peirce Frame
 
 ### The Scalar
 
@@ -266,5 +258,3 @@ The eight matrices cover the three spectral types and the three normality flags.
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the Jordan case
 - [Matrix Representations : The Polar Decomposition of a Matrix](matrix-representations-the-polar-decomposition-of-a-matrix.html), for the polar factors
 - [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one case
-- [Matrix Representations : Worked Examples](matrix-representations-worked-examples.html), for the full entry-model computations
-- [Matrix Representations : Worked Examples](matrix-representations-worked-examples.html), for the full regular computations

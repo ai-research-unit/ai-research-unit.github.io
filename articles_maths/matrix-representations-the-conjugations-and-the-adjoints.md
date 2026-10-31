@@ -19,7 +19,7 @@ P=-\sigma_2\otimes\sigma_2=
 $$
 The Peirce change is $C_{\Pi}$, with columns the four Peirce elements in coefficient coordinates.
 
-**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the automorphisms that commute with them are *Biquaternion Automorphisms and Derivations*. The $2\times2$ and $4\times4$ source articles are *Matrix Representations : The Conjugations and the Adjoints* and *Matrix Representations : The Conjugations and the Adjoints*.
+**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the automorphisms that commute with them are *Biquaternion Automorphisms and Derivations*. The $2\times2$ and $4\times4$ source articles are *Matrix Representations : The Conjugations and the Adjoints*.
 
 ## Common Aspects
 
@@ -51,7 +51,7 @@ and in the regular model the factor is $\tfrac14$. The first uses no involution,
 
 **The sign of $\flat$.** The word $\flat=-*$ is the negative of the Hermitian word. It squares to the identity but reverses the product only up to sign, so it is the fourth involution and not an anti-automorphism. No change of display changes its sign.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The four words.** In the coefficient frame the basis is real, so the four words are the plain operations: $\natural$ is the transpose $M^{\mathsf T}$, $\bar{\cdot}$ is the entrywise conjugation $\bar M$, $*$ is the dagger $M^{\dagger}=\overline M^{\mathsf T}$, and $\flat$ is $-M^{\dagger}$. No dressing appears. The composition $\natural\circ\bar{\cdot}=\bar{\cdot}\circ\natural=*$ is the identity $\overline{M^{\mathsf T}}=\overline M^{\mathsf T}$.
 
@@ -71,7 +71,7 @@ which for $n=4$ reads $\operatorname{adj}^2M=N^4M$. The adjugate is therefore no
 
 **The dagger.** The Hermitian adjoint is the plain dagger $M^{\dagger}=\overline M^{\mathsf T}$. Its fixed space is the Hermitian subspace and its anti-fixed space the anti-Hermitian subspace, both four-real-dimensional inside the image. The ambient Hermitian matrices are sixteen-dimensional, but the image carries only the four-dimensional Hermitian part. For every $M$ in the image, $M^{\dagger}M$ is positive semidefinite and is positive definite exactly when $M$ is invertible.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The dressed transpose.** For $M\in M_2(\mathbb{C})$,
 $$
@@ -102,7 +102,7 @@ $$
 $$
 because $\varepsilon\varepsilon^{\mathsf T}=\mathrm I_2=\varepsilon^{-\mathsf T}\varepsilon^{-1}$. The dressings of the two factors cancel, and the dagger is plain.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The Peirce dressing.** In the Peirce frame the transpose and the entrywise conjugation are dressed by
 $$
@@ -148,5 +148,3 @@ The four words are the quaternion conjugation, the complex conjugation, the Herm
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant and the norm
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphisms commuting with the words
-- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the $2\times2$ source
-- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the $4\times4$ source

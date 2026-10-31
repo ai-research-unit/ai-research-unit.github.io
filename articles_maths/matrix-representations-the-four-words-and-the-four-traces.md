@@ -73,7 +73,7 @@ $$
 
 The four words are therefore closed under the dagger up to the exchange of the arguments and the entrywise conjugation, which is the matrix form of the Klein group of the four involutions.
 
-## The $S_3$ Frame
+## The Coefficient Frame
 
 **The frame.** The coefficient frame is the frame in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde P^{\natural})=X^{\mathsf T}$ and $\mathsf M_4^{L}(\tilde P^{*})=X^{\dagger}$, with $X=\mathsf M_4^{L}(\tilde P)$ and $Y=\mathsf M_4^{L}(\tilde Q)$. The scalar part is one quarter of the trace, $\operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf M_4^{L}(\tilde R)$.
 
@@ -119,7 +119,7 @@ $$
 $$
 together with $X_P^{\mathsf T}=\mathsf M_4^{L}(\tilde P^{\natural})$. This invariance is the reason the trace pairing is the natural duality of the regular bimodule.
 
-## The $2\times2$ $z$ Frame
+## The Entry Model
 
 **The half-traces.** In the entry model, with $X=\mathsf M_2(\tilde P)$ and $Y=\mathsf M_2(\tilde Q)$, the same theorem reads
 
@@ -137,7 +137,7 @@ The four forms are the same four functions of the elements; the trace that compu
 
 **The entry words.** The table of four words is read on $M_2(\mathbb{C})$ without a qualifier, because the entry model is onto. The transpose is the entry transpose, and on the natural subspaces it coincides with the algebra involutions: it fixes the quaternion pattern and the Hermitian matrices where those conditions say it should. The half-trace is the scalar part, and the identity has trace $2$.
 
-## The $4\times4$ $z$ Frame
+## The Peirce Frame
 
 **The block words.** In the Peirce frame $X=\mathrm I_2\otimes P$ and $Y=\mathrm I_2\otimes Q$ with $P=\mathsf M_2(\tilde P)$ and $Q=\mathsf M_2(\tilde Q)$. The plain and dagger words decompose blockwise:
 

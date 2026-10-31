@@ -12,9 +12,11 @@ $$
 $$
 and $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\lambda_+\lambda_-$.
 
-**Boundaries.** The matrix calculus is *Matrix Representations : The Functional Calculus* and *Matrix Representations : The Functional Calculus*; the algebra functions are *Biquaternion Elementary Functions*; the exponential of the algebra is *The Exponential of a Biquaternion*; the Killing form and the Lie bracket are *Matrix Representations : The Killing Form*; the spectrum is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+**Boundaries.** The matrix calculus is *Matrix Representations : The Functional Calculus*; the algebra functions are *Biquaternion Elementary Functions*; the exponential of the algebra is *The Exponential of a Biquaternion*; the Killing form and the Lie bracket are *Matrix Representations : The Killing Form*; the spectrum is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
-## The Cauchy Integral
+## Common Aspects
+
+### The Cauchy Integral
 
 **The definition.** Let $X$ be a $2\times2$ or a $4\times4$ matrix and let $f$ be holomorphic on an open set containing $\operatorname{spec}X$. For a finite union $\gamma$ of positively oriented closed contours enclosing the spectrum,
 $$
@@ -56,7 +58,7 @@ $$
 f(L)=I_2\otimes f(B).
 $$
 
-## The Exponential
+### The Exponential
 
 **The series and the determinant.**
 $$
@@ -100,7 +102,7 @@ and in the $2\times2$ model the same formula with $\mathrm I_4$ replaced by $\ma
 
 **The spectral reading.** The eigenvalues of $L(\tilde Q)$ are $Q_t\pm iB$, each double, and the eigenvalues of the exponential are $e^{Q_t\pm iB}$, each double. The formula is the spectral theorem written with the two rank-two eigenprojections. In the $2\times2$ model the same two values are simple.
 
-## One-Parameter Subgroups
+### One-Parameter Subgroups
 
 **The exponential lines.** For $X$ in the algebra or in either matrix display,
 $$
@@ -116,7 +118,7 @@ $$
 $$
 so the differential at the origin is the identity and the exponential is a local diffeomorphism there.
 
-## The Kernel
+### The Kernel
 
 **The statement.** The kernel of the exponential consists of the diagonalisable matrices whose eigenvalues lie in $2\pi i\mathbb{Z}$. In the $2\times2$ model these are the matrices conjugate to
 $$
@@ -126,7 +128,7 @@ and in the regular model the same diagonal matrices with each entry doubled.
 
 **The properties.** The kernel is a union of conjugacy classes, not a subgroup; it contains zero divisors, and it contains matrices of rank one and rank zero. In the regular image the kernel is the image of the biquaternion kernel, so its elements are $L(\tilde K)$ with $\tilde K$ diagonalisable over $2\pi i\mathbb{Z}$.
 
-## The Logarithm
+### The Logarithm
 
 **The equation.** A logarithm of $X$ is a matrix $Y$ with $\exp Y=X$. A logarithm exists exactly when $X$ is invertible.
 
@@ -145,7 +147,75 @@ $$
 $$
 and it is the local inverse of the exponential at the identity. The identity $\exp\operatorname{Log}X=X$ holds on that domain, and $\operatorname{Log}\exp X=X$ holds when the spectrum of $X$ lies in the strip $\lvert\operatorname{Im}z\rvert<\pi$.
 
-## The Square Root
+## The Coefficient Frame
+
+**The coefficient display.** In the coefficient frame the regular matrix is $M_{\mathrm{coef}}=C_{\Pi}L(\tilde Q)C_{\Pi}^{-1}$, so
+$$
+f(M_{\mathrm{coef}})=C_{\Pi}f\bigl(L(\tilde Q)\bigr)C_{\Pi}^{-1}
+=C_{\Pi}\bigl(I_2\otimes f(B)\bigr)C_{\Pi}^{-1}.
+$$
+The Cauchy integral converges entrywise, and the resolvent identity reads
+$$
+(z\mathrm I_4-M_{\mathrm{coef}})^{-1}
+=C_{\Pi}\bigl(I_2\otimes(z\mathrm I_2-B)^{-1}\bigr)C_{\Pi}^{-1}.
+$$
+The coefficient display is therefore the conjugate of the block display; it is not an entrywise calculus, because $C_{\Pi}$ mixes the entries.
+
+**The exponential and the invariants.** The exponential is
+$$
+\exp M_{\mathrm{coef}}=C_{\Pi}\bigl(I_2\otimes e^{B}\bigr)C_{\Pi}^{-1},
+$$
+with determinant $\exp(4Q_t)$ and trace $4Q_t$ at the identity, as in the Peirce display. The eigenvalues are $e^{\lambda_\pm}$, each twice, and the coefficient matrix has no zero block.
+
+**The branches.** A logarithm in the coefficient frame is the conjugate of a logarithm in the Peirce frame, and the two copies carry the same integers. The coefficient frame does not add branches; it only changes the entries of the same matrix.
+
+## The Entry Model
+
+**The spectral form.** If $B$ is diagonalisable, $B=C\operatorname{diag}(\lambda_+,\lambda_-)C^{-1}$ and
+$$
+f(B)=C\operatorname{diag}\bigl(f(\lambda_+),f(\lambda_-)\bigr)C^{-1}.
+$$
+If $B=\lambda\mathrm I_2+N$ with $N\neq0$ and $N^2=0$, then $f(B)=f(\lambda)\mathrm I_2+f'(\lambda)N$. The function depends on the values on the spectrum and, at a repeated eigenvalue, on the first derivative.
+
+**The exponential.** The closed form is
+$$
+\exp B=e^{Q_t}\left(\cos B\,\mathrm I_2+\frac{\sin B}{B}\,B(\vec Q)\right),
+$$
+with $\sin B/B=1$ at $B=0$. The determinant is $e^{2Q_t}$, the trace is $2e^{Q_t}\cos B$, and the eigenvalues are $e^{Q_t\pm iB}$.
+
+**The logarithm and the roots.** The logarithms of a matrix with distinct eigenvalues form a $\mathbb{Z}^2$-family,
+$$
+Y=C\operatorname{diag}\bigl(\log\lambda_++2\pi i m,\ \log\lambda_-+2\pi i n\bigr)C^{-1}.
+$$
+At a non-scalar repeated eigenvalue the two integers are tied and the family is a $\mathbb{Z}$-family; at a scalar they are the translates of one scalar logarithm by the kernel. The principal square root is
+$$
+B^{1/2}=\frac{B+\sqrt{\det B}\,\mathrm I_2}{\sqrt{\operatorname{Tr}B+2\sqrt{\det B}}},
+$$
+and the four root counts of the classification below are the entry-model counts.
+
+### Worked Examples
+
+**An exponential.** For $\tilde Q=2e_t+\vec e_x$ the closed form gives $B=1$ and
+$$
+\exp\mathsf M_2(\tilde Q)=e^2\bigl(\cos 1\,\mathrm I_2+\sin 1\,\mathsf M_2(\vec e_x)\bigr),
+$$
+with eigenvalues $e^{2\pm i}$ and determinant $e^4$.
+
+**A diagonal matrix.** For $X=\operatorname{diag}(4,9)$ the roots are $\operatorname{diag}(\pm2,\pm3)$, four matrices, one for each sign choice.
+
+**A Jordan block.** For $X=\begin{pmatrix}1&1\\0&1\end{pmatrix}=\mathrm I_2+N$ the roots are
+$$
+\pm\left(\mathrm I_2+\frac{N}{2}\right)=\pm\begin{pmatrix}1&\tfrac12\\0&1\end{pmatrix},
+$$
+two matrices.
+
+**A nilpotent.** For $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ there is no root, by the repeated-eigenvalue theorem with $\lambda=0$.
+
+**The identity.** For $X=\mathrm I_2$ the roots are $\pm\mathrm I_2$ together with the traceless involutions, a complex surface of dimension two.
+
+## The Peirce Frame
+
+### The Square Root
 
 **The equation.** A square root of $X$ is a matrix $Y$ with $Y^2=X$. A square root commutes with $X$, so the equation is solved in the commutant of $X$.
 
@@ -178,26 +248,6 @@ Y=\exp\bigl(\tfrac12\operatorname{Log}X\bigr),
 $$
 and the principal root is the principal branch of that expression. The singular matrices keep square roots without logarithms: a nilpotent has a square root only when it is zero, and a rank-one matrix with a nonzero eigenvalue has a square root with one zero eigenvalue.
 
-## Worked Examples
-
-**An exponential.** For $\tilde Q=2e_t+\vec e_x$ the closed form gives $B=1$ and
-$$
-\exp\mathsf M_2(\tilde Q)=e^2\bigl(\cos 1\,\mathrm I_2+\sin 1\,\mathsf M_2(\vec e_x)\bigr),
-$$
-with eigenvalues $e^{2\pm i}$ and determinant $e^4$.
-
-**A diagonal matrix.** For $X=\operatorname{diag}(4,9)$ the roots are $\operatorname{diag}(\pm2,\pm3)$, four matrices, one for each sign choice.
-
-**A Jordan block.** For $X=\begin{pmatrix}1&1\\0&1\end{pmatrix}=\mathrm I_2+N$ the roots are
-$$
-\pm\left(\mathrm I_2+\frac{N}{2}\right)=\pm\begin{pmatrix}1&\tfrac12\\0&1\end{pmatrix},
-$$
-two matrices.
-
-**A nilpotent.** For $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ there is no root, by the repeated-eigenvalue theorem with $\lambda=0$.
-
-**The identity.** For $X=\mathrm I_2$ the roots are $\pm\mathrm I_2$ together with the traceless involutions, a complex surface of dimension two.
-
 ## Summary
 
 The functional calculus is the Cauchy integral, and on the regular image it is the biquaternion calculus:
@@ -225,6 +275,4 @@ The exponential is entire, with $\det\exp L=\exp(4Q_t)$ and closed form $e^{Q_t}
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the repeated eigenvalue
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant identity
 - [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the Lie bracket
-- [Matrix Representations : The Functional Calculus](matrix-representations-the-functional-calculus.html), for the full $2\times2$ treatment
-- [Matrix Representations : The Functional Calculus](matrix-representations-the-functional-calculus.html), for the full $4\times4$ treatment
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the algebra functions
