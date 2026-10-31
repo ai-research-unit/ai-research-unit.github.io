@@ -125,7 +125,7 @@ $$</p>
 <p>The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on the real algebra; the plain and quaternionic norms are complex-valued and have no sign.</p>
 <p><strong>The characteristic and minimal polynomials.</strong> The characteristic polynomial of the operator is the square of the entry characteristic polynomial. Its roots are $\lambda_\pm=Q_t\pm iB$, each of algebraic multiplicity two, and they are distinct exactly when $B^2\neq0$. The minimal polynomial is $t-Q_t$ for a scalar and $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ otherwise, of degree two even when the eigenvalues coincide. The regular matrix is never nonderogatory.</p>
 <p><strong>The Euclidean norm.</strong> $\lVert\tilde Q\rVert_E=\sqrt{H}$, and $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality $\lvert N\rvert\le H$ is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly when the four squares are non-negative real multiples of one another. Normality does not force equality: $\tilde Q=e_t+i\vec e_x$ is normal, with $N=0$ and $H=2$.</p>
-<h2 id="the-math52-frame">The $S_3$ Frame</h2>
+<h2 id="the-coefficient-frame">The Coefficient Frame</h2>
 <p><strong>The trace and its powers.</strong> In the coefficient frame $M=\mathsf M_4^{L}(\tilde Q)$ and $\operatorname{Tr}M=4Q_t$, so $Q_t=\tfrac14\operatorname{Tr}M$. Since $M=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$,</p>
 <p>$$
 \operatorname{Tr}(M^k)=2\operatorname{Tr}\bigl(\mathsf M_2(\tilde Q)^k\bigr)
@@ -171,7 +171,7 @@ Cayley–Hamilton gives $M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=
 </tbody>
 </table></div>
 <p>Each reduces to the scalar part of the corresponding product: $\tilde Q^{\natural}\tilde Q=Ne_t$, $\tilde Q^{*}\tilde Q=He_t$ and $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The determinant is the square of the quaternionic norm; the norm itself is recovered by the word $M^{\mathsf T}M$, not by the determinant.</p>
-<h2 id="the-math79-math80-frame">The $2\times2$ $z$ Frame</h2>
+<h2 id="the-entry-model">The Entry Model</h2>
 <p><strong>The invariants.</strong> In the entry model, with $X=\mathsf M_2(\tilde Q)$,</p>
 <p>$$
 \operatorname{tr}X=2Q_t,\qquad
@@ -213,7 +213,7 @@ with roots $\lambda_\pm=Q_t\pm iB$. Its discriminant is $-4B^2$, so the roots ar
 </tbody>
 </table></div>
 <p>The values are the same as in the regular model. The factor is $\tfrac12$ rather than $\tfrac14$ because the identity has trace $2$ rather than $4$.</p>
-<h2 id="the-math103-math104-frame">The $4\times4$ $z$ Frame</h2>
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
 <p><strong>The block invariants.</strong> In the Peirce frame $M=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. The trace is $2\operatorname{tr}B=4Q_t$, the determinant is $\det(B)^2=\langle\tilde Q\rangle_{\natural}^2$, and the inverse is $\operatorname{diag}(B^{-1},B^{-1})$. Every invariant is the entry invariant read twice, with the trace doubled and the determinant squared.</p>
 <p><strong>The spectrum.</strong> The block matrix has the spectrum of $B$, each eigenvalue twice. The characteristic polynomial is $\chi_B(t)^2$, with roots $\lambda_\pm$ of multiplicity two. The minimal polynomial is $\chi_B(t)$ itself, of degree two, because the two blocks are equal: the operator is never nonderogatory.</p>
 <p><strong>The four norms.</strong> The quarter-traces of the block words are the half-traces of the entry words, because $\operatorname{Tr}(\mathrm I_2\otimes W)=2\operatorname{tr}W$. The four norms are therefore the same numbers, computed at twice the size with half the normalization:</p>

@@ -319,7 +319,7 @@ and every eigenvalue and every Jordan block is doubled. The minimal polynomial i
 <p><strong>The rank reading.</strong> The singular example and the rank-one example both have determinant zero. The first is a Hermitian projector up to scale, the second a non-Hermitian idempotent up to scale. The difference is the normality flag.</p>
 <p><strong>The group reading.</strong> The $*$-unitary example lies in $SU(2)$; the normal example is $\sqrt2$ times an element of $SU(2)$; the Jordan block lies in $SL_2(\mathbb{C})$; the distinct-spectrum matrix has determinant $-2$ and is not in $SL_2$. The scalar is central.</p>
 <p><strong>The doubling in one line.</strong> The regular column has the doubled trace, the squared determinant, the doubled rank and each eigenvalue twice; the minimal polynomial and the flags are unchanged.</p>
-<h2 id="the-math158-frame">The $S_3$ Frame</h2>
+<h2 id="the-coefficient-frame">The Coefficient Frame</h2>
 <p><strong>The coefficient columns.</strong> The eight elements have coefficient columns $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ listed in the table of §<em>The Eight Matrices</em>. The coefficient matrix of the regular display is
 $$
 [L(\tilde Q)]_{\mathcal B}=C_{\Pi}\,(I_2\otimes A)\,C_{\Pi}^{-1},
@@ -327,7 +327,7 @@ $$
 and its first column is $[Q]$, because $L(\tilde Q)e_t=\tilde Q$. The other three columns are the coefficient columns of $\tilde Q\vec e_x$, $\tilde Q\vec e_y$ and $\tilde Q\vec e_z$.</p>
 <p><strong>Two examples.</strong> For the scalar, $C_{\Pi}(2I_4)C_{\Pi}^{-1}=2I_4$, with first column $(2,0,0,0)^{\mathsf T}$. For the Jordan block, the first column is $(1,\tfrac{i}{2},-\tfrac12,0)^{\mathsf T}$, and the coefficient matrix is the conjugate of $I_2\otimes\begin{pmatrix}1&1\\0&1\end{pmatrix}$. The eight coefficient matrices are obtained from the eight entry matrices by the same fixed conjugation.</p>
 <p><strong>The invariants.</strong> The coefficient display preserves the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$ and the doubled spectrum. The entries are not the four coordinates except in the first column; the coefficient frame dresses the corner structure in the fixed Peirce change.</p>
-<h2 id="the-math172-math173-frame">The $2\times2$ $z$ Frame</h2>
+<h2 id="the-entry-model">The Entry Model</h2>
 <h3 id="the-scalar">The Scalar</h3>
 <p><strong>Entry model.</strong> $A=2\mathrm I_2$, $\tilde Q=2e_t$. Then $\operatorname{Tr}A=4$, $\det A=4$, $p_A(t)=(t-2)^2$, $m_A(t)=t-2$, and the rank is two.</p>
 <h3 id="the-jordan-block">The Jordan Block</h3>
@@ -351,7 +351,7 @@ $$
 P=\frac{A}{7}
 $$
 is the rank-one idempotent with image $\mathbb{C}u$ and kernel $\ker v^{\mathsf T}$. The two strata: the matrix is non-pure because $v^{\mathsf T}u\neq0$.</p>
-<h3 id="the-math214-unitary-matrix">The $*$-Unitary Matrix</h3>
+<h3 id="the-math211-unitary-matrix">The $*$-Unitary Matrix</h3>
 <p><strong>Entry model.</strong> $A=\tfrac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ has $A^{\dagger}A=\mathrm I_2$, $\tau=\sqrt2$, $\delta=1$, and
 $$
 p_A(t)=t^2-\sqrt2\,t+1,\qquad
@@ -372,7 +372,7 @@ p_A(t)=t^2-2t+2,\qquad
 \lambda_\pm=1\pm i .
 $$
 The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a matrix in $SU(2)$.</p>
-<h2 id="the-math234-math235-frame">The $4\times4$ $z$ Frame</h2>
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
 <h3 id="the-scalar_1">The Scalar</h3>
 <p><strong>Regular model.</strong> $X=2\mathrm I_4$. Then $\operatorname{Tr}X=8$, $\det X=16$, $p_X(t)=(t-2)^4$, $m_X(t)=t-2$, and the rank is four.</p>
 <p><strong>Reading.</strong> The scalar is the only matrix whose minimal polynomial has degree one. It is normal, Hermitian and central; it is $*$-unitary only when $\lvert\lambda\rvert=1$, which fails here.</p>
@@ -388,7 +388,7 @@ The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $
 <h3 id="the-rank-one-matrix_1">The Rank-One Matrix</h3>
 <p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=14$, rank two, and is the double of the idempotent up to scale. Its image is $\mathbb{C}u\oplus\mathbb{C}u$ and its kernel is the complementary plane.</p>
 <p><strong>Reading.</strong> The matrix is diagonalisable, not normal, and not Hermitian. It differs from the singular example exactly by the normality flag: the singular example is a scaled Hermitian projector, the rank-one example a scaled non-Hermitian idempotent.</p>
-<h3 id="the-math266-unitary-matrix">The $*$-Unitary Matrix</h3>
+<h3 id="the-math261-unitary-matrix">The $*$-Unitary Matrix</h3>
 <p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2\sqrt2$, $\det X=1$, the same minimal polynomial, and each eigenvalue twice. It is $*$-unitary.</p>
 <p><strong>Reading.</strong> The matrix is normal and not Hermitian. Its polar decomposition is $P=\mathrm I_2$ and $V=A$.</p>
 <h3 id="the-hermitian-matrix_1">The Hermitian Matrix</h3>
@@ -445,8 +445,6 @@ The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $
 <li><a href="matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html">Matrix Representations : The Jordan Basis and the Jordanising Matrix</a>, for the Jordan case</li>
 <li><a href="matrix-representations-the-polar-decomposition-of-a-matrix.html">Matrix Representations : The Polar Decomposition of a Matrix</a>, for the polar factors</li>
 <li><a href="matrix-representations-rank-one-matrices-and-the-determinantal-variety.html">Matrix Representations : Rank-One Matrices and the Determinantal Variety</a>, for the rank-one case</li>
-<li><a href="matrix-representations-worked-examples.html">Matrix Representations : Worked Examples</a>, for the full entry-model computations</li>
-<li><a href="matrix-representations-worked-examples.html">Matrix Representations : Worked Examples</a>, for the full regular computations</li>
 </ul>
       </div>
     </main>

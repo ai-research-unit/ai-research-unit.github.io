@@ -84,7 +84,7 @@ P=-\sigma_2\otimes\sigma_2=
 \begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 The Peirce change is $C_{\Pi}$, with columns the four Peirce elements in coefficient coordinates.</p>
-<p><strong>Boundaries.</strong> The four words and the four traces are <em>Matrix Representations : The Four Words and the Four Traces</em>; the conjugations as real structures are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the automorphisms that commute with them are <em>Biquaternion Automorphisms and Derivations</em>. The $2\times2$ and $4\times4$ source articles are <em>Matrix Representations : The Conjugations and the Adjoints</em> and <em>Matrix Representations : The Conjugations and the Adjoints</em>.</p>
+<p><strong>Boundaries.</strong> The four words and the four traces are <em>Matrix Representations : The Four Words and the Four Traces</em>; the conjugations as real structures are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the automorphisms that commute with them are <em>Biquaternion Automorphisms and Derivations</em>. The $2\times2$ and $4\times4$ source articles are <em>Matrix Representations : The Conjugations and the Adjoints</em>.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <p>The algebra carries four words: the quaternion conjugation $\natural$, the complex conjugation $\bar{\cdot}$, the Hermitian adjoint $*=\natural\circ\bar{\cdot}$, and the negative adjoint $\flat=-*$. The first is complex linear, the second and third conjugate linear, and the fourth conjugate linear with a sign. The three $\natural$, $\bar{\cdot}$ and $*$ commute, each squares to the identity, and together with the identity they form a Klein four-group. The word $\flat$ squares to the identity too, but it is not an anti-automorphism: it satisfies $\flat(XY)=-\flat(Y)\flat(X)$.</p>
 <p><strong>The fixed spaces.</strong> The fixed space of $\natural$ is the centre $\mathbb{C}e_t$. The fixed space of $\bar{\cdot}$ is the real quaternion subalgebra, of real dimension four. The fixed space of $*$ is the Hermitian subspace and the fixed space of $\flat$ is the anti-Hermitian subspace, both of real dimension four. These are four of the six subspaces of <em>Matrix Representations : The Six Subspaces as Matrix Conditions</em>. All fixed spaces are taken inside the image: the ambient operation can fix more, and the difference is the transverse part of the regular model. The ambient transpose, for instance, fixes every symmetric matrix, while inside the image it fixes only the scalars.</p>
@@ -136,7 +136,7 @@ $$
 $$
 and in the regular model the factor is $\tfrac14$. The first uses no involution, the second uses $\natural$ in the first slot, the third uses $*$ in the second, and the fourth uses both. The word $\flat=-*$ is not among them. These are element-level operations; the adjoint of a linear map with respect to a form is a different object, computed from the Gram matrix, and is not used here.</p>
 <p><strong>The sign of $\flat$.</strong> The word $\flat=-*$ is the negative of the Hermitian word. It squares to the identity but reverses the product only up to sign, so it is the fourth involution and not an anti-automorphism. No change of display changes its sign.</p>
-<h2 id="the-math66-frame">The $S_3$ Frame</h2>
+<h2 id="the-coefficient-frame">The Coefficient Frame</h2>
 <p><strong>The four words.</strong> In the coefficient frame the basis is real, so the four words are the plain operations: $\natural$ is the transpose $M^{\mathsf T}$, $\bar{\cdot}$ is the entrywise conjugation $\bar M$, $*$ is the dagger $M^{\dagger}=\overline M^{\mathsf T}$, and $\flat$ is $-M^{\dagger}$. No dressing appears. The composition $\natural\circ\bar{\cdot}=\bar{\cdot}\circ\natural=*$ is the identity $\overline{M^{\mathsf T}}=\overline M^{\mathsf T}$.</p>
 <p><strong>The adjugate is cubic.</strong> For $M\in M_4(\mathbb{C})$,
 $$
@@ -151,7 +151,7 @@ $$
 which for $n=4$ reads $\operatorname{adj}^2M=N^4M$. The adjugate is therefore not a word of the algebra in the regular model; it is a cubic map that agrees with the linear word only in dimension two. Its fixed points are the matrices satisfying $M^2=(\det M)\mathrm I_4$. The image of $i\vec e_x$ is one: its norm is $-1$, its determinant is $1$, and its square is $\mathrm I_4$. The ambient $M_4(\mathbb{C})$ has more fixed points, such as $\operatorname{diag}(1,1,-1,-1)$, which are not in the image.</p>
 <p><strong>The complex conjugation.</strong> The coefficient basis is real, so $\bar{\cdot}$ is entrywise. Its fixed space is the image of the real algebra, a four-real-dimensional subspace of $M_4(\mathbb{R})$, not all of it: the regular matrix has only four real parameters. The anti-fixed space is $i$ times the image.</p>
 <p><strong>The dagger.</strong> The Hermitian adjoint is the plain dagger $M^{\dagger}=\overline M^{\mathsf T}$. Its fixed space is the Hermitian subspace and its anti-fixed space the anti-Hermitian subspace, both four-real-dimensional inside the image. The ambient Hermitian matrices are sixteen-dimensional, but the image carries only the four-dimensional Hermitian part. For every $M$ in the image, $M^{\dagger}M$ is positive semidefinite and is positive definite exactly when $M$ is invertible.</p>
-<h2 id="the-math97-math98-frame">The $2\times2$ $z$ Frame</h2>
+<h2 id="the-entry-model">The Entry Model</h2>
 <p><strong>The dressed transpose.</strong> For $M\in M_2(\mathbb{C})$,
 $$
 \operatorname{adj}M=(\operatorname{Tr}M)\mathrm I_2-M
@@ -177,7 +177,7 @@ $$
 =\bar M^{\mathsf T}=M^{\dagger},
 $$
 because $\varepsilon\varepsilon^{\mathsf T}=\mathrm I_2=\varepsilon^{-\mathsf T}\varepsilon^{-1}$. The dressings of the two factors cancel, and the dagger is plain.</p>
-<h2 id="the-math118-math119-frame">The $4\times4$ $z$ Frame</h2>
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
 <p><strong>The Peirce dressing.</strong> In the Peirce frame the transpose and the entrywise conjugation are dressed by
 $$
 P=-\sigma_2\otimes\sigma_2=
@@ -247,8 +247,6 @@ so the eigenvalues of $M^{\dagger}M$ are those of $B^{\dagger}B$, each repeated 
 <li><a href="matrix-representations-trace-determinant-and-the-biquaternion-norm.html">Matrix Representations : Trace, Determinant and the Biquaternion Norm</a>, for the determinant and the norm</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the forms</li>
 <li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the automorphisms commuting with the words</li>
-<li><a href="matrix-representations-the-conjugations-and-the-adjoints.html">Matrix Representations : The Conjugations and the Adjoints</a>, for the $2\times2$ source</li>
-<li><a href="matrix-representations-the-conjugations-and-the-adjoints.html">Matrix Representations : The Conjugations and the Adjoints</a>, for the $4\times4$ source</li>
 </ul>
       </div>
     </main>

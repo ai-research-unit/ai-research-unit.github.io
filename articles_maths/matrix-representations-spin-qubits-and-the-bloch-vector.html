@@ -73,8 +73,9 @@
 <p>A qubit is a Hermitian element of trace one and non-negative norm. Its matrix is $\tfrac12(\mathrm I+\vec r\cdot\vec\sigma)$, and the vector $\vec r$ lies in the unit ball. The Pauli matrices are the images of the Hermitian units $i\vec e_k$, and the spin operators are the images of $\tfrac{\hbar}{2}i\vec e_k$. In the regular model every object is doubled, the state becomes a rank-two matrix, and the Bloch vector is unchanged.</p>
 <p>This article develops the Hermitian basis, the spin operators, the pure states, the general state and the Bloch ball, the Born rule, the reconstruction of the vector, the spinor and the Hopf fibration, and the limits of the correspondence. It is the article in which the real form $\mathbb M_+$ of <em>Matrix Representations : The Six Subspaces as Matrix Conditions</em> becomes a state space.</p>
 <p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and regular matrix $L=I_2\otimes B$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\mathsf M_2(\vec e_k)=-i\sigma_k$. The Hermitian adjoint is that of <em>Matrix Representations : The Hermitian Sandwich</em>.</p>
-<p><strong>Boundaries.</strong> The matrix statements are <em>Matrix Representations : Spin, Qubits and the Bloch Vector</em> and <em>Matrix Representations : Spin, Qubits and the Bloch Vector</em>; the real form is <em>Matrix Representations : The Six Subspaces as Matrix Conditions</em>; the Pauli correspondence is <em>The Pauli Correspondence and the Matrix Image</em>; the spinor carriers are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the measurement rule is <em>Spin and the Three Elementary Carriers</em>.</p>
-<h2 id="the-hermitian-basis">The Hermitian Basis</h2>
+<p><strong>Boundaries.</strong> The matrix statements are <em>Matrix Representations : Spin, Qubits and the Bloch Vector</em>; the real form is <em>Matrix Representations : The Six Subspaces as Matrix Conditions</em>; the Pauli correspondence is <em>The Pauli Correspondence and the Matrix Image</em>; the spinor carriers are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the measurement rule is <em>Spin and the Three Elementary Carriers</em>.</p>
+<h2 id="common-aspects">Common Aspects</h2>
+<h3 id="the-hermitian-basis">The Hermitian Basis</h3>
 <p><strong>The Pauli images.</strong>
 $$
 \mathsf M_2(\vec e_k)=-i\sigma_k,
@@ -140,7 +141,7 @@ L(\tilde Q)=q_t\mathrm I_4+q'_x\Sigma_1+q'_y\Sigma_2+q'_z\Sigma_3,
 $$
 and in the Peirce frame it is the block diagonal matrix with two equal Hermitian blocks.</p>
 <p><strong>The real coordinates.</strong> The coefficient $q_t$ is the weight of the identity and the three $q'_k$ are the weights of the Pauli matrices. They are the four real numbers of a Hermitian matrix, and the passage between the two writings has no factor and no sign.</p>
-<h2 id="the-spin-operators">The Spin Operators</h2>
+<h3 id="the-spin-operators">The Spin Operators</h3>
 <p><strong>The definition.</strong>
 $$
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k,
@@ -166,7 +167,7 @@ $$
 L(\tilde S_k)=\tfrac{\hbar}{2}\Sigma_k=\tfrac{\hbar}{2}\operatorname{diag}(\sigma_k,\sigma_k),
 $$
 so the spin operators are doubled and the commutation relations are unchanged.</p>
-<h2 id="pure-states">Pure States</h2>
+<h3 id="pure-states">Pure States</h3>
 <p><strong>The definition.</strong> For a real unit vector $\vec u$,
 $$
 \tilde\Pi(\vec u)=\tfrac12\bigl(e_t+i\vec u\bigr)
@@ -192,7 +193,101 @@ $$
 \tfrac12\bigl(\Pi(\vec u)\oplus\Pi(\vec u)\bigr),
 $$
 a rank-two projector of trace one. It is not a pure state of the four-level matrix, where purity would require rank one; the copy label is maximally mixed.</p>
-<h2 id="the-general-state">The General State</h2>
+<h3 id="the-born-rule">The Born Rule</h3>
+<p><strong>The probabilities.</strong> For a measurement along the unit vector $\vec u$,
+$$
+p_\pm=\operatorname{Tr}\bigl(\rho\,\Pi_\pm(\vec u)\bigr)
+=\tfrac12\bigl(1\pm\vec r\cdot\vec u\bigr),
+\qquad
+\Pi_\pm(\vec u)=\tfrac12\bigl(\mathrm I_2\pm\vec u\cdot\vec\sigma\bigr).
+$$
+The probabilities are non-negative exactly when $\lvert\vec r\rvert\le1$, and they sum to one.</p>
+<p><strong>The expectation.</strong>
+$$
+\langle S_{\vec u}\rangle=\operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde S_{\vec u})\bigr)
+=\tfrac{\hbar}{2}\,\vec r\cdot\vec u .
+$$
+For a general Hermitian observable $\tilde H=h_te_t+i\vec h$,
+$$
+\operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
+$$
+the affine function of the state determined by the four numbers $(h_t,\vec h)$.</p>
+<p><strong>The regular display.</strong> The same probabilities and expectations hold for $\rho_4$, because the trace of the doubled matrix is the trace of one copy and the doubling cancels the factor $\tfrac12$.</p>
+<p><strong>The convex splitting.</strong> For $\vec r\neq0$,
+$$
+\rho=\frac{1+\lvert\vec r\rvert}{2}\Pi_+(\hat r)
++\frac{1-\lvert\vec r\rvert}{2}\Pi_-(\hat r),
+\qquad
+\hat r=\frac{\vec r}{\lvert\vec r\rvert},
+$$
+and for $\vec r=0$ the state is $\tfrac12\mathrm I_2$. The weights are non-negative and sum to one. The state lies on the chord of the ball between the two boundary points $\pm\hat r$, and its distance from the centre is the bias of the mixture.</p>
+<p><strong>The geometry.</strong> The pure states are the boundary sphere, the maximally mixed state is the centre, and the ball is convex. The matrix form of the convex structure is the statement that the positive semidefinite matrices of trace one form a convex set whose extreme points are the rank-one projectors.</p>
+<h3 id="reading-the-vector-back">Reading the Vector Back</h3>
+<p><strong>The traces.</strong>
+$$
+r_k=\operatorname{Tr}(\rho\sigma_k),
+\qquad
+r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle .
+$$
+The first identity follows from $\operatorname{Tr}\sigma_k=0$ and $\operatorname{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$; the second is the trace pairing of <em>Matrix Representations : The Four Words and the Four Traces</em>.</p>
+<p><strong>The reconstruction.</strong>
+$$
+\rho=\tfrac12\bigl(\mathrm I_2+r_k\sigma_k\bigr),
+$$
+and the four matrices $\mathrm I_2,\sigma_1,\sigma_2,\sigma_3$ are a basis of the Hermitian matrices over $\mathbb R$. The state, the matrix and the vector are three writings of four real numbers.</p>
+<h3 id="the-qubit-as-a-spinor">The Qubit as a Spinor</h3>
+<p><strong>The pure case.</strong> Every pure state is a rank-one projector,
+$$
+\rho=\xi\xi^{\dagger},
+\qquad \xi\in\mathbb C^2,\quad\lVert\xi\rVert=1,
+\qquad
+r_k=\xi^{\dagger}\sigma_k\xi .
+$$
+The vector $\xi$ is defined up to a phase, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, the minimal left ideal.</p>
+<p><strong>The mixed case.</strong> A general state is a convex combination of pure ones,
+$$
+\rho=\sum_i p_i\,\xi_i\xi_i^{\dagger},
+\qquad p_i\ge0,\quad\sum_i p_i=1,
+$$
+and the Bloch vector is the corresponding convex combination. The ball is the convex hull of the sphere.</p>
+<p><strong>The Hopf fibration.</strong> The map
+$$
+S^3\longrightarrow S^2,
+\qquad
+\xi\longmapsto\vec r=\xi^{\dagger}\vec\sigma\xi,
+$$
+is the Hopf fibration, with fibre $S^1$ the phase circle. In the regular display the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base and the fibre are the same.</p>
+<p><strong>The copy label.</strong> The doubled spinor is not a spinor of a four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. No algebra observable can polarize the label.</p>
+<h3 id="where-the-correspondence-stops">Where the Correspondence Stops</h3>
+<p><strong>The Pauli matrices are not elements of the algebra.</strong> They are the images of $i\vec e_k$, and the algebra's own units are $-i\sigma_k$. A statement about the $\sigma_k$ must be translated back through the factor $i$; the commutator of two Pauli matrices is $i$ times a Pauli matrix, and the commutator of two algebra units is an algebra unit.</p>
+<p><strong>The real form is extra data.</strong> The identification $\mathbb B\cong M_2(\mathbb C)$ is an isomorphism of complex algebras and does not by itself select $\mathbb M_+$. The statement that the Hermitian elements are the observables uses the involution $*$, which is part of the real structure and is not visible in the complex algebra alone.</p>
+<p><strong>The multiplicity is extra data.</strong> The regular model doubles every state, and the doubling is not a two-level system: the copy label is maximally mixed, the rank is two, and the purity is halved. The physical content is in the algebra, not in the multiplicity.</p>
+<p><strong>No dynamics.</strong> Nothing in this article evolves a state. The spin operators generate the rotations through the commutator; a Hamiltonian would be a choice of observable, not a consequence of the model.</p>
+<h2 id="the-coefficient-frame">The Coefficient Frame</h2>
+<p><strong>The state in coefficient coordinates.</strong> The coefficient frame is the frame in which the Hermitian units are the Pauli matrices:
+$$
+\mathsf M_2(i\vec e_k)=\sigma_k,\qquad
+\mathsf M_2(\vec e_k)=-i\sigma_k.
+$$
+A state is
+$$
+\tilde{\varrho}=\tfrac12\bigl(e_t+i\vec r\bigr)
+=\tfrac12e_t+\tfrac{i}{2}\bigl(r_1\vec e_x+r_2\vec e_y+r_3\vec e_z\bigr),
+$$
+with coefficient column
+$$
+[\varrho]=\tfrac12\bigl(1,\ ir_1,\ ir_2,\ ir_3\bigr)^{\mathsf T}.
+$$
+The scalar coefficient is the weight of the identity and the three imaginary coefficients are the Bloch vector. Hermiticity is exactly the condition that the scalar coefficient is real and the three vector coefficients are purely imaginary.</p>
+<p><strong>Reading the vector.</strong> The Bloch vector is the coefficient pairing with the Hermitian units:
+$$
+r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle
+=\operatorname{Tr}(\rho\sigma_k),
+$$
+because $\operatorname{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$ and $\operatorname{Tr}\sigma_k=0$. The four real numbers $(1,r_1,r_2,r_3)$ are the coordinates of the state in the basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ of $\mathbb M_+$.</p>
+<p><strong>The regular display.</strong> The regular matrix in the coefficient frame is $C_{\Pi}(I_2\otimes\rho)C_{\Pi}^{-1}$; its first column is $[\varrho]$, and its trace is one. The Bloch vector is unchanged by the doubling: the copy label contributes no imaginary coefficients.</p>
+<h2 id="the-entry-model">The Entry Model</h2>
+<h3 id="the-general-state">The General State</h3>
 <p><strong>The definition.</strong> A state is a Hermitian element of trace one whose matrix is positive semidefinite:
 $$
 \tilde{\varrho}=\tfrac12\bigl(e_t+i\vec r\bigr),
@@ -222,76 +317,25 @@ $$
 \operatorname{Tr}\rho_4^2=\tfrac12\operatorname{Tr}\rho^2=\tfrac14\bigl(1+\lvert\vec r\rvert^2\bigr).
 $$
 At $\lvert\vec r\rvert=1$ this is $\tfrac12$, not $1$: the purity is halved, because the two copies share the same Bloch vector and the copy label carries no information.</p>
-<h2 id="the-born-rule">The Born Rule</h2>
-<p><strong>The probabilities.</strong> For a measurement along the unit vector $\vec u$,
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
+<p><strong>The doubled state.</strong> In the regular display the state is
 $$
-p_\pm=\operatorname{Tr}\bigl(\rho\,\Pi_\pm(\vec u)\bigr)
+\rho_4=\tfrac12(\rho\oplus\rho),
+$$
+with eigenvalues $\tfrac14(1\pm\lvert\vec r\rvert)$, each twice. Its trace is one, its determinant is $\tfrac1{256}(1-\lvert\vec r\rvert^2)^2$, and
+$$
+\operatorname{Tr}\rho_4^2=\tfrac12\operatorname{Tr}\rho^2=\tfrac14\bigl(1+\lvert\vec r\rvert^2\bigr).
+$$
+At $\lvert\vec r\rvert=1$ this is $\tfrac12$, not $1$: the purity is halved, because the two copies share the same Bloch vector and the copy label carries no information.</p>
+<p><strong>The Born rule.</strong> The probabilities and expectations are the same as in the entry model,
+$$
+p_\pm=\operatorname{Tr}\bigl(\rho_4\,(\Pi_\pm(\vec u)\oplus\Pi_\pm(\vec u))\bigr)
 =\tfrac12\bigl(1\pm\vec r\cdot\vec u\bigr),
 \qquad
-\Pi_\pm(\vec u)=\tfrac12\bigl(\mathrm I_2\pm\vec u\cdot\vec\sigma\bigr).
+\langle S_{\vec u}\rangle=\tfrac{\hbar}{2}\vec r\cdot\vec u,
 $$
-The probabilities are non-negative exactly when $\lvert\vec r\rvert\le1$, and they sum to one.</p>
-<p><strong>The expectation.</strong>
-$$
-\langle S_{\vec u}\rangle=\operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde S_{\vec u})\bigr)
-=\tfrac{\hbar}{2}\,\vec r\cdot\vec u .
-$$
-For a general Hermitian observable $\tilde H=h_te_t+i\vec h$,
-$$
-\operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
-$$
-the affine function of the state determined by the four numbers $(h_t,\vec h)$.</p>
-<p><strong>The regular display.</strong> The same probabilities and expectations hold for $\rho_4$, because the trace of the doubled matrix is the trace of one copy and the doubling cancels the factor $\tfrac12$.</p>
-<p><strong>The convex splitting.</strong> For $\vec r\neq0$,
-$$
-\rho=\frac{1+\lvert\vec r\rvert}{2}\Pi_+(\hat r)
-+\frac{1-\lvert\vec r\rvert}{2}\Pi_-(\hat r),
-\qquad
-\hat r=\frac{\vec r}{\lvert\vec r\rvert},
-$$
-and for $\vec r=0$ the state is $\tfrac12\mathrm I_2$. The weights are non-negative and sum to one. The state lies on the chord of the ball between the two boundary points $\pm\hat r$, and its distance from the centre is the bias of the mixture.</p>
-<p><strong>The geometry.</strong> The pure states are the boundary sphere, the maximally mixed state is the centre, and the ball is convex. The matrix form of the convex structure is the statement that the positive semidefinite matrices of trace one form a convex set whose extreme points are the rank-one projectors.</p>
-<h2 id="reading-the-vector-back">Reading the Vector Back</h2>
-<p><strong>The traces.</strong>
-$$
-r_k=\operatorname{Tr}(\rho\sigma_k),
-\qquad
-r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle .
-$$
-The first identity follows from $\operatorname{Tr}\sigma_k=0$ and $\operatorname{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$; the second is the trace pairing of <em>Matrix Representations : The Four Words and the Four Traces</em>.</p>
-<p><strong>The reconstruction.</strong>
-$$
-\rho=\tfrac12\bigl(\mathrm I_2+r_k\sigma_k\bigr),
-$$
-and the four matrices $\mathrm I_2,\sigma_1,\sigma_2,\sigma_3$ are a basis of the Hermitian matrices over $\mathbb R$. The state, the matrix and the vector are three writings of four real numbers.</p>
-<h2 id="the-qubit-as-a-spinor">The Qubit as a Spinor</h2>
-<p><strong>The pure case.</strong> Every pure state is a rank-one projector,
-$$
-\rho=\xi\xi^{\dagger},
-\qquad \xi\in\mathbb C^2,\quad\lVert\xi\rVert=1,
-\qquad
-r_k=\xi^{\dagger}\sigma_k\xi .
-$$
-The vector $\xi$ is defined up to a phase, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, the minimal left ideal.</p>
-<p><strong>The mixed case.</strong> A general state is a convex combination of pure ones,
-$$
-\rho=\sum_i p_i\,\xi_i\xi_i^{\dagger},
-\qquad p_i\ge0,\quad\sum_i p_i=1,
-$$
-and the Bloch vector is the corresponding convex combination. The ball is the convex hull of the sphere.</p>
-<p><strong>The Hopf fibration.</strong> The map
-$$
-S^3\longrightarrow S^2,
-\qquad
-\xi\longmapsto\vec r=\xi^{\dagger}\vec\sigma\xi,
-$$
-is the Hopf fibration, with fibre $S^1$ the phase circle. In the regular display the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base and the fibre are the same.</p>
-<p><strong>The copy label.</strong> The doubled spinor is not a spinor of a four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. No algebra observable can polarize the label.</p>
-<h2 id="where-the-correspondence-stops">Where the Correspondence Stops</h2>
-<p><strong>The Pauli matrices are not elements of the algebra.</strong> They are the images of $i\vec e_k$, and the algebra's own units are $-i\sigma_k$. A statement about the $\sigma_k$ must be translated back through the factor $i$; the commutator of two Pauli matrices is $i$ times a Pauli matrix, and the commutator of two algebra units is an algebra unit.</p>
-<p><strong>The real form is extra data.</strong> The identification $\mathbb B\cong M_2(\mathbb C)$ is an isomorphism of complex algebras and does not by itself select $\mathbb M_+$. The statement that the Hermitian elements are the observables uses the involution $*$, which is part of the real structure and is not visible in the complex algebra alone.</p>
-<p><strong>The multiplicity is extra data.</strong> The regular model doubles every state, and the doubling is not a two-level system: the copy label is maximally mixed, the rank is two, and the purity is halved. The physical content is in the algebra, not in the multiplicity.</p>
-<p><strong>No dynamics.</strong> Nothing in this article evolves a state. The spin operators generate the rotations through the commutator; a Hamiltonian would be a choice of observable, not a consequence of the model.</p>
+because the trace of the doubled matrix is the trace of one copy and the doubling cancels the factor $\tfrac12$ in the normalisation of the state.</p>
+<p><strong>The copy label.</strong> The doubled state is not a pure state of a four-level system: a pure state there would have rank one, while $\rho_4$ has rank two. The state is the product of the maximally mixed copy label with the algebraic state, and no algebra observable can polarise the label. The spinor picture doubles accordingly: the total space of the Hopf fibration is the diagonal $S^3$ inside $S^3\times S^3$, and the base and the fibre are the same as in the entry model.</p>
 <h2 id="summary">Summary</h2>
 <p>The Hermitian units map to the Pauli matrices, $\mathsf M_2(i\vec e_k)=\sigma_k$, and the vector units to $-i\sigma_k$; the general element is $Q_t\mathrm I_2-iQ_k\sigma_k$. The spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ satisfy $\{\tilde S_i,\tilde S_j\}=\tfrac{\hbar^2}{2}\delta_{ij}e_t$ and $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$. A state is $\tilde{\varrho}=\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$, its matrix is $\rho=\tfrac12(\mathrm I_2+\vec r\cdot\vec\sigma)$, and its Bloch vector is recovered by $r_k=\operatorname{Tr}(\rho\sigma_k)=2\langle\tilde{\varrho},i\vec e_k\rangle$. The pure states are the rank-one Hermitian idempotents, $\lvert\vec r\rvert=1$, $N=0$; they are the boundary of the ball and the trace-one slice of the null cone. The measurement formulae are $p_\pm(\vec u)=\tfrac12(1\pm\vec r\cdot\vec u)$ and $\langle S_{\vec u}\rangle=\tfrac{\hbar}{2}\vec r\cdot\vec u$. In the regular display every object is doubled: the state becomes $\tfrac12(\rho\oplus\rho)$, of rank two, with the same Bloch vector and half the purity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -351,8 +395,6 @@ is the Hopf fibration, with fibre $S^1$ the phase circle. In the regular display
 <li><a href="matrix-representations-the-hermitian-sandwich.html">Matrix Representations : The Hermitian Sandwich</a>, for the unitary slice</li>
 <li><a href="matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html">Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the spinor carrier</li>
 <li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the displays</li>
-<li><a href="matrix-representations-spin-qubits-and-the-bloch-vector.html">Matrix Representations : Spin, Qubits and the Bloch Vector</a>, for the full entry-model treatment</li>
-<li><a href="matrix-representations-spin-qubits-and-the-bloch-vector.html">Matrix Representations : Spin, Qubits and the Bloch Vector</a>, for the full regular treatment</li>
 <li><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html">The Pauli Correspondence and the Matrix Image</a>, for the correspondence</li>
 </ul>
       </div>

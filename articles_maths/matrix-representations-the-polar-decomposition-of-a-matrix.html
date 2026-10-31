@@ -73,7 +73,7 @@
 <p>Every invertible matrix is the product of a positive definite matrix and a unitary one. The decomposition is unique, it is a diffeomorphism, and it splits the determinant into modulus and phase. In the biquaternion algebra the two factors have names: the positive factor is the boost, the unitary factor is the rotor, and the determinant carries the scale and the central phase.</p>
 <p>This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the exponential of <em>Matrix Representations : The Functional Calculus</em> and the unitarities of <em>Matrix Representations : The Hermitian Sandwich</em> into a factorisation of every element.</p>
 <p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the Hermitian adjoint of <em>Matrix Representations : The Hermitian Sandwich</em>, and $*$-unitary means $V^{\dagger}V=\mathrm I$.</p>
-<p><strong>Boundaries.</strong> The matrix theorem is <em>Matrix Representations : The Polar Decomposition of a Matrix</em> and <em>Matrix Representations : The Polar Decomposition of a Matrix</em>; the algebra word is <em>The Polar Decomposition of a Biquaternion</em>; the exponential is <em>Matrix Representations : The Functional Calculus</em>; the singular value decomposition is <em>The Singular Value Decomposition of a Biquaternion</em>; the boost and the rotor are <em>The Two Halves</em>.</p>
+<p><strong>Boundaries.</strong> The matrix theorem is <em>Matrix Representations : The Polar Decomposition of a Matrix</em>; the algebra word is <em>The Polar Decomposition of a Biquaternion</em>; the exponential is <em>Matrix Representations : The Functional Calculus</em>; the singular value decomposition is <em>The Singular Value Decomposition of a Biquaternion</em>; the boost and the rotor are <em>The Two Halves</em>.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <h3 id="the-theorem">The Theorem</h3>
 <p><strong>The statement.</strong> Every matrix $M$ has a factorisation
@@ -160,7 +160,7 @@ with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the 
 <p><strong>The partial isometry.</strong> For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank equal to the rank of $M$, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ remains unique if $P$ is required positive semidefinite and $V$ to vanish on the kernel.</p>
 <p><strong>The regular singular stratum.</strong> In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank stratification.</p>
 <p><strong>The zero matrix.</strong> At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.</p>
-<h2 id="the-math89-frame">The $S_3$ Frame</h2>
+<h2 id="the-coefficient-frame">The Coefficient Frame</h2>
 <h3 id="the-biquaternion-word">The Biquaternion Word</h3>
 <p><strong>The factorisation.</strong> For a regular element,
 $$
@@ -223,7 +223,7 @@ L(\tilde Q)=r\zeta\,L(\tilde Q_H)\,L(\tilde Q_0),
 $$
 with $L(\tilde Q_H)=\operatorname{diag}(M_b,M_b)$ and $L(\tilde Q_0)=\operatorname{diag}(M_r,M_r)$. The two factors act identically on the two minimal left ideals.</p>
 <p><strong>The two real forms.</strong> The positive factor is Hermitian and non-compact; the unitary factor is compact. The decomposition is the matrix form of the Cartan decomposition of the group of units, and the two factors are the two real forms of the algebra.</p>
-<h2 id="the-math120-math121-frame">The $2\times2$ $z$ Frame</h2>
+<h2 id="the-entry-model">The Entry Model</h2>
 <p><strong>The entry formula.</strong> In the entry model the decomposition is $B=PV$, with
 $$
 P=(BB^{\dagger})^{1/2}=\frac{BB^{\dagger}+\lvert\det B\rvert\,\mathrm I_2}
@@ -238,7 +238,7 @@ $$
 s_1=re^{\eta/2},\qquad s_2=re^{-\eta/2},\qquad s_1s_2=r^2=\lvert\det B\rvert.
 $$
 The rank is two when $r\neq0$, one on the nonzero singular stratum and zero at $B=0$. The singular values coincide exactly when the boost is trivial, and their multiset equals the multiset of eigenvalue moduli exactly when $B$ is normal.</p>
-<h2 id="the-math144-math145-frame">The $4\times4$ $z$ Frame</h2>
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
 <h3 id="the-singular-value-decomposition">The Singular Value Decomposition</h3>
 <p><strong>The theorem.</strong> Every $M$ factors as
 $$
@@ -316,8 +316,6 @@ each repeated twice in the regular display. The singular values coincide exactly
 <li><a href="matrix-representations-the-hermitian-sandwich.html">Matrix Representations : The Hermitian Sandwich</a>, for the unitary slice</li>
 <li><a href="matrix-representations-gl2-sl2-and-the-determinant.html">Matrix Representations : GL2, SL2 and the Determinant</a>, for the determinant split</li>
 <li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the displays</li>
-<li><a href="matrix-representations-the-polar-decomposition-of-a-matrix.html">Matrix Representations : The Polar Decomposition of a Matrix</a>, for the full $2\times2$ treatment</li>
-<li><a href="matrix-representations-the-polar-decomposition-of-a-matrix.html">Matrix Representations : The Polar Decomposition of a Matrix</a>, for the full $4\times4$ treatment</li>
 <li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the algebra word</li>
 </ul>
       </div>
