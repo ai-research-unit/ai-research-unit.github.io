@@ -20,7 +20,7 @@ $$
 and the **Euler–Lagrange equations** of $L$ are
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{i}/dt\right)} - \frac{\partial L}{\partial q^i} = 0, \qquad i = 1,\dots,n .
+\frac{d}{dt}\frac{\partial L}{\partial\left(dq_i/dt\right)} - \frac{\partial L}{\partial q_i} = 0, \qquad i = 1,\dots,n .
 $$
 
 **Theorem (Hamilton's principle).** A curve $q$ is a critical point of the action among curves with fixed endpoints if and only if it satisfies the Euler–Lagrange equations.
@@ -30,7 +30,7 @@ $$
 **Definition.** The system is **autonomous** if $L$ is independent of $t$. For an autonomous Lagrangian the **energy** is
 
 $$
-E = \sum_{i=1}^ndq^{i}/dt\frac{\partial L}{\partial\left(dq^{i}/dt\right)} - L ,
+E = \sum_{i=1}^ndq_i/dt\frac{\partial L}{\partial\left(dq_i/dt\right)} - L ,
 $$
 
 and it is constant along every solution, by the Beltrami identity.
@@ -39,7 +39,7 @@ and it is constant along every solution, by the Beltrami identity.
 
 The variational principle takes the Lagrangian as given and produces the equation; the mechanical origin of the equation is a different statement, and it is the one that fixes the domain of validity. **D'Alembert's principle** is Newton's law written in terms of the work done on the displacements that the constraints permit, and the Lagrange equation is its transcription into generalised coordinates. The distinction matters because the principle continues to apply where the action is not stationary, which is the non-holonomic case.
 
-**Definition.** Let a system consist of $\mathcal N$ constituents at positions $\vec r_1,\dots,\vec r_{\mathcal N}$ in three-dimensional space, subject to $\kappa$ independent constraints. A **virtual displacement** $(\delta\vec r_1,\dots,\delta\vec r_{\mathcal N})$ is an infinitesimal displacement consistent with the constraints **at fixed time**; the constraints are **ideal** when the virtual work of the constraint forces vanishes, $\sum_a\vec R_a\cdot\delta\vec r_a=0$ for every virtual displacement. The number of **degrees of freedom** is $3\mathcal N-\kappa$, the number of **generalised coordinates** $q^1,\dots,q^n$ is equal to it, and the positions are expressed as $\vec r_a=\vec r_a(q,t)$.
+**Definition.** Let a system consist of $\mathcal N$ constituents at positions $\vec r_1,\dots,\vec r_{\mathcal N}$ in three-dimensional space, subject to $\kappa$ independent constraints. A **virtual displacement** $(\delta\vec r_1,\dots,\delta\vec r_{\mathcal N})$ is an infinitesimal displacement consistent with the constraints **at fixed time**; the constraints are **ideal** when the virtual work of the constraint forces vanishes, $\sum_a\vec R_a\cdot\delta\vec r_a=0$ for every virtual displacement. The number of **degrees of freedom** is $3\mathcal N-\kappa$, the number of **generalised coordinates** $q_1,\dots,q^n$ is equal to it, and the positions are expressed as $\vec r_a=\vec r_a(q,t)$.
 
 **Principle (D'Alembert).** The impressed forces $\vec F_a$ and the accelerations satisfy
 
@@ -49,33 +49,33 @@ $$
 
 for every virtual displacement. The constraint forces do not appear, because they are ideal; the principle is Newton's law with the constraint forces eliminated rather than solved for.
 
-**Theorem (D'Alembert's principle gives the Lagrange equation).** Let the virtual work of the impressed forces be $Q_j\,\delta q^j$ in generalised coordinates, so that $Q_j$ is the **generalised force**. Then D'Alembert's principle is equivalent to
+**Theorem (D'Alembert's principle gives the Lagrange equation).** Let the virtual work of the impressed forces be $\sum_j\mathcal Q_j\,\delta q_j$ in generalised coordinates, so that $\mathcal Q_j$ is the **generalised force**. Then D'Alembert's principle is equivalent to
 
 $$
-\frac{d}{dt}\frac{\partial T}{\partial\left(dq^{j}/dt\right)}-\frac{\partial T}{\partial q^j} = Q_j , \qquad j=1,\dots,n ,
+\frac{d}{dt}\frac{\partial T}{\partial\left(dq_j/dt\right)}-\frac{\partial T}{\partial q_j} = \mathcal Q_j , \qquad j=1,\dots,n ,
 $$
 
-with $T$ the kinetic energy. If the forces are conservative with potential $V$, so that $Q_j=-\partial V/\partial q^j$, the equation is the Euler–Lagrange equation of $L=T-V$.
+with $T$ the kinetic energy. If the forces are conservative with potential $V$, so that $\mathcal Q_j=-\partial V/\partial q_j$, the equation is the Euler–Lagrange equation of $L=T-V$.
 
-*Proof.* The displacement of the $a$-th constituent is $\delta\vec r_a=(\partial\vec r_a/\partial q^j)\delta q^j$, so the virtual work of the impressed forces is $Q_j\delta q^j$ with $Q_j=\sum_a\vec F_a\cdot\partial\vec r_a/\partial q^j$. For the inertial term, the product rule gives
-
-$$
-\sum_am_ad^2\vec r_{a}/dt^2\cdot\frac{\partial\vec r_a}{\partial q^j} = \frac{d}{dt}\Bigl(\sum_am_ad\vec r_{a}/dt\cdot\frac{\partial\vec r_a}{\partial q^j}\Bigr)-\sum_am_ad\vec r_{a}/dt\cdot\frac{d}{dt}\frac{\partial\vec r_a}{\partial q^j} ,
-$$
-
-and with $T=\tfrac12\sum_am_a\lvert\,d\vec r_{a}/dt\rvert^2$ the identities $\partial\vec r_a/\partial q^j=\partial\left(d\vec r_{a}/dt\right)/\partial\left(dq^{j}/dt\right)$ and $\frac{d}{dt}\partial\vec r_a/\partial q^j=\partial\left(d\vec r_{a}/dt\right)/\partial q^j$ make the two terms $\frac{d}{dt}\partial T/\partial\left(dq^{j}/dt\right)$ and $\partial T/\partial q^j$.
-
-**Definition.** A constraint is **holonomic** if it is the vanishing of a relation $\phi(q,t)=0$ among the coordinates; it is **scleronomic** when $\phi$ carries no explicit time and **rheonomic** when it does. A holonomic constraint is used by elimination: it removes one coordinate, and the remaining coordinates are free. A constraint that is linear in the velocities, $A^a_j(q)dq^{j}/dt=0$, and that admits no integrating factor is **non-holonomic**; it cannot be eliminated, and it must be imposed by multipliers.
-
-**Theorem (the Lagrange–d'Alembert equations).** Let the constraints be $A^a_j(q)dq^{j}/dt=0$, $a=1,\dots,\kappa$, with the rows of $A$ independent, so that the admissible virtual displacements are the vectors with $A^a_j\delta q^j=0$. Then D'Alembert's principle is equivalent to
+*Proof.* The displacement of the $a$-th constituent is $\delta\vec r_a=\sum_j(\partial\vec r_a/\partial q_j)\delta q_j$, so the virtual work of the impressed forces is $\sum_j\mathcal Q_j\delta q_j$ with $\mathcal Q_j=\sum_a\vec F_a\cdot\partial\vec r_a/\partial q_j$. For the inertial term, the product rule gives
 
 $$
-\boxed{\;\frac{d}{dt}\frac{\partial L}{\partial\left(dq^{j}/dt\right)}-\frac{\partial L}{\partial q^j} = \lambda_aA^a_j , \qquad A^a_jdq^{j}/dt=0\;} ,
+\sum_am_ad^2\vec r_{a}/dt^2\cdot\frac{\partial\vec r_a}{\partial q_j} = \frac{d}{dt}\Bigl(\sum_am_ad\vec r_{a}/dt\cdot\frac{\partial\vec r_a}{\partial q_j}\Bigr)-\sum_am_ad\vec r_{a}/dt\cdot\frac{d}{dt}\frac{\partial\vec r_a}{\partial q_j} ,
+$$
+
+and with $T=\tfrac12\sum_am_a\lvert\,d\vec r_{a}/dt\rvert^2$ the identities $\partial\vec r_a/\partial q_j=\partial\left(d\vec r_{a}/dt\right)/\partial\left(dq_j/dt\right)$ and $\frac{d}{dt}\partial\vec r_a/\partial q_j=\partial\left(d\vec r_{a}/dt\right)/\partial q_j$ make the two terms $\frac{d}{dt}\partial T/\partial\left(dq_j/dt\right)$ and $\partial T/\partial q_j$.
+
+**Definition.** A constraint is **holonomic** if it is the vanishing of a relation $\phi(q,t)=0$ among the coordinates; it is **scleronomic** when $\phi$ carries no explicit time and **rheonomic** when it does. A holonomic constraint is used by elimination: it removes one coordinate, and the remaining coordinates are free. A constraint that is linear in the velocities, $\sum_j A_{aj}(q)dq_j/dt=0$, and that admits no integrating factor is **non-holonomic**; it cannot be eliminated, and it must be imposed by multipliers.
+
+**Theorem (the Lagrange–d'Alembert equations).** Let the constraints be $\sum_j A_{aj}(q)dq_j/dt=0$, $a=1,\dots,\kappa$, with the rows of $A$ independent, so that the admissible virtual displacements are the vectors with $\sum_j A_{aj}\delta q_j=0$. Then D'Alembert's principle is equivalent to
+
+$$
+\boxed{\;\frac{d}{dt}\frac{\partial L}{\partial\left(dq_j/dt\right)}-\frac{\partial L}{\partial q_j} = \sum_a\lambda_a A_{aj} , \qquad \sum_j A_{aj}dq_j/dt=0\;} ,
 $$
 
 the $\lambda_a$ being functions of $t$ determined together with the solution.
 
-*Proof.* At a configuration the admissible virtual displacements form the subspace annihilated by the rows of $A$; D'Alembert's principle requires the generalised force to annihilate that same subspace, so it is a combination $\lambda_aA^a_j$ of the rows, by the independence of the rows. The constraint is imposed on the velocity rather than on the virtual displacement, and the difference is not merely formal: imposing the same relation on the variation of the action instead gives the **vakonomic** equations, which agree with these for holonomic constraints and differ from them otherwise, and it is D'Alembert's principle, not stationary action, that reproduces Newton's law. The pair of equations is the differential-algebraic system of the article of this Part on differential-algebraic equations.
+*Proof.* At a configuration the admissible virtual displacements form the subspace annihilated by the rows of $A$; D'Alembert's principle requires the generalised force to annihilate that same subspace, so it is a combination $\sum_a\lambda_a A_{aj}$ of the rows, by the independence of the rows. The constraint is imposed on the velocity rather than on the virtual displacement, and the difference is not merely formal: imposing the same relation on the variation of the action instead gives the **vakonomic** equations, which agree with these for holonomic constraints and differ from them otherwise, and it is D'Alembert's principle, not stationary action, that reproduces Newton's law. The pair of equations is the differential-algebraic system of the article of this Part on differential-algebraic equations.
 
 **Example (the skate, or knife edge).** A body moving in the plane with position $(x,y)$ and heading $\theta$, whose velocity is along its heading, satisfies
 
@@ -97,15 +97,15 @@ $$
 
 the acceleration of the contact point lying along the heading and the heading turning uniformly; the multiplier $\lambda$ is the non-holonomic force that keeps the velocity along the heading, and it is fixed by the constraint together with the solution rather than given in advance.
 
-**Theorem (the energy of a non-holonomic system).** For an autonomous Lagrangian and a constraint that is homogeneous in the velocities, the energy $E=dq^{j}/dt\partial L/\partial\left(dq^{j}/dt\right)-L$ is conserved along the solutions of the Lagrange–d'Alembert equations, even though the system has no stationary-action principle.
+**Theorem (the energy of a non-holonomic system).** For an autonomous Lagrangian and a constraint that is homogeneous in the velocities, the energy $E=\sum_j(dq_j/dt)\,\partial L/\partial\left(dq_j/dt\right)-L$ is conserved along the solutions of the Lagrange–d'Alembert equations, even though the system has no stationary-action principle.
 
-*Proof.* Multiply the equation by $dq^{j}/dt$ and sum over $j$: the multiplier term contributes $\lambda_aA^a_jdq^{j}/dt=0$, by the constraint. Hence $dq^{j}/dt\bigl(\frac{d}{dt}\partial L/\partial\left(dq^{j}/dt\right)-\partial L/\partial q^j\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+\partial L/\partial t$; with $\partial L/\partial t=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent.
+*Proof.* Multiply the equation by $dq_j/dt$ and sum over $j$: the multiplier term contributes $\sum_{a,j}\lambda_a A_{aj}dq_j/dt=0$, by the constraint. Hence $dq_j/dt\bigl(\frac{d}{dt}\partial L/\partial\left(dq_j/dt\right)-\partial L/\partial q_j\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+\partial L/\partial t$; with $\partial L/\partial t=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent.
 
 The multiplier structure — an unknown function determined by the constraint rather than eliminated — is the same one that the constrained problem of the calculus of variations exhibits, and it is the finite-dimensional form of the costate of optimal control, where the constraint is a differential equation for the state rather than a velocity relation; the article of this Part on optimal control treats that case, and the same multiplier rule produces the costate there.
 
 ### Mechanical Similarity
 
-**Proposition (mechanical similarity).** Take $Q=\mathbb{R}^n$ with the Euclidean kinetic energy, $L=\tfrac12mdq^{i}/dt dq_{i}/dt-V(q)$, and suppose the potential is time-independent and **homogeneous of degree $k$**,
+**Proposition (mechanical similarity).** Take $Q=\mathbb{R}^n$ with the Euclidean kinetic energy, $L=\tfrac12m\sum_i(dq_i/dt)^2-V(q)$, and suppose the potential is time-independent and **homogeneous of degree $k$**,
 
 $$
 V(\alpha q)=\alpha^kV(q) \qquad\text{for every } \alpha>0 .
@@ -128,11 +128,11 @@ The homogeneity of the potential is what lets the kinetic and potential terms sc
 
 ### Cyclic Coordinates and Conserved Momenta
 
-**Definition.** A coordinate $q^k$ of a Lagrangian system is **cyclic**, or **ignorable**, if the Lagrangian does not depend on it, $\partial L/\partial q^k=0$. The conjugate momentum $p_k=\partial L/\partial\left(dq^{k}/dt\right)$ is then the **momentum conjugate to** $q^k$.
+**Definition.** A coordinate $q_k$ of a Lagrangian system is **cyclic**, or **ignorable**, if the Lagrangian does not depend on it, $\partial L/\partial q_k=0$. The conjugate momentum $p_k=\partial L/\partial\left(dq_k/dt\right)$ is then the **momentum conjugate to** $q_k$.
 
-**Theorem (conservation of a cyclic momentum).** If $q^k$ is cyclic, then $p_k$ is constant along every solution of the Euler–Lagrange equations.
+**Theorem (conservation of a cyclic momentum).** If $q_k$ is cyclic, then $p_k$ is constant along every solution of the Euler–Lagrange equations.
 
-*Proof.* The Euler–Lagrange equation with index $k$ reads $\frac{d}{dt}p_k=\frac{\partial L}{\partial q^k}$, and the right-hand side vanishes by cyclicity, so $p_k$ is a constant of the motion. The conserved quantity is the Noether charge of the one-parameter family of translations of $q^k$, which leaves the Lagrangian invariant exactly when $q^k$ is cyclic.
+*Proof.* The Euler–Lagrange equation with index $k$ reads $\frac{d}{dt}p_k=\frac{\partial L}{\partial q_k}$, and the right-hand side vanishes by cyclicity, so $p_k$ is a constant of the motion. The conserved quantity is the Noether charge of the one-parameter family of translations of $q_k$, which leaves the Lagrangian invariant exactly when $q_k$ is cyclic.
 
 **Example (angular momentum).** A particle of mass $m$ in a plane, in a central potential $V(r)$, has the Lagrangian in polar coordinates $(t,r,\theta)$
 $$
@@ -145,52 +145,52 @@ The coordinate $\theta$ is cyclic, so $p_\theta=mr^2d\theta/dt$ is conserved alo
 **Definition.** The **Legendre transform** or **fibre derivative** of $L$ is the map $\mathbb{F}L : TQ\to T^*Q$ given in coordinates by
 
 $$
-(q,dq/dt)\mapsto (q,p), \qquad p_i = \frac{\partial L}{\partial\left(dq^{i}/dt\right)}(q,dq/dt) .
+(q,dq/dt)\mapsto (q,p), \qquad p_i = \frac{\partial L}{\partial\left(dq_i/dt\right)}(q,dq/dt) .
 $$
 
-The Lagrangian is **regular** if $\mathbb{F}L$ is a local diffeomorphism, equivalently if the Hessian matrix $\bigl(\partial^2L/\partial\left(dq^{i}/dt\right)\partial\left(dq^{j}/dt\right)\bigr)$ is everywhere nonsingular; it is **hyperregular** if $\mathbb{F}L$ is a global diffeomorphism.
+The Lagrangian is **regular** if $\mathbb{F}L$ is a local diffeomorphism, equivalently if the Hessian matrix $\bigl(\partial^2L/\partial\left(dq_i/dt\right)\partial\left(dq_j/dt\right)\bigr)$ is everywhere nonsingular; it is **hyperregular** if $\mathbb{F}L$ is a global diffeomorphism.
 
 **Theorem (the Hamiltonian).** If $L$ is hyperregular, then the function
 
 $$
-H(q,p) = \sum_{i=1}^n p_i\,dq^{i}/dt - L(q,dq/dt), \qquad \,dq/dt = (\mathbb{F}L)^{-1}(q,p) ,
+H(q,p) = \sum_{i=1}^n p_i\,dq_i/dt - L(q,dq/dt), \qquad \,dq/dt = (\mathbb{F}L)^{-1}(q,p) ,
 $$
 
 is well defined, and a curve $q$ satisfies the Euler–Lagrange equations of $L$ if and only if the curve $(q,p)=(\mathbb{F}L)(q,dq/dt)$ satisfies **Hamilton's equations**
 
 $$
-\boxed{\;dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i}\;} .
+\boxed{\;dq_i/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q_i}\;} .
 $$
 
-*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $dq/dt$; the envelope theorem gives $\partial H/\partial p_i=dq^{i}/dt$ and $\partial H/\partial q^i = -\partial L/\partial q^i$, so that $dp_{i}/dt = \frac{d}{dt}\partial L/\partial\left(dq^{i}/dt\right)=\partial L/\partial q^i=-\partial H/\partial q^i$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,dq/dt)$ to $(q,p)$ a diffeomorphism.
+*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $dq/dt$; the envelope theorem gives $\partial H/\partial p_i=dq_i/dt$ and $\partial H/\partial q_i = -\partial L/\partial q_i$, so that $dp_{i}/dt = \frac{d}{dt}\partial L/\partial\left(dq_i/dt\right)=\partial L/\partial q_i=-\partial H/\partial q_i$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,dq/dt)$ to $(q,p)$ a diffeomorphism.
 
 **Remark (the modified Hamilton principle).** Hamilton's equations follow from a variational principle in which the coordinates and the momenta are varied independently. For the **modified Lagrangian**
 
 $$
-L^{\mathrm{mod}}(q,p,dq/dt,dp/dt) = \sum_i p_i\,dq^{i}/dt - H(q,p,t) ,
+L^{\mathrm{mod}}(q,p,dq/dt,dp/dt) = \sum_i p_i\,dq_i/dt - H(q,p,t) ,
 $$
 
 the action $\int L^{\mathrm{mod}}\,dt$ has as its Euler–Lagrange equations the first-order system
 
 $$
-\frac{d}{dt}\frac{\partial L^{\mathrm{mod}}}{\partial\left(dq^{i}/dt\right)}-\frac{\partial L^{\mathrm{mod}}}{\partial q^i}=0
-\quad\Longrightarrow\quad \,dp_{i}/dt=-\partial H/\partial q^i ,
+\frac{d}{dt}\frac{\partial L^{\mathrm{mod}}}{\partial\left(dq_i/dt\right)}-\frac{\partial L^{\mathrm{mod}}}{\partial q_i}=0
+\quad\Longrightarrow\quad \,dp_{i}/dt=-\partial H/\partial q_i ,
 \qquad
 \frac{d}{dt}\frac{\partial L^{\mathrm{mod}}}{\partial\left(dp_{i}/dt\right)}-\frac{\partial L^{\mathrm{mod}}}{\partial p_i}=0
-\quad\Longrightarrow\quad \,dq^{i}/dt=\partial H/\partial p_i .$$
+\quad\Longrightarrow\quad \,dq_i/dt=\partial H/\partial p_i .$$
 
-because $\partial L^{\mathrm{mod}}/\partial\left(dq^{i}/dt\right)=p_i$, $\partial L^{\mathrm{mod}}/\partial q^i=-\partial H/\partial q^i$, $\partial L^{\mathrm{mod}}/\partial\left(dp_{i}/dt\right)=0$ and $\partial L^{\mathrm{mod}}/\partial p_i=dq^{i}/dt-\partial H/\partial p_i$. The principle $\delta\int(\sum_ip_i\,dq^{i}/dt-H)\,dt=0$, with independent variations of $q$ and $p$, is therefore an equivalent statement of the Hamiltonian equations, and it is the form in which the Hamiltonian formalism is the stationarity of an action. The two equations differ in kind: the variation in $p$ is algebraic in $dq/dt$ and reproduces the Legendre transform, $dq^{i}/dt=\partial H/\partial p_i$, while the variation in $q$ carries the dynamics. The modified principle is not the Lagrangian principle of the first part of this article, because $L^{\mathrm{mod}}$ is a function on the enlarged space of $q,p,dq/dt$ and is not a Lagrangian on the tangent bundle of $Q$; its independent variation of $p$ is the feature that the ordinary principle does not have.
+because $\partial L^{\mathrm{mod}}/\partial\left(dq_i/dt\right)=p_i$, $\partial L^{\mathrm{mod}}/\partial q_i=-\partial H/\partial q_i$, $\partial L^{\mathrm{mod}}/\partial\left(dp_{i}/dt\right)=0$ and $\partial L^{\mathrm{mod}}/\partial p_i=dq_i/dt-\partial H/\partial p_i$. The principle $\delta\int(\sum_ip_i\,dq_i/dt-H)\,dt=0$, with independent variations of $q$ and $p$, is therefore an equivalent statement of the Hamiltonian equations, and it is the form in which the Hamiltonian formalism is the stationarity of an action. The two equations differ in kind: the variation in $p$ is algebraic in $dq/dt$ and reproduces the Legendre transform, $dq_i/dt=\partial H/\partial p_i$, while the variation in $q$ carries the dynamics. The modified principle is not the Lagrangian principle of the first part of this article, because $L^{\mathrm{mod}}$ is a function on the enlarged space of $q,p,dq/dt$ and is not a Lagrangian on the tangent bundle of $Q$; its independent variation of $p$ is the feature that the ordinary principle does not have.
 
 **Example (the mechanical Lagrangian).** For a Riemannian metric $g$ on $Q$ and a potential $V : Q\to\mathbb{R}$, the Lagrangian
 
 $$
-L(q,dq/dt) = \frac12g_{ij}(q)dq^{i}/dt dq^{j}/dt - V(q)
+L(q,dq/dt) = \frac12\sum_{i,j}g_{ij}(q)dq_i/dt\,dq_j/dt - V(q)
 $$
 
-is hyperregular, with $p_i = g_{ij}dq^{j}/dt$ and
+is hyperregular, with $p_i = \sum_j g_{ij}dq_j/dt$ and
 
 $$
-H(q,p) = \frac12g^{ij}(q)p_ip_j + V(q) ,
+H(q,p) = \frac12\sum_{i,j}(g^{-1})_{ij}(q)p_ip_j + V(q) ,
 $$
 
 the sum of the kinetic and potential energies. The Euler–Lagrange equation of the pure kinetic Lagrangian, $V=0$, is the geodesic equation of $g$, so a free particle on a Riemannian manifold moves along a geodesic; the metric, the Christoffel symbols and the geodesic equation are those of Part II. The corresponding Hamiltonian flow on $T^*Q$ is the geodesic flow, whose dynamical properties are treated in the article of this Part on the geodesic flow, written in parallel.
@@ -205,31 +205,31 @@ The Legendre transform pairs velocities with momenta, and with that pairing the 
 
 **Definition.** The **canonical momentum one-form** of $L$ is the $1$-form on the tangent bundle
 $$
-\theta_L = p_i\,dq^i = \frac{\partial L}{\partial\left(dq^{i}/dt\right)}\,dq^i ,
+\theta_L = \sum_i p_i\,dq_i = \sum_i\frac{\partial L}{\partial\left(dq_i/dt\right)}\,dq_i ,
 $$
-the pullback of the tautological form $p_i\,dq^i$ of the cotangent bundle by the Legendre transform. A vector field $X$ on $TQ$ is a **second-order field** if $X(q^i)=dq^{i}/dt$ for each $i$, that is, if its integral curves are the velocity lifts of their projections to $Q$.
+the pullback of the tautological form $\sum_i p_i\,dq_i$ of the cotangent bundle by the Legendre transform. A vector field $X$ on $TQ$ is a **second-order field** if $X(q_i)=dq_i/dt$ for each $i$, that is, if its integral curves are the velocity lifts of their projections to $Q$.
 
-**Theorem (coordinate-free Euler–Lagrange equation).** Let $L$ be a regular Lagrangian, so that the Hessian $\bigl(\partial^2L/\partial\left(dq^{i}/dt\right)\partial\left(dq^{j}/dt\right)\bigr)$ is everywhere invertible. Then there is a unique second-order vector field $X$ on $TQ$ with
+**Theorem (coordinate-free Euler–Lagrange equation).** Let $L$ be a regular Lagrangian, so that the Hessian $\bigl(\partial^2L/\partial\left(dq_i/dt\right)\partial\left(dq_j/dt\right)\bigr)$ is everywhere invertible. Then there is a unique second-order vector field $X$ on $TQ$ with
 $$
 \mathcal{L}_X\theta_L = dL ,
 $$
 and the integral curves of $X$ are exactly the velocity lifts of the solutions of the Euler–Lagrange equations. The field $X$ is the field of the system, and the identity is the Euler–Lagrange equation in coordinate-free form.
 
-*Proof.* Write $X$ with $X(q^i)=dq^{i}/dt$ and unknown accelerations $X(dq^{j}/dt)$, and put $\alpha_i=X(p_i)$. Cartan's formula gives
+*Proof.* Write $X$ with $X(q_i)=dq_i/dt$ and unknown accelerations $X(dq_j/dt)$, and put $\alpha_i=X(p_i)$. Cartan's formula gives
 $$
-\mathcal{L}_X\theta_L = d(\iota_X\theta_L)+\iota_X d\theta_L = d(p_i\,dq^{i}/dt)+\alpha_i\,dq^i-dq^{i}/dt\,dp_i = p_i\,d(dq^{i}/dt)+\alpha_i\,dq^i ,
+\mathcal{L}_X\theta_L = d(\iota_X\theta_L)+\iota_X d\theta_L = d\bigl(\sum_i p_i\,dq_i/dt\bigr)+\sum_i\alpha_i\,dq_i-\sum_i dq_i/dt\,dp_i = \sum_i p_i\,d(dq_i/dt)+\sum_i\alpha_i\,dq_i ,
 $$
-the last step using $d(p_i\,dq^{i}/dt)=dq^{i}/dt\,dp_i+p_i\,d(dq^{i}/dt)$. Equating coefficients with those of $dL = \partial L/\partial q^i\,dq^i+\partial L/\partial\left(dq^{i}/dt\right)\,d(dq^{i}/dt)$ gives $p_i=\partial L/\partial\left(dq^{i}/dt\right)$, which is the definition of $\theta_L$, and $\alpha_i=\partial L/\partial q^i$, that is
+the last step using $d\bigl(\sum_i p_i\,dq_i/dt\bigr)=\sum_i dq_i/dt\,dp_i+\sum_i p_i\,d(dq_i/dt)$. Equating coefficients with those of $dL = \sum_i\partial L/\partial q_i\,dq_i+\sum_i\partial L/\partial\left(dq_i/dt\right)\,d(dq_i/dt)$ gives $p_i=\partial L/\partial\left(dq_i/dt\right)$, which is the definition of $\theta_L$, and $\alpha_i=\partial L/\partial q_i$, that is
 $$
-\frac{d}{dt}\Bigl(\frac{\partial L}{\partial\left(dq^{i}/dt\right)}\Bigr)=\frac{\partial L}{\partial q^i}
+\frac{d}{dt}\Bigl(\frac{\partial L}{\partial\left(dq_i/dt\right)}\Bigr)=\frac{\partial L}{\partial q_i}
 $$
-along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alpha_i=\partial L/\partial q^i$ is the linear system
+along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alpha_i=\partial L/\partial q_i$ is the linear system
 $$
-\sum_j \partial^2 L/\partial\left(dq^{i}/dt\right)\partial\left(dq^{j}/dt\right)\,X(dq^{j}/dt) = \partial L/\partial q^i-dq^{j}/dt\partial^2 L/\partial q^j\partial\left(dq^{i}/dt\right)
+\sum_j \partial^2 L/\partial\left(dq_i/dt\right)\partial\left(dq_j/dt\right)\,X(dq_j/dt) = \partial L/\partial q_i-\sum_j dq_j/dt\,\partial^2 L/\partial q_j\partial\left(dq_i/dt\right)
 $$
 for the accelerations, with the Hessian as coefficient matrix; regularity makes the matrix invertible, so the accelerations, and with them $X$, are unique.
 
-**Remark (the Cartan form and the field case).** For a time-dependent Lagrangian the one-form is replaced on $TQ\times\mathbb{R}$ by the Poincaré–Cartan form $L\,dt+p_i(dq^i-dq^{i}/dt\,dt)$, whose Lie derivative along the field of the system carries the same content together with the conservation of the energy. In a field theory the momentum is an $(m-1)$-form rather than a one-form, the Lie derivative is replaced by a divergence, and the local coordinate form is the multi-index equation of *The Calculus of Variations*. The Hamiltonian side of the field case is the subject of the article of this Part *Multisymplectic and Covariant Hamiltonian Field Theory*: there the single momentum is replaced by a polymomentum indexed by the directions of the independent variables, the momentum being correspondingly a family of $(m-1)$-forms, the symplectic form by a closed form of higher degree, and the two-form's invertibility by a degree count that leaves no covariant Poisson bracket. The case $m=1$ of that article is the present theory, so the remark is a forward reference and not an analogy.
+**Remark (the Cartan form and the field case).** For a time-dependent Lagrangian the one-form is replaced on $TQ\times\mathbb{R}$ by the Poincaré–Cartan form $L\,dt+\sum_i p_i(dq_i-dq_i/dt\,dt)$, whose Lie derivative along the field of the system carries the same content together with the conservation of the energy. In a field theory the momentum is an $(m-1)$-form rather than a one-form, the Lie derivative is replaced by a divergence, and the local coordinate form is the multi-index equation of *The Calculus of Variations*. The Hamiltonian side of the field case is the subject of the article of this Part *Multisymplectic and Covariant Hamiltonian Field Theory*: there the single momentum is replaced by a polymomentum indexed by the directions of the independent variables, the momentum being correspondingly a family of $(m-1)$-forms, the symplectic form by a closed form of higher degree, and the two-form's invertibility by a degree count that leaves no covariant Poisson bracket. The case $m=1$ of that article is the present theory, so the remark is a forward reference and not an analogy.
 
 ### Higher-Derivative Lagrangians and the Ostrogradsky Instability
 
@@ -241,13 +241,13 @@ $$
 
 each integration by parts transferring one derivative off the variation and onto $\partial L/\partial q^{(j)}$ and contributing the sign $(-1)^j$. The canonical formalism extends with it, and for $N\ge2$ it does so at a price.
 
-**Ostrogradsky's theorem.** For $N=2$ set $Q^1=q$, $Q^2=dq/dt$ and the two momenta
+**Ostrogradsky's theorem.** For $N=2$ set $Q_1=q$, $Q_2=dq/dt$ and the two momenta
 
 $$
 p_1=\frac{\partial L}{\partial\left(dq/dt\right)}-\frac{d}{dt}\frac{\partial L}{\partial\left(d^2q/dt^2\right)}, \qquad p_2=\frac{\partial L}{\partial\left(d^2q/dt^2\right)} .
 $$
 
-When the Hessian $\partial^2L/\partial\left(d^2q^{i}/dt^2\right)\partial\left(d^2q^{j}/dt^2\right)$ is nonsingular, $d^2q/dt^2$ is solved from $p_2$, and the Hamiltonian is $H=p_1dq/dt+p_2d^2q/dt^2-L$. This $H$ is **linear in $p_1$**, with coefficient $dq/dt$: neither $L$ nor the eliminated $d^2q/dt^2$ depends on $p_1$, so $\partial H/\partial p_1=dq/dt$. On every configuration with $dq/dt\neq0$ the Hamiltonian is therefore unbounded below, $H\to-\infty$ along $p_1\to-\infty$ at fixed $dq/dt>0$, and a non-degenerate higher-derivative Lagrangian has no stable ground state — the **Ostrogradsky instability**.
+When the Hessian $\partial^2L/\partial\left(d^2q_i/dt^2\right)\partial\left(d^2q_j/dt^2\right)$ is nonsingular, $d^2q/dt^2$ is solved from $p_2$, and the Hamiltonian is $H=p_1dq/dt+p_2d^2q/dt^2-L$. This $H$ is **linear in $p_1$**, with coefficient $dq/dt$: neither $L$ nor the eliminated $d^2q/dt^2$ depends on $p_1$, so $\partial H/\partial p_1=dq/dt$. On every configuration with $dq/dt\neq0$ the Hamiltonian is therefore unbounded below, $H\to-\infty$ along $p_1\to-\infty$ at fixed $dq/dt>0$, and a non-degenerate higher-derivative Lagrangian has no stable ground state — the **Ostrogradsky instability**.
 
 For example $L=\tfrac12\left(d^2q/dt^2\right)^{2}$ has $p_2=d^2q/dt^2$, $H=p_1dq/dt+\tfrac12p_2^2$ and Euler–Lagrange equation $q^{(4)}=0$; the Pais–Uhlenbeck oscillator
 
@@ -285,25 +285,25 @@ consequently $C^\infty(M)$ is a Lie algebra under the bracket and the map $f\map
 
 *Proof.* The bilinearity, skew-symmetry and Leibniz rule follow from the corresponding properties of $\omega$ and of the differential; the Jacobi identity is the identity $d\omega=0$ written in terms of the bracket, and the homomorphism property is the computation $[X_f,X_g]=\omega$-dual of $d\{f,g\}$. The details are those of *Symplectic Forms and Poisson Brackets* and of the symplectic geometry of Part II.
 
-**Theorem (Darboux).** Every symplectic manifold is locally symplectomorphic to $(\mathbb{R}^{2n},\sum_{i=1}^n dq^i\wedge dp_i)$: around every point there are coordinates $(q^1,\dots,q^n,p_1,\dots,p_n)$, the **canonical coordinates**, in which the form is the displayed one.
+**Theorem (Darboux).** Every symplectic manifold is locally symplectomorphic to $(\mathbb{R}^{2n},\sum_{i=1}^n dq_i\wedge dp_i)$: around every point there are coordinates $(q_1,\dots,q_n,p_1,\dots,p_n)$, the **canonical coordinates**, in which the form is the displayed one.
 
 *Proof.* Quoted as standard and belonging to the symplectic geometry of Part II, written in parallel; the proof is a Moser-type argument using the closedness and nondegeneracy of $\omega$ and a homotopy of forms.
 
 **Corollary (Hamilton's equations in canonical coordinates).** In canonical coordinates, $X_H$ has components
 
 $$
-dq^{i}/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q^i} ,
+dq_i/dt = \frac{\partial H}{\partial p_i}, \qquad \,dp_{i}/dt = -\frac{\partial H}{\partial q_i} ,
 $$
 
 and the Poisson bracket is
 
 $$
-\{f,g\} = \sum_{i=1}^n\left(\frac{\partial f}{\partial q^i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q^i}\right) .
+\{f,g\} = \sum_{i=1}^n\left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right) .
 $$
 
 Moreover $\frac{d}{dt}f = \{f,H\}$ along the flow of $X_H$, so that $f$ is conserved exactly when $\{f,H\}=0$.
 
-*Proof.* The form $\omega = \sum dq^i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = dq/dt\,dp(Y)+dp/dt\,dq(Y)$ for $X_H=(dq/dt,dp/dt)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$.
+*Proof.* The form $\omega = \sum_i dq_i\wedge dp_i$ gives $\omega(X_H,Y)=dq(X_H)\,dp(Y)-dp(X_H)\,dq(Y) = dq/dt\,dp(Y)+dp/dt\,dq(Y)$ for $X_H=(dq/dt,dp/dt)$; requiring this to equal $dH(Y)=H_qdq(Y)+H_pdp(Y)$ for all $Y$ gives the equations. The bracket formula is the same computation applied to $f$ and $g$, and the last statement is $\frac{d}{dt}f = df(X_H)=X_H(f)=\{f,H\}$.
 
 **Definition.** A **Poisson manifold** is a manifold with a bracket on its functions that is bilinear, skew-symmetric, satisfies the Leibniz rule and the Jacobi identity; the bracket need not come from a symplectic form, and its rank may drop on a subvariety. A **Poisson structure** is the corresponding section of $\Lambda^2TM$; when it is nondegenerate it is the inverse of a symplectic form.
 
@@ -343,11 +343,11 @@ The symplectic form fixes the flow but not the coordinates: a change of phase-sp
 
 **Definition.** A **canonical transformation**, or **symplectomorphism**, of a symplectic manifold $(M,\omega)$ is a diffeomorphism $\varphi$ with $\varphi^*\omega=\omega$; a **local** canonical transformation is a diffeomorphism between open sets with the same property.
 
-**Theorem (the criteria).** Let $\varphi : (q,p)\mapsto(Q,P)$ be a diffeomorphism of a coordinate neighbourhood of $(\mathbb{R}^{2n},\sum_i dq^i\wedge dp_i)$. The following are equivalent:
+**Theorem (the criteria).** Let $\varphi : (q,p)\mapsto(Q,P)$ be a diffeomorphism of a coordinate neighbourhood of $(\mathbb{R}^{2n},\sum_i dq_i\wedge dp_i)$. The following are equivalent:
 
-- the form is preserved, $\sum_i dQ^i\wedge dP_i=\sum_i dq^i\wedge dp_i$;
+- the form is preserved, $\sum_i dQ_i\wedge dP_i=\sum_i dq_i\wedge dp_i$;
 - the Poisson bracket is preserved, $\{\varphi^*f,\varphi^*g\}=\varphi^*\{f,g\}$ for all smooth $f,g$;
-- the canonical brackets of the images hold, $\{Q^i,Q^j\}=0$, $\{P_i,P_j\}=0$ and $\{Q^i,P_j\}=\delta^i_j$, the bracket being evaluated in the original variables;
+- the canonical brackets of the images hold, $\{Q_i,Q_j\}=0$, $\{P_i,P_j\}=0$ and $\{Q_i,P_j\}=\delta_{ij}$, the bracket being evaluated in the original variables;
 - every Hamiltonian flow is carried to the flow of the pulled-back Hamiltonian, so that Hamilton's equations keep their form;
 - the Jacobian is symplectic, $(D\varphi)^{\mathsf T}\Omega(D\varphi)=\Omega$, with $\Omega$ the matrix of $\omega$, $\Omega_{i,n+j}=\delta_{ij}$ and $\Omega_{n+i,j}=-\delta_{ij}$.
 
@@ -356,24 +356,24 @@ The symplectic form fixes the flow but not the coordinates: a change of phase-sp
 **Theorem (generating functions).** Let $\varphi$ be a local canonical transformation whose graph is simply connected, and let $F_1$ be a function of the old and the new coordinates with
 
 $$
-p_i = \frac{\partial F_1}{\partial q^i}, \qquad P_i = -\frac{\partial F_1}{\partial Q^i} .
+p_i = \frac{\partial F_1}{\partial q_i}, \qquad P_i = -\frac{\partial F_1}{\partial Q_i} .
 $$
 
 Then $\varphi$ is canonical; and every such transformation has a **generating function** $F_1$, unique up to an additive constant. Replacing $F_1$ by its Legendre transform in the variables that are exchanged gives the three other types, one for each choice of one old and one new coordinate per degree of freedom:
 
 $$
-F_2(q,P) = F_1 + \sum_iQ^iP_i, \qquad p_i = \frac{\partial F_2}{\partial q^i}, \qquad Q^i = \frac{\partial F_2}{\partial P_i} ;
+F_2(q,P) = F_1 + \sum_iQ_iP_i, \qquad p_i = \frac{\partial F_2}{\partial q_i}, \qquad Q_i = \frac{\partial F_2}{\partial P_i} ;
 $$
 
 $$
-F_3(p,Q) = F_1 - \sum_iq^ip_i, \qquad q^i = -\frac{\partial F_3}{\partial p_i}, \qquad P_i = -\frac{\partial F_3}{\partial Q^i} ;
+F_3(p,Q) = F_1 - \sum_iq_ip_i, \qquad q_i = -\frac{\partial F_3}{\partial p_i}, \qquad P_i = -\frac{\partial F_3}{\partial Q_i} ;
 $$
 
 $$
-F_4(p,P) = F_1 + \sum_iQ^iP_i - \sum_iq^ip_i, \qquad q^i = -\frac{\partial F_4}{\partial p_i}, \qquad Q^i = \frac{\partial F_4}{\partial P_i} .
+F_4(p,P) = F_1 + \sum_iQ_iP_i - \sum_iq_ip_i, \qquad q_i = -\frac{\partial F_4}{\partial p_i}, \qquad Q_i = \frac{\partial F_4}{\partial P_i} .
 $$
 
-*Proof sketch.* The graph of a canonical transformation carries the two symplectic potentials $\sum_i p_i\,dq^i$ and $\sum_i P_idQ^i$, and their difference is closed because both differentiate to $\omega$ on the graph; the graph being simply connected, the difference is exact, $\sum_i p_i\,dq^i-\sum_i P_idQ^i=dF_1$, and reading the differential in the independent variables $(q,Q)$ gives the two relations. The Legendre transforms eliminate the variables that are no longer independent, the invertibility of each transform being the regularity of the canonical map in that pair.
+*Proof sketch.* The graph of a canonical transformation carries the two symplectic potentials $\sum_i p_i\,dq_i$ and $\sum_i P_idQ_i$, and their difference is closed because both differentiate to $\omega$ on the graph; the graph being simply connected, the difference is exact, $\sum_i p_i\,dq_i-\sum_i P_idQ_i=dF_1$, and reading the differential in the independent variables $(q,Q)$ gives the two relations. The Legendre transforms eliminate the variables that are no longer independent, the invertibility of each transform being the regularity of the canonical map in that pair.
 
 **Theorem (time-dependent generating functions).** If the generating function depends on the time, the transformation is canonical at each fixed $t$ and the new Hamiltonian is
 
@@ -383,31 +383,31 @@ $$
 
 for any of the four types $F$.
 
-*Proof.* Extend the exactness relation to include the time: on the graph the one-form $\sum_i p_i\,dq^i-\sum_i P_idQ^i+(K-H)dt$ is exact with potential $F$, which is the statement $p=F_q$, $P=-F_Q$ and $K=H+F_t$ when $F$ is read in $(q,Q,t)$; the Legendre transforms carry the computation to the other types.
+*Proof.* Extend the exactness relation to include the time: on the graph the one-form $\sum_i p_i\,dq_i-\sum_i P_idQ_i+(K-H)dt$ is exact with potential $F$, which is the statement $p=F_q$, $P=-F_Q$ and $K=H+F_t$ when $F$ is read in $(q,Q,t)$; the Legendre transforms carry the computation to the other types.
 
 The Hamiltonian is therefore fixed only up to the partial time derivative of an arbitrary function of the coordinates, the momenta and the time, which is the ambiguity that the Hamiltonian carries in every formulation; requiring the derivative to vanish is what produces the Hamilton–Jacobi equation below.
 
 **Examples.** The elementary transformations, each of which satisfies the criteria and is worth reading against its generating function:
 
-- The identity is generated by $F_2=\sum_iq^iP_i$, since $p_i=\partial F_2/\partial q^i=P_i$ and $Q^i=\partial F_2/\partial P_i=q^i$.
-- The coordinate scaling is generated by $F_2=\sum_i\lambda_iq^iP_i$ with $\lambda_i>0$, giving $Q^i=\lambda_iq^i$ and $P_i=p_i/\lambda_i$; the two scalings are reciprocal, which is why the bracket is preserved.
-- The swap is generated by $F_1=\sum_iq^iQ^i$, giving $p_i=Q^i$ and $P_i=-q^i$, so that the coordinates and the momenta exchange roles with a sign.
-- The shear of the momenta is generated by $F_2=\sum_iq^iP_i+\tfrac12\sum_ia_i(q^i)^2$, giving $Q^i=q^i$ and $P_i=p_i-a_iq^i$; the generating function is quadratic, and the transformation is the elementary one that the linear canonical transformations are built from.
+- The identity is generated by $F_2=\sum_iq_iP_i$, since $p_i=\partial F_2/\partial q_i=P_i$ and $Q_i=\partial F_2/\partial P_i=q_i$.
+- The coordinate scaling is generated by $F_2=\sum_i\lambda_iq_iP_i$ with $\lambda_i>0$, giving $Q_i=\lambda_iq_i$ and $P_i=p_i/\lambda_i$; the two scalings are reciprocal, which is why the bracket is preserved.
+- The swap is generated by $F_1=\sum_iq_iQ_i$, giving $p_i=Q_i$ and $P_i=-q_i$, so that the coordinates and the momenta exchange roles with a sign.
+- The shear of the momenta is generated by $F_2=\sum_iq_iP_i+\tfrac12\sum_ia_i(q_i)^2$, giving $Q_i=q_i$ and $P_i=p_i-a_iq_i$; the generating function is quadratic, and the transformation is the elementary one that the linear canonical transformations are built from.
 - For the one-dimensional oscillator the rotation $(Q,P)=(q\cos\tau-p\sin\tau,\,q\sin\tau+p\cos\tau)$ is canonical for every $\tau$, and it is the flow of the oscillator after the time $\tau$; the bracket $\{Q,P\}=1$ is the statement that the flow preserves the form.
 
-**Remark (the Hamilton–Jacobi equation).** Ask that the new Hamiltonian vanish, $K=H+\partial F/\partial t=0$, and take the generating function to be $F_2=S(q,P,t)$. The first relation, $p_i=\partial S/\partial q^i$, turns the condition into
+**Remark (the Hamilton–Jacobi equation).** Ask that the new Hamiltonian vanish, $K=H+\partial F/\partial t=0$, and take the generating function to be $F_2=S(q,P,t)$. The first relation, $p_i=\partial S/\partial q_i$, turns the condition into
 
 $$
 \frac{\partial S}{\partial t}+H\Bigl(q,\frac{\partial S}{\partial q},t\Bigr)=0 ,
 $$
 
-which is the Hamilton–Jacobi equation of the calculus of variations. **The action, read as a function of the coordinates and the new momenta, is the generating function of the canonical transformation that trivialises the flow**: the new coordinates $Q^i=\partial S/\partial P_i$ are constant along the motion, and in the integrable case the transformation produced in this way is the passage to the action-angle variables. The equation, its complete integral, the separation of variables and the Stäckel conditions are developed in the companion article *The Hamilton–Jacobi Equation and Separability*. The promise of the calculus of variations, that the Hamiltonian formalism, its canonical transformations and its Poisson brackets belong to this article, is discharged by the two theorems above.
+which is the Hamilton–Jacobi equation of the calculus of variations. **The action, read as a function of the coordinates and the new momenta, is the generating function of the canonical transformation that trivialises the flow**: the new coordinates $Q_i=\partial S/\partial P_i$ are constant along the motion, and in the integrable case the transformation produced in this way is the passage to the action-angle variables. The equation, its complete integral, the separation of variables and the Stäckel conditions are developed in the companion article *The Hamilton–Jacobi Equation and Separability*. The promise of the calculus of variations, that the Hamiltonian formalism, its canonical transformations and its Poisson brackets belong to this article, is discharged by the two theorems above.
 
 **Remark (the group of canonical transformations).** The canonical transformations of $(M,\omega)$ form a group under composition, and its identity component is generated by the Hamiltonian flows: a one-parameter family $\varphi_t$ of canonical transformations with $\varphi_0=\mathrm{id}$ is the flow of a Hamiltonian vector field, and the Poisson bracket is its Lie algebra, since $f\mapsto X_f$ is a Lie algebra homomorphism. The symplectic geometry of Part II is the study of this group and of the manifolds on which it acts.
 
 **Remark (infinitesimal canonical transformations and the generator of the flow).** A one-parameter family $\varphi_\varepsilon$ of canonical transformations with $\varphi_0=\mathrm{id}$ moves every phase-space function by $\delta\eta=\varepsilon\{\eta,\sigma\}$ to first order in $\varepsilon$, for a single function $\sigma$, the **generator** of the family; conversely every smooth $\sigma$ defines such a family, and since $\{\eta,\sigma\}=d\eta(X_\sigma)$ the finite transformation is the flow of $X_\sigma$ run for the parameter. Two readings of the generator fix its role.
 
-- The generator $\sigma=H$ gives $\delta q^i=\varepsilon\{q^i,H\}=\varepsilon\,\partial H/\partial p_i$ and $\delta p_i=\varepsilon\{p_i,H\}=-\varepsilon\,\partial H/\partial q^i$; the infinitesimal canonical transformation generated by the Hamiltonian is exactly the infinitesimal time evolution, so **the Hamiltonian generates the flow**, and the finite flow is the exponential of the generator.
+- The generator $\sigma=H$ gives $\delta q_i=\varepsilon\{q_i,H\}=\varepsilon\,\partial H/\partial p_i$ and $\delta p_i=\varepsilon\{p_i,H\}=-\varepsilon\,\partial H/\partial q_i$; the infinitesimal canonical transformation generated by the Hamiltonian is exactly the infinitesimal time evolution, so **the Hamiltonian generates the flow**, and the finite flow is the exponential of the generator.
 - A generator that is conserved, $\{\sigma,H\}=0$, produces a family leaving $H$ invariant, since $\delta_\sigma H=\varepsilon\{H,\sigma\}=0$; conversely, invariance of $H$ under the family is the conservation of its generator. This is the infinitesimal form of the reciprocity between symmetry and conservation, and it reproduces the momentum map: the generator of a translation is the conjugate momentum, since $\{q,p\}=1$, and the generator of a rotation is the corresponding component of the angular momentum, since $\{x,L_z\}=-y$ and $\{y,L_z\}=x$ are the infinitesimal rotation.
 
 ### Conservation Laws and Phase Volume
@@ -446,7 +446,7 @@ A distribution of initial conditions is therefore transported by the flow exactl
 
 1. $M_c$ is diffeomorphic to the $n$-torus $\mathbb{T}^n$;
 2. the flow of $X_H$ is linear on $M_c$ in suitable coordinates, so the motion is **conditionally periodic** with $n$ frequencies;
-3. there is a neighbourhood of $M_c$ with **action-angle coordinates** $(I,\theta)\in\mathbb{R}^n\times\mathbb{T}^n$ in which $\omega = \sum d\theta^i\wedge dI_i$ and $H = H(I)$ depends only on the actions.
+3. there is a neighbourhood of $M_c$ with **action-angle coordinates** $(I,\theta)\in\mathbb{R}^n\times\mathbb{T}^n$ in which $\omega = \sum_i d\theta_i\wedge dI_i$ and $H = H(I)$ depends only on the actions.
 
 *Proof.* Quoted as standard. The vector fields $X_{F_i}$ are tangent to $M_c$ because the $F_i$ are in involution; they commute, since $[X_{F_i},X_{F_j}]=X_{\{F_i,F_j\}}=0$, so they define an integrable distribution whose leaves are open subsets of $M_c$. Compactness and connectedness make each leaf a torus, giving the first assertion. The leaves are the orbits of an abelian group of translations, and the parameters along the commuting flows are the angles, giving the second. The actions are defined by integrating the $1$-forms $\iota_{X_{F_i}}\omega$ over a basis of cycles of the torus; that the integrals are locally constant in $c$ follows from the closedness of those forms, and the resulting coordinates are canonical because the cycles are Lagrangian, which gives the third assertion.
 
@@ -464,13 +464,13 @@ A distribution of initial conditions is therefore transported by the flow exactl
 
 ## Summary
 
-A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,dq/dt,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\left(dq^{i}/dt\right)$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\,dq^{i}/dt-L$ and Hamilton's equations $dq/dt=\partial H/\partial p$, $dp/dt=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq^i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\theta_L=p_i\,dq^i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\theta_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.
+A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,dq/dt,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\left(dq_i/dt\right)$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\,dq_i/dt-L$ and Hamilton's equations $dq/dt=\partial H/\partial p$, $dp/dt=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq_i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\theta_L=p_i\,dq_i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\theta_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.
 
-The mechanical origin of the equation is D'Alembert's principle, the statement that the impressed forces and the inertial terms do equal virtual work across every displacement consistent with the constraints; on generalised coordinates it becomes $\frac{d}{dt}\partial T/\partial\left(dq^{j}/dt\right)-\partial T/\partial q^j=Q_j$, and for conservative forces the Euler–Lagrange equation of $L=T-V$. A constraint of the form $\phi(q,t)=0$ is holonomic and is used by elimination; a velocity constraint $A^a_j(q)dq^{j}/dt=0$ with no integrating factor is non-holonomic, and it is imposed by multipliers in the Lagrange–d'Alembert equations $\frac{d}{dt}\partial L/\partial\left(dq^{j}/dt\right)-\partial L/\partial q^j=\lambda_aA^a_j$, which are not the stationarity of an action but the transcription of D'Alembert's principle. The energy is still conserved for an autonomous Lagrangian and a velocity-homogeneous constraint, because the multiplier term is annihilated by the constraint; and the multiplier rule is the finite-dimensional form of the costate of optimal control.
+The mechanical origin of the equation is D'Alembert's principle, the statement that the impressed forces and the inertial terms do equal virtual work across every displacement consistent with the constraints; on generalised coordinates it becomes $\frac{d}{dt}\partial T/\partial\left(dq_j/dt\right)-\partial T/\partial q_j=\mathcal Q_j$, and for conservative forces the Euler–Lagrange equation of $L=T-V$. A constraint of the form $\phi(q,t)=0$ is holonomic and is used by elimination; a velocity constraint $\sum_j A_{aj}(q)dq_j/dt=0$ with no integrating factor is non-holonomic, and it is imposed by multipliers in the Lagrange–d'Alembert equations $\frac{d}{dt}\partial L/\partial\left(dq_j/dt\right)-\partial L/\partial q_j=\sum_a\lambda_a A_{aj}$, which are not the stationarity of an action but the transcription of D'Alembert's principle. The energy is still conserved for an autonomous Lagrangian and a velocity-homogeneous constraint, because the multiplier term is annihilated by the constraint; and the multiplier rule is the finite-dimensional form of the costate of optimal control.
 
-A change of phase-space variables preserving the symplectic form is a **canonical transformation**, and it is characterised equally by the preservation of the Poisson bracket, by the canonical brackets $\{Q^i,Q^j\}=\{P_i,P_j\}=0$, $\{Q^i,P_j\}=\delta^i_j$ of the images, by the preservation of the form of Hamilton's equations, and by a symplectic Jacobian. Locally such a transformation is generated by a function of one old and one new coordinate per degree of freedom, in one of the four types $F_1(q,Q)$, $F_2(q,P)$, $F_3(p,Q)$, $F_4(p,P)$ related by Legendre transforms, with $p=F_q$ and $P=-F_Q$ for the first; the identity, the coordinate scaling, the exchange of coordinates and momenta and the quadratic shear of the momenta are the elementary instances. A generating function depending on the time shifts the Hamiltonian by its partial derivative, $K=H+F_t$; requiring the new Hamiltonian to vanish turns this into the Hamilton–Jacobi equation of the calculus of variations, and the action read as a function of the coordinates and the new momenta is then the generating function that trivialises the flow. The canonical transformations form a group whose identity component is generated by the Hamiltonian flows, and the Poisson bracket is its Lie algebra.
+A change of phase-space variables preserving the symplectic form is a **canonical transformation**, and it is characterised equally by the preservation of the Poisson bracket, by the canonical brackets $\{Q_i,Q_j\}=\{P_i,P_j\}=0$, $\{Q_i,P_j\}=\delta_{ij}$ of the images, by the preservation of the form of Hamilton's equations, and by a symplectic Jacobian. Locally such a transformation is generated by a function of one old and one new coordinate per degree of freedom, in one of the four types $F_1(q,Q)$, $F_2(q,P)$, $F_3(p,Q)$, $F_4(p,P)$ related by Legendre transforms, with $p=F_q$ and $P=-F_Q$ for the first; the identity, the coordinate scaling, the exchange of coordinates and momenta and the quadratic shear of the momenta are the elementary instances. A generating function depending on the time shifts the Hamiltonian by its partial derivative, $K=H+F_t$; requiring the new Hamiltonian to vanish turns this into the Hamilton–Jacobi equation of the calculus of variations, and the action read as a function of the coordinates and the new momenta is then the generating function that trivialises the flow. The canonical transformations form a group whose identity component is generated by the Hamiltonian flows, and the Poisson bracket is its Lie algebra.
 
-Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial g/\partial t$, so the constants of the motion are the functions with $\{g,H\}=0$, and the bracket of two of them is a third by Poisson's theorem: the constants of the motion form the Lie subalgebra that centralises $H$. The Hamiltonian equations are also the Euler–Lagrange equations of the modified Lagrangian $L^{\mathrm{mod}}=\sum_ip_i\,dq^{i}/dt-H$, varied in $q$ and in $p$ independently, and they are the flow of the infinitesimal canonical transformation generated by $H$: a generator $\sigma$ displaces every function by $\varepsilon\{\cdot,\sigma\}$, and $\sigma$ is conserved exactly when it leaves $H$ invariant, which is the infinitesimal reciprocity of symmetry and conservation and reproduces the momentum map. The preservation of phase volume has the local form of Liouville's equation $\partial\rho/\partial t+\{\rho,H\}=0$ for a density, whose stationary solutions are the conserved densities, every function of the Hamiltonian among them. In one degree of freedom the level curves of $H$ are the phase portrait, with centres at the definite critical points and saddles at the indefinite ones, and the separatrix through a saddle separates libration from rotation, as the pendulum illustrates.
+Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial g/\partial t$, so the constants of the motion are the functions with $\{g,H\}=0$, and the bracket of two of them is a third by Poisson's theorem: the constants of the motion form the Lie subalgebra that centralises $H$. The Hamiltonian equations are also the Euler–Lagrange equations of the modified Lagrangian $L^{\mathrm{mod}}=\sum_ip_i\,dq_i/dt-H$, varied in $q$ and in $p$ independently, and they are the flow of the infinitesimal canonical transformation generated by $H$: a generator $\sigma$ displaces every function by $\varepsilon\{\cdot,\sigma\}$, and $\sigma$ is conserved exactly when it leaves $H$ invariant, which is the infinitesimal reciprocity of symmetry and conservation and reproduces the momentum map. The preservation of phase volume has the local form of Liouville's equation $\partial\rho/\partial t+\{\rho,H\}=0$ for a density, whose stationary solutions are the conserved densities, every function of the Hamiltonian among them. In one degree of freedom the level curves of $H$ are the phase portrait, with centres at the definite critical points and saddles at the indefinite ones, and the separatrix through a saddle separates libration from rotation, as the pendulum illustrates.
 
 ## Summary of Notation
 
@@ -478,31 +478,31 @@ Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial g/
 |---|---|
 | $Q$, $TQ$, $T^*Q$ | Configuration space, tangent and cotangent bundles |
 | $L(q,dq/dt,t)$ | Lagrangian; $S[q]$ the action |
-| Euler–Lagrange | $\frac{d}{dt}\partial L/\partial\left(dq^{i}/dt\right)-\partial L/\partial q^i=0$ |
+| Euler–Lagrange | $\frac{d}{dt}\partial L/\partial\left(dq_i/dt\right)-\partial L/\partial q_i=0$ |
 | $p_i$, $\mathbb{F}L$ | Momentum and Legendre transform |
-| cyclic $q^k$ | $\partial L/\partial q^k=0$; $p_k$ conserved |
-| $\theta_L=p_i\,dq^i$ | Canonical momentum one-form of $L$ |
+| cyclic $q_k$ | $\partial L/\partial q_k=0$; $p_k$ conserved |
+| $\theta_L=\sum_i p_i\,dq_i$ | Canonical momentum one-form of $L$ |
 | $\mathcal{L}_X\theta_L=dL$ | Coordinate-free Euler–Lagrange equation |
-| $\delta q$, $Q_j$ | Virtual displacement and generalised force |
-| $A^a_j$, $\lambda_a$ | Non-holonomic constraint matrix and its multipliers |
-| $H(q,p)$ | Hamiltonian, $\sum p_i\,dq^{i}/dt-L$ |
-| Hamilton's equations | $dq^{i}/dt=\partial H/\partial p_i$, $dp_{i}/dt=-\partial H/\partial q^i$ |
+| $\delta q$, $\mathcal Q_j$ | Virtual displacement and generalised force |
+| $A_{aj}$, $\lambda_a$ | Non-holonomic constraint matrix and its multipliers |
+| $H(q,p)$ | Hamiltonian, $\sum_i p_i\,dq_i/dt-L$ |
+| Hamilton's equations | $dq_i/dt=\partial H/\partial p_i$, $dp_{i}/dt=-\partial H/\partial q_i$ |
 | $(M,\omega)$ | Symplectic manifold, closed nondegenerate $2$-form |
 | $X_H$, $\iota_{X_H}\omega=dH$ | Hamiltonian vector field |
 | $\{f,g\}$ | Poisson bracket, $\omega(X_f,X_g)$ |
 | $\frac{d}{dt}g=\{g,H\}+\partial g/\partial t$ | Evolution of a function along the Hamiltonian flow |
 | Poisson's theorem | The bracket of two constants of motion is a constant of motion |
-| $L^{\mathrm{mod}}=\sum_ip_i\,dq^{i}/dt-H$ | Modified Lagrangian of the independent-variation principle |
+| $L^{\mathrm{mod}}=\sum_ip_i\,dq_i/dt-H$ | Modified Lagrangian of the independent-variation principle |
 | $\sigma$, $\delta\eta=\varepsilon\{\eta,\sigma\}$ | Generator of an infinitesimal canonical transformation |
 | $\partial\rho/\partial t+\{\rho,H\}=0$ | Liouville's equation for a density |
 | separatrix | Level curve through a hyperbolic (saddle) equilibrium |
-| $\{Q^i,P_j\}=\delta^i_j$ | Canonical brackets of a canonical transformation |
+| $\{Q_i,P_j\}=\delta_{ij}$ | Canonical brackets of a canonical transformation |
 | $F_1$, $F_2$, $F_3$, $F_4$ | Generating functions of a canonical transformation |
 | $K=H+\partial F/\partial t$ | Hamiltonian in the new coordinates |
-| $g_{ij}$, $g^{ij}$ | Metric and inverse metric of $Q$ |
+| $g_{ij}$, $(g^{-1})_{ij}$ | Metric and inverse metric of $Q$ |
 | momentum map $J$ | Conserved quantity associated with a symmetry |
 | $F_1,\dots,F_n$ | Integrals in involution, $F_1=H$ |
-| $(I,\theta)$ | Action-angle coordinates, $\omega=\sum d\theta^i\wedge dI_i$ |
+| $(I,\theta)$ | Action-angle coordinates, $\omega=\sum d\theta_i\wedge dI_i$ |
 | $\omega(I)$ | Frequency vector $\partial H/\partial I$ of the torus flow |
 | KAM | Kolmogorov–Arnold–Moser survival of tori under perturbation |
 

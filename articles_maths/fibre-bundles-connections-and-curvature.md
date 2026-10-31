@@ -83,13 +83,13 @@ for all $f \in C^\infty(M)$ and $s \in \Gamma(E)$. The operator $\nabla_X s = \l
 
 **Proof.** On a trivial bundle $\Xi \times \mathbb{R}^k$ the exterior derivative $d$ on the components is a connection; on a general bundle choose a locally finite cover by trivialising charts, a partition of unity, and convex-combine the local connections with the partition of unity to obtain a global connection. The difference of two connections is $C^\infty(M)$-linear in $s$ by the Leibniz rule, hence a tensor, which is a section of $T^*M\otimes\operatorname{End}E$.
 
-**Definition.** Let $e = (e_1, \ldots, e_k)$ be a **local frame** of $E$ over an open set $\Xi$, so that every section over $\Xi$ is $s = \sum_i s^i e_i$ with $s^i \in C^\infty(\Xi)$. The **connection form** of $\nabla$ in this frame is the matrix of $1$-forms $\omega = (\omega^i_{\ j})$ defined by
+**Definition.** Let $e = (e_1, \ldots, e_k)$ be a **local frame** of $E$ over an open set $\Xi$, so that every section over $\Xi$ is $s = \sum_i s_i e_i$ with $s_i \in C^\infty(\Xi)$. The **connection form** of $\nabla$ in this frame is the matrix of $1$-forms $\omega = (\omega_{ij})$ defined by
 
 $$
-\nabla e_j = \sum_i \omega^i_{\ j} \otimes e_i,
+\nabla e_j = \sum_i \omega_{ij} \otimes e_i,
 $$
 
-so that $\nabla s = \sum_i \bigl(ds^i + \sum_j \omega^i_{\ j}s^j\bigr)\otimes e_i$, and $\nabla = d + \omega$ in matrix notation.
+so that $\nabla s = \sum_i \bigl(ds_i + \sum_j \omega_{ij}s_j\bigr)\otimes e_i$, and $\nabla = d + \omega$ in matrix notation.
 
 **Proposition (change of frame).** Let $e' = e\,g$ be another frame, with $g : \Xi \to GL_k(\mathbb{R})$ a smooth map. Then the connection forms are related by
 
@@ -97,7 +97,7 @@ $$
 \omega' = g^{-1}\omega\, g + g^{-1} dg.
 $$
 
-**Proof.** Write $e'_j = \sum_a e_a g^a_{\ j}$ and compute $\nabla e'_j$ in both frames; the Leibniz rule produces the term $dg$ alongside the transformation of $\omega$ by $g$.
+**Proof.** Write $e'_j = \sum_a e_a g_{aj}$ and compute $\nabla e'_j$ in both frames; the Leibniz rule produces the term $dg$ alongside the transformation of $\omega$ by $g$.
 
 **Theorem.** The connection forms $\omega_\alpha$ of a connection on the trivialisations $\Xi_\alpha$ satisfy $\omega_\beta = g_{\alpha\beta}^{-1}\omega_\alpha g_{\alpha\beta} + g_{\alpha\beta}^{-1}dg_{\alpha\beta}$ on overlaps; conversely, such a family defines a connection.
 
@@ -249,7 +249,7 @@ $$
 
 **Proof sketch.** The Koszul formula determines $\nabla_XY$ uniquely from $g$ and the bracket; the right-hand side is $C^\infty(M)$-linear in each slot, so it defines a connection, and the two required properties are consequences of the formula.
 
-**Remark.** In a local frame the connection form of the Levi-Civita connection is the matrix of Christoffel symbols, $\omega^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$, and the Bianchi identity for its curvature is the differential identity satisfied by the Riemann tensor. The Chern–Weil forms of the Levi-Civita connection give the Pontryagin classes of $TM$ and, in the oriented even-dimensional case, the Euler class of the Gauss–Bonnet theorem.
+**Remark.** In a local frame the connection form of the Levi-Civita connection is the matrix of Christoffel symbols, $\omega_{ij} = \sum_k \Gamma_{ijk}dx_k$, and the Bianchi identity for its curvature is the differential identity satisfied by the Riemann tensor. The Chern–Weil forms of the Levi-Civita connection give the Pontryagin classes of $TM$ and, in the oriented even-dimensional case, the Euler class of the Gauss–Bonnet theorem.
 
 ### Line Bundles and Holonomy
 
@@ -276,7 +276,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $\Gamma(E)$ | Space of smooth sections of $E$ |
 | $\operatorname{Diff}(F)$ | Diffeomorphism group of the fibre; the codomain of the transition functions |
 | $\nabla : \Gamma(E) \to \Gamma(T^*M\otimes E)$ | Connection; $\nabla(fs) = df\otimes s + f\nabla s$ |
-| $\omega = (\omega^i_{\ j})$, $\nabla = d+\omega$ | Connection form in a frame |
+| $\omega = (\omega_{ij})$, $\nabla = d+\omega$ | Connection form in a frame |
 | $\omega' = g^{-1}\omega g + g^{-1}dg$ | Change of frame; gauge transformation rule |
 | $\omega \in \Omega^1(P;\mathrm{G})$, $\omega(A^\#) = A$, $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | Connection form on a principal bundle |
 | $H_pP = \ker\omega_n$ | Horizontal subspace; $G$-invariant complement to the vertical |

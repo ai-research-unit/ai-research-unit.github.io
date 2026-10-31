@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The Hamilton–Jacobi equation is a single first-order partial differential equation for one scalar function $S$ of the configuration variables and the time, and it is the form the mechanical equations take when the momenta are eliminated in favour of the gradients of that scalar. Its importance is that a **complete integral** — a solution carrying one independent constant per degree of freedom — generates, through the elementary relations $p_i=\partial S/\partial q^i$, a canonical transformation that carries the Hamiltonian to zero. The new coordinates are then constants, and the motion is recovered by inverting a family of algebraic relations. The equation is therefore a device for integration rather than a new law of motion: to solve it is to solve the system, and a single complete integral supplies the whole family of trajectories, one constant of integration being traded for each quadrature.
+The Hamilton–Jacobi equation is a single first-order partial differential equation for one scalar function $S$ of the configuration variables and the time, and it is the form the mechanical equations take when the momenta are eliminated in favour of the gradients of that scalar. Its importance is that a **complete integral** — a solution carrying one independent constant per degree of freedom — generates, through the elementary relations $p_i=\partial S/\partial q_i$, a canonical transformation that carries the Hamiltonian to zero. The new coordinates are then constants, and the motion is recovered by inverting a family of algebraic relations. The equation is therefore a device for integration rather than a new law of motion: to solve it is to solve the system, and a single complete integral supplies the whole family of trajectories, one constant of integration being traded for each quadrature.
 
 Two functions of the equation are distinguished from the outset. The **principal function** $S(q,\alpha,t)$ depends on the time, and it is the action of the calculus of variations read as a function of the endpoint. When the Hamiltonian does not depend on the time the time variable separates first and the equation reduces to the **characteristic function** $W(q,\alpha)$, which carries the energy as one of its constants and is otherwise independent of the time. Both are complete integrals in the sense above, and both turn the problem into ordinary integrations.
 
@@ -21,21 +21,21 @@ $$
 \frac{\partial S}{\partial t} + H\Bigl(q,\frac{\partial S}{\partial q},t\Bigr) = 0 .
 $$
 
-The equation is a single first-order scalar partial differential equation in the $f+1$ variables $q^1,\dots,q^f,t$, nonlinear in the gradient $\partial S/\partial q$ exactly as $H$ is nonlinear in $p$; its characteristic equations are Hamilton's equations, so the integration of the equation and the integration of the flow are the same problem seen from two sides.
+The equation is a single first-order scalar partial differential equation in the $f+1$ variables $q_1,\dots,q_f,t$, nonlinear in the gradient $\partial S/\partial q$ exactly as $H$ is nonlinear in $p$; its characteristic equations are Hamilton's equations, so the integration of the equation and the integration of the flow are the same problem seen from two sides.
 
 **Theorem (the equation as a vanishing Hamiltonian).** Let $S(q,P,t)$ be a generating function of the second type, so that the transformation $(q,p)\mapsto(Q,P)$ is defined by
 
 $$
-p_i=\frac{\partial S}{\partial q^i}, \qquad Q^i=\frac{\partial S}{\partial P_i},
+p_i=\frac{\partial S}{\partial q_i}, \qquad Q_i=\frac{\partial S}{\partial P_i},
 $$
 
 and has new Hamiltonian $K=H+\partial S/\partial t$. Then $S$ satisfies the Hamilton–Jacobi equation with $\partial S/\partial q$ in the place of $p$ if and only if the new Hamiltonian vanishes, $K=0$.
 
-*Proof.* Substituting $p_i=\partial S/\partial q^i$ in $K=H+\partial S/\partial t$ gives $K=H(q,\partial S/\partial q,t)+\partial S/\partial t$, which is zero exactly when $S$ satisfies the equation; and $K=0$ is the condition that the new coordinates $Q^i,P_i$ be constant along the flow, since Hamilton's equations in the new variables read $dQ^{i}/dt=\partial K/\partial P_i=0$ and $dP_{i}/dt=-\partial K/\partial Q^i=0$.
+*Proof.* Substituting $p_i=\partial S/\partial q_i$ in $K=H+\partial S/\partial t$ gives $K=H(q,\partial S/\partial q,t)+\partial S/\partial t$, which is zero exactly when $S$ satisfies the equation; and $K=0$ is the condition that the new coordinates $Q_i,P_i$ be constant along the flow, since Hamilton's equations in the new variables read $dQ_i/dt=\partial K/\partial P_i=0$ and $dP_{i}/dt=-\partial K/\partial Q_i=0$.
 
 The theorem is the whole reason for the equation: it turns the search for constants of the motion into the search for a generating function that makes the Hamiltonian vanish, and the four generating functions of the companion article give four equivalent formulations, of which the second type above is the one conventionally used. It also explains why the equation, whose solutions are generating functions, is the "partial differential equation of mechanics": the ordinary differential equations of the flow are its characteristics.
 
-**Remark (the principal function).** The action of the calculus of variations, read as a function of the endpoint and of the initial data, satisfies the Hamilton–Jacobi equation, and its gradient is the momentum, $p_i=\partial S/\partial q^i$. This is Jacobi's reading of the equation: the principal function is the generating function of the transformation to the constants, so the equation is not a new object but the action regarded as a function of the endpoint. The proof is the envelope argument of *The Calculus of Variations*: differentiating the action with respect to the endpoint moves the boundary and, by the vanishing of the first variation, produces the momentum and the equation. The additive constant of $S$ is immaterial, because only its derivatives enter.
+**Remark (the principal function).** The action of the calculus of variations, read as a function of the endpoint and of the initial data, satisfies the Hamilton–Jacobi equation, and its gradient is the momentum, $p_i=\partial S/\partial q_i$. This is Jacobi's reading of the equation: the principal function is the generating function of the transformation to the constants, so the equation is not a new object but the action regarded as a function of the endpoint. The proof is the envelope argument of *The Calculus of Variations*: differentiating the action with respect to the endpoint moves the boundary and, by the vanishing of the first variation, produces the momentum and the equation. The additive constant of $S$ is immaterial, because only its derivatives enter.
 
 ### The Characteristic Function
 
@@ -64,7 +64,7 @@ The characteristic function is the quantity that separates: it is a function of 
 **Definition.** A $C^2$ solution $S(q,\alpha,t)$ of the Hamilton–Jacobi equation depending on $f$ independent constants $\alpha=(\alpha_1,\dots,\alpha_f)$ is a **complete integral** if the Hessian matrix of mixed derivatives is nonsingular,
 
 $$
-\det\Bigl(\frac{\partial^2 S}{\partial q^i\,\partial\alpha_j}\Bigr)\neq0
+\det\Bigl(\frac{\partial^2 S}{\partial q_i\,\partial\alpha_j}\Bigr)\neq0
 $$
 
 on the domain considered.
@@ -75,9 +75,9 @@ $$
 \boxed{\;\beta_i = \frac{\partial S}{\partial\alpha_i}(q,\alpha,t), \qquad i=1,\dots,f\;} ,
 $$
 
-solve these $f$ relations for the $f$ coordinates $q=q(\alpha,\beta,t)$, and set $p_i=\partial S/\partial q^i$ at that point. Then $(q(t),p(t))$ is a solution of Hamilton's equations for every choice of the $2f$ constants $\alpha,\beta$, and every solution arises in this way.
+solve these $f$ relations for the $f$ coordinates $q=q(\alpha,\beta,t)$, and set $p_i=\partial S/\partial q_i$ at that point. Then $(q(t),p(t))$ is a solution of Hamilton's equations for every choice of the $2f$ constants $\alpha,\beta$, and every solution arises in this way.
 
-*Proof.* The map $(q,p)\mapsto(\alpha,\beta)$ given by $p_i=\partial S/\partial q^i$ and $\beta_i=\partial S/\partial\alpha_i$ is the canonical transformation generated by $S$, with the constants $\alpha$ in the role of the new momenta; its new Hamiltonian is $K=H+\partial S/\partial t=0$ by the equation. In the new variables Hamilton's equations are $d\alpha_{i}/dt=-\partial K/\partial\beta_i=0$ and $d\beta_{i}/dt=\partial K/\partial\alpha_i=0$, so $\alpha$ and $\beta$ are constant along the flow. The nonsingularity of $\partial^2S/\partial q\,\partial\alpha$ is the inverse-function hypothesis that lets the relations $\beta=\partial S/\partial\alpha$ be solved for $q$; substituting in $p=\partial S/\partial q$ gives the momenta.
+*Proof.* The map $(q,p)\mapsto(\alpha,\beta)$ given by $p_i=\partial S/\partial q_i$ and $\beta_i=\partial S/\partial\alpha_i$ is the canonical transformation generated by $S$, with the constants $\alpha$ in the role of the new momenta; its new Hamiltonian is $K=H+\partial S/\partial t=0$ by the equation. In the new variables Hamilton's equations are $d\alpha_{i}/dt=-\partial K/\partial\beta_i=0$ and $d\beta_{i}/dt=\partial K/\partial\alpha_i=0$, so $\alpha$ and $\beta$ are constant along the flow. The nonsingularity of $\partial^2S/\partial q\,\partial\alpha$ is the inverse-function hypothesis that lets the relations $\beta=\partial S/\partial\alpha$ be solved for $q$; substituting in $p=\partial S/\partial q$ gives the momenta.
 
 The inverse-function condition is exactly the nondegeneracy of the generating function of the companion article, and it is why the constants must be **independent**: if the mixed Hessian vanished, the relations $\beta=\partial S/\partial\alpha$ would not determine the coordinates. The theorem is the precise sense in which the Hamilton–Jacobi method solves a system: the $2f$ arbitrary constants of the general solution of Hamilton's equations are the $\alpha_i$ and the $\beta_i$, and the coordinates are found by inverting $\beta=\partial S/\partial\alpha$ rather than by integrating further.
 
@@ -99,25 +99,25 @@ equivalently $q(t)=q_{\max}\sin\omega(t+\beta_1)$ with $q_{\max}=\sqrt{2\alpha_1
 
 ### Additive Separation and the Separation Constants
 
-**Definition.** The Hamilton–Jacobi equation **separates additively** in the coordinates $q^1,\dots,q^f$ if it has a complete integral of the form
+**Definition.** The Hamilton–Jacobi equation **separates additively** in the coordinates $q_1,\dots,q_f$ if it has a complete integral of the form
 
 $$
-W(q,\alpha) = \sum_{i=1}^f W_i(q^i,\alpha) ,
+W(q,\alpha) = \sum_{i=1}^f W_i(q_i,\alpha) ,
 $$
 
-a sum of terms each depending on a single coordinate, the constants $\alpha_i$ being the separation constants (one of which is the energy). The separated solution of the full equation is then $S=\sum_iW_i(q^i,\alpha)-\alpha_1 t$.
+a sum of terms each depending on a single coordinate, the constants $\alpha_i$ being the separation constants (one of which is the energy). The separated solution of the full equation is then $S=\sum_iW_i(q_i,\alpha)-\alpha_1 t$.
 
-**Theorem (the criterion of separation).** Suppose that in the Hamiltonian one coordinate $q^k$ and its conjugate gradient $\partial W/\partial q^k$ occur only through a single function,
+**Theorem (the criterion of separation).** Suppose that in the Hamiltonian one coordinate $q_k$ and its conjugate gradient $\partial W/\partial q_k$ occur only through a single function,
 
 $$
-H = H\Bigl(q^1,\dots,\widehat{q^k},\dots,q^f;\, \frac{\partial W}{\partial q^1},\dots,\widehat{\frac{\partial W}{\partial q^k}},\dots,\frac{\partial W}{\partial q^f};\, \psi\Bigl(q^k,\frac{\partial W}{\partial q^k}\Bigr)\Bigr),
+H = H\Bigl(q_1,\dots,\widehat{q_k},\dots,q_f;\, \frac{\partial W}{\partial q_1},\dots,\widehat{\frac{\partial W}{\partial q_k}},\dots,\frac{\partial W}{\partial q_f};\, \psi\Bigl(q_k,\frac{\partial W}{\partial q_k}\Bigr)\Bigr),
 $$
 
-the hat marking a missing entry. Then the equation separates in $q^k$, and $\psi=\Gamma_k$ is a constant.
+the hat marking a missing entry. Then the equation separates in $q_k$, and $\psi=\Gamma_k$ is a constant.
 
-*Proof.* Write the reduced equation as $H(\dots,\psi,\dots)=\alpha_1$. Differentiate with respect to $q^k$ at fixed values of the other coordinates and of the other gradients. The left side becomes $\partial H/\partial\psi\cdot d\psi/dq^k$, because $q^k$ occurs only through $\psi$; the right side is zero because $\alpha_1$ is constant and the other arguments are held fixed. Hence $\partial H/\partial\psi\cdot d\psi/dq^k=0$. Where $\partial H/\partial\psi\neq0$, which is the nondegenerate case, this gives $d\psi/dq^k=0$: the function $\psi$ is a constant $\Gamma_k$.
+*Proof.* Write the reduced equation as $H(\dots,\psi,\dots)=\alpha_1$. Differentiate with respect to $q_k$ at fixed values of the other coordinates and of the other gradients. The left side becomes $\partial H/\partial\psi\cdot d\psi/dq_k$, because $q_k$ occurs only through $\psi$; the right side is zero because $\alpha_1$ is constant and the other arguments are held fixed. Hence $\partial H/\partial\psi\cdot d\psi/dq_k=0$. Where $\partial H/\partial\psi\neq0$, which is the nondegenerate case, this gives $d\psi/dq_k=0$: the function $\psi$ is a constant $\Gamma_k$.
 
-The criterion is local and mechanical: a coordinate that enters only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. A **cyclic** coordinate is the extreme instance, since then $q^k$ does not occur at all, $\psi=\partial W/\partial q^k=p_k$, and the separation constant $\Gamma_k=p_k$ is the conserved conjugate momentum of the companion article. Separation and symmetry therefore meet at the cyclic coordinate: the conserved momentum of a symmetry is the simplest separation constant.
+The criterion is local and mechanical: a coordinate that enters only through one combination of itself and its own gradient can be separated off, and the value of that combination is a constant of the motion. A **cyclic** coordinate is the extreme instance, since then $q_k$ does not occur at all, $\psi=\partial W/\partial q_k=p_k$, and the separation constant $\Gamma_k=p_k$ is the conserved conjugate momentum of the companion article. Separation and symmetry therefore meet at the cyclic coordinate: the conserved momentum of a symmetry is the simplest separation constant.
 
 **Remark (the dependence on the coordinates).** Whether the equation separates is a property of the pair consisting of the Hamiltonian and the coordinate system, not of the Hamiltonian alone. The same potential may separate in one system and not in another: the free particle separates in the coordinate systems of the classical list below but not in a general orthogonal system, the Coulomb potential separates both in spherical and in parabolic coordinates while a general central potential separates only in the spherical ones, and the uniform field, which does not separate in spherical coordinates, separates in parabolic ones. The choice of coordinates is therefore part of the method, and the classification of the favourable choices is the content of the next two subsections.
 
@@ -125,7 +125,7 @@ The criterion is local and mechanical: a coordinate that enters only through one
 
 The systematic criterion for a Hamiltonian quadratic in the momenta is due to Stäckel.
 
-**Theorem (Stäckel conditions).** Let $q^1,\dots,q^f$ be orthogonal coordinates in Euclidean space with scale factors $h_i$, so that the Hamiltonian of a particle of mass $m$ in a potential $U$ is
+**Theorem (Stäckel conditions).** Let $q_1,\dots,q_f$ be orthogonal coordinates in Euclidean space with scale factors $h_i$, so that the Hamiltonian of a particle of mass $m$ in a potential $U$ is
 
 $$
 H = \frac{1}{2m}\sum_{i=1}^f\frac{p_i^2}{h_i^2} + U(q) ,
@@ -134,18 +134,18 @@ $$
 and consider the reduced Hamilton–Jacobi equation
 
 $$
-\frac{1}{2m}\sum_{i=1}^f\frac{1}{h_i^2}\Bigl(\frac{\partial W}{\partial q^i}\Bigr)^2 + U = \alpha_1 .
+\frac{1}{2m}\sum_{i=1}^f\frac{1}{h_i^2}\Bigl(\frac{\partial W}{\partial q_i}\Bigr)^2 + U = \alpha_1 .
 $$
 
 If the potential admits the representation
 
 $$
-U(q) = \sum_{i=1}^f \frac{1}{h_i^2}\,U_i(q^i)
+U(q) = \sum_{i=1}^f \frac{1}{h_i^2}\,U_i(q_i)
 $$
 
-with $U_i$ a function of the single coordinate $q^i$, and if the factors $1/h_i^2$ are nested as in the classical orthogonal systems, then the equation separates additively: clearing the denominators from the innermost coordinate outwards produces, at each step, an equation in a single coordinate whose constant parametrises the next. Conversely, among the classical separable systems, the condition is also necessary.
+with $U_i$ a function of the single coordinate $q_i$, and if the factors $1/h_i^2$ are nested as in the classical orthogonal systems, then the equation separates additively: clearing the denominators from the innermost coordinate outwards produces, at each step, an equation in a single coordinate whose constant parametrises the next. Conversely, among the classical separable systems, the condition is also necessary.
 
-*Proof (three-dimensional Euclidean case).* Write $A_i=\frac{1}{2m}(\partial W_i/\partial q^i)^2+U_i$ for the bracket of the coordinate $q^i$, so that the reduced equation in spherical coordinates reads $A_r+A_\theta/r^2+A_\phi/(r^2\sin^2\theta)=\alpha_1$. Multiplication by $r^2$ gives
+*Proof (three-dimensional Euclidean case).* Write $A_i=\frac{1}{2m}(\partial W_i/\partial q_i)^2+U_i$ for the bracket of the coordinate $q_i$, so that the reduced equation in spherical coordinates reads $A_r+A_\theta/r^2+A_\phi/(r^2\sin^2\theta)=\alpha_1$. Multiplication by $r^2$ gives
 
 $$
 r^2(A_r-\alpha_1) + A_\theta + \frac{A_\phi}{\sin^2\theta} = 0 ,
@@ -169,16 +169,16 @@ U(r,\theta,\phi) = U_r(r) + \frac{U_\theta(\theta)}{r^2} + \frac{U_\phi(\phi)}{r
 $$
 This is the precise sense in which separation is a match between the potential and the metric: the potential must reproduce the nesting of the scale factors. A general potential, such as the uniform field $U=Fz=Fr\cos\theta$, does not have the form, and indeed does not separate in spherical coordinates — it separates in the parabolic coordinates of the examples below.
 
-**Remark (the Stäckel matrix).** On a curved configuration space the metric factor $1/h_i^2$ is replaced by the contravariant metric coefficient $g^{ii}$ of the orthogonal coordinates, and the conditions above become the existence of an invertible matrix $\Phi$ whose $j$-th column depends on the coordinate $q^j$ alone — the **Stäckel matrix** — in terms of which the metric and the potential are expressed by one and the same linear system. The potentials satisfying it form the **Stäckel class**, and the separation constants are the coordinates of the potential in the basis of solutions of that system. The matrix formulation is quoted here as standard; the theorem above is its constant-curvature, orthogonal instance, which is the one used in the examples.
+**Remark (the Stäckel matrix).** On a curved configuration space the metric factor $1/h_i^2$ is replaced by the contravariant metric coefficient $(g^{-1})_{ii}$ of the orthogonal coordinates, and the conditions above become the existence of an invertible matrix $\Phi$ whose $j$-th column depends on the coordinate $q_j$ alone — the **Stäckel matrix** — in terms of which the metric and the potential are expressed by one and the same linear system. The potentials satisfying it form the **Stäckel class**, and the separation constants are the coordinates of the potential in the basis of solutions of that system. The matrix formulation is quoted here as standard; the theorem above is its constant-curvature, orthogonal instance, which is the one used in the examples.
 
 **Remark (the separable systems of Euclidean space).** The coordinate systems in which the free Hamilton–Jacobi equation separates are finite in number. In three-dimensional Euclidean space they are the classical list enumerated by Stäckel and Eisenhart — the Cartesian, cylindrical, spherical, parabolic-cylindrical, elliptic-cylindrical, rotational-parabolic, paraboloidal, prolate-spheroidal, oblate-spheroidal, confocal-ellipsoidal and conical systems — commonly quoted as eleven, with the degenerate limits of these systems counted separately by some authors; in the plane the list is shorter, the Cartesian, polar and elliptic-cylindrical systems being the standard ones. A potential separates in a given system exactly when it belongs to the Stäckel class of that system, so the enumeration of the coordinate systems is also the enumeration of the separable potentials up to the Stäckel construction. The list is quoted as standard; its derivation is the classification of the Stäckel matrices.
 
 ### Separation and Integrability
 
-**Remark (separation implies integrability).** A separable system is completely integrable in the sense of the Liouville–Arnold theorem of the companion article. The $f$ separation constants $\alpha_1,\dots,\alpha_f$ are $f$ independent functions on phase space, the energy among them, and they are in involution: the existence of the separated complete integral $W=\sum_iW_i(q^i,\alpha)$ exhibits the transformation to the variables in which the motion is a translation on a torus. The actions of the companion article are the closed integrals of the separated momenta,
+**Remark (separation implies integrability).** A separable system is completely integrable in the sense of the Liouville–Arnold theorem of the companion article. The $f$ separation constants $\alpha_1,\dots,\alpha_f$ are $f$ independent functions on phase space, the energy among them, and they are in involution: the existence of the separated complete integral $W=\sum_iW_i(q_i,\alpha)$ exhibits the transformation to the variables in which the motion is a translation on a torus. The actions of the companion article are the closed integrals of the separated momenta,
 
 $$
-\boxed{\;I_i = \frac{1}{2\pi}\oint p_i\,dq^i = \frac{1}{2\pi}\oint \frac{\partial W_i}{\partial q^i}\,dq^i\;} ,
+\boxed{\;I_i = \frac{1}{2\pi}\oint p_i\,dq_i = \frac{1}{2\pi}\oint \frac{\partial W_i}{\partial q_i}\,dq_i\;} ,
 $$
 
 and each is a function of the separation constants alone, so the Hamilton–Jacobi transformation to the constants is, in the compact case, the transformation to the action-angle coordinates in which $H$ depends on the actions only. The oscillator is the simplest instance: its action is $\alpha_1/\omega$, the energy divided by the frequency.
@@ -271,11 +271,11 @@ The examples are the central force, whose separation constant is the angular mom
 | $\partial S/\partial t+H(q,\partial S/\partial q,t)=0$ | Hamilton–Jacobi equation |
 | $H(q,\partial W/\partial q)=\alpha_1$ | Reduced equation; $\alpha_1$ the energy |
 | $\alpha_i$, $\beta_i$ | The $f$ constants of $S$ and their conjugate constants $\partial S/\partial\alpha_i$ |
-| $\Gamma_k$, $\psi(q^k,\partial W/\partial q^k)$ | Separation constant and the separating combination |
+| $\Gamma_k$, $\psi(q_k,\partial W/\partial q_k)$ | Separation constant and the separating combination |
 | $h_i$, $1/h_i^2$ | Scale factors of orthogonal coordinates and the metric factors |
-| $U_i(q^i)$ | One-coordinate pieces of the Stäckel potential |
-| Stäckel class | Potentials of the form $U=\sum_i(1/h_i^2)U_i(q^i)$ |
-| $I_i=\frac{1}{2\pi}\oint p_i\,dq^i$ | Action variables of a separable system |
+| $U_i(q_i)$ | One-coordinate pieces of the Stäckel potential |
+| Stäckel class | Potentials of the form $U=\sum_i(1/h_i^2)U_i(q_i)$ |
+| $I_i=\frac{1}{2\pi}\oint p_i\,dq_i$ | Action variables of a separable system |
 | $(r,\theta,\phi)$, $(r,\phi)$ | Spherical and polar coordinates |
 | $(\xi,\eta,\phi)$, $\xi=r+z$, $\eta=r-z$ | Parabolic coordinates |
 | $\alpha_\phi$, $\alpha_\theta^2=|\vec L|^2$ | Spherical separation constants |

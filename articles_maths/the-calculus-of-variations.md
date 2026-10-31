@@ -103,16 +103,16 @@ $$
 
 ### The Geodesic and the Brachistochrone
 
-**Example (geodesics).** On a Riemannian manifold $(M,g)$ the **energy** of a curve $x : [a,b]\to M$ with local coordinates $x^i$ is
+**Example (geodesics).** On a Riemannian manifold $(M,g)$ the **energy** of a curve $x : [a,b]\to M$ with local coordinates $x_i$ is
 
 $$
-E(x) = \frac12\int_a^b g_{ij}(x)dx^{i}/dt dx^{j}/dt\,dt ,
+E(x) = \frac12\int_a^b g_{ij}(x)dx_i/dt dx_j/dt\,dt ,
 $$
 
-and the **length** is $\int\sqrt{g_{ij}dx^{i}/dt dx^{j}/dt}\,dt$. The Euler–Lagrange equation of the energy is
+and the **length** is $\int\sqrt{g_{ij}dx_i/dt dx_j/dt}\,dt$. The Euler–Lagrange equation of the energy is
 
 $$
-d^2x^{k}/dt^2 + \Gamma^k_{ij}(x)dx^{i}/dt dx^{j}/dt = 0, \qquad \Gamma^k_{ij} = \frac12g^{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
+d^2x_k/dt^2 + \Gamma_{kij}(x)dx_i/dt dx_j/dt = 0, \qquad \Gamma_{kij} = \frac12(g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$
 
 the **geodesic equation**; the metric and the Levi-Civita connection are those of Part II, and the derivation is the computation of $\partial L/\partial w^k - \frac{d}{dt}\partial L/\partial p_k$ for $L = \frac12g_{ij}(x)p_ip_j$. Because the integrand of the length is homogeneous of degree one in $dx/dt$, the length and the energy have the same stationary curves up to reparametrisation; a geodesic is a curve of stationary energy and, being a critical point of a length functional that is not strictly convex, is locally minimising only up to the first conjugate point.
@@ -339,7 +339,7 @@ The second variation decides the nature of a stationary point: it is nonnegative
 | Multi-index form | $\sum_\alpha(-1)^{|\alpha|}\partial^\alpha \partial L/\partial (\partial^\alpha w)=0$ |
 | Natural boundary condition | $\partial L/\partial p\cdot\nu = 0$ on $\partial\Omega$ |
 | Beltrami identity | $L - \sum_iw_i'\partial L/\partial p_i = $ constant for autonomous $L$ |
-| $g_{ij}$, $\Gamma^k_{ij}$ | Metric and Christoffel symbols of Part II |
+| $g_{ij}$, $\Gamma_{kij}$ | Metric and Christoffel symbols of Part II |
 | Legendre condition | $\partial^2 L/\partial p^2\ge0$; strengthened when $\partial^2 L/\partial p^2>0$ |
 | Jacobi equation, conjugate point | Linearisation along a solution; zero of a Jacobi field |
 | coercive, weakly lower semicontinuous | Hypotheses of the direct method |

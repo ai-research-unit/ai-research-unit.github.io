@@ -30,7 +30,7 @@ the last when $\tilde Q$ is invertible. The identity holds in the entry model be
 
 **The trace sees the scalar part.** The trace is $2Q_t$ for the element and $4Q_t$ for the operator. The three vector coefficients do not enter. The trace is the matrix reading of the projection onto $\mathbb{C}e_t$, and it vanishes exactly on the traceless part $\vec Q$. The factor is exactly two, because $4Q_t=2\cdot2Q_t$.
 
-**The determinant sees the whole element.** The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ for the element and $\langle\tilde Q\rangle_{\natural}^2$ for the operator. It vanishes exactly on the null cone, and its zero set is the null cone. The squaring is the determinant of two equal blocks.
+**The determinant sees the whole element.** The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ for the element and $\langle\tilde Q\rangle_{\natural}^2$ for the operator. It vanishes exactly on the null cone, which is therefore its zero set. The squaring is the determinant of two equal blocks.
 
 **The eigenvalues.** The element has the two eigenvalues $\lambda_\pm=Q_t\pm iB$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. The operator has each of them twice. Every multiplicity in the operator is double, and the determinant is $\lambda_+^2\lambda_-^2$.
 

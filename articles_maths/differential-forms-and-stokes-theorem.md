@@ -31,13 +31,13 @@ $$
 
 is the **algebra of differential forms**, a graded-commutative algebra under the wedge product.
 
-**Proposition.** In a chart $(\Xi, x^1, \ldots, x^n)$, every $k$-form on $\Xi$ has a unique expression
+**Proposition.** In a chart $(\Xi, x_1, \ldots, x_n)$, every $k$-form on $\Xi$ has a unique expression
 
 $$
-\omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx^{i_1} \wedge \cdots \wedge dx^{i_k}
+\omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx_{i_1} \wedge \cdots \wedge dx_{i_k}
 $$
 
-with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(\Xi)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $\Xi$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of **top forms**.
+with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(\Xi)$, and the $dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $\Xi$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of **top forms**.
 
 **Proof.** The cotangent bundle is locally trivial with fibre $\mathbb{R}^n$, and the exterior power of a free module of rank $n$ has the stated basis; the sections are smooth precisely when the coefficients are.
 
@@ -63,13 +63,13 @@ $$
 
 ### Definition in Coordinates
 
-**Definition.** The **exterior derivative** is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(\Xi, x^1, \ldots, x^n)$ by
+**Definition.** The **exterior derivative** is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(\Xi, x_1, \ldots, x_n)$ by
 
 $$
-d\Bigl(\sum_{I} \omega_I\, dx^I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x^j}\, dx^j \wedge dx^I,
+d\Bigl(\sum_{I} \omega_I\, dx_I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x_j}\, dx_j \wedge dx_I,
 $$
 
-where $dx^I = dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ for $I = (i_1 < \cdots < i_k)$.
+where $dx_I = dx_{i_1}\wedge\cdots\wedge dx_{i_k}$ for $I = (i_1 < \cdots < i_k)$.
 
 **Theorem.** The operator $d$ is well defined, that is, the expression above is independent of the choice of chart, and it is characterised on $\Omega^k(M)$ by
 
@@ -83,7 +83,7 @@ where $dx^I = dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ for $I = (i_1 < \cdots < i_k)
 
 It is the unique operator with properties (a), (b), (c) and (d).
 
-**Proof sketch.** One checks the coordinate expression transforms correctly under a change of chart: the chain rule and the antisymmetry of the wedge product produce the two terms that cancel when the transformation is applied to $d\omega$. For the characterisation, property (b) with the $dx^{i}$ and property (c) with the coordinate functions reconstruct the displayed formula term by term, so any two operators with the listed properties agree; conversely the displayed operator has them, and $d^2 = 0$ follows from the equality of mixed partial derivatives, $\frac{\partial^2 f}{\partial x^i \partial x^j} = \frac{\partial^2 f}{\partial x^j \partial x^i}$, together with $dx^i\wedge dx^j = -dx^j\wedge dx^i$.
+**Proof sketch.** One checks the coordinate expression transforms correctly under a change of chart: the chain rule and the antisymmetry of the wedge product produce the two terms that cancel when the transformation is applied to $d\omega$. For the characterisation, property (b) with the $dx_{i}$ and property (c) with the coordinate functions reconstruct the displayed formula term by term, so any two operators with the listed properties agree; conversely the displayed operator has them, and $d^2 = 0$ follows from the equality of mixed partial derivatives, $\frac{\partial^2 f}{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i}$, together with $dx_i\wedge dx_j = -dx_j\wedge dx_i$.
 
 **Remark.** Property (b) is the graded Leibniz rule, and it says that $d$ is an odd derivation of the graded-commutative algebra of forms; the sign $(-1)^k$ is the Koszul sign of the exterior algebra. The exterior derivative is not a tensor: the value of $d\omega$ at a point depends on the first derivatives of the coefficients, which is why the differential structure is needed and why the purely algebraic theory of *The Determinant and Alternating Forms* does not contain $d$.
 
@@ -153,7 +153,7 @@ $$
 h(\omega) = \int_0^1 t^{k-1}\, \iota_{x}\, \omega(tx)\, dt,
 $$
 
-where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial/\partial x^j$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(\Xi)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.
+where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x_j \partial/\partial x_j$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(\Xi)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.
 
 **Corollary.** The de Rham cohomology of a contractible manifold is $\mathbb{R}$ in degree $0$ and zero in positive degrees. In particular the de Rham complex computes a homotopy invariant of the manifold, not merely a differential-geometric one.
 
@@ -163,7 +163,7 @@ where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j 
 
 **Definition.** An **orientation** of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) > 0$.
 
-**Definition.** Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(\Xi, x)$, and define the **integral** of $\omega$ over $\Xi$ to be the ordinary integral $\int_{x(\Xi)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.
+**Definition.** Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx_1\wedge\cdots\wedge dx_n$ in a positively oriented chart $(\Xi, x)$, and define the **integral** of $\omega$ over $\Xi$ to be the ordinary integral $\int_{x(\Xi)} f\, dx_1\cdots dx_n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.
 
 **Theorem (change of variables).** The integral is well defined, and if $F : N \to M$ is an orientation-preserving diffeomorphism between oriented $n$-manifolds, then
 
@@ -187,22 +187,22 @@ $$
 
 the boundary carrying the induced orientation.
 
-**Proof.** By a partition of unity it suffices to prove the statement for a form supported in a single chart. In a chart mapping an open set of $M$ to an open set of the half-space $\mathbb{R}^n_+ = \{x^n \geq 0\}$ with the standard orientation, a compactly supported $(n-1)$-form can be written as
+**Proof.** By a partition of unity it suffices to prove the statement for a form supported in a single chart. In a chart mapping an open set of $M$ to an open set of the half-space $\mathbb{R}^n_+ = \{x_n \geq 0\}$ with the standard orientation, a compactly supported $(n-1)$-form can be written as
 
 $$
-\omega = \sum_{j=1}^{n} (-1)^{j-1} f_j\, dx^1\wedge\cdots\wedge\widehat{dx^j}\wedge\cdots\wedge dx^n,
+\omega = \sum_{j=1}^{n} (-1)^{j-1} f_j\, dx_1\wedge\cdots\wedge\widehat{dx_j}\wedge\cdots\wedge dx_n,
 $$
 
 and
 
 $$
-d\omega = \sum_{j=1}^{n} \frac{\partial f_j}{\partial x^j}\, dx^1\wedge\cdots\wedge dx^n.
+d\omega = \sum_{j=1}^{n} \frac{\partial f_j}{\partial x_j}\, dx_1\wedge\cdots\wedge dx_n.
 $$
 
-Integrating the $j$-th term over $\mathbb{R}^n_+$ and applying the fundamental theorem of calculus in the $x^j$ variable, the integrals cancel except for the term $j = n$ on the boundary hyperplane $x^n = 0$, where the fundamental theorem gives
+Integrating the $j$-th term over $\mathbb{R}^n_+$ and applying the fundamental theorem of calculus in the $x_j$ variable, the integrals cancel except for the term $j = n$ on the boundary hyperplane $x_n = 0$, where the fundamental theorem gives
 
 $$
-\int_{\mathbb{R}^n_+} \frac{\partial f_n}{\partial x^n}\, dx^1\cdots dx^n = -\int_{\mathbb{R}^{n-1}} f_n(x^1, \ldots, x^{n-1}, 0)\, dx^1\cdots dx^{n-1}.
+\int_{\mathbb{R}^n_+} \frac{\partial f_n}{\partial x_n}\, dx_1\cdots dx_n = -\int_{\mathbb{R}^{n-1}} f_n(x_1, \ldots, x_{n-1}, 0)\, dx_1\cdots dx_{n-1}.
 $$
 
 The remaining boundary integral is exactly $\int_{\partial M}\omega$ with the induced orientation: the contraction with the outward normal picks out the $j = n$ term with the sign displayed. Summing over the charts gives the theorem.
@@ -305,7 +305,7 @@ between the $k$-th de Rham cohomology and the $k$-th singular cohomology of $M$ 
 
 ## Summary
 
-A differential form of degree $k$ is a smooth section of $\Lambda^k T^*M$; the forms form a graded-commutative algebra under the wedge product, and the pullback along a smooth map is a contravariant algebra homomorphism. The exterior derivative $d$ is the unique degree-one derivation of this algebra with $d^2 = 0$ that agrees with the differential on functions; in coordinates it differentiates the coefficients and wedges with $dx^j$.
+A differential form of degree $k$ is a smooth section of $\Lambda^k T^*M$; the forms form a graded-commutative algebra under the wedge product, and the pullback along a smooth map is a contravariant algebra homomorphism. The exterior derivative $d$ is the unique degree-one derivation of this algebra with $d^2 = 0$ that agrees with the differential on functions; in coordinates it differentiates the coefficients and wedges with $dx_j$.
 
 The de Rham complex $0 \to \Omega^0 \to \Omega^1 \to \cdots \to \Omega^n \to 0$ has cohomology $H^\bullet_{dR}(M)$, which is contravariantly functorial, homotopy invariant, and satisfies the Mayer–Vietoris sequence; the Poincaré lemma says that on a star-shaped open set the cohomology vanishes in positive degrees.
 
@@ -326,7 +326,7 @@ The integral of a top form on an oriented manifold is defined locally by the ord
 | $H^k_{dR}(M) = \ker d/\operatorname{im} d$ | de Rham cohomology |
 | Poincaré lemma | $H^k_{dR}(\Xi) = 0$ for $k \geq 1$ on a star-shaped open set |
 | $\mathrm{vol}$, orientation | Nowhere vanishing top form defining an orientation |
-| $\mathbb{R}^n_+ = \{x^n \geq 0\}$ | Closed upper half-space; the local model for a manifold with boundary |
+| $\mathbb{R}^n_+ = \{x_n \geq 0\}$ | Closed upper half-space; the local model for a manifold with boundary |
 | $\int_M\omega$ | Integral of a compactly supported top form on an oriented manifold |
 | $\int_M d\omega = \int_{\partial M}\omega$ | Stokes' theorem; boundary carries the induced orientation |
 | $\star$, $\langle\alpha,\beta\rangle_g\mathrm{vol}_g = \alpha\wedge\star\beta$ | Hodge star on an oriented Riemannian manifold |

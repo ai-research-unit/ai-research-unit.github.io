@@ -13,12 +13,12 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 
 ### Length and the Riemannian Distance
 
-Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of *Smooth Manifolds and Differential Geometry*: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$. The **speed** of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the **length** is the integral of the speed. The **Riemannian distance** $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.
+Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of *Smooth Manifolds and Differential Geometry*: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x_i$ the coefficients are $g_{ij} = g(\partial/\partial x_i, \partial/\partial x_j)$. The **speed** of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the **length** is the integral of the speed. The **Riemannian distance** $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.
 
 **Definition.** The **volume form** of an oriented Riemannian manifold is the unique $n$-form $\mathrm{vol}_g \in \Omega^n(M)$ that assigns the value $1$ to every positively oriented orthonormal frame; in a positively oriented chart,
 
 $$
-\mathrm{vol}_g = \sqrt{\det(g_{ij})}\; dx^1 \wedge \cdots \wedge dx^n .
+\mathrm{vol}_g = \sqrt{\det(g_{ij})}\; dx_1 \wedge \cdots \wedge dx_n .
 $$
 
 It is the top form whose integral is the Riemannian volume, and its existence is the form theory.
@@ -58,12 +58,12 @@ $$
 **Definition.** In a chart the Christoffel symbols are
 
 $$
-\nabla_{\partial/\partial x^i}\partial/\partial x^j = \sum_k \Gamma^k_{ij}\,\partial/\partial x^k,
+\nabla_{\partial/\partial x_i}\partial/\partial x_j = \sum_k \Gamma_{kij}\,\partial/\partial x_k,
 \qquad
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\Bigr),
+\Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\Bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\Bigr),
 $$
 
-where $(g^{kl})$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta^i_{\ j})$ of $1$-forms with $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.
+where $(g^{-1})_{kl}$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta_{ij})$ of $1$-forms with $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.
 
 ### Parallel Transport
 
@@ -95,10 +95,10 @@ $$
 \nabla_{\gamma'}\gamma' = 0 .
 $$
 
-In a chart, writing $\gamma(t) = (x^1(t), \ldots, x^n(t))$, this is the system
+In a chart, writing $\gamma(t) = (x_1(t), \ldots, x_n(t))$, this is the system
 
 $$
-\frac{d^2x^k}{dt^2} + \sum_{i, j} \Gamma^k_{ij}\,\frac{dx^i}{dt}\frac{dx^j}{dt} = 0, \qquad k = 1, \ldots, n,
+\frac{d^2x_k}{dt^2} + \sum_{i, j} \Gamma_{kij}\,\frac{dx_i}{dt}\frac{dx_j}{dt} = 0, \qquad k = 1, \ldots, n,
 $$
 
 the **geodesic equation**. It is a second-order ordinary differential equation; the *equation* is written here, and its solvability — the existence, uniqueness and smooth dependence on initial conditions of its solutions — is the theory of differential equations and belongs to Part III. What the equation says is that a geodesic is a curve that does not turn: its acceleration in the sense of the connection vanishes.
@@ -121,7 +121,7 @@ In words, the radial geodesics leave $p$ orthogonally to the spheres of constant
 
 **Proof sketch.** The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial/\partial s\,\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.
 
-**Definition.** The **normal coordinates** at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x^i = v^i$, where $v = \sum_i v^i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.
+**Definition.** The **normal coordinates** at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x_i = v_i$, where $v = \sum_i v_i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.
 
 ### Geodesics Minimise Locally
 
@@ -321,9 +321,9 @@ The complete simply connected manifolds of constant curvature are the round sphe
 
 | Symbol | Meaning |
 |---|---|
-| $(M, g)$, $g_{ij}$, $g^{ij}$ | Riemannian manifold; metric coefficients and their inverse matrix |
+| $(M, g)$, $g_{ij}$, $(g^{-1})_{ij}$ | Riemannian manifold; metric coefficients and their inverse matrix |
 | $\nabla$, $\nabla_XY$ | Levi-Civita connection; covariant derivative of $Y$ along $X$ |
-| $\theta = (\theta^i_{\ j})$, $\Gamma^k_{ij}$ | Connection form and Christoffel symbols; $\theta$ is the connection-form letter of half A |
+| $\theta = (\theta_{ij})$, $\Gamma_{kij}$ | Connection form and Christoffel symbols; $\theta$ is the connection-form letter of half A |
 | $P_\gamma$ | Parallel transport along the curve $\gamma$; an isometry of tangent spaces |
 | $\operatorname{Hol}_p$ | Holonomy group at $p$; its Lie algebra is spanned by the curvature |
 | $R(X,Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$ | Curvature tensor |
@@ -333,11 +333,11 @@ The complete simply connected manifolds of constant curvature are the round sphe
 | $S = \sum_i \operatorname{Ric}(e_i,e_i)$ | Scalar curvature |
 | $G = \operatorname{Ric} - \frac12 Sg$ | Einstein tensor; $\operatorname{div} G = 0$ |
 | $\nabla_{\gamma'}\gamma' = 0$ | Geodesic equation in invariant form |
-| $d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$ | Geodesic equation in a chart |
+| $d^2x_k/dt^2 + \sum_{i,j}\Gamma_{kij}(dx_i/dt)(dx_j/dt) = 0$ | Geodesic equation in a chart |
 | $\exp_p : T_pM \to M$ | Exponential map of the metric; $d(\exp_p)_0 = \mathrm{id}$ |
 | Gauss lemma | $g(d\exp_p(v), d\exp_p(w)) = g(v,w)$ for the radial direction |
-| Normal coordinates | Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial/\partial x^k g_{ij}(p) = 0$ |
-| $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$ | Riemannian volume form |
+| Normal coordinates | Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial/\partial x_k g_{ij}(p) = 0$ |
+| $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx_1\wedge\cdots\wedge dx_n$ | Riemannian volume form |
 | $K = 1/r^2,\ 0,\ -1/r^2$ | Curvatures of the elliptic, Euclidean and hyperbolic models |
 | $S^n_r$, $\mathbb{H}^n_r$ | Round sphere and hyperbolic space of radius $r$ |
 | $\int_M K\,\mathrm{vol}_g = 2\pi\chi(M)$ | Gauss–Bonnet theorem for a compact oriented surface |

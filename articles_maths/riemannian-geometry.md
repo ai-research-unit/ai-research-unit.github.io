@@ -13,10 +13,10 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 
 ### Metrics and Isometries
 
-**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A **Riemannian manifold** is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x^i$ the **first fundamental form** is $ds^2 = \sum_{ij} g_{ij}\,dx^i dx^j$ with $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law
+**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A **Riemannian manifold** is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x_i$ the **first fundamental form** is $ds^2 = \sum_{i,j} g_{ij}\,dx_i dx_j$ with $g_{ij} = g(\partial/\partial x_i, \partial/\partial x_j)$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law
 
 $$
-g'_{kl} = \sum_{ij} g_{ij}\,\frac{\partial x^i}{\partial y^k}\frac{\partial x^j}{\partial y^l}
+g'_{kl} = \sum_{i,j} g_{ij}\,\frac{\partial x_i}{\partial y_k}\frac{\partial x_j}{\partial y_l}
 $$
 
 under a change of coordinates.
@@ -76,12 +76,12 @@ $$
 **Definition.** In a coordinate frame the connection is described by the **Christoffel symbols**
 
 $$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr),
+\Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$
 
-which are symmetric in $i, j$, and the connection form is $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$.
+which are symmetric in $i, j$, and the connection form is $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$.
 
-**Remark.** The symmetry $\Gamma^k_{ij} = \Gamma^k_{ji}$ is exactly the torsion-freeness, and the vanishing of $\nabla g$ is exactly the metricity. Both are visible in the Koszul formula and neither survives if the metric is dropped: a general connection has neither property, and the pair of properties is what makes the Levi-Civita connection canonical.
+**Remark.** The symmetry $\Gamma_{kij} = \Gamma_{kji}$ is exactly the torsion-freeness, and the vanishing of $\nabla g$ is exactly the metricity. Both are visible in the Koszul formula and neither survives if the metric is dropped: a general connection has neither property, and the pair of properties is what makes the Levi-Civita connection canonical.
 
 ### The Curvature Tensor
 
@@ -135,7 +135,7 @@ If the curvature is isotropic with value $K$ at each point then $\operatorname{R
 
 ### Geodesics and the Exponential Map
 
-**Definition.** A **geodesic** is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$. A geodesic is **complete** if it is defined for all real $t$. The **exponential map** at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is **geodesically complete** if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.
+**Definition.** A **geodesic** is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $d^2x_k/dt^2 + \sum_{i,j}\Gamma_{kij}(dx_i/dt)(dx_j/dt) = 0$. A geodesic is **complete** if it is defined for all real $t$. The **exponential map** at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is **geodesically complete** if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.
 
 **Theorem.** Every geodesic has constant speed: $g(\gamma', \gamma')$ is constant along $\gamma$, and a geodesic parametrised by arclength is locally minimising.
 
@@ -147,10 +147,10 @@ $$
 
 The local minimising property is the Gauss lemma and the first-variation computation of *Curvature and Geodesics*.
 
-**Definition.** The **normal coordinates** at $n$ are the coordinates $x^i$ defined by $x = \exp_n(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial/\partial x^k\,g_{ij}(n) = 0$, and
+**Definition.** The **normal coordinates** at $n$ are the coordinates $x_i$ defined by $x = \exp_n(v)$, $x_i = v_i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial/\partial x_k\,g_{ij}(n) = 0$, and
 
 $$
-g_{ij}(x) = \delta_{ij} - \frac{1}{3}\sum_{k,l} R_{ikjl}(n)\,x^kx^l + O(|x|^3),
+g_{ij}(x) = \delta_{ij} - \frac{1}{3}\sum_{k,l} R_{ikjl}(n)\,x_k x_l + O(|x|^3),
 $$
 
 where $R_{ikjl} = R(e_i, e_k, e_j, e_l)$; the curvature is exactly the second-order term.
@@ -311,11 +311,11 @@ The isometry group of a connected Riemannian manifold is a Lie group by the Myer
 
 | Symbol | Meaning |
 |---|---|
-| $(M, g)$, $g_{ij}$, $g^{ij}$ | Riemannian manifold; metric coefficients and inverse |
-| $ds^2 = \sum_{ij}g_{ij}dx^idx^j$ | First fundamental form |
+| $(M, g)$, $g_{ij}$, $(g^{-1})_{ij}$ | Riemannian manifold; metric coefficients and inverse |
+| $ds^2 = \sum_{i,j}g_{ij}dx_i dx_j$ | First fundamental form |
 | $L_g(\gamma)$, $d_g(n,m)$ | Length of a curve; Riemannian distance |
 | $\operatorname{Isom}(M,g)$ | Isometry group; a Lie group by Myers–Steenrod |
-| $\nabla$, $\Gamma^k_{ij}$, $\theta^i_{\ j}$ | Levi-Civita connection; Christoffel symbols; connection form |
+| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$ | Levi-Civita connection; Christoffel symbols; connection form |
 | $R(X,Y)Z$, $R(X,Y,Z,W)$ | Curvature tensor and its fully covariant form |
 | $\mathcal{R} = d\theta+\theta\wedge\theta$ | Curvature $2$-form in a frame; no bare $\Omega$ is used |
 | $K(\sigma)$ | Sectional curvature of the two-plane $\sigma$ |

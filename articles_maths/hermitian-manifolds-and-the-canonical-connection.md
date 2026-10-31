@@ -4,19 +4,19 @@
 
 A **Hermitian manifold** is a complex manifold with a Hermitian metric on its holomorphic tangent bundle. Its tangent bundle is a holomorphic Hermitian bundle, and it therefore carries the **canonical connection** — the Chern connection of the tangent bundle — the unique connection compatible with both the metric and the holomorphic structure. The connection has an explicit local form in a holomorphic frame, a torsion that vanishes exactly in the Kähler case, and a curvature whose trace is the Ricci form and whose class is the first Chern class of the manifold.
 
-The article develops the canonical connection of a Hermitian manifold. It recalls the Hermitian manifold and its metric from *Hermitian Metrics and the Levi-Civita Connection*, the previous entries of this group, and the Chern connection of a holomorphic Hermitian bundle from *Hermitian Vector Bundles and the Chern Connection*; it then specialises the construction to the holomorphic tangent bundle, computes the connection coefficients $\Gamma^i_{jk} = \sum_l h^{i\bar l}\partial/\partial z^j h_{k\bar l}$ in a holomorphic frame, and develops the torsion, the comparison with the Levi-Civita connection by the contorsion tensor, the curvature forms, the Ricci form $-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ and the first Chern class of the manifold. It identifies the Kähler case as the case where the canonical connection is torsion-free and coincides with the Levi-Civita connection.
+The article develops the canonical connection of a Hermitian manifold. It recalls the Hermitian manifold and its metric from *Hermitian Metrics and the Levi-Civita Connection*, the previous entries of this group, and the Chern connection of a holomorphic Hermitian bundle from *Hermitian Vector Bundles and the Chern Connection*; it then specialises the construction to the holomorphic tangent bundle, computes the connection coefficients $\Gamma_{ijk} = \sum_l (h^{-1})_{i\bar l}\partial/\partial z_j h_{k\bar l}$ in a holomorphic frame, and develops the torsion, the comparison with the Levi-Civita connection by the contorsion tensor, the curvature forms, the Ricci form $-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ and the first Chern class of the manifold. It identifies the Kähler case as the case where the canonical connection is torsion-free and coincides with the Levi-Civita connection.
 
 The article assumes the complex manifolds, the almost complex structures, the type decomposition, the Dolbeault complex and the Hermitian metrics as geometric objects of *Hermitian Geometry and Almost Complex Structures* in Part IV; the Hermitian metrics, the fundamental form and the Kähler conditions of *Hermitian Metrics and the Levi-Civita Connection*, the previous entry of this group; and the Chern connection of a holomorphic Hermitian bundle, its local form $\omega=H^{-1}\partial H$ and its curvature $\Theta=\bar\partial(H^{-1}\partial H)$ of *Hermitian Vector Bundles and the Chern Connection*. The Kähler geometry — the Kähler form, the Hodge theory, the Lefschetz theorems, the curvature and the holonomy of a Kähler manifold — is *Kähler Geometry* in Part IV. The Chern classes of the manifold and their topological meaning are *Characteristic Classes* and *Chern Classes of a Hermitian Bundle* in this category. No physics is invoked.
 
 ## The Hermitian Manifold
 
-**Definition.** A **Hermitian manifold** is a triple $(M, J, g)$ where $M$ is a complex manifold of complex dimension $n$, $J$ is its complex structure and $g$ is a Riemannian metric that is Hermitian for $J$; equivalently, it is a complex manifold with a Hermitian metric on the holomorphic tangent bundle $T^{1,0}M$. In a **holomorphic frame** $\partial/\partial z^1, \ldots, \partial/\partial z^n$ of $T^{1,0}M$, over a holomorphic chart with coordinates $z^1, \ldots, z^n$, the metric is the positive-definite Hermitian matrix
+**Definition.** A **Hermitian manifold** is a triple $(M, J, g)$ where $M$ is a complex manifold of complex dimension $n$, $J$ is its complex structure and $g$ is a Riemannian metric that is Hermitian for $J$; equivalently, it is a complex manifold with a Hermitian metric on the holomorphic tangent bundle $T^{1,0}M$. In a **holomorphic frame** $\partial/\partial z_1, \ldots, \partial/\partial z_n$ of $T^{1,0}M$, over a holomorphic chart with coordinates $z_1, \ldots, z_n$, the metric is the positive-definite Hermitian matrix
 
 $$
-h_{i\bar j} = g(\partial/\partial z^i, \partial/\partial\bar z^j), \qquad h_{i\bar j} = \overline{h_{j\bar i}},
+h_{i\bar j} = g(\partial/\partial z_i, \partial/\partial\bar z_j), \qquad h_{i\bar j} = \overline{h_{j\bar i}},
 $$
 
-and the fundamental form is $\omega = \frac{i}{2}\sum_{i,j}h_{i\bar j}\,dz^i\wedge d\bar z^j$, a real $(1,1)$-form; the Hermitian condition, the fundamental form and the Kähler conditions are those of *Hermitian Metrics and the Levi-Civita Connection* and *Hermitian Geometry and Almost Complex Structures*, and are used here without repetition.
+and the fundamental form is $\omega = \frac{i}{2}\sum_{i,j}h_{i\bar j}\,dz_i\wedge d\bar z_j$, a real $(1,1)$-form; the Hermitian condition, the fundamental form and the Kähler conditions are those of *Hermitian Metrics and the Levi-Civita Connection* and *Hermitian Geometry and Almost Complex Structures*, and are used here without repetition.
 
 ## The Canonical Connection of the Tangent Bundle
 
@@ -37,17 +37,17 @@ the **canonical connection** of the Hermitian manifold; it is the Chern connecti
 **Theorem.** In a holomorphic frame the canonical connection has the connection form $\omega = (h^{-1}\partial h)$, that is,
 
 $$
-\nabla_{\partial/\partial z^j}\partial/\partial z^k = \sum_i \Gamma^i_{jk}\,\partial/\partial z^i, \qquad \Gamma^i_{jk} = \sum_l h^{i\bar l}\,\partial/\partial z^j h_{k\bar l},
+\nabla_{\partial/\partial z_j}\partial/\partial z_k = \sum_i \Gamma_{ijk}\,\partial/\partial z_i, \qquad \Gamma_{ijk} = \sum_l (h^{-1})_{i\bar l}\,\partial/\partial z_j h_{k\bar l},
 $$
 
-where $(h^{i\bar l})$ is the inverse matrix of $(h_{i\bar l})$; equivalently, $\omega^i_k = \sum_j \Gamma^i_{jk}\,dz^j$, and the connection is determined by the **Christoffel symbols** $\Gamma^i_{jk}$ of the Hermitian metric. The conjugate components satisfy the reality relation $\overline{\Gamma^i_{jk}} = \Gamma^{\bar i}_{\bar j\bar k}$ for the conjugate frame, and the $(0,1)$-part of the connection vanishes in the holomorphic frame.
+where $(h^{-1})_{i\bar l}$ is the inverse matrix of $(h_{i\bar l})$; equivalently, $\omega_{ik} = \sum_j \Gamma_{ijk}\,dz_j$, and the connection is determined by the **Christoffel symbols** $\Gamma_{ijk}$ of the Hermitian metric. The conjugate components satisfy the reality relation $\overline{\Gamma_{ijk}} = \Gamma_{\bar i\bar j\bar k}$ for the conjugate frame, and the $(0,1)$-part of the connection vanishes in the holomorphic frame.
 
-*Proof.* This is the formula $\omega = H^{-1}\partial H$ of *Hermitian Vector Bundles and the Chern Connection*, read on the frame $\partial/\partial z^1, \ldots, \partial/\partial z^n$ with the matrix $H=(h_{i\bar j})$; the entries of $\omega$ are the displayed $\Gamma^i_{jk}dz^j$. The vanishing of the $(0,1)$-part in a holomorphic frame is the defining property $\nabla^{0,1}=\bar\partial$; the conjugate relation follows from the Hermitian symmetry $h_{i\bar j}=\overline{h_{j\bar i}}$ and the reality of the metric.
+*Proof.* This is the formula $\omega = H^{-1}\partial H$ of *Hermitian Vector Bundles and the Chern Connection*, read on the frame $\partial/\partial z_1, \ldots, \partial/\partial z_n$ with the matrix $H=(h_{i\bar j})$; the entries of $\omega$ are the displayed $\Gamma_{ijk}dz_j$. The vanishing of the $(0,1)$-part in a holomorphic frame is the defining property $\nabla^{0,1}=\bar\partial$; the conjugate relation follows from the Hermitian symmetry $h_{i\bar j}=\overline{h_{j\bar i}}$ and the reality of the metric.
 
 **Proposition.** The coefficients satisfy the analogue of the metric-compatibility equation,
 
 $$
-\partial/\partial z^j h_{k\bar l} = \sum_i \Gamma^i_{jk}\,h_{i\bar l}, \qquad \partial/\partial\bar z^j\,h_{k\bar l} = \sum_i \bar\Gamma^{\bar i}_{\bar j\bar l}\,h_{k\bar i},
+\partial/\partial z_j h_{k\bar l} = \sum_i \Gamma_{ijk}\,h_{i\bar l}, \qquad \partial/\partial\bar z_j\,h_{k\bar l} = \sum_i \bar\Gamma_{\bar i\bar j\bar l}\,h_{k\bar i},
 $$
 
 and they are the unique solution with the second relation, so the connection is determined by the first-order system.
@@ -61,12 +61,12 @@ and they are the unique solution with the second relation, so the connection is 
 **Definition.** The **torsion** of the canonical connection is the tensor $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$, a section of $\Lambda^2T^*_{\mathbb{C}}M\otimes T_{\mathbb{C}}M$ read through the type decomposition. In a holomorphic frame its holomorphic components are
 
 $$
-T^k_{ij} = \Gamma^k_{ij} - \Gamma^k_{ji},
+T_{kij} = \Gamma_{kij} - \Gamma_{kji},
 $$
 
 the remaining components being determined by these and the conjugate relation; and its purely antiholomorphic part vanishes, $T^{0,2} = 0$.
 
-*Proof.* The bracket of two holomorphic coordinate fields vanishes, so $T(\partial/\partial z^i,\partial/\partial z^j) = \nabla_{\partial/\partial z^i}\partial/\partial z^j-\nabla_{\partial/\partial z^j}\partial/\partial z^i = \sum_k(\Gamma^k_{ij}-\Gamma^k_{ji})\partial/\partial z^k$, which is the display; the conjugate components of the connection give the conjugate components of the torsion, and the vanishing of the $(0,2)$-part is the vanishing of the $(0,1)$-part of the connection in the holomorphic frame. The symmetric part of the coefficients vanishes exactly when the connection is torsion-free.
+*Proof.* The bracket of two holomorphic coordinate fields vanishes, so $T(\partial/\partial z_i,\partial/\partial z_j) = \nabla_{\partial/\partial z_i}\partial/\partial z_j-\nabla_{\partial/\partial z_j}\partial/\partial z_i = \sum_k(\Gamma_{kij}-\Gamma_{kji})\partial/\partial z_k$, which is the display; the conjugate components of the connection give the conjugate components of the torsion, and the vanishing of the $(0,2)$-part is the vanishing of the $(0,1)$-part of the connection in the holomorphic frame. The symmetric part of the coefficients vanishes exactly when the connection is torsion-free.
 
 **Theorem.** The canonical connection of a Hermitian manifold is torsion-free if and only if the manifold is Kähler, and then it equals the Levi-Civita connection. In general the torsion is nonzero, consists of a $(2,0)$-part and a $(1,1)$-part, and vanishes exactly when the fundamental form is closed.
 
@@ -97,19 +97,19 @@ $$
 a matrix of $(1,1)$-forms; in components,
 
 $$
-\Omega^i_j = \sum_{k,l} R^i_{j k\bar l}\,dz^k\wedge d\bar z^l, \qquad R^i_{j k\bar l} = -\partial/\partial\bar z^l\,\Gamma^i_{jk},
+\Omega_{ij} = \sum_{k,l} R_{ijk\bar l}\,dz_k\wedge d\bar z_l, \qquad R_{ijk\bar l} = -\partial/\partial\bar z_l\,\Gamma_{ijk},
 $$
 
 up to the ordering convention of the two terms; the curvature has no $(0,2)$-part, and it is $h$-skew-Hermitian, $\Omega^* = -\Omega$, so $\frac{i}{2\pi}\Omega$ is a matrix of Hermitian $(1,1)$-forms. The curvature satisfies the second Bianchi identity $d^\nabla\Omega = 0$.
 
-*Proof.* The holomorphic part $\partial\omega+\omega\wedge\omega$ vanishes for the Chern connection, as computed in *Hermitian Vector Bundles and the Chern Connection*, so the curvature is the $(1,1)$-form $\bar\partial\omega$; the component form is the definition of $\bar\partial$ applied to the coefficient function $\Gamma^i_{jk}$; the skew-Hermitian property is the metric-compatibility equation differentiated, and the Bianchi identity is the general identity of *The Covariant Derivative*. The sign in the component formula is fixed by the ordering $dz^k\wedge d\bar z^l$ and the convention that $\bar\partial(dz^k)=0$.
+*Proof.* The holomorphic part $\partial\omega+\omega\wedge\omega$ vanishes for the Chern connection, as computed in *Hermitian Vector Bundles and the Chern Connection*, so the curvature is the $(1,1)$-form $\bar\partial\omega$; the component form is the definition of $\bar\partial$ applied to the coefficient function $\Gamma_{ijk}$; the skew-Hermitian property is the metric-compatibility equation differentiated, and the Bianchi identity is the general identity of *The Covariant Derivative*. The sign in the component formula is fixed by the ordering $dz_k\wedge d\bar z_l$ and the convention that $\bar\partial(dz_k)=0$.
 
 ### The Ricci Form and the First Chern Class
 
 **Definition.** The **Ricci form** of the Hermitian metric is
 
 $$
-\rho = \frac{i}{2\pi}\operatorname{tr}\Omega = \frac{i}{2\pi}\sum_i \Omega^i_i .
+\rho = \frac{i}{2\pi}\operatorname{tr}\Omega = \frac{i}{2\pi}\sum_i \Omega_{ii} .
 $$
 
 **Theorem.** The Ricci form is a real closed $(1,1)$-form, given in a holomorphic frame by
@@ -124,13 +124,13 @@ and its de Rham class is the first Chern class of the manifold, $\rho = c_1(T^{1
 
 ### The Kähler Case
 
-**Corollary.** When the manifold is Kähler, the canonical connection equals the Levi-Civita connection, its curvature is the Riemann curvature tensor of the metric in the holomorphic frame, the Ricci form is $\rho = \frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ with the Kähler symmetry $R^i_{jk\bar l} = R^k_{ji\bar l}$, and the Ricci form is the Chern representative of $c_1$. The Ricci form, the Ricci tensor and the scalar curvature of a Kähler manifold are the subject of *Kähler Geometry* in Part IV; the present article supplies the connection, its torsion and its curvature in the general Hermitian case, of which the Kähler case is the torsion-free specialisation.
+**Corollary.** When the manifold is Kähler, the canonical connection equals the Levi-Civita connection, its curvature is the Riemann curvature tensor of the metric in the holomorphic frame, the Ricci form is $\rho = \frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ with the Kähler symmetry $R_{ijk\bar l} = R_{kji\bar l}$, and the Ricci form is the Chern representative of $c_1$. The Ricci form, the Ricci tensor and the scalar curvature of a Kähler manifold are the subject of *Kähler Geometry* in Part IV; the present article supplies the connection, its torsion and its curvature in the general Hermitian case, of which the Kähler case is the torsion-free specialisation.
 
-**Example.** On $\mathbb{C}^n$ with the Euclidean metric, $h_{i\bar j}=\delta_{ij}$, the coefficients $\Gamma^i_{jk}$ vanish, and the canonical connection is the flat one; on the Fubini–Study metric of $\mathbb{CP}^n$ the coefficients are the standard ones and the Ricci form is $\rho = \frac{n+1}{2\pi}\,\omega_{FS}$, so the first Chern class of $\mathbb{CP}^n$ is positive and equals $(n+1)$ times the class of the hyperplane, in agreement with $c(T\mathbb{CP}^n)=(1+x)^{n+1}$ of *Characteristic Classes*.
+**Example.** On $\mathbb{C}^n$ with the Euclidean metric, $h_{i\bar j}=\delta_{ij}$, the coefficients $\Gamma_{ijk}$ vanish, and the canonical connection is the flat one; on the Fubini–Study metric of $\mathbb{CP}^n$ the coefficients are the standard ones and the Ricci form is $\rho = \frac{n+1}{2\pi}\,\omega_{FS}$, so the first Chern class of $\mathbb{CP}^n$ is positive and equals $(n+1)$ times the class of the hyperplane, in agreement with $c(T\mathbb{CP}^n)=(1+x)^{n+1}$ of *Characteristic Classes*.
 
 ## Summary
 
-A Hermitian manifold is a complex manifold with a Hermitian metric on its holomorphic tangent bundle. That bundle is a holomorphic Hermitian bundle, and it carries the canonical (Chern) connection: the unique connection with $\nabla h=0$ and $\nabla^{0,1}=\bar\partial$. In a holomorphic frame the connection coefficients are $\Gamma^i_{jk}=\sum_lh^{i\bar l}\partial/\partial z^j\,h_{k\bar l}$, determined by the metric. The torsion of the connection vanishes exactly in the Kähler case; in general it has a $(2,0)$-part and a $(1,1)$-part, its $(0,2)$-part vanishes, and the connection differs from the Levi-Civita connection by the contorsion tensor built from $\nabla^{LC}J$, which vanishes exactly when the manifold is Kähler.
+A Hermitian manifold is a complex manifold with a Hermitian metric on its holomorphic tangent bundle. That bundle is a holomorphic Hermitian bundle, and it carries the canonical (Chern) connection: the unique connection with $\nabla h=0$ and $\nabla^{0,1}=\bar\partial$. In a holomorphic frame the connection coefficients are $\Gamma_{ijk}=\sum_l(h^{-1})_{i\bar l}\partial/\partial z_j\,h_{k\bar l}$, determined by the metric. The torsion of the connection vanishes exactly in the Kähler case; in general it has a $(2,0)$-part and a $(1,1)$-part, its $(0,2)$-part vanishes, and the connection differs from the Levi-Civita connection by the contorsion tensor built from $\nabla^{LC}J$, which vanishes exactly when the manifold is Kähler.
 
 The curvature of the canonical connection is $\Omega=\bar\partial(h^{-1}\partial h)$, a matrix of $(1,1)$-forms, $h$-skew-Hermitian, and its trace is the Ricci form $\rho=\frac{i}{2\pi}\operatorname{tr}\Omega=-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$, a real closed $(1,1)$-form whose class is the first Chern class of the manifold; it is the curvature of the induced metric on the anticanonical bundle. In the Kähler case the canonical connection is the Levi-Civita connection and the curvature is the Riemann tensor of the metric; the Kähler theory is Part IV's, and the present article is its Hermitian generalisation.
 
@@ -139,15 +139,15 @@ The curvature of the canonical connection is $\Omega=\bar\partial(h^{-1}\partial
 | Symbol | Meaning |
 |---|---|
 | $(M,J,g)$, $\dim_{\mathbb{C}}M=n$ | Hermitian manifold; complex structure and Hermitian metric |
-| $T^{1,0}M$, $\partial/\partial z^i,\partial/\partial\bar z^j$ | Holomorphic tangent bundle and its frame |
-| $h_{i\bar j}=g(\partial/\partial z^i,\partial/\partial\bar z^j)$, $h_{i\bar j}=\overline{h_{j\bar i}}$ | Hermitian metric matrix |
-| $\omega=\frac{i}{2}\sum h_{i\bar j}dz^i\wedge d\bar z^j$ | Fundamental form; $(1,1)$ |
+| $T^{1,0}M$, $\partial/\partial z_i,\partial/\partial\bar z_j$ | Holomorphic tangent bundle and its frame |
+| $h_{i\bar j}=g(\partial/\partial z_i,\partial/\partial\bar z_j)$, $h_{i\bar j}=\overline{h_{j\bar i}}$ | Hermitian metric matrix |
+| $\omega=\frac{i}{2}\sum h_{i\bar j}dz_i\wedge d\bar z_j$ | Fundamental form; $(1,1)$ |
 | Canonical connection | The unique $\nabla$ with $\nabla h=0$ and $\nabla^{0,1}=\bar\partial$ |
-| $\Gamma^i_{jk}=\sum_lh^{i\bar l}\partial/\partial z^j\,h_{k\bar l}$ | Christoffel symbols of the Hermitian metric |
+| $\Gamma_{ijk}=\sum_l(h^{-1})_{i\bar l}\partial/\partial z_j\,h_{k\bar l}$ | Christoffel symbols of the Hermitian metric |
 | $T(X,Y)=\nabla_XY-\nabla_YX-[X,Y]$ | Torsion; $T^{0,2}=0$; vanishes iff Kähler |
 | $A(X,Y)$, contorsion | Difference $\nabla^{Ch}-\nabla^{LC}$, built from $\nabla^{LC}J$ |
 | $\Omega=\bar\partial(h^{-1}\partial h)$ | Curvature forms; $(1,1)$ and skew-Hermitian |
-| $\Omega^i_j=\sum R^i_{j k\bar l}dz^k\wedge d\bar z^l$ | Curvature components in a holomorphic frame |
+| $\Omega_{ij}=\sum R_{ijk\bar l}dz_k\wedge d\bar z_l$ | Curvature components in a holomorphic frame |
 | $\rho=\frac{i}{2\pi}\operatorname{tr}\Omega=-\frac{i}{2\pi}\partial\bar\partial\log\det(h_{i\bar j})$ | Ricci form; class $c_1(T^{1,0}M)$ |
 | $\det T^{1,0}M=K_M^*$ | Anticanonical bundle; curvature of its metric is $\operatorname{tr}\Omega$ |
 

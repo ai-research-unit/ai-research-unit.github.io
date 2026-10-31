@@ -13,22 +13,22 @@ The Clifford algebra, the geometric product, the grade decomposition, the grade 
 
 ### Definition
 
-**Definition.** Let $e_1,\ldots,e_n$ be a basis of $V$ and $e^1,\ldots,e^n$ the reciprocal basis, characterised by $B(e^i,e_j)=\delta^i_j$. The **vector derivative** of a smooth multivector-valued function $F$ on an open set is
+**Definition.** Let $e_1,\ldots,e_n$ be a basis of $V$ and $e_{\mathrm{rec},1},\ldots,e_{\mathrm{rec},n}$ the reciprocal basis, characterised by $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$. The **vector derivative** of a smooth multivector-valued function $F$ on an open set is
 
 $$
-\partial F=\sum_{i=1}^{n}e^i\,\frac{\partial F}{\partial x^i},
+\partial F=\sum_{i=1}^{n}e_{\mathrm{rec},i}\,\frac{\partial F}{\partial x_i},
 $$
 
-and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x^i}e^i$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an underline, as in $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$; the bracket convention is explained in the remark below.
+and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x_i}e_{\mathrm{rec},i}$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an underline, as in $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$; the bracket convention is explained in the remark below.
 
-**Proposition.** The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial/\partial x^i$.
+**Proposition.** The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial/\partial x_i$.
 
-**Proof.** A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e^i,e_j)=\delta^i_j$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.
+**Proof.** A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.
 
-**Example (the derivative of the position vector).** Let $x=\sum_ix^ie_i$, so that $\partial/\partial x^i x=e_i$. Then
+**Example (the derivative of the position vector).** Let $x=\sum_ix_ie_i$, so that $\partial/\partial x_i x=e_i$. Then
 
 $$
-\partial x=\sum_i\exp(i)\partial/\partial x^i\,x=\sum_i\exp(i)e_i=n,
+\partial x=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\,x=\sum_ie_{\mathrm{rec},i}e_i=n,
 $$
 
 the dimension of the space; the derivative of the position vector is the dimension, which is the Clifford form of the statement that the divergence of the position field is the dimension.
@@ -53,7 +53,7 @@ $$
 
 where the underlines indicate the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands.
 
-**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial/\partial x^i\,(AB)=\partial/\partial x^i\,A\,B+A\,\partial/\partial x^i\,B$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the underlines keeping track of which factor each differentiation acts upon.
+**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial/\partial x_i\,(AB)=\partial/\partial x_i\,A\,B+A\,\partial/\partial x_i\,B$; multiplying by $e_{\mathrm{rec},i}$ on the left and using the associativity of the geometric product gives the statement, the underlines keeping track of which factor each differentiation acts upon.
 
 **Remark (the bracket convention).** The underline records both the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands: in the second term $\underline{A}\underline{\partial} B$ the derivative acts on $B$ and the vector factor it produces stands where $A$ stands, which is what the expansion of $\partial(AB)$ in a coordinate basis produces. With this convention the Leibniz rule above is an identity and not a convention.
 
@@ -69,7 +69,7 @@ $$
 
 where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.
 
-**Proof.** In a coordinate system in which the region is described by the inequalities $a_i\le x^i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.
+**Proof.** In a coordinate system in which the region is described by the inequalities $a_i\le x_i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.
 
 ### The Classical Theorems as Grades
 
@@ -113,7 +113,7 @@ $$
 
 in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.
 
-**Proof.** $\partial^2=\bigl(\sum_i\exp(i)\partial/\partial x^i\bigr)\bigl(\sum_j\exp(j)\partial/\partial x^j\bigr)=\sum_{i,j}e^ie^j\,\partial^2/\partial x^i\partial x^j=\sum_i\partial^2/\partial (x^i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\,\partial^2/\partial (x^i)^2=\partial^2/\partial (x^i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
+**Proof.** $\partial^2=\bigl(\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\bigr)\bigl(\sum_je_{\mathrm{rec},j}\partial/\partial x_j\bigr)=\sum_{i,j}e_{\mathrm{rec},i}e_{\mathrm{rec},j}\,\partial^2/\partial x_i\partial x_j=\sum_i\partial^2/\partial (x_i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e_{\mathrm{rec},i}e_{\mathrm{rec},j}+e_{\mathrm{rec},j}e_{\mathrm{rec},i}=2B(e_{\mathrm{rec},i},e_{\mathrm{rec},j})=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e_{\mathrm{rec},i}e_{\mathrm{rec},i}\,\partial^2/\partial (x_i)^2=\partial^2/\partial (x_i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
 
 **Remark.** The converse fails: a harmonic function need not be monogenic, exactly as a harmonic function of two variables need not be holomorphic. The monogenic functions form a much smaller class, and the theory of that class, with the Cauchy integral formula, the Fischer decomposition and the function theory of the Clifford algebras, is the subject of *Clifford Analysis* and of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, where the results are developed.
 
@@ -169,7 +169,7 @@ with $F$ a bivector-valued field and $J$ a vector-valued current encodes the fou
 
 ## Summary
 
-The **vector derivative** is the operator $\partial=\sum_i\exp(i)\partial/\partial x^i$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial/\partial x^i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
+The **vector derivative** is the operator $\partial=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i$, where the $e_{\mathrm{rec},i}$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial/\partial x_i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
 
 The **fundamental theorem of geometric calculus** is
 
@@ -183,8 +183,8 @@ the integral of the derivative of a multivector-valued function over a region eq
 
 | Symbol | Meaning |
 |---|---|
-| $e^i$, $B(e^i,e_j)=\delta^i_j$ | Reciprocal basis |
-| $\partial F=\sum_i\exp(i)\partial/\partial x^i\,F$ | Vector derivative, acting on the right |
+| $e_{\mathrm{rec},i}$, $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$ | Reciprocal basis |
+| $\partial F=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\,F$ | Vector derivative, acting on the right |
 | $F\partial$ | Derivative from the right |
 | $\partial x=n$ | Derivative of the position vector |
 | $\partial\cdot F$, $\partial\wedge F$ | Divergence and curl of a vector field |

@@ -14,7 +14,7 @@ The article assumes the Riemannian metrics, the musical isomorphisms, the volume
 
 The metric provides the musical isomorphisms $\flat : TM \to T^*M$, $X \mapsto g(X,\cdot)$ and its inverse $\sharp$, the metric volume form $\mathrm{vol}_g$ in the chosen orientation, the Hodge star $\star$, the codifferential and the Laplace–Beltrami operator of the operator group, and the length of a curve. All of these are the metric **used as a tool**; the metric as an object — its curvature, its geodesics, its isometries — is *Riemannian Geometry* and *Curvature and Geodesics* in Part IV, and is not developed here.
 
-**Example.** On $\mathbb{R}^n$ the **Euclidean metric** has $g = \sum_i dx^i\otimes dx^i$ in the standard coordinates; on a submanifold of $\mathbb{R}^n$ the **induced metric** is the restriction of the Euclidean metric to the tangent spaces; on a Lie group the **bi-invariant metrics** come from an invariant inner product on the Lie algebra, as in *Lie Groups* in this Part. The flat torus and the round sphere are the two basic closed examples.
+**Example.** On $\mathbb{R}^n$ the **Euclidean metric** has $g = \sum_i dx_i\otimes dx_i$ in the standard coordinates; on a submanifold of $\mathbb{R}^n$ the **induced metric** is the restriction of the Euclidean metric to the tangent spaces; on a Lie group the **bi-invariant metrics** come from an invariant inner product on the Lie algebra, as in *Lie Groups* in this Part. The flat torus and the round sphere are the two basic closed examples.
 
 ## The Fundamental Theorem
 
@@ -27,7 +27,7 @@ $$
 and in a coordinate chart its components are the Christoffel symbols
 
 $$
-\boxed{\;\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr)\;}.
+\boxed{\;\Gamma_{ijk} = \tfrac12 \sum_l (g^{-1})_{il}\bigl(\partial/\partial x_j g_{kl} + \partial/\partial x_k g_{jl} - \partial/\partial x_l g_{jk}\bigr)\;}.
 $$
 
 *Proof.* This is the theorem of *The Covariant Derivative* in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.
@@ -126,7 +126,7 @@ For a metric-compatible connection, preserving the fundamental form, preserving 
 | $\flat, \sharp$ | Musical isomorphisms $TM \leftrightarrow T^*M$ |
 | $\mathrm{vol}_g$, $\star$, $\delta$ | Metric volume form, Hodge star, codifferential |
 | Fundamental theorem, Koszul formula | The unique metric-compatible torsion-free connection |
-| $\Gamma^i_{jk} = \tfrac12g^{il}(\partial/\partial x^j\,g_{kl}+\partial/\partial x^k\,g_{jl}-\partial/\partial x^l\,g_{jk})$ | Christoffel symbols |
+| $\Gamma_{ijk} = \tfrac12(g^{-1})_{il}(\partial/\partial x_j\,g_{kl}+\partial/\partial x_k\,g_{jl}-\partial/\partial x_l\,g_{jk})$ | Christoffel symbols |
 | $J$, $J^2=-\mathrm{id}$ | Almost complex structure; the involution of the tangent spaces |
 | $g(JX,JY)=g(X,Y)$ | Hermitian condition; equivalently $g(JX,Y)=-g(X,JY)$, $J^*=-J$ |
 | $(M,J,g)$ | Hermitian manifold |
