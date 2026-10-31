@@ -71,9 +71,9 @@
         <h1 id="matrix-representations-the-polar-decomposition-of-a-matrix"><strong>Matrix Representations : The Polar Decomposition of a Matrix</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Every invertible matrix is the product of a positive definite matrix and a unitary one. The decomposition is unique, it is a diffeomorphism, and it splits the determinant into modulus and phase. In the biquaternion algebra the two factors have names: the positive factor is the boost, the unitary factor is the rotor, and the determinant carries the scale and the central phase.</p>
-<p>This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the exponential of <em>Matrix Representations : The Functional Calculus</em> and the unitarities of <em>Matrix Representations : The Hermitian Sandwich</em> into a factorisation of every element.</p>
-<p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the Hermitian adjoint of <em>Matrix Representations : The Hermitian Sandwich</em>, and $*$-unitary means $V^{\dagger}V=\mathrm I$.</p>
-<p><strong>Boundaries.</strong> The matrix theorem is <em>Matrix Representations : The Polar Decomposition of a Matrix</em>; the algebra word is <em>The Polar Decomposition of a Biquaternion</em>; the exponential is <em>Matrix Representations : The Functional Calculus</em>; the singular value decomposition is <em>The Singular Value Decomposition of a Biquaternion</em>; the boost and the rotor are <em>The Two Halves</em>.</p>
+<p>This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the matrix exponential and the unitary matrices into a factorisation of every element.</p>
+<p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the conjugate transpose, and $*$-unitary means $V^{\dagger}V=\mathrm I$.</p>
+<p><strong>Boundaries.</strong> The matrix theorem is classical; the algebra word is <em>The Polar Decomposition of a Biquaternion</em>; the determinant split is computed here.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <h3 id="the-theorem">The Theorem</h3>
 <p><strong>The statement.</strong> Every matrix $M$ has a factorisation
@@ -158,7 +158,7 @@ with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the 
 <p><strong>The order.</strong> The decomposition is $M=PV$, positive factor first. The algebra word has the same order, $\tilde Q=\tilde Q_H\tilde Q_0$. The reverse order gives different factors, related by conjugating the unitary factor by the positive one.</p>
 <h3 id="the-singular-case">The Singular Case</h3>
 <p><strong>The partial isometry.</strong> For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank equal to the rank of $M$, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ remains unique if $P$ is required positive semidefinite and $V$ to vanish on the kernel.</p>
-<p><strong>The regular singular stratum.</strong> In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank stratification.</p>
+<p><strong>The regular singular stratum.</strong> In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank.</p>
 <p><strong>The zero matrix.</strong> At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.</p>
 <h2 id="the-coefficient-frame">The Coefficient Frame</h2>
 <h3 id="the-biquaternion-word">The Biquaternion Word</h3>
@@ -259,7 +259,7 @@ s_2=re^{-\eta/2},\qquad
 s_1^2s_2^2=r^4=\lvert\det M\rvert,
 $$
 each repeated twice in the regular display. The singular values coincide exactly when the boost is trivial.</p>
-<p><strong>The rank.</strong> The rank is the number of nonzero singular values counted with multiplicity: four generically, two on the nonzero part of the determinantal variety, zero at the zero matrix. This is twice the rank of the $2\times2$ model, as the rank stratification requires.</p>
+<p><strong>The rank.</strong> The rank is the number of nonzero singular values counted with multiplicity: four generically, two on the nonzero part of the singular set, zero at the zero matrix. This is twice the rank of the $2\times2$ model.</p>
 <p><strong>The normal case.</strong> The multiset of singular values equals the multiset of eigenvalue moduli exactly when $M$ is normal. In the regular display the eigenvalues are doubled, and the condition is the normality of the underlying element.</p>
 <h2 id="summary">Summary</h2>
 <p>Every invertible matrix is uniquely $M=PV$, with $P$ positive definite and $V$ unitary; $P=(MM^{\dagger})^{1/2}$ and $V=P^{-1}M$. In the biquaternion word $M=r\zeta M_bM_r$, with $r>0$, $\lvert\zeta\rvert=1$, $M_b$ a positive Hermitian matrix of determinant one and $M_r\in SU(2)$; the determinant is $r^2\zeta^2$ and the modulus is $\lvert\det M\rvert^{1/2}$. The closed form of the positive factor is the Cayley–Hamilton square root, with the trace in the $2\times2$ display and the half-trace in the regular display. On singular matrices the positive factor is semidefinite and the unitary factor is only a partial isometry. The singular value decomposition diagonalises the positive factor; the singular values are $re^{\pm\eta/2}$, each doubled in the regular display.</p>
@@ -312,9 +312,6 @@ each repeated twice in the regular display. The singular values coincide exactly
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="matrix-representations-the-functional-calculus.html">Matrix Representations : The Functional Calculus</a>, for the square root</li>
-<li><a href="matrix-representations-the-hermitian-sandwich.html">Matrix Representations : The Hermitian Sandwich</a>, for the unitary slice</li>
-<li><a href="matrix-representations-gl2-sl2-and-the-determinant.html">Matrix Representations : GL2, SL2 and the Determinant</a>, for the determinant split</li>
 <li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the displays</li>
 <li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the algebra word</li>
 </ul>

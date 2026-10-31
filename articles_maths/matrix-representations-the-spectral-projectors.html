@@ -81,7 +81,7 @@ $$
 \lambda_\pm=Q_t\pm iB.
 $$
 The projectors are $\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)$ in the $2\times2$ display and $\rho_\pm^{(4)}=\mathsf M_4^L(\tilde\Pi_\pm)$ in the $4\times4$ display.</p>
-<p><strong>Boundaries.</strong> The spectral criterion is <em>The Spectrum</em>; the eigenbasis and the nilpotents are <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>; the diagonalising matrix is <em>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</em>; the degenerate cone is <em>Matrix Representations : Rank-One Matrices and the Determinantal Variety</em>; the Jordan theory of the cone is <em>Nilpotents</em>.</p>
+<p><strong>Boundaries.</strong> The spectral criterion and the spectral basis are <em>The Spectrum</em>; the degenerate cone is the zero-divisor cone of <em>Zero Divisors and Units</em>; the nilpotent theory of the cone is <em>Nilpotents</em>.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <p>A spectrally regular biquaternion has two distinct eigenvalues, and its matrix has two complementary spectral projectors. The construction is the same in every display: choose the spectral direction, build the two idempotents, and map them. The rank and the trace of the projectors change with the display, because the regular model carries each eigenvalue twice.</p>
 <p><strong>The spectral idempotents.</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$ and a chosen square root $B$, and set
@@ -128,7 +128,7 @@ $$
 \qquad
 M=Q_t\mathrm I+iB(\rho_+-\rho_-).
 $$</p>
-<p><strong>The invariants.</strong> In the entry model $\operatorname{Tr}_2M=2Q_t$ and $\det M=N$; in the regular model $\operatorname{Tr}_4M=4Q_t$ and $\det M=N^2$. The factor two in the trace and the square in the determinant are the multiplicity of the spectrum: every eigenvalue is repeated once per spinor plane.</p>
+<p><strong>The invariants.</strong> In the entry model $\operatorname{Tr}_2M=2Q_t$ and $\det M=Q_t^2+B^2$; in the regular model $\operatorname{Tr}_4M=4Q_t$ and $\det M=(Q_t^2+B^2)^2$. The factor two in the trace and the square in the determinant are the multiplicity of the spectrum: every eigenvalue is repeated once per spinor plane.</p>
 <p><strong>The residues.</strong> For $z$ outside the spectrum,
 $$
 (z\mathrm I-M)^{-1}=\frac{\rho_+}{z-\lambda_+}+\frac{\rho_-}{z-\lambda_-},
@@ -149,8 +149,8 @@ $$
 \rho_\pm^{(4)}=\tfrac12\bigl(\mathrm I_4\pm\mathsf M_4^L(\vec\Xi)\bigr)
 =\tfrac12\Bigl(\mathrm I_4\mp\frac{i}{B}\bigl(Q_xL_x+Q_yL_y+Q_zL_z\bigr)\Bigr).
 $$
-They are idempotents of rank two and trace two, complementary and orthogonal, and they commute with $M$. The rank is two because the regular representation carries two copies of the defining module; the trace is two because each copy contributes one.</p>
-<p><strong>The spectral nilpotents.</strong> Let $\vec\Upsilon_\pm^{\mathrm{spec}}$ be the mixed Peirce elements of the spectral eigenbasis. Their images
+They are idempotents of rank two and trace two, complementary and orthogonal, and they commute with $M$. The rank is two because the regular representation carries two copies of the defining $2\times2$ space; the trace is two because each copy contributes one.</p>
+<p><strong>The spectral nilpotents.</strong> Let $\vec\Upsilon_\pm^{\mathrm{spec}}$ be the mixed Peirce elements of the spectral basis. Their images
 $$
 N_\pm=\mathsf M_4^L(\vec\Upsilon_\pm^{\mathrm{spec}})
 $$
@@ -161,7 +161,7 @@ N_+N_-=\rho_-,\qquad
 \rho_+N_-=N_-=N_-\rho_-,\qquad
 \rho_-N_+=N_+=N_+\rho_+.
 $$
-The proof is the application of $\mathsf M_4^L$ to the Peirce relations of the spectral basis. A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$; the two nilpotents are conjugate to each other, and the labels record the mixed corner, not a conjugacy class.</p>
+The proof is the application of $\mathsf M_4^L$ to the Peirce relations of the spectral basis. A nonzero nilpotent of the regular image is conjugate to the direct sum of two square-zero blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$; the two nilpotents are conjugate to each other, and the labels record the mixed corner, not a conjugacy class.</p>
 <p><strong>The standard axis.</strong> On the axis $\vec Q=Q_z\vec e_z$ and $B=Q_z$, the projectors are
 $$
 \rho_+^{(4)}=\operatorname{diag}(E_{22},E_{22}),
@@ -206,7 +206,7 @@ $$
 \rho_\pm M=M\rho_\pm.
 $$
 Since $M\rho_+=\lambda_+\rho_+$, the column space of $\rho_+$ is the whole eigenspace of $\lambda_+$, of dimension one; every nonzero column is an eigenvector. The two eigenspaces are complementary. The projectors are not Hermitian in general: $\rho_\pm^{\dagger}$ is the projector of the conjugate direction, and they are Hermitian exactly when $\vec\Xi$ is Hermitian, in particular on the Hermitian and anti-Hermitian subspaces.</p>
-<p><strong>The nilpotents and the axis.</strong> The spectral nilpotents are $N_\pm^{(2)}=\mathsf M_2(\vec\Upsilon_\pm^{\mathrm{spec}})$, of rank one and square-zero. On the standard axis they are the off-diagonal units $E_{12}$ and $E_{21}$, exchanged; on the cone a nonzero nilpotent is a single Jordan block of rank one.</p>
+<p><strong>The nilpotents and the axis.</strong> The spectral nilpotents are $N_\pm^{(2)}=\mathsf M_2(\vec\Upsilon_\pm^{\mathrm{spec}})$, of rank one and square-zero. On the standard axis they are the off-diagonal units $E_{12}$ and $E_{21}$, exchanged; on the cone a nonzero nilpotent is a single square-zero block of rank one.</p>
 <h2 id="the-peirce-frame">The Peirce Frame</h2>
 <p><strong>The inflation.</strong> Because $\mathsf M_4^L(\vec\Xi)=\mathrm I_2\otimes\mathsf M_2(\vec\Xi)$,
 $$
@@ -266,10 +266,7 @@ Each block carries one copy of the entry nilpotent, and the two copies are the t
 <ul>
 <li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the models and the inflation</li>
 <li><a href="matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html">Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the planes and the column-space caution</li>
-<li><em>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</em>, for the eigenbasis</li>
-<li><em>Matrix Representations : Rank-One Matrices and the Determinantal Variety</em>, for the cone</li>
-<li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the construction</li>
-<li><a href="the-spectrum.html">The Spectrum</a>, for the criterion</li>
+<li><a href="the-spectrum.html">The Spectrum</a>, for the criterion and the spectral basis</li>
 <li><a href="nilpotents.html">Nilpotents</a>, for the nilpotent cone</li>
 </ul>
       </div>

@@ -152,17 +152,17 @@ $$</p>
 $$</p>
 <p>the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-\xi^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.</p>
 <h3 id="the-non-abelian-determinant">The Non-Abelian Determinant</h3>
-<p>For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G^a[\tilde{A}]=\sum_\mu\partial/\partial Q_\mu A_{\mu}^{a}-\omega^a$, the variation under a gauge transformation is</p>
+<p>For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G_a[\tilde{A}]=\sum_\mu\partial/\partial Q_\mu A_{\mu a}-\omega_a$, the variation under a gauge transformation is</p>
 <p>$$
-\frac{\delta G^a[\tilde{A}^\Gamma]}{\delta\Gamma^b} = \sum_\mu\partial/\partial Q_\mu(D_\mu)^{ab},
+\frac{\delta G_a[\tilde{A}^\Gamma]}{\delta\Gamma_b} = \sum_\mu\partial/\partial Q_\mu(D_\mu)_{ab},
 \qquad
-(D_\mu)^{ab}=\partial/\partial Q_\mu\delta^{ab}+g f^{abc}A_\mu^c ,
+(D_\mu)_{ab}=\partial/\partial Q_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c} ,
 $$</p>
 <p>so the determinant is a functional of the potential through the structure constants,</p>
 <p>$$
 \Delta[\tilde{A}] = \det\left(\sum_\mu\partial/\partial Q_\mu D_\mu\right),
 $$</p>
-<p>and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_\mu\bar{c}^a\partial/\partial Q_\mu(D_\mu c)^a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.</p>
+<p>and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_{\mu,a}\bar{c}_a\partial/\partial Q_\mu(D_\mu c)_a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.</p>
 <h2 id="the-gaussian-integral-and-the-propagator">The Gaussian Integral and the Propagator</h2>
 <h3 id="the-quadratic-action">The Quadratic Action</h3>
 <p>With the gauge fixed, the action is quadratic in the potential, and the integral is Gaussian. Writing the gauge-fixed quadratic form in momentum space as</p>
@@ -309,7 +309,7 @@ $$</p>
 <td>Field-dependent determinant; ghosts required</td>
 </tr>
 <tr>
-<td>$(D_\mu)^{ab}=\partial/\partial Q_\mu\delta^{ab}+gf^{abc}A_\mu^c$</td>
+<td>$(D_\mu)_{ab}=\partial/\partial Q_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c}$</td>
 <td>Covariant derivative in the adjoint representation</td>
 </tr>
 <tr>
@@ -339,6 +339,10 @@ $$</p>
 <tr>
 <td>$(D(\xi)-D(\xi_2))_{\mu\nu}j_\nu=0$ for $\sum_\nu p_\nu j_\nu=0$</td>
 <td>Gauge-parameter independence for conserved currents (verified)</td>
+</tr>
+<tr>
+<td>$a,b,c$</td>
+<td>Adjoint colour and ghost indices, written low; every contraction over them is an explicit sum</td>
 </tr>
 </tbody>
 </table></div>

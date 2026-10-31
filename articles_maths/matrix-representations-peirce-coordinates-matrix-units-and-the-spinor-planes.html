@@ -71,7 +71,7 @@
         <h1 id="matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes"><strong>Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. In the $2\times2$ model the four corner coordinates are the four entries of the matrix, and the four corner elements are the four matrix units. In the $4\times4$ regular model the same four elements become rank-two matrices, and the corner matrix is duplicated: the regular matrix is $\operatorname{diag}(B,B)$ in the Peirce frame. The duplication is the two spinor planes, and the $2\times2$ model is the compression of the regular matrix to one of them.</p>
-<p>This article develops the Peirce table, the corner coordinates, the regular matrix as the duplicated corner matrix, the system of matrix units, the two spinor planes, the left and right actions, the column spaces of the idempotents and the nilpotents. It uses no form and no module; the only invariant it reads is the determinant of the corner matrix.</p>
+<p>This article develops the Peirce table, the corner coordinates, the regular matrix as the duplicated corner matrix, the system of matrix units, the two spinor planes, the left and right actions, the column spaces of the idempotents and the nilpotents. It uses no form; the only invariant it reads is the determinant of the corner matrix.</p>
 <p><strong>Conventions.</strong> The algebra and the models are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The standard pair and the standard nilpotents are
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),
@@ -88,8 +88,8 @@ $$
 \mathsf M_4^L(\tilde Q)=\operatorname{diag}\bigl(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q)\bigr)
 =I_2\otimes\mathsf M_2(\tilde Q).
 $$
-The coefficient basis is the conjugate display, related by the Peirce change $C_{\Pi}$.</p>
-<p><strong>Boundaries.</strong> The abstract Peirce decomposition is <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the planes and the exchange are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the right regular matrix is <em>Matrix Representations : The Centraliser and the Double Centraliser</em>; the diagonalising matrix is <em>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</em>.</p>
+The block frame of <em>Matrix Representations : The Models and the Change of Frame</em> is this Peirce frame; the two names denote the same ordered basis. The coefficient basis is the conjugate display, related by the Peirce change $C_{\Pi}$.</p>
+<p><strong>Boundaries.</strong> The abstract Peirce decomposition is <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the planes and the exchange are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the left and right actions are computed in this article.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <p>A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. In the entry model the four corner coordinates are the four entries of the matrix, and the four corner elements are the four matrix units. In the regular model the same four elements become rank-two matrices, and the corner matrix is duplicated. The duplication is the two spinor planes, and the entry model is the compression of the regular matrix to one of them.</p>
 <p><strong>The Peirce table.</strong> The four Peirce elements multiply as the four matrix units:</p>
@@ -217,7 +217,7 @@ a_{21}&a_{22}&0&0\\
 \end{pmatrix}
 =\operatorname{diag}(B,B).
 $$
-The two blocks are identical. The duplication is the regular representation: every element acts on the algebra by left multiplication, and the algebra is the direct sum of two copies of the same module.</p>
+The two blocks are identical. The duplication is the regular representation: every element acts on the algebra by left multiplication, and the algebra is the direct sum of two copies of the same plane.</p>
 <p><strong>The rank-two units.</strong> Each Peirce element goes to
 $$
 \mathsf M_4^L(\tilde\Pi_+)=I_2\otimes E_{11},
@@ -230,7 +230,7 @@ $$
 $$
 of rank two, idempotent or square-zero, spanning four complex dimensions. The regular model carries one system of $2\times2$ units, duplicated; it does not carry the sixteen units of $M_4(\mathbb{C})$.</p>
 <p><strong>The two planes and the actions.</strong> The two blocks are $S_+$ and $S_-$. Left multiplication acts on each by the same $B$ and never mixes them; right multiplication by $\vec\Upsilon_-$ sends $S_+$ to $S_-$ and kills $S_-$, and right multiplication by $\vec\Upsilon_+$ does the reverse. The two maps are inverse on the planes. The column space of $I_2\otimes E_{11}$ is the right Peirce row, spanned by the first and third Peirce coordinates, not the left plane $S_+$; the two groupings of the four entries by columns and by rows are different, and the first column and the first row meet in $E_{11}$ and together span a three-dimensional space that is neither a left plane nor a right plane.</p>
-<p><strong>The nilpotents.</strong> The nilpotents are $\mu\,I_2\otimes E_{12}$ and $\mu\,I_2\otimes E_{21}$, of rank two, square-zero, traceless, and conjugate to the direct sum of two Jordan blocks, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.</p>
+<p><strong>The nilpotents.</strong> The nilpotents are $\mu\,I_2\otimes E_{12}$ and $\mu\,I_2\otimes E_{21}$, of rank two, square-zero, traceless, and conjugate to the direct sum of two square-zero blocks, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.</p>
 <h2 id="summary">Summary</h2>
 <p>The four Peirce elements are one system of $2\times2$ matrix units; in the regular model they become the rank-two matrices $I_2\otimes E_{ij}$, and the corner matrix is duplicated: $\mathsf M_4^L(\tilde Q)=\operatorname{diag}(B,B)$ in the frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The $2\times2$ model is the compression of the regular matrix to one plane. The four Peirce elements are not a system of $4\times4$ units.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -278,9 +278,8 @@ of rank two, idempotent or square-zero, spanning four complex dimensions. The re
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the models, the Peirce change and the compression</li>
-<li><a href="matrix-representations-the-product-the-trace-and-the-determinant.html">Matrix Representations : The Product, the Trace and the Determinant</a>, for the regular matrix and the Peirce frame</li>
-<li><em>Matrix Representations : The Centraliser and the Double Centraliser</em>, for the right regular matrix</li>
+<li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the models, the frame change $C_{\Pi}$ and the compression</li>
+<li><a href="matrix-representations-the-product-the-trace-and-the-determinant.html">Matrix Representations : The Product, the Trace and the Determinant</a>, for the regular matrix and the block frame</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the corners and the table</li>
 <li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the planes and the exchange</li>
 <li><a href="nilpotents.html">Nilpotents</a>, for the nilpotent cone</li>

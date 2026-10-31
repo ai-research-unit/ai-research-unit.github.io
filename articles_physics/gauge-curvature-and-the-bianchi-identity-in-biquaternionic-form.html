@@ -85,7 +85,7 @@
 <h2 id="the-covariant-derivative-and-the-curvature-it-defines">The Covariant Derivative and the Curvature It Defines</h2>
 <p>Let the connection be a one-form with values in the compact factor of the material sector,
 $$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,\vec e_a \in \mathrm{SU}(2), \qquad
+\mathcal{A}_\mu(\tilde{Q}) = \sum_a\mathcal{A}_{\mu a}(\tilde{Q})\,\vec e_a \in \mathrm{SU}(2), \qquad
 \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
 $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
@@ -357,7 +357,7 @@ $$</p>
 <td>Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$</td>
 </tr>
 <tr>
-<td>$\mathcal{A}_\mu = \mathcal{A}_\mu^a \vec e_a \in \mathrm{SU}(2)$</td>
+<td>$\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$</td>
 <td>Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$</td>
 </tr>
 <tr>
@@ -383,6 +383,10 @@ $$</p>
 <tr>
 <td>$F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$</td>
 <td>Adjoint transformation of the curvature</td>
+</tr>
+<tr>
+<td>$a,b$</td>
+<td>colour index of the gauge algebra, written low</td>
 </tr>
 <tr>
 <td>$D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$</td>

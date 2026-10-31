@@ -109,9 +109,9 @@ $$</p>
 <h2 id="the-non-abelian-connection-and-covariant-derivative">The Non-Abelian Connection and Covariant Derivative</h2>
 <p>Let the connection be a one-form with values in this Lie algebra,</p>
 <p>$$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \;\in\; \mathrm{SU}(2), \qquad \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
+\mathcal{A}_\mu(\tilde{Q}) = \sum_a\mathcal{A}_{\mu a}(\tilde{Q})\,e_a \;\in\; \mathrm{SU}(2), \qquad \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
 $$</p>
-<p>with real coefficient functions $\mathcal{A}_\mu^{a}$. The parent's covariant derivative is generalized in the only way that keeps its form,</p>
+<p>with real coefficient functions $\mathcal{A}_{\mu a}$. The parent's covariant derivative is generalized in the only way that keeps its form,</p>
 <p>$$
 D_\mu = \partial/\partial Q_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\nabla} + i\kappa\,\mathcal{A},
 \qquad \kappa = \frac{ϙ}{\hbar},
@@ -377,11 +377,15 @@ $$</p>
 <td>Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$</td>
 </tr>
 <tr>
+<td>$a,b,c$</td>
+<td>colour indices of the gauge algebra, written low</td>
+</tr>
+<tr>
 <td>$\tilde Q(\tilde{Q}) \in SU(2)$</td>
 <td>Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$</td>
 </tr>
 <tr>
-<td>$\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$</td>
+<td>$\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$</td>
 <td>Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$</td>
 </tr>
 <tr>
