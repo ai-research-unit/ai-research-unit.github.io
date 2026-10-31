@@ -76,51 +76,26 @@
 <p><strong>Conventions.</strong> The algebra is that of <em>The Biquaternion Algebra</em>; the displays and the change $C_{\Pi}$ are those of <em>Matrix Representations : The Models and the Change of Frame</em>. Write $\mathsf{M}_4^{L}(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.</p>
 <p><strong>Boundaries.</strong> The determinant as a group homomorphism is <em>Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>; the rank stratification is <em>Matrix Representations : Rank-One Matrices and the Determinantal Variety</em>; the four forms are <em>Matrix Representations : The Four Words and the Four Traces</em>; the basic invariants are <em>Matrix Representations : The Product, the Trace and the Determinant</em>.</p>
 <p><strong>Frame.</strong> This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of <em>Matrix Representations : The Models and the Change of Frame</em>. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.</p>
-<h2 id="the-trace">The Trace</h2>
-<p><strong>The trace is four times the scalar part.</strong></p>
-<p>$$
-\operatorname{Tr}M=4Q_t,\qquad Q_t=\tfrac14\operatorname{Tr}M.
-$$</p>
-<p>The trace kills the vector part and is blind to the two copies: each block contributes $2Q_t$, and the two blocks together contribute $4Q_t$. It is $\mathbb{C}$-linear and invariant under conjugation by units.</p>
-<p><strong>The trace of a power.</strong> Since $M=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)$,</p>
-<p>$$
-\operatorname{Tr}(M^k)=2\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^k\bigr)
-$$</p>
-<p>for every $k\ge1$. The trace of the square is $4(Q_t^2-B^2)=4P$, where $P$ is the plain norm. The trace of the cube is $2(2Q_t^3-6Q_tB^2)=4Q_t(Q_t^2-3B^2)$.</p>
-<p><strong>The trace is not the norm.</strong> It is additive and complex-valued; it does not detect the vector part, and it does not see the doubling except through the factor four. An element with $Q_t=0$ is traceless whatever its vector part.</p>
-<h2 id="the-determinant">The Determinant</h2>
-<p><strong>The determinant is the squared norm.</strong></p>
-<p>$$
-\det M=\langle\tilde Q\rangle_{\natural}^2
-=(Q_t^2+B^2)^2.
-$$</p>
-<p><em>Proof.</em> The block form gives $\det M=\det\mathsf{M}_2(\tilde Q)^2$ and $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
-<p>The determinant is multiplicative, $\det(M_PM_Q)=\det M_P\det M_Q$, and invariant under conjugation, $\det(PMP^{-1})=\det M$. Its modulus is the squared modulus of the norm, and its argument is twice the argument of the norm:
+<h2 id="common-aspects">Common Aspects</h2>
+<p>Every difference between the two sizes follows from one identity, $\mathsf M_4^{L}=\mathrm I_2\otimes\mathsf M_2$: the trace doubles, the determinant squares, the characteristic polynomial squares, and the minimal polynomial does not. The four algebraic norms survive as quarter-traces of words, not as determinants. This section states the laws that hold in every display; the three sections below write them.</p>
+<p><strong>The trace.</strong> The trace is $4Q_t$ in the regular model and $2Q_t$ in the entry model. It kills the vector part and is blind to the two copies: each block contributes $2Q_t$, and the two blocks together $4Q_t$. It is $\mathbb{C}$-linear and invariant under conjugation by units.</p>
+<p><strong>The determinant.</strong> The determinant is the squared norm,
+$$
+\det M=\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2,
+$$
+and the entry determinant is $\langle\tilde Q\rangle_{\natural}$. The determinant is multiplicative and invariant under conjugation. Its modulus is the squared modulus of the norm and its argument is twice the argument of the norm:
 $$
 \lvert\det M\rvert=\lvert\langle\tilde Q\rangle_{\natural}\rvert^2,
 \qquad
 \arg\det M=2\arg\langle\tilde Q\rangle_{\natural}.
 $$</p>
-<p><strong>Invertibility.</strong> The matrix is invertible exactly when the norm is nonzero:
-$$
-M\text{ invertible}\iff\tilde Q\text{ is a unit}\iff\langle\tilde Q\rangle_{\natural}\neq0.
-$$
-The inverse is
-$$
-M^{-1}=\mathsf{M}_4^{L}(\tilde Q^{-1})=\frac{\mathsf{M}_4^{L}(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}}
-=\frac{M^{\mathsf T}}{\langle\tilde Q\rangle_{\natural}},
-$$
-because the transpose is quaternion conjugation in the regular model. Compare the $2\times2$ formula, where the numerator is the adjugate; in the $4\times4$ model the adjugate is degree three and the transpose is the linear object.</p>
-<p><strong>The zero divisors.</strong> A nonzero singular regular matrix has rank two, not rank one. The singular nonzero elements form the null cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, and the zero matrix is its apex. The cone is the determinantal variety of the regular model.</p>
-<h2 id="the-four-norms-as-matrix-invariants">The Four Norms as Matrix Invariants</h2>
-<p>The four algebraic norms are four quarter-traces of words in $M$ and its transpose and dagger.</p>
+<p><strong>Invertibility and the null cone.</strong> The matrix is invertible exactly when the norm is nonzero, and a nonzero singular regular matrix has rank two, never rank one. The singular nonzero elements form the null cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, with the zero matrix as its apex. The cone is the determinantal variety of the regular model.</p>
+<p><strong>The four norms.</strong> The plain, quaternionic, Hermitian and Krein norms are the scalar parts of the products $\tilde Q^2$, $\tilde Q^{\natural}\tilde Q$, $\tilde Q^{*}\tilde Q$ and $\tilde Q^{\natural}\tilde Q^{*}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Norm</th>
 <th>Algebra value</th>
-<th>Matrix formula</th>
-<th>Value ring</th>
 <th>Definite</th>
 </tr>
 </thead>
@@ -128,103 +103,125 @@ because the transpose is quaternion conjugation in the regular model. Compare th
 <tr>
 <td>Plain $P$</td>
 <td>$Q_t^2-Q_x^2-Q_y^2-Q_z^2$</td>
-<td>$\tfrac14\operatorname{Tr}(M^2)$</td>
-<td>$\mathbb{C}$</td>
 <td>no</td>
 </tr>
 <tr>
 <td>Quaternionic $N$</td>
 <td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$</td>
-<td>$\mathbb{C}$</td>
 <td>no</td>
 </tr>
 <tr>
 <td>Hermitian $H$</td>
 <td>$\sum_\mu\lvert Q_\mu\rvert^2$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\dagger}M)$</td>
-<td>$\mathbb{R}$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Krein $K$</td>
 <td>$\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$</td>
-<td>$\mathbb{R}$</td>
 <td>no</td>
 </tr>
 </tbody>
 </table></div>
-<p><em>Proof.</em> The block form and the identities $M^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4^{L}(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part.</p>
-<p><strong>The quaternionic norm is not the determinant.</strong> In the $2\times2$ model $\det\mathsf{M}_2(\tilde Q)=N$. In the $4\times4$ model $\det M=N^2$, and $N$ itself is the quarter-trace of $M^{\mathsf T}M$. The determinant is the square of the norm because the regular representation contains two copies of the defining module; the norm is recovered from the matrix by a word, not by the determinant.</p>
-<p><strong>The signatures.</strong> The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on the real algebra; the plain and quaternionic norms are complex-valued and have no sign. The table is the regular-model form of the four-norm table of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
-<p><strong>The $2\times2$ normalization.</strong> In the entry model the same four norms are half-traces:</p>
+<p>The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on the real algebra; the plain and quaternionic norms are complex-valued and have no sign.</p>
+<p><strong>The characteristic and minimal polynomials.</strong> The characteristic polynomial of the operator is the square of the entry characteristic polynomial. Its roots are $\lambda_\pm=Q_t\pm iB$, each of algebraic multiplicity two, and they are distinct exactly when $B^2\neq0$. The minimal polynomial is $t-Q_t$ for a scalar and $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ otherwise, of degree two even when the eigenvalues coincide. The regular matrix is never nonderogatory.</p>
+<p><strong>The Euclidean norm.</strong> $\lVert\tilde Q\rVert_E=\sqrt{H}$, and $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality $\lvert N\rvert\le H$ is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly when the four squares are non-negative real multiples of one another. Normality does not force equality: $\tilde Q=e_t+i\vec e_x$ is normal, with $N=0$ and $H=2$.</p>
+<h2 id="the-math52-frame">The $S_3$ Frame</h2>
+<p><strong>The trace and its powers.</strong> In the coefficient frame $M=\mathsf M_4^{L}(\tilde Q)$ and $\operatorname{Tr}M=4Q_t$, so $Q_t=\tfrac14\operatorname{Tr}M$. Since $M=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$,</p>
+<p>$$
+\operatorname{Tr}(M^k)=2\operatorname{Tr}\bigl(\mathsf M_2(\tilde Q)^k\bigr)
+$$</p>
+<p>for every $k\ge1$. The trace of the square is $4(Q_t^2-B^2)=4P$, and the trace of the cube is $4Q_t(Q_t^2-3B^2)$.</p>
+<p><strong>The determinant and the inverse.</strong> The determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the inverse is
+$$
+M^{-1}=\mathsf M_4^{L}(\tilde Q^{-1})=\frac{\mathsf M_4^{L}(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}}
+=\frac{M^{\mathsf T}}{\langle\tilde Q\rangle_{\natural}},
+$$
+because the transpose is quaternion conjugation in the coefficient frame. The numerator is the transpose, not the adjugate: the adjugate of a $4\times4$ matrix is homogeneous of degree three, while $\mathsf M_4^{L}(\tilde Q^{\natural})$ is linear.</p>
+<p><strong>The characteristic polynomial.</strong> Written out,
+$$
+\chi_M(t)=\bigl(t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}\bigr)^2
+=t^4-4Q_tt^3+(4Q_t^2+2\langle\tilde Q\rangle_{\natural})t^2-4Q_t\langle\tilde Q\rangle_{\natural}t+\langle\tilde Q\rangle_{\natural}^2.
+$$
+Cayley–Hamilton gives $M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=0$, the block form of the entry identity; the degree-four identity is its square and carries no additional information.</p>
+<p><strong>The four norms.</strong> They are the quarter-traces of the four words:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Norm</th>
+<th>Matrix formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain $P$</td>
+<td>$\tfrac14\operatorname{Tr}(M^2)$</td>
+</tr>
+<tr>
+<td>Quaternionic $N$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$</td>
+</tr>
+<tr>
+<td>Hermitian $H$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\dagger}M)$</td>
+</tr>
+<tr>
+<td>Krein $K$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each reduces to the scalar part of the corresponding product: $\tilde Q^{\natural}\tilde Q=Ne_t$, $\tilde Q^{*}\tilde Q=He_t$ and $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The determinant is the square of the quaternionic norm; the norm itself is recovered by the word $M^{\mathsf T}M$, not by the determinant.</p>
+<h2 id="the-math79-math80-frame">The $2\times2$ $z$ Frame</h2>
+<p><strong>The invariants.</strong> In the entry model, with $X=\mathsf M_2(\tilde Q)$,</p>
+<p>$$
+\operatorname{tr}X=2Q_t,\qquad
+\det X=\langle\tilde Q\rangle_{\natural},
+\qquad
+X^{-1}=\frac{\operatorname{adj}X}{\langle\tilde Q\rangle_{\natural}}.
+$$</p>
+<p>The inverse formula is the matrix form of $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$: the adjugate is the image of ${}^{\natural}$.</p>
+<p><strong>The characteristic polynomial.</strong> It is the biquadratic itself,
+$$
+\chi_X(t)=t^2-2Q_tt+\langle\tilde Q\rangle_{\natural},
+$$
+with roots $\lambda_\pm=Q_t\pm iB$. Its discriminant is $-4B^2$, so the roots are distinct exactly when $B^2\neq0$. The minimal polynomial is the characteristic polynomial for a non-scalar element, and $t-Q_t$ for a scalar.</p>
+<p><strong>The four norms.</strong> The entry model computes them by half-traces:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Norm</th>
 <th>$2\times2$ formula</th>
-<th>$4\times4$ formula</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Plain $P$</td>
 <td>$\tfrac12\operatorname{tr}(X^2)$</td>
-<td>$\tfrac14\operatorname{Tr}(M^2)$</td>
 </tr>
 <tr>
 <td>Quaternionic $N$</td>
 <td>$\tfrac12\operatorname{tr}(X^{\mathsf T}X)$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$</td>
 </tr>
 <tr>
 <td>Hermitian $H$</td>
 <td>$\tfrac12\operatorname{tr}(X^{\dagger}X)$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\dagger}M)$</td>
 </tr>
 <tr>
 <td>Krein $K$</td>
 <td>$\tfrac12\operatorname{tr}(X^{\mathsf T}X^{\dagger})$</td>
-<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$</td>
 </tr>
 </tbody>
 </table></div>
-<p>with $X=\mathsf M_2(\tilde Q)$ and $M=\mathsf M_4^{L}(\tilde Q)$. The values are the same; the trace that produces them is the trace of the display. The factor is $\tfrac12$ in the entry model and $\tfrac14$ in the operator model, because the identity has trace $2$ and $4$.</p>
-<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
-<p><strong>The $2\times2$ characteristic polynomial is the biquadratic itself.</strong> In the entry model,</p>
+<p>The values are the same as in the regular model. The factor is $\tfrac12$ rather than $\tfrac14$ because the identity has trace $2$ rather than $4$.</p>
+<h2 id="the-math103-math104-frame">The $4\times4$ $z$ Frame</h2>
+<p><strong>The block invariants.</strong> In the Peirce frame $M=\operatorname{diag}(B,B)$ with $B=\mathsf M_2(\tilde Q)$. The trace is $2\operatorname{tr}B=4Q_t$, the determinant is $\det(B)^2=\langle\tilde Q\rangle_{\natural}^2$, and the inverse is $\operatorname{diag}(B^{-1},B^{-1})$. Every invariant is the entry invariant read twice, with the trace doubled and the determinant squared.</p>
+<p><strong>The spectrum.</strong> The block matrix has the spectrum of $B$, each eigenvalue twice. The characteristic polynomial is $\chi_B(t)^2$, with roots $\lambda_\pm$ of multiplicity two. The minimal polynomial is $\chi_B(t)$ itself, of degree two, because the two blocks are equal: the operator is never nonderogatory.</p>
+<p><strong>The four norms.</strong> The quarter-traces of the block words are the half-traces of the entry words, because $\operatorname{Tr}(\mathrm I_2\otimes W)=2\operatorname{tr}W$. The four norms are therefore the same numbers, computed at twice the size with half the normalization:</p>
 <p>$$
-\chi_X(t)=t^2-2Q_tt+\langle\tilde Q\rangle_{\natural},
+\tfrac14\operatorname{Tr}(M^2)=\tfrac12\operatorname{tr}(B^2),
 $$</p>
-<p>with the two roots $\lambda_\pm=Q_t\pm iB$. The $4\times4$ polynomial below is its square, and the minimal polynomial of the operator is the $2\times2$ polynomial itself.</p>
-<p><strong>The characteristic polynomial is the square of the biquadratic.</strong></p>
-<p>$$
-\chi_M(t)=\bigl(t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}\bigr)^2
-=t^4-4Q_tt^3+(4Q_t^2+2\langle\tilde Q\rangle_{\natural})t^2-4Q_t\langle\tilde Q\rangle_{\natural}t+\langle\tilde Q\rangle_{\natural}^2.
-$$</p>
-<p><em>Proof.</em> The block form gives $\chi_M(t)=\chi_{\mathsf{M}_2(\tilde Q)}(t)^2$.</p>
-<p>The roots are $\lambda_+=Q_t+iB$ and $\lambda_-=Q_t-iB$, each of algebraic multiplicity two. The discriminant of the quadratic factor is $-4B^2$, so the eigenvalues are distinct exactly when $B^2\neq0$. When $B^2=0$, the four eigenvalues coincide at $Q_t$.</p>
-<p><strong>The minimal polynomial does not square.</strong> If $\tilde Q$ is scalar, the minimal polynomial is $t-Q_t$. If $\tilde Q$ is not scalar, the minimal polynomial is
-$$
-t^2-2Q_tt+\langle\tilde Q\rangle_{\natural},
-$$
-of degree two, even when the eigenvalues coincide. The regular matrix is never nonderogatory: its minimal polynomial has degree at most two, while its characteristic polynomial has degree four.</p>
-<p><strong>Cayley–Hamilton.</strong> The matrix satisfies
-$$
-M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=0,
-$$
-and therefore also $\chi_M(M)=0$. The degree-two identity is the block form of the $2\times2$ Cayley–Hamilton identity; the degree-four identity is its square and carries no additional information.</p>
-<h2 id="the-determinant-and-the-euclidean-norm">The Determinant and the Euclidean Norm</h2>
-<p>Over $\mathbb{C}$ the determinant is a complex volume. Its modulus is the real volume of the image of the unit cube, and its argument is twice the phase of the linear map. On the Hermitian and anti-Hermitian subspaces the norm is real, so the determinant is real and non-negative. On the null cone the volume vanishes.</p>
-<p>The Euclidean norm of the element is
-$$
-\lVert\tilde Q\rVert_E=\sqrt{H}=\sqrt{\sum_\mu\lvert Q_\mu\rvert^2},
-$$
-and the modulus of the determinant is $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality
-$$
-\lvert N\rvert\le H
-$$
-is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly when the four squares are non-negative real multiples of one another, that is, when all four coefficients lie on one real line through the origin. Normality does not force equality: $\tilde Q=e_t+i\vec e_x$ is normal, with $N=0$ and $H=2$.</p>
+<p>and likewise for $M^{\mathsf T}M$, $M^{\dagger}M$ and $M^{\mathsf T}M^{\dagger}$.</p>
+<p><strong>The singular locus.</strong> The singular nonzero matrices are exactly the block matrices with $\det B=0$ and $B\neq0$, of rank two. The null cone is the set $\{\langle\tilde Q\rangle_{\natural}=0\}$, and the block display shows its cause: the two identical blocks vanish together, so the rank drops from four to two and never to one or three.</p>
 <h2 id="summary">Summary</h2>
 <p>The trace is $4Q_t$ and the determinant is the squared norm $\langle\tilde Q\rangle_{\natural}^2$. The four algebraic norms are quarter-traces of the words $M^2$, $M^{\mathsf T}M$, $M^{\dagger}M$ and $M^{\mathsf T}M^{\dagger}$. The characteristic polynomial is the square of the $2\times2$ one, with eigenvalues $\lambda_\pm$ doubled, while the minimal polynomial keeps degree at most two. The singular nonzero matrices have rank two and form the null cone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

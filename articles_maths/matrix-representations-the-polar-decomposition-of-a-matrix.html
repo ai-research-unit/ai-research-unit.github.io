@@ -74,7 +74,8 @@
 <p>This article develops the matrix theorem, the closed form of the positive factor, the biquaternion word, the two halves, the singular case and the singular value decomposition. It is the article that turns the exponential of <em>Matrix Representations : The Functional Calculus</em> and the unitarities of <em>Matrix Representations : The Hermitian Sandwich</em> into a factorisation of every element.</p>
 <p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the Hermitian adjoint of <em>Matrix Representations : The Hermitian Sandwich</em>, and $*$-unitary means $V^{\dagger}V=\mathrm I$.</p>
 <p><strong>Boundaries.</strong> The matrix theorem is <em>Matrix Representations : The Polar Decomposition of a Matrix</em> and <em>Matrix Representations : The Polar Decomposition of a Matrix</em>; the algebra word is <em>The Polar Decomposition of a Biquaternion</em>; the exponential is <em>Matrix Representations : The Functional Calculus</em>; the singular value decomposition is <em>The Singular Value Decomposition of a Biquaternion</em>; the boost and the rotor are <em>The Two Halves</em>.</p>
-<h2 id="the-theorem">The Theorem</h2>
+<h2 id="common-aspects">Common Aspects</h2>
+<h3 id="the-theorem">The Theorem</h3>
 <p><strong>The statement.</strong> Every matrix $M$ has a factorisation
 $$
 M=PV,
@@ -108,7 +109,7 @@ P=L(\tilde Q_H),\qquad V=L(\tilde Q_0),
 \qquad
 \tilde Q_H=\tilde Q_H^{*}\ge0,\quad \tilde Q_0^{*}\tilde Q_0=e_t .
 $$</p>
-<h2 id="the-closed-form-of-the-positive-factor">The Closed Form of the Positive Factor</h2>
+<h3 id="the-closed-form-of-the-positive-factor">The Closed Form of the Positive Factor</h3>
 <p><strong>The square root of a Hermitian matrix.</strong> For a Hermitian $Y$ with non-negative eigenvalues $a,b$, not both zero, the positive square root is a degree-one polynomial:
 $$
 Y^{1/2}=\frac{Y+\sqrt{ab}\,\mathrm I}{\sqrt{a+b+2\sqrt{ab}}} .
@@ -135,7 +136,32 @@ V=P^{-1}M=\frac{\sqrt{\operatorname{Tr}(MM^{\dagger})+2\lvert\det M\rvert}}
 {MM^{\dagger}+\lvert\det M\rvert\,\mathrm I_2}\,M
 $$
 in the $2\times2$ display, and the same expression with the half-trace in the regular display. For singular $M$ the inverse is replaced by the Moore–Penrose inverse $P^{+}$ and $V$ is a partial isometry.</p>
-<h2 id="the-biquaternion-word">The Biquaternion Word</h2>
+<h3 id="the-two-halves">The Two Halves</h3>
+<p><strong>The boost.</strong> A positive Hermitian matrix of determinant one is the exponential of a traceless Hermitian matrix:
+$$
+M_b=\exp(H),\qquad H=H^{\dagger},\quad\operatorname{Tr}H=0 .
+$$
+Writing $H=\tfrac{\eta}{2}\hat u\cdot\Sigma$ with $\hat u$ a unit spatial direction and $\eta\in\mathbb{R}$,
+$$
+L(H_b)=\operatorname{diag}(M_b,M_b),
+$$
+with eigenvalues $e^{\pm\eta/2}$, each twice. The parameter $\eta$ is the rapidity and $\hat u$ the direction. In the algebra it is the Hermitian unit-norm element $\exp(\tfrac{\eta}{2}i\hat u\cdot\vec e)$.</p>
+<p><strong>The rotor.</strong> A special unitary matrix is the exponential of a traceless anti-Hermitian matrix:
+$$
+M_r=\exp(K),\qquad K=-K^{\dagger},\quad\operatorname{Tr}K=0 .
+$$
+Writing $K=-\tfrac{i\theta}{2}\hat u\cdot\Sigma$,
+$$
+L(M_r)=\operatorname{diag}(M_r,M_r),
+$$
+with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the angle and $\hat u$ the axis. In the algebra it is the rotor $\exp(\tfrac{\theta}{2}\hat u\cdot\vec e)$.</p>
+<p><strong>The order.</strong> The decomposition is $M=PV$, positive factor first. The algebra word has the same order, $\tilde Q=\tilde Q_H\tilde Q_0$. The reverse order gives different factors, related by conjugating the unitary factor by the positive one.</p>
+<h3 id="the-singular-case">The Singular Case</h3>
+<p><strong>The partial isometry.</strong> For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank equal to the rank of $M$, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ remains unique if $P$ is required positive semidefinite and $V$ to vanish on the kernel.</p>
+<p><strong>The regular singular stratum.</strong> In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank stratification.</p>
+<p><strong>The zero matrix.</strong> At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.</p>
+<h2 id="the-math89-frame">The $S_3$ Frame</h2>
+<h3 id="the-biquaternion-word">The Biquaternion Word</h3>
 <p><strong>The factorisation.</strong> For a regular element,
 $$
 M=r\,\zeta\,M_bM_r,
@@ -197,31 +223,23 @@ L(\tilde Q)=r\zeta\,L(\tilde Q_H)\,L(\tilde Q_0),
 $$
 with $L(\tilde Q_H)=\operatorname{diag}(M_b,M_b)$ and $L(\tilde Q_0)=\operatorname{diag}(M_r,M_r)$. The two factors act identically on the two minimal left ideals.</p>
 <p><strong>The two real forms.</strong> The positive factor is Hermitian and non-compact; the unitary factor is compact. The decomposition is the matrix form of the Cartan decomposition of the group of units, and the two factors are the two real forms of the algebra.</p>
-<h2 id="the-two-halves">The Two Halves</h2>
-<p><strong>The boost.</strong> A positive Hermitian matrix of determinant one is the exponential of a traceless Hermitian matrix:
+<h2 id="the-math120-math121-frame">The $2\times2$ $z$ Frame</h2>
+<p><strong>The entry formula.</strong> In the entry model the decomposition is $B=PV$, with
 $$
-M_b=\exp(H),\qquad H=H^{\dagger},\quad\operatorname{Tr}H=0 .
+P=(BB^{\dagger})^{1/2}=\frac{BB^{\dagger}+\lvert\det B\rvert\,\mathrm I_2}
+{\sqrt{\operatorname{Tr}(BB^{\dagger})+2\lvert\det B\rvert}},
+\qquad
+V=P^{-1}B
 $$
-Writing $H=\tfrac{\eta}{2}\hat u\cdot\Sigma$ with $\hat u$ a unit spatial direction and $\eta\in\mathbb{R}$,
+for invertible $B$. The formula is the Cayley–Hamilton square root: the positive factor is a degree-one polynomial in $BB^{\dagger}$, and the trace in the denominator is the $2\times2$ trace. For singular $B$ the inverse is replaced by the Moore–Penrose inverse and $V$ is a partial isometry.</p>
+<p><strong>The word in the entry model.</strong> With $B=r\zeta M_bM_r$ and $r>0$, $\lvert\zeta\rvert=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$, the determinant is $\det B=r^2\zeta^2$ and the modulus is $r^2$. The positive factor is $rM_b$ and the unitary factor is $\zeta M_r$.</p>
+<p><strong>The singular values.</strong> The eigenvalues of $rM_b$ are $re^{\pm\eta/2}$, so
 $$
-L(H_b)=\operatorname{diag}(M_b,M_b),
+s_1=re^{\eta/2},\qquad s_2=re^{-\eta/2},\qquad s_1s_2=r^2=\lvert\det B\rvert.
 $$
-with eigenvalues $e^{\pm\eta/2}$, each twice. The parameter $\eta$ is the rapidity and $\hat u$ the direction. In the algebra it is the Hermitian unit-norm element $\exp(\tfrac{\eta}{2}i\hat u\cdot\vec e)$.</p>
-<p><strong>The rotor.</strong> A special unitary matrix is the exponential of a traceless anti-Hermitian matrix:
-$$
-M_r=\exp(K),\qquad K=-K^{\dagger},\quad\operatorname{Tr}K=0 .
-$$
-Writing $K=-\tfrac{i\theta}{2}\hat u\cdot\Sigma$,
-$$
-L(M_r)=\operatorname{diag}(M_r,M_r),
-$$
-with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the angle and $\hat u$ the axis. In the algebra it is the rotor $\exp(\tfrac{\theta}{2}\hat u\cdot\vec e)$.</p>
-<p><strong>The order.</strong> The decomposition is $M=PV$, positive factor first. The algebra word has the same order, $\tilde Q=\tilde Q_H\tilde Q_0$. The reverse order gives different factors, related by conjugating the unitary factor by the positive one.</p>
-<h2 id="the-singular-case">The Singular Case</h2>
-<p><strong>The partial isometry.</strong> For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank equal to the rank of $M$, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ remains unique if $P$ is required positive semidefinite and $V$ to vanish on the kernel.</p>
-<p><strong>The regular singular stratum.</strong> In the regular image the nonzero singular matrices have rank two, so $P$ and $V$ have rank two and the product has rank two. The decomposition preserves the rank stratification.</p>
-<p><strong>The zero matrix.</strong> At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.</p>
-<h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
+The rank is two when $r\neq0$, one on the nonzero singular stratum and zero at $B=0$. The singular values coincide exactly when the boost is trivial, and their multiset equals the multiset of eigenvalue moduli exactly when $B$ is normal.</p>
+<h2 id="the-math144-math145-frame">The $4\times4$ $z$ Frame</h2>
+<h3 id="the-singular-value-decomposition">The Singular Value Decomposition</h3>
 <p><strong>The theorem.</strong> Every $M$ factors as
 $$
 M=U\Sigma V^{\dagger},

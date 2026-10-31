@@ -89,7 +89,8 @@ Q_z=\tfrac{i(a-d)}{2}.
 $$
 The regular matrix is $X=L(\tilde Q)=\operatorname{diag}(A,A)$ in the Peirce frame. The variable of the characteristic polynomial is $t$, and the eigenvalues of $A$ are $\lambda_\pm$.</p>
 <p><strong>Boundaries.</strong> The construction is <em>Matrix Representations : The Models and the Change of Frame</em>; the spectral theory is <em>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</em> and <em>Matrix Representations : The Jordan Basis and the Jordanising Matrix</em>; the polar factors are <em>Matrix Representations : The Polar Decomposition of a Matrix</em>; the rank-one theory is <em>Matrix Representations : Rank-One Matrices and the Determinantal Variety</em>; the group theory is <em>Matrix Representations : GL2, SL2 and the Determinant</em>.</p>
-<h2 id="the-method">The Method</h2>
+<h2 id="common-aspects">Common Aspects</h2>
+<h3 id="the-method">The Method</h3>
 <p><strong>The invariants.</strong> Put $\tau=\operatorname{Tr}A$ and $\delta=\det A$. Then
 $$
 p_A(t)=t^2-\tau t+\delta=(t-\lambda_+)(t-\lambda_-),
@@ -145,7 +146,7 @@ $$
 \operatorname{rank}X=2\operatorname{rank}A,
 $$
 and every eigenvalue and every Jordan block is doubled. The minimal polynomial is unchanged, and the flags are read blockwise.</p>
-<h2 id="the-eight-matrices">The Eight Matrices</h2>
+<h3 id="the-eight-matrices">The Eight Matrices</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -225,67 +226,7 @@ and every eigenvalue and every Jordan block is doubled. The minimal polynomial i
 </tbody>
 </table></div>
 <p>The coordinates are the four complex numbers $Q_\mu$ of the block, not the four entries. The regular matrix is $X=\operatorname{diag}(A,A)$.</p>
-<h2 id="the-scalar">The Scalar</h2>
-<p><strong>Entry model.</strong> $A=2\mathrm I_2$, $\tilde Q=2e_t$. Then $\operatorname{Tr}A=4$, $\det A=4$, $p_A(t)=(t-2)^2$, $m_A(t)=t-2$, and the rank is two.</p>
-<p><strong>Regular model.</strong> $X=2\mathrm I_4$. Then $\operatorname{Tr}X=8$, $\det X=16$, $p_X(t)=(t-2)^4$, $m_X(t)=t-2$, and the rank is four.</p>
-<p><strong>Reading.</strong> The scalar is the only matrix whose minimal polynomial has degree one. It is normal, Hermitian and central; it is $*$-unitary only when $\lvert\lambda\rvert=1$, which fails here.</p>
-<h2 id="the-jordan-block">The Jordan Block</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, with $Q_t=1$, $Q_x=\tfrac{i}{2}$, $Q_y=-\tfrac12$, $Q_z=0$. Then $\operatorname{Tr}A=2$, $\det A=1$, $p_A(t)=(t-1)^2$, $m_A(t)=(t-1)^2$, and the rank is two. The spectral projector is the whole matrix, and there is no eigenbasis.</p>
-<p><strong>Regular model.</strong> $X=J\oplus J$ has $\operatorname{Tr}X=4$, $\det X=1$, $p_X(t)=(t-1)^4$ and $m_X(t)=(t-1)^2$; the rank is four. The Jordan form has two blocks of size two, not one block of size four.</p>
-<p><strong>Reading.</strong> The block is neither diagonalisable nor normal. It lies in $SL_2(\mathbb{C})$ and its regular image in the image of $SL_2$.</p>
-<h2 id="the-distinct-eigenvalues">The Distinct Eigenvalues</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ has $\tau=5$, $\delta=-2$, so
-$$
-\lambda_\pm=\frac{5\pm\sqrt{33}}{2},\qquad
-p_A(t)=t^2-5t-2,\qquad m_A(t)=p_A(t).
-$$
-The spectral projectors are
-$$
-\Pi_\pm=\pm\frac{A-\lambda_\mp\mathrm I_2}{\sqrt{33}},
-$$
-they are idempotent and not Hermitian, because $A$ is not normal.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=10$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice. The projectors are $\operatorname{diag}(\Pi_\pm,\Pi_\pm)$, of rank two.</p>
-<p><strong>Reading.</strong> The matrix is diagonalisable and not normal. It lies in $GL_2(\mathbb{C})$ with determinant $-2$, so it is not in $SL_2$.</p>
-<h2 id="the-singular-matrix">The Singular Matrix</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}2&0\\0&0\end{pmatrix}$ has $\tau=2$, $\delta=0$, $p_A(t)=t(t-2)$, $m_A(t)=p_A(t)$, and rank one. The kernel is $\mathbb{C}e_2$ and the image is $\mathbb{C}e_1$. The Moore–Penrose inverse is $\operatorname{diag}(\tfrac12,0)$, and the polar factor is $V=\operatorname{diag}(1,0)$, a partial isometry.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=4$, $\det X=0$, rank two, kernel $\mathbb{C}e_2\oplus\mathbb{C}e_4$ and image $\mathbb{C}e_1\oplus\mathbb{C}e_3$.</p>
-<p><strong>Reading.</strong> The matrix is Hermitian, normal and a scaled projector. It is singular, so its polar factor is only a partial isometry. It is not $*$-unitary.</p>
-<h2 id="the-rank-one-matrix">The Rank-One Matrix</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&2\\3&6\end{pmatrix}=uv^{\mathsf T}$ with $u=(1,3)^{\mathsf T}$ and $v=(1,2)^{\mathsf T}$. Then $\tau=7$, $\delta=0$, $v^{\mathsf T}u=7$, and
-$$
-P=\frac{A}{7}
-$$
-is the rank-one idempotent with image $\mathbb{C}u$ and kernel $\ker v^{\mathsf T}$. The two strata: the matrix is non-pure because $v^{\mathsf T}u\neq0$.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=14$, rank two, and is the double of the idempotent up to scale. Its image is $\mathbb{C}u\oplus\mathbb{C}u$ and its kernel is the complementary plane.</p>
-<p><strong>Reading.</strong> The matrix is diagonalisable, not normal, and not Hermitian. It differs from the singular example exactly by the normality flag: the singular example is a scaled Hermitian projector, the rank-one example a scaled non-Hermitian idempotent.</p>
-<h2 id="the-math191-unitary-matrix">The $*$-Unitary Matrix</h2>
-<p><strong>Entry model.</strong> $A=\tfrac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ has $A^{\dagger}A=\mathrm I_2$, $\tau=\sqrt2$, $\delta=1$, and
-$$
-p_A(t)=t^2-\sqrt2\,t+1,\qquad
-\lambda_\pm=e^{\pm i\pi/4}.
-$$
-The eigenvalues have modulus one. The matrix lies in $SU(2)$.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2\sqrt2$, $\det X=1$, the same minimal polynomial, and each eigenvalue twice. It is $*$-unitary.</p>
-<p><strong>Reading.</strong> The matrix is normal and not Hermitian. Its polar decomposition is $P=\mathrm I_2$ and $V=A$.</p>
-<h2 id="the-hermitian-matrix">The Hermitian Matrix</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}2&1-i\\1+i&-1\end{pmatrix}$ has $A=A^{\dagger}$, $\tau=1$, $\delta=-4$, and
-$$
-p_A(t)=t^2-t-4,\qquad
-\lambda_\pm=\frac{1\pm\sqrt{17}}{2}.
-$$
-The eigenvalues are real and distinct, the spectral projectors are Hermitian, and the eigenbasis is orthonormal.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2$, $\det X=16$, the same minimal polynomial, and each eigenvalue twice. It is Hermitian of rank four.</p>
-<p><strong>Reading.</strong> The matrix is Hermitian and normal. Its polar factor is $P=\lvert A\rvert$ and its unitary factor is the sign of $A$.</p>
-<h2 id="the-normal-matrix">The Normal Matrix</h2>
-<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&1\\-1&1\end{pmatrix}$ has $AA^{\dagger}=A^{\dagger}A$, $\tau=2$, $\delta=2$, and
-$$
-p_A(t)=t^2-2t+2,\qquad
-\lambda_\pm=1\pm i .
-$$
-The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a matrix in $SU(2)$.</p>
-<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=4$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice.</p>
-<p><strong>Reading.</strong> The matrix is the example that separates normality from the two stronger flags. Its polar decomposition is $P=\sqrt2\,\mathrm I_2$ and $V=A/\sqrt2\in SU(2)$.</p>
-<h2 id="the-pattern">The Pattern</h2>
+<h3 id="the-pattern">The Pattern</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -378,6 +319,84 @@ The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $
 <p><strong>The rank reading.</strong> The singular example and the rank-one example both have determinant zero. The first is a Hermitian projector up to scale, the second a non-Hermitian idempotent up to scale. The difference is the normality flag.</p>
 <p><strong>The group reading.</strong> The $*$-unitary example lies in $SU(2)$; the normal example is $\sqrt2$ times an element of $SU(2)$; the Jordan block lies in $SL_2(\mathbb{C})$; the distinct-spectrum matrix has determinant $-2$ and is not in $SL_2$. The scalar is central.</p>
 <p><strong>The doubling in one line.</strong> The regular column has the doubled trace, the squared determinant, the doubled rank and each eigenvalue twice; the minimal polynomial and the flags are unchanged.</p>
+<h2 id="the-math158-frame">The $S_3$ Frame</h2>
+<p><strong>The coefficient columns.</strong> The eight elements have coefficient columns $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ listed in the table of §<em>The Eight Matrices</em>. The coefficient matrix of the regular display is
+$$
+[L(\tilde Q)]_{\mathcal B}=C_{\Pi}\,(I_2\otimes A)\,C_{\Pi}^{-1},
+$$
+and its first column is $[Q]$, because $L(\tilde Q)e_t=\tilde Q$. The other three columns are the coefficient columns of $\tilde Q\vec e_x$, $\tilde Q\vec e_y$ and $\tilde Q\vec e_z$.</p>
+<p><strong>Two examples.</strong> For the scalar, $C_{\Pi}(2I_4)C_{\Pi}^{-1}=2I_4$, with first column $(2,0,0,0)^{\mathsf T}$. For the Jordan block, the first column is $(1,\tfrac{i}{2},-\tfrac12,0)^{\mathsf T}$, and the coefficient matrix is the conjugate of $I_2\otimes\begin{pmatrix}1&1\\0&1\end{pmatrix}$. The eight coefficient matrices are obtained from the eight entry matrices by the same fixed conjugation.</p>
+<p><strong>The invariants.</strong> The coefficient display preserves the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$ and the doubled spectrum. The entries are not the four coordinates except in the first column; the coefficient frame dresses the corner structure in the fixed Peirce change.</p>
+<h2 id="the-math172-math173-frame">The $2\times2$ $z$ Frame</h2>
+<h3 id="the-scalar">The Scalar</h3>
+<p><strong>Entry model.</strong> $A=2\mathrm I_2$, $\tilde Q=2e_t$. Then $\operatorname{Tr}A=4$, $\det A=4$, $p_A(t)=(t-2)^2$, $m_A(t)=t-2$, and the rank is two.</p>
+<h3 id="the-jordan-block">The Jordan Block</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, with $Q_t=1$, $Q_x=\tfrac{i}{2}$, $Q_y=-\tfrac12$, $Q_z=0$. Then $\operatorname{Tr}A=2$, $\det A=1$, $p_A(t)=(t-1)^2$, $m_A(t)=(t-1)^2$, and the rank is two. The spectral projector is the whole matrix, and there is no eigenbasis.</p>
+<h3 id="the-distinct-eigenvalues">The Distinct Eigenvalues</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ has $\tau=5$, $\delta=-2$, so
+$$
+\lambda_\pm=\frac{5\pm\sqrt{33}}{2},\qquad
+p_A(t)=t^2-5t-2,\qquad m_A(t)=p_A(t).
+$$
+The spectral projectors are
+$$
+\Pi_\pm=\pm\frac{A-\lambda_\mp\mathrm I_2}{\sqrt{33}},
+$$
+they are idempotent and not Hermitian, because $A$ is not normal.</p>
+<h3 id="the-singular-matrix">The Singular Matrix</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}2&0\\0&0\end{pmatrix}$ has $\tau=2$, $\delta=0$, $p_A(t)=t(t-2)$, $m_A(t)=p_A(t)$, and rank one. The kernel is $\mathbb{C}e_2$ and the image is $\mathbb{C}e_1$. The Moore–Penrose inverse is $\operatorname{diag}(\tfrac12,0)$, and the polar factor is $V=\operatorname{diag}(1,0)$, a partial isometry.</p>
+<h3 id="the-rank-one-matrix">The Rank-One Matrix</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&2\\3&6\end{pmatrix}=uv^{\mathsf T}$ with $u=(1,3)^{\mathsf T}$ and $v=(1,2)^{\mathsf T}$. Then $\tau=7$, $\delta=0$, $v^{\mathsf T}u=7$, and
+$$
+P=\frac{A}{7}
+$$
+is the rank-one idempotent with image $\mathbb{C}u$ and kernel $\ker v^{\mathsf T}$. The two strata: the matrix is non-pure because $v^{\mathsf T}u\neq0$.</p>
+<h3 id="the-math214-unitary-matrix">The $*$-Unitary Matrix</h3>
+<p><strong>Entry model.</strong> $A=\tfrac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ has $A^{\dagger}A=\mathrm I_2$, $\tau=\sqrt2$, $\delta=1$, and
+$$
+p_A(t)=t^2-\sqrt2\,t+1,\qquad
+\lambda_\pm=e^{\pm i\pi/4}.
+$$
+The eigenvalues have modulus one. The matrix lies in $SU(2)$.</p>
+<h3 id="the-hermitian-matrix">The Hermitian Matrix</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}2&1-i\\1+i&-1\end{pmatrix}$ has $A=A^{\dagger}$, $\tau=1$, $\delta=-4$, and
+$$
+p_A(t)=t^2-t-4,\qquad
+\lambda_\pm=\frac{1\pm\sqrt{17}}{2}.
+$$
+The eigenvalues are real and distinct, the spectral projectors are Hermitian, and the eigenbasis is orthonormal.</p>
+<h3 id="the-normal-matrix">The Normal Matrix</h3>
+<p><strong>Entry model.</strong> $A=\begin{pmatrix}1&1\\-1&1\end{pmatrix}$ has $AA^{\dagger}=A^{\dagger}A$, $\tau=2$, $\delta=2$, and
+$$
+p_A(t)=t^2-2t+2,\qquad
+\lambda_\pm=1\pm i .
+$$
+The spectral projectors are Hermitian, but the matrix is neither Hermitian nor $*$-unitary. It is $\sqrt2$ times a matrix in $SU(2)$.</p>
+<h2 id="the-math234-math235-frame">The $4\times4$ $z$ Frame</h2>
+<h3 id="the-scalar_1">The Scalar</h3>
+<p><strong>Regular model.</strong> $X=2\mathrm I_4$. Then $\operatorname{Tr}X=8$, $\det X=16$, $p_X(t)=(t-2)^4$, $m_X(t)=t-2$, and the rank is four.</p>
+<p><strong>Reading.</strong> The scalar is the only matrix whose minimal polynomial has degree one. It is normal, Hermitian and central; it is $*$-unitary only when $\lvert\lambda\rvert=1$, which fails here.</p>
+<h3 id="the-jordan-block_1">The Jordan Block</h3>
+<p><strong>Regular model.</strong> $X=J\oplus J$ has $\operatorname{Tr}X=4$, $\det X=1$, $p_X(t)=(t-1)^4$ and $m_X(t)=(t-1)^2$; the rank is four. The Jordan form has two blocks of size two, not one block of size four.</p>
+<p><strong>Reading.</strong> The block is neither diagonalisable nor normal. It lies in $SL_2(\mathbb{C})$ and its regular image in the image of $SL_2$.</p>
+<h3 id="the-distinct-eigenvalues_1">The Distinct Eigenvalues</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=10$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice. The projectors are $\operatorname{diag}(\Pi_\pm,\Pi_\pm)$, of rank two.</p>
+<p><strong>Reading.</strong> The matrix is diagonalisable and not normal. It lies in $GL_2(\mathbb{C})$ with determinant $-2$, so it is not in $SL_2$.</p>
+<h3 id="the-singular-matrix_1">The Singular Matrix</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=4$, $\det X=0$, rank two, kernel $\mathbb{C}e_2\oplus\mathbb{C}e_4$ and image $\mathbb{C}e_1\oplus\mathbb{C}e_3$.</p>
+<p><strong>Reading.</strong> The matrix is Hermitian, normal and a scaled projector. It is singular, so its polar factor is only a partial isometry. It is not $*$-unitary.</p>
+<h3 id="the-rank-one-matrix_1">The Rank-One Matrix</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=14$, rank two, and is the double of the idempotent up to scale. Its image is $\mathbb{C}u\oplus\mathbb{C}u$ and its kernel is the complementary plane.</p>
+<p><strong>Reading.</strong> The matrix is diagonalisable, not normal, and not Hermitian. It differs from the singular example exactly by the normality flag: the singular example is a scaled Hermitian projector, the rank-one example a scaled non-Hermitian idempotent.</p>
+<h3 id="the-math266-unitary-matrix">The $*$-Unitary Matrix</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2\sqrt2$, $\det X=1$, the same minimal polynomial, and each eigenvalue twice. It is $*$-unitary.</p>
+<p><strong>Reading.</strong> The matrix is normal and not Hermitian. Its polar decomposition is $P=\mathrm I_2$ and $V=A$.</p>
+<h3 id="the-hermitian-matrix_1">The Hermitian Matrix</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=2$, $\det X=16$, the same minimal polynomial, and each eigenvalue twice. It is Hermitian of rank four.</p>
+<p><strong>Reading.</strong> The matrix is Hermitian and normal. Its polar factor is $P=\lvert A\rvert$ and its unitary factor is the sign of $A$.</p>
+<h3 id="the-normal-matrix_1">The Normal Matrix</h3>
+<p><strong>Regular model.</strong> $X=\operatorname{diag}(A,A)$ has $\operatorname{Tr}X=4$, $\det X=4$, the same minimal polynomial, and each eigenvalue twice.</p>
+<p><strong>Reading.</strong> The matrix is the example that separates normality from the two stronger flags. Its polar decomposition is $P=\sqrt2\,\mathrm I_2$ and $V=A/\sqrt2\in SU(2)$.</p>
 <h2 id="summary">Summary</h2>
 <p>The eight matrices cover the three spectral types and the three normality flags. The scalar has minimal polynomial of degree one; the Jordan block is the only non-diagonalisable case and the only non-normal case with a repeated eigenvalue; the distinct-spectrum, singular, rank-one, $*$-unitary, Hermitian and normal matrices are diagonalisable, and among them the rank-one and distinct-spectrum examples are not normal. The singular example is a scaled Hermitian projector and the rank-one example a scaled non-Hermitian idempotent, so the two singular cases differ exactly by the normality flag. In the regular model every trace, determinant, rank and eigenvalue multiplicity is doubled, and the minimal polynomial and the flags are read blockwise.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

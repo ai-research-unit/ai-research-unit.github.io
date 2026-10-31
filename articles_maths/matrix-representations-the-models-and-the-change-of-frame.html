@@ -76,43 +76,10 @@
 <p><strong>What it does not do.</strong> It states no property of the four families $L$, $R$, $T$, $\Theta$. It does not prove that a family is closed under anything, that it has a dimension, or that it sits inside another. The closing section counts the defining data of the four families and stops at the count. The definitions and the properties are the subject of Parts II, III, IV and V.</p>
 <p><strong>The matrix is not canonical.</strong> A matrix is the display of an operator in a frame. There is no frame-free matrix, and this article never writes "the matrix of $F$" without a frame. The invariants of §<em>Trace, Determinant, Spectrum, Rank</em> are the exception that proves the rule: they are read on a matrix and belong to the operator.</p>
 <p><strong>Boundaries.</strong> The algebra and its basis are <em>The Biquaternion Algebra</em>; the operator space and its dimension are <em>The Endomorphisms of the Biquaternion Algebra</em>; the $2\times2$ model is <em>Matrix Representations : The Product, the Trace and the Determinant</em>; the Peirce decomposition is <em>Special Element and Peirce Conventions</em>; the two frames and their use are <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>.</p>
-<h2 id="the-two-models">The Two Models</h2>
-<h3 id="the-entry-model-math19">The Entry Model $\mathsf M_2$</h3>
-<p><strong>Definition.</strong> On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the <strong>entry model</strong> is the assignment</p>
-<p>$$
-\mathsf M_2(e_t)=\mathrm I_2,\qquad
-\mathsf M_2(\vec e_x)=-i\sigma_1,\qquad
-\mathsf M_2(\vec e_y)=-i\sigma_2,\qquad
-\mathsf M_2(\vec e_z)=-i\sigma_3,
-$$</p>
-<p>extended linearly:</p>
-<p>$$
-\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-iQ_x\sigma_1-iQ_y\sigma_2-iQ_z\sigma_3
-=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
-$$</p>
-<p><strong>What it displays.</strong> The four entries are $Q_t-iQ_z$, $-iQ_x-Q_y$, $-iQ_x+Q_y$ and $Q_t+iQ_z$: the coefficients themselves, two on the diagonal and two off it. The model is an isomorphism of algebras onto $M_2(\mathbb{C})$, and it is the only display in the series that has no frame. Its invariants are $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
-<p><strong>The chosen direction.</strong> The display singles out $\vec e_z$, because $\sigma_3$ is the diagonal one. The other two directions sit in the off-diagonal entries, and a relabelling of $x,y,z$ carries the model to a conjugate display. The choice is a choice of axis in the model, not a property of the algebra, and the series names the axis whenever an entry is read.</p>
-<h3 id="the-operator-model-math35">The Operator Model $\mathsf M_4^{L}$</h3>
-<p><strong>Definition.</strong> The <strong>left regular matrix</strong> $\mathsf M_4^{L}(\tilde Q)$ is the matrix of left multiplication by $\tilde Q$ in a declared frame. In the Peirce frame it is one object,</p>
-<p>$$
-\mathsf M_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),
-$$</p>
-<p>and in the coefficient frame it is the conjugate display,</p>
-<p>$$
-[\mathsf M_4^{L}(\tilde Q)]_{\mathrm{coef}}=C_{\Pi}\,\bigl(\mathrm I_2\otimes\mathsf M_2(\tilde Q)\bigr)\,C_{\Pi}^{-1}.
-$$</p>
-<p><strong>What it displays.</strong> The $4\times4$ matrix displays the operator $L_{\tilde Q}$. It has sixteen entries and four eigenvalues $\lambda_\pm=Q_t\pm iB$, each twice. It is not the element: the element has four coefficients and its own matrix $\mathsf M_2(\tilde Q)$. The series keeps the two objects apart by the size of the display and by the letter: $\mathsf M_2$ for the element, $\mathsf M_4^{L}$ for the operator.</p>
-<h3 id="the-compression">The Compression</h3>
-<p><strong>The block structure.</strong> In the Peirce frame the left regular matrix is a block-diagonal matrix with the same block twice:</p>
-<p>$$
-C_{\Pi}^{-1}\,[\mathsf M_4^{L}(\tilde Q)]_{\mathrm{coef}}\,C_{\Pi}
-=\operatorname{diag}(B,B),\qquad B=\mathsf M_2(\tilde Q).
-$$</p>
-<p>The identity is the definition of the Peirce frame read backwards: the frame is chosen so that the carrier splits into two copies of the $2\times2$ space, and the element acts by $B$ on each copy.</p>
-<p><strong>What the compression is not.</strong> The $2\times2$ block is not a compression in the coefficient frame. No $2\times2$ block of $[\mathsf M_4^{L}]_{\mathrm{coef}}$ equals $B$ or $-B$, and the coefficient matrix is not $I_2\otimes B$ for any ordering of the four units. The two statements are not in conflict: the identity holds after the fixed change $C_{\Pi}$, and a fixed change of frame is not a compression of the entries. An article that writes "the $2\times2$ is a block of the $4\times4$" must name the Peirce frame in the same sentence.</p>
-<p><strong>The consequence for the series.</strong> Only the Peirce frame exhibits the entry model inside the operator model. The coefficient frame exhibits the signs, the transpose and the real forms. The two frames are therefore not interchangeable, and each article says which of the two it uses and what the other adds.</p>
-<h2 id="the-matrix-in-a-basis">The Matrix in a Basis</h2>
-<h3 id="the-four-columns">The Four Columns</h3>
+<h2 id="common-aspects">Common Aspects</h2>
+<p>The bracket, the change law, the invariants and the unit table are statements about operators and frames, not about one display. They are fixed here once and used in all three displays below.</p>
+<h3 id="the-matrix-in-a-basis">The Matrix in a Basis</h3>
+<p><strong>The Four Columns.</strong></p>
 <p><strong>The frame.</strong> A <strong>frame</strong> of the carrier is an ordered basis $\mathcal{B}=(b_1,b_2,b_3,b_4)$. The coefficient frame is the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ in that order. Every matrix in this article is written in a declared frame, and the frame is part of the display.</p>
 <p><strong>Definition (the bracket).</strong> Let $F\in\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and let $\mathcal{B}$ be a frame. The <strong>matrix of $F$ in $\mathcal{B}$</strong> is the $4\times4$ complex matrix $[F]_{\mathcal{B}}$ whose $j$-th column is the coordinate column of $F(b_j)$ in $\mathcal{B}$:</p>
 <p>$$
@@ -130,7 +97,7 @@ $$</p>
 $$</p>
 <p>The three identities are read column by column, and they say that the bracket is an algebra map. The order in the product is the order of composition: $[FG]$ is $[F]$ times $[G]$, with $G$ applied first.</p>
 <p><strong>An operator is determined by its matrix.</strong> If $[F]_{\mathcal{B}}=[G]_{\mathcal{B}}$, then $F$ and $G$ agree on the four basis vectors, hence everywhere. The bracket is therefore injective for a fixed frame, and a matrix in a frame names at most one operator.</p>
-<h3 id="the-isomorphism-with-math87">The Isomorphism with $M_4(\mathbb{C})$</h3>
+<p><strong>The Isomorphism with $M_4(\mathbb{C})$.</strong></p>
 <p><strong>Theorem (the matrix representation).</strong> For every frame $\mathcal{B}$, the map</p>
 <p>$$
 \Phi_{\mathcal{B}}:\operatorname{End}_{\mathbb{C}}(\mathbb{B})\longrightarrow M_4(\mathbb{C}),\qquad F\longmapsto[F]_{\mathcal{B}},
@@ -139,8 +106,8 @@ $$</p>
 <p><em>Proof.</em> The map is linear by the elementary properties and multiplicative by $[FG]=[F][G]$; it is unital because $[\mathrm{id}]=\mathrm{I}_4$. It is injective because an operator is determined by its matrix. It is surjective because every $4\times4$ matrix $A$ defines an operator by $[F(b_j)]_{\mathcal{B}}=A e_j$, and then $[F]_{\mathcal{B}}=A$. Both spaces have complex dimension $16$, so injectivity alone would also give the conclusion.</p>
 <p><strong>The isomorphism depends on the frame.</strong> A different frame gives a different map $\Phi_{\mathcal{B}'}$, and the two differ by the change of §<em>Change of Basis</em>. There is no frame-free identification of the operator algebra with $M_4(\mathbb{C})$, and an article that writes the identification writes the frame beside it. The identification is canonical only after the frame is fixed, and no frame is canonical in the algebra.</p>
 <p><strong>What the theorem gives.</strong> The theorem is the licence to compute with matrices in every article of Parts I to V: an operator statement can be read entry by entry after a frame is declared. It gives no canonical form and no preferred matrix, and it does not say that two operators with the same trace or determinant are equal.</p>
-<h2 id="change-of-basis">Change of Basis</h2>
-<h3 id="the-conjugation-law-math99">The Conjugation Law $C^{-1}[F]C$</h3>
+<h3 id="change-of-basis">Change of Basis</h3>
+<p><strong>The Conjugation Law $C^{-1}[F]C$.</strong></p>
 <p><strong>The change of frame.</strong> Let $\mathcal{B}=(b_1,\dots,b_4)$ and $\mathcal{B}'=(b'_1,\dots,b'_4)$ be two frames, and let $C\in GL_4(\mathbb{C})$ be the matrix of the change, with</p>
 <p>$$
 b'_j=\sum_{i=1}^{4}b_i\,C_{ij}.
@@ -153,13 +120,13 @@ $$</p>
 <p><em>Proof.</em> For every $x$, $[F(x)]_{\mathcal{B}'}=C^{-1}[F(x)]_{\mathcal{B}}=C^{-1}[F]_{\mathcal{B}}[x]_{\mathcal{B}}=C^{-1}[F]_{\mathcal{B}}C[x]_{\mathcal{B}'}$. The matrix $C^{-1}[F]_{\mathcal{B}}C$ therefore acts on every coordinate column as $[F]_{\mathcal{B}'}$ does, and the two matrices are equal.</p>
 <p><strong>Similar matrices.</strong> Two matrices are <strong>similar</strong> when they differ by $C^{-1}(\cdot)C$ for some invertible $C$. The theorem says that the matrices of one operator in two frames are similar, and conversely every matrix similar to $[F]_{\mathcal{B}}$ is the matrix of $F$ in some frame. Similarity is therefore the equivalence relation of the display, and the orbit of $[F]_{\mathcal{B}}$ is the set of all displays of $F$.</p>
 <p><strong>The invariant reading.</strong> The trace, the determinant, the characteristic polynomial, the spectrum and the rank are unchanged by $C^{-1}(\cdot)C$, so they are functions of the operator and not of the frame. Conversely, none of them separates all operators: two non-similar matrices can share all five. The invariants are necessary data, not a complete invariant.</p>
-<h3 id="orbits-and-the-missing-canonical-form">Orbits and the Missing Canonical Form</h3>
+<p><strong>Orbits and the Missing Canonical Form.</strong></p>
 <p><strong>The orbit is the operator.</strong> The similarity orbit of a matrix is the operator, read in all frames. To know the operator is to know the orbit, and to write one matrix is to choose a point of the orbit. The choice is a choice of frame and has no algebraic content.</p>
 <p><strong>No canonical representative.</strong> There is no rule that selects one matrix from each orbit without further choices. The Jordan form selects a matrix, but it depends on the order of the Jordan blocks and on the scaling of the eigenvectors, and it exists as a canonical display only after those choices are fixed. The rational canonical form is canonical for the operator, but its display still requires an ordered decomposition of the carrier. The corpus therefore does not write "the matrix" of a general operator, and it does not treat a canonical form as a property of the operator.</p>
 <p><strong>What is canonical.</strong> The characteristic polynomial is canonical: it is the same for every matrix of $F$ and needs no choice. The spectrum is canonical as a multiset. The trace, the determinant and the rank are canonical numbers. Beyond them, a statement about entries is a statement about a frame, and it must say which frame.</p>
 <p><strong>The warning.</strong> An entry of $[F]_{\mathcal{B}}$ is not a function of $F$. A statement such as "the upper-right entry vanishes" is a statement about the pair $(F,\mathcal{B})$, and it becomes a statement about $F$ only when the frame is fixed by the algebra, as the coefficient frame and the Peirce frame are. Every display in Parts I to V declares its frame for this reason.</p>
-<h2 id="trace-determinant-spectrum-rank">Trace, Determinant, Spectrum, Rank</h2>
-<h3 id="the-trace-and-the-determinant">The Trace and the Determinant</h3>
+<h3 id="trace-determinant-spectrum-rank">Trace, Determinant, Spectrum, Rank</h3>
+<p><strong>The Trace and the Determinant.</strong></p>
 <p><strong>The trace.</strong> The <strong>trace</strong> of an operator is the sum of the diagonal entries of any of its matrices:</p>
 <p>$$
 \operatorname{tr}F=\sum_{i=1}^{4}[F]_{\mathcal{B},ii}.
@@ -167,7 +134,7 @@ $$</p>
 <p>The sum is independent of the frame, because $\operatorname{tr}(C^{-1}AC)=\operatorname{tr}A$. The trace is linear, $\operatorname{tr}(\lambda F+\mu G)=\lambda\operatorname{tr}F+\mu\operatorname{tr}G$, and it satisfies $\operatorname{tr}(FG)=\operatorname{tr}(GF)$.</p>
 <p><strong>The determinant.</strong> The <strong>determinant</strong> of an operator is the determinant of any of its matrices. It is multiplicative, $\det(FG)=\det F\det G$, and $\det(\mathrm{id})=1$. An operator is invertible exactly when $\det F\neq0$, and then $\det(F^{-1})=(\det F)^{-1}$.</p>
 <p><strong>Not the invariants of an element.</strong> The trace and the determinant are written of an operator. An element of the algebra has its coefficients and its norm, and they are different objects: the trace of an operator is a complex number attached to a map, and no coefficient of an element is called a trace here. The two readings are kept apart by the symbol the word is applied to.</p>
-<h3 id="the-characteristic-polynomial">The Characteristic Polynomial</h3>
+<p><strong>The Characteristic Polynomial.</strong></p>
 <p><strong>Definition.</strong> The <strong>characteristic polynomial</strong> of $F$ is</p>
 <p>$$
 \chi_F(\lambda)=\det\bigl(\lambda\,\mathrm{I}_4-[F]_{\mathcal{B}}\bigr).
@@ -181,7 +148,7 @@ $$</p>
 <p><strong>The spectrum.</strong> The <strong>spectrum</strong> of $F$ is the multiset of the four roots of $\chi_F$, counted with multiplicity. Over $\mathbb{C}$ the polynomial splits, so the spectrum always has four elements counted with multiplicity, and it is a set only when the four roots are distinct. The eigenvalues are the roots, and an eigenvector of $\lambda$ is a nonzero element of $\ker(\lambda\,\mathrm{id}-F)$.</p>
 <p><strong>Cayley–Hamilton.</strong> $\chi_F(F)=0$ as an operator. The identity is read in any frame, where it is the Cayley–Hamilton theorem for the matrix $[F]_{\mathcal{B}}$. It gives the powers $F^4,\dots$ in terms of the lower ones, and it is the reason the minimal polynomial divides the characteristic polynomial.</p>
 <p><strong>The minimal polynomial.</strong> The <strong>minimal polynomial</strong> of $F$ is the monic polynomial of least degree with $m_F(F)=0$. It divides $\chi_F$ and has the same roots; the operator is diagonalisable exactly when $m_F$ has distinct roots. The minimal polynomial is canonical and is a finer invariant than the characteristic polynomial.</p>
-<h3 id="the-rank-and-the-image">The Rank and the Image</h3>
+<p><strong>The Rank and the Image.</strong></p>
 <p><strong>Definition (rank).</strong> The <strong>rank</strong> of an operator is the complex dimension of its image,</p>
 <p>$$
 \operatorname{rank}F=\dim_{\mathbb{C}}\operatorname{im}F .
@@ -194,8 +161,8 @@ $$</p>
 <p>The operator is injective exactly when $\ker F=0$, exactly when $\operatorname{rank}F=4$, exactly when $\det F\neq0$. For an operator of a finite-dimensional space the three conditions are equivalent, and they are equivalent to surjectivity and to invertibility.</p>
 <p><strong>The image and the kernel are not frames.</strong> The image is a subspace of $\mathbb{B}$ and the kernel is a subspace of $\mathbb{B}$; neither is a subspace of the matrix space. A matrix has a column space and a null space in $\mathbb{C}^4$, and those are the coordinate readings of the image and the kernel in the frame. The two pairs are the same object only after the frame is declared.</p>
 <p><strong>The rank is not the length.</strong> The word <strong>length</strong> is reserved for a two-sided operator and is fixed in <em>Operator Family Conventions</em>. It is not an alternative name for the rank, and an article that identifies the two proves it there.</p>
-<h2 id="the-units">The Units</h2>
-<h3 id="the-unit-table">The Unit Table</h3>
+<h3 id="the-units">The Units</h3>
+<p><strong>The Unit Table.</strong></p>
 <p><strong>The units.</strong> The <strong>matrix units</strong> are the operators $E_{ij}$ with $i,j\in\{1,2,3,4\}$, where $E_{ij}$ sends the $j$-th basis vector to the $i$-th and the other basis vectors to zero:</p>
 <p>$$
 E_{ij}(b_j)=b_i,\qquad E_{ij}(b_k)=0\quad(k\neq j).
@@ -254,67 +221,17 @@ $$</p>
 $$</p>
 <p>The sixteen units are a basis of the operator space, and the product rule is the multiplication table of $M_4(\mathbb{C})$ in that basis.</p>
 <p><strong>The frame dependence.</strong> The units are defined in the frame $\mathcal{B}$. Another frame gives another family of sixteen operators, and the two families are related by the change of §<em>Change of Basis</em>. The notation $E_{ij}$ without a frame is read in the frame declared by the article, and no article inherits it from another.</p>
-<h3 id="the-algebras-units-and-the-operators-units">The Algebra's Units and the Operator's Units</h3>
+<p><strong>The Algebra's Units and the Operator's Units.</strong></p>
 <p><strong>Two alphabets.</strong> The algebra has its units $e_t,\vec e_x,\vec e_y,\vec e_z$, four elements. The operator space has its units $E_{ij}$, sixteen operators. The two alphabets are distinct, and no glyph of one stands for a glyph of the other.</p>
 <p><strong>The two identities.</strong> The identity of the algebra is $e_t$; the identity of the operator algebra is $\mathrm{I}_4=\sum_iE_{ii}$. The first is an element and the second is an operator, and the words "the unit" and "the identity" are qualified: the unit of the algebra, the identity operator.</p>
 <p><strong>The index is not a direction.</strong> The index of $e_\mu$ is a direction of the algebra, running over $t,x,y,z$. The indices of $E_{ij}$ are a row and a column, running over $1,2,3,4$. A direction index is never a row index, and $e_1$ is not written for $e_t$.</p>
 <p><strong>The diagonal units are not the Peirce idempotents.</strong> $E_{ii}$ is a projection of the carrier, an operator; the Peirce idempotents $\tilde\Pi_1,\tilde\Pi_2$ are elements of the algebra. The two are read in different frames and belong to different spaces, and neither glyph stands for the other.</p>
-<h2 id="the-coefficient-basis-and-the-peirce-basis">The Coefficient Basis and the Peirce Basis</h2>
-<h3 id="the-two-frames">The Two Frames</h3>
-<p><strong>The coefficient frame.</strong> The <strong>coefficient frame</strong> is the ordered basis</p>
-<p>$$
-\mathcal{B}=(e_t,\vec e_x,\vec e_y,\vec e_z).
-$$</p>
-<p>It is the frame of the structure constants: the product of two units is a signed unit, and every element is a coefficient column in this frame. It is fixed by the algebra and by the order of the units, and it is the frame of the coefficient matrices of Parts II to V.</p>
-<p><strong>The Peirce frame.</strong> The <strong>Peirce frame</strong> is the ordered basis</p>
-<p>$$
-\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
-$$</p>
-<p>with the standard pair and its mixed units</p>
-<p>$$
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y).
-$$</p>
-<p>It is the canonical frame of the matrix models: in it the left and the right regular matrices take their block form, and the Peirce coordinates are the coordinates of the decomposition. The pair is a choice of frame, owned by <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>, and it fixes nothing in the algebra.</p>
-<p><strong>Two frames, two readings.</strong> The coefficient frame reads the multiplication as signed permutations of the four units. The Peirce frame reads it as a $2\times2$ block structure with two copies of $M_2(\mathbb{C})$. Neither frame is preferred by the algebra; each article declares the one it uses, and an entry is read only in the frame that produced it.</p>
-<h3 id="the-change-math223">The Change $C_{\Pi}$</h3>
-<p><strong>Definition (the Peirce change).</strong> The <strong>Peirce change</strong> $C_{\Pi}$ is the matrix whose columns are the four Peirce elements, in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, written in coefficient coordinates:</p>
-<p>$$
-C_{\Pi}=\begin{pmatrix}
-\tfrac12&0&0&\tfrac12\\
-0&\tfrac{i}{2}&\tfrac{i}{2}&0\\
-0&\tfrac12&-\tfrac12&0\\
-\tfrac{i}{2}&0&0&-\tfrac{i}{2}
-\end{pmatrix}.
-$$</p>
-<p>Its inverse is</p>
-<p>$$
-C_{\Pi}^{-1}=\begin{pmatrix}
-1&0&0&-i\\
-0&-i&1&0\\
-0&-i&-1&0\\
-1&0&0&i
-\end{pmatrix},
-$$</p>
-<p>and $\det C_{\Pi}=-\tfrac14$. The change is the one of <em>Matrix Representations : The Product, the Trace and the Determinant</em>, §<em>The Element and the Operator</em>; the display is repeated here because every operator article uses it.</p>
-<p><strong>The direction.</strong> The columns of $C_{\Pi}$ are the Peirce elements in coefficient coordinates, so $C_{\Pi}$ carries a Peirce coordinate column to a coefficient coordinate column:</p>
-<p>$$
-[x]_{\mathcal{B}}=C_{\Pi}\,[x]_{\mathcal{P}} .
-$$</p>
-<p>The inverse carries the other way.</p>
-<p><strong>The conjugation by the change.</strong> For an operator $F$,</p>
-<p>$$
-[F]_{\mathcal{B}}=C_{\Pi}\,[F]_{\mathcal{P}}\,C_{\Pi}^{-1},
-\qquad
-[F]_{\mathcal{P}}=C_{\Pi}^{-1}[F]_{\mathcal{B}}\,C_{\Pi}.
-$$</p>
-<p>The two displays are the same operator in the two frames. The change is a fixed matrix, not a similarity chosen for the operator: it is the same $C_{\Pi}$ for every $F$, and it is the reason the two frames are comparable at all.</p>
-<p><strong>The determinant of the change.</strong> $\det C_{\Pi}=-\tfrac14$ is not $\pm1$, so the change is not a permutation of the frame up to sign. A determinant computed in the coefficient frame and one computed in the Peirce frame agree as determinants of the operator, because the two factors $C_{\Pi}$ and $C_{\Pi}^{-1}$ cancel; entries and minors need not agree. The rule is the one of §<em>Change of Basis</em>: invariants agree, entries do not.</p>
-<h2 id="the-general-matrix-and-the-four-families">The General Matrix and the Four Families</h2>
-<h3 id="sixteen-entries">Sixteen Entries</h3>
+<h3 id="the-general-matrix-and-the-four-families">The General Matrix and the Four Families</h3>
+<p><strong>Sixteen Entries.</strong></p>
 <p><strong>The general matrix.</strong> In a frame, a general operator is a $4\times4$ complex matrix, with sixteen entries and no condition. The sixteen entries are sixteen complex numbers; they are not sixteen invariants, and no one of them is a function of the operator alone. A statement about an entry is a statement about the operator and the frame together.</p>
 <p><strong>No preferred entry.</strong> The diagonal, the upper triangle and the lower triangle are not canonical subsets of the entries: a change of frame mixes them. The only subsets of entries that survive every frame are the empty set and the whole matrix, and the only functions of the entries that survive are the symmetric ones, of which the trace and the determinant are the first and the last.</p>
 <p><strong>No canonical form.</strong> A general operator has no canonical matrix. The Jordan form and the rational canonical form are canonical displays after choices, and this article does not use them. The general matrix is therefore written with its frame and with its sixteen entries, and nothing more is asserted about it.</p>
-<h3 id="the-four-subsets">The Four Subsets</h3>
+<p><strong>The Four Subsets.</strong></p>
 <p><strong>The count.</strong> The four families are four subsets of the operator space. Their defining data are counted here, and nothing else is asserted:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -355,6 +272,99 @@ $$</p>
 <p><strong>The counts are not dimensions.</strong> A count of parameters is not the dimension of a set. The two-sided family is described by two elements, eight complex numbers, and the descriptions overlap, so the count of parameters exceeds the number of independent data. The resolution of the overlap is the subject of Parts II to V, and no number in the table is a dimension.</p>
 <p><strong>The counts are not disjoint.</strong> The four parameter counts add to $20$, while a general operator has $16$ complex parameters. The excess is the redundancy of the four descriptions, not a theorem about the four families. The table says how many complex numbers each description uses, and it stops there: it asserts no inclusion, no closure, no properness and no dimension.</p>
 <p><strong>What the section proves.</strong> Nothing. It fixes the place of the four families in the general matrix by counting their defining data, and it leaves every property to the article that owns it: the left family to Part II, the right family to Part III, the two-sided family to Part IV, and the sandwich to Part V.</p>
+<p><strong>Two frames, two readings.</strong> The coefficient frame reads the multiplication as signed permutations of the four units. The Peirce frame reads it as a $2\times2$ block structure with two copies of $M_2(\mathbb{C})$. Neither frame is preferred by the algebra, and each article declares the one it uses.</p>
+<h2 id="the-math200-frame">The $S_3$ Frame</h2>
+<p>The coefficient frame is the frame of the structure constants. It is where the signed entries, the explicit display of the regular operator and the Peirce change $C_{\Pi}$ are read.</p>
+<p><strong>The coefficient frame.</strong> The <strong>coefficient frame</strong> is the ordered basis</p>
+<p>$$
+\mathcal{B}=(e_t,\vec e_x,\vec e_y,\vec e_z).
+$$</p>
+<p>It is the frame of the structure constants: the product of two units is a signed unit, and every element is a coefficient column in this frame. It is fixed by the algebra and by the order of the units, and it is the frame of the coefficient matrices of Parts II to V.</p>
+<h3 id="the-change-math203">The Change $C_{\Pi}$</h3>
+<p><strong>Definition (the Peirce change).</strong> The <strong>Peirce change</strong> $C_{\Pi}$ is the matrix whose columns are the four Peirce elements, in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, written in coefficient coordinates:</p>
+<p>$$
+C_{\Pi}=\begin{pmatrix}
+\tfrac12&0&0&\tfrac12\\
+0&\tfrac{i}{2}&\tfrac{i}{2}&0\\
+0&\tfrac12&-\tfrac12&0\\
+\tfrac{i}{2}&0&0&-\tfrac{i}{2}
+\end{pmatrix}.
+$$</p>
+<p>Its inverse is</p>
+<p>$$
+C_{\Pi}^{-1}=\begin{pmatrix}
+1&0&0&-i\\
+0&-i&1&0\\
+0&-i&-1&0\\
+1&0&0&i
+\end{pmatrix},
+$$</p>
+<p>and $\det C_{\Pi}=-\tfrac14$. The change is the one of <em>Matrix Representations : The Product, the Trace and the Determinant</em>, §<em>The Element and the Operator</em>; the display is repeated here because every operator article uses it.</p>
+<p><strong>The direction.</strong> The columns of $C_{\Pi}$ are the Peirce elements in coefficient coordinates, so $C_{\Pi}$ carries a Peirce coordinate column to a coefficient coordinate column:</p>
+<p>$$
+[x]_{\mathcal{B}}=C_{\Pi}\,[x]_{\mathcal{P}} .
+$$</p>
+<p>The inverse carries the other way.</p>
+<p><strong>The conjugation by the change.</strong> For an operator $F$,</p>
+<p>$$
+[F]_{\mathcal{B}}=C_{\Pi}\,[F]_{\mathcal{P}}\,C_{\Pi}^{-1},
+\qquad
+[F]_{\mathcal{P}}=C_{\Pi}^{-1}[F]_{\mathcal{B}}\,C_{\Pi}.
+$$</p>
+<p>The two displays are the same operator in the two frames. The change is a fixed matrix, not a similarity chosen for the operator: it is the same $C_{\Pi}$ for every $F$, and it is the reason the two frames are comparable at all.</p>
+<p><strong>The determinant of the change.</strong> $\det C_{\Pi}=-\tfrac14$ is not $\pm1$, so the change is not a permutation of the frame up to sign. A determinant computed in the coefficient frame and one computed in the Peirce frame agree as determinants of the operator, because the two factors $C_{\Pi}$ and $C_{\Pi}^{-1}$ cancel; entries and minors need not agree. The rule is the one of §<em>Change of Basis</em>: invariants agree, entries do not.</p>
+<p><strong>The regular operator in the coefficient frame.</strong> The coefficient display is</p>
+<p>$$
+[\mathsf M_4^{L}(\tilde Q)]_{\mathrm{coef}}=C_{\Pi}\,\bigl(\mathrm I_2\otimes\mathsf M_2(\tilde Q)\bigr)\,C_{\Pi}^{-1}.
+$$</p>
+<p>Every entry is a signed combination of the four coefficients, and no $2\times2$ block of the display equals $\mathsf M_2(\tilde Q)$ or its negative. The change $C_{\Pi}$ below is the only matrix needed to pass from this display to the Peirce display.</p>
+<h2 id="the-math224-math225-frame">The $2\times2$ $z$ Frame</h2>
+<p>The entry model displays an element, not an operator. Its entries are the Peirce coordinates of the $z$ frame at size two: the two diagonal entries are the idempotent coordinates and the two off-diagonal ones the mixed coordinates.</p>
+<h3 id="the-entry-model-math227">The Entry Model $\mathsf M_2$</h3>
+<p><strong>Definition.</strong> On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the <strong>entry model</strong> is the assignment</p>
+<p>$$
+\mathsf M_2(e_t)=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)=-i\sigma_3,
+$$</p>
+<p>extended linearly:</p>
+<p>$$
+\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-iQ_x\sigma_1-iQ_y\sigma_2-iQ_z\sigma_3
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+$$</p>
+<p><strong>What it displays.</strong> The four entries are $Q_t-iQ_z$, $-iQ_x-Q_y$, $-iQ_x+Q_y$ and $Q_t+iQ_z$: the coefficients themselves, two on the diagonal and two off it. The model is an isomorphism of algebras onto $M_2(\mathbb{C})$. It displays an element rather than an operator, and its standard basis is the $z$ Peirce pair, so its four entries are the $z$-Peirce coordinates. Its invariants are $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
+<p><strong>The chosen direction.</strong> The display singles out $\vec e_z$, because $\sigma_3$ is the diagonal one. The other two directions sit in the off-diagonal entries, and a relabelling of $x,y,z$ carries the model to a conjugate display. The choice is a choice of axis in the model, not a property of the algebra, and the series names the axis whenever an entry is read.</p>
+<h2 id="the-math245-math246-frame">The $4\times4$ $z$ Frame</h2>
+<p>The Peirce frame displays the operator as two copies of the entry model, $\mathrm I_2\otimes\mathsf M_2$, and is the only frame in which a $2\times2$ block of the $4\times4$ matrix equals the entry matrix.</p>
+<h3 id="the-operator-model-math250">The Operator Model $\mathsf M_4^{L}$</h3>
+<p><strong>Definition.</strong> The <strong>left regular matrix</strong> $\mathsf M_4^{L}(\tilde Q)$ is the matrix of left multiplication by $\tilde Q$ in a declared frame. In the Peirce frame it is one object,</p>
+<p>$$
+\mathsf M_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),
+$$</p>
+<p>and in the coefficient frame it is the conjugate display,</p>
+<p>$$
+[\mathsf M_4^{L}(\tilde Q)]_{\mathrm{coef}}=C_{\Pi}\,\bigl(\mathrm I_2\otimes\mathsf M_2(\tilde Q)\bigr)\,C_{\Pi}^{-1}.
+$$</p>
+<p><strong>What it displays.</strong> The $4\times4$ matrix displays the operator $L_{\tilde Q}$. It has sixteen entries and four eigenvalues $\lambda_\pm=Q_t\pm iB$, each twice. It is not the element: the element has four coefficients and its own matrix $\mathsf M_2(\tilde Q)$. The series keeps the two objects apart by the size of the display and by the letter: $\mathsf M_2$ for the element, $\mathsf M_4^{L}$ for the operator.</p>
+<h3 id="the-compression">The Compression</h3>
+<p><strong>The block structure.</strong> In the Peirce frame the left regular matrix is a block-diagonal matrix with the same block twice:</p>
+<p>$$
+C_{\Pi}^{-1}\,[\mathsf M_4^{L}(\tilde Q)]_{\mathrm{coef}}\,C_{\Pi}
+=\operatorname{diag}(B,B),\qquad B=\mathsf M_2(\tilde Q).
+$$</p>
+<p>The identity is the definition of the Peirce frame read backwards: the frame is chosen so that the carrier splits into two copies of the $2\times2$ space, and the element acts by $B$ on each copy.</p>
+<p><strong>What the compression is not.</strong> The $2\times2$ block is not a compression in the coefficient frame. No $2\times2$ block of $[\mathsf M_4^{L}]_{\mathrm{coef}}$ equals $B$ or $-B$, and the coefficient matrix is not $I_2\otimes B$ for any ordering of the four units. The two statements are not in conflict: the identity holds after the fixed change $C_{\Pi}$, and a fixed change of frame is not a compression of the entries. An article that writes "the $2\times2$ is a block of the $4\times4$" must name the Peirce frame in the same sentence.</p>
+<p><strong>The consequence for the series.</strong> Only the Peirce frame exhibits the entry model inside the operator model. The coefficient frame exhibits the signs, the transpose and the real forms. The two frames are therefore not interchangeable, and each article says which of the two it uses and what the other adds.</p>
+<p><strong>The Peirce frame.</strong> The <strong>Peirce frame</strong> is the ordered basis</p>
+<p>$$
+\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
+$$</p>
+<p>with the standard pair and its mixed units</p>
+<p>$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y).
+$$</p>
+<p>It is the canonical frame of the matrix models: in it the left and the right regular matrices take their block form, and the Peirce coordinates are the coordinates of the decomposition. The pair is a choice of frame, owned by <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>, and it fixes nothing in the algebra.</p>
 <h2 id="summary">Summary</h2>
 <p>The matrix of an operator is written $[F]_{\mathcal{B}}$, and its $j$-th column is the coordinate column of $F(b_j)$. For a fixed frame the bracket is an algebra isomorphism $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to M_4(\mathbb{C})$, of complex dimension sixteen on both sides. A change of frame $C$ conjugates the matrix, $[F]_{\mathcal{B}'}=C^{-1}[F]_{\mathcal{B}}C$, and the similarity orbit is the operator read in all frames.</p>
 <p>The trace, the determinant, the characteristic polynomial, the spectrum, the minimal polynomial and the rank are invariants of the operator and are read on any of its matrices. The trace is linear and cyclic, the determinant is multiplicative, and the rank is the dimension of the image. The characteristic polynomial is monic of degree four and splits over $\mathbb{C}$; the minimal polynomial divides it and is the finer invariant. There is no canonical matrix for a general operator, and an entry is a function of the operator and the frame together.</p>

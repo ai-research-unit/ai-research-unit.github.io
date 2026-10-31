@@ -90,8 +90,9 @@ $$
 $$
 The coefficient basis is the conjugate display, related by the Peirce change $C_{\Pi}$.</p>
 <p><strong>Boundaries.</strong> The abstract Peirce decomposition is <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the planes and the exchange are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the right regular matrix is <em>Matrix Representations : The Centraliser and the Double Centraliser</em>; the diagonalising matrix is <em>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</em>.</p>
-<h2 id="the-peirce-table">The Peirce Table</h2>
-<p><strong>The four Peirce elements multiply as the four matrix units.</strong></p>
+<h2 id="common-aspects">Common Aspects</h2>
+<p>A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. In the entry model the four corner coordinates are the four entries of the matrix, and the four corner elements are the four matrix units. In the regular model the same four elements become rank-two matrices, and the corner matrix is duplicated. The duplication is the two spinor planes, and the entry model is the compression of the regular matrix to one of them.</p>
+<p><strong>The Peirce table.</strong> The four Peirce elements multiply as the four matrix units:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -135,51 +136,77 @@ $$
 \vec\Upsilon_-\longmapsto E_{12},\qquad
 \tilde\Pi_-\longmapsto E_{22},
 $$
-and the table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$.</p>
-<p><strong>The order.</strong> The two idempotents are the two diagonal units, and the two nilpotents are the two off-diagonal units. The order $(\Pi_+,\Upsilon_+,\Upsilon_-,\Pi_-)$ puts the first column of the corner matrix in the first two coordinates and the second column in the last two: it is the order in which the two spinor planes are contiguous.</p>
-<h2 id="the-corner-coordinates">The Corner Coordinates</h2>
-<p><strong>The expansion.</strong> Every element has a unique expansion
+and the table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The order $(\Pi_+,\Upsilon_+,\Upsilon_-,\Pi_-)$ puts the first column of the corner matrix in the first two coordinates and the second column in the last two: it is the order in which the two spinor planes are contiguous.</p>
+<p><strong>The corner coordinates.</strong> Every element has a unique expansion
 $$
 \tilde Q=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
+\qquad
+\tilde Q\longmapsto B=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix},
 $$
-and the map
-$$
-\tilde Q\longmapsto B=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}
-$$
-is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$. It is the fixed model $\mathsf M_2$.</p>
-<p><strong>The recovery.</strong> The four coordinates are the trace pairings with the four matrix units:
+an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$. The four coordinates are the trace pairings with the matrix units,
 $$
 a_{11}=\operatorname{Tr}(E_{11}B),\qquad
 a_{12}=\operatorname{Tr}(E_{12}B),\qquad
 a_{21}=\operatorname{Tr}(E_{21}B),\qquad
-a_{22}=\operatorname{Tr}(E_{22}B).
+a_{22}=\operatorname{Tr}(E_{22}B),
 $$
-In the regular model each block carries one copy, so every coefficient is half the corresponding $4\times4$ trace:
+and in the regular model every coefficient is half the corresponding $4\times4$ trace:
 $$
 a_{ij}=\tfrac12\operatorname{Tr}_4\bigl((I_2\otimes E_{ij})\,M\bigr).
-$$</p>
-<p><strong>The coefficient form.</strong> With $B=\mathsf M_2(\tilde Q)$, the four entries are
+$$
+With $B=\mathsf M_2(\tilde Q)$ the four entries are
 $$
 a_{11}=Q_t-iQ_z,\qquad
 a_{12}=-iQ_x-Q_y,\qquad
 a_{21}=-iQ_x+Q_y,\qquad
 a_{22}=Q_t+iQ_z.
 $$
-The two invariants are
+The invariant is $\operatorname{Tr}_2B=2Q_t$, $\det B=\langle\tilde Q\rangle_{\natural}$, and in the regular model $\operatorname{Tr}_4M=4Q_t$, $\det M=\langle\tilde Q\rangle_{\natural}^2$: the trace is multiplied by the dimension of the multiplicity space and the determinant is squared.</p>
+<p><strong>One system of matrix units.</strong> A system of $2\times2$ matrix units is a family with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $E_{11}+E_{22}=e_t$. The four Peirce elements satisfy these relations exactly. They are not a system of $4\times4$ units: in the regular model each goes to $I_2\otimes E_{ij}$, of rank two, and the four together span only four complex dimensions, while a system of $4\times4$ units has sixteen elements. The regular model carries one system of $2\times2$ units, duplicated.</p>
+<p><strong>The reciprocal scaling.</strong> The two mixed elements are normalised by $E_{12}E_{21}=E_{11}$. Replacing $E_{12}$ by $\mu E_{12}$ and $E_{21}$ by $\mu^{-1}E_{21}$ leaves every product unchanged. In the regular model the scaling acts on both blocks simultaneously, so the reciprocal $\mathbb{C}^{\times}$ is one scalar, not one scalar per block.</p>
+<p><strong>The two planes.</strong> The Peirce planes are
 $$
-\operatorname{Tr}_2B=2Q_t,
+S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
 \qquad
-\det B=Q_t^2+B^2=\langle\tilde Q\rangle_{\natural},
+S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
 $$
-and in the regular model
+and in the Peirce basis they are the first two and the last two coordinates: $S_+\mapsto\{(x,y,0,0)\}$, $S_-\mapsto\{(0,0,z,w)\}$, $\mathbb{C}^4=S_+\oplus S_-$. The two diagonal blocks of the regular matrix are exactly these planes.</p>
+<p><strong>The left and right actions.</strong> Left multiplication by $\tilde P$ preserves each plane and acts on both by the same matrix:
 $$
-\operatorname{Tr}_4M=2\operatorname{Tr}_2B=4Q_t,
+L_{\tilde P}|_{S_+}=L_{\tilde P}|_{S_-}=\mathsf M_2(\tilde P).
+$$
+Left multiplication never mixes the two planes; the two copies are the multiplicity of the regular representation, not two chiralities. Right multiplication by the mixed units swaps the planes,
+$$
+R_{\vec\Upsilon_-}=\begin{pmatrix}0&0\\ \mathrm I_2&0\end{pmatrix},
 \qquad
-\det M=(\det B)^2=\langle\tilde Q\rangle_{\natural}^2.
+R_{\vec\Upsilon_+}=\begin{pmatrix}0&\mathrm I_2\\0&0\end{pmatrix},
 $$
-The trace is the trace of the corner matrix multiplied by the dimension of the multiplicity space, and the determinant is its determinant squared.</p>
-<h2 id="the-regular-matrix-as-the-duplicated-corner-matrix">The Regular Matrix as the Duplicated Corner Matrix</h2>
-<p><strong>The block form.</strong> In the Peirce frame
+and both blocks move together. The Peirce index is therefore: left multiplication preserves each block, right multiplication swaps them.</p>
+<p><strong>The column-space caution.</strong> The column space of $\mathsf M_4^L(\tilde\Pi_+)$ is not $S_+$. It is the image of left multiplication by $\tilde\Pi_+$,
+$$
+\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
+$$
+the right Peirce row, and in the Peirce basis it is the first and third coordinates. A rank-two idempotent matrix projects onto the row generated by its idempotent, not onto the plane that the idempotent generates from the left. The two planes of this article are the two blocks, not the column spaces of the two idempotents.</p>
+<p><strong>The nilpotents and the idempotents.</strong> A nilpotent is a nonzero element of a mixed Peirce corner, so its image is $\mu\,I_2\otimes E_{12}$ or $\mu\,I_2\otimes E_{21}$ with $\mu\in\mathbb{C}^{\times}$: square-zero, traceless and of rank two. Every nilpotent is a nonzero scalar multiple of one of the two standard nilpotents, conjugated by an inner automorphism. Every nontrivial idempotent is a product of two nilpotents from opposite corners, rescaled so that $uw=\tilde\Pi$; the trivial idempotent $e_t$ is the exception, because a product equal to a unit has unit factors and a nilpotent is not a unit.</p>
+<h2 id="the-math71-frame">The $S_3$ Frame</h2>
+<p><strong>The coefficient display.</strong> In the coefficient basis the regular matrix is
+$$
+M_{\mathrm{coef}}=C_{\Pi}\,(I_2\otimes B)\,C_{\Pi}^{-1}.
+$$
+The duplication is hidden there: the coefficient matrix is full, and the two blocks are visible only after the change $C_{\Pi}$. The coefficient frame is therefore the frame in which the corner structure is encoded in the entries rather than displayed in blocks.</p>
+<p><strong>The coordinates in coefficient form.</strong> The corner coordinates are the entries of $B$, but the coefficient matrix has entries that are sums of the four coefficients. The four corner elements in coefficient coordinates are the columns of $C_{\Pi}$; the first and last are the idempotents, the two middle are the nilpotents. The four coordinates $a_{ij}$ are recovered by the trace pairings $a_{ij}=\tfrac12\operatorname{Tr}_4((I_2\otimes E_{ij})M_{\mathrm{coef}})$, where $I_2\otimes E_{ij}=C_{\Pi}^{-1}(I_2\otimes E_{ij})C_{\Pi}$ is the coefficient matrix of the corner element.</p>
+<p><strong>The exchange.</strong> Right multiplication by the mixed units in the coefficient frame is the conjugate of the block swap, $C_{\Pi}R_{\vec\Upsilon_\pm}C_{\Pi}^{-1}$. It is not a simple permutation of the coefficient coordinates: the coefficient basis does not split the two planes. The block language is native to the Peirce frame, and the coefficient frame carries the same structure in dressed form.</p>
+<h2 id="the-math80-math81-frame">The $2\times2$ $z$ Frame</h2>
+<p><strong>The corner matrix.</strong> The entry model is the corner matrix itself,
+$$
+B=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+$$
+Its four entries are the four Peirce coordinates, and the four standard matrix units are the four Peirce elements. The trace is $2Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}$.</p>
+<p><strong>The matrix units and the planes.</strong> The two columns of $B$ are the coordinates of $\tilde Q\tilde\Pi_+$ and $\tilde Q\vec\Upsilon_+$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$; the two rows are the coordinates in the dual row basis. The left plane $S_+$ is the first two coordinates of the regular display, and the entry matrix is the action on that plane. The entry model is therefore the compression of the regular matrix to one spinor plane.</p>
+<p><strong>The nilpotents.</strong> The standard nilpotents are $E_{12}$ and $E_{21}$, of rank one and square-zero. Every nilpotent is a nonzero scalar multiple of one of them, conjugated by an inner automorphism of $M_2(\mathbb{C})$. Every nontrivial idempotent is a product of two of them, rescaled to $uw=E_{11}$.</p>
+<h2 id="the-math94-math95-frame">The $4\times4$ $z$ Frame</h2>
+<p><strong>The duplicated corner matrix.</strong> In the Peirce frame
 $$
 M=\mathsf M_4^L(\tilde Q)=
 \begin{pmatrix}
@@ -191,15 +218,7 @@ a_{21}&a_{22}&0&0\\
 =\operatorname{diag}(B,B).
 $$
 The two blocks are identical. The duplication is the regular representation: every element acts on the algebra by left multiplication, and the algebra is the direct sum of two copies of the same module.</p>
-<p><strong>The coefficient frame.</strong> In the coefficient basis the same matrix is
-$$
-M_{\mathrm{coef}}=C_{\Pi}\,(I_2\otimes B)\,C_{\Pi}^{-1}.
-$$
-The duplication is hidden there: the coefficient matrix is full, and the two blocks are visible only after the change $C_{\Pi}$.</p>
-<p><strong>The isomorphism.</strong> The map $\tilde Q\mapsto B$ is the algebra isomorphism; the map $\tilde Q\mapsto I_2\otimes B$ is the regular representation. The first is one copy of the corner matrix, the second is two copies. The two agree on the corner table because the table is the table of matrix units.</p>
-<h2 id="one-system-of-matrix-units">One System of Matrix Units</h2>
-<p><strong>The four Peirce elements are one system of $2\times2$ matrix units.</strong> A system of $2\times2$ matrix units is a family $\{E_{ij}\}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $E_{11}+E_{22}=e_t$. The four Peirce elements satisfy these relations exactly.</p>
-<p><strong>They are not a system of $4\times4$ units.</strong> In the regular model each Peirce element goes to the rank-two matrix
+<p><strong>The rank-two units.</strong> Each Peirce element goes to
 $$
 \mathsf M_4^L(\tilde\Pi_+)=I_2\otimes E_{11},
 \quad
@@ -207,65 +226,11 @@ $$
 \quad
 \mathsf M_4^L(\vec\Upsilon_-)=I_2\otimes E_{12},
 \quad
-\mathsf M_4^L(\tilde\Pi_-)=I_2\otimes E_{22}.
+\mathsf M_4^L(\tilde\Pi_-)=I_2\otimes E_{22},
 $$
-Each has rank two, each is an idempotent or a square-zero element, and the four together span only four complex dimensions. A system of $4\times4$ matrix units would have sixteen elements, and the image of $\mathbb{B}$ has dimension four. The regular model carries one system of $2\times2$ units, duplicated; it does not carry the sixteen units of $M_4(\mathbb{C})$.</p>
-<p><strong>The reciprocal scaling.</strong> The two mixed elements are normalised by $E_{12}E_{21}=E_{11}$. Replacing $E_{12}$ by $\mu E_{12}$ and $E_{21}$ by $\mu^{-1}E_{21}$ leaves every product of the system unchanged. In the regular model the scaling is diagonal in each block and acts on the two blocks simultaneously:
-$$
-I_2\otimes E_{12}\longmapsto \mu\,I_2\otimes E_{12},
-\qquad
-I_2\otimes E_{21}\longmapsto \mu^{-1}\,I_2\otimes E_{21}.
-$$
-The reciprocal $\mathbb{C}^{\times}$ of the system is therefore one scalar, not one scalar per block.</p>
-<h2 id="the-two-spinor-planes">The Two Spinor Planes</h2>
-<p><strong>The planes.</strong> The two Peirce planes are
-$$
-S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
-\qquad
-S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
-$$
-and in the Peirce basis they are the first two and the last two coordinates:
-$$
-S_+\longmapsto\{(x,y,0,0)\},
-\qquad
-S_-\longmapsto\{(0,0,z,w)\},
-\qquad
-\mathbb{C}^4=S_+\oplus S_-.
-$$
-The two diagonal blocks of the regular matrix are exactly these planes.</p>
-<p><strong>The left action.</strong> Left multiplication by $\tilde P$ preserves each plane and acts on both by the same matrix:
-$$
-L_{\tilde P}|_{S_+}=L_{\tilde P}|_{S_-}=\mathsf M_2(\tilde P).
-$$
-Left multiplication never mixes the two planes. The two copies are the multiplicity of the regular representation, not two chiralities.</p>
-<p><strong>The compression.</strong> The $2\times2$ model is the regular matrix compressed to one plane. On $S_+$ with the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, the matrix of left multiplication by $\tilde Q$ is $B$; the two columns of $B$ are the coordinates of $\tilde Q\tilde\Pi_+$ and $\tilde Q\vec\Upsilon_+$ in that basis. The $2\times2$ display therefore carries the action on one spinor plane, and the regular display carries the action on both. This is the compression statement of <em>Matrix Representations : The Models and the Change of Frame</em>, read in the Peirce frame.</p>
-<p><strong>The invariance.</strong> Each plane is a left ideal, so it is invariant under left multiplication by every element. The two planes are not the two eigenspaces of a general element; they are the two Peirce components, and the spectral eigenspaces are different planes unless the element points along the standard axis.</p>
-<p><strong>The star.</strong> The star carries a spinor plane to a right Peirce row, not to the other plane. The standard idempotents are Hermitian, so
-$$
-S_+^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
-$$
-which is the right Peirce row of $\tilde\Pi_+$, not $S_-$. The two planes are exchanged by right multiplication, not by the star.</p>
-<h2 id="left-and-right-multiplication">Left and Right Multiplication</h2>
-<p><strong>Right multiplication by the mixed units.</strong> In the Peirce frame,
-$$
-R_{\vec\Upsilon_-}=\begin{pmatrix}0&0\\ \mathrm I_2&0\end{pmatrix},
-\qquad
-R_{\vec\Upsilon_+}=\begin{pmatrix}0&\mathrm I_2\\0&0\end{pmatrix}.
-$$
-Hence $\xi\vec\Upsilon_-$ lies in $S_-$ for every $\xi\in S_+$, and $S_-\vec\Upsilon_-=0$; right multiplication by $\vec\Upsilon_+$ does the reverse. The two maps are inverse on the planes, and both blocks move together: the exchange is a single right multiplication, not a pair of independent maps on the two copies.</p>
-<p><strong>The Peirce index.</strong> Left multiplication preserves each block; right multiplication swaps them. The two blocks are the two Peirce copies, and the only operation of the algebra that relates them is multiplication on the right by a mixed unit. This is the matrix form of the fact that the algebra is a bimodule over itself, with the left action diagonal and the right action exchanging the two copies.</p>
-<h2 id="the-column-space-of-the-idempotent">The Column Space of the Idempotent</h2>
-<p><strong>A caution.</strong> The column space of $\mathsf M_4^L(\tilde\Pi_+)$ is not $S_+$. It is the image of left multiplication by $\tilde\Pi_+$, which is
-$$
-\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
-$$
-the right Peirce row, and in the Peirce basis it is the first and third coordinates. A rank-two idempotent matrix projects onto the row generated by its idempotent, not onto the plane that the idempotent generates from the left. The two planes of this article are the two blocks, not the column spaces of the two idempotents.</p>
-<p><strong>The two groupings.</strong> The four entries are grouped by columns and by rows. The columns give the two left planes $S_\pm=\mathbb{B}\tilde\Pi_\pm$; the rows give the two right Peirce rows $\tilde\Pi_\pm\mathbb{B}$. The same four entries carry both groupings, and the groupings differ: the first column and the first row meet in $E_{11}$, and together they span a three-dimensional space that is neither one of the two left planes nor one of the two right planes.</p>
-<h2 id="the-nilpotents">The Nilpotents</h2>
-<p><strong>The off-diagonal units.</strong> A nilpotent of $\mathbb{B}$ is a nonzero element of a mixed Peirce corner, so its image under $\mathsf M_4^L$ is a nonzero element of the image of $\mathbb{C}E_{12}$ or $\mathbb{C}E_{21}$ in the block form. Such an element is $\mu\,I_2\otimes E_{12}$ or $\mu\,I_2\otimes E_{21}$ with $\mu\in\mathbb{C}^{\times}$. Its square is zero, its trace is zero and its rank is two.</p>
-<p><strong>The conjugacy.</strong> Every nilpotent is a nonzero scalar multiple of one of the two standard nilpotents, conjugated by an inner automorphism of the algebra. The scalar is the coordinate of the nilpotent in its corner, and the conjugacy is the change of the Peirce frame. In the regular model the conjugacy is the block-diagonal conjugation by the two copies of the same unit.</p>
-<p><strong>The Jordan form.</strong> A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.</p>
-<p><strong>The idempotents.</strong> Every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents. The two mixed corners of an idempotent and its complement are square-zero, and a nonzero pair $u,w$ from opposite corners can be rescaled to $uw=\tilde\Pi$. The trivial idempotent $e_t$ is the exception, because a product equal to a unit has unit factors and a nilpotent is not a unit.</p>
+of rank two, idempotent or square-zero, spanning four complex dimensions. The regular model carries one system of $2\times2$ units, duplicated; it does not carry the sixteen units of $M_4(\mathbb{C})$.</p>
+<p><strong>The two planes and the actions.</strong> The two blocks are $S_+$ and $S_-$. Left multiplication acts on each by the same $B$ and never mixes them; right multiplication by $\vec\Upsilon_-$ sends $S_+$ to $S_-$ and kills $S_-$, and right multiplication by $\vec\Upsilon_+$ does the reverse. The two maps are inverse on the planes. The column space of $I_2\otimes E_{11}$ is the right Peirce row, spanned by the first and third Peirce coordinates, not the left plane $S_+$; the two groupings of the four entries by columns and by rows are different, and the first column and the first row meet in $E_{11}$ and together span a three-dimensional space that is neither a left plane nor a right plane.</p>
+<p><strong>The nilpotents.</strong> The nilpotents are $\mu\,I_2\otimes E_{12}$ and $\mu\,I_2\otimes E_{21}$, of rank two, square-zero, traceless, and conjugate to the direct sum of two Jordan blocks, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.</p>
 <h2 id="summary">Summary</h2>
 <p>The four Peirce elements are one system of $2\times2$ matrix units; in the regular model they become the rank-two matrices $I_2\otimes E_{ij}$, and the corner matrix is duplicated: $\mathsf M_4^L(\tilde Q)=\operatorname{diag}(B,B)$ in the frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The $2\times2$ model is the compression of the regular matrix to one plane. The four Peirce elements are not a system of $4\times4$ units.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
