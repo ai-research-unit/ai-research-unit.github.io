@@ -86,7 +86,7 @@ $$</p>
 <p>The programme writes the same field as the dual $-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$; the two differ by the central factor $-i$, and no separate symbol is used for the dual.</p>
 <p>The symmetrized Maxwell system for this object is one complex equation and one complex scalar equation,</p>
 <p>$$
-\boxed{\;\partial_\tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
+\boxed{\;\partial/\partial \tau \tilde F + i\,\mathrm{rot}\,\tilde F + i\,\vec J = 0,
 \qquad
 \rho = -i\,\mathrm{div}\,\tilde F = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
 \qquad
@@ -114,9 +114,9 @@ $$</p>
 <h2 id="the-mutual-complex-gradients">The Mutual Complex Gradients</h2>
 <p>The programme's generating device is a pair of first-order operators, called the <strong>mutual complex gradients</strong>,</p>
 <p>$$
-D^+ = \partial_\tau + i\nabla,
+D^+ = \partial/\partial \tau + i\nabla,
 \qquad
-D^- = \partial_\tau - i\nabla,
+D^- = \partial/\partial \tau - i\nabla,
 \qquad
 \Box = D^-D^+ = D^+D^- ,
 $$</p>
@@ -132,21 +132,21 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$D^+ = \partial_\tau + i\nabla$</td>
+<td>$D^+ = \partial/\partial \tau + i\nabla$</td>
 <td>$D^+ = i\,\tilde{\nabla}$</td>
-<td>$D^-D^+ = \partial_\tau^2 - \Delta$</td>
+<td>$D^-D^+ = \partial^2/\partial \tau^2 - \Delta$</td>
 </tr>
 <tr>
-<td>$D^- = \partial_\tau - i\nabla$</td>
+<td>$D^- = \partial/\partial \tau - i\nabla$</td>
 <td>$D^- = i\,\tilde{\nabla}^{\natural}$</td>
 <td>$\Box_{\mathrm{corpus}} = \tilde{\nabla}\tilde{\nabla}^{\natural} = -\,D^-D^+$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The sign in the last column is the whole of the difference: the corpus works in the $ict'$ (Euclidean) convention, where $\partial/\partial Q_t = -i\,\partial_\tau$ and $\Box = \partial^2/\partial Q_t^2 + \Delta$ is elliptic, while the programme works in the $\tau = ct'$ (hyperbolic) convention, where $\Box = \partial_\tau^2 - \Delta$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.</p>
+<p>The sign in the last column is the whole of the difference: the corpus works in the $ict'$ (Euclidean) convention, where $\partial/\partial Q_t = -i\,\partial/\partial \tau$ and $\Box = \partial^2/\partial Q_t^2 + \Delta$ is elliptic, while the programme works in the $\tau = ct'$ (hyperbolic) convention, where $\Box = \partial^2/\partial \tau^2 - \Delta$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.</p>
 <p><strong>The homogeneous biwave equation as an external-field transformation.</strong> The fourth paper of the <em>Differential algebra of biquaternions</em> series reads the same gradients with a coefficient. It takes</p>
 <p>$$
-\nabla^\pm B + F\circ B = G, \qquad \nabla^\pm = \partial_\tau \pm i\,\nabla,
+\nabla^\pm B + F\circ B = G, \qquad \nabla^\pm = \partial/\partial \tau \pm i\,\nabla,
 $$</p>
 <p>with a <strong>constant</strong> structural coefficient $F = f + \vec F$, and it observes that in the vector-coefficient case the homogeneous equation can also be read as the equation of transformation of mass-charges and of electric and gravimagnetic currents in an <strong>external</strong> electro-gravimagnetic field, whose strength is the vector $\vec F$ itself. The interpretation is a special case of the programme's own, and it is worth separating from the programme's statements. The objects that transform are exactly the ones this article has built — the charge–current biquaternion $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ and the power–force biquaternion $\tilde{\mathcal F} = M - i\vec F$ — and the coefficient is the <strong>external</strong> field's, taken constant, with no back-reaction of the current on the field it sits in. In the programme's interaction equations the field and the sources determine each other; here the field is given and the equation is linear in $B$, so the transformation is of a test current, not of a self-consistent pair. The source states the interpretation as a route open to its solutions rather than as a derivation, and it postpones the general case — a coefficient with both a scalar and a vector part, so that the external strength carries a scalar component as well — to the last paper of its cycle. The corpus records the route and the postponement and rests on neither. The solutions the interpretation concerns are the source's <strong>twistors</strong>, catalogued in <em>Twistor Theory and Biquaternions</em>; the stationary kernel and the operator's second-order form are in <em>The Yang–Mills Equation in Biquaternionic Form</em>, and the factorisation they make possible is in <em>The Klein–Gordon Equation in Biquaternionic Form</em>.</p>
 <h2 id="the-postulates-and-the-classical-limit">The Postulates, and the Classical Limit</h2>
@@ -157,16 +157,16 @@ $$</p>
 <h3 id="the-first-law-the-free-field">The first law: the free field</h3>
 <p>In the absence of other fields the force vanishes, and the interaction equation reduces to the inertia equation</p>
 <p>$$
-\boxed{\;D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
+\boxed{\;D^-\tilde J_{\mathrm{eg}} = (\partial/\partial \tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
 \qquad
 \tilde J_{\mathrm{eg}} = i\rho + \vec J\;}
 $$
 The subscript marks the programme's own charge–current; it is not the corpus four-current $\tilde J$.</p>
 <p>Its scalar and vector parts are</p>
 <p>$$
-\partial_\tau\rho + \mathrm{div}\,\vec J = 0,
+\partial/\partial \tau\rho + \mathrm{div}\,\vec J = 0,
 \qquad
-\nabla\rho + \partial_\tau\vec J - i\,\mathrm{rot}\,\vec J = 0 .
+\nabla\rho + \partial/\partial \tau\vec J - i\,\mathrm{rot}\,\vec J = 0 .
 $$</p>
 <p>This is verified by expanding the product in the algebra; the scalar equation is the conservation of the combined charge–current, and the vector equation couples the charge gradient to the currents, the solenoidal gravimagnetic current feeding the electric current and conversely. Taking the divergence or the curl of the vector equation and using the scalar equation gives homogeneous wave equations for $\rho$ and $\vec J$: in a free field the charges and currents <strong>disperse</strong> at speed $c$. The author names this the analogue of inertia — a free field carries its charges as waves, with nothing holding them together.</p>
 <h3 id="the-free-source-in-components-and-as-a-spinor">The free source in components and as a spinor</h3>
@@ -177,9 +177,9 @@ $$</p>
 \partial/\partial t'\rho_H + \mathrm{div}\,\vec j_H = 0,
 $$</p>
 <p>$$
-\partial_\tau\vec j_E = \sqrt{\epsilon/\mu}\;\mathrm{rot}\,\vec j_H - c\,\mathrm{grad}\,\rho_E,
+\partial/\partial \tau\vec j_E = \sqrt{\epsilon/\mu}\;\mathrm{rot}\,\vec j_H - c\,\mathrm{grad}\,\rho_E,
 \qquad
-\partial_\tau\vec j_H = -\sqrt{\mu/\epsilon}\;\mathrm{rot}\,\vec j_E - c\,\mathrm{grad}\,\rho_H .
+\partial/\partial \tau\vec j_H = -\sqrt{\mu/\epsilon}\;\mathrm{rot}\,\vec j_E - c\,\mathrm{grad}\,\rho_H .
 $$</p>
 <p>The first pair says that in a free field the electric and the gravimagnetic charge are separately conserved; the second says that each current is driven by the curl of the <em>other</em> current and by the gradient of its own charge. Both pairs were checked against the expansion of $D^-\tilde J_{\mathrm{eg}}=0$, with residuals at machine precision ($5\times10^{-16}$).</p>
 <p>The source draws two further consequences for a free field, and the corpus records them as the programme's. The electric and the gravimagnetic charge density can each be of either sign; and under a <strong>stationary vibration</strong> — the monochromatic free solutions of the same law, developed in <em>Harmonic Elementary Particles and the Periodic System of Atoms</em> — the electric charge is said to pass into the gravimagnetic charge and back. The second claim sits in visible tension with the two separate conservation laws displayed just above, which forbid such an interchange in a free field; the source does not reconcile the two, and it gives no rate and no selection rule for the transfer.</p>
@@ -215,12 +215,12 @@ $$</p>
 $$</p>
 <p>where $\mathcal{Q}$ contains the Joule heat $\|\vec j_E\|^2$ and the kinetic energy of the mass current $\|\vec j_H\|^2$. The vector $\vec P_J$ is the current-field analogue of the Poynting vector and vanishes when the two currents are parallel or one is absent. The balance law has the shape of the first law of thermodynamics,</p>
 <p>$$
-\kappa\left(\partial_\tau \mathcal{Q} - \mathrm{div}\,\vec P_J + \mathrm{Re}(\nabla\rho,\vec J^*)\right) = \mathrm{Im}\big(\tilde{\mathcal F},\vec J^*\big),
+\kappa\left(\partial/\partial \tau \mathcal{Q} - \mathrm{div}\,\vec P_J + \mathrm{Re}(\nabla\rho,\vec J^*)\right) = \mathrm{Im}\big(\tilde{\mathcal F},\vec J^*\big),
 $$</p>
 <p>with $\tilde{\mathcal F}$ the power–force biquaternion. The left side is the rate of change of the current energy, minus its flux, and one further term; the right side is the power supplied by the external force, which can increase or decrease that rate. The source presents this as the field analogue of the first law, with the extra term playing the part of the internal-energy change that an external work can offset. The sign of the flux term is fixed by the derivation — the inner product of the second-law equation with $i\bar{\vec J}$ gives $-c^{-1}\,\mathrm{div}(\vec j_H\times\vec j_E)$ and no other sign — and it is worth recording that the 2007 preprint prints the same law with $+\mathrm{div}\,\vec P_J$ while the 2009 paper prints the minus; the corpus takes the minus.</p>
 <p><strong>The free field specializes the law to a decay.</strong> With no other field the right side vanishes and the balance becomes</p>
 <p>$$
-\partial_\tau \mathcal{Q} = -\mathcal U ,
+\partial/\partial \tau \mathcal{Q} = -\mathcal U ,
 $$</p>
 <p>with $\mathcal U$ the sum of the current-field flux divergence and the two charge-gradient terms (the source's $U$; the corpus writes $\mathcal U$ to keep the boost biquaternion's $U$ free). The source presents this as the first law of a free source and asserts $\mathcal U \geq 0$: an isolated charge–current field loses its energy density at a rate it does not bound, which is the dissipative half of the inertia interpretation of the next section and is consistent with the dispersal of the free field's charges. The corpus carries the shape of the statement and not the coefficients of $\mathcal U$: recomputed from the paper's own definitions of $\rho$ and $\vec J$, the two medium factors are placed differently in the printed expression, and the sign of the charge-gradient pair depends on which of the paper's two uses of the star is taken. The inequality $\mathcal U \geq 0$ is asserted, not proved.</p>
 <h2 id="the-2009-revision-transformations-the-scalar-field-and-the-open-system">The 2009 Revision: Transformations, the Scalar Field and the Open System</h2>
@@ -267,11 +267,11 @@ $$</p>
 $$</p>
 <p>with $a = a(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ the <strong>scalar resistance field</strong>. The modified Maxwell system then reads, in the programme's own symbols,</p>
 <p>$$
-\vec J = i\,\partial_\tau\vec F - \mathrm{rot}\,\vec F + \mathrm{grad}\,a,
+\vec J = i\,\partial/\partial \tau\vec F - \mathrm{rot}\,\vec F + \mathrm{grad}\,a,
 \qquad
-\rho = -i\,\mathrm{div}\,\vec F - \partial_\tau a,
+\rho = -i\,\mathrm{div}\,\vec F - \partial/\partial \tau a,
 $$</p>
-<p>which is the pair of the first section with $\mathrm{grad}\,a$ added to the current and $-\partial_\tau a$ added to the charge, and which reduces to that pair precisely when $a = 0$ and the system is closed. Those two additions are the only two places the complex-gradient structure can put a scalar, so the modification is forced once $a$ is admitted: there is no third term to choose.</p>
+<p>which is the pair of the first section with $\mathrm{grad}\,a$ added to the current and $-\partial/\partial \tau a$ added to the charge, and which reduces to that pair precisely when $a = 0$ and the system is closed. Those two additions are the only two places the complex-gradient structure can put a scalar, so the modification is forced once $a$ is admitted: there is no third term to choose.</p>
 <p><strong>The integrability interpretation.</strong> In the corpus's language the ordinary conservation law is the integrability condition of the sourced Maxwell equation. Applying $\mathrm{Sc}\,\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ annihilates the left side, because $\tilde{\nabla}^{\natural}\tilde{\nabla}$ is the scalar d'Alembertian and $\tilde{F}$ has no scalar part; what survives is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$. With the scalar part $ia$ retained in $\tilde F_a$, the same calculation gives</p>
 <p>$$
 \boxed{\;\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = -\,\Box\,(i a)
@@ -305,7 +305,7 @@ $$
 $$
 while the mutual bigradients transform by the same conjugation — the paper's Lemma 5.1, whose corpus form is the covariance identity of that article — so the gradient of a transformed field is the transform of the gradient. Every term of the interaction system therefore acquires the same pair of rotor factors, and the equation is form-invariant. Both facts were checked independently on random rotors and random biquaternions: the automorphism, and the unit norm $L\circ L^{*} = 1$ that makes $L^{*}$ an inverse.</p>
 <p><strong>The reconciliation with the 2009 finding.</strong> The corpus records both results and states the interpretation that makes them compatible. The 2009 finding is about a <em>condition</em>: the statement $M = 0$, that a single source is closed, is not a Lorentz-invariant statement, because a four-vector whose time component vanishes in one frame has a non-vanishing one in another. The 2017 theorem is about <em>equations</em>: the interaction system is covariant. An open system's equations can be covariant while the condition that a subsystem be closed is not, and the two statements are then about different objects. The 2009 scalar field $a$ is the programme's mechanism for the second and does not enter the 2017 proof of the first. The paper itself does not mention the 2009 conservation finding, so the corpus states this interpretation as its own and leaves open whether the invariance theorem is intended for the modified system.</p>
-<p><strong>The Lorentz condition, in a different role.</strong> The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial_\tau\phi = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of <em>Maxwell's Equations in the Biquaternionic Formulation</em> carries the cross-reference.</p>
+<p><strong>The Lorentz condition, in a different role.</strong> The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial/\partial \tau\phi = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of <em>Maxwell's Equations in the Biquaternionic Formulation</em> carries the cross-reference.</p>
 <h2 id="the-static-limit-and-the-coupling">The Static Limit and the Coupling</h2>
 <p>The revision adds the scalar field to the strength, and with it the model can be compared with Newtonian gravity in the static case. The static form of the modified system is</p>
 <p>$$
@@ -365,7 +365,7 @@ $$</p>
 <p>The two papers' second-law postulates differ by the sign of $\tilde J_{\mathrm{eg}}$, and the two interaction energies differ accordingly in the sign of their cross terms while their per-field pieces agree; the corpus quotes each in its own paper's convention. The <strong>conjugation convention must also be fixed before the two papers' pair terms are compared term by term</strong>: recomputed with the 2007 paper's own conjugation $F^* = \bar f - \bar F$ instead of the coefficient conjugate, the same pair term has a real scalar part and a purely imaginary vector part, so the two are different objects and not sign multiples of one another. The expansion above is the coefficient-convention one, which is the convention in which this article writes the energy display.</p>
 <h2 id="the-integrated-laws-and-the-rigid-body-analogue">The Integrated Laws and the Rigid-Body Analogue</h2>
 <p>The programme's conservation laws can be written in integral form, and the second law can be integrated over a fixed volume into a law for a body.</p>
-<p>The source's Theorem 1.1 states that a solution of the field equation satisfies $\partial_\tau\rho + \mathrm{div}\,\vec J = 0$ and $\partial_\tau W + \mathrm{div}\,\vec P = c^{-1}(\vec j_H\!\cdot\!\vec H - \vec j_E\!\cdot\!\vec E)$. The divergence theorem and Stokes' theorem then give the integral balances over a fixed domain $D^-$ with outward unit normal $\vec w$: the enclosed charge changes only through the flux of $\vec J$ across the boundary, the enclosed energy only through the flux of the Poynting vector plus the work of the currents on their own field, and two further relations express the field through its boundary values and its current,</p>
+<p>The source's Theorem 1.1 states that a solution of the field equation satisfies $\partial/\partial \tau\rho + \mathrm{div}\,\vec J = 0$ and $\partial/\partial \tau W + \mathrm{div}\,\vec P = c^{-1}(\vec j_H\!\cdot\!\vec H - \vec j_E\!\cdot\!\vec E)$. The divergence theorem and Stokes' theorem then give the integral balances over a fixed domain $D^-$ with outward unit normal $\vec w$: the enclosed charge changes only through the flux of $\vec J$ across the boundary, the enclosed energy only through the flux of the Poynting vector plus the work of the currents on their own field, and two further relations express the field through its boundary values and its current,</p>
 <p>$$
 \int_{D^-}\!\big(\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\tau)-\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,0)\big)\,dV + \int_0^\tau\! d\tau\!\int_{\partial D^-}\!(\vec w,\vec J)\,dS = 0,
 $$</p>
@@ -375,7 +375,7 @@ $$</p>
 <p>The second is the integrated form of the field equation: the field in a volume is fixed by its earlier value, by its boundary values and by the current that has flowed through the volume.</p>
 <p>Integrating the second law over a fixed volume gives the momentum law. Write $m_{D^-}(t')$ and $ϙ_{D^-}(t')$ for the total gravimagnetic (mass) and electric charge in $D^-$. Using the divergence theorem, and taking the two field values on the right at a fixed point of $D^-$ by the mean-value theorem,</p>
 <p>$$
-\kappa\sqrt{\epsilon}\,\partial_\tau\!\int_{D^-}\!\vec j_H\,dV
+\kappa\sqrt{\epsilon}\,\partial/\partial \tau\!\int_{D^-}\!\vec j_H\,dV
 + \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec w + \sqrt{\mu}\,(\vec w,\vec j_E)\Big)dS(x)
 = ϙ_{D^-}\vec E_2 + m_{D^-}\vec H_2
 + \int_{D^-}\!\big(\vec j_E\times\vec B_2 - \vec j_H\times\vec D_2\big)dV .
@@ -392,9 +392,9 @@ $$</p>
 $$</p>
 <p>and writes the second law in the shape the momentum equation of a continuous medium has,</p>
 <p>$$
-\frac{\partial \sigma^{H}_{ik}}{\partial x_k} + F^{H}_i = \partial_\tau \Pi^{H}_i,
+\frac{\partial \sigma^{H}_{ik}}{\partial x_k} + F^{H}_i = \partial/\partial \tau \Pi^{H}_i,
 \qquad
-\frac{\partial \sigma^{E}_{ik}}{\partial x_k} + F^{E}_i = \partial_\tau \Pi^{E}_i,
+\frac{\partial \sigma^{E}_{ik}}{\partial x_k} + F^{E}_i = \partial/\partial \tau \Pi^{E}_i,
 $$</p>
 <p>with the density of mass forces $F^H$ the four-term half of the power–force biquaternion, a further resistance term when the scalar $a$ is present, and the momentum densities $\Pi^H = \kappa\sqrt{\epsilon}\,\vec j_H$, $\Pi^E = \kappa\sqrt{\mu}\,\vec j_E$ as the second-law component form normalises them. The 2009 display prints a different coefficient on the right side, one of the discrepancies recorded in this article, and the corpus carries the second law's own normalization. Two structural features are worth recording, and they are the reason the object is called a <em>pseudotensor</em>.</p>
 <p>The first is that it is <strong>not symmetric</strong>. The isotropic term is symmetric, and the antisymmetric part is entirely the current term,</p>
@@ -455,7 +455,7 @@ $$</p>
 \quad
 [\vec K]_S = i\,\vec m\,[k]_S + i\,[\vec m, [\vec K]_S].
 $$</p>
-<p>Two interpretations follow. A <strong>pure-vector</strong> bipotential, of which the dual field strength is the case, has $[k]_S = 0$, so the scalar relation forces $(\vec m, [\vec A]_S) = 0$ and the vector relation reduces to $[\vec A]_S = -i\,[\vec A]_S\times\vec m$: the jump is transverse and the null relation has one complex solution, the single complex amplitude of the two transverse polarisations — the same wave-front condition <em>Shock Electromagnetic Waves</em> derives. A bipotential with a <strong>non-vanishing scalar part</strong>, of which the charge–current field is the case, is generally longitudinal: the scalar jump is fixed by the longitudinal vector jump, the qualitative content of the section above. The source prints the null form with the sign of its operator $\nabla^{+} = \partial_\tau + i\nabla$; that operator differs from the $ict'$-normalized $\tilde\nabla$ by the central factor $-i$, and the corpus states the relation in the $ict'$ normalization above, the sign verified in both articles.</p>
+<p>Two interpretations follow. A <strong>pure-vector</strong> bipotential, of which the dual field strength is the case, has $[k]_S = 0$, so the scalar relation forces $(\vec m, [\vec A]_S) = 0$ and the vector relation reduces to $[\vec A]_S = -i\,[\vec A]_S\times\vec m$: the jump is transverse and the null relation has one complex solution, the single complex amplitude of the two transverse polarisations — the same wave-front condition <em>Shock Electromagnetic Waves</em> derives. A bipotential with a <strong>non-vanishing scalar part</strong>, of which the charge–current field is the case, is generally longitudinal: the scalar jump is fixed by the longitudinal vector jump, the qualitative content of the section above. The source prints the null form with the sign of its operator $\nabla^{+} = \partial/\partial \tau + i\nabla$; that operator differs from the $ict'$-normalized $\tilde\nabla$ by the central factor $-i$, and the corpus states the relation in the $ict'$ normalization above, the sign verified in both articles.</p>
 <h2 id="longitudinal-fronts-and-plane-wave-spinors">Longitudinal Fronts and Plane-Wave Spinors</h2>
 <p>The scalar field of the revision is not only the device that closes the system. In the programme it is also what makes the field's fronts and its plane waves longitudinal.</p>
 <p>On the front of an EGM shock the jumps of the field satisfy, in the source's form,</p>
@@ -515,7 +515,7 @@ $$</p>
 <p>The corpus's standing objection applies with full force. A field identified with gravity must pass the equivalence-principle and torsion-balance tests that constrain any fifth force; the programme states no range and no independent coupling strength of its own — where it meets gravity it fixes the field constant as $\mu = 1/(4\pi G)$, a re-expression of Newton's constant rather than a prediction of it — so nothing is yet constrained and nothing is distinguished from the standard theory. A solenoidal electric field of the Earth, or an electromass orbital shift, would be a large effect if it existed; the absence of a quantitative prediction is the programme's principal weakness, and the 2009 revision shows that even its internal consistency was provisional.</p>
 <p>The programme's later formulation goes further and reads the <strong>monochromatic</strong> solutions of its free charge–current field as elementary particles and atoms, classifying them by their density at the origin and placing them on the just-intonation musical scale as a periodic system. That construction is a separate body of material — it needs the Helmholtz factorisation of the free field rather than the interaction laws developed here — and it is recorded, developed and bounded in <em>Harmonic Elementary Particles and the Periodic System of Atoms</em>, with which this article shares only the charge–current biquaternion, the mutual complex gradients and the inertia law.</p>
 <h2 id="summary">Summary</h2>
-<p>The programme recorded here reads the field strength of the biquaternionic Maxwell equation as an electro-gravimagnetic field, under a hypothesis of its author: that magnetic charge density and gravitational mass density are the same thing. The interpretation gives the potential part of $\vec H$ to gravity and its solenoidal part to magnetism, and it is a hypothesis, not a consequence of the algebra. On that hypothesis the programme constructs a law structure: mutual complex gradients $D^\pm = \partial_\tau \pm i\nabla$, which are the corpus gradient in the $ict'$ convention up to $i$ and a sign; field analogues of Newton's three laws, with a free field whose charges disperse, an interaction equation whose right side is the force from the other field, and a third law whose scalar part equates two power densities and is compared to Betti's reciprocity identity; a thermodynamic analogue for the current field with density $\mathcal{Q} = \tfrac{1}{2}\|\vec J\|^2$ and flux $\vec P_J = \tfrac{1}{2}i\,\vec J\times\vec J^*$, which in the free field becomes the decay $\partial_\tau \mathcal{Q} = -\mathcal U$ with the source's asserted $\mathcal U \geq 0$; and a law of the single field, in which the sum of interacting fields is free and their interaction energy–momentum is the pairwise sum $\tilde{\Pi}_{kl} = \tfrac{1}{2}(\tilde F_k\circ\tilde F_l^* + \tilde F_l\circ\tilde F_k^*)$ (star = the source's conjugation $F^* = \bar f - \bar F$, the corpus's ${}^{*}$; the energy display's coefficient conjugate is a second use of the same symbol, and the two conventions must not be mixed). The 2009 revision moves that construction to the sources, $\tilde{\Sigma}_{kl} = \tfrac{1}{2}(\tilde J_{\mathrm{eg},k}\circ\tilde J_{\mathrm{eg},l}^* + \tilde J_{\mathrm{eg},l}\circ\tilde J_{\mathrm{eg},k}^*)$, where for a purely electric charge and current the pair term collapses to the central scalar $\rho_k\rho_l - (\vec J_k,\vec J_l)$, the Minkowski pairing of the two four-currents. The charge–current field also has shock waves, generally non-transverse, with the longitudinal current jump equal to the charge jump; and its solution theory is short — the first-order operator $D^\pm$ is inverted by $D^\mp$ followed by convolution with the simple layer on the light cone, and the interaction becomes a system of integral equations. The 2009 paper's continuum reading of the second law, with its non-symmetric stress pseudotensor whose antisymmetric part is dual to the electric current, is recorded with its structure but not with its coefficients, which do not close.</p>
+<p>The programme recorded here reads the field strength of the biquaternionic Maxwell equation as an electro-gravimagnetic field, under a hypothesis of its author: that magnetic charge density and gravitational mass density are the same thing. The interpretation gives the potential part of $\vec H$ to gravity and its solenoidal part to magnetism, and it is a hypothesis, not a consequence of the algebra. On that hypothesis the programme constructs a law structure: mutual complex gradients $D^\pm = \partial/\partial \tau \pm i\nabla$, which are the corpus gradient in the $ict'$ convention up to $i$ and a sign; field analogues of Newton's three laws, with a free field whose charges disperse, an interaction equation whose right side is the force from the other field, and a third law whose scalar part equates two power densities and is compared to Betti's reciprocity identity; a thermodynamic analogue for the current field with density $\mathcal{Q} = \tfrac{1}{2}\|\vec J\|^2$ and flux $\vec P_J = \tfrac{1}{2}i\,\vec J\times\vec J^*$, which in the free field becomes the decay $\partial/\partial \tau \mathcal{Q} = -\mathcal U$ with the source's asserted $\mathcal U \geq 0$; and a law of the single field, in which the sum of interacting fields is free and their interaction energy–momentum is the pairwise sum $\tilde{\Pi}_{kl} = \tfrac{1}{2}(\tilde F_k\circ\tilde F_l^* + \tilde F_l\circ\tilde F_k^*)$ (star = the source's conjugation $F^* = \bar f - \bar F$, the corpus's ${}^{*}$; the energy display's coefficient conjugate is a second use of the same symbol, and the two conventions must not be mixed). The 2009 revision moves that construction to the sources, $\tilde{\Sigma}_{kl} = \tfrac{1}{2}(\tilde J_{\mathrm{eg},k}\circ\tilde J_{\mathrm{eg},l}^* + \tilde J_{\mathrm{eg},l}\circ\tilde J_{\mathrm{eg},k}^*)$, where for a purely electric charge and current the pair term collapses to the central scalar $\rho_k\rho_l - (\vec J_k,\vec J_l)$, the Minkowski pairing of the two four-currents. The charge–current field also has shock waves, generally non-transverse, with the longitudinal current jump equal to the charge jump; and its solution theory is short — the first-order operator $D^\pm$ is inverted by $D^\mp$ followed by convolution with the simple layer on the light cone, and the interaction becomes a system of integral equations. The 2009 paper's continuum reading of the second law, with its non-symmetric stress pseudotensor whose antisymmetric part is dual to the electric current, is recorded with its structure but not with its coefficients, which do not close.</p>
 <p>The 2017 paper completes the programme's relativistic treatment on the equation side. It proves the charges–currents interaction system invariant under the Poincaré–Lorentz group and derives the four-vector transformation of the charge–current and of the power–force biquaternion, from which the electric and gravimagnetic density and current formulae follow. The invariance is of the <em>equations</em> and is compatible with the non-invariance of the <em>closedness condition</em> recorded in the revision, since the two are statements about different objects; whether the invariance theorem is meant for the modified, open system the paper does not say, and the corpus leaves the question open. The same paper imposes the Lorentz condition on the potential rather than treating it as a gauge choice, a difference of logical role from the corpus's own Maxwell article that is recorded above and not resolved.</p>
 <p>The corpus's relation to the programme is the same as to every external completion of the algebra: it can host the language, and it must state the cost. The identification of magnetic charge with gravitational mass is inserted, not forced. The model was revised by its author because the conservation law of a single source is not Lorentz invariant when fields interact; the revision, developed above, shows that the model's transformation law is the corpus's rotor with a half-rapidity angle, that the conservation law of an open source acquires the external power as its source term, and that the scalar field which repairs the integrability of the field equation obeys $\Box a \propto M$. In the static limit the same field gives Poisson's equation for a Newtonian potential and fixes the field constant as $\mu = 1/(4\pi G)$, so the identification carries a sign (attraction) and a coupling expressed through Newton's constant; and the free field carries, beside the transverse Maxwell waves, longitudinal plane modes whose longitudinal components are the jumps of the scalar field. The programme's physical consequences remain qualitative. Nothing here distinguishes the programme from standard physics. It is recorded because the corpus's Maxwell article raises the question of what the dual field strength could mean, and this is the most developed answer that has been proposed.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -548,7 +548,7 @@ $$</p>
 <td>Charge–current biquaternion</td>
 </tr>
 <tr>
-<td>$D^\pm = \partial_\tau \pm i\nabla$</td>
+<td>$D^\pm = \partial/\partial \tau \pm i\nabla$</td>
 <td>Mutual complex gradients</td>
 </tr>
 <tr>
@@ -589,7 +589,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal U$</td>
-<td>Free-field decay rate of $\mathcal{Q}$ (the source's $U$; $\partial_\tau \mathcal{Q} = -\mathcal U$, $\mathcal U \geq 0$ asserted)</td>
+<td>Free-field decay rate of $\mathcal{Q}$ (the source's $U$; $\partial/\partial \tau \mathcal{Q} = -\mathcal U$, $\mathcal U \geq 0$ asserted)</td>
 </tr>
 <tr>
 <td>$\tilde{\Pi}_{kl}$</td>

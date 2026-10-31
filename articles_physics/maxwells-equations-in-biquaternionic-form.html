@@ -159,7 +159,7 @@ $$</p>
 $$</p>
 <p>which is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. Equivalently, in tensor language,</p>
 <p>$$
-F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
+F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
 $$</p>
 <p>with components</p>
 <p>$$
@@ -175,7 +175,7 @@ $$</p>
 <p>$$
 F_{\mu\nu} = -F_{\nu\mu}.
 $$</p>
-<p><strong>A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.</strong> The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.</p>
+<p><strong>A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.</strong> The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.</p>
 <p>The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by <strong>Ludwik Silberstein</strong> in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the <strong>Riemann–Silberstein vector</strong>; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.</p>
 <h2 id="the-biquaternionic-source">The Biquaternionic Source</h2>
 <p>The source of the electromagnetic field is the <strong>four-current</strong></p>
@@ -269,7 +269,7 @@ $$</p>
 <p>$$
 \tilde{A}_{\mathrm g} = \tilde{A} - \tilde{\nabla} \Gamma,
 $$</p>
-<p>where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial_\mu \Gamma$.</p>
+<p>where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial/\partial Q_\mu \Gamma$.</p>
 <p>Under this transformation, the field-strength biquaternion is invariant:</p>
 <p>$$
 \tilde{F}_{\mathrm g} = \tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g}\right) = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right) = \tilde{F}.

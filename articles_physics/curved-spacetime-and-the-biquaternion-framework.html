@@ -230,11 +230,11 @@ $$</p>
 $$</p>
 <p>which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\vec\Gamma_\mu = -\left(\partial/\partial x_\mu\,\tilde U\right)\tilde U^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.</p>
 <h3 id="the-curved-dirac-operator-and-the-equation">The curved Dirac operator and the equation</h3>
-<p>The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial_{Q_t} + \vec e_k\,\partial_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
+<p>The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
 $$
-\tilde\nabla = -i\,e_t\,\partial_{t'} + \vec e_k\,\partial_k,
+\tilde\nabla = -i\,e_t\,\partial/\partial t' + \vec e_k\,\partial/\partial x_k,
 $$
-because $\partial_{t'}=i\partial_{Q_t}$. Its curved replacement substitutes the frame field for the <strong>rigid material frame</strong> and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
+because $\partial/\partial t'=i\partial/\partial Q_t$. Its curved replacement substitutes the frame field for the <strong>rigid material frame</strong> and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
 $$
 \tilde E_0=ie_t,\qquad \tilde E_k=\vec e_k,
 \qquad
@@ -261,11 +261,11 @@ $$</p>
 <p>Two consistency statements locate the construction.</p>
 <p>The <strong>flat limit</strong> is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde F_0=-ie_t$, $\tilde F_k=\vec e_k$ and $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, and take $\vec\Gamma_\mu=0$. Then
 $$
-\tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial_{x_\mu}
-=-i\,e_t\,\partial_{t'}+\vec e_k\,\partial_k
-=e_t\,\partial_{Q_t}+\vec e_k\,\partial_k=\tilde\nabla,
+\tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial/\partial x_\mu
+=-i\,e_t\,\partial/\partial t'+\vec e_k\,\partial/\partial x_k
+=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
 $$
-where the last equality uses $Q_t=ict'$ and $\partial_{t'}=i\partial_{Q_t}$, and the pair reduces to the flat pair of the parent article. The rigid frame is <strong>not</strong> $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial_{x_\mu}=e_t\partial_{t'}+i\vec e_k\partial_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.</p>
+where the last equality uses $Q_t=ict'$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is <strong>not</strong> $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.</p>
 <p>The <strong>square</strong> is the Lichnerowicz formula. Squaring the Dirac operator gives</p>
 <p>$$
 \boxed{\;(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R\;},
@@ -289,7 +289,7 @@ $$
 i\,e_{\mu a}\gamma_a\partial/\partial x_\mu\,\psi
 =i\gamma_0\,\bigl(\text{image of }\hat F_\mu\partial/\partial x_\mu\,\psi\bigr).
 $$
-The fixed $\gamma_0$ is the frame element, not part of the derivative; the derivative is the biquaternion-valued $\hat F_\mu\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and $\partial_{t'}=i\partial_{Q_t}$ relate the two, so they are not term-by-term identical, and the substitution $\tilde F_\mu\leftrightarrow e_{\mu a}\gamma_a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat F_\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.</p>
+The fixed $\gamma_0$ is the frame element, not part of the derivative; the derivative is the biquaternion-valued $\hat F_\mu\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame; the gamma transcription below is built from the informational frame. The fixed frame and $\partial/\partial t'=i\partial/\partial Q_t$ relate the two, so they are not term-by-term identical, and the substitution $\tilde F_\mu\leftrightarrow e_{\mu a}\gamma_a$ is not a rename. In the chiral-pair form the fixed frame drops out and the kinetic structure is $\hat F_\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$.</p>
 <p>J. Fredsted, <em>Obtaining consistent Lorentz gauging for a gravitationally coupled fermion</em> (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x_\mu \to D_\mu$ and the Euler–Lagrange variation <strong>do not commute</strong>. Varying the gauged action gives</p>
 <p>$$
 E_{\mathrm{grav}} = i\,e_{\mu a}\gamma_a\partial/\partial x_\mu\,\psi - m\psi
@@ -361,7 +361,7 @@ $$</p>
 <h2 id="an-external-claim-of-one-tensor-language-and-what-it-does-not-supply">An External Claim of One Tensor Language, and What It Does Not Supply</h2>
 <p>The two kinds of relativistic tensor dynamics — the antisymmetric one of electrodynamics and the symmetric one of relativity — are usually written differently, and there is an external claim that one biquaternion calculus carries both. E. P. J. de Haas (<em>Biquaternion Formulation of Relativistic Tensor Dynamics</em>, arXiv:1401.4470v1, 2013) constructs a biquaternion tensor calculus whose stated goal is exactly that fusion, in a language he describes as "very akin to the standard relativistic space-time language", and reports that it carries no extra terms relative to it. The claim is recorded here because this article's boundary list is where its scope has to be stated.</p>
 <p>What such a claim is: a <strong>representational unification at the level of the kinematical fibre</strong>. It shows that one notation can carry a symmetric rank-two tensor and an antisymmetric one at once — which is the vicinity of this article's own bookkeeping problem, since the framework's fields are four-vectors in $\mathbb{M}_-$ while the gravitating source is a symmetric rank-two tensor, $(1,1)\oplus(0,0)$ in the vocabulary of the list below in <em>What Is Constructed and What Is Agenda</em>.</p>
-<p>What it is <strong>not</strong>: a field equation. The paper supplies no action for the frame or for the connection, no selection of a metric, and no Einstein equation; by its author's own statement it presents known relativistic tensor dynamics in a new formalism, and it derives nothing. It is therefore not a partial answer to <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em>, and it does not advance the central open question there. The one thing it claims <strong>about the algebra</strong> — that the formulation produces no extra terms beyond the standard relativistic language, the condition being the Lorenz gauge $F_0 = \partial_\nu A_\nu = 0$ — is recorded, with its cautions, in <em>Relativistic Mechanics in Biquaternionic Form</em>.</p>
+<p>What it is <strong>not</strong>: a field equation. The paper supplies no action for the frame or for the connection, no selection of a metric, and no Einstein equation; by its author's own statement it presents known relativistic tensor dynamics in a new formalism, and it derives nothing. It is therefore not a partial answer to <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em>, and it does not advance the central open question there. The one thing it claims <strong>about the algebra</strong> — that the formulation produces no extra terms beyond the standard relativistic language, the condition being the Lorenz gauge $F_0 = \partial/\partial x_\nu A_\nu = 0$ — is recorded, with its cautions, in <em>Relativistic Mechanics in Biquaternionic Form</em>.</p>
 <p>The boundary of this article is unchanged by the claim, and the claim is unchanged by the boundary: one is about notation at a point, the other about dynamics for the field that attaches the notation to a curved manifold.</p>
 <h2 id="an-external-claim-that-the-bundle-basis-is-biquaternionic">An External Claim That the Bundle Basis Is Biquaternionic</h2>
 <p>A second external source reaches this article's own subject from the opposite direction, and it is worth separating from the first, because it claims more. D. J. Cirilo-Lombardo (<em>Algebraic structures, physics and geometry from a Unified Field Theoretical framework</em>, arXiv:1411.5493v3 [hep-th], 2015) works from a unified field theory unrelated to the corpus and asks what algebraic structure the <strong>basis</strong> of its principal fibre bundle $P(G,M)$ carries; his answer is the biquaternion algebra. The bundle is new here — no article of the series constructs a principal bundle over the manifold with the algebra in the basis — and the claim is <em>stronger</em> than anything this article has built, because a basis is exactly the thing the section <em>Curvature Cannot Be Carried by the Algebra</em> showed cannot carry curvature.</p>
@@ -458,7 +458,7 @@ $$</p>
 <td>Local imaginary time coordinate, material sector</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$</td>
+<td>$\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\vec e_k\partial/\partial x_k$</td>
 <td>Biquaternionic gradient, $Q_t=ict'$; needs a global chart</td>
 </tr>
 <tr>

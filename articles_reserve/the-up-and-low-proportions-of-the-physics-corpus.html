@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Up and Low Proportions of the Physics Corpus — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-up-and-low-proportions-of-the-physics-corpus"><strong>The Up and Low Proportions of the Physics Corpus</strong></h1>
+<p>The corpus is the 403 Markdown files of <code>articles_physics</code>. The count reads only the mathematics regions, inline and display: 105,571 regions holding 3,188,809 characters. One mark is one caret or one underscore.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mark</th>
+<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raised</td>
+<td style="text-align: right;">40,524</td>
+<td style="text-align: right;">25.3%</td>
+</tr>
+<tr>
+<td>Low</td>
+<td style="text-align: right;">119,756</td>
+<td style="text-align: right;">74.7%</td>
+</tr>
+<tr>
+<td>All</td>
+<td style="text-align: right;">160,280</td>
+<td style="text-align: right;">100%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rest of the article sorts the marks into what the convention validates and what it leaves open. The validation is about the job of the mark, not about its height alone.</p>
+<h2 id="non-validated">Non-Validated</h2>
+<h3 id="upper">Upper</h3>
+<p>One class of caret is open: the name.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>What it carries</th>
+<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>names and grades — $\mathrm{Cl}^i$, $K^0$, $M_4^\sigma$, $B^\sigma$ — and labels ${}^{(l)}$, ${}^{\mathrm{adj}}$, ${}^{abc}$</td>
+<td style="text-align: right;">4,238</td>
+<td style="text-align: right;">10.6%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The corpus raises a name 4,238 times and writes one low 5,784 times: 42.2% up, 57.8% low. About 300 of the raised cases are colour, gauge or spin indices, which the strict reading of the rule calls frame slots and debt: $f^{abc}$ (72), $G^a$ (37), $T^a$ (36), $\mu^a$ (36), $\sigma^z$ (31), $\pi^a$ (26), $\sigma^x$ and $\sigma^y$ (20), $B^a$ (13), $A^a$ (11) and $c^a$ (11). Without them the names are about 3,940 up against 5,784 low: 40% up and 60% low.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Raised name case</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colour, gauge or spin index</td>
+<td style="text-align: right;">about 300</td>
+</tr>
+<tr>
+<td>Representation, dimension or label</td>
+<td style="text-align: right;">about 3,940</td>
+</tr>
+<tr>
+<td>All raised names</td>
+<td style="text-align: right;">4,238</td>
+</tr>
+</tbody>
+</table></div>
+<p>The corpus average hides a wide spread.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lowest article</td>
+<td>2.9% raised (6 up, 201 low), <em>Torsion, Contorsion and the Spin Connection</em></td>
+</tr>
+<tr>
+<td>Median article</td>
+<td>24.9% raised</td>
+</tr>
+<tr>
+<td>Highest article</td>
+<td>82.5% raised (301 up, 64 low), <em>The Relativistic Central Force Problem</em></td>
+</tr>
+<tr>
+<td>Articles above 50% raised</td>
+<td>21 of 403</td>
+</tr>
+<tr>
+<td>Largest article by marks</td>
+<td>562 up and 668 low, <em>Exercise: The Relativistic Kinematics of a Two-Body Decay</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>The Upper-Index Problem</em> reports 0 raised frame slots in physics: 8 carets on the Greek letters, all legitimate. That screen keeps only the carets on $i,j,k,l$ and on the Greek letters, and it discards every power, grade, coframe and dual. The census here keeps all of them. The two figures measure different populations: the 72 carets that the earlier screen counted on those letters are 0.18% of 40,524, and the rewritten screen keeps 8. The screen does not read $x$, $y$, $z$ or $a$, so a raised $\sigma^z$ or $T^a$ falls outside it and is recorded here as a raised name.</p>
+<h3 id="lower">Lower</h3>
+<p>Two classes of low mark are open.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>What it carries</th>
+<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upright role name</td>
+<td>$\mathrm{tot}$, $\mathrm b$, $\mathrm L$, $\mathrm r$</td>
+<td style="text-align: right;">5,784</td>
+<td style="text-align: right;">4.9%</td>
+</tr>
+<tr>
+<td>Operator or derivative index</td>
+<td>$\sum_\mu$, $\partial_\mu$</td>
+<td style="text-align: right;">4,316</td>
+<td style="text-align: right;">3.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The upright role names are the low names of the count above. They are written low in every case, and the open question is whether a role such as $\mathrm{tot}$ or $\mathrm L$ is a name, which the rule would raise, or a label of a slot, which the rule keeps low.</p>
+<p>The operator indices are the indices of a sum or a derivative. They are not frame slots, and no article writes them raised. They are counted apart because the rule does not name them.</p>
+<h2 id="validated">Validated</h2>
+<h3 id="upper_1">Upper</h3>
+<p>The rule validates two jobs of the caret: the power and the mark.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>What it carries</th>
+<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power</td>
+<td>an exponent: ${}^{2}$, ${}^{k}$, ${}^{-1}$, $e^{i\alpha}$</td>
+<td style="text-align: right;">23,850</td>
+<td style="text-align: right;">59.4%</td>
+</tr>
+<tr>
+<td>Mark</td>
+<td>a conjugation or a sign: ${}^{*}$, ${}^{\natural}$, ${}^{\dagger}$, $^{\mathrm{fop}}$, ${}^{\pm}$</td>
+<td style="text-align: right;">12,065</td>
+<td style="text-align: right;">30.0%</td>
+</tr>
+<tr>
+<td>Both</td>
+<td></td>
+<td style="text-align: right;">35,915</td>
+<td style="text-align: right;">89.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The single power ${}^{2}$ accounts for 18,001 carets: 45% of all carets and 75% of the powers. The next powers are ${}^{3}$ (1,244), ${}^{-1}$ (880) and ${}^{4}$ (818).</p>
+<p>The five commonest marks carry 86% of that class.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mark</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{*}$</td>
+<td style="text-align: right;">5,405</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td style="text-align: right;">2,524</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td style="text-align: right;">1,095</td>
+</tr>
+<tr>
+<td>$^{\mathrm{fop}}$</td>
+<td style="text-align: right;">1,006</td>
+</tr>
+<tr>
+<td>$^{\mathrm{fop}\dagger}$</td>
+<td style="text-align: right;">407</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Validated caret</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^\lambda$, $2^k$, $(-1)^k$</td>
+<td>powers</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\natural}$, ${}^{\dagger}$</td>
+<td>conjugation marks</td>
+</tr>
+<tr>
+<td>$^{\mathrm{fop}}$, ${}^{\pm}$</td>
+<td>an operator label and a sign</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="lower_1">Lower</h3>
+<p>The rule validates five jobs of the low mark.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>What it carries</th>
+<th style="text-align: right;">Count</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frame slot, Latin</td>
+<td>$e_t$, $e_x$, $x_k$, $\gamma_i$</td>
+<td style="text-align: right;">42,805</td>
+<td style="text-align: right;">36.2%</td>
+</tr>
+<tr>
+<td>Numeric count</td>
+<td>$Q_1$, $Q_2$, $M_2$</td>
+<td style="text-align: right;">26,901</td>
+<td style="text-align: right;">22.8%</td>
+</tr>
+<tr>
+<td>Grouped or compound</td>
+<td>$F_{\mu\nu}$, $g_{\mu\nu}$, $s_{\mathrm{tot},z}$</td>
+<td style="text-align: right;">13,591</td>
+<td style="text-align: right;">11.5%</td>
+</tr>
+<tr>
+<td>Sign or mark</td>
+<td>$M_+$, $M_-$</td>
+<td style="text-align: right;">13,075</td>
+<td style="text-align: right;">11.1%</td>
+</tr>
+<tr>
+<td>Frame slot, Greek</td>
+<td>$\mu$, $\nu$, $\rho$, $\lambda$</td>
+<td style="text-align: right;">11,628</td>
+<td style="text-align: right;">9.8%</td>
+</tr>
+<tr>
+<td>All five</td>
+<td></td>
+<td style="text-align: right;">108,000</td>
+<td style="text-align: right;">91.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The frame slots are the largest class. Latin and Greek slots together are 54,433 marks, or 46% of the low marks.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Validated form</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$</td>
+<td>a coordinate, a component, a basis vector, a gamma</td>
+</tr>
+<tr>
+<td>$\varepsilon_{ijk}$, $\delta_{ij}$</td>
+<td>a sign symbol, with the indices low</td>
+</tr>
+<tr>
+<td>$\sum_i$, $\sum_{\mu,\nu}$</td>
+<td>a contraction, written as an explicit sum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-upper-indexes-problem.html">The Upper-Index Problem: The Caret Rule and the Corpus</a> — the rule, the screens, and what still fails.</li>
+<li><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a> — the rule in its original wording.</li>
+<li><a href="../articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Index, Notation and Corpus Conventions</a> — the same rule for the mathematical corpus.</li>
+<li><a href="matrix-representations-restructuring-table.html">Matrix Representations: The Restructuring Table</a> — the naming pass that gave $M_4^L$ and $M_4^R$ their carets.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

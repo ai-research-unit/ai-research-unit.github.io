@@ -179,7 +179,7 @@ $$</p>
 <p>For a right-moving massless wave, $\phi=f(x-ct')$, these reduce to $T_{tt}=T_{xx}=(\partial\phi/\partial x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.</p>
 <p>The energy density is manifestly positive: it is the sum of three squares, one for the kinetic term, one for the gradient, and one for the mass. The conservation law</p>
 <p>$$
-\sum_\mu\partial_\mu T_{\mu\nu} = 0
+\sum_\mu\partial/\partial Q_\mu T_{\mu\nu} = 0
 \qquad\text{on shell}
 $$</p>
 <p>is the statement that the four-momentum</p>
@@ -197,7 +197,7 @@ $$</p>
 \quad
 \mu = 1.3,
 $$</p>
-<p>with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t'=0.7$, $(x,y,z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
+<p>with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t'=0.7$, $(x,y,z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
 <h2 id="the-electromagnetic-stressenergy-as-a-bigeneral-quaternionic-bilinear">The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear</h2>
 <p>For the electromagnetic field the improved stress–energy tensor has a closed algebraic form in the biquaternion algebra. With the material basis $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$,</p>
 <p>$$
@@ -245,7 +245,7 @@ T_{\mu\nu} = \sum_\beta\eta_{\nu\beta}\mathsf{T}_{\mu\beta} ,
 $$</p>
 <p>the definition being exact over the field algebra up to the factors the $ict'$ basis elements carry. In the coordinates of the framework, $Q_t=ict'$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$, and the divergence is</p>
 <p>$$
-\sum_\mu\partial_\mu T_{\mu\nu}
+\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}
 = \sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\,T_{\mu\nu} ,
 $$</p>
 <p>which is the component law</p>
@@ -254,10 +254,10 @@ $$</p>
 \qquad
 f_\nu = \left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right),
 $$</p>
-<p>so that the source-free field has $\sum_\mu\partial_\mu T_{\mu\nu}=0$ and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article <em>The Lorentz Force in Biquaternion Form</em> treats the matter side of the exchange.</p>
-<p>The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}$ to machine precision, ratio exactly one, for all four $\nu$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$, $c=1$, $\epsilon=\mu=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_\mu\partial_\mu T_{\mu\nu}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four $\nu$ — conservation for the interacting cross terms and not merely mode by mode.</p>
+<p>so that the source-free field has $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=0$ and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article <em>The Lorentz Force in Biquaternion Form</em> treats the matter side of the exchange.</p>
+<p>The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}$ to machine precision, ratio exactly one, for all four $\nu$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$, $c=1$, $\epsilon=\mu=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four $\nu$ — conservation for the interacting cross terms and not merely mode by mode.</p>
 <p><strong>The reading is decisive.</strong> It is the <strong>plain</strong> derivative, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $e_k^{\natural}=-\vec e_k$; the conjugated contraction is a different combination, it does not reproduce $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$ is the divergence; for the rank-two tensor the plain derivative is what carries it.</p>
-<p><strong>Where the algebra enters.</strong> The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\mu\nu}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $\mathsf{T}_{\mu\nu}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_\mu\partial_\mu T_{\mu\nu}$, and it is that divergence which vanishes.</p>
+<p><strong>Where the algebra enters.</strong> The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\mu\nu}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $\mathsf{T}_{\mu\nu}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}$, and it is that divergence which vanishes.</p>
 <h2 id="the-conservation-law-for-field-and-matter">The Conservation Law for Field and Matter</h2>
 <p>The conservation law of the preceding section is not closed: the field's four-momentum changes in the presence of charges. The total energy–momentum of field and matter,</p>
 <p>$$
@@ -334,7 +334,7 @@ $$</p>
 <p>$$
 T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
 \qquad
-\sum_\mu\partial_\mu T_{\mu\nu}=0 \ \text{on shell},
+\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=0 \ \text{on shell},
 $$</p>
 <p>verified on a superposition of two on-shell modes. The electromagnetic tensor is the bigeneral quaternionic bilinear</p>
 <p>$$
@@ -433,7 +433,7 @@ $$</p>
 <td>Tracelessness (Minkowski pairing)</td>
 </tr>
 <tr>
-<td>$\sum_\mu\partial_{Q_\mu}T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$</td>
+<td>$\sum_\mu\partial/\partial Q_\muT_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$</td>
 <td>Conservation with source per direction; Lorentz four-force</td>
 </tr>
 <tr>

@@ -81,7 +81,7 @@ $$</p>
 <p>There are two inequivalent senses of "first-order root", and the article treats both. A <strong>single square</strong> is one operator $D$ with $D^2=(\Box-\mu^2)I$. A <strong>factorisation</strong> is a product $D_-D_+=(\Box-\mu^2)I$ of two first-order factors; the physical equation is one factor, and the product is the Klein–Gordon operator. The single square is the stronger notion, and the physical mass does not admit it. The factorisation is the weaker notion, and the physical mass requires it.</p>
 <p>Three results:</p>
 <ul>
-<li><strong>The root acts on four complex components.</strong> The derivative part of a first-order operator $i\gamma_\mu\partial_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma_\mu$ mutually anticommute with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.</li>
+<li><strong>The root acts on four complex components.</strong> The derivative part of a first-order operator $i\gamma_\mu\partial/\partial Q_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma_\mu$ mutually anticommute with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.</li>
 <li><strong>The algebra supplies three of the four.</strong> The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.</li>
 <li><strong>The mass term is constrained.</strong> The condition $\{B,\gamma_\mu\}=0$ forces $B=c\gamma_5$ with $c=\pm i\mu$. A single operator exists only with a <strong>pseudoscalar</strong> mass. A <strong>scalar</strong> mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.</li>
 </ul>
@@ -95,14 +95,14 @@ $$</p>
 =\Delta_Q-c^{-2}\frac{\partial^2}{\partial t'^2}
 \quad\text{on }\mathbb{M}_- .
 $$</p>
-<p>In the $x$ coordinates $x_0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
+<p>In the $x$ coordinates $x_0=ct'$, $x_k$, where $Q_t=ix_0$ and $Q_k=x_k$, the same operator is
 $$
-\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu
+\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
 $$
-The $Q$ form is the Euclidean transcription, obtained by $\partial_{Q_t}=-ic^{-1}\partial_{t'}$.</p>
+The $Q$ form is the Euclidean transcription, obtained by $\partial/\partial Q_t=-ic^{-1}\partial/\partial t'$.</p>
 <p>Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $\hbar$ is the reduced Planck constant.</p>
 <h2 id="the-operator-and-its-symbol">The Operator and Its Symbol</h2>
 <h3 id="the-norm-of-the-gradient">The norm of the gradient</h3>
@@ -139,7 +139,7 @@ $$</p>
 E^2=\vec p^{\,2}c^2+m^2c^4 .
 $$</p>
 <p>Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.</p>
-<p>In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.</p>
+<p>In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial/\partial Q_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.</p>
 <h2 id="the-root-condition">The Root Condition</h2>
 <h3 id="the-ansatz">The ansatz</h3>
 <p>Let</p>
@@ -490,7 +490,7 @@ $$</p>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>
-<td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu$</td>
+<td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu$</td>
 <td>d'Alembertian, series convention and Lorentz form</td>
 </tr>
 <tr>

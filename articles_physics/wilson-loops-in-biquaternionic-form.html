@@ -99,7 +99,7 @@ $$</p>
 <h3 id="the-abelian-case">The Abelian Case</h3>
 <p>Under a gauge transformation $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, the line integral changes by</p>
 <p>$$
-\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial_\mu\Gamma\right)dx_\mu
+\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial/\partial x_\mu\Gamma\right)dx_\mu
 = \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu-\oint_C d\Gamma
 = \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu ,
 $$</p>
@@ -112,7 +112,7 @@ W(C) = \exp\left(\frac{i}{2}\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu 
 $$</p>
 <p>so the abelian Wilson loop is the exponential of the enclosed flux. The factor $\frac12$ is the one that counts each plane once: for a planar loop the antisymmetric $d\Sigma_{\mu\nu}$ contributes twice the enclosed area, and the pairing with the antisymmetric $F_{\mu\nu}$ converts the pair into the single physical flux. This was verified for a single small plaquette of side $h$: the closed-loop integral equaled $h^2F$ to a relative accuracy of $10^{-16}$, where $F$ was the constant field strength of the chosen potential. The two statements — gauge invariance and Stokes' theorem — are the same fact seen from the two ends: the loop sees only the enclosed field strength, and the field strength is gauge invariant.</p>
 <h3 id="the-non-abelian-case">The Non-Abelian Case</h3>
-<p>Under a gauge transformation $A_\mu\mapsto Q A_\mu Q^{-1}+(i/g)Q\partial_\mu Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,</p>
+<p>Under a gauge transformation $A_\mu\mapsto Q A_\mu Q^{-1}+(i/g)Q\partial/\partial x_\mu Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,</p>
 <p>$$
 U(C) \;\longmapsto\; Q(x_{\mathrm{start}})\,U(C)\,Q^{-1}(x_{\mathrm{end}}) ,
 $$</p>
@@ -194,7 +194,7 @@ $$</p>
 $$</p>
 <p>with the trace over the informational realization of the gauge group and the average over the material-sector configurations. The two fixed-point sectors appear in the two operations: the average is over $\mathbb{M}_-$ configurations, and the trace is over the $\mathbb{M}_+$ realization of the group. The order parameter is thus the expectation of a two-sector bilinear, and the confinement transition is a statement about its long-distance behaviour.</p>
 <h3 id="the-loop-as-the-phase-of-a-charged-worldline">The Loop as the Phase of a Charged Worldline</h3>
-<p>The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_\mu=\partial_\mu+igA_\mu$, the amplitude for a particle to propagate along a worldline acquires a factor</p>
+<p>The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_\mu=\partial/\partial x_\mu+igA_\mu$, the amplitude for a particle to propagate along a worldline acquires a factor</p>
 <p>$$
 \exp\left(ig\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
 $$</p>

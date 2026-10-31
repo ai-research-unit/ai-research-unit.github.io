@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Upper-Index Problem: The Extent of the Infestation — Biquaternion Universe</title>
+  <title>The Upper-Index Problem: The Caret Rule and the Corpus — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,250 +68,242 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-upper-index-problem-the-extent-of-the-infestation"><strong>The Upper-Index Problem: The Extent of the Infestation</strong></h1>
+        <h1 id="the-upper-index-problem-the-caret-rule-and-the-corpus"><strong>The Upper-Index Problem: The Caret Rule and the Corpus</strong></h1>
+<p>The corpus has 403 physics articles and 2,407 mathematical ones. It writes a coordinate, a field component, a frame vector, a gamma and a sign symbol with a low index, and reserves the caret for what the convention calls a power or a name. This note states the rule, defines the screens that apply it, and records what fails.</p>
 <h2 id="the-rule">The Rule</h2>
-<p>The rule is one sentence, and it turns on what the caret marks. <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, states it in one sentence:</p>
+<p><em>Operator and Calculus Conventions</em> states the rule in one sentence:</p>
 <blockquote>
 <p>A caret marks a power or a name, never a frame slot: $e^\lambda$, $2^k$ and $(-1)^k$ are powers, and $\mathrm{Cl}^i$, $K^0$, $M_4^\sigma$ and $\mathbb{B}^\sigma$ are names; a coordinate, a field component, a basis vector, a gamma and a sign symbol are written with a low index — $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$ — and a contraction is written as an explicit sum with the sign vector or as the quaternionic product that carries it.</p>
 </blockquote>
-<p><em>Index, Notation and Corpus Conventions</em> states the same rule for the mathematical corpus, with the form that replaces the contraction. Both articles are linked in §<em>Further Reading</em>.</p>
-<p>The rule does not forbid every caret. It forbids a caret that marks a frame slot. A spatial matrix $\sigma^i$, a stress component $T^{ij}$ and a field component $F^{jk}$ are frame slots, and they are debt exactly as $x^\mu$ was debt. The exponent $e^\lambda$ is not.</p>
-<h2 id="what-the-screens-find">What the Screens Find</h2>
-<p>The count is made on the mathematics regions, on a component symbol. A caret on a power, a name, a grade, a star, a dual or a parameter is not an index and is excluded: $(-1)^k$, $2^k$, $\mathrm{Cl}^i$, $\operatorname{Sym}^l$, $k^l$, $r^l$ and $\sum^k$ are powers and grades, and they stay.</p>
+<p><em>Index, Notation and Corpus Conventions</em> states the same rule for mathematics, with the form that replaces the contraction.</p>
+<p>The rule bans one use of the caret, not the caret. Three uses are legitimate, and each has a test a reader can apply without knowing the author's intent:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Use</th>
+<th>Test</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power</td>
+<td>a repeated product</td>
+<td>$2^k$, $(-1)^k$, $e^\lambda$</td>
+</tr>
+<tr>
+<td>Grade</td>
+<td>the degree of a grading</td>
+<td>$\mathrm{Cl}^i$, $\Omega^k$, $K^0$</td>
+</tr>
+<tr>
+<td>Parameter</td>
+<td>the argument of a construction</td>
+<td>$A^\sigma$, $M_4^\sigma$, $\mathbb{B}^\sigma$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A caret outside these three marks a frame slot. The slot is low: $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$. Every contraction is an explicit sum. The one further exception is the representation index, which keeps its height because it labels a representation rather than a component; the three physics cases are collected at the end.</p>
+<h2 id="the-screens">The Screens</h2>
+<p>Three screens answer three disjoint questions.</p>
+<ul>
+<li><strong>Greek.</strong> A caret whose exponent is one of $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$, on a base that could be a coordinate, a derivative, a field component or a metric. Mathematics has 1,514, on 98 distinct bases, each read; physics has 8.</li>
+<li><strong>Latin.</strong> A caret whose exponent is one of $i,j,k,l,a$, on fifteen component bases: $x$, $dx$, $dq$, $\partial$, $q$, $Q$, $e$, $v$, $\xi$, $g$, $\pi$, $F$, $R$, $\Gamma$, $\theta$ and $\omega$. 856 carets in mathematics and 0 in physics.</li>
+<li><strong>Internal.</strong> A caret on a colour or isospin index $a,b,c$ in a gauge article: 376 carets in 29 physics articles.</li>
+</ul>
+<p>The Latin screen over-counts, and the count below removes what it over-counts: 115 powers, 2 cohomological degrees and 17 coframe carets. What remains is 722 frame slots.</p>
+<h2 id="the-state">The State</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Corpus</th>
 <th style="text-align: right;">Articles</th>
-<th style="text-align: right;">Carets</th>
-<th style="text-align: right;">Frame slots</th>
-<th>Verdict</th>
+<th style="text-align: right;">Greek slots</th>
+<th style="text-align: right;">Latin slots</th>
+<th style="text-align: right;">Internal carets</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Physics</td>
 <td style="text-align: right;">403</td>
-<td style="text-align: right;">71</td>
-<td style="text-align: right;">19 in 14 articles</td>
-<td>infested</td>
-</tr>
-<tr>
-<td>Part VI</td>
-<td style="text-align: right;">889</td>
-<td style="text-align: right;">51</td>
 <td style="text-align: right;">0</td>
-<td>clean</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">376 in 29 articles</td>
 </tr>
 <tr>
-<td>Maths, Parts I to IV</td>
-<td style="text-align: right;">1508</td>
-<td style="text-align: right;">1814</td>
-<td style="text-align: right;">357 in 4 articles</td>
-<td>infested</td>
+<td>Mathematics</td>
+<td style="text-align: right;">2,407</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">722 in 97 articles</td>
+<td style="text-align: right;">none</td>
+</tr>
+<tr>
+<td>Total</td>
+<td style="text-align: right;">2,810</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">722</td>
+<td style="text-align: right;">376</td>
 </tr>
 </tbody>
 </table></div>
-<p>The Greek screen of physics and the whole of Part VI are clean of frame slots: no raised $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$ marks a component there. The five physics carets are three integration limits $\int_0^\tau$ in <a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic Charge–Mass Hypothesis</a>, one exponent $(\alpha/\pi)^\lambda$ in <a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>, and the sign label $\nabla^\sigma$ in <a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution</a>. None is an index.</p>
-<p>The Latin screen is not clean. <strong>19 raised $i,j,k,l$ frame slots in 14 physics articles</strong> are the live infestation. A further 52 carets on the same letters sit on powers, grades and names, and they are not counted. The Greek pass never touched the Latin ones.</p>
-<h2 id="the-named-cases">The Named Cases</h2>
-<p>Two of the three tokens named in the report have been rewritten. The field component $F_{jk}$ was lowered in both of its articles, and the stress component $T_{ij}$ no longer appears raised anywhere in the physics corpus. The third, the Pauli matrix, survives raised in one place:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Where</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\sigma^i$</td>
-<td><a href="../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
-<td>Pauli matrices; the $k$ and $i$ forms are the same object</td>
-</tr>
-</tbody>
-</table></div>
-<p>The list is longer than three. The remaining bases are $x$, $\sigma$, $\alpha$, $\pi$, $K$, $J$, $F$, $E$, $H$, $T$, $\eta$ and $\Lambda$, one or two each; the grouped signs $\varepsilon^{ijk}$ and $\delta^{jk}$ are already gone.</p>
-<h2 id="the-physics-infestation-article-by-article">The Physics Infestation, Article by Article</h2>
-<p>Every article below still carries at least one raised frame slot. The last column lists the tokens and their count in that article. Twenty-six articles have been rewritten and are no longer listed. <a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator.html">Scattering for the Quaternionic Dirac Operator</a> had 28 frame slots, now zero: its $M^k$ became $L_k$, its $M_k$ became $R_k$, its $M^{ik}$ became $L_{ik}$, and its $u^i$ and $u^s$ became the upright names $u^{\mathrm{inc}}$ and $u^{\mathrm{sc}}$. <a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a> had 27, now zero: its triple became $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$, its components became $v_i$, and its two contractions were written out with $\sum_{k,l}\varepsilon_{ijk}\eta_{kl}$. <a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a> had 25 frame slots, now zero: $\alpha^k$, $\alpha^j$ and $\boldsymbol{\alpha}^k$ became $\alpha_k$, $\alpha_j$ and $\boldsymbol{\alpha}_k$, $x^k$ became $x_k$, and $\delta^{jk}$ became $\delta_{jk}$. <a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group — Structure and Representations</a> had 20, now zero: its triple became $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$, its components became $v_i$, and the $SU(1,1)$ closure is written out with $\sum_{k,l}\varepsilon_{ijk}\eta^{(1,2)}_{kl}$. <a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation</a> had 15, now zero: $\alpha^k$, $\alpha^j$ and $\sigma^k$ became $\alpha_k$, $\alpha_j$ and $\sigma_k$, and $\delta^{jk}$ became $\delta_{jk}$. <a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a> had 13, now zero: $\Sigma^k$ became $\Sigma_k$ and $\sigma^k$ became $\sigma_k$, down to the entry-by-entry check $\sigma_{01}\gamma_5=i\,\mathrm{diag}(\sigma_1,\sigma_1)$. <a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework</a> had 12, now zero: $v^i$ and $\varsigma^i$ became $v_i$ and $\varsigma_i$, the triple was written componentwise, and the closure as $\{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ijk}\eta_{kl}v_l$. <a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a> had 11, now zero: $\pi^i$ became $\pi_i$, and each Gauss-law contraction is written $\sum_i\partial/\partial Q_i\,\pi_i$. <a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a> had 10, now zero: its spinor-model summary became $v_i=\langle z|\sigma_i|z\rangle$, $v_i=\tfrac12\langle z|\sigma_3\varsigma_i|z\rangle$ and $v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle$, with the triple defined once. <a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation</a> had 10, now zero: $\sigma^k$ became $\sigma_k$, and $\Gamma^{jk}$, $\Gamma^{00}$ became $\Gamma_{jk}$, $\Gamma_{00}$. <a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space</a> had 9, now zero: $q_k=-i\sigma^k$ became $q_k=-i\sigma_k$, $[q_0,q^i]$ and $[q^i,q^j]$ became $[q_0,q_i]$ and $[q_i,q_j]$, and $q^{ij}$ became $q_{ij}$. <a href="../articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle</a> had 8, now zero: $F^{tk}$, $F^{kt}$, $F^{jk}$, $F^{kj}$ became $F_{tk}$, $F_{kt}$, $F_{jk}$, $F_{kj}$, and $v^k$, $s^k$, $X^k$ became $v_k$, $s_k$, $X_k$. <a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator</a> had 7, now zero: $\alpha^k$ and $\sigma^k$ became $\alpha_k$ and $\sigma_k$. <a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a> had 6, now zero: $\alpha^k$ became $\alpha_k$, and $\alpha^i\alpha^j=\delta^{ij}+i\epsilon^{ijk}\Sigma_k$ became $\alpha_i\alpha_j=\delta_{ij}+i\sum_k\varepsilon_{ijk}\Sigma_k$. <a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation</a> had 3, now zero: $\sigma^k$ became $\sigma_k$, and the boundary flux is written $\sum_i\oint dS_i\,K_i$. <a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral</a> had 3, now zero: $dx^i/dt'\,dx^j/dt'$ became $dx_i/dt'\,dx_j/dt'$ with $\sum_{i,j}$, and the inverse metric $g^{ij}$ became $(g^{-1})_{ij}$. <a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions</a> had 2, now zero: $\sigma^k$ became $\sigma_k$. <a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a> had 2, now zero: the rule names the raised Pauli matrix and the raised stress component in words, instead of writing $\sigma^i$ and $T^{ij}$. <a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a> had 2, now zero: $\sigma^k$ became $\sigma_k$. <a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate</a> had 2, now zero: $\sigma^k$ became $\sigma_k$. <a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map</a> had 2, now zero: the duplicated $\partial/\partial x^k=\partial/\partial x^k$ became the single $\partial/\partial x_k$. <a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics</a> had 6, now zero: the velocities became $dq_i/dt'$, and both quadratic forms are written with $\sum_{ij}$. <a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field</a> had 6, now zero: $S^k$, $\Sigma^k$ and $\sigma^k$ became $S_k$, $\Sigma_k$ and $\sigma_k$. <a href="../articles_physics/fisher-information-and-the-biquaternion-norm.html">Fisher Information and the Biquaternion Norm</a> had 4, now zero: $d\theta^i\,d\theta^j$ and $\partial^2/\partial\theta^i\partial\theta^j$ became $d\theta_i\,d\theta_j$ and $\partial^2/\partial\theta_i\partial\theta^j$. <a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem</a> had 4, now zero: $\sigma^k$ became $\sigma_k$, and $\partial/\partial x^k$ became $\partial/\partial x_k$. <a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation</a> had 4, now zero: $\sigma^k$ became $\sigma_k$ in the algebra map and in the $\gamma_k$ blocks.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Raised</th>
-<th>Problematic notations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
-<td style="text-align: right;">2</td>
-<td>$x^{k}$ (2)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
-<td style="text-align: right;">2</td>
-<td>$\sigma^{k}$ (2)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-lorentz-force-in-biquaternion-form.html">The Lorentz Force in Biquaternion Form</a></td>
-<td style="text-align: right;">2</td>
-<td>$F^{kj}$, $K^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
-<td style="text-align: right;">2</td>
-<td>$E^{i}$, $H^{i}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
-<td style="text-align: right;">2</td>
-<td>$\pi^{i}$ (2)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a></td>
-<td style="text-align: right;">1</td>
-<td>$T^{l}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>$x^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
-<td style="text-align: right;">1</td>
-<td>$x^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>$x^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>$\eta^{ij}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>$J^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>$x^{k}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
-<td style="text-align: right;">1</td>
-<td>$\sigma^{i}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
-<td style="text-align: right;">1</td>
-<td>$\alpha^{k}$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Total: 19 in 14 articles.</strong></p>
-<p>Three rows have left the list without a rewrite. <a href="../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html">SU(3) Representations and the Gell-Mann–Okubo Mass Formula</a> carries carets only on Okubo's basis $A^{i}_{\ k}$. The pair is mixed, one fundamental and one antifundamental index, and the height is the representation: it carries the trace $A^{k}_{\ k}$, the product $A^{i}_{\ k}A^{k}_{\ l}$, and the invariant $\delta^{i}_{\ k}$, which is not a metric. Lowering the upper index would replace the mixed delta by a Euclidean one and hide the representation, so the screen over-counted these and they stay.</p>
-<p><a href="../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a> carries carets only on the dimensions $\mathbb{C}^k$ and $\mathbb{C}^N$ of the ADHM matrix data. The letter is the dimension of the vector space, not a frame slot: it indexes no coordinate, no basis vector and no gamma, and the corpus writes $\mathbb{C}^3$ the same way. The screen over-counted these six and they stay.</p>
-<p><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">The Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a> carries carets only on $\Lambda^{l}_j$ and $\Lambda^{\bar l}_j$. The letters $l$ and $\bar l$ label the two representations, as the factors $\mathbf{1}_{2l+1}$ and $\mathbf{1}_{2\bar l+1}$ in the same display show; $j$ is the generator label and is already low. The height records the representation, as in Okubo's $A^{i}_{\ k}$, and lowering it would hide which representation the generator acts on. The screen over-counted these two and they stay.</p>
-<h2 id="the-part-vi-screen">The Part VI Screen</h2>
-<p>Part VI has 51 raised Greek carets in 19 articles, and none is a coordinate. They are the exponential $e^\lambda$, the exponential $e^\mu$, the power $\tilde\xi^\nu$, the character $a^\lambda$, the fixed algebra $M_4^\sigma$ and the module twist $\mathbb{B}^\sigma$. The Latin carets in Part VI are powers of a formal variable and unit labels, not components. Part VI is clean for the index rule.</p>
-<p>The count is spread thin: the largest case is <a href="../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a> with eight twists $\mathbb{B}^\sigma$, then <a href="../articles_maths/the-exponential-and-the-lie-group-of-m6c.html">The Exponential and the Lie Group of $M_6(\mathbb{C})$</a> and <a href="../articles_maths/the-exponential-and-the-lie-group-of-m3c.html">The Exponential and the Lie Group of $M_3(\mathbb{C})$</a> with the powers of the exponential. The rest carry one to five.</p>
-<h2 id="the-maths-infestation-parts-i-to-iv">The Maths Infestation, Parts I to IV</h2>
-<p>Parts I to IV hold 1814 raised Greek carets, and most of them are not frame slots: the fixed set $A^\sigma$ of an involution, the character $\chi^\lambda$ of a partition, the Specht module $S^\lambda$, the monomial $x^\lambda$ of a symmetric function and the zeta term $x^\rho$. Those are names and powers, and they stay.</p>
-<p>Four articles carry a frame slot. They are the field-theory and tensor-calculus articles, where the caret marks a coordinate, a momentum, a current, a gamma trace or a structure constant.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Frame slots</th>
-<th>Problematic notations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a></td>
-<td style="text-align: right;">199</td>
-<td>$x^{\mu}$ (53), $L^{\mu}$ (20), $x^{\nu}$ (19), $F^{\mu}$ (16), $j^{\mu}$ (14), $\varepsilon^{\alpha}$ (12), $\partial^{\mu}$ (11), $F^{\mu\nu}$ (8), $E^{\nu}$ (6), $A^{\mu}$ (5), $T^{\mu}$ (5), $\Theta^{\mu}$ (5), $\xi^{\nu}$ (5), $\xi^{\mu}$ (4), $A^{\nu}$ (3), $\partial^{\nu}$ (3), $j^{\nu}$ (3), $F^{\lambda\mu}$ (2), $\delta^{\mu}$ (2), $x^{\lambda}$ (2), $\xi^{\phi}$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/multisymplectic-and-covariant-hamiltonian-field-theory.html">Multisymplectic and Covariant Hamiltonian Field Theory</a></td>
-<td style="text-align: right;">131</td>
-<td>$x^{\mu}$ (58), $p^{\mu}$ (41), $x^{\nu}$ (12), $J^{\mu}$ (7), $g^{\mu\nu}$ (6), $\delta^{\mu}$ (4), $\partial^{\mu}$ (3)</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html">The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</a></td>
-<td style="text-align: right;">15</td>
-<td>$c^{\mu\nu\lambda}$ (6), $t^{\mu\nu\lambda\rho}$ (5), $c^{\mu\lambda\nu}$ (2), $k^{\mu}$ (2)</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a></td>
-<td style="text-align: right;">12</td>
-<td>$x^{\mu}$ (10), $\delta^{\mu\nu}$, $x^{\nu}$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Total: 357 in 4 articles.</strong></p>
-<p>The two largest cases are the field-theory pair, and they hold 330 of the 357. <a href="../articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a> carries every ingredient of the covariant notation at once: $x^\mu$, $\partial^\mu$, $F^{\mu\nu}$, $j^\mu$, $\Theta^\mu$ and the spinor $\varepsilon^\alpha$. <a href="../articles_maths/multisymplectic-and-covariant-hamiltonian-field-theory.html">Multisymplectic and Covariant Hamiltonian Field Theory</a> carries the multimomentum $p^\mu$ alongside $x^\mu$ and $g^{\mu\nu}$.</p>
-<h2 id="the-order-of-repair">The Order of Repair</h2>
+<p>The four articles that opened the audit — Noether's Two Theorems, Multisymplectic and Covariant Hamiltonian Field Theory, The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System, and The Dirac–Kähler Equation — hold 0.</p>
+<h2 id="the-greek-screen-zero">The Greek Screen: Zero</h2>
+<p>Physics carries eight carets on the seven letters, and every one is legitimate: three integration limits $\int_0^\tau$ in The Electro-Gravimagnetic Field and the Magnetic Charge–Mass Hypothesis, one exponent $(\alpha/\pi)^\lambda$ in The Anomalous Magnetic Moment, one sign label $\nabla^\sigma$ in Bispinor Fields and the Fundamental Solution, and three from the sentence that states the rule: the power $e^\lambda$ and the two specimens $M_4^\sigma$ and $\mathbb{B}^\sigma$.</p>
+<p>Mathematics carries 1,514 on 98 bases, and none marks a coordinate, a derivative, a field component or a metric. Four families cover them.</p>
+<ul>
+<li><strong>Fixed sets.</strong> $A^\sigma$, $G^\sigma$, $X^\sigma$, $F^\sigma$ and $R^\sigma$ are the invariant part under an involution. The caret names the involution.</li>
+<li><strong>Labels of a partition.</strong> $S^\lambda$, $\chi^\lambda$, $x^\lambda$ and $D^\mu$ index a partition, not a component of a vector.</li>
+<li><strong>Parameters.</strong> $\Sigma^\alpha_{u,u^{-1}}$ and $\Theta^\alpha_{a,b}$ are the signed sandwiches; the low slots carry the arguments, the caret carries the sign rule $\alpha$.</li>
+<li><strong>Multi-indices.</strong> $\partial^\alpha$ with $|\alpha|\le n$ is a derivative of order $\alpha$, a power in the notation of several variables.</li>
+</ul>
+<p>Three near misses show why the screen was read and not grepped. $\varphi^\mu_t$ is the flow of the family $f(\cdot,\mu)$, with $\mu$ a parameter and $t$ the time. $D^\mu$ is the irreducible module attached to a partition $\mu$. $x^\mu$ in the theory of symmetric functions is a monomial whose exponent is the partition $\mu$. Each has the shape of a component; none is one.</p>
+<h3 id="the-word-name">The Word "Name"</h3>
+<p>The word "name" covers two different things in the rule's own examples, and neither is a name in the sense of a proper label.</p>
+<ul>
+<li>$\mathrm{Cl}^i$ and $\Omega^k$ are grades: the caret is the degree of a grading.</li>
+<li>$K^0$ is the degree-zero K-theory group: the caret is a cohomological degree.</li>
+<li>$M_4^\sigma$ is the $\sigma$-fixed part and $\mathbb{B}^\sigma$ the $\sigma$-twist: the caret is a parameter.</li>
+<li>$A^\sigma$, $G^\sigma$, $X^\sigma$ and $F^\sigma$ are fixed-point constructions, a role the rule never mentions.</li>
+</ul>
+<p>The list in the rule contains no name. It contains two grades and two parameters.</p>
+<p>Four costs follow.</p>
 <ol>
-<li><strong>The physics Latin pass.</strong> 19 tokens, 14 articles. The twenty-six largest cases are done: <em>Scattering for the Quaternionic Dirac Operator</em> (28), <em>The Spinor Module and Its Lorentz Action</em> (27), <em>Zitterbewegung in Biquaternionic Form</em> (25), <em>The Lorentz Group — Structure and Representations</em> (20), <em>The Foldy–Wouthuysen Transformation</em> (15), <em>The Electric Dipole Moment</em> (13), <em>Quantum Gravity under the Biquaternion Framework</em> (12), <em>Canonical Quantization of the Proca Field</em> (11), <em>The Neutrino and Majorana Fermions</em> (10), <em>The Rarita–Schwinger Equation</em> (10), <em>Matter Makes Space</em> (9), <em>The Classical Spinning Particle</em> (8), <em>The Dirac Oscillator</em> (7), <em>The Non-Relativistic Limit exercise</em> (6), <em>Lagrangian and Hamiltonian Mechanics</em> (6), <em>The Quantized Dirac Field</em> (6), <em>Fisher Information and the Biquaternion Norm</em> (4), <em>The CPT Theorem</em> (4) and <em>The Dirac Equation</em> (4), <em>Anomalies and Anomaly Cancellation</em> (3), <em>The Path Integral</em> (3), <em>Chiral Fermions</em> (2), <em>Operator and Calculus Conventions</em> (2), <em>Exercise: Chirality and the Weyl Spinors</em> (2), <em>The Chiral Condensate</em> (2) and <em>The Daviau Map</em> (2). Every $\sigma^i$, $T^{ij}$ and $F^{jk}$ is lowered to $\sigma_i$, $T_{ij}$, $F_{jk}$; the spatial sum is written explicitly with $\delta_{ij}$ or with the Euclidean sign vector, exactly as the Greek pass wrote $\varepsilon$. The Pauli and Dirac matrices keep their letter and lose their height: $\sigma_k$, $\alpha_k$, $\gamma_k$.</li>
-<li><strong>The grouped pairs come with the same pass.</strong> Two of the three are done: $\varepsilon^{ijk}$ and $\delta^{jk}$ are already low everywhere in physics. The third, $\eta^{ij}$, becomes $\eta_{ij}$ with the sum written out.</li>
-<li><strong>The maths field-theory pass.</strong> 357 tokens, 4 articles. $x^\mu$ becomes $x_\mu$, $\partial^\mu$ becomes $\partial_\mu$, $F^{\mu\nu}$ becomes $F_{\mu\nu}$, and every contraction is written as an explicit sum. The two field-theory articles hold 330 of them; the Dirac–Kähler and Lie–Jordan articles hold the other 27.</li>
-<li><strong>The labels stay.</strong> $K^0$, $H^0$, $A^0$, $(-1)^k$, $2^k$, $\mathrm{Cl}^i$, $e^\lambda$, $A^\sigma$, $S^\lambda$, $\chi^\lambda$ and $x^\rho$ of a zeta term are names, powers and grades, not frame slots. The mixed pair $A^{i}_{\ k}$ of the Okubo basis is a representation index, not a frame slot. Lowering any of them would be an error, not a repair.</li>
-<li><strong>The convention article is the gate.</strong> A new raised frame index in either corpus is a regression. The check reads the same sentence as the rule.</li>
+<li><strong>There is no test.</strong> Nothing separates $A^\sigma$ from $A^\mu$ except the article. The same letter $\sigma$ is a frame slot in physics, where the pass lowered it to $\sigma_i$, and an involution label in mathematics, where it stays high.</li>
+<li><strong>The word carries the verdict.</strong> A caret is cleared when it is called a name, and the same caret would be debt under another word.</li>
+<li><strong>It cannot be screened.</strong> A regression check cannot fire on a new $Q^\sigma$, because "name" can always be claimed.</li>
+<li><strong>It is unstable.</strong> An earlier draft of this note lowered the specimens to $\mathrm{Cl}_i$, $K_0$ and $B^\sigma$. The convention is right about the height and wrong about the reason.</li>
 </ol>
-<h2 id="summary">Summary</h2>
-<p>The rule: a caret marks a power or a name, never a frame slot. The physics Greek screen and Part VI are clean: 0 frame slots. The infestation is <strong>19 raised frame slots in 14 physics articles</strong>, including the last named case, $\sigma^i$, and <strong>357 in 4 articles of Parts I to IV</strong>, led by $x^\mu$ and $p^\mu$ in the two field-theory articles. A further 52 physics carets on $i,j,k,l$ are powers and names, and they stay.</p>
-<p>The infestation is therefore open, quantified and located. The audit is not a report of work done; it is the list of what is left.</p>
+<p>The repair is to drop "name" and keep three words that can be checked: <strong>power</strong>, <strong>grade</strong>, <strong>parameter</strong>. The convention can then list the permitted carets, and the gate can fire on everything else.</p>
+<h2 id="the-latin-screen-722">The Latin Screen: 722</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th style="text-align: right;">Carets</th>
+<th>Forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coordinates and one-forms</td>
+<td style="text-align: right;">401</td>
+<td>$x^i$ 251, $dq^i$ 98, $dx^i$ 52</td>
+</tr>
+<tr>
+<td>Canonical variables</td>
+<td style="text-align: right;">133</td>
+<td>$q^i$ 112, $Q^i$ 21</td>
+</tr>
+<tr>
+<td>Connections</td>
+<td style="text-align: right;">94</td>
+<td>$\Gamma^k{}_{ij}$ 54, $\theta^i{}_j$ 29, $\omega^i{}_j$ 11</td>
+</tr>
+<tr>
+<td>Tensors</td>
+<td style="text-align: right;">55</td>
+<td>$R^i{}_{jk}$ 22, $g^{ij}$ 15, $\pi^{ij}$ 13, $F^{ij}$ 5</td>
+</tr>
+<tr>
+<td>Frames and vectors</td>
+<td style="text-align: right;">39</td>
+<td>$\xi^i$ 24, $v^i$ 15</td>
+</tr>
+</tbody>
+</table></div>
+<p>The debt follows the subject: mechanics and differential geometry carry it, algebra carries almost none.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th style="text-align: right;">I</th>
+<th style="text-align: right;">II</th>
+<th style="text-align: right;">III</th>
+<th style="text-align: right;">IV</th>
+<th style="text-align: right;">V</th>
+<th style="text-align: right;">VI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carets</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">366</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Articles</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two articles carry 218 of the 722: Lagrangian and Hamiltonian Systems (164) and Poisson Geometry (54). Then come The Hamilton–Jacobi Equation and Separability (41), The Geodesic Flow Operator (37), Smooth Manifolds and Differential Geometry (37), Curvature and Geodesics (28), Riemannian Geometry (26) and Hermitian Manifolds and the Canonical Connection (22).</p>
+<p>Part VI holds 7: $F^{ij}$ in The Tensor Square of the Duo-Complex Numbers (5), and $Q^0$ and $Q^k$ in The Sandwich of an n-Regular Spectrally Regular Biquaternion (2).</p>
+<h3 id="the-coframe-exception">The Coframe Exception</h3>
+<p>Seventeen of the 856 are on $e^i$, and in each case $e^i$ is the dual of the frame $e_i$, with $e^i(e_j)=\delta^i_j$. Lowering them would collide with the frame and erase the pairing. The rule does not cover a dual basis, and the seventeen are not debt: either the convention adds a coframe exception, or the articles rename the dual to $\epsilon^i$. They sit in Geometric Calculus and the Vector Derivative (11), Symmetric Tensors and Spherical Harmonics (3), Hermitian Connections and the Adjoint (1), Exterior Powers (1) and The Coboundary Operator (1).</p>
+<h3 id="what-was-removed">What Was Removed</h3>
+<p>115 powers: 65 powers of the field order $q$ in the finite-field articles, 16 powers in Part VI, 11 powers of a quaternion variable, 13 powers of a generating function, 10 powers in the cohomology operations. 2 degrees: $Q^i$ in a resolution $Q^0\to Q^1\to\cdots$ in Derived Functors. 17 coframes, as above.</p>
+<h2 id="the-internal-screen-376-in-29">The Internal Screen: 376 in 29</h2>
+<p>The physics corpus carries a class that the rule does not name. 376 carets stand on internal colour or isospin indices — $\mathcal{A}_\mu^a$, $A_\mu^a$, $c^a$, $B^a$, $T^a$, $\tau^a$, $\sigma^a$, $\pi^a$, $F^a_{\mu\nu}$ and $f^{abc}$ — in the Yang–Mills, BRST, anomaly, pion and gluon articles.</p>
+<p>The class is open, and the corpus is not consistent inside it. Four articles write both heights in the same text: The Gluon ($T^a$ 4, $T_a$ 12), The Yang–Mills Path Integral (8 and 16), The W and Z Bosons (5 and 7) and Electroweak Theory (2 and 6). $\pi^a$ is a field component, which the rule sends low. If the height records the representation, the class is an exception like Okubo's; if it records a component, it is debt.</p>
+<h2 id="the-indices-that-stay">The Indices That Stay</h2>
+<p>Three physics rows keep their heights, because the height labels a representation: Okubo's $A^i{}_k$ in SU(3) Representations and the Gell-Mann–Okubo Mass Formula, the dimensions $\mathbb{C}^k$ and $\mathbb{C}^N$ in The ADHM Construction and Biquaternion Instanton Data, and the Bhabha pair $\Lambda^l{}_j$ and $\Lambda^{\bar l}_j$. Lowering them would make a mixed object look Euclidean.</p>
+<h2 id="the-next-pass">The Next Pass</h2>
+<ol>
+<li><strong>The mathematics Latin pass.</strong> 722 slots. Start with Lagrangian and Hamiltonian Systems (164) and Poisson Geometry (54), then the connections and the tensors.</li>
+<li><strong>The internal class.</strong> Decide whether a colour or isospin index is a representation label or a component, and write the decision into the convention.</li>
+<li><strong>The convention article.</strong> Replace "name" with grade and parameter, add the coframe case, and keep the specimens high.</li>
+<li><strong>The gate.</strong> Screen with an explicit list of permitted forms, not with a word.</li>
+</ol>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Token</th>
+<th>Form</th>
 <th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\sigma_i$, $T_{ij}$, $F_{jk}$</td>
-<td>the target form: every index low</td>
+<td>$x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$</td>
+<td>the low-index form the rule requires</td>
 </tr>
 <tr>
-<td>$\sigma^i$</td>
-<td>the infestation: still raised, still counted</td>
+<td>$2^k$, $(-1)^k$, $e^\lambda$</td>
+<td>powers</td>
 </tr>
 <tr>
-<td>$\varepsilon=(1,-1,-1,-1)$</td>
-<td>sign vector inside the product; the Lorentzian signs</td>
+<td>$\mathrm{Cl}^i$, $\Omega^k$, $K^0$</td>
+<td>grades</td>
 </tr>
 <tr>
-<td>$\delta_{ij}$</td>
-<td>Euclidean sign vector for the spatial sum</td>
+<td>$A^\sigma$, $M_4^\sigma$, $\mathbb{B}^\sigma$</td>
+<td>parameters</td>
 </tr>
 <tr>
-<td>$K^0$, $H^0$, $A^0$</td>
-<td>names, not indices; they stay</td>
+<td>$e^i$ with $e_i$</td>
+<td>a coframe dual to a frame; open exception</td>
 </tr>
 <tr>
-<td>$e^\lambda$, $\mathrm{Cl}^i$, $(-1)^k$</td>
-<td>a power and two grades, not indices</td>
+<td>$A^i{}_k$, $\mathbb{C}^k$, $\Lambda^l{}_j$</td>
+<td>representation indices; they stay</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a> — the rule itself, now free of raised specimens.</li>
-<li><a href="../articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Index, Notation and Corpus Conventions</a> — the same rule for the mathematical corpus.</li>
-<li><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a> — 2 of the 19, tied for the largest physics case with <em>The Fujikawa Method</em>, <em>The Lorentz Force</em>, <em>The s-Vector Representation</em> and <em>The Stueckelberg Mechanism</em>.</li>
-<li><a href="../articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a> — 199, the largest case of the whole corpus.</li>
-<li><a href="../articles_maths/multisymplectic-and-covariant-hamiltonian-field-theory.html">Multisymplectic and Covariant Hamiltonian Field Theory</a> — 131.</li>
+<li><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a> — the rule, with its specimens.</li>
+<li><a href="../articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Index, Notation and Corpus Conventions</a> — the same rule for mathematics.</li>
+<li><a href="the-up-and-low-proportions-of-the-physics-corpus.html">The Up-and-Low Proportions of the Physics Corpus</a> — the companion count.</li>
 </ul>
       </div>
     </main>

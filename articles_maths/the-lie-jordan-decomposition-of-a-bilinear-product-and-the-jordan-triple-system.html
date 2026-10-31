@@ -73,11 +73,11 @@
 <p>A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \bullet y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of <em>Jordan Algebras</em> and of the <em>Symmetric Algebras</em> of this part, and the antisymmetric bracket is the subject of <em>Lie Algebras</em> and of the <em>Anti-symmetric Algebras</em>. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are <em>both</em> present and <em>compatible</em>, and that the ternary product they generate is a Jordan triple system.</p>
 <p>The setting is the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, read as a complex four-dimensional vector space $V = \mathbb{C}^4$ with a bilinear composition whose structure constants are the source's</p>
 <p>$$
-c^{\mu\nu\lambda} = \bigl(t^{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
+c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$</p>
-<p>where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ are the gamma traces and $k^\mu$ is a neutral vector. The composition</p>
+<p>where $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ are the gamma traces and $k_\mu$ is a neutral vector. The composition</p>
 <p>$$
-(G \star H)^\lambda = G_\mu\, c^{\mu\lambda\nu} H_\nu
+(G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
 $$</p>
 <p>is associative and has $k$ as its unit; it is the biquaternion product in a particular basis. The point of this article is what that product <em>is</em>, algebraically: one bilinear map, three structures.</p>
 <h2 id="the-two-halves-of-one-product">The Two Halves of One Product</h2>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 [G, H \bullet K] + [H, K \bullet G] + [K, G \bullet H] = 0
 $$</p>
-<p>vanishes identically. The first identity says the Lie algebra acts on the Jordan algebra by derivations; the second is the <strong>fundamental identity</strong> that the source names, the compatibility condition that makes the pair a <em>Lie–Jordan algebra</em> in the sense of the literature on the Kantor–Koecher construction. The three identities — Jacobi, Jordan, and this compatibility — are what the source's "revised and corrected" account of its algebra asserts; the correction it makes to its earlier formulation is exactly a sign, the sign of the $\varepsilon$ term in $c^{\mu\nu\lambda}$, without which the antisymmetric half fails Jacobi and the symmetric half fails Jordan.</p>
+<p>vanishes identically. The first identity says the Lie algebra acts on the Jordan algebra by derivations; the second is the <strong>fundamental identity</strong> that the source names, the compatibility condition that makes the pair a <em>Lie–Jordan algebra</em> in the sense of the literature on the Kantor–Koecher construction. The three identities — Jacobi, Jordan, and this compatibility — are what the source's "revised and corrected" account of its algebra asserts; the correction it makes to its earlier formulation is exactly a sign, the sign of the $\varepsilon$ term in $c_{\mu\nu\lambda}$, without which the antisymmetric half fails Jacobi and the symmetric half fails Jordan.</p>
 <h2 id="the-jordan-triple-system">The Jordan Triple System</h2>
 <h3 id="the-ternary-product">The Ternary Product</h3>
 <p>The symmetrised product generates a <em>ternary</em> operation,</p>
@@ -141,7 +141,7 @@ $$</p>
 <li>that the composition is associative with unit $k$, and that the blocks of $\vec e_x, \vec e_y, \vec e_z$ reproduce the quaternion relations.</li>
 </ul>
 <p><strong>The source's</strong>, transcribed and not independently derivable from the identities above: the naming of the block matrices $J_i$ and the claim that the "revised" account corrects an earlier formulation by a sign; the identification of the ternary product with the source's order-three ding; and the general definition of an order-$\ell$ ding. The identities themselves are the definitional ones for Lie, Jordan and Jordan-triple structures; what the source adds is the observation that the <em>same</em> product carries all three, and the explicit construction that shows it.</p>
-<p><strong>A caution.</strong> That Jacobi and Jordan hold is, for an associative algebra, automatic: the commutator of an associative algebra is always a Lie bracket and its symmetrisation always a Jordan algebra. The content of the article is therefore not the <em>holding</em> of the identities but the <em>identification</em> of the algebra: the structure constants $c^{\mu\nu\lambda}$ with the normed condition are those of $M_2(\mathbb{C})$, so the Lie half is $\mathfrak{gl}(2,\mathbb{C})$, the Jordan half is $M_2(\mathbb{C})^+$, and the triple system is the Jordan triple system of the same matrix algebra. The source's correction matters because a wrong sign in the $\varepsilon$ term produces a <em>different</em> product — one that is neither associative nor normed — and then none of the three structures is the standard one.</p>
+<p><strong>A caution.</strong> That Jacobi and Jordan hold is, for an associative algebra, automatic: the commutator of an associative algebra is always a Lie bracket and its symmetrisation always a Jordan algebra. The content of the article is therefore not the <em>holding</em> of the identities but the <em>identification</em> of the algebra: the structure constants $c_{\mu\nu\lambda}$ with the normed condition are those of $M_2(\mathbb{C})$, so the Lie half is $\mathfrak{gl}(2,\mathbb{C})$, the Jordan half is $M_2(\mathbb{C})^+$, and the triple system is the Jordan triple system of the same matrix algebra. The source's correction matters because a wrong sign in the $\varepsilon$ term produces a <em>different</em> product — one that is neither associative nor normed — and then none of the three structures is the standard one.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
@@ -159,7 +159,7 @@ $$</p>
 </ol>
 <p>These questions are open.</p>
 <h2 id="summary">Summary</h2>
-<p>A bilinear product on a vector space has two halves: its symmetrisation $G\bullet H = \tfrac12(G\star H + H\star G)$ and its antisymmetrisation $[G,H] = \tfrac12(G\star H - H\star G)$. For the product built from the Dirac matrices, $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$, the antisymmetric half satisfies the Jacobi identity and is the Lie algebra $\mathfrak{gl}(2,\mathbb{C})$, and the symmetric half satisfies the Jordan identity and is the special Jordan algebra $M_2(\mathbb{C})^+$. The two halves are compatible: the bracket is a derivation of the Jordan product, $[G,H\bullet K] = [G,H]\bullet K + H\bullet[G,K]$, and the fundamental identity $[G,H\bullet K] + [H,K\bullet G] + [K,G\bullet H] = 0$ holds. The symmetrised product generates a ternary operation $\{G,H,K\} = (G\bullet H)\bullet K + (K\bullet H)\bullet G - (G\bullet K)\bullet H$, symmetric in its outer arguments and satisfying the five-linear Jordan triple identity; the source's order-three ding is this triple system. The block structure of the units $e_\mu$ exhibits the matrix algebra directly, with the four blocks of each unit being the source's periodic matrices $J_i$.</p>
+<p>A bilinear product on a vector space has two halves: its symmetrisation $G\bullet H = \tfrac12(G\star H + H\star G)$ and its antisymmetrisation $[G,H] = \tfrac12(G\star H - H\star G)$. For the product built from the Dirac matrices, $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$, the antisymmetric half satisfies the Jacobi identity and is the Lie algebra $\mathfrak{gl}(2,\mathbb{C})$, and the symmetric half satisfies the Jordan identity and is the special Jordan algebra $M_2(\mathbb{C})^+$. The two halves are compatible: the bracket is a derivation of the Jordan product, $[G,H\bullet K] = [G,H]\bullet K + H\bullet[G,K]$, and the fundamental identity $[G,H\bullet K] + [H,K\bullet G] + [K,G\bullet H] = 0$ holds. The symmetrised product generates a ternary operation $\{G,H,K\} = (G\bullet H)\bullet K + (K\bullet H)\bullet G - (G\bullet K)\bullet H$, symmetric in its outer arguments and satisfying the five-linear Jordan triple identity; the source's order-three ding is this triple system. The block structure of the units $e_\mu$ exhibits the matrix algebra directly, with the four blocks of each unit being the source's periodic matrices $J_i$.</p>
 <p>The identities Jacobi, Jordan, the derivation identity, the fundamental identity and the Jordan triple identity are all verified. The content of the construction is the identification: one product, the structure constants of $M_2(\mathbb{C})$, carries three compatible algebraic structures at once.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -180,14 +180,14 @@ $$</p>
 </tr>
 <tr>
 <td>$G \star H$</td>
-<td>The composition, $(G\star H)^\lambda = G_\mu c^{\mu\lambda\nu}H_\nu$</td>
+<td>The composition, $(G\star H)_\lambda = \sum_{\mu,\nu}G_\mu c_{\mu\lambda\nu}H_\nu$</td>
 </tr>
 <tr>
-<td>$c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$</td>
+<td>$c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$</td>
 <td>Structure constants</td>
 </tr>
 <tr>
-<td>$t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$</td>
+<td>$t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$</td>
 <td>Symmetric gamma trace</td>
 </tr>
 <tr>
@@ -195,7 +195,7 @@ $$</p>
 <td>Totally antisymmetric symbol</td>
 </tr>
 <tr>
-<td>$k^\mu$</td>
+<td>$k_\mu$</td>
 <td>Neutral vector, the unit of the composition</td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §1 and §2, for the structure constants $c^{\mu\nu\lambda}$, the normed condition, the Lie and Jordan halves, the fundamental identity, the Jordan triple system, and the four $2\times2$ periodic matrices.</li>
+<li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §1 and §2, for the structure constants $c_{\mu\nu\lambda}$, the normed condition, the Lie and Jordan halves, the fundamental identity, the Jordan triple system, and the four $2\times2$ periodic matrices.</li>
 <li>Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the order-$\ell$ ding and the ternary structure.</li>
 <li>N. Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society Colloquium Publications 39, Providence, 1968), for Jordan algebras, their triple systems, and the quadratic representation.</li>
 <li>K. McCrimmon, <em>A Taste of Jordan Algebras</em> (Universitext, Springer, New York, 2004), for the Jordan triple identities and the classification of special and exceptional Jordan algebras.</li>

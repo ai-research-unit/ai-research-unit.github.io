@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Representations : The Right Regular Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matrix-representations-the-right-regular-operators"><strong>Matrix Representations : The Right Regular Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Right multiplication is the mirror of left multiplication. It is an anti-representation, its kernel is the left annihilator, its image is a left ideal, and its matrix is the transpose of the left matrix. The two families nevertheless have the same trace, determinant, rank and spectrum. The differences are in the law, in the side of the ideals and in one sign, the sign of the $y$ generator.</p>
+<p>This article computes the right regular matrix in the Peirce and coefficient frames, verifies the exchange with the left family on the four generators, and compares the two families. It is the second of the three articles on the regular operator families; the left family is <em>Matrix Representations : The Left Regular Operators</em> and the two-sided family is <em>Matrix Representations : The Two-Sided Operators</em>.</p>
+<p><strong>Conventions.</strong> The algebra, the displays and the element are those of <em>Matrix Representations : The Left Regular Operators</em>. The $2\times2$ block is
+$$
+B=\mathsf M_2(\tilde Q)=
+\begin{pmatrix}
+Q_t-iQ_z&-iQ_x-Q_y\\
+-iQ_x+Q_y&Q_t+iQ_z
+\end{pmatrix},
+\qquad
+\det B=\langle\tilde Q\rangle_{\natural}.
+$$
+The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, so that $\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$ and $\mathsf M_4^{R}(\tilde Q)=B^{\mathsf T}\otimes I_2$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
+<p><strong>Boundaries.</strong> The operator statements are <em>The Right Regular Operators on the Biquaternion Algebra</em>; the left matrix is <em>Matrix Representations : The Left Regular Operators</em>; the commutant of the two images is <em>Matrix Representations : The Centraliser and the Double Centraliser</em>; the two-sided family is <em>Matrix Representations : The Two-Sided Operators</em>.</p>
+<h2 id="the-operator">The Operator</h2>
+<p><strong>The definition.</strong>
+$$
+R_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
+\qquad
+R_{\tilde Q}(\tilde X)=\tilde X\tilde Q.
+$$
+It is complex-linear and depends linearly on $\tilde Q$.</p>
+<p><strong>The anti-representation law.</strong>
+$$
+R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q},
+\qquad
+R_{e_t}=\mathrm{id}.
+$$
+The order is reversed because the element multiplying on the right acts first. The map $\tilde Q\mapsto R_{\tilde Q}$ is injective, because $R_{\tilde Q}=0$ gives $\tilde Q=R_{\tilde Q}(e_t)=0$.</p>
+<p><strong>The kernel and the image.</strong> The kernel is the left annihilator,
+$$
+\ker R_{\tilde Q}=\{\tilde X:\tilde X\tilde Q=0\}=\operatorname{Ann}_l(\tilde Q),
+$$
+and the image is the left ideal
+$$
+\operatorname{im}R_{\tilde Q}=\mathbb{B}\tilde Q.
+$$
+The kernel and the image have the same dimensions as for the left family, because the two operators are exchanged by the flip below.</p>
+<p><strong>The rank and the spectrum.</strong>
+$$
+\operatorname{rank}R_{\tilde Q}=2\operatorname{rank}B,
+\qquad
+\operatorname{spec}R_{\tilde Q}=\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\}.
+$$
+The rank trichotomy is $4,2,0$, and the characteristic polynomial is $\chi_B(\lambda)^2$. The minimal polynomial is that of $B$, not its square.</p>
+<p><strong>The invariant statement.</strong> The trace, the determinant, the rank and the spectrum depend on the element, not on the side:
+$$
+\operatorname{tr}R_{\tilde Q}=4Q_t,
+\qquad
+\det R_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^2.
+$$
+The reason is the exchange of §<em>The Exchange</em>: the right matrix is the transpose of the left one up to a conjugation, and transposition preserves all four invariants.</p>
+<h2 id="the-peirce-display">The Peirce Display</h2>
+<p><strong>The matrix.</strong>
+$$
+\mathsf M_4^{R}(\tilde Q)=B^{\mathsf T}\otimes I_2=
+\begin{pmatrix}
+M_{11}I_2&M_{21}I_2\\
+M_{12}I_2&M_{22}I_2
+\end{pmatrix},
+\qquad
+B=\begin{pmatrix}M_{11}&M_{12}\\M_{21}&M_{22}\end{pmatrix}.
+$$
+The identity factor is the left Peirce index and $B^{\mathsf T}$ acts on the right index. The matrix has four scalar blocks, not two matrix blocks.</p>
+<p><strong>The entries.</strong>
+$$
+\mathsf M_4^{R}(\tilde Q)=
+\begin{pmatrix}
+Q_t-iQ_z&0&-iQ_x+Q_y&0\\
+0&Q_t-iQ_z&0&-iQ_x+Q_y\\
+-iQ_x-Q_y&0&Q_t+iQ_z&0\\
+0&-iQ_x-Q_y&0&Q_t+iQ_z
+\end{pmatrix}.
+$$
+The two Peirce columns are mixed; the two rows are preserved. That is the opposite behaviour to the left matrix, which preserves the columns.</p>
+<p><strong>The four basis matrices.</strong>
+$$
+R_t=\mathrm I_4,\qquad
+R_x=(-i\sigma_1)\otimes I_2,\qquad
+R_y=(+i\sigma_2)\otimes I_2,\qquad
+R_z=(-i\sigma_3)\otimes I_2.
+$$
+The signs need care. The matrices $\sigma_1$ and $\sigma_3$ are symmetric, so their transposes are themselves. The matrix $\sigma_2$ is antisymmetric, so
+$$
+(-i\sigma_2)^{\mathsf T}=+i\sigma_2.
+$$
+There is no minus in front of $R_y$: the factor $-i$ is part of the generator and is transposed with it.</p>
+<p><strong>The squares and the relations.</strong> The three vector matrices square to $-\mathrm I_4$, all four have determinant $1$, and they satisfy
+$$
+R_\mu R_\nu+R_\nu R_\mu=2\eta_{\mu\nu}\mathrm I_4,
+\qquad
+\eta=\operatorname{diag}(1,-1,-1,-1).
+$$
+The relations are the same as for the left family, because transposition preserves them.</p>
+<p><strong>The traces and determinants.</strong> The four traces are $4,0,0,0$ and the four determinants are $1,1,1,1$. The trace distinguishes the unit from the vector units; the determinant does not.</p>
+<h2 id="the-coefficient-display">The Coefficient Display</h2>
+<p><strong>The matrix.</strong>
+$$
+[R_{\tilde Q}]_{\mathcal B}=C_{\Pi}\,\bigl(B^{\mathsf T}\otimes I_2\bigr)\,C_{\Pi}^{-1}
+=D\,[L_{\tilde Q}]_{\mathcal B}^{\mathsf T}\,D,
+\qquad
+D=\operatorname{diag}(1,-1,-1,-1).
+$$
+The sign matrix $D$ relates the coefficient display to the transpose of the left coefficient display.</p>
+<p><strong>The entries.</strong>
+$$
+[R_{\tilde Q}]_{\mathcal B}=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+The first column is again the element itself, because $e_t\tilde Q=\tilde Q$. The other columns are the products $\vec e_k\tilde Q$, which differ from $\tilde Q\vec e_k$ in the signs of the imaginary units.</p>
+<p><strong>The invariants.</strong> The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$. The rank is twice the rank of $B$. The entries are different from the left coefficient matrix, and the eigenvalues are the same.</p>
+<h2 id="the-exchange">The Exchange</h2>
+<p><strong>The statement.</strong> Let $S$ be the permutation of the second and third Peirce coordinates. Then
+$$
+R_{\tilde Q}=S\,L_{\tilde Q}^{\mathsf T}\,S^{-1}
+$$
+for every $\tilde Q$.</p>
+<p><strong>The matrix of $S$.</strong> In the Peirce frame,
+$$
+S=\begin{pmatrix}
+1&0&0&0\\
+0&0&1&0\\
+0&1&0&0\\
+0&0&0&1
+\end{pmatrix},
+\qquad
+S^2=\mathrm I_4,\qquad
+\det S=-1.
+$$
+It is symmetric, so $S^{-1}=S$.</p>
+<p><strong>The verification on the generators.</strong> For $e_t$ the identity is clear. For the vector units, the only non-symmetric left matrix is the $y$ one:
+$$
+L_y^{\mathsf T}=\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&1\\
+0&0&-1&0
+\end{pmatrix},
+\qquad
+S L_y^{\mathsf T}S^{-1}=
+\begin{pmatrix}
+0&0&1&0\\
+0&0&0&1\\
+-1&0&0&0\\
+0&-1&0&0
+\end{pmatrix}=R_y.
+$$
+The matrices $L_x$ and $L_z$ are symmetric, and the conjugation by $S$ only reorders their second and third coordinates, giving $R_x$ and $R_z$.</p>
+<p><strong>The reason.</strong> The exchange is the flip of the two mixed Peirce units. Left multiplication acts on the row index and right multiplication on the column index; the flip interchanges the two indices, and the matrix of the operator is transposed. The identity on the four generators extends to every element by linearity.</p>
+<p><strong>The consequence.</strong> Since transposition preserves the trace, the determinant, the rank and the spectrum, the two families have the same invariants. The exchange is also the precise sense in which the right image is the transpose of the left image.</p>
+<h2 id="the-two-families-side-by-side">The Two Families Side by Side</h2>
+<p><strong>What they share.</strong> The trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the rank $2\operatorname{rank}B$ and the spectrum $\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\}$ are the same. Both maps are injective and complex-linear, and both contain the identity.</p>
+<p><strong>Where they differ.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Left family</th>
+<th>Right family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Law</td>
+<td>$L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$</td>
+<td>$R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$</td>
+</tr>
+<tr>
+<td>Peirce matrix</td>
+<td>$I_2\otimes B$</td>
+<td>$B^{\mathsf T}\otimes I_2$</td>
+</tr>
+<tr>
+<td>Block form</td>
+<td>two equal blocks $B$</td>
+<td>four scalar blocks</td>
+</tr>
+<tr>
+<td>Invariant subspace</td>
+<td>the two columns</td>
+<td>the two rows</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>right annihilator</td>
+<td>left annihilator</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>right ideal $\tilde Q\mathbb{B}$</td>
+<td>left ideal $\mathbb{B}\tilde Q$</td>
+</tr>
+<tr>
+<td>$y$ generator</td>
+<td>$-i\sigma_2\otimes I_2$</td>
+<td>$+i\sigma_2\otimes I_2$</td>
+</tr>
+<tr>
+<td>Algebra</td>
+<td>a copy of $\mathbb{B}$</td>
+<td>a copy of $\mathbb{B}^{\mathrm{opp}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The side of the ideals.</strong> The image of $L_{\tilde Q}$ is the set of products with $\tilde Q$ on the left, a right ideal. The image of $R_{\tilde Q}$ is the set of products with $\tilde Q$ on the right, a left ideal. The two ideals coincide only when $\tilde Q$ is central or when the algebra is commutative, which it is not.</p>
+<p><strong>The centraliser.</strong> The left image and the right image are mutual centralisers:
+$$
+C\bigl(M_4(\mathbb{C})_{\mathbb{B}_L}\bigr)=M_4(\mathbb{C})_{\mathbb{B}_R},
+\qquad
+C\bigl(M_4(\mathbb{C})_{\mathbb{B}_R}\bigr)=M_4(\mathbb{C})_{\mathbb{B}_L}.
+$$
+The statement is proved in <em>Matrix Representations : The Centraliser and the Double Centraliser</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The right regular operator $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ is an injective anti-representation. Its kernel is the left annihilator, its image is the left ideal $\mathbb{B}\tilde Q$, and its rank is twice the rank of $B$. In the Peirce frame its matrix is $B^{\mathsf T}\otimes I_2$, with four scalar blocks; the four basis matrices are $R_t=I_4$, $R_x=-i\sigma_1\otimes I_2$, $R_y=+i\sigma_2\otimes I_2$ and $R_z=-i\sigma_3\otimes I_2$. The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the spectrum is the spectrum of $B$, doubled. The exchange $R_{\tilde Q}=S L_{\tilde Q}^{\mathsf T}S^{-1}$ holds on the four generators and hence on every element, and it explains why the two families share the four invariants while differing in the law, in the side of the ideals and in the sign of the $y$ generator. The two images are mutual centralisers.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{\tilde Q}$</td>
+<td>right multiplication by $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mathsf M_4^{R}(\tilde Q)$</td>
+<td>its regular matrix, $B^{\mathsf T}\otimes I_2$ in the Peirce frame</td>
+</tr>
+<tr>
+<td>$R_\mu$</td>
+<td>the matrix of the unit $e_\mu$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the exchange of the second and third Peirce coordinates</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_l(\tilde Q)$</td>
+<td>the left annihilator, the kernel</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde Q$</td>
+<td>the left ideal, the image</td>
+</tr>
+<tr>
+<td>$4Q_t$</td>
+<td>the trace</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}^2$</td>
+<td>the determinant</td>
+</tr>
+<tr>
+<td>$2\operatorname{rank}B$</td>
+<td>the rank, equal to $4,2,0$</td>
+</tr>
+<tr>
+<td>$\{\lambda_+,\lambda_+,\lambda_-,\lambda_-\}$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the sign matrix of the coefficient display</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="matrix-representations-the-left-regular-operators.html">Matrix Representations : The Left Regular Operators</a>, for the transpose family</li>
+<li><a href="matrix-representations-the-centraliser-and-the-double-centraliser.html">Matrix Representations : The Centraliser and the Double Centraliser</a>, for the mutual centralisers</li>
+<li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the frames and the change</li>
+<li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for the operator statements</li>
+<li><a href="the-left-and-right-multiplication-operators-on-a-jordan-algebra.html">The Left and Right Multiplication Operators on a Jordan Algebra</a>, for the multiplication operators in the Jordan setting</li>
+<li><a href="conventions-of-the-operator-families.html">Operator Family Conventions</a>, for the letter $R$ and the matrix letters</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -158,7 +158,7 @@ $$
 \boxed{\;\mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
 \qquad [P_\mu,P_\nu]=0\;},
 $$
-with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(\sum_\mu a_\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde P\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{R}_0)\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\rangle$, not $\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}) = \langle\tilde P,\tilde{R}_0\rangle_{\natural}$: for $\tilde P,\tilde{R}_0\in\mathbb{M}_-$ the latter equals $-(p_0a_0)+\vec p\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.</p>
+with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(\sum_\mu a_\mu\partial/\partial Q_\mu)$, and on a plane wave of four-wavevector $\tilde P\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{R}_0)\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\rangle$, not $\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}) = \langle\tilde P,\tilde{R}_0\rangle_{\natural}$: for $\tilde P,\tilde{R}_0\in\mathbb{M}_-$ the latter equals $-(p_0a_0)+\vec p\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.</p>
 <h2 id="the-semidirect-structure">The Semidirect Structure</h2>
 <p>Write $N$ for the set of pure translations,
 $$
@@ -227,9 +227,9 @@ the square root being multivalued by sign, with the branch selected by $\mathrm{
 <p>The honest summary is that the biquaternion frame answers the homogeneous question exactly and the translation question not at all: the biquaternions supply the first factor of the semidirect product and the action on the second, and whether the second can be absorbed into a biquaternion-like algebra, and which one, is open. No choice among the candidates is made here.</p>
 <h2 id="covariance-of-the-biwave-equation">Covariance of the Biwave Equation</h2>
 <p>The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of <em>spacetime</em> rather than equations in a preferred frame. The equation to state it for is the first-order <strong>biwave equation</strong> $\tilde{\nabla}\tilde\Phi = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde\Phi$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.</p>
-<p><strong>The conjugated gradient is the gradient in the rotated basis.</strong> The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ of the section <em>The Frame Reading</em>, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
+<p><strong>The conjugated gradient is the gradient in the rotated basis.</strong> The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ of the section <em>The Frame Reading</em>, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
-\tilde{\nabla}_{\mathrm{Ad}} := \sum_\mu \left(\tilde U_{\mathrm L}\,e_\mu\,\tilde U_{\mathrm L}^{-1}\right)\partial_\mu .
+\tilde{\nabla}_{\mathrm{Ad}} := \sum_\mu \left(\tilde U_{\mathrm L}\,e_\mu\,\tilde U_{\mathrm L}^{-1}\right)\partial/\partial Q_\mu .
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
@@ -330,11 +330,11 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Trace formula (informational sector)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$</td>
+<td>$\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$</td>
 <td>Biquaternionic gradient (material four-vector of operators)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}_{\mathrm{Ad}} = \sum_\mu(\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1})\partial_\mu$</td>
+<td>$\tilde{\nabla}_{\mathrm{Ad}} = \sum_\mu(\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1})\partial/\partial Q_\mu$</td>
 <td>Conjugated gradient, the gradient in the rotated basis</td>
 </tr>
 <tr>

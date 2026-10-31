@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 \boxed{\;\bar\psi\gamma_\mu\psi
 = \frac{i}{2m}\left(\bar\psi\,\nabla_\mu\psi - \left(\nabla_\mu\bar\psi\right)\psi\right)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right)\;},
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right)\;},
 $$</p>
 <p>where the <strong>spin generator</strong> is</p>
 <p>$$
@@ -134,8 +134,8 @@ $$</p>
 <p>$$
 \sum_\nu\varepsilon_\nu\left(\bar\psi\,\sigma_{\mu\nu}\nabla_\nu\psi
 + \left(\nabla_\nu\bar\psi\right)\sigma_{\mu\nu}\psi\right)
-= \sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\sigma_{\mu\nu}\psi\right)
-= 2\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right),
+= \sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\sigma_{\mu\nu}\psi\right)
+= 2\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right),
 $$</p>
 <p>because $\sigma_{\mu\nu}$ is constant and antisymmetric. Dividing by $2m$ gives the identity as stated. The algebra was checked numerically in the conventions above: the generator-product split held with residual $0$, and the momentum-space identity below held to $2.8\times10^{-15}$ over $100$ random on-shell spinor pairs and the four values of $\mu$.</p>
 <h3 id="a-note-on-the-total-divergence">A note on the total divergence</h3>
@@ -185,11 +185,11 @@ $$</p>
 <p>The two terms of the momentum-space identity have a direct interpretation, and it is the reason the decomposition is useful.</p>
 <p>The <strong>convection term</strong> $\bar w_2\frac{(p+p_2)_\mu}{2m}w$ is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$. It is the orbital part: it depends on the average four-momentum, it reduces to $\bar w_2\gamma_\mu w \to \bar w_2 w\,v_\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.</p>
 <p>The <strong>spin term</strong> $\bar w_2\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}(p_2-p)_\nu}{2m}w$ depends on the momentum <strong>transfer</strong> $k_\nu$ and on the tensor bilinear. It is the piece that couples to the field strength rather than to the potential: contracted with the momentum-space photon, it produces an effective Pauli moment term. Its coefficient is exactly the one that gives $g = 2$, as the next subsection shows.</p>
-<p>The identification of the second term with the spin density is not a metaphor. In position space the second term is $\frac{1}{m}\sum_\nu\varepsilon_\nu\partial_\nu(\bar\psi\Sigma_{\mu\nu}\psi)$; the spatial components of the tensor density are the spin angular-momentum density, and the magnetic moment is its integral.</p>
+<p>The identification of the second term with the spin density is not a metaphor. In position space the second term is $\frac{1}{m}\sum_\nu\varepsilon_\nu\partial/\partial x_\nu(\bar\psi\Sigma_{\mu\nu}\psi)$; the spatial components of the tensor density are the spin angular-momentum density, and the magnetic moment is its integral.</p>
 <h3 id="the-magnetic-moment-and-math68">The magnetic moment and $g=2$</h3>
 <p>Contract the spin term with the photon field. The interaction is $-\sum_\mu\varepsilon_\mu A_\mu j_\mu$, and the spin-dependent part contributes, up to a total divergence,</p>
 <p>$$
--\frac{e\hbar}{2mc}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu A_\mu\,\bar\psi\sigma_{\nu\mu}\psi
+-\frac{e\hbar}{2mc}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial/\partial x_\nu A_\mu\,\bar\psi\sigma_{\nu\mu}\psi
 = -\frac{e\hbar}{2mc}\cdot\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,F_{\mu\nu}\,\bar\psi\sigma_{\mu\nu}\psi,
 $$</p>
 <p>which is an effective <strong>Pauli moment term</strong> $-\frac{e\hbar}{2mc}\,\vec B\cdot\psi^\dagger\boldsymbol\sigma\psi$. Its coefficient is the Dirac value $g = 2$. The companion article on the anomalous magnetic moment uses exactly this split: the tree-level vertex is $\gamma_\mu F_1 + \frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}F_2$ with $F_1(0) = 1$, $F_2(0) = 1$, and the anomaly is the radiative correction to $F_2(0)$. The convection coefficient is fixed by the Ward identity; the spin coefficient is the one that can be corrected.</p>
@@ -285,7 +285,7 @@ $$</p>
 <p>$$
 \bar\psi\gamma_\mu\psi
 = \frac{i}{2m}\left(\bar\psi\nabla_\mu\psi - \left(\nabla_\mu\bar\psi\right)\psi\right)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\Sigma_{\mu\nu}\psi\right),
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\Sigma_{\mu\nu}\psi\right),
 \qquad
 \Sigma_{\mu\nu} = \tfrac14 i\left[\gamma_\mu,\gamma_\nu\right],
 $$</p>
