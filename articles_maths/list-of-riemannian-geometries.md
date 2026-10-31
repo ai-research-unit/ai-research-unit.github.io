@@ -16,10 +16,10 @@ A Riemannian metric is a smoothly varying positive-definite inner product on eac
 | Object | The property it has | Introduced in |
 |---|---|---|
 | a Riemannian metric $g$ | a positive-definite symmetric bilinear form on each tangent space, varying smoothly | *Riemannian Geometry* |
-| the first fundamental form $ds^2 = \sum_{ij}g_{ij}dx^idx^j$ | the metric in local coordinates | *Riemannian Geometry* |
+| the first fundamental form $ds^2 = \sum_{ij}g_{ij}dx_i dx_j$ | the metric in local coordinates | *Riemannian Geometry* |
 | the length $L_g(\gamma)$ | the integral of the speed, defining the geometry | *Riemannian Geometry* |
 | the Riemannian distance $d_g(p,q)$ | the infimum of the lengths of the curves joining the points | *Riemannian Geometry* |
-| the volume form $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$ | the measure the metric induces | *Curvature and Geodesics* |
+| the volume form $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx_1\wedge\cdots\wedge dx_n$ | the measure the metric induces | *Curvature and Geodesics* |
 | the pullback of a metric by an immersion | the induced metric on a submanifold, the first fundamental form | *Riemannian Geometry* |
 | the isometry group $\operatorname{Isom}(M,g)$ | a Lie group by Myers–Steenrod, acting by metric-preserving diffeomorphisms | *Riemannian Geometry*; *Homogeneous Spaces* |
 
@@ -32,8 +32,8 @@ The fundamental theorem of Riemannian geometry gives the metric a unique torsion
 | Object | The property it has | Introduced in |
 |---|---|---|
 | the Levi-Civita connection $\nabla$ | the unique connection with $\nabla g = 0$ and zero torsion | *Riemannian Geometry*; *Curvature and Geodesics* |
-| the Christoffel symbols $\Gamma^k_{ij}$ | the coefficients of the connection in a chart | *Curvature and Geodesics* |
-| the connection form $\theta^i_{\ j}$ | the connection in a frame, matrix-valued | *Curvature and Geodesics* |
+| the Christoffel symbols $\Gamma_{kij}$ | the coefficients of the connection in a chart | *Curvature and Geodesics* |
+| the connection form $\theta_{ij}$ | the connection in a frame, matrix-valued | *Curvature and Geodesics* |
 | parallel transport $P_\gamma$ | the isometry of tangent spaces along a curve, defined by $\nabla$ | *Curvature and Geodesics* |
 | the holonomy group $\operatorname{Hol}_p$ | the group of parallel transports around the loops at $p$ | *Curvature and Geodesics* |
 | the geodesic equation $\nabla_{\gamma'}\gamma' = 0$ | the equation of a curve whose velocity is parallel | *Curvature and Geodesics* |
@@ -127,7 +127,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $(M,g)$, $g_{ij}$, $ds^2$ | Riemannian manifold, metric coefficients, first fundamental form |
 | $L_g$, $d_g$, $\mathrm{vol}_g$ | Length, distance, volume form |
-| $\nabla$, $\Gamma^k_{ij}$, $\theta^i_{\ j}$ | Levi-Civita connection, Christoffel symbols, connection form |
+| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$ | Levi-Civita connection, Christoffel symbols, connection form |
 | $R$, $\mathcal{R}$, $K(\sigma)$ | Curvature tensor, curvature form, sectional curvature |
 | $\operatorname{Ric}$, $S$, $G$ | Ricci tensor, scalar curvature, Einstein tensor |
 | $\exp_p$, $\operatorname{inj}(p)$ | Exponential map, injectivity radius |

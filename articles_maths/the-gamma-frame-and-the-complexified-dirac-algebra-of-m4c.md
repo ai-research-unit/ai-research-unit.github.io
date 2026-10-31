@@ -119,18 +119,18 @@ $$
 
 are the chiral projectors. The notation $\gamma_{5}$ is the historical one; in four dimensions the matrix is the product of the four gammas, and it is the pseudoscalar of the Clifford algebra.
 
-**The trace orthogonality.** For the sixteen antisymmetrised products $\Gamma^{A}$, normalised so that $\Gamma^{A}\in\{I,\gamma_{\mu},\gamma_{\mu\nu},\gamma_{\mu\nu\rho},\gamma_{5}\}$ with the bivectors $\gamma_{\mu\nu}=\tfrac12[\gamma_{\mu},\gamma_{\nu}]$ and the trivectors $\gamma_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)\gamma_{\mu}\gamma_{\nu}\gamma_{\rho}$,
+**The trace orthogonality.** For the sixteen antisymmetrised products $\Gamma_{A}$, normalised so that $\Gamma_{A}\in\{I,\gamma_{\mu},\gamma_{\mu\nu},\gamma_{\mu\nu\rho},\gamma_{5}\}$ with the bivectors $\gamma_{\mu\nu}=\tfrac12[\gamma_{\mu},\gamma_{\nu}]$ and the trivectors $\gamma_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)\gamma_{\mu}\gamma_{\nu}\gamma_{\rho}$,
 
 $$
-\operatorname{tr}(\Gamma^{A}\Gamma^{B})=4\,\eta^{AB},
+\operatorname{tr}(\Gamma_{A}\Gamma_{B})=4\,\eta_{AB},
 $$
 
-where $\eta^{AB}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen matrices are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
+where $\eta_{AB}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen matrices are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
 
-**The expansion.** With the dual basis $\Gamma_{A}$ defined by $\operatorname{tr}(\Gamma_{A}\Gamma^{B})=4\delta_{A}^{B}$, every matrix expands as
+**The expansion.** With the dual basis $\check\Gamma_{A}$ defined by $\operatorname{tr}(\check\Gamma_{A}\Gamma_{B})=4\delta_{AB}$, every matrix expands as
 
 $$
-A=\frac14\sum_{A}\operatorname{tr}(\Gamma_{A}A)\,\Gamma^{A}.
+A=\frac14\sum_{A}\operatorname{tr}(\check\Gamma_{A}A)\,\Gamma_{A}.
 $$
 
 The expansion is the Clifford analogue of the Fourier expansion in a basis; the sixteen coefficients are the **Clifford coordinates** of $A$.
@@ -222,7 +222,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\mathrm{Cl}^{+}(1,3)$ | its even part, isomorphic to $M_2(\mathbb{C})$ |
 | $\gamma_{\mu}$ | the gamma matrices, $\{\gamma_{\mu},\gamma_{\nu}\}=2g_{\mu\nu}I$ |
 | $\gamma_{5}$ | $i\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}$, the chirality |
-| $\Gamma^{A}$ | the sixteen antisymmetrised products |
+| $\Gamma_{A}$ | the sixteen antisymmetrised products |
 | $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm\gamma_{5})$ |
 | $\Gamma$ | the Clifford group |
 | $T_{\mu\nu}$ | the two-sided operators $L_\mu R_\nu$ |

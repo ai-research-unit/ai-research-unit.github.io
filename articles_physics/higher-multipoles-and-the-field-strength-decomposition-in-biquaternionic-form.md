@@ -42,7 +42,7 @@ $$
 each $D^{(l)}$ appearing once. The coefficients of the expansion are the **multipole moments**, functionals of the source:
 
 $$
-\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_l^{m*}(\vec u_{x,2})\,d^3x_2 ,
+\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\vec u_{x,2})\,d^3x_2 ,
 $$
 
 where $\vec u_{x,2}$ is the unit vector from the origin to the source point; these are the electric moments, together with the magnetic moments built from the current. The potential of the source at a field point outside it is a sum of two radial behaviours for each $l$: the irregular solution, which is the near-zone multipole field of the source, and the outgoing spherical wave, which is its radiation. The angular order $l$ is common to both; the multipole order is a property of the angular map, and the near-to-far transition is a property of the radial function. This is the standard multipole expansion and is transcribed rather than re-derived.

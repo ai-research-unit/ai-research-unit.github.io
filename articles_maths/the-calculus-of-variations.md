@@ -71,7 +71,7 @@ $$
 
 Since $v$ is arbitrary and the bracket is continuous, the fundamental lemma gives that it vanishes identically.
 
-**Remark (the du Bois-Reymond argument).** The proof above assumes that $w$ is of class $C^2$, so that the bracket $\partial L/\partial w-\partial/\partial x_i\,\partial L/\partial p_i$ is continuous and may be read off from the vanishing of the integral. When $w$ is only Lipschitz, or merely of class $W^{1,1}$, the same conclusion is reached by the argument of du Bois-Reymond: the vanishing of the first variation against all compactly supported smooth $v$ forces the bracket, interpreted as a distribution, to be the derivative of a constant, and the equation is recovered after a further integration by parts; the regularity of a minimiser, beyond the weak differentiability assumed, is then a separate theorem, quoted as standard and depending on the strict convexity of $L$ in $p$.
+**Remark (the du Bois-Reymond argument).** The proof above assumes that $w$ is of class $C^2$, so that the bracket $\partial L/\partial w-\sum_i\partial/\partial x_i\,\partial L/\partial p_i$ is continuous and may be read off from the vanishing of the integral. When $w$ is only Lipschitz, or merely of class $W^{1,1}$, the same conclusion is reached by the argument of du Bois-Reymond: the vanishing of the first variation against all compactly supported smooth $v$ forces the bracket, interpreted as a distribution, to be the derivative of a constant, and the equation is recovered after a further integration by parts; the regularity of a minimiser, beyond the weak differentiability assumed, is then a separate theorem, quoted as standard and depending on the strict convexity of $L$ in $p$.
 
 **Remark (higher-order integrands).** Nothing above requires the integrand to depend on $w$ and its first derivatives only. For $L(x,w,w',\dots,w^{(N)})$, the same variation with $v$ and its derivatives up to order $N-1$ compactly supported gives the **higher-order Euler–Lagrange equation**, sometimes called the **Euler–Poisson equation**
 
@@ -106,16 +106,16 @@ $$
 **Example (geodesics).** On a Riemannian manifold $(M,g)$ the **energy** of a curve $x : [a,b]\to M$ with local coordinates $x_i$ is
 
 $$
-E(x) = \frac12\int_a^b g_{ij}(x)dx_i/dt dx_j/dt\,dt ,
+E(x) = \frac12\int_a^b \sum_{i,j}g_{ij}(x)dx_i/dt\,dx_j/dt\,dt ,
 $$
 
-and the **length** is $\int\sqrt{g_{ij}dx_i/dt dx_j/dt}\,dt$. The Euler–Lagrange equation of the energy is
+and the **length** is $\int\sqrt{\sum_{i,j}g_{ij}dx_i/dt\,dx_j/dt}\,dt$. The Euler–Lagrange equation of the energy is
 
 $$
-d^2x_k/dt^2 + \Gamma_{kij}(x)dx_i/dt dx_j/dt = 0, \qquad \Gamma_{kij} = \frac12(g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
+d^2x_k/dt^2 + \sum_{i,j}\Gamma_{kij}(x)dx_i/dt\,dx_j/dt = 0, \qquad \Gamma_{kij} = \frac12\sum_l(g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$
 
-the **geodesic equation**; the metric and the Levi-Civita connection are those of Part II, and the derivation is the computation of $\partial L/\partial w^k - \frac{d}{dt}\partial L/\partial p_k$ for $L = \frac12g_{ij}(x)p_ip_j$. Because the integrand of the length is homogeneous of degree one in $dx/dt$, the length and the energy have the same stationary curves up to reparametrisation; a geodesic is a curve of stationary energy and, being a critical point of a length functional that is not strictly convex, is locally minimising only up to the first conjugate point.
+the **geodesic equation**; the metric and the Levi-Civita connection are those of Part II, and the derivation is the computation of $\partial L/\partial w_k - \frac{d}{dt}\partial L/\partial p_k$ for $L = \frac12\sum_{i,j}g_{ij}(x)p_ip_j$. Because the integrand of the length is homogeneous of degree one in $dx/dt$, the length and the energy have the same stationary curves up to reparametrisation; a geodesic is a curve of stationary energy and, being a critical point of a length functional that is not strictly convex, is locally minimising only up to the first conjugate point.
 
 **Example (the brachistochrone).** The problem asks for the curve $y(x)$ joining two points in a vertical plane down which a particle descends in the least time; the time is proportional to
 

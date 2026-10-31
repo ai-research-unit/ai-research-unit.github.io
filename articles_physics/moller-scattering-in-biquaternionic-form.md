@@ -83,7 +83,7 @@ $$
 \qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\gamma_{\rho} (p_{3})_{\rho}+m)\gamma_\mu(\gamma_{\sigma} (p_{1})_{\sigma}+m)\gamma_\nu(\gamma_{\lambda} (p_{4})_{\lambda}+m)\gamma_\mu(\gamma_{\alpha} (p_{2})_{\alpha}+m)\gamma_\nu] \Big\},
 $$
 
-using the spin sum $\sum_s w^s(p)\bar w^s(p) = \gamma_{\mu} p_{\mu}+m$ and the trace identity $\operatorname{Tr}[\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
+using the spin sum $\sum_s w_s(p)\bar w_s(p) = \gamma_{\mu} p_{\mu}+m$ and the trace identity $\operatorname{Tr}[\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
 \boxed{\;

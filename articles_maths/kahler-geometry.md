@@ -37,13 +37,13 @@ and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ 
 
 **(c)** the Chern connection of the Hermitian structure coincides with the Levi-Civita connection of $g$;
 
-**(d)** about every point there are holomorphic coordinates and a real function $\varphi$ with $\Omega = i\,\partial\bar\partial\varphi$, equivalently $g_{i\bar j} = \partial^2/\partial z^i\partial\bar z^j\,\varphi$;
+**(d)** about every point there are holomorphic coordinates and a real function $\varphi$ with $\Omega = i\,\partial\bar\partial\varphi$, equivalently $g_{i\bar j} = \partial^2/\partial z_i\partial\bar z_j\,\varphi$;
 
 **(e)** the holonomy group of $g$ is contained in $\mathrm{U}(n)$;
 
 **(f)** about every point there are holomorphic coordinates in which the Kähler metric has the form $g_{i\bar j} = \delta_{ij} + O(|z|^2)$.
 
-**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $\mathrm{U}(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial^2/\partial z^i\partial\bar z^j\,\varphi\,dz^i\wedge d\bar z^j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial/\partial z^k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
+**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $\mathrm{U}(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial^2/\partial z_i\partial\bar z_j\,\varphi\,dz_i\wedge d\bar z_j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial/\partial z^k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
 
 **Corollary.** A Kähler manifold is symplectic: the Kähler form $\Omega$ is closed and nondegenerate, being the fundamental form of a Riemannian metric, and the almost complex structure $J$ is compatible with it in the sense of *Symplectic Geometry*. In particular every Kähler manifold is orientable, and the volume form $\Omega^{\wedge n}/n!$ is the Riemannian volume.
 
@@ -93,7 +93,7 @@ $$
 \Omega_{FS} = i\,\partial\bar\partial\log(1 + |z|^2), \qquad |z|^2 = \sum_{i=1}^n |z_i|^2 .
 $$
 
-It is closed because it is $\partial\bar\partial$ of a function, and the associated Hermitian matrix $g_{i\bar j} = \partial^2/\partial z^i\partial\bar z^j\,\log(1+|z|^2)$ is
+It is closed because it is $\partial\bar\partial$ of a function, and the associated Hermitian matrix $g_{i\bar j} = \partial^2/\partial z_i\partial\bar z_j\,\log(1+|z|^2)$ is
 
 $$
 g_{i\bar j} = \frac{\delta_{ij}(1+|z|^2) - \bar z_i z_j}{(1+|z|^2)^2},
@@ -203,7 +203,7 @@ $$
 
 so it is closed and of type $(1,1)$.
 
-**Proof.** The Ricci tensor of a Kähler metric has the local expression $R_{i\bar j} = -\partial^2/\partial z^i\partial\bar z^j\,\log\det(g_{k\bar l})$, which is the statement that the Ricci form is minus the $\partial\bar\partial$-logarithm of the volume density of the metric; $\rho$ of type $(1,1)$, and $\partial\bar\partial$ of a function is closed.
+**Proof.** The Ricci tensor of a Kähler metric has the local expression $R_{i\bar j} = -\partial^2/\partial z_i\partial\bar z_j\,\log\det(g_{k\bar l})$, which is the statement that the Ricci form is minus the $\partial\bar\partial$-logarithm of the volume density of the metric; $\rho$ of type $(1,1)$, and $\partial\bar\partial$ of a function is closed.
 
 **Definition.** A Kähler metric is **Kähler–Einstein** if
 
@@ -218,7 +218,7 @@ for a constant $\lambda$, in which case the scalar curvature is constant. A Käh
 **Proof sketch.** In a fixed Kähler class, the Kähler metrics are parametrised by their potentials: $g' = g + i\partial\bar\partial\varphi$. The Ricci forms change by $-i\,\partial\bar\partial\log(\det(g'_{i\bar j})/\det(g_{i\bar j}))$, so the condition $\rho'=0$ becomes the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial^2/\partial z^i\partial\bar z^j\,\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
+\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
 $$
 
 for a function $F$ determined by the difference of the Ricci forms. Yau's theorem is the solution of this equation by the continuity method: the a priori estimates $C^0$, $C^1$, $C^2$ and $C^{2,\alpha}$ for the solution give openness and closedness of the set of solvable classes.

@@ -25,11 +25,11 @@ $$
 $$
 for the $L^2$ inner product of the Kähler metric, lowering the total degree by two.
 
-**Proposition (the two operators are real and of bidegree $\pm(1,1)$).** $L$ is complex-linear in the complexified forms and maps $\Lambda^{n,m}$ to $\Lambda^{n+1,m+1}$; $\Lambda$ maps $\Lambda^{n,m}$ to $\Lambda^{n-1,m-1}$ and is the transpose of $L$; both commute with complex conjugation, $\overline{L\alpha} = L\bar\alpha$ and $\overline{\Lambda\alpha} = \Lambda\bar\alpha$, because $\Omega$ is real. In local coordinates, with $\Omega = i\sum_{j,k}g_{j\bar k}\,dz^j\wedge d\bar z^k$,
+**Proposition (the two operators are real and of bidegree $\pm(1,1)$).** $L$ is complex-linear in the complexified forms and maps $\Lambda^{n,m}$ to $\Lambda^{n+1,m+1}$; $\Lambda$ maps $\Lambda^{n,m}$ to $\Lambda^{n-1,m-1}$ and is the transpose of $L$; both commute with complex conjugation, $\overline{L\alpha} = L\bar\alpha$ and $\overline{\Lambda\alpha} = \Lambda\bar\alpha$, because $\Omega$ is real. In local coordinates, with $\Omega = i\sum_{j,k}g_{j\bar k}\,dz_j\wedge d\bar z_k$,
 $$
-\Lambda\alpha = \sum_{j,k} g^{j\bar k}\,\iota_{\partial/\partial\bar z^k}\iota_{\partial/\partial z^j}\,\alpha ,
+\Lambda\alpha = \sum_{j,k} (g^{-1})_{j\bar k}\,\iota_{\partial/\partial\bar z_k}\iota_{\partial/\partial z_j}\,\alpha ,
 $$
-where $g^{j\bar k}$ is the inverse Hermitian matrix of the metric and $\iota$ is interior multiplication.
+where $(g^{-1})_{j\bar k}$ is the inverse Hermitian matrix of the metric and $\iota$ is interior multiplication.
 
 **Proof.** Exterior multiplication by a $(1,1)$-form is complex-linear and raises the bidegree by $(1,1)$; the adjoint of a wedge product with a real form is the interior contraction with the metric-dual $(1,1)$-vector, which is the displayed formula, and it lowers the bidegree by $(1,1)$ by the degree count; the reality assertion is that $\Omega$ is real and the metric pairing is conjugation-invariant. The identification of the formal adjoint with the contraction is *The Volume Element, Duality and the Hodge Star*, and the metric-dual contraction is *Hermitian Metrics and the Codifferential*.
 

@@ -81,18 +81,18 @@ The equivalence of the two expressions has been verified explicitly: for random 
 Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\phi,t')$. For small deformations about the sphere,
 
 $$
-r(\theta,\phi,t') = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(t')\,Y_l^{m}(\theta,\phi)\right],
+r(\theta,\phi,t') = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(t')\,Y_{lm}(\theta,\phi)\right],
 $$
 
-where the $Y_l^m$ are the spherical harmonics. The term $l = 0$ is a uniform dilation, the terms $l = 1$ are translations of the body, and the terms $l \geq 2$ are genuine shape deformations. The lowest genuine deformation, $l = 2$, is the one that makes the sphere an ellipsoid: it is a **quadrupole** deformation, and it is the mode that the rest of this article follows.
+where the $Y_{lm}$ are the spherical harmonics. The term $l = 0$ is a uniform dilation, the terms $l = 1$ are translations of the body, and the terms $l \geq 2$ are genuine shape deformations. The lowest genuine deformation, $l = 2$, is the one that makes the sphere an ellipsoid: it is a **quadrupole** deformation, and it is the mode that the rest of this article follows.
 
-Because the $Y_l^m$ are orthonormal on the sphere, the coefficients $a_{lm}(t')$ are the projections
+Because the $Y_{lm}$ are orthonormal on the sphere, the coefficients $a_{lm}(t')$ are the projections
 
 $$
-a_{lm}(t') = \frac{1}{R_0}\int \left(r(\theta,\phi,t') - R_0\right)Y_l^{m*}(\theta,\phi)\,d\Omega ,
+a_{lm}(t') = \frac{1}{R_0}\int \left(r(\theta,\phi,t') - R_0\right)Y_{lm}^{*}(\theta,\phi)\,d\Omega ,
 $$
 
-for $l\geq1$. They are ordinary scalar functions of time — real if real spherical harmonics are used, and for complex harmonics satisfying $a_{l,-m} = (-1)^m a_{lm}^{*}$, which is the statement that the shape function is real. The subtraction of the equilibrium radius removes the $l = 0$ term, so that the integral measures the deformation about the sphere rather than the radius itself; equivalently, it is the coefficient of $Y_l^m$ in the expansion of the scaled deformation $(r-R_0)/R_0$. There are $2l+1$ amplitudes for each order, and the number grows with $l$: this is the shape version of the multipole tower.
+for $l\geq1$. They are ordinary scalar functions of time — real if real spherical harmonics are used, and for complex harmonics satisfying $a_{l,-m} = (-1)^m a_{lm}^{*}$, which is the statement that the shape function is real. The subtraction of the equilibrium radius removes the $l = 0$ term, so that the integral measures the deformation about the sphere rather than the radius itself; equivalently, it is the coefficient of $Y_{lm}$ in the expansion of the scaled deformation $(r-R_0)/R_0$. There are $2l+1$ amplitudes for each order, and the number grows with $l$: this is the shape version of the multipole tower.
 
 ### Normal-Mode Dynamics
 
@@ -311,8 +311,8 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $R(\theta,\vec u)$ | Rotation matrix in $SO(3)$, the image of $\tilde U$ (distinct from the radius $R_0$) |
 | $\vec\omega = d\theta/dt'\,\vec u$ | Angular velocity (body-frame vector) |
 | $d\tilde U/dt' = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
-| $Y_l^m$ | Spherical harmonics |
-| $r(\theta,\phi,t') = R_0[1+\sum a_{lm}Y_l^m]$ | Shape function of the deformed body |
+| $Y_{lm}$ | Spherical harmonics |
+| $r(\theta,\phi,t') = R_0[1+\sum a_{lm}Y_{lm}]$ | Shape function of the deformed body |
 | $a_{lm}(t')$ | Normal-mode amplitude (a scalar) |
 | $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ | Velocity field |
 | $\rho_m$, $\sigma$, $M$ | Mass density, surface tension, total mass |

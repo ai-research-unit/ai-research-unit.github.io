@@ -109,7 +109,7 @@ $$
 and with the covariant normalizations and spin sums established there:
 
 $$
-\bar w^{(r)}w^{(s)}=2m\,\delta^{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},\quad w^{(r){}^{*}}w^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\vec p}\,\delta^{rs},
+\bar w^{(r)}w^{(s)}=2m\,\delta_{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta_{rs},\quad w^{(r){}^{*}}w^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\vec p}\,\delta_{rs},
 $$
 
 $$

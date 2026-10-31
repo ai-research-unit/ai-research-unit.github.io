@@ -155,7 +155,7 @@ Rank has a characterisation by factorisation that is often the cleanest.
 
 ### The Dual Space
 
-**Definition.** The **dual space** of $V$ is $V^*=\operatorname{Hom}_F(V,F)$, and the **dual basis** of a basis $v_1,\dots,v_n$ is the basis $v^1,\dots,v^n$ of $V^*$ defined by $v^i(v_j)=\delta^i_j$.
+**Definition.** The **dual space** of $V$ is $V^*=\operatorname{Hom}_F(V,F)$, and the **dual basis** of a basis $v_1,\dots,v_n$ is the basis $\check v_1,\dots,\check v_n$ of $V^*$ defined by $\check v_i(v_j)=\delta_{ij}$.
 
 The dual basis is a basis, so $\dim_F V^*=\dim_F V$, and the evaluation map $V \to V^{**}$, $v \mapsto (\varphi \mapsto \varphi(v))$, is an isomorphism in finite dimension. This is a finite-dimensional accident: for an infinite-dimensional space the evaluation is injective and not surjective.
 
@@ -273,9 +273,9 @@ A linear system $Ax=b$ is consistent exactly when $\operatorname{rk}A=\operatorn
 | $F^r$, $\operatorname{diag}(I_r,0)$ | normal form of a matrix under row and column operations |
 | $A^{\mathsf{T}}$ | transpose matrix, matrix of the dual map |
 | $T^*$ | dual map, $T^*(\varphi)=\varphi \circ T$ |
-| $V^*$, $v^i$ | dual space and dual basis, $v^i(v_j)=\delta^i_j$ |
+| $V^*$, $\check v_i$ | dual space and dual basis, $\check v_i(v_j)=\delta_{ij}$ |
 | $U^0$ | annihilator of a subspace |
-| $\delta^i_j$ | Kronecker delta |
+| $\delta_{ij}$ | Kronecker delta |
 | $[A\mid b]$ | augmented matrix |
 | $\operatorname{tr}$, $\det$ | trace and determinant |
 | $R^{\times}$ | unit group of a ring $R$ |

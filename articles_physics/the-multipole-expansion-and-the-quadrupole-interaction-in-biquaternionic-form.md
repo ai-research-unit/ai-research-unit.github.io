@@ -52,13 +52,13 @@ where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is t
 Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the **spherical multipole expansion**
 
 $$
-\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi)\;},
+\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\phi)\;},
 $$
 
 with the **spherical multipole moments**
 
 $$
-\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_l^{m*}(\theta_2,\phi_2)\,d^3x_2 .
+\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\phi_2)\,d^3x_2 .
 $$
 
 The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.
@@ -125,7 +125,7 @@ $$
 L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
 $$
 
-in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_l^m$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.
+in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_{lm}$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.
 
 Two comments fix the interpretation. First, the tower is infinite because the space of functions on the sphere is **infinite-dimensional**: a function on $S^2$ has arbitrarily fine angular structure, and each finer scale is one more $D^{(l)}$. Second, the tower is a property of the **field**, which is a function of position; it is not a property of the algebra of values the field takes. That distinction becomes the whole content of the closing article, and it is already visible here.
 
@@ -374,7 +374,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\mathcal{Q}_{lm}, ϙ, \vec p, \mathcal{Q}_{ij}$ | Spherical, monopole, dipole and quadrupole moments |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
-| $Y_l^m, P_l$ | Spherical harmonics and Legendre polynomials |
+| $Y_{lm}, P_l$ | Spherical harmonics and Legendre polynomials |
 
 ## Further Reading
 

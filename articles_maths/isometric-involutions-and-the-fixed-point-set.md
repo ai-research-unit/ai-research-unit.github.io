@@ -37,7 +37,7 @@ $$
 **Theorem (the tube theorem).** The normal exponential map is a diffeomorphism of a neighbourhood of the zero section of $\nu\Sigma$ onto a tubular neighbourhood of $\Sigma$ in $M$; in the coordinates it defines, the metric splits along $\Sigma$ as
 
 $$
-\boxed{\;g = g_\Sigma(y) + \sum_a dy^a\,dy^a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2)\;},
+\boxed{\;g = g_\Sigma(y) + \sum_a dy_a\,dy_a, \qquad g_\Sigma(y) = g_\Sigma + O(|y|^2)\;},
 $$
 
 where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\Sigma$; the involution acts as $\sigma(y, p) = (-y, p)$ in these coordinates, and the geodesics orthogonal to $\Sigma$ are the images of the straight lines of the normal fibres.
@@ -92,7 +92,7 @@ where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\S
 
 ## Summary
 
-The **fixed set** $\Sigma$ of an isometric involution $\sigma$ is a disjoint union of **totally geodesic submanifolds**: a geodesic with initial velocity in the fixed subspace $V_+$ of $d\sigma_p$ is fixed by the involution and therefore lies in $\Sigma$. At a fixed point the tangent space splits as $V_+\oplus V_-$ into the fixed and the normal directions, the differential being $+\mathrm{id}$ and $-\mathrm{id}$ on the two, and the codimension of the component is the multiplicity of $-1$. The **tube theorem** makes the normal exponential map a diffeomorphism onto a tubular neighbourhood and gives the metric the form $g = g_\Sigma(y)+\sum dy^a dy^a$ with $g_\Sigma(y) = g_\Sigma+O(|y|^2)$, the involution acting as $y\mapsto -y$.
+The **fixed set** $\Sigma$ of an isometric involution $\sigma$ is a disjoint union of **totally geodesic submanifolds**: a geodesic with initial velocity in the fixed subspace $V_+$ of $d\sigma_p$ is fixed by the involution and therefore lies in $\Sigma$. At a fixed point the tangent space splits as $V_+\oplus V_-$ into the fixed and the normal directions, the differential being $+\mathrm{id}$ and $-\mathrm{id}$ on the two, and the codimension of the component is the multiplicity of $-1$. The **tube theorem** makes the normal exponential map a diffeomorphism onto a tubular neighbourhood and gives the metric the form $g = g_\Sigma(y)+\sum_a dy_a dy_a$ with $g_\Sigma(y) = g_\Sigma+O(|y|^2)$, the involution acting as $y\mapsto -y$.
 
 A connected totally geodesic submanifold carrying a reflection is a **mirror** or **reflective** submanifold; the reflection, when it exists, is unique and determined by the submanifold, and it exists exactly when the normal reflection of the local model is a local isometry, equivalently when the metric is even in the normal coordinates. In a space of constant curvature every totally geodesic submanifold is a mirror, the mirror of a point being the geodesic symmetry and the mirror of a hypersphere being the reflection; in a general manifold there are totally geodesic submanifolds that are not mirrors. For a symmetric space the fixed components of an isometric involution are homogeneous totally geodesic submanifolds, acted on transitively by the isometries commuting with the involution, and the splitting $V_+\oplus V_-$ is the Cartan decomposition when the involution is the Cartan involution. The fixed set is the singular locus of the two-fold quotient, and on the complement the involution acts freely.
 
@@ -104,7 +104,7 @@ A connected totally geodesic submanifold carrying a reflection is a **mirror** o
 | $\Sigma = \operatorname{Fix}(\sigma)$ | Fixed set; disjoint union of totally geodesic submanifolds |
 | $V_+ = T_p\Sigma$, $V_-$ | Fixed and normal directions; $d\sigma_p = +\mathrm{id}$, $-\mathrm{id}$ |
 | $\nu\Sigma$, $\exp^\perp$ | Normal bundle and the normal exponential map |
-| $g = g_\Sigma(y)+\sum_a dy^ady^a$ | Metric in the normal coordinates of the tube |
+| $g = g_\Sigma(y)+\sum_a dy_a dy_a$ | Metric in the normal coordinates of the tube |
 | $\sigma(y,p) = (-y,p)$ | The involution as the reflection of the normal coordinates |
 | Reflective submanifold, mirror | Totally geodesic submanifold carrying a reflection |
 | Codimension $=$ multiplicity of $-1$ | Dimension of the component $=$ multiplicity of $+1$ |

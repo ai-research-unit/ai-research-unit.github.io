@@ -170,7 +170,7 @@ $$
 $$
 the last being the Lorenz condition that follows from the equation, and by its canonical quantization, which yields three polarizations,
 $$
-\sum_{r=1}^{3}\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{M^2},
+\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{M^2},
 \qquad
 P^2=P,\quad \mathrm{tr}\,P=3,\quad \sum_\nu P_{\mu\nu}p_\nu=0,
 $$
@@ -281,7 +281,7 @@ The charged current is chiral, $J^{+}_\mu=\bar\psi_{\mathrm u}\gamma_\mu P_L\psi
 | $J_{Z\mu}=\sum_f\bar f\gamma_\mu(T_{3f}P_L-Q_f\sin^2\theta_W)f$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a})\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings |
 | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu A_\mu A_\mu$ | Proca Lagrangian; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
-| $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness |
+| $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness |
 | $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal isospin and spacetime indices, written low; every contraction over them is an explicit sum |

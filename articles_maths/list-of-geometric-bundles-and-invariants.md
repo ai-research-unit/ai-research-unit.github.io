@@ -38,7 +38,7 @@ A connection is a rule of parallel transport, given locally by a connection form
 | Object | The property it has | Introduced in |
 |---|---|---|
 | a connection $\nabla$ | a derivation of the sections, $\nabla(fs) = df\otimes s + f\nabla s$ | *Fibre Bundles, Connections and Curvature* |
-| the connection form in a frame $\omega = (\omega^i_{\ j})$ | $\nabla = d+\omega$, matrix-valued in the frame | *Fibre Bundles, Connections and Curvature* |
+| the connection form in a frame $\omega = (\omega_{ij})$ | $\nabla = d+\omega$, matrix-valued in the frame | *Fibre Bundles, Connections and Curvature* |
 | the change of frame $\omega' = g^{-1}\omega g + g^{-1}dg$ | the transformation of the connection, the gauge transformation rule | *Fibre Bundles, Connections and Curvature* |
 | a connection form on a principal bundle $\omega \in \Omega^1(P;\mathrm{G})$ | $\omega(A^{\#}) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | *Fibre Bundles, Connections and Curvature* |
 | the horizontal subspace $H_pP = \ker\omega_n$ | the complement to the vertical, defining the transport | *Fibre Bundles, Connections and Curvature* |

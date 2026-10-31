@@ -11,12 +11,12 @@ $$
 and every Lorentz-invariant contraction of momenta becomes a product of two brackets,
 
 $$
-\langle ij\rangle \;=\; \lambda_i^\alpha\lambda_{j\alpha} \;=\; -\langle ji\rangle,
+\langle ij\rangle \;=\; \sum_{\alpha,\beta}\varepsilon_{\alpha\beta}\,\lambda_{i\alpha}\lambda_{j\beta} \;=\; -\langle ji\rangle,
 \qquad
-[ij] \;=\; \bar\lambda_i^{\bar\alpha}\bar\lambda_{j\bar\alpha} \;=\; -[ji].
+[ij] \;=\; \sum_{\bar\alpha,\bar\beta}\varepsilon_{\bar\alpha\bar\beta}\,\bar\lambda_{i\bar\alpha}\bar\lambda_{j\bar\beta} \;=\; -[ji].
 $$
 
-Scattering amplitudes of massless particles are rational functions of these brackets. The simplest is the **Parke–Taylor** formula for the maximally helicity-violating gluon amplitude, a ratio of brackets whose little-group weights encode the helicities of the external particles [Parke and Taylor 1986; Elvang and Huang 2015; Dixon 2014]. The formalism is standard.
+Here $\varepsilon_{12}=+1$, so each bracket is the $2\times2$ determinant of the two spinors. Scattering amplitudes of massless particles are rational functions of these brackets. The simplest is the **Parke–Taylor** formula for the maximally helicity-violating gluon amplitude, a ratio of brackets whose little-group weights encode the helicities of the external particles [Parke and Taylor 1986; Elvang and Huang 2015; Dixon 2014]. The formalism is standard.
 
 This article places it inside the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and the claim is stronger than an analogy. The framework already contains a statement that is *equivalent* to the spinor-helicity factorisation: **a nonzero biquaternion whose biquaternion norm vanishes is a zero divisor, and under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ it is exactly a rank-one matrix.** A rank-one $2\times2$ matrix is an outer product of two spinors. A massless momentum has vanishing biquaternion norm. Therefore a massless momentum *is* a rank-one biquaternion, and its rank-one factorisation *is* the spinor-helicity factorisation $p = \lambda\bar\lambda$. The identification is not an analogy, and it needs no new postulate: both sides are the same statement about the same matrix.
 
@@ -112,7 +112,7 @@ $$
 p_{\alpha\bar\beta} \;=\; \lambda_\alpha\,\bar\lambda_{\bar\beta},
 $$
 
-with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\bar\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi^{\bar\beta}$ of the null quadric's mixed spinor $A_\alpha{}^{\bar\beta}$ (*Matrix Representations : Rank-One Matrices and the Determinantal Variety*, §*The Factorisation*; *The Topology of the Zero-Divisor Cone*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
+with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\bar\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi_{\bar\beta}$ of the null quadric's mixed spinor $A_{\alpha\bar\beta}$ (*Matrix Representations : Rank-One Matrices and the Determinantal Variety*, §*The Factorisation*; *The Topology of the Zero-Divisor Cone*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
 
 **Reality and the two Weyl spinors.** For a real momentum, $\tilde P \in \mathbb{M}_-$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P)$ is anti-Hermitian. An anti-Hermitian rank-one matrix is $i$ times a Hermitian rank-one matrix, and a positive-semidefinite Hermitian rank-one matrix is $u u^\dagger$ for a single spinor $u$; consequently the two factors in $\mathsf{M}_2(\tilde P) = \lambda\bar\lambda^T$ are conjugate up to a phase,
 

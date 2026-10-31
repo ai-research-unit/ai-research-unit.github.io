@@ -148,12 +148,12 @@ In the transverse-traceless gauge the field carries only the two physical modes,
 $$
 h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
 \sum_{r=+,\times}\left[
-a_r(\vec p)\,\varepsilon^{r}_{ij}(\vec u_p)\,\exp(-ip\cdot x)
-+ a_r^\dagger(\vec p)\,\varepsilon^{r*}_{ij}(\vec u_p)\,\exp(+ip\cdot x)
+a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-ip\cdot x)
++ a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+ip\cdot x)
 \right] ,
 $$
 
-with $E_p=|\vec p|$ for the massless field, $\varepsilon^{r}_{ij}$ the two transverse-traceless polarization tensors normalized by $\varepsilon^{r}_{ij}\varepsilon^{s*}_{ij}=\delta^{rs}$, and the polarizations orthogonal to the momentum and traceless. The two polarizations are the two helicities $\pm2$, related by a rotation of $45^\circ$, and the sum over $r$ is the sum over them.
+with $E_p=|\vec p|$ for the massless field, $\varepsilon_{r ij}$ the two transverse-traceless polarization tensors normalized by $\sum_{i,j}\varepsilon_{r ij}\varepsilon_{s ij}^{*}=\delta_{rs}$, and the polarizations orthogonal to the momentum and traceless. The two polarizations are the two helicities $\pm2$, related by a rotation of $45^\circ$, and the sum over $r$ is the sum over them.
 
 ### Commutators and the Fock Space
 

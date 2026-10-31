@@ -20,7 +20,7 @@ The article defines symmetric tensors and their contraction with the metric, dev
 
 Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By *Symmetric Powers*, the $k$-fold symmetric power $\operatorname{Sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\varphi_1 \otimes \cdots \otimes \varphi_k - \varphi_{\sigma(1)}\otimes\cdots\otimes\varphi_{\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{Sym}^k(V^*)$ is a **symmetric tensor** of rank $k$, that is, a $k$-linear form $\varphi : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that *Symmetric Powers* calls symmetric tensors in the strict sense.
 
-**Proposition.** If $V$ has basis $e_1, \ldots, e_n$ with dual basis $e^1, \ldots, e^n$ defined by $e^i(e_j) = \delta^i_j$, then the products $e^{i_1}\cdots e^{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{Sym}^k(V^*)$. Hence
+**Proposition.** If $V$ has basis $e_1, \ldots, e_n$ with dual basis $\check e_1, \ldots, \check e_n$ defined by $\check e_i(e_j) = \delta_{ij}$, then the products $\check e_{i_1}\cdots \check e_{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{Sym}^k(V^*)$. Hence
 
 $$
 \dim \operatorname{Sym}^k(V^*) = \binom{n+k-1}{k}.
@@ -228,7 +228,7 @@ The harmonic layers and the trace-free symmetric tensors are the same object, re
 
 **Theorem.** Under the identification of $P_k$ with $\operatorname{Sym}^k(V^*)$, the harmonic polynomials of degree $k$ correspond exactly to the symmetric tensors of rank $k$ that are trace-free with respect to $g$, and the trace-free symmetric tensors of rank $k$ form a subspace of dimension $\dim\mathcal{H}_k$.
 
-*Proof.* The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta^{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above.
+*Proof.* The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta_{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above.
 
 **Corollary.** The dimension of the space of quadratic forms on $\mathbb{R}^n$ is $\binom{n+1}{2} = \tfrac{n(n+1)}{2}$, and the trace-free part has dimension $\binom{n+1}{2} - 1 = \tfrac{n(n+1)}{2} - 1$, which for $n = 3$ is $5$, the number of independent harmonic quadratics. The decomposition $P_2 = \mathcal{H}_2 \oplus r^2 P_0$ separates the quadratic form into its trace part $\tfrac{\operatorname{tr} Q}{n}r^2$ and its trace-free part, and this is the spectral decomposition of a quadratic form into its mean and its traceless component.
 
@@ -254,7 +254,7 @@ equal to $2k+1$ for $n=3$ and to $(k+1)^2$ for $n=4$, and the harmonic layers ar
 |---|---|
 | $F$ | Base field of characteristic $0$ |
 | $V = \mathbb{R}^n$, $V^*$ | Euclidean space and its dual |
-| $e_1, \ldots, e_n$; $e^1, \ldots, e^n$ | Basis of $V$ and its dual basis, $e^i(e_j) = \delta^i_j$ |
+| $e_1, \ldots, e_n$; $\check e_1, \ldots, \check e_n$ | Basis of $V$ and its dual basis, $\check e_i(e_j) = \delta_{ij}$ |
 | $g$, $g_{ij} = \delta_{ij}$ | Standard positive definite inner product |
 | $\operatorname{Sym}^k(V^*)$ | Symmetric tensors of rank $k$, dimension $\binom{n+k-1}{k}$ |
 | $P_k$ | Homogeneous polynomials of degree $k$ |

@@ -45,17 +45,20 @@ The order is from the physical to the typographical. The SI units come first, wi
 
 **A caret is the exclusive carrier of those things:**
 
-- a power, $e^\lambda$, $2^k$, $(-1)^k$, $2^n$;
+- a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
 - a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
 - a transposition, $L^T$, $\psi^T$;
-- a construction, $\mathbb{B}^\times$, $\mathbb{B}^{\otimes n}$, $S^{\otimes n}$.
+- a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{Sym}^l$, $\Lambda^kTM$ (degree).
 
 **A low mark is the exclusive carrier of those things:**
 
 - a numeric count, $Q_1$, $M_2$;
-- a coordinate or a field component, $x_\mu$, $A_\mu$; a basis vector or a gamma, $\vec e_i$, $\gamma_i$;
-- a sign symbol, $\varepsilon_{ijk}$;
-- a colour, gauge or spin index, $T_a$, $G_a$, $\sigma_z$.
+- a coordinate or a component, $q_i$, $dq_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\xi_k$, $v_i$;
+- a frame or basis vector, a gamma, $\vec e_i$, $\gamma_i$;
+- a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$;
+- a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$;
+- a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$;
+- a differential, $dx_i$.
 
 **The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is.
 

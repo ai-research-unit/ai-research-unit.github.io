@@ -148,7 +148,7 @@ the shift operations of the spin-one multiplet, with the matrix elements $\sqrt{
 The identification with the massive vector field of the Proca case is now immediate. The on-shell polarization vectors of a massive spin-one field are three vectors orthogonal to the momentum; in the rest frame they are the three spatial directions, and the adjoint action's triplet is exactly that three-dimensional space with its rotation action. The spin basis $\{\varepsilon_+,\varepsilon_-,\varepsilon_0\}$ is the basis in which the helicity about the third axis is diagonal; the transverse polarizations are $\varepsilon_\pm$ and the longitudinal one is $\varepsilon_0$, or a boost of it. The completeness relation of the massive vector field,
 
 $$
-\sum_{r=1}^{3}\varepsilon^r_\mu\varepsilon^r_\nu = \eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
+\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu} = \eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
 $$
 
 is the statement that the triplet spans the spatial polarisation space, and it respects the adjoint action because both sides are rotation-invariant objects in their respective indices.
@@ -224,12 +224,12 @@ An integer-spin field is quantized with commutators, not anticommutators. The mo
 $$
 \Phi^{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\chi^r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip\cdot x)
-+ \chi^{r*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip\cdot x)
+\chi_r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip\cdot x)
++ \chi_{r}^{*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip\cdot x)
 \right],
 $$
 
-with polarization labels $\chi^r$ and mode operators satisfying
+with polarization labels $\chi_r$ and mode operators satisfying
 
 $$
 \left[a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\right]
@@ -297,7 +297,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ | Weight basis of the triplet; $\tilde S^{(\mathrm{adj})}_3$ eigenvalues $\pm1,0$ |
 | $\tilde S^{(\mathrm{adj})}_\pm=\tilde S^{(\mathrm{adj})}_1\pm i\tilde S^{(\mathrm{adj})}_2$ | Ladder operators, matrix element $\sqrt2$ |
 | $(\tilde S^{(\mathrm{adj})}_3)^3-\tilde S^{(\mathrm{adj})}_3=0$ | Minimal polynomial of the spin-one generator |
-| $\chi^r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
+| $\chi_r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
 | $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$ | Bosonic mode operators, $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\delta_{rs}(2\pi)^3\delta^{(3)}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | Helicity; eigenvalues $\pm s$ |
 | $\tilde S^{(s)}_k=\sum_a I\otimes\cdots\otimes \tilde S^{(\mathrm{adj})}_k\otimes\cdots\otimes I$ | Internal spin for rank-$s$ carriers |

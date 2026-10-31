@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **Casimir element** of a semisimple Lie algebra $\mathrm{G}$ is the central element $\Omega=\sum_i x_i x^i$ of the universal enveloping algebra $\mathrm{U}(\mathrm{G})$, formed from a basis and its dual basis with respect to the Killing form. It is defined, and it is proved to be central and to act on an irreducible module by the scalar $(\lambda,\lambda+2\rho)$, in *Representations of Lie Algebras*; the element, its centrality and its eigenvalue are owned by that article and are cited here. This article treats the **operator** that the element induces. In each representation $\pi$ the element gives the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(x^i)$, and in the regular representation it gives left multiplication by $\Omega$ on $\mathrm{U}(\mathrm{G})$; the operator is a $\mathrm{G}$-module endomorphism, its eigenspaces are the isotypic components of a completely reducible module, it is the identity on the adjoint module up to the normalisation fixed by the Killing form, and its behaviour on tensor products is governed by a mixed term.
+The **Casimir element** of a semisimple Lie algebra $\mathrm{G}$ is the central element $\Omega=\sum_i x_i \check x_i$ of the universal enveloping algebra $\mathrm{U}(\mathrm{G})$, formed from a basis and its dual basis with respect to the Killing form. It is defined, and it is proved to be central and to act on an irreducible module by the scalar $(\lambda,\lambda+2\rho)$, in *Representations of Lie Algebras*; the element, its centrality and its eigenvalue are owned by that article and are cited here. This article treats the **operator** that the element induces. In each representation $\pi$ the element gives the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(\check x_i)$, and in the regular representation it gives left multiplication by $\Omega$ on $\mathrm{U}(\mathrm{G})$; the operator is a $\mathrm{G}$-module endomorphism, its eigenspaces are the isotypic components of a completely reducible module, it is the identity on the adjoint module up to the normalisation fixed by the Killing form, and its behaviour on tensor products is governed by a mixed term.
 
 The universal enveloping algebra, its filtration and the Poincaré–Birkhoff–Witt theorem are *Universal Enveloping Algebras*; the modules, the weights, the highest weight classification and the Casimir element are *Representations of Lie Algebras*; the Cartan subalgebra, the roots and the Killing form are *Root Systems and Classification* and *The Killing Form Operator*. Nothing owned by those entries is re-derived.
 
@@ -13,19 +13,19 @@ The article stays inside Part I: the operator is algebraic, and its analytic rea
 
 ### The Definition, Recalled
 
-**Definition.** Let $(x_1,\dots,x_m)$ be a basis of $\mathrm{G}$ and let $(x^1,\dots,x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i,x^j)=\delta_i^j$. The **Casimir element** is $\Omega=\sum_i x_ix^i\in \mathrm{U}(\mathrm{G})$; it is independent of the choice of basis and central. These statements, with the centrality of $\Omega$ and the eigenvalue $(\lambda,\lambda+2\rho)$ on the irreducible module $V(\lambda)$, are from *Representations of Lie Algebras*.
+**Definition.** Let $(x_1,\dots,x_m)$ be a basis of $\mathrm{G}$ and let $(\check x_1,\dots,\check x_m)$ be the dual basis with respect to the Killing form, $\kappa(x_i,\check x_j)=\delta_{ij}$. The **Casimir element** is $\Omega=\sum_i x_i\check x_i\in \mathrm{U}(\mathrm{G})$; it is independent of the choice of basis and central. These statements, with the centrality of $\Omega$ and the eigenvalue $(\lambda,\lambda+2\rho)$ on the irreducible module $V(\lambda)$, are from *Representations of Lie Algebras*.
 
 **Definition.** For a representation $\pi:\mathrm{G}\to\operatorname{End}_K(V)$ the **Casimir operator** is
 
 $$
-\Omega_\pi=\pi(\Omega)=\sum_{i=1}^{m}\pi(x_i)\,\pi(x^i)\in\operatorname{End}_K(V).
+\Omega_\pi=\pi(\Omega)=\sum_{i=1}^{m}\pi(x_i)\,\pi(\check x_i)\in\operatorname{End}_K(V).
 $$
 
 The assignment is functorial: if $f:V\to W$ is a homomorphism of $\mathrm{G}$-modules then $f\circ\Omega_\pi=\Omega_{\pi}\circ f$, because $f$ intertwines the operators $\pi(x)$.
 
 ### Independence of the Basis
 
-**Proposition.** The operator $\Omega_\pi$ does not depend on the basis: for any basis $(y_1,\dots,y_m)$ with dual basis $(y^1,\dots,y^m)$, $\sum_i\pi(y_i)\pi(y^i)=\sum_i\pi(x_i)\pi(x^i)$.
+**Proposition.** The operator $\Omega_\pi$ does not depend on the basis: for any basis $(y_1,\dots,y_m)$ with dual basis $(\check y_1,\dots,\check y_m)$, $\sum_i\pi(y_i)\pi(\check y_i)=\sum_i\pi(x_i)\pi(\check x_i)$.
 
 **Proof.** This is the basis-independence of the Casimir element, transported by the algebra homomorphism $\pi$ that the universal property of $\mathrm{U}(\mathrm{G})$ supplies; the operator statement is the image of the element statement.
 
@@ -76,7 +76,7 @@ The Casimir element is the image of a canonical invariant tensor, and under the 
 **Definition.** The **invariant tensor** of the Killing form is
 
 $$
-\theta=\sum_{i=1}^{m}x_i\otimes x^i\in\mathrm{G}\otimes_K\mathrm{G}.
+\theta=\sum_{i=1}^{m}x_i\otimes \check x_i\in\mathrm{G}\otimes_K\mathrm{G}.
 $$
 
 It is independent of the basis, and it is invariant under the diagonal action of $\mathrm{G}$: $(\operatorname{ad}_x\otimes1+1\otimes\operatorname{ad}_x)\theta=0$.
@@ -87,7 +87,7 @@ $$
 \theta\longmapsto \mathrm{id}_{\mathrm{G}}.
 $$
 
-**Proof.** The image of $z$ is $\sum_i\kappa(x^i,z)x_i$. Writing $z=\sum_j z_jx_j$, the dual-basis property gives $\kappa(x^i,z)=z_i$, so the image is $\sum_i z_ix_i=z$.
+**Proof.** The image of $z$ is $\sum_i\kappa(\check x_i,z)x_i$. Writing $z=\sum_j z_jx_j$, the dual-basis property gives $\kappa(\check x_i,z)=z_i$, so the image is $\sum_i z_ix_i=z$.
 
 **Remark.** The proposition is the operator-theoretic content of the Casimir element: it is the invariant tensor that represents the identity, read in $\mathrm{U}(\mathrm{G})$ instead of in $\mathrm{G}\otimes\mathrm{G}$. The same computation with the adjoint action in place of the pairing is the statement that the Casimir operator of the adjoint module is the identity, which is the next section.
 
@@ -98,10 +98,10 @@ $$
 $$
 \boxed{\;\Omega_{\operatorname{ad}}=\mathrm{id}_{\mathrm{G}},
 \qquad
-\Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[x^i,x]]=x\;} .
+\Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[\check x_i,x]]=x\;} .
 $$
 
-**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[x^i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$.
+**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[\check x_i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$.
 
 
 ## Tensor Products
@@ -109,10 +109,10 @@ $$
 **Proposition (the mixed term).** Let $V$ and $W$ be $\mathrm{G}$-modules, and let $\Omega_V,\Omega_W$ be the Casimir operators. Then, on $V\otimes_KW$,
 
 $$
-\Omega_{V\otimes W}=\Omega_V\otimes\mathrm{id}_W+\mathrm{id}_V\otimes\Omega_W+2\sum_{i=1}^{m}\pi_V(x_i)\otimes\pi_W(x^i).
+\Omega_{V\otimes W}=\Omega_V\otimes\mathrm{id}_W+\mathrm{id}_V\otimes\Omega_W+2\sum_{i=1}^{m}\pi_V(x_i)\otimes\pi_W(\check x_i).
 $$
 
-**Proof.** This is the expansion of $\sum_i\pi_{V\otimes W}(x_i)\pi_{V\otimes W}(x^i)$ with $\pi_{V\otimes W}(x)=\pi_V(x)\otimes\mathrm{id}+\mathrm{id}\otimes\pi_W(x)$; the diagonal terms give the two Casimir operators, and the cross terms give twice the displayed mixed sum.
+**Proof.** This is the expansion of $\sum_i\pi_{V\otimes W}(x_i)\pi_{V\otimes W}(\check x_i)$ with $\pi_{V\otimes W}(x)=\pi_V(x)\otimes\mathrm{id}+\mathrm{id}\otimes\pi_W(x)$; the diagonal terms give the two Casimir operators, and the cross terms give twice the displayed mixed sum.
 
 **Corollary.** On a tensor product of two irreducible modules the Casimir operator acts with the eigenvalues of the summands shifted by the mixed term, whose value is computed from the highest weights by the Littlewood–Richardson rule of *Representations of Lie Algebras*; for $\mathrm{SL}(2,K)$ the mixed term vanishes on the highest weight vector and the eigenvalue is the sum of the two eigenvalues.
 
@@ -148,9 +148,9 @@ one has $ef+fe=\mathrm{id}$ and $h^2=\mathrm{id}$, so $\Omega=\tfrac14\mathrm{id
 
 ## Summary
 
-The **Casimir operator** of a representation $\pi$ of a semisimple Lie algebra is the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(x^i)$ attached to the Casimir element $\Omega$ of $\mathrm{U}(\mathrm{G})$; it is independent of the choice of basis, and it commutes with the action, $[\Omega_\pi,\pi(x)]=0$, so it is a $\mathrm{G}$-module endomorphism. It therefore preserves every submodule and descends to every quotient, and on an irreducible module it is a scalar, namely $(\lambda,\lambda+2\rho)$ for $V(\lambda)$. Because the eigenvalues of distinct highest weights are distinct, the eigenspaces of $\Omega_\pi$ on a completely reducible module are exactly the isotypic components, so the Casimir operator separates them and its eigenspace projections are the isotypic projections.
+The **Casimir operator** of a representation $\pi$ of a semisimple Lie algebra is the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(\check x_i)$ attached to the Casimir element $\Omega$ of $\mathrm{U}(\mathrm{G})$; it is independent of the choice of basis, and it commutes with the action, $[\Omega_\pi,\pi(x)]=0$, so it is a $\mathrm{G}$-module endomorphism. It therefore preserves every submodule and descends to every quotient, and on an irreducible module it is a scalar, namely $(\lambda,\lambda+2\rho)$ for $V(\lambda)$. Because the eigenvalues of distinct highest weights are distinct, the eigenspaces of $\Omega_\pi$ on a completely reducible module are exactly the isotypic components, so the Casimir operator separates them and its eigenspace projections are the isotypic projections.
 
-The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otimes x^i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(x^i)$. In the regular representation it is left multiplication by $\Omega$, hence an element of $\operatorname{End}_{\mathrm{U}(\mathrm{G})}(\mathrm{U}(\mathrm{G}))$, and it is the quadratic generator of the centre of $\mathrm{U}(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
+The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otimes \check x_i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(\check x_i)$. In the regular representation it is left multiplication by $\Omega$, hence an element of $\operatorname{End}_{\mathrm{U}(\mathrm{G})}(\mathrm{U}(\mathrm{G}))$, and it is the quadratic generator of the centre of $\mathrm{U}(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
 
 ## Summary of Notation
 
@@ -159,14 +159,14 @@ The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otime
 | $K$ | algebraically closed base field of characteristic zero |
 | $\mathrm{G}$ | finite-dimensional semisimple Lie algebra over $K$ |
 | $\kappa$ | the Killing form |
-| $x_i,x^i$ | a basis and its $\kappa$-dual basis |
-| $\Omega=\sum_ix_ix^i$ | the Casimir element of $\mathrm{U}(\mathrm{G})$ |
+| $x_i,\check x_i$ | a basis and its $\kappa$-dual basis |
+| $\Omega=\sum_ix_i\check x_i$ | the Casimir element of $\mathrm{U}(\mathrm{G})$ |
 | $\pi$ | a representation of $\mathrm{G}$ |
 | $\Omega_\pi=\pi(\Omega)$ | the Casimir operator of $\pi$ |
 | $\operatorname{End}_{\mathrm{G}}(V)$ | the $\mathrm{G}$-module endomorphisms of $V$ |
 | $V(\lambda)$, $(\lambda,\lambda+2\rho)$ | irreducible module and its Casimir eigenvalue |
 | $\rho$ | the half-sum of the positive roots |
-| $\theta=\sum_ix_i\otimes x^i$ | the invariant tensor of the Killing form |
+| $\theta=\sum_ix_i\otimes \check x_i$ | the invariant tensor of the Killing form |
 | $\Omega_{\operatorname{ad}}=\mathrm{id}$ | the Casimir operator of the adjoint module |
 | $V_{(\nu)}$ | the isotypic component of highest weight $\nu$ |
 

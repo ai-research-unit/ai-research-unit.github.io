@@ -157,10 +157,10 @@ The formula $\kappa(\tilde Q_1,\tilde Q_2)=-2\,\vec Q_1\cdot\vec Q_2$ restricts 
 
 ## The Casimir Element
 
-**Definition.** Let $(E_1,E_2,E_3)=(\vec e_x,\vec e_y,\vec e_z)$ be the basis of the vector subspace and let $h^{ij}$ be the inverse of the Gram matrix $\kappa(E_i,E_j)=-2\delta_{ij}$, that is $h^{ij}=-\tfrac12\delta^{ij}$. The **Casimir element** of the block is
+**Definition.** Let $(E_1,E_2,E_3)=(\vec e_x,\vec e_y,\vec e_z)$ be the basis of the vector subspace and let $(h^{-1})_{ij}$ be the entries of the inverse of the Gram matrix $\kappa(E_i,E_j)=-2\delta_{ij}$, that is $(h^{-1})_{ij}=-\tfrac12\delta_{ij}$. The **Casimir element** of the block is
 
 $$
-\Omega=\sum_{i,j=1}^{3}h^{ij}E_iE_j=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr)
+\Omega=\sum_{i,j=1}^{3}(h^{-1})_{ij}E_iE_j=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr)
 $$
 
 in the enveloping algebra of the derived algebra.

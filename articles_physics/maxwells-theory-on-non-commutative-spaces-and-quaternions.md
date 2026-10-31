@@ -291,7 +291,7 @@ $$
 \boxed{\;\nabla F + \tfrac12\left(\nabla G + G^+\overleftarrow{\nabla}\right) = -J\;},
 $$
 
-where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau^m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
+where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
 
 $$
 \vec g = i(\vec\theta\cdot\vec v^*)\vec v - \frac{i}{2}\vec\theta(\vec v^*)^2,
@@ -353,7 +353,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $T^{\mathrm{can}}_{\mu\nu}$, $T^{\mathrm{sym}}_{\mu\nu}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
 | $T_\mu{}_\mu$ | Classical trace anomaly, $\propto(\vec\theta\cdot\vec B)(\vec E^2-\vec B^2)-2(\vec\theta\cdot\vec E)(\vec E\cdot\vec B)$; doubles for the symmetric tensor |
 | $\tau_\mu=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $e_k=i\tau_k$ |
-| $F=f_\mu\tau_\mu$, $G=g_m\tau^m$ | Spin-tensor (quaternion) field and correction; $f_k=D_k+iB_k$, $g_m=d_m+ih_m$ |
+| $F=f_\mu\tau_\mu$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_k=D_k+iB_k$, $g_m=d_m+ih_m$ |
 
 ## Further Reading
 

@@ -12,7 +12,7 @@ This article treats the finite-dimensional case and the general theory of the in
 
 **Definition.** An **inner product space** is a vector space $V$ over $F$ with a sesquilinear form $[\cdot,\cdot] : V\times V\to F$ that is **Hermitian**, $[x,y] = \sigma([y,x])$, and **non-degenerate**, $[x,y] = 0$ for every $y$ only when $x = 0$. It is **indefinite** when there are $x$ with $[x,x] > 0$ and $y$ with $[y,y] < 0$; the value $[x,x]$ is the **scalar square** of $x$.
 
-**Definition.** The **Gram matrix** of a basis $e_1, \ldots, e_n$ is the Hermitian matrix $G$ with entries $G_{ij} = [e_i, e_j]$; if $x = \sum x^{i}e_i$ and $y = \sum y^{j}e_j$ then $[x,y] = \sum_{i,j}x^{i}G_{ij}\sigma(y^{j})$. Under the change of basis with matrix $P$ the Gram matrix becomes $P^{\dagger}GP$, and the form is non-degenerate exactly when $\det G \neq 0$.
+**Definition.** The **Gram matrix** of a basis $e_1, \ldots, e_n$ is the Hermitian matrix $G$ with entries $G_{ij} = [e_i, e_j]$; if $x = \sum_i x_ie_i$ and $y = \sum_j y_je_j$ then $[x,y] = \sum_{i,j}x_iG_{ij}\sigma(y_j)$. Under the change of basis with matrix $P$ the Gram matrix becomes $P^{\dagger}GP$, and the form is non-degenerate exactly when $\det G \neq 0$.
 
 **Proof.** Direct expansion of the sesquilinear form in the basis, and the standard criterion for non-degeneracy of a Hermitian form.
 
@@ -106,15 +106,15 @@ is a positive definite inner product on $V$, and the indefinite form is recovere
 
 ### The Plane $\mathbb{R}^{1,1}$
 
-On $\mathbb{R}^{2}$ with form $[x,y] = x^{1}y^{1} - x^{2}y^{2}$ the signature is $(1,1)$: the vector $e_1$ is positive, $e_2$ is negative, and $e_1+e_2$ is neutral. The fundamental decompositions are the spans of $e_1$ and $e_2$, and the graphs of the maps $e_1\mapsto te_2$ with $|t| < 1$; the associated $J$'s are $\mathrm{diag}(1,-1)$ in each adapted basis, and the positive definite forms $\langle x,y\rangle = [Jx,y]$ are all equivalent.
+On $\mathbb{R}^{2}$ with form $[x,y] = x_1y_1 - x_2y_2$ the signature is $(1,1)$: the vector $e_1$ is positive, $e_2$ is negative, and $e_1+e_2$ is neutral. The fundamental decompositions are the spans of $e_1$ and $e_2$, and the graphs of the maps $e_1\mapsto te_2$ with $|t| < 1$; the associated $J$'s are $\mathrm{diag}(1,-1)$ in each adapted basis, and the positive definite forms $\langle x,y\rangle = [Jx,y]$ are all equivalent.
 
 ### The Space $\mathbb{C}^{2,1}$
 
-On $\mathbb{C}^{3}$ with $[x,y] = x^{1}\overline{y^{1}} + x^{2}\overline{y^{2}} - x^{3}\overline{y^{3}}$ the signature is $(2,1)$, the null cone is a cone of neutral complex directions, and the maximal neutral subspaces are one-dimensional.
+On $\mathbb{C}^{3}$ with $[x,y] = x_1\overline{y_1} + x_2\overline{y_2} - x_3\overline{y_3}$ the signature is $(2,1)$, the null cone is a cone of neutral complex directions, and the maximal neutral subspaces are one-dimensional.
 
 ### Inertia of a Form by Congruence
 
-On $\mathbb{R}^{3}$ with $[x,y] = x^{1}y^{2}+x^{2}y^{1} - x^{3}y^{3}$ the Gram matrix of the standard basis is $\mathrm{diag}$-free with determinant $1$, so the form is non-degenerate; its inertia index is $(1,2,0)$: a positive direction is $e_1+e_2$, of square $2$, and a negative definite plane is $\mathrm{span}(e_1-e_2,\,e_3)$, of squares $-2$ and $-1$ and orthogonal. The signature is $(1,2)$, the form is indefinite, and the computation is Sylvester's law in action.
+On $\mathbb{R}^{3}$ with $[x,y] = x_1y_2+x_2y_1 - x_3y_3$ the Gram matrix of the standard basis is $\mathrm{diag}$-free with determinant $1$, so the form is non-degenerate; its inertia index is $(1,2,0)$: a positive direction is $e_1+e_2$, of square $2$, and a negative definite plane is $\mathrm{span}(e_1-e_2,\,e_3)$, of squares $-2$ and $-1$ and orthogonal. The signature is $(1,2)$, the form is indefinite, and the computation is Sylvester's law in action.
 
 ## Summary
 

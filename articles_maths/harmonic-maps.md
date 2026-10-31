@@ -28,7 +28,7 @@ The article treats the definition and the first variation, the examples, the exi
 **Definition.** Let $(M,g)$ and $(N,h)$ be Riemannian manifolds, $M$ compact and without boundary unless stated, and let $\phi : M \to N$ be a map of class $C^1$. The **energy** of $\phi$ is
 
 $$
-E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = (g^{-1})_{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial/\partial x_i\,\phi_\alpha\,\partial/\partial x_j\,\phi_\beta ,
+E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = \sum_{i,j,\alpha,\beta}(g^{-1})_{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial/\partial x_i\,\phi_\alpha\,\partial/\partial x_j\,\phi_\beta ,
 $$
 
 in local coordinates $x$ on $M$ and $\phi$ on $N$; a map with finite energy is an element of the Sobolev space $W^{1,2}(M,N)$ of maps whose local expressions lie in $W^{1,2}$.
@@ -58,7 +58,7 @@ where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the 
 *Proof.* The derivative of the energy is
 
 $$
-\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M (g^{-1})_{ij}h_{\alpha\beta}\bigl(\partial/\partial x_i\,V_\alpha\partial/\partial x_j\,\phi_\beta + \dots\bigr) ,
+\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M \sum_{i,j,\alpha,\beta}(g^{-1})_{ij}h_{\alpha\beta}\bigl(\partial/\partial x_i\,V_\alpha\partial/\partial x_j\,\phi_\beta + \dots\bigr) ,
 $$
 
 and integrating by parts on $M$, which has no boundary or on which $V$ vanishes, produces the integral of $V$ against the trace of $\nabla d\phi$ with the sign displayed; the arbitrariness of $V$ gives the equation.
@@ -184,7 +184,7 @@ A harmonic map $\phi : (M,g)\to(N,h)$ is a critical point of the energy $E(\phi)
 | $(M,g)$, $(N,h)$ | Riemannian source and target |
 | $\phi : M\to N$ | Map; local components $\phi_\alpha$ |
 | $E(\phi)$ | Energy $\frac12\int_M|d\phi|^2\,dV_g$ |
-| $|d\phi|^2$ | $(g^{-1})_{ij}h_{\alpha\beta}\partial/\partial x_i\,\phi_\alpha\partial/\partial x_j\,\phi_\beta$ |
+| $|d\phi|^2$ | $\sum_{i,j,\alpha,\beta}(g^{-1})_{ij}h_{\alpha\beta}\partial/\partial x_i\,\phi_\alpha\partial/\partial x_j\,\phi_\beta$ |
 | $\tau(\phi)$ | Tension field, the trace of $\nabla d\phi$ |
 | $\Delta_g$ | Laplace–Beltrami operator of the source |
 | $\Gamma_{\alpha\beta\gamma}$ | Christoffel symbols of the target |

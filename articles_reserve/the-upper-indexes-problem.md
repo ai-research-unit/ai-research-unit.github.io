@@ -1,6 +1,6 @@
 # __The Upper-Index Problem: The Caret Rule and the Corpus__
 
-The rule forbids one use of the caret: the frame slot. Two tables list every article that breaks it in the screened range. The first lists 39 mathematics articles and 583 raised frame slots, the count of the first pass. The second lists 30 physics articles and 134 raised frame slots, with the forms and the count in each article.
+The rule forbids one use of the caret: the frame slot. One table lists every mathematics article that still breaks it; a second records the physics screen, which is closed. The first lists 39 mathematics articles and 583 raised frame slots, the count of the first pass. The second lists the 21 physics articles that carried 48 raised frame slots when the Latin screen was run; that screen is closed now and all 48 are low.
 
 ## The Rule
 
@@ -43,16 +43,16 @@ The internal screen is corrected in the same way. Nineteen articles were cleared
 
 | Corpus | Articles | Articles with issues | Issues | Greek slots |
 |---|---:|---:|---:|---:|
-| Physics | 403 | 30 | 134 frame slots | 0 |
+| Physics | 403 | 0 | 0 frame slots | 0 |
 | Mathematics | 2,407 | 39 | 583 frame slots, first pass | 0 |
 
-The sixteen internal rows have left the physics table: the ten articles that carried them now read zero, and their contractions are explicit sums. The physics table that follows lists the Latin screen's 30 articles and 134 slots. The rows are gone rather than zeroed.
+The sixteen internal rows have left the physics table: the ten articles that carried them now read zero, and their contractions are explicit sums. The Latin screen's 21 articles and 48 slots have followed them: the colour carets of *The Electric Dipole Moment* are $G_{a\mu\nu}$, the spinor and polarization labels are low, and every contraction they fed is an explicit sum. The table that follows is the record of what the screen found, not a list of debt.
 
-Physics has no raised frame slot on the Greek screen's letters. Its eight carets there are three integration limits $\int_0^\tau$, one exponent $(\alpha/\pi)^\lambda$, one sign label $\nabla^\sigma$, and the three specimens $e^\lambda$, $M_4^\sigma$ and $\mathbb{B}^\sigma$ in the sentence of the rule. The 134 sit on the Latin and spinor letters, which the first pass did not screen in physics. The two $\sigma^\alpha$ carets of *Kramers Degeneracy* are gone: the article now writes $\sigma_\alpha$, and its two carets were the only ones on that letter outside the Pauli axis.
+Physics has no raised frame slot on the Greek screen's letters. Its eight carets there are three integration limits $\int_0^\tau$, one exponent $(\alpha/\pi)^\lambda$, one sign label $\nabla^\sigma$, and the three specimens $e^\lambda$, $M_4^\sigma$ and $\mathbb{B}^\sigma$ in the sentence of the rule. The 48 sat on the Latin and spinor letters, which the first pass did not screen in physics; they are low now. The two $\sigma^\alpha$ carets of *Kramers Degeneracy* are gone: the article now writes $\sigma_\alpha$, and its two carets were the only ones on that letter outside the Pauli axis.
 
-The internal class is empty in the ten articles it was built on, and the Pauli family $\sigma_x,\sigma_y,\sigma_z,\sigma_\alpha$ is empty too. What is left of the old census of about 300 is the two colour carets $G^a{}_{\mu\nu}$ of *The Electric Dipole Moment*, which are in the 134, and the branch labels $G^{ab}$ of *The Schwinger–Keldysh Formalism*, which are labels.
+The internal class is empty in the ten articles it was built on, and the Pauli family $\sigma_x,\sigma_y,\sigma_z,\sigma_\alpha$ is empty too. What is left of the old census of about 300 is the branch labels $G^{ab}$ of *The Schwinger–Keldysh Formalism*, which are labels.
 
-The raised names are a third population, and the audit does not rule on them: 2,891 carets, listed with the other classes in *The Up and Low Proportions of the Physics Corpus*. They are neither debt nor validated, and the convention stays as it is until the corpus decides what a name is.
+The raised names are a third population, and the audit does not rule on them: 2,891 carets at the last census, since reduced by the physics screen, listed with the other classes in *The Up and Low Proportions of the Physics Corpus*. They are neither debt nor validated, and the convention stays as it is until the corpus decides what a name is.
 
 Mathematics splits into 19 articles and 362 slots in Part III, and 20 articles and 221 slots in Part IV. *Lagrangian and Hamiltonian Systems* alone carries 167, and the first three articles carry 262 of the 583. **This row is the first pass and is not current**: the three largest rows have collapsed — *Lagrangian and Hamiltonian Systems* carries no slot now, *Poisson Geometry* none, and *The Hamilton–Jacobi Equation and Separability* none. The 583 is a ceiling until the mathematics screen is run again, and no total across the two rows is quoted.
 
@@ -107,51 +107,42 @@ The table is the first pass and is kept for the record. The three largest rows h
 
 The ten articles of the first physics table now carry none of the 16. *Electroweak Theory* no longer writes $T^a$; its $T_a$ stands alone. The colour and isospin contractions are explicit sums, and the rows are gone rather than zeroed.
 
-## Physics: The Latin Screen
+## Physics: The Latin Screen, Closed
 
-The first pass ran the internal screen on physics and left the Latin screen to mathematics. Run on physics, the Latin screen reads **134 raised frame slots in 30 articles**. Two large rows have collapsed since the first reading. The Pauli family — 63 carets in *The Jordan–Wigner Transformation*, 2 in *Kramers Degeneracy* — is now low, $\sigma_{z,k}$, $\sigma_{\pm,j}$ and $\sigma_\alpha$, and both articles carry none. The Newman–Penrose row, 49 carets, is now low too: its tetrad components read $l_a,n_a,m_a,\bar m_a$, its spinor components $o_A,o'_A,k_A$, and its contractions are explicit sums, $\sum_{a,b,c,d}C_{abcd}l_am_bl_cm_d$ for the Weyl scalars and $\sum_{A,B,C,D}\Psi_{ABCD}k_Ak_Bk_Ck_D$ for the quartic. The forms that remain are the mathematics screen's, extended to the physics glyphs: the Kronecker $\delta^{rs}$; the Lorentz generators $S^{cd},S^{ab},V^{ab},K^{ab}$; the connection and curvature $\omega^{ab},\Lambda^{ab},R^{ab},\Theta^{ab}$; the spinor and twistor indices $\xi^\alpha,\lambda_i^\alpha,\psi_\mu{}^\alpha,x^{A\bar A},Z^{AB}$; the harmonics $Y_l^m,P_n^m$; the polarization $\varepsilon^r$; the spin label $w^s$; and the stress components $T^{tk},T^{kt}$.
+The first pass ran the internal screen on physics and left the Latin screen to mathematics. Run on physics, the Latin screen read **48 raised frame slots in 21 articles**, and those 21 rows have now collapsed like the nine before them: no raised frame slot remains in physics. Nine rows had already collapsed at the earlier reading. The Pauli family — 63 carets in *The Jordan–Wigner Transformation*, 2 in *Kramers Degeneracy* — is now low, $\sigma_{z,k}$, $\sigma_{\pm,j}$ and $\sigma_\alpha$, and both articles carry none. The Newman–Penrose row, 49 carets, is now low too: its tetrad components read $l_a,n_a,m_a,\bar m_a$, its spinor components $o_A,o'_A,k_A$, and its contractions are explicit sums, $\sum_{a,b,c,d}C_{abcd}l_am_bl_cm_d$ for the Weyl scalars and $\sum_{A,B,C,D}\Psi_{ABCD}k_Ak_Bk_Ck_D$ for the quartic. The nine rows that led the table have collapsed as well: the gauge triplet of *The Algebrodynamical Programme* reads $N_{\nu a}$ and $L_{\mu\nu a}$ with explicit sums; the Proca polarization reads $\varepsilon_{r\mu}$; the generators of *Curved Spacetime* read $S_{cd}$ and $V_{abd}$; the contorsion, connection and curvature of *Matter Makes Space* read $K_{\mu ab}$, $\omega_{\mu ab}$ and $R_{\mu\nu ab}$; the harmonics of *The Vibrating Ellipsoid* and *Why the Multipole Tower Is Infinite* read $Y_{lm}$; the Kronecker deltas of *The Dirac Equation* read $\delta_{rs}$; the graviton polarizations read $\varepsilon_{r ij}$; and the twistor of *Twistor Theory and Biquaternions* reads $x_{A\bar A}$ and $\omega_A$. The forms that remain are the mathematics screen's, extended to the physics glyphs: the Kronecker $\delta^{rs}$; the Lorentz generators $S^{cd},S^{ab},V^{ab}$; the connection and curvature $\omega^{ab},\Lambda^{ab},R^{ab},\Theta^{ab}$; the spinor indices $\xi^\alpha,\lambda_i^\alpha,\psi_\mu{}^\alpha$; the harmonics $Y_l^m,P_n^m$; the polarization $\varepsilon^r$; the spin label $w^s$; and the stress components $T^{tk},T^{kt}$.
 
 | # | Article | Forms | Issues |
 |---:|---|---|---:|
-| 1 | [The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry](../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-and-self-quantized-charge.html) | $L^a{}_{\mu\nu}$ 8, $N^a{}_{\nu}$ 8, $Z^{AB}$ 3, $x^{A\bar A}$ 1, $E^\gamma$ 1 | 21 |
-| 2 | [Canonical Quantization of the Biquaternion Proca Field](../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html) | $\varepsilon^r$ 13 | 13 |
-| 3 | [Curved Spacetime and the Biquaternion Framework](../articles_physics/curved-spacetime-and-the-biquaternion-framework.html) | $S^{cd}$ 10, $S^{ab}$ 1, $V^{ab}$ 1 | 12 |
-| 4 | [Matter Makes Space — An External Construction from Quaternionic Spinors](../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html) | $K^{ab}$ 4, $\omega^{ab}$ 3, $\Lambda^{ab}$ 2, $R^{ab}$ 2, $\Theta^{ab}$ 1 | 12 |
-| 5 | [The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form](../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html) | $Y_l^m$ 7 | 7 |
-| 6 | [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | $\delta^{rs}$ 6 | 6 |
-| 7 | [Canonical Quantization of the Biquaternion Graviton Field](../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html) | $\varepsilon^r$ 4, $\delta^{rs}$ 1 | 5 |
-| 8 | [Twistor Theory and Biquaternions](../articles_physics/twistor-theory-and-biquaternions.html) | $x^{A\bar A}$ 5 | 5 |
-| 9 | [Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not](../articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html) | $Y_l^m$ 5 | 5 |
-| 10 | [Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form](../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html) | $\xi^\alpha$ 3, $\Pi^{\bar\alpha\alpha}$ 1 | 4 |
-| 11 | [The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form](../articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html) | $Y_l^m$ 4 | 4 |
-| 12 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | $\varepsilon^r$ 4 | 4 |
-| 13 | [Canonical Quantization of the Biquaternion Dirac Field](../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html) | $\delta^{rs}$ 3 | 3 |
-| 14 | [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | $\delta^{rs}$ 3 | 3 |
-| 15 | [Linearized Gravity in Biquaternionic Form](../articles_physics/linearized-gravity-in-biquaternionic-form.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
-| 16 | [The Covariant Derivative and Gauge Connection in Biquaternionic Form](../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
-| 17 | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
-| 18 | [Harmonic Elementary Particles and the Periodic System of Atoms](../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html) | $P_n^m$ 2 | 2 |
-| 19 | [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html) | $\varepsilon^r$ 2 | 2 |
-| 20 | [Maxwell's Theory on Non-Commutative Spaces and Quaternions](../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html) | $\tau^m$ 2 | 2 |
-| 21 | [Møller Scattering in Biquaternionic Form](../articles_physics/moller-scattering-in-biquaternionic-form.html) | $w^s$ 2 | 2 |
-| 22 | [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) | $T^{tk},T^{kt}$ 2 | 2 |
-| 23 | [The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure](../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html) | $G^a{}_\mu$ 2 | 2 |
-| 24 | [The Feynman Propagator in Biquaternionic Form](../articles_physics/the-feynman-propagator-in-biquaternionic-form.html) | $\delta^{rs}$ 2 | 2 |
-| 25 | [The Stueckelberg Mechanism in Biquaternionic Form](../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html) | $\varepsilon^r$ 2 | 2 |
-| 26 | [Canonical Quantization of the Biquaternion Rarita–Schwinger Field](../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html) | $C^{ab}$ 1 | 1 |
-| 27 | [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | $M^\alpha$ 1 | 1 |
-| 28 | [Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form](../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html) | $Y_l^m$ 1 | 1 |
-| 29 | [The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form](../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html) | $\psi_\mu{}^\alpha$ 1 | 1 |
-| 30 | [The Spinor-Helicity Formalism and Biquaternions](../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html) | $\lambda_i^\alpha$ 1 | 1 |
-| | **Total** | | **134** |
+| 1 | [Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form](../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html) | $\xi^\alpha$ 3, $\Pi^{\bar\alpha\alpha}$ 1 | 4 |
+| 2 | [The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form](../articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html) | $Y_l^m$ 4 | 4 |
+| 3 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | $\varepsilon^r$ 4 | 4 |
+| 4 | [Canonical Quantization of the Biquaternion Dirac Field](../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html) | $\delta^{rs}$ 3 | 3 |
+| 5 | [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | $\delta^{rs}$ 3 | 3 |
+| 6 | [Linearized Gravity in Biquaternionic Form](../articles_physics/linearized-gravity-in-biquaternionic-form.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
+| 7 | [The Covariant Derivative and Gauge Connection in Biquaternionic Form](../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
+| 8 | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) | $S^{cd}$ 1, $S^{ab}$ 1, $V^{ab}$ 1 | 3 |
+| 9 | [Harmonic Elementary Particles and the Periodic System of Atoms](../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html) | $P_n^m$ 2 | 2 |
+| 10 | [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html) | $\varepsilon^r$ 2 | 2 |
+| 11 | [Maxwell's Theory on Non-Commutative Spaces and Quaternions](../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html) | $\tau^m$ 2 | 2 |
+| 12 | [Møller Scattering in Biquaternionic Form](../articles_physics/moller-scattering-in-biquaternionic-form.html) | $w^s$ 2 | 2 |
+| 13 | [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) | $T^{tk},T^{kt}$ 2 | 2 |
+| 14 | [The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure](../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html) | $G^a{}_\mu$ 2 | 2 |
+| 15 | [The Feynman Propagator in Biquaternionic Form](../articles_physics/the-feynman-propagator-in-biquaternionic-form.html) | $\delta^{rs}$ 2 | 2 |
+| 16 | [The Stueckelberg Mechanism in Biquaternionic Form](../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html) | $\varepsilon^r$ 2 | 2 |
+| 17 | [Canonical Quantization of the Biquaternion Rarita–Schwinger Field](../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html) | $C^{ab}$ 1 | 1 |
+| 18 | [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | $M^\alpha$ 1 | 1 |
+| 19 | [Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form](../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html) | $Y_l^m$ 1 | 1 |
+| 20 | [The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form](../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html) | $\psi_\mu{}^\alpha$ 1 | 1 |
+| 21 | [The Spinor-Helicity Formalism and Biquaternions](../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html) | $\lambda_i^\alpha$ 1 | 1 |
+| | **Total (first reading)** | | **48** |
 
-Six formulas carry both heights, which is the proof that the raised form is residual and not a convention:
+A form-by-form recount of the six rows removed in this pass finds 55 slots, not the 40 the screen had named. *Matter Makes Space* also carried $\lambda^a{}_\mu$ (3) and $K_\mu{}^{ab}$ (2), *Twistor Theory and Biquaternions* carried $\omega^A$ (7) with $\omega^{0},\omega^{1}$ (2), and the graviton article carried $\varepsilon^{s*}$ (1) beside $\varepsilon^r$. All are now low, and the dual basis of *Matter Makes Space*, written $q^A$ in the source, is renamed $\check q_A$, so no raised basis vector remains. The 48 was the sum of the rows that remained at that reading; the screen's per-row counts are lower bounds, not a census.
+
+Four formulas carry both heights, which is the proof that the raised form is residual and not a convention:
 
 - *Canonical Quantization of the Biquaternion Dirac Field* writes $\delta^{rs}$ three times and $\delta_{rs}$ five times.
-- *Canonical Quantization of the Biquaternion Proca Field* writes $\varepsilon^r_\mu\varepsilon^s_\mu=\delta_{rs}$: the polarization indices high, the Kronecker low.
 - *Higher Multipoles and the Field-Strength Decomposition* writes $Y_l^m$ once and $Y_{lm}$ twelve times.
 - *Charge Conjugation and the Division Ring* writes $\bar\xi^{\bar\alpha}=\Pi^{\bar\alpha\alpha}\xi_\alpha$: raised and low spinor indices in one formula.
-- *Curved Spacetime and the Biquaternion Framework* states "Every spacetime index is low" and then writes $S^{cd}$ ten times beside $\gamma_a$ and $\omega_{\mu cd}$.
 - *Electromagnetism in Media* lists $M_\alpha$ and $M^\alpha$ in one table row.
 
 The count leaves out three classes, and each is recorded rather than silently cleared:
@@ -170,15 +161,6 @@ The lines are the ones the screen read in the files as they stand after the patc
 
 | Article | Lines |
 |---|---|
-| [The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry](../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-and-self-quantized-charge.html) | $L^a{}_{\mu\nu}$ 284, 289, 292, 599, 615, 694; $N^a{}_{\nu}$ 278, 281, 599, 615, 671; $Z^{AB}$ 9, 98, 630; $x^{A\bar A}$ 101; $E^\gamma$ 257 |
-| [Canonical Quantization of the Biquaternion Proca Field](../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html) | $\varepsilon^r$ 17, 112, 115, 119, 196–197, 304, 328–329 |
-| [Curved Spacetime and the Biquaternion Framework](../articles_physics/curved-spacetime-and-the-biquaternion-framework.html) | $S^{cd}$ 21, 351, 358, 361, 363–364, 370, 373, 431; $S^{ab}$ 373; $V^{ab}$ 373 |
-| [Matter Makes Space — An External Construction from Quaternionic Spinors](../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html) | $K^{ab}$ 66, 73, 109, 224; $\omega^{ab}$ 109, 111; $\Lambda^{ab}$ 96, 226; $R^{ab}$ 109, 145; $\Theta^{ab}$ 109 |
-| [The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form](../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html) | $Y_l^m$ 84, 87, 89, 92, 95, 314–315 |
-| [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | $\delta^{rs}$ 105, 143, 176–177, 189–190 |
-| [Canonical Quantization of the Biquaternion Graviton Field](../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html) | $\varepsilon^r$ 151–152, 156; $\delta^{rs}$ 156 |
-| [Twistor Theory and Biquaternions](../articles_physics/twistor-theory-and-biquaternions.html) | $x^{A\bar A}$ 29, 32, 96, 333–334 |
-| [Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not](../articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html) | $Y_l^m$ 51, 168, 173, 258, 276 |
 | [Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form](../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html) | $\xi^\alpha$ 35, 44, 108; $\Pi^{\bar\alpha\alpha}$ 149 |
 | [The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form](../articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html) | $Y_l^m$ 55, 61, 128, 377 |
 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | $\varepsilon^r$ 173, 284 |
@@ -238,8 +220,8 @@ The gate needs a rule it does not have. A scalar label written with a caret is n
 ## The Next Pass
 
 1. **The mathematics pass, again.** The table is the first pass, and its three largest rows have collapsed: *Lagrangian and Hamiltonian Systems* carries no slot now, *Poisson Geometry* none, and *The Hamilton–Jacobi Equation and Separability* none. Re-screen Parts III and IV before quoting 583.
-2. **The physics pass.** 134 slots in 30 articles. Start with *The Algebrodynamical Programme* (21), *Canonical Quantization of the Biquaternion Proca Field* (13), *Curved Spacetime* and *Matter Makes Space* (12 each).
-3. **The internal class.** Closed: the 16 are gone, and the two gluon carets of *The Electric Dipole Moment* are the only bare colour index left. They go low with the 134.
+2. **The physics pass.** Closed: the 48 slots in 21 articles are low. The colour carets, the spinor indices, the polarization labels and the harmonics were the last four families, and each contraction they fed is now written $\sum$.
+3. **The internal class.** Closed: the 16 are gone, and the two gluon carets of *The Electric Dipole Moment* went low with the 48.
 4. **The convention.** It is not changed in this pass. A caret on a name, a grade, a parameter or a label stays unclassified until the corpus decides what a name is, and the audit records the count meanwhile.
 5. **The gate.** Screen against an explicit list of permitted forms, not against a word, and reject a scalar label that borrows an index letter.
 

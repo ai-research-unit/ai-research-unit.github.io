@@ -85,7 +85,7 @@ which is the superposition of plane waves whose wave vector has fixed length $\o
 The regular solutions of the Helmholtz equation in spherical coordinates are products of a spherical Bessel function, a Legendre function and an azimuthal exponential,
 
 $$
-\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_n(\omega r)\,P_n^m(\cos\theta)\,\exp(im\lambda),
+\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_n(\omega r)\,P_{nm}(\cos\theta)\,\exp(im\lambda),
 \qquad
 n = 0,1,2,\dots
 $$
@@ -131,10 +131,10 @@ That single dichotomy is what the programme turns into bosons and leptons, and t
 For the spherically symmetric scalar potential $\psi_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $\frac{dj_0}{dz}(z) = -j_1(z)$,
 
 $$
-\tilde J_{\mathrm{eg},00^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},00}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \omega\left(j_0(\omega r) + j_1(\omega r)\,\vec u_x\right),
 \qquad
-\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},}$$
+\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},$$
 
 so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)\vec u_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $d j_0(\omega r)/d(\omega r) = -j_1$ is exact between the two closed forms.
 
@@ -188,18 +188,18 @@ Two structural facts about the radial profile are worth extracting, since they a
 For the vector potential directed along the first axis, $\tilde{\Psi} = j_0(\omega r)\vec e_x$, the spinor amplitude also closes. Expanding the product gives
 
 $$
-\tilde J_{\mathrm{eg},00^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},00}^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{x_k}{r},}$$
+r_{,k} = \frac{x_k}{r},$$
 
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is
 
 $$
-\tilde J_{\mathrm{eg},00^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},00}^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\left(\hat e, \vec u_x\right)
-+ \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),}$$
++ \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),$$
 
 and the paper's stated general form, its equation (4.4), carries the opposite sign on the commutator term. The source contradicts itself here: its equation (4.1) for the axis-directed case writes the term out explicitly as $\omega j_1(\omega r)(r_{,3}\vec e_y - r_{,2}\vec e_z)$, which is $-\omega j_1[\hat e, \vec u_x]$, while its general form would give $+\omega j_1[\hat e, \vec u_x]$. The sign printed here is the derived one, and it is the one the source's own components use.
 
@@ -363,7 +363,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
 | $\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\mathrm{eg}}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
 | $\tilde{\Psi}$ | Helmholtz potential, $\Delta\tilde{\Psi} + \omega^2\tilde{\Psi} = 0$ |
-| $\psi_{nm} = j_n(\omega r)P_n^m(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
+| $\psi_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
 | $\tilde J_{\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$ | Pulsar (scalar potential) |
 | $\tilde J_{\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$ | Spinor (vector potential) |

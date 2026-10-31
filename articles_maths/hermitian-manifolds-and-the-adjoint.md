@@ -124,7 +124,7 @@ and the harmonic forms decompose by type on a Kähler manifold. The identities, 
 
 ## Examples
 
-**Example (the flat Hermitian space).** On $\mathbb{C}^n$ with the Euclidean Hermitian metric the complex structure is the multiplication by $i$, anti-self-adjoint, $J^{*}=-J$; the Lefschetz operator is the wedge with $\omega = \frac{i}{2}\sum dz^j\wedge d\bar z^j$ and the contraction is its adjoint; the Kähler identities hold with the Laplacian the Euclidean one, and the harmonic forms are the forms with constant coefficients.
+**Example (the flat Hermitian space).** On $\mathbb{C}^n$ with the Euclidean Hermitian metric the complex structure is the multiplication by $i$, anti-self-adjoint, $J^{*}=-J$; the Lefschetz operator is the wedge with $\omega = \frac{i}{2}\sum_j dz_j\wedge d\bar z_j$ and the contraction is its adjoint; the Kähler identities hold with the Laplacian the Euclidean one, and the harmonic forms are the forms with constant coefficients.
 
 **Example (the Riemann sphere).** On $\mathbb{CP}^1$ with the Fubini–Study form the Lefschetz operator acts on the forms of the one-dimensional cohomology, the contraction is its adjoint, and the $\mathfrak{sl}_2$ relations reduce to the hard Lefschetz statement $L: H^0\to H^2$ being an isomorphism; the Hodge numbers are $h^{0,0}=h^{1,1}=1$ and the Dolbeault Laplacians agree with the de Rham one by the Kähler identities.
 

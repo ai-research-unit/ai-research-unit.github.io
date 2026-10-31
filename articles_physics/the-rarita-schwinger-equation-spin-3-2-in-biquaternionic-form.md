@@ -16,7 +16,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 
 ### The field and its equation
 
-The Rarita–Schwinger field is a vector-spinor: a four-vector index and a Dirac spinor index, written $\psi_\mu{}^\alpha$ with $\mu=0,1,2,3$ and $\alpha=1,\dots,4$. In the massless case the equation is
+The Rarita–Schwinger field is a vector-spinor: a four-vector index and a Dirac spinor index, written $\psi_{\mu\alpha}$ with $\mu=0,1,2,3$ and $\alpha=1,\dots,4$. In the massless case the equation is
 
 $$
 \epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x_\rho\,\psi_\sigma = 0,

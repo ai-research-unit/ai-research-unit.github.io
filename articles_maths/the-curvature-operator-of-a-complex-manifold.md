@@ -39,9 +39,9 @@ so $\mathcal{R}$ preserves the type of bivectors and decomposes into a Hermitian
 $$
 \langle R^{\mathbb C}(X\wedge\bar Y), Z\wedge\bar W\rangle = \Theta(X,\bar Y; Z,\bar W) ;
 $$
-in local holomorphic coordinates the components $R_{i\bar j}{}^{k}{}_{l}$ with
+in local holomorphic coordinates the components $R_{i\bar jkl}$ with
 $$
-\Theta_{\bar j}{}^{k}{}_{l} = \sum_i R_{i\bar j}{}^{k}{}_{l}\,dz^i
+\Theta_{\bar jkl} = \sum_i R_{i\bar jkl}\,dz_i
 $$
 are the Chern curvature coefficients.
 
@@ -57,7 +57,7 @@ is a closed real $(1,1)$-form whose de Rham class is the first Chern class $c_1(
 
 **Remark (the Ricci form).** For the tangent bundle with the metric $g$ the trace of $\Theta$ in a unitary frame is the **Ricci form**
 $$
-\rho = i\sum_{j,k}R_{i\bar j k\bar k}\,dz^i\wedge d\bar z^j,
+\rho = i\sum_{j,k}R_{i\bar j k\bar k}\,dz_i\wedge d\bar z_j,
 $$
 which satisfies $\rho = i\,\partial\bar\partial\log\det(g_{j\bar k})$ and $[\rho] = 2\pi c_1(M)$; this is the precise sense in which the Chern curvature of the tangent bundle is the Ricci curvature read as a $(1,1)$-form.
 
@@ -88,7 +88,7 @@ $$
 
 **Proof.** The holomorphic sectional curvature is the sectional curvature of the real two-plane spanned by $X$ and $JX$; if it is constant the second Bianchi identity propagates the constancy, as in Schur's theorem of *Curvature and Geodesics*, and the displayed form is the unique tensor with the symmetries of the Kähler curvature and the constant value $c$. The models are $\mathbb C^n$ with $c=0$, $\mathbb{CP}^n$ with $c>0$ and the complex hyperbolic space with $c<0$, and their classification as the space forms is *Kähler Geometry*.
 
-**Remark (the Ricci form and Kähler–Einstein).** For a Kähler metric the Ricci form is $\rho = i\sum_{j,k}R_{i\bar j k\bar k}dz^i\wedge d\bar z^j$, and it satisfies $\rho = i\,\partial\bar\partial\log\det(g)$ and $[\rho] = 2\pi c_1(M)$; the metric is **Kähler–Einstein** when $\rho = \lambda\,\Omega$ for the Kähler form $\Omega$, equivalently $R_{i\bar j} = \lambda g_{i\bar j}$, and then the scalar curvature is the constant $2n\lambda$. The constant-holomorphic-sectional-curvature metrics are the Kähler–Einstein metrics with the strongest rigidity, and the existence problem for the general Kähler–Einstein metric, and its obstruction, belong to *Kähler Geometry* and beyond.
+**Remark (the Ricci form and Kähler–Einstein).** For a Kähler metric the Ricci form is $\rho = i\sum_{j,k}R_{i\bar j k\bar k}dz_i\wedge d\bar z_j$, and it satisfies $\rho = i\,\partial\bar\partial\log\det(g)$ and $[\rho] = 2\pi c_1(M)$; the metric is **Kähler–Einstein** when $\rho = \lambda\,\Omega$ for the Kähler form $\Omega$, equivalently $R_{i\bar j} = \lambda g_{i\bar j}$, and then the scalar curvature is the constant $2n\lambda$. The constant-holomorphic-sectional-curvature metrics are the Kähler–Einstein metrics with the strongest rigidity, and the existence problem for the general Kähler–Einstein metric, and its obstruction, belong to *Kähler Geometry* and beyond.
 
 ## The Decomposition by the Unitary Group
 

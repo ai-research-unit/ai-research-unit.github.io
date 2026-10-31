@@ -37,7 +37,7 @@ $$
 with all other anticommutators vanishing. The parent article's spinors satisfy
 
 $$
-\bar w^{(r)}w^{(s)}=2m\,\delta^{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},
+\bar w^{(r)}w^{(s)}=2m\,\delta_{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta_{rs},
 \qquad
 \sum_{r=1}^2 w^{(r)}\bar w^{(r)}=\gamma_{\mu} p_{\mu}+m,\qquad
 \sum_{r=1}^2 v^{(r)}\bar v^{(r)}=\gamma_{\nu} p_{\nu}-m .

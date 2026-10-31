@@ -150,9 +150,9 @@ $$
 $$
 
 $$
-T^{tk} = T^{kt} = -\frac{1}{c}\,\partial\phi/\partial t'\,\partial/\partial Q_k\,\phi ,
+T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\phi/\partial t'\,\partial/\partial Q_k\,\phi ,
 \qquad
-T_{jk} = T_{jk} = \partial/\partial Q_j\,\phi\,\partial/\partial Q_k\,\phi
+T_{jk} = T_{kj} = \partial/\partial Q_j\,\phi\,\partial/\partial Q_k\,\phi
 + \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2\right) .
 $$
 

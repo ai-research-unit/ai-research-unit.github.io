@@ -39,7 +39,7 @@ so that the transformation changes the action by a term proportional to $\mu^2$.
 
 A massless vector has two polarizations and a massive vector has three. The third polarization of the Proca field is present as a dynamical mode of the four-component field: the primary constraint $\pi^0\approx0$ and the deformed Gauss law $\partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$ are second class, with bracket $\{\pi^0,\partial/\partial Q_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$, and they remove the two phase-space directions that a massless vector would remove differently, leaving three. Equivalently, the massive wave equation $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge propagates all three polarizations, with the completeness relation
 $$
-\sum_{r=1}^{3}\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
+\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
 \qquad
 P^2=P,\quad\mathrm{tr}\,P=3,\quad \sum_\nu P_{\mu\nu}p_\nu=0 ,
 $$

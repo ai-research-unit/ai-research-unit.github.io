@@ -38,11 +38,11 @@ $$
 
 ## The Matrix in the Dual Basis
 
-Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\varphi^{1},\dots,\varphi^{n})$ be the dual basis, $\varphi^{i}(v_j) = \delta^{i}_{j}$.
+Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\varphi_1,\dots,\varphi_n)$ be the dual basis, $\varphi_i(v_j) = \delta_{ij}$.
 
-**Proposition.** $T^{*}\varphi^{i} = \varepsilon_i\varphi^{i}$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as *The Transpose of a Linear Map* records.
+**Proposition.** $T^{*}\varphi_i = \varepsilon_i\varphi_i$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as *The Transpose of a Linear Map* records.
 
-**Proof.** $(T^{*}\varphi^{i})(v_j) = \varphi^{i}(Tv_j) = \varepsilon_j\delta^{i}_{j} = \varepsilon_i\delta^{i}_{j} = (\varepsilon_i\varphi^{i})(v_j)$ for every $j$; the maps agree on a basis, hence are equal.
+**Proof.** $(T^{*}\varphi_i)(v_j) = \varphi_i(Tv_j) = \varepsilon_j\delta_{ij} = \varepsilon_i\delta_{ij} = (\varepsilon_i\varphi_i)(v_j)$ for every $j$; the maps agree on a basis, hence are equal.
 
 **Remark (the dual basis is adapted, not chosen twice).** The basis diagonalising $T$ also diagonalises $T^{*}$, and the eigenvalues are the same because the two maps have the same matrix entries read in different pairs of indices. This is the matrix reason that the type is preserved, and it shows that no new computation is needed for the dual: the transposition exchanges the two eigenvalues of a non-symmetric situation only when the order of the terms is read in the other direction.
 
@@ -83,7 +83,7 @@ For a linear involution $T$ of a finite-dimensional space $V$ of type $(n,m)$, t
 | $T^{*} : V^{*}\to V^{*}$, $T^{*}\varphi=\varphi T$ | the transposed involution |
 | $(V^{*})_+ = (V_-)^{0}$, $(V^{*})_- = (V_+)^{0}$ | fixed and negated parts of the dual |
 | $U^{0}$ | the annihilator of a subspace $U$ |
-| $\varphi^{i}$, $\delta^{i}_{j}$ | the dual basis and the Kronecker symbol |
+| $\varphi_i$, $\delta_{ij}$ | the dual basis and the Kronecker symbol |
 | $\mathrm{ev} : V\to V^{**}$ | the evaluation map |
 | $T^{**}$ | the double transpose, equal to $T$ under $\mathrm{ev}$ |
 

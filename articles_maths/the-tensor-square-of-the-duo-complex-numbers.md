@@ -144,9 +144,9 @@ $$
 
 **Theorem (the algebra structure).** The twisted product is bilinear, associative and unital. Its identity is
 $$
-1_F=\sum_{i,j}F^{ij}e_i\otimes e_j,
+1_F=\sum_{i,j}(F^{-1})_{ij}e_i\otimes e_j,
 $$
-where $F^{ij}$ is the inverse matrix of $F_{ij}=F(e_i,e_j)$. The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $\operatorname{End}(V)$ by the map
+where $(F^{-1})_{ij}$ is the inverse matrix of $F_{ij}=F(e_i,e_j)$. The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $\operatorname{End}(V)$ by the map
 $$
 \Phi_F(u\otimes v)=\bigl(w\mapsto F(v,w)u\bigr).
 $$
@@ -161,7 +161,7 @@ $$
 $$
 coincide. For the identity, compute against a basis vector,
 $$
-1_F\cdot(e_k\otimes v)=\sum_{i,j}F^{ij}F(e_j,e_k)e_i\otimes v=\sum_i\delta^{i}_{k}e_i\otimes v=e_k\otimes v,
+1_F\cdot(e_k\otimes v)=\sum_{i,j}(F^{-1})_{ij}F(e_j,e_k)e_i\otimes v=\sum_i\delta_{ik}e_i\otimes v=e_k\otimes v,
 $$
 and the same on the other side. For the isomorphism, $\Phi_F$ is the composite of the theorem of the previous section, hence bijective, and it is multiplicative:
 $$
@@ -209,7 +209,7 @@ where $\operatorname{Sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ i
 
 The tensor square $V\otimes V$ has dimension $4$ and decomposes canonically under the swap into the symmetric square of dimension $3$ and the alternating square of dimension $1$: $4=3+1$, or $6+2$ over $\mathbb{R}$. The symmetric square is, after a basis, the space of binary quadratic forms $aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2$, with the rank-one elements forming the Veronese conic $b^2-4ac=0$ in $\mathbb{CP}^2$; the alternating square is the line of the determinant, on which $g$ acts by $\det g$, and it has no canonical generator.
 
-The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}F^{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
+The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.
 
 ## Summary of Notation
 
@@ -225,7 +225,7 @@ The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\
 | $V\otimes V^{*}\cong\operatorname{End}(V)$ | the canonical isomorphism, $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$ |
 | $F^{\flat}:V\to V^{*}$ | the isomorphism $v\mapsto F(v,\cdot)$ given by a nondegenerate form |
 | $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ | the twisted product |
-| $1_F=\sum_{ij}F^{ij}e_i\otimes e_j$ | its identity, the inverse form |
+| $1_F=\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$ | its identity, the inverse form |
 
 ## Further Reading
 

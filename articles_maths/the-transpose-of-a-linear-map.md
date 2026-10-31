@@ -46,7 +46,7 @@ $$
 
 **Proposition (the annihilator is a subspace of the complementary dimension).** $U^{0}$ is a subspace of $V^{*}$ and $\dim_F U^{0} = \dim_F V - \dim_F U$.
 
-**Proof.** That $U^{0}$ is a subspace is immediate. Choose a basis of $U$ and extend it to a basis $v_1,\dots,v_n$ of $V$; the dual basis $\varphi^{i}$ has $\varphi^{i}(v_j) = \delta^{i}_{j}$, and a functional annihilates $U$ exactly when its coefficients on the functionals $\varphi^{1},\dots,\varphi^{r}$ vanish, where $r=\dim_F U$; hence the annihilator has the basis $\varphi^{r+1},\dots,\varphi^{n}$ and dimension $n-r$. This is *Linear Maps and Matrices*.
+**Proof.** That $U^{0}$ is a subspace is immediate. Choose a basis of $U$ and extend it to a basis $v_1,\dots,v_n$ of $V$; the dual basis $\varphi_i$ has $\varphi_i(v_j) = \delta_{ij}$, and a functional annihilates $U$ exactly when its coefficients on the functionals $\varphi_1,\dots,\varphi_r$ vanish, where $r=\dim_F U$; hence the annihilator has the basis $\varphi_{r+1},\dots,\varphi_n$ and dimension $n-r$. This is *Linear Maps and Matrices*.
 
 **Proposition (the transpose through kernel and image).** For a linear $T : V \to W$,
 
@@ -98,7 +98,7 @@ $$
 [T^{\mathsf{T}}]^{\mathcal{B}^{*}}_{\mathcal{C}^{*}} = A^{\mathsf{T}} ,
 $$
 
-the transpose matrix, of size $(\dim V)\times(\dim W)$, whose $(i,j)$ entry is $A_{ji}$. This is the computation of *Linear Maps and Matrices*: the $j$-th coefficient of $T^{\mathsf{T}}\varphi^{i}$ is $\varphi^{i}(Tv_j) = A_{ij}$.
+the transpose matrix, of size $(\dim V)\times(\dim W)$, whose $(i,j)$ entry is $A_{ji}$. This is the computation of *Linear Maps and Matrices*: the $j$-th coefficient of $T^{\mathsf{T}}\varphi_i$ is $\varphi_i(Tv_j) = A_{ij}$.
 
 ### The Anti-Isomorphism of the Endomorphism Algebra
 

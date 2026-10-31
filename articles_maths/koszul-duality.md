@@ -81,20 +81,20 @@ $$
 where $(A^!_n)^*$ denotes the vector-space dual of the $n$-th graded piece of the Koszul dual, and the differential is the unique family of $A$-linear maps with
 
 $$
-d_n(1\otimes \xi) = \sum_{i} x_i\otimes (\xi \llcorner x^i) , \qquad x_i \in V = A_1 ,
+d_n(1\otimes \xi) = \sum_{i} x_i\otimes (\xi \llcorner \check x_i) , \qquad x_i \in V = A_1 ,
 $$
 
-where $\{x_i\}$ is a basis of $V$, $\{x^i\}$ the dual basis of $V^*$ and $\llcorner$ is the contraction $\xi\mapsto \xi(x^i,\cdot)$ on the second tensor factor. Equivalently, $K(A)$ is the complex whose underlying graded module is $A\otimes_k (A^!)^*$ and whose differential is the derivative with respect to the generators.
+where $\{x_i\}$ is a basis of $V$, $\{\check x_i\}$ the dual basis of $V^*$ and $\llcorner$ is the contraction $\xi\mapsto \xi(\check x_i,\cdot)$ on the second tensor factor. Equivalently, $K(A)$ is the complex whose underlying graded module is $A\otimes_k (A^!)^*$ and whose differential is the derivative with respect to the generators.
 
 **Proposition.** The Koszul complex is a complex, $d^2 = 0$, and $H_0(K(A)) = k$. The construction is natural in $A$.
 
 *Proof.* The graded dual $(A^!_n)^*$ is the subspace of $V^{\otimes n}$ consisting of the tensors that annihilate $R^\perp$ in every pair of adjacent slots; this is the quadratic duality $(A^!_n)^*\cong A_n$. Hence $K(A)$ is $A\otimes_kA^*$ with a differential that is the transpose of the multiplication of $A$, and
 
 $$
-d^2(a\otimes\xi) = \sum_{i,j} ax_ix_j\otimes(\xi\llcorner x^i\llcorner x^j) ,
+d^2(a\otimes\xi) = \sum_{i,j} ax_ix_j\otimes(\xi\llcorner \check x_i\llcorner \check x_j) ,
 $$
 
-the contractions being taken in the first two slots of $\xi$. The first two slots of the coefficient of $a$ therefore give the tensor $\sum_{i,j}\xi_{ij}\,x_i\otimes x_j \in V\otimes_kV$, where $\xi_{ij} = \xi(x^i,x^j,\cdot)$; because $\xi$ annihilates $R^\perp$ in the first two slots, that tensor is annihilated by every element of $R^\perp$ and hence lies in $(R^\perp)^\perp = R$. Multiplication $V\otimes_kV\to A$ kills $R$ by the definition $A = T(V)/(R)$, so $d^2 = 0$. For the symmetric algebra, where $R = \Lambda^2V$ and $\xi$ is alternating, this is the classical cancellation of the symmetric product $x_ix_j$ against the alternating factor $\xi(x^i,x^j,\cdot)$. The degree-$0$ statement is that $A\otimes_k(A^!_0)^* = A$ maps onto $k$ by the augmentation $A \to A/A_{\geq1} = k$.
+the contractions being taken in the first two slots of $\xi$. The first two slots of the coefficient of $a$ therefore give the tensor $\sum_{i,j}\xi_{ij}\,x_i\otimes x_j \in V\otimes_kV$, where $\xi_{ij} = \xi(\check x_i,\check x_j,\cdot)$; because $\xi$ annihilates $R^\perp$ in the first two slots, that tensor is annihilated by every element of $R^\perp$ and hence lies in $(R^\perp)^\perp = R$. Multiplication $V\otimes_kV\to A$ kills $R$ by the definition $A = T(V)/(R)$, so $d^2 = 0$. For the symmetric algebra, where $R = \Lambda^2V$ and $\xi$ is alternating, this is the classical cancellation of the symmetric product $x_ix_j$ against the alternating factor $\xi(\check x_i,\check x_j,\cdot)$. The degree-$0$ statement is that $A\otimes_k(A^!_0)^* = A$ maps onto $k$ by the augmentation $A \to A/A_{\geq1} = k$.
 
 **Definition.** $A$ is **Koszul** if $K(A)$ is a resolution of the trivial module $k$ by free (or, in the graded sense, graded-free) $A$-modules; equivalently $H_n(K(A)) = 0$ for $n \geq 1$.
 

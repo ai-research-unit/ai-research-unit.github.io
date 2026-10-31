@@ -197,10 +197,10 @@ with equality if and only if $V$ is a complex subspace, that is $JV = V$.
 
 This is the **Chern connection** of the Hermitian structure.
 
-**Proof sketch.** Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = \theta^k_{\;j}\otimes e_k$ with
+**Proof sketch.** Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = \theta_{kj}\otimes e_k$ with
 
 $$
-\theta^k_{\;j} = \sum_l g^{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta^k_{\;j} = 0,
+\theta_{kj} = \sum_l (g^{-1})_{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta_{kj} = 0,
 $$
 
 that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.
@@ -259,7 +259,7 @@ Every Hermitian manifold carries a unique Chern connection, the one connection w
 | $\Omega(X,Y) = g(JX,Y)$ | Fundamental form; real $(1,1)$-form; $g(X,Y)=\Omega(X,JY)$ |
 | $h(v,w) = g_{\mathbb{C}}(v,\bar w)$ | Hermitian form on $T^{1,0}$; positive definite, with $h(X-iJX, X-iJX) = 2\,g(X,X)$ for real $X$ |
 | $\Omega^{\wedge k}/k!$ | Calibration; Wirtinger inequality $\vert\Omega^{\wedge k}(u_1,\ldots,u_{2k})\vert \le k!$ on an oriented orthonormal basis |
-| $h_{i\bar j} = g(\partial/\partial z^i,\partial/\partial\bar z^j)$, $\Omega = i\sum h_{i\bar j}dz^i\wedge d\bar z^j$ | Local expressions in holomorphic coordinates |
+| $h_{i\bar j} = g(\partial/\partial z_i,\partial/\partial\bar z_j)$, $\Omega = i\sum_{i,j} h_{i\bar j}dz_i\wedge d\bar z_j$ | Local expressions in holomorphic coordinates |
 | $\theta = h^{-1}\partial h$ | Chern connection $1$-form in a holomorphic frame |
 | $\Theta = \bar\partial\theta$ | Chern curvature, of type $(1,1)$ |
 | $W_1,\ldots,W_4$ | Gray–Hervella classes of almost Hermitian structures |

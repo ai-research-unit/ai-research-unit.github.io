@@ -25,7 +25,7 @@ $$
 A(\phi) = \int_M\sqrt{\det\bigl(g_{ij}(x)\bigr)}\,dx, \qquad g_{ij}(x) = \partial/\partial x_i\,\phi(x)\cdot\partial/\partial x_j\,\phi(x),
 $$
 
-where $g$ is the induced (first fundamental) metric. The **mean curvature vector** is the trace of the second fundamental form, $H = (g^{-1})_{ij}\mathrm{II}_{ij}$, and $\phi$ is **minimal** if $H\equiv0$.
+where $g$ is the induced (first fundamental) metric. The **mean curvature vector** is the trace of the second fundamental form, $H = \sum_{i,j}(g^{-1})_{ij}\mathrm{II}_{ij}$, and $\phi$ is **minimal** if $H\equiv0$.
 
 **Definition.** A **variation** of $\phi$ is a $C^2$ map $\Phi : M\times(-\varepsilon,\varepsilon)\to\mathbb{R}^n$ with $\Phi(x,0)=\phi(x)$ for all $x$ and $\Phi(x,t)=\phi(x)$ for $x\in\partial M$ and all $t$; the associated **variational field** is $V(x) = \partial/\partial t\,\Phi(x,t)|_{t=0}$, a vector field along $\phi$ vanishing on $\partial M$. The variation is **normal** if $V$ is everywhere perpendicular to $\phi_*TM$.
 

@@ -13,10 +13,10 @@ The article first outlines the twistor construction, then exhibits the shared mo
 A **twistor** is an element of $T \cong \mathbb{C}^4$. In two-spinor notation [Penrose and Rindler 1984] it is a pair
 
 $$
-Z = (\omega^A,\, \pi_{\bar A}), \qquad A, \bar A \in \{0,1\},
+Z = (\omega_A,\, \pi_{\bar A}), \qquad A, \bar A \in \{0,1\},
 $$
 
-where $\omega^A$ is a left-handed two-component spinor and $\pi_{\bar A}$ a right-handed one. **Projective twistor space** is $\mathbb{PT} = \mathbb{CP}^3$, whose points are complex lines of twistors. Thus a point of $\mathbb{PT}$ is represented by a pair of two-component spinors, not by a single one: the four components of $Z$ are two spinor components of each chirality.
+where $\omega_A$ is a left-handed two-component spinor and $\pi_{\bar A}$ a right-handed one. **Projective twistor space** is $\mathbb{PT} = \mathbb{CP}^3$, whose points are complex lines of twistors. Thus a point of $\mathbb{PT}$ is represented by a pair of two-component spinors, not by a single one: the four components of $Z$ are two spinor components of each chirality.
 
 Twistor space carries a nondegenerate Hermitian form of signature $(2,2)$. Writing $T = S\oplus\bar{S}$ for the splitting into the left- and right-handed parts, the form is
 
@@ -26,10 +26,10 @@ $$
 
 and the group preserving it is $\mathrm{U}(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts **linearly** on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.
 
-The link to spacetime is the **incidence relation**. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{A\bar A}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by
+The link to spacetime is the **incidence relation**. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x_{A\bar A}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by
 
 $$
-\boxed{\;\omega^A = i\,x^{A\bar A}\pi_{\bar A}\;}.
+\boxed{\;\omega_A = i\sum_{\bar A} x_{A\bar A}\pi_{\bar A}\;}.
 $$
 
 For fixed $x$ this is two linear conditions on four unknowns, so the solution space is two-dimensional: a line. Two points $x, y$ are null-separated exactly when their lines meet, and this happens exactly when $\det(x-y) = 0$, the determinant of the $2\times2$ matrix being the Minkowski interval. Thus
@@ -86,16 +86,16 @@ The pair $S\oplus\bar S$ is usually introduced as a fact of representation theor
 
 **The second reason is incidence.** In the twistor programme the two components are of opposite chirality, but they are not two independent chiral fields: the second is the dual of the first, and the pair is one incidence datum. A twistor is a pair
 $$
-Z=(\omega^A,\,\pi_{\bar A}),
+Z=(\omega_A,\,\pi_{\bar A}),
 $$
 where $\pi_{\bar A}$ is a **co-spinor**. With $\varepsilon_{\bar A\bar B}$ the invariant form, the dual spinor space is $S^{*}$, so that
 $$
 \boxed{\;T\cong S\oplus S^{*}\;},
 $$
 the same splitting as before, because $S^{*}\cong\bar S$.
-The incidence relation $\omega^A=ix^{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a **classical phase-space pair**: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.
+The incidence relation $\omega_A=i\sum_{\bar A}x_{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a **classical phase-space pair**: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.
 
-**The Hermitian form is the pairing of the two spaces.** The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega^{0},\omega^{1},\pi_{\bar 0},\pi_{\bar 1})$ its matrix is
+**The Hermitian form is the pairing of the two spaces.** The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega_0,\omega_1,\pi_{\bar 0},\pi_{\bar 1})$ its matrix is
 $$
 \begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},
 $$
@@ -326,12 +326,12 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\chi_+,\chi_-$ | The two one-dimensional characters of $\mathbb{B}_{\mathrm{r}}$, the values at $\Pi_\pm$ |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{B}_{\mathrm{r}}$, acting as the chirality projectors on $T$ |
 | $\wedge^{2}T$ | Exterior square; a decomposable bivector determines a point of the Klein quadric, complexified compactified Minkowski space |
-| $Z=(\omega^A,\pi_{\bar A})$ | Twistor: a left-handed spinor and a right-handed co-spinor |
+| $Z=(\omega_A,\pi_{\bar A})$ | Twistor: a left-handed spinor and a right-handed co-spinor |
 | $\mathbb{PT}=\mathbb{CP}^3$ | Projective twistor space |
 | $h(Z,Z_2)=\omega^{*}\pi_2+\pi^\dagger\omega_2$ | Hermitian form of complex signature $(2,2)$ on $T$ |
 | $SU(2,2)$ | Double cover of the conformal group $SO(2,4)$ |
-| $x^{A\bar A}$ | $2\times2$ matrix of a point of complexified Minkowski space |
-| $\omega^A=ix^{A\bar A}\pi_{\bar A}$ | Twistor incidence relation |
+| $x_{A\bar A}$ | $2\times2$ matrix of a point of complexified Minkowski space |
+| $\omega_A=i\sum_{\bar A}x_{A\bar A}\pi_{\bar A}$ | Twistor incidence relation |
 | $L_x\subset\mathbb{PT}$ | Twistor line of the point $x$ |
 | $\mathrm{Gr}(2,4)$ | Grassmannian of lines in $\mathbb{CP}^3$ (Klein correspondence) |
 | $\vec F=-E-iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E,H$ real vectors |

@@ -119,7 +119,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $\omega$, $\omega_0$, $\omega^{\wedge m}/m!$ | Symplectic form, standard form, symplectic volume |
-| $T^*Q$, $\theta = \sum_i p_i\,dq^i$ | Cotangent bundle and tautological form |
+| $T^*Q$, $\theta = \sum_i p_i\,dq_i$ | Cotangent bundle and tautological form |
 | $X_f$, $\{f,g\}$ | Hamiltonian vector field, Poisson bracket |
 | $(P,\pi)$, Schouten bracket, Casimir | Poisson manifold and its structures |
 | $\mu : M \to \mathrm{G}^*$, $M/\!/G$ | Moment map, symplectic quotient |

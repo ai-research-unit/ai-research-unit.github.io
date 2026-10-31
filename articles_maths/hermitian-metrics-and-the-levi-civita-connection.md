@@ -126,7 +126,7 @@ For a metric-compatible connection, preserving the fundamental form, preserving 
 | $\flat, \sharp$ | Musical isomorphisms $TM \leftrightarrow T^*M$ |
 | $\mathrm{vol}_g$, $\star$, $\delta$ | Metric volume form, Hodge star, codifferential |
 | Fundamental theorem, Koszul formula | The unique metric-compatible torsion-free connection |
-| $\Gamma_{ijk} = \tfrac12(g^{-1})_{il}(\partial/\partial x_j\,g_{kl}+\partial/\partial x_k\,g_{jl}-\partial/\partial x_l\,g_{jk})$ | Christoffel symbols |
+| $\Gamma_{ijk} = \tfrac12\sum_l(g^{-1})_{il}(\partial/\partial x_j\,g_{kl}+\partial/\partial x_k\,g_{jl}-\partial/\partial x_l\,g_{jk})$ | Christoffel symbols |
 | $J$, $J^2=-\mathrm{id}$ | Almost complex structure; the involution of the tangent spaces |
 | $g(JX,JY)=g(X,Y)$ | Hermitian condition; equivalently $g(JX,Y)=-g(X,JY)$, $J^*=-J$ |
 | $(M,J,g)$ | Hermitian manifold |

@@ -87,7 +87,7 @@ where $\varrho$ is the Weyl vector, half the sum of the positive roots.
 
 **Theorem.** $\rho_{V_\lambda}(\Omega) = c_\lambda\,\mathrm{id}$.
 
-*Proof.* The Casimir element can be written as $\Omega = \sum_i h_ih^i + 2\sum_{\alpha>0}\frac{1}{\langle\alpha,\alpha\rangle}X_\alpha X_{-\alpha}$ in a root basis, with $(h_i)$ a basis of $\mathfrak{h}$ and $(h^i)$ the dual basis. On the highest weight vector $v_\lambda$ the elements $X_\alpha$ with $\alpha > 0$ annihilate and the $h_i$ act by $\lambda$; computing $\Omega v_\lambda$ and using $\sum_{\alpha>0}\alpha = 2\varrho$ gives the displayed scalar. The statement is the standard computation, and it is developed with the highest weight classification in *Representations of Lie Algebras*.
+*Proof.* The Casimir element can be written as $\Omega = \sum_i h_i\check h_i + 2\sum_{\alpha>0}\frac{1}{\langle\alpha,\alpha\rangle}X_\alpha X_{-\alpha}$ in a root basis, with $(h_i)$ a basis of $\mathfrak{h}$ and $(\check h_i)$ the dual basis. On the highest weight vector $v_\lambda$ the elements $X_\alpha$ with $\alpha > 0$ annihilate and the $h_i$ act by $\lambda$; computing $\Omega v_\lambda$ and using $\sum_{\alpha>0}\alpha = 2\varrho$ gives the displayed scalar. The statement is the standard computation, and it is developed with the highest weight classification in *Representations of Lie Algebras*.
 
 **Corollary.** The Casimir eigenvalue distinguishes the irreducible representations only up to the finite ambiguity of the level sets of $\lambda \mapsto \langle\lambda,\lambda+2\varrho\rangle$; the full label is the highest weight, of which $c_\lambda$ is the quadratic part, and the complete set of Casimir elements of a semisimple algebra are the generators of the centre of $\mathrm{U}(\mathrm{G})$.
 

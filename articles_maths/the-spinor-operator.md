@@ -11,40 +11,40 @@ The spin connection is the unique connection on the spinor bundle that is compat
 
 ### The Lift of the Levi-Civita Connection
 
-**Definition.** Let $(M,g)$ be an oriented Riemannian manifold with spin structure $P_{\operatorname{Spin}}(M)$ and spinor bundle $\mathcal{S}=P_{\operatorname{Spin}}(M)\times_{\operatorname{Spin}(n)}\Delta_n$. The **spin connection** is the connection $\nabla^{\mathcal{S}}$ on $\mathcal{S}$ induced by the Levi-Civita connection $\nabla$ of $g$ through the spin structure: in a local orthonormal frame $(e_1,\dots,e_n)$ it is
+**Definition.** Let $(M,g)$ be an oriented Riemannian manifold with spin structure $P_{\operatorname{Spin}}(M)$ and spinor bundle $\mathcal{S}=P_{\operatorname{Spin}}(M)\times_{\operatorname{Spin}(n)}\Delta_n$. The **spin connection** is the connection $\nabla^{\mathrm{S}}$ on $\mathcal{S}$ induced by the Levi-Civita connection $\nabla$ of $g$ through the spin structure: in a local orthonormal frame $(e_1,\dots,e_n)$ it is
 
 $$
-\nabla^{\mathcal{S}}_X\sigma = X(\sigma) + \tfrac14\sum_{i,j=1}^{n}\omega_{ij}(X)\,c(e_i)c(e_j)\sigma ,
+\nabla^{\mathrm{S}}_X\sigma = X(\sigma) + \tfrac14\sum_{i,j=1}^{n}\omega_{ij}(X)\,c(e_i)c(e_j)\sigma ,
 \qquad
 \omega_{ij} = g(\nabla_X e_i, e_j) .
 $$
 
-The one-form $\omega^{\mathcal{S}} = \tfrac14\sum_{i,j}\omega_{ij}c(e_i)c(e_j)$, with values in the bivectors $\Lambda^2TM \subseteq \mathrm{Cl}(TM)$, is the **spin connection form**; it is the image of the Levi-Civita connection form under the Lie-algebra isomorphism $\mathfrak{so}(n)\to\mathfrak{spin}(n)$, $e_i\wedge e_j\mapsto \tfrac12 c(e_i)c(e_j)$.
+The one-form $\omega^{\mathrm{S}} = \tfrac14\sum_{i,j}\omega_{ij}c(e_i)c(e_j)$, with values in the bivectors $\Lambda^2TM \subseteq \mathrm{Cl}(TM)$, is the **spin connection form**; it is the image of the Levi-Civita connection form under the Lie-algebra isomorphism $\mathfrak{so}(n)\to\mathfrak{spin}(n)$, $e_i\wedge e_j\mapsto \tfrac12 c(e_i)c(e_j)$.
 
 **Proposition.** The spin connection is the unique connection on $\mathcal{S}$ whose connection form takes values in the image of $\mathfrak{spin}(n)$ inside the Clifford algebra; it is the associated connection of the principal $\operatorname{Spin}(n)$-bundle $P_{\operatorname{Spin}}(M)$ under the representation $\Delta_n$.
 
 **Proof.** This is the general construction of an associated connection from a principal connection and a representation, applied to the spin structure of *Spin Geometry*; the connection form of the associated bundle is the image of the principal connection form, and a principal connection on $P_{\operatorname{Spin}}(M)$ has a connection form with values in the Lie algebra $\mathfrak{spin}(n)$, identified with the bivectors by the isomorphism above. Uniqueness is the uniqueness of the lift of the Levi-Civita connection along the double covering.
 
-**Proposition (the local form as a derivation).** For a local orthonormal frame the connection form is $\omega^{\mathcal{S}}=\tfrac12\sum_{i<j}\omega_{ij}c(e_i)c(e_j)$, and the covariant derivative is a derivation over the Clifford multiplication,
+**Proposition (the local form as a derivation).** For a local orthonormal frame the connection form is $\omega^{\mathrm{S}}=\tfrac12\sum_{i<j}\omega_{ij}c(e_i)c(e_j)$, and the covariant derivative is a derivation over the Clifford multiplication,
 
 $$
-\nabla^{\mathcal{S}}_X\bigl(c(v)\sigma\bigr) = c(\nabla_X v)\sigma + c(v)\,\nabla^{\mathcal{S}}_X\sigma ,
+\nabla^{\mathrm{S}}_X\bigl(c(v)\sigma\bigr) = c(\nabla_X v)\sigma + c(v)\,\nabla^{\mathrm{S}}_X\sigma ,
 $$
 
 for every vector field $v$ and every spinor field $\sigma$.
 
 **Proof.** The diagonal terms of the sum vanish because $\omega_{ii}=g(\nabla_Xe_i,e_i)=0$, which holds since $\nabla$ is metric-compatible and $g(e_i,e_i)=1$ is constant; so $\tfrac14\sum_{i,j}\omega_{ij}c(e_i)c(e_j)=\tfrac12\sum_{i<j}\omega_{ij}c(e_i)c(e_j)$. For the Leibniz rule, both sides are local in the frame and $X$-linear; on a frame field with constant coefficients $v=\sum v_ie_i$, the left side is $X(\sum v_i\,c(e_i)\sigma)$ and the right side is $\sum v_i\,c(\nabla_Xe_i)\sigma+\sum v_i c(e_i)X(\sigma)$. The difference is $\sum v_i\bigl(c(\nabla_Xe_i)+\tfrac12\sum_{j<k}\omega_{jk}(X)c(e_j)c(e_k)c(e_i)-c(e_i)\tfrac12\sum_{j<k}\omega_{jk}(X)c(e_j)c(e_k)\bigr)\sigma$; writing $\nabla_Xe_i=\sum_j\omega_{ij}(X)e_j$ and using $\tfrac12[c(e_j)c(e_k),c(e_i)]=\delta_{ik}c(e_j)-\delta_{ij}c(e_k)$, the inner sum telescopes to $c(\nabla_Xe_i)$, and the two sides agree.
 
-**Definition.** The **curvature of the spin connection** is the two-form $R^{\mathcal{S}}$ on spinors, defined by
+**Definition.** The **curvature of the spin connection** is the two-form $R^{\mathrm{S}}$ on spinors, defined by
 
 $$
-R^{\mathcal{S}}(X,Y)\sigma = \nabla^{\mathcal{S}}_X\nabla^{\mathcal{S}}_Y\sigma - \nabla^{\mathcal{S}}_Y\nabla^{\mathcal{S}}_X\sigma - \nabla^{\mathcal{S}}_{[X,Y]}\sigma .
+R^{\mathrm{S}}(X,Y)\sigma = \nabla^{\mathrm{S}}_X\nabla^{\mathrm{S}}_Y\sigma - \nabla^{\mathrm{S}}_Y\nabla^{\mathrm{S}}_X\sigma - \nabla^{\mathrm{S}}_{[X,Y]}\sigma .
 $$
 
 **Proposition (the lift of the Riemann curvature).** With $R$ the Riemann curvature tensor of $(M,g)$ and $R_{ij}(X,Y)=g(R(X,Y)e_i,e_j)$ its components in an orthonormal frame,
 
 $$
-\boxed{\;R^{\mathcal{S}}(X,Y)\sigma = \tfrac14\sum_{i,j}R_{ij}(X,Y)\,c(e_i)c(e_j)\sigma\;} ;
+\boxed{\;R^{\mathrm{S}}(X,Y)\sigma = \tfrac14\sum_{i,j}R_{ij}(X,Y)\,c(e_i)c(e_j)\sigma\;} ;
 $$
 
 the spin curvature is the image of the curvature form of the Levi-Civita connection under the same Lie-algebra isomorphism that sends the connection to its spin value. In particular the spin connection is flat exactly when the metric is flat.
@@ -58,7 +58,7 @@ the spin curvature is the image of the curvature form of the Levi-Civita connect
 **Proposition.** The spin connection is compatible with the Hermitian form,
 
 $$
-X\bigl(h(\sigma,\tau)\bigr) = h(\nabla^{\mathcal{S}}_X\sigma,\tau) + h(\sigma,\nabla^{\mathcal{S}}_X\tau),
+X\bigl(h(\sigma,\tau)\bigr) = h(\nabla^{\mathrm{S}}_X\sigma,\tau) + h(\sigma,\nabla^{\mathrm{S}}_X\tau),
 $$
 
 and with the Clifford multiplication in the sense of the derivation identity above. These two compatibilities characterise it among the connections on $\mathcal{S}$.
@@ -74,9 +74,9 @@ and with the Clifford multiplication in the sense of the derivation identity abo
 **Definition.** The **spinor operator** is the first-order differential operator
 
 $$
-D = c\circ\nabla^{\mathcal{S}} : \Gamma(\mathcal{S}) \longrightarrow \Gamma(\mathcal{S}),
+D = c\circ\nabla^{\mathrm{S}} : \Gamma(\mathcal{S}) \longrightarrow \Gamma(\mathcal{S}),
 \qquad
-D\sigma = \sum_{i=1}^{n} c(e_i)\,\nabla^{\mathcal{S}}_{e_i}\sigma ,
+D\sigma = \sum_{i=1}^{n} c(e_i)\,\nabla^{\mathrm{S}}_{e_i}\sigma ,
 $$
 
 the contraction of the spin connection with the Clifford multiplication in a local orthonormal frame. It is also called the **Cauchy–Riemann operator** of the spin manifold; the classical name for it is the Dirac operator, and the corpus keeps the flat case of the same family in *Clifford Modules and the Twisted Cauchy–Riemann Operator*.
@@ -106,7 +106,7 @@ For $n$ odd there is no such splitting over the Clifford algebra, and $D$ carrie
 
 **Proposition (formal self-adjointness).** For a closed manifold $M$ the spinor operator is formally self-adjoint with respect to the $L^2$ form of $h$, $\int_M h(D\sigma,\tau)\,d\text{vol}_g=\int_M h(\sigma,D\tau)\,d\text{vol}_g$, and the operator $D$ is symmetric on the smooth sections.
 
-**Proof.** The formal adjoint of the covariant derivative is the negative of the metric contraction, $(\nabla^{\mathcal{S}})^*=-\operatorname{tr}_g\nabla^{\mathcal{S}}$, because $\nabla^{\mathcal{S}}$ is metric-compatible; the adjoint of the Clifford multiplication is $(c(e_i))^*=-c(e_i)$; and the composition of the two adjoints is the same operator $D$, the two signs cancelling. The boundary term vanishes on a manifold without boundary.
+**Proof.** The formal adjoint of the covariant derivative is the negative of the metric contraction, $(\nabla^{\mathrm{S}})^*=-\operatorname{tr}_g\nabla^{\mathrm{S}}$, because $\nabla^{\mathrm{S}}$ is metric-compatible; the adjoint of the Clifford multiplication is $(c(e_i))^*=-c(e_i)$; and the composition of the two adjoints is the same operator $D$, the two signs cancelling. The boundary term vanishes on a manifold without boundary.
 
 **Theorem (Lichnerowicz, quoted).** Let $D$ be the spinor operator of a spin manifold $(M,g)$ with the spin connection. Then
 
@@ -116,11 +116,11 @@ $$
 
 where $\nabla^{*}\nabla$ is the connection Laplacian on spinors and $\operatorname{scal}$ is the scalar curvature of $g$.
 
-**Proof sketch.** The Weitzenböck computation of *Spin Geometry*, cited: the second-order terms of $D^2$ assemble into the connection Laplacian, and the zeroth-order remainder is evaluated by expanding $c(e_i)c(e_j)R^{\mathcal{S}}(e_i,e_j)$, which the spin-curvature proposition turns into the scalar curvature through the symmetries of the Riemann tensor. The identity is the geometric content of the article: the operator is the chosen metric read through the spin connection, and the curvature is the field of the metric.
+**Proof sketch.** The Weitzenböck computation of *Spin Geometry*, cited: the second-order terms of $D^2$ assemble into the connection Laplacian, and the zeroth-order remainder is evaluated by expanding $c(e_i)c(e_j)R^{\mathrm{S}}(e_i,e_j)$, which the spin-curvature proposition turns into the scalar curvature through the symmetries of the Riemann tensor. The identity is the geometric content of the article: the operator is the chosen metric read through the spin connection, and the curvature is the field of the metric.
 
-**Corollary (the metric dependence).** A closed spin manifold of positive scalar curvature has no harmonic spinors, $D\sigma=0$ implies $\sigma=0$: the integral of $h(D^2\sigma,\sigma)$ is the sum of the non-negative term $\int|\nabla^{\mathcal{S}}\sigma|^2$ and the positive term $\tfrac14\int\operatorname{scal}|\sigma|^2$, so both must vanish.
+**Corollary (the metric dependence).** A closed spin manifold of positive scalar curvature has no harmonic spinors, $D\sigma=0$ implies $\sigma=0$: the integral of $h(D^2\sigma,\sigma)$ is the sum of the non-negative term $\int|\nabla^{\mathrm{S}}\sigma|^2$ and the positive term $\tfrac14\int\operatorname{scal}|\sigma|^2$, so both must vanish.
 
-**Proof.** Integrate the identity $h(D^2\sigma,\sigma)=|\nabla^{\mathcal{S}}\sigma|^2+\tfrac14\operatorname{scal}|\sigma|^2$, which follows from the formula and the compatibility of the spin connection, against the volume form; the left side is $\int|D\sigma|^2$ for a closed manifold, and both terms on the right are non-negative.
+**Proof.** Integrate the identity $h(D^2\sigma,\sigma)=|\nabla^{\mathrm{S}}\sigma|^2+\tfrac14\operatorname{scal}|\sigma|^2$, which follows from the formula and the compatibility of the spin connection, against the volume form; the left side is $\int|D\sigma|^2$ for a closed manifold, and both terms on the right are non-negative.
 
 ### The Conformal Change of the Operator
 
@@ -150,7 +150,7 @@ For $n=2$ the spinor bundle has rank two and splits into two complex line bundle
 
 ## Summary
 
-The **spin connection** $\nabla^{\mathcal{S}}$ is the unique connection on the spinor bundle induced by the Levi-Civita connection through the spin structure; its connection form is $\omega^{\mathcal{S}}=\tfrac14\sum_{i,j}\omega_{ij}c(e_i)c(e_j)$ with values in the bivectors, it is compatible with the Hermitian form and with the Clifford multiplication, and its curvature is the lift $R^{\mathcal{S}}=\tfrac14\sum_{i,j}R_{ij}c(e_i)c(e_j)$ of the Riemann curvature. The **spinor operator** is the contraction $D=c\circ\nabla^{\mathcal{S}}=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, a first-order elliptic operator with symbol the Clifford multiplication $c(\xi)$; it is formally self-adjoint on a closed manifold, and it is odd for the chirality grading in even dimension, splitting into the two chiral operators $D^\pm$. Its square satisfies the **Lichnerowicz formula** $D^2=\nabla^*\nabla+\tfrac14\operatorname{scal}$, so the operator reads the scalar curvature of the chosen metric and a closed spin manifold of positive scalar curvature has no harmonic spinors. The operator is not conformally invariant; under a conformal change it acquires a zeroth-order term, and the conformally invariant operator built from it is the subject of *The Twistor Operator* and *The Penrose Operator*. The analytic theory of the operator and the index of its chiral part belong to Part III and to the index theory of this part, and are cited.
+The **spin connection** $\nabla^{\mathrm{S}}$ is the unique connection on the spinor bundle induced by the Levi-Civita connection through the spin structure; its connection form is $\omega^{\mathrm{S}}=\tfrac14\sum_{i,j}\omega_{ij}c(e_i)c(e_j)$ with values in the bivectors, it is compatible with the Hermitian form and with the Clifford multiplication, and its curvature is the lift $R^{\mathrm{S}}=\tfrac14\sum_{i,j}R_{ij}c(e_i)c(e_j)$ of the Riemann curvature. The **spinor operator** is the contraction $D=c\circ\nabla^{\mathrm{S}}=\sum_ic(e_i)\nabla^{\mathrm{S}}_{e_i}$, a first-order elliptic operator with symbol the Clifford multiplication $c(\xi)$; it is formally self-adjoint on a closed manifold, and it is odd for the chirality grading in even dimension, splitting into the two chiral operators $D^\pm$. Its square satisfies the **Lichnerowicz formula** $D^2=\nabla^*\nabla+\tfrac14\operatorname{scal}$, so the operator reads the scalar curvature of the chosen metric and a closed spin manifold of positive scalar curvature has no harmonic spinors. The operator is not conformally invariant; under a conformal change it acquires a zeroth-order term, and the conformally invariant operator built from it is the subject of *The Twistor Operator* and *The Penrose Operator*. The analytic theory of the operator and the index of its chiral part belong to Part III and to the index theory of this part, and are cited.
 
 ## Summary of Notation
 
@@ -161,10 +161,10 @@ The **spin connection** $\nabla^{\mathcal{S}}$ is the unique connection on the s
 | $\Delta_n$, $\mathcal{S}^\pm$ | Spin module and its chiral halves for $n$ even |
 | $c(v)$ | Clifford multiplication, $c(v)^2=-g(v,v)\operatorname{id}$ |
 | $\nabla$, $\omega_{ij}=g(\nabla e_i,e_j)$ | Levi-Civita connection and its connection form |
-| $\nabla^{\mathcal{S}}$, $\omega^{\mathcal{S}}=\tfrac14\sum\omega_{ij}c(e_i)c(e_j)$ | Spin connection and spin connection form |
-| $R$, $R^{\mathcal{S}}=\tfrac14\sum R_{ij}c(e_i)c(e_j)$ | Riemann curvature and spin curvature |
+| $\nabla^{\mathrm{S}}$, $\omega^{\mathrm{S}}=\tfrac14\sum\omega_{ij}c(e_i)c(e_j)$ | Spin connection and spin connection form |
+| $R$, $R^{\mathrm{S}}=\tfrac14\sum R_{ij}c(e_i)c(e_j)$ | Riemann curvature and spin curvature |
 | $h$ | Hermitian form on the spinors, $c(v)^*=-c(v)$ |
-| $D=c\circ\nabla^{\mathcal{S}}=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ | Spinor operator, the Cauchy–Riemann operator of the manifold |
+| $D=c\circ\nabla^{\mathrm{S}}=\sum_ic(e_i)\nabla^{\mathrm{S}}_{e_i}$ | Spinor operator, the Cauchy–Riemann operator of the manifold |
 | $D^\pm$ | Chiral parts for $n$ even |
 | $\operatorname{scal}$, $\nabla^*\nabla$ | Scalar curvature and connection Laplacian |
 | $\hat g=\Omega^2g$ | Conformal change of the metric |

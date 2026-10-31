@@ -45,7 +45,7 @@ $$
 \Omega \in H^0(M, K_M) = H^0(M,\Lambda^n(T^{1,0}M)^*),
 $$
 
-unique up to a nonzero complex constant when $M$ is connected. In local holomorphic coordinates it is $\Omega = f(z)\,dz^1\wedge\cdots\wedge dz^n$ with $f$ holomorphic and nowhere zero.
+unique up to a nonzero complex constant when $M$ is connected. In local holomorphic coordinates it is $\Omega = f(z)\,dz_1\wedge\cdots\wedge dz_n$ with $f$ holomorphic and nowhere zero.
 
 **Proposition.** Let $M$ be Calabi–Yau with holomorphic volume form $\Omega$ and Ricci-flat Kähler metric $g$. Then:
 

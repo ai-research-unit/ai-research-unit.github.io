@@ -261,10 +261,10 @@ with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the characte
 
 ### The Casimir Element
 
-**Definition.** Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(x^1, \ldots, x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, x^j) = \delta_i^j$. The **Casimir element** is
+**Definition.** Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(\check x_1, \ldots, \check x_m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, \check x_j) = \delta_{ij}$. The **Casimir element** is
 
 $$
-\Omega = \sum_{i=1}^{m} x_i x^j \in \mathrm{U}(\mathrm{G}).
+\Omega = \sum_{i=1}^{m} x_i \check x_i \in \mathrm{U}(\mathrm{G}).
 $$
 
 **Proposition.** The Casimir element is independent of the choice of basis, and it lies in the centre of $\mathrm{U}(\mathrm{G})$: it commutes with every element of $\mathrm{U}(\mathrm{G})$. On the irreducible module $V(\lambda)$ it acts by the scalar
@@ -273,10 +273,10 @@ $$
 (\lambda, \lambda + 2\rho) = (\lambda + \rho, \lambda + \rho) - (\rho, \rho).
 $$
 
-**Proof.** Changing the basis replaces $\sum_i x_i \otimes x^i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathrm{G}$,
+**Proof.** Changing the basis replaces $\sum_i x_i \otimes \check x_i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathrm{G}$,
 
 $$
-\Bigl[ y, \sum_i x_i x^i \Bigr] = \sum_i \Bigl( [y, x_i] x^i + x_i [y, x^i] \Bigr) = 0,
+\Bigl[ y, \sum_i x_i \check x_i \Bigr] = \sum_i \Bigl( [y, x_i] \check x_i + x_i [y, \check x_i] \Bigr) = 0,
 $$
 
 because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $\Omega$ to a highest weight vector $v_\lambda$: the component of $\Omega$ lying in $\mathrm{N}_- \mathrm{U}(\mathrm{G})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$.
@@ -325,7 +325,7 @@ The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ 
 | $\operatorname{ch}V(\lambda) = \dfrac{\sum_w(-1)^{\ell(w)}\exp(w(\lambda+\rho))}{\sum_w(-1)^{\ell(w)}\exp(w(\rho))}$ | Weyl character formula |
 | $\dim V(\lambda) = \prod_{\alpha>0}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}$ | Weyl dimension formula |
 | $\mathcal{P}$, $m_{V(\lambda)}(\mu) = \sum_w(-1)^{\ell(w)}\mathcal{P}(w(\lambda+\rho)-(\mu+\rho))$ | Kostant partition function and multiplicity formula |
-| $\Omega = \sum_i x_i x^i$ | Casimir element; central in $\mathrm{U}(\mathrm{G})$ |
+| $\Omega = \sum_i x_i \check x_i$ | Casimir element; central in $\mathrm{U}(\mathrm{G})$ |
 | $(\lambda, \lambda+2\rho)$ | Casimir eigenvalue on $V(\lambda)$ |
 
 ## Further Reading

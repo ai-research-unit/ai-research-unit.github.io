@@ -102,7 +102,7 @@ $$
 \boxed{\;w^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E+m}\,\xi^{(r)} \\[2pt] \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\xi^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$
 
-where $\vec u_p = \vec p/|\vec p|$ and $\xi^{(1)}, \xi^{(2)}$ are the standard orthonormal two-spinors, $\xi^{(r){}^{*}}\xi^{(s)} = \delta^{rs}$. At rest this reduces to $w^{(r)}(0) = \sqrt{2m}\begin{pmatrix}\xi^{(r)}\\ 0\end{pmatrix}$.
+where $\vec u_p = \vec p/|\vec p|$ and $\xi^{(1)}, \xi^{(2)}$ are the standard orthonormal two-spinors, $\xi^{(r){}^{*}}\xi^{(s)} = \delta_{rs}$. At rest this reduces to $w^{(r)}(0) = \sqrt{2m}\begin{pmatrix}\xi^{(r)}\\ 0\end{pmatrix}$.
 
 The same solutions in the **chiral basis** are indexed by helicity. Let $\chi_\pm$ be eigenspinors of the helicity operator,
 
@@ -140,7 +140,7 @@ $$
 \boxed{\;v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$
 
-with $\eta^{(r){}^{*}}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}\begin{pmatrix} 0 \\ \eta^{(r)} \end{pmatrix}$. The negative-frequency solution space is again two-dimensional. In the standard reading, these modes describe antiparticles: the sign of the frequency is reversed by the charge-conjugation operation, which exchanges $w$ and $v$. Together, then, the amplitude equations have a four-dimensional complex solution space at fixed $\vec p$, exactly as the companion article stated.
+with $\eta^{(r){}^{*}}\eta^{(s)} = \delta_{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}\begin{pmatrix} 0 \\ \eta^{(r)} \end{pmatrix}$. The negative-frequency solution space is again two-dimensional. In the standard reading, these modes describe antiparticles: the sign of the frequency is reversed by the charge-conjugation operation, which exchanges $w$ and $v$. Together, then, the amplitude equations have a four-dimensional complex solution space at fixed $\vec p$, exactly as the companion article stated.
 
 ### The biquaternion mass shell
 
@@ -173,8 +173,8 @@ Second, the **chirality–helicity relation**. In the chiral basis, positive-hel
 The Dirac adjoint $\bar{\psi} = \psi^\dagger\gamma_0$ makes the bilinear $\bar{w}w$ a Lorentz scalar. A direct computation from the explicit solutions gives the normalization
 
 $$
-\bar{w}^{(r)}(\vec p)\,w^{(s)}(\vec p) = 2m\,\delta^{rs}, \qquad
-\bar{v}^{(r)}(\vec p)\,v^{(s)}(\vec p) = -2m\,\delta^{rs},
+\bar{w}^{(r)}(\vec p)\,w^{(s)}(\vec p) = 2m\,\delta_{rs}, \qquad
+\bar{v}^{(r)}(\vec p)\,v^{(s)}(\vec p) = -2m\,\delta_{rs},
 $$
 
 the relative minus sign being the standard signature of the negative-frequency branch. The cross terms vanish at equal momentum,
@@ -186,8 +186,8 @@ $$
 and the Hermitian (non-covariant) products are
 
 $$
-w^{(r){}^{*}}(\vec p)\,w^{(s)}(\vec p) = 2E\,\delta^{rs}, \qquad
-v^{(r){}^{*}}(\vec p)\,v^{(s)}(\vec p) = 2E\,\delta^{rs}, \qquad
+w^{(r){}^{*}}(\vec p)\,w^{(s)}(\vec p) = 2E\,\delta_{rs}, \qquad
+v^{(r){}^{*}}(\vec p)\,v^{(s)}(\vec p) = 2E\,\delta_{rs}, \qquad
 w^{(r){}^{*}}(\vec p)\,v^{(s)}(-\vec p) = 0,
 $$
 

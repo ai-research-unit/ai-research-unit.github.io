@@ -124,7 +124,7 @@ $$
 with $\gamma_{\nu 0\mu}$ the antisymmetrized product of the three gamma matrices, and the canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since $\gamma_{\nu 0 0}=0$ — together with the $\gamma$-trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
-\{A,B\}_D = \{A,B\}_P-\{A,\chi_a\}_P\,C^{ab}\,\{\chi_b,B\}_P ,
+\{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\chi_a\}_P\,(C^{-1})_{ab}\,\{\chi_b,B\}_P ,
 \qquad
 C_{ab}=\{\chi_a,\chi_b\}_P ,
 $$
