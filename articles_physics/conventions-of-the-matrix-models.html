@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conventions of the Matrix Models — Biquaternion Universe</title>
+  <title>Matrix Representations Conventions — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,9 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="conventions-of-the-matrix-models"><strong>Conventions of the Matrix Models</strong></h1>
+        <h1 id="matrix-representations-conventions"><strong>Matrix Representations Conventions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of <em>Conventions in the Biquaternion Universe</em> and the products of <em>Conventions of the Products and the Forms</em>.</p>
+<p>The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of <em>Algebra and Element Conventions</em> and the products of <em>Product and Form Conventions</em>.</p>
 <p>The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the comparison map $\iota_{\mathrm{Cl}}$ is its real-linear link to the even subalgebra.</p>
 <h2 id="the-matrix-representations">The Matrix Representations</h2>
 <p>The algebra is read in matrices in two ways, and the two answer different questions. The <strong>2×2 reading</strong> is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$: the elements themselves become complex matrices, and this is the only reading whose matrices are of the algebra's own size. The <strong>4×4 reading</strong> is the regular representation $\rho_L : \mathbb{B} \to \mathrm{End}_{\mathbb{C}}(\mathbb{B}) = M_4(\mathbb{C})$: an element becomes the operator of left multiplication on the algebra taken as a complex vector space, and its matrix acts on the coordinate column of the frame. The image is the four-dimensional subspace $\mathbb{B}_L$ of $M_4(\mathbb{C})$, not the ambient algebra: the two readings are different representations, not two sizes of one, and only $\mathsf{M}_2$ is an isomorphism of the algebra onto matrices of its own size.</p>
@@ -253,7 +253,7 @@ $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
 The sixteen gamma products span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The full Clifford structure, odd part included, is a structure of the two-sided operators themselves. It is not an external tool, and the even part is not a limitation.</p>
-<p><strong>The gamma set.</strong> The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>: the left factor is a unit and the right factor a spatial unit,
+<p><strong>The gamma set.</strong> The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of <em>Operator and Calculus Conventions</em>, §<em>The Operators</em>: the left factor is a unit and the right factor a spatial unit,
 $$
 \boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
 \gamma_1=iL_xR_y=iT_{xy},\qquad
@@ -277,7 +277,7 @@ $$
 \gamma_0(Q)=\gamma_0(x),\qquad \gamma_k(Q)=i\,\gamma_k(x),\quad k=1,2,3 .
 $$
 The printed matrices above are the ones of the $\mathbb{M}_-$ frame; the $\mathbb{B}$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.</p>
-<p><strong>Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).</strong> The series has exactly two coordinate frames for the derivatives, and they are not to be mixed. Both are fixed, with their metrics and their table, in <em>Conventions of the Frames</em>.</p>
+<p><strong>Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).</strong> The series has exactly two coordinate frames for the derivatives, and they are not to be mixed. Both are fixed, with their metrics and their table, in <em>Frame Conventions</em>.</p>
 <ul>
 <li>The <strong>$\mathbb{B}$ frame</strong> is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.</li>
 <li>The <strong>$\mathbb{M}_-$ frame</strong> is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.</li>
