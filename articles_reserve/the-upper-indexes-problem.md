@@ -4,11 +4,11 @@
 
 The corpus states one rule for indices in *Operator and Calculus Conventions*: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.
 
-The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 110 physics articles and twelve Part VI articles that still write at least one raised Greek spacetime index. The gamma indices are gone: no gamma with a raised index survives in either corpus.
+The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 103 physics articles and twelve Part VI articles that still write at least one raised Greek spacetime index. The gamma indices are gone: no gamma with a raised index survives in either corpus.
 
 The remainder is not one problem. Three kinds occur, and they cost three different things to repair. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, and correct for the third.
 
-Twenty-two files were repaired while this article was written. Seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. They are listed in §*What Was Already Lowered*, and every count here is after that pass.
+Twenty-two files were repaired while this article was written. Seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. They are listed in §*What Was Already Lowered*, and every count here is after that pass. Seven more physics articles were migrated afterwards, by rewriting each display rather than relettering it; they are listed there too and are no longer in the inventory.
 
 The examples in this article quote the offending notation. They are the object of study, not the notation of the article.
 
@@ -18,7 +18,7 @@ The count is made on the mathematics regions only, the text between single or do
 
 | Corpus | Articles | Superscripts | Index-like tokens | Articles with an index |
 |---|---:|---:|---:|---:|
-| Physics | 402 | 43,868 | 2,423 | 110 |
+| Physics | 402 | 43,857 | 2,423 | 103 |
 | Part VI mathematics | 884 | 65,868 | 73 | 12 |
 
 The count does not include numeric components, because $x^2$ the square and $x^2$ the second component are the same string. The four physics articles that wrote only numeric time components have been lowered and no longer appear.
@@ -53,7 +53,7 @@ F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.
 
-Ninety-nine physics articles and six Part VI articles are in this class. Between them they hold 2,164 occurrences, of which 1,590 in physics and 36 in mathematics are paired. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
+Ninety-two physics articles and six Part VI articles are in this class. Between them they hold 2,153 occurrences, of which 1,579 in physics and 36 in mathematics are paired. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
 
 ### Class C — the superscript is only a label
 
@@ -68,7 +68,7 @@ The superscript is an exponent, a parameter label, a star, a dual or an inverse.
 | Class | Role of the superscript | Lowering is | Repair | Physics articles | Part VI articles |
 |---|---|---|---|---|---|
 | A | a slot | destructive | matrix, slot order, cell form | 11 | 3 |
-| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 99 | 6 |
+| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 92 | 6 |
 | C | a label | safe | local relabel | 0 | 3 |
 | D | not an index | not applicable | none | excluded | excluded |
 
@@ -108,6 +108,19 @@ Four further physics articles wrote only numeric components, and were lowered in
 One article needed a frame change, not a lowering. [Why Complexify Spacetime?](../articles_physics/why-complexify-spacetime.html) writes $Q_t=ic_0t'$, the time coordinate of the $\mathbb{B}$ frame, and now says so in those letters. Lowering it to $x_0$ would have asserted $x_0=ct'$, which is false in that frame. The letter $R$ was not used either: $R_t$ and $R_x$ are already the right-regular matrices of *Matrix Representations Conventions*, and $Q_t$ is already the name of that coordinate there. The material position stays $\tilde R=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
 
 The pass left every file that mixes a slot or a pairing untouched. A partial lowering inside one formula would put two heights in one contraction, which is the error the rule exists to prevent.
+
+**The migration pass.** Seven further physics articles were rewritten after this article, and their rows are removed from the inventory above. Here each display was rewritten with the weight in the sum and checked on the article's own expression; no display was relettered.
+
+| Article | The rewrite | Check |
+|---|---|---|
+| [The Material Sector: Four-Vectors, Interval and Lorentz Action](../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html) | $\partial_\mu J^\mu\to\mathrm{Sc}(\tilde\nabla^\natural\tilde J)$ | residual $5.6\times10^{-11}$ |
+| [The Foldy–Wouthuysen Transformation in Biquaternionic Form](../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html) | $\partial/\partial x^\mu\to\partial/\partial x_\mu$ | label |
+| [Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form](../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html) | $\partial\psi/\partial x^\mu\to\partial\psi/\partial x_\mu$ | label |
+| [The Proton in Biquaternionic Form](../articles_physics/the-proton-in-biquaternionic-form.html) | $j^\mu\to j_\mu$ | label |
+| [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html) | $\partial_\mu T^{\mu\nu}\to\sum_\mu\varepsilon_\mu\,\partial_\mu T_{\mu\nu}$ | residual $1.5\times10^{-11}$ |
+| [Chiral Fermions in the Biquaternion Framework](../articles_physics/chiral-fermions-in-the-biquaternion-framework.html) | $\partial_\mu j_5^\mu\to\sum_\mu\varepsilon_\mu\,\partial_\mu j_{5\mu}$, with $j_{5\mu}=\bar\psi\gamma_\mu\gamma_5\psi$ | identity, by $\gamma^0=\gamma_0$ and $\gamma^k=-\gamma_k$ |
+| [Gauge Transformations of the First and Second Kind in Biquaternionic Form](../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html) | $F_{\mu\nu}F^{\mu\nu}\to\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ | residual $0$ |
+
 
 ## The Frames of the Inventory
 
@@ -233,7 +246,6 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Effective Optical Metric of the Local Complex Structure](../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html) | $\mathbb{B}$ | 4 | 0 | 1 | 3 | $v^{\mu}$ (4) |
 | [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) | $\mathbb{B}$ | 4 | 0 | 2 | 2 | $F^{\mu\nu}$ (2), $x^{\mu}$ (2) |
 | [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | both | 3 | 0 | 1 | 2 | $T^{\mu}$ (2), $J^{\nu}$ (1) |
-| [Gauge Transformations of the First and Second Kind in Biquaternionic Form](../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $F^{\mu\nu}$ (3) |
 | [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $j^{\mu}$ (2), $F^{\mu\nu}$ (1) |
 | [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 2 | 1 | $x^{\mu}$ (3) |
 | [The Determination of the Possible Spins in Biquaternionic Form](../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html) | — | 3 | 0 | 1 | 2 | $W^{\mu}$ (3) |
@@ -241,20 +253,14 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Quantized Dirac Field in Biquaternionic Form](../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 1 | 2 | $J^{\mu}$ (3) |
 | [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $F^{\mu\nu}$ (2), $j^{\mu}$ (1) |
 | [Anyons and Braid Statistics in Biquaternionic Form](../articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html) | — | 2 | 0 | 2 | 0 | $\varepsilon^{\mu\nu\rho}$ (2) |
-| [Chiral Fermions in the Biquaternion Framework](../articles_physics/chiral-fermions-in-the-biquaternion-framework.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $j^{\mu}$ (2) |
 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $dx^{\mu}$ (2) |
 | [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $x^{\mu}$ (2) |
 | [Nonlinear Maxwell Equations in Biquaternionic Form](../articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $T^{\mu\nu}$ (1), $f^{\nu}$ (1) |
-| [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html) | $\mathbb{B}$ | 2 | 0 | 1 | 1 | $T^{\mu\nu}$ (1), $j^{\nu}$ (1) |
 | [The Local Complex Structure and the Speed of Light](../articles_physics/the-local-complex-structure-and-the-speed-of-light.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $dx^{\mu}$ (2) |
-| [Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form](../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 1 | 0 | 1 | 0 | $x^{\mu}$ (1) |
 | [Exercise: The Retarded Potentials and the Green's Function](../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $A^{\mu}$ (1) |
 | [Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form](../articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html) | $\mathbb{M}_-$ | 1 | 0 | 1 | 0 | $v^{\mu}$ (1) |
-| [The Foldy–Wouthuysen Transformation in Biquaternionic Form](../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $x^{\mu}$ (1) |
 | [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $j^{\mu}$ (1) |
 | [The Index Theorem and the Zero-Mode Count in Biquaternionic Form](../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $F^{\mu\nu}$ (1) |
-| [The Material Sector: Four-Vectors, Interval and Lorentz Action](../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html) | $\mathbb{M}_-$ | 1 | 0 | 1 | 0 | $J^{\mu}$ (1) |
-| [The Proton in Biquaternionic Form](../articles_physics/the-proton-in-biquaternionic-form.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $j^{\mu}$ (1) |
 
 ## The Part VI Inventory
 

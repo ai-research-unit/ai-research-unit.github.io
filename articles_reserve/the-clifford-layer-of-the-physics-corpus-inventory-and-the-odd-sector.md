@@ -362,6 +362,8 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 
 **Removed, not patched.** Four mentions carried no structure. In *The Coefficient Matrix of a Two-Sided Operator* the Further Reading line loses "and the gamma frame". In *Biquaternion Physical Interpretation of Chirality* it loses "stated there in the $\gamma_5$ language". In *The Klein–Gordon Propagator and Its Green's Functions* the sentence loses "and no gamma matrix appears". In *The Spinor Representation of the Lorentz Group* the two prose mentions become "the Dirac matrices", and the comparison with $\tfrac14[\gamma_a,\gamma_b]$ becomes "the Lorentz algebra". The first article is not in the inventory; the other three rows leave Part II, and the counts are adjusted.
 
+**The index migration is a separate pass.** Seven physics articles had their raised spacetime indices removed by rewriting the display with the weight in the sum (*The Upper-Index Problem*, §*What Was Already Lowered*). That pass changes no gamma and no cell, so the counts and the rows above stand. *Chiral Fermions in the Biquaternion Framework* keeps its 51 gammas and its one-term equality; *Gauge Transformations of the First and Second Kind* writes no gamma and is not in this inventory.
+
 ## What the Split Says
 
 **The correspondence is an identity, not a comparison.** The sixteen cells are the sixteen gamma products up to phase, and the cell algebra is the complexified Clifford algebra. A gamma calculation is therefore a cell calculation in a particular basis, and a cell calculation is a biquaternion calculation with two actions. Nothing is imported at the multi-term equality except the coordinate: $T_{a,b}=L_aR_b$ is the composition of two multiplications in $\mathbb{B}$.
