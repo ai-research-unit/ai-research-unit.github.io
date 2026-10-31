@@ -230,9 +230,9 @@ $$</p>
 $$</p>
 <p>which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\vec\Gamma_\mu = -\left(\partial/\partial x_\mu\,\tilde U\right)\tilde U^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.</p>
 <h3 id="the-curved-dirac-operator-and-the-equation">The curved Dirac operator and the equation</h3>
-<p>The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
+<p>The biquaternion gradient of the flat articles is $\tilde\nabla = e_t\,\partial/\partial Q_t + \sum_k\,\vec e_k\,\partial/\partial Q_k$, with $Q_t=ict'$. In the physical coordinates $x_\mu=(t',x,y,z)$ it reads
 $$
-\tilde\nabla = -i\,e_t\,\partial/\partial t' + \vec e_k\,\partial/\partial x_k,
+\tilde\nabla = -i\,e_t\,\partial/\partial t' + \sum_k\,\vec e_k\,\partial/\partial x_k,
 $$
 because $\partial/\partial t'=i\partial/\partial Q_t$. Its curved replacement substitutes the frame field for the <strong>rigid material frame</strong> and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{M}_-$; it is
 $$
@@ -262,10 +262,10 @@ $$</p>
 <p>The <strong>flat limit</strong> is exact. Take the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$, with $\tilde F_0=-ie_t$, $\tilde F_k=\vec e_k$ and $g_{\mu\nu}=\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, and take $\vec\Gamma_\mu=0$. Then
 $$
 \tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial/\partial x_\mu
-=-i\,e_t\,\partial/\partial t'+\vec e_k\,\partial/\partial x_k
-=e_t\,\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
+=-i\,e_t\,\partial/\partial t'+\sum_k\,\vec e_k\,\partial/\partial x_k
+=e_t\,\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k=\tilde\nabla,
 $$
-where the last equality uses $Q_t=ict'$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is <strong>not</strong> $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.</p>
+where the last equality uses $Q_t=ict'$ and $\partial/\partial t'=i\partial/\partial Q_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is <strong>not</strong> $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{M}_-$, and a term-by-term replacement of $\tilde E_\mu$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $\hat F_\mu\partial/\partial x_\mu=e_t\partial/\partial t'+i\sum_k\,\vec e_k\partial/\partial x_k=i\tilde\nabla$; the biquaternion object carrying the gamma operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the gamma transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.</p>
 <p>The <strong>square</strong> is the Lichnerowicz formula. Squaring the Dirac operator gives</p>
 <p>$$
 \boxed{\;(\tilde F_{\mu} D_{\mu})^2 = \Box_g - \tfrac14 R\;},
@@ -458,7 +458,7 @@ $$</p>
 <td>Local imaginary time coordinate, material sector</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\vec e_k\partial/\partial x_k$</td>
+<td>$\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\sum_k\,\vec e_k\partial/\partial x_k$</td>
 <td>Biquaternionic gradient, $Q_t=ict'$; needs a global chart</td>
 </tr>
 <tr>

@@ -69,14 +69,13 @@
     <main class="article">
       <div class="article-body">
         <h1 id="the-upper-index-problem-the-caret-rule-and-the-corpus"><strong>The Upper-Index Problem: The Caret Rule and the Corpus</strong></h1>
-<p>The corpus has 403 physics articles and 2,407 mathematical ones. It writes a coordinate, a field component, a frame vector, a gamma and a sign symbol with a low index, and reserves the caret for what the convention calls a power or a name. This note states the rule, defines the screens that apply it, and records what fails.</p>
+<p>The rule forbids one use of the caret: the frame slot. Two tables list every article that breaks it in the screened range. The first lists 39 mathematics articles and 583 raised frame slots, with the forms and the count in each article. The second lists 29 physics articles and 396 raised colour or isospin indices.</p>
 <h2 id="the-rule">The Rule</h2>
-<p><em>Operator and Calculus Conventions</em> states the rule in one sentence:</p>
+<p><em>Operator and Calculus Conventions</em> states it in one sentence:</p>
 <blockquote>
 <p>A caret marks a power or a name, never a frame slot: $e^\lambda$, $2^k$ and $(-1)^k$ are powers, and $\mathrm{Cl}^i$, $K^0$, $M_4^\sigma$ and $\mathbb{B}^\sigma$ are names; a coordinate, a field component, a basis vector, a gamma and a sign symbol are written with a low index — $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$ — and a contraction is written as an explicit sum with the sign vector or as the quaternionic product that carries it.</p>
 </blockquote>
-<p><em>Index, Notation and Corpus Conventions</em> states the same rule for mathematics, with the form that replaces the contraction.</p>
-<p>The rule bans one use of the caret, not the caret. Three uses are legitimate, and each has a test a reader can apply without knowing the author's intent:</p>
+<p>The word "name" hides two different things. The list in that sentence holds two grades, $\mathrm{Cl}^i$ and $K^0$, and two parameters, $M_4^\sigma$ and $\mathbb{B}^\sigma$. Neither is a name, and neither can be tested by the word. The checkable form of the rule is the table:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -103,202 +102,783 @@
 </tr>
 </tbody>
 </table></div>
-<p>A caret outside these three marks a frame slot. The slot is low: $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$. Every contraction is an explicit sum. The one further exception is the representation index, which keeps its height because it labels a representation rather than a component; the three physics cases are collected at the end.</p>
+<p>A caret outside these three marks a frame slot. The slot is low: $x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$.</p>
 <h2 id="the-screens">The Screens</h2>
-<p>Three screens answer three disjoint questions.</p>
+<p>Three screens produce the tables.</p>
 <ul>
-<li><strong>Greek.</strong> A caret whose exponent is one of $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$, on a base that could be a coordinate, a derivative, a field component or a metric. Mathematics has 1,514, on 98 distinct bases, each read; physics has 8.</li>
-<li><strong>Latin.</strong> A caret whose exponent is one of $i,j,k,l,a$, on fifteen component bases: $x$, $dx$, $dq$, $\partial$, $q$, $Q$, $e$, $v$, $\xi$, $g$, $\pi$, $F$, $R$, $\Gamma$, $\theta$ and $\omega$. 856 carets in mathematics and 0 in physics.</li>
-<li><strong>Internal.</strong> A caret on a colour or isospin index $a,b,c$ in a gauge article: 376 carets in 29 physics articles.</li>
+<li><strong>Greek screen.</strong> A caret on $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$ over a base that could be a coordinate, a derivative, a component or a metric. It reads 1,514 carets in mathematics and 8 in physics one by one. It finds no frame slot, so it produces no row.</li>
+<li><strong>Latin screen.</strong> A caret on $i,j,k,l$ over a component base: $x$, $dx$, $dq$, $\partial$, $q$, $Q$, $g$, $\pi$, $F$, $R$, $\Gamma$, $\theta$, $\omega$, $e$, $v$, $\xi$. It covers Parts III and IV of the mathematical corpus, the geometry and mechanics parts, where those letters denote components.</li>
+<li><strong>Internal screen.</strong> A caret on a colour or isospin index $a,b,c$ in a gauge article. It covers the whole physics corpus.</li>
 </ul>
-<p>The Latin screen over-counts, and the count below removes what it over-counts: 115 powers, 2 cohomological degrees and 17 coframe carets. What remains is 722 frame slots.</p>
+<p>The Latin screen is then corrected by reading. The corrections are listed so the count can be reproduced:</p>
+<ul>
+<li><strong>9 power carets</strong> are removed: $x^j$ in the filtration of <em>Regularity and the Cauchy–Riemann Operator</em> (7) and $x^k$ in <em>Clifford Analysis</em> (2).</li>
+<li><strong>Coframe carets</strong> are not counted as debt. The five articles that use a dual basis write $e^i$ for the dual of $e_i$; they are listed under <em>The Exceptions</em>.</li>
+<li><strong>Carets on $R$</strong> are kept only when $R$ is a curvature component, $R^i{}_{jk\bar l}$ or $R^{ij}$. The derived functor $R^i\Gamma$ and the grading $R^iR^j\subseteq R^{i+j}$ are removed.</li>
+<li><strong>Parts I–II, V–VI are out of scope.</strong> There the same letters denote ring elements, powers and graded pieces: $x^i$ in a polynomial ring, $R^0\oplus R^1$, $\Gamma^n(M)$. The Latin screen applies to components, so it cannot read those parts without a separate semantic pass.</li>
+</ul>
 <h2 id="the-state">The State</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Corpus</th>
 <th style="text-align: right;">Articles</th>
+<th style="text-align: right;">Articles with issues</th>
+<th style="text-align: right;">Issues</th>
 <th style="text-align: right;">Greek slots</th>
-<th style="text-align: right;">Latin slots</th>
-<th style="text-align: right;">Internal carets</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Physics</td>
 <td style="text-align: right;">403</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">396 internal</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">376 in 29 articles</td>
 </tr>
 <tr>
 <td>Mathematics</td>
 <td style="text-align: right;">2,407</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">583 frame slots (Parts III–IV)</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">722 in 97 articles</td>
-<td style="text-align: right;">none</td>
 </tr>
 <tr>
 <td>Total</td>
 <td style="text-align: right;">2,810</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">979</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">722</td>
-<td style="text-align: right;">376</td>
 </tr>
 </tbody>
 </table></div>
-<p>The four articles that opened the audit — Noether's Two Theorems, Multisymplectic and Covariant Hamiltonian Field Theory, The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System, and The Dirac–Kähler Equation — hold 0.</p>
-<h2 id="the-greek-screen-zero">The Greek Screen: Zero</h2>
-<p>Physics carries eight carets on the seven letters, and every one is legitimate: three integration limits $\int_0^\tau$ in The Electro-Gravimagnetic Field and the Magnetic Charge–Mass Hypothesis, one exponent $(\alpha/\pi)^\lambda$ in The Anomalous Magnetic Moment, one sign label $\nabla^\sigma$ in Bispinor Fields and the Fundamental Solution, and three from the sentence that states the rule: the power $e^\lambda$ and the two specimens $M_4^\sigma$ and $\mathbb{B}^\sigma$.</p>
-<p>Mathematics carries 1,514 on 98 bases, and none marks a coordinate, a derivative, a field component or a metric. Four families cover them.</p>
-<ul>
-<li><strong>Fixed sets.</strong> $A^\sigma$, $G^\sigma$, $X^\sigma$, $F^\sigma$ and $R^\sigma$ are the invariant part under an involution. The caret names the involution.</li>
-<li><strong>Labels of a partition.</strong> $S^\lambda$, $\chi^\lambda$, $x^\lambda$ and $D^\mu$ index a partition, not a component of a vector.</li>
-<li><strong>Parameters.</strong> $\Sigma^\alpha_{u,u^{-1}}$ and $\Theta^\alpha_{a,b}$ are the signed sandwiches; the low slots carry the arguments, the caret carries the sign rule $\alpha$.</li>
-<li><strong>Multi-indices.</strong> $\partial^\alpha$ with $|\alpha|\le n$ is a derivative of order $\alpha$, a power in the notation of several variables.</li>
-</ul>
-<p>Three near misses show why the screen was read and not grepped. $\varphi^\mu_t$ is the flow of the family $f(\cdot,\mu)$, with $\mu$ a parameter and $t$ the time. $D^\mu$ is the irreducible module attached to a partition $\mu$. $x^\mu$ in the theory of symmetric functions is a monomial whose exponent is the partition $\mu$. Each has the shape of a component; none is one.</p>
-<h3 id="the-word-name">The Word "Name"</h3>
-<p>The word "name" covers two different things in the rule's own examples, and neither is a name in the sense of a proper label.</p>
-<ul>
-<li>$\mathrm{Cl}^i$ and $\Omega^k$ are grades: the caret is the degree of a grading.</li>
-<li>$K^0$ is the degree-zero K-theory group: the caret is a cohomological degree.</li>
-<li>$M_4^\sigma$ is the $\sigma$-fixed part and $\mathbb{B}^\sigma$ the $\sigma$-twist: the caret is a parameter.</li>
-<li>$A^\sigma$, $G^\sigma$, $X^\sigma$ and $F^\sigma$ are fixed-point constructions, a role the rule never mentions.</li>
-</ul>
-<p>The list in the rule contains no name. It contains two grades and two parameters.</p>
-<p>Four costs follow.</p>
-<ol>
-<li><strong>There is no test.</strong> Nothing separates $A^\sigma$ from $A^\mu$ except the article. The same letter $\sigma$ is a frame slot in physics, where the pass lowered it to $\sigma_i$, and an involution label in mathematics, where it stays high.</li>
-<li><strong>The word carries the verdict.</strong> A caret is cleared when it is called a name, and the same caret would be debt under another word.</li>
-<li><strong>It cannot be screened.</strong> A regression check cannot fire on a new $Q^\sigma$, because "name" can always be claimed.</li>
-<li><strong>It is unstable.</strong> An earlier draft of this note lowered the specimens to $\mathrm{Cl}_i$, $K_0$ and $B^\sigma$. The convention is right about the height and wrong about the reason.</li>
-</ol>
-<p>The repair is to drop "name" and keep three words that can be checked: <strong>power</strong>, <strong>grade</strong>, <strong>parameter</strong>. The convention can then list the permitted carets, and the gate can fire on everything else.</p>
-<h2 id="the-latin-screen-722">The Latin Screen: 722</h2>
+<p>Physics has no raised frame slot left. Its 8 carets on the Greek letters are three integration limits $\int_0^\tau$, one exponent $(\alpha/\pi)^\lambda$, one sign label $\nabla^\sigma$, and the three specimens $e^\lambda$, $M_4^\sigma$ and $\mathbb{B}^\sigma$ in the sentence of the rule.</p>
+<p>Mathematics splits into 19 articles and 362 slots in Part III, and 20 articles and 221 slots in Part IV. <em>Lagrangian and Hamiltonian Systems</em> alone carries 167, and the first three articles carry 262 of the 583.</p>
+<h2 id="mathematics-the-articles">Mathematics: The Articles</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Class</th>
-<th style="text-align: right;">Carets</th>
-<th>Forms</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Coordinates and one-forms</td>
-<td style="text-align: right;">401</td>
-<td>$x^i$ 251, $dq^i$ 98, $dx^i$ 52</td>
-</tr>
-<tr>
-<td>Canonical variables</td>
-<td style="text-align: right;">133</td>
-<td>$q^i$ 112, $Q^i$ 21</td>
-</tr>
-<tr>
-<td>Connections</td>
-<td style="text-align: right;">94</td>
-<td>$\Gamma^k{}_{ij}$ 54, $\theta^i{}_j$ 29, $\omega^i{}_j$ 11</td>
-</tr>
-<tr>
-<td>Tensors</td>
-<td style="text-align: right;">55</td>
-<td>$R^i{}_{jk}$ 22, $g^{ij}$ 15, $\pi^{ij}$ 13, $F^{ij}$ 5</td>
-</tr>
-<tr>
-<td>Frames and vectors</td>
-<td style="text-align: right;">39</td>
-<td>$\xi^i$ 24, $v^i$ 15</td>
-</tr>
-</tbody>
-</table></div>
-<p>The debt follows the subject: mechanics and differential geometry carry it, algebra carries almost none.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
+<th style="text-align: right;">#</th>
+<th>Article</th>
 <th>Part</th>
-<th style="text-align: right;">I</th>
-<th style="text-align: right;">II</th>
-<th style="text-align: right;">III</th>
-<th style="text-align: right;">IV</th>
-<th style="text-align: right;">V</th>
-<th style="text-align: right;">VI</th>
+<th>Problems</th>
+<th style="text-align: right;">Issues</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Carets</td>
-<td style="text-align: right;">104</td>
+<td style="text-align: right;">1</td>
+<td><a href="../articles_maths/lagrangian-and-hamiltonian-systems.html">Lagrangian and Hamiltonian Systems</a></td>
+<td>III</td>
+<td>$dq^i$ 81, $q^i$ 66, $Q^i$ 16, $\theta^i$ 2, …</td>
+<td style="text-align: right;">167</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><a href="../articles_maths/poisson-geometry.html">Poisson Geometry</a></td>
+<td>IV</td>
+<td>$x^i$ 36, $\pi^{ij}$ 13, $dx^i$ 5</td>
+<td style="text-align: right;">54</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><a href="../articles_maths/the-hamilton-jacobi-equation-and-separability.html">The Hamilton–Jacobi Equation and Separability</a></td>
+<td>III</td>
+<td>$q^i$ 32, $dq^i$ 6, $Q^i$ 3</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><a href="../articles_maths/the-geodesic-flow-operator.html">The Geodesic Flow Operator</a></td>
+<td>IV</td>
+<td>$\xi^k$ 16, $\Gamma^k$ 8, $dx^i$ 6, $x^k$ 6, …</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><a href="../articles_maths/smooth-manifolds-and-differential-geometry.html">Smooth Manifolds and Differential Geometry</a></td>
+<td>III</td>
+<td>$x^i$ 32, $v^i$ 5</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><a href="../articles_maths/curvature-and-geodesics.html">Curvature and Geodesics</a></td>
+<td>IV</td>
+<td>$x^i$ 13, $\Gamma^k$ 6, $dx^i$ 5, $\theta^i$ 3, …</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><a href="../articles_maths/riemannian-geometry.html">Riemannian Geometry</a></td>
+<td>IV</td>
+<td>$x^i$ 13, $\Gamma^k$ 6, $dx^i$ 6, $\theta^i$ 2, …</td>
 <td style="text-align: right;">29</td>
-<td style="text-align: right;">366</td>
-<td style="text-align: right;">207</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><a href="../articles_maths/hermitian-manifolds-and-the-canonical-connection.html">Hermitian Manifolds and the Canonical Connection</a></td>
+<td>III</td>
+<td>$\Gamma^i$ 17, $R^i$ 4, $\omega^i$ 1</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
 <td style="text-align: right;">9</td>
+<td><a href="../articles_maths/geometric-calculus-and-the-vector-derivative.html">Geometric Calculus and the Vector Derivative</a></td>
+<td>III</td>
+<td>$x^i$ 19</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><a href="../articles_maths/the-geodesic-flow.html">The Geodesic Flow</a></td>
+<td>IV</td>
+<td>$\xi^k$ 8, $\Gamma^k$ 3, $dx^k$ 2, $g^{ij}$ 2, …</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><a href="../articles_maths/differential-forms-and-stokes-theorem.html">Differential Forms and Stokes' Theorem</a></td>
+<td>III</td>
+<td>$x^j$ 9, $dx^j$ 8</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><a href="../articles_maths/the-calculus-of-variations.html">The Calculus of Variations</a></td>
+<td>III</td>
+<td>$dx^i$ 7, $\Gamma^k$ 3, $x^i$ 2</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><a href="../articles_maths/hermitian-metrics-and-the-levi-civita-connection.html">Hermitian Metrics and the Levi-Civita Connection</a></td>
+<td>III</td>
+<td>$x^j$ 6, $\Gamma^i$ 2, $dx^i$ 2</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><a href="../articles_maths/fibre-bundles-connections-and-curvature.html">Fibre Bundles, Connections and Curvature</a></td>
+<td>III</td>
+<td>$\omega^i$ 5, $\Gamma^i$ 1, $dx^k$ 1</td>
 <td style="text-align: right;">7</td>
 </tr>
 <tr>
-<td>Articles</td>
-<td style="text-align: right;">32</td>
 <td style="text-align: right;">15</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">19</td>
+<td><a href="../articles_maths/pseudo-riemannian-and-lorentzian-geometry.html">Pseudo-Riemannian and Lorentzian Geometry</a></td>
+<td>IV</td>
+<td>$x^i$ 4, $\Gamma^k$ 2, $\theta^i$ 1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><a href="../articles_maths/the-exterior-derivative.html">The Exterior Derivative</a></td>
+<td>III</td>
+<td>$dx^i$ 6, $x^i$ 1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><a href="../articles_maths/hermitian-connections-and-the-adjoint.html">Hermitian Connections and the Adjoint</a></td>
+<td>III</td>
+<td>$\omega^i$ 4, $g^{ij}$ 2</td>
 <td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><a href="../articles_maths/ricci-flow.html">Ricci Flow</a></td>
+<td>IV</td>
+<td>$g^{ij}$ 4, $R^{ij}$ 2</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><a href="../articles_maths/contact-geometry.html">Contact Geometry</a></td>
+<td>IV</td>
+<td>$dq^i$ 5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><a href="../articles_maths/the-adjoint-of-the-clifford-multiplication.html">The Adjoint of the Clifford Multiplication</a></td>
+<td>IV</td>
+<td>$\theta^i$ 5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><a href="../articles_maths/the-spinor-operator.html">The Spinor Operator</a></td>
+<td>IV</td>
+<td>$v^i$ 5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><a href="../articles_maths/adjoints-on-a-clifford-module.html">Adjoints on a Clifford Module</a></td>
+<td>III</td>
+<td>$x^i$ 4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><a href="../articles_maths/symplectic-geometry.html">Symplectic Geometry</a></td>
+<td>IV</td>
+<td>$dq^i$ 4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><a href="../articles_maths/the-codifferential-on-a-spinor-bundle.html">The Codifferential on a Spinor Bundle</a></td>
+<td>IV</td>
+<td>$\theta^i$ 4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><a href="../articles_maths/differential-operators-on-a-manifold.html">Differential Operators on a Manifold</a></td>
+<td>III</td>
+<td>$x^j$ 2, $dx^j$ 1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><a href="../articles_maths/distributions-on-surfaces-layers-and-jump-conditions.html">Distributions on Surfaces, Layers, and Jump Conditions</a></td>
+<td>III</td>
+<td>$\partial^k$ 3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><a href="../articles_maths/harmonic-maps.html">Harmonic Maps</a></td>
+<td>IV</td>
+<td>$g^{ij}$ 3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><a href="../articles_maths/the-adjoint-of-the-twistor-operator.html">The Adjoint of the Twistor Operator</a></td>
+<td>IV</td>
+<td>$\theta^i$ 3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><a href="../articles_maths/the-geodesic-symmetry-and-locally-symmetric-spaces.html">The Geodesic Symmetry and Locally Symmetric Spaces</a></td>
+<td>IV</td>
+<td>$x^k$ 3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td><a href="../articles_maths/involutions-of-the-twistor-operator.html">Involutions of the Twistor Operator</a></td>
+<td>IV</td>
+<td>$\theta^i$ 2</td>
 <td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><a href="../articles_maths/the-covariant-derivative.html">The Covariant Derivative</a></td>
+<td>III</td>
+<td>$\Gamma^i$ 2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><a href="../articles_maths/the-lagrange-identity-and-the-self-adjoint-system.html">The Lagrange Identity and the Self-Adjoint System</a></td>
+<td>III</td>
+<td>$dx^k$ 2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td><a href="../articles_maths/the-twistor-operator.html">The Twistor Operator</a></td>
+<td>IV</td>
+<td>$\theta^i$ 2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td><a href="../articles_maths/differential-topology.html">Differential Topology</a></td>
+<td>III</td>
+<td>$x^i$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><a href="../articles_maths/minimal-surfaces.html">Minimal Surfaces</a></td>
+<td>III</td>
+<td>$g^{ij}$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td><a href="../articles_maths/the-clifford-multiplication-operator.html">The Clifford Multiplication Operator</a></td>
+<td>IV</td>
+<td>$\theta^i$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td><a href="../articles_maths/the-fourier-operator.html">The Fourier Operator</a></td>
+<td>III</td>
+<td>$dx^k$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td><a href="../articles_maths/the-hodge-laplacian.html">The Hodge Laplacian</a></td>
+<td>IV</td>
+<td>$dx^i$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td><a href="../articles_maths/the-parallel-transport-operator.html">The Parallel Transport Operator</a></td>
+<td>IV</td>
+<td>$\Gamma^k$ 1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"><strong>583</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p>Two articles carry 218 of the 722: Lagrangian and Hamiltonian Systems (164) and Poisson Geometry (54). Then come The Hamilton–Jacobi Equation and Separability (41), The Geodesic Flow Operator (37), Smooth Manifolds and Differential Geometry (37), Curvature and Geodesics (28), Riemannian Geometry (26) and Hermitian Manifolds and the Canonical Connection (22).</p>
-<p>Part VI holds 7: $F^{ij}$ in The Tensor Square of the Duo-Complex Numbers (5), and $Q^0$ and $Q^k$ in The Sandwich of an n-Regular Spectrally Regular Biquaternion (2).</p>
-<h3 id="the-coframe-exception">The Coframe Exception</h3>
-<p>Seventeen of the 856 are on $e^i$, and in each case $e^i$ is the dual of the frame $e_i$, with $e^i(e_j)=\delta^i_j$. Lowering them would collide with the frame and erase the pairing. The rule does not cover a dual basis, and the seventeen are not debt: either the convention adds a coframe exception, or the articles rename the dual to $\epsilon^i$. They sit in Geometric Calculus and the Vector Derivative (11), Symmetric Tensors and Spherical Harmonics (3), Hermitian Connections and the Adjoint (1), Exterior Powers (1) and The Coboundary Operator (1).</p>
-<h3 id="what-was-removed">What Was Removed</h3>
-<p>115 powers: 65 powers of the field order $q$ in the finite-field articles, 16 powers in Part VI, 11 powers of a quaternion variable, 13 powers of a generating function, 10 powers in the cohomology operations. 2 degrees: $Q^i$ in a resolution $Q^0\to Q^1\to\cdots$ in Derived Functors. 17 coframes, as above.</p>
-<h2 id="the-internal-screen-376-in-29">The Internal Screen: 376 in 29</h2>
-<p>The physics corpus carries a class that the rule does not name. 376 carets stand on internal colour or isospin indices — $\mathcal{A}_\mu^a$, $A_\mu^a$, $c^a$, $B^a$, $T^a$, $\tau^a$, $\sigma^a$, $\pi^a$, $F^a_{\mu\nu}$ and $f^{abc}$ — in the Yang–Mills, BRST, anomaly, pion and gluon articles.</p>
-<p>The class is open, and the corpus is not consistent inside it. Four articles write both heights in the same text: The Gluon ($T^a$ 4, $T_a$ 12), The Yang–Mills Path Integral (8 and 16), The W and Z Bosons (5 and 7) and Electroweak Theory (2 and 6). $\pi^a$ is a field component, which the rule sends low. If the height records the representation, the class is an exception like Okubo's; if it records a component, it is debt.</p>
-<h2 id="the-indices-that-stay">The Indices That Stay</h2>
-<p>Three physics rows keep their heights, because the height labels a representation: Okubo's $A^i{}_k$ in SU(3) Representations and the Gell-Mann–Okubo Mass Formula, the dimensions $\mathbb{C}^k$ and $\mathbb{C}^N$ in The ADHM Construction and Biquaternion Instanton Data, and the Bhabha pair $\Lambda^l{}_j$ and $\Lambda^{\bar l}_j$. Lowering them would make a mixed object look Euclidean.</p>
-<h2 id="the-next-pass">The Next Pass</h2>
-<ol>
-<li><strong>The mathematics Latin pass.</strong> 722 slots. Start with Lagrangian and Hamiltonian Systems (164) and Poisson Geometry (54), then the connections and the tensors.</li>
-<li><strong>The internal class.</strong> Decide whether a colour or isospin index is a representation label or a component, and write the decision into the convention.</li>
-<li><strong>The convention article.</strong> Replace "name" with grade and parameter, add the coframe case, and keep the specimens high.</li>
-<li><strong>The gate.</strong> Screen with an explicit list of permitted forms, not with a word.</li>
-</ol>
-<h2 id="summary-of-notation">Summary of Notation</h2>
+<h2 id="physics-the-internal-class">Physics: The Internal Class</h2>
+<p>The columns are families. $A_\mu^a$ includes $\mathcal{A}_\mu^a$; <em>other</em> collects $\sigma^a$, $\tau^a$, $\eta^a$, $\omega^a$, $Q^a$, $J^a$ and $u^a$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Form</th>
-<th>Meaning</th>
+<th style="text-align: right;">#</th>
+<th>Article</th>
+<th style="text-align: right;">$A_\mu^a$</th>
+<th style="text-align: right;">$c^a$</th>
+<th style="text-align: right;">$B^a$</th>
+<th style="text-align: right;">$T^a$</th>
+<th style="text-align: right;">$\pi^a$</th>
+<th style="text-align: right;">$F^a$</th>
+<th style="text-align: right;">$f^{abc}$</th>
+<th style="text-align: right;">Other</th>
+<th style="text-align: right;">Issues</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$x_\mu$, $A_\mu$, $\vec e_i$, $\gamma_i$, $\varepsilon_{ijk}$</td>
-<td>the low-index form the rule requires</td>
+<td style="text-align: right;">1</td>
+<td><a href="../articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">99</td>
 </tr>
 <tr>
-<td>$2^k$, $(-1)^k$, $e^\lambda$</td>
-<td>powers</td>
+<td style="text-align: right;">2</td>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">68</td>
 </tr>
 <tr>
-<td>$\mathrm{Cl}^i$, $\Omega^k$, $K^0$</td>
-<td>grades</td>
+<td style="text-align: right;">3</td>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">40</td>
 </tr>
 <tr>
-<td>$A^\sigma$, $M_4^\sigma$, $\mathbb{B}^\sigma$</td>
-<td>parameters</td>
+<td style="text-align: right;">4</td>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">34</td>
 </tr>
 <tr>
-<td>$e^i$ with $e_i$</td>
-<td>a coframe dual to a frame; open exception</td>
+<td style="text-align: right;">5</td>
+<td><a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
 </tr>
 <tr>
-<td>$A^i{}_k$, $\mathbb{C}^k$, $\Lambda^l{}_j$</td>
-<td>representation indices; they stay</td>
+<td style="text-align: right;">6</td>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><a href="../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html">The Gauge Field Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><a href="../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html">SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the Rho Parameter in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><a href="../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/grand-unification-and-the-biquaternion-algebra-ceiling.html">Grand Unification and the Biquaternion Algebra Ceiling</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><a href="../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html">The Particle Roster of the Complex Octonionic Chain Algebra</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>396</strong></td>
 </tr>
 </tbody>
 </table></div>
+<p>Four articles write both heights in the same text: <em>The Gluon</em>, <em>The Yang–Mills Path Integral</em>, <em>The W and Z Bosons</em> and <em>Electroweak Theory</em>. The corpus has not decided whether the height records a representation or a component.</p>
+<h2 id="the-exceptions">The Exceptions</h2>
+<p>The coframe $e^i$ is the dual of $e_i$, with $e^i(e_j)=\delta^i_j$. Lowering it would collide with the frame and erase the pairing. The 20 occurrences sit in <em>Geometric Calculus and the Vector Derivative</em> (13), <em>Symmetric Tensors and Spherical Harmonics</em> (4), <em>Hermitian Connections and the Adjoint</em> (1), <em>Exterior Powers</em> (1) and <em>The Coboundary Operator</em> (1). The convention should name this exception, or the articles should rename the dual to $\epsilon^i$.</p>
+<p>Three physics rows keep their heights because the height labels a representation: the Okubo matrix $A^i{}_k$, the dimensions $\mathbb{C}^k$ and $\mathbb{C}^N$, and the Bhabha pair $\Lambda^l{}_j$ and $\Lambda^{\bar l}_j$. Lowering them would make a mixed object look Euclidean.</p>
+<h2 id="the-word-name">The Word "Name"</h2>
+<p>The rule files the grade and the parameter under one word, and the word does not survive the test.</p>
+<ol>
+<li><strong>There is no test.</strong> Nothing separates $A^\sigma$ from $A^\mu$ except the article. The same letter $\sigma$ is a frame slot in physics, lowered to $\sigma_i$, and an involution label in mathematics, kept high.</li>
+<li><strong>The word carries the verdict.</strong> A caret is cleared when it is called a name, and the same caret would be debt under another word.</li>
+<li><strong>It cannot be screened.</strong> A regression check cannot fire on a new $Q^\sigma$, because "name" can always be claimed.</li>
+<li><strong>It is unstable.</strong> An earlier draft of this note lowered the specimens to $\mathrm{Cl}_i$, $K_0$ and $B^\sigma$.</li>
+</ol>
+<p>Drop "name" and keep "grade" and "parameter". The convention can then list its permitted forms, and the gate can fire on everything else.</p>
+<h2 id="the-next-pass">The Next Pass</h2>
+<ol>
+<li><strong>The mathematics pass.</strong> 583 slots in 39 articles. Start with <em>Lagrangian and Hamiltonian Systems</em> (167), <em>Poisson Geometry</em> (54) and <em>The Hamilton–Jacobi Equation and Separability</em> (41).</li>
+<li><strong>The internal class.</strong> Decide whether a colour or isospin index is a representation label or a component, then apply the decision to the 29 articles above.</li>
+<li><strong>The convention.</strong> Replace "name" with "grade" and "parameter", add the coframe case, and keep the specimens high.</li>
+<li><strong>The gate.</strong> Screen against an explicit list of permitted forms, not against a word.</li>
+</ol>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a> — the rule, with its specimens.</li>

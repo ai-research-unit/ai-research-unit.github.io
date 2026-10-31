@@ -161,7 +161,7 @@ $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial Q_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial Q_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
+= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
 = -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4x .
 $$
 The algebraic identity
@@ -450,7 +450,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 </tr>
 <tr>
 <td>$\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial Q_\mu$</td>
-<td>Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_k\partial/\partial Q_k$</td>
+<td>Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_k\,\vec e_k\partial/\partial Q_k$</td>
 </tr>
 <tr>
 <td>$\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$</td>
