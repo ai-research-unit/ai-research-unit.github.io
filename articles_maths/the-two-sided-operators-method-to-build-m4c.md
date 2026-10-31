@@ -18,7 +18,7 @@
 
 The carrier is $\mathbb{B}\cong\mathbb{C}^4$; it is not $M_4(\mathbb{C})$.
 
-**The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, §*The Gamma Frame* records the physics frame, and §*Why These Matrices* states the case. The worked computation is the companion article.
+**The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, §*The Gamma Set* records the set used in physics, and §*Why These Matrices* states the case. The worked computation is the companion article.
 
 **Sources and boundaries.** The left regular model and its product rules are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*; the Peirce coordinates are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
 
@@ -125,7 +125,7 @@ are a basis of $M_4(\mathbb{C})$. The dimension count is $4\cdot4=16$.
 
 **Step 5.** Choose the coefficient basis of the carrier. The operators become $4\times4$ matrices, and the method produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ displayed in §*The Sixteen Matrices*.
 
-**What the method does not do.** It does not choose a gamma frame, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify $\mathbb{B}$ with $M_4(\mathbb{C})$: $\mathbb{B}$ is four-dimensional, and $M_4(\mathbb{C})$ is the matrix representation of the sixteen-dimensional operator algebra.
+**What the method does not do.** It does not choose a gamma set, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify $\mathbb{B}$ with $M_4(\mathbb{C})$: $\mathbb{B}$ is four-dimensional, and $M_4(\mathbb{C})$ is the matrix representation of the sixteen-dimensional operator algebra.
 
 ### The theorem
 
@@ -457,7 +457,7 @@ $$
 
 **The invariance.** The length is invariant under conjugation by $GL_4(\mathbb{C})$, because the two-sided operators are exactly the rank-one matrices, and conjugation preserves rank. It is also invariant under the finite group of order $32$, which permutes the $T_{\mu\nu}$ up to sign.
 
-## The Gamma Frame
+## The Gamma Set
 
 **The five matrices.** In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
 $$
@@ -486,7 +486,7 @@ Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations
 
 **The reading.** The gammas are five of the sixteen $T$'s up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.
 
-**The frame is not canonical.** The five displayed matrices are one choice among the frames of the companion article. The basis $\{T_{\mu\nu}\}$ is canonical once the coefficient basis is fixed; the gamma frame inside it is not.
+**The frame is not canonical.** The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{T_{\mu\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.
 
 ## Why These Matrices
 
@@ -527,7 +527,7 @@ $$
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four $T$'s with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The gamma frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
+The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four $T$'s with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The gamma set is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
 
 $$
 \boxed{\ \operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
@@ -551,12 +551,12 @@ $$
 | $c(A)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ |
 | $\ell(A)$ | the length, the least number of products |
 | $Q_8$ | the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$ |
-| $\gamma_\mu,\gamma_5$ | the gamma frame of the corpus |
+| $\gamma_\mu,\gamma_5$ | the gamma set of the corpus |
 | $D$ | $\operatorname{diag}(1,-1,-1,-1)$, the carrier of the right family |
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the construction, the gamma frame and the product question.
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the construction, the gamma set and the product question.
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the left regular model and its trace and determinant.
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra, the matrix units and the construction from the two-sided map.

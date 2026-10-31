@@ -162,7 +162,7 @@ of order $64$, with centre $\{\pm I,\pm iI\}\cong\mathbb{Z}/4$ of order four. Th
 
 **The difference.** $G$ and $P_2$ are not isomorphic, although both are built on the same symplectic space. $G$ has order $32$, centre of order $2$ and $G'=\{\pm I\}$; it is extraspecial and nonabelian. $P_2$ has order $64$ and centre $\mathbb{Z}/4$; its quotient by $\{\pm I\}$ is elementary abelian of order $32$, so $P_2$ is not extraspecial. The two share the symplectic space $(\mathbb{Z}/2)^{4}$ of the quotient by the centre, but the kernels of the central extensions differ: $\mathbb{Z}/2$ for $G$ and $\mathbb{Z}/4$ for $P_2$. The group of the two-sided matrices is therefore not the two-qubit Pauli group; it is the extraspecial double cover of the four-dimensional symplectic space over $\mathbb{F}_2$.
 
-**The physical interpretation.** The nineteen elements of order two are the reflections of the two-sided frame; the twelve elements of order four are the quarter turns; the unique four-dimensional representation is the carrier of the algebra. The Clifford frame — five of the sixteen cells, up to $i$ — of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* is a different set of generators of the same algebra, and the comparison of $G$ with the Pauli group is the discrete side of the comparison of the two frames.
+**The physical interpretation.** The nineteen elements of order two are the reflections of the two-sided frame; the twelve elements of order four are the quarter turns; the unique four-dimensional representation is the carrier of the algebra. The gamma set — five of the sixteen cells, up to $i$ — of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* is a different set of generators of the same algebra, and the comparison of $G$ with the Pauli group is the discrete side of the comparison of the two generating sets.
 
 ## Summary
 
@@ -199,6 +199,6 @@ The thirty-two matrices $\pm T_{\mu\nu}$ form a group $G$ of order $32$, the cen
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the left, right and sandwich operators.
 - [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the explicit matrices.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the two commuting factors.
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the Clifford frame.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma set.
 - Daniel Gorenstein, *Finite Groups* (Harper and Row, 1968), for extraspecial groups and their representations.
 - I. Martin Isaacs, *Character Theory of Finite Groups* (Dover, 1994), for the character count and the degrees.

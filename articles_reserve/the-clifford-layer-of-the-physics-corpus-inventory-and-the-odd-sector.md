@@ -395,3 +395,135 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 ## Conclusion
 
 **The Clifford layer is the cell layer.** The five generators are five cells, the sixteen products are the sixteen cells, and the cell algebra is the biquaternion algebra acting on itself on both sides. Every article in the cell algebra can therefore carry the cell equality beside its gammas: 52 with one term, 52 with several, and 13 of the latter with a proof to recompute. One article uses the bioctonions and lies outside the sixteen cells by construction. Nothing is deleted from the formulas: the gamma side stays, and the cell side is added. The gamma matrices are a basis, not a boundary. The odd sector is a second action, not a foreign body.
+
+## Appendix — The Migration Method: From the Gamma Frame to $\mathbb{B}$ and a Chirality {#the-migration-method}
+
+**The second equality was the first rung, not the destination.** The pass of §*The Method* keeps every gamma and adds the cell beside it. That rule is deliberately conservative: it makes the correspondence visible without touching a formula that a reader may still need in the literature's notation. It is also the safe half of a longer migration. Once the cell side is verified, the gamma side can be withdrawn, one level at a time, and the article can be written in the algebra's own data. This appendix states that method.
+
+**The diagnosis.** The gamma matrices are a **frame** of $\operatorname{End}_\mathbb{C}(\mathbb{B})$, not a basis of it, and a frame is the weakest kind of data the algebra admits. Four defects, each a count or a theorem.
+
+- **They are redundant.** A basis of $M_4(\mathbb{C})$ has sixteen elements. The frame supplies five generators and a multiplication rule; the basis it induces is the sixteen antisymmetrised products, not the five. Calling the five "the basis" hides the count $1+4+6+4+1=16$ and hides which product is which cell.
+- **They are not canonical.** Every frame is $S\gamma_\mu S^{-1}$ for $S\in GL_4(\mathbb{C})$, and the frames form a principal bundle over the space of metrics. The physics chooses a section; the algebra does not. A statement that names $\gamma_0$ names the section.
+- **They re-encode a metric the algebra already carries.** The Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf 1$ reads back the signature. In $\mathbb{B}$ the signature is already in the units, $e_t^2=\mathbf 1$ and $e_k^2=-\mathbf 1$. The anticommutator adds a second copy of data that the multiplication already fixes.
+- **They are blind to eleven of the sixteen cells.** The five gammas are five cells up to $i$ (the dictionary below). The other eleven — the mass block, the two-sided operators, the Peirce corners — do not appear in the list. A reader of a gamma display cannot see which cell carries the mass or which carries the grading. A cell names its two blocks, $T_{a,b}$, in its own symbol; a gamma does not.
+
+**What is not claimed.** The gamma frame is not wrong. It is a valid frame, and the literature speaks it. The migration does not delete the physics and does not dispute a single gamma identity. It changes the primary data and the default display. The Conclusion's phrase "a basis, not a boundary" is exact about the boundary: the gamma frame bounds nothing. It is shorthand about the basis: the basis is the sixteen products, and the five are the frame that generates it.
+
+### The target data
+
+**The carrier.** The Dirac spinor is $\mathbb{B}$ as a four-dimensional complex vector space, not $\mathbb{C}^4$ with a chosen column. The left regular action is the spinor action; no minimal left ideal and no column have to be selected.
+
+**The algebra.** The left and right actions together generate the endomorphisms,
+$$
+\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C}),
+$$
+with the sixteen cells
+$$
+T_{a,b}=L_aR_b,\qquad T_{a,b}T_{c,d}=T_{ac,db},\qquad \operatorname{tr}T_{a,b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b).
+$$
+These sixteen are the canonical basis: one cell per pair of units, no frame chosen, no product to expand.
+
+**The chirality.** One involution on the carrier,
+$$
+\Gamma^2=\mathbf 1,\qquad \operatorname{tr}\Gamma=0,\qquad P_\pm=\tfrac12(\mathbf 1\pm\Gamma),\qquad \operatorname{rank}P_\pm=2,
+$$
+with the standard root $H_0=\operatorname{diag}(1,i,-1,-i)$ and $\Gamma_0=H_0^2=\operatorname{diag}(1,-1,1,-1)$. The invariant content is the $2+2$ split; the array is one representative. The involution grades the endomorphisms into the part that commutes with $\Gamma$ and the part that anticommutes with it, and the odd part is exactly the block that maps one chirality to the other.
+
+**Why the pair is complete.** $\mathbb{B}$ supplies the carrier and the even action; $\mathbb{B}^{\mathrm{opp}}$ supplies the right action; $\Gamma$ supplies the grading. Together they give $\operatorname{End}_\mathbb{C}(\mathbb{B})$ in full. The five gammas are a generating set of the same algebra, chosen inside one frame; they add no structure that the triple $(\mathbb{B},\mathbb{B}^{\mathrm{opp}},\Gamma)$ lacks.
+
+**The dictionary**, in the canonical frame,
+$$
+\gamma_0=iT_{e_t,e_x},\quad \gamma_1=iT_{e_x,e_y},\quad \gamma_2=iT_{e_y,e_y},\quad \gamma_3=iT_{e_z,e_y},\quad \gamma_5=-iT_{e_t,e_z}.
+$$
+
+**One symbol, three roles.** The replacement of $\gamma_5$ is the test case, because it is where "$\mathbb{B}$ and a chirality" differs from "five gammas".
+
+| role of the symbol | what is written | why |
+|---|---|---|
+| a cell | $-iT_{e_t,e_z}$ | the multiplication is what the display uses |
+| a grading | $\Gamma$ and $P_\pm$ | the split is the invariant, the array is not |
+| a historical name | $\gamma_5$ in apposition | the literature pointer is kept, the definition is not |
+
+The square is a one-line check of the cell reading:
+$$
+(-iT_{e_t,e_z})^2=-T_{e_t,-e_t}=T_{e_t,e_t}=\mathbf 1 .
+$$
+The projector is then $\tfrac12(\mathbf 1\mp iT_{e_t,e_z})$, which is not a cell: two terms, as §*The Method* says. The involution $\Gamma$ is the same statement without the frame.
+
+### The five levels
+
+**The ladder.** The migration is progressive because each level is verifiable on its own and because no article may skip one. A level closes for the whole corpus before the next opens.
+
+| level | what changes | rule | gate |
+|---|---|---|---|
+| 0 | inventory | scan the mathematics regions, count the gamma tokens, classify by role | one sheet per article |
+| 1 | leaves | a lone generator gains its cell | every generator has a cell; $\gamma_k^2=-\mathbf 1$ in the $\mathbb{M}_-$ frame |
+| 2 | products | a product collapses to one cell; a trace to $4\,\mathrm{Sc}\otimes\mathrm{Sc}$ | all sixteen products and the trace orthogonality |
+| 3 | derived objects | $\gamma_5\to\Gamma$ or $-iT_{e_t,e_z}$; $P_\pm$; the adjoint | $\Gamma^2=\mathbf 1$, $\operatorname{tr}\Gamma=0$, rank $2$ |
+| 4 | frames | one frame per contraction; the derivative as a four-term sum | the d'Alembertian in both frames |
+| 5 | scaffolding | the $4\times4$ arrays and the "choose $\gamma_0$" step are removed; one display stays as a remark | no statement depends on a matrix entry |
+
+**Level 0 is the same screen as the upper-index audit.** Only the mathematics regions count; a token is a gamma only if it is a generator or a product, not the word in a sentence. The sheet records the file, the count, the objects and the class. The counts of §*The Counts* are the level-0 sheet of this corpus: 107 users, 3 already patched, 104 in the inventory, 52 one-term, 51 multi-term, 13 dagger, 22 explicit displays.
+
+**Level 1 is mechanical.** The dictionary is a substitution, and a substitution is safe only if the frame is fixed once per article. The frame is written at the first display, not inferred at each line. In the $\mathbb{B}$ frame the spatial generators carry an extra $i$ and all four square to $+\mathbf 1$; the gate is read in the frame the article states.
+
+**Level 2 is arithmetic in the cells.** The product rule replaces a matrix multiplication, and the trace rule replaces a trace. No $4\times4$ array is multiplied at any point of the migration.
+
+**Level 3 is editorial.** $\Gamma$ is not a gamma and the adjoint is not $\gamma_0$. The adjoint needs the real structure, which is extra data: over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, so the identity is a statement about the complexification. The article says so once, and the dagger marks it.
+
+**Level 4 is where frames are easy to mix.** The $\mathbb{B}$ frame and the $\mathbb{M}_-$ frame are two readings of one operator, and a contraction stays inside one. The derivative is the four-term sum of §*The Method*; the mass term is a left multiplication and carries no frame.
+
+**Level 5 is the only level that deletes.** A display is removed only after the cell equality beside it has passed level 3, and only if no sentence depends on a matrix entry. The historical display stays as one remark, so a reader of the gamma literature can still translate.
+
+### The rewrite table
+
+| gamma form | target | condition | check |
+|---|---|---|---|
+| $\gamma_\mu$ | $iT_{e_\mu,e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | canonical frame | $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ |
+| $\gamma_\mu\gamma_\nu$, $\mu\ne\nu$ | $\pm T_{a,b}$ | one cell | the sixteen products |
+| $\gamma_5$ | $\Gamma$ or $-iT_{e_t,e_z}$ | grading or cell | $\Gamma^2=\mathbf 1$ |
+| $P_\pm$ | $\tfrac12(\mathbf 1\pm\Gamma)$ | — | rank $2$ |
+| $\operatorname{tr}$ | $4\,\mathrm{Sc}\otimes\mathrm{Sc}$ | — | trace orthogonality |
+| $\bar\psi=\psi^\dagger\gamma_0$ | the algebra dagger | over $\mathbb{C}$; declare $\mathbb{R}$ | the real structure |
+| $\gamma_\mu\partial/\partial Q_\mu$ | $i\partial_t\psi\,e_x+i\sum_k e_k\partial_k\psi\,e_y$ | one frame | the d'Alembertian |
+
+**A form not in the table is not rewritten by the batch.** It is listed, and it waits for a hand.
+
+### The operational pipeline
+
+**The scan.** The mathematics regions are extracted, the gamma tokens are matched, and each is classified by its role: array, generator, product, derived object, prose. The output is a per-article sheet, not a global count; a global count cannot say which file is safe.
+
+**The batch.** Only the mechanical rows of the table run unattended. The batch writes the cell beside the gamma, never in place of it. The structural rows — $\Gamma$, the adjoint, a proof — are written by hand, because they change a statement and not a symbol.
+
+**The guard.** A file is skipped, and recorded as skipped, if one display mixes two frames, if a product needs a cell whose $a,b$ are not named, or if the gamma occurs only in prose. A skipped file is not a failed file; it is a file at a lower level.
+
+**The recount.** After each batch the scan runs again. The gamma count must not increase, the cell-equalities count must not decrease, no new mixed frame may appear, and no upper index may appear. A file whose count moves the wrong way is reverted before the next article is touched.
+
+**The commit.** One commit per level, one article per diff. The message names the level and the article, so a rollback is a revert and not an archaeology.
+
+### Failure modes
+
+| failure | symptom | test |
+|---|---|---|
+| a phase sign | $\gamma_k^2=+\mathbf 1$ | the square of every generator |
+| a mixed frame | a $Q$ derivative beside an $x$ generator | one frame per contraction |
+| a $\gamma_5$ sign | the projector has rank $0$ or $4$ | $\operatorname{rank}P_\pm=2$ |
+| $\Gamma$ treated as central | a chiral eigenspace called an ideal | $\Gamma$ is an involution, not a scalar |
+| the real structure skipped | a Majorana or CPT identity over $\mathbb{R}$ | the dagger mark and the complexification |
+| prose over-replacement | a pointer replaced by a cell | the structural test of §*The Patched Articles* |
+
+**The one gap.** Over $\mathbb{R}$ the equality between the gamma span and the cell span does not hold: $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ against $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$. The migration is therefore a complexified statement wherever a real structure is used, and the article must say so at that point. This is bookkeeping, not an obstruction; the counts of §*The Counts* already separate the 13 dagger articles for it.
+
+### What the migration buys
+
+**The frame leaves the statement.** A formula written in cells names no section, no $\gamma_0$ and no column. The same formula in gammas names all three.
+
+**The chirality becomes an involution.** $\Gamma^2=\mathbf 1$, $\operatorname{tr}\Gamma=0$, rank $2$: a statement about the carrier, not about a product of four matrices.
+
+**The metric stays where it was.** The signature is in $e_t^2=\mathbf 1$ and $e_k^2=-\mathbf 1$; removing the anticommutator removes a duplicate, not the metric.
+
+**The sixteen cells become visible.** The mass block, the two-sided operators and the Peirce corners are cells in the same list as the generators, not products that appear only after a multiplication.
+
+**The cost is the same as before.** A multi-term equality is longer than a one-term one, the dictionary is written once per article, and the gamma column stays as the translation for the literature. The migration lowers the number of symbols and raises the number of terms; it does not lower the number of pages.
+
+**The order is the method.** Leaves, products, derived objects, frames, scaffolding: each level is a proof that the next one is safe. The second equality established the dictionary and the cell side without committing to a deletion. The remaining levels apply the same rule until the gamma side is a remark.

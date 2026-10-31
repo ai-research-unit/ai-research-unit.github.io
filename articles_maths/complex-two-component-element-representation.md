@@ -12,12 +12,12 @@ The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, 
 **Definition.** The **two-component vector** of a complex number $Q = q + i q'$ is the ordered pair
 
 $$
-Q^\mu = (Q^0, Q^1) = (q, q') \in \mathbb{R}^2,
+Q_\mu = (Q_0, Q_1) = (q, q') \in \mathbb{R}^2,
 $$
 
-with $Q^0 = q$ the **real component** and $Q^1 = q'$ the **imaginary component**. The two components are **real** numbers: the realization carries two real coordinates, equivalently one complex coordinate, and it is the direct reading of the developed form of $Q$.
+with $Q_0 = q$ the **real component** and $Q_1 = q'$ the **imaginary component**. The two components are **real** numbers: the realization carries two real coordinates, equivalently one complex coordinate, and it is the direct reading of the developed form of $Q$.
 
-**Proposition.** The map $Q \mapsto (Q^0, Q^1)$ is an $\mathbb{R}$-linear isomorphism $\mathbb{C} \to \mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and complex dimension $1$.
+**Proposition.** The map $Q \mapsto (Q_0, Q_1)$ is an $\mathbb{R}$-linear isomorphism $\mathbb{C} \to \mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and complex dimension $1$.
 
 **Proof.** The map sends the basis $1, i$ to the standard basis $(1,0)$, $(0,1)$ of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases.
 
@@ -25,25 +25,25 @@ The coefficient space $\mathbb{R}^2$ is **not** a complex vector space in a cano
 
 ### The Two Components and Their Real Parts
 
-The two components are $Q^0 = q$ and $Q^1 = q'$, both real; there is no further split into real and imaginary parts, because the split has already been performed. The two distinguished subspaces are read directly from the components:
+The two components are $Q_0 = q$ and $Q_1 = q'$, both real; there is no further split into real and imaginary parts, because the split has already been performed. The two distinguished subspaces are read directly from the components:
 
-- the real subspace $\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $Q^1 = 0$;
-- the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $Q^0 = 0$.
+- the real subspace $\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $Q_1 = 0$;
+- the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $Q_0 = 0$.
 
-The norm does not decompose further: it is the positive-definite expression $(Q^0)^2 + (Q^1)^2$ in the two real coordinates.
+The norm does not decompose further: it is the positive-definite expression $(Q_0)^2 + (Q_1)^2$ in the two real coordinates.
 
 ## The Column and the Row
 
 **Definition.** The **column** of $Q$ is the $2 \times 1$ matrix
 
 $$
-Q = \begin{pmatrix} Q^0 \\ Q^1 \end{pmatrix} = \begin{pmatrix} q \\ q' \end{pmatrix},
+Q = \begin{pmatrix} Q_0 \\ Q_1 \end{pmatrix} = \begin{pmatrix} q \\ q' \end{pmatrix},
 $$
 
 and the **row** of $Q$ is its transpose
 
 $$
-Q^{\mathsf{T}} = \begin{pmatrix} Q^0 & Q^1 \end{pmatrix} = \begin{pmatrix} q & q' \end{pmatrix}.
+Q^{\mathsf{T}} = \begin{pmatrix} Q_0 & Q_1 \end{pmatrix} = \begin{pmatrix} q & q' \end{pmatrix}.
 $$
 
 The column is the transcribed form of the pair, convenient because the product is bilinear. For a fixed $Q$, the map $Q_1 \mapsto QQ_1$ sends coefficients linearly to coefficients, so it is an $\mathbb{R}$-linear endomorphism of the coefficient space, and in the column convention it is written as a $2 \times 2$ matrix,
@@ -60,7 +60,7 @@ where $\mathsf{M}_2(Q) = \begin{pmatrix} q & -q' \\ q' & q \end{pmatrix}$ is the
 
 **Proposition (the product in components).** Let $Q = (q,q')$ and $Q_1 = (q_1,q'_1)$. Then the product has components
 
-$$ \boxed{\;(QQ_1)^0 = q q_1 - q' q'_1, \qquad (QQ_1)^1 = q q'_1 + q' q_1 \;}.
+$$ \boxed{\;(QQ_1)_0 = q q_1 - q' q'_1, \qquad (QQ_1)_1 = q q'_1 + q' q_1 \;}.
 $$
 
 **Proof.** Expand $QQ_1 = (q+i q')(q_1+i q'_1) = q q_1 + i q q'_1 + i q' q_1 + i^2 q' q'_1 = (q q_1-q' q'_1) + (q q'_1+q' q_1)i$.
@@ -108,7 +108,7 @@ The complex algebra carries one nontrivial involution, complex conjugation. In c
 **Proposition (conjugation in coordinates).** For $Q = (q,q')$,
 
 $$
-(\bar Q)^\mu = (Q^0, -Q^1) = (q, -q').
+(\bar Q)_\mu = (Q_0, -Q_1) = (q, -q').
 $$
 
 **Proof.** $\bar Q = \overline{q+i q'} = q-i q'$, whose components are $(q,-q')$.
@@ -129,8 +129,8 @@ $$
 
 | subspace | coordinate condition | real basis | $\dim_{\mathbb{R}}$ |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}}$ | $Q^1 = 0$ | $1$ | $1$ |
-| $i\mathbb{R}_{\mathbb{C}}$ | $Q^0 = 0$ | $i$ | $1$ |
+| $\mathbb{R}_{\mathbb{C}}$ | $Q_1 = 0$ | $1$ | $1$ |
+| $i\mathbb{R}_{\mathbb{C}}$ | $Q_0 = 0$ | $i$ | $1$ |
 
 **Proof.** The condition $\bar Q = Q$ is $q' = 0$, and $\bar Q = -Q$ is $q = 0$; the two sets are the coordinate axes, of dimension one each.
 
@@ -141,12 +141,12 @@ The two conditions partition the two real coordinates, so the decomposition $\ma
 **Definition.** The **norm** of a complex number is
 
 $$
-\langle Q\rangle_{*} = Q\bar Q = (Q^0)^2 + (Q^1)^2 = q^2 + q'^2 \in \mathbb{R}.
+\langle Q\rangle_{*} = Q\bar Q = (Q_0)^2 + (Q_1)^2 = q^2 + q'^2 \in \mathbb{R}.
 $$
 
 In two-component form the norm has **both signs positive**.
 
-**Proposition.** For every $Q$, $Q\bar Q = (Q^0)^2 + (Q^1)^2$.
+**Proposition.** For every $Q$, $Q\bar Q = (Q_0)^2 + (Q_1)^2$.
 
 **Proof.** $(q+i q')(q-i q') = q^2 - (i q')^2 = q^2 + q'^2$.
 
@@ -172,7 +172,7 @@ Both restrictions are **positive definite**, of signature $(1,0)$, and the form 
 
 **Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then
 
-$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})^\mu = \left( \frac{Q^0}{\langle Q\rangle_{*}}, \, -\frac{Q^1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 \;}.
+$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})_\mu = \left( \frac{Q_0}{\langle Q\rangle_{*}}, \, -\frac{Q_1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 \;}.
 $$
 
 **Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'^2)$.
@@ -181,11 +181,11 @@ $$
 
 ## Summary
 
-The two-component realization reads a complex number $Q = q+i q'$ as its pair of real coordinates $(Q^0,Q^1) = (q,q')$, an $\mathbb{R}$-linear isomorphism onto $\mathbb{R}^2$. The column is the pair written vertically, the row is its dual by transposition, and because the algebra is commutative the left and right actions coincide and the row carries no separate right action.
+The two-component realization reads a complex number $Q = q+i q'$ as its pair of real coordinates $(Q_0,Q_1) = (q,q')$, an $\mathbb{R}$-linear isomorphism onto $\mathbb{R}^2$. The column is the pair written vertically, the row is its dual by transposition, and because the algebra is commutative the left and right actions coincide and the row carries no separate right action.
 
-The product in components is $(q q_1-q' q'_1, q q'_1+q' q_1)$, the multiplication table of the basis being symmetric about the diagonal, and there is no antisymmetric term: its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(Q) = rR_\theta$, the scale times the rotation. The conjugation acts by $(q,q') \mapsto (q,-q')$, a reflection of the plane; its fixed subspace is the real axis $Q^1 = 0$ and its anti-fixed subspace the imaginary axis $Q^0 = 0$, each of real dimension one.
+The product in components is $(q q_1-q' q'_1, q q'_1+q' q_1)$, the multiplication table of the basis being symmetric about the diagonal, and there is no antisymmetric term: its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(Q) = rR_\theta$, the scale times the rotation. The conjugation acts by $(q,q') \mapsto (q,-q')$, a reflection of the plane; its fixed subspace is the real axis $Q_1 = 0$ and its anti-fixed subspace the imaginary axis $Q_0 = 0$, each of real dimension one.
 
-The norm is $\langle Q\rangle_{*} = (Q^0)^2 + (Q^1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'^2)$.
+The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive. Its restrictions to the two subspaces are $q^2$ and $q'^2$, both positive definite, so the form is definite. The invertibility criterion is $(q,q') \neq (0,0)$, and the inverse in coordinates is $(q,-q')/(q^2+q'^2)$.
 
 ## Summary of Notation
 
@@ -193,15 +193,15 @@ The norm is $\langle Q\rangle_{*} = (Q^0)^2 + (Q^1)^2$, with both signs positive
 |---|---|
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q = q+i q'$ | a complex number |
-| $Q^\mu = (Q^0, Q^1) = (q,q')$ | the two-component vector, both components real |
-| $Q^0 = q$, $Q^1 = q'$ | real and imaginary components |
-| $Q = \begin{pmatrix} Q^0 \\ Q^1 \end{pmatrix}$, $Q^{\mathsf{T}}$ | the column and the row |
-| $(QQ_1)^\mu = (q q_1-q' q'_1, q q'_1+q' q_1)$ | the product in components |
+| $Q_\mu = (Q_0, Q_1) = (q,q')$ | the two-component vector, both components real |
+| $Q_0 = q$, $Q_1 = q'$ | real and imaginary components |
+| $Q = \begin{pmatrix} Q_0 \\ Q_1 \end{pmatrix}$, $Q^{\mathsf{T}}$ | the column and the row |
+| $(QQ_1)_\mu = (q q_1-q' q'_1, q q'_1+q' q_1)$ | the product in components |
 | $\mathsf{M}_2(Q) = qI + q'J$ | the regular matrix acting on the column |
 | $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of a unit $u = \cos\theta + i\sin\theta$ |
 | $\bar Q \leftrightarrow (q,-q')$ | conjugation in coordinates |
-| $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q^1=0$ and imaginary axis $Q^0=0$ |
-| $\langle Q\rangle_{*} = (Q^0)^2+(Q^1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |
+| $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q_1=0$ and imaginary axis $Q_0=0$ |
+| $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |
 | $Q^{-1} = (q,-q')/\langle Q\rangle_{*}$ | the inverse in coordinates |
 
 ## Further Reading

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Dirac algebra is the Clifford algebra of the Minkowski form. Over the complex numbers it is the full matrix algebra:
+The Dirac algebra is the Clifford algebra of the Minkowski form. The article keeps its earlier title; the object it studies is the gamma set, not a frame of the algebra. Over the complex numbers the algebra is the full matrix algebra:
 
 $$
 \mathrm{Cl}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C}),
@@ -14,9 +14,9 @@ $$
 I,\quad\gamma_{\mu},\quad\gamma_{\mu\nu},\quad\gamma_{\mu\nu\rho},\quad\gamma_{5}
 $$
 
-are a basis of it. The gamma frame is therefore a **frame inside** the algebra of this category, not a different algebra: a choice of five elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, from which the whole sixteen-dimensional algebra is generated.
+are a basis of it. The gamma set is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, together with their product $\gamma_5$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
 
-This article states the Clifford algebra, its complexification, the gamma relations and the chirality, the basis theorem for the antisymmetrised products, the place of the five gammas among the sixteen two-sided operators $T_{\mu\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
+This article states the Clifford algebra, its complexification, the gamma relations and the chirality, the basis theorem for the antisymmetrised products, the place of the five gammas among the sixteen two-sided operators $T_{\mu\nu}$, the non-canonicity of the set, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
 
 ## The Clifford Algebra
 
@@ -145,7 +145,7 @@ $$
 T_{\mu\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
 $$
 
-acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The Clifford frame is a second basis, of a different shape: five generators and their antisymmetrised products, against the sixteen two-sided operators.
+acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The gamma set is a generating set of a different shape: four generators, their product $\gamma_5$, and their antisymmetrised products, against the sixteen two-sided operators.
 
 **The dictionary.** In the coefficient frame of the method article, the five gamma matrices are scalar multiples of five of the sixteen $T_{\mu\nu}$: the four vector gammas and the chirality are five elements of the two-sided basis, up to the scalar $i$. The remaining eleven two-sided operators are the bivectors, the trivectors and the scalar of the Clifford basis; the bivectors are the six antisymmetric products $\gamma_{\mu\nu}$, the trivectors the four $\gamma_{\mu\nu\rho}$, and the scalar the identity. The two bases are related by a linear change of frame in the sixteen-dimensional space.
 
@@ -191,7 +191,7 @@ $$
 
 with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity: an even element need not commute with $u$, and the reflection it induces on the bivectors is part of the multiplication.
 
-**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The Clifford frame uses the whole algebra, not one factor: the bivectors mix the two images, and the chirality $\gamma_{5}$ is a product of four gammas that also mixes them.
+**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The gamma set uses the whole algebra, not one factor: the bivectors mix the two images, and the chirality $\gamma_{5}$ is a product of four gammas that also mixes them.
 
 **The terminology.** $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$; it is the endomorphism algebra $\operatorname{End}_\mathbb{C}(\mathbb{B})$, not $\mathbb{B}$. The biquaternion algebra is a four-dimensional subalgebra, the left factor; the Clifford algebra is the sixteen-dimensional ambient algebra, generated by five elements of it. The phrase "the Clifford layer" names the choice of those five elements and their antisymmetrised products, not a different algebra.
 

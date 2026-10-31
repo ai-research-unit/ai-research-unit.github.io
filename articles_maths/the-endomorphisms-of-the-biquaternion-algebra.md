@@ -374,9 +374,9 @@ so every eigenvalue of $\mathsf{M}_2(\tilde Q_1)$ occurs twice. Hence $\operator
 
 **Why the two regular families are mutual commutants.** An operator commuting with every left multiplication is a right multiplication, and conversely. The proof is the two-line evaluation at $e_t$ of §*The Double Centraliser*, and it does not use matrices.
 
-**Why there is no canonical matrix form.** The operator space is canonical, but the identification with $M_4(\mathbb{C})$ needs a basis. The coefficient basis and the Peirce basis are two bases of $\mathbb{B}$, and they give two conjugate matrix algebras; a gamma frame — five of the sixteen cells, up to $i$ — is a further choice inside the operator algebra, not a basis of the carrier. A statement that survives a change of basis is a statement about operators; one that does not is a statement about a table.
+**Why there is no canonical matrix form.** The operator space is canonical, but the identification with $M_4(\mathbb{C})$ needs a basis. The coefficient basis and the Peirce basis are two bases of $\mathbb{B}$, and they give two conjugate matrix algebras; a gamma set — five of the sixteen cells, up to $i$ — is a further choice inside the operator algebra, not a basis of the carrier. A statement that survives a change of basis is a statement about operators; one that does not is a statement about a table.
 
-**What the view does not supply.** It supplies no multiplication on the carrier, no gamma frame (no five cells singled out up to $i$), no form, no norm, no grading and no physical interpretation. Those are further structures on the operator space, and each is a choice. The endomorphism view is the layer below them: it says which space the choices are made in.
+**What the view does not supply.** It supplies no multiplication on the carrier, no gamma set (no five cells singled out up to $i$), no form, no norm, no grading and no physical interpretation. Those are further structures on the operator space, and each is a choice. The endomorphism view is the layer below them: it says which space the choices are made in.
 
 ## Worked Example
 
@@ -444,7 +444,7 @@ The complex-linear maps of the biquaternion algebra into itself form the endomor
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the matrix algebra and the distinction from the regular model
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ and its criteria
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the construction from $L_{\tilde Q_1}$ and $R_{\tilde Q_2}$ and the sixteen matrices
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma frame and the product question
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the tables, the gamma set and the product question
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the general ambient space and the subspace-group rule
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the double centraliser of the regular bimodule

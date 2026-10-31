@@ -18,12 +18,12 @@ This article presents the **four-vector realization** of $\mathbb{H}_{\mathrm{s}
 **Definition.** The **four-vector** of a split-quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ is the ordered quadruple
 
 $$
-\tilde q^\mu = (q_t, q_x, q_y, q_z), \qquad \tilde q^0 = q_t, \quad (\tilde q^1, \tilde q^2, \tilde q^3) = (q_x, q_y, q_z),
+\tilde q_\mu = (q_t, q_x, q_y, q_z), \qquad \tilde q_0 = q_t, \quad (\tilde q_1, \tilde q_2, \tilde q_3) = (q_x, q_y, q_z),
 $$
 
-where $\tilde q^0$ is the **scalar component** and $\tilde q^1, \tilde q^2, \tilde q^3$ are the **vector components**. Unlike the biquaternion case, every component is a real number, because $\mathbb{H}_{\mathrm{s}}$ has no central imaginary unit and no complex structure.
+where $\tilde q_0$ is the **scalar component** and $\tilde q_1, \tilde q_2, \tilde q_3$ are the **vector components**. Unlike the biquaternion case, every component is a real number, because $\mathbb{H}_{\mathrm{s}}$ has no central imaginary unit and no complex structure.
 
-**Proposition.** The map $\tilde q \mapsto \tilde q^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{H}_{\mathrm{s}}$ onto $\mathbb{R}^4$. Consequently the coefficient space has real dimension $4$.
+**Proposition.** The map $\tilde q \mapsto \tilde q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{H}_{\mathrm{s}}$ onto $\mathbb{R}^4$. Consequently the coefficient space has real dimension $4$.
 
 **Proof.** The map sends the basis $1, \vec e_x, \vec e_y, \vec e_z$ to the standard basis of $\mathbb{R}^4$ and is extended by linearity; it is bijective on bases.
 
@@ -51,7 +51,7 @@ So the row is the dual vector paired with the column through $G$, and the two ar
 
 ## Multiplication in Components
 
-Since $\tilde q \mapsto \tilde q^\mu$ is a linear isomorphism and the product is bilinear, the product of two split-quaternions is determined by its value on the basis. The **multiplication table** of the basis, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is
+Since $\tilde q \mapsto \tilde q_\mu$ is a linear isomorphism and the product is bilinear, the product of two split-quaternions is determined by its value on the basis. The **multiplication table** of the basis, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is
 
 | | $1$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
@@ -78,7 +78,7 @@ The scalar component of the product, $q_{1t} q_{2t} - q_{1x} q_{2x} + q_{1y} q_{
 
 The three involutions act on the four-vector by independent sign changes of the last three components:
 
-| involution | $\tilde q^0 = q_t$ | $\tilde q^1 = q_x$ | $\tilde q^2 = q_y$ | $\tilde q^3 = q_z$ |
+| involution | $\tilde q_0 = q_t$ | $\tilde q_1 = q_x$ | $\tilde q_2 = q_y$ | $\tilde q_3 = q_z$ |
 |---|---|---|---|---|
 | conjugation ${}^{\natural}$ | $+$ | $-$ | $-$ | $-$ |
 | principal $\alpha$ | $+$ | $-$ | $-$ | $+$ |
@@ -92,12 +92,12 @@ The four distinguished subspaces are cut out by coordinate conditions:
 
 | subspace | coordinate condition | four-vectors |
 |---|---|---|
-| $S$ | $\tilde q^1 = \tilde q^2 = \tilde q^3 = 0$ | $(q_t,0,0,0)$ |
-| $V$ | $\tilde q^0 = 0$ | $(0,q_x,q_y,q_z)$ |
-| $\mathbb{D}_2$ | $\tilde q^1 = \tilde q^3 = 0$ | $(q_t,0,q_y,0)$ |
-| $\mathbb{D}_3$ | $\tilde q^1 = \tilde q^2 = 0$ | $(q_t,0,0,q_z)$ |
+| $S$ | $\tilde q_1 = \tilde q_2 = \tilde q_3 = 0$ | $(q_t,0,0,0)$ |
+| $V$ | $\tilde q_0 = 0$ | $(0,q_x,q_y,q_z)$ |
+| $\mathbb{D}_2$ | $\tilde q_1 = \tilde q_3 = 0$ | $(q_t,0,q_y,0)$ |
+| $\mathbb{D}_3$ | $\tilde q_1 = \tilde q_2 = 0$ | $(q_t,0,0,q_z)$ |
 
-So the scalar subspace is the first coordinate axis, the vector subspace is the hyperplane $\tilde q^0 = 0$, and the two split-complex planes are the coordinate planes $(q_t,q_y)$ and $(q_t,q_z)$. The fourth coordinate plane, $(q_t,q_x)$, is the definite plane $\mathbb{R}[\vec e_x] \cong \mathbb{C}$, which is not among the four distinguished subspaces. The involutions of the previous section preserve each of these coordinate conditions, as the sign table shows.
+So the scalar subspace is the first coordinate axis, the vector subspace is the hyperplane $\tilde q_0 = 0$, and the two split-complex planes are the coordinate planes $(q_t,q_y)$ and $(q_t,q_z)$. The fourth coordinate plane, $(q_t,q_x)$, is the definite plane $\mathbb{R}[\vec e_x] \cong \mathbb{C}$, which is not among the four distinguished subspaces. The involutions of the previous section preserve each of these coordinate conditions, as the sign table shows.
 
 ## The Split-Quaternion Norm
 
@@ -146,7 +146,7 @@ The biquaternion article *The Biquaternion Algebra*, §*The Coordinate Systems*,
 
 The four-vector realization reads a split-quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ as the quadruple $(q_t,q_x,q_y,q_z) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $\langle\cdot,\cdot\rangle_{\natural}$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
 
-The product is computed in components by the displayed formula, whose scalar part is $\langle\tilde q_1,\tilde q_2^{\natural}\rangle$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_x,q_y,q_z)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_t$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_t,q_y)$-, $(q_t,q_z)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$, restricting to $q_t^2$, $q_x^2-q_y^2-q_z^2$, $q_t^2-q_y^2$ and $q_t^2-q_z^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
+The product is computed in components by the displayed formula, whose scalar part is $\langle\tilde q_1,\tilde q_2^{\natural}\rangle$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_x,q_y,q_z)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_t$-axis ($S$), $\tilde q_0=0$ ($V$), and the $(q_t,q_y)$-, $(q_t,q_z)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$, restricting to $q_t^2$, $q_x^2-q_y^2-q_z^2$, $q_t^2-q_y^2$ and $q_t^2-q_z^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
 
 ## Summary of Notation
 
@@ -154,8 +154,8 @@ The product is computed in components by the displayed formula, whose scalar par
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | *Split-Quaternion Algebra* |
-| $\tilde q^\mu = (q_t,q_x,q_y,q_z)$ | the four-vector of $\tilde q$ | this article |
-| $\tilde q^0 = q_t$, $(\tilde q^1,\tilde q^2,\tilde q^3) = (q_x,q_y,q_z)$ | the scalar and vector components | this article |
+| $\tilde q_\mu = (q_t,q_x,q_y,q_z)$ | the four-vector of $\tilde q$ | this article |
+| $\tilde q_0 = q_t$, $(\tilde q_1,\tilde q_2,\tilde q_3) = (q_x,q_y,q_z)$ | the scalar and vector components | this article |
 | $X$, $X^{\mathsf{T}}$ | the column and the dual row | this article |
 | $G = \operatorname{diag}(1,1,-1,-1)$ | the matrix of the polarised form in coordinates | this article |
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |

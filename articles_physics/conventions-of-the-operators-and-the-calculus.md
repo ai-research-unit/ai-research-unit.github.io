@@ -23,7 +23,7 @@ The article assumes the base of *Conventions in the Biquaternion Universe*, the 
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.
 
-**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis and the cell table of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*; the gamma frame is five of them up to $i$, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$.
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis and the cell table of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*; the gamma set is five of them up to $i$, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$.
 
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 

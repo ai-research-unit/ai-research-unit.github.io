@@ -230,7 +230,7 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\psi$, $\bar\psi=\psi^\dagger\gamma_0$ | Spinor-module representative and its adjoint |
 | $\gamma_\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Gamma matrices and Clifford metric |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict'$ gradient |
-| $p^\mu=(E,\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
+| $p_\mu=(E,\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
 | $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=\gamma_{\mu} p_{\mu}+m$, $\sum_r v\bar v=\gamma_{\mu} p_{\mu}-m$ | Parent article's normalizations and spin sums |

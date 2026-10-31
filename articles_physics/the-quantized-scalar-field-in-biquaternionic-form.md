@@ -145,7 +145,7 @@ because every mode in the integral is on shell. The Feynman propagator is the ti
 
 $$
 \Delta_F(x-y)=\langle0|T\,\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle
-=\theta(x^0-y^0)W(x-y)+\theta(y^0-x^0)W(y-x),
+=\theta(x_0-y_0)W(x-y)+\theta(y_0-x_0)W(y-x),
 $$
 
 whose momentum-space form is
@@ -262,7 +262,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathcal{C}:\phi^{\mathrm{fop}}\mapsto\phi^{\mathrm{fop}\dagger}$ | Charge conjugation, $a^{\mathrm{fop}}\leftrightarrow b^{\mathrm{fop}}$, $Ϙ^{\mathrm{fop}}\mapsto-Ϙ^{\mathrm{fop}}$ |
 | $i\Delta(x-y)=[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)]$ | Commutator function (c-number) |
 | $W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle$ | Wightman function (positive frequency) |
-| $\Delta_F=\theta(x^0-y^0)W(x-y)+\theta(y^0-x^0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
+| $\Delta_F=\theta(x_0-y_0)W(x-y)+\theta(y_0-x_0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
 | $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P\rangle_{\natural}=-\mu^2$ |
 | $\tilde P=i\omega\,e_t+\vec p$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |

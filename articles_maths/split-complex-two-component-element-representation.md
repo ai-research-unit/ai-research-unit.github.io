@@ -14,12 +14,12 @@ The article owns the coefficient space $\mathbb{R}^2$, the column and the row, t
 **Definition.** The **two-component vector** of a split-complex number $Q = q+j q'$ is the ordered pair
 
 $$
-Q^\mu = (Q^0, Q^1), \qquad Q^0 = q, \quad Q^1 = q'.
+Q_\mu = (Q_0, Q_1), \qquad Q_0 = q, \quad Q_1 = q'.
 $$
 
-The coefficient of the unit is written $Q^0$ and the coefficient of $j$ is written $Q^1$; the component $Q^0$ is the **real component** and $Q^1$ the **imaginary component**. These are the honest names, because they are the coefficients of the real and imaginary parts of $Q$ and nothing else.
+The coefficient of the unit is written $Q_0$ and the coefficient of $j$ is written $Q_1$; the component $Q_0$ is the **real component** and $Q_1$ the **imaginary component**. These are the honest names, because they are the coefficients of the real and imaginary parts of $Q$ and nothing else.
 
-**Proposition.** The map $Q \mapsto Q^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
+**Proposition.** The map $Q \mapsto Q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
 
 **Proof.** The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.
 
@@ -70,7 +70,7 @@ so the two components of the product are the two entries of the matrix product $
 **Proposition (the product in components).** Let $Q, B$ have two-component vectors $(q, q')$ and $(b, b')$. Then the two-component vector of the product has components
 
 $$
-\boxed{\;(QB)^0 = q b + q' b', \qquad (QB)^1 = q b' + q' b\;}.
+\boxed{\;(QB)_0 = q b + q' b', \qquad (QB)_1 = q b' + q' b\;}.
 $$
 
 **Proof.** Expand $QB = (q+j q')(b+j b') = q b + q b' j + q' b j + q' b' j^2$ and use $j^2 = +1$ to collect the terms:
@@ -84,7 +84,7 @@ which is the displayed pair.
 **Comparison with the complex case.** For the complex number $Q = q+i q'$ with the complex unit $i^2 = -1$, the product with $B = b+i b'$ has components
 
 $$
-(QB)^0 = q b - q' b', \qquad (QB)^1 = q b' + q' b.
+(QB)_0 = q b - q' b', \qquad (QB)_1 = q b' + q' b.
 $$
 
 The two product rules differ **only** in the sign of the $q' b'$ term in the first component: the split-complex product adds $q' b'$, the complex product subtracts it. This single sign is the whole difference between the two algebras at the level of components, and it is the reason the split-complex norm is indefinite while the complex one is definite.
@@ -221,7 +221,7 @@ The two realizations share their coefficient space, their column and row, their 
 
 ## Summary
 
-A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)^0 = q b+q' b'$, $(QB)^1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of *Split-Complex Regular Element Representation*.
+A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of *Split-Complex Regular Element Representation*.
 
 The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
 
@@ -231,11 +231,11 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
 | $Q = q + j q'$ | General split complex number |
-| $Q^\mu = (Q^0, Q^1) = (q, q')$ | Two-component vector |
-| $Q^0 = q$, $Q^1 = q'$ | Real and imaginary components |
+| $Q_\mu = (Q_0, Q_1) = (q, q')$ | Two-component vector |
+| $Q_0 = q$, $Q_1 = q'$ | Real and imaginary components |
 | $Q = \begin{pmatrix} q \\ q' \end{pmatrix}$, $Q^{\mathsf{T}} = (q\ \ q')$ | Column and row |
 | $\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ | Left multiplication matrix |
-| $(QB)^0 = q b+q' b'$, $(QB)^1 = q b'+q' b$ | Component product rule |
+| $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$ | Component product rule |
 | $\overline{(q,q')} = (q,-q')$ | Conjugation in coordinates |
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{D}} = \{(q,0)\}$ | Fixed subspace, real axis |

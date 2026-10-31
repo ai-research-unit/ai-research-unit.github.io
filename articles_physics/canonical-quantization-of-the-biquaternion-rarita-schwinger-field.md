@@ -38,7 +38,7 @@ $$
 
 The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain, and it is what makes the field irreducible. The fully antisymmetric form of the Rarita–Schwinger equation, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$, whose variation gives the field equation and the constraint for $m\neq0$, is the standard Lagrangian origin of the two equations and is cited below; for the purposes of quantization the two equations above are the starting point.
 
-The gamma matrices are the $x$-frame set, and the derivative is $\partial/\partial x^\mu$ with $x^0=t'$. The $Q$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
+The gamma matrices are the set of the $\mathbb{M}_-$ frame, and the derivative is $\partial/\partial x^\mu$ with $x^0=t'$. The $\mathbb{B}$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
 
 ### Transversality from the Constraint
 

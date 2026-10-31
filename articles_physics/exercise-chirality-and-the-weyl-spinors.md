@@ -107,9 +107,9 @@ $$
 \left(\Box - m^2\right)\psi_L = 0,
 $$
 
-and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: when $m=0$ the coupling disappears, and each half separately obeys the massless wave equation; for $m\neq0$ it obeys the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct'$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial {t'}^2$, and nothing else changes.)
+and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: when $m=0$ the coupling disappears, and each half separately obeys the massless wave equation; for $m\neq0$ it obeys the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x_0 = ct'$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial {t'}^2$, and nothing else changes.)
 
-**Mass shell.** For a plane wave $\Psi\propto \exp(-ik_0x^0+i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,
+**Mass shell.** For a plane wave $\Psi\propto \exp(-ik_0x_0+i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,
 
 $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,

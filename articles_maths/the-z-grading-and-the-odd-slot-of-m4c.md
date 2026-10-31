@@ -8,7 +8,7 @@ The biquaternion algebra is the even part. Its product sees the parity and nothi
 
 The sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $T_{tx},T_{xy},T_{yy},T_{zy}$, a staircase, not a row or a column. The frame is the choice of that staircase.
 
-This article fixes the two gradings, describes the odd slot, gives the grade table of the sixteen two-sided operators, and states what the biquaternion product can and cannot see. The Clifford frame is *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
+This article fixes the two gradings, describes the odd slot, gives the grade table of the sixteen two-sided operators, and states what the biquaternion product can and cannot see. The gamma set is defined in *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
 
 ## The Two Gradings
 
@@ -219,7 +219,7 @@ and the five gammas are $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy
 
 ## Further Reading
 
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five gammas, the Clifford basis and the frame.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five gammas, the Clifford basis and the set.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $T_{\mu\nu}$ and their multiplication table.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$ and $T_{a,b}$.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even and odd slots of the envelope.

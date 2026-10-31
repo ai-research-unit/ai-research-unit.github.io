@@ -36,15 +36,15 @@ The $ict'$ convention is a precise expression of this union. It says: space and 
 
 ## What $ict'$ Does
 
-With the substitution $x^0 = ic_0\,t'$, the Minkowski interval becomes
+With the substitution $Q_t = ic_0\,t'$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes
 
 $$
-ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2,
+ds^2 = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2,
 $$
 
-which is the ordinary Euclidean quadratic form in four real variables. Three consequences follow.
+which is the ordinary Euclidean quadratic form in the four coordinates. Three consequences follow.
 
-**1. Lorentz transformations look like rotations.** A boost becomes a rotation in a plane mixing time and space, but with an **imaginary angle**. The mathematics of rotations — simpler than the mathematics of boosts — carries over almost unchanged. The Lorentz group $SO(3,1)$ is a real form of the complex rotation group $SO(4,\mathbb{C})$, and it acts on the variables $(x^0, x^1, x^2, x^3)$ through the complex rotations that preserve the Euclidean form.
+**1. Lorentz transformations look like rotations.** A boost becomes a rotation in a plane mixing time and space, but with an **imaginary angle**. The mathematics of rotations — simpler than the mathematics of boosts — carries over almost unchanged. The Lorentz group $SO(3,1)$ is a real form of the complex rotation group $SO(4,\mathbb{C})$, and it acts on the variables $(Q_t, Q_x, Q_y, Q_z)$ through the complex rotations that preserve the Euclidean form.
 
 **2. The wave equation becomes the Laplacian.** The d'Alembertian
 
@@ -52,10 +52,10 @@ $$
 \Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {t'}^2} + \nabla^2
 $$
 
-becomes, with $x^0 = ic_0 t'$,
+becomes, with $Q_t = ic_0 t'$,
 
 $$
-\boxed{\;\Box = \frac{\partial^2}{\partial (x^0)^2} + \nabla^2\;},
+\boxed{\;\Box = \frac{\partial^2}{\partial Q_t^2} + \nabla^2\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.
@@ -66,7 +66,7 @@ which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equation
 
 The switch away from $ict'$ happened for good technical reasons, and it is worth being precise about them before asking whether the insight survives.
 
-**1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $x^0 = ict'$ does for flat spacetime. The $ict'$ convention is tied to the existence of a global inertial frame.
+**1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t = ict'$ does for flat spacetime. The $ict'$ convention is tied to the existence of a global inertial frame.
 
 **2. Quantum field theory.** The Wick rotation $t' \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $ict'$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.
 
@@ -82,7 +82,7 @@ This article takes the second view. The technical problems are real, but they ar
 
 The arguments above are not the invention of this series. They were put and answered by others, and the exchange is worth recording, because it shows which parts of the case are contested and which are settled.
 
-The defence of $ict'$ rests on the observation that the substitution $x^0 = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\chi$ the identities
+The defence of $ict'$ rests on the observation that the substitution $Q_t = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\chi$ the identities
 
 $$
 \cos i\chi = \cosh\chi, \qquad \sin i\chi = i\sinh\chi
@@ -197,8 +197,8 @@ The program claims neither that real spacetime is wrong, nor that the imaginary 
 |---|---|
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
-| $x^0 = ict'$ | Complex time coordinate (local) |
-| $x^0 = ic_0 t'$ | Complex time coordinate (vacuum) |
+| $Q_t = ict'$ | Complex time coordinate (local) |
+| $Q_t = i c_0 t'$ | Complex time coordinate (vacuum) |
 | $v$ | Particle or frame velocity |
 
 ## Further Reading

@@ -221,9 +221,9 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
-The sixteen products of the five generators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three bases of the same complex algebra, related by a change of gamma basis; a change of gamma basis is a change of frame, not a change of object.
+The sixteen products of the five generators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three bases of the same complex algebra, related by a change of gamma basis; a change of gamma basis is a change of basis, not a change of object.
 
-**The gamma frame.** The five Dirac generators are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Differential Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
+**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Differential Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
 \boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
 \gamma_1=iL_xR_y=iT_{xy},\qquad
@@ -269,7 +269,7 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*A Gamma Frame, and the Choice Behind It* of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
+Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*The Gamma Set, and the Choice Behind It* of *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The gamma set is one set among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
 
@@ -277,10 +277,11 @@ Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; th
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
-A derivative contraction is $i\gamma_\mu\partial/\partial x^\mu$ with $x^0=t'$.
-If the $Q$ frame is used, it is written $\gamma_\mu(Q)\partial/\partial Q_\mu$ with the $Q$-frame generators,
-and never with the $x$-frame generators: the mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
-No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product.
+A derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
+in the $\mathbb{M}_-$ frame fixed in *Conventions of the Frames*.
+If the $\mathbb{B}$ frame is used, it is written $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Conventions of the Frames*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
 \gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
@@ -325,5 +326,5 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the gamma frames and the proof of the cell table.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the gamma frame, §*The Clifford Structure and the Gamma Matrices*.
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the gamma sets and the proof of the cell table.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the gamma set, §*The Clifford Structure and the Gamma Matrices*.

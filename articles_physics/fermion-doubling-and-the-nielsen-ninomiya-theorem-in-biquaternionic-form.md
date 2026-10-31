@@ -20,7 +20,7 @@ S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial_\mu - m\rig
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
-The lattice path integral is defined on the Euclidean section. Write $\gamma_0^{E}=\gamma_0$ and $\gamma_k^{E}=i\gamma_k$; then $(\gamma_\mu^{E})^2=+1$ and $\{\gamma_\mu^{E},\gamma_{\nu\}^{E}}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $Q$-frame of the biquaternion algebra. The Euclidean action is
+The lattice path integral is defined on the Euclidean section. Write $\gamma_0^{E}=\gamma_0$ and $\gamma_k^{E}=i\gamma_k$; then $(\gamma_\mu^{E})^2=+1$ and $\{\gamma_\mu^{E},\gamma_{\nu\}^{E}}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $\mathbb{B}$ frame of the biquaternion algebra. The Euclidean action is
 
 $$
 S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu^{E}\partial^E_\mu + m\right)\psi(x),

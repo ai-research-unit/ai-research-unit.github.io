@@ -584,7 +584,7 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-g_{\mu\nu}\partial_\
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the Peirce bases, the mixed units and the exchange.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators $T_{\tilde Q_1,\tilde Q_2}$ and their composition.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the spanning theorem.
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma frame, the volume element and its place among the sixteen cells.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma set, the volume element and its place among the sixteen cells.
 - [Bott Periodicity and the Classification](bott-periodicity-and-the-classification.html), for $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ and the minimal module.
 - [Operators on a Clifford Module](operators-on-a-clifford-module.html), for the Clifford action and the symbol.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chiral split and the distinction from the minimal left ideals.

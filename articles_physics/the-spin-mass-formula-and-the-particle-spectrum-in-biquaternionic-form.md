@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus states repeatedly that the framework does not derive masses: the mass is an empirical input, a parameter of the equation, and the geometry supplies no scale. That statement is correct about the *framework's* derivation of a mass from the algebra, but there is a second question it does not settle. A field equation in a *finite-dimensional representation* of the Lorentz group carries a **matrix** $\Gamma^0$ whose eigenvalues are masses, and the representation can be chosen. The question is then not "what is the mass?" but "**which mass does each representation carry?**" — and that question, in the spinor-structure programme, has an answer that reproduces the gross mass ratios of the stable particles from the degrees of the representations alone.
+The corpus states repeatedly that the framework does not derive masses: the mass is an empirical input, a parameter of the equation, and the geometry supplies no scale. That statement is correct about the *framework's* derivation of a mass from the algebra, but there is a second question it does not settle. A field equation in a *finite-dimensional representation* of the Lorentz group carries a **matrix** $\Gamma_{0}$ whose eigenvalues are masses, and the representation can be chosen. The question is then not "what is the mass?" but "**which mass does each representation carry?**" — and that question, in the spinor-structure programme, has an answer that reproduces the gross mass ratios of the stable particles from the degrees of the representations alone.
 
 The formula is the following. For a field transforming in the Lorentz representation $\tau^{l\bar l}$ — the $(2l+1)(2\bar l+1)$-dimensional irreducible representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$ — the mass that the finite-dimensional (Bhabha–Gel'fand–Yaglom) equation assigns to the representation is
 
@@ -21,10 +21,10 @@ The article records this formula, its derivation from the determinant of the Bha
 
 ## The Bhabha Equation and Its Determinant
 
-The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma^{\mu}$, a field $\psi$ of $N$ components satisfies
+The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma_{\mu}$, a field $\psi$ of $N$ components satisfies
 
 $$
-\bigl(\Gamma^{0}p_0-\Gamma^{1}p_1-\Gamma^{2}p_2-\Gamma^{3}p_3\bigr)\psi + m\psi = 0,
+\bigl(\Gamma_{0}p_0-\Gamma_{1}p_1-\Gamma_{2}p_2-\Gamma_{3}p_3\bigr)\psi + m\psi = 0,
 \qquad
 \Gamma(p)\psi = -m\psi .
 $$
@@ -45,15 +45,15 @@ $$
 
 so the masses $m_i$ are the roots: the representation carries a **discrete set of masses**, one for each distinct positive root of the determinant, and the field is a **multi-mass** field. This is the sense in which mass can be "quantised" by the representation, and it is the content the bivector-space article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* develops in full.
 
-### The Eigenvalues of $\Gamma^{0}$
+### The Eigenvalues of $\Gamma_{0}$
 
-The roots are read off from the eigenvalues of $\Gamma^{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma^0$ and
+The roots are read off from the eigenvalues of $\Gamma_{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma_{0}$ and
 
 $$
-\det\bigl(p_0\Gamma^{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
+\det\bigl(p_0\Gamma_{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
 $$
 
-where the $\lambda_i$ are the eigenvalues of $\Gamma^{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\lambda_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\lambda_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
+where the $\lambda_i$ are the eigenvalues of $\Gamma_{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\lambda_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\lambda_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
 
 $$
 m_1 = \mu_0\,\lambda_1\bar\lambda_1,
@@ -63,7 +63,7 @@ m_1 = \mu_0\,\lambda_1\bar\lambda_1,
 m_2 = \mu_0\,\lambda_3\bar\lambda_3 = -\mu_0\,\lambda_4\bar\lambda_4,\ \dots
 $$
 
-The formula is a statement about the eigenvalues of $\Gamma^{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and
+The formula is a statement about the eigenvalues of $\Gamma_{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and
 
 $$
 \boxed{\;m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
@@ -182,8 +182,8 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 | $\deg\tau^{l\bar l}=(2l+1)(2\bar l+1)$ | Degree (dimension) of the representation |
 | $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)=\frac{\mu_0}{4}\deg$ | The spin–mass formula |
 | $\mu_0$ | Mass scale; the electron's anchor is $m_e=\mu_0/2$ |
-| $\Gamma^{\mu}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
-| $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma^{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
+| $\Gamma_{\mu}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
+| $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma_{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
 | Interlocking | $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$ |
 | Spin-$\frac12$ line | $\tau^{\frac{n+1}{2},\frac n2}$, degree $(n+1)(n+2)$ |

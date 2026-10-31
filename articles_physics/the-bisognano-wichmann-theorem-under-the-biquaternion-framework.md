@@ -5,7 +5,7 @@
 The **Bisognano–Wichmann theorem** states that for a **wedge** region of Minkowski space the modular structure of the vacuum is geometric. For the right wedge
 
 $$
-W_R=\{x : x^1>|x^0|\},
+W_R=\{x : x_1>|x_0|\},
 $$
 
 the modular operator of the vacuum, restricted to the algebra of the wedge, is the generator of the boosts that preserve the wedge,
@@ -81,11 +81,11 @@ with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde{K}_{\mathrm{mod}}=
 
 The theorem is about wedges because the wedge is the region for which the relevant geometric flow exists.
 
-**The wedge is a Killing horizon.** The right wedge $W_R=\{x:x^1>|x^0|\}$ is bounded by the two null planes $x^1=\pm x^0$. Its boundary is a **bifurcate Killing horizon** for the boost Killing vector
+**The wedge is a Killing horizon.** The right wedge $W_R=\{x:x_1>|x_0|\}$ is bounded by the two null planes $x_1=\pm x_0$. Its boundary is a **bifurcate Killing horizon** for the boost Killing vector
 $$
 \xi=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta,
 $$
-which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose orbits are the constant-$\rho$ hyperbolas $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$. In the material sector $\mathbb{M}_-$ the boundary lies in the **zero-divisor cone** $\langle\tilde{Q}\rangle_{\natural}=0$, as established in the companion article on $\mathbb{M}_-$ and used in the Unruh article. In the boost plane $(x^0,x^1)$ the wedge is exactly a connected component of the complement of the light cone of that plane — the two null lines $x^1=\pm x^0$ — and the boost is exactly the Killing vector that preserves it.
+which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose orbits are the constant-$\rho$ hyperbolas $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$. In the material sector $\mathbb{M}_-$ the boundary lies in the **zero-divisor cone** $\langle\tilde{Q}\rangle_{\natural}=0$, as established in the companion article on $\mathbb{M}_-$ and used in the Unruh article. In the boost plane $(x_0,x_1)$ the wedge is exactly a connected component of the complement of the light cone of that plane — the two null lines $x_1=\pm x_0$ — and the boost is exactly the Killing vector that preserves it.
 
 **No such flow exists for a general region.** For a region $O$ that is not a wedge, there is in general no Killing vector of Minkowski space whose flow preserves $O$, and the modular Hamiltonian $K_O=-\log\Delta_O$ is not a geometric generator: it is a nonlocal operator on the region, not an integral of a local current against a Killing vector. The contrast is stark already in the vacuum. For a wedge the modular Hamiltonian is the boost $K_{\mathrm{boost}}$; for a ball of radius $R$ in a conformal field theory it is the Casini–Huerta–Myers operator
 $$
@@ -190,7 +190,7 @@ both with $|\vec r|<1$ and neither along a basis axis. All four identities hold 
 
 **The geometric realisation.** The theorem writes $J=\Theta\,U(R_W)$, with $\Theta$ the PCT operator and $U(R_W)$ the $*$-unitary representative of the rotation by $\pi$ that leaves the characteristic two-plane of the wedge invariant. The net geometric effect on Minkowski space is the **reflection through the edge of the wedge**,
 $$
-r_W:\ (t',x^1,x^2,x^3)\longmapsto(-t',-x^1,x^2,x^3),
+r_W:\ (t',x_1,x_2,x_3)\longmapsto(-t',-x_1,x_2,x_3),
 $$
 which in the wedge plane is $r_W(t',x)=(-t',-x)$. It is an involution, and it exchanges the two wedges, $r_W(W_R)=W_L$, consistent with $JM(W_R)J=M(W_L)$.
 
@@ -253,7 +253,7 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 
 The **Bisognano–Wichmann theorem** states that for a wedge region of Minkowski space the modular operator of the vacuum restricted to the wedge algebra is the boost generator, $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, and the modular conjugation is the PCT/reflection operator. It is the meeting point of the two preceding articles: the modular-theory article constructed the abstract flow, and the Unruh article used the boost; the theorem is what makes the second application exact rather than a coincidence.
 
-In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the two null planes $x^1=\pm x^0$ (which lie in the zero-divisor cone), and the boost generator is the Hermitian element $G_1=i\vec e_x\in\mathbb{M}_+$ with rotor $\tilde U_{\mathrm b}(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec e_x$. The framework **verifies** the generator identification: the rotor's infinitesimal action is the boost, $\tfrac{d}{d\psi}\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}|_0=\tfrac12(G_1\tilde{Q}+\tilde{Q}G_1)$, the rotor shifts the Rindler time by $\eta\mapsto\eta-\psi$, and the modular flow advances the rapidity by $2\pi$ per unit modular parameter, so $\tilde U_{\mathrm b}(-2\pi s)$ advances $\eta$ by $2\pi s$. This is the factor $2\pi$ in $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, checked rather than assumed. The framework also verifies the conjugation identities: $J$ is anti-unitary with $J^2=1$ and $J\,i\,J=-i$, it satisfies $J\Delta J\Delta=1$, and it realises the wedge reflection $r_W(t',x)=(-t',-x)$ that exchanges the two wedges. The reflection commutes with the boost; it is the anti-unitarity, not the reflection, that inverts the flow.
+In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the two null planes $x_1=\pm x_0$ (which lie in the zero-divisor cone), and the boost generator is the Hermitian element $G_1=i\vec e_x\in\mathbb{M}_+$ with rotor $\tilde U_{\mathrm b}(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec e_x$. The framework **verifies** the generator identification: the rotor's infinitesimal action is the boost, $\tfrac{d}{d\psi}\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}|_0=\tfrac12(G_1\tilde{Q}+\tilde{Q}G_1)$, the rotor shifts the Rindler time by $\eta\mapsto\eta-\psi$, and the modular flow advances the rapidity by $2\pi$ per unit modular parameter, so $\tilde U_{\mathrm b}(-2\pi s)$ advances $\eta$ by $2\pi s$. This is the factor $2\pi$ in $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, checked rather than assumed. The framework also verifies the conjugation identities: $J$ is anti-unitary with $J^2=1$ and $J\,i\,J=-i$, it satisfies $J\Delta J\Delta=1$, and it realises the wedge reflection $r_W(t',x)=(-t',-x)$ that exchanges the two wedges. The reflection commutes with the boost; it is the anti-unitarity, not the reflection, that inverts the flow.
 
 The framework does **not** make the geometric boost an inner automorphism of the material sector. The modular flow is $*$-unitary, while the finite-dimensional boost rotor is Hermitian; the finite-dimensional modular flow acts by the commutator, which vanishes on the boost plane, whereas the geometric boost is two-sided. The generator identification is exact; the flow identification requires the infinite-dimensional field algebra, and is left as a gap. The framework reproduces the wedge and only the wedge: the modular Hamiltonian of a general region is not a geometric generator, and generalising the theorem beyond wedges is a defect.
 
@@ -268,7 +268,7 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material-sector coordinate, $\in\mathbb{M}_-$ |
 | $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$ | Biquaternion norm |
-| $W_R=\{x:x^1>|x^0|\}$, $W_L$ | Right wedge and its mirror (causal complement) |
+| $W_R=\{x:x_1>|x_0|\}$, $W_L$ | Right wedge and its mirror (causal complement) |
 | $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$ |
 | $\xi=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta$ | Boost Killing vector |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator (Hermitian, $G_1^2=e_t$) |
