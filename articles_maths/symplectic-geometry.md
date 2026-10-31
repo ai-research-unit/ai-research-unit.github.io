@@ -55,10 +55,10 @@ $$
 \theta_p(v) = p\,(d\pi_p\, v),
 $$
 
-so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q^1, \ldots, q^m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq^i$. The form
+so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q_1, \ldots, q_m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq_i$. The form
 
 $$
-\omega = -\,d\theta = \sum_{i=1}^{m} dq^i \wedge dp_i
+\omega = -\,d\theta = \sum_{i=1}^{m} dq_i \wedge dp_i
 $$
 
 is closed because it is exact, and nondegenerate because in the coordinates $(q, p)$ it has the standard shape; so $(T^*Q, -d\theta)$ is a symplectic manifold, the **cotangent bundle** of $Q$. It is the source of the examples in mechanics and of the local model for a Lagrangian neighbourhood below.
@@ -195,7 +195,7 @@ is exact, the last map sending $X$ to the class $[\iota_X\omega]$.
 
 **Example.** Let $Q$ be a manifold and let $Q_0 \subseteq T^*Q$ be the zero section, $Q_0 = \{(q, 0)\}$. Then $\theta$ restricts to zero on $Q_0$, since $p = 0$ there, so $\omega = -d\theta$ restricts to zero; hence $Q_0$ is Lagrangian. The same holds for the graph of a closed $1$-form $\beta$ on $Q$: the graph is the image of $s_\beta(q) = (q, \beta_q)$, and $s_\beta^*\omega = s_\beta^*(-d\theta) = -d(\beta) = 0$ exactly when $d\beta = 0$. Thus the closed $1$-forms on $Q$ parametrise the Lagrangian sections of $T^*Q$.
 
-**Example.** Let $N \subseteq Q$ be a submanifold. Its **conormal bundle** $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q^{k+1} = \cdots = q^m = 0$, it is described by $q^{k+1} = \cdots = q^m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq^i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.
+**Example.** Let $N \subseteq Q$ be a submanifold. Its **conormal bundle** $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q_{k+1} = \cdots = q_m = 0$, it is described by $q_{k+1} = \cdots = q_m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq_i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.
 
 **Theorem (Lagrangian neighbourhood theorem).** Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $\Xi$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : \Xi \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.
 
@@ -269,7 +269,7 @@ Lagrangian submanifolds are the isotropic submanifolds of half the dimension, an
 | $2m$ | The dimension of a symplectic manifold; $m$ half the dimension |
 | $\omega^{\flat} : TM \to T^*M$, $\omega^{\sharp}$ | Bundle isomorphism $X \mapsto \omega(X,\cdot)$ and its inverse |
 | $\mathrm{vol}_\omega = \omega^{\wedge m}/m!$ | Symplectic volume form; orients $M$ |
-| $\theta = \sum_i p_i\,dq^i$ | Tautological $1$-form on $T^*Q$; $\omega = -d\theta$ |
+| $\theta = \sum_i p_i\,dq_i$ | Tautological $1$-form on $T^*Q$; $\omega = -d\theta$ |
 | $F^*\omega = \omega$ | Symplectomorphism $F$; $\operatorname{Symp}(M,\omega)$ the group |
 | $X_f$, $\iota_{X_f}\omega = df$ | Hamiltonian vector field of $f$ |
 | $\{f,g\} = \omega(X_f,X_g)$ | Poisson bracket of functions on a symplectic manifold |

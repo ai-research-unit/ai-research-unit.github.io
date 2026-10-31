@@ -14,13 +14,13 @@ The article assumes the smooth manifolds, the tangent and cotangent bundles, the
 
 Let $M$ be a smooth manifold and let $E \to M$ and $F \to M$ be smooth vector bundles of ranks $r$ and $s$; write $\Gamma(E)$ for the module of smooth sections, a module over the ring $C^\infty(M)$.
 
-**Definition.** An $\mathbb{R}$-linear map $P : \Gamma(E) \to \Gamma(F)$ is a **differential operator of order at most $k$** if over every chart $(U, x^1, \ldots, x^n)$ with trivialisations of $E$ and $F$, and writing a local section as $u = (u^1, \ldots, u^r)$ in the frame of $E$, the image has components
+**Definition.** An $\mathbb{R}$-linear map $P : \Gamma(E) \to \Gamma(F)$ is a **differential operator of order at most $k$** if over every chart $(U, x_1, \ldots, x_n)$ with trivialisations of $E$ and $F$, and writing a local section as $u = (u_1, \ldots, u_r)$ in the frame of $E$, the image has components
 
 $$
-(Pu)^i = \sum_{a=1}^{r} \sum_{|\alpha| \le k} A^{i\alpha}_{a}(x)\, \partial/\partial x_\alpha u^a, \qquad i = 1, \ldots, s,
+(Pu)_i = \sum_{a=1}^{r} \sum_{|\alpha| \le k} A_{i\alpha a}(x)\, \partial/\partial x_\alpha u_a, \qquad i = 1, \ldots, s,
 $$
 
-with coefficient functions $A^{i\alpha}_{a} \in C^\infty(U)$ and multi-indices $\alpha = (\alpha_1, \ldots, \alpha_n)$ of length $|\alpha| = \alpha_1 + \cdots + \alpha_n$. The **order** $\operatorname{ord}(P)$ is the least $k$ for which this holds, and $P$ is a differential operator if it has finite order. The space of operators of order at most $k$ from $E$ to $F$ is written $D^k(E, F)$, and $D(E,F) = \bigcup_k D^k(E,F)$.
+with coefficient functions $A_{i\alpha a} \in C^\infty(U)$ and multi-indices $\alpha = (\alpha_1, \ldots, \alpha_n)$ of length $|\alpha| = \alpha_1 + \cdots + \alpha_n$. The **order** $\operatorname{ord}(P)$ is the least $k$ for which this holds, and $P$ is a differential operator if it has finite order. The space of operators of order at most $k$ from $E$ to $F$ is written $D^k(E, F)$, and $D(E,F) = \bigcup_k D^k(E,F)$.
 
 **Proposition.** The property of being of order at most $k$ is independent of the charts and the frames, so the definition is intrinsic.
 
@@ -46,13 +46,13 @@ Part (c) characterises the order: a linear map $P$ has order at most $k$ if and 
 
 ### Definition and Tensoriality
 
-Let $P \in D^k(E,F)$ and let $x \in M$. In a chart with coordinates $x^j$ and frames of $E$ and $F$, write the top-order part of $P$ as
+Let $P \in D^k(E,F)$ and let $x \in M$. In a chart with coordinates $x_j$ and frames of $E$ and $F$, write the top-order part of $P$ as
 
 $$
 P_k u = \sum_{|\alpha| = k} A_\alpha(x)\,\partial/\partial x_\alpha u
 $$
 
-with $A_\alpha$ an $s \times r$ matrix of functions. For a covector $\xi = \sum_j \xi_j\, dx^j$ at $x$ put
+with $A_\alpha$ an $s \times r$ matrix of functions. For a covector $\xi = \sum_j \xi_j\, dx_j$ at $x$ put
 
 $$
 \sigma_k(P)(x, \xi) = \sum_{|\alpha| = k} A_\alpha(x)\,\xi^\alpha \in \operatorname{Hom}(E_x, F_x),
@@ -106,10 +106,10 @@ Since the symbol of a composition is the product of the symbols, an elliptic ope
 
 **Definition.** Let $E \to M$ be a vector bundle and $k \ge 0$. Two sections $s, t \in \Gamma(E)$ **agree to order $k$** at $x \in M$ if in one, hence every, chart and trivialisation about $x$ the difference $s - t$ and all its partial derivatives of total order at most $k$ vanish at $x$. This is an equivalence relation, and the class of $s$ is the **$k$-jet** $j_k s(x)$ of $s$ at $x$. The set of $k$-jets at $x$ is $J^k_xE$, and the disjoint union $J^kE = \bigsqcup_{x \in M} J^k_xE$ is the **bundle of $k$-jets** of $E$.
 
-**Proposition.** The set $J^k_xE$ is a real vector space of dimension $r\binom{n+k}{k}$, the bundle $J^kE \to M$ is a smooth vector bundle of that rank, and a chart $(U,x^1,\ldots,x^n)$ with a frame $e_1,\ldots,e_r$ of $E$ provides fibrewise coordinates $(x^j, u^a, u^a_{j_1}, u^a_{j_1j_2}, \ldots)$ indexed by the multi-indices $|\alpha| \le k$, in which the jet of a section $s = \sum_a s^a e_a$ is
+**Proposition.** The set $J^k_xE$ is a real vector space of dimension $r\binom{n+k}{k}$, the bundle $J^kE \to M$ is a smooth vector bundle of that rank, and a chart $(U,x_1,\ldots,x_n)$ with a frame $e_1,\ldots,e_r$ of $E$ provides fibrewise coordinates $(x_j, u_a, u_{a j_1}, u_{a j_1j_2}, \ldots)$ indexed by the multi-indices $|\alpha| \le k$, in which the jet of a section $s = \sum_a s_a e_a$ is
 
 $$
-j_k s(x) = \left(x,\ s^a(x),\ \partial/\partial x_j s^a(x),\ \partial^2/\partial x_{j_1}\partial x_{j_2} s^a(x),\ \ldots\right)_{|\alpha| \le k}.
+j_k s(x) = \left(x,\ s_a(x),\ \partial/\partial x_j s_a(x),\ \partial^2/\partial x_{j_1}\partial x_{j_2} s_a(x),\ \ldots\right)_{|\alpha| \le k}.
 $$
 
 The assignment $s \mapsto j_k s$ is a linear map $\Gamma(E) \to \Gamma(J^kE)$ over the identity of $M$.
@@ -124,7 +124,7 @@ $$
 
 where $\pi_{k-1}(j_k s(x)) = j_{k-1}s(x)$ forgets the derivatives of order exactly $k$, and the kernel is the bundle of the top-order derivatives, isomorphic to the $k$-th symmetric power of the cotangent bundle twisted by $E$. The sequence is natural in the bundle $E$ and splits, though not canonically.
 
-*Proof.* The map $\pi_{k-1}$ is surjective because every $(k-1)$-jet is the truncation of a $k$-jet, and it is a bundle homomorphism. Its kernel at $x$ consists of the $k$-jets with vanishing derivatives of order at most $k-1$, which are the symmetric $k$-tensors $\sum_{|\alpha| = k} u^a_\alpha\, dx^\alpha \otimes e_a$; the transformation law of these coefficients under a change of coordinates is the symmetric $k$-th power of the Jacobian, which identifies the kernel with $S^kT^*_xM \otimes E_x$. A splitting is obtained by the polynomials of degree $k$, hence not canonically.
+*Proof.* The map $\pi_{k-1}$ is surjective because every $(k-1)$-jet is the truncation of a $k$-jet, and it is a bundle homomorphism. Its kernel at $x$ consists of the $k$-jets with vanishing derivatives of order at most $k-1$, which are the symmetric $k$-tensors $\sum_{|\alpha| = k} u_a_\alpha\, dx_\alpha \otimes e_a$; the transformation law of these coefficients under a change of coordinates is the symmetric $k$-th power of the Jacobian, which identifies the kernel with $S^kT^*_xM \otimes E_x$. A splitting is obtained by the polynomials of degree $k$, hence not canonically.
 
 For $k=1$ the sequence reads $0 \to T^*M \otimes E \to J^1E \to E \to 0$, and the projection $J^1E \to E$ is the value of the jet; the kernel is the bundle of the first derivatives.
 

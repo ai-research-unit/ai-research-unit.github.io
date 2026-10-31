@@ -56,9 +56,9 @@ the metric contraction of the form factor with $\xi$; it is a surjection for $\x
 
 ### The Relation Through the Clifford Contraction
 
-**Given.** The Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$, and the orthogonality of the two first-order operators built from the connection: $D=c\circ\nabla^{\mathcal{S}}$ and $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$, as in *The Clifford Multiplication Operator* and *The Twistor Operator*.
+**Given.** The Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$, and the orthogonality of the two first-order operators built from the connection: $D=c\circ\nabla^{\mathcal{S}}$ and $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$, as in *The Clifford Multiplication Operator* and *The Twistor Operator*.
 
-**Proposition (the flat model).** For the flat connection on $\mathbb{R}^n$, with $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ and $\delta\alpha=-\sum_i(\partial/\partial e_i\,\alpha)(e_i)$, one has
+**Proposition (the flat model).** For the flat connection on $\mathbb{R}^n$, with $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ and $\delta\alpha=-\sum_i(\partial/\partial e_i\,\alpha)(e_i)$, one has
 
 $$
 (\delta\circ c^*)\sigma = D\sigma ,
@@ -67,7 +67,7 @@ $$
 
 since in the flat case the derivative of the frame vanishes.
 
-**Proof.** With $\alpha=c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ the components of $\alpha$ are constant in the frame and $\delta c^*\sigma = -\sum_i\partial/\partial e_i\,(-e_i\cdot\sigma) = \sum_i e_i\cdot\partial/\partial e_i\,\sigma = D\sigma$, using $e_i\cdot e_i=-1$ in the Riemannian convention and the constancy of the frame. The adjoint of a composition is the composition of the adjoints in reverse order, $D^*=(\nabla^{\mathcal{S}})^*c^*=\delta c^*$, and the display gives $D^*=D$.
+**Proof.** With $\alpha=c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ the components of $\alpha$ are constant in the frame and $\delta c^*\sigma = -\sum_i\partial/\partial e_i\,(-e_i\cdot\sigma) = \sum_i e_i\cdot\partial/\partial e_i\,\sigma = D\sigma$, using $e_i\cdot e_i=-1$ in the Riemannian convention and the constancy of the frame. The adjoint of a composition is the composition of the adjoints in reverse order, $D^*=(\nabla^{\mathcal{S}})^*c^*=\delta c^*$, and the display gives $D^*=D$.
 
 **Theorem (the curved case, quoted).** On a closed spin manifold with the spin connection and the fibre form $h$, the Cauchy–Riemann operator is formally self-adjoint,
 
@@ -113,11 +113,11 @@ as *The Spinor Operator* records; the codifferential enters through the term $\n
 
 ### The Flat Torus
 
-On the flat torus $\mathbb{T}^n$ with the trivial spin structure, the Fourier modes diagonalise the connection and the codifferential acts on the mode with frequency $\xi$ as the contraction with $\xi$: on the component $\theta^i\otimes s$ it is multiplication by $-\xi_i$, and $\delta\nabla^{\mathcal{S}}$ is multiplication by $|\xi|^2$ on the mode. The kernel of $\nabla^{*}\nabla$ is the constant spinors, and the codifferential of a spinor-valued one-form is its mode-wise contraction with the frequency.
+On the flat torus $\mathbb{T}^n$ with the trivial spin structure, the Fourier modes diagonalise the connection and the codifferential acts on the mode with frequency $\xi$ as the contraction with $\xi$: on the component $\theta_i\otimes s$ it is multiplication by $-\xi_i$, and $\delta\nabla^{\mathcal{S}}$ is multiplication by $|\xi|^2$ on the mode. The kernel of $\nabla^{*}\nabla$ is the constant spinors, and the codifferential of a spinor-valued one-form is its mode-wise contraction with the frequency.
 
 ### The Circle
 
-On $S^1$ with the flat metric and the trivial spin structure, the spinor bundle has rank one over $\mathbb{C}$, the connection is the derivative and the codifferential of the one-form $f(\theta)\,d\theta\otimes s(\theta)$ is $-f'(\theta)s(\theta)-f(\theta)s'(\theta)$ — the two terms of the definition, the first from the derivative of the form and the second from the derivative of the spinor. The connection Laplacian is $-d^2/d\theta^2$, whose kernel is the constants, and the Cauchy–Riemann operator of the circle is the self-adjoint operator $i\,d/d\theta$ of *Dirac Differential Operators* in Part III.
+On $S^1$ with the flat metric and the trivial spin structure, the spinor bundle has rank one over $\mathbb{C}$, the connection is the derivative and the codifferential of the one-form $f(\theta)\,d\theta\otimes s(\theta)$ is $-f'(\theta)s(\theta)-f(\theta)s'(\theta)$ — the two terms of the definition, the first from the derivative of the form and the second from the derivative of the spinor. The connection Laplacian is $-d^2/d\theta_2$, whose kernel is the constants, and the Cauchy–Riemann operator of the circle is the self-adjoint operator $i\,d/d\theta$ of *Dirac Differential Operators* in Part III.
 
 ### The Exterior Bundle
 

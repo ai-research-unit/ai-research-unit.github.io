@@ -13,7 +13,7 @@ The answer divides the corpus in four groups, and only one of them is an excepti
 | bivector law, star not applicable | 7 | 21 | no |
 | outside the algebra | 3 | 8 | no sandwich exists |
 
-Four clauses already deleted are not listed: the two pointers in *Conventions in the Biquaternion Universe* and *The Six Subspaces*, the form clause in *The Exponential and the Generator*, and the duplicate notation row in *Charge Conjugation and the Division Ring*.
+Four clauses already deleted are not listed: the two pointers in *Conventions in the Biquaternion Universe* and *The Six Subspaces and the Three Decompositions*, the form clause in *The Exponential and the Generator*, and the duplicate notation row in *Charge Conjugation and the Division Ring*.
 
 Quotations are verbatim, except that link targets inside a quoted paragraph are rebased to this file's location.
 

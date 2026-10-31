@@ -31,15 +31,15 @@ for all compactly supported smooth sections, $h$ extended to the twisted bundle 
 
 **Proof.** The adjoint of a composite is the composite of the adjoints in the reverse order, so $\mathcal{T}^*=(\pi\nabla)^*=\nabla^*\pi^*$, and $\pi$ is an orthogonal projection for the pointwise form, hence $\pi^*=\pi$. The symbol statements are the symbol of the contraction and of its adjoint, and the ellipticity is the invertibility of the symbol of $\mathcal{T}$ on the trace-free part, which is the content of the symbol computation of *The Twistor Operator*.
 
-**Proposition (the components).** Writing a twisted section as $\psi=\sum_i\theta^i\otimes\psi_i$ with $\psi_i\in\Gamma(\mathcal{S})$, the projection acts by
+**Proposition (the components).** Writing a twisted section as $\psi=\sum_i\theta_i\otimes\psi_i$ with $\psi_i\in\Gamma(\mathcal{S})$, the projection acts by
 
 $$
-\pi\psi = \sum_i\theta^i\otimes\Bigl(\psi_i+\tfrac1n c(e_i)(c\psi)\Bigr) , \qquad c\psi=\sum_j c(e_j)\psi_j ,
+\pi\psi = \sum_i\theta_i\otimes\Bigl(\psi_i+\tfrac1n c(e_i)(c\psi)\Bigr) , \qquad c\psi=\sum_j c(e_j)\psi_j ,
 $$
 
 and the adjoint is $\mathcal{T}^{*}\psi=-\sum_i\nabla_i\bigl(\psi_i+\tfrac1nc(e_i)(c\psi)\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*\psi$ depends on $\psi$ through its trace-free part and the divergence of its components.
 
-**Proof.** The formula for $\pi$ is the definition $\pi\psi=\psi-\frac1nc^*c\psi$ with the adjoint contraction $c^*\sigma=-\sum_i\theta^i\otimes c(e_i)\sigma$ of *The Adjoint of the Clifford Multiplication*; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in *The Codifferential on a Spinor Bundle*.
+**Proof.** The formula for $\pi$ is the definition $\pi\psi=\psi-\frac1nc^*c\psi$ with the adjoint contraction $c^*\sigma=-\sum_i\theta_i\otimes c(e_i)\sigma$ of *The Adjoint of the Clifford Multiplication*; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in *The Codifferential on a Spinor Bundle*.
 
 **Remark (the pairing as the twistor form).** The $L^2$ pairing of the definition is the integrated form of the pointwise Hermitian form of *Hermitian Clifford Structures*; the anti-linearity in the second argument and the reality of $\nabla$ make the pairing conjugate-symmetric, which is the **conjugate symmetry** of *Involutions of the Twistor Operator* read at the level of the adjoint.
 
@@ -93,7 +93,7 @@ where $\operatorname{scal}$ is the scalar curvature.
 
 ### The Flat Space
 
-For $\mathbb{R}^n$ with the standard spin structure, $\mathcal{T}\sigma=0$ has the solutions $\sigma=\sigma_0+\sum_ix^ic(e_i)\sigma_0$ with $\sigma_0$ parallel, the dimension is $2^{\lfloor n/2\rfloor+1}$, and $\mathcal{T}^*\mathcal{T}$ is $-\Delta$ on the trace-free part; the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ is the flat decomposition of the connection Laplacian, and the scalar identity is vacuous because $\operatorname{scal}=0$.
+For $\mathbb{R}^n$ with the standard spin structure, $\mathcal{T}\sigma=0$ has the solutions $\sigma=\sigma_0+\sum_ix_ic(e_i)\sigma_0$ with $\sigma_0$ parallel, the dimension is $2^{\lfloor n/2\rfloor+1}$, and $\mathcal{T}^*\mathcal{T}$ is $-\Delta$ on the trace-free part; the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ is the flat decomposition of the connection Laplacian, and the scalar identity is vacuous because $\operatorname{scal}=0$.
 
 ### The Round Sphere
 

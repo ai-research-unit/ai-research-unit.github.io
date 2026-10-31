@@ -106,7 +106,7 @@ $$
 \frac{D}{dt}V = 0, \qquad V(0) = v,
 $$
 
-equivalently $\left(dV^{k}/dt\right)(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'^i(t)V^j(t)$.
+equivalently $\left(dV_k/dt\right)(t) = -\sum_i\Gamma_{kij}(\gamma(t))\gamma'_i(t)V_j(t)$.
 
 **Proof.** A vector field $t\mapsto\gamma'(t)/|\gamma'|$ is parallel along a geodesic because the geodesic equation is $\frac{D}{dt}\gamma'=0$, so the velocity is preserved. The Jacobi fields are the fields $P_t$ applied to the solutions of the Jacobi equation at the origin, which is the statement that the transport trivialises the tangent bundle along the geodesic and the curvature is the transported curvature; the fundamental-matrix statement is the linear system read in a chart.
 

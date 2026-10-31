@@ -27,7 +27,7 @@ $$
 given on forms by $d^{*}=(-1)^{k}\star^{-1}d\star$ up to a sign that depends on the degree and the dimension, or equivalently $d^{*}=-\tau d\tau^{-1}$ for the chirality $\tau$ of *The Signature Operator*. The codifferential is also defined by the local formula
 
 $$
-d^{*}\Bigl(\sum_{I}\omega_I\,dx^{I}\Bigr)=-\sum_{i,I}\nabla_{i}\omega_{iI}\,dx^{I},
+d^{*}\Bigl(\sum_{I}\omega_I\,dx_I\Bigr)=-\sum_{i,I}\nabla_{i}\omega_{iI}\,dx_I,
 $$
 
 the negative of the divergence of the form read as an alternating tensor; its construction as the formal adjoint of $d$, the sign conventions and the equivalent local formula are the subject of *The Codifferential*. Here the two properties that matter are recorded.
@@ -128,11 +128,11 @@ in a $g$-orthonormal frame $(e_i)$, the natural action of the curvature on forms
 
 **Proof.** For a harmonic $\omega$ the Weitzenböck formula gives $0=(\Delta\omega,\omega)=\|\nabla\omega\|^2+(\mathcal{R}_k\omega,\omega)$; under the curvature assumption both terms are nonnegative, so both vanish; a parallel form is determined by its value at one point, which gives the rank bound, and the strict positivity forces $\omega=0$.
 
-**Corollary.** A closed Riemannian manifold of positive Ricci curvature has $b_1=0$; the round sphere $S^n$ of dimension $n\geq2$ has $b_1=0$, and the flat torus has $\operatorname{Ric}=0$ and harmonic $1$-forms $dx^i$ that are parallel.
+**Corollary.** A closed Riemannian manifold of positive Ricci curvature has $b_1=0$; the round sphere $S^n$ of dimension $n\geq2$ has $b_1=0$, and the flat torus has $\operatorname{Ric}=0$ and harmonic $1$-forms $dx_i$ that are parallel.
 
 ## Examples
 
-**Example (the flat torus).** On $T^{n}=\mathbb{R}^{n}/\mathbb{Z}^{n}$ with the flat metric the harmonic forms are the constant-coefficient forms, $\mathcal{H}^{k}$ has basis $dx^{I}$ for $|I|=k$, and $b_k=\binom{n}{k}$; the Weitzenböck term vanishes, every harmonic form is parallel, and the Laplacian is the ordinary Euclidean one acting coefficient by coefficient.
+**Example (the flat torus).** On $T^{n}=\mathbb{R}^{n}/\mathbb{Z}^{n}$ with the flat metric the harmonic forms are the constant-coefficient forms, $\mathcal{H}^{k}$ has basis $dx_I$ for $|I|=k$, and $b_k=\binom{n}{k}$; the Weitzenböck term vanishes, every harmonic form is parallel, and the Laplacian is the ordinary Euclidean one acting coefficient by coefficient.
 
 **Example (the spheres).** On $S^{n}$ with the round metric the Laplacian on functions has eigenvalues $k(k+n-1)$ with the spherical harmonics as eigenfunctions, and the harmonic forms are the constant functions in degree $0$ and the volume form in degree $n$, so $b_0=b_n=1$ and the remaining Betti numbers vanish; the positive curvature gives the vanishing of the intermediate harmonic forms, in agreement with the Bochner theorem and with the computation of the cohomology. The spectrum of the Laplacian is the geometric invariant that carries more information than the Betti numbers: it detects the radius, which the cohomology does not.
 

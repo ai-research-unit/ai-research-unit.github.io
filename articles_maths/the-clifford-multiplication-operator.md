@@ -79,7 +79,7 @@ $$
 
 obtained from the multiplication and the metric identification of covectors with vectors.
 
-**Proposition.** The contraction is a surjection with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma = -\sum_i\theta^i\otimes(e_i\cdot\sigma)$, and
+**Proposition.** The contraction is a surjection with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma = -\sum_i\theta_i\otimes(e_i\cdot\sigma)$, and
 
 $$
 \boxed{\;c\,c^* = n\,\operatorname{id}_{\mathcal{S}}, \qquad \ker c = \operatorname{im}c^*\;} ,

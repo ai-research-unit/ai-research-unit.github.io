@@ -10,7 +10,7 @@
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$. The bracket, the change law and the frame change $C_{\Pi}$ are those of *Matrix Representations : The Models and the Change of Frame*.
 
-**Boundaries.** The multiplication table is *The Biquaternion Algebra*; the six subspaces are *The Six Subspaces*; the displays and their frames are fixed in this article and in *Matrix Representations : The Models and the Change of Frame*.
+**Boundaries.** The multiplication table is *The Biquaternion Algebra*; the six subspaces are *The Six Subspaces and the Three Decompositions*; the displays and their frames are fixed in this article and in *Matrix Representations : The Models and the Change of Frame*.
 
 ## Common Aspects
 

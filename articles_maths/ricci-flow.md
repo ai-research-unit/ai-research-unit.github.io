@@ -43,7 +43,7 @@ $$
 
 so the volume decreases when the scalar curvature is positive and increases when it is negative.
 
-*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12g^{ij}\frac{\partial g_{ij}}{\partial t}dV = -g^{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = g^{ij}\partial/\partial t\,g_{ij}$; integrating gives the formula.
+*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12(g^{-1})_{ij}\frac{\partial g_{ij}}{\partial t}dV = -(g^{-1})_{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = (g^{-1})_{ij}\partial/\partial t\,g_{ij}$; integrating gives the formula.
 
 ## The Evolution of Curvature
 
@@ -53,14 +53,14 @@ $$
 \boxed{\;\frac{\partial R}{\partial t} = \Delta R + 2|R_{ij}|^2\;} ,
 $$
 
-where $\Delta$ is the Laplace–Beltrami operator of $g(t)$ and $|R_{ij}|^2 = R_{ij}R^{ij}$.
+where $\Delta$ is the Laplace–Beltrami operator of $g(t)$ and $|R_{ij}|^2 = R_{ij}R_{ij}$.
 
-*Proof.* Quoted as standard. The computation differentiates the twice-contracted Bianchi identity and the definition $R=g^{ij}R_{ij}$; the derivative of the inverse metric contributes $-2R^{ij}$ contracting the Ricci tensor and the derivative of the Ricci tensor contributes its own evolution, and the result is the displayed reaction-diffusion equation, the reaction term being the square of the Ricci tensor.
+*Proof.* Quoted as standard. The computation differentiates the twice-contracted Bianchi identity and the definition $R=(g^{-1})_{ij}R_{ij}$; the derivative of the inverse metric contributes $-2R_{ij}$ contracting the Ricci tensor and the derivative of the Ricci tensor contributes its own evolution, and the result is the displayed reaction-diffusion equation, the reaction term being the square of the Ricci tensor.
 
 **Theorem (evolution of the Ricci tensor).** Along a Ricci flow,
 
 $$
-\frac{\partial R_{ij}}{\partial t} = \Delta_LR_{ij} := \Delta R_{ij} + 2R_{ikjl}R^{kl} - 2R_{ik}R^k{}_j ,
+\frac{\partial R_{ij}}{\partial t} = \Delta_LR_{ij} := \Delta R_{ij} + 2R_{ikjl}R_{kl} - 2R_{ik}R_{kj} ,
 $$
 
 where the operator $\Delta_L$ is the **Lichnerowicz Laplacian** acting on symmetric $2$-tensors, $\Delta$ the rough (connection) Laplacian and $R_{ikjl}$ the Riemann tensor.
@@ -152,7 +152,7 @@ are monotone along the coupled flow $\partial/\partial t\,g=-2R_{ij}$, $\partial
 
 ## Summary
 
-Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2R_{ikjl}R^{kl}-2R_{ik}R^k{}_j$, and the Riemann tensor by $\partial/\partial t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
+Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2R_{ikjl}R_{kl}-2R_{ik}R_{kj}$, and the Riemann tensor by $\partial/\partial t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
 
 ## Summary of Notation
 

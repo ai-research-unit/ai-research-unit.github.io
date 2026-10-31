@@ -72,7 +72,7 @@ $$
 is a Hermitian form on $\mathcal{K}$, conjugate-symmetric, and the current
 
 $$
-X_{\sigma,\tau} = \sum_i h(\sigma,c(e_i)\tau)\,\theta^i
+X_{\sigma,\tau} = \sum_i h(\sigma,c(e_i)\tau)\,\theta_i
 $$
 
 of *The Penrose Operator* satisfies $\operatorname{div}X_{\sigma,\tau}=0$ for twistor spinors $\sigma,\tau$, so the pairing is independent of the conformal factor in the sense recorded there; the eigenspaces $\mathcal{K}^\pm$ are orthogonal for $\Sigma$, and $\Sigma$ is non-degenerate exactly where the reality type of the spinor module permits it.
@@ -96,7 +96,7 @@ The spinor bundle carries the commuting involutions $\Pi$ (chirality), $\omega$ 
 | $\mathcal{T}\Pi=\Pi\mathcal{T}$, $\mathcal{T}\omega=\omega\mathcal{T}$, $\mathcal{T}\kappa=\kappa\mathcal{T}$ | The intertwining identities |
 | $\mathcal{K}=\ker\mathcal{T}$ | Space of twistor spinors |
 | $\mathcal{K}^\pm$ | Joint eigenspaces of the commuting involutions |
-| $X_{\sigma,\tau}=\sum_ih(\sigma,c(e_i)\tau)\theta^i$ | Conserved current of *The Penrose Operator* |
+| $X_{\sigma,\tau}=\sum_ih(\sigma,c(e_i)\tau)\theta_i$ | Conserved current of *The Penrose Operator* |
 | $\Sigma(\sigma,\tau)=\int_Mh(\sigma,\tau)\mu_g$ | Hermitian pairing of the kernel |
 
 ## Further Reading

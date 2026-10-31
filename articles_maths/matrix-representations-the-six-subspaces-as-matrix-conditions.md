@@ -17,7 +17,7 @@ $$
 $$
 The models and the frame change $C_{\Pi}$ are those of *Matrix Representations : The Models and the Change of Frame*.
 
-**Boundaries.** The subspaces are defined in *The Six Subspaces*; their intersections are *The Subspaces and Their Relations*; the matrix conditions are the subject of this article.
+**Boundaries.** The subspaces and their intersections are defined in *The Six Subspaces and the Three Decompositions*; the matrix conditions are the subject of this article.
 
 ## Common Aspects
 
@@ -104,5 +104,5 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 
 ## Further Reading
 
-- [The Six Subspaces](the-six-subspaces.html), for the definitions
-- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
+- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the definitions
+- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the intersections

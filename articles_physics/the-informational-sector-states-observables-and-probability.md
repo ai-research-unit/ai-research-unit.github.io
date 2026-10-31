@@ -12,7 +12,7 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its coordinate blocks | [The Six Subspaces](../articles_maths/the-six-subspaces.html) |
+| The subspace, its basis and its coordinate blocks | [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html) |
 | The roots of $+1$ and the Hermitian idempotents | [Idempotents](../articles_maths/idempotents.html) |
 | The norm, the spectrum and the positive cone | [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html) |
 | The eigenvalue decomposition, the normality criterion and the non-normal pair | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
@@ -475,7 +475,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 
 ## Further Reading
 
-- [The Six Subspaces](../articles_maths/the-six-subspaces.html), for the definition and the basis of $\mathbb{M}_+$.
+- [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the definition and the basis of $\mathbb{M}_+$.
 - [Idempotents](../articles_maths/idempotents.html), for the idempotents and the roots of $+1$.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html), for the positive cone and the spectral decomposition.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the normality criterion and the non-normal pair.

@@ -68,10 +68,10 @@ Then $\alpha_0\wedge(d\alpha_0)^{\wedge n} = dz\wedge dx_1\wedge dy_1\wedge\cdot
 **Example (the $1$-jet space).** Let $N$ be a smooth $n$-manifold and let $J^1(N) = T^*N\times\mathbb{R}$ with coordinates $(q, p, z)$ and the form
 
 $$
-\alpha = dz - \sum_{i=1}^{n} p_i\, dq^i .
+\alpha = dz - \sum_{i=1}^{n} p_i\, dq_i .
 $$
 
-Then $d\alpha = \sum_i dq^i\wedge dp_i$ is the pullback of the standard symplectic form, and $\alpha\wedge(d\alpha)^{\wedge n} = dz\wedge dq^1\wedge dp_1\wedge\cdots$ is nonvanishing; so $J^1(N)$ is contact. The **$1$-jet** of a smooth function $f : N \to \mathbb{R}$ is the section $j^1f(q) = (q, df_q, f(q))$, and it is Legendrian: $\alpha$ restricts to $df - df = 0$ on it. More generally the graph of a closed $1$-form $\beta$ and a function $g$ with $dg = \beta$ is Legendrian, and every Legendrian submanifold of $J^1(N)$ that is transverse to the $z$-direction is locally of this form. This is the contact analogue of the Lagrangian sections of a cotangent bundle.
+Then $d\alpha = \sum_i dq_i\wedge dp_i$ is the pullback of the standard symplectic form, and $\alpha\wedge(d\alpha)^{\wedge n} = dz\wedge dq_1\wedge dp_1\wedge\cdots$ is nonvanishing; so $J^1(N)$ is contact. The **$1$-jet** of a smooth function $f : N \to \mathbb{R}$ is the section $j^1f(q) = (q, df_q, f(q))$, and it is Legendrian: $\alpha$ restricts to $df - df = 0$ on it. More generally the graph of a closed $1$-form $\beta$ and a function $g$ with $dg = \beta$ is Legendrian, and every Legendrian submanifold of $J^1(N)$ that is transverse to the $z$-direction is locally of this form. This is the contact analogue of the Lagrangian sections of a cotangent bundle.
 
 **Example.** Every oriented $3$-manifold admits a contact structure, and in fact the standard construction of a contact structure on a $3$-manifold is by an open book decomposition; in higher dimensions every oriented odd-dimensional manifold admits an almost contact structure, and the existence and classification of the **overtwisted** contact structures there is a theorem of Borman, Eliashberg and Murphy. The classification of contact structures up to contactomorphism, and the distinction between tight and overtwisted structures in dimension three, belong to *Symplectic and Contact Topology*.
 
@@ -131,7 +131,7 @@ $$
 
 **Example.** In the standard contact $\mathbb{R}^3$ with $\alpha = dz - y\,dx$, a Legendrian curve is a curve $\gamma(t) = (x(t), y(t), z(t))$ with $dz/dt = ydx/dt$; the Legendrian condition is a first-order equation on the curve, and it can always be integrated locally. In the standard contact $S^3$ the fibres of the Hopf fibration are the orbits of the Reeb field, hence transverse circles, while the standard Legendrians are the curves tangent to the contact planes; the classification of both families is part of *Symplectic and Contact Topology*.
 
-**Example.** In the jet space $J^1(N)$ with $\alpha = dz - \sum_i p_i\,dq^i$, the $1$-jet of a function and the graph of a closed $1$-form are Legendrian, as noted above. Conversely, a Legendrian submanifold of $J^1(N)$ that is transverse to the fibres of $J^1(N)\to N\times\mathbb{R}$ is locally the $1$-jet graph of a function. This is the **contact analogue of the Lagrangian neighbourhood theorem**, and it is the reason the jet space is the local model for arbitrary Legendrian submanifolds: a neighbourhood of a Legendrian in a contact manifold is contactomorphic to a neighbourhood of the zero section in a jet space.
+**Example.** In the jet space $J^1(N)$ with $\alpha = dz - \sum_i p_i\,dq_i$, the $1$-jet of a function and the graph of a closed $1$-form are Legendrian, as noted above. Conversely, a Legendrian submanifold of $J^1(N)$ that is transverse to the fibres of $J^1(N)\to N\times\mathbb{R}$ is locally the $1$-jet graph of a function. This is the **contact analogue of the Lagrangian neighbourhood theorem**, and it is the reason the jet space is the local model for arbitrary Legendrian submanifolds: a neighbourhood of a Legendrian in a contact manifold is contactomorphic to a neighbourhood of the zero section in a jet space.
 
 ## Symplectisation
 
@@ -171,7 +171,7 @@ where all terms containing a repeated factor among $dt$, $\alpha$ and $d\alpha$ 
 
 A contact manifold is a manifold of odd dimension $2n+1$ carrying a hyperplane field $\xi = \ker\alpha$ defined by a $1$-form $\alpha$ with $\alpha\wedge(d\alpha)^{\wedge n}\neq 0$. The field is maximally non-integrable: the integral manifolds of $\xi$ have dimension at most $n$, and the maximal ones are the Legendrian submanifolds. The contact structure is the field, not the form; a defining form is unique up to a nowhere vanishing factor $f$, under which $\alpha\wedge(d\alpha)^{\wedge n}$ scales by $f^{\,n+1}$, and a cooriented contact manifold is oriented by that volume form.
 
-The standard examples are $\mathbb{R}^{2n+1}$ with $\alpha_0 = dz + \sum_i x_i\,dy_i$, the sphere $S^{2n+1}$ with the restriction of the radial form, the spherical cotangent bundle $ST^*Q$ with the geodesic contact structure, and the jet space $J^1(N)$ with $\alpha = dz - \sum_i p_i\,dq^i$, in which the $1$-jets of functions are Legendrian. The Darboux theorem puts every contact form locally into the standard shape, and Gray's theorem shows that a deformation of contact forms on a closed manifold is realised by an isotopy; so a contact structure has no local invariants. Every contact form has a unique Reeb vector field $R_\alpha$ with $\alpha(R_\alpha) = 1$ and $\iota_{R_\alpha}d\alpha = 0$, transverse to the contact planes.
+The standard examples are $\mathbb{R}^{2n+1}$ with $\alpha_0 = dz + \sum_i x_i\,dy_i$, the sphere $S^{2n+1}$ with the restriction of the radial form, the spherical cotangent bundle $ST^*Q$ with the geodesic contact structure, and the jet space $J^1(N)$ with $\alpha = dz - \sum_i p_i\,dq_i$, in which the $1$-jets of functions are Legendrian. The Darboux theorem puts every contact form locally into the standard shape, and Gray's theorem shows that a deformation of contact forms on a closed manifold is realised by an isotopy; so a contact structure has no local invariants. Every contact form has a unique Reeb vector field $R_\alpha$ with $\alpha(R_\alpha) = 1$ and $\iota_{R_\alpha}d\alpha = 0$, transverse to the contact planes.
 
 Legendrian submanifolds are the isotropic submanifolds of dimension $n$, and a neighbourhood of a Legendrian is modelled on a neighbourhood of the zero section of a jet space. The symplectisation $M\times\mathbb{R}$ with $\omega = d(\exp(t)\alpha)$ is a symplectic manifold whose level sets are contact-type hypersurfaces, and Legendrians lift to Lagrangians; conversely, a hypersurface of contact type in a symplectic manifold inherits a contact structure. Finally, a strictly pseudoconvex hypersurface in a complex manifold is contact, the unit sphere in $\mathbb{C}^{n+1}$ being the model, and the compatible metric structures are the Sasakian ones.
 
@@ -188,7 +188,7 @@ Legendrian submanifolds are the isotropic submanifolds of dimension $n$, and a n
 | Contactomorphism $F$ | $dF(\xi) = \eta$; $F^*\alpha_N = f\alpha_M$ in the cooriented case |
 | $R_\alpha$ | Reeb vector field, $\alpha(R_\alpha)=1$, $\iota_{R_\alpha}d\alpha=0$ |
 | $TM = \xi\oplus\mathbb{R}R_\alpha$ | Splitting by the Reeb field |
-| $J^1(N) = T^*N\times\mathbb{R}$ | Jet space, $\alpha = dz - \sum_i p_i\,dq^i$; $j^1f$ Legendrian |
+| $J^1(N) = T^*N\times\mathbb{R}$ | Jet space, $\alpha = dz - \sum_i p_i\,dq_i$; $j^1f$ Legendrian |
 | Isotropic, Legendrian | $TL\subseteq\xi$; isotropic of dimension $n$ |
 | $M\times\mathbb{R}$, $\omega = d(\exp(t)\alpha)$ | Symplectisation; contact manifold as a contact-type boundary |
 | $\Sigma = \rho^{-1}(0)$ strictly pseudoconvex | Hypersurface in a complex manifold; carries a contact form $-d^c\rho\vert_\Sigma$ |

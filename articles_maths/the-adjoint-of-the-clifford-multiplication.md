@@ -9,7 +9,7 @@ $$
 c(v)^{*}=-c(v) ,
 $$
 
-the fibre form being the one for which the Clifford coeffients are skew. This is the manifold form of the abstract statement $L_u^*=-L_u$ for the left multiplication by a vector, and it is the reason the Cauchy–Riemann operator $D=c\circ\nabla^{\mathcal{S}}$ is formally self-adjoint and the Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ has the adjoint $c^*=-\sum_i\theta^i\otimes(e_i\cdot)$ with $cc^*=n\operatorname{id}$. The article collects the pointwise adjoint, the adjoint of the contraction, and the consequences for the first-order operators of the category.
+the fibre form being the one for which the Clifford coeffients are skew. This is the manifold form of the abstract statement $L_u^*=-L_u$ for the left multiplication by a vector, and it is the reason the Cauchy–Riemann operator $D=c\circ\nabla^{\mathcal{S}}$ is formally self-adjoint and the Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ has the adjoint $c^*=-\sum_i\theta_i\otimes(e_i\cdot)$ with $cc^*=n\operatorname{id}$. The article collects the pointwise adjoint, the adjoint of the contraction, and the consequences for the first-order operators of the category.
 
 ## The Pointwise Adjoint
 
@@ -31,7 +31,7 @@ and consequently $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$: the multiplicati
 
 $$
 \boxed{\;c^* : \mathcal{S}\longrightarrow T^*M\otimes\mathcal{S} , \qquad
-c^*\sigma = -\sum_{i=1}^{n}\theta^i\otimes(e_i\cdot\sigma)\;} .
+c^*\sigma = -\sum_{i=1}^{n}\theta_i\otimes(e_i\cdot\sigma)\;} .
 $$
 
 **Proposition.** The contraction satisfies $cc^*=n\operatorname{id}_{\mathcal{S}}$ and $\ker c=\operatorname{im}c^*$; the contraction is a surjection with the symbol $c(\xi)=$ Clifford multiplication by $\xi^{\sharp}$, and the adjoint has the symbol $c^*(\xi)=-(\xi\wedge\text{-type})$ contraction, so the two symbols are adjoint at every covector.
@@ -52,11 +52,11 @@ $$
 
 ### A Surface
 
-On a surface with an orthonormal frame, $c(e_1)$ and $c(e_2)$ are two anticommuting complex structures of the fibre, both skew-adjoint, and the contraction $c^*$ sends a spinor to $-\theta^1\otimes e_1\sigma-\theta^2\otimes e_2\sigma$; the identity $cc^*=2$ is the rank-two statement of the surface.
+On a surface with an orthonormal frame, $c(e_1)$ and $c(e_2)$ are two anticommuting complex structures of the fibre, both skew-adjoint, and the contraction $c^*$ sends a spinor to $-\theta_1\otimes e_1\sigma-\theta_2\otimes e_2\sigma$; the identity $cc^*=2$ is the rank-two statement of the surface.
 
 ### The Flat Space
 
-On $\mathbb{R}^n$ with the standard spinor module, $c(v)^*=-c(v)$ in the standard Hermitian form, $c^*\sigma=-\sum_i\theta^i\otimes e_i\sigma$, $cc^*=n$, and $D=\sum_ic(e_i)\partial/\partial x_i$ is self-adjoint on the flat spinor bundle by integration by parts.
+On $\mathbb{R}^n$ with the standard spinor module, $c(v)^*=-c(v)$ in the standard Hermitian form, $c^*\sigma=-\sum_i\theta_i\otimes e_i\sigma$, $cc^*=n$, and $D=\sum_ic(e_i)\partial/\partial x_i$ is self-adjoint on the flat spinor bundle by integration by parts.
 
 ### The Exterior Bundle
 
@@ -64,7 +64,7 @@ For $c(v)=v^{\flat}\wedge-\iota_v$ on $\Lambda^\bullet T^*M$, the adjoint for th
 
 ## Summary
 
-The adjoint of the **Clifford multiplication** on a Riemannian spin manifold is the negative of the operator, $c(v)^*=-c(v)$, and the multiplication by a unit vector is an **isometry** of the fibre, $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$; this is the manifold form of the abstract $L_u^*=-L_u$. The **Clifford contraction** $c:T^*M\otimes\mathcal{S}\to\mathcal{S}$ has adjoint $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$, so $cc^*=n\operatorname{id}$ and $\ker c=\operatorname{im}c^*$, which is the decomposition used by the twistor and Penrose operators. The consequences for the first-order operators are the **formal self-adjointness** $D^*=D$ of the Cauchy–Riemann operator, the identity $c\circ\mathcal{T}=0$ of the twistor operator, and the fact that the adjoint of the spin connection is the **codifferential**, with $\delta c^*=D$. The abstract adjoints are *The Adjoint of the Left Multiplication on a Clifford Algebra* and *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the contraction is *The Twistor Operator*, and the self-adjointness is *The Spinor Operator* and *The Codifferential on a Spinor Bundle*.
+The adjoint of the **Clifford multiplication** on a Riemannian spin manifold is the negative of the operator, $c(v)^*=-c(v)$, and the multiplication by a unit vector is an **isometry** of the fibre, $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$; this is the manifold form of the abstract $L_u^*=-L_u$. The **Clifford contraction** $c:T^*M\otimes\mathcal{S}\to\mathcal{S}$ has adjoint $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$, so $cc^*=n\operatorname{id}$ and $\ker c=\operatorname{im}c^*$, which is the decomposition used by the twistor and Penrose operators. The consequences for the first-order operators are the **formal self-adjointness** $D^*=D$ of the Cauchy–Riemann operator, the identity $c\circ\mathcal{T}=0$ of the twistor operator, and the fact that the adjoint of the spin connection is the **codifferential**, with $\delta c^*=D$. The abstract adjoints are *The Adjoint of the Left Multiplication on a Clifford Algebra* and *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the contraction is *The Twistor Operator*, and the self-adjointness is *The Spinor Operator* and *The Codifferential on a Spinor Bundle*.
 
 ## Summary of Notation
 
@@ -74,7 +74,7 @@ The adjoint of the **Clifford multiplication** on a Riemannian spin manifold is 
 | $c(v)^*=-c(v)$ | Pointwise skew-adjointness |
 | $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$ | Isometry up to the metric scale |
 | $c:T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction |
-| $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ | Its adjoint |
+| $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ | Its adjoint |
 | $cc^*=n\operatorname{id}$, $\ker c=\operatorname{im}c^*$ | Trace identity and decomposition |
 | $D^*=D$ | Self-adjointness of the Cauchy–Riemann operator |
 | $\delta c^*=D$ | Codifferential and the operator |

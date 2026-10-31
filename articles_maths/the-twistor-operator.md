@@ -17,10 +17,10 @@ $$
 c : T^*M\otimes\mathcal{S}\longrightarrow\mathcal{S}, \qquad c(\xi\otimes\sigma) = \xi^{\sharp}\cdot\sigma ,
 $$
 
-where $\xi^{\sharp}$ is the tangent vector dual to $\xi$ under $g$ and the dot is the Clifford action. Its metric adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ is computed in a local orthonormal coframe $(\theta^1,\dots,\theta^n)$ by
+where $\xi^{\sharp}$ is the tangent vector dual to $\xi$ under $g$ and the dot is the Clifford action. Its metric adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ is computed in a local orthonormal coframe $(\theta_1,\dots,\theta_n)$ by
 
 $$
-c^*\sigma = -\sum_{i=1}^{n}\theta^i\otimes(e_i\cdot\sigma), \qquad c(\xi\otimes\sigma) = \sum_i \xi(e_i)\,e_i\cdot\sigma .
+c^*\sigma = -\sum_{i=1}^{n}\theta_i\otimes(e_i\cdot\sigma), \qquad c(\xi\otimes\sigma) = \sum_i \xi(e_i)\,e_i\cdot\sigma .
 $$
 
 **Proposition.** The maps $c$ and $c^*$ are adjoint for the tensor product of $g$ and the fibre form $h$, $c$ is a surjection, and
@@ -161,7 +161,7 @@ The **Clifford contraction** $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ is the b
 |---|---|
 | $\mathcal{S}$, $c(v)$, $h$ | Spinor bundle, Clifford multiplication $c(v)^2=-g(v,v)$, fibre form |
 | $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$ |
-| $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ | Adjoint, $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ |
+| $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ | Adjoint, $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ |
 | $cc^*=n\operatorname{id}$, $\ker c=\operatorname{im}c^*$ | The trace identity and the orthogonal decomposition |
 | $\pi=\operatorname{id}-\frac1nc^*c$ | Projector onto $\ker c$ |
 | $D=c\circ\nabla$ | Cauchy–Riemann operator of the manifold |

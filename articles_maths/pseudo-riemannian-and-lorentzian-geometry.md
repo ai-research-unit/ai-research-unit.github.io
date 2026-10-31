@@ -72,12 +72,12 @@ $$
 and in a coordinate frame it has the Christoffel symbols
 
 $$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr).
+\Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr).
 $$
 
 **Proof.** The proof of the Riemannian case used only the nondegeneracy of $g$: the right-hand side of the Koszul formula is a tensor, and since the pairing $g(\,\cdot\,, \,\cdot\,)$ is nondegenerate, a vector field is determined by its pairings with all $Z$. Metricity and torsion-freeness follow by substitution exactly as before.
 
-**Remark.** Everything in this section and the next carries over verbatim from the Riemannian case, and no new phenomenon appears. Parallel transport is an isometry of tangent spaces, $\nabla_{\gamma'}\gamma' = 0$ is the geodesic equation, the exponential map is a local diffeomorphism at the origin of each tangent space, and normal coordinates put the metric into the form $g_{ij} = \eta_{ij} - \frac{1}{3}\sum_{kl}R_{ikjl}x^kx^l + O(|x|^3)$. The exponential map is defined by the same differential equation, whose solvability is the theory of Part III.
+**Remark.** Everything in this section and the next carries over verbatim from the Riemannian case, and no new phenomenon appears. Parallel transport is an isometry of tangent spaces, $\nabla_{\gamma'}\gamma' = 0$ is the geodesic equation, the exponential map is a local diffeomorphism at the origin of each tangent space, and normal coordinates put the metric into the form $g_{ij} = \eta_{ij} - \frac{1}{3}\sum_{kl}R_{ikjl}x_kx_l + O(|x|^3)$. The exponential map is defined by the same differential equation, whose solvability is the theory of Part III.
 
 **Definition.** The **isometry group** $\operatorname{Isom}(M, g)$ consists of the diffeomorphisms preserving $g$; the **Killing fields** are the vector fields whose flows preserve $g$, characterised by $g(\nabla_YX, Z) + g(Y, \nabla_ZX) = 0$. The Myers–Steenrod theorem holds in the indefinite case: the isometry group is a Lie group and its Lie algebra is the Killing fields.
 
@@ -194,7 +194,7 @@ The sectional curvature is defined only on nondegenerate two-planes, so it no lo
 | Cauchy surface | Closed acausal set met once by every inextendible causal curve |
 | $L_g(\gamma) = \int\sqrt{|g(\gamma',\gamma')|}\,dt$ | Lorentzian length of a causal curve |
 | $d_g(n,m) = \sup_\gamma L_g(\gamma)$ | Lorentzian distance; not a metric, reverse triangle inequality |
-| $\nabla$, $\Gamma^k_{ij}$, $\theta^i_{\ j}$, $\mathcal{R}$ | Levi-Civita connection, Christoffel symbols, connection form, curvature $2$-form |
+| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$, $\mathcal{R}$ | Levi-Civita connection, Christoffel symbols, connection form, curvature $2$-form |
 | $R(X,Y,Z,W)$ | Curvature tensor with the standard symmetries and Bianchi identities |
 | $K(\sigma)$ | Sectional curvature of a nondegenerate two-plane $\sigma$; undefined on degenerate planes |
 | $\operatorname{Ric}$, $S$, $G = \operatorname{Ric}-\frac12Sg$ | Ricci tensor, scalar curvature, Einstein tensor |

@@ -227,7 +227,7 @@ $$
 be a linear differential operator of order $m$ with smooth coefficients, acting on scalar functions or componentwise on a system, and let $u$ be piecewise smooth across $S$ with $Pu = f$. Collecting the layers of highest order in $Pu$, the **singular part** of $Pu$ is determined by the **principal symbol** evaluated on $n$:
 $$
 \text{singular part of } Pu = \sigma_P(n)\,[u]\,\partial/\partial n^{\,m-1}\delta_S + \text{terms of lower layer order},
-\qquad \sigma_P(n) = \sum_{|\alpha| = m} a_\alpha(x)\,n^\alpha .
+\qquad \sigma_P(n) = \sum_{|\alpha| = m} a_\alpha(x)\,n_\alpha .
 $$
 For a system, $\sigma_P(n)$ is the principal-symbol matrix and $[u]$ the vector of jumps. Since the source $f$ is a fixed distribution, the singular part of $Pu$ is the singular part of $f$; when $f$ is continuous across $S$ it has no singular part, and the layers in $Pu$ must cancel among themselves at each layer order.
 
@@ -247,13 +247,13 @@ The dichotomy is the whole content of the wavefront analysis of a first-order sy
 
 ### Second-Order Equations and Transmission
 
-**Theorem (second-order jump condition).** Let $P = \sum_{j,k} a_{jk}\partial^2/\partial x_j\partial x_\partial/\partial x_k + \sum_j b_j\partial/\partial x_j + c$ be of second order with $a_{jk} = a_{kj}$ and let $u$ be piecewise smooth with $Pu = f$, the source $f$ being continuous across $S$. Then
+**Theorem (second-order jump condition).** Let $P = \sum_{j,k} a_{jk}\partial^2/\partial x_j\partial x_k + \sum_j b_j\partial/\partial x_j + c$ be of second order with $a_{jk} = a_{kj}$ and let $u$ be piecewise smooth with $Pu = f$, the source $f$ being continuous across $S$. Then
 $$
 \sigma_P(n)\,[u]\,\partial/\partial n\delta_S + \Bigl(\sum_{j,k}a_{jk}n_j\,[\partial/\partial x_k u] + \cdots\Bigr)\delta_S = 0 ,
 $$
 where the displayed first term is the double layer. If $n$ is non-characteristic, then $[u] = 0$, and the single-layer condition then determines $[\partial/\partial n u]$ in terms of the lower-order coefficients and the source; if $n$ is characteristic, the double-layer coefficient vanishes and the leading condition on $[u]$ disappears.
 
-*Proof.* Apply $\partial^2/\partial x_j\partial x_\partial/\partial x_k$ to the jump formula and contract with $a_{jk}$. The double layer $\partial/\partial n\delta_S$ arises from the second derivative of the single layer, and its coefficient is $\sum_{jk}a_{jk}n_jn_k[u] = \sigma_P(n)[u]$; the single layer $\delta_S$ collects the first derivatives of $u$ and the lower-order coefficients.
+*Proof.* Apply $\partial^2/\partial x_j\partial x_k$ to the jump formula and contract with $a_{jk}$. The double layer $\partial/\partial n\delta_S$ arises from the second derivative of the single layer, and its coefficient is $\sum_{jk}a_{jk}n_jn_k[u] = \sigma_P(n)[u]$; the single layer $\delta_S$ collects the first derivatives of $u$ and the lower-order coefficients.
 
 The wave operator $\Box = \partial^2/\partial t^2 - c^2\Delta$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the null cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial/\partial n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.
 

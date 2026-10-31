@@ -187,10 +187,10 @@ where $V, W$ are vector fields extending $v, w$, is nondegenerate. The **index**
 
 The Hessian is well defined: the value $V(W(f))(n)$ depends only on $v$ and $w$, because the difference between two extensions changes the expression by terms involving $[V, W](f)(n)$, which vanishes at a critical point.
 
-**Theorem (Morse lemma).** Let $n$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x^1, \ldots, x^n$ on a neighbourhood of $n$ with $x^i(n) = 0$ and
+**Theorem (Morse lemma).** Let $n$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x_1, \ldots, x_n$ on a neighbourhood of $n$ with $x_i(n) = 0$ and
 
 $$
-\boxed{\;f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2\;} .
+\boxed{\;f = f(n) - (x_1)^2 - \cdots - (x_\lambda)^2 + (x_{\lambda+1})^2 + \cdots + (x_n)^2\;} .
 $$
 
 **Proof sketch.** The statement is local and reduces to a quadratic form, which the classification of quadratic forms of *Quadratic Forms and Polarisation* puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed.
@@ -253,7 +253,7 @@ Sard's theorem says that the critical values of a smooth map have empty interior
 
 The oriented intersection number of a map with a submanifold of complementary dimension is the signed count of the intersection points, and it is invariant under homotopy; at a point it is the degree of a map between closed oriented manifolds of the same dimension, and the degree is an integer, additive under composition, invariant under homotopy, equal to $\pm 1$ for a diffeomorphism, and a complete invariant of homotopy for maps of spheres. It gives the winding number of a circle map, the fundamental theorem of algebra as the surjectivity of a degree-$n$ map of the sphere, and the Brouwer fixed point theorem by the contradiction between a retraction of the ball onto its boundary and the trivial degree of a map factoring through a contractible space.
 
-Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theorem, continuous maps are homotopic to smooth ones by the approximation theorem, and every submanifold has a tubular neighbourhood that is a disc bundle and a homotopy equivalence. A Morse function has nondegenerate critical points, the Morse lemma puts each into the normal form $-(x^1)^2 - \cdots + (x^{\lambda})^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2$ up to a constant, the sublevel sets change by handle attachments, and the counts of critical points satisfy the Morse inequalities with respect to the Betti numbers of the de Rham cohomology. Two closed manifolds are cobordant when together they bound a compact manifold of one dimension more; cobordism is an equivalence relation and the cobordism classes form a group under disjoint union, whose computation is a theorem of algebraic topology and belongs to the article being written in parallel.
+Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theorem, continuous maps are homotopic to smooth ones by the approximation theorem, and every submanifold has a tubular neighbourhood that is a disc bundle and a homotopy equivalence. A Morse function has nondegenerate critical points, the Morse lemma puts each into the normal form $-(x_1)^2 - \cdots + (x_\lambda)^2 + (x_{\lambda+1})^2 + \cdots + (x_n)^2$ up to a constant, the sublevel sets change by handle attachments, and the counts of critical points satisfy the Morse inequalities with respect to the Betti numbers of the de Rham cohomology. Two closed manifolds are cobordant when together they bound a compact manifold of one dimension more; cobordism is an equivalence relation and the cobordism classes form a group under disjoint union, whose computation is a theorem of algebraic topology and belongs to the article being written in parallel.
 
 ## Summary of Notation
 

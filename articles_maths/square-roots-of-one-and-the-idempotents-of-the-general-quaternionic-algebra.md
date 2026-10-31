@@ -152,7 +152,7 @@ $$
 
 **Proposition.** Every Hermitian idempotent is a nontrivial idempotent of the plain product and lies in the Hermitian subspace: $\tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi)$ and $\tilde\Pi_+(\tilde\Xi)\in\mathbb{M}_{+}$.
 
-**Proof.** The vector $\tilde\Xi$ has $(\tilde\Xi)^2=\tilde\Xi^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_{+}$ (*The Six Subspaces*). It is not $0$ and not $e_t$.
+**Proof.** The vector $\tilde\Xi$ has $(\tilde\Xi)^2=\tilde\Xi^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_{+}$ (*The Six Subspaces and the Three Decompositions*). It is not $0$ and not $e_t$.
 
 By *Idempotents* the nontrivial idempotents of the plain product are exactly these, one for each real unit vector, so the plain idempotent set is the family $\tilde\Pi_+(\tilde\Xi)$, a quadric of complex dimension two, together with $0$ and $e_t$. The general quaternionic product answers differently.
 

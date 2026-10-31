@@ -4,7 +4,7 @@
 
 The symmetric quaternionic multiplication $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$
 (*Introduction to the Symmetric Quaternionic Algebra*) is read here on the remarkable
-real subspaces of *The Six Subspaces*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector
+real subspaces of *The Six Subspaces and the Three Decompositions*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector
 subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion
 subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace
 $\mathbb{M}_-$. On each the product of two general elements is computed, and the article records the rule,
@@ -14,7 +14,7 @@ elements off the subspace that the product produces, the isotropic elements and 
 The article follows the pattern of the companion readings of the same remarkable subspaces under the other
 $\mathbb{C}$-bilinear operations, *Remarkable Subspaces and the Four General Products, Forms and Norms* and
 *Remarkable Subspaces under the General Quaternionic Algebra*; the subspaces themselves, their
-real bases and their elements are *The Six Subspaces*, and the restrictions of the form that
+real bases and their elements are *The Six Subspaces and the Three Decompositions*, and the restrictions of the form that
 the product carries are *Remarkable Subspaces under the General Quaternionic Algebra* and
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
 recomputed. The isotropic elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *The Radical and the Isotropic
@@ -213,7 +213,7 @@ isotropic set appropriate to each.
 
 ## Further Reading
 
-- [The Six Subspaces](the-six-subspaces.html), for the remarkable subspaces, their bases and their elements
+- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces, their bases and their elements
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) and [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the staying-inside statement of the symmetrisation and for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
 - [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the restrictions of the form and their signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic cone

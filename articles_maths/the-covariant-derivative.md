@@ -26,14 +26,14 @@ $$
 
 Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.
 
-*Proof.* The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)^a = X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s^a)$ on each component; the symbol follows.
+*Proof.* The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)_a = X(s_a) + \sum_b \omega_{ab}(X)\,s_b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s_a)$ on each component; the symbol follows.
 
 ### Local Expression and the Affine Space of Connections
 
-In a local frame $e = (e_1, \ldots, e_r)$ over an open set $U$, the connection form $\omega = (\omega^a_{\ b})$ is the matrix of $1$-forms defined by $\nabla e_b = \sum_a \omega^a_{\ b}\otimes e_a$, and a section $s = \sum_b s^b e_b$ has
+In a local frame $e = (e_1, \ldots, e_r)$ over an open set $U$, the connection form $\omega = (\omega_{ab})$ is the matrix of $1$-forms defined by $\nabla e_b = \sum_a \omega_{ab}\otimes e_a$, and a section $s = \sum_b s_b e_b$ has
 
 $$
-\nabla_X s = \sum_a \Bigl(X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b\Bigr) e_a, \qquad \text{equivalently} \quad \nabla = d + \omega
+\nabla_X s = \sum_a \Bigl(X(s_a) + \sum_b \omega_{ab}(X)\,s_b\Bigr) e_a, \qquad \text{equivalently} \quad \nabla = d + \omega
 $$
 
 on the components, where $d$ is the exterior derivative of the coefficient functions. Under a change of frame $e' = eg$ the form transforms as $\omega' = g^{-1}\omega g + g^{-1}dg$.
@@ -107,7 +107,7 @@ $$
 an equation whose local form in a frame pulled back to $[a,b]$ is the linear system of ordinary differential equations
 
 $$
-\left(dV^{a}/dt\right)(t) + \sum_b \omega^a_{\ b}(\left(d\gamma/dt\right)(t))\, V^b(t) = 0, \qquad a = 1, \ldots, r .
+\left(dV_a/dt\right)(t) + \sum_b \omega_{ab}(\left(d\gamma/dt\right)(t))\, V_b(t) = 0, \qquad a = 1, \ldots, r .
 $$
 
 **Theorem (existence and uniqueness).** For every curve $\gamma$ and every initial value $v \in E_{\gamma(a)}$ there is a unique parallel section $V$ along $\gamma$ with $V(a) = v$.
@@ -140,7 +140,7 @@ as $\epsilon \to 0$. Consequently the curvature endomorphisms $R(X,Y)(x)$ span t
 
 ### The Autoparallel Curves
 
-**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $d^2\gamma_{i}/dt^2 + \sum_{j,k}\Gamma^i_{jk}d\gamma_{j}/dt d\gamma_{k}/dt = 0$.
+**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma_{ijk}$ the equation reads $d^2\gamma_{i}/dt^2 + \sum_{j,k}\Gamma_{ijk}d\gamma_{j}/dt d\gamma_{k}/dt = 0$.
 
 The autoparallel curves are the straight lines of the connection: they are the curves whose velocity is parallel along themselves, and in a flat frame they are the linear curves. For the Levi–Civita connection of a Riemannian metric they are the geodesics, and the metric geometry of those curves — the exponential map, the length-minimising property, the completeness — is *Riemannian Geometry* and *Curvature and Geodesics* in Part IV; what belongs to the present article is the differential equation, its existence and uniqueness by *Ordinary Differential Equations*, and the fact that the equation is the same for every connection on the tangent bundle.
 
@@ -182,7 +182,7 @@ Parallel transport solves the equation $\nabla_{d\gamma/dt}V = 0$ along a curve;
 |---|---|
 | $\nabla$, $\nabla_X s = \langle\nabla s, X\rangle$ | Connection and covariant derivative along a vector field |
 | $\nabla_X(fs) = (Xf)s + f\nabla_Xs$ | Leibniz rule; $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$ |
-| $\omega = (\omega^a_{\ b})$, $\nabla = d + \omega$ | Connection form in a frame; local components |
+| $\omega = (\omega_{ab})$, $\nabla = d + \omega$ | Connection form in a frame; local components |
 | $\omega' = g^{-1}\omega g + g^{-1}dg$ | Change of frame |
 | $\Omega^p(M;E)$, $d^\nabla$ | $E$-valued forms and the exterior covariant derivative $d + \omega\wedge\cdot$ |
 | $d^\nabla\beta = d\beta + [\omega,\beta]$ | Action on $\operatorname{End}(E)$-valued forms |
