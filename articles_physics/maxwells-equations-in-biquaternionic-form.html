@@ -115,11 +115,11 @@ $$</p>
 <p>The scalar part $A_0 = i\phi/c$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.</p>
 <p>The coordinate representation of $\tilde{A}$ as a four-vector potential is</p>
 <p>$$
-\tilde{A} = \sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu \;\longleftrightarrow\; A^\mu = (A^0, A^1, A^2, A^3),
+\tilde{A} = \sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu \;\longleftrightarrow\; A_\mu = (A_0, A_1, A_2, A_3),
 $$</p>
 <p>with $e_t = 1$ and $\vec e_x, \vec e_y, \vec e_z$ the quaternion units, and</p>
 <p>$$
-A^0 = \frac{i\phi}{c}, \qquad (A^1, A^2, A^3) = \vec A.
+A_0 = \frac{i\phi}{c}, \qquad (A_1, A_2, A_3) = \vec A.
 $$</p>
 <p>The four-vector representation is a coordinate representation of the biquaternion, not the fundamental object.</p>
 <h2 id="the-biquaternionic-gradient">The Biquaternionic Gradient</h2>
@@ -159,11 +159,11 @@ $$</p>
 $$</p>
 <p>which is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. Equivalently, in tensor language,</p>
 <p>$$
-F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu,
+F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
 $$</p>
 <p>with components</p>
 <p>$$
-F^{\mu\nu} =
+F_{\mu\nu} =
 \begin{pmatrix}
 0 & iE_x/c & iE_y/c & iE_z/c \\
 -iE_x/c & 0 & B_z & -B_y \\
@@ -173,9 +173,9 @@ F^{\mu\nu} =
 $$</p>
 <p>The tensor is antisymmetric:</p>
 <p>$$
-F^{\mu\nu} = -F^{\nu\mu}.
+F_{\mu\nu} = -F_{\nu\mu}.
 $$</p>
-<p><strong>A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.</strong> The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.</p>
+<p><strong>A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.</strong> The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.</p>
 <p>The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by <strong>Ludwik Silberstein</strong> in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the <strong>Riemann–Silberstein vector</strong>; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.</p>
 <h2 id="the-biquaternionic-source">The Biquaternionic Source</h2>
 <p>The source of the electromagnetic field is the <strong>four-current</strong></p>
@@ -269,7 +269,7 @@ $$</p>
 <p>$$
 \tilde{A}_{\mathrm g} = \tilde{A} - \tilde{\nabla} \Gamma,
 $$</p>
-<p>where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A^\mu \to A^\mu - \partial^\mu \Gamma$.</p>
+<p>where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial_\mu \Gamma$.</p>
 <p>Under this transformation, the field-strength biquaternion is invariant:</p>
 <p>$$
 \tilde{F}_{\mathrm g} = \tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g}\right) = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right) = \tilde{F}.
@@ -291,7 +291,7 @@ $$</p>
 <p>$$
 \partial/\partial Q_t A_0 + \mathrm{div}\,\vec A = 0.
 $$</p>
-<p>This is the biquaternionic form of the standard Lorenz condition $\partial/\partial Q_\mu A^\mu = 0$. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation</p>
+<p>This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation</p>
 <p>$$
 \Box \tilde{A} = -\mu \tilde J,
 $$</p>
@@ -299,7 +299,7 @@ $$</p>
 <p>$$
 \tilde J = ic\rho\,e_t + \vec J.
 $$</p>
-<p>This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box A^\mu = -\mu J^\mu$ with $J^\mu = (ic\rho, \vec J)$. Note that the wave equation has a solution if and only if the four-current satisfies the conservation law $\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde J) = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\vec J$.</p>
+<p>This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box A_\mu = -\mu J_\mu$ with $J_\mu = (ic\rho, \vec J)$. Note that the wave equation has a solution if and only if the four-current satisfies the conservation law $\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde J) = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\vec J$.</p>
 <p>The scalar field $S$ has no independent physical meaning. It is a gauge artifact, and the Lorenz gauge is the physical choice that sets it to zero. In the future, if a <strong>physical interpretation</strong> of $S$ is found, it would have to arise from a coupling to a sector of the theory that is not gauge-invariant. For the classical electromagnetic field, $S$ is not physical.</p>
 <p><strong>The gauge function as a velocity potential.</strong> There is an interpretation of the gauge freedom, older than the relativistic one and independent of it, in which the gauge function is a <em>velocity potential</em>. Under $\tilde{A} \to \tilde{A} - \tilde{\nabla}\Gamma$ only the gradient of $\Gamma$ matters, exactly as in the hydrodynamic statement that only the gradient of a potential matters for a velocity and its curl. On the hydrodynamic dictionary set out below, the vector potential is the image of the fluid velocity, the field strength is the image of its vorticity, and the gauge transformation is the freedom to add the gradient of a scalar to the velocity — a change that leaves the vorticity and hence the Lamb vector untouched. This is a formal correspondence and not an explanation of gauge invariance, which the algebraic account above settles on its own; it is recorded because the corpus's own gauge discussion stops at "a choice of gauge, not a physical condition", and the hydrodynamic picture supplies a concrete image of why only a gradient is free.</p>
 <h2 id="the-hydrodynamic-form-of-the-equations">The Hydrodynamic Form of the Equations</h2>
@@ -403,7 +403,7 @@ $$</p>
 <p>which is hyperbolic and in which each of the eight equations carries the field. The author calls it the <strong>Maxwell–Dirac</strong> system because its differential operator coincides with the differential part of the Dirac operator; the corpus's <em>The Biquaternion d'Alembertian and Its Green's Functions</em> records the related shifted-gradient form of the same name, and <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> supplies the <strong>physical interpretation</strong> of $\alpha$ as the attraction–resistance field, its front conditions, and the static limit in which it gives Poisson's equation. The corpus records the system as a genuine first-order hyperbolic completion of the Maxwell pair and takes no position on whether the modification is needed.</p>
 <p><strong>Closure.</strong> The author's own assessment is that the biquaternionic form is mathematically and physically self-consistent but <strong>unclosed</strong>: the field equations do not determine their own charges and currents, and closure requires the <em>material equations</em> for $\rho$ and $\vec j$, supplied in the companion papers. This is the corpus's own recurring theme — the four-current $\tilde J$ must be supplied, not derived — restated in the author's terms, and it is the reason the programme's later papers turn to a law of motion for the charge–current field.</p>
 <p>The three-vector form in <em>Maxwell's Equations in a Material Medium</em> above is the corpus's derivation; the modified system above and the objection that motivates it are recorded from the author's 2016 paper, and the corpus's own equation is not altered by them.</p>
-<p><strong>A counter-claim, from a formulation arranged differently.</strong> One external formulation claims the opposite outcome, and it belongs beside the modification. E. P. J. de Haas (<em>Biquaternion Formulation of Relativistic Tensor Dynamics</em>, arXiv:1401.4470v1, 2013) states that his biquaternion tensor calculus "lacks the extra terms that usually arise in biquaternionic electrodynamics", and he gives the condition in the body: the electromagnetic force biquaternion matches the standard field only if the <strong>Lorenz gauge</strong> holds, $F_0 = \partial/\partial Q_\nu A^\nu = 0$; off that gauge the usual biquaternion expressions for the Lorentz force and for the two inhomogeneous Maxwell equations carry extra terms which his arrangement does not, the terms arising from rearranging the tensor indices into biquaternion slots, an operation he calls external to his system. So the contrast with the $\alpha$-modification is exact and worth stating plainly: the corpus's own Maxwell equations, and the corpus's <em>Gauge Structure</em> section, are reached with no added scalar, and the gauge is fixed by construction; the modification adds a scalar to the field strength because the reduction is held to fail without it; and the counter-claim says the extra terms are an artefact of the mapping and the gauge rather than of the algebra. Both external positions are recorded, attributed, and neither alters the corpus's equation. The full accounting is in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Curved Spacetime and the Biquaternion Framework</em>.</p>
+<p><strong>A counter-claim, from a formulation arranged differently.</strong> One external formulation claims the opposite outcome, and it belongs beside the modification. E. P. J. de Haas (<em>Biquaternion Formulation of Relativistic Tensor Dynamics</em>, arXiv:1401.4470v1, 2013) states that his biquaternion tensor calculus "lacks the extra terms that usually arise in biquaternionic electrodynamics", and he gives the condition in the body: the electromagnetic force biquaternion matches the standard field only if the <strong>Lorenz gauge</strong> holds, that is the divergence of the potential vanishes — he writes $F_0 = 0$ for it, which in the corpus's convention is $\sum_\mu\partial A_\mu/\partial Q_\mu = 0$; off that gauge the usual biquaternion expressions for the Lorentz force and for the two inhomogeneous Maxwell equations carry extra terms which his arrangement does not, the terms arising from rearranging the tensor indices into biquaternion slots, an operation he calls external to his system. So the contrast with the $\alpha$-modification is exact and worth stating plainly: the corpus's own Maxwell equations, and the corpus's <em>Gauge Structure</em> section, are reached with no added scalar, and the gauge is fixed by construction; the modification adds a scalar to the field strength because the reduction is held to fail without it; and the counter-claim says the extra terms are an artefact of the mapping and the gauge rather than of the algebra. Both external positions are recorded, attributed, and neither alters the corpus's equation. The full accounting is in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Curved Spacetime and the Biquaternion Framework</em>.</p>
 <h2 id="the-biquaternionic-energymomentum">The Biquaternionic Energy–Momentum</h2>
 <p>The energy and momentum of the electromagnetic field are encoded in a <strong>biquaternionic energy–momentum</strong>, the halved Hermitian form of the field strength:</p>
 <p>$$
@@ -413,7 +413,7 @@ $$</p>
 <p>$$
 W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$</p>
-<p>The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $ict'$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in <em>The Field-Strength Biquaternion and Its Invariants</em>; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum <strong>tensor</strong> $T^{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.</p>
+<p>The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $ict'$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in <em>The Field-Strength Biquaternion and Its Invariants</em>; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum <strong>tensor</strong> $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.</p>
 <p>The conservation of energy and momentum is expressed by the biquaternionic equation</p>
 <p>$$
 \tilde{\nabla} \tilde{W} = -\tilde{\mathcal F},

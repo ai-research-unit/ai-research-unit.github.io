@@ -165,19 +165,19 @@ $$</p>
 <h2 id="the-spinor-dyad-behind-the-tetrad">The Spinor Dyad Behind the Tetrad</h2>
 <p>Equation (3) also exhibits the tetrad's spinorial origin. Writing the two column spinors</p>
 <p>$$
-o = \begin{pmatrix}1\\0\end{pmatrix}, \qquad \iota = \begin{pmatrix}0\\1\end{pmatrix} \in S,
+o = \begin{pmatrix}1\\0\end{pmatrix}, \qquad o' = \begin{pmatrix}0\\1\end{pmatrix} \in S,
 $$</p>
-<p>the matrix units factorize as $E_{11} = o\,o^\dagger$, $E_{22} = \iota\,\iota^\dagger$, $E_{12} = o\,\iota^\dagger$, $E_{21} = \iota\,o^\dagger$. Hence</p>
+<p>the matrix units factorize as $E_{11} = o\,o^\dagger$, $E_{22} = o'\,o'^\dagger$, $E_{12} = o\,o'^\dagger$, $E_{21} = o'\,o^\dagger$. Hence</p>
 <p>$$
-l = \sqrt2\,i\,o\,o^\dagger, \quad n = \sqrt2\,i\,\iota\,\iota^\dagger, \quad m = \sqrt2\,i\,o\,\iota^\dagger, \quad \bar m = \sqrt2\,i\,\iota\,o^\dagger .
+l = \sqrt2\,i\,o\,o^\dagger, \quad n = \sqrt2\,i\,o'\,o'^\dagger, \quad m = \sqrt2\,i\,o\,o'^\dagger, \quad \bar m = \sqrt2\,i\,o'\,o^\dagger .
 \tag{8}
 $$</p>
-<p>This is the Newman–Penrose <strong>spinor dyad</strong> $\{o,\iota\}$ in the framework's notation, and (8) is the sense in which the tetrad is the image of the dyad under the bilinear map $S\times\bar S\to\mathbb{B}$, $(u,v)\mapsto i\,uv^\dagger$, the framework's form of the algebra-level outer product $u\,v^\dagger$, whose Hermitian part the spinor-module article identifies with the vector representation. The dyad is normalized by the invariant symplectic pairing of the spinor module,</p>
+<p>This is the Newman–Penrose <strong>spinor dyad</strong> $\{o,o'\}$ in the framework's notation, the prime marking the second element, and (8) is the sense in which the tetrad is the image of the dyad under the bilinear map $S\times\bar S\to\mathbb{B}$, $(u,v)\mapsto i\,uv^\dagger$, the framework's form of the algebra-level outer product $u\,v^\dagger$, whose Hermitian part the spinor-module article identifies with the vector representation. The dyad is normalized by the invariant symplectic pairing of the spinor module,</p>
 <p>$$
-\varepsilon(o,\iota) = o_1\iota_2 - o_2\iota_1 = 1, \qquad \varepsilon(g o, g \iota) = \varepsilon(o,\iota) \ \text{ for } g\in SL(2,\mathbb{C}),
+\varepsilon(o,o') = o^{T}\epsilon\,o' = 1, \qquad \varepsilon(g o, g o') = \varepsilon(o,o') \ \text{ for } g\in SL(2,\mathbb{C}),
 $$</p>
 <p>the form $g^{T}\epsilon\,g = \epsilon$ of the read list; it is exactly this normalization, and not the choice of basis, that produces $l\cdot n = -1$ and $m\cdot\bar m = +1$.</p>
-<p>The construction is not tied to the basis dyad. For any dyad with $\varepsilon(o,\iota)=1$ the four legs defined by (8) are null, satisfy $l\cdot n=-1$ and $m\cdot\bar m=+1$, and have all mixed products zero; this was checked symbolically for a general complex dyad, and independently on the explicit real dyad $o=(2,1)$, $\iota=(3,2)$, whose symplectic product is $2\cdot2-1\cdot3=1$. That second dyad was chosen for the check rather than being the one that suggested the construction, and the inner products came out as in (1) on it. For the physical tetrad (2), in which the dyad is real, $\bar m$ is the complex conjugate of $m$; a complex dyad (a spin-boost of the frame) complexifies the legs while leaving the inner products (1) unchanged.</p>
+<p>The construction is not tied to the basis dyad. For any dyad with $\varepsilon(o,o')=1$ the four legs defined by (8) are null, satisfy $l\cdot n=-1$ and $m\cdot\bar m=+1$, and have all mixed products zero; this was checked symbolically for a general complex dyad, and independently on the explicit real dyad $o=(2,1)$, $o'=(3,2)$, whose symplectic product is $2\cdot2-1\cdot3=1$. That second dyad was chosen for the check rather than being the one that suggested the construction, and the inner products came out as in (1) on it. For the physical tetrad (2), in which the dyad is real, $\bar m$ is the complex conjugate of $m$; a complex dyad (a spin-boost of the frame) complexifies the legs while leaving the inner products (1) unchanged.</p>
 <h2 id="spin-coefficients">Spin Coefficients</h2>
 <p>The tetrad is a frame, and a connection is expressed in a frame through its coefficients. Suppose a linear connection $\nabla$ on the material sector is given, metric-compatible with $\langle\cdot,\cdot\rangle_{\natural}$; the parent article records that the algebra carries such a connection but does not select one. For tetrad legs $e_a,e_b,e_c$ define</p>
 <p>$$
@@ -221,7 +221,7 @@ $$
 \Psi_0 = \Psi_{0000}, \quad \Psi_1 = \Psi_{0001}, \quad \Psi_2 = \Psi_{0011}, \quad \Psi_3 = \Psi_{0111}, \quad \Psi_4 = \Psi_{1111},
 \tag{10}
 $$
-where the index $0$ refers to the dyad element $o$ and $1$ to $\iota$. Since $S$ is two-dimensional, $\mathrm{Sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (9); the anti-self-dual part is the complex conjugate spinor $\bar\Psi_{\bar A\bar B\bar C\bar D} \in \mathrm{Sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: <strong>they are the five components of an element of $\mathrm{Sym}^4 S$, the fourth symmetric power of the framework's spinor module.</strong></p>
+where the index $0$ refers to the dyad element $o$ and $1$ to $o'$. Since $S$ is two-dimensional, $\mathrm{Sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (9); the anti-self-dual part is the complex conjugate spinor $\bar\Psi_{\bar A\bar B\bar C\bar D} \in \mathrm{Sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: <strong>they are the five components of an element of $\mathrm{Sym}^4 S$, the fourth symmetric power of the framework's spinor module.</strong></p>
 <p>A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{Sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The Weyl spinor is $\mathrm{Sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{Sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{Sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.</p>
 <h2 id="boost-weights-and-the-rotations-of-the-tetrad">Boost Weights and the Rotations of the Tetrad</h2>
 <p>The tetrad is defined up to the six-parameter local Lorentz group, and the five scalars transform by the index structure of (9). It is useful to split that group into the two-parameter boost–spin subgroup and the two null rotations.</p>
@@ -230,13 +230,13 @@ where the index $0$ refers to the dyad element $o$ and $1$ to $\iota$. Since $S$
 l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta)m, \qquad \bar m \mapsto \exp(-i\theta)\bar m, \qquad A>0,\ \theta\in\mathbb{R},
 \tag{11}
 $$</p>
-<p>which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $\iota\mapsto A^{-1/2}\exp(-i\theta/2)\iota$. Substituting (11) into (9), each scalar picks up a monomial:</p>
+<p>which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $o'\mapsto A^{-1/2}\exp(-i\theta/2)o'$. Substituting (11) into (9), each scalar picks up a monomial:</p>
 <p>$$
 \boxed{\;\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4\;}.
 \tag{12}
 $$</p>
 <p>The exponent $2-k$ is the <strong>boost weight</strong> of $\Psi_k$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.</p>
-<p>Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\Psi_{k,2}/\Psi_k$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\Psi_k$ carries $4-k$ dyad indices of type $o$ and $k$ of type $\iota$, while $o$ and $\iota$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\Psi_k$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.</p>
+<p>Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\Psi_{k,2}/\Psi_k$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\Psi_k$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\Psi_k$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.</p>
 <p>The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\Psi_k$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.</p>
 <p>The null rotations complete the group. A null rotation about $l$ fixes $l$ and shifts the other three legs,</p>
 <p>$$
@@ -246,7 +246,7 @@ $$</p>
 <p>which again preserves all the inner products (1). Under (13) the scalar $\Psi_0$ is invariant. This is forced by the index structure: $\Psi_0$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $C_{abcd}l^al^bl^cm^d$ and $C_{abcd}l^am^bl^cl^d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\Psi_4$ invariant by the same argument with $l\leftrightarrow n$.</p>
 <p>The invariance of the two extreme scalars is what makes the principal-null-direction conditions meaningful. The condition $\Psi_0=0$ is unchanged by a null rotation about $l$, so it is a property of the null direction $l$ rather than of the particular tetrad containing it: it says that $l$ is a principal null direction. The same holds for $\Psi_4=0$ and $n$. The remaining scalars shift under (13) by polynomial combinations of their partners, with the shifts graded by the boost weights; this is the mechanism by which a null rotation can align $l$ with a repeated principal null direction, as used in the classification below.</p>
 <h2 id="petrov-types-and-the-vanishing-pattern">Petrov Types and the Vanishing Pattern</h2>
-<p>The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (10) this is a statement about a binary quartic. With $k^A = o^A + x\,\iota^A$,</p>
+<p>The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (10) this is a statement about a binary quartic. With $k^A = o^A + x\,o'^A$,</p>
 <p>$$
 q(x) \;=\; \Psi_{ABCD}\,k^Ak^Bk^Ck^D \;=\; \Psi_0 + 4x\,\Psi_1 + 6x^2\,\Psi_2 + 4x^3\,\Psi_3 + x^4\,\Psi_4 .
 \tag{14}
@@ -367,8 +367,8 @@ $$</p>
 <td>self-dual Weyl spinors, complex dimension $5$</td>
 </tr>
 <tr>
-<td>$o,\iota$</td>
-<td>normalized spinor dyad, $\varepsilon(o,\iota)=1$</td>
+<td>$o,o'$</td>
+<td>normalized spinor dyad, $\varepsilon(o,o')=1$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_1,\tilde\Pi_2,\vec\Upsilon_1,\vec\Upsilon_2$</td>
@@ -387,7 +387,7 @@ $$</p>
 <td>tetrad metric, off-diagonal, (5)</td>
 </tr>
 <tr>
-<td>$\varepsilon(o,\iota)$</td>
+<td>$\varepsilon(o,o')$</td>
 <td>symplectic pairing of the spinor module</td>
 </tr>
 <tr>

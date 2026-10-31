@@ -84,17 +84,17 @@
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$</p>
-<p>the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p^\mu=(E,\vec p)$. The companion <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure and the Gamma Matrices</em>, fixes $\iota_{\mathrm{Cl}}(e_t)=I_4$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$, $\iota_{\mathrm{Cl}}(i)=-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$. The propagator conventions are those of the companion <em>The Feynman Propagator in Biquaternionic Form</em>, with</p>
+<p>the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure and the Gamma Matrices</em>, fixes $\iota_{\mathrm{Cl}}(e_t)=I_4$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$, $\iota_{\mathrm{Cl}}(i)=-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$. The propagator conventions are those of the companion <em>The Feynman Propagator in Biquaternionic Form</em>, with</p>
 <p>$$
 S_F(p)=\frac{i(\gamma_{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}=-\frac{i(\gamma_{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
 $$</p>
 <p>The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.</p>
 <h2 id="the-vertex-function-and-the-form-factors">The Vertex Function and the Form Factors</h2>
-<p><strong>The vertex.</strong> The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\gamma_\mu p_\mu u=mu$, $\bar w_2\gamma_{\mu} (p_{2})_{\mu}=m\bar w_2$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:</p>
+<p><strong>The vertex.</strong> The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma_\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\gamma_\mu p_\mu u=mu$, $\bar w_2\gamma_{\mu} (p_{2})_{\mu}=m\bar w_2$, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:</p>
 <p>$$
-\Gamma^\mu(p_2,p)=\gamma_\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
+\Gamma_\mu(p_2,p)=\gamma_\mu F_1(k^2)+\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}F_2(k^2) ,
 \qquad
-\sigma^{\mu\nu}=\frac{i}{2}\big[\gamma_\mu,\gamma_\nu\big] .
+\sigma_{\mu\nu}=\frac{i}{2}\big[\gamma_\mu,\gamma_\nu\big] .
 $$</p>
 <p>$F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is</p>
 <p>$$
@@ -102,17 +102,17 @@ $$</p>
 \qquad
 a=\frac{g-2}{2}=F_2(0)\;}.
 $$</p>
-<p>At tree level $\Gamma^\mu=\gamma_\mu$, so $F_1=1$, $F_2=0$ and $g=2$: the Dirac value, which is one-particle physics and is settled elsewhere in the corpus. What this article computes is the correction to it.</p>
-<p><strong>Why two structures.</strong> The two structures are distinguished by symmetry, and that is where the framework's interpretation begins. $\gamma_\mu$ is a single generator — an odd element of the Clifford algebra; $\sigma^{\mu\nu}$ is a <em>commutator of two</em> generators — a bivector, an even element. The vertex is a sum of an odd and an even Clifford structure, and only the even (bivector) one carries the spin-magnetic coupling. The decomposition of a product of two generators,</p>
+<p>At tree level $\Gamma_\mu=\gamma_\mu$, so $F_1=1$, $F_2=0$ and $g=2$: the Dirac value, which is one-particle physics and is settled elsewhere in the corpus. What this article computes is the correction to it.</p>
+<p><strong>Why two structures.</strong> The two structures are distinguished by symmetry, and that is where the framework's interpretation begins. $\gamma_\mu$ is a single generator — an odd element of the Clifford algebra; $\sigma_{\mu\nu}$ is a <em>commutator of two</em> generators — a bivector, an even element. The vertex is a sum of an odd and an even Clifford structure, and only the even (bivector) one carries the spin-magnetic coupling. The decomposition of a product of two generators,</p>
 <p>$$
 \gamma_\mu\gamma_\nu=g_{\mu\nu}I_4+\tfrac12\big[\gamma_\mu,\gamma_\nu\big]
-=g^{\mu\nu}I_4-i\sigma^{\mu\nu},
+=g_{\mu\nu}I_4-i\sigma_{\mu\nu},
 $$</p>
 <p>is therefore the exact algebraic place where the two structures separate: the symmetric part is the metric (one number per pair of indices), the antisymmetric part is the bivector. The magnetic form factor is the coefficient of the antisymmetric part.</p>
 <p><strong>The Gordon decomposition.</strong> The separation is not merely formal; on shell it is an identity, the Gordon decomposition, which expresses the single-generator vertex as the sum of a convection term and the magnetic term:</p>
 <p>$$
 \bar w(p_2)\gamma_\mu w(p)
-=\bar w(p_2)\left[\frac{(p+p_2)^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
+=\bar w(p_2)\left[\frac{(p+p_2)_\mu}{2m}+\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}\right]w(p) .
 $$</p>
 <p>The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\gamma_{\mu} p_{\mu}+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w_2\gamma_\mu w=\bar w_2(\gamma_{\nu} (p_{2})_{\nu}\gamma_\mu+\gamma_\mu\gamma_{\rho} p_{\rho})w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction <em>to the coefficient of the second term</em>; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.</p>
 <h2 id="the-biquaternion-transcription">The Biquaternion Transcription</h2>
@@ -140,19 +140,19 @@ $$</p>
 \qquad
 i\vec e_\mu\in\mathbb{M}_+ \quad(\text{Hermitian, informational})\;}.
 $$</p>
-<p>The rotation generators, which are the bivectors with one factor of the central $i$, are the $\mathbb{M}_+$ elements $i\vec e_\mu$ — the same generators $\tilde S_\mu=\tfrac{\hbar}{2}i\vec e_\mu$ that the companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> and the one-particle Dirac article give the spin. The two levels are worth separating, because the corpus uses both: the <em>Hermitian</em> rotation-type generators $S^{\mu\rho}=\tfrac{i}{4}[\gamma_\mu,\gamma_\rho]=\tfrac12\sigma^{\mu\rho}$ lie at the $\mathbb{M}_+$ level $i\vec e_\mu$, while the <em>anti-Hermitian</em> boost-type generators $S^{0\mu}=\tfrac{i}{4}[\gamma_0,\gamma_\mu]$ lie at the $\mathbb{M}_-$ level $\vec e_\mu$; correspondingly the module's rotation rotor $\exp(\tfrac{\theta}{2}n\cdot e)$ has the anti-Hermitian generator $\tfrac12n\cdot e\in\mathbb{M}_-$, and the Hermitian boost rotor $\exp(\tfrac{\phi}{2}i\,n\cdot e)$ has the Hermitian generator $\tfrac12i\,n\cdot e\in\mathbb{M}_+$. The passage between the two levels is multiplication by the central $i$, which is exactly the element that exchanges the sectors. The magnetic coupling to an external field is a rotation-type structure and so belongs with the spin, in the informational sector; the convection (metric) part is central, and the electric (boost-type) structure is the material-sector one. The anomaly, being a correction to the magnetic structure, is an $\mathbb{M}_+$ effect — the same sector as the observable the anomaly corrects.</p>
-<p><strong>The bivector algebra and its two sectors.</strong> The bivectors close on the Lorentz algebra, and the closure was verified with residual $0$: with the Lorentz tensor $S^{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]=\tfrac12\sigma^{\mu\nu}$, the factor $i$ being what makes the rotation generators Hermitian,</p>
+<p>The rotation generators, which are the bivectors with one factor of the central $i$, are the $\mathbb{M}_+$ elements $i\vec e_\mu$ — the same generators $\tilde S_\mu=\tfrac{\hbar}{2}i\vec e_\mu$ that the companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> and the one-particle Dirac article give the spin. The two levels are worth separating, because the corpus uses both: the <em>Hermitian</em> rotation-type generators $S_{\mu\rho}=\tfrac{i}{4}[\gamma_\mu,\gamma_\rho]=\tfrac12\sigma_{\mu\rho}$ lie at the $\mathbb{M}_+$ level $i\vec e_\mu$, while the <em>anti-Hermitian</em> boost-type generators $S_{0\mu}=\tfrac{i}{4}[\gamma_0,\gamma_\mu]$ lie at the $\mathbb{M}_-$ level $\vec e_\mu$; correspondingly the module's rotation rotor $\exp(\tfrac{\theta}{2}n\cdot e)$ has the anti-Hermitian generator $\tfrac12n\cdot e\in\mathbb{M}_-$, and the Hermitian boost rotor $\exp(\tfrac{\phi}{2}i\,n\cdot e)$ has the Hermitian generator $\tfrac12i\,n\cdot e\in\mathbb{M}_+$. The passage between the two levels is multiplication by the central $i$, which is exactly the element that exchanges the sectors. The magnetic coupling to an external field is a rotation-type structure and so belongs with the spin, in the informational sector; the convection (metric) part is central, and the electric (boost-type) structure is the material-sector one. The anomaly, being a correction to the magnetic structure, is an $\mathbb{M}_+$ effect — the same sector as the observable the anomaly corrects.</p>
+<p><strong>The bivector algebra and its two sectors.</strong> The bivectors close on the Lorentz algebra, and the closure was verified with residual $0$: with the Lorentz tensor $S_{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]=\tfrac12\sigma_{\mu\nu}$, the factor $i$ being what makes the rotation generators Hermitian,</p>
 <p>$$
-\big[S^{\mu\nu},S^{\rho\sigma}\big]
-=i\big(g^{\nu\rho}S^{\mu\sigma}-g^{\mu\rho}S^{\nu\sigma}-g^{\nu\sigma}S^{\mu\rho}+g^{\mu\sigma}S^{\nu\rho}\big).
+\big[S_{\mu\nu},S_{\rho\sigma}\big]
+=i\big(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho}\big).
 $$</p>
 <p>The Hermiticity split was verified too, and it is the sector split:</p>
 <p>$$
-\big(S^{\mu\rho}\big)^\dagger=S^{\mu\rho}\in\mathbb{M}_+ \quad(\text{rotations, magnetic}),
+\big(S_{\mu\rho}\big)^\dagger=S_{\mu\rho}\in\mathbb{M}_+ \quad(\text{rotations, magnetic}),
 \qquad
-\big(S^{0\mu}\big)^\dagger=-S^{0\mu}\in\mathbb{M}_- \quad(\text{boosts, electric}).
+\big(S_{0\mu}\big)^\dagger=-S_{0\mu}\in\mathbb{M}_- \quad(\text{boosts, electric}).
 $$</p>
-<p>The bivector part of a rotation-type generator is $\gamma_\mu\gamma_\rho=\iota_{\mathrm{Cl}}(\vec e_\nu)$, a material-sector direction, while the Hermitian generator itself, $\tfrac12\sigma^{\mu\rho}=\tfrac{i}{2}\gamma_\mu\gamma_\rho$, is the spin matrix that the anomaly multiplies, and that is the level at which the informational-sector label $i\vec e_\nu$ applies. The magnetic bivector is the spin matrix itself: $\sigma^{12}=\mathrm{diag}(\sigma^3,\sigma^3)=\Sigma^3$, verified entry by entry, which is the matrix statement that the anomalous coupling multiplies the spin matrix of the companion quantization article. Two sectors, one bivector algebra: the anomaly's structure is the informational one.</p>
+<p>The bivector part of a rotation-type generator is $\gamma_\mu\gamma_\rho=\iota_{\mathrm{Cl}}(\vec e_\nu)$, a material-sector direction, while the Hermitian generator itself, $\tfrac12\sigma_{\mu\rho}=\tfrac{i}{2}\gamma_\mu\gamma_\rho$, is the spin matrix that the anomaly multiplies, and that is the level at which the informational-sector label $i\vec e_\nu$ applies. The magnetic bivector is the spin matrix itself: $\sigma_{12}=\mathrm{diag}(\sigma^3,\sigma^3)=\Sigma^3$, verified entry by entry, which is the matrix statement that the anomalous coupling multiplies the spin matrix of the companion quantization article. Two sectors, one bivector algebra: the anomaly's structure is the informational one.</p>
 <p><strong>The Clifford reduction.</strong> The algebraic work behind the loop computation is the reduction of the numerator, and it rests on four contraction identities of the generators, all verified in the metric $g=\mathrm{diag}(+1,-1,-1,-1)$:</p>
 <p>$$
 \gamma_\mu\gamma_\mu=4I_4 ,
@@ -168,10 +168,10 @@ $$</p>
 \mathrm{tr}\big(\gamma_\mu\gamma_\nu\big)=4g_{\mu\nu} ,
 \qquad
 \mathrm{tr}\big(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big)
-=4\big(g^{\mu\nu}g^{\rho\sigma}-g^{\mu\rho}g^{\nu\sigma}+g^{\mu\sigma}g^{\nu\rho}\big),
+=4\big(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\big),
 $$</p>
 <p>were verified entry by entry with residual $0$. These are the identities that convert any one-loop numerator written in the generators into sums of metric factors and bivectors — that is, into the two structures of the vertex. The framework does not change them; it gives them a home, since the metric factor is the central direction $e_t$ and the bivector is one of the six directions tabulated above.</p>
-<p><strong>What this transcription does and does not do.</strong> It identifies <em>which</em> algebraic object the anomaly multiplies ($\sigma^{\mu\nu}$, hence a direction $\vec e_\mu$ or $i\vec e_\mu$, hence a sector), and it exhibits the Gordon split as the symmetric-versus-antisymmetric split of a product of generators. It does not compute the loop integral, and it does not fix $\alpha$.</p>
+<p><strong>What this transcription does and does not do.</strong> It identifies <em>which</em> algebraic object the anomaly multiplies ($\sigma_{\mu\nu}$, hence a direction $\vec e_\mu$ or $i\vec e_\mu$, hence a sector), and it exhibits the Gordon split as the symmetric-versus-antisymmetric split of a product of generators. It does not compute the loop integral, and it does not fix $\alpha$.</p>
 <h2 id="the-one-loop-correction">The One-Loop Correction</h2>
 <p><strong>The diagram.</strong> The order-$\alpha$ correction to the vertex is the one-loop diagram in which the fermion line exchanges a virtual photon with itself. Its value is standard, and the reduction to form factors is standard; the result is</p>
 <p>$$
@@ -220,14 +220,14 @@ $$</p>
 <h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
 <p>Four statements, in decreasing order of strength.</p>
 <ul>
-<li><strong>It names the structure.</strong> The magnetic form factor multiplies the bivector $\sigma^{\mu\nu}$, which under the dictionary is a direction $\vec e_\mu$ or $i\vec e_\mu$ of the algebra; the anomaly is therefore a correction to an $\mathbb{M}_+$ (informational) object, the same sector as the spin, while the tree-level convection part is the central metric direction. This is a real bookkeeping statement, and it is the framework's.</li>
-<li><strong>It exhibits the Gordon split algebraically.</strong> The split of the vertex into convection and magnetic parts is the split of a product of two generators into its symmetric and antisymmetric parts, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma^{\mu\nu}$, which in the algebra's terms is central-versus-bivector.</li>
-<li><strong>It fixes the conventions.</strong> The Clifford metric, the sign of $\sigma^{\mu\nu}$, the dictionary and the propagator's $i\epsilon$ are fixed by the companion articles, and the standard loop integral is transcribed into them without translation error.</li>
+<li><strong>It names the structure.</strong> The magnetic form factor multiplies the bivector $\sigma_{\mu\nu}$, which under the dictionary is a direction $\vec e_\mu$ or $i\vec e_\mu$ of the algebra; the anomaly is therefore a correction to an $\mathbb{M}_+$ (informational) object, the same sector as the spin, while the tree-level convection part is the central metric direction. This is a real bookkeeping statement, and it is the framework's.</li>
+<li><strong>It exhibits the Gordon split algebraically.</strong> The split of the vertex into convection and magnetic parts is the split of a product of two generators into its symmetric and antisymmetric parts, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}$, which in the algebra's terms is central-versus-bivector.</li>
+<li><strong>It fixes the conventions.</strong> The Clifford metric, the sign of $\sigma_{\mu\nu}$, the dictionary and the propagator's $i\epsilon$ are fixed by the companion articles, and the standard loop integral is transcribed into them without translation error.</li>
 <li><strong>It does not supply the numbers.</strong> The value of $\alpha$, the coefficient $A_2$, and the finiteness of the anomaly are not consequences of the algebra. The finiteness is the Ward identity's; the coefficients are the theory's; $\alpha$ is empirical. The position is exactly the one the propagator companion records for the $i\epsilon$ and the mass article records for the masses: the algebra names the axis, and physics fixes its magnitude and orientation.</li>
 </ul>
 <p><strong>A note on what the corpus does not do.</strong> The axial anomaly, the anomaly-cancellation conditions and the Fujikawa method belong to the particle-physics subcategory; the trace anomaly and the functional determinant belong to the generalities subcategory. This article is the magnetic moment only, and it does not borrow their arguments.</p>
 <h2 id="verification">Verification</h2>
-<p>All numerics are exact matrix arithmetic in plain Python, in the representatives fixed by the companion articles: $\gamma_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$, $\gamma_\mu=\begin{pmatrix}0&\sigma^\mu\\-\sigma^\mu&0\end{pmatrix}$.</p>
+<p>All numerics are exact matrix arithmetic in plain Python, in the representatives fixed by the companion articles: $\gamma_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$, $\gamma_\mu=\begin{pmatrix}0&\sigma_\mu\\-\sigma_\mu&0\end{pmatrix}$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -258,11 +258,11 @@ $$</p>
 </tr>
 <tr>
 <td>Bivector algebra</td>
-<td>$[S^{\mu\nu},S^{\rho\sigma}]=i(g_{\nu\rho}S^{\mu\sigma}-g_{\mu\rho}S^{\nu\sigma}-g_{\nu\sigma}S^{\mu\rho}+g_{\mu\sigma}S^{\nu\rho})$ with $S^{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]$: residual $0$</td>
+<td>$[S_{\mu\nu},S_{\rho\sigma}]=i(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho})$ with $S_{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]$: residual $0$</td>
 </tr>
 <tr>
 <td>Generator Hermiticity</td>
-<td>$(S^{\mu\rho})^\dagger=S^{\mu\rho}$, $(S^{0k})^\dagger=-S^{0k}$, and $\sigma^{12}=2S^{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$</td>
+<td>$(S_{\mu\rho})^\dagger=S_{\mu\rho}$, $(S_{0k})^\dagger=-S_{0k}$, and $\sigma_{12}=2S_{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$</td>
 </tr>
 <tr>
 <td>Sectors</td>
@@ -270,7 +270,7 @@ $$</p>
 </tr>
 <tr>
 <td>Gordon identity</td>
-<td>$\bar w_2\gamma_\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$</td>
+<td>$\bar w_2\gamma_\mu w=\bar w_2[(p+p_2)_\mu+i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$</td>
 </tr>
 <tr>
 <td>Parent identity</td>
@@ -323,13 +323,13 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,</p>
 <p>$$
-\Gamma^\mu=\gamma_\mu F_1+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2 ,
+\Gamma_\mu=\gamma_\mu F_1+\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}F_2 ,
 \qquad
-\sigma^{\mu\nu}=\frac{i}{2}[\gamma_\mu,\gamma_\nu],
+\sigma_{\mu\nu}=\frac{i}{2}[\gamma_\mu,\gamma_\nu],
 \qquad
 g=2(1+F_2(0)) ,
 $$</p>
-<p>with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two generators, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma^{\mu\nu}$; the Gordon decomposition exhibits the split on shell and was verified to $3.0\times10^{-15}$ on random on-shell spinors. Under the dictionary the six bivectors are the six algebra directions, $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma_\mu\gamma_\rho$ and $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$, so the magnetic structure is the informational-sector ($\mathbb{M}_+$) object $i\vec e_\mu$ at the level of the Hermitian generators — the same sector as the spin — with bivector part $\iota_{\mathrm{Cl}}(\vec e_\mu)$, and the convection structure is central.</p>
+<p>with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two generators, $\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}$; the Gordon decomposition exhibits the split on shell and was verified to $3.0\times10^{-15}$ on random on-shell spinors. Under the dictionary the six bivectors are the six algebra directions, $\iota_{\mathrm{Cl}}(\vec e_\mu)=\gamma_\mu\gamma_\rho$ and $\iota_{\mathrm{Cl}}(i\vec e_\mu)=\gamma_0\gamma_\mu$, so the magnetic structure is the informational-sector ($\mathbb{M}_+$) object $i\vec e_\mu$ at the level of the Hermitian generators — the same sector as the spin — with bivector part $\iota_{\mathrm{Cl}}(\vec e_\mu)$, and the convection structure is central.</p>
 <p>The one-loop representation of $F_2$ reduces at $k^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.1596521807\times10^{-3}$ at the $5\times10^{-11}$ level. The Clifford trace and contraction identities on which the reduction rests were verified with residual $0$.</p>
 <p>The algebra supplies the tensor structure, the sector placement and the conventions; it does not supply $\alpha$, the coefficients, or the Ward-identity argument that makes the anomaly finite. On this problem, as on the $i\epsilon$ and the masses, the framework names the axis and physics fixes the magnitude.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -342,8 +342,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Gamma^\mu(p_2,p)$</td>
-<td>Electromagnetic vertex; $-ie\Gamma^\mu$ is the amplitude</td>
+<td>$\Gamma_\mu(p_2,p)$</td>
+<td>Electromagnetic vertex; $-ie\Gamma_\mu$ is the amplitude</td>
 </tr>
 <tr>
 <td>$F_1(k^2),F_2(k^2)$</td>
@@ -354,15 +354,15 @@ $$</p>
 <td>Gyromagnetic ratio and anomaly</td>
 </tr>
 <tr>
-<td>$\sigma^{\mu\nu}=\tfrac i2[\gamma_\mu,\gamma_\nu]$</td>
+<td>$\sigma_{\mu\nu}=\tfrac i2[\gamma_\mu,\gamma_\nu]$</td>
 <td>Bivector (magnetic) structure</td>
 </tr>
 <tr>
-<td>$\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma^{\mu\nu}$</td>
+<td>$\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}$</td>
 <td>Symmetric/antisymmetric generator split</td>
 </tr>
 <tr>
-<td>$\bar w_2\gamma_\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$</td>
+<td>$\bar w_2\gamma_\mu w=\bar w_2[(p+p_2)_\mu+i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu]w/2m$</td>
 <td>Gordon decomposition (verified $3.0\times10^{-15}$)</td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ $$</p>
 <li>T. Aoyama, M. Hayakawa, T. Kinoshita and M. Nio, "Tenth-order QED contribution to the electron $g-2$ and an improved value of the fine structure constant," <em>Physical Review Letters</em> <strong>109</strong> (2012) 111807, for the state of the electron anomaly and its use as an $\alpha$ determination.</li>
 <li>B. Odom, D. Hanneke, B. D'Urso and G. Gabrielse, "New measurement of the electron magnetic moment using a one-electron quantum cyclotron," <em>Physical Review Letters</em> <strong>97</strong> (2006) 030801, and D. Hanneke, S. Fogwell and G. Gabrielse, "New measurement of the electron magnetic moment and the fine structure constant," <em>Physical Review Letters</em> <strong>100</strong> (2008) 120801, for the measurements quoted here.</li>
 <li>F. Jegerlehner and A. Nyffeler, "The muon $g-2$," <em>Physics Reports</em> <strong>477</strong> (2009) 1–110, for the decomposition of the anomaly into QED, electroweak and hadronic parts in the muon case.</li>
-<li>R. Penrose and W. Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the Clifford algebra, the bivectors and the $\sigma^{\mu\nu}$ conventions.</li>
+<li>R. Penrose and W. Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the Clifford algebra, the bivectors and the $\sigma_{\mu\nu}$ conventions.</li>
 </ul>
       </div>
     </main>
