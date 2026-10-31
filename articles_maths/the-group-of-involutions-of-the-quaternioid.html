@@ -88,22 +88,22 @@ Its fixed space is the scalar line $\mathbb{R}_{\mathbb{H}}$ and its anti-fixed 
 <h2 id="the-inner-involutions">The Inner Involutions</h2>
 <p>Let $\nu$ be a unit imaginary quaternion, $\nu^2=-e_t$, and let the <strong>inner conjugation</strong> by $\nu$ be
 $$
-\iota_\nu(\tilde q)=\nu\,\tilde q\,\nu^{-1} .
+\operatorname{Ad}_\nu(\tilde q)=\nu\,\tilde q\,\nu^{-1} .
 $$</p>
-<p><strong>Theorem.</strong> For a unit imaginary $\nu$, the map $\iota_\nu$ is an involutive automorphism of $\mathbb{H}$. It depends only on the axis line $\mathbb{R}\nu$, that is, $\iota_\nu=\iota_{-\nu}$; it acts as the identity on the plane $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ and as $-1$ on the orthogonal plane $\nu^\perp=\{x\in\mathrm{Vect}(\mathbb{H}):\nu\cdot x=0\}$. The two planes $\mathbb{C}_\nu$ and $\nu^\perp$ are the eigenspaces of $\iota_\nu$.</p>
-<p><strong>Proof.</strong> Since $\nu$ is a unit, $\nu^{-1}=\nu^{\natural}=-\nu$, and $\iota_\nu(\tilde q)=\nu \tilde q\nu^{\natural}$; the map is $\mathbb{R}$-linear, and it is multiplicative because $\iota_\nu(\tilde q_1\tilde q_2)=\nu \tilde q_1\tilde q_2\nu^{-1}=(\nu \tilde q_1\nu^{-1})(\nu \tilde q_2\nu^{-1})$. For the square, $\nu$ being central in the subalgebra it generates, $\iota_\nu^2(\tilde q)=\nu^2\tilde q\nu^{-2}=(-1)\tilde q(-1)=\tilde q$. The dependence on the line and the action on the two subspaces are read from the product: $\nu\nu\nu^{-1}=\nu$, $e_t$ is fixed, and for $x\perp\nu$ the product $\nu x$ is again orthogonal to $\nu$ while $\nu x\nu^{-1}=-x$; a two-line coordinate computation with $\nu=\vec e_x$ gives the plane $\vec e_y,\vec e_z$ with both signs negated.</p>
-<p>Two inner involutions coincide exactly when their axes coincide: $\iota_{\nu}=\iota_{\mu}$ for unit imaginaries $\nu,\mu$ if and only if $\nu=\pm\mu$. In particular there is <strong>one inner involution for each axis line</strong> of the vector subspace, and the family is a sphere of axes, not a finite set. The fixed plane $\mathbb{C}_\nu$ and the negated plane $\nu^\perp$ are the axis decomposition of <em>Decompositions Along the Remarkable Subspaces of the Quaternions</em>, below this article in this category.</p>
+<p><strong>Theorem.</strong> For a unit imaginary $\nu$, the map $\operatorname{Ad}_\nu$ is an involutive automorphism of $\mathbb{H}$. It depends only on the axis line $\mathbb{R}\nu$, that is, $\operatorname{Ad}_\nu=\operatorname{Ad}_{-\nu}$; it acts as the identity on the plane $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ and as $-1$ on the orthogonal plane $\nu^\perp=\{x\in\mathrm{Vect}(\mathbb{H}):\nu\cdot x=0\}$. The two planes $\mathbb{C}_\nu$ and $\nu^\perp$ are the eigenspaces of $\operatorname{Ad}_\nu$.</p>
+<p><strong>Proof.</strong> Since $\nu$ is a unit, $\nu^{-1}=\nu^{\natural}=-\nu$, and $\operatorname{Ad}_\nu(\tilde q)=\nu \tilde q\nu^{\natural}$; the map is $\mathbb{R}$-linear, and it is multiplicative because $\operatorname{Ad}_\nu(\tilde q_1\tilde q_2)=\nu \tilde q_1\tilde q_2\nu^{-1}=(\nu \tilde q_1\nu^{-1})(\nu \tilde q_2\nu^{-1})$. For the square, $\nu$ being central in the subalgebra it generates, $\operatorname{Ad}_\nu^2(\tilde q)=\nu^2\tilde q\nu^{-2}=(-1)\tilde q(-1)=\tilde q$. The dependence on the line and the action on the two subspaces are read from the product: $\nu\nu\nu^{-1}=\nu$, $e_t$ is fixed, and for $x\perp\nu$ the product $\nu x$ is again orthogonal to $\nu$ while $\nu x\nu^{-1}=-x$; a two-line coordinate computation with $\nu=\vec e_x$ gives the plane $\vec e_y,\vec e_z$ with both signs negated.</p>
+<p>Two inner involutions coincide exactly when their axes coincide: $\operatorname{Ad}_{\nu}=\operatorname{Ad}_{\mu}$ for unit imaginaries $\nu,\mu$ if and only if $\nu=\pm\mu$. In particular there is <strong>one inner involution for each axis line</strong> of the vector subspace, and the family is a sphere of axes, not a finite set. The fixed plane $\mathbb{C}_\nu$ and the negated plane $\nu^\perp$ are the axis decomposition of <em>Decompositions Along the Remarkable Subspaces of the Quaternions</em>, below this article in this category.</p>
 <h2 id="the-reflections">The Reflections</h2>
-<p>Beside the inner automorphism $\iota_\nu$ stands the map
+<p>Beside the inner automorphism $\operatorname{Ad}_\nu$ stands the map
 $$
-\rho_\nu=-\iota_\nu:\quad \tilde q\longmapsto-\nu \tilde q\nu^{-1} .
+\rho_\nu=-\operatorname{Ad}_\nu:\quad \tilde q\longmapsto-\nu \tilde q\nu^{-1} .
 $$</p>
 <p><strong>Proposition.</strong> For a unit imaginary $\nu$, the map $\rho_\nu$ is an involution, $\rho_\nu^2=\operatorname{id}$; it fixes the plane $\nu^\perp$ pointwise and negates the plane $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$, so on the vector subspace it fixes the axis line's orthogonal plane and negates the axis line $\mathbb{R}\nu$; and it satisfies the twisted multiplicativity
 $$
 \rho_\nu(\tilde q_1\tilde q_2)=-\rho_\nu(\tilde q_1)\rho_\nu(\tilde q_2).
 $$
 On the vector subspace it is the reflection in the plane $\nu^\perp$.</p>
-<p><strong>Proof.</strong> The square is clear from $\iota_\nu^2=\operatorname{id}$; the two subspaces exchange their roles with respect to $\iota_\nu$, so $\rho_\nu$ fixes what $\iota_\nu$ negates and negates what $\iota_\nu$ fixes. For the multiplicativity, $\rho_\nu(\tilde q_1\tilde q_2)=-\nu \tilde q_1\tilde q_2\nu^{-1}=-(\nu \tilde q_1\nu^{-1})(\nu \tilde q_2\nu^{-1})=\iota_\nu(\tilde q_1)\iota_\nu(\tilde q_2)\cdot(-1)=-\rho_\nu(\tilde q_1)\rho_\nu(\tilde q_2)$.</p>
+<p><strong>Proof.</strong> The square is clear from $\operatorname{Ad}_\nu^2=\operatorname{id}$; the two subspaces exchange their roles with respect to $\operatorname{Ad}_\nu$, so $\rho_\nu$ fixes what $\operatorname{Ad}_\nu$ negates and negates what $\operatorname{Ad}_\nu$ fixes. For the multiplicativity, $\rho_\nu(\tilde q_1\tilde q_2)=-\nu \tilde q_1\tilde q_2\nu^{-1}=-(\nu \tilde q_1\nu^{-1})(\nu \tilde q_2\nu^{-1})=\operatorname{Ad}_\nu(\tilde q_1)\operatorname{Ad}_\nu(\tilde q_2)\cdot(-1)=-\rho_\nu(\tilde q_1)\rho_\nu(\tilde q_2)$.</p>
 <p>The reflection is <em>not</em> in the group generated by the natural sign and the inner involutions, every element of that group being multiplicative (an automorphism or an anti-automorphism); it enters the separate list of the <strong>involutions</strong> in the sense of order-two maps of the set.</p>
 <h2 id="the-involutive-anti-automorphisms">The Involutive Anti-Automorphisms</h2>
 <p>The natural sign is an anti-automorphism; the inner conjugations are automorphisms. The article classifies the anti-automorphisms that are involutions.</p>
@@ -120,12 +120,12 @@ and $\sigma_a$ is an involution exactly when $a^2$ is central, that is, exactly 
 $$
 \sigma_a(\tilde q_1\tilde q_2)=a\,(\tilde q_1\tilde q_2)^{\natural}a^{-1}=a\,\tilde q_2^{\natural}\tilde q_1^{\natural}a^{-1}=\bigl(a \tilde q_2^{\natural}a^{-1}\bigr)\bigl(a \tilde q_1^{\natural}a^{-1}\bigr)=\sigma_a(\tilde q_2)\sigma_a(\tilde q_1).
 $$
-Conversely every anti-automorphism is of this form: if $\sigma$ is one, then $\sigma\circ{}^{\natural}$ is an automorphism, every automorphism of $\mathbb{H}$ is inner, so $\sigma\circ{}^{\natural}=\iota_a$ for some $a\neq0$ and $\sigma=\iota_a\circ{}^{\natural}=\sigma_a$. For the square,
+Conversely every anti-automorphism is of this form: if $\sigma$ is one, then $\sigma\circ{}^{\natural}$ is an automorphism, every automorphism of $\mathbb{H}$ is inner, so $\sigma\circ{}^{\natural}=\operatorname{Ad}_a$ for some $a\neq0$ and $\sigma=\operatorname{Ad}_a\circ{}^{\natural}=\sigma_a$. For the square,
 $$
 \sigma_a(\sigma_a(\tilde q))=a\bigl(a \tilde q^{\natural}a^{-1}\bigr)^{\natural}a^{-1}=a\,(a^{\natural})^{-1}\tilde q\,a^{\natural}a^{-1},
 $$
-which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\iota_{a^2}$. Now $\iota_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\vec a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.</p>
-<p>The maps $id$ and ${}^{\natural}$, together with the pair $\iota_\nu,\alpha_\nu$ of one axis, four in all, are the involutions of the one-dimensional families; the next section collects the compositions.</p>
+which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\operatorname{Ad}_{a^2}$. Now $\operatorname{Ad}_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\vec a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.</p>
+<p>The maps $id$ and ${}^{\natural}$, together with the pair $\operatorname{Ad}_\nu,\alpha_\nu$ of one axis, four in all, are the involutions of the one-dimensional families; the next section collects the compositions.</p>
 <h2 id="the-composition-laws">The Composition Laws</h2>
 <p>For unit imaginaries $\nu,\mu$ the following laws hold, and they are the whole arithmetic of the family.</p>
 <div class="table-scroll"><table>
@@ -138,27 +138,27 @@ which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the 
 <tbody>
 <tr>
 <td>inner–inner</td>
-<td>$\iota_\nu\circ\iota_\mu=\iota_{\nu\mu}$</td>
+<td>$\operatorname{Ad}_\nu\circ\operatorname{Ad}_\mu=\operatorname{Ad}_{\nu\mu}$</td>
 </tr>
 <tr>
 <td>twist–twist</td>
-<td>$\alpha_\nu\circ\alpha_\mu=\iota_{\nu\mu}$</td>
+<td>$\alpha_\nu\circ\alpha_\mu=\operatorname{Ad}_{\nu\mu}$</td>
 </tr>
 <tr>
 <td>sign and inner</td>
-<td>${}^{\natural}\circ\iota_\nu=\iota_\nu\circ{}^{\natural}=\alpha_\nu$</td>
+<td>${}^{\natural}\circ\operatorname{Ad}_\nu=\operatorname{Ad}_\nu\circ{}^{\natural}=\alpha_\nu$</td>
 </tr>
 <tr>
 <td>sign and twist</td>
-<td>${}^{\natural}\circ\alpha_\nu=\alpha_\nu\circ{}^{\natural}=\iota_\nu$</td>
+<td>${}^{\natural}\circ\alpha_\nu=\alpha_\nu\circ{}^{\natural}=\operatorname{Ad}_\nu$</td>
 </tr>
 <tr>
 <td>reflection–reflection</td>
-<td>$\rho_\nu\circ\rho_\mu=\iota_{\nu\mu}$</td>
+<td>$\rho_\nu\circ\rho_\mu=\operatorname{Ad}_{\nu\mu}$</td>
 </tr>
 <tr>
 <td>reflection and inner</td>
-<td>$\rho_\nu\circ\iota_\mu=\iota_\nu\circ\rho_\mu$</td>
+<td>$\rho_\nu\circ\operatorname{Ad}_\mu=\operatorname{Ad}_\nu\circ\rho_\mu$</td>
 </tr>
 </tbody>
 </table></div>
@@ -166,25 +166,25 @@ which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the 
 <h2 id="the-klein-four-group-of-a-perpendicular-triple-and-the-group-of-order-eight">The Klein Four-Group of a Perpendicular Triple, and the Group of Order Eight</h2>
 <p>Fix a <strong>perpendicular triple</strong> $\nu_x,\nu_y,\nu_z$ of unit imaginaries with $\nu_x\nu_y=\nu_z$ (the units $\vec e_x,\vec e_y,\vec e_z$ are the model). The three inner involutions satisfy
 $$
-\iota_{\nu_1}\circ\iota_{\nu_2}=\iota_{\nu_3} , \quad \iota_{\nu_2}\circ\iota_{\nu_3}=\iota_{\nu_1} , \quad \iota_{\nu_3}\circ\iota_{\nu_1}=\iota_{\nu_2} , \qquad \iota_{\nu_1}\circ\iota_{\nu_2}\circ\iota_{\nu_3}=\operatorname{id},
+\operatorname{Ad}_{\nu_1}\circ\operatorname{Ad}_{\nu_2}=\operatorname{Ad}_{\nu_3} , \quad \operatorname{Ad}_{\nu_2}\circ\operatorname{Ad}_{\nu_3}=\operatorname{Ad}_{\nu_1} , \quad \operatorname{Ad}_{\nu_3}\circ\operatorname{Ad}_{\nu_1}=\operatorname{Ad}_{\nu_2} , \qquad \operatorname{Ad}_{\nu_1}\circ\operatorname{Ad}_{\nu_2}\circ\operatorname{Ad}_{\nu_3}=\operatorname{id},
 $$
 so that
 $$
-\{id,\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}\}
+\{id,\operatorname{Ad}_{\nu_1},\operatorname{Ad}_{\nu_2},\operatorname{Ad}_{\nu_3}\}
 $$
-is a Klein four-group. The natural sign commutes with each $\iota_{\nu_k}$ and is not one of them, and adjoining it gives the abelian group of order eight
+is a Klein four-group. The natural sign commutes with each $\operatorname{Ad}_{\nu_k}$ and is not one of them, and adjoining it gives the abelian group of order eight
 $$
-\boxed{\;G=\{id,{}^{\natural}\}\times\{id,\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}\}\cong(\mathbb{Z}/2)^3\;},
+\boxed{\;G=\{id,{}^{\natural}\}\times\{id,\operatorname{Ad}_{\nu_1},\operatorname{Ad}_{\nu_2},\operatorname{Ad}_{\nu_3}\}\cong(\mathbb{Z}/2)^3\;},
 $$
-whose seven non-identity elements are the sign ${}^{\natural}$, the three inner involutions $\iota_{\nu_1},\iota_{\nu_2},\iota_{\nu_3}$ (automorphisms) and the three twists $\alpha_{\nu_1},\alpha_{\nu_2},\alpha_{\nu_3}$ (anti-automorphisms).</p>
+whose seven non-identity elements are the sign ${}^{\natural}$, the three inner involutions $\operatorname{Ad}_{\nu_1},\operatorname{Ad}_{\nu_2},\operatorname{Ad}_{\nu_3}$ (automorphisms) and the three twists $\alpha_{\nu_1},\alpha_{\nu_2},\alpha_{\nu_3}$ (anti-automorphisms).</p>
 <p><strong>Proposition (orbit sizes).</strong> The group $G$ fixes the scalar line pointwise and acts on the vector subspace by all the sign changes $q_k\mapsto\pm q_k$ of the coordinates $(\nu_x,\nu_y,\nu_z)$, that is, by the group $(\mathbb{Z}/2)^3$ of diagonal sign changes. Hence the orbit of $\tilde q$ has size
 $$
 \boxed{\;1,\ 2,\ 4,\ 8\;}
 $$
 according as the number of nonzero coordinates of its vector part is $0,1,2,3$. In particular the scalar line is the fixed set of $G$, and the generic element has the full orbit of eight.</p>
-<p><strong>Proof.</strong> The inner involution $\iota_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_x$ and as $-1$ on $\nu_y,\nu_z$; $\iota_{\nu_2}$ as $-1$ on $\nu_x,\nu_z$; $\iota_{\nu_3}$ as $-1$ on $\nu_x,\nu_y$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\vec q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.</p>
+<p><strong>Proof.</strong> The inner involution $\operatorname{Ad}_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_x$ and as $-1$ on $\nu_y,\nu_z$; $\operatorname{Ad}_{\nu_2}$ as $-1$ on $\nu_x,\nu_z$; $\operatorname{Ad}_{\nu_3}$ as $-1$ on $\nu_x,\nu_y$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\vec q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.</p>
 <h2 id="summary">Summary</h2>
-<p>The natural sign is the one distinguished involution of $\mathbb{H}$. Each axis line of the vector subspace carries one inner involution $\iota_\nu$, fixing the axis line pointwise and negating its orthogonal complement, and one reflection $\rho_\nu=-\iota_\nu$, which is an automorphism only up to the sign. Each axis line carries also one involutive anti-automorphism beyond ${}^{\natural}$, the twist $\alpha_\nu={}^{\natural}\iota_\nu=\iota_\nu{}^{\natural}$; the involutive anti-automorphisms are exactly ${}^{\natural}$ and the $\alpha_\nu$, one per axis line. The composition laws reduce to $\iota_\nu\iota_\mu=\iota_{\nu\mu}$, $\alpha_\nu\alpha_\mu=\iota_{\nu\mu}$ and ${}^{\natural}\iota_\nu=\alpha_\nu$. On a perpendicular triple the three inner involutions form a Klein four-group, and adjoining ${}^{\natural}$ gives the abelian group $(\mathbb{Z}/2)^3$, which fixes the scalar line and acts on the vector subspace by the diagonal sign changes; its orbits have sizes $1,2,4,8$ according to the support of the vector part.</p>
+<p>The natural sign is the one distinguished involution of $\mathbb{H}$. Each axis line of the vector subspace carries one inner involution $\operatorname{Ad}_\nu$, fixing the axis line pointwise and negating its orthogonal complement, and one reflection $\rho_\nu=-\operatorname{Ad}_\nu$, which is an automorphism only up to the sign. Each axis line carries also one involutive anti-automorphism beyond ${}^{\natural}$, the twist $\alpha_\nu={}^{\natural}\operatorname{Ad}_\nu=\operatorname{Ad}_\nu{}^{\natural}$; the involutive anti-automorphisms are exactly ${}^{\natural}$ and the $\alpha_\nu$, one per axis line. The composition laws reduce to $\operatorname{Ad}_\nu\operatorname{Ad}_\mu=\operatorname{Ad}_{\nu\mu}$, $\alpha_\nu\alpha_\mu=\operatorname{Ad}_{\nu\mu}$ and ${}^{\natural}\operatorname{Ad}_\nu=\alpha_\nu$. On a perpendicular triple the three inner involutions form a Klein four-group, and adjoining ${}^{\natural}$ gives the abelian group $(\mathbb{Z}/2)^3$, which fixes the scalar line and acts on the vector subspace by the diagonal sign changes; its orbits have sizes $1,2,4,8$ according to the support of the vector part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -199,16 +199,16 @@ according as the number of nonzero coordinates of its vector part is $0,1,2,3$. 
 <td>the natural conjugation $\tilde q\mapsto q_t-\vec q$, the distinguished anti-involution</td>
 </tr>
 <tr>
-<td>$\iota_\nu$</td>
+<td>$\operatorname{Ad}_\nu$</td>
 <td>the inner involution $\tilde q\mapsto\nu \tilde q\nu^{-1}$, one per axis line $\mathbb{R}\nu$</td>
 </tr>
 <tr>
 <td>$\rho_\nu$</td>
-<td>the reflection $-\iota_\nu$, an involution with $\rho_\nu(\tilde q_1\tilde q_2)=-\rho_\nu(\tilde q_1)\rho_\nu(\tilde q_2)$</td>
+<td>the reflection $-\operatorname{Ad}_\nu$, an involution with $\rho_\nu(\tilde q_1\tilde q_2)=-\rho_\nu(\tilde q_1)\rho_\nu(\tilde q_2)$</td>
 </tr>
 <tr>
 <td>$\alpha_\nu$</td>
-<td>the twist ${}^{\natural}\iota_\nu$, the involutive anti-automorphism of the axis</td>
+<td>the twist ${}^{\natural}\operatorname{Ad}_\nu$, the involutive anti-automorphism of the axis</td>
 </tr>
 <tr>
 <td>$G$</td>

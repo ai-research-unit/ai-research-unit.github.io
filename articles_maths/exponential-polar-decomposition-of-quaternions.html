@@ -515,16 +515,16 @@ $$</p>
 <p>which is not $\vec e_x$, because the two exponents do not commute. The fibre of $\vec e_x$ is the line $(\pi/2+2\pi k)\vec e_x$, not the translate of the kernel.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="the-exponential-of-a-conformal-matrix">The Exponential of a Conformal Matrix</h3>
-<p>Let $\iota$ be the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. For a unit pure quaternion $\vec n$, the matrix $N=\iota(\vec n)$ satisfies</p>
+<p>Let $\operatorname{Mat}$ be the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. For a unit pure quaternion $\vec n$, the matrix $N=\operatorname{Mat}(\vec n)$ satisfies</p>
 <p>$$
 N^{\dagger}=-N, \qquad N^2=-I, \qquad \operatorname{tr}N=0 .
 $$</p>
 <p>The exponential form of a quaternion reads, in matrices,</p>
 <p>$$
-M_{\tilde q}=\iota(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
+M_{\tilde q}=\operatorname{Mat}(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
 =r\bigl(\cos\theta\,I+\sin\theta\,N\bigr),
 $$</p>
-<p>with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\iota(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is</p>
+<p>with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\operatorname{Mat}(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is</p>
 <p>$$
 \det M_{\tilde q}=r^2=\langle\tilde q\rangle_{\natural},
 $$</p>
@@ -791,7 +791,7 @@ $$</p>
 <td>the principal logarithm, on $\mathbb{H}\setminus(-\infty,0]$</td>
 </tr>
 <tr>
-<td>$N=\iota(\vec n)$</td>
+<td>$N=\operatorname{Mat}(\vec n)$</td>
 <td>the skew-Hermitian matrix of the unit axis</td>
 </tr>
 <tr>

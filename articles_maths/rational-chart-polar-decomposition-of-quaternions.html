@@ -283,13 +283,13 @@ $$</p>
 <p>The cut and the missing point are exactly as in the complex case: one unit factor, $-1$, is missing, and the elements with that unit factor are the negative real axis. The difference is that this axis is a ray in three-dimensional space, and as an element approaches it the coordinate escapes in the direction of its approach, so the cut has a whole sphere of escape directions rather than two sides.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="the-cayley-transform-in-su2">The Cayley Transform in SU(2)</h3>
-<p>Let $V=\iota(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and</p>
+<p>Let $V=\operatorname{Mat}(\vec v)$ be the image of the pure quaternion $\vec v$ under the embedding of <em>Modulus–Unit Polar Decomposition of Quaternions</em>, §<em>The Embedding in M_2(C)</em>. Since $\vec v$ is pure, $V$ is skew-Hermitian and traceless, and</p>
 <p>$$
 V^{\dagger}=-V, \qquad V^2=-\langle \vec v\rangle_{\natural} I .
 $$</p>
 <p>The chart is the <strong>Cayley transform</strong> of $V$:</p>
 <p>$$
-M(\vec v) = \iota\bigl(u(\vec v)\bigr) = (I-V)(I+V)^{-1}.
+M(\vec v) = \operatorname{Mat}\bigl(u(\vec v)\bigr) = (I-V)(I+V)^{-1}.
 $$</p>
 <p>The matrices $I-V$ and $I+V$ commute, and $I+V$ is invertible because its eigenvalues are $1\pm i\sqrt{\langle \vec v\rangle_{\natural}}$. The matrix $M(\vec v)$ is $*$-unitary,</p>
 <p>$$
@@ -474,7 +474,7 @@ $$</p>
 <td>the group law in the coordinate</td>
 </tr>
 <tr>
-<td>$V=\iota(\vec v)$</td>
+<td>$V=\operatorname{Mat}(\vec v)$</td>
 <td>the skew-Hermitian matrix of $\vec v$</td>
 </tr>
 <tr>
