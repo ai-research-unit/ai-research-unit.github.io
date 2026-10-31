@@ -136,7 +136,7 @@ $$</p>
 <h3 id="the-statistical-distance">The Statistical Distance</h3>
 <p>The information is the infinitesimal form of a distance. If a parameter is rescaled so that $\theta$ measures path length in the metric, then the <strong>statistical distance</strong> between neighbouring members is</p>
 <p>$$
-ds^2 = \sum_{ij} g_{ij}(\vec\theta)\,d\theta^i d\theta^j ,
+ds^2 = \sum_{ij} g_{ij}(\vec\theta)\,d\theta_i d\theta_j ,
 $$</p>
 <p>and the finite distance along a path is the integral of $ds$. The metric is invariant under reparametrisation of the family, which is why it is the geometric object and $F$ is only its coordinate expression. The Fisher information is also, by a standard theorem, the second derivative of the relative entropy along the family: for a family of states $\tilde{Ϛ}(\vec\theta)$, the second derivative of the relative entropy at coincidence is the information matrix. That theorem is used in the section on the relative entropy below, and it is what gives the metric its informational meaning.</p>
 <h2 id="fisher-information-in-the-informational-sector">Fisher Information in the Informational Sector</h2>
@@ -206,7 +206,7 @@ D\!\left(\tilde{Ϛ}_1\,\|\,\tilde{Ϛ}_2\right) = \mathrm{Tr}\!\left(\tilde{Ϛ}_1
 $$</p>
 <p>which is the algebra's transcription of the classical Kullback–Leibler divergence; on the diagonal states it is the ordinary divergence of the two outcome distributions. The standard information-geometric theorem states that the Fisher information is the second derivative of this divergence along a family:</p>
 <p>$$
-g_{ij}(\vec\theta) = \left.\frac{\partial^2}{\partial\theta^i\partial\theta^j}\right|_{\vec\theta=\vec\theta_0} D\!\left(\tilde{Ϛ}(\vec\theta)\,\|\,\tilde{Ϛ}(\vec\theta_0)\right).
+g_{ij}(\vec\theta) = \left.\frac{\partial^2}{\partial\theta_i\partial\theta_j}\right|_{\vec\theta=\vec\theta_0} D\!\left(\tilde{Ϛ}(\vec\theta)\,\|\,\tilde{Ϛ}(\vec\theta_0)\right).
 $$</p>
 <p>For the radial spectral family the divergence is</p>
 <p>$$

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Representations: Restructuring Table — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matrix-representations-restructuring-table"><strong>Matrix Representations: Restructuring Table</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This table is the working plan for the gathered series <em>Matrix Representations</em>. One row is one article. The four content columns say what that article carries in each of the three displays and what it carries independently of them.</p>
+<p>The three displays are the $4\times4$ coefficient frame, the $4\times4$ Peirce frame and the $2\times2$ model. The coefficient frame is written $S_3$ because the frame is the unit basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and the ordered frame is $C_3$-covariant. The Peirce frame is written z because its idempotent pair is built on $\vec e_z$. The $2\times2$ model is written e because its entries are the coefficients, through $\mathsf M_2(\vec e_k)=-i\sigma_k$.</p>
+<p><strong>The columns.</strong></p>
+<ol>
+<li>The title, with the common prefix <em>Matrix Representations :</em>.</li>
+<li>What the article states once, in a form that no frame changes: definitions, invariants, laws.</li>
+<li>What exists only, or differently, in the $S_3$ frame.</li>
+<li>What exists only, or differently, in the z frame.</li>
+<li>What exists only, or differently, in the $2\times2$ entry model.</li>
+</ol>
+<p><strong>How to read an empty cell.</strong> An empty cell means the subject has no content in that display, not that the content was forgotten. Emptiness is concentrated in three places: the operators, which act on the four-dimensional carrier and have no $2\times2$ form; the $S_3$ column of the spectral articles, whose bases are element-dependent; and the z column of the coefficient articles, where the Peirce display adds nothing.</p>
+<h2 id="the-table">The Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Title</th>
+<th>Common</th>
+<th>$S_3$ frame, $4\times4$</th>
+<th>z frame, $4\times4$</th>
+<th>$2\times2$ entry model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Matrix Representations : The Models and the Change of Frame</td>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})$; the bracket $[F]_{\mathcal{B}}$; the change law $[F]_{\mathcal{B}'}=C^{-1}[F]_{\mathcal{B}}C$; entries are frame-dependent, trace, determinant, spectrum and rank are not</td>
+<td>the explicit $[\mathsf M_4^{L}]_{\mathrm{coef}}$; the change $C_\Pi$ and $\det C_\Pi=-\tfrac14$</td>
+<td>$\mathsf M_4^{L}=I_2\otimes\mathsf M_2$; $\operatorname{diag}(B,B)$; $\mathsf M_4^{R}=\mathsf M_2^{\mathsf T}\otimes I_2$</td>
+<td>the four assignments $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$; $\operatorname{tr}=2Q_t$; $\det=\langle\tilde Q\rangle_\natural$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Matrix Representations : The Product, the Trace and the Determinant</td>
+<td>multiplicativity; $\operatorname{tr}=4Q_t$ in $4\times4$ and $2Q_t$ in $2\times2$; $\det=\langle\tilde Q\rangle_\natural^2$ and $\langle\tilde Q\rangle_\natural$; unit criterion $\langle\tilde Q\rangle_\natural\neq0$</td>
+<td>the product rule with signed entries; each entry linear in the four coefficients</td>
+<td>$I_2\otimes B$; $\det(I_2\otimes B)=\det(B)^2$; the unit table</td>
+<td>the Pauli assignment; the product rule; the adjugate and the inverse</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Matrix Representations : The Six Subspaces as Matrix Conditions</td>
+<td>six subspaces of real dimensions $2,6,4,4,4,4$; each an eigenspace of a conjugation; the table</td>
+<td>entrywise conditions; $\natural$ is transposition; the real forms are entrywise real</td>
+<td>block conditions on $I_2\otimes B$; centre scalar, vector traceless</td>
+<td>conditions in $X$, $X^{\mathsf T}$, $X^{\dagger}$ and $\operatorname{adj}X$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Matrix Representations : The Four Words and the Four Traces</td>
+<td>the four products read as four traces; the trace pairing; the conjugate of a word</td>
+<td>the words as $X$, $X^{\mathsf T}$, $\bar X$, $X^{\dagger}$; entrywise traces</td>
+<td>the tensor reading; the four traces on $\mathbb{B}_L$ and $\mathbb{B}_R$</td>
+<td>the same four words in $2\times2$; the pairing with its normalisation</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Matrix Representations : Trace, Determinant and the Biquaternion Norm</td>
+<td>the characteristic polynomial; the four norms as invariants</td>
+<td>the explicit matrix; $\operatorname{tr}=4Q_t$, $\det=\langle\tilde Q\rangle_\natural^2$; the level sets of the determinant</td>
+<td>$\det(I_2\otimes B)=\det(B)^2$; the spectrum $\lambda_\pm$ twice</td>
+<td>$\lambda^2-2Q_t\lambda+\langle\tilde Q\rangle_\natural$; the level sets</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Matrix Representations : The Conjugations and the Adjoints</td>
+<td>the four involutions; the adjugate; the four adjoints</td>
+<td>$\natural$ is transposition: the reason the frame exists</td>
+<td>$\natural$ is $K M^{\mathsf T}K$; the two mixed units exchanged</td>
+<td>$\natural=\operatorname{adj}$; $*=\dagger$; $\bar{\cdot}$ entrywise</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Matrix Representations : The Killing Form</td>
+<td>$\kappa=2\operatorname{tr}(XY)-\tfrac12\operatorname{tr}X\operatorname{tr}Y$; radical the centre; $\kappa=-8\vec X\cdot\vec Y$</td>
+<td>the coordinate form; the same matrix formula</td>
+<td>the same formula with the $4\times4$ trace, doubled against $2\times2$</td>
+<td>$\kappa=4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$; the $\mathfrak{sl}_2$ form</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</td>
+<td>the unit group; the determinant sequence; the level sets of the norm; the centre; the double cover</td>
+<td>the entrywise determinant; the Bruhat decomposition</td>
+<td>$\det(I_2\otimes B)=\det(B)^2$; the two copies of the group</td>
+<td>$SL_2$; the Bruhat cells; $SL_2\to SO(3)$</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</td>
+<td>the Peirce table; the coordinate isomorphism; four corners; two planes</td>
+<td>the units $E_{ij}$ as coefficient matrices</td>
+<td>the planes as diagonal blocks; the columns; the nilpotents as off-diagonal units</td>
+<td>the four entries are the four corners; the columns are the spinors; $E_{12}$ and $E_{21}$ nilpotent</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Matrix Representations : The Spectral Projectors</td>
+<td>$\rho_\pm$ idempotent, complementary, commuting with $M$; trace $2$ and rank $2$ in $4\times4$, trace $1$ in $2\times2$</td>
+<td>the explicit matrices in coefficient coordinates</td>
+<td>$\rho_\pm=\tfrac12(\mathrm I_4\pm\mathsf M_4^{L}(\vec\Xi))$; diagonal on the standard axis; general element by conjugation</td>
+<td>$\rho_\pm=\tfrac12(\mathrm I_2\pm X/B)$; rank one</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Matrix Representations : The Eigenbasis and the Diagonalising Matrix</td>
+<td>four vectors, two per eigenvalue; $\lambda_\pm=Q_t\pm iB$; the determinant of the change is fixed</td>
+<td>$C_\Pi C_Q^{(4)}$, determinant $\tfrac14$</td>
+<td>$C_Q^{(4)}$, determinant $-1$; $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$; two copies</td>
+<td>$C_Q$; $\det C_Q=2B(B-Q_z)$; the two charts</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Matrix Representations : The Jordan Basis and the Jordanising Matrix</td>
+<td>one eigenvalue; two blocks of size two; the determinant of the change is fixed</td>
+<td>$\tfrac14$ in the corner order, $-\tfrac14$ in the chain order</td>
+<td>$J_2(Q_t)\otimes\mathrm I_2$; commutant $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$, unitary part $U(2)$</td>
+<td>$J_2(Q_t)$; the singular value $s=\sqrt{2\langle\vec Q\rangle_*}$</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Matrix Representations : The Centraliser and the Double Centraliser</td>
+<td>the commutant; the three spectral types; the double centraliser; dimension $2$ and $4$ in $2\times2$, $4$ and $16$ in $4\times4$</td>
+<td>the commutant as the matrices solving $MX=XM$ entrywise</td>
+<td>the commutant is the right multiplications, dimension $4$</td>
+<td>$\mathbb{C}[X]=\operatorname{span}\{\mathrm I_2,X\}$, dimension $2$</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Matrix Representations : The Left Regular Operators</td>
+<td>the law; the kernel and the image; the rank trichotomy; the spectrum $\lambda_\pm$ twice</td>
+<td>the explicit matrix; $\operatorname{tr}=4Q_t$; $\det=\langle\tilde Q\rangle_\natural^2$</td>
+<td>$I_2\otimes B$; the four basis matrices; $\operatorname{rank}=2\operatorname{rank}(B)$</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Matrix Representations : The Right Regular Operators</td>
+<td>the anti-representation law; the kernel and the image; the spectrum</td>
+<td>$D\mathsf M^{\mathsf T}D$</td>
+<td>$B^{\mathsf T}\otimes I_2$; the exchange $S$</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Matrix Representations : The Two-Sided Operators</td>
+<td>$T_{\mu\nu}=L_\mu R_\nu$; the sixteen are a basis of $M_4(\mathbb{C})$; the composition; the cone of products</td>
+<td>signed permutations of determinant $1$, orthogonal for Hilbert–Schmidt</td>
+<td>$\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)$; the gamma frame; $\gamma_5$</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Matrix Representations : The Hermitian Sandwich</td>
+<td>$\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$; the congruence $MXM^{\dagger}$; multiplicativity; the adjoint</td>
+<td>the four-vector form on the anti-Hermitian half; the Lorentz matrix</td>
+<td>$\operatorname{conj}(B)\otimes B$; the two halves</td>
+<td>$MXM^{\dagger}$; Lorentz on the anti-Hermitian half, real congruence on the Hermitian half</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Matrix Representations : The Functional Calculus</td>
+<td>$f(M)$ by the homomorphism; the exponential, the logarithm, the square root; the group law; the branches</td>
+<td>the series entrywise; the determinant and the trace of $f$</td>
+<td>$f(I_2\otimes B)=I_2\otimes f(B)$; the closed-form exponential</td>
+<td>$f(X)=C_Q\operatorname{diag}(f(\lambda_\pm))C_Q^{-1}$; the kernel $2\pi i\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Matrix Representations : The Polar Decomposition of a Matrix</td>
+<td>$M=UP$; $P=(M^{\dagger}M)^{1/2}$; the singular case</td>
+<td>the explicit $P$ in coefficient coordinates</td>
+<td>$P=I_2\otimes P_2$</td>
+<td>the closed form of $P_2$; the SVD; the boost reading</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Matrix Representations : Rank-One Matrices and the Determinantal Variety</td>
+<td>the rank stratification; the determinantal variety; the annihilators; the nilpotents</td>
+<td>$\operatorname{rank}=2\operatorname{rank}(B)$; the determinant defines the variety</td>
+<td>the same rank doubling; the two strata</td>
+<td>rank one; the two strata; the annihilator planes</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Matrix Representations : Spin, Qubits and the Bloch Vector</td>
+<td>the algebra of the spin operators; eigenvalues $\pm\hbar/2$, each twice; the Born rule</td>
+<td>the coefficient matrices of $i\vec e_k$</td>
+<td>$\Sigma_k$ block-diagonal, $I_2\otimes\sigma_k$ up to sign; two copies of the qubit</td>
+<td>the Pauli matrices; pure states; the Bloch vector</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Matrix Representations : The Projective Line and the Möbius Action</td>
+<td>lines as minimal left ideals; the $GL_2(\mathbb{C})$ action; the cross-ratio</td>
+<td>the planes in coefficient coordinates</td>
+<td>the planes are the two diagonal blocks</td>
+<td>$\mathbb{C}P^1$; the Möbius formula; the idempotents; the Plücker form</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Matrix Representations : Worked Examples</td>
+<td>eight elements; the common checklist of invariants</td>
+<td>each matrix in the coefficient frame</td>
+<td>each matrix in the Peirce frame</td>
+<td>each $2\times2$ matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-table-shows">What the Table Shows</h2>
+<p><strong>The common column carries more than expected.</strong> Items 2, 5, 7 and 19 state their result once and the three displays are corollaries. The frame matters for the entries, not for the theorems.</p>
+<p><strong>Three subjects have no $2\times2$ form.</strong> Items 14, 15 and 16 are operators on the four-dimensional carrier. The $2\times2$ model represents the element, not the operator, so the cell is empty by construction, not by omission. Item 21 is the borderline case: the spin operators exist in both, but the $4\times4$ version is two copies of the $2\times2$ one.</p>
+<p><strong>Two subjects have no $S_3$ form.</strong> Items 11 and 12 choose a basis adapted to the element. The $S_3$ frame is fixed for the algebra, so it cannot host a per-element basis. The coefficient display appears only as the determinant of the change, $\tfrac14$.</p>
+<p><strong>The z frame is the only place where the $2\times2$ is a compression.</strong> In the Peirce frame the left regular matrix is $I_2\otimes B$, so the $2\times2$ block is visible twice. In the coefficient frame no block of $\mathsf M_4^{L}$ equals $B$ or $-B$. Items 14, 19 and 20 record the consequence.</p>
+<p><strong>Item 1 is load-bearing.</strong> Every other row names a frame, and item 1 is the only place where the change law and $C_\Pi$ are fixed. Removing it would make the other 22 rows unverifiable against each other.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
