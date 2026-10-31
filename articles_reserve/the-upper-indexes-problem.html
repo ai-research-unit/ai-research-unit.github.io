@@ -71,9 +71,9 @@
         <h1 id="the-upper-index-problem-what-is-left-what-was-lowered-and-the-cost-of-the-rest"><strong>The Upper-Index Problem: What Is Left, What Was Lowered, and the Cost of the Rest</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The corpus states one rule for indices in <em>Operator and Calculus Conventions</em>: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.</p>
-<p>The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 110 physics articles and twelve Part VI articles that still write at least one raised Greek spacetime index. The gamma indices are gone: no gamma with a raised index survives in either corpus.</p>
+<p>The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 103 physics articles and twelve Part VI articles that still write at least one raised Greek spacetime index. The gamma indices are gone: no gamma with a raised index survives in either corpus.</p>
 <p>The remainder is not one problem. Three kinds occur, and they cost three different things to repair. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, and correct for the third.</p>
-<p>Twenty-two files were repaired while this article was written. Seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. They are listed in §<em>What Was Already Lowered</em>, and every count here is after that pass.</p>
+<p>Twenty-two files were repaired while this article was written. Seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. They are listed in §<em>What Was Already Lowered</em>, and every count here is after that pass. Seven more physics articles were migrated afterwards, by rewriting each display rather than relettering it; they are listed there too and are no longer in the inventory.</p>
 <p>The examples in this article quote the offending notation. They are the object of study, not the notation of the article.</p>
 <h2 id="the-screen">The Screen</h2>
 <p>The count is made on the mathematics regions only, the text between single or double dollars. A superscript counts when its content is one or more spacetime letters, $\mu$, $\nu$, $\rho$, $\lambda$ or $\kappa$, with nothing else, and it sits on a component symbol. It is a <strong>slot</strong> when a lower index follows it immediately. It is <strong>paired</strong> when the same letter appears as a lower index elsewhere in the same formula; in most entries the pairing is a contraction. It is <strong>plain</strong> otherwise. Superscripts on a closing delimiter and on $\exp$ are excluded, and so is the exponential $e^{\lambda}$ of the matrix articles, since these are powers.</p>
@@ -91,9 +91,9 @@
 <tr>
 <td>Physics</td>
 <td style="text-align: right;">402</td>
-<td style="text-align: right;">43,868</td>
+<td style="text-align: right;">43,857</td>
 <td style="text-align: right;">2,423</td>
-<td style="text-align: right;">110</td>
+<td style="text-align: right;">103</td>
 </tr>
 <tr>
 <td>Part VI mathematics</td>
@@ -125,7 +125,7 @@ $$
 F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu},
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.</p>
-<p>Ninety-nine physics articles and six Part VI articles are in this class. Between them they hold 2,164 occurrences, of which 1,590 in physics and 36 in mathematics are paired. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.</p>
+<p>Ninety-two physics articles and six Part VI articles are in this class. Between them they hold 2,153 occurrences, of which 1,579 in physics and 36 in mathematics are paired. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.</p>
 <h3 id="class-c-the-superscript-is-only-a-label">Class C — the superscript is only a label</h3>
 <p>A single component is named, with no partner and no slot: $x^\mu=(ct',\vec x)$, $p^\mu=(E,\vec p)$, $A^\nu$ alone in a definition, $u^\mu$ for a four-velocity. Nothing is lost by writing the index low, because no second occurrence depends on its height. The repair is local and safe.</p>
 <p>No physics article remains in this class: the fourteen that did are listed in §<em>What Was Already Lowered</em>. Three Part VI articles remain, with 6 occurrences, all tuple labels of the element representations, $Q_0$, $Q_1$ and $\tilde q_0$.</p>
@@ -156,7 +156,7 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td>a pairing</td>
 <td>wrong if a contraction</td>
 <td>explicit sum with $\varepsilon$, or the form</td>
-<td>99</td>
+<td>92</td>
 <td>6</td>
 </tr>
 <tr>
@@ -267,6 +267,53 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 </ul>
 <p>One article needed a frame change, not a lowering. <a href="../articles_physics/why-complexify-spacetime.html">Why Complexify Spacetime?</a> writes $Q_t=ic_0t'$, the time coordinate of the $\mathbb{B}$ frame, and now says so in those letters. Lowering it to $x_0$ would have asserted $x_0=ct'$, which is false in that frame. The letter $R$ was not used either: $R_t$ and $R_x$ are already the right-regular matrices of <em>Matrix Representations Conventions</em>, and $Q_t$ is already the name of that coordinate there. The material position stays $\tilde R=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z$.</p>
 <p>The pass left every file that mixes a slot or a pairing untouched. A partial lowering inside one formula would put two heights in one contraction, which is the error the rule exists to prevent.</p>
+<p><strong>The migration pass.</strong> Seven further physics articles were rewritten after this article, and their rows are removed from the inventory above. Here each display was rewritten with the weight in the sum and checked on the article's own expression; no display was relettered.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>The rewrite</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+<td>$\partial_\mu J^\mu\to\mathrm{Sc}(\tilde\nabla^\natural\tilde J)$</td>
+<td>residual $5.6\times10^{-11}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>$\partial/\partial x^\mu\to\partial/\partial x_\mu$</td>
+<td>label</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td>$\partial\psi/\partial x^\mu\to\partial\psi/\partial x_\mu$</td>
+<td>label</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>$j^\mu\to j_\mu$</td>
+<td>label</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a></td>
+<td>$\partial_\mu T^{\mu\nu}\to\sum_\mu\varepsilon_\mu\,\partial_\mu T_{\mu\nu}$</td>
+<td>residual $1.5\times10^{-11}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>$\partial_\mu j_5^\mu\to\sum_\mu\varepsilon_\mu\,\partial_\mu j_{5\mu}$, with $j_{5\mu}=\bar\psi\gamma_\mu\gamma_5\psi$</td>
+<td>identity, by $\gamma^0=\gamma_0$ and $\gamma^k=-\gamma_k$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html">Gauge Transformations of the First and Second Kind in Biquaternionic Form</a></td>
+<td>$F_{\mu\nu}F^{\mu\nu}\to\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$</td>
+<td>residual $0$</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="the-frames-of-the-inventory">The Frames of the Inventory</h2>
 <p>The inventory rows now carry a Frame column. It records the frame in which the article's displays are read, taken from the article's derivative and time coordinate, and from its metric signature when it writes no derivative: $\mathbb{B}$ when the displays use $\partial/\partial Q_\mu$ or $Q_t=ict'$, $\mathbb{M}_-$ when they use $\partial/\partial x_\mu$ or $x_0=ct'$, <em>both</em> when the article writes both, and — when the raised index is a label of an algebraic element and no spacetime frame is involved. The column is a reading of the article as it stands, not a verdict that the reading is right; the <em>both</em> rows are the ones where the article has not chosen.</p>
 <p>Ten physics articles wrote a raised Greek index and named neither frame. Each now declares one before its first display:</p>
@@ -1147,15 +1194,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">$T^{\mu}$ (2), $J^{\nu}$ (1)</td>
 </tr>
 <tr>
-<td><a href="../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html">Gauge Transformations of the First and Second Kind in Biquaternionic Form</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$F^{\mu\nu}$ (3)</td>
-</tr>
-<tr>
 <td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
 <td>$\mathbb{B}$</td>
 <td style="text-align: right;">3</td>
@@ -1219,15 +1257,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">$\varepsilon^{\mu\nu\rho}$ (2)</td>
 </tr>
 <tr>
-<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$j^{\mu}$ (2)</td>
-</tr>
-<tr>
 <td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
 <td>$\mathbb{B}$</td>
 <td style="text-align: right;">2</td>
@@ -1255,15 +1284,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">$T^{\mu\nu}$ (1), $f^{\nu}$ (1)</td>
 </tr>
 <tr>
-<td><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">$T^{\mu\nu}$ (1), $j^{\nu}$ (1)</td>
-</tr>
-<tr>
 <td><a href="../articles_physics/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a></td>
 <td>$\mathbb{B}$</td>
 <td style="text-align: right;">2</td>
@@ -1271,15 +1291,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">$dx^{\mu}$ (2)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
-<td>$\mathbb{M}_-$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$x^{\mu}$ (1)</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
@@ -1300,15 +1311,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">$v^{\mu}$ (1)</td>
 </tr>
 <tr>
-<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$x^{\mu}$ (1)</td>
-</tr>
-<tr>
 <td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
 <td>$\mathbb{B}$</td>
 <td style="text-align: right;">1</td>
@@ -1325,24 +1327,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">$F^{\mu\nu}$ (1)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
-<td>$\mathbb{M}_-$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$J^{\mu}$ (1)</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">$j^{\mu}$ (1)</td>
 </tr>
 </tbody>
 </table></div>

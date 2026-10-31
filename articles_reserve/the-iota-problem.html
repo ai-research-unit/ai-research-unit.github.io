@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Iota Problem in Part VI and Physics: A Category Audit — Biquaternion Universe</title>
+  <title>The Iota Problem in Part VI and Physics: A Category Audit, Closed in Part VI — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,262 +68,283 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-iota-problem-in-part-vi-and-physics-a-category-audit"><strong>The Iota Problem in Part VI and Physics: A Category Audit</strong></h1>
+        <h1 id="the-iota-problem-in-part-vi-and-physics-a-category-audit-closed-in-part-vi"><strong>The Iota Problem in Part VI and Physics: A Category Audit, Closed in Part VI</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This audit covers two bodies of text and nothing else: the 884 articles of Part VI of the mathematical corpus, and the 403 articles of the physics corpus. No count from an earlier full-corpus scan is reused. The question is narrow. Where does $\iota$ carry more than one meaning, and in which article does it do so?</p>
-<p>The answer is uneven. Physics is nearly clean. Part VI is not. Of the 1,287 distinct article files, 40 use $\iota$ at all, for 704 occurrences and 59 spellings. Twenty-two of those articles write a form that means something else elsewhere, and 198 occurrences are written in such a form.</p>
-<p>The three uses in the original premise do not exhaust the letter, and they do not carry equal weight inside the restricted scope. The Clifford comparison is present, but almost always as $\iota_{\mathrm{Cl}}$. The interior product is present twice. No scanned article uses $\iota$ for an octonion imaginary unit. Meanwhile the bare letter alone has eleven readings.</p>
-<p>The rest of the article follows the corpus categories. Each category has a table of its $\iota$ articles, the total count, the number of occurrences in an ambiguous form, the problematic spelling, and what the letter means in that article.</p>
+<p>The premise was that $\iota$ is taken three times: for the Clifford comparison, for the interior product, and for the octonion imaginary units. The audit found something else in its restricted scope. The Clifford comparison is written with its subscript, $\iota_{\mathrm{Cl}}$, and is unambiguous wherever it appears. The interior product appears twice. No scanned article uses $\iota$ for an octonion imaginary unit. The bare letter, meanwhile, carried nine readings in Part VI and two more in physics.</p>
+<p>Part VI has since been migrated. Its 523 occurrences in 29 articles are replaced object by object, and the category now contains no $\iota$ at all. Physics is untouched: 11 articles, 181 occurrences, 151 of them the single form $\iota_{\mathrm{Cl}}$.</p>
+<p>This article records both states. The inventory is kept as the justification of the migration, and every table states what an article carried and what it became.</p>
 <h2 id="scope-and-method">Scope and Method</h2>
 <p>Part VI begins at the heading <em>PART VI: SYNTHETIC STUDIES</em> in <code>maths.md</code> and runs to the end of that menu. Its 884 articles fall into 24 categories, from Booleans to the structural comparison around biquaternions. The physics menu has 403 articles in 13 categories.</p>
-<p>Three file names occur in both corpora, but each menu links its own copy. The scan follows the menu folder, so the 884 Part VI files and the 403 physics files give 1,287 distinct files.</p>
-<p>The scan reads each Markdown file and counts every control sequence <code>\iota</code> that is not followed by a letter. It keeps the subscript and the superscript, including nested braces. It counts occurrences, not lines and not articles. The forms $\iota_{\mathrm{Cl}}$, $\iota_\nu$, $\iota_{\nu_1}$ and $\iota_k$ are four different spellings.</p>
-<p>A spelling is problematic when the scanned corpus gives it more than one reading. Four spellings qualify. The bare letter has eleven readings. The forms $\iota_k$, $\iota_1$ and $\iota_2$ have two each. The forms $\iota_3$, $\iota_0$, $\iota_j$, $\iota_\nu$, $\iota_u$, $\iota_g$ and $\iota_{\mathrm{Cl}}$ have one reading in this scope.</p>
-<p>The Clifford comparison can be checked against the earlier table. The full corpus has 166 occurrences in nine files. The eight physics files in this scope have 151. The ninth is the mathematics conventions article, which lies outside Part VI.</p>
-<p>The readings are assigned from the definition in each article, not from the letter alone. Where an article defines two objects, both are recorded. The occurrence column is the total for the article, not only the problematic part.</p>
+<p>Three file names occur in both folders, so the 884 Part VI entries and the 403 physics entries are 1,287 menu entries over 1,284 distinct files. Counts in this article are counts of articles as the menu lists them, so the two corpora give 1,287.</p>
+<p>The scan reads each Markdown file and counts every control sequence <code>\iota</code>, keeping the subscript and any nested braces. It counts occurrences, not lines and not articles. The forms $\iota_{\mathrm{Cl}}$, $\iota_\nu$, $\iota_{\nu_1}$ and $\iota_k$ are four spellings.</p>
+<p>A spelling is problematic when the scanned corpus gives it more than one reading. Before the migration, four spellings qualified in Part VI: the bare letter, $\iota_k$, $\iota_1$ and $\iota_2$. Physics has one qualifying spelling, the bare letter, with two readings.</p>
+<p>The migration replaced by object, not by spelling alone. Each replacement keeps the subscript, so $\iota_{\nu_1}$ became $\operatorname{Ad}_{\nu_1}$ without renumbering. No new symbol carries a hat or a tilde. Each name was checked against the whole corpus before use: $\operatorname{Mat}$, $\operatorname{inc}$, $\operatorname{idem}$ and $\operatorname{coef}$ were unused, and $\operatorname{Ad}$ was already the corpus name for the inner automorphism. After each file was written, its remaining <code>\iota</code> count was required to be zero, and the number of replacements was required to equal the number audited.</p>
 <h2 id="the-verdict">The Verdict</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Measure</th>
-<th style="text-align: right;">Part VI</th>
+<th style="text-align: right;">Part VI before</th>
+<th style="text-align: right;">Part VI now</th>
 <th style="text-align: right;">Physics</th>
-<th style="text-align: right;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Distinct article files</td>
+<td>Menu articles</td>
+<td style="text-align: right;">884</td>
 <td style="text-align: right;">884</td>
 <td style="text-align: right;">403</td>
-<td style="text-align: right;">1287</td>
 </tr>
 <tr>
 <td>Articles using $\iota$</td>
 <td style="text-align: right;">29</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">11</td>
-<td style="text-align: right;">40</td>
 </tr>
 <tr>
 <td>Occurrences</td>
 <td style="text-align: right;">523</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">181</td>
-<td style="text-align: right;">704</td>
 </tr>
 <tr>
-<td>Occurrences in an ambiguous form</td>
-<td style="text-align: right;">176</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">198</td>
+<td>Distinct spellings</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr>
-<td>Articles with an ambiguous form</td>
+<td>Articles with a contested spelling</td>
 <td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">22</td>
 </tr>
 <tr>
-<td>Share of occurrences ambiguous</td>
-<td style="text-align: right;">34%</td>
-<td style="text-align: right;">12%</td>
-<td style="text-align: right;">28%</td>
+<td>Occurrences in a contested spelling</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
 </tr>
 </tbody>
 </table></div>
-<p>The 884 Part VI files and the 403 physics files give 1,287 in all. Three names occur in both corpora; the files behind them are distinct.</p>
-<p>Physics is nearly clean. Of its 181 occurrences, 159 are stable: 151 are the Clifford comparison $\iota_{\mathrm{Cl}}$, two are the interior product, one is an inner automorphism, and five are spinor variants. Only two articles are affected, and one of them contributes a single bare occurrence.</p>
-<p>Part VI carries the problem. Of its 523 occurrences, 176 are written in an ambiguous form, and 20 of its 29 $\iota$ articles are affected. The worst category is Quaternions, with 110 ambiguous occurrences out of 353. The worst single article is <em>Quaternion Augmented Statistics</em>, with 61 ambiguous occurrences out of 138.</p>
-<p>The bare letter is the main defect: 112 occurrences, 19 articles, eleven readings. The subscript collisions are smaller but sharper. $\iota_k$ is a corner embedding in one article and an axis involution in three others. $\iota_1$ and $\iota_2$ are axis involutions in three articles and spinor components in one.</p>
-<p>The sharpest inconsistency across categories is the corner embedding. It is bare in $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$, it is $\iota_k$ in $M_6(\mathbb{C})$, and $\iota_k$ is an axis involution in Quaternions.</p>
-<h2 id="coverage-by-category">Coverage by Category</h2>
-<p>Only the categories that use the letter are listed one by one. The categories without it are grouped in one row per part: eleven Part VI categories with 309 articles, and seven physics categories with 189.</p>
+<p>The 180 is the count before the migration, distributed over 20 Part VI articles. It is the sum of the bare letter (95), $\iota_k$ (54), $\iota_1$ (16) and $\iota_2$ (15). The migration removes all of them.</p>
+<p>Physics is stable. Of its 181 occurrences, 151 are $\iota_{\mathrm{Cl}}$, two are the interior product $\iota_{X_f}$, one is the inner automorphism $\iota_\lambda$, 26 are the Newman–Penrose spinor and its two components, and one is a bare $\iota$ in the Dirac article.</p>
+<h2 id="the-migration">The Migration</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Old form</th>
+<th>New form</th>
+<th style="text-align: right;">Occurrences</th>
+<th style="text-align: right;">Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner automorphism and its involutions</td>
+<td>$\iota_\nu$, $\iota_u$, $\iota_g$, $\iota_k$, $\iota_j$, $\iota_0$–$\iota_3$, $\iota_{\vec e_k}$</td>
+<td>$\operatorname{Ad}_\nu$, $\operatorname{Ad}_u$, $\operatorname{Ad}_g$, $\operatorname{Ad}_k$, $\operatorname{Ad}_j$, $\operatorname{Ad}_0$–$\operatorname{Ad}_3$, $\operatorname{Ad}_{\vec e_k}$</td>
+<td style="text-align: right;">417</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
+<td>$\iota$</td>
+<td>$\operatorname{Mat}$</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>embedding $\mathbb{N}\to\mathbb{Z}$</td>
+<td>$\iota$</td>
+<td>$\hookrightarrow$ with $n\mapsto[(n,0)]$</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>corner and block embedding</td>
+<td>$\iota$, $\iota_k$</td>
+<td>$\operatorname{inc}$, $\operatorname{inc}_k$</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>idempotent representation</td>
+<td>$\iota$</td>
+<td>$\operatorname{idem}$</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>inversion on $\mathbb{R}^\times$ and $\mathbb{C}^\times$</td>
+<td>$\iota$</td>
+<td>$(\cdot)^{-1}$</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>generic involution</td>
+<td>$\iota$</td>
+<td>$T$</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>coefficient isometry $\mathbb{B}\to\mathbb{R}^8$</td>
+<td>$\iota$</td>
+<td>$\operatorname{coef}$</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>algebra element $1\otimes i$</td>
+<td>$\iota$</td>
+<td>$1\otimes i$</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>unit map $\iota(1)=e_t$</td>
+<td>$\iota$</td>
+<td>$e_t$</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"><strong>523</strong></td>
+<td style="text-align: right;"><strong>29</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The inner automorphism is 80% of the purge, and it is one substitution: <code>\iota_</code> became <code>\operatorname{Ad}_</code> in twelve files, every subscript unchanged. The choice is not new notation. The corpus already writes $\operatorname{Ad}_{v_1v_2}$ for the same map in <em>Quaternion Rotations and Reflections</em>, and <em>Quaternion Involutions and Projections</em> wrote $\iota_{\nu_1}\circ\iota_{\nu_2}=\operatorname{Ad}_{\nu_1\nu_2}$ in one formula, naming the same object twice. The migration removes the duplicate name.</p>
+<p>The three generic occurrences became $T$, never $\operatorname{Ad}$. They state the definition of an involution, $T^2=\mathrm{id}$, and are not inner automorphisms.</p>
+<p>The $M_6(\mathbb{C})$ article had two maps, and the unital one is distinguished by a superscript rather than a hat: $\operatorname{inc}_k(A)=\operatorname{diag}(A,0)$ and $\operatorname{inc}^{\mathrm{un}}_k(A)=\operatorname{diag}(A,I_{6-k})$. The superscript follows the corpus style of $^{\mathrm{opp}}$, $^{\mathrm{lift}}$ and $^{\mathrm{fn}}$.</p>
+<p>The eight inversions were written as operations, not named: $q\mapsto q^{-1}$ and $(r\sigma)^{-1}=r^{-1}\sigma^{-1}$. The letter was doing no work that the formula does not do.</p>
+<h2 id="part-vi-by-category">Part VI by Category</h2>
+<p>Thirteen of the 24 categories used the letter. The other eleven, with 309 articles, did not, and they still do not.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Category</th>
-<th>Part</th>
-<th style="text-align: right;">Articles in category</th>
+<th style="text-align: right;">Articles</th>
 <th style="text-align: right;">Articles using $\iota$</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Main reading</th>
+<th style="text-align: right;">Occurrences before</th>
+<th style="text-align: right;">Occurrences now</th>
+<th>Replacement</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Integers</td>
-<td>VI</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">22</td>
-<td style="text-align: right;">22</td>
-<td>embedding $\mathbb{N}\to\mathbb{Z}$</td>
+<td style="text-align: right;">0</td>
+<td>$\hookrightarrow$</td>
 </tr>
 <tr>
 <td>Real Numbers</td>
-<td>VI</td>
 <td style="text-align: right;">19</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-<td>inversion</td>
+<td style="text-align: right;">0</td>
+<td>$(\cdot)^{-1}$</td>
 </tr>
 <tr>
 <td>Complex Numbers</td>
-<td>VI</td>
 <td style="text-align: right;">34</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">6</td>
-<td>inversion; adjoined imaginary</td>
+<td style="text-align: right;">0</td>
+<td>$(\cdot)^{-1}$, $1\otimes i$</td>
 </tr>
 <tr>
 <td>Reduced Biquaternions</td>
-<td>VI</td>
 <td style="text-align: right;">83</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">9</td>
-<td>idempotent representation</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{idem}$</td>
 </tr>
 <tr>
 <td>Quaternions</td>
-<td>VI</td>
 <td style="text-align: right;">64</td>
 <td style="text-align: right;">11</td>
 <td style="text-align: right;">353</td>
-<td style="text-align: right;">110</td>
-<td>axis involutions; 2×2 embedding</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{Ad}$, $\operatorname{Mat}$</td>
 </tr>
 <tr>
 <td>Quaternioid Algebraic Structures</td>
-<td>VI</td>
 <td style="text-align: right;">49</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">75</td>
 <td style="text-align: right;">0</td>
-<td>inner involutions</td>
+<td>$\operatorname{Ad}$</td>
 </tr>
 <tr>
 <td>Split-Quaternions</td>
-<td>VI</td>
 <td style="text-align: right;">46</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">15</td>
 <td style="text-align: right;">0</td>
-<td>inner automorphism</td>
+<td>$\operatorname{Ad}$</td>
 </tr>
 <tr>
 <td>Biquaternions</td>
-<td>VI</td>
 <td style="text-align: right;">153</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">15</td>
-<td style="text-align: right;">3</td>
-<td>inner automorphism; coefficient isometry</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{Ad}$, $\operatorname{coef}$, $e_t$</td>
 </tr>
 <tr>
 <td>Split-Biquaternions</td>
-<td>VI</td>
 <td style="text-align: right;">41</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
-<td>inner automorphism</td>
+<td>$\operatorname{Ad}$</td>
 </tr>
 <tr>
 <td>$M_3(\mathbb{C})$</td>
-<td>VI</td>
 <td style="text-align: right;">23</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-<td>corner embedding</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{inc}$</td>
 </tr>
 <tr>
 <td>$M_5(\mathbb{C})$</td>
-<td>VI</td>
 <td style="text-align: right;">23</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">5</td>
-<td>block embedding</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{inc}$</td>
 </tr>
 <tr>
 <td>$M_6(\mathbb{C})$</td>
-<td>VI</td>
 <td style="text-align: right;">24</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">11</td>
-<td style="text-align: right;">11</td>
-<td>corner embeddings</td>
+<td style="text-align: right;">0</td>
+<td>$\operatorname{inc}_k$, $\operatorname{inc}^{\mathrm{un}}_k$</td>
 </tr>
 <tr>
 <td>Structural Comparison around Biquaternions</td>
-<td>VI</td>
 <td style="text-align: right;">14</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td>2×2 matrix model</td>
-</tr>
-<tr>
-<td>Biquaternion Universe Conventions</td>
-<td>Physics</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">33</td>
 <td style="text-align: right;">0</td>
-<td>Clifford comparison</td>
-</tr>
-<tr>
-<td>Biquaternion Non Relativistic Non Quantum Theory</td>
-<td>Physics</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td>interior product</td>
-</tr>
-<tr>
-<td>Biquaternion Relativistic Quantum Theory</td>
-<td>Physics</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">72</td>
-<td style="text-align: right;">1</td>
-<td>Clifford comparison</td>
-</tr>
-<tr>
-<td>Biquaternion Quantum Fields</td>
-<td>Physics</td>
-<td style="text-align: right;">68</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">31</td>
-<td style="text-align: right;">0</td>
-<td>Clifford comparison</td>
-</tr>
-<tr>
-<td>Biquaternion Particle Physics and Gauge Fields</td>
-<td>Physics</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td>inner automorphism</td>
-</tr>
-<tr>
-<td>Biquaternion Gravity and Cosmology</td>
-<td>Physics</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">21</td>
-<td>Clifford comparison; NP spinor</td>
+<td>$\operatorname{Mat}$</td>
 </tr>
 <tr>
 <td>Other Part VI categories</td>
-<td>VI</td>
 <td style="text-align: right;">309</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -331,8 +352,272 @@
 <td>none</td>
 </tr>
 <tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>884</strong></td>
+<td style="text-align: right;"><strong>29</strong></td>
+<td style="text-align: right;"><strong>523</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td><strong>—</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row collects the eleven categories that did not use the letter. The articles that did are named one by one in the next table.</p>
+<p>The distribution is uneven. Quaternions holds 353 of the 523 occurrences: 314 are the inner automorphism, 36 the matrix embedding, and 3 a generic involution. The Quaternioid category adds 75, Split-Quaternions 15, Biquaternions 15. The elementary categories account for 32: 22 for the embedding of the natural numbers, 8 for inversion, 2 for the adjoined imaginary.</p>
+<h2 id="the-files">The Files</h2>
+<p>Every article that used the letter is listed, with its count before the migration, the spellings it used, and the notation that replaced them. The column of spellings is the record of the defect; it is not a list of forms still in use.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Occurrences before</th>
+<th>Spellings before</th>
+<th>Notation now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/quaternion-augmented-statistics.html">Quaternion Augmented Statistics</a></td>
+<td style="text-align: right;">138</td>
+<td>$\iota_j$ (39), $\iota_k$ (36), $\iota_1$ (13), $\iota_2$ (12), $\iota$ (2), and 13 more</td>
+<td>$\operatorname{Ad}$ 136; $T$ 2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-involutions-and-projections.html">Quaternion Involutions and Projections</a></td>
+<td style="text-align: right;">97</td>
+<td>$\iota_\nu$ (26), $\iota_{\nu_1}$ (17), $\iota_{\nu_2}$ (15), $\iota_{\nu_3}$ (12), $\iota$ (1), and 10 more</td>
+<td>$\operatorname{Ad}$ 96; $T$ 1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-group-of-involutions-of-the-quaternioid.html">The Group of Involutions of the Quaternioid</a></td>
+<td style="text-align: right;">70</td>
+<td>$\iota_\nu$ (30), $\iota_{\nu_1}$ (8), $\iota_{\nu_2}$ (8), $\iota_{\nu_3}$ (8), and 9 more</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-generalised-hamilton-rodrigues-calculus.html">The Generalised Hamilton–Rodrigues Calculus</a></td>
+<td style="text-align: right;">35</td>
+<td>$\iota_j$ (14), $\iota_{\tilde q_1^{-1}}$ (5), $\iota_k$ (4), $\iota_0$ (2), and 9 more</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-automorphisms-and-derivations.html">Quaternion Automorphisms and Derivations</a></td>
+<td style="text-align: right;">23</td>
+<td>$\iota_u$ (14), $\iota_{\exp(ta)}$ (2), $\iota_{\lambda u}$ (1), $\iota_v$ (1), and 5 more</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-integers.html">The Integers ($\mathbb{Z}$)</a></td>
+<td style="text-align: right;">22</td>
+<td>$\iota$ (22)</td>
+<td>$\hookrightarrow$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-other-algebraic-element-representations.html">Quaternion Other Algebraic Element Representations</a></td>
+<td style="text-align: right;">16</td>
+<td>$\iota$ (16)</td>
+<td>$\operatorname{Mat}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.html">Decompositions Along the Remarkable Subspaces of the Quaternions</a></td>
+<td style="text-align: right;">15</td>
+<td>$\iota_\nu$ (15)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-quaternion-automorphisms-and-derivations.html">Split-Quaternion Automorphisms and Derivations</a></td>
+<td style="text-align: right;">15</td>
+<td>$\iota_g$ (8), $\iota_{\vec e_z}$ (5), $\iota_{\lambda g}$ (1), $\iota_{\exp(ta)}$ (1)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/modulus-unit-polar-decomposition-of-quaternions.html">Modulus–Unit Polar Decomposition of Quaternions</a></td>
+<td style="text-align: right;">12</td>
+<td>$\iota$ (12)</td>
+<td>$\operatorname{Mat}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a></td>
+<td style="text-align: right;">12</td>
+<td>$\iota_g$ (7), $\iota_{\vec e_x}$ (3), $\iota_{\lambda g}$ (1), $\iota_{g^{*}}$ (1)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$</a></td>
+<td style="text-align: right;">11</td>
+<td>$\iota_k$ (11)</td>
+<td>$\operatorname{inc}_k$, $\operatorname{inc}^{\mathrm{un}}_k$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/reduced-biquaternion-other-algebraic-element-representations.html">Reduced Biquaternion Versors and the Orthogonal Group</a></td>
+<td style="text-align: right;">9</td>
+<td>$\iota$ (9)</td>
+<td>$\operatorname{idem}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/comparison-of-the-remarkable-subspaces-of-the-quaternions.html">Comparison of the Remarkable Subspaces of the Quaternions</a></td>
+<td style="text-align: right;">6</td>
+<td>$\iota_\nu$ (6)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m2-m3-corner-of-m5c.html">The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$</a></td>
+<td style="text-align: right;">6</td>
+<td>$\iota$ (6)</td>
+<td>$\operatorname{inc}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-quaternions.html">Exponential Polar Decomposition of Quaternions</a></td>
+<td style="text-align: right;">5</td>
+<td>$\iota$ (5)</td>
+<td>$\operatorname{Mat}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-quaternioid-as-a-vector-space-over-c.html">The Quaternioid as a Vector Space over $\mathbb{C}$</a></td>
+<td style="text-align: right;">5</td>
+<td>$\iota_a$ (5)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m2-corner-of-m3c.html">The $M_2$ Corner of $M_3(\mathbb{C})$</a></td>
+<td style="text-align: right;">4</td>
+<td>$\iota$ (4)</td>
+<td>$\operatorname{inc}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-norm-and-invertibility.html">Real Norm and Invertibility</a></td>
+<td style="text-align: right;">3</td>
+<td>$\iota$ (3)</td>
+<td>$(\cdot)^{-1}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/complex-norm-and-invertibility.html">Complex Norm and Invertibility</a></td>
+<td style="text-align: right;">3</td>
+<td>$\iota$ (3)</td>
+<td>$(\cdot)^{-1}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/rational-chart-polar-decomposition-of-quaternions.html">Rational-Chart Polar Decomposition of Quaternions</a></td>
+<td style="text-align: right;">3</td>
+<td>$\iota$ (3)</td>
+<td>$\operatorname{Mat}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-quaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</a></td>
+<td style="text-align: right;">3</td>
+<td>$\iota_\nu$ (3)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spectral-regularity-and-degeneracy-in-the-complex-algebra.html">Spectral Regularity and Degeneracy in the Complex Algebra</a></td>
+<td style="text-align: right;">2</td>
+<td>$\iota$ (2)</td>
+<td>$1\otimes i$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html">The Euclidean Topology of the Biquaternion Algebra</a></td>
+<td style="text-align: right;">2</td>
+<td>$\iota$ (2)</td>
+<td>$\operatorname{coef}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/comparison-of-element-representations-and-matrix-models.html">Comparison of Element Representations and Matrix Models</a></td>
+<td style="text-align: right;">2</td>
+<td>$\iota$ (2)</td>
+<td>$\operatorname{Mat}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-polar-decomposition.html">Real Polar Decomposition</a></td>
+<td style="text-align: right;">1</td>
+<td>$\iota$ (1)</td>
+<td>$(\cdot)^{-1}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/complex-exponential-and-lie-group-structure.html">Complex Exponential and Lie Group Structure</a></td>
+<td style="text-align: right;">1</td>
+<td>$\iota$ (1)</td>
+<td>$(\cdot)^{-1}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html">The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra</a></td>
+<td style="text-align: right;">1</td>
+<td>$\iota$ (1)</td>
+<td>$e_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-biquaternion-automorphisms-and-derivations.html">Split-Biquaternion Automorphisms and Derivations</a></td>
+<td style="text-align: right;">1</td>
+<td>$\iota_{u}$ (1)</td>
+<td>$\operatorname{Ad}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The largest single file is <em>Quaternion Augmented Statistics</em>, with 138 occurrences and 18 spellings. It is also the file where the bare letter had a second meaning: two occurrences defined a generic involution, and those became $T$, while the 136 subscripted ones became $\operatorname{Ad}$.</p>
+<p><em>Quaternion Involutions and Projections</em> follows with 97 occurrences and 15 spellings; one bare occurrence, in a remark quoting the definition of the statistics article, became $T$. The remaining 96 became $\operatorname{Ad}$.</p>
+<p>Four files have one occurrence each, among them <em>Split-Biquaternion Automorphisms and Derivations</em> and <em>The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra</em>. The Tomita article held the only undefined use in the scope: $\xi=\iota(1)=e_t$ introduced a map that the article never named. It now reads $\xi=e_t$, the unit.</p>
+<h2 id="physics">Physics</h2>
+<p>Physics was not migrated. Its letter is dominated by one declared form; the other uses are local and standard, except one bare occurrence.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th style="text-align: right;">Articles</th>
+<th style="text-align: right;">Articles using $\iota$</th>
+<th style="text-align: right;">Occurrences</th>
+<th style="text-align: right;">Occurrences in a contested spelling</th>
+<th>Main reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe Conventions</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">0</td>
+<td>the Clifford comparison</td>
+</tr>
+<tr>
+<td>Biquaternion Non Relativistic Non Quantum Theory</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td>the interior product</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">1</td>
+<td>the Clifford comparison; one bare occurrence</td>
+</tr>
+<tr>
+<td>Biquaternion Quantum Fields</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">0</td>
+<td>the Clifford comparison</td>
+</tr>
+<tr>
+<td>Biquaternion Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td>the inner automorphism, trivial on the centre</td>
+</tr>
+<tr>
+<td>Biquaternion Gravity and Cosmology</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">24</td>
+<td>the Clifford comparison; the Newman–Penrose spinor</td>
+</tr>
+<tr>
 <td>Other physics categories</td>
-<td>Physics</td>
 <td style="text-align: right;">189</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -341,473 +626,19 @@
 </tr>
 <tr>
 <td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>403</strong></td>
+<td style="text-align: right;"><strong>11</strong></td>
+<td style="text-align: right;"><strong>181</strong></td>
+<td style="text-align: right;"><strong>25</strong></td>
 <td><strong>—</strong></td>
-<td style="text-align: right;"><strong>1287</strong></td>
-<td style="text-align: right;"><strong>40</strong></td>
-<td style="text-align: right;"><strong>704</strong></td>
-<td style="text-align: right;"><strong>198</strong></td>
-<td><strong>—</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p>The column adds to 1,287, the number of distinct files.</p>
-<h2 id="part-vi-synthetic-studies">Part VI: Synthetic Studies</h2>
-<p>Part VI has 29 articles that use the letter, 523 occurrences in all, and 176 occurrences in an ambiguous form. The sections below follow the menu order.</p>
-<h3 id="integers">Integers</h3>
-<p>One article uses the letter, and it uses it 22 times for one map: the embedding $\iota:\mathbb{N}\to\mathbb{Z}$, $\iota(n)=[(n,0)]$. The article introduces the map in a display and never declares a scope. Inside the article there is no ambiguity. Against the other categories there is: the same bare letter is an inversion, a spinor, and four different embeddings.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Article</th>
 <th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/the-integers.html">The Integers ($\mathbb{Z}$)</a></td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">22</td>
-<td>$\iota$</td>
-<td>the embedding $\mathbb{N}\to\mathbb{Z}$, $\iota(n)=[(n,0)]$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="real-numbers">Real Numbers</h3>
-<p>Two articles use the letter, for four occurrences and one object: the inversion $q\mapsto q^{-1}$ on $\mathbb{R}^\times$. <em>Real Polar Decomposition</em> repeats the same map in polar coordinates. The category is internally consistent, and it agrees with Complex Numbers. The collision is with the embeddings.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/real-norm-and-invertibility.html">Real Norm and Invertibility</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-<td>$\iota$</td>
-<td>the inversion $q\mapsto q^{-1}$ on $\mathbb{R}^\times$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/real-polar-decomposition.html">Real Polar Decomposition</a></td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>$\iota$</td>
-<td>the inversion, read in polar coordinates</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="complex-numbers">Complex Numbers</h3>
-<p>Three articles use the letter, for six occurrences and two objects. <em>Complex Norm and Invertibility</em> and <em>Complex Exponential and Lie Group Structure</em> use $\iota$ for the inversion $Q\mapsto Q^{-1}$. <em>Spectral Regularity and Degeneracy in the Complex Algebra</em> uses $\iota$ for the adjoined imaginary, $\iota=1\otimes i$, in the idempotents $e_\pm=\tfrac12(1\mp i\iota)$. The same bare letter carries two objects in one category, and the article does not warn the reader.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/complex-norm-and-invertibility.html">Complex Norm and Invertibility</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-<td>$\iota$</td>
-<td>the inversion $Q\mapsto Q^{-1}$ on $\mathbb{C}^\times$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/spectral-regularity-and-degeneracy-in-the-complex-algebra.html">Spectral Regularity and Degeneracy in the Complex Algebra</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td>$\iota$</td>
-<td>the adjoined imaginary $\iota=1\otimes i$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/complex-exponential-and-lie-group-structure.html">Complex Exponential and Lie Group Structure</a></td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>$\iota$</td>
-<td>the inversion, as the inverse map of the Lie group</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="reduced-biquaternions">Reduced Biquaternions</h3>
-<p>One article, nine occurrences. Here $\iota$ is the idempotent-coordinate isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$, $\iota(\breve Q)=(Q_+,Q_-)$. It is a canonical isomorphism, but not the canonical embedding of the other categories. The bare letter hides the codomain.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/reduced-biquaternion-other-algebraic-element-representations.html">Reduced Biquaternion Versors and the Orthogonal Group</a></td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">9</td>
-<td>$\iota$</td>
-<td>the idempotent-coordinate isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="quaternions">Quaternions</h3>
-<p>Eleven of the 64 articles use the letter, for 353 occurrences. This is the largest block in the scope, and two objects share the letter.</p>
-<p>The first is the inner automorphism, $\iota_u(\tilde q)=u\tilde q u^{-1}$ for a unit $u$. On a unit imaginary axis it is the involution $\iota_\nu(\tilde q)=\nu\tilde q\nu^{-1}$. It is written $\iota_\nu$, $\iota_u$, $\iota_k$, $\iota_j$, $\iota_0$, $\iota_1$, $\iota_2$, $\iota_3$, $\iota_{\vec e_k}$. These are one object with many spellings. Inside the category the reading is stable.</p>
-<p>The second is the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$, written bare in four articles, for 36 occurrences.</p>
-<p>Against the rest of the corpus both readings collide. $\iota_k$ is a corner embedding in $M_6(\mathbb{C})$. $\iota_1$ and $\iota_2$ are spinor components in the Newman–Penrose article. The inner automorphism is consistent across the algebras, but its parameter letter changes from article to article.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/quaternion-augmented-statistics.html">Quaternion Augmented Statistics</a></td>
-<td style="text-align: right;">138</td>
-<td style="text-align: right;">61</td>
-<td>$\iota$; $\iota_k$, $\iota_1$, $\iota_2$</td>
-<td>axis involutions $\iota_k(\tilde q)=\vec e_k\tilde q\vec e_k^{-1}$; the bare letter once for a generic involution in a definition</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/quaternion-involutions-and-projections.html">Quaternion Involutions and Projections</a></td>
-<td style="text-align: right;">97</td>
-<td style="text-align: right;">7</td>
-<td>$\iota_k$, $\iota_1$, $\iota_2$</td>
-<td>axis involutions, the coordinate instances $\iota_k=\iota_{\vec e_k}$ of $\iota_\nu$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-generalised-hamilton-rodrigues-calculus.html">The Generalised Hamilton–Rodrigues Calculus</a></td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">6</td>
-<td>$\iota_k$, $\iota_1$, $\iota_2$</td>
-<td>axis involutions $\iota_k$; and $\iota_{\tilde q_1^{-1}}$, an inner automorphism</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/quaternion-automorphisms-and-derivations.html">Quaternion Automorphisms and Derivations</a></td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner automorphism $\iota_u$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/quaternion-other-algebraic-element-representations.html">Quaternion Other Algebraic Element Representations</a></td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">16</td>
-<td>$\iota$</td>
-<td>the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.html">Decompositions Along the Remarkable Subspaces of the Quaternions</a></td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner involution $\iota_\nu$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/modulus-unit-polar-decomposition-of-quaternions.html">Modulus–Unit Polar Decomposition of Quaternions</a></td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">12</td>
-<td>$\iota$</td>
-<td>the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/comparison-of-the-remarkable-subspaces-of-the-quaternions.html">Comparison of the Remarkable Subspaces of the Quaternions</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner involution $\iota_\nu$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/exponential-polar-decomposition-of-quaternions.html">Exponential Polar Decomposition of Quaternions</a></td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5</td>
-<td>$\iota$</td>
-<td>the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/rational-chart-polar-decomposition-of-quaternions.html">Rational-Chart Polar Decomposition of Quaternions</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-<td>$\iota$</td>
-<td>the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-quaternions.html">Introduction to the 2×2 Matrix Element Representation of Quaternions</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner involution $\iota_\nu$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="quaternioid-algebraic-structures">Quaternioid Algebraic Structures</h3>
-<p>Two articles, 75 occurrences, the inner automorphism again. <em>The Group of Involutions of the Quaternioid</em> writes the family $\iota_\nu$ and its products; <em>The Quaternioid as a Vector Space over $\mathbb{C}$</em> writes $\iota_a$ for a general unit $a$. The object is the same as in Quaternions. Only the parameter letter changes.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/the-group-of-involutions-of-the-quaternioid.html">The Group of Involutions of the Quaternioid</a></td>
-<td style="text-align: right;">70</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner involutions $\iota_\nu$ and their products</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-quaternioid-as-a-vector-space-over-c.html">The Quaternioid as a Vector Space over $\mathbb{C}$</a></td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner automorphism $\iota_a$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="split-quaternions">Split-Quaternions</h3>
-<p>One article, 15 occurrences, the inner automorphism $\iota_g$. The category is clean.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/split-quaternion-automorphisms-and-derivations.html">Split-Quaternion Automorphisms and Derivations</a></td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner automorphism $\iota_g$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternions">Biquaternions</h3>
-<p>Three articles, 15 occurrences, three readings. <em>Biquaternion Automorphisms and Derivations</em> uses $\iota_g$ for the inner automorphism; that is the same object as in Split-Quaternions. <em>The Euclidean Topology of the Biquaternion Algebra</em> uses bare $\iota$ for the coefficient isometry $\mathbb{B}\to\mathbb{R}^8$. <em>The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra</em> uses bare $\iota$ in $\xi=\iota(1)=e_t$ and never defines it. That single occurrence is the only undefined use in the scope.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a></td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner automorphism $\iota_g$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html">The Euclidean Topology of the Biquaternion Algebra</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td>$\iota$</td>
-<td>the coefficient isometry $\mathbb{B}\to\mathbb{R}^8$</td>
-</tr>
-<tr>
-<td><a href="../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html">The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra</a></td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>$\iota$</td>
-<td>a unit map, $\iota(1)=e_t$, not defined in the article</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="split-biquaternions">Split-Biquaternions</h3>
-<p>One article, one occurrence, the inner automorphism $\iota_u$. The category is clean.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/split-biquaternion-automorphisms-and-derivations.html">Split-Biquaternion Automorphisms and Derivations</a></td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the inner automorphism $\iota_u$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="math128">$M_3(\mathbb{C})$</h3>
-<p>One article, four occurrences, all bare: the corner embedding $M_2(\mathbb{C})\to M_3(\mathbb{C})$, $B\mapsto\begin{pmatrix}B&0\\0&0\end{pmatrix}$. The image is the corner $P M_3 P$, and the map is unital onto that corner but not into $M_3$.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/the-m2-corner-of-m3c.html">The $M_2$ Corner of $M_3(\mathbb{C})$</a></td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-<td>$\iota$</td>
-<td>the corner embedding $M_2(\mathbb{C})\to M_3(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="math137">$M_5(\mathbb{C})$</h3>
-<p>One article, six occurrences, five bare: the block embedding $M_2(\mathbb{C})\oplus M_3(\mathbb{C})\to M_5(\mathbb{C})$, $(A,B)\mapsto\operatorname{diag}(A,B)$. The same construction is written bare here and in $M_3(\mathbb{C})$.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/the-m2-m3-corner-of-m5c.html">The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">5</td>
-<td>$\iota$</td>
-<td>the block embedding $M_2(\mathbb{C})\oplus M_3(\mathbb{C})\to M_5(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="math145">$M_6(\mathbb{C})$</h3>
-<p>One article, eleven occurrences, all $\iota_k$: the corner embeddings $M_k(\mathbb{C})\to M_6(\mathbb{C})$. The same construction is bare in the two previous categories, and the same spelling is the axis involution in Quaternions. This is the sharpest collision in the scope: one symbol, two objects, two categories, and no signal in the article.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$</a></td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">11</td>
-<td>$\iota_k$</td>
-<td>the corner embeddings $M_k(\mathbb{C})\to M_6(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="structural-comparison-around-biquaternions">Structural Comparison around Biquaternions</h3>
-<p>One article, two occurrences, the 2×2 complex model of the quaternions. It is the same embedding as in the four Quaternion articles. The total for that object is 38 occurrences in five articles, all bare.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_maths/comparison-of-element-representations-and-matrix-models.html">Comparison of Element Representations and Matrix Models</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td>$\iota$</td>
-<td>the 2×2 complex model $\mathbb{H}\to M_2(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="physics">Physics</h2>
-<p>Physics has eleven articles that use the letter, 181 occurrences in all, and only 22 occurrences in an ambiguous form. The stable part is dominated by the Clifford comparison, with the interior product, one inner automorphism and five spinor variants.</p>
-<h3 id="biquaternion-universe-conventions">Biquaternion Universe Conventions</h3>
-<p>One article, 33 occurrences, all $\iota_{\mathrm{Cl}}$. This is the defining article for the comparison map. The category is clean.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a></td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-non-relativistic-non-quantum-theory">Biquaternion Non Relativistic Non Quantum Theory</h3>
-<p>One article, two occurrences, $\iota_{X_f}\omega=df$. The letter is the interior product. The category is clean.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the interior product $\iota_{X_f}$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-relativistic-quantum-theory">Biquaternion Relativistic Quantum Theory</h3>
-<p>Five articles, 72 occurrences. Four are clean: <em>Reflection</em>, <em>Rarita–Schwinger</em>, <em>Dirac Path Integral</em> and <em>Foldy–Wouthuysen</em>, all with $\iota_{\mathrm{Cl}}$. <em>The Dirac Equation</em> uses $\iota_{\mathrm{Cl}}$ once and bare $\iota$ once, for the complexified extension of the comparison. That single bare occurrence is the only ambiguity in the category.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
 <th>Problematic symbol</th>
 <th>Reading</th>
 </tr>
@@ -816,345 +647,88 @@
 <tr>
 <td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
 <td style="text-align: right;">37</td>
-<td style="text-align: right;">0</td>
 <td>none</td>
 <td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
 </tr>
 <tr>
+<td><a href="../articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a></td>
+<td style="text-align: right;">33</td>
+<td>none</td>
+<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
+<td style="text-align: right;">31</td>
+<td>none</td>
+<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a></td>
+<td style="text-align: right;">26</td>
+<td>$\iota$, $\iota_1$, $\iota_2$</td>
+<td>the Newman–Penrose spinor $\iota=(0,1)^T$, declared in the article, and its components</td>
+</tr>
+<tr>
 <td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
 <td style="text-align: right;">20</td>
-<td style="text-align: right;">0</td>
+<td>none</td>
+<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td style="text-align: right;">16</td>
 <td>none</td>
 <td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
 <td style="text-align: right;">7</td>
-<td style="text-align: right;">0</td>
 <td>none</td>
 <td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
 <td>none</td>
 <td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a></td>
+<td style="text-align: right;">2</td>
+<td>none</td>
+<td>the interior product $\iota_{X_f}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>$\iota$</td>
-<td>the Clifford comparison, written $\iota_{\mathrm{Cl}}$ once and bare once for its complexified extension</td>
+<td>$\iota$ (bare, once)</td>
+<td>the Clifford comparison, written $\iota_{\mathrm{Cl}}$ once and bare once</td>
 </tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-quantum-fields">Biquaternion Quantum Fields</h3>
-<p>One article, 31 occurrences, all $\iota_{\mathrm{Cl}}$. The category is clean.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
-<td style="text-align: right;">31</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-particle-physics-and-gauge-fields">Biquaternion Particle Physics and Gauge Fields</h3>
-<p>One article, one occurrence, the inner automorphism $\iota_\lambda$. It is the identity because $\lambda$ is central. The category is clean, but $\iota_\lambda$ is a fourth parameter letter for the inner automorphism, after $\iota_u$, $\iota_g$ and $\iota_a$.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
 <td>none</td>
 <td>the inner automorphism $\iota_\lambda$, the identity because $\lambda$ is central</td>
 </tr>
 </tbody>
 </table></div>
-<h3 id="biquaternion-gravity-and-cosmology">Biquaternion Gravity and Cosmology</h3>
-<p>Two articles, 42 occurrences. <em>Curved Spacetime and the Biquaternion Framework</em> uses 16 $\iota_{\mathrm{Cl}}$ and is clean. <em>The Newman–Penrose Formalism in Biquaternionic Form</em> uses 26, of which 21 are ambiguous: bare $\iota$ 19, and $\iota_1$ and $\iota_2$ once each. Here $\iota$ is the second basis spinor, $(0,1)^T$, and $\iota_1,\iota_2$ are its components. The notation is standard in general relativity. The collision is with the quaternion axis involutions, not with the Clifford map.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Article</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Ambiguous</th>
-<th>Problematic symbol</th>
-<th>Reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a></td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">21</td>
-<td>$\iota$, $\iota_1$, $\iota_2$</td>
-<td>the Newman–Penrose spinor $\iota=(0,1)^T$ and its components</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">0</td>
-<td>none</td>
-<td>the Clifford comparison $\iota_{\mathrm{Cl}}$</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="the-objects">The Objects</h2>
-<p>Every occurrence belongs to one of thirteen objects or object families. The table gives the totals. The first row collects the inner automorphism and its involution cases: the quaternion axis family and the inner automorphisms of the other algebras. It is the largest class, and the one with the most spellings.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Object</th>
-<th style="text-align: right;">Occurrences</th>
-<th>Main spellings</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>inner automorphism and its involutions</td>
-<td style="text-align: right;">421</td>
-<td>$\iota_\nu$, $\iota_u$, $\iota_g$, $\iota_a$, $\iota_\lambda$, $\iota_k$, $\iota_j$, $\iota_0$, $\iota_1$, $\iota_2$, $\iota_3$, $\iota_{\vec e_k}$</td>
-</tr>
-<tr>
-<td>Clifford comparison</td>
-<td style="text-align: right;">152</td>
-<td>$\iota_{\mathrm{Cl}}$, and once bare</td>
-</tr>
-<tr>
-<td>2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
-<td style="text-align: right;">38</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>Newman–Penrose spinor</td>
-<td style="text-align: right;">26</td>
-<td>bare $\iota$, $\iota_1$, $\iota_2$, $\iota^A$, $\iota^\dagger$</td>
-</tr>
-<tr>
-<td>embedding $\mathbb{N}\to\mathbb{Z}$</td>
-<td style="text-align: right;">22</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>corner or block embedding</td>
-<td style="text-align: right;">20</td>
-<td>bare $\iota$, $\iota_k$</td>
-</tr>
-<tr>
-<td>idempotent representation</td>
-<td style="text-align: right;">9</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>inversion</td>
-<td style="text-align: right;">8</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>coefficient isometry</td>
-<td style="text-align: right;">2</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>algebra element $1\otimes i$</td>
-<td style="text-align: right;">2</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>interior product</td>
-<td style="text-align: right;">2</td>
-<td>$\iota_{X_f}$</td>
-</tr>
-<tr>
-<td>generic involution</td>
-<td style="text-align: right;">1</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td>unit map</td>
-<td style="text-align: right;">1</td>
-<td>bare $\iota$</td>
-</tr>
-<tr>
-<td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>704</strong></td>
-<td><strong>—</strong></td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="the-collisions">The Collisions</h2>
-<p>Four spellings have more than one reading. The table gives every reading and its count. A reading is a mathematical object, not a grammatical role.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Spelling</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Articles</th>
-<th>Readings</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\iota$</td>
-<td style="text-align: right;">112</td>
-<td style="text-align: right;">19</td>
-<td>matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$ 38; embedding $\mathbb{N}\to\mathbb{Z}$ 22; Newman–Penrose spinor 19; corner or block embedding 9; idempotent representation 9; inversion 8; coefficient isometry 2; algebra element 2; Clifford comparison 1; generic involution 1; unit map 1</td>
-</tr>
-<tr>
-<td>$\iota_k$</td>
-<td style="text-align: right;">53</td>
-<td style="text-align: right;">4</td>
-<td>axis involution 42; corner embedding 11</td>
-</tr>
-<tr>
-<td>$\iota_1$</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">4</td>
-<td>axis involution 16; Newman–Penrose component 1</td>
-</tr>
-<tr>
-<td>$\iota_2$</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">4</td>
-<td>axis involution 15; Newman–Penrose component 1</td>
-</tr>
-</tbody>
-</table></div>
-<p>The bare letter is not one word with one meaning. It is eleven words written the same way. The largest blocks are the matrix embedding (38), the embedding of $\mathbb{N}$ into $\mathbb{Z}$ (22), and the Newman–Penrose spinor (19). None of those articles declares which object the letter denotes. The remaining eight readings are smaller but not negligible: corner and block embeddings 9, idempotent representation 9, inversion 8, coefficient isometry 2, algebra element 2, Clifford comparison 1, generic involution 1, undefined unit map 1.</p>
-<p>The $\iota_k$ collision has two sides: 42 axis involutions in Quaternions, 11 corner embeddings in $M_6(\mathbb{C})$. The second side is one article and one construction. A rename there is cheap and closes the collision.</p>
-<p>The numeral collision is small in counts and large in consequence. $\iota_1$ and $\iota_2$ are axis involutions 16 and 15 times, and spinor components once each. Both readings are "the first" or "the second" object in their formalism, so the reader has no way to choose without the surrounding text. $\iota_3$ is not used in the Newman–Penrose article, but it belongs to the same series and invites the same misreading.</p>
-<h2 id="the-repairs">The Repairs</h2>
-<p>The repairs are local. A qualified subscript names the object, and the letter stays available for the standard uses.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Object</th>
-<th>Current form</th>
-<th style="text-align: right;">Occurrences</th>
-<th style="text-align: right;">Articles</th>
-<th>Proposed form</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2×2 matrix embedding</td>
-<td>$\iota$</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">5</td>
-<td>$\iota_{M_2}$</td>
-</tr>
-<tr>
-<td>embedding $\mathbb{N}\to\mathbb{Z}$</td>
-<td>$\iota$</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">1</td>
-<td>$\iota_{\mathbb Z}$</td>
-</tr>
-<tr>
-<td>corner or block embedding</td>
-<td>$\iota$</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">2</td>
-<td>$\iota^{\mathrm{cor}}$</td>
-</tr>
-<tr>
-<td>corner embedding $M_k\to M_6$</td>
-<td>$\iota_k$</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">1</td>
-<td>$\iota^{\mathrm{cor}}_k$</td>
-</tr>
-<tr>
-<td>idempotent representation</td>
-<td>$\iota$</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">1</td>
-<td>$\iota_{\mathrm{idem}}$</td>
-</tr>
-<tr>
-<td>inversion</td>
-<td>$\iota$</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">4</td>
-<td>$\iota_{\mathrm{inv}}$</td>
-</tr>
-<tr>
-<td>coefficient isometry</td>
-<td>$\iota$</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>$\iota_{\mathbb R^8}$</td>
-</tr>
-<tr>
-<td>algebra element $1\otimes i$</td>
-<td>$\iota$</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td>$\varepsilon$</td>
-</tr>
-<tr>
-<td>generic involution</td>
-<td>$\iota$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>$\sigma$</td>
-</tr>
-<tr>
-<td>unit map $\iota(1)=e_t$</td>
-<td>$\iota$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>define it or drop it</td>
-</tr>
-<tr>
-<td>Newman–Penrose spinor</td>
-<td>$\iota$</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">1</td>
-<td>keep, declare the scope</td>
-</tr>
-<tr>
-<td>Clifford comparison</td>
-<td>$\iota$</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td>write $\iota_{\mathrm{Cl}}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table covers 123 occurrences, of which 103 need an edit and 20 are already standard. The two component forms $\iota_1,\iota_2$ in the Newman–Penrose article are kept for the same reason. The matrix embedding is the largest single edit: 38 occurrences in five articles. The embedding of $\mathbb{N}$ into $\mathbb{Z}$ is second, with 22 occurrences in one article.</p>
-<p>The quaternion axis family is not in the table. Its spellings are stable inside Quaternions, and a global rename would touch more than two hundred occurrences for no gain in that category. The collision is closed from the other side, by renaming the $M_6(\mathbb{C})$ embedding and by declaring the Newman–Penrose spinor. A scope sentence at the top of the Quaternion articles would make the numeral series safe as well.</p>
-<p>The inner automorphism has one object and four parameter letters: $\iota_u$, $\iota_g$, $\iota_a$, $\iota_\lambda$. This is not a collision, because the construction is the same. It is an inconsistency. A single form, $\operatorname{Ad}_g$, would remove it, but the change is optional and touches 44 occurrences in nine articles.</p>
-<h2 id="summary">Summary</h2>
-<p>The audit scanned 1,287 article files: 884 in Part VI and 403 in physics. Forty articles use $\iota$, for 704 occurrences and 59 spellings.</p>
-<p>The largest object class is the inner automorphism and its involution cases, with 421 occurrences. The Clifford comparison is second, with 152.</p>
-<p>Twenty-two articles write a form with more than one reading, and 198 occurrences are in such a form. Part VI contributes 176 of the 198; physics contributes 22. The bare letter accounts for 112 occurrences and eleven readings. $\iota_k$ accounts for 53 occurrences and two readings. $\iota_1$ and $\iota_2$ account for 33 occurrences and two readings.</p>
-<p>Physics is not the problem. Its 159 stable occurrences are the Clifford comparison, the interior product, one inner automorphism, and five spinor variants. The only physics defects are 21 occurrences in the Newman–Penrose article and one bare comparison in the Dirac article.</p>
-<p>Part VI is the problem, and the Quaternions category is its centre: 110 ambiguous occurrences out of 353. The sharpest single collision is the corner embedding, written bare in $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$, written $\iota_k$ in $M_6(\mathbb{C})$, and written $\iota_k$ for the axis involution in Quaternions.</p>
+<p>The one defect in the Clifford notation is <em>The Dirac Equation in Biquaternionic Form</em>: it writes the Clifford comparison as $\iota_{\mathrm{Cl}}$ once and bare $\iota$ once for the complexified extension. The fix is local and is not applied here: write $\iota_{\mathrm{Cl}}$ both times, or declare the extension.</p>
+<p>The Newman–Penrose article is a different case. It uses $\iota$ for the second spinor of the dyad, $(0,1)^T$, and writes $\iota_1,\iota_2$ for its components. The object is declared in a display before it is used, the notation is standard in general relativity, and the article never mixes it with the Clifford map. It is not a defect inside physics. It was a cross-corpus collision with the quaternion axis involutions, and the Part VI migration has removed the other side of that collision.</p>
+<h2 id="outside-the-scope">Outside the Scope</h2>
+<p>Part VI is clean. Mathematics is not. Outside Part VI, 156 maths articles still use the letter, for 1,632 occurrences. They were not scanned for this audit and were not migrated.</p>
+<p>The largest blocks are the same kinds of map under other names. <em>Curves and Surfaces in the Biquaternion Moving Frame</em> uses 119 occurrences. <em>Involutive Groups</em> uses 78 for the inversion $\iota(g)=g^{-1}$. <em>The Lie Derivative</em> uses 59 and <em>The Exterior Derivative</em> 49 for the interior product $\iota_X$. <em>The Signature Operator and the Involution</em> uses 43. <em>The Completion Operator</em> uses $\iota_R$ for the completion map of a ring.</p>
+<p>Those uses are stable inside their articles, and several are standard. They matter here for one reason: the claim of this article is about Part VI and physics, not about the mathematical corpus as a whole. A reader who wants one letter for one object across all of mathematics will not get it from this migration.</p>
+<h2 id="verification">Verification</h2>
+<p>The migration was checked by recomputation, not by reading.</p>
+<ul>
+<li>All 884 Part VI files were rescanned: zero occurrences of <code>\iota</code>, and zero occurrences of the Unicode character.</li>
+<li>The per-file counts sum to 523, and the replacement table sums to 523: 417 + 38 + 22 + 21 + 9 + 8 + 3 + 2 + 2 + 1.</li>
+<li>Each of the 29 files was checked after writing: its remaining <code>\iota</code> count is zero, and its number of replacements equals its audited count.</li>
+<li>No replacement introduced a hat: <code>\widehat</code> does not occur in any of the 29 files.</li>
+<li>No empty subscript: <code>\operatorname{Ad}_}</code> does not occur in any of the 29 files.</li>
+<li>Every changed line keeps an even number of <code>$</code>, and every file keeps balanced braces.</li>
+<li>The 29 links in the file table resolve to existing articles.</li>
+</ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1166,68 +740,83 @@
 </thead>
 <tbody>
 <tr>
-<td>$\iota$</td>
-<td>the letter under audit, quoted rather than used</td>
-<td>throughout</td>
+<td>$\operatorname{Ad}_\nu$</td>
+<td>the inner automorphism, and the involution about the axis $\nu$</td>
+<td>Part VI, 417 occurrences</td>
+</tr>
+<tr>
+<td>$\operatorname{Mat}$</td>
+<td>the 2×2 matrix embedding $\mathbb{H}\to M_2(\mathbb{C})$</td>
+<td>Part VI, 38</td>
+</tr>
+<tr>
+<td>$\hookrightarrow$</td>
+<td>the embedding $\mathbb{N}\to\mathbb{Z}$, $n\mapsto[(n,0)]$</td>
+<td><em>The Integers</em>, 22</td>
+</tr>
+<tr>
+<td>$\operatorname{inc}_k$, $\operatorname{inc}^{\mathrm{un}}_k$</td>
+<td>the corner and unital embeddings $M_k(\mathbb{C})\to M_6(\mathbb{C})$</td>
+<td>$M_6(\mathbb{C})$, 11</td>
+</tr>
+<tr>
+<td>$\operatorname{idem}$</td>
+<td>the idempotent-coordinate representation</td>
+<td>Reduced Biquaternions, 9</td>
+</tr>
+<tr>
+<td>$(\cdot)^{-1}$</td>
+<td>inversion on $\mathbb{R}^\times$ and $\mathbb{C}^\times$</td>
+<td>Real and Complex Numbers, 8</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>a generic involution, $T^2=\mathrm{id}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\operatorname{coef}$</td>
+<td>the coefficient isometry $\mathbb{B}\to\mathbb{R}^8$</td>
+<td>Biquaternions, 2</td>
+</tr>
+<tr>
+<td>$1\otimes i$</td>
+<td>the adjoined imaginary of the complexified algebra</td>
+<td>Complex Numbers, 2</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>the unit of the biquaternion algebra</td>
+<td>1</td>
 </tr>
 <tr>
 <td>$\iota_{\mathrm{Cl}}$</td>
 <td>the Clifford comparison</td>
-<td>physics, 151 occurrences</td>
+<td>physics, 151</td>
 </tr>
 <tr>
-<td>$\iota_X$, $\iota_{X_f}$</td>
+<td>$\iota_X$</td>
 <td>the interior product</td>
-<td>physics</td>
+<td>physics, 2</td>
 </tr>
 <tr>
-<td>$\iota_\nu$</td>
-<td>the inner involution about the axis $\nu$</td>
-<td>Quaternions</td>
-</tr>
-<tr>
-<td>$\iota_k$, $\iota_j$, $\iota_0$, $\iota_1$, $\iota_2$, $\iota_3$</td>
-<td>axis involutions</td>
-<td>Quaternions</td>
-</tr>
-<tr>
-<td>$\iota_1$, $\iota_2$</td>
-<td>components of the Newman–Penrose spinor</td>
-<td>Newman–Penrose article</td>
-</tr>
-<tr>
-<td>$\iota_k$</td>
-<td>the corner embedding $M_k(\mathbb{C})\to M_6(\mathbb{C})$</td>
-<td>$M_6(\mathbb{C})$</td>
-</tr>
-<tr>
-<td>$\iota_u$, $\iota_g$, $\iota_a$, $\iota_\lambda$</td>
-<td>the inner automorphism</td>
-<td>several algebras</td>
-</tr>
-<tr>
-<td>$\iota_{M_2}$</td>
-<td>proposed form for the 2×2 matrix embedding</td>
-<td>this article</td>
-</tr>
-<tr>
-<td>$\iota^{\mathrm{cor}}_k$</td>
-<td>proposed form for the corner embedding</td>
-<td>this article</td>
+<td>$\iota$</td>
+<td>the Newman–Penrose spinor</td>
+<td>physics, 26, declared locally</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
-<p>The conventions fix the forms that the repairs must respect:</p>
+<p>The conventions fix the forms that the migration respected:</p>
 <ul>
 <li><a href="../articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Conventions of the Indices, the Notation and the Corpus</a> gives the subscript rules and the admitted forms.</li>
 <li><a href="../articles_maths/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a> and its <a href="../articles_physics/conventions-of-the-matrix-models.html">physics counterpart</a> define $\iota_{\mathrm{Cl}}$ and its cells.</li>
 </ul>
-<p>The three exemplars of the audit are:</p>
+<p>The exemplars of the audit, now migrated, are:</p>
 <ul>
-<li><a href="../articles_maths/the-integers.html">The Integers</a> for the bare embedding $\mathbb{N}\to\mathbb{Z}$.</li>
-<li><a href="../articles_maths/quaternion-involutions-and-projections.html">Quaternion Involutions and Projections</a> for the axis family and its numeral spellings.</li>
-<li><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a> for the spinor $\iota$ and its components.</li>
+<li><a href="../articles_maths/the-integers.html">The Integers</a> for the embedding $\mathbb{N}\to\mathbb{Z}$, now written with $\hookrightarrow$.</li>
+<li><a href="../articles_maths/quaternion-involutions-and-projections.html">Quaternion Involutions and Projections</a> for the axis family, now $\operatorname{Ad}_\nu$.</li>
+<li><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a> for the spinor $\iota$, kept and declared.</li>
 </ul>
 <p><a href="the-upper-indexes-problem.html">The Upper Indexes Problem</a> applies the same audit method to the index conventions and is the model for this inventory.</p>
       </div>
