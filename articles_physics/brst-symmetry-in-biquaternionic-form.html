@@ -90,7 +90,7 @@
 \qquad
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$</p>
-<p>with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\xi B_aB_a$ and the ghost term $-\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g f_{abc}A_{\mu b} c_c$.</p>
+<p>with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\xi\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.</p>
 <p>The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.</p>
 <h3 id="the-ghosts-and-the-grassmann-envelope">The Ghosts and the Grassmann Envelope</h3>
 <p>The ghost fields are anticommuting: $\{c(x),\bar{c}(y)\}=0$ at spacelike separation and, formally, $c^2=0$ as a classical field. The biquaternion algebra contains no such element. It is not a division algebra — $\mathbb{B}\cong M_2(\mathbb{C})$ contains nonzero nilpotents, among them $(\vec e_x+i\vec e_y)/2$, whose square vanishes — but nilpotency is not oddness: the algebra is ungraded, every element of $\mathbb{B}$ is even, and the product of two elements cannot be odd. An element that anticommutes with its fellows does not exist in $\mathbb{B}$, whatever its square. The ghosts therefore cannot be elements of $\mathbb{B}$. They must be adjoined, and the correct structure is the Grassmann envelope</p>
@@ -286,6 +286,10 @@ $$</p>
 <tr>
 <td>$\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$</td>
 <td>Gauge potential biquaternion</td>
+</tr>
+<tr>
+<td>$a,b,c$; $\mu,\nu$</td>
+<td>Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum</td>
 </tr>
 <tr>
 <td>$T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$</td>
