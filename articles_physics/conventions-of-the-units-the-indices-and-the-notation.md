@@ -39,6 +39,26 @@ The order is from the physical to the typographical. The SI units come first, wi
 
 **A caution on $\mu$.** The letter $\mu$ names the permeability in $c=1/\sqrt{\epsilon\mu}$ and the inverse Compton length in $\mu=mc/\hbar$, and it is the direction label in $e_\mu$ and $Q_\mu$. The corpus distinguishes the uses by context; an article should not use two of them in one expression.
 
+## The Preferred Upper and Lower Marks
+
+**These are preferences, not rules.** The lists below say which mark the corpus prefers for each use. They are indications: an article departs from them where its subject requires it, and a stricter rule stated in the corpus governs in their place — the derivation convention of *Operator and Calculus Conventions*, §*Conventions for Derivation*, the Fock and opposite tokens of §*The Superscripts*, and the forms of §*The Subscripts*.
+
+**A caret is preferred for four things.**
+
+- a power, $e^\lambda$, $2^k$, $(-1)^k$, $2^n$;
+- a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
+- a transposition, $L^T$, $\psi^T$;
+- a construction, $\mathbb{B}^\times$, $\mathbb{B}^{\otimes n}$, $S^{\otimes n}$.
+
+**A low mark is preferred for four things.**
+
+- a numeric count, $Q_1$, $M_2$;
+- a coordinate or a field component, $x_\mu$, $A_\mu$; a basis vector or a gamma, $\vec e_i$, $\gamma_i$;
+- a sign symbol, $\varepsilon_{ijk}$;
+- a colour, gauge or spin index, $T_a$, $G_a$, $\sigma_z$.
+
+**The lists decide the common uses, not the names.** A raised grade, parameter, sector or order is a name and is read as one, and the article that uses it says which name it is.
+
 ## The Superscripts
 
 Two superscript tokens run beside the marks of the elements and the marks of the conjugations, and neither is to be read for the other:

@@ -20,13 +20,13 @@ S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial/\partial Q_
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
-The lattice path integral is defined on the Euclidean section. Write $\gamma_0^{E}=\gamma_0$ and $\gamma_k^{E}=i\gamma_k$; then $(\gamma_\mu^{E})^2=+1$ and $\{\gamma_\mu^{E},\gamma_{\nu\}^{E}}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $\mathbb{B}$ frame of the biquaternion algebra. The Euclidean action is
+The lattice path integral is defined on the Euclidean section, read in the $\mathbb{B}$-frame generators $\gamma_0(Q)=\gamma_0$ and $\gamma_k(Q)=i\gamma_k$; then $\gamma_\mu(Q)^2=+1$ and $\{\gamma_\mu(Q),\gamma_\nu(Q)\}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, a change of frame and not a change of algebra. The Euclidean action is
 
 $$
-S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu^{E}\partial^E/\partial x_\mu + m\right)\psi(x),
+S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu(Q)\partial^E/\partial x_\mu + m\right)\psi(x),
 $$
 
-and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma_\mu^{E}$ and $\gamma_5=\gamma_0^{E}\gamma_{1\gamma}^{E}^E_2\gamma_{3}^{E}$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
+and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma_\mu(Q)$ and $\gamma_5=\gamma_0(Q)\gamma_1(Q)\gamma_2(Q)\gamma_3(Q)$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
 
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
@@ -166,6 +166,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 |---|---|
 | $a$, $n$, $\vec u$ | Lattice spacing, site index, unit lattice vector |
 | $S_F^L$ | Naive lattice fermion action |
+| $\gamma_\mu(Q)$ | $\mathbb{B}$-frame generators, $\gamma_0(Q)=\gamma_0$, $\gamma_k(Q)=i\gamma_k$ |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
 | $S_\nu = i\gamma_5\gamma_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
 | $S(p)$ | Naive lattice propagator |

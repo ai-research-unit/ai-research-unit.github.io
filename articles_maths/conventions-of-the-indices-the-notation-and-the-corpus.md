@@ -8,6 +8,26 @@ The superscripts come first because they are two tokens and nothing else; the su
 
 The article is the last of the nine and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
 
+## The Preferred Upper and Lower Marks
+
+**These are preferences, not rules.** The lists below say which mark the corpus prefers for each use. They are indications: an article departs from them where its subject requires it, and a stricter rule stated in the corpus governs in their place — the derivation convention of *Operator and Calculus Conventions*, §*Conventions for Derivation*, the Fock and opposite tokens of §*The Superscripts*, and the forms of §*The Subscripts*.
+
+**A caret is preferred for four things.**
+
+- a power, $e^\lambda$, $2^k$, $(-1)^k$, $2^n$;
+- a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
+- a transposition, $L^T$, $\psi^T$;
+- a construction, $\mathbb{B}^\times$, $\mathbb{B}^{\otimes n}$, $S^{\otimes n}$.
+
+**A low mark is preferred for four things.**
+
+- a numeric count, $Q_1$, $M_2$;
+- a coordinate or a field component, $x_\mu$, $A_\mu$; a basis vector or a gamma, $\vec e_i$, $\gamma_i$;
+- a sign symbol, $\varepsilon_{ijk}$;
+- a colour, gauge or spin index, $T_a$, $G_a$, $\sigma_z$.
+
+**The lists decide the common uses, not the names.** A raised grade, parameter, sector or order is a name and is read as one, and the article that uses it says which name it is.
+
 ## The Superscripts
 
 Two superscript tokens run beside the marks of the elements and the marks of the conjugations, on the glyphs of elements and algebras, and neither is to be read for the other:
