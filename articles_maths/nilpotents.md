@@ -26,7 +26,7 @@ $$
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2.
 $$
 
-The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *The Six Subspaces and the Three Decompositions*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
+The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
@@ -285,7 +285,7 @@ In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *Matrix Representations : The 
 
 **The nilpotent cone lies in the vector subspace and in no other remarkable subspace: the centre, the quaternion subspace, the anti-quaternion subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$ contain no nilpotent.**
 
-Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the scalar part is the defining condition of the vector subspace $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part (*The Six Subspaces and the Three Decompositions*). The nilpotents therefore lie in $\mathrm{Vect}(\mathbb{B})$ and nowhere else.
+Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the scalar part is the defining condition of the vector subspace $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part (*Subspaces and Decompositions*). The nilpotents therefore lie in $\mathrm{Vect}(\mathbb{B})$ and nowhere else.
 
 | remarkable subspace | nilpotents |
 |---|---|
@@ -334,7 +334,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce basis.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the strictly triangular form.
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same class read against the four general products, where only the plain product has this square-zero set.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), for the algebraic properties of the biquaternions.

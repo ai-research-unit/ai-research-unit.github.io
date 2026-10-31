@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with its Hermitian conjugation ${}^{*}$, is a $\mathbb{C}$-algebra with involution whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*The Biquaternion Algebra*, *The Six Subspaces and the Three Decompositions*). Its module theory is that of $M_2(\mathbb{C})$: up to isomorphism there is one simple left module, the defining module $S=\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and every left module is a direct sum $S^{\oplus k}$ (*The Category of Modules*). This article adds the **form** to that module theory. A module over an algebra with a dagger can carry the corresponding Hermitian form, and the two structures are tied by a single axiom, that the action be self-adjoint:
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with its Hermitian conjugation ${}^{*}$, is a $\mathbb{C}$-algebra with involution whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*The Biquaternion Algebra*, *Subspaces and Decompositions*). Its module theory is that of $M_2(\mathbb{C})$: up to isomorphism there is one simple left module, the defining module $S=\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and every left module is a direct sum $S^{\oplus k}$ (*The Category of Modules*). This article adds the **form** to that module theory. A module over an algebra with a dagger can carry the corresponding Hermitian form, and the two structures are tied by a single axiom, that the action be self-adjoint:
 
 $$
 \langle t,\tilde Q_3\cdot s\rangle_{*}=\langle\tilde Q_3^{*}\cdot t,s\rangle_{*}

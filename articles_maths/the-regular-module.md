@@ -71,7 +71,7 @@ All simple left $\mathbb{B}$-modules are isomorphic, since a simple artinian rin
 
 ## The Ideals in the Remarkable Subspaces
 
-The notions of one-sided ideal are those of §*Ideals* and §*The Two-Sided Ideals* above, and the six subspaces are those of *The Six Subspaces and the Three Decompositions*. An idempotent splits the algebra as
+The notions of one-sided ideal are those of §*Ideals* and §*The Two-Sided Ideals* above, and the six subspaces are those of *Subspaces and Decompositions*. An idempotent splits the algebra as
 
 $$
 \mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}(e_t - \tilde\Pi) ,
@@ -97,7 +97,7 @@ $$
 
 **Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde Q_3\vec P)\vec P = \tilde Q_3\vec P^2 = 0$ for every $\tilde Q_3$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde Q_3)\vec P = 0$ on the left instead.
 
-The subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by *The Six Subspaces and the Three Decompositions*; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
+The subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by *Subspaces and Decompositions*; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
 
 | subspace | left ideal generated | units in it | minimal one-sided ideals determined |
 |---|---|---|---|

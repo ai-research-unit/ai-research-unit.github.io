@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *The Six Subspaces and the Three Decompositions*, with their natural real bases.
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Subspaces and Decompositions*, with their natural real bases.
 
-The reading follows the pattern of *Remarkable Subspaces and the Four General Products, Forms and Norms*, and the subspaces themselves, their bases and their relations are *The Six Subspaces and the Three Decompositions*. The products of the four general products on the same remarkable subspaces are read in the same article; the isotropic set of the block is the isotropic cone of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
+The reading follows the pattern of *Remarkable Subspaces and the Four General Products, Forms and Norms*, and the subspaces themselves, their bases and their relations are *Subspaces and Decompositions*. The products of the four general products on the same remarkable subspaces are read in the same article; the isotropic set of the block is the isotropic cone of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
 
-**Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_te_t+\vec Q$. The remarkable subspaces are real and their natural real bases are the ones of *The Six Subspaces and the Three Decompositions*:
+**Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_te_t+\vec Q$. The remarkable subspaces are real and their natural real bases are the ones of *Subspaces and Decompositions*:
 
 $$
 \mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\},\quad
@@ -42,7 +42,7 @@ The generic norm of a central element is $\langle Ae_t\rangle_{\natural}=A^2$, s
 
 ### The Product Rule and the Failure of Closure
 
-Two vector parts $\vec Q_1,\vec Q_2$ (pure elements in the sense of *The Six Subspaces and the Three Decompositions*) multiply as
+Two vector parts $\vec Q_1,\vec Q_2$ (pure elements in the sense of *Subspaces and Decompositions*) multiply as
 
 $$
 \vec Q_1\bullet\vec Q_2=-\bigl(\vec Q_1,\vec Q_2\bigr)e_t,
@@ -186,7 +186,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 
 ## Further Reading
 
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces, their bases and their relations.
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces, their bases and their relations.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the same remarkable subspaces under the general plain bilinear form, and for the readings of the four general products.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.

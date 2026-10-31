@@ -208,4 +208,4 @@ The four involutions of the algebra become the adjugate, the $\epsilon$-dressed 
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](../../articles_maths/m2c-representation-the-four-words-and-the-four-traces.html), for the four forms
 - [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](../../articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
 - [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](../../articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html), for the model
-- [The Six Subspaces and the Three Decompositions](../../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the material reading
+- [Subspaces and Decompositions](../../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the material reading

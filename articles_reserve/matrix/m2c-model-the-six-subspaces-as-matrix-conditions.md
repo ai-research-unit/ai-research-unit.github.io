@@ -4,7 +4,7 @@
 
 The six remarkable subspaces of the biquaternion algebra are defined by the four conjugations and by the scalar–vector split. In the matrix model each definition becomes a matrix condition: the centre is the scalar matrices, the vector subspace is the traceless matrices, the quaternion subspace is a conjugate-linear pattern, the anti-quaternion subspace is $i$ times it, and the Hermitian and anti-Hermitian subspaces are the Hermitian and the anti-Hermitian matrices.
 
-This article collects the six descriptions and their determinants. It is the matrix form of *The Six Subspaces and the Three Decompositions*.
+This article collects the six descriptions and their determinants. It is the matrix form of *Subspaces and Decompositions*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*: $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$, the unprimed $q_\mu$ real and the primed $q'_\mu$ real. The conjugations are quaternion conjugation ${}^{\natural}$, complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$ and anti-Hermitian conjugation ${}^{\flat}=-{}^{*}$. The four matrix basis images are
 
@@ -15,7 +15,7 @@ $$
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-**Boundaries.** The subspaces and their relations are *The Six Subspaces and the Three Decompositions*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *$M_2(\mathbb{C})$ Representation : The Hermitian Sandwich*.
+**Boundaries.** The subspaces and their relations are *Subspaces and Decompositions*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *$M_2(\mathbb{C})$ Representation : The Hermitian Sandwich*.
 
 ## The Table
 
@@ -186,10 +186,10 @@ The six remarkable subspaces are the scalar matrices, the traceless matrices, th
 
 ## Further Reading
 
-- [The Six Subspaces and the Three Decompositions](../../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and their definitions
-- [The Six Subspaces and the Three Decompositions](../../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the three splits and the intersections
+- [Subspaces and Decompositions](../../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and their definitions
+- [Subspaces and Decompositions](../../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the three splits and the intersections
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the forms restricted to the subspaces
 - [The Polar Decomposition and Remarkable Subspaces](../../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
 - [$M_2(\mathbb{C})$ Representation : The Hermitian Sandwich](../../articles_maths/the-sandwich-in-the-m2c-model.html), for the matrix action on the two Hermitian subspaces
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](../../articles_maths/m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [The Six Subspaces and the Three Decompositions](../../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the comparison of the two Hermitian subspaces
+- [Subspaces and Decompositions](../../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the comparison of the two Hermitian subspaces

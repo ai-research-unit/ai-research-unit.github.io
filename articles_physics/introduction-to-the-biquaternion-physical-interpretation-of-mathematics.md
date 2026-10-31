@@ -27,7 +27,7 @@ Each article opens with a table of two columns. **Mathematical Content** names t
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its defining involution | [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html) |
+| The subspace, its basis and its defining involution | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 
 The rows follow the order in which the article uses the results. A row without a link is not allowed: the reader must be able to open the proof of every item the article interprets. A result that the corpus does not contain is named as missing, not written as if it were proved.
@@ -91,7 +91,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html)
 - [The Element, the Coordinates and the Conjugations](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
-- [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html)
+- [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
 - [Matrix Representations : The Models and the Change of Frame](../articles_maths/matrix-representations-the-models-and-the-change-of-frame.html)
 - [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html)
 - [Matrix Representations : The Six Subspaces as Matrix Conditions](../articles_maths/matrix-representations-the-six-subspaces-as-matrix-conditions.html)

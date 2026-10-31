@@ -1,4 +1,4 @@
-# __The Six Subspaces and the Three Decompositions of the Biquaternion Algebra__
+# __Subspaces and Decompositions of the Biquaternion Algebra__
 
 ## Introduction
 

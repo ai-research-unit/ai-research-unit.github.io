@@ -10,7 +10,7 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its coordinate blocks | [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html) |
+| The subspace, its basis and its coordinate blocks | [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The zero divisors and the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The units of the algebra in the sector, the complement of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
@@ -304,7 +304,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Further Reading
 
-- [The Six Subspaces and the Three Decompositions](../articles_maths/the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the definition and the basis of $\mathbb{M}_-$.
+- [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the definition and the basis of $\mathbb{M}_-$.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its signature and the inverse formula.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the degenerate case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the cone and the zero divisors.

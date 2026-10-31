@@ -6,7 +6,7 @@ This article reads one element of the biquaternion algebra and the coordinates i
 
 The first two sections give the element and its three readings: the scalar-vector split $\tilde Q=Q_te_t+\vec Q$, the real, complex and hyperbolic coordinate systems, and the complex structure $J$ that carries the difference between the real and the complex readings. The third section defines the four conjugations and separates them by their relation to $J$. The last two sections read the same element over the real scalars and through $J$.
 
-The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*; the subspaces themselves are *The Six Subspaces and the Three Decompositions*.
+The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*; the subspaces themselves are *Subspaces and Decompositions*.
 
 Nothing in this article pairs two different elements and takes a scalar part. The hyperbolic basis of the plain scalar part is a form statement and is filed with the plain product, after the forms; the matrices of the two models are *Matrix Representations : The Product, the Trace and the Determinant* and *Matrix Representations : The Product, the Trace and the Determinant*.
 
@@ -140,7 +140,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 **Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification and the Effect of the Change of Scalars*.
 
-**Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *The Six Subspaces and the Three Decompositions*, which also records the action of the central imaginary unit upon them.
+**Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *Subspaces and Decompositions*, which also records the action of the central imaginary unit upon them.
 
 ### What the View Adds
 
@@ -168,4 +168,4 @@ The marks and their case rules are those of *Algebra and Element Conventions*.
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the product and the axioms.
 - [The Group of Involutions](the-group-of-involutions.html), for the Klein group and the orbits.
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the fixed spaces.
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the fixed spaces.

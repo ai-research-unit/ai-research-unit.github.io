@@ -281,7 +281,7 @@ On a pure element the scalar square $Q_{2t}^{2}$ drops out of the criterion, whi
 | structure | the nilpotents | the complex multiples of the nontrivial idempotents |
 | real dimension | $4$ | $6$ |
 
-The square of a pure zero divisor vanishes because $\tilde Q_2^{2}=-(Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2})e_t=0$; the square of a non-pure one satisfies $\tilde Q_2^{2}=2Q_{2t}\tilde Q_2-\mathrm{Norm}(\tilde Q_2)e_t=2Q_{2t}\tilde Q_2$, and the element $\tilde\Pi=\tilde Q_2/(2Q_{2t})$ is then a nontrivial idempotent of the plain product. The two families are read in the remarkable subspaces in *The Six Subspaces and the Three Decompositions*: the pure ones fill the nilpotent cone of the vector subspace, the non-pure ones the double cones of the two Hermitian subspaces, and a generic point of the cone lies in none of the remarkable subspaces.
+The square of a pure zero divisor vanishes because $\tilde Q_2^{2}=-(Q_{2x}^{2}+Q_{2y}^{2}+Q_{2z}^{2})e_t=0$; the square of a non-pure one satisfies $\tilde Q_2^{2}=2Q_{2t}\tilde Q_2-\mathrm{Norm}(\tilde Q_2)e_t=2Q_{2t}\tilde Q_2$, and the element $\tilde\Pi=\tilde Q_2/(2Q_{2t})$ is then a nontrivial idempotent of the plain product. The two families are read in the remarkable subspaces in *Subspaces and Decompositions*: the pure ones fill the nilpotent cone of the vector subspace, the non-pure ones the double cones of the two Hermitian subspaces, and a generic point of the cone lies in none of the remarkable subspaces.
 
 ## The Cone in the Wider Mathematics
 
@@ -371,7 +371,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four square-zero sets and the twelve square-zero readings.
 - [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the isomorphism and the singular matrices.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form and its isotropic cone.
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the subspaces, the pure cone and the non-pure families.
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the subspaces, the pure cone and the non-pure families.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion $Q_{2t}=0$ or $\mathrm{Norm}(\tilde Q_2)=0$ of the enlarged set of $\mathrm{SPA}$.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same criterion of the enlarged set of $\mathrm{SQS}$ and its two families.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two scalar-valued symmetric structures whose zero-divisor set is the whole punctured space.

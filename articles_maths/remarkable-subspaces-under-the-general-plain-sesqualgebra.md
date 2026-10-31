@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The general plain sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the remarkable real subspaces of *The Six Subspaces and the Three Decompositions* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
+The general plain sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its $*$-unitary automorphism group $\mathrm{U}(4)$ are the matter of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the remarkable subspaces and their bases are *The Six Subspaces and the Three Decompositions*; and the companion readings of the same remarkable subspaces by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its $*$-unitary automorphism group $\mathrm{U}(4)$ are the matter of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the remarkable subspaces and their bases are *Subspaces and Decompositions*; and the companion readings of the same remarkable subspaces by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -101,7 +101,7 @@ On the remarkable real subspaces the general plain sesquilinear form carries the
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Hermitian symmetry and its $*$-unitary group
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the definite norm and the topology it defines
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the remarkable real subspaces and their bases
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the indefinite reading of the same six by the general plain bilinear form
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the general quaternionic bilinear reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the indefinite sesquilinear reading of the same six

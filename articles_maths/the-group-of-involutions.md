@@ -140,7 +140,7 @@ The two subspaces meet only in $0$, and their sum is $\mathbb{B}$.
 
 *Proof.* The identities follow from $\sigma^{2}=\mathrm{id}$ and the real-linearity of $\sigma$; an element of the intersection satisfies $\tilde Q=-\tilde Q$, hence $\tilde Q=0$. The two parts are the fixed and the anti-fixed subspace of $\sigma$.
 
-The fixed space and the anti-fixed space of each of the three are the six subspaces that *The Six Subspaces and the Three Decompositions* takes one by one:
+The fixed space and the anti-fixed space of each of the three are the six subspaces that *Subspaces and Decompositions* takes one by one:
 
 | subgroup | involution | fixed space | anti-fixed space |
 |---|---|---|---|
@@ -211,6 +211,6 @@ The algebra carries the quaternion conjugation ${}^{\natural}$, $\mathbb{C}$-lin
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its tensor product
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four maps and the scalar–vector form of the product
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the six subspaces of the three splittings, one to a section
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the relations between the six and the lattice they form
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces of the three splittings, one to a section
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the relations between the six and the lattice they form
 - [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the matrix images of the four maps

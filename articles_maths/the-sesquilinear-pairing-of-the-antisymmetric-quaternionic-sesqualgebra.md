@@ -11,7 +11,7 @@ $$
 
 the form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, written there $\langle\cdot,\cdot\rangle_{\natural*}$, linear in its first argument and conjugate-linear in its second. This article reads the block against that form: the pairing of a value with a third element, the pairing of a value with itself, the Gram matrix of the sixteen basis pairs with its rank and its radical, the forms $\beta$ invariant under the block, the trace form, and the restriction of the form to the remarkable subspaces with the signs it carries there. The reading is the analogue for the block of the pairings of the two general sesquilinear products and of the block of the plain row, and it is the form side of the multiplication.
 
-The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its isotropic structure is *K-Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces are *The Six Subspaces and the Three Decompositions*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
+The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its isotropic structure is *K-Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces are *Subspaces and Decompositions*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
 
 ## The Pairing of a Value with a Third Element
 
@@ -105,7 +105,7 @@ or the corresponding doubly conjugate-linear form according to the class, and it
 
 ## The Restriction to the Remarkable Subspaces
 
-The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature $(2,6)$ on the whole algebra, and its restriction to each of the remarkable subspaces of *The Six Subspaces and the Three Decompositions* is diagonal with the signs $\varepsilon$; the restriction table is the one of *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
+The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature $(2,6)$ on the whole algebra, and its restriction to each of the remarkable subspaces of *Subspaces and Decompositions* is diagonal with the signs $\varepsilon$; the restriction table is the one of *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
 | Subspace | Restricted form | Signature |
 |---|---|---|
@@ -140,7 +140,7 @@ Read against the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\su
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form and its inertia.
-- [The Six Subspaces and the Three Decompositions](the-six-subspaces-and-the-three-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces.
+- [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces.
 - [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
 - [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the diagonal and its cone.
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, for the reading of the block on the remarkable subspaces.
