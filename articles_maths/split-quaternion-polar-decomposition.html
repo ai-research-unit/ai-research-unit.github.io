@@ -154,7 +154,7 @@ $$</p>
 (1+\vec e_y)(1-\vec e_y) = 1 - \vec e_y^2 = 0,
 $$</p>
 <p>so $1+\vec e_y$ and $1-\vec e_y$ are nonzero zero divisors and $\langle 1\pm \vec e_y\rangle_{\natural} = 1-1 = 0$. The corpus's classification of the nonzero elements by the sign of the split-quaternion norm gives the sharp version: $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural}\neq0$, and the invertible elements split into the two open components $N > 0$ and $N < 0$. In the language of the article on the split-quaternion norm and invertibility, the nonzero elements are timelike ($N>0$), spacelike ($N<0$) or lightlike ($N=0$), and only the lightlike ones fail to be invertible.</p>
-<p>The polar decomposition is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q^{\tau}$ becomes positive semidefinite instead of positive definite.</p>
+<p>The polar decomposition is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q_{\tau}$ becomes positive semidefinite instead of positive definite.</p>
 <h3 id="the-matrix-model">The Matrix Model</h3>
 <p>Under the isomorphism $\mathsf{M}_2 : \mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ of <em>Split-Quaternion Algebra</em>, fixed on the basis by</p>
 <p>$$
@@ -177,9 +177,9 @@ $$</p>
 <p>$$
 \tau(1) = 1, \qquad \tau(\vec e_x) = -\vec e_x, \qquad \tau(\vec e_y) = \vec e_y, \qquad \tau(\vec e_z) = \vec e_z,
 $$</p>
-<p>and on a general element it reads $\tilde q^{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. That $\tau$ is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\tau} = \tilde q_2^{\tau}\tilde q_1^{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is</p>
+<p>and on a general element it reads $\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. That $\tau$ is an anti-automorphism, $(\tilde q_1\tilde q_2)_{\tau} = \tilde q_2_{\tau}\tilde q_1_{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is</p>
 <p>$$
-\{\tilde q : \tilde q^{\tau} = \tilde q\} = \operatorname{span}\{1, \vec e_y, \vec e_z\},
+\{\tilde q : \tilde q_{\tau} = \tilde q\} = \operatorname{span}\{1, \vec e_y, \vec e_z\},
 $$</p>
 <p>the three-dimensional subspace of symmetric matrix images, and its anti-fixed space is the line $\mathbb{R}\vec e_x$ of antisymmetric images.</p>
 <p>The transpose involution is distinct from the conjugation that defines the split-quaternion norm, ${}^{\natural}$, which reads $\tilde q \mapsto q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and negates all three vector units. Both are anti-automorphisms and both fix the scalars; they differ in the sign they give $\vec e_y$ and $\vec e_z$, and this difference is what makes one of them usable here and the other not.</p>
@@ -187,14 +187,14 @@ $$</p>
 <p>A polar decomposition needs a factor that is, in a definite sense, positive. In the matrix picture the positive factor is the symmetric positive definite square root of $XX^{T}$, and the form $XX^{T}$ is positive definite for every invertible $X$ by construction, since $v^{T}XX^{T}v = |X^{T}v|^2 > 0$ for $v \neq 0$ when $X$ is invertible.</p>
 <p>The algebra's own quadratic form does not do this job. For any $\tilde q$ one has $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$, a real scalar, and it is negative whenever $\tilde q$ is spacelike: for $\tilde q = \vec e_z$, for instance, $\tilde q\tilde{q}^{\natural} = \langle \vec e_z\rangle_{\natural} = -1$. An object with negative scalar value cannot be a positive factor, and there is no way to repair the defect by a sign, since the sign varies over the algebra. The positive object must therefore be built from the transpose involution instead:</p>
 <p>$$
-\Sigma(\tilde q) = \tilde q\,\tilde q^{\tau},
+\Sigma(\tilde q) = \tilde q\,\tilde q_{\tau},
 $$</p>
-<p>which is the algebra's name for $XX^{T}$ and which is symmetric and positive definite for every invertible $\tilde q$. Both the real scalar $\langle\tilde q\rangle_{\natural}$ and the symmetric element $\tilde q \tilde q^{\tau}$ are needed below: the first supplies the modulus, the second the boost.</p>
+<p>which is the algebra's name for $XX^{T}$ and which is symmetric and positive definite for every invertible $\tilde q$. Both the real scalar $\langle\tilde q\rangle_{\natural}$ and the symmetric element $\tilde q \tilde q_{\tau}$ are needed below: the first supplies the modulus, the second the boost.</p>
 <h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> Let $\tilde q \in \mathbb{H}_{\mathrm{s}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The <strong>polar decomposition</strong> of $\tilde q$ is the writing</p>
 <p>$$
-\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b^{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{s}},\quad \tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1,
+\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{s}},\quad \tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1,
 $$</p>
 <p>in which $r$ is the <strong>modulus</strong>, $b$ the <strong>unit boost</strong> and $\tilde u_{\mathrm r}$ the <strong>orthogonal factor</strong>.</p>
 <p>Both non-scalar factors are <strong>unit elements</strong>, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (<em>Norm and Unitary Conventions</em>, §<em>The Unitary Convention</em>): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the <strong>group of units</strong> $\mathbb{H}_{\mathrm{s}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.</p>
@@ -202,7 +202,7 @@ $$</p>
 <h3 id="the-positive-element-and-the-modulus">The Positive Element and the Modulus</h3>
 <p>Let $\tilde q$ be invertible, and put</p>
 <p>$$
-\Sigma = \tilde q\,\tilde q^{\tau}, \qquad P = \sqrt{\Sigma},
+\Sigma = \tilde q\,\tilde q_{\tau}, \qquad P = \sqrt{\Sigma},
 $$</p>
 <p>where the square root is the symmetric positive definite root, which exists and is unique because $\Sigma$ is symmetric positive definite; in the matrix picture this is the standard positive square root of $XX^{T}$, computed for a two-by-two matrix by</p>
 <p>$$
@@ -223,7 +223,7 @@ $$</p>
 <p>$$
 b = \frac{P}{r}, \qquad \det b = \frac{\det P}{r^2} = \frac{|\langle\tilde q\rangle_{\natural}|}{|\langle\tilde q\rangle_{\natural}|} = 1 .
 $$</p>
-<p>It is symmetric, positive definite, and of determinant and norm one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b^{\tau} = b$ and $\langle b\rangle_{\natural} = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.</p>
+<p>It is symmetric, positive definite, and of determinant and norm one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b_{\tau} = b$ and $\langle b\rangle_{\natural} = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.</p>
 <h3 id="the-orthogonal-factor">The Orthogonal Factor</h3>
 <p>The orthogonal factor is the complement of the positive factor,</p>
 <p>$$
@@ -231,17 +231,17 @@ $$</p>
 $$</p>
 <p>and it is orthogonal in the algebra's transpose sense. Indeed</p>
 <p>$$
-\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = \tilde q^{\tau}P^{-1}P^{-1}\tilde q = \tilde q^{\tau}(PP)^{-1}\tilde q = \tilde q^{\tau}(\tilde q\tilde q^{\tau})^{-1}\tilde q ,
+\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = \tilde q_{\tau}P^{-1}P^{-1}\tilde q = \tilde q_{\tau}(PP)^{-1}\tilde q = \tilde q_{\tau}(\tilde q\tilde q_{\tau})^{-1}\tilde q ,
 $$</p>
-<p>and the last expression is the identity, because $(\tilde q\tilde q^{\tau})^{-1} = (\tilde q^{\tau})^{-1}\tilde q^{-1}$ and the middle factors cancel. Its determinant is</p>
+<p>and the last expression is the identity, because $(\tilde q\tilde q_{\tau})^{-1} = (\tilde q_{\tau})^{-1}\tilde q^{-1}$ and the middle factors cancel. Its determinant is</p>
 <p>$$
 \det \tilde u_{\mathrm r} = \frac{\det \tilde q}{\det P} = \frac{\langle\tilde q\rangle_{\natural}}{|\langle\tilde q\rangle_{\natural}|} = \operatorname{sign} \langle\tilde q\rangle_{\natural} ,
 $$</p>
 <p>so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the determinant of $\tilde u_{\mathrm r}$.</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar decomposition.</p>
-<p><em>Existence.</em> For such $\tilde q$, the element $\Sigma = \tilde q\tilde q^{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.</p>
-<p><em>Uniqueness.</em> Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q^{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.</p>
+<p><em>Existence.</em> For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.</p>
+<p><em>Uniqueness.</em> Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.</p>
 <p>The uniqueness is without sign ambiguity, as in the quaternion case, and for the same reason: the modulus is required to be positive, and that requirement pins down the square root.</p>
 <h3 id="the-three-classes-of-elements">The Three Classes of Elements</h3>
 <p>The decomposition behaves differently on the two invertible classes, and the difference is entirely in the orthogonal factor.</p>
@@ -283,7 +283,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The lightlike class is the null cone, the zero divisors of <em>Split-Quaternion Zero Divisors</em>; on it $\Sigma = \tilde q\tilde q^{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.</p>
+<p>The lightlike class is the null cone, the zero divisors of <em>Split-Quaternion Zero Divisors</em>; on it $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.</p>
 <h2 id="the-exponential-form-of-the-boost">The Exponential Form of the Boost</h2>
 <h3 id="the-boost-subspace">The Boost Subspace</h3>
 <p>The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$, the fixed space of $\tau$. Removing the scalar direction, which the normalisation $\langle b\rangle_{\natural} = 1$ separates, leaves the two-dimensional subspace</p>
@@ -318,19 +318,19 @@ $$</p>
 $$</p>
 <p>with $\theta$ the rotation angle and the exponent $\theta/2$ read modulo $2\pi$; $\mathsf{M}_2$ sends that element to the rotation matrix of half the angle, $\begin{pmatrix}\cos\tfrac{\theta}{2} & -\sin\tfrac{\theta}{2} \\ \sin\tfrac{\theta}{2} & \cos\tfrac{\theta}{2}\end{pmatrix}$. The rotation angle is read off by $\theta = 2\operatorname{atan2}(u_x,u_t)$. The rotation component is compact: it is the circle group of the algebra, generated by the single negative-square unit $\vec e_x$.</p>
 <h3 id="the-reflection-component">The Reflection Component</h3>
-<p>Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{s}}$ with $\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is</p>
+<p>Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{s}}$ with $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is</p>
 <p>$$
 \tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\,\vec e_y ,
 $$</p>
 <p>with the same angle convention. The element $\vec e_y$ is the fixed reflection, and the factorisation is unique for the same reason the rotation form is: the angle is read off from the rotation part and the discrete factor is then determined. The reflection is therefore the discrete part of the orthogonal factor and the angle is its continuous part.</p>
-<p>The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$ of unit quaternions. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$ and is an element of the sphere $\mathrm{Sp}(1)$ of unit quaternions, which is connected. The indefiniteness of $\langle\cdot\rangle_{\natural}$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.</p>
+<p>The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$ of unit quaternions. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$ and is an element of the sphere $\mathrm{Sp}(1)$ of unit quaternions, which is connected. The indefiniteness of $\langle\cdot\rangle_{\natural}$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="a-timelike-element">A Timelike Element</h3>
 <p>Take $\tilde q = 3 + \vec e_x + \vec e_y$, so $q_t = 3$, $q_x = 1$, $q_y = 1$, $q_z = 0$ and</p>
 <p>$$
 \langle\tilde q\rangle_{\natural} = 9+1-1 = 9 > 0 ,
 $$</p>
-<p>a timelike element. The matrix is $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 3 & 0 \\ 2 & 3\end{pmatrix}$, and $\tilde q\tilde q^{\tau}$ has matrix $\begin{pmatrix} 9 & 6 \\ 6 & 13\end{pmatrix}$, whose determinant is $117-36 = 81 = \langle\tilde q\rangle_{\natural}^2$. The modulus is</p>
+<p>a timelike element. The matrix is $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 3 & 0 \\ 2 & 3\end{pmatrix}$, and $\tilde q\tilde q_{\tau}$ has matrix $\begin{pmatrix} 9 & 6 \\ 6 & 13\end{pmatrix}$, whose determinant is $117-36 = 81 = \langle\tilde q\rangle_{\natural}^2$. The modulus is</p>
 <p>$$
 r = \sqrt{9} = 3 ,
 $$</p>
@@ -348,7 +348,7 @@ $$</p>
 $$</p>
 <p>with $\det \tilde u_{\mathrm r} = +1$, as the timelike class requires. The reconstruction $rb\tilde u_{\mathrm r} = \tilde q$ and the identity $b = \exp\sigma$ were both checked in double precision, to $6.4\times10^{-13}$ and $1.2\times10^{-14}$ respectively in the coefficients.</p>
 <h3 id="a-spacelike-element">A Spacelike Element</h3>
-<p>Take $\tilde q = 1+\vec e_x+2\vec e_y$, so $\langle\tilde q\rangle_{\natural} = 1+1-4 = -2 < 0$, a spacelike element, with $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1 & 1 \\ 3 & 1\end{pmatrix}$ and $\tilde q\tilde q^{\tau}$ of matrix $\begin{pmatrix} 2 & 4 \\ 4 & 10\end{pmatrix}$. Then</p>
+<p>Take $\tilde q = 1+\vec e_x+2\vec e_y$, so $\langle\tilde q\rangle_{\natural} = 1+1-4 = -2 < 0$, a spacelike element, with $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1 & 1 \\ 3 & 1\end{pmatrix}$ and $\tilde q\tilde q_{\tau}$ of matrix $\begin{pmatrix} 2 & 4 \\ 4 & 10\end{pmatrix}$. Then</p>
 <p>$$
 r = \sqrt{2}, \qquad b = 1.414213562 + 0.707106781\,\vec e_y + 0.707106781\,\vec e_z , \qquad \sigma = 0.623225240\left(\vec e_y+\vec e_z\right),
 $$</p>
@@ -358,8 +358,8 @@ $$</p>
 $$</p>
 <p>which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. The determinant of $\tilde u_{\mathrm r}$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.</p>
 <h3 id="a-lightlike-element">A Lightlike Element</h3>
-<p>Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q^{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar decomposition exists, and none of the three factors survives.</p>
-<p>The failure is characteristic of the null cone and not of a particular element: every lightlike $\tilde q$ has $\det\mathsf{M}_2(\tilde q) = 0$, hence $\tilde q\tilde q^{\tau}$ of rank at most one, hence no positive definite square root.</p>
+<p>Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q_{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar decomposition exists, and none of the three factors survives.</p>
+<p>The failure is characteristic of the null cone and not of a particular element: every lightlike $\tilde q$ has $\det\mathsf{M}_2(\tilde q) = 0$, hence $\tilde q\tilde q_{\tau}$ of rank at most one, hence no positive definite square root.</p>
 <h2 id="comparison-with-the-quaternion-case">Comparison with the Quaternion Case</h2>
 <p>The two decompositions differ in structure, and the difference is summarised by which of the four series slots are occupied. The counts are real dimensions of the corresponding factor sets.</p>
 <div class="table-scroll"><table>
@@ -413,7 +413,7 @@ $$</p>
 <p>$$
 \tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0 ,
 $$</p>
-<p>in which $b$ is the unique symmetric positive definite element with $b^{\tau} = b$ and $\langle b\rangle_{\natural} = 1$, and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ is the orthogonal factor, of determinant $\operatorname{sign}\langle\tilde q\rangle_{\natural}$. The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and is the exponential of an element of $\operatorname{span}\{\vec e_y,\vec e_z\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2\vec e_y+b_3\vec e_z)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,\vec e_x$ when $\tilde q$ is timelike and a rotation times the reflection $\vec e_y$ when $\tilde q$ is spacelike. On the null cone, where $\langle\tilde q\rangle_{\natural} = 0$, no polar decomposition exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.</p>
+<p>in which $b$ is the unique symmetric positive definite element with $b_{\tau} = b$ and $\langle b\rangle_{\natural} = 1$, and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ is the orthogonal factor, of determinant $\operatorname{sign}\langle\tilde q\rangle_{\natural}$. The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and is the exponential of an element of $\operatorname{span}\{\vec e_y,\vec e_z\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2\vec e_y+b_3\vec e_z)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,\vec e_x$ when $\tilde q$ is timelike and a rotation times the reflection $\vec e_y$ when $\tilde q$ is spacelike. On the null cone, where $\langle\tilde q\rangle_{\natural} = 0$, no polar decomposition exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -436,7 +436,7 @@ $$</p>
 <td>the conjugation that defines the split-quaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde q^{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$</td>
+<td>$\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$</td>
 <td>the transpose involution, the image of the matrix transpose</td>
 </tr>
 <tr>
@@ -448,7 +448,7 @@ $$</p>
 <td>the isomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$</td>
 </tr>
 <tr>
-<td>$\Sigma = \tilde q\tilde q^{\tau}$, $P = \sqrt{\Sigma}$</td>
+<td>$\Sigma = \tilde q\tilde q_{\tau}$, $P = \sqrt{\Sigma}$</td>
 <td>the positive element and its symmetric positive definite square root</td>
 </tr>
 <tr>
@@ -457,7 +457,7 @@ $$</p>
 </tr>
 <tr>
 <td>$b = P/r$</td>
-<td>the unit boost, $b^{\tau} = b$, $\langle b\rangle_{\natural} = 1$</td>
+<td>the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$</td>
 </tr>
 <tr>
 <td>$\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$</td>
@@ -465,7 +465,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde u_{\mathrm r} = P^{-1}\tilde q$</td>
-<td>the orthogonal factor, $\tilde u_{\mathrm r}^{\tau}\tilde u_{\mathrm r} = 1$, $\det \tilde u_{\mathrm r} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$</td>
+<td>the orthogonal factor, $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, $\det \tilde u_{\mathrm r} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>timelike, spacelike, lightlike</td>

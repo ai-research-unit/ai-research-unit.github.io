@@ -78,12 +78,12 @@
 $$</p>
 <p>the quaternionic norm of the gradient. On the material sector $\mathbb{M}_-$, where $Q_t=iq'_t$, the same operator is</p>
 <p>$$
-\Box=-g^{\mu\nu}\partial_\mu\partial_\nu
+\Box=-(g^{-1})_{\mu\nu}\partial_\mu\partial_\nu
 =-\frac{\partial^2}{\partial(q'_t)^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
 $$</p>
-<p>This article works in the real coordinates $x^\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial_{Q_t}=-i\partial_{q'_t}$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.</p>
+<p>This article works in the real coordinates $x_\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial_{Q_t}=-i\partial_{q'_t}$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.</p>
 <p>The question has two answers, and they are different. A <strong>single square</strong> is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A <strong>factorisation</strong> is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half. A <strong>Clifford root</strong> is a first-order operator of the form $D=i\sum_\mu\gamma_\mu\partial_\mu+B$ with constant matrices $\gamma_\mu,B$; this article classifies the Clifford roots.</p>
 <p><strong>The results.</strong> The d'Alembertian has no Clifford root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $\vec e_k$ supply a three-generator Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted cell root is $\mathsf D=i\sum_\mu\gamma_\mu\partial_\mu$, with $\mathsf D^2=\Box I$. The coefficients of $\mathsf D$ are cells of the enveloping algebra $\mathbb{B}^{\mathrm e}$, not elements of $\mathbb{B}$; the biquaternion object is the gradient, and the biquaternion factorisation of the unshifted operator is $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The single square is the cell root. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.</p>
 <p><strong>The two matrix sizes.</strong> The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (<em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>). The gradient takes values in that algebra, and the d'Alembertian is its scalar norm; the target representation is $M_2(\mathbb{C})$, not $M_4(\mathbb{C})$. The four-dimensional space of this article is the regular module $\mathbb{B}$, on which the algebra acts by left multiplication. The $M_4(\mathbb{C})$ that appears below is the algebra of <strong>operators</strong> on that module, the enveloping algebra $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, not a second representation of $\mathbb{B}$. The distinction is the reason the root is two-sided: the d'Alembertian is a scalar operator read in the algebra, while the root lives in the operator algebra of the regular module.</p>
@@ -116,11 +116,11 @@ $$</p>
 <h3 id="the-symbol">The Symbol</h3>
 <p>For a constant-coefficient operator, the <strong>symbol</strong> is the matrix polynomial obtained by replacing $i\partial_\mu$ by a complex variable $q_\mu$, equivalently $\partial_\mu$ by $-iq_\mu$. The symbol of $\Box$ is</p>
 <p>$$
-\sigma(\Box)(q)=g^{\mu\nu}q_\mu q_\nu=q_0^2-q_1^2-q_2^2-q_3^2 ,
+\sigma(\Box)(q)=(g^{-1})_{\mu\nu}q_\mu q_\nu=q_0^2-q_1^2-q_2^2-q_3^2 ,
 $$</p>
 <p>and the symbol of a first-order operator</p>
 <p>$$
-D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x^\mu}+B,
+D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x_\mu}+B,
 \qquad \gamma_\mu,B\in M_n(\mathbb{C})\ \text{constant},
 $$</p>
 <p>is</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>For constant coefficients the symbol of a composition is the product of the symbols, so $\sigma(D^2)(q)=\sigma(D)(q)^2$. The operator identity $D^2=(\Box-\lambda)I_n$ is therefore equivalent to the matrix identity</p>
 <p>$$
 \Bigl(\sum_\mu q_\mu\gamma_\mu+B\Bigr)^2
-=\Bigl(g^{\mu\nu}q_\mu q_\nu-\lambda\Bigr)I_n
+=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\Bigr)I_n
 $$</p>
 <p>for every $q\in\mathbb{C}^4$.</p>
 <p><strong>Proposition (the root condition).</strong> Let $D=i\sum_\mu\gamma_\mu\partial_\mu+B$ with constant $\gamma_\mu,B\in M_n(\mathbb{C})$. Then $D^2=(\Box-\lambda)I_n$ if and only if</p>
@@ -141,13 +141,13 @@ B^2=-\lambda I_n.\;}
 $$</p>
 <p><em>Proof.</em> Expanding the square gives</p>
 <p>$$
-D^2=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-+i\sum_\mu\{\gamma_\mu,B\}\frac{\partial}{\partial x^\mu}+B^2 .
+D^2=-(g^{-1})_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
++i\sum_\mu\{\gamma_\mu,B\}\frac{\partial}{\partial x_\mu}+B^2 .
 $$</p>
-<p>The partial derivatives commute, and the monomials $\partial^2/\partial x^\mu\partial x^\nu$, $\partial/\partial x^\mu$ and $1$ are independent over the constants, so the coefficients of each monomial must agree with those of $(\Box-\lambda)I_n$. The second derivatives give $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_n$; the first derivatives give the anticommutator with $B$; and the constant term gives the square. The converse is the same computation read backwards.</p>
+<p>The partial derivatives commute, and the monomials $\partial^2/\partial x_\mu\partial x_\nu$, $\partial/\partial x_\mu$ and $1$ are independent over the constants, so the coefficients of each monomial must agree with those of $(\Box-\lambda)I_n$. The second derivatives give $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_n$; the first derivatives give the anticommutator with $B$; and the constant term gives the square. The converse is the same computation read backwards.</p>
 <p>The three conditions separate. The first is the <strong>Clifford condition</strong>; it involves neither $B$ nor $\lambda$. The second says that the zero-order term anticommutes with every generator. The third fixes its square. The shift enters the first-order term only through the anticommutator, and its value only through the square.</p>
 <p><strong>The principal symbol.</strong> The principal symbol of $D$ is $\sum_\mu q_\mu\gamma_\mu$. The Clifford condition says that its square is $(g_{\mu\nu}q_\mu q_\nu)I_n$. The zero-order term and the shift are lower order. A root is therefore a four-generator Clifford system before it is a shifted d'Alembertian; the shift is a condition on the constant term, not on the principal symbol.</p>
-<p><strong>The material sector.</strong> On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.</p>
+<p><strong>The material sector.</strong> On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2(g^{-1})_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.</p>
 <h2 id="the-clifford-algebra-and-the-minimal-carrier">The Clifford Algebra and the Minimal Carrier</h2>
 <h3 id="the-classification">The Classification</h3>
 <p><strong>Theorem.</strong> Four matrices satisfying $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_n$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. Its smallest faithful module is $\mathbb{C}^4$, and no such quadruple exists in $M_n(\mathbb{C})$ with $n<4$.</p>
@@ -311,14 +311,14 @@ $$</p>
 <h2 id="the-unshifted-cell-root">The Unshifted Cell Root</h2>
 <p><strong>Theorem.</strong> Let</p>
 <p>$$
-\mathsf D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x^\mu}.
+\mathsf D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x_\mu}.
 $$</p>
 <p>Then $\mathsf D^2=\Box I_4$.</p>
 <p><em>Proof.</em> The Clifford relation gives</p>
 <p>$$
 \mathsf D^2=-\frac12\sum_{\mu,\nu}\{\gamma_\mu,\gamma_\nu\}
-\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}I_4
+\frac{\partial^2}{\partial x_\mu\partial x_\nu}
+=-(g^{-1})_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}I_4
 =\Box I_4 .
 $$</p>
 <p>The operator $\mathsf D$ is a two-sided differential operator: each $\gamma_\mu$ is a two-sided constant operator, so $\mathsf D$ is a sum of terms $T_{a,b}\partial_\mu$. It acts on $\mathbb{B}$-valued fields, and its square is the scalar d'Alembertian. It is not left multiplication by an element of $\mathbb{B}$: the timelike generator is the exchange $R_u$, and the spatial generators are left multiplications corrected by the grading. Its coefficients are cells of $\mathbb{B}^{\mathrm e}$, and the gradient $\tilde\nabla$ is the element of $\mathbb{B}$ that supplies the factorisation $\tilde\nabla\tilde\nabla^{\natural}=\Box$.</p>
@@ -467,13 +467,13 @@ $$</p>
 <p>The biquaternion structure does not select a canonical matrix frame. It selects the decomposition $\mathbb{B}=S_+\oplus S_-$, the exchange $u=i\vec e_x$, and the grading $G=R_{i\vec e_z}$; the adapted basis and the identification of the two summands with $S$ are choices. The physics twin, <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, writes another frame of the same algebra, $\gamma_0=iT_{e_t,e_x}=iR_x$, $\gamma_k=iT_{e_k,e_y}$, $\gamma_5=-iT_{e_t,e_z}$, related to the frame above by a similarity. The volume element is canonical up to the sign of the orientation of the four generators, and the two signs of $c$ give the same operator up to the exchange $\gamma_5\mapsto-\gamma_5$. The root is unique up to similarity, not canonical.</p>
 <p><strong>The two signs.</strong> The sign of $c$ selects one of the two opposite roots. The sign of $\gamma_5$ is the orientation of the four generators, and it changes the chiral decomposition and the pair of rows. Neither sign changes the operator identity $\mathsf D_\lambda^2=(\Box-\lambda)I$.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>A plane wave.</strong> Let $\psi(x)=\exp(-i\sum_\mu q_\mu x^\mu)v$ with $v\in\mathbb{C}^4$ constant and $q_\mu\in\mathbb{C}$. Then</p>
+<p><strong>A plane wave.</strong> Let $\psi(x)=\exp(-i\sum_\mu q_\mu x_\mu)v$ with $v\in\mathbb{C}^4$ constant and $q_\mu\in\mathbb{C}$. Then</p>
 <p>$$
 \mathsf D\psi=\Bigl(\sum_\mu q_\mu\gamma_\mu\Bigr)\psi,
 \qquad
 \mathsf D_\lambda\psi=\Bigl(\sum_\mu q_\mu\gamma_\mu+c\gamma_5\Bigr)\psi .
 $$</p>
-<p>The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $g^{\mu\nu}q_\mu q_\nu=\lambda$. On the quadric the symbol has a two-dimensional kernel.</p>
+<p>The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $(g^{-1})_{\mu\nu}q_\mu q_\nu=\lambda$. On the quadric the symbol has a two-dimensional kernel.</p>
 <p><strong>The unshifted cell root on a constant spinor.</strong> A constant $v\in\mathbb{C}^4$ satisfies $\mathsf D v=0$ and $\Box v=0$. The example shows that the cell root has a nontrivial kernel already at $\lambda=0$. The constant solutions of $\Box$ are all of $\mathbb{C}^4$, and $\mathsf D$ vanishes on all of them, so the constant part of the kernel does not distinguish the chiral halves; the half appears on the non-constant solutions of §<em>The Chiral Form</em>.</p>
 <p><strong>Promotion of a chiral solution.</strong> Let $\psi_+$ solve $(\Box-\lambda)\psi_+=0$ with $c\ne0$, and put $\psi_-=\frac1cD_+\psi_+$. Then</p>
 <p>$$
@@ -485,9 +485,9 @@ $$</p>
 <p><strong>The determinant at $\lambda=0$.</strong> For the constant-coefficient operator $\mathsf D$, the determinant of the symbol is</p>
 <p>$$
 \det\Bigl(\sum_\mu q_\mu\gamma_\mu\Bigr)
-=\Bigl(g^{\mu\nu}q_\mu q_\nu\Bigr)^2 ,
+=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu\Bigr)^2 ,
 $$</p>
-<p>the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl(g^{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.</p>
+<p>the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.</p>
 <h2 id="summary">Summary</h2>
 <p>The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-g_{\mu\nu}\partial_\mu\partial_\nu$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra itself is $M_2(\mathbb{C})$; the four-dimensional carrier is its regular module, and the $M_4(\mathbb{C})$ of the root is the operator algebra on that module, not a second representation of $\mathbb{B}$. It has no Clifford root on the two-dimensional simple module of $\mathbb{B}$: the three generators $\vec e_k$ supply a three-generator Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted cell root is $\mathsf D=i\sum_\mu\gamma_\mu\partial_\mu$, with $\mathsf D^2=\Box I$; its coefficients lie in the enveloping algebra $\mathbb{B}^{\mathrm e}$, not in $\mathbb{B}$, and the biquaternion object is the factorisation of the unshifted operator, $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box-\kappa^2$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The cell root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame, and a formula naming a particular frame is frame data.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -513,10 +513,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$</td>
-<td>the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q=-g^{\mu\nu}\partial_\mu\partial_\nu$</td>
+<td>the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q=-(g^{-1})_{\mu\nu}\partial_\mu\partial_\nu$</td>
 </tr>
 <tr>
-<td>$x^\mu=(q'_t,x,y,z)$</td>
+<td>$x_\mu=(q'_t,x,y,z)$</td>
 <td>the real coordinates, $Q_t=iq'_t$</td>
 </tr>
 <tr>

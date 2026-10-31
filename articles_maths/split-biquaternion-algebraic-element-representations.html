@@ -100,57 +100,57 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>A split biquaternion $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ can be written as a split complex four-vector</p>
 <p>$$
-Q^\mu = (Q^0, Q^1, Q^2, Q^3),
+Q_\mu = (Q_0, Q_1, Q_2, Q_3),
 $$</p>
 <p>with</p>
 <p>$$
-Q^0 = Q_t, \qquad (Q^1, Q^2, Q^3) = (Q_x, Q_y, Q_z).
+Q_0 = Q_t, \qquad (Q_1, Q_2, Q_3) = (Q_x, Q_y, Q_z).
 $$</p>
 <p>The split scalar part of the split biquaternion becomes the scalar component of the four-vector; the split vector part becomes the vector components. This is the most direct representation.</p>
 <h3 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h3>
 <p>The product of two split biquaternions in four-vector form separates into a scalar part and a vector part:</p>
 <p>$$
-(\tilde{Q}_1 \bullet \tilde{Q}_2)^0 = Q_1^0 Q_2^0 - \sum_{k=1}^{3} Q_1^k Q_2^k,
+(\tilde{Q}_1 \bullet \tilde{Q}_2)_0 = Q_{1,0}Q_{2,0} - \sum_{k=1}^{3} Q_{1,k}Q_{2,k},
 $$</p>
 <p>$$
-(\tilde{Q}_1 \bullet \tilde{Q}_2)^i = Q_1^0 Q_2^i + Q_2^0 Q_1^i + \sum_{j,k=1}^{3} \epsilon^{i j k} Q_1^j Q_2^k, \qquad i = 1, 2, 3,
+(\tilde{Q}_1 \bullet \tilde{Q}_2)_i = Q_{1,0}Q_{2,i} + Q_{2,0}Q_{1,i} + \sum_{j,k=1}^{3} \epsilon_{ijk} Q_{1,j}Q_{2,k}, \qquad i = 1, 2, 3,
 $$</p>
-<p>where $\epsilon^{i j k}$ is the Levi-Civita symbol on the vector indices $1, 2, 3$. The scalar component of the product is the scalar part; the remaining components are the vector part. This is the four-vector expression of the quaternion product formula.</p>
+<p>where $\epsilon_{ijk}$ is the Levi-Civita symbol on the vector indices $1, 2, 3$. The scalar component of the product is the scalar part; the remaining components are the vector part. This is the four-vector expression of the quaternion product formula.</p>
 <h3 id="conjugation-in-four-vector-form">Conjugation in Four-Vector Form</h3>
 <p>Quaternion conjugation negates the vector components:</p>
 <p>$$
-(Q^{\natural})^\mu = (Q^0, -Q^1, -Q^2, -Q^3).
+(Q^{\natural})_\mu = (Q_0, -Q_1, -Q_2, -Q_3).
 $$</p>
 <p>Split complex conjugation conjugates all components:</p>
 <p>$$
-(\bar{Q})^\mu = ((Q^0)^*, (Q^1)^*, (Q^2)^*, (Q^3)^*).
+(\bar{Q})_\mu = ((Q_0)^*, (Q_1)^*, (Q_2)^*, (Q_3)^*).
 $$</p>
 <p>Hermitian conjugation combines the two:</p>
 <p>$$
-(Q^{*})^\mu = ((Q^0)^*, -(Q^1)^*, -(Q^2)^*, -(Q^3)^*).
+(Q^{*})_\mu = ((Q_0)^*, -(Q_1)^*, -(Q_2)^*, -(Q_3)^*).
 $$</p>
 <h3 id="the-four-subspaces-in-four-vector-form">The Four Subspaces in Four-Vector Form</h3>
 <p>The four fixed-point subspaces have a simple characterization in the four-vector representation.</p>
 <ul>
-<li><strong>Split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$:</strong> four-vectors of the form $Q^\mu = (Q^0, 0, 0, 0)$ with $Q^0 \in \mathbb{D}$.</li>
-<li><strong>Quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$:</strong> four-vectors with real components, $Q^\mu \in \mathbb{R}^4$.</li>
-<li><strong>Hermitian subspace $\mathbb{M}_+$:</strong> four-vectors of the form $Q^\mu = (q_t, j q'_x, j q'_y, j q'_z)$ with $q_t, q'_x, q'_y, q'_z \in \mathbb{R}$. Real scalar component, purely split-imaginary vector components.</li>
-<li><strong>Anti-Hermitian subspace $\mathbb{M}_-$:</strong> four-vectors of the form $Q^\mu = (j q'_t, q_x, q_y, q_z)$ with $q'_t, q_x, q_y, q_z \in \mathbb{R}$. Purely split-imaginary scalar component, real vector components.</li>
+<li><strong>Split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$:</strong> four-vectors of the form $Q_\mu = (Q_0, 0, 0, 0)$ with $Q_0 \in \mathbb{D}$.</li>
+<li><strong>Quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$:</strong> four-vectors with real components, $Q_\mu \in \mathbb{R}^4$.</li>
+<li><strong>Hermitian subspace $\mathbb{M}_+$:</strong> four-vectors of the form $Q_\mu = (q_t, j q'_x, j q'_y, j q'_z)$ with $q_t, q'_x, q'_y, q'_z \in \mathbb{R}$. Real scalar component, purely split-imaginary vector components.</li>
+<li><strong>Anti-Hermitian subspace $\mathbb{M}_-$:</strong> four-vectors of the form $Q_\mu = (j q'_t, q_x, q_y, q_z)$ with $q'_t, q_x, q_y, q_z \in \mathbb{R}$. Purely split-imaginary scalar component, real vector components.</li>
 </ul>
 <h3 id="the-split-biquaternion-norm-in-four-vector-form">The Split-Biquaternion Norm in Four-Vector Form</h3>
 <p>The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
+\langle\tilde{Q}\rangle_{\natural} = (Q_0)^2 + (Q_1)^2 + (Q_2)^2 + (Q_3)^2,
 $$</p>
-<p>a split complex number. Writing $Q^\mu = q^\mu + j q'^\mu$, this expands to</p>
+<p>a split complex number. Writing $Q_\mu = q_\mu + j q'_\mu$, this expands to</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} ((q^\mu)^2 + (q'^\mu)^2) + 2j \sum_{\mu\in\{t,x,y,z\}} q^\mu q'^\mu.
+\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} ((q_\mu)^2 + (q'_\mu)^2) + 2j \sum_{\mu\in\{t,x,y,z\}} q_\mu q'_\mu.
 $$</p>
 <p>On the anti-Hermitian subspace $\mathbb{M}_-$, the split-biquaternion norm restricts to the real quadratic form</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = (q'_t)^2 + q_x^2 + q_y^2 + q_z^2,
 $$</p>
-<p>which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the <strong>Hermitian</strong> form $\tilde{Q} \tilde{Q}^{*} = \sum_\mu Q^\mu (Q^\mu)^*$, namely $-(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$.</p>
+<p>which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the <strong>Hermitian</strong> form $\tilde{Q} \tilde{Q}^{*} = \sum_\mu Q_\mu (Q_\mu)^*$, namely $-(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$.</p>
 <h3 id="why-the-four-vector-representation-is-useful">Why the Four-Vector Representation Is Useful</h3>
 <p>The four-vector representation is the bridge between the algebraic split biquaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian norm, whose value on the anti-Hermitian subspace is a Lorentzian norm.</p>
 <p>It is also the representation in which the split biquaternion looks least like a split biquaternion. The algebraic structure — the non-commutative product, the two conjugations, the zero divisors — is hidden. This is why the four-vector representation, while useful, is not the fundamental one.</p>
@@ -337,11 +337,11 @@ $$</p>
 <p>The four representations are related as follows.</p>
 <p><strong>Four-vector and idempotent.</strong> The four-vector representation and the idempotent representation are related by the linear transformation</p>
 <p>$$
-Q^\mu = (q^\mu + j q'^\mu) \longleftrightarrow (\tilde{Q}_+, \tilde{Q}_-),
+Q_\mu = (q_\mu + j q'_\mu) \longleftrightarrow (\tilde{Q}_+, \tilde{Q}_-),
 $$</p>
 <p>with</p>
 <p>$$
-\tilde{Q}_+ = \sum_\mu (q^\mu + q'^\mu) e_\mu, \qquad \tilde{Q}_- = \sum_\mu (q^\mu - q'^\mu) e_\mu.
+\tilde{Q}_+ = \sum_\mu (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_\mu (q_\mu - q'_\mu) e_\mu.
 $$</p>
 <p>This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.</p>
 <p><strong>Idempotent and module.</strong> The idempotent representation and the module representation are the same representation viewed from two different angles: the idempotent representation is the pair of components, and the module representation is the action of the algebra on each component.</p>
@@ -368,7 +368,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Split complex four-vector</td>
-<td>$Q^\mu = (Q^0, \vec Q)$</td>
+<td>$Q_\mu = (Q_0, \vec Q)$</td>
 <td>Tensor formalism, indefinite quadratic forms</td>
 </tr>
 <tr>
@@ -432,8 +432,8 @@ $$</p>
 <td>Split complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$</td>
 </tr>
 <tr>
-<td>$Q^\mu = (Q^0, \vec Q)$</td>
-<td>Four-vector components; $Q^0$ the scalar component</td>
+<td>$Q_\mu = (Q_0, \vec Q)$</td>
+<td>Four-vector components; $Q_0$ the scalar component</td>
 </tr>
 <tr>
 <td>$\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$</td>

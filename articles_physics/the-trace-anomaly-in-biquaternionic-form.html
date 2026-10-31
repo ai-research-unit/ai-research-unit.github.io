@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-trace-anomaly-in-biquaternionic-form"><strong>The Trace Anomaly in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A theory that is classically invariant under a local rescaling of the metric has a stress tensor whose trace vanishes, and a quantised version of it generally does not. The equality $T^\mu{}_\mu = 0$ holds for the classical action of a massless field; the regulated one-loop effective action produces a non-vanishing trace, a <strong>trace anomaly</strong> (or <strong>Weyl anomaly</strong>), whose coefficient is fixed by the field content and whose form is fixed by the symmetries. The anomaly is not an artifact of a particular regulator: it is the obstruction to defining the regulated determinant in a way that preserves the classical symmetry, and it is the same obstruction that makes $\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \neq 0$ for the axial current (Adler 1969; Bell and Jackiw 1969).</p>
+<p>A theory that is classically invariant under a local rescaling of the metric has a stress tensor whose trace vanishes, and a quantised version of it generally does not. The equality $T_\mu{}_\mu = 0$ holds for the classical action of a massless field; the regulated one-loop effective action produces a non-vanishing trace, a <strong>trace anomaly</strong> (or <strong>Weyl anomaly</strong>), whose coefficient is fixed by the field content and whose form is fixed by the symmetries. The anomaly is not an artifact of a particular regulator: it is the obstruction to defining the regulated determinant in a way that preserves the classical symmetry, and it is the same obstruction that makes $\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \neq 0$ for the axial current (Adler 1969; Bell and Jackiw 1969).</p>
 <p>This article asks what the biquaternion framework contributes to that statement. The findings are the following.</p>
 <ol>
 <li>
@@ -94,9 +94,9 @@
 <p>The classical statement is fixed first, because the anomaly is the deviation from it.</p>
 <p><strong>The stress tensor and its trace.</strong> For a field theory with action $S[\Phi;g]$ on a background metric $g_{\mu\nu}$ the stress tensor is
 $$
-T^{\mu\nu} = \frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\mu\nu}} ,
+T_{\mu\nu} = \frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\mu\nu}} ,
 $$
-and the trace is $T^\mu{}_\mu = g_{\mu\nu}T^{\mu\nu}$. A <strong>Weyl transformation</strong> is a local rescaling
+and the trace is $T_\mu{}_\mu = g_{\mu\nu}T_{\mu\nu}$. A <strong>Weyl transformation</strong> is a local rescaling
 $$
 g_{\mu\nu}\;\longrightarrow\;\exp(2\sigma(x))g_{\mu\nu},
 \qquad
@@ -104,18 +104,18 @@ g_{\mu\nu}\;\longrightarrow\;\exp(2\sigma(x))g_{\mu\nu},
 $$
 and the trace is exactly the response of the action to it:
 $$
-\delta_\sigma S = \int d^dx\,\sqrt{|g|}\;\sigma\,T^\mu{}_\mu .
+\delta_\sigma S = \int d^dx\,\sqrt{|g|}\;\sigma\,T_\mu{}_\mu .
 $$
-So $T^\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant, and the anomaly is the statement that the quantum effective action is not.</p>
-<p><strong>When the classical trace vanishes.</strong> For a massless scalar with a conformal coupling, for the massless Dirac field in $d=4$, and for the Maxwell field, the classical action is Weyl invariant in the appropriate dimension, $T^\mu{}_\mu=0$ on shell. A mass term, a curvature coupling with non-critical coefficient, and a dimensionful coupling all break the invariance explicitly; those breakings are not anomalous, because they are already present classically and can be removed by a counterterm. The anomaly is the part that cannot.</p>
+So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant, and the anomaly is the statement that the quantum effective action is not.</p>
+<p><strong>When the classical trace vanishes.</strong> For a massless scalar with a conformal coupling, for the massless Dirac field in $d=4$, and for the Maxwell field, the classical action is Weyl invariant in the appropriate dimension, $T_\mu{}_\mu=0$ on shell. A mass term, a curvature coupling with non-critical coefficient, and a dimensionful coupling all break the invariance explicitly; those breakings are not anomalous, because they are already present classically and can be removed by a counterterm. The anomaly is the part that cannot.</p>
 <p><strong>The improved tensor.</strong> For a scalar in four dimensions the canonical tensor is not traceless even for the massless conformal action; adding the improvement term
 $$
-T^{\mu\nu}_{\mathrm{imp}} = T^{\mu\nu}_{\mathrm{can}} + \xi\big(\eta^{\mu\nu}\Box - \partial^\mu\partial^\nu\big)\phi^2 ,
+T_{\mu\nu}_{\mathrm{imp}} = T_{\mu\nu}_{\mathrm{can}} + \xi\big(\eta_{\mu\nu}\Box - \partial/\partial Q_\mu\,\partial/\partial Q_\nu\big)\phi^2 ,
 \qquad
 \xi=\tfrac16 ,
 $$
-produces $T^\mu{}_\mu=0$ classically. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.</p>
-<p><strong>The $ict'$ interpretation.</strong> In the framework's coordinates the flat metric is the level-2 interpretation $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the minus from $i^2$ alone. The trace $T^\mu{}_\mu$ is the contraction with $\eta$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is <em>not</em> a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.</p>
+produces $T_\mu{}_\mu=0$ classically. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.</p>
+<p><strong>The $ict'$ interpretation.</strong> In the framework's coordinates the flat metric is the level-2 interpretation $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the minus from $i^2$ alone. The trace $T_\mu{}_\mu$ is the contraction with $\eta$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is <em>not</em> a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.</p>
 <h2 id="the-quantum-trace-as-the-conformal-variation-of-the-determinant">The Quantum Trace as the Conformal Variation of the Determinant</h2>
 <p>The one-loop effective action is the determinant of the second variation, and the anomaly is its conformal variation.</p>
 <p><strong>The one-loop trace.</strong> From <em>The Generating Functional and the Effective Action in Biquaternionic Form</em> the one-loop effective action is
@@ -124,7 +124,7 @@ $$
 $$
 with $S^{(2)}$ the second variation of the classical action. Its response to a Weyl transformation is
 $$
-T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
+T_\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
 and the anomaly is the statement that this is non-zero for a classically Weyl-invariant theory. In the path-integral language the same statement is that the measure $\mathcal{D}\Phi$ is not invariant under the rescaling, or equivalently that the regularised determinant is not; the two languages agree, and both are standard (Capper and Duff 1974; Deser, Duff, and Isham 1976; Duff 1994).</p>
 <p><strong>The heat-kernel origin.</strong> Regulating the determinant with a proper-time cutoff, the trace of the heat kernel has the small-$t'$ expansion
@@ -141,12 +141,12 @@ so that the anomalous trace is proportional to $a_{d/2}$. This is the standard h
 <p>The standard values are recalled, and the multiplicity is exhibited.</p>
 <p><strong>Two dimensions.</strong> For a massless scalar field on a two-dimensional background the anomalous trace is
 $$
-\boxed{\;T^\mu{}_\mu = \frac{c}{24\pi}\,R\;},
+\boxed{\;T_\mu{}_\mu = \frac{c}{24\pi}\,R\;},
 $$
 and the central charge is $c=1$ for a real scalar, $c=2$ for a complex scalar, and it is additive over decoupled fields. The value $c=1$ per real scalar is the standard one (Polyakov 1981), and it is proportional to the number of real components: the anomaly's coefficient counts components.</p>
 <p><strong>Four dimensions.</strong> In four dimensions the trace for a free field is a linear combination of the Euler density, the Weyl-square term, and $\Box R$:
 $$
-\boxed{\;T^\mu{}_\mu = a\,E_4 + c\,W^2 + b\,\Box R\;},
+\boxed{\;T_\mu{}_\mu = a\,E_4 + c\,W^2 + b\,\Box R\;},
 $$
 with $E_4$ the Euler density and $W$ the Weyl tensor. The coefficients $a$ and $c$ are fixed by the field content — the $a$-coefficient by the Euler term's contribution and the $c$-coefficient by the Weyl term's — and they too are additive over decoupled fields. For a scalar, a Dirac fermion, and a vector the standard values are tabulated (Duff 1994), and each is proportional to the field's internal multiplicity. The $\Box R$ term is scheme-dependent and is fixed by the choice of the renormalised coupling; the $a$ and $c$ terms are not.</p>
 <p><strong>Multiplicity.</strong> The pattern in both dimensions is that the anomaly coefficient is the sum over the field's internal components of each component's contribution, weighted by its spin. A field whose internal space is $n$-real-dimensional contributes $n$ times a single real component's coefficient, with a spin-dependent factor. The framework's task is therefore to fix $n$ for a biquaternion field and to say what the internal space is; that is the next section.</p>
@@ -183,7 +183,7 @@ whose trace is $4$ over the complex four-dimensional algebra. This is the level-
 <p>The anomaly's coefficient and the running coupling's $\beta$ function are two interpretations of the same loop computation, and the corpus's renormalisation conventions fix how they are related.</p>
 <p><strong>The relation.</strong> For a coupling $g$ that multiplies a marginal operator, the anomalous trace is proportional to the $\beta$ function of the coupling:
 $$
-T^\mu{}_\mu \supset \frac{\beta(g)}{2g}\,O ,
+T_\mu{}_\mu \supset \frac{\beta(g)}{2g}\,O ,
 $$
 where $O$ is the operator multiplying the coupling. The relation is standard (the trace anomaly and the $\beta$ function are the same coefficient read in two ways), and it is the reason the anomaly is not removable by a counterterm: removing it would contradict the running that <em>The Renormalization Group in Biquaternionic Form</em> computes.</p>
 <p><strong>Scheme dependence.</strong> The $a$ and $c$ coefficients are scheme-independent in four dimensions; the coefficient of $\Box R$ is not, and it is adjusted by a finite local counterterm. The anomaly's scheme-independent part is therefore a genuine prediction of the field content, which is exactly what makes it a useful check on the framework's counting. A reader who finds a $\Box R$ coefficient differing between articles is looking at a scheme choice, not at a disagreement.</p>
@@ -202,7 +202,7 @@ $$
 $$
 with the Seeley–DeWitt coefficients $a_k$ built from the curvature and the operator's potential. The conformal transformation $g\to \exp(2\Omega)g$ acts on the expansion through $\Omega$, and the term that survives in the trace is the one multiplying $a_{d/2}$: that is the origin of the anomalous trace,
 $$
-T^\mu{}_\mu = \frac{c}{24\pi}R \quad (d=2),
+T_\mu{}_\mu = \frac{c}{24\pi}R \quad (d=2),
 $$
 with $c$ the central charge, and the corresponding combination of the curvature invariants in $d=4$. The identification $k=d/2$ is the exact reason the anomaly exists in even dimensions only.</p>
 <p><strong>The coefficients, and the framework's multiplicity.</strong> In $d=2$ the relevant coefficient is $a_1=R/6$, giving $c=1$ per real scalar; in $d=4$ the analogous coefficients give the standard $a$ and $c$ per field of each spin. The framework's contribution is the multiplicity: the trace runs over the module or the algebra, and the count is $\mathrm{Tr}(I)=2$ on the module and $4$ on the algebra, so a biquaternion-valued field contributes the corresponding multiple of the per-component coefficient. This is the same counting that the partition-function and harmonic-oscillator articles perform, and it is a count of components and not a multiplication of independent fields, for the reason those articles give. The finite-dimensional shadow of the whole construction was verified: for a complex $K$,
@@ -221,10 +221,10 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 </ul>
 <p><strong>Standard, and transcribed.</strong></p>
 <ul>
-<li>The definition of $T^{\mu\nu}$ as the metric variation of the action, the improvement term, and the classical vanishing of the trace.</li>
+<li>The definition of $T_{\mu\nu}$ as the metric variation of the action, the improvement term, and the classical vanishing of the trace.</li>
 <li>The one-loop trace as the conformal variation of $\log\det S^{(2)}$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.</li>
 <li>The values $c=1$ per real scalar in two dimensions and the four-dimensional $a$ and $c$ coefficients for scalar, fermion, and vector fields.</li>
-<li>The relation $T^\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).</li>
+<li>The relation $T_\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).</li>
 <li>The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dt'}{t'}\mathrm{Tr}\,\exp(-t'S^{(2)})$ and the small-$t'$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-t'S^{(2)})\sim(4\pi t')^{-d/2}\int\sqrt g\,(a_0+a_1t'+\cdots)$, with $k=d/2$ as the anomalous coefficient.</li>
 </ul>
 <p><strong>Interpretation.</strong></p>
@@ -241,9 +241,9 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 <h2 id="summary">Summary</h2>
 <p>The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
 $$
-\boxed{\;T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
+\boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
-proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T^\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T^\mu{}_\mu=aE_4+cW^2+b\Box R$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$, the level-1 biquaternion norm with trace $4$, and the component count four complex and eight real; the two interpretations are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$, verified numerically. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.</p>
+proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T_\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T_\mu{}_\mu=aE_4+cW^2+b\Box R$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$, the level-1 biquaternion norm with trace $4$, and the component count four complex and eight real; the two interpretations are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$, verified numerically. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -290,7 +290,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 <td>Weyl transformation; a level-1 rescaling</td>
 </tr>
 <tr>
-<td>$T^{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$</td>
+<td>$T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$</td>
 <td>Stress tensor</td>
 </tr>
 <tr>
