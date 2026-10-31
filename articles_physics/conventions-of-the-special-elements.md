@@ -1,10 +1,10 @@
-# __Conventions of the Special Elements__
+# __Special Element Conventions__
 
 ## Introduction
 
 These are the conventions of the central map and of the special elements. The central map is the restriction of multiplication by the scalar imaginary $i$ to the remarkable subspaces, and the series reads it in four places under four names. The special glyphs — root, idempotent, nilpotent and spin — are notational, and the article fixes what each glyph promises about the element that carries it.
 
-The article assumes the base and the subspaces of *Conventions in the Biquaternion Universe* and the norms of *Conventions of the Norms and the Pairings*, where a class is defined by a norm.
+The article assumes the base and the subspaces of *Algebra and Element Conventions* and the norms of *Norm and Pairing Conventions*, where a class is defined by a norm.
 
 ## The Central Map and Its Restrictions
 
@@ -85,7 +85,7 @@ $$
 \tilde{\nu}^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (*Conventions of the Special Elements and the Peirce Decomposition*, §*The Nilpotent Convention*), and the class is relative to the product. A nilpotent is never a Hermitian idempotent, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (*Special Element and Peirce Conventions*, §*The Nilpotent Convention*), and the class is relative to the product. A nilpotent is never a Hermitian idempotent, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
 
 **The coordinates carry the letter of the nilpotent**: in $\mathbb{B}$ the nilpotent is $\tilde{\Upsilon} = \Upsilon_te_t + \Upsilon_x\vec e_x + \Upsilon_y\vec e_y + \Upsilon_z\vec e_z$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_t$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_te_t + \nu_x\vec e_x + \nu_y\vec e_y + \nu_z\vec e_z$ with real $\nu_\mu$.
 
@@ -100,11 +100,11 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
-| $\vec{\Upsilon}$, $\vec{\nu}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Conventions in the Biquaternion Universe*, §*The Centre and the Vector Subspace* |
+| $\vec{\Upsilon}$, $\vec{\nu}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
 
 The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, the off-diagonal Peirce units of *The Peirce Decomposition of the Biquaternion Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
 
-**The standard pair carries the arrow, not the tilde.** The two Peirce units are pure, $\vec{\Upsilon}_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec{\Upsilon}_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Conventions in the Biquaternion Universe*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec{\Upsilon}_1, \vec{\Upsilon}_2$ and never $\tilde{\Upsilon}_1, \tilde{\Upsilon}_2$. The tilde is kept for the general nilpotent $\tilde{\Upsilon}$, which may carry a scalar part and is not pure.
+**The standard pair carries the arrow, not the tilde.** The two Peirce units are pure, $\vec{\Upsilon}_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec{\Upsilon}_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec{\Upsilon}_1, \vec{\Upsilon}_2$ and never $\tilde{\Upsilon}_1, \tilde{\Upsilon}_2$. The tilde is kept for the general nilpotent $\tilde{\Upsilon}$, which may carry a scalar part and is not pure.
 
 ### The Spin Convention
 
@@ -114,7 +114,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 Multiplication by $i$ is one map. On the centre it is the global phase; on the complex space sector it is the duality rotation; on the real and imaginary halves it is the Wick rotation, and on the two sectors it is the material–informational exchange. The generator satisfies $(ie_t)^2=-e_t$, and the group $\exp(i\theta)e_t$ of the centre interpolates between the four values. The map is a rotation and not a projection, a collapse or a measurement, and it acts through the centre rather than through the quaternion directions.
 
-The special glyphs are notational: a root $\tilde\Xi$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Conventions of the Units, the Indices and the Notation*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
+The special glyphs are notational: a root $\tilde\Xi$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Unit, Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 
 Spin is defined once, as the intrinsic angular momentum of a particle: $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$ in the rest frame, with $s$ an integer or half-integer, and helicity for the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
 

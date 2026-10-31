@@ -164,7 +164,7 @@ $$
 
 where $\log(\lambda_1)$ and $\log(\lambda_2)$ are any complex logarithms of the two eigenvalues. Conversely every such choice gives a logarithm, because $\exp$ acts on each component by the complex exponential. The definition is an equation, not a formula; the eigenvalue decomposition supplies the formula.
 
-The element and its logarithm carry two different pairs of complex coordinates, and they must not be mixed. By the coefficient rule of *Conventions in Mathematics*, a prime marks the imaginary coordinate of a complex coefficient:
+The element and its logarithm carry two different pairs of complex coordinates, and they must not be mixed. By the coefficient rule of *Algebra and Element Conventions*, a prime marks the imaginary coordinate of a complex coefficient:
 
 $$
 \breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown},\qquad

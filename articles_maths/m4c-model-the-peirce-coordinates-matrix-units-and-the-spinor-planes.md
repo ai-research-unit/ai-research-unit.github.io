@@ -39,7 +39,7 @@ and the Peirce change $C_{\Pi}$, whose columns are these four elements in coeffi
 
 **Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*, the same operator reads $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))C_{\Pi}^{-1}$ there.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $C_{\Pi}$ the Peirce change of *The Product, the Trace and the Determinant*, the same operator reads $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))C_{\Pi}^{-1}$ there.
 
 ## The Peirce Table
 

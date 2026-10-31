@@ -20,7 +20,7 @@ $$
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_\mu = q_\mu + iq'_\mu \in \mathbb{C},
 $$
 
-with the eight real parameters $q_\mu, q'_\mu$ of *Conventions in the Biquaternion Universe*. To multiply two elements a machine must combine their sixteen real parameters; the question is how many **real multiplications** the combination needs, additions being counted as free.
+with the eight real parameters $q_\mu, q'_\mu$ of *Algebra and Element Conventions*. To multiply two elements a machine must combine their sixteen real parameters; the question is how many **real multiplications** the combination needs, additions being counted as free.
 
 The count below is a count of multiplications of the algebraic kind, and its two levels are worth naming before they are used:
 
@@ -29,7 +29,7 @@ The count below is a count of multiplications of the algebraic kind, and its two
 
 A complex multiplication costs four real multiplications and two real additions in the naive scheme, and three real multiplications and five real additions under Gauss's rule. The naive count for a biquaternion product is therefore four times its coefficient count; the reduced count exploits both the algebra and the complex arithmetic. Both reductions are exact: no approximation and no special case is involved.
 
-The slice structure of *Conventions in the Biquaternion Universe* fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real, and an element of the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.
+The slice structure of *Algebra and Element Conventions* fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real, and an element of the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.
 
 ## The Naive Count
 
@@ -184,7 +184,7 @@ It is a statement of linear algebra — a rotation of a two-block matrix into it
 
 The two splits of the algebra do not align, and the arithmetic makes the misalignment concrete.
 
-The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ cuts across it, as *Conventions in the Biquaternion Universe* records: an element of $\mathbb{M}_-$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore **not** automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.
+The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ cuts across it, as *Algebra and Element Conventions* records: an element of $\mathbb{M}_-$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore **not** automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.
 
 The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is the trace formula on which the Born rule is written; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.
 

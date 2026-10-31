@@ -1,4 +1,4 @@
-# __Conventions of the Matrix Models__
+# __Matrix Representations Conventions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The algebra is read in matrices in two ways, and the two answer different questi
 
 The algebra is $M_2(\mathbb{C})$ and it is never $M_4(\mathbb{C})$. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
 
-The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame with the four left matrices $L_\mu$, the four right matrices $R_\nu$ and the sixteen basis matrices $T_{\mu\nu}=L_\mu R_\nu$, and the Clifford structure of the cells that closes it. The article assumes the base of *Conventions in Mathematics* and the Peirce convention of *Conventions of the Special Elements and the Peirce Decomposition*, whose standard pair fixes the frame.
+The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame with the four left matrices $L_\mu$, the four right matrices $R_\nu$ and the sixteen basis matrices $T_{\mu\nu}=L_\mu R_\nu$, and the Clifford structure of the cells that closes it. The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the frame.
 
 ## The Matrix Models
 
@@ -65,7 +65,7 @@ The determinant is multiplicative, which is what makes the matrix model compute 
 
 A bare $M_4(\mathbb{C})_{\mathbb{B}}$ means the left copy; the side is $L$ unless written. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is an operator algebra, carries no biquaternion structure and takes no biquaternion name.
 
-**The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Conventions of the Operators and the Differential Calculus*, §*The Operators*. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
+**The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Operator and Calculus Conventions*, §*The Operators*. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
 
 **The canonical frame is the Peirce frame of the standard pair.** The matrix model fixes the family and the two mixed units,
 $$
@@ -77,7 +77,7 @@ $$
 \tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad
 \vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
 $$
-So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (*Conventions of the Special Elements and the Peirce Decomposition*, §*The Biquaternion Peirce Convention*), and the choice here is not a preferred pair: it is the frame the matrix model is written in.
+So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (*Special Element and Peirce Conventions*, §*The Biquaternion Peirce Convention*), and the choice here is not a preferred pair: it is the frame the matrix model is written in.
 
 **In this frame the two copies are the two tensor factors.**
 $$
@@ -223,7 +223,7 @@ $$
 $$
 The sixteen products of the five generators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three bases of the same complex algebra, related by a change of gamma basis; a change of gamma basis is a change of basis, not a change of object.
 
-**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Differential Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
+**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Operator and Calculus Conventions*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
 \boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
 \gamma_1=iL_xR_y=iT_{xy},\qquad
@@ -278,10 +278,10 @@ Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; th
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
 A derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
-in the $\mathbb{M}_-$ frame fixed in *Conventions of the Frames*.
+in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
 If the $\mathbb{B}$ frame is used, it is written $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators,
 and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
-No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Conventions of the Frames*.
+No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
 \gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),

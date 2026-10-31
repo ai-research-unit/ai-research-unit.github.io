@@ -126,7 +126,7 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_1(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_2(\vec u) = \tilde\Pi_1(-\vec u)$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_k\mapsto-i\sigma_k$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state
 
 $$
 |\vec u+\rangle_{*}\langle\vec u+|,

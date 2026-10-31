@@ -14,7 +14,7 @@ The norm of $\mathbb{D}$ is indefinite of signature $(1,1)$. Three consequences 
 
 The article defines the norm and the two regimes (§*The Two Factors*), proves existence and uniqueness (§*Existence and Uniqueness*), describes the group of units and its maximal compact subgroup (§*The Group of Units and the Unit Set*), records the two axes (§*The Two Axes*), gives the matrix picture (§*The Matrix Picture*), computes examples (§*Worked Examples*) and compares the family (§*The Other Algebras*).
 
-The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Conventions in Mathematics*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
+The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Algebra and Element Conventions*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
 
 ## The Two Factors
 
@@ -86,7 +86,7 @@ $$
 \langle u\rangle_{*} = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
 $$
 
-The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*.
+The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 

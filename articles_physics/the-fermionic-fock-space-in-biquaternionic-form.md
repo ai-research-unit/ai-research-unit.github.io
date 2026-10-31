@@ -40,7 +40,7 @@ S\;\cong\;\mathbb{B}\tilde\Pi_+ ,
 \tilde\Pi_\pm^{*}=\tilde\Pi_\pm .
 $$
 
-The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as *Conventions of the Special Elements*, §*The Idempotent Convention* requires.
+The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as *Special Element Conventions*, §*The Idempotent Convention* requires.
 
 Two forms live on $S$, and the distinction is one of the framework's standing conventions.
 

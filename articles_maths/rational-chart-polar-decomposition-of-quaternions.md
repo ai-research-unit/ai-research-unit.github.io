@@ -30,7 +30,7 @@ Noncommutativity enters the coordinate calculus. The inverse is a rational expre
 
 The plan is as follows. The modulus–unit form is recalled (§*The Modulus–Unit Form Recalled*), the chart and its inverse are defined (§*The Chart*, §*The Inverse*), and the chart is proved a bijection (§*The Bijection*). The decomposition is then stated and proved (§*The Rational-Chart Decomposition*), the group law in the coordinate is computed (§*The Group Law*), the covering of the sphere by two charts and the cost of rationality are described (§*Covering the Sphere and the Price of Locality*), and the matrix picture (§*The Matrix Picture*) and worked examples (§*Worked Examples*) close the mathematical part. The comparison with the two other forms is in §*Covering the Sphere and the Price of Locality* and in *Exponential Polar Decomposition of Quaternions*, §*The Three Polar Decompositions*.
 
-The symbols are those of *Quaternion Algebra* and *Norm and Invertibility in the Quaternion Algebra*, and the conventions are those of *Conventions in Mathematics*. The notation is collected in §*Summary of Notation*.
+The symbols are those of *Quaternion Algebra* and *Norm and Invertibility in the Quaternion Algebra*, and the conventions are those of *Algebra and Element Conventions*. The notation is collected in §*Summary of Notation*.
 
 Every numerical value displayed below was recomputed in double precision.
 

@@ -74,7 +74,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-The one-argument bracket is the norm and the two-argument bracket is the form; the distinction is the one of *Conventions in the Biquaternion Universe*. On a real-type subspace the form is real and the norm is its diagonal; on a complex subspace the form is complex and the norm carries only part of it.
+The one-argument bracket is the norm and the two-argument bracket is the form; the distinction is the one of *Algebra and Element Conventions*. On a real-type subspace the form is real and the norm is its diagonal; on a complex subspace the form is complex and the norm carries only part of it.
 
 The four forms are collected in one table.
 

@@ -14,7 +14,7 @@ This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$
 
 The article states why the modulus and the four factors fail (§*The Vanishing of the Modulus*), records the surviving pair (§*The Two-Factor Decomposition*), computes the two factors in closed form (§*The Hermitian Factor*, §*The Partial-Isometry Factor*), describes the two sectors of the null cone (§*The Two Sectors*), and gives four worked examples. The general pair, its uniqueness and the continuity of its Hermitian factor are established in *The Polar Decomposition of a Biquaternion* and are cited, not proved again.
 
-The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product and the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
+The conventions and the symbols are those of *Algebra and Element Conventions*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product and the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
 
 ## The Vanishing of the Modulus
 

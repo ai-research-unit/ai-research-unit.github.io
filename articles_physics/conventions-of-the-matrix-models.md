@@ -1,8 +1,8 @@
-# __Conventions of the Matrix Models__
+# __Matrix Representations Conventions__
 
 ## Introduction
 
-The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Conventions in the Biquaternion Universe* and the products of *Conventions of the Products and the Forms*.
+The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Algebra and Element Conventions* and the products of *Product and Form Conventions*.
 
 The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the comparison map $\iota_{\mathrm{Cl}}$ is its real-linear link to the even subalgebra.
 
@@ -227,7 +227,7 @@ $$
 $$
 The sixteen gamma products span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The full Clifford structure, odd part included, is a structure of the two-sided operators themselves. It is not an external tool, and the even part is not a limitation.
 
-**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Conventions of the Operators and the Calculus*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
+**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Operator and Calculus Conventions*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
 \boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
 \gamma_1=iL_xR_y=iT_{xy},\qquad
@@ -253,7 +253,7 @@ $$
 $$
 The printed matrices above are the ones of the $\mathbb{M}_-$ frame; the $\mathbb{B}$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.
 
-**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames for the derivatives, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Conventions of the Frames*.
+**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames for the derivatives, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Frame Conventions*.
 
 - The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.
 - The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.

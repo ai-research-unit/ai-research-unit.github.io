@@ -20,7 +20,7 @@ with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\exp
 
 The article states the decomposition and computes its data (§*The Decomposition*), identifies the exponent with the logarithm and separates the principal logarithm from the general one (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*).
 
-The symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and *Conventions in Mathematics*. Every numerical value displayed below was recomputed in double precision.
+The symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and *Algebra and Element Conventions*. Every numerical value displayed below was recomputed in double precision.
 
 ## The Decomposition
 

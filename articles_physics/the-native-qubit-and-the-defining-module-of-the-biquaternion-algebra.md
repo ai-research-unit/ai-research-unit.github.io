@@ -32,7 +32,7 @@ $$
 \tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
-and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$. The trace is not intrinsic to the biquaternion: it is the $2\times2$ matrix reading, $\mathrm{Tr}=\mathrm{tr}\circ\mathsf{M}_2$, whereas $\mathrm{Sc}(\tilde Q)$ is defined for every biquaternion. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Conventions in the Biquaternion Universe*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_te_t - Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the Hermitian conjugate
+and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$. The trace is not intrinsic to the biquaternion: it is the $2\times2$ matrix reading, $\mathrm{Tr}=\mathrm{tr}\circ\mathsf{M}_2$, whereas $\mathrm{Sc}(\tilde Q)$ is defined for every biquaternion. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Algebra and Element Conventions*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_te_t - Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the Hermitian conjugate
 
 $$
 \tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_t^{*}e_t - Q_x^{*}\vec e_x - Q_y^{*}\vec e_y - Q_z^{*}\vec e_z ,

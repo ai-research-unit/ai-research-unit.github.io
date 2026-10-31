@@ -26,7 +26,7 @@ The article treats the general case, on the whole algebra. It does not treat the
 
 Off the cone the pair is the Cartan pair of the group of units: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Polar Decomposition of a N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of a N-Degenerate Biquaternion*.
 
-The conventions and the symbols are those of *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the two algebraic norms are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+The conventions and the symbols are those of *Algebra and Element Conventions*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the two algebraic norms are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## Notation
 

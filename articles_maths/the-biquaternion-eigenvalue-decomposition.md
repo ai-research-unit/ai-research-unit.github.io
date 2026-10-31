@@ -219,7 +219,7 @@ are the two Peirce carriers of the algebra, the two minimal left ideals, and the
 
 ### The Nilpotent Regime
 
-Let $B=0$ and $\vec Q\neq0$. Then $\vec Q^{2}=0$, so $\vec\Upsilon=\vec Q$ is a pure nilpotent, written with the arrow and without the tilde by §*The Nilpotent Convention* of *Conventions of the Special Elements and the Peirce Decomposition*, and
+Let $B=0$ and $\vec Q\neq0$. Then $\vec Q^{2}=0$, so $\vec\Upsilon=\vec Q$ is a pure nilpotent, written with the arrow and without the tilde by §*The Nilpotent Convention* of *Special Element and Peirce Conventions*, and
 
 $$
 \tilde Q=Q_{t}e_{t}+\vec\Upsilon, \qquad \vec\Upsilon^{2}=0.
@@ -247,7 +247,7 @@ and the pair is not determined by $\tilde Q$. The two-projector writing is there
 
 ### The Hermitian Projectors
 
-Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$; the conjugations are those of *Conventions in Mathematics*, §*The Conjugations*. In the Clifford reading, the star is the Clifford conjugation composed with the appropriate grade operations, and a Hermitian biquaternion is a normal element whose spectral projectors are fixed by the star.
+Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$; the conjugations are those of *Algebra and Element Conventions*, §*The Conjugations*. In the Clifford reading, the star is the Clifford conjugation composed with the appropriate grade operations, and a Hermitian biquaternion is a normal element whose spectral projectors are fixed by the star.
 
 **Proposition.** Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_{\pm}$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde Q$ is normal.
 

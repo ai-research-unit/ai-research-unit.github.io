@@ -23,7 +23,7 @@ Three features distinguish the case from the three previous algebras of the seri
 
 The article is the fourth and last of the series on the polar decompositions of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, *The Polar Decomposition of a N-Regular Biquaternion*: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate.
 
-The conventions and the symbols are those of *Split-Biquaternion Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
+The conventions and the symbols are those of *Split-Biquaternion Algebra* and of the corpus (*Algebra and Element Conventions*); the symbols this article uses are collected in §*Summary of Notation*.
 
 The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
 
@@ -266,7 +266,7 @@ $$
 
 the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ of the companion article on rotations.
 
-The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** $\mathbb{H}_{\mathbb{D}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
+The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** $\mathbb{H}_{\mathbb{D}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
 
 ### The Rotor as an Exponential
 

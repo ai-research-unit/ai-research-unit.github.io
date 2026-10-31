@@ -38,28 +38,28 @@
 
 ## Biquaternion Universe Conventions
 
-<a href="articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
+<a href="articles_physics/conventions-in-the-biquaternion-universe.html">Algebra and Element Conventions</a>
 <!-- the first of the eight conventions articles, and the one that fixes the base: the algebra and its basis, the base and its units, the element and its coefficients, the remarkable subspaces, the conjugations and the common quaternions and biquaternions; the rules for the glyphs, with no tilde on an array and no new glyph for an operator; the seven companion articles that carry the rest of the conventions, in dependency order. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-products-and-the-forms.html">Conventions of the Products and the Forms</a>
+<a href="articles_physics/conventions-of-the-products-and-the-forms.html">Product and Form Conventions</a>
 <!-- the twelve products and their names, the four general products and their symmetric and antisymmetric parts, the three-letter code read letter by letter; the four maps and the four forms $B$, $N$, $H$, $K$, with the signature convention and the pairwise sign rule; the generic Form and Norm; the Hermitian form, its unit, its normalisation and its weight; what is forced and what is chosen. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-norms-and-the-pairings.html">Conventions of the Norms and the Pairings</a>
+<a href="articles_physics/conventions-of-the-norms-and-the-pairings.html">Norm and Pairing Conventions</a>
 <!-- the four algebraic norms read on the diagonal, one letter and two arities; the qualified regular and degenerate; the unitary convention, norm one layer by layer and the star-unitary distinction; the polar word and its four factors, and the two norms it is read against; the four objects called a boost and the factor of two; the four-momentum; the trace and the normalised state; the three pairings and their non-nested domains. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-special-elements.html">Conventions of the Special Elements</a>
+<a href="articles_physics/conventions-of-the-special-elements.html">Special Element Conventions</a>
 <!-- the central map and its four restrictions, the global phase, the duality rotation, the Wick rotation and the material–informational exchange; the special glyphs as notational, not as a different kind of object; the root, the idempotent and the nilpotent conventions; the standard Peirce pair and the arrow; the one definition of spin. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-frames.html">Conventions of the Frames</a>
+<a href="articles_physics/conventions-of-the-frames.html">Frame Conventions</a>
 <!-- the two spacetime frames of the physics corpus, and the rule that a frame is declared before it is used; the $\mathbb{B}$ frame, the general frame of the biquaternion universe, read in its own coordinate, with the Euclidean form $(1,1,1,1)$, and the material $\mathbb{M}_-$ frame, a particular case kept for reading familiar equations, with metric $(1,-1,-1,-1)$, the substitution $Q_t=ix_0$ and the table of the two; the metric each coordinate frame carries, the plain weight $\varepsilon$ and the Clifford metric, and the coincidence each frame makes; the Clifford map $\mathsf{K}$ from the four directions into $M_4(\mathbb{C})$, not a basis, with the base change $\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i)$ and the metric read from it; the gamma index low and the frame in brackets; seven rules; the same Dirac operator squared in both frames. coordinate frames and the map into the algebra, no model readings. -->
 
-<a href="articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>
+<a href="articles_physics/conventions-of-the-matrix-models.html">Matrix Representations Conventions</a>
 <!-- the general matrix conventions, no tilde on an array and the letter $M$ for matrices and nothing else; the 2×2 isomorphism and its forced images, the trace and the determinant; the 4×4 regular representation in the canonical frame, the block formula, the four unit matrices, the gamma set, the sixteen products and the invariants; the Clifford structure as the algebra of the two-sided operators, the gamma matrices as one basis of it, and the comparison map $\iota_{\mathrm{Cl}}$. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-operators-and-the-calculus.html">Conventions of the Operators and the Calculus</a>
+<a href="articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a>
 <!-- the operator that is its element, left and right multiplication, the two-sided operator, the sandwich and the inner derivation; the dagger and the Kraus operator; the Fock exception; the subscript rule, the unhalved coordinate derivative, the derivative marks, the gradient and the d'Alembertian; the plain, quaternionic, Hermitian and Krein products read on the gradient, each with its form and its norm. no physical readings. -->
 
-<a href="articles_physics/conventions-of-the-units-the-indices-and-the-notation.html">Conventions of the Units, the Indices and the Notation</a>
+<a href="articles_physics/conventions-of-the-units-the-indices-and-the-notation.html">Unit, Index and Notation Conventions</a>
 <!-- the SI units and the rule that the coefficients of one element share one unit; the two writings of the temporal slot; dimensionless and dimensionful; the caution on $\mu$; the $\mathrm{fop}$ and $\mathrm{opp}$ tokens; the subscripts, count against name, role labels, signs and the allowed forms. no physical readings. -->
 
 ## Biquaternion Physical Interpretation of Mathematics
@@ -947,7 +947,7 @@
 <!-- the LSZ formula; amputation as the inverse mass-shell operator; the external wavefunctions; wave-function renormalization as a residue; the scalar and spinor reductions; the one-mode truncation and the module gap; the reduction from the functional integral. -->
 
 <a href="articles_physics/scattering-for-the-quaternionic-dirac-operator.html">Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</a>
-<!--the direct-versus-inverse problem for the quaternionic operator: the three-dimensional scattering theory of $D_3+M_k$ with a compactly supported quaternionic potential $m(x)$, read from Bernstein's *Seeing the Invisible and Maxwell's Equations* and motivated by optical coherence tomography; the two one-sided multiplications as the notational pivot; Maxwell's equations as a Dirac-type system in a medium and the force-free case; the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one; the outgoing fundamental solution and the radiation condition, and Faddeev's Green's function for the anisotropic case; the Lippmann–Schwinger equation, its iterated series and the Born approximation; uniqueness and existence; what is transcribed from the source and what is recomputed here, kept apart in the ledger; the open questions the article leaves visible, the inverse problem itself, the isotropic case and the four-variable theory for $\tilde\nabla$. The conventions are those of *Conventions in the Biquaternion Universe* and *Introduction to the Biquaternion Universe*, and the direct theory is *Biquaternion Regular Functions*, cited.-->
+<!--the direct-versus-inverse problem for the quaternionic operator: the three-dimensional scattering theory of $D_3+M_k$ with a compactly supported quaternionic potential $m(x)$, read from Bernstein's *Seeing the Invisible and Maxwell's Equations* and motivated by optical coherence tomography; the two one-sided multiplications as the notational pivot; Maxwell's equations as a Dirac-type system in a medium and the force-free case; the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one; the outgoing fundamental solution and the radiation condition, and Faddeev's Green's function for the anisotropic case; the Lippmann–Schwinger equation, its iterated series and the Born approximation; uniqueness and existence; what is transcribed from the source and what is recomputed here, kept apart in the ledger; the open questions the article leaves visible, the inverse problem itself, the isotropic case and the four-variable theory for $\tilde\nabla$. The conventions are those of *Algebra and Element Conventions* and *Introduction to the Biquaternion Universe*, and the direct theory is *Biquaternion Regular Functions*, cited.-->
 
 <a href="articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a>
 <!-- the theorem and its ingredients; spin as a representation of the rotor group; the sign of the two-pi rotation; the algebra's own one fermionic mode; microcausality and the equal-time brackets; the energy and the norm; the four quantizations. -->

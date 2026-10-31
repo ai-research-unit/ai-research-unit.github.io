@@ -38,7 +38,7 @@ The two levels are collected in the table.
 
 The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of units (§*The Group of Units*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
 
-The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the norm is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
+The conventions and the symbols are those of *Algebra and Element Conventions*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the norm is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
 
 ## The Two Factors
 
@@ -122,7 +122,7 @@ of complex dimension three and real dimension six (*N-Regularity and N-Degenerac
 
 The group is not compact. It contains the Hermitian positive elements of norm one, and those are unbounded: the element $c\,e_t+i\sqrt{c^{2}-1}\,\vec e_x$ has norm one for every $c\ge1$. This is the sharpest difference from the quaternion case, where the norm-one set is the sphere $S^{3}$. The biquaternion unit factor has three compact directions and three non-compact ones, and the split into boost and rotor separates them.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb B^{\times}$, the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*. The group of units is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
+The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb B^{\times}$, the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*. The group of units is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
 
 **The count.** A biquaternion carries eight real parameters. The modulus carries two, the scale and the phase. The unit factor is constrained by the single complex equation $\langle\tilde U\rangle_{\natural}=1$, so it retains six real degrees of freedom. Thus
 

@@ -20,7 +20,7 @@ identifies the Hermitian case.
 The article is the first of the `* Operator Theory` group of *Foundations of Analysis*. Its prerequisites
 are *The Integral Operator*, the first article of this category, for the integral operator and the kernel;
 *Banach and Hilbert Spaces*, later in this Part, for the adjoint of a bounded operator, its uniqueness and
-its algebraic properties, quoted as established; *Conventions in Mathematics* for the marks, where the
+its algebraic properties, quoted as established; *Algebra and Element Conventions* for the marks, where the
 **dagger** is the adjoint of an operator and the **star** the involution of an element; and *Hermitian
 Kernels and the Integral Operator*, the last article of the `* Theory` group, for the kernel involution and
 the dictionary of the two conditions. The spectral theory that the Hermitian case supports is *Hermitian
@@ -73,7 +73,7 @@ later in this Part, and are quoted from there; the anti-multiplicativity is the 
 $\langle STf,g\rangle=\langle Tf,S^\dagger g\rangle=\langle f,T^\dagger S^\dagger g\rangle$, and the
 isometry is $\lVert T^\dagger\rVert=\sup_{\lVert g\rVert=1}\sup_{\lVert f\rVert=1}\lvert\langle Tf,g\rangle\rvert=\lVert T\rVert$.
 
-**Remark (the marks).** By *Conventions in Mathematics* the **dagger** names the adjoint of an operator and
+**Remark (the marks).** By *Algebra and Element Conventions* the **dagger** names the adjoint of an operator and
 the **star** names the involution of an element, the layer of the `* Theory` group. The two are distinct
 structures, and the identity $T_K^\dagger=T_{K^*}$ below is the statement that, for integral operators, the
 element involution $K\mapsto K^*$ produces the operator adjoint $T\mapsto T^\dagger$; that agreement is
@@ -207,7 +207,7 @@ are bounded, and the subtlety does not arise.
 The adjoint of a bounded operator on $L^2(X,\mu)$ is characterised by
 $\langle Tf,g\rangle=\langle f,T^\dagger g\rangle$ for the Hilbert pairing $\langle f,g\rangle=\int f\bar g$;
 it is conjugate-linear, involutive, isometric and reverses products, and it is the involution of the
-`* Operator Theory` group, written with the dagger by *Conventions in Mathematics*, while the star is
+`* Operator Theory` group, written with the dagger by *Algebra and Element Conventions*, while the star is
 reserved for the involution of the elements. For an integral operator the adjoint is the integral operator
 with the conjugate transpose kernel, $T_K^\dagger=T_{K^*}$ with $K^*(x,y)=\overline{K(y,x)}$, and the
 transpose with respect to the bilinear pairing has the transposed kernel $K(y,x)$; the two differ by the

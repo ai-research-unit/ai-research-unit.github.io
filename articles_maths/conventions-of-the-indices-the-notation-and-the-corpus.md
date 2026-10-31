@@ -1,12 +1,12 @@
-# __Conventions of the Indices, the Notation and the Corpus__
+# __Index, Notation and Corpus Conventions__
 
 ## Introduction
 
 This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the seven companions, whose glyphs it indexes.
 
-The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Conventions of the Operators and the Differential Calculus*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
+The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 
-The article is the last of the eight and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Conventions in Mathematics* collects the glyphs of the algebra.
+The article is the last of the eight and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
 
 ## The Superscripts
 
@@ -19,7 +19,7 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 
 Two further upright superscripts belong to objects outside the algebra — $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element — and are recorded in §*Summary of Notation*.
 
-**The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Conventions of the Operators and the Differential Calculus*, §*The Operators*). The single exception is the **Fock layer** of the physical corpus, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph:
+**The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Operator and Calculus Conventions*, §*The Operators*). The single exception is the **Fock layer** of the physical corpus, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph:
 
 $$
 a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Q^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
@@ -27,7 +27,7 @@ $$
 
 The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p$, the position $x$, the spin $S$ and the parity, charge-conjugation and reversal maps $P$, $C$ and $T$ carry no superscript, because each keeps the glyph of its element or is a map with a glyph of its own.
 
-**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Conventions of the Operators and the Differential Calculus*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
+**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Operator and Calculus Conventions*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
 
 **The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.
 
@@ -35,7 +35,7 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.
 
-**A subscript is never a partial derivative.** The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Conventions of the Operators and the Differential Calculus*, §*Conventions for Derivation*.
+**A subscript is never a partial derivative.** The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Operator and Calculus Conventions*, §*Conventions for Derivation*.
 
 **A coefficient carries a letter index and an element a number.** In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.
 
@@ -130,7 +130,7 @@ Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{re
 
 The corpus has a small number of working conventions that are not mathematical.
 
-**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the category *Introduction and Conventions*, placed outside the parts. It has two subcategories: *Introduction to Mathematics*, which holds *Introduction to the Mathematical Corpus* and *AI Maths Review*, and *Conventions in Mathematics*, which holds this article and its six companions. An entry that begins with `+` is a **planned** article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.
+**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the category *Introduction and Conventions*, placed outside the parts. It has two subcategories: *Introduction to Mathematics*, which holds *Introduction to the Mathematical Corpus* and *AI Maths Review*, and *Algebra and Element Conventions*, which holds this article and its six companions. An entry that begins with `+` is a **planned** article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.
 
 **The groups inside a category.** A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it. The group `- Theory` holds the structure itself, read with the product of its elements. The group `- Operator Theory` holds the operators on that structure — the left and right multiplications, the derivations, the automorphisms, the actions and the sandwich — and adds an operator layer and nothing else. The group `- * Theory` holds the same structure read with an involution on its **elements**. The group `- * Operator Theory` holds the operators built from the **involution**, of which the adjoint is the archetype. The front-matter category *Introduction and Conventions* is the exception: it lists two subcategories and no group.
 
@@ -163,7 +163,7 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
   commutative Jordan algebra over $\mathbb{R}$ of degree two***. A statement already displayed as a
   Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
   to the lead sentence of a section that states an outcome.
-- The third derivative is written `d^3/dt^3`. The macro `\slashed` is retired and is not used; a gamma contraction is written out, as *Conventions of the Matrix Models* states. The characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping.
+- The third derivative is written `d^3/dt^3`. The macro `\slashed` is retired and is not used; a gamma contraction is written out, as *Matrix Representations Conventions* states. The characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping.
 - A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.
 
 ## Summary

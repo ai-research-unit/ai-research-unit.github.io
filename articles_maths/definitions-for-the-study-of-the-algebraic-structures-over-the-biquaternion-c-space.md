@@ -9,7 +9,7 @@ The point of collecting them is that **every definition is relative to a product
 - The elements, the basis and the four conjugations are *The Biquaternion Algebra*.
 - The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products and Their Relations over the Biquaternion Algebra* and *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 - The twelve structures and their three-letter names are *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-- The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is *Unital Algebras*, and the corpus-wide readings of the words are *Conventions in Mathematics*.
+- The general algebra vocabulary — the unit, the inverse, the Peirce decomposition — is *Unital Algebras*, and the corpus-wide readings of the words are *Algebra and Element Conventions*.
 
 This article defines. It states the relativity of the definitions as the principle it is, and it proves the one structural fact the definitions turn on, the transport of §*Transport Along an Isomorphism*; every specialization is cited to the article that owns it.
 

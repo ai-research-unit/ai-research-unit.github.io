@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The $4\times4$ model reads each biquaternion $\tilde Q$ as one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$, whose image is the four-dimensional copy $M_4(\mathbb{C})_{\mathbb{B},L}$. This article is one of a series; it records the construction and one choice of gamma set, and it takes the frame of the corpus from *Conventions of the Matrix Models*, §*The Matrix Models*. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.
+The $4\times4$ model reads each biquaternion $\tilde Q$ as one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$, whose image is the four-dimensional copy $M_4(\mathbb{C})_{\mathbb{B},L}$. This article is one of a series; it records the construction and one choice of gamma set, and it takes the frame of the corpus from *Matrix Representations Conventions*, §*The Matrix Models*. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.
 
 The operator $\tilde Q_3\mapsto\tilde Q_1\,\tilde Q_3\,\tilde Q_2$ is not a left multiplication when $\tilde Q_2$ is not a scalar. It needs the right multiplication as well. The pair $(\tilde Q_1,\tilde Q_2)$ defines the **two-sided operator**
 
@@ -22,7 +22,7 @@ of complex dimension sixteen; its **matrix representation** in the canonical fra
 
 **The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $\tilde Q_3\mapsto e_\mu\tilde Q_3 e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and in the canonical frame it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; that display is the Pauli form recorded in the remark of §*The Four Right Matrices* and evaluated in the displays marked *Pauli form* below. The construction used here is the ordinary product $T_{\mu\nu}=L_\mu R_\nu$ of two $4\times4$ matrices, with $R_\nu$ read from $L_\nu$ by transposition and one exchange. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write $L_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)$ for left multiplication by $\tilde Q$, and $R_{\tilde Q}$ for right multiplication, $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$; write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$ for the four basis matrices. A matrix written without a superscript is in the canonical frame; in the coefficient basis the same operators are $L_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}L_{\tilde Q}C_{\Pi}^{-1}$ and $R_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}R_{\tilde Q}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame, where
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write $L_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)$ for left multiplication by $\tilde Q$, and $R_{\tilde Q}$ for right multiplication, $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$; write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$ for the four basis matrices. A matrix written without a superscript is in the canonical frame; in the coefficient basis the same operators are $L_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}L_{\tilde Q}C_{\Pi}^{-1}$ and $R_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}R_{\tilde Q}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Matrices are written in the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame, where
 
 $$
 L_{\tilde Q}=\mathrm I_2\otimes\mathsf M_2(\tilde Q),
@@ -438,7 +438,7 @@ $$
 \gamma_k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix},\qquad
 \gamma_5=\operatorname{diag}(-1,-1,1,1).
 $$
-These are entry for entry the matrices of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, and no change of spinor basis is needed. In the coefficient basis the same matrices are $C_{\Pi}\,\gamma_\mu\,C_{\Pi}^{-1}$. The two blocks are the two Weyl spinors; $\gamma_5$ is their sign; the four generators exchange them.
+These are entry for entry the matrices of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, and no change of spinor basis is needed. In the coefficient basis the same matrices are $C_{\Pi}\,\gamma_\mu\,C_{\Pi}^{-1}$. The two blocks are the two Weyl spinors; $\gamma_5$ is their sign; the four generators exchange them.
 
 **The projectors are products, not cells.** The chirality projectors are
 $$

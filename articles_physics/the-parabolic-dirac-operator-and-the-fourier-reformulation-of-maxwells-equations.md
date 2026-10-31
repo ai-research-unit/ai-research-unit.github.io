@@ -20,7 +20,7 @@ $$
 D = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z = \sum_{\mu=1}^{3} \vec e_\mu\,\partial/\partial Q_\mu,
 $$
 
-with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Conventions in the Biquaternion Universe*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
+with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Algebra and Element Conventions*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
 
 $$
 \boxed{\;-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')\;},

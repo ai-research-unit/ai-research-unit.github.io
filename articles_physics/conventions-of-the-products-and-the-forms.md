@@ -1,8 +1,8 @@
-# __Conventions of the Products and the Forms__
+# __Product and Form Conventions__
 
 ## Introduction
 
-These are the conventions of the twelve products and of the four forms. They assume the algebra, its basis, its element glyphs and its conjugations as fixed in *Conventions in the Biquaternion Universe*; what is fixed here is the naming and the reading of everything built by multiplying two elements.
+These are the conventions of the twelve products and of the four forms. They assume the algebra, its basis, its element glyphs and its conjugations as fixed in *Algebra and Element Conventions*; what is fixed here is the naming and the reading of everything built by multiplying two elements.
 
 The order is the order of the definitions. The four general products come first, one for each choice of the two slots, the first factor read as it stands or through the natural sign and the second as it stands or through the star. Each splits into a symmetric and an antisymmetric part, and the twelve names are these four and their eight parts, written as three-letter codes and read letter by letter. The four maps follow — the identity and the three conjugations — with the four forms they produce, the generic Form and the generic Norm, the sign rule that ties the two lists, one table for each lower layer, and the Hermitian form with its unit, its normalisation and its weight.
 
@@ -140,7 +140,7 @@ The algebra carries the identity and three conjugations, four maps in all, and o
 
 The fourth column is what the two questions separate. The bar acts on the scalars and on nothing else, so it is an order-two automorphism, $\mathbb{C}$-antilinear and **not** an anti-automorphism. The quaternion conjugation and the Hermitian conjugation are the two genuine **involutions of the ring**, $(\tilde{Q}_1\tilde{Q}_2)^{\natural} = \tilde{Q}_2^{\natural}\tilde{Q}_1^{\natural}$ and $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2^{*}\tilde{Q}_1^{*}$, the quaternion conjugation being the one that touches only the quaternion factor. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$, so it is an involution of the underlying real vector space and nothing more. It is a derived sign and not a fifth map: it is minus the star, its fixed space is the material sector alone, and a text that counts it as a fifth map will misread the lattice. The four maps, the sign they derive, their fixed and anti-fixed spaces, and the lattice they form are *Comparison of the Remarkable Subspaces*.
 
-**The generic form.** The series writes a **generic form** $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, the form of the statement at hand, of which the four below are the instances; the matching generic norm is stated with the norms in *Conventions of the Norms and the Pairings*, §*The Four Algebraic Norms and the $*$-Unitary Convention*.
+**The generic form.** The series writes a **generic form** $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, the form of the statement at hand, of which the four below are the instances; the matching generic norm is stated with the norms in *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the $*$-Unitary Convention*.
 
 **The four forms, written out.** Each conjugation applied to the first argument and each to the second gives one form. The four are written with the single bracket $\langle\cdot,\cdot\rangle$, whose subscript records the pair of conjugations — nothing when the identity sits in both, ${}^{\natural}$ when the quaternion conjugation sits in the first, ${}^{*}$ when the Hermitian conjugation sits in the second, and $\natural*$ when both sit.
 
@@ -229,7 +229,7 @@ The coefficients are real and the only non-trivial involution is the natural sig
 
 The collapse of the names is the same. The quaternionic norm is the split-quaternion norm $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+q_x^2-q_y^2-q_z^2$: multiplicative, indefinite, and vanishing exactly on the zero divisors, so it decides invertibility. The plain form is $\mathrm{Sc}(\tilde q^2)$ and is indefinite as well, so neither form is definite. No positive-definite form can be multiplicative here: $1+\vec e_y$ and $1-\vec e_y$ are non-zero and their product is $1-\vec e_y^2=0$, so a multiplicative form vanishes on one of them. The topology is therefore the Euclidean form of the coefficient space, $q_t^2+q_x^2+q_y^2+q_z^2$, which is positive definite but not multiplicative.
 
-**The biquaternion layer.** The four brackets and their norms on $\mathbb{B}$ are the table of *Conventions of the Norms and the Pairings*, §*The Four Algebraic Norms and the $*$-Unitary Convention*.
+**The biquaternion layer.** The four brackets and their norms on $\mathbb{B}$ are the table of *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the $*$-Unitary Convention*.
 
 **The Hermitian form, its norm, the unit, the normalisation and the weight.** The order is fixed once for the series. The form is
 

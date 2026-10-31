@@ -9,7 +9,7 @@ The subject is elementary, and its place in this blog is that of the base case. 
 
 The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the rule $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$ and in $\mathbb{C}$. The two factors are then identified with two rows of that rule, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article.
 
-The conventions and the symbols are those of *Real Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
+The conventions and the symbols are those of *Real Algebra* and of the corpus (*Algebra and Element Conventions*); the symbols this article uses are collected in §*Summary of Notation*.
 
 Every numerical value displayed below is exact.
 
@@ -25,7 +25,7 @@ $$
 
 in which $r$ is the **modulus** of $q$ and $\sigma$ is its **sign factor**.
 
-The second factor is a **unit element**, an element of norm one for the norm in view (*Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*); the norm in view is $\langle q\rangle=q^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.
+The second factor is a **unit element**, an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*); the norm in view is $\langle q\rangle=q^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.
 
 The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The sign factor is constrained by the equation $\sigma^2 = 1$, which is the two-point set $\{\pm1\}$, so it carries no continuous parameter. The counts add to the real dimension of the algebra, $1 + 0 = 1$, and this additivity is the pattern the whole family follows.
 

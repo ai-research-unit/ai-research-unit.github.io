@@ -28,7 +28,7 @@ The chart is rational: $u(s)$ and its inverse are ratios of polynomials, and no 
 
 The plan is as follows. The modulus–unit form is recalled (§*The Modulus–Unit Form Recalled*), the chart and its inverse are defined (§*The Chart*, §*The Inverse*), and the chart is proved a bijection (§*The Bijection*). The decomposition is then stated and proved (§*The Rational-Chart Decomposition*), the group law in the coordinate is computed (§*The Group Law*), the covering of the circle by two charts and the cost of rationality are described (§*Covering the Circle and the Price of Locality*), and the matrix picture (§*The Matrix Picture*) and worked examples (§*Worked Examples*) close the article.
 
-The symbols are those of *Complex Algebra* and *Complex Norm and Invertibility*, and the conventions are those of *Conventions in Mathematics*. The notation is collected in §*Summary of Notation*.
+The symbols are those of *Complex Algebra* and *Complex Norm and Invertibility*, and the conventions are those of *Algebra and Element Conventions*. The notation is collected in §*Summary of Notation*.
 
 Every numerical value displayed below was recomputed in double precision.
 

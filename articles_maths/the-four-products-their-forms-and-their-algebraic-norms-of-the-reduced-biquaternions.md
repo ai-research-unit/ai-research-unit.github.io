@@ -90,7 +90,7 @@ $$
 \boxed{\; \langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2},\qquad \langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2},\qquad \langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2} \;}.
 $$
 
-This is the definition of *Conventions in Mathematics*, §*The Conjugations*, and of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* of the biquaternion category. The two arities of each letter are one object and are never given two letters.
+This is the definition of *Algebra and Element Conventions*, §*The Conjugations*, and of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* of the biquaternion category. The two arities of each letter are one object and are never given two letters.
 
 **Theorem (the four norms, their values and their signatures).** The four norms have the following fields of values, real signatures and definiteness:
 

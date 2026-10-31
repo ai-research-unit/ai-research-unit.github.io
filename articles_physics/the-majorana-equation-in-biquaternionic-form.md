@@ -35,7 +35,7 @@ The Majorana equation is written in three ways, and the reason the three matter 
 
 ### The Charge-Conjugate Form
 
-Here and below $\mathbb{D}$ is the pair operator of *Conventions of the Operators and the Calculus*, acting on the module in the chiral basis, with $\mathbb{D}^2=\Box$. The equation is
+Here and below $\mathbb{D}$ is the pair operator of *Operator and Calculus Conventions*, acting on the module in the chiral basis, with $\mathbb{D}^2=\Box$. The equation is
 
 $$
 \boxed{\;\mathbb{D}\,\psi \;=\; m\,\psi^{c},

@@ -1,4 +1,4 @@
-# __Conventions of the Frames__
+# __Frame Conventions__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This article fixes the general notion first, then the two coordinate frames. The
 
 Each frame is fixed with its metric. The metric is part of the frame, not a separate choice, and the plain weight belongs to the product and is the same in both frames.
 
-The article is read after *Conventions in Mathematics* and before *Conventions of the Matrix Models*. It uses no left or right multiplication, no cell and no explicit array.
+The article is read after *Algebra and Element Conventions* and before *Matrix Representations Conventions*. It uses no left or right multiplication, no cell and no explicit array.
 
 **The order is the order of dependence, and it is also the order of risk.** The coordinate frame decides the signs of every derivative and of every square. A mistake in it propagates into every display of the article that follows.
 
@@ -42,7 +42,7 @@ Every coefficient is $+1$, and the value is complex in general. The tuple is a c
 $$
 (\gamma_\mu[\mathbb{B}])^2=+I_4,\qquad \{\gamma_\mu[\mathbb{B}],\gamma_\nu[\mathbb{B}]\}=2\delta_{\mu\nu}I_4 .
 $$
-The four squares have one sign, and no generator is singled out by the sign of its square. The generators are the matrices of *Conventions of the Matrix Models*.
+The four squares have one sign, and no generator is singled out by the sign of its square. The generators are the matrices of *Matrix Representations Conventions*.
 
 **The material case.** On $\mathbb{M}_-$ the coefficients are
 $$

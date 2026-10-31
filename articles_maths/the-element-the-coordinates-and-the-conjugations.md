@@ -162,7 +162,7 @@ The real reading sees more subspaces than the complex one, since every complex s
 | $J(\tilde Q)=i\tilde Q$ | the complex structure |
 | $\natural,\ \bar{\cdot},\ {}^{*},\ \flat$ | natural, coefficient, Hermitian and anti-Hermitian conjugations |
 
-The marks and their case rules are those of *Conventions in Mathematics*.
+The marks and their case rules are those of *Algebra and Element Conventions*.
 
 ## Further Reading
 

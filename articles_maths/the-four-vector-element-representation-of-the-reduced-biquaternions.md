@@ -25,7 +25,7 @@ $$
 
 **Each complex coordinate splits into a real part and an imaginary part, and the prime marks the second.**
 
-The real part of $Q_{\blacktriangle}$ is $q_{\blacktriangle}$ and its imaginary part is $q'_{\blacktriangle}$; the real part of $Q_{\blacktriangledown}$ is $q_{\blacktriangledown}$ and its imaginary part is $q'_{\blacktriangledown}$. The two parts share the letter of the coordinate, the imaginary part carrying the prime, by *Conventions in Mathematics*, §*The Elements and their Coefficients*. The reader must not confuse the prime of a coefficient with a derivative: no function is being differentiated in this article. The element is written either as $\breve Q=q_{\blacktriangle}+iq'_{\blacktriangle}+q_{\blacktriangledown}j+iq'_{\blacktriangledown}j$ or as $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, and the choice of alphabet is a choice of the representation, not of the element.
+The real part of $Q_{\blacktriangle}$ is $q_{\blacktriangle}$ and its imaginary part is $q'_{\blacktriangle}$; the real part of $Q_{\blacktriangledown}$ is $q_{\blacktriangledown}$ and its imaginary part is $q'_{\blacktriangledown}$. The two parts share the letter of the coordinate, the imaginary part carrying the prime, by *Algebra and Element Conventions*, §*The Elements and their Coefficients*. The reader must not confuse the prime of a coefficient with a derivative: no function is being differentiated in this article. The element is written either as $\breve Q=q_{\blacktriangle}+iq'_{\blacktriangle}+q_{\blacktriangledown}j+iq'_{\blacktriangledown}j$ or as $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, and the choice of alphabet is a choice of the representation, not of the element.
 
 ## The Column and the Row
 

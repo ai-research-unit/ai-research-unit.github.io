@@ -10,7 +10,7 @@ The scope is relativistic. The non-relativistic action belongs to the non-relati
 
 - Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $ict'$ convention.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved current and the stress–energy tensor read off the Lagrangians fixed here.
-- Companion article *Conventions in the Biquaternion Universe*, for the biquaternion norm, the four conjugations, the mass term, and the Lagrangian sign convention.
+- Companion article *Algebra and Element Conventions*, for the biquaternion norm, the four conjugations, the mass term, and the Lagrangian sign convention.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order field equation that the scalar Lagrangian varies to.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the field-strength biquaternion and the electromagnetic action.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order action and the chirality-off-diagonal mass term.

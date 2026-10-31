@@ -58,7 +58,7 @@ $$
 N=\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
 $$
 
-The notation is the one of *Conventions in Mathematics*.
+The notation is the one of *Algebra and Element Conventions*.
 
 ### The Recipe
 

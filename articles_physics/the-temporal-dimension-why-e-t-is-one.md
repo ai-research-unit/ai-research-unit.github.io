@@ -58,7 +58,7 @@ $$
 \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\} = \{Q_t\,e_t : Q_t \in \mathbb{C}\},
 $$
 
-which *Conventions in the Biquaternion Universe* calls the complex time sector and *The Biquaternion Space, the Group of Involutions and the Six Subspaces* lists among the remarkable subspaces. The centre is the set of elements that commute with the whole algebra, its real direction is $e_t$, and its complex coordinate is the one the next sections read. The temporal dimension, in this framework, is not one of four peers; it is the direction along which the element is a **scalar**, the direction every rotation fixes.
+which *Algebra and Element Conventions* calls the complex time sector and *The Biquaternion Space, the Group of Involutions and the Six Subspaces* lists among the remarkable subspaces. The centre is the set of elements that commute with the whole algebra, its real direction is $e_t$, and its complex coordinate is the one the next sections read. The temporal dimension, in this framework, is not one of four peers; it is the direction along which the element is a **scalar**, the direction every rotation fixes.
 
 ## What $e_t = 1$ Says About Time
 
@@ -94,7 +94,7 @@ $$
 \tilde Q_- = ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_- ,
 $$
 
-with $t', x, y, z$ real. This is the $ict'$ dictionary of *Conventions in the Biquaternion Universe* and of *Why Complexify Spacetime?*: the temporal coefficient is $ict'$, purely imaginary, and the three spatial coefficients are real.
+with $t', x, y, z$ real. This is the $ict'$ dictionary of *Algebra and Element Conventions* and of *Why Complexify Spacetime?*: the temporal coefficient is $ict'$, purely imaginary, and the three spatial coefficients are real.
 
 Two features of the placement carry the physical reading.
 
@@ -128,7 +128,7 @@ $$
 Q_t = ct + ict' ,
 $$
 
-whose real part is the informational time and whose imaginary part is the material time, in the dictionary of *Conventions in the Biquaternion Universe* that reads the two parameters $q_t$ and $q'_t$ of the complex coefficient $Q_t = q_t + iq'_t$ as $q_t = ct$ and $q'_t = ct'$. The reading of the plane as a clock — the exchange by the central imaginary as a quarter turn, the two times as the two projections of one hand — is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
+whose real part is the informational time and whose imaginary part is the material time, in the dictionary of *Algebra and Element Conventions* that reads the two parameters $q_t$ and $q'_t$ of the complex coefficient $Q_t = q_t + iq'_t$ as $q_t = ct$ and $q'_t = ct'$. The reading of the plane as a clock — the exchange by the central imaginary as a quarter turn, the two times as the two projections of one hand — is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
 
 The informational sector is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$, and its general element is
 

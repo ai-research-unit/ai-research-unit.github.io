@@ -18,7 +18,7 @@ This article computes the two traces, proves the identity
 $$
 \operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,\gamma_5},
 $$
-identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The gamma set and the $\mathsf{M}_4$ map are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
+identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The gamma set and the $\mathsf{M}_4$ map are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
 ## The Real-Linear Embedding
 

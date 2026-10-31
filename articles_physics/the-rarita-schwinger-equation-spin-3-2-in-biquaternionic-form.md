@@ -10,7 +10,7 @@ Two features of the standard theory are recorded and read in the algebra. First,
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The Clifford generators are used as a translation tool; they are a frame in the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not elements of $\mathbb{B}$, and the frame is a coordinate choice. The informational basis is $\hat e^0=e_t$, $\hat e^k=i\vec e_k$, distinct from the coordinate basis $e_\mu$. With the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$, one has $(\gamma_0)^2=+I_4$, $(\gamma_k)^2=-I_4$, and $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$. The Dirac representation $\gamma_0=\mathrm{diag}(I_2,-I_2)$, $\gamma_k=\big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$ is used for the explicit rest-frame computation. The chirality operator is $\gamma_5 = i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$, with $i_{\mathrm{Cl}}$ the scalar imaginary of the complexified Clifford algebra rather than the biquaternion imaginary, and the total antisymmetrizations are $\gamma_{\mu\nu}=\tfrac12[\gamma_\mu,\gamma_\nu]$ and $\gamma_{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu\gamma_\nu\gamma_\rho$.
 
-**Coordinates and frames.** The gamma displays are written in the $\mathbb{M}_-$ frame, with $\partial_\mu\equiv\partial/\partial x^\mu$ the derivative in the physical coordinates $x^\mu=(t',x,y,z)$ and the generators above satisfying $\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}I_4$, $\eta=\operatorname{diag}(1,-1,-1,-1)$. The algebra's coordinate is $Q_t=ict'$, and $\partial_{t'}=i\partial_{Q_t}$; the gradient is $\tilde\nabla=e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$. A gamma display with $\partial/\partial Q_\mu$ in place of $\partial_{x^\mu}$ is not a frame: the mixed contraction $i\gamma_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame and is not used (*Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*).
+**Coordinates and frames.** The gamma displays are written in the $\mathbb{M}_-$ frame, with $\partial_\mu\equiv\partial/\partial x^\mu$ the derivative in the physical coordinates $x^\mu=(t',x,y,z)$ and the generators above satisfying $\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}I_4$, $\eta=\operatorname{diag}(1,-1,-1,-1)$. The algebra's coordinate is $Q_t=ict'$, and $\partial_{t'}=i\partial_{Q_t}$; the gradient is $\tilde\nabla=e_t\partial_{Q_t}+\vec e_k\partial_k=-ie_t\partial_{t'}+\vec e_k\partial_k$. A gamma display with $\partial/\partial Q_\mu$ in place of $\partial_{x^\mu}$ is not a frame: the mixed contraction $i\gamma_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame and is not used (*Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*).
 
 ## The Standard Rarita–Schwinger Field
 
@@ -22,7 +22,7 @@ $$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = 0,
 $$
 
-equivalently $\gamma_{\mu\nu\rho}\partial/\partial x^\rho\,\psi_\nu=0$, the constant between the two standard writings being the one carried by the $\epsilon$–$\gamma_5$ duality of *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices* and being immaterial when $m=0$. In the massive case the equation is
+equivalently $\gamma_{\mu\nu\rho}\partial/\partial x^\rho\,\psi_\nu=0$, the constant between the two standard writings being the one carried by the $\epsilon$–$\gamma_5$ duality of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices* and being immaterial when $m=0$. In the massive case the equation is
 
 $$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma + m\,\gamma_{\mu\nu}\psi_\nu = 0,
@@ -34,7 +34,7 @@ $$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = -i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma,
 $$
 
-which *Conventions of the Matrix Models* fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma_{\mu}\partial_{x^\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
+which *Matrix Representations Conventions* fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma_{\mu}\partial_{x^\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
 
 The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu$,
 
@@ -136,7 +136,7 @@ that is, a family of four elements of the algebra, one for each spacetime index.
 
 ### The components of the equation
 
-The standard equation is transcribed component by component, using the correspondence between the Clifford generators and the algebra's units. The correspondence is the frame identity of *Conventions of the Matrix Models*, in which the four generators are written in terms of the fixed odd frame $\gamma_0$ and four representatives carrying the directions,
+The standard equation is transcribed component by component, using the correspondence between the Clifford generators and the algebra's units. The correspondence is the frame identity of *Matrix Representations Conventions*, in which the four generators are written in terms of the fixed odd frame $\gamma_0$ and four representatives carrying the directions,
 
 $$
 \gamma_\mu = \gamma_0\,\iota_{\mathrm{Cl}}(\hat e^\mu), \qquad \hat e^0 = e_t, \qquad \hat e^k = i \vec e_k ,
@@ -148,7 +148,7 @@ $$
 \gamma_\mu\gamma_\nu = s_\mu\,\iota_{\mathrm{Cl}}(\hat e^\mu\hat e^\nu), \qquad s_0 = +1, \quad s_k = -1 ,
 $$
 
-a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma_{0k} = \iota_{\mathrm{Cl}}(i\vec e_k)$ for the timelike pairs and $\gamma_{jk} = \iota_{\mathrm{Cl}}(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma_{\mu\nu\rho} = \gamma_0\,\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Conventions of the Matrix Models* records. Chirality is the one place where the correspondence needs a word. The comparison map assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\iota_{\mathrm{Cl}}(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
+a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma_{0k} = \iota_{\mathrm{Cl}}(i\vec e_k)$ for the timelike pairs and $\gamma_{jk} = \iota_{\mathrm{Cl}}(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the statement of the comparison map that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma_{\mu\nu\rho} = \gamma_0\,\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as *Matrix Representations Conventions* records. Chirality is the one place where the correspondence needs a word. The comparison map assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\iota_{\mathrm{Cl}}(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
 
 $$
 \gamma_5 = i_{\mathrm{Cl}}\,\omega = -\Phi_{\mathbb{C}}\!\left(i_{\mathrm{Cl}}\,i\right),
@@ -188,7 +188,7 @@ m\,\gamma_{\mu\nu}\tilde\Psi_\nu=m\,\iota_{\mathrm{Cl}}\big(\Gamma^{\mu\nu}\big)
 \Gamma^{0k}=i\vec e_k,\quad \Gamma^{k0}=-i\vec e_k,\quad
 \Gamma^{jk}=\pm\vec e_l ,
 $$
-with $\Gamma^{00}=0$ and the sign of $\Gamma^{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$, as in *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*.
+with $\Gamma^{00}=0$ and the sign of $\Gamma^{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$, as in *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*.
 No gamma matrix appears.
 
 **The compact operator is a cell.** The antisymmetrized kinetic operator $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial_\rho$ is a cell of $\mathbb{B}^{\mathrm e}$, not an element of $\mathbb{B}$: $\gamma_5\gamma_\nu$ is odd, and the odd part of the cell algebra lies outside the biquaternion algebra. It is a compact rewriting of the pair, not the primary object. The frame enters only here, in the choice of the odd cell; the dynamics is the pair and the two constraints above. In the rest-frame computation below the contraction is carried out with the Dirac matrices directly, as a check in one frame.
@@ -336,7 +336,7 @@ The structural point that this article makes for the subcategory is that the fie
 The conventions are those of three companion articles:
 
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternion chiral pair and its gamma transcription.
-- Companion article *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, for the translation of the Clifford generators and their antisymmetrized products into the algebra's units.
+- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, for the translation of the Clifford generators and their antisymmetrized products into the algebra's units.
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part of the algebra and the four-vector representation from which the vector-spinor is built.
 
 ## Summary

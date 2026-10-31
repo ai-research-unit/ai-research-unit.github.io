@@ -27,7 +27,7 @@ The question has two answers, and they are different. A **single square** is one
 
 **The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*). The gradient takes values in that algebra, and the d'Alembertian is its scalar norm; the target representation is $M_2(\mathbb{C})$, not $M_4(\mathbb{C})$. The four-dimensional space of this article is the regular module $\mathbb{B}$, on which the algebra acts by left multiplication. The $M_4(\mathbb{C})$ that appears below is the algebra of **operators** on that module, the enveloping algebra $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, not a second representation of $\mathbb{B}$. The distinction is the reason the root is two-sided: the d'Alembertian is a scalar operator read in the algebra, while the root lives in the operator algebra of the regular module.
 
-The article is mathematics. The d'Alembertian is the norm of the gradient, and no physical interpretation is used. The conventions are those of *Conventions in Mathematics* and *Conventions of the Operators and the Differential Calculus*; the two-sided operators are *Two-Sided Operators on the Biquaternion Algebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the minimal left ideals are *The Minimal Left Ideals* and *Spinors as Peirce Coordinates in the Biquaternion Algebra*.
+The article is mathematics. The d'Alembertian is the norm of the gradient, and no physical interpretation is used. The conventions are those of *Algebra and Element Conventions* and *Operator and Calculus Conventions*; the two-sided operators are *Two-Sided Operators on the Biquaternion Algebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the minimal left ideals are *The Minimal Left Ideals* and *Spinors as Peirce Coordinates in the Biquaternion Algebra*.
 
 ## The D'Alembertian and Its Symbol
 
@@ -64,7 +64,7 @@ $$
 
 with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$. The operator is scalar: it multiplies by $e_t$ and acts coefficient by coefficient.
 
-**The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different Clifford system. This article treats $\Box$ only. The two operators are distinguished in *Conventions of the Operators and the Differential Calculus*, and the distinction is fixed by the form, not by a choice of sign.
+**The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different Clifford system. This article treats $\Box$ only. The two operators are distinguished in *Operator and Calculus Conventions*, and the distinction is fixed by the form, not by a choice of sign.
 
 ### The Symbol
 

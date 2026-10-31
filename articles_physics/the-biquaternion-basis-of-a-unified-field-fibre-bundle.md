@@ -14,7 +14,7 @@ $$
 \mathsf{M}_2(e_t) = I_2, \qquad \mathsf{M}_2(\vec e_k) = -i\sigma_k, \qquad \mathsf{M}_2(i) = iI_2 ,
 $$
 
-and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$, a complex number equal to the determinant of $\mathsf{M}_2(\tilde Q)$. The Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ and $\mathbb{M}_-$; the real form of the source's algebra is the corpus's $\mathrm{Cl}_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H})$, whose complexification is $M_4(\mathbb{C})$. The conventions and the subspaces are the subjects of *Conventions in the Biquaternion Universe*, *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and the matrix dictionary is *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*.
+and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$, a complex number equal to the determinant of $\mathsf{M}_2(\tilde Q)$. The Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ and $\mathbb{M}_-$; the real form of the source's algebra is the corpus's $\mathrm{Cl}_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H})$, whose complexification is $M_4(\mathbb{C})$. The conventions and the subspaces are the subjects of *Algebra and Element Conventions*, *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and the matrix dictionary is *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*.
 
 ## The Source, Its Bundle, and Its Structural Group
 

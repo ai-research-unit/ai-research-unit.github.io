@@ -20,7 +20,7 @@ The article is organised as follows. The results it borrows are stated with thei
 
 ## The Results It Uses
 
-**The conventions.** The notation, the Clifford dictionary and the sector splitting are those of *Conventions in the Biquaternion Universe*; the algebra and its two sectors are those of *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*.
+**The conventions.** The notation, the Clifford dictionary and the sector splitting are those of *Algebra and Element Conventions*; the algebra and its two sectors are those of *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*.
 
 **The algebra.** The one-mode canonical anticommutation relations in $\mathbb{B}$, the pair $\vec\Upsilon_x,\vec\Upsilon_y$, the rungs $\tilde\Pi_\pm$, the inner parity $(-1)^F=i\vec e_z$, the capacity count and the bosonic obstruction are those of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the roots of $+1$, the idempotents and the halving map are those of *Idempotents*; the vacuum idempotent, its zero-divisor property and the Peirce corner at the vacuum are those of *The Biquaternion Vacuum as a Minimal Idempotent*; the Peirce decomposition, the matrix units and the Peirce coordinates are those of *The Peirce Decomposition of the Biquaternion Algebra* and *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 

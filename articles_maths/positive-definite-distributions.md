@@ -50,7 +50,7 @@ must be distinguished from the **value-conjugation** $\bar T(\varphi)=\overline{
 induced by conjugation of the test function alone. Positive definiteness uses $T^{*}$, the involution of the
 convolution algebra, and not $\bar T$; the two agree on the tempered distributions whose reflection is
 itself, and the distinction is recorded so that the star is read as the algebra involution. The mark is
-consistent with *Conventions in Mathematics*: dagger for the adjoint of an operator, star for the involution
+consistent with *Algebra and Element Conventions*: dagger for the adjoint of an operator, star for the involution
 of an algebra element, and the adjoint involution here is the algebra star.
 
 ### Positive Definiteness

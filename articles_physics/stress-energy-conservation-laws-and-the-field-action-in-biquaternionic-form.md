@@ -330,7 +330,7 @@ for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the com
 
 The conventions of the construction are those of the following companion articles:
 
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces, the metric levels and the d'Alembertian.
+- Companion article *Algebra and Element Conventions*, for the algebra and basis, the conjugations, the real subspaces, the metric levels and the d'Alembertian.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation and its mass parameter.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the field strength, the four-current and the biquaternion Maxwell equation.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the biquaternion norm of the field strength and the Lorentz invariants.

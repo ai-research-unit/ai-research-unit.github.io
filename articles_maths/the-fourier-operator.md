@@ -71,7 +71,7 @@ follows.
 
 The word **unitary** for $\mathcal F$ is used in the sense of *Banach and Hilbert Spaces*, later in this
 Part: a bounded operator with $\mathcal F^\dagger\mathcal F=\mathcal F\mathcal F^\dagger=\mathrm{id}$. The
-dagger is the adjoint, in the sense of *Conventions in Mathematics*; the star, by contrast, names the
+dagger is the adjoint, in the sense of *Algebra and Element Conventions*; the star, by contrast, names the
 involution of the elements, $\bar f$. The unitarity of $\mathcal F$ is the statement that
 $\overline{\mathcal F}=\mathcal F^{-1}$.
 

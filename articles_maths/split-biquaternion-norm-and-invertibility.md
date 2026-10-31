@@ -23,7 +23,7 @@ $$
 
 with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quaternions.
 
-**The four forms follow the corpus** (*Conventions in Mathematics*): each is
+**The four forms follow the corpus** (*Algebra and Element Conventions*): each is
 
 $$
 \langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\mathrm{Sc}\bigl(X_1^{\sigma_1}X_2^{\sigma_2}\bigr),

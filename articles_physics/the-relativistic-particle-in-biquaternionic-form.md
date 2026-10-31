@@ -12,7 +12,7 @@ $$
 \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2d{t'}^2 +dx^2+dy^2+dz^2 .
 $$
 
-The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article *Conventions in the Biquaternion Universe*, and no metric is introduced here beyond them.
+The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article *Algebra and Element Conventions*, and no metric is introduced here beyond them.
 
 **The three causal types are the three signs of the biquaternion norm.** A displacement is timelike, null or spacelike according to whether $\langle\cdot\rangle_{\natural}$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
@@ -302,7 +302,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the sector structure.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
+- Companion article *Algebra and Element Conventions*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the four-vector.
 - Companion article *The Lorentz Force in Biquaternion Form*, for the equation of motion in an external field.
 - Companion article *The Relativistic Particle in an External Field, in Biquaternionic Form*, for the coupled particle–field system.

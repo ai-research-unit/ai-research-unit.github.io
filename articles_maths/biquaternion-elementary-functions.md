@@ -234,7 +234,7 @@ This reduces to $\exp(\tilde{Q}) \vec e_k$ only when $\vec e_k$ commutes with $\
 
 ### The Hermitian Norm and the $*$-Unitary Flow
 
-The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of *Conventions of the Norms and the Unitary Convention*, §*The Norm Convention*, is not: it reads the vector part as well, and it separates the three data of the element.
+The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of *Norm and Unitary Conventions*, §*The Norm Convention*, is not: it reads the vector part as well, and it separates the three data of the element.
 
 **Proposition (the Hermitian norm of the flow).** Let $B\neq0$, let $\vec U=\vec Q/B$, and let $\theta\in\mathbb{R}$. Then
 
@@ -336,7 +336,7 @@ $$
 \vec Q_{\log}=Q_{\log,x}\vec e_x+Q_{\log,y}\vec e_y+Q_{\log,z}\vec e_z.
 $$
 
-By the coefficient rule of *Conventions in Mathematics*, §*The Elements and their Coefficients*, the four coordinates are complex, $Q_{\log,t}=q_{\log,t}+iq'_{\log,t}$ and likewise $Q_{\log,x},Q_{\log,y},Q_{\log,z}$, and the subscript $\log$ is carried into each coordinate; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$, as its coefficients keep theirs. The **scalar component** $Q_{\log,t}$ is the coefficient of $e_t$; the **vector component** $\vec Q_{\log}$ is a pure biquaternion, not a scalar, and it carries the axis and the complex angle of the logarithm.
+By the coefficient rule of *Algebra and Element Conventions*, §*The Elements and their Coefficients*, the four coordinates are complex, $Q_{\log,t}=q_{\log,t}+iq'_{\log,t}$ and likewise $Q_{\log,x},Q_{\log,y},Q_{\log,z}$, and the subscript $\log$ is carried into each coordinate; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$, as its coefficients keep theirs. The **scalar component** $Q_{\log,t}$ is the coefficient of $e_t$; the **vector component** $\vec Q_{\log}$ is a pure biquaternion, not a scalar, and it carries the axis and the complex angle of the logarithm.
 
 The exponential is never $\natural$-degenerate, since $\langle\exp\tilde Q_1\rangle_{\natural}=\exp(2Q_{1t})\neq0$ for every $\tilde Q_1$ (§*Properties* of §*The Exponential*). Hence a logarithm can exist only on the $\natural$-regular set
 

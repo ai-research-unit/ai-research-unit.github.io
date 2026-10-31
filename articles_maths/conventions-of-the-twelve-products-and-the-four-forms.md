@@ -1,14 +1,14 @@
-# __Conventions of the Twelve Products and the Four Forms__
+# __Product and Form Conventions__
 
 ## Introduction
 
-The algebra carries twelve products and four forms. This article fixes their names, their codes and the letters of the forms, and it stops at the form: the norm is the form read at its two equal arguments and is the subject of *Conventions of the Norms and the Unitary Convention*.
+The algebra carries twelve products and four forms. This article fixes their names, their codes and the letters of the forms, and it stops at the form: the norm is the form read at its two equal arguments and is the subject of *Norm and Unitary Conventions*.
 
 The products come first because they are algebraic and need no form. Four general products answer the four choices of conjugation on the two slots, and each splits into a symmetric and an antisymmetric part. The three-letter code names the operation by its first letter and the two slots by the second and the third, and the same code is read on the reduced biquaternion space, where four of the twelve name no new operation.
 
 The form comes second. A form is the scalar part of a product, with a conjugation named on each slot; the corpus writes a generic form $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, and the four brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name the four. The letters $P$, $N$, $H$ and $K$ name each form with two arguments and the corresponding norm with one, and the last section fixes how the names are read in a layer.
 
-The article assumes the base of *Conventions in Mathematics*; the norm is read in the companion article, and the calculus that applies the forms to the gradient in *Conventions of the Operators and the Differential Calculus*.
+The article assumes the base of *Algebra and Element Conventions*; the norm is read in the companion article, and the calculus that applies the forms to the gradient in *Operator and Calculus Conventions*.
 
 ## The Twelve Products and Their Names
 
@@ -126,7 +126,7 @@ The products themselves — their coordinates, their laws, their units and their
 
 ## The Form Convention
 
-**The order is product, then form, then norm.** A form is the scalar part of a product, with a conjugation named on each slot; the norm is that form at its two equal arguments, and it is read in *Conventions of the Norms and the Unitary Convention*. The product comes first and needs no form: the four general products are algebraic, and only their scalar parts are forms.
+**The order is product, then form, then norm.** A form is the scalar part of a product, with a conjugation named on each slot; the norm is that form at its two equal arguments, and it is read in *Norm and Unitary Conventions*. The product comes first and needs no form: the four general products are algebraic, and only their scalar parts are forms.
 
 The corpus writes a **generic form** and a **generic norm**, the norm being the form read at its two equal arguments:
 
@@ -160,7 +160,7 @@ $$
 
 **One letter, two arities.** The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. **$P$ is the scalar part of the plain product**, with no conjugation on either slot: it is not the plain product, and it is not a reading of $N$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*.
 
-**The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in *Conventions of the Norms and the Unitary Convention*, §*The Six Layer Tables*.
+**The bracket carries the mark that is not the identity in the layer**, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in *Norm and Unitary Conventions*, §*The Six Layer Tables*.
 
 The distinction is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
@@ -183,7 +183,7 @@ A form is the scalar part of a product, with a conjugation named on each slot, a
 
 The four letters are $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, each naming the form with two arguments and the norm with one. The bracket carries the mark that is not the identity in the layer, and the four collapse two-and-two wherever a mark degenerates. In the reduced biquaternions the quaternionic name becomes the tessarine and the Krein name the tessarine-Hermitian, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$.
 
-The distinction between the form and the norm is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The norm reading of the four letters, the qualified regular and degenerate, and the layer-by-layer tables are the subject of *Conventions of the Norms and the Unitary Convention*.
+The distinction between the form and the norm is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The norm reading of the four letters, the qualified regular and degenerate, and the layer-by-layer tables are the subject of *Norm and Unitary Conventions*.
 
 ## Summary of Notation
 

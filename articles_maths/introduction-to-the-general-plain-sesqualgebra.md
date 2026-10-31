@@ -240,7 +240,7 @@ $$
 \tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_t + \tilde\Xi\bigr) , \qquad \vec u \in \mathbb{R}^{3}, \ |\vec u| = 1 ,
 $$
 
-indexed by the real unit vectors (*Conventions in Mathematics*, *Idempotents of the General Plain Algebra*).
+indexed by the real unit vectors (*Algebra and Element Conventions*, *Idempotents of the General Plain Algebra*).
 
 **Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Idempotents of the General Plain Algebra*: the idempotents are the elements $\tfrac12(e_t + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\xi = \pm\vec u$ with $\vec u$ a unit real vector, that is the elements $\tfrac12(e_t \pm \vec u i)$, together with the trivial idempotents $0$ and $e_t$.
 

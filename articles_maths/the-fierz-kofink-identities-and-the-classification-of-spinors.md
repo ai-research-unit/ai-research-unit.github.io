@@ -24,7 +24,7 @@ $$
 \qquad \gamma_5^2=\mathbb 1,\qquad \gamma_5^{\dagger}=\gamma_5 .
 $$
 
-The corpus's Clifford form is the same mostly-minus form (*Conventions in the Biquaternion Universe*), so the conventions agree up to the usual basis freedom, which changes no identity below.
+The corpus's Clifford form is the same mostly-minus form (*Algebra and Element Conventions*), so the conventions agree up to the usual basis freedom, which changes no identity below.
 
 **Definition.** For a Dirac spinor $\psi\in\mathbb C^4$, with the **Dirac adjoint** $\bar\psi=\psi^{\dagger}\gamma_0$, the **bilinear covariants** are
 

@@ -4,7 +4,7 @@
 
 A reduced biquaternion tensor is a rectangular array of reduced biquaternions indexed by three modes. This article fixes the set of such arrays, its slices, its four real coefficient tensors, its two complex readings, its module structure, its transpose and conjugate transpose, and its norms. It is the first article of the tensor branch: no product of tensors is defined here.
 
-The algebra of the entries is *Reduced Biquaternion Space*, and the notation is *Conventions in Mathematics*. The Einstein product is *The Einstein Product of Reduced Biquaternion Tensors*; the t-product, which uses the conjugate transpose fixed here together with a reversal of the frontal slices, is *The t-Product of Reduced Biquaternion Tensors*. The matrix case, in which the third mode has length one, is the matrix theory of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
+The algebra of the entries is *Reduced Biquaternion Space*, and the notation is *Algebra and Element Conventions*. The Einstein product is *The Einstein Product of Reduced Biquaternion Tensors*; the t-product, which uses the conjugate transpose fixed here together with a reversal of the frontal slices, is *The t-Product of Reduced Biquaternion Tensors*. The matrix case, in which the third mode has length one, is the matrix theory of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
 
 ## The Set of Tensors
 
@@ -53,7 +53,7 @@ A_{(1)}=A_{1,i}+A_{j,k}=A_0+A_2+i(A_1+A_3),\qquad
 A_{(2)}=A_{1,i}-A_{j,k}=A_0-A_2+i(A_1-A_3).
 $$
 
-The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the **idempotent coordinates** of $A$. They are the components written $X^+$ and $X^-$ in *Least Squares and Total Least Squares over the Reduced Biquaternions*, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of *Conventions in Mathematics* writes the idempotent coordinates with the sign, $Q_{+},Q_{-}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.
+The two complex tensors $A_{(1)}$ and $A_{(2)}$ are the **idempotent coordinates** of $A$. They are the components written $X^+$ and $X^-$ in *Least Squares and Total Least Squares over the Reduced Biquaternions*, and they satisfy $\Pi_+\Pi_-=0$, $\Pi_\pm^2=\Pi_\pm$, $\Pi_++\Pi_-=1$. The element convention of *Algebra and Element Conventions* writes the idempotent coordinates with the sign, $Q_{+},Q_{-}$; the tensor branch keeps the parentheses $A_{(1)},A_{(2)}$ and the signs $+,-$ for the idempotents $\Pi_\pm$. The two notations name the same two complex tensors, and the parentheses avoid a collision with the entry indices.
 
 **Proposition (the two complex readings).** The map $A\mapsto(A_{(1)},A_{(2)})$ is a bijection from $\mathbb{B}_{\mathrm{r}}^{n_1\times n_2\times n_3}$ onto the pairs of complex tensors of the same shape. Its inverse is
 
@@ -110,7 +110,7 @@ $$
 (A^{\mathsf H})^{(k)}=(A^{(n_3+2-k)})^{\mathsf H}\quad(2\le k\le n_3),
 $$
 
-where for a matrix $X$ over $\mathbb{B}_{\mathrm{r}}$ the **bar-transpose** is $X^{\mathsf H}=\bar X^{\mathsf T}$, with the bar acting entrywise. In the two idempotent coordinates it is the pair of the complex conjugate transposes, $X^{\mathsf H}=X_{(1)}^{\mathsf H_{\mathbb C}}\Pi_++X_{(2)}^{\mathsf H_{\mathbb C}}\Pi_-$. The reversal is the convention that makes $A^{\mathsf H}$ the adjoint of the t-product; without it the transform identity of *The t-Product of Reduced Biquaternion Tensors* fails. For $n_3=1$ the reversal is empty and $A^{\mathsf H}$ is the matrix conjugate transpose. The source writes this operation $A^{*}$; the corpus writes $A^{\mathsf H}$ here, because the star $^{*}$ of *Conventions in Mathematics* is the Hermitian conjugation of an element, not the bar. On an entry the conjugate transpose acts by the bar, $a\mapsto\bar a$, not by the star.
+where for a matrix $X$ over $\mathbb{B}_{\mathrm{r}}$ the **bar-transpose** is $X^{\mathsf H}=\bar X^{\mathsf T}$, with the bar acting entrywise. In the two idempotent coordinates it is the pair of the complex conjugate transposes, $X^{\mathsf H}=X_{(1)}^{\mathsf H_{\mathbb C}}\Pi_++X_{(2)}^{\mathsf H_{\mathbb C}}\Pi_-$. The reversal is the convention that makes $A^{\mathsf H}$ the adjoint of the t-product; without it the transform identity of *The t-Product of Reduced Biquaternion Tensors* fails. For $n_3=1$ the reversal is empty and $A^{\mathsf H}$ is the matrix conjugate transpose. The source writes this operation $A^{*}$; the corpus writes $A^{\mathsf H}$ here, because the star $^{*}$ of *Algebra and Element Conventions* is the Hermitian conjugation of an element, not the bar. On an entry the conjugate transpose acts by the bar, $a\mapsto\bar a$, not by the star.
 
 **Proposition.** The conjugate transpose is an involution and is bar-antilinear:
 
@@ -156,7 +156,7 @@ $$
 
 The second identity uses $|a|^2=\tfrac12(|a_{(1)}|^2+|a_{(2)}|^2)$, which follows from the definitions of $a_{(1)}$ and $a_{(2)}$.
 
-The algebra carries four algebraic norms, and each has a tensor reading obtained by summing the norm of the entries. With the notation of *Conventions in Mathematics*,
+The algebra carries four algebraic norms, and each has a tensor reading obtained by summing the norm of the entries. With the notation of *Algebra and Element Conventions*,
 
 $$
 \langle A\rangle=\sum_{i_1i_2i_3}\langle a_{i_1i_2i_3}\rangle,\qquad

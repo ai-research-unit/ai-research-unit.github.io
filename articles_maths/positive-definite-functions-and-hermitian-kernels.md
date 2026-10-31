@@ -45,7 +45,7 @@ $$
 K^{*}(x,y)=\overline{K(y,x)} ,
 $$
 which is again conjugate-linear and involutive, $(K^{*})^{*}=K$; the star on the elements is the same star,
-in the sense of *Conventions in Mathematics*: the involution of the function $\bar f$ and of the kernel on
+in the sense of *Algebra and Element Conventions*: the involution of the function $\bar f$ and of the kernel on
 the diagonal coincide, $K^{*}(x,x)=\overline{K(x,x)}$, and this is why the same mark is used. Both marks
 coincide with the **notational convention** that the dagger is reserved for the adjoint of an operator,
 $T^\dagger$, and the star for the involution on elements.

@@ -17,7 +17,7 @@ $$
 
 ## The Assignment on the Basis
 
-**The four units go to four matrices, and the four coefficients go to one matrix.** The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the $4\times4$ matrix of left multiplication in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The shorter notation $\mathsf{M}_4^{L}$ stands for $\mathsf{M}_4^{L}(\tilde Q)$. Write $L_\mu=\mathsf M_4^{L}(e_\mu)$ for the four unit matrices. The four units go to
+**The four units go to four matrices, and the four coefficients go to one matrix.** The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the $4\times4$ matrix of left multiplication in the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The shorter notation $\mathsf{M}_4^{L}$ stands for $\mathsf{M}_4^{L}(\tilde Q)$. Write $L_\mu=\mathsf M_4^{L}(e_\mu)$ for the four unit matrices. The four units go to
 
 | Unit | Matrix $L_\mu$ | Square | Determinant |
 |---|---|---|---|
@@ -241,7 +241,7 @@ Two changes compose,
 $$
 (C_1C_2)^{-1}M(C_1C_2)=C_2^{-1}\bigl(C_1^{-1}MC_1\bigr)C_2,
 $$
-so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. The coefficient basis is the representative $C=I_4$, and the canonical Peirce frame is the representative $C=C_{\Pi}$ in which the matrix is block diagonal with two identical blocks. The canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, is this $C=C_{\Pi}$, and the frame is the one the operator formulas of the corpus use.
+so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. The coefficient basis is the representative $C=I_4$, and the canonical Peirce frame is the representative $C=C_{\Pi}$ in which the matrix is block diagonal with two identical blocks. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is this $C=C_{\Pi}$, and the frame is the one the operator formulas of the corpus use.
 
 **What the choice fixes.** The choice fixes the four columns, the diagonal axis, the two column pairs and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.
 

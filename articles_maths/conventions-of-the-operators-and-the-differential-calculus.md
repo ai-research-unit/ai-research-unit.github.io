@@ -1,4 +1,4 @@
-# __Conventions of the Operators and the Differential Calculus__
+# __Operator and Calculus Conventions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ An operator that acts by multiplication is the element it multiplies by, and its
 
 The order follows the dependence. The operators come before the calculus because the gradient is an operator and its glyph follows the operator rule. The derivation comes before the four products read on it, because the products are read with the derivative already fixed.
 
-The article assumes the base of *Conventions in Mathematics*, the products and forms of *Conventions of the Twelve Products and the Four Forms*, and the norms of *Conventions of the Norms and the Unitary Convention*. It cites the superscript rule of *Conventions of the Indices, the Notation and the Corpus* for the Fock mark.
+The article assumes the base of *Algebra and Element Conventions*, the products and forms of *Product and Form Conventions*, and the norms of *Norm and Unitary Conventions*. It cites the superscript rule of *Index, Notation and Corpus Conventions* for the Fock mark.
 
 ## The Operators
 
@@ -27,7 +27,7 @@ The article assumes the base of *Conventions in Mathematics*, the products and f
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $T_{\tilde Q_1,\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
 
-**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis and the cell table of *Conventions of the Matrix Models*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$.
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$.
 
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
@@ -40,7 +40,7 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 **An operator written as an array carries no tilde.** The element rule above governs an operator that acts on the algebra by multiplication, because such an operator is the element. An operator written as a linear map on a coordinate column, as a matrix in the $2\times2$ image, or as a regular matrix $\mathsf{M}_4^{L}$, is an array: it carries no tilde, its elements keep theirs inside the argument, $\mathsf{M}_2(\tilde Q)$, and its adjoint is the dagger and not the star. A Kraus operator, where the physics corpus uses one, is written in the element reading, $\tilde K_l\in\mathbb{B}$, because it multiplies the state on both sides; its matrix image $\mathsf{M}_2(\tilde K_l)$ carries no tilde.
 
-**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Conventions of the Indices, the Notation and the Corpus*, §*The Superscripts*.
+**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Index, Notation and Corpus Conventions*, §*The Superscripts*.
 
 ## Conventions for Derivation
 
@@ -80,7 +80,7 @@ $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 $$
 
-whose tilde marks its scalar part beside its vector part (*Conventions of the Operators and the Differential Calculus*, §*The Gradient*; *Biquaternion Analysis*), with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector coordinates; on the material sector it is the physical $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$, where $Q_k=q_k$.
+whose tilde marks its scalar part beside its vector part (*Operator and Calculus Conventions*, §*The Gradient*; *Biquaternion Analysis*), with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector coordinates; on the material sector it is the physical $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$, where $Q_k=q_k$.
 
 **The conjugates of the gradient.** The gradient is an operator, and the marks are read on its units at fixed coordinate: the derivative symbols are held fixed and only the units are conjugated. This fixes the scope of the star, and it is not a claim that $\partial/\partial Q_\mu$ is real; the unhalved derivative defined above is complex, and on an element-valued field the star is coefficientwise, carried through the derivative by $\partial/\partial\bar Q_\mu$ rather than by $\partial/\partial Q_\mu$. Read on the units, the quaternion conjugation reverses the three spatial units, and so does the Hermitian conjugation, so the two act on the gradient alike,
 
@@ -95,7 +95,7 @@ $$
 
 ### The Plain Bilinear Product, Its Form and Its Norm
 
-**The product.** The general plain bilinear product is one of the four general products of *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*. On the gradient, with the element-valued field $\tilde Q_{\mathrm f}$ of §*The Gradient*, it is read with $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit,
+**The product.** The general plain bilinear product is one of the four general products of *Product and Form Conventions*, §*The Twelve Products and Their Names*. On the gradient, with the element-valued field $\tilde Q_{\mathrm f}$ of §*The Gradient*, it is read with $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit,
 
 $$
 \tilde\nabla\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}t}+\nabla\times\vec Q_{\mathrm f} .
@@ -103,7 +103,7 @@ $$
 
 A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material sector** the same product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, the space part being unchanged.
 
-**The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*. The half-sum keeps the form as its scalar part,
+**The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in *Product and Form Conventions*, §*The Twelve Products and Their Names*. The half-sum keeps the form as its scalar part,
 
 $$
 \tilde\nabla\bullet\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}+\tilde Q_{\mathrm f}\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-(\nabla,\vec Q_{\mathrm f})\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+Q_{\mathrm{f}t}\nabla=\Bigl[\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}t} ,
@@ -115,7 +115,7 @@ $$
 \tilde\nabla\wedge\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}-\tilde Q_{\mathrm f}\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec Q_{\mathrm f}+\nabla\times\vec Q_{\mathrm f}\bigr)=\nabla\times\vec Q_{\mathrm f} ,
 $$
 
-a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair $(\nabla,\vec X)$ is read as the divergence $\nabla\cdot\vec X$ and $X\nabla$ as the gradient $\nabla X$, the derivative acting on the coefficient it multiplies, and the coordinate formulas substituted are those of *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*.
+a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair $(\nabla,\vec X)$ is read as the divergence $\nabla\cdot\vec X$ and $X\nabla$ as the gradient $\nabla X$, the derivative acting on the coefficient it multiplies, and the coordinate formulas substituted are those of *Product and Form Conventions*, §*The Twelve Products and Their Names*.
 
 **The form.** The **plain form** is the scalar part of the product read in two arguments,
 
@@ -135,7 +135,7 @@ the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
-**The product.** The general quaternionic bilinear product is the second of the four general products of *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*; on the gradient it is $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}$, the conjugate derivative, read with the same rules, the three spatial units now carrying the field back onto the scalar unit with the opposite sign,
+**The product.** The general quaternionic bilinear product is the second of the four general products of *Product and Form Conventions*, §*The Twelve Products and Their Names*; on the gradient it is $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}$, the conjugate derivative, read with the same rules, the three spatial units now carrying the field back onto the scalar unit with the opposite sign,
 
 $$
 \tilde\nabla^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}t}-\nabla\times\vec Q_{\mathrm f} .
@@ -183,7 +183,7 @@ a plus on the vector part and a minus on the fourth coordinate. On $\mathbb{M}_-
 
 ### The Hermitian Product, Its Form and Its Norm
 
-**The product.** The general plain sesquilinear product is the third of the four general products of *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*; it is the plain product applied to the **conjugated** field $\tilde Q_{\mathrm f}^{*}=\bar Q_{\mathrm{f}t}e_t-\overline{\vec Q_{\mathrm f}}$, so that on the gradient it is $\tilde\nabla\tilde Q_{\mathrm f}^{*}$, conjugate-linear in the field while the first slot stays $\mathbb{C}$-linear,
+**The product.** The general plain sesquilinear product is the third of the four general products of *Product and Form Conventions*, §*The Twelve Products and Their Names*; it is the plain product applied to the **conjugated** field $\tilde Q_{\mathrm f}^{*}=\bar Q_{\mathrm{f}t}e_t-\overline{\vec Q_{\mathrm f}}$, so that on the gradient it is $\tilde\nabla\tilde Q_{\mathrm f}^{*}$, conjugate-linear in the field while the first slot stays $\mathbb{C}$-linear,
 
 $$
 \tilde\nabla\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}} .
@@ -231,7 +231,7 @@ so the Hermitian norm of the gradient is the d'Alembertian, the same operator as
 
 ### The Krein Product, Its Form and Its Norm
 
-**The product.** The general quaternionic sesquilinear product is the fourth of the four general products of *Conventions of the Twelve Products and the Four Forms*, §*The Twelve Products and Their Names*; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}$, the companion of the quaternionic bilinear product in the second slot,
+**The product.** The general quaternionic sesquilinear product is the fourth of the four general products of *Product and Form Conventions*, §*The Twelve Products and Their Names*; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}$, the companion of the quaternionic bilinear product in the second slot,
 
 $$
 \tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}} .
@@ -273,7 +273,7 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $T_{\tilde Q_1,\tilde Q_2}$, the sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The sandwich with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear.
 
-The **dagger** is the general adjoint of an operator, never of an element, and it is not a fifth conjugation: several adjoints arise at once, one for each form and one for each sandwich, and the dagger is the mark that covers them all. An operator written as an array — a linear map on a coordinate column, a matrix in the $2\times2$ image or a regular matrix — carries no tilde. The **Fock exception** is the one mark that says a glyph is an operator and not an element of the algebra, and its superscript $\mathrm{fop}$ is fixed in *Conventions of the Indices, the Notation and the Corpus*.
+The **dagger** is the general adjoint of an operator, never of an element, and it is not a fifth conjugation: several adjoints arise at once, one for each form and one for each sandwich, and the dagger is the mark that covers them all. An operator written as an array — a linear map on a coordinate column, a matrix in the $2\times2$ image or a regular matrix — carries no tilde. The **Fock exception** is the one mark that says a glyph is an operator and not an element of the algebra, and its superscript $\mathrm{fop}$ is fixed in *Index, Notation and Corpus Conventions*.
 
 No derivative is written with a dot, and a prime marks the imaginary coordinate and nothing else. Every partial derivative is written with $\partial$ and its variable, the subscript is a component index and never a derivative, and the coordinate derivative is unhalved, $\partial/\partial Q_\mu=\partial/\partial q_\mu+\partial/\partial(iq'_\mu)$.
 

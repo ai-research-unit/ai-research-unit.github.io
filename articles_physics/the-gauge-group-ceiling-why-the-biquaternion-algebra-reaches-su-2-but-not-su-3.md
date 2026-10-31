@@ -44,7 +44,7 @@ $$
 
 with the centre $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ commuting with everything. Both facts were verified on explicit matrices: the bracket closure gave exactly the six-dimensional space of traceless matrices, and every central element commuted with every algebra element to machine precision.
 
-The group that acts **unitarily** on the algebra is built from its anti-Hermitian part. The anti-Hermitian conjugation $\flat$ and the Hermitian conjugation ${}^{*}$ of *Conventions in the Biquaternion Universe* split the algebra into the two four-dimensional real subspaces
+The group that acts **unitarily** on the algebra is built from its anti-Hermitian part. The anti-Hermitian conjugation $\flat$ and the Hermitian conjugation ${}^{*}$ of *Algebra and Element Conventions* split the algebra into the two four-dimensional real subspaces
 
 $$
 \mathbb M_-=\bigl\{x\in\mathbb B:x^\flat=x\bigr\}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},

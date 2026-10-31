@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, fixes the comparison between the biquaternions and the even Clifford algebra; *The Spinor Module in Biquaternionic Form and Its Lorentz Action* constructs the module on which the algebra acts; *Exercise: Chirality and the Weyl Spinors* develops the chiral projectors. This article is about a structure that all three use but none names: the **grading of the Dirac algebra by reflection parity**, and the identification of one element — the timelike generator $\gamma_0$ — as the hinge on which the whole structure turns.
+The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, fixes the comparison between the biquaternions and the even Clifford algebra; *The Spinor Module in Biquaternionic Form and Its Lorentz Action* constructs the module on which the algebra acts; *Exercise: Chirality and the Weyl Spinors* develops the chiral projectors. This article is about a structure that all three use but none names: the **grading of the Dirac algebra by reflection parity**, and the identification of one element — the timelike generator $\gamma_0$ — as the hinge on which the whole structure turns.
 
 The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the **even** part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $\gamma_\mu$, by contrast, are **odd**: they are not biquaternions at all, they lie outside the even part, and they are not rotors. They act on spinors and they **exchange the two chiralities**. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that *turn* and the transformations that *reflect*, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.
 
@@ -55,7 +55,7 @@ $$
 \mathbb{B} \cong \mathrm{Cl}_{1,3}^{+}(\mathbb{R}),
 $$
 
-as *Conventions of the Matrix Models*, §*The Clifford Structure and the Gamma Matrices*, establishes, and the rotations therefore sit inside $\mathbb{B}$ while the reflections do not.
+as *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, establishes, and the rotations therefore sit inside $\mathbb{B}$ while the reflections do not.
 
 The identification is verified directly in the explicit representation. For $40$ random even elements of unit norm, the vector action has determinant $+1$; for $40$ random odd elements of unit norm, it has determinant $-1$. The correspondence is exact and not merely a counting resemblance:
 

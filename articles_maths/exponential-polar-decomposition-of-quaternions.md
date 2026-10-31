@@ -24,7 +24,7 @@ with $r$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That writing is
 
 The article states the decomposition and computes its data (§*The Decomposition*), identifies the exponent with the logarithm and separates the principal logarithm from the general one (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*).
 
-The symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Quaternion Algebra* and *Conventions in Mathematics*. The modulus is written through the algebraic norm, $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and the modulus of a pure element through $\sqrt{\langle\vec v\rangle_{\natural}}$; a pure element carries the arrow. Every numerical value displayed below was recomputed in double precision.
+The symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Quaternion Algebra* and *Algebra and Element Conventions*. The modulus is written through the algebraic norm, $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and the modulus of a pure element through $\sqrt{\langle\vec v\rangle_{\natural}}$; a pure element carries the arrow. Every numerical value displayed below was recomputed in double precision.
 
 ## The Decomposition
 
@@ -97,7 +97,7 @@ The real dimensions are $1$ and $3$, and they add to the real dimension $4$ of $
 
 ### The Rotor Part
 
-The unit factor is a unit real quaternion, and the corpus calls it a **rotor**: it is the rotor part of the decomposition. The symbol is $\tilde u_{\mathrm r}$, the one used in *Modulus–Unit Polar Decomposition of Quaternions* and in the biquaternion articles, where it is the fourth factor of the word. *Conventions in Mathematics*, §*Summary of Notation* writes a rotor $\tilde u$ when no other unit is in play. In the exponential form it is
+The unit factor is a unit real quaternion, and the corpus calls it a **rotor**: it is the rotor part of the decomposition. The symbol is $\tilde u_{\mathrm r}$, the one used in *Modulus–Unit Polar Decomposition of Quaternions* and in the biquaternion articles, where it is the fourth factor of the word. *Algebra and Element Conventions*, §*Summary of Notation* writes a rotor $\tilde u$ when no other unit is in play. In the exponential form it is
 
 $$
 \tilde u_{\mathrm r}=\exp(\vec v)=\cos\theta+\vec n\sin\theta, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .

@@ -6,7 +6,7 @@ The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is th
 
 ## Conventions
 
-$\tilde q = q_te_t+\vec q = \sum_{\mu\in\{t,x,y,z\}}q_\mu e_\mu$ with $q_\mu\in\mathbb{R}$, and $\vec q = \sum_{k=1}^{3}q_k\vec e_k$ is the vector part; $e_t$ is the unit; ${}^{\natural}$ is the quaternion conjugation, $\vec e_k^{\natural}=-\vec e_k$ on the imaginary units and $e_t^{\natural}=e_t$; $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ and $\vec q_1\times\vec q_2$ are the real dot and cross products. The algebra product $\tilde q_1\tilde q_2$ is owned by the *Quaternions* category and is cited from here, never restated. The tilde and the mark ${}^{\natural}$ are those of *Conventions in Mathematics*.
+$\tilde q = q_te_t+\vec q = \sum_{\mu\in\{t,x,y,z\}}q_\mu e_\mu$ with $q_\mu\in\mathbb{R}$, and $\vec q = \sum_{k=1}^{3}q_k\vec e_k$ is the vector part; $e_t$ is the unit; ${}^{\natural}$ is the quaternion conjugation, $\vec e_k^{\natural}=-\vec e_k$ on the imaginary units and $e_t^{\natural}=e_t$; $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ and $\vec q_1\times\vec q_2$ are the real dot and cross products. The algebra product $\tilde q_1\tilde q_2$ is owned by the *Quaternions* category and is cited from here, never restated. The tilde and the mark ${}^{\natural}$ are those of *Algebra and Element Conventions*.
 
 ## The Three Companion Products
 

@@ -14,7 +14,7 @@ The decomposition is the two-dimensional definite case of the polar decompositio
 
 The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and the circle are described (§*The Group of Units and the Circle*), the two axes are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the complex case in the family is recorded (§*The Other Algebras*).
 
-The conventions and the symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and *Conventions in Mathematics*; the symbols are collected in §*Summary of Notation*.
+The conventions and the symbols are those of *Complex Algebra*, *Complex Norm and Invertibility* and *Algebra and Element Conventions*; the symbols are collected in §*Summary of Notation*.
 
 Every numerical value displayed below was recomputed in double precision.
 
@@ -59,7 +59,7 @@ $$
 
 The unit circle is a group under multiplication. If $\langle u\rangle_{*} = \langle v\rangle_{*} = 1$ then $\langle uv\rangle_{*} = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = \langle u\rangle_{*} = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*.
+The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{C}^\times$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 

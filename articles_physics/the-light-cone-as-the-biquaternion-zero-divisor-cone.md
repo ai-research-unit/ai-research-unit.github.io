@@ -14,7 +14,7 @@ so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation
 
 Three threads are developed below.
 
-- **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Conventions of the Special Elements*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
+- **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone, and the $\mathbb{M}_-$ cone is the physical light cone.
 - **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
@@ -274,7 +274,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
+- Companion article *Algebra and Element Conventions*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the real quaternion slice and the four-vector representation.
 - Companion article *The Relativistic Particle in Biquaternionic Form*, for the particle's four-momentum, mass shell and causal classification.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength on the null cone and its invariants.

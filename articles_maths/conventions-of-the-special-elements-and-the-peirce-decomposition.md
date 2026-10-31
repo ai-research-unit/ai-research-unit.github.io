@@ -1,4 +1,4 @@
-# __Conventions of the Special Elements and the Peirce Decomposition__
+# __Special Element and Peirce Conventions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ A root, an idempotent and a nilpotent are not new kinds of object: each is an el
 
 The special elements are read after the base because their case rule is the case rule of the elements, and before the representations because the canonical frame of the matrix model is the Peirce frame of the standard pair. The order is: the root, the idempotent, the nilpotent, then the general Peirce convention and its biquaternion reading.
 
-The article assumes *Conventions in Mathematics*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Conventions of the Matrix Models*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
+The article assumes *Algebra and Element Conventions*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Matrix Representations Conventions*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
@@ -43,7 +43,7 @@ An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \
 
 **The case rule splits the glyph, as it does for the elements.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; those of the complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (*Split-Quaternion Idempotents and Projections*), while the split-complex layer $\mathbb{D}$ (*Square Roots of One and the Idempotents of the Split-Complex Algebra*) and the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$ write the complete pair with the signs, $\Pi_\pm$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$; the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of *Split-Biquaternion Idempotents and Projections*, and the layer fixes the glyph.
 
-The involution here is the star on the elements, as *The Conjugations* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
+The involution here is the star on the elements, as *The Conjugations* fixes it, and *Algebra and Element Conventions* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
 **The coordinates carry the letter of the idempotent**: in $\mathbb{B}$ the idempotent is $\tilde\Pi = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.
 
@@ -85,9 +85,9 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates; where it spans a mixed Peirce component it is written $\tilde\Upsilon_{ij}$ (§*The Peirce Convention*) |
-| $\vec\Upsilon$, $\vec\nu$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Conventions in Mathematics*, §*The Centre and the Vector Subspace* |
+| $\vec\Upsilon$, $\vec\nu$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
 
-**The standard pair carries the arrow, not the tilde.** The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Conventions in Mathematics*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
+**The standard pair carries the arrow, not the tilde.** The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
 
 ## The Peirce Convention
 
@@ -177,7 +177,7 @@ $E_{ij}$ is written only when the objects are matrices. In an abstract algebra t
 
 **Scope.** $A=\mathbb{B}$, with unit $e_t$. The upper-case tilde is written in this layer, and a pure element carries the arrow and no tilde. Indices are numeric, 1-based. The four levels of §*The General Peirce Convention* are used, and no others.
 
-**The family.** A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The canonical frame of the matrix model is written in the standard pair and its mixed units, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; that is a choice of frame, owned by *Conventions of the Matrix Models*, §*The Matrix Models*, and it fixes nothing here. The glyph is governed by §*The Idempotent Convention*.
+**The family.** A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The canonical frame of the matrix model is written in the standard pair and its mixed units, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; that is a choice of frame, owned by *Matrix Representations Conventions*, §*The Matrix Models*, and it fixes nothing here. The glyph is governed by §*The Idempotent Convention*.
 
 **The decomposition.**
 
