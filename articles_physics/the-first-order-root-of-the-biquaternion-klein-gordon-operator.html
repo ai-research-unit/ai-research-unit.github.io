@@ -97,7 +97,7 @@ $$</p>
 $$</p>
 <p>In the $x$ coordinates $x^0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
 $$
-\Box=-g^{\mu\nu}\partial_\mu\partial_\nu
+\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
@@ -139,12 +139,12 @@ $$</p>
 E^2=\vec p^{\,2}c^2+m^2c^4 .
 $$</p>
 <p>Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.</p>
-<p>In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its covector is $k_\mu=g_{\mu\nu}k^\nu=(\omega/c,-\vec k)$. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.</p>
+<p>In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.</p>
 <h2 id="the-root-condition">The Root Condition</h2>
 <h3 id="the-ansatz">The ansatz</h3>
 <p>Let</p>
 <p>$$
-D=i\gamma_\mu\frac{\partial}{\partial x^\mu}+B=i\gamma_0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma_k\frac{\partial}{\partial x^k}+B,
+D=i\gamma_\mu\frac{\partial}{\partial x_\mu}+B=i\gamma_0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma_k\frac{\partial}{\partial x_k}+B,
 \qquad
 \gamma_\mu,B\in M_n(\mathbb{C})\ \text{constant}.
 $$</p>
@@ -153,8 +153,8 @@ $$</p>
 <p>Because the partial derivatives commute, the quadratic term symmetrizes:</p>
 <p>$$
 D^2
-=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-+i\{\gamma_\mu,B\}\frac{\partial}{\partial x^\mu}
+=-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
++i\{\gamma_\mu,B\}\frac{\partial}{\partial x_\mu}
 +B^2 .
 $$</p>
 <p>The symmetrization is the legitimate substitution of commuting derivatives for the product; it is not an assumption about the matrices. Requiring</p>
@@ -282,7 +282,7 @@ $$</p>
 <p>$$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5,
 \qquad
-\mathsf D=i\gamma_\mu\frac{\partial}{\partial x^\mu},
+\mathsf D=i\gamma_\mu\frac{\partial}{\partial x_\mu},
 \qquad
 \mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I .
 $$</p>
@@ -478,8 +478,8 @@ $$</p>
 <td>Algebra coordinates, $Q_t=ict'$ on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$x^\mu$</td>
-<td>Lorentz coordinates, $x^0=ct'$, $x^k$ spatial</td>
+<td>$x_\mu$</td>
+<td>Lorentz coordinates, $x_0=ct'$, $x_k$ spatial</td>
 </tr>
 <tr>
 <td>$g_{\mu\nu}$</td>
@@ -490,7 +490,7 @@ $$</p>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>
-<td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-g^{\mu\nu}\partial_\mu\partial_\nu$</td>
+<td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu$</td>
 <td>d'Alembertian, series convention and Lorentz form</td>
 </tr>
 <tr>
@@ -526,12 +526,12 @@ $$</p>
 <td>Pseudoscalar generator, $-iT_{e_t,e_z}=\rho(\chi)$</td>
 </tr>
 <tr>
-<td>$\mathsf D=i\gamma_\mu\partial/\partial x^\mu$</td>
+<td>$\mathsf D=i\gamma_\mu\partial/\partial x_\mu$</td>
 <td>Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$</td>
 </tr>
 <tr>
 <td>$\gamma_\mu k_\mu$</td>
-<td>Symbol of $\mathsf D$ on a plane wave, $k^\mu=(\omega/c,\vec k)$</td>
+<td>Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$</td>
 </tr>
 <tr>
 <td>$\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5$</td>

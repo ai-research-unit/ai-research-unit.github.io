@@ -310,7 +310,7 @@ $$</p>
 <p>$$
 \tilde{V}\tilde{V}^{\natural} = \gamma_2\big(-c^2 + \vec v^2\big) = -c^2.
 $$</p>
-<p>This is the biquaternion form of the standard relativistic normalization $v^\mu v_\mu = -c^2$.</p>
+<p>This is the biquaternion form of the standard relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$.</p>
 <h3 id="the-four-momentum">The Four-Momentum</h3>
 <p>The <strong>four-momentum biquaternion</strong> is</p>
 <p>$$
@@ -327,7 +327,7 @@ E^2 = \vec p^2 c^2 + m^2 c^4,
 $$</p>
 <p>which is obtained by expanding $-m^2 c^2 = -(E/c)^2 + \vec p^2$.</p>
 <h3 id="the-four-acceleration-and-four-force">The Four-Acceleration and Four-Force</h3>
-<p>The <strong>four-acceleration biquaternion</strong> is $\tilde{A} = d\tilde{V}/d\tau$, where $\tau$ is the proper time. The <strong>four-force biquaternion</strong> is $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau = m\tilde{A}$. The four-acceleration satisfies $\tilde{A}\tilde{V}^{\natural} + \tilde{V}\tilde{A}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $a^\mu v_\mu = 0$.</p>
+<p>The <strong>four-acceleration biquaternion</strong> is $\tilde{A} = d\tilde{V}/d\tau$, where $\tau$ is the proper time. The <strong>four-force biquaternion</strong> is $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau = m\tilde{A}$. The four-acceleration satisfies $\tilde{A}\tilde{V}^{\natural} + \tilde{V}\tilde{A}^{\natural} = 0$, which is the biquaternion form of the orthogonality condition $\sum_\mu\varepsilon_\mu a_\mu v_\mu = 0$.</p>
 <h3 id="summary-of-relativistic-kinematics">Summary of Relativistic Kinematics</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -579,11 +579,11 @@ $$</p>
 m\,\bar\Psi\Psi = \bar\Psi\,K_\mu\gamma_\mu\Psi,
 $$</p>
 <p>with $K_\mu$ a unit complex four-vector. Read this way the massive equation is the massless equation with the ordinary derivative replaced by a "covariant" derivative along $K$, and the mass is a phase rather than a scalar. The phase is <strong>non-integrable</strong>: if $K_\mu = \partial/\partial Q_\mu\,\theta$ were a gradient, the change of variable $\Psi \mapsto \exp(i\theta)\Psi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial/\partial Q_\mu K_\nu - \partial/\partial Q_\nu K_\mu$.</p>
-<p>The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p^\mu$ satisfying the mass shell $p^2 = m^2$, the vector</p>
+<p>The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_\mu$ satisfying the mass shell $p^2 = m^2$, the vector</p>
 <p>$$
 K_\mu = \frac{p_\mu}{m}
 $$</p>
-<p>satisfies $K_\mu K^\mu = 1$. The momentum per unit mass is a unit vector, and the source reads it as the unit vector that carries the mass term.</p>
+<p>satisfies $\sum_\mu\varepsilon_\mu K_\mu K_\mu = 1$. The momentum per unit mass is a unit vector, and the source reads it as the unit vector that carries the mass term.</p>
 <p>This interpretation is the origin of the <em>triality construction</em> recorded in the companion articles. The two semi-spinors of the field, the vector they combine into, and the unit vector $K$ are the three spaces that the order-three map permutes; the mass term is the coupling that the order-three (cubic) form expresses. The reader who wants the construction itself is referred to <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em>, <em>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</em>, and <em>Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</em>. The present article records only the origin: the mass is a unit vector, a non-integrable phase, and it is the object the triality construction is built on.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
@@ -761,14 +761,14 @@ $$</p>
 </tr>
 <tr>
 <td>$K_\mu$</td>
-<td>Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi K_\mu\gamma_\mu\Psi$; $K_\mu=p_\mu/m$ on shell, $K_\mu K^\mu=1$</td>
+<td>Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi K_\mu\gamma_\mu\Psi$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$</td>
 </tr>
 <tr>
-<td>$B^\mu, N^\mu$</td>
-<td>The two real four-vectors of the semi-spinors, $\Psi_1=B^\mu g_{\mu\nu}i\gamma_\nu v$, $\Psi_2=N^\mu g_{\mu\nu}i\gamma_\nu u$</td>
+<td>$B_\mu, N_\mu$</td>
+<td>The two real four-vectors of the semi-spinors, $\Psi_1=\sum_{\mu,\nu}B_\mu g_{\mu\nu}i\gamma_\nu v$, $\Psi_2=\sum_{\mu,\nu}N_\mu g_{\mu\nu}i\gamma_\nu u$</td>
 </tr>
 <tr>
-<td>$G^\mu = B^\mu + iN^\mu$</td>
+<td>$G_\mu = B_\mu + iN_\mu$</td>
 <td>s-Vector, the vector representation of the same spinor</td>
 </tr>
 <tr>

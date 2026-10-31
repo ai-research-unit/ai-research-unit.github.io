@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-higgs-mechanism-in-biquaternionic-form"><strong>The Higgs Mechanism in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Higgs mechanism</strong> is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A gauge-field mass term, $m^2A_\mu A^\mu$, is forbidden: it is not invariant under the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the <strong>kinetic term of the scalar field</strong>, evaluated at a vacuum expectation value that does not respect the symmetry. The gauge field acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.</p>
+<p>The <strong>Higgs mechanism</strong> is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A gauge-field mass term, $m^2\sum_\mu A_\mu A_\mu$, is forbidden: it is not invariant under the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the <strong>kinetic term of the scalar field</strong>, evaluated at a vacuum expectation value that does not respect the symmetry. The gauge field acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.</p>
 <p>This article works the mechanism inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles. The pieces are already in the read list. <em>The Gauge Principle in Biquaternionic Form</em> localizes the central phase of the algebra and produces the connection $\tilde{A}$, the covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$, and the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$; it also identifies the <strong>complex scalar</strong> $\tilde{\Phi} = \varphi\,e_t$ as the realization of the symmetry that survives a mass term. <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> studies $D$ as an operator and records the covariant square. <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> exhibits the compact algebra $\mathrm{SU}(2)$ inside the material sector and reports the reality condition on the connection as a gap. <em>Chiral Fermions in the Biquaternion Framework</em> derives the selection rule that a bare fermion mass requires equal left and right charges, and names the present article as the companion in which the compensating scalar is to be treated.</p>
 <p>The essential step is short enough to state before it is computed. At a non-zero vacuum expectation value $\langle\tilde{\Phi}\rangle = \langle\varphi\rangle e_t$ that is <strong>constant</strong>, the ordinary derivative annihilates the vacuum and the covariant derivative does not:</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 <p>The covariant derivative of the scalar is again a <strong>scalar</strong> — it does not acquire vector components along $\vec e_x, \vec e_y, \vec e_z$. This is exactly the property that fails in the non-abelian case, where the connection does not commute with the field and $D_\mu\tilde{\Phi}$ acquires components in directions the field did not have. It is the reason the abelian mechanism below closes, and the reason the non-abelian one is a gap (see its own section).</p>
 <p><strong>The scalar Lagrangian.</strong> The gauge-invariant density of the scalar is the kinetic term plus a potential,</p>
 <p>$$
-\mathcal{L}_\text{scalar} = -\,g^{\mu\nu}\,(D_\mu\varphi)^*(D_\nu\varphi) \;-\; V\!\left(\varphi^*\varphi\right),
+\mathcal{L}_\text{scalar} = -\,\sum_{\mu,\nu}g_{\mu\nu}\,(D_\mu\varphi)^*(D_\nu\varphi) \;-\; V\!\left(\varphi^*\varphi\right),
 $$</p>
 <p>where the potential is a function of the single invariant $\varphi^*\varphi = \mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$. The kinetic term is the Lorentz-invariant contraction, in the $ict'$ metric of the Conventions, of the covariant derivative with its conjugate; it is manifestly real and, as the next section uses, gauge invariant. The standard normalization is fixed by the coefficient $-1$ on the kinetic term and by the definition of $v$ in the potential.</p>
 <h2 id="the-potential-and-the-non-zero-vacuum">The Potential and the Non-Zero Vacuum</h2>
@@ -133,7 +133,7 @@ $$</p>
 <p>$$
 \langle\tilde A\rangle \;\longmapsto\; \bigl\langle\tilde A - \tilde\nabla\Gamma\bigr\rangle \;\neq\; \langle\tilde A\rangle
 $$</p>
-<p>in general, so a term $m^2A_\mu A^\mu$ in the action is not gauge invariant. It is exactly the term the symmetry forbids. The mechanism must therefore generate it from something that <em>is</em> invariant, and the invariant object available is the kinetic term of the scalar.</p>
+<p>in general, so a term $m^2\sum_\mu A_\mu A_\mu$ in the action is not gauge invariant. It is exactly the term the symmetry forbids. The mechanism must therefore generate it from something that <em>is</em> invariant, and the invariant object available is the kinetic term of the scalar.</p>
 <p><strong>The vacuum value of the covariant derivative.</strong> At the constant vacuum $\varphi = v/\sqrt{2}$, the ordinary derivative vanishes and only the connection term survives:</p>
 <p>$$
 D_\mu\varphi\Big|_{\text{vac}} = \partial/\partial Q_\mu\,\frac{v}{\sqrt{2}} + \frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}} = \frac{iϙ}{\hbar}\,A_\mu\,\frac{v}{\sqrt{2}},
@@ -143,13 +143,13 @@ $$</p>
 <p>This is the key equation. The covariant derivative of the scalar is <strong>proportional to the gauge field</strong> once the scalar is frozen at its vacuum value.</p>
 <p><strong>The kinetic term becomes a mass term.</strong> Inserting this into the gauge-invariant kinetic density gives</p>
 <p>$$
--\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
-= -\,g^{\mu\nu}\left(\frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}}\right)^{\!*}\left(\frac{iϙ}{\hbar}A_\nu\frac{v}{\sqrt{2}}\right)
-= -\,\frac{ϙ^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu .
+-\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
+= -\,\sum_{\mu,\nu}g_{\mu\nu}\left(\frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}}\right)^{\!*}\left(\frac{iϙ}{\hbar}A_\nu\frac{v}{\sqrt{2}}\right)
+= -\,\frac{ϙ^2v^2}{2\hbar^2}\,\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu .
 $$</p>
-<p>Written with the corpus's biquaternion norm, using $g^{\mu\nu}A_\mu^*A_\nu = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_{\mu}A_\mu^2$ for the connection $\tilde{A}\in\mathbb{M}_-$ (whose $A_0$ is imaginary, so $A_0^2 = -|A_0|^2$),</p>
+<p>Written with the corpus's biquaternion norm, using $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_{\mu}A_\mu^2$ for the connection $\tilde{A}\in\mathbb{M}_-$ (whose $A_0$ is imaginary, so $A_0^2 = -|A_0|^2$),</p>
 <p>$$
--\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
+-\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right).
 $$</p>
 <p>This is a quadratic form in the connection — a <strong>Proca mass term</strong>. Comparing with the standard normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ for a massive vector field, the mass-squared is</p>
@@ -158,15 +158,15 @@ $$</p>
 \qquad\text{i.e.}\qquad
 M_A = \frac{ϙv}{\hbar} \quad (\hbar = 1:\ M_A = ϙv).
 $$</p>
-<p>This is the standard abelian-Higgs result. It reproduces the textbook value: with $\langle|\varphi|\rangle = v/\sqrt{2}$ the conventional complex scalar, $|D_\mu\varphi|^2$ at the minimum gives $\frac{1}{2}ϙ^2v^2A_\mu A^\mu$, so the pole mass is $M_A = ϙv$ (in units $\hbar = 1$), exactly as for the Higgs mechanism of scalar electrodynamics. The larger $\hbar$ is, the smaller the mass, as the factor $ϙ/\hbar$ requires.</p>
+<p>This is the standard abelian-Higgs result. It reproduces the textbook value: with $\langle|\varphi|\rangle = v/\sqrt{2}$ the conventional complex scalar, $|D_\mu\varphi|^2$ at the minimum gives $\frac{1}{2}ϙ^2v^2\sum_\mu A_\mu A_\mu$, so the pole mass is $M_A = ϙv$ (in units $\hbar = 1$), exactly as for the Higgs mechanism of scalar electrodynamics. The larger $\hbar$ is, the smaller the mass, as the factor $ϙ/\hbar$ requires.</p>
 <p><strong>What produced the mass, and what did not.</strong> Three things about the derivation are worth stating, because each is a trap avoided.</p>
 <ul>
 <li><strong>The mass came from the kinetic term.</strong> The potential $V$ was used only to supply the vacuum value $v$; its curvature at the minimum gives the <em>scalar</em> mass $m_h^2 = 2\beta v^2$, not the gauge mass. The gauge mass $M_A$ does not involve $\beta$ at all, and would be unchanged if the potential were flatter or steeper while keeping the same $v$. That is the signature that the gauge mass is generated by the kinetic term.</li>
-<li><strong>No gauge mass term was written by hand.</strong> The derivation began from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ only after substituting a vacuum that is <em>not</em> gauge invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.</li>
+<li><strong>No gauge mass term was written by hand.</strong> The derivation began from $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ only after substituting a vacuum that is <em>not</em> gauge invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.</li>
 <li><strong>The kinetic term itself remains gauge invariant.</strong> Under $\varphi\mapsto\lambda\varphi$ and $\tilde{A}_2\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, $D_\mu\varphi\mapsto\lambda D_\mu\varphi$, so $(D_\mu\varphi)^*(D_\mu\varphi)\mapsto|\lambda|^2(D_\mu\varphi)^*(D_\mu\varphi) = (D_\mu\varphi)^*(D_\mu\varphi)$ because $|\lambda| = 1$.</li>
 </ul>
 <p>$$
--\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
+-\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
 = \frac{ϙ^2v^2}{2\hbar^2}\left(a_0^2 - a_1^2 - a_2^2 - a_3^2\right)
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$</p>
@@ -235,7 +235,7 @@ $$</p>
 <p><strong>The reality condition on the connection.</strong> The non-abelian article leaves open the Hermitian-conjugation class of the non-abelian connection under the $ict'$ derivative. Its resolution is a prerequisite for the non-abelian covariant derivative, and hence for the non-abelian kinetic term, and hence for the non-abelian mass.</p>
 </li>
 <li>
-<p><strong>The scalar kinetic term in the framework's own normalization.</strong> The scalar Lagrangian used here takes the Lorentz-invariant contraction of $D_\mu\varphi$ with its conjugate. The corpus's Noether article writes the free scalar kinetic term as the biquaternion norm $-\sum_\mu(\partial/\partial Q_\mu\,\varphi^*)(\partial/\partial Q_\mu\,\varphi)$, contracting the two factors without a relative metric sign. Because the $ict'$ time derivative is imaginary, $(\partial/\partial Q_t\,\varphi)^*=-\partial/\partial Q_t\,\varphi^*$, so this metric-free contraction already carries the Lorentzian sign and equals the Lorentz-invariant combination $-g^{\mu\nu}(\partial/\partial Q_\mu\,\varphi)^*(\partial/\partial Q_\nu\,\varphi)$: for the free scalar the two normalisations coincide, for a complex scalar as much as for a real one, and the metric-free form is not the Euclidean modulus. The two part company only once the derivative is gauged, where the all-plus contraction is Euclidean and the metric contraction is the one that yields a Proca mass. Which normalization the framework intends for the charged scalar — and whether the difference has content — is not settled here and is recorded in the companion.</p>
+<p><strong>The scalar kinetic term in the framework's own normalization.</strong> The scalar Lagrangian used here takes the Lorentz-invariant contraction of $D_\mu\varphi$ with its conjugate. The corpus's Noether article writes the free scalar kinetic term as the biquaternion norm $-\sum_\mu(\partial/\partial Q_\mu\,\varphi^*)(\partial/\partial Q_\mu\,\varphi)$, contracting the two factors without a relative metric sign. Because the $ict'$ time derivative is imaginary, $(\partial/\partial Q_t\,\varphi)^*=-\partial/\partial Q_t\,\varphi^*$, so this metric-free contraction already carries the Lorentzian sign and equals the Lorentz-invariant combination $-\sum_{\mu,\nu}g_{\mu\nu}(\partial/\partial Q_\mu\,\varphi)^*(\partial/\partial Q_\nu\,\varphi)$: for the free scalar the two normalisations coincide, for a complex scalar as much as for a real one, and the metric-free form is not the Euclidean modulus. The two part company only once the derivative is gauged, where the all-plus contraction is Euclidean and the metric contraction is the one that yields a Proca mass. Which normalization the framework intends for the charged scalar — and whether the difference has content — is not settled here and is recorded in the companion.</p>
 </li>
 <li>
 <p><strong>The Yukawa coupling.</strong> How does the framework's scalar couple to the chiral spinor halves so as to generate fermion mass after breaking? The chiral-fermions article poses the question and this article does not answer it.</p>
@@ -254,14 +254,14 @@ D_\mu\tilde{\Phi}\Big|_{\text{vac}} = \frac{iϙ}{\hbar}A_\mu\langle\tilde{\Phi}\
 $$</p>
 <p>and the gauge-invariant scalar kinetic term therefore reduces to a quadratic form in the connection,</p>
 <p>$$
--\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
+-\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$</p>
 <p>which is a Proca mass term with</p>
 <p>$$
 M_A^2 = \frac{ϙ^2v^2}{\hbar^2}
 $$</p>
-<p>No mass term was written by hand: a term $m^2A_\mu A^\mu$ is not gauge invariant, while the kinetic term is, and the mass appears only after the non-invariant vacuum is substituted. The mass does not involve the quartic coupling $\beta$; the radial mode's mass $m_h^2 = 2\beta v^2$ does. The angular mode of the scalar is a would-be Goldstone boson with no potential; a gauge transformation removes it (the unitary gauge), and the connection acquires it as its longitudinal polarization. The degree-of-freedom count balances, $2 + 2 = 1 + 3$.</p>
+<p>No mass term was written by hand: a term $m^2\sum_\mu A_\mu A_\mu$ is not gauge invariant, while the kinetic term is, and the mass appears only after the non-invariant vacuum is substituted. The mass does not involve the quartic coupling $\beta$; the radial mode's mass $m_h^2 = 2\beta v^2$ does. The angular mode of the scalar is a would-be Goldstone boson with no potential; a gauge transformation removes it (the unitary gauge), and the connection acquires it as its longitudinal polarization. The degree-of-freedom count balances, $2 + 2 = 1 + 3$.</p>
 <p>The coefficient and the count were recomputed: the induced quadratic form equals $-ϙ^2v^2/2\hbar^2$ times $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ on a generic connection direction and on two independent parameter sets (relative error below $10^{-15}$); the kinetic density is gauge invariant to round-off while a put-in mass term changes by a nonzero amount well above round-off; and the count balances only when the Goldstone mode is absorbed.</p>
 <p>One gap is left visible and is not closed. The framework's scalar lies in the centre and is therefore a <strong>singlet of the non-abelian factor</strong> $\mathrm{SU}(2)$ of the material sector; a singlet cannot break $SU(2)$. The framework supplies neither a scalar in a non-trivial representation, nor an electroweak doublet, nor the hypercharge assignments, and the reality condition on a non-abelian connection is itself open. The non-abelian and electroweak Higgs mechanism is therefore not constructed here, and the quantum numbers it would require are not invented. What is established is the mechanism and its counting; what is open is the representation of the scalar that the Standard Model needs.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -370,11 +370,11 @@ $$</p>
 <td>$ict'$-coordinate metric for contractions</td>
 </tr>
 <tr>
-<td>$\mathcal{L}_\text{scalar} = -g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi) - V$</td>
+<td>$\mathcal{L}_\text{scalar} = -\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi) - V$</td>
 <td>Gauge-invariant scalar Lagrangian</td>
 </tr>
 <tr>
-<td>$-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\big|_\text{vac} = -\frac{ϙ^2v^2}{2\hbar^2}\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$</td>
+<td>$-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\big|_\text{vac} = -\frac{ϙ^2v^2}{2\hbar^2}\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$</td>
 <td>Kinetic term at the vacuum = mass term</td>
 </tr>
 <tr>

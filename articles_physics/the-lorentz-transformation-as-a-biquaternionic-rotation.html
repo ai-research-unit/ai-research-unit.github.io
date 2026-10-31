@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-lorentz-transformation-as-a-biquaternionic-rotation"><strong>The Lorentz Transformation as a Biquaternionic Rotation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Lorentz transformation is usually presented as a change of coordinates between inertial frames, expressed by a $4 \times 4$ real matrix $\Lambda^\mu{}_\nu$ that preserves the Minkowski metric. In the biquaternion formulation, the same transformation appears as a <strong>rotation</strong> — specifically, a rotation in the complexified four-dimensional space whose coordinates are the components of the biquaternion.</p>
+<p>The Lorentz transformation is usually presented as a change of coordinates between inertial frames, expressed by a $4 \times 4$ real matrix $\Lambda_{\mu\nu}$, with $\mu$ the row and $\nu$ the column, that preserves the Minkowski metric. In the biquaternion formulation, the same transformation appears as a <strong>rotation</strong> — specifically, a rotation in the complexified four-dimensional space whose coordinates are the components of the biquaternion.</p>
 <p>This article develops the biquaternionic formulation of the Lorentz transformation. The central objects are:</p>
 <ol>
 <li>The <strong>boost biquaternion</strong> $\tilde U_{\mathrm b}$, the Lorentz rotor that generates the transformation.</li>
@@ -79,7 +79,7 @@
 </ol>
 <p>The article is organized as follows. First the $ict'$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.</p>
 <p>The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities. A pure boost is written $\tilde U_{\mathrm b}$, the rotation factor $\tilde u_{\mathrm r}$, and the general rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost formulas below are the case $\tilde u_{\mathrm r}=e_t$, and a general transformation is recovered by multiplying the boost on the right by the rotation.</p>
-<h2 id="the-math22-convention-and-the-euclidean-metric">The $ict'$ Convention and the Euclidean Metric</h2>
+<h2 id="the-math24-convention-and-the-euclidean-metric">The $ict'$ Convention and the Euclidean Metric</h2>
 <p>The foundation of the biquaternion formulation of the Lorentz transformation is the $ict'$ convention. The Minkowski interval is written</p>
 <p>$$
 ds^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2.
@@ -96,7 +96,7 @@ $$</p>
 <p>The Lorentz group $SO(1,3)$ is the subgroup of $SO(4,\mathbb{C})$ that preserves the <strong>real slice</strong> $x^0 = ict'$ (i.e., the slice on which $x^0$ is purely imaginary and $x^1, x^2, x^3$ are real). So:</p>
 <p><strong>The Lorentz group is a real slice of the complex rotation group $SO(4, \mathbb{C})$.</strong></p>
 <p>This is the precise sense in which the Lorentz transformation is a rotation: it is a rotation in the complexified four-dimensional space, restricted to the real slice on which the time coordinate is imaginary.</p>
-<h3 id="the-subtlety-of-working-over-math40">The Subtlety of Working Over $\mathbb{C}$</h3>
+<h3 id="the-subtlety-of-working-over-math42">The Subtlety of Working Over $\mathbb{C}$</h3>
 <p>The statement "the Lorentz transformation is a rotation" requires care, because we are working over the complex numbers. The key points:</p>
 <p><strong>1. The rotation angle is imaginary.</strong> A boost is a rotation by an <strong>imaginary angle</strong> in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x^0, x^1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x^0, x^1)$ plane. Substituting $\theta = i\psi$ (imaginary angle) gives $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{01}$, which is the <strong>boost</strong> rotor in the $(x^0, x^1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\psi$ (the rapidity) is the "imaginary angle" of the rotation.</p>
 <p><strong>2. The bilinear form is complex.</strong> The quantity preserved by the rotation is the general plain bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).</p>
@@ -282,24 +282,24 @@ $$</p>
 \tilde U_{\mathrm b,2\leftarrow1} = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}^{-1}
 $$</p>
 <p>carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U_{\mathrm L}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.</p>
-<p><strong>The reciprocal basis.</strong> The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are</p>
+<p><strong>The reciprocal basis.</strong> The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\hat{\mathcal E}_\mu\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are</p>
 <p>$$
 \mathcal{E}_0 = e_t,\quad \mathcal{E}_k = \vec e_k,
 \qquad
-\mathcal{E}^{0} = e_t,\quad \mathcal{E}^{k} = -\vec e_k,
+\hat{\mathcal E}_0 = e_t,\quad \hat{\mathcal E}_k = -\vec e_k,
 $$</p>
-<p>the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q^0, q^k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as</p>
+<p>the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q_0, q_k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as</p>
 <p>$$
-q_2^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
+q_{2\mu} = \sum_{\nu} L_{\mu\nu}\, q_{\nu},
 \qquad
-L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde U_{\mathrm L}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm L}^{*}\right),
+L_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm L}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm L}^{*}\right),
 $$</p>
-<p>and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis.</p>
+<p>and the matrix $L_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis.</p>
 <p>This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.</p>
 <h2 id="what-fixes-the-transformation-the-experimental-route">What Fixes the Transformation: The Experimental Route</h2>
 <p>Everything so far derives the transformation; nothing so far says what <em>selects</em> it. The algebra of $\mathbb{B}$ contains real and imaginary rotation angles alike, so it expresses a boost rotor with a real angle as readily as one with an imaginary angle, and the choice between them is not a choice the algebra makes. It was made by experiment. This section records the experiments and states their ownership, because a derivation that never says what fixes it invites the reader to mistake the derivation for the evidence.</p>
 <p><strong>Boundary.</strong> Nothing in this section is biquaternionic and nothing in it is a result of this corpus. The optical experiments, the contraction hypothesis and the two postulates are standard special relativity, recorded here from a single source, the <em>Relativité restreinte</em> chapter of J. Surdej, and recomputed arithmetically where a number appears. The biquaternionic formulation is a <strong>reformulation</strong> of the same group, so these experiments can neither confirm nor refute it: they select the group $SO^+(1,3)$, and every faithful representation of that group reproduces them. The bounds by which the reformulation could be told apart from the group belong to <em>The Empirical Status of the Biquaternion Framework</em>, not here.</p>
-<h3 id="the-three-optical-experiments-and-their-orders-in-math220">The Three Optical Experiments and Their Orders in $\beta$</h3>
+<h3 id="the-three-optical-experiments-and-their-orders-in-math222">The Three Optical Experiments and Their Orders in $\beta$</h3>
 <p>Three nineteenth-century optical experiments bear on the kinematics, at different orders in the velocity ratio $\beta = v/c$.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -374,7 +374,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>Higher-rank tensors.</strong> The rotor conjugation $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F^{\mu\nu}$ and the energy–momentum tensor $T^{\mu\nu}$?</p>
+<p><strong>Higher-rank tensors.</strong> The rotor conjugation $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F_{\mu\nu}$ and the energy–momentum tensor $T_{\mu\nu}$?</p>
 </li>
 <li>
 <p><strong>Spinor transformations.</strong> A spinor transforms under the Lorentz group by a <strong>one-sided</strong> multiplication, not by a rotor conjugation. What is the precise biquaternion form of the spinor transformation, and how does it relate to the Dirac equation?</p>
