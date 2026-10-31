@@ -80,9 +80,9 @@ This category is not a prerequisite of any other, and no other category is a pre
 
 ## The Mathematical Corpus about Biquaternions
 
-The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and eighty-one entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that this category has not yet read.
+The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and thirty-nine entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that this category has not yet read.
 
-The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-five further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry three hundred and sixteen entries, and they are the full mathematical source of the category.
+The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-five further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and seventy-four entries, and they are the full mathematical source of the category.
 
 ### Algebra
 
@@ -94,38 +94,11 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Six Subspaces](../articles_maths/the-six-subspaces.html)
 - [The Subspaces and Their Relations](../articles_maths/the-subspaces-and-their-relations.html)
 - [The Three Eigenspace Decompositions](../articles_maths/the-three-eigenspace-decompositions.html)
+- [Matrix Representations : The Models and the Change of Frame](../articles_maths/matrix-representations-the-models-and-the-change-of-frame.html)
+- [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html)
+- [Matrix Representations : The Six Subspaces as Matrix Conditions](../articles_maths/matrix-representations-the-six-subspaces-as-matrix-conditions.html)
 - [The Square of an Element](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
-- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](../articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html)
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](../articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](../articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html)
-
-#### The Matrix Representations
-
-- [The Models and the Change of Frame](../articles_maths/matrix-representations-the-models-and-the-change-of-frame.html)
-- [The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html)
-- [The Six Subspaces as Matrix Conditions](../articles_maths/matrix-representations-the-six-subspaces-as-matrix-conditions.html)
-- [Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
-- [The Spectral Projectors](../articles_maths/matrix-representations-the-spectral-projectors.html)
-- [The Centraliser and the Double Centraliser](../articles_maths/matrix-representations-the-centraliser-and-the-double-centraliser.html)
-- [The Eigenbasis and the Diagonalising Matrix](../articles_maths/matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html)
-- [The Jordan Basis and the Jordanising Matrix](../articles_maths/matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html)
-- [Worked Examples](../articles_maths/matrix-representations-worked-examples.html)
-- [The Four Words and the Four Traces](../articles_maths/matrix-representations-the-four-words-and-the-four-traces.html)
-- [Trace, Determinant and the Biquaternion Norm](../articles_maths/matrix-representations-trace-determinant-and-the-biquaternion-norm.html)
-- [The Polar Decomposition of a Matrix](../articles_maths/matrix-representations-the-polar-decomposition-of-a-matrix.html)
-- [Rank-One Matrices and the Determinantal Variety](../articles_maths/matrix-representations-rank-one-matrices-and-the-determinantal-variety.html)
-- [Spin, Qubits and the Bloch Vector](../articles_maths/matrix-representations-spin-qubits-and-the-bloch-vector.html)
-- [The Conjugations and the Adjoints](../articles_maths/matrix-representations-the-conjugations-and-the-adjoints.html)
-- [The Killing Form](../articles_maths/matrix-representations-the-killing-form.html)
-- [The Functional Calculus](../articles_maths/matrix-representations-the-functional-calculus.html)
-- [$GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/matrix-representations-gl2-sl2-and-the-determinant.html)
-- [The Projective Line and the Möbius Action](../articles_maths/matrix-representations-the-projective-line-and-the-mobius-action.html)
-- [The Left Regular Operators](../articles_maths/matrix-representations-the-left-regular-operators.html)
-- [The Right Regular Operators](../articles_maths/matrix-representations-the-right-regular-operators.html)
-- [The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html)
-- [The Hermitian Sandwich](../articles_maths/matrix-representations-the-hermitian-sandwich.html)
 
 #### The Frame
 
@@ -134,8 +107,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
-- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
 
 #### The Modules
 
@@ -149,22 +121,17 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Element
 
 - [The Spectrum](../articles_maths/the-spectrum.html)
-- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](../articles_maths/m2c-model-the-spectral-projectors.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Spectral Projectors](../articles_maths/m4c-model-the-spectral-projectors.html)
+- [Matrix Representations : The Spectral Projectors](../articles_maths/matrix-representations-the-spectral-projectors.html)
 - [The Centraliser](../articles_maths/the-centraliser.html)
-- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](../articles_maths/m2c-model-the-centraliser-and-the-double-centraliser.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser](../articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html)
+- [Matrix Representations : The Centraliser and the Double Centraliser](../articles_maths/matrix-representations-the-centraliser-and-the-double-centraliser.html)
 - [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html)
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
-- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](../articles_maths/matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html)
 - [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
-- [$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html)
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](../articles_maths/matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html)
 - [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html)
-- [$M_2(\mathbb{C})$ Representation : Worked Examples](../articles_maths/m2c-representation-worked-examples.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Worked Examples](../articles_maths/m4c-representation-worked-examples.html)
+- [Matrix Representations : Worked Examples](../articles_maths/matrix-representations-worked-examples.html)
 
 #### The Four General Products
 
@@ -175,27 +142,22 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Four Forms and Their Algebraic Norms
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
-- [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](../articles_maths/m2c-representation-the-four-words-and-the-four-traces.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Four Words and the Four Traces](../articles_maths/m4c-representation-the-four-words-and-the-four-traces.html)
+- [Matrix Representations : The Four Words and the Four Traces](../articles_maths/matrix-representations-the-four-words-and-the-four-traces.html)
 
-- [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](../articles_maths/m2c-representation-trace-determinant-and-the-biquaternion-norm.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm](../articles_maths/m4c-representation-trace-determinant-and-the-biquaternion-norm.html)
+- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](../articles_maths/matrix-representations-trace-determinant-and-the-biquaternion-norm.html)
 
 #### Algebra with the H Norm
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html)
-- [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](../articles_maths/m2c-representation-the-polar-decomposition-of-a-matrix.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Polar Decomposition of a Matrix](../articles_maths/m4c-representation-the-polar-decomposition-of-a-matrix.html)
+- [Matrix Representations : The Polar Decomposition of a Matrix](../articles_maths/matrix-representations-the-polar-decomposition-of-a-matrix.html)
 
 #### Algebra with the N Norm
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
 - [The N-Regular Sector](../articles_maths/the-n-regular-sector.html)
 - [The N-Degenerate Sector](../articles_maths/the-n-degenerate-sector.html)
-- [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](../articles_maths/m2c-representation-rank-one-matrices-and-the-determinantal-variety.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Rank-One Matrices and the Determinantal Variety](../articles_maths/m4c-representation-rank-one-matrices-and-the-determinantal-variety.html)
-- [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](../articles_maths/m2c-representation-spin-qubits-and-the-bloch-vector.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Spin, Qubits and the Bloch Vector](../articles_maths/m4c-representation-spin-qubits-and-the-bloch-vector.html)
+- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](../articles_maths/matrix-representations-rank-one-matrices-and-the-determinantal-variety.html)
+- [Matrix Representations : Spin, Qubits and the Bloch Vector](../articles_maths/matrix-representations-spin-qubits-and-the-bloch-vector.html)
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html)
 
@@ -216,8 +178,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Remarkable Subspaces and the Forms
 
-- [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](../articles_maths/m2c-representation-the-conjugations-and-the-adjoints.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints](../articles_maths/m4c-representation-the-conjugations-and-the-adjoints.html)
+- [Matrix Representations : The Conjugations and the Adjoints](../articles_maths/matrix-representations-the-conjugations-and-the-adjoints.html)
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
@@ -238,13 +199,11 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [$M_2(\mathbb{C})$ Representation : The Hermitian Sandwich](../articles_maths/the-sandwich-in-the-m2c-model.html)
-- [$M_4(\mathbb{C})_{\Theta}$ Representation : The Hermitian Sandwich](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
-- [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](../articles_maths/m4c-representation-the-general-endomorphisms.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html)
+- [Matrix Representations : The Hermitian Sandwich](../articles_maths/matrix-representations-the-hermitian-sandwich.html)
+- [Matrix Representations : The Left Regular Operators](../articles_maths/matrix-representations-the-left-regular-operators.html)
+- [Matrix Representations : The Right Regular Operators](../articles_maths/matrix-representations-the-right-regular-operators.html)
 - [The Commutant of the Two Regular Families](../articles_maths/the-commutant-of-the-two-regular-families.html)
-- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html)
+- [Matrix Representations : The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html)
 - [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html)
 
 ### Topology
@@ -257,8 +216,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html)
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
-- [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/m2c-representation-gl2-sl2-and-the-determinant.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/m4c-representation-gl2-sl2-and-the-determinant.html)
+- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/matrix-representations-gl2-sl2-and-the-determinant.html)
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html)
 
 ### Analysis
@@ -270,11 +228,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)
 - [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html)
 - [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html)
-- [$M_2(\mathbb{C})$ Representation : The Killing Form](../articles_maths/m2c-representation-the-killing-form.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Killing Form](../articles_maths/m4c-representation-the-killing-form.html)
+- [Matrix Representations : The Killing Form](../articles_maths/matrix-representations-the-killing-form.html)
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html)
-- [$M_2(\mathbb{C})$ Representation : The Functional Calculus](../articles_maths/m2c-representation-the-functional-calculus.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Functional Calculus](../articles_maths/m4c-representation-the-functional-calculus.html)
+- [Matrix Representations : The Functional Calculus](../articles_maths/matrix-representations-the-functional-calculus.html)
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
@@ -310,8 +266,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html)
-- [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](../articles_maths/m2c-representation-the-projective-line-and-the-mobius-action.html)
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Projective Line and the Möbius Action](../articles_maths/m4c-representation-the-projective-line-and-the-mobius-action.html)
+- [Matrix Representations : The Projective Line and the Möbius Action](../articles_maths/matrix-representations-the-projective-line-and-the-mobius-action.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html)
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html)
@@ -344,7 +299,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 - It carries thirty-six articles that interpret results. Each links one or several articles of the Mathematical menu, states their results, then gives labelled physical interpretations with their boundaries.
 - The category owns no theorem; the proof stays in the mathematics article.
 - One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
-- The index lists the one hundred and eighty-one entries of the *Biquaternions* category, grouped as the Mathematical menu groups them. The category also reads the one hundred and thirty-five entries of the *Biquaternion Algebraic Structures* category, three hundred and sixteen in all.
+- The index lists the one hundred and thirty-nine entries of the *Biquaternions* category, grouped as the Mathematical menu groups them. The category also reads the one hundred and thirty-five entries of the *Biquaternion Algebraic Structures* category, two hundred and seventy-four in all.
 
 ## Summary of Notation
 

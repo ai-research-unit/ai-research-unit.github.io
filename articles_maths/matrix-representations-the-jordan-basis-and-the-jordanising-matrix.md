@@ -327,5 +327,5 @@ The Jordan basis $\mathcal J=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilo
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the flag and the canonical pair
 - [Nilpotents](nilpotents.html), for the nilpotent cone
 - [The Spectrum](the-spectrum.html), for the spectral criterion
-- [$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix](m2c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ source
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the $2\times2$ source
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ source

@@ -4,7 +4,7 @@
 
 The minimal left ideals of the split-quaternion algebra form a real projective line, and the group of units acts on that line by left multiplication. In the matrix model the ideals are the sets of matrices whose image lies in a fixed line of $\mathbb{R}^2$, the action is the defining action of $GL_2(\mathbb{R})$ on the lines, and in a chart it is the Möbius action of $PGL_2(\mathbb{R})$.
 
-This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the real counterpart of *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*, and the geometric content is the action of the Lorentz group on the boundary of the hyperbolic plane.
+This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the real counterpart of *Matrix Representations : The Projective Line and the Möbius Action*, and the geometric content is the action of the Lorentz group on the boundary of the hyperbolic plane.
 
 **Conventions.** The algebra and the model are those of *Split-Quaternion Matrix Element Representations*. A vector of $\mathbb{R}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{R})$. The chart is $t=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
 
@@ -166,7 +166,7 @@ So the adjoint action moves both rulings by the same projective transformation, 
 
 **Proof.** The isomorphism is the adjoint action on the traceless part, and the identification of the projective line with the boundary is the proposition above.
 
-**Remark (the biquaternion analogue).** In the biquaternion category the same construction gives the projective line $\mathbb{P}^1(\mathbb{C})$, which is a two-sphere and the boundary of hyperbolic three-space; the Möbius group is $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, connected, and its action is developed in *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*. Over the reals the boundary is a circle and the Möbius group has two components; over the complex numbers the boundary is a sphere and the Möbius group is connected. This is the geometric form of the difference between the two signatures.
+**Remark (the biquaternion analogue).** In the biquaternion category the same construction gives the projective line $\mathbb{P}^1(\mathbb{C})$, which is a two-sphere and the boundary of hyperbolic three-space; the Möbius group is $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, connected, and its action is developed in *Matrix Representations : The Projective Line and the Möbius Action*. Over the reals the boundary is a circle and the Möbius group has two components; over the complex numbers the boundary is a sphere and the Möbius group is connected. This is the geometric form of the difference between the two signatures.
 
 ## Summary
 

@@ -213,4 +213,4 @@ The algebra carries the quaternion conjugation ${}^{\natural}$, $\mathbb{C}$-lin
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four maps and the scalar–vector form of the product
 - [The Six Subspaces](the-six-subspaces.html), for the six subspaces of the three splittings, one to a section
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the relations between the six and the lattice they form
-- [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the matrix images of the four maps
+- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the matrix images of the four maps

@@ -157,6 +157,6 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 
 - [The Six Subspaces](the-six-subspaces.html), for the definitions
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the matrix involutions
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version
+- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the matrix involutions
+- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant
+- [Matrix Representations : The Six Subspaces as Matrix Conditions](matrix-representations-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version

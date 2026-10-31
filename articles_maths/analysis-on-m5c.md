@@ -319,7 +319,7 @@ $$
 
 **Proof.** The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; the unitarity follows from the inversion and the $L^2$ pairing.
 
-**Corollary.** The Fourier transform converts differentiation into multiplication: $\widehat{\partial_jf}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.
+**Corollary.** The Fourier transform converts differentiation into multiplication: $\widehat{\partial f/\partial x_j}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.
 
 **Proof.** Integration by parts; the convolution theorem is the standard one.
 
@@ -339,7 +339,7 @@ $$
 p_t(x)=\frac{1}{(4\pi t)^{25}}e^{-|x|^2/(4t)},
 $$
 
-and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
+and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
 
 **Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t|\xi|^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
 
@@ -364,7 +364,7 @@ and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
 **Definition.** **Fueter theory** is the quaternionic analysis of the Cauchy–Fueter operator
 
 $$
-\bar\partial=\partial_{q_0}+i\partial_{q_1}+j\partial_{q_2}+k\partial_{q_3},
+\bar\partial=\partial/\partial q_0+i\,\partial/\partial q_1+j\,\partial/\partial q_2+k\,\partial/\partial q_3,
 $$
 
 acting on functions of a quaternion variable $q=q_0+q_1i+q_2j+q_3k$; the Fueter-regular functions are the solutions of $\bar\partial f=0$.

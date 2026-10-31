@@ -293,30 +293,30 @@ This is impossible. The three spins are the union of the constituents of two str
 Let $\mathbb{C}[x,y,z]$ be the polynomial algebra, with $x,y,z$ the coordinates of $\mathbb{R}^3$. The orbital generators are
 
 $$
-L_k=-i\epsilon_{klm}x_l\partial_m,
+L_k=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m,
 $$
 
 that is,
 
 $$
-L_1=-i(y\partial_z-z\partial_y),\quad L_2=-i(z\partial_x-x\partial_z),\quad L_3=-i(x\partial_y-y\partial_x).
+L_1=-i(y\,\partial/\partial z-z\,\partial/\partial y),\quad L_2=-i(z\,\partial/\partial x-x\,\partial/\partial z),\quad L_3=-i(x\,\partial/\partial y-y\,\partial/\partial x).
 $$
 
 **Proposition.** The $L_k$ are derivations of $\mathbb{C}[x,y,z]$ and satisfy $[L_i,L_j]=i\epsilon_{ijk}L_k$.
 
-*Proof.* Each is a first-order derivation. The bracket is the commutator of the corresponding vector fields; the vector fields $D_k=\epsilon_{klm}x_l\partial_m$ satisfy $[D_i,D_j]=-\epsilon_{ijk}D_k$, and the factor $(-i)^2=-1$ changes the sign.
+*Proof.* Each is a first-order derivation. The bracket is the commutator of the corresponding vector fields; the vector fields $D_k=\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ satisfy $[D_i,D_j]=-\epsilon_{ijk}D_k$, and the factor $(-i)^2=-1$ changes the sign.
 
 The Casimir is
 
 $$
 L^2=L_1^2+L_2^2+L_3^2
-=-\left[\frac{1}{\sin\theta}\,\partial_\theta\bigl(\sin\theta\,\partial_\theta\bigr)
-+\frac{1}{\sin^2\theta}\,\partial_\phi^2\right],
+=-\left[\frac{1}{\sin\theta}\,\partial/\partial\theta\bigl(\sin\theta\,\partial/\partial\theta\bigr)
++\frac{1}{\sin^2\theta}\,\partial^2/\partial\phi^2\right],
 $$
 
 whose eigenfunctions are the spherical harmonics, with $L^2Y_l^m=l(l+1)Y_l^m$ and $L_3Y_l^m=mY_l^m$.
 
-**Theorem (the harmonic decomposition).** Let $\mathcal{H}_l$ be the space of harmonic polynomials of degree $l$, that is, the kernel of $\Delta=\partial_x^2+\partial_y^2+\partial_z^2$ on the degree-$l$ part. Then $\mathcal{H}_l\cong\mathcal{V}_{2l}$, of dimension $2l+1$, and
+**Theorem (the harmonic decomposition).** Let $\mathcal{H}_l$ be the space of harmonic polynomials of degree $l$, that is, the kernel of $\Delta=\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2$ on the degree-$l$ part. Then $\mathcal{H}_l\cong\mathcal{V}_{2l}$, of dimension $2l+1$, and
 
 $$
 \mathbb{C}[x,y,z]=\bigoplus_{l\ge0}\mathcal{H}_l
@@ -461,7 +461,7 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents |
 | $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The lowering vector of $S_+$ |
 | $v_+=\vec e_x+i\vec e_y$ | The highest-weight vector of $V$ |
-| $L_k=-i\epsilon_{klm}x_l\partial_m$ | The orbital generators |
+| $L_k=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
 | $\mathcal{H}_l$ | The harmonic polynomials of degree $l$ |
 
 ## Further Reading

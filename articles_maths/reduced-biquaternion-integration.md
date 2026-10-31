@@ -25,14 +25,14 @@ $$
 
 **Theorem (the derivative of an integral and integration by parts).** For a $C^{1}$ function $f$ on a bounded $\Omega$ with piecewise smooth boundary, and any coordinate direction with unit vector $e_{\nu}$,
 $$
-\int_{\Omega}\partial_{\nu}f\,\mathrm{d}\mu=\int_{\partial\Omega}f\,n_{\nu}\,\mathrm{d}S ,
+\int_{\Omega}\partial f/\partial x_\nu\,\mathrm{d}\mu=\int_{\partial\Omega}f\,n_{\nu}\,\mathrm{d}S ,
 $$
 the outward normal $n=(n_{q_{\blacktriangle}},n_{q'_{\blacktriangle}},n_{q_{\blacktriangledown}},n_{q'_{\blacktriangledown}})$ and $\mathrm{d}S$ the surface measure. Consequently, for $C^{1}$ functions $f,h$,
 $$
-\int_{\Omega}(\partial_{\nu}f)\,h\,\mathrm{d}\mu=-\int_{\Omega}f\,(\partial_{\nu}h)\,\mathrm{d}\mu+\int_{\partial\Omega}f\,h\,n_{\nu}\,\mathrm{d}S .
+\int_{\Omega}(\partial f/\partial x_\nu)\,h\,\mathrm{d}\mu=-\int_{\Omega}f\,(\partial h/\partial x_\nu)\,\mathrm{d}\mu+\int_{\partial\Omega}f\,h\,n_{\nu}\,\mathrm{d}S .
 $$
 
-*Proof.* The scalar divergence theorem applied to each of the four real coordinates of $f$ gives the first display; the product rule $\partial_{\nu}(fh)=(\partial_{\nu}f)h+f\partial_{\nu}h$ holds because the algebra is **commutative** and the derivative is a derivation, and integrating the product rule and applying the divergence theorem gives the second display.
+*Proof.* The scalar divergence theorem applied to each of the four real coordinates of $f$ gives the first display; the product rule $\partial(fh)/\partial x_\nu=(\partial f/\partial x_\nu)h+f\partial h/\partial x_\nu$ holds because the algebra is **commutative** and the derivative is a derivation, and integrating the product rule and applying the divergence theorem gives the second display.
 
 **Corollary (no side bookkeeping).** Since the multiplication is commutative, the two displays above hold without any distinction between a left and a right gradient, in contrast with the split biquaternion case, where transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$.
 
@@ -42,7 +42,7 @@ $$
 
 **Definition.** For a $C^{1}$ field $f$ the **divergence** is $\operatorname{div}f=\partial/\partial q_{\blacktriangle}f_{q_{\blacktriangle}}+\partial/\partial q'_{\blacktriangle}f_{q'_{\blacktriangle}}+\partial/\partial q_{\blacktriangledown}f_{q_{\blacktriangledown}}+\partial/\partial q'_{\blacktriangledown}f_{q'_{\blacktriangledown}}$ when $f$ is resolved into its four coordinate components, and the **algebra-valued divergence** is
 $$
-\operatorname{Div}f=\sum_{\nu=1}^{4}\partial_{\nu}f\,\otimes\,e_{\nu},
+\operatorname{Div}f=\sum_{\nu=1}^{4}\partial f/\partial x_\nu\,\otimes\,e_{\nu},
 $$
 the sum of the four partial derivatives, which is the gradient of the algebra-valued field read in the monomial basis.
 
@@ -65,7 +65,7 @@ $$
 $$
 \int_{\Omega}\bigl(f\,\Delta h-h\,\Delta f\bigr)\mathrm{d}\mu=\int_{\partial\Omega}\bigl(f\,\partial/\partial n\,h-h\,\partial/\partial n\,f\bigr)\mathrm{d}S ,
 $$
-where $\partial f\cdot\partial h=\sum_{\nu}(\partial_{\nu}f)(\partial_{\nu}h)$ is the Euclidean pairing of the two gradients, $\Delta$ is the Euclidean Laplacian and $\partial/\partial n$ the normal derivative.
+where $\partial f\cdot\partial h=\sum_{\nu}(\partial f/\partial x_\nu)(\partial h/\partial x_\nu)$ is the Euclidean pairing of the two gradients, $\Delta$ is the Euclidean Laplacian and $\partial/\partial n$ the normal derivative.
 
 *Proof.* Green's first formula is the divergence theorem applied to the field $f\,\nabla h$, whose divergence is $(\nabla f)\cdot(\nabla h)+f\Delta h$ by the product rule and the commutativity; the second is the first with the roles exchanged, subtracted, the bilinear terms cancelling.
 
@@ -162,7 +162,7 @@ The integral of a reduced biquaternion-valued function on a domain of $\mathbb{R
 |---|---|
 | $\int_{\Omega}f\,\mathrm{d}\mu$ | Integral of an algebra-valued function on a domain |
 | $\lVert f\rVert=\sqrt{K(f)}$ | Euclidean norm of the value |
-| $\operatorname{Div}f=\sum_{\nu}\partial_{\nu}f\otimes e_{\nu}$ | Algebra-valued divergence |
+| $\operatorname{Div}f=\sum_{\nu}\partial f/\partial x_\nu\otimes e_{\nu}$ | Algebra-valued divergence |
 | $\Delta$ | Euclidean Laplacian in the four real coordinates |
 | $G(\breve Q)=\tfrac{1}{2\pi i}(\Pi_+/Q_{+}+\Pi_-/Q_{-})$ | Cauchy kernel |
 | $1/(\pi Q_{+})$ | One-variable fundamental solution of $\partial/\partial\bar Q_{+}$ |

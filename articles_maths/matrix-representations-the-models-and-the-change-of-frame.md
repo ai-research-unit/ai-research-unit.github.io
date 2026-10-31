@@ -314,7 +314,7 @@ C_{\Pi}^{-1}=\begin{pmatrix}
 \end{pmatrix},
 $$
 
-and $\det C_{\Pi}=-\tfrac14$. The change is the one of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*, §*The Algebra in Matrix Form*; the display is repeated here because every operator article uses it.
+and $\det C_{\Pi}=-\tfrac14$. The change is the one of *Matrix Representations : The Product, the Trace and the Determinant*, §*The Element and the Operator*; the display is repeated here because every operator article uses it.
 
 **The direction.** The columns of $C_{\Pi}$ are the Peirce elements in coefficient coordinates, so $C_{\Pi}$ carries a Peirce coordinate column to a coefficient coordinate column:
 

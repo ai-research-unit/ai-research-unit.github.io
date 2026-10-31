@@ -221,5 +221,5 @@ The commutant of a non-scalar $2\times2$ matrix is the plane $\mathbb{C}[X]=\ope
 - [The Centraliser](the-centraliser.html), for the module-theoretic statement
 - [The Category of Modules](the-category-of-modules.html), for the double centraliser theorem
 - [Idempotents](idempotents.html), for the spectral projectors
-- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ Representation : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the $4\times4$ source
+- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the $2\times2$ source
+- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the $4\times4$ source

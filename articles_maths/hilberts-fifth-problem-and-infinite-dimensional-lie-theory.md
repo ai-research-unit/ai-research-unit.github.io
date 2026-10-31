@@ -203,7 +203,7 @@ The failure is the central obstruction to the classical correspondence: without 
 
 **Proof sketch.** A nonzero vector field $X$ with a periodic flow of period $1$, for instance a constant vector field on the circle $S^1$, satisfies $\exp(X) = \mathrm{id}$; varying $X$ in the direction of the period leaves the time-one map trivial, so $d(\exp)_X$ has a nontrivial kernel. The failure of local surjectivity is established by exhibiting diffeomorphisms arbitrarily close to the identity that are not the time-one map of any flow; the argument counts the dimension available in the algebra against the degrees of freedom of the group near the identity.
 
-**Example.** On $M = S^1$, the vector field $X = \partial_\theta$ has flow $\Phi_X^t(\theta) = \theta + t$, so $\exp(2\pi k\, \partial_\theta) = \mathrm{id}$ for every integer $k$; the exponential is far from injective, and the Lie algebra $\mathrm{X}(S^1)$ is infinite-dimensional while the group is a union of finite-dimensional circles.
+**Example.** On $M = S^1$, the vector field $X = \partial/\partial\theta$ has flow $\Phi_X^t(\theta) = \theta + t$, so $\exp(2\pi k\,\partial/\partial\theta) = \mathrm{id}$ for every integer $k$; the exponential is far from injective, and the Lie algebra $\mathrm{X}(S^1)$ is infinite-dimensional while the group is a union of finite-dimensional circles.
 
 ## Summary
 

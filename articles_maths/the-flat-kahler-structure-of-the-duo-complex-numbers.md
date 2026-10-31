@@ -31,7 +31,7 @@ $$
 $$
 for real vector fields $X,Y$. In particular $\Omega$ is nondegenerate and $J$ is an isometry of $g$.
 
-*Proof.* In real coordinates, $\frac{i}{2}dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}$, and the same with the descending triangle, so $\Omega$ is the standard symplectic form of $\mathbb{R}^4$. The identity $\Omega(X,Y)=g(JX,Y)$ is checked on the basis: $J\partial_{q_{\blacktriangle}}=\partial_{q'_{\blacktriangle}}$, $J\partial_{q'_{\blacktriangle}}=-\partial_{q_{\blacktriangle}}$, and $g(\partial_{q_{\blacktriangle}},\partial_{q'_{\blacktriangle}})=0$, $g(J\partial_{q_{\blacktriangle}},\partial_{q'_{\blacktriangle}})=1$. The metric is positive definite and $g(JX,JY)=g(X,Y)$.
+*Proof.* In real coordinates, $\frac{i}{2}dQ_{\blacktriangle}\wedge d\overline{Q}_{\blacktriangle}=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}$, and the same with the descending triangle, so $\Omega$ is the standard symplectic form of $\mathbb{R}^4$. The identity $\Omega(X,Y)=g(JX,Y)$ is checked on the basis: $J\partial/\partial q_{\blacktriangle}=\partial/\partial q'_{\blacktriangle}$, $J\partial/\partial q'_{\blacktriangle}=-\partial/\partial q_{\blacktriangle}$, and $g(\partial/\partial q_{\blacktriangle},\partial/\partial q'_{\blacktriangle})=0$, $g(J\partial/\partial q_{\blacktriangle},\partial/\partial q'_{\blacktriangle})=1$. The metric is positive definite and $g(JX,JY)=g(X,Y)$.
 
 **Theorem (the Kähler condition).** The form $\Omega$ is closed, $d\Omega=0$, and the metric is Kähler. The complex structure $J$ is parallel, $\nabla J=0$, for the Levi-Civita connection of $g$.
 

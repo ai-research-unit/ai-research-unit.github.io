@@ -25,13 +25,13 @@ INDEX_TEMPLATE = (SRC / "index_template.html").read_text()
 COLLECTIONS = [
     {"name": "maths",   "src": SRC / "articles_maths",   "deploy": DEPLOY / "articles_maths"},
     {"name": "physics", "src": SRC / "articles_physics", "deploy": DEPLOY / "articles_physics"},
-    # Private working area. Drafts here build like the two public collections —
-    # each md gets its own page, so a single draft can be opened by its URL — but
-    # they are deliberately absent from maths.md and physics.md, which are the
-    # only route into the corpus. The pages are therefore reachable by direct URL
-    # and by nothing else. Marked optional so an empty folder is not a warning.
+    # Reference area. Drafts here build like the public collections — each md
+    # gets its own page, subfolders mirror into the deploy tree — but only the
+    # entries listed in maths.md are reachable from the menus. Marked optional so
+    # an empty folder is not a warning, and recursive so articles_reserve/matrix/
+    # can hold a nested archive.
     {"name": "reserve", "src": SRC / "articles_reserve", "deploy": DEPLOY / "articles_reserve",
-     "optional": True},
+     "optional": True, "recursive": True},
 ]
 
 
@@ -155,12 +155,13 @@ def build_nav_index(articles):
     items.append('<li><a href="contact.html">Contact</a></li>')
     return "\n      ".join(items)
 
-def build_nav_article(articles, current_stem=None):
+def build_nav_article(articles, current_stem=None, depth=1):
+    root = "../" * depth
     items = []
-    items.append('<li><a href="../maths.html">Maths</a></li>')
-    items.append('<li><a href="../physics.html">Physics</a></li>')
-    items.append('<li><a href="../disclaimer.html">Disclaimer</a></li>')
-    items.append('<li><a href="../contact.html">Contact</a></li>')
+    items.append(f'<li><a href="{root}maths.html">Maths</a></li>')
+    items.append(f'<li><a href="{root}physics.html">Physics</a></li>')
+    items.append(f'<li><a href="{root}disclaimer.html">Disclaimer</a></li>')
+    items.append(f'<li><a href="{root}contact.html">Contact</a></li>')
     return "\n      ".join(items)
 # ─────────────────────────────────────────────────────────────────────
 
@@ -177,7 +178,8 @@ def article_sort_key(p):
 
 def collect_articles():
     for coll in COLLECTIONS:
-        coll["articles"] = sorted(coll["src"].glob("*.md"), key=article_sort_key)
+        pattern = "**/*.md" if coll.get("recursive") else "*.md"
+        coll["articles"] = sorted(coll["src"].glob(pattern), key=article_sort_key)
 
 
 def nav_pool():
@@ -281,14 +283,23 @@ def build_article(coll, f, articles):
 
     body_html = md_to_html(body_md)
 
+    rel = f.relative_to(coll["src"])
+    # The collection folder is itself one level below the site root, so the
+    # prefix counts every part of `rel`, not only its parent folders.
+    depth = len(rel.parts)
+    root = "../" * depth
+    out = coll["deploy"] / rel.with_suffix(".html")
+    out.parent.mkdir(parents=True, exist_ok=True)
+
     html = (TEMPLATE
         .replace("{title}",      title)
         .replace("{coordinate}", meta.get("coordinate", ""))
-        .replace("{nav}",        build_nav_article(articles, current_stem=f.stem))
+        .replace("{nav}",        build_nav_article(articles, current_stem=f.stem, depth=depth))
+        .replace("{root}",       root)
         .replace("{body}",       body_html)
     )
-    (coll["deploy"] / f"{f.stem}.html").write_text(html)
-    print(f"Built: {coll['src'].name}/{f.stem}.html")
+    out.write_text(html)
+    print(f"Built: {coll['src'].name}/{rel.with_suffix('.html')}")
 
 
 # Root pages first: the menus and the landing page are the site's entry points,
@@ -317,11 +328,12 @@ def prune_orphans():
     # deployed article page that no longer has a matching source. This also
     # removes pages left in a collection by a file that moved to the other one.
     for coll in COLLECTIONS:
-        built = {f"{f.stem}.html" for f in coll["articles"]}
-        for stale in coll["deploy"].glob("*.html"):
-            if stale.name not in built:
+        built = {str(f.relative_to(coll["src"]).with_suffix(".html")) for f in coll["articles"]}
+        for stale in coll["deploy"].rglob("*.html"):
+            rel = str(stale.relative_to(coll["deploy"]))
+            if rel not in built:
                 stale.unlink()
-                print(f"Removed orphan: {coll['src'].name}/{stale.name}")
+                print(f"Removed orphan: {coll['src'].name}/{rel}")
     # ──────────────────────────────────────────────────────────────────────
 
 

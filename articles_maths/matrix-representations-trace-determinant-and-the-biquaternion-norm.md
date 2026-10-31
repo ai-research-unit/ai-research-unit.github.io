@@ -156,8 +156,8 @@ The trace is $4Q_t$ and the determinant is the squared norm $\langle\tilde Q\ran
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Four Words and the Four Traces](m4c-representation-the-four-words-and-the-four-traces.html), for the trace normalization
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
+- [Matrix Representations : The Four Words and the Four Traces](matrix-representations-the-four-words-and-the-four-traces.html), for the trace normalization
+- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the null cone
+- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the groups
 - [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the basic invariants
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norms

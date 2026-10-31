@@ -8,7 +8,7 @@ This article develops the ideals, the action and its kernel, the chart and the M
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$, with $L_0=\operatorname{span}\{e_2\}$ at $z=0$ and $L_\infty=\operatorname{span}\{e_1\}$ at $z=\infty$. The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$.
 
-**Boundaries.** The lattice of ideals and the parametrisation are *The Category of Modules*, §*The Projective Line and the Möbius Action*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *Matrix Representations : The Conjugations and the Adjoints*; the matrix statements are *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action* and *$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
+**Boundaries.** The lattice of ideals and the parametrisation are *The Category of Modules*, §*The Projective Line and the Möbius Action*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *Matrix Representations : The Conjugations and the Adjoints*; the matrix statements are *Matrix Representations : The Projective Line and the Möbius Action* and *Matrix Representations : The Projective Line and the Möbius Action*.
 
 ## The Ideals
 
@@ -203,6 +203,6 @@ The minimal ideals are the sets $I_L$ of matrices whose image lies in $L$, and $
 - [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the real structure
 - [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the module structure
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m2c-representation-the-projective-line-and-the-mobius-action.html), for the full entry-model treatment
-- [$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m4c-representation-the-projective-line-and-the-mobius-action.html), for the full regular treatment
+- [Matrix Representations : The Projective Line and the Möbius Action](matrix-representations-the-projective-line-and-the-mobius-action.html), for the full entry-model treatment
+- [Matrix Representations : The Projective Line and the Möbius Action](matrix-representations-the-projective-line-and-the-mobius-action.html), for the full regular treatment
 - [The Category of Modules](the-category-of-modules.html), for the module reading

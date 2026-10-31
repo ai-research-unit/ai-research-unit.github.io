@@ -120,7 +120,7 @@ $$
 \Delta N^{2}=\sum_k16f_k+2\sum_{i<j}4(f_i+f_j)=16N+64N=80N .
 $$
 
-**The heat kernel.** The heat equation $\partial_{t}u=\Delta u$ on $M_3$ has the kernel
+**The heat kernel.** The heat equation $\partial u/\partial t=\Delta u$ on $M_3$ has the kernel
 
 $$
 K_{t}(A,B)=(4\pi t)^{-9}\exp\Big(-\frac{\operatorname{tr}((A-B)^{*}(A-B))}{4t}\Big),
@@ -363,7 +363,7 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $a_{ij}=x_{ij}+iy_{ij}$ | matrix entries and real coordinates |
-| $\partial_{a},\partial_{\bar a}$ | Wirtinger derivatives |
+| $\partial/\partial a,\partial/\partial\bar a$ | Wirtinger derivatives |
 | $dA$ | Lebesgue measure on $\mathbb{C}^{9}$ |
 | $d\mu$ | Gaussian probability measure |
 | $\Delta$ | Euclidean Laplacian of $\mathbb{R}^{18}$ |

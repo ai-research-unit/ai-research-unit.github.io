@@ -8,7 +8,7 @@ This article develops the matrix theorem, the closed form of the positive factor
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and $N=\langle\tilde Q\rangle_{\natural}=\det B$. The regular matrix is $L=L(\tilde Q)=I_2\otimes B$, with $\det L=N^2$. The dagger is the Hermitian adjoint of *Matrix Representations : The Hermitian Sandwich*, and $*$-unitary means $V^{\dagger}V=\mathrm I$.
 
-**Boundaries.** The matrix theorem is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix* and *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the algebra word is *The Polar Decomposition of a Biquaternion*; the exponential is *Matrix Representations : The Functional Calculus*; the singular value decomposition is *The Singular Value Decomposition of a Biquaternion*; the boost and the rotor are *The Two Halves*.
+**Boundaries.** The matrix theorem is *Matrix Representations : The Polar Decomposition of a Matrix* and *Matrix Representations : The Polar Decomposition of a Matrix*; the algebra word is *The Polar Decomposition of a Biquaternion*; the exponential is *Matrix Representations : The Functional Calculus*; the singular value decomposition is *The Singular Value Decomposition of a Biquaternion*; the boost and the rotor are *The Two Halves*.
 
 ## The Theorem
 
@@ -204,6 +204,6 @@ Every invertible matrix is uniquely $M=PV$, with $P$ positive definite and $V$ u
 - [Matrix Representations : The Hermitian Sandwich](matrix-representations-the-hermitian-sandwich.html), for the unitary slice
 - [Matrix Representations : GL2, SL2 and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the determinant split
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the full $2\times2$ treatment
-- [$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the full $4\times4$ treatment
+- [Matrix Representations : The Polar Decomposition of a Matrix](matrix-representations-the-polar-decomposition-of-a-matrix.html), for the full $2\times2$ treatment
+- [Matrix Representations : The Polar Decomposition of a Matrix](matrix-representations-the-polar-decomposition-of-a-matrix.html), for the full $4\times4$ treatment
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the algebra word

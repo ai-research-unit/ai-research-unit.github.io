@@ -49,7 +49,7 @@ and the real dimension of the group is the sum $6+2=8$.
 
 **Remark (no splitting along the centre).** The sequence does not split by the central circle: the restriction of $\det$ to $\mathbb{C}^\times e_t$ is the squaring map $A\mapsto A^{2}$, which is two-to-one, and not an isomorphism. A splitting is supplied instead by the real directions.
 
-**Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant* the determinant gives
+**Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Matrix Representations : The Product, the Trace and the Determinant* the determinant gives
 
 $$
 \boxed{\; \mathbb{B}^\times\cong GL_2(\mathbb{C}),\qquad \mathbb{B}^\times_1\cong SL_2(\mathbb{C}),\qquad \mathbb{C}^\times e_t\cong \mathbb{C}^\times I \;},
@@ -164,5 +164,5 @@ The group of units $\mathbb{B}^\times$ is the $\natural$-regular set, the comple
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the Euclidean sphere and the contractibility of the ambient space
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the invertibility criterion, the inverse formula and the distribution of the units
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the zero divisors and their cone as the topological boundary of the group of units
-- [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the matrix model and the determinant
+- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the matrix model and the determinant
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).

@@ -332,8 +332,8 @@ The old $M_4(\mathbb{C})_L$ representation is the left regular matrix in the coe
 ## Further Reading
 
 - [Conventions in Mathematics](../articles_maths/conventions-in-mathematics), §*The Matrix Models*, for the current labels, the canonical frame and the retirement of $M_4(\mathbb{C})_L$
-- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant), for the current display and the change $S$
-- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra), for the sixteen cells and the gamma frame
-- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes), for the Peirce table and the two planes
-- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](../articles_maths/m4c-representation-the-conjugations-and-the-adjoints), for the transpose and dagger dictionaries in the coefficient basis
-- [The Sandwich in the $M_4(\mathbb{C})_L$ Model](../articles_maths/the-sandwich-in-the-m4c-l-model), for the congruence and its frame statement
+- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant), for the current display and the change $S$
+- [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/matrix-representations-the-two-sided-operators), for the sixteen cells and the gamma frame
+- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes), for the Peirce table and the two planes
+- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](../articles_maths/matrix-representations-the-conjugations-and-the-adjoints), for the transpose and dagger dictionaries in the coefficient basis
+- [The Sandwich in the $M_4(\mathbb{C})_L$ Model](../articles_maths/matrix-representations-the-hermitian-sandwich), for the congruence and its frame statement

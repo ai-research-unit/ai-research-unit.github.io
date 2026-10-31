@@ -431,14 +431,14 @@ a complex hypersurface of real codimension two. What is absent in the full algeb
 The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\xi_{ij}$ and the Laplacian into $-4\pi^2\lVert\xi\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the closest-$*$-unitary problem for the Frobenius distance is the variational problem of the polar decomposition.
 
 $$
-\boxed{\ \dim_\mathbb{C}M_4=16,\quad \langle A,B\rangle=\operatorname{tr}(A^*B),\quad \Delta=4\sum_{i,j}\partial_{A_{ij}}\partial_{\bar A_{ij}},\quad d\mu=\pi^{-16}e^{-\lVert A\rVert^2}dA. }
+\boxed{\ \dim_\mathbb{C}M_4=16,\quad \langle A,B\rangle=\operatorname{tr}(A^*B),\quad \Delta=4\sum_{i,j}\partial/\partial A_{ij}\partial/\partial\bar A_{ij},\quad d\mu=\pi^{-16}e^{-\lVert A\rVert^2}dA. }
 $$
 
 | Object | Formula |
 |---|---|
 | Hilbert norm | $\lVert A\rVert^2=\sum_{i,j}\lvert A_{ij}\rvert^2$ |
-| Wirtinger derivative | $\partial_{\bar A_{ij}}=\frac12(\partial_{x_{ij}}+i\partial_{y_{ij}})$ |
-| Laplacian | $\Delta=4\sum\partial_{A_{ij}}\partial_{\bar A_{ij}}$ |
+| Wirtinger derivative | $\partial/\partial\bar A_{ij}=\frac12(\partial/\partial x_{ij}+i\partial/\partial y_{ij})$ |
+| Laplacian | $\Delta=4\sum\partial/\partial A_{ij}\partial/\partial\bar A_{ij}$ |
 | Gaussian measure | $\pi^{-16}e^{-\lVert A\rVert^2}dA$ |
 | Heat kernel | $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$ |
 | Gradient of $\operatorname{Re}\det$ | $\operatorname{adj}(A)^*$ |
@@ -450,7 +450,7 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $\langle A,B\rangle=\operatorname{tr}(A^*B)$ | the Frobenius inner product |
-| $\partial_{A_{ij}},\partial_{\bar A_{ij}}$ | the Wirtinger derivatives |
+| $\partial/\partial A_{ij},\partial/\partial\bar A_{ij}$ | the Wirtinger derivatives |
 | $\Delta$ | the Euclidean Laplacian on $\mathbb{R}^{32}$ |
 | $d\mu$ | the Gaussian probability measure |
 | $K_t(A,B)$ | the heat kernel |

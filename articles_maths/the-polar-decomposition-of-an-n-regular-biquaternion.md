@@ -345,7 +345,7 @@ $$
 M_2:\mathbb B\longrightarrow M_2(\mathbb C),\qquad M_2(e_t)=I,\qquad M_2(\vec e_k)=-i\sigma_k,
 $$
 
-with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*). The determinant is the biquaternion norm,
+with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*Matrix Representations : The Product, the Trace and the Determinant*). The determinant is the biquaternion norm,
 
 $$
 \det M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},

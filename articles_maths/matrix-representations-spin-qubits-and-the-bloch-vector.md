@@ -8,7 +8,7 @@ This article develops the Hermitian basis, the spin operators, the pure states, 
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$ and regular matrix $L=I_2\otimes B$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\mathsf M_2(\vec e_k)=-i\sigma_k$. The Hermitian adjoint is that of *Matrix Representations : The Hermitian Sandwich*.
 
-**Boundaries.** The matrix statements are *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector* and *$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*; the real form is *Matrix Representations : The Six Subspaces as Matrix Conditions*; the Pauli correspondence is *The Pauli Correspondence and the Matrix Image*; the spinor carriers are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the measurement rule is *Spin and the Three Elementary Carriers*.
+**Boundaries.** The matrix statements are *Matrix Representations : Spin, Qubits and the Bloch Vector* and *Matrix Representations : Spin, Qubits and the Bloch Vector*; the real form is *Matrix Representations : The Six Subspaces as Matrix Conditions*; the Pauli correspondence is *The Pauli Correspondence and the Matrix Image*; the spinor carriers are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the measurement rule is *Spin and the Three Elementary Carriers*.
 
 ## The Hermitian Basis
 
@@ -275,6 +275,6 @@ The Hermitian units map to the Pauli matrices, $\mathsf M_2(i\vec e_k)=\sigma_k$
 - [Matrix Representations : The Hermitian Sandwich](matrix-representations-the-hermitian-sandwich.html), for the unitary slice
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the spinor carrier
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the full entry-model treatment
-- [$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the full regular treatment
+- [Matrix Representations : Spin, Qubits and the Bloch Vector](matrix-representations-spin-qubits-and-the-bloch-vector.html), for the full entry-model treatment
+- [Matrix Representations : Spin, Qubits and the Bloch Vector](matrix-representations-spin-qubits-and-the-bloch-vector.html), for the full regular treatment
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the correspondence

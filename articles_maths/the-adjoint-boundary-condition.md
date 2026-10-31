@@ -13,7 +13,7 @@ The boundary data, the trace and the boundary operator are *Differential Operato
 **Definition.** Let $L$ be a differential operator of order $m$ on a bounded domain $\Omega$ with smooth boundary, and for $u$ of class $C^m$ on $\overline\Omega$ let
 
 $$
-\gamma u = \bigl(\gamma_0u,\gamma_1u,\dots,\gamma_{m-1}u\bigr),\qquad \gamma_ku = \partial_\nu^k u\big|_{\partial\Omega} ,
+\gamma u = \bigl(\gamma_0u,\gamma_1u,\dots,\gamma_{m-1}u\bigr),\qquad \gamma_ku = \partial^ku/\partial n^k\big|_{\partial\Omega} ,
 $$
 
 be the **boundary data** of $u$, the traces of the normal derivatives of order at most $m-1$. The **boundary space** is the product

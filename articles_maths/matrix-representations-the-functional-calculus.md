@@ -12,7 +12,7 @@ $$
 $$
 and $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\lambda_+\lambda_-$.
 
-**Boundaries.** The matrix calculus is *$M_2(\mathbb{C})$ Representation : The Functional Calculus* and *$M_4(\mathbb{C})$ Representation : The Functional Calculus*; the algebra functions are *Biquaternion Elementary Functions*; the exponential of the algebra is *The Exponential of a Biquaternion*; the Killing form and the Lie bracket are *Matrix Representations : The Killing Form*; the spectrum is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+**Boundaries.** The matrix calculus is *Matrix Representations : The Functional Calculus* and *Matrix Representations : The Functional Calculus*; the algebra functions are *Biquaternion Elementary Functions*; the exponential of the algebra is *The Exponential of a Biquaternion*; the Killing form and the Lie bracket are *Matrix Representations : The Killing Form*; the spectrum is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
 ## The Cauchy Integral
 
@@ -178,6 +178,26 @@ Y=\exp\bigl(\tfrac12\operatorname{Log}X\bigr),
 $$
 and the principal root is the principal branch of that expression. The singular matrices keep square roots without logarithms: a nilpotent has a square root only when it is zero, and a rank-one matrix with a nonzero eigenvalue has a square root with one zero eigenvalue.
 
+## Worked Examples
+
+**An exponential.** For $\tilde Q=2e_t+\vec e_x$ the closed form gives $B=1$ and
+$$
+\exp\mathsf M_2(\tilde Q)=e^2\bigl(\cos 1\,\mathrm I_2+\sin 1\,\mathsf M_2(\vec e_x)\bigr),
+$$
+with eigenvalues $e^{2\pm i}$ and determinant $e^4$.
+
+**A diagonal matrix.** For $X=\operatorname{diag}(4,9)$ the roots are $\operatorname{diag}(\pm2,\pm3)$, four matrices, one for each sign choice.
+
+**A Jordan block.** For $X=\begin{pmatrix}1&1\\0&1\end{pmatrix}=\mathrm I_2+N$ the roots are
+$$
+\pm\left(\mathrm I_2+\frac{N}{2}\right)=\pm\begin{pmatrix}1&\tfrac12\\0&1\end{pmatrix},
+$$
+two matrices.
+
+**A nilpotent.** For $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ there is no root, by the repeated-eigenvalue theorem with $\lambda=0$.
+
+**The identity.** For $X=\mathrm I_2$ the roots are $\pm\mathrm I_2$ together with the traceless involutions, a complex surface of dimension two.
+
 ## Summary
 
 The functional calculus is the Cauchy integral, and on the regular image it is the biquaternion calculus:
@@ -205,6 +225,6 @@ The exponential is entire, with $\det\exp L=\exp(4Q_t)$ and closed form $e^{Q_t}
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the repeated eigenvalue
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant identity
 - [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the Lie bracket
-- [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the full $2\times2$ treatment
-- [$M_4(\mathbb{C})$ Representation : The Functional Calculus](m4c-representation-the-functional-calculus.html), for the full $4\times4$ treatment
+- [Matrix Representations : The Functional Calculus](matrix-representations-the-functional-calculus.html), for the full $2\times2$ treatment
+- [Matrix Representations : The Functional Calculus](matrix-representations-the-functional-calculus.html), for the full $4\times4$ treatment
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the algebra functions

@@ -81,7 +81,7 @@ which is the $*$-unitary group of the algebra and the maximal compact subgroup o
 **Definition (the operator).** Let $e_{1},e_{2},e_{3},e_{4}$ be an orthonormal basis of the real four-space for the definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$, and let the spinor module be as above; the **Dirac operator** of the Clifford structure is
 
 $$
-D=\sum_{j=1}^{4}e_{j}\,\partial_{j},
+D=\sum_{j=1}^{4}e_{j}\,\partial/\partial x_j,
 $$
 
 the Clifford multiplication by the basis combined with the partial derivatives, an operator on the spinor module.
@@ -90,7 +90,7 @@ the Clifford multiplication by the basis combined with the partial derivatives, 
 
 $$
 \boxed{\;
-D=\bigl(\bar\partial_{Q_{+}},\;\bar\partial_{Q_{-}}\bigr)
+D=\bigl(\partial/\partial\bar Q_{+},\;\partial/\partial\bar Q_{-}\bigr)
 \;},
 $$
 
@@ -124,7 +124,7 @@ The reduced biquaternion algebra is a Clifford algebra in two senses. It is the 
 | $\mathbb{C}\oplus\mathbb{C}=\mathbb{B}_{\mathrm{r}}\subset\mathbb{H}\oplus\mathbb{H}$ | the algebra inside the even part |
 | $\mathrm{Spin}(4)\cong S^{3}\times S^{3}$ | the spin group of the definite form |
 | $\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\mathbb{T}^{2}$ | the $*$-unitary torus, the intersection |
-| $D=\sum_{j}e_{j}\partial_{j}=(\bar\partial_{Q_{+}},\bar\partial_{Q_{-}})$ | the Dirac operator and its two-factor reduction |
+| $D=\sum_{j}e_{j}\partial/\partial x_j=(\partial/\partial\bar Q_{+},\partial/\partial\bar Q_{-})$ | the Dirac operator and its two-factor reduction |
 
 ## Further Reading
 

@@ -309,7 +309,7 @@ $$
 **Corollary (differentiation and convolution).** The Fourier transform converts differentiation into multiplication,
 
 $$
-\widehat{\partial_jf}(\xi)=2\pi\mathrm i\xi_j\hat f(\xi),
+\widehat{\partial f/\partial x_j}(\xi)=2\pi\mathrm i\xi_j\hat f(\xi),
 $$
 
 and convolution into product.
@@ -333,7 +333,7 @@ $$
 p_t(x)=\frac{1}{(4\pi t)^{36}}e^{-\lvert x\rvert^2/(4t)},
 $$
 
-and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
+and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
 
 **Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\xi\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
 

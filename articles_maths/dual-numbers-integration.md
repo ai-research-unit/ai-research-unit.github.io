@@ -419,13 +419,13 @@ So the first-order expansion is exact in the nilpotent direction: the "second de
 
 ### Integration and Differentiation with Respect to the Nilpotent Parameter
 
-The exact expansion is the bridge between integration along the fibre and differentiation. Write $\partial/\partial\varepsilon$ for the **nilpotent-parameter derivation** of *Dual-Numbers Algebra*,
+The exact expansion is the bridge between integration along the fibre and differentiation. Write $\partial^{\mathrm{nil}}$ for the **nilpotent-parameter derivation** of *Dual-Numbers Algebra*,
 
 $$
-\partial/\partial\varepsilon\,(q + \varepsilon q') = \varepsilon q'.
+\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'.
 $$
 
-It is the derivation determined by $\partial/\partial\varepsilon\,(1) = 0$ and $\partial/\partial\varepsilon\,(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathrm{M}$. It is idempotent, $\partial^2/\partial\varepsilon^2 = \partial/\partial\varepsilon$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{D}'$ are the multiples $c\,\partial/\partial\varepsilon$ of this one; $\partial/\partial\varepsilon$ itself is idempotent rather than nilpotent, and $c\,\partial/\partial\varepsilon$ is idempotent exactly for $c = 0$ and $c = 1$.
+It is the derivation determined by $\partial^{\mathrm{nil}}(1) = 0$ and $\partial^{\mathrm{nil}}(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathrm{M}$. It is idempotent, $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{D}'$ are the multiples $c\,\partial^{\mathrm{nil}}$ of this one; $\partial^{\mathrm{nil}}$ itself is idempotent rather than nilpotent, and $c\,\partial^{\mathrm{nil}}$ is idempotent exactly for $c = 0$ and $c = 1$.
 
 The relation between this derivation and the fibre integral is the following.
 
@@ -447,7 +447,7 @@ $$
 
 So the fibre integral returns the real part and the derivation recovers the infinitesimal part; together they recover the function. This is the exact sense in which "integration along the fibre" and "differentiation with respect to the nilpotent parameter" are the two halves of a substitute for the Cauchy integral formula: the integral evaluates, and the derivation differentiates, and between them they recover everything, without any boundary contour.
 
-**Remark.** The pairing is one-way. The fibre integral is a functional of the real part alone and cannot see the infinitesimal part, while the derivation $\partial/\partial\varepsilon$ sees only the infinitesimal part and annihilates the real part. There is no single operator that reproduces a value from the boundary, because the boundary of a small disk meets the singular fibre.
+**Remark.** The pairing is one-way. The fibre integral is a functional of the real part alone and cannot see the infinitesimal part, while the derivation $\partial^{\mathrm{nil}}$ sees only the infinitesimal part and annihilates the real part. There is no single operator that reproduces a value from the boundary, because the boundary of a small disk meets the singular fibre.
 
 ### Higher Nilpotent Truncations
 
@@ -540,7 +540,7 @@ The form $f\,dQ$ is **closed** exactly when $f$ is **dual differentiable**, that
 
 The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\zeta - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.
 
-What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial/\partial\varepsilon$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{D}'$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
+What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial^{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{D}'$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
 
 ## Summary of Notation
 
@@ -562,7 +562,7 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $\partial/\partial\bar Q f = 0$ | Dual Cauchy–Riemann equation, $u_{q'} = 0$, $v_{q'} = u_q$ |
 | $D = \partial/\partial\bar Q = \partial/\partial q' - \varepsilon\partial/\partial q$ | Cauchy–Riemann operator, $D^2 = \partial^2/\partial q'^2 - 2\varepsilon\partial^2/\partial q\partial q'$ |
 | $\bar D = \partial/\partial q' + \varepsilon\partial/\partial q$ | Conjugate operator, $D\bar D = \bar D D = \partial^2/\partial q'^2$ |
-| $\partial/\partial\varepsilon\,(q+\varepsilon q') = \varepsilon q'$ | Nilpotent-parameter derivation, idempotent |
+| $\partial^{\mathrm{nil}}\,(q+\varepsilon q') = \varepsilon q'$ | Nilpotent-parameter derivation, idempotent |
 | $F = A + (q'u + C)\varepsilon$ | Primitive of a differentiable $f$, with $A' = u$, $C' = c$ |
 | $E = H(q')\delta(q) + q'_+\delta'(q)\varepsilon$ | Fundamental solution of $D$, supported on a fibre ray |
 | $\operatorname{Area}(\gamma)$ | Signed area enclosed by a closed contour; $\oint_\gamma \bar Q\,dQ = 2\operatorname{Area}(\gamma)\varepsilon$ |

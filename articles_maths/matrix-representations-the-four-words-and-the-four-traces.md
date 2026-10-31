@@ -8,16 +8,16 @@ The four products of the biquaternion algebra become four words in a matrix, its
 
 **The scope.** In the $2\times2$ model every matrix is an element, so the words are defined on all of $M_2(\mathbb{C})$. In the $4\times4$ model they are defined on the image, and the transpose is the image of quaternion conjugation only in the coefficient frame.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant*. Write
+**Conventions.** The algebra and the model are those of *Matrix Representations : The Product, the Trace and the Determinant*. Write
 $$
 X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4^{L}(\tilde R).
 $$
-The two matrix involutions are the transpose and the conjugate transpose. By *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints*,
+The two matrix involutions are the transpose and the conjugate transpose. By *Matrix Representations : The Conjugations and the Adjoints*,
 $$
 \mathsf{M}_4^{L}(\tilde P^{\natural})=X^{\mathsf T},\qquad \mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger}.
 $$
 
-**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Trace, Determinant and the Biquaternion Norm*.
+**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *Matrix Representations : The Conjugations and the Adjoints*; the trace and determinant are *Matrix Representations : Trace, Determinant and the Biquaternion Norm*.
 
 **Frame.** This article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because that is the basis in which quaternion conjugation is transposition: $\mathsf M_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}$. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$; the two displays differ by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*. In the canonical frame the same involution is $M\mapsto C\,M^{\mathsf T}\,C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, the signed reversal of the four Peirce coordinates.
 

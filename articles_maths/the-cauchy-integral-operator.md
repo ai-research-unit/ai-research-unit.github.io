@@ -7,7 +7,7 @@ The Cauchy kernel $E(x-y)=\omega_m^{-1}(x-y)^{\natural}|x-y|^{-m-1}$ of *Cliffor
 an operator, and this article treats that operator at its own layer. The setting is the one of *The
 Dirac Operator*: a Clifford algebra $A=\mathrm{Cl}_{0,m}$ with frame $1,e_1,\dots,e_m$, a left
 Clifford module $\mathcal{S}$ of values, the vector variable $x\in\mathbb{R}^{m+1}$, and the
-Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\partial_\mu$ with conjugate $\bar D$ and
+Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\partial/\partial x_\mu$ with conjugate $\bar D$ and
 fundamental solution $E$.
 
 Two operators are built from the kernel. The first is the **boundary transform**, the integral of a

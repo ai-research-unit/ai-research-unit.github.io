@@ -250,5 +250,5 @@ For a spectrally regular element the spectral projectors are $\rho_\pm=\tfrac12(
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction
 - [The Spectrum](the-spectrum.html), for the criterion
 - [Nilpotents](nilpotents.html), for the nilpotent cone
-- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the $4\times4$ source
+- [Matrix Representations : The Spectral Projectors](matrix-representations-the-spectral-projectors.html), for the $2\times2$ source
+- [Matrix Representations : The Spectral Projectors](matrix-representations-the-spectral-projectors.html), for the $4\times4$ source

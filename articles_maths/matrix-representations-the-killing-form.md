@@ -209,5 +209,5 @@ The Killing form is one complex bilinear form, $\kappa_{\mathbb{C}}=4\operatorna
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the trace and the norm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie algebra and the Killing form
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms
-- [$M_2(\mathbb{C})$ Representation : The Killing Form](m2c-representation-the-killing-form.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Killing Form](m4c-representation-the-killing-form.html), for the $4\times4$ source
+- [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the $2\times2$ source
+- [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the $4\times4$ source

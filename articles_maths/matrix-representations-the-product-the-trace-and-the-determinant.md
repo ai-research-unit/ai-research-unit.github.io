@@ -32,6 +32,8 @@ $$
 =\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
 
+**Why these entries.** The factor $i$ is forced. The images of the vector units must square to $-\mathrm I_2$ and obey the cross-relations, and the real matrices $\sigma_1,\sigma_2,\sigma_3$ square to $+\mathrm I_2$; the factor $i$ is the only scalar that repairs the sign. The signs of the cross-relations then fix the three matrices up to one common conjugation. Any two isomorphisms $\mathbb{B}\to M_2(\mathbb{C})$ differ by conjugation by an element of $GL_2(\mathbb{C})$, and the display above is the representative in which the standard pair is diagonal.
+
 **The operator model.** In the Peirce frame,
 
 $$

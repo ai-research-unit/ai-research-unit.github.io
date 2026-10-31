@@ -182,7 +182,7 @@ $$
 \frac{\partial \ln r}{\partial q} = \frac{q}{r^2}, \quad \frac{\partial \ln r}{\partial q'} = \frac{q'}{r^2}, \qquad \frac{\partial \theta}{\partial q} = -\frac{q'}{r^2}, \quad \frac{\partial \theta}{\partial q'} = \frac{q}{r^2}.
 $$
 
-The Cauchy–Riemann equations hold, $\partial_q \ln r = \partial_{q'}\theta$ and $\partial_{q'}\ln r = -\partial_q\theta$, and the derivative is
+The Cauchy–Riemann equations hold, $\partial\ln r/\partial q = \partial\theta/\partial q'$ and $\partial\ln r/\partial q' = -\partial\theta/\partial q$, and the derivative is
 
 $$
 \frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'^2} = \frac{1}{q+iq'} = \frac{1}{Q}.

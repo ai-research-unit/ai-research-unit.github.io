@@ -202,7 +202,7 @@ It is the highest-weight-$1$ module $\operatorname{Sym}^{2}(\mathbb{C}^{2})$, of
 $$
 e_{1}=x^{2},\qquad e_{2}=\sqrt2\,xy,\qquad e_{3}=y^{2}.
 $$
-Then $J_{3}=\tfrac12(x\partial_{x}-y\partial_{y})$, $J_{+}=x\partial_{y}$, $J_{-}=y\partial_{x}$, and the actions above are the actions on the symmetric square. The carrier is the highest-weight-$1$ module; it is not a spinor.
+Then $J_{3}=\tfrac12(x\,\partial/\partial x-y\,\partial/\partial y)$, $J_{+}=x\,\partial/\partial y$, $J_{-}=y\,\partial/\partial x$, and the actions above are the actions on the symmetric square. The carrier is the highest-weight-$1$ module; it is not a spinor.
 
 **The Peirce carrier and the principal $\mathfrak{sl}_2$.** The left carrier $M_{3}P_{1}$ is the column; the right carrier $P_{1}M_{3}$ is the row. The principal $\mathfrak{sl}_2$ can be read on either, because the highest-weight-$1$ module is self-dual. The right module carries the contragredient action, whose weights are the negatives; the two readings are isomorphic because the spin-one representation is self-dual, but the isomorphism is not the transpose: the transpose reverses the multiplication, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and is not an intertwiner of the two actions. The isomorphism is the duality pairing, and it is not canonical. The article uses the left module for the principal $\mathfrak{sl}_2$ and the right module for the Peirce carrier, and states the duality rather than identifying them canonically.
 

@@ -196,7 +196,7 @@ A Jordan basis of $L_{\vec Q}$ needs two vectors outside the kernel whose images
 
 ## The Matrix Picture
 
-Under $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
+Under $\mathsf{M}_2$ of *Matrix Representations : The Product, the Trace and the Determinant* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
 
 | stratum | $\mathsf{M}_2(\tilde Q)$ | Jordan form | rank |
 |---|---|---|---|
@@ -268,7 +268,7 @@ $$
 
 *Proof.* If $\tilde\Pi_+(b)$ is Hermitian, then $\bar b\vec Q^*=b\vec Q$. If $b\neq0$, then $\vec Q^*=\mu\vec Q$ with $\lvert\mu\rvert=1$, hence $\vec Q^*\vec Q=\mu\vec Q^2=0$, contrary to $\vec Q^*\vec Q$ being a nonzero projection. Hence $b=0$. ∎
 
-**Remark (the matrix form).** The pair is the SVD frame of the nilpotent. The Jordanising matrix, its determinant and its freedom are in *$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix*.
+**Remark (the matrix form).** The pair is the SVD frame of the nilpotent. The Jordanising matrix, its determinant and its freedom are in *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
 ## The Corners and the Jordan Pair
 
@@ -560,7 +560,7 @@ A general inner automorphism need not preserve the chosen frame, and the image o
 
 **The two minimal left ideals are the two Jordan blocks of the left action, and the right action distinguishes them only partly.**
 
-The general statement is in *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
+The general statement is in *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
 
 **Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_\pm$, the two Peirce carriers, here the two minimal left ideals.
 
@@ -752,12 +752,12 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Representation : The Jordan Basis and the Jordanising Matrix](m2c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the matrix form, the Jordanising matrix and the defect
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Jordan Basis and the Jordanising Matrix](m4c-model-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the matrix form, the Jordanising matrix and the defect
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the cone, the three strata and the similarity classification
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the complementary sector and the eigenbasis construction
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
+- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a cell, with the Peirce data and the degenerate limits of the eigenbasis
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a cell, with the same Peirce data
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the chain as the limit of a rescaled eigenbasis
@@ -768,6 +768,6 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the vanishing modulus and the partial isometry
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the independence of the two cones
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its coordinates and its conjugations
-- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the matrix model, the determinant and the trace
+- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the matrix model, the determinant and the trace
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and its truncated form
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

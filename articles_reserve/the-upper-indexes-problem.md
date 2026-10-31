@@ -1,6 +1,6 @@
 # __The Upper-Index Problem: The Caret Rule and the Corpus__
 
-The rule forbids one use of the caret: the frame slot. Two tables list every article that breaks it in the screened range. The first lists 39 mathematics articles and 583 raised frame slots, with the forms and the count in each article. The second lists 28 physics articles and 297 raised colour or isospin indices.
+The rule forbids one use of the caret: the frame slot. Two tables list every article that breaks it in the screened range. The first lists 39 mathematics articles and 583 raised frame slots, with the forms and the count in each article. The second lists 27 physics articles and 229 raised colour or isospin indices.
 
 ## The Rule
 
@@ -37,7 +37,7 @@ The Latin screen is then corrected by reading. The corrections are listed so the
 
 | Corpus | Articles | Articles with issues | Issues | Greek slots |
 |---|---:|---:|---:|---:|
-| Physics | 403 | 28 | 297 internal | 0 |
+| Physics | 403 | 27 | 229 internal | 0 |
 | Mathematics | 2,407 | 39 | 583 frame slots | 0 |
 | Total | 2,810 | 67 | 880 | 0 |
 
@@ -96,37 +96,36 @@ The columns are families. $A_\mu^a$ includes $\mathcal{A}_\mu^a$; *other* collec
 
 | # | Article | $A_\mu^a$ | $c^a$ | $B^a$ | $T^a$ | $\pi^a$ | $F^a$ | $f^{abc}$ | Other | Issues |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html) | 25 | 6 | 2 | 6 | 0 | 0 | 22 | 7 | 68 |
-| 2 | [Anomalies and Anomaly Cancellation in Biquaternionic Form](../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) | 0 | 0 | 0 | 32 | 0 | 0 | 0 | 8 | 40 |
-| 3 | [The Pion and the Chiral Lagrangian in Biquaternionic Form](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 32 | 0 | 0 | 2 | 34 |
-| 4 | [The Gluon: An Octet Outside the Biquaternion Algebra](../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html) | 0 | 0 | 0 | 4 | 0 | 0 | 21 | 0 | 25 |
-| 5 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | 0 | 0 | 0 | 5 | 0 | 0 | 12 | 7 | 24 |
-| 6 | [The Nonlinear Sigma Model in Biquaternionic Form](../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html) | 0 | 0 | 0 | 2 | 14 | 0 | 0 | 0 | 16 |
-| 7 | [Instantons and Solitons in Biquaternionic Form](../articles_physics/instantons-and-solitons-in-biquaternionic-form.html) | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 8 | 11 |
-| 8 | [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html) | 4 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | 8 |
-| 9 | [The Theta Parameter and Strong CP in Biquaternionic Form](../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 4 | 8 |
-| 10 | [Wilson Loops in Biquaternionic Form](../articles_physics/wilson-loops-in-biquaternionic-form.html) | 0 | 0 | 0 | 5 | 0 | 1 | 0 | 2 | 8 |
-| 11 | [The Gauge Field Path Integral in Biquaternionic Form](../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html) | 3 | 1 | 0 | 0 | 0 | 0 | 2 | 1 | 7 |
-| 12 | [SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form](../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 6 |
-| 13 | [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 6 | 0 | 0 | 6 |
-| 14 | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) | 1 | 3 | 1 | 0 | 0 | 0 | 1 | 0 | 6 |
-| 15 | [Custodial Symmetry and the Rho Parameter in Biquaternionic Form](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 4 |
-| 16 | [The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 4 |
-| 17 | [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html) | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
-| 18 | [The ADHM Construction and Biquaternion Instanton Data](../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 3 |
-| 19 | [The Conformal Group in Biquaternionic Form](../articles_physics/the-conformal-group-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
-| 20 | [Electroweak Theory under the Biquaternion Framework](../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html) | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 2 |
-| 21 | [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html) | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
-| 22 | [The Majorana Equation in Biquaternionic Form](../articles_physics/the-majorana-equation-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
-| 23 | [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
-| 24 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
-| 25 | [Grand Unification and the Biquaternion Algebra Ceiling](../articles_physics/grand-unification-and-the-biquaternion-algebra-ceiling.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-| 26 | [The Particle Roster of the Complex Octonionic Chain Algebra](../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html) | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
-| 27 | [The Renormalization Group in Biquaternionic Form](../articles_physics/the-renormalization-group-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
-| 28 | [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-| | **Total** | | | | | | | | | **297** |
+| 1 | [Anomalies and Anomaly Cancellation in Biquaternionic Form](../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) | 0 | 0 | 0 | 32 | 0 | 0 | 0 | 8 | 40 |
+| 2 | [The Pion and the Chiral Lagrangian in Biquaternionic Form](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 32 | 0 | 0 | 2 | 34 |
+| 3 | [The Gluon: An Octet Outside the Biquaternion Algebra](../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html) | 0 | 0 | 0 | 4 | 0 | 0 | 21 | 0 | 25 |
+| 4 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | 0 | 0 | 0 | 5 | 0 | 0 | 12 | 7 | 24 |
+| 5 | [The Nonlinear Sigma Model in Biquaternionic Form](../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html) | 0 | 0 | 0 | 2 | 14 | 0 | 0 | 0 | 16 |
+| 6 | [Instantons and Solitons in Biquaternionic Form](../articles_physics/instantons-and-solitons-in-biquaternionic-form.html) | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 8 | 11 |
+| 7 | [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html) | 4 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | 8 |
+| 8 | [The Theta Parameter and Strong CP in Biquaternionic Form](../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 4 | 8 |
+| 9 | [Wilson Loops in Biquaternionic Form](../articles_physics/wilson-loops-in-biquaternionic-form.html) | 0 | 0 | 0 | 5 | 0 | 1 | 0 | 2 | 8 |
+| 10 | [The Gauge Field Path Integral in Biquaternionic Form](../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html) | 3 | 1 | 0 | 0 | 0 | 0 | 2 | 1 | 7 |
+| 11 | [SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form](../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 6 |
+| 12 | [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 6 | 0 | 0 | 6 |
+| 13 | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) | 1 | 3 | 1 | 0 | 0 | 0 | 1 | 0 | 6 |
+| 14 | [Custodial Symmetry and the Rho Parameter in Biquaternionic Form](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 4 |
+| 15 | [The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 4 |
+| 16 | [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html) | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 17 | [The ADHM Construction and Biquaternion Instanton Data](../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 3 |
+| 18 | [The Conformal Group in Biquaternionic Form](../articles_physics/the-conformal-group-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
+| 19 | [Electroweak Theory under the Biquaternion Framework](../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html) | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 2 |
+| 20 | [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html) | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 21 | [The Majorana Equation in Biquaternionic Form](../articles_physics/the-majorana-equation-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 22 | [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| 23 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 24 | [Grand Unification and the Biquaternion Algebra Ceiling](../articles_physics/grand-unification-and-the-biquaternion-algebra-ceiling.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 25 | [The Particle Roster of the Complex Octonionic Chain Algebra](../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html) | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
+| 26 | [The Renormalization Group in Biquaternionic Form](../articles_physics/the-renormalization-group-in-biquaternionic-form.html) | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
+| 27 | [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html) | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| | **Total** | | | | | | | | | **229** |
 
-Four articles write both heights in the same text: *The Gluon* writes $T^a$ 4 times and $T_a$ 12; *The Yang–Mills Path Integral* 8 and 16; *The W and Z Bosons* 5 and 7; *Electroweak Theory* 2 and 6. The corpus has not decided whether the height records a representation or a component.
+Three articles write both heights in the same text: *The Gluon* writes $T^a$ 4 times and $T_a$ 12; *The W and Z Bosons* 5 and 7; *Electroweak Theory* 2 and 6. The corpus has not decided whether the height records a representation or a component.
 
 ## The Exceptions
 

@@ -127,7 +127,7 @@ $$
 
 and $D = 2\,\partial/\partial\bar Q = \partial/\partial q - j\,\partial/\partial q'$ is the **split Cauchy–Riemann operator**.
 
-**Proposition.** With $\partial_\pm = \partial/\partial Q_\pm$,
+**Proposition.** With $\partial/\partial Q_\pm$ denoting the null-coordinate derivatives,
 
 $$
 \frac{\partial}{\partial Q} = \Pi_+\, \partial/\partial Q_+ + \Pi_-\, \partial/\partial Q_-, \qquad \frac{\partial}{\partial \bar Q} = \Pi_-\, \partial/\partial Q_+ + \Pi_+\, \partial/\partial Q_-.
@@ -461,7 +461,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $\int_\gamma f\,dQ$ | Split complex integral |
 | $\partial/\partial Q = \tfrac12(\partial/\partial q + j\partial/\partial q')$ | Split Wirtinger derivative |
 | $\partial/\partial\bar Q = \tfrac12(\partial/\partial q - j\partial/\partial q')$ | Split Wirtinger derivative, conjugate of $\partial/\partial Q$ |
-| $\partial_\pm = \partial/\partial Q_\pm$ | Null-coordinate derivatives |
+| $\partial/\partial Q_\pm$ | Null-coordinate derivatives |
 | $D = \partial/\partial q - j\partial/\partial q'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar Q$ |
 | $\bar D = \partial/\partial q + j\partial/\partial q'$ | Conjugate operator |
 | $\Box = \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |

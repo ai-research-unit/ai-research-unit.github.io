@@ -64,7 +64,7 @@ $$
 \langle u,v\rangle_\partial = \Bigl[p\,(u\bar v'-u'\bar v)\Bigr]_a^b
 $$
 
-in one dimension, and $\langle u,v\rangle_\partial=\int_{\partial\Omega}p\,\bigl(u\,\partial_\nu\bar v-\bar v\,\partial_\nu u\bigr)dS$ in several; the separated and periodic conditions of the classical theory are exactly the conditions that make it vanish, by *The Sturm–Liouville Operator*.
+in one dimension, and $\langle u,v\rangle_\partial=\int_{\partial\Omega}p\,\bigl(u\,\partial\bar v/\partial n-\bar v\,\partial u/\partial n\bigr)dS$ in several; the separated and periodic conditions of the classical theory are exactly the conditions that make it vanish, by *The Sturm–Liouville Operator*.
 
 ## The Self-Adjoint System
 

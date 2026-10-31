@@ -168,6 +168,12 @@ Left multiplication never mixes the two planes. The two copies are the multiplic
 
 **The invariance.** Each plane is a left ideal, so it is invariant under left multiplication by every element. The two planes are not the two eigenspaces of a general element; they are the two Peirce components, and the spectral eigenspaces are different planes unless the element points along the standard axis.
 
+**The star.** The star carries a spinor plane to a right Peirce row, not to the other plane. The standard idempotents are Hermitian, so
+$$
+S_+^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
+$$
+which is the right Peirce row of $\tilde\Pi_+$, not $S_-$. The two planes are exchanged by right multiplication, not by the star.
+
 ## Left and Right Multiplication
 
 **Right multiplication by the mixed units.** In the Peirce frame,
@@ -198,6 +204,8 @@ the right Peirce row, and in the Peirce basis it is the first and third coordina
 
 **The Jordan form.** A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.
 
+**The idempotents.** Every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents. The two mixed corners of an idempotent and its complement are square-zero, and a nonzero pair $u,w$ from opposite corners can be rescaled to $uw=\tilde\Pi$. The trivial idempotent $e_t$ is the exception, because a product equal to a unit has unit factors and a nilpotent is not a unit.
+
 ## Summary
 
 The four Peirce elements are one system of $2\times2$ matrix units; in the regular model they become the rank-two matrices $I_2\otimes E_{ij}$, and the corner matrix is duplicated: $\mathsf M_4^L(\tilde Q)=\operatorname{diag}(B,B)$ in the frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The $2\times2$ model is the compression of the regular matrix to one plane. The four Peirce elements are not a system of $4\times4$ units.
@@ -223,5 +231,5 @@ The four Peirce elements are one system of $2\times2$ matrix units; in the regul
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the planes and the exchange
 - [Nilpotents](nilpotents.html), for the nilpotent cone
-- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $4\times4$ source
+- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ source
+- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $4\times4$ source

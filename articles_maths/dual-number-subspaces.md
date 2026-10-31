@@ -202,7 +202,7 @@ $$
 \partial/\partial q\, f = u_q + v_q \varepsilon, \qquad \partial/\partial q'\, f = u_{q'} + v_{q'} \varepsilon.
 $$
 
-Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial/\partial q, \partial/\partial q'] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{D}'$ is a multiple of $\partial/\partial\varepsilon$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial/\partial q$ and $\partial/\partial q'$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
+Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial/\partial q, \partial/\partial q'] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{D}'$ is a multiple of $\partial^{\mathrm{nil}}$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial/\partial q$ and $\partial/\partial q'$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
 
 ### Restriction to the Submodules
 

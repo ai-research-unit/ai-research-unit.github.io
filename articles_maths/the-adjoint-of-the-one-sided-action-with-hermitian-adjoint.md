@@ -83,10 +83,10 @@ $$
 
 **Proof.** By the anti-multiplicativity and the involution property, $(\rho(a_i)T_i)^{*} = T_i^{*}\rho(a_i)^{*} = T_i^{*}\rho(a_i^{\dagger})$, and the adjoint of a sum is the sum of the adjoints.
 
-**Corollary (formal self-adjointness of the Dirac operator).** Let $D = \sum_j \rho(e_j)\,\partial_j$ be the flat Dirac-type operator built from an orthonormal frame $e_j$ and first-order operators $\partial_j$ that are **skew-adjoint**, $\partial_j^{*} = -\partial_j$. Then
+**Corollary (formal self-adjointness of the Dirac operator).** Let $D = \sum_j \rho(e_j)\,\partial/\partial x_j$ be the flat Dirac-type operator built from an orthonormal frame $e_j$, with $x_j$ the coordinate along $e_j$, and first-order operators $\partial/\partial x_j$ that are **skew-adjoint**, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$. Then
 
 $$
-D^{*} = \sum_j \partial_j^{*}\rho(e_j^{\dagger}) = \sum_j (-\partial_j)(-\rho(e_j)) = \sum_j \rho(e_j)\partial_j = D,
+D^{*} = \sum_j (\partial/\partial x_j)^{*}\rho(e_j^{\dagger}) = \sum_j (-\partial/\partial x_j)(-\rho(e_j)) = \sum_j \rho(e_j)\partial/\partial x_j = D,
 $$
 
 so $D$ is **formally self-adjoint**. The two sign flips — the coefficient is skew because it is a vector, and the derivative is skew because integration by parts introduces a minus — cancel, and the operator is its own adjoint. This is the algebraic core of the self-adjointness that *Dirac Differential Operators* develops analytically: the ellipticity of the symbol, the domain, the closure, essential self-adjointness and the spectrum are treated there, and what is shown here is only why the formal adjoint of the operator coincides with the operator.
@@ -119,7 +119,7 @@ In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x
 
 The **adjoint of the one-sided action** is the one-sided action of the dagger: for the action $\rho$ of a Clifford algebra on a Hermitian Clifford module, $\rho(x)^{*} = \rho(x^{\dagger})$, so $\rho$ is a $*$-homomorphism of the daggered algebra into the $*$-algebra of operators on the module. On the regular module this is the identity $L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$ of the one-sided operators; for the vectors it is the **skew-adjointness** $\rho(v)^{*} = -\rho(v)$, since the dagger negates the vectors; and for an element it gives the criteria: self-adjoint, skew-adjoint, normal or unitary exactly as the element is self-adjoint, skew-adjoint, normal or in the **unitary slice** $U$.
 
-The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial_j$ with skew coefficients and skew derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\theta,c}_x)^{*} = \Phi^{\theta,c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian sandwich is unitary.
+The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial/\partial x_j$ with skew coefficients and skew derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\theta,c}_x)^{*} = \Phi^{\theta,c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian sandwich is unitary.
 
 ## Summary of Notation
 
@@ -131,7 +131,7 @@ The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on th
 | $\rho(v)^{*} = -\rho(v)$ | Vectors act by skew-adjoint operators |
 | $U$ | Unitary slice, $\rho(u)$ unitary iff $u \in U$ |
 | $\bigl(\sum_i\rho(a_i)T_i\bigr)^{*} = \sum_iT_i^{*}\rho(a_i^{\dagger})$ | Adjoint of a composite operator |
-| $D = \sum_j\rho(e_j)\partial_j$, $\partial_j^{*} = -\partial_j$ | Flat Dirac-type operator, formally self-adjoint |
+| $D = \sum_j\rho(e_j)\partial/\partial x_j$, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$ | Flat Dirac-type operator, formally self-adjoint |
 | $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ | Inner $*$-automorphism by the slice |
 | $\bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}}$ | Adjoint of a two-sided operator |
 

@@ -13,7 +13,7 @@ $$
 
 ## Holomorphic Functions of Two Variables
 
-**A holomorphic function of two variables is a real differentiable function whose differential is complex-linear at every point; equivalently, it satisfies the two Cauchy–Riemann equations $\bar\partial_{\blacktriangle}f=\bar\partial_{\blacktriangledown}f=0$.**
+**A holomorphic function of two variables is a real differentiable function whose differential is complex-linear at every point; equivalently, it satisfies the two Cauchy–Riemann equations $\partial f/\partial\overline{Q}_{\blacktriangle}=\partial f/\partial\overline{Q}_{\blacktriangledown}=0$.**
 
 **Definition.** Let $D\subset\mathbb{C}^2$ be a domain. A function $f:D\to\mathbb{C}$ is **holomorphic** when it is real differentiable at every point of $D$ and its differential $df(Q)$ is $\mathbb{C}$-linear for every $Q\in D$. The **Wirtinger operators** are
 $$
@@ -246,7 +246,7 @@ The product of two entire functions of one variable is identically zero only whe
 
 ## Summary
 
-A holomorphic function of two variables is a real differentiable function with a $\mathbb{C}$-linear differential, equivalently a solution of the two complex Cauchy–Riemann equations $\bar\partial_{\blacktriangle}f=\bar\partial_{\blacktriangledown}f=0$, equivalently a convergent power series on every polydisc. The system is four real equations for two functions, hence overdetermined; the real and imaginary parts are harmonic, but a harmonic function has a conjugate only when it is pluriharmonic, and $\lvert Q_{\blacktriangle}\rvert^2-\lvert Q_{\blacktriangledown}\rvert^2$ is the standard counterexample.
+A holomorphic function of two variables is a real differentiable function with a $\mathbb{C}$-linear differential, equivalently a solution of the two complex Cauchy–Riemann equations $\partial f/\partial\overline{Q}_{\blacktriangle}=\partial f/\partial\overline{Q}_{\blacktriangledown}=0$, equivalently a convergent power series on every polydisc. The system is four real equations for two functions, hence overdetermined; the real and imaginary parts are harmonic, but a harmonic function has a conjugate only when it is pluriharmonic, and $\lvert Q_{\blacktriangle}\rvert^2-\lvert Q_{\blacktriangledown}\rvert^2$ is the standard counterexample.
 
 The maximum principle, Liouville's theorem and the identity theorem hold, and they are proved by restricting to complex lines. The Cauchy formula on the polydisc is the one-variable formula applied twice; it integrates over the distinguished boundary $T(Q_0,r)$, a real two-dimensional torus, and it yields the power series and the Cauchy estimates. The ring $\mathcal{O}(\mathbb{C}^2)$ is an integral domain; its units are the exponentials $e^g$, its maximal ideals are the evaluation ideals $\mathfrak{m}_{Q_0}$, and it is not a principal ideal domain, the origin requiring the two generators $Q_{\blacktriangle},Q_{\blacktriangledown}$; it is neither a unique factorisation domain nor Noetherian, although the local ring $\mathbb{C}\{Q_{\blacktriangle},Q_{\blacktriangledown}\}$ is a regular local ring and a unique factorisation domain.
 

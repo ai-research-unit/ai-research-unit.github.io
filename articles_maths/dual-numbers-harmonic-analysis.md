@@ -245,10 +245,10 @@ Its dual Fourier transform is the constant function $1$, and the delta is the id
 The **infinitesimal delta** is the distribution
 
 $$
-\langle \delta_\varepsilon, \phi \rangle = \partial/\partial\varepsilon \phi(0),
+\langle \delta_\varepsilon, \phi \rangle = \partial^{\mathrm{nil}} \phi(0),
 $$
 
-where $\partial/\partial\varepsilon$ is the derivation that extracts the infinitesimal part. It is the distributional content of the maximal ideal, and it is the dual analogue of the derivative of the delta.
+where $\partial^{\mathrm{nil}}$ is the derivation that extracts the infinitesimal part. It is the distributional content of the maximal ideal, and it is the dual analogue of the derivative of the delta.
 
 ## The Dual Hilbert Transform
 

@@ -45,7 +45,7 @@ So the dual-number Lie algebra is the abelian two-dimensional real Lie algebra, 
 
 ### The Lie Algebra of a Commutative Associative Algebra
 
-**Remark.** For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{D}'$ therefore lives not in $\mathbb{D}'$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ and in the Lie group structure of the unit group, which are treated below.
+**Remark.** For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{D}'$ therefore lives not in $\mathbb{D}'$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\,\partial^{\mathrm{nil}}$ and in the Lie group structure of the unit group, which are treated below.
 
 ## The Exponential
 
@@ -227,7 +227,7 @@ The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie alg
 | $(\mathbb{D}')^\times = \{q \neq 0\}$ | Group of units |
 | $G = 1 + \mathrm{M}$ | Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$ |
 | $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$ | Unit group modulo scaling |
-| $\partial_\varepsilon$ | Derivation generator, $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ |
+| $\partial^{\mathrm{nil}}$ | Derivation generator, $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\,\partial^{\mathrm{nil}}$ |
 
 ## Further Reading
 

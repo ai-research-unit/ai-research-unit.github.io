@@ -57,7 +57,7 @@ $$
 (Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
 $$
 
-for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ in $\mathbb{C}^{2}$, and the pair $(u,v)$ is determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ with $\lambda\in\mathbb{C}^{\times}$ (*$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*, §*The Factorisation*).
+for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ in $\mathbb{C}^{2}$, and the pair $(u,v)$ is determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ with $\lambda\in\mathbb{C}^{\times}$ (*Matrix Representations : Rank-One Matrices and the Determinantal Variety*, §*The Factorisation*).
 
 **Theorem.** $L\cong S^{2}\times S^{3}$.
 

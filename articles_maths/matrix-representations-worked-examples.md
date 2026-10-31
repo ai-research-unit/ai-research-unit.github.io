@@ -224,5 +224,5 @@ The eight matrices cover the three spectral types and the three normality flags.
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the Jordan case
 - [Matrix Representations : The Polar Decomposition of a Matrix](matrix-representations-the-polar-decomposition-of-a-matrix.html), for the polar factors
 - [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one case
-- [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the full entry-model computations
-- [$M_4(\mathbb{C})$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the full regular computations
+- [Matrix Representations : Worked Examples](matrix-representations-worked-examples.html), for the full entry-model computations
+- [Matrix Representations : Worked Examples](matrix-representations-worked-examples.html), for the full regular computations

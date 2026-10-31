@@ -22,7 +22,7 @@ with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the gen
 
 **What the article proves.** The composition law $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde P\tilde Q=\pm e_t$ and $\tilde Q\tilde P=e_t$, the isometry group, and the absence of a pin group in the family.
 
-**What the article does not do.** The matrix of $T_{\tilde Q,\tilde P}$ is *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*.
+**What the article does not do.** The matrix of $T_{\tilde Q,\tilde P}$ is *Matrix Representations : The Two-Sided Operators*, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*.
 
 **The letters.** The parameters are $\tilde Q,\tilde P,\tilde R,\tilde S$, the argument is $X$, and the operator is $T_{\tilde Q,\tilde P}$. The letter $T$ names the two-sided family; the sandwich $\Theta$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are *Operator Family Conventions*.
 
@@ -127,7 +127,7 @@ which is not of the form $T_{\tilde Q,\tilde P}$.
 
 **The two closures.** The family is a multiplicative monoid and not an additive one. Its linear span is a subspace, and the span is the subject of §*The Generation Theorem*; the family itself is the cone inside that span, not the whole span.
 
-**The sum of two products.** A sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*, §*The Criterion for a Single Product*.
+**The sum of two products.** A sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of *Matrix Representations : The Two-Sided Operators*, §*The Criterion for a Single Product*.
 
 ## The Generation Theorem
 
@@ -158,7 +158,7 @@ $$
 U_{ij}U_{kl}=\delta_{jk}U_{il},
 $$
 
-the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Upsilon_-$ and $U_{21}=\vec\Upsilon_+$ are the two mixed units in that order.
+the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Upsilon_-$ and $U_{21}=\vec\Upsilon_+$ are the two mixed units in that order.
 
 **The elementary operators.** For fixed $i,j,k,l$, the operator $U_{ij}[\,]U_{kl}$ acts on the basis element $U_{mn}$ by
 
@@ -172,7 +172,7 @@ $$
 E_{(i,l),(j,k)}
 $$
 
-of the complex sixteen-dimensional operator space, in the sense of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Unit Table*. As $(i,l)$ and $(j,k)$ run over the four pairs, the sixteen operators $U_{ij}[\,]U_{kl}$ run over the sixteen matrix units of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. They are linearly independent and they span.
+of the complex sixteen-dimensional operator space, in the sense of *Matrix Representations : The Models and the Change of Frame*, §*The Unit Table*. As $(i,l)$ and $(j,k)$ run over the four pairs, the sixteen operators $U_{ij}[\,]U_{kl}$ run over the sixteen matrix units of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. They are linearly independent and they span.
 
 **The count.** There are $2\times2\times2\times2=16$ choices of $(i,j,k,l)$, and they give the $4\times4=16$ matrix units. The two counts agree, and the agreement is the computation.
 
@@ -185,7 +185,7 @@ e_\mu=\sum_{i,j=1}^{2}c_{\mu,ij}U_{ij},\qquad
 U_{ij}=\sum_{\mu}d_{\mu,ij}e_\mu,
 $$
 
-with the element label written first and the matrix pair second, and the two $4\times4$ matrices $c$ and $d$ inverse to one another; the change is the Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*, read on the algebra rather than on the operator space.
+with the element label written first and the matrix pair second, and the two $4\times4$ matrices $c$ and $d$ inverse to one another; the change is the Peirce change $C_{\Pi}$ of *Matrix Representations : The Models and the Change of Frame*, §*The Change $C_{\Pi}$*, read on the algebra rather than on the operator space.
 
 **Theorem (the basis).** The sixteen products $e_\mu[\,]e_\nu$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 
@@ -444,12 +444,12 @@ The plain adjoint exchanges the parameters, $(T_{\tilde Q,\tilde P})^{\approx}=T
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices, the coefficient matrix and the length.
+- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the sixteen matrices, the coefficient matrix and the length.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the isomorphism that the generation theorem supports.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html) and [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the two boundary families.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection used in the ladder.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the one-sided families and the four adjoints.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its quadratic form.
-- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the algebra's matrix units used in the generation theorem.
-- [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the operator-space matrix units and the Peirce change.
+- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the algebra's matrix units used in the generation theorem.
+- [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the operator-space matrix units and the Peirce change.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letters, the slots and the set names.

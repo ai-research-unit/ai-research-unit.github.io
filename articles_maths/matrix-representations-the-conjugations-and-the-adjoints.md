@@ -19,7 +19,7 @@ P=-\sigma_2\otimes\sigma_2=
 $$
 The Peirce change is $C_{\Pi}$, with columns the four Peirce elements in coefficient coordinates.
 
-**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the automorphisms that commute with them are *Biquaternion Automorphisms and Derivations*. The $2\times2$ and $4\times4$ source articles are *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints* and *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints*.
+**Boundaries.** The four words and the four traces are *Matrix Representations : The Four Words and the Four Traces*; the conjugations as real structures are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the automorphisms that commute with them are *Biquaternion Automorphisms and Derivations*. The $2\times2$ and $4\times4$ source articles are *Matrix Representations : The Conjugations and the Adjoints* and *Matrix Representations : The Conjugations and the Adjoints*.
 
 ## The Four Words
 
@@ -187,5 +187,5 @@ The four words are the quaternion conjugation, the complex conjugation, the Herm
 - [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant and the norm
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphisms commuting with the words
-- [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the $2\times2$ source
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the $4\times4$ source
+- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the $2\times2$ source
+- [Matrix Representations : The Conjugations and the Adjoints](matrix-representations-the-conjugations-and-the-adjoints.html), for the $4\times4$ source

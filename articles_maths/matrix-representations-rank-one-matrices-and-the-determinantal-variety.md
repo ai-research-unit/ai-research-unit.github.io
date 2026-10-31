@@ -8,7 +8,7 @@ This article develops the factorisation, the coefficients, the two strata, the a
 
 **Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B=\mathsf M_2(\tilde Q)$, $N=\det B$ and regular matrix $L=I_2\otimes B$. In the Peirce frame the regular matrix is the block matrix of two copies of $B$.
 
-**Boundaries.** The matrix statements are *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety* and *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the cone and its topology are *The Topology of the Zero-Divisor Cone* and *The Null Cone and the Zero Divisors*; the nilpotents are *Nilpotents*; the Jordan form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+**Boundaries.** The matrix statements are *Matrix Representations : Rank-One Matrices and the Determinantal Variety* and *Matrix Representations : Rank-One Matrices and the Determinantal Variety*; the cone and its topology are *The Topology of the Zero-Divisor Cone* and *The Null Cone and the Zero Divisors*; the nilpotents are *Nilpotents*; the Jordan form is *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
 
 ## The Factorisation
 
@@ -201,6 +201,6 @@ A nonzero singular matrix has rank one in the entry model and rank two in the re
 - [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the nilpotent form
 - [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the corners
 - [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the displays
-- [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the full entry-model treatment
-- [$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the full regular treatment
+- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the full entry-model treatment
+- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the full regular treatment
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the topology
