@@ -45,7 +45,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 
 ## The Fierz–Kofink Identities
 
-**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=J_\mu J^\mu=\eta^{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
+**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=J_\mu J_\mu=\eta_{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
 
 $$
 \boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.

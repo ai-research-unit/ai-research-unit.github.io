@@ -199,7 +199,7 @@ and it breaks the symmetry because the angular momentum is $\mathcal T$-odd whil
 **The linear splitting, and why it is linear.** The two facts — an invariant perturbation cannot split a pair, an odd one splits it linearly — follow from the transformation of the perturbation. Under $\mathcal T$ the spin operators are odd,
 
 $$
-\mathcal T\sigma^\alpha\mathcal T^{-1}=-\sigma^\alpha ,
+\mathcal T\sigma_\alpha\mathcal T^{-1}=-\sigma_\alpha ,
 \qquad \alpha=x,y,z ,
 \qquad
 \mathcal T\,I\,\mathcal T^{-1}=I ,

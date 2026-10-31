@@ -314,7 +314,7 @@ The products are distinct, so they are the sixteen cells in some order, each wit
 **The algebra.** The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
 
 $$
-\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
+\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
 $$
 
 which are again cells: $\Sigma^{01}=iT_{xz}$, $\Sigma^{02}=iT_{yz}$, $\Sigma^{03}=iT_{zz}$, $\Sigma^{12}=iT_{zt}$, $\Sigma^{13}=-iT_{yt}$, $\Sigma^{23}=iT_{xt}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
@@ -523,7 +523,7 @@ Every matrix $M$ has a unique coefficient matrix $c(M)$ with $c_{\mu\nu}=\tfrac1
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | one Dirac frame; five cell multiples in the reference frame |
-| $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | the Lorentz generators, six even cells |
+| $\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | the Lorentz generators, six even cells |
 | $c(M)$ | the coefficient matrix, $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$ |
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ | the coordinate column of $\tilde Q$ |

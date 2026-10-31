@@ -114,11 +114,11 @@ only for $\vec q=0$.
 
 ## The Casimir Element
 
-**Definition.** Let $h^{\mu\nu}$ be the inverse of the Gram matrix $\kappa(\vec e_\mu,\vec e_\nu)=-2\delta_{\mu\nu}$, that is
-$h^{\mu\nu}=-\tfrac12\delta^{\mu\nu}$. The **Casimir element** of the block is
+**Definition.** Let $h_{\mu\nu}$ be the inverse of the Gram matrix $\kappa(\vec e_\mu,\vec e_\nu)=-2\delta_{\mu\nu}$, that is
+$h_{\mu\nu}=-\tfrac12\delta_{\mu\nu}$. The **Casimir element** of the block is
 
 $$
-\Omega=\sum_{\mu,\nu}h^{\mu\nu}\vec e_\mu \vec e_\nu=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr),
+\Omega=\sum_{\mu,\nu}h_{\mu\nu}\vec e_\mu \vec e_\nu=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr),
 $$
 
 an element of the universal enveloping algebra $\mathrm{U}(\mathfrak{g})$.

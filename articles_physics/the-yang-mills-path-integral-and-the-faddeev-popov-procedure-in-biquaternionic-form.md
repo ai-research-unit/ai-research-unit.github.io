@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The companion article *The Gauge Field Path Integral in Biquaternionic Form* specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the **abelian** case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\Delta=\det(\partial/\partial Q_\mu D^\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $D_\mu F^{\mu\nu}=J^\nu$ and its covariant conservation $D_\nu J^\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
+The companion article *The Gauge Field Path Integral in Biquaternionic Form* specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the **abelian** case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\Delta=\det(\partial/\partial Q_\mu D_\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ and its covariant conservation $\sum_\nu D_\nu J_\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
 
 Three features distinguish the non-abelian procedure from the abelian one, and they organise everything below.
 
 - **The determinant is a functional of the connection.** In the abelian theory the Faddeev–Popov determinant is the field-independent constant $\det\Box^{-1}$, and the ghosts it would introduce decouple. In the non-abelian theory the determinant depends on $\mathcal A$ through the commutator term of the covariant derivative, and it must be represented by anticommuting fields. The ghosts are therefore not an optional device; they are the determinant written as a functional integral.
-- **The quantum equation of motion is an expectation value.** The classical equation $D_\mu F^{\mu\nu}=J^\nu$ becomes the Schwinger–Dyson statement $\langle D_\mu F^{\mu\nu}\rangle=\langle J^\nu\rangle$, with contact terms at coincident points, and its gauge-invariance content is carried by the Slavnov–Taylor identities rather than by an operator equation.
+- **The quantum equation of motion is an expectation value.** The classical equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ becomes the Schwinger–Dyson statement $\langle \sum_\mu D_\mu F_{\mu\nu}\rangle=\langle J_\nu\rangle$, with contact terms at coincident points, and its gauge-invariance content is carried by the Slavnov–Taylor identities rather than by an operator equation.
 - **The gauge slice is not global.** The Faddeev–Popov construction inserts unity only if the gauge condition selects one representative on each orbit. For the non-abelian theory on a non-trivial bundle it does not, and the copies — the Gribov ambiguity — are supplementary data of the non-abelian case, absent in the abelian one.
 
 The algebra contributes at three points, and they are the reason the construction is not merely a transcription. The gauge algebra is realized by the quaternion commutator inside the material sector, so the structure constants $f^{abc}$ are read off from $\varepsilon_{abc}$ and the Jacobi identity that closes the Slavnov–Taylor and BRST algebras is a consequence of the associativity of $\mathbb{B}$. The Faddeev–Popov operator is a material-sector differential operator twisted by the informational adjoint action — the same adjoint action that *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* identifies as the spin-one representation — so the operator that the ghosts invert is, on its internal indices, a spin-one object. And the ghosts themselves lie outside $\mathbb{B}$: the algebra is ungraded, every element of it is even, and no product of two elements of $\mathbb{B}$ is odd, so the determinant lives in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, exactly as the fermionic Gaussian integral requires.
@@ -94,7 +94,7 @@ $$
 \qquad
 M^{ab}=\frac{\delta G^a}{\delta\Gamma^b},
 $$
-and the determinant is $\Delta[\mathcal{A}]=\det M$. For the **Lorenz gauge** $G^a=\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}-\omega^a$, the variation is
+and the determinant is $\Delta[\mathcal{A}]=\det M$. For the **Lorenz gauge** $G^a=\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{a}-\omega^a$, the variation is
 $$
 \mathcal{A}^{a}_\mu\longmapsto\mathcal{A}^{a}_\mu-(D_\mu\Gamma)^a ,
 \qquad
@@ -102,8 +102,8 @@ $$
 $$
 so that
 $$
-M^{ab}=-\partial/\partial Q_\mu D^{\mu\,ab}
-=-\Box\,\delta^{ab}+i\kappa f^{abc}\partial/\partial Q_\mu\,\mathcal{A}^{c\mu}+\cdots ,
+M^{ab}=-\sum_\mu\partial/\partial Q_\mu D_{\mu}^{ab}
+=-\Box\,\delta^{ab}+i\kappa \sum_c f^{abc}\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{c}+\cdots ,
 $$
 with $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ the covariant derivative in the adjoint representation and $f^{abc}$ the structure constants. The identity $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ is fixed by the requirement that it reproduce $(D_\mu \tilde{Q})^a=\partial/\partial Q_\mu Q^a+i\kappa[\mathcal{A}_\mu,\tilde{Q}]^a$ on an algebra-valued field; it was verified on a generic superposition of the three generators, and the structure constants it uses are read off from the quaternion commutator,
 $$
@@ -113,7 +113,7 @@ f^{abc}=2\varepsilon^{abc},
 $$
 which was verified on the defining representation, $[T_a,T_b]=\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.
 
-The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f^{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa f^{abc}\partial/\partial Q_\mu\,\mathcal{A}^{c\mu}$ is present, and $\Delta[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M^{ab}=\delta G^a/\delta\Gamma^b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial Q_\mu D^\mu)$ is this same determinant with the opposite overall sign, not a different operator.
+The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f^{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f^{abc}\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{c}$ is present, and $\Delta[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M^{ab}=\delta G^a/\delta\Gamma^b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial Q_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.
 
 ### The Jacobi Identity and Associativity
 
@@ -131,15 +131,15 @@ The determinant that the gauge-fixing identity produces can be written as a func
 $$
 \det M=\int\prod_a d\bar c_a\,dc_a\;\exp(-\bar c_a M^{ab}c_b),
 $$
-with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\partial/\partial Q_\mu D^{\mu\,ab})$, it gives
+with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\sum_\mu\partial/\partial Q_\mu D_{\mu}^{ab})$, it gives
 $$
 \Delta[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4x\,\bar c_a\,M^{ab}c_b\right)
 =\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(iS_{\mathrm{gh}}\right),
 $$
 $$
-\boxed{\;S_{\mathrm{gh}}=-\int d^4x\;\bar c_a\,\partial/\partial Q_\mu(D^\mu c)^a\;},
+\boxed{\;S_{\mathrm{gh}}=-\int d^4x\;\bar c_a\,\sum_\mu\partial/\partial Q_\mu(D_\mu c)^a\;},
 \qquad
-(D^\mu c)^a=\partial^\mu c^a+i\kappa f^{abc}\mathcal{A}^{b\mu}c^c .
+(D_\mu c)^a=\partial_\mu c^a+i\kappa\sum_b f^{abc}\mathcal{A}_{\mu}^{b}c^c .
 $$
 The ghost $c^a$ and the antighost $\bar c_a$ are Lorentz scalars of opposite ghost number; the antighost is the conjugate field, and the action is the standard one. Its form is exactly the ghost term that *BRST Symmetry in Biquaternionic Form* takes as given; here it has been derived from the measure.
 
@@ -159,9 +159,9 @@ Collecting the pieces, the gauge-fixed Yang–Mills action is
 $$
 S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}},
 \qquad
-S_{\mathrm{gf}}=-\frac{1}{2\xi}\int d^4x\,\left(\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}\right)^2 ,
+S_{\mathrm{gf}}=-\frac{1}{2\xi}\int d^4x\,\left(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{a}\right)^2 ,
 $$
-where $\xi$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B^a$ of the BRST companion, whose equation of motion is $B^a=-\xi^{-1}\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
+where $\xi$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B^a$ of the BRST companion, whose equation of motion is $B^a=-\xi^{-1}\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{a}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
 $$
 Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(iS),
 $$
@@ -173,22 +173,22 @@ is the Yang–Mills path integral of the framework.
 
 At quadratic order in the fields the gauge-fixed action is
 $$
-S^{(2)}=\tfrac12\int d^4x\;\mathcal{A}^{a\mu}\left(\eta_{\mu\nu}\Box-(1-\tfrac1\xi)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}^{a\nu},
+S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu}\mathcal{A}_{\mu}^{a}\left(\eta_{\mu\nu}\Box-(1-\tfrac1\xi)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}_{\nu}^{a},
 $$
 whose inversion gives the gauge-field propagator, in momentum space,
 $$
 D_{\mu\nu}(p)=\frac{1}{p^y}\left(\eta_{\mu\nu}+\frac{p_\mu p_\nu}{p^y}\right)-\frac{\xi}{p^y}\frac{p_\mu p_\nu}{p^y}
 =\frac{1}{p^y}\left(\eta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{p^y}\right).
 $$
-The projector algebra is that of the companion article, and the series convention $p_\mu p^\mu=-p^y$ fixes its signs: writing $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^y=\eta_{\mu\nu}-p_\mu p_\nu/(p_\mu p^\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/p^y=p_\mu p_\nu/(p_\mu p^\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\eta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $p^\mu P_{\mu\nu}=0$. Here $p^y$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the invariant $p_\mu p^\mu$ equals $-p^y$ and the transverse projector is $\eta_{\mu\nu}+p_\mu p_\nu/p^y$. The signs of $P$ and $L$ are tied to the momentum convention, and it is the invariant $p_\mu p^\mu=-p^y$, not the variable $p^y$, that fixes them: replacing the invariant by $p^y$ in the projector gives a matrix that is neither transverse nor idempotent. This is the same invariant object the Proca companion writes as the completeness relation $\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$ on shell, and it is the form the gauge-field path-integral companion uses: with $D=p^{-2}(P+\xi L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $p_\nu j^\nu=0$, the difference between two propagators with different $\xi$ annihilates the current,
+The projector algebra is that of the companion article, and the series convention $\sum_\mu p_\mu p_\mu=-p^y$ fixes its signs: writing $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^y=\eta_{\mu\nu}-p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/p^y=p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\eta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $\sum_\mu p_\mu P_{\mu\nu}=0$. Here $p^y$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the invariant $\sum_\mu p_\mu p_\mu$ equals $-p^y$ and the transverse projector is $\eta_{\mu\nu}+p_\mu p_\nu/p^y$. The signs of $P$ and $L$ are tied to the momentum convention, and it is the invariant $\sum_\mu p_\mu p_\mu=-p^y$, not the variable $p^y$, that fixes them: replacing the invariant by $p^y$ in the projector gives a matrix that is neither transverse nor idempotent. This is the same invariant object the Proca companion writes as the completeness relation $\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$ on shell, and it is the form the gauge-field path-integral companion uses: with $D=p^{-2}(P+\xi L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $\sum_\nu p_\nu j_\nu=0$, the difference between two propagators with different $\xi$ annihilates the current,
 $$
-\big(D(\xi)-D(\xi_2)\big)_{\mu\nu}j^\nu=0 ,
+\big(D(\xi)-D(\xi_2)\big)_{\mu\nu}j_\nu=0 ,
 $$
 so that physical amplitudes are gauge-parameter independent. This is the content the companion article verifies in the abelian theory; it is unchanged in the non-abelian theory, because the statement is about the quadratic form and the conservation of the external current.
 
 ### What the Non-Abelian Theory Adds
 
-Two additions are specific to the non-abelian case. The first is that the external current of the gauge field is itself charged, $J_{2,\nu}=\tilde UJ_\nu \tilde U^{-1}$, and is covariantly conserved, $D_\nu J^\nu=0$, so the identity $p_\nu j^\nu=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial/\partial Q_\nu J^\nu=-i\kappa[\mathcal{A}_\nu,J^\nu]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields. The second addition is that the propagator is not the whole of the quadratic theory: the gauge-fixed action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–gauge coupling $i\kappa f^{abc}\bar c_a\partial/\partial Q_\mu(\mathcal{A}^{b\mu}c^c)$. The one-loop two-point function therefore receives, in addition to the gauge-field loop, the ghost loop and the gauge-field tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
+Two additions are specific to the non-abelian case. The first is that the external current of the gauge field is itself charged, $J_{2,\nu}=\tilde UJ_\nu \tilde U^{-1}$, and is covariantly conserved, $\sum_\nu D_\nu J_\nu=0$, so the identity $\sum_\nu p_\nu j_\nu=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial/\partial Q_\nu J_\nu=-i\kappa[\mathcal{A}_\nu,J_\nu]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields. The second addition is that the propagator is not the whole of the quadratic theory: the gauge-fixed action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–gauge coupling $i\kappa f^{abc}\bar c_a\partial/\partial Q_\mu(\mathcal{A}_{\mu}^{b}c^c)$. The one-loop two-point function therefore receives, in addition to the gauge-field loop, the ghost loop and the gauge-field tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
 $$
 \beta_\kappa=-\frac{\kappa^3}{16\pi^2}b_0 ,
 \qquad
@@ -198,7 +198,7 @@ with $C_2(G)=N=2$ the adjoint quadratic Casimir of $SU(2)$; the coefficient is p
 
 ## The Quantum Yang–Mills Equation
 
-The classical equation of the companion article is $D_\mu F^{\mu\nu}=J^\nu$, with $D_\nu J^\nu=0$. Inside the path integral it becomes an expectation value, and the derivation is the Schwinger–Dyson argument. For any functional $\mathcal{O}[\mathcal{A}]$ of the connection,
+The classical equation of the companion article is $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$, with $\sum_\nu D_\nu J_\nu=0$. Inside the path integral it becomes an expectation value, and the derivation is the Schwinger–Dyson argument. For any functional $\mathcal{O}[\mathcal{A}]$ of the connection,
 $$
 0=\int\mathcal{D}\mathcal{A}\,\frac{\delta}{\delta\mathcal{A}_\mu^a(x)}\Big(\mathcal{O}[\mathcal{A}]\,\exp(iS)\Big),
 $$
@@ -213,25 +213,25 @@ $$
 $$
 and taking $\mathcal{O}$ to be a product of fields gives the hierarchy of contact terms that the equation of motion generates at coincident points. The variation of the Yang–Mills action is the covariant divergence of the field strength,
 $$
-\frac{\delta S_{\mathrm{YM}}}{\delta\mathcal{A}_\mu^a(x)}=\big(D_\nu F^{\nu\mu}\big)^a(x),
+\frac{\delta S_{\mathrm{YM}}}{\delta\mathcal{A}_\mu^a(x)}=\big(\sum_\nu D_\nu F_{\nu\mu}\big)^a(x),
 $$
 so that, separating the source terms that the gauge-fixing and ghost actions contribute,
 $$
-\left\langle\big(D_\mu F^{\mu\nu}\big)^a\right\rangle
-=\left\langle J^{\nu a}_{\mathrm{gf}}\right\rangle+\left\langle J^{\nu a}_{\mathrm{gh}}\right\rangle ,
+\left\langle\big(\sum_\mu D_\mu F_{\mu\nu}\big)^a\right\rangle
+=\left\langle J_{\nu,\mathrm{gf}}^{a}\right\rangle+\left\langle J_{\nu,\mathrm{gh}}^{a}\right\rangle ,
 $$
 where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\frac{1}{2\xi}(\partial\cdot\mathcal{A})^2$ and by the ghost action. Two comments make the statement precise.
 
 - **The equation holds inside correlators, up to contact terms.** The classical equation is the statement that the integrand of the path integral is stationary; the quantum statement is that the expectation value of the variation vanishes, and additional operators inserted at the same point produce the contact terms. This is general and standard, not special to the gauge field.
-- **The gauge-invariance content is in the identities, not in the equation.** Gauge invariance of the action does not survive gauge fixing as invariance of $S$; it survives as the Slavnov–Taylor identities relating Green functions, which are the quantum transcription of the statement that physical amplitudes are independent of the gauge parameter and that longitudinal gauge fields decouple from physical states. The equation of motion and the identities together replace the classical equation $D_\mu F^{\mu\nu}=J^\nu$.
+- **The gauge-invariance content is in the identities, not in the equation.** Gauge invariance of the action does not survive gauge fixing as invariance of $S$; it survives as the Slavnov–Taylor identities relating Green functions, which are the quantum transcription of the statement that physical amplitudes are independent of the gauge parameter and that longitudinal gauge fields decouple from physical states. The equation of motion and the identities together replace the classical equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$.
 
-What the algebra adds here is an interpretation rather than a formula. The covariant divergence that the quantum equation averages is built from the commutator $[\mathcal{A}_\mu,F^{\mu\nu}]$, and the commutator is the adjoint action of the material sector on itself; the current, being the covariant divergence of the curvature, transforms in the adjoint too, $J_{2,\nu}=\tilde UJ_\nu \tilde U^{-1}$; and the source is therefore a spin-one object of the material sector, exactly as the curvature is. The quantum equation is the stationarity of a functional whose internal index is the spin-one index of the adjoint action.
+What the algebra adds here is an interpretation rather than a formula. The covariant divergence that the quantum equation averages is built from the commutator $\sum_\mu[\mathcal{A}_\mu,F_{\mu\nu}]$, and the commutator is the adjoint action of the material sector on itself; the current, being the covariant divergence of the curvature, transforms in the adjoint too, $J_{2,\nu}=\tilde UJ_\nu \tilde U^{-1}$; and the source is therefore a spin-one object of the material sector, exactly as the curvature is. The quantum equation is the stationarity of a functional whose internal index is the spin-one index of the adjoint action.
 
 ## Gauge Slicing and the Gribov Ambiguity
 
 The Faddeev–Popov identity presupposes that the gauge condition $G=0$ intersects each orbit exactly once: the insertion of unity is an identity for each orbit, and the argument that the determinant cancels the volume requires the set of solutions to be a single point per orbit. In the abelian theory on a topologically trivial background this holds for the Lorenz gauge, and the determinant is field-independent. In the non-abelian theory it fails, and the failure is structural.
 
-The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^{\tilde U}]=0$, that is $\partial/\partial Q_\mu\,\mathcal{A}^{\tilde U\mu}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
+The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^{\tilde U}]=0$, that is $\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{\tilde U}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
 
 Two consequences follow, and both are properties of the non-abelian path integral as such.
 
@@ -252,11 +252,11 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
 $$
-\Delta[\mathcal{A}]=\det\big(-\partial/\partial Q_\mu D^{\mu\,ab}\big),
+\Delta[\mathcal{A}]=\det\big(-\sum_\mu\partial/\partial Q_\mu D_{\mu}^{ab}\big),
 \qquad
 D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c ,
 $$
-whereas in the abelian limit $f^{abc}=0$, $M=-\Box$, and the determinant is field-independent. The determinant is written as a functional integral over anticommuting ghosts in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, because $\mathbb{B}$ has no odd elements, and the resulting ghost action $S_{\mathrm{gh}}=-\int\bar c_a\partial/\partial Q_\mu(D^\mu c)^a$ is the one the BRST companion takes as given.
+whereas in the abelian limit $f^{abc}=0$, $M=-\Box$, and the determinant is field-independent. The determinant is written as a functional integral over anticommuting ghosts in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, because $\mathbb{B}$ has no odd elements, and the resulting ghost action $S_{\mathrm{gh}}=-\int\bar c_a\sum_\mu\partial/\partial Q_\mu(D_\mu c)^a$ is the one the BRST companion takes as given.
 
 The gauge-fixed action $S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}}$ has a quadratic part whose inversion gives the propagator
 $$
@@ -264,9 +264,9 @@ D_{\mu\nu}(p)=\frac{1}{p^y}\left(\eta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{p^y}\ri
 $$
 with the gauge parameter in the longitudinal projector alone, so that amplitudes built from conserved currents are gauge-parameter independent. The non-abelian additions are the charged, covariantly conserved current; the Slavnov–Taylor identities in place of the abelian Ward identity; and the ghost and self-interaction loops that give the pure $SU(2)$ one-loop coefficient $b_0=22/3$.
 
-The classical equation $D_\mu F^{\mu\nu}=J^\nu$ becomes the Schwinger–Dyson statement
+The classical equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ becomes the Schwinger–Dyson statement
 $$
-\left\langle\big(D_\mu F^{\mu\nu}\big)^a\right\rangle=\left\langle J^{\nu a}_{\mathrm{gf}}\right\rangle+\left\langle J^{\nu a}_{\mathrm{gh}}\right\rangle ,
+\left\langle\big(\sum_\mu D_\mu F_{\mu\nu}\big)^a\right\rangle=\left\langle J_{\nu,\mathrm{gf}}^{a}\right\rangle+\left\langle J_{\nu,\mathrm{gh}}^{a}\right\rangle ,
 $$
 valid inside correlators up to contact terms, with the gauge content carried by the Slavnov–Taylor identities. The Faddeev–Popov procedure requires a unique representative per orbit; for the non-abelian theory this fails, and the Gribov copies and the Gribov horizon are the supplementary structure of the non-abelian case, the operator whose kernel produces them being the adjoint twisting of the central d'Alembertian.
 
@@ -291,17 +291,17 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_\mu^a$ | Measure on $\mathrm{SU}(2)$-valued configurations |
-| $G^a[\mathcal{A}]=\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}-\omega^a$ | Lorenz gauge-fixing condition |
+| $G^a[\mathcal{A}]=\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{a}-\omega^a$ | Lorenz gauge-fixing condition |
 | $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ | Faddeev–Popov identity |
-| $M^{ab}=-\partial/\partial Q_\mu D^{\mu\,ab}$ | Faddeev–Popov operator (field-dependent) |
+| $M^{ab}=-\sum_\mu\partial/\partial Q_\mu D_{\mu}^{ab}$ | Faddeev–Popov operator (field-dependent) |
 | $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ | Covariant derivative in the adjoint representation |
 | $c^a,\bar c_a$ | Faddeev–Popov ghost and antighost, Grassmann-odd |
 | $\mathbb{B}\otimes\Lambda$ | Grassmann envelope; adjoined odd coordinates |
-| $S_{\mathrm{gh}}=-\int\bar c_a\partial/\partial Q_\mu(D^\mu c)^a$ | Ghost action from the determinant |
-| $S_{\mathrm{gf}}=-\tfrac{1}{2\xi}\int(\partial/\partial Q_\mu\,\mathcal{A}^{a\mu})^2$ | Gauge-fixing term; $\xi$ the gauge parameter |
+| $S_{\mathrm{gh}}=-\int\bar c_a\sum_\mu\partial/\partial Q_\mu(D_\mu c)^a$ | Ghost action from the determinant |
+| $S_{\mathrm{gf}}=-\tfrac{1}{2\xi}\int(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu}^{a})^2$ | Gauge-fixing term; $\xi$ the gauge parameter |
 | $D_{\mu\nu}(p)=p^{-2}(\eta_{\mu\nu}+(1-\xi)p_\mu p_\nu/p^y)$ | Gauge-field propagator |
 | $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^y$, $L_{\mu\nu}=-p_\mu p_\nu/p^y$ | Transverse and longitudinal projectors, $P+L=\eta$ |
-| $\langle D_\mu F^{\mu\nu}\rangle=\langle J^\nu\rangle$ | Quantum Yang–Mills equation (Schwinger–Dyson) |
+| $\langle \sum_\mu D_\mu F_{\mu\nu}\rangle=\langle J_\nu\rangle$ | Quantum Yang–Mills equation (Schwinger–Dyson) |
 | Slavnov–Taylor identities | Quantum content of gauge invariance in the non-abelian theory |
 | Gribov copies, Gribov horizon | Multiple solutions of the gauge condition; zeros of $M$ |
 | $b_0=\tfrac{11}{3}C_2(G)$ | One-loop coefficient; $C_2(G)=2$ for $SU(2)$ |

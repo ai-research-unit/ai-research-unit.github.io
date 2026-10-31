@@ -116,7 +116,7 @@ $$
 
 in the sense of distributions, where $\Delta$ is the Laplace operator. The measure $\mu$ is exactly the Brolin measure of maximal entropy of *The Julia Sets of a Complex Polynomial*, supported on $J(f)$ and invariant under $f$.
 
-**Proof sketch.** The equilibrium measure of a compact set of capacity $1$ minimises the energy $\iint \log\frac{1}{|z-w|}d\nu(z)d\nu(w)$; its potential $U^\nu(z) = \int\log|z-w|d\nu$ equals the Robin constant $0$ on the set and is the largest harmonic minorant of $\log|z|$ type, which is the defining property of the Green's function. Hence $G = U^\mu$ and $\Delta G/2\pi = \mu$, because the distributional Laplacian of the logarithmic kernel is $2\pi$ times the Dirac mass. The identification with the Brolin measure follows because both are the equilibrium measure of the Julia set, and the invariance $f_*\mu = \mu$ is the invariance $G \circ f = dG$ together with the uniqueness of the equilibrium measure. The energy and the equilibrium measure are those of *Potential Theory*; the invariance and the identification with the maximal-entropy measure are those of *The Julia Sets of a Complex Polynomial*.
+**Proof sketch.** The equilibrium measure of a compact set of capacity $1$ minimises the energy $\iint \log\frac{1}{|z-w|}d\nu(z)d\nu(w)$; its potential $U_\nu(z) = \int\log|z-w|d\nu$ equals the Robin constant $0$ on the set and is the largest harmonic minorant of $\log|z|$ type, which is the defining property of the Green's function. Hence $G = U_\mu$ and $\Delta G/2\pi = \mu$, because the distributional Laplacian of the logarithmic kernel is $2\pi$ times the Dirac mass. The identification with the Brolin measure follows because both are the equilibrium measure of the Julia set, and the invariance $f_*\mu = \mu$ is the invariance $G \circ f = dG$ together with the uniqueness of the equilibrium measure. The energy and the equilibrium measure are those of *Potential Theory*; the invariance and the identification with the maximal-entropy measure are those of *The Julia Sets of a Complex Polynomial*.
 
 **Corollary.** The escape rate of a point is the logarithmic potential of the equilibrium measure at that point, and the capacity of the filled Julia set is $1$ for every monic polynomial, since the Green's function is tangent to $\log|z|$ at infinity.
 
@@ -140,7 +140,7 @@ The Green's function $G(z) = \lim d^{-n}\log^+|f^n(z)|$ exists, is continuous, v
 | equipotential, external ray | Level curve of $G$; level curve of the harmonic conjugate $H$ |
 | $\mu = \Delta G/2\pi$ | Equilibrium measure of $K$, the Brolin measure |
 | capacity | $\exp(\lim(G-\log\lvert z\rvert)) = 1$ for a monic polynomial |
-| $U^\mu(z) = \int\log\lvert z-w\rvert d\mu(w)$ | Logarithmic potential, equal to $G$ |
+| $U_\mu(z) = \int\log\lvert z-w\rvert d\mu(w)$ | Logarithmic potential, equal to $G$ |
 
 ## Further Reading
 

@@ -221,7 +221,7 @@ The determinant is the square of the biquaternion norm and the trace is four tim
 
 ### The Clifford Structure and the Gamma Matrices
 
-**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $T_{\mu\nu}=L_\mu R_\nu$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an algebra isomorphism
+**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $T_{\mu\nu}=L_\mu R_\nu$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -359,6 +359,8 @@ or $\gamma_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators
 The mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
 and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
+A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first.
+An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$.
 In the canonical frame the momentum contraction is a cell sum,
 $$
 \gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),

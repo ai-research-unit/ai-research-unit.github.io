@@ -13,13 +13,13 @@ $$
 the quaternionic norm of the gradient. On the material sector $\mathbb{M}_-$, where $Q_t=iq'_t$, the same operator is
 
 $$
-\Box=-g^{\mu\nu}\partial_\mu\partial_\nu
+\Box=-(g^{-1})_{\mu\nu}\partial_\mu\partial_\nu
 =-\frac{\partial^2}{\partial(q'_t)^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
-This article works in the real coordinates $x^\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial_{Q_t}=-i\partial_{q'_t}$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.
+This article works in the real coordinates $x_\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial_{Q_t}=-i\partial_{q'_t}$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.
 
 The question has two answers, and they are different. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A **factorisation** is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half. A **Clifford root** is a first-order operator of the form $D=i\sum_\mu\gamma_\mu\partial_\mu+B$ with constant matrices $\gamma_\mu,B$; this article classifies the Clifford roots.
 
@@ -71,13 +71,13 @@ with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$. The operator is s
 For a constant-coefficient operator, the **symbol** is the matrix polynomial obtained by replacing $i\partial_\mu$ by a complex variable $q_\mu$, equivalently $\partial_\mu$ by $-iq_\mu$. The symbol of $\Box$ is
 
 $$
-\sigma(\Box)(q)=g^{\mu\nu}q_\mu q_\nu=q_0^2-q_1^2-q_2^2-q_3^2 ,
+\sigma(\Box)(q)=(g^{-1})_{\mu\nu}q_\mu q_\nu=q_0^2-q_1^2-q_2^2-q_3^2 ,
 $$
 
 and the symbol of a first-order operator
 
 $$
-D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x^\mu}+B,
+D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x_\mu}+B,
 \qquad \gamma_\mu,B\in M_n(\mathbb{C})\ \text{constant},
 $$
 
@@ -91,7 +91,7 @@ For constant coefficients the symbol of a composition is the product of the symb
 
 $$
 \Bigl(\sum_\mu q_\mu\gamma_\mu+B\Bigr)^2
-=\Bigl(g^{\mu\nu}q_\mu q_\nu-\lambda\Bigr)I_n
+=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\Bigr)I_n
 $$
 
 for every $q\in\mathbb{C}^4$.
@@ -107,17 +107,17 @@ $$
 *Proof.* Expanding the square gives
 
 $$
-D^2=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-+i\sum_\mu\{\gamma_\mu,B\}\frac{\partial}{\partial x^\mu}+B^2 .
+D^2=-(g^{-1})_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
++i\sum_\mu\{\gamma_\mu,B\}\frac{\partial}{\partial x_\mu}+B^2 .
 $$
 
-The partial derivatives commute, and the monomials $\partial^2/\partial x^\mu\partial x^\nu$, $\partial/\partial x^\mu$ and $1$ are independent over the constants, so the coefficients of each monomial must agree with those of $(\Box-\lambda)I_n$. The second derivatives give $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_n$; the first derivatives give the anticommutator with $B$; and the constant term gives the square. The converse is the same computation read backwards.
+The partial derivatives commute, and the monomials $\partial^2/\partial x_\mu\partial x_\nu$, $\partial/\partial x_\mu$ and $1$ are independent over the constants, so the coefficients of each monomial must agree with those of $(\Box-\lambda)I_n$. The second derivatives give $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_n$; the first derivatives give the anticommutator with $B$; and the constant term gives the square. The converse is the same computation read backwards.
 
 The three conditions separate. The first is the **Clifford condition**; it involves neither $B$ nor $\lambda$. The second says that the zero-order term anticommutes with every generator. The third fixes its square. The shift enters the first-order term only through the anticommutator, and its value only through the square.
 
 **The principal symbol.** The principal symbol of $D$ is $\sum_\mu q_\mu\gamma_\mu$. The Clifford condition says that its square is $(g_{\mu\nu}q_\mu q_\nu)I_n$. The zero-order term and the shift are lower order. A root is therefore a four-generator Clifford system before it is a shifted d'Alembertian; the shift is a condition on the constant term, not on the principal symbol.
 
-**The material sector.** On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.
+**The material sector.** On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2(g^{-1})_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.
 
 ## The Clifford Algebra and the Minimal Carrier
 
@@ -334,7 +334,7 @@ Each generator squares to $\pm I$, with $\gamma_t$ positive and the three spatia
 **Theorem.** Let
 
 $$
-\mathsf D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x^\mu}.
+\mathsf D=i\sum_{\mu\in\{t,x,y,z\}}\gamma_\mu\frac{\partial}{\partial x_\mu}.
 $$
 
 Then $\mathsf D^2=\Box I_4$.
@@ -343,8 +343,8 @@ Then $\mathsf D^2=\Box I_4$.
 
 $$
 \mathsf D^2=-\frac12\sum_{\mu,\nu}\{\gamma_\mu,\gamma_\nu\}
-\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}I_4
+\frac{\partial^2}{\partial x_\mu\partial x_\nu}
+=-(g^{-1})_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}I_4
 =\Box I_4 .
 $$
 
@@ -513,7 +513,7 @@ The biquaternion structure does not select a canonical matrix frame. It selects 
 
 ## Worked Examples
 
-**A plane wave.** Let $\psi(x)=\exp(-i\sum_\mu q_\mu x^\mu)v$ with $v\in\mathbb{C}^4$ constant and $q_\mu\in\mathbb{C}$. Then
+**A plane wave.** Let $\psi(x)=\exp(-i\sum_\mu q_\mu x_\mu)v$ with $v\in\mathbb{C}^4$ constant and $q_\mu\in\mathbb{C}$. Then
 
 $$
 \mathsf D\psi=\Bigl(\sum_\mu q_\mu\gamma_\mu\Bigr)\psi,
@@ -521,7 +521,7 @@ $$
 \mathsf D_\lambda\psi=\Bigl(\sum_\mu q_\mu\gamma_\mu+c\gamma_5\Bigr)\psi .
 $$
 
-The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $g^{\mu\nu}q_\mu q_\nu=\lambda$. On the quadric the symbol has a two-dimensional kernel.
+The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $(g^{-1})_{\mu\nu}q_\mu q_\nu=\lambda$. On the quadric the symbol has a two-dimensional kernel.
 
 **The unshifted cell root on a constant spinor.** A constant $v\in\mathbb{C}^4$ satisfies $\mathsf D v=0$ and $\Box v=0$. The example shows that the cell root has a nontrivial kernel already at $\lambda=0$. The constant solutions of $\Box$ are all of $\mathbb{C}^4$, and $\mathsf D$ vanishes on all of them, so the constant part of the kernel does not distinguish the chiral halves; the half appears on the non-constant solutions of §*The Chiral Form*.
 
@@ -540,10 +540,10 @@ so $\mathsf D_\lambda(\psi_+,\psi_-)=0$. The example exhibits the isomorphism be
 
 $$
 \det\Bigl(\sum_\mu q_\mu\gamma_\mu\Bigr)
-=\Bigl(g^{\mu\nu}q_\mu q_\nu\Bigr)^2 ,
+=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu\Bigr)^2 ,
 $$
 
-the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl(g^{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.
+the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.
 
 ## Summary
 
@@ -556,8 +556,8 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-g_{\mu\nu}\partial_\
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the biquaternionic gradient |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ | its quaternion conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q=-g^{\mu\nu}\partial_\mu\partial_\nu$ |
-| $x^\mu=(q'_t,x,y,z)$ | the real coordinates, $Q_t=iq'_t$ |
+| $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q=-(g^{-1})_{\mu\nu}\partial_\mu\partial_\nu$ |
+| $x_\mu=(q'_t,x,y,z)$ | the real coordinates, $Q_t=iq'_t$ |
 | $g_{\mu\nu}$ | the metric $\mathrm{diag}(+1,-1,-1,-1)$ |
 | $q_\mu$ | the complex symbol variable dual to $i\partial_\mu$ |
 | $\vec e_k$ | the three generators inside $\mathbb{B}$, $\vec e_k^2=-e_t$ |

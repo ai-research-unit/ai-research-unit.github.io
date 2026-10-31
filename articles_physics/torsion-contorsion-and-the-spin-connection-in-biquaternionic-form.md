@@ -8,12 +8,14 @@ The article has one job. It gives the geometry of a **connection with torsion** 
 
 One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime *is* the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of a biquaternionic spinor, so that geometry emerges from matter. That construction is recorded and tested separately, in *Matter Makes Space — An External Construction from Quaternionic Spinors*, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.
 
+**Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$, $K_{\lambda\mu\nu}$ and $\sigma_{\lambda\mu\nu}$ the first index is the output and the last two are the inputs, in that order; $R_{\lambda\mu\nu\rho}$ reads the output first and then the three inputs. In the mixed frame-and-world objects $e_{a\mu}$ and $\omega_{ab\mu}$ the frame slot comes first. A repeated label is summed, with the sign vector $\varepsilon$ where the contraction is the metric one.
+
 ## The Torsion Tensor
 
-An affine connection $\Gamma^\lambda{}_{\mu\nu}$ need not be symmetric under the exchange of its two last labels. Its antisymmetric part is the **torsion tensor**,
+An affine connection $\Gamma_{\lambda\mu\nu}$ need not be symmetric under the exchange of its two last labels. Its antisymmetric part is the **torsion tensor**,
 
 $$
-T^\lambda{}_{\mu\nu} = \Gamma^\lambda{}_{\mu\nu} - \Gamma^\lambda{}_{\nu\mu} .
+T_{\lambda\mu\nu} = \Gamma_{\lambda\mu\nu} - \Gamma_{\lambda\nu\mu} .
 $$
 
 Both the connection and the torsion are objects of the *same* manifold and the *same* index structure; the torsion is simply the part of the connection that a symmetric connection would discard. It is a tensor, and it is antisymmetric in its last two indices by construction. In four dimensions that leaves $4 \times 6 = 24$ independent components, the same count as for the contorsion below.
@@ -29,17 +31,17 @@ Second, **the algebra does not produce a torsion tensor.** The biquaternion unit
 Write the connection as a metric part plus a remainder,
 
 $$
-\Gamma^\lambda{}_{\mu\nu} = \left\{{}^{\lambda}{}_{\mu\nu}\right\} + K^\lambda{}_{\mu\nu} ,
+\Gamma_{\lambda\mu\nu} = \left\{{}_{\lambda\mu\nu}\right\} + K_{\lambda\mu\nu} ,
 \qquad
-\left\{{}^{\lambda}{}_{\mu\nu}\right\} = \tfrac12 g^{\lambda\rho}\left(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu}\right) .
+\left\{{}_{\lambda\mu\nu}\right\} = \tfrac12\sum_\rho (g^{-1})_{\lambda\rho}\left(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu}\right) .
 $$
 
-The remainder $K^\lambda{}_{\mu\nu}$ is the **contorsion** (or contortion; the two names are interchangeable and the first is used throughout). Three exact facts fix it.
+The remainder $K_{\lambda\mu\nu}$ is the **contorsion** (or contortion; the two names are interchangeable and the first is used throughout). Three exact facts fix it.
 
 **Antisymmetry.** $K$ is antisymmetric in its last two indices,
 
 $$
-K^\lambda{}_{\mu\nu} = - K^\lambda{}_{\nu\mu} ,
+K_{\lambda\mu\nu} = - K_{\lambda\nu\mu} ,
 $$
 
 because the Christoffel symbols are symmetric and the antisymmetric part of $\Gamma$ must be the whole of $T$. Twenty-four independent components, the same count as the torsion.
@@ -47,7 +49,7 @@ because the Christoffel symbols are symmetric and the antisymmetric part of $\Ga
 **Torsion is twice the alternating contorsion.** Since the Christoffel part cancels in the difference,
 
 $$
-\boxed{\;T^\lambda{}_{\mu\nu} = 2\,K^\lambda{}_{[\mu\nu]}\;}.
+\boxed{\;T_{\lambda\mu\nu} = 2\,K_{\lambda[\mu\nu]}\;}.
 $$
 
 For the totally antisymmetric contorsions used in the framework this is simply $T = 2K$, that is $K = \tfrac12 T$. In the same case the inverse relation is the permutation sum
@@ -74,25 +76,25 @@ The totally antisymmetric case is the one the corpus meets physically. The spin 
 
 ## The Tetrad Postulate and the Spin Connection
 
-The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_a{}^\mu$ defined by $\exp(a){}_\mu e_b{}^\mu = \delta^a{}_b$ and $\exp(a){}_\mu e_a{}^\nu = \delta_\mu{}^\nu$, and it builds the metric as $g_{\mu\nu} = \eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega^{ab}{}_\mu$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
+The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_{a\mu}$ defined by $\sum_\mu\exp(a){}_\mu e_{b\mu} = \delta^a{}_b$ and $\sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu}$, and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
 
 $$
-\nabla_\mu \exp(a){}_\nu = \partial_\mu \exp(a){}_\nu - \Gamma^\lambda{}_{\mu\nu} \exp(a){}_\lambda + \omega^a{}_{b\mu} \exp(b){}_\nu = 0 ,
+\nabla_\mu \exp(a){}_\nu = \partial_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
 $$
 
 which says that the frame is covariantly constant in both connections at once. Written as a definition of the spin connection from the tetrad and the affine connection, it is
 
 $$
-\omega^a{}_{b\mu} = \exp(a){}_\lambda \Gamma^\lambda{}_{\mu\nu} e_b{}^\nu + \exp(a){}_\lambda \partial_\mu e_b{}^\lambda .
+\omega_{ab\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda \Gamma_{\lambda\mu\nu} e_{b\nu} + \sum_\lambda\exp(a){}_\lambda \partial_\mu e_{b\lambda} .
 $$
 
 Splitting the affine connection into its metric and contorsion parts splits the spin connection the same way,
 
 $$
-\omega^{ab}{}_\mu = \omega^{ab}{}_\mu(e) + K^{ab}{}_\mu ,
+\omega_{ab\mu} = \omega_{ab\mu}(e) + K_{ab\mu} ,
 $$
 
-with $\omega^{ab}{}_\mu(e)$ the Levi-Civita spin connection of the tetrad alone and $K^{ab}{}_\mu$ the contorsion in frame indices. This is the object that appears in the covariant derivative of a spinor, and it is the only place the torsion enters the matter equation.
+with $\omega_{ab\mu}(e)$ the Levi-Civita spin connection of the tetrad alone and $K_{ab\mu}$ the contorsion in frame indices. This is the object that appears in the covariant derivative of a spinor, and it is the only place the torsion enters the matter equation.
 
 Two exact statements were checked here, with a two-dimensional tetrad whose components depend on the time coordinate, in exact rational arithmetic.
 
@@ -101,25 +103,25 @@ Two exact statements were checked here, with a two-dimensional tetrad whose comp
 **The Weitzenböck connection is curvature-free and torsionful.** The connection built from the tetrad alone,
 
 $$
-\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu \exp(a){}_\nu ,
+\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial_\mu \exp(a){}_\nu ,
 $$
 
 called the **Weitzenböck connection**, was computed for that tetrad together with its curvature. The curvature came out **exactly zero** in every component and the torsion **exactly $\tfrac{3}{10}$** in its nonzero components. This is the content of the teleparallel sector: a connection can be flat and still have torsion, and the framework's algebra can carry it.
 
-**Where the algebra enters.** Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $\gamma_a\gamma_b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega^{ab}{}_\mu$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.
+**Where the algebra enters.** Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $\gamma_a\gamma_b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.
 
 ## The Spin Tensor and the Torsion–Spin Relation
 
 In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is sourced *algebraically* by the spin density of matter. For a Dirac field the spin density is the completely antisymmetric bilinear
 
 $$
-\Sigma^{\lambda\mu\nu} = \bar\psi\,\gamma_{[\lambda}\gamma_{\mu}\gamma_{\nu]}\,\psi ,
+\Sigma_{\lambda\mu\nu} = \bar\psi\,\gamma_{[\lambda}\gamma_{\mu}\gamma_{\nu]}\,\psi ,
 $$
 
 and the axial current is
 
 $$
-A^\mu = \bar\psi\,\gamma_5\gamma_\mu\,\psi .
+A_\mu = \bar\psi\,\gamma_5\gamma_\mu\,\psi .
 $$
 
 **The antisymmetric spin density is the dual of the axial current.** On the antisymmetrised triple product,
@@ -133,15 +135,15 @@ which is exact, at every index triple and for every spinor, with the constant ve
 **The spin density contracts to the axial current.** Contracting the identity with itself gives
 
 $$
-\boxed{\;\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho\;},
+\boxed{\;\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\,\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho\,A_\rho A_\rho\;},
 $$
 
-because $\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma} = -6\,\delta_\rho{}^\sigma$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.
+because $\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma} = -6\,\delta_{\rho\sigma}$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.
 
 The Einstein–Cartan field equations then read, schematically,
 
 $$
-T^\lambda{}_{\mu\nu} = \kappa\,\sigma^\lambda{}_{\mu\nu} , \qquad \kappa = 8\pi G ,
+T_{\lambda\mu\nu} = \kappa\,\sigma_{\lambda\mu\nu} , \qquad \kappa = 8\pi G ,
 $$
 
 with $\sigma$ the spin density in the same normalisation as $\Sigma$. Because the torsion appears in the action without derivatives, its field equation is algebraic: it is solved by $T \propto \Sigma$ and the solution can be substituted back into the matter equation. The substitution couples the torsion to the axial current, and since the torsion is the dual of that current, the result is a **four-fermion axial–axial contact term** with a coefficient fixed by $G$ and not chosen. The elimination is the step the nonlinear-Dirac article performs and whose coefficient $\tfrac{3\kappa}{8}$ it owns; this article supplies the two geometric identities — duality and the factor six — that make the elimination a two-line algebraic substitution rather than a computation in components. The statement that the torsion–spin relation is algebraic, and therefore that the elimination introduces no new propagating field, is the whole reason the Hehl–Datta term is a contact interaction.
@@ -151,17 +153,17 @@ with $\sigma$ the spin density in the same normalisation as $\Sigma$. Because th
 The Weitzenböck connection of the previous section,
 
 $$
-\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu \exp(a){}_\nu ,
+\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial_\mu \exp(a){}_\nu ,
 $$
 
 defines a geometry whose curvature vanishes identically and whose torsion is nonzero. Its two exact properties, both confirmed above, are worth stating in the general form in which they are used.
 
-**Zero curvature is an identity.** $R^\lambda{}_{\mu\nu\rho}(\Gamma) = 0$ for every tetrad, because the connection is the pullback of a flat connection along a frame. The check is exact; no small-curvature approximation is involved.
+**Zero curvature is an identity.** $R_{\lambda\mu\nu\rho}(\Gamma) = 0$ for every tetrad, because the connection is the pullback of a flat connection along a frame. The check is exact; no small-curvature approximation is involved.
 
-**Torsion is the contorsion of the metric connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\omega^{ab}{}_\mu = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
+**Torsion is the contorsion of the metric connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\omega_{ab\mu} = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
 
 $$
-K^{ab}{}_\mu = -\,\omega^{ab}{}_\mu(e) .
+K_{ab\mu} = -\,\omega_{ab\mu}(e) .
 $$
 
 This is the teleparallel condition: the geometry is the one in which the frame is everywhere parallel and all the connection is contorsion. In this formulation the torsion is the entire content of the connection, and general relativity is recovered by the same equations in the zero-torsion case.
@@ -178,11 +180,11 @@ The two open items this article was written against stand as follows. The first 
 
 ## Summary
 
-A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K^\lambda{}_{\mu\nu}$, which is antisymmetric in its last two indices. The torsion is twice the alternating contorsion, $T^\lambda{}_{\mu\nu} = 2K^\lambda{}_{[\mu\nu]}$, and the inverse relation $K_{\lambda\mu\nu} = \tfrac12(T_{\lambda\mu\nu} - T_{\mu\nu\lambda} + T_{\nu\lambda\mu})$ holds in the totally antisymmetric case. The covariant derivative of the metric is $\nabla_\mu g_{\nu\rho} = -(K_{\nu\mu\rho} + K_{\rho\mu\nu})$, which vanishes for every index order exactly when the contorsion is totally antisymmetric; the 24 contorsion components are cut to a four-dimensional solution space, so **metric compatibility is the condition of total antisymmetry**, and this is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
+A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K_{\lambda\mu\nu}$, which is antisymmetric in its last two indices. The torsion is twice the alternating contorsion, $T_{\lambda\mu\nu} = 2K_{\lambda[\mu\nu]}$, and the inverse relation $K_{\lambda\mu\nu} = \tfrac12(T_{\lambda\mu\nu} - T_{\mu\nu\lambda} + T_{\nu\lambda\mu})$ holds in the totally antisymmetric case. The covariant derivative of the metric is $\nabla_\mu g_{\nu\rho} = -(K_{\nu\mu\rho} + K_{\rho\mu\nu})$, which vanishes for every index order exactly when the contorsion is totally antisymmetric; the 24 contorsion components are cut to a four-dimensional solution space, so **metric compatibility is the condition of total antisymmetry**, and this is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
 
-The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda \partial_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
+The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
-The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma^{\lambda\mu\nu} = \bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma_\rho\psi$, and its square is six times the axial current squared, $\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6A_\rho A^\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
+The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma_\rho\psi$, and its square is six times the axial current squared, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
 Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.
 
@@ -190,18 +192,18 @@ Two statements bound the article. The commutator of the quaternion units is a co
 
 | symbol | meaning |
 | --- | --- |
-| $\Gamma^\lambda{}_{\mu\nu}$ | affine connection |
-| $\left\{{}^{\lambda}{}_{\mu\nu}\right\}$ | Christoffel symbols of $g_{\mu\nu}$ |
-| $T^\lambda{}_{\mu\nu}$ | torsion tensor, $2K^\lambda{}_{[\mu\nu]}$ |
-| $K^\lambda{}_{\mu\nu}$ | contorsion, antisymmetric in the last pair |
-| $\exp(a){}_\mu$, $e_a{}^\mu$ | tetrad and its inverse |
+| $\Gamma_{\lambda\mu\nu}$ | affine connection |
+| $\left\{{}_{\lambda\mu\nu}\right\}$ | Christoffel symbols of $g_{\mu\nu}$ |
+| $T_{\lambda\mu\nu}$ | torsion tensor, $2K_{\lambda[\mu\nu]}$ |
+| $K_{\lambda\mu\nu}$ | contorsion, antisymmetric in the last pair |
+| $\exp(a){}_\mu$, $e_{a\mu}$ | tetrad and its inverse |
 | $g_{\mu\nu} = \eta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad, $\eta = \mathrm{diag}(+1,-1,-1,-1)$ |
-| $\omega^{ab}{}_\mu$ | spin connection one-form |
-| $\omega^{ab}{}_\mu(e)$ | its Levi-Civita part |
+| $\omega_{ab\mu}$ | spin connection one-form |
+| $\omega_{ab\mu}(e)$ | its Levi-Civita part |
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
 | $\tilde E_\mu$ | the $\mathbb{M}_-$-valued frame of Route Two |
-| $\Sigma^{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$ |
-| $A^\mu$ | axial current, $\bar\psi\gamma_5\gamma_\mu\psi$ |
+| $\Sigma_{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$ |
+| $A_\mu$ | axial current, $\bar\psi\gamma_5\gamma_\mu\psi$ |
 | $\kappa = 8\pi G$ | Einstein gravitational constant |
 
 ## Further Reading

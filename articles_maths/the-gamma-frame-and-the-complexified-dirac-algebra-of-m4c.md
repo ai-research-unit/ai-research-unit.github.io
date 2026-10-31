@@ -162,7 +162,7 @@ $$
 satisfy the same relations, because conjugation preserves anticommutators and the identity. The frames are therefore not unique: they form a homogeneous space under $GL_4$, and the subgroup that preserves the *span* of the generators is the **Clifford group**
 
 $$
-\Gamma=\{U:U\gamma_{\mu}U^{-1}=\Lambda^{\mu}_{\ \nu}\gamma_{\nu}\ \text{for some }\Lambda\in O(1,3)\}.
+\Gamma=\{U:U\gamma_{\mu}U^{-1}=\Lambda_{\mu\nu}\gamma_{\nu}\ \text{for some }\Lambda\in O(1,3)\}.
 $$
 
 **The Clifford group.** The Clifford group acts on the frame by Lorentz transformations; the **spin group** $\mathrm{Spin}(1,3)$ is the norm-one part of the even Clifford group (the even part itself is the scalars times the spin group), and it double covers the identity component $SO^{+}(1,3)$. The Lie algebra of the spin group is the bivector span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(1,3)_{\mathbb{C}}$, of dimension $6$, inside $M_4(\mathbb{C})$.

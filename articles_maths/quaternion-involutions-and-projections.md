@@ -12,7 +12,7 @@ The quaternion algebra and its basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ wit
 
 Throughout, a quaternion is $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with scalar part $q_t = \mathrm{Sc}\,\tilde q$ and vector part $\vec q = \mathrm{Vect}\,\tilde q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, the real inner product on $\operatorname{Im}\mathbb{H}$ is $\langle\vec q,\vec p\rangle = \mathrm{Sc}(\vec q\vec p^{\natural}) = \sum_{k=1}^{3}q_kp_k$ with $|\vec q|^2 = \langle\vec q,\vec q\rangle$, and a **unit vector** is an element $\nu\in\operatorname{Im}\mathbb{H}$ with $\langle \nu\rangle_{\natural} = 1$. For a unit vector $\nu$ one has $\nu^2 = -e_t$ and $\nu^{-1} = \bar\nu = -\nu$. The units of $\mathbb{H}$ are the non-zero elements, and $Sp(1)$ is the unit sphere.
 
-The source of the arrangement is the paper of Ell and Sangwine, *Quaternion Involutions* (arXiv:math/0506034): the axioms, the infinitude of the family, the reflection reading, the composition theorems, the recovery of the conjugate and the projection formulas are theirs. The notation is the corpus's. Where the source writes $\tilde q^{\nu}$ for the value $-\nu\tilde q\nu$, this article writes $\operatorname{Ad}_\nu(\tilde q)$, the inner-automorphism notation of *Quaternion Automorphisms and Derivations*, to which the involution is a specialisation.
+The source of the arrangement is the paper of Ell and Sangwine, *Quaternion Involutions* (arXiv:math/0506034): the axioms, the infinitude of the family, the reflection reading, the composition theorems, the recovery of the conjugate and the projection formulas are theirs. The notation is the corpus's. Where the source writes $\tilde q_{\nu}$ for the value $-\nu\tilde q\nu$, this article writes $\operatorname{Ad}_\nu(\tilde q)$, the inner-automorphism notation of *Quaternion Automorphisms and Derivations*, to which the involution is a specialisation.
 
 ## Involutions and Anti-Involutions
 
@@ -242,7 +242,7 @@ Three mutually perpendicular involutions recover the conjugate and the scalar pa
 | $Sp(1)$ | Unit sphere and unit group of $\mathbb{H}$ |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$ | Inner automorphism (from *Quaternion Automorphisms and Derivations*) |
 | $\operatorname{Ad}_\nu(\tilde q) = \nu\tilde q\nu^{-1} = -\nu\tilde q\nu$ | Involution about the axis $\nu$, a unit vector |
-| $\tilde q^{\nu} = -\nu\tilde q\nu$ | The source's notation for the value of $\operatorname{Ad}_\nu$ |
+| $\tilde q_{\nu} = -\nu\tilde q\nu$ | The source's notation for the value of $\operatorname{Ad}_\nu$ |
 | $\operatorname{Ad}_{\tilde q}(\tilde p) = \tilde q\tilde p\tilde q^{-1}$ | Adjoint action and inner automorphism |
 | $\rho_\nu(\tilde q) = -\nu\tilde q\nu^{-1} = -\operatorname{Ad}_\nu(\tilde q)$ | Plane reflection of the axis $\nu$ |
 | $\operatorname{span}(e_t,\nu)$ | Argand plane of the axis $\nu$ |

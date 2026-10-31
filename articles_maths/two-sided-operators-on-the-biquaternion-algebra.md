@@ -181,18 +181,18 @@ of the complex sixteen-dimensional operator space, in the sense of *$M_4(\mathbb
 **The change of basis.** The coefficient units $e_\mu$ are linear combinations of the matrix units $U_{ij}$:
 
 $$
-e_\mu=\sum_{i,j=1}^{2}c^{\mu}_{ij}U_{ij},\qquad
-U_{ij}=\sum_{\mu}d^{ij}_{\mu}e_\mu,
+e_\mu=\sum_{i,j=1}^{2}c_{\mu,ij}U_{ij},\qquad
+U_{ij}=\sum_{\mu}d_{\mu,ij}e_\mu,
 $$
 
-with the two $4\times4$ matrices $c$ and $d$ inverse to one another; the change is the Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*, read on the algebra rather than on the operator space.
+with the element label written first and the matrix pair second, and the two $4\times4$ matrices $c$ and $d$ inverse to one another; the change is the Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*, read on the algebra rather than on the operator space.
 
 **Theorem (the basis).** The sixteen products $e_\mu[\,]e_\nu$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 
 *Proof.* Expand each coefficient unit in the matrix units:
 
 $$
-e_\mu[\,]e_\nu=\sum_{i,j,k,l}c^{\mu}_{ij}c^{\nu}_{kl}\,U_{ij}[\,]U_{kl}.
+e_\mu[\,]e_\nu=\sum_{i,j,k,l}c_{\mu,ij}c_{\nu,kl}\,U_{ij}[\,]U_{kl}.
 $$
 
 The sixteen operators $U_{ij}[\,]U_{kl}$ are a basis, by §*The Matrix-Unit Computation*. The coefficient matrix of the display is the tensor product $c\otimes c$, and $c$ is invertible; hence $c\otimes c$ is invertible, and the sixteen products are a basis.

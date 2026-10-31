@@ -6,16 +6,16 @@ A massive spin-1 field can acquire its mass in more than one way. The **Proca** 
 
 This article records that equivalence and the machinery it uses. It is the physics companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* and of *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*: the parent action is written in the s-vector variables, and the two eliminations pass through the self-dual field strength and the cubic (order-three ding) form of those articles.
 
-The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry its generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article. The conventions are those of the companion articles.
+The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry its generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123} = 1$; and the structure constants $c_{\mu\nu\lambda}$ and $\check c_{\mu\nu\lambda}$ are those of the s-vector article. The conventions are those of the companion articles.
 
 ## The Parent Action
 
 ### The Idea
 
-A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$ and its first-order form $\tfrac12 B^{\mu\nu}(\partial_\mu A_\nu - \partial_\nu A_\mu) - \tfrac18 B_{\mu\nu}B^{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, the auxiliary field being the antisymmetric part of the biquaternion:
+A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F_{\mu\nu}$ and its first-order form $\tfrac12 B_{\mu\nu}(\partial_\mu A_\nu - \partial_\nu A_\mu) - \tfrac18 B_{\mu\nu}B_{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, the auxiliary field being the antisymmetric part of the biquaternion:
 
 $$
-S_{\text{parent}}[G, A] = \int \tfrac12\Bigl[G^*_\nu\, i\check c^{\nu\mu\lambda}\,\tilde\nabla_\mu G_\lambda - \bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda\Bigr] + S_{\text{aux}}[G, A],
+S_{\text{parent}}[G, A] = \int \tfrac12\Bigl[G^*_\nu\, i\check c_{\nu\mu\lambda}\,\tilde\nabla_\mu G_\lambda - \bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c_{\nu\mu\lambda} G_\lambda\Bigr] + S_{\text{aux}}[G, A],
 $$
 
 the first two terms being the bosonic kinetic form of the s-vector article and $S_{\text{aux}}$ the term that carries the antisymmetric (field-strength) field. The essential property is that the *same* $\check c$ that defines the kinetic operator also defines the auxiliary field's transformation, so the two eliminations are the two ways of inverting one linear system.
@@ -25,13 +25,13 @@ the first two terms being the bosonic kinetic form of the s-vector article and $
 Eliminating the auxiliary field leaves the **Dirac Lagrangian** in the vector representation,
 
 $$
-\boxed{\;\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c^{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*\nu} + G_\nu G^\nu\bigr)\Bigr]\;},
+\boxed{\;\mathcal{L}_D = \tfrac12\Bigl[\bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c_{\nu\mu\lambda} G_\lambda - G^*_\nu\, i\check c_{\nu\mu\lambda}\, \tilde\nabla_\mu G_\lambda + m\bigl(G^{*}_\nu G^{*}_{\nu} + G_\nu G_\nu\bigr)\Bigr]\;},
 $$
 
 whose mass term $m(G^*G^* + GG)$ couples $G$ to $G^*$ — the chirality-off-diagonal mass, and the reason the s-vector is not simply a pair of independent complex vectors. Eliminating $G$ instead leaves a **second-order gauge Lagrangian** for the field $A_\mu$, with a mass term built from the antisymmetric symbol,
 
 $$
-\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
+\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F_{\mu\nu} + \tfrac{m}{4}\,\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
 $$
 
 the second term being the topological (Chern–Simons-type / BF-type) mass. The two Lagrangians describe the same propagating modes.
@@ -45,10 +45,10 @@ the second term being the topological (Chern–Simons-type / BF-type) mass. The 
 The equivalence passes through the antisymmetric part of the biquaternion, which is the field strength of the s-vector. In the companion article the two-form
 
 $$
-H^{\mu\nu} = G^*_\lambda\, \check c^{\lambda\mu\nu}
+H_{\mu\nu} = G^*_\lambda\, \check c_{\lambda\mu\nu}
 $$
 
-is shown to be anti-self-dual, $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$. The self-duality means that the auxiliary field carries only the three complex independent components of its antisymmetric part: a biquaternion has four complex components (scalar, three-vector), the symmetric part of $H$ is proportional to the metric, and the antisymmetric part is anti-self-dual. The parent action's elimination is therefore an elimination of a self-dual two-form, which is exactly the structure a topological mass term needs.
+is shown to be anti-self-dual, $H_{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$. The self-duality means that the auxiliary field carries only the three complex independent components of its antisymmetric part: a biquaternion has four complex components (scalar, three-vector), the symmetric part of $H$ is proportional to the metric, and the antisymmetric part is anti-self-dual. The parent action's elimination is therefore an elimination of a self-dual two-form, which is exactly the structure a topological mass term needs.
 
 ### The Chern–Pontryagin Density as a Total Derivative
 
@@ -66,10 +66,10 @@ where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real an
 The third ingredient is the interpretation of the mass. In the vector representation the mass term is
 
 $$
-\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma_\mu\Psi\;}
+\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N_\nu - B_\nu B_\nu\bigr) = \bar\Psi\, K_\mu\gamma_\mu\Psi\;}
 $$
 
-for a unit complex vector $K^\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
+for a unit complex vector $K_\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
 
 ## What the Equivalence Is and Is Not
 
@@ -97,20 +97,20 @@ These questions are open.
 
 Liu Yu-Fen's thesis is that the massive Dirac field and a topologically massive gauge field are **dual**: a single first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian in the vector representation — kinetic term with the $\check c$ structure constants and the chirality-off-diagonal mass $m(G^*G^* + GG)$ — and, on the other elimination, to a gauge Lagrangian with a Maxwell kinetic term and a topological (Chern–Simons-type / BF-type) mass term $\tfrac{m}{4}\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$. The two describe the same propagating modes.
 
-The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the interpretation of the mass as a non-integrable phase carried by a unit complex vector $K^\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
+The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H_{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the interpretation of the mass as a non-integrable phase carried by a unit complex vector $K_\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $G^\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
-| $B^\mu, N^\mu$ | Real four-vectors of the two semi-spinors, $G = B + iN$ |
-| $\check c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on the neutral vector $j$ |
+| $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
+| $B_\mu, N_\mu$ | Real four-vectors of the two semi-spinors, $G = B + iN$ |
+| $\check c_{\mu\nu\lambda} = (t_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on the neutral vector $j$ |
 | $\bar\Psi\Psi$ | Dirac bilinear, $= \tfrac12(N^2 - B^2)$ |
-| $H^{\mu\nu} = G^*_\lambda\check c^{\lambda\mu\nu}$ | Anti-self-dual two-form (the antisymmetric part) |
+| $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ | Anti-self-dual two-form (the antisymmetric part) |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Gauge field strength |
 | $A_\mu$ | Gauge four-potential |
-| $K^\mu$ | Unit complex vector; the mass as a phase |
+| $K_\mu$ | Unit complex vector; the mass as a phase |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123} = 1$ |
 | $m$ | Fermion mass, equated to the topological gauge mass |
 | $S_{\text{parent}}$ | The first-order action with the two reductions |

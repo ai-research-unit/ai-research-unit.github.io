@@ -18,11 +18,11 @@ Liu's construction lives on the product of three spaces:
 
 | Space | Name | Real dimension | Transform | Carrier |
 |---|---|---|---|---|
-| $M$ | Lorentz-vector space | 4 | $\Lambda(q)$ | $A^\mu$ |
-| $S_1$ | Semi-spinor of the first type | 4 | $S_1(q)$ | $B^\mu$, $N^\mu$ |
-| $S_2$ | Semi-spinor of the second type | 4 | $S_2(q)$ | $N^\mu$, $B^\mu$ |
+| $M$ | Lorentz-vector space | 4 | $\Lambda(q)$ | $A_\mu$ |
+| $S_1$ | Semi-spinor of the first type | 4 | $S_1(q)$ | $B_\mu$, $N_\mu$ |
+| $S_2$ | Semi-spinor of the second type | 4 | $S_2(q)$ | $N_\mu$, $B_\mu$ |
 
-Here $q$ is a unit biquaternion of the Lorentz group, $S_1(q)$ is left multiplication, $S_2(q)$ right multiplication, and $\Lambda(q)$ the mixed map $x \mapsto qxq^*$ that acts on a coordinate vector. The semi-spinors $B^\mu$ and $N^\mu$ are the two real four-vectors of the s-vector representation, and the **s-vector** $G^\mu = B^\mu + iN^\mu$ is the complex combination of the two.
+Here $q$ is a unit biquaternion of the Lorentz group, $S_1(q)$ is left multiplication, $S_2(q)$ right multiplication, and $\Lambda(q)$ the mixed map $x \mapsto qxq^*$ that acts on a coordinate vector. The semi-spinors $B_\mu$ and $N_\mu$ are the two real four-vectors of the s-vector representation, and the **s-vector** $G_\mu = B_\mu + iN_\mu$ is the complex combination of the two.
 
 ### The Composition Law
 
@@ -50,10 +50,10 @@ $$
 Equivalently, and this is the form that shows the two independent pieces, it is
 
 $$
-\varepsilon(A, B, N) = A_\mu\Bigl[\, t^{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda \Bigr],
+\varepsilon(A, B, N) = A_\mu\Bigl[\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda \Bigr],
 $$
 
-where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ is the symmetric gamma trace and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ is the totally antisymmetric symbol, both contracted with the neutral vector $k$. The first bracket is the quadratic form on the semi-spinor, the second the genuinely cubic part; both are needed for the full invariant.
+where $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ is the symmetric gamma trace and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ is the totally antisymmetric symbol, both contracted with the neutral vector $k$. The first bracket is the quadratic form on the semi-spinor, the second the genuinely cubic part; both are needed for the full invariant.
 
 The geometric interpretation is the same as Cartan's. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the gamma-matrix action $A_\mu \bar\Psi_{(1)}\gamma_\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral elements: it is the same construction in four dimensions, and it is the only independent invariant of the triple.
 
@@ -63,14 +63,14 @@ When the same form is evaluated on a single spinor rather than on a triple, it g
 
 $$
 C = A_\mu\,\bar\Psi\gamma_\mu\Psi
-= A_\mu\, t^{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
+= A_\mu\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
 $$
 
 Together with the two quadratic forms
 
 $$
-\bar\Psi\Psi = N_\nu N^\nu - B_\nu B^\nu, \qquad
-\bar\Psi\gamma_5\Psi = -\tfrac12\bigl(G_\nu G^\nu - G^*_\nu G^{*\nu}\bigr),
+\bar\Psi\Psi = N_\nu N_\nu - B_\nu B_\nu, \qquad
+\bar\Psi\gamma_5\Psi = -\tfrac12\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
 $$
 
 the cubic form $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two semi-spinor spaces, and the cubic form is the triality-invariant coupling of the vector to the pair. The dictionary of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.
@@ -150,7 +150,7 @@ A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$,
 
 $$
 \varepsilon(A,B,N) = 2\,A_\mu\,\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda
-= A_\mu\bigl[t^{\nu\mu\lambda}(B_\nu B_\lambda + N_\nu N_\lambda) + 2\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda\bigr],
+= A_\mu\bigl[t_{\nu\mu\lambda}(B_\nu B_\lambda + N_\nu N_\lambda) + 2\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda\bigr],
 $$
 
 and its evaluation on a single spinor is the cubic form $A_\mu\bar\Psi\gamma_\mu\Psi$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$, and the combination $q_xq_yq_yq_x$ leaves the cubic form invariant — "Dirac's game".
@@ -162,13 +162,13 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | Symbol | Meaning |
 |---|---|
 | $M$, $S_1$, $S_2$ | Lorentz-vector space and the two semi-spinor spaces, each real dimension 4 |
-| $A^\mu$ | Element of $M$ (a Lorentz vector) |
-| $B^\mu, N^\mu$ | Elements of $S_1, S_2$ (real four-vectors) |
-| $G^\mu = B^\mu + iN^\mu$ | s-Vector |
+| $A_\mu$ | Element of $M$ (a Lorentz vector) |
+| $B_\mu, N_\mu$ | Elements of $S_1, S_2$ (real four-vectors) |
+| $G_\mu = B_\mu + iN_\mu$ | s-Vector |
 | $q$ | Unit biquaternion of the Lorentz group |
 | $S_1(q), S_2(q), \Lambda(q)$ | Left, right and mixed actions of $q$ |
 | $e_\nu = i\vec u_{\nu}$ | Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$ |
-| $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
+| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
 | $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol, $\varepsilon_{0123} = 1$ |
 | $\varepsilon(A,B,N) = 2A_\mu\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |
 | $C = A_\mu\bar\Psi\gamma_\mu\Psi$ | Cubic form |

@@ -378,7 +378,7 @@ $$
 | $R_b$ | right multiplication on $A$, $R_b(X)=Xb$ |
 | $T_{a,b}=L_aR_b$ | the two-sided operator $X\mapsto aXb$ |
 | $F_{ij}$ | matrix units of $A=M_n(\mathbb{C})$ in the construction |
-| $c^{\lambda}_{\ \mu\rho}$ | structure constants of $\mathbb{B}$, $e_\mu e_\rho=\sum_\lambda c^{\lambda}_{\ \mu\rho}e_\lambda$ |
+| $c_{\lambda\mu\rho}$ | structure constants of $\mathbb{B}$, $e_\mu e_\rho=\sum_\lambda c_{\lambda\mu\rho}e_\lambda$ |
 | $N$ | the biquaternion norm, $N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 
 ## Further Reading

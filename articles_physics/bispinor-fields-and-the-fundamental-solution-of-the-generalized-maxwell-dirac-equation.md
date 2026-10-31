@@ -218,7 +218,7 @@ The source's interpretation of the same formulas is the *shifted cone*, which th
 The source's most quotable result is about the amplitude of the plane-wave bispinor, and in the corpus's own algebra it has a clean interpretation. Applying the bigradient to a plane wave gives a *closed* prefactor,
 
 $$
-\bigl(\nabla^\sigma + i\rho\bigr)\varphi^{s}_{\vec\xi}
+\bigl(\nabla_\sigma + i\rho\bigr)\varphi^{s}_{\vec\xi}
 = -|\vec\xi|\,\bigl(is + \sigma\hat\xi\bigr)\varphi^{s}_{\vec\xi} ,
 \qquad \sigma, s \in \{+,-\} ,
 \qquad \hat\xi = \vec\xi/|\vec\xi| ,

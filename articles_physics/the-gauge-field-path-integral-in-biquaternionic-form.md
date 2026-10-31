@@ -22,7 +22,7 @@ The vacuum amplitude for the free Maxwell field is
 $$
 Z = \int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}]),
 \qquad
-S[\tilde{A}] = \int d^4x\left(-\tfrac14F_{\mu\nu}F^{\mu\nu}\right)
+S[\tilde{A}] = \int d^4x\left(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 = -\tfrac12\int d^4x\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
 $$
 
@@ -118,14 +118,14 @@ $$
 \mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac{\xi}{2}B^2 ,
 $$
 
-the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K^{\mu\nu}=p^2\eta^{\mu\nu}+(1-\xi^{-1})p^\mu p^\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
+the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-\xi^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
 
 ### The Non-Abelian Determinant
 
-For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G^a[\tilde{A}]=\partial_\mu A^{a\mu}-\omega^a$, the variation under a gauge transformation is
+For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G^a[\tilde{A}]=\sum_\mu\partial_\mu A_{\mu}^{a}-\omega^a$, the variation under a gauge transformation is
 
 $$
-\frac{\delta G^a[\tilde{A}^\Gamma]}{\delta\Gamma^b} = \partial_\mu(D^\mu)^{ab},
+\frac{\delta G^a[\tilde{A}^\Gamma]}{\delta\Gamma^b} = \sum_\mu\partial_\mu(D_\mu)^{ab},
 \qquad
 (D_\mu)^{ab}=\partial_\mu\delta^{ab}+g f^{abc}A_\mu^c ,
 $$
@@ -133,10 +133,10 @@ $$
 so the determinant is a functional of the potential through the structure constants,
 
 $$
-\Delta[\tilde{A}] = \det\left(\partial_\mu D^\mu\right),
+\Delta[\tilde{A}] = \det\left(\sum_\mu\partial_\mu D_\mu\right),
 $$
 
-and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\bar{c}^a\partial_\mu(D^\mu c)^a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
+and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_\mu\bar{c}^a\partial_\mu(D_\mu c)^a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
 
 ## The Gaussian Integral and the Propagator
 
@@ -146,10 +146,10 @@ With the gauge fixed, the action is quadratic in the potential, and the integral
 
 $$
 S_2 = \tfrac12\int\frac{d^4p}{(2\pi)^4}\;\tilde{A}_\mu(-p)\,
-K^{\mu\nu}(p)\,
+K_{\mu\nu}(p)\,
 \tilde{A}_\nu(p),
 \qquad
-K^{\mu\nu}(p) = p^2\eta^{\mu\nu} + \left(1-\frac{1}{\xi}\right)p^\mu p^\nu ,
+K_{\mu\nu}(p) = p^2\eta_{\mu\nu} + \left(1-\frac{1}{\xi}\right)p_\mu p_\nu ,
 $$
 
 with $\xi$ the gauge parameter, the Gaussian integration gives
@@ -168,21 +168,19 @@ the momentum-space propagator. The residue structure is worth separating into it
 
 $$
 P_{\mu\nu} = \eta_{\mu\nu}+\frac{p_\mu p_\nu}{p^2},
-\qquad
-P^{\mu}{}_\nu = \delta^\mu{}_\nu+\frac{p^\mu p_\nu}{p^2},
 $$
 
-which is idempotent, has trace three off shell, and annihilates $p^\nu$:
+which is idempotent, has trace three off shell, and annihilates $p_\nu$:
 
 $$
 P^2 = P,
 \qquad
 \mathrm{tr}\,P = 3,
 \qquad
-P^{\mu}{}_\nu p^\nu = 0 .
+\sum_\nu P_{\mu\nu} p_\nu = 0 .
 $$
 
-The second is the longitudinal projector $L^{\mu}{}_\nu = -p^\mu p_\nu/p^2$, the complement of $P$, which is what the gauge parameter multiplies,
+The second is the longitudinal projector $L_{\mu\nu} = -p_\mu p_\nu/p^2$, the complement of $P$, which is what the gauge parameter multiplies,
 
 $$
 P+L = \delta,
@@ -204,34 +202,34 @@ $$
 D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi_2) = -\frac{\xi-\xi_2}{p^4}\,p_\mu p_\nu ,
 $$
 
-and a conserved current satisfies $p_\nu j^\nu=0$, so
+and a conserved current satisfies $\sum_\nu p_\nu j_\nu=0$, so
 
 $$
-\left(D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi_2)\right)j^\nu = -\frac{\xi-\xi_2}{p^4}\,p_\mu\,(p_\nu j^\nu)=0 .
+\sum_\nu\left(D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi_2)\right)j_\nu = -\frac{\xi-\xi_2}{p^4}\,p_\mu\,(\sum_\nu p_\nu j_\nu)=0 .
 $$
 
-This was verified numerically: with a conserved current $j^\nu=(p_3,0,0,\omega)$ satisfying $p_\nu j^\nu=0$, the contraction of $D(1)-D(3)$ with $j^\nu$ was zero to machine precision at two momenta. The statement is not that the propagator is gauge independent — it is not — but that the piece that depends on the gauge parameter is the piece that a conserved current cannot see. Every amplitude built from the gauge field with external conserved currents, or with the external legs on shell and transverse, is therefore independent of $\xi$. This is the path-integral version of the statement that the gauge fixing is a choice and not a physical input.
+This was verified numerically: with a conserved current $j_\nu=(p_3,0,0,\omega)$ satisfying $\sum_\nu p_\nu j_\nu=0$, the contraction of $D(1)-D(3)$ with $j_\nu$ was zero to machine precision at two momenta. The statement is not that the propagator is gauge independent — it is not — but that the piece that depends on the gauge parameter is the piece that a conserved current cannot see. Every amplitude built from the gauge field with external conserved currents, or with the external legs on shell and transverse, is therefore independent of $\xi$. This is the path-integral version of the statement that the gauge fixing is a choice and not a physical input.
 
 The transverse projector is the biquaternion object that the algebra supplies without being asked. Its three off-shell directions are the three directions of the vector part of $\mathbb{M}_-$ orthogonal to the momentum; on shell, for a massless field, the momentum is null, the longitudinal direction of the gauge field lies on the light cone and decouples, and the two remaining directions are the two transverse polarizations of the companion articles. The count two is not visible in the trace of $P$ off shell; it emerges on shell, where one of the three directions is removed by the gauge structure and the positivity of the physical subspace. The massive Proca field is the case in which the longitudinal direction is retained and the count is three, as the preceding articles develop.
 
 ### The Generating Functional with a Source
 
-The Gaussian integral is fixed in full by adding a source. With the gauge fixed, the action is $S_2+\int J^\mu A_\mu$ and the integral
+The Gaussian integral is fixed in full by adding a source. With the gauge fixed, the action is $S_2+\int\sum_\mu J_\mu A_\mu$ and the integral
 
 $$
-Z[J] = \int\mathcal{D}\tilde{A}\;\exp\left(iS_2[\tilde{A}]+i\int d^4x\,J^\mu A_\mu\right)
-= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi)^4}J^\mu(-p)D_{\mu\nu}(p)J^\nu(p)\right)
+Z[J] = \int\mathcal{D}\tilde{A}\;\exp\left(iS_2[\tilde{A}]+i\int d^4x\,\sum_\mu J_\mu A_\mu\right)
+= \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi)^4}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
 $$
 
-is evaluated by completing the square, the shift $A_\mu\to A_\mu+D_{\mu\nu}J^\nu$ being the only ingredient beyond the definition of $D$ as the inverse of $K$. The two-point function is read off by differentiating twice with respect to the source,
+is evaluated by completing the square, the shift $A_\mu\to A_\mu+\sum_\nu D_{\mu\nu}J_\nu$ being the only ingredient beyond the definition of $D$ as the inverse of $K$. The two-point function is read off by differentiating twice with respect to the source,
 
 $$
 \langle 0|\,T\,A_\mu(x)A_\nu(y)\,|0\rangle
-= -\frac{\delta^2\ln Z[J]}{\delta J^\mu(x)\,\delta J^\nu(y)}\Big|_{J=0}
+= -\frac{\delta^2\ln Z[J]}{\delta J_\mu(x)\,\delta J_\nu(y)}\Big|_{J=0}
 = i\,D_{\mu\nu}(x-y),
 $$
 
-the second equality using $\ln Z=-\frac{i}{2}\int JDJ$, so that $\delta^2\ln Z/\delta J\delta J=-iD$ and the time-ordered product carries the overall $i$ that the $i\epsilon$ prescription supplies — the same $i$ that the scalar companion's $\Delta_F(p)=i/(p^2-\mu^2+i\epsilon)$ displays. So the propagator is the inverse of the quadratic form, times that overall $i$ and nothing else — the inverse itself being the object used above. The source identity also makes the gauge-parameter cancellation concrete: the $J$-dependent part of $\ln Z[J]$ involves $J^\mu D_{\mu\nu}J^\nu$, whose $\xi$-dependent piece is proportional to $(J^\mu p_\mu)(p_\nu J^\nu)$ and therefore vanishes for a conserved source. In this form the cancellation is an identity at the level of the generating functional rather than a statement about individual amplitudes, and the Ward identity is its statement in the quantum theory.
+the second equality using $\ln Z=-\frac{i}{2}\int JDJ$, so that $\delta^2\ln Z/\delta J\delta J=-iD$ and the time-ordered product carries the overall $i$ that the $i\epsilon$ prescription supplies — the same $i$ that the scalar companion's $\Delta_F(p)=i/(p^2-\mu^2+i\epsilon)$ displays. So the propagator is the inverse of the quadratic form, times that overall $i$ and nothing else — the inverse itself being the object used above. The source identity also makes the gauge-parameter cancellation concrete: the $J$-dependent part of $\ln Z[J]$ involves $J_\mu D_{\mu\nu}J_\nu$, whose $\xi$-dependent piece is proportional to $(J_\mu p_\mu)(p_\nu J_\nu)$ and therefore vanishes for a conserved source. In this form the cancellation is an identity at the level of the generating functional rather than a statement about individual amplitudes, and the Ward identity is its statement in the quantum theory.
 
 ## The Measure, the Ghosts, and What Is Being Summed Over
 
@@ -280,7 +278,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{D}\tilde{A}$ | Measure on $\mathbb{M}_-$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\vec A$ in components |
-| $S[\tilde{A}]=\int d^4x\,(-\tfrac14F_{\mu\nu}F^{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
+| $S[\tilde{A}]=\int d^4x\,(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
 | $\tilde{A}^\Gamma=\tilde{A}-\tilde{\nabla}\Gamma$, $S[\tilde{A}^\Gamma]=S[\tilde{A}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
 | $G[\tilde{A}]=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega$ | Gauge-fixing condition |
@@ -291,11 +289,11 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $(D_\mu)^{ab}=\partial_\mu\delta^{ab}+gf^{abc}A_\mu^c$ | Covariant derivative in the adjoint representation |
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\xi$ | Gauge parameter; multiplies the longitudinal projector |
-| $K^{\mu\nu}=p^2\eta^{\mu\nu}+(1-1/\xi)p^\mu p^\nu$ | Gauge-fixed quadratic form; $K=p^2(P+L/\xi)$ |
+| $K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-1/\xi)p_\mu p_\nu$ | Gauge-fixed quadratic form; $K=p^2(P+L/\xi)$ |
 | $D_{\mu\nu}=p^{-2}(\eta_{\mu\nu}+(1-\xi)p_\mu p_\nu/p^2)$ | Gauge-field propagator; $D=p^{-2}(P+\xi L)$ |
-| $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p^\nu=0$ | Transverse projector (verified) |
-| $L^{\mu}{}_\nu=-p^\mu p_\nu/p^2$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the gauge parameter |
-| $(D(\xi)-D(\xi_2))_{\mu\nu}j^\nu=0$ for $p_\nu j^\nu=0$ | Gauge-parameter independence for conserved currents (verified) |
+| $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p_\nu=0$ | Transverse projector (verified) |
+| $L_{\mu\nu}=-p_\mu p_\nu/p^2$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the gauge parameter |
+| $(D(\xi)-D(\xi_2))_{\mu\nu}j_\nu=0$ for $\sum_\nu p_\nu j_\nu=0$ | Gauge-parameter independence for conserved currents (verified) |
 
 ## Further Reading
 

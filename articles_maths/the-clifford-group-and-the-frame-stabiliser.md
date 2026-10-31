@@ -40,7 +40,7 @@ This is the exact stabiliser. It has complex dimension one, and the frame space 
 
 **The definition.** The **Clifford group** of the frame is
 $$
-\Gamma=\{U\in GL_4(\mathbb{C}):U\gamma_\mu U^{-1}=\Lambda^{\mu}_{\ \nu}\gamma_\nu
+\Gamma=\{U\in GL_4(\mathbb{C}):U\gamma_\mu U^{-1}=\Lambda_{\mu\nu}\gamma_\nu
 \text{ for some }\Lambda\in O(4,\mathbb{C})\}.
 $$
 It is the stabiliser of the **span**
@@ -169,7 +169,7 @@ The first fixes the five matrices; the second fixes their span up to an orthogon
 | group | condition | dimension |
 |---|---|---|
 | $\operatorname{Stab}(\gamma)$ | $U\gamma_\mu U^{-1}=\gamma_\mu$ | $1$ |
-| $\Gamma$ | $U\gamma_\mu U^{-1}=\Lambda^\mu_{\ \nu}\gamma_\nu$ | $7$ |
+| $\Gamma$ | $U\gamma_\mu U^{-1}=\Lambda_{\mu\nu}\gamma_\nu$ | $7$ |
 | $GL_4(\mathbb{C})$ | — | $16$ |
 | $O(4,\mathbb{C})$ | $\Lambda$ orthogonal | $6$ |
 | $\mathrm{Spin}(4,\mathbb{C})$ | even part, norm one | $6$ |

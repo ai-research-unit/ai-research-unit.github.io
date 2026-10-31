@@ -140,7 +140,7 @@ W = \tfrac{1}{2}(E^2 + H^2), \qquad \vec S = \vec E\times\vec H, \qquad
 \sigma_{\alpha\beta} = E_\alpha E_\beta + H_\alpha H_\beta - \tfrac{1}{2}\delta_{\alpha\beta}(E^2 + H^2),
 $$
 
-with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T^{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial t'T^{\alpha t} + \partial/\partial Q_\beta T^{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.
+with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial t'T^{\alpha t} + \partial/\partial Q_\beta T_{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.
 
 The caution the paper itself attaches belongs here: the nonlinear equation is **recursive**, in its own word, because the sources of a free field can be the field's own nonsingular structures. The regular currents are not an averaging of point charges, and the paper says so.
 
@@ -413,7 +413,7 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 | $DF$ | The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial t'A + i\nabla\times A)$ for $F = (0, A)$ |
 | $d\Sigma = \tfrac12F^{*}dZF$ | The energy–momentum flow differential (3.1) |
 | $W$, $\vec S$ | Energy density $\tfrac12(E^2 + H^2)$ and Umov–Poynting vector $\vec E\times\vec H$ |
-| $\sigma_{\alpha\beta}$ | Maxwell stress, $T^{\alpha\beta} = -\sigma_{\alpha\beta}$ |
+| $\sigma_{\alpha\beta}$ | Maxwell stress, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$ |
 | $e_t, g_0, \vec J_0, \vec I_0$ | Regular electric and magnetic charge and current densities (7.3) |
 | $J = (e_t + ig_0,\ \vec J_0 + i\vec I_0)$ | The regular 4-current biquaternion (7.2) |
 | $\Omega = \nabla\times\vec S$ | The twist of the energy flow (11.1) |

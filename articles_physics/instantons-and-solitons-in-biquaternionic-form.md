@@ -51,7 +51,7 @@ $$
 \star^2=+1 \ \text{(Euclidean)}, \qquad \star^2=-1 \ \text{(Lorentzian)},
 $$
 
-and both signs were recomputed directly from the definition $(\star F)_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F^{\rho\sigma}$ by applying it twice to each of the six basis two-forms. The consequences are the two facts that organise this article.
+and both signs were recomputed directly from the definition $(\star F)_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ by applying it twice to each of the six basis two-forms. The consequences are the two facts that organise this article.
 
 - **Euclidean.** Because $\star^2=+1$, the projectors $\tfrac12(1\pm\star)$ split the two-forms into a **self-dual** three-dimensional half and an **anti-self-dual** three-dimensional half, both real. The condition $F=\pm\star F$ is a real, first-order, non-trivial condition. In the component description with $F_{4k}=E_k$ and $F_{jk}=\epsilon_{jkl}B_l$ it reads simply
 $$
@@ -90,16 +90,16 @@ for configurations of finite action. The density is
 
 $$
 ϙ(x)= \frac{1}{4}\,\epsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(F_{\mu\nu}F_{\rho\sigma}\right)
-= \frac{1}{2}\,\mathrm{Tr}\!\left(F_{\mu\nu}\star F^{\mu\nu}\right),
+= \frac{1}{2}\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}\right),
 $$
 
-using the definition of the star. The trace here is the **matrix trace** on the $\mathrm{SU}(2)$ factor, the one the parent article uses for the gauge-invariant density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$; it is *not* the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs a Hermitian state with a Hermitian observable, not two gauge-algebra elements. The integer character of $Ϙ$ is the statement that $\pi_3(SU(2))=\mathbb Z$: a finite-action gauge field on $\mathbb R^4$ is classified at infinity by a map from the three-sphere to the gauge group, and the density's integral is the degree of that map. The same invariant is the one the Skyrme model uses: the baryon number of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is the degree of a map into the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$, so the instanton winding and the baryon winding are the same $\pi_3$ of the same group, read on two different fields. The density is a total derivative, as the next section shows, so $Ϙ$ is unchanged by any continuous deformation of the connection that keeps the boundary data fixed; this is the content of the next section.
+using the definition of the star. The trace here is the **matrix trace** on the $\mathrm{SU}(2)$ factor, the one the parent article uses for the gauge-invariant density $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$; it is *not* the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs a Hermitian state with a Hermitian observable, not two gauge-algebra elements. The integer character of $Ϙ$ is the statement that $\pi_3(SU(2))=\mathbb Z$: a finite-action gauge field on $\mathbb R^4$ is classified at infinity by a map from the three-sphere to the gauge group, and the density's integral is the degree of that map. The same invariant is the one the Skyrme model uses: the baryon number of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is the degree of a map into the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$, so the instanton winding and the baryon winding are the same $\pi_3$ of the same group, read on two different fields. The density is a total derivative, as the next section shows, so $Ϙ$ is unchanged by any continuous deformation of the connection that keeps the boundary data fixed; this is the content of the next section.
 
 In the abelian case the same object collapses to the framework's second invariant. With the field-strength biquaternion $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its components, the density is
 
 $$
-\boxed{\;\frac{1}{4}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= \frac{1}{2}\,F_{\mu\nu}\star F^{\mu\nu}
+\boxed{\;\frac{1}{4}\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+= \frac{1}{2}\,\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 =
 \begin{cases}
 \dfrac{2i}{c}\,I_2 & \text{(Lorentzian, } ict'\text{ convention)},\\[2mm]
@@ -118,18 +118,18 @@ The parity of the density is worth recording. The quantity $\epsilon_{\mu\nu\rho
 The reason the integral $Ϙ$ is topological rather than dynamical is that the density is a total derivative. In the abelian case the identity is elementary. If $F=dA$, then $F\wedge F=d(A\wedge F)$ because $dF=0$, and in components
 
 $$
-F_{\mu\nu}\star F^{\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural},
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural},
 \qquad
-J_{\mathrm{CS}}^\mu=\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}.
+J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}.
 $$
 
 This identity was verified symbolically, not quoted: taking a general smooth $A_\mu(x)$ in four flat coordinates, forming $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, and computing both sides, one finds
 
 $$
-\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=F_{\mu\nu}\star F^{\mu\nu}
+\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 $$
 
-as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $ict'$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS}}^\mu$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial_{[\mu}F_{\nu\rho]}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS}}^\mu$ is gauge invariant even though $J_{\mathrm{CS}}^\mu$ is not. This is why the density can be an observable and the current cannot.
+as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $ict'$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial_{[\mu}F_{\nu\rho]}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
 
 The non-abelian identity is the same statement one integration by parts further along. With $F=d\mathcal{A}+i\kappa\,\mathcal{A}\wedge\mathcal{A}$,
 
@@ -149,7 +149,7 @@ and the boundary is the three-sphere at infinity. The total-derivative property 
 
 Two consequences deserve to be stated because they are the traps of the subject.
 
-- **No abelian instanton on $\mathbb R^4$.** For a smooth abelian field of finite action, $A_\mu$ falls off at infinity and $J_{\mathrm{CS}}^\mu$ falls off faster, so the surface term at infinity vanishes and $Ϙ=0$ for every such field. Equivalently, the density integrates to zero on $\mathbb R^4$ (or on its one-point compactification $S^4$, where $H^2(S^4;\mathbb Z)=0$). A nonzero abelian charge requires a nontrivial line bundle, which a four-sphere does not admit; it can occur only on a manifold with nonzero second cohomology, such as $\mathbb{CP}^2$, where the field is not a single globally defined connection. On the framework's flat background, therefore, the Maxwell sector has **no instanton**. Instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ factor, not in the $\mathrm{U}(1)$ scalar sector.
+- **No abelian instanton on $\mathbb R^4$.** For a smooth abelian field of finite action, $A_\mu$ falls off at infinity and $J_{\mathrm{CS},\mu}$ falls off faster, so the surface term at infinity vanishes and $Ϙ=0$ for every such field. Equivalently, the density integrates to zero on $\mathbb R^4$ (or on its one-point compactification $S^4$, where $H^2(S^4;\mathbb Z)=0$). A nonzero abelian charge requires a nontrivial line bundle, which a four-sphere does not admit; it can occur only on a manifold with nonzero second cohomology, such as $\mathbb{CP}^2$, where the field is not a single globally defined connection. On the framework's flat background, therefore, the Maxwell sector has **no instanton**. Instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ factor, not in the $\mathrm{U}(1)$ scalar sector.
 - **The charge is metric independent.** The density $\mathrm{Tr}(F\wedge F)$ is built from the field strength and the totally antisymmetric symbol alone; no metric enters. The action $\int\mathrm{Tr}(F\wedge\star F)$, by contrast, uses the star and hence the metric. The charge is therefore the same on any conformally related metric, which is one way to see why the instanton problem is conformally invariant and why the moduli of instantons on $\mathbb R^4$ and on $S^4$ coincide.
 
 ## Self-Duality in Euclidean Signature
@@ -159,7 +159,7 @@ On the Euclidean slice the self-duality condition is
 $$
 F_{\mu\nu}=\pm\,\star F_{\mu\nu},
 \qquad
-\star F_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F^{\rho\sigma},
+\star F_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma},
 $$
 
 with $\star^2=+1$. It is a first-order differential equation for the connection, and in the component description it reads $\vec B=\pm\vec E$ (verified exactly on a generic Euclidean field strength, as recorded above). Its value is that it does two things at once: it implies the equation of motion, and it saturates the action bound in a topological sector.
@@ -167,37 +167,37 @@ with $\star^2=+1$. It is a first-order differential equation for the connection,
 **Self-duality plus Bianchi implies the equation of motion.** The Bianchi identity $dF=0$ is, in components, $\partial_{[\mu}F_{\nu\rho]}=0$, and it is equivalent to the statement that the *dual* is divergence free,
 
 $$
-\partial/\partial Q_\mu\,\star F^{\mu\nu}=0 .
+\sum_\mu\partial/\partial Q_\mu\,\star F_{\mu\nu}=0 .
 $$
 
 This was verified symbolically for a general abelian field strength $F=dA$: the divergence of the dual vanishes identically, whereas the divergence of $F$ itself does not. Now if $F=\pm\star F$, then
 
 $$
-\partial/\partial Q_\mu F^{\mu\nu}=\pm\,\partial/\partial Q_\mu\,\star F^{\mu\nu}=0,
+\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}=\pm\,\sum_\mu\partial/\partial Q_\mu\,\star F_{\mu\nu}=0,
 $$
 
-so every self-dual finite-action field is automatically a source-free solution of the second-order equation. The non-abelian statement is the same with $\partial/\partial Q_\mu$ replaced by the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa[\mathcal{A}_\mu,\;\cdot\;]$: the Bianchi identity is $D_{[\mu}F_{\nu\rho]}=0$, equivalently $D_\mu\star F^{\mu\nu}=0$, and self-duality turns it into the Yang–Mills equation $D_\mu F^{\mu\nu}=0$. The economy is exact: a second-order equation has been replaced by a first-order one, and every solution of the first-order equation is a solution of the second-order one. The converse is false — not every solution is self-dual — so self-duality selects a distinguished subclass, the one that is also a minimiser, as the next paragraph shows.
+so every self-dual finite-action field is automatically a source-free solution of the second-order equation. The non-abelian statement is the same with $\partial/\partial Q_\mu$ replaced by the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa[\mathcal{A}_\mu,\;\cdot\;]$: the Bianchi identity is $D_{[\mu}F_{\nu\rho]}=0$, equivalently $D_\mu\star F_{\mu\nu}=0$, and self-duality turns it into the Yang–Mills equation $D_\mu F_{\mu\nu}=0$. The economy is exact: a second-order equation has been replaced by a first-order one, and every solution of the first-order equation is a solution of the second-order one. The converse is false — not every solution is self-dual — so self-duality selects a distinguished subclass, the one that is also a minimiser, as the next paragraph shows.
 
 **Self-duality saturates the Bogomolny bound.** The pointwise identity
 
 $$
-\left|F\mp\star F\right|^2 = 2\,\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right) \mp 2\,\mathrm{Tr}\!\left(F_{\mu\nu}\star F^{\mu\nu}\right),
+\left|F\mp\star F\right|^2 = 2\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right) \mp 2\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}\right),
 $$
 
 was verified symbolically on a generic Euclidean field strength (both signs). The left side is a sum of squares; integrating on $\mathbb R^4$ gives
 
 $$
 0\le\int|F\mp\star F|^2
-=2\int\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right)\mp 2\int\mathrm{Tr}\!\left(F_{\mu\nu}\star F^{\mu\nu}\right),
+=2\int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)\mp 2\int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}\right),
 $$
 
 hence
 
 $$
-\int\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right)\;\ge\;\left|\int\mathrm{Tr}\!\left(F_{\mu\nu}\star F^{\mu\nu}\right)\right| = 16\pi^2\,|Ϙ| ,
+\int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)\;\ge\;\left|\int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}\right)\right| = 16\pi^2\,|Ϙ| ,
 $$
 
-and therefore, with the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ of the non-abelian sector (Hermitian generators, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$),
+and therefore, with the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ of the non-abelian sector (Hermitian generators, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$),
 
 $$
 \boxed{\;S\;\ge\;\frac{8\pi^2}{g^2}\,|Ϙ|\;},
@@ -222,9 +222,9 @@ and shows that any other algebraic invariant is a function of these two. The que
 **The abelian case: yes.** Section *The Topological Charge and Its Density* established that
 
 $$
-F_{\mu\nu}\star F^{\mu\nu}=\frac{4i}{c}\,I_2 \ \ (\text{Lorentzian}),
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=\frac{4i}{c}\,I_2 \ \ (\text{Lorentzian}),
 \qquad
-F_{\mu\nu}\star F^{\mu\nu}=4\,I_2 \ \ (\text{Euclidean}),
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4\,I_2 \ \ (\text{Euclidean}),
 $$
 
 both recomputed from the component convention of the field-strength article. So the imaginary part of the biquaternion norm, which is $I_2$, *is* the Pontryagin density up to the stated constant. The framework does not need a new invariant to write the abelian topological charge; it already has the density, and the charge is its integral. This is a genuine affirmative finding: in the Maxwell sector the topological density is not foreign to the framework's invariant theory but is one of its two invariants.
@@ -236,11 +236,11 @@ $$
 \;\neq\;\tilde U\,\mathcal{F}\,\tilde U^{-1}.
 $$
 
-Consequently the biquaternion norm of the representative is not gauge invariant. This was checked numerically on a random $\mathrm{SU}(2)$-valued two-form and a random $SU(2)$ element: $\langle \mathcal{F}\rangle_{\natural}$ changed from $17.1838$ to $17.3970$ in the sample (an exact symbolic evaluation on a rational configuration gave the same non-invariance, with the transformed value a nontrivial trigonometric expression), while the matrix-trace density $\mathrm{Tr}(F_{\mu\nu}\star F^{\mu\nu})$ was invariant to machine precision, $-24.6702$ before and after. The invariant content of the non-abelian representative is therefore the matrix trace, exactly as the parent article says for $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$, and the biquaternion norm does not supply it.
+Consequently the biquaternion norm of the representative is not gauge invariant. This was checked numerically on a random $\mathrm{SU}(2)$-valued two-form and a random $SU(2)$ element: $\langle \mathcal{F}\rangle_{\natural}$ changed from $17.1838$ to $17.3970$ in the sample (an exact symbolic evaluation on a rational configuration gave the same non-invariance, with the transformed value a nontrivial trigonometric expression), while the matrix-trace density $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$ was invariant to machine precision, $-24.6702$ before and after. The invariant content of the non-abelian representative is therefore the matrix trace, exactly as the parent article says for $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$, and the biquaternion norm does not supply it.
 
-This is the point at which the framework's established **rank-two limitation** meets the topological density. The series has already recorded, in the electromagnetic energy–momentum tensor, that a single biquaternion cannot carry a rank-two tensor — the object whose components are $T^{\mu\nu}$ needs a bilinear of two field strengths, $\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, and the algebra supplies that pairing only through an explicit second field-strength factor. The same limitation appears here in the gauge-algebra direction: the topological density needs a bilinear carrying a second algebra index that the biquaternion norm does not have. A biquaternion's quadratic invariant is rank-two and single-slot; the non-abelian topological density is rank-two in spacetime and traced over a *second* algebra factor. **The framework's invariants supply the abelian topological density and do not supply the non-abelian one.** This is left as a gap rather than closed by forcing a construction: the density can be written in components, with the matrix trace, and the total-derivative identity of the previous section holds for it, but it is not an object of the biquaternion-norm invariant calculus, and no biquaternion-norm expression for it was found.
+This is the point at which the framework's established **rank-two limitation** meets the topological density. The series has already recorded, in the electromagnetic energy–momentum tensor, that a single biquaternion cannot carry a rank-two tensor — the object whose components are $T_{\mu\nu}$ needs a bilinear of two field strengths, $\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, and the algebra supplies that pairing only through an explicit second field-strength factor. The same limitation appears here in the gauge-algebra direction: the topological density needs a bilinear carrying a second algebra index that the biquaternion norm does not have. A biquaternion's quadratic invariant is rank-two and single-slot; the non-abelian topological density is rank-two in spacetime and traced over a *second* algebra factor. **The framework's invariants supply the abelian topological density and do not supply the non-abelian one.** This is left as a gap rather than closed by forcing a construction: the density can be written in components, with the matrix trace, and the total-derivative identity of the previous section holds for it, but it is not an object of the biquaternion-norm invariant calculus, and no biquaternion-norm expression for it was found.
 
-A final remark on the primitive. The abelian primitive $J_{\mathrm{CS}}^\mu=\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ is a four-component object, so the framework's four-vector sector has the room to carry it, and its divergence is the invariant density. But $J_{\mathrm{CS}}^\mu$ is gauge dependent, so it is not one of the framework's invariants; the invariant content is $I_2$ and not the current. The primitive is therefore a computational device in the framework, not one of its invariants, and the non-abelian Chern–Simons form $\Omega_{\mathrm{CS}}$, being gauge covariant rather than invariant, is further from the invariant calculus still. The gap is not that the framework cannot write the density; it is that the framework's *invariant* apparatus does not produce it in the non-abelian case, and that the primitive is not an invariant in either case.
+A final remark on the primitive. The abelian primitive $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ is a four-component object, so the framework's four-vector sector has the room to carry it, and its divergence is the invariant density. But $J_{\mathrm{CS},\mu}$ is gauge dependent, so it is not one of the framework's invariants; the invariant content is $I_2$ and not the current. The primitive is therefore a computational device in the framework, not one of its invariants, and the non-abelian Chern–Simons form $\Omega_{\mathrm{CS}}$, being gauge covariant rather than invariant, is further from the invariant calculus still. The gap is not that the framework cannot write the density; it is that the framework's *invariant* apparatus does not produce it in the non-abelian case, and that the primitive is not an invariant in either case.
 
 ## The BPST Instanton and Its Equation of Motion
 
@@ -347,10 +347,10 @@ This is a gap in the framework's field content, not a defect in its algebra. The
 This article has treated the localised finite-energy solutions of the biquaternion framework in the two settings in which they occur, and has kept the settings apart.
 
 - **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$, is the passage between the two stars, and the explicit factor $i$ of the $ict'$ convention is the Lorentzian structure that the Euclidean solution does not carry.
-- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(F_{\mu\nu}\star F^{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS}}^\mu=\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $ict'$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
-- **The framework's invariants supply the abelian density.** $F_{\mu\nu}\star F^{\mu\nu}=4iI_2/c$ (Lorentzian) and $=4I_2$ (Euclidean) were recomputed; the imaginary part of the biquaternion norm, $I_2=\vec E\cdot\vec B$, *is* the abelian topological density. In the non-abelian case the density needs the matrix trace, and the rank-two, single-slot biquaternion norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$; this was checked numerically. That the framework's invariant apparatus does not produce the non-abelian topological density is recorded as a gap.
+- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $ict'$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
+- **The framework's invariants supply the abelian density.** $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4iI_2/c$ (Lorentzian) and $=4I_2$ (Euclidean) were recomputed; the imaginary part of the biquaternion norm, $I_2=\vec E\cdot\vec B$, *is* the abelian topological density. In the non-abelian case the density needs the matrix trace, and the rank-two, single-slot biquaternion norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$; this was checked numerically. That the framework's invariant apparatus does not produce the non-abelian topological density is recorded as a gap.
 - **There is no abelian instanton.** For finite-action abelian fields on $\mathbb R^4$ the charge is a vanishing surface term; instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)$ factor inside $\mathbb{M}_-$.
-- **An explicit solution exists and was checked.** The $SU(2)$ BPST instanton in the framework's $\mathrm{SU}(2)$ satisfies $F=\pm\star F$ (residual at the arithmetic level) and $D_\mu F^{\mu\nu}=0$ (to finite-difference accuracy). It saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$ that self-duality establishes, and its charge is $|Ϙ|=1$.
+- **An explicit solution exists and was checked.** The $SU(2)$ BPST instanton in the framework's $\mathrm{SU}(2)$ satisfies $F=\pm\star F$ (residual at the arithmetic level) and $D_\mu F_{\mu\nu}=0$ (to finite-difference accuracy). It saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$ that self-duality establishes, and its charge is $|Ϙ|=1$.
 - **There is no soliton.** A soliton's stability requires a topological sector with a finite-energy representative, or a Bogomolny bound; the framework has the topological charge $Ϙ_m$ but only a singular, infinite-energy configuration to carry it, and its free scalar sector provides no potential in which a Bogomolny square can be completed. The absence is stated as a gap, and no configuration is called stable.
 - **What is left open.** The exact placement of the factor $i$ in the Euclidean continuation of the framework's non-abelian curvature; whether a scalar potential can be constructed inside the framework so that a finite-energy topological configuration exists; and whether the zero-divisor structure of $\mathbb{M}_-$, which the parent flagged, plays any role in the instanton sector. A fourth item is the axial anomaly: the topological density derived here is the object that appears in it, and the chiral-fermion article names this article as its natural home, but the anomaly itself — its coefficient, its relation to the $\theta$-angle — is a separate subject and is not treated here. None of the items was needed for the results above, and none is closed here.
 
@@ -381,7 +381,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathrm{Tr}$ | Matrix trace on the gauge factor |
 | $\mathrm{Sc},\ \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part and the inherited trace formula |
 | $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})$ | Topological density |
-| $J_{\mathrm{CS}}^\mu=\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ | Abelian Chern–Simons current |
+| $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ | Abelian Chern–Simons current |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form, $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $Ϙ$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$ |
 | $Ϙ_m\propto\oint_{S^2}\vec B\cdot d\vec A$ | Magnetic (topological) charge |
