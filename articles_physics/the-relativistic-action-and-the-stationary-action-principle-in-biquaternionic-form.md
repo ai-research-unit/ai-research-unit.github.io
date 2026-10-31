@@ -66,7 +66,7 @@ where the derivatives are the components of the biquaternionic gradient of $\mat
 Carrying the integration by parts without discarding the surface term leaves
 $$
 \delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{\Phi}\,d^4x
-+ \oint_{\partial\Omega} \mathrm{Sc}\!\left[\overline{\bigl(\partial_\mu\tilde{\Phi}\bigr)}\,\delta\tilde{\Phi}\right] n^\mu\,d\Sigma ,
++ \oint_{\partial\Omega} \sum_\mu \mathrm{Sc}\!\left[\overline{\bigl(\partial_\mu\tilde{\Phi}\bigr)}\,\delta\tilde{\Phi}\right] n_\mu\,d\Sigma ,
 $$
 and the two terms say different things. The vanishing of the first for arbitrary interior variations is the equation of motion; the vanishing of the second for the variations admitted by the problem is the boundary condition. Because the equation of motion is the same for every admissible boundary condition, the boundary term is what selects among the several Green's functions of the operator article: the retarded kernel is the one whose associated surface term vanishes for a source that switches on in the past, the advanced kernel for one that switches off in the future, and the causal kernel for the Feynman prescription that projects onto positive frequencies forward and negative frequencies backward. The stationary-action principle therefore does not merely produce the operator; it produces it together with the boundary condition that makes the inversion well posed, and the freedom of the boundary term is exactly the freedom of the operator article's four kernels.
 
@@ -117,11 +117,11 @@ the straight worldline. A discrete check confirms it: stationarity of the discre
 
 The coupling of a charge $ϙ$ to an external four-potential $\tilde{A} = i(\phi/c)e_t + \vec A$ is the standard line integral
 $$
-S_{\mathrm{int}} = -ϙ\int A_\mu\,dx^\mu ,
+S_{\mathrm{int}} = -ϙ\sum_\mu\int A_\mu\,dx_\mu ,
 $$
 whose biquaternion form is the scalar of the reverse product, $S_{\mathrm{int}} = -ϙ\int \mathrm{Sc}(\tilde{A}^{\natural}\,d\tilde{R})$ up to the sign convention for the potential. Its Euler–Lagrange equation is the Lorentz force
 $$
-m\,\frac{du^\mu}{d\tau} = ϙ\,F^{\mu\nu}v_\nu ,
+m\,\frac{du_\mu}{d\tau} = ϙ\sum_\nu F_{\mu\nu}v_\nu ,
 \qquad\text{that is, in components,}\qquad
 \frac{d\vec p}{dt'} = ϙ\bigl(\vec E + \vec v\times\vec B\bigr) ,
 $$
@@ -213,7 +213,7 @@ Three features of the sign structure are worth extracting. The kinetic term ente
 
 For the electromagnetic field the action is the standard one,
 $$
-S_{\mathrm{Maxwell}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x ,
+S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
 $$
 and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
 $$
@@ -222,7 +222,7 @@ $$
 \qquad
 \langle\tilde{F}\rangle_{\natural} = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H\;},
 $$
-so that the real and imaginary parts of the single complex invariant carry the two classical invariants, $\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -(\epsilon\vec E^2 - \mu\vec H^2)$ and $\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$; with the overall minus sign the Lagrangian is $-\frac12\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = \frac12(\epsilon\vec E^2 - \mu\vec H^2)$, the standard Maxwell density. The identity was verified on a representative field; it is the reason the framework can write the electromagnetic Lagrangian as a norm, exactly as it writes the mass term of the scalar field. Varying with respect to $\tilde{A}$ gives the source-free Maxwell equations $\partial_\mu F^{\mu\nu} = 0$, the standard result.
+so that the real and imaginary parts of the single complex invariant carry the two classical invariants, $\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -(\epsilon\vec E^2 - \mu\vec H^2)$ and $\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$; with the overall minus sign the Lagrangian is $-\frac12\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = \frac12(\epsilon\vec E^2 - \mu\vec H^2)$, the standard Maxwell density. The identity was verified on a representative field; it is the reason the framework can write the electromagnetic Lagrangian as a norm, exactly as it writes the mass term of the scalar field. Varying with respect to $\tilde{A}$ gives the source-free Maxwell equations $\sum_\mu\partial_\mu F_{\mu\nu} = 0$, the standard result.
 
 ### The first-order actions
 
@@ -240,8 +240,8 @@ The stationary-action principle is only half the content of an action; the other
 
 **Translations.** The actions depend on $\tilde{R}$ only through the fields and their gradients, so a constant shift of the argument is a symmetry, and the conserved quantity is the four-momentum. For the field the conserved density is the stress–energy tensor
 $$
-T^\mu{}_\nu = -(\partial^\mu\phi^*)\partial_\nu\phi - (\partial^\mu\phi)\partial_\nu\phi^* - \delta^\mu{}_\nu\,\mathcal{L} ,
-\qquad \partial_\mu T^\mu{}_\nu = 0 \ \text{on shell},
+T_{\mu\nu} = -(\partial_\mu\phi^*)\partial_\nu\phi - (\partial_\mu\phi)\partial_\nu\phi^* - \delta_{\mu\nu}\,\mathcal{L} ,
+\qquad \sum_\mu\partial_\mu T_{\mu\nu} = 0 \ \text{on shell},
 $$
 whose time–time component is the energy density. The companion article records the caution that in the $ict'$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
@@ -302,7 +302,7 @@ $$
 S = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} = -mc^2\int\frac{dt'}{\gamma} ,
 \qquad L = -mc^2\sqrt{1-\vec v^2/c^2} ,
 $$
-whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du^\mu/d\tau = ϙF^{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.
+whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.
 
 The field action is
 $$
@@ -325,14 +325,14 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\tilde{V} = d\tilde{R}/d\tau$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity and its normalisation |
 | $\tilde{P} = m\tilde{V}$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Four-momentum and the mass shell |
 | $\tilde{A} = i(\phi/c)e_t + \vec A$ | External four-potential |
-| $m\,du^\mu/d\tau = ϙF^{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
+| $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})] - \mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$ | Scalar field Lagrangian |
 | $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_k=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |
 | $(\Box - \mu^2)\tilde{\Phi} = 0$, $\mu = mc/\hbar$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
-| $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14F_{\mu\nu}F^{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
+| $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J} = i[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}]$ | Conserved material-sector current |
-| $T^\mu{}_\nu = -(\partial^\mu\phi^*)\partial_\nu\phi - (\partial^\mu\phi)\partial_\nu\phi^* - \delta^\mu{}_\nu\mathcal{L}$ | Stress–energy tensor |
+| $T_{\mu\nu} = -(\partial_\mu\phi^*)\partial_\nu\phi - (\partial_\mu\phi)\partial_\nu\phi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
 | $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ | Hermitian-norm variation |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

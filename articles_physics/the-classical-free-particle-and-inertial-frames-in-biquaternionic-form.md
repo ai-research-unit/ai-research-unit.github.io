@@ -59,7 +59,7 @@ $$
 \boxed{\;\tilde{V}\tilde{V}^{\natural} = \gamma_2\left(-c^2 + \vec v^2\right) = -c^2\;},
 $$
 
-which is the biquaternion form of the relativistic normalization $v^\mu v_\mu = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{M}_-$.
+which is the biquaternion form of the relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$. The normalization is a **constraint**, not an identity: it selects the four-velocities of physical particles from among all elements of $\mathbb{M}_-$.
 
 The four-momentum is the mass times the four-velocity,
 
@@ -97,7 +97,7 @@ $$
 \tilde{K}_{\mathrm{f}}\,\tilde{P}^{\natural} + \tilde{P}\,\tilde{K}_{\mathrm{f}}^{\natural} = 0 ,
 $$
 
-which is the biquaternion form of $f^\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
+which is the biquaternion form of $\sum_\mu\varepsilon_\mu f_\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
 
 ### The Causal Character of the Free Worldline
 
@@ -249,13 +249,13 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 
 | Standard object | Biquaternion object | Location |
 |---|---|---|
-| Event $x^\mu = (ct', x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $\mathbb{M}_-$ |
-| Interval $dx^\mu dx_\mu$ | $\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}(d\tilde{R})^{\natural}$ | biquaternion norm on $\mathbb{M}_-$ |
-| Four-velocity $v^\mu$ | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{M}_-$ |
-| Mass shell $v^\mu v_\mu = -c^2$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ | constraint in $\mathbb{M}_-$ |
-| Four-momentum $p^\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
-| Four-force $f^\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
-| Lorentz transformation $\Lambda^\mu{}_\nu$ | rotor conjugation $\tilde U_{\mathrm L}(\cdot)\tilde U_{\mathrm L}^{*}$ | rotor in $\mathbb{B}$ |
+| Event $x_\mu = (ct', x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $\mathbb{M}_-$ |
+| Interval $\sum_\mu\varepsilon_\mu dx_\mu dx_\mu$ | $\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}(d\tilde{R})^{\natural}$ | biquaternion norm on $\mathbb{M}_-$ |
+| Four-velocity $v_\mu$ | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{M}_-$ |
+| Mass shell $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ | constraint in $\mathbb{M}_-$ |
+| Four-momentum $p_\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
+| Four-force $f_\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
+| Lorentz transformation $\Lambda_{\mu\nu}$ | rotor conjugation $\tilde U_{\mathrm L}(\cdot)\tilde U_{\mathrm L}^{*}$ | rotor in $\mathbb{B}$ |
 | Boost | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
 | Spatial rotation | $R(\cdot)R^{*}$ | $\mathbb{H}_{\mathbb{B}}$ |
 | Galilean boost (NR limit) | $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \vec Vt'$, $t' \mapsto t'$ | shear of $\mathbb{M}_-$ |

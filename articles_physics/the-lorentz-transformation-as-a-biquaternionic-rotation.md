@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Lorentz transformation is usually presented as a change of coordinates between inertial frames, expressed by a $4 \times 4$ real matrix $\Lambda^\mu{}_\nu$ that preserves the Minkowski metric. In the biquaternion formulation, the same transformation appears as a **rotation** — specifically, a rotation in the complexified four-dimensional space whose coordinates are the components of the biquaternion.
+The Lorentz transformation is usually presented as a change of coordinates between inertial frames, expressed by a $4 \times 4$ real matrix $\Lambda_{\mu\nu}$, with $\mu$ the row and $\nu$ the column, that preserves the Minkowski metric. In the biquaternion formulation, the same transformation appears as a **rotation** — specifically, a rotation in the complexified four-dimensional space whose coordinates are the components of the biquaternion.
 
 This article develops the biquaternionic formulation of the Lorentz transformation. The central objects are:
 
@@ -331,23 +331,23 @@ $$
 
 carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U_{\mathrm L}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
-**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
+**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\hat{\mathcal E}_\mu\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are
 
 $$
 \mathcal{E}_0 = e_t,\quad \mathcal{E}_k = \vec e_k,
 \qquad
-\mathcal{E}^{0} = e_t,\quad \mathcal{E}^{k} = -\vec e_k,
+\hat{\mathcal E}_0 = e_t,\quad \hat{\mathcal E}_k = -\vec e_k,
 $$
 
-the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q^0, q^k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as
+the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q_0, q_k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as
 
 $$
-q_2^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
+q_{2\mu} = \sum_{\nu} L_{\mu\nu}\, q_{\nu},
 \qquad
-L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde U_{\mathrm L}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm L}^{*}\right),
+L_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm L}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm L}^{*}\right),
 $$
 
-and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis.
+and the matrix $L_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis.
 
 This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.
 
@@ -424,7 +424,7 @@ This is consistent with the program of the companion articles on the $ict'$ conv
 
 ## Open Questions
 
-1. **Higher-rank tensors.** The rotor conjugation $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F^{\mu\nu}$ and the energy–momentum tensor $T^{\mu\nu}$?
+1. **Higher-rank tensors.** The rotor conjugation $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F_{\mu\nu}$ and the energy–momentum tensor $T_{\mu\nu}$?
 
 2. **Spinor transformations.** A spinor transforms under the Lorentz group by a **one-sided** multiplication, not by a rotor conjugation. What is the precise biquaternion form of the spinor transformation, and how does it relate to the Dirac equation?
 

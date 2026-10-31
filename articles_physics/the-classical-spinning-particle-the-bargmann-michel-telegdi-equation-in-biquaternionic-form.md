@@ -2,29 +2,29 @@
 
 ## Introduction
 
-A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{M}_-$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $S_\mu v^\mu=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
+A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{M}_-$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $\sum_\mu S_\mu v_\mu=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
 
-The equation of motion of $\tilde{S}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $S_\mu v^\mu=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{M}_-$.
+The equation of motion of $\tilde{S}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $\sum_\mu S_\mu v_\mu=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{M}_-$.
 
 The equation has exactly two terms, and their coefficients are not free. A covariant equation of the form
 
 $$
-\frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,F^{\mu\nu}S_\nu+\beta\,v^\mu\,B\Big],
+\frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,\sum_\nu F_{\mu\nu}S_\nu+\beta\,v_\mu\,B\Big],
 \qquad
-B=S_\lambda F^{\lambda\nu}v_\nu ,
+B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu ,
 $$
 
-contains the only two four-vectors that can be formed linearly from the field strength $F$, the spin $S$ and the four-velocity $v$ subject to $S_\mu v^\mu=0$. The requirement that the orthogonality $S_\mu v^\mu=0$ be preserved by the evolution forces $\alpha+\beta c^{2}=1$, i.e. $\beta=(1-\alpha)/c^{2}$; and the requirement that in the instantaneous rest frame the equation reduce to the gyromagnetic torque fixes $\alpha=g/2$. Hence
+contains the only two four-vectors that can be formed linearly from the field strength $F$, the spin $S$ and the four-velocity $v$ subject to $\sum_\mu S_\mu v_\mu=0$. The requirement that the orthogonality $\sum_\mu S_\mu v_\mu=0$ be preserved by the evolution forces $\alpha+\beta c^{2}=1$, i.e. $\beta=(1-\alpha)/c^{2}$; and the requirement that in the instantaneous rest frame the equation reduce to the gyromagnetic torque fixes $\alpha=g/2$. Hence
 
 $$
-\frac{dS^\mu}{d\tau}
-=\frac{ϙ}{m}\left[\frac{g}{2}\,F^{\mu\nu}S_\nu
--\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v^\mu\,B\right],
+\frac{dS_\mu}{d\tau}
+=\frac{ϙ}{m}\left[\frac{g}{2}\,\sum_\nu F_{\mu\nu}S_\nu
+-\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v_\mu\,B\right],
 \qquad
-B=S_\lambda F^{\lambda\nu}v_\nu.
+B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu.
 $$
 
-This is the BMT equation in the metric convention $\eta=\mathrm{diag}(-1,+1,+1,+1)$ used throughout this series, in which $v_\mu v^\mu=-c^{2}$. In the biquaternion algebra it becomes
+This is the BMT equation in the metric convention $\eta=\mathrm{diag}(-1,+1,+1,+1)$ used throughout this series, in which $\sum_{\mu,\nu}\eta_{\mu\nu}v_\mu v_\nu=-c^{2}$. In the biquaternion algebra it becomes
 
 $$
 \frac{d\tilde{S}}{d\tau}
@@ -39,7 +39,7 @@ $$
 \mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
 $$
 
-is the **field action**, the element of $\mathbb{M}_-$ whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
+is the **field action**, the element of $\mathbb{M}_-$ whose four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
 
 Two boundaries are respected. The **spin-0 and multipole sectors** are excluded: the relativistic central-force problem belongs to `Biquaternion Relativistic Non Quantum Theory`, subcategory on effects without intrinsic magnetism, and the quadrupole and higher multipoles to the subcategory on higher multipole origins. The **quantum and informational sectors** are excluded: the spinor and Dirac treatments belong to `Biquaternion Relativistic Quantum Theory`, and the information-theoretic interpretation of the Wigner rotation to its subcategory on informational aspects. The **Thomas precession**, which is the free-field kinematic piece of the same physics, is treated in the companion article of the present subcategory and is not re-derived here.
 
@@ -48,7 +48,7 @@ The article proceeds as follows. The next section fixes the spin four-vector and
 $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}\!\left(\tilde{Q}_1\,\tilde{Q}_2^{\natural}\right)
 =-Q_1^{0}Q_2^{0}+\vec Q_1\cdot\vec Q_2
-=\eta_{\mu\nu}Q_1^\mu Q_2^\nu .
+=\sum_{\mu,\nu}\eta_{\mu\nu}Q_{1\mu}Q_{2\nu} .
 $$
 
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
@@ -69,7 +69,7 @@ Here $\tau$ is proper time, $t'$ laboratory time, $\vec v$ the velocity, $\gamma
 The **spin vector** of a classical particle is a four-vector $\tilde{S}\in\mathbb{M}_-$ subject to the **orthogonality condition**
 
 $$
-S_\mu v^\mu=0
+\sum_\mu S_\mu v_\mu=0
 \qquad\Longleftrightarrow\qquad
 \mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
 $$
@@ -89,7 +89,7 @@ $$
 so that the four components of $\tilde{S}$ carry exactly the three components of the rest-frame spin. The **magnitude** of the spin,
 
 $$
-S_\mu S^\mu=\vec s^{2},
+\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu=\vec s^{2},
 $$
 
 is a Lorentz invariant and is constant on any solution of the equations below; it is the classical counterpart of the fixed spin quantum number $\hbar/2$.
@@ -104,69 +104,69 @@ $$
 
 defined in the instantaneous rest frame. Its covariant completion is the pair $(\tilde{S},\gamma_g)$: the moment is the spatial part of the rest-frame representative of $\tilde{S}$, multiplied by the gyromagnetic ratio. In the absence of a field the moment is constant in the rest frame; the whole content of the following sections is how the covariant equation of motion transports $\tilde{S}$ so that this rest-frame statement is recovered at every instant.
 
-Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin quantum number of the little-group representation. The magnitude of the spin vector is fixed by that number. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric **spin tensor** $S^{\mu\nu}$, related to the spin four-vector by
+Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin quantum number of the little-group representation. The magnitude of the spin vector is fixed by that number. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric **spin tensor** $S_{\mu\nu}$, related to the spin four-vector by
 
 $$
-S^\mu=\frac{1}{2c}\,\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
+S_\mu=\frac{1}{2c}\,\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
 $$
 
 which makes the orthogonality automatic (the contraction of an antisymmetric tensor with the four-velocity). The spin-tensor description is the one that extends to extended bodies and higher multipoles; for the point particle treated here the four-vector description is equivalent and is the one adapted to the material sector $\mathbb{M}_-$.
 
 ## The Covariant Equation from the Two Available Structures
 
-We now assemble the equation of motion. The right-hand side must be an element of $\mathbb{M}_-$ (a four-vector), linear in the field strength $F$ and in the spin $S$, and built from the covariant objects available: $F$, $v$, and $S$, subject to $S_\mu v^\mu=0$. The possible contractions are limited.
+We now assemble the equation of motion. The right-hand side must be an element of $\mathbb{M}_-$ (a four-vector), linear in the field strength $F$ and in the spin $S$, and built from the covariant objects available: $F$, $v$, and $S$, subject to $\sum_\mu S_\mu v_\mu=0$. The possible contractions are limited.
 
 The contraction of the field with the spin gives the four-vector
 
 $$
-\big(F\cdot S\big)^\mu:=F^{\mu\nu}S_\nu ,
+\big(F\cdot S\big)_\mu:=\sum_\nu F_{\mu\nu}S_\nu ,
 $$
 
 and the contraction of the field with the four-velocity gives
 
 $$
-\big(F\cdot v\big)^\mu:=F^{\mu\nu}v_\nu ,
+\big(F\cdot v\big)_\mu:=\sum_\nu F_{\mu\nu}v_\nu ,
 \qquad
-v_\mu\big(F\cdot v\big)^\mu=0 ,
+\sum_\mu v_\mu\big(F\cdot v\big)_\mu=0 ,
 $$
 
-because $F$ is antisymmetric. Of the scalars that can be formed, two are relevant: $S_\mu v^\mu=0$, and
+because $F$ is antisymmetric. Of the scalars that can be formed, two are relevant: $\sum_\mu S_\mu v_\mu=0$, and
 
 $$
-B:=S_\lambda F^{\lambda\nu}v_\nu=-v_\lambda F^{\lambda\nu}S_\nu ,
+B:=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=-\sum_{\lambda,\nu}v_\lambda F_{\lambda\nu}S_\nu ,
 $$
 
-the **invariant spin–field–velocity scalar**. A term proportional to $S^\mu$ itself is excluded because it would change the invariant $S_\mu S^\mu$, which is fixed; a term proportional to $\big(F\cdot v\big)^\mu$ times $S_\lambda v^\lambda$ vanishes by orthogonality; and the remaining contractions either reduce to $v^\mu B$ or vanish by the antisymmetry of $F$. Hence the most general covariant right-hand side linear in $F$ and $S$ that preserves the spin magnitude is
+the **invariant spin–field–velocity scalar**. A term proportional to $S_\mu$ itself is excluded because it would change the invariant $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu$, which is fixed; a term proportional to $\big(F\cdot v\big)_\mu$ times $\sum_\lambda S_\lambda v_\lambda$ vanishes by orthogonality; and the remaining contractions either reduce to $v_\mu B$ or vanish by the antisymmetry of $F$. Hence the most general covariant right-hand side linear in $F$ and $S$ that preserves the spin magnitude is
 
 $$
-\frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,\big(F\cdot S\big)^\mu+\beta\,v^\mu B\Big],
+\frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\Big[\alpha\,\big(F\cdot S\big)_\mu+\beta\,v_\mu B\Big],
 $$
 
-with $\alpha,\beta$ dimensionless constants; the factor $ϙ/m$ fixes the dimensions. The magnitude $S_\mu S^\mu$ is preserved automatically by this family, because $S_\mu F^{\mu\nu}S_\nu=0$ by the antisymmetry of $F$ and $S_\mu v^\mu=0$.
+with $\alpha,\beta$ dimensionless constants; the factor $ϙ/m$ fixes the dimensions. The magnitude $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu$ is preserved automatically by this family, because $\sum_{\mu,\nu}S_\mu F_{\mu\nu}S_\nu=0$ by the antisymmetry of $F$ and $\sum_\mu S_\mu v_\mu=0$.
 
 **The orthogonality condition fixes the relative coefficient.** Define the contracted quantity and use the Lorentz-force equation for the four-velocity,
 
 $$
-m\,\frac{du^\mu}{d\tau}=ϙ\,F^{\mu\nu}v_\nu .
+m\,\frac{du_\mu}{d\tau}=ϙ\,\sum_\nu F_{\mu\nu}v_\nu .
 $$
 
 Then
 
 $$
 \begin{aligned}
-v_\mu\frac{dS^\mu}{d\tau}
-&=\frac{ϙ}{m}\Big[\alpha\,v_\mu F^{\mu\nu}S_\nu+\beta\,v_\mu v^\mu B\Big] \\[2pt]
+v_\mu\frac{dS_\mu}{d\tau}
+&=\frac{ϙ}{m}\Big[\alpha\,\sum_{\mu,\nu}v_\mu F_{\mu\nu}S_\nu+\beta\,\sum_{\mu,\nu}\eta_{\mu\nu}v_\mu v_\nu B\Big] \\[2pt]
 &=\frac{ϙ}{m}\Big[-\alpha B-\beta c^{2}B\Big]
 =-\frac{ϙ}{m}\big(\alpha+\beta c^{2}\big)B ,
 \end{aligned}
 $$
 
-where $v_\mu v^\mu=-c^{2}$ was used in the second line and, in the first, the identity $v_\mu F^{\mu\nu}S_\nu=-B$, which follows from the antisymmetry of $F$ and the symmetry of the relabelling $\mu\leftrightarrow\nu$. On the other hand, differentiating the orthogonality condition $S_\mu v^\mu=0$ gives
+where $\sum_{\mu,\nu}\eta_{\mu\nu}v_\mu v_\nu=-c^{2}$ was used in the second line and, in the first, the identity $\sum_{\mu,\nu}v_\mu F_{\mu\nu}S_\nu=-B$, which follows from the antisymmetry of $F$ and the symmetry of the relabelling $\mu\leftrightarrow\nu$. On the other hand, differentiating the orthogonality condition $\sum_\mu S_\mu v_\mu=0$ gives
 
 $$
-0=\frac{d}{d\tau}\big(S_\mu v^\mu\big)
-=v_\mu\frac{dS^\mu}{d\tau}+S_\mu\frac{du^\mu}{d\tau}
-=v_\mu\frac{dS^\mu}{d\tau}+\frac{ϙ}{m}B .
+0=\frac{d}{d\tau}\big(\sum_\mu S_\mu v_\mu\big)
+=v_\mu\frac{dS_\mu}{d\tau}+S_\mu\frac{du_\mu}{d\tau}
+=v_\mu\frac{dS_\mu}{d\tau}+\frac{ϙ}{m}B .
 $$
 
 Comparing the two expressions,
@@ -181,7 +181,7 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v^\mu=(c,\mathbf{0})$, so $v^k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F^{kt}=-E_k/c$ and $F^{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v^k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F^{kt}=-E_k/c$ and $F^{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
 
 $$
 \frac{ds^k}{d\tau}
@@ -200,7 +200,7 @@ $$
 
 Collecting the two results gives the BMT equation. The derivation shows the division of labour between the two inputs: **the algebra does not choose $g$**, which is a dynamical property of the particle; it chooses the *structure*, i.e. it exhibits the two-term family and the constraint $\alpha+\beta c^{2}=1$, and the rest-frame torque then selects the member labelled by $g$.
 
-Two comments on the content of the equation. First, the invariant $B=S_\lambda F^{\lambda\nu}v_\nu$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS^\mu/d\tau=0$: the spin is parallel-transported in the flat metric, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
+Two comments on the content of the equation. First, the invariant $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS_\mu/d\tau=0$: the spin is parallel-transported in the flat metric, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
 
 ## The Biquaternion Form
 
@@ -212,7 +212,7 @@ $$
 P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
-the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $F^{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
+the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
 
 **Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$, one has
 
@@ -220,20 +220,20 @@ $$
 \mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
 \;=\;\tilde{W},
 \qquad
-W^\mu=F^{\mu\nu}V_\nu .
+W_\mu=\sum_\nu F_{\mu\nu}V_\nu .
 $$
 
-The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ in units $\epsilon=\mu=1$; repeating at $\epsilon=2,\mu=3$ and at $\epsilon=0.7,\mu=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $F^{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
+The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ in units $\epsilon=\mu=1$; repeating at $\epsilon=2,\mu=3$ and at $\epsilon=0.7,\mu=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_\nu F_{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
 
 The second structure is the **invariant pairing**
 
 $$
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle
 =\mathrm{Sc}\!\left(\tilde{S}\,\mathrm{F}(\tilde{V})^{\natural}\right)
-=S_\lambda F^{\lambda\nu}v_\nu=B ,
+=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=B ,
 $$
 
-so that the scalar $B$ of the component equation is simply the material pairing of the spin with the field action on the four-velocity. That the pairing evaluates to $B$ is the defining property of the field action read through the metric: $\mathrm{F}(\tilde{V})$ is the four-vector $F^{\mu\nu}v_\nu$, and the pairing of two material four-vectors is their Minkowski inner product.
+so that the scalar $B$ of the component equation is simply the material pairing of the spin with the field action on the four-velocity. That the pairing evaluates to $B$ is the defining property of the field action read through the metric: $\mathrm{F}(\tilde{V})$ is the four-vector $\sum_\nu F_{\mu\nu}v_\nu$, and the pairing of two material four-vectors is their Minkowski inner product.
 
 Substituting the two structures into the component equation gives the biquaternion form of the BMT equation,
 
@@ -244,20 +244,20 @@ $$
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right],
 $$
 
-in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $S_\mu v^\mu=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS^{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
+in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\sum_\mu S_\mu v_\mu=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS^{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
 
 The transcription is a statement about the **structure** of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{M}_-$.
 
 ## The Rest Frame and the Meaning of $g$
 
-The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v^\mu=(c,\mathbf{0})$, $S^{0}=0$, and $\tilde{S}=(0,\vec s)$. The field action on the spin is
+The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v_\mu=(c,\mathbf{0})$, $S^{0}=0$, and $\tilde{S}=(0,\vec s)$. The field action on the spin is
 
 $$
 \mathrm{F}(\tilde{S})\Big|_{\rm rest}
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F^{tk}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=S_\lambda F^{\lambda\nu}v_\nu=S_kF^{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F^{tk}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF^{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
@@ -274,7 +274,7 @@ $$
 =\frac{ϙ}{m}\,\frac{\vec E\cdot\vec s}{c},
 $$
 
-in which the two contributions combine to the single value required to keep $S_\mu v^\mu=0$ as the velocity begins to change: the time equation is not a second dynamical law but the statement that the rest-frame spin remains purely spatial in the momentary rest frame. Thus **$g$ and only $g$ is the dynamical input**; everything else in the equation is fixed by covariance and orthogonality.
+in which the two contributions combine to the single value required to keep $\sum_\mu S_\mu v_\mu=0$ as the velocity begins to change: the time equation is not a second dynamical law but the statement that the rest-frame spin remains purely spatial in the momentary rest frame. Thus **$g$ and only $g$ is the dynamical input**; everything else in the equation is fixed by covariance and orthogonality.
 
 The gyromagnetic factor is not determined by the classical model. The relativistic quantum theory of a spin-$\tfrac12$ particle gives the tree-level value $g=2$, and the classical spinning particle with $g=2$ reproduces the corresponding classical limit. The small departure of the measured electronic and muonic moments from $2$, the **anomalous moment** $a=(g-2)/2$, is a quantum-field-theoretic effect and lies outside the classical framework; Companion article *The Classical Origin of g = 2 in Biquaternionic Form*, for the algebraic origin of the factor two, and Companion article *The Empirical Status of the Biquaternion Framework*, for the position on the measured anomaly, record the standing treatment. The classical equation itself is agnostic: any $g$ defines a consistent classical spinning particle, and the value of $g$ must be supplied from outside.
 
@@ -283,16 +283,16 @@ The gyromagnetic factor is not determined by the classical model. The relativist
 At $g=2$ the second term of the BMT equation vanishes identically, and the equation collapses to
 
 $$
-\boxed{\ \frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}S_\nu\ } ,
+\boxed{\ \frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\,\sum_\nu F_{\mu\nu}S_\nu\ } ,
 $$
 
 which is **the same equation as the Lorentz-force equation for the four-velocity**,
 
 $$
-\frac{du^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}v_\nu .
+\frac{du_\mu}{d\tau}=\frac{ϙ}{m}\,\sum_\nu F_{\mu\nu}v_\nu .
 $$
 
-The map $\tilde{Q}\mapsto (ϙ/m)F^{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
+The map $\tilde{Q}\mapsto (ϙ/m)F_{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
 \frac{dX^k}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
@@ -303,8 +303,8 @@ where $\vec X$ is the spatial part of the four-vector in question. Thus $S_{\rm 
 For $g\neq2$ the second term is non-zero and produces a precession of the spin **relative to** the four-velocity. Subtracting the $g=2$ transport from the full equation,
 
 $$
-\frac{dS^\mu}{d\tau}-\frac{ϙ}{m}F^{\mu\nu}S_\nu
-=-\left(\frac{g}{2}-1\right)\frac{ϙ}{m}\frac{1}{c^{2}}\,v^\mu\,B ,
+\frac{dS_\mu}{d\tau}-\frac{ϙ}{m}\sum_\nu F_{\mu\nu}S_\nu
+=-\left(\frac{g}{2}-1\right)\frac{ϙ}{m}\frac{1}{c^{2}}\,v_\mu\,B ,
 $$
 
 shows that the departure from spin-follows-velocity is governed by $(g/2-1)$ and by the invariant $B$. This is the term whose non-relativistic limit is the anomalous precession measured in the $g-2$ experiments, and it is the covariant home of the Thomas term discussed for the free field in the companion article of this subcategory.
@@ -322,7 +322,7 @@ $$
 
 which is the Larmor equation with angular velocity $\vec\omega_L=-(gq/2m)\vec B$ for the moment $\vec\mu$. The rotor form of that precession, with its half-angle and its sign convention, is the subject of Companion article *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form*, for the non-relativistic precession and its rotor; the BMT equation contains it as the leading term.
 
-The relativistic corrections organize as follows. The first term, $(g/2)F^{\mu\nu}S_\nu$, transports the spin along the worldline; on its own it does not preserve the orthogonality $S_\mu v^\mu=0$, and the second term, $-(g/2-1)(1/c^{2})v^\mu B$, is precisely the correction that restores it. Equivalently, the second term is what makes the instantaneous rest-frame reduction a pure gyromagnetic torque with no kinematic contribution. Since the orthogonality of the spin to the four-velocity is the covariant expression of the rotation of the rest frame, the second term is the term that carries the kinematic **Thomas precession** in the laboratory frame, and its coefficient $g/2-1$ is the anomalous part that remains when $g\neq2$. For $g=2$ the second term vanishes and the spin follows the velocity, so the Thomas rotation is not visible as a precession of the spin relative to the frame it defines; for $g\neq2$ the two terms together give the observed precession, whose non-relativistic limit in a central electric field is the spin–orbit term with the Thomas half. The kinematic rate itself is the free-field result
+The relativistic corrections organize as follows. The first term, $(g/2)\sum_\nu F_{\mu\nu}S_\nu$, transports the spin along the worldline; on its own it does not preserve the orthogonality $\sum_\mu S_\mu v_\mu=0$, and the second term, $-(g/2-1)(1/c^{2})v_\mu B$, is precisely the correction that restores it. Equivalently, the second term is what makes the instantaneous rest-frame reduction a pure gyromagnetic torque with no kinematic contribution. Since the orthogonality of the spin to the four-velocity is the covariant expression of the rotation of the rest frame, the second term is the term that carries the kinematic **Thomas precession** in the laboratory frame, and its coefficient $g/2-1$ is the anomalous part that remains when $g\neq2$. For $g=2$ the second term vanishes and the spin follows the velocity, so the Thomas rotation is not visible as a precession of the spin relative to the frame it defines; for $g\neq2$ the two terms together give the observed precession, whose non-relativistic limit in a central electric field is the spin–orbit term with the Thomas half. The kinematic rate itself is the free-field result
 
 $$
 \vec\omega_T=\frac{1}{c^{2}}\left(\frac{\gamma_{2}}{\gamma+1}\right)\vec a\times\vec v,
@@ -341,7 +341,7 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 
 **Supplied by the algebra.**
 
-- The two covariant structures available to a material four-vector linear in $F$ and $S$ are exhausted by $(F\cdot S)^\mu$ and $v^\mu B$; the enumeration uses only the antisymmetry of $F$ and the orthogonality $S_\mu v^\mu=0$.
+- The two covariant structures available to a material four-vector linear in $F$ and $S$ are exhausted by $(F\cdot S)_\mu$ and $v_\mu B$; the enumeration uses only the antisymmetry of $F$ and the orthogonality $\sum_\mu S_\mu v_\mu=0$.
 - The orthogonality constraint on the spin is the invariant pairing $\mathrm{Sc}(\tilde{S}\tilde{V}^{\natural})=0$, and its preservation under the evolution is the single algebraic relation $\alpha+\beta c^{2}=1$.
 - The field coupling is the anti-Hermitian projection of the product $\tilde{V}\tilde{F}$, rescaled by $-\sqrt{\mu}$; the four Maxwell components enter through the two self-dual halves of $\tilde{F}$.
 - The invariant $B$ is the material pairing of the spin with the field action on the four-velocity, $\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$.
@@ -351,13 +351,13 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 
 - The BMT equation itself, its two-term form, and the coefficients $g/2$ and $-(g/2-1)/c^{2}$ are the result of Bargmann, Michel and Telegdi (1959); the covariant derivation by the orthogonality and rest-frame conditions is the standard one.
 - The rest-frame gyromagnetic torque $\vec\mu\times\vec B$, the Larmor limit, the spin-follows-velocity property of $g=2$, and the identification of the $(g/2-1)$ term with the Thomas contribution are standard.
-- The spin tensor $S^{\mu\nu}$ and its relation to the spin four-vector, and the pole–dipole equations of extended bodies, are standard and lie outside the point-particle scope of this article.
+- The spin tensor $S_{\mu\nu}$ and its relation to the spin four-vector, and the pole–dipole equations of extended bodies, are standard and lie outside the point-particle scope of this article.
 
 **Interpretation.** The BMT equation is the general classical equation of motion for the spin of a charged particle, and the free-field kinematic precession of the companion article is its $F=0$ sector; in this sense the Thomas precession is a special case of the BMT equation, and the BMT equation is the covariant completion of the rest-frame torque. The algebra adds no new physics; it exhibits the equation's structure in the material sector and connects it to the same projections and pairings that carry the Lorentz force and the field invariants.
 
 ## Open Questions
 
-1. **Spin tensor and extended bodies.** The spin-tensor description $S^{\mu\nu}$ extends the BMT equation to bodies with higher multipole structure, through the Papapetrou–Dixon equations. Does the material sector carry the spin tensor naturally, and does the field action $\mathrm{F}$ generalize to a projection acting on the antisymmetric part, with the higher multipoles of the sibling subcategory?
+1. **Spin tensor and extended bodies.** The spin-tensor description $S_{\mu\nu}$ extends the BMT equation to bodies with higher multipole structure, through the Papapetrou–Dixon equations. Does the material sector carry the spin tensor naturally, and does the field action $\mathrm{F}$ generalize to a projection acting on the antisymmetric part, with the higher multipoles of the sibling subcategory?
 
 2. **The anomalous moment.** The classical equation is agnostic about $g$. The quantum electrodynamic value $g=2+2a$ requires the quantized field, which the present non-quantum framework excludes. Is there a purely algebraic characterization of the tree-level value $g=2$ beyond the spin-follows-velocity identity, or is that identity the whole classical content?
 
@@ -372,9 +372,9 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 The **classical spinning particle** is a point particle with four-velocity $\tilde{V}$ and an intrinsic spin four-vector $\tilde{S}\in\mathbb{M}_-$ subject to
 
 $$
-S_\mu v^\mu=0 ,
+\sum_\mu S_\mu v_\mu=0 ,
 \qquad
-S_\mu S^\mu=\vec s^{2},
+\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu=\vec s^{2},
 \qquad
 \vec\mu=\frac{g\,ϙ}{2m}\,\vec s,
 $$
@@ -383,14 +383,14 @@ with $\vec s$ the rest-frame spin and $g$ the gyromagnetic factor. Its equation 
 
 $$
 \boxed{\;
-\frac{dS^\mu}{d\tau}
-=\frac{ϙ}{m}\left[\frac{g}{2}\,F^{\mu\nu}S_\nu
--\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v^\mu\,B\right],
+\frac{dS_\mu}{d\tau}
+=\frac{ϙ}{m}\left[\frac{g}{2}\,\sum_\nu F_{\mu\nu}S_\nu
+-\left(\frac{g}{2}-1\right)\frac{1}{c^{2}}\,v_\mu\,B\right],
 \qquad
-B=S_\lambda F^{\lambda\nu}v_\nu\;},
+B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu\;},
 $$
 
-in the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with $v_\mu v^\mu=-c^{2}$. The equation is assembled from the only two covariant four-vectors linear in $F$ and $S$, namely $F^{\mu\nu}S_\nu$ and $v^\mu B$; the orthogonality of the spin and the four-velocity forces $\alpha+\beta c^{2}=1$, and the rest-frame gyromagnetic torque fixes $\alpha=g/2$. In the biquaternion algebra the same equation is
+in the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with $\sum_{\mu,\nu}\eta_{\mu\nu}v_\mu v_\nu=-c^{2}$. The equation is assembled from the only two covariant four-vectors linear in $F$ and $S$, namely $\sum_\nu F_{\mu\nu}S_\nu$ and $v_\mu B$; the orthogonality of the spin and the four-velocity forces $\alpha+\beta c^{2}=1$, and the rest-frame gyromagnetic torque fixes $\alpha=g/2$. In the biquaternion algebra the same equation is
 
 $$
 \boxed{\;
@@ -408,7 +408,7 @@ $$
 P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
-whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and the invariant material pairing
+whose four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$, and the invariant material pairing
 
 $$
 \big\langle\tilde{Q}_1,\tilde{Q}_2\big\rangle
@@ -416,7 +416,7 @@ $$
 =-Q_1^{0}Q_2^{0}+\vec Q_1\cdot\vec Q_2.
 $$
 
-The transcription was verified by recomputation on random field and velocity configurations: the biquaternion and component right-hand sides agree to machine precision; the orthogonality $S_\mu v^\mu=0$ is preserved to machine precision; and the rest-frame reduction gives $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ together with the time component required by orthogonality. In the rest frame the equation is the pure gyromagnetic torque, so $g$ is the only dynamical input. At $g=2$ the second term vanishes, the equation becomes $dS^\mu/d\tau=(ϙ/m)F^{\mu\nu}S_\nu$, identical to the Lorentz-force equation for the four-velocity, and the spin follows the velocity with no anomalous precession. The non-relativistic limit is the Larmor precession of the magnetic moment; the second term is the covariant expression of the Thomas precession, whose free-field rate
+The transcription was verified by recomputation on random field and velocity configurations: the biquaternion and component right-hand sides agree to machine precision; the orthogonality $\sum_\mu S_\mu v_\mu=0$ is preserved to machine precision; and the rest-frame reduction gives $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ together with the time component required by orthogonality. In the rest frame the equation is the pure gyromagnetic torque, so $g$ is the only dynamical input. At $g=2$ the second term vanishes, the equation becomes $dS_\mu/d\tau=(ϙ/m)\sum_\nu F_{\mu\nu}S_\nu$, identical to the Lorentz-force equation for the four-velocity, and the spin follows the velocity with no anomalous precession. The non-relativistic limit is the Larmor precession of the magnetic moment; the second term is the covariant expression of the Thomas precession, whose free-field rate
 
 $$
 \vec\omega_T=\frac{1}{c^{2}}\frac{\gamma_{2}}{\gamma+1}\,\vec a\times\vec v
@@ -438,17 +438,17 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
-| $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
+| $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $\sum_\mu S_\mu v_\mu=0$ |
 | $\tilde U_{\mathrm L,\vec v}$ | Lorentz boost rotor to the momentary rest frame |
-| $\vec s$ | Rest-frame spin, $S_\mu S^\mu=\vec s^2$ |
-| $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
+| $\vec s$ | Rest-frame spin, $\sum_{\mu,\nu}\eta_{\mu\nu}S_\mu S_\nu=\vec s^2$ |
+| $S_{\mu\nu}$ | Antisymmetric spin tensor, $S_\mu=\frac{1}{2c}\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict'$: $F^{tk}=iE_k/c$) |
-| $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $F^{\mu\nu}V_\nu$ |
+| $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_1^0Q_2^0+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
-| $B=S_\lambda F^{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
+| $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma_2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 

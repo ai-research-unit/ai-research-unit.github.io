@@ -29,7 +29,7 @@ splits into the covariant d'Alembertian in its scalar part and the curvature in 
 
 The division between what is established and what is interpretation is kept explicit, as in the companion articles.
 
-- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}$ in $\mathbb{M}_-$; and the observation that the connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion.
+- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}$ in $\mathbb{M}_-$; and the observation that the connection one-form $\sum_\mu\tilde{A}_\mu\,dx_\mu$ is a real quaternion.
 - **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\bar D D$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
@@ -169,15 +169,15 @@ $$
 
 so that $\partial/\partial Q_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde{A}_2(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
 
-**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\tilde{A}_\mu\,dx^\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
+**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\sum_\mu\tilde{A}_\mu\,dx_\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\tilde{A}_\mu\,dx^\mu = A_0\,d(ict') + A_k\,dx^k = -\phi\,dt' + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\sum_\mu\tilde{A}_\mu\,dx_\mu = A_0\,d(ict') + A_k\,dx_k = -\phi\,dt' + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
 
-which is real: $A_0$ is imaginary and $d(ict')$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real: $A_0$ is imaginary and $d(ict')$ is imaginary, so their product is real, while $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu\tilde{A}_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu\tilde{A}_\mu\,dx_\mu \mapsto \sum_\mu\tilde{A}_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -259,7 +259,7 @@ The boundary can be drawn as in the companion articles.
 
 **What it only transcribes.** The global-to-local argument itself, the form of minimal coupling, and the covariant derivative are the standard constructions, written in the algebra's notation. The algebra provides a home and makes the identities transparent; it does not supply a reason for a connection to exist, and it does not fix the coupling constant $ϙ$.
 
-**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\tilde{A}_\mu\,dx^\mu$ lies in the real-quaternion subspace and its loop integral is gauge invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ is what makes the interpretation precise.
+**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_\mu\tilde{A}_\mu\,dx_\mu$ lies in the real-quaternion subspace and its loop integral is gauge invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ is what makes the interpretation precise.
 
 ## The Gauge Connection and the Gravitational Connection
 
@@ -281,7 +281,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a Pauli-type coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
-5. **The one-form and the holonomy.** The connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.
+5. **The one-form and the holonomy.** The connection one-form $\sum_\mu\tilde{A}_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.
 
 6. **Gauge fixing.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.
 
@@ -299,7 +299,7 @@ $$
 
 with $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $D(f\tilde{\Psi}) = fD\tilde{\Psi} + (\tilde{\nabla} f)\tilde{\Psi}$ and commutator $[D_\mu,f] = \partial/\partial Q_\mu f$, so that the connection is exactly the difference $D_\mu - \partial/\partial Q_\mu = \frac{iϙ}{\hbar}A_\mu$.
 
-Covariance determines the connection rather than merely holding for it: the requirement $D_2(\lambda\tilde{\Psi}) = \lambda D\tilde{\Psi}$ forces $\Omega_2 = \Omega - (\tilde{\nabla}\lambda)\lambda^{-1}$, which for $\lambda = \exp(iϙ\Gamma/\hbar)$ is the inherited law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\tilde{A}_\mu\,dx^\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
+Covariance determines the connection rather than merely holding for it: the requirement $D_2(\lambda\tilde{\Psi}) = \lambda D\tilde{\Psi}$ forces $\Omega_2 = \Omega - (\tilde{\nabla}\lambda)\lambda^{-1}$, which for $\lambda = \exp(iϙ\Gamma/\hbar)$ is the inherited law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu\tilde{A}_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
 
 The curvature is the commutator of covariant derivatives, $[D_\mu,D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu\nu}[D_\mu,D_\nu]\bar{e}_\mu e_\nu$. Unlike $D_\mu$, the commutator is an element of the algebra. The covariant square separates cleanly,
 

@@ -14,10 +14,10 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 ### Lagrangian and equation
 
-The Proca field is a real four-vector $A^\mu$ with the Lagrangian density
+The Proca field is a real four-vector $A_\mu$ with the Lagrangian density
 
 $$
-\mathcal{L} = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac12 \mu^2 A_\mu A^\mu, \qquad F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
+\mathcal{L} = -\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} + \tfrac12 \mu^2\sum_\mu A_\mu A_\mu, \qquad F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
 $$
 
 where $\mu = mc/\hbar$ and the sign of the mass term is the one that makes the energy positive. Variation with respect to $A_\nu$ gives the **Proca equation**
@@ -26,14 +26,14 @@ $$
 \tilde\nabla\tilde F-\mu^2\tilde A=0 .
 $$
 
-The equation differs from the source-free Maxwell equation by the mass term alone, and that term is what breaks the gauge symmetry: under $A_\mu \to A_\mu - \partial/\partial Q_\mu\,\Gamma$ the field strength is unchanged but the mass term is not, since $A_\mu A^\mu$ is not invariant. A massive vector field has no gauge freedom.
+The equation differs from the source-free Maxwell equation by the mass term alone, and that term is what breaks the gauge symmetry: under $A_\mu \to A_\mu - \partial/\partial Q_\mu\,\Gamma$ the field strength is unchanged but the mass term is not, since $\sum_\mu A_\mu A_\mu$ is not invariant. A massive vector field has no gauge freedom.
 
 ### The constraint
 
-The mass term also changes the constraint structure. Contracting the equation with $\partial/\partial Q_\nu$ and using the antisymmetry of $F^{\mu\nu}$,
+The mass term also changes the constraint structure. Contracting the equation with $\partial/\partial Q_\nu$ and using the antisymmetry of $F_{\mu\nu}$,
 
 $$
-\partial^2/\partial Q_\nu\partial Q_\mu F^{\mu\nu} = 0
+\sum_{\mu,\nu}\partial^2/\partial Q_\mu\partial Q_\nu\,F_{\mu\nu} = 0
 \qquad\Longrightarrow\qquad
 \mu^2\langle\tilde\nabla,\tilde A\rangle_{\natural}=0
 \qquad\Longrightarrow\qquad
@@ -53,7 +53,7 @@ $$
 so that the Proca equation becomes
 
 $$
-\left(\Box + \mu^2\right) A^\nu = 0
+\left(\Box + \mu^2\right) A_\nu = 0
 $$
 
 in the mostly-minus convention. In the series convention, whose d'Alembertian is $\Box = \partial^2/\partial Q_t^2 + \Delta$ and therefore the negative of the mostly-minus operator, the same statement is
@@ -101,7 +101,7 @@ $$
 \frac{m^2c^2}{\hbar^2}\,\tilde{A} \;\longmapsto\; \frac{m^2c^2}{\hbar^2}\left(\tilde{A}-\tilde{\nabla}\Gamma\right),
 $$
 
-so the equation is preserved only if $\tilde{\nabla}\Gamma = 0$, that is, only for a constant $\Gamma$. The transformation is therefore not a symmetry, and there is no gauge orbit to quotient by. The algebraic reason is that the mass term is the only term in the equation that is not built from the field strength: it is a term in the potential, and the potential is not gauge invariant. This is the biquaternion statement of the standard fact that the Proca Lagrangian's mass term $A_\mu A^\mu$ breaks the gauge symmetry.
+so the equation is preserved only if $\tilde{\nabla}\Gamma = 0$, that is, only for a constant $\Gamma$. The transformation is therefore not a symmetry, and there is no gauge orbit to quotient by. The algebraic reason is that the mass term is the only term in the equation that is not built from the field strength: it is a term in the potential, and the potential is not gauge invariant. This is the biquaternion statement of the standard fact that the Proca Lagrangian's mass term $\sum_\mu A_\mu A_\mu$ breaks the gauge symmetry.
 
 ## The Lorenz Condition Is Implied
 

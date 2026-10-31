@@ -15,7 +15,7 @@ so a component of the field strength is *not* a number; it is an algebra element
 
 The division between what is established and what is interpretation is kept explicit.
 
-- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathrm{SU}(2)$ up to normalization; the centre contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathrm{SU}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
+- **Established, and recomputed below.** The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, is a Lie subalgebra of $\mathbb{B}$ under the commutator, and it is $\mathrm{SU}(2)$ up to normalization; the centre contributes the abelian factor. The non-abelian field strength $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + i\kappa[A_\mu,A_\nu]$ transforms in the adjoint representation and is not invariant; it is the commutator of covariant derivatives, $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity holds; and $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ is a gauge-invariant density. All of these were recomputed exactly on $\mathrm{SU}(2)$, on generic non-commuting connections, and on at least two independent components (in fact on all six).
 - **Defect in the parent, reported rather than inherited.** The parent's packaging of the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does **not** survive the non-abelian extension. The object $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is not even in the reality class of the field strength, and it is not the adjoint-covariant object. This is stated in its own section and the repair is given.
 - **Gap, left visible.** The reality condition on the *connection* that would make the non-abelian construction close inside a fixed Hermitian-conjugation eigenspace is obstructed in the time direction by the $ict'$ derivative, $\partial/\partial Q_t = -i\partial/\partial t'$. The obstruction is sharp, is exhibited, and is not smoothed over.
 
@@ -198,22 +198,22 @@ which is the non-abelian analogue of the statement that the homogeneous Maxwell 
 The action is the integral of the simplest invariant density built from the field strength. Since $F_{\mathrm g,\mu\nu} = \tilde Q F_{\mu\nu}\tilde Q^{-1}$ and the trace is cyclic,
 
 $$
-\mathrm{Tr}\!\left(F_{\mathrm g,\mu\nu}F_{\mathrm g}^{\,\mu\nu}\right)
-= \mathrm{Tr}\!\left(\tilde Q F_{\mu\nu}\tilde Q^{-1}\tilde Q F^{\mu\nu}\tilde Q^{-1}\right)
-= \mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right),
+\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mathrm g,\mu\nu}F_{\mathrm g,\mu\nu}\right)
+= \mathrm{Tr}\!\left(\sum_{\mu,\nu}\tilde Q F_{\mu\nu}\tilde Q^{-1}\tilde Q F_{\mu\nu}\tilde Q^{-1}\right)
+= \mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 $$
 
 so the local density
 
 $$
-\boxed{\;\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(F_{\mu\nu}F^{\mu\nu}\right),
+\boxed{\;\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 \qquad
 S_{\mathrm{YM}} = \int d^4x\;\mathcal{L}\;},
 $$
 
 is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
 
-The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $D_\mu F^{\mu\nu} = 0$, in place of the abelian $\partial/\partial Q_\mu F^{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
+The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
 
 ## The Abelian Parent's Curvature Formula Does Not Survive
 
@@ -300,7 +300,7 @@ under which the transformed components close: $\mathcal{A}_{\mathrm g,0}$ is ant
 
 3. **The matter representation.** The covariant derivative here acts by left multiplication, as in the parent. For a non-abelian connection the left and right actions differ, and the representation carried by the matter field must be specified. The chiral-fermion article poses this on the spinor module; the non-abelian version of its charge operator is not constructed here.
 
-4. **The biquaternion form of the field-strength invariants.** The abelian invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ are the real and imaginary parts of the biquaternion norm of $\tilde{F}$. For the non-abelian field strength the corresponding gauge-invariant objects are $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ and $\mathrm{Tr}(F_{\mu\nu}\tilde{F}^{\mu\nu})$, with $\tilde{F}$ the dual. Is there a clean biquaternion form of the second, and does the corpus's biquaternion-norm apparatus extend to it?
+4. **The biquaternion form of the field-strength invariants.** The abelian invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ are the real and imaginary parts of the biquaternion norm of $\tilde{F}$. For the non-abelian field strength the corresponding gauge-invariant objects are $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ and $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu})$, with $\tilde{F}$ the dual. Is there a clean biquaternion form of the second, and does the corpus's biquaternion-norm apparatus extend to it?
 
 5. **Instantons and topology.** The Bianchi identity and the invariant density are the ingredients of the topological charge $\int \mathrm{Tr}(F\wedge F)$. Does the biquaternion framework supply a preferred connection with finite action and nonzero charge, and does the zero-divisor structure of $\mathbb{M}_-$ play any role in it?
 
@@ -334,7 +334,7 @@ $$
 F_{\mathrm g,\mu\nu} = \tilde Q\,F_{\mu\nu}\,\tilde Q^{-1}.
 $$
 
-This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational trace formula.
+This is the essential difference from the abelian case, and it was verified on all six independent components on a generic non-commuting connection, with the transformation law holding to $10^{-11}$ and the change being of order unity. It satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$, verified on four independent triples, and the Jacobi identity enters both at the operator level, giving the Bianchi identity from $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, and at the level of the connection components, where it is the derivation property of the adjoint action that cancels the $\mathcal{A}\wedge\mathcal{A}$ terms. The Yang–Mills density $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ is gauge invariant, verified to $10^{-9}$, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational trace formula.
 
 Two things are left visible. First, a **defect in the parent**: the curvature formulas $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and $\tilde{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ do not survive; the non-abelian representative $\mathcal{F} = \tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ is a definition, and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\mathcal{A})$ is neither in the right reality class nor adjoint-covariant. Second, a **gap**: no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, because $\partial/\partial Q_t = -i\partial/\partial t'$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — time in $\mathrm{SU}(2)\subset\mathbb{M}_-$, space in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical one is not settled here.
 
@@ -368,7 +368,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + \text{cyclic} = 0$ | Bianchi identity |
 | $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the curvature (a definition) |
-| $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Gauge-invariant Yang–Mills density |
+| $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ | Gauge-invariant Yang–Mills density |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

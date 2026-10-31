@@ -4,7 +4,7 @@
 
 The corpus states one rule for indices in *Operator and Calculus Conventions*: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.
 
-The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 50 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,458 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
+The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 19 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 791 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
 
 The remainder is not one problem. Four kinds occur, and they cost different things. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label; in the fourth it is a genuine upper index — a spinor index, a local frame index or an internal-symmetry index — which the spacetime rule does not reach and which must be left alone. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, correct for the third, and an error for the fourth.
 
@@ -18,7 +18,7 @@ The count is made on the mathematics regions only, the text between single or do
 
 | Corpus | Articles | Superscripts | Index-like tokens | Articles with an index |
 |---|---:|---:|---:|---:|
-| Physics | 402 | 43,460 | 1,458 | 50 |
+| Physics | 402 | 43,460 | 791 | 19 |
 | Part VI mathematics | 884 | 65,868 | 73 | 12 |
 
 The count does not include numeric components, because $x^2$ the square and $x^2$ the second component are the same string. The four physics articles that wrote only numeric time components have been lowered and no longer appear.
@@ -41,7 +41,7 @@ The object carries two indices of different kinds, and position distinguishes th
 
 Lowering both gives $\Lambda_{\mu\nu}$, and the information of which index is the row and which the column is gone. The corpus has no second slot marker, so the repair is not a relabel. It is a matrix display, a stated slot order, or the cell form $T_{ab}=L_aR_b$. This is the only class where the raised index carries structure that no lowered pair reproduces by itself.
 
-Eight physics articles and three Part VI articles are in this class: 247 occurrences, of which 51 in physics and 5 in mathematics are slots.
+Four physics articles and three Part VI articles are in this class: 247 occurrences, of which 42 in physics and 5 in mathematics are slots.
 
 ### Class B — the superscript is paired with a lower index
 
@@ -53,7 +53,7 @@ F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.
 
-Forty-two physics articles and six Part VI articles are in this class. Between them they hold 1,020 paired occurrences, 984 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
+Forty-two physics articles and six Part VI articles are in this class. Between them they hold 532 paired occurrences, 496 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
 
 ### Class C — the superscript is only a label
 
@@ -67,8 +67,8 @@ The superscript is an exponent, a parameter label, a star, a dual or an inverse.
 
 | Class | Role of the superscript | Lowering is | Repair | Physics articles | Part VI articles |
 |---|---|---|---|---|---|
-| A | a slot | destructive | matrix, slot order, cell form | 8 | 3 |
-| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 42 | 6 |
+| A | a slot | destructive | matrix, slot order, cell form | 4 | 3 |
+| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 19 | 6 |
 | C | a label | safe | local relabel | 0 | 3 |
 | D | not an index | not applicable | none | excluded | excluded |
 | E | an index of another kind | safe with a carrier | bar, declared slot order, or plain label | 11 (58 occ.) | 0 |
@@ -149,6 +149,37 @@ The pass took the files whose raised index carries no structure: in those files 
 | [Hawking Radiation in Biquaternionic Form](../articles_physics/hawking-radiation-in-biquaternionic-form.html) | 5 |
 | [The Skyrme Model and the Topological Baryon in Biquaternionic Form](../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) | 6 |
 | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) | 6 |
+| [The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form](../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 18 | 0 | 13 | 5 | $\sigma^{\mu\nu}$ (9), $x^{\mu}$ (7), $j^{\mu}$ (2) |
+| [Canonical Quantization of the Biquaternion Graviton Field](../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html) | $\mathbb{B}$ | 16 | 0 | 13 | 3 | $\partial^{\mu}$ (8), $h^{\mu\nu}$ (3), $\eta^{\mu\nu}$ (2), $x^{\mu}$ (2), +1 more |
+| [Canonical Quantization of the Biquaternion Proca Field](../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html) | $\mathbb{B}$ | 34 | 0 | 26 | 8 | $p^{\nu}$ (11), $A^{\mu}$ (6), $F^{\mu\nu}$ (6), $\pi^{\mu}$ (5), +3 more |
+| [The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form](../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html) | $\mathbb{B}$ | 20 | 0 | 13 | 7 | $F^{\mu\nu}$ (6), $\partial^{\mu}$ (4), $T^{\mu}$ (3), $du^{\mu}$ (3), +3 more |
+| [Radiation from Accelerated Charges in Biquaternionic Form](../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html) | $\mathbb{B}$ | 19 | 6 | 6 | 7 | $K^{\mu}$ (7), $du^{\nu}$ (5), $d^{\mu}$ (3), $u^{\mu}$ (3), +1 more |
+| [The Lorentz Force in Biquaternion Form](../articles_physics/the-lorentz-force-in-biquaternion-form.html) | $\mathbb{M}_-$ | 19 | 0 | 11 | 8 | $F^{\mu\nu}$ (8), $K^{\mu}$ (6), $P^{\nu}$ (2), $dP^{\mu}$ (2), +1 more |
+| [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | $\mathbb{B}$ | 19 | 0 | 12 | 7 | $\sigma^{\mu\nu}$ (8), $\gamma^{\mu}$ (3), $j^{\mu}$ (3), $p^{\mu}$ (2), +3 more |
+| [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) | — | 8 | 0 | 3 | 5 | $M^{\mu}$ (3), $\psi^{\rho}$ (3), $N^{\rho}$ (1), $S^{\mu}$ (1) |
+| [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 11 | 0 | $J^{\mu}$ (3), $A^{\mu}$ (2), $F^{\mu\nu}$ (2), $B^{\mu\nu}$ (1), +3 more |
+| [The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form](../articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 94 | 0 | 65 | 29 | $v^{\mu}$ (33), $F^{\mu\nu}$ (32), $S^{\mu}$ (12), $dS^{\mu}$ (11), +3 more |
+| [Linearized Gravity in Biquaternionic Form](../articles_physics/linearized-gravity-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 122 | 0 | 87 | 35 | $x^{\mu}$ (67), $\eta^{\mu\nu}$ (14), $\varepsilon^{\nu}$ (11), $\partial^{\lambda}$ (10), +7 more |
+| [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 82 | 0 | 72 | 10 | $F^{\mu\nu}$ (48), $J^{\nu}$ (28), $L^{\mu\nu}$ (2), $\partial^{\mu}$ (2), +1 more |
+| [The Higgs Mechanism in Biquaternionic Form](../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 16 | 0 | 16 | 0 | $g^{\mu\nu}$ (12), $A^{\mu}$ (4) |
+| [Canonical Quantization of the Biquaternion Maxwell Field](../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html) | $\mathbb{B}$ | 15 | 0 | 13 | 2 | $F^{\mu\nu}$ (5), $\epsilon^{\lambda}$ (4), $\pi^{\mu}$ (4), $A^{\nu}$ (1), +1 more |
+| [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html) | $\mathbb{B}$ | 14 | 0 | 7 | 7 | $p^{\mu}$ (12), $\pi^{\mu}$ (1), $ap^{\mu}$ (1) |
+| [The First-Order Root of the Biquaternion Klein–Gordon Operator](../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) | $\mathbb{B}$ | 13 | 0 | 9 | 4 | $x^{\mu}$ (7), $g^{\mu\nu}$ (3), $k^{\mu}$ (3) |
+| [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 6 | 6 | $B^{\mu}$ (3), $K^{\mu}$ (2), $N^{\mu}$ (2), $G^{\mu}$ (1), +4 more |
+| [The Relativistic Particle in an External Field, in Biquaternionic Form](../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 9 | 3 | $F^{\mu\nu}$ (8), $dP^{\mu}$ (3), $K^{\mu}$ (1) |
+| [The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 11 | 1 | $j^{\mu}$ (7), $J^{\nu}$ (3), $F^{\mu\nu}$ (2) |
+| [The Stueckelberg Mechanism in Biquaternionic Form](../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 12 | 0 | $A^{\mu}$ (4), $F^{\mu\nu}$ (4), $\mu^{\mu}$ (2), $g^{\mu\nu}$ (1), +1 more |
+| [The Lorentz Transformation as a Biquaternionic Rotation](../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html) | $\mathbb{B}$ | 11 | 1 | 1 | 9 | $L^{\mu}$ (3), $E^{\mu}$ (2), $q^{\mu}$ (2), $F^{\mu\nu}$ (1), +3 more |
+| [Hamiltonian Field Theory in Biquaternionic Form](../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 9 | 2 | $p^{\mu}$ (9), $\partial^{\mu}$ (2) |
+| [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 11 | 0 | $F^{\mu\nu}$ (10), $\varepsilon^{\lambda\mu\nu\rho}$ (1) |
+| [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html) | $\mathbb{B}$ | 9 | 0 | 9 | 0 | $F^{\mu\nu}$ (9) |
+| [The Classical Free Particle and Inertial Frames in Biquaternionic Form](../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 4 | 5 | $v^{\mu}$ (3), $f^{\mu}$ (2), $\Lambda^{\mu}$ (1), $dx^{\mu}$ (1), +2 more |
+| [The Covariant Derivative and Gauge Connection in Biquaternionic Form](../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 9 | 0 | $dx^{\mu}$ (9) |
+| [The Unruh Effect in Biquaternionic Form](../articles_physics/the-unruh-effect-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 3 | 6 | $\chi^{\mu}$ (9) |
+| [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html) | $\mathbb{B}$ | 8 | 0 | 8 | 0 | $j^{\mu}$ (8) |
+| [The Proca Equation: Massive Spin 1 in Biquaternionic Form](../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html) | $\mathbb{B}$ | 8 | 0 | 5 | 3 | $A^{\mu}$ (5), $F^{\mu\nu}$ (3) |
+| [The Berry Phase and Geometric Phases in Biquaternionic Form](../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html) | $\mathbb{B}$ | 7 | 0 | 7 | 0 | $dR^{\mu}$ (4), $R^{\mu}$ (1), $\lambda^{\mu}$ (1), $dS^{\mu\nu}$ (1) |
+| [The Theta Vacuum in Biquaternionic Form](../articles_physics/the-theta-vacuum-in-biquaternionic-form.html) | both | 7 | 0 | 7 | 0 | $F^{\mu\nu}$ (7) |
 
 The three Part VI rows are the element representations, whose indices $Q_0$, $Q_1$, $\tilde q_0$ are tuple slots rather than spacetime events. They were lowered with the rest; if the Part VI tuple convention wants the upper form back, the change is local and the value is unaffected.
 
@@ -236,16 +267,11 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) | $\mathbb{B}$ | 66 | 10 | 42 | 14 | $T^{\mu\nu}$ (38), $F^{\mu\nu}$ (8), $f^{\nu}$ (6), $\epsilon^{\nu}$ (3), +5 more |
 | [The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure](../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html) | $\mathbb{M}_-$ | 30 | 1 | 17 | 12 | $\sigma^{\mu\nu}$ (28), $\Gamma^{\mu}$ (2) |
 | [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | $\mathbb{B}$ | 25 | 2 | 19 | 4 | $T^{\mu}$ (22), $\partial^{\mu}$ (2), $\eta^{\mu\nu}$ (1) |
-| [Radiation from Accelerated Charges in Biquaternionic Form](../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html) | $\mathbb{B}$ | 19 | 6 | 6 | 7 | $K^{\mu}$ (7), $du^{\nu}$ (5), $d^{\mu}$ (3), $u^{\mu}$ (3), +1 more |
-| [The Lorentz Transformation as a Biquaternionic Rotation](../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html) | $\mathbb{B}$ | 11 | 1 | 1 | 9 | $L^{\mu}$ (3), $E^{\mu}$ (2), $q^{\mu}$ (2), $F^{\mu\nu}$ (1), +3 more |
 
 ### Class B articles
 
 | Article | Frame | Raised | Slot | Contracted | Plain | Objects (quoted form) |
 |---|---|---:|---:|---:|---:|---:|
-| [Linearized Gravity in Biquaternionic Form](../articles_physics/linearized-gravity-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 122 | 0 | 87 | 35 | $x^{\mu}$ (67), $\eta^{\mu\nu}$ (14), $\varepsilon^{\nu}$ (11), $\partial^{\lambda}$ (10), +7 more |
-| [The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form](../articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 94 | 0 | 65 | 29 | $v^{\mu}$ (33), $F^{\mu\nu}$ (32), $S^{\mu}$ (12), $dS^{\mu}$ (11), +3 more |
-| [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 82 | 0 | 72 | 10 | $F^{\mu\nu}$ (48), $J^{\nu}$ (28), $L^{\mu\nu}$ (2), $\partial^{\mu}$ (2), +1 more |
 | [The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form](../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html) | both | 57 | 0 | 45 | 12 | $x^{\rho}$ (29), $e^{\mu}$ (14), $\partial^{\mu}$ (9), $\Gamma^{\mu\nu}$ (3), +2 more |
 | [Matter Makes Space — An External Construction from Quaternionic Spinors](../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html) | $\mathbb{B}$ | 56 | 0 | 23 | 33 | $q^{\mu}$ (20), $T^{\rho}$ (12), $J^{\mu}$ (6), $\delta^{\mu\nu}$ (4), +7 more |
 | [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 49 | 0 | 13 | 36 | $\Gamma^{\lambda}$ (10), $K^{\lambda}$ (9), $e^{\lambda}$ (9), $T^{\lambda}$ (5), +7 more |
@@ -255,38 +281,12 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html) | $\mathbb{B}$ | 39 | 0 | 39 | 0 | $J^{\nu}$ (12), $F^{\mu\nu}$ (11), $D^{\mu}$ (6), $p^{\mu}$ (6), +2 more |
 | [Dual Equivalence of the Dirac and Topologically Massive Gauge Fields](../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) | $\mathbb{M}_-$ | 38 | 0 | 23 | 15 | $\varepsilon^{\mu\nu\lambda\rho}$ (11), $c^{\nu\mu\lambda}$ (9), $B^{\mu\nu}$ (4), $H^{\mu\nu}$ (4), +5 more |
 | [Conformal Invariance and the Massless Limit in Biquaternionic Form](../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html) | $\mathbb{B}$ | 37 | 0 | 31 | 6 | $\Theta^{\mu}$ (15), $x^{\nu}$ (9), $T^{\mu}$ (3), $D^{\mu}$ (2), +6 more |
-| [Canonical Quantization of the Biquaternion Proca Field](../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html) | $\mathbb{B}$ | 34 | 0 | 26 | 8 | $p^{\nu}$ (11), $A^{\mu}$ (6), $F^{\mu\nu}$ (6), $\pi^{\mu}$ (5), +3 more |
 | [Instantons and Solitons in Biquaternionic Form](../articles_physics/instantons-and-solitons-in-biquaternionic-form.html) | $\mathbb{B}$ | 34 | 0 | 26 | 8 | $F^{\mu\nu}$ (24), $J^{\mu}$ (9), $T^{\mu\nu}$ (1) |
 | [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 30 | 0 | 22 | 8 | $R^{\mu\nu}$ (5), $\eta^{\mu\nu}$ (5), $s^{\mu}$ (4), $k^{\mu}$ (3), +8 more |
 | [Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form](../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 29 | 0 | 13 | 16 | $B^{\mu}$ (7), $N^{\mu}$ (5), $\varepsilon^{\nu\mu\lambda}$ (5), $t^{\nu\mu\lambda}$ (5), +3 more |
 | [Relativistic Mechanics in Biquaternionic Form](../articles_physics/relativistic-mechanics-in-biquaternionic-form.html) | $\mathbb{B}$ | 27 | 0 | 15 | 12 | $T^{\nu\mu}$ (8), $V^{\nu}$ (5), $G^{\mu}$ (3), $J^{\nu}$ (3), +5 more |
 | [The Dirac Path Integral in Biquaternionic Form](../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html) | $\mathbb{B}$ | 27 | 0 | 17 | 10 | $dx^{\mu}$ (10), $\psi^{\mu}$ (9), $F^{\mu\nu}$ (4), $g^{\mu\nu}$ (3), +1 more |
 | [The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form](../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html) | $\mathbb{B}$ | 25 | 0 | 14 | 11 | $A^{\mu}$ (10), $V^{\mu}$ (8), $T^{\mu\nu}$ (3), $\sigma^{\mu\nu}$ (2), +2 more |
-| [The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form](../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html) | $\mathbb{B}$ | 20 | 0 | 13 | 7 | $F^{\mu\nu}$ (6), $\partial^{\mu}$ (4), $T^{\mu}$ (3), $du^{\mu}$ (3), +3 more |
-| [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | $\mathbb{B}$ | 19 | 0 | 12 | 7 | $\sigma^{\mu\nu}$ (8), $\gamma^{\mu}$ (3), $j^{\mu}$ (3), $p^{\mu}$ (2), +3 more |
-| [The Lorentz Force in Biquaternion Form](../articles_physics/the-lorentz-force-in-biquaternion-form.html) | $\mathbb{M}_-$ | 19 | 0 | 11 | 8 | $F^{\mu\nu}$ (8), $K^{\mu}$ (6), $P^{\nu}$ (2), $dP^{\mu}$ (2), +1 more |
-| [The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form](../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) | $\mathbb{M}_-$ | 18 | 0 | 13 | 5 | $\sigma^{\mu\nu}$ (9), $x^{\mu}$ (7), $j^{\mu}$ (2) |
-| [Canonical Quantization of the Biquaternion Graviton Field](../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html) | $\mathbb{B}$ | 16 | 0 | 13 | 3 | $\partial^{\mu}$ (8), $h^{\mu\nu}$ (3), $\eta^{\mu\nu}$ (2), $x^{\mu}$ (2), +1 more |
-| [The Higgs Mechanism in Biquaternionic Form](../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 16 | 0 | 16 | 0 | $g^{\mu\nu}$ (12), $A^{\mu}$ (4) |
-| [Canonical Quantization of the Biquaternion Maxwell Field](../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html) | $\mathbb{B}$ | 15 | 0 | 13 | 2 | $F^{\mu\nu}$ (5), $\epsilon^{\lambda}$ (4), $\pi^{\mu}$ (4), $A^{\nu}$ (1), +1 more |
-| [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html) | $\mathbb{B}$ | 14 | 0 | 7 | 7 | $p^{\mu}$ (12), $\pi^{\mu}$ (1), $ap^{\mu}$ (1) |
-| [The First-Order Root of the Biquaternion Klein–Gordon Operator](../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) | $\mathbb{B}$ | 13 | 0 | 9 | 4 | $x^{\mu}$ (7), $g^{\mu\nu}$ (3), $k^{\mu}$ (3) |
-| [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 6 | 6 | $B^{\mu}$ (3), $K^{\mu}$ (2), $N^{\mu}$ (2), $G^{\mu}$ (1), +4 more |
-| [The Relativistic Particle in an External Field, in Biquaternionic Form](../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 9 | 3 | $F^{\mu\nu}$ (8), $dP^{\mu}$ (3), $K^{\mu}$ (1) |
-| [The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form](../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 11 | 1 | $j^{\mu}$ (7), $J^{\nu}$ (3), $F^{\mu\nu}$ (2) |
-| [The Stueckelberg Mechanism in Biquaternionic Form](../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 12 | 0 | $A^{\mu}$ (4), $F^{\mu\nu}$ (4), $\mu^{\mu}$ (2), $g^{\mu\nu}$ (1), +1 more |
-| [Hamiltonian Field Theory in Biquaternionic Form](../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 9 | 2 | $p^{\mu}$ (9), $\partial^{\mu}$ (2) |
-| [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 11 | 0 | $F^{\mu\nu}$ (10), $\varepsilon^{\lambda\mu\nu\rho}$ (1) |
-| [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | $\mathbb{B}$ | 11 | 0 | 11 | 0 | $J^{\mu}$ (3), $A^{\mu}$ (2), $F^{\mu\nu}$ (2), $B^{\mu\nu}$ (1), +3 more |
-| [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html) | $\mathbb{B}$ | 9 | 0 | 9 | 0 | $F^{\mu\nu}$ (9) |
-| [The Classical Free Particle and Inertial Frames in Biquaternionic Form](../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 4 | 5 | $v^{\mu}$ (3), $f^{\mu}$ (2), $\Lambda^{\mu}$ (1), $dx^{\mu}$ (1), +2 more |
-| [The Covariant Derivative and Gauge Connection in Biquaternionic Form](../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 9 | 0 | $dx^{\mu}$ (9) |
-| [The Unruh Effect in Biquaternionic Form](../articles_physics/the-unruh-effect-in-biquaternionic-form.html) | $\mathbb{B}$ | 9 | 0 | 3 | 6 | $\chi^{\mu}$ (9) |
-| [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html) | $\mathbb{B}$ | 8 | 0 | 8 | 0 | $j^{\mu}$ (8) |
-| [The Proca Equation: Massive Spin 1 in Biquaternionic Form](../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html) | $\mathbb{B}$ | 8 | 0 | 5 | 3 | $A^{\mu}$ (5), $F^{\mu\nu}$ (3) |
-| [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) | — | 8 | 0 | 3 | 5 | $M^{\mu}$ (3), $\psi^{\rho}$ (3), $N^{\rho}$ (1), $S^{\mu}$ (1) |
-| [The Berry Phase and Geometric Phases in Biquaternionic Form](../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html) | $\mathbb{B}$ | 7 | 0 | 7 | 0 | $dR^{\mu}$ (4), $R^{\mu}$ (1), $\lambda^{\mu}$ (1), $dS^{\mu\nu}$ (1) |
-| [The Theta Vacuum in Biquaternionic Form](../articles_physics/the-theta-vacuum-in-biquaternionic-form.html) | both | 7 | 0 | 7 | 0 | $F^{\mu\nu}$ (7) |
 
 ## The Part VI Inventory
 
@@ -311,7 +311,7 @@ The other 29 index-shaped tokens in Part VI are not indices. They are the order 
 
 ## What a Pass Would Cost
 
-The 1,458 physics occurrences divide as 49 slots, 984 paired and 425 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 457 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
+The 1,458 physics occurrences divide as 49 slots, 984 paired and 425 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 253 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
 
 The Frame column splits the work by kind of decision, not by difficulty. The 280 $\mathbb{M}_-$ pairs lower as relabels under one explicit $\varepsilon$ sum, because the two weights coincide there. The 729 $\mathbb{B}$ pairs do not: $g$ and $\varepsilon$ differ, so each display must declare which contraction it means. The 154 *both* pairs carry the same choice, made per display inside one article. A pass in the order A, B, C is still the cheap order. Class A is 11 articles and 56 slots, and every one needs a decision about the slot before any edit. Class B is 70 physics and 6 Part VI articles holding 1,069 paired occurrences. Most are textbook formulas quoted in the middle of a biquaternion argument, and the decision is editorial before it is technical: does the article own the formula, or quote it? A quotation may keep its notation if the article says so; an owned formula may not. Class C is 3 Part VI articles and a local relabel.
 

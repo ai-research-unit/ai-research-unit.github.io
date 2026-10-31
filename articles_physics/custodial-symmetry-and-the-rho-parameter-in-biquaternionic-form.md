@@ -184,7 +184,7 @@ The value of $\rho$ is read off the gauge-boson mass matrix, and the custodial i
 **The mass matrix from the kinetic term.** The gauge fields of the two factors couple to the scalar through the covariant derivative, and at the vacuum the kinetic term produces the quadratic form
 
 $$
-\mathcal{L}_\text{mass} = \frac{v^2}{8}\left[g^2\left(W^1_\mu W^{1\mu} + W^2_\mu W^{2\mu}\right) + \left(gW^3_\mu - g_{\mathrm Y}B_\mu\right)^2\right] + \cdots ,
+\mathcal{L}_\text{mass} = \frac{v^2}{8}\left[g^2\left(\sum_\mu W^1_\mu W^1_\mu + \sum_\mu W^2_\mu W^2_\mu\right) + \left(gW^3_\mu - g_{\mathrm Y}B_\mu\right)^2\right] + \cdots ,
 $$
 
 which is the standard result in the standard normalisation of the doublet. The charged combination $W^\pm = (W^1\mp iW^2)/\sqrt2$ obtains

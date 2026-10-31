@@ -387,10 +387,10 @@ with the retarded-time derivative convention fixed above. This is the relativist
 
 $$
 \boxed{\;P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right)\;}
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\sum_{\mu,\nu}\eta_{\mu\nu}\frac{du_\mu}{d\tau}\frac{du_\nu}{d\tau}\right)\;}
 $$
 
-where in the second expression the index contraction uses the Minkowski metric. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
+where the second expression writes the contraction out with the frame metric $\eta=\mathrm{diag}(+,-,-,-)$, used throughout this article for every contraction of four-vectors. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
 
 For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With the derivative taken this time with respect to $t'$ (not $t'_r$),
 
@@ -462,24 +462,24 @@ Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$,
 A charge that radiates loses energy and momentum, and the loss must appear as a force acting on the charge itself. In the point-particle idealization the standard result is the **Abraham–Lorentz–Dirac** equation,
 
 $$
-m\frac{du^\mu}{d\tau} = f^\mu_{\text{ext}}
-+ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u^\mu}{d\tau^2} + \frac{u^\mu}{c^2}\frac{du^\nu}{d\tau}\frac{du_\nu}{d\tau}\right).
+m\frac{du_\mu}{d\tau} = f_{\text{ext}\,\mu}
++ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}\eta_{\nu\rho}\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right).
 $$
 
 The bracketed term is the radiation-reaction four-force. In tensor form it reads
 
 $$
-K^\mu_{\mathrm{rad}}
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u^\mu}{d\tau^2} + \frac{u^\mu}{c^2}\frac{du^\nu}{d\tau}\frac{du_\nu}{d\tau}\right),
+K_{\mathrm{rad}\,\mu}
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}\eta_{\nu\rho}\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right),
 $$
 
-the radiation-reaction counterpart of the electromagnetic four-force $K^\mu$ of *The Lorentz Force in Biquaternion Form*. Its defining property is that it is **orthogonal to the worldline**:
+the radiation-reaction counterpart of the electromagnetic four-force $K_\mu$ of *The Lorentz Force in Biquaternion Form*. Its defining property is that it is **orthogonal to the worldline**:
 
 $$
-K^\mu_{\mathrm{rad}}u_\mu = 0 .
+\sum_{\mu,\nu}\eta_{\mu\nu}K_{\mathrm{rad}\,\mu}u_\nu = 0 .
 $$
 
-This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $u^\mu u_\mu = c^2$ being constant, which gives $u_\mu\,d^2u^\mu/d\tau^2 = -\frac{du^\nu}{d\tau}\frac{du_\nu}{d\tau}$.
+This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\sum_{\mu,\nu}\eta_{\mu\nu}u_\mu u_\nu = c^2$ being constant, which gives $\sum_{\mu,\nu}\eta_{\mu\nu}u_\mu\,d^2u_\nu/d\tau^2 = -\sum_{\nu,\rho}\eta_{\nu\rho}\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}$.
 
 Two caveats should be stated plainly. First, the framework does not resolve the well-known pathologies of the equation — the runaway solutions and the pre-acceleration that follow from treating the self-force as a local differential expression. Second, the equation above is the standard result, not a derivation of the self-force from the biquaternion framework, and the point-charge self-energy divergence is untouched by the change of language. The radiation-reaction problem is thus **represented** cleanly in the framework, but it is not solved by it. A rigorous derivation from Maxwell's theory does exist, however, and it is the subject of the next paragraph.
 
@@ -546,7 +546,7 @@ $$
 P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right),
 $$
 
-the relativistic Larmor formula, with the standard $\gamma_6$ (linear) and $\gamma_4$ (circular) enhancements as special cases. The angular distribution carries the forward-beaming factor $\kappa^{-6}$, which concentrates the radiation into a cone of half-angle of order $1/\gamma$ at high speed. The radiation-reaction force $K^\mu_{\mathrm{rad}}$ is orthogonal to the worldline, though the standard pathologies of the point-charge self-force remain. An external derivation of the Lorentz–Dirac equation from Maxwell's theory — in a Colombeau algebra of nonlinear generalized functions, with the biquaternion representation supplying the closed-form integrations — gives the rigorous balance between the radiated energy–momentum rate and the self-interaction force and identifies the correct point-charge self-energy as a $\delta^2$ integral rather than the Coulomb one.
+the relativistic Larmor formula, with the standard $\gamma_6$ (linear) and $\gamma_4$ (circular) enhancements as special cases. The angular distribution carries the forward-beaming factor $\kappa^{-6}$, which concentrates the radiation into a cone of half-angle of order $1/\gamma$ at high speed. The radiation-reaction force $K_{\mathrm{rad}\,\mu}$ is orthogonal to the worldline, though the standard pathologies of the point-charge self-force remain. An external derivation of the Lorentz–Dirac equation from Maxwell's theory — in a Colombeau algebra of nonlinear generalized functions, with the biquaternion representation supplying the closed-form integrations — gives the rigorous balance between the radiated energy–momentum rate and the self-interaction force and identifies the correct point-charge self-energy as a $\delta^2$ integral rather than the Coulomb one.
 
 The construction is explicit enough that the two downstream exercises are direct applications: R4 is the case $d\vec\beta/dt'_r = 0$, and E1 is the general case.
 
@@ -585,7 +585,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\theta, \phi$ | Polar angle from $\vec\beta$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |
 | $ϙ, m$ | Charge and mass of the radiating particle |
-| $K^\mu_{\mathrm{rad}}$ | Radiation-reaction four-force, $K^\mu_{\mathrm{rad}}u_\mu = 0$, the counterpart of the Lorentz four-force $K^\mu$ |
+| $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_{\mu,\nu}\eta_{\mu\nu}K_{\mathrm{rad}\,\mu}u_\nu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |
 | $P(\Sigma)$, $\mathcal{Q}$ | Radiated energy–momentum rate and self-interaction force (Gsponer), $\left(dP/dt'_r\right)(\Sigma) = -\mathcal{Q}$ |
 | $C^{[0]}, C^{[1]}$ | Colombeau moments of the mollifier; the worldline condition fixes $C^{[1]} = 1$ |
 

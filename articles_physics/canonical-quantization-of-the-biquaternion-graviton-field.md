@@ -30,17 +30,17 @@ The article is organized as follows. The linearized field and its gauge symmetry
 The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, the action is
 
 $$
-S = \frac12\int d^4x\left(\partial/\partial Q_\mu h_{\nu\rho}\partial^\mu h^{\nu\rho}
--2\partial/\partial Q_\mu h^{\mu\nu}\partial^\rho h_{\nu\rho}
-+2\partial/\partial Q_\mu h^{\mu\nu}\partial/\partial Q_\nu h
--\partial/\partial Q_\mu h\partial^\mu h\right),
+S = \frac12\int d^4x\left(\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\nu\rho}\partial/\partial Q_\mu h_{\nu\rho}
+-2\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\mu\nu}\partial/\partial Q_\rho h_{\nu\rho}
++2\sum_{\mu,\nu}\partial/\partial Q_\mu h_{\mu\nu}\partial/\partial Q_\nu h
+-\sum_\mu\partial/\partial Q_\mu h\,\partial/\partial Q_\mu h\right),
 $$
 
-with $h=\eta^{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
+with $h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
 
 $$
-\Box h_{\mu\nu}-2\partial/\partial Q_{(\mu}\,\partial^\rho h_{\nu)\rho}+\partial/\partial Q_\mu\,\partial/\partial Q_\nu h
--\eta_{\mu\nu}\left(\Box h-\partial^\rho\partial^\sigma h_{\rho\sigma}\right)
+\Box h_{\mu\nu}-2\sum_\rho\partial/\partial Q_{(\mu}\,\partial/\partial Q_\rho h_{\nu)\rho}+\partial/\partial Q_\mu\,\partial/\partial Q_\nu h
+-\eta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial_\rho\partial_\sigma h_{\rho\sigma}\right)
 = -\kappa^2\,T_{\mu\nu} .
 $$
 
@@ -61,11 +61,11 @@ R_{\mu\nu\rho\sigma} = \tfrac12\left(\partial/\partial Q_\nu\,\partial/\partial 
 -\partial/\partial Q_\nu\,\partial/\partial Q_\sigma h_{\mu\rho}-\partial/\partial Q_\mu\,\partial/\partial Q_\rho h_{\nu\sigma}\right),
 $$
 
-which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\partial^\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
+which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
 ### The Gauge Symmetry as Coordinate Freedom
 
-The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\xi_\mu$ is the infinitesimal displacement of a coordinate transformation, $x^\mu\mapsto x^\mu+\xi^\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
+The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\xi_\mu$ is the infinitesimal displacement of a coordinate transformation, $x_\mu\mapsto x_\mu+\xi_\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
 
 The framework's interpretation is that the gauge parameter is a **material vector**: the coordinate displacement lies in the same representation as the field's indices, and the transformation is the symmetric gradient of that vector. This is the structural difference from the vector field's gauge symmetry, whose parameter is a scalar function, and from the non-abelian case, whose parameter is a Lie-algebra element; for the graviton the parameter and the field live in the same material representation, which is why the gauge structure is the one of diffeomorphisms rather than of an internal group. What the framework does not supply is the interpretation: that the redundancy is coordinate freedom, and that it is the equivalence principle, are imported statements about gravity, not algebraic consequences.
 
@@ -170,7 +170,7 @@ The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each app
 
 ### The Non-Transverse States and the Gauge Fixing
 
-Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\partial^\mu\bar{h}_{\mu\nu}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
+Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
 
 ### The Constraints and the Canonical Structure
 
@@ -270,10 +270,10 @@ The framework's statement about the graviton is therefore the same as its statem
 | Symbol | Meaning |
 |---|---|
 | $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
-| $h=\eta^{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ | Trace and trace-reversed field |
+| $h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ | Trace and trace-reversed field |
 | $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ | Linearized gauge symmetry |
 | $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
-| $\partial^\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
+| $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
 | $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse metric |
 | $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |

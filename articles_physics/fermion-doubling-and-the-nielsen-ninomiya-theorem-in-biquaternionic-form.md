@@ -47,16 +47,16 @@ which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a singl
 The lattice propagator following from this action is
 
 $$
-\boxed{\;S(p) = \frac{m - i\,a^{-1}\sum_\mu\gamma_\mu\sin(p^\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p^\mu a)}\;}.
+\boxed{\;S(p) = \frac{m - i\,a^{-1}\sum_\mu\gamma_\mu\sin(p_\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p_\mu a)}\;}.
 $$
 
-The kinetic denominator vanishes at $m=0$ when $\sin(p^\mu a) = 0$ for every $\mu$, that is, at the points
+The kinetic denominator vanishes at $m=0$ when $\sin(p_\mu a) = 0$ for every $\mu$, that is, at the points
 
 $$
-\boxed{\;ap^\mu = \pi_A^\mu\;},
+\boxed{\;a p_\mu = \pi_{A\mu}\;},
 $$
 
-where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expected pole near the origin, and there are **fifteen additional poles** at the corners of the Brillouin zone. For $m\ne0$ the mass shifts the poles off the real zone, but the same sixteen species appear in the dispersion relation below. Each is a distinct fermion species. The mechanism is the $\sin(p^\mu a)$ symbol: unlike the bosonic case, where the symbol is built from $\sin(p^\mu a/2)$ and has a single zero per period, $\sin(p^\mu a)$ has two zeros over $p^\mu\in[-\pi/a,\pi/a]$.
+where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expected pole near the origin, and there are **fifteen additional poles** at the corners of the Brillouin zone. For $m\ne0$ the mass shifts the poles off the real zone, but the same sixteen species appear in the dispersion relation below. Each is a distinct fermion species. The mechanism is the $\sin(p_\mu a)$ symbol: unlike the bosonic case, where the symbol is built from $\sin(p_\mu a/2)$ and has a single zero per period, $\sin(p_\mu a)$ has two zeros over $p_\mu\in[-\pi/a,\pi/a]$.
 
 The doubling also shows in the dispersion relation: inverting the Wick rotation at the pole gives
 
@@ -64,7 +64,7 @@ $$
 \sinh\omega(\vec p) = \sqrt{m^2 + \sum_{j=1}^3\sin^2 p_j},
 $$
 
-whose minima sit at the zeros of the spatial sine — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless inverse propagator is proportional to $\gamma_\mu p^\mu$, an **odd** function of $p$; an inverse propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
+whose minima sit at the zeros of the spatial sine — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless inverse propagator is proportional to $\gamma_\mu p_\mu$, an **odd** function of $p$; an inverse propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
 
 ### The taste-exchange symmetry
 
@@ -116,13 +116,13 @@ The theorems that survive all of this are the ones with experimental consequence
 
 ### Discretizing the biquaternion gradient
 
-The framework's gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p^\mu a)/a$ in each direction, and the biquaternion gradient acquires the symbol
+The framework's gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and the biquaternion gradient acquires the symbol
 
 $$
-\boxed{\;\tilde\nabla \;\longrightarrow\; e_\mu\,\frac{i\sin(p^\mu a)}{a}\;},
+\boxed{\;\tilde\nabla \;\longrightarrow\; e_\mu\,\frac{i\sin(p_\mu a)}{a}\;},
 $$
 
-acting on plane waves on the lattice. The denominator of the lattice propagator is then built from $\sum_\mu\sin^2(p^\mu a)$, which has the sixteen zeros identified above.
+acting on plane waves on the lattice. The denominator of the lattice propagator is then built from $\sum_\mu\sin^2(p_\mu a)$, which has the sixteen zeros identified above.
 
 ### The doubling is a property of the difference operator, not of the algebra
 
@@ -156,7 +156,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## Summary
 
-Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p^\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu = i\gamma_5\gamma_\nu$, and are physically indistinguishable, so an interacting lattice theory cannot ignore them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — violates one hypothesis of the theorem.
+Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu = i\gamma_5\gamma_\nu$, and are physically indistinguishable, so an interacting lattice theory cannot ignore them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — violates one hypothesis of the theorem.
 
 The biquaternion framework does not evade the obstruction. The doubling argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol, all of which the discretized biquaternion gradient shares; the algebra is not a lattice and supplies no alternative difference operator. The one positive structural point is that the framework's multivector field places its natural discretization with the **Dirac–Kähler** equation, whose simplicial form is the **staggered fermion** formulation — a mitigation, not a solution. Two index-theoretic facts reach the framework as companions: the anomalous half-integer quantum Hall effect of graphene and the harmonic-form zero modes of the Dirac–Kähler operator.
 

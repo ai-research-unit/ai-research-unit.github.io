@@ -20,7 +20,7 @@ $$
 e_t \mapsto I_2, \qquad \vec e_\mu \mapsto -i\sigma_\mu, \qquad i \mapsto i I_2,
 $$
 
-so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma_{\mathrm{alt}}^\mu = i\gamma_\mu$ of the paragraph below,
+so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma_{\mathrm{alt}\,\mu} = i\gamma_\mu$ of the paragraph below,
 
 $$
 \gamma_0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}, \qquad
@@ -39,12 +39,12 @@ The two metric symbols used in this article must not be interchanged. The Cliffo
 
 $$
 -\gamma_\mu\gamma_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu
-= -g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
-= \eta^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
+= -\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
+= \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 = \Box,
 $$
 
-so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the contraction of a four-momentum $p^\mu = (E,\vec p)$ is $\gamma_\mu p_\mu = \gamma_0 E - \boldsymbol{\gamma}\cdot\vec p$, since $p_\mu = (E,-\vec p)$ in this signature. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}}^\mu = i\gamma_\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\gamma_{\mathrm{alt}}^\mu\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
+so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the contraction of a four-momentum, with components $p_\mu = (E,-\vec p)$, is $\gamma_\mu p_\mu = \gamma_0 E - \boldsymbol{\gamma}\cdot\vec p$. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}\,\mu} = i\gamma_\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\sum_\mu\gamma_{\mathrm{alt}\,\mu}\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
 
 ## The Dirac field and its two bases
 
@@ -205,7 +205,7 @@ These are the algebraic statement that the four solutions at fixed momentum form
 The **conserved current** of the Dirac field is
 
 $$
-j^\mu = \bar{\psi}\gamma_\mu\psi, \qquad \partial/\partial Q_\mu j^\mu = 0,
+j_\mu = \bar{\psi}\gamma_\mu\psi, \qquad \sum_\mu\partial/\partial Q_\mu j_\mu = 0,
 $$
 
 with $j^0 = \psi^\dagger\psi \ge 0$ and real spatial components. In the series' notation, the current is the four-vector biquaternion
@@ -228,7 +228,7 @@ From a spinor and its adjoint one forms the standard bilinears, classified by th
 | $i\,\bar{\psi}\gamma_5\psi$ | pseudoscalar |
 | $\bar{\psi}\gamma_\mu\psi$ | four-vector |
 | $\bar{\psi}\gamma_\mu\gamma_5\psi$ | axial four-vector (pseudovector) |
-| $\bar{\psi}\sigma^{\mu\nu}\psi$, $\ \sigma^{\mu\nu} = \tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | antisymmetric rank-two tensor |
+| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | antisymmetric rank-two tensor |
 
 The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\gamma_5\psi$ is purely imaginary and $i\bar{\psi}\gamma_5\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
 
@@ -282,16 +282,16 @@ which is exactly the idempotent $\tilde\Pi_1(\vec u)$ of the informational secto
 The vector bilinear admits the standard Gordon decomposition,
 
 $$
-\bar{w}(p_2)\gamma_\mu w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)^\mu}{2m} + \frac{i\sigma^{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
+\bar{w}(p_2)\gamma_\mu w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)_\mu}{2m} + \frac{i\sum_\nu\sigma_{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
 $$
 
-which splits the current into a **convection** part, proportional to $(p+p_2)^\mu$, and a **spin** part, proportional to the momentum transfer $(p_2-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma^{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
+which splits the current into a **convection** part, proportional to $(p+p_2)_\mu$, and a **spin** part, proportional to the momentum transfer $(p_2-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma_{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
 
 ## The non-relativistic limit
 
 ### Removing the rest energy
 
-The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \gamma_0 = \mathrm{diag}(I_2,-I_2)$ and the spinor splits into an upper ("large") and a lower ("small") two-component part. Coupling to the electromagnetic four-potential $A^\mu = (\Phi,\vec A)$ is by the minimal coupling $D_\mu = \partial/\partial Q_\mu + iqA_\mu$ for a field of charge $ϙ$ (so $A_\mu = (\Phi,-\vec A)$), which is equivalent to
+The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \gamma_0 = \mathrm{diag}(I_2,-I_2)$ and the spinor splits into an upper ("large") and a lower ("small") two-component part. Coupling to the electromagnetic four-potential, with components $A_\mu = (\Phi,-\vec A)$, is by the minimal coupling $D_\mu = \partial/\partial Q_\mu + iqA_\mu$ for a field of charge $ϙ$, which is equivalent to
 
 $$
 p \;\longrightarrow\; p - ϙ\vec A, \qquad i\partial/\partial t' \;\longrightarrow\; i\partial/\partial t' - ϙ\Phi
@@ -419,7 +419,7 @@ $$
 i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L\;},
 $$
 
-or, in covariant form, $\sigma^\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\bar{\sigma}^\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma^\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}^\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
+or, in covariant form, $\sum_\mu\sigma_\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\sum_\mu\bar{\sigma}_\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma_\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}_\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
 
 $$
 P_L = \tfrac{1}{2}(1 - \gamma_5), \qquad P_R = \tfrac{1}{2}(1 + \gamma_5)
@@ -462,8 +462,8 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\bar{\psi} = \psi^\dagger\gamma_0$ | Dirac adjoint |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
-| $p^\mu = (E,\vec p)$, $\gamma_\mu p_\mu = \gamma_0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and its contraction |
-| $j^\mu = \bar{\psi}\gamma_\mu\psi$ | Conserved Dirac current |
+| $p_\mu = (E,-\vec p)$, $\gamma_\mu p_\mu = \gamma_0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and its contraction |
+| $j_\mu = \bar{\psi}\gamma_\mu\psi$ | Conserved Dirac current |
 | $\tilde{J} = ic\,j^0e_t + \vec j \in \mathbb{M}_-$ | Current as a material-sector biquaternion |
 | $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_t + i\vec u)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |
 | $ϙ$ | Charge of the field under minimal coupling |

@@ -30,7 +30,7 @@ The continuum object,
 $$
 Z=\int\mathcal{D}\mathcal{A}\;\exp(iS_{\mathrm{YM}}[\mathcal{A}]),
 \qquad
-S_{\mathrm{YM}}=-\tfrac12\int d^4x\,\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right),
+S_{\mathrm{YM}}=-\tfrac12\int d^4x\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 $$
 is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathcal{A}$ denotes a limit of products of finitely many ordinary integrals, and the limit is not known to exist without a regulator; the perturbative expansion assumes that a regulator has been chosen and that the counterterms remove its dependence. Three properties are needed of the regulator: it must make the measure finite, it must preserve the gauge invariance of the action, and it must admit a limit in which the regulator dependence is absorbed into the parameters of the theory.
 
@@ -100,18 +100,18 @@ $$
 with $\beta$ the lattice coupling. It is gauge invariant because the trace of each plaquette is; it is real and bounded below because the trace lies in $[-2,2]$; and its small-$a$ limit is the Yang–Mills action. To fix $\beta$ one expands the trace. Using $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+\ldots)$ and the vanishing of the matrix trace of the curvature,
 $$
 \frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}
-=1-\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right)+O(a^6),
+=1-\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
 $$
 so that
 $$
 1-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}
-=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right)+O(a^6).
+=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6).
 $$
-The numerical check of the previous paragraph confirmed the coefficient: for a constant non-abelian field the ratio of the measured trace deficit to $\frac{a^4\kappa^2}{2N}\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ was $1$ to better than one part in $10^{3}$ at $a=2\times10^{-3}$. Multiplying by $\beta$ and summing over $\mu<\nu$, the lattice action reproduces
+The numerical check of the previous paragraph confirmed the coefficient: for a constant non-abelian field the ratio of the measured trace deficit to $\frac{a^4\kappa^2}{2N}\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ was $1$ to better than one part in $10^{3}$ at $a=2\times10^{-3}$. Multiplying by $\beta$ and summing over $\mu<\nu$, the lattice action reproduces
 $$
-S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4x\,\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right)
+S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4x\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 $$
-with the standard identification of the sum over $\mu<\nu$ with half the double sum. Matching to the Euclidean Yang–Mills density $+\frac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ — in this normalization $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})=\tfrac12F^a_{\mu\nu}F^a_{\mu\nu}$, so this is the standard $\tfrac14F^a_{\mu\nu}F^a_{\mu\nu}$ — fixes
+with the standard identification of the sum over $\mu<\nu$ with half the double sum. Matching to the Euclidean Yang–Mills density $+\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ — in this normalization $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=\tfrac12F^a_{\mu\nu}F^a_{\mu\nu}$, so this is the standard $\tfrac14F^a_{\mu\nu}F^a_{\mu\nu}$ — fixes
 $$
 \beta=\frac{2N}{\kappa^2}=\frac{4}{\kappa^2}
 \qquad (N=2),
@@ -246,9 +246,9 @@ $$
 $$
 The Wilson action $S_W=\beta\sum(1-\frac1N\mathrm{ReTr}\tilde U_{\mu\nu})$ has the small-$a$ expansion
 $$
-1-\frac1N\mathrm{ReTr}\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right)+O(a^6),
+1-\frac1N\mathrm{ReTr}\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
 $$
-so that with $\beta=2N/\kappa^2=4/\kappa^2$ it reduces to the Euclidean Yang–Mills density $\frac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$; both the plaquette identity and the normalization were checked numerically on a constant non-abelian field. The path integral is the finite product of normalized Haar measures on the unit quaternions,
+so that with $\beta=2N/\kappa^2=4/\kappa^2$ it reduces to the Euclidean Yang–Mills density $\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$; both the plaquette identity and the normalization were checked numerically on a constant non-abelian field. The path integral is the finite product of normalized Haar measures on the unit quaternions,
 $$
 Z=\int\prod_{n,\mu}dU_\mu(n)\;\exp(-S_W[\tilde U]),
 \qquad

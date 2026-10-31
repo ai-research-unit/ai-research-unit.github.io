@@ -85,7 +85,7 @@ The instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent
 
 $$
 \mathrm{Tr}\!\left(\tilde\Pi\,\partial_\mu\tilde\Pi\right) = 0
-\qquad\text{for every parameter } \lambda^\mu .
+\qquad\text{for every parameter } \lambda_\mu .
 $$
 
 **Proof.** Since $\tilde\Pi^2 = \tilde\Pi$, differentiating gives $\partial_\mu\tilde\Pi = (\partial_\mu\tilde\Pi)\tilde\Pi + \tilde\Pi(\partial_\mu\tilde\Pi)$. Taking the trace and using cyclicity of the trace on $\mathbb{B} \cong M_2(\mathbb{C})$,
@@ -124,7 +124,7 @@ $$
 \boxed{\;
 \mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\psi^\dagger\,\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)}
 \;}
-\qquad\text{with}\qquad \partial_\mu = \frac{\partial}{\partial R^\mu}.
+\qquad\text{with}\qquad \partial_\mu = \frac{\partial}{\partial R_\mu}.
 $$
 
 This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\psi|\partial_\mu\psi\rangle$ divided by $\langle\psi|\psi\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two interpretations of one bilinear form on the state module.
@@ -182,9 +182,9 @@ The two connections share their structure group, their transformation law, and t
 The transformation law has an immediate consequence for the holonomy. For a closed loop $\mathcal{C}$,
 
 $$
-\gamma = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu
+\gamma = \oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu
 \;\longmapsto\;
-\gamma - \oint_{\mathcal{C}}\partial_\mu\alpha\,dR^\mu
+\gamma - \oint_{\mathcal{C}}\sum_\mu\partial_\mu\alpha\,dR_\mu
 = \gamma - \oint_{\mathcal{C}} d\alpha .
 $$
 
@@ -209,7 +209,7 @@ This is the same abelian curvature $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\
 **The two routes to the phase.** For a closed loop $\mathcal{C} = \partial\mathcal{S}$ bounding a surface $\mathcal{S}$ on which the connection is smooth, Stokes' theorem gives
 
 $$
-\oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_{\mathcal{S}}\mathcal{F}_{\mu\nu}\,dS^{\mu\nu} .
+\oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu = \int_{\mathcal{S}}\sum_{\mu,\nu}\mathcal{F}_{\mu\nu}\,dS_{\mu\nu} .
 $$
 
 The left-hand route integrates the connection; the right-hand route integrates the curvature. Both are used on the example below, and their agreement is what the phrase "the phase is the flux of the curvature" means. The smoothness qualification is not cosmetic: on the sphere the connection has a Dirac-string singularity in any single coordinate patch, and the surface must be chosen in a patch where the connection is regular. The next section exhibits this explicitly, because it is also the mechanism by which the $2\pi$ ambiguity of the previous section appears.
@@ -251,7 +251,7 @@ $$
 **Route 1: the line integral.** The loop is at fixed $\theta_0$, so
 
 $$
-\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\mathcal{A}_\mu\,dR^\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
+\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu = \int_0^{2\pi}\mathcal{A}_\phi\big|_{\theta_0}\,d\phi
 = -\frac{1-\cos\theta_0}{2}\cdot 2\pi
 = -\frac{\Omega}{2}\;}
 $$

@@ -28,7 +28,7 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ the volume element. These are the generators of the $\mathbb{M}_-$ frame, and the derivative in every gamma display below is $\partial/\partial x^\mu$ with $x^0=t'$. The $\mathbb{B}$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x^\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
+with $\gamma_5=i\omega$ and $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ the volume element. These are the generators of the $\mathbb{M}_-$ frame, and the derivative in every gamma display below is $\partial/\partial x_\mu$ with $x_0=t'$. The $\mathbb{B}$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
 
 The framework results used here are those of the companion articles:
 
@@ -63,12 +63,12 @@ $$
 where the phase is a real scalar function. The massless kinetic term is invariant,
 
 $$
-\bar{\psi}_2\,i\gamma_\mu\partial/\partial x^\mu\,\psi_2
-=\bar{\psi}\,\exp(i\alpha\gamma_5)\,i\gamma_\mu\partial/\partial x^\mu\,\exp(i\alpha\gamma_5)\psi
-=\bar{\psi}\,i\gamma_\mu\partial/\partial x^\mu\,\psi + \text{(a derivative of }\alpha\text{)},
+\bar{\psi}_2\,i\sum_\mu\gamma_\mu\partial/\partial x_\mu\,\psi_2
+=\bar{\psi}\,\exp(i\alpha\gamma_5)\,i\sum_\mu\gamma_\mu\partial/\partial x_\mu\,\exp(i\alpha\gamma_5)\psi
+=\bar{\psi}\,i\sum_\mu\gamma_\mu\partial/\partial x_\mu\,\psi + \text{(a derivative of }\alpha\text{)},
 $$
 
-because $\{\gamma_5,\gamma_\mu\}=0$ twice cancels the two phase factors in the bilinear. Under the *local* rotation the derivative term produces a term proportional to $\partial/\partial x^\mu\,\alpha$, which is the current; under the *global* rotation it produces nothing. A mass term is not invariant, $\bar{\psi}_2m\psi_2=\bar{\psi}m \exp(2i\alpha\gamma_5)\psi$, which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
+because $\{\gamma_5,\gamma_\mu\}=0$ twice cancels the two phase factors in the bilinear. Under the *local* rotation the derivative term produces a term proportional to $\partial/\partial x_\mu\,\alpha$, which is the current; under the *global* rotation it produces nothing. A mass term is not invariant, $\bar{\psi}_2m\psi_2=\bar{\psi}m \exp(2i\alpha\gamma_5)\psi$, which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
 
 **The classical Ward identity, and the question.** Classically, the invariance of the massless action under the local rotation gives the conservation of the axial current, $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=0$. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
@@ -106,11 +106,11 @@ $$
 (\gamma_\mu D_\mu)^2 = D^2 + \tfrac12\gamma_\mu\gamma_\nu[D_\mu,D_\nu]
 $$
 
-(with the symmetrised form used below) fix the expansion. Using $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$, and $[D_\mu,D_\nu]=iϙF_{\mu\nu}$,
+(with the symmetrised form used below) fix the expansion. Using $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$ with $\sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$, and $[D_\mu,D_\nu]=iϙF_{\mu\nu}$,
 
 $$
-(\gamma_\mu D_\mu)^2 = D^2 + \tfrac12\big(g_{\mu\nu}-i\sigma^{\mu\nu}\big)(iϙF_{\mu\nu})
-= D^2 + \tfrac{ϙ}{2}\,\sigma^{\mu\nu}F_{\mu\nu},
+(\gamma_\mu D_\mu)^2 = D^2 + \tfrac12\sum_{\mu,\nu}\big(g_{\mu\nu}-i\sigma_{\mu\nu}\big)(iϙF_{\mu\nu})
+= D^2 + \tfrac{ϙ}{2}\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu},
 $$
 
 the term in the field strength surviving because $F_{\mu\nu}$ is antisymmetric. The heat kernel of $D^2$ in four dimensions has the standard Seeley–DeWitt expansion; the diagonal trace of $\exp(-\mathcal{H}/M^2)$ produces, order by order, the coefficients of that expansion. The term that survives the trace with $\gamma_5$ is the one carrying four gamma matrices, and it is evaluated by the identity of the next paragraph. The overall normalisation $1/16\pi^2$ comes from the four-dimensional Gaussian and the two powers of the field strength, and its value is Fujikawa's; the article quotes it from the standard references rather than re-deriving it, since the derivation is the standard heat-kernel computation and is not special to the biquaternion algebra. What the framework fixes is the trace, and the trace is what makes the density a pseudoscalar built from the field strength.
@@ -136,7 +136,7 @@ $$
 and the measure is not invariant. The coefficient is Fujikawa's, and it agrees with the Adler–Bell–Jackiw value computed from the triangle in the companion article on anomalies; the agreement is not an accident but the statement that the two derivations compute the same trace. Reinstating the mass term, the axial divergence is
 
 $$
-\partial/\partial x^\mu j_5^\mu = 2im\,\bar{\psi}\gamma_5\psi + A(x)
+\sum_\mu\partial/\partial x_\mu j_{5\mu} = 2im\,\bar{\psi}\gamma_5\psi + A(x)
 = 2im\,\bar{\psi}\gamma_5\psi + \frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
@@ -187,7 +187,7 @@ $$
 = \frac{M^4}{16\pi^2},
 $$
 
-using $\int d^4p\,\exp(-p^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4=16\pi^4$. The Gaussian supplies $1/16\pi^2$ and two inverse powers of $M^2$, which are exactly what the two field-strength factors in the $(\sigma^{\mu\nu}F_{\mu\nu})^2$ term need to leave a finite result. The same Gaussian appears in the Seeley–DeWitt expansion of the curved and gauge-covariant Laplacian, where the coefficient is the $a_2$ Seeley–DeWitt term; the anomaly uses only the field-strength part of that term, since the curvature part carries no $\gamma_5$ trace.
+using $\int d^4p\,\exp(-p^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4=16\pi^4$. The Gaussian supplies $1/16\pi^2$ and two inverse powers of $M^2$, which are exactly what the two field-strength factors in the $(\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu})^2$ term need to leave a finite result. The same Gaussian appears in the Seeley–DeWitt expansion of the curved and gauge-covariant Laplacian, where the coefficient is the $a_2$ Seeley–DeWitt term; the anomaly uses only the field-strength part of that term, since the curvature part carries no $\gamma_5$ trace.
 
 ## The Integrated Form and the Index
 
@@ -214,9 +214,9 @@ so the axial charge transported in a background is twice the index. The index is
 
 **The rotation is the axial symmetry of the linear chiral pair.** The rotation $\psi\mapsto \exp(i\alpha\gamma_5)\psi$ rotates the left-handed module $S$ and its conjugate $\bar{S}$ in opposite directions. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and classical-in-the-vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
 
-**The phase $\alpha(x)$ is a central scalar.** The rotation parameter is a real scalar function of position, hence a central element of the algebra times a function; it is the same kind of object as the gauge function $\Gamma$ of the abelian gauge principle. The rotation therefore acts by left multiplication by a central element, which is the algebra's reason that it commutes with the covariant derivative up to the derivative term. The current $j_5^\mu$ that the variation produces is the axial bilinear, and the anomaly is the failure of the centrally-generated *axial* rotation to preserve the measure — in sharp contrast with the centrally-generated *vector* rotation, which *is* a symmetry of the measure because it is vector-like.
+**The phase $\alpha(x)$ is a central scalar.** The rotation parameter is a real scalar function of position, hence a central element of the algebra times a function; it is the same kind of object as the gauge function $\Gamma$ of the abelian gauge principle. The rotation therefore acts by left multiplication by a central element, which is the algebra's reason that it commutes with the covariant derivative up to the derivative term. The current $j_{5\mu}$ that the variation produces is the axial bilinear, and the anomaly is the failure of the centrally-generated *axial* rotation to preserve the measure — in sharp contrast with the centrally-generated *vector* rotation, which *is* a symmetry of the measure because it is vector-like.
 
-**The sector placement of the operator.** In the algebro-Clifford dictionary the volume element $\omega$ is the image of the central imaginary, and the EDM-type insertion $\sigma^{\mu\nu}\gamma_5$ is anti-Hermitian and sits in the material sector $\mathbb{M}_-$ (the companion article on the electric dipole moment develops this). The anomaly insertion is $\gamma_5$ itself rather than $\sigma^{\mu\nu}\gamma_5$; it is Hermitian, and its trace against the heat kernel is what the regulator computes. The two insertions are different objects and their sector placements differ; the article states the anomaly's and does not conflate it with the EDM's.
+**The sector placement of the operator.** In the algebro-Clifford dictionary the volume element $\omega$ is the image of the central imaginary, and the EDM-type insertion $\sigma_{\mu\nu}\gamma_5$ is anti-Hermitian and sits in the material sector $\mathbb{M}_-$ (the companion article on the electric dipole moment develops this). The anomaly insertion is $\gamma_5$ itself rather than $\sigma_{\mu\nu}\gamma_5$; it is Hermitian, and its trace against the heat kernel is what the regulator computes. The two insertions are different objects and their sector placements differ; the article states the anomaly's and does not conflate it with the EDM's.
 
 **The operator whose determinant is taken.** The Dirac operator $i\gamma_\mu D_\mu$ is the module representative of the framework's covariant biquaternion derivative on the massive sector. Its determinant is the object the measure produces, and its zero modes carry the index. What the framework does not supply is the measure itself — the space of fields, the Grassmann integration, and the determinant's definition. Those are the functional-integral apparatus, constructed in the companion articles on the path integral and on the functional integral, and imported here.
 
@@ -226,7 +226,7 @@ so the axial charge transported in a background is twice the index. The index is
 |---|---|
 | The chirality insertion $\gamma_5=i\omega$ as the volume element | **Supplied** by the Clifford isomorphism |
 | The trace identity $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
-| The heat-kernel splitting $(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sigma^{\mu\nu}F_{\mu\nu}$ | **Supplied** from the Clifford relations |
+| The heat-kernel splitting $(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu}$ | **Supplied** from the Clifford relations |
 | The anomaly density as the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied**; the coefficient is standard |
 | The Dirac operator whose determinant is the measure's Jacobian | **Supplied**: the module representative of the linear chiral pair |
 | The functional measure $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ and the determinant | **Not supplied**; the general path-integral and functional-integral apparatus, cited |
@@ -268,7 +268,7 @@ The biquaternion content is threefold: the chirality insertion is the volume ele
 | $\gamma_5=\mathrm{diag}(-I_2,I_2)=i\omega$ | Chirality operator as volume element |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Clifford volume element |
 | $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | The regulator trace |
-| $\mathcal{H}=(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sigma^{\mu\nu}F_{\mu\nu}$ | Regulator operator (Euclidean) |
+| $\mathcal{H}=(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu}$ | Regulator operator (Euclidean) |
 | $A(x)=\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa) |
 | $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ | Fermion measure of the functional integral |
 | $U=\exp(i\alpha(x)\gamma_5)$ | Chiral rotation; $\alpha$ a central scalar function |

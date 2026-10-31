@@ -38,7 +38,7 @@ $$
 
 In the $x$ coordinates $x^0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
 $$
-\Box=-g^{\mu\nu}\partial_\mu\partial_\nu
+\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
@@ -97,7 +97,7 @@ $$
 
 Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its covector is $k_\mu=g_{\mu\nu}k^\nu=(\omega/c,-\vec k)$. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
@@ -106,7 +106,7 @@ In the $x$ coordinates the four-wavevector is $k^\mu=(\omega/c,\vec k)$ and its 
 Let
 
 $$
-D=i\gamma_\mu\frac{\partial}{\partial x^\mu}+B=i\gamma_0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma_k\frac{\partial}{\partial x^k}+B,
+D=i\gamma_\mu\frac{\partial}{\partial x_\mu}+B=i\gamma_0\frac{1}{c}\frac{\partial}{\partial t'}+i\gamma_k\frac{\partial}{\partial x_k}+B,
 \qquad
 \gamma_\mu,B\in M_n(\mathbb{C})\ \text{constant}.
 $$
@@ -119,8 +119,8 @@ Because the partial derivatives commute, the quadratic term symmetrizes:
 
 $$
 D^2
-=-g^{\mu\nu}\frac{\partial^2}{\partial x^\mu\partial x^\nu}
-+i\{\gamma_\mu,B\}\frac{\partial}{\partial x^\mu}
+=-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
++i\{\gamma_\mu,B\}\frac{\partial}{\partial x_\mu}
 +B^2 .
 $$
 
@@ -275,7 +275,7 @@ So the single-square roots are
 $$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5,
 \qquad
-\mathsf D=i\gamma_\mu\frac{\partial}{\partial x^\mu},
+\mathsf D=i\gamma_\mu\frac{\partial}{\partial x_\mu},
 \qquad
 \mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I .
 $$
@@ -430,10 +430,10 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $Q_\mu$ | Algebra coordinates, $Q_t=ict'$ on $\mathbb{M}_-$ |
-| $x^\mu$ | Lorentz coordinates, $x^0=ct'$, $x^k$ spatial |
+| $x_\mu$ | Lorentz coordinates, $x_0=ct'$, $x_k$ spatial |
 | $g_{\mu\nu}$ | Lorentz metric, $\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-g^{\mu\nu}\partial_\mu\partial_\nu$ | d'Alembertian, series convention and Lorentz form |
+| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu$ | d'Alembertian, series convention and Lorentz form |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $\mu=mc/\hbar$ | Mass parameter (inverse reduced Compton wavelength) |
 | $\tilde P=iE/c\,e_t+\vec p$ | Material four-momentum |
@@ -442,8 +442,8 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
 | $\gamma_\mu$ | Generators of the root, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I$ |
 | $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ | Pseudoscalar generator, $-iT_{e_t,e_z}=\rho(\chi)$ |
-| $\mathsf D=i\gamma_\mu\partial/\partial x^\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
-| $\gamma_\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k^\mu=(\omega/c,\vec k)$ |
+| $\mathsf D=i\gamma_\mu\partial/\partial x_\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
+| $\gamma_\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
 | $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5$ | Single-square roots |
 | $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
 | $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |

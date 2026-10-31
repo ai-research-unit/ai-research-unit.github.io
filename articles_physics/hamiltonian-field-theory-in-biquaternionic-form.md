@@ -174,12 +174,12 @@ the sum of the two sectors' kinetic, gradient and mass terms. Three features of 
 
 The formalism so far is the **instantaneous** one: it singles out a time direction, differentiates with respect to it, and conjugate to the field there is one momentum field. It is the formalism in which the equal-time brackets of the quantization article are written, and it is the one in which the constraint analysis of the gauge field can be performed at all. It is not, however, the only Hamiltonian formalism for a field, and its relation to the covariant one is worth stating here because the gauge fields' Hamiltonian structure lives on the other side.
 
-In the **covariant** formalism, all four derivatives of the field are treated on the same footing and conjugate to the field there is a *quadruple* of momenta, the **polymomentum** $p^\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_\mu\,\phi)$, one per direction of differentiation. The Legendre transform is performed on the quadruple, and the resulting **De Donder–Weyl Hamiltonian** is $H=p^\mu\partial/\partial Q_\mu\,\phi-\mathcal{L}$, a function of the field and the four momenta. For the scalar field the polymomentum is the gradient, $p^\mu=\partial^\mu\phi$, and the De Donder–Weyl Hamiltonian is $\frac12p^\mu p_\mu+\frac12\mu^2\phi^2$, so the covariant equations
+In the **covariant** formalism, all four derivatives of the field are treated on the same footing and conjugate to the field there is a *quadruple* of momenta, the **polymomentum** $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_\mu\,\phi)$, one per direction of differentiation. The Legendre transform is performed on the quadruple, and the resulting **De Donder–Weyl Hamiltonian** is $H=\sum_\mu p_\mu\partial/\partial Q_\mu\,\phi-\mathcal{L}$, a function of the field and the four momenta. For the scalar field the polymomentum is the gradient, $p_\mu=\partial/\partial Q_\mu\phi$, and the De Donder–Weyl Hamiltonian is $\frac12\sum_\mu p_\mu p_\mu+\frac12\mu^2\phi^2$, so the covariant equations
 
 $$
-\partial/\partial Q_\mu\,\phi=\frac{\partial H}{\partial p^\mu},
+\partial/\partial Q_\mu\,\phi=\frac{\partial H}{\partial p_\mu},
 \qquad
-\partial/\partial Q_\mu p^\mu=-\frac{\partial H}{\partial\phi}
+\sum_\mu\partial/\partial Q_\mu\,p_\mu=-\frac{\partial H}{\partial\phi}
 $$
 
 are the four-fold statement of the Klein–Gordon equation. Nothing is singled out and nothing is split, which is the formalism's virtue and its price: there is no unique pairing of the momenta with a single time, so there is **no covariant Poisson bracket**. The bracket of this article is the instantaneous one, and it exists because a time direction was chosen. The polymomentum formalism is the multisymplectic one; its geometry, its relation to the instantaneous formalism, and the theorem that its equations agree with the Euler–Lagrange equations for a hyperregular density belong to the mathematical corpus, in *Multisymplectic and Covariant Hamiltonian Field Theory*, and the present article only records the point of contact: the instantaneous Hamiltonian density is the time component of the conserved multimomentum current of the covariant formalism, $\mathcal{H}=J^0{}_0$, which is why the two descriptions agree on the energy.
@@ -222,8 +222,8 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |
 | $\vec S=-(\left(\partial\phi/\partial t'\right)^{\,*}\nabla\phi+\partial\phi/\partial t'\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*})$ | The energy flux; $\partial/\partial t'\mathcal{H}+\nabla\cdot\vec S=0$ |
 | $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
-| $p^\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_\mu\,\phi)=\partial^\mu\phi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
-| $H_{DW}=p^\mu\partial/\partial Q_\mu\,\phi-\mathcal{L}=\frac12p^\mu p_\mu+\frac12\mu^2\phi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
+| $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_\mu\,\phi)=\partial/\partial Q_\mu\phi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
+| $H_{DW}=\sum_\mu p_\mu\partial/\partial Q_\mu\,\phi-\mathcal{L}=\frac12\sum_\mu p_\mu p_\mu+\frac12\mu^2\phi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
