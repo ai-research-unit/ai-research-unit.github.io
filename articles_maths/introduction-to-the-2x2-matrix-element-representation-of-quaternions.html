@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions — Biquaternion Universe</title>
+  <title>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,10 +68,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="introduction-to-the-22-matrix-element-representation-math0-of-quaternions"><strong>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</strong></h1>
+        <h1 id="introduction-to-the-22-matrix-element-representation-math0-of-quaternions"><strong>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion algebra $\mathbb{H}$ is realized, as a real algebra, by a four-dimensional subspace of the $2\times2$ complex matrices: the map assigns to $e_t,\vec e_x,\vec e_y,\vec e_z$ four displayed matrices, extends by real linearity, and is multiplicative. This article presents the map, the trace and the determinant of the image, the images of the scalar and vector subspaces, the reason the image is a proper subspace of $M_2(\mathbb{C})$, and the form the conjugations take.</p>
-<p>The article is the first of the two matrix articles of the group; the companion is <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, below this article in this category, where the left regular representation realizes $\mathbb{H}$ inside the real matrices. This article owns the map, the multiplicativity, the trace, the determinant, the subspace conditions and the conjugation forms. The further development — the rank-one elements, the characteristic polynomial and the Cayley–Hamilton identity, the simple module and the matrix units — belongs to the blocks of <em>The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, below this article in this category.</p>
+<p>The article is the first of the two matrix articles of the group; the companion is <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions</em>, below this article in this category, where the left regular representation realizes $\mathbb{H}$ inside the real matrices. This article owns the map, the multiplicativity, the trace, the determinant, the subspace conditions and the conjugation forms. The further development — the rank-one elements, the characteristic polynomial and the Cayley–Hamilton identity, the simple module and the matrix units — belongs to the blocks of <em>The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$</em>, below this article in this category.</p>
 <h2 id="the-embedding">The Embedding</h2>
 <p><strong>Definition.</strong> The <strong>matrix realization</strong> of $\mathbb{H}$ is the map
 $$
@@ -128,7 +128,7 @@ $$ \boxed{\; \operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t, \qquad \det\mathsf{M}
 </table></div>
 <p>The trace separates the scalar line from the vector space and nothing else: $\operatorname{Tr}\mathsf{M}_2(\tilde q)=0$ exactly on $\mathrm{Vect}(\mathbb{H})$, and $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t$ is twice the scalar part. On the vector subspace the determinant is $q_x^2+q_y^2+q_z^2\ge0$, the Euclidean square; on the scalar line it is $s^2$. The image of the scalar line is the real scalar matrices, the intersection of the image with the centre of $M_2(\mathbb{C})$ being exactly those; the image of the vector space is the traceless part of the image, and the two images sum to the whole image.</p>
 <h2 id="the-image-is-not-all-of-math46">The Image Is Not All of $M_2(\mathbb{C})$</h2>
-<p><strong>Theorem.</strong> The image $\mathsf{M}_2(\mathbb{H})$ is a proper $\mathbb{R}$-subspace of $M_2(\mathbb{C})$: it has real dimension four, while $M_2(\mathbb{C})$ has complex dimension four and real dimension eight. It is the fixed space of the anti-linear involution
+<p><strong>Theorem.</strong> The image $\mathsf{M}_2(\mathbb{H})$, written $M_2(\mathbb{C})_{\mathbb{H}}$, is a proper $\mathbb{R}$-subspace of $M_2(\mathbb{C})$: it has real dimension four, while $M_2(\mathbb{C})$ has complex dimension four and real dimension eight. It is the fixed space of the anti-linear involution
 $$
 \sigma(M)=\epsilon\,\overline M\,\epsilon^{-1},\qquad \epsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
@@ -165,6 +165,10 @@ and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian,
 <td>the image, $z=q_t-iq_z$, $w=-q_y-iq_x$</td>
 </tr>
 <tr>
+<td>$M_2(\mathbb{C})_{\mathbb{H}}$</td>
+<td>the image $\mathsf{M}_2(\mathbb{H})$, a real subspace of dimension four</td>
+</tr>
+<tr>
 <td>$\sigma(M)=\epsilon\overline M\epsilon^{-1}$</td>
 <td>the anti-linear involution whose fixed space is the image</td>
 </tr>
@@ -185,8 +189,8 @@ and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian,
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="quaternion-algebra.html">Quaternion Algebra</a>, for the element and the multiplication table.</li>
-<li><a href="introduction-to-the-4x4-matrix-element-representation-of-quaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</a>, below this article in this category, for the left regular representation.</li>
-<li><a href="the-quaternion-algebra-in-the-2x2-matrix-element-representation.html">The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</a>, below this article in this category, for the rank-one elements and the further development.</li>
+<li><a href="introduction-to-the-4x4-matrix-element-representation-of-quaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions</a>, below this article in this category, for the left regular representation.</li>
+<li><a href="the-quaternion-algebra-in-the-2x2-matrix-element-representation.html">The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$</a>, below this article in this category, for the rank-one elements and the further development.</li>
 </ul>
       </div>
     </main>

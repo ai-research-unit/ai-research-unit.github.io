@@ -71,9 +71,9 @@
         <h1 id="the-upper-index-problem-what-is-left-what-was-lowered-and-the-cost-of-the-rest"><strong>The Upper-Index Problem: What Is Left, What Was Lowered, and the Cost of the Rest</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The corpus states one rule for indices in <em>Operator and Calculus Conventions</em>: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.</p>
-<p>The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 82 physics articles and twelve Part VI articles that still write at least one raised Greek spacetime index. The gamma indices are gone: no gamma with a raised index survives in either corpus.</p>
-<p>The remainder is not one problem. Three kinds occur, and they cost three different things to repair. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, and correct for the third.</p>
-<p>Twenty-two files were repaired while this article was written. Seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. They are listed in §<em>What Was Already Lowered</em>, and every count here is after that pass. Twenty more physics articles were migrated afterwards, by rewriting each display rather than relettering it; they are listed there too and are no longer in the inventory.</p>
+<p>The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 78 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,573 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §<em>Class E</em>. They are lowered like the rest, but their carriers differ and the repair has to name them.</p>
+<p>The remainder is not one problem. Four kinds occur, and they cost different things. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label; in the fourth it is a genuine upper index — a spinor index, a local frame index or an internal-symmetry index — which the spacetime rule does not reach and which must be left alone. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, correct for the third, and an error for the fourth.</p>
+<p>Fifty-four files have been repaired. Twenty-two were repaired while this article was written: seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. Thirty-two more were migrated afterwards, by rewriting each display rather than relettering it; they are listed in §<em>What Was Already Lowered</em> and are no longer in the inventory. Every count here is after both passes.</p>
 <p>The examples in this article quote the offending notation. They are the object of study, not the notation of the article.</p>
 <h2 id="the-screen">The Screen</h2>
 <p>The count is made on the mathematics regions only, the text between single or double dollars. A superscript counts when its content is one or more spacetime letters, $\mu$, $\nu$, $\rho$, $\lambda$ or $\kappa$, with nothing else, and it sits on a component symbol. It is a <strong>slot</strong> when a lower index follows it immediately. It is <strong>paired</strong> when the same letter appears as a lower index elsewhere in the same formula; in most entries the pairing is a contraction. It is <strong>plain</strong> otherwise. Superscripts on a closing delimiter and on $\exp$ are excluded, and so is the exponential $e^{\lambda}$ of the matrix articles, since these are powers.</p>
@@ -92,8 +92,8 @@
 <td>Physics</td>
 <td style="text-align: right;">402</td>
 <td style="text-align: right;">43,460</td>
-<td style="text-align: right;">2,049</td>
-<td style="text-align: right;">82</td>
+<td style="text-align: right;">1,573</td>
+<td style="text-align: right;">78</td>
 </tr>
 <tr>
 <td>Part VI mathematics</td>
@@ -113,7 +113,7 @@
 </ul>
 <p>The Part VI numbers show why the screen matters. Its 65,868 superscripts yield 102 tokens of index shape, and only 73 of those are genuine. The rest are Bessel orders, powers and parameter labels. A mechanical scan flags 25 Part VI articles; 13 are false.</p>
 <p>The last column of the inventory tables names the objects that carry the raised index, quoted in the form the article writes them, with the number of occurrences. At most four objects are shown; <code>+n more</code> counts the objects not shown.</p>
-<h2 id="the-three-kinds">The Three Kinds</h2>
+<h2 id="the-kinds">The Kinds</h2>
 <h3 id="class-a-the-superscript-is-a-slot">Class A — the superscript is a slot</h3>
 <p>The object carries two indices of different kinds, and position distinguishes them: $\Lambda^\mu{}_\nu$ for a Lorentz matrix, $T^\mu{}_\nu$ for a stress tensor with one contravariant and one covariant slot, $\Gamma^\mu{}_{\nu\rho}$ for a connection, $c^\lambda{}_{\mu\rho}$ for structure constants.</p>
 <p>Lowering both gives $\Lambda_{\mu\nu}$, and the information of which index is the row and which the column is gone. The corpus has no second slot marker, so the repair is not a relabel. It is a matrix display, a stated slot order, or the cell form $T_{ab}=L_aR_b$. This is the only class where the raised index carries structure that no lowered pair reproduces by itself.</p>
@@ -125,7 +125,7 @@ $$
 F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu},
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.</p>
-<p>Seventy-four physics articles and six Part VI articles are in this class. Between them they hold 1,802 occurrences, of which 1,207 in physics and 36 in mathematics are paired. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.</p>
+<p>Seventy-two physics articles and six Part VI articles are in this class. Between them they hold 1,305 paired occurrences, 1,269 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.</p>
 <h3 id="class-c-the-superscript-is-only-a-label">Class C — the superscript is only a label</h3>
 <p>A single component is named, with no partner and no slot: $x^\mu=(ct',\vec x)$, $p^\mu=(E,\vec p)$, $A^\nu$ alone in a definition, $u^\mu$ for a four-velocity. Nothing is lost by writing the index low, because no second occurrence depends on its height. The repair is local and safe.</p>
 <p>No physics article remains in this class: the fourteen that did are listed in §<em>What Was Already Lowered</em>. Three Part VI articles remain, with 6 occurrences, all tuple labels of the element representations, $Q_0$, $Q_1$ and $\tilde q_0$.</p>
@@ -156,7 +156,7 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td>a pairing</td>
 <td>wrong if a contraction</td>
 <td>explicit sum with $\varepsilon$, or the form</td>
-<td>74</td>
+<td>70</td>
 <td>6</td>
 </tr>
 <tr>
@@ -174,6 +174,90 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td>none</td>
 <td>excluded</td>
 <td>excluded</td>
+</tr>
+<tr>
+<td>E</td>
+<td>an index of another kind</td>
+<td>safe with a carrier</td>
+<td>bar, declared slot order, or plain label</td>
+<td>11 (58 occ.)</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="class-e-an-index-of-another-kind">Class E — an index of another kind</h3>
+<p>Some upper indices are not spacetime components. They are lowered too, because the rule admits no exception, and the information they carry is moved into a symbol that the lowering cannot erase.</p>
+<p><strong>Spinor indices.</strong> In Weyl notation the bar marks the conjugate representation: $\xi_\alpha$, $\bar\xi_{\bar\alpha}$. Lowering gives $\xi_\alpha$ and $\bar\xi_{\bar\alpha}$; the bar, not the height, carries the conjugation, and nothing is lost. Seven occurrences in three articles: <em>Charge Conjugation and the Division Ring</em>, <em>The Rarita–Schwinger Equation</em>, and <em>The Spinor Helicity Formalism</em>.</p>
+<p><strong>Frame indices.</strong> A tetrad carries a local-frame index and a world index, $h_{\alpha\mu}$. Lowering gives $h_{\alpha\mu}$, and the slot order — frame first, world second — is declared once at the definition. This is the Class A repair, not a relabel. Twenty-six occurrences, in <em>The Algebrodynamical Programme</em>: the tetrad $h_{\alpha\mu}$ itself and the two factors of $C_{\beta\mu\alpha}C_{\alpha\nu}$ in $g^*_{\mu\nu}$. The article already declares $\alpha=0,1,2,3$; that declaration is now the only carrier of the frame slot, so it must be exact.</p>
+<p><strong>Internal-symmetry indices.</strong> In the SU(3) article $\alpha,\beta$ label a basis of the algebra, $d_{\alpha\beta}H_{\alpha\beta}$. Lowered, the contraction is a plain sum. One occurrence.</p>
+<p><strong>A generator pair.</strong> In <em>The Spinor Representation of the Lorentz Group</em>, $d\theta_{\alpha\beta}S_{\alpha\beta\mu\nu}$ has $\alpha,\beta$ as the antisymmetric pair of a Lorentz generator. Lowered, the pair is a plain sum. One occurrence.</p>
+<p><strong>World indices written with the wrong letter.</strong> Eighteen occurrences in four articles — <em>The Algebrodynamical Programme</em>, <em>Maxwell's Theory on Non-Commutative Spaces</em>, <em>Nonlinear Maxwell Equations</em>, and <em>Canonical Quantization of the Biquaternion Rarita–Schwinger Field</em>. These are Class C errors: $\alpha$ where $\mu$ belongs. Lowering them is a relabel, and the four articles are otherwise clean of the spacetime alphabet.</p>
+<p><strong>Spin components.</strong> Five occurrences in two articles, $\sigma_\alpha$ with $\alpha=x,y,z$ in <em>Kramers Degeneracy</em> and <em>The Jordan–Wigner Transformation</em>. The label names a spatial component, not a spacetime index; lowering it changes nothing, because it was never contracted with a metric.</p>
+<p>The remaining nine tokens are not indices at all: seven Sobolev exponents in <em>Scattering for the Quaternionic Dirac Operator</em>, and the two labels of the left and right multiplication operators in <em>Electromagnetism in Media</em>.</p>
+<p>After the s-vector and curved-spacetime passes, 67 $\alpha$ and $\beta$ tokens remain in thirteen physics articles. Fifty-eight are indices, in eleven articles, and are lowered by this rule; nine are not indices, in two articles, and stay.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kind</th>
+<th style="text-align: right;">Tokens</th>
+<th style="text-align: right;">Lowered</th>
+<th style="text-align: right;">Not an index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spinor $\alpha$</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>tetrad leg $\alpha$</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>world index mis-lettered $\alpha,\beta$</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>spin component $\sigma_\alpha$</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>internal-symmetry label</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>generator pair</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Sobolev exponent</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>operator label</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>67</strong></td>
+<td style="text-align: right;"><strong>58</strong></td>
+<td style="text-align: right;"><strong>9</strong></td>
 </tr>
 </tbody>
 </table></div>
@@ -427,6 +511,16 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td>$\sigma^\mu\to\sigma_\mu$, $\bar\sigma^\mu\to\bar\sigma_\mu$, $r^\mu\to r_\mu$; $\eta^{\mu\nu}\to\mathring\eta_{\mu\nu}$ in the real block</td>
 <td>Clifford relations and charge conjugation verified exactly; $\sigma_\mu\bar\sigma_\nu+\sigma_\nu\bar\sigma_\mu=2\eta_{\mu\nu}I_2$</td>
 </tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>all 176 raised indices lowered, including $k^\mu$, $G^\mu$, $c^{\mu\nu\lambda}$, $\gamma^\mu$; every contraction that had no metric rewritten as a sign-vector sum $\sum_\mu\epsilon_\mu$; the $c$ slots declared left input, output, right input; $j_\mu=(0,0,0,-1)$</td>
+<td>the sign vector equals $g$ term by term, so each rewritten display is algebraically the source's; braces and delimiters balanced</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>149 occurrences low; the dual frame renamed $\tilde F_\mu$ so lowering does not collapse it into $\tilde E_\mu$; the tetrad $e_{\mu a}$, the connection $\omega_\mu{}^b{}_a$ with its world slot first and the frame pair kept as the source writes it, and $S_{\alpha\beta\mu\nu}$ declared world slot first; the dual basis of $s_\mu$ renamed $\varsigma_\mu$; each former metric contraction carries $\sum\epsilon_\mu$</td>
+<td>the gamma transcription's $e_{\mu a}\gamma_a$ and the flat limit $\tilde F_0=-ie_t$ reproduce the source's values term by term; braces and delimiters balanced</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="the-frames-of-the-inventory">The Frames of the Inventory</h2>
@@ -483,7 +577,7 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 </tbody>
 </table></div>
 <p>The declarations change no index. They fix the frame in which the repair is to be read, which is the first thing a lowering pass needs and the one thing the ten articles did not supply.</p>
-<p>The distribution is 87 $\mathbb{B}$, 19 $\mathbb{M}_-$, 7 <em>both</em> and 9 —. The frame fixes the weight but not the reading. In the 19 $\mathbb{M}_-$ rows the Clifford metric and the plain weight coincide, both $(1,-1,-1,-1)$, so a paired index lowers as a relabel under an explicit $\varepsilon$ sum. In the 87 $\mathbb{B}$ rows they differ, $g=(1,1,1,1)$ and $\varepsilon=(1,-1,-1,-1)$: a paired index there is either a $\delta$-contraction or an $\varepsilon$-contraction, and the display must say which. That is where the 1,109 $\mathbb{B}$ pairs sit, and why they are not the cheap ones.</p>
+<p>The distribution is 57 $\mathbb{B}$, 15 $\mathbb{M}_-$, 5 <em>both</em> and 2 —. The frame fixes the weight but not the reading. In the 15 $\mathbb{M}_-$ rows the Clifford metric and the plain weight coincide, both $(1,-1,-1,-1)$, so a paired index lowers as a relabel under an explicit $\varepsilon$ sum. In the 58 $\mathbb{B}$ rows they differ, $g=(1,1,1,1)$ and $\varepsilon=(1,-1,-1,-1)$: a paired index there is either a $\delta$-contraction or an $\varepsilon$-contraction, and the display must say which. That is where the 831 $\mathbb{B}$ pairs sit, and why they are not the cheap ones.</p>
 <h2 id="the-physics-inventory">The Physics Inventory</h2>
 <p>After the Frame column, the columns give the total number of raised Greek indices, then how many are slots, contracted, and plain, then the objects that carry them. A row can have all three kinds. The tables are ordered by total within each class.</p>
 <h3 id="class-a-articles">Class A articles</h3>
@@ -588,33 +682,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">176</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">102</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: right;">$c^{\mu\nu\lambda}$ (33), $k^{\mu}$ (23), $G^{\mu}$ (21), $B^{\mu}$ (15), +16 more</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
-<td>both</td>
-<td style="text-align: right;">149</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">98</td>
-<td style="text-align: right;">51</td>
-<td style="text-align: right;">$E^{\mu}$ (41), $x^{\mu}$ (37), $e^{\mu}$ (13), $n^{\mu}$ (10), +15 more</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
-<td>$\mathbb{B}$</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">68</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">$T^{\mu\nu}$ (84), $k^{\mu}$ (12), $f^{\nu}$ (10), $Q^{\mu}$ (4), +7 more</td>
-</tr>
 <tr>
 <td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
 <td>$\mathbb{M}_-$</td>
@@ -758,15 +825,6 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">$B^{\mu}$ (7), $N^{\mu}$ (5), $\varepsilon^{\nu\mu\lambda}$ (5), $t^{\nu\mu\lambda}$ (5), +3 more</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
-<td>both</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">$\sigma^{\mu}$ (19), $r^{\mu}$ (5), $\eta^{\mu\nu}$ (4)</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
@@ -1317,7 +1375,7 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <td style="text-align: right;">$U^{\mu}$ (3)</td>
 </tr>
 <tr>
-<td><a href="../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a></td>
+<td><a href="../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a></td>
 <td>$\mathbb{B}$</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
@@ -1383,22 +1441,24 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 </table></div>
 <p>The other 29 index-shaped tokens in Part VI are not indices. They are the order $\nu$ of a Bessel function written in a power, the eigenvalue $\lambda$ in $e^\lambda$, and parameter labels on signed operators.</p>
 <h2 id="what-a-pass-would-cost">What a Pass Would Cost</h2>
-<p>The 2,423 physics occurrences divide as 58 slots, 1,590 paired and 775 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 807 in all, can be lowered mechanically.</p>
-<p>The Frame column splits the work by kind of decision, not by difficulty. The 336 $\mathbb{M}_-$ pairs lower as relabels under one explicit $\varepsilon$ sum, because the two weights coincide there. The 1,109 $\mathbb{B}$ pairs do not: $g$ and $\varepsilon$ differ, so each display must declare which contraction it means. The 170 <em>both</em> pairs carry the same choice, made per display inside one article. A pass in the order A, B, C is still the cheap order. Class A is 14 articles and 326 occurrences, and every one needs a decision about the slot before any edit. Class B is 105 articles and 2,164 occurrences, of which 1,626 are paired. Most are textbook formulas quoted in the middle of a biquaternion argument, and the decision is editorial before it is technical: does the article own the formula, or quote it? A quotation may keep its notation if the article says so; an owned formula may not. Class C is 3 Part VI articles and a local relabel.</p>
+<p>The 1,573 physics occurrences divide as 51 slots, 1,069 paired and 453 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 485 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.</p>
+<p>The Frame column splits the work by kind of decision, not by difficulty. The 280 $\mathbb{M}_-$ pairs lower as relabels under one explicit $\varepsilon$ sum, because the two weights coincide there. The 729 $\mathbb{B}$ pairs do not: $g$ and $\varepsilon$ differ, so each display must declare which contraction it means. The 154 <em>both</em> pairs carry the same choice, made per display inside one article. A pass in the order A, B, C is still the cheap order. Class A is 11 articles and 56 slots, and every one needs a decision about the slot before any edit. Class B is 70 physics and 6 Part VI articles holding 1,069 paired occurrences. Most are textbook formulas quoted in the middle of a biquaternion argument, and the decision is editorial before it is technical: does the article own the formula, or quote it? A quotation may keep its notation if the article says so; an owned formula may not. Class C is 3 Part VI articles and a local relabel.</p>
 <p>The corpus does not yet state a quotation rule. Until it does, Class B cannot be closed by a script, because the same string needs two different treatments in two different articles.</p>
 <h2 id="recommendation">Recommendation</h2>
 <ol>
-<li>Declare the frame before any edit. Done for the physics inventory: the ten silent articles now declare one, and every row carries its frame. The seven <em>both</em> rows still need a per-display choice.</li>
+<li>Declare the frame before any edit. Done for the physics inventory: the ten silent articles now declare one, and every row carries its frame. The four <em>both</em> rows still need a per-display choice.</li>
 <li>Lower Class C everywhere it survives. In physics this is done; in Part VI it is 3 files of tuple labels, held until the tuple convention is stated.</li>
 <li>Fix Class A next. It is small, structural, and each repair is a matrix, a cell form or a stated slot order. No bulk edit is possible.</li>
+<li>Separate $\alpha$ from $\mu$ before touching either. Of the 73 $\alpha/\beta$ tokens, 27 are correct and stay; 32 are world indices to lower; 5 are component labels to relabel; 9 are not indices.</li>
 <li>Adopt a quotation rule for imported tensor formulas, then treat Class B article by article.</li>
 <li>Keep the numeric components in the same pass as the Greek ones. An article that lowers $x^\mu$ and leaves $x^0$ is half converted.</li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The gamma indices are gone. 82 physics articles and twelve Part VI articles still carry a raised Greek index, 2,049 occurrences in all.</p>
-<p>The remaining occurrences fall into three kinds. Class A, the slot, occurs in 7 physics and 3 Part VI articles, 182 occurrences; lowering destroys the row-column distinction. Class B, the pairing, occurs in 74 physics and 6 Part VI articles, 1,802 occurrences; where it is a contraction, lowering drops the signs of $\varepsilon$ and changes the value. Class C, the plain label, occurs in 0 physics and 3 Part VI articles, 6 occurrences; lowering is safe.</p>
-<p>The Frame column divides the remainder by kind of decision. 15 articles read in $\mathbb{M}_-$, where the two weights coincide and a paired index lowers as a relabel; 59 in $\mathbb{B}$, where $g$ and $\varepsilon$ differ and each display must choose its contraction; 6 in <em>both</em>; 2 carry only algebraic labels.</p>
-<p>A scan that counts every caret reports tens of thousands of false positives. The real count is 2,049 physics occurrences and 73 in Part VI. The work is concentrated in Class A and Class B, and Class B needs an editorial decision before it needs an edit.</p>
+<p>The gamma indices are gone. 78 physics articles and twelve Part VI articles still carry a raised index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$: 1,573 physics occurrences and 73 in Part VI. A further 58 $\alpha$ and $\beta$ indices remain in eleven physics articles; nine $\alpha/\beta$ tokens in two more articles are not indices.</p>
+<p>The remaining occurrences fall into three kinds. Class A, the slot, occurs in 8 physics and 3 Part VI articles, 51 occurrences; lowering destroys the row-column distinction. Class B, the pairing, occurs in 70 physics and 6 Part VI articles, 1,069 occurrences; where it is a contraction, lowering drops the signs of $g$ and changes the value unless the sum carries the sign vector. Class C, the plain label, occurs in 0 physics and 3 Part VI articles, 6 occurrences; lowering is safe.</p>
+<p>Indices of another kind — spinor, frame, internal — are counted in the same inventory and lowered by the same rule. The carrier changes: the bar holds the spinor's conjugation, a declared slot order holds a tetrad's two frames, and an internal label is only a label.</p>
+<p>The Frame column divides the remainder by kind of decision. 15 articles read in $\mathbb{M}_-$, where the two weights coincide and a paired index lowers as a relabel; 57 in $\mathbb{B}$, where $g$ and $\varepsilon$ differ and each display must choose its contraction; 4 in <em>both</em>; 2 carry only algebraic labels.</p>
+<p>A scan that counts every caret reports tens of thousands of false positives, and a scan that counts every Greek letter mixes exponents into the total. The real count is 1,573 physics occurrences and 73 in Part VI, plus 58 $\alpha/\beta$ indices. The work is concentrated in Class A and Class B, and Class B needs an editorial decision before it needs an edit.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1435,6 +1495,14 @@ so a blind lowering produces a sixteen-term sum with no signs and a different va
 <tr>
 <td>$\mu,\nu,\rho,\lambda,\kappa$</td>
 <td>spacetime component labels, always low</td>
+</tr>
+<tr>
+<td>$\xi^\alpha$, $\xi_\alpha$</td>
+<td>Weyl spinor index, raised with $\epsilon_{\alpha\beta}$; kept</td>
+</tr>
+<tr>
+<td>$h^\alpha{}_\mu$</td>
+<td>tetrad: $\alpha$ local frame, $\mu$ world; both kept distinct</td>
 </tr>
 <tr>
 <td>Frame (column)</td>
