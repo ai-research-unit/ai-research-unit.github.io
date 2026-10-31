@@ -75,16 +75,16 @@
 <p>The Clifford algebra, the geometric product, the grade decomposition, the grade projection and the contraction are from <em>Clifford Algebras</em> and <em>The Geometric Product and the Grade Decomposition</em>; the reciprocal basis, the volume element and the multivectors are from <em>Clifford Algebras in Finite Dimensions</em>; the exterior algebra, the exterior derivative and the codifferential are from <em>The Exterior Algebra</em> and <em>Differential Forms and Stokes' Theorem</em>; the Clifford module, the monogenic functions and the Cauchy–Riemann operator are from <em>Clifford Analysis</em> and <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>; the Lorentzian signature and the Dirac-type equation are from <em>Dirac Differential Operators</em> and <em>Peirce Carriers and Inner Conjugation</em>, and the physics of the corresponding equation is in the physics menu. Nothing owned by those entries is re-derived. The space is $\mathbb{R}^n$ with the positive definite form unless a signature is named, $M$ is a compact region with smooth boundary, and $F$ is a smooth multivector-valued function on a neighbourhood of $M$.</p>
 <h2 id="the-vector-derivative">The Vector Derivative</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> Let $e_1,\ldots,e_n$ be a basis of $V$ and $e^1,\ldots,e^n$ the reciprocal basis, characterised by $B(e^i,e_j)=\delta^i_j$. The <strong>vector derivative</strong> of a smooth multivector-valued function $F$ on an open set is</p>
+<p><strong>Definition.</strong> Let $e_1,\ldots,e_n$ be a basis of $V$ and $e_{\mathrm{rec},1},\ldots,e_{\mathrm{rec},n}$ the reciprocal basis, characterised by $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$. The <strong>vector derivative</strong> of a smooth multivector-valued function $F$ on an open set is</p>
 <p>$$
-\partial F=\sum_{i=1}^{n}e^i\,\frac{\partial F}{\partial x^i},
+\partial F=\sum_{i=1}^{n}e_{\mathrm{rec},i}\,\frac{\partial F}{\partial x_i},
 $$</p>
-<p>and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x^i}e^i$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an underline, as in $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$; the bracket convention is explained in the remark below.</p>
-<p><strong>Proposition.</strong> The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial/\partial x^i$.</p>
-<p><strong>Proof.</strong> A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e^i,e_j)=\delta^i_j$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.</p>
-<p><strong>Example (the derivative of the position vector).</strong> Let $x=\sum_ix^ie_i$, so that $\partial/\partial x^i x=e_i$. Then</p>
+<p>and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x_i}e_{\mathrm{rec},i}$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an underline, as in $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$; the bracket convention is explained in the remark below.</p>
+<p><strong>Proposition.</strong> The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial/\partial x_i$.</p>
+<p><strong>Proof.</strong> A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.</p>
+<p><strong>Example (the derivative of the position vector).</strong> Let $x=\sum_ix_ie_i$, so that $\partial/\partial x_i x=e_i$. Then</p>
 <p>$$
-\partial x=\sum_i\exp(i)\partial/\partial x^i\,x=\sum_i\exp(i)e_i=n,
+\partial x=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\,x=\sum_ie_{\mathrm{rec},i}e_i=n,
 $$</p>
 <p>the dimension of the space; the derivative of the position vector is the dimension, which is the Clifford form of the statement that the divergence of the position field is the dimension.</p>
 <h3 id="the-divergence-and-the-curl">The Divergence and the Curl</h3>
@@ -99,7 +99,7 @@ $$</p>
 \underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B,
 $$</p>
 <p>where the underlines indicate the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands.</p>
-<p><strong>Proof.</strong> Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial/\partial x^i\,(AB)=\partial/\partial x^i\,A\,B+A\,\partial/\partial x^i\,B$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the underlines keeping track of which factor each differentiation acts upon.</p>
+<p><strong>Proof.</strong> Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial/\partial x_i\,(AB)=\partial/\partial x_i\,A\,B+A\,\partial/\partial x_i\,B$; multiplying by $e_{\mathrm{rec},i}$ on the left and using the associativity of the geometric product gives the statement, the underlines keeping track of which factor each differentiation acts upon.</p>
 <p><strong>Remark (the bracket convention).</strong> The underline records both the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands: in the second term $\underline{A}\underline{\partial} B$ the derivative acts on $B$ and the vector factor it produces stands where $A$ stands, which is what the expansion of $\partial(AB)$ in a coordinate basis produces. With this convention the Leibniz rule above is an identity and not a convention.</p>
 <h2 id="the-fundamental-theorem">The Fundamental Theorem</h2>
 <h3 id="the-statement">The Statement</h3>
@@ -108,7 +108,7 @@ $$</p>
 \boxed{\;\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F\;},
 $$</p>
 <p>where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.</p>
-<p><strong>Proof.</strong> In a coordinate system in which the region is described by the inequalities $a_i\le x^i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.</p>
+<p><strong>Proof.</strong> In a coordinate system in which the region is described by the inequalities $a_i\le x_i\le b_i$ after a partition into such pieces, the left-hand side integrates the partial derivatives of $F$ over the region, and the fundamental theorem of calculus in each coordinate produces the boundary terms; the boundary terms assemble into the integral of the directed element over the boundary, because the directed element of a piece of boundary with normal $n$ is $n$ times the scalar element of area and the orientation of the region fixes the sign. The assembly is the same computation that proves the divergence theorem in vector analysis, with the Clifford product in place of the dot and cross products.</p>
 <h3 id="the-classical-theorems-as-grades">The Classical Theorems as Grades</h3>
 <p><strong>Theorem (Gauss).</strong> For a vector-valued function $F$,</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 \boxed{\;\partial^2=\Delta=\sum_i\frac{\partial^2}{\partial x_i^2}\;},
 $$</p>
 <p>in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.</p>
-<p><strong>Proof.</strong> $\partial^2=\bigl(\sum_i\exp(i)\partial/\partial x^i\bigr)\bigl(\sum_j\exp(j)\partial/\partial x^j\bigr)=\sum_{i,j}e^ie^j\,\partial^2/\partial x^i\partial x^j=\sum_i\partial^2/\partial (x^i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\,\partial^2/\partial (x^i)^2=\partial^2/\partial (x^i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.</p>
+<p><strong>Proof.</strong> $\partial^2=\bigl(\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\bigr)\bigl(\sum_je_{\mathrm{rec},j}\partial/\partial x_j\bigr)=\sum_{i,j}e_{\mathrm{rec},i}e_{\mathrm{rec},j}\,\partial^2/\partial x_i\partial x_j=\sum_i\partial^2/\partial (x_i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e_{\mathrm{rec},i}e_{\mathrm{rec},j}+e_{\mathrm{rec},j}e_{\mathrm{rec},i}=2B(e_{\mathrm{rec},i},e_{\mathrm{rec},j})=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e_{\mathrm{rec},i}e_{\mathrm{rec},i}\,\partial^2/\partial (x_i)^2=\partial^2/\partial (x_i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.</p>
 <p><strong>Remark.</strong> The converse fails: a harmonic function need not be monogenic, exactly as a harmonic function of two variables need not be holomorphic. The monogenic functions form a much smaller class, and the theory of that class, with the Cauchy integral formula, the Fischer decomposition and the function theory of the Clifford algebras, is the subject of <em>Clifford Analysis</em> and of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>, where the results are developed.</p>
 <p><strong>Remark (the Green's function).</strong> The vector derivative has a fundamental solution: up to normalisation,</p>
 <p>$$
@@ -167,7 +167,7 @@ $$</p>
 <p>with $F$ a bivector-valued field and $J$ a vector-valued current encodes the four equations of the electromagnetic field, the scalar and vector parts of the two sides being the two divergences and the two curls; the remark is that the four equations are the four grades of one equation. The details of the identification are in the physics menu, and the algebraic machinery is that of the present article and of <em>The Geometric Product and the Grade Decomposition</em>.</p>
 <p><strong>Remark (why a single operator suffices).</strong> The classical differential operators of vector analysis are three, the gradient, the divergence and the curl, and their unification in one operator is possible precisely because the geometric product of the vector $\partial$ with a multivector contains all the grades that the three operators produce. Nothing is lost in the unification: the grades of $\partial F$ can be separated, and each of the classical theorems is the corresponding grade of the single fundamental theorem, as the three theorems above show.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>vector derivative</strong> is the operator $\partial=\sum_i\exp(i)\partial/\partial x^i$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial/\partial x^i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.</p>
+<p>The <strong>vector derivative</strong> is the operator $\partial=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i$, where the $e_{\mathrm{rec},i}$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial/\partial x_i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.</p>
 <p>The <strong>fundamental theorem of geometric calculus</strong> is</p>
 <p>$$
 \int_M\underline{\partial} F\,dV=\int_{\partial M}dS\,F,
@@ -183,11 +183,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$e^i$, $B(e^i,e_j)=\delta^i_j$</td>
+<td>$e_{\mathrm{rec},i}$, $B(e_{\mathrm{rec},i},e_j)=\delta_{ij}$</td>
 <td>Reciprocal basis</td>
 </tr>
 <tr>
-<td>$\partial F=\sum_i\exp(i)\partial/\partial x^i\,F$</td>
+<td>$\partial F=\sum_ie_{\mathrm{rec},i}\partial/\partial x_i\,F$</td>
 <td>Vector derivative, acting on the right</td>
 </tr>
 <tr>

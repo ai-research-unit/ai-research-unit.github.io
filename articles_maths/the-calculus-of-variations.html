@@ -129,13 +129,13 @@ $$</p>
 <p><em>Proof.</em> Differentiate the left-hand side with respect to $x$: the derivative is $\sum_i\partial L/\partial w_i\,w_i' + \sum_i\partial L/\partial p_i\,w_i'' - \sum_iw_i''\partial L/\partial p_i - \sum_iw_i'\frac{d}{dx}\partial L/\partial p_i = \sum_iw_i'\bigl(\partial L/\partial w_i - \frac{d}{dx}\partial L/\partial p_i\bigr) = 0$ by the Euler–Lagrange equation.</p>
 <p><strong>Remark (the two classical reductions).</strong> If $L$ does not depend on $w$ but only on $w'$, the Euler–Lagrange equation integrates once to $\partial L/\partial p_i = c_i$; if $L$ does not depend on $x$, the Beltrami identity gives the first integral. Both are instances of the general principle that a symmetry of the Lagrangian produces a conservation law for the Euler–Lagrange equation, the theorem of Noether, stated in its general form in the article of this Part on Lagrangian and Hamiltonian systems; in the case of a one-parameter group of translations the conserved quantity is exactly the first integral above.</p>
 <h3 id="the-geodesic-and-the-brachistochrone">The Geodesic and the Brachistochrone</h3>
-<p><strong>Example (geodesics).</strong> On a Riemannian manifold $(M,g)$ the <strong>energy</strong> of a curve $x : [a,b]\to M$ with local coordinates $x^i$ is</p>
+<p><strong>Example (geodesics).</strong> On a Riemannian manifold $(M,g)$ the <strong>energy</strong> of a curve $x : [a,b]\to M$ with local coordinates $x_i$ is</p>
 <p>$$
-E(x) = \frac12\int_a^b g_{ij}(x)dx^{i}/dt dx^{j}/dt\,dt ,
+E(x) = \frac12\int_a^b g_{ij}(x)dx_i/dt dx_j/dt\,dt ,
 $$</p>
-<p>and the <strong>length</strong> is $\int\sqrt{g_{ij}dx^{i}/dt dx^{j}/dt}\,dt$. The Euler–Lagrange equation of the energy is</p>
+<p>and the <strong>length</strong> is $\int\sqrt{g_{ij}dx_i/dt dx_j/dt}\,dt$. The Euler–Lagrange equation of the energy is</p>
 <p>$$
-d^2x^{k}/dt^2 + \Gamma^k_{ij}(x)dx^{i}/dt dx^{j}/dt = 0, \qquad \Gamma^k_{ij} = \frac12g^{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
+d^2x_k/dt^2 + \Gamma_{kij}(x)dx_i/dt dx_j/dt = 0, \qquad \Gamma_{kij} = \frac12(g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$</p>
 <p>the <strong>geodesic equation</strong>; the metric and the Levi-Civita connection are those of Part II, and the derivation is the computation of $\partial L/\partial w^k - \frac{d}{dt}\partial L/\partial p_k$ for $L = \frac12g_{ij}(x)p_ip_j$. Because the integrand of the length is homogeneous of degree one in $dx/dt$, the length and the energy have the same stationary curves up to reparametrisation; a geodesic is a curve of stationary energy and, being a critical point of a length functional that is not strictly convex, is locally minimising only up to the first conjugate point.</p>
 <p><strong>Example (the brachistochrone).</strong> The problem asks for the curve $y(x)$ joining two points in a vertical plane down which a particle descends in the least time; the time is proportional to</p>
@@ -320,7 +320,7 @@ $$</p>
 <td>$L - \sum_iw_i'\partial L/\partial p_i = $ constant for autonomous $L$</td>
 </tr>
 <tr>
-<td>$g_{ij}$, $\Gamma^k_{ij}$</td>
+<td>$g_{ij}$, $\Gamma_{kij}$</td>
 <td>Metric and Christoffel symbols of Part II</td>
 </tr>
 <tr>
