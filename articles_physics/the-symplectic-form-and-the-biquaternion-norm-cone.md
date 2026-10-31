@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\iota_{X_f}\omega=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(JQ_x,JQ_y)=g(Q_x,Q_y)$ and $\omega(Q_x,Q_y)=g(JQ_x,Q_y)$. This is the **Kähler** presentation, and it is the one the biquaternion algebra reproduces.
+Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\omega(X_f,\,\cdot\,)=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(JQ_x,JQ_y)=g(Q_x,Q_y)$ and $\omega(Q_x,Q_y)=g(JQ_x,Q_y)$. This is the **Kähler** presentation, and it is the one the biquaternion algebra reproduces.
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the **Hermitian form** $\vec Z^{*}\vec W$ with its scalar part $\mathrm{Sc}(\vec Z^{*}\vec W)$, and the **holomorphic biquaternion norm** $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_\mu Z_\mu^2$. The first is positive definite; the second is a general plain bilinear form whose vanishing set is a complex cone — the **biquaternion-norm cone**. The thesis of this article is that these two structures are the two faces of one object:
 
@@ -31,7 +31,7 @@ $$
 so that $\omega(Q_x,Q_y)=\sum_k(q_k^{(1)} p_k^{(2)}-p_k^{(1)} q_k^{(2)})$ on component vectors. The **Hamiltonian vector field** of a function $f$ is defined by
 
 $$
-\iota_{X_f}\,\omega=df,\qquad\text{that is}\qquad X_f=\sum_k\left(\frac{\partial f}{\partial p_k}\frac{\partial}{\partial q_k}-\frac{\partial f}{\partial q_k}\frac{\partial}{\partial p_k}\right),
+\omega(X_f,\,\cdot\,)=df,\qquad\text{that is}\qquad X_f=\sum_k\left(\frac{\partial f}{\partial p_k}\frac{\partial}{\partial q_k}-\frac{\partial f}{\partial q_k}\frac{\partial}{\partial p_k}\right),
 $$
 
 and the **Poisson bracket** is

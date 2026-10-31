@@ -148,6 +148,8 @@ The corpus has a small number of working conventions that are not mathematical.
 
 **The word "interval".** Two different objects share the word, and the corpus keeps them apart. In the mathematical corpus an **interval** is an order-theoretic or lattice object: a convex subset of a linearly ordered set, the interval $[a,b]=\{x:a\le x\le b\}$ of a lattice or of a poset of effects, defined by the order and not by a form. In the physical corpus the **interval** is the value of the quadratic form, $\langle\tilde Q\rangle_{\natural}=-\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ on the material sector, defined by the form and not by an order. A statement about the sign of the interval is therefore never a statement about a lattice interval, and a lattice interval is never the line element; where the two senses could meet, the corpus writes *the form value* or *the quadratic form* for the physical one.
 
+**The letter $\iota$ is not used in Part VI.** Every article registered under *Part VI : Synthetic Studies* of `maths.md` writes no $\iota$, in any spelling. The letter is not reserved there and names no object of those studies: a comparison with a Clifford algebra is written by its values or by the words "the Clifford image", an interior product as the pairing $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. A display in Part VI that introduces $\iota$ is defective.
+
 ## LaTeX and Typesetting
 
 The articles are rendered with KaTeX on the page, and the following rules are observed in the source.
@@ -174,7 +176,7 @@ A **subscript** is written with the underscore and takes a single token: one cha
 
 The **working conventions of the corpus** are these. Every article is registered in exactly one menu, `maths.md` or `physics.md`, with a comment that outlines it, and a leading `+` marks a planned article. A category of Parts I to IV lists its articles in the four groups Theory, Operator Theory, `*` Theory and `*` Operator Theory, and `- Applications` closes it. The article files are `articles_maths/<slug>.md` and `articles_physics/<slug>.md`, and every article follows the skeleton Introduction, thematic sections, Summary, Summary of Notation, Further Reading.
 
-The **category numbers** count the categories of the parts in menu order; the front matter is not counted. Since a number shifts when a category is inserted or split, an article addresses a category by name, and the name is the stable thing. The **typography** is KaTeX on the page: inline mathematics between single dollars and never across a line break, display mathematics between double dollars on lines of their own, tables in Markdown and never as a LaTeX array, and a malformed formula rendered in red rather than reported.
+The **category numbers** count the categories of the parts in menu order; the front matter is not counted. Since a number shifts when a category is inserted or split, an article addresses a category by name, and the name is the stable thing. The letter $\iota$ is not used in Part VI, where a comparison with a Clifford algebra is written by its values or as the Clifford image, an interior product as a pairing and an inner automorphism in words. The **typography** is KaTeX on the page: inline mathematics between single dollars and never across a line break, display mathematics between double dollars on lines of their own, tables in Markdown and never as a LaTeX array, and a malformed formula rendered in red rather than reported.
 
 ## Summary of Notation
 

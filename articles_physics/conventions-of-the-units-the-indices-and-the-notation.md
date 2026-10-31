@@ -91,13 +91,15 @@ The forms a subscript takes are these.
 | an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$ |
 | a grouped expression | $Q_{n+1}$ |
 
+**The letter $\iota$ is not used.** No physics article uses $\iota$, in any spelling. The comparison of the biquaternion algebra with the even Clifford algebra is written by its values, $e_t\mapsto I_4$ and $\vec e_x\mapsto\gamma_2\gamma_3$, or by the words "the Clifford image", and never by a symbol. An interior product is written as the pairing it is, $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. The letter is not reserved for a third object: it carries no meaning in the series, and a display that introduces it is a defect.
+
 ## Summary
 
 A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $ict'$ in metres, with $it'$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.
 
 Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$.
 
-A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the operator carries the vector index, $\tilde S_{\mathrm{tot},k}$.
+A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression. The letter $\iota$ is not used at all. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the operator carries the vector index, $\tilde S_{\mathrm{tot},k}$.
 
 ## Summary of Notation
 
