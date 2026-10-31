@@ -72,10 +72,10 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The subject.</strong> The algebra $\mathbb{B}$ acts on itself by left multiplication. For an element $\tilde Q$, the map $X\mapsto\tilde QX$ is complex-linear, so it is an operator of the ambient space of <em>The Endomorphisms of the Biquaternion Algebra</em>; it is written $L_{\tilde Q}$ and called the <strong>left regular operator</strong> of $\tilde Q$. This article studies the family of these operators on the algebra, without a frame.</p>
 <p><strong>What the article proves.</strong> Four things, in this order. The map $\tilde Q\mapsto L_{\tilde Q}$ is injective and complex-linear. It is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, so its image is a copy of the algebra inside the operator algebra. The kernel and the image of a single $L_{\tilde Q}$ are the right annihilator and the right ideal $\tilde Q\mathbb{B}$. The operator $L_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, and its inverse is $L_{\tilde Q^{-1}}$.</p>
-<p><strong>What the article does not do.</strong> The matrix of $L_{\tilde Q}$ is the subject of <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra</em>: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.</p>
+<p><strong>What the article does not do.</strong> The matrix of $L_{\tilde Q}$ is the subject of <em>Matrix Representations : The Left Regular Operators</em>: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.</p>
 <p><strong>The letters.</strong> The operator is $L_{\tilde Q}$, the element is $\tilde Q$, and the argument is $X$. The letter $L$ names left multiplication and is not an index. The conventions of the four letters, the slots and the matrix are <em>Operator Family Conventions</em>; this article uses them and defines none of them.</p>
 <p><strong>Boundaries.</strong> The algebra is <em>The Biquaternion Algebra</em>; the operator space is <em>The Endomorphisms of the Biquaternion Algebra</em>; the matrix units are <em>Special Element and Peirce Conventions</em>; the norm is <em>Norm and Unitary Conventions</em>; the invertibility criterion of an element is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
-<h2 id="the-map-math18">The Map $L_{\tilde Q}$</h2>
+<h2 id="the-map-math17">The Map $L_{\tilde Q}$</h2>
 <h3 id="definition-and-linearity">Definition and Linearity</h3>
 <p><strong>Definition.</strong> For $\tilde Q\in\mathbb{B}$, the <strong>left regular operator</strong> of $\tilde Q$ is</p>
 <p>$$
@@ -94,7 +94,7 @@ $$</p>
 <p><em>Proof.</em> Evaluate at the unit: $L_{\tilde Q}(e_t)=\tilde Qe_t=\tilde Q$, and $L_{\tilde P}(e_t)=\tilde P$. If the operators are equal, their values at $e_t$ are equal, so $\tilde Q=\tilde P$. The second statement is the case $\tilde P=0$.</p>
 <p><strong>The reading.</strong> The unit is a faithful probe: an element is recovered from its left multiplication by reading the image of $e_t$. This is the reason the left family can be treated as a copy of the algebra, and the reason the map has an inverse on its image.</p>
 <p><strong>A consequence.</strong> Two different elements give two different operators, so the family has as many members as the algebra. The family is not a quotient and the letter $\tilde Q$ in $L_{\tilde Q}$ is the element itself, not a class.</p>
-<h2 id="the-law-math45">The Law $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$</h2>
+<h2 id="the-law-math44">The Law $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$</h2>
 <h3 id="the-left-regular-representation">The Left Regular Representation</h3>
 <p><strong>Theorem (the law).</strong> For all $\tilde Q,\tilde P\in\mathbb{B}$,</p>
 <p>$$
@@ -118,14 +118,14 @@ $$</p>
 <p>It is a complex subspace of $\mathbb{B}$.</p>
 <p><strong>Proposition (the kernel).</strong> $\ker L_{\tilde Q}=\operatorname{Ann}_r(\tilde Q)$.</p>
 <p><em>Proof.</em> $L_{\tilde Q}(X)=0$ is $\tilde QX=0$, which is the defining condition of the right annihilator.</p>
-<p><strong>The three cases.</strong> The complex dimension of the annihilator is read in the $2\times2$ model of <em>$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant</em>, where $\tilde Q$ is a $2\times2$ matrix:</p>
+<p><strong>The three cases.</strong> The complex dimension of the annihilator is read in the $2\times2$ model of <em>Matrix Representations : The Product, the Trace and the Determinant</em>, where $\tilde Q$ is a $2\times2$ matrix:</p>
 <ul>
 <li>if $\tilde Q$ is a unit, $\operatorname{Ann}_r(\tilde Q)=0$, of complex dimension $0$;</li>
 <li>if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its kernel is a line, and the right annihilator is the complex two-dimensional space of matrices whose columns lie in that line;</li>
 <li>if $\tilde Q=0$, the annihilator is the whole algebra, of complex dimension $4$.</li>
 </ul>
 <p>In the second case the annihilator is not a line: a rank-one matrix annihilates a complex two-dimensional space on the right, one complex dimension for each column. The distinction between the left and the right annihilator is the distinction between the kernel of $L_{\tilde Q}$ and the kernel of $R_{\tilde Q}$, and the two spaces need not coincide.</p>
-<h3 id="the-right-ideal-math86">The Right Ideal $\tilde Q\mathbb{B}$</h3>
+<h3 id="the-right-ideal-math84">The Right Ideal $\tilde Q\mathbb{B}$</h3>
 <p><strong>Definition.</strong> The image of $L_{\tilde Q}$ is the set</p>
 <p>$$
 \tilde Q\mathbb{B}=\{\tilde QX:X\in\mathbb{B}\},
@@ -154,12 +154,12 @@ $$</p>
 <p><strong>The middle case.</strong> The value two is the signature of the biquaternion algebra: a nonzero zero divisor has a complex two-dimensional right ideal and a complex two-dimensional right annihilator, and the two complex dimensions add to four. A general element of the algebra is a unit, so the generic rank is four; the degenerate ranks are two and zero.</p>
 <p><strong>The rank is not the norm.</strong> The rank takes three values, the norm is a complex number, and the two are related only by the criterion: the rank is four exactly when the norm is nonzero. A zero norm leaves the two values two and zero, and whether the element is zero decides between them.</p>
 <h2 id="invertibility">Invertibility</h2>
-<h3 id="the-criterion-math111">The Criterion $N(\tilde Q)\neq0$</h3>
+<h3 id="the-criterion-math109">The Criterion $N(\tilde Q)\neq0$</h3>
 <p><strong>Theorem (the criterion).</strong> The operator $L_{\tilde Q}$ is invertible exactly when $N(\tilde Q)\neq0$.</p>
 <p><em>Proof.</em> If $L_{\tilde Q}$ is invertible, it is surjective, so there is an $X$ with $\tilde QX=e_t$; then $\tilde Q$ has a right inverse, and in a finite-dimensional algebra a right inverse is a two-sided inverse, so $\tilde Q$ is a unit and $N(\tilde Q)\neq0$. Conversely, if $N(\tilde Q)\neq0$, then $\tilde Q$ is a unit, and $L_{\tilde Q}$ has the inverse $L_{\tilde Q^{-1}}$ by the law.</p>
 <p><strong>The criterion read on the element.</strong> The condition $N(\tilde Q)\neq0$ is the invertibility criterion of the algebra, fixed in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>: the units are exactly the elements of nonzero quaternionic norm. The operator criterion and the element criterion are therefore the same criterion, read on the two objects.</p>
 <p><strong>The determinant reading.</strong> In the matrix article the determinant of $L_{\tilde Q}$ is $N(\tilde Q)^2$, so the criterion is also $\det L_{\tilde Q}\neq0$. The square is not an accident: the left regular matrix is the identity on one tensor factor and the $2\times2$ model on the other, and its determinant is the square of the $2\times2$ determinant. The operator is invertible exactly when that determinant is nonzero.</p>
-<h3 id="the-inverse-math130">The Inverse $L_{\tilde Q^{-1}}$</h3>
+<h3 id="the-inverse-math128">The Inverse $L_{\tilde Q^{-1}}$</h3>
 <p><strong>Theorem (the inverse).</strong> If $\tilde Q$ is a unit, then $L_{\tilde Q}$ is invertible and</p>
 <p>$$
 (L_{\tilde Q})^{-1}=L_{\tilde Q^{-1}}.
@@ -170,7 +170,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The left regular operator of $\tilde Q$ is $L_{\tilde Q}(X)=\tilde QX$. The assignment $\tilde Q\mapsto L_{\tilde Q}$ is complex-linear, injective, and multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$; the unit goes to the identity, and the image is a copy of the algebra inside the operator space, of complex dimension four. The copy preserves the algebra relations and nothing else.</p>
 <p>The kernel of $L_{\tilde Q}$ is the right annihilator of $\tilde Q$, and the image is the right ideal $\tilde Q\mathbb{B}$. The rank is four for a unit, two for a nonzero zero divisor, and zero for the zero element. The operator is invertible exactly when $N(\tilde Q)\neq0$, and then its inverse is $L_{\tilde Q^{-1}}$.</p>
-<p>The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra</em>, where the same three statements are read entry by entry in the Peirce frame.</p>
+<p>The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of <em>Matrix Representations : The Left Regular Operators</em>, where the same three statements are read entry by entry in the Peirce frame.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -213,10 +213,10 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient operator space and the complex dimension sixteen.</li>
-<li><a href="m4c-representation-the-general-endomorphisms.html">$M_4(\mathbb{C})$ Representation : The General Endomorphisms</a>, for the matrix of a general operator and the units.</li>
-<li><a href="m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra</a>, for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.</li>
+<li><a href="matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>, for the matrix of a general operator and the units.</li>
+<li><a href="matrix-representations-the-left-regular-operators.html">Matrix Representations : The Left Regular Operators</a>, for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.</li>
 <li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for the other side and the exchange.</li>
-<li><a href="m2c-model-the-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant</a>, for the $2\times2$ model, the determinant and the norm.</li>
+<li><a href="matrix-representations-the-product-the-trace-and-the-determinant.html">Matrix Representations : The Product, the Trace and the Determinant</a>, for the $2\times2$ model, the determinant and the norm.</li>
 <li><a href="conventions-of-the-norms-and-the-unitary-convention.html">Norm and Unitary Conventions</a>, for the norm and the invertibility criterion.</li>
 <li><a href="conventions-of-the-operator-families.html">Operator Family Conventions</a>, for the letter $L$, the slots and the set names.</li>
 </ul>

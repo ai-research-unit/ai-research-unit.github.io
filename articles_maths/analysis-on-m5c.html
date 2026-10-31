@@ -255,7 +255,7 @@ $$</p>
 \|f\|_2=\|\hat f\|_2 .
 $$</p>
 <p><strong>Proof.</strong> The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; the unitarity follows from the inversion and the $L^2$ pairing.</p>
-<p><strong>Corollary.</strong> The Fourier transform converts differentiation into multiplication: $\widehat{\partial_jf}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.</p>
+<p><strong>Corollary.</strong> The Fourier transform converts differentiation into multiplication: $\widehat{\partial f/\partial x_j}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.</p>
 <p><strong>Proof.</strong> Integration by parts; the convolution theorem is the standard one.</p>
 <h3 id="the-gaussian-and-the-heat-kernel">The Gaussian and the Heat Kernel</h3>
 <p><strong>Proposition.</strong> The Gaussian Fourier transform is</p>
@@ -267,7 +267,7 @@ $$</p>
 <p>$$
 p_t(x)=\frac{1}{(4\pi t)^{25}}e^{-|x|^2/(4t)},
 $$</p>
-<p>and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.</p>
+<p>and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.</p>
 <p><strong>Proof.</strong> The Fourier transform of $p_t$ is $e^{-4\pi^2t|\xi|^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.</p>
 <p><strong>Remark.</strong> <strong>The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_5$.</strong> It uses the additive structure of $\mathbb{C}^{25}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(5)$ is a different object, defined by the irreducible representations; it is not needed here.</p>
 <h2 id="zero-divisors-and-ordinary-matrix-analysis">Zero Divisors and Ordinary Matrix Analysis</h2>
@@ -280,7 +280,7 @@ $$</p>
 <h3 id="the-boundary-against-fueter-theory">The Boundary Against Fueter Theory</h3>
 <p><strong>Definition.</strong> <strong>Fueter theory</strong> is the quaternionic analysis of the Cauchy–Fueter operator</p>
 <p>$$
-\bar\partial=\partial_{q_0}+i\partial_{q_1}+j\partial_{q_2}+k\partial_{q_3},
+\bar\partial=\partial/\partial q_0+i\,\partial/\partial q_1+j\,\partial/\partial q_2+k\,\partial/\partial q_3,
 $$</p>
 <p>acting on functions of a quaternion variable $q=q_0+q_1i+q_2j+q_3k$; the Fueter-regular functions are the solutions of $\bar\partial f=0$.</p>
 <p><strong>Theorem.</strong> The holomorphic functional calculus on $M_5(\mathbb{C})$ is not Fueter theory. Fueter theory needs the quaternion (or Clifford) algebra and its Dirac operator; $M_5(\mathbb{C})$ is a complex matrix algebra, not a Clifford algebra, and its analysis is the ordinary complex analysis of $\mathbb{C}^{25}$.</p>

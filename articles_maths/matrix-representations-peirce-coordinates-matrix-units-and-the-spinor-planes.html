@@ -240,6 +240,11 @@ $$
 Left multiplication never mixes the two planes. The two copies are the multiplicity of the regular representation, not two chiralities.</p>
 <p><strong>The compression.</strong> The $2\times2$ model is the regular matrix compressed to one plane. On $S_+$ with the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, the matrix of left multiplication by $\tilde Q$ is $B$; the two columns of $B$ are the coordinates of $\tilde Q\tilde\Pi_+$ and $\tilde Q\vec\Upsilon_+$ in that basis. The $2\times2$ display therefore carries the action on one spinor plane, and the regular display carries the action on both. This is the compression statement of <em>Matrix Representations : The Models and the Change of Frame</em>, read in the Peirce frame.</p>
 <p><strong>The invariance.</strong> Each plane is a left ideal, so it is invariant under left multiplication by every element. The two planes are not the two eigenspaces of a general element; they are the two Peirce components, and the spectral eigenspaces are different planes unless the element points along the standard axis.</p>
+<p><strong>The star.</strong> The star carries a spinor plane to a right Peirce row, not to the other plane. The standard idempotents are Hermitian, so
+$$
+S_+^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,
+$$
+which is the right Peirce row of $\tilde\Pi_+$, not $S_-$. The two planes are exchanged by right multiplication, not by the star.</p>
 <h2 id="left-and-right-multiplication">Left and Right Multiplication</h2>
 <p><strong>Right multiplication by the mixed units.</strong> In the Peirce frame,
 $$
@@ -260,6 +265,7 @@ the right Peirce row, and in the Peirce basis it is the first and third coordina
 <p><strong>The off-diagonal units.</strong> A nilpotent of $\mathbb{B}$ is a nonzero element of a mixed Peirce corner, so its image under $\mathsf M_4^L$ is a nonzero element of the image of $\mathbb{C}E_{12}$ or $\mathbb{C}E_{21}$ in the block form. Such an element is $\mu\,I_2\otimes E_{12}$ or $\mu\,I_2\otimes E_{21}$ with $\mu\in\mathbb{C}^{\times}$. Its square is zero, its trace is zero and its rank is two.</p>
 <p><strong>The conjugacy.</strong> Every nilpotent is a nonzero scalar multiple of one of the two standard nilpotents, conjugated by an inner automorphism of the algebra. The scalar is the coordinate of the nilpotent in its corner, and the conjugacy is the change of the Peirce frame. In the regular model the conjugacy is the block-diagonal conjugation by the two copies of the same unit.</p>
 <p><strong>The Jordan form.</strong> A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, one in each spinor plane. The two standard nilpotents are conjugate to each other; the labels record the mixed corner, not a conjugacy class.</p>
+<p><strong>The idempotents.</strong> Every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents. The two mixed corners of an idempotent and its complement are square-zero, and a nonzero pair $u,w$ from opposite corners can be rescaled to $uw=\tilde\Pi$. The trivial idempotent $e_t$ is the exception, because a product equal to a unit has unit factors and a nilpotent is not a unit.</p>
 <h2 id="summary">Summary</h2>
 <p>The four Peirce elements are one system of $2\times2$ matrix units; in the regular model they become the rank-two matrices $I_2\otimes E_{ij}$, and the corner matrix is duplicated: $\mathsf M_4^L(\tilde Q)=\operatorname{diag}(B,B)$ in the frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are the two spinor planes, left multiplication acts on each by the same matrix and never mixes them, right multiplication by the mixed units swaps them, and the two planes are not the column spaces of the idempotents. The $2\times2$ model is the compression of the regular matrix to one plane. The four Peirce elements are not a system of $4\times4$ units.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -313,8 +319,8 @@ the right Peirce row, and in the Peirce basis it is the first and third coordina
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the corners and the table</li>
 <li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the planes and the exchange</li>
 <li><a href="nilpotents.html">Nilpotents</a>, for the nilpotent cone</li>
-<li><a href="m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the $2\times2$ source</li>
-<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the $4\times4$ source</li>
+<li><a href="matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html">Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the $2\times2$ source</li>
+<li><a href="matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html">Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the $4\times4$ source</li>
 </ul>
       </div>
     </main>
