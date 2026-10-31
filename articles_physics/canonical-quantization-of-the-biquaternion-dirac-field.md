@@ -260,11 +260,11 @@ Here $V$ is the volume in which the theory is placed, and $(2\pi)^3\delta^{(3)}(
 The same mode algebra gives the other conserved charges. The normal-ordered four-momentum is
 
 $$
-:\!P^{\mathrm{fop}\mu}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p^\mu
-\Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p^\mu=(E_{\vec p},\vec p),
+:\!P^{\mathrm{fop}}_\mu\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p_\mu
+\Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$
 
-and the normal-ordered electric charge, from $j^\mu=\bar\psi\gamma_\mu\psi$ with $j^0=\psi^\dagger\psi$, is
+and the normal-ordered electric charge, from $j_\mu=\bar\psi\gamma_\mu\psi$ with $j_0=\psi^\dagger\psi$, is
 
 $$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
@@ -411,7 +411,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p^\mu=(E_{\vec p},\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
+| $p_\mu=(E_{\vec p},\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
 | $\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$ | Biquaternionic mass-shell condition |
 | $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |

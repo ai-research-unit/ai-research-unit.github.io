@@ -14,7 +14,7 @@ This article develops the sandwich in the matrix model. It is the matrix form of
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian matrices, and $\mathbb{M}_-$, the anti-Hermitian matrices. The quaternionic norm is $N=\det M$. The modulus is $r=|\det M|^{1/2}$.
 
-**Boundaries.** The sandwich as an operator, its kernel and its image are *Operators of the Polar Word: The Common Framework*; the polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the matrix polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The sandwich as an operator, its kernel and its image are *Introduction to the Operators under N and Spectral Regularity and Degeneracy*; the polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the matrix polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 ## The Congruence
 
@@ -97,7 +97,7 @@ $$
 \Theta_M=r^2\,\Theta_U,
 $$
 
-because the central scalars commute and $\zeta\bar\zeta=1$. The image is a conformal transformation: a Lorentz transformation composed with the dilation of ratio $r^2$. On the four-dimensional space of anti-Hermitian matrices the determinant of $\Theta_M$ is $r^8$, and the image of the unit group is the conformal group $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$.
+because the central scalars commute and $\zeta\bar\zeta=1$. The image is a conformal transformation: a Lorentz transformation composed with the dilation of ratio $r^2$. On the real four-dimensional space of anti-Hermitian matrices the determinant of $\Theta_M$ is $r^8$, and the image of the unit group is the conformal group $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$.
 
 ## The Hermitian Half as a Congruence
 
@@ -113,7 +113,7 @@ $$
 
 because $|\det M|=r^2$. The determinant is not preserved; it is scaled by the fourth power of the modulus. The sign of the determinant is preserved, so the two cones of positive and negative determinant are each preserved. The factor $r^4$ is the reason the Hermitian half carries a conformal density rather than an invariant form.
 
-**The Minkowski reading.** Writing $X=a\mathrm I_2+\vec b\cdot\sigma$ with $a,b$ real, the determinant is $a^2-\lvert\vec b\rvert^2$, of signature $(1,3)$. The congruence is a linear transformation of the four-dimensional space preserving the form up to the factor $r^4$; after rescaling by $r^{-1}$ it is a Lorentz transformation. The Hermitian and anti-Hermitian readings are the same Lorentz action composed with the multiplication by $i$.
+**The Minkowski reading.** Writing $X=a\mathrm I_2+\vec b\cdot\sigma$ with $a,b$ real, the determinant is $a^2-\lvert\vec b\rvert^2$, of signature $(1,3)$. The congruence is a linear transformation of the real four-dimensional space preserving the form up to the factor $r^4$; after rescaling by $r^{-1}$ it is a Lorentz transformation. The Hermitian and anti-Hermitian readings are the same Lorentz action composed with the multiplication by $i$.
 
 **The positivity cone.** The positive semidefinite matrices form a cone inside the Hermitian half. The congruence preserves it, because $MXM^{\dagger}$ is positive semidefinite whenever $X$ is and $M$ is invertible. Its boundary is the null cone of the determinant, and the cone is the positivity cone of the Hermitian form.
 
@@ -183,7 +183,7 @@ The sandwich $\Theta_Q(X)=QXQ^{*}$ is the matrix congruence $MXM^{\dagger}$. It 
 ## Further Reading
 
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
-- [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the sandwich as an operator
+- [Introduction to the Operators under N and Spectral Regularity and Degeneracy](introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html), for the sandwich as an operator
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the factors
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the matrix factors
 - [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces

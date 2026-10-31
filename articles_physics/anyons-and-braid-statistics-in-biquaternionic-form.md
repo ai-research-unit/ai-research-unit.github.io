@@ -119,10 +119,10 @@ With the linking number of a single full loop verified to be $\pm1$ for the Hopf
 The field theory whose solitons and quasiparticles carry fractional statistics is the Chern–Simons theory. In $2+1$ dimensions the gauge field admits the topological term
 
 $$
-S_{\mathrm{CS}} = \frac{k}{4\pi}\int d^3x\;\varepsilon^{\mu\nu\rho}A_\mu\partial_\nu A_\rho ,
+S_{\mathrm{CS}} = \frac{k}{4\pi}\int d^3x\;\varepsilon_{\mu\nu\rho}A_\mu\partial_\nu A_\rho ,
 $$
 
-with $k$ the level. The term is gauge invariant (up to a surface term) and metric independent: it involves no metric, so it defines a topological field theory, with no local propagating degrees of freedom. Its physical content is entirely in the behavior of Wilson loops, which are the observables of the theory.
+with $k$ the level and $\varepsilon_{\mu\nu\rho}$ the Levi-Civita symbol, $\varepsilon_{012}=+1$; the lower-index symbol is the same array, so the term is unchanged. The term is gauge invariant (up to a surface term) and metric independent: it involves no metric, so it defines a topological field theory, with no local propagating degrees of freedom. Its physical content is entirely in the behavior of Wilson loops, which are the observables of the theory.
 
 ### Wilson Loops, Linking, and the Statistics Angle
 
@@ -269,7 +269,7 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $\exp(i\theta)=\exp(ie\Phi/2\hbar)$ | Exchange phase; half the Aharonov–Bohm phase $\exp(ie\Phi/\hbar)$ |
 | $\theta=2\pi s$ | Spin–statistics relation in $2+1$ dimensions |
 | $s$ | Statistics parameter of the anyon; $s=ϙ^2/2k$ for the Chern–Simons anyon |
-| $S_{\mathrm{CS}}=\frac{k}{4\pi}\int\varepsilon^{\mu\nu\rho}A_\mu\partial_\nu A_\rho$ | Abelian Chern–Simons action; level $k$ |
+| $S_{\mathrm{CS}}=\frac{k}{4\pi}\int\varepsilon_{\mu\nu\rho}A_\mu\partial_\nu A_\rho$ | Abelian Chern–Simons action; level $k$ |
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
 | $\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\rangle=\exp(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
 | $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and parameter of the charge-$ϙ$ anyon at level $k$ |

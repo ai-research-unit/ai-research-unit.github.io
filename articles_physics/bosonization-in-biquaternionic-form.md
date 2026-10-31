@@ -52,7 +52,7 @@ The dictionary is stated first in its standard form, then in the framework's not
 
 **The standard dictionary.** For a massless Dirac field $\psi$ and a real scalar $\phi$, with a normalisation constant $\alpha$ setting the short-distance cutoff,
 $$
-\boxed{\;\bar\psi\gamma_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon^{\mu\nu}\partial_\nu\phi ,
+\boxed{\;\bar\psi\gamma_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon_{\mu\nu}\partial_\nu\phi ,
 \qquad
 \bar\psi\psi \;\longleftrightarrow\; -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big)\;},
 $$
@@ -140,7 +140,7 @@ The equivalence is exact only with the anomaly included, and the framework's cou
 
 **The anomaly's role.** The dictionary's current relation and mass relation cannot both hold with the free-field stress tensor: the fermionic stress tensor and the bosonic one differ by a c-number, and the difference is the anomaly. Equivalently, the two-point function of the fermion current has a contact term that the boson's two-derivative two-point function reproduces only with the correct normalisation, and that normalisation is the central charge. In two dimensions the anomalous trace is
 $$
-T^\mu{}_\mu = \frac{c}{24\pi}R
+\sum_\mu\varepsilon_\mu T_{\mu\mu} = \frac{c}{24\pi}R
 $$
 from *The Trace Anomaly in Biquaternionic Form*, and the matching of $c$ on the two sides is the consistency condition the dictionary must satisfy.
 
@@ -162,7 +162,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 $$
 \big[j^0(x),j^1(y)\big] = \frac{i}{\pi}\,\frac{d\delta}{dx}(x-y),
 $$
-the **Schwinger term**. The term is the two-dimensional anomaly's coordinate-space form, and its coefficient is the same $1/\pi$ that appears in $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
+the **Schwinger term**. The term is the two-dimensional anomaly's coordinate-space form, and its coefficient is the same $1/\pi$ that appears in $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac1\pi\Box\phi$, with $j_{5\mu}=\bar\psi\gamma_\mu\gamma_5\psi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
@@ -203,7 +203,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $\bar\psi\gamma_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon^{\mu\nu}\partial_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $\bar\psi\gamma_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac1\pi\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j^0(x),j^1(y)]=\tfrac{i}{\pi}\frac{d\delta}{dx}(x-y)$; the vertex operators $\psi\sim\,:\!\exp(i\beta\phi)\!:$ with $\Delta=\beta^2/4\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana–Weyl fermion.
@@ -224,7 +224,7 @@ The non-abelian extension is stated and its status fixed.
 
 Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. In the two-dimensional reduction the Clifford data are $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_2$ with $g=\mathrm{diag}(+1,-1)$, $\gamma_5=\gamma_0\gamma_1=\mathrm{diag}(-1,+1)$, and $(\gamma_5)^2=+I_2$, so the chiralities are real; the dictionary is
 $$
-\bar\psi\gamma_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon^{\mu\nu}\partial_\nu\phi ,
+\bar\psi\gamma_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial_\nu\phi ,
 \qquad
 \bar\psi\psi\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
 \qquad
@@ -245,7 +245,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\tilde\Pi_{L,R}=\tfrac12(1\pm\gamma_5)$ | Chiral projectors; real in $d=2$ |
 | $\phi$ | Real boson field |
 | $\alpha$ | Short-distance cutoff in the dictionary |
-| $\epsilon^{\mu\nu}$ | Antisymmetric symbol, $\epsilon^{01}=+1$ |
+| $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$; the lower-index symbol is the same array |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
 | $:\!\exp(i\beta\phi)\!:$ | Vertex operator; scaling dimension $\Delta=\beta^2/4\pi$ |
 | $c$ | Central charge; $c=1$ for a Dirac fermion or a real boson |

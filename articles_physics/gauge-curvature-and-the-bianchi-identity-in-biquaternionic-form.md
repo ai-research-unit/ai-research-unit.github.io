@@ -136,10 +136,10 @@ $$
 The derivative index is paired with the form pair whose first index is the same index, and the three terms are the cyclic rotations of $(\lambda,\mu,\nu)$ applied to both the derivative index and the pair at once. The order matters: the sum $D_\lambda F_{\mu\nu}+D_\mu F_{\lambda\nu}+D_\nu F_{\mu\lambda}$, in which the second and third pairs are not the cyclic rotations, is generically nonzero, and was checked as a negative control. The cyclic sum is totally antisymmetric in the three indices, so contraction with the totally antisymmetric symbol gives the compact form
 
 $$
-\varepsilon^{\lambda\mu\nu\rho}\,D_\lambda F_{\mu\nu} = 0 .
+\varepsilon_{\lambda\mu\nu\rho}\,D_\lambda F_{\mu\nu} = 0 .
 $$
 
-The identity was recomputed for all $64$ ordered triples $(\lambda,\mu,\nu)$, on generic non-commuting, position-dependent connections, with residual identically zero.
+with $\varepsilon_{\lambda\mu\nu\rho}$ the Levi-Civita symbol, $\varepsilon_{0123}=+1$; the lower-index symbol is the same array as the raised one, so the contraction is unchanged. The identity was recomputed for all $64$ ordered triples $(\lambda,\mu,\nu)$, on generic non-commuting, position-dependent connections, with residual identically zero.
 
 ## The Bianchi Identity as the Jacobi Identity
 
@@ -254,7 +254,7 @@ $$
 
 where $\vec F = \sum_k F_k \vec e_k$ and $\mathrm{div},\mathrm{curl}$ are the three-dimensional operators acting on the coefficient triple, each exactly as displayed, with no residual. The zero set of either equation is eight real equations: a scalar constraint, which for $\tilde{\nabla}\tilde{F}=0$ reads $\mathrm{div}\,\vec E = 0$ and $\mathrm{div}\,\vec H = 0$, together with the six real components of a vector equation, $\partial/\partial Q_t\,\vec F = -\mathrm{curl}\,\vec F$. The Bianchi identity in the abelian sector, by contrast, is the four real equations $\mathrm{div}\,\vec B = 0$ and $\partial/\partial t'\vec B + \mathrm{curl}\,\vec E = 0$. Eight equations are not four, and the scalar constraint has no counterpart in a three-index antisymmetric identity; the parent's negative result — that the one-line equation $\tilde{\nabla}\tilde{F}=0$ is the source-free field system and not the Bianchi identity — therefore stands, and the recomputation here confirms the structural reason rather than merely inheriting the verdict.
 
-The structural reason is that the Bianchi identity is a three-index antisymmetric statement — a $3$-form — whereas a biquaternion product of the gradient (one index) with the curvature (a two-index algebra element) contracts its indices through the algebra, producing the scalar and vector combinations displayed above rather than the cyclic sum over three distinct indices. Contracting the Bianchi identity with the totally antisymmetric symbol does convert it into a four-component vector equation, $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu} = 0$. But the antisymmetric symbol is extra structure: it is not contained in the algebra product, and this is a rewriting of the four contracted equations rather than an algebra-intrinsic one-line Bianchi. **This is a gap, and it is recorded as one:** the framework does not, without extra structure, supply a single biquaternion equation carrying the Bianchi identity.
+The structural reason is that the Bianchi identity is a three-index antisymmetric statement — a $3$-form — whereas a biquaternion product of the gradient (one index) with the curvature (a two-index algebra element) contracts its indices through the algebra, producing the scalar and vector combinations displayed above rather than the cyclic sum over three distinct indices. Contracting the Bianchi identity with the totally antisymmetric symbol does convert it into a four-component vector equation, $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu} = 0$. But the antisymmetric symbol is extra structure: it is not contained in the algebra product, and this is a rewriting of the four contracted equations rather than an algebra-intrinsic one-line Bianchi. **This is a gap, and it is recorded as one:** the framework does not, without extra structure, supply a single biquaternion equation carrying the Bianchi identity.
 
 ## Open Questions
 
@@ -292,9 +292,9 @@ $$
 \boxed{\;D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0\;},
 $$
 
-with the cyclic order as displayed, equivalently $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. It is the **operator Jacobi identity** with the curvature identity substituted into it: $[D_\lambda,[D_\mu,D_\nu]]+\text{cyclic}=0$ becomes $i\kappa(D_\lambda F_{\mu\nu}+\text{cyclic})=0$. In the coordinate proof a second, algebraic Jacobi identity $[\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]]+\text{cyclic}=0$ kills the nested-commutator terms, via the derivation property of the adjoint action. Both identities are exact and were verified on $\mathrm{SU}(2)$; the abelian case is trivially zero and is not evidence.
+with the cyclic order as displayed, equivalently $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. It is the **operator Jacobi identity** with the curvature identity substituted into it: $[D_\lambda,[D_\mu,D_\nu]]+\text{cyclic}=0$ becomes $i\kappa(D_\lambda F_{\mu\nu}+\text{cyclic})=0$. In the coordinate proof a second, algebraic Jacobi identity $[\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]]+\text{cyclic}=0$ kills the nested-commutator terms, via the derivation property of the adjoint action. Both identities are exact and were verified on $\mathrm{SU}(2)$; the abelian case is trivially zero and is not evidence.
 
-Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $\tilde{\nabla}^{\natural}\tilde{F} = \mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F-\mathrm{curl}\,\vec F$ and $\tilde{\nabla}\tilde{F} = -\mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F+\mathrm{curl}\,\vec F$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
+Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $\tilde{\nabla}^{\natural}\tilde{F} = \mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F-\mathrm{curl}\,\vec F$ and $\tilde{\nabla}\tilde{F} = -\mathrm{div}(\vec F)e_t+\partial/\partial Q_t\,\vec F+\mathrm{curl}\,\vec F$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
 
 ## Summary of Notation
 
@@ -319,10 +319,10 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |
 | $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu}=0$ | Bianchi identity (cyclic order as shown) |
-| $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |
+| $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_kF_k\vec e_k$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
-| $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Gauge-invariant Yang–Mills density (matrix trace) |
+| $-\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ | Gauge-invariant Yang–Mills density (matrix trace) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

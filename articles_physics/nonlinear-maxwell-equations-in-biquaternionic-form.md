@@ -117,7 +117,7 @@ $$
 
 which the paper expands into a two-line vector form, its (3.13), and then into the four-equation form of its (3.14). Here $D = (\partial/\partial t', \nabla)$ is the gradient biquaternion and $DF$ is its product on the left with $F$, its (3.8) and (3.9) giving the left and right actions. The paper states in the same place that (3.11), (3.12) and (3.13) are each equivalent to (3.14), which is the component form; the later sections cite the same equation as (3.11), (3.13) and (3.14) interchangeably, and the numbers are reproduced here as the paper prints them rather than regularised.
 
-This is the whole content of the derivation: one conservation law, one quadratic form, one gradient. The corpus's own *Exercise: The Electromagnetic Energy–Momentum Tensor* obtains the four-divergence balance $\partial/\partial Q_\mu T^{\mu\nu} = -f^\nu$ from the field-strength bilinear; the paper's route is the same balance written as a biquaternion and set to zero, and the two sections are companion interpretations of the same law.
+This is the whole content of the derivation: one conservation law, one quadratic form, one gradient. The corpus's own *Exercise: The Electromagnetic Energy–Momentum Tensor* obtains the four-divergence balance $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial Q_\mu = -f_\nu$ from the field-strength bilinear; the paper's route is the same balance written as a biquaternion and set to zero, and the two sections are companion interpretations of the same law.
 
 ### The Four Equations, in Three Forms
 

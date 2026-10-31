@@ -224,8 +224,8 @@ An integer-spin field is quantized with commutators, not anticommutators. The mo
 $$
 \Phi^{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\chi^r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip_\mu x^\mu)
-+ \chi^{r*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip_\mu x^\mu)
+\chi^r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip\cdot x)
++ \chi^{r*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip\cdot x)
 \right],
 $$
 

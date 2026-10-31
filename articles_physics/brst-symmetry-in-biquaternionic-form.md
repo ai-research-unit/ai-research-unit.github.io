@@ -22,7 +22,7 @@ The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-i
 
 ### The Gauge-Fixed Lagrangian
 
-The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14F_{\mu\nu}F^{\mu\nu}$ is invariant under $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The gauge is fixed by adding to the Lagrangian a term that is not gauge invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the gauge-fixing and ghost terms are
+The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ is invariant under $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The gauge is fixed by adding to the Lagrangian a term that is not gauge invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the gauge-fixing and ghost terms are
 
 $$
 \mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac12\xi B^2,
@@ -30,7 +30,7 @@ $$
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$
 
-with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac12\xi B^aB^a$ and the ghost term $-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$, with $D_\mu c^a=\partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c$.
+with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B^a\sum_\mu\partial A^a_\mu/\partial Q_\mu+\tfrac12\xi B^aB^a$ and the ghost term $-\bar{c}^a\sum_\mu\partial(D_\mu c)^a/\partial Q_\mu$, with $D_\mu c^a=\partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c$.
 
 The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
 
@@ -161,7 +161,7 @@ $$
 \Psi = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\xi}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\Psi = \bar{c}^a\left(\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^a\right)
+\Psi = \bar{c}^a\left(\sum_\mu\partial A^a_\mu/\partial Q_\mu+\tfrac{\xi}{2}B^a\right)
 \qquad\text{(non-abelian)} .
 $$
 
@@ -185,7 +185,7 @@ $$
 s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\Psi = 0 .
 $$
 
-The non-abelian case is the same computation with the covariant derivative, $s\Psi=B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^aB^a-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$, so that the ghost Lagrangian is $-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$ and the gauge-fixing Lagrangian is $B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^aB^a$.
+The non-abelian case is the same computation with the covariant derivative, $s\Psi=B^a\sum_\mu\partial A^a_\mu/\partial Q_\mu+\tfrac{\xi}{2}B^aB^a-\bar{c}^a\sum_\mu\partial(D_\mu c)^a/\partial Q_\mu$, so that the ghost Lagrangian is $-\bar{c}^a\sum_\mu\partial(D_\mu c)^a/\partial Q_\mu$ and the gauge-fixing Lagrangian is $B^a\sum_\mu\partial A^a_\mu/\partial Q_\mu+\tfrac{\xi}{2}B^aB^a$.
 
 The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\Psi$ is a Grassmann-odd element of the envelope, $s\Psi$ is its image, and the physical states are the cohomology of $s$, as below.
 
@@ -288,7 +288,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $s$ | BRST operator: Grassmann-odd derivation, $\mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1$ |
 | $sA_\mu^a=(D_\mu c)^a$, $sc^a=-\tfrac{g}{2}f^{abc}c^bc^c$, $s\bar{c}^a=B^a$, $sB^a=0$ | Non-abelian BRST transformations |
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
-| $\Psi=\bar{c}^a(\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ |
+| $\Psi=\bar{c}^a(\sum_\mu\partial A^a_\mu/\partial Q_\mu+\tfrac{\xi}{2}B^a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ |
 | $\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
 | $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}_1=[i\mathcal{Q},\tilde{Q}_1]_\pm$ | BRST charge |
 | $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |

@@ -80,7 +80,7 @@ The second condition is unitality. The algebra endomorphisms that are bijective 
 
 *Proof.* Fix an isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. Every automorphism of a central simple algebra is inner, by the Skolem–Noether theorem, so it has the form $x\mapsto uxu^{-1}$ for a unit $u$. The units that give the identity are the central ones, $\mathbb{C}^{\times}\mathrm{I}_2$. Hence the group is $GL_2(\mathbb{C})/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$, of complex dimension $4-1=3$.
 
-**A group, not a subspace.** The automorphisms are cut out by a condition quadratic in the operator, so they form a group and not a subspace: the sum of two automorphisms is generally not an automorphism. The dimension three is that of the group, and it agrees with the dimension of its tangent space at the identity, computed in the next subsection.
+**A group, not a subspace.** The automorphisms are cut out by a condition quadratic in the operator, so they form a group and not a subspace: the sum of two automorphisms is generally not an automorphism. The complex dimension three is that of the group, and it agrees with the dimension of its tangent space at the identity, computed in the next subsection.
 
 **What an automorphism preserves.** An automorphism preserves the product, the unit and every verbal property of the algebra. It does not preserve a form, a conjugation or a norm, because none of them is part of the algebra structure. The inner automorphisms are written $\operatorname{Ad}_u$ with $\operatorname{Ad}_u(x)=uxu^{-1}$, and the kernel of $u\mapsto\operatorname{Ad}_u$ is the centre.
 
@@ -102,7 +102,7 @@ $$
 
 and $\operatorname{ad}_{\tilde Q}=0$ exactly when $\tilde Q$ is central. Hence $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, of complex dimension $3$.
 
-*Proof.* The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is central simple, so every derivation is inner; this is the standard theorem for central simple algebras. The kernel of $\tilde Q\mapsto\operatorname{ad}_{\tilde Q}$ is the centre $\mathbb{C}e_t$, by definition of the centre. The dimension is $4-1=3$.
+*Proof.* The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is central simple, so every derivation is inner; this is the standard theorem for central simple algebras. The kernel of $\tilde Q\mapsto\operatorname{ad}_{\tilde Q}$ is the centre $\mathbb{C}e_t$, by definition of the centre. The complex dimension is $4-1=3$.
 
 **The one display of the regular operators.** The display above is the only place in this article where the regular operators occur, and only through their difference: $\operatorname{ad}_{\tilde Q}(x)=\tilde Qx-x\tilde Q$. The first summand is the left regular operator and the second the right one. They are defined, their laws are proved and their matrices are computed in Part II and Part III; this article uses them only to name the inner derivations, and the identity $\operatorname{ad}_{\tilde Q}=L_{\tilde Q}-R_{\tilde Q}$ is their definition there, not a new object here.
 

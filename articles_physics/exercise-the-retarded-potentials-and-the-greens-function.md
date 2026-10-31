@@ -220,7 +220,7 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 $$
 S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c^2}\partial/\partial t'\,\phi + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\partial/\partial Q_\mu A^\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}$ solves $\Box\tilde{A} = -\mu\tilde J$ and $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$, applying $\tilde{\nabla}^{\natural}$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial Q_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}$ solves $\Box\tilde{A} = -\mu\tilde J$ and $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$, applying $\tilde{\nabla}^{\natural}$ and taking the scalar part gives
 $$
 \Box S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\,\Box\tilde{A}\right) = -\mu\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J\right) = -\mu\left(\partial/\partial t'\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$

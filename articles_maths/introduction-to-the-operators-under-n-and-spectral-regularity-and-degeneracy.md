@@ -1,10 +1,12 @@
-# __Operators of the Polar Word: The Common Framework__
+# __Introduction to the Operators under N and Spectral Regularity and Degeneracy__
 
 ## Introduction
 
 Three operators carry the polar word $\tilde Q=\tilde Q_H\tilde Q_0$ on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$. This article states what they have in common: their definitions, their multiplicativity, the doubling rule that passes from the element to the sandwich, and the table of the four sectors. It proves nothing about a particular sector. The values of the rank, the spectrum and the Jordan type on each sector belong to the four companion pairs, and the matrix reading of the sandwich belongs to the two matrix-model articles.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$ and the squares $\vec e_k^{2}=-e_t$. The complex unit $i$ is central. The quaternionic norm is $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and the vector form is $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$.
+
+**Forward pointers.** The operator theory of the sandwich, with its multiplicativity and its parameter modulo the central phase, is *The Hermitian Sandwich: Definition and Multiplicativity*. Its two matrix models are *$M_2(\mathbb{C})$ Model : The Sandwich* and *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich*. The eight sector articles are the four sector pairs of the Further Reading, one one-sided and one sandwich article for each of the four sectors.
 
 ## The Three Operators
 
@@ -102,6 +104,10 @@ The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\t
 
 The two tables are the whole sector theory in one page. Along each row the rank drops when $N=0$, and the Jordan type leaves the semisimple case when $B^{2}=0$; on the scalar line $\Sigma_{10}^{\mathrm{s}}$ the element is central and the operator is a scalar multiple of the identity, so the defective types belong to the Jordan part alone. Along each column the sandwich replaces the one-sided eigenvalue $\lambda_i$ by the product $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum.
 
+## Summary
+
+The polar word carries three operators on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\Theta_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q}$. All three are $\mathbb{C}$-linear; the one-sided maps are injective exactly on the units, the sandwich is invertible exactly on the units, and its kernel is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. The three are multiplicative, with the order reversed on the right and restored on the sandwich; the sandwich kills the central phase and squares the scale and the singular value. The four sectors, indexed by $N$ and $B^{2}$, give the rank, the spectrum and the Jordan type of the three operators; the sandwich spectrum is the four products $\lambda_i\bar\lambda_j$. The operator theory of the sandwich, with its multiplicativity and its parameter modulo the central phase, is *The Hermitian Sandwich: Definition and Multiplicativity*; its matrix readings are the two Model articles; the eight sector articles are the four sector pairs of the Further Reading.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -124,5 +130,6 @@ The two tables are the whole sector theory in one page. Along each row the rank 
 - [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html) and [The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent case and the Jordan types $2+2$ and $3+1$.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-regular-biquaternion.html) and [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank-one polar pair and the oblique projection.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html) and [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case and the single chain.
+- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the sandwich as an operator, its multiplicativity, its norm and its parameter modulo the central phase.
 - [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html) and [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the congruence $X\mapsto MXM^{\dagger}$ in the two matrix models.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the polar word itself.

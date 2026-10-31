@@ -6,15 +6,15 @@ The action of a biquaternion on the algebra is the sandwich
 $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$
-In the regular model it is the congruence $X\mapsto MXM^{\dagger}$ on $4\times4$ matrices. On the anti-Hermitian half the congruence is a Lorentz transformation on a four-dimensional real subspace; on the Hermitian half it is a congruence of a real quadratic form, governed by Sylvester's law of inertia. The two readings differ by the central factor $i$ that exchanges the halves.
+In the regular model it is the congruence $X\mapsto MXM^{\dagger}$ on $4\times4$ matrices. On the anti-Hermitian half the congruence is a Lorentz transformation on a real four-dimensional subspace; on the Hermitian half it is a congruence of a real quadratic form, governed by Sylvester's law of inertia. The two readings differ by the central factor $i$ that exchanges the halves.
 
 This article develops the sandwich in the regular model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Sandwich*.
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
 
-**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+**Boundaries.** The sandwich as an operator is *Introduction to the Operators under N and Spectral Regularity and Degeneracy*; the polar decomposition is *$M_4(\mathbb{C})_{\mathbb{B}}$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
-**Frame.** The statements of this article are frame-independent: they concern the operator $\Theta_{\tilde Q}$ and the congruence $X\mapsto MXM^{\dagger}$, not the entries of a particular display. Where a matrix display is read, this article uses the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because the four-vector reading is entrywise there: a Hermitian element is a real scalar matrix plus $i$ times a real skew-symmetric matrix, and an anti-Hermitian element is the reverse. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. Each basis is orthogonal with all four vectors of one norm, so the star is the matrix dagger in both: $\mathsf M_4^{L}(\tilde Q^{*})=M^{\dagger}$. The frames differ in the transpose, not in the dagger; *The Old $M_4(\mathbb{C})_L$ Regular Representation : An Archive* records the two changes of frame and the retired order.
+**Frame.** The statements of this article are frame-independent: they concern the operator $\Theta_{\tilde Q}$ and the congruence $X\mapsto MXM^{\dagger}$, not the entries of a particular display. The four-vector sections read matrices in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because the four-vector reading is entrywise there: a Hermitian element is a real scalar matrix plus $i$ times a real skew-symmetric matrix, and an anti-Hermitian element is the reverse. The tensor display of §*The Tensor Display* uses the canonical Peirce frame, where $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. Each display declares its frame, and the two are not mixed. The canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, is the Peirce frame. Each basis is orthogonal with all four vectors of one norm, so the star is the matrix dagger in both: $\mathsf M_4^{L}(\tilde Q^{*})=M^{\dagger}$. The frames differ in the transpose, not in the dagger; *The Old $M_4(\mathbb{C})_L$ Regular Representation : An Archive* records the two changes of frame and the retired order.
 
 ## The Congruence
 
@@ -26,7 +26,7 @@ is the image of the sandwich $\Theta_{\tilde Q}(\tilde X)$ under $\mathsf{M}_4^{
 $$
 \Theta_M(XY)=\Theta_M(X)\,\Theta_M(Y)
 $$
-holds exactly when $M$ is a scalar multiple of a $*$-unitary matrix, because the two sides differ by the factor $M^{\dagger}M$.
+holds exactly when $M$ is $*$-unitary, because the two sides differ by the factor $M^{\dagger}M$.
 
 *Proof.* The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities.
 
@@ -46,6 +46,57 @@ N(\Theta_Q(X))=\lvert N(Q)\rvert^2N(X),
 $$
 and the zero divisors are mapped to zero divisors.
 
+## The Tensor Display
+
+**The frame.** This section reads the sandwich in the canonical Peirce frame $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Two Frames*, the frame in which $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The coefficient frame is the one of the four-vector sections below; the two displays are not mixed.
+
+### The Rule $\operatorname{conj}(\mathsf M_2(\tilde Q))\otimes\mathsf M_2(\tilde Q)$
+
+**The two factors.** The left and right regular matrices are
+
+$$
+\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q),\qquad
+\mathsf M_4^{R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2.
+$$
+
+The star is the dagger, $\mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}$; in the $2\times2$ model, $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$.
+
+**The rule.** The sandwich is the composite $L_{\tilde Q}R_{\tilde Q^{*}}$, so its matrix is
+
+$$
+\mathsf M_4^{L}(\Theta_{\tilde Q})
+=(I_2\otimes\mathsf M_2(\tilde Q))(\mathsf M_2(\tilde Q^{*})^{\mathsf T}\otimes I_2)
+=\mathsf M_2(\tilde Q^{*})^{\mathsf T}\otimes\mathsf M_2(\tilde Q)
+=\operatorname{conj}(\mathsf M_2(\tilde Q))\otimes\mathsf M_2(\tilde Q).
+$$
+
+The last equality is $\mathsf M_2(\tilde Q^{*})^{\mathsf T}=(\mathsf M_2(\tilde Q)^{\dagger})^{\mathsf T}=\operatorname{conj}(\mathsf M_2(\tilde Q))$. The bar, not the transpose, is the second factor: the transpose form $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$ is a different matrix.
+
+**The reading.** The two $2\times2$ factors give a $4\times4$ matrix; the Kronecker product is the matrix of the operator in the Peirce frame. It is not the $4\times4$ matrix of the algebra element: the element matrix is $\mathsf M_2(\tilde Q)$, and the operator matrix is the tensor product. The distinction is the one of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Three Objects Called Matrices*.
+
+### The Check at a Vector Unit
+
+**The check.** Take $\tilde Q=e_y$ and $\tilde X=e_t$. The sandwich gives
+
+$$
+\Theta_{e_y}(e_t)=e_y\,e_t\,e_y^{*}=-e_y^{2}=e_t.
+$$
+
+In the $2\times2$ model, $\mathsf M_2(e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, which is real, so $\operatorname{conj}(\mathsf M_2(e_y))=\mathsf M_2(e_y)$ and the rule gives $\mathsf M_2(e_y)\otimes\mathsf M_2(e_y)$. The coordinate column of $e_t$ in the Peirce frame is $(1,0,0,1)^{\mathsf T}$, and
+
+$$
+(\mathsf M_2(e_y)\otimes\mathsf M_2(e_y))(1,0,0,1)^{\mathsf T}=(1,0,0,1)^{\mathsf T},
+$$
+
+so the rule returns $e_t$. The transpose form is
+
+$$
+\mathsf M_2(e_y)^{\mathsf T}\otimes\mathsf M_2(e_y)
+=-\mathsf M_2(e_y)\otimes\mathsf M_2(e_y),
+$$
+
+because $\mathsf M_2(e_y)^{\mathsf T}=-\mathsf M_2(e_y)$; it sends $(1,0,0,1)^{\mathsf T}$ to $-(1,0,0,1)^{\mathsf T}$, that is, to $-e_t$. The two differ in sign. The check at the vector unit is the reason the second factor is the conjugate and not the transpose.
+
 ## The Anti-Hermitian Half as Four-Vectors
 
 **The four-vector.** An anti-Hermitian element is written
@@ -63,7 +114,7 @@ the Lorentzian quadratic form of signature $(3,1)$. The four elements $i e_t,\ve
 $$
 \det X=N(X)^2=(-a^2+\lvert\vec b\rvert^2)^2,
 $$
-the square of the Minkowski form. The four-dimensional real subspace is the image of the anti-Hermitian elements; on it the congruence acts as a Lorentz transformation, while on the full sixteen-dimensional space it preserves the quartic determinant.
+the square of the Minkowski form. The four-dimensional real subspace is the image of the anti-Hermitian elements; on it the congruence acts as a Lorentz transformation, while on the full complex sixteen-dimensional space it preserves the quartic determinant.
 
 **The unit-norm action.** Let $\lvert N(Q)\rvert=1$, so $\lvert\det M\rvert=1$. Then
 $$
@@ -99,11 +150,11 @@ $$
 $$
 because $\lvert\det M\rvert=\lvert N\rvert^2=r^4$. The determinant is not preserved; it is scaled by the eighth power of the modulus $r$. The sign of the determinant is preserved, so the two cones of positive and negative determinant are each preserved.
 
-**The Minkowski reading.** On the four-dimensional Hermitian subspace, write $X=a e_t+i\vec b\cdot\vec e$ with $a,b$ real; the norm is
+**The Minkowski reading.** On the real four-dimensional Hermitian subspace, write $X=a e_t+i\vec b\cdot\vec e$ with $a,b$ real; the norm is
 $$
 N(X)=a^2-\lvert\vec b\rvert^2,
 $$
-of signature $(1,3)$. The congruence is a linear transformation of the four-dimensional space preserving the form up to the factor $r^4$; after rescaling by $r^{-2}$ it is a Lorentz transformation. The Hermitian and anti-Hermitian readings are the same Lorentz action composed with the multiplication by $i$.
+of signature $(1,3)$. The congruence is a linear transformation of the real four-dimensional space preserving the form up to the factor $r^4$; after rescaling by $r^{-2}$ it is a Lorentz transformation. The Hermitian and anti-Hermitian readings are the same Lorentz action composed with the multiplication by $i$.
 
 **The positivity cone.** The positive semidefinite matrices form a cone inside the Hermitian half. The congruence preserves it, because $MXM^{\dagger}$ is positive semidefinite whenever $X$ is and $M$ is invertible. Its boundary is the null cone of the determinant, and the cone is the positivity cone of the Hermitian form.
 
@@ -115,7 +166,7 @@ X\in\mathbb{M}_+\iff iX\in\mathbb{M}_-.
 $$
 The sandwich commutes with this exchange, because $i$ is central. The two halves are therefore one action read in two real forms, and the Lorentz transformation on the anti-Hermitian half is the same as the congruence on the Hermitian half composed with the exchange.
 
-**The invariant form.** The determinant is the invariant of the congruence up to the conformal factor. On the four-dimensional subspaces it is the square of the Minkowski form; on the full sixteen-dimensional space it is the quartic invariant. The two readings have the same conformal group and the same causal structure.
+**The invariant form.** The determinant is the invariant of the congruence up to the conformal factor. On the real four-dimensional subspaces it is the square of the Minkowski form; on the full complex sixteen-dimensional space it is the quartic invariant. The two readings have the same conformal group and the same causal structure.
 
 **The kernel and the image.** The kernel of the action on the anti-Hermitian subspace is $\{\pm\mathrm I_4\}$, the same as in the $2\times2$ model. The image is the proper orthochronous Lorentz group for the unit-norm elements, and the conformal group for the general elements.
 
@@ -133,7 +184,7 @@ The sandwich commutes with this exchange, because $i$ is central. The two halves
 
 ## Summary
 
-The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices. It preserves the Hermitian and anti-Hermitian halves and the null cone. On the four-dimensional anti-Hermitian subspace it is a Lorentz transformation; on the four-dimensional Hermitian subspace it is a congruence preserving inertia. The determinant scales by $\lvert\det M\rvert^2=\lvert N\rvert^4=r^8$, and the algebra norm scales by $r^4$. The unit-norm group acts as $SO^{+}(1,3)$ through a twofold cover, and the general unit group acts conformally.
+The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices. It preserves the Hermitian and anti-Hermitian halves and the null cone. On the real four-dimensional anti-Hermitian subspace it is a Lorentz transformation; on the real four-dimensional Hermitian subspace it is a congruence preserving inertia. The determinant scales by $\lvert\det M\rvert^2=\lvert N\rvert^4=r^8$, and the algebra norm scales by $r^4$. The unit-norm group acts as $SO^{+}(1,3)$ through a twofold cover, and the general unit group acts conformally.
 
 ## Summary of Notation
 
@@ -152,4 +203,4 @@ The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices.
 - [$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
 - [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the $2\times2$ version
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
-- [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the operator
+- [Introduction to the Operators under N and Spectral Regularity and Degeneracy](introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html), for the operator

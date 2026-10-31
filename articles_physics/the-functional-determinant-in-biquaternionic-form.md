@@ -205,7 +205,7 @@ Under a local rescaling of the metric, $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$, 
 $$
 \delta_\sigma\log\det S^{(2)} \ne 0 ,
 \qquad
-\big\langle T^\mu_{\ \mu}\big\rangle = -\frac{1}{\sqrt{g}}\,g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
+\big\langle \sum_\mu\varepsilon_\mu T_{\mu\mu}\big\rangle = -\frac{1}{\sqrt{g}}\sum_{\mu,\nu}g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
 the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **trace anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Trace Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
 

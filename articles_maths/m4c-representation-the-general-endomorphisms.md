@@ -136,7 +136,7 @@ where $c_2$ and $c_3$ are the elementary symmetric functions of the eigenvalues,
 
 ### The Rank and the Image
 
-**Definition (rank).** The **rank** of an operator is the dimension of its image,
+**Definition (rank).** The **rank** of an operator is the complex dimension of its image,
 
 $$
 \operatorname{rank}F=\dim_{\mathbb{C}}\operatorname{im}F .

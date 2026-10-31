@@ -57,21 +57,14 @@ The four blocks are scalar multiples of the $2\times2$ identity, and the two off
 $$
 \mathsf M_4^{R}(\tilde Q)=
 \begin{pmatrix}
-Q_t-iQ_z&-iQ_x-Q_y&0&0\\
--iQ_x+Q_y&Q_t+iQ_z&0&0\\
-0&0&Q_t-iQ_z&-iQ_x-Q_y\\
-0&0&-iQ_x+Q_y&Q_t+iQ_z
-\end{pmatrix}^{\mathsf T}
-=
-\begin{pmatrix}
-Q_t-iQ_z&-iQ_x+Q_y&0&0\\
--iQ_x-Q_y&Q_t+iQ_z&0&0\\
-0&0&Q_t-iQ_z&-iQ_x+Q_y\\
-0&0&-iQ_x-Q_y&Q_t+iQ_z
+Q_t-iQ_z&0&-iQ_x+Q_y&0\\
+0&Q_t-iQ_z&0&-iQ_x+Q_y\\
+-iQ_x-Q_y&0&Q_t+iQ_z&0\\
+0&-iQ_x-Q_y&0&Q_t+iQ_z
 \end{pmatrix}.
 $$
 
-The transpose exchanges the two off-diagonal entries of each block, and it does not move the block diagonal.
+The transpose exchanges the two off-diagonal entries of $\mathsf M_2(\tilde Q)$, and the identity factor spreads each entry of the transposed $2\times2$ matrix into a $2\times2$ block.
 
 ## The Four Basis Matrices
 
@@ -244,7 +237,7 @@ the square of the $2\times2$ characteristic polynomial. The minimal polynomial i
 
 **The display.** The left matrix is block diagonal with two equal blocks $\mathsf M_2(\tilde Q)$; the right matrix has four scalar blocks $M_{ij}(\tilde Q)I_2$ and mixes the two Peirce columns. The left matrix preserves the two columns, the right matrix preserves the two rows.
 
-**The $y$ sign.** The left matrix is $L_y=-i\sigma_2\otimes I_2=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix}$; the right matrix is $R_y=+i\sigma_2\otimes I_2=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}$. The two differ by the transpose of the generator, and the difference is a sign, not a convention.
+**The $y$ sign.** The left matrix is $L_y=I_2\otimes(-i\sigma_2)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}$; the right matrix is $R_y=(+i\sigma_2)\otimes I_2=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}$. The two differ by the transpose of the generator, and the difference is a sign, not a convention.
 
 **The side of the ideals.** The image of $L_{\tilde Q}$ is the right ideal $\tilde Q\mathbb{B}$; the image of $R_{\tilde Q}$ is the left ideal $\mathbb{B}\tilde Q$. The two ideals are different in general, and the side of each is opposite to the side of the multiplication that produces it.
 
