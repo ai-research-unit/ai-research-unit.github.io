@@ -109,7 +109,7 @@ The sentence "the complex structure produces the metric" has two parts, and it i
 $$
 g_{\mu\nu}=\mathrm{diag}\!\left(-c^2,\,1,\,1,\,1\right),
 \qquad
-ds^2=g_{\mu\nu}\,dx^\mu dx^\nu=-c^2\,d{t'}^2+dx^2+dy^2+dz^2 .
+ds^2=\sum_{\mu,\nu}g_{\mu\nu}\,dx_\mu dx_\nu=-c^2\,d{t'}^2+dx^2+dy^2+dz^2 .
 $$
 
 So $c$ is the conversion factor that turns the statement "time is imaginary" into a statement about lengths. The phase $i$ says that the temporal direction is the imaginary one; the scale $c$ says how much imaginary time corresponds to a unit of physical time, and therefore how the temporal direction is measured against the three spatial directions. Given the phase and the scale, the metric is determined.

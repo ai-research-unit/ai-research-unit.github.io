@@ -104,7 +104,7 @@ $$
 \partial\psi\gamma_{21} = \frac{\exp(\gamma_5\beta)}{2\rho}\,J\,\psi + \lambda\,\psi\gamma_0 + \gamma_5\kappa\,\psi\gamma_0 ,
 $$
 
-with $\lambda$ and $\kappa$ the two scalars built from the bivector $\Omega=v^\mu\Omega_\mu$. Its free case $J=0$ is
+with $\lambda$ and $\kappa$ the two scalars built from the bivector $\Omega=\sum_\mu g_{\mu\mu}\,v_\mu\Omega_\mu$. Its free case $J=0$ is
 
 $$
 \partial\psi\gamma_{21} = \lambda\,\psi\gamma_0 + \gamma_5\kappa\,\psi\gamma_0 ,

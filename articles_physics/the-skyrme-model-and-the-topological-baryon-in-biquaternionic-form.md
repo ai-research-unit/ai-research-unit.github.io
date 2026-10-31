@@ -16,7 +16,7 @@ The findings are the following.
 
 - **Established, and recomputed below.** The topological current
 $$
-B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
+B^\mu = \frac{1}{24\pi^2}\,\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
 j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U ,
 $$
@@ -145,7 +145,7 @@ Baryon number is the degree of the skyrmion field, and it is computed from the f
 **The topological current.** Define
 
 $$
-\boxed{\;B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
+\boxed{\;B^\mu = \frac{1}{24\pi^2}\,\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
 j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\;}
 $$
@@ -251,7 +251,7 @@ $$
 and the topological current is
 
 $$
-B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
+B^\mu = \frac{1}{24\pi^2}\,\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
 \partial_\mu B^\mu = 0 \text{ identically.}
 $$
@@ -275,7 +275,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $\mathcal{L}_2 = -\frac{f_\pi^2}{2}\mathrm{Sc}(\bar j_\mu j_\mu)$ | Two-derivative (chiral) term |
 | $\mathcal{L}_4 = \frac{1}{16e^2}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ | Skyrme term |
 | $f_\pi, e$ | Decay constant; dimensionless Skyrme parameter |
-| $B^\mu = \frac{1}{24\pi^2}\varepsilon^{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
+| $B^\mu = \frac{1}{24\pi^2}\varepsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
 | $B = \int d^3x\,B^0$ | Winding number; baryon number |
 | $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
 | $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$ | Hedgehog ansatz |

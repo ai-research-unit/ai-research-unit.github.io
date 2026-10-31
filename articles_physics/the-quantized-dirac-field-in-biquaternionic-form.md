@@ -208,7 +208,7 @@ and it is the generator of the algebra's central $\mathrm{U}(1)$, the same phase
 The conserved current is the bilinear
 
 $$
-J^\mu(x)=\,:\!\bar{\psi^{\mathrm{fop}}}(x)\gamma_\mu\psi^{\mathrm{fop}}(x)\!:,
+J_\mu(x)=\,:\!\bar{\psi^{\mathrm{fop}}}(x)\gamma_\mu\psi^{\mathrm{fop}}(x)\!:,
 $$
 
 normal-ordered, Hermitian for $\mu=0$ and Hermitian up to the metric for the spatial components, and even under fermion parity. It is conserved as an operator equation,
@@ -228,7 +228,7 @@ $$
 
 with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms, $J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma_0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
+In biquaternion terms, $J_\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma_0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
 
 ### Spin
 
@@ -342,7 +342,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
 | $(-1)^F$ | Fermion parity; $(-1)^F\psi^{\mathrm{fop}}(-1)^F=-\psi^{\mathrm{fop}}$ |
-| $H,P^{\mathrm{fop}},Ϙ^{\mathrm{fop}},J^\mu,S^k$ | Operator-valued energy, momentum, charge, current, spin |
+| $H,P^{\mathrm{fop}},Ϙ^{\mathrm{fop}},J_\mu,S^k$ | Operator-valued energy, momentum, charge, current, spin |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\tilde P=iHe_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |

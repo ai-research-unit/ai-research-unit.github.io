@@ -115,14 +115,13 @@ $$
 Ϙ=\frac{1}{8\pi^2}\oint_{\partial\mathbb R^4}\Omega_{\mathrm{CS}} ,
 $$
 
-a surface integral over the three-sphere at infinity. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. In the abelian case the density collapses to the framework's second invariant,
+a surface integral over the three-sphere at infinity. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. In the abelian case the density collapses to the framework's second invariant. Every index is low, and the alternating symbol is the orientation density, fixed once by $\epsilon_{0123}=+1$: it is not a metric tensor, so its height carries no sign, and its four labels are summed explicitly.
 
 $$
-\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-=\tfrac12\,F_{\mu\nu}\star F^{\mu\nu}
+\tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =\frac{2i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,I_2 \quad(\text{Euclidean}),
+\tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,I_2 \quad(\text{Euclidean}),
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$
@@ -209,6 +208,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
 | $I_2=\vec E\cdot\vec B$ | Framework's second invariant; index density in the abelian case |
+| $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, orientation density, $\epsilon_{0123}=+1$; all-low, height carries no sign |
 | $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |
 
 ## Further Reading

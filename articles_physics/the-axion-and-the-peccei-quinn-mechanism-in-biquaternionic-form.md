@@ -44,7 +44,7 @@ The Peccei–Quinn mechanism is a response to strong CP, and this section states
 $$
 S_\theta = \frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} ,
 \qquad
-{F^{\mathrm{dual}}}^{a\,\mu\nu} = \frac12\epsilon^{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
+{F^{\mathrm{dual}}}^{a\,\mu\nu} = \frac12\epsilon_{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
 $$
 
 whose integrand is a total derivative but whose integral is the topological charge, $Ϙ = \frac{1}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}\in\mathbb{Z}$, so that $S_\theta = \theta Ϙ$ and the vacuum is a superposition of sectors weighted by $\exp(i\theta Ϙ)$; this is why $\theta$ is a parameter of the theory and not a coupling that can be removed. The gauge coupling is absorbed into the normalisation of $F$ in this convention, which is the companion article's. The companion article shows that in the biquaternion framework this density is proportional to the framework's second invariant, $F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu} = \frac{4i}{c}I_2$ with $I_2 = \vec E\cdot\vec B$ in the $ict'$ convention, so the CP-odd character of the theta term is visible in the algebra as the parity of the pseudoscalar invariant. The theta dependence, its periodicity and its vacuum structure are the subject of that article; this article takes $\theta$, and the physical combination $\bar\theta = \theta+\arg\det M_q$, as given.

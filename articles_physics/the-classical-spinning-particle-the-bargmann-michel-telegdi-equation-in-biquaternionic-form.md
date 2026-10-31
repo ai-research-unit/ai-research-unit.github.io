@@ -107,7 +107,7 @@ defined in the instantaneous rest frame. Its covariant completion is the pair $(
 Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin quantum number of the little-group representation. The magnitude of the spin vector is fixed by that number. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric **spin tensor** $S^{\mu\nu}$, related to the spin four-vector by
 
 $$
-S^\mu=\frac{1}{2c}\,\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
+S^\mu=\frac{1}{2c}\,\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
 $$
 
 which makes the orthogonality automatic (the contraction of an antisymmetric tensor with the four-velocity). The spin-tensor description is the one that extends to extended bodies and higher multipoles; for the point particle treated here the four-vector description is equivalent and is the one adapted to the material sector $\mathbb{M}_-$.
@@ -441,7 +441,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
 | $\tilde U_{\mathrm L,\vec v}$ | Lorentz boost rotor to the momentary rest frame |
 | $\vec s$ | Rest-frame spin, $S_\mu S^\mu=\vec s^2$ |
-| $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
+| $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

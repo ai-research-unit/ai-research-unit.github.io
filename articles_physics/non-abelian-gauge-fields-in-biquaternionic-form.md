@@ -188,7 +188,7 @@ The second is the same identity that the general theory of Lie algebras singles 
 **Continuous formulation.** Contracting the Bianchi identity with the totally antisymmetric symbol gives the compact form
 
 $$
-\varepsilon^{\lambda\mu\nu\rho}\, D_\lambda F_{\mu\nu} = 0,
+\varepsilon_{\lambda\mu\nu\rho}\, D_\lambda F_{\mu\nu} = 0,
 $$
 
 which is the non-abelian analogue of the statement that the homogeneous Maxwell equations are automatic once the field strength is a curl. This is the sense in which the parent article's remark — "the homogeneous Maxwell equations are identities rather than equations of motion" — survives the non-abelian extension: it survives as the Bianchi identity, *not* as the one-line source-free equation $\tilde{\nabla}\tilde{F} = 0$, which the parent's companion records is the full source-free Maxwell system and not the Bianchi identity.

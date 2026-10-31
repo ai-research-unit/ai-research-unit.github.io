@@ -19,19 +19,19 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 The Rarita–Schwinger field is a vector-spinor: a four-vector index and a Dirac spinor index, written $\psi_\mu{}^\alpha$ with $\mu=0,1,2,3$ and $\alpha=1,\dots,4$. In the massless case the equation is
 
 $$
-\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = 0,
+\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = 0,
 $$
 
 equivalently $\gamma_{\mu\nu\rho}\partial/\partial x^\rho\,\psi_\nu=0$, the constant between the two standard writings being the one carried by the $\epsilon$–$\gamma_5$ duality of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices* and being immaterial when $m=0$. In the massive case the equation is
 
 $$
-\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma + m\,\gamma_{\mu\nu}\psi_\nu = 0,
+\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma + m\,\gamma_{\mu\nu}\psi_\nu = 0,
 $$
 
 equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho - m\gamma_{\mu\nu})\psi_\nu=0$; the two writings are related by the duality identity
 
 $$
-\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = -i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma,
+\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma = -i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma,
 $$
 
 which *Matrix Representations Conventions* fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma_0\gamma_1\gamma_2\gamma_3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma_{\mu}\partial_{x^\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.
@@ -39,7 +39,7 @@ which *Matrix Representations Conventions* fixes once the chirality operator is 
 The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu$,
 
 $$
-\mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\,\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma - \tfrac12\,m\,\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu ,
+\mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\,\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma - \tfrac12\,m\,\bar{\psi}_\mu\gamma_{\mu\nu}\psi_\nu ,
 $$
 
 up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $\gamma_{\mu\nu}$, not the Clifford metric $g_{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2A_\mu A^\mu$.
@@ -191,7 +191,7 @@ $$
 with $\Gamma^{00}=0$ and the sign of $\Gamma^{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$, as in *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*.
 No gamma matrix appears.
 
-**The compact operator is a cell.** The antisymmetrized kinetic operator $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial_\rho$ is a cell of $\mathbb{B}^{\mathrm e}$, not an element of $\mathbb{B}$: $\gamma_5\gamma_\nu$ is odd, and the odd part of the cell algebra lies outside the biquaternion algebra. It is a compact rewriting of the pair, not the primary object. The frame enters only here, in the choice of the odd cell; the dynamics is the pair and the two constraints above. In the rest-frame computation below the contraction is carried out with the Dirac matrices directly, as a check in one frame.
+**The compact operator is a cell.** The antisymmetrized kinetic operator $\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial_\rho$ is a cell of $\mathbb{B}^{\mathrm e}$, not an element of $\mathbb{B}$: $\gamma_5\gamma_\nu$ is odd, and the odd part of the cell algebra lies outside the biquaternion algebra. It is a compact rewriting of the pair, not the primary object. The frame enters only here, in the choice of the odd cell; the dynamics is the pair and the two constraints above. In the rest-frame computation below the contraction is carried out with the Dirac matrices directly, as a check in one frame.
 
 ## The Rest-Frame Reduction
 
@@ -341,7 +341,7 @@ The conventions are those of three companion articles:
 
 ## Summary
 
-The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\gamma_{\mu\nu}\psi_\nu$, equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$. The two writings are related by the duality identity $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to\gamma_5\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $\gamma_\mu\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
+The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\gamma_{\mu\nu}\psi_\nu$, equivalently, in the trivector form, $(i\gamma_{\mu\nu\rho}\partial/\partial x^\rho-m\gamma_{\mu\nu})\psi_\nu=0$. The two writings are related by the duality identity $\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to\gamma_5\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $\gamma_\mu\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x^\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
 
 In the biquaternion framework the carrier is a family of biquaternion-valued components $\tilde{\Psi}_\mu\in\mathbb{B}$, one for each spacetime index, and the free system is the chiral pair on each component together with the algebraic constraints $\sum_\mu\hat e^\mu\tilde{\Psi}_\mu=0$ and $\sum_\mu\partial^\mu\tilde{\Psi}_\mu=0$. Every term is an element of $\mathbb{B}$ or a derivative of one. Chirality is the product of the two square roots of $-1$ of the comparison, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, and the Clifford generators are a frame in the cell algebra, read as $\hat e^\mu\mapsto\gamma_0\gamma_\mu$ with $\hat e^0=e_t$ and $\hat e^k=i\vec e_k$; the compact antisymmetrized equation is the cell transcription of the pair.
 
@@ -367,7 +367,7 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $\gamma_{\mu\nu}=\tfrac12[\gamma_\mu,\gamma_\nu]$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma^{\mu\nu}$ |
 | $\Gamma^{0k}=i\vec e_k$, $\Gamma^{k0}=-i\vec e_k$, $\Gamma^{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
 | $\gamma_{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
-| $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ | Duality identity relating the two writings of the equation |
+| $\epsilon_{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial x^\rho\,\psi_\sigma=-i\,\gamma_{\mu\sigma\rho}\partial/\partial x^\rho\,\psi_\sigma$ | Duality identity relating the two writings of the equation |
 | $\tilde{\Psi}^{\text{tr}}=\sum_\mu\hat e^\mu\tilde{\Psi}_\mu$ | Trace constraint in $\mathbb{B}$, image of $\gamma_\mu\psi_\mu=0$ |
 | $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\psi_\mu=(\chi_\mu,\eta_\mu)$ | Upper and lower two-component parts in the Dirac representation |

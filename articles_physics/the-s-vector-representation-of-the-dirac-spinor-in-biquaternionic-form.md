@@ -98,7 +98,7 @@ $$
 
 $$
 \varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\,\mathrm{tr}\bigl(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\bigr),
-\qquad \varepsilon^{0123} = 1 .
+\qquad \varepsilon_{0123} = 1 .
 $$
 
 The first is symmetric under the interchange of its two index pairs; the second is the totally antisymmetric symbol. From them and the neutral vectors come the structure constants
@@ -385,7 +385,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $r = u+iv$, $l = u-iv$ | Pure spinors, $\bar r l = \bar l r = 2$ |
 | $k_\pm{}_\mu = \tfrac12(k_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
 | ${t'}_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
-| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123}=1$ |
+| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
 | $\check c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5{}_{\mu\nu} = -g_{\mu\mu}\check c_{\mu\nu\lambda}k_\lambda$ | The algebra's "gamma five"; $(c_5)^2 = 1$ |

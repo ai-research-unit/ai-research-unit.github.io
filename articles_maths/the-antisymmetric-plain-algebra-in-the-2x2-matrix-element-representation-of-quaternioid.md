@@ -6,7 +6,7 @@ The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ of
 *Introduction to the Antisymmetric Plain Algebra*. This article reads the operation on
 the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ of *Introduction to the $2\times2$ Matrix
-Element Representation $M_2(\mathbb{C})$ of Quaternions*, where the plain product becomes the matrix
+Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*, where the plain product becomes the matrix
 product and the antisymmetrization becomes the **halved commutator**. It gives the matrix of the cross
 product, the structure constants in matrix form, the invariants, the trace form and the comparison with
 the plain algebra on the same model.
@@ -21,8 +21,7 @@ $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natur
 nothing new.
 
 The model itself, its basis images and the multiplicativity are *Introduction to the $2\times2$ Matrix
-Element Representation $M_2(\mathbb{C})$ of Quaternions* and *The General Plain Algebra in the
-$2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the bracket and its structure are
+Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*; the bracket and its structure are
 *Introduction to the Antisymmetric Plain Algebra*, *The Lie Algebra of the
 Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Algebra*, below this
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the
@@ -175,8 +174,8 @@ once: the bracket is the commutator and the invariant form is the trace. This is
 **Remark (the plain algebra on the same model).** The plain algebra is the matrix product on the image
 of the model, of invariant form $\langle\cdot,\cdot\rangle_{\natural}$ read as the determinant, and its multiplicativity is the
 multiplicativity of the model. The antisymmetric block is the commutator, of invariant form the trace
-form, and its values are the trace-free matrices. The plain reading is *The General Plain Algebra in
-the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
+form, and its values are the trace-free matrices. The plain reading is *The Quaternion Algebra in
+the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*.
 
 ## Summary
 
@@ -206,8 +205,8 @@ product, of the whole matrix algebra as image.
 
 ## Further Reading
 
-- *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, for the model, the basis images and the multiplicativity.
-- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*, for the plain product on the same model.
+- [Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions](introduction-to-the-2x2-matrix-element-representation-of-quaternions.html), for the model, the basis images and the multiplicativity.
+- [The Quaternion Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$](the-quaternion-algebra-in-the-2x2-matrix-element-representation.html), for the plain product on the same model.
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the identification with $\mathfrak{su}(2)$.
 - [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the invariant form read here as the trace form.
 - [The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$](the-antisymmetric-plain-algebra-in-the-4x4-matrix-element-representation-of-quaternioid.html), below this article in this category, for the companion model.

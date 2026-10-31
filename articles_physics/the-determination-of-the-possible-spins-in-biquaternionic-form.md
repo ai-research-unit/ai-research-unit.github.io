@@ -168,7 +168,7 @@ The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massles
 **The covariant label.** The Pauli–Lubanski vector is
 
 $$
-W^\mu=\tfrac12\epsilon^{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
+W^\mu=\tfrac12\epsilon_{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$
 
 In the rest frame $W^0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.

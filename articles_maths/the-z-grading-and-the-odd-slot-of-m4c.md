@@ -79,7 +79,7 @@ so the split $V\oplus\Lambda^{3}V$ is **not** a $\mathbb{B}$-submodule split. Th
 $$
 *:\Lambda^{1}V\longrightarrow\Lambda^{3}V,
 \qquad
-\gamma_{\mu}\longmapsto \gamma_{\mu\nu\rho}\propto\varepsilon^{\mu\nu\rho\sigma}\gamma_{\sigma}\gamma_{5},
+\gamma_{\mu}\longmapsto \gamma_{\mu\nu\rho}\propto\varepsilon_{\mu\nu\rho\sigma}\gamma_{\sigma}\gamma_{5},
 $$
 with $*^2=\pm1$ on the odd slot. The four pairs
 $$

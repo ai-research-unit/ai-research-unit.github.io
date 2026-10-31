@@ -136,7 +136,7 @@ $$
 \boxed{\;\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6\,A_\rho A^\rho\;},
 $$
 
-because $\epsilon_{\lambda\mu\nu\rho}\epsilon^{\lambda\mu\nu\sigma} = -6\,\delta_\rho{}^\sigma$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.
+because $\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma} = -6\,\delta_\rho{}^\sigma$. The numerical check gave the ratio $6.000000$ with spread $3\times 10^{-13}$, that is, six to within the arithmetic.
 
 The Einstein–Cartan field equations then read, schematically,
 

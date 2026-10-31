@@ -14,7 +14,7 @@ This article asks what the biquaternion framework supplies for this derivation. 
 
 - **Established, and recomputed below.** The regulator trace is evaluated with the Clifford structure the framework already carries: the anomaly density is $\mathrm{tr}\,\gamma_5\,\mathcal{O}$, and the only nonvanishing trace with four gamma matrices is
 $$
-\mathrm{tr}\big(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big) = -4i\,\epsilon^{\mu\nu\rho\sigma},
+\mathrm{tr}\big(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 recomputed here for all permutations. Because $\gamma_5=i\omega$ with $\omega$ the volume element, the trace is the framework's own chirality structure; because the field strength enters through the commutator $[D_\mu,D_\nu]$, the density is the framework's invariant $I_2=\vec E\cdot\vec B$. The method does not introduce an object the algebra lacks.
 - **Standard, transcribed.** The measure, the Jacobian, the heat-kernel expansion (Seeley–DeWitt), the Fujikawa coefficient, and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
@@ -28,7 +28,7 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ the volume element. These are the generators of the $\mathbb{M}_-$ frame, and the derivative in every gamma display below is $\partial/\partial x^\mu$ with $x^0=t'$. The $\mathbb{B}$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x^\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
+with $\gamma_5=i\omega$ and $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ the volume element. These are the generators of the $\mathbb{M}_-$ frame, and the derivative in every gamma display below is $\partial/\partial x^\mu$ with $x^0=t'$. The $\mathbb{B}$-frame set is $\gamma_0$, $i\gamma_k$ with $Q_t=ict'$; the mixed contraction $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x^\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
 
 The framework results used here are those of the companion articles:
 
@@ -118,17 +118,17 @@ the term in the field strength surviving because $F_{\mu\nu}$ is antisymmetric. 
 **The one identity that matters.** For all $4!=24$ permutations,
 
 $$
-\mathrm{tr}\big(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big) = -4i\,\epsilon^{\mu\nu\rho\sigma},
+\mathrm{tr}\big(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma\big) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 \qquad
 \mathrm{tr}\big(\gamma_5\gamma_0\gamma_1\gamma_2\gamma_3\big)=-4i ,
 $$
 
-and the trace vanishes for any repeated index; the identity was recomputed in the block basis, with residual exactly zero. Because the density must carry four distinct Dirac indices, only the quadratic part of the heat kernel contributes, and the result is proportional to $\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$.
+and the trace vanishes for any repeated index; the identity was recomputed in the block basis, with residual exactly zero. Because the density must carry four distinct Dirac indices, only the quadratic part of the heat kernel contributes, and the result is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$.
 
 **The result.** Putting the pieces together, the anomaly density is
 
 $$
-\boxed{\;A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
+\boxed{\;A(x) = \frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 \qquad
 \mathcal{D}\psi\,\mathcal{D}\bar{\psi}\ \longmapsto\ \exp\!\left(-i\int d^4x\,\alpha(x)\,A(x)\right)\mathcal{D}\psi\,\mathcal{D}\bar{\psi},
 $$
@@ -137,7 +137,7 @@ and the measure is not invariant. The coefficient is Fujikawa's, and it agrees w
 
 $$
 \partial/\partial x^\mu j_5^\mu = 2im\,\bar{\psi}\gamma_5\psi + A(x)
-= 2im\,\bar{\psi}\gamma_5\psi + \frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+= 2im\,\bar{\psi}\gamma_5\psi + \frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
 which is exactly the ABJ form of the companion article. The mass term is the classical breaking and the Jacobian term is the quantum one; the two are additive and independent.
@@ -152,7 +152,7 @@ which is exactly the ABJ form of the companion article. The mass term is the cla
 
 ## Comparison with the Diagrammatic Derivation
 
-**The two computations agree, and must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. The agreement is a consistency requirement, and the reason is visible in the two computations: both reduce to the same Clifford trace, $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$. The triangle computes it against three current insertions; the heat kernel computes it against the squared Dirac operator's field-strength term. The trace is the same, so the coefficient is the same.
+**The two computations agree, and must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. The agreement is a consistency requirement, and the reason is visible in the two computations: both reduce to the same Clifford trace, $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$. The triangle computes it against three current insertions; the heat kernel computes it against the squared Dirac operator's field-strength term. The trace is the same, so the coefficient is the same.
 
 **What each derivation explains.** The diagrammatic derivation explains *what* the anomaly is as a physical process: a triangle of fermions with an axial current and two gauge currents, finite and unrenormalised. The path-integral derivation explains *why* it is unavoidable: the measure is not invariant under the symmetry, and no choice of regulator removes a symmetry the measure does not have. The second explanation is the deeper one, and it is why the anomaly survives any dynamics that leaves the measure intact: confinement, a condensate, or a change of degrees of freedom cannot remove it, which is the content of anomaly matching in the companion article.
 
@@ -160,12 +160,12 @@ which is exactly the ABJ form of the companion article. The mass term is the cla
 
 ## The Coefficient, the Density, and the Framework
 
-**The coefficient is a Clifford trace times a field contraction.** The Fujikawa coefficient factorises exactly as the triangle coefficient did: a spinor trace, which produced $-4i\epsilon^{\mu\nu\rho\sigma}$, and a field-strength contraction, which produced $F_{\mu\nu}F_{\rho\sigma}$. The four-dimensional heat-kernel coefficient supplies the $1/16\pi^2$. Nothing in the factorisation uses a property of the specific gauge group; the abelian computation above generalises to the non-abelian case by replacing $ϙ^2F_{\mu\nu}F_{\rho\sigma}$ with $\mathrm{tr}[F_{\mu\nu}F_{\rho\sigma}]$ and the coefficient by the appropriate Casimir, which is the standard non-abelian Fujikawa result.
+**The coefficient is a Clifford trace times a field contraction.** The Fujikawa coefficient factorises exactly as the triangle coefficient did: a spinor trace, which produced $-4i\epsilon_{\mu\nu\rho\sigma}$, and a field-strength contraction, which produced $F_{\mu\nu}F_{\rho\sigma}$. The four-dimensional heat-kernel coefficient supplies the $1/16\pi^2$. Nothing in the factorisation uses a property of the specific gauge group; the abelian computation above generalises to the non-abelian case by replacing $ϙ^2F_{\mu\nu}F_{\rho\sigma}$ with $\mathrm{tr}[F_{\mu\nu}F_{\rho\sigma}]$ and the coefficient by the appropriate Casimir, which is the standard non-abelian Fujikawa result.
 
 **The density is the framework's invariant.** The contraction is
 
 $$
-\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\vec E\cdot\vec B,
+\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\vec E\cdot\vec B,
 $$
 
 evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ for sample fields; hence
@@ -196,7 +196,7 @@ using $\int d^4p\,\exp(-p^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4
 $$
 \int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
 = \int d^4x\,A(x)
-= \frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+= \frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = 2\,\mathrm{ind}(D\!\!\!/ ),
 $$
 
@@ -208,7 +208,7 @@ so the axial charge transported in a background is twice the index. The index is
 
 **The two rotations compared.** The framework's two continuous symmetries of the massless equation behave differently in the measure, and the difference is exact. The **vector** rotation $\psi\mapsto \exp(i\alpha)\psi$ is multiplication by a central element; it rotates both chiralities in the same sense, and its would-be anomaly coefficient is the cubic charge sum that vanishes identically for a vector-like spectrum. It is a symmetry of the measure. The **axial** rotation $\psi\mapsto \exp(i\alpha\gamma_5)\psi$ inserts the volume element; it rotates the two chiralities oppositely, and its Jacobian is not one. Only the second is anomalous. In the framework's terms the mass term and the measure agree on which symmetry is broken: the linear chiral pair breaks the axial phase and conserves the central one, and the measure does the same. A theory whose mass were vector-like would have neither breaking, and the framework's linear chiral pair is not that theory.
 
-**The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, the second Chern character of the gauge field, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: $\gamma_5=i\omega$ inserts the volume element; the heat-kernel trace converts the volume element into the $\epsilon$ symbol; the $\epsilon$ symbol contracts the field strength into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link is a framework object except the measure, and the last link is the general index theorem.
+**The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, the second Chern character of the gauge field, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: $\gamma_5=i\omega$ inserts the volume element; the heat-kernel trace converts the volume element into the $\epsilon$ symbol; the $\epsilon$ symbol contracts the field strength into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link is a framework object except the measure, and the last link is the general index theorem.
 
 ## The Chiral Rotation in the Biquaternion Language
 
@@ -225,7 +225,7 @@ so the axial charge transported in a background is twice the index. The index is
 | Item | Status |
 |---|---|
 | The chirality insertion $\gamma_5=i\omega$ as the volume element | **Supplied** by the Clifford isomorphism |
-| The trace identity $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
+| The trace identity $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
 | The heat-kernel splitting $(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sigma^{\mu\nu}F_{\mu\nu}$ | **Supplied** from the Clifford relations |
 | The anomaly density as the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied**; the coefficient is standard |
 | The Dirac operator whose determinant is the measure's Jacobian | **Supplied**: the module representative of the linear chiral pair |
@@ -247,10 +247,10 @@ so the axial charge transported in a background is twice the index. The index is
 
 ## Summary
 
-The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under $\psi\mapsto \exp(i\alpha(x)\gamma_5)\psi$; the measure is not; the Jacobian is $\exp(-i\int\alpha A)$, and the regulated trace defines the anomaly density. Regulating with $\mathcal{H}=(\gamma_\mu D_\mu)^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of $\gamma_5$ against the heat kernel; the only surviving gamma-matrix trace is $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is
+The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under $\psi\mapsto \exp(i\alpha(x)\gamma_5)\psi$; the measure is not; the Jacobian is $\exp(-i\int\alpha A)$, and the regulated trace defines the anomaly density. Regulating with $\mathcal{H}=(\gamma_\mu D_\mu)^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of $\gamma_5$ against the heat kernel; the only surviving gamma-matrix trace is $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is
 
 $$
-\boxed{\;A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+\boxed{\;A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B\;},
 $$
 
@@ -267,9 +267,9 @@ The biquaternion content is threefold: the chirality insertion is the volume ele
 | $\Delta=S\oplus\bar{S}$ | Dirac module; $S=\mathbb{C}^2=(\tfrac12,0)$ |
 | $\gamma_5=\mathrm{diag}(-I_2,I_2)=i\omega$ | Chirality operator as volume element |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Clifford volume element |
-| $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | The regulator trace |
+| $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\epsilon_{\mu\nu\rho\sigma}$ | The regulator trace |
 | $\mathcal{H}=(\gamma_\mu D_\mu)^2=D^2+\tfrac{ϙ}{2}\sigma^{\mu\nu}F_{\mu\nu}$ | Regulator operator (Euclidean) |
-| $A(x)=\dfrac{ϙ^2}{16\pi^2}\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa) |
+| $A(x)=\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa) |
 | $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ | Fermion measure of the functional integral |
 | $U=\exp(i\alpha(x)\gamma_5)$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=\exp(-i\int d^4x\,\alpha A)$ | Jacobian of the measure under the rotation, both determinant factors included |

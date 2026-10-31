@@ -4,11 +4,11 @@
 
 The corpus states one rule for indices in *Operator and Calculus Conventions*: a contraction is a form, never an index, and no index is raised or lowered. A component is written low. The Minkowski signs sit in the sign vector $\varepsilon$ inside the product, not in a metric that moves indices.
 
-The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 78 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,573 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
+The rule is not yet obeyed everywhere. A scan of the 402 physics articles and the 884 articles of Part VI finds 71 physics articles and twelve Part VI articles that still write at least one raised Greek index of the spacetime alphabet $\mu,\nu,\rho,\lambda,\kappa,\sigma,\tau$. They hold 1,548 physics occurrences and 73 in Part VI. The gamma indices are gone: no gamma with a raised index survives in either corpus. The count is over the spacetime alphabet only; the letters $\alpha$ and $\beta$ are examined separately in §*Class E*. They are lowered like the rest, but their carriers differ and the repair has to name them.
 
 The remainder is not one problem. Four kinds occur, and they cost different things. In the first the superscript is a slot; in the second it is paired with a lower index; in the third it is only a label; in the fourth it is a genuine upper index — a spinor index, a local frame index or an internal-symmetry index — which the spacetime rule does not reach and which must be left alone. A blind lowering is destructive for the first, wrong for the second wherever it is a contraction, correct for the third, and an error for the fourth.
 
-Fifty-four files have been repaired. Twenty-two were repaired while this article was written: seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. Thirty-two more were migrated afterwards, by rewriting each display rather than relettering it; they are listed in §*What Was Already Lowered* and are no longer in the inventory. Every count here is after both passes.
+Sixty-one files have been repaired. Twenty-two were repaired while this article was written: seventeen lost their Greek upper indices, four lost numeric ones, and one moved a complex time coordinate to the $\mathbb{B}$ frame. Thirty-nine more were migrated afterwards, by rewriting each display rather than relettering it; they are listed in §*What Was Already Lowered* and are no longer in the inventory. Every count here is after both passes.
 
 The examples in this article quote the offending notation. They are the object of study, not the notation of the article.
 
@@ -18,7 +18,7 @@ The count is made on the mathematics regions only, the text between single or do
 
 | Corpus | Articles | Superscripts | Index-like tokens | Articles with an index |
 |---|---:|---:|---:|---:|
-| Physics | 402 | 43,460 | 1,573 | 78 |
+| Physics | 402 | 43,460 | 1,548 | 71 |
 | Part VI mathematics | 884 | 65,868 | 73 | 12 |
 
 The count does not include numeric components, because $x^2$ the square and $x^2$ the second component are the same string. The four physics articles that wrote only numeric time components have been lowered and no longer appear.
@@ -53,7 +53,7 @@ F_{\mu\nu}F^{\mu\nu}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\
 $$
 so a blind lowering produces a sixteen-term sum with no signs and a different value. The repair is the explicit sum with $\varepsilon$, the quaternionic form $\langle\tilde F,\tilde F\rangle_\natural$, or the cell product. The contraction has to be rewritten, not relettered. Not every pairing is a contraction: in the definition $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ the lower letters only name the generators, and lowering is safe. The scan counts both, so every Class B entry has to be read.
 
-Seventy-two physics articles and six Part VI articles are in this class. Between them they hold 1,305 paired occurrences, 1,269 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
+Sixty-three physics articles and six Part VI articles are in this class. Between them they hold 1,086 paired occurrences, 1,050 in physics and 36 in mathematics. This is the bulk of the problem: imported tensor formulas that were never translated into the form language.
 
 ### Class C — the superscript is only a label
 
@@ -68,7 +68,7 @@ The superscript is an exponent, a parameter label, a star, a dual or an inverse.
 | Class | Role of the superscript | Lowering is | Repair | Physics articles | Part VI articles |
 |---|---|---|---|---|---|
 | A | a slot | destructive | matrix, slot order, cell form | 8 | 3 |
-| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 70 | 6 |
+| B | a pairing | wrong if a contraction | explicit sum with $\varepsilon$, or the form | 63 | 6 |
 | C | a label | safe | local relabel | 0 | 3 |
 | D | not an index | not applicable | none | excluded | excluded |
 | E | an index of another kind | safe with a carrier | bar, declared slot order, or plain label | 11 (58 occ.) | 0 |
@@ -107,7 +107,7 @@ After the s-vector and curved-spacetime passes, 67 $\alpha$ and $\beta$ tokens r
 
 ## What Was Already Lowered
 
-The pass took the files whose raised index carries no structure: in those files no formula both raised a letter and lowered the same letter, and no raised letter was followed by a lower slot. The height is decoration there, so lowering cannot change a value. Seventeen files lost 47 occurrences: fourteen in physics, three in Part VI.
+The pass took the files whose raised index carries no structure: in those files no formula both raised a letter and lowered the same letter, and no raised letter was followed by a lower slot. The height is decoration there, so lowering cannot change a value. The same pass lowered the four-index alternating symbol. It lay outside the screen because the screen counts component carriers, and the symbol is the orientation density rather than a component. No four-index symbol is left up anywhere in the corpus: the all-low convention fixes it by $\epsilon_{0123}=+1$, and since it is a density and not a metric tensor its height carries no sign, so the Lorentzian coefficients do not move. That covered 104 four-index symbols in seventeen articles and eleven normalisations $\epsilon_{0123}=+1$. The rank-two and polarization uses of the same letter are component carriers and stay on the inventory. The inventory totals are unchanged, because the four-index symbol was never one of the counted carriers. Seventeen files lost 47 occurrences: fourteen in physics, three in Part VI.
 
 | Article | Occurrences |
 |---|---:|
@@ -251,7 +251,6 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Higgs Mechanism in Biquaternionic Form](../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html) | $\mathbb{B}$ | 16 | 0 | 16 | 0 | $g^{\mu\nu}$ (12), $A^{\mu}$ (4) |
 | [Canonical Quantization of the Biquaternion Maxwell Field](../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html) | $\mathbb{B}$ | 15 | 0 | 13 | 2 | $F^{\mu\nu}$ (5), $\epsilon^{\lambda}$ (4), $\pi^{\mu}$ (4), $A^{\nu}$ (1), +1 more |
 | [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html) | $\mathbb{B}$ | 14 | 0 | 7 | 7 | $p^{\mu}$ (12), $\pi^{\mu}$ (1), $ap^{\mu}$ (1) |
-| [The Theta Parameter and Strong CP in Biquaternionic Form](../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) | $\mathbb{B}$ | 14 | 0 | 11 | 3 | $F^{\mu\nu}$ (11), $J^{\mu}$ (3) |
 | [The First-Order Root of the Biquaternion Klein–Gordon Operator](../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) | $\mathbb{B}$ | 13 | 0 | 9 | 4 | $x^{\mu}$ (7), $g^{\mu\nu}$ (3), $k^{\mu}$ (3) |
 | [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 6 | 6 | $B^{\mu}$ (3), $K^{\mu}$ (2), $N^{\mu}$ (2), $G^{\mu}$ (1), +4 more |
 | [The Relativistic Particle in an External Field, in Biquaternionic Form](../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html) | $\mathbb{B}$ | 12 | 0 | 9 | 3 | $F^{\mu\nu}$ (8), $dP^{\mu}$ (3), $K^{\mu}$ (1) |
@@ -285,15 +284,9 @@ After the Frame column, the columns give the total number of raised Greek indice
 | [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) | $\mathbb{B}$ | 4 | 0 | 2 | 2 | $F^{\mu\nu}$ (2), $x^{\mu}$ (2) |
 | [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | both | 3 | 0 | 1 | 2 | $T^{\mu}$ (2), $J^{\nu}$ (1) |
 | [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $j^{\mu}$ (2), $F^{\mu\nu}$ (1) |
-| [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 2 | 1 | $x^{\mu}$ (3) |
 | [The Determination of the Possible Spins in Biquaternionic Form](../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html) | — | 3 | 0 | 1 | 2 | $W^{\mu}$ (3) |
 | [The Electron in Biquaternionic Form](../articles_physics/the-electron-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $j^{\mu}$ (3) |
-| [The Quantized Dirac Field in Biquaternionic Form](../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html) | $\mathbb{B}$ | 3 | 0 | 1 | 2 | $J^{\mu}$ (3) |
 | [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) | $\mathbb{B}$ | 3 | 0 | 3 | 0 | $F^{\mu\nu}$ (2), $j^{\mu}$ (1) |
-| [The Local Complex Structure and the Speed of Light](../articles_physics/the-local-complex-structure-and-the-speed-of-light.html) | $\mathbb{B}$ | 2 | 0 | 2 | 0 | $dx^{\mu}$ (2) |
-| [Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form](../articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html) | $\mathbb{M}_-$ | 1 | 0 | 1 | 0 | $v^{\mu}$ (1) |
-| [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $j^{\mu}$ (1) |
-| [The Index Theorem and the Zero-Mode Count in Biquaternionic Form](../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html) | $\mathbb{B}$ | 1 | 0 | 1 | 0 | $F^{\mu\nu}$ (1) |
 
 ## The Part VI Inventory
 
@@ -318,7 +311,7 @@ The other 29 index-shaped tokens in Part VI are not indices. They are the order 
 
 ## What a Pass Would Cost
 
-The 1,573 physics occurrences divide as 51 slots, 1,069 paired and 453 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 485 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
+The 1,548 physics occurrences divide as 51 slots, 1,050 paired and 447 plain labels. The 73 Part VI occurrences divide as 5 slots, 36 paired and 32 plain. Only the plain labels, 479 in all, can be lowered mechanically. The 58 genuine indices of Class E are in neither total.
 
 The Frame column splits the work by kind of decision, not by difficulty. The 280 $\mathbb{M}_-$ pairs lower as relabels under one explicit $\varepsilon$ sum, because the two weights coincide there. The 729 $\mathbb{B}$ pairs do not: $g$ and $\varepsilon$ differ, so each display must declare which contraction it means. The 154 *both* pairs carry the same choice, made per display inside one article. A pass in the order A, B, C is still the cheap order. Class A is 11 articles and 56 slots, and every one needs a decision about the slot before any edit. Class B is 70 physics and 6 Part VI articles holding 1,069 paired occurrences. Most are textbook formulas quoted in the middle of a biquaternion argument, and the decision is editorial before it is technical: does the article own the formula, or quote it? A quotation may keep its notation if the article says so; an owned formula may not. Class C is 3 Part VI articles and a local relabel.
 

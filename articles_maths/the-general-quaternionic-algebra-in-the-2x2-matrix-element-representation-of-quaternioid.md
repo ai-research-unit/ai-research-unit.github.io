@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices (*The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, the companion reading of the plain algebra of quaternions). On that image the **quaternionic product** of the block is the matrix product with the conjugate transpose in the first slot, the **quaternionic form** is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image.
+The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_t$ to the identity and $\vec e_x,\vec e_y,\vec e_z$ to the negative imaginary multiples of the Pauli matrices (*The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*, the companion reading of the plain product). On that image the **quaternionic product** of the block is the matrix product with the conjugate transpose in the first slot, the **quaternionic form** is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image.
 
 ## The Embedding
 

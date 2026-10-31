@@ -6,7 +6,7 @@ A massive spin-1 field can acquire its mass in more than one way. The **Proca** 
 
 This article records that equivalence and the machinery it uses. It is the physics companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* and of *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*: the parent action is written in the s-vector variables, and the two eliminations pass through the self-dual field strength and the cubic (order-three ding) form of those articles.
 
-The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry its generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon^{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon^{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article. The conventions are those of the companion articles.
+The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry its generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$; $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123} = 1$; and the structure constants $c^{\mu\nu\lambda}$ and $\check c^{\mu\nu\lambda}$ are those of the s-vector article. The conventions are those of the companion articles.
 
 ## The Parent Action
 
@@ -31,7 +31,7 @@ $$
 whose mass term $m(G^*G^* + GG)$ couples $G$ to $G^*$ — the chirality-off-diagonal mass, and the reason the s-vector is not simply a pair of independent complex vectors. Eliminating $G$ instead leaves a **second-order gauge Lagrangian** for the field $A_\mu$, with a mass term built from the antisymmetric symbol,
 
 $$
-\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
+\boxed{\;\mathcal{L}_G = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \tfrac{m}{4}\,\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda\;},
 $$
 
 the second term being the topological (Chern–Simons-type / BF-type) mass. The two Lagrangians describe the same propagating modes.
@@ -48,15 +48,15 @@ $$
 H^{\mu\nu} = G^*_\lambda\, \check c^{\lambda\mu\nu}
 $$
 
-is shown to be anti-self-dual, $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}H_{\lambda\rho}$. The self-duality means that the auxiliary field carries only the three complex independent components of its antisymmetric part: a biquaternion has four complex components (scalar, three-vector), the symmetric part of $H$ is proportional to the metric, and the antisymmetric part is anti-self-dual. The parent action's elimination is therefore an elimination of a self-dual two-form, which is exactly the structure a topological mass term needs.
+is shown to be anti-self-dual, $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$. The self-duality means that the auxiliary field carries only the three complex independent components of its antisymmetric part: a biquaternion has four complex components (scalar, three-vector), the symmetric part of $H$ is proportional to the metric, and the antisymmetric part is anti-self-dual. The parent action's elimination is therefore an elimination of a self-dual two-form, which is exactly the structure a topological mass term needs.
 
 ### The Chern–Pontryagin Density as a Total Derivative
 
 The second ingredient is that the next-to-topological density is a total derivative. In the s-vector variables,
 
 $$
-\tfrac14\bigl[G_{\mu\nu}\varepsilon^{\mu\nu\lambda\rho}G_{\lambda\rho} + G^*_{\mu\nu}\varepsilon^{\mu\nu\lambda\rho}G^*_{\lambda\rho}\bigr]
-= 2\partial_\mu\Bigl[\varepsilon^{\mu\nu\lambda\rho}\bigl(B_\nu\partial_\lambda B_\rho - N_\nu\partial_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
+\tfrac14\bigl[G_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho} + G^*_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G^*_{\lambda\rho}\bigr]
+= 2\partial_\mu\Bigl[\varepsilon_{\mu\nu\lambda\rho}\bigl(B_\nu\partial_\lambda B_\rho - N_\nu\partial_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
 $$
 
 where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real and imaginary parts of $G$). The right-hand side is the divergence of a Chern–Simons-type current. A total derivative may be added to a Lagrangian without changing the equations of motion, and it is this freedom that lets the parent action carry the topological mass into the gauge reduction and out of the Dirac reduction. The identity is transcribed from the source; the corresponding *algebraic* statements that would establish it — the self-duality of $H$ and the structure of the cubic form — are verified in the companion articles, but the divergence identity itself was not recomputed in this pass.
@@ -81,7 +81,7 @@ for a unit complex vector $K^\mu$ built from the field. The mass is carried by a
 
 ## Open Questions
 
-1. **The dimension of the gauge sector.** The topological mass term $\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$ is the four-dimensional (BF / Cremmer–Scherk) mass; the $2+1$-dimensional Chern–Simons mass is a different term. Which one the source's gauge Lagrangian carries, and whether the gauge sector lives in the same four dimensions as the Dirac field or in a reduced three, is the first question to settle.
+1. **The dimension of the gauge sector.** The topological mass term $\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$ is the four-dimensional (BF / Cremmer–Scherk) mass; the $2+1$-dimensional Chern–Simons mass is a different term. Which one the source's gauge Lagrangian carries, and whether the gauge sector lives in the same four dimensions as the Dirac field or in a reduced three, is the first question to settle.
 
 2. **The field content of the parent action.** The parent action's auxiliary field is a self-dual two-form (the antisymmetric part of the biquaternion), but whether it is also a one-form (a gauge field) and how many independent fields the parent action couples is not fixed by the display above. The published paper's parent action will settle it.
 
@@ -95,9 +95,9 @@ These questions are open.
 
 ## Summary
 
-Liu Yu-Fen's thesis is that the massive Dirac field and a topologically massive gauge field are **dual**: a single first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian in the vector representation — kinetic term with the $\check c$ structure constants and the chirality-off-diagonal mass $m(G^*G^* + GG)$ — and, on the other elimination, to a gauge Lagrangian with a Maxwell kinetic term and a topological (Chern–Simons-type / BF-type) mass term $\tfrac{m}{4}\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$. The two describe the same propagating modes.
+Liu Yu-Fen's thesis is that the massive Dirac field and a topologically massive gauge field are **dual**: a single first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian in the vector representation — kinetic term with the $\check c$ structure constants and the chirality-off-diagonal mass $m(G^*G^* + GG)$ — and, on the other elimination, to a gauge Lagrangian with a Maxwell kinetic term and a topological (Chern–Simons-type / BF-type) mass term $\tfrac{m}{4}\varepsilon_{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$. The two describe the same propagating modes.
 
-The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the interpretation of the mass as a non-integrable phase carried by a unit complex vector $K^\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
+The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the interpretation of the mass as a non-integrable phase carried by a unit complex vector $K^\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
 
 ## Summary of Notation
 
@@ -105,13 +105,13 @@ The mechanism is the standard first-order duality. The ingredients are three: th
 |---|---|
 | $G^\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $B^\mu, N^\mu$ | Real four-vectors of the two semi-spinors, $G = B + iN$ |
-| $\check c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on the neutral vector $j$ |
+| $\check c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on the neutral vector $j$ |
 | $\bar\Psi\Psi$ | Dirac bilinear, $= \tfrac12(N^2 - B^2)$ |
 | $H^{\mu\nu} = G^*_\lambda\check c^{\lambda\mu\nu}$ | Anti-self-dual two-form (the antisymmetric part) |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Gauge field strength |
 | $A_\mu$ | Gauge four-potential |
 | $K^\mu$ | Unit complex vector; the mass as a phase |
-| $\varepsilon^{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon^{0123} = 1$ |
+| $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123} = 1$ |
 | $m$ | Fermion mass, equated to the topological gauge mass |
 | $S_{\text{parent}}$ | The first-order action with the two reductions |
 | $\mathcal{L}_D$, $\mathcal{L}_G$ | The Dirac and gauge Lagrangians |

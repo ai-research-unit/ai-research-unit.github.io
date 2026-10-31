@@ -14,7 +14,7 @@ so that the particle gains an energy in an electric field that depends on the or
 
 The biquaternion framework makes a structural statement about the EDM operator that is the subject of this article. The insertion $\sigma^{\mu\nu}\gamma_5$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma^{\mu\nu}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other, and the Hermiticity flips under the duality. The article establishes this and states what it does and does not buy.
 
-- **Established, and recomputed below.** The Hermiticity of the insertions, the Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$, and the resulting sector placement. The $\vec E$-coupling insertion $\sigma^{0k}\gamma_5$ is anti-Hermitian (recomputed), hence material; the $\vec B$-coupling insertion $\sigma^{ij}$ is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
+- **Established, and recomputed below.** The Hermiticity of the insertions, the Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$, and the resulting sector placement. The $\vec E$-coupling insertion $\sigma^{0k}\gamma_5$ is anti-Hermitian (recomputed), hence material; the $\vec B$-coupling insertion $\sigma^{ij}$ is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
 - **Standard, transcribed.** The definition of the EDM, its $\mathbf{P}$-, $\mathbf{T}$-, and $\mathbf{CP}$-odd character, the nonrelativistic limit, the form-factor decomposition of the electromagnetic vertex, the Standard Model prediction (CKM-suppressed and tiny), the $\theta$-term contribution, and the experimental bounds are standard. They are stated in the framework's notation.
 - **Gap, left visible.** The framework supplies the operator and its sector, and it does not supply the coefficient. It has no CP-violating phase of its own, no mechanism to generate one, and no prediction for the electron, neutron, or proton EDM. The value of $d$ is an empirical input, and the framework's statement is the structural one: a nonzero EDM is the presence of a coefficient on an anti-Hermitian, material-sector insertion.
 
@@ -26,7 +26,7 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon^{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
+with $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon_{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 
 The framework results used here are those of the companion articles:
 
@@ -79,9 +79,9 @@ The pattern is the standard one: $\gamma_0$ is Hermitian and $\gamma_k$ anti-Her
 **The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol,
 
 $$
-\boxed{\;\sigma^{\mu\nu}\gamma_5 = \frac{i}{2}\,\epsilon^{\mu\nu\rho\sigma}\,\sigma_{\rho\sigma},
+\boxed{\;\sigma^{\mu\nu}\gamma_5 = \frac{i}{2}\,\epsilon_{\mu\nu\rho\sigma}\,\sigma_{\rho\sigma},
 \qquad\text{i.e.}\qquad
-\sigma^{\mu\nu}_{\mathrm D}:=\tfrac12\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5\;},
+\sigma^{\mu\nu}_{\mathrm D}:=\tfrac12\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5\;},
 $$
 
 an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly zero. The duality exchanges the electric and magnetic components: $\sigma^{0k}\gamma_5$ is dual to a combination of the $\sigma^{ij}$, and vice versa. Since the duality factor is $i$, it exchanges Hermitian with anti-Hermitian, which is exactly the flip recorded above.
@@ -184,7 +184,7 @@ $$
 
 so that the two coefficients are the form factors at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the $\gamma_5$. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.
 
-**Why the dual is the CP-odd one.** The form-factor pair $(F_2,F_3)$ is the framework's Hermitian/anti-Hermitian pair, and the two differ by the insertion of the volume element. The magnetic term has $F_2$ and no $\gamma_5$; the EDM term has $F_3$ and one $\gamma_5$. Under the Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$, the EDM insertion is the dual of the magnetic one with a factor of $i$; the factor is what makes the EDM's coefficient CP-odd and the magnetic moment's coefficient CP-even. The framework does not compute $F_3$; it places it in the anti-Hermitian sector and shows that its vanishing is the parity of the informational sector.
+**Why the dual is the CP-odd one.** The form-factor pair $(F_2,F_3)$ is the framework's Hermitian/anti-Hermitian pair, and the two differ by the insertion of the volume element. The magnetic term has $F_2$ and no $\gamma_5$; the EDM term has $F_3$ and one $\gamma_5$. Under the Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$, the EDM insertion is the dual of the magnetic one with a factor of $i$; the factor is what makes the EDM's coefficient CP-odd and the magnetic moment's coefficient CP-even. The framework does not compute $F_3$; it places it in the anti-Hermitian sector and shows that its vanishing is the parity of the informational sector.
 
 **The magnetic moment as the calibration.** The anomalous magnetic moment $F_2$ is measured to extraordinary precision, and its theoretical value is the framework's testing ground for the fermion sector; the companion article on the anomalous magnetic moment computes the framework's contribution. The EDM is the dual observable, and its bound is many orders of magnitude tighter in its own units than the magnetic moment's precision. The two together are the complete CP-even and CP-odd content of the dimension-five electromagnetic couplings of a spin-$\tfrac12$ particle.
 
@@ -193,7 +193,7 @@ so that the two coefficients are the form factors at zero momentum transfer, mul
 **Where a nonzero EDM comes from.** The EDM is CP-odd, so it can be generated only by a CP-violating interaction. The candidates are standard:
 
 - **The CKM phase.** In the Standard Model the only CP-violating parameter of the quark sector is the phase of the Cabibbo–Kobayashi–Maskawa matrix; the companion article on the CKM matrix treats it. Its contribution to the neutron EDM arises only at the three-loop level and is of order $d_n\sim10^{-32}\ e\cdot\mathrm{cm}$, far below the present bound; the CKM phase is not the source of any measurable hadronic or atomic EDM.
-- **The $\theta$ parameter.** Quantum chromodynamics admits a CP-odd topological term $\theta\,(\alpha_s/8\pi)\,\epsilon^{\mu\nu\rho\sigma}G^a_{\mu\nu}G^a_{\rho\sigma}$; its contribution to the neutron EDM is of order $d_n\sim\theta\times10^{-16}\ e\cdot\mathrm{cm}$, and the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
+- **The $\theta$ parameter.** Quantum chromodynamics admits a CP-odd topological term $\theta\,(\alpha_s/8\pi)\,\epsilon_{\mu\nu\rho\sigma}G^a_{\mu\nu}G^a_{\rho\sigma}$; its contribution to the neutron EDM is of order $d_n\sim\theta\times10^{-16}\ e\cdot\mathrm{cm}$, and the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
 - **New physics.** Any new CP-violating phase in a theory of fermions and gauge fields contributes to the EDMs, usually at the one- or two-loop level, and the bounds constrain the scale of that physics. This is the sense in which the EDM searches probe beyond the Standard Model.
 
 **The Standard Model prediction, and its smallness.** The Standard Model's CKM phase gives EDMs that are far below the current bounds; the electron EDM, in particular, is generated only at four loops and is unobservably small. The framework inherits this: its fermion sector carries the linear chiral mass and the antilinear real structure, neither of which contains a CP-odd phase, and the algebra's central imaginaries are the volume element and the vector phase, not a CP-violating angle. The framework therefore predicts no measurable EDM, and observes that any EDM would be evidence for a phase it does not contain.
@@ -236,7 +236,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 | The even Clifford algebra as the biquaternion algebra, and the Hermiticity sector split | **Supplied**; the identification of Hermitian with $\mathbb{M}_+$ and anti-Hermitian with $\mathbb{M}_-$ |
 | The EDM insertion $\sigma^{0k}\gamma_5$ as anti-Hermitian, material-sector | **Supplied**, recomputed entry by entry |
 | The magnetic-moment insertion $\sigma^{ij}$ as Hermitian, informational-sector | **Supplied**, recomputed |
-| The Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ | **Supplied**, recomputed for all pairs |
+| The Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ | **Supplied**, recomputed for all pairs |
 | The explicit $i$ in the EDM Lagrangian as the marker of the anti-Hermitian insertion | **Supplied** by the algebra |
 | The definition of the EDM and its $\mathbf{P}$-, $\mathbf{T}$-, $\mathbf{CP}$-odd character | **Transcribed**; standard |
 | The form-factor decomposition and the nonrelativistic limit | **Transcribed**; standard |
@@ -261,7 +261,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 The electric dipole moment is the CP-odd, dimension-five coupling of a spin-$\tfrac12$ particle to the electromagnetic field, $-\tfrac{i}{2}d\,\bar{\psi}\sigma^{\mu\nu}\gamma_5\psi F_{\mu\nu}$, whose nonrelativistic limit is $-d\,\vec E\cdot\boldsymbol{\sigma}$. In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion $\sigma^{0k}\gamma_5$ is **anti-Hermitian** and therefore lies in the material sector $\mathbb{M}_-$, while the $\vec B$-coupling magnetic-moment insertion $\sigma^{ij}$ is **Hermitian** and lies in the informational sector $\mathbb{M}_+$; both statements were recomputed entry by entry in the block basis. The two are Hodge duals,
 
 $$
-\boxed{\;\sigma^{\mu\nu}\gamma_5=\frac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}\;},
+\boxed{\;\sigma^{\mu\nu}\gamma_5=\frac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}\;},
 $$
 
 verified for all pairs $(\mu,\nu)$ with residual exactly zero, and the $i$ of the duality exchanges Hermiticity between the pair. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian and is the algebra's marker of the CP-odd coefficient.
@@ -277,7 +277,7 @@ The form-factor decomposition $\Gamma^\mu=\gamma_\mu F_1+\tfrac{i}{2m}\sigma^{\m
 | $\Delta=S\oplus\bar{S}$ | Dirac module; $S=\mathbb{C}^2=(\tfrac12,0)$ |
 | $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | Lorentz generators |
 | $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator and volume element |
-| $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ | Hodge duality of the insertions |
+| $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ | Hodge duality of the insertions |
 | $\sigma^{0k},\sigma^{0k}\gamma_5$ | Anti-Hermitian, $\mathbb{M}_-$ (EDM insertion) |
 | $\sigma^{ij},\sigma^{ij}\gamma_5$ | Hermitian, $\mathbb{M}_+$ (magnetic insertion) |
 | $-\tfrac{i}{2}d\,\bar{\psi}\sigma^{\mu\nu}\gamma_5\psi F_{\mu\nu}$ | EDM Lagrangian |

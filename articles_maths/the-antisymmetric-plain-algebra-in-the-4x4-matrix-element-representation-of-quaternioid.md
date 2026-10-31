@@ -21,11 +21,10 @@ ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $
 nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
 The model and its multiplicativity are *Introduction to the $4\times4$ Matrix Element Representation
-$M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions* and *The General Plain Algebra in the $4\times4$ Matrix Element
-Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the bracket and its structure are *The Lie Algebra of the
+$M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions*; the bracket and its structure are *The Lie Algebra of the
 Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Algebra*, below this
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the $2\times2$
-Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this category.
+Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*, above this article in this category.
 
 ## The Left Regular Model
 
