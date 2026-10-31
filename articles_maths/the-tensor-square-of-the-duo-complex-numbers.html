@@ -167,9 +167,9 @@ $$
 $$</p>
 <p><strong>Theorem (the algebra structure).</strong> The twisted product is bilinear, associative and unital. Its identity is
 $$
-1_F=\sum_{i,j}F^{ij}e_i\otimes e_j,
+1_F=\sum_{i,j}(F^{-1})_{ij}e_i\otimes e_j,
 $$
-where $F^{ij}$ is the inverse matrix of $F_{ij}=F(e_i,e_j)$. The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $\operatorname{End}(V)$ by the map
+where $(F^{-1})_{ij}$ is the inverse matrix of $F_{ij}=F(e_i,e_j)$. The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $\operatorname{End}(V)$ by the map
 $$
 \Phi_F(u\otimes v)=\bigl(w\mapsto F(v,w)u\bigr).
 $$</p>
@@ -183,7 +183,7 @@ $$
 $$
 coincide. For the identity, compute against a basis vector,
 $$
-1_F\cdot(e_k\otimes v)=\sum_{i,j}F^{ij}F(e_j,e_k)e_i\otimes v=\sum_i\delta^{i}_{k}e_i\otimes v=e_k\otimes v,
+1_F\cdot(e_k\otimes v)=\sum_{i,j}(F^{-1})_{ij}F(e_j,e_k)e_i\otimes v=\sum_i\delta_{ik}e_i\otimes v=e_k\otimes v,
 $$
 and the same on the other side. For the isomorphism, $\Phi_F$ is the composite of the theorem of the previous section, hence bijective, and it is multiplicative:
 $$
@@ -246,7 +246,7 @@ where $\operatorname{Sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ i
 <p><strong>Remark (the spin interpretation).</strong> For $\mathrm{SU}(2)$, the space $V$ is the spinor representation of spin $\tfrac12$, the symmetric square is the spin-$1$ representation of dimension $3$, and the alternating square is the scalar of spin $0$. <strong>The tensor square of a spinor is a vector plus a scalar</strong>, which is the elementary case of the addition of angular momenta; the spin representation is <em>The One-Sided Action and the Spin Representation</em>, and the groups are <em>The Classical Groups of $\mathbb{C}^2$</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The tensor square $V\otimes V$ has dimension $4$ and decomposes canonically under the swap into the symmetric square of dimension $3$ and the alternating square of dimension $1$: $4=3+1$, or $6+2$ over $\mathbb{R}$. The symmetric square is, after a basis, the space of binary quadratic forms $aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2$, with the rank-one elements forming the Veronese conic $b^2-4ac=0$ in $\mathbb{CP}^2$; the alternating square is the line of the determinant, on which $g$ acts by $\det g$, and it has no canonical generator.</p>
-<p>The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}F^{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.</p>
+<p>The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\operatorname{End}(V)$, by $u\otimes\ell\mapsto(Q\mapsto\ell(Q)u)$. A nondegenerate bilinear form $F$ gives an isomorphism $V\otimes V\cong\operatorname{End}(V)$, $u\otimes v\mapsto(Q\mapsto F(v,Q)u)$, and a twisted product $(u\otimes v)(u'\otimes v')=F(v,u')u\otimes v'$ with identity $\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$; the resulting algebra is $M_2(\mathbb{C})\cong\mathbb{B}$. For $F$ symmetric the two summands correspond to the symmetric and the skew operators; for $F$ alternating they correspond to $\mathfrak{sp}(2)$ and the scalars. Under $\mathrm{SL}_2(\mathbb{C})$ the square is the sum of the irreducible representation of dimension $3$ and the trivial one, and under $\mathrm{GL}_2(\mathbb{C})$ the second summand is the determinant character.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -297,7 +297,7 @@ where $\operatorname{Sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ i
 <td>the twisted product</td>
 </tr>
 <tr>
-<td>$1_F=\sum_{ij}F^{ij}e_i\otimes e_j$</td>
+<td>$1_F=\sum_{ij}(F^{-1})_{ij}e_i\otimes e_j$</td>
 <td>its identity, the inverse form</td>
 </tr>
 </tbody>

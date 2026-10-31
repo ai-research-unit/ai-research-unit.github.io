@@ -91,9 +91,9 @@ $$</p>
 <p><strong>Proof.</strong> The dimensions are those of the annihilators, computed in the proposition; the trace is the difference of the two dimensions of the type, and the determinant the sign $(-1)^{m}$.</p>
 <p><strong>Example.</strong> For $n=2$ and $T$ of type $(1,1)$, say $T = \operatorname{diag}(1,-1)$ in a basis $e_1,e_2$ with dual basis $\varphi^{1},\varphi^{2}$, the transposed involution is $\operatorname{diag}(1,-1)$ in the dual basis: $T^{*}\varphi^{1} = \varphi^{1}$ because $\varphi^{1}(Te_1) = 1$ and $\varphi^{1}(Te_2) = 0$, and $T^{*}\varphi^{2} = -\varphi^{2}$. Its fixed part is spanned by $\varphi^{1}$, and $(V_-)^{0}$ is spanned by $\varphi^{1}$, as it must be.</p>
 <h2 id="the-matrix-in-the-dual-basis">The Matrix in the Dual Basis</h2>
-<p>Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\varphi^{1},\dots,\varphi^{n})$ be the dual basis, $\varphi^{i}(v_j) = \delta^{i}_{j}$.</p>
-<p><strong>Proposition.</strong> $T^{*}\varphi^{i} = \varepsilon_i\varphi^{i}$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as <em>The Transpose of a Linear Map</em> records.</p>
-<p><strong>Proof.</strong> $(T^{*}\varphi^{i})(v_j) = \varphi^{i}(Tv_j) = \varepsilon_j\delta^{i}_{j} = \varepsilon_i\delta^{i}_{j} = (\varepsilon_i\varphi^{i})(v_j)$ for every $j$; the maps agree on a basis, hence are equal.</p>
+<p>Fix a basis $\mathcal{B} = (v_1,\dots,v_n)$ of $V$ in which $T$ is diagonal, $Tv_i = \varepsilon_i v_i$ with $\varepsilon_i = 1$ for $i \le p$ and $\varepsilon_i = -1$ for $i > p$, and let $\mathcal{B}^{*} = (\varphi_1,\dots,\varphi_n)$ be the dual basis, $\varphi_i(v_j) = \delta_{ij}$.</p>
+<p><strong>Proposition.</strong> $T^{*}\varphi_i = \varepsilon_i\varphi_i$, so the matrix of $T^{*}$ in the dual basis is $\operatorname{diag}(\varepsilon_1,\dots,\varepsilon_n)$, the transpose of the matrix of $T$; in an arbitrary basis the matrix of $T^{*}$ in the dual basis is the transpose of the matrix of $T$, as <em>The Transpose of a Linear Map</em> records.</p>
+<p><strong>Proof.</strong> $(T^{*}\varphi_i)(v_j) = \varphi_i(Tv_j) = \varepsilon_j\delta_{ij} = \varepsilon_i\delta_{ij} = (\varepsilon_i\varphi_i)(v_j)$ for every $j$; the maps agree on a basis, hence are equal.</p>
 <p><strong>Remark (the dual basis is adapted, not chosen twice).</strong> The basis diagonalising $T$ also diagonalises $T^{*}$, and the eigenvalues are the same because the two maps have the same matrix entries read in different pairs of indices. This is the matrix reason that the type is preserved, and it shows that no new computation is needed for the dual: the transposition exchanges the two eigenvalues of a non-symmetric situation only when the order of the terms is read in the other direction.</p>
 <h2 id="stable-subspaces-and-quotients">Stable Subspaces and Quotients</h2>
 <p><strong>Definition.</strong> A subspace $U \subseteq V$ is <strong>stable</strong> under $T$ when $T(U) \subseteq U$, equivalently when $T(U) = U$, since $T$ is a bijection.</p>
@@ -153,7 +153,7 @@ $$</p>
 <td>the annihilator of a subspace $U$</td>
 </tr>
 <tr>
-<td>$\varphi^{i}$, $\delta^{i}_{j}$</td>
+<td>$\varphi_i$, $\delta_{ij}$</td>
 <td>the dual basis and the Kronecker symbol</td>
 </tr>
 <tr>

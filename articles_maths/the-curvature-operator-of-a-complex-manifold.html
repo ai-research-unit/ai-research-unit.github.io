@@ -96,9 +96,9 @@ so $\mathcal{R}$ preserves the type of bivectors and decomposes into a Hermitian
 $$
 \langle R^{\mathbb C}(X\wedge\bar Y), Z\wedge\bar W\rangle = \Theta(X,\bar Y; Z,\bar W) ;
 $$
-in local holomorphic coordinates the components $R_{i\bar j}{}^{k}{}_{l}$ with
+in local holomorphic coordinates the components $R_{i\bar jkl}$ with
 $$
-\Theta_{\bar j}{}^{k}{}_{l} = \sum_i R_{i\bar j}{}^{k}{}_{l}\,dz^i
+\Theta_{\bar jkl} = \sum_i R_{i\bar jkl}\,dz_i
 $$
 are the Chern curvature coefficients.</p>
 <p><strong>Proof.</strong> A $(1,1)$-form with values in $\mathfrak u(n)$ is complex-linear and lowers the bidegree by at most one in each factor, hence preserves the bidegree of a bivector; the identification with the Hermitian part of the curvature operator is the contraction against the metric on the two legs that the $(1,1)$-form does not carry. The existence and uniqueness of the Chern connection above are <em>Hermitian Geometry and Almost Complex Structures</em>.</p>
@@ -110,7 +110,7 @@ is a closed real $(1,1)$-form whose de Rham class is the first Chern class $c_1(
 <p><strong>Proof.</strong> The trace of a $\mathfrak u(n)$-valued $(1,1)$-form is a real $(1,1)$-form, closed by the Bianchi identity of the connection, and its class is the Chern class by the Chern–Weil construction; the change of a Hermitian metric on a line bundle multiplies a local frame by a positive function, and the difference of two first Chern forms is $\frac{i}{2\pi}\partial\bar\partial\log(f)$, which is exact. The Chern–Weil theory is <em>Characteristic Classes</em>.</p>
 <p><strong>Remark (the Ricci form).</strong> For the tangent bundle with the metric $g$ the trace of $\Theta$ in a unitary frame is the <strong>Ricci form</strong>
 $$
-\rho = i\sum_{j,k}R_{i\bar j k\bar k}\,dz^i\wedge d\bar z^j,
+\rho = i\sum_{j,k}R_{i\bar j k\bar k}\,dz_i\wedge d\bar z_j,
 $$
 which satisfies $\rho = i\,\partial\bar\partial\log\det(g_{j\bar k})$ and $[\rho] = 2\pi c_1(M)$; this is the precise sense in which the Chern curvature of the tangent bundle is the Ricci curvature read as a $(1,1)$-form.</p>
 <h2 id="the-kahler-curvature">The Kähler Curvature</h2>
@@ -134,7 +134,7 @@ $$
 R_{i\bar j k\bar l} = \frac{c}{4}\bigl(g_{i\bar j}g_{k\bar l} + g_{i\bar l}g_{k\bar j}\bigr) .
 $$</p>
 <p><strong>Proof.</strong> The holomorphic sectional curvature is the sectional curvature of the real two-plane spanned by $X$ and $JX$; if it is constant the second Bianchi identity propagates the constancy, as in Schur's theorem of <em>Curvature and Geodesics</em>, and the displayed form is the unique tensor with the symmetries of the Kähler curvature and the constant value $c$. The models are $\mathbb C^n$ with $c=0$, $\mathbb{CP}^n$ with $c>0$ and the complex hyperbolic space with $c<0$, and their classification as the space forms is <em>Kähler Geometry</em>.</p>
-<p><strong>Remark (the Ricci form and Kähler–Einstein).</strong> For a Kähler metric the Ricci form is $\rho = i\sum_{j,k}R_{i\bar j k\bar k}dz^i\wedge d\bar z^j$, and it satisfies $\rho = i\,\partial\bar\partial\log\det(g)$ and $[\rho] = 2\pi c_1(M)$; the metric is <strong>Kähler–Einstein</strong> when $\rho = \lambda\,\Omega$ for the Kähler form $\Omega$, equivalently $R_{i\bar j} = \lambda g_{i\bar j}$, and then the scalar curvature is the constant $2n\lambda$. The constant-holomorphic-sectional-curvature metrics are the Kähler–Einstein metrics with the strongest rigidity, and the existence problem for the general Kähler–Einstein metric, and its obstruction, belong to <em>Kähler Geometry</em> and beyond.</p>
+<p><strong>Remark (the Ricci form and Kähler–Einstein).</strong> For a Kähler metric the Ricci form is $\rho = i\sum_{j,k}R_{i\bar j k\bar k}dz_i\wedge d\bar z_j$, and it satisfies $\rho = i\,\partial\bar\partial\log\det(g)$ and $[\rho] = 2\pi c_1(M)$; the metric is <strong>Kähler–Einstein</strong> when $\rho = \lambda\,\Omega$ for the Kähler form $\Omega$, equivalently $R_{i\bar j} = \lambda g_{i\bar j}$, and then the scalar curvature is the constant $2n\lambda$. The constant-holomorphic-sectional-curvature metrics are the Kähler–Einstein metrics with the strongest rigidity, and the existence problem for the general Kähler–Einstein metric, and its obstruction, belong to <em>Kähler Geometry</em> and beyond.</p>
 <h2 id="the-decomposition-by-the-unitary-group">The Decomposition by the Unitary Group</h2>
 <p><strong>Definition.</strong> The space of algebraic curvature tensors at a point is a representation of the orthogonal group $O(2n)$ and, for a Kähler metric, of the unitary group $\mathrm{U}(n)$ acting on the complexified tangent space; an <strong>invariant decomposition</strong> is a decomposition into subrepresentations, and the <strong>irreducible parts</strong> of the curvature operator are the isotypic components.</p>
 <p><strong>Proposition (the unitary decomposition).</strong> For a Kähler metric the space of algebraic curvature tensors decomposes under $\mathrm{U}(n)$ into the scalar part, the traceless-Ricci part, the Bochner part and the Weyl part,

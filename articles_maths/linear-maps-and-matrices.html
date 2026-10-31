@@ -156,7 +156,7 @@ $$</p>
 <p><em>Proof.</em> If $\operatorname{rk}T=r$, choose a basis $w_1,\dots,w_r$ of $\operatorname{im}T$ and define $R(v)$ to be the coordinates of $T(v)$ in that basis, so that $R$ is surjective; define $S$ on the standard basis of $F^r$ by $e_i \mapsto w_i$, so that $S$ is injective and $T=SR$. Conversely, if $T=SR$ with $R$ surjective and $S$ injective, then $\operatorname{im}T=S(\operatorname{im}R)=S(F^r) \cong F^r$.</p>
 <h2 id="the-dual-map-and-the-transpose">The Dual Map and the Transpose</h2>
 <h3 id="the-dual-space">The Dual Space</h3>
-<p><strong>Definition.</strong> The <strong>dual space</strong> of $V$ is $V^*=\operatorname{Hom}_F(V,F)$, and the <strong>dual basis</strong> of a basis $v_1,\dots,v_n$ is the basis $v^1,\dots,v^n$ of $V^*$ defined by $v^i(v_j)=\delta^i_j$.</p>
+<p><strong>Definition.</strong> The <strong>dual space</strong> of $V$ is $V^*=\operatorname{Hom}_F(V,F)$, and the <strong>dual basis</strong> of a basis $v_1,\dots,v_n$ is the basis $\check v_1,\dots,\check v_n$ of $V^*$ defined by $\check v_i(v_j)=\delta_{ij}$.</p>
 <p>The dual basis is a basis, so $\dim_F V^*=\dim_F V$, and the evaluation map $V \to V^{**}$, $v \mapsto (\varphi \mapsto \varphi(v))$, is an isomorphism in finite dimension. This is a finite-dimensional accident: for an infinite-dimensional space the evaluation is injective and not surjective.</p>
 <p><strong>Definition.</strong> For linear $T:V \to W$, the <strong>dual map</strong> (or transpose) is</p>
 <p>$$
@@ -292,15 +292,15 @@ $$</p>
 <td>dual map, $T^*(\varphi)=\varphi \circ T$</td>
 </tr>
 <tr>
-<td>$V^*$, $v^i$</td>
-<td>dual space and dual basis, $v^i(v_j)=\delta^i_j$</td>
+<td>$V^*$, $\check v_i$</td>
+<td>dual space and dual basis, $\check v_i(v_j)=\delta_{ij}$</td>
 </tr>
 <tr>
 <td>$U^0$</td>
 <td>annihilator of a subspace</td>
 </tr>
 <tr>
-<td>$\delta^i_j$</td>
+<td>$\delta_{ij}$</td>
 <td>Kronecker delta</td>
 </tr>
 <tr>

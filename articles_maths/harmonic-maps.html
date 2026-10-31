@@ -85,7 +85,7 @@ $$</p>
 <h3 id="definitions">Definitions</h3>
 <p><strong>Definition.</strong> Let $(M,g)$ and $(N,h)$ be Riemannian manifolds, $M$ compact and without boundary unless stated, and let $\phi : M \to N$ be a map of class $C^1$. The <strong>energy</strong> of $\phi$ is</p>
 <p>$$
-E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = (g^{-1})_{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial/\partial x_i\,\phi_\alpha\,\partial/\partial x_j\,\phi_\beta ,
+E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = \sum_{i,j,\alpha,\beta}(g^{-1})_{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial/\partial x_i\,\phi_\alpha\,\partial/\partial x_j\,\phi_\beta ,
 $$</p>
 <p>in local coordinates $x$ on $M$ and $\phi$ on $N$; a map with finite energy is an element of the Sobolev space $W^{1,2}(M,N)$ of maps whose local expressions lie in $W^{1,2}$.</p>
 <p><strong>Definition.</strong> The <strong>tension field</strong> of $\phi$ is the section of the pull-back bundle $\phi^*TN$ defined by</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the Christoffel symbols of $(N,h)$.</p>
 <p><em>Proof.</em> The derivative of the energy is</p>
 <p>$$
-\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M (g^{-1})_{ij}h_{\alpha\beta}\bigl(\partial/\partial x_i\,V_\alpha\partial/\partial x_j\,\phi_\beta + \dots\bigr) ,
+\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M \sum_{i,j,\alpha,\beta}(g^{-1})_{ij}h_{\alpha\beta}\bigl(\partial/\partial x_i\,V_\alpha\partial/\partial x_j\,\phi_\beta + \dots\bigr) ,
 $$</p>
 <p>and integrating by parts on $M$, which has no boundary or on which $V$ vanishes, produces the integral of $V$ against the trace of $\nabla d\phi$ with the sign displayed; the arbitrariness of $V$ gives the equation.</p>
 <p><strong>Proposition (the three classical cases).</strong> If $N = \mathbb{R}$ then harmonicity is $\Delta_gu=0$, the harmonic functions; if $M = \mathbb{R}$ or $S^1$ then harmonicity is the geodesic equation of $(N,h)$; if $\dim M = 2$ and $\phi$ is a conformal immersion then harmonicity is the vanishing of the mean curvature of the image, so the image is a minimal surface.</p>
@@ -193,7 +193,7 @@ $$</p>
 </tr>
 <tr>
 <td>$|d\phi|^2$</td>
-<td>$(g^{-1})_{ij}h_{\alpha\beta}\partial/\partial x_i\,\phi_\alpha\partial/\partial x_j\,\phi_\beta$</td>
+<td>$\sum_{i,j,\alpha,\beta}(g^{-1})_{ij}h_{\alpha\beta}\partial/\partial x_i\,\phi_\alpha\partial/\partial x_j\,\phi_\beta$</td>
 </tr>
 <tr>
 <td>$\tau(\phi)$</td>

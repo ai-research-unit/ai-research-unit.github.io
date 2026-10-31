@@ -103,11 +103,11 @@ $$</p>
 <h3 id="the-spherical-harmonic-form">The Spherical-Harmonic Form</h3>
 <p>Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the <strong>spherical multipole expansion</strong></p>
 <p>$$
-\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_l^{m}(\theta,\phi)\;},
+\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\phi)\;},
 $$</p>
 <p>with the <strong>spherical multipole moments</strong></p>
 <p>$$
-\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_l^{m*}(\theta_2,\phi_2)\,d^3x_2 .
+\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\phi_2)\,d^3x_2 .
 $$</p>
 <p>The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.</p>
 <h3 id="the-first-three-moments">The First Three Moments</h3>
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
 $$</p>
-<p>in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_l^m$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.</p>
+<p>in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_{lm}$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.</p>
 <p>Two comments fix the interpretation. First, the tower is infinite because the space of functions on the sphere is <strong>infinite-dimensional</strong>: a function on $S^2$ has arbitrarily fine angular structure, and each finer scale is one more $D^{(l)}$. Second, the tower is a property of the <strong>field</strong>, which is a function of position; it is not a property of the algebra of values the field takes. That distinction becomes the whole content of the closing article, and it is already visible here.</p>
 <h2 id="the-biquaternion-transcription-of-the-fields">The Biquaternion Transcription of the Fields</h2>
 <h3 id="the-potential-and-the-field">The Potential and the Field</h3>
@@ -373,7 +373,7 @@ $$</p>
 <td>Symmetric traceless square of the vector part</td>
 </tr>
 <tr>
-<td>$Y_l^m, P_l$</td>
+<td>$Y_{lm}, P_l$</td>
 <td>Spherical harmonics and Legendre polynomials</td>
 </tr>
 </tbody>

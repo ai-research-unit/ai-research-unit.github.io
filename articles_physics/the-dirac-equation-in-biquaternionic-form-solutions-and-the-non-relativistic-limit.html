@@ -134,7 +134,7 @@ $$</p>
 <p>$$
 \boxed{\;w^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E+m}\,\xi^{(r)} \\[2pt] \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\xi^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$</p>
-<p>where $\vec u_p = \vec p/|\vec p|$ and $\xi^{(1)}, \xi^{(2)}$ are the standard orthonormal two-spinors, $\xi^{(r){}^{*}}\xi^{(s)} = \delta^{rs}$. At rest this reduces to $w^{(r)}(0) = \sqrt{2m}\begin{pmatrix}\xi^{(r)}\\ 0\end{pmatrix}$.</p>
+<p>where $\vec u_p = \vec p/|\vec p|$ and $\xi^{(1)}, \xi^{(2)}$ are the standard orthonormal two-spinors, $\xi^{(r){}^{*}}\xi^{(s)} = \delta_{rs}$. At rest this reduces to $w^{(r)}(0) = \sqrt{2m}\begin{pmatrix}\xi^{(r)}\\ 0\end{pmatrix}$.</p>
 <p>The same solutions in the <strong>chiral basis</strong> are indexed by helicity. Let $\chi_\pm$ be eigenspinors of the helicity operator,</p>
 <p>$$
 \boldsymbol{\sigma}\cdot\vec u_p\,\chi_\pm = \pm\,\chi_\pm .
@@ -158,7 +158,7 @@ $$</p>
 <p>$$
 \boxed{\;v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
 $$</p>
-<p>with $\eta^{(r){}^{*}}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}\begin{pmatrix} 0 \\ \eta^{(r)} \end{pmatrix}$. The negative-frequency solution space is again two-dimensional. In the standard reading, these modes describe antiparticles: the sign of the frequency is reversed by the charge-conjugation operation, which exchanges $w$ and $v$. Together, then, the amplitude equations have a four-dimensional complex solution space at fixed $\vec p$, exactly as the companion article stated.</p>
+<p>with $\eta^{(r){}^{*}}\eta^{(s)} = \delta_{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}\begin{pmatrix} 0 \\ \eta^{(r)} \end{pmatrix}$. The negative-frequency solution space is again two-dimensional. In the standard reading, these modes describe antiparticles: the sign of the frequency is reversed by the charge-conjugation operation, which exchanges $w$ and $v$. Together, then, the amplitude equations have a four-dimensional complex solution space at fixed $\vec p$, exactly as the companion article stated.</p>
 <h3 id="the-biquaternion-mass-shell">The biquaternion mass shell</h3>
 <p>The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right)$, carries the wave biquaternion $\tilde{P}/\hbar$.</p>
 <p>With the four-wavevector of the companion article written as $\tilde P/\hbar = i\omega/c\,e_t + \vec k$, the biquaternion norm is</p>
@@ -177,8 +177,8 @@ $$</p>
 <h2 id="orthogonality-and-normalization">Orthogonality and normalization</h2>
 <p>The Dirac adjoint $\bar{\psi} = \psi^\dagger\gamma_0$ makes the bilinear $\bar{w}w$ a Lorentz scalar. A direct computation from the explicit solutions gives the normalization</p>
 <p>$$
-\bar{w}^{(r)}(\vec p)\,w^{(s)}(\vec p) = 2m\,\delta^{rs}, \qquad
-\bar{v}^{(r)}(\vec p)\,v^{(s)}(\vec p) = -2m\,\delta^{rs},
+\bar{w}^{(r)}(\vec p)\,w^{(s)}(\vec p) = 2m\,\delta_{rs}, \qquad
+\bar{v}^{(r)}(\vec p)\,v^{(s)}(\vec p) = -2m\,\delta_{rs},
 $$</p>
 <p>the relative minus sign being the standard signature of the negative-frequency branch. The cross terms vanish at equal momentum,</p>
 <p>$$
@@ -186,8 +186,8 @@ $$</p>
 $$</p>
 <p>and the Hermitian (non-covariant) products are</p>
 <p>$$
-w^{(r){}^{*}}(\vec p)\,w^{(s)}(\vec p) = 2E\,\delta^{rs}, \qquad
-v^{(r){}^{*}}(\vec p)\,v^{(s)}(\vec p) = 2E\,\delta^{rs}, \qquad
+w^{(r){}^{*}}(\vec p)\,w^{(s)}(\vec p) = 2E\,\delta_{rs}, \qquad
+v^{(r){}^{*}}(\vec p)\,v^{(s)}(\vec p) = 2E\,\delta_{rs}, \qquad
 w^{(r){}^{*}}(\vec p)\,v^{(s)}(-\vec p) = 0,
 $$</p>
 <p>the last relation requiring the opposite momentum, as usual. Three normalization conventions are in common use — $\bar{w}w = 2m$, $\bar{w}w = 1$, and $w^\dagger w = 1$ — and they differ by momentum-dependent factors; the covariant convention $\bar{w}w = 2m$ is the one used here, because it makes the spin sums below manifestly covariant.</p>

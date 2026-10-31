@@ -190,9 +190,9 @@ $$</p>
 <p><strong>(b)</strong> $\nabla J = 0$;</p>
 <p><strong>(c)</strong> the torsion $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$ has vanishing $(0,2)$-component, equivalently $T(X,Y) = T(JX,JY)$ for all $X, Y$.</p>
 <p>This is the <strong>Chern connection</strong> of the Hermitian structure.</p>
-<p><strong>Proof sketch.</strong> Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = \theta^k_{\;j}\otimes e_k$ with</p>
+<p><strong>Proof sketch.</strong> Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = \theta_{kj}\otimes e_k$ with</p>
 <p>$$
-\theta^k_{\;j} = \sum_l g^{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta^k_{\;j} = 0,
+\theta_{kj} = \sum_l (g^{-1})_{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta_{kj} = 0,
 $$</p>
 <p>that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.</p>
 <p><strong>Proposition.</strong> The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is <strong>compatible with the Hermitian metric</strong> in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has <strong>type $(1,1)$</strong>, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $\theta = h^{-1}\partial h$ and the curvature matrix is</p>
@@ -273,7 +273,7 @@ $$</p>
 <td>Calibration; Wirtinger inequality $\vert\Omega^{\wedge k}(u_1,\ldots,u_{2k})\vert \le k!$ on an oriented orthonormal basis</td>
 </tr>
 <tr>
-<td>$h_{i\bar j} = g(\partial/\partial z^i,\partial/\partial\bar z^j)$, $\Omega = i\sum h_{i\bar j}dz^i\wedge d\bar z^j$</td>
+<td>$h_{i\bar j} = g(\partial/\partial z_i,\partial/\partial\bar z_j)$, $\Omega = i\sum_{i,j} h_{i\bar j}dz_i\wedge d\bar z_j$</td>
 <td>Local expressions in holomorphic coordinates</td>
 </tr>
 <tr>

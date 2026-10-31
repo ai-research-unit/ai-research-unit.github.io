@@ -81,7 +81,7 @@
 <li>Corpus article <em>The CKM Matrix and CP Violation in Biquaternionic Form</em>, for the flavour-factor interpretation of the mixing that $\mathrm{SU}(3)$ does not carry.</li>
 </ul>
 <h2 id="representations-of-su3">Representations of SU(3)</h2>
-<p>An irreducible representation of $\mathrm{SU}(3)$ is carried by a <strong>traceless bisymmetric tensor</strong> $T^{a_1\dots a_n}_{b_1\dots b_m}$, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its <strong>degree</strong> is</p>
+<p>An irreducible representation of $\mathrm{SU}(3)$ is carried by a <strong>traceless bisymmetric tensor</strong> $T_{a_1\dots a_n,\,b_1\dots b_m}$, with the first group fundamental and the second antifundamental, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its <strong>degree</strong> is</p>
 <p>$$
 N(n,m) = \tfrac12\,(n+1)(m+1)(n+m+2).
 $$</p>
@@ -175,31 +175,31 @@ $$</p>
 </table></div>
 <p>The singlet is $(0,0)$, degree $1$; the fundamental triplet is $(1,0)$, degree $3$, and its conjugate $(0,1)$, also $3$; the adjoint (the <strong>octet</strong>) is $(1,1)$, degree $8$; the decuplet is $(3,0)$, degree $10$; the $(2,2)$ is the $27$. These are the degrees the programme's particle assignments use.</p>
 <h2 id="the-okubo-basis-and-the-three-su2-subalgebras">The Okubo Basis and the Three SU(2) Subalgebras</h2>
-<p>To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A^{i}_{\ k}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with</p>
+<p>To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A_{ik}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with</p>
 <p>$$
-A^{1}_{\ 1}=\mathrm{diag}\bigl(\tfrac23,-\tfrac13,-\tfrac13\bigr),\quad
-A^{2}_{\ 2}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
-A^{3}_{\ 3}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
+A_{11}=\mathrm{diag}\bigl(\tfrac23,-\tfrac13,-\tfrac13\bigr),\quad
+A_{22}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
+A_{33}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$</p>
-<p>the off-diagonal units $A^{i}_{\ k}$ ($i\ne k$) carrying one unit entry, and $A^{1}_{\ 1}+A^{2}_{\ 2}+A^{3}_{\ 3}=0$. The pair is mixed, $i$ fundamental and $k$ antifundamental: the height records the representation, not a frame slot. It is what carries the trace $\sum_k A^{k}_{\ k}$, the matrix product $\sum_k A^{i}_{\ k}A^{k}_{\ l}$ and the invariant mixed delta $\delta^{i}_{\ k}$, which is not a metric. The commutation relations are</p>
+<p>the off-diagonal units $A_{ik}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_k A_{kk}$, the matrix product $\sum_k A_{ik}A_{kl}$ and the invariant mixed delta $\delta_{ik}$, which is not a metric. The commutation relations are</p>
 <p>$$
-\bigl[A^{i}_{\ k},A^{l}_{\ m}\bigr] = \delta^{i}_{\ m}A^{l}_{\ k}-\delta^{l}_{\ k}A^{i}_{\ m}.
+\bigl[A_{ik},A_{lm}\bigr] = \delta_{im}A_{lk}-\delta_{lk}A_{im}.
 $$</p>
 <p>This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives</p>
 <p>$$
-a^{i}_{\ j} = A^{i}_{\ j}-\tfrac12\delta^{i}_{\ j}\sum_k A^{k}_{\ k},
+a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_k A_{kk},
 $$</p>
-<p>whose units satisfy the $\mathfrak{su}(2)$ relations, so <strong>I-spin</strong> is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A^{1}_{\ 1}$ and $A^{3}_{\ 3}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins</p>
+<p>whose units satisfy the $\mathfrak{su}(2)$ relations, so <strong>I-spin</strong> is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A_{11}$ and $A_{33}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins</p>
 <p>$$
-I_3 = A^{1}_{\ 1}+\tfrac12 A^{3}_{\ 3},
+I_3 = A_{11}+\tfrac12 A_{33},
 \qquad
-U_3 = A^{3}_{\ 3}+\tfrac12 A^{1}_{\ 1},
+U_3 = A_{33}+\tfrac12 A_{11},
 \qquad
-V_3 = A^{1}_{\ 1}+\tfrac12 A^{2}_{\ 2},
+V_3 = A_{11}+\tfrac12 A_{22},
 $$</p>
 <p>the <strong>I-spin</strong>, <strong>U-spin</strong> and <strong>V-spin</strong> of the eightfold way. A charge operator on a representation of degree $N$ then has the form</p>
 <p>$$
-Ϙ^{(N)} = \alpha\,A^{1}_{\ 1}(N)+\beta\,A^{3}_{\ 3}(N)+\gamma\,\mathbf{1}_N,
+Ϙ^{(N)} = \alpha\,A_{11}(N)+\beta\,A_{33}(N)+\gamma\,\mathbf{1}_N,
 $$</p>
 <p>with the constant $\gamma$ a shift. The three subalgebras matter because different mass relations are statements in different ones: the Gell-Mann–Okubo relation is a U-spin statement, and the equal-spacing relation of the decuplet is an I-spin statement.</p>
 <h2 id="admissible-supermultiplets">Admissible Supermultiplets</h2>
@@ -238,16 +238,16 @@ $$</p>
 <p>$$
 m^2 = m_0^2+\delta m^2,
 $$</p>
-<p>where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,k}D^{i}_{\ k}Z^{k}_{\ i}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,</p>
+<p>where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,k}D_{ik}Z_{ki}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,</p>
 <p>$$
-D^{i}_{\ k} = \lambda\delta^{i}_{\ k}\mathbf{1}+\mu A^{i}_{\ k}+\nu\sum_l A^{i}_{\ l}A^{l}_{\ k}+\dots,
+D_{ik} = \lambda\delta_{ik}\mathbf{1}+\mu A_{ik}+\nu\sum_l A_{il}A_{lk}+\dots,
 $$</p>
 <p>$$
 Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
 +C_2\begin{pmatrix}\tfrac23&0&0\\0&-\tfrac13&0\\0&0&-\tfrac13\end{pmatrix},
 \qquad |C_2|\ll|C| .
 $$</p>
-<p>The first term of $Z$ splits the supermultiplet into I-multiplets of <strong>different hypercharge</strong> $Y$; the second, much smaller, splits the members <strong>within</strong> an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta\sum_l A^{3}_{\ l}A^{l}_{\ 3}$ and $\delta m_2^2=\xi_2A^{1}_{\ 1}+\eta_2\sum_l A^{1}_{\ l}A^{l}_{\ 1}$ with $\xi_2=\theta\xi$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the <strong>Gell-Mann–Okubo mass formula</strong></p>
+<p>The first term of $Z$ splits the supermultiplet into I-multiplets of <strong>different hypercharge</strong> $Y$; the second, much smaller, splits the members <strong>within</strong> an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A_{33}+\eta\sum_l A_{3l}A_{l3}$ and $\delta m_2^2=\xi_2A_{11}+\eta_2\sum_l A_{1l}A_{l1}$ with $\xi_2=\theta\xi$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the <strong>Gell-Mann–Okubo mass formula</strong></p>
 <p>$$
 m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)
 +\alpha_2+\beta_2Y+\gamma_2\Bigl(U(U+1)-\tfrac14Ϙ^2\Bigr),
@@ -318,14 +318,14 @@ m_N+m_\Xi = 2256.9\ \text{MeV},
 \tfrac12(3m_\Lambda+m_\Sigma) = 2270.1\ \text{MeV},
 $$</p>
 <p>a discrepancy of $0.58\%$. The relation is satisfied to better than one percent by the physical masses, which is the standard statement of $\mathrm{SU}(3)$ flavour symmetry's accuracy, and it is a genuine test because the four masses are independent inputs.</p>
-<h2 id="the-supermultiplet-mass-math226">The Supermultiplet Mass $m_0$</h2>
+<h2 id="the-supermultiplet-mass-math224">The Supermultiplet Mass $m_0$</h2>
 <p>The parameter $m_0$ is $\mathrm{SU}(3)$-invariant and therefore <strong>not determined by $\mathrm{SU}(3)$</strong>; it is an external parameter, one value per supermultiplet, and it is the average of the masses of the charge multiplets in the supermultiplet. For the baryon octet,</p>
 <p>$$
 \boxed{\;m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr)\;}.
 $$</p>
 <p>The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, with $l,\bar l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the <strong>centre</strong> of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the <strong>splitting</strong> about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
-<p>The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A^{i}_{\ k}$, the $*$-unitary field $Z$ and the mass splitting are <strong>not elements of the biquaternion algebra</strong>. The companion <em>Gauge Group Ceiling</em> shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.</p>
+<p>The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{ik}$, the $*$-unitary field $Z$ and the mass splitting are <strong>not elements of the biquaternion algebra</strong>. The companion <em>Gauge Group Ceiling</em> shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.</p>
 <p>What the framework can host is the <strong>structure of the splitting</strong>. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.</p>
 <p>One further point is worth recording because the programme itself flags it. The <strong>$*$-unitary field</strong> $Z$ — the analogue of the external magnetic field in the Zeeman effect — has, the programme says, no known physical sense; it differs between supermultiplets only by two real parameters, and it is suggested that it be read as a non-local substrate in the sense of decoherence, a field whose coupling localises particles into the energy levels of a supermultiplet. The corpus's companion articles on information in the gauge orbit and on the Higgs mechanism as erasure are the natural place to compare such an interpretation; here it is recorded as the programme's speculation, not as a framework claim.</p>
 <h2 id="what-the-framework-establishes-transcribes-and-does-not">What the Framework Establishes, Transcribes, and Does Not</h2>
@@ -383,15 +383,15 @@ $$</p>
 <td>Labels of an irreducible representation of $\mathrm{SU}(3)$</td>
 </tr>
 <tr>
-<td>$T^{a_1\dots a_n}_{b_1\dots b_m}$</td>
-<td>Traceless bisymmetric tensor carrying the representation</td>
+<td>$T_{a_1\dots a_n,\,b_1\dots b_m}$</td>
+<td>Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental</td>
 </tr>
 <tr>
 <td>$N(n,m)=\tfrac12(n+1)(m+1)(n+m+2)$</td>
 <td>Degree of the representation</td>
 </tr>
 <tr>
-<td>$A^{i}_{\ k}$</td>
+<td>$A_{ik}$</td>
 <td>Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian</td>
 </tr>
 <tr>
@@ -411,7 +411,7 @@ $$</p>
 <td>Mass operator split into symmetric and breaking parts</td>
 </tr>
 <tr>
-<td>$Z$, $D^{i}_{\ k}$</td>
+<td>$Z$, $D_{ik}$</td>
 <td>$*$-Unitary field and $*$-unitary moment of the Zeeman analogy</td>
 </tr>
 <tr>

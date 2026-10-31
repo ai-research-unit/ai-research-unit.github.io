@@ -222,17 +222,17 @@ $$</p>
 <p>with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the character formula: one divides the product of the two characters by the Weyl denominator and expands. For $\mathrm{G} = \mathrm{SL}(n)$ the multiplicities are the <strong>Littlewood–Richardson coefficients</strong>, the same integers that multiply Schur functions in the symmetric algebra, so the representation theory of $\mathrm{SL}(n)$ and the combinatorics of symmetric functions are two descriptions of one structure.</p>
 <p><strong>Example.</strong> For $\mathrm{SL}(2)$ the multiplicities $c_{mn}^{j}$ are all $0$ or $1$, and they are $1$ exactly on the range of the Clebsch–Gordan theorem above. This is the simplest instance of the general phenomenon that the tensor-product multiplicities are bounded above by the multiplicities in the corresponding algebra of symmetric functions, with equality for $\mathrm{SL}(n)$.</p>
 <h3 id="the-casimir-element">The Casimir Element</h3>
-<p><strong>Definition.</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(x^1, \ldots, x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, x^j) = \delta_i^j$. The <strong>Casimir element</strong> is</p>
+<p><strong>Definition.</strong> Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(\check x_1, \ldots, \check x_m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, \check x_j) = \delta_{ij}$. The <strong>Casimir element</strong> is</p>
 <p>$$
-\Omega = \sum_{i=1}^{m} x_i x^j \in \mathrm{U}(\mathrm{G}).
+\Omega = \sum_{i=1}^{m} x_i \check x_i \in \mathrm{U}(\mathrm{G}).
 $$</p>
 <p><strong>Proposition.</strong> The Casimir element is independent of the choice of basis, and it lies in the centre of $\mathrm{U}(\mathrm{G})$: it commutes with every element of $\mathrm{U}(\mathrm{G})$. On the irreducible module $V(\lambda)$ it acts by the scalar</p>
 <p>$$
 (\lambda, \lambda + 2\rho) = (\lambda + \rho, \lambda + \rho) - (\rho, \rho).
 $$</p>
-<p><strong>Proof.</strong> Changing the basis replaces $\sum_i x_i \otimes x^i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathrm{G}$,</p>
+<p><strong>Proof.</strong> Changing the basis replaces $\sum_i x_i \otimes \check x_i$ by $\sum_{ab} B_{ab}\, y_a \otimes y_b$ where $(B_{ab})$ is the inverse of the matrix of the form in the new basis, so the element is basis-independent. Invariance of the form gives, for $y \in \mathrm{G}$,</p>
 <p>$$
-\Bigl[ y, \sum_i x_i x^i \Bigr] = \sum_i \Bigl( [y, x_i] x^i + x_i [y, x^i] \Bigr) = 0,
+\Bigl[ y, \sum_i x_i \check x_i \Bigr] = \sum_i \Bigl( [y, x_i] \check x_i + x_i [y, \check x_i] \Bigr) = 0,
 $$</p>
 <p>because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $\Omega$ to a highest weight vector $v_\lambda$: the component of $\Omega$ lying in $\mathrm{N}_- \mathrm{U}(\mathrm{G})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$.</p>
 <p><strong>Example.</strong> For $\mathrm{SL}(2)$ with the Killing form, the dual basis of $(e, f, h)$ is $(f/4, e/4, h/8)$, so</p>
@@ -330,7 +330,7 @@ $$</p>
 <td>Kostant partition function and multiplicity formula</td>
 </tr>
 <tr>
-<td>$\Omega = \sum_i x_i x^i$</td>
+<td>$\Omega = \sum_i x_i \check x_i$</td>
 <td>Casimir element; central in $\mathrm{U}(\mathrm{G})$</td>
 </tr>
 <tr>
