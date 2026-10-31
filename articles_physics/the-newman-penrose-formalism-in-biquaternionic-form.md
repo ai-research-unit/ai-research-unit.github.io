@@ -12,7 +12,7 @@ Three claims organise the discussion.
 
 **Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD} \in \mathrm{Sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
 
-**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\Psi_k \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\Psi_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\Psi_{ABCD}k^Ak^Bk^Ck^D$.
+**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\Psi_k \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\Psi_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\sum_{A,B,C,D}\Psi_{ABCD}k_Ak_Bk_Ck_D$.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
@@ -46,7 +46,7 @@ where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rang
 
 Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is **not** an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{M}_-$.
 
-The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters $\mu,\nu,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs.
+The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar m)$ when a tetrad index is needed. Greek letters $\mu,\nu,\dots$ run over the coordinate directions of the material sector, and tetrad indices $a,b,\dots$ over the four legs. The components of a leg in the tetrad carry the same low index, $l_a, n_a, m_a, \bar m_a$, and every contraction over tetrad or spinor indices is written as an explicit sum.
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
@@ -184,10 +184,10 @@ $$
 The first four are the contractions of $\nabla l$ with the tetrad legs,
 
 $$
-\kappa = m^a D l_a, \qquad \sigma = m^a \delta l_a, \qquad \rho = m^a \bar\delta l_a, \qquad \tau = m^a \Delta l_a,
+\kappa = \sum_a m_a D l_a, \qquad \sigma = \sum_a m_a \delta l_a, \qquad \rho = \sum_a m_a \bar\delta l_a, \qquad \tau = \sum_a m_a \Delta l_a,
 $$
 
-where $D=l^a\nabla_a$, $\Delta=n^a\nabla_a$, $\delta=m^a\nabla_a$ and $\bar\delta=\bar m^a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\nabla n$, and the last four complete the components of $\nabla l$ and $\nabla n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
+where $D=\sum_a l_a\nabla_a$, $\Delta=\sum_a n_a\nabla_a$, $\delta=\sum_a m_a\nabla_a$ and $\bar\delta=\sum_a \bar m_a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\nabla n$, and the last four complete the components of $\nabla l$ and $\nabla n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
 
 In the framework the connection is valued in the bivector subspace. The parent article identifies the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ with the six-dimensional subspace $\{\vec G : \mathrm{Sc}(\vec G)=0\}$ — equivalently, under $\Phi$, the traceless $2\times2$ matrices — spanned by $\vec e_x,\vec e_y,\vec e_z$ and $i\vec e_x,i\vec e_y,i\vec e_z$, which is the complex-pure-vector subspace of $\mathbb{B}$. A connection 1-form takes values in that subspace and has one component per tetrad direction, giving
 
@@ -201,22 +201,22 @@ The framework's contribution here is a home, not a construction. It supplies the
 
 ## The Weyl Scalars
 
-The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the part left after the Ricci tensor and the curvature scalar are removed. It inherits the algebraic symmetries of the Riemann tensor, $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$ with $C_{a[bcd]}=0$, and it is trace-free, $g^{ac}C_{abcd}=0$; in four dimensions this leaves ten independent real components. Contracting it with the null tetrad produces the five complex **Weyl scalars**:
+The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the part left after the Ricci tensor and the curvature scalar are removed. It inherits the algebraic symmetries of the Riemann tensor, $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$ with $C_{a[bcd]}=0$, and it is trace-free, $\sum_{a,c}\eta_{ac}C_{abcd}=0$; in four dimensions this leaves ten independent real components. Contracting it with the null tetrad produces the five complex **Weyl scalars**:
 
 $$
 \begin{aligned}
-\Psi_0 &= C_{abcd}\,l^a m^b l^c m^d, &\qquad
-\Psi_1 &= C_{abcd}\,l^a n^b l^c m^d, &\qquad
-\Psi_2 &= C_{abcd}\,l^a m^b \bar m^c n^d, \\
-\Psi_3 &= C_{abcd}\,l^a n^b \bar m^c n^d, &\qquad
-\Psi_4 &= C_{abcd}\,\bar m^a n^b \bar m^c n^d,
+\Psi_0 &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b l_c m_d, &\qquad
+\Psi_1 &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b l_c m_d, &\qquad
+\Psi_2 &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \\
+\Psi_3 &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b \bar m_c n_d, &\qquad
+\Psi_4 &= \sum_{a,b,c,d} C_{abcd}\,\bar m_a n_b \bar m_c n_d,
 \end{aligned}
 \tag{9}
 $$
 
 with an overall sign that is convention-dependent. The index structure of (9) fixes the boost weights computed in the next section, and the pattern of which legs appear in which scalar is the part of the convention that matters.
 
-The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $g^{ac}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
+The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $\sum_{a,c}\eta_{ac}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
 
 The scalars have a spinorial form that names them in the framework's own objects. The self-dual part of the Weyl tensor is the totally symmetric fourth-rank spinor
 $$
@@ -262,16 +262,16 @@ l \mapsto l, \qquad m \mapsto m + \bar z\,l, \qquad \bar m \mapsto \bar m + z\,l
 \tag{13}
 $$
 
-which again preserves all the inner products (1). Under (13) the scalar $\Psi_0$ is invariant. This is forced by the index structure: $\Psi_0$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $C_{abcd}l^al^bl^cm^d$ and $C_{abcd}l^am^bl^cl^d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\Psi_4$ invariant by the same argument with $l\leftrightarrow n$.
+which again preserves all the inner products (1). Under (13) the scalar $\Psi_0$ is invariant. This is forced by the index structure: $\Psi_0$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $\sum_{a,b,c,d}C_{abcd}l_al_bl_cm_d$ and $\sum_{a,b,c,d}C_{abcd}l_am_bl_cl_d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\Psi_4$ invariant by the same argument with $l\leftrightarrow n$.
 
 The invariance of the two extreme scalars is what makes the principal-null-direction conditions meaningful. The condition $\Psi_0=0$ is unchanged by a null rotation about $l$, so it is a property of the null direction $l$ rather than of the particular tetrad containing it: it says that $l$ is a principal null direction. The same holds for $\Psi_4=0$ and $n$. The remaining scalars shift under (13) by polynomial combinations of their partners, with the shifts graded by the boost weights; this is the mechanism by which a null rotation can align $l$ with a repeated principal null direction, as used in the classification below.
 
 ## Petrov Types and the Vanishing Pattern
 
-The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (10) this is a statement about a binary quartic. With $k^A = o^A + x\,o'^A$,
+The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (10) this is a statement about a binary quartic. With $k_A = o_A + x\,o'_A$,
 
 $$
-q(x) \;=\; \Psi_{ABCD}\,k^Ak^Bk^Ck^D \;=\; \Psi_0 + 4x\,\Psi_1 + 6x^2\,\Psi_2 + 4x^3\,\Psi_3 + x^4\,\Psi_4 .
+q(x) \;=\; \sum_{A,B,C,D}\Psi_{ABCD}\,k_Ak_Bk_Ck_D \;=\; \Psi_0 + 4x\,\Psi_1 + 6x^2\,\Psi_2 + 4x^3\,\Psi_3 + x^4\,\Psi_4 .
 \tag{14}
 $$
 
@@ -336,7 +336,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $o,o'$ | normalized spinor dyad, $\varepsilon(o,o')=1$ |
 | $\tilde\Pi_1,\tilde\Pi_2,\vec\Upsilon_1,\vec\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
 | $E_{ij}$ | matrix with $1$ in position $(i,j)$ |
-| $l,n,m,\bar m$ | null tetrad legs; $l,n$ real, $m,\bar m$ complex |
+| $l,n,m,\bar m$ | null tetrad legs; $l,n$ real, $m,\bar m$ complex; their components $l_a,n_a,m_a,\bar m_a$ |
 | $\eta_{ab}$ | tetrad metric, off-diagonal, (5) |
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
 | $\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$ | connection coefficients in the tetrad |
