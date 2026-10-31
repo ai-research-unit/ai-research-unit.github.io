@@ -129,7 +129,7 @@ $$
 \langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 $$
 
-as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $ict'$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial_{[\mu}F_{\nu\rho]}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
+as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $ict'$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
 
 The non-abelian identity is the same statement one integration by parts further along. With $F=d\mathcal{A}+i\kappa\,\mathcal{A}\wedge\mathcal{A}$,
 
@@ -164,7 +164,7 @@ $$
 
 with $\star^2=+1$. It is a first-order differential equation for the connection, and in the component description it reads $\vec B=\pm\vec E$ (verified exactly on a generic Euclidean field strength, as recorded above). Its value is that it does two things at once: it implies the equation of motion, and it saturates the action bound in a topological sector.
 
-**Self-duality plus Bianchi implies the equation of motion.** The Bianchi identity $dF=0$ is, in components, $\partial_{[\mu}F_{\nu\rho]}=0$, and it is equivalent to the statement that the *dual* is divergence free,
+**Self-duality plus Bianchi implies the equation of motion.** The Bianchi identity $dF=0$ is, in components, $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, and it is equivalent to the statement that the *dual* is divergence free,
 
 $$
 \sum_\mu\partial/\partial Q_\mu\,\star F_{\mu\nu}=0 .

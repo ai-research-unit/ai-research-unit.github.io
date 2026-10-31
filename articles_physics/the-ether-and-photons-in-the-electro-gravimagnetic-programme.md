@@ -37,7 +37,7 @@ to read it as an ontology. The postulate is
 $$
 \nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}},
 \qquad
-\nabla^{\pm} = \partial_\tau \pm i\nabla ,
+\nabla^{\pm} = \partial/\partial \tau \pm i\nabla ,
 \qquad
 \tilde J_{\mathrm{eg}} = i\rho + \vec J ,
 $$
@@ -86,7 +86,7 @@ $$
 \qquad \omega > 0 ,
 $$
 
-so that $\partial_\tau \to -i\omega$. Substituting into the postulate gives the programme's **photon
+so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate gives the programme's **photon
 equation**,
 
 $$
@@ -408,7 +408,7 @@ clearest statement of what the programme assumes.
 | $\tilde{A} = i\alpha - i\tilde F$ | Biquaternion of tension; $\alpha$ is the density of the ether |
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
-| $\nabla^{\pm} = \partial_\tau \pm i\nabla$ | Mutual complex gradients of the postulate |
+| $\nabla^{\pm} = \partial/\partial \tau \pm i\nabla$ | Mutual complex gradients of the postulate |
 | $\nabla = \vec e_x\,\partial/\partial x+\vec e_y\,\partial/\partial y+\vec e_z\,\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |

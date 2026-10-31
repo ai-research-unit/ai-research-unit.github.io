@@ -301,7 +301,7 @@ in natural units. The Dirac equation becomes $i\partial/\partial t'\psi = H^{\ma
 
 $$
 H^{\mathrm{fop}} = \boldsymbol{\alpha}\cdot(p - ϙ\vec A) + \beta m + ϙ\Phi, \qquad
-\boldsymbol{\alpha}^k = \gamma_0\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
+\boldsymbol{\alpha}_k = \gamma_0\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
 $$
 
 The rest energy dominates the dynamics, so we factor it out by writing

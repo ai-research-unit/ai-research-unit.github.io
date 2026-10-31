@@ -112,7 +112,7 @@ $$
 Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
 In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
@@ -137,7 +137,7 @@ The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better be
 | Property | $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_-$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial_\tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$ (hyperbolic) |
+| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |

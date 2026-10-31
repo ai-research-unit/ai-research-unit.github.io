@@ -78,7 +78,7 @@ $$
 and the spatial components are
 
 $$
-K^k = ϙ\,F_{k0}u_0 + ϙ\,F^{kj}u_j
+K_k = ϙ\,F_{k0}u_0 + ϙ\,F_{kj}u_j
 = ϙ\left(-\frac{iE_k}{c}\right)(i\gamma c) + ϙ\,\epsilon_{kjl}B_l\,\gamma v_j
 = \gamma ϙ\,E_k + \gamma ϙ\left(\vec v\times\vec B\right)_k,
 $$

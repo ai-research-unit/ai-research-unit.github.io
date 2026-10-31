@@ -195,15 +195,15 @@ $$
 normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\vec u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$. Differentiating,
 
 $$
-\langle J|\partial_\theta J\rangle=0,\qquad
-\langle J|\partial_\phi J\rangle=i\sin^2\tfrac{\theta}{2}.
+\langle J|\partial/\partial \theta J\rangle=0,\qquad
+\langle J|\partial/\partial \phi J\rangle=i\sin^2\tfrac{\theta}{2}.
 $$
 
 The **Pancharatnam connection** is the imaginary part of the overlap with the derivative. In the horizontal gauge, the gauge in which the amplitude accumulated along the azimuthal circles carries no phase beyond the connection, it is
 
 $$
 \boxed{\;\mathcal A=i\,\langle J|dJ\rangle
-=i\,\langle J|\partial_\phi J\rangle\,d\phi
+=i\,\langle J|\partial/\partial \phi J\rangle\,d\phi
 =-\sin^2\tfrac{\theta}{2}\,d\phi
 =-\tfrac12\left(1-\cos\theta\right)d\phi\;}.
 $$

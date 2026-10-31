@@ -12,10 +12,10 @@ The article is organised as follows. The next section sets up the naive discreti
 
 ### The classical action and the lattice
 
-The biquaternion field is Lorentzian. In the $x$ coordinates $x_0=ct'$, $x^k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
+The biquaternion field is Lorentzian. In the $x$ coordinates $x_0=ct'$, $x_k$, the free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial_\mu - m\right)\psi(x),
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\gamma_\mu\partial/\partial Q_\mu - m\right)\psi(x),
 \qquad
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
@@ -23,7 +23,7 @@ $$
 The lattice path integral is defined on the Euclidean section. Write $\gamma_0^{E}=\gamma_0$ and $\gamma_k^{E}=i\gamma_k$; then $(\gamma_\mu^{E})^2=+1$ and $\{\gamma_\mu^{E},\gamma_{\nu\}^{E}}=2\delta_{\mu\nu}$. These are the Wick-rotated Lorentz generators, not the $\mathbb{B}$ frame of the biquaternion algebra. The Euclidean action is
 
 $$
-S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu^{E}\partial^E_\mu + m\right)\psi(x),
+S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\gamma_\mu^{E}\partial^E/\partial x_\mu + m\right)\psi(x),
 $$
 
 and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$ is shorthand for $\gamma_\mu^{E}$ and $\gamma_5=\gamma_0^{E}\gamma_{1\gamma}^{E}^E_2\gamma_{3}^{E}$ (the Euclidean chirality); the doubling theorem is a statement about the symbol and does not depend on the signature.
@@ -31,7 +31,7 @@ and the lattice below discretizes $S^E_F$. In the lattice sections, $\gamma_\mu$
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
-\partial^E_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
+\partial^E/\partial x_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
 $$
 
 The naive action is then

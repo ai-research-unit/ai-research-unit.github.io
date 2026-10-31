@@ -46,7 +46,7 @@ DD^{\natural}=D^{\natural}D=\Box
 =\left(\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}\right)e_t.
 $$
 
-The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial_{t'}^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial_t^2-\Delta$ of signature $(1,3)$.
+The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial^2/\partial t'^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial t^2-\Delta$ of signature $(1,3)$.
 
 ### The Constraint
 
@@ -198,11 +198,11 @@ The shifted operator's parameter is not necessarily a physical mass. It is an el
 
 | symbol | meaning |
 | --- | --- |
-| $D=\sum_\mu e_\mu\partial_\mu$ | the Cauchy–Riemann operator |
+| $D=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the Cauchy–Riemann operator |
 | $D^{\natural}$ | its quaternion conjugate |
 | $\Box=DD^{\natural}$ | the d'Alembertian |
 | $G=Q^{\natural}/\lVert Q\rVert_E^4$ | the fundamental solution |
-| $D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial_k$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
+| $D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial Q_k$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
 | $D_\alpha=D_{\mathrm s}+M_\alpha$ | the shifted operator |
 | $\alpha$ | the shift, a mass or chemical potential |
 | $\Pi_{\pm\alpha}$ | the Helmholtz projectors |

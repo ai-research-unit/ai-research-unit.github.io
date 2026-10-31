@@ -80,10 +80,10 @@ $$
 Contraction gives the linearized Ricci tensor,
 
 $$
-R_{\mu\nu} = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial_\lambda h_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial_\lambda h_{\lambda\mu} - \Box h_{\mu\nu} - \partial^2/\partial x_\mu\partial x_\nu h\right), \qquad h = \sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu},
+R_{\mu\nu} = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\mu} - \Box h_{\mu\nu} - \partial^2/\partial x_\mu\partial x_\nu h\right), \qquad h = \sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu},
 $$
 
-and the Ricci scalar is $R = \sum_{\mu,\nu}\eta_{\mu\nu}R_{\mu\nu} = \sum_{\mu,\lambda}\partial_\mu\partial_\lambda h_{\lambda\mu} - \Box h$. The Riemann tensor is gauge invariant, and so therefore are $R_{\mu\nu}$ and $R$: they are constructed from the metric, which the relabelling does not change.
+and the Ricci scalar is $R = \sum_{\mu,\nu}\eta_{\mu\nu}R_{\mu\nu} = \sum_{\mu,\lambda}\partial^2/\partial x_\mu\partial x_\lambda h_{\lambda\mu} - \Box h$. The Riemann tensor is gauge invariant, and so therefore are $R_{\mu\nu}$ and $R$: they are constructed from the metric, which the relabelling does not change.
 
 ### The Trace-Reversal and the Field Equation
 
@@ -96,13 +96,13 @@ $$
 so that the operation is an involution up to sign: $h_{\mu\nu} = \bar{h}_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}\bar{h}$. In terms of $\bar{h}_{\mu\nu}$ the linearized Einstein tensor takes the compact form
 
 $$
-G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}R = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial_\lambda\bar{h}_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial_\lambda\bar{h}_{\lambda\mu} - \Box\bar{h}_{\mu\nu} - \eta_{\mu\nu}\sum_{\rho,\sigma}\partial_\rho\partial_\sigma\bar{h}_{\rho\sigma}\right).
+G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}R = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\mu} - \Box\bar{h}_{\mu\nu} - \eta_{\mu\nu}\sum_{\rho,\sigma}\partial^2/\partial x_\rho\partial x_\sigma\bar{h}_{\rho\sigma}\right).
 $$
 
 The **harmonic gauge** is the condition
 
 $$
-\sum_\lambda\partial_\lambda\bar{h}_{\lambda\nu} = 0,
+\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0,
 $$
 
 which is four conditions on the ten components of $\bar{h}_{\mu\nu}$ and can always be imposed. In it $G_{\mu\nu} = -\tfrac{1}{2}\Box\bar{h}_{\mu\nu}$, and the linearized Einstein equation $G_{\mu\nu} = \tfrac{8\pi G}{c^4}T_{\mu\nu}$ becomes
@@ -370,7 +370,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 2. **The non-abelian curvature and the gauge article's gap.** The linearized gravitational field strength is a $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued two-form. The gauge article records that the framework supplies non-commutativity but not a compactness or reality condition selecting a gauge algebra. Does the local Lorentz algebra, which is non-compact and selected by the metric, meet that gap, or is it a different structure that the electromagnetic case cannot use?
 
-3. **A biquaternionic harmonic condition.** The harmonic condition $\sum_\lambda\partial_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
+3. **A biquaternionic harmonic condition.** The harmonic condition $\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
 
 4. **The Weyl tensor in the algebra.** The propagating content of linearized gravity is the Weyl tensor, and its natural biquaternionic encoding is through the self-dual and anti-self-dual bivectors. Can the five Newman–Penrose scalars be written as components of biquaternion objects, and does the algebra's decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise them?
 
@@ -419,7 +419,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |
 | $R_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Ricci tensor and Einstein tensor |
 | $\tilde Q_{3\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
-| $\sum_\lambda\partial_\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
+| $\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |
 | $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the Hermitian form on the informational sector |

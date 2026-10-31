@@ -10,7 +10,7 @@ This article carries that construction into the biquaternion algebra $\mathbb{B}
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_h)$, but $\mathrm{Tr}(\tilde\Pi\,\partial_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\psi$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_h)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\psi$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
 2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\Omega/2$, where $\Omega$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
@@ -84,19 +84,19 @@ The instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent
 **Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi(\lambda)$ be a smooth family of idempotents with $\mathrm{Tr}(\tilde\Pi) = 1$. Then
 
 $$
-\mathrm{Tr}\!\left(\tilde\Pi\,\partial_\mu\tilde\Pi\right) = 0
+\mathrm{Tr}\!\left(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi\right) = 0
 \qquad\text{for every parameter } \lambda_\mu .
 $$
 
-**Proof.** Since $\tilde\Pi^2 = \tilde\Pi$, differentiating gives $\partial_\mu\tilde\Pi = (\partial_\mu\tilde\Pi)\tilde\Pi + \tilde\Pi(\partial_\mu\tilde\Pi)$. Taking the trace and using cyclicity of the trace on $\mathbb{B} \cong M_2(\mathbb{C})$,
+**Proof.** Since $\tilde\Pi^2 = \tilde\Pi$, differentiating gives $\partial/\partial R_\mu\tilde\Pi = (\partial/\partial R_\mu\tilde\Pi)\tilde\Pi + \tilde\Pi(\partial/\partial R_\mu\tilde\Pi)$. Taking the trace and using cyclicity of the trace on $\mathbb{B} \cong M_2(\mathbb{C})$,
 
 $$
-\mathrm{Tr}(\partial_\mu\tilde\Pi) = 2\,\mathrm{Tr}\!\left(\tilde\Pi\,\partial_\mu\tilde\Pi\right).
+\mathrm{Tr}(\partial/\partial R_\mu\tilde\Pi) = 2\,\mathrm{Tr}\!\left(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi\right).
 $$
 
-But $\mathrm{Tr}(\tilde\Pi) = 1$ is constant, so $\mathrm{Tr}(\partial_\mu\tilde\Pi) = 0$, and hence $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$.
+But $\mathrm{Tr}(\tilde\Pi) = 1$ is constant, so $\mathrm{Tr}(\partial/\partial R_\mu\tilde\Pi) = 0$, and hence $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$.
 
-The lemma is not special to the qubit: it is the algebraic statement that a rank-one Hermitian idempotent carries no phase information. For the idempotent $\tilde\Pi_1(\vec u_R) = \tfrac12(e_t + i\vec u_R)$ it can also be checked directly, since $\partial_\mu\tilde\Pi_1 = \tfrac12 i\,\partial_\mu\vec u_R$ and $\mathrm{Sc}\bigl((e_t + i\vec u_R)\,\partial_\mu\vec u_R\bigr) = \mathrm{Sc}(\partial_\mu\vec u_R) + i\,\mathrm{Sc}(\vec u_R\,\partial_\mu\vec u_R) = 0$, using $\vec u_R\cdot\partial_\mu\vec u_R = 0$ from $|\vec u_R| = 1$. Both the general proof and the direct computation return zero.
+The lemma is not special to the qubit: it is the algebraic statement that a rank-one Hermitian idempotent carries no phase information. For the idempotent $\tilde\Pi_1(\vec u_R) = \tfrac12(e_t + i\vec u_R)$ it can also be checked directly, since $\partial/\partial R_\mu\tilde\Pi_1 = \tfrac12 i\,\partial/\partial R_\mu\vec u_R$ and $\mathrm{Sc}\bigl((e_t + i\vec u_R)\,\partial/\partial R_\mu\vec u_R\bigr) = \mathrm{Sc}(\partial/\partial R_\mu\vec u_R) + i\,\mathrm{Sc}(\vec u_R\,\partial/\partial R_\mu\vec u_R) = 0$, using $\vec u_R\cdot\partial/\partial R_\mu\vec u_R = 0$ from $|\vec u_R| = 1$. Both the general proof and the direct computation return zero.
 
 The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_3$ generated by $\tilde\Pi_3 = \tfrac12(e_t + i\vec e_z)$, the spin-up eigenstate of $\tfrac12 i\vec R$ is
 
@@ -122,35 +122,34 @@ With the spinor in hand, the connection is defined by the plain form of the fram
 
 $$
 \boxed{\;
-\mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\psi^\dagger\,\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)}
+\mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\psi^\dagger\,\partial/\partial R_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)}
 \;}
-\qquad\text{with}\qquad \partial_\mu = \frac{\partial}{\partial R_\mu}.
 $$
 
-This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\psi|\partial_\mu\psi\rangle$ divided by $\langle\psi|\psi\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two interpretations of one bilinear form on the state module.
+This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\psi|\partial/\partial R_\mu\psi\rangle$ divided by $\langle\psi|\psi\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two interpretations of one bilinear form on the state module.
 
 **Reality.** For normalized $\psi$, $\mathrm{Tr}(\psi^\dagger\psi) = 1$ is constant, so differentiating gives
 
 $$
-\mathrm{Tr}\!\left(\partial_\mu\psi^\dagger\,\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right) = 0 .
+\mathrm{Tr}\!\left(\partial/\partial R_\mu\psi^\dagger\,\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial/\partial R_\mu\psi\right) = 0 .
 $$
 
-The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\psi^\dagger\partial_\mu\psi)$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.
+The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\psi^\dagger\partial/\partial R_\mu\psi)$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.
 
 **Gauge transformation.** Let $\alpha(R)$ be a real function and let $\psi \mapsto \psi_2 = \exp(i\alpha)\psi$. Because $\exp(i\alpha)$ is central and $*$-unitary, it multiplies $\psi$ from the left without ordering ambiguity, and
 
 $$
 \begin{aligned}
-\mathrm{Tr}\!\left(\psi_2^\dagger\partial_\mu\psi_2\right)
-&= \mathrm{Tr}\!\left(\exp(-i\alpha)\psi^\dagger\left(i\,\partial_\mu\alpha\,\exp(i\alpha)\psi + \exp(i\alpha)\partial_\mu\psi\right)\right) \\
-&= i\,\partial_\mu\alpha\;\mathrm{Tr}\!\left(\psi^\dagger\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right).
+\mathrm{Tr}\!\left(\psi_2^\dagger\partial/\partial R_\mu\psi_2\right)
+&= \mathrm{Tr}\!\left(\exp(-i\alpha)\psi^\dagger\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\psi + \exp(i\alpha)\partial/\partial R_\mu\psi\right)\right) \\
+&= i\,\partial/\partial R_\mu\alpha\;\mathrm{Tr}\!\left(\psi^\dagger\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial/\partial R_\mu\psi\right).
 \end{aligned}
 $$
 
 Dividing by the norm and multiplying by $i$ gives
 
 $$
-\boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha\;}
+\boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha\;}
 \qquad\text{for}\qquad \psi_2 = \exp(i\alpha)\psi .
 $$
 
@@ -173,7 +172,7 @@ and the same additive transformation law. In this precise sense the Berry connec
 | Structure group | $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$ | $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$ |
 | Origin | localizing the central phase symmetry of a field equation | the rephasing freedom of an instantaneous eigenstate |
 | Transformation | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | $\mathcal{A}_2 = \mathcal{A} - d\alpha$ |
-| Curvature | $\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)$, $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | $\mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu$ |
+| Curvature | $\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ |
 
 The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}$, does not live on spacetime, and is not $\mathbb{M}_-$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
 
@@ -184,7 +183,7 @@ The transformation law has an immediate consequence for the holonomy. For a clos
 $$
 \gamma = \oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu
 \;\longmapsto\;
-\gamma - \oint_{\mathcal{C}}\sum_\mu\partial_\mu\alpha\,dR_\mu
+\gamma - \oint_{\mathcal{C}}\sum_\mu\partial/\partial R_\mu\alpha\,dR_\mu
 = \gamma - \oint_{\mathcal{C}} d\alpha .
 $$
 
@@ -195,16 +194,16 @@ If $\exp(i\alpha)$ is single-valued on the loop, the last integral is $2\pi k$ f
 The **Berry curvature** is the exterior derivative of the connection,
 
 $$
-\mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu .
+\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$
 
 It is invariant under the rephasing, because the added term is a gradient:
 
 $$
-\mathcal{F}_{2,\mu\nu} = \mathcal{F}_{\mu\nu} - \left(\partial_\mu\partial_\nu\alpha - \partial_\nu\partial_\mu\alpha\right) = \mathcal{F}_{\mu\nu} .
+\mathcal{F}_{2,\mu\nu} = \mathcal{F}_{\mu\nu} - \left(\partial^2/\partial R_\mu\partial R_\nu\alpha - \partial^2/\partial R_\nu\partial R_\mu\alpha\right) = \mathcal{F}_{\mu\nu} .
 $$
 
-This is the same abelian curvature $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ that appears in the gauge-principle article as the field strength of the connection, now on parameter space rather than on spacetime. For a three-dimensional parameter space, as here, the curvature is naturally a vector via the Hodge dual, $\mathcal{F}_k = \tfrac12\epsilon_{kij}\mathcal{F}_{ij}$.
+This is the same abelian curvature $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ that appears in the gauge-principle article as the field strength of the connection, now on parameter space rather than on spacetime. For a three-dimensional parameter space, as here, the curvature is naturally a vector via the Hodge dual, $\mathcal{F}_k = \tfrac12\epsilon_{kij}\mathcal{F}_{ij}$.
 
 **The two routes to the phase.** For a closed loop $\mathcal{C} = \partial\mathcal{S}$ bounding a surface $\mathcal{S}$ on which the connection is smooth, Stokes' theorem gives
 
@@ -234,7 +233,7 @@ $$
 \mathcal{A}_\phi = -\sin^2\frac{\theta}{2} = -\frac{1-\cos\theta}{2} .
 $$
 
-The component $\mathcal{A}_\theta$ vanishes because $\psi_+$ depends on $\theta$ only through the real factors $\cos(\theta/2)$ and $\sin(\theta/2)$, whose contributions to $\langle\psi|\partial_\theta\psi\rangle$ cancel; the component $\mathcal{A}_\phi$ comes from the phase $\exp(i\phi)$, giving $\langle\psi|\partial_\phi\psi\rangle = i\sin^2(\theta/2)$ and hence $\mathcal{A}_\phi = -\sin^2(\theta/2)$. Written as a one-form,
+The component $\mathcal{A}_\theta$ vanishes because $\psi_+$ depends on $\theta$ only through the real factors $\cos(\theta/2)$ and $\sin(\theta/2)$, whose contributions to $\langle\psi|\partial/\partial \theta\psi\rangle$ cancel; the component $\mathcal{A}_\phi$ comes from the phase $\exp(i\phi)$, giving $\langle\psi|\partial/\partial \phi\psi\rangle = i\sin^2(\theta/2)$ and hence $\mathcal{A}_\phi = -\sin^2(\theta/2)$. Written as a one-form,
 
 $$
 \mathcal{A} = -\frac{1-\cos\theta}{2}\,d\phi ,
@@ -245,7 +244,7 @@ which is regular at the north pole $\theta = 0$ and singular at the south pole. 
 $$
 \mathcal{F} = d\mathcal{A} = -\frac{1}{2}\sin\theta\; d\theta \wedge d\phi ,
 \qquad
-\mathcal{F}_{\theta\phi} = \partial_\theta\mathcal{A}_\phi = -\frac{\sin\theta}{2} .
+\mathcal{F}_{\theta\phi} = \partial/\partial \theta\mathcal{A}_\phi = -\frac{\sin\theta}{2} .
 $$
 
 **Route 1: the line integral.** The loop is at fixed $\theta_0$, so
@@ -385,10 +384,10 @@ The question left open in the introduction can now be answered precisely. **The 
 **The Berry connection is literally the standard one.** Written in the algebra it is
 
 $$
-\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
+\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial/\partial R_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
 $$
 
-and under the isomorphism this is the standard expression $i\langle\psi|\partial_\mu\psi\rangle/\langle\psi|\psi\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
+and under the isomorphism this is the standard expression $i\langle\psi|\partial/\partial R_\mu\psi\rangle/\langle\psi|\psi\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
 
 **The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
 
@@ -397,7 +396,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{M}_+$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
-- **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
+- **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
 - **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\psi|d\psi\rangle$ is the central scalar imaginary that also appears in $ict'$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
@@ -428,15 +427,15 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
 
-In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\psi$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
+In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\psi$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
 
 $$
-\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
+\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial/\partial R_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
 \qquad
-\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha
+\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha
 \quad\text{for}\quad \psi_2 = \exp(i\alpha)\psi ,
 \qquad
-\mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu .
+\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$
 
 The structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
@@ -464,9 +463,9 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\vec R$, $R = \lvert\vec R\rvert$, $\vec u_R$ | Parameter vector, its magnitude, its direction; $\vec u_R \in S^2$ |
 | $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{M}_+$ |
 | $\theta, \phi$ | Polar and azimuthal angles on the Bloch sphere |
-| $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\psi^\dagger\partial_\mu\psi)/\mathrm{Tr}(\psi^\dagger\psi)$ |
-| $\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha$ | Gauge transformation of the Berry connection |
-| $\mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu$ | Berry curvature |
+| $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\psi^\dagger\partial/\partial R_\mu\psi)/\mathrm{Tr}(\psi^\dagger\psi)$ |
+| $\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha$ | Gauge transformation of the Berry connection |
+| $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ | Berry curvature |
 | $\gamma_\pm$ | Berry phase of the spin-up / spin-down band |
 | $\Omega = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |
 | $\Delta = R$ | Spectral gap; closes at $\vec R = 0$ |

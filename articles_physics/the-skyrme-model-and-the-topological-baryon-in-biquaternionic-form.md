@@ -153,7 +153,7 @@ $$
 The normalisation $\frac{1}{24\pi^2}$ is chosen so that the charge is an integer, and the trace is the matrix trace on $\mathrm{SU}(2)$. The current is **conserved identically**,
 
 $$
-\sum_\mu\varepsilon_\mu\,\partial_\mu B_\mu = 0 ,
+\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu B_\mu = 0 ,
 $$
 
 without using any equation of motion: the divergence is a sum of terms that cancel by antisymmetry and by the Maurer–Cartan flatness. This is what makes $B$ a **topological** charge rather than a Noether charge — it is a property of the map, not of the dynamics.
@@ -253,7 +253,7 @@ and the topological current is
 $$
 B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
-\sum_\mu\varepsilon_\mu\,\partial_\mu B_\mu = 0 \text{ identically.}
+\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu B_\mu = 0 \text{ identically.}
 $$
 
 For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.

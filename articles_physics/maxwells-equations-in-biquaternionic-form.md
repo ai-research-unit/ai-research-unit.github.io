@@ -139,7 +139,7 @@ $$
 which is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. Equivalently, in tensor language,
 
 $$
-F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
+F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
 $$
 
 with components
@@ -160,7 +160,7 @@ $$
 F_{\mu\nu} = -F_{\nu\mu}.
 $$
 
-**A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.** The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
+**A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.** The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
 
@@ -309,7 +309,7 @@ $$
 \tilde{A}_{\mathrm g} = \tilde{A} - \tilde{\nabla} \Gamma,
 $$
 
-where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial_\mu \Gamma$.
+where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial/\partial Q_\mu \Gamma$.
 
 Under this transformation, the field-strength biquaternion is invariant:
 

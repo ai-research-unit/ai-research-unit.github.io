@@ -402,7 +402,7 @@ On the Bloch vector the action is a rotation. The unit quaternions — the eleme
 
 The sphere $S^2$ of the boundary is the compact member of a family of homogeneous spaces that the same two-dimensional module models, and naming the family places the ball in the wider picture the corpus uses. As a homogeneous space the boundary sphere is $S^2=SU(2)/\mathrm{U}(1)$, the quotient of the compact group $SU(2)$ by the $\mathrm{U}(1)$ that fixes the Bloch vector. The two companion spaces come from the rank-one non-compact group $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$, the double cover of the three-dimensional Lorentz group $SO(1,2)$ and the dynamical group of the oscillator's squeezings: they are the two-sheeted time-like hyperboloid $H^\pm=SU(1,1)/\mathrm{U}(1)$ and the one-sheeted hyperboloid $H^{sl}$, whose vector stabiliser is the non-compact boost subgroup, the first being the case of $S^2$ with the compact direction replaced by a time-like one. All three are modelled on spinors of the same module in the same way the boundary sphere is:
 
-- the sphere $S^2$, by one Weyl spinor with the definite pairing $\langle z|\sigma^i|z\rangle$ and $\langle z|z\rangle=1$ — the pure-state correspondence of the preceding sections, since the boundary of the ball is exactly the spin-$1/2$ pure states;
+- the sphere $S^2$, by one Weyl spinor with the definite pairing $\langle z|\sigma_i|z\rangle$ and $\langle z|z\rangle=1$ — the pure-state correspondence of the preceding sections, since the boundary of the ball is exactly the spin-$1/2$ pure states;
 - the hyperboloid $H^\pm$, by one Weyl spinor with the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$;
 - the hyperboloid $H^{sl}$, by a **pair** of Majorana spinors.
 

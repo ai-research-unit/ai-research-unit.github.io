@@ -92,7 +92,7 @@ $$
 realised by an explicit linear-algebra construction: from the data one forms a matrix $\Delta(x)$, linear in the quaternionic coordinate $x$, whose kernel is the relevant space; a normalised basis $v(x)$ of that kernel gives the connection through
 
 $$
-\mathcal A_\mu \;=\; \bar v\,\partial_\mu v ,
+\mathcal A_\mu \;=\; \bar v\,\partial/\partial x_\mu v ,
 $$
 
 which is a pure-gauge-like expression in the $x$-dependent kernel; the self-duality of $\mathcal A$ is a consequence of the two ADHM equations, and a computation shows that the curvature is $F_{\mu\nu}=\bar v\,\tilde F_{\mu\nu}v$ with $\tilde F$ built from the data. The construction is the standard one and is cited rather than re-derived; its algebraic content is the pair of equations and the quotient, which are what the framework's quaternionic structure makes natural.
@@ -227,7 +227,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $\mathcal M_k=\mu^{-1}(0)/\mathrm{U}(k)$ | Instanton moduli space (hyperkähler quotient) |
 | $\dim_{\mathbb R}\mathcal M_k=8k$ | Moduli dimension; physical $8k-3$ |
 | $\Delta(x)$ | ADHM linear operator; kernel gives the connection |
-| $\mathcal A_\mu=\bar v\,\partial_\mu v$ | Reconstruction of the self-dual connection |
+| $\mathcal A_\mu=\bar v\,\partial/\partial x_\mu v$ | Reconstruction of the self-dual connection |
 | $\eta^a_{\mu\nu}$ | Self-dual 't Hooft symbols |
 | $\rho$ | Instanton scale; the $k=1$ datum |
 | $T(R)$, defining module | Dynkin index $\tfrac12$; the two-dimensional simple module of $\mathbb B$ |

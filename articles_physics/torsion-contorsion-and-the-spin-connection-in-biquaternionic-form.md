@@ -33,7 +33,7 @@ Write the connection as a metric part plus a remainder,
 $$
 \Gamma_{\lambda\mu\nu} = \left\{{}_{\lambda\mu\nu}\right\} + K_{\lambda\mu\nu} ,
 \qquad
-\left\{{}_{\lambda\mu\nu}\right\} = \tfrac12\sum_\rho (g^{-1})_{\lambda\rho}\left(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu}\right) .
+\left\{{}_{\lambda\mu\nu}\right\} = \tfrac12\sum_\rho (g^{-1})_{\lambda\rho}\left(\partial/\partial x_\mu g_{\nu\rho} + \partial/\partial x_\nu g_{\mu\rho} - \partial/\partial x_\rho g_{\mu\nu}\right) .
 $$
 
 The remainder $K_{\lambda\mu\nu}$ is the **contorsion** (or contortion; the two names are interchangeable and the first is used throughout). Three exact facts fix it.
@@ -79,13 +79,13 @@ The totally antisymmetric case is the one the corpus meets physically. The spin 
 The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_{a\mu}$ defined by $\sum_\mu\exp(a){}_\mu e_{b\mu} = \delta^a{}_b$ and $\sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu}$, and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
 
 $$
-\nabla_\mu \exp(a){}_\nu = \partial_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
+\nabla_\mu \exp(a){}_\nu = \partial/\partial x_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
 $$
 
 which says that the frame is covariantly constant in both connections at once. Written as a definition of the spin connection from the tetrad and the affine connection, it is
 
 $$
-\omega_{ab\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda \Gamma_{\lambda\mu\nu} e_{b\nu} + \sum_\lambda\exp(a){}_\lambda \partial_\mu e_{b\lambda} .
+\omega_{ab\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda \Gamma_{\lambda\mu\nu} e_{b\nu} + \sum_\lambda\exp(a){}_\lambda \partial/\partial x_\mu e_{b\lambda} .
 $$
 
 Splitting the affine connection into its metric and contorsion parts splits the spin connection the same way,
@@ -103,12 +103,12 @@ Two exact statements were checked here, with a two-dimensional tetrad whose comp
 **The Weitzenböck connection is curvature-free and torsionful.** The connection built from the tetrad alone,
 
 $$
-\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial_\mu \exp(a){}_\nu ,
+\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial/\partial x_\mu \exp(a){}_\nu ,
 $$
 
 called the **Weitzenböck connection**, was computed for that tetrad together with its curvature. The curvature came out **exactly zero** in every component and the torsion **exactly $\tfrac{3}{10}$** in its nonzero components. This is the content of the teleparallel sector: a connection can be flat and still have torsion, and the framework's algebra can carry it.
 
-**Where the algebra enters.** Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $\gamma_a\gamma_b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.
+**Where the algebra enters.** Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $\gamma_a\gamma_b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial/\partial x_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.
 
 ## The Spin Tensor and the Torsion–Spin Relation
 
@@ -153,7 +153,7 @@ with $\sigma$ the spin density in the same normalisation as $\Sigma$. Because th
 The Weitzenböck connection of the previous section,
 
 $$
-\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial_\mu \exp(a){}_\nu ,
+\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial/\partial x_\mu \exp(a){}_\nu ,
 $$
 
 defines a geometry whose curvature vanishes identically and whose torsion is nonzero. Its two exact properties, both confirmed above, are worth stating in the general form in which they are used.
@@ -182,7 +182,7 @@ The two open items this article was written against stand as follows. The first 
 
 A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K_{\lambda\mu\nu}$, which is antisymmetric in its last two indices. The torsion is twice the alternating contorsion, $T_{\lambda\mu\nu} = 2K_{\lambda[\mu\nu]}$, and the inverse relation $K_{\lambda\mu\nu} = \tfrac12(T_{\lambda\mu\nu} - T_{\mu\nu\lambda} + T_{\nu\lambda\mu})$ holds in the totally antisymmetric case. The covariant derivative of the metric is $\nabla_\mu g_{\nu\rho} = -(K_{\nu\mu\rho} + K_{\rho\mu\nu})$, which vanishes for every index order exactly when the contorsion is totally antisymmetric; the 24 contorsion components are cut to a four-dimensional solution space, so **metric compatibility is the condition of total antisymmetry**, and this is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
 
-The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
+The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial/\partial x_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
 The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma_\rho\psi$, and its square is six times the axial current squared, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 

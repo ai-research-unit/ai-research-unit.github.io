@@ -14,7 +14,7 @@ The article is confined to a Lagrangian field theory with finitely many fields o
 
 ## The Setting and the Fundamental Identity
 
-**Definition.** The fields are $u^1,\dots,u^N$, functions of the coordinates $x^0,\dots,x^{m-1}$ of a flat space of dimension $m$, with coordinates written $x^\mu$ and partial derivatives written $\partial/\partial x^\mu$. The **Lagrangian density** is a function $L(x,u,\partial u)$ of the coordinates, the fields and their first derivatives, and the **action** is the functional
+**Definition.** The fields are $u_1,\dots,u_N$, functions of the coordinates $x_0,\dots,x_{m-1}$ of a flat space of dimension $m$, with coordinates written $x_\mu$ and partial derivatives written $\partial/\partial x_\mu$. The **Lagrangian density** is a function $L(x,u,\partial u)$ of the coordinates, the fields and their first derivatives, and the **action** is the functional
 
 $$
 S[u] = \int_\Omega L\bigl(x,u(x),\partial u(x)\bigr)\,d^mx .
@@ -23,153 +23,153 @@ $$
 **Definition.** The **Euler–Lagrange expression** of the $i$-th field is
 
 $$
-E_i = \frac{\partial L}{\partial u^i} - \partial/\partial x^\mu\,\frac{\partial L}{\partial u^i_{,\mu}} ,
+E_i = \frac{\partial L}{\partial u_i} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial L}{\partial u_{i,\mu}} ,
 $$
 
-abbreviated $L^\mu_i = \partial L/\partial u^i_{,\mu}$ for the derivative with respect to the gradient. A field configuration is **on shell** when $E_i=0$ for every $i$, and **off shell** otherwise.
+abbreviated $L_{\mu i} = \partial L/\partial u_{i,\mu}$ for the derivative with respect to the gradient. A field configuration is **on shell** when $E_i=0$ for every $i$, and **off shell** otherwise.
 
-**Theorem (the fundamental variation identity).** For any variation $\delta u^i$, the variation of the density is
+**Theorem (the fundamental variation identity).** For any variation $\delta u_i$, the variation of the density is
 
 $$
-\delta L = E_i\,\delta u^i + \partial/\partial x^\mu\,\Theta^\mu ,
+\delta L = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\Theta_\mu ,
 \qquad
-\Theta^\mu = L^\mu_i\,\delta u^i .
+\Theta_\mu = \sum_i L_{\mu i}\,\delta u_i .
 $$
 
 *Proof.* Expanding the variation and inserting the definition of $E_i$,
 
 $$
-\delta L = \frac{\partial L}{\partial u^i}\delta u^i + L^\mu_i\,\partial/\partial x^\mu\,\delta u^i
-= \Bigl(\frac{\partial L}{\partial u^i} - \partial/\partial x^\mu L^\mu_i\Bigr)\delta u^i + \partial/\partial x^\mu\,\bigl(L^\mu_i\,\delta u^i\bigr),
+\delta L = \sum_i\frac{\partial L}{\partial u_i}\delta u_i + \sum_{i,\mu}L_{\mu i}\,\partial/\partial x_\mu\,\delta u_i
+= \sum_i\Bigl(\frac{\partial L}{\partial u_i} - \sum_\mu\partial/\partial x_\mu L_{\mu i}\Bigr)\delta u_i + \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i L_{\mu i}\,\delta u_i\bigr),
 $$
 
 which is the stated identity.
 
-The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta^\mu$. Everything below is that identity read with a different kind of variation.
+The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta_\mu$. Everything below is that identity read with a different kind of variation.
 
-**Stationarity.** Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int E_i\delta u^i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\Theta^\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of *The Calculus of Variations*; what is added here is the classification of the symmetries.
+**Stationarity.** Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int\sum_i E_i\delta u_i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\sum_\mu\Theta_\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of *The Calculus of Variations*; what is added here is the classification of the symmetries.
 
 **Definition.** A variation is a **symmetry of the action up to a divergence** when the density changes by a divergence,
 
 $$
-\delta L = \partial/\partial x^\mu F^\mu ,
+\delta L = \sum_\mu\partial/\partial x_\mu F_\mu ,
 $$
 
-for some $F^\mu$ depending on the fields and the variation. The divergence is allowed because it does not change the equations of motion: the two densities differ by a boundary term, and both give the same $E_i$.
+for some $F_\mu$ depending on the fields and the variation. The divergence is allowed because it does not change the equations of motion: the two densities differ by a boundary term, and both give the same $E_i$.
 
 ## The First Theorem
 
 **Definition.** A **symmetry of the first kind**, or rigid symmetry, is a symmetry whose transformation is a one-parameter family,
 
 $$
-\delta_\alpha u^i = \alpha\,\xi^i(x,u,\partial u) ,
+\delta_\alpha u_i = \alpha\,\xi_i(x,u,\partial u) ,
 $$
 
-with the parameter $\alpha$ a **constant**, and with $\delta_\alpha L = \alpha\,\partial/\partial x^\mu F^\mu$ a divergence. A symmetry depending on $k$ independent constant parameters $\alpha^1,\dots,\alpha^k$ is written as a sum $\delta u^i = \xi^i_a\epsilon^a$, with a repeated index summed over $a=1,\dots,k$.
+with the parameter $\alpha$ a **constant**, and with $\delta_\alpha L = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$ a divergence. A symmetry depending on $k$ independent constant parameters $\alpha_1,\dots,\alpha_k$ is written as a sum $\delta u_i = \sum_a\xi_{ia}\epsilon_a$, with the sum over $a=1,\dots,k$.
 
-**Theorem (Noether, first theorem).** Let $\delta u^i = \alpha\,\xi^i$ be a symmetry of the first kind, with $\delta L = \alpha\,\partial/\partial x^\mu F^\mu$. Then the field
+**Theorem (Noether, first theorem).** Let $\delta u_i = \alpha\,\xi_i$ be a symmetry of the first kind, with $\delta L = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$. Then the field
 
 $$
-j^\mu = L^\mu_i\,\xi^i - F^\mu
+j_\mu = \sum_i L_{\mu i}\,\xi_i - F_\mu
 $$
 
 satisfies
 
 $$
-\boxed{\;\partial/\partial x^\mu j^\mu = -\,E_i\,\xi^i\;} ,
+\boxed{\;\sum_\mu\partial/\partial x_\mu j_\mu = -\,\sum_i E_i\,\xi_i\;} ,
 $$
 
-and is therefore conserved, $\partial/\partial x^\mu j^\mu=0$, on every solution of the equations of motion. For a $k$-parameter group the construction gives $k$ currents $j^\mu_a = L^\mu_i\xi^i_a - F^\mu_a$.
+and is therefore conserved, $\sum_\mu\partial/\partial x_\mu j_\mu=0$, on every solution of the equations of motion. For a $k$-parameter group the construction gives $k$ currents $j_{\mu a} = \sum_i L_{\mu i}\xi_{ia} - F_{\mu a}$.
 
-*Proof.* The fundamental identity for the variation $\delta u^i = \alpha\xi^i$ reads
+*Proof.* The fundamental identity for the variation $\delta u_i = \alpha\xi_i$ reads
 
 $$
-\alpha\,\partial/\partial x^\mu F^\mu = \alpha\,E_i\xi^i + \alpha\,\partial/\partial x^\mu\,\bigl(L^\mu_i\xi^i\bigr),
+\alpha\sum_\mu\partial/\partial x_\mu F_\mu = \alpha\sum_i E_i\xi_i + \alpha\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i L_{\mu i}\xi_i\bigr),
 $$
 
-and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial/\partial x^\mu(F^\mu - L^\mu_i\xi^i) = -\partial/\partial x^\mu j^\mu$.
+and cancelling the common factor $\alpha$ gives $\sum_i E_i\xi_i = \sum_\mu\partial/\partial x_\mu(F_\mu - \sum_i L_{\mu i}\xi_i) = -\sum_\mu\partial/\partial x_\mu j_\mu$.
 
 **The conserved charge.** If the current falls off fast enough at infinity, the **Noether charge**
 
 $$
-Ϙ = \int j^0\,d^{m-1}x
+Ϙ = \int j_0\,d^{m-1}x
 $$
 
-is constant in time, because $\frac{d}{dt}Ϙ = \int\partial/\partial x^0\,j^0\,d^{m-1}x = -\int\partial/\partial x^k\,j^k\,d^{m-1}x$ vanishes as a boundary term.
+is constant in time, because $\frac{d}{dt}Ϙ = \int\partial/\partial x_0\,j_0\,d^{m-1}x = -\sum_k\int\partial/\partial x_k\,j_k\,d^{m-1}x$ vanishes as a boundary term.
 
 ### Worked Examples of the First Theorem
 
-**Translation invariance and the energy–momentum tensor.** Let the density contain no explicit dependence on the coordinates and let the fields transform with the coordinates, $\delta u^i = \xi^\nu\partial/\partial x^\nu u^i$ under $x^\mu\mapsto x^\mu+\xi^\mu$ with $\xi^\mu$ constant. Then $\delta L = \xi^\nu\partial/\partial x^\nu L = \partial/\partial x^\nu(\xi^\nu L)$, so $F^\mu=\xi^\mu L$, and
+**Translation invariance and the energy–momentum tensor.** Let the density contain no explicit dependence on the coordinates and let the fields transform with the coordinates, $\delta u_i = \sum_\nu\xi_\nu\partial/\partial x_\nu u_i$ under $x_\mu\mapsto x_\mu+\xi_\mu$ with $\xi_\mu$ constant. Then $\delta L = \sum_\nu\xi_\nu\partial/\partial x_\nu L = \sum_\nu\partial/\partial x_\nu(\xi_\nu L)$, so $F_\mu=\xi_\mu L$, and
 
 $$
-j^\mu = L^\mu_i\,\xi^\nu\partial/\partial x^\nu u^i - \xi^\mu L = \xi^\nu\,T^\mu{}_\nu ,
+j_\mu = \sum_i L_{\mu i}\,\sum_\nu\xi_\nu\partial/\partial x_\nu u_i - \xi_\mu L = \sum_\nu\xi_\nu\,T_{\mu\nu} ,
 \qquad
-T^\mu{}_\nu = L^\mu_i\,\partial/\partial x^\nu u^i - \delta^\mu_\nu\,L .
+T_{\mu\nu} = \sum_i L_{\mu i}\,\partial/\partial x_\nu u_i - \delta_{\mu\nu}\,L .
 $$
 
-The four conserved quantities are the components of the canonical four-vector, and $T^\mu{}_\nu$ is the **canonical tensor**. It is conserved on shell, $\partial/\partial x^\mu T^\mu{}_\nu=0$, and it need not be symmetric; the symmetric tensor of the field-theoretic account is an improvement of it by a superpotential, which alters neither the conservation law nor the total charge.
+The four conserved quantities are the components of the canonical four-vector, and $T_{\mu\nu}$ is the **canonical tensor**. It is conserved on shell, $\sum_\mu\partial/\partial x_\mu T_{\mu\nu}=0$, and it need not be symmetric; the symmetric tensor of the field-theoretic account is an improvement of it by a superpotential, which alters neither the conservation law nor the total charge.
 
 **Lorentz invariance and angular momentum.** For the Lorentz group the parameter is instead the constant antisymmetric pair $\omega_{\mu\nu}$, the fields transform by their Lorentz action plus the coordinate change, and the six conserved quantities are the components of the angular-momentum tensor. The counting is the only point needed here: the group has $k=6$ parameters and the first theorem returns $6$ conservation laws.
 
 **An internal symmetry and the electric-type current.** Let the density be invariant under the constant phase rotation of a complex field, $\delta\phi = i\alpha\phi$, $\delta\phi^* = -i\alpha\phi^*$. For the massless complex scalar with
 
 $$
-L = \partial/\partial x^\mu\,\phi^*\,\partial^\mu\phi ,
+L = \sum_\mu\partial/\partial x_\mu\,\phi^*\,\partial/\partial x_\mu\phi ,
 $$
 
-the conjugate momentum is $L^\mu_\phi = \partial^\mu\phi^*$ and $L^\mu_{\bar{\phi}} = \partial^\mu\phi$, so the current is
+the conjugate momentum is $L_{\mu\phi} = \partial/\partial x_\mu\phi^*$ and $L_{\mu\bar{\phi}} = \partial/\partial x_\mu\phi$, so the current is
 
 $$
-j^\mu = i\bigl(\phi\,\partial^\mu\phi^* - \bar{\phi}\partial^\mu\phi\bigr).
+j_\mu = i\bigl(\phi\,\partial/\partial x_\mu\phi^* - \bar{\phi}\partial/\partial x_\mu\phi\bigr).
 $$
 
 Its divergence computed off shell is
 
 $$
-\partial/\partial x^\mu j^\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
+\sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
 $$
 
-which is precisely $-E_\phi\xi^\phi - E_{\bar{\phi}}\xi^{\bar{\phi}}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
+which is precisely $-E_\phi\xi_\phi - E_{\bar{\phi}}\xi_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
 
 ## The Second Theorem
 
 The second theorem is what happens when the parameter is not a constant.
 
-**Definition.** A **symmetry of the second kind**, or local symmetry, is a symmetry whose transformation depends on $q$ arbitrary functions $\varepsilon^\alpha(x)$ of the coordinates and their derivatives,
+**Definition.** A **symmetry of the second kind**, or local symmetry, is a symmetry whose transformation depends on $q$ arbitrary functions $\varepsilon_\alpha(x)$ of the coordinates and their derivatives,
 
 $$
-\delta u^i = \sum_{\alpha=1}^{q}\Bigl(a^{i\mu}_\alpha(x,u)\,\partial/\partial x^\mu\,\varepsilon^\alpha + b^i_\alpha(x,u)\,\varepsilon^\alpha\Bigr) ,
+\delta u_i = \sum_{\alpha=1}^{q}\Bigl(\sum_\mu a_{i\mu\alpha}(x,u)\,\partial/\partial x_\mu\,\varepsilon_\alpha + b_{i\alpha}(x,u)\,\varepsilon_\alpha\Bigr) ,
 $$
 
-with the action invariant up to a divergence, $\delta L = \partial/\partial x^\mu F^\mu$, **for every choice of the functions** $\varepsilon^\alpha$. When the transformation law contains derivatives of $\varepsilon$ up to order $r$, the coefficient of the highest derivative is written $a^{i\mu_1\cdots\mu_k}_\alpha$ for $k\le r$, and $a^{i\varnothing}_\alpha = b^i_\alpha$.
+with the action invariant up to a divergence, $\delta L = \sum_\mu\partial/\partial x_\mu F_\mu$, **for every choice of the functions** $\varepsilon_\alpha$. When the transformation law contains derivatives of $\varepsilon$ up to order $r$, the coefficient of the highest derivative is written $a_{i\mu_1\cdots\mu_k\alpha}$ for $k\le r$, and $a_{i\varnothing\alpha} = b_{i\alpha}$.
 
-**Theorem (Noether, second theorem).** Let the action admit a symmetry of the second kind depending on the $q$ arbitrary functions $\varepsilon^\alpha$. Then the Euler–Lagrange expressions satisfy, **identically in the fields and off shell**, the $q$ differential identities
+**Theorem (Noether, second theorem).** Let the action admit a symmetry of the second kind depending on the $q$ arbitrary functions $\varepsilon_\alpha$. Then the Euler–Lagrange expressions satisfy, **identically in the fields and off shell**, the $q$ differential identities
 
 $$
-\boxed{\;\sum_{i}\sum_{k=0}^{r}(-1)^k\,\partial/\partial x^{\mu_1}\cdots\partial/\partial x^{\mu_k}\,\Bigl(a^{i\mu_1\cdots\mu_k}_\alpha\,E_i\Bigr) \equiv 0 ,
+\boxed{\;\sum_i\sum_{k=0}^{r}(-1)^k\sum_{\mu_1,\dots,\mu_k}\partial/\partial x_{\mu_1}\cdots\partial/\partial x_{\mu_k}\,\Bigl(a_{i\mu_1\cdots\mu_k\alpha}\,E_i\Bigr) \equiv 0 ,
 \qquad \alpha = 1,\dots,q\;} ,
 $$
 
-with $a^{i\varnothing}_\alpha = b^i_\alpha$. In particular, when the transformation is first order in $\varepsilon$, the identity is
+with $a_{i\varnothing\alpha} = b_{i\alpha}$. In particular, when the transformation is first order in $\varepsilon$, the identity is
 
 $$
-b^i\,E_i - \partial/\partial x^\mu\,\bigl(a^{i\mu}E_i\bigr) \equiv 0 .
+\sum_i b_{i\alpha}\,E_i - \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i a_{i\mu\alpha}E_i\bigr) \equiv 0 .
 $$
 
-*Proof.* Integrate the left side of the fundamental identity against the symmetry variation over the whole space, with the functions $\varepsilon^\alpha$ of compact support so that all boundary terms vanish. Since $\delta L$ is a divergence, the integral of $\delta L$ vanishes, and the fundamental identity gives
+*Proof.* Integrate the left side of the fundamental identity against the symmetry variation over the whole space, with the functions $\varepsilon_\alpha$ of compact support so that all boundary terms vanish. Since $\delta L$ is a divergence, the integral of $\delta L$ vanishes, and the fundamental identity gives
 
 $$
-0 = \int E_i\,\delta u^i\,d^mx
-= \int\Bigl[b^i_\alpha E_i\,\varepsilon^\alpha + a^{i\mu}_\alpha E_i\,\partial/\partial x^\mu\,\varepsilon^\alpha\Bigr]d^mx ,
+0 = \int\sum_i E_i\,\delta u_i\,d^mx
+= \int\sum_\alpha\Bigl[\sum_i b_{i\alpha} E_i\,\varepsilon_\alpha + \sum_{i,\mu}a_{i\mu\alpha} E_i\,\partial/\partial x_\mu\,\varepsilon_\alpha\Bigr]d^mx ,
 $$
 
-with the sum over $\alpha$ and the repeated index $i$ understood. Integrating the second term by parts — no boundary term arises, the support of $\varepsilon^\alpha$ being compact — gives
+with the sums over $\alpha$, $i$ and $\mu$ written out. Integrating the second term by parts — no boundary term arises, the support of $\varepsilon_\alpha$ being compact — gives
 
 $$
-\int\Bigl(b^i_\alpha E_i - \partial/\partial x^\mu\,\bigl(a^{i\mu}_\alpha E_i\bigr)\Bigr)\varepsilon^\alpha\,d^mx = 0 ,
+\int\sum_\alpha\Bigl(\sum_i b_{i\alpha} E_i - \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i a_{i\mu\alpha} E_i\bigr)\Bigr)\varepsilon_\alpha\,d^mx = 0 ,
 $$
 
-for every compactly supported $\varepsilon^\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$.
+for every compactly supported $\varepsilon_\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$.
 
 Three features of the theorem are worth stating before the examples, because each is a place where the first theorem is misapplied.
 
@@ -177,7 +177,7 @@ Three features of the theorem are worth stating before the examples, because eac
 
 **It says the equations are not independent.** If the $N$ fields are subject to $q$ identities of the second kind, then at most $N-q$ of the equations are independent. The system is degenerate; the solution set is a union of orbits of the local symmetry, and a gauge condition — a further condition that selects one representative from each orbit — is needed before a unique evolution is determined by initial data.
 
-**It makes the local symmetry carry no charge.** A local symmetry generally contains no rigid subgroup, because a transformation whose parameter is a function $\varepsilon(x)$ need not survive when $\varepsilon$ is restricted to a constant. When it does survive — when the algebraic part $b^i_\alpha$ is nonzero — the rigid subgroup is a genuine first-kind symmetry and has its own conservation law, and the $\varepsilon$-coefficient of the identity is the statement that a certain total divergence vanishes off shell: the rigid current corrected by the term $a^{i\mu}_\alpha E_i$. That remark is made precise in the Stueckelberg example below. But when $b^i_\alpha$ vanishes, the local symmetry has no rigid subgroup and produces no conservation law whatsoever. This is the case for the Maxwell field, and it is the reason a gauge transformation is not a source of new charges.
+**It makes the local symmetry carry no charge.** A local symmetry generally contains no rigid subgroup, because a transformation whose parameter is a function $\varepsilon(x)$ need not survive when $\varepsilon$ is restricted to a constant. When it does survive — when the algebraic part $b_{i\alpha}$ is nonzero — the rigid subgroup is a genuine first-kind symmetry and has its own conservation law, and the $\varepsilon$-coefficient of the identity is the statement that a certain total divergence vanishes off shell: the rigid current corrected by the term $\sum_{i,\mu}a_{i\mu\alpha} E_i$. That remark is made precise in the Stueckelberg example below. But when $b_{i\alpha}$ vanishes, the local symmetry has no rigid subgroup and produces no conservation law whatsoever. This is the case for the Maxwell field, and it is the reason a gauge transformation is not a source of new charges.
 
 ## Worked Example: the Maxwell Field
 
@@ -186,44 +186,44 @@ The Maxwell field is the original illustration of the second theorem and the one
 **The variational problem.** Let the field be the four-potential $A_\nu$ and the density be
 
 $$
-L = -\tfrac14 F_{\mu\nu}F^{\mu\nu} ,
+L = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} ,
 \qquad
-F_{\mu\nu} = \partial/\partial x^\mu A_\nu - \partial/\partial x^\nu A_\mu .
+F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu .
 $$
 
 The Euler–Lagrange expression is
 
 $$
-E^\nu = \frac{\partial L}{\partial A_\nu} - \partial/\partial x^\mu\,\frac{\partial L}{\partial(\partial/\partial x^\mu A_\nu)} = \partial/\partial x^\mu F^{\mu\nu} ,
+E_\nu = \frac{\partial L}{\partial A_\nu} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial L}{\partial(\partial/\partial x_\mu A_\nu)} = \sum_\mu\partial/\partial x_\mu F_{\mu\nu} ,
 $$
 
 the source-free side of the inhomogeneous Maxwell equations.
 
-**The local symmetry.** The transformation $A_\nu\mapsto A_\nu+\partial/\partial x^\nu\,\varepsilon$ leaves $F_{\mu\nu}$, and hence the density, exactly invariant: $F$ is unchanged, so $\delta L = 0$ and $F^\mu=0$ in the notation above. In the standard form the transformation is $\delta A_\nu = a_{\nu}{}^{\mu}\partial/\partial x^\mu\,\varepsilon$ with $a_\nu{}^\mu = \delta_\nu{}^\mu$ and $b_\nu=0$. The parameters are the four functions $A_\nu$ and the arbitrary function $\varepsilon$, so $q=1$, and the algebraic part vanishes. The symmetry is a pure second-kind symmetry with no rigid subgroup.
+**The local symmetry.** The transformation $A_\nu\mapsto A_\nu+\partial/\partial x_\nu\,\varepsilon$ leaves $F_{\mu\nu}$, and hence the density, exactly invariant: $F$ is unchanged, so $\delta L = 0$ and $F_\mu=0$ in the notation above. In the standard form the transformation is $\delta A_\nu = \sum_\mu a_{\nu\mu}\partial/\partial x_\mu\,\varepsilon$ with $a_{\nu\mu} = \delta_{\nu\mu}$ and $b_\nu=0$. The parameters are the four functions $A_\nu$ and the arbitrary function $\varepsilon$, so $q=1$, and the algebraic part vanishes. The symmetry is a pure second-kind symmetry with no rigid subgroup.
 
-**The identity.** Substituting into the theorem, with $b=0$ and $a_\nu{}^\mu=\delta_\nu{}^\mu$,
+**The identity.** Substituting into the theorem, with $b_\nu=0$ and $a_{\nu\mu}=\delta_{\nu\mu}$,
 
 $$
--\,\partial/\partial x^\mu\,\bigl(\delta_\nu{}^\mu E^\nu\bigr) = -\,\partial/\partial x^\nu E^\nu \equiv 0 ,
+-\,\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_\nu\delta_{\nu\mu} E_\nu\bigr) = -\,\sum_\nu\partial/\partial x_\nu E_\nu \equiv 0 ,
 $$
 
 that is,
 
 $$
-\boxed{\;\partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu} \equiv 0\;} ,
+\boxed{\;\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu} \equiv 0\;} ,
 $$
 
-which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial^2/\partial x^\nu\partial x^\mu$.
+which is the antisymmetry of $F_{\mu\nu}$ contracted with the symmetric pair $\partial^2/\partial x_\nu\partial x_\mu$.
 
-**What the identity does.** The four equations $E^\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the component $\nu=0$ is the constraint, an equation with no derivative in $x^0$, and the remaining components are the evolution equations; the identity is what ties the derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's *Canonical Quantization of the Biquaternion Maxwell Field* reproduces from the constraint algebra.
+**What the identity does.** The four equations $E_\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the component $\nu=0$ is the constraint, an equation with no derivative in $x_0$, and the remaining components are the evolution equations; the identity is what ties the derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's *Canonical Quantization of the Biquaternion Maxwell Field* reproduces from the constraint algebra.
 
-**The source is forced to be conserved.** Sourcing the equation, $E^\nu = j^\nu$, and taking the divergence, gives
+**The source is forced to be conserved.** Sourcing the equation, $E_\nu = j_\nu$, and taking the divergence, gives
 
 $$
-\partial/\partial x^\nu j^\nu = \partial/\partial x^\nu E^\nu \equiv 0 .
+\sum_\nu\partial/\partial x_\nu j_\nu = \sum_\nu\partial/\partial x_\nu E_\nu \equiv 0 .
 $$
 
-The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x^t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
+The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x_t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
 
 ## Worked Example: a Local Symmetry with a Rigid Subgroup
 
@@ -232,7 +232,7 @@ The Maxwell local symmetry has no algebraic part, so it carries no charge at all
 **The variational problem.** Let the fields be $A_\mu$ and a scalar $B$, and let the density be
 
 $$
-L = -\tfrac14 F_{\mu\nu}F^{\mu\nu} + \frac{m^2}{2}\bigl(A_\mu + \partial/\partial x^\mu B\bigr)\bigl(A^\mu + \partial^\mu B\bigr),
+L = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} + \frac{m^2}{2}\sum_\mu\bigl(A_\mu + \partial/\partial x_\mu B\bigr)\bigl(A_\mu + \partial/\partial x_\mu B\bigr),
 $$
 
 the Stueckelberg form of the massive vector field, in which the mass term is written so that a local symmetry survives.
@@ -240,23 +240,23 @@ the Stueckelberg form of the massive vector field, in which the mass term is wri
 **The local symmetry.** Under
 
 $$
-\delta A_\mu = \partial/\partial x^\mu\,\varepsilon , \qquad \delta B = -\varepsilon ,
+\delta A_\mu = \partial/\partial x_\mu\,\varepsilon , \qquad \delta B = -\varepsilon ,
 $$
 
-the combination $A_\mu+\partial/\partial x^\mu B$ is unchanged, and so is $F_{\mu\nu}$; the density is therefore exactly invariant for every function $\varepsilon$, with $b_{A_\mu}=0$ and $b_B=-1$. Here $b_B\neq0$, so restricting to constant $\varepsilon$ leaves the rigid transformation $\delta B=-\varepsilon$, a genuine shift symmetry of the scalar.
+the combination $A_\mu+\partial/\partial x_\mu B$ is unchanged, and so is $F_{\mu\nu}$; the density is therefore exactly invariant for every function $\varepsilon$, with $b_{A_\mu}=0$ and $b_B=-1$. Here $b_B\neq0$, so restricting to constant $\varepsilon$ leaves the rigid transformation $\delta B=-\varepsilon$, a genuine shift symmetry of the scalar.
 
-**The identity.** With $E^{A_\nu}=\partial/\partial x^\mu F^{\mu\nu} - m^2(A^\nu+\partial^\nu B)$ and $E_B = -m^2\partial/\partial x^\mu(A^\mu+\partial^\mu B)$, the first-order identity $b^iE_i - \partial/\partial x^\mu(a^{i\mu}E_i)\equiv0$ reads
-
-$$
--\,E_B - \partial/\partial x^\nu E^{A_\nu} \equiv 0 ,
-$$
-
-and substitution gives $m^2\partial/\partial x^\nu(A^\nu+\partial^\nu B) - m^2\partial/\partial x^\nu(A^\nu+\partial^\nu B) - \partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu}$, which vanishes by the same antisymmetry as before.
-
-**The rigid current and the correction term.** The rigid subgroup, the shift of $B$, has the first-theorem current $j^\mu_{(B)} = L^\mu_B\,b_B = -m^2(A^\mu+\partial^\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement
+**The identity.** With $E_{A_\nu}=\sum_\mu\partial/\partial x_\mu F_{\mu\nu} + m^2(A_\nu+\partial/\partial x_\nu B)$ and $E_B = -m^2\sum_\mu\partial/\partial x_\mu(A_\mu+\partial/\partial x_\mu B)$, the first-order identity $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ reads
 
 $$
-j^\mu_{(B)} + a^{A_\nu,\mu}E_{A_\nu} = -m^2\bigl(A^\mu+\partial^\mu B\bigr) + \bigl(\partial/\partial x^\lambda F^{\lambda\mu} - m^2(A^\mu+\partial^\mu B)\bigr) = \partial/\partial x^\lambda F^{\lambda\mu},
+-\,E_B - \sum_\nu\partial/\partial x_\nu E_{A_\nu} \equiv 0 ,
+$$
+
+and substitution gives $m^2\sum_\nu\partial/\partial x_\nu(A_\nu+\partial/\partial x_\nu B) - m^2\sum_\nu\partial/\partial x_\nu(A_\nu+\partial/\partial x_\nu B) - \sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}$, which vanishes by the same antisymmetry as before.
+
+**The rigid current and the correction term.** The rigid subgroup, the shift of $B$, has the first-theorem current $j_\mu_{(B)} = L_{\mu B}\,b_B = -m^2(A_\mu+\partial/\partial x_\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement
+
+$$
+j_\mu_{(B)} + \sum_\nu a_{A_\nu\mu}E_{A_\nu} = -m^2\bigl(A_\mu+\partial/\partial x_\mu B\bigr) + \bigl(\sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu} + m^2(A_\mu+\partial/\partial x_\mu B)\bigr) = \sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu},
 $$
 
 whose divergence vanishes identically by the antisymmetry of $F$. So the second-theorem identity is exactly the statement that the rigid current, corrected by the term proportional to the other equation, is divergence-free **off shell**; on shell the correction term vanishes and the first theorem's conservation law stands alone.
@@ -272,8 +272,8 @@ The two theorems are best kept apart by what they count.
 | Item | First theorem | Second theorem |
 |---|---|---|
 | Parameter | constant, $k$ of them | arbitrary function, $q$ of them |
-| Assumption | $\delta L=\partial/\partial x^\mu F^\mu$, $F$ built from the fields | $\delta L=\partial/\partial x^\mu F^\mu$ for **all** $\varepsilon^\alpha$ |
-| Conclusion | $k$ currents, $\partial/\partial x^\mu j^\mu_a=0$ on shell | $q$ identities, $\equiv0$ off shell |
+| Assumption | $\delta L=\sum_\mu\partial/\partial x_\mu F_\mu$, $F$ built from the fields | $\delta L=\sum_\mu\partial/\partial x_\mu F_\mu$ for **all** $\varepsilon_\alpha$ |
+| Conclusion | $k$ currents, $\sum_\mu\partial/\partial x_\mu j_{\mu a}=0$ on shell | $q$ identities, $\equiv0$ off shell |
 | On shell | new conserved charges | empty |
 | Effect on the equations | none | $N-q$ independent equations, gauge freedom |
 | Maxwell case | none (no rigid subgroup) | one identity, source conservation |
@@ -293,33 +293,33 @@ The names are frequently reversed in the literature and in informal use. The rev
 
 ## Summary
 
-Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j^\mu_a = L^\mu_i\xi^i_a - F^\mu_a$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
+Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j_{\mu a} = \sum_i L_{\mu i}\xi_{ia} - F_{\mu a}$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
 
-Both theorems follow from one identity, $\delta L = E_i\delta u^i + \partial/\partial x^\mu(L^\mu_i\delta u^i)$, read with the two kinds of variation. The identity of the second theorem, $b^iE_i - \partial/\partial x^\mu(a^{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\partial/\partial x^\nu j^\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b^i$ of its transformation does not vanish.
+Both theorems follow from one identity, $\delta L = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i L_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $u^i$, $i=1,\dots,N$ | Fields of the theory |
+| $u_i$, $i=1,\dots,N$ | Fields of the theory |
 | $L(x,u,\partial u)$ | Lagrangian density |
 | $S=\int L\,d^mx$ | Action |
-| $\partial/\partial x^\mu$ | Partial derivative with respect to $x^\mu$ |
-| $L^\mu_i = \partial L/\partial u^i_{,\mu}$ | Derivative of the density with respect to the gradient of the field |
-| $E_i = \partial L/\partial u^i - \partial/\partial x^\mu L^\mu_i$ | Euler–Lagrange expression |
-| $\Theta^\mu = L^\mu_i\,\delta u^i$ | Boundary current of a variation |
-| $F^\mu$ | Divergence through which a symmetry changes the density, $\delta L=\partial/\partial x^\mu F^\mu$ |
-| $\xi^i$, $\xi^i_a$ | Generator of a first-kind symmetry |
-| $a^{i\mu}$, $b^i$ | Coefficients of $\varepsilon$ and $\partial/\partial x^\mu\,\varepsilon$ in a second-kind symmetry |
-| $a^{i\mu_1\cdots\mu_k}$ | Coefficient of the $k$-th derivative of $\varepsilon$, $k\le r$ |
+| $\partial/\partial x_\mu$ | Partial derivative with respect to $x_\mu$ |
+| $L_{\mu i} = \partial L/\partial u_{i,\mu}$ | Derivative of the density with respect to the gradient of the field |
+| $E_i = \partial L/\partial u_i - \sum_\mu\partial/\partial x_\mu L_{\mu i}$ | Euler–Lagrange expression |
+| $\Theta_\mu = \sum_i L_{\mu i}\,\delta u_i$ | Boundary current of a variation |
+| $F_\mu$ | Divergence through which a symmetry changes the density, $\delta L=\sum_\mu\partial/\partial x_\mu F_\mu$ |
+| $\xi_i$, $\xi_{ia}$ | Generator of a first-kind symmetry |
+| $a_{i\mu\alpha}$, $b_{i\alpha}$ | Coefficients of $\varepsilon$ and $\partial/\partial x_\mu\,\varepsilon$ in a second-kind symmetry |
+| $a_{i\mu_1\cdots\mu_k\alpha}$ | Coefficient of the $k$-th derivative of $\varepsilon$, $k\le r$ |
 | $q$ | Number of arbitrary functions of a second-kind symmetry |
-| $j^\mu$, $j^\mu_a$ | Noether currents |
-| $Ϙ=\int j^0\,d^{m-1}x$ | Noether charge |
-| $T^\mu{}_\nu = L^\mu_i\partial/\partial x^\nu u^i - \delta^\mu_\nu L$ | Canonical energy–momentum tensor |
+| $j_\mu$, $j_{\mu a}$ | Noether currents |
+| $Ϙ=\int j_0\,d^{m-1}x$ | Noether charge |
+| $T_{\mu\nu} = \sum_i L_{\mu i}\partial/\partial x_\nu u_i - \delta_{\mu\nu} L$ | Canonical energy–momentum tensor |
 | First kind | Rigid symmetry, constant parameters |
 | Second kind | Local symmetry, arbitrary functions |
 | On shell / off shell | $E_i=0$ / not imposing $E_i=0$ |
-| $\Box = \partial/\partial x^\mu\partial^\mu$ | d'Alembertian |
+| $\Box = \sum_\mu\partial^2/\partial x_\mu^2$ | d'Alembertian |
 
 ## Further Reading
 

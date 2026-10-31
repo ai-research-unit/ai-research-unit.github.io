@@ -45,9 +45,9 @@ The symbol $\mathcal{K}_\mu$ is used for the special conformal generator because
 
 A concrete realization of the fifteen generators is by vector fields on the coordinates,
 $$
-P_\mu=\partial_\mu,\qquad D=\sum_\nu\varepsilon_\nu x_\nu\partial_\nu,\qquad
-M_{\mu\nu}=x_\mu\partial_\nu-x_\nu\partial_\mu,\qquad
-\mathcal{K}_\mu=2x_\mu\sum_\nu\varepsilon_\nu x_\nu\partial_\nu-x^2\partial_\mu,
+P_\mu=\partial/\partial x_\mu,\qquad D=\sum_\nu\varepsilon_\nu x_\nu\partial/\partial x_\nu,\qquad
+M_{\mu\nu}=x_\mu\partial/\partial x_\nu-x_\nu\partial/\partial x_\mu,\qquad
+\mathcal{K}_\mu=2x_\mu\sum_\nu\varepsilon_\nu x_\nu\partial/\partial x_\nu-x^2\partial/\partial x_\mu,
 $$
 with $x^2=\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\eta_{\rho\sigma}x_\rho x_\sigma$. Here $\varepsilon=(1,-1,-1,-1)$ is the plain weight, and a paired index is written low with that weight. The matrix $\Lambda_{\mu\nu}$ is read with the first index the row and the second the column; the slot order is stated, not carried by the height. In this real form the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_k]=2\epsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\epsilon_{jkl}K_l$, $[K_j,K_k]=-2\epsilon_{jkl}\vec e_l$ for $\vec e_k$, $K_k=i\vec e_k$. The brackets are
 $$
@@ -167,7 +167,7 @@ Two qualifications belong to the formula. First, it is a fractional (nonlinear) 
 $$
 \delta x_\mu=a_\mu x^2-2x_\mu(a\cdot x)=-\sum_\nu\varepsilon_\nu a_\nu\,\mathcal{K}_\nu x_\mu,
 $$
-with $\mathcal{K}_\nu=2x_\nu\sum_\rho\varepsilon_\rho x_\rho\partial_\rho-x^2\partial_\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
+with $\mathcal{K}_\nu=2x_\nu\sum_\rho\varepsilon_\rho x_\rho\partial/\partial x_\rho-x^2\partial/\partial x_\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
 
 ## Where the Algebra Strains
 

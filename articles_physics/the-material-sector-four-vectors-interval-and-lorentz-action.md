@@ -65,7 +65,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-so an element is $N$-regular exactly when its norm is non-zero. The **set of units** of the sector is the $N$-regular set, the complement of the norm-zero set. It is not a subgroup: the inverse of a material element is material, but the product of two material elements need not be. On the complement the inverse exists; at a non-zero point of the norm-zero set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The origin is $N$-degenerate but not a zero divisor. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
+so an element is $N$-regular exactly when its norm is non-zero. The **set of units** of the sector is the $N$-regular set, the complement of the norm-zero set. It is not a subgroup: the inverse of a material element is material, but the product of two material elements need not be. On the complement the inverse exists; at a non-zero point of the norm-zero set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The origin is $N$-degenerate but not a zero divisor. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial^2/\partial t'^2/c^2$, whose principal symbol vanishes exactly on the null directions.
 
 ### The Four Forms
 

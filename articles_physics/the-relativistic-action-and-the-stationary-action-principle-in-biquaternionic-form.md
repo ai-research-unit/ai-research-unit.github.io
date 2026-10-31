@@ -21,7 +21,7 @@ The scope is relativistic. The non-relativistic action belongs to the non-relati
 
 An action is a real functional of the fields,
 $$
-S[\tilde{\Phi}] = \int \mathcal{L}\bigl(\tilde{\Phi}, \partial_\mu\tilde{\Phi}\bigr)\,d^4x ,
+S[\tilde{\Phi}] = \int \mathcal{L}\bigl(\tilde{\Phi}, \partial/\partial Q_\mu\tilde{\Phi}\bigr)\,d^4x ,
 $$
 and the principle is that the physical field is a stationary point,
 $$
@@ -57,7 +57,7 @@ because $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1) = \sum_\mu Q_{3\mu}^*Q_{1\mu}$ a
 
 For a Lagrangian density $\mathcal{L}$ depending on $\tilde{\Phi}$ and its derivatives, stationarity under $\delta\tilde{\Phi}$ gives, after an integration by parts that moves the derivative off the variation,
 $$
-\frac{\partial\mathcal{L}}{\partial\tilde{\Phi}} - \partial_\mu\frac{\partial\mathcal{L}}{\partial(\partial_\mu\tilde{\Phi})} = 0 ,
+\frac{\partial\mathcal{L}}{\partial\tilde{\Phi}} - \partial/\partial Q_\mu\frac{\partial\mathcal{L}}{\partial(\partial\tilde{\Phi}/\partial Q_\mu)} = 0 ,
 $$
 where the derivatives are the components of the biquaternionic gradient of $\mathcal{L}$ with respect to the field components. When the Lagrangian is a function of the gradient only through the invariant $\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})]$, the derivative term produces the d'Alembertian and the equation is the second-order wave equation of the operator article. This is the sense in which the stationary-action principle reconstructs the operator: the operator is the Euler–Lagrange operator of the biquaternion-norm Lagrangian.
 
@@ -66,7 +66,7 @@ where the derivatives are the components of the biquaternionic gradient of $\mat
 Carrying the integration by parts without discarding the surface term leaves
 $$
 \delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{\Phi}\,d^4x
-+ \oint_{\partial\Omega} \sum_\mu \mathrm{Sc}\!\left[\overline{\bigl(\partial_\mu\tilde{\Phi}\bigr)}\,\delta\tilde{\Phi}\right] n_\mu\,d\Sigma ,
++ \oint_{\partial\Omega} \sum_\mu \mathrm{Sc}\!\left[\overline{\bigl(\partial/\partial Q_\mu\tilde{\Phi}\bigr)}\,\delta\tilde{\Phi}\right] n_\mu\,d\Sigma ,
 $$
 and the two terms say different things. The vanishing of the first for arbitrary interior variations is the equation of motion; the vanishing of the second for the variations admitted by the problem is the boundary condition. Because the equation of motion is the same for every admissible boundary condition, the boundary term is what selects among the several Green's functions of the operator article: the retarded kernel is the one whose associated surface term vanishes for a source that switches on in the past, the advanced kernel for one that switches off in the future, and the causal kernel for the Feynman prescription that projects onto positive frequencies forward and negative frequencies backward. The stationary-action principle therefore does not merely produce the operator; it produces it together with the boundary condition that makes the inversion well posed, and the freedom of the boundary term is exactly the freedom of the operator article's four kernels.
 
@@ -125,7 +125,7 @@ m\,\frac{du_\mu}{d\tau} = ϙ\sum_\nu F_{\mu\nu}v_\nu ,
 \qquad\text{that is, in components,}\qquad
 \frac{d\vec p}{dt'} = ϙ\bigl(\vec E + \vec v\times\vec B\bigr) ,
 $$
-with $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ the field tensor. The component form is standard and is transcribed rather than re-derived. The **index-free biquaternion product** expression of the same force is a different matter: the companion *Relativistic Mechanics in Biquaternionic Form* records that the four-force is a material-sector element built from the field strength and the four-velocity, but that its explicit form as a product in $\mathbb{B}$ involves the representation theory of the algebra in the even subalgebra and is left open. This article respects that boundary: the action route gives the component equation, and the biquaternion product form is not asserted here.
+with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ the field tensor. The component form is standard and is transcribed rather than re-derived. The **index-free biquaternion product** expression of the same force is a different matter: the companion *Relativistic Mechanics in Biquaternionic Form* records that the four-force is a material-sector element built from the field strength and the four-velocity, but that its explicit form as a product in $\mathbb{B}$ involves the representation theory of the algebra in the even subalgebra and is left open. This article respects that boundary: the action route gives the component equation, and the biquaternion product form is not asserted here.
 
 ### The canonical four-momentum and the mass shell
 
@@ -174,12 +174,12 @@ $$
 so the mass matrix is proportional to the identity in the component space — a *central* mass term. The **kinetic term does not separate** for a general element. Writing the two gradients out,
 $$
 \bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)
-= \sum_{\mu,\nu} e_\mu^{*}\,\bigl(\partial_\mu\tilde{\Phi}\bigr)^\dagger\, e_\nu\,\bigl(\partial_\nu\tilde{\Phi}\bigr) ,
+= \sum_{\mu,\nu} e_\mu^{*}\,\bigl(\partial/\partial Q_\mu\tilde{\Phi}\bigr)^\dagger\, e_\nu\,\bigl(\partial/\partial Q_\nu\tilde{\Phi}\bigr) ,
 $$
 the second basis element stands between the conjugate derivative and the derivative, so the two factors do not telescope into a single contraction, and the exact expansion carries a constant tensor,
 $$
 \mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right]
-= \sum_{\mu,\rho,\nu,\sigma} T_{\mu\rho\nu\sigma}\,\bigl(\partial_\mu\Phi_\rho\bigr)^*\bigl(\partial_\nu\Phi_\sigma\bigr) ,
+= \sum_{\mu,\rho,\nu,\sigma} T_{\mu\rho\nu\sigma}\,\bigl(\partial/\partial Q_\mu\Phi_\rho\bigr)^*\bigl(\partial/\partial Q_\nu\Phi_\sigma\bigr) ,
 \qquad
 T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}\!\left(e_\mu e_\rho e_\nu e_\sigma\right) ,
 $$
@@ -187,7 +187,7 @@ with $\sigma_0 = +1$, $\sigma_k = -1$. The tensor is **not** $\delta_{\mu\nu}\de
 
 The components therefore decouple for exactly the fields that are **central**. For $\tilde{\Phi} = \phi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
 $$
-\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] = \sum_\mu\bigl|\partial_\mu\phi\bigr|^2 ,
+\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] = \sum_\mu\bigl|\partial/\partial Q_\mu\phi\bigr|^2 ,
 $$
 the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{\Phi} = \mu^2\tilde{\Phi}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
@@ -222,7 +222,7 @@ $$
 \qquad
 \langle\tilde{F}\rangle_{\natural} = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H\;},
 $$
-so that the real and imaginary parts of the single complex invariant carry the two classical invariants, $\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -(\epsilon\vec E^2 - \mu\vec H^2)$ and $\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$; with the overall minus sign the Lagrangian is $-\frac12\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = \frac12(\epsilon\vec E^2 - \mu\vec H^2)$, the standard Maxwell density. The identity was verified on a representative field; it is the reason the framework can write the electromagnetic Lagrangian as a norm, exactly as it writes the mass term of the scalar field. Varying with respect to $\tilde{A}$ gives the source-free Maxwell equations $\sum_\mu\partial_\mu F_{\mu\nu} = 0$, the standard result.
+so that the real and imaginary parts of the single complex invariant carry the two classical invariants, $\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -(\epsilon\vec E^2 - \mu\vec H^2)$ and $\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$; with the overall minus sign the Lagrangian is $-\frac12\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = \frac12(\epsilon\vec E^2 - \mu\vec H^2)$, the standard Maxwell density. The identity was verified on a representative field; it is the reason the framework can write the electromagnetic Lagrangian as a norm, exactly as it writes the mass term of the scalar field. Varying with respect to $\tilde{A}$ gives the source-free Maxwell equations $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu} = 0$, the standard result.
 
 ### The first-order actions
 
@@ -240,8 +240,8 @@ The stationary-action principle is only half the content of an action; the other
 
 **Translations.** The actions depend on $\tilde{R}$ only through the fields and their gradients, so a constant shift of the argument is a symmetry, and the conserved quantity is the four-momentum. For the field the conserved density is the stress–energy tensor
 $$
-T_{\mu\nu} = -(\partial_\mu\phi^*)\partial_\nu\phi - (\partial_\mu\phi)\partial_\nu\phi^* - \delta_{\mu\nu}\,\mathcal{L} ,
-\qquad \sum_\mu\partial_\mu T_{\mu\nu} = 0 \ \text{on shell},
+T_{\mu\nu} = -(\partial/\partial Q_\mu\phi^*)\partial/\partial Q_\nu\phi - (\partial/\partial Q_\mu\phi)\partial/\partial Q_\nu\phi^* - \delta_{\mu\nu}\,\mathcal{L} ,
+\qquad \sum_\mu\partial/\partial Q_\mu T_{\mu\nu} = 0 \ \text{on shell},
 $$
 whose time–time component is the energy density. The companion article records the caution that in the $ict'$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
@@ -332,7 +332,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J} = i[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}]$ | Conserved material-sector current |
-| $T_{\mu\nu} = -(\partial_\mu\phi^*)\partial_\nu\phi - (\partial_\mu\phi)\partial_\nu\phi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
+| $T_{\mu\nu} = -(\partial/\partial Q_\mu\phi^*)\partial/\partial Q_\nu\phi - (\partial/\partial Q_\mu\phi)\partial/\partial Q_\nu\phi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
 | $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ | Hermitian-norm variation |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

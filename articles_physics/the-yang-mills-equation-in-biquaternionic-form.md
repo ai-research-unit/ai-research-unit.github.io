@@ -189,7 +189,7 @@ $$
 and the Yang–Mills equation loses its own commutator term for the same reason:
 
 $$
-[\mathcal{A}_\mu,F_{\mu\nu}] = \sum_\mu a_\mu\,(\partial_\mu a_\nu - \partial_\nu a_\mu)\,[g,g] = 0 .
+[\mathcal{A}_\mu,F_{\mu\nu}] = \sum_\mu a_\mu\,(\partial/\partial Q_\mu a_\nu - \partial/\partial Q_\nu a_\mu)\,[g,g] = 0 .
 $$
 
 The field equation is therefore
@@ -245,7 +245,7 @@ $$
 N^a_{\ 0}=A_a, \qquad N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c .
 $$
 
-Its strength $L_{\mu\nu}=\partial_{[\mu}N_{\nu]}-[N_\mu,N_\nu]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\sum_\nu\partial/\partial Q_\nu L_{\mu\nu}=\sum_\nu[N_\nu,L_{\mu\nu}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F^{\mathrm{em}}_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$ and the trace-free $L_{\mu\nu}$, and $\det R_{\mu\nu}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\mu\nu}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
+Its strength $L_{\mu\nu}=\tfrac12\left(\partial/\partial Q_\mu\,N_\nu-\partial/\partial Q_\nu\,N_\mu\right)-[N_\mu,N_\nu]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\sum_\nu\partial/\partial Q_\nu L_{\mu\nu}=\sum_\nu[N_\nu,L_{\mu\nu}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F^{\mathrm{em}}_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$ and the trace-free $L_{\mu\nu}$, and $\det R_{\mu\nu}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\mu\nu}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
 
 ## A Biwave Equation with a Vector Structural Coefficient
 
@@ -254,7 +254,7 @@ There is a second biquaternion equation in the literature whose matrix form has 
 $$
 \nabla^\pm B + F \circ B = G(\tau, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 \qquad
-\nabla^\pm = \partial_\tau \pm i\,\nabla ,
+\nabla^\pm = \partial/\partial \tau \pm i\,\nabla ,
 $$
 
 where $\tau$ is time in units of length, $\circ$ the biquaternion product, $G$ a given biquaternionic source, and $F = f + \vec F$ a **constant** biquaternion — the *structural coefficient* — with scalar part $f$ and vector part $\vec F$ [Alexeyeva 2014]. The four papers are a sequence of specialisations of this one equation: the earlier ones treat the members equivalent to the biquaternionic Maxwell system ($F = 0$) and to the biquaternionic Dirac system ($F = f$, a complex scalar), with their generalisations, and the fourth takes the **vector-valued** coefficient $\vec F \neq 0$. The author's remark for that case is that the equation, written in matrix (tensor) form, belongs to the class of Yang–Mills equations. Recording the series here gives the corpus a single source for the Maxwell–Dirac–Yang–Mills web that the framework's own articles reach by separate routes.
@@ -267,7 +267,7 @@ $$
 \left(\nabla^- - \vec F\right)\circ\left(\nabla^+ + \vec F\right)
 = \Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla),
 \qquad
-\Box_A = \partial_\tau^2 - \Delta ,
+\Box_A = \partial^2/\partial \tau^2 - \Delta ,
 $$
 
 so each component of $B$ solves a Klein–Gordon–Fock-type equation whose mass is the norm $(\vec F,\vec F)$ of the coefficient, plus one first-order directional term. *The Klein–Gordon Equation in Biquaternionic Form* treats that operator and the sense in which the vector coefficient makes it factor into first-order operators, which is the point of contrast with its scalar-coefficient case. The inhomogeneous equation is solved by convolution with the fundamental solution
@@ -397,7 +397,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$ | Parent's abelian source; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\vec F = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
-| $\nabla^\pm = \partial_\tau \pm i\nabla$, $\Box_A = \partial_\tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
+| $\nabla^\pm = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
 | $\psi$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
 | $\nabla^\pm_\omega = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
 | $\psi_\omega$, $\chi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$); the source's Helmholtz Green function |

@@ -167,7 +167,7 @@ The word "twistor" also occurs in the framework's literature in two further sens
 $$
 \nabla^\pm B + F \circ B = G(\tau, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 \qquad
-\nabla^\pm = \partial_\tau \pm i\,\nabla ,
+\nabla^\pm = \partial/\partial \tau \pm i\,\nabla ,
 $$
 
 where $\tau$ is time measured in units of length, $\nabla$ the spatial gradient, $\circ$ the biquaternion product, $G$ a given source, and $F = f + \vec F$ a **constant** biquaternion — the **structural coefficient**, with scalar part $f$ and vector part $\vec F$ [Alexeyeva 2014]. She calls it a **biwave** equation, because it is of hyperbolic type and each component of its solution solves a wave equation. The naming is justified by two specialisations the corpus already knows: $F = 0$ reproduces the biquaternionic Maxwell system and $F = f$, a complex scalar, the biquaternionic Dirac system. The fourth paper takes the coefficient **vector-valued**, and its remark is that the equation, written in matrix (tensor) form, then belongs to the class of Yang–Mills equations. That comparison belongs to *The Yang–Mills Equation in Biquaternionic Form*; what matters here is the object the paper builds.
@@ -335,7 +335,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $L_x\subset\mathbb{PT}$ | Twistor line of the point $x$ |
 | $\mathrm{Gr}(2,4)$ | Grassmannian of lines in $\mathbb{CP}^3$ (Klein correspondence) |
 | $\vec F=-E-iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E,H$ real vectors |
-| $\nabla^{\pm}=\partial_\tau\pm i\nabla$ | Mutual bigradients of the biwave equation; $\Box_A=\partial_\tau^2-\Delta$ is minus this series' $\Box$ |
+| $\nabla^{\pm}=\partial/\partial \tau\pm i\nabla$ | Mutual bigradients of the biwave equation; $\Box_A=\partial^2/\partial \tau^2-\Delta$ is minus this series' $\Box$ |
 | $\psi^{\pm}_{\vec\xi},\ \Psi^{\pm}_{\vec\xi}$ | Elementary $\vec\xi$-twistor's generating scalar potential and the twistor itself |
 | $\Xi=\Psi\circ\Psi^{*}=W+iP$ | Energy–momentum biquaternion of a twistor |
 | $\lVert\tilde{Q}\rVert^2$ | Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_k \lvert Q_k\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_k \lvert Q_k\rvert^2 - \lvert Q_t\rvert^2}$ |

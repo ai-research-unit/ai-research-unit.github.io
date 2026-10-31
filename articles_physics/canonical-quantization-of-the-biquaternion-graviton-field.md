@@ -40,7 +40,7 @@ with $h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation
 
 $$
 \Box h_{\mu\nu}-2\sum_\rho\partial/\partial Q_{(\mu}\,\partial/\partial Q_\rho h_{\nu)\rho}+\partial/\partial Q_\mu\,\partial/\partial Q_\nu h
--\eta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial_\rho\partial_\sigma h_{\rho\sigma}\right)
+-\eta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial Q_\rho\partial Q_\sigma h_{\rho\sigma}\right)
 = -\kappa^2\,T_{\mu\nu} .
 $$
 
@@ -61,7 +61,7 @@ R_{\mu\nu\rho\sigma} = \tfrac12\left(\partial/\partial Q_\nu\,\partial/\partial 
 -\partial/\partial Q_\nu\,\partial/\partial Q_\sigma h_{\mu\rho}-\partial/\partial Q_\mu\,\partial/\partial Q_\rho h_{\nu\sigma}\right),
 $$
 
-which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
+which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
 ### The Gauge Symmetry as Coordinate Freedom
 
@@ -170,7 +170,7 @@ The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each app
 
 ### The Non-Transverse States and the Gauge Fixing
 
-Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
+Covariant quantization cannot use the transverse-traceless gauge, because that gauge is not manifestly Lorentz covariant. In a covariant gauge the field has ten components, and the non-transverse and trace modes are removed by the gauge structure: the de Donder condition $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The gauge fixing requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the gauge algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the gauge parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
 
 ### The Constraints and the Canonical Structure
 
@@ -230,7 +230,7 @@ $$
 which for the symmetric square is $|\vec u|^2$, and the trace-free part is
 
 $$
-T_{jk}-\tfrac13\delta_{jk}T^l{}_l ,
+T_{jk}-\tfrac13\delta_{jk}\sum_l T_{ll} ,
 $$
 
 of dimension five. The decomposition $6=1+5$ is therefore the statement that the trace direction is one-dimensional and its complement is five-dimensional, and both are determined once the bilinear form is fixed, with no further postulate. This is what the rank computation of the transverse-traceless sector reproduces: the trace direction contributes one to the four-dimensional space of gauge and trace modes that the physical projector annihilates, and the remaining three are the gauge modes of helicity $\pm1$ and $0$. The framework's spin-two field is thus the trace-free symmetric square, and its five components are the massive spin-two carrier; the gauge removes three of them, leaving the two of the massless graviton.
@@ -273,7 +273,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ | Trace and trace-reversed field |
 | $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ | Linearized gauge symmetry |
 | $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
-| $\sum_\mu\partial_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
+| $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
 | $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse metric |
 | $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |

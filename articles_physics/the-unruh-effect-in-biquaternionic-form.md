@@ -297,7 +297,7 @@ $$
 \kappa = a .
 $$
 
-We have checked this directly: with $\chi=a(x\partial/\partial t'+t'\partial/\partial Q_x)$, the identity $\sum_\nu\varepsilon_\nu\,\chi_\nu\partial_\nu\chi_\mu=\kappa\chi_\mu$ holds with $\kappa=a$ on the horizon $x=t'$. The Unruh temperature is then
+We have checked this directly: with $\chi=a(x\partial/\partial t'+t'\partial/\partial Q_x)$, the identity $\sum_\nu\varepsilon_\nu\,\chi_\nu\partial/\partial Q_\nu\chi_\mu=\kappa\chi_\mu$ holds with $\kappa=a$ on the horizon $x=t'$. The Unruh temperature is then
 
 $$
 T=\frac{\kappa}{2\pi}=\frac{a}{2\pi}\quad(\hbar=c=k_B=1),

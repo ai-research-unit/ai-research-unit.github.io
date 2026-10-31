@@ -12,7 +12,7 @@ The frame is the $\mathbb{M}_-$ frame. Four-vector indices $\mu = 0,1,2,3$ carry
 
 ### The Idea
 
-A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F_{\mu\nu}$ and its first-order form $\tfrac12 B_{\mu\nu}(\partial_\mu A_\nu - \partial_\nu A_\mu) - \tfrac18 B_{\mu\nu}B_{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, the auxiliary field being the antisymmetric part of the biquaternion:
+A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F_{\mu\nu}$ and its first-order form $\tfrac12 B_{\mu\nu}(\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu) - \tfrac18 B_{\mu\nu}B_{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, the auxiliary field being the antisymmetric part of the biquaternion:
 
 $$
 S_{\text{parent}}[G, A] = \int \tfrac12\Bigl[G^*_\nu\, i\check c_{\nu\mu\lambda}\,\tilde\nabla_\mu G_\lambda - \bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c_{\nu\mu\lambda} G_\lambda\Bigr] + S_{\text{aux}}[G, A],
@@ -56,7 +56,7 @@ The second ingredient is that the next-to-topological density is a total derivat
 
 $$
 \tfrac14\bigl[G_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho} + G^*_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G^*_{\lambda\rho}\bigr]
-= 2\partial_\mu\Bigl[\varepsilon_{\mu\nu\lambda\rho}\bigl(B_\nu\partial_\lambda B_\rho - N_\nu\partial_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
+= 2\partial/\partial x_\mu\Bigl[\varepsilon_{\mu\nu\lambda\rho}\bigl(B_\nu\partial/\partial x_\lambda B_\rho - N_\nu\partial/\partial x_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
 $$
 
 where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real and imaginary parts of $G$). The right-hand side is the divergence of a Chern–Simons-type current. A total derivative may be added to a Lagrangian without changing the equations of motion, and it is this freedom that lets the parent action carry the topological mass into the gauge reduction and out of the Dirac reduction. The identity is transcribed from the source; the corresponding *algebraic* statements that would establish it — the self-duality of $H$ and the structure of the cubic form — are verified in the companion articles, but the divergence identity itself was not recomputed in this pass.
@@ -108,7 +108,7 @@ The mechanism is the standard first-order duality. The ingredients are three: th
 | $\check c_{\mu\nu\lambda} = (t_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on the neutral vector $j$ |
 | $\bar\Psi\Psi$ | Dirac bilinear, $= \tfrac12(N^2 - B^2)$ |
 | $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ | Anti-self-dual two-form (the antisymmetric part) |
-| $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Gauge field strength |
+| $F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$ | Gauge field strength |
 | $A_\mu$ | Gauge four-potential |
 | $K_\mu$ | Unit complex vector; the mass as a phase |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123} = 1$ |

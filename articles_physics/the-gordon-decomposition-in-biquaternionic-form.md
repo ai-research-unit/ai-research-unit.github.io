@@ -33,7 +33,7 @@ The Gordon decomposition expresses it as
 $$
 \boxed{\;\bar\psi\gamma_\mu\psi
 = \frac{i}{2m}\left(\bar\psi\,\nabla_\mu\psi - \left(\nabla_\mu\bar\psi\right)\psi\right)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right)\;},
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right)\;},
 $$
 
 where the **spin generator** is
@@ -96,8 +96,8 @@ The second bracket is a total derivative,
 $$
 \sum_\nu\varepsilon_\nu\left(\bar\psi\,\sigma_{\mu\nu}\nabla_\nu\psi
 + \left(\nabla_\nu\bar\psi\right)\sigma_{\mu\nu}\psi\right)
-= \sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\sigma_{\mu\nu}\psi\right)
-= 2\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right),
+= \sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\sigma_{\mu\nu}\psi\right)
+= 2\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\,\Sigma_{\mu\nu}\psi\right),
 $$
 
 because $\sigma_{\mu\nu}$ is constant and antisymmetric. Dividing by $2m$ gives the identity as stated. The algebra was checked numerically in the conventions above: the generator-product split held with residual $0$, and the momentum-space identity below held to $2.8\times10^{-15}$ over $100$ random on-shell spinor pairs and the four values of $\mu$.
@@ -172,14 +172,14 @@ The **convection term** $\bar w_2\frac{(p+p_2)_\mu}{2m}w$ is the current of a ch
 
 The **spin term** $\bar w_2\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}(p_2-p)_\nu}{2m}w$ depends on the momentum **transfer** $k_\nu$ and on the tensor bilinear. It is the piece that couples to the field strength rather than to the potential: contracted with the momentum-space photon, it produces an effective Pauli moment term. Its coefficient is exactly the one that gives $g = 2$, as the next subsection shows.
 
-The identification of the second term with the spin density is not a metaphor. In position space the second term is $\frac{1}{m}\sum_\nu\varepsilon_\nu\partial_\nu(\bar\psi\Sigma_{\mu\nu}\psi)$; the spatial components of the tensor density are the spin angular-momentum density, and the magnetic moment is its integral.
+The identification of the second term with the spin density is not a metaphor. In position space the second term is $\frac{1}{m}\sum_\nu\varepsilon_\nu\partial/\partial x_\nu(\bar\psi\Sigma_{\mu\nu}\psi)$; the spatial components of the tensor density are the spin angular-momentum density, and the magnetic moment is its integral.
 
 ### The magnetic moment and $g=2$
 
 Contract the spin term with the photon field. The interaction is $-\sum_\mu\varepsilon_\mu A_\mu j_\mu$, and the spin-dependent part contributes, up to a total divergence,
 
 $$
--\frac{e\hbar}{2mc}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu A_\mu\,\bar\psi\sigma_{\nu\mu}\psi
+-\frac{e\hbar}{2mc}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial/\partial x_\nu A_\mu\,\bar\psi\sigma_{\nu\mu}\psi
 = -\frac{e\hbar}{2mc}\cdot\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,F_{\mu\nu}\,\bar\psi\sigma_{\mu\nu}\psi,
 $$
 
@@ -308,7 +308,7 @@ The Gordon decomposition splits the on-shell Dirac current as
 $$
 \bar\psi\gamma_\mu\psi
 = \frac{i}{2m}\left(\bar\psi\nabla_\mu\psi - \left(\nabla_\mu\bar\psi\right)\psi\right)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\left(\bar\psi\Sigma_{\mu\nu}\psi\right),
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial/\partial x_\nu\left(\bar\psi\Sigma_{\mu\nu}\psi\right),
 \qquad
 \Sigma_{\mu\nu} = \tfrac14 i\left[\gamma_\mu,\gamma_\nu\right],
 $$

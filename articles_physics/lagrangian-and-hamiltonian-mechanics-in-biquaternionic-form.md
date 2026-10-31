@@ -330,7 +330,7 @@ $$
 \tilde\nabla S = i\Pi ,
 $$
 
-that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial_\mu\Pi_\nu=\partial_\nu\Pi_\mu$, which is the statement that the one-form $\Pi$ is **closed** and therefore locally exact. The source writes the same condition as $\tilde\nabla\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently
+that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial/\partial Q_\mu\Pi_\nu=\partial/\partial Q_\nu\Pi_\mu$, which is the statement that the one-form $\Pi$ is **closed** and therefore locally exact. The source writes the same condition as $\tilde\nabla\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently
 
 $$
 \oint dX\circ\Pi = 0 ,

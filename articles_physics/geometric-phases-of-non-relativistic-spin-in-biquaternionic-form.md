@@ -158,7 +158,7 @@ $$
 \tilde\Pi = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 $$
 
-and a spinor phase $\psi\mapsto \exp(i\alpha)\psi$ cancels between $\psi$ and $\psi^\dagger$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\psi\mapsto \exp(i\alpha)\psi$ cancels between $\psi$ and $\psi^\dagger$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 

@@ -24,7 +24,7 @@ The article is organised as follows. A section sets up the measure and the chira
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
-\gamma_k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 

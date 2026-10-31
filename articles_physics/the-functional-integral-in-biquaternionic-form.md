@@ -155,7 +155,7 @@ The cleanest explicit case is the free scalar field, which the scalar example be
 
 **The Euclidean action.** After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
-S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial_\mu\phi\,\partial_\mu\phi + m^2\phi^2\Big)
+S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\phi\,\partial/\partial Q_\mu\phi + m^2\phi^2\Big)
 = \tfrac12\int d^4x_E\;\phi\big(-\Delta_E + m^2\big)\phi ,
 $$
 with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\partial^2/\partial Q_t^2+\Delta$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.

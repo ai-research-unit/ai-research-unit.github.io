@@ -122,21 +122,21 @@ the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2
 
 ### The Non-Abelian Determinant
 
-For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G^a[\tilde{A}]=\sum_\mu\partial_\mu A_{\mu}^{a}-\omega^a$, the variation under a gauge transformation is
+For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G^a[\tilde{A}]=\sum_\mu\partial/\partial Q_\mu A_{\mu}^{a}-\omega^a$, the variation under a gauge transformation is
 
 $$
-\frac{\delta G^a[\tilde{A}^\Gamma]}{\delta\Gamma^b} = \sum_\mu\partial_\mu(D_\mu)^{ab},
+\frac{\delta G^a[\tilde{A}^\Gamma]}{\delta\Gamma^b} = \sum_\mu\partial/\partial Q_\mu(D_\mu)^{ab},
 \qquad
-(D_\mu)^{ab}=\partial_\mu\delta^{ab}+g f^{abc}A_\mu^c ,
+(D_\mu)^{ab}=\partial/\partial Q_\mu\delta^{ab}+g f^{abc}A_\mu^c ,
 $$
 
 so the determinant is a functional of the potential through the structure constants,
 
 $$
-\Delta[\tilde{A}] = \det\left(\sum_\mu\partial_\mu D_\mu\right),
+\Delta[\tilde{A}] = \det\left(\sum_\mu\partial/\partial Q_\mu D_\mu\right),
 $$
 
-and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_\mu\bar{c}^a\partial_\mu(D_\mu c)^a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
+and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_\mu\bar{c}^a\partial/\partial Q_\mu(D_\mu c)^a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{M}_+$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
 
 ## The Gaussian Integral and the Propagator
 
@@ -286,7 +286,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $\Delta[\tilde{A}]$ | Faddeev–Popov determinant; gauge invariant |
 | $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |
 | $\Delta=\det(\partial\cdot D)$ (non-abelian) | Field-dependent determinant; ghosts required |
-| $(D_\mu)^{ab}=\partial_\mu\delta^{ab}+gf^{abc}A_\mu^c$ | Covariant derivative in the adjoint representation |
+| $(D_\mu)^{ab}=\partial/\partial Q_\mu\delta^{ab}+gf^{abc}A_\mu^c$ | Covariant derivative in the adjoint representation |
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\xi$ | Gauge parameter; multiplies the longitudinal projector |
 | $K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-1/\xi)p_\mu p_\nu$ | Gauge-fixed quadratic form; $K=p^2(P+L/\xi)$ |

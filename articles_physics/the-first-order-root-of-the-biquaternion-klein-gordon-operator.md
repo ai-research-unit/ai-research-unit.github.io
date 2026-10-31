@@ -18,7 +18,7 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $i\gamma_\mu\partial_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma_\mu$ mutually anticommute with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $i\gamma_\mu\partial/\partial Q_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\gamma_\mu$ mutually anticommute with $(\gamma_0)^2=+1$ and $(\gamma_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 - **The mass term is constrained.** The condition $\{B,\gamma_\mu\}=0$ forces $B=c\gamma_5$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
@@ -36,14 +36,14 @@ $$
 \quad\text{on }\mathbb{M}_- .
 $$
 
-In the $x$ coordinates $x_0=ct'$, $x^k$, where $Q_t=ix^0$ and $Q_k=x^k$, the same operator is
+In the $x$ coordinates $x_0=ct'$, $x_k$, where $Q_t=ix_0$ and $Q_k=x_k$, the same operator is
 $$
-\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu
+\Box=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
 $$
-The $Q$ form is the Euclidean transcription, obtained by $\partial_{Q_t}=-ic^{-1}\partial_{t'}$.
+The $Q$ form is the Euclidean transcription, obtained by $\partial/\partial Q_t=-ic^{-1}\partial/\partial t'$.
 
 Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $\hbar$ is the reduced Planck constant.
 
@@ -97,7 +97,7 @@ $$
 
 Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $\gamma_k^2=-e_t$, rather than by a raised label. On the plane wave the root $i\gamma_\mu\partial/\partial Q_\mu$ has symbol $\gamma_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\gamma_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
@@ -433,7 +433,7 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $x_\mu$ | Lorentz coordinates, $x_0=ct'$, $x_k$ spatial |
 | $g_{\mu\nu}$ | Lorentz metric, $\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial_\mu\partial_\nu$ | d'Alembertian, series convention and Lorentz form |
+| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu$ | d'Alembertian, series convention and Lorentz form |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $\mu=mc/\hbar$ | Mass parameter (inverse reduced Compton wavelength) |
 | $\tilde P=iE/c\,e_t+\vec p$ | Material four-momentum |

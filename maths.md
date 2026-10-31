@@ -6643,6 +6643,77 @@
 <a href="articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes</a>
 <!-- the Peirce table and the explicit rank-two matrices of the four Peirce elements; the coordinate isomorphism; the block form $\mathsf S^{-1}\mathsf M_4\mathsf S=\operatorname{diag}(\mathsf M_2,\mathsf M_2)$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$; the trace and the determinant; one system of $2\times2$ matrix units, duplicated; the two spinor planes as the two blocks, preserved on the left, swapped on the right, and distinct from the column spaces of the idempotents. No form, no norm, no module. -->
 
+#### The Matrix Representations
+
+<a href="articles_maths/matrix-representations-the-models-and-the-change-of-frame.html">Matrix Representations : The Models and the Change of Frame</a>
+<!-- the matrix of an operator and its column rule; the frame as a basis and the bracket as an algebra isomorphism; the change of frame as conjugation and the similarity orbit; the entry model and the two operator frames, and the Peirce change between them. -->
+
+<a href="articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html">Matrix Representations : The Product, the Trace and the Determinant</a>
+<!-- the element as a $2\times2$ matrix and the operator as a $4\times4$ matrix in each frame; the product multiplicative in the three displays; the trace $2Q_t$ against $4Q_t$; the determinant $N$ against $N^2$, and the doubling and squaring rules. -->
+
+<a href="articles_maths/matrix-representations-the-six-subspaces-as-matrix-conditions.html">Matrix Representations : The Six Subspaces as Matrix Conditions</a>
+<!-- the centre, the vector subspace, the quaternion and anti-quaternion subspaces and the Hermitian and anti-Hermitian subspaces as matrix conditions, with their real dimensions $2,6,4,4,4,4$, their traces, determinants and signatures; exact only inside the four-dimensional image. -->
+
+<a href="articles_maths/matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html">Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes</a>
+<!-- the four Peirce elements as one system of $2\times2$ matrix units; the regular images $I_2\otimes E_{ij}$; the block form $\operatorname{diag}(B,B)$; the two blocks as the spinor planes, preserved on the left and exchanged on the right. -->
+
+<a href="articles_maths/matrix-representations-the-spectral-projectors.html">Matrix Representations : The Spectral Projectors</a>
+<!-- $\rho_\pm=\tfrac12(\mathrm I\pm\mathsf M(\vec\Xi))$ with $\vec\Xi=-i\vec Q/B$; complementary idempotents of rank one and trace one, inflated to rank two in the regular display; the spectral decomposition, the Peirce relations and the degenerate limit. -->
+
+<a href="articles_maths/matrix-representations-the-centraliser-and-the-double-centraliser.html">Matrix Representations : The Centraliser and the Double Centraliser</a>
+<!-- the commutant $\mathbb{C}[X]=\operatorname{span}\{\mathrm I_2,X\}$ for a non-scalar matrix and the whole algebra for a scalar; the double commutant in every case; the regular commutant $M_2(\mathbb{C})\otimes C(A)$ and the two-sided picture. -->
+
+<a href="articles_maths/matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html">Matrix Representations : The Eigenbasis and the Diagonalising Matrix</a>
+<!-- the eigenbasis as a system of matrix units; the diagonalising matrix $\mathsf C_Q$ of determinant $2B(B-Q_z)$; the second chart at $B=Q_z$; the four-column change in the regular model, two columns per eigenvalue. -->
+
+<a href="articles_maths/matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html">Matrix Representations : The Jordan Basis and the Jordanising Matrix</a>
+<!-- the Jordan basis as matrix units; the canonical Jordanising matrix from the singular-value decomposition $Q=suv^{\dagger}$; the canonical frame and its fixed determinant; the chain order, the Toeplitz freedom and the transitions. -->
+
+<a href="articles_maths/matrix-representations-worked-examples.html">Matrix Representations : Worked Examples</a>
+<!-- eight matrices through one checklist: coordinates, trace, determinant, spectrum, minimal polynomial, rank, diagonalising matrix or Jordan chain, commutant, spectral projectors, polar factors and normality flags; the pattern of the eight and the doubling rule. -->
+
+<a href="articles_maths/matrix-representations-the-four-words-and-the-four-traces.html">Matrix Representations : The Four Words and the Four Traces</a>
+<!-- the four products $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and $X^{\mathsf T}Y^{\dagger}$ and their quarter-traces; the four Gram matrices and the signatures of the algebra, unchanged by the representation. -->
+
+<a href="articles_maths/matrix-representations-trace-determinant-and-the-biquaternion-norm.html">Matrix Representations : Trace, Determinant and the Biquaternion Norm</a>
+<!-- the trace $4Q_t$ and the determinant $N^2$; the four algebraic norms as quarter-traces of the four words; the characteristic polynomial the square of the $2\times2$ one, the minimal polynomial unchanged; the singular and normal loci. -->
+
+<a href="articles_maths/matrix-representations-the-polar-decomposition-of-a-matrix.html">Matrix Representations : The Polar Decomposition of a Matrix</a>
+<!-- every invertible matrix uniquely $M=PV$; the closed form of $P$ with the trace in the entry model and the half-trace in the regular model; the word $r\zeta M_bM_r$ with boost and rotor; the singular case and the singular values $re^{\pm\eta/2}$. -->
+
+<a href="articles_maths/matrix-representations-rank-one-matrices-and-the-determinantal-variety.html">Matrix Representations : Rank-One Matrices and the Determinantal Variety</a>
+<!-- the factorisation $uv^{\mathsf T}$ and its double, unique up to reciprocal scaling; the trace $v^{\mathsf T}u$ and the two strata of nilpotents and scaled idempotents; the annihilators and the one-sided ranks; the cone over the Segre quadric and the Jordan block. -->
+
+<a href="articles_maths/matrix-representations-spin-qubits-and-the-bloch-vector.html">Matrix Representations : Spin, Qubits and the Bloch Vector</a>
+<!-- the Pauli matrices as the images of $i\vec e_k$; the spin operators and their commutator and anticommutator; the state $\tfrac12(\mathrm I+\vec r\cdot\vec\sigma)$ and the Bloch ball; the Born rule, the spinor and the Hopf fibration; the doubled state and the limits of the correspondence. -->
+
+<a href="articles_maths/matrix-representations-the-conjugations-and-the-adjoints.html">Matrix Representations : The Conjugations and the Adjoints</a>
+<!-- the four words as the transpose, the entrywise conjugation, the dagger and minus the dagger; the dressings in the coefficient, spinor and Peirce frames; the real structure and the adjoints. -->
+
+<a href="articles_maths/matrix-representations-the-killing-form.html">Matrix Representations : The Killing Form</a>
+<!-- $4\operatorname{tr}_2(XY)-2\operatorname{tr}_2X\operatorname{tr}_2Y=2\operatorname{tr}_4(XY)-\tfrac12\operatorname{tr}_4X\operatorname{tr}_4Y=-8\vec X\cdot\vec Y$; the real form of signature $(3,3)$ on the trace-free part; the radical the centre. -->
+
+<a href="articles_maths/matrix-representations-the-functional-calculus.html">Matrix Representations : The Functional Calculus</a>
+<!-- the Cauchy integral and the biquaternion calculus; the exponential, the logarithm and the roots; the closed form of the square root with the trace and the half-trace; the image of the calculus in the regular model. -->
+
+<a href="articles_maths/matrix-representations-gl2-sl2-and-the-determinant.html">Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>
+<!-- the units $GL_2(\mathbb{C})$ and the norm-one elements $SL_2(\mathbb{C})$, read in both displays; the determinant as the norm and as its square; the exact sequence, the polar splitting, the centre and $PGL_2$. -->
+
+<a href="articles_maths/matrix-representations-the-projective-line-and-the-mobius-action.html">Matrix Representations : The Projective Line and the Möbius Action</a>
+<!-- the minimal ideals $I_L$ and their doubles $J_L$; the action of the unit group with kernel the scalars; the Möbius formula in the chart; the idempotent fibres, triple transitivity, the cross-ratio and the real structure. -->
+
+<a href="articles_maths/matrix-representations-the-left-regular-operators.html">Matrix Representations : The Left Regular Operators</a>
+<!-- $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$; kernel the right annihilator, image the right ideal, rank twice the rank of $B$; the matrix $I_2\otimes B$; the four basis matrices and the trichotomy $4,2,0$. -->
+
+<a href="articles_maths/matrix-representations-the-right-regular-operators.html">Matrix Representations : The Right Regular Operators</a>
+<!-- $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$; an anti-representation with kernel the left annihilator; the matrix $B^{\mathsf T}\otimes I_2$; the four basis matrices and the same rank trichotomy. -->
+
+<a href="articles_maths/matrix-representations-the-two-sided-operators.html">Matrix Representations : The Two-Sided Operators</a>
+<!-- $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ with matrix $B_P^{\mathsf T}\otimes B_Q$; trace $4Q_tP_t$, determinant $N_Q^2N_P^2$, rank the product of the two ranks; the sixteen $T_{\mu\nu}=L_\mu R_\nu$ a basis of $M_4(\mathbb{C})$. -->
+
+<a href="articles_maths/matrix-representations-the-hermitian-sandwich.html">Matrix Representations : The Hermitian Sandwich</a>
+<!-- $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$; multiplicative with defect $\tilde Q^{*}\tilde Q$; the automorphism group the $*$-unitary slice; the preservation of the Hermitian and anti-Hermitian halves and the vector action. -->
+
 #### The Modules in the Biquaternion Algebra
 
 <a href="articles_maths/the-regular-module.html">The Regular Module in the Biquaternion Algebra</a>

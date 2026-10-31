@@ -58,8 +58,8 @@ In that basis $\gamma_0_d$ is diagonal and separates the upper and the lower pai
 
 | object | chiral form | entry | meaning |
 |---|---|---|---|
-| $\gamma_0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | generator paired with $\partial_{t'}$; exchanges the two chiral blocks |
-| $\gamma_1,\gamma_2,\gamma_3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | generators paired with $\partial_{x^k}$; each squares to $-1$ |
+| $\gamma_0$ | $\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$ | $e_t$ | generator paired with $\partial/\partial t'$; exchanges the two chiral blocks |
+| $\gamma_1,\gamma_2,\gamma_3$ | $\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$ | $i\vec e_k$ | generators paired with $\partial/\partial x_k$; each squares to $-1$ |
 | $\gamma_5$ | $\mathrm{diag}(-I_2,I_2)$ | $-e_t$ on the left, $+e_t$ on the right | chirality, $-1$ on the left and $+1$ on the right; $P_{L,R}=\tfrac12(1\mp\gamma_5)$ |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | $-i\gamma_5$ | $L_iR_{i\vec e_z}$ | volume element; $i\omega=\gamma_5$ |
 
@@ -473,7 +473,7 @@ $$
 P_L\tilde w_+=0,\qquad P_R\tilde w_-=0 .
 $$
 
-The mass term is the only term that couples the two Peirce components: in the chiral pair, $m\psi_+$ and $m\psi_-$ are the off-diagonal entries, and setting $m=0$ decouples them. At fixed momentum each Weyl equation selects one complex helicity state, and the two together give the two massless states; the Dirac equation is recovered as the pair. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial_{t'}\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial_{t'}\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, with $p=-i\hbar\nabla$ in the operator equations.
+The mass term is the only term that couples the two Peirce components: in the chiral pair, $m\psi_+$ and $m\psi_-$ are the off-diagonal entries, and setting $m=0$ decouples them. At fixed momentum each Weyl equation selects one complex helicity state, and the two together give the two massless states; the Dirac equation is recovered as the pair. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial/\partial t'\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial/\partial t'\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, with $p=-i\hbar\nabla$ in the operator equations.
 
 ## Problem 5: The algebra of the generators and the change of basis
 

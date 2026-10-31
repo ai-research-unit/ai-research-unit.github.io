@@ -49,7 +49,7 @@ the field theories on the arena are **non-local** — the same shift that remove
 Field operators are split into plane waves and recombined; the product of two operators becomes the **Moyal product** of the corresponding functions,
 
 $$
-A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta_{\mu\nu}\partial_\mu\,\partial/\partial x_2_\nu\right) A(x)B(x_2)\Big|_{x_2=x},
+A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_2_\nu\right) A(x)B(x_2)\Big|_{x_2=x},
 $$
 
 the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the **quadratic (kinetic) terms of an action are unchanged** by the deformation, because the $\theta$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at **cubic and higher order in the fields** — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.
@@ -57,9 +57,9 @@ the Weyl–Moyal correspondence. The star product is associative. Two facts abou
 At first order in $\theta$ the Seiberg–Witten expansion gives
 
 $$
-A_\mu = A_\mu - \tfrac12\theta_{\alpha\beta}A_\alpha(\partial_\beta A_\mu + F_{\beta\mu}),
+A_\mu = A_\mu - \tfrac12\theta_{\alpha\beta}A_\alpha(\partial/\partial x_\beta A_\mu + F_{\beta\mu}),
 \qquad
-F_{\mu\nu} = F_{\mu\nu} + \theta_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta} - \theta_{\alpha\beta}A_\alpha\partial_\beta F_{\mu\nu},
+F_{\mu\nu} = F_{\mu\nu} + \theta_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta} - \theta_{\alpha\beta}A_\alpha\partial/\partial x_\beta F_{\mu\nu},
 $$
 
 with $e$ absorbed into $\theta_{\alpha\beta}$. The quadratic term of $F_{\mu\nu}$ is the source of every non-linearity below.
@@ -73,7 +73,7 @@ The free Maxwell action on the deformed arena is
 $$
 S = -\frac14\int d^4x\, F_{\mu\nu}\star F_{\mu\nu},
 \qquad
-F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu - ie[A_\mu,A_\nu]_M,
+F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu - ie[A_\mu,A_\nu]_M,
 $$
 
 with the Moyal bracket $[A_\mu,A_\nu]_M = A_\mu\star A_\nu - A_\nu\star A_\mu$. Expanding to first order in $\theta$ gives the Lagrangian
@@ -211,16 +211,16 @@ The paper's most delicate technical point follows, and it is a caution rather th
 The **canonical** energy–momentum tensor of the Lagrangian,
 
 $$
-T^{\mathrm{can}}_{\mu\nu} = (\partial_\nu A_\alpha)\frac{\partial\mathcal L}{\partial(\partial_\mu A_\alpha)} - \delta_{\mu\nu}\mathcal L,
+T^{\mathrm{can}}_{\mu\nu} = (\partial A_\alpha/\partial x_\nu)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_\mu)} - \delta_{\mu\nu}\mathcal L,
 $$
 
-is conservative, $\partial_\mu T^{\mathrm{can}}_{\mu\nu}=0$. To reach a gauge-invariant tensor one adds a term $\Lambda_{\mu\nu}$ with $\partial_\mu\Lambda_{\mu\nu}=0$; the source's choice is
+is conservative, $\partial/\partial x_\mu T^{\mathrm{can}}_{\mu\nu}=0$. To reach a gauge-invariant tensor one adds a term $\Lambda_{\mu\nu}$ with $\partial/\partial x_\mu\Lambda_{\mu\nu}=0$; the source's choice is
 
 $$
-\Lambda_{\mu\nu} = -(\partial_\alpha A_\nu)\frac{\partial\mathcal L}{\partial(\partial_\mu A_\alpha)},
+\Lambda_{\mu\nu} = -(\partial A_\nu/\partial x_\alpha)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_\mu)},
 $$
 
-and the argument that $\partial_\mu\Lambda_{\mu\nu}=0$ is the standard one: the derivative tensor is antisymmetric in $\mu,\alpha$ because $\mathcal L$ depends on $A$ only through $F$, so the first contraction vanishes by symmetry, and the second vanishes by the equation of motion $\partial\mathcal L/\partial A_\nu=0$ when $J=0$. Nothing in that argument uses $\vec\theta$, so the **canonical tensor remains conservative**. The resulting tensor is still not symmetric, but it becomes symmetric at $\vec\theta=0$.
+and the argument that $\partial/\partial x_\mu\Lambda_{\mu\nu}=0$ is the standard one: the derivative tensor is antisymmetric in $\mu,\alpha$ because $\mathcal L$ depends on $A$ only through $F$, so the first contraction vanishes by symmetry, and the second vanishes by the equation of motion $\partial\mathcal L/\partial A_\nu=0$ when $J=0$. Nothing in that argument uses $\vec\theta$, so the **canonical tensor remains conservative**. The resulting tensor is still not symmetric, but it becomes symmetric at $\vec\theta=0$.
 
 For the **symmetric** tensor the source varies the action with respect to the metric. The covariant form of the Lagrangian is written down, and then the observation is made that the expression only *looks* covariant: because $\theta_{\mu\nu}$ is a fixed tensor and does not transform under a change of metric, the action is **not a scalar**, and the standard conclusion — that the metric variation gives a conserved tensor — does not follow. Varying anyway produces a symmetric tensor that differs from the canonical one by $\vec\theta$-terms, and this tensor is **not conserved** on the deformed arena.
 
@@ -291,7 +291,7 @@ $$
 \boxed{\;\nabla F + \tfrac12\left(\nabla G + G^+\overleftarrow{\nabla}\right) = -J\;},
 $$
 
-where $\nabla = \tau_\mu\partial_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau^m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
+where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau^m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
 
 $$
 \vec g = i(\vec\theta\cdot\vec v^*)\vec v - \frac{i}{2}\vec\theta(\vec v^*)^2,
@@ -299,7 +299,7 @@ $$
 \vec v = \vec E + i\vec B,
 $$
 
-which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau_\mu$, which reproduces $F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\theta_{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
+which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau_\mu$, which reproduces $F_{\mu\nu}=\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\theta_{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
 The transformation properties close the section. Under $X_{\mathrm L} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm L} = L^+\nabla L$, $F_{\mathrm L} = L^{-1}FL$, $J_{\mathrm L} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The appendix realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm L} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
@@ -343,7 +343,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\Lambda_{NC}$, $\epsilon_{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\theta_{\mu\nu}=\epsilon_{\mu\nu}/\Lambda_{NC}^2$ |
 | $\theta_i$ | Three-vector of the deformation, $\theta_i=\tfrac12\epsilon_{ijk}\theta_{jk}$, $\theta_{i4}=0$ |
 | $[x_\mu,x_\nu]=i\theta_{\mu\nu}$ | The defining commutator; the corpus's "$ict'$" convention is kept for time |
-| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta_{\mu\nu}\partial_\mu\,\partial/\partial x_2_\nu)$ |
+| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_2_\nu)$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |
 | $\vec D,\vec H$ | Displacement and magnetic fields; $\vec D=\vec E+\vec d$, $\vec H=\vec B+\vec h$ |

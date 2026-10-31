@@ -188,7 +188,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $\gamma_\mu$ | Clifford generators, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ |
 | $\gamma_5=\gamma_0\gamma_1\gamma_2\gamma_3$ | Volume element (pseudoscalar); $\gamma_5^2=-1$; the source's "$i$" and the corpus's central imaginary unit |
 | $\gamma_{21}=\gamma_2\gamma_1$ | Fixed spin-plane bivector multiplying the spinor on the right |
-| $\partial=\gamma_\mu\partial_\mu$ | Dirac operator; $\delta$ the coderivative, $d$ the exterior derivative |
+| $\partial=\gamma_\mu\partial/\partial x_\mu$ | Dirac operator; $\delta$ the coderivative, $d$ the exterior derivative |
 | $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |

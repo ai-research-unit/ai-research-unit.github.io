@@ -184,7 +184,7 @@ which is exactly the abelian connection of *The Gauge Principle in Biquaternioni
 
 The same total space, regarded as $SU(2)$ rather than as a $\mathrm{U}(1)$-bundle over $S^2$, is the compact factor of the non-abelian gauge theory, and its third homotopy group classifies the instanton sector. The two interpretations are different bundle structures on the same manifold: the abelian structure uses the fibration $S^3\to S^2$, the non-abelian one uses $S^3$ as the structure group itself.
 
-The connection between them is the **boundary behaviour of a finite-action gauge field**. A finite-action connection on $\mathbb R^4$ must approach a pure gauge at infinity, $\mathcal A_\mu\to \tilde U^{-1}\partial_\mu \tilde U$ with $\tilde U\in SU(2)$, and the one-point compactification of $\mathbb R^4$ is $S^4$. The field is then a connection on a bundle over $S^4$, and its restriction to a small three-sphere around the point at infinity is a map
+The connection between them is the **boundary behaviour of a finite-action gauge field**. A finite-action connection on $\mathbb R^4$ must approach a pure gauge at infinity, $\mathcal A_\mu\to \tilde U^{-1}\partial/\partial x_\mu \tilde U$ with $\tilde U\in SU(2)$, and the one-point compactification of $\mathbb R^4$ is $S^4$. The field is then a connection on a bundle over $S^4$, and its restriction to a small three-sphere around the point at infinity is a map
 
 $$
 g_\infty : S^3_\infty \longrightarrow SU(2),
@@ -223,7 +223,7 @@ $$
 For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The gauge connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
 
 $$
-D_\mu \Psi = \partial_\mu\Psi + i\kappa\,\mathcal A_\mu\Psi ,
+D_\mu \Psi = \partial/\partial x_\mu\Psi + i\kappa\,\mathcal A_\mu\Psi ,
 $$
 
 which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the gauge principle, and the algebra supplies the module on which it acts.
@@ -273,7 +273,7 @@ The same manifold, read as the structure group $SU(2)$, classifies the instanton
 | $SU(2)=\mathrm{span}$-generated unit quaternions | Structure group; compact factor of $\mathbb M_-$ |
 | $[g_\infty]\in\pi_3(SU(2))\cong\mathbb Z$ | Instanton number; boundary winding |
 | $\tilde A=i\phi/c\,e_t+\vec A$ | Abelian biquaternionic potential |
-| $D_\mu=\partial_\mu+i\kappa\mathcal A_\mu$ | Covariant derivative on the associated bundle |
+| $D_\mu=\partial/\partial x_\mu+i\kappa\mathcal A_\mu$ | Covariant derivative on the associated bundle |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading

@@ -286,7 +286,7 @@ an envelope $\cos(\Delta k\,z-\Delta\omega\,t')$ modulating the carrier. The env
 
 **Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega t')$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
 
-**Solution (a).** In the corpus's three-vector form the field satisfies $\partial_{Q_t}\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial_{Q_t}=-c^{-1}\partial_{t'}$. For the harmonic dependence $\partial_{Q_t}=-k$, so
+**Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial Q_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial Q_t=-c^{-1}\partial/\partial t'$. For the harmonic dependence $\partial/\partial Q_t=-k$, so
 
 $$
 \mathrm{rot}\,\tilde F - k\,\tilde F = -\vec j,

@@ -222,7 +222,7 @@ completes the dictionary of the three quadratic forms and the one cubic form tha
 Passing from the spinor to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\bigl[\bar\Psi i\gamma_\mu(\partial_\mu - ieA_\mu)\Psi - \bigl((\partial_\mu + ieA_\mu)\bar\Psi\bigr)i\gamma_\mu\Psi\bigr] - m\bar\Psi\Psi
+\tfrac12\bigl[\bar\Psi i\gamma_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi - \bigl((\partial/\partial x_\mu + ieA_\mu)\bar\Psi\bigr)i\gamma_\mu\Psi\bigr] - m\bar\Psi\Psi
 $$
 
 $$
@@ -232,7 +232,7 @@ $$
 with the covariant derivative
 
 $$
-\tilde\nabla_\mu G_\lambda = \partial_\mu G_\lambda - ieA_\mu\, g_{\lambda\rho}\, c_5{}_{\rho\sigma} G_\sigma .
+\tilde\nabla_\mu G_\lambda = \partial/\partial x_\mu G_\lambda - ieA_\mu\, g_{\lambda\rho}\, c_5{}_{\rho\sigma} G_\sigma .
 $$
 
 Two features are worth naming. First, the kinetic operator is not symmetric in $G$ and $G^*$: the two kinetic terms above, written without their sign-vector sums, are complex conjugates of one another, so the Lagrangian is real. Second, the mass term is $m(G^*G^* + GG)$, not $mG^*G$: the mass couples $G$ to $G^*$ rather than to itself, which is the shadow of the chirality-off-diagonal mass of the spinor formulation. The kinetic operator has the block structure of a Dirac operator in a four-vector carrier; equivalently, that operator is a square root of the Klein–Gordon operator, $\sum_\mu\epsilon_\mu(\tilde\nabla_\mu)^*\tilde\nabla_\mu = \partial\!\cdot\!\partial + m^2$ on the appropriate components.
@@ -254,13 +254,13 @@ Equivalently, with $A_\mu = 0$, it is the pair
 $$
 \boxed{\;G_{\mu\nu} = \tfrac{i}{2}\,\varepsilon_{\mu\nu\lambda\rho} G_{\lambda\rho},
 \qquad
-\sum_\mu\epsilon_\mu\bigl(\partial_\mu G_\mu - i m j_\mu G^{*}_{\mu}\bigr) = 0\;},
+\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu - i m j_\mu G^{*}_{\mu}\bigr) = 0\;},
 $$
 
 where
 
 $$
-G_{\mu\nu} = \bigl(\partial_\mu G_\nu + im\,j_\mu G^*_\nu\bigr) - \bigl(\partial_\nu G_\mu + im\,j_\nu G^*_\mu\bigr).
+G_{\mu\nu} = \bigl(\partial/\partial x_\mu G_\nu + im\,j_\mu G^*_\nu\bigr) - \bigl(\partial/\partial x_\nu G_\mu + im\,j_\nu G^*_\mu\bigr).
 $$
 
 This is the source's "self-dual" form: the first equation is a self-duality condition on the field strength $G_{\mu\nu}$, the second a divergence condition. Together they are one first-order complex equation on the s-vector, and they reproduce the massive Dirac equation exactly.
@@ -278,9 +278,9 @@ $$
 which splits the s-vector into the two chirality pieces, and the equation of motion becomes the pair
 
 $$
-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda} i(\partial_\nu - ieA_\nu)R_\lambda - m L^{*}_{\mu} = 0,
+\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda} i(\partial/\partial x_\nu - ieA_\nu)R_\lambda - m L^{*}_{\mu} = 0,
 \qquad
-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda} i(\partial_\nu + ieA_\nu)L_\lambda - m R^{*}_{\mu} = 0 .
+\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda} i(\partial/\partial x_\nu + ieA_\nu)L_\lambda - m R^{*}_{\mu} = 0 .
 $$
 
 The two-form
@@ -295,17 +295,17 @@ $$
 H_{\mu\nu} = -\tfrac{i}{2}\,\varepsilon_{\mu\nu\lambda\rho} H_{\lambda\rho},
 $$
 
-so it carries only the three complex independent components of its antisymmetric part. This is the biquaternion analogue of the electromagnetic field strength $F_{\mu\nu} = E^i + iH^i$: the source notes that only the three-dimensional vector part of the biquaternion has the Maxwell analogy. In these variables the uncharged Dirac equation reads
+so it carries only the three complex independent components of its antisymmetric part. This is the biquaternion analogue of the electromagnetic field strength $F_{\mu\nu} = E_i + iH_i$: the source notes that only the three-dimensional vector part of the biquaternion has the Maxwell analogy. In these variables the uncharged Dirac equation reads
 
 $$
-\sum_\nu\epsilon_\nu\,\partial_\nu H_{\nu\mu} - \tfrac{im}{2}\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\bigl(\check c_{\nu\mu\lambda}H_{\nu\lambda}\bigr)^* = 0.
+\sum_\nu\epsilon_\nu\,\partial/\partial x_\nu H_{\nu\mu} - \tfrac{im}{2}\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\bigl(\check c_{\nu\mu\lambda}H_{\nu\lambda}\bigr)^* = 0.
 $$
 
 Decomposed into symmetric and antisymmetric parts, $H_{\mu\nu} = H_{(\mu\nu)} + H_{[\mu\nu]}$, the self-duality condition forces the symmetric part to be proportional to the metric, $H_{(\mu\nu)} = \phi^* g_{\mu\nu}$, and the antisymmetric part to be anti-self-dual. The source reads the resulting pair of equations as a Maxwell system with both "electric" and "magnetic" currents, and identifies
 
 $$
 \tfrac14\bigl[G_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho} + G^*_{\mu\nu}\varepsilon_{\mu\nu\lambda\rho}G^*_{\lambda\rho}\bigr]
-= 2\partial_\mu\Bigl[\varepsilon_{\mu\nu\lambda\rho}\bigl(B_\nu\partial_\lambda B_\rho - N_\nu\partial_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
+= 2\partial/\partial x_\mu\Bigl[\varepsilon_{\mu\nu\lambda\rho}\bigl(B_\nu\partial/\partial x_\lambda B_\rho - N_\nu\partial/\partial x_\lambda N_\rho + 2mB_\nu N_\lambda j_\rho\bigr)\Bigr],
 $$
 
 a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive gauge field of the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
@@ -369,7 +369,7 @@ These questions are open.
 
 A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B_\mu g_{\mu\nu}i\gamma_\nu v$ and $\Phi_2 = N_\mu g_{\mu\nu}i\gamma_\nu u$ with real $B_\mu, N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
-The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial_\mu G_\mu - imj_\mu G^{*}_{\mu} = 0$, with the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
+The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial/\partial x_\mu G_\mu - imj_\mu G^{*}_{\mu} = 0$, with the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
 What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $k_\mu$ and $j_\mu$ are extra structure — a preferred frame — which the source treats as determined by the algebra and which the corpus records as an open question. The triality map is not a symmetry; it maps one description to another description of the same theory.
 

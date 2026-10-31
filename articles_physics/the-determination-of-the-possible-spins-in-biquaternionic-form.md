@@ -188,7 +188,7 @@ In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1
 **The coherent-state action.** The spin path integral is written on the sphere of coherent states. Its kinetic term is the Wess–Zumino term
 
 $$
-S_{WZ}=i\hbar\oint\langle z|\partial_{t'}|z\rangle\,dt'=-s\hbar\,\Omega,
+S_{WZ}=i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'=-s\hbar\,\Omega,
 $$
 
 where $\Omega$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\hbar\Omega/2$, the spinor phase.

@@ -250,7 +250,7 @@ Three consequences separate the differential from the mode.
 - **It has no vacuum idempotent.** The mode's vacuum is the idempotent $\tilde\Pi_+$; the differential's "vacuum" is the ghost vacuum, but the physical content is not a rung. The cohomology is a quotient, not an image.
 - **It does not pair with an identity.** The mode's anticommutator is $e_t$; the differential has no such pairing. The unphysical part of the complex is contractible — the quartet is removed — but the physical part is not, and that is the point.
 
-The ghost is the object that shows why the algebra alone is not enough. Algebraically, the ghost oscillator has a canonical anticommutator, $\{c,\partial_c\}=1$, and therefore looks like a mode. Physically, it is removed by the cohomology: its rung is not a state. The mode's algebra and the mode's physics are not the same thing, and the differential is the structure that separates them.
+The ghost is the object that shows why the algebra alone is not enough. Algebraically, the ghost oscillator has a canonical anticommutator, $\{c,\partial/\partial c\}=1$, and therefore looks like a mode. Physically, it is removed by the cohomology: its rung is not a state. The mode's algebra and the mode's physics are not the same thing, and the differential is the structure that separates them.
 
 ## The Supercharge
 

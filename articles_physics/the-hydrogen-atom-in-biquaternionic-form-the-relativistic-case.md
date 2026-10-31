@@ -43,7 +43,7 @@ The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi(\v
 
 $$
 i\hbar\,\partial/\partial t'\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
-\qquad \boldsymbol\alpha^k = \gamma_0\gamma_k, \quad \beta = \gamma_0,
+\qquad \boldsymbol\alpha_k = \gamma_0\gamma_k, \quad \beta = \gamma_0,
 $$
 
 with $V(r) = ϙ\phi = -\kappa/r$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation
@@ -214,7 +214,7 @@ the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed r
 The object the phase cannot pass through is not the mass but the algebra's real structure: a coupling built on $\flat = -{}^{*}$, which is antilinear, transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$, so a Majorana-type mass $m\tilde\Psi^\flat$ would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and be form-invariant only for $\lambda = \pm1$. That is a statement about the real structure, not about the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality. What the mass breaks is the **axial** symmetry,
 
 $$
-\sum_\mu\epsilon_\mu\,\partial_\mu j_{5\mu} = 2im\,\bar\psi\gamma_5\psi ,
+\sum_\mu\epsilon_\mu\,\partial/\partial Q_\mu j_{5\mu} = 2im\,\bar\psi\gamma_5\psi ,
 $$
 
 with $\epsilon=(1,-1,-1,-1)$ the sign vector; the divergence vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).

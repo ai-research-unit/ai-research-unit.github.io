@@ -8,12 +8,12 @@ The article is a self-contained treatment of the equation and its structure. The
 
 ## Differential Forms and the Laplace–de Rham Operator
 
-Let $M$ be a four-dimensional (pseudo-)Riemannian manifold with metric $g$ and local coordinates $x^\mu$, $\mu=1,\dots,4$. A **differential form of degree $h$** is a totally antisymmetric tensor field $\Phi_{\mu_1\dots\mu_h} = \Phi_{[\mu_1\dots\mu_h]}$, and a general form field is a sum over the sixteen ordered index sets $H$,
+Let $M$ be a four-dimensional (pseudo-)Riemannian manifold with metric $g$ and local coordinates $x_\mu$, $\mu=1,\dots,4$. A **differential form of degree $h$** is a totally antisymmetric tensor field $\Phi_{\mu_1\dots\mu_h} = \Phi_{[\mu_1\dots\mu_h]}$, and a general form field is a sum over the sixteen ordered index sets $H$,
 
 $$
 \Phi = \sum_H \Phi_H(x)\,dx_H,
 \qquad
-dx_H = dx^{\mu_1}\wedge\cdots\wedge dx^{\mu_h},
+dx_H = dx_{\mu_1}\wedge\cdots\wedge dx_{\mu_h},
 \qquad
 \mu_1<\cdots<\mu_h .
 $$
@@ -45,16 +45,16 @@ $$
 Because the wedge product is antisymmetric and the added term is symmetric, this product satisfies the Clifford relation
 
 $$
-\{dx^\mu, dx^\nu\}_\vee = 2\,\delta^{\mu\nu},
+\{dx_\mu, dx_\nu\}_\vee = 2\,\delta_{\mu\nu},
 $$
 
 so that the exterior algebra, equipped with $\vee$, is the Clifford algebra of the Euclidean form. With this product the Laplace–de Rham operator on a form field is
 
 $$
-(d-\delta)\Phi(x) = dx^\mu \vee \partial_\mu\Phi(x),
+(d-\delta)\Phi(x) = \sum_\mu dx_\mu \vee \partial_\mu\Phi(x),
 $$
 
-which is the familiar form $c(dx^\mu)\partial_\mu$ of a Dirac-type operator, with the forms themselves playing the role of the Clifford generators. In Lorentzian signature the relation acquires a sign from the metric, as in *The Volume Element, Duality and the Hodge Star*; the Euclidean statement above is the one used for the lattice construction, and the Lorentzian version differs only in the signature of the Clifford relation.
+which is the familiar form $\sum_\mu c(dx_\mu)\partial_\mu$ of a Dirac-type operator, with the forms themselves playing the role of the Clifford generators. In Lorentzian signature the relation acquires a sign from the metric, as in *The Volume Element, Duality and the Hodge Star*; the Euclidean statement above is the one used for the lattice construction, and the Lorentzian version differs only in the signature of the Clifford relation.
 
 ## The Equation
 
@@ -95,20 +95,20 @@ $$
 the Dirac–Kähler equation becomes four Dirac equations, one for each value of the unimpaired index $b$,
 
 $$
-\boxed{\;\left(\gamma_\mu\partial_\mu + m\right)\Psi(x)_b = 0\;} .
+\boxed{\;\left(\sum_\mu\gamma_\mu\partial_\mu + m\right)\Psi(x)_b = 0\;} .
 $$
 
 Thus in flat space of signature $(1,3)$ the sixteen components of the multivector arrange into four four-component spinors, and the four copies transform into one another under the Lorentz group. The mechanism is an **internal symmetry** $\mathrm{SO}(2,4)$ acting on the multivector; its parameters are tensors rather than scalars, and it does not commute with the Lorentz transformations. Consequently the Lorentz group does not act independently on the four Dirac fields: it mixes components of different degrees, and the two-component fields are not strict half-integer representations of the Clifford algebra but coherent superpositions of forms of different degree. In $2^{2^n}$ dimensions the equation is equivalent to $2^{2^{n-1}}$ Dirac equations; in particular it is the four-dimensional case $d=4=2^2$ that gives the factor four used above.
 
 ## Minimal Coupling
 
-Coupling to a gauge field replaces the ordinary derivative by the covariant one, $dx^\mu\vee\partial_\mu \to dx^\mu\vee D_\mu$, and the equation acquires a source:
+Coupling to a gauge field replaces the ordinary derivative by the covariant one, $\sum_\mu dx_\mu\vee\partial_\mu \to \sum_\mu dx_\mu\vee D_\mu$, and the equation acquires a source:
 
 $$
 (d-\delta+m)\Phi = iA\vee\Phi ,
 $$
 
-with the components of $A$ agreeing with the four-potential. In the abelian case $A = eA_\mu dx^\mu$; in the non-abelian case there are additional internal indices. The Dirac–Kähler field then carries those indices, and formally corresponds to sections of the Whitney product of the Atiyah–Kähler bundle of differential forms with the vector bundle of local internal spaces. As in the flat uncharged case, the coupled equation is again equivalent to four copies of the corresponding coupled Dirac equation.
+with the components of $A$ agreeing with the four-potential. In the abelian case $A = e\sum_\mu A_\mu dx_\mu$; in the non-abelian case there are additional internal indices. The Dirac–Kähler field then carries those indices, and formally corresponds to sections of the Whitney product of the Atiyah–Kähler bundle of differential forms with the vector bundle of local internal spaces. As in the flat uncharged case, the coupled equation is again equivalent to four copies of the corresponding coupled Dirac equation.
 
 ## Discretization and Staggered Fermions
 
@@ -150,9 +150,9 @@ This containment does not turn the Dirac–Kähler equation into a biquaternion 
 
 ## Summary
 
-The Dirac–Kähler equation $(d-\delta+m)\Phi=0$ is the geometric analogue of the Dirac equation: it is an equation for a multivector field, defined on any pseudo-Riemannian manifold by the exterior calculus alone. The Laplace–de Rham operator $d-\delta$ is a square root of the Laplacian, $(d-\delta)^2=\square$, and the equation therefore implies the Klein–Gordon equation $(\square-m^2)\Phi=0$ componentwise. Equipping the exterior algebra with the Clifford product $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu + \delta_{\mu\nu}$ makes $d-\delta$ the Clifford multiplication $dx^\mu\vee\partial_\mu$.
+The Dirac–Kähler equation $(d-\delta+m)\Phi=0$ is the geometric analogue of the Dirac equation: it is an equation for a multivector field, defined on any pseudo-Riemannian manifold by the exterior calculus alone. The Laplace–de Rham operator $d-\delta$ is a square root of the Laplacian, $(d-\delta)^2=\square$, and the equation therefore implies the Klein–Gordon equation $(\square-m^2)\Phi=0$ componentwise. Equipping the exterior algebra with the Clifford product $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu + \delta_{\mu\nu}$ makes $d-\delta$ the Clifford multiplication $\sum_\mu dx_\mu\vee\partial_\mu$.
 
-In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\gamma_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the gauge field through $dx^\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
+In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\gamma_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the gauge field through $\sum_\mu dx_\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
 
 ## Summary of Notation
 
@@ -166,7 +166,7 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\g
 | $Z_{ab}$ | Basis change to four Dirac copies |
 | $\gamma_H$ | Products of Dirac matrices indexed by $H$ |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
-| $A = eA_\mu dx^\mu$ | Abelian gauge potential, minimally coupled |
+| $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |
 | $\Delta,\nabla,\hat\Delta,\hat\nabla$ | Boundary, coboundary and their duals |
 | $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ | Biquaternion algebra as the even part |
 

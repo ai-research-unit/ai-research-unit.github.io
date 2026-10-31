@@ -99,7 +99,7 @@ $$
 \qquad (\tilde{\Phi} = \phi\,e_t).
 $$
 
-**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
+**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J_0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J_k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
 
 **Conservation.** Forming the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 
@@ -347,7 +347,7 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ | Framework form of current conservation |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J$; $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ is charge conservation |
 | $x_\mu = (ct',x,y,z)$, $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Real frame of the energy–momentum tensor, distinct from $Q_\mu$ |
-| $T_{\mu\nu} = (\partial_\mu\phi^*)(\partial_\nu\phi) + (\partial_\mu\phi)(\partial_\nu\phi^*) - \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum of the field |
+| $T_{\mu\nu} = (\partial/\partial Q_\mu\phi^*)(\partial/\partial Q_\nu\phi) + (\partial/\partial Q_\mu\phi)(\partial/\partial Q_\nu\phi^*) - \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum of the field |
 | $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{M}_+$ |
 | $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\vec{L} = \tfrac12\sum L_{\mu\nu}\bar{e}_\mu e_\nu$ | Angular momentum and its bivector |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{M}_-$ |

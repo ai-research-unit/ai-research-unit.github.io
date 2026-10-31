@@ -46,7 +46,7 @@ $$
 the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$, where $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ is the biquaternionic gradient and $\tilde{\nabla}^{\natural}$ its quaternion conjugate. In tensor language the same object is the antisymmetric rank-two tensor
 
 $$
-F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu,
+F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
 \qquad
 F_{\mu\nu} =
 \begin{pmatrix}

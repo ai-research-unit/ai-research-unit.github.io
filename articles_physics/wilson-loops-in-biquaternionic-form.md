@@ -46,7 +46,7 @@ where the generators $T^a$ are realized in the informational sector of the algeb
 Under a gauge transformation $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, the line integral changes by
 
 $$
-\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial_\mu\Gamma\right)dx_\mu
+\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial/\partial x_\mu\Gamma\right)dx_\mu
 = \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu-\oint_C d\Gamma
 = \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu ,
 $$
@@ -65,7 +65,7 @@ so the abelian Wilson loop is the exponential of the enclosed flux. The factor $
 
 ### The Non-Abelian Case
 
-Under a gauge transformation $A_\mu\mapsto Q A_\mu Q^{-1}+(i/g)Q\partial_\mu Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,
+Under a gauge transformation $A_\mu\mapsto Q A_\mu Q^{-1}+(i/g)Q\partial/\partial x_\mu Q^{-1}$, the group element transforms by conjugation at the endpoints of the curve,
 
 $$
 U(C) \;\longmapsto\; Q(x_{\mathrm{start}})\,U(C)\,Q^{-1}(x_{\mathrm{end}}) ,
@@ -195,7 +195,7 @@ with the trace over the informational realization of the gauge group and the ave
 
 ### The Loop as the Phase of a Charged Worldline
 
-The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_\mu=\partial_\mu+igA_\mu$, the amplitude for a particle to propagate along a worldline acquires a factor
+The loop is not only an abstract observable; it is the phase of a charged particle's worldline. Coupling a charge to the connection by the minimal prescription $D_\mu=\partial/\partial x_\mu+igA_\mu$, the amplitude for a particle to propagate along a worldline acquires a factor
 
 $$
 \exp\left(ig\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),

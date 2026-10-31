@@ -139,7 +139,7 @@ $$
 $$
 \boxed{\;S_{\mathrm{gh}}=-\int d^4x\;\bar c_a\,\sum_\mu\partial/\partial Q_\mu(D_\mu c)^a\;},
 \qquad
-(D_\mu c)^a=\partial_\mu c^a+i\kappa\sum_b f^{abc}\mathcal{A}_{\mu}^{b}c^c .
+(D_\mu c)^a=\partial/\partial Q_\mu c^a+i\kappa\sum_b f^{abc}\mathcal{A}_{\mu}^{b}c^c .
 $$
 The ghost $c^a$ and the antighost $\bar c_a$ are Lorentz scalars of opposite ghost number; the antighost is the conjugate field, and the action is the standard one. Its form is exactly the ghost term that *BRST Symmetry in Biquaternionic Form* takes as given; here it has been derived from the measure.
 

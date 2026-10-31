@@ -1,0 +1,210 @@
+# __Matrix Representations : The Functional Calculus__
+
+## Introduction
+
+The functional calculus applies a holomorphic function to a matrix by a contour integral. In the biquaternion algebra it is the same calculus read through the regular matrix: the function of the left regular matrix is the left regular matrix of the function of the element. The two displays differ only by the doubling of the eigenvalues and by the trace.
+
+This article develops the Cauchy integral, the regular identity, the exponential and its closed form, the group law, the one-parameter subgroups, the kernel, the logarithm and its branches, and the square root with its classification. It is the article in which the four earlier representation articles meet: the trace, the determinant, the spectrum and the regular matrix all enter the same calculus.
+
+**Conventions.** The algebra and the displays are those of *Matrix Representations : The Models and the Change of Frame*. The element is $\tilde Q=Q_te_t+\vec Q$, its $2\times2$ matrix is $B=\mathsf M_2(\tilde Q)$, and its regular matrix is $L=L(\tilde Q)=\mathsf M_4^{L}(\tilde Q)=I_2\otimes B$. The eigenvalues are
+$$
+\lambda_\pm=Q_t\pm iB,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$
+and $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\lambda_+\lambda_-$.
+
+**Boundaries.** The matrix calculus is *$M_2(\mathbb{C})$ Representation : The Functional Calculus* and *$M_4(\mathbb{C})$ Representation : The Functional Calculus*; the algebra functions are *Biquaternion Elementary Functions*; the exponential of the algebra is *The Exponential of a Biquaternion*; the Killing form and the Lie bracket are *Matrix Representations : The Killing Form*; the spectrum is *Matrix Representations : The Eigenbasis and the Diagonalising Matrix* and *Matrix Representations : The Jordan Basis and the Jordanising Matrix*.
+
+## The Cauchy Integral
+
+**The definition.** Let $X$ be a $2\times2$ or a $4\times4$ matrix and let $f$ be holomorphic on an open set containing $\operatorname{spec}X$. For a finite union $\gamma$ of positively oriented closed contours enclosing the spectrum,
+$$
+f(X)=\frac{1}{2\pi i}\oint_\gamma f(z)\,(z\mathrm I-X)^{-1}\,dz .
+$$
+The integral is independent of the contour and defines a matrix.
+
+**The spectral form.** If $X$ is diagonalisable with eigenvalues $\lambda_1,\dots,\lambda_n$, then
+$$
+f(X)=C\operatorname{diag}\bigl(f(\lambda_1),\dots,f(\lambda_n)\bigr)C^{-1}.
+$$
+If $X=\lambda\mathrm I+N$ with $N$ nilpotent, then
+$$
+f(X)=\sum_{k\ge0}\frac{f^{(k)}(\lambda)}{k!}N^k .
+$$
+The function depends on the values on the spectrum and, at a repeated eigenvalue, on the first derivative.
+
+**The homomorphism.** For functions holomorphic on a common neighbourhood,
+$$
+(fg)(X)=f(X)g(X),\qquad 1(X)=\mathrm I,\qquad f(X)g(X)=g(X)f(X),
+$$
+and the spectral mapping theorem holds:
+$$
+\operatorname{spec}f(X)=f\bigl(\operatorname{spec}X\bigr).
+$$
+
+**The regular identity.** For $f$ holomorphic on a neighbourhood of the spectrum of $\tilde Q$,
+$$
+f\bigl(L(\tilde Q)\bigr)=L\bigl(f(\tilde Q)\bigr).
+$$
+The proof is the resolvent identity
+$$
+(z\mathrm I_4-L(\tilde Q))^{-1}=L\bigl((ze_t-\tilde Q)^{-1}\bigr)
+$$
+inside the contour integral. Every function of a regular matrix lies in the regular image, and the calculus on the image is the biquaternion calculus read through $L$.
+
+**The two displays.** In the $2\times2$ model the eigenvalues are $\lambda_+,\lambda_-$, each simple; in the regular model they are $\lambda_+,\lambda_-$, each double. The identity above says that the function of the $4\times4$ matrix is the function of the $2\times2$ matrix applied blockwise:
+$$
+f(L)=I_2\otimes f(B).
+$$
+
+## The Exponential
+
+**The series and the determinant.**
+$$
+\exp X=\sum_{m\ge0}\frac{X^m}{m!},
+\qquad
+\det(\exp X)=\exp(\operatorname{tr}X).
+$$
+In the two displays,
+$$
+\det\exp B=\exp(2Q_t),\qquad
+\det\exp L=\exp(4Q_t)=\bigl(\det\exp B\bigr)^{2},
+$$
+because the regular trace is twice the $2\times2$ trace. The biquaternion norm of the exponential is
+$$
+\langle\exp\tilde Q\rangle_{\natural}=\det\exp B=\exp(2Q_t).
+$$
+
+**The image.** Every exponential is invertible, and every invertible matrix is an exponential. The exponential is neither injective nor a homomorphism, and $0$ is not in the image. The trace-free matrices exponentiate into $SL_2(\mathbb{C})$ in the $2\times2$ model and into the image of the norm-one slice in the regular model.
+
+**The group law.** If $XY=YX$ then
+$$
+\exp(X+Y)=\exp X\exp Y .
+$$
+In general the correction is the Baker–Campbell–Hausdorff series
+$$
+\exp X\exp Y=\exp\Bigl(X+Y+\tfrac12[X,Y]+\tfrac1{12}\bigl([X,[X,Y]]-[Y,[X,Y]]\bigr)+\cdots\Bigr).
+$$
+The exponential is a local isomorphism at the origin and not a global homomorphism; the defect is the Lie bracket.
+
+**The closed form.** Let $B$ be a square root of $Q_x^2+Q_y^2+Q_z^2$. Then
+$$
+\exp L(\tilde Q)=e^{Q_t}\left(\cos B\,\mathrm I_4+\frac{\sin B}{B}\,L(\vec Q)\right),
+$$
+and in the $2\times2$ model the same formula with $\mathrm I_4$ replaced by $\mathrm I_2$ and $L(\vec Q)$ by $B(\vec Q)$. The ratio $\sin B/B$ is read as $1$ at $B=0$. The three regimes are the same in the two displays.
+
+| Regime | Condition | $\exp L(\tilde Q)$ |
+|---|---|---|
+| Oscillatory | $B\neq0$ | $e^{Q_t}\bigl(\cos B\,\mathrm I_4+\frac{\sin B}{B}L(\vec Q)\bigr)$ |
+| Scalar | $B=0$, $\vec Q=0$ | $e^{Q_t}\mathrm I_4$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$ | $e^{Q_t}\bigl(\mathrm I_4+L(\vec Q)\bigr)$ |
+
+**The spectral reading.** The eigenvalues of $L(\tilde Q)$ are $Q_t\pm iB$, each double, and the eigenvalues of the exponential are $e^{Q_t\pm iB}$, each double. The formula is the spectral theorem written with the two rank-two eigenprojections. In the $2\times2$ model the same two values are simple.
+
+## One-Parameter Subgroups
+
+**The exponential lines.** For $X$ in the algebra or in either matrix display,
+$$
+\varphi_X(t)=\exp(tX)
+$$
+is a one-parameter subgroup, because $\exp(sX)\exp(tX)=\exp((s+t)X)$ for the commuting pair.
+
+**The classification.** Every one-parameter subgroup of $GL_2(\mathbb{C})$ is of this form, and the generator is unique for a fixed parametrisation. The subgroup depends only on the real line $\mathbb{R}X$, not on the chosen generator. The four elementary types in the regular display are the phase, the rotor, the boost and the unipotent line, corresponding to the four Jordan types of the element.
+
+**The derivative.**
+$$
+\frac{d}{dt}\exp(tX)=X\exp(tX)=\exp(tX)X,
+$$
+so the differential at the origin is the identity and the exponential is a local diffeomorphism there.
+
+## The Kernel
+
+**The statement.** The kernel of the exponential consists of the diagonalisable matrices whose eigenvalues lie in $2\pi i\mathbb{Z}$. In the $2\times2$ model these are the matrices conjugate to
+$$
+\operatorname{diag}(2\pi i m,2\pi i n),\qquad m,n\in\mathbb{Z},
+$$
+and in the regular model the same diagonal matrices with each entry doubled.
+
+**The properties.** The kernel is a union of conjugacy classes, not a subgroup; it contains zero divisors, and it contains matrices of rank one and rank zero. In the regular image the kernel is the image of the biquaternion kernel, so its elements are $L(\tilde K)$ with $\tilde K$ diagonalisable over $2\pi i\mathbb{Z}$.
+
+## The Logarithm
+
+**The equation.** A logarithm of $X$ is a matrix $Y$ with $\exp Y=X$. A logarithm exists exactly when $X$ is invertible.
+
+**The branches.** In the $2\times2$ model with distinct eigenvalues, the logarithms are
+$$
+Y=C\operatorname{diag}(\log\lambda_++2\pi i m,\ \log\lambda_-+2\pi i n)C^{-1},
+\qquad m,n\in\mathbb{Z},
+$$
+a $\mathbb{Z}^2$-family. At a non-scalar repeated eigenvalue the two integers are tied, and the family is a $\mathbb{Z}$-family. At a scalar the logarithms are the translates of one scalar logarithm by the kernel.
+
+**The regular display.** The eigenvalues are doubled, but the integers are not: the logarithm of $L(\tilde Q)$ is $L$ of the logarithm of $\tilde Q$, and the family is the image of the $2\times2$ family. The ambient $4\times4$ matrix has more logarithms, obtained by choosing the two integers independently on the two copies; these do not lie in the image.
+
+**The principal logarithm.** When the spectrum avoids the closed negative real axis, the principal branch defines
+$$
+\operatorname{Log}X=\frac{1}{2\pi i}\oint_\gamma \log z\,(z\mathrm I-X)^{-1}dz,
+$$
+and it is the local inverse of the exponential at the identity. The identity $\exp\operatorname{Log}X=X$ holds on that domain, and $\operatorname{Log}\exp X=X$ holds when the spectrum of $X$ lies in the strip $\lvert\operatorname{Im}z\rvert<\pi$.
+
+## The Square Root
+
+**The equation.** A square root of $X$ is a matrix $Y$ with $Y^2=X$. A square root commutes with $X$, so the equation is solved in the commutant of $X$.
+
+**The principal root.** For $X$ with spectrum avoiding the negative real axis and not $\{0\}$,
+$$
+X^{1/2}=\frac{X+\sqrt N\,\mathrm I}{\sqrt{\tfrac12\operatorname{Tr}X+2\sqrt N}}
+$$
+in the regular display, where $\sqrt N=\sqrt{\lambda_+}\sqrt{\lambda_-}$ and $\operatorname{Tr}X=2(\lambda_++\lambda_-)$. In the $2\times2$ display the same formula reads
+$$
+B^{1/2}=\frac{B+\sqrt{\det B}\,\mathrm I_2}{\sqrt{\operatorname{Tr}B+2\sqrt{\det B}}}.
+$$
+The regular formula is the $2\times2$ formula with the trace halved, because the regular trace is twice the $2\times2$ trace.
+
+**The classification.** The number of roots depends on the Jordan type and is the same in the two displays for roots in the image.
+
+| Condition | Roots |
+|---|---|
+| distinct eigenvalues, both nonzero | four |
+| distinct eigenvalues, one zero | two |
+| non-scalar, repeated eigenvalue $\lambda\neq0$ | two |
+| nonzero nilpotent, repeated eigenvalue $0$ | none |
+| scalar $\lambda e_t$, $\lambda\neq0$ | two points and a surface |
+| zero | the nilpotent cone |
+
+**The dictionary.** The rows are the four non-scalar Jordan types of the $2\times2$ matrix, with the scalar row split according to whether $\lambda$ vanishes. The eigenvalues are doubled in the regular display, but the count of roots in the image is not, because the root must act identically on the two copies.
+
+**The two problems meet.** Every square root of an invertible matrix is the exponential of half a logarithm,
+$$
+Y=\exp\bigl(\tfrac12\operatorname{Log}X\bigr),
+$$
+and the principal root is the principal branch of that expression. The singular matrices keep square roots without logarithms: a nilpotent has a square root only when it is zero, and a rank-one matrix with a nonzero eigenvalue has a square root with one zero eigenvalue.
+
+## Summary
+
+The functional calculus is the Cauchy integral, and on the regular image it is the biquaternion calculus:
+$$
+f\bigl(L(\tilde Q)\bigr)=L\bigl(f(\tilde Q)\bigr)=I_2\otimes f(B).
+$$
+The exponential is entire, with $\det\exp L=\exp(4Q_t)$ and closed form $e^{Q_t}(\cos B\,\mathrm I_4+(\sin B/B)L(\vec Q))$; its eigenvalues are doubled, and its one-parameter subgroups are the exponential lines. The kernel is the diagonalisable part with eigenvalues in $2\pi i\mathbb{Z}$. The logarithm exists exactly for invertible matrices, its branches form a $\mathbb{Z}^2$-family in the distinct case, and the principal branch is the local inverse at the identity. The square root is solved in the commutant, with the principal root given by the Cayley–Hamilton formula; the number of roots is the same in the two displays for roots in the image, although the ambient $4\times4$ matrix has more.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $f(X)$ | the Cauchy integral $\frac{1}{2\pi i}\oint f(z)(zI-X)^{-1}dz$ |
+| $L(\tilde Q)$ | the regular matrix $I_2\otimes B$ |
+| $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
+| $\exp L(\tilde Q)$ | the regular exponential |
+| $\operatorname{Log}$ | the principal logarithm |
+| $X^{1/2}$ | the principal square root |
+| $2\pi i\mathbb{Z}$ | the kernel eigenvalues |
+| $\mathbb{Z}^2$ | the logarithm branches in the distinct case |
+
+## Further Reading
+
+- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), for the spectral form
+- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html), for the repeated eigenvalue
+- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the determinant identity
+- [Matrix Representations : The Killing Form](matrix-representations-the-killing-form.html), for the Lie bracket
+- [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the full $2\times2$ treatment
+- [$M_4(\mathbb{C})$ Representation : The Functional Calculus](m4c-representation-the-functional-calculus.html), for the full $4\times4$ treatment
+- [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the algebra functions

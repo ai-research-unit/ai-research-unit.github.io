@@ -52,7 +52,7 @@ The dictionary is stated first in its standard form, then in the framework's not
 
 **The standard dictionary.** For a massless Dirac field $\psi$ and a real scalar $\phi$, with a normalisation constant $\alpha$ setting the short-distance cutoff,
 $$
-\boxed{\;\bar\psi\gamma_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon_{\mu\nu}\partial_\nu\phi ,
+\boxed{\;\bar\psi\gamma_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
 \qquad
 \bar\psi\psi \;\longleftrightarrow\; -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big)\;},
 $$
@@ -158,7 +158,7 @@ The framework supplies the factor $2$ as the two Majorana fields into which the 
 
 The fermionic side of the dictionary is built from vertex operators, and their dimensions are the sharpest arithmetic of the equivalence.
 
-**The current algebra.** In the bosonized language the fermion current is $\partial_\mu\phi/\sqrt{\pi}$ (the dictionary above), and its equal-time commutator in $1+1$ dimensions is
+**The current algebra.** In the bosonized language the fermion current is $\partial/\partial Q_\mu\phi/\sqrt{\pi}$ (the dictionary above), and its equal-time commutator in $1+1$ dimensions is
 $$
 \big[j_0(x),j^1(y)\big] = \frac{i}{\pi}\,\frac{d\delta}{dx}(x-y),
 $$
@@ -203,7 +203,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $\bar\psi\gamma_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac1\pi\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $\bar\psi\gamma_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac1\pi\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j_0(x),j^1(y)]=\tfrac{i}{\pi}\frac{d\delta}{dx}(x-y)$; the vertex operators $\psi\sim\,:\!\exp(i\beta\phi)\!:$ with $\Delta=\beta^2/4\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana–Weyl fermion.
@@ -224,7 +224,7 @@ The non-abelian extension is stated and its status fixed.
 
 Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. In the two-dimensional reduction the Clifford data are $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_2$ with $g=\mathrm{diag}(+1,-1)$, $\gamma_5=\gamma_0\gamma_1=\mathrm{diag}(-1,+1)$, and $(\gamma_5)^2=+I_2$, so the chiralities are real; the dictionary is
 $$
-\bar\psi\gamma_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial_\nu\phi ,
+\bar\psi\gamma_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
 \qquad
 \bar\psi\psi\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
 \qquad
