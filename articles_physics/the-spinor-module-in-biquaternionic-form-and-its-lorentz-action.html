@@ -392,22 +392,26 @@ $$
 This form is Hermitian of signature $(1,1)$; it is <strong>not</strong> invariant under all of $SL(2,\mathbb{C})$, and its isometry group inside $SL(2,\mathbb{C})$ is exactly $SU(1,1)$. Unlike the definite form $h$ it selects the non-compact subgroup, and unlike $\varepsilon$ it is Hermitian rather than alternating. The pair $(h,[\,\cdot\,|\,\cdot\,])$ is the pair (definite, indefinite) whose invariance groups are the two real forms $SU(2)$ and $SU(1,1)$ of the same complex group.</p>
 <p><strong>The vector maps.</strong> Let
 $$
-\varsigma=(\sigma_3,\,i\sigma_2,\,-i\sigma_1)=\sigma_3(1,\sigma_1,\sigma_2),
+\varsigma_1=\sigma_3,\qquad \varsigma_2=i\sigma_2,\qquad \varsigma_3=-i\sigma_1,\qquad \varsigma=\sigma_3(1,\sigma_1,\sigma_2),
 $$
-a Hermitian triple satisfying $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$; both this identity and the Hermiticity of $\sigma_3\varsigma^i$ were verified here. The three homogeneous spaces are then modelled on spinors of the module:
+a Hermitian triple satisfying
 $$
-v^i=\langle z|\sigma^i|z\rangle\ \ (S^2),\qquad
-v^i=\tfrac12\,\langle z|\sigma_3\varsigma^i|z\rangle\ \ (H^\pm),\qquad
-v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle\ \ (H^{sl}),
+\varsigma_i\varsigma_j=\eta_{ij}-i\sum_{k,l}\varepsilon_{ijk}\,\eta_{kl}\,\varsigma_l ,
 $$
-where $\langle z|(\,\cdot\,)|z\rangle$ abbreviates $z^{\dagger}(\,\cdot\,)z$. The first is the pure-state correspondence of the Bloch-ball article — one Weyl spinor with the definite pairing gives the sphere, with $|v|^2=1$ — and the second uses one Weyl spinor with the indefinite pairing and gives the two-sheeted time-like hyperboloid $H^\pm\subset\mathbb{R}^{1,2}$. The third uses a <strong>pair</strong> of spinors and gives the one-sheeted hyperboloid $H^{sl}$, and it is here that the Majorana condition enters: a real structure commuting with $SU(1,1)$ takes the place of the complex conjugation of the other two cases. The reason the one-sheeted case takes a pair, in the external interpretation cited below, is that a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign a time-like surface needs.</p>
+with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$. The metric sits in $\eta$, not in the height of the index, so the contraction is written out; both this identity and the Hermiticity of $\sigma_3\varsigma_i$ were verified here. The three homogeneous spaces are then modelled on spinors of the module:
+$$
+v_i=\langle z|\sigma_i|z\rangle\ \ (S^2),\qquad
+v_i=\tfrac12\,\langle z|\sigma_3\varsigma_i|z\rangle\ \ (H^\pm),\qquad
+v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle\ \ (H^{sl}),
+$$
+where $\langle z|(\,\cdot\,)|z\rangle$ abbreviates $z^{\dagger}(\,\cdot\,)z$. The first is the pure-state correspondence of the Bloch-ball article — one Weyl spinor with the definite pairing gives the sphere, with $v_1^2+v_2^2+v_3^2=1$ — and the second uses one Weyl spinor with the indefinite pairing and gives the two-sheeted time-like hyperboloid $H^\pm\subset\mathbb{R}^{1,2}$. The third uses a <strong>pair</strong> of spinors and gives the one-sheeted hyperboloid $H^{sl}$, and it is here that the Majorana condition enters: a real structure commuting with $SU(1,1)$ takes the place of the complex conjugation of the other two cases. The reason the one-sheeted case takes a pair, in the external interpretation cited below, is that a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign a time-like surface needs.</p>
 <p><strong>The closure.</strong> Under the symplectic form
 $$
-\omega=i\,\sigma_3^{ij}\,dz_i\wedge dz_j
+\omega=i\sum_{i,j}(\sigma_3)_{ij}\,dz_i\wedge dz_j
 $$
 on the doubled spinor space $\mathbb{C}^2\oplus\bar{\mathbb{C}}^2$ — the pairing that makes the coordinates of the two factors conjugate to one another, and a different form from the invariant $\varepsilon$ above — the bilinears close into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, displayed in the source as
 $$
-\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l ,
+\{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ijk}\,\eta_{kl}\,v_l ,
 $$
 where the overall sign is the conventional one for $\omega$. This was recomputed here on generic elements: the brackets of the three bilinears reproduce the structure constants, so the map $z\mapsto v(z)$ is a moment-map-like realisation of the Lie algebra on the spinor space, not merely an equivariant map to the vectors. Its use in the spinfoam programme — the area-constrained symplectomorphism to $T^*SU(1,1)$ — is recorded in <em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em>.</p>
 <h2 id="spinor-action-versus-the-hermitian-sandwich">Spinor Action Versus the Hermitian Sandwich</h2>
@@ -606,16 +610,16 @@ $$</p>
 <td>Isometry group of the indefinite pairing; double cover of $SO(1,2)$</td>
 </tr>
 <tr>
-<td>$\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$</td>
-<td>Hermitian triple; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$</td>
+<td>$\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$</td>
+<td>Hermitian triple; $\varsigma_i\varsigma_j=\eta_{ij}-i\sum_{k,l}\varepsilon_{ijk}\eta_{kl}\varsigma_l$</td>
 </tr>
 <tr>
 <td>$S^2$, $H^\pm$, $H^{sl}$</td>
 <td>Sphere and the two hyperboloids modelled on the module</td>
 </tr>
 <tr>
-<td>$\omega=i\sigma_3^{ij}dz_i\wedge dz_j$</td>
-<td>Symplectic form on the doubled spinor space; $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$</td>
+<td>$\omega=i\sum_{i,j}(\sigma_3)_{ij}dz_i\wedge dz_j$</td>
+<td>Symplectic form on the doubled spinor space; $\{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ijk}\eta_{kl}v_l$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>

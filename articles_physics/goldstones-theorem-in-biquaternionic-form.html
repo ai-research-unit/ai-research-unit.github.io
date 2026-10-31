@@ -112,7 +112,7 @@ $$</p>
 <p>Three consequences must be distinguished, because they are often conflated.</p>
 <ul>
 <li><strong>The symmetry is still a symmetry of the dynamics.</strong> The current is conserved, and the generator, where it is defined, commutes with the Hamiltonian; what fails is that the vacuum is not invariant, $U^{\mathrm{fop}}_\alpha|0\rangle\ne|0\rangle$ up to a phase.</li>
-<li><strong>The charge does not annihilate the vacuum.</strong> For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J^0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.</li>
+<li><strong>The charge does not annihilate the vacuum.</strong> For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J_0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.</li>
 <li><strong>The order parameter is central.</strong> This is the framework's structural statement: the field whose modulus is the order parameter is central-valued, so the breaking is a breaking of a symmetry acting on the centre. The Goldstone mode that results is likewise central-valued, and the theorem's content is entirely within the scalar sector.</li>
 </ul>
 <h2 id="the-potential-the-vacuum-manifold-and-the-order-parameter">The Potential, the Vacuum Manifold and the Order Parameter</h2>
@@ -169,7 +169,7 @@ $$</p>
 <p>$$
 \tilde J=i\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
 \qquad
-Ϙ=\int d^3x\,J^0 ,
+Ϙ=\int d^3x\,J_0 ,
 $$</p>
 <p>which in the real components is</p>
 <p>$$
@@ -194,14 +194,14 @@ $$</p>
 \qquad
 f=\sqrt2\,v,
 $$
-so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J^0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.</p>
+so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J_0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.</p>
 <h2 id="the-theorem-and-its-proof">The Theorem and Its Proof</h2>
 <p>Goldstone's theorem states: <strong>if a continuous global symmetry is spontaneously broken, then for each generator of the broken symmetry there is a massless scalar particle.</strong> For the $\mathrm{U}(1)$ of this article there is one generator $Ϙ^{\mathrm{fop}}$ and one Goldstone boson $\theta$. The proof has two standard forms, and both are worth stating because the framework's version uses both.</p>
 <p><strong>The current form.</strong> If the symmetry is broken, the order parameter is nonzero, equivalently the charge does not annihilate the vacuum in the finite-volume sense discussed above, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$, so</p>
 <p>$$
 \langle0|\big[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}(0)\big]|0\rangle\ne0 ,
 $$</p>
-<p>and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J^0$, the current–field commutator cannot vanish identically. Define the matrix element</p>
+<p>and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J_0$, the current–field commutator cannot vanish identically. Define the matrix element</p>
 <p>$$
 F(x-y)=\langle0|\big[\tilde J(x),\phi^{\mathrm{fop}}(y)\big]|0\rangle ,
 $$</p>
