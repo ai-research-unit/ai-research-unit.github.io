@@ -145,10 +145,10 @@ Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not f
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
 $$
-\psi=(\mathsf C_\mu p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\mathsf C_\nu p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
+\psi=(\sum_\mu \mathsf C_\mu p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\sum_\nu \mathsf C_\nu p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
 \qquad p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\quad E_{\vec p}^2=\vec p^2+m^2,
 $$
-with $\mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
+with $\sum_\mu \mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\sum_k \mathsf C_kp_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
@@ -156,10 +156,10 @@ each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both fre
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The identity $\eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\mathsf C_\mu p_{\mu}+m)\chi$,
+- **$C$.** The identity $\eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\sum_\mu \mathsf C_\mu p_{\mu}+m)\chi$,
   $$
-  \eta_C\,w^{*}=i\mathsf C_2((\mathsf C_\mu p_{\mu})^{\ast}+m)\chi^{*}=i(-\mathsf C_\nu p_{\nu}+m)\mathsf C_2\chi^{*}
-  =-i\,(\mathsf C_\rho p_{\rho}-m)\,\mathsf C_2\chi^{*},
+  \eta_C\,w^{*}=i\mathsf C_2((\sum_\mu \mathsf C_\mu p_{\mu})^{\ast}+m)\chi^{*}=i(-\sum_\nu \mathsf C_\nu p_{\nu}+m)\mathsf C_2\chi^{*}
+  =-i\,(\sum_\rho \mathsf C_\rho p_{\rho}-m)\,\mathsf C_2\chi^{*},
   $$
   a negative-frequency amplitude. So $C$ exchanges the two branches; in the mode expansion it exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign. This was checked on the same three cases.
 - **$P$.** The commutator/anticommutator conditions on $\eta_P$ were verified for $\mu=0$ and $k=1,2,3$, and the reflected field was confirmed to solve the equation. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
@@ -325,7 +325,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(\mathbb{D}-m)\psi=0$ |
 | $T_{a,b}=L_aR_b$, $T_{a,b}\psi=a\psi b$ | Two-sided cells; identity $T_{e_t,e_t}$, inverse $T_{a^{-1},b^{-1}}$, product $T_{a,b}T_{c,d}=T_{ac,db}$ |
 | $\mathsf C_\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Generator cells and Clifford metric; $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$, $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}T_{e_t,e_t}$; $\eta=-g$ |
-| $\mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
+| $\sum_\mu \mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\sum_k \mathsf C_kp_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\mathsf C_5=i\omega=-iT_{e_t,e_z}$, $\omega=\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-T_{e_t,e_z}$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=\mathsf C_5$ |
 | $P_{L,R}=\tfrac12(T_{e_t,e_t}\mp\mathsf C_5)$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |

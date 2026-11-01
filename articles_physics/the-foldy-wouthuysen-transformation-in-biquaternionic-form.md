@@ -14,7 +14,7 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\mathsf C_\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\mathsf C_0$, and set $\alpha_k = \mathsf C_0\mathsf C_k = L_{\vec e_k}R_{\vec e_z}$, $\beta = \mathsf C_0$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\sum_\mu \mathsf C_\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\mathsf C_0$, and set $\alpha_k = \mathsf C_0\mathsf C_k = L_{\vec e_k}R_{\vec e_z}$, $\beta = \mathsf C_0$. The result is
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad

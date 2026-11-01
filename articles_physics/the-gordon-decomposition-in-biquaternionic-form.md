@@ -49,7 +49,7 @@ so that $\Sigma_{\mu\nu}$ is antisymmetric, $\Sigma_{\mu\nu} = -\Sigma_{\nu\mu}$
 The proof uses the two Dirac equations. From the equation, $m\psi = i\sum_\nu\varepsilon_\nu\,\mathsf C_\nu\nabla_\nu\psi$, so
 
 $$
-\bar\psi \mathsf C_\mu(m\psi) = i\,\bar\psi \mathsf C_\mu \mathsf C_\nu\nabla_\nu\psi .
+\bar\psi \mathsf C_\mu(m\psi) = i\,\bar\psi \mathsf C_\mu \sum_\nu \mathsf C_\nu\nabla_\nu\psi .
 $$
 
 From the adjoint of the equation, $m\bar\psi = -i\left(\nabla_\nu\bar\psi\right)\mathsf C_\nu$ (the sign is the one that makes the adjoint equation consistent with the stated conventions), so
@@ -62,7 +62,7 @@ Adding the two relations eliminates the mass on the left and gives
 
 $$
 2m\,\bar\psi \mathsf C_\mu\psi
-= i\left(\bar\psi \mathsf C_\mu \mathsf C_\nu\nabla_\nu\psi
+= i\left(\bar\psi \mathsf C_\mu \sum_\nu \mathsf C_\nu\nabla_\nu\psi
 - \left(\nabla_\nu\bar\psi\right)\mathsf C_\nu \mathsf C_\mu\psi\right).
 $$
 

@@ -189,7 +189,7 @@ The counting is the sharpest difference between the Majorana and Dirac equations
 $$
 \psi(x)\;=\;u\,\exp(-ip\cdot x)\;+\;u^{c}\,\exp(+ip\cdot x),
 \qquad
-(\mathsf C_\mu p_\mu-m)u=0 ,
+(\sum_\mu \mathsf C_\mu p_\mu-m)u=0 ,
 $$
 
 which satisfies $\psi^{c}=\psi$ and the Dirac equation when $u$ does. This is the standard construction, and it is the resolution of the apparent conflict between "the Majorana spinor is its own conjugate" and "a plane wave is not its own conjugate": the condition is on the field, and the field pairs each positive-frequency mode with the negative-frequency conjugate of the same mode.

@@ -113,8 +113,8 @@ $$
 $$
 
 $$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\mathsf C_\mu p_\mu+m,\qquad
-\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\mathsf C_\nu p_\nu-m .
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\sum_\mu \mathsf C_\mu p_\mu+m,\qquad
+\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\sum_\nu \mathsf C_\nu p_\nu-m .
 $$
 
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
@@ -179,8 +179,8 @@ $$
 where $\vec\Delta=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y$. The two phases are **opposite**: the positive-frequency term carries $\exp(+i\vec p\cdot\vec\Delta)$ and the negative-frequency term $\exp(-i\vec p\cdot\vec\Delta)$. From the spin sums one obtains the two useful combinations
 
 $$
-\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,\qquad
-\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,
+\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\mathsf C_0+\mathsf C_0\sum_k \mathsf C_kp_k,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\mathsf C_0+\mathsf C_0\sum_k \mathsf C_kp_k,
 $$
 
 so that, with $\theta=\vec p\cdot\vec\Delta$,
@@ -188,7 +188,7 @@ so that, with $\theta=\vec p\cdot\vec\Delta$,
 $$
 \sum_r\Big[w^{(r)}w^{(r){}^{*}}\exp(+i\theta)+v^{(r)}v^{(r){}^{*}}\exp(-i\theta)\Big]
 =E_{\vec p}\cos\theta\,I_4\cdot 2
-+2\cos\theta\,\mathsf C_0\mathsf C_kp_k
++2\cos\theta\,\mathsf C_0\sum_k \mathsf C_kp_k
 +2im\sin\theta\,\mathsf C_0 .
 $$
 
@@ -411,7 +411,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p_\mu=(E_{\vec p},\vec p)$, $\mathsf C_\mu p_\mu=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ | Four-momentum and its contraction |
+| $p_\mu=(E_{\vec p},\vec p)$, $\sum_\mu \mathsf C_\mu p_\mu=\mathsf C_0E_{\vec p}-\sum_k \mathsf C_kp_k$ | Four-momentum and its contraction |
 | $\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$ | Biquaternionic mass-shell condition |
 | $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |

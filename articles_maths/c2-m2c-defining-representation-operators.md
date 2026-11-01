@@ -104,7 +104,7 @@ and the parametrisation is injective in each slot once the other is fixed.
 $$
 \{[M]:\det M=0\}=\mathbb{P}^{1}\times\mathbb{P}^{1}\subset\mathbb{P}^{3},
 $$
-of complex dimension three, ruled in the two families of §*The Bilinear Cone and the Segre Quadric* of the first article. **It is a quadric of rank four and not a cone over a plane**: its two rulings are the images of the two factors.
+of complex dimension three, ruled in the two families of §*The Bilinear Cone and the Segre Quadric* of *$M_2(\mathbb{C})$ Defining Representation*. **It is a quadric of rank four and not a cone over a plane**: its two rulings are the images of the two factors.
 
 **The cone is homogeneous.** Every statement above is invariant under $\lambda\mapsto\lambda M$, so $\lambda\mathcal{C}=\mathcal{C}$ and the projectivisation carries the whole content. **There is no affine statement about the family that is not a statement about its projectivisation together with the origin.**
 

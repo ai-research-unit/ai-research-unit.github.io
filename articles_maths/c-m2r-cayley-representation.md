@@ -285,7 +285,7 @@ and the two factors are the modulus and the unit of the algebra. So the polar de
 **The reflections.** The transpose realises the involution, so the anti-linear maps of the plane are the matrices $\mathsf{M}_2(Q)E$ with $E=\operatorname{diag}(1,-1)$,
 
 $$
-\mathsf{M}_2(u)E=\begin{pmatrix}\cos2\alpha&\sin2\alpha\\ \sin2\alpha&-\cos2\alpha\end{pmatrix},\qquad u=e^{i\alpha},
+\mathsf{M}_2(u)E=\begin{pmatrix}\cos2\alpha&\sin2\alpha\\ \sin2\alpha&-\cos2\alpha\end{pmatrix},\qquad u=e^{2i\alpha},
 $$
 
 of determinant $-1$, trace $0$ and eigenvalues $\pm1$: these are the reflections, and the orthogonal group of the plane is $O(2)=\mathsf{M}_2(\mathrm{U}(1))\cup\mathsf{M}_2(\mathrm{U}(1))E$. The reflections are therefore **not** in the image, and the reason is the determinant: an anti-linear map has negative determinant, and the image has positive determinant everywhere except at the origin. This is the first appearance of the complement of the image, and it is the complement that the operators article identifies as the unreachable half of the ambient.

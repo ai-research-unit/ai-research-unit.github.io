@@ -367,7 +367,7 @@ N1 is right, and this equation is the arrow's best case: the display is a sum of
 *Thomson and Compton Scattering*, the mass-shell cell built on the frame cells as *Anomalies and Anomaly Cancellation* defines them:
 
 $$
-D(p)=\mathsf C_\mu p_\mu+m\,T_{e_t,e_t},
+D(p)=\sum_\mu\mathsf C_\mu p_\mu+m\,T_{e_t,e_t},
 \qquad
 \mathsf C_0=iT_{e_t,e_x},\quad \mathsf C_k=iT_{e_k,e_y}.
 $$
@@ -380,9 +380,9 @@ $$
 | N3 | impossible | The right factor is an element, not a derivation |
 | N4 | impossible | Same reason |
 | N5 | impossible | A two-sided product is not a matrix times a column |
-| Cells | $\mathsf C_\mu p_\mu+mT_{e_t,e_t}$ | The only form that exists |
+| Cells | $\sum_\mu\mathsf C_\mu p_\mu+mT_{e_t,e_t}$ | The only form that exists |
 
-**A summation sign is missing, and the omission is the corpus's.** The printed form repeats $\mu$ and does not sum it: $\mathsf C_\mu p_\mu$ is one cell against one component, and the object is a sum of four. *Operator and Calculus Conventions*, §*The Gradient*, states the rule without qualification — "an index that appears twice is summed only where a $\sum$ names it" — and applies it to the gradient, which is spelled $\tilde\nabla=\sum_{\mu}e_\mu\partial/\partial Q_\mu$ and never $\vec e_k\partial/\partial Q_k$. So the written form of the mass-shell cell is
+**A summation sign was missing, and the omission was the corpus's.** The printed form repeated $\mu$ and did not sum it: $\mathsf C_\mu p_\mu$ is one cell against one component, and the object is a sum of four. *Operator and Calculus Conventions*, §*The Gradient*, states the rule without qualification — "an index that appears twice is summed only where a $\sum$ names it" — and applies it to the gradient, which is spelled $\tilde\nabla=\sum_{\mu}e_\mu\partial/\partial Q_\mu$ and never $\vec e_k\partial/\partial Q_k$. The pass counted the breaches and repaired them: one hundred and sixty-three sites in twenty-two articles, one $\sum$ before the cell at each. The largest family is $\mathsf C_\mu p_\mu$, sixty-three sites in twelve articles; the spatial $\mathsf C_k p_k$ follows with twenty-four in five; the derivative contractions, $\mathsf C_\mu D_\mu$, $\mathsf C_\mu\partial/\partial x_\mu$, $\mathsf C_\mu\partial/\partial Q_\mu$ and the two mixed forms, account for about a fifth of the total; the rest are single figures down to $\gamma_\mu p_\mu$ and $p_\mu p_\mu$. The index is not always $\mu$: sixteen of the sites carry $\nu$ and five carry $\rho$, so the omission was a habit of the hand and not of one letter. The doubled cell $\mathsf C_\mu\mathsf C_\mu$ was already summed in all three places it appears, so the corpus's habit was to sum where both indices are cells and to drop the sum everywhere else. The written form of the mass-shell cell is now
 
 $$
 D(p)=\sum_{\mu\in\{t,x,y,z\}}\mathsf C_\mu p_\mu+m\,T_{e_t,e_t},
@@ -393,14 +393,14 @@ and it is this form that carries the two facts below.
 **The sum is what makes the cell a shell.** With it, the Clifford relation gives one identity and no approximation:
 
 $$
-D^2-2mD=\bigl(p_\mu p_\mu-m^2\bigr)T_{e_t,e_t},
+D^2-2mD=\Bigl(\sum_\mu p_\mu p_\mu-m^2\Bigr)T_{e_t,e_t},
 $$
 
-residual $2.2\times10^{-16}$ at $m=1.3$ and $p=(1.7748,0.4,-0.7,0.9)$, where $p_\mu p_\mu=(p_t)^2-\lvert\vec p\rvert^2$. So $D$ is a shell cell exactly when the four-momentum is on shell, and the mass enters through the identity cell $T_{e_t,e_t}$, which is why it is written as a cell and not as the number $m$. Without the sum there is no identity at all, because a single term has nothing to square against.
+residual $2.2\times10^{-16}$ at $m=1.3$ and $p=(1.7748,0.4,-0.7,0.9)$, where $\sum_\mu p_\mu p_\mu=(p_t)^2-\lvert\vec p\rvert^2$. So $D$ is a shell cell exactly when the four-momentum is on shell, and the mass enters through the identity cell $T_{e_t,e_t}$, which is why it is written as a cell and not as the number $m$. Without the sum there is no identity at all, because a single term has nothing to square against.
 
-**The corpus's practice is mixed, and no article states it.** Counted over the physics and the mathematics articles, the momentum contraction $\mathsf C_\mu p_\mu$ is written without a sum twenty-nine times in eight articles, and with a sum twice, in one article, the Gordon decomposition, where the sum carries a weight $\varepsilon_\mu$ and is therefore a different object. The spin contraction $\mathsf C_\mu s_\mu$ is unsummed four times in one article and summed never. The derivative contraction $\mathsf C_\mu\partial/\partial Q_\mu$ splits evenly: five unsummed across four articles, five summed in one. The doubled cell $\mathsf C_\mu\mathsf C_\mu$ is summed in all three places it appears. So the sum arrives where both indices are cells, arrives half the time where one index is a derivative, and is dropped where one index is a component. The sentence in the conventions is general, and the practice keeps it only in the first case.
+**What the practice was, and what it is.** Before the repair the sum arrived where both indices are cells, arrived half the time where one index was a derivative — five unsummed against five summed for $\mathsf C_\mu\partial/\partial Q_\mu$ — and was dropped where one index was a component: sixty-three sites for $\mathsf C_\mu p_\mu$ against none summed, four for $\mathsf C_\mu s_\mu$, four for $\mathsf C_\mu k_\mu$, twenty-four for the spatial $\mathsf C_k p_k$. No article stated the habit and no article needed it: every one of the one hundred and sixty-three expressions means a sum, which is why the repair changes no physics. The sentence in the conventions is general, and the corpus now keeps it in all three cases. One place keeps the unsummed form on purpose, and it is a statement about the form rather than an instance of it: the operator conventions print $\vec e_k\partial/\partial Q_k$ in the sentence that declares it unused.
 
-**This note writes the sum wherever it uses the expression**, because the identity below is stated with it, and it leaves the corpus's habit alone: the repair belongs in the conventions and is the author's to make.
+**This note writes the sum wherever it uses the expression**, and the corpus now does the same, so the note and the corpus agree. The repair was mechanical — one mark per site, no equation reordered — and it leaves every stated result where it was.
 
 **The mass term is outside the question.** It carries no index, so no sum can be missing from it, and it is written $m\,T_{e_t,e_t}$ rather than $m$ for a reason of its own: a length-zero cell is the identity, and writing it as a cell says that the mass enters on neither side. That is the fact the next paragraph uses.
 $$
@@ -740,7 +740,7 @@ Six failures are easy to produce, and each has been produced during the writing 
 - **The double-arrow convention.** The corpus does not use the double arrow anywhere. If it ever does, the factor of $\tfrac12$ has to be fixed, because the literature is not unanimous.
 - **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. This note settles the case it can settle: the mark is allowed on any object that acts, and it is kept off names, so the algebra decoration takes a prescript. What remains open is the corpus-wide change, which belongs in the operator conventions.
 - **The corpus has no settled name for the natural map.** It marks the value, $X^{\natural}$, and names the operator $X\mapsto X^{\natural}$ only by writing the same glyph bare in nine places. *Naming the Map* supplies one, $\operatorname{nat}$, and a sentence in *Product and Form Conventions* beside the $\bar{\cdot}$ row would make it official. The same sentence would fix the placeholder form $(\cdot)^{\natural}$.
-- **The summation sign, and the three contractions.** *Operator and Calculus Conventions* says a repeated index is summed only where a $\sum$ names it, and the corpus keeps that for a cell on a cell, half keeps it for a cell on a derivative, and does not keep it for a cell on a component. Twenty-nine unsummed momentum contractions against two summed is not a slip of the pen, it is the Einstein habit, and the nine articles that print $\mathsf C_\mu p_\mu$ or $\mathsf C_\mu s_\mu$ read the same either way. The repair is one sentence with three cases in it, and it changes no physics: the identity $D^2-2mD=(p_\mu p_\mu-m^2)T_{e_t,e_t}$ is the same statement whether the sum is printed or read.
+- **The summation sign, repaired.** *Operator and Calculus Conventions* says a repeated index is summed only where a $\sum$ names it, and the corpus kept that for a cell on a cell while breaking it for a cell on a derivative and for a cell on a component. One hundred and sixty-three breaches in twenty-two articles is not a slip of the pen, it is the Einstein habit, and the articles read the same either way, which is why the repair is a mechanical one: one $\sum$ before the cell at each site, no equation rewritten, no result touched. The identity $D^2-2mD=(\sum_\mu p_\mu p_\mu-m^2)T_{e_t,e_t}$ is the same statement whether the sum is printed or read. The convention needed no new sentence, only to be applied; the unsummed form survives in one place, the sentence that declares it unused.
 - **Which side is the matter representation.** The minimal coupling article records the left and the right construction as two covariant mirrors and calls the choice open. The notation question is downstream of that choice and cannot settle it: a corpus that had chosen the right action would write N1 everywhere and the cells would change roles. Until the choice is made, the arrow is the only mark that keeps both forms printable without rewriting the other.
 
 ## Summary
@@ -780,7 +780,7 @@ The right action is written in the corpus in one way out of six, and the corpus 
 | $\psi\overleftarrow{b}$, $\psi\overleftarrow{\partial}$ | The element, or the derivative, acting on what precedes it |
 | $\overrightarrow{b}\psi$, $\overrightarrow{\partial}\psi$ | The element, or the derivative, acting on what follows it |
 | $\overrightarrow{\tilde\nabla}$ | The biquaternionic gradient acting on what follows it: the arrow goes above the tilde, which is part of the name |
-| $\sum_\mu\mathsf C_\mu p_\mu$ | A repeated index, summed in writing: this note prints the sum where the corpus drops it |
+| $\sum_\mu\mathsf C_\mu p_\mu$ | A repeated index, summed in writing: the corpus printed it without the sum until this pass |
 | $\vec\nabla$ | The spatial three-component gradient, which is not the operator above |
 | $M^{\mathsf T}$ | The plain transpose of the array |
 | $\mathsf S$ | The Peirce exchange; the matrix that carries the transpose in the canonical frame |

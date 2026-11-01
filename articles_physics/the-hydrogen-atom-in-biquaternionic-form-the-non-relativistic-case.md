@@ -23,7 +23,7 @@ The title covers the non-relativistic case only. The relativistic case begins fr
 The momentum operator of the framework is
 
 $$
-\tilde p = -i\hbar\nabla = \vec e_k p_k, \qquad \nabla = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z, \qquad p_k = -i\hbar\partial/\partial Q_k .
+\tilde p = -i\hbar\nabla = \sum_k \vec e_k p_k, \qquad \nabla = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z, \qquad p_k = -i\hbar\partial/\partial Q_k .
 $$
 
 Since $\tilde p$ has a purely imaginary vector part, it is Hermitian and lies in $\mathbb{M}_+$: it is an observable, not a generator. It is the same element that the companion articles use to build the orbital angular momentum, $\vec r\tilde p\in\mathbb{B}$ for the material-sector position $\vec r\in\mathbb{H}_{\mathbb{B}}$.
@@ -317,7 +317,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; $\vec r=x\vec e_x+y\vec e_y+z\vec e_z$ the material position |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, $\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i\vec e_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $\tilde p=-i\hbar\nabla=\vec e_k p_k$, $p_k=-i\hbar\partial/\partial Q_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
+| $\tilde p=-i\hbar\nabla=\sum_k \vec e_k p_k$, $p_k=-i\hbar\partial/\partial Q_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
 | $H=h_te_t$, $h_t=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |

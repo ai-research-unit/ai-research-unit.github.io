@@ -445,7 +445,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\mathbb{M}_+$ | Hermitian (informational) sector; observables and the kinetic term |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; generator and current |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | State module, $\tilde\Pi = \tfrac12(e_t + i\vec u)$ |
-| $\tilde p = -i\hbar\nabla = \vec e_k p_k$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{M}_+$ |
+| $\tilde p = -i\hbar\nabla = \sum_k \vec e_k p_k$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{M}_+$ |
 | $p_k = -i\hbar\partial/\partial Q_k$ | Momentum component |
 | $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $H = p^{2} e_t/2m$ | Free Hamiltonian; central |

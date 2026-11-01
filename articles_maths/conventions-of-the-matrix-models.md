@@ -259,14 +259,14 @@ Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The fr
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is $i\mathsf C_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
+A derivative contraction is $i\sum_\mu \mathsf C_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
 in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\mathsf C_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\mathsf C_0(Q)=\mathsf C_0(x)$ and $\mathsf C_k(Q)=i\mathsf C_k(x)$,
-and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\mathsf C_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame.
+If the $\mathbb{B}$ frame is used, it is written $\sum_\mu \mathsf C_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\mathsf C_0(Q)=\mathsf C_0(x)$ and $\mathsf C_k(Q)=i\mathsf C_k(x)$,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu \mathsf C_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\mathsf C_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+\sum_\mu \mathsf C_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
 $$
 so the frame is visible in the formula.
 
@@ -365,6 +365,6 @@ Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; th
 
 **The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$ of the body.
 
-**The contractions.** In gamma notation a momentum contraction is $\gamma_\mu p_\mu=i(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$, a derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

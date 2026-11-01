@@ -249,7 +249,7 @@ $$
 \mathsf{M}_2(\tilde q)=\bigl(q_t-i\lVert\vec v\rVert\bigr)P_++\bigl(q_t+i\lVert\vec v\rVert\bigr)P_- .
 $$
 
-**Proof.** $iu$ has square $(iu)^{2}=i^{2}u^{2}=(-1)(-e_t)=e_t$, so $\tfrac12(e_t\pm iu)$ is idempotent in the complexified algebra and the two are complementary and orthogonal; the map $\mathsf{M}_2$ extends to the complexification and preserves the identities. The Hermitian property is $\mathsf{M}_2(u)^{*}=\mathsf{M}_2(u^{*})=-\mathsf{M}_2(u)$, since $u$ is pure and of unit norm, so $i\mathsf{M}_2(u)$ is Hermitian. Finally $\mathsf{M}_2(u)=P_+-P_-$ because $i\mathsf{M}_2(u)=P_+-P_-$, and $I_2=P_++P_-$, whence the spectral formula.
+**Proof.** $iu$ has square $(iu)^{2}=i^{2}u^{2}=(-1)(-e_t)=e_t$, so $\tfrac12(e_t\pm iu)$ is idempotent in the complexified algebra and the two are complementary and orthogonal; the map $\mathsf{M}_2$ extends to the complexification and preserves the identities. The Hermitian property is $\mathsf{M}_2(u)^{*}=\mathsf{M}_2(u^{*})=-\mathsf{M}_2(u)$, since $u$ is pure and of unit norm, so $i\mathsf{M}_2(u)$ is Hermitian. Finally $i\mathsf{M}_2(u)=P_+-P_-$, so $\mathsf{M}_2(u)=-i(P_+-P_-)$, and with $I_2=P_++P_-$ the spectral formula follows.
 
 **The reading.** The projectors are rank one, of trace one and determinant zero, and they are **orthogonal** projections, which the split-quaternion projectors were not: there the trace form was indefinite and the two eigenlines were not orthogonal. The spectral theorem applies to the whole image, and the eigenvalues are exactly the two numbers $q_t\mp i\lVert\vec v\rVert$.
 

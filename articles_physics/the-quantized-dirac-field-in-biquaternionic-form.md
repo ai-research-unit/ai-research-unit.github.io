@@ -277,8 +277,8 @@ a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0
 **The biquaternion form.** Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is
 
 $$
-S_F(p)=\frac{i(\mathsf C_\mu p_\mu+m)}{p^2-m^2+i\epsilon}
-=-\frac{i(\mathsf C_\nu p_\nu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
+S_F(p)=\frac{i(\sum_\mu \mathsf C_\mu p_\mu+m)}{p^2-m^2+i\epsilon}
+=-\frac{i(\sum_\nu \mathsf C_\nu p_\nu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
 $$
 
 The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
@@ -320,7 +320,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\mathsf C_\mu p_\mu+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\sum_\mu \mathsf C_\mu p_\mu+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -351,7 +351,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\vec\Delta)=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
-| $S_F(p)=-\frac{i(\mathsf C_\mu p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
+| $S_F(p)=-\frac{i(\sum_\mu \mathsf C_\mu p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
 | $\tilde P=iE\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion and mass shell |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form |
 

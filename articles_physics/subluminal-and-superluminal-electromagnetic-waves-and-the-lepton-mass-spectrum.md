@@ -189,7 +189,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $L_a$, $R_b$ | Left and right multiplication of a spinor, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
 | $\omega=\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=R_{-\vec e_z}$ | Volume element, the pseudoscalar; $\omega^2=-1$; the source's "$i$", which the corpus identifies with its central imaginary unit |
 | $\mathsf C_2\mathsf C_1=-\vec e_z$ | Fixed spin-plane bivector, multiplying the spinor on the right |
-| $\partial=\mathsf C_\mu\partial/\partial x_\mu$ | Dirac operator, a cell acting on the spinor; $\delta$ the coderivative, $d$ the exterior derivative |
+| $\partial=\sum_\mu \mathsf C_\mu\partial/\partial x_\mu$ | Dirac operator, a cell acting on the spinor; $\delta$ the coderivative, $d$ the exterior derivative |
 | $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |

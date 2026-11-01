@@ -15,7 +15,7 @@ The article is organised as follows. The next section sets up the naive discreti
 The biquaternion field is Lorentzian. In the $x$ coordinates $x_0=ct'$, $x_k$, the frame is carried by the cells $T_{a,b}=L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $T_{a,b}\psi=a\psi b$ and $T_{a,b}T_{c,d}=T_{ac,db}$, the identity being $T_{e_t,e_t}$; the generators are $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ and $\mathsf C_5=-iT_{e_t,e_z}$. The free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\mathsf C_\mu\partial/\partial x_\mu - m\right)\psi(x),
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\sum_\mu \mathsf C_\mu\partial/\partial x_\mu - m\right)\psi(x),
 \qquad
 \{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}T_{e_t,e_t},\quad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
@@ -64,7 +64,7 @@ $$
 \sinh\omega(\vec p) = \sqrt{m^2 + \sum_{j=1}^3\sin^2 p_j},
 $$
 
-whose minima sit at the zeros of the spatial sine — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless inverse propagator is proportional to $\mathsf C_\mu(Q)p_\mu$, an **odd** function of $p$; an inverse propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
+whose minima sit at the zeros of the spatial sine — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless inverse propagator is proportional to $\sum_\mu \mathsf C_\mu(Q)p_\mu$, an **odd** function of $p$; an inverse propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
 
 ### The taste-exchange symmetry
 

@@ -18,7 +18,7 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $i\mathsf C_\mu\partial/\partial Q_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\mathsf C_\mu$ mutually anticommute with $(\mathsf C_0)^2=+1$ and $(\mathsf C_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $i\sum_\mu \mathsf C_\mu\partial/\partial Q_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $\mathsf C_\mu$ mutually anticommute with $(\mathsf C_0)^2=+1$ and $(\mathsf C_k)^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 - **The mass term is constrained.** The condition $\{B,\mathsf C_\mu\}=0$ forces $B=c\mathsf C_5$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
@@ -97,7 +97,7 @@ $$
 
 Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $(\mathsf C_k)^2=-I$, rather than by a raised label. On the plane wave the root $i\mathsf C_\mu\partial/\partial Q_\mu$ has symbol $\mathsf C_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\mathsf C_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $(\mathsf C_k)^2=-I$, rather than by a raised label. On the plane wave the root $i\sum_\mu \mathsf C_\mu\partial/\partial Q_\mu$ has symbol $\sum_\mu \mathsf C_\mu k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\sum_\mu \mathsf C_\mu k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
@@ -408,7 +408,7 @@ The identities were recomputed before they were written. The cell frame was buil
 | Anticommutant of all four generators is one-dimensional | rank $15$, nullity $1$ |
 | $\mathsf D_{\mathrm{ps},+}^2-(\Box-\mu^2)I$ on $100$ random $K$ | $2.4\times10^{-15}$ |
 | $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}-(\Box-\mu^2)I$ on $100$ random $K$ | $3.6\times10^{-15}$ |
-| $\left(\mathsf C_\mu k_\mu\right)^2-g_{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
+| $\left(\sum_\mu \mathsf C_\mu k_\mu\right)^2-g_{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
 | $\det\mathsf D_{\mathrm{ps},\pm}-(\Box-\mu^2)^2$ on $100$ random $K$ | $2.3\times10^{-13}$ |
 | Frame squares $(+1,-1,-1,-1)$ and anticommutators | $0$ (exact) |
 
@@ -442,8 +442,8 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
 | $\mathsf C_\mu$ | Generators of the root, $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I$ |
 | $\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$ | Pseudoscalar generator, $-iT_{e_t,e_z}=\rho(\chi)$ |
-| $\mathsf D=i\mathsf C_\mu\partial/\partial x_\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
-| $\mathsf C_\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
+| $\mathsf D=i\sum_\mu \mathsf C_\mu\partial/\partial x_\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
+| $\sum_\mu \mathsf C_\mu k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
 | $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\mathsf C_5$ | Single-square roots |
 | $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
 | $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |
@@ -491,4 +491,4 @@ $$
 $$
 with $B=c\gamma_5$ the only single-square mass and $c=\pm i\mu$.
 
-The numerical checks of §*Verification* are stated in the same symbols: $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I$, $\gamma_5^2-I$, $\{\gamma_5,\gamma_\mu\}$, $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ and $(\gamma_\mu k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I$.
+The numerical checks of §*Verification* are stated in the same symbols: $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I$, $\gamma_5^2-I$, $\{\gamma_5,\gamma_\mu\}$, $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ and $(\sum_\mu \gamma_\mu k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I$.

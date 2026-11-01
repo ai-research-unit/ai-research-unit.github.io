@@ -18,17 +18,17 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with the generator cells $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ for $k=1,2,3$, where $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$, so $T_{a,b}\psi=a\psi b$ and $T_{e_t,e_t}$ is the identity of the algebra; the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\mathsf C_\mu p_{\mu}=\mathsf C_0E-\sum_k \mathsf C_kp_k$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, fixes the frame cells and the reading $e_t\mapsto T_{e_t,e_t}$, $\vec e_x\mapsto T_{e_x,e_t}$, $\vec e_y\mapsto T_{e_y,e_t}$, $\vec e_z\mapsto T_{e_z,e_t}$, $i\mapsto-\omega=T_{e_t,e_z}$, hence $i\vec e_\mu\mapsto T_{e_\mu,e_z}$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
+with the generator cells $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ for $k=1,2,3$, where $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$, so $T_{a,b}\psi=a\psi b$ and $T_{e_t,e_t}$ is the identity of the algebra; the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\sum_\mu \mathsf C_\mu p_{\mu}=\mathsf C_0E-\sum_k \mathsf C_kp_k$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, fixes the frame cells and the reading $e_t\mapsto T_{e_t,e_t}$, $\vec e_x\mapsto T_{e_x,e_t}$, $\vec e_y\mapsto T_{e_y,e_t}$, $\vec e_z\mapsto T_{e_z,e_t}$, $i\mapsto-\omega=T_{e_t,e_z}$, hence $i\vec e_\mu\mapsto T_{e_\mu,e_z}$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
-S_F(p)=\frac{i(\mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})}{p^2-m^2+i\epsilon}=-\frac{i(\mathsf C_\nu p_{\nu}+m\,T_{e_t,e_t})}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
+S_F(p)=\frac{i(\sum_\mu \mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})}{p^2-m^2+i\epsilon}=-\frac{i(\sum_\nu \mathsf C_\nu p_{\nu}+m\,T_{e_t,e_t})}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
 $$
 
 The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form; a cell has the trace $\mathrm{tr}\,T_{a,b}=4\,\mathrm{Sc}(a)\mathrm{Sc}(b)$, four times the product of scalar parts. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
 
 ## The Vertex Function and the Form Factors
 
-**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma_\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\mathsf C_\mu p_\mu u=mu$, $\bar w_2 \mathsf C_\mu (p_{2})_{\mu}=m\bar w_2$, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:
+**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma_\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\sum_\mu \mathsf C_\mu p_\mu u=mu$, $\bar w_2 \sum_\mu \mathsf C_\mu (p_{2})_{\mu}=m\bar w_2$, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:
 
 $$
 \Gamma_\mu(p_2,p)=\mathsf C_\mu F_1(k^2)+\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}F_2(k^2) ,
@@ -62,7 +62,7 @@ $$
 =\bar w(p_2)\left[\frac{(p+p_2)_\mu}{2m}+\frac{i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu}{2m}\right]w(p) .
 $$
 
-The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w_2 \mathsf C_\mu w=\bar w_2(\mathsf C_\nu (p_{2})_{\nu}\mathsf C_\mu+\mathsf C_\mu \mathsf C_\rho p_{\rho})w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.
+The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\sum_\mu \mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w_2 \mathsf C_\mu w=\bar w_2(\sum_\nu \mathsf C_\nu (p_{2})_{\nu}\mathsf C_\mu+\mathsf C_\mu \sum_\rho \mathsf C_\rho p_{\rho})w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.
 
 ## The Biquaternion Transcription
 
@@ -228,14 +228,14 @@ All numerics are exact matrix arithmetic in plain Python, in the frame cells fix
 | Generator Hermiticity | $(S_{\mu\rho})^\dagger=S_{\mu\rho}$, $(S_{0k})^\dagger=-S_{0k}$, and $\sigma_{12}=2S_{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$ |
 | Sectors | $\vec e_\mu$ anti-Hermitian ($\mathbb{M}_-$), $i\vec e_\mu$ Hermitian ($\mathbb{M}_+$); rotation-type generators Hermitian at the $i\vec e_\mu$ level, boost-type anti-Hermitian at the $\vec e_\mu$ level |
 | Gordon identity | $\bar w_2 \mathsf C_\mu w=\bar w_2[(p+p_2)_\mu+i\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$ |
-| Parent identity | $2m\bar w_2 \mathsf C_\mu w=\bar w_2(\mathsf C_\nu (p_{2})_{\nu}\mathsf C_\mu+\mathsf C_\mu \mathsf C_\rho p_{\rho})w$: max deviation $4.4\times10^{-15}$ |
-| On-shell conditions | $(\mathsf C_\mu p_{\mu}-m\,T_{e_t,e_t})w=0$, $\bar w_2(\mathsf C_\mu (p_{2})_{\mu}-m\,T_{e_t,e_t})=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
+| Parent identity | $2m\bar w_2 \mathsf C_\mu w=\bar w_2(\sum_\nu \mathsf C_\nu (p_{2})_{\nu}\mathsf C_\mu+\mathsf C_\mu \sum_\rho \mathsf C_\rho p_{\rho})w$: max deviation $4.4\times10^{-15}$ |
+| On-shell conditions | $(\sum_\mu \mathsf C_\mu p_{\mu}-m\,T_{e_t,e_t})w=0$, $\bar w_2(\sum_\mu \mathsf C_\mu (p_{2})_{\mu}-m\,T_{e_t,e_t})=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
 | $k^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
 | Leading anomaly | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ for $\alpha=1/137.035999084$ |
 | Two-loop coefficient | $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ |
 | Two-loop anomaly | $a_e=1.1596374278\times10^{-3}$ |
 
-The on-shell spinors were built as $w=(\mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p_2$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
+The on-shell spinors were built as $w=(\sum_\mu \mathsf C_\mu p_{\mu}+m\,T_{e_t,e_t})\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p_2$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
 
 ## What Is Standard and What the Algebra's
 
