@@ -223,4 +223,4 @@ A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.
 - [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the complement and the general corner rule.
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix form of the cut.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix form of the cut.

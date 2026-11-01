@@ -113,4 +113,4 @@ The four types of the split — scalar, semisimple, Jordan, nilpotent — are th
 
 - [The Spectrum](the-spectrum.html), for the discriminant and the two eigenvalues.
 - [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split.html), for the decomposition.
-- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the matrix form.
+- [The Centraliser](the-centraliser.html), for the matrix form.

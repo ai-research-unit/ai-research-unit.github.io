@@ -6,9 +6,9 @@
 
 **The scope of the word.** Here an **endomorphism** is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the **algebra** endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form a group. The two uses of the word are separated in §*Endomorphisms of the Algebra*, and confusing them is the first trap of the subject. The article then reads the one involution of the algebra that is itself a complex-linear operator, the natural conjugation $D$.
 
-**What the article does not do.** The operators produced by the multiplication itself, the left and the right regular families and their products, are the subject of Parts II, III and IV. This article needs one display of them, the inner derivation $\tilde Qx-x\tilde Q$, and one pointer: the two summands of that display are the regular operators, and they are defined and studied in Part II and Part III, not here. The matrix form of the ambient space is the subject of *Matrix Representations : The Models and the Change of Frame*; this article states the dimension and leaves the matrix to the article that fixes the frame.
+**What the article does not do.** The operators produced by the multiplication itself, the left and the right regular families and their products, are the subject of Parts II, III and IV. This article needs one display of them, the inner derivation $\tilde Qx-x\tilde Q$, and one pointer: the two summands of that display are the regular operators, and they are defined and studied in Part II and Part III, not here. The matrix form of the ambient space is the subject of *Matrix Representations Conventions*; this article states the dimension and leaves the matrix to the article that fixes the frame.
 
-**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *Matrix Representations : The Product, the Trace and the Determinant*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
+**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *The $M_2(\mathbb{C})$ Standard Peirce Representation*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
 
 ## The Carrier and Its Linear Maps
 
@@ -42,7 +42,7 @@ for all $x,y\in\mathbb{B}$ and all $\lambda\in\mathbb{C}$. The operators form th
 
 **The algebra structure.** Addition is pointwise and the product is composition. The unit is the identity map. The algebra is not commutative and it is not a division algebra: it contains the zero map and the projections. Its centre is the scalar maps, because a map commuting with every operator is a scalar multiple of the identity.
 
-**The matrix form, stated and not developed.** A basis of the carrier turns each operator into a $4\times4$ complex matrix, and the algebra into $M_4(\mathbb{C})$. The assignment depends on the basis, and the frame is part of the display. The definition of the matrix, the change of frame and the invariants are *Matrix Representations : The Models and the Change of Frame*, which follows this article; here only the existence of the identification is used.
+**The matrix form, stated and not developed.** A basis of the carrier turns each operator into a $4\times4$ complex matrix, and the algebra into $M_4(\mathbb{C})$. The assignment depends on the basis, and the frame is part of the display. The definition of the matrix, the change of frame and the invariants are *Matrix Representations Conventions*, which follows this article; here only the existence of the identification is used.
 
 **The invariants are basis-free.** The trace, the determinant, the characteristic polynomial, the spectrum and the rank of an operator are those of any of its matrices, and the change of frame leaves them unchanged. They are therefore statements about the operator and not about the display, and the articles that use them say so once.
 
@@ -162,7 +162,7 @@ The **natural conjugation** $D$ is the one conjugation that is complex-linear. I
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its multiplication.
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the ambient operator space in general and the subspace-group rule.
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the regular representations and their double centraliser.
-- [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the matrix in a basis, the change of frame and the invariants.
+- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the matrix in a basis, the change of frame and the invariants.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the first summand of the display.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the second summand and the exchange by the natural conjugation.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the same two objects at matrix level.

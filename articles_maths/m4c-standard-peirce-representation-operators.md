@@ -693,12 +693,10 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the compression of the two one-sided actions.
 - [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.
 - [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same operators in the e-basis.
-- [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the same family in the canonical frame.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
-- [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the Peirce change $C_{\Pi}$ and the operator-space matrix units.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Left Regular Operators on the Biquaternion Algebra](m4c-representation-the-left-regular-operators-on-the-biquaternion-algebra.html), for $L^{P}$ and the four left matrices.
-- [$M_4(\mathbb{C})_{\mathbb{B}_R}$ Representation : The Right Regular Operators on the Biquaternion Algebra](m4c-representation-the-right-regular-operators-on-the-biquaternion-algebra.html), for $R^{P}$ and the four right matrices.
+- [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for $L^{P}$ and the four left matrices.
+- [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for $R^{P}$ and the four right matrices.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and its coordinate column.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection of the two one-sided copies.

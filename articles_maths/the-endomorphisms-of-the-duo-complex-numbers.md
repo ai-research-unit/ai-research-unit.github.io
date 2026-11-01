@@ -170,9 +170,9 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 - [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
 - [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-the-duo-complex-numbers.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the matrix computations of the product, the trace and the determinant.
-- [Matrix Representations : The Centraliser and the Double Centraliser](matrix-representations-the-centraliser-and-the-double-centraliser.html), for the centraliser of a single matrix and the bicommutant.
-- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](matrix-representations-gl2-sl2-and-the-determinant.html), for the groups and the determinant.
-- [Matrix Representations : The Projective Line and the Möbius Action](matrix-representations-the-projective-line-and-the-mobius-action.html), for the action on $\mathbb{CP}^1$.
+- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the matrix computations of the product, the trace and the determinant.
+- [The Centraliser](the-centraliser.html), for the centraliser of a single matrix and the bicommutant.
+- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the groups and the determinant.
+- [The Möbius Transformation as an Operator](the-mobius-transformation-as-an-operator.html), for the action on $\mathbb{CP}^1$.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its isomorphism with $M_2(\mathbb{C})$.
 - [The Endomorphism Algebra of a Module](the-endomorphism-algebra-of-a-module.html), for the double centraliser theorem in general.

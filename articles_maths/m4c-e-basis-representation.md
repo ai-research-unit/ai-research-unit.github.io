@@ -676,5 +676,3 @@ The sixteen products $T^{e}_{\mu\nu}=L^{e}_\mu R^{e}_\nu$ are an orthogonal basi
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same content in the standard Peirce frame, the pure swap stitch and the tensor displays.
 - [$M_4(\mathbb{C})$ e-basis Representation : Operators](m4c-e-basis-representation-operators.html), for the operators on the algebra and the sixteen products in the e-basis.
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the six subspaces read in the e-basis.
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the same invariants in the matrix model.

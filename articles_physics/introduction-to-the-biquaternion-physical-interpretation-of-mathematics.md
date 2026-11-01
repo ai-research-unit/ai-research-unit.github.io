@@ -92,9 +92,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Element, the Coordinates and the Conjugations](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
 - [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
-- [Matrix Representations : The Models and the Change of Frame](../articles_maths/matrix-representations-the-models-and-the-change-of-frame.html)
-- [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html)
-- [Matrix Representations : The Six Subspaces as Matrix Conditions](../articles_maths/matrix-representations-the-six-subspaces-as-matrix-conditions.html)
+- [Matrix Representations Conventions](../articles_maths/conventions-of-the-matrix-models.html)
+- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
+- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
 - [The Square of an Element](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
 
@@ -105,7 +105,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 
 #### The Modules
 
@@ -119,17 +119,17 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Element
 
 - [The Spectrum](../articles_maths/the-spectrum.html)
-- [Matrix Representations : The Spectral Projectors](../articles_maths/matrix-representations-the-spectral-projectors.html)
+- [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](../articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html)
 - [The Centraliser](../articles_maths/the-centraliser.html)
-- [Matrix Representations : The Centraliser and the Double Centraliser](../articles_maths/matrix-representations-the-centraliser-and-the-double-centraliser.html)
+- [The Centraliser](../articles_maths/the-centraliser.html)
 - [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html)
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
-- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](../articles_maths/matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
 - [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
-- [Matrix Representations : The Jordan Basis and the Jordanising Matrix](../articles_maths/matrix-representations-the-jordan-basis-and-the-jordanising-matrix.html)
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
 - [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html)
-- [Matrix Representations : Worked Examples](../articles_maths/matrix-representations-worked-examples.html)
+- [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 
 #### The Four General Products
 
@@ -140,22 +140,21 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 #### The Four Forms and Their Algebraic Norms
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
-- [Matrix Representations : The Four Words and the Four Traces](../articles_maths/matrix-representations-the-four-words-and-the-four-traces.html)
+- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 
-- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](../articles_maths/matrix-representations-trace-determinant-and-the-biquaternion-norm.html)
+- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
 
 #### Algebra with the H Norm
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html)
-- [Matrix Representations : The Polar Decomposition of a Matrix](../articles_maths/matrix-representations-the-polar-decomposition-of-a-matrix.html)
+- [The Polar Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-polar-decomposition-of-m4c.html)
 
 #### Algebra with the N Norm
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
 - [The N-Regular Sector](../articles_maths/the-n-regular-sector.html)
 - [The N-Degenerate Sector](../articles_maths/the-n-degenerate-sector.html)
-- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](../articles_maths/matrix-representations-rank-one-matrices-and-the-determinantal-variety.html)
-- [Matrix Representations : Spin, Qubits and the Bloch Vector](../articles_maths/matrix-representations-spin-qubits-and-the-bloch-vector.html)
+- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html)
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html)
 
@@ -176,7 +175,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Remarkable Subspaces and the Forms
 
-- [Matrix Representations : The Conjugations and the Adjoints](../articles_maths/matrix-representations-the-conjugations-and-the-adjoints.html)
+- [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
@@ -197,11 +196,11 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [Matrix Representations : The Hermitian Sandwich](../articles_maths/matrix-representations-the-hermitian-sandwich.html)
-- [Matrix Representations : The Left Regular Operators](../articles_maths/matrix-representations-the-left-regular-operators.html)
-- [Matrix Representations : The Right Regular Operators](../articles_maths/matrix-representations-the-right-regular-operators.html)
+- [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html)
+- [The Left Regular Operators on the Biquaternion Algebra](../articles_maths/the-left-regular-operators-on-the-biquaternion-algebra.html)
+- [The Right Regular Operators on the Biquaternion Algebra](../articles_maths/the-right-regular-operators-on-the-biquaternion-algebra.html)
 - [The Commutant of the Two Regular Families](../articles_maths/the-commutant-of-the-two-regular-families.html)
-- [Matrix Representations : The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html)
+- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
 - [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html)
 
 ### Topology
@@ -214,7 +213,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html)
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
-- [Matrix Representations : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/matrix-representations-gl2-sl2-and-the-determinant.html)
+- [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html)
 
 ### Analysis
@@ -226,9 +225,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)
 - [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html)
 - [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html)
-- [Matrix Representations : The Killing Form](../articles_maths/matrix-representations-the-killing-form.html)
+- [The Killing Form Operator](../articles_maths/the-killing-form-operator.html)
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html)
-- [Matrix Representations : The Functional Calculus](../articles_maths/matrix-representations-the-functional-calculus.html)
+- [Holomorphic Functional Calculus](../articles_maths/holomorphic-functional-calculus.html)
 - [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html)
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
@@ -264,7 +263,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html)
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html)
-- [Matrix Representations : The Projective Line and the Möbius Action](../articles_maths/matrix-representations-the-projective-line-and-the-mobius-action.html)
+- [The Möbius Transformation as an Operator](../articles_maths/the-mobius-transformation-as-an-operator.html)
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html)
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html)

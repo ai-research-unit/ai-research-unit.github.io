@@ -289,4 +289,4 @@ a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 - [The Regular Module](the-regular-module.html), for the ideals as submodules.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the simple module in the algebra.
 - [The Centraliser](the-centraliser.html), for the commutant of an element.
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix model of the classification.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix model of the classification.

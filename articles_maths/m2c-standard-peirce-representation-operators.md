@@ -465,8 +465,6 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 - [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the compression and the two blocks.
 - [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the uncompressed operators, the sixteen products and the coefficient matrix.
 - [$M_4(\mathbb{C})$ e-basis Representation : Operators](m4c-e-basis-representation-operators.html), for the same operators in the basis where no $2\times2$ block appears.
-- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model and the algebra isomorphism.
-- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units and the two Peirce planes.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition and the adjoint.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the fixed model and the conventions of the matrix models.

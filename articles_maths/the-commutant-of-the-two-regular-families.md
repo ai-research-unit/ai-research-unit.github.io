@@ -138,8 +138,8 @@ The two copies are therefore mutual centralisers and incomparable; their only co
 
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the left family and its injectivity.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the right family and its injectivity.
-- [Matrix Representations : The Left Regular Operators](matrix-representations-the-left-regular-operators.html), for the left matrix.
-- [Matrix Representations : The Right Regular Operators](matrix-representations-the-right-regular-operators.html), for the right matrix.
+- [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the left matrix.
+- [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the right matrix.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the centre.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the products and the generation theorem.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letters and the set names.

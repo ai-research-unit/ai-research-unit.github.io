@@ -390,8 +390,8 @@ $$
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $T_{\mu\nu}$, their product tables, the coefficient formula and the length.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
-- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the sixteen matrices $T_{\mu\nu}$, the gamma set and the product question.
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the four-dimensional regular model and its different trace and determinant.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices $T_{\mu\nu}$, the gamma set and the product question.
+- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the four-dimensional regular model and its different trace and determinant.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.
 - [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the element and its trace.

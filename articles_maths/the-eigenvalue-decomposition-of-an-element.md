@@ -266,7 +266,7 @@ which is the trivial decomposition into the scalar $1$ and the nilpotent $n$. Th
 
 ### A biquaternion
 
-Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *Matrix Representations : The Product, the Trace and the Determinant*, the element $a = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$ has the eigenvalue decomposition with the two idempotents $e_1, e_2$ read as biquaternions. The example is not different from the matrix one; it records that the eigenvalue decomposition is a statement about the algebra, not about a particular number system. The biquaternion spectral theory of *The Biquaternion Eigenvalue Decomposition* treats the additional structure that the conjugations impose on the spectrum.
+Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *The $M_2(\mathbb{C})$ Standard Peirce Representation*, the element $a = \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}$ has the eigenvalue decomposition with the two idempotents $e_1, e_2$ read as biquaternions. The example is not different from the matrix one; it records that the eigenvalue decomposition is a statement about the algebra, not about a particular number system. The biquaternion spectral theory of *The Biquaternion Eigenvalue Decomposition* treats the additional structure that the conjugations impose on the spectrum.
 
 ## Summary
 

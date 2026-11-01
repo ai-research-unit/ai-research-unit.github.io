@@ -211,7 +211,7 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 
 **The frame is not the object.** Another gauge, another order of the four basis elements, or another Peirce family gives another matrix of the same operator; the two formulas above hold in the canonical frame alone. An article that uses another frame says so and gives the change of frame. What the frame does not change is the copy and the element: the matrix is an image of the element, never the element and never the algebra.
 
-**The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$ of *Matrix Representations : The Product, the Trace and the Determinant*. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
+**The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$ of *The $M_2(\mathbb{C})$ Standard Peirce Representation*. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
 
 **The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B}_L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B}_R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.
 
@@ -251,7 +251,7 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the met
 | $3$ | $T_{ty}$, $T_{xx}$, $T_{yx}$, $T_{zx}$ |
 | $4$ | $T_{tz}$ |
 
-Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in the appendix of *Matrix Representations : The Two-Sided Operators*.
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in the appendix of *Two-Sided Operators on the Biquaternion Algebra*.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
 
@@ -308,7 +308,7 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the sixteen cells, the frame and the proof of the cell table.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frame and the proof of the cell table.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the five-cell frame.
 
 ## Appendix — The Gamma Formulation

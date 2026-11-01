@@ -241,7 +241,7 @@ the right Peirce row of $\tilde\Pi_{+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{-}$. Th
 
 **It is not a state vector in an external space.** The spinor is an element of the algebra, in one of the two Peirce spaces. Its coordinates are the Peirce coordinates in an adapted basis. There is no separate Hilbert space here; a Hermitian form, when it is used, is a form on the algebra.
 
-**It is not a column of a matrix.** A column appears when $\mathbb{B}$ is written as $M_{2}(\mathbb{C})$ and the spinor space is read as a column of the matrix. That is one picture of the same element; the algebra element and its Peirce coordinates are the definition. The matrix picture belongs to *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+**It is not a column of a matrix.** A column appears when $\mathbb{B}$ is written as $M_{2}(\mathbb{C})$ and the spinor space is read as a column of the matrix. That is one picture of the same element; the algebra element and its Peirce coordinates are the definition. The matrix picture belongs to *Spinors as Peirce Coordinates in the Biquaternion Algebra*.
 
 **It is not defined by an auxiliary element.** The family defines the two spaces and their splitting. The mixed line has no canonical element, and a basis is a choice. No element outside the family is part of the definition.
 
@@ -320,7 +320,7 @@ A spinor is an element of one of the two Peirce spaces $S_{\pm}=\mathbb{B}\tilde
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix picture of the two spaces.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix picture of the two spaces.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the identification of the two spaces as minimal left ideals.
 - [The Commutator Operator](the-commutator-operator.html), for the right multiplication and the exchange as operators.
 - [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.

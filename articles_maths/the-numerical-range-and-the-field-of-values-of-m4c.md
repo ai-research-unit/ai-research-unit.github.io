@@ -257,8 +257,7 @@ The field of values $W(A)=\{x^*Ax:\|x\|=1\}$ of a matrix of $M_4(\mathbb{C})$ is
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the singular values and the operator norm.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the Frobenius, operator and nuclear norms.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectrum and the resolvent.
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the matrix representation of the biquaternion algebra.
-- [Matrix Representations : Spin, Qubits and the Bloch Vector](matrix-representations-spin-qubits-and-the-bloch-vector.html), for the two-dimensional case and the Bloch picture.
+- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the matrix representation of the biquaternion algebra.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the tensor product and the identity $W(I\otimes M)=W(M)$.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the field of values and the elliptical range theorem.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the numerical radius and its inequalities.

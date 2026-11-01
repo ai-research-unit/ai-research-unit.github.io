@@ -690,7 +690,7 @@ not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\v
 
 **The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. The Peirce index is the right index, not the left one; it is not a chirality.**
 
-The general statement is in *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.
+The general statement is in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.
 
 ### The Two Spinor Spaces
 
@@ -900,7 +900,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
-- [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the gauge of the general Peirce basis and its torsor.

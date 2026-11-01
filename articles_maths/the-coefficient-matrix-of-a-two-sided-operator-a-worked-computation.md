@@ -314,6 +314,6 @@ $$
 ## Further Reading
 
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices, the multiplication tables, the orthogonality theorem and the length theorem.
-- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the construction.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the construction.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the matrix units.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the same operators on the sixteen-dimensional algebra.

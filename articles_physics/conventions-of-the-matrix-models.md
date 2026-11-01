@@ -270,9 +270,9 @@ The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Del
 | $3$ | $T_{ty}$, $T_{xx}$, $T_{yx}$, $T_{zx}$ |
 | $4$ | $T_{tz}$ |
 
-Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The cells are labelled by the frame units, not by spacetime indices: $L_\mu R_\nu$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are in the appendix of *Matrix Representations : The Two-Sided Operators*. The frame is one frame among many: another orthogonal pair gives another five cells, the relations survive, and the cell labels do not.
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The cells are labelled by the frame units, not by spacetime indices: $L_\mu R_\nu$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are in the appendix of *Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another five cells, the relations survive, and the cell labels do not.
 
-**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\mathsf C_\mu S^{-1}$ with $S$ invertible. A change of frame is a change of basis, and the normal forms are those of *Matrix Representations : The Two-Sided Operators*, appendix. No statement of the corpus depends on the basis written.
+**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\mathsf C_\mu S^{-1}$ with $S$ invertible. A change of frame is a change of basis, and the normal forms are those of *Two-Sided Operators on the Biquaternion Algebra*, appendix. No statement of the corpus depends on the basis written.
 
 **The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
 
@@ -378,8 +378,8 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 - [Conventions of the Products and the Forms](conventions-of-the-products-and-the-forms.html), for the products the matrix product mirrors.
 - [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the left and right multiplications these matrices represent.
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
-- [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html), for the change of frame between the coefficient basis and the canonical frame.
-- [Matrix Representations : The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
+- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html), for the change of frame between the coefficient basis and the canonical frame.
+- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
 
 ## Appendix — The Gamma Formulation
 

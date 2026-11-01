@@ -6,7 +6,7 @@
 
 The article defines the trace form and the three norms, proves the norm inequalities, describes the determinant and the singular set, stratifies the singular set by rank with the dimension of each stratum, and compares the definite case with the null cone of the biquaternion algebra and its link.
 
-The involution and the positive definite form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *Matrix Representations : Rank-One Matrices and the Determinantal Variety*.
+The involution and the positive definite form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*.
 
 ## The Forms
 
@@ -304,4 +304,4 @@ $$
 - [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the singular value decomposition.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectral radius and the eigenvalues.
-- [Matrix Representations : Rank-One Matrices and the Determinantal Variety](matrix-representations-rank-one-matrices-and-the-determinantal-variety.html), for the null cone of the regular model.
+- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the null cone of the regular model.

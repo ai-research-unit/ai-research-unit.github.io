@@ -275,7 +275,7 @@ The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\vec p
 
 **Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the nilpotents are exactly the nonzero matrices that are trace-free and singular, equivalently the nonzero rank-one matrices conjugate to the strictly triangular matrix $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.**
 
-In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *Matrix Representations : The Product, the Trace and the Determinant*, the criterion becomes the linear algebra of a trace-free singular matrix.
+In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *The $M_2(\mathbb{C})$ Standard Peirce Representation*, the criterion becomes the linear algebra of a trace-free singular matrix.
 
 **Theorem.** Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde Q_1)=Q_{1t}\mathrm I_2-iQ_{1x}\sigma_1-iQ_{1y}\sigma_2-iQ_{1z}\sigma_3$, the following coincide: $\tilde Q_1$ is a nilpotent; $\mathsf M_2(\tilde Q_1)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde Q_1)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde Q_1)=2Q_{1t}=0$, and singular, $\det\mathsf M_2(\tilde Q_1)=C(\tilde Q_1)=0$.
 
@@ -333,7 +333,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce basis.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.
-- [Matrix Representations : Trace, Determinant and the Biquaternion Norm](matrix-representations-trace-determinant-and-the-biquaternion-norm.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the strictly triangular form.
+- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the strictly triangular form.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same class read against the four general products, where only the plain product has this square-zero set.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416.

@@ -696,5 +696,3 @@ The sixteen products $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ are an orthogonal basi
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the canonical frame and the tensor displays of the two copies.
 - [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same content in the coefficient basis and the sign stitch.
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the six subspaces read in the coefficient basis.
-- [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the same invariants in the matrix model.

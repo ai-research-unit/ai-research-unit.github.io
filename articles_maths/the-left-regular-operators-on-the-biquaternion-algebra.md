@@ -6,7 +6,7 @@
 
 **What the article proves.** Four things, in this order. The map $\tilde Q\mapsto L_{\tilde Q}$ is injective and complex-linear. It is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, so its image is a copy of the algebra inside the operator algebra. The kernel and the image of a single $L_{\tilde Q}$ are the right annihilator and the right ideal $\tilde Q\mathbb{B}$. The operator $L_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, and its inverse is $L_{\tilde Q^{-1}}$.
 
-**What the article does not do.** The matrix of $L_{\tilde Q}$ is the subject of *Matrix Representations : The Left Regular Operators*: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.
+**What the article does not do.** The matrix of $L_{\tilde Q}$ is the subject of *The Left Regular Operators on the Biquaternion Algebra*: this article proves the operator statements, and the matrix article computes them in a frame. The right family is the subject of Part III, the two-sided family of Part IV. The left family alone is treated here.
 
 **The letters.** The operator is $L_{\tilde Q}$, the element is $\tilde Q$, and the argument is $X$. The letter $L$ names left multiplication and is not an index. The conventions of the four letters, the slots and the matrix are *Operator Family Conventions*; this article uses them and defines none of them.
 
@@ -90,7 +90,7 @@ It is a complex subspace of $\mathbb{B}$.
 
 *Proof.* $L_{\tilde Q}(X)=0$ is $\tilde QX=0$, which is the defining condition of the right annihilator.
 
-**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *Matrix Representations : The Product, the Trace and the Determinant*, where $\tilde Q$ is a $2\times2$ matrix:
+**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *The $M_2(\mathbb{C})$ Standard Peirce Representation*, where $\tilde Q$ is a $2\times2$ matrix:
 
 - if $\tilde Q$ is a unit, $\operatorname{Ann}_r(\tilde Q)=0$, of complex dimension $0$;
 - if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its kernel is a line, and the right annihilator is the complex two-dimensional space of matrices whose columns lie in that line;
@@ -171,7 +171,7 @@ The left regular operator of $\tilde Q$ is $L_{\tilde Q}(X)=\tilde QX$. The assi
 
 The kernel of $L_{\tilde Q}$ is the right annihilator of $\tilde Q$, and the image is the right ideal $\tilde Q\mathbb{B}$. The rank is four for a unit, two for a nonzero zero divisor, and zero for the zero element. The operator is invertible exactly when $N(\tilde Q)\neq0$, and then its inverse is $L_{\tilde Q^{-1}}$.
 
-The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of *Matrix Representations : The Left Regular Operators*, where the same three statements are read entry by entry in the Peirce frame.
+The three statements — the law, the rank trichotomy and the criterion — are the operator form of the multiplication of the algebra. The matrix form is the subject of *The Left Regular Operators on the Biquaternion Algebra*, where the same three statements are read entry by entry in the Peirce frame.
 
 ## Summary of Notation
 
@@ -188,9 +188,9 @@ The three statements — the law, the rank trichotomy and the criterion — are 
 ## Further Reading
 
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and the complex dimension sixteen.
-- [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the matrix of a general operator and the units.
-- [Matrix Representations : The Left Regular Operators](matrix-representations-the-left-regular-operators.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
+- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the matrix of a general operator and the units.
+- [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the other side and the exchange.
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model, the determinant and the norm.
+- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the $2\times2$ model, the determinant and the norm.
 - [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $L$, the slots and the set names.

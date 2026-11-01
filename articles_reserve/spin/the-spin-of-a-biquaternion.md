@@ -473,5 +473,4 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 - [Introduction to the Operators under N and Spectral Regularity and Degeneracy](introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html), for the three operators and the polar word.
 - [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank one of the sandwich on the null cone.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the four sectors and the two conditions.
-- [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](../articles_maths/matrix-representations-spin-qubits-and-the-bloch-vector.html), for the Hermitian form and the expectation values.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the spinor adjoint.

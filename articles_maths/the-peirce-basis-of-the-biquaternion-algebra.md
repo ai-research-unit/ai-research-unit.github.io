@@ -299,7 +299,7 @@ A Peirce basis of a nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ 
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the coordinates of the two spinor spaces.
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix model and the coordinate isomorphism.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix model and the coordinate isomorphism.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general gauge $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms used in §*Systems of Matrix Units*.
 - [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
