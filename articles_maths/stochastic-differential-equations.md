@@ -126,7 +126,7 @@ $$
 dX_t = \Bigl(b(X_t)-\tfrac12\sigma'(X_t)\sigma(X_t)\Bigr)dt+\sigma(X_t)\circ dB_t ,
 $$
 
-and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma^j_k\partial/\partial x_j\,\sigma^i_k$ in the $i$-th component.
+and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma_{jk}\,\partial/\partial x_j\,\sigma_{ik}$ in the $i$-th component.
 
 *Proof.* Apply the Stratonovich chain rule to $\sigma(X_t)$ and substitute the Itô equation: the cross variation $\langle\sigma(X),B\rangle_t=\int\sigma'\sigma\,ds$ produces the drift correction, and the equivalence follows.
 

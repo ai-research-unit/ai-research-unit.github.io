@@ -7002,6 +7002,11 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>
 <!-- V.4: the four forms and their Gram matrices; the adjoints $(L_Q)^{\approx}=R_Q$ and $(R_Q)^{\approx}=L_Q$, the natural, Hermitian and signed Hermitian adjoints; association as a transpose, the Conway basis and the matrix $\mathrm{E}M^{\mathsf T}\mathrm{E}$; the self-adjointness criteria with the plain type and the vanishing skew sector; the table of the two switches with the two isometries and the inner automorphisms. -->
 
+##### Matrix Operator Representations
+
+<a href="articles_maths/m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a>
+<!-- the operators on the algebra at three levels: every general endomorphism as a matrix in $M_4(\mathbb{C})$; the one-sided operators as the two four-dimensional copies $\mathrm{I}_2\otimes A$ and $B^{\mathsf T}\otimes\mathrm{I}_2$ of the Standard Peirce article; the two-sided operator $T_{Q,P}=L_QR_P$ as the seven-dimensional cone of coefficient rank one, with the factorisation map and its $\mathbb{C}^{\times}$ fibre, the sixteen orthogonal matrices $T_{\mu\nu}$, the coefficient criterion $\operatorname{rank}c(M)\le1$, the composition $T_{Q,P}T_{R,S}=T_{QR,SP}$, the failure of additivity, the length $\ell(M)=\operatorname{rank}c(M)$ in $\{0,1,2,3,4\}$ with four products always enough, the matrix rank in $\{0,1,2,4\}$, the plain adjoint $T_{P,Q}$ with the self-adjoint, isometry and multiplicative criteria, the one-sided boundaries and the Segre cone $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$. -->
+
 ##### The Operators under N and Spectral Regularity and Degeneracy
 
 <a href="articles_maths/introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy.html">Introduction to the Operators under N and Spectral Regularity and Degeneracy</a>
