@@ -339,7 +339,7 @@ $$
 and for the operator norm,
 
 $$
-\rho(A)\le\lVert A\rVert_{\mathrm{op}},
+\rho(A)\le\lVert A\rVert,
 $$
 
 with equality for normal matrices. For a normal matrix, the operator norm is the largest modulus of an eigenvalue; for a non-normal matrix, the operator norm can be strictly larger.

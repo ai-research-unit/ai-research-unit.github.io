@@ -144,5 +144,5 @@ The general plain algebra of the reduced biquaternions is the disjoint union of 
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the zero-divisor set and the two lines.
 - [The Specificities of the Algebra of the Reduced Biquaternions](the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the associativity and the central split that make the group.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotent lines as the minimal ideals.
-- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility of the operators.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the invertibility of the operators.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the non-abelian companion.

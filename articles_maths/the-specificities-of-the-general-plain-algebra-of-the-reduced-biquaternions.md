@@ -129,7 +129,7 @@ Of the eight structures on $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the corner subalgebras of a finite-dimensional associative algebra.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for left alternativity and the alternative laws.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the ideal lattice and the Peirce decomposition.
-- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the operators and the bi-module structure.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators and the bi-module structure.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group and its boundary.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the non-commutative companion and the same criterion.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the eight structures and the isolation.

@@ -92,13 +92,13 @@ which is injective when $E$ and $F$ are Hausdorff, and it is a topological isomo
 **Example (finite-dimensional spaces).** For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$ the tensor product $\mathbb{K}^m\otimes\mathbb{K}^n$ is the space $M_{m,n}(\mathbb{K})$ of $m\times n$ matrices under the identification $e_i \otimes f_j \leftrightarrow E_{ij}$, and every tensor topology on a finite-dimensional space is the same. The three norms that arise are the operator norm
 
 $$
-\lVert A\rVert_{\mathrm{op}} = \sigma_1 , \qquad \lVert A\rVert_{\mathrm{HS}} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
+\lVert A\rVert = \sigma_1 , \qquad \lVert A\rVert_{\mathrm{HS}} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
 $$
 
 where $\sigma_1 \geq \sigma_2 \geq \cdots$ are the singular values of $A$; the first is the injective norm, the third is the projective norm, and the second is the norm of the Hilbert tensor product when the factors carry their Euclidean inner products. The three norms agree only for rank-one matrices, and in general they satisfy
 
 $$
-\lVert A\rVert_{\mathrm{op}} \leq \lVert A\rVert_{\mathrm{HS}} \leq \lVert A\rVert_{\mathrm{nuc}} .
+\lVert A\rVert \leq \lVert A\rVert_{\mathrm{HS}} \leq \lVert A\rVert_{\mathrm{nuc}} .
 $$
 
 The chain of inequalities is the elementary comparison $\sigma_1 \leq (\sum_i\sigma_i^2)^{1/2} \leq \sum_i\sigma_i$ of the singular values; the identity matrix has the three norms $1$, $\sqrt2$ and $2$, so the inequalities are strict simultaneously, and the second is an equality exactly when the rank is at most one. The same computation identifies the Hilbert tensor product of the Euclidean spaces with $M_{m,n}$ carrying the Hilbert–Schmidt norm.
@@ -161,7 +161,7 @@ defines a duality under which $(E\widehat{\otimes}_\pi F)'$ is isometrically iso
 
 **Proof.** For $T \in \mathcal{B}(E,F')$ the form $(x,y)\mapsto\langle y,Tx\rangle$ is bilinear and continuous with $\lvert\langle y,Tx\rangle\rvert \leq \lVert T\rVert\lVert x\rVert\lVert y\rVert$, so by the universal property of the projective tensor product it defines a functional $J(T)$ on $E\widehat{\otimes}_\pi F$ with $\lVert J(T)\rVert \leq \lVert T\rVert$. Conversely, a functional $\varphi$ on $E\widehat{\otimes}_\pi F$ determines a linear map $T_\varphi : E \to F'$ by $\langle T_\varphi x, y\rangle = \varphi(x\otimes y)$, which is bounded because $\lvert\langle T_\varphi x, y\rangle\rvert \leq \lVert\varphi\rVert\lVert x\rVert\lVert y\rVert$ for all $y$, whence $\lVert T_\varphi\rVert \leq \lVert\varphi\rVert$. The two passages are inverse on the dense subspace of elementary tensors, and the isometry follows because the norm of $J(T)$ is the supremum of $\lvert\langle y,Tx\rangle\rvert$ over the pairs with $\lVert x\rVert \leq 1$, $\lVert y\rVert \leq 1$, that is $\sup\{\lVert Tx\rVert : \lVert x\rVert\leq1\} = \lVert T\rVert$.
 
-**Corollary (the finite-dimensional duality).** For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$, with $E\otimes F = M_{m,n}(\mathbb{K})$ as in the previous section, the theorem says that the nuclear norm and the operator norm are dual to one another: the supremum of $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert$ over the matrices $B$ with $\lVert B\rVert_{\mathrm{op}}\leq1$ equals $\lVert A\rVert_{\mathrm{nuc}}$, so that $(M_{m,n},\lVert\cdot\rVert_{\mathrm{op}})' \cong (M_{m,n},\lVert\cdot\rVert_{\mathrm{nuc}})$ isometrically. In the diagonal case $A = \operatorname{diag}(\sigma_1,\sigma_2)$ with $\sigma_1 \geq \sigma_2 \geq 0$ the value $\sigma_1+\sigma_2$ is attained at the diagonal $B$ with entries $1$ and $\operatorname{sign}$; both norms are invariant under the changes of orthonormal bases that conjugate $A$ into that form, so the identity holds in general, and the inequality $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert \leq \lVert A\rVert_{\mathrm{nuc}}\lVert B\rVert_{\mathrm{op}}$ has been checked on the general case, with equality at the orthogonal factor of the polar decomposition of $A$.
+**Corollary (the finite-dimensional duality).** For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$, with $E\otimes F = M_{m,n}(\mathbb{K})$ as in the previous section, the theorem says that the nuclear norm and the operator norm are dual to one another: the supremum of $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert$ over the matrices $B$ with $\lVert B\rVert\leq1$ equals $\lVert A\rVert_{\mathrm{nuc}}$, so that $(M_{m,n},\lVert\cdot\rVert)' \cong (M_{m,n},\lVert\cdot\rVert_{\mathrm{nuc}})$ isometrically. In the diagonal case $A = \operatorname{diag}(\sigma_1,\sigma_2)$ with $\sigma_1 \geq \sigma_2 \geq 0$ the value $\sigma_1+\sigma_2$ is attained at the diagonal $B$ with entries $1$ and $\operatorname{sign}$; both norms are invariant under the changes of orthonormal bases that conjugate $A$ into that form, so the identity holds in general, and the inequality $\lvert\operatorname{tr}(A^{\mathsf T}B)\rvert \leq \lVert A\rVert_{\mathrm{nuc}}\lVert B\rVert$ has been checked on the general case, with equality at the orthogonal factor of the polar decomposition of $A$.
 
 **Example (the trace class as a predual).** For a Hilbert space $H$ the projective tensor product $H\widehat{\otimes}_\pi H'$, in which the second factor is the dual identified with the conjugate Hilbert space, is isometrically the trace class $S_1(H)$ of operators with $\operatorname{Tr}\lvert T\rvert < \infty$, and the theorem gives
 
@@ -203,7 +203,7 @@ The classical identifications are: $\mathbb{K}^m\otimes\mathbb{K}^n = M_{m,n}$ w
 | $\lVert u\rVert_\pi$, $\lVert u\rVert_\varepsilon$ | Projective and injective norms |
 | $\mathcal{B}(E'_\sigma\times F'_\sigma)$ | Bounded bilinear forms on the weak-star duals |
 | $\mathcal{B}(E,F')$, $\langle x\otimes y,T\rangle = \langle y,Tx\rangle$ | Trace duality $(E\widehat{\otimes}_\pi F)'\cong\mathcal{B}(E,F')$ |
-| $\sigma_i$, $\lVert A\rVert_{\mathrm{op}}$, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$ | Singular values and the three matrix norms |
+| $\sigma_i$, $\lVert A\rVert$, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$ | Singular values and the three matrix norms |
 | $H_1\widehat{\otimes}H_2$ | Hilbert tensor product |
 | $S_1(H)$, $S_2(H)$, $S_\infty(H)$ | Trace class, Hilbert–Schmidt, compact operators |
 | $K_G$ | Grothendieck's constant, $K_G = \pi/(2\ln(1+\sqrt2))$ |

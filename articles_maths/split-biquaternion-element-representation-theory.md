@@ -1,5 +1,5 @@
 
-# __Split-Biquaternion Element Representation Theory__
+# __Split-Biquaternion Linear Representations__
 
 ## Introduction
 

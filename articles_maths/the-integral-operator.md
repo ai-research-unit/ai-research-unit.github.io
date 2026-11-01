@@ -213,9 +213,9 @@ $$
 The operator is of **finite rank** if its image is finite-dimensional, and **of rank one** if the image is
 one-dimensional.
 
-By the Hilbert–Schmidt bound, $\lVert T_K\rVert_{\mathrm{op}}\leq\lVert T_K\rVert_{\mathrm{HS}}$, so the
+By the Hilbert–Schmidt bound, $\lVert T_K\rVert\leq\lVert T_K\rVert_{\mathrm{HS}}$, so the
 Hilbert–Schmidt norm dominates the operator norm; the two are not equal in general, and the inequality is
-strict for a rank-one kernel whose factor has norm one, where $\lVert T_K\rVert_{\mathrm{op}}=1$ while
+strict for a rank-one kernel whose factor has norm one, where $\lVert T_K\rVert=1$ while
 $\lVert T_K\rVert_{\mathrm{HS}}$ is the product of the two factor norms and may be larger.
 
 **Theorem (the Hilbert–Schmidt norm is basis independent).** Let $(X,\mu)$ and $(Y,\nu)$ be separable
@@ -270,7 +270,7 @@ $$
 K_N(x,y)=\sum_{i,j\leq N}\langle T_Kf_j,e_i\rangle\,e_i(x)\overline{f_j(y)} .
 $$
 Then each $T_{K_N}$ has finite rank at most $N^2$, the kernels converge, $\lVert K-K_N\rVert_2\to0$, and
-consequently $\lVert T_K-T_{K_N}\rVert_{\mathrm{op}}\to0$. Hence $T_K$ is compact.
+consequently $\lVert T_K-T_{K_N}\rVert\to0$. Hence $T_K$ is compact.
 
 **Proof.** Each $K_N$ is a finite sum of rank-one kernels $e_i\otimes\overline{f_j}$, so $T_{K_N}$ has
 finite rank; the convergence $\lVert K-K_N\rVert_2\to0$ is Parseval's identity in the orthonormal basis

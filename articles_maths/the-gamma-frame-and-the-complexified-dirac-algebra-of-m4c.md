@@ -228,7 +228,6 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 ## Further Reading
 
 - [Why the Biquaternion Formalism Instead of Gamma Matrices](../articles_physics/why-the-biquaternion-formalism-instead-of-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
-- [The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector](../articles_reserve/the-clifford-layer-of-the-physics-corpus-inventory-and-the-odd-sector.html), for the inventory of the convention and the odd sector.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $T_{\mu\nu}$ and their product rule.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the cell symbols $\mathsf C_\mu$ and the frame in the canonical frame, §*The Clifford Structure and the Frame*.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even slot and the versors.

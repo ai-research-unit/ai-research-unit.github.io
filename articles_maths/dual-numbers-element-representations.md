@@ -1,5 +1,4 @@
-
-# __Dual-Numbers Element Representations__
+# __Dual-Numbers Linear Representations__
 
 ## Introduction
 

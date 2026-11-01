@@ -77,7 +77,7 @@ Hence $T \mapsto T'$ is a linear isometry $B(X, Y) \to B(Y^{*}, X^{*})$, and $T'
 
 ## Examples
 
-**Example (finite-dimensional matrices).** For $X = \mathbb{K}^{m}$, $Y = \mathbb{K}^{n}$ the transpose of the operator with matrix $A$ has matrix $A^{\mathsf{T}}$ in the dual bases, so the abstract transpose is the transpose of a matrix, and $\lVert A^{\mathsf{T}}\rVert_{\mathrm{op}} = \lVert A\rVert_{\mathrm{op}}$ because the singular values are unchanged.
+**Example (finite-dimensional matrices).** For $X = \mathbb{K}^{m}$, $Y = \mathbb{K}^{n}$ the transpose of the operator with matrix $A$ has matrix $A^{\mathsf{T}}$ in the dual bases, so the abstract transpose is the transpose of a matrix, and $\lVert A^{\mathsf{T}}\rVert = \lVert A\rVert$ because the singular values are unchanged.
 
 **Example (the sequence spaces).** On $\ell^{n}$, $1 < p < \infty$, with $(\ell^{n})^{*} = \ell^{m}$ and $1/n + 1/m = 1$, the transpose of the diagonal operator $D_{\varphi}$ is again $D_{\varphi}$, because a diagonal matrix is its own transpose; the transpose of the right shift $R$ on $\ell^{n}$ is the left shift $L$ on $\ell^{m}$, and conversely, since $(Rx)_{k} = x_{k-1}$ dualises to $(R'y)_{k} = y_{k+1}$. On $\ell^{1}$ with dual $\ell^{\infty}$ and on $c_{0}$ with dual $\ell^{1}$ the same formulas hold with the appropriate dual, and the shift transposes are exchanged.
 

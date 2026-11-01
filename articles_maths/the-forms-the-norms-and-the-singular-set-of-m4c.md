@@ -72,7 +72,7 @@ It is the Euclidean norm of the sixteen coordinates.
 **The operator norm.**
 
 $$
-\lVert A\rVert_{\mathrm{op}}
+\lVert A\rVert
 =\sup_{\lVert x\rVert=1}\lVert Ax\rVert
 =\sigma_1.
 $$
@@ -93,9 +93,9 @@ It is the sum of the singular values, also called the trace norm or the Schatten
 **Proposition (the norm inequalities).** For every $A\in M_4(\mathbb{C})$,
 
 $$
-\lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_{*}
+\lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_{*}
 \le\sqrt{4}\,\lVert A\rVert_F
-\le4\,\lVert A\rVert_{\mathrm{op}}.
+\le4\,\lVert A\rVert.
 $$
 
 **Proof.** The first inequality is $\sigma_1\le(\sum\sigma_k^2)^{1/2}$. The second is $\sum\sigma_k^2\le(\sum\sigma_k)^2$ for non-negative numbers with cross terms. The third is the Cauchy–Schwarz inequality
@@ -117,9 +117,9 @@ for each of the three norms. The invariance follows from the fact that the singu
 **Duality.** The operator and nuclear norms are dual:
 
 $$
-\lVert A\rVert_{\mathrm{op}}=\sup_{\lVert B\rVert_{*}\le1}\lvert\operatorname{tr}(A^*B)\rvert,
+\lVert A\rVert=\sup_{\lVert B\rVert_{*}\le1}\lvert\operatorname{tr}(A^*B)\rvert,
 \qquad
-\lVert A\rVert_{*}=\sup_{\lVert B\rVert_{\mathrm{op}}\le1}\lvert\operatorname{tr}(A^*B)\rvert.
+\lVert A\rVert_{*}=\sup_{\lVert B\rVert\le1}\lvert\operatorname{tr}(A^*B)\rvert.
 $$
 
 The Frobenius norm is self-dual:
@@ -139,7 +139,7 @@ The arithmetic–geometric mean inequality gives
 $$
 \lvert\det A\rvert\le\Bigl(\frac{\lVert A\rVert_{*}}{4}\Bigr)^4,
 \qquad
-\lvert\det A\rvert\le\lVert A\rVert_{\mathrm{op}}^4,
+\lvert\det A\rvert\le\lVert A\rVert^4,
 \qquad
 \lvert\det A\rvert\le\frac{\lVert A\rVert_F^4}{16}.
 $$
@@ -155,7 +155,7 @@ $$
 the maximum modulus of the eigenvalues. It is not a norm: it can vanish for a nonzero nilpotent. It satisfies
 
 $$
-\rho(A)\le\lVert A\rVert_{\mathrm{op}},
+\rho(A)\le\lVert A\rVert,
 $$
 
 with equality for normal matrices. The spectral radius is the subject of *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$*.
@@ -258,16 +258,16 @@ which is complex-valued and has a nonzero zero set. Its zero set is the **null c
 
 ## Summary
 
-The full matrix algebra carries the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$, the bilinear trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ and the Killing form $8\beta$ on $\mathfrak{sl}_4$. The three unitarily invariant norms are the Frobenius norm $\lVert A\rVert_F=(\sum\sigma_k^2)^{1/2}$, the operator norm $\lVert A\rVert_{\mathrm{op}}=\sigma_1$ and the nuclear norm $\lVert A\rVert_*=\sum\sigma_k$, with
+The full matrix algebra carries the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$, the bilinear trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ and the Killing form $8\beta$ on $\mathfrak{sl}_4$. The three unitarily invariant norms are the Frobenius norm $\lVert A\rVert_F=(\sum\sigma_k^2)^{1/2}$, the operator norm $\lVert A\rVert=\sigma_1$ and the nuclear norm $\lVert A\rVert_*=\sum\sigma_k$, with
 
 $$
-\lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F\le4\lVert A\rVert_{\mathrm{op}}.
+\lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F\le4\lVert A\rVert.
 $$
 
 The singular set $\Sigma=\{\det=0\}$ is an irreducible complex hypersurface of complex dimension $15$ and real dimension $30$, of real codimension $2$; its smooth part is the rank-$3$ stratum, and its singular locus is the rank-at-most-$2$ variety of complex dimension $12$. The rank strata have complex dimensions $0,7,12,15,16$ for ranks $0,1,2,3,4$. The singular set is a cone in the algebraic sense, but it is not the isotropic cone of the definite form; the only isotropic vector is $0$. The biquaternion algebra, by contrast, has a complex-valued norm and a genuine null cone; its projectivised null cone is a quadric surface and its link is a circle bundle over it, while the link of the $M_4$ singular set is the link of the determinantal hypersurface.
 
 $$
-\boxed{\ \lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F,\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }
+\boxed{\ \lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F,\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }
 $$
 
 | Stratum | Complex dimension | Real dimension |
@@ -288,7 +288,7 @@ $$
 | $\beta(A,B)=\operatorname{tr}(AB)$ | the bilinear trace pairing |
 | $\sigma_1\ge\cdots\ge\sigma_4$ | the singular values |
 | $\lVert A\rVert_F$ | the Frobenius norm |
-| $\lVert A\rVert_{\mathrm{op}}$ | the operator norm |
+| $\lVert A\rVert$ | the operator norm |
 | $\lVert A\rVert_*$ | the nuclear norm |
 | $\Sigma=\{\det=0\}$ | the singular set |
 | $M_4^{(r)}$ | the rank-$r$ stratum |

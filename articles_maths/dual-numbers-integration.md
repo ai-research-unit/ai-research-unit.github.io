@@ -83,13 +83,13 @@ $$
 M(Q_2) = \begin{pmatrix} q_2 & 0 \\ q_2' & q_2 \end{pmatrix}
 $$
 
-in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\|_E \leq \|M(Q_2)\|_{\mathrm{op}} \|Q_1\|_E$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are
+in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\|_E \leq \|M(Q_2)\| \|Q_1\|_E$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are
 
 $$
 \lambda_\pm = \frac{2q_2^2 + q_2'^2 \pm \sqrt{q_2'^4 + 4q_2^2q_2'^2}}{2},
 $$
 
-so $\|M(Q_2)\|_{\mathrm{op}}^2 = \lambda_+$. Dividing by $\|Q_2\|_E^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence
+so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|_E^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence
 
 $$
 \|Q_1Q_2\|_E \leq \frac{2}{\sqrt3}\,\|Q_1\|_E\|Q_2\|_E

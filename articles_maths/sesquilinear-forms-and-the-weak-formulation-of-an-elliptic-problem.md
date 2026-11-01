@@ -40,7 +40,7 @@ $$
 \mathfrak{a}(u,v) = \int_\Omega (Lu)\,\bar v\,dx .
 $$
 
-**Theorem (boundedness).** Let the coefficients be bounded, with $\Lambda = \sup_{x}\|A(x)\|_{\mathrm{op}}$ the operator norm of the matrix and $M$ bounding the absolute values of the remaining coefficients. Then
+**Theorem (boundedness).** Let the coefficients be bounded, with $\Lambda = \sup_{x}\|A(x)\|$ the operator norm of the matrix and $M$ bounding the absolute values of the remaining coefficients. Then
 
 $$
 |\mathfrak{a}(u,v)| \le C\,\|u\|_{H^1}\|v\|_{H^1} \qquad (u,v\in H^1(\Omega)) ,

@@ -396,4 +396,4 @@ The general plain algebra $(\mathbb{B}_{\mathrm{r}},\cdot)$ is commutative, so i
 - [The Specificities of the Algebra of the Reduced Biquaternions](the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the criterion that makes the theory available.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group complementing the ideals.
-- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the operators the ideal projections carry.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators the ideal projections carry.

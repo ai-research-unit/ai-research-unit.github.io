@@ -4,7 +4,7 @@
 
 The algebra $M_{3}(\mathbb{C})$ carries three natural norms and one determinant. The **Frobenius norm** is the Euclidean norm of the nine complex entries, the **operator norm** is the norm of the linear map $\mathbb{C}^{3}\to\mathbb{C}^{3}$, and the **nuclear norm** is the sum of the singular values. The three are unitarily invariant and satisfy
 $$
-\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
 $$
 The determinant is not a norm: it is homogeneous of degree three, complex-valued, and vanishes on the singular matrices. The **singular set**
 $$
@@ -63,7 +63,7 @@ with the convention $\sigma_{\min}=0$ for a singular matrix. The nearest singula
 
 **Definition.** The **operator norm** is
 $$
-\|A\|_{\mathrm{op}}=\sup_{\|v\|=1}\|Av\|,
+\|A\|=\sup_{\|v\|=1}\|Av\|,
 $$
 where the norm on $\mathbb{C}^{3}$ is the Euclidean norm. The **nuclear norm** is
 $$
@@ -79,14 +79,14 @@ The columns of $V$ are an orthonormal basis of eigenvectors of $A^{*}A$; the col
 
 **Proposition.** The three norms are
 $$
-\|A\|_{\mathrm{op}}=\sigma_{1},\qquad
+\|A\|=\sigma_{1},\qquad
 \|A\|_{\mathrm{F}}=\Bigl(\sum_{i}\sigma_{i}^{2}\Bigr)^{1/2},\qquad
 \|A\|_{*}=\sum_{i}\sigma_{i}.
 $$
 They are unitarily invariant, and they satisfy
 $$
-\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}},\qquad
-\|A\|_{*}\leq3\|A\|_{\mathrm{op}}.
+\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}},\qquad
+\|A\|_{*}\leq3\|A\|.
 $$
 
 **Proof.** The operator norm is the largest singular value: $\|Av\|^{2}=\sum_{i}\sigma_{i}^{2}|\langle v,v_{i}\rangle|^{2}\leq\sigma_{1}^{2}\|v\|^{2}$, with equality on the first right singular vector. The Frobenius norm is $\operatorname{tr}(A^{*}A)=\sum_{i}\sigma_{i}^{2}$. The nuclear norm is the sum of the singular values by definition. The inequalities are the comparisons of the $\ell^{1}$, $\ell^{2}$ and $\ell^{\infty}$ norms on the three singular values: $\max\sigma_{i}\leq(\sum\sigma_{i}^{2})^{1/2}\leq\sum\sigma_{i}\leq\sqrt3(\sum\sigma_{i}^{2})^{1/2}$, and $\sum\sigma_{i}\leq3\max\sigma_{i}$.
@@ -103,11 +103,11 @@ $$
 $$
 The singular set is exactly the set where $\sigma_{3}=0$. The **condition number** of an invertible matrix is
 $$
-\kappa(A)=\frac{\sigma_{1}}{\sigma_{3}}=\|A\|_{\mathrm{op}}\|A^{-1}\|_{\mathrm{op}},
+\kappa(A)=\frac{\sigma_{1}}{\sigma_{3}}=\|A\|\|A^{-1}\|,
 $$
 and it blows up as $A$ approaches the singular set.
 
-**Proof.** $|\det A|^{2}=\det(A^{*}A)=\prod_{i}\sigma_{i}^{2}$, so $|\det A|=\prod_{i}\sigma_{i}$. The determinant vanishes exactly when one singular value vanishes, which is exactly when the rank is less than three. The condition number identity is $\|A^{-1}\|_{\mathrm{op}}=1/\sigma_{3}$.
+**Proof.** $|\det A|^{2}=\det(A^{*}A)=\prod_{i}\sigma_{i}^{2}$, so $|\det A|=\prod_{i}\sigma_{i}$. The determinant vanishes exactly when one singular value vanishes, which is exactly when the rank is less than three. The condition number identity is $\|A^{-1}\|=1/\sigma_{3}$.
 
 **Hadamard and the determinant.** For every $A$,
 $$
@@ -122,11 +122,11 @@ The determinant is bounded by the norms but is not a norm: it is homogeneous of 
 
 **Worked example.** For $A=\operatorname{diag}(1,2,3)$, the singular values are $1,2,3$, so
 $$
-\|A\|_{\mathrm{op}}=3,\qquad \|A\|_{\mathrm{F}}=\sqrt{14},\qquad \|A\|_{*}=6,\qquad \det A=6.
+\|A\|=3,\qquad \|A\|_{\mathrm{F}}=\sqrt{14},\qquad \|A\|_{*}=6,\qquad \det A=6.
 $$
 The condition number is $3/1=3$. For $B=\operatorname{diag}(2,1,0)$, the singular values are $2,1,0$, so
 $$
-\|B\|_{\mathrm{op}}=2,\qquad \|B\|_{\mathrm{F}}=\sqrt5,\qquad \|B\|_{*}=3,\qquad \det B=0.
+\|B\|=2,\qquad \|B\|_{\mathrm{F}}=\sqrt5,\qquad \|B\|_{*}=3,\qquad \det B=0.
 $$
 The matrix $B$ is singular of rank two; its distance to the rank-at-most-one matrices is $\sigma_{2}=1$ in the operator and Frobenius norms, and its distance to zero is $\sigma_{1}=2$.
 
@@ -181,14 +181,14 @@ defined by the vanishing of all $(r+1)\times(r+1)$ minors. For $r=2$ it is $\Sig
 
 **The distance to the rank strata.** By the Eckart–Young theorem, the distance from $A$ to $M_{\leq r}$ in the operator norm (and in the Frobenius norm) is $\sigma_{r+1}$, with the convention $\sigma_{4}=0$:
 $$
-\operatorname{dist}_{\mathrm{op}}(A,M_{\leq r})=\sigma_{r+1}(A),\qquad
+\operatorname{dist}(A,M_{\leq r})=\sigma_{r+1}(A),\qquad
 \operatorname{dist}_{\mathrm{F}}(A,M_{\leq r})=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
 $$
 So the distance to the singular set is $\sigma_{3}$, the distance to the rank-one variety is $\sigma_{2}$, and the distance to zero is $\sigma_{1}$. The singular values are the coordinates that measure the distance to each rank stratum.
 
 **Proof.** The truncated singular value decomposition $A_{r}=U\operatorname{diag}(\sigma_{1},\ldots,\sigma_{r},0,\ldots,0)V^{*}$ has rank at most $r$ and satisfies
 $$
-\|A-A_{r}\|_{\mathrm{op}}=\sigma_{r+1},\qquad
+\|A-A_{r}\|=\sigma_{r+1},\qquad
 \|A-A_{r}\|_{\mathrm{F}}=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
 $$
 The Eckart–Young theorem states that no matrix of rank at most $r$ is closer in either norm. The distance formula follows.
@@ -247,12 +247,12 @@ The singular set of $M_{3}$ is a cubic hypersurface; the null cone of $\mathbb{B
 The three norms are
 $$
 \boxed{\;\|A\|_{\mathrm{F}}^{2}=\operatorname{tr}(A^{*}A),\qquad
-\|A\|_{\mathrm{op}}=\sigma_{1},\qquad
+\|A\|=\sigma_{1},\qquad
 \|A\|_{*}=\sum_{i}\sigma_{i},\;}
 $$
 with
 $$
-\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
 $$
 The singular values are the square roots of the eigenvalues of $A^{*}A$, and $|\det A|=\prod_{i}\sigma_{i}$.
 
@@ -285,7 +285,7 @@ The trace form is positive definite, with isotropic set $\{0\}$; there is no nul
 | Symbol | Meaning |
 |---|---|
 | $\|A\|_{\mathrm{F}}$ | the Frobenius norm $\sqrt{\operatorname{tr}(A^{*}A)}$ |
-| $\|A\|_{\mathrm{op}}$ | the operator norm, the largest singular value |
+| $\|A\|$ | the operator norm, the largest singular value |
 | $\|A\|_{*}$ | the nuclear norm, the sum of the singular values |
 | $\sigma_{i}$ | the singular values, $\sigma_{1}\geq\sigma_{2}\geq\sigma_{3}\geq0$ |
 | $\Sigma$ | the singular set $\{\det A=0\}$ |

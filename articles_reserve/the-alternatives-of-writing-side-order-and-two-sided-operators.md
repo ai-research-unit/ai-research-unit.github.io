@@ -8,6 +8,47 @@ The question this note answers is narrow and practical. When an operator acts on
 
 Nothing here is a new result. It is an inventory, a set of tables, and a recommendation. The recommendation is that the choice is already made, that it is the right one, and that it should be stated once in the operator conventions so that no article has to rediscover it.
 
+## Why This Calculus
+
+A reader who has followed the tables can still ask what the exercise is for. The answer is physical, and it is the reason the corpus is unusual.
+
+**The right action is not a stylistic choice in this program; it carries the physics.** The frame cells are right multiplications: $T_{e_t,b}=R_b$, so every cell of length one is a right action by an element. The chirality cell is one of them,
+
+$$
+\mathsf C_5=-iT_{e_t,e_z}=R_{-i\vec e_z},
+$$
+
+and the chiral projectors are built from the same cell:
+
+$$
+P_\pm=\tfrac12\bigl(T_{e_t,e_t}\mp iT_{e_t,e_z}\bigr)=R_{\frac12(e_t\mp i\vec e_z)} .
+$$
+
+Writing them out as arrays, they are idempotent, orthogonal, complementary, and of rank two, and every one of those four facts is a fact about a right multiplication:
+
+$$
+P_+=\begin{pmatrix}
+\tfrac12&0&0&\tfrac{i}{2}\\
+0&\tfrac12&-\tfrac{i}{2}&0\\
+0&\tfrac{i}{2}&\tfrac12&0\\
+-\tfrac{i}{2}&0&0&\tfrac12
+\end{pmatrix},
+\qquad
+P_+^2=P_+,\quad P_+P_-=0,\quad P_++P_-=1,\quad \operatorname{rank}P_\pm=2,
+$$
+
+all with residual zero. So chirality in this formalism is literally a multiplication on the right, and a reader trained on matrices will look for a projector and find a right action instead. That is the whole reason the notation has to be settled: the object that splits the field into its two chiral halves is not an operator standing on the left.
+
+**That is where the difficulty starts, and it is not a difficulty of taste.** The inherited habit is that an operator stands to the left of its operand. A right action breaks the habit, and there is no free way to repair it. Three repairs exist, and each pays a specific price: the arrow marks the side on the page and changes nothing, the anti-automorphism turns the right action into a left one at the cost of a long display, and the commutator splits the action into a left part plus a bracket that vanishes on the centre. The corpus uses the first, sometimes reads the second, and never says why.
+
+**The calculus is the accounting.** It answers three practical questions, and nothing else:
+
+- Given an operator, which of the three forms should be written? The answer is a rule, not a preference, and the rule is four tiers: name it, arrow for either side, dot scope for three factors, $\operatorname{nat}$ only on a whole operator.
+- Given two articles that wrote the same operator differently, how does one convert? The conversions are identities, and they hold exactly, so a reader can move between forms without losing a sign.
+- Given a wrong form, how does one notice? Every wrong form returns a specific nonzero residual, and the residuals are computed in the appendix. This is the part that makes the subject more than bookkeeping: without it, a sign error on a right action looks like a chiral equation.
+
+**Why this matters for the physics and not only for the typography.** A wrong side changes the sign of the vector part, and the vector part is where the frame, the spin axis, and the chirality content live. The failure is therefore silent in the way that matters most: the equation keeps its shape, keeps most of its signs, and describes a different physical object. The example below is the smallest case of that, and it is the reason the note insists on writing the middle index as $\operatorname{nat}(b)$ and not $b$.
+
 ## The Four Levels
 
 Most confusion about this subject comes from treating four different questions as one. They are separate, and they are answered by different objects.
@@ -34,17 +75,31 @@ There are six ways to write a right action, and only one of them is used by the 
 | N0 | Bare juxtaposition | $\tilde\Psi\tilde\nabla$ | Nowhere; it is the ambiguous case |
 | N1 | Arrow | $\tilde\Psi\overleftarrow{\tilde\nabla}$ | Quantum field theory, anomalies, chiral perturbation theory |
 | N2 | Dot scope | $\vec A\,\dot{\vec\nabla}$ | Geometric algebra, calculus of variations |
-| N3 | Opposite-algebra name | $\tilde\Psi\,\tilde\nabla^{\mathrm{op}}$ | Ring theory, module theory |
+| N3 | Opposite-algebra name | $\tilde\Psi\,\tilde\nabla^{\mathrm{opp}}$ | Ring theory, module theory |
 | N4 | Bimodule subscripts | ${}_{\tilde\nabla}\tilde\Psi$ | Module theory, in running text only |
 | N5 | Row-vector flip | every field written as a row | Elementary matrix algebra |
 
 **N0 is not an option.** If the operator is written after the field with no mark, the reader cannot tell whether it acts or whether it is a coefficient, and the physics prior is the opposite of what the corpus means. The corpus never does it: no article writes a right-acting gradient without a mark.
 
-**N1 is the corpus's choice.** The arrow states the side and nothing else. It is the only one of the six that is already standard in physics for exactly this purpose, and it is the only one that reads as a mark rather than as a name. Its limit is that it exists only for differential operators. Nobody writes $\psi\overleftarrow{b}$.
+**N1 is the corpus's choice.** The arrow states the side and nothing else. It is the only one of the six that is already standard in physics for exactly this purpose, and it is the only one that reads as a mark rather than as a name. In the corpus it is used only for differential operators, and nobody writes $\psi\overleftarrow{b}$. That is a fact about the corpus, not a limit of the mark: the appendix uses the pair $b\overrightarrow{\psi}$ and $\psi\overleftarrow{b}$ on elements without restriction, and it is the cheapest faithful display there. The limit of the arrow is not its reach. It is that the arrow says a side and nothing else, so it cannot carry a length, a rank or a name, and it cannot scope a derivative across three factors.
 
 **N2 is exact but barred.** The dot says which factor carries the derivative, so it survives products of three or more factors, where the arrow cannot say which one is meant. But the corpus has removed the glyph: *Operator and Calculus Conventions* states that no derivative is written with a dot, and a scan of the four hundred and four articles finds no derivative dot at all, every instance of the dot token in the corpus being the ellipsis of $\dots$. Reintroducing it for scope would collide with a rule the corpus has already paid for.
 
-**N3 is exact and legal.** $\tilde\nabla^{\mathrm{op}}$ names the right-acting gradient and needs no glyph. The cost is that the side is fused into the name: a reader who does not know the convention reads $\tilde\nabla^{\mathrm{op}}$ as a different operator rather than as the same operator acting from the other side. It is the natural choice for a reader coming from algebra and the unnatural one for a reader coming from physics.
+**N3 is exact and legal, and the corpus already owns the spelling.** $\tilde\nabla^{\mathrm{opp}}$ names the right-acting gradient and needs no glyph. The cost is that the side is fused into the name: a reader who does not know the convention reads $\tilde\nabla^{\mathrm{opp}}$ as a different operator rather than as the same operator acting from the other side. It is the natural choice for a reader coming from algebra and the unnatural one for a reader coming from physics.
+
+**The letters matter, and the corpus has now decided all of them.** *Algebra and Element Conventions* and *Index and Notation Conventions* both state that the opposite algebra carries the three-letter superscript, $\mathbb{B}^{\mathrm{opp}}$ with $a\cdot_{\mathrm{opp}}b=ba$, and both now state that the two-letter $\mathrm{op}$ is not a token of the corpus at all. The reason is the distance between the two: one letter out of three, at superscript size, does not separate two meanings at reading speed, so a page carrying both would be undecidable. A scan of the two collections returns one thousand and ninety-five occurrences of $\mathrm{opp}$ in one hundred and seventy-eight articles, every one of them naming an opposite algebra, and nine occurrences of $\mathrm{op}$ in five articles, every one of them inside the sentence that forbids it.
+
+| The two-letter form | Now |
+|---|---|
+| $\lVert A\rVert_{\mathrm{op}}$ | $\lVert A\rVert$, bare; the rivals keep $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$ |
+| $\psi^{\mathrm{op}\mu}$ | $\psi_\mu$, the same letter as the Grassmann variable it quantizes |
+| $p^{\mathrm{op}2}$ | $p^{2}$, the scalar square |
+| $A^{\mathrm{op}}$ | $A^{\mathrm{opp}}$, the three-letter mark the conventions require |
+| $\vec P_{\mathrm{op}}$, $P_{\mathrm{op}}$ | $\vec P$, and $P$ for the polarisation |
+
+Twenty-three articles of the two collections carried one or another of these, and none of them survives. The nearest survivor is a single character, the bare bar of the norm, which is what the functional-analysis articles already wrote throughout, and which the matrix articles now write where they once wrote the two-letter label.
+
+**So the spelling for the right-acting gradient is fixed twice over.** It cannot be $\tilde\nabla^{\mathrm{op}}$, because that token no longer exists. It can be $\tilde\nabla^{\mathrm{opp}}$, three letters, which is legal and correct under the corpus's rule. And it need not be either, because the arrow says the same thing in one glyph.
 
 **N4 is exact and unreadable.** Subscripts state the module structure precisely and are unusable at display size. They are the right notation for a proof and the wrong notation for an equation.
 
@@ -231,7 +286,7 @@ $$
 | N0 | $\tilde\nabla\tilde\Psi_R$ | Correct here, because the operator is written first |
 | N1 | — | Not applicable, the field is not to the left |
 | N2 | — | Not applicable |
-| N3 | $\tilde\nabla^{\mathrm{op}}\tilde\Psi_R$ | Legal, and it would state a side that is already stated |
+| N3 | $\tilde\nabla^{\mathrm{opp}}\tilde\Psi_R$ | Legal, and it would state a side that is already stated |
 | N4 | ${}_{\tilde\nabla}\tilde\Psi_R$ | Exact, noisy |
 | N5 | unchanged | The field is a biquaternion, not a row |
 
@@ -264,7 +319,7 @@ This is the only one of the twelve where the display choice actually decides whe
 | N0 | $\tilde\Psi\tilde\nabla$ | No: indistinguishable from a left action |
 | N1 | $\tilde\Psi\overleftarrow{\tilde\nabla}$ | Yes, and it is the corpus form |
 | N2 | $\vec\nabla$ acting on the previous factor, marked by a dot | Yes, and unambiguous for three factors |
-| N3 | $\tilde\Psi\,\tilde\nabla^{\mathrm{op}}$ | Yes, at the price of a name to remember |
+| N3 | $\tilde\Psi\,\tilde\nabla^{\mathrm{opp}}$ | Yes, at the price of a name to remember |
 | N4 | ${}_{\tilde\nabla}\tilde\Psi$ | Exact, unreadable in a display |
 | N5 | transpose the field | Would change the whole article |
 
@@ -283,7 +338,7 @@ $$
 | N0 | $G^+\nabla$ | No |
 | N1 | $G^+\overleftarrow{\nabla}$ | Yes, and it shows at a glance which of the two terms acts which way |
 | N2 | $g_m$ times a scoped derivative | Yes, and less legible in a four-term sum |
-| N3 | $G^+\nabla^{\mathrm{op}}$ | Exact, and shorter than the arrow |
+| N3 | $G^+\nabla^{\mathrm{opp}}$ | Exact, and shorter than the arrow |
 | N4 | subscripted | No, in a display |
 | N5 | transpose $G^+$ | Local only, and it hides the symmetry |
 
@@ -324,7 +379,7 @@ $$
 | Option | Writing | Verdict |
 |---|---|---|
 | N0 | impossible | The operator is pure right action |
-| N1 | $\psi\overleftarrow{\vec e_z}$ | No: the arrow is for derivatives only |
+| N1 | $-i\psi\overleftarrow{\vec e_z}$ | Yes, in this note: the arrow carries the side, the coefficient carries the $-i$ |
 | N2 | impossible | Same reason |
 | N3 | $R_{e_z}$ | Yes, and it is the same statement |
 | N4 | subscript | No |
@@ -415,7 +470,7 @@ $$
 |---|---|---|
 | N0 | $\tilde\nabla\Gamma$ | Correct: the operator is on the left and acts on what follows |
 | N1 | — | Would add a side that the writing already fixes |
-| N3 | $\Gamma\tilde\nabla^{\mathrm{op}}$ | Legal only if the convention were right-to-left |
+| N3 | $\Gamma\tilde\nabla^{\mathrm{opp}}$ | Legal only if the convention were right-to-left |
 | N4 | subscript | No |
 | N5 | transpose | No |
 
@@ -454,7 +509,7 @@ $$
 |---|---|---|
 | N1 | as written | Correct, and ambiguous about the operand |
 | N2 | dot scope on each factor | Clearer about which argument is differentiated |
-| N3 | $\partial^{\mathrm{op}}$ | Exact, and hides that there are two operands |
+| N3 | $\partial^{\mathrm{opp}}$ | Exact, and hides that there are two operands |
 | N4 | subscripts on both arguments | Exact, unreadable |
 | N5 | — | No |
 
@@ -506,7 +561,7 @@ The corpus follows a rule. It has never been written down, and it is short enoug
 
 **Tier one: name the operator.** Left multiplication, right multiplication, two-sided operator, frame cell, chirality cell, mass-shell cell. No glyph, no arrow, no dot. This covers the ordinary language of the corpus and should be the default in every article.
 
-**Tier two: the arrow, for a differential operator acting rightward.** Written only where a derivative acts on what precedes it, and chosen here because it is shorter than the sandwich and not because the sandwich fails. Defined once, in the operator conventions, with two clauses fixed: that the arrow means the derivative acts on the factor to its left, and that the double arrow means one derivative on each side with the sign convention stated.
+**Tier two: the arrow, for a side that needs marking.** $b\overrightarrow{\psi}$ for the left action and $\psi\overleftarrow{b}$ for the right one, on elements and on derivatives alike, allowed without restriction in this note. It is chosen because it is shorter than the sandwich, not because the sandwich fails. For a derivative the arrow is not merely shorter but required, since a derivative has no cell form. Defined once, in the operator conventions, with two clauses fixed: that the arrow points at what the operator acts on, and that the double arrow means one derivative on each side with the sign convention stated.
 
 **Tier three: dot scope, for a product of three or more factors carrying derivatives.** The arrow cannot say which factor is meant when there are three. Dot scope can. It is currently barred by the no-dot rule, which is about $\dot x$ for $dx/dt$ and not about scope, and the ban could be narrowed to the case it was written for. Nothing in the corpus needs this tier yet; the Poisson bracket is the only expression that nearly does.
 
@@ -518,7 +573,7 @@ The corpus follows a rule. It has never been written down, and it is short enoug
 
 The collision recorded in *The Census* is cheap to settle now and expensive to settle later, because the four articles that decorate an algebra and the three that mark a side are still disjoint. A decision is needed, and the corpus has the material to make one.
 
-The principle: **the arrow is a mark of a side for a derivative, and an algebra symbol is not a derivative.** An algebra written under the arrow is not being differentiated, so the mark is doing something else, and the two uses cannot both be the arrow.
+The principle, restated now that the side mark is allowed on any object: **the arrow is a mark of a side, and it is never a decoration on a name.** An algebra written under the arrow is not being acted on by anything, so the mark there is doing something else, and the two uses cannot both be the arrow. What the arrow may mark is an action of one object on another, whatever the objects are: a derivative on a field, an element on a field, an element on both sides at once.
 
 | Candidate for the algebra left-action mark | Writing | Collision | Verdict |
 |---|---|---|---|
@@ -527,7 +582,7 @@ The principle: **the arrow is a mark of a side for a derivative, and an algebra 
 | Second arrow | $\leftarrow\mathbb{C}\otimes\mathbb{O}$ | None, but two near-identical marks in one document | Weak |
 | The word | the left action of the complex octonionic chain algebra | None, verbose | Acceptable in prose |
 
-The recommendation is therefore: keep $\overleftarrow{\ }$ for derivatives and for nothing else, and write the algebra's left action with a prescript or with the word. Two sentences in the operator conventions would fix it, one for each mark, and the seven articles would need no rewriting today, only the four that quote the chain algebra would change a glyph.
+The recommendation is therefore two-sided. Allow the pair $\overrightarrow{\ }$ and $\overleftarrow{\ }$ on any object that acts, elements included, because there the mark states a side that no other single glyph states. Keep it off names: the algebra's left action takes a prescript, $\mathbb{C}\otimes\mathbb{O}$ becoming ${}_{L}\mathbb{C}\otimes\mathbb{O}$, or the word. Two sentences in the operator conventions would fix it, one per mark, and the seven articles would need no rewriting today; only the four that quote the chain algebra would change a glyph.
 
 This note does not make the change. It records the decision, because a reserve note is the right place to argue it and the conventions article is the right place to state it.
 
@@ -552,7 +607,7 @@ Six failures are easy to produce, and each has been produced during the writing 
 - **The relation between $P$ and $\mathsf C_5$.** It is exactly $P=-\mathsf C_5$, and no article states it. Two articles use the two names for the same object.
 - **Whether tier three is needed.** The corpus has one expression that would benefit and none that requires it. Until an article writes a three-factor derivative product, dot scope is available and unused.
 - **The double-arrow convention.** The corpus does not use the double arrow anywhere. If it ever does, the factor of $\tfrac12$ has to be fixed, because the literature is not unanimous.
-- **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. The candidates and a recommendation are in the section above, *Deciding the Arrow*; the decision is the author's, and it belongs in the operator conventions.
+- **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. This note settles the case it can settle: the mark is allowed on any object that acts, and it is kept off names, so the algebra decoration takes a prescript. What remains open is the corpus-wide change, which belongs in the operator conventions.
 - **The corpus has no settled name for the natural map.** It marks the value, $X^{\natural}$, and names the operator $X\mapsto X^{\natural}$ only by writing the same glyph bare in nine places. *Naming the Map* supplies one, $\operatorname{nat}$, and a sentence in *Product and Form Conventions* beside the $\bar{\cdot}$ row would make it official. The same sentence would fix the placeholder form $(\cdot)^{\natural}$.
 - **Which side is the matter representation.** The minimal coupling article records the left and the right construction as two covariant mirrors and calls the choice open. The notation question is downstream of that choice and cannot settle it: a corpus that had chosen the right action would write N1 everywhere and the cells would change roles. Until the choice is made, the arrow is the only mark that keeps both forms printable without rewriting the other.
 
@@ -562,19 +617,19 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 **The levels are four.** Naming is fixed by the conventions, display is free, rewrite is fixed by a theorem, and components are barred. Confusion comes from treating them as one.
 
-**The arrow is not the transposition.** The arrow marks a side on a page and changes nothing. The transposition replaces the right action by a left one and costs two applications of $\operatorname{nat}$, of length four each. The arrow is used only for derivatives, and there it is the shortest form rather than the only one: the sandwich reaches a derivative too, at the cost of a longer display.
+**The arrow is not the transposition.** The arrow marks a side on a page and changes nothing. The transposition replaces the right action by a left one and costs two applications of $\operatorname{nat}$, of length four each. The arrow is the shortest faithful form for a side, on a derivative and on an element alike, but shortest is all it is: the sandwich reaches both, at the cost of a longer display.
 
 **Algebraic right action needs no arrow.** $R_b=T_{e_t,b}$ is a cell of length one. The corpus writes it as $R_b$, and the three articles that use the arrow as a side mark all put it on a derivative.
 
 **Of twelve equations, the display decides three.** They are the right-acting gradient, the Maxwell sum of a left and a right term, and the Poisson bracket. Five are decided by the naming level, because they are two-sided or purely right-sided and no display option exists for them. Four are decided by nothing, because the operator is written first.
 
-**The rule is four tiers.** Name the operator; arrow for a rightward derivative; dot scope for three factors with derivatives; $\operatorname{nat}$ only on whole operators. Never read integration by parts as a change of side.
+**The rule is four tiers.** Name the operator; arrow for either side, on elements and derivatives; dot scope for three factors with derivatives; $\operatorname{nat}$ only on whole operators. Never read integration by parts as a change of side.
 
 **The transposition is coordinate-bound, the named operator is not.** The conventions' $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ is true, with residual zero, in the frame it was written for; the same identity in the coefficient frame needs $\operatorname{nat}$ instead of $\mathsf S$, and without a sandwich it fails in both. This note filed it as an erratum on a first pass and withdrew the erratum: the mismatch was one of frames.
 
 **The map needs a name.** The corpus writes $X^{\natural}$ as a mark and the bare glyph as the map in nine places, so the same sign already means two things. $\operatorname{nat}$ is the cheapest name that does not collide, and one sentence in the conventions would settle it.
 
-**The arrow needs a decision.** It marks a side in three articles and decorates an algebra in four. The recommendation is to reserve it for derivatives and give the algebra left-action a prescript.
+**The arrow needs a decision, and this note takes it.** The pair $\overrightarrow{\ }$, $\overleftarrow{\ }$ is allowed on any object that acts, elements included, and is used systematically in the appendix so that the cost can be compared with the name and with the sandwich. It stays off names: the algebra's left-action decoration becomes a prescript.
 
 ## Summary of Notation
 
@@ -612,17 +667,95 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 ## Worked Examples on Matrices
 
-Everything above is a statement about operators. This appendix puts numbers on it. Every matrix below was computed from the multiplication itself, every entry is an exact integer or a Gaussian integer, and every residual quoted as zero is exactly zero, not small.
+Everything above is a statement about operators. This appendix puts numbers on it.
 
-### The Two Arrays
+### What These Examples Are For
 
-**The carrier array.** $L_a$ is the four-by-four matrix of left multiplication by $a$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and $R_b$ the same for right multiplication. The natural sign is the diagonal matrix
+The tables above say which form is correct. This appendix shows the forms doing work, one job per example, and it keeps the two sides apart on purpose:
+
+| Example | The job | What it settles |
+|---|---|---|
+| 0 | The left action $b\overrightarrow{\psi}$, every step | The baseline: one glyph, one array product, no rewriting |
+| 1 | The right action $\psi\overleftarrow{b}$, every step, from scratch | The three-step chain, and the two independent routes to it |
+| 2 | The two side by side | They differ by the sign of the frame term, and nothing else |
+| 3 | A mixed element $e_t+\vec e_z$ | How much rewriting an element needs, measured by its vector part |
+| 4 | Complex coefficients | That the natural sign is not a complex conjugation, with residuals |
+| 5 | A central element | Where the rewriting does nothing, which is where the mass sits |
+| 6 | A derivative | That the sandwich reaches it, and why the arrow is still shorter |
+| 7 | The arrows used systematically | What the pair buys, what it costs, and one order reversal it exposes |
+
+Example 0 exists because the note makes it necessary. The whole difficulty is that the right action has no free notation. The way to see what "free" means is to write the left action first, in one line, and then write the right action, which takes three maps.
+
+Examples 0 and 1 are independent. Each starts from the multiplication table and the definition of its own side, and neither uses the other's result. They meet only in Example 2, which compares them.
+
+Every matrix below was computed from the multiplication and checked against the printed form, thirty blocks with no mismatch. Every entry is an exact integer or a Gaussian integer, so every residual quoted as zero is exactly zero.
+
+### The Two Arrows
+
+Both marks are used in this appendix, without restriction, on elements and on derivatives alike:
+
+$$
+b\overrightarrow{\psi}:=L_b(\psi)=b\psi,
+\qquad
+\psi\overleftarrow{b}:=R_b(\psi)=\psi b .
+$$
+
+The arrow points at what the operator acts on. Read it as a preposition: $b\overrightarrow{\psi}$ is "$b$ acting on $\psi$", $\psi\overleftarrow{b}$ is "$\psi$ acted on by $b$". The mark states the side and carries nothing else. The names $L_b$ and $R_b$ remain available, and the cells $T_{a,b}$ remain available; the arrows are a display, not a definition.
+
+The carrier arrays are the same objects written as matrices in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$:
+
+$$
+\bigl(L_a\bigr)_{\mu\nu}\ \text{is the }\mu\text{-th coordinate of }a\,e_\nu,
+\qquad
+\bigl(R_b\bigr)_{\mu\nu}\ \text{is the }\mu\text{-th coordinate of }e_\nu\,b .
+$$
+
+The two definitions differ in one word: the product is taken in the other order. That is the entire difference between the two sides, and everything below is a consequence of it. The natural sign is the diagonal array
 
 $$
 N=\operatorname{diag}(1,-1,-1,-1),
 $$
 
-since it fixes $e_t$ and negates the three vectors. For $b=\vec e_x$ the two families are
+since it fixes $e_t$ and negates the three frame units.
+
+### Example 0: The Left Action, Every Step
+
+**The question.** Compute $b\overrightarrow{\psi}$ for $b=\vec e_x$ and $\psi=e_t+2\vec e_y$.
+
+**The table.** Every number in this appendix comes from one product table, so it is stated once. The scalar unit is the identity, the three frame units square to minus it, two different frame units anticommute, and the triple is cyclic. Read a row label on the left against a column label on the top:
+
+| $\cdot$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+|---|---|---|---|---|
+| $e_t$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+| $\vec e_x$ | $\vec e_x$ | $-e_t$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
+| $\vec e_z$ | $\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
+
+**Predict the answer before writing any array.** Left multiplication distributes over the sum, so
+
+$$
+\vec e_x\overrightarrow{(e_t+2\vec e_y)}=\vec e_x\overrightarrow{e_t}+2\,\vec e_x\overrightarrow{\vec e_y}
+=\vec e_x+2\vec e_z,
+$$
+
+using two entries of the table: $\vec e_xe_t=\vec e_x$ in row 2, column 1, and $\vec e_x\vec e_y=\vec e_z$ in row 2, column 3. So the expected answer is the coordinate column
+
+$$
+(0,1,0,2)^{\mathsf T},
+$$
+
+that is no $e_t$, one $\vec e_x$, no $\vec e_y$ and two $\vec e_z$, which is $\vec e_x+2\vec e_z$.
+
+**Build the array, column by column.** Column $j$ of $L_{\vec e_x}$ is the image of the $j$-th basis element, that is $\vec e_xe_j$. Each column is one table entry:
+
+| Column | Basis element | Product | Coordinates |
+|---|---|---|---|
+| 1 | $e_t$ | $\vec e_xe_t=\vec e_x$ | $(0,1,0,0)$ |
+| 2 | $\vec e_x$ | $\vec e_x\vec e_x=-e_t$ | $(-1,0,0,0)$ |
+| 3 | $\vec e_y$ | $\vec e_x\vec e_y=\vec e_z$ | $(0,0,0,1)$ |
+| 4 | $\vec e_z$ | $\vec e_x\vec e_z=-\vec e_y$ | $(0,0,-1,0)$ |
+
+so
 
 $$
 L_{\vec e_x}=
@@ -631,8 +764,79 @@ L_{\vec e_x}=
 1&0&0&0\\
 0&0&0&-1\\
 0&0&1&0
-\end{pmatrix},
-\qquad
+\end{pmatrix}.
+$$
+
+Read the array by its columns, not its rows: the first column says "sends $e_t$ to $\vec e_x$", the third says "sends $\vec e_y$ to $\vec e_z$". The rows are just where the coordinates land.
+
+**Multiply.** With $\psi=(1,0,2,0)^{\mathsf T}$, every term of every row:
+
+$$
+L_{\vec e_x}\psi=
+\begin{pmatrix}
+0\cdot1+(-1)\cdot0+0\cdot2+0\cdot0\\
+1\cdot1+0\cdot0+0\cdot2+0\cdot0\\
+0\cdot1+0\cdot0+0\cdot2+(-1)\cdot0\\
+0\cdot1+0\cdot0+1\cdot2+0\cdot0
+\end{pmatrix}
+=
+\begin{pmatrix}0\\1\\0\\2\end{pmatrix}.
+$$
+
+Two rows are nonzero because two coordinates of $\psi$ are nonzero. Only row 2 receives from column 1, and only row 4 receives from column 3.
+
+**Read back.** $(0,1,0,2)^{\mathsf T}=\vec e_x+2\vec e_z$, which is the predicted answer. Nothing was reversed, nothing changed sign, and no mark was needed.
+
+**The column picture, which is what the array means.** A matrix times a column is a weighted sum of its columns, the weights being the coordinates of the column:
+
+$$
+1\cdot\begin{pmatrix}0\\1\\0\\0\end{pmatrix}
++0\cdot\begin{pmatrix}-1\\0\\0\\0\end{pmatrix}
++2\cdot\begin{pmatrix}0\\0\\0\\1\end{pmatrix}
++0\cdot\begin{pmatrix}0\\0\\-1\\0\end{pmatrix}
+=\begin{pmatrix}0\\1\\0\\2\end{pmatrix}.
+$$
+
+The two surviving terms are exactly the two products computed by hand at the start. The array adds nothing; it is the same two table entries, arranged so that a machine can repeat them.
+
+**The array is faithful to the table.** Left multiplication is a homomorphism, so composing arrays multiplies the elements:
+
+$$
+L_{a}L_{c}=L_{ac}\qquad\text{for all }a,c ,
+$$
+
+residual $2\times10^{-15}$ over two hundred random pairs. Concretely, $L_{\vec e_y}L_{\vec e_z}=L_{\vec e_x}$, because $\vec e_y\vec e_z=\vec e_x$ in the table. So a chain of left actions is read straight off the elements, in the same order, and no bookkeeping is lost.
+
+### Example 1: The Right Action, Independently
+
+**The question.** Compute $\psi\overleftarrow{b}$ for the same $\psi=e_t+2\vec e_y$ and $b=\vec e_x$. This example shares nothing with the previous one except the table. It does not use $L_{\vec e_x}$, it does not use the sandwich as a definition, and it does not assume the answer.
+
+**Predict the answer from the table alone.** Right multiplication also distributes over the sum:
+
+$$
+(e_t+2\vec e_y)\overleftarrow{\vec e_x}=e_t\vec e_x+2\,\vec e_y\vec e_x=\vec e_x-2\vec e_z ,
+$$
+
+with the two entries now read in the other order: $e_t\vec e_x=\vec e_x$ in row 1, column 2, and $\vec e_y\vec e_x=-\vec e_z$ in row 3, column 2. The second entry carries a minus sign, because the two frame units anticommute. So the expected answer is
+
+$$
+(0,1,0,-2)^{\mathsf T},
+$$
+
+which differs from the left action's answer in the sign of the last coordinate and nowhere else.
+
+**Build the array, column by column, by the same rule.** Column $j$ of $R_{\vec e_x}$ is the image of $e_j$ under right multiplication, that is $e_j\vec e_x$:
+
+| Column | Basis element | Product | Coordinates |
+|---|---|---|---|
+| 1 | $e_t$ | $e_t\vec e_x=\vec e_x$ | $(0,1,0,0)$ |
+| 2 | $\vec e_x$ | $\vec e_x\vec e_x=-e_t$ | $(-1,0,0,0)$ |
+| 3 | $\vec e_y$ | $\vec e_y\vec e_x=-\vec e_z$ | $(0,0,0,-1)$ |
+| 4 | $\vec e_z$ | $\vec e_z\vec e_x=\vec e_y$ | $(0,0,1,0)$ |
+
+so
+
+$$
 R_{\vec e_x}=
 \begin{pmatrix}
 0&-1&0&0\\
@@ -642,7 +846,155 @@ R_{\vec e_x}=
 \end{pmatrix}.
 $$
 
-They agree in fourteen entries and differ in two, both in the lower block:
+Columns 1 and 2 are the same as in the left array, because $e_t$ and $\vec e_x$ commute with $\vec e_x$; columns 3 and 4 are not, because $\vec e_y$ and $\vec e_z$ do not.
+
+**Multiply**, every term:
+
+$$
+R_{\vec e_x}\psi=
+\begin{pmatrix}
+0\cdot1+(-1)\cdot0+0\cdot2+0\cdot0\\
+1\cdot1+0\cdot0+0\cdot2+0\cdot0\\
+0\cdot1+0\cdot0+0\cdot2+1\cdot0\\
+0\cdot1+0\cdot0+(-1)\cdot2+0\cdot0
+\end{pmatrix}
+=
+\begin{pmatrix}0\\1\\0\\-2\end{pmatrix}.
+$$
+
+**Read back.** $(0,1,0,-2)^{\mathsf T}=\vec e_x-2\vec e_z$, matching the prediction. The array and the hand computation agree, and they were done independently.
+
+**The column picture.** The same two terms, now with the sign from the anticommuting entry:
+
+$$
+1\cdot\begin{pmatrix}0\\1\\0\\0\end{pmatrix}
++2\cdot\begin{pmatrix}0\\0\\0\\-1\end{pmatrix}
+=\begin{pmatrix}0\\1\\0\\-2\end{pmatrix}.
+$$
+
+**Second route to the same answer: the sandwich.** The right action can also be written as three maps. Define the natural sign by its action on the four units, which is also read off the table:
+
+$$
+\operatorname{nat}(e_t)=e_t,\qquad
+\operatorname{nat}(\vec e_x)=-\vec e_x,\qquad
+\operatorname{nat}(\vec e_y)=-\vec e_y,\qquad
+\operatorname{nat}(\vec e_z)=-\vec e_z ,
+$$
+
+extended to coefficients by $\operatorname{nat}\bigl(\sum_\mu a_\mu e_\mu\bigr)=\sum_\mu a_\mu\operatorname{nat}(e_\mu)$ with $a_\mu\in\mathbb C$ untouched, so that $i$ is fixed. It satisfies two identities, each used once below: it is an anti-automorphism, $\operatorname{nat}(ac)=\operatorname{nat}(c)\operatorname{nat}(a)$, and it has order two, $\operatorname{nat}(\operatorname{nat}(a))=a$.
+
+The claim, to be checked rather than assumed, is
+
+$$
+\psi\overleftarrow{b}=\operatorname{nat}\Bigl(\operatorname{nat}(b)\overrightarrow{\operatorname{nat}(\psi)}\Bigr)
+=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_x)\overrightarrow{\operatorname{nat}(\psi)}\bigr)
+=\operatorname{nat}\bigl(-\vec e_x\overrightarrow{\operatorname{nat}(\psi)}\bigr).
+$$
+
+Here $\operatorname{nat}(b)=\operatorname{nat}(\vec e_x)=-\vec e_x$, so the middle operator is left multiplication by $-\vec e_x$, and its array is $L_{-\vec e_x}=-L_{\vec e_x}$:
+
+$$
+L_{\operatorname{nat}(b)}=
+\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&1\\
+0&0&-1&0
+\end{pmatrix}.
+$$
+
+**Step 1, the natural sign.** It is linear, so it acts coordinate by coordinate, and it is the diagonal array $N$:
+
+$$
+N\psi=
+\begin{pmatrix}1\cdot1\\-1\cdot0\\-1\cdot2\\-1\cdot0\end{pmatrix}
+=\begin{pmatrix}1\\0\\-2\\0\end{pmatrix},
+\qquad
+\operatorname{nat}(e_t+2\vec e_y)=e_t-2\vec e_y .
+$$
+
+The scalar part survives because $\operatorname{nat}$ fixes $e_t$; the frame part flips because $\operatorname{nat}$ negates $\vec e_y$. Nothing is reordered, because there is only one element.
+
+**Step 2, left multiplication by $\operatorname{nat}(b)$.** Now there are two elements, so the table is needed, and every term is written out:
+
+$$
+L_{\operatorname{nat}(b)}\operatorname{nat}(\psi)=
+\begin{pmatrix}
+0\cdot1+1\cdot0+0\cdot(-2)+0\cdot0\\
+-1\cdot1+0\cdot0+0\cdot(-2)+0\cdot0\\
+0\cdot1+0\cdot0+0\cdot(-2)+1\cdot0\\
+0\cdot1+0\cdot0+(-1)\cdot(-2)+0\cdot0
+\end{pmatrix}
+=
+\begin{pmatrix}0\\-1\\0\\2\end{pmatrix}.
+$$
+
+The same step in the algebra, with each product shown:
+
+$$
+(-\vec e_x)(e_t-2\vec e_y)
+=(-\vec e_x)e_t+(-\vec e_x)(-2\vec e_y)
+=-\vec e_x+2\,\vec e_x\vec e_y
+=-\vec e_x+2\vec e_z .
+$$
+
+Two signs enter and they come from different places: the minus in front of $\vec e_x$ from the coefficient of $b$, and the plus in front of $2\vec e_z$ from the table entry $\vec e_x\vec e_y=+\vec e_z$. This map reverses nothing; the left factor stays on the left.
+
+**Step 3, the natural sign again.** Linear again, so it distributes over the two terms:
+
+$$
+N\begin{pmatrix}0\\-1\\0\\2\end{pmatrix}
+=\begin{pmatrix}0\\1\\0\\-2\end{pmatrix},
+\qquad
+\operatorname{nat}(-\vec e_x+2\vec e_z)=\vec e_x-2\vec e_z .
+$$
+
+**The two routes agree.** The direct product gave $\vec e_x-2\vec e_z$ and the sandwich gives $\vec e_x-2\vec e_z$. Residual zero, exactly zero, and it is zero for every field rather than for this one: over three hundred random complex fields the largest residual is $0.0$.
+
+$$
+\psi\overleftarrow{\vec e_x}
+=\underbrace{\operatorname{nat}}_{\text{flip}}\circ\underbrace{L_{-\vec e_x}}_{\text{multiply left}}\circ\underbrace{\operatorname{nat}}_{\text{flip}}
+=\underbrace{R_{\vec e_x}}_{\text{multiply right}} .
+$$
+
+**Why it works, in one line.** The last map receives a product of two elements, with left factor $a=\operatorname{nat}(b)$ and right factor $c=\operatorname{nat}(\psi)$. The anti-automorphism swaps them and un-flips each:
+
+$$
+\operatorname{nat}(ac)=\operatorname{nat}(c)\operatorname{nat}(a)
+=\operatorname{nat}\bigl(\operatorname{nat}(\psi)\bigr)\operatorname{nat}\bigl(\operatorname{nat}(b)\bigr)
+=\psi\,b ,
+$$
+
+using order two twice at the end. Checked on the numbers: $\operatorname{nat}(c)=\operatorname{nat}(e_t-2\vec e_y)=e_t+2\vec e_y=\psi$, and $\operatorname{nat}(a)=\operatorname{nat}(-\vec e_x)=+\vec e_x=b$.
+
+**The two ingredients, separately.** Each half of the sandwich does half the work, and the arrays show it. Conjugating $L_{\vec e_x}$ by $N$ without touching the index gives
+
+$$
+N\,L_{\vec e_x}\,N^{-1}=N\,L_{\vec e_x}\,N=
+\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix}
+=-R_{\vec e_x},
+$$
+
+which is the right family with the wrong sign. The sign is then supplied by the index, because $\operatorname{nat}(\vec e_x)=-\vec e_x$:
+
+$$
+N\,L_{\operatorname{nat}(\vec e_x)}\,N^{-1}=-N\,L_{\vec e_x}\,N^{-1}=R_{\vec e_x}.
+$$
+
+Drop either ingredient and the identity fails. With $b$ in the middle, $N L_{\vec e_x}N=-R_{\vec e_x}$, so the same three steps return the negative of the answer; the chain reads
+
+$$
+\psi\ \mapsto\ e_t-2\vec e_y\ \mapsto\ \vec e_x(e_t-2\vec e_y)=\vec e_x-2\vec e_z\ \mapsto\ -\vec e_x+2\vec e_z ,
+$$
+
+and $\vec e_x-2\vec e_z$ is not $-\vec e_x+2\vec e_z$. Without the sandwich at all there is no chain to run, and the right action is simply unrepresented.
+
+**Where the two arrays differ.** Only in the frame block:
 
 $$
 R_{\vec e_x}-L_{\vec e_x}=
@@ -654,73 +1006,32 @@ R_{\vec e_x}-L_{\vec e_x}=
 \end{pmatrix}.
 $$
 
-Both have four nonzero entries, determinant one, trace zero, rank four, and eigenvalues $(i,-i,i,-i)$. The whole of the right action is therefore a sign on one two-by-two block, which is why the corpus can afford to write $R_b$ and never say what it is.
+Fourteen entries agree and two do not. That is why the corpus can write $R_b$ and say nothing: the whole difference between the two sides is one sign on one two-by-two block, the block where the frame unit being multiplied by meets the other two frame units. On the central direction the difference is empty, which is Example 5.
 
-### Example 1: One Vector, Three Steps
+### Example 2: The Two Side by Side
 
-Take $b=\vec e_x$, so that $\operatorname{nat}(b)=-\vec e_x$ and the middle operator is
+Examples 0 and 1 were computed independently and differ in one sign, which is the whole subject.
 
-$$
-L_{\natural(b)}=-L_{\vec e_x}=
-\begin{pmatrix}
-0&1&0&0\\
--1&0&0&0\\
-0&0&0&1\\
-0&0&-1&0
-\end{pmatrix}.
-$$
+| | Left action $b\overrightarrow{\psi}$ | Right action $\psi\overleftarrow{b}$ |
+|---|---|---|
+| Glyph cost | one | one if written with the arrow, eight cells as a sandwich |
+| Array | $L_{\vec e_x}$ | $R_{\vec e_x}$ |
+| Building rule | column $j$ is $\vec e_xe_j$ | column $j$ is $e_j\vec e_x$ |
+| Product on $\psi=e_t+2\vec e_y$ | $\vec e_x+2\vec e_z$ | $\vec e_x-2\vec e_z$ |
+| Coordinates | $(0,1,0,2)$ | $(0,1,0,-2)$ |
+| Commutes with the action? | $e_t$ and $\vec e_x$ yes, $\vec e_y$ and $\vec e_z$ no | same |
+| Array identity | $L_aL_c=L_{ac}$ | $R_aR_c=R_{ca}$ (see Example 7) |
 
-Apply the three maps in order to $\psi=e_t+2\vec e_x$. Each column is one map, and the last is the answer:
+Read the product row as a physics statement. The two actions agree on the first two coordinates and disagree on the last one, which is the frame part. The frame part is where the axis, the spin content and the chirality content sit, so the difference between acting on the left and acting on the right is exactly the sign of the physical direction that carries the label. Same magnitude, same scalar, same shape.
 
-$$
-\psi=\begin{pmatrix}1\\2\\0\\0\end{pmatrix}
-\;\xrightarrow{\ \operatorname{nat}\ }\;
-\begin{pmatrix}1\\-2\\0\\0\end{pmatrix}
-\;\xrightarrow{\ L_{\natural(b)}\ }\;
-\begin{pmatrix}-2\\-1\\0\\0\end{pmatrix}
-\;\xrightarrow{\ \operatorname{nat}\ }\;
-\begin{pmatrix}-2\\1\\0\\0\end{pmatrix}.
-$$
+That is why the note treats the side as a physics question and not a typographic one. A reader who writes $b$ in the middle of the sandwich, or who drops the outer map, does not get a slightly different notation; they get $\vec e_x+2\vec e_z$ where the theory says $\vec e_x-2\vec e_z$, which is a field pointing the other way in the frame direction.
 
-The last column is $\psi b$, computed directly: $(e_t+2\vec e_x)\vec e_x=\vec e_x-2e_t$. The same chain in the algebra, with no matrices at all:
+### Example 3: A Mixed Element
+
+Take $b=e_t+\vec e_z$, so $\operatorname{nat}(b)=e_t-\vec e_z$. The scalar part survives the natural sign and the frame part flips, so only the $\vec e_z$ contribution can move:
 
 $$
-e_t-2\vec e_x\ \mapsto\ (-\vec e_x)(e_t-2\vec e_x)=-\vec e_x-2e_t\ \mapsto\ \natural\bigl(-\vec e_x-2e_t\bigr)=\vec e_x-2e_t.
-$$
-
-Every step is one property. The first map flips the vector part. The middle map is a left multiplication, and it reverses nothing. The last map reverses the factors of the product it receives, and that reversal is what turns the left factor $-\vec e_x$ into a right factor $+\vec e_x$.
-
-### Why Both Ingredients Are Needed
-
-Each of the two ingredients does half the work, and the matrices show the halves.
-
-Conjugating $L_{\vec e_x}$ by $N$, with no change of index, gives
-
-$$
-N\,L_{\vec e_x}\,N^{-1}=
-\begin{pmatrix}
-0&1&0&0\\
--1&0&0&0\\
-0&0&0&-1\\
-0&0&1&0
-\end{pmatrix}
-=-R_{\vec e_x}.
-$$
-
-That is the right family with the wrong sign. The sign is supplied by the index, because $\operatorname{nat}(\vec e_x)=-\vec e_x$:
-
-$$
-N\,L_{\natural(\vec e_x)}\,N^{-1}=-N\,L_{\vec e_x}\,N^{-1}=R_{\vec e_x}.
-$$
-
-So conjugation by the natural sign gets the shape right, and the flipped index gets the sign right. Drop either and the identity fails: with $b$ in the middle the residual is $2$ on the four units, and without any sandwich it is $2$ as well.
-
-### Example 2: A Mixed Element
-
-Take $b=e_t+\vec e_z$, so $\operatorname{nat}(b)=e_t-\vec e_z$. The scalar part survives the natural sign and the vector part flips, so only the $e_z$ contribution can move:
-
-$$
-L_{\natural(b)}=
+L_{\operatorname{nat}(b)}=
 \begin{pmatrix}
 1&0&0&1\\
 0&1&1&0\\
@@ -737,11 +1048,11 @@ R_b=
 \end{pmatrix}.
 $$
 
-Fourteen entries agree, and the two that differ are the corners $(1,4)$ and $(4,1)$. The residual of $R_b=N L_{\natural(b)}N^{-1}$ is zero.
+Fourteen entries agree, and the two that differ are the corners $(1,4)$ and $(4,1)$. The residual of $R_b=N L_{\operatorname{nat}(b)}N^{-1}$ is zero.
 
-The general lesson is the one the cells already suggest: the amount of rewriting an element needs is measured by its vector part. A central element needs none, which is Example 4.
+The column rule explains the count. Right multiplication by $e_t$ moves nothing, so all the difference comes from $\vec e_z$, which anticommutes with $\vec e_x$ and $\vec e_y$ but commutes with $e_t$ and itself. Only the $e_t$-$\vec e_z$ corner can see the sign.
 
-### Example 3: Complex Coefficients and the Trap
+### Example 4: Complex Coefficients and the Trap
 
 Use the two-by-two module representation, where the field is a matrix $X$, left multiplication is $\mathsf M_2(a)X$, right multiplication is $X\mathsf M_2(b)$, and the natural sign is a transpose dressed by $\sigma_2$:
 
@@ -754,7 +1065,7 @@ Take $b=(1+i)\vec e_x$, so $\operatorname{nat}(b)=-(1+i)\vec e_x$, and the test 
 $$
 \mathsf M_2(b)=\begin{pmatrix}0&1-i\\1-i&0\end{pmatrix},
 \qquad
-\mathsf M_2(\natural b)=\begin{pmatrix}0&-1+i\\-1+i&0\end{pmatrix},
+\mathsf M_2(\operatorname{nat}b)=\begin{pmatrix}0&-1+i\\-1+i&0\end{pmatrix},
 \qquad
 \operatorname{nat}(X_0)=\begin{pmatrix}4&-2i\\-3&1\end{pmatrix}.
 $$
@@ -762,7 +1073,7 @@ $$
 The sandwich reproduces the right multiplication exactly:
 
 $$
-\operatorname{nat}\bigl(\mathsf M_2(\natural b)\operatorname{nat}(X_0)\bigr)
+\operatorname{nat}\bigl(\mathsf M_2(\operatorname{nat}b)\operatorname{nat}(X_0)\bigr)
 =
 \begin{pmatrix}2+2i&1-i\\4-4i&3-3i\end{pmatrix}
 =
@@ -771,7 +1082,7 @@ $$
 
 residual zero.
 
-**The trap is that the natural sign looks like a complex conjugation and is not one.** It is $\mathbb C$-linear: it acts on the quaternion units and leaves $i$ alone. Replacing it by the coefficient conjugation, which does touch $i$, gives residual $8.485$ on this example. Replacing the middle index $\operatorname{nat}(b)$ by $\bar b$ gives residual $8$. On elements with real coefficients the two readings are closer, so the error stays quiet until the first complex coefficient arrives. That is the worst kind of error and it is the reason the note insists on the mark.
+**The trap is that the natural sign looks like a complex conjugation and is not one.** It is $\mathbb C$-linear: it acts on the quaternion units and leaves $i$ alone. Replacing it by the coefficient conjugation, which does touch $i$, gives residual $8.485$ on this example. Replacing the middle index $\operatorname{nat}(b)$ by $\bar b$ gives residual $8$. On elements with real coefficients the two readings are closer, so the error stays quiet until the first complex coefficient arrives.
 
 | Wrong substitution | Residual, $b=\vec e_x$ | Residual, $b=(1+i)\vec e_x$ |
 |---|---|---|
@@ -783,7 +1094,7 @@ residual zero.
 
 The test field is $X_0$ in every row, so the numbers are comparable. None of them is small, and none of them announces itself.
 
-### Example 4: Where the Rewriting Does Nothing
+### Example 5: Where the Rewriting Does Nothing
 
 Take $b=3e_t$. Then $\operatorname{nat}(b)=b$, the two families coincide, $L_b=R_b$, and the sandwich returns $L_b$ unchanged:
 
@@ -795,14 +1106,79 @@ $$
 
 The identity is true and empty. The centre is the mass direction, so R1 has nothing to say exactly where the mass sits. R2 fails there for the opposite reason: its commutator term vanishes, but its left term is already correct. One route loses the term, the other merely cannot improve it, and the two failures sit on the same subspace.
 
-### Example 5: A Derivative
+### Example 6: A Derivative
 
 The corpus writes $\tilde\nabla^{\natural}$ many times, and that mark is the natural sign applied to the gradient as an element. The same construction reaches a rightward derivative. For a field $\Phi$ and a single direction,
 
 $$
-(\partial_\mu\Phi)\,\vec e_\mu=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_\mu)\,\partial_\mu(\operatorname{nat}\Phi)\bigr),
+(\partial_\mu\Phi)\vec e_\mu=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_\mu)\,\partial_\mu(\operatorname{nat}\Phi)\bigr),
 $$
 
 which holds at every point, residual zero on three sample points and on any polynomial or trigonometric field. The middle operator is the natural conjugate of the gradient component, so R1 extends to differential operators after all.
 
-What it does not do is get shorter. For an element the composite collapses to a cell of length one, $R_b=T_{e_t,b}$, and nobody writes the sandwich. For a derivative it collapses to nothing: three symbols and a flipped frame coefficient, against one arrow. So the arrow is the shortest faithful form for a rightward derivative, not the only one, and the two are related by exactly the identity this note is about. Integration by parts is a third thing, and no conjugation replaces it: it moves differentiation between two factors of a bilinear form, and it changes the sign.
+What it does not do is get shorter. For an element the composite collapses to a cell of length one, $R_b=T_{e_t,b}$, and nobody writes the sandwich. For a derivative it collapses to nothing: three maps and a flipped frame coefficient, against one arrow. So the arrow is the shortest faithful form for a rightward derivative, not the only one, and the two are related by exactly the identity this note is about. Integration by parts is a third thing, and no conjugation replaces it: it moves differentiation between two factors of a bilinear form, and it changes the sign.
+
+### Example 7: The Arrows Used Systematically
+
+The decision taken above is that $\overrightarrow{\ }$ and $\overleftarrow{\ }$ may mark any action on any object. This example records what happens when they are used that way, because three things follow and two of them are not obvious.
+
+**One: the display collapses.** The chirality cell of equation 6 acts as $-iR_{\vec e_z}$, so on a field it is written
+
+$$
+-i\,\psi\overleftarrow{\vec e_z}
+$$
+
+against eight cells for the same statement written as a sandwich. The arrow carries the side, the coefficient carries the $-i$, and nothing has been lost. The cell name $-iT_{e_t,e_z}$ remains the right form when the operator is the subject of a sentence, and the arrow is the right form when the field is.
+
+**Two: the arrows merge in reading order, the arrays in the reverse order.** Because the product is associative,
+
+$$
+\psi\overleftarrow{b_1}\overleftarrow{b_2}=\psi\overleftarrow{b_1b_2},
+\qquad
+b_1\overrightarrow{b_2\overrightarrow{\psi}}=b_1b_2\overrightarrow{\psi},
+$$
+
+so a chain of arrows is read straight off, left to right, with no reordering. The arrays do not behave the same way. Left multiplication is a homomorphism and right multiplication is an anti-homomorphism:
+
+$$
+L_{a}L_{c}=L_{ac},
+\qquad
+R_{a}R_{c}=R_{ca}.
+$$
+
+Both verified: first residual $2\times10^{-15}$, second $2.5\times10^{-15}$ over two hundred random pairs; concretely $R_{\vec e_x}R_{\vec e_y}=R_{\vec e_y\vec e_x}=R_{-\vec e_z}$ exactly. This is the fact that makes N3 in the display table the *opposite*-algebra name: the right action is a left action of the opposite algebra, and the word "opposite" is exactly this order reversal. A reader using arrows never meets it, and a reader multiplying arrays meets it on the first composite.
+
+**Three: under the natural sign the arrow reverses.** Since $\operatorname{nat}$ is an anti-automorphism,
+
+$$
+\operatorname{nat}\bigl(b\overrightarrow{\psi}\bigr)=\operatorname{nat}(\psi)\overleftarrow{\operatorname{nat}(b)},
+\qquad
+\operatorname{nat}\bigl(\psi\overleftarrow{b}\bigr)=\operatorname{nat}(b)\overrightarrow{\operatorname{nat}(\psi)},
+$$
+
+residual $1.8\times10^{-15}$ over two hundred random pairs. Read that as a rule of the page: applying $\operatorname{nat}$ to a product flips its arrow and conjugates both entries. Then R1 stops being a formula and becomes a sentence. The sandwich
+
+$$
+R_b=\operatorname{nat}\circ L_{\operatorname{nat}(b)}\circ\operatorname{nat}
+$$
+
+says: flip the arrow, conjugate both entries, flip the arrow back, and the result is the other side. Nothing else in the identity is doing work.
+
+**Four: the arrows do retire one name, and only one.** The right-acting derivative had a candidate name, $\tilde\nabla^{\mathrm{opp}}$, and it is now unnecessary: with the arrow allowed on any object, $\tilde\Psi\overleftarrow{\tilde\nabla}$ says the same thing in one glyph and needs no convention. Nothing is lost, because that name was never used. A scan of the four hundred and four articles returns no occurrence of $\tilde\nabla^{\mathrm{opp}}$, $\partial^{\mathrm{opp}}$ or $\nabla^{\mathrm{opp}}$ outside this note: the option existed only as a candidate in the table.
+
+**What the arrows do not retire is the algebra.** $\mathbb{B}^{\mathrm{opp}}$ is not an action, it is an object: it is the algebra with the product reversed, and it is what makes the multiplication map readable as a homomorphism,
+
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+\qquad
+\tilde Q\otimes\tilde P^{\mathrm{opp}}\longmapsto T_{\tilde Q,\tilde P},
+$$
+
+with the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ mapping to the sixteen cells $T_{\mu\nu}$. An arrow cannot do that job, because an arrow says which side an operator acts on and the enveloping algebra is not acting on anything. The two notations answer different questions, and the corpus needs both: one thousand one hundred and twenty-one occurrences of the algebra in one hundred and seventy-eight articles, against three articles that mark a side.
+
+**What the arrow still cannot do.** It states one side and nothing else, so it cannot carry a length, a rank or a name; those are the cells' job. It cannot scope a derivative across a product of three factors, which is tier three. And it cannot replace the sandwich in a proof, because the sandwich is the proof: the arrow is the display of the result, not the derivation of it.
+
+**What it costs.** A mark that appears everywhere stops contrasting with the cases where it is required. That contrast was never the arrow's function; its function is to state the side, and a reader who sees it always knows the side. What is lost is the signal "this one is a derivative", which is a signal about the operator's kind, not about its side, and belongs to the conventions article rather than to the mark.
+
+**The measured order of cost**, per occurrence of a right action: one glyph for the arrow, one symbol for the name $R_b$ together with the reader's knowledge of what $R$ means, and eight cells for the sandwich. So the arrow is cheapest, the name is cheapest when the operator is being discussed rather than used, and the sandwich is the derivation. The three are not rivals; they are three registers of the same statement, and Example 1 walks through all three of them on one field.
+

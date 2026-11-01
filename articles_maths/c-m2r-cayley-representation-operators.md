@@ -253,7 +253,7 @@ $$
 L_Q\circ R_P=L_{QP},
 $$
 
-so the multiplication map $L(\mathbb{C})\times R(\mathbb{C})\to\operatorname{End}_{\mathbb{R}}(\mathbb{C})$ factors through the product of the algebra. Its image is therefore the product of the family with itself, which is the family, of dimension two. In the quaternion category the corresponding map is injective on the tensor product $L(\mathbb{H})\otimes R(\mathbb{H})\to\operatorname{End}_{\mathbb{R}}(\mathbb{H})$, of dimension $4\cdot4=16$, and it fills the whole ambient. The difference is exactly the double centraliser theorem: the map $A\otimes A^{\mathrm{op}}\to\operatorname{End}_{\mathbb{R}}(A)$, $(a,b)\mapsto L_aR_b$, is an isomorphism if and only if $A$ is **central simple**. The quaternion and split-quaternion algebras are central simple over $\mathbb{R}$; the field $\mathbb{C}$ is simple but not central, since its centre is $\mathbb{C}$ itself, and the map collapses to multiplication.
+so the multiplication map $L(\mathbb{C})\times R(\mathbb{C})\to\operatorname{End}_{\mathbb{R}}(\mathbb{C})$ factors through the product of the algebra. Its image is therefore the product of the family with itself, which is the family, of dimension two. In the quaternion category the corresponding map is injective on the tensor product $L(\mathbb{H})\otimes R(\mathbb{H})\to\operatorname{End}_{\mathbb{R}}(\mathbb{H})$, of dimension $4\cdot4=16$, and it fills the whole ambient. The difference is exactly the double centraliser theorem: the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$, $(a,b)\mapsto L_aR_b$, is an isomorphism if and only if $A$ is **central simple**. The quaternion and split-quaternion algebras are central simple over $\mathbb{R}$; the field $\mathbb{C}$ is simple but not central, since its centre is $\mathbb{C}$ itself, and the map collapses to multiplication.
 
 **What lies outside the span.** Every operator that is not conformal. The transpose is one, and the reflections are others. So the length theory of this category is a theory of a two-dimensional subspace, and the two remaining dimensions of the ambient are not sums of products at any length: they are simply not in the span.
 
@@ -322,7 +322,7 @@ so the two differ at every nonzero member.
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the map $A\otimes A^{\mathrm{op}}\to\operatorname{End}(A)$ and the double centraliser theorem, whose failure for a non-central algebra is the collapse of this category.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ and the double centraliser theorem, whose failure for a non-central algebra is the collapse of this category.
 - Frank B. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 1992), for the regular module over a division ring and the endomorphism ring of a simple module.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the vectorisation identity, the Kronecker product, its rank, trace and determinant.
 - Joseph Landsberg, *Tensors: Geometry and Applications* (American Mathematical Society, 2012), for the tensor rank of the swap and the degeneracy of a tensor product over a non-central algebra.

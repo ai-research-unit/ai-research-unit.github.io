@@ -56,7 +56,7 @@ for composable bounded maps, so $B(X) = B(X, X)$ is a normed algebra with unit o
 **Example (finite dimension).** For $X = \mathbb{K}^{m}$, $Y = \mathbb{K}^{n}$ every linear map is continuous, $B(\mathbb{K}^{m}, \mathbb{K}^{n})$ is the space $M_{n, m}(\mathbb{K})$ of matrices, and the operator norm is
 
 $$
-\lVert A\rVert_{\mathrm{op}} = \sup_{\lVert x\rVert_{2} \leq 1}\lVert Ax\rVert_{2} = \sigma_{1}(A) ,
+\lVert A\rVert = \sup_{\lVert x\rVert_{2} \leq 1}\lVert Ax\rVert_{2} = \sigma_{1}(A) ,
 $$
 
 the largest singular value, the identification of the injective norm of *Topological Tensor Products*. For the identity matrix this is $1$, and for a diagonal matrix it is the largest modulus of a diagonal entry.

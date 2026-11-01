@@ -100,7 +100,7 @@ $$
 
 *Proof.* By the theorem, $E_a(Q) = \ker(bL_\varepsilon)$. If $b=0$ the kernel is everything. If $b\neq0$, then $bL_\varepsilon(x + y\varepsilon) = bx\varepsilon$, which vanishes exactly when $x=0$, so the kernel is the line $R\varepsilon = \mathrm{M}$.
 
-**Remark (the matrix conventions).** The matrix $\begin{pmatrix}a&b\\0&a\end{pmatrix}$ often written for $L_Q$ is the matrix in the reversed basis $(\varepsilon,1)$, the matrix-element representation $\mathsf{M}_2(Q)$ of *Dual-Numbers Matrix Element Representation*, and the matrix of left multiplication on row vectors. In the column convention and the basis $(1,\varepsilon)$ it is the transpose $\begin{pmatrix}a&0\\b&a\end{pmatrix}$ of *Dual-Numbers Element Representations*. The characteristic polynomial, trace, determinant and Jordan type are the same in all readings, since the matrices are similar or transposes.
+**Remark (the matrix conventions).** The matrix $\begin{pmatrix}a&b\\0&a\end{pmatrix}$ often written for $L_Q$ is the matrix in the reversed basis $(\varepsilon,1)$, the matrix-element representation $\mathsf{M}_2(Q)$ of *$M_2(R)$ Triangular Representation*, and the matrix of left multiplication in the reversed basis. In the column convention and the basis $(1,\varepsilon)$ it is the transpose $\begin{pmatrix}a&0\\b&a\end{pmatrix}$, the regular representation of *Dual-Numbers Linear Representations*. The characteristic polynomial, trace, determinant and Jordan type are the same in all readings, since the matrices are similar or transposes.
 
 ## The Theorem: Universal Spectral Degeneracy
 
@@ -291,8 +291,8 @@ The comparison with the neighbouring algebras is the comparison of discriminants
 
 - [Dual-Numbers Algebra](dual-numbers-algebra.html), for the algebra, the two conjugations, the maximal ideal and the group of units.
 - [Dual-Numbers Norm and Invertibility](dual-numbers-norm-and-invertibility.html), for the norm, its degeneracy, the Euclidean form and the invertibility criterion.
-- [Dual-Numbers Matrix Element Representation](dual-numbers-matrix-element-representation.html), for the matrix model, the characteristic polynomial and the transpose convention.
-- [Dual-Numbers Element Representations](dual-numbers-element-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
+- [$M_2(R)$ Triangular Representation](dual-m2r-triangular-representation.html), for the matrix model, the characteristic polynomial and the transpose convention.
+- [Dual-Numbers Linear Representations](dual-numbers-element-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
 - [The Defective Sector of the Dual-Number Algebra](the-defective-sector-of-the-dual-number-algebra.html), for the defect, its two strata, the module picture and the polar decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect and the chain of invariants.
 - [The Spectrum](the-spectrum.html), for the same distinction on the biquaternion spectral-degenerate cone.

@@ -38,7 +38,7 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 | Token | Written on | Meaning |
 |---|---|---|
 | $^{\mathrm{fop}}$ | a Fock-operator glyph | an operator on the Fock space, the Fock-operator mark |
-| $^{\mathrm{opp}}$ | an algebra name | the opposite algebra, the algebra with the reversed product |
+| $^{\mathrm{opp}}$ | an algebra name | the opposite algebra, the algebra with the reversed product; never the two-letter $\mathrm{op}$ |
 
 Two further upright superscripts belong to objects outside the algebra — $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element — and are recorded in §*Summary of Notation*.
 
@@ -55,6 +55,8 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 **It combines with the dagger, the mark first.** The dagger is the general adjoint (*Operator and Calculus Conventions*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
 
 **The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.
+
+**The two-letter form $\mathrm{op}$ is forbidden.** It differs from $\mathrm{opp}$ by one letter, at the size a superscript is set, and a page carrying both would be undecidable at reading speed. It is therefore not a token of the corpus in any sense. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $-i\hbar\nabla$.
 
 ## The Subscripts
 
@@ -208,7 +210,7 @@ The **category numbers** count the categories of the parts in menu order; the fr
 | Symbol | Meaning |
 |---|---|
 | $^{\mathrm{fop}}$ | A Fock operator, an operator on the Fock space and not an element of the algebra |
-| $^{\mathrm{opp}}$ | The opposite algebra, the algebra with the reversed product |
+| $^{\mathrm{opp}}$ | The opposite algebra, the algebra with the reversed product; the two-letter $\mathrm{op}$ is not a token |
 | $^{\mathrm{fn}}$ | A function from a domain into the algebra |
 | $^{\mathrm{spin}}$ | An element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |

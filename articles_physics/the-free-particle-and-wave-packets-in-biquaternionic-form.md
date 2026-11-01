@@ -7,7 +7,7 @@ The free particle is the problem that fixes the representation. Every article in
 The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,
 
 $$
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
 $$
 
 so it is **central**. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central $*$-unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a **scalar** wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.
@@ -36,14 +36,14 @@ The quaternion square of the momentum is computed with $\vec e_j \vec e_k + \vec
 
 $$
 \tilde p^2 = \sum_{j,k} \vec e_j \vec e_k p_j p_k
-= -\sum_k p_k^{\mathrm{op}2}\, e_t
-= -p^{\mathrm{op}2}\, e_t,
+= -\sum_k p_k^{2}\, e_t
+= -p^{2}\, e_t,
 $$
 
 the cross terms cancelling by antisymmetry of $\epsilon_{jkl}$ against the symmetric product $p_j p_k$. The biquaternion norm of the momentum is therefore
 
 $$
-\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = p^{\mathrm{op}2}\, e_t,
+\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = p^{2}\, e_t,
 \qquad
 \tilde p^{\natural} = -\tilde p,
 $$
@@ -51,7 +51,7 @@ $$
 so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:
 
 $$
-T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{\mathrm{op}2}}{2m}\,e_t .
+T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{2}}{2m}\,e_t .
 $$
 
 This is the first instance of a pattern that recurs throughout the subcategory: **the kinetic term is the biquaternion norm of the momentum**, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.
@@ -63,7 +63,7 @@ The free biquaternion Schrödinger equation is
 $$
 \boxed{\;i\hbar\,\partial/\partial t' \psi = H \psi,
 \qquad
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
+H = \frac{p^{2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
 $$
 
 with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
@@ -360,7 +360,7 @@ in which the kernel acts on the body of the field and multiplies the module fact
 The evolution operator is the exponential of the generator,
 
 $$
-\tilde Q(t') = \exp(-iH t'/\hbar) = \exp(-i p^{\mathrm{op}2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
+\tilde Q(t') = \exp(-iH t'/\hbar) = \exp(-i p^{2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
 $$
 
 a central $*$-unitary element in the framework's sense,
@@ -417,7 +417,7 @@ Two further structural points belong to this section.
 The free biquaternion Schrödinger equation is $i\hbar\partial/\partial t'\,\psi = H\psi$ with
 
 $$
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
 \qquad
 \tilde p = -i\hbar\nabla,
 $$
@@ -447,8 +447,8 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | State module, $\tilde\Pi = \tfrac12(e_t + i\vec u)$ |
 | $\tilde p = -i\hbar\nabla = \vec e_k p_k$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{M}_+$ |
 | $p_k = -i\hbar\partial/\partial Q_k$ | Momentum component |
-| $\tilde p^2 = -p^{\mathrm{op}2} e_t$, $\tilde p\tilde p^{\natural} = p^{\mathrm{op}2} e_t$ | Quaternion square and biquaternion norm of the momentum |
-| $H = p^{\mathrm{op}2} e_t/2m$ | Free Hamiltonian; central |
+| $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
+| $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
 | $T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
 | $\psi_{\vec k} = \chi \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ | Plane wave; $\chi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k) = \hbar k^2/2m$ | Dispersion relation |

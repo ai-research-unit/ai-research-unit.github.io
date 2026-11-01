@@ -17,7 +17,7 @@ $$
 The projectors are polynomials in $A$ (the Lagrange interpolation at the spectrum), and they give the **functional calculus** $f(A)=\sum_kf(\lambda_k)P_k$ for every continuous function $f$ on the spectrum. The **operator norm** of a Hermitian matrix is its spectral radius,
 
 $$
-\|A\|_{\mathrm{op}}=\max_k|\lambda_k|,
+\|A\|=\max_k|\lambda_k|,
 $$
 
 and the **positive semidefinite order** is read on the eigenvalues: $A\ge0$ iff all $\lambda_k\ge0$. The square root $A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$ and the absolute value $|A|=(A^*A)^{1/2}$ follow.
@@ -142,7 +142,7 @@ and the Jordan form is diagonal. For a general matrix, the minimal polynomial is
 
 **Proof.** The eigenvectors of a Hermitian matrix are orthogonal; the Lagrange projector is the projection onto the eigenspace along the sum of the other eigenspaces, which is the orthogonal projection because the eigenspaces are orthogonal.
 
-**Corollary.** The spectral projectors of a Hermitian matrix are the orthogonal projections of the Hilbert space; they satisfy $P_k^*=P_k$ and $\|P_k\|_{\mathrm{op}}=1$ for a nonzero eigenspace.
+**Corollary.** The spectral projectors of a Hermitian matrix are the orthogonal projections of the Hilbert space; they satisfy $P_k^*=P_k$ and $\|P_k\|=1$ for a nonzero eigenspace.
 
 **Proof.** An orthogonal projection has norm $1$ unless it is zero; the eigenspaces are nonzero by definition.
 
@@ -205,15 +205,15 @@ $$
 **Theorem.** For a Hermitian matrix $A$, the operator norm equals the spectral radius:
 
 $$
-\|A\|_{\mathrm{op}}=\rho(A)=\max_k|\lambda_k| .
+\|A\|=\rho(A)=\max_k|\lambda_k| .
 $$
 
-**Proof.** By the spectral decomposition, $\|Ax\|^2=\sum_k|\lambda_k|^2\|P_kx\|^2\le\rho(A)^2\|x\|^2$, so $\|A\|_{\mathrm{op}}\le\rho(A)$. For an eigenvector of the eigenvalue of maximum modulus, equality holds.
+**Proof.** By the spectral decomposition, $\|Ax\|^2=\sum_k|\lambda_k|^2\|P_kx\|^2\le\rho(A)^2\|x\|^2$, so $\|A\|\le\rho(A)$. For an eigenvector of the eigenvalue of maximum modulus, equality holds.
 
 **Corollary.** For a normal matrix, the same formula holds. For a general matrix, the operator norm is the square root of the spectral radius of $A^*A$:
 
 $$
-\|A\|_{\mathrm{op}}^2=\|A^*A\|_{\mathrm{op}}=\rho(A^*A).
+\|A\|^2=\|A^*A\|=\rho(A^*A).
 $$
 
 **Proof.** $\|Ax\|^2=\langle A^*Ax,x\rangle$; the supremum over unit $x$ is the largest eigenvalue of the Hermitian matrix $A^*A$, which is $\rho(A^*A)$.
@@ -224,7 +224,7 @@ $$
 
 **Proof.** The operator norm is the sup norm on the unit sphere; the Hermitian spectral decomposition gives the maximum eigenvalue modulus; the Frobenius norm is the square root of the trace of $A^2$, which is the sum of the squares of the eigenvalues.
 
-**Corollary.** For Hermitian $A$, $\|A\|_{\mathrm{op}}\le\|A\|_F\le\sqrt5\|A\|_{\mathrm{op}}$, with equality in the second inequality iff all eigenvalues have the same modulus.
+**Corollary.** For Hermitian $A$, $\|A\|\le\|A\|_F\le\sqrt5\|A\|$, with equality in the second inequality iff all eigenvalues have the same modulus.
 
 **Proof.** The first inequality is the general comparison; the second is the comparison of the max and the Euclidean norm of the five eigenvalues.
 
@@ -288,7 +288,7 @@ $$
 f(A)=\sum_kf(\lambda_k)P_k
 $$
 
-defines a continuous functional calculus: it is an algebra homomorphism, it satisfies $\|f(A)\|_{\mathrm{op}}\le\sup_k|f(\lambda_k)|$, and it extends the polynomial calculus.
+defines a continuous functional calculus: it is an algebra homomorphism, it satisfies $\|f(A)\|\le\sup_k|f(\lambda_k)|$, and it extends the polynomial calculus.
 
 **Proof.** The formula is linear and multiplicative on the finite spectrum; the norm inequality is the spectral norm formula; a continuous function on the finite spectrum is the limit of polynomials (Weierstrass interpolation), and the map is continuous in the operator norm.
 
@@ -339,7 +339,7 @@ A=\sum_k\lambda_kP_k,\qquad P_k^*=P_k,\quad P_kP_l=\delta_{kl}P_k,\quad \sum_kP_
 $$
 
 $$
-\boxed{\ \|A\|_{\mathrm{op}}=\max_k|\lambda_k|;\quad A\ge0\iff\lambda_k\ge0;\quad f(A)=\sum_kf(\lambda_k)P_k.\ }
+\boxed{\ \|A\|=\max_k|\lambda_k|;\quad A\ge0\iff\lambda_k\ge0;\quad f(A)=\sum_kf(\lambda_k)P_k.\ }
 $$
 
 The spectral projectors are the orthogonal projections onto the eigenspaces; at a simple spectrum they are the Lagrange projectors. The operator norm of a Hermitian matrix is its spectral radius; for a general matrix it is the square root of the spectral radius of $A^*A$. The positive semidefinite order is the eigenvalue order; the square root, the absolute value and the polar decomposition follow from the functional calculus.
@@ -366,7 +366,7 @@ The normal matrices are exactly the unitarily diagonalizable matrices; the root 
 | $A^*$ | The conjugate transpose |
 | $P_k$ | The spectral projector of the eigenvalue $\lambda_k$ |
 | $\rho(A)$ | The spectral radius |
-| $\|A\|_{\mathrm{op}}$ | The operator norm |
+| $\|A\|$ | The operator norm |
 | $A\ge0$ | Positive semidefinite |
 | $A^{1/2}$ | The positive semidefinite square root |
 | $|A|=(A^*A)^{1/2}$ | The absolute value |

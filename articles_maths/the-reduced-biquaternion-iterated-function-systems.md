@@ -125,7 +125,7 @@ An affine map of the reduced biquaternion algebra is the pair of two complex aff
 
 ## Further Reading
 
-- [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the operators and their norms.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators and their norms.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the branching cone.
 - [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the attractor as the matched set of the coding space.
 - [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the quadratic family.

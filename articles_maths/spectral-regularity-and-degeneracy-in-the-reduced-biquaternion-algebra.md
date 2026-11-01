@@ -193,7 +193,7 @@ The biquaternion algebra $M_2(\mathbb{C})$ has a genuine defective cone at $B^{2
 - [Relations between the Reduced Norm and Spectral Regularity and Degeneracy](relations-between-the-reduced-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of $Q_+Q_-$ with $(Q_+-Q_-)^{2}$, the independence of the conditions and the chain of invariants.
 - [The Four Sectors of the Reduced Biquaternion Algebra](the-four-sectors-of-the-reduced-biquaternion-algebra.html), for the four nonempty cells, their dimensions and their closures.
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenprojections, the Peirce decomposition and the eigenbasis.
-- [Eigenbasis of a Reduced Biquaternion in Matrix Elements Representations](eigenbasis-of-a-reduced-biquaternion-in-matrix-elements-representations.html), for the $2\times2$ and $4\times4$ readings of the same decomposition.
+- [$M_2(\mathbb{C})$ Reduced Representation](rb-m2c-reduced-representation.html), for the $2\times2$ and $4\times4$ readings of the same decomposition.
 - [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the computed cases.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit criterion.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two punctured idempotent lines.
