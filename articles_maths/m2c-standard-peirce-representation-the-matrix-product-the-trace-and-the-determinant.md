@@ -24,7 +24,7 @@ has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two 
 
 **What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
 
-**The result in one line.** The left matrix is the $2\times2$ image, $L(\tilde Q)=A$; the right matrix is its transpose, $R(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
+**The result in one line.** The left matrix is the $2\times2$ image, $L(\tilde Q)=\mathsf M_2(\tilde Q)=A$; the right matrix is its transpose, $R(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
 $$
@@ -219,40 +219,64 @@ $$
 
 ## The Images of the Four Units
 
-**The left matrices.** The four left matrices are
+**The left matrices.** The four left matrices are the images of the four units under the model:
+$$
+\mathsf M_2(e_t)=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)=-i\sigma_3,
+$$
+that is,
 $$
 \mathrm I_2,\qquad
 -i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
 -i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
 -i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
-They are the images of the four units under $\mathsf M_2$: the identity for $e_t$ and $-i\sigma_k$ for $\vec e_k$. Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are linearly independent and form a basis of $M_2(\mathbb{C})$.
+Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are linearly independent and form a basis of $M_2(\mathbb{C})$.
 
-**The right matrices.** The four right matrices are the transposes,
+**Why the factor $i$, and why the signs.** The images must reproduce the two relations that define the algebra. The first is the square,
 $$
-\mathrm I_2,\qquad
--i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
--i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathsf M_2(\vec e_k)^2=\mathsf M_2(\vec e_k^2)=\mathsf M_2(-e_t)=-\mathrm I_2 .
+$$
+The Pauli matrices are Hermitian and satisfy $\sigma_k^2=\mathrm I_2$, so the image must be $i$ times a Pauli matrix: the factor $i$ is exactly what turns $+\mathrm I_2$ into $-\mathrm I_2$, and without it the image of $\vec e_k$ would square to the image of $e_t$. The second relation is the cross-product,
+$$
+\vec e_x\vec e_y=\vec e_z .
+$$
+Since $\sigma_1\sigma_2=i\sigma_3$, the product of the two images is
+$$
+(-i\sigma_1)(-i\sigma_2)=(-i)^2\sigma_1\sigma_2=-\sigma_1\sigma_2=-i\sigma_3=\mathsf M_2(\vec e_z),
+$$
+and the signs of the three images are fixed by this line. With the opposite overall sign the same product would give $-i\sigma_3$ while the image of $\vec e_z$ would be $+i\sigma_3$, and the cross-relation would be lost. The factor and the signs are not conventions laid on the algebra: they are the algebra read in matrices.
+
+**The right matrices.** The four right matrices are the transposes:
+$$
+\mathsf M_2(e_t)^{\mathsf T}=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)^{\mathsf T}=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)^{\mathsf T}=i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)^{\mathsf T}=-i\sigma_3 .
 $$
 The matrices $\sigma_1$ and $\sigma_3$ are symmetric, and $\sigma_2$ is antisymmetric, so transposition fixes $\mathrm I_2$, $-i\sigma_1$ and $-i\sigma_3$ and negates $-i\sigma_2$. The right family differs from the left by the sign of the second matrix alone. Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are a basis of $M_2(\mathbb{C})$.
 
 **The two families in one space.** In the $4\times4$ article the left and right families are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left family is read on $S_\pm$, the right family on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.
 
-**The products.** The four left matrices multiply as the four units do, and the four right matrices multiply in the reverse order. For the left family,
+**The products.** The four left matrices multiply as the four units do,
 $$
-(-i\sigma_1)(-i\sigma_2)=-i\sigma_3,\qquad
-(-i\sigma_2)(-i\sigma_1)=i\sigma_3,\qquad
-(-i\sigma_3)(-i\sigma_1)=-i\sigma_2,
+\mathsf M_2(\vec e_x)\mathsf M_2(\vec e_y)=\mathsf M_2(\vec e_z),\qquad
+\mathsf M_2(\vec e_y)\mathsf M_2(\vec e_x)=-\mathsf M_2(\vec e_z),
 $$
-and the three squares are $-\mathrm I_2$. For the right family the two factors are exchanged,
 $$
-(-i\sigma_1)(i\sigma_2)=i\sigma_3,\qquad
-(i\sigma_2)(-i\sigma_1)=-i\sigma_3 .
+\mathsf M_2(\vec e_z)\mathsf M_2(\vec e_x)=\mathsf M_2(\vec e_y),\qquad
+\mathsf M_2(\vec e_x)^2=\mathsf M_2(\vec e_y)^2=\mathsf M_2(\vec e_z)^2=-\mathrm I_2 .
+$$
+For the right family the two factors are exchanged,
+$$
+\mathsf M_2(\vec e_x)^{\mathsf T}\mathsf M_2(\vec e_y)^{\mathsf T}=-\mathsf M_2(\vec e_z)^{\mathsf T},\qquad
+\mathsf M_2(\vec e_y)^{\mathsf T}\mathsf M_2(\vec e_x)^{\mathsf T}=\mathsf M_2(\vec e_z)^{\mathsf T}.
 $$
 The sign of $\sigma_2$ is the only difference between the two families, and it is the matrix form of the anti-automorphism.
 
-**Trace and determinant.** Every matrix of the two families is invertible, with determinant $1$; the identity has trace $2$ and the other matrices trace $0$. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+**Trace and determinant.** Every matrix of the two families is invertible, with determinant $1$; the identity has trace $2$ and the other matrices trace $0$. The algebra is simple and has zero divisors, and the invertibility of the four units does not extend to the complex span.
 
 ## The Stitch Between the Left and the Right
 
@@ -583,6 +607,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $P_\pm,X_\pm$ | the Peirce coordinates |
 | $A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}$ | the $2\times2$ image |
 | $L(\tilde Q)=A$, $R(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |
+| $\mathsf M_2(e_\mu)$ | the images of the four units: $\mathrm I_2$ and $-i\sigma_k$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
 | $\varrho$ | the anti-automorphism fixing $e_t,e_x,e_z$ and negating $e_y$ |
 | $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |

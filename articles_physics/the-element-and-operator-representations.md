@@ -51,7 +51,7 @@ The count of the parameters is the same in every picture: four complex coefficie
 The four-vector picture is the one that carries the dictionary. The four complex coefficients are not four independent physical coordinates: each coefficient holds one material and one informational coordinate. In the conventions of the corpus,
 
 $$
-Q^t = c t + i c t', \qquad Q^x = x + i x', \qquad Q^y = y + i y', \qquad Q^z = z + i z'.
+Q_t = c t + i c t', \qquad Q_x = x + i x', \qquad Q_y = y + i y', \qquad Q_z = z + i z'.
 $$
 
 The real part of the scalar coefficient is the informational time and the imaginary part is the material time; each vector coefficient carries one material and one informational spatial coordinate.
