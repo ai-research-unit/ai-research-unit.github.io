@@ -125,7 +125,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 The two-dimensional identities on which the Thirring model's "one coupling" rests were checked directly. With the mostly-minus two-dimensional frame — the generators are the cells $iT_{e_t,e_x}$ and $iT_{e_x,e_y}$, and the two-dimensional chirality is their product, the cell $T_{e_x,e_z}$ — the following held exactly over $100$ random states, that is with residual $0$ and not merely to numerical precision:
 
 - the Clifford relations $\left(iT_{e_t,e_x}\right)^2 = T_{e_t,e_t}$, $\left(iT_{e_x,e_y}\right)^2 = -T_{e_t,e_t}$, $\{iT_{e_t,e_x},iT_{e_x,e_y}\} = 0$ and $T_{e_x,e_z}^2 = T_{e_t,e_t}$;
-- the current duality $A_\mu \propto \epsilon_{\mu\nu}V_\nu$ — the axial current is the Hodge dual of the vector current;
+- the current duality $A_\mu \propto \epsilon_{\mu\nu}V^\nu$ — the axial current is the Hodge dual of the vector current, with the second index raised; read with both indices lowered the dual is not a gradient and carries no anomaly, so the height is part of the statement;
 - consequently $\sum_\mu A_\mu A_\mu = -\sum_\mu V_\mu V_\mu$ — the sum is the invariant contraction — so the vector–vector and axial–axial quartic terms differ only by sign, and a single coupling exhausts the local quartic interactions.
 
 The duality is the exact reason the two-dimensional model has one coupling, and it is a property of the Clifford algebra and not of the framework.

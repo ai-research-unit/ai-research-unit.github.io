@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field (Grassmann-functional) integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-The conventions are the series conventions. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; its component form is the standard Dirac equation on the spinor module, with Clifford generators $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ and $g = \mathrm{diag}(+1,-1,-1,-1)$. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$, and the propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{R}\in\mathbb{M}_-$.
+The conventions are the series conventions. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; its component form is the standard Dirac equation on the spinor module, with generator cells $\mathsf C_0:\psi\mapsto i e_t\psi\vec e_x$ and $\mathsf C_k:\psi\mapsto i\vec e_k\psi\vec e_y$, the pseudoscalar cell $\mathsf C_5:\psi\mapsto -i e_t\psi\vec e_z$ (that is $\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$), and $\{\mathsf C_\mu,\mathsf C_\nu\} = 2g_{\mu\nu}\mathbf 1$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$, and the propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{R}\in\mathbb{M}_-$.
 
 ## The Dirac Propagator and the Square
 
@@ -16,7 +16,7 @@ The object the path integral must compute is the Feynman propagator for the spin
 
 $$
 S_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
-\frac{i\left(\gamma_{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
+\frac{i\left(\mathsf C_{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
 \exp(-ip\cdot(x-x_2)),
 $$
 
@@ -149,12 +149,12 @@ and the odd kinetic term is unchanged. The path integral over the odd variables 
 $$
 \boxed{\;\Phi[x] = \mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int_0^T d\tau\;\sigma_{\mu\nu}F_{\mu\nu}(x(\tau))\right)\;},
 \qquad
-\sigma_{\mu\nu} = \frac{i}{2}[\gamma_\mu,\gamma_\nu],
+\sigma_{\mu\nu} = \frac{i}{2}[\mathsf C_\mu,\mathsf C_\nu],
 $$
 
 the path-ordered trace of the bivector coupling to the field strength. This is the standard Berezin–Marinov spin factor; the trace is over the spinor indices and the path ordering is required because the bivectors at different times do not commute. The same structure is what produces the anomalous magnetic moment in the worldline computation of the electron's form factors, and it is the worldline form of the spin–field coupling that the companion articles *The Electron in Biquaternionic Form* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* treat from the operator side.
 
-In the biquaternion framework the bivector $\sigma_{\mu\nu}$ decomposes into the two pieces of the algebra. The combination $\frac{i}{2}[\gamma_\mu,\gamma_\nu]$ is a Clifford bivector; the bivectors split into the **timelike** ones, which lie in the image of $\mathbb{M}_+$ and are the boost generators, and the **spacelike** ones, which lie in the image of the real-quaternion sector and are the rotation generators (the reflection article's decomposition). The spin factor therefore exponentiates a sum of a frame-even $\mathbb{M}_+$ piece and a frame-odd piece; the trace at the end keeps the scalar part of the path-ordered exponential alone, since the bivectors and the pseudoscalar $\gamma_5$ are both traceless in four dimensions, so that the worldline integral is built from the Lorentz invariants of the field strength: the scalar $F_{\mu\nu}F_{\mu\nu}$, which the second-order term of the expansion produces, and the pseudoscalar combination that carries the $\vec E\cdot\vec B$ invariant. The path-ordered exponential is the worldline image of the algebra's rotor construction: at each instant the spin is transported by a bivector, and the product of all the transports is the spin factor.
+In the biquaternion framework the bivector $\sigma_{\mu\nu}$ decomposes into the two pieces of the algebra. The combination $\frac{i}{2}[\mathsf C_\mu,\mathsf C_\nu]$ is a Clifford bivector; the bivectors split into the **timelike** ones, which lie in the image of $\mathbb{M}_+$ and are the boost generators, and the **spacelike** ones, which lie in the image of the real-quaternion sector and are the rotation generators (the reflection article's decomposition). The spin factor therefore exponentiates a sum of a frame-even $\mathbb{M}_+$ piece and a frame-odd piece; the trace at the end keeps the scalar part of the path-ordered exponential alone, since the bivectors and the pseudoscalar $\mathsf C_5$ are both traceless in four dimensions, so that the worldline integral is built from the Lorentz invariants of the field strength: the scalar $F_{\mu\nu}F_{\mu\nu}$, which the second-order term of the expansion produces, and the pseudoscalar combination that carries the $\vec E\cdot\vec B$ invariant. The path-ordered exponential is the worldline image of the algebra's rotor construction: at each instant the spin is transported by a bivector, and the product of all the transports is the spin factor.
 
 ## Feynman's Checkerboard
 
@@ -250,7 +250,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (\mathbb{D} + mc/\hbar)\Delta_F$, the identity following from $\mathbb{D}^2=\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\psi_\mu$ is added at each point with kinetic term $\frac{i}{2}\psi_\mu\,d\psi_{\mu}/d\tau$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 (g^{-1})_{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\gamma_{\nu} p_{\nu} - \mu)(\gamma_{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
+In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\mathsf C_{\nu} p_{\nu} - \mu)(\mathsf C_{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
 
 ## Summary of Notation
 
@@ -258,12 +258,14 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; the worldline position |
+| $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $\mathsf C_\mu$ | Generator cells: $\mathsf C_0:\psi\mapsto ie_t\psi\vec e_x$, $\mathsf C_k:\psi\mapsto i\vec e_k\psi\vec e_y$, $\mathsf C_5:\psi\mapsto-ie_t\psi\vec e_z$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $\mathbb{D}$ | First-order pair operator, $\mathbb{D}^2=\Box$ |
 | $S_F(x-x_2)$ | Dirac (Feynman) propagator |
 | $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator |
 | $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$ | Propagator equation |
-| $(\gamma_{\mu} p_{\mu} - mc/\hbar)(\gamma_{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
+| $(\mathsf C_{\mu} p_{\mu} - mc/\hbar)(\mathsf C_{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dx_{\mu}/d\tau$ | Worldline and its tangent |
 | $S_0[x] = \int_0^T d\tau\left(\tfrac14dx_{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right)$ | Scalar worldline action |
@@ -286,3 +288,17 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 - M. G. Schmidt and C. Schubert, "The worldline path integral approach to Feynman graphs," in *Loops and Legs in Quantum Field Theory* (2000), and C. Schubert, "Perturbative quantum field theory in the string-inspired formalism," *Physics Reports* **355** (2001) 73–234, for the modern worldline formulation.
 - T. Jacobson and L. S. Schulman, "Quantum stochastics: the passage from a relativistic to a non-relativistic path integral," *Journal of Physics A: Mathematical and General* **17** (1984) 375–383, for the checkerboard continuum limit.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the Dirac propagator, its momentum-space form, and the propagator equation.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; $T_{a,b}$ is the two-sided multiplication $\psi\mapsto a\psi b$.
+
+$$
+\gamma_0=iT_{e_t,\vec e_x},\quad \gamma_1=iT_{\vec e_x,\vec e_y},\quad \gamma_2=iT_{\vec e_y,\vec e_y},\quad \gamma_3=iT_{\vec e_z,\vec e_y},\quad \gamma_5=-iT_{e_t,\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

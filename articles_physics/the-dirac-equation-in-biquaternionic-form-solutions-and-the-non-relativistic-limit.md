@@ -20,31 +20,40 @@ $$
 e_t \mapsto I_2, \qquad \vec e_\mu \mapsto -i\sigma_\mu, \qquad i \mapsto i I_2,
 $$
 
-so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma_{\mathrm{alt}\,\mu} = i\gamma_\mu$ of the paragraph below,
+so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The five generators are five cells, defined by their action on the state, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its generators are the $i\mathsf C_\mu$ of the paragraph below. Write $T_{a,b}=L_aR_b$, so that $T_{a,b}\psi=a\psi b$ and $T_{a,b}T_{c,d}=T_{ac,db}$; the frame is
 
 $$
-\gamma_0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}, \qquad
-\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix}, \qquad k = 1,2,3,
+\mathsf C_0\psi = i\,e_t\,\psi\,e_x, \qquad
+\mathsf C_k\psi = i\,\vec e_k\,\psi\,\vec e_y, \qquad
+\mathsf C_5\psi = -i\,e_t\,\psi\,e_z ,
 $$
 
-which satisfy $\{\gamma_\mu, \gamma_\nu\} = 2g_{\mu\nu} I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$; the metric sign is the convention noted in the companion article. These matrices constitute the **chiral (Weyl) representation**: the chirality operator
+that is, $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$, $\mathsf C_5=-iT_{e_t,e_z}$. The squares follow from the quaternion table and $i^2=-1$, $(iT_{e_t,e_x})^2=T_{e_t,e_t}$ and $(iT_{e_k,e_y})^2=-T_{e_t,e_t}$, and the mixed products anticommute because the right factors $\vec e_x$ and $\vec e_y$ anticommute while $e_t$ commutes with every unit; hence
 
 $$
-\gamma_5 = i\,\gamma_0\gamma_1\gamma_2\gamma_3 = \begin{pmatrix} -I_2 & 0 \\ 0 & I_2 \end{pmatrix}, \qquad \gamma_5^2 = I_4,
+\{\mathsf C_\mu, \mathsf C_\nu\} = 2g_{\mu\nu}T_{e_t,e_t}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-is diagonal, so the upper two-component block is left-handed and the lower is right-handed. We also use the **Dirac representation**, obtained by a $*$-unitary change of basis, in which $\gamma_0 = \mathrm{diag}(I_2,-I_2)$ and $\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix}$; the non-relativistic limit is simplest there. In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation and in the Pauli equation.
+the metric sign being the convention noted in the companion article. This frame is the **chiral (Weyl) representation**: the chirality $\mathsf C_5$ acts as $-1$ on the left Peirce plane $\mathbb{B}\tilde\Pi_+$ and as $+1$ on the right plane $\mathbb{B}\tilde\Pi_-$, where $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, and $\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$, so the upper two-component block is left-handed and the lower is right-handed. We also use the **Dirac representation**, obtained by a $*$-unitary change of basis, in which $\mathsf C_0$ is diagonal, $+1$ on the upper two-component part and $-1$ on the lower, and the two chiralities are mixed; the non-relativistic limit is simplest there. In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation and in the Pauli equation.
 
 The two metric symbols used in this article must not be interchanged. The Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ belongs to the generators, through the anticommutator; the spacetime metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of the companion articles belongs to the $ict'$ gradient, through $\Box$. They are the negatives of one another, and that relative sign is exactly the freedom the companion article flags as convention. The reconciliation is that the massless equation squares to
 
 $$
--\gamma_\mu\gamma_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu
+-\mathsf C_\mu\mathsf C_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu
 = -\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 = \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 = \Box,
 $$
 
-so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the contraction of a four-momentum, with components $p_\mu = (E,-\vec p)$, is $\gamma_\mu p_\mu = \gamma_0 E - \boldsymbol{\gamma}\cdot\vec p$. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}\,\mu} = i\gamma_\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\sum_\mu\gamma_{\mathrm{alt}\,\mu}\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
+so the same $\Box$ results whichever way the sign is assigned, the antisymmetric part of $\mathsf C_\mu\mathsf C_\nu$ dropping out because the derivatives commute. With the Clifford metric fixed at $g$, the contraction of a four-momentum, with components $p_\mu = (E,-\vec p)$, is the momentum cell
+
+$$
+\mathsf C_\mu p_\mu = \mathsf C_0 E - \mathsf C_k p_k = E\,R_{i\vec e_x} - p_k\,L_{i\vec e_k}R_{\vec e_y},
+$$
+
+since $e_t$ is the unit, the left factor $L_{e_t}$ of $\mathsf C_0$ is the identity.
+
+A reader who prefers instead to attach $\eta$ to the generators must take the mostly-plus frame $i\mathsf C_\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\sum_\mu i\mathsf C_\mu\,\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
 
 ## The Dirac field and its two bases
 
@@ -62,12 +71,13 @@ $$
 \psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}, \qquad \psi_L, \psi_R \in \mathbb{C}^2.
 $$
 
-This is the structure that the companion article referred to when it described the biquaternion field as a pair of Weyl spinors. The two representations are related by a change of basis, and the physics is independent of the choice; but each makes a different structure manifest. The **chiral basis** diagonalizes $\gamma_5$ and therefore exhibits chirality, which is the natural language for the massless case. The **Dirac basis** diagonalizes $\gamma_0 = \beta$ and therefore separates the upper "large" and lower "small" components in the non-relativistic limit. We give the plane-wave solutions in both.
+This is the structure that the companion article referred to when it described the biquaternion field as a pair of Weyl spinors. The two representations are related by a change of basis, and the physics is independent of the choice; but each makes a different structure manifest. The **chiral basis** diagonalizes the chirality $\mathsf C_5$ and therefore exhibits chirality, which is the natural language for the massless case. The **Dirac basis** diagonalizes the timelike cell $\mathsf C_0 = \beta$ and therefore separates the upper "large" and lower "small" components in the non-relativistic limit. We give the plane-wave solutions in both.
 
-The Dirac adjoint is
+The Dirac adjoint is the Hermitian pairing twisted by the timelike cell,
 
 $$
-\bar{\psi} = \psi^\dagger\gamma_0,
+\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)
+= \psi_L^\dagger\phi_R + \psi_R^\dagger\phi_L ,
 $$
 
 so that $\bar{\psi}\psi$ is a Lorentz scalar. The amplitude equation for a plane wave follows by substituting; we carry this out in the next section.
@@ -85,10 +95,10 @@ $$
 where $w(\vec p)$ is a four-component constant spinor. Substituting into the module form of the pair gives the momentum-space equation
 
 $$
-(\gamma_\mu p_\mu - m)\,w(\vec p) = 0, \qquad \gamma_\mu p_\mu = \gamma_0 E - \boldsymbol{\gamma}\cdot\vec p,
+(\mathsf C_\mu p_\mu - m)\,w(\vec p) = 0, \qquad \mathsf C_\mu p_\mu = \mathsf C_0 E - \mathsf C_k p_k ,
 $$
 
-using the mostly-minus metric, so that the spatial part enters with a minus sign. Squaring gives the mass-shell condition $p^2 = E^2 - \vec p^2 = m^2$.
+using the momentum cell of the conventions section and the mostly-minus metric, so that the spatial part enters with a minus sign. Squaring gives the mass-shell condition $p^2 = E^2 - \vec p^2 = m^2$.
 
 The spinor structure is most transparent in the **Dirac basis**. Writing $w = (w_A, w_B)$ with $w_A, w_B \in \mathbb{C}^2$, the momentum-space equation becomes the pair
 
@@ -116,7 +126,7 @@ $$
 w_\pm(\vec p) = \begin{pmatrix} \sqrt{E \mp |\vec p|}\; \chi_\pm \\[2pt] \sqrt{E \pm |\vec p|}\; \chi_\pm \end{pmatrix},
 $$
 
-with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\gamma_\mu p_\mu-m)w_\pm = 0$: the upper equation is $(E\mp|\vec p|)\sqrt{E\pm|\vec p|} = m\sqrt{E\mp|\vec p|}$, which reduces to $E^2 - \vec p^2 = m^2$. At high energy the coefficient $E \mp |\vec p|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed $*$-unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
+with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\mathsf C_\mu p_\mu-m)w_\pm = 0$: the upper equation is $(E\mp|\vec p|)\sqrt{E\pm|\vec p|} = m\sqrt{E\mp|\vec p|}$, which reduces to $E^2 - \vec p^2 = m^2$. At high energy the coefficient $E \mp |\vec p|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed $*$-unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
 
 The general positive-energy solution is an arbitrary linear combination $w = a_1 w^{(1)} + a_2 w^{(2)}$, so the positive-frequency solution space at fixed $\vec p$ is two-dimensional over $\mathbb{C}$.
 
@@ -131,10 +141,10 @@ $$
 Substituting gives the momentum-space equation
 
 $$
-(\gamma_\mu p_\mu + m)\,v(\vec p) = 0,
+(\mathsf C_\mu p_\mu + m)\,v(\vec p) = 0,
 $$
 
-with the same $\gamma_\mu p_\mu = \gamma_0 E - \boldsymbol{\gamma}\cdot\vec p$. In the Dirac basis the pair reads $(E+m)v_A = \boldsymbol{\sigma}\cdot\vec p\,v_B$ and $(E-m)v_B = \boldsymbol{\sigma}\cdot\vec p\,v_A$, and the two solutions are
+with the same $\mathsf C_\mu p_\mu = \mathsf C_0 E - \mathsf C_k p_k$. In the Dirac basis the pair reads $(E+m)v_A = \boldsymbol{\sigma}\cdot\vec p\,v_B$ and $(E-m)v_B = \boldsymbol{\sigma}\cdot\vec p\,v_A$, and the two solutions are
 
 $$
 \boxed{\;v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
@@ -170,7 +180,7 @@ Second, the **chirality–helicity relation**. In the chiral basis, positive-hel
 
 ## Orthogonality and normalization
 
-The Dirac adjoint $\bar{\psi} = \psi^\dagger\gamma_0$ makes the bilinear $\bar{w}w$ a Lorentz scalar. A direct computation from the explicit solutions gives the normalization
+The Dirac adjoint $\bar{w}\phi = \langle w,\phi\rangle_{\mathrm D}$ of the preceding section makes the bilinear $\bar{w}w$ a Lorentz scalar. A direct computation from the explicit solutions gives the normalization
 
 $$
 \bar{w}^{(r)}(\vec p)\,w^{(s)}(\vec p) = 2m\,\delta_{rs}, \qquad
@@ -196,8 +206,8 @@ the last relation requiring the opposite momentum, as usual. Three normalization
 The **spin sums** (completeness relations) close the solution set over the spin index:
 
 $$
-\sum_{r=1}^{2} w^{(r)}(\vec p)\,\bar{w}^{(r)}(\vec p) = \gamma_\mu p_\mu + m, \qquad
-\sum_{r=1}^{2} v^{(r)}(\vec p)\,\bar{v}^{(r)}(\vec p) = \gamma_\mu p_\mu - m .
+\sum_{r=1}^{2} w^{(r)}(\vec p)\,\langle w^{(r)}(\vec p),\,\cdot\,\rangle_{\mathrm D} = \mathsf C_\mu p_\mu + m, \qquad
+\sum_{r=1}^{2} v^{(r)}(\vec p)\,\langle v^{(r)}(\vec p),\,\cdot\,\rangle_{\mathrm D} = \mathsf C_\mu p_\mu - m .
 $$
 
 These are the algebraic statement that the four solutions at fixed momentum form a basis of the amplitude space, and they are the ingredient that later exercises will need in order to sum over spins.
@@ -205,7 +215,7 @@ These are the algebraic statement that the four solutions at fixed momentum form
 The **conserved current** of the Dirac field is
 
 $$
-j_\mu = \bar{\psi}\gamma_\mu\psi, \qquad \sum_\mu\partial/\partial Q_\mu j_\mu = 0,
+j_\mu = \langle\psi,\mathsf C_\mu\psi\rangle_{\mathrm D}, \qquad \sum_\mu\partial/\partial Q_\mu j_\mu = 0,
 $$
 
 with $j_0= \psi^\dagger\psi \ge 0$ and real spatial components. In the series' notation, the current is the four-vector biquaternion
@@ -225,12 +235,12 @@ From a spinor and its adjoint one forms the standard bilinears, classified by th
 | Bilinear | Lorentz character |
 |---|---|
 | $\bar{\psi}\psi$ | scalar |
-| $i\,\bar{\psi}\gamma_5\psi$ | pseudoscalar |
-| $\bar{\psi}\gamma_\mu\psi$ | four-vector |
-| $\bar{\psi}\gamma_\mu\gamma_5\psi$ | axial four-vector (pseudovector) |
-| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | antisymmetric rank-two tensor |
+| $i\,\bar{\psi}\mathsf C_5\psi$ | pseudoscalar |
+| $\bar{\psi}\mathsf C_\mu\psi$ | four-vector |
+| $\bar{\psi}\mathsf C_\mu\mathsf C_5\psi$ | axial four-vector (pseudovector) |
+| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\mathsf C_\mu,\mathsf C_\nu]$ | antisymmetric rank-two tensor |
 
-The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\gamma_5\psi$ is purely imaginary and $i\bar{\psi}\gamma_5\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
+The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\mathsf C_5\psi$ is purely imaginary and $i\bar{\psi}\mathsf C_5\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
 
 ### The chiral components
 
@@ -241,7 +251,7 @@ $$
 $$
 
 $$
-\bar{\psi}\gamma_5\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
+\bar{\psi}\mathsf C_5\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
 $$
 
 and the vector current has components
@@ -282,7 +292,7 @@ which is exactly the idempotent $\tilde\Pi_1(\vec u)$ of the informational secto
 The vector bilinear admits the standard Gordon decomposition,
 
 $$
-\bar{w}(p_2)\gamma_\mu w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)_\mu}{2m} + \frac{i\sum_\nu\sigma_{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
+\bar{w}(p_2)\mathsf C_\mu w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)_\mu}{2m} + \frac{i\sum_\nu\sigma_{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
 $$
 
 which splits the current into a **convection** part, proportional to $(p+p_2)_\mu$, and a **spin** part, proportional to the momentum transfer $(p_2-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma_{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
@@ -291,7 +301,7 @@ which splits the current into a **convection** part, proportional to $(p+p_2)_\m
 
 ### Removing the rest energy
 
-The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \gamma_0 = \mathrm{diag}(I_2,-I_2)$ and the spinor splits into an upper ("large") and a lower ("small") two-component part. Coupling to the electromagnetic four-potential, with components $A_\mu = (\Phi,-\vec A)$, is by the minimal coupling $D_\mu = \partial/\partial Q_\mu + iqA_\mu$ for a field of charge $ϙ$, which is equivalent to
+The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \mathsf C_0$ is diagonal with opposite signs on the upper and the lower two-component part, and the spinor splits into an upper ("large") and a lower ("small") two-component part. Coupling to the electromagnetic four-potential, with components $A_\mu = (\Phi,-\vec A)$, is by the minimal coupling $D_\mu = \partial/\partial Q_\mu + iqA_\mu$ for a field of charge $ϙ$, which is equivalent to
 
 $$
 p \;\longrightarrow\; p - ϙ\vec A, \qquad i\partial/\partial t' \;\longrightarrow\; i\partial/\partial t' - ϙ\Phi
@@ -301,8 +311,10 @@ in natural units. The Dirac equation becomes $i\partial/\partial t'\psi = H^{\ma
 
 $$
 H^{\mathrm{fop}} = \boldsymbol{\alpha}\cdot(p - ϙ\vec A) + \beta m + ϙ\Phi, \qquad
-\boldsymbol{\alpha}_k = \gamma_0\gamma_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
+\boldsymbol{\alpha}_k = \mathsf C_0\mathsf C_k = L_{\vec e_k}R_{\vec e_z}.
 $$
+
+In the Dirac basis $\boldsymbol{\alpha}_k$ exchanges the upper and lower two-component part and multiplies each by $\sigma_k$, which is what produces the coupled pair below.
 
 The rest energy dominates the dynamics, so we factor it out by writing
 
@@ -422,14 +434,14 @@ $$
 or, in covariant form, $\sum_\mu\sigma_\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\sum_\mu\bar{\sigma}_\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma_\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}_\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
 
 $$
-P_L = \tfrac{1}{2}(1 - \gamma_5), \qquad P_R = \tfrac{1}{2}(1 + \gamma_5)
+P_L = \tfrac{1}{2}(1 - \mathsf C_5) = R_{\tilde\Pi_+}, \qquad P_R = \tfrac{1}{2}(1 + \mathsf C_5) = R_{\tilde\Pi_-}
 $$
 
 select the two components, and the biquaternion algebra contains their algebraic counterparts as the central idempotents of the complexified even Clifford algebra discussed in the companion article. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.
 
 ## Summary
 
-The biquaternionic Dirac equation, on its spinor module, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \gamma_\mu p_\mu+m$, $\sum_r v\bar{v} = \gamma_\mu p_\mu-m$.
+The biquaternionic Dirac equation, on its spinor module, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\,\langle w,\cdot\rangle_{\mathrm D} = \mathsf C_\mu p_\mu+m$, $\sum_r v\,\langle v,\cdot\rangle_{\mathrm D} = \mathsf C_\mu p_\mu-m$.
 
 The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j_0e_t + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 
@@ -457,13 +469,18 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi = (\psi_L,\psi_R)$ | Dirac spinor in the chiral basis |
-| $\gamma_\mu$, $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ | Gamma matrices and chirality operator |
-| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma_\mu$; note $g = -\eta$ |
+| $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $T_{a,b}\psi=a\psi b$; $T_{a,b}T_{c,d}=T_{ac,db}$ |
+| $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ | Generators as cells: $\mathsf C_0\psi=i e_t\psi e_x$, $\mathsf C_k\psi=i\vec e_k\psi\vec e_y$ |
+| $\mathsf C_5=-iT_{e_t,e_z}=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$ | Chirality; $-1$ on $\mathbb{B}\tilde\Pi_+$, $+1$ on $\mathbb{B}\tilde\Pi_-$ |
+| $\tilde\Pi_\pm = \tfrac12(e_t\pm i\vec e_z)$ | Peirce idempotents; $P_{L,R}=R_{\tilde\Pi_\pm}$ |
+| $\boldsymbol{\alpha}_k = \mathsf C_0\mathsf C_k = L_{\vec e_k}R_{\vec e_z}$ | Velocity operator of the non-relativistic limit |
+| $\sigma_{\mu\nu} = \tfrac{i}{2}[\mathsf C_\mu,\mathsf C_\nu]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
+| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; note $g = -\eta$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
-| $\bar{\psi} = \psi^\dagger\gamma_0$ | Dirac adjoint |
+| $\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \psi_L^\dagger\phi_R+\psi_R^\dagger\phi_L$ | Dirac adjoint, the Hermitian pairing twisted by $\mathsf C_0$ |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
-| $p_\mu = (E,-\vec p)$, $\gamma_\mu p_\mu = \gamma_0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and its contraction |
-| $j_\mu = \bar{\psi}\gamma_\mu\psi$ | Conserved Dirac current |
+| $p_\mu = (E,-\vec p)$, $\mathsf C_\mu p_\mu = \mathsf C_0E - \mathsf C_kp_k$ | Four-momentum and its momentum cell |
+| $j_\mu = \langle\psi,\mathsf C_\mu\psi\rangle_{\mathrm D}$ | Conserved Dirac current |
 | $\tilde{J} = ic\,j_0e_t + \vec j \in \mathbb{M}_-$ | Current as a material-sector biquaternion |
 | $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_t + i\vec u)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |
 | $ϙ$ | Charge of the field under minimal coupling |
@@ -481,3 +498,17 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebraic background to the biquaternion and spinor structures.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra formulation of the Dirac and Weyl equations.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original spacetime-algebra treatment of the Dirac spinor.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\mathsf C_5$; the central grading is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

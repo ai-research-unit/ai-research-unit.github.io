@@ -26,13 +26,13 @@ $$
 the upper block carrying the left-handed module and the lower the right-handed one. On $\Delta$ the **chirality operator** is the block-diagonal matrix
 
 $$
-\gamma_5 = \begin{pmatrix}-I_2 & 0\\ 0 & I_2\end{pmatrix}, \qquad \gamma_5^2 = I_4.
+\Gamma = \begin{pmatrix}-I_2 & 0\\ 0 & I_2\end{pmatrix}, \qquad \Gamma^2 = I_4.
 $$
 
 The **chiral projectors** are
 
 $$
-P_L = \tfrac12\left(I_4 - \gamma_5\right), \qquad P_R = \tfrac12\left(I_4 + \gamma_5\right).
+P_L = \tfrac12\left(I_4 - \Gamma\right), \qquad P_R = \tfrac12\left(I_4 + \Gamma\right).
 $$
 
 Explicitly $P_L = \left(\begin{smallmatrix}I_2&0\\0&0\end{smallmatrix}\right)$ and $P_R = \left(\begin{smallmatrix}0&0\\0&I_2\end{smallmatrix}\right)$. The projector algebra is immediate:
@@ -41,14 +41,14 @@ $$
 \boxed{\;P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L + P_R = I_4\;},
 $$
 
-and additionally $\gamma_5 = P_R - P_L$, $\operatorname{Tr}P_L = \operatorname{Tr}P_R = 2$, so each projector has rank two. All identities hold to machine accuracy (residual $<10^{-15}$).
+and additionally $\Gamma = P_R - P_L$, $\operatorname{Tr}P_L = \operatorname{Tr}P_R = 2$, so each projector has rank two. All identities hold to machine accuracy (residual $<10^{-15}$).
 
 Their action on a Dirac spinor is the projection onto each half:
 
 $$
 P_L\Psi = \begin{pmatrix}\psi_L\\ 0\end{pmatrix}, \qquad
 P_R\Psi = \begin{pmatrix}0\\ \psi_R\end{pmatrix}, \qquad
-\gamma_5\Psi = \begin{pmatrix}-\psi_L\\ \psi_R\end{pmatrix}.
+\Gamma\Psi = \begin{pmatrix}-\psi_L\\ \psi_R\end{pmatrix}.
 $$
 
 **Lorentz invariance.** The $SL(2,\mathbb{C})$ action on $\Delta$ is block diagonal,
@@ -57,22 +57,22 @@ $$
 S(\tilde U_{\mathrm L}) = \begin{pmatrix} g & 0\\ 0 & \mathsf{M}_2(\tilde U_{\mathrm L}^{*})\end{pmatrix}, \qquad g = \mathsf{M}_2(\tilde U_{\mathrm L}),
 $$
 
-so it commutes with $\gamma_5$ and with each $P_{L,R}$. Chirality is therefore a Lorentz-invariant label: a Lorentz transformation never mixes the two halves.
+so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore a Lorentz-invariant label: a Lorentz transformation never mixes the two halves.
 
 **Why the halves are not the ideals.** The projectors above are not the Peirce idempotents $\tilde\Pi_+,\tilde\Pi_-$. The minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$, and left multiplication by $\tilde U_{\mathrm L}$ acts on each by the *same* defining representation; the chiral projectors instead act on the four-dimensional Dirac module and distinguish $\psi\mapsto g\psi$ from $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$. This distinction is invisible to the simple algebra $\mathbb{B}$ and appears only through the conjugate module — as the parent article stresses.
 
-**A second route to the same two halves.** The source recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation* splits the biquaternion wave function itself, in the light-cone basis, into its **positive and negative signed parts** with respect to the null idempotents $N = \tfrac12(1,\vec u)$ and $\bar N$, and identifies the sign of the signed part with the chirality, $F^+\sim\psi_R$, $F^-\sim\psi_L$. That split is a Peirce split of the wave function, not the projector $\tfrac12(I_4\pm\gamma_5)$ on the Dirac module used in this problem. The two labellings agree only after the correspondence between that chiral algebra and the Weyl system, which that article verifies row by row; the projectors here act on $\Delta = S\oplus\bar S$, whereas the signed parts live in $\mathbb{B}$.
+**A second route to the same two halves.** The source recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation* splits the biquaternion wave function itself, in the light-cone basis, into its **positive and negative signed parts** with respect to the null idempotents $N = \tfrac12(1,\vec u)$ and $\bar N$, and identifies the sign of the signed part with the chirality, $F^+\sim\psi_R$, $F^-\sim\psi_L$. That split is a Peirce split of the wave function, not the projector $\tfrac12(I_4\pm\Gamma)$ on the Dirac module used in this problem. The two labellings agree only after the correspondence between that chiral algebra and the Weyl system, which that article verifies row by row; the projectors here act on $\Delta = S\oplus\bar S$, whereas the signed parts live in $\mathbb{B}$.
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-Take the mostly-minus counterpart of the parent's block gamma matrices,
+Take the mostly-minus counterpart of the parent's block generators, writing $T_\mu=iT_{e_\mu,e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
 
 $$
-\gamma_0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
-\gamma_k = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
+T_0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
+T_k = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
 $$
 
-satisfying $\{\gamma_{\mu},\gamma_{\nu}\} = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
+satisfying $T_\mu T_\nu + T_\nu T_\mu = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
 
 $$
 i\left(\partial/\partial t' + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = m\,\psi_L, \qquad
@@ -315,16 +315,16 @@ which is exactly the rotor conjugation of the material sector. A single spinor c
 
 **Composition.** Successive rotors compose by multiplication in both pictures: $\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\psi) = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\psi$ and $\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}V\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*} = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})V(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.
 
-**The mixed pairing.** Finally, the pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$, is invariant:
+**The mixed pairing.** Finally, the pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\chi$, is invariant:
 
 $$
-\boxed{\;b\left(g\psi,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi\right)
-= \psi^{\dagger}g^{\dagger}\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi
+\boxed{\;b\left(g\psi,\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\chi\right)
+= \psi^{\dagger}g^{\dagger}\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\chi
 = \psi^{\dagger}g^{\dagger}\,(g^{\dagger})^{-1}\chi
 = \psi^{\dagger}\chi\;},
 $$
 
-because the right-handed matrix is the inverse conjugate transpose, $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = (g^{\dagger})^{-1}$, equivalently $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, the identity established in Problem 3 for a unit-norm biquaternion. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).
+because the natural conjugate of the star is its inverse, $\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural}=e_t$, so that the right-handed matrix is the inverse conjugate transpose, $\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big) = (g^{\dagger})^{-1}$, equivalently $\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$. The law is not $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$: the conjugate transpose squares to $e_t$ only on the compact subgroup, so $\psi^{\dagger}\chi$ would not be invariant. This is the Dirac scalar bilinear (numerical residual $<10^{-12}$).
 
 ## Limiting Cases
 
@@ -358,7 +358,7 @@ A fourth point, the biquaternion (ideal) form of the symplectic pairing, is the 
 
 ## Summary
 
-Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$, with $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box-m^2)\psi = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. (3) Under a boost along $\vec u_z$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(\exp(-i\theta/2),\exp(i\theta/2))$; in general $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g_{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde U_{\mathrm L}V\tilde U_{\mathrm L}^{*}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.
+Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma)$, $P_R = \tfrac12(I_4+\Gamma)$, with $\Gamma = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box-m^2)\psi = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. (3) Under a boost along $\vec u_z$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(\exp(-i\theta/2),\exp(i\theta/2))$; in general $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g_{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde U_{\mathrm L}V\tilde U_{\mathrm L}^{*}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.
 
 ## Summary of Notation
 
@@ -374,8 +374,9 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 | $V_1 = (\tfrac12,0)$, $\bar{S} = (0,\tfrac12)$ | Left- and right-handed Weyl modules |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}\Delta = 4$ |
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\; \tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents |
-| $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
-| $P_L = \tfrac12(I_4-\gamma_5),\; P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |
+| $\Gamma = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
+| $P_L = \tfrac12(I_4-\Gamma),\; P_R = \tfrac12(I_4+\Gamma)$ | Chiral projectors |
+| $T_\mu = iT_{e_\mu,e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $T_0,T_k$ are the block matrices of Problem 2 |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
@@ -393,3 +394,17 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the construction of the Dirac spinor from two Weyl spinors and the mass term.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the modules of $M_2(\mathbb{C})$, the highest-weight classification, and the Clebsch–Gordan rule.
 - The companion articles of this series: [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), and [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

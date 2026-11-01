@@ -14,7 +14,7 @@ This article argues that the biquaternion framework is the natural home of that 
 
 The article develops the correspondence in both directions. It first states the standard supersymmetric quantum physics and derives the partner potentials; it then identifies the biquaternionic first-order operator with the supercharge and the chiral pair with the superalgebra; it exhibits the 1+1-dimensional realisation, where the superpotential is a position-dependent mass and the two partner potentials are the two eigenvalues of a Hermitian element of $\mathbb{M}_+$; it reads the Dirac oscillator as the exactly solvable relativistic realisation of the partner structure; and it identifies the Witten index with the chirality imbalance of the zero modes. The quantised theory, the superfield formalism and the bona fide supersymmetric field theories are not treated; the subject here is the quantum physics, in the single-particle sense. The general graded-algebra framework behind the supercharges, the graded commutator and the boundary of what the biquaternion algebra supplies rather than imports is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the interpretation of the parity as the grading of the ambient algebra is *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*.
 
-The conventions are the series conventions. The Clifford generators satisfy $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$; the chirality operator is $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$, $\gamma_5^2 = I_4$; the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$, with the sectors $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); and the mass pair is
+The conventions are the series conventions. The frame is the cell frame: the five generators are the cells $iT_{e_t,e_x}$, $iT_{e_k,e_y}$ for $k=x,y,z$, and $-iT_{e_t,e_z}$, with $T_{a,b}=L_aR_b$ acting as $T_{a,b}\psi = a\psi b$ and $T_{e_t,e_t}$ the identity, so that the first squares to $+T_{e_t,e_t}$ and the three spatial ones to $-T_{e_t,e_t}$, distinct ones anticommute, that is $g = \mathrm{diag}(+1,-1,-1,-1)$ for the four vector generators, and the fifth anticommutes with all four and squares to $+T_{e_t,e_t}$; the chirality operator is $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$, whose cell is $-iT_{e_t,e_z}$, with $\Gamma^2=1$; the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$, with the sectors $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); and the mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -89,7 +89,7 @@ $$
 
 the central scalar d'Alembertian. The first-order pair of operators $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ is therefore a supercharge pair in the sense of the previous section, with the following dictionary.
 
-**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $\tilde\Pi_{L,R} = \frac12(1\pm\gamma_5)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathbb{D}$ of the next paragraph, which is odd under it.
+**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $\tilde\Pi_{L,R}\psi = \frac12(\psi \mp i\,e_t\,\psi\,e_z)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathbb{D}$ of the next paragraph, which is odd under it.
 
 **The superalgebra is the mass pair.** The massive biquaternionic Dirac equation is the pair
 
@@ -124,7 +124,7 @@ The dictionary is not an analogy imposed from outside; it is the statement that 
 The oddness of the supercharge under the grading is the chirality anticommutation, and it is worth writing it in the Weyl basis where it is diagonal. In the chiral basis,
 
 $$
-\gamma_5 = \begin{pmatrix} -I_2 & 0 \\ 0 & I_2\end{pmatrix},
+\Gamma = \begin{pmatrix} -I_2 & 0 \\ 0 & I_2\end{pmatrix},
 \qquad
 \beta = \begin{pmatrix} 0 & I_2 \\ I_2 & 0\end{pmatrix},
 \qquad
@@ -135,13 +135,13 @@ with $\mathbb{D}^2=\Box$.
 in the chiral basis. Two facts are immediate from the block structure.
 
 - The **supercharge is off-diagonal**: $\mathbb{D}$ has no diagonal blocks in the chiral basis, so it maps a left-handed field to a right-handed one and back, exactly as the biquaternion pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. It is odd under the chirality grading, which is the statement that the supercharge carries one unit of it.
-- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ (the companion article), which is diagonal in the chiral basis and commutes with $\gamma_5$. It is the supersymmetric Hamiltonian $H$, and the mass term $m\beta$, off-diagonal in this basis, is the superpotential that pairs the two sectors.
+- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ (the companion article), which is diagonal in the chiral basis and commutes with the chirality $\Gamma$. It is the supersymmetric Hamiltonian $H$, and the mass term $m\beta$, off-diagonal in this basis, is the superpotential that pairs the two sectors.
 
 In the biquaternion language the same statement reads: the gradient $\tilde{\nabla}$ is odd under the chirality $\mathbb{Z}_2$ of the two minimal left ideals; the central $\Box$ is even; and the mass, being off-diagonal, is odd. The superalgebra is the anticommutation $\{$odd, odd$\}=$ even, realised concretely as $\{$Dirac operator, Dirac operator$\}=$ scalar.
 
 ### The Two Gradings Must Not Be Conflated
 
-The supersymmetric grading is the **chirality** grading (left/right, $\gamma_5$), and it is not the frame grading (large/small, $\beta$) that the Foldy–Wouthuysen transformation diagonalises. The distinction, already drawn in the companion article on the transformation, matters here for the same reason: $\beta$ and $\gamma_5$ anticommute, so a supercharge that is odd under one is even under the other, and the two interpretations of the same first-order operator organise it differently. In the chirality grading the supercharge is $\mathbb{D}$ and the mass is the off-diagonal superpotential; in the frame grading the object that the non-relativistic reduction removes is the kinetic term $O = c\boldsymbol\alpha\cdot\vec\pi$, which is odd under $\beta$. The biquaternion corpus uses the chirality grading when it writes the mass pair and the frame grading when it performs the non-relativistic reduction, and the supersymmetric structure belongs to the first. A reader who imports the frame intuition into the supersymmetry will expect the wrong object to be "odd"; this subsection is the standing warning against that.
+The supersymmetric grading is the **chirality** grading (left/right, $\Gamma$), and it is not the frame grading (large/small, $\beta$) that the Foldy–Wouthuysen transformation diagonalises. The distinction, already drawn in the companion article on the transformation, matters here for the same reason: $\beta$ and $\Gamma$ anticommute, so a supercharge that is odd under one is even under the other, and the two interpretations of the same first-order operator organise it differently. In the chirality grading the supercharge is $\mathbb{D}$ and the mass is the off-diagonal superpotential; in the frame grading the object that the non-relativistic reduction removes is the kinetic term $O = c\boldsymbol\alpha\cdot\vec\pi$, which is odd under $\beta$. The biquaternion corpus uses the chirality grading when it writes the mass pair and the frame grading when it performs the non-relativistic reduction, and the supersymmetric structure belongs to the first. A reader who imports the frame intuition into the supersymmetry will expect the wrong object to be "odd"; this subsection is the standing warning against that.
 
 ## The 1+1-Dimensional Realisation
 
@@ -260,11 +260,12 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$ | Biquaternion algebra |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $T_{a,b}=L_aR_b$, $T_{a,b}\psi = a\psi b$ | The cell: multiply on the left by $a$, on the right by $b$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient (the supercharge) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian (the Hamiltonian) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Mass pair (superalgebra) |
-| $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ | Chirality operator (the grading) |
+| $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$ (cell $-iT_{e_t,e_z}$) | Chirality operator (the grading) |
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |
@@ -290,3 +291,17 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 - L. E. Gendenshtein, "Derivation of exact spectra of the Schrödinger equation by means of supersymmetry," *JETP Letters* **38** (1983) 356–359, for shape invariance.
 - M. F. Atiyah and I. M. Singer, "The index of elliptic operators: I," *Annals of Mathematics* **87** (1968) 484–530, for the index theorem that the chiral zero-mode count generalises.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the Dirac operator, its square, and the chiral projectors used throughout.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

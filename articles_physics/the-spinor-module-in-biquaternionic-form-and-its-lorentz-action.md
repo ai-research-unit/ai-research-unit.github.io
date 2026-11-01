@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article *The Material Sector: Four-Vectors, Interval and Lorentz Action* identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **Hermitian sandwich** with $\tilde U_{\mathrm L}$, the unit-norm biquaternion that implements the Lorentz transformation,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **Hermitian sandwich** with $\tilde U_{\mathrm L}$, the unit-norm biquaternion that implements the Lorentz transformation,
 
 $$
 \tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}.
 $$
 
-The article *The Informational Sector: States, Observables and Probability* identifies the Hermitian subspace $\mathbb{M}_+$ with the observables of a two-state system, whose products generate its operator algebra. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
+The article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) identifies the Hermitian subspace $\mathbb{M}_+$ with the observables of a two-state system, whose products generate its operator algebra. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
 
 The two actions are different in kind. The four-vector action is two-sided — it is a Hermitian sandwich — while the spinor action is one-sided. The difference is not an accident of notation. It is the algebraic origin of the double cover: the element $-e_t$ of $SL(2,\mathbb{C})$ acts trivially by the Hermitian sandwich on $\mathbb{M}_-$, but it acts as $-\mathrm{id}$ on the spinor module. Consequently the four-vector representation descends to the Lorentz group, while the spinor representation does not: the spinor is a genuine representation of the double cover.
 
@@ -44,7 +44,7 @@ Q_t - iQ_3 & -iQ_1 - Q_y\\[2pt]
 \mathsf{M}_2(e_t) = I_2,\quad \mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu,\quad \mathsf{M}_2(i) = i I_2,
 $$
 
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i \vec e_\mu$ corresponds to $\sigma_\mu$, and the quaternion relations $\vec e_\mu \vec e_\nu = \sum_\lambda \epsilon_{\mu\nu\lambda}\vec e_\lambda$ hold on both sides. Two properties of $\mathsf{M}_2$ are used repeatedly:
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i \vec e_\mu$ corresponds to $\sigma_\mu$, and the quaternion relations $\vec e_\mu \vec e_\nu = \sum_\lambda \epsilon_{\mu\nu\lambda}\vec e_\lambda$ hold on both sides. Two properties of $\mathsf{M}_2$ are used repeatedly:
 
 $$
 \mathsf{M}_2(\tilde{Q}\tilde Q_1) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_1), \qquad
@@ -150,7 +150,7 @@ This carrier model is the precise sense in which "the spinor module lies inside 
 
 ## The Two Chiral Halves
 
-The spinor module of the preceding sections carries the **defining representation** of $SL(2,\mathbb{C})$. In the classification of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, this is the representation
+The spinor module of the preceding sections carries the **defining representation** of $SL(2,\mathbb{C})$. In the classification of the companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), this is the representation
 
 $$
 V_1 = \left(\tfrac{1}{2}, 0\right), \qquad \dim_{\mathbb{C}} V_1 = 2,
@@ -192,7 +192,7 @@ $$
 \boxed{\;\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4\;},
 $$
 
-on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2(\tilde U_{\mathrm L}^{*})$. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
+on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)$, the second block being the inverse conjugate transpose of the first. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
 
 ## The Unit-Norm Biquaternions and the Double Cover
 
@@ -208,7 +208,7 @@ The subgroups relevant to the series sit inside it as follows:
 
 | Element | Characterization | Subspace |
 |---|---|---|
-| Pure boost $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
+| Pure boost $\tilde U_{\mathrm b} = \cosh\frac{\xi}{2} + i\sinh\frac{\xi}{2}\vec u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
 | Pure rotation $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
 | General $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Unit norm | $\mathbb{B}$ |
 
@@ -264,10 +264,10 @@ No two-sided action appears. This is the defining feature of the spinor represen
 
 ### Boosts and Rotations Explicitly
 
-For a boost along $\vec u_{\mathrm b}$ with rapidity $\psi$,
+For a boost along $\vec u_{\mathrm b}$ with rapidity $\xi$,
 
 $$
-\mathsf{M}_2(\tilde U_{\mathrm b}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde U_{\mathrm b}) = \cosh\frac{\xi}{2}\,I_2 + \sinh\frac{\xi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$
 
 as follows from $\mathsf{M}_2(i\vec u_{\mathrm b}) = \vec u_{\mathrm b}\cdot\boldsymbol{\sigma}$. For $\vec u_{\mathrm b} = \vec u_z$ this is the diagonal matrix $\operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$, which stretches one spinor component and contracts the other. For a rotation about $\vec u_{\mathrm r}$ by angle $\theta$,
@@ -336,7 +336,7 @@ It is invariant exactly when $g^{*}g = I_2$, i.e. on the compact subgroup $SU(2)
 
 ### The Mixed Pairing
 
-There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$. Then the sesquilinear pairing
+There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\chi$. Then the sesquilinear pairing
 
 $$
 \mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi
@@ -345,13 +345,13 @@ $$
 is invariant. Indeed,
 
 $$
-b(g\psi,\, \mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi)
-= \psi^{\dagger}\, \mathsf{M}_2(\tilde U_{\mathrm L})^{\dagger}\,\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\,\chi
-= \psi^{\dagger}\,\mathsf{M}_2\!\left(\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*}\right)\chi
+b\big(g\psi,\, \mathsf{M}_2((\tilde U_{\mathrm L}^{*})^{\natural})\chi\big)
+= \psi^{\dagger}\, \mathsf{M}_2(\tilde U_{\mathrm L})^{\dagger}\,\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\,\chi
+= \psi^{\dagger}\,\mathsf{M}_2\!\left(\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural}\right)\chi
 = \psi^{\dagger}\chi,
 $$
 
-because $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*} = (\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L})^{*} = e_t^{*} = e_t$ for a unit-norm biquaternion. This mixed pairing is the invariant scalar bilinear of the Dirac spinor; it pairs a left-handed spinor with a right-handed one.
+because $\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural} = e_t$ for a unit-norm biquaternion, so that $\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big) = (\mathsf{M}_2(\tilde U_{\mathrm L})^{\dagger})^{-1}$ is the inverse conjugate transpose of $g$. The half that carries the pair is therefore the dual of the conjugate, and not the conjugate itself: with $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$ the product $\psi^{\dagger}\chi$ is not invariant, because $\mathsf{M}_2(\tilde U_{\mathrm L}^{*})$ is the conjugate transpose and squares to $e_t$ only on the compact subgroup. This mixed pairing is the invariant scalar bilinear of the Dirac spinor; it pairs a left-handed spinor with a right-handed one.
 
 ### The Spinor-to-Vector Map
 
@@ -391,7 +391,7 @@ The transformation laws are collected in the following table.
 |---|---|---|---|
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | $S\times S\to\mathbb{C}$ | invariant | $g^{T}\epsilon g = \epsilon$ |
 | $h(\psi,\phi) = \psi^{\dagger}\phi$ | $S\times S\to\mathbb{C}$ | $\psi^{\dagger}g^{*}g\,\phi$ | invariant iff $g\in SU(2)$ |
-| $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*}=e_t$ |
+| $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural}=e_t$ |
 | $\tilde{Q} = u\,v^{\dagger}$ | $S\times\bar{S}\to\mathbb{B}$ | $g\,\tilde{Q}\,g^{*}$ | equivariant |
 | $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$ | $S\times\bar{S}\to\mathbb{M}_+$ | $g\,H\,g^{*}$ | Hermitian; four-vector is $iH$ |
 
@@ -429,7 +429,7 @@ on the doubled spinor space $\mathbb{C}^2\oplus\bar{\mathbb{C}}^2$ — the pairi
 $$
 \{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ijk}\,\eta_{kl}\,v_l ,
 $$
-where the overall sign is the conventional one for $\omega$. This was recomputed here on generic elements: the brackets of the three bilinears reproduce the structure constants, so the map $z\mapsto v(z)$ is a moment-map-like realisation of the Lie algebra on the spinor space, not merely an equivariant map to the vectors. Its use in the spinfoam programme — the area-constrained symplectomorphism to $T^*SU(1,1)$ — is recorded in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*.
+where the overall sign is the conventional one for $\omega$. This was recomputed here on generic elements: the brackets of the three bilinears reproduce the structure constants, so the map $z\mapsto v(z)$ is a moment-map-like realisation of the Lie algebra on the spinor space, not merely an equivariant map to the vectors. Its use in the spinfoam programme — the area-constrained symplectomorphism to $T^*SU(1,1)$ — is recorded in [Quantum Gravity under the Biquaternion Framework — A Research Agenda](quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html).
 
 ## Spinor Action Versus the Hermitian Sandwich
 
@@ -483,7 +483,7 @@ This correspondence between the biquaternion algebra and the even Clifford subal
 1. why a spinor transforms one-sidedly (it is an element of a Clifford module, and modules are acted on linearly);
 2. why a four-vector transforms two-sidedly (it is an element of the odd part, acted on by the Hermitian sandwich);
 3. why $-e_t$ acts as $-\mathrm{id}$ on spinors but trivially on four-vectors (a single factor of the central unit versus two);
-4. why the two chiralities are not visible to the complex algebra $\mathbb{B}$ but appear on complexification: the chirality operator $i_{\mathbb{C}}\omega$ (the scalar imaginary of the complexified Clifford algebra times the volume element $\omega$) is not an element of the even subalgebra, and it anticommutes with the generators; the odd part therefore exchanges the two half-spin modules, while the even part $\mathbb{B}$ preserves them. The complexified even algebra splits accordingly,
+4. why the two chiralities are not visible to the complex algebra $\mathbb{B}$ but appear on complexification: the chirality operator $i_{\mathbb{C}}\omega$ (the scalar imaginary of the complexified Clifford algebra times the volume element $\omega$, which is itself even) is not an element of the real even subalgebra $\mathbb{B}$ — it needs the complexification — and it anticommutes with the generators; the odd part therefore exchanges the two half-spin modules, while the even part $\mathbb{B}$ preserves them. The complexified even algebra splits accordingly,
 $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
 $$
@@ -500,7 +500,7 @@ A natural candidate is the module action defined here; its compatibility with th
 3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a bigeneral quaternionic bilinear on the ideal $\mathbb{B}\tilde\Pi_+$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
 4. **Majorana and reality conditions.** In Lorentzian signature the Dirac module is self-conjugate but the two Weyl halves are a conjugate pair, so Majorana spinors exist while Majorana–Weyl spinors do not. How these reality conditions read as conditions on biquaternion-valued fields is a natural continuation.
 5. **Curved spacetime.** The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
-6. **The indefinite pairing and the framework's own interpretation.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external interpretation cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of *The Neutrino and Majorana Fermions in Biquaternionic Form* — is not settled here, and the two articles are consistent but not yet joined.
+6. **The indefinite pairing and the framework's own interpretation.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external interpretation cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — is not settled here, and the two articles are consistent but not yet joined.
 
 ## Summary
 
@@ -537,7 +537,7 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\ \tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
 | $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y),\ \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)=\vec e_y\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ of $S$ |
 | $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}:\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
-| $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm b} = \cosh\frac{\xi}{2}+i\sinh\frac{\xi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
 | $\psi\mapsto\tilde U_{\mathrm L}\psi$ | Lorentz action on the spinor module |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |

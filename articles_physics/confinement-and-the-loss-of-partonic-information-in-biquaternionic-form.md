@@ -255,13 +255,13 @@ The negative result above concerns **colour** confinement, and it stands: the or
 Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(i\omega t')$, obeying the massive Dirac equation
 
 $$
-\left(i\omega\gamma_0 - \sum_{k=1}^{3}\gamma_k\partial/\partial x_k + im\right)q = 0
+\left(i\omega\mathsf C_0 - \sum_{k=1}^{3}\mathsf C_k\partial/\partial x_k + im\right)q = 0
 $$
 
-in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The confinement of the field to $\Omega$ is the boundary condition
+in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface and with $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ the frame cells, $T_{a,b}\psi=a\psi b$. The confinement of the field to $\Omega$ is the boundary condition
 
 $$
-\sum_{k=1}^{3} u_k\gamma_k\,q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = i\,q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \qquad(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\partial\Omega),
+\sum_{k=1}^{3} u_k\mathsf C_k\,q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = i\,q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \qquad(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\partial\Omega),
 $$
 
 where $\vec u$ is the unit outward normal; the condition is what forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $q$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm.
@@ -270,10 +270,10 @@ where $\vec u$ is the unit outward normal; the condition is what forbids the flo
 
 The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work.
 
-**A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, under which the spatial gamma matrices act by left multiplication by the imaginary units and the timelike generator acts **antilinearly**, by complex conjugation:
+**A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, under which the spatial cells act by left multiplication by the imaginary units and the timelike cell acts **antilinearly**, by complex conjugation:
 
 $$
-A(\gamma_0\Phi) = \bigl(A(\Phi)\bigr)^{*}, \qquad A(i\Phi) = -A(\Phi)\,i_3 ,
+A(\mathsf C_0\Phi) = \bigl(A(\Phi)\bigr)^{*}, \qquad A(i\Phi) = -A(\Phi)\,i_3 ,
 $$
 
 with $^{*}$ the componentwise complex conjugation; the second identity says that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. The componentwise conjugation is written $C$ below. The map $A$ is therefore not complex-linear, and the Dirac equation becomes the single biquaternionic equation
@@ -385,7 +385,7 @@ The loss of the partonic labels is a superselection statement. A charge rotation
 
 What the framework cannot supply is the colour theory itself. The compact algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of dimension $4$, every $\mathbb{B}$-module has even complex dimension, and a colour triplet and a gluon octet do not exist on the present construction. The area law, string tension, flux tube, mass gap, and colour-singlet structure are therefore imports, and the framework's contribution is the carrier of the order parameter and the informational language of the loss, not the physics of confinement.
 
-The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive. The **bag** picture is different in kind: a bounded region and a **linear boundary condition**, $\sum_k u_k\gamma_k q = iq$ on the surface, which bans the flow of the field out of the region. That is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995): a real-linear bijection carries the bispinor to a biquaternion, the mass term carries the complex conjugation $C$, factoring the equation removes $C$, the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$, the bag condition becomes the projector condition $S^-\tilde{p}=0$, and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$. What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The two facts the reduction leans on were recomputed: $\tfrac12(e_t\pm i\vec e_k)$ are complementary idempotents, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation is a **zero divisor exactly on the mass shell**.
+The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive. The **bag** picture is different in kind: a bounded region and a **linear boundary condition**, $\sum_k u_k\mathsf C_k q = iq$ on the surface, which bans the flow of the field out of the region. That is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995): a real-linear bijection carries the bispinor to a biquaternion, the mass term carries the complex conjugation $C$, factoring the equation removes $C$, the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$, the bag condition becomes the projector condition $S^-\tilde{p}=0$, and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$. What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The two facts the reduction leans on were recomputed: $\tfrac12(e_t\pm i\vec e_k)$ are complementary idempotents, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation is a **zero divisor exactly on the mass shell**.
 
 ## Summary of Notation
 
@@ -394,6 +394,7 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
+| $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ | Frame cells on the Dirac module; $T_{a,b}\psi=a\psi b$ |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Informational and material sectors |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{M}_-$ | Gauge connection (material sector) |
 | $T_a = ie_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
@@ -444,3 +445,17 @@ The two confinement pictures must be kept apart, and the framework houses one of
 - Huzihiro Araki, "Relative entropy of states of von Neumann algebras," *Publications of the Research Institute for Mathematical Sciences* **11** (1976) 809–833, for relative entropy, monotonicity, and its behaviour under conditional expectations.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the monotonicity of relative entropy under completely positive maps and the structure of idempotent channels.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the channel formalism and the distinguishability measures used here.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

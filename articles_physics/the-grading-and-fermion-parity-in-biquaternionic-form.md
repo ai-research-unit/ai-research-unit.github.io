@@ -12,9 +12,11 @@ $$
 
 with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\Theta_x$, which is why the physics never needs them.
 
+The generators are written as cells of the biquaternion algebra acting on itself on both sides. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $T_{a,b}=L_aR_b$, the four generator cells are $c_0=iT_{e_t,e_x}$, $c_1=iT_{e_x,e_y}$, $c_2=iT_{e_y,e_y}$, $c_3=iT_{e_z,e_y}$, and the chirality cell is $c_5=-iT_{e_t,e_z}$.
+
 Three facts organise the article. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is that the parity is a **scalar sign**, $\alpha(x)=\varepsilon_x x$, and that it is invisible on the algebra, because every element of $\mathbb{B}$ is even. The third is that the twist is a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; it sits on the element and never on the operator, so the sandwich is the only operator the physics uses.
 
-The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto\gamma_2\gamma_3$, $i\mapsto-\Omega$ and the chirality operator $\gamma_5=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the abstract algebra of the signed forms is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, cited for the ambient theory and not used as operators here.
+The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto T_{e_x,e_t}$, $i\mapsto-\Omega$ and the chirality cell $c_5=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the abstract algebra of the signed forms is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, cited for the ambient theory and not used as operators here.
 
 ## The Grading of the Ambient Algebra
 
@@ -29,7 +31,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generators $\gamma_\mu$ are odd; the bivectors $\gamma_\mu\gamma_\nu$ and the volume element are even; the square $(\gamma_\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generator cells $c_\mu$ are odd; the bivectors $c_\mu c_\nu$ and the volume element are even; the square $(c_\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the next but one section is invisible in it.
 
@@ -78,7 +80,7 @@ so the operator is a similarity of the spinor form of ratio $\lvert \langle x\ra
 
 The sign $\varepsilon_x=(-1)^{\lvert x\rvert}$ is usually introduced as the abstract grade involution, equal to $+1$ on the even slot and $-1$ on the odd slot. In the ambient algebra it is an ordinary conjugation.
 
-**Theorem (the grade involution is a conjugation).** Let $\Omega=\gamma_0\gamma_1\gamma_2\gamma_3$ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
+**Theorem (the grade involution is a conjugation).** Let $\Omega=c_0c_1c_2c_3=-T_{e_t,e_z}$ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
 
 $$
 \Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x).
@@ -86,7 +88,7 @@ $$
 
 With the dictionary $i\mapsto-\Omega$, the same statement reads: the grade involution is the conjugation by the central scalar imaginary.
 
-**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $\gamma_{j}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=\gamma_{\mu_1}\cdots\gamma_{\mu_k}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $c_{j}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=c_{\mu_1}\cdots c_{\mu_k}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
 
 **Remark (the sign is a scalar, not a factor of the operator).** The grade involution acts on the element, $\alpha(x)=\varepsilon_x x$, and $\varepsilon_x=\pm1$. It therefore never multiplies a sandwich: multiplying the parameter by $\varepsilon_x$ multiplies the sandwich by the same scalar, and on the algebra $\varepsilon_x=+1$ identically. The parity is a property of the parameter, which the operator may report as a sign, and not a second operator.
 
@@ -122,18 +124,18 @@ with no correction factor.
 
 ## The Odd Slot Is a Coset, Not a Second Algebra
 
-**Proposition (the odd slot is not closed).** The odd slot satisfies $\mathrm{Cl}^1\mathrm{Cl}^1\subseteq\mathbb{B}$, so it is not a subalgebra; it is a single coset of the even slot for the multiplication. Fix an odd unit $\gamma$; then every odd element is $\gamma s$ with $s$ even, and the odd slot is the copy $\mathbb{B}\gamma$ of the algebra inside the ambient one.
+**Proposition (the odd slot is not closed).** The odd slot satisfies $\mathrm{Cl}^1\mathrm{Cl}^1\subseteq\mathbb{B}$, so it is not a subalgebra; it is a single coset of the even slot for the multiplication. Fix an odd unit $u$, a generator cell; then every odd element is $u s$ with $s$ even, and the odd slot is the copy $\mathbb{B}u$ of the algebra inside the ambient one.
 
-*Proof.* Odd $\times$ odd is even by the parity table; for the second statement, an odd $y$ is $y=\gamma(\gamma_{-1}y)$ and $\gamma_{-1}y$ is even.
+*Proof.* Odd $\times$ odd is even by the parity table; for the second statement, an odd $y$ is $y=u(u^{-1}y)$ and $u^{-1}y$ is even.
 
 **Remark (the Hermitian form on the odd slot).** The odd slot is a module over the algebra and it carries the Hermitian form induced by the module structure, which is scalar-valued: writing $\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$ for even $s,t$,
 
 $$
-\langle s\gamma,t\gamma\rangle=-q(\gamma)\,\langle s,t\rangle,\qquad
-\langle s,t\gamma\rangle=0 ,
+\langle su,tu\rangle=-q(u)\,\langle s,t\rangle,\qquad
+\langle s,tu\rangle=0 ,
 $$
 
-verified for all four generators and on even samples: the form on the fermionic sector is the form on the algebra up to the scalar $-q(\gamma)$, with $q$ the quadratic form of the Clifford algebra, and the two slots are orthogonal for the form, as the parity preservation of the dagger requires. One warning belongs here, because it is easy to get wrong: the corresponding *elementwise* identity $(s\gamma)^{*}(t\gamma)=-q(\gamma)s^{*}t$ is **false** in general — a generator need not commute with an even element of the algebra, and the contraction terms spoil it — so the odd slot carries a Hermitian form and not a copy of the algebra's product. The fermionic sector is not a second algebra but a single module generator with the algebra's own Hermitian form.
+verified for all four generators and on even samples: the form on the fermionic sector is the form on the algebra up to the scalar $-q(u)$, with $q$ the quadratic form of the Clifford algebra, and the two slots are orthogonal for the form, as the parity preservation of the dagger requires. One warning belongs here, because it is easy to get wrong: the corresponding *elementwise* identity $(su)^{*}(tu)=-q(u)s^{*}t$ is **false** in general — a generator need not commute with an even element of the algebra, and the contraction terms spoil it — so the odd slot carries a Hermitian form and not a copy of the algebra's product. The fermionic sector is not a second algebra but a single module generator with the algebra's own Hermitian form.
 
 **Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies would have no rule for the product of two odd elements; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection and the parity.
 
@@ -141,7 +143,7 @@ verified for all four generators and on even samples: the form on the fermionic 
 
 The odd slot is where the parity sign is visible, and the simplest odd elements are the generators, which are the vectors of Minkowski space. The Hermitian interpretation of the reflection count is therefore a statement about the action of the Hermitian sandwich on them.
 
-**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\gamma_\mu^{*}=-\gamma_{\mu}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement.
+**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $c_\mu^{*}=-c_{\mu}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement.
 
 **Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
@@ -151,7 +153,7 @@ $$
 
 *Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2B(a,v)\,a+a^{2}v=q(a)\,v-2B(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
-**Corollary (which reflection carries which sign).** The timelike generator has $q(\gamma_{0})=+1$ and satisfies $\Theta_{\gamma_{0}}=\rho_{\gamma_{0}}$ exactly, while the spatial generators, $(\gamma_{k})^{2}=-1$, satisfy $\Theta_{\gamma_{k}}=-\rho_{\gamma_{k}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the next section, where two odd steps compose to a rotation.
+**Corollary (which reflection carries which sign).** The timelike generator has $q(c_{0})=+1$ and satisfies $\Theta_{c_{0}}=\rho_{c_{0}}$ exactly, while the spatial generators, $(c_{k})^{2}=-1$, satisfy $\Theta_{c_{k}}=-\rho_{c_{k}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the next section, where two odd steps compose to a rotation.
 
 **Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
@@ -162,7 +164,7 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 | structure | what it grades | an algebra grading? |
 |---|---|---|
 | Clifford parity (this article) | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, bosonic/fermionic | yes, of the ambient algebra only |
-| chirality $L/R$ | the two minimal left ideals of $\mathbb{B}$, the operator $\gamma_5$ | a $\mathbb{Z}/2$ of the module structure |
+| chirality $L/R$ | the two minimal left ideals of $\mathbb{B}$, the chirality cell $c_5$ | a $\mathbb{Z}/2$ of the module structure |
 | sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ | the Hermitian dagger, informational/material | **no**; it is the eigen-decomposition of the dagger and grades the symmetrized product only |
 | frame grading $\beta$ | large/small components, Foldy–Wouthuysen | no; a frame-dependent split |
 | number grading $N$ | the Fock space by total particle number | a grading of the state space |
@@ -193,15 +195,15 @@ Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-The generators $\gamma_1$ and $\gamma_2$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{\gamma_1}=-\rho_{\gamma_1}$ and $\Theta_{\gamma_2}=-\rho_{\gamma_2}$, because $q(\gamma_k)=-1$; the two minus signs multiply to $+1$ in the composite,
+The generators $c_1$ and $c_2$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{c_1}=-\rho_{c_1}$ and $\Theta_{c_2}=-\rho_{c_2}$, because $q(c_k)=-1$; the two minus signs multiply to $+1$ in the composite,
 
 $$
-\Theta_{\gamma_1}\circ\Theta_{\gamma_2}
-=\Theta_{\gamma_1\gamma_2}
+\Theta_{c_1}\circ\Theta_{c_2}
+=\Theta_{c_1c_2}
 =\Theta_{\vec e_z},
 $$
 
-the Hermitian sandwich by the bosonic element $\vec e_z=\gamma_1\gamma_2$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
+the Hermitian sandwich by the bosonic element $\vec e_z=c_1c_2=T_{e_z,e_t}$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
 
 ## Summary
 
@@ -216,7 +218,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $\gamma_\mu$ odd, $\gamma_\mu\gamma_\nu$ even | Generators fermionic, bivectors bosonic |
+| $c_\mu$ odd, $c_\mu c_\nu$ even | Generator cells fermionic, bivectors bosonic |
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |
@@ -226,7 +228,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | $\Theta_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
 | $\Theta_x\Theta_z=\Theta_{xz}$ | Exact composition; no sign correction |
 | $\Theta_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
-| $\mathrm{Cl}^1=\mathbb{B}\gamma$, $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
+| $\mathrm{Cl}^1=\mathbb{B}u$, $\langle su,tu\rangle=-q(u)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
 
 ## Further Reading
@@ -236,3 +238,17 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the $*$-unitary groups they define and the norm factor.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the chirality element, the bosonic/fermionic grading and its use in field theory.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the adjoint of an anti-automorphism and the $*$-unitary group of an algebra with involution.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -73,11 +73,11 @@ $$
 \end{cases}
 $$
 
-*Proof.* Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=(ab)^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{*}=b^{*}a^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{*}b^{*}$. Since $\lvert a^{*}\rvert=\lvert a\rvert$ and $\lvert b^{*}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}=a^{*}b^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the generators $\gamma_{\mu}$ and on products of two of them, for all four parity pairs.
+*Proof.* Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=(ab)^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{*}=b^{*}a^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{*}b^{*}$. Since $\lvert a^{*}\rvert=\lvert a\rvert$ and $\lvert b^{*}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}=a^{*}b^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the four frame vectors $v_{\mu}$, with $v_0^2=1$ and $v_k^2=-1$, and on products of two of them, for all four parity pairs.
 
 **Remark (why the two behave differently).** The adjoint reverses the order of the two factors, and the graded bracket distinguishes the two orders by the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ exactly in the odd-odd case, where the bracket is symmetric: a symmetric bracket is preserved by the reversal, an antisymmetric one is negated. The statement is therefore not an accident of the Clifford algebra but the interaction of two signs, the order reversal of the adjoint and the Koszul sign of the bracket. On the even part, where the bracket is the Lie bracket of the framework, the rule reads $\bigl([a,b]\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]$, so the bracket of two anti-Hermitian elements is anti-Hermitian: the anti-Hermitian part is a Lie subalgebra, the compact form of the framework, while the Hermitian generators enter it with the conventional factor $i$.
 
-**Remark (the Koszul-signed convention and what the dagger is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign. The dagger of the corpus is **not** of that kind: on two generators $\gamma_0,\gamma_1$, both odd, one has $(\gamma_0\gamma_1)^{*}=\gamma_1\gamma_0=-\gamma_0\gamma_1$, while the Koszul-signed expression would be $(-1)^{1\cdot1}\gamma_1\gamma_0=+\gamma_0\gamma_1$. The corpus's dagger is the plain anti-involution, and the factor $(-1)^{\lvert a\rvert\lvert b\rvert}$ in the bracket identity is the price of it. A reader importing the super-* convention from the supersymmetry literature must choose which of the two signs his own dagger obeys, and the two are not the same map.
+**Remark (the Koszul-signed convention and what the dagger is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign. The dagger of the corpus is **not** of that kind: on two generators $v_0,v_1$, both odd, one has $(v_0v_1)^{*}=v_1v_0=-v_0v_1$, while the Koszul-signed expression would be $(-1)^{1\cdot1}v_1v_0=+v_0v_1$. The corpus's dagger is the plain anti-involution, and the factor $(-1)^{\lvert a\rvert\lvert b\rvert}$ in the bracket identity is the price of it. A reader importing the super-* convention from the supersymmetry literature must choose which of the two signs his own dagger obeys, and the two are not the same map.
 
 ## Supercharges, the Adjoint and the Odd Generators
 
@@ -107,19 +107,19 @@ is even and Hermitian, $\{\mathcal{Q},\mathcal{Q}^{*}\}^{*}=\{\mathcal{Q},\mathc
 
 **Remark (why the adjoint and not the inverse).** The Hamiltonian of the framework must be Hermitian, and its spectrum real, and the pairing $\{\mathcal{Q},\mathcal{Q}^{*}\}$ is Hermitian automatically because the adjoint is an adjoint; a pairing built with the inverse, $\{\mathcal{Q},\mathcal{Q}^{-1}\}$, has no reason to be. This is the physical content of the Hermitian reading of the odd sector: the operator that pairs the two chiralities is the adjoint of the supercharge and not its inverse, and the corpus's own supersymmetric realisation of the mass pair is written with the dagger for that reason. The difference between the two pairings is a norm, $X^{*}=\sigma(\langle X\rangle_{\natural})\sigma(X)^{-1}$, so on the unit slice of the real quaternions they coincide and elsewhere they differ by a scalar; the commutator structure below is insensitive to it, which is the honest scope of the distinction.
 
-**Remark (the supercharge in the module).** The odd slot is the rank-one module $\mathrm{Cl}^1=\mathbb{B}\gamma$, so an odd element is $\mathcal{Q}=s\gamma$ with $s$ even. By the anti-automorphism property its adjoint is
+**Remark (the supercharge in the module).** The odd slot is the rank-one module $\mathrm{Cl}^1=\mathbb{B}u$ for a non-isotropic vector $u$ ($u^2=q(u)$, $q$ the quadratic form), so an odd element is $\mathcal{Q}=su$ with $s$ even. By the anti-automorphism property its adjoint is
 
 $$
-\mathcal{Q}^{*}=(s\gamma)^{*}=\gamma_{}^{*}s^{*}=-\gamma\,s^{*},
+\mathcal{Q}^{*}=(su)^{*}=u^{*}s^{*}=-u\,s^{*},
 $$
 
 an odd element again, and
 
 $$
-\mathcal{Q}\,\mathcal{Q}^{*}=-q(\gamma)\,s\,s^{*},
+\mathcal{Q}\,\mathcal{Q}^{*}=-q(u)\,s\,s^{*},
 $$
 
-an even element whose Hermitian part is the pairing of the supercharge with its adjoint. When the even element $s$ is built from the generators orthogonal to $\gamma$ — so that $\gamma$ commutes with it — the anticommutator is the symmetric expression $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(\gamma)(ss^{*}+s^{*}s)$, which is the form the Hamiltonian takes in the one-mode case. The general anticommutator is even and Hermitian by the previous proposition; the symmetric formula is not claimed beyond the case in which the commutation holds, because a generator need not commute with an even element.
+an even element whose Hermitian part is the pairing of the supercharge with its adjoint. When the even element $s$ is built from the generators orthogonal to $u$ — so that $u$ commutes with it — the anticommutator is the symmetric expression $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$, which is the form the Hamiltonian takes in the one-mode case. The general anticommutator is even and Hermitian by the previous proposition; the symmetric formula is not claimed beyond the case in which the commutation holds, because a generator need not commute with an even element.
 
 ## What Must Be Adjoined
 
@@ -133,11 +133,11 @@ Two constructions in the series adjoin the missing odd sector, and in the Hermit
 
 ## One Graded Algebra, Not Two
 
-**Proposition.** With one odd unit $\gamma$ one has $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$, every supercharge is a $\mathbb{B}$-multiple of $\gamma$, and the odd slot carries the Hermitian form induced by the module structure, $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$ with $\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$ and $\langle s,t\gamma\rangle=0$ for even $s,t$.
+**Proposition.** With one odd unit $u$ one has $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}u$, every supercharge is a $\mathbb{B}$-multiple of $u$, and the odd slot carries the Hermitian form induced by the module structure, $\langle su,tu\rangle=-q(u)\langle s,t\rangle$ with $\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$ and $\langle s,tu\rangle=0$ for even $s,t$.
 
-**Proof.** The decomposition is the rank-two module statement of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*, and an odd element is $\gamma s$ with $s$ even. For the form, $\gamma_{}^{*}=-\gamma$, so $(s\gamma)^{*}(t\gamma)=-\gamma s^{*}t\gamma$ and the scalar part of $\gamma w\gamma$ for even $w$ is $q(\gamma)\mathrm{Sc}(w)$, which was checked on the four generators and on even samples; the orthogonality is the vanishing of the scalar part of an odd element. The elementwise identity without the scalar part is false — a generator need not commute with an even element — and the claim is made only for the form.
+**Proof.** The decomposition is the rank-two module statement of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*, and an odd element is $u s$ with $s$ even. For the form, $u^{*}=-u$, so $(su)^{*}(tu)=-u s^{*}t u$ and the scalar part of $u w u$ for even $w$ is $q(u)\mathrm{Sc}(w)$, which was checked on the four frame vectors and on even samples; the orthogonality is the vanishing of the scalar part of an odd element. The elementwise identity without the scalar part is false — a generator need not commute with an even element — and the claim is made only for the form.
 
-**Remark (why this is the answer to the "two copies" question).** A superalgebra needs an even part, an odd part, the graded bracket between them and the adjoint; it does not need two algebras. The pair $(\mathbb{B},\mathbb{B})$ of two independent copies has no bracket $\{\cdot,\cdot\}\to\mathbb{B}$ between the copies, no grading and no adjoint pairing across them, so it is not a superalgebra. The single graded algebra $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$ has all of them, and the biquaternion algebra is its even part.
+**Remark (why this is the answer to the "two copies" question).** A superalgebra needs an even part, an odd part, the graded bracket between them and the adjoint; it does not need two algebras. The pair $(\mathbb{B},\mathbb{B})$ of two independent copies has no bracket $\{\cdot,\cdot\}\to\mathbb{B}$ between the copies, no grading and no adjoint pairing across them, so it is not a superalgebra. The single graded algebra $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}u$ has all of them, and the biquaternion algebra is its even part.
 
 ## Honest Limits
 
@@ -160,7 +160,7 @@ $$
 
 so it reverses a commutator and preserves an anticommutator: the adjoint reverses the order of the factors, and only the odd-odd, symmetric case is even under the reversal. The Koszul-signed super-* convention would give the cleaner rule without the parity sign, and the corpus's dagger is not of that convention; the two are distinguished on two generators.
 
-A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$, which is Hermitian and even because the adjoint is an adjoint, this being the pairing of the corpus's supersymmetric quantum physics and the reason the Hamiltonian is real. In the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ a supercharge is $\mathcal{Q}=s\gamma$ with adjoint $\mathcal{Q}^{*}=-\gamma s^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(\gamma)ss^{*}$, an even element; the symmetric form of the self-pairing is claimed only when the generator commutes with $s$. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form.
+A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$, which is Hermitian and even because the adjoint is an adjoint, this being the pairing of the corpus's supersymmetric quantum physics and the reason the Hamiltonian is real. In the module $\mathrm{Cl}^1=\mathbb{B}u$ a supercharge is $\mathcal{Q}=su$ with adjoint $\mathcal{Q}^{*}=-u s^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$, an even element; the symmetric form of the self-pairing is claimed only when $u$ commutes with $s$. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form.
 
 ## Summary of Notation
 
@@ -171,13 +171,14 @@ A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\math
 | $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ | Graded commutator; anticommutator for two odd elements |
 | graded Jacobi identity | The super-Jacobi identity of a Lie superalgebra |
 | $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathrm{Cl}^1$ | Lie superalgebra, even part the biquaternion algebra |
+| $u$, $q(u)$, $v_\mu$ | The odd unit, its quadratic form and the Clifford frame vectors: $\mathrm{Cl}^1=\mathbb{B}u$, $v_0^2=1$, $v_k^2=-1$ |
 | $\{\mathrm{Cl}^1,\mathrm{Cl}^1\}\subseteq\mathbb{B}$ | Two fermionic steps are bosonic |
 | $X^{*}=\sigma(\alpha(X^{r}))$ | The Hermitian adjoint; even anti-involution of the superalgebra |
 | $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}[a^{*},b^{*}]_{\mathrm{gr}}$ | The adjoint reverses a commutator, preserves an anticommutator |
 | $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$ | The Koszul-signed super-*; **not** the dagger of the corpus |
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$ | Supercharge paired with its adjoint; Hermitian and even |
-| $\mathcal{Q}=s\gamma$, $\mathcal{Q}^{*}=-\gamma s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(\gamma)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ |
-| $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$, $\langle s,t\gamma\rangle=0$ | The Hermitian form on the odd slot ($\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$) |
+| $\mathcal{Q}=su$, $\mathcal{Q}^{*}=-u s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}u$ |
+| $\langle su,tu\rangle=-q(u)\langle s,t\rangle$, $\langle s,tu\rangle=0$ | The Hermitian form on the odd slot ($\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$) |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | The one fermionic mode the algebra hosts natively |
 
 ## Further Reading
@@ -188,3 +189,19 @@ A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\math
 - Felix A. Berezin, *Introduction to Superanalysis* (Reidel, 1987), for the anticommuting coefficients and the algebra of the odd extension.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the adjoint of an anti-automorphism and the $*$-unitary groups they define.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the graded Clifford algebra, its even part and the parity of its elements.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+$\gamma_\mu=v_\mu$: the four vector-indexed gammas are the vector generators, and the odd unit $u$ of the body is a non-isotropic vector among them, with $\mathrm{Cl}^1=\mathbb{B}u$ and $\mathbb{B}=\mathrm{Cl}^0$.
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

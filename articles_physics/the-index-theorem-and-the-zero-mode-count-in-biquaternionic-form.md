@@ -25,12 +25,14 @@ On a four-manifold with a spin structure and a gauge bundle in a representation 
 **Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
 
 $$
-\mathcal{D}_R \;=\; \gamma_\mu D_\mu ,
+\mathcal{D}_R \;=\; C_\mu D_\mu ,
+\qquad
+C_0=iL_tR_x,\quad C_k=iL_{e_k}R_y ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
 
-with $\gamma_\mu$ the Clifford generators, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality grading $\gamma_5$ into the positive and negative chirality zero-mode spaces,
+with $C_\mu$ the frame cells acting by $\psi\mapsto i\,e_\mu\psi\,e_{\nu(\mu)}$, where $\nu(t)=x$ and $\nu(k)=y$, satisfying $\{C_\mu,C_\nu\}=2g_{\mu\nu}$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality $\psi\mapsto -i\psi\vec e_z$ into the positive and negative chirality zero-mode spaces,
 
 $$
 \ker\mathcal{D}_R \;=\; \ker^+\!\mathcal{D}_R \oplus \ker^-\!\mathcal{D}_R ,
@@ -193,8 +195,8 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\mathcal{D}_R=\gamma_\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
-| $\gamma_5$ | Chirality grading; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
+| $\mathcal{D}_R=C_\mu D_\mu$, $C_0=iL_tR_x$, $C_k=iL_{e_k}R_y$ | Twisted Dirac operator in representation $R$, in frame cells |
+| $\psi\mapsto-i\psi\vec e_z$ | Chirality; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
 | $\mathrm{ind}\,\mathcal{D}_R=n_+-n_-$ | Index of the Dirac operator |
 | $\mathrm{ch}(E_R)\wedge\mathrm{A}(TM)$ | Index density; $\mathrm{A}=1$ on the flat slice |
@@ -223,3 +225,17 @@ The index density is a total derivative whose integral equals the instanton char
 - Gerard 't Hooft, "Symmetry breaking through Bell–Jackiw anomalies", *Physical Review Letters* 37 (1976) 8–11, for the anomalous divergence and the zero-mode count.
 - Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the index theorem and the Chern–Weil construction in a form suited to the present notation.
 - Raoul Bott and Loring W. Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for the Chern character and the characteristic-class calculus used throughout.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

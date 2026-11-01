@@ -2,21 +2,21 @@
 
 ## Introduction
 
-The Dirac algebra is the Clifford algebra of the Minkowski form. The article keeps its earlier title; the object it studies is the gamma set, not a frame of the algebra. Over the complex numbers the algebra is the full matrix algebra:
+The Dirac algebra is the Clifford algebra of the Minkowski form. The article keeps its earlier title; the object it studies is a frame of five cells inside the algebra, not a different algebra. Over the complex numbers the algebra is the full matrix algebra:
 
 $$
 \mathrm{Cl}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C}),
 $$
 
-of complex dimension $16$. The gamma matrices $\gamma_{0},\gamma_{1},\gamma_{2},\gamma_{3}$ are a set of generators of this algebra, and the sixteen antisymmetrised products
+of complex dimension $16$. The five frame cells $G_{0},G_{1},G_{2},G_{3}$ and $G_{5}$, defined in §*The Frame Cells*, are a set of generators of this algebra, and the sixteen graded products
 
 $$
-I,\quad\gamma_{\mu},\quad\gamma_{\mu\nu},\quad\gamma_{\mu\nu\rho},\quad\gamma_{5}
+I,\quad G_{\mu},\quad G_{\mu\nu},\quad G_{\mu\nu\rho},\quad G_{5}
 $$
 
-are a basis of it. The gamma set is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, together with their product $\gamma_5$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
+are a basis of it, each of them a two-sided cell up to a unit scalar. The frame is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, together with their product $G_{5}$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
 
-This article states the Clifford algebra, its complexification, the gamma relations and the chirality, the basis theorem for the antisymmetrised products, the place of the five gammas among the sixteen two-sided operators $T_{\mu\nu}$, the non-canonicity of the set, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
+This article states the Clifford algebra, its complexification, the frame relations and the chirality, the basis theorem for the graded products, the place of the five frame cells among the sixteen two-sided operators $T_{\mu\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
 
 ## The Clifford Algebra
 
@@ -78,66 +78,64 @@ $$
 
 of complex dimension $8$, the even part of $M_4(\mathbb{C})$ under the Clifford grading. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the even part over $\mathbb{R}$; its complexification is $\mathbb{B}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the same algebra. Its left regular image in $M_4(\mathbb{C})$ is the left factor $M_2\otimes I$, of complex dimension $4$: a subalgebra, not the complexified even part.
 
-## The Gamma Matrices
+## The Frame Cells
 
-**Definition.** The gamma matrices are elements $\gamma_{0},\gamma_{1},\gamma_{2},\gamma_{3}$ of $M_4(\mathbb{C})$ satisfying
+**Definition.** Put $T_{ab}=L_aR_b$ for the two-sided cells of the biquaternion algebra, with $a,b$ in the units $e_t,e_x,e_y,e_z$. The frame cells are the five elements
 
 $$
-\{\gamma_{\mu},\gamma_{\nu}\}=2g_{\mu\nu}I,
+G_{0}=iT_{tx},\qquad G_{1}=iT_{xy},\qquad G_{2}=iT_{yy},\qquad G_{3}=iT_{zy},\qquad G_{5}=-iT_{tz}
+$$
+
+of $M_4(\mathbb{C})$, and the first four satisfy
+
+$$
+\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I,
 $$
 
 with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
-**The existence.** The matrices exist: in the chiral representation
-
-$$
-\gamma_{0}=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix},\qquad
-\gamma_{i}=\begin{pmatrix}0&\sigma_i\\-\sigma_i&0\end{pmatrix},
-$$
-
-with $\sigma_i$ the Pauli matrices, the anticommutation relations hold, and the four matrices generate $M_4(\mathbb{C})$.
+**The existence.** The cells exist: the product rule $T_{ab}T_{cd}=T_{ac,db}$ makes each $G_{\mu}$ an explicit element of the two-sided basis, the anticommutation relations hold, and the four cells generate $M_4(\mathbb{C})$. In the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$, the same frame reads as block matrices: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there.
 
 **The chirality.** Put
 
 $$
-\gamma_{5}=i\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}.
+G_{5}=iG_{0}G_{1}G_{2}G_{3}=-iT_{tz}.
 $$
 
 Then
 
 $$
-(\gamma_{5})^{2}=I,\qquad
-\{\gamma_{5},\gamma_{\mu}\}=0,\qquad
-(\gamma_{5})^{*}=\gamma_{5}.
+(G_{5})^{2}=I,\qquad
+\{G_{5},G_{\mu}\}=0,
 $$
 
-The eigenvalues $\pm1$ of $\gamma_{5}$ are the **chiralities**, and the projectors
+and the fifth cell is self-adjoint in the Dirac module. The eigenvalues $\pm1$ of $G_{5}$ are the **chiralities**, and the projectors
 
 $$
-P_{\pm}=\tfrac12(I\pm\gamma_{5})
+P_{\pm}=\tfrac12(I\pm G_{5})=\tfrac12(I\mp iT_{tz})
 $$
 
-are the chiral projectors. The notation $\gamma_{5}$ is the historical one; in four dimensions the matrix is the product of the four gammas, and it is the pseudoscalar of the Clifford algebra.
+are the chiral projectors. The label $5$ is the historical one; in four dimensions the fifth cell is the product of the four vector cells, and it is the pseudoscalar of the Clifford algebra, the reference-frame cell of the chirality.
 
-**The trace orthogonality.** For the sixteen antisymmetrised products $\Gamma_{A}$, normalised so that $\Gamma_{A}\in\{I,\gamma_{\mu},\gamma_{\mu\nu},\gamma_{\mu\nu\rho},\gamma_{5}\}$ with the bivectors $\gamma_{\mu\nu}=\tfrac12[\gamma_{\mu},\gamma_{\nu}]$ and the trivectors $\gamma_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)\gamma_{\mu}\gamma_{\nu}\gamma_{\rho}$,
-
-$$
-\operatorname{tr}(\Gamma_{A}\Gamma_{B})=4\,\eta_{AB},
-$$
-
-where $\eta_{AB}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen matrices are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
-
-**The expansion.** With the dual basis $\check\Gamma_{A}$ defined by $\operatorname{tr}(\check\Gamma_{A}\Gamma_{B})=4\delta_{AB}$, every matrix expands as
+**The trace orthogonality.** The sixteen two-sided cells $T_{\mu\nu}$ are the sixteen graded products: the identity $T_{tt}=I$, the four vector cells $G_{\mu}$, the six bivector products $G_{\mu\nu}=\tfrac12[G_{\mu},G_{\nu}]$, the four trivector products $G_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)G_{\mu}G_{\nu}G_{\rho}$ and the pseudoscalar $G_{5}$. They satisfy
 
 $$
-A=\frac14\sum_{A}\operatorname{tr}(\check\Gamma_{A}A)\,\Gamma_{A}.
+\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
+$$
+
+where $\eta_{\mu\nu,\rho\sigma}=g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen cells are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
+
+**The expansion.** With the dual basis $\check T_{\mu\nu}=g_{\mu\mu}g_{\nu\nu}T_{\mu\nu}$ defined by $\operatorname{tr}(\check T_{\mu\nu}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
+
+$$
+A=\frac14\sum_{\mu,\nu}\operatorname{tr}(\check T_{\mu\nu}A)\,T_{\mu\nu}.
 $$
 
 The expansion is the Clifford analogue of the Fourier expansion in a basis; the sixteen coefficients are the **Clifford coordinates** of $A$.
 
 **The dimension count.** The basis has $1+4+6+4+1=16$ elements, matching $\dim M_4(\mathbb{C})=16$. The five grades are the scalar, the vector, the bivector, the trivector and the pseudoscalar.
 
-## The Five Gammas Among the Sixteen Operators
+## The Five Frame Cells Among the Sixteen Operators
 
 **The two-sided operators.** The algebra of this category is generated by the two-sided operators
 
@@ -145,31 +143,31 @@ $$
 T_{\mu\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
 $$
 
-acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The gamma set is a generating set of a different shape: four generators, their product $\gamma_5$, and their antisymmetrised products, against the sixteen two-sided operators.
+acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The frame is a generating set of a different shape: four generators, their product $G_{5}$, and their graded products, against the sixteen two-sided operators.
 
-**The dictionary.** In the coefficient frame of the method article, the five gamma matrices are scalar multiples of five of the sixteen $T_{\mu\nu}$: the four vector gammas and the chirality are five elements of the two-sided basis, up to the scalar $i$. The remaining eleven two-sided operators correspond to the bivectors, the trivectors and the scalar of the Clifford basis; the bivectors are the six antisymmetric products $\gamma_{\mu\nu}$, the trivectors the four $\gamma_{\mu\nu\rho}$, and the scalar the identity. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
+**The dictionary.** In the coefficient frame of the method article, the five frame cells are $i$ times five of the sixteen $T_{\mu\nu}$: the four vector cells $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ and the pseudoscalar $-iT_{tz}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $G_{\mu\nu}$, the trivectors the four $G_{\mu\nu\rho}$, and the scalar is the identity cell $T_{tt}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
 
-**The warning.** The identification of the gammas with five of the $T_{\mu\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $T_{\mu\nu}$, changes the five matrices and their scalar multiples. The Clifford relations are invariant under the change; the five-element subset is not.
+**The warning.** The identification of the five frame cells with five of the $T_{\mu\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $T_{\mu\nu}$, changes the five cells and their scalar multiples. The Clifford relations are invariant under the change; the five-element subset is not.
 
 ## The Non-Canonicity of the Frame
 
-**The similarity.** If $\gamma_{\mu}$ satisfy the Clifford relations and $U\in GL_4(\mathbb{C})$, then
+**The similarity.** If $G_{\mu}$ satisfy the Clifford relations and $S\in GL_4(\mathbb{C})$, then
 
 $$
-\tilde\gamma_{\mu}=U\gamma_{\mu}U^{-1}
+\tilde G_{\mu}=S G_{\mu}S^{-1}
 $$
 
 satisfy the same relations, because conjugation preserves anticommutators and the identity. The frames are therefore not unique: they form a homogeneous space under $GL_4$, and the subgroup that preserves the *span* of the generators is the **Clifford group**
 
 $$
-\Gamma=\{U:U\gamma_{\mu}U^{-1}=\Lambda_{\mu\nu}\gamma_{\nu}\ \text{for some }\Lambda\in O(1,3)\}.
+\Gamma=\{S:S G_{\mu}S^{-1}=\Lambda_{\mu}{}^{\nu}G_{\nu}\ \text{for some }\Lambda\in O(1,3)\}.
 $$
 
 **The Clifford group.** The Clifford group acts on the frame by Lorentz transformations; the **spin group** $\mathrm{Spin}(1,3)$ is the norm-one part of the even Clifford group (the even part itself is the scalars times the spin group), and it double covers the identity component $SO^{+}(1,3)$. The Lie algebra of the spin group is the bivector span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(1,3)_{\mathbb{C}}$, of dimension $6$, inside $M_4(\mathbb{C})$.
 
 **The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of signature $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
 
-**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a matrix $C$ with $C\gamma_{\mu}C^{-1}=\pm\bar\gamma_{\mu}$ for the charge conjugation. The frame is the Clifford layer; the other structures are layers above it.
+**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a matrix $C$ with $C G_{\mu}C^{-1}=\pm\bar G_{\mu}$ for the charge conjugation. The frame is the Clifford layer; the other structures are layers above it.
 
 ## The Biquaternion Comparison
 
@@ -191,15 +189,15 @@ $$
 
 with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity: an even element need not commute with $u$, and the reflection it induces on the bivectors is part of the multiplication.
 
-**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The gamma set uses the whole algebra, not one factor: the bivectors mix the two images, and the chirality $\gamma_{5}$ is a product of four gammas that also mixes them.
+**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The frame uses the whole algebra, not one factor: the bivectors mix the two images, and the pseudoscalar $G_{5}$ is a product of four vector cells that also mixes them.
 
 **The terminology.** $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$; it is the endomorphism algebra $\operatorname{End}_\mathbb{C}(\mathbb{B})$, not $\mathbb{B}$. The biquaternion algebra is a four-dimensional subalgebra, the left factor; the Clifford algebra is the sixteen-dimensional ambient algebra, generated by five elements of it. The phrase "the Clifford layer" names the choice of those five elements and their antisymmetrised products, not a different algebra.
 
-**The physical interpretation.** The Dirac spinor is a vector of the four-dimensional module of $M_4(\mathbb{C})$, not of the biquaternion algebra. The biquaternion algebra carries the even part of the Clifford action, which is the Lorentz transformation of the spinor; the odd part, the gamma matrices themselves, is what the Dirac equation uses. The biquaternion alone does not carry the Dirac spinor as a Clifford module: its simple left module is two-dimensional over $\mathbb{C}$, while the Dirac spinor is four-dimensional and splits into two copies of it, with the odd gammas supplying the maps between the copies. This is the point of the odd sector of the inventory: the missing half is the odd slot, and it is a copy of the biquaternion algebra, not a second algebra.
+**The physical interpretation.** The Dirac spinor is a vector of the four-dimensional module of $M_4(\mathbb{C})$, not of the biquaternion algebra. The biquaternion algebra carries the even part of the Clifford action, which is the Lorentz transformation of the spinor; the odd part, the frame cells themselves, is what the Dirac equation uses. The biquaternion alone does not carry the Dirac spinor as a Clifford module: its simple left module is two-dimensional over $\mathbb{C}$, while the Dirac spinor is four-dimensional and splits into two copies of it, with the odd cells supplying the maps between the copies. This is the point of the odd sector of the inventory: the missing half is the odd slot, and it is a copy of the biquaternion algebra, not a second algebra.
 
 ## Summary
 
-The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The gamma matrices satisfy $\{\gamma_{\mu},\gamma_{\nu}\}=2g_{\mu\nu}I$, the chirality $\gamma_{5}=i\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}$ squares to $I$ and anticommutes with the gammas, and the sixteen antisymmetrised products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five gammas are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
+The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame cells satisfy $\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I$, the fifth $G_{5}=iG_{0}G_{1}G_{2}G_{3}$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five cells are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
 
 | Quantity | Value |
 |---|---|
@@ -208,7 +206,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\dim_\mathbb{R}\mathrm{Cl}^{+}(1,3)$ | $8$ |
 | $\mathrm{Cl}^{+}(1,3)$ | $M_2(\mathbb{C})=\mathbb{B}$ |
 | $\mathrm{Cl}(1,3)$ | $M_2(\mathbb{H})$ |
-| Number of gammas | $4$ |
+| Number of frame generators | $4$ |
 | Grades of the Clifford basis | $1+4+6+4+1=16$ |
 | $\dim\mathfrak{so}(1,3)$ | $6$ |
 | $\dim\mathbb{B}$ over $\mathbb{C}$ | $4$ |
@@ -220,12 +218,12 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra of the quadratic form $q$ |
 | $\mathrm{Cl}(1,3)$ | the Dirac algebra of the Minkowski form |
 | $\mathrm{Cl}^{+}(1,3)$ | its even part, isomorphic to $M_2(\mathbb{C})$ |
-| $\gamma_{\mu}$ | the gamma matrices, $\{\gamma_{\mu},\gamma_{\nu}\}=2g_{\mu\nu}I$ |
-| $\gamma_{5}$ | $i\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}$, the chirality |
-| $\Gamma_{A}$ | the sixteen antisymmetrised products |
-| $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm\gamma_{5})$ |
+| $G_{\mu}$ | the four frame cells $iT_{tx},iT_{xy},iT_{yy},iT_{zy}$, $\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I$ |
+| $G_{5}$ | $iG_{0}G_{1}G_{2}G_{3}=-iT_{tz}$, the pseudoscalar cell |
+| $G_{\mu\nu}$, $G_{\mu\nu\rho}$ | the bivector and trivector products |
+| $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm G_{5})=\tfrac12(I\mp iT_{tz})$ |
 | $\Gamma$ | the Clifford group |
-| $T_{\mu\nu}$ | the two-sided operators $L_\mu R_\nu$ |
+| $T_{\mu\nu}$ | the two-sided cells $L_\mu R_\nu$, the sixteen graded products |
 
 ## Further Reading
 
@@ -236,5 +234,19 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the two commuting copies of $\mathbb{B}$.
 - [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html), for the bivectors and the Lie algebra $\mathfrak{so}(4,\mathbb{C})$.
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4-and-sl4-of-m4c.html), for the Lie algebra of the frame.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification and the gamma matrices.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification and the frame.
 - Ian M. Benn and Robert W. Tucker, *An Introduction to Spinors and Geometry with Applications in Physics* (Adam Hilger, 1987), for the Clifford group and the spin group.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

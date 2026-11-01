@@ -40,7 +40,7 @@ $$
 
 *Proof.* Complexification extends scalars only, so the relations of the generators are unchanged and the $2^3$ monomials over $\mathbb{C}$ are a basis.
 
-**Proposition (the adjoint on the generators).** With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$, with $\{\gamma_\mu,\gamma_\nu\}=+2\delta_{\mu\nu}$.
+**Proposition (the adjoint on the generators).** With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $iE_\mu$ are Hermitian, $(iE_\mu)^{\dagger}=iE_\mu$, with $\{iE_\mu,iE_\nu\}=+2\delta_{\mu\nu}$.
 
 *Proof.* The adjoint of a product reverses the order, so $(E_\mu E_\nu)^{\dagger}=E_\nu^{\dagger}E_\mu^{\dagger}=(-E_\nu)(-E_\mu)=-E_\mu E_\nu$ for $\mu\neq\nu$, consistent; the rest is immediate.
 
@@ -209,7 +209,7 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, ${}\cong M_2(\mathbb{C})\cong\mathbb{C}\mathrm{l}_2$ |
 | $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ | Complex split biquaternions, ${}\cong\mathrm{Cl}_3(\mathbb{C})$ |
 | $E_1,E_2,E_3=j\vec e_x,j\vec e_y,j\vec e_z$ | Clifford generators, $E_\mu^2=-1$, $E_\mu E_\nu=-E_\nu E_\mu$ |
-| $\gamma_\mu=iE_\mu$ | Hermitian generators, $\gamma_\mu^{\dagger}=\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}$ |
+| $iE_\mu$ | Hermitian rescaled generators, $(iE_\mu)^{\dagger}=iE_\mu$, $\{iE_\mu,iE_\nu\}=2\delta_{\mu\nu}$ |
 | $\dagger$ | Hermitian adjoint, $E_\mu^{\dagger}=-E_\mu$, $i^{\dagger}=-i$ |
 | $\omega=E_1E_2E_3=-j$ | Volume element, central, self-adjoint, $\omega^2=1$ |
 | $\Pi_x = \tilde\Pi_2 = \tfrac12(1+\omega)$, $\Pi_y = \tilde\Pi_1 = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
@@ -232,3 +232,16 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 - Companion article [Split-Biquaternion Ideals and Peirce Decomposition](split-biquaternion-ideals-and-peirce-decomposition.html), for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
 - Companion article [The Biquaternion Algebra](the-biquaternion-algebra.html) and [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
 - Companion article [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
+
+## Appendix — The Gamma Formulation
+
+The gammas are the Hermitian generators $\gamma_\mu=iE_\mu=i\,j\vec e_\mu$ of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the literature frame of the same algebra, not a different algebra.
+
+On the two summands the generator is a left multiplication, a cell with a trivial right multiplier:
+$$
+\gamma_\mu=T_{-i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_x,\qquad \gamma_\mu=T_{i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_y ,
+$$
+with $T_{a,b}\psi=a\psi b$ and $T_{a,e_t}=L_a$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
+

@@ -53,7 +53,7 @@ $$
 \varepsilon(A, B, N) = A_\mu\Bigl[\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda \Bigr],
 $$
 
-where the two symbols are read off the four generators. Write $a_0 = e_t$, $a_k = \vec e_k$ for the left unit an index carries and $b_0 = \vec e_x$, $b_k = \vec e_y$ for its right unit, so that generator $\mu$ acts on a spinor as $\psi \mapsto i a_\mu \psi b_\mu$. Then
+where the two symbols are read off the four generators. Write $a_0 = e_t$, $a_k = \vec e_k$ for the left unit an index carries and $b_0 = \vec e_x$, $b_k = \vec e_y$ for its right unit, with $\mathrm{Sc}$ the scalar part, so that generator $\mu$ acts on a spinor as $\Psi \mapsto i a_\mu \Psi b_\mu$. Then
 
 $$
 t_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu) = g_{\mu\nu}g_{\lambda\rho} + g_{\mu\rho}g_{\nu\lambda} - g_{\mu\lambda}g_{\nu\rho}
@@ -78,7 +78,7 @@ C = A_\mu\,\bar\Psi\, i a_\mu\Psi b_\mu
 = A_\mu\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
 $$
 
-Together with the two quadratic forms, with $\Gamma : \psi \mapsto -i e_t\psi\vec e_z$ the chirality,
+Together with the two quadratic forms, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z$ the chirality,
 
 $$
 \bar\Psi\Psi = N_\nu N_\nu - B_\nu B_\nu, \qquad
@@ -103,7 +103,7 @@ $$
 \boxed{\;\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N)\;}.
 $$
 
-This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them: $J$ is not an inner automorphism of $\mathbb{B}$, it is an *outer* permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a *Lorentz* group, which have equal real dimension, and the invariant form is built from the four cell generators rather than from the octonion product.
+This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them: $J$ is not an inner automorphism of $\mathbb{B}$, it is an *outer* permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a *Lorentz* group, which have equal real dimension, and the invariant form is built from the four generators rather than from the octonion product.
 
 ### The Quartic "Dirac's Game"
 
@@ -182,7 +182,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $e_\nu = i\vec u_{\nu}$ | Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$ |
 | $a_\mu$, $b_\mu$ | Left and right units of generator $\mu$: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
-| $\Gamma : \psi \mapsto -i e_t\psi\vec e_z$ | Chirality involution |
+| $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z$ | Chirality involution |
 | $t_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)$ | Symmetric trace of the four generators |
 | $\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_t\,a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\,\vec e_z)$ | Totally antisymmetric symbol, $\varepsilon_{0123} = 1$ |
 | $\varepsilon(A,B,N) = 2A_\mu\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |

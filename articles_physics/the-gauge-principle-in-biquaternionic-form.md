@@ -256,17 +256,17 @@ $$
 
 Its mass term is **linear** in the field, so a central phase passes through it: for $\lambda$ central, $(\lambda\tilde{\Psi})$ satisfies the massive pair whenever $\tilde{\Psi}$ does, term by term, because $\lambda$ commutes with $m$ and with the gradient. The continuous global phase symmetry therefore survives the mass, and the abelian gauge principle derived above applies to the massive Dirac field as well as to the massless one — exactly as it does for the complex scalar realization in the previous section. The two realizations agree rather than contrast.
 
-What the mass term breaks is the **axial** symmetry, not the phase. The chirality rotation $\tilde{\Psi}_R \mapsto \exp(i\alpha)\tilde{\Psi}_R$, $\tilde{\Psi}_L \mapsto \exp(-i\alpha)\tilde{\Psi}_L$ leaves the mass bilinear $\tilde{\Psi}^{\natural}\tilde{\Psi}$ invariant but is not a symmetry of the linear mass pair, and the corresponding axial current obeys
+What the mass term breaks is the **axial** symmetry, not the phase. The chirality rotation $\tilde{\Psi}_R \mapsto \exp(i\alpha)\tilde{\Psi}_R$, $\tilde{\Psi}_L \mapsto \exp(-i\alpha)\tilde{\Psi}_L$ leaves the mass bilinear $\tilde{\Psi}^{\natural}\tilde{\Psi}$ invariant but is not a symmetry of the linear mass pair, the chirality acting on the field by $\tilde{\Psi}\mapsto -i\tilde{\Psi}\vec e_z$; the corresponding axial current obeys
 
 $$
-\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu} = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
+\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu} = 2im\,\tilde{\Psi}^{\natural}\big(-i\tilde{\Psi}\vec e_z\big),
 $$
 
 which vanishes only when $m = 0$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two chiral ideals** of $\mathbb{B}$ — the two chiralities — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $\mathrm{U}(1)$ that the algebra canonically carries is untouched.
 
 Two things should be said about this, one established and one open.
 
-- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu j_{5\mu} / (2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $\mathrm{U}(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
+- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu j_{5\mu} / (2im\,\tilde{\Psi}^{\natural}(-i\tilde{\Psi}\vec e_z)) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $\mathrm{U}(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
 - **Open, and left open.** Whether the chirality-rotating symmetry can be *gauged*, and whether the framework's central-element structure supplies anything analogous to the would-be Goldstone statement for the axial breaking, is not decided here. A gauged axial symmetry, if it exists, is a question for the non-abelian extension, where the phase no longer commutes with the algebra.
 
 ## An External Construction That Gets a Local U(1) Without Frames
@@ -383,3 +383,17 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic Maxwell equation and the operator factorization used here.
 - J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction recorded in *An External Construction That Gets a Local U(1) Without Frames*: a coordinate-covariant, vierbein-free formalism in which the imaginary-scalar part of a single algebra-valued connection is a local $\mathrm{U}(1)$, and the local Lorentz and local $\mathrm{U}(1)$ symmetries are two cases of one transformation law. Cited as an external claim; the corpus does not adopt it.
 - Companion articles: [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html); [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

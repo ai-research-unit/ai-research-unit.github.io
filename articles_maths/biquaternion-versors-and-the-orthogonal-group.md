@@ -34,7 +34,7 @@ for every non-isotropic $\xi\in V$, and the odd slot $\mathbb{B}\xi$ is a second
 
 **Proof.** The even part of the Clifford algebra of a four-dimensional space is eight-dimensional, and the identification $\mathrm{Cl}^{+}\cong\mathbb{B}$ is the Clifford structure of the algebra. For the splitting, fix $\xi\in V$ with $q(\xi)\neq0$. The element $\xi$ is odd, so $\mathbb{B}\xi\subseteq\mathrm{Cl}^{-}$; the map $Q\mapsto Q\xi$ is injective, so $\mathbb{B}\xi$ is eight-dimensional, and $\mathrm{Cl}^{-}$ is eight-dimensional as well, so $\mathbb{B}\xi=\mathrm{Cl}^{-}$. The inverse of the map is $Q\mapsto Q\xi^{-1}$, with $\xi^{-1}=\xi/q(\xi)$. The subspace $V$ is contained in the odd part, and $\mathbb{B}\xi$ is the odd part, so $V\subseteq\mathbb{B}\xi$.
 
-**Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the generators as the Dirac matrices of the mostly-minus metric: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}\xi$ has real dimension $8$ for a unit $\xi$, the four generators lie in $\mathbb{B}\xi$, and the two together span the $16$-dimensional envelope.
+**Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the standard matrix representatives of the mostly-minus generators: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}\xi$ has real dimension $8$ for a unit $\xi$, the four generators lie in $\mathbb{B}\xi$, and the two together span the $16$-dimensional envelope.
 
 **Remark (the Lorentzian space is odd, and its copy is inside the algebra).** The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Lorentzian vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{M}_+$, which carries the form of signature $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{M}_+$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.
 
@@ -98,17 +98,17 @@ The two operations beyond the sandwich are quaternion conjugation of the argumen
 
 ## The Volume Element
 
-**Definition.** Let $\gamma_{0},\gamma_{1},\gamma_{2},\gamma_{3}$ generate the envelope in the mostly-minus convention, with $(\gamma_{0})^2=+1$ and $(\gamma_{k})^2=-1$, and let
+**Definition.** Let $\eta_t,\eta_x,\eta_y,\eta_z$ be an ordered orthonormal frame of $V$ in the mostly-minus convention, with $q(\eta_t)=+1$ and $q(\eta_k)=-1$, and let
 $$
-\Omega=\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}
+\Omega=\eta_t\eta_x\eta_y\eta_z
 $$
-be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, and $\Omega$ commutes with the even slot and anticommutes with every vector. In the biquaternion dictionary the quaternion units are the spatial bivectors, $\vec e_x\mapsto\gamma_{2}\gamma_{3}$, $\vec e_y\mapsto\gamma_{3}\gamma_{1}$, $\vec e_z\mapsto\gamma_{1}\gamma_{2}$, and the central scalar imaginary is $i\mapsto-\Omega$.
+be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, and $\Omega$ commutes with the even slot and anticommutes with every vector. In the biquaternion dictionary the quaternion units are the spatial bivectors, $\vec e_x\mapsto\eta_y\eta_z$, $\vec e_y\mapsto\eta_z\eta_x$, $\vec e_z\mapsto\eta_x\eta_y$, and the central scalar imaginary is $i\mapsto-\Omega$.
 
 **Theorem (the volume element is minus the identity on Lorentzian space).** On the odd slot the signed inner conjugation of the volume element negates every vector,
 $$ \mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta, $$
 so that $\Omega$ acts on the Lorentzian space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Hermitian copy of the same space the sandwich of the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.
 
-**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\gamma_{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma_{j}\Omega=-\Omega\gamma_{j}$, and the same for every generator. Hence $\Omega \eta\Omega^{-1}=-\Omega\Omega^{-1}\eta=-\eta$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(\tilde U)=iUi^{\dagger}=iU(-i)=-i^2\tilde U=\tilde U$.
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\eta_j$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\eta_j\Omega=-\Omega\eta_j$, and the same for every vector of the frame. Hence $\Omega \eta\Omega^{-1}=-\Omega\Omega^{-1}\eta=-\eta$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(\tilde U)=iUi^{\dagger}=iU(-i)=-i^2\tilde U=\tilde U$.
 
 **Remark (verified).** Both statements were recomputed on the matrix model: the signed inner conjugation of $\Omega$ gave $-\eta$ on all four generators, and the sandwich of $\mathsf{M}_2(\pm i)=\pm iI$ gave the identity on the Hermitian sector.
 
@@ -164,7 +164,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 | $\rho_\xi(\eta)=-\xi\eta\xi^{-1}$ | The reflection in the hyperplane orthogonal to $\xi$; a Lorentz transformation, realised by the odd versor $\xi$ |
 | $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$ | The signed inner conjugation; $\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}$ is the inner automorphism |
 | $\Gamma$, $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{\langle\tilde U\rangle_{\natural}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
-| $\Omega=\gamma_{0}\gamma_{1}\gamma_{2}\gamma_{3}$ | The volume element of $\mathrm{Cl}_{1,3}$, $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
+| $\Omega=\eta_t\eta_x\eta_y\eta_z$ | The volume element of $\mathrm{Cl}_{1,3}$, the product of an ordered orthonormal frame of $V$; $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
 | $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $A\otimes h\mapsto\bar{A}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}$ |
 | $P,PT$ | Parity, the quaternion conjugation of the argument; the product of parity and time reversal, the negation; neither is a sandwich |
@@ -177,3 +177,17 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford algebra as the ambient object, the volume element and the parity grading.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the versor product, the reflection and the Cartan–Dieudonné theorem as they are used in the physical literature.
 - Within the corpus, the owner articles [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), [Versors, Rotors and the Sandwich Action with Signed Inner Conjugation](versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html), [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

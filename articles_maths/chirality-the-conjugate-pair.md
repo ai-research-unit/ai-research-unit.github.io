@@ -159,7 +159,7 @@ $$
 
 *Proof.* The first display is the definition of the $\epsilon$-dressed conjugate action: on $S$ the element $i$ acts as $iI$, and on $S^{\mathrm{c}}$ it acts as $\epsilon\overline{iI}\epsilon^{-1}=-iI$. The second is the product with the scalar $iI_4$ that represents $\tilde\Xi_{\mathrm{ad}}$.
 
-*Remark (the dictionary sign).* The representative $\rho(\tilde\Xi_{\mathrm{ad}})=iI_4$ is what makes $\rho(\chi)=+\gamma_5$. The $\mathbb{C}$-linear extension of the algebra dictionary $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ must then carry $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=-i_{\mathrm{Cl}}$, since $\mathsf{M}_4(i)=-\omega$ and $\mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})$ is to equal $+\gamma_5$. The other extension, $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=+i_{\mathrm{Cl}}$, sends $\chi$ to $-\gamma_5$ and exchanges $e_+$ and $e_-$, that is, the labels left and right. The exchange is a relabelling of the two summands and not a complex conjugation of the spinor: it leaves $\bar\Psi\Psi$ invariant and reverses $\bar\Psi\gamma_5\Psi$. The two signs must not be mixed in one computation. The comparison is [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), §*The Clifford Structure and the Frame*.
+*Remark (the dictionary sign).* The representative $\rho(\tilde\Xi_{\mathrm{ad}})=iI_4$ is what makes $\rho(\chi)=\operatorname{diag}(-I_2,I_2)$. The $\mathbb{C}$-linear extension of the algebra dictionary $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ must then carry $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=-i_{\mathrm{Cl}}$, since $\mathsf{M}_4(i)=-\omega$, with $\omega$ the volume element of $\mathrm{Cl}_{1,3}$, and $\mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})$ is to equal $+i\omega$. The other extension, $\mathsf{M}_4(\tilde\Xi_{\mathrm{ad}})=+i_{\mathrm{Cl}}$, sends $\chi$ to $-i\omega$ and exchanges $e_+$ and $e_-$, that is, the labels left and right. The exchange is a relabelling of the two summands and not a complex conjugation of the spinor: it leaves $\bar\Psi\Psi$ invariant and reverses the chirality-odd bilinear $\bar\Psi\chi\Psi$. The two signs must not be mixed in one computation. The comparison is [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), §*The Clifford Structure and the Frame*.
 
 **Theorem (the chiral projectors).** The operators
 
@@ -313,3 +313,17 @@ The first and the fourth rows are the same decomposition read as a right multipl
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle of the rotor and the spinor action on a single slot.
 - [Biquaternion Physical Interpretation of Chirality](../articles_physics/biquaternion-physical-interpretation-of-chirality.html), for the physical reading of the same grading, the mass-as-pairing and the limits.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the comparison with the matrix case, where the chirality is the $\mathbb{Z}/2$ quotient of a $\mathbb{Z}/4$ root grading.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -1,0 +1,417 @@
+# __M2 (C) Remaining Ideas__
+
+This note records what the legacy *Matrix Representations* series contains that the two live M2C articles do not carry.
+
+**The legacy set** is the 23 articles of the series, from *The Models and the Change of Frame* to *The Hermitian Sandwich*. Each article states its result in three displays. This note reads the entry model, the $2\times2$ display of the algebra with the standard pair of idempotents. The $4\times4$ displays are read in the companion note `M4 (C) remaining ideas`.
+
+**The live set** is the two articles:
+
+- *$M_2(\mathbb{C})$ Standard Peirce Representation : The Matrix Product, the Trace and the Determinant*
+- *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*
+
+Between them the two carry the root and the two idempotents, the Peirce basis in the two orders, the left and right matrices, the images of the four units, the stitch, the compression and the switch, the product, the trace, the determinant, the six subspaces, the three splits, the one-sided and two-sided operators, the Kronecker display, the coefficient matrix, the rank formula, the semigroup of pairs and the general endomorphism.
+
+**Status.**
+
+- **Carried**: present with its statement or proof.
+- **Nearly carried**: only a remark, a comparison or a display is missing.
+- **Partially carried**: the frame and the invariants are present, whole sections are missing.
+- **Not carried**: no substantive treatment. A pointer in *Boundaries* or *Further Reading* does not count.
+
+## Coverage at a Glance
+
+| Legacy article | Status | Where it stands |
+|---|---|---|
+| 1. The Models and the Change of Frame | partially carried | the frame and the switch; no bracket, no change law, no orbit |
+| 2. The Product, the Trace and the Determinant | nearly carried | matrix, product, trace, determinant, rank, six subspaces |
+| 3. The Six Subspaces as Matrix Conditions | nearly carried | table, dimensions, splits; the coherence and reality contrasts missing |
+| 4. Peirce Coordinates, Matrix Units and the Spinor Planes | nearly carried | two orders, four units, stitch, coordinates |
+| 5. The Spectral Projectors | not carried | the two idempotents of the root only |
+| 6. The Centraliser and the Double Centraliser | not carried | no commutant of a single element |
+| 7. The Eigenbasis and the Diagonalising Matrix | not carried | the two orders, not the diagonalising matrix |
+| 8. The Jordan Basis and the Jordanising Matrix | not carried | the nilpotent direction, not the Jordan basis |
+| 9. Worked Examples | partially carried | three worked cases with trace and determinant |
+| 10. The Four Words and the Four Traces | partially carried | transpose and dagger of the matrix |
+| 11. Trace, Determinant and the Biquaternion Norm | partially carried | trace, determinant, characteristic polynomial |
+| 12. The Polar Decomposition of a Matrix | not carried | no polar decomposition |
+| 13. Rank-One Matrices and the Determinantal Variety | partially carried | rank formula; no variety, no rulings |
+| 14. Spin, Qubits and the Bloch Vector | not carried | no state, no Bloch vector |
+| 15. The Conjugations and the Adjoints | partially carried | transpose, dagger; no involution table, no adjugate |
+| 16. The Killing Form | not carried | no Killing form |
+| 17. The Functional Calculus | not carried | no exponential, logarithm or root theory |
+| 18. $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant | partially carried | determinant and inverse; no group theory |
+| 19. The Projective Line and the Möbius Action | partially carried | the two Peirce ideals; no family, no Möbius action |
+| 20. The Left Regular Operators | carried | article 1 and article 2 |
+| 21. The Right Regular Operators | carried | article 1 and article 2 |
+| 22. The Two-Sided Operators | carried | article 2 |
+| 23. The Hermitian Sandwich | partially carried | the pair family; the sandwich itself not developed |
+
+## 1. The Models and the Change of Frame (partially carried)
+
+**Carried.** The two Peirce orders, the two matrices of one element, and the switch between them.
+
+**Remaining.**
+
+- The bracket $[A]_{\mathcal{B}}$, defined so that a matrix and a frame are always written together, and the rule $[T(x)]_{\mathcal{B}}=[T]_{\mathcal{B}}[x]_{\mathcal{B}}$ that separates the operator from the element.
+- The theorem that the map $T\mapsto[T]_{\mathcal{B}}$ is an isomorphism $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to M_2(\mathbb{C})$ for the entry model, with linearity, multiplicativity, the identity, and the statement that an operator is determined by its matrix.
+- The conjugation law $[T]_{\mathcal{B}'}=C^{-1}[T]_{\mathcal{B}}C$, and the statement that a change of basis is the only thing that changes a display.
+- Similar matrices, the similarity orbit as the frame-free operator, the absence of a canonical representative, and the statement that the trace and the determinant are the two entry-independent linear and multiplicative functions.
+- The warning that an entry of a matrix is not a function of the operator, and that only symmetric entry functions survive all frames.
+- The operator unit table, the sixteen or four units depending on the size, the product $E_{ij}E_{kl}=\delta_{jk}E_{il}$, and the statement that the units depend on the frame while the algebra does not.
+- The two alphabets at the entry size: the four algebra units $e_\mu$ against the four operator units $E_{ij}$; $e_t$ against $\mathrm I_2$; $E_{ii}$ against $\tilde\Pi_\pm$; the index of $e_\mu$ is a direction and the index of $E_{ij}$ is a pair of coordinates.
+- The parameter count of the four families at the entry size: $L$ and $R$ one element each, $T$ a pair, $\Theta$ one element, so $2,2,4,2$ complex parameters against the four of a general matrix; the excess is the redundancy of the descriptions.
+- The statement that the two Peirce orders are two frames and not two algebras, with the explicit permutation between them and its determinant.
+
+## 2. The Product, the Trace and the Determinant (nearly carried)
+
+**Carried.** The matrix of $\tilde Q$, the product, the trace $2Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}$, the inverse, the characteristic polynomial and the six subspaces.
+
+**Remaining.**
+
+- The inverse as the adjugate formula $B^{-1}=\operatorname{adj}B/\det B$ with $\operatorname{adj}B=(\operatorname{tr}B)\mathrm I_2-B$, and the statement that the adjugate is linear at the entry size and cubic at the regular size.
+- The derivation that the factor $i$ in $\mathsf M_2(\vec e_k)=-i\sigma_k$ is forced, and that the signs of the cross-relations are forced up to one common conjugation.
+- The Pauli identities $\sigma_j\sigma_k=\delta_{jk}\mathrm I_2+i\varepsilon_{jkl}\sigma_l$, the anticommutator, and their consequences for the product of two general elements.
+- The centre as the line $\mathbb{C}\mathrm I_2$, the structure map $\lambda\mapsto\lambda\mathrm I_2$, and the simplicity of $M_2(\mathbb{C})$ with the witness $E_{11}E_{22}=0$.
+- The real form: $M_2(\mathbb{C})$ has real dimension eight, $J(B)=iB$ satisfies $J^2=-\mathrm I$, and the realification in a real basis is $\begin{pmatrix}A&-B\\B&A\end{pmatrix}$.
+- The presentation by $X=\mathsf M_2(\vec e_x)$ and $Y=\mathsf M_2(\vec e_y)$ with $X^2=Y^2=-\mathrm I_2$ and $XY+YX=0$.
+- The moduli of the model: every representation is $C^{-1}\mathsf M_2(\tilde Q)C$, and the choice of $C$ fixes the two idempotents, the axis and the entries.
+- The worked example with a general element $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and the explicit matrix with all four entries written in the coefficients.
+- The trace of a power and the Newton identities that recover the elementary symmetric functions from $\operatorname{tr}B^k$.
+
+## 3. The Six Subspaces as Matrix Conditions (nearly carried)
+
+**Carried.** The six conditions, the real dimensions $2,6,4,4,4,4$, the traces and determinants, the three splits and the closure table.
+
+**Remaining.**
+
+- The coherence statement: the six subspaces are the intersections of the real algebra with the six invariant cones and planes of the four words, and the table is read column by column and not entry by entry.
+- The reality contrast: the vector subspace is $\operatorname{tr}B=0$, the quaternion subspace is the conjugate-linear pattern $\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$, and these are different real forms of the same complexification; the first is the split form and the second the compact form.
+- The statement that the two forms are not isomorphic over $\mathbb{R}$, with the discriminant of the determinant quadratic as the invariant that separates them.
+- The closure table read as a multiplication table of the four real forms, including the failure of closure of the vector subspace under multiplication and its closure under the commutator.
+- The identification of the anti-quaternion subspace with $i$ times the quaternion subspace and the statement that the two have opposite signatures.
+- The six conditions written as six linear conditions on the four coefficients, and the observation that the coefficient frame turns each into an entry condition.
+
+## 4. Peirce Coordinates, Matrix Units and the Spinor Planes (nearly carried)
+
+**Carried.** The Peirce basis in both orders, the multiplication table, the four units, the coordinate matrix, the stitch, and the compression.
+
+**Remaining.**
+
+- The coordinate isomorphism and the trace-pairing recovery $a_{ij}=\operatorname{tr}((E_{ij})B)$ at the entry size, with the normalisation that makes the pairing the plain trace.
+- The statement that the four Peirce elements are the four matrix units of a single system, so that the entry model is the algebra itself and not a copy of it.
+- The reciprocal scaling $E_{12}\mapsto\mu E_{12}$, $E_{21}\mapsto\mu^{-1}E_{21}$ and the statement that it is the only freedom of the system beyond the permutation of the two orders.
+- The two spinor planes as the two coordinate lines $\mathbb{C}\tilde\Pi_+$ and $\mathbb{C}\tilde\Pi_-$, with the statement that they are lines at the entry size and planes at the regular size because the multiplicity is one here and two there.
+- The column-space caution: the column space of the idempotent is a line, while the right ideal it generates is the two-dimensional set of matrices with a zero column; the two groupings of the four entries by columns and by rows are different.
+- The nilpotent classification: every nilpotent is $\mu\vec\Upsilon_+$ or $\mu\vec\Upsilon_-$, square-zero and traceless, and the two are conjugate.
+- The statement that the entry model is the corner matrix itself: its four entries are the four Peirce coordinates and the four standard matrix units are the four Peirce elements, so the entry display carries the coordinates and the algebra in the same object.
+- The statement that the entry matrix is the compression of the regular matrix to one spinor plane, and that the doubling is what the other two frames display.
+
+## 5. The Spectral Projectors (not carried)
+
+The two live articles have the two standard idempotents and the two eigenvalues $Q_t\pm B$ of a general element. They do not have the projectors of a general element, which are not the standard idempotents.
+
+**Remaining.**
+
+- The construction $\vec\Xi=-i\vec Q/B$ and $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$, defined for a chosen square root $B$ of $Q_x^2+Q_y^2+Q_z^2$.
+- The theorem that $\rho_\pm$ are idempotents of rank one and trace one, that $\rho_+\rho_-=0$, $\rho_++\rho_-=\mathrm I_2$, that they commute with $\tilde Q$, and that $\tilde Q=\lambda_+\rho_++\lambda_-\rho_-$.
+- The explicit matrices $\rho_+=\frac{1}{2B}\begin{pmatrix}B-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&B+Q_z\end{pmatrix}$ and $\rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}$, and the check that each has trace one and determinant zero.
+- The signed projector $\rho_+-\rho_-=\mathsf M_2(\vec\Xi)=-\tfrac{i}{B}\mathsf M_2(\vec Q)$ and the Lagrange form $\rho_+=(\tilde Q-\lambda_-e_t)/(\lambda_+-\lambda_-)$.
+- The failure of Hermiticity for a general complex element, the condition $\vec Q=\zeta\vec p$ with $\vec p$ real for the Hermitian case, and the statement that the projectors of a real direction are Hermitian.
+- The residue formula $(z-\tilde Q)^{-1}=\tilde\Pi_+/(z-\lambda_+)+\tilde\Pi_-/(z-\lambda_-)$ and the contour integral that recovers the projectors.
+- The degeneration: as $\vec Q\to0$ the projectors tend to a pair depending on the direction of approach, so the projector is not continuous at the scalar line.
+- The comparison with the standard pair: the standard idempotents are the projectors of the axis $\vec e_z$, and every other direction gives a different pair.
+- The statement that the two projectors diagonalise $\tilde Q$ and that the diagonalising matrix is built from them, which is the subject of article 7.
+
+## 6. The Centraliser and the Double Centraliser (not carried)
+
+The live pair identifies the two Peirce ideals and the centre, but never the commutant of a single element.
+
+**Remaining.**
+
+- The commutant $C(A)$ of a single element: $M_2(\mathbb{C})$ of dimension four for a scalar, and $\mathbb{C}[A]$ of dimension two otherwise.
+- The two value algebras of $\mathbb{C}[A]$: $\mathbb{C}\times\mathbb{C}$ in the distinct case, with the two spectral projectors as a basis of idempotents, and $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ in the repeated case, with $\varepsilon$ the nilpotent part.
+- The double centraliser $C(C(A))=\mathbb{C}[A]$, so that the algebra generated by an element is recovered from its matrix.
+- The minimal polynomial, its degree equal to the dimension of $\mathbb{C}[A]$, and the statement that the minimal polynomial is the characteristic polynomial exactly on the nonderogatory locus, which at the entry size is the non-scalar locus.
+- The place of the adjugate and the dagger: $\operatorname{adj}B$ is a polynomial in $B$ and hence in the commutant, and $B^{\dagger}$ lies in the commutant exactly on the normal locus.
+- The two involutions and their fixed spaces inside $C(B)$, and the reading of the commutant as the algebra of functions of the element.
+- The diagonalising ambiguity: the diagonal group of dimension two acting on the two eigenvectors, against the six extra parameters at the regular size.
+- The statement that the centre of the commutant is $\mathbb{C}[B]$ itself and that it is commutative for every element, including the zero divisors.
+
+## 7. The Eigenbasis and the Diagonalising Matrix (not carried)
+
+The two live articles carry the two Peirce orders. They do not carry the eigenbasis of a general element or the matrix that produces it.
+
+**Remaining.**
+
+- The eigenbasis $\mathcal{E}=(\rho_+,\rho_-)$ of a spectrally regular element, and the statement that it is a basis of the algebra and not of a copy of it.
+- The diagonalising matrix $\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix}$, whose columns are the two eigenvectors written in the fixed model and scaled by $2B\rho_\pm$, and the identity $\mathsf C_Q^{-1}\mathsf M_2(\tilde Q)\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$.
+- The determinant $\det\mathsf C_Q=(B-Q_z)^2-(Q_x^2+Q_y^2)=2B(B-Q_z)$, and the statement that the chart fails exactly on the line $B=Q_z$.
+- The second chart $\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix}$ with $\det\mathsf C_Q'=-2B(B+Q_z)$, the proof that the two determinants cannot both vanish, and the statement that one chart always applies.
+- The labels: replacing $B$ by $-B$ exchanges $\lambda_+$ and $\lambda_-$, the two columns and the two diagonal entries; the pair of eigenvalues is unordered and only the labelling is a choice.
+- The coordinate model $\mathsf M_2^{Q}$, defined by $\tilde X=X_+\rho_++X_-\rho_-$, with $\mathsf M_2^{Q}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$, and the coordinates recovered by the trace pairings $\operatorname{tr}(\rho_\pm X)$.
+- The freedom: right multiplication by the invertible diagonal group, of dimension two, rescaling the two eigenvectors independently, and the statement that the determinant of the change is not invariant under it.
+- The normal case: the eigenvectors orthonormal exactly when $\vec Q$ is a complex multiple of a real vector, and then $\mathsf C_Q$ is unitary up to the scaling $1/\sqrt{2B}$.
+- The flags read from the eigenvalues: Hermitian when both are real, $*$-unitary when both have modulus one, an involution when they are $\pm1$, scalar when they merge.
+- The transitions $T_{Q'Q}=\mathsf C_Q^{-1}\mathsf C_{Q'}$, the cocycle, and the statement that a transition preserves the diagonal form exactly when the two elements commute.
+- The explicit chart in the standard frame at the axis: $\vec Q=Q_z\vec e_z$ gives $\mathsf C_Q$ diagonal, which is the reason the standard pair looks canonical.
+
+## 8. The Jordan Basis and the Jordanising Matrix (not carried)
+
+The live pair has the nilpotent $\vec\Upsilon_-$ and the statement that its square vanishes. It has no Jordan basis, no Jordanising matrix and no defect.
+
+**Remaining.**
+
+- The Jordan theorem at the entry size: for a non-scalar element $\tilde Q=Q_te_t+\vec Q$ there are a unit vector $u$ spanning the image of $\mathsf M_2(\vec Q)$ and a unit vector $v$ orthogonal to it with $\mathsf M_2(\vec Q)u=0$ and $\mathsf M_2(\vec Q)v=su$, where $s=\sqrt{2\langle\vec Q\rangle_*}$.
+- The Jordanising matrix $\mathsf S_Q=(u\ s^{-1}v)$, the relations $\mathsf M_2(\vec\Upsilon_-)=Q$, $\mathsf M_2(\vec\Upsilon_+)=s^{-1}vu^{\dagger}$, $\mathsf M_2(\tilde\Pi_+)=uu^{\dagger}$, $\mathsf M_2(\tilde\Pi_-)=vv^{\dagger}$, and $Q\mathsf S_Q=\mathsf S_QE_{12}$.
+- The normal form $\mathsf S_Q^{-1}\mathsf M_2(\tilde Q)\mathsf S_Q=J_2(Q_t)$ and the $*$-unitary form $U^{\dagger}\mathsf M_2(\tilde Q)U=\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$ with $U=(u\ v)$.
+- The defect: $\mathsf S_Q^{\dagger}\mathsf S_Q=\operatorname{diag}(1,s^{-2})$, so the canonical matrix is not unitary and $\lvert\det\mathsf S_Q\rvert=1/s=1/\sqrt{2\langle\vec Q\rangle_*}$; the modulus is invariant and the phase is not.
+- The statement that no $*$-unitary change removes the superdiagonal $s$: a $*$-unitary diagonalisation would make the element normal, and a normal element with one eigenvalue is scalar.
+- The freedom: the other Jordanising matrices are $\mathsf S_Q\mathsf G$ with $\mathsf G$ upper triangular unipotent, and the statement that there is no second chart because the two phases of $u$ and $v$ cancel in $\mathsf S_Q$.
+- The commutant read in the Jordan frame, $\{a\mathrm I_2+bE_{12}\}$, the dual numbers, with only the idempotents $0$ and $\mathrm I_2$.
+- The defect as the invariant that distinguishes the scalar line from the rest, and the statement that the defective locus is the cone $\langle\vec Q\rangle_*=0$ with the scalars removed.
+- The statement that the two frames, the diagonalising and the Jordanising, agree exactly on the scalar line and differ everywhere else.
+
+## 9. Worked Examples (partially carried)
+
+**Carried.** Three worked cases with their trace and determinant in article 2.
+
+**Remaining.**
+
+- The eight matrices carried through the entry display: scalar, Jordan block, distinct eigenvalues, singular, rank one, $*$-unitary, Hermitian, normal, each with its coefficients, trace, determinant, spectrum and minimal polynomial.
+- The pattern table: minimal polynomial, rank, diagonalisability, normality, Hermiticity, $*$-unitarity for the eight cases, with the implications and the failure of both converses.
+- The statement that a non-scalar Jordan block is never normal, and that the only normal element among the three Jordan types is the scalar.
+- The determinant of each of the eight matrices as the explicit complex number, with the check that $\det=\langle\tilde Q\rangle_{\natural}$.
+- The reading of each example as a rotation, a boost, a null vector or a projector: the geometric content of the algebraic type.
+- The explicit eigenvectors for the distinct case, the explicit Jordan chain for the defective case, and the explicit null vector for the singular case.
+
+## 10. The Four Words and the Four Traces (partially carried)
+
+**Carried.** The transpose and the dagger of a matrix, and the trace form.
+
+**Remaining.**
+
+- The table of the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$, $X^{\mathsf T}Y^{\dagger}$ with the left slot carrying $\natural$ and the right slot carrying $*$, and the statement that the four forms are the four words followed by the trace.
+- The four forms and their Gram matrices on the coefficient basis, $G_{\mathrm{plain}}=G_{\natural*}=\operatorname{diag}(1,-1,-1,-1)$ and $G_{\natural}=G_{*}=\mathrm I_4$, with the pairing between them.
+- The signatures of the forms, $(4,4)$ for the plain form and $(2,6)$ for the Krein form at the regular size, the indefinite quaternionic form against the definite Hermitian one, and the statement that only the Hermitian form is positive definite at the entry size.
+- The composition of words and the Klein relations among the involutions, including $\natural$ as the transpose and $*$ as the dagger.
+- The four adjoints of a linear map at the entry size, and the statement that they are different objects from the four element-level words.
+- The statement that the entry model has no dressing: the transpose is the transpose, and the coefficient frame is the frame of the algebra.
+
+## 11. Trace, Determinant and the Biquaternion Norm (partially carried)
+
+**Carried.** The trace $2Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}$, the characteristic polynomial $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$.
+
+**Remaining.**
+
+- The determinant computed by direct expansion, as the identity $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ proved and not only used.
+- The four norms: plain $\tfrac12\operatorname{tr}B^2=Q_t^2-B^2$, quaternionic $\tfrac12\operatorname{tr}(B^{\mathsf T}B)=H$, Hermitian $\tfrac12\operatorname{tr}(B^{\dagger}B)$, Krein $\tfrac12\operatorname{tr}(B^{\mathsf T}B^{\dagger})$, with the value rings and the definiteness of each.
+- The statement that the Hermitian norm is positive definite, that the quaternionic norm is positive definite on the real form and indefinite on the complex algebra, and the signatures that separate them.
+- The identity $P=Q_t^2-B^2$ for the square and the discriminant $-4B^2$ for the characteristic polynomial, with the spectral criterion read from the sign of the discriminant.
+- Cayley–Hamilton $B^2-2Q_tB+\langle\tilde Q\rangle_{\natural}\mathrm I_2=0$, the Newton identities for the powers, and the trace of the cube.
+- The zero divisors as the nonzero matrices of rank one, the cone $\langle\tilde Q\rangle_{\natural}=0$ with apex at the origin, and the statement that its projectivisation is a pair of points, one per ruling.
+- The singular set and its two strata, with the pure stratum as the boundary of the non-pure one.
+- The Euclidean inequality $\lvert\det\rvert\le H$ with equality exactly when the four squares are aligned, and the statement that $\lvert\det\rvert=H$ exactly on the quaternionic unit sphere.
+
+## 12. The Polar Decomposition of a Matrix (not carried)
+
+The live pair has the inverse and the adjugate. It has no factorisation into a positive and a unitary part, and no singular values.
+
+**Remaining.**
+
+- The theorem $M=PV$ with $P$ positive semidefinite and $V$ a partial isometry, the uniqueness for invertible $M$, and the formulae $P=(MM^{\dagger})^{1/2}$, $V=P^{-1}M$.
+- The diffeomorphism $Herm^{>0}\times U(2)\to GL_2$ with the dimension count $4+4=8$, and the statement that the two factors are the boost and the rotor.
+- The closed form $P=\bigl(MM^{\dagger}+\lvert N\rvert\mathrm I_2\bigr)/\sqrt{\operatorname{tr}(MM^{\dagger})+2\lvert N\rvert}$ with $N=\det M$, and the statement that the formula is polynomial in the entries and the modulus of the determinant.
+- The determinant split $\det M=\det P\det V$, with $\lvert\det P\rvert=\lvert N\rvert$ and $\lvert\det V\rvert=1$.
+- The biquaternion word $M=r\zeta M_bM_r$ with $r>0$, $\lvert\zeta\rvert=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$, and the check $\det M=r^2\zeta^2$.
+- The special linear case $SL_2=Herm^{>0}_1\cdot SU(2)$, with the two three-dimensional factors and their geometric reading.
+- The singular case: $P$ of rank equal to the rank of $M$, $V$ a partial isometry vanishing on the kernel, and the failure of uniqueness at the zero matrix.
+- The singular value decomposition, the two singular values $s_{1,2}=re^{\pm\eta/2}$ with $s_1s_2=r^2=\lvert\det M\rvert$, and the statement that the singular values coincide exactly when the boost is trivial.
+- The strata of the decomposition by rank, and the statement that the polar factors are continuous on the invertible locus and discontinuous at the zero divisors.
+
+## 13. Rank-One Matrices and the Determinantal Variety (partially carried)
+
+**Carried.** The rank formula of article 2 and the four images of the Peirce units.
+
+**Remaining.**
+
+- The factorisation theorem: a nonzero matrix has rank one exactly when it is $uv^{\mathsf T}$ with nonzero vectors $u,v$, uniquely up to $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$ and up to the common scalar, and the statement that every column is then a multiple of $u$.
+- The four coefficients of the pair, $Q_t=\tfrac12v^{\mathsf T}u$, $Q_x=\tfrac{i}{2}(u_1v_2+u_2v_1)$, $Q_y=\tfrac12(u_2v_1-u_1v_2)$, $Q_z=\tfrac{i}{2}(u_1v_1-u_2v_2)$, with $\operatorname{tr}M=v^{\mathsf T}u=2Q_t$ and $\det M=0$.
+- The statement that the reciprocal scaling leaves every coefficient fixed and that this is why the factorisation is parametrised by a pair of projective points.
+- The two strata: the pure stratum $v^{\mathsf T}u=0$, the nonzero nilpotents, of real dimension four; the non-pure stratum $v^{\mathsf T}u\ne0$, the nonzero multiples of rank-one idempotents, of real dimension six; the pure stratum as the boundary of the non-pure one.
+- The rank-one idempotent $P=uv^{\mathsf T}/(v^{\mathsf T}u)$, its trace one, its determinant zero, its image line and its kernel line, and the statement that the idempotent is the projection onto the image along the kernel.
+- The determinantal variety as the cone $\langle\tilde Q\rangle_{\natural}=0$ with apex at the origin, of complex dimension three, smooth away from the apex, with the tangent cone at the apex equal to the whole cone.
+- The projectivisation as the conic in $\mathbb{P}^3$ cut by the quadric $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$, that is $\mathbb{P}^1\times\mathbb{P}^1$ in the split picture and the two points of a real conic in the compact one.
+- The link of the cone: the Stiefel-type manifold of orthonormal pairs, of real dimension three, fibred over the conic with circle fibres.
+- The annihilators: the left annihilator $\{X:XM=0\}=\{X:Xu=0\}$ and the right annihilator $\{X:MX=0\}=\{X:v^{\mathsf T}X=0\}$, each of complex dimension two and each a maximal one-sided ideal.
+- The ideals generated: $M_2M=\{wv^{\mathsf T}\}$, the minimal left ideal of the covector, and $MM_2=\{uw^{\mathsf T}\}$, the minimal right ideal of the vector, each of complex dimension two.
+- The ranks of the one-sided operators: $\operatorname{rank}L_M=2$ and $\operatorname{rank}R_M=2$ for a rank-one $M$, so the element has rank one while its operators have rank two.
+- The nilpotents: every nonzero nilpotent is conjugate to $J=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the conjugating matrix sending the image line to the first coordinate line and the kernel to the second.
+- The corners $E_{11},E_{22},E_{12},E_{21}$ with $E_{12}E_{21}=E_{11}$, $E_{21}E_{12}=E_{22}$, and the distinction between the scaled idempotent and the nilpotent as the distinction between the two strata.
+
+## 14. Spin, Qubits and the Bloch Vector (not carried)
+
+The live pair has the Pauli matrices implicit in the diagonal entries of the matrix. It has no state space, no observable and no Bloch vector.
+
+**Remaining.**
+
+- The Pauli table $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, $\mathsf M_2(i\vec e_k)=\sigma_k$, with the squares, the Hermiticity of the last line, and the statement that the factor $i$ is what turns a direction into an observable.
+- The Hermitian condition on the coefficients: $Q_t$ real and the three $Q_k$ purely imaginary, with the isomorphism $\mathbb{M}_+\to\operatorname{Herm}_2(\mathbb{C})$ that carries no factor and no sign.
+- The spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ and the commutator $[\tilde S_i,\tilde S_j]=i\hbar\varepsilon_{ijk}\tilde S_k$ as the angular momentum algebra.
+- The statement that the three directions span $\mathbb{M}_+$ over $\mathbb{R}$ but do not span the algebra, so a complex coefficient is needed to reach the fourth dimension.
+- The pure states $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ with the projector $\tfrac12(\mathrm I_2+\vec u\cdot\vec\sigma)$, the spinor line $(\cos\tfrac\theta2,e^{i\varphi}\sin\tfrac\theta2)$, and the complementarity $\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)=e_t$.
+- The statement that a pure state is a null vector and an idempotent, not a nilpotent, and that the two uses of the word pure are different.
+- The Bloch ball: the state $\tfrac12(e_t+i\vec r)$, $\det\rho=\tfrac14(1-\lvert\vec r\rvert^2)$ and $\operatorname{tr}\rho^2=\tfrac12(1+\lvert\vec r\rvert^2)$, the ball as the trace-one slice of the positive cone, the boundary as the pure states and the centre as the maximally mixed state.
+- The Born rule $p_\pm=\tfrac12(1\pm\vec r\cdot\vec u)$, the expectation $\tfrac{\hbar}{2}\vec r\cdot\vec u$, and the affine function of a general observable.
+- The convex splitting of a mixed state along a chord of the ball and the statement that the ball is the convex hull of the sphere.
+- The Hopf fibration $S^3\to S^2$, the spinor as a ray, and the statement that the phase of the spinor is not observable.
+- The list of where the correspondence stops: the real form of the algebra is extra data, the identification of the three directions with space is extra data, and no dynamics is implied by the algebra alone.
+
+## 15. The Conjugations and the Adjoints (partially carried)
+
+**Carried.** The transpose, the entrywise conjugation and the dagger of a matrix, and the identity ${}^{*}=\natural\circ\bar{\cdot}$.
+
+**Remaining.**
+
+- The table of the four words $\natural$, $\bar{\cdot}$, $*$, $\flat=-*$ with their algebra definitions, fixed and anti-fixed spaces, and images in the matrix.
+- The Klein four-group relations among the three involutions $\natural$, $\bar{\cdot}$, $*$, and the statement that $\flat$ squares to the identity but reverses the product only up to sign.
+- The adjugate as the matrix of ${}^{\natural}$: $\operatorname{adj}M=\varepsilon M^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the linearity of the adjugate at the entry size, and the formula $\operatorname{adj}(\operatorname{adj}M)=M$ for an invertible matrix.
+- The fixed points of the adjugate: the matrices with $M^2=(\det M)\mathrm I_2$, of which every involution and every nilpotent is one.
+- The fifth involution $\sigma$, the conjugation by $\vec e_y$, written as $\sigma(X)=\varepsilon\bar X\varepsilon^{-1}$ with a possibly different $\varepsilon$, and the statement that it is not one of the four words of the algebra but a symmetry of the display.
+- The four element-level adjoints built from the four forms, and the statement that they are different objects from the four operator-level adjoints of linear maps.
+- The relations between the four words and the six subspaces: each word has a fixed space and an anti-fixed space, and the six subspaces are the six of them that are real.
+
+## 16. The Killing Form (not carried)
+
+The live pair has the trace form. It has no adjoint representation, and therefore no Killing form, no radical, no signature and no Casimir.
+
+**Remaining.**
+
+- The adjoint representation $\operatorname{ad}_X(Y)=[X,Y]$ on the algebra, its preservation of the algebra, and its diagonal form in the Peirce frame with eigenvalues $0,x_1-x_2,x_2-x_1,0$.
+- The formula $\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}_2(XY)-2\operatorname{tr}_2X\operatorname{tr}_2Y$, and on the vector part $\kappa_{\mathbb{C}}=-8\vec X\cdot\vec Y$.
+- The proof from the vector product: for traceless $X,Y$ the product has scalar part $-\vec X\cdot\vec Y$ and vector part $\vec X\times\vec Y$, so $\operatorname{tr}_2(XY)=-2\vec X\cdot\vec Y$.
+- The radical as the centre $\mathbb{C}\mathrm I_2$, of real dimension two, and the statement that the degeneracy is the reductive and not semisimple character of $\mathfrak{gl}_2$.
+- The signatures: $(3,3)$ on the trace-free part, $(0,3)$ on the compact form, $(2,1)$ on the split form, with the matrices that achieve them.
+- The invariance $\kappa([X,Y],Z)+\kappa(Y,[X,Z])=0$, and the descent to the projective group.
+- The Casimir $\Omega=\tfrac38\mathrm I_2$, the statement that it acts by the same scalar on both sides, and the reading of the coefficient $\tfrac38$ from the dual basis.
+- The comparison with the trace form $\operatorname{tr}_2(XY)=2\langle\tilde X,\tilde Y\rangle$, of signature $(4,4)$ after realification: equal on the trace-free part up to a factor, and different on the centre, where the Killing form vanishes and the trace form does not.
+
+## 17. The Functional Calculus (not carried)
+
+The live pair evaluates polynomials in an element and nothing else.
+
+**Remaining.**
+
+- The Cauchy integral $f(X)=\frac{1}{2\pi i}\oint_\gamma f(z)(z\mathrm I-X)^{-1}dz$, its independence of the contour enclosing the spectrum, and the two spectral forms: the diagonal form and $f(\lambda)\mathrm I+f'(\lambda)N$.
+- The homomorphism property $f(X)g(X)=(fg)(X)$, the spectral mapping theorem, and the table of instances.
+- The resolvent identity $(z-X)^{-1}=\rho_+/(z-\lambda_+)+\rho_-/(z-\lambda_-)$ and its use to prove the functional calculus.
+- The exponential $\exp X=e^{Q_t}\bigl(\cos B\,\mathrm I_2+\tfrac{\sin B}{B}\mathsf M_2(\vec Q)\bigr)$, with the three regimes: oscillatory for $B^2>0$, scalar for $B=0$, nilpotent for $B=0$ with $\vec Q\ne0$.
+- The theorem $\det(\exp X)=\exp(\operatorname{tr}X)$, the corollary $\exp(\mathfrak{sl}_2)\subseteq SL_2$ with equality, and the norm reading $\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)$.
+- The one-parameter subgroups: the central phase, the rotor and the boost, with their explicit matrices $e^{i\theta\sigma_3/2}$, $e^{\eta\sigma_1/2}$ and the unipotent line $\mathrm I+tN$.
+- The kernel of the exponential: the diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$, conjugate to $\operatorname{diag}(2\pi im,2\pi in)$; the kernel is not a subgroup and it meets the null cone.
+- The logarithm: existence exactly for invertible matrices, the $\mathbb{Z}^2$ family in the distinct case, the $\mathbb{Z}$ family in the repeated case, and the principal branch with the two composition identities on the strip.
+- The square-root classification: four roots for distinct nonzero eigenvalues, two when one eigenvalue vanishes, two for a non-scalar repeated nonzero eigenvalue, none for a nonzero nilpotent, and a surface plus two points for a scalar.
+- The closed form for the root, $X^{1/2}=(X+\sqrt N\,\mathrm I_2)/\sqrt{\operatorname{tr}X+2\sqrt N}$, and the statement that it is the regular formula with the trace halved.
+- The six worked cases: an exponential, a diagonal matrix, a Jordan block, a nilpotent, the identity and the zero matrix.
+
+## 18. $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant (partially carried)
+
+**Carried.** The determinant, the inverse, and the reading of the determinant on the six subspaces.
+
+**Remaining.**
+
+- The group structure of $GL_2(\mathbb{C})$, of complex dimension four, and of $SL_2(\mathbb{C})$, of complex dimension three, with the determinant sequence $1\to SL_2\to GL_2\to\mathbb{C}^{\times}\to1$.
+- The non-central splitting and its obstruction: a central splitting would need $\mu(\lambda)\mathrm I_2$ with $\mu(\lambda)^2=\lambda$, and $\mu(-1)^2=1$ contradicts $\mu(-1)^2=-1$.
+- The twofold cover $GL_2\cong(\mathbb{C}^{\times}\times SL_2)/\{\pm1\}$ through $(\lambda,U)\mapsto\lambda U$, and the statement that the determinant of $\lambda U$ is $\lambda^2$ and not $\lambda$.
+- The level sets: $\{\det=c\}$ for $c\ne0$ is a smooth complex hypersurface of dimension three, homogeneous under the action, and the level set of the norm $N=c$ is the square-root cover.
+- The norm-one slice as non-compact, with maximal compact subgroup $SU(2)$ of real dimension three, and the escaping family $\operatorname{diag}(r,r^{-1})$.
+- The cone at $c=0$ as the cone over the conic of article 13, and the statement that the singular set is the cone and not a hypersurface.
+- The unitary subgroup $U(2)$ of real dimension four, and its determinant-one part $SU(2)$ of real dimension three.
+- The polar decompositions $GL_2=Herm^{>0}\cdot U(2)$ and $SL_2=Herm^{>0}_1\cdot SU(2)$, with the determinant degrees $r^2$ and $\zeta^2$.
+- The topology: $GL_2$ is connected of the homotopy type of $U(2)$, with $\pi_1=\mathbb{Z}$; $SL_2$ is simply connected of the homotopy type of $S^3$.
+- The Bruhat decomposition $GL_2=B\sqcup BwB$ with the Borel of upper triangular matrices, the two cells of complex dimensions three and four, the Weyl element $w=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, and the disjointness read from the lower-left entry.
+- The elementary factorisation of the big cell around $w$, and the reading of the decomposition as the projective line cut into the affine line and the point at infinity.
+- The centre $\mathbb{C}^{\times}\mathrm I_2$, the projective group $PGL_2$ of complex dimension three, and the statement that the determinant is defined on the projective group only up to squares.
+- The three double covers with kernel $\{\pm\mathrm I_2\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^{+}(1,3)$ and $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$, with the table of base, kernel and fibre, and the contrast with the Hopf fibration, whose fibre is a circle.
+- The Lorentz action $H\mapsto MHM^{\dagger}$ on the Hermitian matrices, its preservation of the determinant and the positive cone, and the kernel at the level of the projective group.
+
+## 19. The Projective Line and the Möbius Action (partially carried)
+
+**Carried.** The two Peirce ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, which are the two coordinate ideals of the projective line.
+
+**Remaining.**
+
+- The family $I_L=\{M\in M_2(\mathbb{C}):\operatorname{im}M\subseteq L\}$ for a line $L\in\mathbb{P}^1(\mathbb{C})$, the theorem that $I_L$ is a minimal left ideal, and the bijection $L\mapsto I_L$ with the projective line.
+- The two coordinate ideals written out, $I_{L_\infty}=\mathbb{C}\{E_{11},E_{21}\}$ and $I_{L_0}=\mathbb{C}\{E_{12},E_{22}\}$, and the statement that they are the two Peirce ideals of the standard frame.
+- The proof of minimality: in a basis with $L=\operatorname{span}\{e_1\}$ the ideal is the space of matrices with a vanishing second column, of complex dimension two, and every nonzero element has rank one and generates the ideal.
+- The action $M\cdot I_L=I_{ML}$, its associativity, the kernel $\mathbb{C}^{\times}\mathrm I_2$ and the quotient $PGL_2$; the idempotent form $\Pi\mapsto M\Pi M^{-1}$.
+- The chart $z=\xi_1/\xi_2$, the Möbius formula $z'=(az+b)/(cz+d)$, the statement that it depends only on the class $[M]$, and the composition law $\varphi_{M_1}\circ\varphi_{M_2}=\varphi_{M_1M_2}$.
+- The two coordinate points: $I_{L_0}$ at $z=0$, $I_{L_\infty}$ at $z=\infty$, exchanged by $z\mapsto-1/z$ from $\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
+- The idempotents: the fibre of $\Pi\mapsto\operatorname{im}\Pi$ over a line as an affine line of kernels, the form $\Pi=u\eta$, and the conjugacy class of the rank-one idempotents with the diagonal torus as stabiliser.
+- The transitivity of the action, the stabiliser of a line as a Borel subgroup, and the simple transitivity on ordered triples.
+- The cross-ratio as the complete invariant of a quadruple of points, and its transformation law under the action.
+- The Plücker bracket $[\xi,\eta]=\det(\xi,\eta)$ with $[M\xi,M\eta]=\det(M)[\xi,\eta]$, and the reading of the determinant as the volume of the pair.
+- The real structure $z\mapsto-1/\bar z$ with no fixed point, and the statement that no minimal ideal is stable under coefficient conjugation.
+- The compact picture: $PU(2)\cong SO(3)$, the projective line with its real structure as the two-sphere, and the Möbius action restricting to rotations.
+- The statement that the projective line is the space of the two orders of the Peirce basis, so that the two orders are the two charts of a single object.
+
+## 20. The Left Regular Operators (carried)
+
+**Carried.** The left copy in both frames, the four left matrices, the law $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, the kernel and image, and the rank formula.
+
+**Remaining.**
+
+- The identification of the kernel as the right annihilator and of the image as the right ideal, with the rank trichotomy and the statement that the two statements are the same theorem.
+- The spectrum and the characteristic polynomial of the left copy, and the statement that its minimal polynomial is that of the element.
+- The comparison of the left copy with the left multiplication of the entry model, and the statement that the entry model is the compression.
+
+## 21. The Right Regular Operators (carried)
+
+**Carried.** The right copy in both frames, the four right matrices, the anti-representation law, the kernel and image, and the invariants.
+
+**Remaining.**
+
+- The exchange $R_{\tilde Q}=S L_{\tilde Q}^{\mathsf T}S^{-1}$ at the entry size, with $S$ the permutation of the two mixed Peirce coordinates and $\det S=-1$, and the reason: left multiplication acts on the row index and right multiplication on the column index.
+- The statement that the image of the right family is a left ideal while the image of the left family is a right ideal, and that the two coincide only on the centre.
+- The reading of the pair $(L,R)$ as the two actions of the algebra and of its opposite, and the statement that the two together generate the full endomorphism algebra.
+
+## 22. The Two-Sided Operators (carried)
+
+**Carried.** Article 2 carries the pair, the scaling, the one-sided members, the Kronecker display, the vectorisation identity, the three products, the coefficient matrix, the rank formula, the trace and determinant, the semigroup, the inverse, the automorphisms, the four pairs and the transpose.
+
+**Remaining.**
+
+- The identification of the two-sided operators with the decomposable tensors of the algebra and its opposite, and the Segre variety as their projectivisation.
+- The length as tensor rank, and the statement that the bound four is the dimension of the algebra.
+- The two adjoints: the Hilbert–Schmidt adjoint $(T_{\tilde Q,\tilde P})^{\dagger}=T_{\tilde Q^{*},\tilde P^{*}}$ and the plain adjoint $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, with the criteria for self-adjointness, isometry and multiplicativity.
+- The absence of a pin group, with the explicit counterexample that the scalar quadratic form is not multiplicative, and the consequence that the isometry group is not the full orthogonal group.
+- The absence of a nonzero skew-adjoint member, and the statement that the family is a multiplicative monoid and not an additive semigroup.
+
+## 23. The Hermitian Sandwich (partially carried)
+
+**Carried.** The pair family and the composition of two-sided operators, of which the sandwich is the member with the two factors tied.
+
+**Remaining.**
+
+- The operator $\Theta_B(X)=BXB^{\dagger}$, its linearity, the composition law $\Theta_B\Theta_C=\Theta_{BC}$, and $\Theta_{\mathrm I_2}=\mathrm{id}$.
+- The central rule $\Theta_{zB}=\lvert z\rvert^2\Theta_B$: the modulus and not the square, so the parameter is defined modulo the central circle.
+- The defect: the product of two images is $BX(B^{\dagger}B)YB^{\dagger}$, so $\Theta_B$ is an algebra automorphism exactly when $B\in U(2)$.
+- The invariants: the norm scales by $\lvert N\rvert^2$ with $N=\det B$, the determinant of the image by $\lvert N\rvert^2$, and the eigenvalues of the operator are $\lambda_i\overline{\lambda_j}$.
+- The halves: Hermitian and anti-Hermitian matrices are preserved for every $B$, by $(BXB^{\dagger})^{\dagger}=BX^{\dagger}B^{\dagger}$.
+- The finer subspaces: the vector and quaternion subspaces are preserved exactly when $B=zu$ with $z\in\mathbb{C}$ and $u$ a real unit quaternion, and then the map is $\lvert z\rvert^2$ times the rotation $X\mapsto uXu^{-1}$.
+- The two group readings: the subspace-preserving parameters and the automorphisms, and their intersection, with the dimension count in real terms.
+- The matrix of the operator in the matrix-unit basis, $\overline B\otimes B$, and the statement that it is the only member of the pair family with conjugate factors.
+- The congruence reading on the Hermitian half, Sylvester's law, and the preservation of rank, inertia and signature.
+- The Lorentz theorem in the entry display: the map on the anti-Hermitian matrices is a conformal transformation of signature $(3,1)$, of scale $\lvert N\rvert$, and the image is the conformal group.
+
+## What the Remainder Forms
+
+The live two carry the algebra in one display: the Peirce basis in both orders, the left and right copies of a general element, the compression, the product, the trace, the determinant, the six subspaces, and the full theory of one-sided and two-sided operators.
+
+The remainder is of four kinds.
+
+- **The single-element theory**: articles 5, 6, 7, 8 and 11. The spectral projectors of a general element, the commutant, the diagonalising matrix with its two charts, the Jordanising matrix with its defect, and the four norms. The live pair gives the two standard idempotents and never the projectors of a general element.
+- **The analytic theory**: article 17, with the exponential, the logarithm and the roots, and article 12, with the polar decomposition and the singular values. The live pair has no function of a matrix other than the polynomials it uses in the semigroup arguments.
+- **The group and geometry theory**: articles 18, 19, 23 and 14, and article 13. The unit group, the determinant sequence, the Bruhat cells, the projective line and the Möbius action, the sandwich as a conformal map, the Bloch ball, and the determinantal variety with its two rulings.
+- **The frame and trace-form layer**: articles 1, 3, 10, 15 and 16. The bracket and the change law, the coherence of the six subspaces, the four words and their Gram matrices, the involution table with the adjugate, the Killing form and the Casimir.
+
+The thinnest residues are articles 20, 21 and 22, which the live pair already carries in substance: what is missing there is one identification each — the kernel as the right annihilator, the exchange $R=SL^{\mathsf T}S^{-1}$, and the length as tensor rank.

@@ -45,7 +45,7 @@ $$
 \mathcal{L}=\bar{\psi}\,(\mathbb{D}-m)\,\psi,
 $$
 
-a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\gamma_0$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
+a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\mathsf C_0$, the Hermitian conjugate followed by the timelike cell of the reference frame, $\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, with the spatial cells $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
 
 ### The Conjugate Momentum and Its Constraint
 
@@ -113,8 +113,8 @@ $$
 $$
 
 $$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\gamma_{\mu} p_{\mu}+m,\qquad
-\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\gamma_{\nu} p_{\nu}-m .
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\mathsf C_\mu p_\mu+m,\qquad
+\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\mathsf C_\nu p_\nu-m .
 $$
 
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
@@ -179,8 +179,8 @@ $$
 where $\vec\Delta=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y$. The two phases are **opposite**: the positive-frequency term carries $\exp(+i\vec p\cdot\vec\Delta)$ and the negative-frequency term $\exp(-i\vec p\cdot\vec\Delta)$. From the spin sums one obtains the two useful combinations
 
 $$
-\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\gamma_0+\gamma_0\boldsymbol\gamma\cdot\vec p,\qquad
-\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\gamma_0+\gamma_0\boldsymbol\gamma\cdot\vec p,
+\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,
 $$
 
 so that, with $\theta=\vec p\cdot\vec\Delta$,
@@ -188,8 +188,8 @@ so that, with $\theta=\vec p\cdot\vec\Delta$,
 $$
 \sum_r\Big[w^{(r)}w^{(r){}^{*}}\exp(+i\theta)+v^{(r)}v^{(r){}^{*}}\exp(-i\theta)\Big]
 =E_{\vec p}\cos\theta\,I_4\cdot 2
-+2\cos\theta\,\gamma_0\boldsymbol\gamma\cdot\vec p
-+2im\sin\theta\,\gamma_0 .
++2\cos\theta\,\mathsf C_0\mathsf C_kp_k
++2im\sin\theta\,\mathsf C_0 .
 $$
 
 The first term is even in $\vec p$ and gives $2E_{\vec p}\delta^{(3)}(\vec\Delta)$ after dividing by $2E_{\vec p}$; the second and third terms are odd in $\vec p$ and vanish under symmetric integration. Hence the equal-time relation holds. The identity was checked numerically for a representative momentum ($m=1.3$, $|\vec p|=0.9$, $\vec p$ along $\vec e_z$): the spin sums above and their two combinations reproduce the right-hand sides to a maximum absolute error of $4.4\times10^{-16}$. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
@@ -222,8 +222,8 @@ which is the Pauli exclusion principle as an algebraic identity: the square of a
 The conserved energy of the free Dirac field is
 
 $$
-H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\gamma_0\boldsymbol\gamma\cdot\nabla+m\gamma_0\big)\psi^{\mathrm{fop}}
-=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\boldsymbol\gamma\cdot\nabla+m\big)\psi^{\mathrm{fop}},
+H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\mathsf C_0\mathsf C_k\nabla_k+m\mathsf C_0\big)\psi^{\mathrm{fop}}
+=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\mathsf C_k\nabla_k+m\big)\psi^{\mathrm{fop}},
 $$
 
 the integrand being the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform of the Lagrangian of the preceding section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result
@@ -264,7 +264,7 @@ $$
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$
 
-and the normal-ordered electric charge, from $j_\mu=\bar\psi\gamma_\mu\psi$ with $j_0=\psi^\dagger\psi$, is
+and the normal-ordered electric charge, from $j_\mu=\bar\psi\mathsf C_\mu\psi$ with $j_0=\psi^\dagger\psi$, is
 
 $$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
@@ -403,15 +403,15 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Classical biquaternion Dirac field |
 | $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma_0$ | Dirac spinor (spinor module) and its adjoint |
-| $\gamma_\mu$, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ | Gamma matrices and chirality operator |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma_\mu$; $g=-\eta$ |
+| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\mathsf C_0$ | Dirac spinor (spinor module) and its adjoint |
+| $\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$ | Cells of the reference frame, acting on the spinor module |
+| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\mathsf C_\mu$; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p_\mu=(E_{\vec p},\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
+| $p_\mu=(E_{\vec p},\vec p)$, $\mathsf C_\mu p_\mu=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ | Four-momentum and its contraction |
 | $\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$ | Biquaternionic mass-shell condition |
 | $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |
@@ -434,3 +434,17 @@ The extension is a transcription of standard canonical quantization onto the par
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic formulation in which the KMS condition is stated.
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), and J. I. Kapusta and C. Gale, *Finite-Temperature Field Theory* (Cambridge, 2006), for the imaginary-time formalism and the fermionic Matsubara frequencies.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the Clifford-algebraic background to the biquaternion and spinor structures.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

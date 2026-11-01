@@ -252,12 +252,12 @@ $$
 
 the standard isovector current of the pion triplet. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
-**The axial current and its divergence.** The axial current is the Noether current of the broken directions. Its nature is fixed not by the algebra but by the anomaly: in the underlying theory it is the quark axial current,
+**The axial current and its divergence.** The axial current is the Noether current of the broken directions. Its nature is fixed not by the algebra but by the anomaly: in the underlying theory it is the quark axial current, with the generator cells $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_k=iL_{\vec e_k}R_{\vec e_y}$ and the chirality cell $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$,
 
 $$
-j_{5\mu a} = \bar q\gamma_\mu\gamma_5\frac{\tau_a}{2}q ,
+j_{5\mu a} = \bar q\,\mathsf C_\mu\mathsf C_5\frac{\tau_a}{2}q ,
 \qquad
-\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\gamma_5\tau_a q ,
+\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\,\mathsf C_5\tau_a q ,
 $$
 
 and at the level of the chiral Lagrangian the divergence is proportional to the pion field itself,
@@ -361,6 +361,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu a}$, $j_{5\mu a}$ | Isospin (vector) and axial currents |
+| $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_k=iL_{\vec e_k}R_{\vec e_y}$, $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$ | Generator cells of the coordinates and the chirality cell; $L_X\psi=X\psi$, $R_X\psi=\psi X$ for $X\in\mathbb{B}$ |
 | $\langle0\vert j_{5\mu a}(0)\vert\pi_b(p)\rangle = if_\pi p_\mu\delta_{ab}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = f_\pi m_\pi^2\pi_a$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
@@ -382,3 +383,17 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 - G. 't Hooft, "Symmetry breaking through Bell–Jackiw anomalies," *Physical Review Letters* **37** (1976) 8–11, and "Computation of the quantum effects due to a four-dimensional pseudoparticle," *Physical Review D* **14** (1976) 3432–3450, for the anomaly's role in the flavour-singlet mass.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 2: *Modern Applications* (Cambridge, 1996), for the chiral Lagrangian and the current algebra.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the PCAC relation and the Goldberger–Treiman relation.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

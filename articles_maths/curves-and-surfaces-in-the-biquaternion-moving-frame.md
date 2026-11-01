@@ -15,22 +15,22 @@ The article is the classical local theory, in three dimensions, in the biquatern
 
 ### The Subspaces the Frame Uses
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the central scalar imaginary $i$, and the quaternion units of square $-e_t$, $\vec e_\mu^2=-e_t$, so that the Clifford generators are
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the central scalar imaginary $i$, and the quaternion units of square $-e_t$, $\vec e_\mu^2=-e_t$, so that the Clifford generators are the grade-one units $i\vec e_\mu$, with
 
 $$
-\gamma_\mu=i\vec e_\mu,\qquad \gamma_\mu^2=+e_t,\qquad \gamma_\mu\gamma_\nu=-\gamma_\nu\gamma_\mu\quad(\mu\neq\nu),
+(i\vec e_\mu)^2=+e_t,\qquad (i\vec e_\mu)(i\vec e_\nu)=-(i\vec e_\nu)(i\vec e_\mu)\quad(\mu\neq\nu),
 $$
 
-by *The Number Systems as Clifford Algebras*. Write $\mathbb{G}_1=\mathrm{span}_{\mathbb{R}}\{\gamma_1,\gamma_2,\gamma_3\}$ for the **grade-one subspace** and $\mathbb{G}_2=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ for the **grade-two subspace**; the real scalars are $\mathbb{G}_0=\mathbb{R}e_t$ and the pseudoscalar line is $\mathbb{G}_3=\mathbb{R}i$.
+by *The Number Systems as Clifford Algebras*. Write $\mathbb{G}_1=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ for the **grade-one subspace** and $\mathbb{G}_2=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ for the **grade-two subspace**; the real scalars are $\mathbb{G}_0=\mathbb{R}e_t$ and the pseudoscalar line is $\mathbb{G}_3=\mathbb{R}i$.
 
 | Grade | Subspace | Basis | Role here |
 |---|---|---|---|
 | $0$ | $\mathbb{G}_0=\mathbb{R}e_t$ | $e_t$ | scalar invariants |
-| $1$ | $\mathbb{G}_1$ | $\gamma_1,\gamma_2,\gamma_3$, square $+e_t$ | points, frame vectors |
+| $1$ | $\mathbb{G}_1$ | $i\vec e_x,i\vec e_y,i\vec e_z$, square $+e_t$ | points, frame vectors |
 | $2$ | $\mathbb{G}_2$ | $\vec e_x,\vec e_y,\vec e_z$, square $-e_t$ | the rotation algebra $\mathfrak{so}(3)$, the connection |
 | $3$ | $\mathbb{G}_3=\mathbb{R}i$ | $i$ | the determinant invariant of a curve |
 
-The **grade-one** objects are the Euclidean vectors: a point of the space is the element $x=x_1\gamma_1+x_2\gamma_2+x_3\gamma_3$, and the Euclidean scalar product and squared length are read from the algebra,
+The **grade-one** objects are the Euclidean vectors: a point of the space is the element $x=i(x_1\vec e_x+x_2\vec e_y+x_3\vec e_z)$, and the Euclidean scalar product and squared length are read from the algebra,
 
 $$
 x\cdot y=\tfrac12(xy+yx),\qquad |x|^2=x\cdot x=x^2 .
@@ -54,7 +54,7 @@ $$
 
 whose second identity is the statement that a grade-two element of coefficient vector $v$ has square $-|v|^2$, so $[v]$ is invertible for $v\neq0$ with $[v]^{-1}=-[v]/|v|^2$.
 
-**Proof.** Expand $ab=\sum_{j,k}a_jb_k\gamma_j\gamma_k$ in the basis of the generators, using $\gamma_j^2=e_t$ and $\gamma_j\gamma_k=-\gamma_k\gamma_j$: the diagonal terms collect to $a\cdot b$ and the off-diagonal ones to $-\sum_{j<k}(a_jb_k-a_kb_j)\gamma_j\gamma_k$, and $\gamma_1\gamma_2=-\vec e_z$, $\gamma_2\gamma_3=-\vec e_x$, $\gamma_3\gamma_1=-\vec e_y$, so the off-diagonal sum is $-[a\times b]$. The square is $[v]^2=-(v_1^2+v_2^2+v_3^2)e_t$, since the quaternion units anticommute.
+**Proof.** Expand $ab=\sum_{j,k}a_jb_k(i\vec e_j)(i\vec e_k)$ in the basis of the generators, using $(i\vec e_j)^2=e_t$ and $(i\vec e_j)(i\vec e_k)=-(i\vec e_k)(i\vec e_j)$: the diagonal terms collect to $a\cdot b$ and the off-diagonal ones to $\sum_{j<k}(a_jb_k-a_kb_j)(i\vec e_j)(i\vec e_k)$, and $(i\vec e_x)(i\vec e_y)=-\vec e_z$, $(i\vec e_y)(i\vec e_z)=-\vec e_x$, $(i\vec e_z)(i\vec e_x)=-\vec e_y$, so the off-diagonal sum is $-[a\times b]$. The square is $[v]^2=-(v_1^2+v_2^2+v_3^2)e_t$, since the quaternion units anticommute.
 
 **Remark (the sign, and the clash with the outer product).** The sign in $a\wedge b=-\tfrac12(ab-ba)$ is the convention of the source of the construction and is kept throughout this article, because every formula below is transcribed in it. It is **the negative** of two other conventions of the corpus: the *outer product* of *The Four General Products and Their Relations over the Biquaternion Algebra*, $p\wedge q=\tfrac12(pq-qp)=V(p)\times V(q)$, and the Clifford outer product $u\wedge w=\langle uw\rangle_{k+l}$ of *The Geometric Product and the Grade Decomposition*. On pairs of grade-one elements the three differ by the sign $-1$, and the identity $a\wedge b=[a\times b]$ above is read in this article's sign; on pairs of grade-two elements the commutator $\tfrac12(\cdot-\cdot)$ is the cross product of the coefficient vectors in every one of them, and no sign is at stake. The glyph $\wedge$ therefore means *this article's* exterior product throughout, and a reader coming from *The Four General Products and Their Relations over the Biquaternion Algebra* must flip the sign of a wedge of two grade-one elements and of nothing else.
 
@@ -71,12 +71,12 @@ the **scalar triple product**: for $v=b\times c$ it is $a\wedge b\wedge c=(a\cdo
 **Definition.** Let $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ be the real quaternion subspace and let $r\in\mathbb{H}_{\mathbb{B}}$ have $r^{\dagger}r=e_t$, where $^{\dagger}$ is the Hermitian conjugation of the algebra, which on real quaternions is the quaternion conjugation. The **frame of $r$** is
 
 $$
-v_k=r\,\gamma_k\,r^{\dagger},\qquad k=1,2,3 .
+v_k=r\,(i\vec e_k)\,r^{\dagger},\qquad k=1,2,3 .
 $$
 
-**Theorem.** The frame is an orthonormal frame of $\mathbb{G}_1$ with the same orientation as $\gamma_1,\gamma_2,\gamma_3$, every orthonormal direct frame of $\mathbb{G}_1$ is the frame of exactly two rotors $r$ and $-r$, and the frame depends only on the class of $r$ in $\mathbb{H}^\times_1/\{\pm e_t\}$, which is $SO(3)$.
+**Theorem.** The frame is an orthonormal frame of $\mathbb{G}_1$ with the same orientation as $i\vec e_x,i\vec e_y,i\vec e_z$, every orthonormal direct frame of $\mathbb{G}_1$ is the frame of exactly two rotors $r$ and $-r$, and the frame depends only on the class of $r$ in $\mathbb{H}^\times_1/\{\pm e_t\}$, which is $SO(3)$.
 
-**Proof.** The sandwich by a unit real quaternion preserves $\mathbb{G}_1$, its scalar products and its orientation, because it is the orthogonal map $\mathrm{Ad}^{\alpha}_r$ restricted to $\mathbb{G}_1$ and $\mathrm{Ad}^{\alpha}$ is an algebra automorphism fixing the scalars; the orthonormality of $v_1,v_2,v_3$ is then that of $\gamma_1,\gamma_2,\gamma_3$. The converse and the two-to-one cover are *Biquaternion Rotations and Lorentz Transformations*.
+**Proof.** The sandwich by a unit real quaternion preserves $\mathbb{G}_1$, its scalar products and its orientation, because it is the orthogonal map $\mathrm{Ad}^{\alpha}_r$ restricted to $\mathbb{G}_1$ and $\mathrm{Ad}^{\alpha}$ is an algebra automorphism fixing the scalars; the orthonormality of $v_1,v_2,v_3$ is then that of $i\vec e_x,i\vec e_y,i\vec e_z$. The converse and the two-to-one cover are *Biquaternion Rotations and Lorentz Transformations*.
 
 ## The Moving Frame and Its Connection
 
@@ -91,12 +91,12 @@ $$
 and the **covariant differential** of the frame vector is the $\mathbb{G}_1$-valued one-form
 
 $$
-\mathrm D v_k:=\tfrac12\bigl(\mathrm d\iota\,\gamma_k-\gamma_k\,\mathrm d\iota\bigr).
+\mathrm D v_k:=\tfrac{i}{2}\bigl(\mathrm d\iota\,\vec e_k-\vec e_k\,\mathrm d\iota\bigr).
 $$
 
 **Theorem (the frame equation).** $\mathrm dv_k=r\,(\mathrm D v_k)\,r^{\dagger}$, and the connection one-form is pure grade two, $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, with no scalar or pseudoscalar part.
 
-**Proof.** Differentiate $v_k=r\gamma_kr^{\dagger}$ and use $\mathrm dr^{\dagger}=-r^{\dagger}\,\mathrm dr\,r^{\dagger}$, which is the differential of $r^{\dagger}r=e_t$. This gives $\mathrm dv_k=\tfrac12r(\mathrm d\iota\,\gamma_k-\gamma_k\,\mathrm d\iota)r^{\dagger}$, the displayed equation. For the purity, $\mathrm d\iota=2r^{\dagger}\mathrm dr$ and $r$ a real quaternion, so that $r^{\dagger}\mathrm dr$ is a product of two elements of the real quaternion subspace, which is the even part $\mathbb{H}_{\mathbb{B}}=\mathbb{G}_0\oplus\mathbb{G}_2$ of the grade decomposition; the scalar part of $r^{\dagger}\mathrm dr$ vanishes because $r^{\dagger}\mathrm dr=-\mathrm dr^{\dagger}r$, which is the differential of $r^{\dagger}r=e_t$. So $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, as claimed.
+**Proof.** Differentiate $v_k=r(i\vec e_k)r^{\dagger}$ and use $\mathrm dr^{\dagger}=-r^{\dagger}\,\mathrm dr\,r^{\dagger}$, which is the differential of $r^{\dagger}r=e_t$. This gives $\mathrm dv_k=\tfrac{i}{2}r(\mathrm d\iota\,\vec e_k-\vec e_k\,\mathrm d\iota)r^{\dagger}$, the displayed equation. For the purity, $\mathrm d\iota=2r^{\dagger}\mathrm dr$ and $r$ a real quaternion, so that $r^{\dagger}\mathrm dr$ is a product of two elements of the real quaternion subspace, which is the even part $\mathbb{H}_{\mathbb{B}}=\mathbb{G}_0\oplus\mathbb{G}_2$ of the grade decomposition; the scalar part of $r^{\dagger}\mathrm dr$ vanishes because $r^{\dagger}\mathrm dr=-\mathrm dr^{\dagger}r$, which is the differential of $r^{\dagger}r=e_t$. So $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, as claimed.
 
 **Definition.** Write the connection in the basis of $\mathbb{G}_2$ and its components in the basis of the parameters,
 
@@ -109,12 +109,12 @@ where each $\iota_j$ is a real one-form.
 **Theorem (the components of the covariant differential).**
 
 $$
-\mathrm D v_1=\iota_3\,\gamma_2-\iota_2\,\gamma_3,\qquad
-\mathrm D v_2=\iota_1\,\gamma_3-\iota_3\,\gamma_1,\qquad
-\mathrm D v_3=\iota_2\,\gamma_1-\iota_1\,\gamma_2 .
+\mathrm D v_1=i\bigl(\iota_3\,\vec e_y-\iota_2\,\vec e_z\bigr),\qquad
+\mathrm D v_2=i\bigl(\iota_1\,\vec e_z-\iota_3\,\vec e_x\bigr),\qquad
+\mathrm D v_3=i\bigl(\iota_2\,\vec e_x-\iota_1\,\vec e_y\bigr) .
 $$
 
-**Proof.** Expand $\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$ with $\mathrm d\iota=\sum_\mu\iota_\mu\vec e_\mu$ and the multiplication rules $\vec e_\mu\gamma_\nu=i\,\vec e_\mu \vec e_\nu$ of the basis; the coefficient of $\gamma_\lambda$ in $\mathrm D v_\nu$ is $\varepsilon_{\mu\nu\lambda}\iota_\mu$, which is the displayed triple by the antisymmetry of $\varepsilon$.
+**Proof.** Expand $\tfrac{i}{2}(\mathrm d\iota\vec e_k-\vec e_k\mathrm d\iota)$ with $\mathrm d\iota=\sum_\mu\iota_\mu\vec e_\mu$ and the quaternion multiplication rules $\vec e_\mu\vec e_\nu$ of the basis; the coefficient of $i\vec e_\lambda$ in $\mathrm D v_\nu$ is $\varepsilon_{\mu\nu\lambda}\iota_\mu$, which is the displayed triple by the antisymmetry of $\varepsilon$.
 
 ### The Interpretation
 
@@ -150,7 +150,7 @@ $$
 
 where $\rho$ is the curvature below.
 
-**Proof.** The condition $\mathrm dx=\mathrm ds\,v_1$ fixes $v_1$; the condition $\iota_2=0$ makes $\mathrm Dv_1=\iota_3\gamma_2$ purely along $v_2$ by the components above, so $v_2$ is the direction of $\mathrm Dv_1$ and $v_3$ completes the direct frame. The existence of $v_2$ needs $\mathrm Dv_1\neq0$, that is a non-vanishing curvature; the uniqueness is that of the direct frame determined by its first two vectors.
+**Proof.** The condition $\mathrm dx=\mathrm ds\,v_1$ fixes $v_1$; the condition $\iota_2=0$ makes $\mathrm Dv_1=i\iota_3\vec e_y$ purely along $v_2$ by the components above, so $v_2$ is the direction of $\mathrm Dv_1$ and $v_3$ completes the direct frame. The existence of $v_2$ needs $\mathrm Dv_1\neq0$, that is a non-vanishing curvature; the uniqueness is that of the direct frame determined by its first two vectors.
 
 ### The Frenet Equations
 
@@ -170,7 +170,7 @@ $$
 
 so that $\rho$ and $\tau$ are the **curvature** and the **torsion** of the curve.
 
-**Proof.** Put $\iota_2=0$ in the components of the covariant differential: $\mathrm Dv_1=\iota_3\gamma_2$, $\mathrm Dv_2=\iota_1\gamma_3-\iota_3\gamma_1$, $\mathrm Dv_3=-\iota_1\gamma_2$. Along the curve the only parameter is $s$, so each component is a real multiple of $\mathrm ds$, and the coefficients of those multiples are *defined* to be $\rho$ and $\tau$.
+**Proof.** Put $\iota_2=0$ in the components of the covariant differential: $\mathrm Dv_1=i\iota_3\vec e_y$, $\mathrm Dv_2=i(\iota_1\vec e_z-\iota_3\vec e_x)$, $\mathrm Dv_3=-i\iota_1\vec e_y$. Along the curve the only parameter is $s$, so each component is a real multiple of $\mathrm ds$, and the coefficients of those multiples are *defined* to be $\rho$ and $\tau$.
 
 **Corollary (the two degenerate cases).** If $\rho=0$ on an interval the curve is the straight line through the point in the direction $v_1$, and $\mathrm d\iota_F=0$ there. If $\tau=0$ on an interval the curve lies in the plane spanned by $v_1$ and $v_2$, the **osculating plane**, and $\mathrm d\iota_F$ has no component along $\vec e_x$.
 
@@ -198,7 +198,7 @@ so that the pair $(\rho,\tau)$ is the complete set of invariants of the curve un
 
 ### Example: The Circular Helix
 
-**Example.** Let $x(t)=2\cos t\,\gamma_1+2\sin t\,\gamma_2+t\,\gamma_3$. Then $|dx/dt|^2=5$, and
+**Example.** Let $x(t)=i\bigl(2\cos t\,\vec e_x+2\sin t\,\vec e_y+t\,\vec e_z\bigr)$. Then $|dx/dt|^2=5$, and
 
 $$
 dx/dt\wedge\,d^2x/dt^2=2\sin t\,\vec e_x-2\cos t\,\vec e_y+4\vec e_z,\qquad
@@ -209,8 +209,8 @@ $$
 so that $\rho=2/5$ and $\tau=1/5$. The Frenet frame is
 
 $$
-v_1=\frac{1}{\sqrt5}\bigl(-2\sin t\,\gamma_1+2\cos t\,\gamma_2+\gamma_3\bigr),\qquad
-v_2=-\cos t\,\gamma_1-\sin t\,\gamma_2,\qquad
+v_1=\frac{i}{\sqrt5}\bigl(-2\sin t\,\vec e_x+2\cos t\,\vec e_y+\vec e_z\bigr),\qquad
+v_2=i\bigl(-\cos t\,\vec e_x-\sin t\,\vec e_y\bigr),\qquad
 v_3=v_1\times v_2 ,
 $$
 
@@ -220,7 +220,7 @@ $$
 (X-x)\wedge\frac{\mathrm dx}{\mathrm ds}\wedge\frac{\mathrm d^2x}{\mathrm ds^2}=0 ,
 $$
 
-the binormal being $v_3=(\sin t\,\gamma_1-\cos t\,\gamma_2+2\gamma_3)/\sqrt5$ and the equation of the plane, $X\cdot v_3=x\cdot v_3$, being $2t-2X_3+X_2\cos t-X_1\sin t=0$. The two invariants are constant, as they must be for a curve that is a screw motion of a point, and they agree with the classical values $\rho=a/(a^2+b^2)$ and $\tau=b/(a^2+b^2)$ of a helix of radius $a=2$ and rise $2\pi b$ with $b=1$.
+the binormal being $v_3=i\,(\sin t\,\vec e_x-\cos t\,\vec e_y+2\vec e_z)/\sqrt5$ and the equation of the plane, $X\cdot v_3=x\cdot v_3$, being $2t-2X_3+X_2\cos t-X_1\sin t=0$. The two invariants are constant, as they must be for a curve that is a screw motion of a point, and they agree with the classical values $\rho=a/(a^2+b^2)$ and $\tau=b/(a^2+b^2)$ of a helix of radius $a=2$ and rise $2\pi b$ with $b=1$.
 
 **Proof.** The three displayed identities are the direct computation from $dx/dt=(-2\sin t,2\cos t,1)$, $d^2x/dt^2=(-2\cos t,-2\sin t,0)$, $d^3x/dt^3=(2\sin t,-2\cos t,0)$ with the cross product and the definitions of the exterior product; the square is $(dx/dt\wedge\,d^2x/dt^2)^2=-(4\sin^2t+4\cos^2t+16)=-20$; the trivector is $dx/dt\wedge\,d^2x/dt^2\wedge\,d^3x/dt^3=(dx/dt\cdot(d^2x/dt^2\times\,d^3x/dt^3))i=4i$; and the invariants follow from the formulas of the preceding subsection, and agree with the classical helix values $a/(a^2+b^2)=2/5$ and $b/(a^2+b^2)=1/5$.
 
@@ -234,7 +234,7 @@ $$
 v_1=\frac{x_u}{|x_u|},\qquad v_3=\frac{x_u\times x_v}{|x_u\times x_v|},\qquad v_2=v_3\times v_1 ,
 $$
 
-so that $v_3$ is the unit normal and $(v_1,v_2,v_3)$ is a direct orthonormal frame with $v_1,v_2$ tangent. The frame is $v_k=r\gamma_kr^{\dagger}$ for the rotor $r$ of the next subsection, and its connection is written in the components of the basis of the parameters,
+so that $v_3$ is the unit normal and $(v_1,v_2,v_3)$ is a direct orthonormal frame with $v_1,v_2$ tangent. The frame is $v_k=r(i\vec e_k)r^{\dagger}$ for the rotor $r$ of the next subsection, and its connection is written in the components of the basis of the parameters,
 
 $$
 \iota_j=a_j\,\mathrm du+b_j\,\mathrm dv ,\qquad j=1,2,3 .
@@ -284,7 +284,7 @@ $$
 
 where $\iota_1=a_1\mathrm du+a_2\mathrm dv$ and $\iota_2=b_1\mathrm du+b_2\mathrm dv$ are the first two components of the connection.
 
-**Proof.** Put $k=3$ in the components of the covariant differential: $\mathrm Dv_3=\iota_2\gamma_1-\iota_1\gamma_2$, a tangent vector, so the normal has no component along itself in $\mathrm dv_3$ and the tangent components are $b=b_1\mathrm du+b_2\mathrm dv$ along $v_1$ and $-a$ along $v_2$. With $\mathrm dx=\omega_1v_1+\omega_2v_2$, the interior product gives $\Pi=-\iota_2\omega_1+\iota_1\omega_2$. Setting $\iota_2=-L_{11}\omega_1-L_{12}\omega_2$ and $\iota_1=L_{21}\omega_1+L_{22}\omega_2$, which is what a symmetric $\Pi$ means, and solving the two linear systems for $L_{11},L_{12}$ and $L_{21},L_{22}$ gives the coefficients, and $L_{12}=L_{21}$ is the integrability condition of the next section.
+**Proof.** Put $k=3$ in the components of the covariant differential: $\mathrm Dv_3=i(\iota_2\vec e_x-\iota_1\vec e_y)$, a tangent vector, so the normal has no component along itself in $\mathrm dv_3$ and the tangent components are $b=b_1\mathrm du+b_2\mathrm dv$ along $v_1$ and $-a$ along $v_2$. With $\mathrm dx=\omega_1v_1+\omega_2v_2$, the interior product gives $\Pi=-\iota_2\omega_1+\iota_1\omega_2$. Setting $\iota_2=-L_{11}\omega_1-L_{12}\omega_2$ and $\iota_1=L_{21}\omega_1+L_{22}\omega_2$, which is what a symmetric $\Pi$ means, and solving the two linear systems for $L_{11},L_{12}$ and $L_{21},L_{22}$ gives the coefficients, and $L_{12}=L_{21}$ is the integrability condition of the next section.
 
 ### The Gaussian and the Mean Curvature
 
@@ -343,7 +343,7 @@ $$
 \rho_n=-\rho\sin\alpha,\qquad \rho_g=\rho\cos\alpha,\qquad \tau_r=\tau+\frac{\mathrm d\alpha}{\mathrm ds} .
 $$
 
-**Proof.** Put the three components in the components of the covariant differential. For the second part, the two frames differ by a rotation in the tangent plane: the Frenet frame is obtained from the Darboux frame by the rotation of angle $\alpha$ about $v_1$, and the connection transforms accordingly; comparing the coefficients of $\gamma_3$ in $\mathrm Dv_1$ gives $\rho_n=-\rho\sin\alpha$ and those of $\gamma_2$ gives $\rho_g=\rho\cos\alpha$, while the coefficient of $\gamma_1$ in $\mathrm Dv_2$ gives $\tau_r=\tau+\mathrm d\alpha/\mathrm ds$.
+**Proof.** Put the three components in the components of the covariant differential. For the second part, the two frames differ by a rotation in the tangent plane: the Frenet frame is obtained from the Darboux frame by the rotation of angle $\alpha$ about $v_1$, and the connection transforms accordingly; comparing the coefficients of $i\vec e_z$ in $\mathrm Dv_1$ gives $\rho_n=-\rho\sin\alpha$ and those of $i\vec e_y$ gives $\rho_g=\rho\cos\alpha$, while the coefficient of $i\vec e_x$ in $\mathrm Dv_2$ gives $\tau_r=\tau+\mathrm d\alpha/\mathrm ds$.
 
 ### The Integrability of the Frame
 
@@ -411,11 +411,11 @@ the second term being the differential of the angle of the curve with the first 
 
 ### Example: The Sphere of Radius $r$
 
-**Example.** Let $x(u,v)=r\sin u\cos v\,\gamma_1+r\sin u\sin v\,\gamma_2+r\cos u\,\gamma_3$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=r\,\mathrm d\theta$, $\omega_2=r\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is
+**Example.** Let $x(u,v)=i\,r\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=r\,\mathrm d\theta$, $\omega_2=r\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is
 
 $$
-v_1=\cos\theta\cos\phi\,\gamma_1+\cos\theta\sin\phi\,\gamma_2-\sin\theta\,\gamma_3,\qquad
-v_2=-\sin\phi\,\gamma_1+\cos\phi\,\gamma_2,\qquad
+v_1=i\bigl(\cos\theta\cos\phi\,\vec e_x+\cos\theta\sin\phi\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
+v_2=i\bigl(-\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),\qquad
 v_3=\frac{x}{r},
 $$
 
@@ -437,15 +437,15 @@ the curvature constant and the surface umbilic at every point, and the latitude 
 
 ## Summary
 
-A moving orthonormal frame in the three-dimensional Euclidean space is a rotor $r$ of the real quaternion subspace of $\mathbb{B}$, the frame is $v_k=r\gamma_kr^{\dagger}$, and the whole infinitesimal displacement of the frame is the single $\mathbb{G}_2$-valued one-form
+A moving orthonormal frame in the three-dimensional Euclidean space is a rotor $r$ of the real quaternion subspace of $\mathbb{B}$, the frame is $v_k=r(i\vec e_k)r^{\dagger}$, and the whole infinitesimal displacement of the frame is the single $\mathbb{G}_2$-valued one-form
 
 $$
 \mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1\vec e_x+\iota_2\vec e_y+\iota_3\vec e_z,\qquad
 \mathrm dv_k=r\,\mathrm Dv_k\,r^{\dagger},\qquad
-\mathrm Dv_k=\tfrac12\bigl(\mathrm d\iota\,\gamma_k-\gamma_k\,\mathrm d\iota\bigr),
+\mathrm Dv_k=\tfrac{i}{2}\bigl(\mathrm d\iota\,\vec e_k-\vec e_k\,\mathrm d\iota\bigr),
 $$
 
-with the three components $\mathrm Dv_1=\iota_3\gamma_2-\iota_2\gamma_3$, $\mathrm Dv_2=\iota_1\gamma_3-\iota_3\gamma_1$, $\mathrm Dv_3=\iota_2\gamma_1-\iota_1\gamma_2$.
+with the three components $\mathrm Dv_1=i(\iota_3\vec e_y-\iota_2\vec e_z)$, $\mathrm Dv_2=i(\iota_1\vec e_z-\iota_3\vec e_x)$, $\mathrm Dv_3=i(\iota_2\vec e_x-\iota_1\vec e_y)$.
 
 For a **curve**, the Frenet frame is the frame with $\mathrm dx=\mathrm ds\,v_1$ and $\iota_2=0$; its connection is $\mathrm d\iota_F=\tau\,\mathrm ds\,\vec e_x+\rho\,\mathrm ds\,\vec e_z$, the frame equations being the Frenet equations, and the two invariants are read from the derivatives as $\rho=|dx/dt\wedge\,d^2x/dt^2|/|dx/dt|^3$ and $\tau=i\langle\,dx/dt d^2x/dt^2 d^3x/dt^3\rangle_3/(dx/dt\wedge\,d^2x/dt^2)^2$ in the sign of the exterior product fixed here. The circular helix of curvature $2/5$ and torsion $1/5$ is the worked case.
 
@@ -459,7 +459,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 |---|---|
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Basis of $\mathbb{B}$, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary; the pseudoscalar |
-| $\gamma_\mu=i\vec e_\mu$, $\gamma_\mu^2=e_t$ | Generators of the grade-one subspace |
+| $i\vec e_x,i\vec e_y,i\vec e_z$, $(i\vec e_\mu)^2=e_t$ | Grade-one units |
 | $\mathbb{G}_1,\mathbb{G}_2,\mathbb{G}_3$ | Grades one, two and three |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\mathbb{G}_0\oplus\mathbb{G}_2$ |
 | $[v]$ | The grade-two element of coefficient vector $v$ |
@@ -467,10 +467,10 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 | $a\cdot b=\tfrac12(ab+ba)$ | Interior product on $\mathbb{G}_1$ |
 | $a\wedge[v]=(a\cdot v)i$ | Scalar triple product |
 | $r$, $r^{\dagger}r=e_t$ | Rotor of the frame, $^{\dagger}$ Hermitian conjugation |
-| $v_k=r\gamma_kr^{\dagger}$ | The moving frame |
+| $v_k=r(i\vec e_k)r^{\dagger}$ | The moving frame |
 | $\mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1\vec e_x+\iota_2\vec e_y+\iota_3\vec e_z$ | Affine connection one-form |
 | $\iota_1,\iota_2,\iota_3$ | Its three real one-form components |
-| $\mathrm Dv_k=\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$ | Covariant differential |
+| $\mathrm Dv_k=\tfrac{i}{2}(\mathrm d\iota\vec e_k-\vec e_k\mathrm d\iota)$ | Covariant differential |
 | $\mathrm dv_k=r(\mathrm Dv_k)r^{\dagger}$ | The frame equation |
 | $s$, $\rho$, $\tau$ | Arc length, curvature, torsion |
 | $dx/dt,d^2x/dt^2,d^3x/dt^3$ | Derivatives in a parameter $t$ |
@@ -500,3 +500,15 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 - Manfredo P. do Carmo, *Differential Geometry of Curves and Surfaces* (Prentice-Hall, 1976), for the classical local theory of the Frenet frame, of the two fundamental forms and of the Gauss and Codazzi–Mainardi equations, against which the formulas of this article are read.
 - Wilhelm Klingenberg, *A Course in Differential Geometry* (Springer, 1978), for the moving-frame method and the structure equations of a surface in the classical form.
 - Élie Cartan, *Leçons sur la géométrie des espaces de Riemann* (Gauthier-Villars, Paris, 1928), for the method of moving frames and the connection forms as the general apparatus of which the construction here is the three-dimensional instance.
+
+## Appendix — The Gamma Formulation
+
+The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
+
+$$
+\gamma_\mu=i\vec e_\mu,\qquad \gamma_\mu^2=+e_t,\qquad \gamma_\mu\gamma_\nu=-\gamma_\nu\gamma_\mu\quad(\mu\neq\nu).
+$$
+
+A single product is a grade-two unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$ for $j\neq k$, and the three products are the units $\vec e_x,\vec e_y,\vec e_z$ up to sign.
+
+The dictionary is exact inside $\mathbb{B}$; over $\mathbb{R}$ the three grade-one units generate $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})\cong\mathbb{B}$, and no complexification is needed.
