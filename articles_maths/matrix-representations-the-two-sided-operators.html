@@ -71,9 +71,9 @@
         <h1 id="matrix-representations-the-two-sided-operators"><strong>Matrix Representations : The Two-Sided Operators</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The two-sided operator sends $X$ to $\tilde QX\tilde P$. It is the most general product of a left and a right multiplication, and its matrix is the product of the left and right matrices. The sixteen operators obtained from the four units in each slot form a basis of the whole algebra $M_4(\mathbb{C})$. The basis is orthogonal for the Hilbert–Schmidt form, every basis matrix is invertible, and yet the span contains matrices of every rank.</p>
-<p>This article computes the two-sided family in the two displays. It gives the sixteen basis matrices, their composition, trace, determinant and orthogonality, the coefficient matrix of a general $4\times4$ matrix in this basis, the gamma frame built from five cells, and the cone of products with the rank criterion. It also draws the consequences of the factorization: the parameter map is bilinear with a one-dimensional fibre, so the image is a seven-dimensional cone and not a subspace; the cone is a monoid and not an additive semigroup; under $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ it is the set of pure tensors; and the adjoints, the isometries and the multiplicative members are read from the pair. It is the third of the three articles on the regular operator families; the left family is <em>Matrix Representations : The Left Regular Operators</em> and the right family is <em>Matrix Representations : The Right Regular Operators</em>.</p>
+<p>This article computes the two-sided family in the two displays. It gives the sixteen basis matrices, their composition, trace, determinant and orthogonality, the coefficient matrix of a general $4\times4$ matrix in this basis, the Clifford frame built from five cells, and the cone of products with the rank criterion. It also draws the consequences of the factorization: the parameter map is bilinear with a one-dimensional fibre, so the image is a seven-dimensional cone and not a subspace; the cone is a monoid and not an additive semigroup; under $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ it is the set of pure tensors; and the adjoints, the isometries and the multiplicative members are read from the pair. It is the third of the three articles on the regular operator families; the left family is <em>Matrix Representations : The Left Regular Operators</em> and the right family is <em>Matrix Representations : The Right Regular Operators</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the displays are those of <em>Matrix Representations : The Models and the Change of Frame</em>. The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $B=\mathsf M_2(\tilde Q)$ is its $2\times2$ matrix, with $\det B=\langle\tilde Q\rangle_{\natural}$. The Peirce frame is $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, so that $L_{\tilde Q}=I_2\otimes B$ and $R_{\tilde P}=B_P^{\mathsf T}\otimes I_2$. The coefficient frame is $\mathcal B=(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
-<p><strong>Boundaries.</strong> The operator statements are <em>Two-Sided Operators on the Biquaternion Algebra</em>; the two one-sided families are <em>Matrix Representations : The Left Regular Operators</em> and <em>Matrix Representations : The Right Regular Operators</em>; the frame change is <em>Matrix Representations : The Models and the Change of Frame</em>; the gamma frame in the coefficient display is <em>The Two-Sided Operators and the Spin Group</em>.</p>
+<p><strong>Boundaries.</strong> The operator statements are <em>Two-Sided Operators on the Biquaternion Algebra</em>; the two one-sided families are <em>Matrix Representations : The Left Regular Operators</em> and <em>Matrix Representations : The Right Regular Operators</em>; the frame change is <em>Matrix Representations : The Models and the Change of Frame</em>; the Clifford frame in the coefficient display is <em>The Two-Sided Operators and the Spin Group</em>.</p>
 <h2 id="common-aspects">Common Aspects</h2>
 <h3 id="the-operator">The Operator</h3>
 <p><strong>The definition.</strong>
@@ -322,17 +322,7 @@ $$
 T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1},
 $$
 and they are signed permutation matrices. Conjugation changes the entries and not the algebra: the trace, the determinant, the rank and the orthogonality are unchanged. The coefficient matrix $c(M)$ of a general matrix is the same coordinate matrix in the new basis; the basis vectors change, not the linear map.</p>
-<p><strong>The gamma frame in the coefficient frame.</strong> The five cells become
-$$
-\gamma_\mu^{\mathrm{coef}}=C_{\Pi}\gamma_\mu C_{\Pi}^{-1},
-\qquad
-\{\gamma_\mu^{\mathrm{coef}},\gamma_\nu^{\mathrm{coef}}\}=2g_{\mu\nu}\mathrm I_4,
-\qquad
-(\gamma_5^{\mathrm{coef}})^2=\mathrm I_4,
-\qquad
-\gamma_5^{\mathrm{coef}}\gamma_\mu^{\mathrm{coef}}=-\gamma_\mu^{\mathrm{coef}}\gamma_5^{\mathrm{coef}}.
-$$
-The Clifford relations are frame-independent, because conjugation by $C_{\Pi}$ is an algebra automorphism. The chirality projectors are $P_\pm^{\mathrm{coef}}=C_{\Pi}P_\pm C_{\Pi}^{-1}=\tfrac12(\mathrm I_4\pm\gamma_5^{\mathrm{coef}})$, of rank two. The frame still identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$, and the free pair of spatial directions is still a parameter of the frame, not a choice of notation. This is the display used in <em>The Two-Sided Operators and the Spin Group</em>, where the spin group acts on the coefficient space by conjugation.</p>
+<p><strong>The frame in the coefficient frame.</strong> The five cells of the appendix, conjugated by $C_{\Pi}$, obey the same Clifford relations, because conjugation is an algebra automorphism. The chirality projectors are the conjugates of $P_\pm=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr)$, of rank two. The frame still identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$, and the free pair of spatial directions is still a parameter of the frame, not a choice of notation. This is the display used in <em>The Two-Sided Operators and the Spin Group</em>, where the spin group acts on the coefficient space by conjugation.</p>
 <p><strong>What the coefficient frame adds.</strong> The Peirce frame displays the product structure $B_P^{\mathsf T}\otimes B_Q$ in blocks. The coefficient frame displays the same matrices as signed permutations and makes the Clifford generators directly comparable with the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The two displays are related by $C_{\Pi}$, and neither is preferred by the algebra.</p>
 <h2 id="the-entry-model">The Entry Model</h2>
 <p><strong>The block.</strong> In the Peirce frame the two-sided matrix is
@@ -470,47 +460,8 @@ $$
 T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1},
 $$
 with $C_{\Pi}$ the Peirce change. Conjugation changes the entries and not the algebra; the trace, the determinant, the rank and the orthogonality are unchanged.</p>
-<h3 id="the-gamma-frame">The Gamma Frame</h3>
-<p><strong>The five cells.</strong> In the Peirce frame define
-$$
-\gamma_0=iT_{e_t,e_x},\quad
-\gamma_1=iT_{e_x,e_y},\quad
-\gamma_2=iT_{e_y,e_y},\quad
-\gamma_3=iT_{e_z,e_y},\quad
-\gamma_5=-iT_{e_t,e_z}.
-$$
-In the $2\times2$ evaluation,
-$$
-\gamma_0=\sigma_1\otimes I_2,\qquad
-\gamma_k=i\sigma_2\otimes\sigma_k,\qquad
-\gamma_5=-\sigma_3\otimes I_2 .
-$$</p>
-<p><strong>The Clifford relations.</strong>
-$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
-(\gamma_5)^2=\mathrm I_4,\qquad
-\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
-$$
-with $g=\operatorname{diag}(1,-1,-1,-1)$, and
-$$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
-$$
-The sixteen products of the five are the sixteen cells up to units, so the frame identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$.</p>
-<p><strong>The normal form.</strong> Let $\beta,\delta$ be orthogonal unit spatial directions. Then
-$$
-\gamma_0=iL_{e_t}R_\delta,\qquad
-\gamma_k=iL_{e_k}R_\beta,\qquad
-\gamma_5=iT_{e_t,\beta\delta}
-$$
-satisfy the same relations. The reference frame is $(\beta,\delta)=(e_y,e_x)$. Nothing in the Clifford relations selects the pair: $\beta$ is the common right factor of the three spatial generators, $\delta$ the right factor of the time generator, and $\beta\delta$ the right factor of the pseudoscalar. The free pair is a genuine parameter of the frame, not a choice of notation.</p>
-<p><strong>The chirality projectors.</strong>
-$$
-P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr).
-$$
-In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$, both of rank two. They are single two-sided operators, but not cells: a single product can be singular.</p>
-<p><strong>The left image does not hold the frame.</strong> The left image is block diagonal in the Peirce frame and preserves the two chiral blocks; the four generators exchange them. The Dirac algebra needs the two-sided family.</p>
 <h2 id="summary">Summary</h2>
-<p>The two-sided operator $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ has matrix $B_P^{\mathsf T}\otimes B_Q$ in the Peirce frame, with trace $4Q_tP_t$, determinant $\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2$ and rank the product of the two $2\times2$ ranks. The sixteen basis matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis of $M_4(\mathbb{C})$, orthogonal for the Hilbert–Schmidt form with $\operatorname{Tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, and every one of them is invertible. The coefficient matrix $c(M)$ in this basis is a linear coordinate on $M_4(\mathbb{C})$; for a product it is the rank-one matrix $[Q][P]^{\mathsf T}$, and the length of $M$ is $\operatorname{rank}c(M)$, at most four. The product set is the seven-dimensional cone over the Segre variety. Five cells give a gamma frame whose Clifford relations fix the algebra but not the pair of spatial directions. The parameter map is bilinear with one-dimensional fibres, so the product set is a cone and not a subspace, a monoid and not an additive semigroup; under $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ it is the cone of pure tensors. The Hilbert–Schmidt adjoint is $\mathsf T(\tilde Q,\tilde P)^{\dagger}=\mathsf T(\tilde Q^{*},\tilde P^{*})$ and the plain adjoint is $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$; self-adjointness is $\tilde P=\lambda\tilde Q$, isometry is $\tilde P\tilde Q=\pm e_t$, multiplicativity is $\tilde P=\tilde Q^{-1}$, and the family contains no pin group.</p>
+<p>The two-sided operator $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ has matrix $B_P^{\mathsf T}\otimes B_Q$ in the Peirce frame, with trace $4Q_tP_t$, determinant $\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2$ and rank the product of the two $2\times2$ ranks. The sixteen basis matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis of $M_4(\mathbb{C})$, orthogonal for the Hilbert–Schmidt form with $\operatorname{Tr}(T_{\mu\nu}^{\dagger}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, and every one of them is invertible. The coefficient matrix $c(M)$ in this basis is a linear coordinate on $M_4(\mathbb{C})$; for a product it is the rank-one matrix $[Q][P]^{\mathsf T}$, and the length of $M$ is $\operatorname{rank}c(M)$, at most four. The product set is the seven-dimensional cone over the Segre variety. Five cells give a Clifford frame whose relations fix the algebra but not the pair of spatial directions. The parameter map is bilinear with one-dimensional fibres, so the product set is a cone and not a subspace, a monoid and not an additive semigroup; under $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ it is the cone of pure tensors. The Hilbert–Schmidt adjoint is $\mathsf T(\tilde Q,\tilde P)^{\dagger}=\mathsf T(\tilde Q^{*},\tilde P^{*})$ and the plain adjoint is $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$; self-adjointness is $\tilde P=\lambda\tilde Q$, isometry is $\tilde P\tilde Q=\pm e_t$, multiplicativity is $\tilde P=\tilde Q^{-1}$, and the family contains no pin group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -565,10 +516,6 @@ In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname
 <td>the coefficient column of $\tilde Q$</td>
 </tr>
 <tr>
-<td>$\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$</td>
-<td>the gamma frame</td>
-</tr>
-<tr>
 <td>$\beta,\delta$</td>
 <td>the free orthogonal pair of the frame</td>
 </tr>
@@ -590,9 +537,50 @@ In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the operator statements</li>
 <li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the plain adjoint and the one-sided identities</li>
 <li><a href="the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator : A Worked Computation</a>, for a full computation</li>
-<li><a href="the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>, for the gamma frame and the spin group</li>
+<li><a href="the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>, for the spin group in the coefficient frame</li>
 <li><a href="the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html">The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</a>, for the finite group of cells</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.</p>
+<p><strong>The five cells.</strong> In the Peirce frame define
+$$
+\gamma_0=iT_{e_t,e_x},\quad
+\gamma_1=iT_{e_x,e_y},\quad
+\gamma_2=iT_{e_y,e_y},\quad
+\gamma_3=iT_{e_z,e_y},\quad
+\gamma_5=-iT_{e_t,e_z}.
+$$
+In the $2\times2$ evaluation,
+$$
+\gamma_0=\sigma_1\otimes I_2,\qquad
+\gamma_k=i\sigma_2\otimes\sigma_k,\qquad
+\gamma_5=-\sigma_3\otimes I_2 .
+$$</p>
+<p><strong>The Clifford relations.</strong>
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
+(\gamma_5)^2=\mathrm I_4,\qquad
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
+$$
+with $g=\operatorname{diag}(1,-1,-1,-1)$, and
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
+$$
+The sixteen products of the five are the sixteen cells up to units, so the frame identifies the span with $\mathrm{Cl}_{1,3}(\mathbb{C})$ and with $M_4(\mathbb{C})$.</p>
+<p><strong>The normal form.</strong> Let $\beta,\delta$ be orthogonal unit spatial directions. Then
+$$
+\gamma_0=iL_{e_t}R_\delta,\qquad
+\gamma_k=iL_{e_k}R_\beta,\qquad
+\gamma_5=iT_{e_t,\beta\delta}
+$$
+satisfy the same relations. The reference frame is $(\beta,\delta)=(e_y,e_x)$. Nothing in the Clifford relations selects the pair: $\beta$ is the common right factor of the three spatial generators, $\delta$ the right factor of the time generator, and $\beta\delta$ the right factor of the pseudoscalar. The free pair is a genuine parameter of the frame, not a choice of notation.</p>
+<p><strong>The chirality projectors.</strong>
+$$
+P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr).
+$$
+In the reference frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$, both of rank two. They are single two-sided operators, but not cells: a single product can be singular.</p>
+<p><strong>The left image does not hold the frame.</strong> The left image is block diagonal in the Peirce frame and preserves the two chiral blocks; the four generators exchange them. The Dirac algebra needs the two-sided family.</p>
+<p>Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>
