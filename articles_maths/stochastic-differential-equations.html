@@ -147,7 +147,7 @@ $$</p>
 <p>$$
 dX_t = \Bigl(b(X_t)-\tfrac12\sigma'(X_t)\sigma(X_t)\Bigr)dt+\sigma(X_t)\circ dB_t ,
 $$</p>
-<p>and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma^j_k\partial/\partial x_j\,\sigma^i_k$ in the $i$-th component.</p>
+<p>and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma_{jk}\,\partial/\partial x_j\,\sigma_{ik}$ in the $i$-th component.</p>
 <p><em>Proof.</em> Apply the Stratonovich chain rule to $\sigma(X_t)$ and substitute the Itô equation: the cross variation $\langle\sigma(X),B\rangle_t=\int\sigma'\sigma\,ds$ produces the drift correction, and the equivalence follows.</p>
 <p><strong>Remark (which calculus to use).</strong> The Itô form is the one in which the generator, the martingale property and the martingale problem are stated, and it is the form in which the theory is proved. The Stratonovich form is the one in which the equation is written when the noise is a limit of smooth processes, and the one in which the transformation rules of differential geometry apply; for a stochastic flow of diffeomorphisms, the Stratonovich equation is the one whose solutions depend smoothly on the initial datum. The two are equivalent, and the conversion rule above is the dictionary.</p>
 <h2 id="existence-uniqueness-and-the-martingale-problem">Existence, Uniqueness and the Martingale Problem</h2>
