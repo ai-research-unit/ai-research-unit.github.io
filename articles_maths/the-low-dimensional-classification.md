@@ -161,25 +161,19 @@ $$
 
 the last identification being the standard isomorphism of the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$ with the complex $2\times2$ matrices, understood over $F=\mathbb{R}$, where the hypothesis on $-1$ holds. When $-1$ is a square in $F$ the volume element can be rescaled to square $+1$, the centre becomes $F\times F$, and the algebra splits; the split entries of the table below then apply.
 
-This is the algebra of: $M_2(\mathbb{C})$ is also $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}=\mathbb{B}$. The identification is made explicit by the quaternion units. Writing $\gamma_k$ for the generators of $\mathrm{Cl}_{3,0}$ and $e_k$ for the quaternion units of $\mathbb{B}$, the map
+This is the algebra of: $M_2(\mathbb{C})$ is also $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}=\mathbb{B}$. The identification is made explicit by the quaternion units. Writing $e_k$ for the quaternion units of $\mathbb{B}$, the assignment of the generators of $\mathrm{Cl}_{3,0}$ to $ie_k$, $k=1,2,3$, is an algebra isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$: indeed $(ie_k)^2=i^2e_k^2=(-1)(-1)=+1$ and the elements $ie_k$ anticommute, while both algebras are eight-dimensional over $\mathbb{R}$ and isomorphic to $M_2(\mathbb{C})$. Under this identification the quaternion units themselves are the bivectors, with, in the quaternion convention $e_1e_2=e_3$ of the category,
 
 $$
-\gamma_k\longmapsto ie_k \qquad (k=1,2,3)
-$$
-
-is an algebra isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$: indeed $(ie_k)^2=i^2e_k^2=(-1)(-1)=+1$ and the images anticommute, while both algebras are eight-dimensional over $\mathbb{R}$ and isomorphic to $M_2(\mathbb{C})$. Under this identification the quaternion units themselves are the bivectors, with, in the quaternion convention $e_1e_2=e_3$ of the category,
-
-$$
-\gamma_2\gamma_3\longmapsto(ie_2)(ie_3)=-e_2e_3=-e_1, \qquad e_1=-\gamma_2\gamma_3,
+(ie_2)(ie_3)=-e_2e_3=-e_1, \qquad e_1=-(ie_2)(ie_3),
 $$
 
 and cyclically; the even subalgebra of $\mathrm{Cl}_{3,0}$ is a copy of $\mathbb{H}$:
 
 $$
-\mathrm{Cl}^0_{3,0}=\operatorname{span}\{1,\gamma_1\gamma_2,\gamma_2\gamma_3,\gamma_3\gamma_1\}\cong\mathbb{H}.
+\mathrm{Cl}^0_{3,0}=\operatorname{span}\{1,(ie_1)(ie_2),(ie_2)(ie_3),(ie_3)(ie_1)\}\cong\mathbb{H}.
 $$
 
-The volume element $\omega=\gamma_1\gamma_2\gamma_3$ maps to $i^3e_1e_2e_3=(-i)(-1)=i$, since $e_1e_2e_3=e_3e_3=-1$ in the quaternion convention of the category, so under the identification the volume element is the central scalar imaginary of $\mathbb{B}$.
+The volume element is the product of the three generators, $\omega=(ie_1)(ie_2)(ie_3)=i^3e_1e_2e_3=(-i)(-1)=i$, since $e_1e_2e_3=e_3e_3=-1$ in the quaternion convention of the category; it is the central scalar imaginary of $\mathbb{B}$.
 
 **The mixed cases.** $\mathrm{Cl}_{1,2}$ and $\mathrm{Cl}_{2,1}$ are obtained by the same matrix method or from the graded tensor product:
 
@@ -286,7 +280,7 @@ Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and
 
 ## Summary
 
-The Clifford algebras of small non-degenerate quadratic forms are computed directly. In one dimension the sign of the form decides everything: $\mathrm{Cl}_{1,0}\cong F\times F=\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$. In two dimensions the negative definite form gives the quaternion algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, while $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(F)$ are split and isomorphic to one another. In three dimensions $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$ is the complex $2\times2$ matrix algebra, identified with the biquaternion algebra $\mathbb{B}$ through the generators $\gamma_k\mapsto ie_k$; $\mathrm{Cl}_{1,2}$ is the same matrix algebra; and the two algebras with a central volume element of square $+1$, namely $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ and $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, split into two factors.
+The Clifford algebras of small non-degenerate quadratic forms are computed directly. In one dimension the sign of the form decides everything: $\mathrm{Cl}_{1,0}\cong F\times F=\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$. In two dimensions the negative definite form gives the quaternion algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, while $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(F)$ are split and isomorphic to one another. In three dimensions $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$ is the complex $2\times2$ matrix algebra, identified with the biquaternion algebra $\mathbb{B}$ through the assignment of its generators to $ie_k$; $\mathrm{Cl}_{1,2}$ is the same matrix algebra; and the two algebras with a central volume element of square $+1$, namely $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ and $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, split into two factors.
 
 The even subalgebra of $\mathrm{Cl}(V,\mathfrak{Q})$ is again a Clifford algebra, with rank reduced by one, whenever a generator of square $-1$ is available; this recursion is the computational origin of the classification and is the reason the pattern is periodic rather than merely multiplicative.
 
@@ -311,7 +305,7 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 | $\omega=e_1\cdots e_n$ | Volume element of an orthogonal basis |
 | $\omega^2=(-1)^{N(N-1)/2}\mathfrak{Q}(e_1)\cdots \mathfrak{Q}(e_N)$ | Square of the volume element |
 | $\pi_{1,2}=\tfrac12(1\pm e)$ | Idempotents of $\mathrm{Cl}_{1,0}$ |
-| $\gamma_k$ | Generators of $\mathrm{Cl}_{3,0}$, with $\gamma_k\mapsto ie_k$ in $\mathbb{B}$ |
+| $e_k$ | Quaternion units of $\mathbb{B}$; the generators of $\mathrm{Cl}_{3,0}$ are $ie_k$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices, $\sigma_k^2=I$, $\sigma_j\sigma_k=-\sigma_k\sigma_j$ |
 
 
@@ -325,3 +319,15 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for explicit low-dimensional identifications and the Pauli-matrix model.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the algebra of quadratic spaces and the role of the discriminant in the low-dimensional classification.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for the behaviour of the classification under base change.
+
+## Appendix — The Gamma Formulation
+
+The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, $\gamma_k\mapsto ie_k$, $k=1,2,3$: the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_k\mapsto ie_k,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_j\gamma_k\mapsto-e_je_k .
+$$
+
+The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

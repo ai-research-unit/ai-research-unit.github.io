@@ -12,7 +12,7 @@ This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a 
 $$
 \flat^2 = +1
 $$
-on the algebra: the framework's conjugation is an involution with the $+$ sign, not the $-$ sign of four-dimensional spin geometry. Four-dimensional Euclidean spin geometry's charge conjugation has $J^2=-1$ in the appropriate normalisation, and this too was verified on explicit gamma matrices. The framework's $\flat$ is therefore **not** the triple's real structure on its own; obtaining $J^2=-1$ requires the module's quaternionic (right) structure, which is exactly the framework's statement that the Clifford algebra is $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
+on the algebra: the framework's conjugation is an involution with the $+$ sign, not the $-$ sign of four-dimensional spin geometry. Four-dimensional Euclidean spin geometry's charge conjugation has $J^2=-1$ in the appropriate normalisation, and this too was verified on the Euclidean frame's cells. The framework's $\flat$ is therefore **not** the triple's real structure on its own; obtaining $J^2=-1$ requires the module's quaternionic (right) structure, which is exactly the framework's statement that the Clifford algebra is $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
 
 3. **The spectral dimension is four, and the framework's metric-as-output is the spectral triple's distance formula read backwards.** The triple's dimension is read from the eigenvalue growth of $D$: if the eigenvalues grow like $n^{1/d}$, the triple has dimension $d$. For the biquaternion Dirac operator on four-dimensional spacetime — that is, for the almost-commutative triple, the finite factor alone having spectral dimension zero — the growth is linear and the spectral dimension is four; the same Seeley–DeWitt data that control the heat-kernel coefficients of *The Functional Determinant in Biquaternionic Form* and *The Trace Anomaly in Biquaternionic Form* control this growth, and the two articles' $a_{d/2}$ and the triple's dimension are two interpretations of one heat kernel. The framework's claim that the Minkowski signature is an *output* of the level-1 form read on the material sector is the same shape of statement as the spectral triple's claim that the distance is an output of $D$: in both cases the geometric data is extracted from the algebraic one.
 
@@ -103,7 +103,11 @@ $$
 $$
 The framework's real structure is therefore an antilinear **involution** with $\epsilon=+1$. This was verified on explicit matrices and is quoted in the established list below.
 
-**The standard four-dimensional sign.** For comparison, four-dimensional Euclidean spin geometry's charge conjugation $C$ satisfies $C\gamma_\mu C^{-1}=\pm(\gamma_\mu)^T$ and $C^2=-1$ in the standard normalisation, so the associated antilinear $J$ has $\epsilon=-1$. This was also verified, on the standard Hermitian Euclidean generators with $C=\gamma_2\gamma_4$. The two signs differ, and the difference is not a convention: it is the difference between a real structure and a quaternionic one.
+**The standard four-dimensional sign.** For comparison, four-dimensional Euclidean spin geometry's charge conjugation $C$ satisfies $CE_\mu C^{-1}=\pm(E_\mu)^T$ and $C^2=-1$ in the standard normalisation, so the associated antilinear $J$ has $\epsilon=-1$. The verification uses the Euclidean frame, which is the reference frame of the appendix with the three spatial generators multiplied by $i$ so that all four square to $+1$ and with the timelike generator numbered fourth:
+$$
+E_4=iT_{e_t,e_x},\qquad E_k=-T_{e_k,e_y}\quad(k=1,2,3),
+$$
+where $T_{a,b}\psi=a\psi b$ is the cell of the two-sided action. All four are Hermitian and pairwise anticommuting, and the charge conjugation is the cell $C=E_2E_4=-iT_{e_y,e_z}$, for which $C^2=-1$ and $CE_\mu C^{-1}=\pm(E_\mu)^T$ with the sign depending on the index. The two signs differ, and the difference is not a convention: it is the difference between a real structure and a quaternionic one.
 
 **The reconciliation, and what it requires.** Obtaining $\epsilon=-1$ from the framework requires combining $\flat$ with the module's **quaternionic** structure. The framework's module carries a right action by the quaternions (equivalently, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, as the conventions article records), and composing $\flat$ with a right multiplication by a quaternion unit supplies the missing minus: a purely central factor cannot do it, since composition with a central phase leaves $\epsilon=+1$, whereas the quaternionic right action can. The framework's own statement of this is the isomorphism $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$: the module is quaternionic, and it is the quaternionic structure, not the central circle, that supplies the $J^2=-1$ of four-dimensional spin geometry.
 
@@ -193,7 +197,7 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 
 - The biquaternion candidate triple: algebra $\mathbb{B}_{\mathbb{R}}$ (or $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$), Hilbert space the completion of $\Delta=S\oplus S^{\mathrm{c}}$ under the framework's plain form, operator $\mathcal{D}=\tilde\nabla+D_F$; the Hilbert space and the operator are the series' own objects and no new structure is introduced.
 - The framework's real structure satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit quaternion matrices, so $\epsilon=+1$.
-- Four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$: verified on the Hermitian Euclidean generators $\gamma_k=\left(\begin{smallmatrix}0&\sigma_k\\ \sigma_k&0\end{smallmatrix}\right)$, $\gamma_4=\mathrm{diag}(I_2,-I_2)$ with $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}I_4$, $(\gamma_5)^2=I_4$, where $C=\gamma_2\gamma_4$ gives $C^2=-I_4$ exactly and $C\gamma_5C^{-1}=\gamma_5$, with $C\gamma_\mu C^{-1}$ equal to $\pm(\gamma_\mu)^T$ — the sign depending on the index and on the representation, as it does in the standard normalisations. The framework's sign $\epsilon=+1$ and this $\epsilon=-1$ differ, and the difference requires the module's quaternionic structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) rather than the central circle: composition with a central phase leaves $\epsilon=+1$.
+- Four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$: verified in the cell frame on the Euclidean frame $E_4=iT_{e_t,e_x}$, $E_k=-T_{e_k,e_y}$, four Hermitian cells with $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}I_4$ and $E_\mu^2=I_4$, whose chirality, the product $E_1E_2E_3E_4=-iT_{e_t,e_z}$, satisfies $(E_1E_2E_3E_4)^2=I_4$; the charge conjugation $C=E_2E_4=-iT_{e_y,e_z}$ gives $C^2=-I_4$ exactly and commutes with that product, with $CE_\mu C^{-1}$ equal to $\pm(E_\mu)^T$ — the sign depending on the index and on the realisation, as it does in the standard normalisations. The block realisation of the same algebra — the off-diagonal $\sigma_k$ blocks and $\mathrm{diag}(I_2,-I_2)$ — has the same property, with the minus on the fourth index. The framework's sign $\epsilon=+1$ and this $\epsilon=-1$ differ, and the difference requires the module's quaternionic structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) rather than the central circle: composition with a central phase leaves $\epsilon=+1$.
 - The gradient part of the commutator of $\mathcal{D}$ with a left multiplication is the zeroth-order left multiplication $L_{\tilde\nabla a}$, hence bounded. For the vector-like regular-module candidate the right-multiplication copy flip commutes with the left action, so the first-order condition $[[\mathcal{D},L_a],R_b]=0$ holds exactly. For the chiral triple, $[D_F,L_a]$ is nonzero and the condition is not checked here.
 - The series' off-diagonal mass is a finite Dirac operator: $D_F=\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$ on $\Delta=S\oplus S^{\mathrm{c}}$ anticommutes with the chirality $\chi=\mathrm{diag}(-I_2,I_2)$ and satisfies $D_F^2=|m|^2I$ with eigenvalues $\pm|m|$; both verified (anticommutator exactly $0$, square to $1.1\times10^{-16}$). The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
 - The finite algebra's module $\Delta$ is four-complex-dimensional and its finite triple has spectral dimension zero; a dimension-four triple requires the almost-commutative algebra and a first-order elliptic operator. The spectral dimension and the heat-kernel coefficient $a_{d/2}$ are two interpretations of one small-$t'$ expansion.
@@ -248,6 +252,10 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 | $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra $\mathbb{B}_{\mathbb{R}}$, finite Hilbert space $\Delta$, finite Dirac operator (the off-diagonal mass) |
 | $D=D_M\otimes I_F+\chi\otimes D_F$ | Product geometry of an almost-commutative triple |
 | $L_a,R_b$ | Left and right multiplication; $[L_a,R_b]=0$ |
+| $T_{a,b}=L_aR_b$ | Cell of the two-sided action, $T_{a,b}\psi=a\psi b$; $T_{a,b}T_{c,d}=T_{ac,db}$ |
+| $E_4=iT_{e_t,e_x}$, $E_k=-T_{e_k,e_y}$ | Euclidean frame in cells, four Hermitian generators with $E_\mu^2=+1$ |
+| $C=E_2E_4=-iT_{e_y,e_z}$ | Euclidean charge conjugation; $C^2=-1$, $CE_\mu C^{-1}=\pm(E_\mu)^T$ |
+| $E_1E_2E_3E_4=-iT_{e_t,e_z}$ | Euclidean chirality; its square is $+1$ |
 
 ## Further Reading
 
@@ -261,3 +269,17 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 - N. Berline, E. Getzler, and M. Vergne, *Heat Kernels and Dirac Operators* (Springer, 1992), for the Dirac operator's spectrum and the index-theoretic structure.
 - D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* **388** (2003) 279–360, for the Seeley–DeWitt expansion shared with the determinant and anomaly articles.
 - Companion articles: [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the heat-kernel coefficients and the Seeley–DeWitt data; [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html), for the same data in its conformal interpretation; [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), for the spinor module and the Dirac operator; [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the Hilbert-space structure the triple requires; [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the real structure $\flat$, the quaternionic isomorphism $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, and the three metric levels.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -22,36 +22,36 @@ The algebra and its four conjugations are from *The Biquaternion Algebra*; the s
 
 ### The Generators and the Volume Element
 
-Let $V=\mathbb{R}^{3}$ with the positive definite form $Q=\operatorname{diag}(1,1,1)$, and let $\gamma_{1},\gamma_{2},\gamma_{3}$ be the Clifford generators:
+Let $V=\mathbb{R}^{3}$ with the positive definite form $Q=\operatorname{diag}(1,1,1)$, and let $\eta_{1},\eta_{2},\eta_{3}$ be an orthonormal frame of $V$, the Clifford generators:
 
 $$
-\gamma_{\mu}^{2}=1, \qquad \gamma_{\mu}\gamma_{\nu}+\gamma_{\nu}\gamma_{\mu}=0 \quad (\mu\neq\nu).
+\eta_{\mu}^{2}=1, \qquad \eta_{\mu}\eta_{\nu}+\eta_{\nu}\eta_{\mu}=0 \quad (\mu\neq\nu).
 $$
 
 The volume element is
 
 $$
-\omega=\gamma_{1}\gamma_{2}\gamma_{3}, \qquad \omega^{2}=-1,
+\omega=\eta_{1}\eta_{2}\eta_{3}, \qquad \omega^{2}=-1,
 $$
 
 and it is central because the dimension is odd. The isomorphism of *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*, is
 
 $$
-\gamma_{\mu}\longmapsto i\vec e_{\mu},
+\eta_{\mu}\longmapsto i\vec e_{\mu},
 $$
 
 where $\vec e_{x},\vec e_{y},\vec e_{z}$ are the quaternion units and $i$ is the central scalar imaginary of $\mathbb{B}$. Under it,
 
 $$
-\omega=\gamma_{1}\gamma_{2}\gamma_{3}\longmapsto i^{3}\vec e_{x}\vec e_{y}\vec e_{z}=i,
+\omega=\eta_{1}\eta_{2}\eta_{3}\longmapsto i^{3}\vec e_{x}\vec e_{y}\vec e_{z}=i,
 $$
 
 so the central imaginary unit of the biquaternions **is** the volume element. The inverse images of the quaternion units are the bivectors
 
 $$
-\vec e_{x}\longmapsto-\gamma_{2}\gamma_{3}, \qquad
-\vec e_{y}\longmapsto-\gamma_{3}\gamma_{1}, \qquad
-\vec e_{z}\longmapsto-\gamma_{1}\gamma_{2}.
+\vec e_{x}\longmapsto-\eta_{2}\eta_{3}, \qquad
+\vec e_{y}\longmapsto-\eta_{3}\eta_{1}, \qquad
+\vec e_{z}\longmapsto-\eta_{1}\eta_{2}.
 $$
 
 ### The Grades of the Biquaternion Components
@@ -69,11 +69,11 @@ of dimensions $1,3,3,1$. The biquaternion basis is read on it as follows.
 | scalar part $Q_{t}e_{t}$ | $0$ | $e_{t}$ |
 | vector part $\vec Q$ (real coefficients) | $2$ | $\vec e_{x}$ |
 | imaginary scalar $iQ_{t}$ | $3$ | $i=\omega$ |
-| imaginary vector $i\vec Q$ | $1$ | $i\vec e_{x}=\gamma_{1}$ |
+| imaginary vector $i\vec Q$ | $1$ | $i\vec e_{x}=\eta_{1}$ |
 
 A general biquaternion has complex coefficients, so it has components in all four grades: the real part of the scalar is grade $0$, the imaginary part of the scalar is grade $3$, the real part of the vector is grade $2$, and the imaginary part of the vector is grade $1$. The complex structure $i=\omega$ acts as the Hodge star on the grades, exchanging $0\leftrightarrow3$ and $1\leftrightarrow2$, which is the content of *The Volume Element, Duality and the Hodge Star*, §*The Biquaternion Case*.
 
-**Remark.** The biquaternion norm $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ is the determinant of the matrix algebra $M_{2}(\mathbb{C})$, not the Clifford quadratic form. The Clifford form is $Q(\gamma_{\mu})=+1$ on the generators, while the quaternion units have square $-1$. The two forms are related by the identification $\gamma_{\mu}=i\vec e_{\mu}$ and the sign $i^{2}=-1$; the norm governs invertibility, and the Clifford form governs the grade structure. This is the sign dictionary of *The Number Systems as Clifford Algebras*, §*The Dictionary*.
+**Remark.** The biquaternion norm $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ is the determinant of the matrix algebra $M_{2}(\mathbb{C})$, not the Clifford quadratic form. The Clifford form is $Q(\eta_{\mu})=+1$ on the generators, while the quaternion units have square $-1$. The two forms are related by the identification $\eta_{\mu}=i\vec e_{\mu}$ and the sign $i^{2}=-1$; the norm governs invertibility, and the Clifford form governs the grade structure. This is the sign dictionary of *The Number Systems as Clifford Algebras*, §*The Dictionary*.
 
 ## The Eigenvalue Decomposition
 
@@ -290,10 +290,10 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
-| $\gamma_{\mu}$ | the Clifford generators of $\mathrm{Cl}_{3,0}$, $\gamma_{\mu}^{2}=1$ |
-| $\omega=\gamma_{1}\gamma_{2}\gamma_{3}$ | the volume element, $\omega^{2}=-1$, central |
+| $\eta_{\mu}$ | an orthonormal frame of $V$, the Clifford generators of $\mathrm{Cl}_{3,0}$, $\eta_{\mu}^{2}=1$ |
+| $\omega=\eta_{1}\eta_{2}\eta_{3}$ | the volume element, $\omega^{2}=-1$, central |
 | $i=\omega$ | the central scalar imaginary of $\mathbb{B}$ |
-| $\vec e_{x},\vec e_{y},\vec e_{z}$ | the quaternion units, the bivectors $-\gamma_{\nu}\gamma_{\rho}$ |
+| $\vec e_{x},\vec e_{y},\vec e_{z}$ | the quaternion units, the bivectors $-\eta_{\nu}\eta_{\rho}$ |
 | $\tilde Q=Q_{t}e_{t}+\vec Q$ | a biquaternion, with $\vec Q=Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z}$ |
 | $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ | the square of the vector norm |
 | $\vec U=\vec Q/B$ | the unit bivector |
@@ -309,3 +309,15 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
 - The biquaternion articles of this corpus: *The Biquaternion Algebra*, *The Spectrum*, *Idempotents*, and *The Peirce Decomposition of the Biquaternion Algebra*.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the matrix model.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
+
+$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$
+
+The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu$ for $\mu=1,2,3$ and $\omega=\gamma_1\gamma_2\gamma_3$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

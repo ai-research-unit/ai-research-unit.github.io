@@ -10,16 +10,16 @@ The article spends the tools of *The Dual-Number Quadratic Family* and of *The F
 
 ### The Fibre Map Is the Derivative
 
-**Theorem (the cocycle).** Let $x_n = g_\gamma_n(x_0)$ and $y_{n+1} = 2x_ny_n+\delta$ be the two coordinates of the orbit. Then the homogeneous solution is the derivative of the real iterate,
+**Theorem (the cocycle).** Let $x_n = g_{\gamma_n}(x_0)$ and $y_{n+1} = 2x_ny_n+\delta$ be the two coordinates of the orbit. Then the homogeneous solution is the derivative of the real iterate,
 
 $$
-\prod_{k=0}^{n-1} 2x_k = (g_\gamma_n)'(x_0) ,
+\prod_{k=0}^{n-1} 2x_k = (g_{\gamma_n})'(x_0) ,
 $$
 
 and the general solution is
 
 $$
-\boxed{\; y_n = (g_\gamma_n)'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
+\boxed{\; y_n = (g_{\gamma_n})'(x_0)\,y_0 + \delta \sum_{k=0}^{n-1} \prod_{j=k+1}^{n-1} 2x_j \;}.
 $$
 
 **Proof.** The chain rule gives $(g^n)'(x_0) = \prod_{k=0}^{n-1} g'(x_k) = \prod_{k=0}^{n-1} 2x_k$. The affine recursion has the homogeneous solution $\prod 2x_k$ and the particular solution obtained by the variation of constants, which is the displayed sum.
@@ -29,13 +29,13 @@ $$
 **Definition.** The **multiplier** of a periodic orbit $x_0, \ldots, x_{p-1}$ of period $p$ of $g_\gamma$ is
 
 $$
-\boxed{\; \lambda = (g_\gamma_p)'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
+\boxed{\; \lambda = (g_{\gamma_p})'(x_0) = \prod_{k=0}^{p-1} 2x_k \;},
 $$
 
 and the **Lyapunov exponent** of an orbit with respect to an invariant measure $\mu$ is
 
 $$
-\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_\gamma_n)'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
+\chi = \lim_{n \to \infty} \frac{1}{n}\log|(g_{\gamma_n})'(x_0)| = \frac{1}{p}\log|\lambda| \ \text{ for a periodic orbit} = \int \log|2x|\,d\mu \ \text{ in general}.
 $$
 
 **Theorem (what the infinitesimal dynamics reports).** On a periodic orbit of period $p$ the infinitesimal coordinate is multiplied by the multiplier in one period,
@@ -72,16 +72,16 @@ so the Fatou and the Julia sets of the dual map are the vertical cylinders over 
 
 ## Summary
 
-The infinitesimal coordinate of the dual quadratic map evolves by $y \mapsto 2xy+\delta$, and the homogeneous part of its $n$-th iterate is the derivative $(g_\gamma_n)'(x_0)$ of the real iterate: the infinitesimal dynamics **is** the derivative cocycle. Within one period it multiplies the coordinate by the real multiplier $\lambda = (g_\gamma_p)'(x_0)$, so the attracting, parabolic and repelling characters of the real cycles are read on the dual coordinate, and along a typical orbit the growth rate is the Lyapunov exponent $\chi = \int\log|2x|\,d\mu$. The Fatou and Julia sets of the dual map are the vertical cylinders over the real ones, $F(f_c) = \pi^{-1}(F(g_\gamma))$ and $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$: the dual Julia set is a union of vertical lines, of Hausdorff dimension $\dim_H J(g_\gamma)+1$ in the Euclidean metric and of dimension $\dim_H J(g_\gamma)$ in the infinitesimal reading. There is therefore no genuinely infinitesimal Julia set and no second fractal dimension from the dual coordinate. The complex derivative cocycle, whose multiplier carries a rotation that the real cocycle cannot see, is that of *The Fatou Components and the Classification of the Dynamics*, and the parabolic and shear interpretation of the dual numbers is that of *Shears and Parabolic Rotations*.
+The infinitesimal coordinate of the dual quadratic map evolves by $y \mapsto 2xy+\delta$, and the homogeneous part of its $n$-th iterate is the derivative $(g_{\gamma_n})'(x_0)$ of the real iterate: the infinitesimal dynamics **is** the derivative cocycle. Within one period it multiplies the coordinate by the real multiplier $\lambda = (g_{\gamma_p})'(x_0)$, so the attracting, parabolic and repelling characters of the real cycles are read on the dual coordinate, and along a typical orbit the growth rate is the Lyapunov exponent $\chi = \int\log|2x|\,d\mu$. The Fatou and Julia sets of the dual map are the vertical cylinders over the real ones, $F(f_c) = \pi^{-1}(F(g_\gamma))$ and $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$: the dual Julia set is a union of vertical lines, of Hausdorff dimension $\dim_H J(g_\gamma)+1$ in the Euclidean metric and of dimension $\dim_H J(g_\gamma)$ in the infinitesimal reading. There is therefore no genuinely infinitesimal Julia set and no second fractal dimension from the dual coordinate. The complex derivative cocycle, whose multiplier carries a rotation that the real cocycle cannot see, is that of *The Fatou Components and the Classification of the Dynamics*, and the parabolic and shear interpretation of the dual numbers is that of *Shears and Parabolic Rotations*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $x_n = g_\gamma_n(x_0)$ | Real part of the orbit, the base dynamics |
+| $x_n = g_{\gamma_n}(x_0)$ | Real part of the orbit, the base dynamics |
 | $y_{n+1} = 2x_ny_n+\delta$ | Infinitesimal coordinate, the fibre recursion |
-| $\prod_{k=0}^{n-1}2x_k = (g_\gamma_n)'(x_0)$ | The derivative cocycle |
-| $\lambda = (g_\gamma_p)'(x_0)$ | Multiplier of a periodic orbit (real) |
+| $\prod_{k=0}^{n-1}2x_k = (g_{\gamma_n})'(x_0)$ | The derivative cocycle |
+| $\lambda = (g_{\gamma_p})'(x_0)$ | Multiplier of a periodic orbit (real) |
 | $\chi = \int\log\lvert 2x\rvert\,d\mu$ | Lyapunov exponent |
 | $F(f_c) = \pi^{-1}(F(g_\gamma))$ | Fatou set, the vertical cylinder over the real one |
 | $J(f_c) = J(g_\gamma)\times\mathbb{R}\varepsilon$ | Julia set, the vertical cylinder over the real one |

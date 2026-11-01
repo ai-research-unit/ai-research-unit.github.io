@@ -22,7 +22,7 @@ H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA_0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
 
-where $\vec p = -i\hbar\vec\nabla$, $A_0$ is the electrostatic potential, and we have used $(\mathsf C_0)^2 = T_{e_t,e_t}$. In the Dirac representation the matrices are
+where $\vec p = -i\hbar\vec\nabla$, $A_0$ is the electrostatic potential, and we have used $(\mathsf C_0)^2 = T_{e_t,e_t}$. In the Dirac basis the matrices are
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},

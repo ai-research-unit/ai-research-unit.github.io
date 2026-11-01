@@ -15,13 +15,13 @@ The article is the classical local theory, in three dimensions, in the biquatern
 
 ### The Subspaces the Frame Uses
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the central scalar imaginary $i$, and the quaternion units of square $-e_t$, $\vec e_\mu^2=-e_t$, so that the Clifford generators are the grade-one units $i\vec e_\mu$, with
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the central scalar imaginary $i$, and the quaternion units of square $-e_t$, $\vec e_\mu^2=-e_t$, so that the Clifford generators are the grade-one units $i\vec e_\mu$ of *The Number Systems as Clifford Algebras*, which satisfy
 
 $$
-(i\vec e_\mu)^2=+e_t,\qquad (i\vec e_\mu)(i\vec e_\nu)=-(i\vec e_\nu)(i\vec e_\mu)\quad(\mu\neq\nu),
+(i\vec e_\mu)^2=+e_t,\qquad (i\vec e_\mu)(i\vec e_\nu)=-(i\vec e_\nu)(i\vec e_\mu)\quad(\mu\neq\nu).
 $$
 
-by *The Number Systems as Clifford Algebras*. Write $\mathbb{G}_1=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ for the **grade-one subspace** and $\mathbb{G}_2=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ for the **grade-two subspace**; the real scalars are $\mathbb{G}_0=\mathbb{R}e_t$ and the pseudoscalar line is $\mathbb{G}_3=\mathbb{R}i$.
+Write $\mathbb{G}_1=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ for the **grade-one subspace** and $\mathbb{G}_2=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ for the **grade-two subspace**; the real scalars are $\mathbb{G}_0=\mathbb{R}e_t$ and the pseudoscalar line is $\mathbb{G}_3=\mathbb{R}i$.
 
 | Grade | Subspace | Basis | Role here |
 |---|---|---|---|
@@ -317,7 +317,7 @@ Moreover, the third coefficient of the structure equation of the next section re
 
 **Proof.** The eigenvalues of a $2\times2$ symmetric matrix are the displayed ones, so the product is the determinant and half the sum the half-trace. For the formula in the connection, substitute the coefficients of the preceding theorem: expanding $(b_2A_2-b_1B_2)(a_2A_1-a_1B_1)-(b_1B_1-b_2A_1)(a_1B_2-a_2A_2)$ in the numerator of $L_{11}L_{22}-L_{12}^2$ cancels in pairs and leaves $\Delta_0\,(a_1b_2-a_2b_1)$, so $K=(a_1b_2-a_2b_1)/\Delta_0$. For the dependence on the metric alone, the structure equation of the next section has third coefficient $\partial/\partial v\,c_1-\partial/\partial u\,c_2=a_1b_2-a_2b_1$, so that $K$ is the same ratio with the derivatives of the $c$'s above the line, and the first two integrability conditions determine $c_1,c_2$ from the coframe alone with the non-vanishing determinant $\Delta_0$; hence $K$ is computable from the first fundamental form alone, which is Gauss's theorem. Its general Riemannian form is *Curvature and Geodesics*.
 
-**Remark (the sign of the curvatures).** The convention is the one fixed by $\mathrm Dv_3=-K\,\mathrm dx$ in the frame, equivalently by the shape operator $S=-\mathrm dN$, which is the standard one: the mean curvature of the sphere of radius $r$ with the *outward* normal is $-1/r$ and its Gaussian curvature is $+1/r^2$. The Gaussian curvature is unchanged by the choice of normal, the mean curvature changes sign with it.
+**Remark (the sign of the curvatures).** The convention is the one fixed by $\mathrm dv_3=-\bigl(\omega_1(L_{11}v_1+L_{12}v_2)+\omega_2(L_{12}v_1+L_{22}v_2)\bigr)$ in the frame, which at an umbilic reads $\mathrm dv_3=-K_1\,\mathrm dx$, equivalently by the shape operator $S=-\mathrm dN$ of *The Shape Operator*, which is the standard one: the mean curvature of the sphere of radius $R$ with the *outward* normal is $-1/R$ and its Gaussian curvature is $+1/R^2$. The Gaussian curvature is unchanged by the choice of normal, the mean curvature changes sign with it.
 
 ### The Darboux Frame Along a Curve on the Surface
 
@@ -409,14 +409,14 @@ the second term being the differential of the angle of the curve with the first 
 
 **Remark (the second form or the first).** The curvature lines and the asymptotic lines are distinguished by the **second** fundamental form — the directions that diagonalise it, and the directions in which it vanishes — while the geodesics are distinguished by the **first** alone, being the curves whose geodesic curvature, which is read from the connection and the metric, vanishes. This is why the two families through a non-umbilic point always exist, why a pair of asymptotic directions exists only where $K\le0$, and why a geodesic exists through every point in every direction.
 
-### Example: The Sphere of Radius $r$
+### Example: The Sphere of Radius $R$
 
-**Example.** Let $x(u,v)=i\,r\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=r\,\mathrm d\theta$, $\omega_2=r\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is
+**Example.** Let $x(u,v)=i\,R\bigl(\sin u\cos v\,\vec e_x+\sin u\sin v\,\vec e_y+\cos u\,\vec e_z\bigr)$, with $u=\theta$ the polar angle and $v=\phi$ the azimuth. Then $\omega_1=R\,\mathrm d\theta$, $\omega_2=R\sin\theta\,\mathrm d\phi$, and the frame of the two subsections above is
 
 $$
 v_1=i\bigl(\cos\theta\cos\phi\,\vec e_x+\cos\theta\sin\phi\,\vec e_y-\sin\theta\,\vec e_z\bigr),\qquad
 v_2=i\bigl(-\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),\qquad
-v_3=\frac{x}{r},
+v_3=\frac{x}{R},
 $$
 
 the rotor of the frame is $r=\exp(\tfrac12\phi\,\vec e_z)\exp(\tfrac12\theta\,\vec e_y)$ in the sense of the exponential series of the real quaternions, and the connection is
@@ -428,12 +428,12 @@ $$
 Hence $a_1=0$, $a_2=-\sin\theta$, $b_1=1$, $b_2=0$, $c_1=0$, $c_2=\cos\theta$, and
 
 $$
-K=\frac{1}{r^2},\qquad H=-\frac{1}{r},
+K=\frac{1}{R^2},\qquad H=-\frac{1}{R},
 $$
 
 the curvature constant and the surface umbilic at every point, and the latitude circle of polar angle $\theta_0$ has geodesic curvature $\rho_g=\cot\theta_0$, vanishing at the equator, which is the great circle.
 
-**Proof.** The frame is the sandwich of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=r^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
+**Proof.** The frame is the sandwich of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
 
 ## Summary
 
@@ -451,7 +451,7 @@ For a **curve**, the Frenet frame is the frame with $\mathrm dx=\mathrm ds\,v_1$
 
 For a **surface**, the frame has $v_3$ normal, the coframe $\omega_1,\omega_2$ gives the first fundamental form $\mathrm ds^2=\omega_1^2+\omega_2^2$, and the second fundamental form is $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, whose coefficients are the $a$'s and $b$'s of the connection. Its determinant and its half-trace are the Gaussian and the mean curvature, $K=L_{11}L_{22}-L_{12}^2$, $H=\tfrac12(L_{11}+L_{22})$, and the Gaussian curvature is the ratio of the determinants of the connection and of the coframe, $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$, a function of the first fundamental form alone: this is the theorema egregium in the moving frame.
 
-Along a curve on the surface the frame is the Darboux frame, whose three components are the relative torsion, the normal curvature and the geodesic curvature, $\iota_1=\tau_r\mathrm ds$, $\iota_2=-\rho_n\mathrm ds$, $\iota_3=\rho_g\mathrm ds$, related to the Frenet invariants by $\rho_n=-\rho\sin\alpha$, $\rho_g=\rho\cos\alpha$ and $\tau_r=\tau+\mathrm d\alpha/\mathrm ds$. The frame is integrable exactly when the structure equation $\partial/\partial v\,\iota_1-\partial/\partial u\,\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ hold, the Gauss and Codazzi–Mainardi equations of the classical theory. The curvature lines are the directions making the second fundamental form diagonal, $\tan2\Phi=2L_{12}/(L_{11}-L_{22})$; the asymptotic lines are the directions of vanishing normal curvature, real exactly where $K\le0$; and the geodesics are the curves whose geodesic curvature vanishes, $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$. On the sphere of radius $r$ the frame, the connection and the curvatures are computed explicitly, $K=1/r^2$ and $H=-1/r$, the surface is umbilic, and a latitude circle has geodesic curvature $\cot\theta_0$.
+Along a curve on the surface the frame is the Darboux frame, whose three components are the relative torsion, the normal curvature and the geodesic curvature, $\iota_1=\tau_r\mathrm ds$, $\iota_2=-\rho_n\mathrm ds$, $\iota_3=\rho_g\mathrm ds$, related to the Frenet invariants by $\rho_n=-\rho\sin\alpha$, $\rho_g=\rho\cos\alpha$ and $\tau_r=\tau+\mathrm d\alpha/\mathrm ds$. The frame is integrable exactly when the structure equation $\partial/\partial v\,\iota_1-\partial/\partial u\,\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ hold, the Gauss and Codazzi–Mainardi equations of the classical theory. The curvature lines are the directions making the second fundamental form diagonal, $\tan2\Phi=2L_{12}/(L_{11}-L_{22})$; the asymptotic lines are the directions of vanishing normal curvature, real exactly where $K\le0$; and the geodesics are the curves whose geodesic curvature vanishes, $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$. On the sphere of radius $R$ the frame, the connection and the curvatures are computed explicitly, $K=1/R^2$ and $H=-1/R$, the surface is umbilic, and a latitude circle has geodesic curvature $\cot\theta_0$.
 
 ## Summary of Notation
 
@@ -481,6 +481,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 | $A_1,B_1,A_2,B_2$, $\Delta_0$ | Coefficients of the coframe and their determinant |
 | $L_{11},L_{12},L_{22}$ | Second fundamental form in the frame |
 | $\Pi=-\mathrm Dv_3\cdot\mathrm dx$ | Second fundamental form |
+| $K_1,K_2$ | Principal curvatures, the eigenvalues of $\Pi$ |
 | $K=L_{11}L_{22}-L_{12}^2$, $H=\tfrac12(L_{11}+L_{22})$ | Gaussian and mean curvature |
 | $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$ | Gauss, in the frame |
 | $\tau_r,\rho_n,\rho_g$ | Relative torsion, normal curvature, geodesic curvature |
@@ -489,6 +490,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 | $\tan2\Phi=2L_{12}/(L_{11}-L_{22})$ | Curvature lines |
 | $\tan\Phi=(-L_{12}\pm\sqrt{L_{12}^2-L_{11}L_{22}})/L_{22}$ | Asymptotic lines |
 | $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$ | Geodesics |
+| $R$ | Radius of the sphere of the worked example |
 
 ## Further Reading
 

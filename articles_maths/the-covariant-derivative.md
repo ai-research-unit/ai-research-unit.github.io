@@ -124,7 +124,7 @@ $$
 
 where $V$ is the parallel section with $V(a) = v$.
 
-**Theorem.** The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma_{-1}} = P_\gamma_{-1}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the **holonomy group**, and its identity component is the holonomy group of the connection.
+**Theorem.** The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma_{-1}} = P_{\gamma_{-1}}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the **holonomy group**, and its identity component is the holonomy group of the connection.
 
 *Proof.* Linearity and invertibility are the linearity of the equation and the reversibility of the curve. Reparametrisation invariance is the chain rule, which replaces $d\gamma/dt$ by a positive multiple and leaves the equation's solution set unchanged. The concatenation and inverse laws are the uniqueness of the solution of the initial-value problem applied to the two subintervals and to the reversed curve. The group laws follow, and the closed curves at a fixed base give a subgroup of the linear group of the fibre, which is a Lie subgroup because the transport depends smoothly on the curve.
 

@@ -31,7 +31,7 @@ $$
 \qquad \alpha = 1,2,3,
 $$
 
-with $[\tilde{S}_\alpha^{(i)},\tilde{S}_\beta^{(j)}] = i\hbar\,\delta_{ij}\,\epsilon_{\alpha\beta\gamma}\tilde{S}_\gamma_{(i)}$. The **collective spin** is the sum over the particles,
+with $[\tilde{S}_\alpha^{(i)},\tilde{S}_\beta^{(j)}] = i\hbar\,\delta_{ij}\,\epsilon_{\alpha\beta\gamma}\tilde{S}_{\gamma(i)}$. The **collective spin** is the sum over the particles,
 
 $$
 \tilde S_{\mathrm{tot},\alpha} = \sum_{i=1}^N \tilde{S}_\alpha^{(i)},

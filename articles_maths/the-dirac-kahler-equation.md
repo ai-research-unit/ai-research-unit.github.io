@@ -77,13 +77,13 @@ so that every component of the multivector field satisfies the Klein–Gordon eq
 The equivalence to four Dirac equations is proved by an explicit change of basis. Define the matrix-valued form
 
 $$
-Z_{ab} = \sum_H (-1)^{h(h-1)/2}\,(\gamma_H)^T_{ab}\, dx_H ,
+Z_{ab} = \sum_H (-1)^{h(h-1)/2}\,(c_H)^T_{ab}\, dx_H ,
 $$
 
-in which $(\gamma_H)_{ab}$ are the products of the Dirac matrices indexed by $H$ and $h$ is the degree of $H$. The matrix $Z$ is constructed so that
+in which $c_H$ is the product of the generator cells indexed by $H$ and $h$ is the degree of $H$. The generator cells are $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$, with $T_{a,b}\psi=a\psi b$, and $c_H$ is a single cell up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
 
 $$
-dx_\mu \vee Z = \gamma_\mu^T Z ,
+dx_\mu \vee Z = c_\mu^T Z ,
 $$
 
 which decomposes the Clifford product into **four irreducible copies** of the Dirac algebra: in this basis the product only mixes the column indices $a$. Writing the field in the new basis,
@@ -95,7 +95,7 @@ $$
 the Dirac–Kähler equation becomes four Dirac equations, one for each value of the unimpaired index $b$,
 
 $$
-\boxed{\;\left(\sum_\mu\gamma_\mu\partial/\partial x_\mu + m\right)\Psi(x)_b = 0\;} .
+\boxed{\;\left(\sum_\mu c_\mu\,\partial/\partial x_\mu + m\right)\Psi(x)_b = 0\;} .
 $$
 
 Thus in flat space of signature $(1,3)$ the sixteen components of the multivector arrange into four four-component spinors, and the four copies transform into one another under the Lorentz group. The mechanism is an **internal symmetry** $\mathrm{SO}(2,4)$ acting on the multivector; its parameters are tensors rather than scalars, and it does not commute with the Lorentz transformations. Consequently the Lorentz group does not act independently on the four Dirac fields: it mixes components of different degrees, and the two-component fields are not strict half-integer representations of the Clifford algebra but coherent superpositions of forms of different degree. In $2^{2^n}$ dimensions the equation is equivalent to $2^{2^{n-1}}$ Dirac equations; in particular it is the four-dimensional case $d=4=2^2$ that gives the factor four used above.
@@ -152,7 +152,7 @@ This containment does not turn the Dirac–Kähler equation into a biquaternion 
 
 The Dirac–Kähler equation $(d-\delta+m)\Phi=0$ is the geometric analogue of the Dirac equation: it is an equation for a multivector field, defined on any pseudo-Riemannian manifold by the exterior calculus alone. The Laplace–de Rham operator $d-\delta$ is a square root of the Laplacian, $(d-\delta)^2=\square$, and the equation therefore implies the Klein–Gordon equation $(\square-m^2)\Phi=0$ componentwise. Equipping the exterior algebra with the Clifford product $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu + \delta_{\mu\nu}$ makes $d-\delta$ the Clifford multiplication $\sum_\mu dx_\mu\vee\partial/\partial x_\mu$.
 
-In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\gamma_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the gauge field through $\sum_\mu dx_\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
+In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the gauge field through $\sum_\mu dx_\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
 
 ## Summary of Notation
 
@@ -164,7 +164,8 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\g
 | $\square$ | Laplace–de Rham (Laplace–Beltrami) operator |
 | $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu+\delta_{\mu\nu}$ | Clifford product on forms |
 | $Z_{ab}$ | Basis change to four Dirac copies |
-| $\gamma_H$ | Products of Dirac matrices indexed by $H$ |
+| $c_\mu$ | Generator cells $c_0=iT_{e_t,e_x}$, $c_k=iT_{e_k,e_y}$, with $T_{a,b}\psi=a\psi b$ |
+| $c_H$ | Product of the generator cells indexed by $H$; one cell up to a phase |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
 | $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |
 | $\Delta,\nabla,\hat\Delta,\hat\nabla$ | Boundary, coboundary and their duals |
@@ -181,3 +182,17 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(\g
 - S. I. Kruglov, "Dirac–Kähler equation," *International Journal of Theoretical Physics* **41** (2002) 653–687, for a review of the algebraic structure and the Lorentz mixing.
 - I. Montvay and G. Münster, *Quantum Fields on a Lattice* (Cambridge University Press, 1994), chapter 4, for the lattice construction in the standard notation.
 - The companion articles of this series: [Dirac Differential Operators](dirac-differential-operators.html), [Geometric Calculus and the Vector Derivative](geometric-calculus-and-the-vector-derivative.html), [The Volume Element, Duality and the Hodge Star](the-volume-element-duality-and-the-hodge-star.html), *Peirce Carriers and Inner Conjugation*, and [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

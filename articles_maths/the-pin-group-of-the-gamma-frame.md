@@ -241,6 +241,8 @@ $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
+In the real-linear frame, in which the body writes, the same five are $\gamma_0=\bar{\cdot}$, $\gamma_k=\bar{\cdot}\circ L_{-ie_k}$ for $k=1,2,3$, and $\gamma_5=R_{-ie_z}=-iL_tR_z$: the four vectors are antilinear there, and the cells above are their complex-linear form.
+
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.

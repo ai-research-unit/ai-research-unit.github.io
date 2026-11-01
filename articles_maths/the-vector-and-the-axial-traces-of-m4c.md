@@ -18,7 +18,7 @@ This article computes the two traces, proves the identity
 $$
 \operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5},
 $$
-identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame cells, written $iT_{tx},iT_{xy},iT_{yy},iT_{zy}$ with the pseudoscalar $T_{tz}$, and the $\mathsf{M}_4$ map are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
+identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame cells $iT_{tx},iT_{xy},iT_{yy},iT_{zy}$ and the pseudoscalar cell $-iT_{tz}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
 ## The Real-Linear Embedding
 
@@ -55,7 +55,7 @@ $$
 \operatorname{tr}\mathsf{M}_4(a)=4a_0,\qquad
 \operatorname{tr}\bigl((-iT_{tz})\mathsf{M}_4(a)\bigr)=0,
 $$
-because the trace of every graded cell other than $I$ and $T_{tz}$ is zero, and $(-iT_{tz})$ times a bivector product is again a bivector product, also traceless.
+because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$, so the functional $\operatorname{tr}\bigl((-iT_{tz})\,\cdot\bigr)$ reads only the $T_{tz}$ coordinate, and $\mathsf{M}_4(a)$ has none.
 
 **The imaginary part.** For the imaginary quaternion $ia'$,
 $$

@@ -38,7 +38,7 @@ $$
 u = \mathcal{D}(j)v, \qquad \mathcal{D}(k)u = u, \qquad \mathcal{D}(k)v = -v .
 $$
 
-The two spinors are therefore the two eigenvectors of $\mathcal{D}(k)$ with eigenvalues $+1$ and $-1$, and $\mathcal{D}(j)$ exchanges them. In the Dirac representation and the coordinate system
+The two spinors are therefore the two eigenvectors of $\mathcal{D}(k)$ with eigenvalues $+1$ and $-1$, and $\mathcal{D}(j)$ exchanges them. In the Dirac basis and the coordinate system
 
 $$
 u = (1,0,0,0)^{\mathsf T}, \quad v = (0,0,i,0)^{\mathsf T}, \quad k_\mu = (1,0,0,0), \quad j_\mu = (0,0,0,-1),

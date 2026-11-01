@@ -206,7 +206,7 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 | $\tilde Q\tilde{Q}^{*}$ | Hermitian form of $\mathbb{B}$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\sum_\mu Q_{1\bar{\mu}}Q_{2\mu}$ | Complex inner product on $\mathbb{B}$ |
 | $\pi_{1,2}=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{D}$ |
-| $i\vec e_\mu$ | The Clifford generators of $\mathrm{Cl}_{3,0}$, the image of the isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$ |
+| $i\vec e_\mu$ | The images of the three Clifford generators under the isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$ |
 | $Sp(1)$ | Unit quaternions, $\cong SU(2)\cong\mathrm{Spin}(3)$ |
 | $\mathrm{U}(1)$ | Unit complex numbers, $\cong\mathrm{Spin}(2)$ |
 | $\mathbb{O}$ | Octonions, a composition algebra but not associative, hence not a Clifford algebra |

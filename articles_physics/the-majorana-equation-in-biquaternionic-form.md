@@ -23,7 +23,7 @@ $$
 \mathsf C_{k}=iT_{e_k,e_y},\qquad k=1,2,3,
 $$
 
-with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $T_{a,b}=L_aR_b$; with $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $\{\mathsf C_{\mu},\mathsf C_{\nu}\}=2g_{\mu\nu}T_{e_t,e_t}$. The chirality operator is $\Gamma=\mathsf C_5=-iT_{e_t,e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=i\psi^{*}$. The d'Alembertian is the series convention
+with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $T_{a,b}=L_aR_b$; with $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $\{\mathsf C_{\mu},\mathsf C_{\nu}\}=2g_{\mu\nu}T_{e_t,e_t}$. The chirality operator is $\Gamma=\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-iT_{e_t,e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=i\psi^{*}$. The d'Alembertian is the series convention
 
 $$
 \Box=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2,
@@ -102,7 +102,7 @@ r_{2}=T_{e_z,e_x},\qquad
 r_{3}=-T_{e_z,e_z}.
 $$
 
-Each cell is real; $r_{0}$ is antisymmetric with $(r_{0})^{2}=-T_{e_t,e_t}$ and $r_{1},r_{2},r_{3}$ are symmetric with $(r_{k})^{2}=+T_{e_t,e_t}$; and the four anticommute in pairs, so that $\{r_{\mu},r_{\nu}\}=2\mathring\eta_{\mu\nu}T_{e_t,e_t}$. In this representation the Dirac operator $i\sum_\mu r_\mu\partial/\partial Q_\mu$ has real matrix coefficients, its massless part preserves the real subspace of real four-component spinors, and a solution of the massless equation can be chosen **purely real**; with a real mass term through the charge conjugation the massive solutions are the Majorana spinors. This is the sense in which the Majorana equation is "the Dirac equation written so that it has purely real solutions", the first of the three standard forms.
+Each cell is real; $r_{0}$ is antisymmetric with $(r_{0})^{2}=-T_{e_t,e_t}$ and $r_{1},r_{2},r_{3}$ are symmetric with $(r_{k})^{2}=+T_{e_t,e_t}$; and the four anticommute in pairs, so that $\{r_{\mu},r_{\nu}\}=2\mathring\eta_{\mu\nu}T_{e_t,e_t}$. In this representation the Dirac operator $i\sum_\mu r_\mu\partial/\partial Q_\mu$ has real entries, its massless part preserves the real subspace of real four-component spinors, and a solution of the massless equation can be chosen **purely real**; with a real mass term through the charge conjugation the massive solutions are the Majorana spinors. This is the sense in which the Majorana equation is "the Dirac equation written so that it has purely real solutions", the first of the three standard forms.
 
 **Why the corpus's signature does not have it, and what replaces it.** In the mostly-minus signature the algebra is quaternionic and no representation with all generators real exists; that is the algebraic reason the corpus works with a complex Dirac module and an antilinear real structure $\mathcal{C}$ rather than with real spinors. The two pictures are the two normalisations of one structure, exchanged by the volume element, and the companion *Real Spinors and Reality Conditions* records that the roles of the two signs are exchanged in the two conventions. A reader comparing a "real" Majorana spinor in one signature with a "self-conjugate" Majorana spinor in the other is comparing the two normalisations, and the comparison must state which is in force. The framework's own carrier of the reality is the antilinear $\mathcal{C}$ of the previous subsection.
 
@@ -184,7 +184,7 @@ Every solution of the Majorana equation, in either eigenspace, obeys the massive
 
 The counting is the sharpest difference between the Majorana and Dirac equations, and it is a statement about the field rather than about a single plane wave.
 
-**A single plane wave is not self-conjugate.** For a plane wave $\psi=u\,\exp(-ip\cdot x)$ one has $\psi^{c}=u^{c}\exp(+ip\cdot x)$, so the condition $\psi^{c}=\psi$ for all $x$ forces $p=0$ and, at rest in the block basis, the only solution of the combined system is $u=0$. The self-conjugate object is not a single mode but the **field**
+**A single plane wave is not self-conjugate.** For a plane wave $\psi=u\,\exp(-ip\cdot x)$ one has $\psi^{c}=u^{c}\exp(+ip\cdot x)$, so the condition $\psi^{c}=\psi$ for all $x$ forces $p=0$ and, at rest in chiral blocks, the only solution of the combined system is $u=0$. The self-conjugate object is not a single mode but the **field**
 
 $$
 \psi(x)\;=\;u\,\exp(-ip\cdot x)\;+\;u^{c}\,\exp(+ip\cdot x),
@@ -222,7 +222,7 @@ which satisfies $\psi^{c}=\psi$ and the Dirac equation when $u$ does. This is th
 
 2. **The status of the ELKO sector.** The $-1$ eigenspace is a genuine real form of the module and is on the mass shell, but it is not a Dirac solution and its mass term has the opposite sign. Whether it is a physical sector, a spurion, or an artefact of writing the involution in a basis with both signs, is open.
 
-3. **The normalisation of the real form.** The real representation of $\mathrm{Cl}_{3,1}$ given above is one of several; whether the framework should fix a canonical representative, in the way it fixes the block basis for the complex case, is an authorial decision that belongs with the conventions.
+3. **The normalisation of the real form.** The real representation of $\mathrm{Cl}_{3,1}$ given above is one of several; whether the framework should fix a canonical representative, in the way it fixes the chiral block decomposition for the complex case, is an authorial decision that belongs with the conventions.
 
 4. **The continuum square root.** The identity $W_RW_L=\Box$ is an operator identity on differentiable fields. Whether the two-component Majorana operator, as an unbounded operator on a Hilbert space, admits the corresponding self-adjoint square-root theory in the sense of the companion articles on semigroups and evolution equations, is not treated here.
 
@@ -279,6 +279,6 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ ($\chi^2=e_t$, not an element of $\mathbb{B}$) is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

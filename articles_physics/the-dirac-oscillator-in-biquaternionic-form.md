@@ -40,7 +40,7 @@ The right-hand side is a spacelike cell, linear in $x$: the non-minimal term is 
 
 ## Reduction to Two-Component Equations
 
-Write the four-spinor as a pair of two-spinors, $\psi = (\phi,\chi)^{\mathsf T}$, and use the Dirac representation
+Write the four-spinor as a pair of two-spinors, $\psi = (\phi,\chi)^{\mathsf T}$, and use the Dirac basis
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
@@ -237,7 +237,7 @@ so that $\mathcal{Q}^\dagger \mathcal{Q} = \vec p^2 + m^2\omega^2\vec r^2 - 3m\h
 
 ## Summary
 
-The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. In the Dirac representation the equation reduces to the coupled pair
+The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. In the Dirac basis the equation reduces to the coupled pair
 
 $$
 (E-mc^2)\phi = c\,\boldsymbol\sigma\cdot(\vec p+im\omega\vec r)\chi,

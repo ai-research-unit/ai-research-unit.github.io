@@ -98,7 +98,7 @@ $$
 \tau(1) = 1, \qquad \tau(\vec e_x) = -\vec e_x, \qquad \tau(\vec e_y) = \vec e_y, \qquad \tau(\vec e_z) = \vec e_z,
 $$
 
-and on a general element it reads $\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. That $\tau$ is an anti-automorphism, $(\tilde q_1\tilde q_2)_{\tau} = \tilde q_2_{\tau}\tilde q_1_{\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is
+and on a general element it reads $\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. That $\tau$ is an anti-automorphism, $(\tilde q_1\tilde q_2)_{\tau} = \tilde q_{2\tau}\tilde q_{1\tau}$, is inherited from the transpose of matrices; it can also be checked on the three products that generate the algebra. Its fixed space is
 
 $$
 \{\tilde q : \tilde q_{\tau} = \tilde q\} = \operatorname{span}\{1, \vec e_y, \vec e_z\},
@@ -127,7 +127,7 @@ which is the algebra's name for $XX^{T}$ and which is symmetric and positive def
 **Definition.** Let $\tilde q \in \mathbb{H}_{\mathrm{s}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar decomposition** of $\tilde q$ is the writing
 
 $$
-\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{s}},\quad \tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1,
+\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{s}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{s}},\quad \tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1,
 $$
 
 in which $r$ is the **modulus**, $b$ the **unit boost** and $\tilde u_{\mathrm r}$ the **orthogonal factor**.
@@ -187,7 +187,7 @@ $$
 and it is orthogonal in the algebra's transpose sense. Indeed
 
 $$
-\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = \tilde q_{\tau}P^{-1}P^{-1}\tilde q = \tilde q_{\tau}(PP)^{-1}\tilde q = \tilde q_{\tau}(\tilde q\tilde q_{\tau})^{-1}\tilde q ,
+\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = \tilde q_{\tau}P^{-1}P^{-1}\tilde q = \tilde q_{\tau}(PP)^{-1}\tilde q = \tilde q_{\tau}(\tilde q\tilde q_{\tau})^{-1}\tilde q ,
 $$
 
 and the last expression is the identity, because $(\tilde q\tilde q_{\tau})^{-1} = (\tilde q_{\tau})^{-1}\tilde q^{-1}$ and the middle factors cancel. Its determinant is
@@ -202,7 +202,7 @@ so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the 
 
 **Theorem.** Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar decomposition.
 
-*Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.
+*Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.
 
 *Uniqueness.* Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.
 
@@ -276,7 +276,7 @@ with $\theta$ the rotation angle and the exponent $\theta/2$ read modulo $2\pi$;
 
 ### The Reflection Component
 
-Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{s}}$ with $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is
+Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{s}}$ with $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is
 
 $$
 \tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\,\vec e_y ,
@@ -284,7 +284,7 @@ $$
 
 with the same angle convention. The element $\vec e_y$ is the fixed reflection, and the factorisation is unique for the same reason the rotation form is: the angle is read off from the rotation part and the discrete factor is then determined. The reflection is therefore the discrete part of the orthogonal factor and the angle is its continuous part.
 
-The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$ of unit quaternions. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$ and is an element of the sphere $\mathrm{Sp}(1)$ of unit quaternions, which is connected. The indefiniteness of $\langle\cdot\rangle_{\natural}$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
+The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$ of unit quaternions. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$ and is an element of the sphere $\mathrm{Sp}(1)$ of unit quaternions, which is connected. The indefiniteness of $\langle\cdot\rangle_{\natural}$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
 
 ## Worked Examples
 
@@ -388,7 +388,7 @@ in which $b$ is the unique symmetric positive definite element with $b_{\tau} = 
 | $r = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |
 | $b = P/r$ | the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$ |
 | $\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$ | the boost subspace, symmetric traceless images |
-| $\tilde u_{\mathrm r} = P^{-1}\tilde q$ | the orthogonal factor, $\tilde u_{\mathrm r}_{\tau}\tilde u_{\mathrm r} = 1$, $\det \tilde u_{\mathrm r} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$ |
+| $\tilde u_{\mathrm r} = P^{-1}\tilde q$ | the orthogonal factor, $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, $\det \tilde u_{\mathrm r} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$ |
 | timelike, spacelike, lightlike | $N > 0$, $N < 0$, $N = 0$ |
 
 ## Further Reading

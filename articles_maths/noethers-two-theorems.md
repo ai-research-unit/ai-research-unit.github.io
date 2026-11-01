@@ -253,10 +253,10 @@ $$
 
 and substitution gives $m^2\sum_\nu\partial/\partial x_\nu(A_\nu+\partial/\partial x_\nu B) - m^2\sum_\nu\partial/\partial x_\nu(A_\nu+\partial/\partial x_\nu B) - \sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}$, which vanishes by the same antisymmetry as before.
 
-**The rigid current and the correction term.** The rigid subgroup, the shift of $B$, has the first-theorem current $j_\mu_{(B)} = L_{\mu B}\,b_B = -m^2(A_\mu+\partial/\partial x_\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement
+**The rigid current and the correction term.** The rigid subgroup, the shift of $B$, has the first-theorem current $j_{\mu(B)} = L_{\mu B}\,b_B = -m^2(A_\mu+\partial/\partial x_\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement
 
 $$
-j_\mu_{(B)} + \sum_\nu a_{A_\nu\mu}E_{A_\nu} = -m^2\bigl(A_\mu+\partial/\partial x_\mu B\bigr) + \bigl(\sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu} + m^2(A_\mu+\partial/\partial x_\mu B)\bigr) = \sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu},
+j_{\mu(B)} + \sum_\nu a_{A_\nu\mu}E_{A_\nu} = -m^2\bigl(A_\mu+\partial/\partial x_\mu B\bigr) + \bigl(\sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu} + m^2(A_\mu+\partial/\partial x_\mu B)\bigr) = \sum_\lambda\partial/\partial x_\lambda F_{\lambda\mu},
 $$
 
 whose divergence vanishes identically by the antisymmetry of $F$. So the second-theorem identity is exactly the statement that the rigid current, corrected by the term proportional to the other equation, is divergence-free **off shell**; on shell the correction term vanishes and the first theorem's conservation law stands alone.

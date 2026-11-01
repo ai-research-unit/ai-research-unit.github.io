@@ -49,7 +49,7 @@ the field theories on the arena are **non-local** — the same shift that remove
 Field operators are split into plane waves and recombined; the product of two operators becomes the **Moyal product** of the corresponding functions,
 
 $$
-A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_2_\nu\right) A(x)B(x_2)\Big|_{x_2=x},
+A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu}\right) A(x)B(x_2)\Big|_{x_2=x},
 $$
 
 the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the **quadratic (kinetic) terms of an action are unchanged** by the deformation, because the $\theta$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at **cubic and higher order in the fields** — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.
@@ -343,7 +343,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\Lambda_{NC}$, $\epsilon_{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\theta_{\mu\nu}=\epsilon_{\mu\nu}/\Lambda_{NC}^2$ |
 | $\theta_i$ | Three-vector of the deformation, $\theta_i=\tfrac12\epsilon_{ijk}\theta_{jk}$, $\theta_{i4}=0$ |
 | $[x_\mu,x_\nu]=i\theta_{\mu\nu}$ | The defining commutator; the corpus's "$ict'$" convention is kept for time |
-| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_2_\nu)$ |
+| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu})$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |
 | $\vec D,\vec H$ | Displacement and magnetic fields; $\vec D=\vec E+\vec d$, $\vec H=\vec B+\vec h$ |

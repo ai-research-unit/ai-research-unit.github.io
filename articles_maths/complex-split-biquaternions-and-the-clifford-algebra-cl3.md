@@ -235,13 +235,15 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 
 ## Appendix — The Gamma Formulation
 
-The gammas are the Hermitian generators $\gamma_\mu=iE_\mu=i\,j\vec e_\mu$ of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the literature frame of the same algebra, not a different algebra.
+The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
 
-On the two summands the generator is a left multiplication, a cell with a trivial right multiplier:
 $$
-\gamma_\mu=T_{-i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_x,\qquad \gamma_\mu=T_{i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_y ,
+\gamma_\mu=iE_\mu=i\,j\vec e_\mu,\qquad
+\gamma_\mu\gamma_\nu=-E_\mu E_\nu,\qquad
+\gamma_1\gamma_2\gamma_3=ij .
 $$
-with $T_{a,b}\psi=a\psi b$ and $T_{a,e_t}=L_a$.
+
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one cell of the two-sided family $L_aR_b$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
 

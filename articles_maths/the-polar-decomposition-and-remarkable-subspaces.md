@@ -86,7 +86,7 @@ Because the four exponents lie in the four blocks and the four blocks add to the
 
 ## The Blocks and the Four Grades
 
-Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\vec e_k$ (*Subspaces and Decompositions*, §*Remarkable Subspaces and the Coordinate Blocks*), the four blocks are the four Clifford grades.
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ in which $i\vec e_x,i\vec e_y,i\vec e_z$ are the three generators (*Subspaces and Decompositions*, §*Remarkable Subspaces and the Coordinate Blocks*), the four blocks are the four Clifford grades.
 
 | block | $A_1$ | $B_2$ | $B_1$ | $A_2$ |
 |---|---|---|---|---|
@@ -100,22 +100,22 @@ Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\
 Two of the four exponents carry an axis, and the Clifford reading names the grade of each axis. The boost exponent is the Clifford vector
 
 $$
-i\tfrac{\psi}{2}\vec u_{\mathrm b} = \tfrac{\psi}{2}\bigl(\vec u_{\mathrm b,1}\gamma_1+\vec u_{\mathrm b,2}\gamma_2+\vec u_{\mathrm b,3}\gamma_3\bigr) ,
+i\tfrac{\psi}{2}\vec u_{\mathrm b} = \tfrac{\psi}{2}\bigl(\vec u_{\mathrm b,1}\,i\vec e_x+\vec u_{\mathrm b,2}\,i\vec e_y+\vec u_{\mathrm b,3}\,i\vec e_z\bigr) ,
 $$
 
-because $i\vec e_k = \gamma_k$ for $k=1,2,3$. The rotor exponent is the Clifford **bivector**
+because the three generators are $i\vec e_x,i\vec e_y,i\vec e_z$. The rotor exponent is the Clifford **bivector**
 
 $$
-\tfrac{\theta}{2}\vec u_{\mathrm r} = -\tfrac{\theta}{2}\bigl(\vec u_{\mathrm r,1}\gamma_2\gamma_3+\vec u_{\mathrm r,2}\gamma_3\gamma_1+\vec u_{\mathrm r,3}\gamma_1\gamma_2\bigr) ,
+\tfrac{\theta}{2}\vec u_{\mathrm r} = -\tfrac{\theta}{2}\bigl(\vec u_{\mathrm r,1}\,(i\vec e_y)(i\vec e_z)+\vec u_{\mathrm r,2}\,(i\vec e_z)(i\vec e_x)+\vec u_{\mathrm r,3}\,(i\vec e_x)(i\vec e_y)\bigr) ,
 $$
 
-because $\vec e_x = -\gamma_2\gamma_3$, $\vec e_y = -\gamma_3\gamma_1$ and $\vec e_z = -\gamma_1\gamma_2$. The scale exponent is the scalar and the phase exponent the pseudoscalar,
+because $\vec e_x = -(i\vec e_y)(i\vec e_z)$, $\vec e_y = -(i\vec e_z)(i\vec e_x)$ and $\vec e_z = -(i\vec e_x)(i\vec e_y)$. The scale exponent is the scalar and the phase exponent the pseudoscalar,
 
 $$
-\ln r\in\mathbb{R} , \qquad i\alpha = \alpha\,\gamma_1\gamma_2\gamma_3 ,
+\ln r\in\mathbb{R} , \qquad i\alpha = \alpha\,ie_t ,
 $$
 
-since $ie_t = (i\vec e_x)(i\vec e_y)(i\vec e_z) = \gamma_1\gamma_2\gamma_3$.
+since $ie_t = (i\vec e_x)(i\vec e_y)(i\vec e_z)$ is the product of the three generators.
 
 The naming of the two vector blocks is the trap the comparison article records: the block that the algebra calls the real vector block is the grade-two block, and the block that it calls the imaginary vector block is the grade-one block. So the rotor, not the boost, is the bivector of the Clifford reading, and the boost, not the rotor, is its vector.
 
@@ -536,7 +536,7 @@ of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.6095
 
 ## Summary
 
-The polar decomposition of a biquaternion of non-vanishing norm is read against the six remarkable subspaces by its four exponents. For a generic word, the four exponents lie one in each of the four coordinate blocks — the scale in the real scalar block, the phase in the imaginary scalar block, the rotor in the real vector block, the boost in the imaginary vector block — and the four blocks are the four Clifford grades, of which the word uses the scalar, the pseudoscalar, the vector and the bivector. Under the identification $\gamma_k\mapsto i\vec e_k$ the scale is the scalar, the phase the pseudoscalar, the boost the Clifford vector and the rotor the bivector, and the order of the word is not the order of the grades.
+The polar decomposition of a biquaternion of non-vanishing norm is read against the six remarkable subspaces by its four exponents. For a generic word, the four exponents lie one in each of the four coordinate blocks — the scale in the real scalar block, the phase in the imaginary scalar block, the rotor in the real vector block, the boost in the imaginary vector block — and the four blocks are the four Clifford grades, of which the word uses the scalar, the pseudoscalar, the vector and the bivector. With $i\vec e_x,i\vec e_y,i\vec e_z$ as the three generators the scale is the scalar, the phase the pseudoscalar, the boost the Clifford vector and the rotor the bivector, and the order of the word is not the order of the grades.
 
 Because each nonzero element of a block lies in exactly three of the six subspaces and each subspace is the sum of two blocks, each exponent of a generic word lies in exactly three subspaces and each subspace carries exactly two of them. The centre carries the two central exponents, the vector subspace the two axial ones, and the four mixed subspaces separate the pairs: the quaternion subspace carries the scale and the rotor, the anti-quaternion subspace the phase and the boost, the Hermitian subspace the scale and the boost, the anti-Hermitian subspace the phase and the rotor. The Hermitian split of the incidence reproduces the Hermitian split of the Cartan pairing.
 
@@ -557,7 +557,7 @@ The two products of the series are the product of two boosts, which is a boost t
 | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar block, home of the phase exponent |
 | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block, home of the rotor exponent |
 | $B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | the imaginary vector block, home of the boost exponent |
-| $\gamma_k = i\vec e_k$ | the Clifford generators, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ |
+| $i\vec e_x$, $i\vec e_y$, $i\vec e_z$ | the Clifford generators, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ |
 | grade $0$, $1$, $2$, $3$ | the scalar, the Clifford vector, the bivector, the pseudoscalar |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the centre $A_1\oplus A_2$ and the vector subspace $B_1\oplus B_2$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace $A_1\oplus B_1$ and the anti-quaternion subspace $A_2\oplus B_2$ |
@@ -590,3 +590,17 @@ The two products of the series are the product of two boosts, which is a boost t
 - [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the $*$-unitary convention.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

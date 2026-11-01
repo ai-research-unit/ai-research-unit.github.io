@@ -645,7 +645,7 @@ $$
 \operatorname{Log}\tilde Q=\ln r+i\alpha+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
 $$
 
-because $Q=\Rho\tilde U$ with $\Log\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\Log\tilde Q=\log\Rho+\Log\tilde U$; equivalently, $\log Q_t=\log\Rho+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
+because $Q=\Rho\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\Rho+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\Rho+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
 
 $$
 \boxed{\;

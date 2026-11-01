@@ -124,7 +124,7 @@ $$
 
 where $\pi_{k-1}(j_k s(x)) = j_{k-1}s(x)$ forgets the derivatives of order exactly $k$, and the kernel is the bundle of the top-order derivatives, isomorphic to the $k$-th symmetric power of the cotangent bundle twisted by $E$. The sequence is natural in the bundle $E$ and splits, though not canonically.
 
-*Proof.* The map $\pi_{k-1}$ is surjective because every $(k-1)$-jet is the truncation of a $k$-jet, and it is a bundle homomorphism. Its kernel at $x$ consists of the $k$-jets with vanishing derivatives of order at most $k-1$, which are the symmetric $k$-tensors $\sum_{|\alpha| = k} u_a_\alpha\, dx_\alpha \otimes e_a$; the transformation law of these coefficients under a change of coordinates is the symmetric $k$-th power of the Jacobian, which identifies the kernel with $S^kT^*_xM \otimes E_x$. A splitting is obtained by the polynomials of degree $k$, hence not canonically.
+*Proof.* The map $\pi_{k-1}$ is surjective because every $(k-1)$-jet is the truncation of a $k$-jet, and it is a bundle homomorphism. Its kernel at $x$ consists of the $k$-jets with vanishing derivatives of order at most $k-1$, which are the symmetric $k$-tensors $\sum_{|\alpha| = k} u_{a\alpha}\, dx_\alpha \otimes e_a$; the transformation law of these coefficients under a change of coordinates is the symmetric $k$-th power of the Jacobian, which identifies the kernel with $S^kT^*_xM \otimes E_x$. A splitting is obtained by the polynomials of degree $k$, hence not canonically.
 
 For $k=1$ the sequence reads $0 \to T^*M \otimes E \to J^1E \to E \to 0$, and the projection $J^1E \to E$ is the value of the jet; the kernel is the bundle of the first derivatives.
 

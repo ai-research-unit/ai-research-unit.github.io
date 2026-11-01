@@ -280,7 +280,7 @@ $$
 
 is an idempotent, the spectral projector onto the generalized eigenspace of the cluster. For a simple spectrum and a contour around one eigenvalue, $\Pi_\gamma=P_i$.
 
-**Proof.** The resolvent is holomorphic off the spectrum; the contour integral of a resolvent is idempotent (the residue calculus gives $\Pi_\gamma_2=\Pi_\gamma$), it commutes with $A$, and its image is the sum of the generalized eigenspaces of the eigenvalues inside $\gamma$.
+**Proof.** The resolvent is holomorphic off the spectrum; the contour integral of a resolvent is idempotent (the residue calculus gives $\Pi_{\gamma_2}=\Pi_\gamma$), it commutes with $A$, and its image is the sum of the generalized eigenspaces of the eigenvalues inside $\gamma$.
 
 **Corollary (the sum of the projectors).** If $\gamma$ encloses all six eigenvalues, $\Pi_\gamma=I_6$.
 

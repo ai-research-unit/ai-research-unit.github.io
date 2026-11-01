@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Hermitian Clifford module carries a form for which the Clifford action is self-adjoint. Attached to the form are two further structures that the physical literature names separately. The first is the **spinor adjoint**: the conjugate-linear identification of the module with its dual that the form induces, $s\mapsto(s,\cdot)$, which is the unique Clifford-equivariant pairing of the module with itself up to a scalar and is the algebraic object every spin-invariant bilinear form is built from. The second is the **Dirac adjoint**: the pairing of two spinors obtained by inserting a fixed vector $\gamma$ before the form, $s,t\mapsto \mathrm{Sc}(s^{\dagger}\gamma t)$, whose matrix in the physical normalisation is written $\bar\psi = \psi^{\dagger}\gamma_0$ and whose scalar part $\bar\psi\psi$ is the invariant mass term. This article treats both, together with the way they repair the isotropy of the naive scalar form on a spinor module and the way they interact with the self-adjointness of the Dirac operator.
+A Hermitian Clifford module carries a form for which the Clifford action is self-adjoint. Attached to the form are two further structures that the physical literature names separately. The first is the **spinor adjoint**: the conjugate-linear identification of the module with its dual that the form induces, $s\mapsto(s,\cdot)$, which is the unique Clifford-equivariant pairing of the module with itself up to a scalar and is the algebraic object every spin-invariant bilinear form is built from. The second is the **Dirac adjoint**: the pairing of two spinors obtained by inserting a fixed vector $v$ before the form, $s,t\mapsto \mathrm{Sc}(s^{\dagger}v t)$, written in the physical normalisation as $\bar\psi = \psi^{\dagger}v_0$, with $v_0$ the time-like vector, and whose scalar part $\bar\psi\psi$ is the invariant mass term. This article treats both, together with the way they repair the isotropy of the naive scalar form on a spinor module and the way they interact with the self-adjointness of the Dirac operator.
 
 The two constructions are the resolution of a difficulty raised in *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*: the restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal is invariant but **totally isotropic** whenever $\pi^{\dagger}\pi = 0$, so the naive form is not the Hermitian structure of a general spinor module. The spinor adjoint supplies the missing non-degeneracy: it is the choice of a self-adjoint idempotent, equivalently of a Hermitian form on the module of the correct type. The type — orthogonal, symplectic or unitary — is exactly the type of the involution of the algebra, and the classification of the possible forms is the classification of Hermitian forms over a division algebra with involution.
 
@@ -65,49 +65,49 @@ and whose associated sesquilinear form is Hermitian, $J(s)(t) = \sigma\bigl(J(t)
 
 ### The Pairing with a Vector
 
-**Definition.** Let $\gamma \in V$ be a non-isotropic vector. The **Dirac adjoint pairing** is
+**Definition.** Let $v \in V$ be a non-isotropic vector. The **Dirac adjoint pairing** is
 
 $$
-\beta_{\gamma}(s,t) = \mathrm{Sc}\bigl(s^{\dagger}\,\gamma\,t\bigr) = \bigl\langle J(s), \gamma\,t\bigr\rangle ,
+\beta_{v}(s,t) = \mathrm{Sc}\bigl(s^{\dagger}\,v\,t\bigr) = \bigl\langle J(s), v\,t\bigr\rangle ,
 $$
 
-the form of the spinor adjoint with the vector $\gamma$ inserted before the second spinor. In the physical normalisation one writes $\bar s = s^{\dagger}\gamma$ and $\beta_{\gamma}(s,t) = \mathrm{Sc}(\bar s\, t)$, so that $\bar s\, s = \beta_{\gamma}(s,s)$ is the invariant "mass".
+the form of the spinor adjoint with the vector $v$ inserted before the second spinor. In the physical normalisation one writes $\bar s = s^{\dagger}v$ and $\beta_{v}(s,t) = \mathrm{Sc}(\bar s\, t)$, so that $\bar s\, s = \beta_{v}(s,s)$ is the invariant "mass".
 
-**Proposition (Hermiticity is governed by $\gamma_{\dagger} = \pm\gamma$).** For a vector $\gamma$, $\gamma_{\dagger} = -\gamma$, and consequently
-
-$$
-\beta_{\gamma}(t,s) = -\,\overline{\beta_{\gamma}(s,t)} ,
-$$
-
-so $\beta_{\gamma}$ is **skew-Hermitian** for every non-isotropic vector $\gamma$, and $i\beta_{\gamma}$ is Hermitian. If $\gamma$ is central and self-adjoint, then $\beta_{\gamma}$ is Hermitian; the sign is the sign of $\gamma_{\dagger}\gamma$.
-
-**Proof.** $\overline{\beta_{\gamma}(s,t)} = \mathrm{Sc}\bigl((s^{\dagger}\gamma t)^{\dagger}\bigr) = \mathrm{Sc}\bigl(t^{\dagger}\gamma_{\dagger} s\bigr) = -\mathrm{Sc}\bigl(t^{\dagger}\gamma s\bigr) = -\beta_{\gamma}(t,s)$, using $\gamma_{\dagger} = -\gamma$ and the cyclicity of the scalar part.
-
-**Theorem (non-degeneracy and invariance).** For non-isotropic $\gamma$ the pairing $\beta_{\gamma}$ is non-degenerate, and it is invariant under the stabiliser of $\gamma$ in the unitary slice:
+**Proposition (Hermiticity is governed by $v_{\dagger} = \pm v$).** For a vector $v$, $v_{\dagger} = -v$, and consequently
 
 $$
-\boxed{\;u^{\dagger}\gamma u = \gamma \ \Longrightarrow \ \beta_{\gamma}(u\cdot s, u\cdot t) = \beta_{\gamma}(s,t)\;} .
+\beta_{v}(t,s) = -\,\overline{\beta_{v}(s,t)} ,
 $$
 
-**Proof.** Non-degeneracy follows because $\mathrm{Sc}(s^{\dagger}\gamma t)$ is $\mathrm{Sc}$ composed with the invertible multiplications by $\gamma$ and by the dagger; invariance is $\beta_{\gamma}(us,ut) = \mathrm{Sc}(s^{\dagger}u^{\dagger}\gamma u t) = \mathrm{Sc}(s^{\dagger}\gamma t)$ for $u^{\dagger}\gamma u = \gamma$.
+so $\beta_{v}$ is **skew-Hermitian** for every non-isotropic vector $v$, and $i\beta_{v}$ is Hermitian. If $v$ is central and self-adjoint, then $\beta_{v}$ is Hermitian; the sign is the sign of $v_{\dagger}v$.
 
-**Corollary (the physical Dirac adjoint).** In the Lorentzian case the stabiliser of a time-like $\gamma_0$ is the maximal compact subgroup $\mathrm{Spin}(m)\subseteq\mathrm{Spin}(1,m)$, and $\beta_{\gamma_0}$ is the $\mathrm{Spin}(m)$-invariant skew-Hermitian pairing whose normalisation by $i$ and by $\gamma_0^{2}$ gives the Hermitian form of the quantum theory; the object $\bar\psi = \psi^{\dagger}\gamma_0$ is the Dirac adjoint of the physics literature, and the Lorentz-invariant bilinear $\bar\psi\chi$ is $\beta_{\gamma_0}$. This is the reason the invariant pairing of the spinor module is indefinite while the form used for the Hilbert space is positive definite on the maximal compact part. The physical reading of $\bar\psi\psi$, of the current $\bar\psi\gamma_\mu\psi$ and of the mass term is in the physics menu and is not used here.
+**Proof.** $\overline{\beta_{v}(s,t)} = \mathrm{Sc}\bigl((s^{\dagger}v t)^{\dagger}\bigr) = \mathrm{Sc}\bigl(t^{\dagger}v_{\dagger} s\bigr) = -\mathrm{Sc}\bigl(t^{\dagger}v s\bigr) = -\beta_{v}(t,s)$, using $v_{\dagger} = -v$ and the cyclicity of the scalar part.
+
+**Theorem (non-degeneracy and invariance).** For non-isotropic $v$ the pairing $\beta_{v}$ is non-degenerate, and it is invariant under the stabiliser of $v$ in the unitary slice:
+
+$$
+\boxed{\;u^{\dagger}v u = v \ \Longrightarrow \ \beta_{v}(u\cdot s, u\cdot t) = \beta_{v}(s,t)\;} .
+$$
+
+**Proof.** Non-degeneracy follows because $\mathrm{Sc}(s^{\dagger}v t)$ is $\mathrm{Sc}$ composed with the invertible multiplications by $v$ and by the dagger; invariance is $\beta_{v}(us,ut) = \mathrm{Sc}(s^{\dagger}u^{\dagger}v u t) = \mathrm{Sc}(s^{\dagger}v t)$ for $u^{\dagger}v u = v$.
+
+**Corollary (the physical Dirac adjoint).** In the Lorentzian case the stabiliser of a time-like $v_0$ is the maximal compact subgroup $\mathrm{Spin}(m)\subseteq\mathrm{Spin}(1,m)$, and $\beta_{v_0}$ is the $\mathrm{Spin}(m)$-invariant skew-Hermitian pairing whose normalisation by $i$ and by $v_0^{2}$ gives the Hermitian form of the quantum theory; the object $\bar\psi = \psi^{\dagger}v_0$ is the Dirac adjoint of the physics literature, and the Lorentz-invariant bilinear $\bar\psi\chi$ is $\beta_{v_0}$. This is the reason the invariant pairing of the spinor module is indefinite while the form used for the Hilbert space is positive definite on the maximal compact part. The physical reading of $\bar\psi\psi$, of the current and of the mass term is in the physics menu and is not used here.
 
 ### The Dirac Adjoint and the Dirac Operator
 
-**Theorem (adjointness of the Dirac operator for the Dirac pairing).** Let the frame be orthogonal to $\gamma$, so that $\gamma$ anticommutes with each $e_j$, and let $D$ be self-adjoint or skew-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then
+**Theorem (adjointness of the Dirac operator for the Dirac pairing).** Let the frame be orthogonal to $v$, so that $v$ anticommutes with each $e_j$, and let $D$ be self-adjoint or skew-adjoint for the module form, $D^{*} = \varepsilon D$ with $\varepsilon = \pm1$. Then
 
 $$
-\boxed{\;\beta_{\gamma}(D\cdot s, t) = -\,\varepsilon\,\beta_{\gamma}(s, D\cdot t)\;} .
+\boxed{\;\beta_{v}(D\cdot s, t) = -\,\varepsilon\,\beta_{v}(s, D\cdot t)\;} .
 $$
 
 In particular, an operator that is **skew**-adjoint for the module form $(\varepsilon = -1)$ is self-adjoint for the Dirac pairing, and an operator that is **self**-adjoint for the module form $(\varepsilon = +1)$ is skew-adjoint for the Dirac pairing.
 
-**Proof.** $\beta_{\gamma}(Ds,t) = (Ds,\gamma t) = (s, D^{*}\gamma t) = \varepsilon\,(s, D\gamma t) = \varepsilon\,(s, -\gamma D t) = -\varepsilon\,(s,\gamma D t) = -\varepsilon\,\beta_{\gamma}(s,Dt)$, using the definition $\beta_{\gamma}(s,t) = (s,\gamma t)$ with $(\cdot,\cdot)$ the module form, the adjointness $D^{*} = \varepsilon D$, and the anticommutation $\gamma e_j = -e_j\gamma$ which gives $\gamma D = -D\gamma$ so that $D\gamma = -\gamma D$.
+**Proof.** $\beta_{v}(Ds,t) = (Ds,v t) = (s, D^{*}v t) = \varepsilon\,(s, Dv t) = \varepsilon\,(s, -v D t) = -\varepsilon\,(s,v D t) = -\varepsilon\,\beta_{v}(s,Dt)$, using the definition $\beta_{v}(s,t) = (s,v t)$ with $(\cdot,\cdot)$ the module form, the adjointness $D^{*} = \varepsilon D$, and the anticommutation $v e_j = -e_jv$ which gives $v D = -Dv$ so that $Dv = -v D$.
 
 **Corollary (the finite-dimensional model and the PDE model).** In the finite-dimensional model of *Dirac Operators with Hermitian Adjoint*, $D_{\mathrm{alg}} = \sum_jL_{e_j}$ is skew-adjoint, $\varepsilon = -1$, so it is **self-adjoint** for the Dirac pairing; in the PDE model $D = \sum_j\rho(e_j)\partial/\partial x_j$ is self-adjoint, $\varepsilon = +1$, so it is **skew-adjoint** for the Dirac pairing. Both were checked by computation, and the two cases are the two signs of $\varepsilon$.
 
-**Remark.** The $\gamma$-twisted pairing is the one whose scalar part $\bar s\,t$ is the invariant bilinear of the physics, and the sign in front of the adjointness is the reason the Dirac adjoint is introduced: the pairing with the spinor adjoint alone is Hermitian, while the physical bilinear is the $\gamma$-twisted pairing, whose sign structure differs by the self- or skew-adjointness of the operator. The analysis of the operator is *Dirac Operators with Hermitian Adjoint*; what the Dirac adjoint adds is the pairing.
+**Remark.** The $v$-twisted pairing is the one whose scalar part $\bar s\,t$ is the invariant bilinear of the physics, and the sign in front of the adjointness is the reason the Dirac adjoint is introduced: the pairing with the spinor adjoint alone is Hermitian, while the physical bilinear is the $v$-twisted pairing, whose sign structure differs by the self- or skew-adjointness of the operator. The analysis of the operator is *Dirac Operators with Hermitian Adjoint*; what the Dirac adjoint adds is the pairing.
 
 ## Worked Cases
 
@@ -121,13 +121,13 @@ In $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ with the dagger positive, the al
 
 ### The Lorentzian Case: the Dirac Adjoint
 
-In $\mathrm{Cl}_{1,3}(\mathbb{R})$ with $\vec e_x^{2} = 1$ and $\vec e_y^{2} = \vec e_z^{2} = e_4^{2} = -1$, the vector $\gamma_0 = \vec e_x$ is time-like, and $\beta_{\gamma_0}(s,t) = \mathrm{Sc}(s^{\dagger}\vec e_xt)$ is a non-degenerate skew-Hermitian pairing on the 16-dimensional regular module, invariant under the subgroup of the slice that stabilises $\vec e_x$, which is generated by the rotations $\exp(\theta\,e_ie_j)$ in the space-like directions. This is computed: the pairing is skew-Hermitian, $i\beta_{\gamma_0}$ is Hermitian, the form is non-degenerate, and the stabiliser of $\vec e_x$ preserves it. The Lorentzian signature of the pairing, and the identification with the physics Dirac adjoint, are the indefinite counterpart of the definite case above.
+In $\mathrm{Cl}_{1,3}(\mathbb{R})$ with $\vec e_x^{2} = 1$ and $\vec e_y^{2} = \vec e_z^{2} = e_4^{2} = -1$, the vector $v_0 = \vec e_x$ is time-like, and $\beta_{v_0}(s,t) = \mathrm{Sc}(s^{\dagger}\vec e_xt)$ is a non-degenerate skew-Hermitian pairing on the 16-dimensional regular module, invariant under the subgroup of the slice that stabilises $\vec e_x$, which is generated by the rotations $\exp(\theta\,e_ie_j)$ in the space-like directions. This is computed: the pairing is skew-Hermitian, $i\beta_{v_0}$ is Hermitian, the form is non-degenerate, and the stabiliser of $\vec e_x$ preserves it. The Lorentzian signature of the pairing, and the identification with the physics Dirac adjoint, are the indefinite counterpart of the definite case above.
 
 ## Summary
 
 The **spinor adjoint** is the conjugate-linear map $J : S\to S^{*}$, $J(s) = (s,\cdot)$, induced by the Hermitian form of a Hermitian Clifford module; it intertwines the action with the adjoint action, $J(x\cdot s) = x\cdot J(s)$, and on an irreducible module it is unique up to a scalar by Schur's lemma. It is the same data as the form, read as a map to the dual, and it is the algebraic object every spin-invariant bilinear form is built from; its **type** — symmetric, alternating or Hermitian — is determined by the type of the involution of the algebra and by the division algebra over the module, which is the real/complex/quaternionic trichotomy in the complex case.
 
-The naive scalar form $\mathrm{Sc}(s^{\dagger}t)$ on a minimal left ideal with $\pi^{\dagger}\pi = 0$ is **totally isotropic**, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$, and it is the **spinor adjoint of a self-adjoint idempotent** that repairs it: the definite case has a positive definite spinor form and the split case a hyperbolic one. The **Dirac adjoint** is the pairing $\beta_{\gamma}(s,t) = \mathrm{Sc}(s^{\dagger}\gamma t)$ with a non-isotropic vector $\gamma$ inserted, written $\bar s = s^{\dagger}\gamma$ in the physical normalisation; for a vector it is **skew-Hermitian** because $\gamma_{\dagger} = -\gamma$, so $i\beta_{\gamma}$ is Hermitian, it is non-degenerate, and it is invariant under the stabiliser of $\gamma$ in the unitary slice — in the Lorentzian case the maximal compact subgroup. The Dirac operator is formally self-adjoint for the spinor adjoint pairing and skew-adjoint for the $\gamma$-twisted pairing, and the two pairings are the two faces of the Hermitian structure of a spinor module.
+The naive scalar form $\mathrm{Sc}(s^{\dagger}t)$ on a minimal left ideal with $\pi^{\dagger}\pi = 0$ is **totally isotropic**, as computed in $\mathrm{Cl}_{1,1}(\mathbb{R})$, and it is the **spinor adjoint of a self-adjoint idempotent** that repairs it: the definite case has a positive definite spinor form and the split case a hyperbolic one. The **Dirac adjoint** is the pairing $\beta_{v}(s,t) = \mathrm{Sc}(s^{\dagger}v t)$ with a non-isotropic vector $v$ inserted, written $\bar s = s^{\dagger}v$ in the physical normalisation; for a vector it is **skew-Hermitian** because $v_{\dagger} = -v$, so $i\beta_{v}$ is Hermitian, it is non-degenerate, and it is invariant under the stabiliser of $v$ in the unitary slice — in the Lorentzian case the maximal compact subgroup. The Dirac operator is formally self-adjoint for the spinor adjoint pairing and skew-adjoint for the $v$-twisted pairing, and the two pairings are the two faces of the Hermitian structure of a spinor module.
 
 ## Summary of Notation
 
@@ -136,16 +136,30 @@ The naive scalar form $\mathrm{Sc}(s^{\dagger}t)$ on a minimal left ideal with $
 | $S^{*} = \mathrm{Hom}_A(S,A)$ | Adjoint module, action $(x\cdot\varphi)(s)=\varphi(x^{\dagger}s)$ |
 | $J(s) = (s,\cdot)$, $\langle J(s),t\rangle = (s,t)$ | Spinor adjoint |
 | $J(x\cdot s) = x\cdot J(s)$ | Equivariance of the spinor adjoint |
-| $\beta_{\gamma}(s,t) = \mathrm{Sc}(s^{\dagger}\gamma t)$ | Dirac adjoint pairing |
-| $\beta_{\gamma}(t,s) = -\overline{\beta_{\gamma}(s,t)}$ | Skew-Hermiticity for a vector $\gamma$ |
-| $u^{\dagger}\gamma u = \gamma$ | Stabiliser of $\gamma$, preserving $\beta_{\gamma}$ |
-| $\bar s = s^{\dagger}\gamma$ | Dirac adjoint (physical normalisation) |
+| $\beta_{v}(s,t) = \mathrm{Sc}(s^{\dagger}v t)$ | Dirac adjoint pairing |
+| $\beta_{v}(t,s) = -\overline{\beta_{v}(s,t)}$ | Skew-Hermiticity for a vector $v$ |
+| $u^{\dagger}v u = v$ | Stabiliser of $v$, preserving $\beta_{v}$ |
+| $\bar s = s^{\dagger}v$ | Dirac adjoint (physical normalisation) |
 | $\pi^{\dagger}\pi = 0$ | Isotropy of the naive ideal form |
 
 ## Further Reading
 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the spinor inner product, the invariant bilinear forms and the self-adjointness of the Dirac operator.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the spinor adjoint, the Dirac adjoint and the explicit low-dimensional forms in the physics convention.
-- James D. Bjorken and Sidney D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the Dirac adjoint $\bar\psi = \psi^{\dagger}\gamma_0$, the invariant bilinear $\bar\psi\psi$ and the current $\bar\psi\gamma_\mu\psi$ in the physics normalisation.
+- James D. Bjorken and Sidney D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the Dirac adjoint, the invariant bilinear and the current in the physics normalisation.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the type of an involution, the Hermitian, symmetric and alternating forms over a division algebra with involution, and the classification that the spinor form's type obeys.
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67 (American Mathematical Society, 2005), for the classification of forms over an involution ring and the Witt-theoretic invariants used here.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading of the adjoint action is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

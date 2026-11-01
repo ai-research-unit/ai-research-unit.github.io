@@ -68,15 +68,15 @@ $$
 M_{\mathbb{D}'} = \{c \in \mathbb{D}' : \text{the orbit of the critical point } 0 \text{ is bounded}\} .
 $$
 
-**Theorem (the escape is read on the real part).** The norm is $\langle z\rangle = x^2$, so the norm-escape of $z$ is exactly the escape of its real part; the real part of the orbit is the orbit of $x$ under $g_\gamma$, and the orbit is bounded in the Euclidean metric if and only if both the real orbit $(g_\gamma_n(x))$ and the sequence
+**Theorem (the escape is read on the real part).** The norm is $\langle z\rangle = x^2$, so the norm-escape of $z$ is exactly the escape of its real part; the real part of the orbit is the orbit of $x$ under $g_\gamma$, and the orbit is bounded in the Euclidean metric if and only if both the real orbit $(g_{\gamma_n}(x))$ and the sequence
 
 $$
-y_n = \delta\,P_n(\gamma), \qquad P_0 = 0, \quad P_{n+1} = 2g_\gamma_n(0)\,P_n + 1 ,
+y_n = \delta\,P_n(\gamma), \qquad P_0 = 0, \quad P_{n+1} = 2g_{\gamma_n}(0)\,P_n + 1 ,
 $$
 
-are bounded; for the critical orbit, $x_0 = 0$ and the real orbit is $(g_\gamma_n(0))$.
+are bounded; for the critical orbit, $x_0 = 0$ and the real orbit is $(g_{\gamma_n}(0))$.
 
-**Proof.** $\langle z\rangle = (x+\varepsilon y)(x-\varepsilon y) = x^2$, and the real part recursion is $x_{n+1} = x_n^2+\gamma$. For the infinitesimal part, $y_{n+1} = 2x_n y_n+\delta$ with $x_n = g_\gamma_n(x_0)$; for $y_0 = 0$ the solution is the displayed affine combination, since $y_n$ is linear in $\delta$ with the homogeneous part built from the derivatives $2x_n$.
+**Proof.** $\langle z\rangle = (x+\varepsilon y)(x-\varepsilon y) = x^2$, and the real part recursion is $x_{n+1} = x_n^2+\gamma$. For the infinitesimal part, $y_{n+1} = 2x_n y_n+\delta$ with $x_n = g_{\gamma_n}(x_0)$; for $y_0 = 0$ the solution is the displayed affine combination, since $y_n$ is linear in $\delta$ with the homogeneous part built from the derivatives $2x_n$.
 
 **Theorem (the projection of the connectedness locus).** The projection $\pi(M_{\mathbb{D}'}) \subseteq \mathbb{R}$ is the real Mandelbrot interval $[-2,\tfrac14]$, and the fibre over $\gamma \in [-2,\tfrac14]$ is
 
@@ -86,7 +86,7 @@ $$
 
 so the connectedness locus is the real interval in $\gamma$ with the fibre either the whole line or the single point $0$.
 
-**Proof.** The real part of the orbit of $0$ is $(g_\gamma_n(0))$, which is bounded exactly for $\gamma \in [-2,\tfrac14]$, the real slice of the Mandelbrot set. For fixed $\gamma$ the sequence $y_n = \delta P_n(\gamma)$ is bounded for every $\delta$ if $P_n$ is bounded, and for no $\delta \neq 0$ if $|P_n|$ is unbounded; this gives the two cases.
+**Proof.** The real part of the orbit of $0$ is $(g_{\gamma_n}(0))$, which is bounded exactly for $\gamma \in [-2,\tfrac14]$, the real slice of the Mandelbrot set. For fixed $\gamma$ the sequence $y_n = \delta P_n(\gamma)$ is bounded for every $\delta$ if $P_n$ is bounded, and for no $\delta \neq 0$ if $|P_n|$ is unbounded; this gives the two cases.
 
 **Example (a hyperbolic parameter).** For $\gamma = 0$ the real orbit of $0$ is constantly $0$, so $P_n = 1$ for $n \geq 1$ and the fibre is $\mathbb{R}$; the orbit of the critical point $0$ under $c = \varepsilon\delta$ has $x_n = 0$ and $y_n = \delta$ for $n \geq 1$, bounded. For $\gamma = -1$ the real orbit is the superattracting cycle $0,-1,0,-1,\ldots$, so $2x_n \in \{0,-2\}$ and $P_n \in \{0,1,-1\}$ is bounded; the fibre is $\mathbb{R}$, and the numerical orbit confirms $y \in \{1,-1\}$.
 

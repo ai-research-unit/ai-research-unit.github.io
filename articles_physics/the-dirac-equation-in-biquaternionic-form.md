@@ -380,7 +380,7 @@ $$
 is the Lorentz factor. The four-velocity satisfies the **normalization condition**
 
 $$
-\tilde{V}\tilde{V}^{\natural} = \gamma_2\big(-c^2 + \vec v^2\big) = -c^2.
+\tilde{V}\tilde{V}^{\natural} = \gamma^2\big(-c^2 + \vec v^2\big) = -c^2.
 $$
 
 This is the biquaternion form of the standard relativistic normalization $\sum_\mu\varepsilon_\mu v_\mu v_\mu = -c^2$.

@@ -275,13 +275,13 @@ The identity was verified off shell: for random arbitrary fields the divergence 
 The conservation law of the preceding section is not closed: the field's four-momentum changes in the presence of charges. The total energy–momentum of field and matter,
 
 $$
-T_{\mu\nu}_{\mathrm{tot}} = T_{\mu\nu}_{\mathrm{em}} + T_{\mu\nu}_{\mathrm{matter}} ,
+T^{(\mathrm{tot})}_{\mu\nu} = T^{(\mathrm{em})}_{\mu\nu} + T^{(\mathrm{matter})}_{\mu\nu} ,
 $$
 
 is conserved. The matter tensor of a pressureless dust of proper density $n$ and four-velocity $\tilde{V}$ is the tensor form of the particle flux,
 
 $$
-T_{\mu\nu}_{\mathrm{matter}} = m\,n\,v_\mu v_\nu ,
+T^{(\mathrm{matter})}_{\mu\nu} = m\,n\,v_\mu v_\nu ,
 \qquad
 m = \text{particle mass},
 $$
@@ -403,7 +403,7 @@ symmetric once contracted with the metric, traceless in the Minkowski pairing, a
 | $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{jk}=-\sigma_{jk}$ | Mixed components |
 | $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$ | Symmetric components, after contraction with $\eta$ |
 | $\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu}=-T_{tt}+T_{kk}=0$ | Tracelessness (Minkowski pairing) |
-| $\sum_\mu\partial/\partial Q_\muT_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$ | Conservation with source per direction; Lorentz four-force |
+| $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\eta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

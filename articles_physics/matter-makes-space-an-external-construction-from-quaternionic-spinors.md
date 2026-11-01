@@ -137,12 +137,12 @@ Two further objections are independent of the sign. The equation $\tfrac12[q_\mu
 Section 11 derives a wave equation for the torsion, $\Box T_{\lambda\mu\nu} = 0$, by acting twice with the covariant derivative on the Dirac equation and imposing the teleparallel condition $R_{\mu\nu ab} = 0$. It then introduces the pseudo-vector
 
 $$
-J_S_\mu = \alpha\,\epsilon_{\mu\nu\rho\sigma} T_{\nu\rho\sigma} , \qquad \alpha = \frac{1}{3\cdot 8\pi G} ,
+J_{S\mu} = \alpha\,\epsilon_{\mu\nu\rho\sigma} T_{\nu\rho\sigma} , \qquad \alpha = \frac{1}{3\cdot 8\pi G} ,
 $$
 
-and states that "the wave equation for $T$ together with antisymmetry of $\epsilon_{\mu\nu\rho\sigma}$ implies $\partial/\partial x_\mu J_S_\mu = 0$", reading the conservation as "the field-theoretic avatar of the second law of thermodynamics".
+and states that "the wave equation for $T$ together with antisymmetry of $\epsilon_{\mu\nu\rho\sigma}$ implies $\partial/\partial x_\mu J_{S\mu} = 0$", reading the conservation as "the field-theoretic avatar of the second law of thermodynamics".
 
-The implication does not hold. Since $T_{\nu\rho\sigma}$ is totally antisymmetric, $\partial/\partial x_\mu J_S_\mu = \alpha\,\epsilon_{\mu\nu\rho\sigma}\partial/\partial x_\mu T_{\nu\rho\sigma}$ is a multiple of the totally antisymmetric part of $\partial/\partial x_\mu T_{\nu\rho\sigma}$, which is not implied to vanish by $\Box T = 0$. An explicit counterexample settles it: the field $T_{123}(x) = x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu} = 0$ identically, while $J_S^0 = \alpha T_{123} = \alpha x_0$ gives $\partial/\partial x_\mu J_S_\mu = \partial/\partial x_0 J_S^0 = \alpha \ne 0$, verified here directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma} = \epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\theta$ with $\Box\theta = 0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
+The implication does not hold. Since $T_{\nu\rho\sigma}$ is totally antisymmetric, $\partial/\partial x_\mu J_{S\mu} = \alpha\,\epsilon_{\mu\nu\rho\sigma}\partial/\partial x_\mu T_{\nu\rho\sigma}$ is a multiple of the totally antisymmetric part of $\partial/\partial x_\mu T_{\nu\rho\sigma}$, which is not implied to vanish by $\Box T = 0$. An explicit counterexample settles it: the field $T_{123}(x) = x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu} = 0$ identically, while $J_S^0 = \alpha T_{123} = \alpha x_0$ gives $\partial/\partial x_\mu J_{S\mu} = \partial/\partial x_0 J_S^0 = \alpha \ne 0$, verified here directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma} = \epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\theta$ with $\Box\theta = 0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
 
 A separate objection: since the torsion is *defined* from the spinor by Eq. (5) and carries no independent dynamics, $\Box T = 0$ is not an independent wave equation but a constraint on $\Psi$; and Eq. (5)'s $T$ has no time–space components at all. The "massless emergent degrees of freedom" are therefore not degrees of freedom, and the torsion-wave sector does not enlarge — as the source claims it does — the field content, because it adds nothing to it.
 
@@ -200,7 +200,7 @@ Recomputation shows that the algebraic displays do not reproduce. The printed bl
 
 The composite geometry fails at its first display: the composite tetrad vanishes identically on every plane-wave spinor, verified to $8\times 10^{-17}$, so the construction assigns no metric to the free Dirac field; the defined torsion has zero time–space components while the Einstein–Cartan object it matches has those components nonzero; the contorsion–torsion relation has the sign of its third term reversed; the couplings in Eqs. (4) and (6) do not close dimensionally; and the constrained action's multipliers restate definitions, leaving a factor $2\kappa$ in the Einstein equation unless an unexplained multiplier vanishes.
 
-The teleparallel section is standard geometry carrying a composite that does not exist. The Kozyrev time gradient is the constant $(-1,0,0,0)$ when computed with the paper's own $q_5 = ijk = -1$, so the intrinsic time is not recovered. The torsion Bohm potential changes sign twice within the paper and rests on the same constant-as-torsion conflation. The entropy current is not conserved: $\Box T = 0$ does not imply $\partial/\partial x_\mu J_S_\mu = 0$, with the counterexample $T_{123} = x_0$. The Appendix B trace identity is missing a factor $i$, and its bilinear is not totally antisymmetric, so the axial channel is reached only after antisymmetrisation. The empirical tables inherit all of this, and the topological table asserts a global condition that no pointwise algebra can establish.
+The teleparallel section is standard geometry carrying a composite that does not exist. The Kozyrev time gradient is the constant $(-1,0,0,0)$ when computed with the paper's own $q_5 = ijk = -1$, so the intrinsic time is not recovered. The torsion Bohm potential changes sign twice within the paper and rests on the same constant-as-torsion conflation. The entropy current is not conserved: $\Box T = 0$ does not imply $\partial/\partial x_\mu J_{S\mu} = 0$, with the counterexample $T_{123} = x_0$. The Appendix B trace identity is missing a factor $i$, and its bilinear is not totally antisymmetric, so the axial channel is reached only after antisymmetrisation. The empirical tables inherit all of this, and the topological table asserts a global condition that no pointwise algebra can establish.
 
 What the source does supply is a reminder, in a form the corpus's own articles state more carefully: the algebra can hold the frame and the connection, and the step from holding to generating is where the programme is decided. This article records the step taken, the displays that support it, and the displays that fail.
 
@@ -222,7 +222,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $\lambda_{\mu a}$, $\Lambda_{\mu ab}$ | the source's Lagrange multipliers |
 | $q_5 = ijk$ | in the source, "the imaginary unit"; in fact the central scalar $-1$ |
 | $\tau = \mathrm{Arg}_{\mathbb H}\Psi$ | the source's Kozyrev time field |
-| $J_S_\mu$ | the source's torsion entropy pseudo-vector |
+| $J_{S\mu}$ | the source's torsion entropy pseudo-vector |
 
 ## Further Reading
 

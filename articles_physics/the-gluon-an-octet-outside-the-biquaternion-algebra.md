@@ -94,7 +94,7 @@ $$
 $$
 so that the gluon is charged under its own gauge group and interacts with itself.
 
-The fields $G_{\mu a}$ and the field strengths $G_{\mu\nua}$ are the standard real QCD fields, and no colour matrix carries a tilde: the tilde marks an element of $\mathbb{B}$, not a matrix. The octet is Lie-algebra-valued, so the potential and the field strength carry a colour index and take no single-element glyph; a fixed colour component is read through the abelian biquaternion of *The Photon in Biquaternionic Form*.
+The fields $G_{\mu a}$ and the field strengths $G_{\mu\nu a}$ are the standard real QCD fields, and no colour matrix carries a tilde: the tilde marks an element of $\mathbb{B}$, not a matrix. The octet is Lie-algebra-valued, so the potential and the field strength carry a colour index and take no single-element glyph; a fixed colour component is read through the abelian biquaternion of *The Photon in Biquaternionic Form*.
 
 ### Asymptotic Freedom and Confinement
 
@@ -113,7 +113,7 @@ Three facts about the octet are the ones to hold against the algebra. Its dimens
 
 ## What the Framework Reaches: The Free Constituent
 
-The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G_{\mu a}$ is a massless, electrically neutral, spin-one field whose free equation is the Maxwell equation of the companion articles. The octet's potential and field strength are Lie-algebra-valued, not single elements of $\mathbb{B}$, and neither carries a tilde; they are expanded in the tensor formalism into the components $G_{\mu a}$ and $G_{\mu\nua}$, with the colour index carried explicitly. A fixed component is a massless vector field satisfying the abelian Maxwell equation, and the construction of *The Photon in Biquaternionic Form* and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* applies to it without change: its propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The field-strength invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
+The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G_{\mu a}$ is a massless, electrically neutral, spin-one field whose free equation is the Maxwell equation of the companion articles. The octet's potential and field strength are Lie-algebra-valued, not single elements of $\mathbb{B}$, and neither carries a tilde; they are expanded in the tensor formalism into the components $G_{\mu a}$ and $G_{\mu\nu a}$, with the colour index carried explicitly. A fixed component is a massless vector field satisfying the abelian Maxwell equation, and the construction of *The Photon in Biquaternionic Form* and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* applies to it without change: its propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The field-strength invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
 
 Two qualifications keep the statement exact.
 

@@ -8,13 +8,13 @@ $$
 \mathrm{Cl}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C}),
 $$
 
-of complex dimension $16$. The five frame cells $G_{0},G_{1},G_{2},G_{3}$ and $G_{5}$, defined in §*The Frame Cells*, are a set of generators of this algebra, and the sixteen graded products
+of complex dimension $16$. The five frame cells $\mathsf C_0,\mathsf C_1,\mathsf C_2,\mathsf C_3$ and $\mathsf C_5$, defined in §*The Frame Cells*, are a set of generators of this algebra, and the sixteen graded products
 
 $$
-I,\quad G_{\mu},\quad G_{\mu\nu},\quad G_{\mu\nu\rho},\quad G_{5}
+I,\quad \mathsf C_\mu,\quad \mathsf C_{\mu\nu},\quad \mathsf C_{\mu\nu\rho},\quad \mathsf C_5
 $$
 
-are a basis of it, each of them a two-sided cell up to a unit scalar. The frame is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, together with their product $G_{5}$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
+are a basis of it, each of them a two-sided cell up to a nonzero scalar. The frame is a choice **inside** the algebra of this category, not a different algebra: four elements of $M_4(\mathbb{C})$ satisfying the Clifford relations, together with their product $\mathsf C_5$, from which the whole sixteen-dimensional algebra is generated. It is a generating set, not a basis: four elements span four dimensions, and the basis is the sixteen graded products.
 
 This article states the Clifford algebra, its complexification, the frame relations and the chirality, the basis theorem for the graded products, the place of the five frame cells among the sixteen two-sided operators $T_{\mu\nu}$, the non-canonicity of the frame, and the comparison with the biquaternion algebra. The inventory of the Clifford layer of the corpus is *The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector*, in the reserve; the two-sided operators are *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the versors are *Biquaternion Versors and the Orthogonal Group*.
 
@@ -83,41 +83,42 @@ of complex dimension $8$, the even part of $M_4(\mathbb{C})$ under the Clifford 
 **Definition.** Put $T_{ab}=L_aR_b$ for the two-sided cells of the biquaternion algebra, with $a,b$ in the units $e_t,e_x,e_y,e_z$. The frame cells are the five elements
 
 $$
-G_{0}=iT_{tx},\qquad G_{1}=iT_{xy},\qquad G_{2}=iT_{yy},\qquad G_{3}=iT_{zy},\qquad G_{5}=-iT_{tz}
+\mathsf C_0=iT_{tx},\qquad \mathsf C_1=iT_{xy},\qquad \mathsf C_2=iT_{yy},\qquad \mathsf C_3=iT_{zy},\qquad \mathsf C_5=-iT_{tz}
 $$
 
 of $M_4(\mathbb{C})$, and the first four satisfy
 
 $$
-\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I,
+\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I,
 $$
 
 with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
-**The existence.** The cells exist: the product rule $T_{ab}T_{cd}=T_{ac,db}$ makes each $G_{\mu}$ an explicit element of the two-sided basis, the anticommutation relations hold, and the four cells generate $M_4(\mathbb{C})$. In the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$, the same frame reads as block matrices: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there.
+**The existence.** The cells exist: the product rule $T_{ab}T_{cd}=T_{ac,db}$ makes each $\mathsf C_\mu$ an explicit element of the two-sided basis, the anticommutation relations hold, and the four cells generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
 
 **The chirality.** Put
 
 $$
-G_{5}=iG_{0}G_{1}G_{2}G_{3}=-iT_{tz}.
+\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-iT_{tz}.
 $$
 
 Then
 
 $$
-(G_{5})^{2}=I,\qquad
-\{G_{5},G_{\mu}\}=0,
+(\mathsf C_5)^{2}=I,\qquad
+\{\mathsf C_5,\mathsf C_\mu\}=0,\qquad
+\operatorname{tr}\mathsf C_5=0 .
 $$
 
-and the fifth cell is self-adjoint in the Dirac module. The eigenvalues $\pm1$ of $G_{5}$ are the **chiralities**, and the projectors
+The eigenvalues $\pm1$ of $\mathsf C_5$ are the **chiralities**, and the projectors
 
 $$
-P_{\pm}=\tfrac12(I\pm G_{5})=\tfrac12(I\mp iT_{tz})
+P_{\pm}=\tfrac12(I\pm \mathsf C_5)=\tfrac12(I\mp iT_{tz})
 $$
 
-are the chiral projectors. The label $5$ is the historical one; in four dimensions the fifth cell is the product of the four vector cells, and it is the pseudoscalar of the Clifford algebra, the reference-frame cell of the chirality.
+are the chiral projectors. The square makes $\mathsf C_5$ diagonalisable with eigenvalues $\pm1$; the vanishing trace makes the two eigenspaces equal in dimension, so $\operatorname{rank}P_{\pm}=2$. Both facts are algebraic: neither invokes a Hermitian structure, which the frame does not supply. The label $5$ is the historical one; in four dimensions the fifth cell is the product of the four vector cells, and it is the pseudoscalar of the Clifford algebra, the reference-frame cell of the chirality.
 
-**The trace orthogonality.** The sixteen two-sided cells $T_{\mu\nu}$ are the sixteen graded products: the identity $T_{tt}=I$, the four vector cells $G_{\mu}$, the six bivector products $G_{\mu\nu}=\tfrac12[G_{\mu},G_{\nu}]$, the four trivector products $G_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)G_{\mu}G_{\nu}G_{\rho}$ and the pseudoscalar $G_{5}$. They satisfy
+**The trace orthogonality.** The sixteen two-sided cells $T_{\mu\nu}$, up to nonzero scalars, are the sixteen graded products: the identity $T_{tt}=I$, the four vector cells $\mathsf C_\mu$, the six bivector products $\mathsf C_{\mu\nu}=\tfrac12[\mathsf C_\mu,\mathsf C_\nu]$, the four trivector products $\mathsf C_{\mu\nu\rho}=\tfrac16\sum_{\mathrm{perm}}\operatorname{sgn}(\pi)\mathsf C_\mu\mathsf C_\nu\mathsf C_\rho$ and the pseudoscalar $\mathsf C_5$. They satisfy
 
 $$
 \operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
@@ -143,31 +144,31 @@ $$
 T_{\mu\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
 $$
 
-acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The frame is a generating set of a different shape: four generators, their product $G_{5}$, and their graded products, against the sixteen two-sided operators.
+acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The frame is a generating set of a different shape: four generators, their product $\mathsf C_5$, and their graded products, against the sixteen two-sided operators.
 
-**The dictionary.** In the coefficient frame of the method article, the five frame cells are $i$ times five of the sixteen $T_{\mu\nu}$: the four vector cells $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ and the pseudoscalar $-iT_{tz}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $G_{\mu\nu}$, the trivectors the four $G_{\mu\nu\rho}$, and the scalar is the identity cell $T_{tt}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
+**The dictionary.** In the coefficient frame of the method article, the five frame cells are unit-modulus scalar multiples of five of the sixteen $T_{\mu\nu}$: the four vector cells $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ and the pseudoscalar $-iT_{tz}$. The remaining eleven two-sided operators are the bivector products, the trivector products and the scalar of the Clifford basis; the bivectors are the six products $\mathsf C_{\mu\nu}$, the trivectors the four $\mathsf C_{\mu\nu\rho}$, and the scalar is the identity cell $T_{tt}=I$. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
 
 **The warning.** The identification of the five frame cells with five of the $T_{\mu\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $T_{\mu\nu}$, changes the five cells and their scalar multiples. The Clifford relations are invariant under the change; the five-element subset is not.
 
 ## The Non-Canonicity of the Frame
 
-**The similarity.** If $G_{\mu}$ satisfy the Clifford relations and $S\in GL_4(\mathbb{C})$, then
+**The similarity.** If $\mathsf C_\mu$ satisfy the Clifford relations and $S\in GL_4(\mathbb{C})$, then
 
 $$
-\tilde G_{\mu}=S G_{\mu}S^{-1}
+\tilde{\mathsf C}_\mu=S \mathsf C_\mu S^{-1}
 $$
 
 satisfy the same relations, because conjugation preserves anticommutators and the identity. The frames are therefore not unique: they form a homogeneous space under $GL_4$, and the subgroup that preserves the *span* of the generators is the **Clifford group**
 
 $$
-\Gamma=\{S:S G_{\mu}S^{-1}=\Lambda_{\mu}{}^{\nu}G_{\nu}\ \text{for some }\Lambda\in O(1,3)\}.
+\Gamma=\{S:S \mathsf C_\mu S^{-1}=\Lambda_{\mu}{}^{\nu}\mathsf C_\nu\ \text{for some }\Lambda\in O(1,3)\}.
 $$
 
 **The Clifford group.** The Clifford group acts on the frame by Lorentz transformations; the **spin group** $\mathrm{Spin}(1,3)$ is the norm-one part of the even Clifford group (the even part itself is the scalars times the spin group), and it double covers the identity component $SO^{+}(1,3)$. The Lie algebra of the spin group is the bivector span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(1,3)_{\mathbb{C}}$, of dimension $6$, inside $M_4(\mathbb{C})$.
 
 **The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of signature $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
 
-**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a matrix $C$ with $C G_{\mu}C^{-1}=\pm\bar G_{\mu}$ for the charge conjugation. The frame is the Clifford layer; the other structures are layers above it.
+**What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a charge conjugation. The cell frame supplies the last as a cell, $C=T_{e_t,e_x}$ with $C^{2}=-1$ and $C\mathsf C_\mu^{\mathsf T}C^{-1}=-\mathsf C_\mu$; that one cell serves is a fact of the frame, which cell is a choice. The frame is the Clifford layer; the other structures are layers above it.
 
 ## The Biquaternion Comparison
 
@@ -189,7 +190,7 @@ $$
 
 with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity: an even element need not commute with $u$, and the reflection it induces on the bivectors is part of the multiplication.
 
-**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The frame uses the whole algebra, not one factor: the bivectors mix the two images, and the pseudoscalar $G_{5}$ is a product of four vector cells that also mixes them.
+**The complexified picture.** The complexification $M_4(\mathbb{C})$ contains the biquaternion algebra as the left regular image $M_2\otimes I$, of complex dimension $4$, and also as the right image $I\otimes M_2$. The two images commute and generate the algebra; this is the Kronecker factorisation of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*. The frame uses the whole algebra, not one factor: the bivectors mix the two images, and the pseudoscalar $\mathsf C_5$ is a product of four vector cells that also mixes them.
 
 **The terminology.** $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$; it is the endomorphism algebra $\operatorname{End}_\mathbb{C}(\mathbb{B})$, not $\mathbb{B}$. The biquaternion algebra is a four-dimensional subalgebra, the left factor; the Clifford algebra is the sixteen-dimensional ambient algebra, generated by five elements of it. The phrase "the Clifford layer" names the choice of those five elements and their antisymmetrised products, not a different algebra.
 
@@ -197,7 +198,7 @@ with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity:
 
 ## Summary
 
-The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame cells satisfy $\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I$, the fifth $G_{5}=iG_{0}G_{1}G_{2}G_{3}$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five cells are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
+The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame cells satisfy $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I$, the fifth $\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$ squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five cells are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.
 
 | Quantity | Value |
 |---|---|
@@ -218,10 +219,9 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra of the quadratic form $q$ |
 | $\mathrm{Cl}(1,3)$ | the Dirac algebra of the Minkowski form |
 | $\mathrm{Cl}^{+}(1,3)$ | its even part, isomorphic to $M_2(\mathbb{C})$ |
-| $G_{\mu}$ | the four frame cells $iT_{tx},iT_{xy},iT_{yy},iT_{zy}$, $\{G_{\mu},G_{\nu}\}=2g_{\mu\nu}I$ |
-| $G_{5}$ | $iG_{0}G_{1}G_{2}G_{3}=-iT_{tz}$, the pseudoscalar cell |
-| $G_{\mu\nu}$, $G_{\mu\nu\rho}$ | the bivector and trivector products |
-| $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm G_{5})=\tfrac12(I\mp iT_{tz})$ |
+| $\mathsf C_0,\dots,\mathsf C_3,\mathsf C_5$ | the five frame cells, $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$, $\mathsf C_5=-iT_{tz}=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3$; $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I$ |
+| $\mathsf C_{\mu\nu}$, $\mathsf C_{\mu\nu\rho}$ | the bivector and trivector products |
+| $P_{\pm}$ | the chiral projectors $\tfrac12(I\pm \mathsf C_5)=\tfrac12(I\mp iT_{tz})$ |
 | $\Gamma$ | the Clifford group |
 | $T_{\mu\nu}$ | the two-sided cells $L_\mu R_\nu$, the sixteen graded products |
 
@@ -230,6 +230,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 - [Why the Biquaternion Formalism Instead of Gamma Matrices](../articles_physics/why-the-biquaternion-formalism-instead-of-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
 - [The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector](../articles_reserve/the-clifford-layer-of-the-physics-corpus-inventory-and-the-odd-sector.html), for the inventory of the convention and the odd sector.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $T_{\mu\nu}$ and their product rule.
+- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the cell symbols $\mathsf C_\mu$ and the frame in the canonical frame, §*The Clifford Structure and the Frame*.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even slot and the versors.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the two commuting copies of $\mathbb{B}$.
 - [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html), for the bivectors and the Lie algebra $\mathfrak{so}(4,\mathbb{C})$.
