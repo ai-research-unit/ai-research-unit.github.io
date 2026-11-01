@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-operators-of-math0"><strong>The One-Sided Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> A matrix $A$ acts on the matrix algebra by left multiplication, $X\mapsto AX$, and a matrix $B$ acts by right multiplication, $X\mapsto XB$. Both are operators on the $n^{2}$ complex dimensions of $M_{n}(\mathbb{C})$, hence matrices of size $n^{2}$. This article computes those matrices, their rank, their trace and their determinant, and describes the two subsets of $\operatorname{End}(M_{n})$ that they fill.</p>
+<p><strong>The result in one line.</strong> Left multiplication is $\mathrm I_{n}\otimes A$, right multiplication is $B^{\mathsf T}\otimes\mathrm I_{n}$, the two subsets are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$ that commute and meet in the scalars, and each is the commutant of the other.</p>
+<p><strong>Why the article is needed.</strong> The two-sided operators are built from the two one-sided families, and every count of the companion articles starts from the dimensions $n^{2}+n^{2}-1=2n^{2}-1$ and $n^{4}$. The one-sided case is also the only case in which the invariants of the operator are read off the parameter without any tensor rank computation: the rank of $L_{A}$ is $n$ times the rank of $A$, and the determinant is the $n$-th power.</p>
+<p><strong>Boundaries.</strong> The algebra and its trace and determinant are <em>The Matrix Algebra $M_n(\mathbb{C})$</em>. The general construction is <em>The Regular Representation in Dimension $n$</em>. The two-sided products are <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>. At $n=2$ the same matrices in the Peirce frame are the two four-dimensional copies of <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, and the pair description is <em>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $A=M_{n}(\mathbb{C})$, of complex dimension $N=n^{2}$. An element $X$ is written as a column $\operatorname{vec}X$ by stacking its columns, so that $\operatorname{vec}(AX)=(\mathrm I_{n}\otimes A)\operatorname{vec}X$ and $\operatorname{vec}(XB)=(B^{\mathsf T}\otimes\mathrm I_{n})\operatorname{vec}X$. An operator on the algebra is an $N\times N$ matrix; the identity operator is $\mathrm I_{N}$. The transpose of a matrix is ${}^{\mathsf T}$ and the conjugate transpose is ${}^{*}$.</p>
+<h2 id="the-left-multiplication">The Left Multiplication</h2>
+<h3 id="the-matrix">The Matrix</h3>
+<p><strong>Proposition (the Kronecker form).</strong> In the column-stacking basis,
+$$
+[L_{A}]=\mathrm I_{n}\otimes A,
+$$
+the block matrix of $n^{2}$ blocks of size $n$, with $A$ on the diagonal and zeros elsewhere.</p>
+<p><em>Proof.</em> The column $\operatorname{vec}(AX)$ is the stack of the columns of $AX$. The $j$-th column of $AX$ is $A$ times the $j$-th column of $X$, so the operator acts as $A$ on each block of $n$ consecutive coordinates and does not mix the blocks. This is the block-diagonal matrix with $n$ copies of $A$.</p>
+<p><strong>The display.</strong> For $n=2$ and $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,
+$$
+[L_{A}]=\begin{pmatrix}
+a&b&0&0\\
+c&d&0&0\\
+0&0&a&b\\
+0&0&c&d
+\end{pmatrix},
+$$
+which is the form used in the biquaternion articles, where $A=\mathsf M_{2}(\tilde Q)$ and the four entries are the coordinates of the element.</p>
+<h3 id="the-invariants">The Invariants</h3>
+<p><strong>Theorem (rank, trace, determinant).</strong> For every $A\in M_{n}(\mathbb{C})$,
+$$
+\operatorname{rank}L_{A}=n\operatorname{rank}A,\qquad
+\operatorname{tr}L_{A}=n\operatorname{tr}A,\qquad
+\det L_{A}=(\det A)^{n}.
+$$</p>
+<p><em>Proof.</em> The matrix $\mathrm I_{n}\otimes A$ is block diagonal with $n$ blocks equal to $A$, so its rank is the sum of the ranks, its trace the sum of the traces, and its determinant the product of the determinants.</p>
+<p><strong>The spectrum.</strong> If the eigenvalues of $A$ are $\lambda_{1},\dots,\lambda_{n}$ with algebraic multiplicities, then the eigenvalues of $L_{A}$ are the same numbers, each repeated $n$ times. In particular the spectrum of $L_{A}$ is the spectrum of $A$ as a set, and the two matrices have the same spectral projectors up to the repetition.</p>
+<p><strong>The minimal polynomial does not grow.</strong> The minimal polynomial of $L_{A}$ is the minimal polynomial of $A$, of degree at most $n$, while $L_{A}$ has size $n^{2}$. For $n\ge2$ the degree is strictly smaller than the size, so <strong>the regular matrix is never nonderogatory</strong>: there is no vector $X$ whose images under the powers of $L_{A}$ fill the algebra. This is the operator form of the fact that the left multiplication sees the algebra through a single element, and it is why the two-sided operators are needed for a general endomorphism.</p>
+<h3 id="the-kernel-and-the-image">The Kernel and the Image</h3>
+<p><strong>The kernel.</strong> The operator $L_{A}$ kills exactly the matrices whose columns lie in the kernel of $A$:
+$$
+\ker L_{A}=\{X:AX=0\},\qquad \dim\ker L_{A}=n\,(n-\operatorname{rank}A)=N-n\operatorname{rank}A .
+$$
+The dimension is the complement of the rank, as it must be.</p>
+<p><strong>The image.</strong> The image is the set of matrices whose columns lie in the column space of $A$:
+$$
+\operatorname{im}L_{A}=A\cdot M_{n}(\mathbb{C})=\{AX\},
+$$
+of dimension $n\operatorname{rank}A$. In particular the image is the whole algebra exactly when $A$ is invertible, and the operator $L_{A}$ is invertible exactly then, with $L_{A}^{-1}=L_{A^{-1}}$.</p>
+<p><strong>The left ideal.</strong> The image is a <strong>left ideal</strong>: it is closed under left multiplication by any matrix, because $C(AX)=(CA)X$. The kernel is not an ideal: it is closed under right multiplication, $AX=0$ gives $AXC=0$. The two properties are the module-theoretic reading of the operator.</p>
+<h2 id="the-right-multiplication">The Right Multiplication</h2>
+<h3 id="the-matrix_1">The Matrix</h3>
+<p><strong>Proposition (the Kronecker form).</strong> In the column-stacking basis,
+$$
+[R_{B}]=B^{\mathsf T}\otimes\mathrm I_{n}.
+$$</p>
+<p><em>Proof.</em> The $j$-th column of $XB$ is $X$ times the $j$-th column of $B$, that is $\sum_{k}B_{kj}x_{k}$ with $x_{k}$ the $k$-th column of $X$. The operator therefore sends the block $x_{k}$ to the block $\sum_{j}B_{kj}x_{j}$, whose matrix of blocks is $B^{\mathsf T}$. Since each block is multiplied by $\mathrm I_{n}$ on the left, the matrix is $B^{\mathsf T}\otimes\mathrm I_{n}$.</p>
+<p><strong>The display.</strong> For $n=2$,
+$$
+[R_{B}]=\begin{pmatrix}
+b_{11}&0&b_{21}&0\\
+0&b_{11}&0&b_{21}\\
+b_{12}&0&b_{22}&0\\
+0&b_{12}&0&b_{22}
+\end{pmatrix},
+$$
+a block matrix whose four blocks are scalar multiples of $\mathrm I_{2}$. The transpose is not cosmetic: it is the difference between the left copy and the right copy, and it disappears only in the scalar case.</p>
+<p><strong>The transpose is the reason both letters are needed.</strong> The left copy is block diagonal with the element repeated; the right copy is block scalar with the transpose. A matrix that is both is a scalar matrix, and this is the computation of the next section.</p>
+<h3 id="the-invariants_1">The Invariants</h3>
+<p><strong>Proposition.</strong> For every $B$,
+$$
+\operatorname{rank}R_{B}=n\operatorname{rank}B,\qquad
+\operatorname{tr}R_{B}=n\operatorname{tr}B,\qquad
+\det R_{B}=(\det B)^{n}.
+$$</p>
+<p><em>Proof.</em> The matrix $B^{\mathsf T}\otimes\mathrm I_{n}$ has $n^{2}$ blocks, each a scalar multiple of $\mathrm I_{n}$. Its rank, trace and determinant are the same functions of $B^{\mathsf T}$ as those of $\mathrm I_{n}\otimes B$ are of $B$, and $\operatorname{rank}B^{\mathsf T}=\operatorname{rank}B$, $\operatorname{tr}B^{\mathsf T}=\operatorname{tr}B$, $\det B^{\mathsf T}=\det B$.</p>
+<p><strong>The right copy is an anti-representation.</strong> The composition is $R_{B}R_{C}=R_{CB}$, so the map $B\mapsto R_{B}$ reverses the order. The set $\{R_{B}\}$ is a subalgebra of $\operatorname{End}(M_{n})$, isomorphic to $M_{n}^{\mathrm{opp}}$, and $M_{n}^{\mathrm{opp}}\cong M_{n}$ through the transpose. <strong>The transpose is therefore the canonical comparison between the two copies, and it is an isomorphism of algebras and not an identification of subsets.</strong></p>
+<h3 id="the-flip">The Flip</h3>
+<p><strong>Proposition (the two copies are exchanged by the flip).</strong> Let $\mathsf F$ be the flip of the two tensor slots, $\mathsf F(X\otimes Y)\mathsf F=Y\otimes X$, an involution of the $n^{2}$ dimensions with $\mathsf F=\mathsf F^{\mathsf T}=\mathsf F^{-1}$. Then
+$$
+\mathsf F\,[L_{A}]\,\mathsf F=[R_{A^{\mathsf T}}],\qquad
+\mathsf F\,[R_{B}]\,\mathsf F=[L_{B^{\mathsf T}}].
+$$</p>
+<p><em>Proof.</em> The flip sends $\mathrm I_{n}\otimes A$ to $A\otimes\mathrm I_{n}$, and $A\otimes\mathrm I_{n}=(A^{\mathsf T})^{\mathsf T}\otimes\mathrm I_{n}=[R_{A^{\mathsf T}}]$. The second identity is the first applied to $B^{\mathsf T}$.</p>
+<p><strong>The flip is an operator and not an element.</strong> It lives in $\operatorname{End}(M_{n}(\mathbb{C}))$ and not in the algebra, it exchanges the two copies, and it preserves neither the product of the algebra nor a single letter of the two families. In the biquaternion case the same role is played by the permutation $\mathsf S$ of the second and third coordinates of the frame, and the identity there reads $R^{P}(\tilde Q)=\mathsf S\,L^{P}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, which is the frame form of the proposition above.</p>
+<h2 id="the-two-copies">The Two Copies</h2>
+<h3 id="the-intersection">The Intersection</h3>
+<p><strong>Theorem (the two copies meet in the scalars).</strong> For $n\ge2$,
+$$
+\{L_{A}\}\cap\{R_{B}\}=\mathbb{C}\cdot\mathrm I_{N}.
+$$</p>
+<p><em>Proof.</em> Suppose $AX=XB$ for every $X$. With $X=I$ this gives $A=B$; then $AX=XA$ for every $X$, and the centre of $M_{n}(\mathbb{C})$ is $\mathbb{C}I$. Conversely a scalar matrix acts by the same scalar on the left and on the right.</p>
+<p><strong>The dimension count.</strong> Two subspaces of dimensions $n^{2}$ and $n^{2}$ with intersection of dimension one span a subspace of dimension $2n^{2}-1$. This is the third rung of the ladder, and it is also the dimension of the cone of two-sided products, although the two sets are different: the sum of the two copies is a subspace, the cone is not.</p>
+<h3 id="the-double-centraliser">The Double Centraliser</h3>
+<p><strong>Theorem.</strong> Each copy is the commutant of the other in $\operatorname{End}(M_{n}(\mathbb{C}))$.</p>
+<p><em>Proof.</em> A right multiplication commutes with every left multiplication, because $A(XB)=(AX)B$. Conversely let $F$ commute with every $L_{C}$ and put $B=F(I)$; then $F(X)=F(L_{X}I)=L_{X}F(I)=XB$, so $F=R_{B}$.</p>
+<p><strong>The reading.</strong> The theorem says that <strong>an operator that commutes with all left multiplications is a right multiplication</strong>, and this is the reason the two-sided family is the natural next object: a general endomorphism is a sum of products of one member of each copy, and the number of terms needed is the length of the companion article.</p>
+<h3 id="the-commutant-of-one-element">The Commutant of One Element</h3>
+<p><strong>Proposition.</strong> Let $C(A)=\{Y\in M_{n}(\mathbb{C}):AY=YA\}$ be the centraliser of $A$ in the algebra. Then the commutant of $L_{A}$ in $\operatorname{End}(M_{n}(\mathbb{C}))$ is $M_{n}(\mathbb{C})\otimes C(A)$, of complex dimension
+$$
+n^{2}\dim C(A).
+$$</p>
+<p><em>Proof.</em> Write an operator as $F=\sum_{i}Y_{i}\otimes Z_{i}$ in the tensor form $M_{n}\otimes M_{n}$, so that $F(X)=\sum_{i}Y_{i}XZ_{i}$. Then
+$$
+F(AX)-AF(X)=\sum_{i}Y_{i}A X Z_{i}-\sum_{i}AY_{i}XZ_{i}=\sum_{i}(Y_{i}A-AY_{i})XZ_{i},
+$$
+and $F$ commutes with $L_{A}$ exactly when $\sum_{i}(Y_{i}A-AY_{i})\otimes Z_{i}=0$. With the $Z_{i}$ independent this forces $Y_{i}\in C(A)$, and the space of such $F$ is $C(A)\otimes M_{n}$; the two factors give the same dimension.</p>
+<p><strong>The two extremes.</strong> For a cyclic element, $C(A)=\mathbb{C}[A]$ of dimension $n$, and the commutant of $L_{A}$ has dimension $n^{3}$. For a scalar element, $C(A)=M_{n}(\mathbb{C})$ of dimension $n^{2}$, and the commutant is the whole ambient space of dimension $n^{4}$. <strong>The commutant of a single left multiplication is strictly larger than the right copy whenever $A$ is not cyclic, and this is the operator form of the size of the centraliser.</strong></p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$A$</th>
+<th>$\dim C(A)$</th>
+<th>$\dim\{F:FC=CF\}$ for $C=L_{A}$</th>
+<th>at $n=3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all left multiplications taken together</td>
+<td>---</td>
+<td>$n^{2}$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>a scalar element</td>
+<td>$n^{2}$</td>
+<td>$n^{4}$</td>
+<td>$81$</td>
+</tr>
+<tr>
+<td>a cyclic element, e.g. a single Jordan block</td>
+<td>$n$</td>
+<td>$n^{3}$</td>
+<td>$27$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,1,2)$ at $n=3$</td>
+<td>$5$</td>
+<td>$45$</td>
+<td>$45$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first row is the theorem and the other three are propositions about a single element.</strong> The commutant of the whole copy is the right copy of dimension $n^{2}$; the commutant of a single member is strictly larger for $n\ge2$, the least being $n^{3}$ at a cyclic element. The second row is the degenerate case in which $L_{A}$ is the identity operator and every operator commutes with it.</p>
+<h3 id="the-compression">The Compression</h3>
+<p><strong>The compression to the $2\times2$ model.</strong> At $n=2$ the algebra is the biquaternion algebra and the element is a $2\times2$ matrix $\mathsf M_{2}(\tilde Q)$. The left matrix does not compress: it is $\mathrm I_{2}\otimes A$, of size four, and its only invariant compression is $A$ itself, read on one of the two identical blocks. The right matrix compresses to $B^{\mathsf T}$. <strong>The two one-sided actions compress one at a time, and this is why the pair description of the biquaternion category is written with one matrix per side and a pair for the product.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>Left multiplication by $A$ is the block-diagonal matrix $\mathrm I_{n}\otimes A$ with $n$ copies of $A$; right multiplication by $B$ is the block-scalar matrix $B^{\mathsf T}\otimes\mathrm I_{n}$. Both have rank $n\operatorname{rank}$, trace $n\operatorname{tr}$ and determinant $(\det)^{n}$ of the parameter, and both have the spectrum of the parameter repeated $n$ times.</p>
+<p>The two families are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$; they commute, they meet in the scalars, their sum has dimension $2n^{2}-1$, and each is the commutant of the other. The commutant of a single left multiplication is $M_{n}\otimes C(A)$, of dimension $n^{2}\dim C(A)$: $n^{3}$ for a cyclic element and $n^{4}$ for a scalar one.</p>
+<p>The regular matrix is never nonderogatory for $n\ge2$, because its minimal polynomial has degree at most $n$ against a size of $n^{2}$. <strong>The one-sided operators are the two ends of the construction, and the two-sided products of the next article are the smallest family that reaches the rest of the ambient space.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_{n}(\mathbb{C})$</td>
+<td>the algebra, of complex dimension $N=n^{2}$</td>
+</tr>
+<tr>
+<td>$L_{A}(X)=AX$</td>
+<td>the left multiplication</td>
+</tr>
+<tr>
+<td>$R_{B}(X)=XB$</td>
+<td>the right multiplication</td>
+</tr>
+<tr>
+<td>$[L_{A}]=\mathrm I_{n}\otimes A$</td>
+<td>its matrix in the column-stacking basis</td>
+</tr>
+<tr>
+<td>$[R_{B}]=B^{\mathsf T}\otimes\mathrm I_{n}$</td>
+<td>its matrix in the same basis</td>
+</tr>
+<tr>
+<td>$\mathrm I_{N}$</td>
+<td>the identity operator</td>
+</tr>
+<tr>
+<td>$\mathsf F$</td>
+<td>the flip of the two tensor slots</td>
+</tr>
+<tr>
+<td>$C(A)$</td>
+<td>the centraliser of $A$ in $M_{n}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{L}$, $\operatorname{End}_{R}$</td>
+<td>the two copies inside $\operatorname{End}(M_{n})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge, 1991), for the Kronecker products, the identities $(\mathrm I\otimes A)$ and $(B^{\mathsf T}\otimes\mathrm I)$, and the invariants of a Kronecker product.</li>
+<li>Paul Richard Halmos, <em>Finite-Dimensional Vector Spaces</em> (Springer, 1974), for the regular representation and the double centraliser.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the algebra, its centre and its trace.</li>
+<li><a href="the-regular-representation-in-n-dimensions.html">The Regular Representation in Dimension $n$</a>, for the abstract construction and its ladder.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>, for the products of the two copies.</li>
+<li><a href="m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a>, for the same matrices at $n=2$ in the Peirce frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

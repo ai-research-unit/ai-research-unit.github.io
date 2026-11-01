@@ -216,7 +216,7 @@ t^{2}-x^{2}-y^{2}-z^{2}=0,\qquad t=\tfrac12\operatorname{tr}M\ge0,
 $$
 and the map is onto the closed future cone.</p>
 <p><em>Proof.</em> The determinant identity $\det M=t^{2}-\lvert\vec x\rvert^{2}$ on the Hermitian subspace and the vanishing of the determinant on $\mathcal{C}_{H}$ give the equation; the trace is $\lVert u\rVert^{2}=2t\ge0$; and every point of the cone is attained by a column of norm $\sqrt{2t}$ in the corresponding direction. The computation is in <em>$M_2(\mathbb{C})$ Defining Representation</em>, §<em>The Pauli Coordinates</em>.</p>
-<p><strong>Three involutions act on the one cone, and the three fixed loci are three families.</strong> The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices, the conjugation $T\mapsto\bar T$ fixes the real ones and exchanges the two rulings, and the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. <strong>The cone is closed under all three, and the three fixed loci are of three different sizes</strong>: complex dimension two for the symmetric family, four for the real one and three for the Hermitian one.</p>
+<p><strong>Three involutions act on the one cone, and each fixes its own family.</strong> The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices $c\,uu^{\mathsf T}$ and <strong>exchanges the two rulings</strong>, because it swaps the column and the row; the conjugation $T\mapsto\bar T$ fixes the real matrices $u\phi^{\mathsf T}$ with $u,\phi$ real and acts on <strong>each</strong> ruling separately, sending $(u,\phi)$ to $(\bar u,\bar\phi)$ without exchanging them; the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. <strong>The cone is closed under all three, and the three fixed loci have two distinct sizes</strong>: the symmetric family is a complex cone of complex dimension two, that is real dimension four, because its scalar is complex, while the real family and the Hermitian family are both of real dimension three, $2+2-1$ for the pair of real columns modulo the real scaling and $2+1$ for the column modulo its phase times its modulus.</p>
 <h2 id="the-composition">The Composition</h2>
 <p><strong>The family is closed under composition, the scalar is absorbed, and the trace records the absorption.</strong></p>
 <p><strong>Proposition (the composition rule).</strong> For all pairs,
@@ -268,7 +268,7 @@ $$
 $$
 for every $M$.</p>
 <p><em>Proof.</em> The coefficient array is the matrix, so the two ranks are the same number computed twice.</p>
-<p><strong>Why this is a statement and not a tautology.</strong> In the algebra categories the operator space is not the algebra: the two-sided operator $T_{Q,P}$ acts on the algebra, of dimension sixteen in the reduced biquaternion case, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. <strong>Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number</strong>: which is why the criterion of §<em>The Cone and the Coefficient Matrix</em> can be stated as $\det M=0$ and still be exact.</p>
+<p><strong>Why this is a statement and not a tautology.</strong> In the algebra categories the operator space is not the algebra: the two-sided operator $T_{Q,P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. <strong>Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number</strong>: which is why the criterion of §<em>The Cone and the Coefficient Matrix</em> can be stated as $\det M=0$ and still be exact.</p>
 <p><strong>The table of the comparison.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -292,7 +292,7 @@ for every $M$.</p>
 <tr>
 <td>coefficient array</td>
 <td>the matrix</td>
-<td>a $16\times16$ array</td>
+<td>a $4\times4$ array</td>
 </tr>
 <tr>
 <td>two ranks</td>
@@ -529,7 +529,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 <tr>
 <td>isometries</td>
 <td>none</td>
-<td>a family, of dimension seven</td>
+<td>the group $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three</td>
 </tr>
 <tr>
 <td>the length</td>
@@ -544,7 +544,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 <tr>
 <td>rank constraint</td>
 <td>rank $\le1$</td>
-<td>rank $\le4$, by the division algebra</td>
+<td>rank $0$ or $4$, by the division algebra</td>
 </tr>
 <tr>
 <td>the second cone</td>
