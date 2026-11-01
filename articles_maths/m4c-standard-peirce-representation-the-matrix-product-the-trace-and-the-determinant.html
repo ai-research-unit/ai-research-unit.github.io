@@ -88,7 +88,7 @@ The root chooses the direction $z$. This is the price of the construction, and i
 <p><strong>The algebra.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.</p>
 <p><strong>The result in one line.</strong> The left matrix is the $2\times2$ image taken twice, $L^{P}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$; the right matrix is the transposed image taken twice, $R^{P}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.</p>
 <p>The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.</p>
-<p><strong>Boundaries.</strong> The algebra, the multiplication table and the four conjugations are <em>The Biquaternion Algebra</em> and <em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em>. The six subspaces are defined and decomposed in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is <em>$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant</em>; the frame is the canonical frame of <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>, and the six subspaces as matrix conditions are <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
+<p><strong>Boundaries.</strong> The algebra, the multiplication table and the four conjugations are <em>The Biquaternion Algebra</em> and <em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em>. The six subspaces are defined and decomposed in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is <em>$M_4(\mathbb{C})$ e-basis Representation</em>; the frame is the canonical frame of <em>Matrix Representations Conventions</em>, §<em>The Matrix Models</em>, and the six subspaces as matrix conditions are <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
 <h2 id="the-root-and-the-two-idempotents">The Root and the Two Idempotents</h2>
 <p><strong>The root.</strong> The element
 $$
@@ -243,10 +243,10 @@ $$
 L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*}),\qquad
 R^{P}(\tilde Q)^{\dagger}=R^{P}(\tilde Q^{*}).
 $$
-The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold because the four frame vectors are orthogonal and have the same norm,
+The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold for the Hermitian form $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ because the four frame vectors are orthogonal and have the same norm,
 $$
-\langle\tilde\Pi_+,\tilde\Pi_+\rangle=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle
-=\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle=\langle\tilde\Pi_-,\tilde\Pi_-\rangle=\tfrac12,
+\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle_*
+=\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,
 $$
 and all the cross products vanish. The frame is orthogonal with equal norms, so the adjoint in the frame is the conjugate transpose.</p>
 <h2 id="the-l-and-r-bases">The L and R Bases</h2>
@@ -675,6 +675,10 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
 </tr>
 <tr>
+<td>$\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$</td>
+<td>the Hermitian form on $\mathbb{B}$</td>
+</tr>
+<tr>
 <td>$B^2$</td>
 <td>$Q_x^2+Q_y^2+Q_z^2$</td>
 </tr>
@@ -690,7 +694,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <li><a href="the-element-the-coordinates-and-the-conjugations.html">The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</a>, for the four conjugations and the coordinate systems.</li>
 <li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra and the multiplication table.</li>
 <li><a href="conventions-of-the-matrix-models.html">Matrix Representations Conventions</a>, for the canonical frame and the tensor displays of the two copies.</li>
-<li><a href="m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant</a>, for the same content in the coefficient basis and the sign stitch.</li>
+<li><a href="m4c-e-basis-representation.html">$M_4(\mathbb{C})$ e-basis Representation</a>, for the same content in the coefficient basis and the sign stitch.</li>
 <li><a href="m4c-model-the-six-subspaces-as-matrix-conditions.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</a>, for the six subspaces read in the coefficient basis.</li>
 <li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant</a>, for the same invariants in the matrix model.</li>
 </ul>

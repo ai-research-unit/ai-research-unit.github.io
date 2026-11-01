@@ -86,7 +86,7 @@ $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
 \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
-and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, and the quaternionic conjugate is $\tilde Q^{*}=Q_t-\vec Q$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
+and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the natural conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
 $$
 \mathsf M_2(e_t)=\mathrm I_2,\qquad
 \mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
@@ -226,9 +226,9 @@ $$
 \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\cdot\mathrm I_4 .
 $$
 The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy; the two copies are mutual centralisers. The intersection is the centre of each.</p>
-<p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions.</p>
+<p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of <em>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</em>.</p>
 <p><strong>The general level.</strong> A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.</p>
-<h2 id="the-sixteen-matrices-math129">The Sixteen Matrices $T_{\mu\nu}=L_\mu^{P}R_\nu^{P}$</h2>
+<h2 id="the-sixteen-matrices-math131">The Sixteen Matrices $T_{\mu\nu}=L_\mu^{P}R_\nu^{P}$</h2>
 <h3 id="the-table-in-four-families">The Table in Four Families</h3>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
@@ -393,7 +393,7 @@ T_{\tilde Q,\tilde P}=L^{P}(\tilde Q)R^{P}(\tilde P)
 =\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
 $$</p>
 <p><strong>On the basis.</strong> The evaluation reproduces the four family formulas of §<em>The Table in Four Families</em>: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L^{P}(\tilde Q)R^{P}(\tilde P)$ written in the model.</p>
-<h3 id="why-the-math237-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
+<h3 id="why-the-math239-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
 <p><strong>The dimensions.</strong> $L^{P}(\tilde Q)$ and $R^{P}(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L^{P}(\tilde Q)\otimes R^{P}(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $T_{\tilde Q,\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.</p>
 <p><strong>The correct product.</strong> The matrix of the operator is the ordinary product $L^{P}(\tilde Q)R^{P}(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
 $$
@@ -468,7 +468,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-coefficient-matrix-math323">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math325">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>The Sixteen Matrices $T_{\mu\nu}=L_\mu^{P}R_\nu^{P}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu}.
@@ -484,7 +484,7 @@ $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,T_{\mu\nu},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
-<h3 id="the-length-math339">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math341">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -588,7 +588,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="math464-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<h3 id="math466-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -790,8 +790,12 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 <td>the quaternionic norm, $\det\mathsf M_2(\tilde Q)$</td>
 </tr>
 <tr>
-<td>$\tilde Q^{*}=Q_t-\vec Q$</td>
-<td>the quaternionic conjugate</td>
+<td>$\tilde Q^{\natural}=Q_t-\vec Q$</td>
+<td>the natural conjugate</td>
+</tr>
+<tr>
+<td>$\tilde Q^{*}=\bar{\tilde Q}^{\natural}$</td>
+<td>the Hermitian conjugate</td>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$</td>
@@ -843,7 +847,8 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 <ul>
 <li><a href="m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ Standard Peirce Representation</a>, for the frame, the left and right matrices and the six subspaces.</li>
 <li><a href="m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Standard Peirce Representation</a>, for the compression of the two one-sided actions.</li>
-<li><a href="m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant</a>, for the same operators in the e-basis.</li>
+<li><a href="m2c-standard-peirce-representation-operators.html">$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</a>, for the same operators compressed to one matrix per side and a pair for the product.</li>
+<li><a href="m4c-e-basis-representation.html">$M_4(\mathbb{C})$ e-basis Representation</a>, for the same operators in the e-basis.</li>
 <li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the same family in the canonical frame.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.</li>
 <li><a href="m4c-representation-the-general-endomorphisms.html">$M_4(\mathbb{C})$ Representation : The General Endomorphisms</a>, for the Peirce change $C_{\Pi}$ and the operator-space matrix units.</li>
@@ -890,7 +895,7 @@ $$
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
-<h4 id="the-normal-form-and-the-pair-math643">The normal form and the Pair $(\beta,\delta)$</h4>
+<h4 id="the-normal-form-and-the-pair-math647">The normal form and the Pair $(\beta,\delta)$</h4>
 <p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.

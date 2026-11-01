@@ -158,9 +158,9 @@ $$</p>
 <p>The last case is the honest statement of the theorem: the current is conserved <strong>whenever</strong> the field equation holds; off shell it need not be, and its divergence <em>is</em> the field equation.</p>
 <p><strong>Relation to the current already in the corpus.</strong> <em>The Klein–Gordon Equation in Biquaternionic Form</em> posits the current with $\rho = \frac{i\hbar}{2mc^2}(\tilde{\Phi}^*\partial/\partial t'\tilde{\Phi} - \tilde{\Phi}\partial/\partial t'\tilde{\Phi}^*)$ and $\vec j = -\frac{i\hbar}{2m}(\tilde{\Phi}^*\nabla\tilde{\Phi} - \tilde{\Phi}\nabla\tilde{\Phi}^*)$. Comparing component by component, that current equals $-\frac{\hbar}{2m}\tilde{J}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $-\hbar/2m$ that a current may always be multiplied by. What the derivation adds is <strong>why</strong> that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.</p>
 <p><strong>Relation to the Maxwell source.</strong> In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ with $\tilde J = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = \sqrt{\mu}\,(\partial/\partial t'\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in <em>The Gauge Principle in Biquaternionic Form</em> is the localization of the symmetry that produces it.</p>
-<p><strong>The mass, and where the symmetry stops.</strong> The phase symmetry derived here holds for the massive Klein–Gordon field, and — with the parent's mass term now written in its linear, chirality-off-diagonal form $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ — it holds for the massive Dirac field as well. A central phase passes through the linear mass term, so the current above is the conserved current of both fields, and $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$ on shell for each. What the mass term breaks is the <strong>axial</strong> symmetry, not the phase: the associated divergence identity is</p>
+<p><strong>The mass, and where the symmetry stops.</strong> The phase symmetry derived here holds for the massive Klein–Gordon field, and — with the parent's mass term now written in its linear, chirality-off-diagonal form $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ — it holds for the massive Dirac field as well. A central phase passes through the linear mass term, so the current above is the conserved current of both fields, and $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$ on shell for each. What the mass term breaks is the <strong>axial</strong> symmetry, not the phase: the two chiralities are rotated against each other by the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$, which is not an element of $\mathbb{B}$ but acts on the field. The associated divergence identity is</p>
 <p>$$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\tilde\Psi^{\natural}\chi\tilde\Psi,
 $$</p>
 <p>which vanishes only in the massless limit. In the biquaternion interpretation the mass term is the off-diagonal coupling between the two <em>central</em> ideals of $\mathbb{B}$ — the two chiralities — so it breaks exactly the symmetry that rotates them, and not the central $\mathrm{U}(1)$ that the algebra canonically carries. The previously recorded obstruction belonged to the retired antilinear single-field equation; the gauge principle article's corresponding section is revised on the same grounds.</p>
 <h2 id="translation-invariance-and-the-conserved-four-momentum">Translation Invariance and the Conserved Four-Momentum</h2>
@@ -266,7 +266,7 @@ $$</p>
 <p><strong>Scale and conformal symmetry.</strong> The massless Klein–Gordon and Maxwell actions have more symmetries than the Poincaré group. Do they have biquaternion Noether currents, and does the tracelessness of the electromagnetic energy–momentum tensor — established in the energy–momentum exercise — express one of them?</p>
 </li>
 <li>
-<p><strong>The axial current and the two central ideals.</strong> With the parent's linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$ holds for the linear mass term, and its biquaternion interpretation is that the mass couples the two central ideals of $\mathbb{B}$ off-diagonally. Is there a biquaternion Noether derivation of that identity — the axial current as the Noether current of the chirality rotation — and does the central-element structure supply anything analogous to the would-be Goldstone statement?</p>
+<p><strong>The axial current and the two central ideals.</strong> With the parent's linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\tilde{\Psi}^{\natural}\chi\tilde{\Psi}$ holds for the linear mass term, and its biquaternion interpretation is that the mass couples the two central ideals of $\mathbb{B}$ off-diagonally. Is there a biquaternion Noether derivation of that identity — the axial current as the Noether current of the chirality rotation — and does the central-element structure supply anything analogous to the would-be Goldstone statement?</p>
 </li>
 <li>
 <p><strong>The current of the complexified theory.</strong> In the complexified biquaternion theory of the Maxwell article, the source and potential are fully complex. Does the central-phase current acquire components outside $\mathbb{M}_-$, and are they conserved?</p>
@@ -359,6 +359,10 @@ $$</p>
 <td>Four-force (proper-time derivative; not summable)</td>
 </tr>
 <tr>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$</td>
+<td>The central grading (the axial generator); not an element of $\mathbb{B}$, acting on the field</td>
+</tr>
+<tr>
 <td>$\tilde{R}_0\in\mathbb{M}_-$</td>
 <td>Constant translation (displacement)</td>
 </tr>
@@ -444,6 +448,14 @@ $$</p>
 <li><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a> and <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a> — the two sectors that house the conserved objects.</li>
 <li><a href="introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a> — the algebra, its conjugations, and the local complex structure.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>$$
+\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,e_x\tilde{Q}e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,e_y\tilde{Q}e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,e_z\tilde{Q}e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}e_z .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>
