@@ -88,7 +88,7 @@ T_+=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-
 $$
 has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two matrices are transposes, and the transpose is the stitch. The two actions live on two different planes, so there is no statement that $A$ and $A^{\mathsf T}$ commute.</p>
 <p><strong>What is kept and what is lost.</strong> The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.</p>
-<p><strong>The result in one line.</strong> The left matrix is the $2\times2$ image, $L^{2}(\tilde Q)=A$; the right matrix is its transpose, $R^{2}(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.</p>
+<p><strong>The result in one line.</strong> The left matrix is the $2\times2$ image, $L(\tilde Q)=\mathsf M_2(\tilde Q)=A$; the right matrix is its transpose, $R(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.</p>
 <p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
 $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
@@ -231,7 +231,7 @@ $$
 $$
 In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
-L^{2}(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
+L(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
 $$
 The computation in the first basis is the proposition of <em>Peirce Coordinates, Matrix Units and the Spinor Planes</em>, §<em>The Left Action on a Couple</em>; the second basis repeats it.</p>
 <p><strong>The right matrix.</strong> On $T_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Upsilon_+,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
@@ -246,7 +246,7 @@ $$
 $$
 In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
 $$
-R^{2}(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
+R(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
 $$
 The right matrix is the transpose of the left matrix. This is the whole content of the compression: the left action reads the columns of $A$, the right action reads the rows, and a row written as a column is the transpose.</p>
 <p><strong>The example.</strong> For
@@ -263,53 +263,65 @@ $$
 (2+i)^2+(1-i)^2+3^2+i^2=(3+4i)+(-2i)+9-1=11+2i=\langle\tilde Q\rangle_{\natural}.
 $$</p>
 <p><strong>A note on the element.</strong> The matrix $A$ is the matrix of the element itself, not a regular matrix on a larger space. The left action is the multiplication by $A$ on the column space of the left ideal; the right action is the multiplication by $A^{\mathsf T}$ on the row space of the right ideal. There is no ambient $4\times4$ space in the compressed model, and the two actions are not two operators on one space.</p>
-<h2 id="the-l-and-r-bases">The L and R Bases</h2>
-<p><strong>The left basis.</strong> The four left matrices are
+<h2 id="the-images-of-the-four-units">The Images of the Four Units</h2>
+<p><strong>The left matrices.</strong> The four left matrices are the images of the four units under the model:
 $$
-L_t^{2}=\mathrm I_2,\qquad
-L_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-L_y^{2}=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-L_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathsf M_2(e_t)=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)=-i\sigma_3,
 $$
-Each is $\mathsf M_2(\vec e_\mu)$ for the three vector units, and the identity for the scalar unit. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are linearly independent and form a basis of $M_2(\mathbb{C})$.</p>
-<p><strong>The right basis.</strong> The four right matrices are the transposes,
+that is,
 $$
-R_t^{2}=\mathrm I_2,\qquad
-R_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-R_y^{2}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
-R_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathrm I_2,\qquad
+-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+-i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+-i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
-The matrices $L_x^{2}$ and $L_z^{2}$ are symmetric, and $L_y^{2}$ is antisymmetric, so
+Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are linearly independent and form a basis of $M_2(\mathbb{C})$.</p>
+<p><strong>Why the factor $i$, and why the signs.</strong> The images must reproduce the two relations that define the algebra. The first is the square,
 $$
-R_x^{2}=L_x^{2},\qquad
-R_y^{2}=-L_y^{2},\qquad
-R_z^{2}=L_z^{2}.
+\mathsf M_2(\vec e_k)^2=\mathsf M_2(\vec e_k^2)=\mathsf M_2(-e_t)=-\mathrm I_2 .
 $$
-The right basis differs from the left by the sign of the $y$ matrix alone. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are a basis of $M_2(\mathbb{C})$.</p>
-<p><strong>The two bases of one space.</strong> In the $4\times4$ article the left and right bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left basis is read on $S_\pm$, the right basis on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.</p>
-<p><strong>The products.</strong> Write $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$. Then
+The Pauli matrices are Hermitian and satisfy $\sigma_k^2=\mathrm I_2$, so the image must be $i$ times a Pauli matrix: the factor $i$ is exactly what turns $+\mathrm I_2$ into $-\mathrm I_2$, and without it the image of $\vec e_k$ would square to the image of $e_t$. The second relation is the cross-product,
 $$
-L_\mu^{2}L_\nu^{2}=\varepsilon L_{\mu\nu}^{2},\qquad
-R_\mu^{2}R_\nu^{2}=\varepsilon' R_{\nu\mu}^{2}.
+\vec e_x\vec e_y=\vec e_z .
 $$
-The left product follows the order of the units; the right product reverses it. For example,
+Since $\sigma_1\sigma_2=i\sigma_3$, the product of the two images is
 $$
-(L_x^{2})^2=(R_x^{2})^2=-\mathrm I_2,\qquad
-L_x^{2}L_y^{2}=L_z^{2},\qquad
-L_y^{2}L_x^{2}=-L_z^{2},
+(-i\sigma_1)(-i\sigma_2)=(-i)^2\sigma_1\sigma_2=-\sigma_1\sigma_2=-i\sigma_3=\mathsf M_2(\vec e_z),
 $$
-and on the right $R_x^{2}R_y^{2}=-R_z^{2}$, $R_y^{2}R_x^{2}=R_z^{2}$.</p>
-<p><strong>Trace and determinant.</strong> Every basis matrix is invertible, with
+and the signs of the three images are fixed by this line. With the opposite overall sign the same product would give $-i\sigma_3$ while the image of $\vec e_z$ would be $+i\sigma_3$, and the cross-relation would be lost. The factor and the signs are not conventions laid on the algebra: they are the algebra read in matrices.</p>
+<p><strong>The right matrices.</strong> The four right matrices are the transposes:
 $$
-\det L_\mu^{2}=\det R_\mu^{2}=1,\qquad
-\operatorname{Tr}L_\mu^{2}=\operatorname{Tr}R_\mu^{2}=2\delta_{\mu t}.
+\mathsf M_2(e_t)^{\mathsf T}=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)^{\mathsf T}=-i\sigma_1,\qquad
+\mathsf M_2(\vec e_y)^{\mathsf T}=i\sigma_2,\qquad
+\mathsf M_2(\vec e_z)^{\mathsf T}=-i\sigma_3 .
 $$
-The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.</p>
+The matrices $\sigma_1$ and $\sigma_3$ are symmetric, and $\sigma_2$ is antisymmetric, so transposition fixes $\mathrm I_2$, $-i\sigma_1$ and $-i\sigma_3$ and negates $-i\sigma_2$. The right family differs from the left by the sign of the second matrix alone. Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are a basis of $M_2(\mathbb{C})$.</p>
+<p><strong>The two families in one space.</strong> In the $4\times4$ article the left and right families are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left family is read on $S_\pm$, the right family on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.</p>
+<p><strong>The products.</strong> The four left matrices multiply as the four units do,
+$$
+\mathsf M_2(\vec e_x)\mathsf M_2(\vec e_y)=\mathsf M_2(\vec e_z),\qquad
+\mathsf M_2(\vec e_y)\mathsf M_2(\vec e_x)=-\mathsf M_2(\vec e_z),
+$$
+$$
+\mathsf M_2(\vec e_z)\mathsf M_2(\vec e_x)=\mathsf M_2(\vec e_y),\qquad
+\mathsf M_2(\vec e_x)^2=\mathsf M_2(\vec e_y)^2=\mathsf M_2(\vec e_z)^2=-\mathrm I_2 .
+$$
+For the right family the two factors are exchanged,
+$$
+\mathsf M_2(\vec e_x)^{\mathsf T}\mathsf M_2(\vec e_y)^{\mathsf T}=-\mathsf M_2(\vec e_z)^{\mathsf T},\qquad
+\mathsf M_2(\vec e_y)^{\mathsf T}\mathsf M_2(\vec e_x)^{\mathsf T}=\mathsf M_2(\vec e_z)^{\mathsf T}.
+$$
+The sign of $\sigma_2$ is the only difference between the two families, and it is the matrix form of the anti-automorphism.</p>
+<p><strong>Trace and determinant.</strong> Every matrix of the two families is invertible, with determinant $1$; the identity has trace $2$ and the other matrices trace $0$. The algebra is simple and has zero divisors, and the invertibility of the four units does not extend to the complex span.</p>
 <h2 id="the-stitch-between-the-left-and-the-right">The Stitch Between the Left and the Right</h2>
 <p><strong>The transpose.</strong> For every $\tilde Q$,
 $$
-R^{2}(\tilde Q)=L^{2}(\tilde Q)^{\mathsf T},\qquad
-L^{2}(\tilde Q)=R^{2}(\tilde Q)^{\mathsf T}.
+R(\tilde Q)=L(\tilde Q)^{\mathsf T},\qquad
+L(\tilde Q)=R(\tilde Q)^{\mathsf T}.
 $$
 The stitch is the plain transpose. There is no sign matrix and no swap matrix in the compressed formula.</p>
 <p><strong>In full.</strong> For a matrix written entrywise,
@@ -409,16 +421,16 @@ is a trace over both factors; it does not descend to a trace of $A_1A_2^{\mathsf
 <h2 id="the-product">The Product</h2>
 <p><strong>The left product.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
-L^{2}(\tilde Q_1\tilde Q_2)=L^{2}(\tilde Q_1)L^{2}(\tilde Q_2),\qquad
-L^{2}(\tilde Q^n)=L^{2}(\tilde Q)^n,\qquad
-L^{2}(\tilde Q^{-1})=L^{2}(\tilde Q)^{-1},
+L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2),\qquad
+L(\tilde Q^n)=L(\tilde Q)^n,\qquad
+L(\tilde Q^{-1})=L(\tilde Q)^{-1},
 $$
 the last when either side exists, that is when $\langle\tilde Q\rangle_{\natural}\neq0$. In the matrix model this is the multiplicativity of $\mathsf M_2$.</p>
 <p><strong>The right product.</strong> The right action is anti-multiplicative:
 $$
-R^{2}(\tilde Q_1\tilde Q_2)=R^{2}(\tilde Q_2)R^{2}(\tilde Q_1),\qquad
-R^{2}(\tilde Q^n)=R^{2}(\tilde Q)^n,\qquad
-R^{2}(\tilde Q^{-1})=R^{2}(\tilde Q)^{-1}.
+R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
+R(\tilde Q^n)=R(\tilde Q)^n,\qquad
+R(\tilde Q^{-1})=R(\tilde Q)^{-1}.
 $$
 The reversal is the reversal of the order of the factors in the product $X\tilde Q$.</p>
 <p><strong>No commutation.</strong> The matrices $A$ and $A^{\mathsf T}$ need not commute. For $\tilde Q=\vec\Upsilon_+$,
@@ -487,7 +499,7 @@ $$
 \det(PAP^{-1})=\det A,\qquad
 \det A^{\mathsf T}=\det A .
 $$
-Every basis matrix has determinant $1$, so the four left matrices and the four right matrices lie in $SL_2(\mathbb{C})$.</p>
+Each matrix in the two families has determinant $1$, so the four left matrices and the four right matrices lie in $SL_2(\mathbb{C})$.</p>
 <p><strong>The characteristic polynomial.</strong> The characteristic polynomial is
 $$
 \chi_A(\lambda)=\lambda^2-(\operatorname{Tr}A)\lambda+\det A
@@ -688,12 +700,16 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <td>the $2\times2$ image</td>
 </tr>
 <tr>
-<td>$L^{2}(\tilde Q)=A$, $R^{2}(\tilde Q)=A^{\mathsf T}$</td>
+<td>$L(\tilde Q)=A$, $R(\tilde Q)=A^{\mathsf T}$</td>
 <td>the left and right matrices</td>
 </tr>
 <tr>
-<td>$L_\mu^{2}$, $R_\mu^{2}$</td>
-<td>the left and right matrices of the four units</td>
+<td>$\mathsf M_2(e_\mu)$</td>
+<td>the images of the four units: $\mathrm I_2$ and $-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$</td>
 </tr>
 <tr>
 <td>$\varrho$</td>
