@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The subject.</strong> The algebra $\mathbb{B}$ acts on itself by right multiplication. For an element $\tilde Q$, the map $X\mapsto X\tilde Q$ is complex-linear, so it is an operator of the ambient space of <em>The Endomorphisms of the Biquaternion Algebra</em>; it is written $R_{\tilde Q}$ and called the <strong>right regular operator</strong> of $\tilde Q$. This article studies the family of these operators on the algebra, without a frame.</p>
 <p><strong>What the article proves.</strong> Five things. The map $\tilde Q\mapsto R_{\tilde Q}$ is injective and complex-linear. It is anti-multiplicative, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$, so its image is a copy of the opposite algebra inside the operator algebra. The kernel and the image of a single $R_{\tilde Q}$ are the left annihilator and the left ideal $\mathbb{B}\tilde Q$. The rank has the same three values as the left family, and the operator is invertible exactly when $N(\tilde Q)\neq0$, with inverse $R_{\tilde Q^{-1}}$. Finally, the right matrix is the transpose of the left one, conjugated by a fixed involution $S$.</p>
-<p><strong>What the article does not do.</strong> The matrix of $R_{\tilde Q}$ is the subject of <em>Matrix Representations : The Right Regular Operators</em>: this article proves the operator statements, and the matrix article computes them in a frame and verifies the exchange entry by entry. The commutant of the two families is <em>The Commutant of the Two Regular Families</em>. The association of the two families with the plain form is <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>; this article states no adjoint identity.</p>
+<p><strong>What the article does not do.</strong> The matrix of $R_{\tilde Q}$ is the subject of <em>The Right Regular Operators on the Biquaternion Algebra</em>: this article proves the operator statements, and the matrix article computes them in a frame and verifies the exchange entry by entry. The commutant of the two families is <em>The Commutant of the Two Regular Families</em>. The association of the two families with the plain form is <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>; this article states no adjoint identity.</p>
 <p><strong>The letters.</strong> The operator is $R_{\tilde Q}$, the element is $\tilde Q$, and the argument is $X$. The letter $R$ names the right family and nothing else in this group; the closed ray of the Hermitian sandwich is written without it. The conventions of the four letters, the slots and the matrix are <em>Operator Family Conventions</em>; this article uses them and defines none of them.</p>
 <p><strong>Boundaries.</strong> The algebra is <em>The Biquaternion Algebra</em>; the operator space is <em>The Endomorphisms of the Biquaternion Algebra</em>; the left family is <em>The Left Regular Operators on the Biquaternion Algebra</em>; the matrix units are <em>Special Element and Peirce Conventions</em>; the norm is <em>Norm and Unitary Conventions</em>; the invertibility criterion of an element is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
 <h2 id="the-map-math17">The Map $R_{\tilde Q}$</h2>
@@ -122,14 +122,14 @@ $$</p>
 <p>It is a complex subspace of $\mathbb{B}$.</p>
 <p><strong>Proposition (the kernel).</strong> $\ker R_{\tilde Q}=\operatorname{Ann}_l(\tilde Q)$.</p>
 <p><em>Proof.</em> $R_{\tilde Q}(X)=0$ is $X\tilde Q=0$, which is the defining condition of the left annihilator.</p>
-<p><strong>The three cases.</strong> In the $2\times2$ model of <em>Matrix Representations : The Product, the Trace and the Determinant</em>, $X\tilde Q=0$ says that every row of $X$ is a left null vector of $\tilde Q$:</p>
+<p><strong>The three cases.</strong> In the $2\times2$ model of <em>The $M_2(\mathbb{C})$ Standard Peirce Representation</em>, $X\tilde Q=0$ says that every row of $X$ is a left null vector of $\tilde Q$:</p>
 <ul>
 <li>if $\tilde Q$ is a unit, the left annihilator is $0$, of complex dimension $0$;</li>
 <li>if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its left null space is a line, and the left annihilator is the complex two-dimensional space of matrices whose rows lie in that line;</li>
 <li>if $\tilde Q=0$, the annihilator is the whole algebra, of complex dimension $4$.</li>
 </ul>
 <p><strong>The two annihilators.</strong> The left annihilator is the kernel of $R_{\tilde Q}$ and the right annihilator is the kernel of $L_{\tilde Q}$. They coincide at the units, where both are zero, and at the zero element, where both are the whole algebra; for a general zero divisor they are different spaces, and the article keeps the two words apart.</p>
-<h3 id="the-left-ideal-math93">The Left Ideal $\mathbb{B}\tilde Q$</h3>
+<h3 id="the-left-ideal-math94">The Left Ideal $\mathbb{B}\tilde Q$</h3>
 <p><strong>Definition.</strong> The image of $R_{\tilde Q}$ is the set</p>
 <p>$$
 \mathbb{B}\tilde Q=\{X\tilde Q:X\in\mathbb{B}\},
@@ -158,12 +158,12 @@ $$</p>
 <p><strong>The middle case.</strong> The value two is the signature of the biquaternion algebra: a nonzero zero divisor has a complex two-dimensional left ideal and a complex two-dimensional left annihilator, and the two complex dimensions add to four. The left and the right families have the same three ranks, because the rank depends on the element and not on the side.</p>
 <p><strong>The rank is not the norm.</strong> The rank takes three values, the norm is a complex number, and the two are related only by the criterion: the rank is four exactly when the norm is nonzero. A zero norm leaves the two values two and zero, and whether the element is zero decides between them.</p>
 <h2 id="invertibility">Invertibility</h2>
-<h3 id="the-criterion-math118">The Criterion $N(\tilde Q)\neq0$</h3>
+<h3 id="the-criterion-math119">The Criterion $N(\tilde Q)\neq0$</h3>
 <p><strong>Theorem (the criterion).</strong> The operator $R_{\tilde Q}$ is invertible exactly when $N(\tilde Q)\neq0$.</p>
 <p><em>Proof.</em> If $R_{\tilde Q}$ is invertible, it is surjective, so there is an $X$ with $X\tilde Q=e_t$; then $\tilde Q$ has a left inverse, and in a finite-dimensional algebra a left inverse is a two-sided inverse, so $\tilde Q$ is a unit and $N(\tilde Q)\neq0$. Conversely, if $N(\tilde Q)\neq0$, then $\tilde Q$ is a unit, and $R_{\tilde Q}$ has the inverse $R_{\tilde Q^{-1}}$ by the law.</p>
 <p><strong>The criterion read on the element.</strong> The condition $N(\tilde Q)\neq0$ is the invertibility criterion of the algebra, fixed in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>: the units are exactly the elements of nonzero quaternionic norm. The operator criterion and the element criterion are the same criterion, read on the two objects.</p>
 <p><strong>The determinant reading.</strong> In the matrix article the determinant of $R_{\tilde Q}$ is $N(\tilde Q)^2$, so the criterion is also $\det R_{\tilde Q}\neq0$. The square is the square of the $2\times2$ determinant, as it is for the left family, and the operator is invertible exactly when that determinant is nonzero.</p>
-<h3 id="the-inverse-math136">The Inverse $R_{\tilde Q^{-1}}$</h3>
+<h3 id="the-inverse-math137">The Inverse $R_{\tilde Q^{-1}}$</h3>
 <p><strong>Theorem (the inverse).</strong> If $\tilde Q$ is a unit, then $R_{\tilde Q}$ is invertible and</p>
 <p>$$
 (R_{\tilde Q})^{-1}=R_{\tilde Q^{-1}}.
@@ -171,8 +171,8 @@ $$</p>
 <p><em>Proof.</em> $R_{\tilde Q}R_{\tilde Q^{-1}}=R_{\tilde Q^{-1}\tilde Q}=R_{e_t}=\mathrm{id}$, and the same on the other side, by the law of §<em>The Anti-Representation</em>.</p>
 <p><strong>The inverse is in the family.</strong> The inverse of a right multiplication is a right multiplication, by the inverse element. The right family is therefore closed under inversion, and the inverse is the one of the algebra. The operator inverse and the element inverse are the same operation, read on the two objects.</p>
 <p><strong>The norm of the inverse.</strong> $N(\tilde Q^{-1})=1/N(\tilde Q)$, by the multiplicativity of the norm. The identity shows that the inverse element is defined exactly where the criterion holds, and it is the same identity for the left family.</p>
-<h2 id="the-exchange-math142">The Exchange $S L_{\tilde Q}^{\mathsf T}S^{-1}$</h2>
-<h3 id="the-operator-math143">The Operator $S$</h3>
+<h2 id="the-exchange-math143">The Exchange $S L_{\tilde Q}^{\mathsf T}S^{-1}$</h2>
+<h3 id="the-operator-math144">The Operator $S$</h3>
 <p><strong>Definition.</strong> The <strong>exchange</strong> $S$ is the linear involution of $\mathbb{B}$ that fixes the two idempotents and exchanges the two mixed Peirce units:</p>
 <p>$$
 S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad S\vec\Upsilon_+=\vec\Upsilon_-,\qquad S\vec\Upsilon_-=\vec\Upsilon_+.
@@ -202,7 +202,7 @@ $$</p>
 [R_{\tilde Q}]=S\,[L_{\tilde Q}]^{\mathsf T}\,S^{-1}.
 $$</p>
 <p>The transpose is the matrix transpose in the Peirce frame.</p>
-<p><em>Proof.</em> In the Peirce frame $[L_{\tilde Q}]=I_2\otimes\mathsf M_2(\tilde Q)$, by <em>Matrix Representations : The Left Regular Operators</em>, §<em>The Rule</em>. The transpose of a tensor product is the tensor product of the transposes, and $I_2^{\mathsf T}=I_2$, so $[L_{\tilde Q}]^{\mathsf T}=I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip $S$ conjugates $A\otimes B$ to $B\otimes A$, so</p>
+<p><em>Proof.</em> In the Peirce frame $[L_{\tilde Q}]=I_2\otimes\mathsf M_2(\tilde Q)$, by <em>The Left Regular Operators on the Biquaternion Algebra</em>, §<em>The Rule</em>. The transpose of a tensor product is the tensor product of the transposes, and $I_2^{\mathsf T}=I_2$, so $[L_{\tilde Q}]^{\mathsf T}=I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip $S$ conjugates $A\otimes B$ to $B\otimes A$, so</p>
 <p>$$
 S\,[L_{\tilde Q}]^{\mathsf T}\,S^{-1}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 .
 $$</p>
@@ -263,9 +263,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-left-regular-operators-on-the-biquaternion-algebra.html">The Left Regular Operators on the Biquaternion Algebra</a>, for the mirror family and the two annihilators.</li>
-<li><a href="matrix-representations-the-right-regular-operators.html">Matrix Representations : The Right Regular Operators</a>, for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ and the verification of the exchange.</li>
+<li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for the matrix $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ and the verification of the exchange.</li>
 <li><a href="the-commutant-of-the-two-regular-families.html">The Commutant of the Two Regular Families</a>, for the commutation and the two centralisers.</li>
-<li><a href="matrix-representations-the-left-regular-operators.html">Matrix Representations : The Left Regular Operators</a>, for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$ transposed here.</li>
+<li><a href="the-left-regular-operators-on-the-biquaternion-algebra.html">The Left Regular Operators on the Biquaternion Algebra</a>, for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$ transposed here.</li>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient space and the natural conjugation.</li>
 <li><a href="conventions-of-the-operator-families.html">Operator Family Conventions</a>, for the letter $R$, the slots and the set names.</li>
 </ul>
