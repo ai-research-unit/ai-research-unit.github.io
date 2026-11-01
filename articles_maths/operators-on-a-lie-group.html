@@ -109,7 +109,7 @@ $$</p>
 \boxed{\;\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}}\;} ,
 $$</p>
 <p>from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $\mathrm{U}(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.</p>
-<p><em>Proof.</em> The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.</p>
+<p><em>Proof.</em> The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x_1, \ldots, x_n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.</p>
 <p><strong>Corollary.</strong> $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $\mathrm{U}(\mathrm{G})$ and $D_L(G)$ are isomorphic.</p>
 <p><em>Proof.</em> Generation and the filtration are the content of the theorem; the associated graded statement is the Poincaré--Birkhoff--Witt theorem.</p>
 <h2 id="the-bi-invariant-operators">The Bi-Invariant Operators</h2>
@@ -122,9 +122,9 @@ $$</p>
 <p><strong>Theorem (the centre is the bi-invariant algebra).</strong> The algebra $D_L(G) \cap D_R(G)$ of bi-invariant differential operators is the centre $Z(\mathrm{U}(\mathrm{G}))$ of the universal enveloping algebra, under the isomorphism of the preceding section.</p>
 <p><em>Proof.</em> A bi-invariant operator is left-invariant, hence of the form $u \in \mathrm{U}(\mathrm{G})$; the right invariance is equivalent to $\operatorname{Ad}_g u = u$ for all $g$, and since $\operatorname{Ad}_g$ is the exponential of $\operatorname{ad}$, to $\operatorname{ad}_Y u = 0$ for all $Y \in \mathrm{G}$, that is to the centrality of $u$.</p>
 <h3 id="the-casimir-operator">The Casimir Operator</h3>
-<p><strong>Definition.</strong> Let $\mathrm{G}$ be finite-dimensional and semisimple with Killing form $B$, and let $(X_i)$ be a basis of $\mathrm{G}$ with dual basis $(X^i)$ defined by $B(X_i, X^j) = \delta_i^j$. The <strong>Casimir element</strong> is</p>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be finite-dimensional and semisimple with Killing form $B$, and let $(X_i)$ be a basis of $\mathrm{G}$ with dual basis $(\check X_i)$ defined by $B(X_i, \check X_j) = \delta_{ij}$. The <strong>Casimir element</strong> is</p>
 <p>$$
-\Omega = \sum_i X_i X^i \ \in\ Z(\mathrm{U}(\mathrm{G})),
+\Omega = \sum_i X_i \check X_i \ \in\ Z(\mathrm{U}(\mathrm{G})),
 $$</p>
 <p>and the <strong>Casimir operator</strong> of $G$ is the bi-invariant differential operator it defines.</p>
 <p><strong>Theorem.</strong> The Casimir element is independent of the basis, it lies in the centre $Z(\mathrm{U}(\mathrm{G}))$, and in an irreducible representation of $G$ it acts as a scalar. Its definition, its eigenvalues and its role in the representation theory are <em>The Casimir Operator of a Lie Group</em>, below in this group.</p>
@@ -211,7 +211,7 @@ $$</p>
 <td>the centre, the bi-invariant operators</td>
 </tr>
 <tr>
-<td>$\Omega = \sum_i X_i X^i$</td>
+<td>$\Omega = \sum_i X_i \check X_i$</td>
 <td>the Casimir element of a semisimple algebra</td>
 </tr>
 <tr>

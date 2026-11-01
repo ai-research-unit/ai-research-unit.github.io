@@ -77,22 +77,8 @@ $$
 $$
 and the entries of its regular matrices are these coefficients with the signs of the multiplication table. The other articles call $\mathcal{E}$ the coefficient basis. This article calls it the e-basis, and writes $L_\mu^{e}$ and $R_\mu^{e}$ for the matrices of the four units. The superscript $e$ is a label, not an exponent: $L_x^{e}$ is the left matrix of $\vec e_x$ in the e-basis, and its square is written $(L_x^{e})^2$.</p>
 <p><strong>The result in one line.</strong> The four left matrices $L_\mu^{e}$ are signed permutations and form a basis of the left copy $\mathbb{B}_L$; the four right matrices $R_\mu^{e}$ are signed permutations and form a basis of the right copy $\mathbb{B}_R$. The left matrix of a general element is displayed below. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.</p>
-<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
-$$
-B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
-\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
-$$
-The four conjugations are
-$$
-\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,\qquad
-\overline{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z,
-$$
-$$
-\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z,\qquad
-\tilde Q^{\flat}=-\tilde Q^{*}.
-$$
-The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.</p>
-<p><strong>Boundaries.</strong> The algebra, the multiplication table and the four conjugations are <em>The Biquaternion Algebra</em> and <em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em>. The six subspaces are defined and decomposed in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>; this article reads their images in the e-basis. The six subspaces as matrix conditions, in the same basis, are <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
+<p><strong>The two copies.</strong> The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.</p>
+<p><strong>Boundaries.</strong> The algebra, the multiplication table and the four conjugations are <em>The Biquaternion Algebra</em> and <em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em>. The six subspaces are defined and decomposed in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>; this article reads their images in the e-basis. The six subspaces as matrix conditions, in the same basis, are <em>$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</em>. The same element in the standard Peirce frame is <em>$M_4(\mathbb{C})$ Standard Peirce Representation</em>.</p>
 <h2 id="the-e-basis">The e-Basis</h2>
 <p><strong>Definition.</strong> The e-basis is the ordered basis
 $$
@@ -205,29 +191,141 @@ $$
 $$
 A sum of basis matrices need not be invertible: $L_x^{e}+R_x^{e}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.</p>
 <h2 id="the-stitch-between-the-left-and-the-right">The Stitch Between the Left and the Right</h2>
-<p><strong>The sign matrix.</strong> Quaternion conjugation acts on a coordinate column by the diagonal matrix
+<p><strong>The switch matrix.</strong> Quaternion conjugation acts on a coordinate column by the matrix
 $$
-D=\operatorname{diag}(1,-1,-1,-1),\qquad
+D=
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&0&0\\
+0&0&-1&0\\
+0&0&0&-1
+\end{pmatrix},
+\qquad
 D^2=\mathrm I_4,\quad \det D=-1 .
 $$
-Its entries are $s_t=1$ and $s_x=s_y=s_z=-1$, the signs of $e_\mu^{\natural}=s_\mu e_\mu$.</p>
+Its entries are $s_t=1$ and $s_x=s_y=s_z=-1$, the signs of $e_\mu^{\natural}=s_\mu e_\mu$. The matrix $D$ is the switch between the left and the right: it acts on the left and on the right of the left matrix, and it produces the right matrix.</p>
 <p><strong>The stitch.</strong> The right matrix is obtained from the left by transposition and a sign on each side:
 $$
 R^{e}(\tilde Q)=D\,L^{e}(\tilde Q)^{\mathsf T}D
 =D\,L^{e}(\tilde Q^{\natural})\,D .
 $$
 The second form uses the transpose identity $L^{e}(\tilde X)^{\mathsf T}=L^{e}(\tilde X^{\natural})$.</p>
+<p><strong>The stitch in full.</strong> The three steps are displayed on a general element. The transpose of the left matrix is
+$$
+L^{e}(\tilde Q)^{\mathsf T}=
+\begin{pmatrix}
+Q_t&Q_x&Q_y&Q_z\\
+-Q_x&Q_t&Q_z&-Q_y\\
+-Q_y&-Q_z&Q_t&Q_x\\
+-Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix},
+$$
+the left multiplication by $D$ changes the sign of the last three rows,
+$$
+D\,L^{e}(\tilde Q)^{\mathsf T}=
+\begin{pmatrix}
+Q_t&Q_x&Q_y&Q_z\\
+Q_x&-Q_t&-Q_z&Q_y\\
+Q_y&Q_z&-Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&-Q_t
+\end{pmatrix},
+$$
+and the right multiplication by $D$ changes the sign of the last three columns. Written with the switch matrix displayed on both sides,
+$$
+R^{e}(\tilde Q)=
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&0&0\\
+0&0&-1&0\\
+0&0&0&-1
+\end{pmatrix}
+\begin{pmatrix}
+Q_t&Q_x&Q_y&Q_z\\
+-Q_x&Q_t&Q_z&-Q_y\\
+-Q_y&-Q_z&Q_t&Q_x\\
+-Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}
+\begin{pmatrix}
+1&0&0&0\\
+0&-1&0&0\\
+0&0&-1&0\\
+0&0&0&-1
+\end{pmatrix}
+=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+The two multiplications by $D$ are the two sign changes: one on the rows, one on the columns. Reading the last display entry by entry,
+$$
+R^{e}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L^{e}(\tilde Q)_{\nu\mu},
+$$
+so $R^{e}(\tilde Q)_{\mu\nu}$ is the transposed entry $L^{e}(\tilde Q)_{\nu\mu}$, kept when $\mu$ and $\nu$ are both scalar or both vector, and reversed when one is scalar and the other vector.</p>
 <p><strong>Why the stitch works.</strong> The $\mu\nu$ entry of $L^{e}(\tilde Q)$ is the coefficient of $e_\mu$ in $\tilde Qe_\nu$; the $\mu\nu$ entry of $R^{e}(\tilde Q)$ is the coefficient of $e_\mu$ in $e_\nu\tilde Q$. Conjugating $\tilde Q^{\natural}e_\nu$ gives $(\tilde Q^{\natural}e_\nu)^{\natural}=s_\nu\,e_\nu\tilde Q$, so the coefficient of $e_\mu$ in $e_\nu\tilde Q$ is $s_\mu s_\nu$ times the coefficient of $e_\mu$ in $\tilde Q^{\natural}e_\nu$. Hence
 $$
 R^{e}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L^{e}(\tilde Q^{\natural})_{\mu\nu}
 =D\,L^{e}(\tilde Q^{\natural})\,D .
-$$
-Each sign is one multiplication by $D$, one on the rows and one on the columns.</p>
+$$</p>
 <p><strong>The stitch on the bases.</strong> On the four units, $R_\mu^{e}=D(L_\mu^{e})^{\mathsf T}D$. Applying the formula twice returns $L^{e}(\tilde Q)$, because $D^2=\mathrm I_4$ and transposition is an involution. The stitch preserves the trace and the determinant, since neither transposition nor conjugation by a fixed matrix changes them:
 $$
 \operatorname{Tr}R^{e}(\tilde Q)=\operatorname{Tr}L^{e}(\tilde Q),\qquad
 \det R^{e}(\tilde Q)=\det L^{e}(\tilde Q).
 $$</p>
+<h2 id="the-switch-between-the-two-representations">The Switch Between the Two Representations</h2>
+<p><strong>The change matrix.</strong> The columns of
+$$
+S=\frac12
+\begin{pmatrix}
+1&0&0&1\\
+0&i&i&0\\
+0&1&-1&0\\
+i&0&0&-i
+\end{pmatrix}
+$$
+are the four vectors of the standard Peirce frame in the e-basis, the frame built from the root $\vec\Xi=i\vec e_z$:
+$$
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
+\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\quad
+\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y),\quad
+\tilde\Pi_-=\tfrac12(e_t-i\vec e_z).
+$$
+The inverse is
+$$
+S^{-1}=
+\begin{pmatrix}
+1&0&0&-i\\
+0&-i&1&0\\
+0&-i&-1&0\\
+1&0&0&i
+\end{pmatrix},
+\qquad
+\det S=-\tfrac14 .
+$$
+The determinant is the normalisation of the four frame vectors, not an invariant of the algebra. The matrix satisfies $S^{\dagger}S=\tfrac12\mathrm I_4$ and $S^{-1}=2S^{\dagger}$; the factor $\tfrac12$ is the common squared norm of the frame vectors.</p>
+<p><strong>The switch.</strong> The two representations are the same operator read in two frames:
+$$
+L^{e}(\tilde Q)=S\,L^{P}(\tilde Q)\,S^{-1},\qquad
+R^{e}(\tilde Q)=S\,R^{P}(\tilde Q)\,S^{-1},
+$$
+and conversely
+$$
+L^{P}(\tilde Q)=S^{-1}L^{e}(\tilde Q)S,\qquad
+R^{P}(\tilde Q)=S^{-1}R^{e}(\tilde Q)S.
+$$
+On the four units,
+$$
+L_\mu^{e}=S\,L_\mu^{P}S^{-1},\qquad
+R_\mu^{e}=S\,R_\mu^{P}S^{-1}.
+$$
+The coordinate columns change by
+$$
+p=S^{-1}q_e,\qquad q_e=S\,p,
+$$
+where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$ are the coefficients in the e-basis and in the Peirce frame.</p>
+<p><strong>A change of frame, not of operator.</strong> The switch conjugates the matrix and leaves the trace, the determinant and the characteristic polynomial unchanged. It is not a change of the algebra element and not a change of the left or right action; it is the same action written in the other basis. The two representations are therefore two displays of one representation, and the formulas of the product, the trace and the determinant below hold in both.</p>
 <h2 id="the-product">The Product</h2>
 <p><strong>The left product.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
@@ -429,7 +527,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <p><strong>The closure.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
 <h2 id="summary">Summary</h2>
 <p>The e-basis is the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; the three vector units enter the left and right matrices by one rule, and no direction is privileged. The four left matrices $L_\mu^{e}$ and the four right matrices $R_\mu^{e}$ are signed permutations and form bases of the left and right copies. The left matrix of a general element is the coefficient display with the signs of the multiplication table; the right matrix is obtained from it by transposition and the sign matrix $D$. The product is multiplicative on the left, anti-multiplicative on the right, and the two families commute.</p>
-<p>The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The stitch between the two matrices is $R^{e}(\tilde Q)=D L^{e}(\tilde Q)^{\mathsf T}D$, with $D=\operatorname{diag}(1,-1,-1,-1)$. The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table.</p>
+<p>The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The stitch between the two matrices is $R^{e}(\tilde Q)=D L^{e}(\tilde Q)^{\mathsf T}D$, with $D$ the switch matrix displayed in §<em>The Stitch Between the Left and the Right</em>. The switch from the Peirce frame to the e-basis is $L^{e}=S L^{P}S^{-1}$, $R^{e}=S R^{P}S^{-1}$, with $\det S=-\tfrac14$. The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -444,6 +542,10 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <td>the e-basis</td>
 </tr>
 <tr>
+<td>$\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+<td>the standard Peirce frame, built from $\vec\Xi=i\vec e_z$</td>
+</tr>
+<tr>
 <td>$L_\mu^{e}$, $R_\mu^{e}$</td>
 <td>the left and right matrices of the four units</td>
 </tr>
@@ -452,8 +554,16 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <td>the left and right matrices of $\tilde Q$</td>
 </tr>
 <tr>
-<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>the matrix of quaternion conjugation in the e-basis</td>
+<td>$D$, entries $(1,-1,-1,-1)$ on the diagonal</td>
+<td>the switch matrix, quaternion conjugation in the e-basis</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the change matrix, columns the frame vectors in the e-basis</td>
+</tr>
+<tr>
+<td>$P_\pm$, $X_\pm$</td>
+<td>the coefficients in the Peirce frame</td>
 </tr>
 <tr>
 <td>$s_\mu$</td>
@@ -482,6 +592,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 <li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the six subspaces and the three decompositions.</li>
 <li><a href="the-element-the-coordinates-and-the-conjugations.html">The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</a>, for the four conjugations and the coordinate systems.</li>
 <li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra and the multiplication table.</li>
+<li><a href="m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ Standard Peirce Representation</a>, for the same content in the standard Peirce frame, the pure swap stitch and the tensor displays.</li>
 <li><a href="m4c-model-the-six-subspaces-as-matrix-conditions.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions</a>, for the six subspaces read in the e-basis.</li>
 <li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant</a>, for the same invariants in the matrix model.</li>
 </ul>
