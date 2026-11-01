@@ -53,7 +53,7 @@ and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.
 
 **Proof.** The maps send the $n$-th filtered piece to itself, so they induce maps on the associated graded algebra; the action of $\sigma$ is the displayed one; the centre is preserved because an automorphism and an anti-automorphism of an algebra map central elements to central elements.
 
-**Corollary.** The Casimir element $\Omega=\sum x_ix^i$ of *The Casimir Operator* satisfies $\sigma(\Omega)=\Omega$ when the dual bases are adapted, and $\Theta(\Omega)=\Omega$ for the extension of an involution preserving the Killing form; the star structure fixes the Casimir element, which is the algebraic reason it is symmetric as an operator.
+**Corollary.** The Casimir element $\Omega=\sum_i x_i\check x_i$ of *The Casimir Operator* satisfies $\sigma(\Omega)=\Omega$ when the dual bases are adapted, and $\Theta(\Omega)=\Omega$ for the extension of an involution preserving the Killing form; the star structure fixes the Casimir element, which is the algebraic reason it is symmetric as an operator.
 
 ## The Principal Anti-Automorphism on $\mathrm{sl}(2,K)$
 

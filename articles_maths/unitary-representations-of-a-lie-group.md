@@ -39,7 +39,7 @@ $$
 
 *Proof.* The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $\mathrm{U}(\mathrm{G})$ is the universal property.
 
-**Corollary.** The Casimir element of *The Casimir Operator of a Lie Group* acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.
+**Corollary.** The Casimir element of *The Casimir Operator of a Lie Group* acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(\check X_i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.
 
 *Proof.* The operator is the sum of products of skew-adjoint operators, hence self-adjoint on the common analytic domain when the sum converges; the formula for the eigenvalue on a highest weight vector is that of *The Casimir Operator of a Lie Group*, and the self-adjointness is the standard ellipticity of the Casimir on the smooth vectors.
 

@@ -168,7 +168,7 @@ $$
 The map $T \mapsto T^*$ is linear and reverses composition: $(TS)^*=S^*T^*$. If $A$ is the matrix of $T$ in bases $\mathcal{B},\mathcal{C}$, then the matrix of $T^*$ in the dual bases $\mathcal{C}^*,\mathcal{B}^*$ is $A^{\mathsf{T}}$, because
 
 $$
-(A^{\mathsf{T}})^i{}_j = A^j{}_i = \text{($j$-th coordinate of $T(v_i)$)} = \text{($T^*(w^j)$ applied to $v_i$)} .
+(A^{\mathsf{T}})_{ij} = A_{ji} = \text{($j$-th coordinate of $T(v_i)$)} = \text{($T^*(w_j)$ applied to $v_i$)} .
 $$
 
 Hence the transpose operation on matrices is the coordinate form of the dual map, and the equality of row rank and column rank proved above is the statement $\operatorname{rk}T=\operatorname{rk}T^*$ combined with the identification of the row space with $\operatorname{im}T^*$.

@@ -8,7 +8,7 @@ The adaptation presents the shape of the bilinear theory but not its arithmetic.
 
 This article develops the obstruction, the adaptation and its uniqueness, the two halves, the two projections, the scalar theorem, the constants of the exchange and their count, the square, the standard example with the complex matrices and the biquaternion products, and the collapse outside characteristic not two. It is the sesquilinear companion of *The Symmetric and Antisymmetric Parts of an Algebra Product*: that article is the case $\varsigma = \mathrm{id}$ of this one, where the conjugation is the identity and the exchange is the plain one, and the two agree exactly on the bilinear products.
 
-The setting and the notation are those of *Sesqualgebras* and *The Sesquilinear Product*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$ with fixed ring $R^{\varsigma} = \{\lambda : \varsigma(\lambda) = \lambda\}$, and $A$ is an $R$-module carrying a $\varsigma$-sesquilinear product $\star$, additive in each variable, $R$-linear in the first variable and $\varsigma$-semilinear in the second. The product need not be associative, commutative or unital. The transposed product, the difference bracket $[x,y]_{\varsigma} = x\star y - y\star x$ and the structure constants $c^{k}{}_{ij}$ are those of *The Sesquilinear Product*; the two halves of the involution of the algebra are *Hermitian and Skew-Hermitian Elements*; the plain symmetrisation and the plain difference of this product are *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*, which own those two operations and are cited rather than repeated. The bilinear theory that this article adapts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the equation of the two halves with the fixed and the anti-fixed sets of an involution is the construction of *Involutive Algebras*, and the ternary product forced by the failure of associativity of the standard example is *The Sesquilinear Associator and the Ternary Product*. Throughout, $2$ is invertible in $R$, so that every halving below is available.
+The setting and the notation are those of *Sesqualgebras* and *The Sesquilinear Product*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$ with fixed ring $R^{\varsigma} = \{\lambda : \varsigma(\lambda) = \lambda\}$, and $A$ is an $R$-module carrying a $\varsigma$-sesquilinear product $\star$, additive in each variable, $R$-linear in the first variable and $\varsigma$-semilinear in the second. The product need not be associative, commutative or unital. The transposed product, the difference bracket $[x,y]_{\varsigma} = x\star y - y\star x$ and the structure constants $c_{kij}$ are those of *The Sesquilinear Product*; the two halves of the involution of the algebra are *Hermitian and Skew-Hermitian Elements*; the plain symmetrisation and the plain difference of this product are *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*, which own those two operations and are cited rather than repeated. The bilinear theory that this article adapts is *The Symmetric and Antisymmetric Parts of an Algebra Product*; the equation of the two halves with the fixed and the anti-fixed sets of an involution is the construction of *Involutive Algebras*, and the ternary product forced by the failure of associativity of the standard example is *The Sesquilinear Associator and the Ternary Product*. Throughout, $2$ is invertible in $R$, so that every halving below is available.
 
 The adjectives need fixing at the outset, because the corpus uses the word *Hermitian* for two different things and *conjugate-symmetric* for a third. On the side of the **elements**, the Hermitian elements are the fixed set of the involution $*$ of the algebra, $H(A) = \{x : x^{*} = x\}$, and they are *Hermitian and Skew-Hermitian Elements*. On the side of the **product**, *The Sesquilinear Product* calls the halves of the plain split the Hermitian and the skew-Hermitian parts, because the symmetrised part takes Hermitian values and the difference skew-Hermitian values; that is a statement about the *values* of an operation. Finally, on the side of a **form**, *Hermitian Geometry and the Unitary Group* calls a form conjugate-symmetric when $h(x,y) = \overline{h(y,x)}$. Here a fourth reading is used, a statement about the *operation*: a product is **conjugate-symmetric** when it is fixed by an exchange of its arguments twisted by a conjugation of the algebra. The four are different, §*The Two Halves* says where they part and where the third and the fourth agree, and the word *conjugate-symmetric* is reserved for the operation throughout.
 
@@ -289,33 +289,33 @@ for all $x, y$. The skew-conjugate-symmetric half is scalar-free, and the conjug
 **Proposition (the exchange on the constants).** Let $A$ be free with basis $(e_{1},\dots,e_{n})$ and write
 
 $$
-e_{i} \star e_{j} = \sum_{k} c^{k}{}_{ij}\, e_{k}, \qquad c(e_{i}) = \sum_{l} \gamma_{l}{}_{i}\, e_{l} .
+e_{i} \star e_{j} = \sum_{k} c_{kij}\, e_{k}, \qquad c(e_{i}) = \sum_{l} \gamma_{l}{}_{i}\, e_{l} .
 $$
 
 Then the constants of the exchanged product are
 
 $$
-e_{i} \star^{c} e_{j} = \sum_{l} d^{\,l}{}_{ij}\, e_{l},
-\qquad d^{\,l}{}_{ij} = \sum_{k} \gamma_{l}{}_{k}\, \varsigma\bigl(c^{k}{}_{ji}\bigr).
+e_{i} \star^{c} e_{j} = \sum_{l} d_{lij}\, e_{l},
+\qquad d_{lij} = \sum_{k} \gamma_{l}{}_{k}\, \varsigma\bigl(c_{kji}\bigr).
 $$
 
 When the basis is fixed by the conjugation, $c(e_{i}) = e_{i}$ for every $i$, this reads
 
 $$
-d^{\,k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr),
+d_{kij} = \varsigma\bigl(c_{kji}\bigr),
 $$
 
-and the conjugate-symmetric products are exactly those whose constants satisfy $d=c$, the **conjugate-symmetry** $c^{k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr)$.
+and the conjugate-symmetric products are exactly those whose constants satisfy $d=c$, the **conjugate-symmetry** $c_{kij} = \varsigma\bigl(c_{kji}\bigr)$.
 
-*Proof.* Compute the exchanged product on basis elements, $\star^{c}(e_{i}, e_{j}) = c(\star(e_{j}, e_{i}))$, expand the inner product and use the semilinearity of $c$, $c(\lambda e_{k}) = \varsigma(\lambda)c(e_{k})$; when each basis vector is fixed this is $\sum_{k}\varsigma(c^{k}{}_{ji})e_{k}$. The condition $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is the fixed-point equation of the previous line.
+*Proof.* Compute the exchanged product on basis elements, $\star^{c}(e_{i}, e_{j}) = c(\star(e_{j}, e_{i}))$, expand the inner product and use the semilinearity of $c$, $c(\lambda e_{k}) = \varsigma(\lambda)c(e_{k})$; when each basis vector is fixed this is $\sum_{k}\varsigma(c_{kji})e_{k}$. The condition $c_{kij} = \varsigma(c_{kji})$ is the fixed-point equation of the previous line.
 
-**Remark.** The conjugation therefore conjugates the constants as well as transposing their two lower indices, and the two operations are the two halves of the adaptation: the transposition is the exchange of the arguments, the conjugation is the repair of the parity. In the bilinear case $\varsigma = \mathrm{id}$ the conjugation of the constants is invisible and the condition is the ordinary symmetry $c^{k}{}_{ij} = c^{k}{}_{ji}$ of the structure constants of a commutative product.
+**Remark.** The conjugation therefore conjugates the constants as well as transposing their two argument indices, and the two operations are the two halves of the adaptation: the transposition is the exchange of the arguments, the conjugation is the repair of the parity. In the bilinear case $\varsigma = \mathrm{id}$ the conjugation of the constants is invisible and the condition is the ordinary symmetry $c_{kij} = c_{kji}$ of the structure constants of a commutative product.
 
 ### The Count
 
 **Proposition (the count over the fixed field).** Let $R$ be a field, $\varsigma$ a nontrivial involution of $R$, so that $R$ is of rank two over $R^{\varsigma}$, and let $c(e_{i}) = e_{i}$ on a basis of $n$ elements. Then the space of $\varsigma$-sesquilinear products is an $R^{\varsigma}$-module of rank $2n^{3}$, its conjugate-symmetric products form a submodule of rank $n^{3}$, and its skew products one of rank $n^{3}$.
 
-*Proof.* A product is the same thing as an arbitrary family of $n^{3}$ constants in $R$, by *The Sesquilinear Product*, §*The Axioms of the Product*, and $R$ has rank two over $R^{\varsigma}$, so the space of products has rank $2n^{3}$. The conjugate-symmetry $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is an additive involution of that module; its free data are the $n$ diagonal values, each in the fixed field, together with the entries above the diagonal, each an arbitrary element of $R$ that determines the entry below it, of which there are $n(n-1)$; the total per upper index is $n + n(n-1) = n^{2}$, and over the $n$ values of the upper index it is $n^{3}$. The skew products have the same count, since an arbitrary product is the sum of one of each.
+*Proof.* A product is the same thing as an arbitrary family of $n^{3}$ constants in $R$, by *The Sesquilinear Product*, §*The Axioms of the Product*, and $R$ has rank two over $R^{\varsigma}$, so the space of products has rank $2n^{3}$. The conjugate-symmetry $c_{kij} = \varsigma(c_{kji})$ is an additive involution of that module; its free data are the $n$ diagonal values, each in the fixed field, together with the entries above the diagonal, each an arbitrary element of $R$ that determines the entry below it, of which there are $n(n-1)$; the total per value of the first index is $n + n(n-1) = n^{2}$, and over the $n$ values of the first index it is $n^{3}$. The skew products have the same count, since an arbitrary product is the sum of one of each.
 
 | $n$ | products, $2n^{3}$ | conjugate-symmetric, $n^{3}$ | skew, $n^{3}$ |
 |---|---|---|---|
@@ -323,7 +323,7 @@ and the conjugate-symmetric products are exactly those whose constants satisfy $
 | 3 | 54 | 27 | 27 |
 | 4 | 128 | 64 | 64 |
 
-**Remark (the two counts compared).** In the bilinear theory the constants number $n^{3}$, of which the symmetric half takes $\binom{n+1}{2}n$ and the antisymmetric half $\binom{n}{2}n$, so the symmetric half is the larger of the two for every $n$. In the sesquilinear theory the space of products doubles, to $2n^{3}$ over the fixed field, and the two halves take $n^{3}$ each: **the conjugate-symmetric and the skew halves are of equal rank for every $n$, and the acquisition of the conjugation is exactly what pays for the second copy of the constants.** Per upper index the bilinear table carries $\binom{n+1}{2} + \binom{n}{2} = n^{2}$ independent constants, the sesquilinear table carries $n + n = 2n$.
+**Remark (the two counts compared).** In the bilinear theory the constants number $n^{3}$, of which the symmetric half takes $\binom{n+1}{2}n$ and the antisymmetric half $\binom{n}{2}n$, so the symmetric half is the larger of the two for every $n$. In the sesquilinear theory the space of products doubles, to $2n^{3}$ over the fixed field, and the two halves take $n^{3}$ each: **the conjugate-symmetric and the skew halves are of equal rank for every $n$, and the acquisition of the conjugation is exactly what pays for the second copy of the constants.** Per value of the first index the bilinear table carries $\binom{n+1}{2} + \binom{n}{2} = n^{2}$ independent constants, the sesquilinear table carries $n + n = 2n$.
 
 ---
 
@@ -488,7 +488,7 @@ $$
 
 is unique, with $p$ and $q$ idempotent, orthogonal and summing to the identity on the space of products, so that the conjugate-symmetric half and the skew half are independent data and either can be prescribed. The conjugate-symmetric half vanishes identically exactly for an exchange-anticommutative product and the skew half exactly for an exchange-symmetric one. The scalar form $s = \varepsilon \circ \star$ follows the split, its Hermitian part going to the conjugate-symmetric half and its skew part to the skew half; when $s$ is Hermitian, which is the case for the derived operation and for the complex matrices, the skew half is scalar-free and the **whole** scalar form lies in the conjugate-symmetric half, which is the sharpening the plain split does not give.
 
-The exchange conjugates the constants as well as transposing their lower indices, the conjugate-symmetric products being those with $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$, and over the fixed field the products have rank $2n^{3}$ while each half has rank $n^{3}$: the conjugate-symmetric and skew halves are of equal rank, in contrast with the bilinear counts $\binom{n+1}{2}n$ and $\binom{n}{2}n$. The square of an element is split by the conjugation into its fixed and anti-fixed parts, which are the diagonal values of the two halves, and the polarisation identity of the bilinear theory does **not** carry over: $(x+y)\star(x+y) - x\star x - y\star y$ is the plain symmetrisation and not the exchanged one, so the square map sees the plain split and not the adapted one.
+The exchange conjugates the constants as well as transposing their two argument indices, the conjugate-symmetric products being those with $c_{kij} = \varsigma(c_{kji})$, and over the fixed field the products have rank $2n^{3}$ while each half has rank $n^{3}$: the conjugate-symmetric and skew halves are of equal rank, in contrast with the bilinear counts $\binom{n+1}{2}n$ and $\binom{n}{2}n$. The square of an element is split by the conjugation into its fixed and anti-fixed parts, which are the diagonal values of the two halves, and the polarisation identity of the bilinear theory does **not** carry over: $(x+y)\star(x+y) - x\star x - y\star y$ is the plain symmetrisation and not the exchanged one, so the square map sees the plain split and not the adapted one.
 
 The construction needs $2$ invertible, and in characteristic two the two halves coincide and the split does not exist. For $\varsigma = \mathrm{id}$ the article reduces to *The Symmetric and Antisymmetric Parts of an Algebra Product*, and when $c = \mathrm{id}$ and $\varsigma \neq \mathrm{id}$ there is no conjugation and therefore no exchange.
 
@@ -505,7 +505,7 @@ The construction needs $2$ invertible, and in characteristic two the two halves 
 | $\star_{+}$, $\star_{-}$ | The conjugate-symmetric and skew-conjugate-symmetric parts, $\tfrac12(x\star y \pm c(y\star x))$ |
 | $p$, $q$ | The projections of a product onto its two halves, $p^{2} = p$, $q^{2} = q$, $pq = 0$, $p + q = \mathrm{id}$ |
 | $\varepsilon$, $s = \varepsilon \circ \star$ | An additive $R$-linear form compatible with $c$; the scalar form of the product |
-| $c^{k}{}_{ij}$, $\gamma_{l}{}_{i}$ | The structure constants $e_{i}\star e_{j} = \sum_{k}c^{k}{}_{ij}e_{k}$, and the matrix of the conjugation $c(e_{i}) = \sum_{l}\gamma_{l}{}_{i}e_{l}$ |
+| $c_{kij}$, $\gamma_{l}{}_{i}$ | The structure constants $e_{i}\star e_{j} = \sum_{k}c_{kij}e_{k}$, and the matrix of the conjugation $c(e_{i}) = \sum_{l}\gamma_{l}{}_{i}e_{l}$ |
 
 ## Further Reading
 

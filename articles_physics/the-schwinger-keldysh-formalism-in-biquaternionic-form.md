@@ -46,16 +46,16 @@ with the relative sign between the two branches. The two-branch action is the di
 
 **The doubled Green's functions.** The basic objects are the branch-indexed two-point functions
 $$
-G^{ab}(x,y) = -i\big\langle T_{\mathcal{C}}\,\tilde\Phi_a(x)\,\tilde\Phi_b(y)\big\rangle ,
+G_{ab}(x,y) = -i\big\langle T_{\mathcal{C}}\,\tilde\Phi_a(x)\,\tilde\Phi_b(y)\big\rangle ,
 \qquad a,b\in\{+,-\},
 $$
-whose components are the time-ordered ($G^{++}$), anti-time-ordered ($G^{--}$), and mixed ($G^{+-}$, $G^{-+}$) functions. They are not independent: they satisfy the sum rules
+whose components are the time-ordered ($G_{++}$), anti-time-ordered ($G_{--}$), and mixed ($G_{+-}$, $G_{-+}$) functions. They are not independent: they satisfy the sum rules
 $$
-G^{++}+G^{--} = G^{+-}+G^{-+} = G^K ,
+G_{++}+G_{--} = G_{+-}+G_{-+} = G^K ,
 \qquad
-G^{++}-G^{+-}=G^R ,
+G_{++}-G_{+-}=G^R ,
 \qquad
-G^{+-}-G^{--}=G^A ,
+G_{+-}-G_{--}=G^A ,
 $$
 which define the Keldysh, retarded, and advanced functions. These identities are algebraic and are the skeleton of the whole formalism; they hold for biquaternion-valued fields as they stand, because they involve only the branch index.
 
@@ -101,17 +101,17 @@ R^2 = I_2 ,
 $$
 so $R\in O(2)$. The group $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ is the group of the branch-space rotations, and its $\mathbb{Z}_2$ subgroup is the exchange of the two branches, i.e. the reversal of the contour's orientation. The same group governs the one-mode Bogoliubov transformations of the companion article on Bogoliubov transformations; the $\mathbb{Z}_2$ there is the particle–hole exchange, and here it is the branch exchange. That the two are the same $O(2)$ is a statement about the two-dimensional real orthogonal group, not an identification of the two physical operations.
 
-**The rotated matrix.** Rotating the CTP matrix $G=\left(\begin{smallmatrix}G^{++}&G^{+-}\\G^{-+}&G^{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
+**The rotated matrix.** Rotating the CTP matrix $G=\left(\begin{smallmatrix}G_{++}&G_{+-}\\G_{-+}&G_{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
 $$
 \boxed{\;\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}\;}.
 $$
-The $qq$ entry vanishes identically. With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
+The $qq$ entry vanishes identically. With the consistent real set $G_{++}=2.5$, $G_{+-}=1$, $G_{-+}=3$, $G_{--}=1.5$ (so that $G_{++}+G_{--}=G_{+-}+G_{-+}=4$), the rotation gives
 $$
 \mathcal G = \begin{pmatrix} 4 & 1.5 \\ -0.5 & 0\end{pmatrix},
 \qquad
-G^R=G^{++}-G^{+-}=1.5 ,
+G^R=G_{++}-G_{+-}=1.5 ,
 \qquad
-G^A=G^{+-}-G^{--}=-0.5 ,
+G^A=G_{+-}-G_{--}=-0.5 ,
 \qquad
 G^K=4 ,
 $$
@@ -192,9 +192,9 @@ Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\
 $$
 one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as its source derivatives; the Legendre transform in both sources gives the two-particle-irreducible effective action, whose stationarity is the Kadanoff–Baym equation. This is the contour version of *The Generating Functional and the Effective Action in Biquaternionic Form*, with the fields and sources taking values in the module and with one extra external index. The biquaternion content is unchanged: the sources are module-valued, the quadratic operator is the biquaternion-norm operator, and the sector factorization holds whenever the operator is central.
 
-**The CTP Feynman rules.** Each internal line is the branch-indexed propagator $G^{ab}$ (or its rotated form); each vertex carries the branch index of the contour leg on which it sits; each internal vertex is summed over the branches with the relative sign $+$ for the forward leg and $-$ for the backward leg; and the external legs carry the branch indices appropriate to the observable, which are $+$ and $-$ for an in-in matrix element and the rotated components for a physical response. The contour's closing is what enforces the in-in boundary condition, and it is a rule of the formalism and not of the algebra.
+**The CTP Feynman rules.** Each internal line is the branch-indexed propagator $G_{ab}$ (or its rotated form); each vertex carries the branch index of the contour leg on which it sits; each internal vertex is summed over the branches with the relative sign $+$ for the forward leg and $-$ for the backward leg; and the external legs carry the branch indices appropriate to the observable, which are $+$ and $-$ for an in-in matrix element and the rotated components for a physical response. The contour's closing is what enforces the in-in boundary condition, and it is a rule of the formalism and not of the algebra.
 
-**The largest-time equation.** The invariance of the contour integral under a deformation of the contour leads to the largest-time equation, the relation among the branch functions that expresses causality; it is the statement that the $G^{ab}$ are not independent but are tied by the contour's closure. The equation is standard and is cited; in the framework it is a relation among module-valued functions with a central thermal factor at equilibrium and no thermal factor away from it. The algebra contributes the value space and the sector decomposition, and nothing to the causal relation itself.
+**The largest-time equation.** The invariance of the contour integral under a deformation of the contour leads to the largest-time equation, the relation among the branch functions that expresses causality; it is the statement that the $G_{ab}$ are not independent but are tied by the contour's closure. The equation is standard and is cited; in the framework it is a relation among module-valued functions with a central thermal factor at equilibrium and no thermal factor away from it. The algebra contributes the value space and the sector decomposition, and nothing to the causal relation itself.
 
 ## What Is Established and What Is Interpretation
 
@@ -229,7 +229,7 @@ brings the matrix of Green's functions to
 $$
 \mathcal G=\begin{pmatrix}G^K&G^R\\G^A&0\end{pmatrix},
 $$
-with the $qq$ entry exactly zero; this was verified on the consistent set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$, which gives $G^R=1.5$, $G^A=-0.5$, $G^K=4$, and the rotated matrix $\left(\begin{smallmatrix}4&1.5\\-0.5&0\end{smallmatrix}\right)$. At equilibrium the fluctuation–dissipation relation
+with the $qq$ entry exactly zero; this was verified on the consistent set $G_{++}=2.5$, $G_{+-}=1$, $G_{-+}=3$, $G_{--}=1.5$, which gives $G^R=1.5$, $G^A=-0.5$, $G^K=4$, and the rotated matrix $\left(\begin{smallmatrix}4&1.5\\-0.5&0\end{smallmatrix}\right)$. At equilibrium the fluctuation–dissipation relation
 $$
 G^K(\omega)=\coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)=\big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big)
 $$
@@ -244,10 +244,10 @@ was checked for a model retarded function at $\beta=2$ and several frequencies; 
 | $\tilde\Phi_\pm$ | Field on the plus / minus branch |
 | $\mathbb{C}^2_{\mathrm{br}}$, $a,b\in\{+,-\}$ | Branch space and branch index (external to $\mathbb{B}$) |
 | $\mathcal{V}_{\mathrm{CTP}}=\mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}}$ | Doubled field space |
-| $G^{ab}=-i\langle T_{\mathcal{C}}\tilde\Phi_a\tilde\Phi_b\rangle$ | Branch-indexed Green's functions |
-| $G^{++},G^{--},G^{+-},G^{-+}$ | Time-ordered, anti-time-ordered, mixed functions |
-| $G^K=G^{++}+G^{--}=G^{+-}+G^{-+}$ | Keldysh component |
-| $G^R=G^{++}-G^{+-}$, $G^A=G^{+-}-G^{--}$ | Retarded and advanced functions |
+| $G_{ab}=-i\langle T_{\mathcal{C}}\tilde\Phi_a\tilde\Phi_b\rangle$ | Branch-indexed Green's functions |
+| $G_{++},G_{--},G_{+-},G_{-+}$ | Time-ordered, anti-time-ordered, mixed functions |
+| $G^K=G_{++}+G_{--}=G_{+-}+G_{-+}$ | Keldysh component |
+| $G^R=G_{++}-G_{+-}$, $G^A=G_{+-}-G_{--}$ | Retarded and advanced functions |
 | $R=\frac{1}{\sqrt2}\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)\in O(2)$ | Keldysh rotation; $\det R=-1$, $R^2=I_2$ |
 | $\tilde\Phi_{cl},\tilde\Phi_q$ | Classical / quantum components |
 | $\mathcal G=\left(\begin{smallmatrix}G^K&G^R\\G^A&0\end{smallmatrix}\right)$ | Rotated Green's-function matrix ($qq$ entry $0$) |

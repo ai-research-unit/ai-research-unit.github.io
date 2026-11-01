@@ -71,7 +71,7 @@ $$
 
 from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $\mathrm{U}(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.
 
-*Proof.* The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.
+*Proof.* The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x_1, \ldots, x_n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.
 
 **Corollary.** $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $\mathrm{U}(\mathrm{G})$ and $D_L(G)$ are isomorphic.
 
@@ -95,10 +95,10 @@ extending the adjoint representation of $G$ on $\mathrm{G}$; its derivative at $
 
 ### The Casimir Operator
 
-**Definition.** Let $\mathrm{G}$ be finite-dimensional and semisimple with Killing form $B$, and let $(X_i)$ be a basis of $\mathrm{G}$ with dual basis $(X^i)$ defined by $B(X_i, X^j) = \delta_i^j$. The **Casimir element** is
+**Definition.** Let $\mathrm{G}$ be finite-dimensional and semisimple with Killing form $B$, and let $(X_i)$ be a basis of $\mathrm{G}$ with dual basis $(\check X_i)$ defined by $B(X_i, \check X_j) = \delta_{ij}$. The **Casimir element** is
 
 $$
-\Omega = \sum_i X_i X^i \ \in\ Z(\mathrm{U}(\mathrm{G})),
+\Omega = \sum_i X_i \check X_i \ \in\ Z(\mathrm{U}(\mathrm{G})),
 $$
 
 and the **Casimir operator** of $G$ is the bi-invariant differential operator it defines.
@@ -189,7 +189,7 @@ A Lie group carries the monoid of its smooth self-maps, whose units are the diff
 | $X^{\mathrm{lift}}$ | the left-invariant vector field determined by $X$ |
 | $\mathrm{U}(\mathrm{G}) \cong D_L(G)$ | the isomorphism of the enveloping algebra with the left-invariant operators |
 | $Z(\mathrm{U}(\mathrm{G})) = D_L(G) \cap D_R(G)$ | the centre, the bi-invariant operators |
-| $\Omega = \sum_i X_i X^i$ | the Casimir element of a semisimple algebra |
+| $\Omega = \sum_i X_i \check X_i$ | the Casimir element of a semisimple algebra |
 | $(f*h)(x) = \int_G f(y)h(y^{-1}x)\,dy$ | the convolution of functions |
 | $\lambda(f)h = f*h$ | the convolution operator |
 | $\mathcal{D}_e(G) \cong \mathrm{U}(\mathrm{G})$ | the distributions supported at the identity |

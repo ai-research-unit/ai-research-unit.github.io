@@ -231,7 +231,7 @@ by the factorisation, and the Laplacian of an $A$-valued function is the $A$-val
 
 **Theorem (maximum principle).** If $f$ is left regular on a domain $\Omega$ and the Euclidean norm $\|f\|$ attains its maximum at an interior point of $\Omega$, then $f$ is constant.
 
-*Proof.* Each component of $f$ is harmonic by the previous theorem, so $\|f\|^2 = \sum_\alpha (f^\alpha)^2$ is a sum of squares of harmonic functions. A sum of squares of harmonic functions is subharmonic: for each squared term, $\Delta (u^2) = 2|\nabla u|^2 + 2u\Delta u = 2|\nabla u|^2 \geq 0$, and a sum of subharmonic functions is subharmonic. A subharmonic function that attains its maximum in the interior of a connected domain is constant, so $\|f\|^2$ is constant, and from $\Delta \|f\|^2 = 2\sum_\alpha |\nabla f^\alpha|^2 = 0$ each component is constant.
+*Proof.* Each component of $f$ is harmonic by the previous theorem, so $\|f\|^2 = \sum_\alpha (f_\alpha)^2$ is a sum of squares of harmonic functions. A sum of squares of harmonic functions is subharmonic: for each squared term, $\Delta (u^2) = 2|\nabla u|^2 + 2u\Delta u = 2|\nabla u|^2 \geq 0$, and a sum of subharmonic functions is subharmonic. A subharmonic function that attains its maximum in the interior of a connected domain is constant, so $\|f\|^2$ is constant, and from $\Delta \|f\|^2 = 2\sum_\alpha |\nabla f_\alpha|^2 = 0$ each component is constant.
 
 **Theorem (Liouville).** If $f$ is left regular on all of $A$ and $\|f\|$ is bounded, then $f$ is constant.
 

@@ -26,9 +26,9 @@ $$
 \dim \operatorname{Sym}^k(V^*) = \binom{n+k-1}{k}.
 $$
 
-*Proof.* The monomials in the $e^i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols.
+*Proof.* The monomials in the $\check e_i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols.
 
-**Example.** $\operatorname{Sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $e^ie^j$ for $i\leq j$. The space $\operatorname{Sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.
+**Example.** $\operatorname{Sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $\check e_i\check e_j$ for $i\leq j$. The space $\operatorname{Sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.
 
 ### Symmetric Tensors under the Orthogonal Group
 

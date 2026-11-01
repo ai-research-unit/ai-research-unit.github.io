@@ -252,12 +252,12 @@ $$
 For a general semisimple $\mathrm{G}$ the tensor product of two irreducible modules decomposes as
 
 $$
-V(\lambda) \otimes V(\mu) \cong \bigoplus_{\nu} V(\nu)^{\oplus c_{\lambda\mu}^{\nu}},
+V(\lambda) \otimes V(\mu) \cong \bigoplus_{\nu} V(\nu)^{\oplus c_{\lambda\mu\nu}},
 $$
 
-with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the character formula: one divides the product of the two characters by the Weyl denominator and expands. For $\mathrm{G} = \mathrm{SL}(n)$ the multiplicities are the **Littlewood–Richardson coefficients**, the same integers that multiply Schur functions in the symmetric algebra, so the representation theory of $\mathrm{SL}(n)$ and the combinatorics of symmetric functions are two descriptions of one structure.
+with multiplicities $c_{\lambda\mu\nu}$ that are computable from the character formula: one divides the product of the two characters by the Weyl denominator and expands. For $\mathrm{G} = \mathrm{SL}(n)$ the multiplicities are the **Littlewood–Richardson coefficients**, the same integers that multiply Schur functions in the symmetric algebra, so the representation theory of $\mathrm{SL}(n)$ and the combinatorics of symmetric functions are two descriptions of one structure.
 
-**Example.** For $\mathrm{SL}(2)$ the multiplicities $c_{mn}^{j}$ are all $0$ or $1$, and they are $1$ exactly on the range of the Clebsch–Gordan theorem above. This is the simplest instance of the general phenomenon that the tensor-product multiplicities are bounded above by the multiplicities in the corresponding algebra of symmetric functions, with equality for $\mathrm{SL}(n)$.
+**Example.** For $\mathrm{SL}(2)$ the multiplicities $c_{mnj}$ are all $0$ or $1$, and they are $1$ exactly on the range of the Clebsch–Gordan theorem above. This is the simplest instance of the general phenomenon that the tensor-product multiplicities are bounded above by the multiplicities in the corresponding algebra of symmetric functions, with equality for $\mathrm{SL}(n)$.
 
 ### The Casimir Element
 

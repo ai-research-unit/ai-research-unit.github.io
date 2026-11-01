@@ -77,7 +77,7 @@ $$
 For a pure vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
 
 $$
-\vec e_k^{b}=\tilde u\,\vec e_k\,\tilde u^{*},
+\vec e_{k,b}=\tilde u\,\vec e_k\,\tilde u^{*},
 $$
 
 obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\alpha$ about $\vec u$ is $\tilde u=\cos\frac\alpha2+\sin\frac\alpha2\vec u$, and at $\alpha=2\pi$ it is $\tilde u=-e_t$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\alpha$, in the sense of the standard definition $d\vec e_k/dt'=\vec\omega\times \vec e_k$; the logarithmic derivatives of the following section use that sign.
@@ -344,7 +344,7 @@ The rigid body is described in the biquaternion algebra as follows.
 |---|---|
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Orientation rotor (unit real quaternion) |
 | $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ | Rotation by rotor conjugation |
-| $\vec e_k^{b}=\tilde u\vec e_k\tilde u^{*}$ | Body axes |
+| $\vec e_{k,b}=\tilde u\vec e_k\tilde u^{*}$ | Body axes |
 | $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ | Body-frame angular velocity |
 | $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}=\tilde u\vec\omega_b\tilde u^{*}$ | Space-frame angular velocity |
 | $I(\vec\omega_b)=\sum_kI_k\omega_k\vec e_k$ | Inertia operator (principal frame) |

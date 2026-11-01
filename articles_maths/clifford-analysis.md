@@ -83,7 +83,7 @@ The factorisation is the reason the Clifford case is the favourable one: the sec
 3. (**Liouville**) a monogenic function on all of $\mathbb{R}^{m+1}$ with bounded norm is constant;
 4. (**identity**) two monogenic functions on a domain that agree on a set with an accumulation point agree everywhere.
 
-*Proof.* If $Df=0$ then $\Delta f = \bar DDf = 0$, so each component of $f$ is harmonic; harmonic functions are real-analytic and satisfy the mean value property. The maximum principle follows because $\|f\|^2$ is a sum of squares of harmonic functions and hence subharmonic, and a subharmonic function attaining an interior maximum is constant; then $\Delta\|f\|^2=2\sum_\alpha|\nabla f^\alpha|^2=0$ forces the components to be constant. Liouville is the same argument applied on all of $\mathbb{R}^{m+1}$, and the identity theorem is real-analyticity on a connected set.
+*Proof.* If $Df=0$ then $\Delta f = \bar DDf = 0$, so each component of $f$ is harmonic; harmonic functions are real-analytic and satisfy the mean value property. The maximum principle follows because $\|f\|^2$ is a sum of squares of harmonic functions and hence subharmonic, and a subharmonic function attaining an interior maximum is constant; then $\Delta\|f\|^2=2\sum_\alpha|\nabla f_\alpha|^2=0$ forces the components to be constant. Liouville is the same argument applied on all of $\mathbb{R}^{m+1}$, and the identity theorem is real-analyticity on a connected set.
 
 ## The Cauchy Integral Formula
 

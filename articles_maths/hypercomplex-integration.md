@@ -27,7 +27,7 @@ $$
 \int_\gamma d\xi\, f(\xi) = \int_a^b \gamma'(t)\, f(\gamma(t))\, dt.
 $$
 
-The integral of a path is defined coordinatewise: writing $f = \sum_\alpha f^\alpha e_\alpha$ and $\gamma = \sum_\alpha \gamma_\alpha e_\alpha$, the product $f(\gamma(t))\gamma'(t)$ expands by the multiplication of $A$, and each of the $m$ resulting real integrals is an ordinary Riemann integral.
+The integral of a path is defined coordinatewise: writing $f = \sum_\alpha f_\alpha e_\alpha$ and $\gamma = \sum_\alpha \gamma_\alpha e_\alpha$, the product $f(\gamma(t))\gamma'(t)$ expands by the multiplication of $A$, and each of the $m$ resulting real integrals is an ordinary Riemann integral.
 
 The two integrals differ for non-commutative $A$, and the order of the factors is part of the notation. For commutative $A$ they coincide. When $\gamma$ is a closed path the integral is called the **contour integral** of $f$ around $\gamma$, and it is the quantity to which the classical Cauchy theorem refers.
 

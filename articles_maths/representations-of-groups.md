@@ -182,16 +182,16 @@ Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete 
 Let $V_i\otimes V_j$ be the tensor product with the diagonal action of §Basic operations. Since the tensor product character is $\chi_i\chi_j$, the multiplicities in its decomposition are
 
 $$
-V_i \otimes V_j \cong \bigoplus_{k=1}^{r}\bigl(V_k\bigr)^{\oplus c_{ij}^{k}}, \qquad c_{ij}^{k}=\langle \chi_i\chi_j,\chi_k\rangle_G=\frac{1}{|G|}\sum_{g \in G}\chi_i(g)\chi_j(g)\overline{\chi_k(g)}.
+V_i \otimes V_j \cong \bigoplus_{k=1}^{r}\bigl(V_k\bigr)^{\oplus c_{ijk}}, \qquad c_{ijk}=\langle \chi_i\chi_j,\chi_k\rangle_G=\frac{1}{|G|}\sum_{g \in G}\chi_i(g)\chi_j(g)\overline{\chi_k(g)}.
 $$
 
-The integers $c_{ij}^{k}$ are the **Clebsch–Gordan coefficients**, or multiplicities, of the tensor product. They are non-negative integers, and they are symmetric in the first two indices, $c_{ij}^{k}=c_{ji}^{k}$, because $V_i\otimes V_j\cong V_j\otimes V_i$. They are not symmetric under an arbitrary permutation of $i,j,k$: a coefficient is the dimension of a space of invariants,
+The integers $c_{ijk}$ are the **Clebsch–Gordan coefficients**, or multiplicities, of the tensor product. They are non-negative integers, and they are symmetric in the first two indices, $c_{ijk}=c_{jik}$, because $V_i\otimes V_j\cong V_j\otimes V_i$. They are not symmetric under an arbitrary permutation of $i,j,k$: a coefficient is the dimension of a space of invariants,
 
 $$
-c_{ij}^{k}=\dim_{\mathbb{C}}\bigl(V_i\otimes V_j\otimes V_k^*\bigr)^{G},
+c_{ijk}=\dim_{\mathbb{C}}\bigl(V_i\otimes V_j\otimes V_k^*\bigr)^{G},
 $$
 
-and permuting the labels moves the dual from one tensor factor to another, so the general symmetry is $c_{ij}^{k}=c_{i^*j^*}^{k^*}$, obtained by dualising all three labels, because $\dim_{\mathbb{C}}W^{G}=\dim_{\mathbb{C}}(W^*)^{G}$. When every irreducible representation is self-dual, equivalently when every irreducible character is real-valued, the dual may be dropped and the coefficient is then symmetric under every permutation of $i,j,k$, as it is for $S_3$ below; for $G=\mathbb{Z}/3\mathbb{Z}$, whose nontrivial characters are not real-valued, $c_{11}^{2}=1$ while $c_{12}^{1}=0$, so the symmetry fails as soon as an irreducible representation non-isomorphic to its dual occurs. The coefficients define the multiplication of the **representation ring** or **character ring** $R(G)$, the free abelian group on the irreducible characters with product induced by the tensor product. The identity element of $R(G)$ is the class of the trivial one-dimensional representation, and $\chi_i\chi_j=\sum_k c_{ij}^k\chi_k$ is the structure-constant formula.
+and permuting the labels moves the dual from one tensor factor to another, so the general symmetry is $c_{ijk}=c_{i^*j^*k^*}$, obtained by dualising all three labels, because $\dim_{\mathbb{C}}W^{G}=\dim_{\mathbb{C}}(W^*)^{G}$. When every irreducible representation is self-dual, equivalently when every irreducible character is real-valued, the dual may be dropped and the coefficient is then symmetric under every permutation of $i,j,k$, as it is for $S_3$ below; for $G=\mathbb{Z}/3\mathbb{Z}$, whose nontrivial characters are not real-valued, $c_{112}=1$ while $c_{121}=0$, so the symmetry fails as soon as an irreducible representation non-isomorphic to its dual occurs. The coefficients define the multiplication of the **representation ring** or **character ring** $R(G)$, the free abelian group on the irreducible characters with product induced by the tensor product. The identity element of $R(G)$ is the class of the trivial one-dimensional representation, and $\chi_i\chi_j=\sum_k c_{ijk}\chi_k$ is the structure-constant formula.
 
 **Example.** For $G=S_3$ the irreducible complex characters are
 
@@ -213,7 +213,7 @@ $$
 V_{\mathrm{std}} \otimes V_{\mathrm{std}} \cong V_{\mathrm{triv}} \oplus V_{\mathrm{sign}} \oplus V_{\mathrm{std}},
 $$
 
-while $V_{\mathrm{std}}\otimes V_{\mathrm{sign}}\cong V_{\mathrm{std}}$. All these multiplicities were recomputed from the character table above by the formula for $c_{ij}^k$.
+while $V_{\mathrm{std}}\otimes V_{\mathrm{sign}}\cong V_{\mathrm{std}}$. All these multiplicities were recomputed from the character table above by the formula for $c_{ijk}$.
 
 **The Lie-theoretic analogue.** For a compact Lie group the same formalism applies with the group algebra replaced by the algebra of representative functions and the finite sums by integrals; the classical Clebsch–Gordan rule for the representations of $\mathrm{SL}(2,\mathbb{C})$,
 
@@ -271,7 +271,7 @@ with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8
 
 A representation of a group $G$ over a field $F$ is a group homomorphism $G\to GL_F(V)$, equivalently a left module over the group algebra $F[G]$, and the two notions form equivalent categories. Submodules, quotients, direct sums, duality and tensor products of representations are the corresponding module constructions, the tensor product existing because $F[G]$ is a Hopf algebra with comultiplication $\Delta(g)=g\otimes g$. When $G$ is finite and $\operatorname{char} F$ does not divide $|G|$, Maschke's theorem makes $F[G]$ semisimple and every representation completely reducible; the Wedderburn–Artin theorem then writes $F[G]\cong\prod_i M_{n_i}(D_i)$, with $|G|=\sum_i n_i^2\dim_F D_i$, and over an algebraically closed field of characteristic zero this is $|G|=\sum_i d_i^2$ with the number of factors equal to the number of conjugacy classes.
 
-Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class function, additive on direct sums, multiplicative on tensor products, and the irreducible characters are orthonormal under $\langle\chi,\psi\rangle_G=|G|^{-1}\sum_g\chi(g)\overline{\psi(g)}$; the second orthogonality relation gives orthogonality down the columns of the character table, so that the number of irreducible characters equals the number of conjugacy classes, and the multiplicity of an irreducible in any representation is an inner product of characters. The regular representation has character $|G|\delta_{g,1}$ and decomposes as $\bigoplus_i V_i^{\oplus d_i}$, so its dimension identity is $\sum_i d_i^2=|G|$. Tensor products decompose with the Clebsch–Gordan multiplicities $c_{ij}^k=\langle\chi_i\chi_j,\chi_k\rangle$, which give the representation ring $R(G)$ its multiplication; for $S_3$ the computation $V_{\mathrm{std}}\otimes V_{\mathrm{std}}\cong V_{\mathrm{triv}}\oplus V_{\mathrm{sign}}\oplus V_{\mathrm{std}}$ illustrates the general formula, and the Lie-theoretic Clebsch–Gordan rule is the continuous analogue, treated in the companion Lie theory article. Induction and restriction are extension and restriction of scalars along $F[H]\hookrightarrow F[G]$ and satisfy Frobenius reciprocity. Every result is a statement about modules over the group algebra, and none of them requires a physical interpretation.
+Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class function, additive on direct sums, multiplicative on tensor products, and the irreducible characters are orthonormal under $\langle\chi,\psi\rangle_G=|G|^{-1}\sum_g\chi(g)\overline{\psi(g)}$; the second orthogonality relation gives orthogonality down the columns of the character table, so that the number of irreducible characters equals the number of conjugacy classes, and the multiplicity of an irreducible in any representation is an inner product of characters. The regular representation has character $|G|\delta_{g,1}$ and decomposes as $\bigoplus_i V_i^{\oplus d_i}$, so its dimension identity is $\sum_i d_i^2=|G|$. Tensor products decompose with the Clebsch–Gordan multiplicities $c_{ijk}=\langle\chi_i\chi_j,\chi_k\rangle$, which give the representation ring $R(G)$ its multiplication; for $S_3$ the computation $V_{\mathrm{std}}\otimes V_{\mathrm{std}}\cong V_{\mathrm{triv}}\oplus V_{\mathrm{sign}}\oplus V_{\mathrm{std}}$ illustrates the general formula, and the Lie-theoretic Clebsch–Gordan rule is the continuous analogue, treated in the companion Lie theory article. Induction and restriction are extension and restriction of scalars along $F[H]\hookrightarrow F[G]$ and satisfy Frobenius reciprocity. Every result is a statement about modules over the group algebra, and none of them requires a physical interpretation.
 
 ## Summary of Notation
 
@@ -290,7 +290,7 @@ Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class
 | $\chi_i$, $d_i$ | irreducible characters and their degrees |
 | $r$ | number of irreducible complex characters, $=$ number of conjugacy classes |
 | $C_G(g)$ | centralizer of $g$ |
-| $c_{ij}^k=\langle\chi_i\chi_j,\chi_k\rangle$ | Clebsch–Gordan multiplicities |
+| $c_{ijk}=\langle\chi_i\chi_j,\chi_k\rangle$ | Clebsch–Gordan multiplicities |
 | $V^*$, $i^*$ | dual representation $V^*=\operatorname{Hom}_F(V,F)$ and the dual label |
 | $W^G$ | subspace of $G$-invariant vectors of a representation $W$ |
 | $R(G)$ | representation ring |

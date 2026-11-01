@@ -49,7 +49,7 @@ The bracket on $\mathfrak g^*$ produced by the reduction has a closed form, and 
 $$
 \boxed{\;\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle\;} ,
 $$
-where $df_\xi$ and $dg_\xi$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc^k_{ij}x_k$ with $c^k_{ij}$ the structure constants of $\mathfrak g$; the bracket is therefore **linear**, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a *linear* structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.
+where $df_\xi$ and $dg_\xi$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc_{kij}x_k$ with $c_{kij}$ the structure constants of $\mathfrak g$; the bracket is therefore **linear**, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a *linear* structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.
 
 Three properties are inherited rather than imposed. **The Jacobi identity** holds because it is the Jacobi identity of $\mathfrak g$; the reduction produces a Poisson structure for free. **Antisymmetry** holds because the bracket of $\mathfrak g$ is antisymmetric. And the **rank** at a point is the codimension of its coadjoint orbit, so the structure is symplectic exactly where the coadjoint orbit is open, that is, on the union of the orbits of maximal dimension. The reduction to $\mathfrak g^*$ therefore does not merely produce a Poisson manifold; it produces the manifold whose leaves are the objects that the orbit method of *Lie Groups* is about.
 
@@ -169,7 +169,7 @@ The variational route to the same equation is the **Euler–Poincaré equation**
 | $G$, $\mathfrak g$, $\mathfrak g^*$, $[\cdot,\cdot]$, $\langle\cdot,\cdot\rangle$ | Lie group, Lie algebra, its dual, the bracket and the pairing |
 | $T^*G$, $\alpha_g$ | The cotangent bundle and a covector at $g$; the lifted left action trivialises it as $G\times\mathfrak g^*$ |
 | $T^*G/G\cong\mathfrak g^*$ | The reduction: the quotient by the lifted left action is the dual of the Lie algebra |
-| $\{f,g\}(\xi)=\langle\xi,[df_\xi,dg_\xi]\rangle$ | The Lie–Poisson bracket on $\mathfrak g^*$; linear, with $\{x_i,x_j\}=\sum_kc^k_{ij}x_k$ |
+| $\{f,g\}(\xi)=\langle\xi,[df_\xi,dg_\xi]\rangle$ | The Lie–Poisson bracket on $\mathfrak g^*$; linear, with $\{x_i,x_j\}=\sum_kc_{kij}x_k$ |
 | $\mathrm{ad}^*_X\xi$, $\langle\mathrm{ad}^*_X\xi,Y\rangle=\langle\xi,[Y,X]\rangle$ | The coadjoint action, with the convention of the introduction |
 | $d\xi/dt=\mathrm{ad}^*_{dH}\xi$, $df/dt=\{f,H\}$ | The Lie–Poisson equation of a Hamiltonian |
 | Casimir | A function annihilated by the bracket; an invariant of the coadjoint representation; constant on the coadjoint orbits |

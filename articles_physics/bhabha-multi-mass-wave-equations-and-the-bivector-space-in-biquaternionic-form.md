@@ -71,7 +71,7 @@ The usual spin is recovered only on the restriction $\tau^{l\bar l}\to\tau^{l,0}
 The equations are written with a set of generators $\Lambda^{l\bar l}_j$ of the representation, one for each spatial direction, and read, for the field $\psi$ of the representation $\tau^{l\bar l}$,
 
 $$
-\Bigl(\Gamma^{0}p_0-\Gamma^{1}p_1-\Gamma^{2}p_2-\Gamma^{3}p_3\Bigr)\psi + m\psi = 0,
+\Bigl(\Gamma_0p_0-\Gamma_1p_1-\Gamma_2p_2-\Gamma_3p_3\Bigr)\psi + m\psi = 0,
 \qquad\text{or}\qquad \Gamma(p)\psi = -m\psi,
 $$
 
@@ -87,13 +87,13 @@ $$
 \boxed{\;D\bigl(s^2\bigr) = \kappa\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr)\;}.
 $$
 
-The equation has a solution exactly when $s^2=m_i^2$, so the roots $m_i$ are the masses the field can carry: a multi-mass field. Putting $\vec p=0$ makes $\Gamma(p)=p_0\Gamma^0$ and
+The equation has a solution exactly when $s^2=m_i^2$, so the roots $m_i$ are the masses the field can carry: a multi-mass field. Putting $\vec p=0$ makes $\Gamma(p)=p_0\Gamma_0$ and
 
 $$
-\det\bigl(p_0\Gamma^0+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots,
+\det\bigl(p_0\Gamma_0+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots,
 $$
 
-with $\lambda_i$ the eigenvalues of $\Gamma^0$ and $\mu_0$ a single mass scale. Comparing the two factorisations gives
+with $\lambda_i$ the eigenvalues of $\Gamma_0$ and $\mu_0$ a single mass scale. Comparing the two factorisations gives
 
 $$
 m_1 = \mu_0\lambda_1,\quad -m_1=\mu_0\lambda_2,\quad m_2=\mu_0\lambda_3=-\mu_0\lambda_4,\ \dots
@@ -213,7 +213,7 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 **Established, and recomputed.**
 
 - The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$; for the proton's chain member $60\times59=3540$.
-- The determinant factorisation $D(p)=D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma^0$; reproduced in outline.
+- The determinant factorisation $D(p)=D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma_0$; reproduced in outline.
 - The bivector metric's $(3,3)$ signature, matching the six-dimensional Lorentz parameter space's boost/rotation split.
 - The Dirac-limit generators reducing to the Pauli matrices at $c_{\frac12,\frac12}=2$; reproduced from the printed matrices.
 
@@ -256,9 +256,9 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
 | $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
-| $\Gamma(p)$, $\Gamma^{0}$ | Momentum-contracted generator matrix and its time part |
+| $\Gamma(p)$, $\Gamma_0$ | Momentum-contracted generator matrix and its time part |
 | $D(p)=\det(\Gamma(p)+mE)$ | Determinant whose roots are the masses |
-| $m_i=\mu_0\lambda_i\bar\lambda_i$ | Masses from the eigenvalues of $\Gamma^0$ |
+| $m_i=\mu_0\lambda_i\bar\lambda_i$ | Masses from the eigenvalues of $\Gamma_0$ |
 | $g_{ab}$, collective order $23,10,20,30,31,12$ | Bivector-space metric and index order |
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |

@@ -333,12 +333,12 @@ is half a bivector. Read in cells and in biquaternions,
 
 | generator | cell | biquaternion |
 |---|---|---|
-| $\sigma^{23}$ | $\tfrac12T_{xt}$ | $\tfrac12\vec e_x$ |
-| $\sigma^{31}$ | $\tfrac12T_{yt}$ | $\tfrac12\vec e_y$ |
-| $\sigma^{12}$ | $\tfrac12T_{zt}$ | $\tfrac12\vec e_z$ |
-| $\sigma^{01}$ | $\tfrac12T_{xz}$ | $\tfrac12 i\vec e_x$ |
-| $\sigma^{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
-| $\sigma^{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
+| $\sigma_{23}$ | $\tfrac12T_{xt}$ | $\tfrac12\vec e_x$ |
+| $\sigma_{31}$ | $\tfrac12T_{yt}$ | $\tfrac12\vec e_y$ |
+| $\sigma_{12}$ | $\tfrac12T_{zt}$ | $\tfrac12\vec e_z$ |
+| $\sigma_{01}$ | $\tfrac12T_{xz}$ | $\tfrac12 i\vec e_x$ |
+| $\sigma_{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
+| $\sigma_{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
 
 The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma_\mu\gamma_\nu$ is the bivector and the Lorentz generator is half of it.
 

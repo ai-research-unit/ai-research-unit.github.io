@@ -171,7 +171,7 @@ $$
 f_J(x_1, \ldots, x_n) = \det\bigl(e^{j_p}(x_q)\bigr)_{p,q=1}^{n},
 $$
 
-where $(e^i)$ is the dual basis of $M^*$ and the determinant is the Leibniz expansion
+where $(\check e_i)$ is the dual basis of $M^*$ and the determinant is the Leibniz expansion
 
 $$
 \det(a_{pq}) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{p=1}^{n} a_{p,\sigma(p)}.

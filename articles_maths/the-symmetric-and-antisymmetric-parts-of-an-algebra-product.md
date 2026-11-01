@@ -95,13 +95,13 @@ $$
 **Remark (the structure constants).** Let $A$ be free of finite rank $n$ with basis $(e_i)$ and write the product of the basis vectors as
 
 $$
-e_i e_j = \sum_k c^k{}_{ij}\, e_k .
+e_i e_j = \sum_k c_{kij}\, e_k .
 $$
 
-The symmetrisation and the antisymmetrisation have the structure constants obtained from the pair of lower indices alone,
+The symmetrisation and the antisymmetrisation have the structure constants obtained from the two argument indices alone,
 
 $$
-e_i \bullet e_j = \sum_k \tfrac{1}{2}\bigl(c^k{}_{ij} + c^k{}_{ji}\bigr) e_k, \qquad e_i \wedge e_j = \sum_k \tfrac{1}{2}\bigl(c^k{}_{ij} - c^k{}_{ji}\bigr) e_k .
+e_i \bullet e_j = \sum_k \tfrac{1}{2}\bigl(c_{kij} + c_{kji}\bigr) e_k, \qquad e_i \wedge e_j = \sum_k \tfrac{1}{2}\bigl(c_{kij} - c_{kji}\bigr) e_k .
 $$
 
 Counting the constants, a product on $A$ is an element of $A^* \otimes A^* \otimes A$, of dimension $n^3$, its symmetric half is a symmetric bilinear map $A \times A \to A$, with $\binom{n+1}{2} n$ constants, and its antisymmetric half is an antisymmetric one, with $\binom{n}{2} n$. The two counts add to $n^3$:
@@ -438,7 +438,7 @@ The passage to the opposite algebra leaves the symmetric half fixed and reverses
 | $A^{+}$, $A^{(-)}$, $A^-$ | The same two algebras in the notation of the corpus: $A^{+}$ for the symmetrised one (*Jordan Algebras*), $A^{(-)}$ (*The Commutator Operator*) and $A^-$ (*Associative Algebras*) for the antisymmetrised one |
 | $A^{\mathrm{opp}}$, $A_\lambda$ | The opposite algebra, and the algebra with product $x \bullet y + \lambda(x \wedge y)$; $A_{-1} = A^{\mathrm{opp}}$, $A_0 = A^{\bullet}$ |
 | $S^2 A$, $\Lambda^2 A$, $\tau$ | The symmetric and exterior squares, the fixed and anti-fixed parts of the exchange $\tau(x \otimes y) = y \otimes x$ |
-| $c^k{}_{ij}$ | The structure constants, $e_i e_j = \sum_k c^k{}_{ij} e_k$ |
+| $c_{kij}$ | The structure constants, $e_i e_j = \sum_k c_{kij} e_k$ |
 | $n$, $m$ | The projections of a product onto its symmetric and its antisymmetric part, $n^2 = n$, $m^2 = m$, $pq = 0$, $n+m = \mathrm{id}$ |
 | $\Sigma$ | The unhalved symmetrisation $\Sigma(m)(x,y) = m(x,y) + m(y,x)$, which satisfies $\Sigma^2 = 2\Sigma$ and is used in §*The Collapse in Characteristic 2* |
 | Lie-admissible, Jordan-admissible | $A^{\wedge}$ satisfies Jacobi; $A^{\bullet}$ satisfies the Jordan identity |

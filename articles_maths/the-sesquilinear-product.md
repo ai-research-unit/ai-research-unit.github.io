@@ -46,15 +46,15 @@ $$
 
 **Proof.** $(\lambda x) \star (\mu y) = \lambda \bigl( x \star (\mu y) \bigr) = \lambda \, \varsigma(\mu) (x \star y)$, by the first and then the second rule. The general form is this formula applied term by term, additivity carrying the sums through.
 
-**Corollary (structure constants).** Suppose $A$ is free with basis $(e_i)_{i \in I}$. Writing $e_i \star e_j = \sum_k c_{ij}^{k} e_k$, the product of two elements $x = \sum_i \lambda_i e_i$ and $y = \sum_j \mu_j e_j$ is
+**Corollary (structure constants).** Suppose $A$ is free with basis $(e_i)_{i \in I}$. Writing $e_i \star e_j = \sum_k c_{ijk} e_k$, the product of two elements $x = \sum_i \lambda_i e_i$ and $y = \sum_j \mu_j e_j$ is
 
 $$
-x \star y = \sum_{i,j,k} \lambda_i \, \varsigma(\mu_j) \, c_{ij}^{k} \, e_k .
+x \star y = \sum_{i,j,k} \lambda_i \, \varsigma(\mu_j) \, c_{ijk} \, e_k .
 $$
 
-Conversely, for any family of scalars $c_{ij}^{k}$ the last formula defines a $\varsigma$-sesquilinear product on $A$. So on a free module with a finite basis of $n$ elements the $\varsigma$-sesquilinear products are exactly the $n^{3}$-tuples of scalars, with no condition on the tuple; associativity is not assumed, and it would impose conditions on the tuple.
+Conversely, for any family of scalars $c_{ijk}$ the last formula defines a $\varsigma$-sesquilinear product on $A$. So on a free module with a finite basis of $n$ elements the $\varsigma$-sesquilinear products are exactly the $n^{3}$-tuples of scalars, with no condition on the tuple; associativity is not assumed, and it would impose conditions on the tuple.
 
-**Proof.** The first statement is the general scalar rule. For the converse, the formula is additive in each of $\lambda_i$ and $\mu_j$, and reading off the two rules gives $(\lambda x) \star y = \lambda (x \star y)$ from the left slot and $x \star (\mu y) = \varsigma(\mu)(x \star y)$ from the right slot; so the axioms hold without any constraint among the $c_{ij}^{k}$.
+**Proof.** The first statement is the general scalar rule. For the converse, the formula is additive in each of $\lambda_i$ and $\mu_j$, and reading off the two rules gives $(\lambda x) \star y = \lambda (x \star y)$ from the left slot and $x \star (\mu y) = \varsigma(\mu)(x \star y)$ from the right slot; so the axioms hold without any constraint among the $c_{ijk}$.
 
 **Remark.** The scalars of the left factor pass through unchanged and the scalars of the right factor come out conjugated. This is the precise sense in which the product is not bilinear: a bilinear product would give $\lambda \mu$, and the rule $\lambda \, \varsigma(\mu)$ is what replaces it.
 
@@ -173,7 +173,7 @@ A $\varsigma$-sesquilinear product is additive in each variable with $(\lambda x
 | $x \star y = xy^{*}$ | the derived operation, the standard sesquilinear product |
 | $A^{\varsigma}$ | the conjugate module, the scalars acting by $\lambda \cdot x = \varsigma(\lambda) x$ |
 | $(\lambda x) \star (\mu y) = \lambda \varsigma(\mu)(x \star y)$ | the rule of the scalars of a product |
-| $c_{ij}^{k}$ | the structure constants, $e_i \star e_j = \sum_k c_{ij}^{k} e_k$ |
+| $c_{ijk}$ | the structure constants, $e_i \star e_j = \sum_k c_{ijk} e_k$ |
 | $[x, y]_{\varsigma}$ | the difference $x \star y - y \star x$ |
 | $L_{a}$, $R_{a}$ | the left and the right product, $L_{a}(x) = a \star x$ and $R_{a}(x) = x \star a$ |
 

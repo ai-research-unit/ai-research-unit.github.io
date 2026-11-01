@@ -121,7 +121,7 @@ so $\pi_*$ is a star-representation of $\mathrm{U}(\mathrm{G})$: the generators 
 
 **Corollary (the Casimir is positive).** For a compact real form the Casimir element is a positive Hermitian element and the operator $\pi_*(\Omega)$ is a negative semidefinite self-adjoint operator on each unitary representation, with a negative eigenvalue on each irreducible summand.
 
-*Proof.* The Casimir is a sum of products $X_iX^i$ which is a sum of the elements $X_i^{\star}X_i$ up to signs for a compact form, hence positive; its image is self-adjoint because the star is the adjoint, and its spectrum is negative on a compact group because it is minus the Laplacian, whose eigenvalues are non-negative; the value on an irreducible summand is the scalar of *The Casimir Operator of a Lie Group*.
+*Proof.* The Casimir is a sum of products $X_i\check X_i$ which is a sum of the elements $X_i^{\star}X_i$ up to signs for a compact form, hence positive; its image is self-adjoint because the star is the adjoint, and its spectrum is negative on a compact group because it is minus the Laplacian, whose eigenvalues are non-negative; the value on an irreducible summand is the scalar of *The Casimir Operator of a Lie Group*.
 
 ## Examples
 

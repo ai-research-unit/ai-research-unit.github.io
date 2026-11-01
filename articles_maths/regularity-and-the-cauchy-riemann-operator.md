@@ -59,25 +59,25 @@ Ellipticity is exactly the property that makes the Cauchy–Riemann operator beh
 
 ## The Generalised Cauchy–Riemann Equations
 
-Write the coefficients in the basis, $B_\alpha = \sum_{\gamma} b^{\gamma}_{\alpha} e_\gamma$, and write $f = \sum_\delta f^\delta e_\delta$ with component functions $f^\delta : \Omega \to \mathbb{R}$. Then
+Write the coefficients in the basis, $B_\alpha = \sum_{\gamma} b_{\gamma\alpha} e_\gamma$, and write $f = \sum_\delta f_\delta e_\delta$ with component functions $f_\delta : \Omega \to \mathbb{R}$. Then
 
 $$
-Df = \sum_{\alpha,\gamma,\delta} b^{\gamma}_{\alpha} \bigl(\partial/\partial x_\alpha f^\delta\bigr)\, e_\gamma e_\delta,
+Df = \sum_{\alpha,\gamma,\delta} b_{\gamma\alpha} \bigl(\partial/\partial x_\alpha f_\delta\bigr)\, e_\gamma e_\delta,
 $$
 
-and expanding $e_\gamma e_\delta = \sum_\varepsilon c^{\varepsilon}_{\gamma\delta} e_\varepsilon$ in the structure constants $c^{\varepsilon}_{\gamma\delta}$ of $A$ gives
+and expanding $e_\gamma e_\delta = \sum_\varepsilon c_{\varepsilon\gamma\delta} e_\varepsilon$ in the structure constants $c_{\varepsilon\gamma\delta}$ of $A$ gives
 
 $$
-Df = \sum_\varepsilon \Bigl(\sum_{\alpha,\gamma,\delta} b^\gamma_\alpha c^\varepsilon_{\gamma\delta} \,\partial/\partial x_\alpha f^\delta\Bigr) e_\varepsilon.
+Df = \sum_\varepsilon \Bigl(\sum_{\alpha,\gamma,\delta} b_{\gamma\alpha} c_{\varepsilon\gamma\delta} \,\partial/\partial x_\alpha f_\delta\Bigr) e_\varepsilon.
 $$
 
 **Proposition (the Cauchy–Riemann equations).** The equation $Df = 0$ is equivalent to the system of $m$ real first-order partial differential equations with constant coefficients
 
 $$
-\sum_{\delta=0}^{m-1} L^{\varepsilon}_{\delta}(\partial)\, f^\delta = 0, \qquad \varepsilon = 0, \dots, m-1,
+\sum_{\delta=0}^{m-1} L_{\varepsilon\delta}(\partial)\, f_\delta = 0, \qquad \varepsilon = 0, \dots, m-1,
 $$
 
-where $L^{\varepsilon}_{\delta}(\partial) = \sum_{\alpha,\gamma} b^{\gamma}_{\alpha} c^{\varepsilon}_{\gamma\delta} \partial/\partial x_\alpha$ is a first-order scalar differential operator. For $A = \mathbb{C}$ and $D = \partial/\partial x_t + i\partial/\partial x_1$ this system is the pair of Cauchy–Riemann equations; for $A = \mathbb{H}$ and the Fueter operator it is the quaternionic Cauchy–Riemann system.
+where $L_{\varepsilon\delta}(\partial) = \sum_{\alpha,\gamma} b_{\gamma\alpha} c_{\varepsilon\gamma\delta} \partial/\partial x_\alpha$ is a first-order scalar differential operator. For $A = \mathbb{C}$ and $D = \partial/\partial x_t + i\partial/\partial x_1$ this system is the pair of Cauchy–Riemann equations; for $A = \mathbb{H}$ and the Fueter operator it is the quaternionic Cauchy–Riemann system.
 
 The system has as many equations as unknowns, but it is not a determined system in the classical sense: its symbol is a multiplication operator in the algebra, and for a non-commutative $A$ the components are coupled in a way that no single scalar equation captures. The correct invariant of the system is the operator $D$, and the correct notion of regularity is $Df = 0$.
 
@@ -313,7 +313,7 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $\sigma(\xi) = \sum_\alpha B_\alpha\xi_\alpha$ | Principal symbol |
 | $\sigma^{\mathrm{refl}}(\xi) = \xi_t - \sum_k B_k\xi_k$ | Reflected symbol, $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\xi_\alpha^2$ |
 | $|\xi|^2 = \sum_\alpha \xi_\alpha^2$ | Euclidean squared norm of the covector |
-| $c^\varepsilon_{\gamma\delta}$ | Structure constants of $A$ |
+| $c_{\varepsilon\gamma\delta}$ | Structure constants of $A$ |
 | $Df = 0$ | Left regularity |
 | $fD = 0$ | Right regularity |
 | $(1, B_1, \dots, B_{m-1})$ | Frame of the system |

@@ -145,7 +145,7 @@ as an endomorphism of $T_pM$. Consequently the Lie algebra of the isometry group
 **Corollary (the Killing equation).** In a chart a Killing field satisfies
 
 $$
-\nabla_iX_j + \nabla_jX_i = 0, \qquad X_j = g_{ji}X^i ,
+\nabla_iX_j + \nabla_jX_i = 0, \qquad X_j = \sum_i g_{ji}X_i ,
 $$
 
 a linear first-order system; hence $\dim\mathfrak{k}(M,g) \le \frac{n(n+1)}{2}$, and the equality holds exactly on the spaces of constant curvature.

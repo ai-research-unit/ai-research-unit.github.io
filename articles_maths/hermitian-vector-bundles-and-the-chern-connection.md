@@ -18,10 +18,10 @@ $$
 h_x : E_x \times E_x \to \mathbb{C}, \qquad h_x(\lambda s + \mu s', t) = \bar\lambda\,h_x(s,t) + \bar\mu\,h_x(s',t),
 $$
 
-conjugate-linear in the first variable and complex-linear in the second, with $h_x(t,s) = \overline{h_x(s,t)}$ and $h_x(s,s) > 0$ for $s \neq 0$. In a local frame $e_1, \ldots, e_k$ the metric is the smooth positive-definite matrix function $H = (h_{ab})$ with $h_{ab} = h(e_a, e_b)$, and for sections $s = \sum_a s^a e_a$, $t = \sum_b t^b e_b$,
+conjugate-linear in the first variable and complex-linear in the second, with $h_x(t,s) = \overline{h_x(s,t)}$ and $h_x(s,s) > 0$ for $s \neq 0$. In a local frame $e_1, \ldots, e_k$ the metric is the smooth positive-definite matrix function $H = (h_{ab})$ with $h_{ab} = h(e_a, e_b)$, and for sections $s = \sum_a s_a e_a$, $t = \sum_b t_b e_b$,
 
 $$
-h(s,t) = \sum_{a,b} \bar s^a\, h_{ab}\, t^b = \bar s^{\,T} H\, t .
+h(s,t) = \sum_{a,b} \bar s_a\, h_{ab}\, t_b = \bar s^{\,T} H\, t .
 $$
 
 Under a change of frame $e' = eg$ the matrix transforms by $H' = g^* H g$, the transformation rule of a Hermitian form, and the bundles with a Hermitian metric are exactly the bundles whose structure group is reducible to the unitary group $\mathrm{U}(k)$.

@@ -101,13 +101,13 @@ is invariant under $\pi$, the operators $\pi_*(X)$ are skew-adjoint for it, and 
 
 ## The Casimir Operator
 
-**Theorem.** Let $\Omega = \sum_i X_iX^i$ be the Casimir element of a semisimple algebra, formed with a basis and the dual basis of the Killing form. In a unitary representation the operator
+**Theorem.** Let $\Omega = \sum_i X_i\check X_i$ be the Casimir element of a semisimple algebra, formed with a basis and the dual basis of the Killing form. In a unitary representation the operator
 
 $$
-\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)
+\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(\check X_i)
 $$
 
-is self-adjoint on the smooth vectors and commutes with the representation; for a compact real form the operator $-\pi_*(\Omega) = \sum_i A_{X_i}A_{X^i}$ is positive, and on an irreducible summand the Casimir acts by the scalar $\langle\lambda,\lambda+2\varrho\rangle$.
+is self-adjoint on the smooth vectors and commutes with the representation; for a compact real form the operator $-\pi_*(\Omega) = \sum_i A_{X_i}A_{\check X_i}$ is positive, and on an irreducible summand the Casimir acts by the scalar $\langle\lambda,\lambda+2\varrho\rangle$.
 
 *Proof.* The Casimir is a central Hermitian element, so its image is self-adjoint and commutes with the derived representation; the positivity is the sum of the squares of the self-adjoint generators $A_{X_i}$, and the scalar value is the eigenvalue formula of *The Casimir Operator of a Lie Group*.
 
