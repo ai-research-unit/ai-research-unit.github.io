@@ -73,7 +73,7 @@
 <p>A <strong>chiral fermion</strong> is a fermion whose left- and right-handed components carry <em>inequivalent</em> representations of the gauge group. The <strong>vector-like</strong> alternative is a fermion whose two chiral components carry the same representation; a vector-like fermion may have a mass term that pairs the two components, and a chiral fermion may not. The distinction is not a technicality: the matter content of the Standard Model is chiral, with the left-handed quarks and leptons in $SU(2)$ doublets and their right-handed partners in singlets, and the immediate kinematic consequence is that no bare fermion mass is gauge invariant. The electron mass appears only after electroweak symmetry breaking, through the coupling of the two chiralities to the Higgs field, whose vacuum expectation value carries the charge that the mass term lacks.</p>
 <p>This article asks what the biquaternion framework, in the notation of the companion articles, supplies for that structure. The presentation is organized around one question — <em>can the framework distinguish the two chiralities in a gauge interaction?</em> — and the answer is split, at the outset, into the three categories the corpus uses.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The biquaternion Dirac field decomposes into two chiral halves; the chirality operator $\gamma_5$ is an involution, $\gamma_5^2=I_4$, and the projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ are well defined and Lorentz invariant, and are idempotent, orthogonal and complete; the Dirac mass bilinear is chirality-odd and vanishes on a field of definite chirality. On the Dirac module a <em>chiral</em> abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$, $Ϙ=ϙ_LP_L+ϙ_RP_R$, is gauge covariant for arbitrary charges, with curvature $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.</li>
+<li><strong>Established, and recomputed below.</strong> The biquaternion Dirac field decomposes into two chiral halves; the chirality operator acts by $\Psi\mapsto-i\,e_t\Psi e_z$ and squares to the identity, and the projectors $P_L\Psi=\tfrac12(\Psi+i\,e_t\Psi e_z)$, $P_R\Psi=\tfrac12(\Psi-i\,e_t\Psi e_z)$ are well defined and Lorentz invariant, and are idempotent, orthogonal and complete; the Dirac mass bilinear is chirality-odd and vanishes on a field of definite chirality. On the Dirac module a <em>chiral</em> abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$, $Ϙ=ϙ_LP_L+ϙ_RP_R$, is gauge covariant for arbitrary charges, with curvature $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.</li>
 <li><strong>Established from the read list, and sharpened here.</strong> The gauge group of the biquaternionic abelian gauge principle is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a <strong>scalar</strong> on the algebra $M_2(\mathbb{C})$. A gauge group drawn from the centre therefore assigns every component the same charge: it is vector-like and cannot be chiral. Chirality requires a gauge action that is not scalar, hence non-central — the structure whose algebraic status the gauge article leaves open.</li>
 <li><strong>Gap, left visible.</strong> Whether the algebra's real structure $\flat=-{}^{*}$ carries a physical Majorana-type pairing, or whether its conjugate equation is the real-form expression of an ordinary Dirac mass, is not settled here. The parent's own mass term is the linear chiral pair, through which the continuous central phase passes and which preserves the vector $\mathrm{U}(1)$; the antilinear fermion-number-breaking pairing is the separate equation built on $\flat$. This is the read-list gauge article's open question, and the companion on the neutrino and Majorana fermions is where it belongs. It is recorded here only for its consequence: the framework's vector-like gauge structure and the real structure's antilinear pairing do not naturally meet.</li>
 </ul>
@@ -90,42 +90,40 @@ $$</p>
 \Psi = \begin{pmatrix}\psi_L\\ \psi_R\end{pmatrix}, \qquad \psi_L\in S,\quad \psi_R\in\bar{S},
 $$</p>
 <p>and $SL(2,\mathbb{C})$ acts block-diagonally by $S(\tilde{U}) = \mathrm{diag}\big(g,\ \mathsf{M}_2(\tilde{U}^{*})\big)$, $g=\mathsf{M}_2(\tilde{U})$.</p>
-<p>The <strong>chirality operator</strong> on $\Delta$ is</p>
+<p>The <strong>chirality operator</strong> on $\Delta$ is the cell that multiplies the spinor by $e_t$ on the left and by $e_z$ on the right. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $T_{a,b}=L_aR_b$,</p>
 <p>$$
-\gamma_5 = \begin{pmatrix}-I_2 & 0\\ 0 & I_2\end{pmatrix},
-\qquad \gamma_5^2 = I_4,
+T_5 = -i\,T_{e_t,e_z}, \qquad T_5\Psi = -i\,e_t\,\Psi\,e_z, \qquad T_5^2 = I_4,
 $$</p>
 <p>and the <strong>chiral projectors</strong> are</p>
 <p>$$
-P_L = \tfrac12\left(I_4-\gamma_5\right) = \begin{pmatrix}I_2&0\\0&0\end{pmatrix},
+P_L\Psi = \tfrac12\left(\Psi - T_5\Psi\right) = \tfrac12\left(\Psi + i\,e_t\Psi e_z\right),
 \qquad
-P_R = \tfrac12\left(I_4+\gamma_5\right) = \begin{pmatrix}0&0\\0&I_2\end{pmatrix}.
+P_R\Psi = \tfrac12\left(\Psi + T_5\Psi\right) = \tfrac12\left(\Psi - i\,e_t\Psi e_z\right).
 $$</p>
 <p>Their elementary algebra is exact:</p>
 <p>$$
-P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L+P_R = I_4, \qquad \gamma_5 = P_R-P_L,
+P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L+P_R = I_4, \qquad T_5 = P_R-P_L,
 $$</p>
-<p>and each is Hermitian of trace $2$, so each projects onto a complex two-dimensional half. In the block basis with</p>
+<p>and each is Hermitian of trace $2$, so each projects onto a complex two-dimensional half: in the basis where the chirality cell is diagonal, $P_L\Psi=(\psi_L,0)$ and $P_R\Psi=(0,\psi_R)$. The four generator cells of the coordinate directions are</p>
 <p>$$
-\gamma_0 = \begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix}, \qquad
-\gamma_k = \begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},
+T_0 = i\,T_{e_t,e_x}, \qquad T_k = i\,T_{e_k,e_y}, \qquad T_\mu T_\nu + T_\nu T_\mu = 2g_{\mu\nu}I_4,
 $$</p>
-<p>the chirality operator anticommutes with every generator, $\{\gamma_5,\gamma_\mu\}=0$, and therefore commutes with every even product of generators, the biquaternion algebra among them: $[\gamma_5,\gamma_\mu\gamma_\nu]=0$. Since the Lorentz action is generated by the even elements, it commutes with $\gamma_5$ and with each $P_{L,R}$.</p>
-<p><strong>The check that is not the massless case.</strong> A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is a <strong>Lorentz-invariant</strong> label, not a property of the massless limit. The Lorentz generators are the bivectors $\gamma_\mu\gamma_\nu$, and $[\gamma_5,\gamma_\mu\gamma_\nu]=0$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.</p>
-<p><strong>What the mass term does to a chirality-definite state.</strong> Let $\bar{\Psi} = \Psi^{*}\gamma_0$. In the block basis,</p>
+<p>with $g=\mathrm{diag}(+,-,-,-)$. The chirality cell anticommutes with each of them, $T_5T_\mu+T_\mu T_5=0$, and therefore commutes with every even product of generators, the left copy of the biquaternion algebra among them: $T_5\,T_\mu T_\nu = T_\mu T_\nu\,T_5$, and in particular $T_5L_a=L_aT_5$ for every $a\in\mathbb{B}$, so that it commutes with the Lorentz action on the module. Hence it commutes with each $P_{L,R}$.</p>
+<p><strong>The check that is not the massless case.</strong> A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is a <strong>Lorentz-invariant</strong> label, not a property of the massless limit. The Lorentz generators are the bivector cells $T_\mu T_\nu$, and $T_5\,T_\mu T_\nu=T_\mu T_\nu\,T_5$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.</p>
+<p><strong>What the mass term does to a chirality-definite state.</strong> Let $\bar{\Psi} = \Psi^{\dagger}T_0$, the adjoint built with the time-like generator cell $T_0=iT_{e_t,e_x}$. In a basis in which the chirality cell is diagonal and $T_0$ swaps the two blocks identically, $T_0(\psi_L,0)=(0,\psi_L)$ and $T_0(0,\psi_R)=(\psi_R,0)$,</p>
 <p>$$
-\bar{\Psi}\Psi = \Psi^{*}\gamma_0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
+\bar{\Psi}\Psi = \Psi^{\dagger}T_0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
 $$</p>
-<p>the <strong>Dirac mass bilinear</strong>. It is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto\gamma_5\Psi$ one has $\bar{\Psi}\mapsto-\bar{\Psi}\gamma_5$, so</p>
+<p>the <strong>Dirac mass bilinear</strong>. Since $T_0$ anticommutes with $T_5$, it maps each chiral half into the other, and the bilinear is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto T_5\Psi$ one has $\bar{\Psi}\mapsto-\bar{\Psi}T_5$, since $T_5$ is Hermitian and $T_0T_5=-T_5T_0$, so</p>
 <p>$$
-\bar{\Psi}\Psi \;\longmapsto\; (-\bar{\Psi}\gamma_5)(\gamma_5\Psi) = -\bar{\Psi}\Psi :
+\bar{\Psi}\Psi \;\longmapsto\; (-\bar{\Psi}T_5)(T_5\Psi) = -\bar{\Psi}\Psi :
 $$</p>
-<p>the mass bilinear is <strong>chirality-odd</strong>. Equivalently, if $\Psi$ has definite chirality, $\gamma_5\Psi=\pm\Psi$, then the two blocks are $\Psi=( \psi_L,0)$ or $(0,\psi_R)$ and</p>
+<p>the mass bilinear is <strong>chirality-odd</strong>. Equivalently, if $\Psi$ has definite chirality, $T_5\Psi=\pm\Psi$, then the two blocks are $\Psi=( \psi_L,0)$ or $(0,\psi_R)$ and</p>
 <p>$$
 \bar{\Psi}\Psi = 0 .
 $$</p>
 <p>A field of definite chirality has no Dirac mass bilinear at all. This is the precise sense in which a lone Weyl field cannot carry a mass, and it is the algebra behind the Standard Model's chiral matter.</p>
-<p><strong>Framework caution.</strong> Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and it carries the two associated idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, whose sum is $e_t$; the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the <em>same</em> defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm\gamma_5)$ split</p>
+<p><strong>Framework caution.</strong> Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and it carries the two associated idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, whose sum is $e_t$; the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the <em>same</em> defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm T_5)$ split</p>
 <p>$$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \;\cong\; M_2(\mathbb{C})\oplus M_2(\mathbb{C})
 $$</p>
@@ -162,7 +160,7 @@ $$</p>
 <p>which is the abelian curvature of the one connection $A_\mu$, distributed between the two chiralities by $Ϙ$.</p>
 <p>Two structural remarks belong here, because they distinguish this construction from the framework's own gauge principle.</p>
 <ol>
-<li><strong>The chiral connection is a module operator, not a biquaternion.</strong> The object $A_\mu Ϙ$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $\gamma_5=P_R-P_L$ gives $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}I_4+\tfrac{ϙ_R-ϙ_L}{2}\gamma_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to $\gamma_5$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not an element of $\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.</li>
+<li><strong>The chiral connection is a module operator, not a biquaternion.</strong> The object $A_\mu Ϙ$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $T_5=P_R-P_L$ gives $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}I_4+\tfrac{ϙ_R-ϙ_L}{2}T_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to the chirality cell $T_5=-iT_{e_t,e_z}$, which is a cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ and not an element of $\mathbb{B}$; equivalently the projectors $P_{L,R}$ are central idempotents only of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.</li>
 <li><strong>The abelian chiral connection is genuinely scalar in the curvature.</strong> Since $Ϙ$ is constant, the components commute in the abelian case, and the curvature is the ordinary $F_{\mu\nu}$; the chirality enters only through the charge weighting. A non-abelian chiral connection would additionally require $Ϙ$ to be replaced by generators that do not commute, which is the gap treated in the next section.</li>
 </ol>
 <p><strong>The mass selection rule.</strong> The scalar Dirac bilinear of the preceding section is the Lorentz-invariant pairing of the two halves available to a mass term. Under the chiral gauge transformation,</p>
@@ -198,7 +196,7 @@ $$</p>
 <p>$$
 \tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\,\tilde{\Psi}_R
 $$</p>
-<p>for mass $m$, and $\tilde{\nabla}\tilde{\Psi}=0$ in the massless case. The mass term is <strong>linear</strong> in the field and off-diagonal in chirality. Because it is linear, the central phase passes through it: under the global phase $\tilde{\Psi}\mapsto\lambda\tilde{\Psi}$ both sides acquire the same factor $\lambda$, so the continuous $\mathrm{U}(1)$ (fermion number) is conserved for the massive field, not only for the massless one. What the mass term breaks is the <strong>axial</strong> symmetry: for the spinor-module field, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar{\psi}\gamma_5\psi$, with $j_{5\mu}=\bar\psi\gamma_\mu\gamma_5\psi$ and $\varepsilon=(1,-1,-1,-1)$; it vanishes only at $m=0$. The vector current is conserved at every $m$, the axial current only at $m=0$. The mass term is also what distinguishes the massive biquaternionic equation from the massless one, which is identical in form to the source-free Maxwell equation.</p>
+<p>for mass $m$, and $\tilde{\nabla}\tilde{\Psi}=0$ in the massless case. The mass term is <strong>linear</strong> in the field and off-diagonal in chirality. Because it is linear, the central phase passes through it: under the global phase $\tilde{\Psi}\mapsto\lambda\tilde{\Psi}$ both sides acquire the same factor $\lambda$, so the continuous $\mathrm{U}(1)$ (fermion number) is conserved for the massive field, not only for the massless one. What the mass term breaks is the <strong>axial</strong> symmetry: for the spinor-module field, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar{\psi}T_5\psi$, with $j_{5\mu}=\bar\psi T_\mu T_5\psi$ and $\varepsilon=(1,-1,-1,-1)$; it vanishes only at $m=0$. The vector current is conserved at every $m$, the axial current only at $m=0$. The mass term is also what distinguishes the massive biquaternionic equation from the massless one, which is identical in form to the source-free Maxwell equation.</p>
 <p>The algebra carries, besides the conjugations used above, the <strong>anti-Hermitian conjugation</strong> $\flat=-{}^{*}$ and its role as the algebra's <strong>real structure</strong>:</p>
 <p>$$
 \tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*},
@@ -208,14 +206,14 @@ $$</p>
 <p>What this article adds is the connection to chirality: the real structure $\flat$ is order-reversing and maps the two chiral ideals into one another, so a coupling built on it couples the field to its own chirality conjugate. That is the genuine Majorana statement, and it belongs to $\flat$, not to the parent's mass term. The parent's mass term, by contrast, is off-diagonal in the chiral blocks and preserves the vector $\mathrm{U}(1)$; it is the axial current, not the vector one, that it fails to conserve. This is the equation-side form of the vanishing of the Dirac bilinear on a definite-chirality state.</p>
 <h2 id="an-external-reading-of-the-majorana-condition-and-the-spacetime-signature">An External Reading of the Majorana Condition and the Spacetime Signature</h2>
 <p>An external source reaches this article's own question — which mass terms the algebra allows, and on which signature — from a direction that shares none of the corpus's conventions, and it is worth recording because it exhibits the signature-dependence independently. D. J. Cirilo-Lombardo (<em>Algebraic structures, physics and geometry from a Unified Field Theoretical framework</em>, arXiv:1411.5493v3 [hep-th], 2015) performs Majorana's 1937 transformation on the structural group of his own unified field theory, and states his aim in the terms this article uses: to obtain a transformation for which the Dirac equation becomes real-coefficient and symmetric "for both: fermions and antifermions."</p>
-<p><strong>What was verified, and what was not.</strong> The transformation is the Weyl-basis charge conjugation $U = \tfrac{1}{\sqrt2}\left(\begin{smallmatrix}\sigma_0 & \sigma_2\\ \sigma_2 & -\sigma_0\end{smallmatrix}\right)$. It is $*$-unitary and involutive, $U^\dagger U = U^2 = I_4$, and it achieves its stated purpose: the transformed structural group $G_2 = UGU^{-1}$ is <strong>real and symmetric</strong>, because the source's transformed generators are purely imaginary while his own coefficients are purely imaginary too. That is a genuine Majorana condition, reached independently of this article's route. Three printed slips are recorded with it, and all three concern the source's own displays rather than the transformation: the generators of his Eq. (28) are not a Clifford set until a sign is restored, $\gamma_0 = \sigma_0\oplus(-\sigma_0)$; the diagonal block of his printed $G_2$ carries the wrong sign in its $(\sigma_3a_1\pm\sigma_1a_3)$ combination; and the sentence that $G_2$ and its transpose satisfy $G_2^{\mathsf T}G_2 = I_4$ does not reproduce — the identity that holds is the quaternionic one <em>before</em> the transformation. The full record is in <em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em>.</p>
+<p><strong>What was verified, and what was not.</strong> The transformation is the Weyl-basis charge conjugation $U = \tfrac{1}{\sqrt2}\left(\begin{smallmatrix}\sigma_0 & \sigma_2\\ \sigma_2 & -\sigma_0\end{smallmatrix}\right)$. It is $*$-unitary and involutive, $U^\dagger U = U^2 = I_4$, and it achieves its stated purpose: the transformed structural group $G_2 = UGU^{-1}$ is <strong>real and symmetric</strong>, because the source's transformed generators are purely imaginary while his own coefficients are purely imaginary too. That is a genuine Majorana condition, reached independently of this article's route. Three printed slips are recorded with it, and all three concern the source's own displays rather than the transformation: the generators of his Eq. (28) are not a Clifford set until a sign is restored, the time-like member being $\sigma_0\oplus(-\sigma_0)$; the diagonal block of his printed $G_2$ carries the wrong sign in its $(\sigma_3a_1\pm\sigma_1a_3)$ combination; and the sentence that $G_2$ and its transpose satisfy $G_2^{\mathsf T}G_2 = I_4$ does not reproduce — the identity that holds is the quaternionic one <em>before</em> the transformation. The full record is in <em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em>.</p>
 <p><strong>The signature dependence, and what it does not add.</strong> The source asserts that the availability of a Majorana representation is tied to the spacetime signature, and here the corpus has already said more: in <em>Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</em> the reality type of the spinor module is a function of the signature modulo eight, the corpus's ambient four-dimensional module admits a real (charge-conjugation) structure in signature $(1,3)$, and the <strong>internal</strong> space is of complex type and admits none. That classification is exactly what this article's third open question reflects: the internal spinor has a charge conjugate but no Majorana partner, so a Majorana-type coupling here can only be the separate antilinear equation built on the real structure $\flat$, not a partner manufactured inside the same module. The source states the dependence and gives no table; the corpus's table is the contribution, and the source's Section V is an external worked instance of it.</p>
 <p><strong>The non-Hermitian claim, kept apart.</strong> The source also reports <strong>non-Hermitian (CP) dynamic operators</strong> as a structural feature. The corpus's translation separates two things: the source's own structural object is Hermitian — it is a biquaternion of $\mathbb{M}_+$ — and the non-Hermiticity the paper flags belongs to the <em>generalized momentum</em> of its second, $(2{+}2)$ sector, where the paper itself notes that $E^2+H^2$ can be negative. So the claim does not put a non-Hermitian generator into the chirality structure this article uses; the Born rule here is still the Hermitian form of a Hermitian idempotent, read through the trace, and the assertion is recorded as one about that other sector rather than about the algebra. Its algebraic engine is a $\mathrm{SL}(2,\mathbb{R})$ triple whose middle generator is $-i\sigma_2$ and whose coefficient sum flips one sign, $a_0^2+a_1^2-a_2^2+a_3^2=1$; both are verified in the companion article. It is the split real form of the Pauli triple, the same algebraic move that separates the algebra's real structure $\flat$ from its compact conjugations.</p>
 <p>Nothing here changes this article's findings or its open questions. The source is recorded as an independent instance of the same signature-dependent classification, not as support for any interpretation of the framework.</p>
 <h2 id="chirality-is-not-the-sector-split">Chirality Is Not the Sector Split</h2>
 <p>Three decompositions of the framework are in play in this article and its parents, and they must not be conflated.</p>
 <ul>
-<li>The <strong>chiral decomposition</strong> is a decomposition of the spinor module $\Delta$ by the operator $\gamma_5$, into $S$ and $\bar{S}$. Its projectors are $P_L,P_R$, and it is the subject of this article.</li>
+<li>The <strong>chiral decomposition</strong> is a decomposition of the spinor module $\Delta$ by the chirality cell $T_5=-iT_{e_t,e_z}$, into $S$ and $\bar{S}$. Its projectors are $P_L,P_R$, and it is the subject of this article.</li>
 <li>The <strong>sector decomposition</strong> is a decomposition of the algebra $\mathbb{B}$ by Hermitian conjugation ${}^{*}$, into the anti-Hermitian $\mathbb{M}_-$ and the Hermitian $\mathbb{M}_+$. Its projectors are the maps $\tilde{Q}\mapsto\tfrac12(\tilde{Q}\mp\tilde{Q}^{*})$.</li>
 <li>The <strong>ideal decomposition</strong> is the Peirce decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ by the primitive idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$. Its two summands are <em>both</em> copies of $S$; it is not a chirality decomposition, as the read-list spinor article stresses.</li>
 </ul>
@@ -223,9 +221,9 @@ $$</p>
 <h2 id="what-the-framework-supplies-transcribes-and-does-not-supply">What the Framework Supplies, Transcribes, and Does Not Supply</h2>
 <p><strong>What it supplies.</strong></p>
 <ul>
-<li><em>The two-chiral structure and its projectors.</em> The spinor module decomposes into $S\oplus\bar{S}$; $\gamma_5$ (with $\gamma_5^2=I_4$) and $P_{L,R}$ are exact and Lorentz invariant, and the projectors are idempotent, orthogonal and complete. The algebra of the projectors has been checked, including the commutation with the even (Lorentz) generators that survives the mass term.</li>
+<li><em>The two-chiral structure and its projectors.</em> The spinor module decomposes into $S\oplus\bar{S}$; the chirality cell $T_5=-iT_{e_t,e_z}$ (with $T_5^2=I_4$) and $P_{L,R}$ are exact and Lorentz invariant, and the projectors are idempotent, orthogonal and complete. The algebra of the projectors has been checked, including the commutation with the even (Lorentz) generators that survives the mass term.</li>
 <li>
-<p><em>The chirality-oddness of the mass.</em> The Dirac bilinear is odd under $\gamma_5$ and vanishes on a definite-chirality state; the parent's mass term is the linear off-diagonal chiral pair, while the algebra's real structure $\flat$ is the order-reversing conjugation that exchanges the chiral ideals. This is established.</p>
+<p><em>The chirality-oddness of the mass.</em> The Dirac bilinear is odd under $T_5$ and vanishes on a definite-chirality state; the parent's mass term is the linear off-diagonal chiral pair, while the algebra's real structure $\flat$ is the order-reversing conjugation that exchanges the chiral ideals. This is established.</p>
 </li>
 <li>
 <p><em>The chiral gauge covariant derivative on the module.</em> For independent charges $ϙ_L,ϙ_R$ the derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ is covariant with $Ϙ=ϙ_LP_L+ϙ_RP_R$, and its curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. This is the standard chiral abelian gauge structure, expressed on the biquaternion spinor module.</p>
@@ -266,7 +264,7 @@ $$</p>
 <p>The neutrino and Majorana article is the natural locus.</p>
 <ol>
 <li>
-<p><strong>What is the biquaternion status of the chiral projectors?</strong> The projectors $\tfrac12(1\pm\gamma_5)$ are central idempotents of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not of $\mathbb{B}$. Whether there is a natural $P_{L,R}$ inside $\mathbb{B}$ is not settled; the electron article records the same doubt.</p>
+<p><strong>What is the biquaternion status of the chiral projectors?</strong> The projectors $\tfrac12(1\pm T_5)$ are central idempotents of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not of $\mathbb{B}$. Whether there is a natural $P_{L,R}$ inside $\mathbb{B}$ is not settled; the electron article records the same doubt.</p>
 </li>
 <li>
 <p><strong>Where does the Higgs field enter?</strong> The selection rule identifies the quantum numbers a compensating scalar must carry, but the framework's realisation of the scalar, of spontaneous symmetry breaking, and of the Yukawa coupling is the planned companion's subject.</p>
@@ -282,13 +280,13 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>A chiral fermion is one whose left- and right-handed components carry inequivalent gauge representations. In the biquaternion framework the chiral decomposition lives in the spinor module: the Dirac module is $\Delta=S\oplus\bar{S}$, the chirality operator is $\gamma_5$ with $\gamma_5^2=I_4$, and the projectors</p>
+<p>A chiral fermion is one whose left- and right-handed components carry inequivalent gauge representations. In the biquaternion framework the chiral decomposition lives in the spinor module: the Dirac module is $\Delta=S\oplus\bar{S}$, the chirality operator is the cell $T_5=-iT_{e_t,e_z}$, acting by $T_5\Psi=-i\,e_t\Psi e_z$ with $T_5^2=I_4$, and the projectors</p>
 <p>$$
-P_L = \tfrac12(I_4-\gamma_5), \qquad P_R = \tfrac12(I_4+\gamma_5)
+P_L\Psi = \tfrac12(\Psi-T_5\Psi), \qquad P_R\Psi = \tfrac12(\Psi+T_5\Psi)
 $$</p>
-<p>are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $\gamma_5$ anticommutes with the generators and commutes with every even element. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.</p>
+<p>are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $T_5$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.</p>
 <p>A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Ϙ=ϙ_LP_L+ϙ_RP_R$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ satisfies $D_{2,\mu}(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $ϙ_L,ϙ_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. But under the gauge transformation $\bar{\Psi}\Psi$ acquires the position-dependent phase $\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$, so it is gauge invariant <strong>iff $ϙ_L=ϙ_R$</strong>: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar.</p>
-<p>The framework's <em>own</em> abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore <strong>vector-like</strong> and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=2im\bar{\psi}\gamma_5\psi$ (which vanishes only at $m=0$). The algebra's anti-linear object is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: a coupling built on it pairs the field with its conjugate, is not invariant under the continuous central phase, and has the signature of a conjugate-pairing (Majorana-type) term. The real structure is order-reversing and exchanges the two chiral ideals; whether its pairing is the intended physical reading is left open below.</p>
+<p>The framework's <em>own</em> abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore <strong>vector-like</strong> and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=2im\bar{\psi}T_5\psi$ (which vanishes only at $m=0$). The algebra's anti-linear object is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: a coupling built on it pairs the field with its conjugate, is not invariant under the continuous central phase, and has the signature of a conjugate-pairing (Majorana-type) term. The real structure is order-reversing and exchanges the two chiral ideals; whether its pairing is the intended physical reading is left open below.</p>
 <p>Two gaps are left visible. First, without a non-central gauge structure the framework has no chiral gauge group, and the reality and compactness conditions that would supply one are not derived. Second, whether the real structure's antilinear pairing is Majorana-type or a real-form Dirac mass is open, and it decides whether the vector-like interpretation of the centre is the physical one. The chiral structure itself — the halves, the projectors, the selection rule — is established and exact.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -344,20 +342,28 @@ $$</p>
 <td>Left- and right-handed Weyl spinors</td>
 </tr>
 <tr>
-<td>$\gamma_5 = \mathrm{diag}(-I_2, I_2)$</td>
-<td>Chirality operator, $\gamma_5^2=I_4$</td>
+<td>$I_4$</td>
+<td>Identity operator on $\Delta$</td>
 </tr>
 <tr>
-<td>$P_L = \tfrac12(I_4-\gamma_5),\ P_R = \tfrac12(I_4+\gamma_5)$</td>
+<td>$L_a\psi=a\psi,\ R_b\psi=\psi b,\ T_{a,b}=L_aR_b$</td>
+<td>Left, right and two-sided multipliers; $T_{a,b}T_{c,d}=T_{ac,db}$</td>
+</tr>
+<tr>
+<td>$T_5 = -iT_{e_t,e_z}$</td>
+<td>Chirality cell, $T_5\Psi=-i\,e_t\Psi e_z$, $T_5^2=I_4$</td>
+</tr>
+<tr>
+<td>$P_L\Psi = \tfrac12(\Psi-T_5\Psi),\ P_R\Psi = \tfrac12(\Psi+T_5\Psi)$</td>
 <td>Chiral projectors</td>
 </tr>
 <tr>
-<td>$\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$</td>
-<td>Dirac mass bilinear (chirality-odd)</td>
+<td>$\bar{\Psi} = \Psi^{\dagger}T_0$, $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$</td>
+<td>Dirac adjoint and mass bilinear (chirality-odd)</td>
 </tr>
 <tr>
-<td>$\gamma_\mu$</td>
-<td>Generators, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$</td>
+<td>$T_\mu$</td>
+<td>Generator cells, $T_0=iT_{e_t,e_x}$, $T_k=iT_{e_k,e_y}$; $T_\mu T_\nu+T_\nu T_\mu=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$</td>
 </tr>
 <tr>
 <td>$ϙ_L, ϙ_R$</td>
@@ -420,6 +426,14 @@ $$</p>
 <li>D. J. Cirilo-Lombardo, "Algebraic structures, physics and geometry from a Unified Field Theoretical framework," arXiv:1411.5493v3 [hep-th] (2015), for the external interpretation recorded in <em>An External Reading of the Majorana Condition and the Spacetime Signature</em>: Majorana's 1937 transformation applied to a structural group, the verified real-symmetric result, the assertion that a Majorana representation is tied to the signature, and the non-Hermitian operators of the source's separate $(2{+}2)$ sector. Cited for the independent instance of the signature-dependent classification, with the source's printed slips noted and its programme not endorsed.</li>
 <li>Companion articles: <a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>; <a href="exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>; <a href="exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a>; <a href="the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a>; <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a>.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>$$
+\gamma_0=iT_{e_t,e_x},\quad \gamma_1=iT_{e_x,e_y},\quad \gamma_2=iT_{e_y,e_y},\quad \gamma_3=iT_{e_z,e_y},\quad \gamma_5=-iT_{e_t,e_z}.
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>

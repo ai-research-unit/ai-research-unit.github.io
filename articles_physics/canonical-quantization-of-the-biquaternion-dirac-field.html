@@ -99,7 +99,7 @@ $$</p>
 <p>$$
 \mathcal{L}=\bar{\psi}\,(\mathbb{D}-m)\,\psi,
 $$</p>
-<p>a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\gamma_0$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.</p>
+<p>a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\mathsf C_0$, the Hermitian conjugate followed by the timelike cell of the reference frame, $\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, with the spatial cells $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.</p>
 <h3 id="the-conjugate-momentum-and-its-constraint">The Conjugate Momentum and Its Constraint</h3>
 <p>The canonical momentum conjugate to $\psi$ is</p>
 <p>$$
@@ -140,8 +140,8 @@ $$</p>
 \bar w^{(r)}w^{(s)}=2m\,\delta_{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta_{rs},\quad w^{(r){}^{*}}w^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\vec p}\,\delta_{rs},
 $$</p>
 <p>$$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\gamma_{\mu} p_{\mu}+m,\qquad
-\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\gamma_{\nu} p_{\nu}-m .
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\mathsf C_\mu p_\mu+m,\qquad
+\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\mathsf C_\nu p_\nu-m .
 $$</p>
 <p>Quantization consists in replacing the constant coefficients of the classical expansion by operators:</p>
 <p>$$
@@ -186,15 +186,15 @@ $$</p>
 +\sum_r v^{(r)}_a v^{(r){}^{*}}_b\,\exp(-i\vec p\cdot\vec\Delta)\Big],$$</p>
 <p>where $\vec\Delta=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y$. The two phases are <strong>opposite</strong>: the positive-frequency term carries $\exp(+i\vec p\cdot\vec\Delta)$ and the negative-frequency term $\exp(-i\vec p\cdot\vec\Delta)$. From the spin sums one obtains the two useful combinations</p>
 <p>$$
-\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\gamma_0+\gamma_0\boldsymbol\gamma\cdot\vec p,\qquad
-\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\gamma_0+\gamma_0\boldsymbol\gamma\cdot\vec p,
+\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\mathsf C_0+\mathsf C_0\mathsf C_kp_k,
 $$</p>
 <p>so that, with $\theta=\vec p\cdot\vec\Delta$,</p>
 <p>$$
 \sum_r\Big[w^{(r)}w^{(r){}^{*}}\exp(+i\theta)+v^{(r)}v^{(r){}^{*}}\exp(-i\theta)\Big]
 =E_{\vec p}\cos\theta\,I_4\cdot 2
-+2\cos\theta\,\gamma_0\boldsymbol\gamma\cdot\vec p
-+2im\sin\theta\,\gamma_0 .
++2\cos\theta\,\mathsf C_0\mathsf C_kp_k
++2im\sin\theta\,\mathsf C_0 .
 $$</p>
 <p>The first term is even in $\vec p$ and gives $2E_{\vec p}\delta^{(3)}(\vec\Delta)$ after dividing by $2E_{\vec p}$; the second and third terms are odd in $\vec p$ and vanish under symmetric integration. Hence the equal-time relation holds. The identity was checked numerically for a representative momentum ($m=1.3$, $|\vec p|=0.9$, $\vec p$ along $\vec e_z$): the spin sums above and their two combinations reproduce the right-hand sides to a maximum absolute error of $4.4\times10^{-16}$. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.</p>
 <h3 id="the-fock-space-and-pauli-exclusion">The Fock Space and Pauli Exclusion</h3>
@@ -215,8 +215,8 @@ $$</p>
 <h2 id="the-hamiltonian-and-the-normal-ordering-constant">The Hamiltonian and the Normal-Ordering Constant</h2>
 <p>The conserved energy of the free Dirac field is</p>
 <p>$$
-H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\gamma_0\boldsymbol\gamma\cdot\nabla+m\gamma_0\big)\psi^{\mathrm{fop}}
-=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\boldsymbol\gamma\cdot\nabla+m\big)\psi^{\mathrm{fop}},
+H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\mathsf C_0\mathsf C_k\nabla_k+m\mathsf C_0\big)\psi^{\mathrm{fop}}
+=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\mathsf C_k\nabla_k+m\big)\psi^{\mathrm{fop}},
 $$</p>
 <p>the integrand being the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform of the Lagrangian of the preceding section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result</p>
 <p>$$
@@ -245,7 +245,7 @@ $$</p>
 :\!P^{\mathrm{fop}}_\mu\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p_\mu
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$</p>
-<p>and the normal-ordered electric charge, from $j_\mu=\bar\psi\gamma_\mu\psi$ with $j_0=\psi^\dagger\psi$, is</p>
+<p>and the normal-ordered electric charge, from $j_\mu=\bar\psi\mathsf C_\mu\psi$ with $j_0=\psi^\dagger\psi$, is</p>
 <p>$$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r-b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),
@@ -377,16 +377,16 @@ $$</p>
 <td>Anti-Hermitian conjugate (the algebra's real structure; not the mass term)</td>
 </tr>
 <tr>
-<td>$\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma_0$</td>
+<td>$\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\mathsf C_0$</td>
 <td>Dirac spinor (spinor module) and its adjoint</td>
 </tr>
 <tr>
-<td>$\gamma_\mu$, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$</td>
-<td>Gamma matrices and chirality operator</td>
+<td>$\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$</td>
+<td>Cells of the reference frame, acting on the spinor module</td>
 </tr>
 <tr>
 <td>$g=\mathrm{diag}(+1,-1,-1,-1)$</td>
-<td>Clifford metric of the $\gamma_\mu$; $g=-\eta$</td>
+<td>Clifford metric of the $\mathsf C_\mu$; $g=-\eta$</td>
 </tr>
 <tr>
 <td>$\eta=\mathrm{diag}(-1,+1,+1,+1)$</td>
@@ -409,7 +409,7 @@ $$</p>
 <td>Covariant and Hermitian normalizations</td>
 </tr>
 <tr>
-<td>$p_\mu=(E_{\vec p},\vec p)$, $\gamma_{\mu} p_{\mu}=\gamma_0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$</td>
+<td>$p_\mu=(E_{\vec p},\vec p)$, $\mathsf C_\mu p_\mu=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$</td>
 <td>Four-momentum and its contraction</td>
 </tr>
 <tr>
@@ -466,6 +466,14 @@ $$</p>
 <li>M. Le Bellac, <em>Thermal Field Theory</em> (Cambridge, 1996), and J. I. Kapusta and C. Gale, <em>Finite-Temperature Field Theory</em> (Cambridge, 2006), for the imaginary-time formalism and the fermionic Matsubara frequencies.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), and Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the Clifford-algebraic background to the biquaternion and spinor structures.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>

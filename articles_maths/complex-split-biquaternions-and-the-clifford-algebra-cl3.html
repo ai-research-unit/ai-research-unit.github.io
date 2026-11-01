@@ -100,7 +100,7 @@ $$
 \mathrm{Cl}(3)\cong\mathrm{Cl}_3(\mathbb{C}).
 $$</p>
 <p><em>Proof.</em> Complexification extends scalars only, so the relations of the generators are unchanged and the $2^3$ monomials over $\mathbb{C}$ are a basis.</p>
-<p><strong>Proposition (the adjoint on the generators).</strong> With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$, with $\{\gamma_\mu,\gamma_\nu\}=+2\delta_{\mu\nu}$.</p>
+<p><strong>Proposition (the adjoint on the generators).</strong> With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $iE_\mu$ are Hermitian, $(iE_\mu)^{\dagger}=iE_\mu$, with $\{iE_\mu,iE_\nu\}=+2\delta_{\mu\nu}$.</p>
 <p><em>Proof.</em> The adjoint of a product reverses the order, so $(E_\mu E_\nu)^{\dagger}=E_\nu^{\dagger}E_\mu^{\dagger}=(-E_\nu)(-E_\mu)=-E_\mu E_\nu$ for $\mu\neq\nu$, consistent; the rest is immediate.</p>
 <h2 id="the-volume-element-and-the-central-splitting">The Volume Element and the Central Splitting</h2>
 <p><strong>Proposition (the volume element).</strong> The element
@@ -262,8 +262,8 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 <td>Clifford generators, $E_\mu^2=-1$, $E_\mu E_\nu=-E_\nu E_\mu$</td>
 </tr>
 <tr>
-<td>$\gamma_\mu=iE_\mu$</td>
-<td>Hermitian generators, $\gamma_\mu^{\dagger}=\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}$</td>
+<td>$iE_\mu$</td>
+<td>Hermitian rescaled generators, $(iE_\mu)^{\dagger}=iE_\mu$, $\{iE_\mu,iE_\nu\}=2\delta_{\mu\nu}$</td>
 </tr>
 <tr>
 <td>$\dagger$</td>
@@ -322,6 +322,14 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 <li>Companion article <a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a> and <a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.</li>
 <li>Companion article <a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are the Hermitian generators $\gamma_\mu=iE_\mu=i\,j\vec e_\mu$ of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the literature frame of the same algebra, not a different algebra.</p>
+<p>On the two summands the generator is a left multiplication, a cell with a trivial right multiplier:
+$$
+\gamma_\mu=T_{-i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_x,\qquad \gamma_\mu=T_{i\vec e_\mu,e_t}\ \text{on}\ \mathrm{Cl}(3)\Pi_y ,
+$$
+with $T_{a,b}\psi=a\psi b$ and $T_{a,e_t}=L_a$.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.</p>
       </div>
     </main>
   </div>

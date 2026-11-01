@@ -143,14 +143,14 @@
 <p><strong>The matrix algebra.</strong> The signature $(2,0)$ gives $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, so the same algebra arises from two inequivalent forms. This is the two-dimensional instance of the general fact that $\mathrm{Cl}_{n,m}$ depends on the difference of the signatures modulo eight and not on the individual signs; the two forms are real forms of the same complexification and give the same algebra here because the classes $d\equiv2$ and $d\equiv0$ both lie in the real block of the eightfold table, where the algebra is a full matrix algebra over $F$ of the same size.</p>
 <h2 id="the-biquaternion-algebra">The Biquaternion Algebra</h2>
 <p>The three-dimensional positive definite form gives the algebra that the applications of this category use most.</p>
-<p><strong>Theorem.</strong> $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and an explicit isomorphism is $\gamma_\mu\mapsto i\vec e_\mu$, where $\gamma_\mu$ are the Clifford generators of $\mathrm{Cl}_{3,0}$ (of square $+1$) and $\vec e_\mu$ are the quaternion units.</p>
+<p><strong>Theorem.</strong> $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and an explicit isomorphism sends each Clifford generator of $\mathrm{Cl}_{3,0}$, of square $+1$, to the vector $i\vec e_\mu$, where $\vec e_\mu$ are the quaternion units.</p>
 <p><strong>Proof.</strong> The images $i\vec e_\mu$ square to $(i\vec e_\mu)^2=i^2\vec e_\mu^2=(-1)(-1)=+1$ and anticommute, so the assignment extends to an algebra homomorphism; it is injective because the images generate the eight-dimensional algebra, and both sides are eight-dimensional.</p>
-<p>Under this identification the quaternion units of the embedded copy are the bivectors of the Clifford algebra, $\vec e_x=-\gamma_2\gamma_3$ and cyclically, and the central scalar imaginary of $\mathbb{B}$ is the volume element, $i\mapsto\gamma_1\gamma_2\gamma_3$. The Clifford form on the generators is $\mathfrak{Q}(\gamma_\mu)=+1$, while the norm of the biquaternion algebra is the complex-valued form</p>
+<p>Under this identification the quaternion units of the embedded copy are the bivectors of the Clifford algebra, $\vec e_x=-(i\vec e_y)(i\vec e_z)$ and cyclically, and the central scalar imaginary of $\mathbb{B}$ is the volume element, $i=(i\vec e_x)(i\vec e_y)(i\vec e_z)$. The Clifford form on the generators is $\mathfrak{Q}(i\vec e_\mu)=+1$, while the norm of the biquaternion algebra is the complex-valued form</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}=\sum_{\mu=0}^{3}Q_\mu^2,
 $$</p>
 <p>with $Q_\mu\in\mathbb{C}$. Writing $Q_\mu=a_\mu+ib_\mu$ this is $N=\sum_\mu(a_\mu^2-b_\mu^2)+2i\sum_\mu a_\mu b_\mu$, so the real part of the norm is a quadratic form of signature $(4,4)$ and the Hermitian form $\tilde Q\tilde{Q}^{*}$ has scalar part the positive definite form $\sum_\mu|Q_\mu|^2$. The biquaternion algebra is thus a system whose norm is complex-valued and indefinite in its real part, and it is not a division algebra; its zero divisors are not covered here.</p>
-<p><strong>Remark.</strong> The biquaternion algebra is a complex algebra and an eight-dimensional real algebra at once, and the Clifford identification fixes the complex structure: in $\mathrm{Cl}_{3,0}$ the volume element $\omega=\gamma_1\gamma_2\gamma_3$ is central with $\omega^{2}=-1$, so that $\mathbb{R}[\omega]\cong\mathbb{C}$ is the centre and $\mathrm{Cl}_{3,0}$ is a complex algebra with $\omega$ in the role of the scalar imaginary; under the identification $\gamma_\mu\mapsto i\vec e_\mu$ one has $\omega\mapsto i$, and $\mathrm{Cl}_{3,0}$, $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra in three presentations. The complexification is the larger algebra $\mathbb{C}\mathrm{l}_3=\mathrm{Cl}_{3,0}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$, of complex dimension eight, and it is the complexification, not the biquaternion algebra, that has two simple factors. This is the algebraic origin of the appearance of the pair of conjugate spinor modules in the complexified picture, recorded in <em>Real Spinors and Reality Conditions with Inner Conjugation</em>.</p>
+<p><strong>Remark.</strong> The biquaternion algebra is a complex algebra and an eight-dimensional real algebra at once, and the Clifford identification fixes the complex structure: in $\mathrm{Cl}_{3,0}$ the volume element $\omega=(i\vec e_x)(i\vec e_y)(i\vec e_z)$ is central with $\omega^{2}=-1$, so that $\mathbb{R}[\omega]\cong\mathbb{C}$ is the centre and $\mathrm{Cl}_{3,0}$ is a complex algebra with $\omega$ in the role of the scalar imaginary; under the identification of the generators with the vectors $i\vec e_\mu$ one has $\omega\mapsto i$, and $\mathrm{Cl}_{3,0}$, $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra in three presentations. The complexification is the larger algebra $\mathbb{C}\mathrm{l}_3=\mathrm{Cl}_{3,0}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$, of complex dimension eight, and it is the complexification, not the biquaternion algebra, that has two simple factors. This is the algebraic origin of the appearance of the pair of conjugate spinor modules in the complexified picture, recorded in <em>Real Spinors and Reality Conditions with Inner Conjugation</em>.</p>
 <h2 id="norms-and-composition">Norms and Composition</h2>
 <p>The multiplicity of the norm is the composition property, and it is possible only in dimensions one, two, four and eight.</p>
 <p><strong>Definition.</strong> A <strong>composition algebra</strong> over $\mathbb{R}$ is a real algebra $A$ with a non-degenerate quadratic form $N$ satisfying</p>
@@ -285,8 +285,8 @@ the constructions of the complex octonionic chain algebra and of the split bioct
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
-<td>$\gamma_\mu\mapsto i\vec e_\mu$</td>
-<td>Isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$</td>
+<td>$i\vec e_\mu$</td>
+<td>The Clifford generators of $\mathrm{Cl}_{3,0}$, the image of the isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$</td>
 </tr>
 <tr>
 <td>$Sp(1)$</td>
@@ -312,6 +312,13 @@ the constructions of the complex octonionic chain algebra and of the split bioct
 <li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for the commuting-generator algebra it distinguishes from the Clifford algebra of two anticommuting generators.</li>
 <li>Companion article <a href="complex-split-biquaternions-and-the-clifford-algebra-cl3.html">Complex Split Biquaternions and the Clifford Algebra Cl(3)</a>, for the complexification of the split biquaternion algebra and its splitting into two biquaternion summands.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.</p>
+<p>$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$</p>
+<p>The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.</p>
       </div>
     </main>
   </div>

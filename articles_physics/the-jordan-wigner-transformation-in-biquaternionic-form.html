@@ -120,7 +120,7 @@ $$</p>
 \vec\Upsilon_y=\frac{\tilde S_-}{\hbar}\Big|_{\text{one mode}} .
 $$</p>
 <p><strong>This is the one-site Jordan–Wigner transformation</strong>, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the <em>other</em> sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{m_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a <em>second</em> site is present.</p>
-<p><strong>A note on the identification.</strong> The parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and the dictionary companion fix the module-level statement $\mathsf{M}_2(i\vec e_k)=\gamma_0\gamma_k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> gives the two-dimensional representative $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:</p>
+<p><strong>A note on the identification.</strong> The parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and the dictionary companion fix the module-level identification $i\vec e_k\mapsto T_{e_k,e_z}$, the cells $T_{a,b}=L_aR_b$ acting by $\psi\mapsto a\psi b$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> gives the two-dimensional representative $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:</p>
 <p>$$
 \mathsf{M}_2(\vec\Upsilon_x)=\sigma_+ ,
 \qquad
@@ -234,7 +234,7 @@ $$</p>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=i\vec e_z$.</li>
-<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $\mathsf{M}_2(i\vec e_k)=\gamma_0\gamma_k$ and the module action that fixes the one-site map.</li>
+<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $i\vec e_k\mapsto T_{e_k,e_z}$ and the module action that fixes the one-site map.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The Jordan–Wigner transformation in biquaternion form is the statement that the transformation has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$, so a one-site spin ladder <em>is</em> a fermionic mode and the string is the empty product.</p>
@@ -312,8 +312,8 @@ $$</p>
 <td>Whole-chain parity; boundary-condition sectors</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(i\vec e_k)=\gamma_0\gamma_k$</td>
-<td>Dictionary identification of the algebra into $\mathrm{Cl}^+_{1,3}$</td>
+<td>$i\vec e_k\mapsto T_{e_k,e_z}$</td>
+<td>Cell of the bivector $i\vec e_k$; its module action is the Pauli action</td>
 </tr>
 </tbody>
 </table></div>
@@ -328,6 +328,14 @@ $$</p>
 <li>P. Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the identification of the Clifford algebra with the fermionic mode algebra and the even/odd splitting.</li>
 <li>K. Huang, <em>Statistical Mechanics</em> (Wiley, 1987), and R. B. Griffiths, "Correlations in Ising ferromagnets," <em>Journal of Mathematical Physics</em> <strong>8</strong> (1967) 478–483, for the $\mathbb{Z}_2$ symmetry and its consequences in the chain.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>
