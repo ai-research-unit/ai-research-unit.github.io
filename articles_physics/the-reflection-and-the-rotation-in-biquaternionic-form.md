@@ -205,7 +205,9 @@ so the two columns are exchanged: an **even** internal matrix gives a reflection
 |---|---|---|---|---|---|
 | $P$ | $c_0=iT_{e_t,e_x}$ | odd | linear | $-1$ | reflection |
 | $T$ | $-T_{e_y,e_t}$ | even | anti-linear | $-1$ | reflection |
-| $C$ | $-T_{e_y,e_y}$ | odd | anti-linear | $+1$ | proper |
+| $C$ | not a cell of this frame | odd | anti-linear | $+1$ | proper |
+
+The third row's matrix is not a cell, and the notation must not be read as one. The charge-conjugation intertwiner of this frame is the cell $T_{e_t,e_x}$, which satisfies $T_{e_t,e_x}T_\mu^{T}T_{e_t,e_x}^{-1}=-T_\mu$ and has the same odd grade; the representative whose determinant the table records is the companion's, taken in its block realization of the generators, and the two are related by the change of realization rather than by an equality of cells.
 
 This is why $T$ is a reflection whose internal matrix is an **even** element — the real quaternion $-\vec e_y$ of that article, the cell $-T_{e_y,e_t}$ — while $C$ is a proper transformation carried by an **odd** one. Neither fact is visible from the grade alone, and both are recorded here so that the grade assignments of the CPT article are not read against the rule of this one.
 
