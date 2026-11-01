@@ -78,7 +78,7 @@ c(T_{A,B})=[A]\,[B]^{\mathsf T},
 $$
 so a product has a coefficient array of rank one and every array of rank one is a product. <strong>The product condition becomes a rank condition, and the length becomes the rank of the array</strong>; nothing else in the article is needed for the two theorems.</p>
 <p><strong>Boundaries.</strong> The products and their cone are <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>; the one-sided families are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>; the abstract setting is <em>The Regular Representation in Dimension $n$</em>. At $n=2$ the same theorem with the sixteen Peirce-frame operators is <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, and the coefficient matrix there is the $4\times4$ array of that article. The general statement for an algebra of dimension $N$ is the tensor form of <em>The Regular Representation in Dimension $n$</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the endomorphism algebra has complex dimension $N^{2}=n^{4}$. The matrix units are $E_{\mu}=E_{ij}$ with $\mu$ running over the $N$ pairs, and they are orthonormal for the trace form, $\operatorname{tr}(E_{\mu}^{*}E_{\nu})=\delta_{\mu\nu}$. The basis products are $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$. The coefficient array of $M\in\operatorname{End}(A)$ is $c(M)$, an $N\times N$ array. The length is $\ell(M)$.</p>
+<p><strong>Conventions.</strong> The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the endomorphism algebra has complex dimension $N^{2}=n^{4}$. The matrix units are $E_{\mu}=E_{ij}$ with $\mu$ running over the $N$ pairs, and they are orthonormal for the Hilbert–Schmidt form, $\operatorname{tr}(E_{\mu}^{*}E_{\nu})=\delta_{\mu\nu}$. The basis products are $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$. The coefficient array of $M\in\operatorname{End}(A)$ is $c(M)$, an $N\times N$ array. The length is $\ell(M)$.</p>
 <h2 id="the-coefficient-array">The Coefficient Array</h2>
 <h3 id="the-basis-of-products">The Basis of Products</h3>
 <p><strong>Theorem.</strong> The $N^{2}=n^{4}$ operators $T_{\mu\nu}$ are a basis of $\operatorname{End}(M_{n}(\mathbb{C}))$, and they are orthonormal for the Hilbert–Schmidt form:
@@ -97,7 +97,7 @@ $$
 M=\sum_{\mu,\nu}c(M)_{\mu\nu}T_{\mu\nu},\qquad c(M)_{\mu\nu}=\operatorname{tr}\bigl(T_{\mu\nu}^{*}M\bigr),
 $$
 and the assignment $M\mapsto c(M)$ is a linear isomorphism of $\operatorname{End}(A)$ onto the space of $N\times N$ arrays.</p>
-<p><strong>The normalisation.</strong> The normalisation is the one of an orthonormal basis of the algebra. In the biquaternion articles the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$ has $\operatorname{tr}(\mathsf M_{2}(e_{\mu})^{*}\mathsf M_{2}(e_{\nu}))=2\delta_{\mu\nu}$, so the products have trace $4$ and the coefficient is $\tfrac14$ of the scalar product. <strong>The array is the same object in both normalisations; only the factor of $4$ differs.</strong></p>
+<p><strong>The normalisation.</strong> The normalisation is the one of an orthonormal basis of the algebra. In the biquaternion articles the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$ has $\operatorname{tr}(\mathsf M_{2}(e_{\mu})^{*}\mathsf M_{2}(e_{\nu}))=2\delta_{\mu\nu}$, so the products have Hilbert–Schmidt norm two, $\operatorname{tr}(T_{\mu\nu}^{*}T_{\mu\nu})=4$, and the coefficient is $\tfrac14$ of the scalar product. <strong>The array is the same object in both normalisations; only the factor of $4$ differs.</strong></p>
 <h3 id="the-array-of-a-product">The Array of a Product</h3>
 <p><strong>Theorem.</strong> For every pair,
 $$
@@ -106,7 +106,7 @@ $$
 where $[A]$ is the column of coordinates of $A$ in the basis $E_{\mu}$, $[A]_{\mu}=\operatorname{tr}(E_{\mu}^{*}A)$.</p>
 <p><em>Proof.</em> By definition $T_{A,B}=\sum_{\mu,\nu}A_{\mu}B_{\nu}T_{\mu\nu}$ with $A=\sum A_{\mu}E_{\mu}$ and $B=\sum B_{\nu}E_{\nu}$, since the map $(A,B)\mapsto T_{A,B}$ is bilinear and the basis products are the images of the basis pairs. The array of coefficients is therefore the outer product of the two coordinate columns.</p>
 <p><strong>Three readings of one identity.</strong> The rank of $[A][B]^{\mathsf T}$ is one when both vectors are nonzero; the array is zero when either is; and the array determines the operator by the basis expansion. <strong>The rank-one condition is therefore exactly the product condition, and it is a condition on an $N\times N$ array and not on the $N\times N$ matrix $M$.</strong></p>
-<p><strong>The two normalisations of the same array.</strong> The array of $L_{A}=T_{A,I}$ is the outer product of $[A]$ with the coordinate column of the identity, which is the column of the diagonal units. Its rank is one unless $A=0$, so <strong>every one-sided operator has length one</strong>, as it must.</p>
+<p><strong>The array of a one-sided operator.</strong> The array of $L_{A}=T_{A,I}$ is the outer product of $[A]$ with the coordinate column of the identity, which is the column of the diagonal units. Its rank is one unless $A=0$, so <strong>every one-sided operator has length one</strong>, as it must.</p>
 <h2 id="the-length">The Length</h2>
 <h3 id="the-definition-and-the-theorem">The Definition and the Theorem</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> of $M$ is
@@ -160,7 +160,7 @@ for $0\le r\le n^{2}$, and it is smooth away from the origin for $r=1$.</p>
 <tr>
 <td>$3$</td>
 <td>$15$</td>
-<td>the complements of the arrays of rank four</td>
+<td>the complement of the arrays of rank four</td>
 </tr>
 <tr>
 <td>$4$</td>
@@ -221,13 +221,13 @@ for $0\le r\le n^{2}$, and it is smooth away from the origin for $r=1$.</p>
 </tbody>
 </table></div>
 <p><strong>Every $r$ from $0$ to $N$ is a length, and the table has no gaps.</strong> What has gaps is the table of the <em>ordinary</em> rank of a product, which skips every number that is not a product of two integers at most $n$. The two stratifications are different, and this is the subject of the next section.</p>
-<p><strong>The jump.</strong> The increments of the dimension are $2N-2r+1$: from $r-1$ to $r$ the stratum grows by that number. At $n=2$ the increments are $7,5,3,1$, the last being the single condition $\det c\ne0$; at $n=3$ they are $17,15,13,11,9,7,5,3,1$. <strong>The top stratum is the complement of a hypersurface in the arrays, while the bottom one is far from it: the complement of the products has codimension $(n^{2}-1)^{2}$ in the arrays and $n^{4}-2n^{2}+1$ in the operator space, which at $n=2$ is $9$ and at $n=3$ is $73$.</strong></p>
+<p><strong>The jump.</strong> The increments of the dimension are $2N-2r+1$: from $r-1$ to $r$ the stratum grows by that number. At $n=2$ the increments are $7,5,3,1$, the last being the single condition $\det c\ne0$; at $n=3$ they are $17,15,13,11,9,7,5,3,1$. <strong>The top stratum is the complement of a hypersurface in the arrays, while the bottom one is far from it: the products have codimension $(n^{2}-1)^{2}=n^{4}-2n^{2}+1$ in the operator space, which at $n=2$ is $9$ and at $n=3$ is $64$.</strong></p>
 <h3 id="the-criterion-of-a-single-product">The Criterion of a Single Product</h3>
 <p><strong>Theorem.</strong> For $M\neq0$,
 $$
 \ell(M)=1\iff c(M)=[A][B]^{\mathsf T}\ \text{for some }A,B\neq0\iff\operatorname{rank}c(M)=1 .
 $$</p>
-<p><em>Proof.</em> The first equivalence is the array of a product, the second is the rank-one criterion for an array, and the third is the definition of the rank.</p>
+<p><em>Proof.</em> The first equivalence is the array of a product, and the second is the criterion that an $N\times N$ array of rank one is exactly an outer product of two nonzero columns.</p>
 <p><strong>The test on $M$ alone.</strong> The criterion is a test on the coefficients and not on the matrix: the rank of $M$ tells nothing, because a product can have rank $1$ and a matrix of rank $1$ can have length $n^{2}$. The test is
 $$
 M\ \text{is a product}\iff\text{the }2\times2\text{ minors of }c(M)\text{ vanish},
@@ -239,7 +239,7 @@ that is $N^{2}(N-1)^{2}/4$ polynomial conditions, which define a variety of codi
 <p><strong>Theorem.</strong> Neither number determines the other.</p>
 <p><em>Proof.</em> Two counterexamples at $n=2$ suffice, and both generalise.</p>
 <p><strong>A product of rank one and of length one.</strong> Take $A$ and $B$ of rank one; then $\operatorname{rank}T_{A,B}=1$ and $\ell=1$.</p>
-<p><strong>A matrix of rank one and of length four.</strong> Take $M=uv^{\mathsf T}$ with $u,v$ generic columns of length $4$; the array $c(M)$ is generic of size $4$ and has rank $4$, so $\ell(M)=4$ while $\operatorname{rank}M=1$. <strong>At $n=3$ the same construction gives a matrix of rank one and length $n^{2}=9$</strong>, and the phenomenon is not an accident of the small case.</p>
+<p><strong>A matrix of rank one and of length four.</strong> Take $M=uv^{\mathsf T}$ with $u,v$ generic columns of length $4$; the array $c(M)$ has rank $4$ for generic $u,v$, so $\ell(M)=4$ while $\operatorname{rank}M=1$. The set is not small: the rank-one matrices of length four form a dense open subset of the rank-one variety, and the computation is the one of the worked case $M_{1}$ of the Peirce article. <strong>At $n=3$ the same construction gives a matrix of rank one and length $n^{2}=9$</strong>, and the phenomenon is not an accident of the small case.</p>
 <p><strong>A product of full rank and of length one.</strong> Take $A$ and $B$ invertible; then $\operatorname{rank}T_{A,B}=n^{2}$ and $\ell=1$. So a matrix of the largest rank can have the smallest length.</p>
 <p><strong>The table at $n=2$.</strong></p>
 <div class="table-scroll"><table>
@@ -308,7 +308,7 @@ $$</p>
 <h2 id="when-the-theorem-fails">When the Theorem Fails</h2>
 <h3 id="the-commutative-case">The Commutative Case</h3>
 <p><strong>The collapse.</strong> Let $A$ be commutative. Then $A^{\mathrm{opp}}=A$ and $T_{A,B}=L_{AB}$, so the product set is the one-sided family of dimension $N$, and every nonzero member has length one. The theorem $\ell=\operatorname{rank}c$ survives in the form "the length is $0$ or $1$", and it becomes empty.</p>
-<p><strong>The array is not well defined.</strong> In the commutative case the map $A\otimes A\to\operatorname{End}(A)$ has kernel of dimension $N^{2}-N$, so an operator has many coefficient arrays, of different ranks. The dual numbers give the example: the operator $L_{1}$ has the array of the tensor $1\otimes1$ and also the array of $\tfrac12(1\otimes1+\varepsilon\otimes\varepsilon)$ scaled, of rank two. <strong>The rank of the array is then a property of the chosen expansion and not of the operator.</strong></p>
+<p><strong>The array is not well defined.</strong> In the commutative case the map $A\otimes A\to\operatorname{End}(A)$ has kernel of dimension $N^{2}-N$, so an operator has many coefficient arrays, of different ranks. The dual numbers give the example: $\varepsilon X\varepsilon=0$ for every $X$, so the tensor $\varepsilon\otimes\varepsilon$ lies in the kernel, and the operator $L_{1}$ has the array of $1\otimes1$, of rank one, and also the array of $1\otimes1+\varepsilon\otimes\varepsilon$, of rank two. <strong>The rank of the array is then a property of the chosen expansion and not of the operator.</strong></p>
 <p><strong>The criterion.</strong> The identity $\ell(M)=\operatorname{rank}c(M)$ holds for an algebra $A$ exactly when the multiplication map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ is injective, that is exactly when $A$ is central simple. Over $\mathbb{C}$ these are the algebras $M_{n}(\mathbb{C})$, so <strong>the theorem is a theorem about matrix algebras and about nothing else</strong>: a split algebra, a commutative algebra or a product of two matrix algebras all fail it.</p>
 <p><strong>The reduced biquaternion case.</strong> The algebra $\mathbb{C}\times\mathbb{C}$ is commutative, of dimension two, and its operator space has dimension four. The products fill a two-dimensional subspace, every nonzero member has length one, and the length of the identity is one and not two. <strong>The algebra has the same complex dimension as the dual numbers and the same failure of the theorem; the failure follows from the commutativity and not from the size.</strong></p>
 <h3 id="the-two-theory-reading">The Two-Theory Reading</h3>
