@@ -75,41 +75,20 @@
 <p>The source is William E. Baylis, <em>Relativity in Introductory Physics</em>, Can. J. Phys. <strong>82</strong> (2004) 853–873 (arXiv:physics/0406158), and his <em>Electrodynamics: A Modern Geometric Approach</em> (Birkhäuser, 1999), where the paravector formalism is developed. The article presents the paravector interpretation as a <strong>presentation</strong> of the corpus's own algebra, not as a different theory: the Lorentz group, the null cone, the field and its invariants are the same objects under a change of basis, and nothing below contradicts a result of the companion articles.</p>
 <p>The conventions are those of the series. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and $i$ central with $i^2 = -1$. The Hermitian subspace is $\mathbb{M}_+ = \{q_te_t + i\vec q : q_t\in\mathbb{R}, \vec q\ \text{real}\}$ and the material subspace $\mathbb{M}_- = i\mathbb{M}_+$; the scalar imaginary is written $i$ where it is the central element of $\mathbb{B}$ and $\mathrm{i}$ nowhere else, so that no notational distinction is needed. The symbol $c$ is the speed of light in the medium, $c_0$ its vacuum value, and $\vec v$ is reserved for particle and frame velocities.</p>
 <h2 id="the-algebra-of-physical-space-inside-the-biquaternions">The Algebra of Physical Space Inside the Biquaternions</h2>
-<p>Let $\gamma_k = i \vec e_k$, $k = 1,2,3$. These three elements are real (they have vanishing imaginary part in the sense that they are fixed by complex conjugation) and satisfy</p>
+<p>The three imaginary vectors $i\vec e_k$, $k=x,y,z$, satisfy</p>
 <p>$$
-\gamma_j\gamma_k + \gamma_k\gamma_j = 2\delta_{jk}\,e_t,
+(i\vec e_j)(i\vec e_k) + (i\vec e_k)(i\vec e_j) = 2\delta_{jk}\,e_t,
 $$</p>
-<p>because $\gamma_j\gamma_k = (i\vec e_j)(i\vec e_k) = i^2\vec e_j \vec e_k = -\vec e_j \vec e_k$ and the quaternion units anticommute for $j\neq k$ while $\vec e_k^2 = -e_t$ gives $\gamma_k^2 = -\vec e_k^2 = +e_t$. They therefore generate a three-dimensional positive-definite Clifford algebra. That algebra is all of $\mathbb{B}$, as the corpus records, and the four-dimensional real space</p>
+<p>because $(i\vec e_j)(i\vec e_k) = i^2\vec e_j \vec e_k = -\vec e_j \vec e_k$ and the quaternion units anticommute for $j\neq k$ while $\vec e_k^2 = -e_t$ gives $(i\vec e_k)^2 = -\vec e_k^2 = +e_t$. They therefore generate a three-dimensional positive-definite Clifford algebra. That algebra is all of $\mathbb{B}$, as the corpus records, and the four-dimensional real space</p>
 <p>$$
-\mathrm{APS} \;=\; \mathrm{span}_\mathbb{R}\{e_t, \gamma_1, \gamma_2, \gamma_3\} \;=\; \left\{p_te_t + p_x\gamma_1 + p_y\gamma_2 + p_z\gamma_3 \;:\; p_\mu \in \mathbb{R}\right\}
+\mathrm{APS} \;=\; \mathrm{span}_\mathbb{R}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\} \;=\; \left\{p_te_t + i(p_x\vec e_x + p_y\vec e_y + p_z\vec e_z) \;:\; p_\mu \in \mathbb{R}\right\}
 $$</p>
-<p>is its <strong>paravector space</strong>. Comparing with the definition of the Hermitian subspace,</p>
+<p>is its <strong>paravector space</strong>. It is exactly the Hermitian subspace</p>
 <p>$$
 \mathbb{M}_+ = \left\{q_te_t + i\vec q\right\}, \qquad \vec q = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z,
 $$</p>
-<p>shows that the paravector space is exactly $\mathbb{M}_+$: the identification is $\gamma_k \leftrightarrow i\vec e_k$, so $p_te_t + \sum p_k\gamma_k = p_te_t + i\sum p_k \vec e_k$. The two interpretations of the same element are</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>scalar</th>
-<th>vector</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>corpus basis</td>
-<td>$p_t e_t$</td>
-<td>$i(p_x\vec e_x + p_y\vec e_y + p_z\vec e_z)$</td>
-</tr>
-<tr>
-<td>paravector basis</td>
-<td>$p_t e_t$</td>
-<td>$p_x\gamma_1 + p_y\gamma_2 + p_z\gamma_3$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The conjugations.</strong> On paravectors the quaternion conjugate ${}^{\natural}$ negates the vector part and leaves the scalar part alone, since $\bar{\gamma}_k = \overline{i\vec e_k} = i\bar{e}_k = -i\vec e_k = -\gamma_k$. This is precisely the <strong>Clifford conjugate</strong> of the algebra of physical space, $p \mapsto \bar p = p_t - \vec p$. Because $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, $\bar p = p^\dagger$ for a paravector; the reversion, whose action on the paravector generators is the identity, coincides with the Hermitian conjugation on $\mathbb{M}_+$ and is the operation the source writes with a dagger.</p>
+<p>with $q_\mu = p_\mu$: the paravector directions are the imaginary vectors $i\vec e_k$, so the element is $p_te_t + i\vec p$ in either reading. The two interpretations of the same element are one decomposition, the scalar part $p_te_t$ and the vector part $i\vec p$: the corpus reads them as the Hermitian half of $\mathbb{B}$ and the source as the time and space components of a spacetime vector.</p>
+<p><strong>The conjugations.</strong> On paravectors the quaternion conjugate ${}^{\natural}$ negates the vector part and leaves the scalar part alone, since $\overline{i\vec e_k} = i\bar{\vec e}_k = -i\vec e_k$. This is precisely the <strong>Clifford conjugate</strong> of the algebra of physical space, $p \mapsto \bar p = p_t - \vec p$. Because $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, $\bar p = p^\dagger$ for a paravector; the reversion, whose action on these imaginary vectors is the identity, coincides with the Hermitian conjugation on $\mathbb{M}_+$ and is the operation the source writes with a dagger.</p>
 <p><strong>The form.</strong> The biquaternion norm of a paravector is real and reads</p>
 <p>$$
 p\,\bar p = \left(p_t + \vec p\right)\left(p_t - \vec p\right) = p_t^2 - \vec p^2 = p_t^2 - p_x^2 - p_y^2 - p_z^2
@@ -119,7 +98,7 @@ $$</p>
 \langle\tilde Q\rangle_{\natural} = (ip)\overline{(ip)} = i^2\,p\bar p = -p\bar p,
 $$</p>
 <p>so a paravector is timelike, lightlike or spacelike exactly when the corresponding material element is, with the sign of the interval reversed in the two conventions. The null cone is the same set in both interpretations.</p>
-<p><strong>The dictionary in one line.</strong> Under the identification $\gamma_k = i\vec e_k$, the algebra of physical space is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, the Clifford conjugate is the quaternion conjugate, the reversion is the Hermitian conjugation, and the Minkowski interval of a paravector is the negative of the corpus norm of its central-imaginary multiple. The material four-vectors are $\tilde R = ip$ with $p$ a paravector; in coordinates, $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ corresponds to the paravector $p = ct'\,e_t - (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ in the paravector basis, the spatial sign being the convention that $\gamma_k = i\vec e_k$ fixes.</p>
+<p><strong>The dictionary in one line.</strong> The algebra of physical space is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, with the imaginary vectors $i\vec e_k$ as its three vector directions, the Clifford conjugate is the quaternion conjugate, the reversion is the Hermitian conjugation, and the Minkowski interval of a paravector is the negative of the corpus norm of its central-imaginary multiple. The material four-vectors are $\tilde R = ip$ with $p$ a paravector; in coordinates, $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ corresponds to the paravector $p = ct'\,e_t - (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ in the paravector basis, the spatial sign being the one that the imaginary vector $i\vec e_k$ fixes.</p>
 <h2 id="the-paravector-as-a-spacetime-vector">The Paravector as a Spacetime Vector</h2>
 <p>A paravector $p = p_t+\vec p$ has a real scalar $p_t$ and a real three-vector $\vec p$, and it represents the spacetime vector with time component $p_t$ and space components $\vec p$. The corpus writes the same vector as a material element with imaginary time; the two are related by the central $i$ and carry the same information. The practical difference is that the paravector's time is real, so that "spacetime" is a real four-dimensional space with one timelike direction and the geometry of light rays is a geometry of a Euclidean three-space with a null cone.</p>
 <p>The <strong>invariant interval</strong> between two events is the squared modulus $p\bar p$, and the <strong>proper time</strong> along a worldline is the modulus of the displacement. These are the corpus's interval statements in the paravector interpretation; no new physics is introduced.</p>
@@ -181,13 +160,13 @@ $$</p>
 <h2 id="composite-systems-biparavectors-and-the-six-planes">Composite Systems: Biparavectors and the Six Planes</h2>
 <p>A <strong>biparavector</strong> is the product of two orthogonal paravectors; it represents a <strong>plane in spacetime</strong>, in the same way that a bivector of the algebra of physical space represents a plane in physical space. Because spacetime is four-dimensional, there are $\binom{4}{2} = 6$ independent planes, and a basis of the biparavector space is</p>
 <p>$$
-\left\{e_t\gamma_1,\ e_t\gamma_2,\ e_t\gamma_3,\ \gamma_2\gamma_1,\ \gamma_3\gamma_2,\ \gamma_1\gamma_3\right\}
-= \left\{\gamma_1,\ \gamma_2,\ \gamma_3,\ -\vec e_y \vec e_x,\ -\vec e_z \vec e_y,\ -\vec e_x \vec e_z\right\},
+\left\{i\vec e_x,\ i\vec e_y,\ i\vec e_z,\ (i\vec e_y)(i\vec e_x),\ (i\vec e_z)(i\vec e_y),\ (i\vec e_x)(i\vec e_z)\right\}
+= \left\{i\vec e_x,\ i\vec e_y,\ i\vec e_z,\ -\vec e_y \vec e_x,\ -\vec e_z \vec e_y,\ -\vec e_x \vec e_z\right\},
 $$</p>
-<p>the last three using $\gamma_j\gamma_k = -\vec e_j \vec e_k$. The first three planes contain the time direction: they are the <strong>timelike</strong> (or boost) planes, and in the corpus basis they are the imaginary vectors $i \vec e_k$ of $\mathbb{M}_+$. The last three are the <strong>spacelike</strong> (or rotation) planes, and they are the real quaternion bivectors $\vec e_j \vec e_k$ of $\mathbb{H}_{\mathbb{B}}$. A general biparavector is a sum of one plane of each type, and its two parts are the two generators of the Lorentz group: the timelike planes generate the boosts and the spacelike planes the rotations (<em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>). The corpus's statement that boosts have rotors in $\mathbb{M}_+$ and rotations in $\mathbb{H}_{\mathbb{B}}$ is the statement that the two families of planes live in the two halves of $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, read through the paravector identification.</p>
+<p>the last three using $(i\vec e_j)(i\vec e_k) = -\vec e_j \vec e_k$. The first three planes contain the time direction: they are the <strong>timelike</strong> (or boost) planes, and they are the imaginary vectors of $\mathbb{M}_+$. The last three are the <strong>spacelike</strong> (or rotation) planes, and they are the real quaternion bivectors $\vec e_j \vec e_k$ of $\mathbb{H}_{\mathbb{B}}$. A general biparavector is a sum of one plane of each type, and its two parts are the two generators of the Lorentz group: the timelike planes generate the boosts and the spacelike planes the rotations (<em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>). The corpus's statement that boosts have rotors in $\mathbb{M}_+$ and rotations in $\mathbb{H}_{\mathbb{B}}$ is the statement that the two families of planes live in the two halves of $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, read through the paravector identification.</p>
 <p>The pay-off of the biparavector interpretation is that the electromagnetic field strength is one of these objects. Baylis writes it as $F = \vec E + ic\vec B$, a sum of a spacelike and a timelike plane, and the corpus's pure-vector field strength $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is the same object up to the normalization and the placement of the central $i$. The plane interpretation of the field — which plane is the electric field, which is the magnetic, and how the two sit in the two halves of the algebra — is set out in <em>The Field-Strength Biquaternion and Its Invariants</em>, where it is used to explain the asymmetric position of the electric and magnetic parts.</p>
 <h2 id="the-multiparavector-grading-and-the-compactness-of-the-algebra">The Multiparavector Grading and the Compactness of the Algebra</h2>
-<p>Baylis names every graded subspace of $\mathrm{Cl}_{3,0}$ after the spacetime object it carries, and the names make the compactness of the algebra visible. With the scalar unit $e_t$, the three vectors $\gamma_k = i\vec e_k$ (so that $\gamma_j\gamma_k+\gamma_k\gamma_j = 2\delta_{jk}e_t$) and the central volume element $i = \gamma_1\gamma_2\gamma_3$, a <strong>multiparavector</strong> is a graded element, and the four grades group into five spacetime objects:</p>
+<p>Baylis names every graded subspace of $\mathrm{Cl}_{3,0}$ after the spacetime object it carries, and the names make the compactness of the algebra visible. With the scalar unit $e_t$, the three imaginary vectors $i\vec e_k$ (so that $(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j) = 2\delta_{jk}e_t$) and the central volume element $i = (i\vec e_x)(i\vec e_y)(i\vec e_z)$, a <strong>multiparavector</strong> is a graded element, and the four grades group into five spacetime objects:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -209,28 +188,28 @@ $$</p>
 <tr>
 <td>vector</td>
 <td>$1$</td>
-<td>$\gamma_k$</td>
+<td>$i\vec e_k$</td>
 <td>$3$</td>
 <td>spatial vector (a relative notion)</td>
 </tr>
 <tr>
 <td><strong>paravector</strong></td>
 <td>$0+1$</td>
-<td>$e_t,\ \gamma_k$</td>
+<td>$e_t,\ i\vec e_k$</td>
 <td>$4$</td>
 <td>spacetime vector</td>
 </tr>
 <tr>
 <td><strong>biparavector</strong></td>
 <td>$1+2$</td>
-<td>$\gamma_k,\ \gamma_j\gamma_k$</td>
+<td>$i\vec e_k,\ \vec e_j\vec e_k$</td>
 <td>$6$</td>
 <td>spacetime plane: a boost or a rotation</td>
 </tr>
 <tr>
 <td><strong>triparavector</strong></td>
 <td>$2+3$</td>
-<td>$\gamma_j\gamma_k,\ i\gamma_k$</td>
+<td>$\vec e_j\vec e_k,\ -\vec e_k$</td>
 <td>$4$</td>
 <td>the dual of a spacetime vector</td>
 </tr>
@@ -243,7 +222,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the whole content of the statement that the algebra of physical space is <strong>compact</strong>: its eight real dimensions carry the physics that spacetime algebra carries in sixteen, because each grade plays a double role. The scalar part of a multiparavector is one number serving both a Lorentz scalar and the time component of a spacetime vector; the vector part is three numbers serving both the space part of a spacetime vector and the timelike half of a spacetime plane. In the sixteen-dimensional spacetime algebra the same objects are separated by the chirality of the grade — a spacetime vector is a single grade-one element, a spacetime plane a single grade-two element — and the representation theory of the Lorentz group is consequently twice as wide. The algebra of physical space is not a truncation of spacetime algebra but the same content in a basis in which two of the sixteen components of a multivector are identified by the central $i$; the process is the one the spacetime-algebra article examines under <em>The Even Subalgebra as a Clifford Algebra</em> and <em>The Clifford-Odd $\gamma_0$ and the Right Action</em>. The compactness is what makes the corpus's single pure-vector field strength carry both invariants, and what makes its single $\mathbb{M}_-$ four-vector carry both the coordinate and the four-momentum.</p>
+<p>The table is the whole content of the statement that the algebra of physical space is <strong>compact</strong>: its eight real dimensions carry the physics that spacetime algebra carries in sixteen, because each grade plays a double role. The scalar part of a multiparavector is one number serving both a Lorentz scalar and the time component of a spacetime vector; the vector part is three numbers serving both the space part of a spacetime vector and the timelike half of a spacetime plane. In the sixteen-dimensional spacetime algebra the same objects are separated by the chirality of the grade — a spacetime vector is a single grade-one element, a spacetime plane a single grade-two element — and the representation theory of the Lorentz group is consequently twice as wide. The algebra of physical space is not a truncation of spacetime algebra but the same content in a basis in which two of the sixteen components of a multivector are identified by the central $i$; the process is the one the spacetime-algebra article examines under <em>The Even Subalgebra as a Clifford Algebra</em> and <em>The Odd Vector $v_0$ and the Right Action</em>. The compactness is what makes the corpus's single pure-vector field strength carry both invariants, and what makes its single $\mathbb{M}_-$ four-vector carry both the coordinate and the four-momentum.</p>
 <p><strong>A caution about the wedge.</strong> The symbol $\wedge$ carries two meanings in this literature and they must not be conflated. In the algebra of physical space, $\tilde Q_1\wedge\tilde Q_2 = \tfrac12(\tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1)$ is the <strong>commutator</strong>, with values in the bivector (plane) part; in the exterior algebra of a four-dimensional vector space it is the <strong>antisymmetric product</strong>, a bivector of $\Lambda^2\mathbb{C}^4$, a six-component object. On three-dimensional <em>vectors</em> the two agree once a bivector is identified with an axial vector, which is why the cross product interpretation usually works; on general multiparavectors they do not agree as objects, although their components agree as a matter of degree count. Baylis records the caution explicitly: an identity proved for the three-dimensional wedge of vectors holds for the four-dimensional wedge only after the appropriate translation, and treating the two as the same symbol without it is a common source of error. The corpus uses $\wedge$ in the first sense throughout and reserves the exterior product of the spacetime algebra for the articles that need it; the bridge between the two is the identification of a decomposable bivector with the two-plane its factors span.</p>
 <h2 id="velocity-composition">Velocity Composition</h2>
 <p>The proper velocity is the natural variable of the composition law. If a frame $B$ moves with proper velocity $\tilde V_{\mathrm p,BA}$ relative to $A$ and a frame $C$ moves with proper velocity $\tilde V_{\mathrm p,CB}$ relative to $B$, then the proper velocity of $C$ relative to $A$ is the <strong>product</strong></p>
@@ -262,7 +241,7 @@ $$</p>
 <p><strong>It does not add a different theory.</strong> The paravector space is the Hermitian subspace $\mathbb{M}_+$ of the corpus, the Clifford conjugate is the quaternion conjugate, the reversion is the Hermitian conjugation, and the Lorentz group is the same group of unit-norm biquaternions. Every external result written in the algebra of physical space is a result of the corpus in a different basis, and the dictionary above is the whole of the translation. In particular the corpus's choice of the material sector, with its $ict'$ and its real vectors, is the choice to write the <em>anti-Hermitian</em> interpretation of the same four-vector; the paravector interpretation writes the <em>Hermitian</em> one, and the two are exchanged by the central $i$.</p>
 <p>The one genuinely new object in the source's programme is not a change of basis at all: the <strong>electromagnetic plane wave as a rotation and a dilation</strong>, which is an identity of the null cone and is treated in its own article (<em>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation</em>). The paravector interpretation is what makes that identity one line of algebra.</p>
 <h2 id="summary">Summary</h2>
-<p>The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra under the identification $\gamma_k = i\vec e_k$; its paravector space is the four-dimensional real space $\{p_te_t + \vec p\}$, its Clifford conjugate is the quaternion conjugate, its reversion the Hermitian conjugation, and its Minkowski form $p\bar p = p_t^2 - \vec p^2$ is the negative of the corpus norm of $ip$. The proper velocity $\tilde V_{\mathrm p} = \gamma(e_t+\beta\vec u_v)$ is unimodular and equals the square of the boost rotor $L = \cosh\frac{w}{2}+\sinh\frac{w}{2}\vec u_v$. The boost of a paravector is the <strong>rule</strong> $p\mapsto \tilde V_{\mathrm p}\,p_\parallel+p_\perp$, which fixes the component orthogonal to the boost plane and multiplies the coplanar component by the proper velocity; in the series' conventions this is exactly the rotor conjugation of the Hermitian subspace. Biparavectors are spacetime planes, six in all, three timelike and generating boosts and three spacelike and generating rotations, and the field strength is a biparavector. The paravector interpretation is a presentation of the corpus's own algebra with a real time and a product rule for the boost; it introduces no new physics, and the one new identity of the source's programme is the boost of a plane wave.</p>
+<p>The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, with the imaginary vectors $i\vec e_k$ as its three vector directions; its paravector space is the four-dimensional real space $\{p_te_t + \vec p\}$, its Clifford conjugate is the quaternion conjugate, its reversion the Hermitian conjugation, and its Minkowski form $p\bar p = p_t^2 - \vec p^2$ is the negative of the corpus norm of $ip$. The proper velocity $\tilde V_{\mathrm p} = \gamma(e_t+\beta\vec u_v)$ is unimodular and equals the square of the boost rotor $L = \cosh\frac{w}{2}+\sinh\frac{w}{2}\vec u_v$. The boost of a paravector is the <strong>rule</strong> $p\mapsto \tilde V_{\mathrm p}\,p_\parallel+p_\perp$, which fixes the component orthogonal to the boost plane and multiplies the coplanar component by the proper velocity; in the series' conventions this is exactly the rotor conjugation of the Hermitian subspace. Biparavectors are spacetime planes, six in all, three timelike and generating boosts and three spacelike and generating rotations, and the field strength is a biparavector. The paravector interpretation is a presentation of the corpus's own algebra with a real time and a product rule for the boost; it introduces no new physics, and the one new identity of the source's programme is the boost of a plane wave.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -281,11 +260,11 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$, central</td>
 </tr>
 <tr>
-<td>$\gamma_k = i \vec e_k$</td>
-<td>Generators of the algebra of physical space, $\gamma_j\gamma_k + \gamma_k\gamma_j = 2\delta_{jk}e_t$</td>
+<td>$i\vec e_k$, $k=x,y,z$</td>
+<td>The three vector generators of the algebra of physical space, $(i\vec e_j)(i\vec e_k) + (i\vec e_k)(i\vec e_j) = 2\delta_{jk}e_t$</td>
 </tr>
 <tr>
-<td>$\mathrm{APS} = \mathrm{span}\{e_t,\gamma_k\} = \mathbb{M}_+$</td>
+<td>$\mathrm{APS} = \mathrm{span}\{e_t,i\vec e_k\} = \mathbb{M}_+$</td>
 <td>Paravector space</td>
 </tr>
 <tr>
@@ -329,7 +308,7 @@ $$</p>
 <td>Product of two orthogonal paravectors; a spacetime plane</td>
 </tr>
 <tr>
-<td>$\{e_t\gamma_k,\ \gamma_j\gamma_k\}$</td>
+<td>$\{i\vec e_k,\ \vec e_j\vec e_k\}$</td>
 <td>The six independent planes: three timelike, three spacelike</td>
 </tr>
 <tr>
@@ -346,6 +325,13 @@ $$</p>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra treatment of boosts, rotors and the Lorentz group.</li>
 <li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966), for the spacetime-algebra comparison, in which the paravectors of $\mathrm{Cl}_{3,0}$ are the even elements of $\mathrm{Cl}_{1,3}$.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are the vector generators of $\mathrm{Cl}_{3,0}$, elements of $\mathbb{B}$; they are not the Dirac frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, which is a frame of cells acting on $\mathbb{B}$.</p>
+<p>$$
+\gamma_k=i\vec e_k,\qquad k=x,y,z;\qquad \gamma_j\gamma_k+\gamma_k\gamma_j=2\delta_{jk}e_t;\qquad \gamma_1\gamma_2\gamma_3=i .
+$$</p>
+<p>A product of two generators is a quaternion unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$, so the eight products $e_t,\ \gamma_k,\ \gamma_j\gamma_k,\ i$ are the eight real dimensions of the algebra.</p>
+<p>The dictionary is exact over $\mathbb{R}$: the paravector is $p_te_t+p_x\gamma_1+p_y\gamma_2+p_z\gamma_3=p_te_t+i\vec p$, a Hermitian element of $\mathbb{B}$ with real components.</p>
       </div>
     </main>
   </div>

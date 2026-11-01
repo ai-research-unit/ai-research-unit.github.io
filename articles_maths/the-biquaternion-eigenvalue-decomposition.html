@@ -83,27 +83,27 @@ $$</p>
 <p>The algebra and its four conjugations are from <em>The Biquaternion Algebra</em>; the spectrum and the characteristic polynomial are <em>The Spectrum</em>, §<em>The Spectral Criterion</em>; the normality criterion and the spectral theorem are §<em>The Hermitian Case</em> below; the roots of one and the idempotents are <em>Idempotents</em>; the Peirce decomposition is <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the eigenvalue decomposition in coordinates is §<em>The Eigenprojectors</em> below; the Clifford dictionary is <em>The Number Systems as Clifford Algebras</em>, §<em>The Biquaternion Algebra</em>; the general Clifford theory is <em>The Eigenvalue Decomposition in a Clifford Algebra</em>; and the grade decomposition is <em>The Geometric Product and the Grade Decomposition</em>.</p>
 <h2 id="the-clifford-dictionary">The Clifford Dictionary</h2>
 <h3 id="the-generators-and-the-volume-element">The Generators and the Volume Element</h3>
-<p>Let $V=\mathbb{R}^{3}$ with the positive definite form $Q=\operatorname{diag}(1,1,1)$, and let $\gamma_{1},\gamma_{2},\gamma_{3}$ be the Clifford generators:</p>
+<p>Let $V=\mathbb{R}^{3}$ with the positive definite form $Q=\operatorname{diag}(1,1,1)$, and let $\eta_{1},\eta_{2},\eta_{3}$ be an orthonormal frame of $V$, the Clifford generators:</p>
 <p>$$
-\gamma_{\mu}^{2}=1, \qquad \gamma_{\mu}\gamma_{\nu}+\gamma_{\nu}\gamma_{\mu}=0 \quad (\mu\neq\nu).
+\eta_{\mu}^{2}=1, \qquad \eta_{\mu}\eta_{\nu}+\eta_{\nu}\eta_{\mu}=0 \quad (\mu\neq\nu).
 $$</p>
 <p>The volume element is</p>
 <p>$$
-\omega=\gamma_{1}\gamma_{2}\gamma_{3}, \qquad \omega^{2}=-1,
+\omega=\eta_{1}\eta_{2}\eta_{3}, \qquad \omega^{2}=-1,
 $$</p>
 <p>and it is central because the dimension is odd. The isomorphism of <em>The Number Systems as Clifford Algebras</em>, §<em>The Biquaternion Algebra</em>, is</p>
 <p>$$
-\gamma_{\mu}\longmapsto i\vec e_{\mu},
+\eta_{\mu}\longmapsto i\vec e_{\mu},
 $$</p>
 <p>where $\vec e_{x},\vec e_{y},\vec e_{z}$ are the quaternion units and $i$ is the central scalar imaginary of $\mathbb{B}$. Under it,</p>
 <p>$$
-\omega=\gamma_{1}\gamma_{2}\gamma_{3}\longmapsto i^{3}\vec e_{x}\vec e_{y}\vec e_{z}=i,
+\omega=\eta_{1}\eta_{2}\eta_{3}\longmapsto i^{3}\vec e_{x}\vec e_{y}\vec e_{z}=i,
 $$</p>
 <p>so the central imaginary unit of the biquaternions <strong>is</strong> the volume element. The inverse images of the quaternion units are the bivectors</p>
 <p>$$
-\vec e_{x}\longmapsto-\gamma_{2}\gamma_{3}, \qquad
-\vec e_{y}\longmapsto-\gamma_{3}\gamma_{1}, \qquad
-\vec e_{z}\longmapsto-\gamma_{1}\gamma_{2}.
+\vec e_{x}\longmapsto-\eta_{2}\eta_{3}, \qquad
+\vec e_{y}\longmapsto-\eta_{3}\eta_{1}, \qquad
+\vec e_{z}\longmapsto-\eta_{1}\eta_{2}.
 $$</p>
 <h3 id="the-grades-of-the-biquaternion-components">The Grades of the Biquaternion Components</h3>
 <p>The grade decomposition of $\mathrm{Cl}_{3,0}$ is</p>
@@ -138,12 +138,12 @@ $$</p>
 <tr>
 <td>imaginary vector $i\vec Q$</td>
 <td>$1$</td>
-<td>$i\vec e_{x}=\gamma_{1}$</td>
+<td>$i\vec e_{x}=\eta_{1}$</td>
 </tr>
 </tbody>
 </table></div>
 <p>A general biquaternion has complex coefficients, so it has components in all four grades: the real part of the scalar is grade $0$, the imaginary part of the scalar is grade $3$, the real part of the vector is grade $2$, and the imaginary part of the vector is grade $1$. The complex structure $i=\omega$ acts as the Hodge star on the grades, exchanging $0\leftrightarrow3$ and $1\leftrightarrow2$, which is the content of <em>The Volume Element, Duality and the Hodge Star</em>, §<em>The Biquaternion Case</em>.</p>
-<p><strong>Remark.</strong> The biquaternion norm $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ is the determinant of the matrix algebra $M_{2}(\mathbb{C})$, not the Clifford quadratic form. The Clifford form is $Q(\gamma_{\mu})=+1$ on the generators, while the quaternion units have square $-1$. The two forms are related by the identification $\gamma_{\mu}=i\vec e_{\mu}$ and the sign $i^{2}=-1$; the norm governs invertibility, and the Clifford form governs the grade structure. This is the sign dictionary of <em>The Number Systems as Clifford Algebras</em>, §<em>The Dictionary</em>.</p>
+<p><strong>Remark.</strong> The biquaternion norm $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ is the determinant of the matrix algebra $M_{2}(\mathbb{C})$, not the Clifford quadratic form. The Clifford form is $Q(\eta_{\mu})=+1$ on the generators, while the quaternion units have square $-1$. The two forms are related by the identification $\eta_{\mu}=i\vec e_{\mu}$ and the sign $i^{2}=-1$; the norm governs invertibility, and the Clifford form governs the grade structure. This is the sign dictionary of <em>The Number Systems as Clifford Algebras</em>, §<em>The Dictionary</em>.</p>
 <h2 id="the-eigenvalue-decomposition">The Eigenvalue Decomposition</h2>
 <h3 id="the-pure-root">The Pure Root</h3>
 <p>Let $\tilde Q=Q_{t}e_{t}+\vec Q$ with $\vec Q=Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z}$ and complex coefficients. The square of the vector part is central,</p>
@@ -289,11 +289,11 @@ $$</p>
 <td>the biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\gamma_{\mu}$</td>
-<td>the Clifford generators of $\mathrm{Cl}_{3,0}$, $\gamma_{\mu}^{2}=1$</td>
+<td>$\eta_{\mu}$</td>
+<td>an orthonormal frame of $V$, the Clifford generators of $\mathrm{Cl}_{3,0}$, $\eta_{\mu}^{2}=1$</td>
 </tr>
 <tr>
-<td>$\omega=\gamma_{1}\gamma_{2}\gamma_{3}$</td>
+<td>$\omega=\eta_{1}\eta_{2}\eta_{3}$</td>
 <td>the volume element, $\omega^{2}=-1$, central</td>
 </tr>
 <tr>
@@ -302,7 +302,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec e_{x},\vec e_{y},\vec e_{z}$</td>
-<td>the quaternion units, the bivectors $-\gamma_{\nu}\gamma_{\rho}$</td>
+<td>the quaternion units, the bivectors $-\eta_{\nu}\eta_{\rho}$</td>
 </tr>
 <tr>
 <td>$\tilde Q=Q_{t}e_{t}+\vec Q$</td>
@@ -345,6 +345,13 @@ $$</p>
 <li>The biquaternion articles of this corpus: <em>The Biquaternion Algebra</em>, <em>The Spectrum</em>, <em>Idempotents</em>, and <em>The Peirce Decomposition of the Biquaternion Algebra</em>.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the matrix model.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.</p>
+<p>$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$</p>
+<p>The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu$ for $\mu=1,2,3$ and $\omega=\gamma_1\gamma_2\gamma_3$.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.</p>
       </div>
     </main>
   </div>

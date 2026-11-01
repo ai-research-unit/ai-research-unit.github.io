@@ -109,9 +109,9 @@ $$</p>
 $$</p>
 <p>and the <strong>restricted holonomy group</strong> $\operatorname{Hol}^0_p$ is the subgroup of the transports along the null-homotopic loops. Both are subgroups of the orthogonal group, $\operatorname{Hol}^0_p$ is the identity component of $\operatorname{Hol}_p$, and the groups at different points are conjugate:</p>
 <p>$$
-\operatorname{Hol}_q = P_\gamma\,\operatorname{Hol}_p\,P_\gamma_{-1}, \qquad q = \gamma(1).
+\operatorname{Hol}_q = P_\gamma\,\operatorname{Hol}_p\,P_{\gamma_{-1}}, \qquad q = \gamma(1).
 $$</p>
-<p><strong>Proof.</strong> The loop transports form a subgroup because the concatenation of two loops is a loop, the reverse of a loop is a loop, and the transport along a constant loop is the identity; the isometry is the first theorem above. The restricted group is <strong>normal</strong> in $\operatorname{Hol}_p$: for a loop $\eta$ null-homotopic at $p$ and a path $\gamma$ from $p$ to $p$, the conjugate loop $\gamma_{-1}*\eta*\gamma$ is null-homotopic, so $P_\gamma_{-1}P_\eta P_\gamma = P_{\gamma_{-1}*\eta*\gamma}\in\operatorname{Hol}^0_p$. The restricted group is the identity component of $\operatorname{Hol}_p$: it is a subgroup of the identity component because a null-homotopic loop can be contracted through the loops based at $p$, giving a continuous path of the transports to the identity, and it contains the identity component because the holonomy group is a Lie subgroup of the orthogonal group, whose identity component is connected; this is the standard theorem, proved with the closed-subgroup theorem for the holonomy group. The conjugation statement is the composition of the transports along a path from $p$ to $q$, its reverse and a loop at $p$, which is a loop at $q$ in the right class, and conversely.</p>
+<p><strong>Proof.</strong> The loop transports form a subgroup because the concatenation of two loops is a loop, the reverse of a loop is a loop, and the transport along a constant loop is the identity; the isometry is the first theorem above. The restricted group is <strong>normal</strong> in $\operatorname{Hol}_p$: for a loop $\eta$ null-homotopic at $p$ and a path $\gamma$ from $p$ to $p$, the conjugate loop $\gamma_{-1}*\eta*\gamma$ is null-homotopic, so $P_{\gamma_{-1}}P_\eta P_\gamma = P_{\gamma_{-1}*\eta*\gamma}\in\operatorname{Hol}^0_p$. The restricted group is the identity component of $\operatorname{Hol}_p$: it is a subgroup of the identity component because a null-homotopic loop can be contracted through the loops based at $p$, giving a continuous path of the transports to the identity, and it contains the identity component because the holonomy group is a Lie subgroup of the orthogonal group, whose identity component is connected; this is the standard theorem, proved with the closed-subgroup theorem for the holonomy group. The conjugation statement is the composition of the transports along a path from $p$ to $q$, its reverse and a loop at $p$, which is a loop at $q$ in the right class, and conversely.</p>
 <h3 id="the-holonomy-representation-and-the-reduction">The Holonomy Representation and the Reduction</h3>
 <p><strong>Definition.</strong> The <strong>holonomy representation</strong> is the representation of the holonomy group on the tangent space, $\rho_p : \operatorname{Hol}_p \to O(T_pM, g_p)$, which is the inclusion; the transport along a path and the displacement of a frame identify the frame bundle with $\operatorname{Hol}_p$ as a principal bundle, the <strong>holonomy bundle</strong>, whose structure group is the holonomy group. A <strong>reduction of the frame bundle</strong> to a subgroup $G \subseteq O(n)$ is a $G$-structure, and the holonomy group is the smallest subgroup to which the frame bundle of $(M, g)$ reduces.</p>
 <p><strong>Proposition.</strong> A tensor field on $M$ is <strong>parallel</strong>, $\nabla T = 0$, if and only if it is invariant under parallel transport, and this holds if and only if its value at $p$ is fixed by the holonomy representation for every $p$; the parallel tensor fields are therefore the tensors at $p$ invariant under $\operatorname{Hol}_p$, one for each such tensor. In particular the metric is always parallel, an orientation is parallel exactly when the holonomy lies in $\mathrm{SO}(T_pM)$, and a complex structure, a Kähler form or a parallel spinor appears as a reduction of the holonomy to the corresponding subgroup.</p>
@@ -139,7 +139,7 @@ $$</p>
 <h2 id="the-holonomy-algebra-and-the-ambrosesinger-theorem">The Holonomy Algebra and the Ambrose–Singer Theorem</h2>
 <p><strong>Theorem (Ambrose–Singer).</strong> The Lie algebra $\mathfrak{hol}_p$ of the restricted holonomy group is spanned by the curvature operators transported to $p$:</p>
 <p>$$
-\boxed{\;\mathfrak{hol}_p = \operatorname{span}\Bigl\{P_\gamma_{-1}\,R\bigl(X, Y\bigr)\,P_\gamma \ :\ \gamma \text{ a path from } \gamma(0) \text{ to } p,\ X, Y \in T_{\gamma(0)}M \Bigr\}\;},
+\boxed{\;\mathfrak{hol}_p = \operatorname{span}\Bigl\{P_{\gamma_{-1}}\,R\bigl(X, Y\bigr)\,P_\gamma \ :\ \gamma \text{ a path from } \gamma(0) \text{ to } p,\ X, Y \in T_{\gamma(0)}M \Bigr\}\;},
 $$</p>
 <p>where $R(X,Y)$ is read as the endomorphism $Z \mapsto R(X,Y)Z$ of the tangent space and $P_\gamma$ transports endomorphisms to $p$ by conjugation. Consequently the holonomy is generated by the curvature, the restricted holonomy is trivial exactly when the metric is locally flat, and the holonomy fixes a parallel tensor exactly when the curvature does.</p>
 <p><strong>Proof sketch.</strong> The curvature is the infinitesimal holonomy, by the parallelogram computation above, so the Lie algebra generated by the transported curvature operators is contained in $\mathfrak{hol}_p$. For the reverse inclusion one shows that the set of the points reachable from $p$ by the parallel transport of the frames is a submanifold whose tangent space at each point is spanned by the values of the curvature, the holonomy bundle of the previous section; the structure equation of the connection then identifies the Lie algebra of the holonomy with the span of the curvature, which is the theorem of Ambrose and Singer. The flat case follows because the curvature vanishes identically exactly when the transports are locally path-independent, and the fixed-tensor statement is the holonomy principle read on the Lie algebra.</p>
@@ -172,7 +172,7 @@ $$</p>
 <td>Composition of transports</td>
 </tr>
 <tr>
-<td>$P_{\gamma_{-1}} = P_\gamma_{-1} = P_\gamma_{}^{*}$</td>
+<td>$P_{\gamma_{-1}} = P_{\gamma_{-1}} = P_\gamma^{*}$</td>
 <td>Reversal as inverse and as metric adjoint</td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ $$</p>
 <td>Holonomy group at $p$; restricted holonomy</td>
 </tr>
 <tr>
-<td>$\operatorname{Hol}_q = P_\gamma\operatorname{Hol}_pP_\gamma_{-1}$</td>
+<td>$\operatorname{Hol}_q = P_\gamma\operatorname{Hol}_pP_{\gamma_{-1}}$</td>
 <td>Conjugation of the holonomy along a path</td>
 </tr>
 <tr>
