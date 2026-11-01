@@ -171,7 +171,7 @@ whose anti-Hermitian sector has real dimension $(2n)^2=4n^2$. For $n\ge2$ this i
 
 **One enlargement that keeps associativity.** Among the enlargements there is one that does **not** abandon associativity, and it is worth separating from the others. The left multiplications of the complex octonions form an associative algebra, the complex octonionic chain algebra
 $$
-\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
+\mathbb{C}\otimes_{\mathrm{chain}}\mathbb{O}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
 $$
 of complex dimension $64$. It is a Clifford algebra, hence associative, and its commutator is a genuine Lie bracket; it carries an intrinsic $SU(3)$ as the stabiliser of a maximal totally isotropic subspace, equivalently of a unit $e_7$ inside $G_2=\mathrm{Aut}(\mathbb O)$. The colour group here is the algebra's own and not an import, so within this carrier the ceiling does not apply — the carrier is not $\mathbb B$ and the modules are not $\mathbb B$-modules, and the three-dimensional colour triplet has a home as a minimal left ideal. What it costs is the change of carrier, which is a real cost: $SU(3)$ is *the algebra's own* only after the algebra has been replaced by one of complex dimension $64$. The structural statement below therefore stands as a statement about $\mathbb B$ — the group ceases to be the algebra's own as soon as the carrier changes — with the correction that associativity, at least, need not be the casualty.
 

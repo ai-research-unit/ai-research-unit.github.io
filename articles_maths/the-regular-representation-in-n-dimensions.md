@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** An algebra acts on itself by multiplication, on the left and on the right. The two actions are the smallest faithful representations the algebra has, and every operator article of the corpus uses them. This article states the construction once, for an algebra of dimension $N$, and fixes the three nested sets it produces: the one-sided family, the sum of the two one-sided families, and the whole endomorphism algebra. The two-sided products are a cone inside the third and are the subject of the companion articles.
+**The question.** An algebra acts on itself by multiplication, on the left and on the right. Both actions are faithful and of degree $N=\dim A$, and every operator article of the corpus uses them. They are not the smallest faithful representations the algebra has — for $M_{n}(\mathbb{C})$ the action on $\mathbb{C}^{n}$ is faithful of degree $n$, against $n^{2}$ for $n\ge2$ — but they are the two that sit inside $\operatorname{End}(A)$ as multiplications, and the ambient space of this article is $\operatorname{End}(A)$. The construction is stated once, for an algebra of dimension $N$, and it fixes the three nested sets it produces: the one-sided family, the sum of the two one-sided families, and the whole endomorphism algebra. The two-sided products are a cone inside the third and are the subject of the companion articles.
 
 **The result in one line.** The left multiplications fill a copy of the algebra, the right multiplications fill a copy of its opposite, the two copies commute and are the centralisers of each other, and the ambient space has dimension $N^{2}$ against the dimension $N$ of the algebra.
 
@@ -99,7 +99,7 @@ for $A=M_{n}(\mathbb{C})$, whose centre is $\mathbb{C}I$.
 
 **The sum is not the union and is not the ambient.** The two copies meet in the scalars, so the sum has dimension $n^{2}+n^{2}-1=2n^{2}-1$, one more than either copy. The ambient has dimension $n^{4}$, and for $n\ge2$ the inequality $2n^{2}-1<n^{4}$ holds: at $n=2$ it reads $7<16$, at $n=3$ it reads $17<81$.
 
-**The two-sided products are not in the table as a subspace.** The set $\{L_{A}R_{B}\}$ is a cone of dimension $2n^{2}-1$, the same dimension as the sum of the two copies, and it is not a subspace. It contains both copies, since $T_{A,I}=L_{A}$ and $T_{I,B}=R_{B}$, and it is strictly larger than their sum: a generic product is neither a left nor a right multiplication. This is the reason the ladder has four rungs and not five.
+**The two-sided products are not in the table as a subspace.** The set $\{L_{A}R_{B}\}$ is a cone of dimension $2n^{2}-1$, the same dimension as the sum of the two copies, and it is not a subspace. It contains both copies, since $T_{A,I}=L_{A}$ and $T_{I,B}=R_{B}$. It is not the sum: a generic product is neither a left nor a right multiplication, and it is not a sum of one of each either. **The cone and the sum have the same dimension and are different sets, and this is the reason the ladder has four rungs.**
 
 ### The Two Slots
 
@@ -119,7 +119,7 @@ A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}(A),\qquad A\otimes B^
 $$
 is a homomorphism of algebras, and for $A=M_{n}(\mathbb{C})$ it is an isomorphism.
 
-*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A^{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$; their images $T_{E_{ij},E_{kl}}$ have the coefficient array $E_{ij}$ in the row index and $E_{kl}$ in the column index, and the $n^{4}$ arrays $E_{ij}\otimes E_{kl}$ are a basis of the space of $n^{2}\times n^{2}$ arrays. Independence follows, and the dimensions agree:
+*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A^{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$; the image of each is the product $T_{E_{ij},E_{kl}}$, whose coefficient array is the elementary array with the single entry $1$ in the row $(i,j)$ and the column $(k,l)$. These $n^{4}$ elementary arrays are a basis of the space of $n^{2}\times n^{2}$ arrays, so the images are independent and the dimensions agree:
 $$
 \dim\bigl(A\otimes A^{\mathrm{opp}}\bigr)=N^{2}=\dim\operatorname{End}(A).
 $$

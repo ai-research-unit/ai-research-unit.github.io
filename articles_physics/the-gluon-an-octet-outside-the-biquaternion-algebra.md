@@ -263,7 +263,7 @@ The one structure that carries the octet is the octonion algebra: $\dim_\mathbb{
 
 The argument just given is an argument about the octonions **used as the non-associative algebra of fields**, and on that interpretation it is decisive: the commutator of two octonions is not a Lie bracket, the Jacobiator measures the associator, and no gauge theory of the usual kind can be built on the octonions themselves. It is not the whole story, because an octonionic route to $SU(3)$ need not use the octonions as the algebra of fields. The **left multiplications** of the complex octonions form an associative algebra, the complex octonionic chain algebra,
 $$
-\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
+\mathbb{C}\otimes_{\mathrm{chain}}\mathbb{O}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C}),
 $$
 of complex dimension $64$; in this algebra the commutator is a Lie bracket, the Jacobi identity holds, and the curvature, the Bianchi identity and the BRST structure are available exactly as in the framework's own construction. The chain algebra contains an intrinsic $SU(3)$ — the stabiliser of a maximal totally isotropic subspace, equivalently of the unit $e_7$ inside $\mathrm{Aut}(\mathbb{O})=G_2$ — and its minimal left ideal carries colour multiplets with the charge spectrum $0,1/3,2/3,1$.
 

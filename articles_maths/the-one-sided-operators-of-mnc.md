@@ -46,7 +46,7 @@ $$
 
 *Proof.* The matrix $\mathrm I_{n}\otimes A$ is block diagonal with $n$ blocks equal to $A$, so its rank is the sum of the ranks, its trace the sum of the traces, and its determinant the product of the determinants.
 
-**The spectrum.** If the eigenvalues of $A$ are $\lambda_{1},\dots,\lambda_{n}$ with algebraic multiplicities, then the eigenvalues of $L_{A}$ are the same numbers, each repeated $n$ times. In particular the spectrum of $L_{A}$ is the spectrum of $A$ as a set, and the two matrices have the same spectral projectors up to the repetition.
+**The spectrum.** If the eigenvalues of $A$ are $\lambda_{1},\dots,\lambda_{n}$ with algebraic multiplicities, then the eigenvalues of $L_{A}$ are the same numbers, each repeated $n$ times. The spectral projector of $L_{A}$ at $\lambda$ is the left multiplication $L_{P}$ by the spectral projector of $A$ at $\lambda$, because $\mathrm I_{n}\otimes P$ is the matrix of $L_{P}$.
 
 **The minimal polynomial does not grow.** The minimal polynomial of $L_{A}$ is the minimal polynomial of $A$, of degree at most $n$, while $L_{A}$ has size $n^{2}$. For $n\ge2$ the degree is strictly smaller than the size, so **the regular matrix is never nonderogatory**: there is no vector $X$ whose images under the powers of $L_{A}$ fill the algebra. This is the operator form of the fact that the left multiplication sees the algebra through a single element, and it is why the two-sided operators are needed for a general endomorphism.
 
@@ -75,7 +75,7 @@ $$
 [R_{B}]=B^{\mathsf T}\otimes\mathrm I_{n}.
 $$
 
-*Proof.* The $j$-th column of $XB$ is $X$ times the $j$-th column of $B$, that is $\sum_{k}B_{kj}x_{k}$ with $x_{k}$ the $k$-th column of $X$. The operator therefore sends the block $x_{k}$ to the block $\sum_{j}B_{kj}x_{j}$, whose matrix of blocks is $B^{\mathsf T}$. Since each block is multiplied by $\mathrm I_{n}$ on the left, the matrix is $B^{\mathsf T}\otimes\mathrm I_{n}$.
+*Proof.* The $j$-th column of $XB$ is $X$ times the $j$-th column of $B$, that is $\sum_{k}B_{kj}x_{k}$ with $x_{k}$ the $k$-th column of $X$. The $j$-th block of the output is therefore $\sum_{k}B_{kj}x_{k}$, whose coefficients in the input blocks are the $j$-th column of $B$; the block matrix of the operator is thus $B^{\mathsf T}$, and since each block is multiplied by $\mathrm I_{n}$ on the left, the matrix is $B^{\mathsf T}\otimes\mathrm I_{n}$.
 
 **The display.** For $n=2$,
 $$
@@ -138,7 +138,7 @@ $$
 
 ### The Commutant of One Element
 
-**Proposition.** Let $C(A)=\{Y\in M_{n}(\mathbb{C}):AY=YA\}$ be the centraliser of $A$ in the algebra. Then the commutant of $L_{A}$ in $\operatorname{End}(M_{n}(\mathbb{C}))$ is $M_{n}(\mathbb{C})\otimes C(A)$, of complex dimension
+**Proposition.** Let $C(A)=\{Y\in M_{n}(\mathbb{C}):AY=YA\}$ be the centraliser of $A$ in the algebra. Then the commutant of $L_{A}$ in $\operatorname{End}(M_{n}(\mathbb{C}))$ is the set of operators $F(X)=\sum_{i}Y_{i}XZ_{i}$ with $Y_{i}\in C(A)$ and $Z_{i}$ arbitrary, of complex dimension
 $$
 n^{2}\dim C(A).
 $$
@@ -149,7 +149,7 @@ F(AX)-AF(X)=\sum_{i}Y_{i}A X Z_{i}-\sum_{i}AY_{i}XZ_{i}=\sum_{i}(Y_{i}A-AY_{i})X
 $$
 and $F$ commutes with $L_{A}$ exactly when $\sum_{i}(Y_{i}A-AY_{i})\otimes Z_{i}=0$. With the $Z_{i}$ independent this forces $Y_{i}\in C(A)$, and the space of such $F$ is $C(A)\otimes M_{n}$; the two factors give the same dimension.
 
-**The two extremes.** For a cyclic element, $C(A)=\mathbb{C}[A]$ of dimension $n$, and the commutant of $L_{A}$ has dimension $n^{3}$. For a scalar element, $C(A)=M_{n}(\mathbb{C})$ of dimension $n^{2}$, and the commutant is the whole ambient space of dimension $n^{4}$. **The commutant of a single left multiplication is strictly larger than the right copy whenever $A$ is not cyclic, and this is the operator form of the size of the centraliser.**
+**The two extremes.** For a cyclic element, $C(A)=\mathbb{C}[A]$ of dimension $n$, and the commutant of $L_{A}$ has dimension $n^{3}$. For a scalar element, $C(A)=M_{n}(\mathbb{C})$ of dimension $n^{2}$, and the commutant is the whole ambient space of dimension $n^{4}$. **The commutant of a single left multiplication is strictly larger than the right copy for every $n\ge2$ and every $A$, since $n^{2}\dim C(A)\ge n^{3}>n^{2}$, and its size is the size of the centraliser.**
 
 **The table.**
 
@@ -164,13 +164,13 @@ and $F$ commutes with $L_{A}$ exactly when $\sum_{i}(Y_{i}A-AY_{i})\otimes Z_{i}
 
 ### The Compression
 
-**The compression to the $2\times2$ model.** At $n=2$ the algebra is the biquaternion algebra and the element is a $2\times2$ matrix $\mathsf M_{2}(\tilde Q)$. The left matrix does not compress: it is $\mathrm I_{2}\otimes A$, of size four, and its only invariant compression is $A$ itself, read on one of the two identical blocks. The right matrix compresses to $B^{\mathsf T}$. **The two one-sided actions compress one at a time, and this is why the pair description of the biquaternion category is written with one matrix per side and a pair for the product.**
+**The compression to the $2\times2$ model.** At $n=2$ the algebra is the biquaternion algebra and the element is a $2\times2$ matrix $\mathsf M_{2}(\tilde Q)$. In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$: each is two identical blocks of the same $2\times2$ matrix. The two-sided product does not compress, because it is the $4\times4$ product $B^{\mathsf T}\otimes A$ and both tensor factors are needed. **The two one-sided actions compress one at a time, and this is why the pair description of the biquaternion category is written with one matrix per side and a pair for the product.**
 
 ## Summary
 
 Left multiplication by $A$ is the block-diagonal matrix $\mathrm I_{n}\otimes A$ with $n$ copies of $A$; right multiplication by $B$ is the block-scalar matrix $B^{\mathsf T}\otimes\mathrm I_{n}$. Both have rank $n\operatorname{rank}$, trace $n\operatorname{tr}$ and determinant $(\det)^{n}$ of the parameter, and both have the spectrum of the parameter repeated $n$ times.
 
-The two families are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$; they commute, they meet in the scalars, their sum has dimension $2n^{2}-1$, and each is the commutant of the other. The commutant of a single left multiplication is $M_{n}\otimes C(A)$, of dimension $n^{2}\dim C(A)$: $n^{3}$ for a cyclic element and $n^{4}$ for a scalar one.
+The two families are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$; they commute, they meet in the scalars, their sum has dimension $2n^{2}-1$, and each is the commutant of the other. The commutant of a single left multiplication is $C(A)\otimes M_{n}$, of dimension $n^{2}\dim C(A)$: $n^{3}$ for a cyclic element and $n^{4}$ for a scalar one.
 
 The regular matrix is never nonderogatory for $n\ge2$, because its minimal polynomial has degree at most $n$ against a size of $n^{2}$. **The one-sided operators are the two ends of the construction, and the two-sided products of the next article are the smallest family that reaches the rest of the ambient space.**
 
