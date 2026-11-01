@@ -165,11 +165,11 @@ $$
 and it is automatically traceless. For a boost along the $z$-axis it evaluates, in terms of the rest-frame second moments $D_{2,ij} = \int\rho_2x_{i,2}x_{j,2}\,d^3x_2$, to
 
 $$
-\boxed{\;\Theta_{xx} = 2D_{2,xx} - D_{2,yy} - \frac{D_{2,zz}}{\gamma_2} ,
+\boxed{\;\Theta_{xx} = 2D_{2,xx} - D_{2,yy} - \frac{D_{2,zz}}{\gamma^2} ,
 \qquad
-\Theta_{yy} = 2D_{2,yy} - D_{2,xx} - \frac{D_{2,zz}}{\gamma_2} ,
+\Theta_{yy} = 2D_{2,yy} - D_{2,xx} - \frac{D_{2,zz}}{\gamma^2} ,
 \qquad
-\Theta_{zz} = \frac{2D_{2,zz}}{\gamma_2} - D_{2,xx} - D_{2,yy}\;},
+\Theta_{zz} = \frac{2D_{2,zz}}{\gamma^2} - D_{2,xx} - D_{2,yy}\;},
 $$
 
 $$
@@ -180,7 +180,7 @@ $$
 \Theta_{yz} = \frac{3D_{2,yz}}{\gamma} .
 $$
 
-The trace vanishes identically, as it must. The transformation is a linear map on the symmetric traceless tensors, and it is not a rotation: it rescales the longitudinal direction by $\gamma_{-1}$, which is exactly the statement that the moment is not a four-vector.
+The trace vanishes identically, as it must. The transformation is a linear map on the symmetric traceless tensors, and it is not a rotation: it rescales the longitudinal direction by $\gamma^{-1}$, which is exactly the statement that the moment is not a four-vector.
 
 ### The Lorentz-Contraction Quadrupole
 
@@ -195,7 +195,7 @@ $$
 an oblate quadrupole proportional to the square of the speed and to the source's mean-square radius. The result is purely kinematic and follows from the contraction of the slice on which the moment is measured; it is the tensor expression of the fact that a moving sphere is seen as an oblate spheroid. For a general rest-frame quadrupole the two effects add, and the longitudinal component reads
 
 $$
-\Theta_{zz} = \frac{2+\gamma_2}{3\gamma_2}\,\mathcal{Q}_{2,zz} - \frac{2\beta^2}{3}\,T_2 ,
+\Theta_{zz} = \frac{2+\gamma^2}{3\gamma^2}\,\mathcal{Q}_{2,zz} - \frac{2\beta^2}{3}\,T_2 ,
 $$
 
 a boosted piece plus a contraction piece. The second piece is the reason the trace $T_2$ of the rest-frame second moment enters a formula for the quadrupole: it is not a multipole moment but the source's size, and the contraction converts size into quadrupole.
@@ -213,7 +213,7 @@ with $\tilde{U}$ the boost biquaternion of $\mathbb{M}_+$. The two multipole typ
 The **order** $l$ is a different matter, and here the boost does not behave simply. The order is a label of the angular decomposition in a fixed frame; the rotation subgroup preserves it, but a boost does not. The reason is that a boost acts on the field in two ways at once — it mixes the field components **and** it transforms the argument, so the field is read on another time slice and at an aberrated direction — and a pure multipole of one frame therefore acquires other orders in another. The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $\Phi \propto (3z^2-r^2)/r^5$, and a boost along $z$ turns it into
 
 $$
-\Phi_2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{r=1}\ \propto\ \frac{(2\gamma_2+1)u^2-1}{\left(1+(\gamma_2-1)u^2\right)^{5/2}} ,
+\Phi_2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{r=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
 \qquad
 u = \cos\theta_2 ,
 $$
@@ -352,9 +352,9 @@ The relativistic quadrupole is the first multipole above the dipole, and it diff
 Its tensor is symmetric and traceless, $\Theta_{ij} = \int\rho(3x_{i,2}x_{j,2}-r_2^2\delta_{ij})d^3x_2$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
 
 $$
-\boxed{\;\Theta_{xx} = 2D_{2,xx}-D_{2,yy}-\frac{D_{2,zz}}{\gamma_2} ,
+\boxed{\;\Theta_{xx} = 2D_{2,xx}-D_{2,yy}-\frac{D_{2,zz}}{\gamma^2} ,
 \quad
-\Theta_{zz} = \frac{2D_{2,zz}}{\gamma_2}-D_{2,xx}-D_{2,yy} ,
+\Theta_{zz} = \frac{2D_{2,zz}}{\gamma^2}-D_{2,xx}-D_{2,yy} ,
 \quad
 \Theta_{xy} = 3D_{2,xy} ,
 \quad

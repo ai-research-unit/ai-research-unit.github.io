@@ -14,7 +14,7 @@ introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. The substitution is
 
 It belongs in this subcategory as the **exactly solvable external-potential problem** of the biquaternionic Dirac theory. The hydrogen atom, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, is exactly solvable by a different mechanism (a Coulomb central field and a second-order radial reduction); the oscillator is exactly solvable because the first-order operator can be **squared in closed form**, and the square is again a central second-order operator plus a spin–orbit term. That is the same square as in *Klein–Gordon from the Dirac Square in Biquaternionic Form*, now with the position-dependent addition that makes the square a harmonic oscillator. The two features together make the model the natural place to see, concretely, how the biquaternionic first-order operator behaves under squaring.
 
-The article derives the substitution, the reduction to a pair of two-component equations, the exact operator identity on squaring, and the spectrum; it then reads the result in the algebra, works the one-dimensional case for which everything is transparent, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. The conventions are the series conventions: the generators are the two-sided cells $T_{\mu}$, with $T_{a,b}\psi = a\psi b$, $T_0 = iT_{e_t,\vec e_x}$ and $T_k = iT_{\vec e_k,\vec e_y}$, so that $\{T_\mu,T_\nu\} = 2g_{\mu\nu}T_{e_t,e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$; the frame and velocity cells are $\beta = T_0 = iT_{e_t,\vec e_x}$ and $\alpha_k = T_{\vec e_k,\vec e_z}$, and the biquaternion mass pair is
+The article derives the substitution, the reduction to a pair of two-component equations, the exact operator identity on squaring, and the spectrum; it then reads the result in the algebra, works the one-dimensional case for which everything is transparent, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. The conventions are the series conventions: the generators are the two-sided cells $\mathsf C_\mu$, with $T_{a,b}\psi = a\psi b$, $\mathsf C_0 = iT_{e_t,\vec e_x}$ and $\mathsf C_k = iT_{\vec e_k,\vec e_y}$, so that $\{\mathsf C_\mu,\mathsf C_\nu\} = 2g_{\mu\nu}T_{e_t,e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$; the frame and velocity cells are $\beta = \mathsf C_0 = iT_{e_t,\vec e_x}$ and $\alpha_k = T_{\vec e_k,\vec e_z}$, and the biquaternion mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -304,12 +304,14 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -52,7 +52,7 @@ so a paravector is timelike, lightlike or spacelike exactly when the correspondi
 
 ## The Paravector as a Spacetime Vector
 
-A paravector $p = p_t+\vec p$ has a real scalar $p_t$ and a real three-vector $\vec p$, and it represents the spacetime vector with time component $p_t$ and space components $\vec p$. The corpus writes the same vector as a material element with imaginary time; the two are related by the central $i$ and carry the same information. The practical difference is that the paravector's time is real, so that "spacetime" is a real four-dimensional space with one timelike direction and the geometry of light rays is a geometry of a Euclidean three-space with a null cone.
+A paravector $p = p_t+\vec p$ has a real scalar $p_t$ and a real three-vector $\vec p$, the sum being shorthand for the element $p_te_t+i\vec p$ with the central $i$ understood, and it represents the spacetime vector with time component $p_t$ and space components $\vec p$. The corpus writes the same vector as a material element with imaginary time; the two are related by the central $i$ and carry the same information. The practical difference is that the paravector's time is real, so that "spacetime" is a real four-dimensional space with one timelike direction and the geometry of light rays is a geometry of a Euclidean three-space with a null cone.
 
 The **invariant interval** between two events is the squared modulus $p\bar p$, and the **proper time** along a worldline is the modulus of the displacement. These are the corpus's interval statements in the paravector interpretation; no new physics is introduced.
 
@@ -61,8 +61,8 @@ The **invariant interval** between two events is the squared modulus $p\bar p$, 
 $$
 \tilde V_{\mathrm p} = \gamma\left(e_t + \beta\vec u_v\right),
 \qquad
-\tilde V_{\mathrm p}\,\tilde V_{\mathrm p}^{\natural} = \gamma_2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
-= \gamma_2\left(1 - \beta^2\right)e_t = e_t .
+\tilde V_{\mathrm p}\,\tilde V_{\mathrm p}^{\natural} = \gamma^2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
+= \gamma^2\left(1 - \beta^2\right)e_t = e_t .
 $$
 
 The unimodularity is the paravector form of the constant length of the four-velocity. The corpus's four-velocity is $\tilde V = \gamma(ic\,e_t + \vec v)\in\mathbb{M}_-$, and the two are related by

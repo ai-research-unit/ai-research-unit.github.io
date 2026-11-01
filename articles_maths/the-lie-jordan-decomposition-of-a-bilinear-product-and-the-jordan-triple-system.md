@@ -10,7 +10,7 @@ $$
 c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $T_{a,b}\psi=a\psi b$ are the cells, $T_\mu=T_{a_\mu,b_\mu}$ is the reference cell of the $\mu$-th generator, with $(a_\mu,b_\mu)=(e_t,e_x),(e_x,e_y),(e_y,e_y),(e_z,e_y)$, and $T_5=T_{e_t,e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(T_\mu T_\nu T_\lambda T_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(T_5 T_\mu T_\nu T_\lambda T_\rho)$ are the traces of four and five reference cells, the unit phases of the generators cancelling in the trace, and $k_\mu$ is a neutral vector. The composition
+where $T_{a,b}\psi=a\psi b$ are the cells, $\mathsf T_\mu=T_{a_\mu,b_\mu}$ is the reference cell of the $\mu$-th generator, with $(a_\mu,b_\mu)=(e_t,e_x),(e_x,e_y),(e_y,e_y),(e_z,e_y)$, and $\mathsf T_5=T_{e_t,e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ are the traces of four and five reference cells, the unit phases of the generators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled generators $\mathsf C_\mu = i\,\mathsf T_\mu$ and $\mathsf C_5=-i\,\mathsf T_5$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. The composition
 
 $$
 (G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
@@ -95,7 +95,7 @@ $$
 = \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}\;}.
 $$
 
-Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\bar\Psi T_\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
+Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\bar\Psi \mathsf T_\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
 
 ### The Block Structure
 
@@ -140,9 +140,9 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $G, H, K$ | Elements of $V$ |
 | $G \star H$ | The composition, $(G\star H)_\lambda = \sum_{\mu,\nu}G_\mu c_{\mu\lambda\nu}H_\nu$ |
 | $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
-| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(T_\mu T_\nu T_\lambda T_\rho)$ | Symmetric trace of four reference cells |
-| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(T_5 T_\mu T_\nu T_\lambda T_\rho)$ | Totally antisymmetric symbol, the trace of five reference cells |
-| $T_\mu = T_{a_\mu,b_\mu}$, $T_5=T_{e_t,e_z}$ | The reference cells of the four generators and of the chirality, in the units $e_t,e_x,e_y,e_z$ of $\mathbb{B}$; $T_{a,b}\psi=a\psi b$ |
+| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Symmetric trace of four reference cells |
+| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Totally antisymmetric symbol, the trace of five reference cells |
+| $\mathsf T_\mu = T_{a_\mu,b_\mu}$, $\mathsf T_5=T_{e_t,e_z}$ | The reference cells of the four generators and of the chirality, in the units $e_t,e_x,e_y,e_z$ of $\mathbb{B}$; $T_{a,b}\psi=a\psi b$ |
 | $k_\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |
@@ -164,12 +164,14 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

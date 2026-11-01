@@ -62,18 +62,18 @@ The framework's charge operator is the module operator of *Chiral Fermions in th
 $$
 Ϙ=ϙ_LP_L+ϙ_RP_R,
 \qquad
-P_L=\tfrac12\left(I_4-T_5\right),\quad P_R=\tfrac12\left(I_4+T_5\right),
-\qquad T_5=-iT_{e_t,e_z}=\mathrm{diag}(-I_2,I_2),
+P_L=\tfrac12\left(I_4-\mathsf C_5\right),\quad P_R=\tfrac12\left(I_4+\mathsf C_5\right),
+\qquad \mathsf C_5=-iT_{e_t,e_z}=\mathrm{diag}(-I_2,I_2),
 $$
 
-with $L_a\psi=a\psi$, $R_b\psi=\psi b$, $T_{a,b}=L_aR_b$ and $T_5=-iT_{e_t,e_z}$, so that $T_5\psi=-i\,e_t\psi e_z$ and $T_5^2=I_4$; $P_L,P_R$ are the chiral projectors on $\Delta$ and $ϙ_L,ϙ_R$ real parameters. The covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$, and the framework's own abelian gauge structure — the one drawn from the central line $\mathbb{C}_{\mathbb{B}}$ — is the specialization in which the action is vector-like.
+with $L_a\psi=a\psi$, $R_b\psi=\psi b$, $T_{a,b}=L_aR_b$ and $\mathsf C_5=-iT_{e_t,e_z}$, so that $\mathsf C_5\psi=-i\,e_t\psi e_z$ and $\mathsf C_5^2=I_4$; $P_L,P_R$ are the chiral projectors on $\Delta$ and $ϙ_L,ϙ_R$ real parameters. The covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$, and the framework's own abelian gauge structure — the one drawn from the central line $\mathbb{C}_{\mathbb{B}}$ — is the specialization in which the action is vector-like.
 
 Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the chiral basis,
 
 $$
-Ϙ=\frac{ϙ_L+ϙ_R}{2}I_4+\frac{ϙ_R-ϙ_L}{2}T_5,
+Ϙ=\frac{ϙ_L+ϙ_R}{2}I_4+\frac{ϙ_R-ϙ_L}{2}\mathsf C_5,
 \qquad
-[\,Ϙ,T_5\,]=0,
+[\,Ϙ,\mathsf C_5\,]=0,
 $$
 
 with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the **mass selection rule**: the Dirac bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ acquires the position-dependent phase $\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$ under a gauge transformation, so it is gauge invariant for all $\Gamma$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is therefore *forced* to be vector-like, and its charge operator collapses to a multiple of the identity,
@@ -94,7 +94,7 @@ $$
 Ϙ_n=Ϙ\big|_{ϙ=0}=0\;},
 $$
 
-with spectra $\{+1\ (\text{multiplicity }4)\}$ and $\{0\ (\text{multiplicity }4)\}$ respectively. Each is Hermitian, each commutes with $T_5$, each is a multiple of the identity (hence vector-like, hence compatible with the mass selection rule), and the two are distinct. This was recomputed exactly in the faithful representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, together with the projector algebra ($P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$) and the selection rule on both branches (the vector-like branch $ϙ_L=ϙ_R$ and the axial branch $ϙ_R=-ϙ_L$). So the operator *carries* the proton's $+1$; the value is an eigenvalue the framework's charge operator has.
+with spectra $\{+1\ (\text{multiplicity }4)\}$ and $\{0\ (\text{multiplicity }4)\}$ respectively. Each is Hermitian, each commutes with $\mathsf C_5$, each is a multiple of the identity (hence vector-like, hence compatible with the mass selection rule), and the two are distinct. This was recomputed exactly in the faithful representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, together with the projector algebra ($P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$) and the selection rule on both branches (the vector-like branch $ϙ_L=ϙ_R$ and the axial branch $ϙ_R=-ϙ_L$). So the operator *carries* the proton's $+1$; the value is an eigenvalue the framework's charge operator has.
 
 **The honest qualification.** Carrying a value is not selecting it. The eigenvalue $ϙ$ is a free real parameter of the framework; nothing in $\mathbb{B}$, in the Dirac equation, or in the gauge principle fixes it to $+1$ for the proton, to $0$ for the neutron, or to any integer at all. The framework does not relate $ϙ_p$ to the electron's $ϙ_e$, so the equality of their magnitudes and the opposite signs — a striking and measured fact about the world — are not framework results; the electron article records the same absence for the electron. Nor does the framework explain why the proton's charge is an integer while a hypothetical fractionally charged constituent would not be; charge quantisation is not derived anywhere in the series. And the framework cannot *distinguish* the proton's field from the neutron's: the two are the same kind of object in the unique simple module, differing only in the value of an inserted coupling, exactly as the electron and muon are the same kind of object differing only in mass. In short, the sharpest test the proton offers is passed as a statement about the operator's spectrum and failed as a derivation. That is the result, and it is a negative one about derivation.
 
@@ -132,7 +132,7 @@ which are Hermitian but have *half-integer* spectra; they cannot carry the proto
 
 Three further distinctions belong here, because the framework has several conserved-looking quantities and they are easy to conflate.
 
-- **Electric charge versus chirality.** The operator $Ϙ$ is diagonal in the chiral basis and commutes with $T_5$ for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ is $Ϙ=\tfrac{ϙ_R-ϙ_L}{2}T_5$, proportional to the chirality operator. But $T_5$ is a chirality label, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
+- **Electric charge versus chirality.** The operator $Ϙ$ is diagonal in the chiral basis and commutes with $\mathsf C_5$ for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ is $Ϙ=\tfrac{ϙ_R-ϙ_L}{2}\mathsf C_5$, proportional to the chirality operator. But $\mathsf C_5$ is a chirality label, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
 - **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
 - **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The framework's own mass term is the linear chiral pair, through which the continuous central phase passes, so the proton's electric charge is conserved by the massive free equation; what remains open is a separate conjugate pairing built on the algebra's real structure $\flat$, the real-form question of the chiral-fermion article. The framework still does not supply baryon number, and that gap is inherited, not resolved here.
 
@@ -190,7 +190,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Ϙ=ϙI_4$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$ |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,T_\mu\psi$, with $T_\mu$ the generator cells |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,\mathsf C_\mu\psi$, with $\mathsf C_\mu$ the generator cells |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $|ϙ_p|=|ϙ_e|$, opposite signs | Outside | no framework structure; independent parameters |
@@ -255,9 +255,9 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate |
 | $m_p$ | Proton mass (a parameter) |
 | $T_{a,b}=L_aR_b$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms |
-| $T_5=-iT_{e_t,e_z}=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ | Chirality cell, $T_5\psi=-i\,e_t\psi e_z$, $T_5^2=I_4$ |
-| $T_0=iT_{e_t,e_x}$, $T_k=iT_{e_k,e_y}$ | Generator cells; $T_\mu T_\nu+T_\nu T_\mu=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
-| $P_L=\tfrac12(I_4-T_5)$, $P_R=\tfrac12(I_4+T_5)$ | Chiral projectors |
+| $\mathsf C_5=-iT_{e_t,e_z}=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ | Chirality cell, $\mathsf C_5\psi=-i\,e_t\psi e_z$, $\mathsf C_5^2=I_4$ |
+| $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ | Generator cells; $\mathsf C_\mu \mathsf C_\nu+\mathsf C_\nu \mathsf C_\mu=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
+| $P_L=\tfrac12(I_4-\mathsf C_5)$, $P_R=\tfrac12(I_4+\mathsf C_5)$ | Chiral projectors |
 | $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); massive field forces $ϙ_L=ϙ_R$ |
 | $ϙ_p=+1$ | Proton charge eigenvalue (inserted, not derived) |
@@ -293,12 +293,14 @@ What the framework does not supply is everything that makes the proton a proton.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

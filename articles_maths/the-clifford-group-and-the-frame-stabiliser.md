@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A frame is a choice; the article keeps its earlier title. The Clifford relations fix the algebra, not the five frame cells (the four generators and their product): any conjugate $U\mathsf C_\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five cells; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
+A frame is a choice. The Clifford relations fix the algebra, not the five frame cells (the four generators and their product): any conjugate $U\mathsf C_\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five cells; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
 
 The distinction is the exact content of the phrase "the frame is not canonical". The Clifford relations are invariant under the Clifford group; the five-element subset is invariant only under the scalars. The spin group is the even part of Pin and the double cover of $SO(4,\mathbb{C})$; in the biquaternion picture its two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group of the two-sided matrices is a discrete subgroup of the Clifford group, of order $32$, and its image in the orthogonal group is the group of sign changes of the frame.
 
@@ -15,7 +15,7 @@ $$
 \{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I,\qquad
 g=\operatorname{diag}(1,-1,-1,-1).
 $$
-The reference frame, the five cells written as two-sided operators, is in the appendix.
+The reference frame, the five cells written as two-sided operators, stands in the appendix.
 For $U\in GL_4(\mathbb{C})$, put
 $$
 U\cdot\mathsf C_\mu=U\mathsf C_\mu U^{-1}.
@@ -163,7 +163,7 @@ $$
 \operatorname{Stab}(\mathsf C)=\mathbb{C}^{\times}I,\qquad
 \operatorname{Stab}(V)=\Gamma .
 $$
-The first fixes the five matrices; the second fixes their span up to an orthogonal transformation; the third fixes nothing.
+The first fixes the five frame cells; the second fixes their span up to an orthogonal transformation; the third fixes nothing.
 
 **The dimensions.**
 
@@ -257,12 +257,14 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

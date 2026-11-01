@@ -46,7 +46,7 @@ D_\mu = \partial/\partial Q_\mu + \frac{i}{\hbar}A_\mu Ϙ,
 [D_\mu,D_\nu] = \frac{i}{\hbar}F_{\mu\nu}Ϙ,
 $$
 
-with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$). The operator $Ϙ$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to the chirality cell $T_5=-iT_{e_t,e_z}$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. The cells act by $T_{a,b}\psi=a\psi b$, with $L_a\psi=a\psi$, $R_b\psi=\psi b$, so that $T_5\psi=-i\,e_t\psi e_z$ and $T_5^2=I_4$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
+with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$). The operator $Ϙ$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to the chirality cell $\mathsf C_5=-iT_{e_t,e_z}$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. The cells act by $T_{a,b}\psi=a\psi b$, with $L_a\psi=a\psi$, $R_b\psi=\psi b$, so that $\mathsf C_5\psi=-i\,e_t\psi e_z$ and $\mathsf C_5^2=I_4$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
 
 $$
 Ϙ \;=\; \mathrm{diag}\big(ϙ_L I_2,\ ϙ_R I_2\big) \;\cong\; \mathrm{diag}\big(ϙ_L,ϙ_L,ϙ_R,ϙ_R\big),
@@ -59,7 +59,7 @@ so its spectrum is $\{ϙ_L,ϙ_R\}$, each with multiplicity two. A single-particl
 - If $ϙ_R=0$ and $ϙ_L\neq0$, then $\ker Ϙ = \bar{S}$, the right-handed block.
 - If $ϙ_L=ϙ_R=0$ the whole module is neutral (the trivially uncoupled case).
 
-Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**. When $ϙ_L=0$ the neutral space is $S$, on which $T_5=-1$; when $ϙ_R=0$ it is $\bar{S}$, with $T_5=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**. When $ϙ_L=0$ the neutral space is $S$, on which $\mathsf C_5=-1$; when $ϙ_R=0$ it is $\bar{S}$, with $\mathsf C_5=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: on the module, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -161,9 +161,9 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field; anti-Hermitian conjugate |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module; unique simple left module |
-| $T_{a,b}=L_aR_b$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms; $T_5=-iT_{e_t,e_z}$ |
-| $T_5 = -iT_{e_t,e_z} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell, $T_5\psi=-i\,e_t\psi e_z$, $T_5^2=I_4$ |
-| $P_L = \tfrac12(I_4-T_5)$, $P_R = \tfrac12(I_4+T_5)$ | Chiral projectors |
+| $T_{a,b}=L_aR_b$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms; $\mathsf C_5=-iT_{e_t,e_z}$ |
+| $\mathsf C_5 = -iT_{e_t,e_z} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell, $\mathsf C_5\psi=-i\,e_t\psi e_z$, $\mathsf C_5^2=I_4$ |
+| $P_L = \tfrac12(I_4-\mathsf C_5)$, $P_R = \tfrac12(I_4+\mathsf C_5)$ | Chiral projectors |
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
@@ -197,12 +197,14 @@ The neutron's composite character is not reached. The framework has no colour gr
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

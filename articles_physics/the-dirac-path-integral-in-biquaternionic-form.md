@@ -16,7 +16,7 @@ The object the path integral must compute is the Feynman propagator for the spin
 
 $$
 S_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
-\frac{i\left(\mathsf C_{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
+\frac{i\left(\mathsf C_\mu p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
 \exp(-ip\cdot(x-x_2)),
 $$
 
@@ -250,7 +250,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (\mathbb{D} + mc/\hbar)\Delta_F$, the identity following from $\mathbb{D}^2=\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\psi_\mu$ is added at each point with kinetic term $\frac{i}{2}\psi_\mu\,d\psi_{\mu}/d\tau$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 (g^{-1})_{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\mathsf C_{\nu} p_{\nu} - \mu)(\mathsf C_{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
+In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\mathsf C_\nu p_{\nu} - \mu)(\mathsf C_\rho p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
 
 ## Summary of Notation
 
@@ -265,7 +265,7 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 | $S_F(x-x_2)$ | Dirac (Feynman) propagator |
 | $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator |
 | $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$ | Propagator equation |
-| $(\mathsf C_{\mu} p_{\mu} - mc/\hbar)(\mathsf C_{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
+| $(\mathsf C_\mu p_{\mu} - mc/\hbar)(\mathsf C_\nu p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dx_{\mu}/d\tau$ | Worldline and its tangent |
 | $S_0[x] = \int_0^T d\tau\left(\tfrac14dx_{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right)$ | Scalar worldline action |
@@ -299,6 +299,6 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -26,19 +26,19 @@ Bosonization lives in two dimensions, and the framework must be reduced before i
 
 **The two-dimensional Clifford data.** With $g=\mathrm{diag}(+1,-1)$,
 $$
-c_0 = iT_{e_t,e_x},
+\mathsf C_0 = iT_{e_t,e_x},
 \qquad
-c_1 = iT_{e_x,e_y},
+\mathsf C_1 = iT_{e_x,e_y},
 \qquad
-\{c_\mu,c_\nu\} = 2g_{\mu\nu}T_{e_t,e_t} ,
+\{\mathsf C_\mu,\mathsf C_\nu\} = 2g_{\mu\nu}T_{e_t,e_t} ,
 $$
 the chirality cell is
 $$
-T_{e_x,e_z} = c_0c_1 ,
+T_{e_x,e_z} = \mathsf C_0\mathsf C_1 ,
 \qquad
 (T_{e_x,e_z})^2 = +T_{e_t,e_t} ,
 $$
-and the chiral projectors $\tilde\Pi_{L,R}=\tfrac12(T_{e_t,e_t}\pm T_{e_x,e_z})$ project onto the two components; on the two-dimensional module each has trace $1$, while on the four-dimensional carrier the same cells have trace $2$, the carrier carrying each half twice. Two facts are worth recording, because the two-dimensional mass term rests on both. First, the chirality cell is an involution, $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, and so is the four-dimensional chirality, the reference-frame cell $-iT_{e_t,e_z}$ of the appendix, whose square is the same $+T_{e_t,e_t}$: the two dimensions do not differ in the square of the chirality. They differ in the bare product of the frame's generators. In two dimensions $c_0c_1=T_{e_x,e_z}$ squares to $+T_{e_t,e_t}$, while in four $c_0c_1c_2c_3=-T_{e_t,e_z}$, the volume cell, squares to $-T_{e_t,e_t}$, and the $i$ that the literature attaches to the four-dimensional chirality is what turns that product into an involution. Second, the real structure of the reduction is the coefficient conjugation $C\psi=\bar\psi$, which acts on the cells coefficientwise: it commutes with the chirality cell $T_{e_x,e_z}$ and anticommutes with the generators $c_\mu$, so $C$ preserves each chiral half. In four dimensions $C$ anticommutes with $-iT_{e_t,e_z}$, so it exchanges the halves and a real spinor is the sum of a half and its conjugate, a **Majorana** spinor and not a **Majorana–Weyl** one, the exclusion *The Neutrino and Majorana Fermions in Biquaternionic Form* states. Both facts were verified on the cells and are quoted in the established list below. This is the fermionic side's true content, and the bosonic side must match it.
+and the chiral projectors $\tilde\Pi_{L,R}=\tfrac12(T_{e_t,e_t}\pm T_{e_x,e_z})$ project onto the two components; on the two-dimensional module each has trace $1$, while on the four-dimensional carrier the same cells have trace $2$, the carrier carrying each half twice. Two facts are worth recording, because the two-dimensional mass term rests on both. First, the chirality cell is an involution, $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, and so is the four-dimensional chirality, the reference-frame cell $-iT_{e_t,e_z}$ of the appendix, whose square is the same $+T_{e_t,e_t}$: the two dimensions do not differ in the square of the chirality. They differ in the bare product of the frame's generators. In two dimensions $\mathsf C_0\mathsf C_1=T_{e_x,e_z}$ squares to $+T_{e_t,e_t}$, while in four $\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-T_{e_t,e_z}$, the volume cell, squares to $-T_{e_t,e_t}$, and the $i$ that the literature attaches to the four-dimensional chirality is what turns that product into an involution. Second, the real structure of the reduction is the coefficient conjugation $C\psi=\bar\psi$, which acts on the cells coefficientwise: it commutes with the chirality cell $T_{e_x,e_z}$ and anticommutes with the generators $\mathsf C_\mu$, so $C$ preserves each chiral half. In four dimensions $C$ anticommutes with $-iT_{e_t,e_z}$, so it exchanges the halves and a real spinor is the sum of a half and its conjugate, a **Majorana** spinor and not a **Majorana–Weyl** one, the exclusion *The Neutrino and Majorana Fermions in Biquaternionic Form* states. Both facts were verified on the cells and are quoted in the established list below. This is the fermionic side's true content, and the bosonic side must match it.
 
 **The boson.** The boson is a single real scalar field $\phi(x)$, whose exponentiated field $\exp(2i\sqrt{\pi}\phi)$ is, in the framework's terms, a **central** object: the exponent carries the central $i$, and a central scalar commutes with every element of $\mathbb{B}$. The boson's stress tensor is a central scalar, and its free action
 $$
@@ -52,7 +52,7 @@ The dictionary is stated first in its standard form, then in the framework's not
 
 **The standard dictionary.** For a massless Dirac field $\psi$ and a real scalar $\phi$, with a normalisation constant $\alpha$ setting the short-distance cutoff,
 $$
-\boxed{\;\bar\psi c_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
+\boxed{\;\bar\psi \mathsf C_\mu\psi \;\longleftrightarrow\; -\frac{1}{\sqrt{\pi}}\,\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
 \qquad
 \bar\psi\psi \;\longleftrightarrow\; -\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big)\;},
 $$
@@ -66,7 +66,7 @@ The boxed pair is the dictionary itself: the first entry is the current correspo
 
 **The dictionary in the framework's notation.** The two bilinears are module objects traced into the centre:
 $$
-\bar\psi c_\mu\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}c_\mu\tilde\Psi\big) ,
+\bar\psi \mathsf C_\mu\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\mathsf C_\mu\tilde\Psi\big) ,
 \qquad
 \bar\psi\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\Psi\big),
 $$
@@ -162,7 +162,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 $$
 \big[j_0(x),j_1(y)\big] = \frac{i}{\pi}\,\frac{d\delta}{dx}(x-y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: $[\phi(x),\partial_0\phi(y)]=i\delta(x-y)$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial_1\phi(x),\partial_0\phi(y)]=\frac{i}{\pi}\delta'(x-y)$, and the two indices are both lowered, since raising one flips the sign through $g^{11}=-1$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\Box\phi$, with $j_{5\mu}=\bar\psi c_\mu T_{e_x,e_z}\psi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: $[\phi(x),\partial_0\phi(y)]=i\delta(x-y)$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial_1\phi(x),\partial_0\phi(y)]=\frac{i}{\pi}\delta'(x-y)$, and the two indices are both lowered, since raising one flips the sign through $g^{11}=-1$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\Box\phi$, with $j_{5\mu}=\bar\psi \mathsf C_\mu T_{e_x,e_z}\psi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
@@ -195,7 +195,7 @@ The non-abelian extension is stated and its status fixed.
 **Established (framework and algebra).**
 
 - Bosonization is a correspondence between the operator algebra of the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ and the operator algebra generated by the exponential of a central scalar field; the module's four real components assemble into two Majorana fields and the centre's real part supplies the single real boson, the two sides matching in the counting $2\times\tfrac12=1$.
-- In the two-dimensional reduction with $g=\mathrm{diag}(+1,-1)$ the chirality cell is the involution $T_{e_x,e_z}=c_0c_1$, $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, and the coefficient conjugation $C\psi=\bar\psi$ commutes with it while anticommuting with $c_0$ and $c_1$ (verified on the cells); each chiral half is therefore preserved by the real structure, and the mass term rotates the scalar and pseudoscalar densities in a real plane. This is the algebraic reason the bosonized mass is a cosine. In four dimensions $C$ anticommutes with the chirality cell $-iT_{e_t,e_z}$ and exchanges the halves, and the counting that makes bosonization possible fails.
+- In the two-dimensional reduction with $g=\mathrm{diag}(+1,-1)$ the chirality cell is the involution $T_{e_x,e_z}=\mathsf C_0\mathsf C_1$, $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, and the coefficient conjugation $C\psi=\bar\psi$ commutes with it while anticommuting with $\mathsf C_0$ and $\mathsf C_1$ (verified on the cells); each chiral half is therefore preserved by the real structure, and the mass term rotates the scalar and pseudoscalar densities in a real plane. This is the algebraic reason the bosonized mass is a cosine. In four dimensions $C$ anticommutes with the chirality cell $-iT_{e_t,e_z}$ and exchanges the halves, and the counting that makes bosonization possible fails.
 - The chiral projectors $\tilde\Pi_{L,R}=\tfrac12(T_{e_t,e_t}\pm T_{e_x,e_z})$ satisfy $\tilde\Pi_{L,R}^2=\tilde\Pi_{L,R}$, $\tilde\Pi_R\tilde\Pi_L=0$, $\mathrm{tr}\,\tilde\Pi_{L,R}=1$ on the module, and $\tilde\Pi_L+\tilde\Pi_R=T_{e_t,e_t}$; verified.
 - The framework's mass term is the right-multiplication, chirality-off-diagonal term, and it bosonizes to the cosine; its central phase bosonizes to a shift of the boson field, $\cos(2\sqrt\pi\phi)\to\cos(2\sqrt\pi\phi+\alpha)$.
 - The vertex-operator arithmetic is exact: with $\Delta(\beta)=\beta^2/(4\pi)$, $\Delta(\sqrt{2\pi})=\tfrac12$ is the free-fermion dimension and $\Delta(2\sqrt\pi)=1$ is the mass dimension; the two couplings differ by $\sqrt2$. The bosonized fermion is therefore a central exponential while the fermion itself is module-valued and anticommuting, so the dictionary maps algebras with different gradings.
@@ -203,7 +203,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $\bar\psi c_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $\bar\psi \mathsf C_\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j_0(x),j_1(y)]=\tfrac{i}{\pi}\frac{d\delta}{dx}(x-y)$, with both indices lowered; the vertex operators $\psi\sim\,:\!\exp(i\beta\phi)\!:$ with $\Delta=\beta^2/4\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana–Weyl fermion.
@@ -222,9 +222,9 @@ The non-abelian extension is stated and its status fixed.
 
 ## Summary
 
-Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. In the two-dimensional reduction the Clifford data are $\{c_\mu,c_\nu\}=2g_{\mu\nu}T_{e_t,e_t}$ with $g=\mathrm{diag}(+1,-1)$, the chirality cell is $T_{e_x,e_z}=c_0c_1$, and its square is $+T_{e_t,e_t}$, the real structure $C\psi=\bar\psi$ commuting with it, so the two chiralities are a real splitting; the dictionary is
+Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. In the two-dimensional reduction the Clifford data are $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}T_{e_t,e_t}$ with $g=\mathrm{diag}(+1,-1)$, the chirality cell is $T_{e_x,e_z}=\mathsf C_0\mathsf C_1$, and its square is $+T_{e_t,e_t}$, the real structure $C\psi=\bar\psi$ commuting with it, so the two chiralities are a real splitting; the dictionary is
 $$
-\bar\psi c_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
+\bar\psi \mathsf C_\mu\psi\longleftrightarrow-\frac{1}{\sqrt\pi}\epsilon_{\mu\nu}\partial/\partial Q_\nu\phi ,
 \qquad
 \bar\psi\psi\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
 \qquad
@@ -242,10 +242,10 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; extracts central scalars from bilinears |
 | $g=\mathrm{diag}(+1,-1)$ | Two-dimensional level-3 Clifford metric |
 | $T_{a,b}\psi=a\psi b$ | Two-sided cell; the identity is $T_{e_t,e_t}$ |
-| $c_\mu$ | Generator cells, $c_0=iT_{e_t,e_x}$, $c_1=iT_{e_x,e_y}$ |
-| $T_{e_x,e_z}=c_0c_1$ | Chirality cell; $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, even under $C$ |
+| $\mathsf C_\mu$ | Generator cells, $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_1=iT_{e_x,e_y}$ |
+| $T_{e_x,e_z}=\mathsf C_0\mathsf C_1$ | Chirality cell; $(T_{e_x,e_z})^2=+T_{e_t,e_t}$, even under $C$ |
 | $-iT_{e_t,e_z}$ | Chirality cell in four dimensions; $(T_{e_t,e_z})^2=+T_{e_t,e_t}$, odd under $C$ |
-| $c_0c_1c_2c_3=-T_{e_t,e_z}$ | Volume cell of the frame; its square is $-T_{e_t,e_t}$ |
+| $\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-T_{e_t,e_z}$ | Volume cell of the frame; its square is $-T_{e_t,e_t}$ |
 | $C\psi=\bar\psi$ | Coefficient conjugation; the real structure of the reduction |
 | $\tilde\Pi_{L,R}=\tfrac12(T_{e_t,e_t}\pm T_{e_x,e_z})$ | Chiral projectors; real in two dimensions |
 | $\phi$ | Real boson field |
@@ -271,7 +271,9 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 
 ## Appendix — The Gamma Formulation
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iT_{e_t,e_x}=c_0$ and $\gamma_1=iT_{e_x,e_y}=c_1$ with $T_{a,b}=L_aR_b$, and the two-dimensional chirality is their product, the cell $T_{e_x,e_z}$, not the four-dimensional $\gamma_5$.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iT_{e_t,e_x}=\mathsf C_0$ and $\gamma_1=iT_{e_x,e_y}=\mathsf C_1$ with $T_{a,b}=L_aR_b$, and the two-dimensional chirality is their product, the cell $T_{e_x,e_z}$, not the four-dimensional $\gamma_5$.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
@@ -279,6 +281,6 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

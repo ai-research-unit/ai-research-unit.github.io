@@ -78,13 +78,13 @@ $$
 (\mathbb{D}-m)\,C[\psi]
 =\eta_C\Big(i\,\eta_C^{-1}\mathsf C_\mu\eta_C\,\partial/\partial x_\mu-m\Big)\psi^{*},
 $$
-while the complex conjugate of the Dirac equation is $(-i\mathsf C_{\mu}^{*}\partial/\partial x_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
+while the complex conjugate of the Dirac equation is $(-i\mathsf C_\mu^{*}\partial/\partial x_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
 $$
-\eta_C^{-1}\mathsf C_\mu\eta_C=-\mathsf C_{\mu}^{*},\qquad\text{equivalently}\qquad \eta_C\mathsf C_{\mu}^{*}\eta_C^{-1}=-\mathsf C_\mu .
+\eta_C^{-1}\mathsf C_\mu\eta_C=-\mathsf C_\mu^{*},\qquad\text{equivalently}\qquad \eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu .
 $$
 The internal matrix $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$ satisfies the identity (the central $i$ is inert in it). Since $\eta_C$ is odd, $C$ anticommutes with $\mathsf C_5$: charge conjugation flips chirality. And since $\psi^{*}$ enters, $C$ is anti-linear.
 
-**The representative depends on the realization.** The identity above fixes $\eta_C$ only inside a realization of the generators, meaning a choice of the conjugation that $\psi^{*}$ denotes. This article's realization is the cell frame, where $\psi^{*}$ is the module conjugation — the anti-linear map that carries the chiral half $S$ onto $\bar S$ — and there the solution is $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$. The same cells read against the **coefficient conjugation** of the algebra give a different answer: every generator $iT_{a,b}$ is purely imaginary, so the conjugation negates all four, the identity reduces to a commutation condition, and *every* nonzero scalar solves it; the involution condition $\eta_C^{2}=-1$ then narrows it to $\eta_C=\pm i$. The transposed form $\psi_c=C\,\bar\psi^{T}$ carries the cell $C=-i\mathsf C_0=T_{e_t,e_x}$ in the cell frame, and one checks $C\,T_\mu^{T}C^{-1}=-T_\mu$ and $C^{2}=-1$. Neither formula may be carried across the change of conjugation: $\eta_C$ conjugates through $\psi^{*}$ and $C$ through $\mathsf C_0^{T}$, and the two conjugations do not agree on which cells they fix. Writing $i\mathsf C_2$ as the cell $-T_{e_y,e_y}$ is right; reading that cell against the coefficient conjugation instead of the module conjugation is the error this paragraph exists to prevent.
+**The representative depends on the realization.** The identity above fixes $\eta_C$ only inside a realization of the generators, meaning a choice of the conjugation that $\psi^{*}$ denotes. This article's realization is the cell frame, where $\psi^{*}$ is the module conjugation — the anti-linear map that carries the chiral half $S$ onto $\bar S$ — and there the solution is $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$. The same cells read against the **coefficient conjugation** of the algebra give a different answer: every generator $iT_{a,b}$ is purely imaginary, so the conjugation negates all four, the identity reduces to a commutation condition, and *every* nonzero scalar solves it; the involution condition $\eta_C^{2}=-1$ then narrows it to $\eta_C=\pm i$. The transposed form $\psi_c=C\,\bar\psi^{T}$ carries the cell $C=-i\mathsf C_0=T_{e_t,e_x}$ in the cell frame, and one checks $C\,\mathsf C_\mu^{T}C^{-1}=-\mathsf C_\mu$ and $C^{2}=-1$. Neither formula may be carried across the change of conjugation: $\eta_C$ conjugates through $\psi^{*}$ and $C$ through $\mathsf C_0^{T}$, and the two conjugations do not agree on which cells they fix. Writing $i\mathsf C_2$ as the cell $-T_{e_y,e_y}$ is right; reading that cell against the coefficient conjugation instead of the module conjugation is the error this paragraph exists to prevent.
 
 ### Parity
 
@@ -118,8 +118,8 @@ $$
 $$
 evaluated at $(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, to be matched against the conjugate equation at the same argument. This requires
 $$
-\eta_T^{-1}\mathsf C_0\eta_T=\mathsf C_{0}^{*},\qquad
-\eta_T^{-1}\mathsf C_k\eta_T=-\mathsf C_{k}^{*} .
+\eta_T^{-1}\mathsf C_0\eta_T=\mathsf C_0^{*},\qquad
+\eta_T^{-1}\mathsf C_k\eta_T=-\mathsf C_k^{*} .
 $$
 These conditions require $\eta_T$ to commute with $\mathsf C_0$ and $\mathsf C_2$ and to anticommute with $\mathsf C_1$ and $\mathsf C_3$; the choice $\eta_T=\mathsf C_1\mathsf C_3=-T_{e_y,e_t}$ works. Since $\eta_T$ is even, $T$ commutes with $\mathsf C_5$: time reversal preserves chirality.
 
@@ -145,10 +145,10 @@ Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not f
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
 $$
-\psi=(\mathsf C_{\mu} p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\mathsf C_{\nu} p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
+\psi=(\mathsf C_\mu p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\mathsf C_\nu p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
 \qquad p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\quad E_{\vec p}^2=\vec p^2+m^2,
 $$
-with $\mathsf C_{\mu} p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
+with $\mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
@@ -156,10 +156,10 @@ each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both fre
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The identity $\eta_C\mathsf C_{\mu}^{*}\eta_C^{-1}=-\mathsf C_\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\mathsf C_{\mu} p_{\mu}+m)\chi$,
+- **$C$.** The identity $\eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\mathsf C_\mu p_{\mu}+m)\chi$,
   $$
-  \eta_C\,w^{*}=i\mathsf C_2((\mathsf C_{\mu} p_{\mu})^{\ast}+m)\chi^{*}=i(-\mathsf C_{\nu} p_{\nu}+m)\mathsf C_2\chi^{*}
-  =-i\,(\mathsf C_{\rho} p_{\rho}-m)\,\mathsf C_2\chi^{*},
+  \eta_C\,w^{*}=i\mathsf C_2((\mathsf C_\mu p_{\mu})^{\ast}+m)\chi^{*}=i(-\mathsf C_\nu p_{\nu}+m)\mathsf C_2\chi^{*}
+  =-i\,(\mathsf C_\rho p_{\rho}-m)\,\mathsf C_2\chi^{*},
   $$
   a negative-frequency amplitude. So $C$ exchanges the two branches; in the mode expansion it exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign. This was checked on the same three cases.
 - **$P$.** The commutator/anticommutator conditions on $\eta_P$ were verified for $\mu=0$ and $k=1,2,3$, and the reflected field was confirmed to solve the equation. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
@@ -271,7 +271,7 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 - The CPT theorem itself, and the hypotheses (locality, Hermiticity, Lorentz invariance, positivity, spin–statistics) that prove it.
 - The internal factors and phases of $C$ and $T$, which are the standard Clifford-algebra objects; the free-field computation is the standard one expressed in the framework's module and notation.
-- The intertwiners, which are the standard relations $\eta_C\mathsf C_{\mu}^{*}\eta_C^{-1}=-\mathsf C_\mu$ and their analogues.
+- The intertwiners, which are the standard relations $\eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu$ and their analogues.
 - The **Clifford classification** of the operations: $P$ as the grade involution, $T$ as the reversion, $PT$ as the Clifford conjugation, $C$ as the charge-conjugation pseudoautomorphism, and the group $\{1,P,T,PT,C,CP,CT,CPT\}\cong\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ that they generate. The classification is a statement about the intrinsic maps of $\mathrm{Cl}_{n,m}$; the passage from those maps to the module intertwiners $\eta_P,\eta_T$ is representation theory that this article does not carry out.
 
 **Gap, left visible.**
@@ -325,11 +325,11 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(\mathbb{D}-m)\psi=0$ |
 | $T_{a,b}=L_aR_b$, $T_{a,b}\psi=a\psi b$ | Two-sided cells; identity $T_{e_t,e_t}$, inverse $T_{a^{-1},b^{-1}}$, product $T_{a,b}T_{c,d}=T_{ac,db}$ |
 | $\mathsf C_\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Generator cells and Clifford metric; $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$, $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}T_{e_t,e_t}$; $\eta=-g$ |
-| $\mathsf C_{\mu} p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
+| $\mathsf C_\mu p_{\mu}=\mathsf C_0E_{\vec p}-\mathsf C_kp_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\mathsf C_5=i\omega=-iT_{e_t,e_z}$, $\omega=\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3=-T_{e_t,e_z}$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=\mathsf C_5$ |
 | $P_{L,R}=\tfrac12(T_{e_t,e_t}\mp\mathsf C_5)$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |
-| $C[\psi]=\eta_C\psi^{*}$, $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$ | Charge conjugation (anti-linear, odd); $\eta_C\mathsf C_{\mu}^{*}\eta_C^{-1}=-\mathsf C_\mu$ |
+| $C[\psi]=\eta_C\psi^{*}$, $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$ | Charge conjugation (anti-linear, odd); $\eta_C\mathsf C_\mu^{*}\eta_C^{-1}=-\mathsf C_\mu$ |
 | $P[\psi]=\eta_P\psi(t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, $\eta_P=\mathsf C_0=iT_{e_t,e_x}$ | Parity (linear, odd); $\eta_P^{-1}\mathsf C_0\eta_P=\mathsf C_0$, $\eta_P^{-1}\mathsf C_k\eta_P=-\mathsf C_k$ |
 | $T[\psi]=\eta_T\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, $\eta_T=\mathsf C_1\mathsf C_3=-T_{e_y,e_t}=-\vec e_y$ | Time reversal (anti-unitary, even); $\eta_T$ is a left multiplication |
 | $\Theta=C\circ P\circ T$ | CPT composition; $\Theta[\psi](x)=\eta_{CPT}\psi(-x)$ |
@@ -356,12 +356,14 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading of the algebra is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

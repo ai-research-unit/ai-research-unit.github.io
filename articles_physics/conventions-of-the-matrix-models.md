@@ -243,6 +243,8 @@ $$
 $$
 with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
+**The bare cell and the scaled generator are two symbols, not one.** The basis cell is $T_{a,b}=L_aR_b$, written $T_{\mu\nu}=T_{e_\mu,e_\nu}$ for two unit indices, and the bare reference cell of the $\mu$-th generator is $T_{e_\mu,e_{\nu(\mu)}}$ with $\nu(t)=x$ and $\nu(k)=y$. The generator cells above are those reference cells **scaled by $i$**, $\mathsf C_\mu=i\,T_{e_\mu,e_{\nu(\mu)}}$, and the chirality cell is $\mathsf C_5=-i\,T_{e_t,e_z}$. The scaled symbol is the one the physics articles use for the generator throughout; the single-index form $T_\mu$ is retired, because it collided with the basis cells $T_{\mu\nu}$ and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles. The mathematics part of the corpus writes the bare reference cells $\mathsf T_\mu=T_{e_\mu,e_{\nu(\mu)}}$ and $\mathsf T_5=T_{e_t,e_z}$, in which the trace identities of *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System* are stated; the dictionary between the two parts is $\mathsf C_\mu=i\,\mathsf T_\mu$.
+
 **These are the generators of the $\mathbb{M}_-$ frame.** In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four generators that all square to $+I_4$ are
 $$
 \mathsf C_0(Q)=\mathsf C_0(x),\qquad \mathsf C_k(Q)=i\,\mathsf C_k(x),\quad k=1,2,3 .
@@ -254,7 +256,7 @@ The printed matrices of the appendix are the ones of the $\mathbb{M}_-$ frame; t
 - The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.
 - The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.
 
-The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $\mathsf C_\mu[\mathbb{B}]\partial/\partial Q_\mu$ or $i\mathsf C_\mu[\mathbb{M}_-]\partial/\partial x_\mu$; the mixed $\mathsf C_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither and is never written. A frame display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
+The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $\mathsf C_\mu(Q)\partial/\partial Q_\mu$ or $i\mathsf C_\mu(x)\partial/\partial x_\mu$; the mixed $\mathsf C_\mu(x)\partial/\partial Q_\mu$ belongs to neither and is never written. A frame display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
 
 **The index is written low in both frames.** The notation is $\mathsf C_\mu$: the position is a label for the component, and the index is never raised or lowered, in either frame.
 

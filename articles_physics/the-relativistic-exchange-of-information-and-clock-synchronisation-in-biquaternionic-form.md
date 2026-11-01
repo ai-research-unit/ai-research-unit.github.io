@@ -127,7 +127,7 @@ $$
 an element of $\mathbb{M}_-$ whose biquaternion norm is fixed:
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \gamma_2\left((ic)^2 + \vec v^2\right) = \gamma_2\left(-c^2+\vec v^2\right) = -c^2 .
+\langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+\vec v^2\right) = -c^2 .
 $$
 
 Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
@@ -364,11 +364,10 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $c$, $c_0$ | Speed of light in the medium, and in vacuum |
+| $c$ | Speed of light (its vacuum value in the numbers quoted here) |
 | $\tilde{R} = ic\,t'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $t'_{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t'+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |

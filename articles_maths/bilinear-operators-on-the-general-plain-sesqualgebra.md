@@ -60,7 +60,7 @@ because the blades are **orthogonal for the trace form** of the algebra, $\mathr
 
 ## The Covariants by Grade
 
-**Theorem (the dagger classification).** The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $i\vec e_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_t$ is the identity and the three $\vec e_k$ are, up to sign, the bivectors of that structure, $\vec e_z=-\gamma_1\gamma_2$ with $\gamma_k=i\vec e_k$, so
+**Theorem (the dagger classification).** The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $i\vec e_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_t$ is the identity and the three $\vec e_k$ are, up to sign, the bivectors of that structure, $\vec e_z=-(i\vec e_x)(i\vec e_y)$, so
 
 $$
 \boxed{\; e_t^{\dagger}=e_t,\qquad \vec e_k^{\dagger}=-\vec e_k ,\qquad \text{the covariant } \mathfrak{b}_{\mu} \text{ is Hermitian} \iff \mu=t \;}.
@@ -72,7 +72,7 @@ $$
 \mathfrak{b}_0(s,t)=s^{\dagger}t \ \text{(the module form)},\qquad \mathfrak{b}_k(s,t)=-i\,s^{\dagger}\sigma_k t .
 $$
 
-*Proof.* Reversion reverses the order of a product, so it acts on a degree-$d$ blade by $(-1)^{d(d-1)/2}$: the identity (degree $0$) and the bivectors are fixed and negated respectively. On the basis $e_t=1$ and $\vec e_k=-\gamma_j\gamma_i$ with $\gamma_k=i\vec e_k$ of square $+1$, reversion fixes the $\gamma$'s and negates the bivectors, so $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$. The covariant inherits the type from the blade, $\mathfrak{b}_{\mu}^{*}=\mathfrak{b}_{\bar{\mu}}$, by the corollary of the completeness theorem.
+*Proof.* Reversion reverses the order of a product, so it acts on a degree-$d$ blade by $(-1)^{d(d-1)/2}$: the identity (degree $0$) and the bivectors are fixed and negated respectively. On the basis $e_t=1$ and $\vec e_k=-(i\vec e_j)(i\vec e_i)$, with the vectors $i\vec e_k$ of square $+1$, reversion fixes those vectors and negates the bivectors, so $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$. The covariant inherits the type from the blade, $\mathfrak{b}_{\mu}^{*}=\mathfrak{b}_{\bar{\mu}}$, by the corollary of the completeness theorem.
 
 **Remark (the grade rule and its stability).** The general theory states the classification by the grade of the blade, Hermitian for $|A|\equiv0,3$ and skew-Hermitian for $|A|\equiv1,2\pmod 4$. The biquaternion algebra carries two Clifford structures and the rule is stable across them: in the structure $\mathbb{B}\cong\mathrm{Cl}(\mathbb{C}^2)$ of the generators $\vec e_x,\vec e_y$ with $\vec e_z=\vec e_x \vec e_y$ the degrees are $0,1,1,2$, while in $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the three $\vec e_k$ are all bivectors of degree $2$; in both, $e_t$ is Hermitian and the three $\vec e_k$ are skew-Hermitian, and the three degrees $1,1,2$ and $2,2,2$ all satisfy $|A|\not\equiv0,3$. The classification is therefore a property of the blade and the dagger, not of the chosen Clifford presentation.
 
@@ -143,3 +143,15 @@ A **form** on the biquaternion spinor module is given by a $2\times2$ matrix, $\
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Fierz identity, the bilinear covariants and the classification by grade.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a full matrix algebra on its simple module.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the spinor module, the invariant forms and the role of the Clifford action on the endomorphisms.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
+
+$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$
+
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

@@ -61,7 +61,7 @@ and the two summands are orthogonal and $D$-invariant.
 
 **Proof.** For a self-adjoint operator on a Hermitian space, $\overline{\operatorname{im}D} = (\ker D)^{\perp}$, because $s \perp \operatorname{im}D$ iff $(s, Dt) = 0$ for all $t$ iff $(Ds,t) = 0$ for all $t$ iff $Ds = 0$; in finite dimensions the orthogonal complement of the kernel is exactly the image, and both are invariant under $D$ because $D$ commutes with itself and preserves its kernel.
 
-**Corollary (the index is an obstruction of the kernel alone).** If the module carries a chirality grading $\gamma$ with $\gamma_{2} = 1$, $\gamma_{}^{*} = \gamma$, and the operator is odd, $\gamma D = -D\gamma$, then $D$ interchanges the two chiral halves and the **index** $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.
+**Corollary (the index is an obstruction of the kernel alone).** If the module carries a chirality operator $\Gamma$, with $\Gamma^{*} = \Gamma$ and $\Gamma^2 = 1$, and the operator is odd, $\Gamma D = -D\Gamma$, then $D$ interchanges the two chiral halves and the **index** $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\Gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.
 
 ## The Finite-Dimensional Model
 
@@ -110,7 +110,7 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 | $(D^{2}s,s) = \lVert Ds\rVert^{2}\ge0$ | Positivity of the Hermitian square |
 | $\ker D$ | Harmonic spinors |
 | $S = \ker D\oplus\operatorname{im}D$ | Hodge splitting by the kernel |
-| $\gamma$, $\operatorname{ind}(D^{+})$ | Chirality grading and index |
+| $\Gamma$, $\operatorname{ind}(D^{+})$ | Chirality operator and index |
 | $D_{\mathrm{alg}} = \sum_jL_{e_j}$ | Finite-dimensional Dirac element |
 | $D_{\mathrm{alg}}^{2} = (\sum_jq(e_j))\mathrm{id}$ | Clifford Laplacian |
 | $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = -\sum_jq(e_j)\,\mathrm{id}$ | Positive Hermitian square of the model |
@@ -122,3 +122,20 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 - Mikio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for self-adjoint operators, their spectra and the positivity of $D^{*}D$.
 - Richard S. Palais, *The Atiyah–Singer Index Theorem*, Lecture Notes in Mathematics 835 (Springer, 1995), for the index of the chiral part of a Dirac operator and its computation from the geometry.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Dirac element, its square and the explicit low-dimensional models.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+

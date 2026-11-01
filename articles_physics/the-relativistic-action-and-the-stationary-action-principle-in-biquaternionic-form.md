@@ -92,7 +92,7 @@ Parametrising by proper time and writing $\tilde{V} = d\tilde{R}/d\tau$, the fou
 $$
 \tilde{V} = \gamma\bigl(ic\,e_t + \vec v\bigr) \in \mathbb{M}_- ,
 \qquad
-\langle\tilde{V}\rangle_{\natural} = \gamma_2\bigl(-c^2 + \vec v^2\bigr) = -c^2 .
+\langle\tilde{V}\rangle_{\natural} = \gamma^2\bigl(-c^2 + \vec v^2\bigr) = -c^2 .
 $$
 The normalisation is the algebraic content of the free action: the worldline is the level set $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the variation of the action is a variation of the biquaternion norm along that level set.
 
@@ -133,7 +133,7 @@ The momentum conjugate to $\tilde{R}$ is $\tilde{P} = \partial L/\partial\left(d
 $$
 \tilde{P} = m\tilde{V} = m\gamma\bigl(ic\,e_t + \vec v\bigr) = i\,\frac{E}{c}\,e_t + \vec p ,
 \qquad
-\langle\tilde{P}\rangle_{\natural} = \gamma_2\bigl(-m^2c^2 + m^2\vec v^2\bigr) = -m^2c^2 .
+\langle\tilde{P}\rangle_{\natural} = \gamma^2\bigl(-m^2c^2 + m^2\vec v^2\bigr) = -m^2c^2 .
 $$
 The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, which was verified on a random on-shell momentum to machine precision, and it is the particle counterpart of the field symbol condition of the operator article. The four-momentum lies in $\mathbb{M}_-$ and so does the four-force, both requiring the material sector of the involution lattice; the mass shell is the single scalar invariant the sector carries.
 

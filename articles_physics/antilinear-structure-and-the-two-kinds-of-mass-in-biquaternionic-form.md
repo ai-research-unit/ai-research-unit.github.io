@@ -162,12 +162,12 @@ A single equation with a single field and a single mass term can realise the sec
 
 This is the section on which the retired equation's diagnosis turns, and it separates two objects that the word "conjugation" hides.
 
-The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the spinor module and calls it a real structure too. Both are antilinear, both are involutions up to sign, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. Write $T_{a,b}$ for the two-sided cell, $T_{a,b}\tilde\Psi=a\tilde\Psi b$, and $T_\mu=iT_{e_\mu,e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, for the generator cell of the coordinate $x_\mu$:
+The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the spinor module and calls it a real structure too. Both are antilinear, both are involutions up to sign, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. Write $T_{a,b}$ for the two-sided cell, $T_{a,b}\tilde\Psi=a\tilde\Psi b$, and $\mathsf C_\mu=iT_{e_\mu,e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, for the generator cell of the coordinate $x_\mu$:
 
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
 | acts on | the algebra $\mathbb{B}$, real dim $8$ | the spinor module $\Delta$, real dim $8$ |
-| defined by | the generators: $\vec e_k\mapsto -\vec e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}T_\mu\mathcal{C} = -T_\mu^{T}$, carried by the cell $C=T_{e_t,e_x}$ |
+| defined by | the generators: $\vec e_k\mapsto -\vec e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}\mathsf C_\mu\mathcal{C} = -\mathsf C_\mu^{T}$, carried by the cell $C=T_{e_t,e_x}$ |
 | fixed space | $\mathbb{M}_-$, the anti-Hermitian sector, real dim $4$ | the Majorana spinor space, real dim $4$ |
 | commutes with the kinetic operator | **no** | **yes**, up to a sign |
 | exchanges the chiral halves | no — it preserves the $\mathbb{M}_\pm$ split | yes |
@@ -353,7 +353,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 | $\mathcal{C}$, $\psi^{c} = \mathcal{C}\bar{\psi}^{T}$ | Charge conjugation on the module; the Majorana reality condition |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged spinor is one on which that factor acts non-trivially |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
-| $T_{a,b}\tilde\Psi = a\tilde\Psi b$; $T_\mu = iT_{e_\mu,e_{\nu(\mu)}}$ | Two-sided cell; the generator cell of the coordinate $x_\mu$ |
+| $T_{a,b}\tilde\Psi = a\tilde\Psi b$; $\mathsf C_\mu = iT_{e_\mu,e_{\nu(\mu)}}$ | Two-sided cell; the generator cell of the coordinate $x_\mu$ |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{M}_-$, $-$ on $\mathbb{M}_+$ | The sector sign; the same convention as the material identification |
 
@@ -371,12 +371,14 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

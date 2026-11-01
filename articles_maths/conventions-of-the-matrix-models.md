@@ -261,8 +261,8 @@ Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The fr
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
 A derivative contraction is $i\mathsf C_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
 in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\mathsf C_\mu[\mathbb{B}]\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators,
-and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\mathsf C_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+If the $\mathbb{B}$ frame is used, it is written $\mathsf C_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\mathsf C_0(Q)=\mathsf C_0(x)$ and $\mathsf C_k(Q)=i\mathsf C_k(x)$,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\mathsf C_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$

@@ -154,7 +154,7 @@ $$
 \langle\tilde P_2\rangle_{\natural} = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}\overline{\tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}}
 = \tilde P\tilde P^{\natural} = 0 .
 $$
-One may also check it in components, using $\gamma_2(\cos\theta-\beta)^2 + \sin^2\theta = \gamma_2(1-\beta\cos\theta)^2$, which follows from $1-\beta^2 = \gamma_{-2}$. Hence $k_2 = \omega_2/c$: the observer sees a light wave propagating with the same local speed $c$, as required.
+One may also check it in components, using $\gamma^2(\cos\theta-\beta)^2 + \sin^2\theta = \gamma^2(1-\beta\cos\theta)^2$, which follows from $1-\beta^2 = \gamma^{-2}$. Hence $k_2 = \omega_2/c$: the observer sees a light wave propagating with the same local speed $c$, as required.
 
 **Solution (d).** The observer's four-velocity in the source frame is $\tilde{V} = \gamma(ic\,e_t + \vec v_b)$, and Problem 1 gives
 $$
@@ -180,7 +180,7 @@ $$
 
 **Solution (b).** The product is
 $$
-\omega_2(\theta=0)\;\omega_2(\theta=\pi) = \gamma_2\omega_0^2(1-\beta)(1+\beta) = \gamma_2\omega_0^2\left(1-\beta^2\right) = \omega_0^2 .
+\omega_2(\theta=0)\;\omega_2(\theta=\pi) = \gamma^2\omega_0^2(1-\beta)(1+\beta) = \gamma^2\omega_0^2\left(1-\beta^2\right) = \omega_0^2 .
 $$
 This is required by symmetry: the configuration with velocity $-\vec v_b$ is the same physical situation with emission and reception interchanged, or equivalently it is the $\theta\to\pi$ configuration of the original, so the two factors must be inverse.
 
@@ -204,7 +204,7 @@ There is no transverse term here: the longitudinal result is exact at every $\be
 
 ## Problem 4: Transverse Doppler — Two Distinct Effects
 
-**Statement.** (a) Case A: the observer's velocity is perpendicular to the ray *in the source frame*, $\theta = \pi/2$. Show that $\omega_2 = \gamma\omega_0$. (b) Case B: the source's velocity is perpendicular to the line of sight *in the observer frame*, $\theta_2 = \pi/2$. Show that this corresponds to $\cos\theta = \beta$ in the source frame, and that $\omega_2 = \omega_0/\gamma$. (c) Show that the two results differ by $\gamma_2$ and explain why there is no contradiction.
+**Statement.** (a) Case A: the observer's velocity is perpendicular to the ray *in the source frame*, $\theta = \pi/2$. Show that $\omega_2 = \gamma\omega_0$. (b) Case B: the source's velocity is perpendicular to the line of sight *in the observer frame*, $\theta_2 = \pi/2$. Show that this corresponds to $\cos\theta = \beta$ in the source frame, and that $\omega_2 = \omega_0/\gamma$. (c) Show that the two results differ by $\gamma^2$ and explain why there is no contradiction.
 
 **Solution (a).** With $\cos\theta = 0$, the general formula gives
 $$
@@ -228,7 +228,7 @@ $$
 \qquad
 \omega_{2,B} = \frac{\omega_0}{\gamma}\;}
 \qquad
-\frac{\omega_{2,A}}{\omega_{2,B}} = \gamma_2 .
+\frac{\omega_{2,A}}{\omega_{2,B}} = \gamma^2 .
 $$
 There is no contradiction because the word "transverse" refers to two different conditions in two different frames. In case A the relative velocity is perpendicular to the ray **in the source frame**; aberration then makes the source appear ahead along the line of sight, and the observer is moving toward it, so the frequency rises. In case B the transversality is imposed **in the observer frame**, so the observer sees no component of the source's velocity along the line of sight, and the only surviving effect is the time dilation of the source, which lowers the frequency by exactly $1/\gamma$; the condition $\theta_2 = \pi/2$ corresponds by aberration to emission at $\theta = \arccos\beta$ in the source frame. The two cases coincide only in the limit $\beta\to0$, where both reduce to $\omega_0(1 + O(\beta^2))$ with opposite signs of the $O(\beta^2)$ term. In particular:
 $$
@@ -273,7 +273,7 @@ Since the emission is isotropic in the source frame, the hemisphere $\theta\ge\p
 | Transverse A, $\theta = \pi/2$ (source frame) | $1.0050378153$ | $652.991350$ | $-\,3.289650$ |
 | Transverse B, $\theta_2 = \pi/2$ (observer frame) | $0.9949874371$ | $659.587222$ | $+\,3.306222$ |
 
-The two transverse frequency ratios differ by $\gamma_2 = 1.0101$: their ratio is $\gamma_2$, so the two frequency shifts have opposite signs and unequal magnitudes. The longitudinal entries are the two reciprocal shifts of Problem 3. As a stronger instance, at $\beta = 0.5$ the receding wavelength is $1136.712$ nm and the approaching one is $378.904$ nm.
+The two transverse frequency ratios differ by $\gamma^2 = 1.0101$: their ratio is $\gamma^2$, so the two frequency shifts have opposite signs and unequal magnitudes. The longitudinal entries are the two reciprocal shifts of Problem 3. As a stronger instance, at $\beta = 0.5$ the receding wavelength is $1136.712$ nm and the approaching one is $378.904$ nm.
 
 **Solution (b).** For a circular source observed from the centre of its orbit — the Ives–Stilwell geometry — the emission is perpendicular to the line of sight in the observer frame at every instant, so case B applies and
 $$
@@ -322,7 +322,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 4. **Longitudinal.** $\omega_2 = \omega_0\sqrt{(1-\beta)/(1+\beta)}$ receding and $\omega_0\sqrt{(1+\beta)/(1-\beta)}$ approaching; the two factors are reciprocals, and $1+z = \sqrt{(1+\beta)/(1-\beta)}$.
 
-5. **Transverse — two cases.** $\theta = \pi/2$ in the source frame gives $\omega_2 = \gamma\omega_0$ (blueshift); $\theta_2 = \pi/2$ in the observer frame, corresponding to $\cos\theta = \beta$, gives $\omega_2 = \omega_0/\gamma$ (redshift). The two differ by $\gamma_2$; only case B is the usual time-dilated transverse shift of the Ives–Stilwell type.
+5. **Transverse — two cases.** $\theta = \pi/2$ in the source frame gives $\omega_2 = \gamma\omega_0$ (blueshift); $\theta_2 = \pi/2$ in the observer frame, corresponding to $\cos\theta = \beta$, gives $\omega_2 = \omega_0/\gamma$ (redshift). The two differ by $\gamma^2$; only case B is the usual time-dilated transverse shift of the Ives–Stilwell type.
 
 6. **Aberration and beaming.** $\cos\theta_2 = (\cos\theta-\beta)/(1-\beta\cos\theta)$; the source-frame hemisphere $\theta\ge\pi/2$ arrives in a forward cone of half-angle $\arccos\beta \approx 1/\gamma$.
 

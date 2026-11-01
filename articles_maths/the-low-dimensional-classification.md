@@ -305,7 +305,7 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 | $\omega=e_1\cdots e_n$ | Volume element of an orthogonal basis |
 | $\omega^2=(-1)^{N(N-1)/2}\mathfrak{Q}(e_1)\cdots \mathfrak{Q}(e_N)$ | Square of the volume element |
 | $\pi_{1,2}=\tfrac12(1\pm e)$ | Idempotents of $\mathrm{Cl}_{1,0}$ |
-| $e_k$ | Quaternion units of $\mathbb{B}$; the generators of $\mathrm{Cl}_{3,0}$ are $ie_k$ |
+| $e_k$ | Quaternion units of $\mathbb{B}$, of square $-1$; the generators of $\mathrm{Cl}_{3,0}$ are $ie_k$, of square $+1$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices, $\sigma_k^2=I$, $\sigma_j\sigma_k=-\sigma_k\sigma_j$ |
 
 
@@ -322,12 +322,12 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 
 ## Appendix — The Gamma Formulation
 
-The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, $\gamma_k\mapsto ie_k$, $k=1,2,3$: the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
+The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
 
 $$
 \gamma_k\mapsto ie_k,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_j\gamma_k\mapsto-e_je_k .
 $$
 
-The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
+The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is, up to sign, the product of two of them.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

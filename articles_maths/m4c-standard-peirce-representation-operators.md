@@ -137,6 +137,12 @@ $$
 $$
 The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy; the two copies are mutual centralisers. The intersection is the centre of each.
 
+**The commutant of one element.** The two copies are the commutants of each other; the commutant of a single matrix is smaller. For a non-scalar element, the commutant of $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ in $M_4(\mathbb{C})$ is
+$$
+M_2(\mathbb{C})\otimes\mathbb{C}\bigl[\mathsf M_2(\tilde Q)\bigr],
+$$
+of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.
+
 **The compression.** In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*.
 
 **The general level.** A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.
@@ -610,6 +616,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - A product formula, hence powers, inverses and the monoid structure.
 - A rank-one coefficient criterion, hence a decisive test for "is this matrix a single two-sided operator?"
 - The length formula $\ell(M)=\operatorname{rank}c(M)$ with $0\le\ell(M)\le4$.
+- The commutant of one element: $M_2\otimes\mathbb{C}[A]$, of dimension eight, and a minimal polynomial of degree two.
 - The plain adjoint and the type criteria: $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$; self-adjoint exactly when $\tilde P=\lambda\tilde Q$; isometry exactly when $\tilde P\tilde Q=\pm e_t$; multiplicative exactly when $\tilde P\tilde Q=e_t$.
 
 **It does not give.**

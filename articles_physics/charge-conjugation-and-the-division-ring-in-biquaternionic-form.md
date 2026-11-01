@@ -25,10 +25,10 @@ $$
 the complex conjugation of the algebra element followed by the inner automorphism by a matrix $\Pi$. Two features make it a pseudoautomorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. First, it is **conjugate-linear**: it contains $A^{*}$, and no automorphism of the real algebra does. Second, the matrix $\Pi$ does not preserve the real subalgebra; it conjugates the generators with a sign, $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ being the generators of the cell frame, with $T_{a,b}\psi=a\psi b$,
 
 $$
-\Pi\,\mathsf C_{\mu}\,\Pi^{-1}=-\mathsf C_{\mu},
+\Pi\,\mathsf C_\mu\,\Pi^{-1}=-\mathsf C_\mu,
 $$
 
-which is the property that distinguishes it from the inner automorphisms implementing $P$ and $T$. The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$, with $\Pi$ the algebra-level charge-conjugation matrix and $\eta_C=i\mathsf C_{2}=-T_{e_y,e_y}$ its module representative up to a phase; because $\Pi$ is determined only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
+which is the property that distinguishes it from the inner automorphisms implementing $P$ and $T$. The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$, with $\Pi$ the algebra-level charge-conjugation matrix and $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$ its module representative up to a phase; because $\Pi$ is determined only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
 
 ### The Action on Spinors
 
@@ -104,7 +104,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 **Established, and recomputed.**
 
-- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\mathsf C_{\mu}\Pi^{-1}=-\mathsf C_{\mu}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
+- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\mathsf C_\mu\Pi^{-1}=-\mathsf C_\mu$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
 - The twice-conjugated spinor is $\bar{\bar{\xi}}_{\alpha}=\pm\xi_{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
 - Over a real division ring the matrix is $\Pi\propto I$ and the pseudoautomorphism is the identity; the corresponding particles are truly neutral. The three charge classes $+1$, $0$, $\bar{0}$ are respectively the complex representations, the real quaternionic representations, and the real representations of real type.
 
@@ -145,12 +145,12 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
 | $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
-| $\Pi$ | Charge-conjugation matrix; $\Pi\mathsf C_{\mu}\Pi^{-1}=-\mathsf C_{\mu}$, fixed only up to a scalar |
+| $\Pi$ | Charge-conjugation matrix; $\Pi\mathsf C_\mu\Pi^{-1}=-\mathsf C_\mu$, fixed only up to a scalar |
 | $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ | Generators of the cell frame, $\mathsf C_0^2=T_{e_t,e_t}$, $\mathsf C_k^2=-T_{e_t,e_t}$ |
 | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $T_{a,b}=L_aR_b$ | One-sided multipliers and two-sided cells; $T_{a,b}\psi=a\psi b$, $i\mathsf C_2=-T_{e_y,e_y}$ |
 | $\bar{\xi}_{\bar\alpha}=\sum_\alpha\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
 | $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
-| $C[\psi]=i\mathsf C_{2}\psi^{*}=-T_{e_y,e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
+| $C[\psi]=i\mathsf C_2\psi^{*}=-T_{e_y,e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
 | $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
@@ -169,12 +169,14 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

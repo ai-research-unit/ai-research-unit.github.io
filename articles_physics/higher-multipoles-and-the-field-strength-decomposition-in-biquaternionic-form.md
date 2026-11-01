@@ -303,7 +303,7 @@ The rotation subgroup preserves the angular decomposition. A rotation acts on th
 The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $\Phi \propto (3z^2-r^2)/r^5$, and a boost along $z$ gives, on the sphere $r_2=1$,
 
 $$
-\Phi_2(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\big|_{r_2=1}\ \propto\ \frac{(2\gamma_2+1)u^2-1}{\left(1+(\gamma_2-1)u^2\right)^{5/2}} ,
+\Phi_2(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\big|_{r_2=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
 \qquad
 u = \cos\theta_2 ,
 $$

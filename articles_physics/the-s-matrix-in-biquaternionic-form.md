@@ -391,6 +391,8 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
+Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $T_{a,b}=L_aR_b$ is a cell.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z.
 $$

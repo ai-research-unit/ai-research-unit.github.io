@@ -34,46 +34,46 @@ and $SL(2,\mathbb{C})$ acts block-diagonally by $S(\tilde{U}) = \mathrm{diag}\bi
 The **chirality operator** on $\Delta$ is the cell that multiplies the spinor by $e_t$ on the left and by $e_z$ on the right. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $T_{a,b}=L_aR_b$,
 
 $$
-T_5 = -i\,T_{e_t,e_z}, \qquad T_5\Psi = -i\,e_t\,\Psi\,e_z, \qquad T_5^2 = I_4,
+\mathsf C_5 = -i\,T_{e_t,e_z}, \qquad \mathsf C_5\Psi = -i\,e_t\,\Psi\,e_z, \qquad \mathsf C_5^2 = I_4,
 $$
 
 and the **chiral projectors** are
 
 $$
-P_L\Psi = \tfrac12\left(\Psi - T_5\Psi\right) = \tfrac12\left(\Psi + i\,e_t\Psi e_z\right),
+P_L\Psi = \tfrac12\left(\Psi - \mathsf C_5\Psi\right) = \tfrac12\left(\Psi + i\,e_t\Psi e_z\right),
 \qquad
-P_R\Psi = \tfrac12\left(\Psi + T_5\Psi\right) = \tfrac12\left(\Psi - i\,e_t\Psi e_z\right).
+P_R\Psi = \tfrac12\left(\Psi + \mathsf C_5\Psi\right) = \tfrac12\left(\Psi - i\,e_t\Psi e_z\right).
 $$
 
 Their elementary algebra is exact:
 
 $$
-P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L+P_R = I_4, \qquad T_5 = P_R-P_L,
+P_L^2 = P_L, \qquad P_R^2 = P_R, \qquad P_LP_R = P_RP_L = 0, \qquad P_L+P_R = I_4, \qquad \mathsf C_5 = P_R-P_L,
 $$
 
 and each is Hermitian of trace $2$, so each projects onto a complex two-dimensional half: in the basis where the chirality cell is diagonal, $P_L\Psi=(\psi_L,0)$ and $P_R\Psi=(0,\psi_R)$. The four generator cells of the coordinate directions are
 
 $$
-T_0 = i\,T_{e_t,e_x}, \qquad T_k = i\,T_{e_k,e_y}, \qquad T_\mu T_\nu + T_\nu T_\mu = 2g_{\mu\nu}I_4,
+\mathsf C_0 = i\,T_{e_t,e_x}, \qquad \mathsf C_k = i\,T_{e_k,e_y}, \qquad \mathsf C_\mu \mathsf C_\nu + \mathsf C_\nu \mathsf C_\mu = 2g_{\mu\nu}I_4,
 $$
 
-with $g=\mathrm{diag}(+,-,-,-)$. The chirality cell anticommutes with each of them, $T_5T_\mu+T_\mu T_5=0$, and therefore commutes with every even product of generators, the left copy of the biquaternion algebra among them: $T_5\,T_\mu T_\nu = T_\mu T_\nu\,T_5$, and in particular $T_5L_a=L_aT_5$ for every $a\in\mathbb{B}$, so that it commutes with the Lorentz action on the module. Hence it commutes with each $P_{L,R}$.
+with $g=\mathrm{diag}(+,-,-,-)$. The chirality cell anticommutes with each of them, $\mathsf C_5\mathsf C_\mu+\mathsf C_\mu \mathsf C_5=0$, and therefore commutes with every even product of generators, the left copy of the biquaternion algebra among them: $\mathsf C_5\,\mathsf C_\mu \mathsf C_\nu = \mathsf C_\mu\mathsf C_\nu\,\mathsf C_5$, and in particular $\mathsf C_5L_a=L_a\mathsf C_5$ for every $a\in\mathbb{B}$, so that it commutes with the Lorentz action on the module. Hence it commutes with each $P_{L,R}$.
 
-**The check that is not the massless case.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is a **Lorentz-invariant** label, not a property of the massless limit. The Lorentz generators are the bivector cells $T_\mu T_\nu$, and $T_5\,T_\mu T_\nu=T_\mu T_\nu\,T_5$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
+**The check that is not the massless case.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is a **Lorentz-invariant** label, not a property of the massless limit. The Lorentz generators are the bivector cells $\mathsf C_\mu \mathsf C_\nu$, and $\mathsf C_5\,\mathsf C_\mu \mathsf C_\nu=\mathsf C_\mu\mathsf C_\nu\,\mathsf C_5$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
 
-**What the mass term does to a chirality-definite state.** Let $\bar{\Psi} = \Psi^{\dagger}T_0$, the adjoint built with the time-like generator cell $T_0=iT_{e_t,e_x}$. In a basis in which the chirality cell is diagonal and $T_0$ swaps the two blocks identically, $T_0(\psi_L,0)=(0,\psi_L)$ and $T_0(0,\psi_R)=(\psi_R,0)$,
-
-$$
-\bar{\Psi}\Psi = \Psi^{\dagger}T_0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
-$$
-
-the **Dirac mass bilinear**. Since $T_0$ anticommutes with $T_5$, it maps each chiral half into the other, and the bilinear is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto T_5\Psi$ one has $\bar{\Psi}\mapsto-\bar{\Psi}T_5$, since $T_5$ is Hermitian and $T_0T_5=-T_5T_0$, so
+**What the mass term does to a chirality-definite state.** Let $\bar{\Psi} = \Psi^{\dagger}\mathsf C_0$, the adjoint built with the time-like generator cell $\mathsf C_0=iT_{e_t,e_x}$. In a basis in which the chirality cell is diagonal and $\mathsf C_0$ swaps the two blocks identically, $\mathsf C_0(\psi_L,0)=(0,\psi_L)$ and $\mathsf C_0(0,\psi_R)=(\psi_R,0)$,
 
 $$
-\bar{\Psi}\Psi \;\longmapsto\; (-\bar{\Psi}T_5)(T_5\Psi) = -\bar{\Psi}\Psi :
+\bar{\Psi}\Psi = \Psi^{\dagger}\mathsf C_0\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
 $$
 
-the mass bilinear is **chirality-odd**. Equivalently, if $\Psi$ has definite chirality, $T_5\Psi=\pm\Psi$, then the two blocks are $\Psi=( \psi_L,0)$ or $(0,\psi_R)$ and
+the **Dirac mass bilinear**. Since $\mathsf C_0$ anticommutes with $\mathsf C_5$, it maps each chiral half into the other, and the bilinear is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto \mathsf C_5\Psi$ one has $\bar{\Psi}\mapsto-\bar{\Psi}\mathsf C_5$, since $\mathsf C_5$ is Hermitian and $\mathsf C_0\mathsf C_5=-\mathsf C_5\mathsf C_0$, so
+
+$$
+\bar{\Psi}\Psi \;\longmapsto\; (-\bar{\Psi}\mathsf C_5)(\mathsf C_5\Psi) = -\bar{\Psi}\Psi :
+$$
+
+the mass bilinear is **chirality-odd**. Equivalently, if $\Psi$ has definite chirality, $\mathsf C_5\Psi=\pm\Psi$, then the two blocks are $\Psi=( \psi_L,0)$ or $(0,\psi_R)$ and
 
 $$
 \bar{\Psi}\Psi = 0 .
@@ -81,7 +81,7 @@ $$
 
 A field of definite chirality has no Dirac mass bilinear at all. This is the precise sense in which a lone Weyl field cannot carry a mass, and it is the algebra behind the Standard Model's chiral matter.
 
-**Framework caution.** Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and it carries the two associated idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, whose sum is $e_t$; the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the *same* defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm T_5)$ split
+**Framework caution.** Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and it carries the two associated idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, whose sum is $e_t$; the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the *same* defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a real-structure distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents $\tfrac12(1\pm \mathsf C_5)$ split
 
 $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \;\cong\; M_2(\mathbb{C})\oplus M_2(\mathbb{C})
@@ -133,7 +133,7 @@ which is the abelian curvature of the one connection $A_\mu$, distributed betwee
 
 Two structural remarks belong here, because they distinguish this construction from the framework's own gauge principle.
 
-1. **The chiral connection is a module operator, not a biquaternion.** The object $A_\mu Ϙ$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $T_5=P_R-P_L$ gives $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}I_4+\tfrac{ϙ_R-ϙ_L}{2}T_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to the chirality cell $T_5=-iT_{e_t,e_z}$, which is a cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ and not an element of $\mathbb{B}$; equivalently the projectors $P_{L,R}$ are central idempotents only of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.
+1. **The chiral connection is a module operator, not a biquaternion.** The object $A_\mu Ϙ$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $\mathsf C_5=P_R-P_L$ gives $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}I_4+\tfrac{ϙ_R-ϙ_L}{2}\mathsf C_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to the chirality cell $\mathsf C_5=-iT_{e_t,e_z}$, which is a cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ and not an element of $\mathbb{B}$; equivalently the projectors $P_{L,R}$ are central idempotents only of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.
 2. **The abelian chiral connection is genuinely scalar in the curvature.** Since $Ϙ$ is constant, the components commute in the abelian case, and the curvature is the ordinary $F_{\mu\nu}$; the chirality enters only through the charge weighting. A non-abelian chiral connection would additionally require $Ϙ$ to be replaced by generators that do not commute, which is the gap treated in the next section.
 
 **The mass selection rule.** The scalar Dirac bilinear of the preceding section is the Lorentz-invariant pairing of the two halves available to a mass term. Under the chiral gauge transformation,
@@ -188,7 +188,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\,\tilde{\Psi}_R
 $$
 
-for mass $m$, and $\tilde{\nabla}\tilde{\Psi}=0$ in the massless case. The mass term is **linear** in the field and off-diagonal in chirality. Because it is linear, the central phase passes through it: under the global phase $\tilde{\Psi}\mapsto\lambda\tilde{\Psi}$ both sides acquire the same factor $\lambda$, so the continuous $\mathrm{U}(1)$ (fermion number) is conserved for the massive field, not only for the massless one. What the mass term breaks is the **axial** symmetry: for the spinor-module field, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar{\psi}T_5\psi$, with $j_{5\mu}=\bar\psi T_\mu T_5\psi$ and $\varepsilon=(1,-1,-1,-1)$; it vanishes only at $m=0$. The vector current is conserved at every $m$, the axial current only at $m=0$. The mass term is also what distinguishes the massive biquaternionic equation from the massless one, which is identical in form to the source-free Maxwell equation.
+for mass $m$, and $\tilde{\nabla}\tilde{\Psi}=0$ in the massless case. The mass term is **linear** in the field and off-diagonal in chirality. Because it is linear, the central phase passes through it: under the global phase $\tilde{\Psi}\mapsto\lambda\tilde{\Psi}$ both sides acquire the same factor $\lambda$, so the continuous $\mathrm{U}(1)$ (fermion number) is conserved for the massive field, not only for the massless one. What the mass term breaks is the **axial** symmetry: for the spinor-module field, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar{\psi}\mathsf C_5\psi$, with $j_{5\mu}=\bar\psi \mathsf C_\mu \mathsf C_5\psi$ and $\varepsilon=(1,-1,-1,-1)$; it vanishes only at $m=0$. The vector current is conserved at every $m$, the axial current only at $m=0$. The mass term is also what distinguishes the massive biquaternionic equation from the massless one, which is identical in form to the source-free Maxwell equation.
 
 The algebra carries, besides the conjugations used above, the **anti-Hermitian conjugation** $\flat=-{}^{*}$ and its role as the algebra's **real structure**:
 
@@ -218,7 +218,7 @@ Nothing here changes this article's findings or its open questions. The source i
 
 Three decompositions of the framework are in play in this article and its parents, and they must not be conflated.
 
-- The **chiral decomposition** is a decomposition of the spinor module $\Delta$ by the chirality cell $T_5=-iT_{e_t,e_z}$, into $S$ and $\bar{S}$. Its projectors are $P_L,P_R$, and it is the subject of this article.
+- The **chiral decomposition** is a decomposition of the spinor module $\Delta$ by the chirality cell $\mathsf C_5=-iT_{e_t,e_z}$, into $S$ and $\bar{S}$. Its projectors are $P_L,P_R$, and it is the subject of this article.
 - The **sector decomposition** is a decomposition of the algebra $\mathbb{B}$ by Hermitian conjugation ${}^{*}$, into the anti-Hermitian $\mathbb{M}_-$ and the Hermitian $\mathbb{M}_+$. Its projectors are the maps $\tilde{Q}\mapsto\tfrac12(\tilde{Q}\mp\tilde{Q}^{*})$.
 - The **ideal decomposition** is the Peirce decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ by the primitive idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$. Its two summands are *both* copies of $S$; it is not a chirality decomposition, as the read-list spinor article stresses.
 
@@ -228,8 +228,8 @@ The chiral projectors act on the module; the sector projectors act on the algebr
 
 **What it supplies.**
 
-- *The two-chiral structure and its projectors.* The spinor module decomposes into $S\oplus\bar{S}$; the chirality cell $T_5=-iT_{e_t,e_z}$ (with $T_5^2=I_4$) and $P_{L,R}$ are exact and Lorentz invariant, and the projectors are idempotent, orthogonal and complete. The algebra of the projectors has been checked, including the commutation with the even (Lorentz) generators that survives the mass term.
-- *The chirality-oddness of the mass.* The Dirac bilinear is odd under $T_5$ and vanishes on a definite-chirality state; the parent's mass term is the linear off-diagonal chiral pair, while the algebra's real structure $\flat$ is the order-reversing conjugation that exchanges the chiral ideals. This is established.
+- *The two-chiral structure and its projectors.* The spinor module decomposes into $S\oplus\bar{S}$; the chirality cell $\mathsf C_5=-iT_{e_t,e_z}$ (with $\mathsf C_5^2=I_4$) and $P_{L,R}$ are exact and Lorentz invariant, and the projectors are idempotent, orthogonal and complete. The algebra of the projectors has been checked, including the commutation with the even (Lorentz) generators that survives the mass term.
+- *The chirality-oddness of the mass.* The Dirac bilinear is odd under $\mathsf C_5$ and vanishes on a definite-chirality state; the parent's mass term is the linear off-diagonal chiral pair, while the algebra's real structure $\flat$ is the order-reversing conjugation that exchanges the chiral ideals. This is established.
 
 - *The chiral gauge covariant derivative on the module.* For independent charges $ϙ_L,ϙ_R$ the derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ is covariant with $Ϙ=ϙ_LP_L+ϙ_RP_R$, and its curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. This is the standard chiral abelian gauge structure, expressed on the biquaternion spinor module.
 - *The mass selection rule.* A bare Dirac mass is gauge invariant iff $ϙ_L=ϙ_R$; a chiral fermion is massless in the unbroken phase. This is established by direct computation and is the algebraic content of the Standard Model's need for a Higgs field.
@@ -260,7 +260,7 @@ The chiral projectors act on the module; the sector projectors act on the algebr
 
 The neutrino and Majorana article is the natural locus.
 
-4. **What is the biquaternion status of the chiral projectors?** The projectors $\tfrac12(1\pm T_5)$ are central idempotents of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not of $\mathbb{B}$. Whether there is a natural $P_{L,R}$ inside $\mathbb{B}$ is not settled; the electron article records the same doubt.
+4. **What is the biquaternion status of the chiral projectors?** The projectors $\tfrac12(1\pm \mathsf C_5)$ are central idempotents of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not of $\mathbb{B}$. Whether there is a natural $P_{L,R}$ inside $\mathbb{B}$ is not settled; the electron article records the same doubt.
 
 5. **Where does the Higgs field enter?** The selection rule identifies the quantum numbers a compensating scalar must carry, but the framework's realisation of the scalar, of spontaneous symmetry breaking, and of the Yukawa coupling is the planned companion's subject.
 
@@ -272,17 +272,17 @@ The neutrino and Majorana article is the natural locus.
 
 ## Summary
 
-A chiral fermion is one whose left- and right-handed components carry inequivalent gauge representations. In the biquaternion framework the chiral decomposition lives in the spinor module: the Dirac module is $\Delta=S\oplus\bar{S}$, the chirality operator is the cell $T_5=-iT_{e_t,e_z}$, acting by $T_5\Psi=-i\,e_t\Psi e_z$ with $T_5^2=I_4$, and the projectors
+A chiral fermion is one whose left- and right-handed components carry inequivalent gauge representations. In the biquaternion framework the chiral decomposition lives in the spinor module: the Dirac module is $\Delta=S\oplus\bar{S}$, the chirality operator is the cell $\mathsf C_5=-iT_{e_t,e_z}$, acting by $\mathsf C_5\Psi=-i\,e_t\Psi e_z$ with $\mathsf C_5^2=I_4$, and the projectors
 
 $$
-P_L\Psi = \tfrac12(\Psi-T_5\Psi), \qquad P_R\Psi = \tfrac12(\Psi+T_5\Psi)
+P_L\Psi = \tfrac12(\Psi-\mathsf C_5\Psi), \qquad P_R\Psi = \tfrac12(\Psi+\mathsf C_5\Psi)
 $$
 
-are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $T_5$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
+are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $\mathsf C_5$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
 
 A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Ϙ=ϙ_LP_L+ϙ_RP_R$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ satisfies $D_{2,\mu}(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $ϙ_L,ϙ_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. But under the gauge transformation $\bar{\Psi}\Psi$ acquires the position-dependent phase $\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$, so it is gauge invariant **iff $ϙ_L=ϙ_R$**: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar.
 
-The framework's *own* abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore **vector-like** and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=2im\bar{\psi}T_5\psi$ (which vanishes only at $m=0$). The algebra's anti-linear object is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: a coupling built on it pairs the field with its conjugate, is not invariant under the continuous central phase, and has the signature of a conjugate-pairing (Majorana-type) term. The real structure is order-reversing and exchanges the two chiral ideals; whether its pairing is the intended physical reading is left open below.
+The framework's *own* abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore **vector-like** and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu=2im\bar{\psi}\mathsf C_5\psi$ (which vanishes only at $m=0$). The algebra's anti-linear object is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: a coupling built on it pairs the field with its conjugate, is not invariant under the continuous central phase, and has the signature of a conjugate-pairing (Majorana-type) term. The real structure is order-reversing and exchanges the two chiral ideals; whether its pairing is the intended physical reading is left open below.
 
 Two gaps are left visible. First, without a non-central gauge structure the framework has no chiral gauge group, and the reality and compactness conditions that would supply one are not derived. Second, whether the real structure's antilinear pairing is Majorana-type or a real-form Dirac mass is open, and it decides whether the vector-like interpretation of the centre is the physical one. The chiral structure itself — the halves, the projectors, the selection rule — is established and exact.
 
@@ -303,10 +303,10 @@ Two gaps are left visible. First, without a non-central gauge structure the fram
 | $\psi_L\in S,\ \psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $I_4$ | Identity operator on $\Delta$ |
 | $L_a\psi=a\psi,\ R_b\psi=\psi b,\ T_{a,b}=L_aR_b$ | Left, right and two-sided multipliers; $T_{a,b}T_{c,d}=T_{ac,db}$ |
-| $T_5 = -iT_{e_t,e_z}$ | Chirality cell, $T_5\Psi=-i\,e_t\Psi e_z$, $T_5^2=I_4$ |
-| $P_L\Psi = \tfrac12(\Psi-T_5\Psi),\ P_R\Psi = \tfrac12(\Psi+T_5\Psi)$ | Chiral projectors |
-| $\bar{\Psi} = \Psi^{\dagger}T_0$, $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac adjoint and mass bilinear (chirality-odd) |
-| $T_\mu$ | Generator cells, $T_0=iT_{e_t,e_x}$, $T_k=iT_{e_k,e_y}$; $T_\mu T_\nu+T_\nu T_\mu=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
+| $\mathsf C_5 = -iT_{e_t,e_z}$ | Chirality cell, $\mathsf C_5\Psi=-i\,e_t\Psi e_z$, $\mathsf C_5^2=I_4$ |
+| $P_L\Psi = \tfrac12(\Psi-\mathsf C_5\Psi),\ P_R\Psi = \tfrac12(\Psi+\mathsf C_5\Psi)$ | Chiral projectors |
+| $\bar{\Psi} = \Psi^{\dagger}\mathsf C_0$, $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac adjoint and mass bilinear (chirality-odd) |
+| $\mathsf C_\mu$ | Generator cells, $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$; $\mathsf C_\mu \mathsf C_\nu+\mathsf C_\nu \mathsf C_\mu=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
 | $ϙ_L, ϙ_R$ | Left and right charges (parameters) |
 | $Ϙ = ϙ_LP_L+ϙ_RP_R$ | Chiral charge operator |
 | $\Lambda = \exp(\tfrac{i}{\hbar}\Gamma Ϙ)$ | Chiral gauge transformation |
@@ -341,6 +341,6 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

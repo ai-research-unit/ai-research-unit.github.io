@@ -443,7 +443,8 @@ $$
 | geometry | Zariski-open and dense in $\mathcal{N}$; complex cone of complex dimension $3$ and real dimension $6$; smooth, connected; apex removed |
 | elements | semisimple zero divisors; minimal polynomial $X(X-c)$ |
 | Peirce decomposition | exists, unique, diagonal on $(e_+,e_-)$ |
-| eigenbasis | normalised Peirce basis; unique with the normalisation fixed |\n| spinors | $S_\pm=\mathbb{B}e_\pm$, Peirce carriers (minimal left ideals here); $L_{\tilde Q}=\operatorname{diag}(c,0)$ on each, $R_{\tilde Q}=c$ on $S_+$ and $0$ on $S_-$ |
+| eigenbasis | normalised Peirce basis; unique with the normalisation fixed |
+| spinors | $S_\pm=\mathbb{B}e_\pm$, Peirce carriers (minimal left ideals here); $L_{\tilde Q}=\operatorname{diag}(c,0)$ on each, $R_{\tilde Q}=c$ on $S_+$ and $0$ on $S_-$ |
 | centraliser | $\mathbb{C}[\tilde\Pi]\cong\mathbb{C}\oplus\mathbb{C}$, with the four idempotents $0,e_t,\tilde\Pi,\tilde\Pi'$ |
 | annihilators | two distinct planes meeting in $\mathbb{C}\tilde\Pi'$, the kernel projector; $\tilde Q$ lies in neither |
 | multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N}$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |
@@ -467,7 +468,10 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the nilpotent of the mixed corner $\mathbb{B}_{+-}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, with $L_{\tilde Q}^2=2Q_tL_{\tilde Q}$ |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
-| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |\n| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two Peirce copies |\n| $Q_{2,ij}$ | the coordinates of a general element in the eigenbasis |\n| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
+| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |
+| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two Peirce copies |
+| $Q_{2,ij}$ | the coordinates of a general element in the eigenbasis |
+| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
 
 ## Further Reading
 

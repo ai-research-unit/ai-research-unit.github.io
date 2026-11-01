@@ -65,14 +65,14 @@ so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore a L
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-Take the mostly-minus counterpart of the parent's block generators, writing $T_\mu=iT_{e_\mu,e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
+Take the mostly-minus counterpart of the parent's block generators, writing $\mathsf C_\mu=iT_{e_\mu,e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
 
 $$
-T_0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
-T_k = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
+\mathsf C_0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
+\mathsf C_k = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
 $$
 
-satisfying $T_\mu T_\nu + T_\nu T_\mu = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
+satisfying $\mathsf C_\mu \mathsf C_\nu + \mathsf C_\nu \mathsf C_\mu = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
 
 $$
 i\left(\partial/\partial t' + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = m\,\psi_L, \qquad
@@ -376,7 +376,7 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\; \tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents |
 | $\Gamma = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\Gamma),\; P_R = \tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $T_\mu = iT_{e_\mu,e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $T_0,T_k$ are the block matrices of Problem 2 |
+| $\mathsf C_\mu = iT_{e_\mu,e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $\mathsf C_0,\mathsf C_k$ are the block matrices of Problem 2 |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
@@ -399,12 +399,14 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

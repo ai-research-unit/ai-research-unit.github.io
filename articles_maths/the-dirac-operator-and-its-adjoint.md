@@ -5,7 +5,7 @@
 
 The Cauchy–Riemann operator of a spin manifold is assembled from two structures that the metric puts on the spinor bundle: the Clifford multiplication, which is skew-adjoint for the spinor inner product, and the spin connection, which is compatible with it. The product is **formally self-adjoint**: the adjoint of the operator is minus itself twice, hence the operator itself, and the self-adjointness is what makes the operator a Dirac-type operator in the analytic sense — discrete real spectrum, orthogonal eigenspinors, and two chiral halves that are mutual adjoints. The adjoint of the positive half is the negative half, $\operatorname{coker}D^{+}=\ker D^{-}$, and the index counts the chiral zero modes; the twisted operator and its adjoint satisfy the same identities with the twisted connection, and the square of the operator is the Lichnerowicz Laplacian, whose self-adjointness gives the vanishing theorem for the harmonic spinors.
 
-The article treats the spinor inner product and the formal adjoint, the self-adjointness of the Cauchy–Riemann operator, the adjoint of the chiral halves and the resulting form of the index, the twisted operator and its adjoint, and the place of the adjoint in the Lichnerowicz formula and the vanishing theorem. The operator on the manifold, its chirality, the Lichnerowicz formula and the $\hat A$-genus are *The Dirac Operator on a Manifold*; the spin structure and the spinor bundle are *Spin Geometry*; the algebraic **Hermitian structure** of the operator — the module form, the self-adjointness on a Hermitian Clifford module, the spinor adjoint $s\mapsto(s,\cdot)$ and the Dirac adjoint $\bar\psi=\psi^{\dagger}\gamma_0$ — belongs to the Part II articles *Dirac Operators with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*, and is cited here; the parallel article for the de Rham complex is *The Adjoint of the Signature Operator*.
+The article treats the spinor inner product and the formal adjoint, the self-adjointness of the Cauchy–Riemann operator, the adjoint of the chiral halves and the resulting form of the index, the twisted operator and its adjoint, and the place of the adjoint in the Lichnerowicz formula and the vanishing theorem. The operator on the manifold, its chirality, the Lichnerowicz formula and the $\hat A$-genus are *The Dirac Operator on a Manifold*; the spin structure and the spinor bundle are *Spin Geometry*; the algebraic **Hermitian structure** of the operator — the module form, the self-adjointness on a Hermitian Clifford module, the spinor adjoint $s\mapsto(s,\cdot)$ and the Dirac adjoint $\bar\psi=\psi^{\dagger}v_0$ with $v_0$ the time-like vector — belongs to the Part II articles *Dirac Operators with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*, and is cited here; the parallel article for the de Rham complex is *The Adjoint of the Signature Operator*.
 
 The prerequisites are *The Dirac Operator on a Manifold* for the operator, the spinor bundle and the index; *Spin Geometry* for the spin connection and the Clifford multiplication; *The Formal Adjoint of a Differential Operator* and *The L2 Adjoint of a Differential Operator* for the formal and $L^{2}$ adjoints; *The Codifferential* and *The Adjoint of the Signature Operator* for the differential-geometric adjoint of a Dirac-type operator; *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, *Dirac Operators with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* for the algebraic Hermitian structure; and *The Atiyah–Singer Index Theorem and K-Theory* for the index. The analytic domain theory belongs to Part III and is cited; the metric is chosen. No physics is invoked.
 
@@ -141,7 +141,7 @@ and the vanishing theorem follows: a closed spin manifold of positive scalar cur
 
 The differential-geometric self-adjointness is the analytic shadow of the algebraic Hermitian structure of the Clifford module, and the corpus has built that structure in Part II.
 
-**Theorem (algebraic form).** On a Hermitian Clifford module the Dirac operator is self-adjoint for the module form, its square is a positive operator, its spectrum is real and its eigenspinors are orthogonal; the **spinor adjoint** $s\mapsto(s,\cdot)$ is the Clifford-equivariant identification of the module with its dual, and the **Dirac adjoint** $s,t\mapsto\operatorname{Sc}(s^{\dagger}\gamma t)$ is the pairing obtained by inserting a fixed vector before the form, whose scalar part $\bar\psi\psi$ is invariant. The differential-geometric operator $D$ of a spin manifold is the curved-space member of the same family, with the module form the fibrewise spinor inner product and the identification with the dual the metric on $\mathcal{S}$.
+**Theorem (algebraic form).** On a Hermitian Clifford module the Dirac operator is self-adjoint for the module form, its square is a positive operator, its spectrum is real and its eigenspinors are orthogonal; the **spinor adjoint** $s\mapsto(s,\cdot)$ is the Clifford-equivariant identification of the module with its dual, and the **Dirac adjoint** $s,t\mapsto\operatorname{Sc}(s^{\dagger}v\,t)$ is the pairing obtained by inserting a fixed vector $v$ before the form, whose scalar part $\bar\psi\psi$ is invariant. The differential-geometric operator $D$ of a spin manifold is the curved-space member of the same family, with the module form the fibrewise spinor inner product and the identification with the dual the metric on $\mathcal{S}$.
 
 **Proof.** The algebraic statements are those of *Dirac Operators with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*; the passage to the manifold is the passage from a module to a bundle of modules, and the module form becomes the fibrewise Hermitian metric integrated against the volume form.
 
@@ -174,7 +174,7 @@ The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of 
 | $D_{E}=\sum_ic(e_i)\nabla^{\mathcal{S}\otimes E}_{e_i}$, $D_{E}^{*}=D_{E}$ | Twisted operator, self-adjoint |
 | $D_{E}^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E}$, $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{E})$ | Twisted Weitzenböck/Lichnerowicz formula |
 | $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$; $0=\|\nabla\psi\|^{2}+\tfrac14\int\operatorname{scal}|\psi|^{2}$ | Lichnerowicz formula and Bochner identity |
-| $s\mapsto(s,\cdot)$; $s,t\mapsto\operatorname{Sc}(s^{\dagger}\gamma t)$ | Spinor adjoint; Dirac adjoint |
+| $s\mapsto(s,\cdot)$; $s,t\mapsto\operatorname{Sc}(s^{\dagger}v\,t)$ | Spinor adjoint; Dirac adjoint |
 
 ## Further Reading
 
@@ -184,3 +184,19 @@ The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of 
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators* (Springer, 1992), for the self-adjointness, the heat kernel and the local index theorem.
 - André Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963), 7–9, for the formula $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ and the vanishing of the harmonic spinors.
 - John Roe, *Elliptic Operators, Topology and Asymptotic Methods*, Pitman Research Notes in Mathematics 179 (Longman, 1988), for the differential-geometric adjoints, the domains and the elliptic theory.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

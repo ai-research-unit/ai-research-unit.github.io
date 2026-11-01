@@ -373,10 +373,19 @@ Five subsections, in this order.
 1. **The codimension of the image**, into `m4c-e-basis-representation`, after the assignment. One paragraph, plus the sentence the six now omit: the image has complex dimension four inside the sixteen of $M_4(\mathbb{C})$, and a general $4\times4$ matrix is not an element. This is the single most misleading omission: the readers of the operators articles meet all of $M_4(\mathbb{C})$ and are never told which part of it is the algebra.
 2. **The doubling rule**, into the same article, in the determinant section: a short table of what doubles (the trace, the rank, the spectrum), what squares (the determinant), and what does not (the minimal polynomial's degree, the number of Jordan blocks). Two sentences per row.
 3. **The adjugate of the regular matrix**, into the determinant section. One paragraph, with the warning that it is cubic and that $\operatorname{adj}^2=N^4\cdot\mathrm{id}$, so the entry formula does not carry over. A reader who guesses will be wrong.
-4. **The four norms with the factor of two**, into the same section. One paragraph each: plain $2(Q_t^2-B^2)$, quaternionic $N^4$, Hermitian $\operatorname{Tr}(M^{\dagger}M)$, Krein $\tfrac12\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$.
+4. **The four norms with the factor of four**, into the same article. One paragraph each, with the quarter-trace as the common normalisation: plain $\tfrac14\operatorname{Tr}(M^2)=Q_t^2-B^2$, quaternionic $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)=N$, Hermitian $\tfrac14\operatorname{Tr}(M^{\dagger}M)=H$, Krein $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})=K$, and the determinant $\det M=N^2$ as the square of the second.
 5. **The commutant dimension and the minimal polynomial**, into the Peirce operators article, where $L$ and $R$ are already the mutual commutants. One paragraph: the commutant of $\mathrm I_2\otimes A$ is $M_2\otimes\mathbb{C}[A]$, of dimension eight, and the minimal polynomial stays quadratic.
 
 **Cost.** Five subsections across two articles. **Risk.** Low; every statement is in a live article, and item 1 is a one-line dimension count.
+
+**Done.** The five items are written, in this order.
+
+- Item 1: `m4c-e-basis-representation`, §*The Left and Right Matrices*, subsection *The Image Is Not Everything*.
+- Item 2 and item 3: the same article, §*The Determinant*, paragraphs *The doubling rule* (with the table) and *The adjugate*.
+- Item 4: the same article, new section *The Four Norms*.
+- Item 5: `m4c-standard-peirce-representation-operators`, §*The One-Sided Operators*, paragraph *The commutant of one element*.
+
+Two corrections to the wording above, made while checking. The four matrix formulas are quarter-traces, not a mixture: $\tfrac14\operatorname{Tr}(M^2)=P$, $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)=N$, $\tfrac14\operatorname{Tr}(M^{\dagger}M)=H$, $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})=K$, so the shorthand *$2(Q_t^2-B^2)$* and *$N^4$* is wrong, and the determinant is $N^2$, the square of the quaternionic norm. The transpose rows hold because $M^{\mathsf T}=M^{\natural}$ in the e-basis, and in another frame $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is none of the four norms; the article says so.
 
 ### 3. Two Articles Worth Writing
 

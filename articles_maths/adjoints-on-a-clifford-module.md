@@ -22,7 +22,7 @@ $\rho(x)^{*}=\rho(x^{*})$, the resulting $\ast$-structure, the reversal of the f
 elementary algebraic reason the Dirac operator is formally self-adjoint — is Part II's, in *The
 Adjoint of the One-Sided Action with Hermitian Adjoint*; the bilinear operators built from two
 spinors and the Fierz identity are *Bilinear Operators on a Hermitian Module with Hermitian
-Adjoint*; the spinor adjoint $\bar\psi=\psi^{*}\gamma_0$ and the invariant $\bar\psi\psi$ are
+Adjoint*; the spinor adjoint $\bar\psi=\psi^{*}v_0$, with $v_0$ the time-like vector, and the invariant $\bar\psi\psi$ are
 *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*; and the finite-dimensional Dirac
 element with its Hermitian adjoint is *Dirac Operators with Hermitian Adjoint*. Those results are
 cited. What this article adds is the distinction between the two adjoints on a Clifford module and
@@ -333,3 +333,19 @@ Hermitian Dirac Operator* and *The Hermitian Cauchy Kernel as an Adjoint*.
 - R. Delanghe, F. Sommen and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, 1992), for the module pairings, the intertwiner adjoints and the spinor dual.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford module, its Hermitian forms and the self-adjointness of Dirac-type operators.
 - John E. Gilbert and Margaret A. M. Murray, *Clifford Algebras and Dirac Operators in Harmonic Analysis* (Cambridge University Press, 1991), for the operator adjoints and the $L^2$ theory of the Clifford analysis.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -337,6 +337,16 @@ Five subsections, in this order, because each is a prerequisite of the articles 
 
 **Cost.** Five subsections across two articles. **Risk.** Low: every statement is in a live article already, so the work is transcription and cross-linking, not proof.
 
+**Done.** The five items are written, in this order.
+
+- Item 1: `m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant`, new section *The Spectral Projectors*, with the subsections *The Two Projectors of an Element* and *The Diagonalising Matrix*.
+- Item 2: the same article, new section *The Adjugate and the Inverse*.
+- Item 3: the same article, new section *The Four Norms*.
+- Item 4: the same article, §*The Determinant*, paragraph *Cayley–Hamilton*.
+- Item 5: `m2c-standard-peirce-representation-operators`, §*The Pair as a Semigroup*, subsection *The System of Matrix Units*.
+
+Checked while writing: the adjugate is the image of $\natural$ and the transpose is the image of $\varrho$, so the entry formula is the adjugate and not the transpose; $\operatorname{adj}(\operatorname{adj}A)=A$; $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ with $\det\mathsf C_Q=2B(B-Q_z)$; $\tfrac12\operatorname{Tr}(A^2)=P$, $\det A=N$, $\tfrac12\operatorname{Tr}(A^{\dagger}A)=H$, $\tfrac12\operatorname{Tr}(\operatorname{adj}(A)A^{\dagger})=K$.
+
 ### 3. Two Articles Worth Writing
 
 **A. The Two Displays : $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$ Side by Side.**

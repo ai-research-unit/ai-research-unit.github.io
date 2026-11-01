@@ -78,7 +78,7 @@ $$
 The four-velocity satisfies the **normalization condition**
 
 $$
-\tilde{V}\tilde{V}^{\natural} = \gamma_2\left(-c^2 + \vec v^2\right) = -c^2,
+\tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2,
 $$
 
 which is the biquaternion form of the standard relativistic normalization $v_\mu v_\mu = -c^2$. The normalization is the statement that the four-velocity has a **fixed negative norm** determined by the speed of light. It is a **constraint**, not an identity: not every biquaternion satisfies it, only the four-velocities of physical particles.

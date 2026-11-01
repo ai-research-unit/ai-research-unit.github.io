@@ -263,7 +263,7 @@ the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, an
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 
-**A four-velocity.** For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V\rangle_{\natural}=-\gamma_2c^2+\gamma_2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.
+**A four-velocity.** For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V\rangle_{\natural}=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.
 
 ## Limits
 

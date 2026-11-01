@@ -510,6 +510,198 @@ and the same for $R^{P}$.
 
 **The square.** The determinant of the $2\times2$ matrix is the norm; the determinant of the $4\times4$ matrix is the square of the norm. The trace of the $2\times2$ matrix is half the trace of the $4\times4$ matrix. These two factors are the quantitative content of the compression.
 
+**Cayley–Hamilton.** The matrix satisfies its characteristic polynomial:
+$$
+A^2-(\operatorname{Tr}A)A+(\det A)\mathrm I_2
+=A^2-2Q_tA+\langle\tilde Q\rangle_{\natural}\mathrm I_2=0 .
+$$
+The identity is the matrix form of $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0$ in the coefficient basis. Its consequence is the one used elsewhere: for a non-scalar element,
+$$
+\mathbb{C}[A]=\operatorname{span}\{\mathrm I_2,A\},
+$$
+of complex dimension two, so every polynomial in $A$ of degree at least two is a linear combination of $\mathrm I_2$ and $A$. The minimal polynomial is $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ for a non-scalar element and $t-Q_t$ for a scalar. Its degree stays two in the first case even when the two eigenvalues coincide, which is why the centraliser of a spectrally regular element is two-dimensional, as in *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*.
+
+## The Spectral Projectors
+
+**The element's own root.** The root of §*The Root and the Two Idempotents* is fixed, $\vec\Xi=i\vec e_z$, and the standard frame is adapted to it. A general element carries its own root, in the direction of its vector part, and its own pair of idempotents. The construction is the one already given, with the axis replaced by the element.
+
+### The Two Projectors of an Element
+
+**The root.** Let $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$ and let $B$ be a square root. Then
+$$
+\vec\Xi=-\frac{i}{B}\vec Q,\qquad
+\vec\Xi^2=\frac{i^2}{B^2}\vec Q^2=\frac{(-1)(-B^2e_t)}{B^2}=e_t ,
+$$
+using $\vec Q^2=-B^2e_t$. The two spectral projectors are
+$$
+\rho_\pm=\tfrac12\bigl(\mathrm I_2\pm\mathsf M_2(\vec\Xi)\bigr),
+$$
+and with
+$$
+\mathsf M_2(\vec\Xi)=\frac1B\begin{pmatrix}-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&Q_z\end{pmatrix}
+$$
+they are
+$$
+\rho_+=\frac{1}{2B}\begin{pmatrix}B-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&B+Q_z\end{pmatrix},\qquad
+\rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}.
+$$
+
+The choice of square root $B$ exchanges the two labels, since $\vec\Xi$ changes sign with $B$.
+
+**Proposition.** The two matrices are idempotents of rank one and trace one, they are complementary, they annihilate one another, and they commute with $A$:
+$$
+\rho_+^2=\rho_+,\quad
+\rho_-^2=\rho_-,\quad
+\rho_+\rho_-=\rho_-\rho_+=0,\quad
+\rho_++\rho_-=\mathrm I_2,\quad
+\operatorname{Tr}\rho_\pm=1,\quad
+\det\rho_\pm=0,\quad
+A\rho_\pm=\rho_\pm A .
+$$
+
+*Proof.* The element $\vec\Xi$ squares to the unit, so $\tfrac12(e_t\pm\vec\Xi)$ are idempotent, complementary and orthogonal; applying the isomorphism $\mathsf M_2$ gives the first four identities. The trace of $\rho_\pm$ is $\tfrac12(2\pm0)=1$, and an idempotent of trace one has rank one, hence determinant zero. For the commutation, use
+$$
+A=Q_t\mathrm I_2+\mathsf M_2(\vec Q)=Q_t\mathrm I_2+iB\,\mathsf M_2(\vec\Xi),
+$$
+which exhibits $A$ as a polynomial in $\mathsf M_2(\vec\Xi)$.
+
+**The spectral decomposition.** From the same identity,
+$$
+A-\lambda_-\mathrm I_2=2iB\rho_+,\qquad
+A-\lambda_+\mathrm I_2=-2iB\rho_-,
+$$
+so the projectors are the Lagrange interpolating matrices of the two eigenvalues,
+$$
+\rho_+=\frac{A-\lambda_-\mathrm I_2}{\lambda_+-\lambda_-},\qquad
+\rho_-=\frac{A-\lambda_+\mathrm I_2}{\lambda_--\lambda_+},
+$$
+and
+$$
+A=\lambda_+\rho_++\lambda_-\rho_-,\qquad
+\lambda_\pm=Q_t\pm iB .
+$$
+The trace and the determinant of §*The Trace* and §*The Determinant* are the symmetric functions of the pair: $\operatorname{Tr}A=\lambda_++\lambda_-=2Q_t$ and $\det A=\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$. The two sections are therefore the spectral theorem of this article, read without naming the projectors.
+
+**The standard pair is one case.** On the axis $\vec Q=-B\vec e_z$, that is $Q_x=Q_y=0$ and $Q_z=-B$, the root is $\vec\Xi=i\vec e_z$ and the two projectors are $E_{11}$ and $E_{22}$. The standard pair is the spectral pair of the element $Q_te_t-B\vec e_z$; for $Q_z=+B$ the two labels are exchanged. The fixed root of the Peirce frame is one point of the family, not a separate construction.
+
+**When they are Hermitian.** The projectors satisfy $\rho_\pm^{\dagger}=\rho_\pm$ exactly when $\mathsf M_2(\vec\Xi)$ is Hermitian. This holds on the Hermitian strata: if $\tilde Q^{*}=\tilde Q$ then $A=A^{\dagger}$ and $B^2=-\lvert\vec q'\rvert^2$, so $iB$ is real and $\mathsf M_2(\vec\Xi)=(A-Q_t\mathrm I_2)/(iB)$ is Hermitian. There the two projectors are the orthogonal projectors of the Hermitian matrix. For a general complex element they are not, and $\rho_\pm^{\dagger}$ is the projector of the conjugate direction: the spectral projectors of a complex element are not orthogonal projectors.
+
+**The degenerate case.** When $B^2=0$ the two eigenvalues coincide and the formula has no limit. The element is then either scalar, with minimal polynomial $t-Q_t$, or non-scalar with a single eigenvalue and a nontrivial Jordan block, and the two projectors do not exist. The rest of this section is about the regular case $B^2\neq0$.
+
+### The Diagonalising Matrix
+
+**The eigenbasis.** The two projectors give two eigenvectors: every nonzero column of $\rho_+$ is an eigenvector for $\lambda_+$, and every nonzero column of $\rho_-$ for $\lambda_-$. The diagonalising matrix collects one column of each,
+$$
+\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
+$$
+the first column of $2B\rho_+$ and the second column of $2B\rho_-$.
+
+**The determinant.** Expanding,
+$$
+\det\mathsf C_Q=(B-Q_z)^2+Q_x^2+Q_y^2=2B(B-Q_z).
+$$
+It vanishes exactly when $B=Q_z$, that is on the axis of the frame, where the two chosen columns both vanish and this chart degenerates.
+
+**Theorem (diagonalisation).**
+$$
+\mathsf C_Q^{-1}A\,\mathsf C_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+\qquad
+\mathsf C_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
+$$
+whenever $B\neq Q_z$.
+
+*Proof.* The two columns are eigenvectors for distinct eigenvalues, so the matrix of eigenvectors diagonalises $A$, and the diagonal entries are the eigenvalues. The inverse is the adjugate over the determinant, computed in §*The Adjugate and the Inverse*.
+
+**The second chart.** When $B=Q_z$ the first chart is singular. The second chart is
+$$
+\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
+\qquad
+\det\mathsf C_Q'=-2B(B+Q_z),
+$$
+with the same diagonalisation whenever $B\neq-Q_z$. The two determinants cannot both vanish: $B\neq0$, and $B=Q_z$ with $B=-Q_z$ would give $B=0$.
+
+**The freedom.** The changes that keep the diagonalisation are
+$$
+\mathsf C_Q\mapsto\lambda\,\mathsf C_Q D,\qquad \lambda\neq0,\qquad D\text{ invertible and diagonal},
+$$
+because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf C_Q^{-1}A\mathsf C_Q$, so the freedom is the two parameters of $D$.
+
+**Not the frame change of this article.** The matrix $\mathsf C_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
+
+## The Adjugate and the Inverse
+
+**The adjugate.** For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ the classical adjugate is
+$$
+\operatorname{adj}A=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}=(\operatorname{Tr}A)\mathrm I_2-A .
+$$
+For the image of an element,
+$$
+\operatorname{adj}\mathsf M_2(\tilde Q)=(\operatorname{Tr}A)\mathrm I_2-A
+=Q_t\mathrm I_2-\mathsf M_2(\vec Q)=\mathsf M_2(\tilde Q^{\natural}),
+$$
+so the adjugate is the matrix of the quaternion conjugation $\natural$. It is not the transpose: the transpose of $A$ is the image of $\varrho$, the reflection that fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$.
+
+**The identities.**
+$$
+A\operatorname{adj}A=\operatorname{adj}A\,A=(\det A)\mathrm I_2
+$$
+is the matrix form of $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. The adjugate is linear, it is an anti-automorphism of the product,
+$$
+\operatorname{adj}(A_1A_2)=\operatorname{adj}A_2\operatorname{adj}A_1,
+$$
+and it preserves the determinant at this size, $\det(\operatorname{adj}A)=\det A$.
+
+**It is an involution here.** Since $\natural$ is an involution and $\mathsf M_2$ is injective,
+$$
+\operatorname{adj}(\operatorname{adj}A)=A .
+$$
+This is a property of the entry size. At the regular size the adjugate has degree three and the iteration is $\operatorname{adj}(\operatorname{adj}M)=\langle\tilde Q\rangle_{\natural}^4M$, as in the doubling rule of *$M_4(\mathbb{C})$ e-basis Representation*, §*The Determinant*.
+
+**The inverse.** For $\langle\tilde Q\rangle_{\natural}\neq0$,
+$$
+A^{-1}=\frac{\operatorname{adj}A}{\det A}=\frac{\mathsf M_2(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}},
+$$
+which is the inverse of an element, in contrast with the pair inverse of *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*, §*The Inverse*. On the null cone the determinant vanishes, the adjugate is nonzero whenever $A\neq0$, and the inverse does not exist.
+
+## The Four Norms
+
+**Four quadratic invariants.** The determinant of §*The Determinant* is one of four quadratic invariants of the element. Each is a trace of a word in $A$, its adjugate and its dagger.
+
+| Norm | Algebra value | Matrix formula | Value ring | Definite |
+|---|---|---|---|---|
+| Plain $P$ | $Q_t^2-B^2$ | $\tfrac12\operatorname{Tr}(A^2)$ | $\mathbb{C}$ | no |
+| Quaternionic $N$ | $Q_t^2+B^2$ | $\det A$ | $\mathbb{C}$ | no |
+| Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac12\operatorname{Tr}(A^{\dagger}A)$ | $\mathbb{R}$ | yes |
+| Krein $K$ | $\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$ | $\tfrac12\operatorname{Tr}(\operatorname{adj}(A)A^{\dagger})$ | $\mathbb{R}$ | no |
+
+**The plain norm.** Since $A=Q_t\mathrm I_2+\mathsf M_2(\vec Q)$ with a traceless second term,
+$$
+A^2=Q_t^2\mathrm I_2+2Q_t\mathsf M_2(\vec Q)+\mathsf M_2(\vec Q)^2,
+\qquad
+\operatorname{Tr}\bigl(\mathsf M_2(\vec Q)^2\bigr)=-2B^2,
+$$
+so $\tfrac12\operatorname{Tr}(A^2)=Q_t^2-B^2=P$. The word is the square of the matrix, closed by a trace; it is the bilinear form of §*The Trace* read on one element.
+
+**The quaternionic norm.** The determinant is $N=Q_t^2+B^2$, and it is the only one of the four that is multiplicative. On the trace pairing of §*The Trace* it is the quadratic form of the plain pairing with the sign of the vector part reversed.
+
+**The Hermitian norm.** Since $\operatorname{Tr}(A^{\dagger}A)=\sum_{ij}\lvert A_{ij}\rvert^2$,
+$$
+\tfrac12\operatorname{Tr}(A^{\dagger}A)
+=\tfrac12\Bigl(\lvert Q_t-iQ_z\rvert^2+\lvert -iQ_x-Q_y\rvert^2
++\lvert -iQ_x+Q_y\rvert^2+\lvert Q_t+iQ_z\rvert^2\Bigr)
+=\sum_\mu\lvert Q_\mu\rvert^2=H .
+$$
+It is half the square of the Hilbert–Schmidt norm of $A$, and it is the only one of the four that is positive definite on the complex algebra.
+
+**The Krein norm.** Since $\operatorname{adj}A=Q_t\mathrm I_2-\mathsf M_2(\vec Q)$ and $A^{\dagger}=\overline{Q_t}\mathrm I_2-\mathsf M_2(\overline{\vec Q})$, the two traceless parts contribute only through their product, whose trace is $-2\sum_k\lvert Q_k\rvert^2$, and
+$$
+\tfrac12\operatorname{Tr}(\operatorname{adj}(A)A^{\dagger})
+=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2=K .
+$$
+It is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.
+
+**Two pairings, not one.** The trace pairing of §*The Trace* is $\tfrac12\operatorname{Tr}(A_PA_Q)$, the plain word; the Hermitian product is $\tfrac12\operatorname{Tr}(A_P^{\dagger}A_Q)$. The first is complex bilinear and indefinite, the second is a Hilbert–Schmidt product and positive definite, and the four norms are the four ways of reading one element against the two.
+
 ## The Six Subspaces
 
 **The table.** The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. In the $2\times2$ model each condition is a condition on $A$ alone. Put
@@ -604,7 +796,7 @@ The $2\times2$ Standard Peirce representation is the compression of the $4\times
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
-The compression keeps the product, the trace, the determinant and the six subspaces. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
+The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
 
 ## Summary of Notation
 
@@ -630,6 +822,10 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
+| $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$ | the spectral projectors of the element, $\vec\Xi=-i\vec Q/B$ |
+| $\mathsf C_Q$ | the diagonalising matrix, $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
+| $\operatorname{adj}A=(\operatorname{Tr}A)\mathrm I_2-A$ | the adjugate, the image of $\tilde Q^{\natural}$ |
+| $P,N,H,K$ | the four norms: plain, quaternionic, Hermitian, Krein |
 | $E_{ij}$ | the matrix units |
 
 ## Further Reading
@@ -640,6 +836,8 @@ The compression keeps the product, the trace, the determinant and the six subspa
 - [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model, the algebra isomorphism and the Pauli form.
 - [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate isomorphism, the left action on the two planes and the star.
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants in the coefficient model.
+- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the nilpotents, the residues and the standard axis.
+- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the second chart, the freedom of the change and the normal case.
 - [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the row-by-row derivations of the table.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the coefficient form of the element and the four conjugations.

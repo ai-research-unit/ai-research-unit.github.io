@@ -331,6 +331,43 @@ T_{A,A^{-1}}(Y)=\begin{pmatrix}2&0\\0&1\end{pmatrix}Y\begin{pmatrix}\tfrac12&0\\
 $$
 which fixes the diagonal entries, doubles $y_{12}$ and halves $y_{21}$. The pair is $(A,A^{-1})$, and the scaling orbit $(\lambda A,\lambda^{-1}A^{-1})$ is the same automorphism.
 
+### The System of Matrix Units
+
+**The data.** A system of matrix units in the Peirce frame is a family $E'_{ij}$ with
+$$
+E'_{ij}E'_{kl}=\delta_{jk}E'_{il},\qquad
+E'_{11}+E'_{22}=\mathrm I_2,\qquad
+E'_{11}\neq0 .
+$$
+The relations force the two diagonal elements to be complementary idempotents and the two off-diagonal elements to be square-zero.
+
+**The reciprocal scaling.** Fix the two idempotents, $E'_{11}=E_{11}$ and $E'_{22}=E_{22}$. Each off-diagonal element then lies in one of the two mixed lines, so $E'_{12}=\mu E_{12}$ and $E'_{21}=\nu E_{21}$, and the product $E'_{12}E'_{21}=\mu\nu E_{11}$ forces $\mu\nu=1$. Hence
+$$
+E'_{12}=\mu E_{12},\qquad
+E'_{21}=\mu^{-1}E_{21},\qquad
+\mu\in\mathbb{C}^{\times},
+$$
+and the scaling is reciprocal: one mixed element grows while the other shrinks, and every product of the system is unchanged.
+
+**It is a conjugation.** The scaling is not an extra freedom of the data; it is conjugation by a diagonal matrix:
+$$
+D_\mu=\operatorname{diag}(\mu,1),\qquad
+D_\mu E_{12}D_\mu^{-1}=\mu E_{12},\qquad
+D_\mu E_{21}D_\mu^{-1}=\mu^{-1}E_{21},\qquad
+D_\mu E_{11}D_\mu^{-1}=E_{11}.
+$$
+The systems with the two idempotents fixed are therefore one orbit of the diagonal torus, of complex dimension one.
+
+**The theorem.** Every system of matrix units is the image of the standard one under an inner automorphism: there is an invertible $G$ with $E'_{ij}=GE_{ij}G^{-1}$ for all $i,j$. A system is the standard system read in another basis: $E'_{11}$ is the projector onto a line along a complementary line, a basis of the two lines conjugates $E_{11}$ to $E'_{11}$, and the two mixed elements are then fixed up to the reciprocal scaling just computed. The operator $T_{G,G^{-1}}$ is the automorphism, and every automorphism of $M_2(\mathbb{C})$ is of that form by §*The Automorphisms*, so the frame carries no modulus beyond the conjugation.
+
+**The consequence for a pair.** A change of frame is a conjugation of the carrier, and it acts on a pair by conjugating the two slots:
+$$
+T_{GAG^{-1},GBG^{-1}}\bigl(GYG^{-1}\bigr)=G\,T_{A,B}(Y)\,G^{-1}.
+$$
+The operator therefore has the same trace, the same determinant and the same rank in every system of matrix units, and only its matrix changes, by similarity. This is the reason the formulas of §*The Rank and the Invariants* may be stated in one frame.
+
+**Two reciprocal scalings, not one.** The pair in §*The Scaling* and the system here carry the same $\mathbb{C}^{\times}$ in two different roles. On the pair, $(\lambda A,\lambda^{-1}B)$ leaves the operator unchanged: a symmetry of the data. On the frame, $\mu$ leaves the system of products unchanged: a change of basis. Neither is a symmetry of the other, and the formulas are invariant under both.
+
 ## The General Endomorphism
 
 ### Four Pairs
@@ -379,7 +416,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 - The exact rank formula $\operatorname{rank}T_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B$.
 - The composition $(A,B)(C,D)=(AC,DB)$, the inverse, and the automorphism criterion $B=A^{-1}$.
 - The Kronecker display $B^{\mathsf T}\otimes A$ and the coefficient matrix $[Q][P]^{\mathsf T}$.
-- The seven effective parameters and the scaling orbit.
+- The seven effective parameters and the scaling orbit, and the reciprocal scaling of a system of matrix units.
 
 **It does not give.**
 

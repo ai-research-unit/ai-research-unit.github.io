@@ -42,7 +42,7 @@ The companion articles supply the pieces:
 
 The four-velocity is a unit timelike element: $\langle\tilde{V}\rangle_{\natural} = -c^2$, identically in $\vec v$, so as the three components of $\vec v$ range over the open ball $|\vec v|<c$ the tip of $\tilde{V}$ runs over a three-dimensional quadric in the real four-space $\mathbb{M}_-$. Written in the real coordinates $(\gamma c, \gamma\vec v)$ the quadric is
 $$
-(\gamma c)^2-\gamma_2\vec v^2 = c^2\gamma_2\Bigl(1-\frac{\vec v^2}{c^2}\Bigr) = c^2 ,
+(\gamma c)^2-\gamma^2\vec v^2 = c^2\gamma^2\Bigl(1-\frac{\vec v^2}{c^2}\Bigr) = c^2 ,
 $$
 that is
 $$
