@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Alternatives of Writing: Side, Order, and the Notation of Two-Sided Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-alternatives-of-writing-side-order-and-the-notation-of-two-sided-operators"><strong>The Alternatives of Writing: Side, Order, and the Notation of Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion corpus writes operators that act on the left, operators that act on the right, and operators that act on both sides at once. The last kind is the new one. Nobody is trained to read it, and the ordinary physics habit — an operator stands to the left of what it acts on — stops working the moment the operator is two-sided.</p>
+<p>The question this note answers is narrow and practical. When an operator acts on the right, what does one write? Several answers are in use elsewhere in mathematics and in physics. The corpus has made two choices without stating either: it names the side in ninety-one articles, and it marks the side with an arrow in three. The note lists the options, shows each of them applied to twelve equations that matter to the corpus, measures what each option costs, and states the rule the corpus is in fact following.</p>
+<p>Nothing here is a new result. It is an inventory, a set of tables, and a recommendation. The recommendation is that the choice is already made, that it is the right one, and that it should be stated once in the operator conventions so that no article has to rediscover it.</p>
+<h2 id="the-four-levels">The Four Levels</h2>
+<p>Most confusion about this subject comes from treating four different questions as one. They are separate, and they are answered by different objects.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The level</th>
+<th>The question</th>
+<th>The corpus's answer</th>
+<th>Fixed or free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naming</td>
+<td>What is the operator called?</td>
+<td>$L_a$, $R_b$, $T_{a,b}$, $M$, $\mathsf C_\mu$</td>
+<td>Fixed by the conventions article</td>
+</tr>
+<tr>
+<td>Display</td>
+<td>How is the side marked on the page?</td>
+<td>The arrow, and nothing else</td>
+<td>Free, but should be uniform</td>
+</tr>
+<tr>
+<td>Rewrite</td>
+<td>May the operator be replaced by another?</td>
+<td>$\operatorname{nat}$, and only on a whole operator</td>
+<td>Fixed by a theorem</td>
+</tr>
+<tr>
+<td>Components</td>
+<td>Are indices written?</td>
+<td>No</td>
+<td>Fixed by the conventions</td>
+</tr>
+</tbody>
+</table></div>
+<p>The naming level is settled and needs no discussion. The two-sided operator is $T_{a,b}$, the left multiplication is $L_a$, the right multiplication is $R_b$, and <em>Operator and Calculus Conventions</em> fixes all three. A reader who writes $a\psi b$ has written a product, not an operator, and the operator that performs it already has a name.</p>
+<p>The components level is settled too. The corpus bans indices as a carrier of the calculus: a contraction is a form and never an index. So the option of writing $\psi_i b_{ij}$ is available in principle and unavailable here.</p>
+<p>What remains open is the display level, and one question at the rewrite level: whether the right action should be replaced by the left action through an anti-automorphism. The two are often confused, and the next section separates them.</p>
+<h2 id="the-six-display-options">The Six Display Options</h2>
+<p>There are six ways to write a right action, and only one of them is used by the corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name</th>
+<th>The form</th>
+<th>Where it is standard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>Bare juxtaposition</td>
+<td>$\tilde\Psi\tilde\nabla$</td>
+<td>Nowhere; it is the ambiguous case</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>Arrow</td>
+<td>$\tilde\Psi\overleftarrow{\tilde\nabla}$</td>
+<td>Quantum field theory, anomalies, chiral perturbation theory</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>Dot scope</td>
+<td>$\vec A\,\dot{\vec\nabla}$</td>
+<td>Geometric algebra, calculus of variations</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>Opposite-algebra name</td>
+<td>$\tilde\Psi\,\tilde\nabla^{\mathrm{op}}$</td>
+<td>Ring theory, module theory</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>Bimodule subscripts</td>
+<td>${}_{\tilde\nabla}\tilde\Psi$</td>
+<td>Module theory, in running text only</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>Row-vector flip</td>
+<td>every field written as a row</td>
+<td>Elementary matrix algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>N0 is not an option.</strong> If the operator is written after the field with no mark, the reader cannot tell whether it acts or whether it is a coefficient, and the physics prior is the opposite of what the corpus means. The corpus never does it: no article writes a right-acting gradient without a mark.</p>
+<p><strong>N1 is the corpus's choice.</strong> The arrow states the side and nothing else. It is the only one of the six that is already standard in physics for exactly this purpose, and it is the only one that reads as a mark rather than as a name. Its limit is that it exists only for differential operators. Nobody writes $\psi\overleftarrow{b}$.</p>
+<p><strong>N2 is exact but barred.</strong> The dot says which factor carries the derivative, so it survives products of three or more factors, where the arrow cannot say which one is meant. But the corpus has removed the glyph: <em>Operator and Calculus Conventions</em> states that no derivative is written with a dot, and a scan of the four hundred and four articles finds no derivative dot at all, every instance of the dot token in the corpus being the ellipsis of $\dots$. Reintroducing it for scope would collide with a rule the corpus has already paid for.</p>
+<p><strong>N3 is exact and legal.</strong> $\tilde\nabla^{\mathrm{op}}$ names the right-acting gradient and needs no glyph. The cost is that the side is fused into the name: a reader who does not know the convention reads $\tilde\nabla^{\mathrm{op}}$ as a different operator rather than as the same operator acting from the other side. It is the natural choice for a reader coming from algebra and the unnatural one for a reader coming from physics.</p>
+<p><strong>N4 is exact and unreadable.</strong> Subscripts state the module structure precisely and are unusable at display size. They are the right notation for a proof and the wrong notation for an equation.</p>
+<p><strong>N5 is a global decision, not a local one.</strong> Writing every field as a row makes the right action the default. The cost is not local: every matrix transposes, every dagger moves, and every equation already printed in the corpus has to be reread. It is not adoptable for one equation.</p>
+<h2 id="naming-the-map">Naming the Map</h2>
+<p>The corpus marks the value and almost never names the map. A scan of the four hundred and four articles returns five thousand five hundred and six occurrences of the glyph, in three hundred and fourteen of them. Five thousand four hundred and ninety-seven are a superscript on an element, $X^{\natural}$, or a subscript label, $\langle\cdot,\cdot\rangle_{\natural}$, $\bullet_{\natural}$. The other nine are the bare glyph, used as the name of the map, and one of those is the identity $\bar{\cdot}=\natural{}^{*}$, which is a statement about operators and needs the bare form.</p>
+<p>So the corpus does write the map, in nine places, with the same glyph it uses for the value in five thousand four hundred and ninety-seven. That is the collision, and it already exists. A note that needs the map, as this one does, has to choose a form, and the choice is cheap if it is made once and made well.</p>
+<p>This note uses $\operatorname{nat}$, defined by $\operatorname{nat}(X)=X^{\natural}$. The candidates it rejected are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Writing</th>
+<th>In the corpus</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The bare glyph</td>
+<td>$\natural\,L_a\,\natural$</td>
+<td>Five thousand four hundred and ninety-seven as a mark, nine as the map</td>
+<td>Collides with the value form</td>
+</tr>
+<tr>
+<td>Placeholder on the mark</td>
+<td>$(\cdot)^{\natural}\circ L_a\circ(\cdot)^{\natural}$</td>
+<td>None</td>
+<td>Correct, and a definition rather than a running form</td>
+</tr>
+<tr>
+<td>Upright word</td>
+<td>$\operatorname{nat}$</td>
+<td>None</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>The sharp</td>
+<td>$\sharp\,L_a\,\sharp$</td>
+<td>None</td>
+<td>Free, and too close to the glyph it must not be confused with</td>
+</tr>
+<tr>
+<td>A capital letter</td>
+<td>$C$, $K$, $N$</td>
+<td>Two thousand five hundred to eight thousand two hundred each</td>
+<td>All taken</td>
+</tr>
+</tbody>
+</table></div>
+<p>The corpus already owns the device that settles it. For the one map it does name as an operator it writes the mark on a placeholder, $\bar{\cdot}$, and the same construction on the natural mark gives $(\cdot)^{\natural}$. That is the honest definition, and $\operatorname{nat}$ is its abbreviation.</p>
+<p>The collision is not hypothetical, and care alone does not remove it. The chiral-pair equation used below writes $\tilde\nabla^{\natural}$ for the mark on a value, and the corpus elsewhere writes the same glyph bare for the map. A document that quoted both would carry one sign with two meanings. The fault is the corpus's: of its three conjugations, one has a placeholder form, $\bar{\cdot}$, and two have only a mark.</p>
+<h2 id="the-three-rewrite-options">The Three Rewrite Options</h2>
+<p>The rewrite level asks a different question: not how to mark the side, but whether the right action can be replaced by a left action. Three routes exist.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Route</th>
+<th>The form</th>
+<th>The cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Anti-automorphism</td>
+<td>$R_b=\operatorname{nat}\circ L_{\natural(b)}\circ\operatorname{nat}$</td>
+<td>Two applications of $\operatorname{nat}$, of length four each</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Left action plus commutator</td>
+<td>$R_b=L_b+\mathrm{ad}_b$</td>
+<td>Blind on the central part, which is the mass</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Components</td>
+<td>$\psi_i b_{ij}$</td>
+<td>Barred with the index calculus</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>R1 is exact.</strong> The natural sign is $\mathbb{C}$-linear, of order two, and an anti-automorphism, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$. Write $\operatorname{nat}$ for the map that applies it, $\operatorname{nat}(X)=X^{\natural}$.</p>
+<p>The identity follows in two steps, and the two steps are the two properties, in that order:</p>
+<p>$$
+\psi b=\operatorname{nat}\bigl(\operatorname{nat}(\psi b)\bigr)\quad(\text{order two}),
+\qquad
+\operatorname{nat}(\psi b)=\operatorname{nat}(b)\,\operatorname{nat}(\psi)\quad(\text{anti-automorphism}),
+$$</p>
+<p>so</p>
+<p>$$
+R_b(\psi)=\psi b=\operatorname{nat}\bigl(\operatorname{nat}(b)\,\operatorname{nat}(\psi)\bigr)=\bigl(\operatorname{nat}\circ L_{\natural(b)}\circ\operatorname{nat}\bigr)(\psi),
+$$</p>
+<p>with residual zero on twenty random $b$.</p>
+<p><strong>The order reversal is the content.</strong> The second step is the one that matters: it swaps the two factors, and the swap is what puts $b$ on the right. A display that writes the three maps in a row hides the swap, and a reader who drops the outer $\operatorname{nat}$ gets $\operatorname{nat}(b)\operatorname{nat}(\psi)$, which is $\operatorname{nat}(\psi b)$ and not $\psi b$. Recomputed on random pairs, that error is of size $20.7$, so the nesting is not decoration.</p>
+<p><strong>Since the map is of order two it is its own inverse, and the sandwich is a conjugation</strong>,</p>
+<p>$$
+R_b=\operatorname{nat}^{-1}\circ L_{\natural(b)}\circ\operatorname{nat},
+$$</p>
+<p>the left action by $\natural(b)$, conjugated. That is the shortest true reading of the identity, and it is the reason $\operatorname{nat}$ transports one factor cheaply and costs four cells when it wraps a whole operator.</p>
+<p>It is the only one of the three routes that turns every right action into a left action.</p>
+<p><strong>R2 is exact and cheap.</strong> Write $\mathrm{ad}_b(\psi)=[\psi,b]$. Then $L_b+\mathrm{ad}_b=R_b$ holds by definition, since $b\psi+(\psi b-b\psi)=\psi b$. No new glyph, no anti-automorphism, no length. R2 is what a reader who refuses the arrow would naturally use.</p>
+<p><strong>R2 is blind on the mass.</strong> The admixture $[\psi,b]$ vanishes exactly when $b$ is central, and the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, which is where the mass lives. A Lagrangian does not keep the commutator, it keeps the scalar part of a product, $\mathrm{Sc}(\bar\psi[\psi,b])$, and there the blindness is sharper. With the norm form $\bar\psi=\psi^{\natural}$ the term is zero exactly: $\psi^{\natural}\psi=\psi\psi^{\natural}=N(\psi)e_t$, both factors fixed by the natural sign, so $\psi^{\natural}[\psi,b]=N(\psi)(b-b)$. With a bar that is not the natural sign it is not zero: at $\psi=\vec e_x+i\vec e_y$ and $b=\vec e_z$ the product is $-4i\,e_t$ and the Lagrangian term is $-4i$. So R2 either deletes the term the corpus cares about or silently replaces it by another.</p>
+<p><strong>R3 is barred.</strong> Same reason as N4.</p>
+<h2 id="why-the-arrow-and-the-transposition-do-not-compete">Why the Arrow and the Transposition Do Not Compete</h2>
+<p>The arrow and R1 are usually presented as alternatives. They are not. One is a mark on a page, the other is a theorem about operators.</p>
+<ul>
+<li>The arrow says <strong>which side</strong> a written operator acts on. It changes nothing about the operator.</li>
+<li>R1 says the right action <strong>is</strong> a left action in disguise. It changes the operator and needs the disguise written twice.</li>
+</ul>
+<p>The difference shows up the moment the operator carries a derivative, and it is a difference of length, not of possibility. R1 does reach a derivative. The natural sign acts on the coefficients and commutes with $\partial$, so for a single direction</p>
+<p>$$
+(\partial_\mu\tilde\Psi)\,\vec e_\mu=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_\mu)\,\partial_\mu(\operatorname{nat}\tilde\Psi)\bigr),
+$$</p>
+<p>with residual zero, as the appendix verifies on sample fields. The middle operator is the natural conjugate of the gradient component, and it is not an element of $\mathbb{B}$.</p>
+<p>What R1 cannot do is get shorter. On an element the composite collapses to a cell of length one and nobody writes it; on a derivative it collapses to nothing, so the sandwich costs three symbols and a flipped frame coefficient where the arrow costs one glyph. The arrow wins on length, and only on length.</p>
+<p>A third operation is often confused with both. Integration by parts,</p>
+<p>$$
+\int(\tilde\Psi\overleftarrow{\partial_\mu})\tilde\Phi=-\int\tilde\Psi(\partial_\mu\tilde\Phi)+\text{boundary},
+$$</p>
+<p>moves differentiation between two factors of a bilinear form, and it preserves neither the operator nor the sign. No conjugation replaces it, and no arrow replaces it either.</p>
+<p>This gives the reason the arrow is in the corpus and R1 is not. Algebraic right action is already a cell, $R_b=T_{e_t,b}$, of length one, so there is nothing to gain by rewriting it. Differential right action is not a cell, so the rewriting exists but is longer than the mark. The arrow covers the second case; the cells cover the first; and neither has any work left to do in the other's territory.</p>
+<h2 id="the-transposition-precisely">The Transposition, Precisely</h2>
+<p>Three statements are often run together, and then a fourth question decides what one of them says. The three are the operator identity, its cost and its array form; the fourth is the frame, and it is treated last because it is the one that makes the array form true or false.</p>
+<h3 id="the-operator-level">The Operator Level</h3>
+<p>$R_b=\operatorname{nat}L_{\natural(b)}\operatorname{nat}$ is an identity between operators. It is basis-free, it holds for every $b$, and its residual is zero. Its cost is not the operator but the display: $\operatorname{nat}$ has to be written twice.</p>
+<h3 id="the-cost-of-math81">The Cost of $\operatorname{nat}$</h3>
+<p>$\operatorname{nat}$ is not a cell. It decomposes as</p>
+<p>$$
+\operatorname{nat}=-\tfrac12\bigl(T_{e_t,e_t}+T_{e_x,e_x}+T_{e_y,e_y}+T_{e_z,e_z}\bigr),
+$$</p>
+<p>whose four coefficients are each $-\tfrac12$. Its matrix is not $-\tfrac12 I_4$ but $\operatorname{diag}(1,-1,-1,-1)$, as the appendix computes; the $-\tfrac12 I_4$ is the diagonal block of coefficients in the sixteen-cell basis, which is a different object from the matrix of the map. So $\operatorname{nat}$ has length four, the largest length that occurs. Writing R1 instead of a single arrow replaces one glyph by eight cells.</p>
+<p>By contrast, conjugating a single factor is cheap and stays inside the cell calculus:</p>
+<p>$$
+\operatorname{nat}\,L_a\,\operatorname{nat}=R_{\natural(a)}=T_{e_t,\natural(a)},
+$$</p>
+<p>residual zero, length one. What is expensive is the map, not the transport.</p>
+<h3 id="the-array-level">The Array Level</h3>
+<p>In the matrix model the same map is a conjugated transpose,</p>
+<p>$$
+\mathsf M_2\bigl(\operatorname{nat}(X)\bigr)=\sigma_2\,X^{\mathsf T}\,\sigma_2^{-1},
+$$</p>
+<p>residual zero on fifty random $X$. The plain transpose is a different map: it agrees with $\operatorname{nat}$ on $e_t$ and on $\vec e_y$, and differs by $2$ on $\vec e_x$ and on $\vec e_z$. A reader who transposes without the $\sigma_2$ gets two of the four units wrong.</p>
+<h3 id="the-transposition-is-coordinate-bound">The Transposition Is Coordinate-Bound</h3>
+<p>The conventions article prints the array-level identity with the Peirce exchange,
+$\mathsf M_4^{R}(\tilde Q)=\mathsf S\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$,
+and it is correct: recomputed on the four printed matrices and on fifty random elements, the residual is zero. Two things follow that are worth stating, because both are easy to get wrong, and this note got both wrong at first.</p>
+<p><strong>The two descriptions of $\mathsf S$ agree.</strong> The swap matrix and the reflection $\operatorname{diag}(1,1,-1,1)$ are the same operator written in two bases. Let $P$ have for columns $e_t$, the two mixed Peirce units and $e_z$, expressed in the coefficient basis; then $P^{-1}\operatorname{diag}(1,1,-1,1)P$ is the swap matrix, residual zero. No inconsistency there, and nothing to correct.</p>
+<p><strong>The identity does not survive a change of frame.</strong> Write the same four $L_\nu$ from the multiplication itself, in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and the printed identity fails by $2$. The sandwich that makes it true in that frame is $\operatorname{nat}$, residual zero. One identity, one algebra, two frames, two matrices.</p>
+<p>So the argument for $\operatorname{nat}L_{\natural(b)}\operatorname{nat}$ is not that the printed formula is false. It is that $\operatorname{nat}$ names the object that makes the formula true, while $\mathsf S$ is the matrix of that object in one frame. A reader who carries $\mathsf S$ into another frame writes a false identity; a reader who carries $\operatorname{nat}$ writes a true one. And without any sandwich at all the identity fails in both frames: $R_\nu=L_\nu^{\mathsf T}$ has residual $1$ on $\vec e_x$ and $\vec e_y$ and $2$ on $\vec e_z$ in the corpus frame, and residual $2$ on all three in the coefficient frame. It never holds; on $\vec e_t$ alone both sides are the identity.</p>
+<p>That is the general shape of the display level. A transposition is a statement about a pairing in a basis, so it is true or false only once the basis is named. A named operator is true in every basis, which is why the naming level comes first.</p>
+<h2 id="the-census">The Census</h2>
+<p>The corpus has voted, and the vote is not close.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Articles that use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$, left multiplication</td>
+<td>86</td>
+</tr>
+<tr>
+<td>$R_b$, right multiplication</td>
+<td>84</td>
+</tr>
+<tr>
+<td>$T_{a,b}$ or $T_{Q,P}$, two-sided</td>
+<td>61</td>
+</tr>
+<tr>
+<td>$T_{e_\mu,e_\nu}$, frame cells</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Any of the three</td>
+<td>91</td>
+</tr>
+<tr>
+<td>The arrow, as a side mark</td>
+<td>3</td>
+</tr>
+<tr>
+<td>The arrow, as a decoration on an algebra</td>
+<td>4</td>
+</tr>
+<tr>
+<td>A derivative written with a dot</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The counts are of articles, not of occurrences, and each is a scan for the glyph in the subscript form the conventions fix: a single lowercase element name for $L$ and $R$, the brace form for $T$. The union of the three is ninety-one articles out of four hundred and four.</p>
+<p>The two arrow rows are counted separately because the glyph carries two meanings in the corpus, and only one of them is the subject of this note. Three articles use it as a side mark: the Maxwell article once, the Poisson-bracket article once, the minimal-coupling article twice. Four articles use it on an algebra symbol instead, $\overleftarrow{\mathbb{C}}$ and $\overleftarrow{\mathbb C\otimes\mathbb O}$, in the quoted construction of the complex octonionic chain algebra, where it records a left action and not a body of differentiation.</p>
+<p>Two conclusions follow. The cells are the corpus's ordinary language for operators, and they are used by ninety-one articles, near a quarter of the corpus. The arrow is the corpus's language for the one case the cells cannot express: in the three articles that use it as a side mark it is always on a derivative, never on an algebraic operator. No article writes a right-acting gradient without a mark.</p>
+<h2 id="the-equations">The Equations</h2>
+<p>Twelve equations follow, in the order of the corpus's own priority. Each is quoted as the corpus writes it, then shown under the options that could carry it, then given a verdict. Equations that need no mark are included deliberately: most of the corpus is in that case, and the note would be misleading if it only exhibited the hard ones.</p>
+<h3 id="1-the-chiral-pair-of-the-dirac-equation">1. The Chiral Pair of the Dirac Equation</h3>
+<p><em>The Dirac Equation in Biquaternionic Form</em>, the chiral pair in the opening section:</p>
+<p>$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$\tilde\nabla\tilde\Psi_R$</td>
+<td>Correct here, because the operator is written first</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>—</td>
+<td>Not applicable, the field is not to the left</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>—</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$\tilde\nabla^{\mathrm{op}}\tilde\Psi_R$</td>
+<td>Legal, and it would state a side that is already stated</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>${}_{\tilde\nabla}\tilde\Psi_R$</td>
+<td>Exact, noisy</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>unchanged</td>
+<td>The field is a biquaternion, not a row</td>
+</tr>
+</tbody>
+</table></div>
+<p>No option is needed. This is the ordinary case: a first-order left operator applied to a field, which is what the physics convention was built for, and it is the case the rest of this note does not concern.</p>
+<h3 id="2-the-massless-dirac-equation">2. The Massless Dirac Equation</h3>
+<p>Same article, the massless limit:</p>
+<p>$$
+\tilde\nabla\tilde\Psi=0 .
+$$</p>
+<p>No option changes the display. A homogeneous equation cannot show a side ambiguity, because there is no second object for the operator to act on.</p>
+<h3 id="3-the-right-acting-gradient-with-a-connection">3. The Right-Acting Gradient with a Connection</h3>
+<p><em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, the section on the left and right action:</p>
+<p>$$
+\tilde\Psi\overleftarrow{\tilde\nabla}+\frac{i\varrho}{\hbar}\,\tilde\Psi\tilde A,
+\qquad
+\tilde\Psi\overleftarrow{\tilde\nabla}:=\sum_\mu\Bigl(\partial/\partial Q_\mu\,\tilde\Psi\Bigr)e_\mu .
+$$</p>
+<p>This is the only one of the twelve where the display choice actually decides whether the equation can be read.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$\tilde\Psi\tilde\nabla$</td>
+<td>No: indistinguishable from a left action</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>$\tilde\Psi\overleftarrow{\tilde\nabla}$</td>
+<td>Yes, and it is the corpus form</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>$\vec\nabla$ acting on the previous factor, marked by a dot</td>
+<td>Yes, and unambiguous for three factors</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$\tilde\Psi\,\tilde\nabla^{\mathrm{op}}$</td>
+<td>Yes, at the price of a name to remember</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>${}_{\tilde\nabla}\tilde\Psi$</td>
+<td>Exact, unreadable in a display</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose the field</td>
+<td>Would change the whole article</td>
+</tr>
+</tbody>
+</table></div>
+<p>N1 is right. R1 does not apply, since $\tilde\nabla$ is differential. The article itself supplies the reason the arrow matters: the left form and the right form are both gauge covariant, and the mixed form is not. A notation that cannot separate the left gradient from the right gradient cannot state the difference the article is about.</p>
+<h3 id="4-maxwells-theory-in-quaternion-form">4. Maxwell's Theory in Quaternion Form</h3>
+<p><em>Maxwell's Theory on Non-Commutative Spaces and Quaternions</em>, the spin-tensor form:</p>
+<p>$$
+\nabla F+\tfrac12\bigl(\nabla G+G^+\overleftarrow{\nabla}\bigr)=-J .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$G^+\nabla$</td>
+<td>No</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>$G^+\overleftarrow{\nabla}$</td>
+<td>Yes, and it shows at a glance which of the two terms acts which way</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>$g_m$ times a scoped derivative</td>
+<td>Yes, and less legible in a four-term sum</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$G^+\nabla^{\mathrm{op}}$</td>
+<td>Exact, and shorter than the arrow</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>subscripted</td>
+<td>No, in a display</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose $G^+$</td>
+<td>Local only, and it hides the symmetry</td>
+</tr>
+</tbody>
+</table></div>
+<p>N1 is right, and this equation is the arrow's best case: the display is a sum of one left-acting and one right-acting term, and the arrow is the only mark that shows the difference without a name.</p>
+<h3 id="5-the-mass-shell-cell">5. The Mass-Shell Cell</h3>
+<p><em>Thomson and Compton Scattering</em>, the mass-shell cell built on the frame cells as <em>Anomalies and Anomaly Cancellation</em> defines them:</p>
+<p>$$
+D(p)=\mathsf C_\mu p_\mu+m\,T_{e_t,e_t},
+\qquad
+\mathsf C_0=iT_{e_t,e_x},\quad \mathsf C_k=iT_{e_k,e_y}.
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>impossible</td>
+<td>The operator has no one-sided form</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>impossible</td>
+<td>Not a differential operator</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>impossible</td>
+<td>Same reason</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>impossible</td>
+<td>The right factor is an element, not a derivation</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>impossible</td>
+<td>Same reason</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>impossible</td>
+<td>A two-sided product is not a matrix times a column</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>$\mathsf C_\mu p_\mu+mT_{e_t,e_t}$</td>
+<td>The only form that exists</td>
+</tr>
+</tbody>
+</table></div>
+<p>The equation is the argument for the naming level. Every option at the display level fails, and the reason is not that the notation is poor but that the object is genuinely two-sided. Recomputed on the mass shell at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$: $\lVert D^2-2mD\rVert=4\times10^{-16}$, matrix rank two, length two, trace $4m=5.2$, and $\{\mathsf C_\mu,\mathsf C_\nu\}=2\operatorname{diag}(1,-1,-1,-1)$.</p>
+<h3 id="6-the-chirality-cell">6. The Chirality Cell</h3>
+<p><em>Anomalies and Anomaly Cancellation</em>, the table of frame cells:</p>
+<p>$$
+\mathsf C_5=-i\,T_{e_t,e_z}=-iR_{e_z},
+\qquad
+\mathsf C_5^2=1 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>impossible</td>
+<td>The operator is pure right action</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>$\psi\overleftarrow{\vec e_z}$</td>
+<td>No: the arrow is for derivatives only</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>impossible</td>
+<td>Same reason</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$R_{e_z}$</td>
+<td>Yes, and it is the same statement</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>subscript</td>
+<td>No</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>$-iT_{e_t,e_z}$</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>$\mathsf C_5$ is a <em>right multiplication</em> and it is not a left one: $R_{e_z}\neq L_a$ for any $a$, the best residual over three hundred trials being $1.14$, and the reason is that $R_b=L_a$ forces $b=a$ and $b$ central, while $\vec e_z$ is not central. So the chirality operator has no one-sided left form at all. It nevertheless has a cell form of length one. This is the sharpest case in the corpus of the cell names doing work that no display convention can do.</p>
+<p>Recomputed: $\mathsf C_5^2=1$ exactly, length one, anticommutes with all four $\mathsf C_\mu$, and $\operatorname{tr}(\mathsf C_5\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3)=-4i$.</p>
+<h3 id="7-the-peirce-sign">7. The Peirce Sign</h3>
+<p><em>The Biquaternion Physical Interpretation of Chirality</em>, the right multiplication that grades the two ideals:</p>
+<p>$$
+P=R_{i\vec e_z},
+\qquad
+P(s)=s\ \text{on }S_+,
+\qquad
+P(s)=-s\ \text{on }S_- .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$s\,i\vec e_z$</td>
+<td>Correct and uninformative</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>—</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$R_{i\vec e_z}$</td>
+<td>Yes, and it names the side</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>$T_{e_t,i\vec e_z}$</td>
+<td>Yes, and it is $-\mathsf C_5$</td>
+</tr>
+<tr>
+<td>N4, N5</td>
+<td>—</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>The same object appears under two names in the corpus, and the relation between them is exact: $P=R_{i\vec e_z}=-\mathsf C_5$, residual $2$ against $\mathsf C_5$ itself. Both names are legitimate. The article that uses $P$ is about the module decomposition and wants the right multiplication visible; the article that uses $\mathsf C_5$ is about the trace and wants the sign fixed. A reader who meets one and then the other needs the identity, and no article currently states it.</p>
+<h3 id="8-the-chiral-projectors-on-a-field">8. The Chiral Projectors on a Field</h3>
+<p><em>Chiral Fermions in the Biquaternion Framework</em>, the chirality operator on the field and its two projectors:</p>
+<p>$$
+\Psi\mapsto-i\,e_t\Psi e_z,
+\qquad
+P_L\Psi=\tfrac12\bigl(\Psi+i\,e_t\Psi e_z\bigr),
+\qquad
+P_R\Psi=\tfrac12\bigl(\Psi-i\,e_t\Psi e_z\bigr).
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$e_t\Psi e_z$</td>
+<td>Correct, and it is the only form that shows both factors</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>—</td>
+<td>The operator is algebraic, not differential</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$T_{e_t,e_z}\Psi$</td>
+<td>Yes, and it hides that the field sits between the factors</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>$-iT_{e_t,e_z}\Psi$</td>
+<td>Yes, compact, correct</td>
+</tr>
+<tr>
+<td>N4, N5</td>
+<td>—</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bare product $e_t\Psi e_z$ is right here, and it is the one place where N0 is the best answer rather than the worst: the field is visible between the two factors, which is what the projector formula is doing. Writing $T_{e_t,e_z}\Psi$ is equally correct and less immediate. This is worth stating, because it can look like an exception to the rule that the corpus never writes a bare product. It is not one: the corpus never writes a bare <em>operator</em>, and $e_t\Psi e_z$ is a product of three elements with the field among them.</p>
+<h3 id="9-the-spin-resolution">9. The Spin Resolution</h3>
+<p><em>Thomson and Compton Scattering</em>, the spin-resolved shell:</p>
+<p>$$
+D_s(p)=\tfrac12\,D(p)\bigl(1+\mathsf C_5\,\mathsf C_\mu s_\mu\bigr),
+\qquad
+\sum_{s=\pm}D_s(p)=D(p).
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>impossible</td>
+<td>Four factors, two of them two-sided</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>impossible</td>
+<td>Not differential</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>nested subscripts</td>
+<td>Exact and unreadable</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose</td>
+<td>Would need the transposition theorem to see the sum is the same</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>$\tfrac12D(p)(1+\mathsf C_5\mathsf C_\mu s_\mu)$</td>
+<td>The corpus form, and the only legible one</td>
+</tr>
+</tbody>
+</table></div>
+<p>Recomputed on the mass shell with a spin vector satisfying both $s\cdot p=0$ and $s^2=-1$: $\lVert D_s^2-2mD_s\rVert=9\times10^{-16}$, the two spin cells are orthogonal to $8\times10^{-17}$, they sum to $D(p)$, $\frac{1}{2m}D_s$ has rank one and trace one, and $D_s$ has length four. The length is the point: the spin resolution doubles the length of the mass-shell cell, and no rewriting shortens it.</p>
+<h3 id="10-the-gauge-transformation-and-the-curvature">10. The Gauge Transformation and the Curvature</h3>
+<p><em>The Gauge Principle in Biquaternionic Form</em>, the transformation law of the potential and its curvature:</p>
+<p>$$
+\tilde A_2=\tilde A-\tilde\nabla\Gamma,
+\qquad
+[D_\mu,D_\nu]=\frac{i\varrho}{\hbar}F_{\mu\nu},
+\qquad
+D_\mu=\partial/\partial Q_\mu+\frac{i\varrho}{\hbar}A_\mu .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>$\tilde\nabla\Gamma$</td>
+<td>Correct: the operator is on the left and acts on what follows</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>—</td>
+<td>Would add a side that the writing already fixes</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$\Gamma\tilde\nabla^{\mathrm{op}}$</td>
+<td>Legal only if the convention were right-to-left</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>subscript</td>
+<td>No</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>No option is needed, and the table is here to make a point: the left differential operator is not a special case of the two-sided one. It is the ordinary case, it has been the ordinary case since Newton, and the corpus's two-sided operators did not change it.</p>
+<p>The article records one thing about the right action and leaves it open: whether the physical matter representation is the left one or the right one. The mirror construction itself is written out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, not here, and the mirror is where N1 is needed. The pair is the content: the left and the right form are both covariant, the mixed form is not.</p>
+<h3 id="11-the-anomaly-trace">11. The Anomaly Trace</h3>
+<p><em>Anomalies and Anomaly Cancellation</em>, the trace of the chiral volume cell:</p>
+<p>$$
+\operatorname{tr}\bigl(\mathsf C_5\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3\bigr)=-4i .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N0</td>
+<td>the five cells written out</td>
+<td>Correct and unreadable</td>
+</tr>
+<tr>
+<td>N1</td>
+<td>—</td>
+<td>Not differential</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$R_{\mu}$ names in place of cells</td>
+<td>The same statement, with five names to track</td>
+</tr>
+<tr>
+<td>Cells</td>
+<td>as written</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>transpose</td>
+<td>Would break the order inside the trace</td>
+</tr>
+</tbody>
+</table></div>
+<p>The trace is where the order inside the product matters and where a row-vector convention would be actively wrong: $\operatorname{tr}(MN)$ is invariant under transposition of the whole product, but the individual factors are not invariant, and a display that transposes one of them changes the value. Recomputed: $-4i$ exactly, with $\mathsf C_5^2=1$ and $\{\mathsf C_5,\mathsf C_\mu\}=0$.</p>
+<h3 id="12-the-poisson-bracket-between-matrices-and-operators">12. The Poisson Bracket Between Matrices and Operators</h3>
+<p><em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>, the arrow at its weakest:</p>
+<p>$$
+\Lambda=\sum_i\Bigl(\overleftarrow{\partial/\partial q_i}\,\overrightarrow{\partial/\partial p_i}
+-\overleftarrow{\partial/\partial p_i}\,\overrightarrow{\partial/\partial q_i}\Bigr).
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Writing</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N1</td>
+<td>as written</td>
+<td>Correct, and ambiguous about the operand</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>dot scope on each factor</td>
+<td>Clearer about which argument is differentiated</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>$\partial^{\mathrm{op}}$</td>
+<td>Exact, and hides that there are two operands</td>
+</tr>
+<tr>
+<td>N4</td>
+<td>subscripts on both arguments</td>
+<td>Exact, unreadable</td>
+</tr>
+<tr>
+<td>N5</td>
+<td>—</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p>Here the arrow does its job and reaches its limit in the same expression. It says that the left derivative acts on what is to the left and the right derivative on what is to the right, which is exactly right. It cannot say what those two things are, because the bracket is written without arguments. This is the one equation in the corpus where the notation is genuinely under-determined, and it is under-determined for a reason outside the notation: the two arguments have been suppressed.</p>
+<h3 id="what-the-twelve-decide">What the Twelve Decide</h3>
+<p>The twelve fall into three classes, and the classes are the argument for the tiers.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Decided by</th>
+<th>Equations</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The naming level</td>
+<td>5, 6, 7, 8, 9 — mass shell, chirality cell, Peirce sign, chiral projectors, spin resolution</td>
+<td>5</td>
+</tr>
+<tr>
+<td>The display level</td>
+<td>3, 4, 12 — minimal coupling, Maxwell, Poisson bracket</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Nothing</td>
+<td>1, 2, 10, 11 — Dirac pair, massless Dirac, gauge transformation, anomaly trace</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p>The naming level decides the most equations and the display level the fewest, and the display equations are all differential. That is the empirical case for naming first: the corpus's hardest objects are already handled by names, and the display is needed only where a derivative acts on what precedes it. It is also the reason a notation reform should start at the naming level and stop there unless an equation forces it further.</p>
+<h2 id="the-measured-costs">The Measured Costs</h2>
+<p>Every claim above about cost is a computed number. The table collects them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Length</th>
+<th>Matrix rank</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_b=T_{e_t,b}$</td>
+<td>1</td>
+<td>4</td>
+<td>The right action is already a cell</td>
+</tr>
+<tr>
+<td>$\operatorname{nat}L_a\operatorname{nat}=T_{e_t,\natural(a)}$</td>
+<td>1</td>
+<td>4</td>
+<td>Transporting one factor is cheap</td>
+</tr>
+<tr>
+<td>$\operatorname{nat}$</td>
+<td>4</td>
+<td>4</td>
+<td>The map itself is not a cell</td>
+</tr>
+<tr>
+<td>$\mathsf C_5=-iT_{e_t,e_z}$</td>
+<td>1</td>
+<td>4</td>
+<td>A right multiplication</td>
+</tr>
+<tr>
+<td>$\mathsf C_\mu$</td>
+<td>1</td>
+<td>4</td>
+<td>Frame cell</td>
+</tr>
+<tr>
+<td>$D(p)$</td>
+<td>2</td>
+<td>2</td>
+<td>Mass shell</td>
+</tr>
+<tr>
+<td>$D_s(p)$</td>
+<td>4</td>
+<td>1 after $1/2m$</td>
+<td>Spin resolution</td>
+</tr>
+<tr>
+<td>$P_+=\tfrac12(T_{e_t,e_t}-iT_{e_t,e_z})$</td>
+<td>1</td>
+<td>2</td>
+<td>Chiral projector</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Residual</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_b-\operatorname{nat}L_{\natural(b)}\operatorname{nat}$</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\operatorname{nat}X)-\sigma_2X^{\mathsf T}\sigma_2^{-1}$</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$\operatorname{nat}$ against the plain transpose on $\vec e_x$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\min_a\lVert R_{e_z}-L_a\rVert$</td>
+<td>1.14</td>
+</tr>
+<tr>
+<td>$D^2-2mD$ on shell</td>
+<td>$4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$D_s^2-2mD_s$ on shell</td>
+<td>$9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$R_\nu-\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, corpus frame</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$R_\nu-\operatorname{nat}L_\nu^{\mathsf T}\operatorname{nat}$, coefficient frame</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$R_\nu-\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, coefficient frame</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$R_\nu-L_\nu^{\mathsf T}$, corpus frame</td>
+<td>$1,1,2$ on $\vec e_x,\vec e_y,\vec e_z$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-rule-in-tiers">The Rule in Tiers</h2>
+<p>The corpus follows a rule. It has never been written down, and it is short enough to write down.</p>
+<p><strong>Tier one: name the operator.</strong> Left multiplication, right multiplication, two-sided operator, frame cell, chirality cell, mass-shell cell. No glyph, no arrow, no dot. This covers the ordinary language of the corpus and should be the default in every article.</p>
+<p><strong>Tier two: the arrow, for a differential operator acting rightward.</strong> Written only where a derivative acts on what precedes it, and chosen here because it is shorter than the sandwich and not because the sandwich fails. Defined once, in the operator conventions, with two clauses fixed: that the arrow means the derivative acts on the factor to its left, and that the double arrow means one derivative on each side with the sign convention stated.</p>
+<p><strong>Tier three: dot scope, for a product of three or more factors carrying derivatives.</strong> The arrow cannot say which factor is meant when there are three. Dot scope can. It is currently barred by the no-dot rule, which is about $\dot x$ for $dx/dt$ and not about scope, and the ban could be narrowed to the case it was written for. Nothing in the corpus needs this tier yet; the Poisson bracket is the only expression that nearly does.</p>
+<p><strong>Tier four: $\operatorname{nat}$, for a deliberate change of side.</strong> Only on whole operators, never on one factor, and never as a way of avoiding the arrow. Its cost is length four per occurrence, and a display that uses it twice has replaced one glyph by eight cells. It can be applied to a derivative, and then it is longer still than it is on an element.</p>
+<p><strong>Never: reading integration by parts as a rewrite.</strong> It is a sign and a boundary term, not a change of side, and the arrow survives it. The side of a differential operator can be changed, at the cost of a longer display; the transfer of a derivative from one factor to another cannot.</p>
+<h2 id="deciding-the-arrow">Deciding the Arrow</h2>
+<p>The collision recorded in <em>The Census</em> is cheap to settle now and expensive to settle later, because the four articles that decorate an algebra and the three that mark a side are still disjoint. A decision is needed, and the corpus has the material to make one.</p>
+<p>The principle: <strong>the arrow is a mark of a side for a derivative, and an algebra symbol is not a derivative.</strong> An algebra written under the arrow is not being differentiated, so the mark is doing something else, and the two uses cannot both be the arrow.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate for the algebra left-action mark</th>
+<th>Writing</th>
+<th>Collision</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prescript</td>
+<td>${}_{L}\mathbb{C}\otimes\mathbb{O}$</td>
+<td>None: prescripts in the corpus are index blocks only</td>
+<td>Recommended</td>
+</tr>
+<tr>
+<td>Superscript $L$</td>
+<td>$\mathbb{C}^{L}\otimes\mathbb{O}$</td>
+<td>The superscript $L$ is the sector label in eight articles, $M_4^{L}$, $\Psi_0^{L}$</td>
+<td>Reject</td>
+</tr>
+<tr>
+<td>Second arrow</td>
+<td>$\leftarrow\mathbb{C}\otimes\mathbb{O}$</td>
+<td>None, but two near-identical marks in one document</td>
+<td>Weak</td>
+</tr>
+<tr>
+<td>The word</td>
+<td>the left action of the complex octonionic chain algebra</td>
+<td>None, verbose</td>
+<td>Acceptable in prose</td>
+</tr>
+</tbody>
+</table></div>
+<p>The recommendation is therefore: keep $\overleftarrow{\ }$ for derivatives and for nothing else, and write the algebra's left action with a prescript or with the word. Two sentences in the operator conventions would fix it, one for each mark, and the seven articles would need no rewriting today, only the four that quote the chain algebra would change a glyph.</p>
+<p>This note does not make the change. It records the decision, because a reserve note is the right place to argue it and the conventions article is the right place to state it.</p>
+<h2 id="failure-modes">Failure Modes</h2>
+<p>Six failures are easy to produce, and each has been produced during the writing of this note.</p>
+<p><strong>Confusing the two transposes.</strong> The plain array transpose and the corpus's $\operatorname{nat}$ differ on two of the four units, with residual $2$ on $\vec e_x$. A reader who transposes without the $\sigma_2$ in the matrix model gets $\vec e_y$ right and the other two wrong, which is the worst possible outcome: the formula looks like it works.</p>
+<p><strong>Checking a basis-dependent identity in your own basis.</strong> The first draft of this note filed the conventions article as carrying a false identity: recomputing $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ in the coefficient basis gives residual $2$, with either description of $\mathsf S$. The identity is true as printed, with residual zero on the four printed matrices and on fifty random elements. The failure came from testing it in a frame the corpus does not use, where the sandwich is $\operatorname{nat}$ instead. A statement about a transpose must be checked in the frame it was written for, and an erratum must not be filed on the strength of a mismatch of frames.</p>
+<p><strong>Confusing the operator with its display.</strong> Conjugating one factor does not destroy the cell form; it produces another cell, of length one. The statement "the transposition destroys the cell form" is therefore false as a statement about the algebra. What has length four is $\operatorname{nat}$ itself, so the cost sits in the display and nowhere else, and the two must be said separately.</p>
+<p><strong>Confusing the scalar part of a commutator with the scalar part of a product.</strong> $\mathrm{Sc}([\psi,b])=0$ is true by the trace property. The term in the Lagrangian is $\mathrm{Sc}(\bar\psi[\psi,b])$, which is a product and does not vanish, except when the bilinear is the norm form. A check that samples basis elements will pass, because on basis elements $\bar\psi\psi$ is central; the failure appears only on superpositions.</p>
+<p><strong>Reading the sandwich as a chain.</strong> $R_b=\operatorname{nat}\circ L_{\natural(b)}\circ\operatorname{nat}$ is three maps in a row, and the middle one's index is $\natural(b)$, not $b$. Two misreadings follow, and both are silent. Dropping the outer map gives $\operatorname{nat}(\psi b)$ instead of $\psi b$, wrong by $20.7$ on random pairs. Keeping $b$ in the middle gives the wrong operator, since $L_b$ and $L_{\natural(b)}$ differ on every non-central $b$. Write the identity as a conjugation, $\operatorname{nat}^{-1}\circ L_{\natural(b)}\circ\operatorname{nat}$, and use the two-step derivation, so that the reversal and the change of index are each visible at the step that causes them.</p>
+<p><strong>Imposing one of two conditions in a check.</strong> The spin resolution is idempotent only for a spin vector with both $s\cdot p=0$ and $s^2=-1$. A check that imposes one of the two reports a false failure, and a check that imposes neither reports a false success on the sum and a false failure on the square. Both happened here before the third attempt imposed both.</p>
+<h2 id="what-is-not-settled">What Is Not Settled</h2>
+<ul>
+<li><strong>The relation between $P$ and $\mathsf C_5$.</strong> It is exactly $P=-\mathsf C_5$, and no article states it. Two articles use the two names for the same object.</li>
+<li><strong>Whether tier three is needed.</strong> The corpus has one expression that would benefit and none that requires it. Until an article writes a three-factor derivative product, dot scope is available and unused.</li>
+<li><strong>The double-arrow convention.</strong> The corpus does not use the double arrow anywhere. If it ever does, the factor of $\tfrac12$ has to be fixed, because the literature is not unanimous.</li>
+<li><strong>One glyph, two meanings.</strong> The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. The candidates and a recommendation are in the section above, <em>Deciding the Arrow</em>; the decision is the author's, and it belongs in the operator conventions.</li>
+<li><strong>The corpus has no settled name for the natural map.</strong> It marks the value, $X^{\natural}$, and names the operator $X\mapsto X^{\natural}$ only by writing the same glyph bare in nine places. <em>Naming the Map</em> supplies one, $\operatorname{nat}$, and a sentence in <em>Product and Form Conventions</em> beside the $\bar{\cdot}$ row would make it official. The same sentence would fix the placeholder form $(\cdot)^{\natural}$.</li>
+<li><strong>Which side is the matter representation.</strong> The minimal coupling article records the left and the right construction as two covariant mirrors and calls the choice open. The notation question is downstream of that choice and cannot settle it: a corpus that had chosen the right action would write N1 everywhere and the cells would change roles. Until the choice is made, the arrow is the only mark that keeps both forms printable without rewriting the other.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The right action is written in the corpus in one way out of six, and the corpus has never said so.</p>
+<p><strong>The levels are four.</strong> Naming is fixed by the conventions, display is free, rewrite is fixed by a theorem, and components are barred. Confusion comes from treating them as one.</p>
+<p><strong>The arrow is not the transposition.</strong> The arrow marks a side on a page and changes nothing. The transposition replaces the right action by a left one and costs two applications of $\operatorname{nat}$, of length four each. The arrow is used only for derivatives, and there it is the shortest form rather than the only one: the sandwich reaches a derivative too, at the cost of a longer display.</p>
+<p><strong>Algebraic right action needs no arrow.</strong> $R_b=T_{e_t,b}$ is a cell of length one. The corpus writes it as $R_b$, and the three articles that use the arrow as a side mark all put it on a derivative.</p>
+<p><strong>Of twelve equations, the display decides three.</strong> They are the right-acting gradient, the Maxwell sum of a left and a right term, and the Poisson bracket. Five are decided by the naming level, because they are two-sided or purely right-sided and no display option exists for them. Four are decided by nothing, because the operator is written first.</p>
+<p><strong>The rule is four tiers.</strong> Name the operator; arrow for a rightward derivative; dot scope for three factors with derivatives; $\operatorname{nat}$ only on whole operators. Never read integration by parts as a change of side.</p>
+<p><strong>The transposition is coordinate-bound, the named operator is not.</strong> The conventions' $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ is true, with residual zero, in the frame it was written for; the same identity in the coefficient frame needs $\operatorname{nat}$ instead of $\mathsf S$, and without a sandwich it fails in both. This note filed it as an erratum on a first pass and withdrew the erratum: the mismatch was one of frames.</p>
+<p><strong>The map needs a name.</strong> The corpus writes $X^{\natural}$ as a mark and the bare glyph as the map in nine places, so the same sign already means two things. $\operatorname{nat}$ is the cheapest name that does not collide, and one sentence in the conventions would settle it.</p>
+<p><strong>The arrow needs a decision.</strong> It marks a side in three articles and decorates an algebra in four. The recommendation is to reserve it for derivatives and give the algebra left-action a prescript.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a\psi=a\psi$</td>
+<td>Left multiplication by the element</td>
+</tr>
+<tr>
+<td>$R_b\psi=\psi b$</td>
+<td>Right multiplication by the element</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>Two-sided operator, $\psi\mapsto a\psi b$</td>
+</tr>
+<tr>
+<td>$X^{\natural}$</td>
+<td>The natural sign applied to an element: the corpus's usual form</td>
+</tr>
+<tr>
+<td>$\operatorname{nat}$</td>
+<td>The map $X\mapsto X^{\natural}$, which the corpus names only by writing the glyph bare</td>
+</tr>
+<tr>
+<td>$\natural$ in a subscript</td>
+<td>A label, as in $\langle\cdot,\cdot\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$\overleftarrow{\partial}$</td>
+<td>The derivative acting on what precedes it</td>
+</tr>
+<tr>
+<td>$\overrightarrow{\partial}$</td>
+<td>The derivative acting on what follows it</td>
+</tr>
+<tr>
+<td>$M^{\mathsf T}$</td>
+<td>The plain transpose of the array</td>
+</tr>
+<tr>
+<td>$\mathsf S$</td>
+<td>The Peirce exchange; the matrix that carries the transpose in the canonical frame</td>
+</tr>
+<tr>
+<td>$\operatorname{nat}$ as a matrix</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis</td>
+</tr>
+<tr>
+<td>N0 to N5</td>
+<td>The six display options</td>
+</tr>
+<tr>
+<td>R1 to R3</td>
+<td>The three rewrite options</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>The coefficient rank in the sixteen-product basis</td>
+</tr>
+<tr>
+<td>$\mathsf C_\mu$, $\mathsf C_5$</td>
+<td>Frame cells and the chirality cell</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html"><em>Operator and Calculus Conventions</em></a> for the naming level and the no-dot rule.</li>
+<li><a href="../articles_physics/conventions-of-the-matrix-models.html"><em>Matrix Representations Conventions</em></a> for $\mathsf S$ and the array-level transposition.</li>
+<li><a href="../articles_physics/conventions-of-the-products-and-the-forms.html"><em>Product and Form Conventions</em></a> for the four maps and the anti-automorphism.</li>
+<li><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html"><em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em></a> for the only systematic use of the arrow.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-chirality.html"><em>The Biquaternion Physical Interpretation of Chirality</em></a> for the Peirce sign as a right multiplication.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html"><em>Chiral Fermions in the Biquaternion Framework</em></a> for the chirality cell as a two-sided operator on a field.</li>
+<li><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html"><em>Thomson and Compton Scattering: The Biquaternion Polarization Algebra</em></a> for the mass-shell and spin-resolution cells.</li>
+<li><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html"><em>Anomalies and Anomaly Cancellation in Biquaternionic Form</em></a> for the frame cells and the chirality trace.</li>
+<li><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html"><em>Maxwell's Theory on Non-Commutative Spaces and Quaternions</em></a> for the mixed left-right display.</li>
+<li><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html"><em>The Gauge Principle in Biquaternionic Form</em></a> for the left differential operator as the ordinary case.</li>
+<li><a href="../articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html"><em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em></a> for the arrow without an operand.</li>
+</ul>
+<h2 id="worked-examples-on-matrices">Worked Examples on Matrices</h2>
+<p>Everything above is a statement about operators. This appendix puts numbers on it. Every matrix below was computed from the multiplication itself, every entry is an exact integer or a Gaussian integer, and every residual quoted as zero is exactly zero, not small.</p>
+<h3 id="the-two-arrays">The Two Arrays</h3>
+<p><strong>The carrier array.</strong> $L_a$ is the four-by-four matrix of left multiplication by $a$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and $R_b$ the same for right multiplication. The natural sign is the diagonal matrix</p>
+<p>$$
+N=\operatorname{diag}(1,-1,-1,-1),
+$$</p>
+<p>since it fixes $e_t$ and negates the three vectors. For $b=\vec e_x$ the two families are</p>
+<p>$$
+L_{\vec e_x}=
+\begin{pmatrix}
+0&-1&0&0\\
+1&0&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix},
+\qquad
+R_{\vec e_x}=
+\begin{pmatrix}
+0&-1&0&0\\
+1&0&0&0\\
+0&0&0&1\\
+0&0&-1&0
+\end{pmatrix}.
+$$</p>
+<p>They agree in fourteen entries and differ in two, both in the lower block:</p>
+<p>$$
+R_{\vec e_x}-L_{\vec e_x}=
+\begin{pmatrix}
+0&0&0&0\\
+0&0&0&0\\
+0&0&0&2\\
+0&0&-2&0
+\end{pmatrix}.
+$$</p>
+<p>Both have four nonzero entries, determinant one, trace zero, rank four, and eigenvalues $(i,-i,i,-i)$. The whole of the right action is therefore a sign on one two-by-two block, which is why the corpus can afford to write $R_b$ and never say what it is.</p>
+<h3 id="example-1-one-vector-three-steps">Example 1: One Vector, Three Steps</h3>
+<p>Take $b=\vec e_x$, so that $\operatorname{nat}(b)=-\vec e_x$ and the middle operator is</p>
+<p>$$
+L_{\natural(b)}=-L_{\vec e_x}=
+\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&1\\
+0&0&-1&0
+\end{pmatrix}.
+$$</p>
+<p>Apply the three maps in order to $\psi=e_t+2\vec e_x$. Each column is one map, and the last is the answer:</p>
+<p>$$
+\psi=\begin{pmatrix}1\\2\\0\\0\end{pmatrix}
+\;\xrightarrow{\ \operatorname{nat}\ }\;
+\begin{pmatrix}1\\-2\\0\\0\end{pmatrix}
+\;\xrightarrow{\ L_{\natural(b)}\ }\;
+\begin{pmatrix}-2\\-1\\0\\0\end{pmatrix}
+\;\xrightarrow{\ \operatorname{nat}\ }\;
+\begin{pmatrix}-2\\1\\0\\0\end{pmatrix}.
+$$</p>
+<p>The last column is $\psi b$, computed directly: $(e_t+2\vec e_x)\vec e_x=\vec e_x-2e_t$. The same chain in the algebra, with no matrices at all:</p>
+<p>$$
+e_t-2\vec e_x\ \mapsto\ (-\vec e_x)(e_t-2\vec e_x)=-\vec e_x-2e_t\ \mapsto\ \natural\bigl(-\vec e_x-2e_t\bigr)=\vec e_x-2e_t.
+$$</p>
+<p>Every step is one property. The first map flips the vector part. The middle map is a left multiplication, and it reverses nothing. The last map reverses the factors of the product it receives, and that reversal is what turns the left factor $-\vec e_x$ into a right factor $+\vec e_x$.</p>
+<h3 id="why-both-ingredients-are-needed">Why Both Ingredients Are Needed</h3>
+<p>Each of the two ingredients does half the work, and the matrices show the halves.</p>
+<p>Conjugating $L_{\vec e_x}$ by $N$, with no change of index, gives</p>
+<p>$$
+N\,L_{\vec e_x}\,N^{-1}=
+\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix}
+=-R_{\vec e_x}.
+$$</p>
+<p>That is the right family with the wrong sign. The sign is supplied by the index, because $\operatorname{nat}(\vec e_x)=-\vec e_x$:</p>
+<p>$$
+N\,L_{\natural(\vec e_x)}\,N^{-1}=-N\,L_{\vec e_x}\,N^{-1}=R_{\vec e_x}.
+$$</p>
+<p>So conjugation by the natural sign gets the shape right, and the flipped index gets the sign right. Drop either and the identity fails: with $b$ in the middle the residual is $2$ on the four units, and without any sandwich it is $2$ as well.</p>
+<h3 id="example-2-a-mixed-element">Example 2: A Mixed Element</h3>
+<p>Take $b=e_t+\vec e_z$, so $\operatorname{nat}(b)=e_t-\vec e_z$. The scalar part survives the natural sign and the vector part flips, so only the $e_z$ contribution can move:</p>
+<p>$$
+L_{\natural(b)}=
+\begin{pmatrix}
+1&0&0&1\\
+0&1&1&0\\
+0&-1&1&0\\
+-1&0&0&1
+\end{pmatrix},
+\qquad
+R_b=
+\begin{pmatrix}
+1&0&0&-1\\
+0&1&1&0\\
+0&-1&1&0\\
+1&0&0&1
+\end{pmatrix}.
+$$</p>
+<p>Fourteen entries agree, and the two that differ are the corners $(1,4)$ and $(4,1)$. The residual of $R_b=N L_{\natural(b)}N^{-1}$ is zero.</p>
+<p>The general lesson is the one the cells already suggest: the amount of rewriting an element needs is measured by its vector part. A central element needs none, which is Example 4.</p>
+<h3 id="example-3-complex-coefficients-and-the-trap">Example 3: Complex Coefficients and the Trap</h3>
+<p>Use the two-by-two module representation, where the field is a matrix $X$, left multiplication is $\mathsf M_2(a)X$, right multiplication is $X\mathsf M_2(b)$, and the natural sign is a transpose dressed by $\sigma_2$:</p>
+<p>$$
+\operatorname{nat}(X)=\sigma_2 X^{\mathsf T}\sigma_2^{-1}=\sigma_2 X^{\mathsf T}\sigma_2 .
+$$</p>
+<p>Take $b=(1+i)\vec e_x$, so $\operatorname{nat}(b)=-(1+i)\vec e_x$, and the test field $X_0=\begin{pmatrix}1&2i\\3&4\end{pmatrix}$:</p>
+<p>$$
+\mathsf M_2(b)=\begin{pmatrix}0&1-i\\1-i&0\end{pmatrix},
+\qquad
+\mathsf M_2(\natural b)=\begin{pmatrix}0&-1+i\\-1+i&0\end{pmatrix},
+\qquad
+\operatorname{nat}(X_0)=\begin{pmatrix}4&-2i\\-3&1\end{pmatrix}.
+$$</p>
+<p>The sandwich reproduces the right multiplication exactly:</p>
+<p>$$
+\operatorname{nat}\bigl(\mathsf M_2(\natural b)\operatorname{nat}(X_0)\bigr)
+=
+\begin{pmatrix}2+2i&1-i\\4-4i&3-3i\end{pmatrix}
+=
+X_0\mathsf M_2(b),
+$$</p>
+<p>residual zero.</p>
+<p><strong>The trap is that the natural sign looks like a complex conjugation and is not one.</strong> It is $\mathbb C$-linear: it acts on the quaternion units and leaves $i$ alone. Replacing it by the coefficient conjugation, which does touch $i$, gives residual $8.485$ on this example. Replacing the middle index $\operatorname{nat}(b)$ by $\bar b$ gives residual $8$. On elements with real coefficients the two readings are closer, so the error stays quiet until the first complex coefficient arrives. That is the worst kind of error and it is the reason the note insists on the mark.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Wrong substitution</th>
+<th>Residual, $b=\vec e_x$</th>
+<th>Residual, $b=(1+i)\vec e_x$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drop the outer $\operatorname{nat}$</td>
+<td>$8.000$</td>
+<td>$11.314$</td>
+</tr>
+<tr>
+<td>Keep $b$ in the middle</td>
+<td>$8.000$</td>
+<td>$11.314$</td>
+</tr>
+<tr>
+<td>Plain transpose for $\operatorname{nat}$</td>
+<td>$8.000$</td>
+<td>$11.314$</td>
+</tr>
+<tr>
+<td>$\bar b$ for $\operatorname{nat}(b)$</td>
+<td>$8.000$</td>
+<td>$8.000$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$ for $\operatorname{nat}$ throughout</td>
+<td>$3.606$</td>
+<td>$7.071$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The test field is $X_0$ in every row, so the numbers are comparable. None of them is small, and none of them announces itself.</p>
+<h3 id="example-4-where-the-rewriting-does-nothing">Example 4: Where the Rewriting Does Nothing</h3>
+<p>Take $b=3e_t$. Then $\operatorname{nat}(b)=b$, the two families coincide, $L_b=R_b$, and the sandwich returns $L_b$ unchanged:</p>
+<p>$$
+N\,L_{3e_t}\,N^{-1}=L_{3e_t}=R_{3e_t},
+\qquad
+\text{residual } 0.
+$$</p>
+<p>The identity is true and empty. The centre is the mass direction, so R1 has nothing to say exactly where the mass sits. R2 fails there for the opposite reason: its commutator term vanishes, but its left term is already correct. One route loses the term, the other merely cannot improve it, and the two failures sit on the same subspace.</p>
+<h3 id="example-5-a-derivative">Example 5: A Derivative</h3>
+<p>The corpus writes $\tilde\nabla^{\natural}$ many times, and that mark is the natural sign applied to the gradient as an element. The same construction reaches a rightward derivative. For a field $\Phi$ and a single direction,</p>
+<p>$$
+(\partial_\mu\Phi)\,\vec e_\mu=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_\mu)\,\partial_\mu(\operatorname{nat}\Phi)\bigr),
+$$</p>
+<p>which holds at every point, residual zero on three sample points and on any polynomial or trigonometric field. The middle operator is the natural conjugate of the gradient component, so R1 extends to differential operators after all.</p>
+<p>What it does not do is get shorter. For an element the composite collapses to a cell of length one, $R_b=T_{e_t,b}$, and nobody writes the sandwich. For a derivative it collapses to nothing: three symbols and a flipped frame coefficient, against one arrow. So the arrow is the shortest faithful form for a rightward derivative, not the only one, and the two are related by exactly the identity this note is about. Integration by parts is a third thing, and no conjugation replaces it: it moves differentiation between two factors of a bilinear form, and it changes the sign.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

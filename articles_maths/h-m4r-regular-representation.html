@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-regular-representation"><strong>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The model.</strong> The quaternion algebra acts on itself by left multiplication, and in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ that action is a $4\times4$ real matrix. The map</p>
+<p>$$
+\mathsf{M}_4:\mathbb{H}\longrightarrow M_4(\mathbb{R}),\qquad
+\mathsf{M}_4(\tilde q)=\text{the matrix of }\tilde q_3\mapsto\tilde q\tilde q_3
+$$</p>
+<p>is the <strong>left regular representation</strong>, and it is the second and last model of the quaternion category. It is of size four over $\mathbb{R}$, against the size two over $\mathbb{C}$ of the companion article.</p>
+<p><strong>The two models are one representation.</strong> The regular model is the realification of the standard model: the image $\mathsf{M}_2(\mathbb{H})\subset M_2(\mathbb{C})$ is a four-real-dimensional space of complex-linear maps, and forgetting the complex structure turns each of them into a $4\times4$ real matrix, which is exactly $\mathsf{M}_4(\tilde q)$. Two consequences follow and they are the spine of the article.</p>
+<ul>
+<li>The trace doubles: $\operatorname{tr}_\mathbb{R}=2\operatorname{Re}\operatorname{tr}_\mathbb{C}$, and $\operatorname{tr}_\mathbb{C}=2q_t$, so $\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t$.</li>
+<li>The determinant is a squared modulus: $\det_\mathbb{R}=\lvert\det_\mathbb{C}\rvert^{2}$, so $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2}$ and not $N$.</li>
+</ul>
+<p>So the discrepancy between the two models is not an accident of two conventions. It is the discrepancy between a complex determinant and the determinant of its realification, and it is the single numerical difference between the two pairs of the category.</p>
+<p><strong>What the regular model buys.</strong> Three things the complex model cannot give. The model is a <strong>real</strong> algebra homomorphism, so its image is a genuine subalgebra of a real matrix algebra and no complex scalar is needed anywhere. The frame is the algebra's own basis, so the matrix entries are the coordinates of the product and the model is a dictionary rather than an embedding into a space of a different kind. And the two-sided structure becomes visible inside one ambient: the left and the right multiplication are two commuting four-dimensional families in the same $M_4(\mathbb{R})$, related by a signed transpose.</p>
+<p><strong>What it costs.</strong> The determinant is no longer the norm but its square, so the model cannot read the norm off a determinant without a square root. The determinant is also positive on every nonzero element, so it cannot distinguish $\tilde q$ from $-\tilde q$: the two have the same determinant and opposite traces, and the sign of an element is read by the trace alone. There is also no complex structure in the model, so the Hermitian theory of the companion article has no counterpart here; what replaces it is the transpose.</p>
+<p><strong>Boundaries.</strong> The algebra is <em>Quaternion Algebra</em>; the norm is <em>Norm and Invertibility in the Quaternion Algebra</em>; the spectrum is <em>Spectral Regularity and Degeneracy in the Quaternion Algebra</em>; the abstract operators are <em>The One-Sided Operators</em> and <em>Two-Sided Operators</em> on the quaternion algebra, which this article does not replace. The companion model is <em>$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation</em>, and the operators of this model are <em>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators</em>.</p>
+<p><strong>Conventions.</strong> The basis is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically. The element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, its conjugate is $\tilde q^{*}=q_te_t-\vec v$, and its norm is $N(\tilde q)=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$. The left and right multiplications are $L_{\tilde q},R_{\tilde q}$, and $\mathsf{M}_4$ is the matrix of $L_{\tilde q}$. The sign matrix is $D=\operatorname{diag}(1,-1,-1,-1)$.</p>
+<h2 id="the-frame">The Frame</h2>
+<p><strong>Definition.</strong> The <strong>Cayley matrix</strong> of $\tilde q$ is the matrix whose $\mu$-th column is the coordinate column of $\tilde q\,\tilde e_\mu$:</p>
+<p>$$
+\mathsf{M}_4(\tilde q)=\bigl(\ \tilde q e_t\ \big|\ \tilde q\vec e_x\ \big|\ \tilde q\vec e_y\ \big|\ \tilde q\vec e_z\ \bigr)
+=\begin{pmatrix}
+q_t&-q_x&-q_y&-q_z\\
+q_x&q_t&-q_z&q_y\\
+q_y&q_z&q_t&-q_x\\
+q_z&-q_y&q_x&q_t
+\end{pmatrix}.
+$$</p>
+<p><strong>The reading of the display.</strong> The first column is $\tilde q$ itself, so the map is injective by inspection: the element is recovered from the first column. The matrix is of the shape</p>
+<p>$$
+\mathsf{M}_4(\tilde q)=q_tI_4+q_xA_1+q_yA_2+q_zA_3,
+$$</p>
+<p>with the three matrices</p>
+<p>$$
+A_1=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+A_2=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+A_3=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$</p>
+<p>which are skew-symmetric and satisfy $A_1^{2}=A_2^{2}=A_3^{2}=-I_4$ and $A_1A_2=A_3$ cyclically. So the model is a real form of $M_4(\mathbb{R})$ in the same sense as before: the three generators behave as the imaginary units, and the four matrices $I_4,A_1,A_2,A_3$ span a four-dimensional subspace.</p>
+<p><strong>The left and the right frames.</strong> Two different bases of the ambient are in play and they must not be confused.</p>
+<ul>
+<li>The <strong>Cayley frame</strong> is the basis of the ambient as a space of operators, in which a matrix is written: the sixteen matrix units $E_{ij}$, or equivalently the entries of the display above.</li>
+<li>The <strong>regular frame</strong> is the basis of the carrier, $(e_t,\vec e_x,\vec e_y,\vec e_z)$, in which a matrix acts. It is the frame the columns are indexed by.</li>
+</ul>
+<p>The two frames coincide in size but not in meaning, and the whole article is written with the second in the carrier and the first in the ambient. The operators article turns on the same distinction.</p>
+<p><strong>Theorem (the model is unique up to conjugacy).</strong> Every faithful real representation of the algebra by $4\times4$ matrices is equivalent to the regular one: if $\rho$ and $\rho'$ are two such, there is $P\in GL_4(\mathbb{R})$ with $\rho'(\tilde q)=P\rho(\tilde q)P^{-1}$ for all $\tilde q$.</p>
+<p><strong>Proof.</strong> A representation is determined by the images of $\vec e_x,\vec e_y,\vec e_z$, which generate a four-dimensional subalgebra of $M_4(\mathbb{R})$ isomorphic to $\mathbb{H}$. A four-dimensional real representation of a central simple algebra is a direct sum of copies of the unique irreducible one, so the two images are isomorphic as modules over the algebra, and an isomorphism of modules is the required change of basis.
+So the regular model is not one choice among many: it is the only faithful real model of the minimal degree, and the minimal degree is four.</p>
+<h2 id="the-left-and-the-right-matrices">The Left and the Right Matrices</h2>
+<p><strong>The left family.</strong> $\mathsf{M}_4(\tilde q)$ <strong>is</strong> $L_{\tilde q}$, and the family</p>
+<p>$$
+L(\mathbb{H})=\{\mathsf{M}_4(\tilde q):\tilde q\in\mathbb{H}\}
+$$</p>
+<p>is a four-dimensional subalgebra of $M_4(\mathbb{R})$, closed under products and containing the identity. Every nonzero member is invertible, so $L(\mathbb{H})\setminus\{0\}\subset GL_4(\mathbb{R})$.</p>
+<p><strong>The right family.</strong> Right multiplication is the matrix of $\tilde q_3\mapsto\tilde q_3\tilde q$, and it is a second four-dimensional family</p>
+<p>$$
+R(\mathbb{H})=\{R_{\tilde q}\},
+$$</p>
+<p>which is also a subalgebra but is <strong>not</strong> the transpose of the first.</p>
+<p><strong>The stitch.</strong> With $D=\operatorname{diag}(1,-1,-1,-1)$,</p>
+<p>$$
+R_{\tilde q}=D\,\mathsf{M}_4(\tilde q)^{\mathsf T}D .
+$$</p>
+<p><strong>Proof.</strong> The product $\tilde q_3\tilde q$ has scalar part $\langle\tilde q_3,\tilde q\rangle$ and vector part $q_t\vec v_3+q_{3,t}\vec v+\vec v_3\times\vec v$, whose sign is opposite to that of $\tilde q\tilde q_3$. Transposing the left multiplication reverses the order of every product and hence changes the sign of the vector part, and conjugating by $D$ is exactly the change of sign on the three vector coordinates.</p>
+<p>The stitch is the regular form of the statement that the transposed left multiplication is the right multiplication by the conjugate, and it is the exact analogue of the relation $R_{\tilde q}=C L_{\tilde q^{*}}C$ of the complex model, with the conjugate transpose replaced by the signed transpose. The two models therefore say the same thing in two languages: an anti-linear involution on the one hand, a signature matrix on the other.</p>
+<p><strong>The two copies.</strong> They commute, because associativity gives $\tilde q_1(\tilde q_3\tilde q_2)=(\tilde q_1\tilde q_3)\tilde q_2$; their intersection is the scalar line,</p>
+<p>$$
+L(\mathbb{H})\cap R(\mathbb{H})=\mathbb{R}\,I_4 ,
+$$</p>
+<p>and their sum has dimension $4+4-1=7$. The double centraliser theorem holds in the sharpest form:</p>
+<p><strong>Theorem (the double centraliser).</strong> The centraliser of $L(\mathbb{H})$ in $M_4(\mathbb{R})$ is $R(\mathbb{H})$, and the centraliser of $R(\mathbb{H})$ is $L(\mathbb{H})$.</p>
+<p><strong>Proof.</strong> A matrix $X$ commuting with every $L_{\tilde q}$ is determined by its first column $Xe_t$, since $X\tilde q=XL_{\tilde q}e_t=L_{\tilde q}Xe_t=\tilde q\,(Xe_t)$; so $X=R_{Xe_t}$ and the centraliser is contained in $R(\mathbb{H})$, with the other inclusion by commutation. The dimension count gives equality, and the argument is symmetric.</p>
+<p><strong>The invariants.</strong> For a nonzero element,</p>
+<p>$$
+\operatorname{rank}\mathsf{M}_4(\tilde q)=4,\qquad
+\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t,\qquad
+\det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2},\qquad
+\lVert\mathsf{M}_4(\tilde q)\rVert_F^{2}=4N(\tilde q).
+$$</p>
+<p>The Frobenius norm is computed from the display: the four columns are orthogonal of squared length $N$, because left multiplication by $\tilde q$ multiplies the norm of every element by $N$.</p>
+<h2 id="the-product">The Product</h2>
+<p><strong>Theorem (multiplicativity).</strong> For all $\tilde q,\tilde p$,</p>
+<p>$$
+\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde p)=\mathsf{M}_4(\tilde q\tilde p).
+$$</p>
+<p><strong>Proof.</strong> The matrix of a composition is the product of the matrices, and $L_{\tilde q}\circ L_{\tilde p}=L_{\tilde q\tilde p}$ because $\tilde q(\tilde p\tilde q_3)=(\tilde q\tilde p)\tilde q_3$. Associativity of the algebra is the single fact behind it.</p>
+<p><strong>The reading.</strong> This is the cleanest multiplicativity in the whole of Part VI: the model is the algebra acting on itself, so the multiplication of the algebra and the multiplication of the matrices are the same operation seen twice. In the split-quaternion category the same was true because the algebra was a matrix algebra; here it is true because the representation is regular. The two reasons are different and both are exact.</p>
+<p><strong>The image.</strong> The image is a four-dimensional subalgebra of the sixteen-dimensional ambient, and it is not an ideal: $M_4(\mathbb{R})$ is simple and the image is proper. The ambient is therefore much larger than the model, and the excess is where the operator layer of the companion article lives.</p>
+<p><strong>The failure of complex scalar closure has no counterpart.</strong> Here the scalars are real, so the image is closed under the scalar multiplication of the ambient, and there is no analogue of the failure noted in the complex model. What fails instead is closure under transposition: $\mathsf{M}_4(\tilde q)^{\mathsf T}$ is $D\mathsf{M}_4(\tilde q)D$, which is again in the image, so the image is closed under the signed transpose and not under the transpose. The transpose of a Cayley matrix is the Cayley matrix of the conjugate only after the change of signs, and $\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q)$ forces $\tilde q$ to be real.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>Theorem (the trace).</strong> For every element,</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t .
+$$</p>
+<p><strong>Proof.</strong> From the display, the four diagonal entries are $q_t$ four times.</p>
+<p><strong>The scalar part.</strong> It is recovered as $\tfrac14\operatorname{tr}$, and it vanishes on the pure quaternions. So the pure part is the trace-zero subspace of the image:</p>
+<p>$$
+\mathsf{M}_4(V)=\{\mathsf{M}_4(\tilde q):\operatorname{tr}\mathsf{M}_4(\tilde q)=0\},
+$$</p>
+<p>of dimension three. The trace splits the image into the scalar line and the traceless copy of the pure part, exactly as in the complex model, and with the same three-dimensional traceless piece.</p>
+<p><strong>The factor of two.</strong> The trace is twice the trace of the complex model. That is the general rule $\operatorname{tr}_\mathbb{R}(A)=\operatorname{Re}\operatorname{tr}_\mathbb{C}(A)+\operatorname{Re}\operatorname{tr}_\mathbb{C}(\overline{A})=2\operatorname{Re}\operatorname{tr}_\mathbb{C}(A)$ for the realification of a complex matrix, and it is the reason the two models cannot be compared entrywise. The trace of the regular model is not a different functional; it is the same one with the real dimension counted twice.</p>
+<p><strong>The trace form.</strong> On the image,</p>
+<p>$$
+\operatorname{tr}\bigl(\mathsf{M}_4(\tilde e_\mu)\mathsf{M}_4(\tilde e_\nu)\bigr)=\operatorname{diag}(4,-4,-4,-4),
+$$</p>
+<p>of signature $(1,3)$; the computation is the same as in the complex model, with every entry doubled, because the real trace doubles. So the trace form is again the Minkowski form of signature $(1,3)$, positive on the scalar part and negative on the pure part, and the factor $4$ against $2$ is the only change.</p>
+<p><strong>What the trace does not see.</strong> The trace is blind to the three vector coordinates of the element, so it cannot distinguish the units, all of which have different traces. In the split-quaternion category the trace was a trichotomy indicator, because the trace of a matrix product of split quaternions was one of three values; here every nonzero element is a unit and the trace sweeps the whole real line. The trace is therefore a coordinate and not a classification.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>Theorem (the determinant is the square of the norm).</strong> For every element,</p>
+<p>$$
+\det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2}=\bigl(q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}\bigr)^{2}.
+$$</p>
+<p><strong>Proof.</strong> Two proofs, and both are worth recording.</p>
+<p><em>By the realification.</em> $\mathsf{M}_4(\tilde q)$ is the real matrix of the complex-linear map $\mathsf{M}_2(\tilde q)$ acting on $\mathbb{C}^{2}$ read as $\mathbb{R}^{4}$; for a realification, $\det_\mathbb{R}=\lvert\det_\mathbb{C}\rvert^{2}$, and $\det_\mathbb{C}\mathsf{M}_2(\tilde q)=N$.</p>
+<p><em>By the eigenvalues.</em> The characteristic polynomial, computed below, is $(\lambda^{2}-2q_t\lambda+N)^{2}$, whose constant term is $N^{2}$ and is the determinant in dimension four.</p>
+<p><strong>Why the square.</strong> The determinant of a real matrix that happens to preserve a complex structure is the squared modulus of the complex determinant, because the complex structure pairs every eigenvalue with its conjugate. Here every eigenvalue of $\mathsf{M}_2$ is non-real unless the element is scalar, so every eigenvalue of $\mathsf{M}_4$ occurs twice, and the determinant is the square of the product of one representative of each pair. The square is therefore structural and not conventional: it is the arithmetic signature of the realification.</p>
+<p><strong>The consequences.</strong></p>
+<ul>
+<li>The determinant is a fourth power of a positive number on the units, hence positive everywhere except at the origin, and the model cannot distinguish $\tilde q$ from $-\tilde q$ by the determinant.</li>
+<li>The zero set is a point, so there is no null cone; the rank is four on every nonzero element and zero at the origin.</li>
+<li>The image of the units lies in $GL_4^{+}(\mathbb{R})$, the component of the identity, since the determinant is positive. This is the topological statement that the unit group of the algebra is connected, which is true here and false in the split-quaternion category.</li>
+<li>The model is <strong>not</strong> conformal in the sense of the complex one: the singular values of $\mathsf{M}_4(\tilde q)$ are $\sqrt N$ four times, which does say that the model is conformal, with $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$. The two statements agree because $N^{2}$ is the determinant of $NI_4$.</li>
+</ul>
+<p><strong>The unit criterion.</strong> An element is a unit exactly when $N\neq0$, exactly when the determinant is nonzero, exactly when the matrix is invertible. So the three criteria of the algebra, of the norm and of the matrix coincide, and the model is faithful in the strongest sense: it detects invertibility.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<p><strong>The characteristic polynomial.</strong> From the display, and from the realification,</p>
+<p>$$
+\chi(\lambda)=\bigl(\lambda^{2}-2q_t\lambda+N\bigr)^{2}
+=\bigl((\lambda-q_t)^{2}+\lVert\vec v\rVert^{2}\bigr)^{2}.
+$$</p>
+<p><strong>The eigenvalues.</strong> The roots are $q_t\pm i\lVert\vec v\rVert$, each with multiplicity two. Over $\mathbb{R}$ there are no eigenvalues at all unless the element is scalar; the model is therefore a real matrix with no real spectrum in general, which is the expected behaviour of a complex structure.</p>
+<p><strong>The two invariant planes.</strong> The multiplicity two is not a degeneracy: it is the complex dimension one of each eigenspace of the complex model, read as real dimension two. Concretely the carrier splits as a direct sum of two real planes on which $\mathsf{M}_4(\tilde q)$ acts by the same rotation-scaling block</p>
+<p>$$
+C=\begin{pmatrix}q_t&-\lVert\vec v\rVert\\ \lVert\vec v\rVert&q_t\end{pmatrix},
+$$</p>
+<p>and the matrix is similar over $\mathbb{R}$ to $\operatorname{diag}(C,C)$. The two planes are the two copies of $\mathbb{C}$ that the realification creates, and the complex structure $J$ of the carrier exchanges them.</p>
+<p><strong>The displaying case.</strong> For $\tilde q=e_t+\vec e_x$, the block structure is visible in the basis itself:</p>
+<p>$$
+\mathsf{M}_4(e_t+\vec e_x)=\begin{pmatrix}1&-1&0&0\\1&1&0&0\\0&0&1&-1\\0&0&1&1\end{pmatrix},
+$$</p>
+<p>the two identical blocks acting on $\operatorname{span}\{e_t,\vec e_x\}$ and on $\operatorname{span}\{\vec e_y,\vec e_z\}$. The first plane is the complex line of $\vec e_x$ and the second is its complement, and the equality of the two blocks is the statement that left multiplication by an element of a complex line acts identically on the line and on a complementary plane.</p>
+<p><strong>The diagonalisation over $\mathbb{C}$.</strong> Over $\mathbb{C}$ the matrix is diagonalisable, with diagonal form $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ where $\lambda_\pm=q_t\pm i\lVert\vec v\rVert$; the transition matrix is the matrix of the two complex eigenlines taken with their two real coordinates. So the model is diagonalisable over $\mathbb{C}$ for every element and never defective, and the whole of the spectral trichotomy of the split-quaternion category is absent: there is one spectral type, the elliptic one.</p>
+<p><strong>The comparison.</strong> The complex model's projectors $P_\pm=\tfrac12(I_2\pm i\mathsf{M}_2(u))$ have images in the complex model; in the regular model they become real projections of rank two, and they are not elements of the image $L(\mathbb{H})$ — no rank-two projection is, since every nonzero member of the image is invertible. So the regular model can display the projectors but cannot contain them, and this is the exact sense in which the spectral theory of the algebra is a theory of the complexification.</p>
+<h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
+<p><strong>Theorem (the adjugate).</strong> For every element,</p>
+<p>$$
+\operatorname{adj}\mathsf{M}_4(\tilde q)=N(\tilde q)\,\mathsf{M}_4(\tilde q^{*}),
+$$</p>
+<p>and therefore</p>
+<p>$$
+\mathsf{M}_4(\tilde q)^{-1}=\frac{\mathsf{M}_4(\tilde q^{*})}{N(\tilde q)}=\mathsf{M}_4\!\left(\frac{\tilde q^{*}}{N(\tilde q)}\right).
+$$</p>
+<p><strong>Proof.</strong> The inverse is the left multiplication by $\tilde q^{-1}=\tilde q^{*}/N$, and the adjugate is the determinant times the inverse, with the determinant $N^{2}$.</p>
+<p><strong>The contrast with the complex model.</strong> There the adjugate was the conjugate transpose, which is an involution of the ambient; here it is $N$ times the left multiplication by the conjugate, which is again an element of the image. The two formulas are the two faces of the same fact: the inverse of a quaternion is its conjugate over its norm, and the model transports that formula either through the conjugate transpose or through the adjugate, depending on which ambient it is embedded in.</p>
+<p><strong>Two formulas, two involutions.</strong> The adjugate and the stitch must be kept apart. The adjugate stays inside the image and encodes the conjugation,</p>
+<p>$$
+\operatorname{adj}\mathsf{M}_4(\tilde q)=N(\tilde q)\,\mathsf{M}_4(\tilde q^{*}),
+$$</p>
+<p>while the transpose leaves the image and takes it to the right family,</p>
+<p>$$
+\mathsf{M}_4(\tilde q)^{\mathsf T}=D\,R_{\tilde q}\,D .
+$$</p>
+<p>So the conjugation is read by the adjugate and the reversal of the product by the transpose, and the two are not interchangeable: the first gives an element of $L(\mathbb{H})$, the second an element of $R(\mathbb{H})$.</p>
+<p><strong>The normality.</strong> Since $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$, every matrix of the image is <strong>normal and conformal</strong>, with all singular values equal to $\sqrt N$. The image of the units is therefore a four-dimensional submanifold of $SO(4)$:</p>
+<p>$$
+\mathsf{M}_4(\mathbb{H}^{\times})=\mathbb{R}_{>0}\cdot\mathsf{M}_4(SU(2)),
+$$</p>
+<p>and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier by left multiplication.</p>
+<h2 id="the-norms">The Norms</h2>
+<p><strong>Three forms, and one of them is the square of another.</strong> The model carries the same three forms as the complex model, and the differences are the factor two on the trace and the square on the determinant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>definition</th>
+<th>Gram matrix on the four units</th>
+<th>signature</th>
+<th>multiplicative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>determinant form</td>
+<td>$\det\mathsf{M}_4(\tilde q)=N^{2}$</td>
+<td>— (quartic)</td>
+<td>—</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>norm form</td>
+<td>$\sqrt{\det}=N$</td>
+<td>$I_4$</td>
+<td>$(4,0)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$\operatorname{tr}(\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde p))$</td>
+<td>$\operatorname{diag}(4,-4,-4,-4)$</td>
+<td>$(1,3)$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Frobenius form</td>
+<td>$\operatorname{tr}(\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde p))$</td>
+<td>$4I_4$</td>
+<td>$(4,0)$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The determinant is not a quadratic form.</strong> The single most important difference from the complex model: on the four real coordinates the determinant is a quartic, so the model does not carry the Euclidean form as a determinant. The Euclidean form is its square root, and the square root is the norm, which is not a polynomial in the matrix entries. This is why the regular model cannot be used to compute the norm by a determinant, and why the complex model is the one used for the spectral and polar theory.</p>
+<p><strong>The trace form is the Lorentzian one.</strong> It is of signature $(1,3)$ and invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$; it is the form under which the unit group acts by isometries, and it is the same form as in the complex model up to the factor $4$ against $2$.</p>
+<p><strong>The Frobenius form is the metric.</strong> It is positive definite, equal to $4$ times the Euclidean form on the coordinates, and it is the inner product with respect to which the transpose is the adjoint. Its restriction to the image is $4N$, so the image is a conformal copy of $\mathbb{R}^{4}$ inside the ambient.</p>
+<p><strong>The absence.</strong> There is no complex Hermitian form on the regular model, because there is no complex structure. The Hermitian/anti-Hermitian splitting of the complex model is replaced here by the symmetric/skew splitting with respect to the transpose, of the next section, and the two are not the same decomposition: the first needs the complex scalar, the second does not.</p>
+<h2 id="the-subspaces">The Subspaces</h2>
+<p><strong>The tabulation.</strong> The distinguished subspaces of the algebra as matrix conditions in the regular model:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>algebra condition</th>
+<th>matrix condition</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar line</td>
+<td>$\vec v=0$</td>
+<td>$\mathsf{M}_4(\tilde q)=q_tI_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>pure part $V$</td>
+<td>$q_t=0$</td>
+<td>$\operatorname{tr}=0$ and $\mathsf{M}_4(\tilde q)^{\mathsf T}=-\mathsf{M}_4(\tilde q)$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>complex line $L_x$</td>
+<td>$q_y=q_z=0$</td>
+<td>the matrix of the element $q_te_t+q_x\vec e_x$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>complex line $L_y$</td>
+<td>$q_x=q_z=0$</td>
+<td>the matrix of $q_te_t+q_y\vec e_y$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>complex line $L_z$</td>
+<td>$q_x=q_y=0$</td>
+<td>the matrix of $q_te_t+q_z\vec e_z$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>symmetric part</td>
+<td>—</td>
+<td>$\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>skew part</td>
+<td>$q_t=0$</td>
+<td>$\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The symmetric part is scalar.</strong> This is the exact analogue of the statement, in the complex model, that the Hermitian part of an element of the image is scalar. The decomposition is $1+3$ in both models, and in both it is the decomposition into the scalar line and the traceless part; what differs is the involution used to define it, the conjugate transpose there and the ordinary transpose here.</p>
+<p><strong>Proof of the symmetric part.</strong> A Cayley matrix is $q_tI_4$ plus a skew-symmetric part, because the three generators $A_1,A_2,A_3$ are skew-symmetric. Hence $\tfrac12(\mathsf{M}_4+\mathsf{M}_4^{\mathsf T})=q_tI_4$ and $\tfrac12(\mathsf{M}_4-\mathsf{M}_4^{\mathsf T})=\mathsf{M}_4(\vec v)$.</p>
+<p><strong>The complex lines are not matrix subalgebras of the ambient.</strong> The image of $L_x$ is a two-dimensional subspace of the ambient consisting of matrices commuting with $\mathsf{M}_4(\vec e_x)$; it is a subalgebra of the image, and hence a copy of $\mathbb{C}$, but it is not a subalgebra of $M_4(\mathbb{R})$ closed under transposition. The distinction matters for the operators article, where the complex lines index the strata of the length.</p>
+<p><strong>The double centraliser, restated.</strong> The subspace $L(\mathbb{H})$ and the subspace $R(\mathbb{H})$ are mutual centralisers, of dimension four each, meeting in the scalar line and spanning seven dimensions. So the image is the first of the two copies and the second copy is its centraliser, and the pair together is a seven-dimensional subspace of the ambient. This is the structural statement that the complex model could not make, because there the two copies were related by an anti-linear map and not by commutation inside one real ambient: there the pair spanned a space of operators on a different space.</p>
+<p><strong>The comparison with the complex case.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$M_2(\mathbb{C})_{\mathbb{H}}$</th>
+<th>$M_4(\mathbb{R})_{\mathbb{H}_L}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>$2$ over $\mathbb{C}$</td>
+<td>$4$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>$2q_t$</td>
+<td>$4q_t$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$N$</td>
+<td>$N^{2}$</td>
+</tr>
+<tr>
+<td>Euclidean form</td>
+<td>the determinant</td>
+<td>the square root of the determinant</td>
+</tr>
+<tr>
+<td>the involution of the ambient</td>
+<td>the conjugate transpose</td>
+<td>the signed transpose $D\cdot^{\mathsf T}D$</td>
+</tr>
+<tr>
+<td>the symmetric/Hermitian part</td>
+<td>scalar, via the conjugate transpose</td>
+<td>scalar, via the transpose</td>
+</tr>
+<tr>
+<td>spectral projectors</td>
+<td>inside the model</td>
+<td>outside the image</td>
+</tr>
+<tr>
+<td>the complex structure</td>
+<td>intrinsic</td>
+<td>absent</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two models, one representation, and the table is the complete dictionary between them. The determinants differ by a square, the traces by a factor two, and the involutions by the presence or absence of a complex conjugation, and nothing else differs.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The regular representation $\mathsf{M}_4$ is the matrix of left multiplication in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and the Cayley matrix is displayed entrywise.</li>
+<li>It is the minimal faithful real model, and it is the realification of the standard complex model; that single fact explains the factor two on the trace and the square on the determinant.</li>
+<li>Multiplicativity is associativity, and the image is a four-dimensional subalgebra of $M_4(\mathbb{R})$.</li>
+<li>The trace is $4q_t$, the pure part is the trace-zero subspace, and the trace form has signature $(1,3)$ with Gram $\operatorname{diag}(4,-4,-4,-4)$.</li>
+<li>The determinant is $N^{2}$, a square of a positive number, positive on all nonzero elements, with no null cone; the model detects invertibility exactly.</li>
+<li>The characteristic polynomial is $(\lambda^{2}-2q_t\lambda+N)^{2}$, the eigenvalues are $q_t\pm i\lVert\vec v\rVert$ each twice, and the matrix is similar to two identical rotation-scaling blocks.</li>
+<li>The adjugate is $N\mathsf{M}_4(\tilde q^{*})$, the inverse is $\mathsf{M}_4(\tilde q^{*})/N$, and every member of the image is conformal normal with singular values $\sqrt N$ four times.</li>
+<li>The right multiplication is the signed transpose of the left one, $R_{\tilde q}=D\mathsf{M}_4(\tilde q)^{\mathsf T}D$, and the two families are mutual centralisers meeting in the scalars.</li>
+<li>The symmetric part of a Cayley matrix is scalar and the skew part is the pure part, which is the regular form of the Hermitian/anti-Hermitian splitting of the complex model.</li>
+<li>The two models are one representation read twice; the table of the last section is the complete dictionary between them.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_4$</td>
+<td>the left regular representation $\mathbb{H}\to M_4(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$L_{\tilde q}$</td>
+<td>left multiplication, equal to $\mathsf{M}_4(\tilde q)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$R_{\tilde q}$</td>
+<td>right multiplication, equal to $D\mathsf{M}_4(\tilde q)^{\mathsf T}D$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the sign matrix $\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$A_1,A_2,A_3$</td>
+<td>the Cayley matrices of $\vec e_x,\vec e_y,\vec e_z$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the norm, equal to $\sqrt{\det\mathsf{M}_4(\tilde q)}$</td>
+<td><em>Norm and Invertibility in the Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\lVert\vec v\rVert$</td>
+<td>the modulus of the pure part</td>
+<td><em>Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the rotation-scaling block $\begin{pmatrix}q_t&-\lVert\vec v\rVert\\ \lVert\vec v\rVert&q_t\end{pmatrix}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>the units of norm one, whose image lies in $SO(4)$</td>
+<td><em>The Pin and Spin Groups of the Quaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the pure part, the trace-zero subspace of the image</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Arthur Albert, <em>Structure of Algebras</em> (American Mathematical Society, 1939), for the regular representation of a central simple algebra and its minimal faithful degree.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Cayley matrix of a quaternion and the two-sided action of $\mathbb{H}$.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the double centraliser theorem and its use in the structure theory.</li>
+<li>Fuzhen Zhang, <em>Matrix Theory</em> (Springer, 2011), for the realification of a complex matrix, the identities $\operatorname{tr}_\mathbb{R}=2\operatorname{Re}\operatorname{tr}_\mathbb{C}$ and $\det_\mathbb{R}=\lvert\det_\mathbb{C}\rvert^{2}$, and the real Jordan form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

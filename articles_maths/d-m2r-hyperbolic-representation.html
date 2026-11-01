@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{R})$ Hyperbolic Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-hyperbolic-representation"><strong>$M_2(\mathbb{R})$ Hyperbolic Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The model.</strong> Left multiplication by the split-complex number $Q=q+jq'$ in the basis $(1,j)$ is the $\mathbb{R}$-linear map $X\mapsto QX$ of the two-dimensional algebra, and its matrix is the <strong>hyperbolic Cayley matrix</strong></p>
+<p>$$
+\mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}=qI_2+q'J,\qquad J=\begin{pmatrix}0&1\\ 1&0\end{pmatrix},\qquad J^{2}=+I_2,
+$$</p>
+<p>the sign of the square of the generator being the whole difference from the complex model. The map is an injective $\mathbb{R}$-algebra homomorphism, and its image is the two-dimensional algebra of <strong>hyperbolic</strong> matrices.</p>
+<p><strong>The same size as the algebra, and the first split model.</strong> The algebra is two-dimensional and the ambient four-dimensional, as in the complex category; but the algebra is now $\mathbb{R}[j]/(j^{2}-1)\cong\mathbb{R}\times\mathbb{R}$, a product of two copies of the field, and the model displays the consequences one by one:</p>
+<ul>
+<li>two idempotents, hence a Peirce frame, two minimal ideals, two corners and a decomposition of every element;</li>
+<li>two null lines, hence zero divisors, and a rank that drops to one on them;</li>
+<li>a determinant that is indefinite, with zero set a pair of lines and not a point;</li>
+<li>a unit group with four components and a hyperbolic angle instead of a circle;</li>
+<li>the same two dimensions as the complex case, so that every difference between the two articles is a difference of the algebras and not of their sizes.</li>
+</ul>
+<p>That last point is what makes this category the cleanest comparison in the block. The complex and split-complex models are the same map, $qI_2+q'J$, with $J^{2}=\pm I_2$; so the two articles can be read side by side, entry against entry, and the sign is the only parameter.</p>
+<p><strong>A correction to the received picture, recorded here.</strong> It is often said that at a zero divisor the two spectral projectors coalesce and the matrix is no longer diagonalisable. Both halves are false in this algebra, and the falsehood is instructive. The algebra is reduced, $x^{2}-1$ has distinct roots, so every element is semisimple and every matrix of the image is diagonalisable over $\mathbb{R}$, zero divisor or not. The projectors $\rho_\pm$ are the <em>fixed</em> matrices $\mathsf{M}_2(\Pi_\pm)$, independent of $Q$, and they never coalesce. What a zero divisor loses is the inverse, the modulus and the polar word — not the diagonalisation. The confusion comes from the nilpotent case, which belongs to the dual numbers and to the biquaternions and not here; the correct statement is made in the section on the spectral projectors.</p>
+<p><strong>Boundaries.</strong> The algebra, its idempotents, its ideals and the general representation theory are <em>Split-Complex Linear Representations</em>, <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em> and <em>Split-Complex Two-Component Element Representation</em>; the norm, the unit criterion and the null cone are <em>Norm and Invertibility in the Split-Complex Algebra</em>; the spectrum and the eigenbasis are <em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em> and <em>Relations between the Split Norm and Spectral Regularity and Degeneracy</em>; the polar decomposition is <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and <em>Exponential Polar Decomposition of Split-Complex Numbers</em>. The operators of this model are <em>$M_2(\mathbb{R})$ Hyperbolic Representation : Operators</em>.</p>
+<p><strong>Conventions.</strong> The basis is $(1,j)$ with $j^{2}=+1$; the element is $Q=q+jq'$; the conjugate is $\bar Q=q-jq'$; the norm is $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$. The idempotents are $\Pi_\pm=\tfrac12(1\pm j)$ and the idempotent coordinates are $\lambda_\pm=q\pm q'$. The generator of the image is $J$ and the split form is $g=\operatorname{diag}(1,-1)$. The transpose is written $^{\mathsf T}$.</p>
+<h2 id="the-frame">The Frame</h2>
+<p><strong>Definition.</strong> The <strong>hyperbolic Cayley matrix</strong> of $Q$ is the matrix whose columns are the coordinate columns of $Q\cdot1$ and $Q\cdot j$:</p>
+<p>$$
+\mathsf{M}_2(Q)=\bigl(\ Q\cdot1\ \big|\ Q\cdot j\ \bigr)=\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}.
+$$</p>
+<p><strong>The reading.</strong> The first column is $Q$ itself; the second is $Qj=q'+jq$, which is the first column with its two entries exchanged. So the matrix is <strong>symmetric</strong>, and the second column is obtained from the first by the transposition of the two coordinates, which is the reflection $j$ acting on the left. The map is injective by inspection, since $Q$ is the first column.</p>
+<p><strong>The four entries.</strong> Two independent entries against four, as in the complex case, and the shape condition is the same shape condition read with the other sign: $q$ on the diagonal and $q'$ on both off-diagonal positions, where the complex model had $-q'$ and $+q'$.</p>
+<p><strong>The hyperbolic unit.</strong> The matrix</p>
+<p>$$
+J=\mathsf{M}_2(j)=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}
+$$</p>
+<p>is the swap, $J^{2}=I_2$, of eigenvalues $+1$ and $-1$ and of determinant $-1$. It is the model's name for $j$, and the identity $J^{2}=I_2$ is the matrix form of $j^{2}=1$. Its two eigenlines are the diagonal and the anti-diagonal, which are the <strong>two null directions</strong>: the eigenvectors of $J$ are $v_+=(1,1)$ and $v_-=(1,-1)$, and they are exactly the null vectors of the split form, and exactly the coordinate lines of the Peirce frame. This coincidence is the content of the whole article, and it is the reason the split model is diagonalised by a single matrix whereas the complex model needs a complex change of basis.</p>
+<p><strong>The image.</strong> The image is</p>
+<p>$$
+M_2(\mathbb{D})=\left\{\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}:q,q'\in\mathbb{R}\right\}=\mathbb{R}[J],
+$$</p>
+<p>of dimension two, commutative, with $I_2$ and $J^{2}=I_2$; it is $\mathbb{R}[x]/(x^{2}-1)\cong\mathbb{R}\times\mathbb{R}$. So the image is a <strong>split semisimple</strong> algebra: it is a product of two copies of $\mathbb{R}$, not a field, and the two factors are the two idempotents. This is the first place where the series produces an algebra with a nontrivial Peirce frame at the smallest possible size.</p>
+<p><strong>Theorem (the image is the centraliser of $J$).</strong> For $C=\begin{pmatrix}p&n\\ s&t\end{pmatrix}$,</p>
+<p>$$
+CJ=JC\iff n=s\ \text{and}\ p=t,
+$$</p>
+<p>so the centraliser of $J$ in $M_2(\mathbb{R})$ is the image, of dimension two.</p>
+<p><strong>Proof.</strong> $CJ=\begin{pmatrix}n&p\\ t&s\end{pmatrix}$ and $JC=\begin{pmatrix}s&t\\ p&n\end{pmatrix}$; equality gives the two conditions.</p>
+<p><strong>The Peirce frame, and the change that reaches it.</strong> The idempotents of the algebra are $\Pi_\pm=\tfrac12(1\pm j)$, and their images are the two rank-one projectors</p>
+<p>$$
+\rho_+=\mathsf{M}_2(\Pi_+)=\frac12\begin{pmatrix}1&1\\ 1&1\end{pmatrix},\qquad
+\rho_-=\mathsf{M}_2(\Pi_-)=\frac12\begin{pmatrix}1&-1\\ -1&1\end{pmatrix}.
+$$</p>
+<p>The change of basis from $(1,j)$ to $(\Pi_+,\Pi_-)$ is the Hadamard matrix</p>
+<p>$$
+H=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\ 1&-1\end{pmatrix},\qquad H^{2}=I_2,\qquad H^{\mathsf T}=H,\qquad \det H=-1,
+$$</p>
+<p>and it diagonalises the whole image at once:</p>
+<p>$$
+H\,\mathsf{M}_2(Q)\,H=\operatorname{diag}(\lambda_+,\lambda_-),\qquad \lambda_\pm=q\pm q'.
+$$</p>
+<p><strong>The reading of the change.</strong> Three properties are worth separating.</p>
+<ul>
+<li>Because $H^{-1}=H^{\mathsf T}=H$, the diagonalisation is <strong>at the same time a similarity and a congruence</strong>: the map $M\mapsto HMH$ is both, so the change of basis and the change of quadratic form are one operation. In the complex case the diagonalising matrix was unitary and there was no real congruence formula at all; here the congruence exists and it is the statement.</li>
+<li>The congruence sends the split form to the generator: $HgH=J$, so the Peirce frame is the frame in which the norm's matrix becomes the algebra's own generator. The two null lines of $g$ become the two coordinate axes, which is what a Peirce frame is.</li>
+<li>The matrix $H$ is <strong>orthogonal</strong>, hence an isometry of the Euclidean plane, and it is <strong>not</strong> in the image: its diagonal entries are $\pm1/\sqrt2$, unequal. So the Peirce frame is not reached by a conformal map of the split form; it is reached by a Euclidean reflection. The reflection axis is the line at $\pi/8$, half of the quarter turn between the frame and the null lines. That is the only place in the category where a half angle appears, and it is an angle of the plane and not a weight of a representation.</li>
+</ul>
+<p><strong>The two readings of the frame.</strong> The basis $(1,j)$ is the <strong>element frame</strong>: its coordinates are the coefficients of $Q$, and the matrix in it is the Cayley matrix. The basis $(\Pi_+,\Pi_-)$ is the <strong>spectral frame</strong>: its coordinates are the idempotent coordinates $\lambda_\pm$, and the matrix in it is diagonal. The first frame is the same for every element, and so is the second: the algebra is commutative, so the two frames do not depend on $Q$. This is the sharpest operational difference from the matrix algebras of the block, where the spectral frame moves with the element.</p>
+<p><strong>The complexified model of size four, as a closing subsection.</strong> Extending scalars to $\mathbb{C}$ gives $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}[j]/(j^{2}-1)\cong\mathbb{C}\times\mathbb{C}$, of real dimension four, and its real regular representation in the basis $1,i,j,ij$ is</p>
+<p>$$
+\mathsf{M}_4(X)=\begin{pmatrix}a&-b&c&-d\\ b&a&d&c\\ c&-d&a&-b\\ d&c&b&a\end{pmatrix},\qquad X=q+jq',\quad q=a+ib,\quad q'=c+id,
+$$</p>
+<p>with</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_4(X)=4a,\qquad \det\mathsf{M}_4(X)=\lvert q^{2}-q'^{2}\rvert^{2}=\lvert\lambda_+\lambda_-\rvert^{2},
+$$</p>
+<p>and the four real eigenvalues $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$. This is <strong>not a second model of $\mathbb{D}$</strong>: it is the regular representation of the complexification, which is the reduced biquaternion algebra $\mathbb{C}\times\mathbb{C}$, and the $2\times2$ model of this article is the model of $\mathbb{D}$ itself. It is recorded here as a section because the determinant is a square, $N_{\mathbb{C}}^{2}$, exactly as in the quaternion regular model, and because it shows the pattern of the series: realifications square the determinant and double the size.</p>
+<h2 id="the-left-and-the-right-matrices">The Left and the Right Matrices</h2>
+<p><strong>The two families coincide.</strong> The algebra is commutative, so</p>
+<p>$$
+R_Q=L_Q=\mathsf{M}_2(Q),
+$$</p>
+<p>and there is one copy of the algebra in the ambient, of dimension two.</p>
+<p><strong>The double centraliser, in its degenerate form.</strong> By the centraliser theorem the centraliser of the image is the image, so</p>
+<p>$$
+C\bigl(\mathsf{M}_2(\mathbb{D})\bigr)=\mathsf{M}_2(\mathbb{D}),
+$$</p>
+<p>and the image is a <strong>maximal commutative subalgebra</strong> of $M_2(\mathbb{R})$: no larger commutative subalgebra contains it, because anything commuting with it is already in it. So the algebra, its centraliser and its bicommutant are one subspace of dimension two, and the double centraliser theorem holds with all three terms equal.</p>
+<p><strong>Why the collapse.</strong> The map $A\otimes A^{\mathrm{op}}\to\operatorname{End}_{\mathbb{R}}(A)$, $(a,b)\mapsto L_aR_b$, has for its image the two-sided family and for its domain a space of dimension four. Here the map factors through the multiplication $A\otimes A\to A$ because the algebra is commutative, so its image is the product of the family with itself, which is the family: dimension two, not four. The general theorem — the map is an isomorphism exactly when $A$ is central simple — fails here at the first hypothesis, since $\mathbb{R}\times\mathbb{R}$ is commutative and therefore has a nontrivial centre. The operator article draws the consequence.</p>
+<p><strong>The involution is not the transpose.</strong> In the complex model the conjugation of the algebra was transposition of matrices. Here it is not, and the reason is that every matrix of the image is already symmetric:</p>
+<p>$$
+\mathsf{M}_2(Q)^{\mathsf T}=\mathsf{M}_2(Q),\qquad \mathsf{M}_2(\bar Q)=\begin{pmatrix}q&-q'\\ -q'&q\end{pmatrix}=g\,\mathsf{M}_2(Q)^{\mathsf T}g,
+$$</p>
+<p>with $g=\operatorname{diag}(1,-1)$. So the transpose does nothing, and the involution that produces the conjugate is the transpose <strong>conjugated by the split form</strong>. The complex category had adjugate $=$ transpose $=$ image of the conjugate; here only the last two hold with the correction of $g$, and the adjugate is $g\mathsf{M}_2(Q)^{\mathsf T}g$ as well. This is the first appearance in the series of a <strong>signed transpose</strong>, and it is the same device the quaternion models needed.</p>
+<h2 id="the-product">The Product</h2>
+<p><strong>Theorem (multiplicativity).</strong> For all $Q,P$,</p>
+<p>$$
+\mathsf{M}_2(Q)\mathsf{M}_2(P)=\mathsf{M}_2(QP).
+$$</p>
+<p><strong>Proof.</strong> Associativity of the algebra. Concretely, with $P=p+jp'$,</p>
+<p>$$
+\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}\begin{pmatrix}p&p'\\ p'&p\end{pmatrix}
+=\begin{pmatrix}qp+q'p'&qp'+q'p\\ qp'+q'p&qp+q'p'\end{pmatrix}
+=\mathsf{M}_2(QP).
+$$</p>
+<p><strong>The image is closed</strong> under products, sums and real scalars, contains $I_2$, is two-dimensional, commutative and semisimple, and is not a field.</p>
+<p><strong>The Peirce arithmetic in the image.</strong> With $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$,</p>
+<p>$$
+\rho_+^{2}=\rho_+,\qquad \rho_-^{2}=\rho_-,\qquad \rho_+\rho_-=0,\qquad \rho_++\rho_-=I_2,\qquad \rho_\pm^{\mathsf T}=\rho_\pm,
+$$</p>
+<p>and for every element</p>
+<p>$$
+\mathsf{M}_2(Q)=\lambda_+\rho_++\lambda_-\rho_- .
+$$</p>
+<p>So the image contains a <strong>complete system of two orthogonal rank-one projectors summing to the identity</strong>, and every member of the image is a linear combination of them. The off-diagonal matrix units $E_{12}$ and $E_{21}$ are not in the image, because the image is commutative; so the image is a <em>commutative</em> Peirce frame, of the diagonal type, and the ambient's full system of four matrix units is not reachable.</p>
+<p><strong>The zero divisors.</strong> Since $\mathsf{M}_2(QP)=\mathsf{M}_2(Q)\mathsf{M}_2(P)$ and the determinant is multiplicative,</p>
+<p>$$
+\mathsf{M}_2(Q)\mathsf{M}_2(P)=0\iff\det\mathsf{M}_2(Q)\det\mathsf{M}_2(P)=0,
+$$</p>
+<p>so the image has zero divisors exactly on the two null lines, and they multiply by the rule $\rho_+\rho_-=0$: a null element of one line annihilates the other line and nothing else. The ambient has nilpotents ($E_{12}^{2}=0$); the image has none, because $x^{2}-1$ is squarefree.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>Theorem (the trace).</strong> For every $Q$,</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(Q)=2q=2\operatorname{Re}Q=\lambda_++\lambda_- .
+$$</p>
+<p><strong>Proof.</strong> Both diagonal entries are $q$.</p>
+<p><strong>The scalar part.</strong> It is recovered as $\tfrac12\operatorname{tr}$, and</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(Q)=0\iff Q\in j\mathbb{R}_{\mathbb{D}},
+$$</p>
+<p>so the trace projects onto the real line and its kernel is the $j$-line. In the spectral frame the trace is the sum of the two eigenvalues, which is the general statement; in the complex case the same formula held, with complex eigenvalues.</p>
+<p><strong>The trace form.</strong> With $P=p+jp'$,</p>
+<p>$$
+\operatorname{tr}\bigl(\mathsf{M}_2(Q)\mathsf{M}_2(P)\bigr)=2(qp+q'p'),
+$$</p>
+<p>so the Gram matrix of the form $(Q,P)\mapsto\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$ is</p>
+<p>$$
+G_{\operatorname{tr}}=2I_2,\qquad\text{signature }(2,0).
+$$</p>
+<p><strong>The reading, and the reversal.</strong> The trace form of the split-complex algebra is <strong>positive definite</strong>: it is the Euclidean form of the coefficient plane, twice the standard inner product. In the complex category the trace form was the Minkowski form $\operatorname{diag}(2,-2)$ and the determinant was the Euclidean one; here the two forms have exchanged roles. This is the sharpest single contrast of the block, and it is worth stating as a rule:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>determinant form</th>
+<th>trace form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Euclidean, $(2,0)$</td>
+<td>Minkowski, $(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Minkowski, $(1,1)$</td>
+<td>Euclidean, $(2,0)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the exchange happens.</strong> The trace of the square is the sign of the algebra: $\operatorname{tr}\mathsf{M}_2(1)^{2}=+2$ and $\operatorname{tr}\mathsf{M}_2(j)^{2}=\operatorname{tr}(J^{2})=+2$ here, whereas for the complex model $\operatorname{tr}(J^{2})=\operatorname{tr}(-I_2)=-2$. The trace form reads the sign of $j^{2}$ <strong>positively on both generators</strong>, since both are $+I_2$; the determinant reads it <strong>negatively on the second</strong>, since $\det J=-1$. So the two forms of the plane are the two ways of signing the same data, and the algebra chooses the split signature for the multiplicative form and the definite one for the trace.</p>
+<p><strong>What the trace does not see.</strong> The $j$-coordinate, exactly as in the complex case: the trace is a coordinate. It is blind to the sign of the norm and to the null cone.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>Theorem (the determinant is the split norm).</strong></p>
+<p>$$
+\det\mathsf{M}_2(Q)=q^{2}-q'^{2}=\langle Q\rangle_{*}=\lambda_+\lambda_- .
+$$</p>
+<p><strong>Proof.</strong> $q^{2}-q'^{2}$ from the display; also the determinant is the product of the eigenvalues $q\pm q'$.</p>
+<p><strong>The reading.</strong> This is the indefinite determinant. Its zero set in the algebra is the pair of lines $q=\pm q'$, which is the <strong>null cone</strong> of the split form and the <strong>zero-divisor set</strong> of the algebra. The determinant is therefore not a norm in the analytic sense: it is negative on the region $\lvert q\rvert<\lvert q'\rvert$, and it vanishes on two lines rather than at a point.</p>
+<p><strong>The four consequences.</strong></p>
+<ul>
+<li><strong>Signature.</strong> The determinant form on the algebra has Gram matrix $g=\operatorname{diag}(1,-1)$ and signature $(1,1)$: it is the Minkowski form of the plane, and the algebra is a Lorentzian plane with the two null lines for light rays.</li>
+<li><strong>Rank drop.</strong> On the null lines the matrix has rank one, not zero: a null element $Q=\lambda_+\Pi_+$ gives $\mathsf{M}_2(Q)=\lambda_+\rho_+$, of image the line $\mathbb{R}\Pi_+$ and kernel the line $\mathbb{R}\Pi_-$. So the image of the model contains matrices of rank two, one and zero, and the rank is one exactly on the null cone.</li>
+<li><strong>Unit criterion.</strong> $Q$ is a unit $\iff\langle Q\rangle_{*}\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. As in the complex case all four statements coincide; what changes is that the first set is now the complement of two lines rather than of a point.</li>
+<li><strong>Multiplicativity.</strong> $\det(\mathsf{M}_2(Q)\mathsf{M}_2(P))=\langle Q\rangle_{*}\langle P\rangle_{*}=\langle QP\rangle_{*}$, without correction.</li>
+</ul>
+<p><strong>The geometry.</strong> The determinant is the signed area scaling, and it is indefinite because the image contains reflections: $\mathsf{M}_2(j)=J$ has determinant $-1$ and reverses orientation. So the image meets both components of $GL_2(\mathbb{R})$, and the unit group has four components rather than two.</p>
+<p><strong>The comparison with the two neighbouring categories.</strong> In the complex algebra the zero set of the determinant was a point and the algebra a field. In the dual numbers, treated next in Part VI, the determinant is degenerate and its zero set a whole line, with nilpotents. Here the zero set is a pair of lines and the algebra is reduced. So the sign of the determinant's zero set — none, two lines, one line — is the whole trichotomy of the first three categories, and the model displays it as the sign of $J^{2}$.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<p><strong>The eigenvalues.</strong> The characteristic polynomial is</p>
+<p>$$
+\chi(\lambda)=\lambda^{2}-2q\lambda+(q^{2}-q'^{2})=(\lambda-\lambda_+)(\lambda-\lambda_-),\qquad \lambda_\pm=q\pm q',
+$$</p>
+<p>with discriminant $4q'^{2}$. The eigenvalues are real for every $Q$, and they are distinct exactly when $q'\neq0$; they coincide exactly when $Q$ is a scalar $q$, in which case $\mathsf{M}_2(Q)=qI_2$.</p>
+<p><strong>The projectors.</strong> The two idempotents give the two projectors</p>
+<p>$$
+\rho_+=\frac12\begin{pmatrix}1&1\\ 1&1\end{pmatrix},\qquad \rho_-=\frac12\begin{pmatrix}1&-1\\ -1&1\end{pmatrix},
+$$</p>
+<p>of rank one, with $\rho_++\rho_-=I_2$ and $\rho_+\rho_-=0$, and the spectral decomposition</p>
+<p>$$
+\mathsf{M}_2(Q)=\lambda_+\rho_++\lambda_-\rho_-
+$$</p>
+<p>holds for <strong>every</strong> $Q$, including the scalar case, where the formula reads $q(\rho_++\rho_-)=qI_2$ and the two coefficients are equal. So the two projectors never coalesce; what fails at $q'=0$ is only the <em>uniqueness</em> of the decomposition, not its existence.</p>
+<p><strong>The Peirce frame.</strong> The two projectors are the images of the two idempotents, and they are the diagonal matrix units of the model in its own spectral frame:</p>
+<p>$$
+H\rho_+H=\begin{pmatrix}1&0\\ 0&0\end{pmatrix}=E_{11},\qquad H\rho_-H=\begin{pmatrix}0&0\\ 0&1\end{pmatrix}=E_{22}.
+$$</p>
+<p>So the image is, up to conjugation by the Euclidean reflection $H$, the diagonal subalgebra of $M_2(\mathbb{R})$. The Peirce frame, the diagonal matrix units and the spectral projectors are here one object in three notations, and this is the first category in which that identification is exact and complete.</p>
+<p><strong>The zero divisor case, stated correctly.</strong> Let $Q\neq0$ be null, say $Q=\lambda_+\Pi_+$ with $\lambda_+\neq0$. Then</p>
+<p>$$
+\mathsf{M}_2(Q)=\lambda_+\rho_+,\qquad \operatorname{rank}=1,\qquad \operatorname{im}=\mathbb{R}\Pi_+,\qquad \ker=\mathbb{R}\Pi_-,
+$$</p>
+<p>the eigenvalues are $\lambda_+$ and $0$, they are <strong>distinct</strong>, and the matrix is <strong>diagonalisable</strong>, with the same fixed projectors as every other element. The claim that the projectors coalesce or that the matrix is not diagonalisable is false: there is no nilpotent in the image, and the Jordan form is diagonal at every element. What the zero divisor loses is the inverse, the modulus and the polar decomposition; it does not lose the eigenbasis. The nilpotent case belongs to the dual numbers, where $j^{2}=0$ and the discriminant vanishes identically.</p>
+<p><strong>The eigenbasis.</strong> The eigenvectors are</p>
+<p>$$
+u_+=\frac{1}{\sqrt2}\begin{pmatrix}1\\ 1\end{pmatrix},\qquad u_-=\frac{1}{\sqrt2}\begin{pmatrix}1\\ -1\end{pmatrix},
+$$</p>
+<p>the two null directions, orthonormal for the Euclidean trace form and both null for the split form. The diagonalising matrix has them for columns, and it is $H$.</p>
+<p><strong>The two spinor lines.</strong> The two eigenspaces are the two minimal ideals</p>
+<p>$$
+S_+=\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,\qquad S_-=\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,\qquad \mathbb{D}=S_+\oplus S_-\cong\mathbb{R}\oplus\mathbb{R},
+$$</p>
+<p>each of dimension one, and the algebra is the direct sum of them. In the model they are the two coordinate axes of the spectral frame, and they are also the two null lines of the split form. So the algebraic decomposition and the geometric null structure are the same pair of lines, which is the identity that the whole split-complex story rests on.</p>
+<h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
+<p><strong>Theorem (the adjugate is the signed transpose).</strong></p>
+<p>$$
+\operatorname{adj}\mathsf{M}_2(Q)=\begin{pmatrix}q&-q'\\ -q'&q\end{pmatrix}=\mathsf{M}_2(\bar Q)=g\,\mathsf{M}_2(Q)^{\mathsf T}g,
+$$</p>
+<p>and therefore</p>
+<p>$$
+\mathsf{M}_2(Q)^{-1}=\frac{\mathsf{M}_2(\bar Q)}{\langle Q\rangle_{*}}=\mathsf{M}_2\!\left(\frac{\bar Q}{\langle Q\rangle_{*}}\right),\qquad \langle Q\rangle_{*}\neq0 .
+$$</p>
+<p><strong>Proof.</strong> The cofactor formula applied to the symmetric display gives $\begin{pmatrix}q&-q'\\ -q'&q\end{pmatrix}$; the two other expressions are the definitions.</p>
+<p><strong>The comparison with the complex case.</strong> There the adjugate, the transpose and the image of the conjugate were one matrix. Here they are two objects and a correction: the transpose is the matrix itself, the adjugate is the signed transpose, and the image of the conjugate is the adjugate. So the model separates the three operations that the complex model identifies, and the separating device is the split form $g$. This is the same device that relates the two one-sided families in the quaternion category, in the form $D\mathsf{M}D$; it appears here for the first time and at the smallest size.</p>
+<p><strong>The conformal identity.</strong> Multiplying the identity $\operatorname{adj}M=gM^{\mathsf T}g$ by $M$ gives</p>
+<p>$$
+M^{\mathsf T}gM=\det(M)\,g,
+$$</p>
+<p>that is</p>
+<p>$$
+\mathsf{M}_2(Q)^{\mathsf T}g\,\mathsf{M}_2(Q)=\langle Q\rangle_{*}\,g .
+$$</p>
+<p><strong>The reading.</strong> Every matrix of the image is <strong>conformal for the split form</strong>, with conformal factor the norm. It is the exact analogue of the complex identity $M^{\mathsf T}M=NI_2$, and it is the statement that the image lies in the conformal group of the Minkowski plane:</p>
+<p>$$
+\mathsf{M}_2(\mathbb{D}^{\times})\subset CO(1,1),\qquad \mathsf{M}_2(\{Q:\langle Q\rangle_{*}=\pm1\})=O(1,1).
+$$</p>
+<p><strong>The four components.</strong> The unit group is</p>
+<p>$$
+\mathbb{D}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
+$$</p>
+<p>with components labelled by the pair of signs of the two idempotent coordinates $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$; in the matrix picture they are the four components of $O(1,1)$, distinguished by the sign of the determinant and by the timelike or spacelike nature of the two columns. The identity component is</p>
+<p>$$
+SO^{+}(1,1)=\left\{\begin{pmatrix}\cosh\phi&\sinh\phi\\ \sinh\phi&\cosh\phi\end{pmatrix}:\phi\in\mathbb{R}\right\}=\{\mathsf{M}_2(e^{\phi j})\},
+$$</p>
+<p>the one-parameter group of hyperbolic rotations, which is the <strong>boost</strong>. So $O(1,1)$ is to this category what $SO(2)$ was to the complex one, and the exponential of $j\phi$ is the parametrisation of its identity component.</p>
+<p><strong>The non-compactness.</strong> $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of units follows from the signature of the determinant.</p>
+<h2 id="the-norms">The Norms</h2>
+<p><strong>The four forms.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>definition</th>
+<th>Gram on $(1,j)$</th>
+<th>signature</th>
+<th>multiplicative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split norm</td>
+<td>$\langle Q\rangle_{*}=\det\mathsf{M}_2(Q)$</td>
+<td>$\operatorname{diag}(1,-1)$</td>
+<td>$(1,1)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$</td>
+<td>$2I_2$</td>
+<td>$(2,0)$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Frobenius form</td>
+<td>$\operatorname{tr}(\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(P))$</td>
+<td>$2I_2$</td>
+<td>$(2,0)$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>modulus</td>
+<td>$\lvert Q\rvert=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$</td>
+<td>—</td>
+<td>—</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The split norm is Minkowski.</strong> Its Gram matrix is $g$, its signature $(1,1)$, its zero set two lines. It is the only multiplicative form, and it is indefinite.</p>
+<p><strong>The trace and Frobenius forms coincide here.</strong> Both have Gram $2I_2$, because every matrix of the image is symmetric, so $M^{\mathsf T}=M$ and the two forms agree on the image. In the complex model the two forms differed, because the image contained skew matrices. So the split category has one Euclidean form and not two, and the two coincide for the structural reason that the image is a space of symmetric matrices.</p>
+<p><strong>The conformal parameter.</strong> The identity $M^{\mathsf T}gM=\langle Q\rangle_{*}g$ says that the image acts on the Minkowski plane by similarities of factor $\langle Q\rangle_{*}$; the Euclidean form is not preserved and is not conformal for the image in general, since $\operatorname{tr}(M^{\mathsf T}M)=2(q^{2}+q'^{2})\neq2\langle Q\rangle_{*}$ unless $qq'=0$. So the two forms of the plane play strictly different roles: the definite one measures the coefficients, the indefinite one is the one the algebra respects.</p>
+<p><strong>The absence of a Hermitian form.</strong> As in the complex model there is no Hermitian form on the image, and the involution is the signed transpose. The symmetric/skew splitting of the image is degenerate here: every member is symmetric, so the skew part of the image is zero. What replaces the splitting is the Peirce splitting into the two null lines.</p>
+<h2 id="the-subspaces">The Subspaces</h2>
+<p><strong>The tabulation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>algebra condition</th>
+<th>matrix condition</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real line $\mathbb{R}_{\mathbb{D}}$</td>
+<td>$q'=0$</td>
+<td>$qI_2$, scalar</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$j$-line $j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$q=0$</td>
+<td>$q'J$, the swap</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>null line $S_+$</td>
+<td>$\lambda_-=0$</td>
+<td>$\lambda_+\rho_+$, rank one</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>null line $S_-$</td>
+<td>$\lambda_+=0$</td>
+<td>$\lambda_-\rho_-$, rank one</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>fixed set of the conjugation</td>
+<td>$q'=0$</td>
+<td>symmetric with equal diagonal and $q'=0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>anti-fixed set</td>
+<td>$q=0$</td>
+<td>$q'J$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the image</td>
+<td>—</td>
+<td>$CJ=JC$, symmetric with equal diagonal</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the ambient</td>
+<td>—</td>
+<td>—</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count.</strong> The involution group of $\mathbb{D}$ has two elements, so it produces the pair of subspaces $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$, of dimensions one each; but the algebra also carries two <strong>idempotent lines</strong> and two <strong>null lines</strong>, which the complex algebra does not have at all. So the distinguished-subspace count is four rather than two, and the two extra subspaces are the ones the Peirce frame creates. Against the six of the biquaternion algebra the count is still smaller, but the structure is no longer trivial.</p>
+<p><strong>The image inside the symmetric matrices.</strong> The image is a two-dimensional subspace of the three-dimensional space of symmetric matrices; the missing direction is the traceless diagonal line</p>
+<p>$$
+\left\{\begin{pmatrix}a&0\\ 0&-a\end{pmatrix}:a\in\mathbb{R}\right\}=\mathbb{R}\,g,
+$$</p>
+<p>spanned by the split form. So</p>
+<p>$$
+\operatorname{Sym}_2(\mathbb{R})=M_2(\mathbb{D})\oplus\mathbb{R}g,
+$$</p>
+<p>and the complement is exactly the matrix of the norm. The ambient then splits as</p>
+<p>$$
+M_2(\mathbb{R})=\underbrace{M_2(\mathbb{D})}_{\text{hyperbolic, dim }2}\oplus\underbrace{\mathbb{R}g}_{\text{traceless diagonal}}\oplus\underbrace{\mathfrak{so}(2)}_{\text{skew, dim }1},
+$$</p>
+<p>of dimensions $2+1+1$, and the three summands are the conformal part, the norm and the rotation. In the complex model the corresponding split was conformal plus anti-conformal; here there is a third piece, and it is the one that carries the sign of the determinant.</p>
+<p><strong>The units.</strong> The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.</p>
+<p><strong>The comparison with the ambient.</strong> The image contains no nilpotent, no skew matrix, no traceless matrix and no off-diagonal matrix unit; the ambient contains all of them. The passage from the ambient to the algebra is the passage from an arbitrary linear map to a hyperbolic similarity, and it is the imposition of two linear conditions $CJ=JC$.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The hyperbolic Cayley matrix $\mathsf{M}_2(Q)=qI_2+q'J$ with $J^{2}=I_2$ is the matrix of left multiplication in the basis $(1,j)$, and $\mathsf{M}_2(Q)\mathsf{M}_2(P)=\mathsf{M}_2(QP)$.</li>
+<li>The image is the two-dimensional algebra $\mathbb{R}[J]\cong\mathbb{R}\times\mathbb{R}$ of matrices symmetric with equal diagonal, characterised by $CJ=JC$; it is a split semisimple algebra and not a field.</li>
+<li>The left and right multiplications coincide, the centraliser of the image is the image, and the image is a maximal commutative subalgebra of $M_2(\mathbb{R})$.</li>
+<li>The trace is $2q$, the four entries are the two coefficients, and the trace form is the Euclidean form $2I_2$; the determinant is the split norm and the determinant form is Minkowski, so the two forms exchange roles against the complex category.</li>
+<li>The determinant is $q^{2}-q'^{2}$, indefinite, with zero set the two null lines; on those lines the rank is one, and they are exactly the zero divisors.</li>
+<li>The image contains the complete pair of orthogonal rank-one projectors $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$, and every element is $\lambda_+\rho_++\lambda_-\rho_-$; the spectral frame is fixed and independent of $Q$.</li>
+<li>The diagonalising matrix is the orthogonal reflection $H$ of determinant $-1$, which is at once a similarity and a congruence, sends the split form to $J$ and does not belong to the image.</li>
+<li>Every element is diagonalisable, including the zero divisors; there are no nilpotents; the projectors never coalesce; the claim that a zero divisor breaks the diagonalisation is false.</li>
+<li>The adjugate is the signed transpose $gM^{\mathsf T}g$, so the image is conformal for the split form, $M^{\mathsf T}gM=\langle Q\rangle_{*}g$, and the units map onto $O(1,1)$ with four components.</li>
+<li>The distinguished subspaces are four — the real line, the $j$-line and the two null lines — and the ambient splits as the image plus the traceless diagonal line plus the skew line.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>the hyperbolic Cayley map $\mathbb{D}\to M_2(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>$\mathsf{M}_2(j)=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $J^{2}=I_2$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$Q=q+jq'$</td>
+<td>a split-complex number, conjugate $\bar Q=q-jq'$</td>
+<td><em>Split-Complex Linear Representations</em></td>
+</tr>
+<tr>
+<td>$\langle Q\rangle_{*}=q^{2}-q'^{2}$</td>
+<td>the split norm, equal to $\det\mathsf{M}_2(Q)$</td>
+<td><em>Norm and Invertibility in the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+<td>the two idempotents</td>
+<td><em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em></td>
+</tr>
+<tr>
+<td>$\lambda_\pm=q\pm q'$</td>
+<td>the idempotent coordinates, the eigenvalues</td>
+<td><em>Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</em></td>
+</tr>
+<tr>
+<td>$\rho_\pm=\mathsf{M}_2(\Pi_\pm)$</td>
+<td>the two spectral projectors, of rank one</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$H=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$</td>
+<td>the diagonalising reflection, $HM_QH=\operatorname{diag}(\lambda_+,\lambda_-)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$g=\operatorname{diag}(1,-1)$</td>
+<td>the split form; $\operatorname{adj}M=gM^{\mathsf T}g$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{R}\Pi_\pm$</td>
+<td>the two minimal ideals, the two null lines</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,1)$</td>
+<td>the boost group, the identity component of the units</td>
+<td><em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em></td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4$</td>
+<td>the regular matrix of the complexification in the basis $1,i,j,ij$</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition, systems of matrix units and the regular representation.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the double centraliser theorem and the hypothesis of central simplicity that fails here.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for congruence, the Hadamard matrix, the cofactor formula and the rank of a product.</li>
+<li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for $O(1,1)$, the boost matrices and the topology of the components.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
