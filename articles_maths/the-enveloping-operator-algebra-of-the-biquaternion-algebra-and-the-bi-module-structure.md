@@ -134,7 +134,7 @@ $$
 \bigl(E_{ik}\mathbb{B}^{\mathrm e}E_{jl}\bigr)\bigl(E_{i'k'}\mathbb{B}^{\mathrm e}E_{j'l'}\bigr) \subseteq \delta_{ji'}\delta_{lk'}\, E_{ik}\mathbb{B}^{\mathrm e}E_{j'l'} ,
 $$
 
-in which the two indices that must agree are read in the reversed order of the second factor. The reversal is not an artefact of the writing: it is the same reversal as in the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ of §*The Conway Operator Basis*, it is the reason the second factor of the enveloping algebra is written with an $\mathrm{opp}$, and it is visible in the corner basis element $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ above, whose second index pair is reversed. So the enveloping algebra is a sixteen-corner algebra, and the tensor product of the two Peirce bases is its Peirce basis; the Conway basis $e_n[\,]e_m$ of §*The Conway Operator Basis* is the tensor basis $e_n\otimes e_m^{\mathrm{opp}}$, and the change from one to the other is the matrix change of basis inside each factor, which is the passage from the four-vector coordinates to the matrix coordinates of *The $M_4(\mathbb{C})$ e-basis Representation*.
+in which the two indices that must agree are read in the reversed order of the second factor. The reversal is not an artefact of the writing: it is the same reversal as in the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ of §*The Conway Operator Basis*, it is the reason the second factor of the enveloping algebra is written with an $\mathrm{opp}$, and it is visible in the corner basis element $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ above, whose second index pair is reversed. So the enveloping algebra is a sixteen-corner algebra, and the tensor product of the two Peirce bases is its Peirce basis; the Conway basis $e_n[\,]e_m$ of §*The Conway Operator Basis* is the tensor basis $e_n\otimes e_m^{\mathrm{opp}}$, and the change from one to the other is the matrix change of basis inside each factor, which is the passage from the four-vector coordinates to the matrix coordinates of *$M_4(\mathbb{C})$ e-basis Representation*.
 
 The four idempotents cut the algebra $\mathbb{B}$ itself, under the sandwich action, into its own four Peirce spaces:
 
@@ -148,7 +148,7 @@ The sandwich action of $E_{ik}$ is therefore the Peirce projection onto the corn
 
 The word matrix names three different objects in this group, and the theorem above is read correctly only if they are kept apart.
 
-**The element matrix.** For $\tilde Q\in\mathbb B$, the $2\times2$ matrix $\mathsf M_2(\tilde Q)$ of *The $M_2(\mathbb{C})$ Standard Peirce Representation* is the matrix of the algebra element in the model $\mathbb B\cong M_2(\mathbb C)$. It is not an operator matrix; it is the matrix of an element, and its determinant is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
+**The element matrix.** For $\tilde Q\in\mathbb B$, the $2\times2$ matrix $\mathsf M_2(\tilde Q)$ of *$M_2(\mathbb{C})$ Standard Peirce Representation* is the matrix of the algebra element in the model $\mathbb B\cong M_2(\mathbb C)$. It is not an operator matrix; it is the matrix of an element, and its determinant is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
 
 **The operator matrix.** For $T\in\operatorname{End}_{\mathbb C}(\mathbb B)$, the $4\times4$ matrix $[T]_{\mathcal B}$ of *Matrix Representations Conventions*, §*The Isomorphism with $M_4(\mathbb{C})$*, is the matrix of the operator in the canonical frame $\mathcal B$. It acts on coordinate columns: $[T(x)]_{\mathcal B}=[T]_{\mathcal B}[x]_{\mathcal B}$.
 
@@ -219,7 +219,7 @@ $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde Q_3)\bigr)=a\,c\,\tilde Q_3\,d\,b=(ac)\tilde Q_3(db)$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
 
-**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *The $M_4(\mathbb{C})$ e-basis Representation*.
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *$M_4(\mathbb{C})$ e-basis Representation*.
 
 ### The Three Classical Functions
 
@@ -237,7 +237,7 @@ $$
 S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s .
 $$
 
-The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *The $M_4(\mathbb{C})$ e-basis Representation*.
+The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *$M_4(\mathbb{C})$ e-basis Representation*.
 
 **Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; the two conventions differ by an overall sign, and the corpus fixes the sign as written above.
 

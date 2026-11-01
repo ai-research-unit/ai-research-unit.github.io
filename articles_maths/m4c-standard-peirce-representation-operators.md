@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Standard Peirce Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Standard Peirce Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
 $$
@@ -283,7 +283,7 @@ c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr).
 $$
 The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It is the coordinate chart used in §*The Cone of Products*.
 
-**The coefficient basis.** In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same sixteen are signed permutation matrices, the conjugates $C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1}$ by the Peirce change of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*; in the Peirce frame they are the products of a left matrix and a right matrix. The conjugation changes the entries, not the algebra; the Peirce frame is the display in which the Clifford construction closes.
+**The coefficient basis.** In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same sixteen are signed permutation matrices, the conjugates $C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1}$ by the Peirce change of *Matrix Representations Conventions*; in the Peirce frame they are the products of a left matrix and a right matrix. The conjugation changes the entries, not the algebra; the Peirce frame is the display in which the Clifford construction closes.
 
 ## The Kronecker Question
 

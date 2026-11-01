@@ -159,7 +159,7 @@ $$
 | $\Pi_+$ | $E_{11}$ | $0$ | $1$ |
 | $\Pi_-$ | $E_{22}$ | $0$ | $1$ |
 
-The table exhibits the two features of the model: the four real basis elements span the real four-dimensional space of the diagonal matrices, and the two idempotents are the two matrix units, with no off-diagonal partner. The comparison with the biquaternion $2\times2$ model, whose images are $\mathrm I_{2}$ and $-i\sigma_{1},-i\sigma_{2},-i\sigma_{3}$ and which span the whole of $M_{2}(\mathbb{C})$, is the content of *The $M_2(\mathbb{C})$ Standard Peirce Representation*.
+The table exhibits the two features of the model: the four real basis elements span the real four-dimensional space of the diagonal matrices, and the two idempotents are the two matrix units, with no off-diagonal partner. The comparison with the biquaternion $2\times2$ model, whose images are $\mathrm I_{2}$ and $-i\sigma_{1},-i\sigma_{2},-i\sigma_{3}$ and which span the whole of $M_{2}(\mathbb{C})$, is the content of *$M_2(\mathbb{C})$ Standard Peirce Representation*.
 
 ## Summary
 

@@ -46,7 +46,7 @@ The article takes the following results as established and does not prove them a
 |---|---|---|
 | the four factors, their ranges and their order | *The Polar Decomposition of a N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
-| the matrix model and the transport of ${}^{*}$ | *The $M_4(\mathbb{C})$ e-basis Representation* and *The $M_4(\mathbb{C})$ e-basis Representation* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
+| the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ e-basis Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
 | the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{M}_\pm$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
 | the positive cone and the positive square root | *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition* | $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ and its positivity |

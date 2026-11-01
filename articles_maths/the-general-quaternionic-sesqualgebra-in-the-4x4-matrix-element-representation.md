@@ -12,7 +12,7 @@ The regular matrix is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$. The adj
 
 **Conventions.** The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$, with $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and $\mathsf M_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$. The natural conjugation is ${}^{\natural}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The Krein form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
-**Boundaries.** The representation is *The $M_2(\mathbb{C})$ Standard Peirce Representation*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+**Boundaries.** The representation is *$M_4(\mathbb{C})$ e-basis Representation*; the operator reading is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 ## The Representation
 

@@ -180,7 +180,7 @@ A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad C=\begin{pmatrix}0&1\\1&1\end{pmat
 $$
 the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the skew matrices, and in this dimension the product of two skew matrices is always symmetric, so it also leaves the line.
 
-**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and skew matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *The Product, the Trace and the Determinant*.
+**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and skew matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *$M_2(\mathbb{C})$ Standard Peirce Representation*.
 
 ## The Decomposition under the Groups
 

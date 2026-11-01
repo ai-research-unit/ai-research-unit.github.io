@@ -36,7 +36,7 @@ $$
 $$
 The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, the Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\operatorname{Tr}$ is the $2\times2$ trace.
 
-**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Standard Peirce Representation*. The coordinate model, the matrix units and the spinor planes are *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*; the model and its product are *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated in *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
+**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Standard Peirce Representation*; the matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
 
 ## The Root and the Two Idempotents
 
@@ -83,7 +83,7 @@ Left multiplication preserves each $S_\pm$; right multiplication preserves each 
 $$
 S_\pm^{*}=T_\pm,
 $$
-as in *Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Star*.
+as in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Two Spinor Spaces*.
 
 **The two blocks.** The left action on $S_+$ and the left action on $S_-$ have the same matrix; these are the two diagonal blocks of $L^{P}$. The right action on $T_+$ and the right action on $T_-$ have the same matrix; these are the two diagonal blocks of $R^{P}$. Keeping one block from each copy gives the $2\times2$ model. The other block is a copy, and no information is lost.
 
@@ -134,7 +134,7 @@ The four coordinates are the four entries of the $2\times2$ image,
 $$
 A=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=\mathsf M_2(\tilde Q).
 $$
-This is the coordinate identity of *Peirce Coordinates, Matrix Units and the Spinor Planes*, read in the standard pair.
+This is the coordinate identity, read in the standard pair.
 
 **The matrix-unit order.** The second order is
 $$
@@ -180,7 +180,7 @@ In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
 L(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
 $$
-The computation in the first basis is the proposition of *Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*; the second basis repeats it.
+The computation in the first basis is the left action on a couple; the second basis repeats it.
 
 **The right matrix.** On $T_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Upsilon_+,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
 $$
@@ -519,7 +519,7 @@ The identity is the matrix form of $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rang
 $$
 \mathbb{C}[A]=\operatorname{span}\{\mathrm I_2,A\},
 $$
-of complex dimension two, so every polynomial in $A$ of degree at least two is a linear combination of $\mathrm I_2$ and $A$. The minimal polynomial is $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ for a non-scalar element and $t-Q_t$ for a scalar. Its degree stays two in the first case even when the two eigenvalues coincide, which is why the centraliser of a spectrally regular element is two-dimensional, as in *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*.
+of complex dimension two, so every polynomial in $A$ of degree at least two is a linear combination of $\mathrm I_2$ and $A$. The minimal polynomial is $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ for a non-scalar element and $t-Q_t$ for a scalar. Its degree stays two in the first case even when the two eigenvalues coincide, which is why the centraliser of a spectrally regular element is two-dimensional, as in *The Centraliser*.
 
 ## The Spectral Projectors
 

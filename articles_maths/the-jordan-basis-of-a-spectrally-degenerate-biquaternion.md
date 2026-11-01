@@ -196,7 +196,7 @@ A Jordan basis of $L_{\vec Q}$ needs two vectors outside the kernel whose images
 
 ## The Matrix Picture
 
-Under $\mathsf{M}_2$ of *The $M_2(\mathbb{C})$ Standard Peirce Representation* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
+Under $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Standard Peirce Representation* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
 
 | stratum | $\mathsf{M}_2(\tilde Q)$ | Jordan form | rank |
 |---|---|---|---|

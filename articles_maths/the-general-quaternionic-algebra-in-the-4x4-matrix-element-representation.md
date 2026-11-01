@@ -16,7 +16,7 @@ $$
 $$
 The involution $C$ is $C=-\sigma_2\otimes\sigma_2$; it satisfies $C^2=I_4$ and $C=C^{\dagger}$.
 
-**Boundaries.** The representation and its first properties are *The $M_2(\mathbb{C})$ Standard Peirce Representation*; the operator reading of the same group is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The representation and its first properties are *$M_4(\mathbb{C})$ e-basis Representation*; the operator reading of the same group is *Two-Sided Operators on the Biquaternion Algebra*. The $2\times2$ companion is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation*. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Representation
 
@@ -36,7 +36,7 @@ $$
 \mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad
 \mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}.
 $$
-The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *The Product, the Trace and the Determinant*, and $C_{\Pi}$ does not preserve transposition, only the operator.
+The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *Matrix Representations Conventions*, and $C_{\Pi}$ does not preserve transposition, only the operator.
 
 **The invariants.** The trace and the determinant read
 $$
