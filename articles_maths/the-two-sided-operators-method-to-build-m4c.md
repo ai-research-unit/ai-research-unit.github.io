@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The problem.** The algebra $M_4(\mathbb{C})$ is usually introduced as the algebra of $4\times4$ matrices, with the sixteen matrix units $E_{ij}$ as its basis. That presentation starts from matrices. The physics of the corpus starts from the biquaternion algebra $\mathbb{B}$, and the matrices that appear there are left multiplications, right multiplications and gamma matrices. The matrix units are not the objects the physics uses.
+**The problem.** The algebra $M_4(\mathbb{C})$ is usually introduced as the algebra of $4\times4$ matrices, with the sixteen matrix units $E_{ij}$ as its basis. That presentation starts from matrices. The physics of the corpus starts from the biquaternion algebra $\mathbb{B}$, and the matrices that appear there are left multiplications, right multiplications and the Clifford generators. The matrix units are not the objects the physics uses.
 
 **The method.** Start from $\mathbb{B}$ and its carrier $\mathbb{B}\cong\mathbb{C}^4$. For $a,b\in\mathbb{B}$ define the two one-sided operators $L_a(x)=ax$ and $R_b(x)=xb$. The products $T_{a,b}=L_aR_b$, and their sums, form an algebra of operators on a four-dimensional space. That algebra is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Choosing the coefficient basis of $\mathbb{B}$ turns the operators into $4\times4$ matrices, and the method produces sixteen explicit matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$. This article builds the algebra that way, displays the sixteen matrices, and proves the properties that make them the matrices to use.
 
@@ -18,7 +18,7 @@
 
 The carrier is $\mathbb{B}\cong\mathbb{C}^4$; it is not $M_4(\mathbb{C})$.
 
-**The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, §*The Gamma Set* records the set used in physics, and §*Why These Matrices* states the case. The worked computation is the companion article.
+**The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, and §*Why These Matrices* states the case. The worked computation is the companion article.
 
 **Sources and boundaries.** The left regular model and its product rules are *Matrix Representations : The Product, the Trace and the Determinant*; the Peirce coordinates are *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *Matrix Representations : The Two-Sided Operators*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
 
@@ -125,7 +125,7 @@ are a basis of $M_4(\mathbb{C})$. The dimension count is $4\cdot4=16$.
 
 **Step 5.** Choose the coefficient basis of the carrier. The operators become $4\times4$ matrices, and the method produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ displayed in §*The Sixteen Matrices*.
 
-**What the method does not do.** It does not choose a gamma set, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify $\mathbb{B}$ with $M_4(\mathbb{C})$: $\mathbb{B}$ is four-dimensional, and $M_4(\mathbb{C})$ is the matrix representation of the sixteen-dimensional operator algebra.
+**What the method does not do.** It does not choose a Clifford frame, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify $\mathbb{B}$ with $M_4(\mathbb{C})$: $\mathbb{B}$ is four-dimensional, and $M_4(\mathbb{C})$ is the matrix representation of the sixteen-dimensional operator algebra.
 
 ### The theorem
 
@@ -457,7 +457,87 @@ $$
 
 **The invariance.** The length is invariant under conjugation by $GL_4(\mathbb{C})$, because the two-sided operators are exactly the rank-one matrices, and conjugation preserves rank. It is also invariant under the finite group of order $32$, which permutes the $T_{\mu\nu}$ up to sign.
 
-## The Gamma Set
+## Why These Matrices
+
+**Six reasons.**
+
+1. **The matrices are the operators.** Each $T_{\mu\nu}$ is $x\mapsto e_\mu xe_\nu$. A table entry written as $T_{\mu\nu}$ says which left and right multiplications produce it. A table entry written as $E_{ij}$ says only which entry of a matrix is nonzero.
+2. **The product is closed up to sign.** The thirty-two matrices $\pm T_{\mu\nu}$ form a group. Products, inverses and powers stay in a finite set. In the matrix-unit basis the product of two basis elements is either zero or a third, but the coefficients of a general product spread over sixteen terms.
+3. **The coefficients are traces.** Orthogonality gives $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ with norm $2$. There is no linear system to solve.
+4. **The coefficient rank is the length.** The least number of products is the rank of a $4\times4$ matrix. This is the natural measure of complexity of an operator, and it is basis-independent.
+5. **The physics matrices are sparse in this basis.** The chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few $T$'s with coefficients in $\{1,-1,i,-i\}$.
+6. **The matrix units are the wrong default.** Every $E_{ij}$ has length four. A table in matrix units overstates the number of products by a factor of four in every entry.
+
+**The caveat.** The matrix units remain the canonical basis of the abstract algebra: they are the definition of the product, and the theorems of the category are stated in them. The eigenbasis remains canonical for spectral theory. The Peirce basis remains canonical for the chiral blocks. The sixteen matrices are the default for the operator question, not a replacement for the others.
+
+**A test.** Take a matrix from a physics table. If it is a projector, a field strength or a mass term, it has a short expression in the method's basis. Compute the sixteen traces and the rank. If the rank is small, the matrix is a short product, and the table is hiding a product structure. If the rank is four, the matrix is a genuinely complicated operator.
+
+## A Worked Example
+
+**The matrix.**
+$$
+M=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&2\\0&0&0&1\end{pmatrix}.
+$$
+
+**The coefficients.** The sixteen traces give
+$$
+c(M)=\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}.
+$$
+
+**The length.** The rank is two, so $\ell(M)=2$, while the matrix rank of $M$ is four. A decomposition is
+$$
+M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
+=T_{tt}-T_{xt}-T_{zy}.
+$$
+
+**The caution.** The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.
+
+**The full computation.** *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.
+
+## Summary
+
+The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four $T$'s with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
+
+$$
+\boxed{\ \operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A),\qquad
+\ell(A)=\operatorname{rank}c(A).\ }
+$$
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |
+| $e_t,e_x,e_y,e_z$ | the coefficient basis, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$ |
+| $L_a$ | left multiplication $x\mapsto ax$ |
+| $R_b$ | right multiplication $x\mapsto xb$ |
+| $T_{a,b}=L_aR_b$ | the two-sided operator $x\mapsto axb$ |
+| $T_{\mu\nu}$ | $T_{e_\mu,e_\nu}$, the sixteen basis matrices |
+| $E_{ij}$ | the matrix units of the coefficient basis |
+| $\mathsf{E}_{ij}$ | the matrix units of the Peirce basis |
+| $P_0,P_1,P_2,P_3$ | the four Peirce elements, in the order $(t,x,y,z)$ |
+| $c(A)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ |
+| $\ell(A)$ | the length, the least number of products |
+| $Q_8$ | the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$ |
+| $D$ | $\operatorname{diag}(1,-1,-1,-1)$, the carrier of the right family |
+
+## Further Reading
+
+- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the construction and the product question.
+- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the left regular model and its trace and determinant.
+- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra, the matrix units and the construction from the two-sided map.
+- [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the operators $L_a,R_a,T_{a,b}$ on the sixteen-dimensional algebra.
+- [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the sixteen traces, the rank and the factorisation of one matrix.
+- [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich on the sixteen-dimensional algebra.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Gamma Matrices*.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
+
+
+## Appendix — The Gamma Formulation
+
+The gamma frame is one choice inside the method's basis; the body writes the cells.
 
 **The five matrices.** In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
 $$
@@ -488,80 +568,4 @@ Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations
 
 **The frame is not canonical.** The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{T_{\mu\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.
 
-## Why These Matrices
-
-**Six reasons.**
-
-1. **The matrices are the operators.** Each $T_{\mu\nu}$ is $x\mapsto e_\mu xe_\nu$. A table entry written as $T_{\mu\nu}$ says which left and right multiplications produce it. A table entry written as $E_{ij}$ says only which entry of a matrix is nonzero.
-2. **The product is closed up to sign.** The thirty-two matrices $\pm T_{\mu\nu}$ form a group. Products, inverses and powers stay in a finite set. In the matrix-unit basis the product of two basis elements is either zero or a third, but the coefficients of a general product spread over sixteen terms.
-3. **The coefficients are traces.** Orthogonality gives $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ with norm $2$. There is no linear system to solve.
-4. **The coefficient rank is the length.** The least number of products is the rank of a $4\times4$ matrix. This is the natural measure of complexity of an operator, and it is basis-independent.
-5. **The physics matrices are sparse in this basis.** The gammas, the chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few $T$'s with coefficients in $\{1,-1,i,-i\}$.
-6. **The matrix units are the wrong default.** Every $E_{ij}$ has length four. A table in matrix units overstates the number of products by a factor of four in every entry.
-
-**The caveat.** The matrix units remain the canonical basis of the abstract algebra: they are the definition of the product, and the theorems of the category are stated in them. The eigenbasis remains canonical for spectral theory. The Peirce basis remains canonical for the chiral blocks. The sixteen matrices are the default for the operator question, not a replacement for the others.
-
-**A test.** Take a matrix from a physics table. If it is a gamma, a projector, a field strength or a mass term, it has a short expression in the method's basis. Compute the sixteen traces and the rank. If the rank is small, the matrix is a short product, and the table is hiding a product structure. If the rank is four, the matrix is a genuinely complicated operator.
-
-## A Worked Example
-
-**The matrix.**
-$$
-M=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&2\\0&0&0&1\end{pmatrix}.
-$$
-
-**The coefficients.** The sixteen traces give
-$$
-c(M)=\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}.
-$$
-
-**The length.** The rank is two, so $\ell(M)=2$, while the matrix rank of $M$ is four. A decomposition is
-$$
-M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
-=T_{tt}-T_{xt}-T_{zy}.
-$$
-
-**The caution.** The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.
-
-**The full computation.** *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.
-
-## Summary
-
-The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four $T$'s with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The gamma set is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
-
-$$
-\boxed{\ \operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
-c_{\mu\nu}(A)=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A),\qquad
-\ell(A)=\operatorname{rank}c(A).\ }
-$$
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |
-| $e_t,e_x,e_y,e_z$ | the coefficient basis, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$ |
-| $L_a$ | left multiplication $x\mapsto ax$ |
-| $R_b$ | right multiplication $x\mapsto xb$ |
-| $T_{a,b}=L_aR_b$ | the two-sided operator $x\mapsto axb$ |
-| $T_{\mu\nu}$ | $T_{e_\mu,e_\nu}$, the sixteen basis matrices |
-| $E_{ij}$ | the matrix units of the coefficient basis |
-| $\mathsf{E}_{ij}$ | the matrix units of the Peirce basis |
-| $P_0,P_1,P_2,P_3$ | the four Peirce elements, in the order $(t,x,y,z)$ |
-| $c(A)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ |
-| $\ell(A)$ | the length, the least number of products |
-| $Q_8$ | the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$ |
-| $\gamma_\mu,\gamma_5$ | the gamma set of the corpus |
-| $D$ | $\operatorname{diag}(1,-1,-1,-1)$, the carrier of the right family |
-
-## Further Reading
-
-- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the construction, the gamma set and the product question.
-- [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the left regular model and its trace and determinant.
-- [Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes](matrix-representations-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.
-- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra, the matrix units and the construction from the two-sided map.
-- [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the operators $L_a,R_a,T_{a,b}$ on the sixteen-dimensional algebra.
-- [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the sixteen traces, the rank and the factorisation of one matrix.
-- [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich on the sixteen-dimensional algebra.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Gamma Matrices*.
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
+Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

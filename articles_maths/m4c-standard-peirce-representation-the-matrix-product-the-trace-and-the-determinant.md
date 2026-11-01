@@ -19,13 +19,10 @@ $$
 $$
 The root chooses the direction $z$. This is the price of the construction, and it is the difference from the e-basis: the e-basis names no direction, while the standard Peirce frame is built around one.
 
+**The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
+
 **The result in one line.** The left matrix is the $2\times2$ image taken twice, $L^{P}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$; the right matrix is the transposed image taken twice, $R^{P}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
-$$
-B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
-\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
-$$
 The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
 **Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant*; the frame is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, and the six subspaces as matrix conditions are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*.
@@ -182,12 +179,22 @@ R^{P}(\tilde Q)=
 \end{pmatrix}.
 $$
 
-**The transpose and the dagger.** In the Peirce frame the transpose is not the quaternion conjugation. With $C=\mathrm I_2\otimes\sigma_2$ and $\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}$,
+**The transpose and the dagger.** In the Peirce frame the transpose is not the quaternion conjugation. With $\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}$ and
 $$
-L^{P}(\tilde Q)^{\mathsf T}=C\,L^{P}(\tilde Q^{\natural})\,C,\qquad
-L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*}),
+C_L=\mathrm I_2\otimes\sigma_2,\qquad
+C_R=\sigma_2\otimes\mathrm I_2,
 $$
-and the same identities hold for $R^{P}$. The first is the transpose dictionary in this frame: the conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$. The second is the Hermitian adjoint; it holds because the four frame vectors are orthogonal and have the same norm,
+the transpose dictionaries are
+$$
+L^{P}(\tilde Q)^{\mathsf T}=C_L\,L^{P}(\tilde Q^{\natural})\,C_L,\qquad
+R^{P}(\tilde Q)^{\mathsf T}=C_R\,R^{P}(\tilde Q^{\natural})\,C_R,
+$$
+and the Hermitian adjoints are
+$$
+L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*}),\qquad
+R^{P}(\tilde Q)^{\dagger}=R^{P}(\tilde Q^{*}).
+$$
+The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold because the four frame vectors are orthogonal and have the same norm,
 $$
 \langle\tilde\Pi_+,\tilde\Pi_+\rangle=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle
 =\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle=\langle\tilde\Pi_-,\tilde\Pi_-\rangle=\tfrac12,
@@ -482,7 +489,7 @@ $$
 A=\begin{pmatrix}-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&iQ_z\end{pmatrix},\qquad
 L^{P}(\tilde Q)=\mathrm I_2\otimes A .
 $$
-The block $A$ is traceless, and so is $M$. The image is the complex span of $L_x^{P},L_y^{P},L_z^{P}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the e-basis does not carry over without the matrix $C$.
+The block $A$ is traceless, and so is $M$. The image is the complex span of $L_x^{P},L_y^{P},L_z^{P}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the e-basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
 
 ### The Quaternion Subspace
 
@@ -579,7 +586,7 @@ The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, a
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ image, the block of $L^{P}(\tilde Q)$ |
 | $S$ | the change matrix, columns the frame vectors in the e-basis |
 | $\mathsf P$ | the swap matrix, $\mathsf P(A\otimes B)\mathsf P=B\otimes A$ |
-| $C=\mathrm I_2\otimes\sigma_2$ | the transpose dictionary of the Peirce frame |
+| $C_L=\mathrm I_2\otimes\sigma_2$, $C_R=\sigma_2\otimes\mathrm I_2$ | the transpose dictionaries of the Peirce frame |
 | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
 | $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |

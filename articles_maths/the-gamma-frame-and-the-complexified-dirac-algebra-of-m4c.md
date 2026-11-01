@@ -147,7 +147,7 @@ $$
 
 acting on the biquaternion algebra, and the sixteen of them are a basis of $M_4(\mathbb{C})$ by *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*. The gamma set is a generating set of a different shape: four generators, their product $\gamma_5$, and their antisymmetrised products, against the sixteen two-sided operators.
 
-**The dictionary.** In the coefficient frame of the method article, the five gamma matrices are scalar multiples of five of the sixteen $T_{\mu\nu}$: the four vector gammas and the chirality are five elements of the two-sided basis, up to the scalar $i$. The remaining eleven two-sided operators are the bivectors, the trivectors and the scalar of the Clifford basis; the bivectors are the six antisymmetric products $\gamma_{\mu\nu}$, the trivectors the four $\gamma_{\mu\nu\rho}$, and the scalar the identity. The two bases are related by a linear change of frame in the sixteen-dimensional space.
+**The dictionary.** In the coefficient frame of the method article, the five gamma matrices are scalar multiples of five of the sixteen $T_{\mu\nu}$: the four vector gammas and the chirality are five elements of the two-sided basis, up to the scalar $i$. The remaining eleven two-sided operators correspond to the bivectors, the trivectors and the scalar of the Clifford basis; the bivectors are the six antisymmetric products $\gamma_{\mu\nu}$, the trivectors the four $\gamma_{\mu\nu\rho}$, and the scalar the identity. The two bases are related by a permutation and scalars, not by a general linear change: each element of one basis is a scalar multiple of one element of the other.
 
 **The warning.** The identification of the gammas with five of the $T_{\mu\nu}$ is a statement about a particular coefficient frame, not a canonical identity. A different choice of the biquaternion units, or a different normalisation of the $T_{\mu\nu}$, changes the five matrices and their scalar multiples. The Clifford relations are invariant under the change; the five-element subset is not.
 
@@ -167,7 +167,7 @@ $$
 
 **The Clifford group.** The Clifford group acts on the frame by Lorentz transformations; the **spin group** $\mathrm{Spin}(1,3)$ is the norm-one part of the even Clifford group (the even part itself is the scalars times the spin group), and it double covers the identity component $SO^{+}(1,3)$. The Lie algebra of the spin group is the bivector span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(1,3)_{\mathbb{C}}$, of dimension $6$, inside $M_4(\mathbb{C})$.
 
-**The frames are a bundle.** The set of frames is the total space of a principal bundle over the space of metrics of signature $(1,3)$, with fibre the Clifford group modulo the scalars. A frame is a section of that bundle over the chosen metric; the physics chooses a frame, and the choice is not part of the algebra.
+**The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of signature $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
 
 **What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a matrix $C$ with $C\gamma_{\mu}C^{-1}=\pm\bar\gamma_{\mu}$ for the charge conjugation. The frame is the Clifford layer; the other structures are layers above it.
 
@@ -229,6 +229,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 
 ## Further Reading
 
+- [Why the Biquaternion Formalism Instead of Gamma Matrices](../articles_physics/why-the-biquaternion-formalism-instead-of-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
 - [The Clifford Layer of the Physics Corpus: Inventory and the Odd Sector](../articles_reserve/the-clifford-layer-of-the-physics-corpus-inventory-and-the-odd-sector.html), for the inventory of the convention and the odd sector.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $T_{\mu\nu}$ and their product rule.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even slot and the versors.

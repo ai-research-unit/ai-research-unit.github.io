@@ -10,6 +10,8 @@ $$
 $$
 and the entries of its regular matrices are these coefficients with the signs of the multiplication table. The other articles call $\mathcal{E}$ the coefficient basis. This article calls it the e-basis, and writes $L_\mu^{e}$ and $R_\mu^{e}$ for the matrices of the four units. The superscript $e$ is a label, not an exponent: $L_x^{e}$ is the left matrix of $\vec e_x$ in the e-basis, and its square is written $(L_x^{e})^2$.
 
+**The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
+
 **The result in one line.** The four left matrices $L_\mu^{e}$ are signed permutations and form a basis of the left copy $\mathbb{B}_L$; the four right matrices $R_\mu^{e}$ are signed permutations and form a basis of the right copy $\mathbb{B}_R$. The left matrix of a general element is displayed below. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
 
 **The two copies.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
@@ -378,7 +380,7 @@ The determinant of a sum is not the sum of the determinants; a sum of two invert
 
 ## The Six Subspaces
 
-**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the e-basis representation they become the conditions of the table. Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q_\mu+iq'_\mu$, $B^2=Q_x^2+Q_y^2+Q_z^2$. In the third column, $\overline M$ is the entrywise complex conjugate of $M$ and $M^{\dagger}=\overline M^{\mathsf T}$; $\mathsf M_2(\tilde Q)$ is the $2\times2$ image of $\tilde Q$. The table gives the condition on $M=L^{e}(\tilde Q)$ inside the image $\mathbb{B}_L$, the real dimension of the subspace, the trace of $M$, and the determinant of the $2\times2$ image. In the first row, $\lambda=Q_t$.
+**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the e-basis representation they become the conditions of the table. Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$ for the split $Q_\mu=q_\mu+iq'_\mu$, and recall $B^2=Q_x^2+Q_y^2+Q_z^2$. In the third column, $\overline M$ is the entrywise complex conjugate of $M$ and $M^{\dagger}=\overline M^{\mathsf T}$; $\mathsf M_2(\tilde Q)$ is the $2\times2$ image of $\tilde Q$. The table gives the condition on $M=L^{e}(\tilde Q)$ inside the image $\mathbb{B}_L$, the real dimension of the subspace, the trace of $M$, and the determinant of the $2\times2$ image. In the first row, $\lambda=Q_t$.
 
 | Subspace | Defining condition | Condition on $M$ in the image | Real dim. | Trace | $\det\mathsf M_2(\tilde Q)$ |
 |---|---|---|---|---|---|
@@ -502,5 +504,6 @@ The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, a
 - [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations and the coordinate systems.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same content in the standard Peirce frame, the pure swap stitch and the tensor displays.
+- [$M_4(\mathbb{C})$ e-basis Representation : Operators](m4c-e-basis-representation-operators.html), for the operators on the algebra and the sixteen products in the e-basis.
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the six subspaces read in the e-basis.
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the same invariants in the matrix model.

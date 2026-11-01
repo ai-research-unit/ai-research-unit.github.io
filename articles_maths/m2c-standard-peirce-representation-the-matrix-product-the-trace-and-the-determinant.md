@@ -24,13 +24,10 @@ has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two 
 
 **What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
 
+**The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
+
 **The result in one line.** The left matrix is the $2\times2$ image, $L(\tilde Q)=\mathsf M_2(\tilde Q)=A$; the right matrix is its transpose, $R(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
-$$
-B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
-\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
-$$
 The standard pair and the mixed units are
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -533,21 +530,35 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 
 **No warning is needed.** In the $4\times4$ article the conditions in the third column are exact only inside the image, because the ambient $M_4(\mathbb{C})$ contains matrices that are not left regular matrices. In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so every condition is exact on the whole matrix algebra. The table is the compression of the $4\times4$ table, and the warning of the $4\times4$ article disappears.
 
-**The centre and the vector subspace.** The centre is the line of scalar matrices, of real dimension $2$. The vector subspace is the trace-zero matrices, a complex subspace of dimension $3$ and real dimension $6$. The trace is the only condition, and the determinant is $B^2$. The image of the centre is the commutative line $\mathbb{C}\mathrm I_2$; the image of the vector subspace is closed under the commutator and not under the product.
+### The Centre Subspace
 
-**The quaternion and anti-quaternion subspaces.** The quaternion subspace is the space of matrices
+**The scalar line.** The centre is the line of scalar matrices, of real dimension $2$. The image of the centre is the commutative line $\mathbb{C}\mathrm I_2$.
+
+### The Vector Subspace
+
+**The traceless matrices.** The vector subspace is the trace-zero matrices, a complex subspace of dimension $3$ and real dimension $6$. The trace is the only condition, and the determinant is $B^2$. The image of the vector subspace is closed under the commutator and not under the product.
+
+### The Quaternion Subspace
+
+**The quaternion-shaped matrices.** The quaternion subspace is the space of matrices
 $$
 A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},
 \qquad a=q_t-iq_z,\quad b=-iq_x-q_y,
 $$
-of real dimension $4$. The determinant is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra. The anti-quaternion subspace is
+of real dimension $4$. The determinant is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra.
+
+### The Anti-Quaternion Subspace
+
+**The anti-quaternion-shaped matrices.** The anti-quaternion subspace is
 $$
 A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix},
 \qquad a=q'_z+iq'_t,\quad b=q'_x-iq'_y,
 $$
 also of real dimension $4$. Its determinant is $-\sum(q'_\mu)^2$, non-positive and vanishing only at $\tilde Q=0$; it is not closed under multiplication, and the product of two anti-quaternion matrices is quaternion-shaped.
 
-**The Hermitian and anti-Hermitian subspaces.** The Hermitian subspace is the set of matrices $A=A^{\dagger}$, of real dimension $4$. For
+### The Hermitian Subspace
+
+**The Hermitian matrices.** The Hermitian subspace is the set of matrices $A=A^{\dagger}$, of real dimension $4$. For
 $$
 \tilde Q=q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z,
 $$
@@ -557,7 +568,11 @@ A=\begin{pmatrix}q_t+q'_z&q'_x-iq'_y\\ q'_x+iq'_y&q_t-q'_z\end{pmatrix},
 \qquad
 \det A=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The determinant is indefinite. The anti-Hermitian subspace is the set of matrices $A=-A^{\dagger}$, also of real dimension $4$. For
+The determinant is indefinite.
+
+### The Anti-Hermitian Subspace
+
+**The anti-Hermitian matrices.** The anti-Hermitian subspace is the set of matrices $A=-A^{\dagger}$, also of real dimension $4$. For
 $$
 \tilde Q=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,
 $$
@@ -569,7 +584,9 @@ A=\begin{pmatrix}i(q'_t-q_z)&-iq_x-q_y\\ -iq_x+q_y&i(q'_t+q_z)\end{pmatrix},
 $$
 The determinant is indefinite with the opposite sign. Neither subspace is a subalgebra; the anti-Hermitian subspace is a Lie algebra under the commutator.
 
-**The three splits.** The six subspaces pair into
+### The Three Splits
+
+**The three decompositions.** The six subspaces pair into
 $$
 \mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
 =\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}

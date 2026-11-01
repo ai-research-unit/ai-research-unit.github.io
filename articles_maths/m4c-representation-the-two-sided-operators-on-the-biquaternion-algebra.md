@@ -14,11 +14,11 @@ $$
 T_{\mu\nu}=L_\mu R_\nu
 $$
 
-are the sixteen basis matrices of the family. They are a basis of $M_4(\mathbb{C})$, by the generation theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Sixteen Products as a Basis*. The article records their table in four families, their composition, their trace and determinant, and their orthogonality; then it answers the Kronecker question, builds one gamma frame, and reads the cone of products through the coefficient matrix.
+are the sixteen basis matrices of the family. They are a basis of $M_4(\mathbb{C})$, by the generation theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Sixteen Products as a Basis*. The article records their table in four families, their composition, their trace and determinant, and their orthogonality; then it answers the Kronecker question, builds one Clifford frame, and reads the cone of products through the coefficient matrix.
 
 **The Kronecker question.** Three products must be kept apart. The ordinary product $L_{\tilde Q}R_{\tilde P}$ of two $4\times4$ matrices is the matrix of the operator. The Kronecker product of two $2\times2$ matrices is a $4\times4$ matrix and is the evaluation of the ordinary product in the model $\mathbb{B}\cong M_2(\mathbb{C})$. The Kronecker product of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is not the operator, and it is not the construction.
 
-**The gamma frame.** The article records one frame, not the frame. The five Dirac generators are unit multiples of five cells in a reference frame; the general normal form is indexed by a pair $(\beta,\delta)$ of orthogonal spatial directions, and nothing in the Clifford relations selects the pair. The frame is a slice through the set of frames, not a conjugacy class.
+**The Clifford frame.** The article records one frame, not the frame. The five generators are unit multiples of five cells in a reference frame; the general normal form is indexed by a pair $(\beta,\delta)$ of orthogonal spatial directions, and nothing in the Clifford relations selects the pair. The frame is a slice through the set of frames, not a conjugacy class.
 
 **The cone of products.** Every $M\in M_4(\mathbb{C})$ has a unique coefficient matrix $c(M)$ in the basis $T_{\mu\nu}$. The matrix $M$ is a single two-sided operator exactly when $c(M)$ has rank at most one; the least number of products summing to $M$ is $\operatorname{rank}c(M)$; every matrix is a sum of at most four products. The product set is the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension seven, inside the complex sixteen-dimensional algebra.
 
@@ -152,7 +152,7 @@ $$
 
 The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It is the coordinate chart used in §*The Cone of Products*.
 
-**The coefficient basis.** In the coefficient basis the same sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*. The conjugation changes the entries, not the algebra; the canonical frame is the one in which the gamma construction closes.
+**The coefficient basis.** In the coefficient basis the same sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}T_{\mu\nu}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*, §*The Change $C_{\Pi}$*. The conjugation changes the entries, not the algebra; the canonical frame is the one in which the Clifford construction closes.
 
 ## The Kronecker Question
 
@@ -199,152 +199,12 @@ and the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to th
 
 **The coefficient basis.** In the coefficient basis the sixteen are signed permutation matrices; in the canonical frame they are the products of a left matrix and a right matrix. The Pauli evaluation is a statement in the canonical frame and in the $2\times2$ model; the coefficient basis is the conjugate display. Neither changes the operator.
 
-## The Gamma Frame
+## The Matrix Dirac Operator
 
-### The Five Cells
-
-**The reference frame.** Define
+**The operator.** With $\partial_\mu=\partial/\partial Q_\mu$,
 
 $$
-\gamma_0=iT_{e_t,e_x},\qquad
-\gamma_1=iT_{e_x,e_y},\qquad
-\gamma_2=iT_{e_y,e_y},\qquad
-\gamma_3=iT_{e_z,e_y},\qquad
-\gamma_5=-iT_{e_t,e_z}.
-$$
-
-Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
-
-$$
-\gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
-\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
-\gamma_5=-\sigma_3\otimes\mathrm I_2.
-$$
-
-**The values.** In the canonical frame,
-
-$$
-\gamma_0=
-\begin{pmatrix}
-0&0&1&0\\
-0&0&0&1\\
-1&0&0&0\\
-0&1&0&0
-\end{pmatrix},
-\qquad
-\gamma_5=
-\begin{pmatrix}
--1&0&0&0\\
-0&-1&0&0\\
-0&0&1&0\\
-0&0&0&1
-\end{pmatrix}.
-$$
-
-Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §*The Table in Four Families*; the choice of the five is the choice of a frame.
-
-**The cells.** The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.
-
-### The Normal Form and the Pair $(\beta,\delta)$
-
-**The pair.** Let $\beta,\delta$ be unit spatial directions, orthogonal:
-
-$$
-\beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.
-$$
-
-Define
-
-$$
-\gamma_0=iL_{e_t}R_\delta,\qquad
-\gamma_k=iL_{e_k}R_\beta,\qquad k=x,y,z.
-$$
-
-For the reference frame $(\beta,\delta)=(e_y,e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-e_z$ and $\gamma_5=iT_{e_t,\beta\delta}$.
-
-**The normal form.** Every pair $(\beta,\delta)$ gives a frame with the Clifford relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.
-
-**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade column.
-
-**Cells only for axes.** If $\beta$ is not one of $e_x,e_y,e_z$, the spatial generators are not cells: $\gamma_k=iT_{e_k,\beta}=i\sum_\nu\beta_\nu T_{k\nu}$ is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a cell either. The cell table of §*The Clifford Relations* is the table of the reference pair.
-
-**Conjugacy.** For a unit $\tilde u$ and $U=L_{\tilde u}R_{\tilde u^{-1}}$, one has $U T_{\tilde Q,\tilde P}U^{-1}=T_{\tilde u\tilde Q\tilde u^{-1},\tilde u\tilde P\tilde u^{-1}}$. This is the matrix of an inner automorphism, and it carries frames to frames. It does not preserve the normal form, because it rotates the left factors as well as the right factors; the normal form is a slice through the set of frames, not a conjugacy class.
-
-### The Clifford Relations
-
-**Theorem (the Clifford relations).** For the normal form of §*The Normal Form and the Pair $(\beta,\delta)$*,
-
-$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
-(\gamma_5)^2=\mathrm I_4,\qquad
-\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
-$$
-
-with $g=\operatorname{diag}(1,-1,-1,-1)$, and
-
-$$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iT_{e_t,\beta\delta}.
-$$
-
-*Proof.* $(\gamma_0)^2=-R_{\delta^2}=\mathrm I_4$; $(\gamma_k)^2=-L_{e_k^2}R_{\beta^2}=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L_{e_k}(R_{\delta\beta}+R_{\beta\delta})=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L_{e_je_k+e_ke_j}R_{\beta^2}=0$. For the pseudoscalar, the left factor is $L_{e_te_xe_ye_z}=L_{-e_t}$ and the right factor is $R_{\beta^3\delta}=R_{-\beta\delta}$; the two signs cancel, so the product is $T_{e_t,\beta\delta}$.
-
-**The sixteen products.** In the reference frame the products of the five are the sixteen cells up to units:
-
-| Grade | Product | Cell | Coefficient |
-|---|---|---|---|
-| $0$ | $1$ | $T_{tt}$ | $1$ |
-| $1$ | $\gamma_0$ | $T_{tx}$ | $i$ |
-| $1$ | $\gamma_1$ | $T_{xy}$ | $i$ |
-| $1$ | $\gamma_2$ | $T_{yy}$ | $i$ |
-| $1$ | $\gamma_3$ | $T_{zy}$ | $i$ |
-| $2$ | $\gamma_0\gamma_1$ | $T_{xz}$ | $1$ |
-| $2$ | $\gamma_0\gamma_2$ | $T_{yz}$ | $1$ |
-| $2$ | $\gamma_0\gamma_3$ | $T_{zz}$ | $1$ |
-| $2$ | $\gamma_1\gamma_2$ | $T_{zt}$ | $1$ |
-| $2$ | $\gamma_1\gamma_3$ | $T_{yt}$ | $-1$ |
-| $2$ | $\gamma_2\gamma_3$ | $T_{xt}$ | $1$ |
-| $3$ | $\gamma_0\gamma_1\gamma_2$ | $T_{zx}$ | $i$ |
-| $3$ | $\gamma_0\gamma_1\gamma_3$ | $T_{yx}$ | $-i$ |
-| $3$ | $\gamma_0\gamma_2\gamma_3$ | $T_{xx}$ | $i$ |
-| $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $-i$ |
-| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $-1$ |
-
-The products are distinct, so they are the sixteen cells in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the cell basis.
-
-**The algebra.** The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
-
-$$
-\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
-$$
-
-which are again cells: $\Sigma^{01}=iT_{xz}$, $\Sigma^{02}=iT_{yz}$, $\Sigma^{03}=iT_{zz}$, $\Sigma^{12}=iT_{zt}$, $\Sigma^{13}=-iT_{yt}$, $\Sigma^{23}=iT_{xt}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
-
-### The Chiral Reading
-
-**The pseudoscalar.** In the canonical frame,
-
-$$
-\gamma_5=\operatorname{diag}(-1,-1,1,1).
-$$
-
-Its two eigenspaces are the two chiral blocks, each of complex dimension two. The four generators exchange them; the pseudoscalar is their sign.
-
-**The projectors.** The chirality projectors are
-
-$$
-P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr)=T_{e_t/2,\ e_t\pm i\beta\delta}.
-$$
-
-In the canonical frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.
-
-**The two Weyl blocks.** The canonical frame is block diagonal for the left family, $L_{\tilde Q}=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.
-
-**Types.** In the reference frame, $\gamma_0$ and $\gamma_5$ lie in the right family $R(\mathbb{B})$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the Clifford relations.
-
-**The Dirac operator.** With $\partial_\mu=\partial/\partial Q_\mu$,
-
-$$
-i\gamma_\mu\partial_\mu=-\bigl(T_{e_t,e_x}\partial_0+T_{e_x,e_y}\partial_1+T_{e_y,e_y}\partial_2+T_{e_z,e_y}\partial_3\bigr).
+D=-\bigl(T_{e_t,e_x}\partial_0+T_{e_x,e_y}\partial_1+T_{e_y,e_y}\partial_2+T_{e_z,e_y}\partial_3\bigr).
 $$
 
 On $\tilde Q\in\mathbb{B}$,
@@ -490,11 +350,11 @@ $$
 
 ## Open Questions
 
-- The classification of gamma frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?
+- The classification of Clifford frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?
 - The choice of frame as a choice of Clifford structure: which gradings the algebra admits, and how they are related.
-- A dictionary, frame by frame, between the explicit gamma matrices of the physics articles and the tensor basis. The corpus has many explicit representations, and they need not use the same pair $(\beta,\delta)$.
+- A dictionary, frame by frame, between the explicit matrix frames of the physics articles and the tensor basis. The corpus has many explicit representations, and they need not use the same pair $(\beta,\delta)$.
 - Which physical statements are frame-independent, and which are artefacts of a table. The mass bilinear, the axial current and the chiral projectors are the first candidates.
-- The sign of $\gamma_5$ and the choice of the second central root of $-1$; the two conventions must not be mixed inside one computation.
+- The sign of the pseudoscalar cell and the choice of the second central root of $-1$; the two conventions must not be mixed inside one computation.
 - The Peirce image of a general frame, and the spinor-basis change that relates two frames.
 - The Segre length in physics: the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.
@@ -505,7 +365,7 @@ The two-sided operators on $\mathbb{B}$ are the matrices $T_{\tilde Q,\tilde P}=
 
 The Pauli evaluation is $T_{\tilde Q,\tilde P}=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$, a $4\times4$ Kronecker product of two $2\times2$ matrices. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is not the operator; the matrix of the operator is the ordinary product $L_{\tilde Q}R_{\tilde P}$.
 
-The gamma frame is generated by a pair $(\beta,\delta)$ of orthogonal spatial directions: $\gamma_0=iL_{e_t}R_\delta$, $\gamma_k=iL_{e_k}R_\beta$, with the Clifford relations $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $\gamma_5=iT_{e_t,\beta\delta}$. The reference pair $(e_y,e_x)$ gives five cell multiples; a general pair gives five single products of coefficient rank one, spread over several cells. The frame is a slice, not a conjugacy class; nothing selects the pair. The chiral reading is $\gamma_5=\operatorname{diag}(-1,-1,1,1)$, the two projectors $P_\pm=T_{e_t/2,e_t\pm ie_z}$, and the two Weyl blocks exchanged by the generators. The left regular model cannot hold the Dirac algebra.
+The frame is generated by a pair $(\beta,\delta)$ of orthogonal spatial directions: $iL_{e_t}R_\delta$ and $iL_{e_k}R_\beta$ are five cells in the reference pair $(e_y,e_x)$ and five single products in a general pair, with the Clifford relations $g=\operatorname{diag}(1,-1,-1,-1)$ and the pseudoscalar $iT_{e_t,\beta\delta}$. Nothing selects the pair, and the normal form is a slice through the set of frames, not a conjugacy class. The left regular model cannot hold the Dirac algebra.
 
 Every matrix $M$ has a unique coefficient matrix $c(M)$ with $c_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$. The matrix is a single product exactly when $\operatorname{rank}c(M)\le1$, and the least number of products is $\operatorname{rank}c(M)$; every matrix is a sum of at most four, and a generic matrix needs four. The product set is the cone over $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension seven. Matrix rank and length are independent: $M_1$ has rank one and length four, $P_+$ has rank two and length one, and $E_{11}$ has rank one and length one.
 
@@ -522,8 +382,8 @@ Every matrix $M$ has a unique coefficient matrix $c(M)$ with $c_{\mu\nu}=\tfrac1
 | $C_{\Pi}$ | the Peirce change from the canonical frame to the coefficient basis |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
-| $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | one Dirac frame; five cell multiples in the reference frame |
-| $\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu]$ | the Lorentz generators, six even cells |
+| $T_{e_t,\beta\delta}$ | the pseudoscalar cell, the fifth generator of the frame |
+| $\Sigma_{\mu\nu}$ | the Lorentz generators, six even cells |
 | $c(M)$ | the coefficient matrix, $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$ |
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ | the coordinate column of $\tilde Q$ |
@@ -539,3 +399,152 @@ Every matrix $M$ has a unique coefficient matrix $c(M)$ with $c_{\mu\nu}=\tfrac1
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection of the two one-sided families used in the cone.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality.
+
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.
+
+### The gamma frame
+
+#### The five cells
+
+**The reference frame.** Define
+
+$$
+\gamma_0=iT_{e_t,e_x},\qquad
+\gamma_1=iT_{e_x,e_y},\qquad
+\gamma_2=iT_{e_y,e_y},\qquad
+\gamma_3=iT_{e_z,e_y},\qquad
+\gamma_5=-iT_{e_t,e_z}.
+$$
+
+Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
+
+$$
+\gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_5=-\sigma_3\otimes\mathrm I_2.
+$$
+
+**The values.** In the canonical frame,
+
+$$
+\gamma_0=
+\begin{pmatrix}
+0&0&1&0\\
+0&0&0&1\\
+1&0&0&0\\
+0&1&0&0
+\end{pmatrix},
+\qquad
+\gamma_5=
+\begin{pmatrix}
+-1&0&0&0\\
+0&-1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{pmatrix}.
+$$
+
+Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §*The Table in Four Families*; the choice of the five is the choice of a frame.
+
+**The cells.** The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.
+
+#### The normal form and the Pair $(\beta,\delta)$
+
+**The pair.** Let $\beta,\delta$ be unit spatial directions, orthogonal:
+
+$$
+\beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.
+$$
+
+Define
+
+$$
+\gamma_0=iL_{e_t}R_\delta,\qquad
+\gamma_k=iL_{e_k}R_\beta,\qquad k=x,y,z.
+$$
+
+For the reference frame $(\beta,\delta)=(e_y,e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-e_z$ and $\gamma_5=iT_{e_t,\beta\delta}$.
+
+**The normal form.** Every pair $(\beta,\delta)$ gives a frame with the Clifford relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.
+
+**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade column.
+
+**Cells only for axes.** If $\beta$ is not one of $e_x,e_y,e_z$, the spatial generators are not cells: $\gamma_k=iT_{e_k,\beta}=i\sum_\nu\beta_\nu T_{k\nu}$ is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a cell either. The cell table of §*The Clifford Relations* is the table of the reference pair.
+
+**Conjugacy.** For a unit $\tilde u$ and $U=L_{\tilde u}R_{\tilde u^{-1}}$, one has $U T_{\tilde Q,\tilde P}U^{-1}=T_{\tilde u\tilde Q\tilde u^{-1},\tilde u\tilde P\tilde u^{-1}}$. This is the matrix of an inner automorphism, and it carries frames to frames. It does not preserve the normal form, because it rotates the left factors as well as the right factors; the normal form is a slice through the set of frames, not a conjugacy class.
+
+#### The Clifford relations
+
+**Theorem (the Clifford relations).** For the normal form of §*The Normal Form and the Pair $(\beta,\delta)$*,
+
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
+(\gamma_5)^2=\mathrm I_4,\qquad
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
+$$
+
+with $g=\operatorname{diag}(1,-1,-1,-1)$, and
+
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iT_{e_t,\beta\delta}.
+$$
+
+*Proof.* $(\gamma_0)^2=-R_{\delta^2}=\mathrm I_4$; $(\gamma_k)^2=-L_{e_k^2}R_{\beta^2}=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L_{e_k}(R_{\delta\beta}+R_{\beta\delta})=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L_{e_je_k+e_ke_j}R_{\beta^2}=0$. For the pseudoscalar, the left factor is $L_{e_te_xe_ye_z}=L_{-e_t}$ and the right factor is $R_{\beta^3\delta}=R_{-\beta\delta}$; the two signs cancel, so the product is $T_{e_t,\beta\delta}$.
+
+**The sixteen products.** In the reference frame the products of the five are the sixteen cells up to units:
+
+| Grade | Product | Cell | Coefficient |
+|---|---|---|---|
+| $0$ | $1$ | $T_{tt}$ | $1$ |
+| $1$ | $\gamma_0$ | $T_{tx}$ | $i$ |
+| $1$ | $\gamma_1$ | $T_{xy}$ | $i$ |
+| $1$ | $\gamma_2$ | $T_{yy}$ | $i$ |
+| $1$ | $\gamma_3$ | $T_{zy}$ | $i$ |
+| $2$ | $\gamma_0\gamma_1$ | $T_{xz}$ | $1$ |
+| $2$ | $\gamma_0\gamma_2$ | $T_{yz}$ | $1$ |
+| $2$ | $\gamma_0\gamma_3$ | $T_{zz}$ | $1$ |
+| $2$ | $\gamma_1\gamma_2$ | $T_{zt}$ | $1$ |
+| $2$ | $\gamma_1\gamma_3$ | $T_{yt}$ | $-1$ |
+| $2$ | $\gamma_2\gamma_3$ | $T_{xt}$ | $1$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $T_{zx}$ | $i$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $T_{yx}$ | $-i$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $T_{xx}$ | $i$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $-i$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $-1$ |
+
+The products are distinct, so they are the sixteen cells in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the cell basis.
+
+**The algebra.** The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
+
+$$
+\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
+$$
+
+which are again cells: $\Sigma^{01}=iT_{xz}$, $\Sigma^{02}=iT_{yz}$, $\Sigma^{03}=iT_{zz}$, $\Sigma^{12}=iT_{zt}$, $\Sigma^{13}=-iT_{yt}$, $\Sigma^{23}=iT_{xt}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
+
+#### The chiral reading
+
+**The pseudoscalar.** In the canonical frame,
+
+$$
+\gamma_5=\operatorname{diag}(-1,-1,1,1).
+$$
+
+Its two eigenspaces are the two chiral blocks, each of complex dimension two. The four generators exchange them; the pseudoscalar is their sign.
+
+**The projectors.** The chirality projectors are
+
+$$
+P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\delta}\bigr)=T_{e_t/2,\ e_t\pm i\beta\delta}.
+$$
+
+In the canonical frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.
+
+**The two Weyl blocks.** The canonical frame is block diagonal for the left family, $L_{\tilde Q}=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.
+
+**Types.** In the reference frame, $\gamma_0$ and $\gamma_5$ lie in the right family $R(\mathbb{B})$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the Clifford relations.
+
+Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
