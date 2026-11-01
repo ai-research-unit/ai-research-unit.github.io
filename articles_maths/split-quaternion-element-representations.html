@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Split-Quaternion Element Representations — Biquaternion Universe</title>
+  <title>Split-Quaternion Linear Representations — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,10 +68,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="split-quaternion-element-representations"><strong>Split-Quaternion Element Representations</strong></h1>
+        <h1 id="split-quaternion-linear-representations"><strong>Split-Quaternion Linear Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of signature $(2,1)$, and compares the result with the quaternion case.</p>
-<p>The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from <em>Split-Quaternion Algebra</em>. The defining module and the irreducibility of the defining representation are assumed from <em>Split-Quaternion Matrix Element Representations</em>, §<em>The Defining Module</em>. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from <em>Matrix Algebras</em>; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from <em>Representations of Lie Algebras</em>, and the tensor conventions of this category for the comparison come from <em>Quaternion Element Representations</em>. The double cover is stated here and proved in <em>Split-Quaternion Rotations and the Lorentz Group</em>; the homogeneous spaces are treated in <em>Split-Quaternions and Hyperbolic Geometry</em>. Nothing physical is invoked.</p>
+<p>The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from <em>Split-Quaternion Algebra</em>. The defining module and the irreducibility of the defining representation are assumed from <em>Split-Quaternion Matrix Element Representations</em>, §<em>The Defining Module</em>. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from <em>Matrix Algebras</em>; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from <em>Representations of Lie Algebras</em>, and the tensor conventions of this category for the comparison come from <em>Quaternion Linear Representations</em>. The double cover is stated here and proved in <em>Split-Quaternion Rotations and the Lorentz Group</em>; the homogeneous spaces are treated in <em>Split-Quaternions and Hyperbolic Geometry</em>. Nothing physical is invoked.</p>
 <h2 id="representations-of-math7">Representations of $\mathbb{H}_{\mathrm{s}}$</h2>
 <h3 id="definition">Definition</h3>
 <p>A <strong>representation</strong> of $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q,v) \mapsto \tilde q \cdot v$, such that</p>
@@ -85,7 +85,7 @@ $$</p>
 <p>$$
 \lambda(\tilde q_1) \tilde q_2 = \tilde q_1 \tilde q_2 .
 $$</p>
-<p>It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The <strong>right regular representation</strong> $\varrho(\tilde q_1) \tilde q_2 = \tilde q_2 \tilde q_1$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of <em>Quaternion Element Representations</em>, §<em>The Left and Right Regular Representations</em>. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)</p>
+<p>It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The <strong>right regular representation</strong> $\varrho(\tilde q_1) \tilde q_2 = \tilde q_2 \tilde q_1$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of <em>Quaternion Linear Representations</em>, §<em>The Left and Right Regular Representations</em>. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)</p>
 <h3 id="the-idempotent-decomposition">The Idempotent Decomposition</h3>
 <p>The idempotents give a decomposition of every representation.</p>
 <p><strong>Theorem (The Idempotent Splitting).</strong> Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ be the non-central idempotents. Then</p>
@@ -126,7 +126,7 @@ $$</p>
 \operatorname{End}_{\mathbb{H}_{\mathrm{s}}}(\mathbb{R}^2) = \mathbb{R} \cdot \mathrm{id} .
 $$</p>
 <p><strong>Proof.</strong> Schur's lemma gives that every $M_2(\mathbb{R})$-linear endomorphism of $\mathbb{R}^2$ is scalar, since a matrix commuting with every matrix is a scalar matrix by (<em>Matrix Algebras</em>, §<em>Ideals and Simplicity</em>).</p>
-<p>The endomorphism ring of the simple module being $\mathbb{R}$ rather than a division algebra over $\mathbb{R}$ larger than $\mathbb{R}$ is the algebraic expression of the fact that the algebra is <strong>split</strong>: by Schur's lemma the endomorphism ring of a simple module is a division algebra, and here that division algebra is $\mathbb{R}$ itself. In the quaternion case it is $\mathbb{H}$, by <em>Quaternion Element Representations</em>, §<em>Schur's Lemma</em>, and the two situations differ in exactly this invariant.</p>
+<p>The endomorphism ring of the simple module being $\mathbb{R}$ rather than a division algebra over $\mathbb{R}$ larger than $\mathbb{R}$ is the algebraic expression of the fact that the algebra is <strong>split</strong>: by Schur's lemma the endomorphism ring of a simple module is a division algebra, and here that division algebra is $\mathbb{R}$ itself. In the quaternion case it is $\mathbb{H}$, by <em>Quaternion Linear Representations</em>, §<em>Schur's Lemma</em>, and the two situations differ in exactly this invariant.</p>
 <h2 id="the-representation-ring">The Representation Ring</h2>
 <p><strong>Definition.</strong> The <strong>representation ring</strong> $R(\mathbb{H}_{\mathrm{s}})$ is the Grothendieck ring of finite-dimensional representations, with addition from direct sums and multiplication from tensor products, the algebra acting on the first factor of a tensor product.</p>
 <p><strong>Theorem (The Additive Group).</strong> As an abelian group,</p>
@@ -145,7 +145,7 @@ $$</p>
 \mathbb{R}^2 \otimes_{\mathbb{R}} \mathbb{R}^2 \cong \mathbb{R}^4 \cong (\mathbb{R}^2)^{\oplus 2},
 $$</p>
 <p>because $\mathbb{R}^2 \otimes \mathbb{R}^2$ has dimension $4$ and every four-dimensional module is $(\mathbb{R}^2)^{\oplus 2}$ by the classification; the tensor product of $(\mathbb{R}^2)^{\oplus a}$ with $(\mathbb{R}^2)^{\oplus b}$ is therefore $(\mathbb{R}^2)^{\oplus 2ab}$. A ring with product $m\cdot n = 2mn$ on $\mathbb{Z}$ is associative and commutative, and an identity $e$ would satisfy $2en = n$ for all $n$, in particular $2e = 1$.</p>
-<p>The absence of an identity is the same phenomenon as in the quaternion case, where the product is $m\cdot n = 4mn$ by <em>Quaternion Element Representations</em>, §<em>The Representation Ring</em>; the factor is the dimension of the simple module, $2$ here and $4$ there. The tensor of representations is not a ring with unit because the algebra is not a bialgebra, and no trivial representation exists to serve as the unit.</p>
+<p>The absence of an identity is the same phenomenon as in the quaternion case, where the product is $m\cdot n = 4mn$ by <em>Quaternion Linear Representations</em>, §<em>The Representation Ring</em>; the factor is the dimension of the simple module, $2$ here and $4$ there. The tensor of representations is not a ring with unit because the algebra is not a bialgebra, and no trivial representation exists to serve as the unit.</p>
 <h2 id="the-category-of-representations">The Category of Representations</h2>
 <p><strong>Theorem (Morita Triviality).</strong> The category of finite-dimensional representations of $\mathbb{H}_{\mathrm{s}}$ is equivalent, as an abelian category, to the category of finite-dimensional real vector spaces:</p>
 <p>$$
@@ -231,7 +231,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The quaternion column is that of <em>Quaternion Element Representations</em>; the two theories have the same shape, one simple module, free modules, and a representation ring without identity, and they differ in the dimension of the simple module and in the endomorphism ring, which measures how far the algebra is from being split. In both cases there is no one-dimensional representation, since a unital homomorphism from a simple non-commutative algebra to a field would have a proper kernel.</p>
+<p>The quaternion column is that of <em>Quaternion Linear Representations</em>; the two theories have the same shape, one simple module, free modules, and a representation ring without identity, and they differ in the dimension of the simple module and in the endomorphism ring, which measures how far the algebra is from being split. In both cases there is no one-dimensional representation, since a unital homomorphism from a simple non-commutative algebra to a field would have a proper kernel.</p>
 <h2 id="summary">Summary</h2>
 <p>A representation of the split-quaternion algebra is a module over $M_2(\mathbb{R})$. The algebra is simple and semisimple; every finite-dimensional representation is isomorphic to a direct sum of copies of the single simple module $\mathbb{R}^2$, so the dimension of a representation is even and determines it up to isomorphism, and there is no odd-dimensional or one-dimensional representation.</p>
 <p>The endomorphism ring of the simple module is $\mathbb{R}$, by Schur's lemma, so the algebra is split. The representation ring is $\mathbb{Z}$ with the product $m \cdot n = 2mn$, generated by the class of $\mathbb{R}^2$; it has no identity element, because the algebra is not a bialgebra and has no trivial representation to serve as a unit. The category of finite-dimensional representations is equivalent to the category of finite-dimensional real vector spaces, so every module is free.</p>
