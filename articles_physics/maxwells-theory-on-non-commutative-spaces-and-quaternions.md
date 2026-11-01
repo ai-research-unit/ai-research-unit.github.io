@@ -79,13 +79,13 @@ $$
 with the Moyal bracket $[A_\mu,A_\nu]_M = A_\mu\star A_\nu - A_\nu\star A_\mu$. Expanding to first order in $\theta$ gives the Lagrangian
 
 $$
-\mathcal L = -\frac14 F_{\mu\nu}^2 + \frac18\theta_{\alpha\beta}F_{\alpha\beta}F_{\mu\nu}^2 - \frac12\theta_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta}F_{\mu\nu} + O(\theta^2) + A_\mu J_\mu,
+\mathcal L = -\frac14 F_{\mu\nu}^2 + \frac18\theta_{\alpha\beta}F_{\alpha\beta}F_{\mu\nu}^2 - \frac12\theta_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta}F_{\mu\nu} + O(\theta^2) + \sum_\mu A_\mu J_\mu,
 $$
 
 which the source recasts, with $E_i = iF_{i4}$ and $B_i = \epsilon_{ijk}F_{jk}$, as
 
 $$
-\mathcal L = \frac12\left(\vec E^2 - \vec B^2\right)\left[1 + \vec\theta\cdot\vec B\right] - (\vec\theta\cdot\vec E)(\vec E\cdot\vec B) + O(\theta^2) + A_\mu J_\mu ,
+\mathcal L = \frac12\left(\vec E^2 - \vec B^2\right)\left[1 + \vec\theta\cdot\vec B\right] - (\vec\theta\cdot\vec E)(\vec E\cdot\vec B) + O(\theta^2) + \sum_\mu A_\mu J_\mu ,
 $$
 
 where $\theta_i = \tfrac12\epsilon_{ijk}\theta_{jk}$ and $\theta_{i4}=0$. At $\vec\theta=0$ this is the Maxwell Lagrangian. The $\vec\theta$-terms are **odd under $CP$**, which is the source's first structural remark. The corpus's *The Field-Strength Biquaternion and Its Invariants* works with the two invariants $\vec E^2-\vec B^2$ and $\vec E\cdot\vec B$, and they appear here multiplied by the two $\vec\theta$-scalars $\vec\theta\cdot\vec B$ and $\vec\theta\cdot\vec E$ — which is exactly why the deformation cannot preserve every symmetry those invariants otherwise carry.

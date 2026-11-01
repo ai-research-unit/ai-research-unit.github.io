@@ -484,6 +484,7 @@ The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, a
 |---|---|
 | $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ | the e-basis |
 | $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the standard Peirce frame, built from $\vec\Xi=i\vec e_z$ |
+| $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
 | $L_\mu^{e}$, $R_\mu^{e}$ | the left and right matrices of the four units |
 | $L^{e}(\tilde Q)$, $R^{e}(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
 | $D$, entries $(1,-1,-1,-1)$ on the diagonal | the switch matrix, quaternion conjugation in the e-basis |

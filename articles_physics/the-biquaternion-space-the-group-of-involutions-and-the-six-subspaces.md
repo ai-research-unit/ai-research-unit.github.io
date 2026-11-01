@@ -71,9 +71,9 @@ Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quatern
 | Map | Formula | $\mathbb{C}$-linearity | What it touches | Fixed space | Anti-fixed space |
 | --- | --- | --- | --- | --- | --- |
 | $\bar{\cdot}$ | $Q_\mu\mapsto\bar Q_\mu$ | antilinear | the complex coefficients | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
-| ${}^{\natural}$ | $Q_te_t-Q_k\vec e_k$ | linear | the quaternion directions | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ |
-| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\bar Q_k\vec e_k$ | antilinear | both | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\flat=-{}^{*}$ | $-\bar Q_te_t+\bar Q_k\vec e_k$ | antilinear | both, with a sign | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+| ${}^{\natural}$ | $Q_te_t-\sum_k Q_k\vec e_k$ | linear | the quaternion directions | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ |
+| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_k \bar Q_k\vec e_k$ | antilinear | both | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_k \bar Q_k\vec e_k$ | antilinear | both, with a sign | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
 
 Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space. The six distinct spaces so obtained are the six remarkable subspaces. Each of the four maps preserves every remarkable subspace: no conjugation carries an element out of a subspace into another one.
 

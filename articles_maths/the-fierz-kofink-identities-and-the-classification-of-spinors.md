@@ -45,7 +45,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 
 ## The Fierz–Kofink Identities
 
-**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=J_\mu J_\mu=\eta_{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
+**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu=\eta_{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
 
 $$
 \boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
@@ -65,7 +65,7 @@ $$
 Z = \sigma\,\mathbb 1 + J + iS + K\gamma_5 - i\omega\gamma_5,
 $$
 
-where $J=J_\mu\gamma_\mu$, $K=K_\mu\gamma_\mu$ and $S=S_{\mu\nu}\gamma_{\mu\nu}$ are read as Clifford elements with the covariant coefficients.
+where $J=\sum_\mu J_\mu\gamma_\mu$, $K=\sum_\mu K_\mu\gamma_\mu$ and $S=S_{\mu\nu}\gamma_{\mu\nu}$ are read as Clifford elements with the covariant coefficients.
 
 **Statement (the aggregate form of the FPK identities).** The aggregate satisfies
 

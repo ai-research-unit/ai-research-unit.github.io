@@ -99,7 +99,7 @@ $$
 D\tilde{\Psi} = 0, \qquad \text{i.e.} \qquad \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\,\tilde{A}\,\tilde{\Psi} = 0 .
 $$
 
-The term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ is the **interaction term**. It is exactly the term that the localization of the phase forces, and it is the biquaternion representative of the familiar $\frac{iϙ}{\hbar}\gamma_\mu A_\mu$ coupling of the spinor-module Dirac equation.
+The term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ is the **interaction term**. It is exactly the term that the localization of the phase forces, and it is the biquaternion representative of the familiar $\frac{iϙ}{\hbar}\sum_\mu \gamma_\mu A_\mu$ coupling of the spinor-module Dirac equation.
 
 **Component form.** Write the potential as $\tilde{A} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another. Since each $A_\mu$ is a scalar and commutes with the basis, the covariant derivative separates into components:
 
@@ -265,7 +265,7 @@ so that the identity holds exactly on the solution set of the four equations and
 
 ## Recovering the Standard Minimal Coupling
 
-The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient is the Dirac operator of the algebra; $\mathbb{D}$ below is the pair operator of *Operator and Calculus Conventions*. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma_\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
+The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient is the Dirac operator of the algebra; $\mathbb{D}$ below is the pair operator of *Operator and Calculus Conventions*. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\sum_\mu \gamma_\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
 
 $$
 \boxed{\;\left(\mathbb{D}_A - \frac{mc}{\hbar}\right)\psi = 0, \qquad \mathbb{D}_A = \mathbb{D}\big|_{\partial/\partial Q_\mu\to D_\mu},\quad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\;},

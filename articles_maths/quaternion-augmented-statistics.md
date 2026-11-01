@@ -29,7 +29,7 @@ $$
 
 and $\operatorname{Ad}_0$ is the identity. A map $T$ with $T^2 = \mathrm{id}$ is an **involution**.
 
-**Proposition.** Each $\operatorname{Ad}_k$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ with $\operatorname{Ad}_k^2 = \mathrm{id}$; it fixes the scalar part and the $\vec e_k$-axis, and it negates the two remaining axes. Its fixed subspace is $\{q_te_t+q_k\vec e_k\}$, of dimension $2$, and its anti-fixed subspace is $\{q_l\vec e_l+q_m\vec e_m\}$ for $(k,l,m)$ cyclic, also of dimension $2$.
+**Proposition.** Each $\operatorname{Ad}_k$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ with $\operatorname{Ad}_k^2 = \mathrm{id}$; it fixes the scalar part and the $\vec e_k$-axis, and it negates the two remaining axes. Its fixed subspace is $\{q_te_t+\sum_k q_k\vec e_k\}$, of dimension $2$, and its anti-fixed subspace is $\{q_l\vec e_l+q_m\vec e_m\}$ for $(k,l,m)$ cyclic, also of dimension $2$.
 
 *Proof.* The map $\operatorname{Ad}_k$ is an inner automorphism, hence an algebra automorphism, by *Quaternion Automorphisms and Derivations*; its square is the inner automorphism of $\vec e_k^2 = -e_t$, which is the identity, so it is an involution. On the basis, $\vec e_k e_t \vec e_k^{-1} = e_t$, $\vec e_k \vec e_k \vec e_k^{-1} = \vec e_k$, and for $l\neq k$ one has $\vec e_k \vec e_l \vec e_k^{-1} = -\vec e_k \vec e_l \vec e_k = -\vec e_l$, using $\vec e_k \vec e_l = \varepsilon_{klm}\vec e_m$ and $\vec e_m \vec e_k = \vec e_l$ for $(k,l,m)$ cyclic. The fixed and anti-fixed subspaces are read from the four signs.
 

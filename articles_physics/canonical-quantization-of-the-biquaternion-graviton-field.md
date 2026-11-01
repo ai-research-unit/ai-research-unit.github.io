@@ -221,7 +221,7 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=u_k\vec e_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_k u_k\vec e_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,

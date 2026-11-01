@@ -52,7 +52,7 @@ $$
 0 = \gamma_{\mu\sigma}\partial/\partial x_\mu\,\psi_\sigma = \gamma_{\nu}\partial/\partial x_\nu\,S - \sum_\sigma\partial/\partial x_\sigma\psi_\sigma .
 $$
 
-Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\gamma_\mu\gamma_{\mu\sigma\rho} = 2\gamma_{\sigma\rho}$ and $\gamma_\mu\gamma_{\mu\sigma} = 3\gamma_\sigma$, leaves
+Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\sum_\mu \gamma_\mu\gamma_{\mu\sigma\rho} = 2\gamma_{\sigma\rho}$ and $\sum_\mu \gamma_\mu\gamma_{\mu\sigma} = 3\gamma_\sigma$, leaves
 
 $$
 2i\,\gamma_{\sigma\rho}\partial/\partial x_\sigma\,\psi_\rho = 3m\,S .

@@ -392,7 +392,7 @@ $$
 
 with magnitude one Bohr magneton $\mu_B = e\hbar/2m_e$ for $\vec S$ aligned with $\vec B$ (at $S_z = \hbar/2$). The observed value differs from $2$ by the anomalous part $a = (g-2)/2 \approx \alpha/2\pi$; that is a radiative correction and lies outside the classical equation treated here. The tree-level result $g=2$ is what the limit contains.
 
-The biquaternion form of the spin coupling is immediate. Under the isomorphism, the magnetic-field combination maps as $\boldsymbol{\sigma}\cdot\vec B \leftrightarrow i\,\vec B$ with $\vec B = B_k \vec e_k$, so the spin term is the Hermitian element
+The biquaternion form of the spin coupling is immediate. Under the isomorphism, the magnetic-field combination maps as $\boldsymbol{\sigma}\cdot\vec B \leftrightarrow i\,\vec B$ with $\vec B = \sum_k B_k \vec e_k$, so the spin term is the Hermitian element
 
 $$
 -\frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \;\longleftrightarrow\; -\frac{ϙ\hbar}{2m}\,i\,\vec B \;\in\; \mathbb{M}_+ .

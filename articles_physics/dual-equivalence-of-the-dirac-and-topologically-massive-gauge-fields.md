@@ -66,7 +66,7 @@ where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real an
 The third ingredient is the interpretation of the mass. In the vector representation the mass term is
 
 $$
-\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N_\nu - B_\nu B_\nu\bigr) = \bar\Psi\, K_\mu\gamma_\mu\Psi\;}
+\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N_\nu - B_\nu B_\nu\bigr) = \bar\Psi\, \sum_\mu K_\mu\gamma_\mu\Psi\;}
 $$
 
 for a unit complex vector $K_\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.

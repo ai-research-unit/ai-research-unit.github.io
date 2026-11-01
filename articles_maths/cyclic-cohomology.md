@@ -145,7 +145,7 @@ $$
 \boxed{\;\langle[\tau],[u]\rangle = \tau_N\bigl(u^{-1},u\bigr)\;} ,
 $$
 
-where the extension of $\tau$ to matrices is $\tau_N(x_0,x_1)=\sum_{i,j}\tau(x_0^{ij},x_1^{ji})$, depends only on the classes of $\tau$ and $u$, and defines a pairing $HC^1(A)\times K_1(A)\to k$.
+where the extension of $\tau$ to matrices is $\tau_N(x_0,x_1)=\sum_{i,j}\tau(x_{0,ij},x_{1,ji})$, depends only on the classes of $\tau$ and $u$, and defines a pairing $HC^1(A)\times K_1(A)\to k$.
 
 *Proof.* Quoted as standard (Connes). The cocycle identity $b\tau=0$ is exactly what makes the expression invariant under the deformations of $u$ that generate the $K_1$-equivalences, and cyclicity makes it vanish on the image of $B$, so the pairing descends to the cohomology and to $K_1$.
 

@@ -54,7 +54,7 @@ with eight real components, and the fixed bivectors $\sigma_k = \gamma_k\gamma_0
 
 ### The equation
 
-Hestenes' form of the Dirac equation for an electron in an electromagnetic four-potential $A = A_\mu\gamma_\mu$ is
+Hestenes' form of the Dirac equation for an electron in an electromagnetic four-potential $A = \sum_\mu A_\mu\gamma_\mu$ is
 
 $$
 \boxed{\;\nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0\;},

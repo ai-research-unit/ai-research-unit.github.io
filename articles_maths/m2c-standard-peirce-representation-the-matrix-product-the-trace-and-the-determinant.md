@@ -1,0 +1,615 @@
+# __$M_2(\mathbb{C})$ Standard Peirce Representation__
+
+## Introduction
+
+**The compression.** The $M_4(\mathbb{C})$ Standard Peirce Representation writes the two regular matrices of an element in the standard Peirce frame as
+$$
+L^{P}(\tilde Q)=\mathrm I_2\otimes A,\qquad
+R^{P}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2,\qquad
+A=\mathsf M_2(\tilde Q).
+$$
+The same $2\times2$ block $A$ occurs twice on the diagonal of $L^{P}$, and the same block $A^{\mathsf T}$ occurs twice on the diagonal of $R^{P}$ in the order that pairs the two nilpotents. The second block is a copy of the first. This article keeps one block.
+
+The result is the $2\times2$ model of the algebra itself. It is not a smaller regular representation: the regular matrices act on the four-dimensional algebra, while the $2\times2$ matrices act on one Peirce plane. The compression is the reading of each action on one plane, and it is exact because the two planes of a copy carry the same matrix.
+
+**The left and the right.** The left/right split survives, but not as two commuting families on one space. The left action on the left ideal
+$$
+S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+
+$$
+has matrix $A$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$. The right action on the right ideal
+$$
+T_+=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-
+$$
+has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two matrices are transposes, and the transpose is the stitch. The two actions live on two different planes, so there is no statement that $A$ and $A^{\mathsf T}$ commute.
+
+**What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
+
+**The result in one line.** The left matrix is the $2\times2$ image, $L^{2}(\tilde Q)=A$; the right matrix is its transpose, $R^{2}(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
+
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
+$$
+B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
+\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
+$$
+The standard pair and the mixed units are
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\qquad
+\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y).
+$$
+The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, the Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\operatorname{Tr}$ is the $2\times2$ trace.
+
+**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Standard Peirce Representation*. The coordinate model, the matrix units and the spinor planes are *$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes*; the model and its product are *$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated in *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
+
+## The Root and the Two Idempotents
+
+**The root.** The element
+$$
+\vec\Xi=i\vec e_z
+$$
+is a vector, and its square is the unit,
+$$
+\vec\Xi^2=i^2\vec e_z^2=(-1)(-e_t)=e_t .
+$$
+The two idempotents are the two spectral projections of the root,
+$$
+\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2}=\tfrac12(e_t\pm i\vec e_z),
+$$
+with
+$$
+\tilde\Pi_+^2=\tilde\Pi_+,\qquad
+\tilde\Pi_-^2=\tilde\Pi_-,\qquad
+\tilde\Pi_+\tilde\Pi_-=0,\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,\qquad
+\tilde\Pi_+-\tilde\Pi_-=\vec\Xi .
+$$
+The root is not central, and the choice of the $z$ direction is a genuine choice.
+
+**The images.** The compression sends the root and the two idempotents to the grading matrix and the two coordinate projections:
+$$
+\mathsf M_2(\vec\Xi)=\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+\mathsf M_2(\tilde\Pi_+)=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+\mathsf M_2(\tilde\Pi_-)=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
+$$
+The Peirce decomposition is therefore the spectral decomposition of $\sigma_3$: the abstract pair becomes the row/column pair of $\mathbb{C}^2$. This is the first sense in which the $2\times2$ model is the compressed Peirce representation.
+
+**The two planes.** Put
+$$
+S_\pm=\mathbb{B}\tilde\Pi_\pm,\qquad
+T_\pm=\tilde\Pi_\pm\mathbb{B}.
+$$
+The $S_\pm$ are the minimal left ideals, the $T_\pm$ are the minimal right ideals, and
+$$
+S_+\oplus S_-=\mathbb{B}=T_+\oplus T_-.
+$$
+Left multiplication preserves each $S_\pm$; right multiplication preserves each $T_\pm$. The star maps $S_\pm$ to $T_\pm$,
+$$
+S_\pm^{*}=T_\pm,
+$$
+as in *Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Star*.
+
+**The two blocks.** The left action on $S_+$ and the left action on $S_-$ have the same matrix; these are the two diagonal blocks of $L^{P}$. The right action on $T_+$ and the right action on $T_-$ have the same matrix; these are the two diagonal blocks of $R^{P}$. Keeping one block from each copy gives the $2\times2$ model. The other block is a copy, and no information is lost.
+
+## The Peirce Basis and the Two Orders
+
+**The frame.** The standard Peirce frame is the ordered basis
+$$
+\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),
+\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y).
+$$
+The multiplication table is
+$$
+\tilde\Pi_+\tilde\Pi_+=\tilde\Pi_+,\qquad
+\tilde\Pi_-\tilde\Pi_-=\tilde\Pi_-,\qquad
+\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,
+$$
+$$
+\tilde\Pi_+\vec\Upsilon_-=\vec\Upsilon_-,\qquad
+\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+,\qquad
+\tilde\Pi_+\vec\Upsilon_+=\tilde\Pi_-\vec\Upsilon_-=0,
+$$
+$$
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad
+\vec\Upsilon_+^2=\vec\Upsilon_-^2=0,
+$$
+$$
+\vec\Upsilon_+\tilde\Pi_+=\vec\Upsilon_+,\qquad
+\vec\Upsilon_-\tilde\Pi_-=\vec\Upsilon_-,\qquad
+\vec\Upsilon_+\tilde\Pi_-=\vec\Upsilon_-\tilde\Pi_+=0 .
+$$
+The two mixed units are nilpotent, and each pair multiplies to one of the idempotents.
+
+**The coordinates.** An element written in the frame is
+$$
+\tilde Q=P_+\tilde\Pi_++X_+\vec\Upsilon_++X_-\vec\Upsilon_-+P_-\tilde\Pi_-,
+\qquad P_\pm,X_\pm\in\mathbb{C},
+$$
+with
+$$
+P_+=Q_t-iQ_z,\qquad
+X_+=-iQ_x+Q_y,\qquad
+X_-=-iQ_x-Q_y,\qquad
+P_-=Q_t+iQ_z .
+$$
+The four coordinates are the four entries of the $2\times2$ image,
+$$
+A=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=\mathsf M_2(\tilde Q).
+$$
+This is the coordinate identity of *Peirce Coordinates, Matrix Units and the Spinor Planes*, read in the standard pair.
+
+**The matrix-unit order.** The second order is
+$$
+\mathcal{P}'=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-).
+$$
+The images of the four frame vectors are the four matrix units:
+$$
+\mathsf M_2(\tilde\Pi_+)=E_{11},\qquad
+\mathsf M_2(\vec\Upsilon_-)=E_{12},\qquad
+\mathsf M_2(\vec\Upsilon_+)=E_{21},\qquad
+\mathsf M_2(\tilde\Pi_-)=E_{22}.
+$$
+In the order $\mathcal{P}$ the images are $(E_{11},E_{21},E_{12},E_{22})$; in the order $\mathcal{P}'$ they are $(E_{11},E_{12},E_{21},E_{22})$, the standard matrix-unit order. The two orders differ by the swap of the two nilpotents,
+$$
+\vec\Upsilon_+\longleftrightarrow\vec\Upsilon_-,
+$$
+which is the swap $\mathsf P$ of the $4\times4$ stitch. This is the only frame exchange that survives the compression.
+
+**The two ideal bases.** The left ideals and the right ideals have the bases
+$$
+S_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,\qquad
+S_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
+$$
+$$
+T_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-,\qquad
+T_-=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-.
+$$
+The left bases are the two pairs of $\mathcal{P}$; the right bases are the two pairs of $\mathcal{P}'$. This is the origin of the transpose: the left matrix is read in the $\mathcal{P}$ pairing, the right matrix in the $\mathcal{P}'$ pairing, and the two pairings differ by the exchange of the nilpotents.
+
+## The Left and Right Matrices
+
+**The left matrix.** On $S_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, left multiplication by $\tilde Q$ has the matrix $A$. On $S_-$, in the basis $(\vec\Upsilon_-,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
+$$
+\tilde Q\tilde\Pi_+=P_+\tilde\Pi_++X_+\vec\Upsilon_+,\qquad
+\tilde Q\vec\Upsilon_+=X_-\tilde\Pi_++P_-\vec\Upsilon_+,
+$$
+and the two columns in the second are
+$$
+\tilde Q\vec\Upsilon_-=P_+\vec\Upsilon_-+X_+\tilde\Pi_-,\qquad
+\tilde Q\tilde\Pi_-=X_-\vec\Upsilon_-+P_-\tilde\Pi_- .
+$$
+In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
+$$
+L^{2}(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
+$$
+The computation in the first basis is the proposition of *Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*; the second basis repeats it.
+
+**The right matrix.** On $T_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, right multiplication by $\tilde Q$ has the matrix $A^{\mathsf T}$. On $T_-$, in the basis $(\vec\Upsilon_+,\tilde\Pi_-)$, it has the same matrix. The two columns in the first basis are
+$$
+\tilde\Pi_+\tilde Q=P_+\tilde\Pi_++X_-\vec\Upsilon_-,\qquad
+\vec\Upsilon_-\tilde Q=X_+\tilde\Pi_++P_-\vec\Upsilon_-,
+$$
+and the two columns in the second are
+$$
+\vec\Upsilon_+\tilde Q=P_+\vec\Upsilon_++X_-\tilde\Pi_-,\qquad
+\tilde\Pi_-\tilde Q=X_+\vec\Upsilon_++P_-\tilde\Pi_- .
+$$
+In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
+$$
+R^{2}(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
+$$
+The right matrix is the transpose of the left matrix. This is the whole content of the compression: the left action reads the columns of $A$, the right action reads the rows, and a row written as a column is the transpose.
+
+**The example.** For
+$$
+\tilde Q=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z,
+$$
+the two matrices are
+$$
+A=\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix},\qquad
+A^{\mathsf T}=\begin{pmatrix}3+i&2-i\\-4-i&1+i\end{pmatrix}.
+$$
+The trace is $4+2i=2(2+i)=2Q_t$, and the determinant is
+$$
+(2+i)^2+(1-i)^2+3^2+i^2=(3+4i)+(-2i)+9-1=11+2i=\langle\tilde Q\rangle_{\natural}.
+$$
+
+**A note on the element.** The matrix $A$ is the matrix of the element itself, not a regular matrix on a larger space. The left action is the multiplication by $A$ on the column space of the left ideal; the right action is the multiplication by $A^{\mathsf T}$ on the row space of the right ideal. There is no ambient $4\times4$ space in the compressed model, and the two actions are not two operators on one space.
+
+## The L and R Bases
+
+**The left basis.** The four left matrices are
+$$
+L_t^{2}=\mathrm I_2,\qquad
+L_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+L_y^{2}=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+L_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$
+Each is $\mathsf M_2(\vec e_\mu)$ for the three vector units, and the identity for the scalar unit. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are linearly independent and form a basis of $M_2(\mathbb{C})$.
+
+**The right basis.** The four right matrices are the transposes,
+$$
+R_t^{2}=\mathrm I_2,\qquad
+R_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+R_y^{2}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+R_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$
+The matrices $L_x^{2}$ and $L_z^{2}$ are symmetric, and $L_y^{2}$ is antisymmetric, so
+$$
+R_x^{2}=L_x^{2},\qquad
+R_y^{2}=-L_y^{2},\qquad
+R_z^{2}=L_z^{2}.
+$$
+The right basis differs from the left by the sign of the $y$ matrix alone. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are a basis of $M_2(\mathbb{C})$.
+
+**The two bases of one space.** In the $4\times4$ article the left and right bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left basis is read on $S_\pm$, the right basis on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.
+
+**The products.** Write $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$. Then
+$$
+L_\mu^{2}L_\nu^{2}=\varepsilon L_{\mu\nu}^{2},\qquad
+R_\mu^{2}R_\nu^{2}=\varepsilon' R_{\nu\mu}^{2}.
+$$
+The left product follows the order of the units; the right product reverses it. For example,
+$$
+(L_x^{2})^2=(R_x^{2})^2=-\mathrm I_2,\qquad
+L_x^{2}L_y^{2}=L_z^{2},\qquad
+L_y^{2}L_x^{2}=-L_z^{2},
+$$
+and on the right $R_x^{2}R_y^{2}=-R_z^{2}$, $R_y^{2}R_x^{2}=R_z^{2}$.
+
+**Trace and determinant.** Every basis matrix is invertible, with
+$$
+\det L_\mu^{2}=\det R_\mu^{2}=1,\qquad
+\operatorname{Tr}L_\mu^{2}=\operatorname{Tr}R_\mu^{2}=2\delta_{\mu t}.
+$$
+The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+
+## The Stitch Between the Left and the Right
+
+**The transpose.** For every $\tilde Q$,
+$$
+R^{2}(\tilde Q)=L^{2}(\tilde Q)^{\mathsf T},\qquad
+L^{2}(\tilde Q)=R^{2}(\tilde Q)^{\mathsf T}.
+$$
+The stitch is the plain transpose. There is no sign matrix and no swap matrix in the compressed formula.
+
+**In full.** For a matrix written entrywise,
+$$
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad
+A^{\mathsf T}=\begin{pmatrix}a&c\\b&d\end{pmatrix}.
+$$
+The diagonal entries are fixed, and the two off-diagonal entries are exchanged. In the Peirce coordinates $a=P_+$, $d=P_-$, $b=X_-$, $c=X_+$, so the exchange is
+$$
+X_+\longleftrightarrow X_- .
+$$
+The transpose is the exchange of the two nilpotent coordinates, with the two idempotent coordinates fixed.
+
+**Why the transpose.** The left ideal is a space of columns: the first column of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_+$. The right ideal is a space of rows: the first row of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_-$. Writing a row as a column transposes the matrix. The two bases differ by the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$, and the exchange of the two nilpotents is exactly the exchange of the row index and the column index.
+
+**The anti-automorphism.** The transpose is an anti-automorphism of $M_2(\mathbb{C})$:
+$$
+(A_1A_2)^{\mathsf T}=A_2^{\mathsf T}A_1^{\mathsf T},\qquad
+(A^{\mathsf T})^{\mathsf T}=A .
+$$
+It preserves the trace and the determinant,
+$$
+\operatorname{Tr}A^{\mathsf T}=\operatorname{Tr}A,\qquad
+\det A^{\mathsf T}=\det A,
+$$
+so the two matrices of the same element have the same invariants.
+
+**The element-level reading.** The transpose is the image of the anti-automorphism $\varrho$ of $\mathbb{B}$ that fixes $e_t,e_x,e_z$ and negates $e_y$:
+$$
+\varrho(Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z)
+=Q_te_t+Q_x\vec e_x-Q_y\vec e_y+Q_z\vec e_z,\qquad
+\mathsf M_2(\varrho(\tilde Q))=\mathsf M_2(\tilde Q)^{\mathsf T}.
+$$
+The map $\varrho$ is an anti-automorphism, not an automorphism, and it is not the quaternion conjugation $\natural$, which negates all three vector coefficients. The transpose of the matrix is the image of this reflection of the $y$ axis.
+
+**The relation to the $4\times4$ stitch.** The $4\times4$ stitch is
+$$
+R^{P}(\tilde Q)=\mathsf P\,L^{P}(\tilde Q)^{\mathsf T}\mathsf P,
+$$
+with $\mathsf P$ the swap of the two nilpotents. The compression keeps one block from each tensor factor. On that block the swap $\mathsf P$ exchanges the two nilpotent labels, and the two labels index the row and the column of the block; the block of the stitched matrix is therefore the transpose of the block of $L^{P}$. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch have no separate $2\times2$ image: the e-basis display is not compressed, and the swap acts on the tensor factors, of which the block keeps one at a time. The only trace of the swap is the exchange $X_+\leftrightarrow X_-$.
+
+## The Compression and the Switch
+
+**The two blocks.** In the order $\mathcal{P}$,
+$$
+L^{P}(\tilde Q)=\mathrm I_2\otimes A,\qquad
+R^{P}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2 .
+$$
+In the order $\mathcal{P}'$,
+$$
+L^{P}(\tilde Q)=A\otimes\mathrm I_2,\qquad
+R^{P}(\tilde Q)=\mathrm I_2\otimes A^{\mathsf T}.
+$$
+The left copy is block diagonal in $\mathcal{P}$ with the block $A$ twice; the right copy is block diagonal in $\mathcal{P}'$ with the block $A^{\mathsf T}$ twice. The two orders differ by the swap of the nilpotents. Each copy therefore has one block, repeated twice, and the compression keeps one copy of it.
+
+**The compression maps.** Define the inflations
+$$
+\iota_L(A)=\mathrm I_2\otimes A\quad\text{in }\mathcal{P},\qquad
+\iota_R(B)=\mathrm I_2\otimes B\quad\text{in }\mathcal{P}'.
+$$
+They are algebra isomorphisms onto the left and right copies. Their inverses on the copies are the compressions $\kappa_L$ and $\kappa_R$. Then
+$$
+\kappa_L\bigl(L^{P}(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)=A,\qquad
+\kappa_R\bigl(R^{P}(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)^{\mathsf T}=A^{\mathsf T}.
+$$
+Equivalently,
+$$
+\kappa_L\circ L^{P}=\mathsf M_2,\qquad
+\kappa_R\circ R^{P}=\Theta\circ\mathsf M_2,
+$$
+where $\Theta(A)=A^{\mathsf T}$. The first composition is an algebra isomorphism; the second is an anti-isomorphism, because $R^{P}$ is anti-multiplicative and $\Theta$ is an anti-automorphism.
+
+**The fixed-order extraction is not multiplicative.** The block extraction in a fixed order is not an algebra map on the ambient $M_4(\mathbb{C})$. Let $\kappa_0$ be the extraction of the block in rows and columns $1,2$ of the matrix-unit order, and let $F_{ij}$ be the $4\times4$ matrix units. Then $\kappa_0(F_{13})=\kappa_0(F_{31})=0$, while $F_{13}F_{31}=F_{11}$ has block $E_{11}$:
+$$
+\kappa_0(F_{13}F_{31})=E_{11}\neq0=\kappa_0(F_{13})\kappa_0(F_{31}).
+$$
+The compression is defined on the two copies, in their own orders, not on the ambient.
+
+**The invariants under compression.** The tensor forms give
+$$
+\operatorname{Tr}L^{P}(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
+\det L^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
+$$
+$$
+\operatorname{Tr}R^{P}(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,\qquad
+\det R^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
+$$
+and
+$$
+\operatorname{rank}L^{P}(\tilde Q)=2\operatorname{rank}A,\qquad
+\operatorname{rank}R^{P}(\tilde Q)=2\operatorname{rank}A .
+$$
+The factors $2$ and the square are the only changes from the $2\times2$ invariants.
+
+**No e-basis switch remains.** The $4\times4$ article has a change matrix $S$ between the Peirce frame and the e-basis,
+$$
+S=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
+\qquad
+\det S=-\tfrac14 .
+$$
+The matrix $S$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $S$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
+
+**What does not compress.** The two $4\times4$ families commute, $L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)=R^{P}(\tilde Q_2)L^{P}(\tilde Q_1)$, because they act on the two tensor factors. The two $2\times2$ matrices need not commute, and they are not operators on one space. The mixed trace
+$$
+\operatorname{Tr}\bigl(L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)\bigr)=4Q_{1t}Q_{2t}
+$$
+is a trace over both factors; it does not descend to a trace of $A_1A_2^{\mathsf T}$. The two bases are two bases of the same $2\times2$ space, not bases of two different subspaces. These are the three places where the compression changes the statement, and they are the reason the $2\times2$ article is not a verbatim copy of the $4\times4$ one.
+
+## The Product
+
+**The left product.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L^{2}(\tilde Q_1\tilde Q_2)=L^{2}(\tilde Q_1)L^{2}(\tilde Q_2),\qquad
+L^{2}(\tilde Q^n)=L^{2}(\tilde Q)^n,\qquad
+L^{2}(\tilde Q^{-1})=L^{2}(\tilde Q)^{-1},
+$$
+the last when either side exists, that is when $\langle\tilde Q\rangle_{\natural}\neq0$. In the matrix model this is the multiplicativity of $\mathsf M_2$.
+
+**The right product.** The right action is anti-multiplicative:
+$$
+R^{2}(\tilde Q_1\tilde Q_2)=R^{2}(\tilde Q_2)R^{2}(\tilde Q_1),\qquad
+R^{2}(\tilde Q^n)=R^{2}(\tilde Q)^n,\qquad
+R^{2}(\tilde Q^{-1})=R^{2}(\tilde Q)^{-1}.
+$$
+The reversal is the reversal of the order of the factors in the product $X\tilde Q$.
+
+**No commutation.** The matrices $A$ and $A^{\mathsf T}$ need not commute. For $\tilde Q=\vec\Upsilon_+$,
+$$
+A=E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
+A^{\mathsf T}=E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+$$
+and
+$$
+AA^{\mathsf T}=E_{22}\neq E_{11}=A^{\mathsf T}A .
+$$
+The two matrices are the left and right matrices of the same element, but they act on the two different planes $S_+$ and $T_+$. There is no product of the two actions in the compressed model, and no commutation theorem to state.
+
+**The mixed trace.** The product $A_1A_2^{\mathsf T}$ is a matrix product, not the compression of $L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)$. Its trace is
+$$
+\operatorname{Tr}(A_1A_2^{\mathsf T})=2\operatorname{Sc}\bigl(\tilde Q_1\varrho(\tilde Q_2)\bigr),
+$$
+which involves the vector parts through the reflection $\varrho$. The $4\times4$ mixed trace $4Q_{1t}Q_{2t}$ is the trace over the two tensor factors, and it is not the trace of this $2\times2$ product. The $2\times2$ mixed trace reduces to $2Q_{1t}Q_{2t}$ when the vector parts vanish, so the two differ by the factor $2$ and by the vector terms.
+
+## The Trace
+
+**Twice the scalar part.** For
+$$
+A=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
+$$
+the diagonal entries are $Q_t-iQ_z$ and $Q_t+iQ_z$, so
+$$
+\operatorname{Tr}A=2Q_t,\qquad
+Q_t=\tfrac12\operatorname{Tr}A .
+$$
+The trace kills the vector part. A matrix is traceless exactly when $Q_t=0$, and the traceless matrices are the image of the vector subspace.
+
+**The trace of a product.** For two elements,
+$$
+\operatorname{Tr}(A_1A_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)
+=2(Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}).
+$$
+The trace pairing
+$$
+\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(A_PA_Q)
+$$
+is the plain bilinear form of the algebra. Its Gram matrix on the coefficient basis is
+$$
+\mathrm E=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
+$$
+and it is non-degenerate. The factor is $\tfrac12$ in the $2\times2$ model and $\tfrac14$ in the $4\times4$ model, because the $4\times4$ trace is twice the $2\times2$ trace.
+
+**The trace of the regular matrices.** The compression gives
+$$
+\operatorname{Tr}L^{P}(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
+\operatorname{Tr}R^{P}(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,
+$$
+which is the $4Q_t$ of the $4\times4$ article. The factor $2$ is the number of blocks.
+
+**The trace is not the norm.** The trace is additive and complex-valued; it does not detect the vector part. The statement is the matrix form of the split
+$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B}).
+$$
+
+## The Determinant
+
+**The norm.** The determinant of the general matrix is
+$$
+\det A=(Q_t-iQ_z)(Q_t+iQ_z)-(-iQ_x-Q_y)(-iQ_x+Q_y)
+=Q_t^2+Q_z^2+Q_x^2+Q_y^2=\langle\tilde Q\rangle_{\natural}.
+$$
+The determinant is the quaternionic norm, not its square. The $4\times4$ determinant is the square of this one, because the block is repeated twice.
+
+**Multiplicativity.** The determinant is multiplicative,
+$$
+\det(A_1A_2)=\det A_1\det A_2,
+$$
+which is the multiplicativity of the norm. It is invariant under conjugation and under transposition,
+$$
+\det(PAP^{-1})=\det A,\qquad
+\det A^{\mathsf T}=\det A .
+$$
+Every basis matrix has determinant $1$, so the four left matrices and the four right matrices lie in $SL_2(\mathbb{C})$.
+
+**The characteristic polynomial.** The characteristic polynomial is
+$$
+\chi_A(\lambda)=\lambda^2-(\operatorname{Tr}A)\lambda+\det A
+=\lambda^2-2Q_t\lambda+\langle\tilde Q\rangle_{\natural}
+=(\lambda-Q_t)^2+B^2 .
+$$
+The eigenvalues are
+$$
+\lambda_\pm=Q_t\pm iB,
+$$
+each once. The trace is their sum and the determinant is their product. In the $4\times4$ model each eigenvalue occurs twice; the compression removes the repetition.
+
+**Invertibility and rank.** A matrix is invertible exactly when
+$$
+\det A=\langle\tilde Q\rangle_{\natural}\neq0,
+$$
+so the units of the algebra are the matrices of nonzero norm. The rank of $A$ is $2$ when $A$ is invertible, $1$ when $A$ is nonzero and singular, and $0$ when $A=0$. The compression gives
+$$
+\det L^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,\qquad
+\operatorname{rank}L^{P}(\tilde Q)=2\operatorname{rank}A,
+$$
+and the same for $R^{P}$.
+
+**The square.** The determinant of the $2\times2$ matrix is the norm; the determinant of the $4\times4$ matrix is the square of the norm. The trace of the $2\times2$ matrix is half the trace of the $4\times4$ matrix. These two factors are the quantitative content of the compression.
+
+## The Six Subspaces
+
+**The table.** The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. In the $2\times2$ model each condition is a condition on $A$ alone. Put
+$$
+A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},\qquad
+A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix},
+$$
+and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $\lambda=Q_t$. In the quaternion row $a=q_t-iq_z$, $b=-iq_x-q_y$; in the anti-quaternion row $a=q'_z+iq'_t$, $b=q'_x-iq'_y$.
+
+| Subspace | Defining condition | Condition on $A$ | Real dim. | Trace | $\det A$ |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $\tilde Q^{\natural}=\tilde Q$ | $A=\lambda\mathrm I_2$ | $2$ | $2Q_t$ | $Q_t^2$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}A=0$ | $6$ | $0$ | $B^2$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=\tilde Q$ | $A=A_{\mathbb{H}}(a,b)$ | $4$ | $2q_t$ | $\sum q_\mu^2$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=-\tilde Q$ | $A=A_{i\mathbb{H}}(a,b)$ | $4$ | $2iq'_t$ | $-\sum(q'_\mu)^2$ |
+| $\mathbb{M}_+$ | $\tilde Q^{*}=\tilde Q$ | $A=A^{\dagger}$ | $4$ | $2q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ |
+| $\mathbb{M}_-$ | $\tilde Q^{\flat}=\tilde Q$ | $A=-A^{\dagger}$ | $4$ | $2iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ |
+
+**No warning is needed.** In the $4\times4$ article the conditions in the third column are exact only inside the image, because the ambient $M_4(\mathbb{C})$ contains matrices that are not left regular matrices. In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so every condition is exact on the whole matrix algebra. The table is the compression of the $4\times4$ table, and the warning of the $4\times4$ article disappears.
+
+**The centre and the vector subspace.** The centre is the line of scalar matrices, of real dimension $2$. The vector subspace is the trace-zero matrices, a complex subspace of dimension $3$ and real dimension $6$. The trace is the only condition, and the determinant is $B^2$. The image of the centre is the commutative line $\mathbb{C}\mathrm I_2$; the image of the vector subspace is closed under the commutator and not under the product.
+
+**The quaternion and anti-quaternion subspaces.** The quaternion subspace is the space of matrices
+$$
+A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},
+\qquad a=q_t-iq_z,\quad b=-iq_x-q_y,
+$$
+of real dimension $4$. The determinant is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra. The anti-quaternion subspace is
+$$
+A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix},
+\qquad a=q'_z+iq'_t,\quad b=q'_x-iq'_y,
+$$
+also of real dimension $4$. Its determinant is $-\sum(q'_\mu)^2$, non-positive and vanishing only at $\tilde Q=0$; it is not closed under multiplication, and the product of two anti-quaternion matrices is quaternion-shaped.
+
+**The Hermitian and anti-Hermitian subspaces.** The Hermitian subspace is the set of matrices $A=A^{\dagger}$, of real dimension $4$. For
+$$
+\tilde Q=q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z,
+$$
+the matrix is
+$$
+A=\begin{pmatrix}q_t+q'_z&q'_x-iq'_y\\ q'_x+iq'_y&q_t-q'_z\end{pmatrix},
+\qquad
+\det A=q_t^2-\lvert\vec q'\rvert^2 .
+$$
+The determinant is indefinite. The anti-Hermitian subspace is the set of matrices $A=-A^{\dagger}$, also of real dimension $4$. For
+$$
+\tilde Q=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,
+$$
+the matrix is
+$$
+A=\begin{pmatrix}i(q'_t-q_z)&-iq_x-q_y\\ -iq_x+q_y&i(q'_t+q_z)\end{pmatrix},
+\qquad
+\det A=-(q'_t)^2+\lvert\vec q\rvert^2 .
+$$
+The determinant is indefinite with the opposite sign. Neither subspace is a subalgebra; the anti-Hermitian subspace is a Lie algebra under the commutator.
+
+**The three splits.** The six subspaces pair into
+$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
+=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
+=\mathbb{M}_+\oplus\mathbb{M}_-,
+$$
+of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector split, the second the real–imaginary split, the third the Hermitian–anti-Hermitian split. No one refines another.
+
+**The intersections.** The centre meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_2$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_2$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{M}_+$ in $i$ times the real vector triple and $\mathbb{M}_-$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.
+
+**The closure.** The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.
+
+## Summary
+
+The $2\times2$ Standard Peirce representation is the compression of the $4\times4$ one. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
+
+The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
+
+The compression keeps the product, the trace, the determinant and the six subspaces. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k^2=-e_t$ |
+| $\tilde Q=Q_te_t+\vec Q$ | an element, $Q_\mu=q_\mu+iq'_\mu$ |
+| $B^2$, $\langle\tilde Q\rangle_{\natural}$ | $Q_x^2+Q_y^2+Q_z^2$ and $Q_t^2+B^2$ |
+| $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the standard idempotents |
+| $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the standard nilpotents |
+| $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the Peirce frame |
+| $\mathcal{P}'=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ | the matrix-unit order |
+| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the minimal left ideals |
+| $T_\pm=\tilde\Pi_\pm\mathbb{B}$ | the minimal right ideals |
+| $P_\pm,X_\pm$ | the Peirce coordinates |
+| $A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}$ | the $2\times2$ image |
+| $L^{2}(\tilde Q)=A$, $R^{2}(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |
+| $L_\mu^{2}$, $R_\mu^{2}$ | the left and right matrices of the four units |
+| $\varrho$ | the anti-automorphism fixing $e_t,e_x,e_z$ and negating $e_y$ |
+| $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |
+| $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
+| $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
+| $E_{ij}$ | the matrix units |
+
+## Further Reading
+
+- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the e-basis switch.
+- [$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant](m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same element in the e-basis.
+- [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model, the algebra isomorphism and the Pauli form.
+- [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate isomorphism, the left action on the two planes and the star.
+- [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants in the coefficient model.
+- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the row-by-row derivations of the table.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the coefficient form of the element and the four conjugations.
+- [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three splits.
+- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the fixed model and the conventions of the matrix models.

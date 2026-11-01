@@ -89,7 +89,7 @@ $$
 i\,\vec\mu = \mu_k\,i \vec e_k = \mu_1\,i \vec e_x + \mu_2\,i \vec e_y + \mu_3\,i \vec e_z \in \mathbb{M}_+ ,
 $$
 
-the imaginary pure quaternion being the informational-sector twin of the real pure quaternion $\vec\mu = \mu_k\vec e_k$. The two descriptions are exchanged by multiplication by $i$, exactly as the two sectors are; both describe the same physical moment, and the choice between them is a choice of which sector's representative is being written. For a moment tied to an intrinsic angular momentum $\vec S$, the coefficient is the gyromagnetic ratio,
+the imaginary pure quaternion being the informational-sector twin of the real pure quaternion $\vec\mu = \sum_k \mu_k\vec e_k$. The two descriptions are exchanged by multiplication by $i$, exactly as the two sectors are; both describe the same physical moment, and the choice between them is a choice of which sector's representative is being written. For a moment tied to an intrinsic angular momentum $\vec S$, the coefficient is the gyromagnetic ratio,
 
 $$
 \vec\mu = \gamma\,\vec S,
@@ -212,8 +212,8 @@ in a right-handed basis whose third axis is $\vec u_B$. The signed rate $\gamma 
 The rotor algebra is stated here explicitly, because the precession solution and the reciprocal effects of the following article are both written in it. A rotation through angle $\theta$ about the unit real axis $\vec u$ is produced by the **unit real quaternion**
 
 $$
-\tilde u(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\;\vec u_k \vec e_k
-= \exp\!\left(\frac{\theta}{2}\,\vec u_k \vec e_k\right),
+\tilde u(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\;\sum_k \vec u_k \vec e_k
+= \exp\!\left(\frac{\theta}{2}\,\sum_k \vec u_k \vec e_k\right),
 $$
 
 acting on a pure real vector by **rotor conjugation**,
@@ -269,7 +269,7 @@ The precession law has a second interpretation, which is the content of the **La
 $$
 d\vec\mu/dt' = \tfrac{1}{2}\left[\vec\Omega,\vec\mu\right]
 + \tilde u_\Omega\left(d\vec\mu_{\rm rot}/dt'\right)\tilde u_\Omega^{*} ,
-\qquad \vec\Omega = \Omega_k \vec e_k .
+\qquad \vec\Omega = \sum_k \Omega_k \vec e_k .
 $$
 
 Substituting the Larmor equation $d\vec\mu/dt' = \tfrac{1}{2}[\vec\mu,\vec\omega_G]$ and collecting the generator of the frame's own motion gives
@@ -331,7 +331,7 @@ The two treatments agree because they are the same rotor. The classical moment o
 
 ## Summary
 
-The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,
+The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \sum_k \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = \sum_k B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,
 
 $$
 \vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B,
@@ -374,9 +374,9 @@ The gyromagnetic ratio is $\gamma = g\,ϙ/2m$, with $g = 1$ for a convective mom
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
-| $\vec\mu = \mu_k \vec e_k$ | Classical magnetic moment (pure real quaternion) |
+| $\vec\mu = \sum_k \mu_k \vec e_k$ | Classical magnetic moment (pure real quaternion) |
 | $i\,\vec\mu = \mu_k\,i \vec e_k$ | Intrinsic moment's informational-sector representative |
-| $\vec B = B_k \vec e_k = \mu\vec H$ | Magnetic induction (pure real quaternion) |
+| $\vec B = \sum_k B_k \vec e_k = \mu\vec H$ | Magnetic induction (pure real quaternion) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec j, \rho_c, \rho_m$ | Current density; charge and mass densities |
 | $\mathcal{M}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
@@ -386,7 +386,7 @@ The gyromagnetic ratio is $\gamma = g\,ϙ/2m$, with $g = 1$ for a convective mom
 | $\vec\omega_L = -\gamma\vec B$ | Larmor angular velocity |
 | $\omega_L = \lvert\gamma\rvert B$ | Larmor frequency |
 | $\vec\omega_G = \gamma\vec B$ | Larmor generator (Larmor equation) |
-| $\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
 | $\mathcal{R}(\theta,\vec u)$ | Three-vector rotation through $\theta$ about $\vec u$ |
 | $\vec\mu(t') = \tilde u_L\vec\mu(0)\tilde u_L^{*}$ | Precession as rotor conjugation |
 | $E = -\vec\mu\cdot\vec B = \mathrm{Sc}(\vec\mu\vec B)$ | Magnetic energy |

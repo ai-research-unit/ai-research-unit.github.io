@@ -332,7 +332,7 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_\mu e_\mu D_\mu$ | Covariant derivative |
 | $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict')$ |
 | $\bar D = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $D$ |
-| $\tilde{A}^{\natural} = A_0e_t - A_\mu\vec e_\mu$ | Quaternion conjugate of the connection |
+| $\tilde{A}^{\natural} = A_0e_t - \sum_\mu A_\mu\vec e_\mu$ | Quaternion conjugate of the connection |
 | $[D_\mu, f] = \partial/\partial Q_\mu f$ | Derivation property |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2 = S - \Box\Gamma$ | Gauge scalar; pure gauge |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, gauge invariant |

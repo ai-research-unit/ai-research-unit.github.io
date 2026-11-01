@@ -354,8 +354,8 @@ because $T_{\mu\nu}^{*}=T_{\mu\nu}^{\mathsf T}$ and the transpose moves the entr
 
 **Theorem.** Every matrix unit is a sum of four of the $T_{\mu\nu}$ with coefficients $\pm\tfrac14$:
 $$
-E_{ij}=\tfrac14\sum_{\mu,\nu}\varepsilon^{\,ij}_{\mu\nu}T_{\mu\nu},
-\qquad \varepsilon^{\,ij}_{\mu\nu}\in\{\pm1\},
+E_{ij}=\tfrac14\sum_{\mu,\nu}\varepsilon_{\mu\nu,ij}T_{\mu\nu},
+\qquad \varepsilon_{\mu\nu,ij}\in\{\pm1\},
 $$
 and each row of the coefficient array has exactly four nonzero entries.
 
@@ -382,7 +382,7 @@ and each row of the coefficient array has exactly four nonzero entries.
 
 **Two examples in full.** For $E_{11}$ the four diagonal $T$'s enter with the signs of the coordinates: the trace sum $1-(-1)-(-1)-(-1)=4$ gives the coefficient $1$, while the off-diagonal entries cancel. For $E_{12}$ the four $T$'s with exactly one $t$ index enter; the two $t$-first matrices give the first column, and the two $t$-second matrices give the second.
 
-**The coefficient array is a signed permutation.** In each expansion the four indices $(\mu,\nu)$ are distinct, and each row index and each column index occurs exactly once. The array $\varepsilon^{\,ij}$ is therefore a signed permutation matrix, of rank four.
+**The coefficient array is a signed permutation.** In each expansion the four indices $(\mu,\nu)$ are distinct, and each row index and each column index occurs exactly once. The array $\varepsilon_{ij}$ is therefore a signed permutation matrix, of rank four.
 
 ### Length four
 

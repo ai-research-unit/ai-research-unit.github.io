@@ -207,7 +207,7 @@ $$
 \vec u = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z .
 $$
 
-The observable measured by the rotated analyser is $\tilde{S}(\vec u) = \vec u_k\tilde{S}_k = \tfrac{\hbar}{2} i\vec u$, whose eigenstates are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$:
+The observable measured by the rotated analyser is $\tilde{S}(\vec u) = \sum_k \vec u_k\tilde{S}_k = \tfrac{\hbar}{2} i\vec u$, whose eigenstates are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$:
 
 $$
 \tilde{S}(\vec u)\,\tilde\Pi_{1,2}(\vec u) = \pm\frac{\hbar}{2}\,\tilde\Pi_{1,2}(\vec u).

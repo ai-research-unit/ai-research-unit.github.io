@@ -123,7 +123,7 @@ Q_8=\{\pm1,\pm e_x,\pm e_y,\pm e_z\}
 $$
 as the subgroup of index two, and the eight elements $\pm i,\pm i e_x,\pm i e_y,\pm i e_z$ in the other coset, of norm $-1$. The subgroup $Q_8$ lies in $\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1$; the other coset lies in the norm $-1$ even component. The group $L(U)$ is the Pauli group of order $16$; it is the finite even group of the frame, not the full even Pin.
 
-**The frame is not the whole Pin group.** The unit sphere of $V$ is continuous, and the Pin group it generates is a Lie group of real dimension six (the spin group) plus the odd coset. The five gammas generate only the finite subgroup $G_\gamma$. The passage from the frame to the full group is the passage from the five vectors to all linear combinations $\xi=\xi_\mu\gamma_\mu$ with $q(\xi)=\pm1$; the finite group is the skeleton, the continuous group is the envelope.
+**The frame is not the whole Pin group.** The unit sphere of $V$ is continuous, and the Pin group it generates is a Lie group of real dimension six (the spin group) plus the odd coset. The five gammas generate only the finite subgroup $G_\gamma$. The passage from the frame to the full group is the passage from the five vectors to all linear combinations $\xi=\sum_\mu \xi_\mu\gamma_\mu$ with $q(\xi)=\pm1$; the finite group is the skeleton, the continuous group is the envelope.
 
 ## The Finite Group of the Two-Sided Matrices
 

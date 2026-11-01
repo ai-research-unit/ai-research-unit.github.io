@@ -49,7 +49,7 @@ $$
 \;}.
 $$
 
-**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $\vec e_x, \vec e_y, \vec e_z$, and $Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ commutes with all three precisely when $Q_x = Q_y = Q_z = 0$, because $Q_\mu \vec e_\mu$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_t$, which is the fixed space of ${}^{\natural}$.
+**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $\vec e_x, \vec e_y, \vec e_z$, and $Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ commutes with all three precisely when $Q_x = Q_y = Q_z = 0$, because $\sum_\mu Q_\mu \vec e_\mu$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_t$, which is the fixed space of ${}^{\natural}$.
 
 The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $Q_t e_t$ with $Q_t \in \mathbb{D}$.
 

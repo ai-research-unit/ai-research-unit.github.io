@@ -114,7 +114,7 @@ with the Casimir operators built from the operators of the companion article, $L
 
 One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $H$ is spin-independent, the **total** angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,l_z\rangle\,|\!\uparrow\rangle,|n,l,l_z\rangle\,|\!\downarrow\rangle$.
 
-A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.
+A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $\sum_k L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.
 
 ### The angular and spin factors
 
@@ -127,7 +127,7 @@ $$
 with $Y_l^{l_z}$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces
 
 $$
-\vec u_k\tilde S_k\,\tilde{\Pi}(\pm\vec u) = \pm\tfrac{\hbar}{2}\,\tilde{\Pi}(\pm\vec u),
+\sum_k \vec u_k\tilde S_k\,\tilde{\Pi}(\pm\vec u) = \pm\tfrac{\hbar}{2}\,\tilde{\Pi}(\pm\vec u),
 \qquad
 \tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u),
 $$
@@ -256,10 +256,10 @@ A fifth, smaller point is worth a line. The corpus's biquaternion special-functi
 
 The companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* would begin from the biquaternion Dirac equation with the Coulomb potential rather than from the Schrödinger equation. Four differences from the present treatment are structural, and each is already visible in the framework's angular-momentum machinery.
 
-**The Hamiltonian ceases to be central.** The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,
+**The Hamiltonian ceases to be central.** The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde S_{\mathrm{tot},k}=L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $\sum_k L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,
 
 $$
-\bigl(L_k\tilde S_k\bigr)_{s_{\mathrm{tot}}=l\pm\frac12} =
+\bigl(\sum_k L_k\tilde S_k\bigr)_{s_{\mathrm{tot}}=l\pm\frac12} =
 \begin{cases} +\dfrac{\hbar^2 l}{2}, & s_{\mathrm{tot}}=l+\tfrac12,\\[6pt] -\dfrac{\hbar^2(l+1)}{2}, & s_{\mathrm{tot}}=l-\tfrac12, \end{cases}
 $$
 

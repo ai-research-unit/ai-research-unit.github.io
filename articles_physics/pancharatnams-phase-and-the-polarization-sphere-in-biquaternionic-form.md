@@ -6,7 +6,7 @@ When polarized light is passed through a sequence of polarizers, the interferenc
 
 The Poincaré sphere is a level set of the biquaternion norm of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose biquaternion-norm value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **biquaternion-norm cone** of the Hermitian sector, the same cone that the companion article *The Informational Sector: States, Observables and Probability* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
 
-1. The coherence biquaternion is $\tilde{Ϛ}=\frac12(S_0e_t+i S_k\vec e_k)\in\mathbb{M}_+$ with Stokes parameters $S_0,\vec S$; the biquaternion norm is $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$.
+1. The coherence biquaternion is $\tilde{Ϛ}=\frac12(S_0e_t+i \sum_k S_k\vec e_k)\in\mathbb{M}_+$ with Stokes parameters $S_0,\vec S$; the biquaternion norm is $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$.
 2. The fully polarized (pure) states are $\langle\tilde{Ϛ}\rangle_{\natural}=0$, the cone; after normalisation they are the Poincaré sphere.
 3. Pancharatnam's in-phase criterion defines the natural connection on the ray space; its curvature is $-\frac12d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ times the enclosed solid angle.
 4. The three-polarizer phase is the same statement for a spherical triangle, and Girard's theorem turns it into a sum of angles.
@@ -62,7 +62,7 @@ The polarization of a beam is encoded in its **coherence matrix** $\rho=\vec J\v
 
 $$
 \tilde{Ϛ}=\tfrac12\left(S_0e_t+i\,S_1\vec e_x+i\,S_2\vec e_y+i\,S_3\vec e_z\right)
-=\tfrac12\left(S_0e_t+i\,S_k\vec e_k\right),
+=\tfrac12\left(S_0e_t+i\,\sum_k S_k\vec e_k\right),
 \qquad \tilde{Ϛ}=\tilde{Ϛ}^{*} .
 $$
 
@@ -294,7 +294,7 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 
 **Structurally the algebra's.**
 
-1. The coherence matrix is an element of the Hermitian sector $\mathbb{M}_+$; written as a biquaternion, it is $\tilde{Ϛ}=\frac12(S_0e_t+i S_k\vec e_k)$.
+1. The coherence matrix is an element of the Hermitian sector $\mathbb{M}_+$; written as a biquaternion, it is $\tilde{Ϛ}=\frac12(S_0e_t+i \sum_k S_k\vec e_k)$.
 2. The biquaternion norm on $\mathbb{M}_+$ is indefinite, $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$, and the **degree of polarization** is $P^2=1-4\langle\tilde{Ϛ}\rangle_{\natural}/S_0^2$.
 3. The fully polarized states are the **biquaternion-norm cone** $\langle\tilde{Ϛ}\rangle_{\natural}=0$, which after normalisation is the Poincaré sphere; it is simultaneously the Hermitian idempotent sphere of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
 4. The Pancharatnam connection on the cone has curvature $-\frac12\,d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ of the enclosed solid angle, and the three-polarizer rule and Girard's theorem follow.
@@ -304,7 +304,7 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 
 Pancharatnam's phase is the classical optical geometric phase, and in the biquaternion algebra it is the holonomy of the natural connection on the biquaternion-norm cone of the Hermitian sector.
 
-- A beam's polarization is described by its coherence biquaternion $\tilde{Ϛ}=\frac12(S_0e_t+i S_k\vec e_k)\in\mathbb{M}_+$, with $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ and degree of polarization $P^2=1-4\langle\tilde{Ϛ}\rangle_{\natural}/S_0^2$.
+- A beam's polarization is described by its coherence biquaternion $\tilde{Ϛ}=\frac12(S_0e_t+i \sum_k S_k\vec e_k)\in\mathbb{M}_+$, with $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ and degree of polarization $P^2=1-4\langle\tilde{Ϛ}\rangle_{\natural}/S_0^2$.
 - The fully polarized states are the cone $\langle\tilde{Ϛ}\rangle_{\natural}=0$, which is the Poincaré sphere after normalisation and the Hermitian idempotent sphere of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
 - Pancharatnam's in-phase criterion, $\arg\langle A|B\rangle_{*}$, defines the connection $\mathcal A=i\langle J|dJ\rangle=-\frac12(1-\cos\theta)d\phi$ on the ray space, in the horizontal gauge of the amplitude written in the circular basis.
 - The curvature is $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\phi=-\frac12\,d\Omega$, so the phase around a circuit is $-\frac12$ of the enclosed solid angle; the three-state rule is $\gamma_{\mathrm{Panch}}=-\arg(\langle A|B\rangle\langle B|C\rangle\langle C|A\rangle)=-\Omega_{ABC}/2$, and Girard's theorem gives $\Omega_{ABC}=\alpha+\beta+\gamma-\pi$.
@@ -319,7 +319,7 @@ The phase is classical: it is measured by the shift of interference fringes of a
 | $\vec J=(E_x,E_y)$ | Jones vector of the beam |
 | $S_0,\vec S=(S_1,S_2,S_3)$ | Stokes parameters |
 | $P=\sqrt{\vec S^2}/S_0$ | Degree of polarization |
-| $\tilde{Ϛ}=\frac12(S_0e_t+i S_k\vec e_k)\in\mathbb{M}_+$ | Coherence biquaternion |
+| $\tilde{Ϛ}=\frac12(S_0e_t+i \sum_k S_k\vec e_k)\in\mathbb{M}_+$ | Coherence biquaternion |
 | $\langle\tilde{Ϛ}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ | Biquaternion norm; indefinite on $\mathbb{M}_+$ |
 | $\langle\tilde{Ϛ}\rangle_{\natural}=0$ | Cone: fully polarized states = Poincaré sphere = idempotents |
 | $\vec u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |

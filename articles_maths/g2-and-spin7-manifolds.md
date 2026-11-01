@@ -25,7 +25,7 @@ $$
 \varphi_0(u,v,w) = \langle u, vw\rangle, \qquad u, v, w \in \mathbb{R}^7,
 $$
 
-where $\langle\,\cdot\,,\,\cdot\,\rangle$ is the inner product polarising the norm and $vw$ is the octonion product; equivalently $\varphi_0 = \sum_{i<j<k}\varepsilon_{ijk}e^{ijk}$ over the seven cyclic triples of the multiplication table. Its stabiliser in $GL(7,\mathbb{R})$ is $G_2$:
+where $\langle\,\cdot\,,\,\cdot\,\rangle$ is the inner product polarising the norm and $vw$ is the octonion product; equivalently $\varphi_0 = \sum_{i<j<k}\varepsilon_{ijk}e_{ijk}$ over the seven cyclic triples of the multiplication table. Its stabiliser in $GL(7,\mathbb{R})$ is $G_2$:
 
 $$
 G_2 = \{A\in GL(7,\mathbb{R}) : A^*\varphi_0 = \varphi_0\},

@@ -133,7 +133,7 @@ The determinant of the matrix is the quaternionic norm, $\det\mathsf M_2(\tilde 
 
 | sector | element | determinant | signature |
 | --- | --- | --- | --- |
-| material | $iq'_te_t+q_k\vec e_k$ | $-(q'_t)^2+q_x^2+q_y^2+q_z^2$ | $(3,1)$ |
+| material | $iq'_te_t+\sum_k q_k\vec e_k$ | $-(q'_t)^2+q_x^2+q_y^2+q_z^2$ | $(3,1)$ |
 | informational | $q_te_t+iq'_k\vec e_k$ | $q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$ | $(1,3)$ |
 | state slice | $\tfrac12(e_t+i\vec r)$ | $\tfrac14(1-\lvert\vec r\rvert^2)$ | positivity |
 

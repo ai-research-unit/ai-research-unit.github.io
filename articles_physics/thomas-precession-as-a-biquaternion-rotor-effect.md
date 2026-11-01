@@ -184,7 +184,7 @@ The precession can be written as a rotor conjugation in the same half-angle form
 $$
 \frac{d\vec r}{dt'}=\vec\omega_T\times\vec r,
 \qquad
-\vec r=r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
+\vec r=\sum_\mu r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
 $$
 
 and, for constant $\vec\omega_T$, the solution is the rotor conjugation
@@ -357,7 +357,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\vec\omega_T=\frac{\gamma_2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\vec\Omega$ | Orbital angular velocity (circular motion) |
 | $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ | Thomas rotor (half-angle) |
-| $\vec r=r_\mu\vec e_\mu$ | Material spatial vector |
+| $\vec r=\sum_\mu r_\mu\vec e_\mu$ | Material spatial vector |
 | $g$, $\gamma_g=gq/2m$ | Gyromagnetic factor and ratio |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

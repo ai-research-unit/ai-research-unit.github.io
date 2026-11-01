@@ -15,7 +15,7 @@ $$
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and $i$ on the right is the complex unit of $M_2(\mathbb{C})$. It follows that
 
 $$
-\mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(h_t e_t + i h_k \vec e_k\bigr) = h_t I_2 + h_k \sigma_k .
+\mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_k h_k \vec e_k\bigr) = h_t I_2 + h_k \sigma_k .
 $$
 
 The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_i,L_j]=i\epsilon_{ijk}L_k$, is the $\hbar=1$ form of the relations below.
@@ -81,10 +81,10 @@ $$
 This is the standard **anti-Hermitian** convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_k \leftrightarrow \tfrac{i}{2}\sigma_k$. Exponentiating a generator gives a group element:
 
 $$
-\exp\!\left(\theta\,\vec u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t - \sin\tfrac{\theta}{2}\,\vec u_k \vec e_k ,
+\exp\!\left(\theta\,\vec u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\sum_k \vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t - \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k ,
 $$
 
-where $\vec u$ is a unit real vector. This is a **unit real quaternion**: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\vec u_k \vec e_k$ a pure real quaternion of square $-e_t$, so that the power series splits into the trigonometric series.
+where $\vec u$ is a unit real vector. This is a **unit real quaternion**: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\sum_k \vec u_k \vec e_k$ a pure real quaternion of square $-e_t$, so that the power series splits into the trigonometric series.
 
 The **observables** are obtained by multiplying the generators by $-i\hbar$:
 
@@ -92,7 +92,7 @@ $$
 \tilde S_k = -i\hbar\, g_k = \tfrac{i\hbar}{2} \vec e_k \quad(\text{for spin-}\tfrac12), \qquad [\tilde S_i,\tilde S_j] = i\hbar\,\epsilon_{ijk}\tilde S_k .
 $$
 
-The verification is one line: $[\tilde S_i,\tilde S_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde S_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde S_k$ generate the $*$-unitary rotations through $\exp(-i\theta\,\vec u_k\tilde S_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.
+The verification is one line: $[\tilde S_i,\tilde S_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde S_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde S_k$ generate the $*$-unitary rotations through $\exp(-i\theta\,\sum_k \vec u_k\tilde S_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.
 
 A structural remark is in order. For two Hermitian elements $\tilde Q_1 = Q_{1t} e_t + i\vec Q_1$ and $\tilde Q_2 = Q_{2t} e_t + i\vec Q_2$ of $\mathbb{M}_+$, the companion article computes
 
@@ -178,7 +178,7 @@ Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raisin
 The pure spin states are the idempotents $\tilde\Pi(\pm\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, and they are the eigenstates of the spin along $\vec u$:
 
 $$
-\vec u_k \tilde{S}_k\, \tilde\Pi(\pm\vec u) = \pm\tfrac{\hbar}{2}\, \tilde\Pi(\pm\vec u) .
+\sum_k \vec u_k \tilde{S}_k\, \tilde\Pi(\pm\vec u) = \pm\tfrac{\hbar}{2}\, \tilde\Pi(\pm\vec u) .
 $$
 
 This is the content of the parent article, expressed in the notation needed below.
@@ -233,7 +233,7 @@ The operator $\tilde S_{\mathrm{tot},k}$ is Hermitian, its orbital part sitting 
 The **spin–orbit operator** is the scalar contraction of the two vector operators,
 
 $$
-(L_k e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,L_k \vec e_k,
+(L_k e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,\sum_k L_k \vec e_k,
 \qquad \mathsf{M}_2\bigl((L_k e_t)\tilde{S}_k\bigr) = \tfrac{\hbar}{2}\,L_k\sigma_k = L\cdot\vec S.
 $$
 
@@ -256,7 +256,7 @@ $$
 = \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,L_k \vec e_k\;},
 $$
 
-where the cross terms combine to $2L_k\tilde S_k = i\hbar L_k\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is **not** a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value
+where the cross terms combine to $2\sum_k L_k\tilde S_k = i\hbar \sum_k L_k\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is **not** a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value
 
 $$
 \tilde S_{\mathrm{tot}}^2 \;\longrightarrow\; s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2, \qquad s_{\mathrm{tot}} = l\pm\tfrac12 \;\;(l\ge 1), \qquad s_{\mathrm{tot}} = \tfrac12 \;\;(l=0).
@@ -340,7 +340,7 @@ Two structural points should be stated precisely. First, the algebra $\mathbb{B}
 Rotations in the biquaternion framework are realised by **rotor conjugation**. A rotation through angle $\theta$ about the unit axis $\vec u$ is generated by the unit real quaternion
 
 $$
-\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\vec u_k \vec e_k \in \mathbb{H}_{\mathbb{B}}, \qquad \tilde u\,\tilde u^{*} = e_t ,
+\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k \in \mathbb{H}_{\mathbb{B}}, \qquad \tilde u\,\tilde u^{*} = e_t ,
 $$
 
 acting on states and observables by conjugation. On the observables of the informational sector, a state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ transforms as
@@ -354,9 +354,9 @@ which leaves the scalar part fixed and rotates the Bloch vector $\vec r$ by angl
 The rotor is generated by the total angular momentum. Writing the rotation operator as $\exp(-i\theta\,\vec u_k\tilde S_{\mathrm{tot},k}/\hbar)$ and using $\tilde S_{\mathrm{tot},k} = L_k+\tilde S_k$, the orbital part acts on the position dependence while the spin part acts on the internal index. For the spin alone,
 
 $$
-\exp\!\left(-\frac{i\theta}{\hbar}\,\vec u_k\tilde{S}_k\right)
-= \exp\!\left(-\frac{i\theta}{\hbar}\cdot\frac{\hbar}{2}\,i\vec u_k \vec e_k\right)
-= \exp\!\left(\frac{\theta}{2}\vec u_k \vec e_k\right)
+\exp\!\left(-\frac{i\theta}{\hbar}\,\sum_k \vec u_k\tilde{S}_k\right)
+= \exp\!\left(-\frac{i\theta}{\hbar}\cdot\frac{\hbar}{2}\,i\sum_k \vec u_k \vec e_k\right)
+= \exp\!\left(\frac{\theta}{2}\sum_k \vec u_k \vec e_k\right)
 = \tilde u(\theta,\vec u) ,
 $$
 
@@ -381,7 +381,7 @@ It is useful to separate the two kinds of result that the article contains.
 - The spin commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow from the quaternion product rule $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_k^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_k$ is what places the observables in $\mathbb{M}_+$.
 - The commutator of two Hermitian observables is $-2(\vec h\times\vec k)$, a pure real quaternion in $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$ is a central element of $\mathbb{B}$, and its value $s(s+1)\hbar^2$ with $s=\tfrac12$ follows from $(i\vec e_k)^2=+e_t$.
-- The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\vec u_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.
+- The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_k \vec u_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.
 - The spin ladder operators are nilpotent and null in the biquaternion norm, $\tilde S_\pm^2=0$ and $\langle\tilde S_\pm\rangle_{\natural}=0$: they are zero divisors of the algebra.
 - Orbital operators occupy the central scalar slot $e_t$ and spin operators the vector slots $i\vec e_k$, an algebraic distinction between external and internal degrees of freedom.
 - As a module over $\mathbb{B}$, the algebra affords only $s=0$ and $s=\tfrac12$; the $s=1$ vector representation appears through the adjoint action on the imaginary quaternions, and higher spins require tensor products.
@@ -426,7 +426,7 @@ The spin ladder operators are nilpotent and null in the biquaternion norm, and h
 | $\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Ladder operators |
 | $\tilde S_{\mathrm{tot}}^2=\sum_k\tilde S_{\mathrm{tot},k}^2$ | Casimir operator, eigenvalue $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ |
 | $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ | Angular-momentum algebra |
-| $\tilde u(\theta,\vec u)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde u(\theta,\vec u)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
 | $\tilde\Pi(\pm\vec u)=\tfrac{1}{2}(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $s_{\mathrm{tot}},s_{\mathrm{tot},z}$; $l,l_z$; $s,s_z$ | Total, orbital, and spin quantum numbers |
 | $\langle l,l_z;\tfrac12,s_z|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Clebsch–Gordan coefficients (Condon–Shortley phase) |

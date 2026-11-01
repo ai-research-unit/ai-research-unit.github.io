@@ -29,7 +29,7 @@ $$
 \tilde{H}_Z = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
 = -\frac{\hbar\omega_L}{2}\,i\vec u,
 \qquad
-\tilde{S}(\vec u) = u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
+\tilde{S}(\vec u) = \sum_k u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
 $$
 
 where $\vec u = \vec B/B$ and
@@ -48,7 +48,7 @@ $$
 \tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\vec u) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\vec u),
 $$
 
-because $u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto u_k\tilde{S}_k$. The two eigenvalues are
+because $\sum_k u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto \sum_k u_k\tilde{S}_k$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{\hbar\omega_L}{2},

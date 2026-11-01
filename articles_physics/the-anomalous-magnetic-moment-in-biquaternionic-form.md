@@ -118,7 +118,7 @@ The bivector part of a rotation-type generator is $\gamma_\mu\gamma_\rho$, the i
 **The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on four contraction identities of the generators, all verified in the metric $g=\mathrm{diag}(+1,-1,-1,-1)$:
 
 $$
-\gamma_\mu\gamma_\mu=4I_4 ,
+\sum_\mu \gamma_\mu\gamma_\mu=4I_4 ,
 \qquad
 \gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha ,
 \qquad
@@ -222,7 +222,7 @@ All numerics are exact matrix arithmetic in plain Python, in the representatives
 | Anticommutator, metric | $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$: residual $0$ |
 | Squares | $(\gamma_0)^2=I_4$, $(\gamma_\mu)^2=-I_4$: residual $0$ |
 | Traces | $\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu}$ and the four-generator trace: residual $0$ |
-| Contractions | $\gamma_\mu\gamma_\mu=4I_4$; $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$; $\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4$; the five-generator identity: residual $0$ |
+| Contractions | $\sum_\mu \gamma_\mu\gamma_\mu=4I_4$; $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$; $\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4$; the five-generator identity: residual $0$ |
 | Dictionary | $\vec e_\mu\mapsto\gamma_\mu\gamma_\rho$, $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$, $i\mapsto-\omega$; $\vec e_x\vec e_y$ and $\vec e_z$ have the same image: residual $0$ |
 | Bivector algebra | $[S_{\mu\nu},S_{\rho\sigma}]=i(g_{\nu\rho}S_{\mu\sigma}-g_{\mu\rho}S_{\nu\sigma}-g_{\nu\sigma}S_{\mu\rho}+g_{\mu\sigma}S_{\nu\rho})$ with $S_{\mu\nu}=\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]$: residual $0$ |
 | Generator Hermiticity | $(S_{\mu\rho})^\dagger=S_{\mu\rho}$, $(S_{0k})^\dagger=-S_{0k}$, and $\sigma_{12}=2S_{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$ |
@@ -291,7 +291,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $k=p_2-p$ | Momentum transfer |
 | $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ | Clifford metric (level 3) |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict'$ metric (level 2) |
-| $\gamma_\mu\gamma_\mu=4$, $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$ | Contraction identities (residual $0$) |
+| $\sum_\mu \gamma_\mu\gamma_\mu=4$, $\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$ | Contraction identities (residual $0$) |
 | $\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu}$ | Trace identity (residual $0$) |
 | $\vec e_\mu\mapsto\gamma_\mu\gamma_\rho$, $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$, $i\mapsto-\omega$ | Dictionary (verified) |
 | $\vec e_\mu\in\mathbb{M}_-$ (anti-Hermitian), $i\vec e_\mu\in\mathbb{M}_+$ (Hermitian) | Sectors; rotation-type generators at the $i\vec e_\mu$ level ($\mathbb{M}_+$), boost-type at the $\vec e_\mu$ level ($\mathbb{M}_-$) |

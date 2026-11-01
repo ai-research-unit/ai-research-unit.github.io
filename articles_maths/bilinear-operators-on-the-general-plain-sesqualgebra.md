@@ -110,7 +110,7 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{Q}_
 
 **The scalar covariant is the module form.** $\mathfrak{b}_0(s,t)=s^{\dagger}t$ is positive definite, Hermitian, and invariant under the whole slice. Its diagonal $\mathfrak{b}_0(s,s)=\lvert s\rvert^2$ is the norm of the spinor, the quantity normalised to one for a unit spinor; the classification theorem places it alone among the Hermitian covariants.
 
-**The triplet of a unit spinor.** For a spinor $s$ the three numbers $V_k=i\,\mathfrak{b}_k(s,s)=s^{\dagger}\sigma_k s$ are real, and for a normalised $s$ they form a unit vector $\tilde Q_3=s^{\dagger}\boldsymbol{\sigma}s$; the trace-one element $\rho=\tfrac12\bigl(e_t+i\,V_k \vec e_k\bigr)$ of $\mathbb{M}_+$ is Hermitian, and its three skew covariant coefficients are the coordinates of $\tilde Q_3$. The three skew covariants of the spinor are the components of that vector.
+**The triplet of a unit spinor.** For a spinor $s$ the three numbers $V_k=i\,\mathfrak{b}_k(s,s)=s^{\dagger}\sigma_k s$ are real, and for a normalised $s$ they form a unit vector $\tilde Q_3=s^{\dagger}\boldsymbol{\sigma}s$; the trace-one element $\rho=\tfrac12\bigl(e_t+i\,\sum_k V_k \vec e_k\bigr)$ of $\mathbb{M}_+$ is Hermitian, and its three skew covariant coefficients are the coordinates of $\tilde Q_3$. The three skew covariants of the spinor are the components of that vector.
 
 **The vanishing triplet.** $\rho=\frac12 e_t$ has all three skew coefficients zero: the only Hermitian form with vanishing triplet is the centre of $\mathbb{M}_+$. The trace-one slice of the cone and its geometry are *The Bloch Ball as the Trace-One Slice of the Future Null Cone*.
 
