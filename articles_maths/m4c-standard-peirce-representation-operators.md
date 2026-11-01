@@ -22,7 +22,7 @@ $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
 \vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
-and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, and the quaternionic conjugate is $\tilde Q^{*}=Q_t-\vec Q$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
+and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the natural conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
 $$
 \mathsf M_2(e_t)=\mathrm I_2,\qquad
 \mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
@@ -137,7 +137,7 @@ $$
 $$
 The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy; the two copies are mutual centralisers. The intersection is the centre of each.
 
-**The compression.** In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions.
+**The compression.** In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*.
 
 **The general level.** A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.
 
@@ -664,7 +664,8 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Phi(\tilde Q,\tilde P)=T_{\tilde Q,\tilde P}$ | the factorisation map |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm, $\det\mathsf M_2(\tilde Q)$ |
-| $\tilde Q^{*}=Q_t-\vec Q$ | the quaternionic conjugate |
+| $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugate |
+| $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$ | the Hermitian conjugate |
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ | the inner automorphism |
 | $\mathbb{B}^{\mathrm{opp}}$ | the opposite algebra, with the reversed product |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
@@ -681,7 +682,8 @@ In one line: every two-sided operator is a single product of one left and one ri
 
 - [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the left and right matrices and the six subspaces.
 - [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the compression of the two one-sided actions.
-- [$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant](m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same operators in the e-basis.
+- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.
+- [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same operators in the e-basis.
 - [$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the same family in the canonical frame.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the Peirce change $C_{\Pi}$ and the operator-space matrix units.
@@ -695,7 +697,6 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde P=\tilde Q^{*}$.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf S$ and the sixteen cells entry by entry.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality.
-
 
 ## Appendix — The Gamma Formulation
 

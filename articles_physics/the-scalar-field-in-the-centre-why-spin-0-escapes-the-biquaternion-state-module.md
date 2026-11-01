@@ -306,7 +306,7 @@ $$
 \tilde{U}\,\psi\chi^{*}\,\tilde{U}^{*} ,
 $$
 
-which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde Q^{*}=\tilde Q^{-1}$, but **not** under boosts, where $\tilde Q^{*}\tilde Q\neq e_t$. The object $\psi\chi^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma_\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
+which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde Q^{*}=\tilde Q^{-1}$, but **not** under boosts, where $\tilde Q^{*}\tilde Q\neq e_t$. The object $\psi\chi^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
 
 The Lorentz-invariant scalars are instead the two pairings developed in the companion article on the spinor module. The **symplectic pairing** of two spinors of the same chirality,
 
@@ -390,3 +390,17 @@ For the sector split, the centre meets each sector in one real direction: the re
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of spinors, bilinears and the scalar and vector channels.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spinor calculus and the construction of scalars from spinor bilinears.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the operator-algebra interpretation of the two-state module.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

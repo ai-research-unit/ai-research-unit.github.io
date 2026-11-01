@@ -155,7 +155,7 @@ $$
 +i\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\bar l}_j\Bigr)^{*}\frac{\partial\psi}{\partial a_j^{*}}+m\psi = 0,
 $$
 
-together with the conjugate equation for $\bar\psi$. The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is isometric to $\mathbb{R}^6$; the generalised spin is $s=|l-\bar l|$ and the mass is $m$, exactly as in Minkowski space. The passage to $\mathbb{C}^3\cong\mathbb{R}^6$ is the programme's way of writing the spinor structure's own wave equations, and the structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that will become the Dirac equation's gamma matrices at the first chain member.
+together with the conjugate equation for $\bar\psi$. The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is isometric to $\mathbb{R}^6$; the generalised spin is $s=|l-\bar l|$ and the mass is $m$, exactly as in Minkowski space. The passage to $\mathbb{C}^3\cong\mathbb{R}^6$ is the programme's way of writing the spinor structure's own wave equations, and the structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that will become the Clifford generators of the Dirac equation at the first chain member.
 
 ## The Proton Chain and the Dirac Limit
 
@@ -169,11 +169,15 @@ $$
 \Bigl(\tfrac{59}{2},29\Bigr)\longleftrightarrow\Bigl(29,\tfrac{59}{2}\Bigr)\ \longrightarrow\ \cdots
 $$
 
-The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation
+The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation in the algebra's own action form, with $e_t^2=1$ and $e_x^2=e_y^2=e_z^2=-1$,
 
 $$
-\boxed{\;\gamma_{\mu}\frac{\partial\psi}{\partial x_{\mu}}+m_e\psi = 0\;}.
+\boxed{\;i\,e_t\frac{\partial\psi}{\partial x_0}e_x
++i\sum_{k=1}^{3}e_k\frac{\partial\psi}{\partial x_k}e_y
++m_e\psi = 0\;}.
 $$
+
+Each term is one pair of multipliers: the time derivative acts on the left, the spatial sum acts on the right.
 
 Mapping the Dirac equation into $\mathbb{R}^6$ gives generators $\Lambda^{1/2,0}_j$ and $\Lambda^{*\,0,1/2}_j$ whose explicit matrices — built from $\mathbf{1}$ and the companion $2\times2$ block — coincide with the **Pauli matrices** $\sigma_j$ when their normalisation constant takes the value $c_{\frac12,\frac12}=2$. This is the concrete way in which the algebra's first member is the Dirac equation's carrier, and it is the same statement the corpus makes in its Dirac–Hestenes and bispinor articles.
 
@@ -273,3 +277,17 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 - A. Z. Petrov, *Einstein Spaces* (Pergamon, 1969), for the mapping of the curvature tensor into $\mathbb{R}^6$ and the classification of Einstein spaces.
 - V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the wave equations, the chains and the bivector-space reduction recorded here.
 - Companion articles: [The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form](the-spin-mass-formula-and-the-particle-spectrum-in-biquaternionic-form.html); [The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form](the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html); [Bhabha Scattering in Biquaternionic Form](bhabha-scattering-in-biquaternionic-form.html); [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html); [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html); [Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation](bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

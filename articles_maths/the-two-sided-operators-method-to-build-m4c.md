@@ -20,7 +20,7 @@ The carrier is $\mathbb{B}\cong\mathbb{C}^4$; it is not $M_4(\mathbb{C})$.
 
 **The article.** §*The Starting Point* fixes the algebra and its carrier. §*The Two One-Sided Operators* displays $L_a$ and $R_b$. §*The Method* states and proves the construction. §*The Sixteen Matrices* displays the result and its invariants. §*The Group of Order Thirty-Two* proves the closure. §*Multiplication* gives the two tables. §*Orthogonality and the Coefficient Formula* proves the trace formula. §*The Matrix Units in the Method's Basis* gives the sixteen expansions and the length. §*The Peirce Dictionary* identifies the Peirce products. §*The Coefficient Matrix and the Length* states the computational rule, and §*Why These Matrices* states the case. The worked computation is the companion article.
 
-**Sources and boundaries.** The left regular model and its product rules are *Matrix Representations : The Product, the Trace and the Determinant*; the Peirce coordinates are *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *Matrix Representations : The Two-Sided Operators*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
+**Sources and boundaries.** The left regular model and its product rules are *Matrix Representations : The Product, the Trace and the Determinant*; the Peirce coordinates are *Matrix Representations : Peirce Coordinates, Matrix Units and the Spinor Planes*; the operator construction is *Matrix Representations : The Two-Sided Operators*; the abstract theorem is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the Clifford reading is *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.
 
 ## The Starting Point
 
@@ -531,7 +531,7 @@ $$
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the operators $L_a,R_a,T_{a,b}$ on the sixteen-dimensional algebra.
 - [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the sixteen traces, the rank and the factorisation of one matrix.
 - [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich on the sixteen-dimensional algebra.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Gamma Matrices*.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Frame*.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 
 

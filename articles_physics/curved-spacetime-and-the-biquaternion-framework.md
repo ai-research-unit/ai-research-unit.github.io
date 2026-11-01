@@ -328,7 +328,7 @@ What it does not settle is everything the frame and the connection already faile
 
 The coupling written above is the standard one: the flat equation with the rigid material frame replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.
 
-**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, is a dictionary, not an identity: it is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+**Frame caveat.** The displays below are quoted in the source's gamma basis, and that frame is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, is a dictionary, not an identity: it is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
 $$
 \hat e_a\longmapsto\gamma_0\,\gamma_a,
 \qquad

@@ -42,7 +42,7 @@ So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant,
 
 **The improved tensor.** For a scalar in four dimensions the canonical tensor is not traceless even for the massless conformal action; adding the improvement term
 $$
-T_{\mu\nu}_{\mathrm{imp}} = T_{\mu\nu}_{\mathrm{can}} + \xi\big(\eta_{\mu\nu}\Box - \partial/\partial Q_\mu\,\partial/\partial Q_\nu\big)\phi^2 ,
+T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(\eta_{\mu\nu}\Box - \partial/\partial Q_\mu\,\partial/\partial Q_\nu\big)\phi^2 ,
 \qquad
 \xi=\tfrac16 ,
 $$
@@ -256,4 +256,4 @@ $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z.
 $$
 
-The metric is carried by the cells: $\gamma_0^2=\mathbf 1$ and $\gamma_k^2=-\mathbf 1$ become $(iT_{tx})^2=\mathbf 1$ and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}T_{a,b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The metric is carried by the cells: $(iT_{tx})^2=\mathbf 1$ and $(iT_{ky})^2=-\mathbf 1$, and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}T_{a,b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

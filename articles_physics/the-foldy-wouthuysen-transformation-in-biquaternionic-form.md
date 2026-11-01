@@ -108,7 +108,7 @@ Two features of the iteration are worth keeping in view. First, the transformati
 
 ### The Generator in the Biquaternion Basis
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. With the dictionary of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, $e_t\mapsto I_4$, $\vec e_k\mapsto -i\sigma_k$ in the relevant $2\times2$ blocks, the even generators are $\alpha_k$, and the frame is $\beta = \gamma_0$, which is not in the even subalgebra. The kinetic operator is
+The identification of $O$ as the frame-odd part can be written directly in the algebra. With the dictionary of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, $e_t\mapsto I_4$, $\vec e_k\mapsto -i\sigma_k$ in the relevant $2\times2$ blocks, the even generators are $\alpha_k$, and the frame is $\beta = \gamma_0$, which is not in the even subalgebra. The kinetic operator is
 
 $$
 O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha_k\pi_k,

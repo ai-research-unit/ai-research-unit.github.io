@@ -273,7 +273,7 @@ $$
 
 the two pieces being respectively the **metric** (one number per pair of indices, symmetric, and in the algebra's terms central) and the **bivector** (antisymmetric, and in the algebra's terms the six-dimensional subspace spanned by the directions $\vec e_k$ and $i\vec e_k$). The Gordon decomposition is the statement that on shell the current splits in exactly this way: the convection term is the metric–central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies $\sigma_{\mu\nu}$, a bivector, and is therefore an informational-sector object, while the tree-level convection term is central.
 
-The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, assigns the six bivectors to the six directions,
+The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, assigns the six bivectors to the six directions,
 
 $$
 \mathsf{M}_2(\vec e_k) = \gamma_k\gamma_l,

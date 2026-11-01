@@ -102,7 +102,7 @@ $$
 m\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m^2\tilde{\Psi}_R ,
 $$
 
-and the equality of the two expressions is the equation $(\Box - m^2)\tilde{\Psi}_R = 0$. Nothing in this step uses a gamma matrix, a spinor index, or a complex dimension count; it is the quaternion conjugation identity $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ applied to the pair.
+and the equality of the two expressions is the equation $(\Box - m^2)\tilde{\Psi}_R = 0$. Nothing in this step uses a Clifford generator, a spinor index, or a complex dimension count; it is the quaternion conjugation identity $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ applied to the pair.
 
 ## Why the Square Root Is Spinor-Valued
 
@@ -147,7 +147,7 @@ $$
 
 so that the pair is the statement that $\Psi$ is an eigenvector of $\mathcal{Q}$ with eigenvalue $m$, and $\mathcal{Q}^2\Psi = m^2\Psi$ is $(\Box - m^2)\Psi = 0$. This is the operator-valued square root: no scalar $(\tilde{\nabla} + A)$ works, as the previous section showed, but the matrix $\mathcal{Q}$ built from the conjugate pair does, because its square is the central $\Box\,I$; the opposite-mass product $\mathbb{D}_-\mathbb{D}_+$ is diagonal in the two chiral blocks with the central $(\Box - m^2)$ on each. The obstruction of the spin-$0$ article identifies precisely the missing ingredient: a scalar square root would need an element anticommuting with all three $\vec e_\mu$, and no biquaternion does; but an operator-valued square root needs only that the **two different gradients cancel each other's vector parts**, which the conjugate pair does. The spin-$0$ no-go and the spin-$\tfrac12$ square root are therefore the same fact read in two directions. This is what it means, in this framework, that the square root lives in the spinor module and not in the centre: the scalar field lives in $\mathbb{C}_{\mathbb{B}}$, and the square root requires the off-diagonal structure that only the module carries.
 
-It is worth recording the matrix counterpart, because it isolates the same mechanism. In the Clifford algebra the square of the Dirac operator is scalar because the generators **anticommute** — the cross term is $\tfrac12\{\gamma_\mu,\gamma_\nu\}\partial^2/\partial Q_\mu\partial Q_\nu$ and the symmetric part survives while the antisymmetric part cancels. In the biquaternion algebra the three vector units do anticommute pairwise, $\{\vec e_\mu,\vec e_\nu\} = 0$ for $\mu\neq\nu$, so the purely spacelike cross terms cancel just as in the Clifford algebra and $\vec\nabla\vec\nabla = -|\vec\nabla|^2e_t$ has no vector part. What does not cancel is the cross term between the timelike direction and the vector part, because the timelike direction is carried by the algebra's unit $e_t$, which **commutes** with every $\vec e_\mu$ instead of anticommuting with it. Hence
+It is worth recording the matrix counterpart, because it isolates the same mechanism. Write $T_{a,b}$ for the two-sided cell, $T_{a,b}\psi=a\psi b$, and $T_\mu$ for the generator cell of the coordinate $x_\mu$ in the frame at hand — in the canonical frame $T_\mu=iT_{e_\mu,e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$. In the Clifford algebra the square of the Dirac operator is scalar because the generators **anticommute** — the cross term is $\tfrac12\{T_\mu,T_\nu\}\partial^2/\partial Q_\mu\partial Q_\nu$ and the symmetric part survives while the antisymmetric part cancels. In the biquaternion algebra the three vector units do anticommute pairwise, $\{\vec e_\mu,\vec e_\nu\} = 0$ for $\mu\neq\nu$, so the purely spacelike cross terms cancel just as in the Clifford algebra and $\vec\nabla\vec\nabla = -|\vec\nabla|^2e_t$ has no vector part. What does not cancel is the cross term between the timelike direction and the vector part, because the timelike direction is carried by the algebra's unit $e_t$, which **commutes** with every $\vec e_\mu$ instead of anticommuting with it. Hence
 $$
 \tilde{\nabla}^2 = \left(\partial^2/\partial Q_t^2 - |\vec\nabla|^2\right)e_t + 2\partial/\partial Q_t\,\vec\nabla ,
 $$
@@ -241,7 +241,7 @@ The only identities used above are $\tilde\nabla\tilde\nabla^\natural=\tilde\nab
 
 ## Summary
 
-The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$ with the series d'Alembertian. In the spinor module it is the corresponding two-line computation on the representative. The matrix identity $(\gamma_{\mu}(Q)\partial/\partial Q_\mu + m)(\gamma_{\nu}(Q)\partial/\partial Q_\nu - m)=\Box-m^2$ holds in the all-plus $\mathbb{B}$ frame, where $(\gamma_{\mu}(Q)\partial/\partial Q_\mu)^2=\Box$; it does not hold for the contraction of the $\mathbb{M}_-$ frame.
+The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$ with the series d'Alembertian. In the spinor module it is the corresponding two-line computation on the representative. The cell identity $(T_\mu\partial/\partial Q_\mu + m)(T_\nu\partial/\partial Q_\nu - m)=\Box-m^2$ holds in the all-plus $\mathbb{B}$ frame, where $(T_\mu\partial/\partial Q_\mu)^2=\Box$; it does not hold for the contraction of the $\mathbb{M}_-$ frame.
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, coupled by the mass, and the pairing is the algebra's image of the Clifford anticommutator. Written as the matrix $\mathbb{D}_\mp$ defined above, the operator identity is $\mathbb{D}_-\mathbb{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, the square is the operator identity $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table read in two directions.
 
@@ -255,6 +255,7 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
+| $T_{a,b}\psi = a\psi b$; $T_\mu$ | Two-sided cell; the generator cell of the coordinate $x_\mu$ in the frame at hand |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient (the Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
@@ -279,7 +280,21 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 - O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the first-order equation, its second-order square and the plane-wave spinors.
 - J. J. Sakurai, *Advanced Quantum Mechanics* (Addison-Wesley, 1967), for the square of the Dirac operator and the Weyl decomposition.
-- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Clifford algebra, the gamma matrices, and the mass shell.
+- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Clifford algebra and its representations, and the mass shell.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the even subalgebra, minimal left ideals, and the square root of the wave operator.
 - D. Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and C. Doran and A. Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra interpretation of the Dirac operator and its square.
 - R. P. Feynman, "Space-time approach to non-relativistic quantum mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the second-order wave equation as the square of a first-order operator in the path-integral setting.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

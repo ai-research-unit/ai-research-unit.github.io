@@ -786,5 +786,19 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton", arXiv:math-ph/0201058, §§6–7, for the operator/bivector distinction, the ordinal-invariance assumption, and the analytic interpretation of the vacuum equation.
 - V. V. Kravchenko, "Quaternionic Diagonalization of Maxwell's Equations" (expository article, National Polytechnic Institute, Mexico City), for the objection to the wave-equation reduction, the diagonalization of the time-harmonic Maxwell system into first-order quaternionic equations, and the extendability problem.
 - E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the counter-claim recorded after *The Author's Reading*: a biquaternion tensor calculus that reports no extra terms relative to the standard relativistic language, the condition being the Lorenz gauge. Cited for the negative claim and for the tensor-index rearrangement it identifies as the source of the extra terms.
-- C. Castro and M. Pavšič, *The Extended Relativity Theory in Clifford Spaces* (review, 8 July 2004), for the extension of Maxwell theory to an arena whose coordinates are Clifford-valued polyvectors, where the potential is itself a polyvector, $A = \varphi + \sum_\mu A_\mu\gamma_\mu + A_{\mu\nu}\gamma_\mu\wedge\gamma_\nu + \dots$, and the field strength $F = dA$ carries a symmetric and an antisymmetric part of every rank, so that an extended charge couples to antisymmetric tensor fields of arbitrary rank. The **formalism is standard** — $p$-form gauge fields and the coupling of extended objects to them are ordinary exterior calculus — while the interpretation of its scalar and pseudoscalar components as a dilaton and an axion is the review's suggestion ("one could attempt to identify"), and the arena is not this article's $\mathbb{B}$. It is listed because it is the widest generalization of the single equation recorded here.
+- C. Castro and M. Pavšič, *The Extended Relativity Theory in Clifford Spaces* (review, 8 July 2004), for the extension of Maxwell theory to an arena whose coordinates are Clifford-valued polyvectors, where the potential is itself a polyvector, $A = \varphi + A_{(1)} + A_{(2)} + \dots$ with $A_{(p)}$ its grade-$p$ part, and the field strength $F = dA$ carries a symmetric and an antisymmetric part of every rank, so that an extended charge couples to antisymmetric tensor fields of arbitrary rank. The **formalism is standard** — $p$-form gauge fields and the coupling of extended objects to them are ordinary exterior calculus — while the interpretation of its scalar and pseudoscalar components as a dilaton and an axion is the review's suggestion ("one could attempt to identify"), and the arena is not this article's $\mathbb{B}$. It is listed because it is the widest generalization of the single equation recorded here.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iT_{e_t,e_x},\quad \gamma_1=iT_{e_x,e_y},\quad \gamma_2=iT_{e_y,e_y},\quad \gamma_3=iT_{e_z,e_y},\quad \gamma_5=-iT_{e_t,e_z}.
+$$
+
+Here $T_{a,b}$ multiplies on the left by $a$ and on the right by $b$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

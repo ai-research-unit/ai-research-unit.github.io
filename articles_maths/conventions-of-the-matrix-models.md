@@ -221,9 +221,101 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
-The sixteen products of the five generators span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three bases of the same complex algebra, related by a change of gamma basis; a change of gamma basis is a change of basis, not a change of object.
+The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three presentations of the same complex algebra, related by a change of frame; a change of frame is a change of basis, not a change of object.
 
-**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Operator and Calculus Conventions*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
+**The five cells of the frame.** Write
+$$
+\boxed{\;\mathsf C_0=iR_x=iT_{tx},\qquad
+\mathsf C_1=iL_xR_y=iT_{xy},\qquad
+\mathsf C_2=iL_yR_y=iT_{yy},\qquad
+\mathsf C_3=iL_zR_y=iT_{zy},\qquad
+\mathsf C_5=-iR_z=-iT_{tz}\;}
+$$
+Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
+
+**The Clifford relations.** They satisfy
+$$
+\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\mathsf C_k)^2=-I_4,\qquad
+\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3,
+$$
+with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
+
+**The sixteen products are the sixteen cells.** The five frame cells are five cells up to a factor $i$, and the sixteen products of the five are the sixteen cells:
+
+| grade | cells |
+|---|---|
+| $0$ | $T_{tt}$ |
+| $1$ | $T_{tx}$, $T_{xy}$, $T_{yy}$, $T_{zy}$ |
+| $2$ | $T_{xt}$, $T_{xz}$, $T_{yt}$, $T_{yz}$, $T_{zt}$, $T_{zz}$ |
+| $3$ | $T_{ty}$, $T_{xx}$, $T_{yx}$, $T_{zx}$ |
+| $4$ | $T_{tz}$ |
+
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in the appendix of *Matrix Representations : The Two-Sided Operators*.
+
+**The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
+
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
+
+**The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
+A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
+A derivative contraction is $i\mathsf C_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
+in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
+If the $\mathbb{B}$ frame is used, it is written $\mathsf C_\mu[\mathbb{B}]\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\mathsf C_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
+In the canonical frame the momentum contraction is a cell sum,
+$$
+\mathsf C_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+$$
+so the frame is visible in the formula.
+
+## Summary
+
+The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
+
+The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
+
+The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
+
+The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
+
+The **four left matrices** $L_\mu=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_\nu=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
+
+The **sixteen basis matrices** are the products $T_{\mu\nu}=L_\mu R_\nu$, in four families: $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$ and $T_{jk}=L_jR_k$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
+
+The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators of the canonical frame are the cells $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$ and $\mathsf C_5=-iT_{tz}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
+| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
+| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
+| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
+| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
+| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
+| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
+| $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $\mathsf C_\mu,\mathsf C_5$ | The five cells of the canonical frame, $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$, $\mathsf C_5=-iT_{tz}$ |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
+| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
+
+## Further Reading
+
+- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
+- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
+- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the sixteen cells, the frame and the proof of the cell table.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the five-cell frame.
+
+## Appendix — The Gamma Formulation
+
+The gammas are the five-cell frame of the body written as matrices; the body writes the cells.
+
+**The five gammas.** The five Dirac matrices are two-sided operators of the frame,
 $$
 \boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
 \gamma_1=iL_xR_y=iT_{xy},\qquad
@@ -248,7 +340,7 @@ $$
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 
-**The sixteen products are the sixteen cells.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$:
+**The sixteen products.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells:
 
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
@@ -269,62 +361,10 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The proof, and the freedom in the choice of frame, are §*The Gamma Set, and the Choice Behind It* of *Matrix Representations : The Two-Sided Operators*. The gamma set is one set among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
+Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
 
-**The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is reserved for the operator norm $\|A\|_{\mathrm{op}}$, not for the opposite algebra.
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$ of the body.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, equivalently $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
+**The contractions.** In gamma notation a momentum contraction is $\gamma_\mu p_\mu=i(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$, a derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
-**The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
-A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
-A derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
-in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators,
-and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
-No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
-In the canonical frame the momentum contraction is a cell sum,
-$$
-\gamma_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
-$$
-so the frame is visible in the formula.
-
-## Summary
-
-The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
-
-The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
-
-The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
-
-The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
-
-The **four left matrices** $L_\mu=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_\nu=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
-
-The **sixteen basis matrices** are the products $T_{\mu\nu}=L_\mu R_\nu$, in four families: $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$ and $T_{jk}=L_jR_k$. They are written entry by entry in the canonical frame, and the gamma table reads each of them as a unit coefficient times a product of the five generators.
-
-The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators of the canonical frame are cells up to a factor $i$, the four left matrices and the four right matrices are written out and the sixteen basis matrices are written entry by entry, the table above writes the sixteen products back as the sixteen cells, and a change of gamma basis is a change of frame. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
-| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
-| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
-| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
-| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
-| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
-| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
-| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
-| $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $\gamma_\mu,\gamma_5$ | The generators of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
-| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
-
-## Further Reading
-
-- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
-- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the sixteen cells, the gamma sets and the proof of the cell table.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the gamma set, §*The Clifford Structure and the Gamma Matrices*.
+Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

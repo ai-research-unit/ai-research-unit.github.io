@@ -635,7 +635,8 @@ The compression keeps the product, the trace, the determinant and the six subspa
 ## Further Reading
 
 - [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the e-basis switch.
-- [$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant](m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same element in the e-basis.
+- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the operators on the algebra, the one-matrix and pair descriptions, and the Kronecker display.
+- [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same element in the e-basis.
 - [$M_2(\mathbb{C})$ Representation : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model, the algebra isomorphism and the Pauli form.
 - [$M_2(\mathbb{C})$ Representation : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate isomorphism, the left action on the two planes and the star.
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants in the coefficient model.

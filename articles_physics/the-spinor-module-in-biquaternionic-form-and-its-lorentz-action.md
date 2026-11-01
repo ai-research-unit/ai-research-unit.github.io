@@ -184,7 +184,7 @@ $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \;\cong\; M_2(\mathbb{C}) \oplus M_2(\mathbb{C}),
 $$
 
-the two central summands being the two chiralities. The corresponding central idempotents are $\tfrac{1}{2}(1\pm i_{\mathbb{C}}\omega)$, with $\omega = \gamma_0\gamma_1\gamma_2\gamma_3$ the volume element; under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ the volume element is the image of the biquaternion scalar imaginary, so these are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section *The Even Subalgebra and the Origin of the Action*).
+the two central summands being the two chiralities. The corresponding central idempotents are $\tfrac{1}{2}(1\pm i_{\mathbb{C}}\omega)$, with $\omega$ the volume element; under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ the volume element is the image of the biquaternion scalar imaginary, so these are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section *The Even Subalgebra and the Origin of the Action*).
 
 The **Dirac spinor module** is the direct sum of the two halves,
 
@@ -467,7 +467,7 @@ The reason the spinor action is one-sided, and the four-vector action two-sided,
 $$
 \mathbb{B} \;\cong\; \mathrm{Cl}_{1,3}^{+}(\mathbb{R}),
 \qquad
-\vec e_x\mapsto\gamma_2\gamma_3,\quad \vec e_y\mapsto\gamma_3\gamma_1,\quad \vec e_z\mapsto\gamma_2\gamma_1,\quad i\mapsto\gamma_0\gamma_1\gamma_2\gamma_3 .
+\vec e_x,\vec e_y,\vec e_z\mapsto\text{the three spacelike bivectors},\quad i\mapsto\text{the volume element} .
 $$
 
 The full Clifford algebra acts on its spinor module by **left multiplication**; restricting to the even subalgebra $\mathbb{B}$ gives the action considered in this article. The spin group sits inside the even subalgebra,
@@ -483,7 +483,7 @@ This correspondence between the biquaternion algebra and the even Clifford subal
 1. why a spinor transforms one-sidedly (it is an element of a Clifford module, and modules are acted on linearly);
 2. why a four-vector transforms two-sidedly (it is an element of the odd part, acted on by the Hermitian sandwich);
 3. why $-e_t$ acts as $-\mathrm{id}$ on spinors but trivially on four-vectors (a single factor of the central unit versus two);
-4. why the two chiralities are not visible to the complex algebra $\mathbb{B}$ but appear on complexification: the chirality operator $\gamma_5 = i_{\mathbb{C}}\omega$ (the scalar imaginary of the complexified Clifford algebra times the volume element $\omega$) is not an element of the even subalgebra, and it anticommutes with the generators; the odd part therefore exchanges the two half-spin modules, while the even part $\mathbb{B}$ preserves them. The complexified even algebra splits accordingly,
+4. why the two chiralities are not visible to the complex algebra $\mathbb{B}$ but appear on complexification: the chirality operator $i_{\mathbb{C}}\omega$ (the scalar imaginary of the complexified Clifford algebra times the volume element $\omega$) is not an element of the even subalgebra, and it anticommutes with the generators; the odd part therefore exchanges the two half-spin modules, while the even part $\mathbb{B}$ preserves them. The complexified even algebra splits accordingly,
 $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
 $$
@@ -565,3 +565,17 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the modules of $M_2(\mathbb{C})$, the highest-weight classification, and the Clebsch–Gordan rule.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for simple modules, Schur's lemma, and the structure of matrix algebras.
 - J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the indefinite pairing $[u|v]$, the $\varsigma$ triple, the Weyl- and Majorana-spinor models of $S^2$, $H^\pm$ and $H^{sl}$, the symplectic form $\omega$ and the $\mathfrak{su}(1,1)$ closure of the bilinears. External; cited for the pairing and the bilinears only.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

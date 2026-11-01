@@ -99,7 +99,7 @@ The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar of $\ma
 
 A frame of the cell algebra is a set of five cells, not an element of $\mathbb{B}$ alone. The biquaternion algebra is $\mathrm{Cl}^+_{1,3}$; the cell algebra is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and its elements act on a state $\psi$ by $T_{a,b}\psi=a\psi b$. The frame used in this article is one frame of that algebra, written once in the appendix; a different frame is related to it by a change of basis.
 
-The Clifford relations are then the quaternion relations in disguise. The square of a cell is the cell of the squares, $(T_{a,b})^2=T_{a^2,b^2}$, and a cell of a spatial unit with $e_t$ squares to the sign of that spatial unit. From the multiplication table and $\vec e_k^2 = -e_t$,
+The Clifford relations are then the quaternion relations in disguise. The square of a cell is the cell of the squares, $(T_{a,b})^2=T_{a^2,b^2}$; since $e_t^2=e_t$, a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, $-T_{e_t,e_t}$. From the multiplication table and $\vec e_k^2 = -e_t$,
 
 $$
 (T_{e_t,e_x})^2 = -T_{e_t,e_t}, \qquad (T_{e_k,e_y})^2 = +T_{e_t,e_t},
@@ -111,7 +111,7 @@ $$
 (iT_{e_t,e_x})^2 = +T_{e_t,e_t}, \qquad (iT_{e_k,e_y})^2 = -T_{e_t,e_t},
 $$
 
-which is the statement that the timelike generator squares to $+T_{e_t,e_t}$ and the three spatial ones to $-T_{e_t,e_t}$. The mixed products are cells again: the timelike cell $T_{e_t,e_x}$ commutes with each spatial cell $T_{e_k,e_y}$, because $e_t$ commutes with every unit, while $T_{e_j,e_y}$ and $T_{e_k,e_y}$ anticommute for $j\neq k$ because $\vec e_j \vec e_k = -\vec e_k \vec e_j$. Hence
+which is the statement that the timelike generator squares to $+T_{e_t,e_t}$ and the three spatial ones to $-T_{e_t,e_t}$. The mixed products are cells again, and the order they compose in is fixed by $T_{a,b}T_{c,d}=T_{ac,db}$. The timelike cell $T_{e_t,e_x}$ therefore *anticommutes* with each spatial cell $T_{e_k,e_y}$: the left factor $e_t$ commutes with every unit and contributes no sign, while the right factors $e_x$ and $e_y$ anticommute. Two spatial cells $T_{e_j,e_y}$ and $T_{e_k,e_y}$ anticommute for $j\neq k$ through their left factors, the right factor $e_y$ being common to both. Hence
 
 $$
 \{iT_{e_t,e_x},iT_{e_t,e_x}\}=2T_{e_t,e_t},\qquad
@@ -151,13 +151,13 @@ So the biquaternion formulation of the Dirac equation is expressed in terms of t
 
 The route to the algebra used so far is the framework's own: the biquaternion field takes values in the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$, where $S$ is a minimal left ideal and $S^{\mathrm{c}}$ is its conjugate. The two Peirce carriers $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are two copies of $S$; they are not the two chiralities. The chiral halves are $S$ and $S^{\mathrm{c}}$, and the mass couples them. There is a second route, due to V. V. Kravchenko (1995), which is a **dictionary** rather than a decomposition. It is an explicit real-linear bijection $A$ from the four-component bispinors onto the biquaternion-valued functions under which the Dirac equation becomes one biquaternionic equation; its interest for this article is that it is $\mathbb{R}$-linear rather than $\mathbb{C}$-linear, and that its mass term carries complex conjugation.
 
-**The dictionary.** On the field side the dictionary pairs the four Dirac generators with the four operators the algebra offers: the spatial generators act by left multiplication by the imaginary units, the timelike generator by complex conjugation, and the central imaginary acts on the right,
+**The dictionary.** On the field side the dictionary pairs the four Clifford generators with the four operators the algebra offers: the three spatial generators act by left multiplication by the imaginary units, the timelike generator by complex conjugation, and the central imaginary acts on the right,
 
 $$
-A(i\Phi) = -A(\Phi)\,i_3 ,
+A(i\Phi) = -A(\Phi)\,i_3 .
 $$
 
-with the timelike generator read as complex conjugation. The rule displayed is the statement that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. Under it the Dirac equation becomes the single biquaternionic equation
+The rule displayed is the statement that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the scalar imaginary is carried to a right multiplication through $i_3$, with the minus sign that the conjugation supplies. Under it the Dirac equation becomes the single biquaternionic equation
 
 $$
 \mathcal{N}F := \left(i\partial/\partial Q_t + D - m\,i\,C M_{i_3}\right)F = 0, \qquad D = i\sum_{\mu=1}^{3} \vec e_\mu\partial/\partial Q_\mu ,
@@ -893,10 +893,10 @@ The same construction has two consequences that belong to the equation rather th
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+\gamma_0=iT_{e_t,e_x},\quad \gamma_1=iT_{e_x,e_y},\quad \gamma_2=iT_{e_y,e_y},\quad \gamma_3=iT_{e_z,e_y},\quad \gamma_5=-iT_{e_t,e_z}.
 $$
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
 

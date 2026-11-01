@@ -50,7 +50,7 @@ The second column is Parra's identification of each equation with a "particle": 
 
 *Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $m\Psi e_0$ is common to all four.
 
-**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation $\nabla\Psi i\sigma_3 - ϙA\Psi = m\Psi\gamma_0$ of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, upon identifying the bases $e_i$ and $\gamma_\mu$ and the spin bivector $e_{21}$ with $i\sigma_3$; Fauser states this identification. Option $\{1\}$ **is** the Daviau equation $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+ϙA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, upon the passage between the two formulations described there. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural point.
+**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation $\nabla\Psi i\sigma_3 - ϙA\Psi = m\Psi e_0$ of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, written in the Clifford basis $e_i$ of this article, upon identifying the spin bivector $e_{21}$ with $i\sigma_3$; Fauser states this identification. Option $\{1\}$ **is** the Daviau equation $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+ϙA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, upon the passage between the two formulations described there. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural point.
 
 **Remark (the right action is common to all four).** In every option the spin bivector $e_{21}$ and the velocity vector $e_0$ multiply the spinor **on the right**, while the gradient and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
 
@@ -69,7 +69,7 @@ The quotient $D$ is a discrete group of order four. The even part $\Gamma^+_{1,3
 **What the corpus already has.** The corpus contains each of the three symmetries separately:
 
 - *Charge conjugation* is built in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* from the algebra's real structure $\flat$ and the $\mathrm{Spin}^c$ structure, and in the spacetime-algebra language it is a right multiplication by a fixed bivector, as recorded in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form* (open question 4).
-- *Parity and time reversal* are the reflections of *The Reflection and the Rotation in Biquaternionic Form*, where the grading by reflection count is set up and where the frame $\gamma_0$ and conjugation by it are treated.
+- *Parity and time reversal* are the reflections of *The Reflection and the Rotation in Biquaternionic Form*, where the grading by reflection count is set up and where the timelike generator and conjugation by it are treated.
 - The combined statement is the corpus's *The CPT Theorem in Biquaternionic Form*.
 
 **What the corpus does not have.** Nowhere does the corpus assemble these three symmetries into a **group acting on a set of inequivalent equations**, and nowhere does it identify the four particle types — electron and positron, spin up and spin down — with the orbit of that action. That is the new object this article contributes. In the corpus's usual interpretation the symmetries act on **one field** and the particle types are labels on the solution space; here the symmetries act on the **set of equations**, and the particle types are labels on the orbit. The two interpretations are compatible, and the second makes explicit what the first leaves implicit: the four types are not four solutions of one equation but four sign conventions of one equation, permuted by the discrete group.
@@ -182,3 +182,17 @@ Parra's four options are four inequivalent ways of reading the eight real Dirac 
 - W. A. Rodrigues Jr., E. C. de Oliveira and others, on the spin Clifford bundle, referred to by Fauser for the comparison with the spin-particle bundle.
 - A. Crumeyrolle, *Orthogonal and Symplectic Clifford Algebras* (Kluwer, 1990), for the invariance of the Clifford structure under the odd transformations of the Clifford–Lipschitz group.
 - The companion articles of this series: [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html), [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html), [Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form](antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html), [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html), and [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

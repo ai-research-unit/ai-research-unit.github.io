@@ -18,7 +18,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, fixes $e_t\mapsto I_4$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, $i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
+the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\gamma_{\mu} p_{\mu}=\gamma_0E-\boldsymbol\gamma\cdot\vec p$ for $p_\mu=(E,\vec p)$. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$. The companion *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, fixes $e_t\mapsto I_4$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$, $i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3$, hence $i\vec e_\mu\mapsto\gamma_0\gamma_\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
 S_F(p)=\frac{i(\gamma_{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}=-\frac{i(\gamma_{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
@@ -257,7 +257,7 @@ The on-shell spinors were built as $w=(\gamma_{\mu} p_{\mu}+m)\omega$ for random
 
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the propagator conventions and the $i\epsilon$ of the internal fermion line.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators whose matrix the magnetic bivector reproduces.
-- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $i\mapsto-\omega$.
+- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $i\mapsto-\omega$.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the field operators whose electromagnetic three-point function is the vertex.
 
 ## Summary

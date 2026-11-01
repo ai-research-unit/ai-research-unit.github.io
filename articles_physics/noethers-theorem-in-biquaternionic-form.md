@@ -133,10 +133,10 @@ The last case is the honest statement of the theorem: the current is conserved *
 
 **Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ with $\tilde J = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = \sqrt{\mu}\,(\partial/\partial t'\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
 
-**The mass, and where the symmetry stops.** The phase symmetry derived here holds for the massive Klein–Gordon field, and — with the parent's mass term now written in its linear, chirality-off-diagonal form $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ — it holds for the massive Dirac field as well. A central phase passes through the linear mass term, so the current above is the conserved current of both fields, and $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$ on shell for each. What the mass term breaks is the **axial** symmetry, not the phase: the associated divergence identity is
+**The mass, and where the symmetry stops.** The phase symmetry derived here holds for the massive Klein–Gordon field, and — with the parent's mass term now written in its linear, chirality-off-diagonal form $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ — it holds for the massive Dirac field as well. A central phase passes through the linear mass term, so the current above is the conserved current of both fields, and $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$ on shell for each. What the mass term breaks is the **axial** symmetry, not the phase: the two chiralities are rotated against each other by the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$, which is not an element of $\mathbb{B}$ but acts on the field. The associated divergence identity is
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\tilde\Psi^{\natural}\chi\tilde\Psi,
 $$
 
 which vanishes only in the massless limit. In the biquaternion interpretation the mass term is the off-diagonal coupling between the two *central* ideals of $\mathbb{B}$ — the two chiralities — so it breaks exactly the symmetry that rotates them, and not the central $\mathrm{U}(1)$ that the algebra canonically carries. The previously recorded obstruction belonged to the retired antilinear single-field equation; the gauge principle article's corresponding section is revised on the same grounds.
@@ -288,7 +288,7 @@ the angular momentum of a free particle is a single biquaternion. This is the sa
 
 3. **Scale and conformal symmetry.** The massless Klein–Gordon and Maxwell actions have more symmetries than the Poincaré group. Do they have biquaternion Noether currents, and does the tracelessness of the electromagnetic energy–momentum tensor — established in the energy–momentum exercise — express one of them?
 
-4. **The axial current and the two central ideals.** With the parent's linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$ holds for the linear mass term, and its biquaternion interpretation is that the mass couples the two central ideals of $\mathbb{B}$ off-diagonally. Is there a biquaternion Noether derivation of that identity — the axial current as the Noether current of the chirality rotation — and does the central-element structure supply anything analogous to the would-be Goldstone statement?
+4. **The axial current and the two central ideals.** With the parent's linear mass term the vector phase current is conserved for the massive field, so the open question is the axial one. The divergence identity $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\tilde{\Psi}^{\natural}\chi\tilde{\Psi}$ holds for the linear mass term, and its biquaternion interpretation is that the mass couples the two central ideals of $\mathbb{B}$ off-diagonally. Is there a biquaternion Noether derivation of that identity — the axial current as the Noether current of the chirality rotation — and does the central-element structure supply anything analogous to the would-be Goldstone statement?
 
 5. **The current of the complexified theory.** In the complexified biquaternion theory of the Maxwell article, the source and potential are fully complex. Does the central-phase current acquire components outside $\mathbb{M}_-$, and are they conserved?
 
@@ -340,6 +340,7 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation |
 | $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, acting on the field |
 | $\tilde{R}_0\in\mathbb{M}_-$ | Constant translation (displacement) |
 | $\tilde{\Phi} = \phi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Complex biquaternion scalar field |
 | $\mathcal{L} = \sum_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\phi|^2$ | Field Lagrangian density, $Q$ frame |
@@ -373,3 +374,17 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the rotor whose conjugation carries the four-momentum between frames.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors that house the conserved objects.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, its conjugations, and the local complex structure.
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,e_x\tilde{Q}e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,e_y\tilde{Q}e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,e_z\tilde{Q}e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}e_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

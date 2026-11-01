@@ -318,7 +318,7 @@ The supercharge is the case in which the square-zero is paired with the Hamilton
 
 - **The cohomology is the zero-mode space.** For $H$ positive semidefinite and the complex elliptic, $\ker Q=\ker H\oplus\mathrm{im}\,Q$, so $\ker Q/\mathrm{im}\,Q\cong\ker H$. The cohomology is the space of zero modes, and the index is its graded dimension. The supercharge's content is not the whole spectrum but the part of it that the grading protects.
 - **The splitting is by the Hamiltonian.** The mode's anticommutator is the identity and splits the identity into two rungs; the supercharge's anticommutator is $H$, and the splitting is by the spectral projectors of $H$; the zero modes are the corner that survives.
-- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The operator is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(1\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. In the one-mode truncation the two gradings can be represented by the same element, but they act on different spaces and have different physical meanings. The coincidence of the element is not a coincidence of the role.
+- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The operator is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(1\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
 
 ## The Label
 
@@ -595,7 +595,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H^0=\ker X$, $H^1=M/\mathrm{im}\,X$ | its cohomology |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its degree grading |
 | $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ | the biquaternion algebra as the even part |
-| $T_{Q,P}=L_QR_P$ | the two-sided operator, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; a product is one pure tensor |
+| $L_a,R_b$, $T_{a,b}=L_aR_b$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $T_{a,b}\psi=a\psi b$; a product is one pure tensor |
 | $\mathrm{Cl}^1=\mathbb{B}_Lu$ | the odd slot, a rank-one left module; $u$ the odd unit of the reference frame |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |
@@ -606,6 +606,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\mathcal{D}=Q+Q^\dagger$ | the Hermitian supercharge (the Dirac operator) |
 | $H=\{Q,Q^\dagger\}$ | the supersymmetric Hamiltonian |
 | $\Gamma$, $\psi\mapsto-ie_t\psi e_z$ | chirality, the supersymmetric grading |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$ |
 | $\tilde P=iP_t e_t+\vec p$ | the physical four-momentum |
 | $\langle\tilde P\rangle_{\natural}$ | the quaternionic norm, the interval |
 | $H(k)$, $h(k)$ | the chiral symbol and its block |
@@ -633,6 +634,6 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ represents $\Gamma$ on the Dirac module; the central grading $\chi$ is separate.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
 
-Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

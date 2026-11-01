@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant*. The same operators in another frame are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ e-basis Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *$M_4(\mathbb{C})$ Representation : The General Endomorphisms*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The basis is
 $$
@@ -35,7 +35,7 @@ Write $B^2=Q_x^2+Q_y^2+Q_z^2$. The quaternionic norm is
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$
-the determinant of the $2\times2$ image. The natural conjugation is the $\mathbb{C}$-linear map
+the scalar part of $\tilde Q\tilde Q^{\natural}$. An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The natural conjugation is the $\mathbb{C}$-linear map
 $$
 \tilde Q^{\natural}=Q_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
 $$
@@ -44,19 +44,7 @@ $$
 \tilde Q^{*}=\bar{\tilde Q}^{\natural}
 =\bar Q_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z,
 $$
-which is conjugate-linear. The flat conjugation is $\tilde Q^{\flat}=-\tilde Q^{*}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
-$$
-\mathsf M_2(e_t)=\mathrm I_2,\qquad
-\mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
-$$
-so that
-$$
-\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
-\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t.
-$$
-The switch matrix is
+which is conjugate-linear. The flat conjugation is $\tilde Q^{\flat}=-\tilde Q^{*}$. The switch matrix is
 $$
 D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
 \qquad D^2=\mathrm I_4,\quad \det D=-1,
@@ -94,7 +82,7 @@ $$
 $$
 It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, the same vector space with the reversed product, and its unit is $\mathrm I_4$. The map $\tilde P\mapsto R^{e}(\tilde P)$ is injective, so the four matrices $R_\nu^{e}$ are a basis of it.
 
-**The two copies are different.** $\mathbb{B}_L$ and $\mathbb{B}_R$ are two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space. In the e-basis the general element of neither copy is written as a block matrix with two equal blocks; the block display is a property of another frame. The e-basis display is the structure-constant display, and the one-sided copies are the sets of matrices of the two displays below.
+**The two copies are different.** $\mathbb{B}_L$ and $\mathbb{B}_R$ are two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space. The e-basis displays them as the two families of matrices below.
 
 ### The Two-Sided Products
 
@@ -139,11 +127,11 @@ L^{e}(\tilde Q_1\tilde Q_2)=L^{e}(\tilde Q_1)L^{e}(\tilde Q_2),
 $$
 and the map is injective. The image is the four-dimensional subalgebra $\mathbb{B}_L$.
 
-**The invariants.** The rank is $2\operatorname{rank}\mathsf M_2(\tilde Q)$, the trace is $4Q_t$, and the determinant is
+**The invariants.** The trace is $4Q_t$ and the determinant is
 $$
-\det L^{e}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2.
+\det L^{e}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2,
 $$
-The eigenvalues are $Q_t\pm iB$, each twice, where $B^2=Q_x^2+Q_y^2+Q_z^2$. The rank formula is proved in §*The Rank of a One-Sided Operator*; the trace and the determinant are the doubled trace and the squared determinant of the $2\times2$ model.
+with the eigenvalues $Q_t\pm iB$, each twice, where $B^2=Q_x^2+Q_y^2+Q_z^2$; see §*The Quadratic Relation*. The rank is $4$ for a unit, $2$ for a nonzero zero divisor and $0$ for the zero element; the proof is in §*The Rank of a One-Sided Operator*.
 
 ### The Four Left Matrices
 
@@ -186,7 +174,7 @@ and the map is injective. The image is the four-dimensional subalgebra $\mathbb{
 $$
 L^{e}(\tilde Q_1)R^{e}(\tilde Q_2)=R^{e}(\tilde Q_2)L^{e}(\tilde Q_1).
 $$
-The invariants are the same: rank $2\operatorname{rank}\mathsf M_2(\tilde Q)$, trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, eigenvalues $Q_t\pm iB$ each twice.
+The invariants are the same: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, eigenvalues $Q_t\pm iB$ each twice, and the same ranks.
 
 ### The Four Right Matrices
 
@@ -239,9 +227,7 @@ $$
 $$
 *Proof.* Suppose $L^{e}(\tilde Q)=R^{e}(\tilde P)$. The first column of each is the coordinate column of the element, so $\tilde P=\tilde Q$. Compare the entries $(2,3)$ and $(3,2)$: the left matrix has $-Q_z$ and $Q_z$, the right matrix has $Q_z$ and $-Q_z$, so $Q_z=0$. Compare $(2,4)$ and $(4,2)$: the left matrix has $Q_y$ and $-Q_y$, the right matrix has $-Q_y$ and $Q_y$, so $Q_y=0$. Compare $(3,4)$ and $(4,3)$: the left matrix has $-Q_x$ and $Q_x$, the right matrix has $Q_x$ and $-Q_x$, so $Q_x=0$. Hence $\tilde Q=Q_te_t$ and the matrix is $Q_t\mathrm I_4$. The converse is immediate.
 
-**The mutual commutants.** The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion $\mathbb{B}_L\subseteq\mathbb{B}_R'$ is the commutation law. The reverse inclusion is the double commutant theorem for the full matrix algebra $\mathbb{B}_R\cong M_2(\mathbb{C})$: the commutant of a full matrix algebra acting on its own carrier is the opposite copy, of dimension four. The intersection is the centre of each copy.
-
-**The $2\times2$ reading.** In the $2\times2$ model the left action becomes $Y\mapsto\mathsf M_2(\tilde Q)Y$ and the right action becomes $Y\mapsto Y\mathsf M_2(\tilde Q)$; the two-sided operator becomes $Y\mapsto AYB$, with $A=\mathsf M_2(\tilde Q)$ and $B=\mathsf M_2(\tilde P)$. The $2\times2$ model is a separate representation of the same element, not, in general, a block of the e-basis matrix. The e-basis construction does not split the carrier into two $2\times2$ blocks.
+**The mutual commutants.** The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion $\mathbb{B}_L\subseteq\mathbb{B}_R'$ is the commutation law. The reverse inclusion is the double commutant theorem: the commutant of $\mathbb{B}_L$ is four-dimensional and contains $\mathbb{B}_R$, so the two coincide. The intersection is the centre of each copy.
 
 ## The Sixteen Matrices $T_{\mu\nu}^{e}=L_\mu^{e}R_\nu^{e}$
 
@@ -386,74 +372,78 @@ The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself
 
 **No change of frame is needed.** In the e-basis the coefficient matrix is computed from the matrix $M$ by the sixteen traces above, with no conjugation and no change-of-frame matrix. The sixteen cells are real, so for a real matrix $M$ the coefficient matrix is real and its rank is the same over $\mathbb{R}$ and over $\mathbb{C}$.
 
-## The $2\times2$ Model and the Product
+## The Rank of a One-Sided Operator
 
-### The Two Readings
+### The Quadratic Relation
 
-**The isomorphism and the regular representation.** The $2\times2$ model $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size. The e-basis matrix $L^{e}(\tilde Q)$ reads the operator of left multiplication on the algebra taken as a complex vector space. The two are different representations: $\mathsf M_2(\tilde Q)$ is $2\times2$ and $L^{e}(\tilde Q)$ is $4\times4$, and the second is not, in general, a block matrix built from the first in this basis. The e-basis display is the structure-constant display; the block display of the regular representation belongs to another frame.
+**The relation.** Write $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Since $\vec Q^2=-B^2e_t$,
+$$
+\tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q,
+$$
+and therefore
+$$
+\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0.
+$$
+Applying $L^{e}$ gives
+$$
+(L^{e}(\tilde Q))^2-2Q_tL^{e}(\tilde Q)
++\langle\tilde Q\rangle_{\natural}\mathrm I_4=0,
+$$
+and the same relation holds for $R^{e}(\tilde Q)$.
 
-**The product under the model.** The isomorphism is multiplicative, so
+**The eigenvalues and the determinant.** Every eigenvalue $\lambda$ satisfies $\lambda^2-2Q_t\lambda+\langle\tilde Q\rangle_{\natural}=0$, so $\lambda=Q_t\pm iB$. The trace is $4Q_t$. When $B\neq0$ the two roots are distinct, and the trace forces multiplicity two for each; when $B=0$ the only root is $Q_t$. In both cases the characteristic polynomial is
 $$
-\mathsf M_2(\tilde Q\tilde X\tilde P)
-=\mathsf M_2(\tilde Q)\,\mathsf M_2(\tilde X)\,\mathsf M_2(\tilde P).
+\bigl((\lambda-Q_t)^2+B^2\bigr)^2,
 $$
-Under the model, the two-sided operator $T^{e}_{\tilde Q,\tilde P}$ corresponds to the map
-$$
-Y\longmapsto AYB,\qquad A=\mathsf M_2(\tilde Q),\quad B=\mathsf M_2(\tilde P),
-$$
-on $M_2(\mathbb{C})$. This is the reading used for the rank formula below.
+and the determinant is $\langle\tilde Q\rangle_{\natural}^2$. The same holds for $R^{e}(\tilde Q)$.
 
-### The Rank of a One-Sided Operator
+### The Rank of $L^{e}$ and $R^{e}$
 
-**The left rank.** The left multiplication $X\mapsto\tilde QX$ corresponds to $Y\mapsto AY$ on $M_2(\mathbb{C})$. Its image is the set of matrices whose columns lie in the column space of $A$, of dimension $2\operatorname{rank}A$. Hence
+**The form.** The bilinear form
 $$
-\operatorname{rank}L^{e}(\tilde Q)=2\operatorname{rank}\mathsf M_2(\tilde Q).
+\beta(X,Y)=\operatorname{Sc}(XY^{\natural})
 $$
-The same argument on the other side gives
-$$
-\operatorname{rank}R^{e}(\tilde P)=2\operatorname{rank}\mathsf M_2(\tilde P).
-$$
-The rank is $0$ for the zero element, $2$ for a nonzero zero divisor, and $4$ for a unit.
+has $\beta(X,X)=\langle X\rangle_{\natural}$ and Gram matrix $\mathrm I_4$ in the e-basis. It is the polar form of the norm, not the plain form $\operatorname{Sc}(XY)$ of §*The Plain Form*; it is symmetric and nondegenerate over $\mathbb{C}$. A linear subspace on which $\beta$ vanishes identically is totally isotropic; in a nondegenerate four-dimensional space over $\mathbb{C}$ such a subspace has dimension at most two.
+
+**The theorem.** The rank of $L^{e}(\tilde Q)$ is $4$ when $\langle\tilde Q\rangle_{\natural}\neq0$, it is $2$ when $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, and it is $0$ when $\tilde Q=0$. The same values hold for $R^{e}(\tilde Q)$.
+
+*Proof.* If $\langle\tilde Q\rangle_{\natural}\neq0$, the determinant is $\langle\tilde Q\rangle_{\natural}^2\neq0$ and the rank is $4$. If $\tilde Q=0$, the matrix is zero. Suppose $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$.
+
+Let $X$ lie in the kernel of $L^{e}(\tilde Q)$, so that $\tilde QX=0$. If $X$ were a unit, then $\tilde Q=(\tilde QX)X^{-1}=0$, against the hypothesis; hence $X$ is not a unit and $\langle X\rangle_{\natural}=0$. The kernel is therefore a linear subspace of the null cone, hence totally isotropic for $\beta$, of dimension at most two. This gives $\operatorname{rank}L^{e}(\tilde Q)\ge2$.
+
+For the other bound, split on $Q_t$. If $Q_t\neq0$, the relation reads $L(L-2Q_t\mathrm I_4)=0$, so the minimal polynomial divides $\lambda(\lambda-2Q_t)$, whose roots are distinct; the matrix is diagonalizable with eigenvalues $0$ and $2Q_t$. The trace is $4Q_t$, so $2Q_t$ has multiplicity two and $0$ has multiplicity two; the rank is $2$. If $Q_t=0$, the relation reads $L^2=0$, so the image lies in the kernel and $\operatorname{rank}L\le4-\operatorname{rank}L$, hence the rank is at most two. With the lower bound, the rank is two.
+
+The argument for $R^{e}$ is the same, with the kernel read on the other side.
 
 ### The Rank of a Product
 
-**The theorem.** For every pair,
+**The bound.** For every pair,
 $$
 \operatorname{rank}T^{e}_{\tilde Q,\tilde P}
-=\operatorname{rank}\mathsf M_2(\tilde Q)\cdot
-\operatorname{rank}\mathsf M_2(\tilde P)
-\in\{0,1,2,4\}.
+\le\min\bigl(\operatorname{rank}L^{e}(\tilde Q),
+\operatorname{rank}R^{e}(\tilde P)\bigr).
 $$
-In particular the product has rank $4$ exactly when both parameters are units, and no product has rank three.
+If one parameter is a unit, the bound is attained, and the rank of the product is the rank of the other one-sided factor. Hence a product is invertible exactly when both parameters are units.
 
-*Proof.* Write $A=\mathsf M_2(\tilde Q)$ and $B=\mathsf M_2(\tilde P)$. Choose invertible $S,T,U,V$ with
-$$
-A=S\begin{pmatrix}\mathrm I_r&0\\0&0\end{pmatrix}T,\qquad
-B=U\begin{pmatrix}\mathrm I_s&0\\0&0\end{pmatrix}V,
-$$
-where $r=\operatorname{rank}A$ and $s=\operatorname{rank}B$. As $Y$ ranges over $M_2(\mathbb{C})$, the matrix $TYU$ ranges over $M_2(\mathbb{C})$, and the map
-$$
-Z\longmapsto
-\begin{pmatrix}\mathrm I_r&0\\0&0\end{pmatrix}
-Z
-\begin{pmatrix}\mathrm I_s&0\\0&0\end{pmatrix}
-$$
-has image the $r\times s$ corner, of dimension $rs$, and is injective there. Hence the rank is $rs$. The possible ranks of $A$ and $B$ are $0,1,2$, so the product rank is in $\{0,1,2,4\}$.
+*Proof.* The operator is the composite $L^{e}(\tilde Q)R^{e}(\tilde P)$; the rank of a composite is at most the rank of either factor. A unit $\tilde P$ makes $R^{e}(\tilde P)$ invertible, so $\operatorname{rank}(L^{e}(\tilde Q)R^{e}(\tilde P))=\operatorname{rank}L^{e}(\tilde Q)$; a unit $\tilde Q$ does the same on the other side.
 
-### The Kronecker Product Is Not the Operator
+**The possible ranks.** The one-sided ranks are $0$, $2$ and $4$. If a parameter is zero the product is zero. If both parameters are nonzero zero divisors, the product has rank at most two. If both are units, the product is invertible of rank four. Hence a product has rank $0$, $1$, $2$ or $4$, and never rank three.
 
-**The dimensions.** $L^{e}(\tilde Q)$ and $R^{e}(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L^{e}(\tilde Q)\otimes R^{e}(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $T^{e}_{\tilde Q,\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.
-
-**The correct product.** The matrix of the operator is the ordinary product $L^{e}(\tilde Q)R^{e}(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
+**The drop.** For $\tilde Q=\tilde P=e_t+i\vec e_z$,
 $$
-\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}
-\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\tilde Q\otimes\tilde P^{\mathrm{opp}}
-\longmapsto L^{e}(\tilde Q)R^{e}(\tilde P),
+T^{e}_{\tilde Q,\tilde P}
+=2\begin{pmatrix}
+1&0&0&-i\\
+0&0&0&0\\
+0&0&0&0\\
+i&0&0&1
+\end{pmatrix},
 $$
-with $\mathbb{B}^{\mathrm{opp}}$ the opposite algebra. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to the sixteen matrices $T_{\mu\nu}^{e}$. The Kronecker product of the matrices is a different construction: it is the matrix of the tensor product of the two operators on the tensor product of the carriers, not the matrix of their composite on one carrier.
+of rank one, while each one-sided factor has rank two.
 
-**The e-basis display.** In the e-basis the $4\times4$ matrix is not displayed as a Kronecker product of two $2\times2$ matrices, and it is not one in general. The structure-constant basis treats the four units on one footing and does not split the carrier into two tensor factors. The split is a property of another frame; the e-basis does not make that choice. The ordinary product is the operator, and the e-basis computes it from the multiplication table.
+## The Ordinary Product
+
+**The dimensions.** The matrix of the composite is the ordinary $4\times4$ product $L^{e}(\tilde Q)R^{e}(\tilde P)$. The Kronecker product $L^{e}(\tilde Q)\otimes R^{e}(\tilde P)$ is a $16\times16$ matrix acting on the tensor square of the carrier, a space of dimension sixteen; it is the matrix of the tensor product of the two operators, not of their composite on the four-dimensional algebra.
 
 ## The Cone of Products
 
@@ -567,30 +557,20 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 *Proof.* The first equivalence is §*The Coefficient Matrix $c(M)$*. The second is the rank-one criterion: a matrix is $[Q][P]^{\mathsf T}$ exactly when it has rank at most one, and the zero matrix is the case $Q=0$ or $P=0$.
 
-**The cone.** The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the $2\times2$ minors of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $T_{tt}^{e}+T_{xx}^{e}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.
+**The cone.** The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the minors of order two of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $T_{tt}^{e}+T_{xx}^{e}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.
 
 **The parametrisation.** The map $(\tilde Q,\tilde P)\mapsto T^{e}_{\tilde Q,\tilde P}$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.
 
 ### Matrix Rank Against Length
 
-**Theorem (the rank of a product).** For $M=T^{e}_{\tilde Q,\tilde P}$,
-$$
-\operatorname{rank}M
-=\operatorname{rank}\mathsf M_2(\tilde Q)\cdot
-\operatorname{rank}\mathsf M_2(\tilde P)
-\in\{0,1,2,4\}.
-$$
-In particular $\operatorname{rank}M=4$ exactly when both parameters are units, and no product has rank three.
+**The two ranks.** The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in $\{0,1,2,4\}$ by §*The Rank of a Product*, and it is four exactly when both parameters are units. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.
 
-*Proof.* This is §*The Rank of a Product*, read on the matrix $M$.
-
-**The two ranks are independent.** Neither $\operatorname{rank}M$ nor $\ell(M)$ determines the other. The examples are collected below.
-
-**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and coefficient rank one; the matrix $T_{tt}^{e}+T_{xx}^{e}$ has matrix rank two and coefficient rank two.
+**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and coefficient rank one; the product $T^{e}_{e_t+i\vec e_z,e_t+i\vec e_z}$ has matrix rank one and coefficient rank one; the matrix $T_{tt}^{e}+T_{xx}^{e}$ has matrix rank two and coefficient rank two.
 
 | $M$ | $\operatorname{rank}M$ | $\operatorname{rank}c(M)$ | $\ell(M)$ | decomposition |
 |---|---|---|---|---|
 | $T^{e}_{e_t+e_x,e_t+e_y}$ | $4$ | $1$ | $1$ | by construction |
+| $T^{e}_{e_t+i\vec e_z,e_t+i\vec e_z}$ | $1$ | $1$ | $1$ | by construction |
 | $R^{e}(e_t+i\vec e_z)$ | $2$ | $1$ | $1$ | $T^{e}_{e_t,\,e_t+i\vec e_z}$ |
 | $T_{tt}^{e}+T_{xx}^{e}$ | $2$ | $2$ | $2$ | $T_{tt}^{e}+T_{xx}^{e}$ |
 | $E_{11}$ | $1$ | $4$ | $4$ | $\tfrac14(T_{tt}^{e}-T_{xx}^{e}-T_{yy}^{e}-T_{zz}^{e})$ |
@@ -760,7 +740,7 @@ $$
 \tilde QX\bigl(e_t-\tilde P\tilde Q\bigr)Y\tilde P=0
 \quad\text{for all }X,Y.
 $$
-Put $\tilde R=e_t-\tilde P\tilde Q$. If $\tilde R\neq0$, the products $X\tilde RY$ span the two-sided ideal generated by $\tilde R$, which is the whole algebra because $\mathbb{B}\cong M_2(\mathbb{C})$ is simple. Then $\tilde QB\tilde P=0$ for all $B$, which in the $2\times2$ model forces $\tilde Q=0$ or $\tilde P=0$, against the nonzero hypothesis. Hence $\tilde R=0$ and $\tilde P\tilde Q=e_t$. The converse is immediate.
+Put $\tilde R=e_t-\tilde P\tilde Q$. If $\tilde R\neq0$, the products $X\tilde RY$ span the two-sided ideal generated by $\tilde R$, which is the whole algebra because $\mathbb{B}$ is simple. Then $\tilde Q\tilde Z\tilde P=0$ for all $\tilde Z$. The map $(\tilde Q,\tilde P)\mapsto T^{e}_{\tilde Q,\tilde P}$ is bilinear and sends the sixteen basis pairs to the basis $T_{\mu\nu}^{e}$, so it is injective: $T^{e}_{\tilde Q,\tilde P}=0$ forces $\tilde Q=0$ or $\tilde P=0$, against the nonzero hypothesis. Hence $\tilde R=0$ and $\tilde P\tilde Q=e_t$. The converse is immediate.
 
 ### No Pin Group
 
@@ -826,7 +806,6 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - The coefficient matrix under a change of frame: how $c(M)$ transforms when the e-basis is replaced by another basis, which invariants besides the rank are frame-independent, and whether the length stratification is the same in every frame.
 - The real slice: the real Segre cone, the real length, and the real forms of the complex cone. Does every real matrix of length $r$ have a real decomposition of length $r$? The rank argument says yes, but the explicit factors are not classified.
 - The matrix units $E_{ij}$: their lengths, their minimal decompositions, and the pattern of the coefficient matrix. The example $E_{11}$ has length four; the other units may differ.
-- The $2\times2$ model and the e-basis: the explicit intertwiner between the regular representation and the $2\times2$ representation, and the double commutant of the two one-sided copies.
 - The physical operators of the corpus: which have length two or three, and whether the real structure of the e-basis makes their statements frame-independent.
 
 ## Summary
@@ -839,7 +818,7 @@ The sixteen products $T_{\mu\nu}^{e}=L_\mu^{e}R_\nu^{e}$ are real signed permuta
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $T_{\mu\nu}^{e}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((T_{\mu\nu}^{e})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
-The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. The matrix rank of a product is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$ and is independent of the length: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and length one.
+The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and length one.
 
 The plain adjoint swaps the two parameters, and the type criteria are $\tilde P=\lambda\tilde Q$ for self-adjoint, $\tilde P\tilde Q=\pm e_t$ for isometry and $\tilde P\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 
@@ -859,11 +838,11 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch, $R^{e}=D(L^{e})^{\mathsf T}D$ |
 | $T^{e}_{\tilde Q,\tilde P}=L^{e}(\tilde Q)R^{e}(\tilde P)$ | two-sided operator, $X\mapsto\tilde QX\tilde P$ |
 | $T_{\mu\nu}^{e}=L_\mu^{e}R_\nu^{e}$ | the sixteen basis matrices |
-| $\mathsf M_2(\tilde Q)$ | the $2\times2$ model, $\det=\langle\tilde Q\rangle_{\natural}$, $\operatorname{tr}=2Q_t$ |
 | $c(M)$ | coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((T_{\mu\nu}^{e})^{\mathsf T}M)$ |
 | $\ell(M)$ | length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Phi(\tilde Q,\tilde P)=T^{e}_{\tilde Q,\tilde P}$ | factorisation map |
-| $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | quaternionic norm, $\det\mathsf M_2(\tilde Q)$ |
+| $B^2=Q_x^2+Q_y^2+Q_z^2$ | the squared vector part |
+| $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | quaternionic norm, the scalar of $\tilde Q\tilde Q^{\natural}$ |
 | $\tilde Q^{\natural}=Q_t-\vec Q$ | natural conjugation |
 | $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$ | Hermitian conjugation |
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ | inner automorphism |
@@ -872,16 +851,16 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\operatorname{Sc}$ | scalar part, the $e_t$ coefficient |
 | $\approx$ | plain adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ |
 | $\dagger$ | Hilbert–Schmidt adjoint |
-| $\operatorname{rank}$ | matrix rank, on $M$ and on $c(M)$ |
+| $\operatorname{rank}M$ | the matrix rank of $M$; the coefficient rank is written $\operatorname{rank}c(M)$ |
 | $E_{11}$ | the first matrix unit in the e-basis |
 | $M_4(\mathbb{R})$ | the real matrices, the real span of the sixteen cells |
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant](m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the left and right matrices and the six subspaces.
+- [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the frame, the left and right matrices and the six subspaces.
 - [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same operators in the standard Peirce frame.
+- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
 - [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the pure swap stitch and the tensor displays.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the compression of the two one-sided actions.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [$M_4(\mathbb{C})$ Representation : The General Endomorphisms](m4c-representation-the-general-endomorphisms.html), for the ambient endomorphism space and its coordinate column.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
@@ -892,4 +871,4 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection of the two one-sided copies.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde P=\tilde Q^{*}$.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the $2\times2$ unit images, the four left and four right matrices and the sixteen cells entry by entry.
+- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the four left and four right matrices and the sixteen cells entry by entry.

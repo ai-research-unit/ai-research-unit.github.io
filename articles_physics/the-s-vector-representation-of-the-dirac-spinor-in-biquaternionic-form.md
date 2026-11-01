@@ -14,7 +14,7 @@ $$
 g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-which is the corpus's **generator metric**, the same object the gamma matrices obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V_\mu g_{\mu\nu}W_\nu$. No index is raised in this article. Where the source wrote a contraction with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$; where $g_{\mu\nu}$ is written, it carries the signs itself and the sum is plain. The sign vector and the Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ are different letters.
+which is the corpus's **generator metric**, the same object the four generators of the Dirac module obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V_\mu g_{\mu\nu}W_\nu$. No index is raised in this article. Where the source wrote a contraction with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$; where $g_{\mu\nu}$ is written, it carries the signs itself and the sum is plain. The sign vector and the Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ are different letters.
 
 ## The Trinomial Unit Basis
 
@@ -32,19 +32,19 @@ $$
 \bar u u = 1, \qquad \bar v v = -1, \qquad \bar u v = 0,
 $$
 
-where $\bar u = u^\dagger\gamma_0$ is the Dirac conjugate. The vector and spinor units are tied together by
+where $\bar u = i(u^\dagger e_t)\vec e_x$ is the Dirac conjugate (left unit $e_t$, right unit $\vec e_x$). Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right, and $\mathcal{D}(w)$ for the contraction $\Psi\mapsto\sum_\mu w_\mu\,i a_\mu\Psi b_\mu$ of the four generators with the components $w_\mu$. The vector and spinor units are tied together by
 
 $$
-u = \sum_\mu j_\mu i\gamma_\mu v, \qquad \sum_\mu k_\mu\gamma_\mu u = u, \qquad \sum_\mu k_\mu\gamma_\mu v = -v .
+u = \mathcal{D}(j)v, \qquad \mathcal{D}(k)u = u, \qquad \mathcal{D}(k)v = -v .
 $$
 
-The two spinors are therefore the two eigenvectors of the Clifford element $\sum_\mu k_\mu\gamma_\mu$ with eigenvalues $+1$ and $-1$, and $j_\mu i\gamma_\mu$ exchanges them. In the Dirac representation and the coordinate system
+The two spinors are therefore the two eigenvectors of $\mathcal{D}(k)$ with eigenvalues $+1$ and $-1$, and $\mathcal{D}(j)$ exchanges them. In the Dirac representation and the coordinate system
 
 $$
 u = (1,0,0,0)^{\mathsf T}, \quad v = (0,0,i,0)^{\mathsf T}, \quad k_\mu = (1,0,0,0), \quad j_\mu = (0,0,0,-1),
 $$
 
-all four relations hold. The signs are the covariant ones: the contravariant $j$ is $(0,0,0,1)$, and $g_{\mu\nu}$ supplies the minus. The source prints the second relation with the opposite sign, a convention it leaves implicit.
+all these relations hold. The signs are the covariant ones: the contravariant $j$ is $(0,0,0,1)$, and $g_{\mu\nu}$ supplies the minus. The source prints the second relation with the opposite sign, a convention it leaves implicit.
 
 ### The Null Basis
 
@@ -63,7 +63,7 @@ $$
 and
 
 $$
-\sum_\mu k_\mu\gamma_\mu r = l, \qquad \sum_\mu k_\mu^+\gamma_\mu r = 0, \qquad \sum_\mu k_\mu\gamma_\mu l = r, \qquad \sum_\mu k_\mu^-\gamma_\mu l = 0 .
+\mathcal{D}(k)r = l, \qquad \mathcal{D}(k_+)r = 0, \qquad \mathcal{D}(k)l = r, \qquad \mathcal{D}(k_-)l = 0 .
 $$
 
 The names are the source's: $r$ is the right-handed and $l$ the left-handed *pure spinor* of the pair. The two null vectors $k_+$ and $k_-$ are the two null directions into which $k$ and $j$ resolve.
@@ -73,14 +73,14 @@ The names are the source's: $r$ is the right-handed and $l$ the left-handed *pur
 Every Dirac spinor decomposes into two semi-spinors, each carrying four independent real components,
 
 $$
-\Psi = \Psi_1 + \Psi_2, \qquad \Psi_1 = B_\mu g_{\mu\nu} i\gamma_\nu v, \qquad \Psi_2 = N_\mu g_{\mu\nu} i\gamma_\nu u,
+\Psi = \Psi_1 + \Psi_2, \qquad \Psi_1 = \mathcal{D}(B_\mu g_{\mu\nu})v, \qquad \Psi_2 = \mathcal{D}(N_\mu g_{\mu\nu})u,
 $$
 
 with
 
 $$
-B_\mu = \tfrac12\bigl(\bar v\, i\gamma_\mu\Psi - \bar\Psi\, i\gamma_\mu v\bigr), \qquad
-N_\mu = \tfrac12\bigl(\bar\Psi\, i\gamma_\mu u - \bar u\, i\gamma_\mu\Psi\bigr) .
+B_\mu = \tfrac12\bigl(\bar v\, i a_\mu\Psi b_\mu - \bar\Psi\, i a_\mu v b_\mu\bigr), \qquad
+N_\mu = \tfrac12\bigl(\bar\Psi\, i a_\mu u b_\mu - \bar u\, i a_\mu\Psi b_\mu\bigr) .
 $$
 
 The two coefficients $B_\mu$ and $N_\mu$ are **real four-vectors**, and the reconstruction $\Psi \mapsto (B, N) \mapsto \Psi$ is exact. This is the first half of the statement that a Dirac spinor is a pair of real four-vectors.
@@ -89,15 +89,15 @@ The two coefficients $B_\mu$ and $N_\mu$ are **real four-vectors**, and the reco
 
 ### The Structure Constants
 
-Two four-index tensors are read off the gamma matrices:
+Two four-index tensors are read off the four generators. A product of generators multiplies its left units into one chain and its right units into another; with $\mathrm{Sc}$ the scalar part of a biquaternion, the trace of such a product is four times the product of the scalar parts of the two chains, so
 
 $$
-{t'}_{\mu\nu\lambda\rho} = \tfrac14\,\mathrm{tr}\bigl(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\bigr)
+{t'}_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)
 = g_{\mu\nu}g_{\lambda\rho} + g_{\mu\rho}g_{\nu\lambda} - g_{\mu\lambda}g_{\nu\rho},
 $$
 
 $$
-\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\,\mathrm{tr}\bigl(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho\bigr),
+\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_t\,a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\,\vec e_z),
 \qquad \varepsilon_{0123} = 1 .
 $$
 
@@ -147,7 +147,7 @@ $$
 \qquad \vec u_x\vec u_y = -\vec u_y\vec u_x = \vec u_z \ \ (\text{cyclic})\;}.
 $$
 
-These are exactly the relations of the biquaternion algebra: $\vec e_k^2 = +e_t$ in the $e$-basis (since $e_\nu = i\vec u_{\nu}$ and $\vec u_{\nu}^2 = -I$), and $\vec e_x \vec e_y = i \vec e_z$. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
+These are exactly the relations of the biquaternion algebra: $e_k^2 = +e_t$ in the $e$-basis, and $e_x e_y = i e_z$ (since $e_\nu = i\vec u_{\nu}$ is the matrix of $i\vec e_\nu$, and $\vec u_{\nu}^2 = -I$). The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
 
 ## The Semi-Spinors as Real Four-Vectors
 
@@ -160,9 +160,9 @@ $$
 so that $B$ is timelike-positive and $\langle\cdot\rangle_{\natural}$ spacelike-negative in the source's sign convention. The passage to the null basis gives a cleaner pair. Define
 
 $$
-R = \tfrac12 G_\mu g_{\mu\nu}\gamma_\nu l, \qquad L = -\tfrac12 G^{*}_{\mu} g_{\mu\nu}\gamma_\nu r,
+R = \tfrac12 \mathcal{D}(G_\mu g_{\mu\nu})l, \qquad L = -\tfrac12 \mathcal{D}(G^{*}_{\mu} g_{\mu\nu})r,
 \qquad
-G_\mu = B_\mu + i N_\mu = \tfrac12\bigl(\bar r\gamma_\mu R - \bar L\gamma_\mu l\bigr).
+G_\mu = B_\mu + i N_\mu = \tfrac12\bigl(\bar r\, i a_\mu R b_\mu - \bar L\, i a_\mu l b_\mu\bigr).
 $$
 
 Then $\Psi = R + L$: the complex vector $G_\mu$ is the combined object, and its real and imaginary parts are the two semi-spinors. The source calls $G_\mu$ an **s-vector**, because it transforms under left multiplication $S_1(q)$ by a unit biquaternion, whereas an ordinary spacetime vector $x_\mu$ transforms under the mixed left–right map $\Lambda(q)$. Two different linear representations of the same $SL(2,\mathbb{C})$ act on the same four-dimensional index.
@@ -171,24 +171,24 @@ Then $\Psi = R + L$: the complex vector $G_\mu$ is the combined object, and its 
 
 ### The Dictionary
 
-The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$:
+The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$, where $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z$ is the chirality:
 
 $$
 \bar\Psi\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
 \qquad
-\bar\Psi\gamma_5\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
+\bar\Psi\Gamma\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
 $$
 
 $$
-\bar\Psi\gamma_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G^*_\nu\, c_{\nu\mu\lambda}\, G_\lambda,
+\bar\Psi\, i a_\mu\Psi b_\mu = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G^*_\nu\, c_{\nu\mu\lambda}\, G_\lambda,
 \qquad
-\bar\Psi\gamma_5\gamma_\mu\Psi = -\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G^*_\nu\, \check c_{\nu\mu\lambda}\, G_\lambda .
+\bar\Psi\,\Gamma\bigl(i a_\mu\Psi b_\mu\bigr) = -\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G^*_\nu\, \check c_{\nu\mu\lambda}\, G_\lambda .
 $$
 
-The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G^*_\rho c_{\rho\mu\sigma}G_\sigma$, the source's first bilinear. The last line carries a sign that the source prints as a plus; with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$ and the $\check c$ of the normed condition above, the identity holds with the minus sign. The source further rewrites the mass form as
+The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G^*_\rho c_{\rho\mu\sigma}G_\sigma$, the source's first bilinear. The last line carries a sign that the source prints as a plus; with $\Gamma$ equal to $i$ times the ordered product of the four generators and the $\check c$ of the normed condition above, the identity holds with the minus sign. The source further rewrites the mass form as
 
 $$
-\bar\Psi\Psi = \sum_\mu\epsilon_\mu\,\bar\Psi\, K_\mu\gamma_\mu\Psi
+\bar\Psi\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\bar\Psi\, i a_\mu\Psi b_\mu
 $$
 
 for a unit complex vector $K_\mu$ built from $\Psi$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
@@ -204,14 +204,14 @@ $$
 which leaves the trilinear form
 
 $$
-A_\mu\bigl(\bar\Psi_{(1)}\gamma_\mu\Psi_{(2)} + \bar\Psi_{(2)}\gamma_\mu\Psi_{(1)}\bigr)
+A_\mu\bigl(\bar\Psi_{(1)}\, i a_\mu\Psi_{(2)} b_\mu + \bar\Psi_{(2)}\, i a_\mu\Psi_{(1)} b_\mu\bigr)
 = 2\sum_{\nu,\lambda,\sigma}\epsilon_\nu\epsilon_\lambda\epsilon_\sigma\, A_\mu\, \varepsilon_{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda
 $$
 
 invariant. This is the *ding*: the fourth-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and the vector, the timelike unit $k$ and the two semi-spinors playing the roles the three eight-dimensional spaces play in the $\mathrm{Spin}(8)$ case. The fuller cubic form
 
 $$
-C = A_\mu\,\bar\Psi\gamma_\mu\Psi
+C = A_\mu\,\bar\Psi\, i a_\mu\Psi b_\mu
 = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, A_\mu\, {t'}_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda
 $$
 
@@ -222,7 +222,7 @@ completes the dictionary of the three quadratic forms and the one cubic form tha
 Passing from the spinor to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\bigl[\bar\Psi i\gamma_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi - \bigl((\partial/\partial x_\mu + ieA_\mu)\bar\Psi\bigr)i\gamma_\mu\Psi\bigr] - m\bar\Psi\Psi
+\tfrac12\sum_\mu\bigl[\bar\Psi\, i a_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi\, b_\mu - \bigl((\partial/\partial x_\mu + ieA_\mu)\bar\Psi\bigr) i a_\mu\Psi b_\mu\bigr] - m\bar\Psi\Psi
 $$
 
 $$
@@ -312,7 +312,7 @@ a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simon
 
 ## The U(1) Transformation and the De Moivre Theorem
 
-The algebra supplies the "gamma five" symbol $c_5{}_{\mu\nu}$ with the defining property
+The algebra supplies the chirality cell $c_5{}_{\mu\nu}$ with the defining property
 
 $$
 c_5{}_{\mu\rho} g_{\rho\sigma} c_5{}_{\sigma\nu} = g_{\mu\nu},
@@ -331,7 +331,7 @@ $$
 \bigl(\cos\alpha + i c_5\sin\alpha\bigr)^n = \cos n\alpha + i c_5\sin n\alpha .
 $$
 
-The correspondence is exactly one-to-one in one direction: the *chiral* transformation of the spinor, $\Psi \mapsto \exp(ia\gamma_5)\Psi$, becomes the *ordinary* $\mathrm{U}(1)$ transformation $G_\mu \mapsto \exp(ia)G_\mu$. The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG)$ is invariant under the $\mathrm{U}(1)$ transformation but *not* under the chiral transformation, so plane-wave solutions for $\Psi$ and for $G_\mu$ are rotated into one another by this exchange and must be distinguished.
+The correspondence is exactly one-to-one in one direction: the *chiral* transformation of the spinor, $\Psi \mapsto \exp(ia\Gamma)\Psi$, becomes the *ordinary* $\mathrm{U}(1)$ transformation $G_\mu \mapsto \exp(ia)G_\mu$. The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG)$ is invariant under the $\mathrm{U}(1)$ transformation but *not* under the chiral transformation, so plane-wave solutions for $\Psi$ and for $G_\mu$ are rotated into one another by this exchange and must be distinguished.
 
 ## The Dual Transformation and the Two Semi-Spinors
 
@@ -367,7 +367,7 @@ These questions are open.
 
 ## Summary
 
-A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B_\mu g_{\mu\nu}i\gamma_\nu v$ and $\Phi_2 = N_\mu g_{\mu\nu}i\gamma_\nu u$ with real $B_\mu, N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = \mathcal{D}(B_\mu g_{\mu\nu})v$ and $\Phi_2 = \mathcal{D}(N_\mu g_{\mu\nu})u$ with real $B_\mu, N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial/\partial x_\mu G_\mu - imj_\mu G^{*}_{\mu} = 0$, with the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
@@ -378,17 +378,22 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | Symbol | Meaning |
 |---|---|
 | $\mu, \nu, \lambda, \rho$ | Ordinary Minkowski four-vector indices, $0,1,2,3$ |
-| $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric of the gamma matrices (the source's $\eta$); not the $ict'$ metric |
+| $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric of the frame (the source's $\eta$); not the $ict'$ metric |
 | $V\cdot W = V_\mu g_{\mu\nu}W_\nu$ | Minkowski dot product |
 | $k_\mu, j_\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
 | $u, v$ | Unit semi-spinors, $\bar u u = 1$, $\bar v v = -1$, $\bar u v = 0$ |
 | $r = u+iv$, $l = u-iv$ | Pure spinors, $\bar r l = \bar l r = 2$ |
 | $k_\pm{}_\mu = \tfrac12(k_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
-| ${t'}_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Symmetric gamma trace |
-| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\lambda\gamma_\rho)$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
+| $e_t, \vec e_k$ | The algebra units, $e_t = 1$, $\vec e_k^2 = -e_t$ |
+| $a_\mu, b_\mu$ | Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |
+| $\mathcal{D}(w) = \Psi\mapsto\sum_\mu w_\mu\, i a_\mu\Psi b_\mu$ | Contraction of the four generators with the components $w_\mu$ |
+| $\mathrm{Sc}$ | Scalar part of a biquaternion |
+| ${t'}_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)$ | Symmetric four-index trace |
+| $\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_ta_\mu a_\nu a_\lambda a_\rho)\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\vec e_z)$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
 | $\check c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
-| $c_5{}_{\mu\nu} = -g_{\mu\mu}\check c_{\mu\nu\lambda}k_\lambda$ | The algebra's "gamma five"; $(c_5)^2 = 1$ |
+| $c_5{}_{\mu\nu} = -g_{\mu\mu}\check c_{\mu\nu\lambda}k_\lambda$ | The algebra's chirality cell; $(c_5)^2 = 1$ |
+| $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z$ | The chirality |
 | $(G\otimes H)_\lambda = G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B_\mu, N_\mu$ | Real four-vectors of the two semi-spinors |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector (the vector representation of the Dirac spinor) |
@@ -409,3 +414,17 @@ What the construction supplies is a dictionary; what it does not supply is covar
 - J. C. Baez, "The Octonions," *Bulletin of the American Mathematical Society* **39** (2002) 145–205 (arXiv:math.RA/0105155), for the triality of $\mathrm{Spin}(8)$ and the octonions, and for the Hurwitz theorem.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer Academic Publishers, Dordrecht, 1997), for the algebra of complexified quaternions and the left- and right-multiplication transformations $S_1(q), S_2(q)$.
 - The companion corpus articles: [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (for the non-integrable-phase interpretation of the mass and the unit vector $K_\mu$), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) (for the covariant derivative $\tilde\nabla_\mu$ away from the neutral-element form), and [Triality and Spin(8) with Inner Conjugation](../articles_maths/triality-and-spin8-with-inner-conjugation.html) (for the eight-dimensional case the construction generalizes).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iT_{e_t,\vec e_x},\quad \gamma_1=iT_{\vec e_x,\vec e_y},\quad \gamma_2=iT_{\vec e_y,\vec e_y},\quad \gamma_3=iT_{\vec e_z,\vec e_y},\quad \gamma_5=-iT_{e_t,\vec e_z}.
+$$
+
+Here $T_{a,b}$ multiplies on the left by $a$ and on the right by $b$: $T_{a,b}\Psi=a\Psi b$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

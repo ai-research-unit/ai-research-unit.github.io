@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant__
+# __$M_4(\mathbb{C})$ e-basis Representation__
 
 ## Introduction
 

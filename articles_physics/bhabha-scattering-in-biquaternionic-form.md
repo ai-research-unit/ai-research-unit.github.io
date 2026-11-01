@@ -40,11 +40,11 @@ The two tree-level diagrams contribute
 
 $$
 \boxed{\;
-\mathcal M = -e^2\left(\bar v_k\gamma_\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2}\gamma_\mu w_p\right)
-\;+\; e^2\left(\bar v_k\gamma_\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right)\;},
+\mathcal M = -e^2\left(\bar v_k c_\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2} c_\mu w_p\right)
+\;+\; e^2\left(\bar v_k c_\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2} c_\nu v_{k_2}\right)\;},
 $$
 
-the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
+where the $c_\mu$ are the canonical frame's cells, $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$ for $k=1,2,3$. Here $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$, so each vertex is one two-sided multiplier and each spinor contraction is that cell between the two external states. The first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
 
 ## The Cross Section
 
@@ -126,6 +126,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha$ | Fine-structure constant |
 | $\tilde J\in\mathbb M_-$ | Framework's material-sector current |
+| $c_\mu$ | Cells of the canonical frame; $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$ |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
 
 ## Further Reading
@@ -135,3 +136,17 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the cross section, crossing symmetry and the annihilation channel.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the relative sign of the exchange and annihilation diagrams.
 - The companion articles of this series: [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html), [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), and [Real Spinors and Reality Conditions with Inner Conjugation](../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

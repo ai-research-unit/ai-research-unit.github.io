@@ -12,7 +12,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\gamma_\mu p_{i\mu} = m$ on shell, $m = m_e$. The **Mandelstam variables** are
+Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $c_\mu p_{i\mu} = m$ on shell, $m = m_e$. The $c_\mu$ are the canonical frame's cells, $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$ for $k=1,2,3$. Here $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$. The **Mandelstam variables** are
 
 $$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
@@ -50,13 +50,13 @@ $$
 The $t$-channel diagram contributes
 
 $$
-i\mathcal M_t = (-ie)^2\,\bar w(p_3)\gamma_\mu w(p_1)\,\frac{-i}{t}\,\bar w(p_4)\gamma_\mu w(p_2),
+i\mathcal M_t = (-ie)^2\,\bar w(p_3)c_\mu w(p_1)\,\frac{-i}{t}\,\bar w(p_4)c_\mu w(p_2),
 $$
 
 and the $u$-channel diagram, obtained by exchanging the two final electrons, contributes
 
 $$
-i\mathcal M_u = (-ie)^2\,\bar w(p_3)\gamma_\mu w(p_2)\,\frac{-i}{u}\,\bar w(p_4)\gamma_\mu w(p_1).
+i\mathcal M_u = (-ie)^2\,\bar w(p_3)c_\mu w(p_2)\,\frac{-i}{u}\,\bar w(p_4)c_\mu w(p_1).
 $$
 
 Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,
@@ -70,20 +70,20 @@ the **Pauli exchange sign**. This single sign is the whole of the interference s
 
 ## The Spin-Summed Matrix Element
 
-Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives
+Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_\mu c_\mu+m\,T_{e_t,e_t}$ the cell of the momentum shell,
 
 $$
 \frac14\sum_{\mathrm{spins}}|\mathcal M|^2
-= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma_\mu(\gamma_{\rho} (p_{1})_{\rho}+m)\gamma_\nu(\gamma_{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma_{\lambda} (p_{2})_{\lambda}+m)\gamma_\nu(\gamma_{\alpha} (p_{4})_{\alpha}+m)]
+= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[c_\mu D(p_1)c_\nu D(p_3)]\operatorname{Tr}[c_\mu D(p_2)c_\nu D(p_4)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma_\mu(\gamma_{\rho} (p_{2})_{\rho}+m)\gamma_\nu(\gamma_{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma_{\lambda} (p_{1})_{\lambda}+m)\gamma_\nu(\gamma_{\alpha} (p_{4})_{\alpha}+m)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[c_\mu D(p_2)c_\nu D(p_3)]\operatorname{Tr}[c_\mu D(p_1)c_\nu D(p_4)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\gamma_{\rho} (p_{3})_{\rho}+m)\gamma_\mu(\gamma_{\sigma} (p_{1})_{\sigma}+m)\gamma_\nu(\gamma_{\lambda} (p_{4})_{\lambda}+m)\gamma_\mu(\gamma_{\alpha} (p_{2})_{\alpha}+m)\gamma_\nu] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)c_\mu D(p_1)c_\nu D(p_4)c_\mu D(p_2)c_\nu] \Big\},
 $$
 
-using the spin sum $\sum_s w_s(p)\bar w_s(p) = \gamma_{\mu} p_{\mu}+m$ and the trace identity $\operatorname{Tr}[\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
+using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the trace identity $\operatorname{Tr}[c_\mu c_\nu c_\rho c_\sigma] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
 \boxed{\;
@@ -133,7 +133,7 @@ of a few hundred parts per billion. The asymmetry was measured at SLAC (E158) an
 
 ### The amplitude as a product of two material-sector currents
 
-The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the material-sector object $\tilde J\in\mathbb M_-$, with the Clifford-odd element that a pure biquaternion product does not supply. The Møller amplitude is the second-quantized version of that same structure: the two factors $\bar w(p_{\mathrm{out}})\gamma_\mu w(p_{\mathrm{in}})$ are the two electron currents $\tilde J_1_\mu$ and $\tilde J_2_\mu$ in the framework's variables, both material-sector objects, contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the propagator — its canonical-quantization article constructs the quantized Maxwell field and its two-point function — so the amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the material-sector object $\tilde J\in\mathbb M_-$, with the Clifford-odd element that a pure biquaternion product does not supply. The Møller amplitude is the second-quantized version of that same structure: the two factors $\bar w(p_{\mathrm{out}})c_\mu w(p_{\mathrm{in}})$ are the two electron currents $\tilde J_1_\mu$ and $\tilde J_2_\mu$ in the framework's variables, both material-sector objects, contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the propagator — its canonical-quantization article constructs the quantized Maxwell field and its two-point function — so the amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -141,15 +141,15 @@ The single structural feature the framework owns here is the exchange sign. The 
 
 ### Crossing symmetry is charge conjugation
 
-The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron (with reversed four-momentum) changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The crossing check reported in this article's context file — the Bhabha function minus the Møller function cancelling to numerical accuracy, and the angular identity between the two — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of gamma matrices. The companion Bhabha article states the correspondence from the other side.
+The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron (with reversed four-momentum) changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The crossing check reported in this article's context file — the Bhabha function minus the Møller function cancelling to numerical accuracy, and the angular identity between the two — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of the frame cells. The companion Bhabha article states the correspondence from the other side.
 
 ### What the framework supplies and what it does not
 
-The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the Dirac-matrix dictionary of the parent article — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
+The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the cell dictionary of the parent article — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
 
 ## Open Questions
 
-1. **The traces as algebra.** Can the four Clifford traces of the spin sum be written directly as biquaternion contractions, without passing through gamma matrices — and does the $\mathbb M_-$ restriction of the currents reproduce the standard results identically?
+1. **The traces as algebra.** Can the four Clifford traces of the spin sum be written directly as biquaternion contractions, without passing through four-by-four matrices — and does the $\mathbb M_-$ restriction of the currents reproduce the standard results identically?
 
 2. **The exchange sign from first principles.** The corpus obtains Pauli exclusion on the mode algebra. Is there a corresponding statement on the **classical** biquaternion field (a graded-commutativity of the field's components) from which the momentum-space minus sign follows without quantizing?
 
@@ -183,6 +183,8 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $G_{\mathrm F}$ | Fermi constant |
 | $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+| $c_\mu$ | Cells of the canonical frame; $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$ |
+| $D(p)=p_\mu c_\mu+m\,T_{e_t,e_t}$ | Cell of the momentum shell |
 
 ## Further Reading
 
@@ -193,3 +195,17 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 - P. L. Anthony *et al.*, "Precision measurement of the weak mixing angle in Møller scattering," *Physical Review Letters* **95** (2005) 081601, for the SLAC E158 measurement of the parity-violating asymmetry.
 - Ya. B. Zel'dovich, "Electron and positron scattering and the weak interaction" (1959), for the first discussion of the parity-violating asymmetry in Møller scattering.
 - The companion articles of this series: [Bhabha Scattering in Biquaternionic Form](bhabha-scattering-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), and [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone of matrices of rank at most one, and a general element is a sum of at most four, with $\ell(M)$ that rank.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

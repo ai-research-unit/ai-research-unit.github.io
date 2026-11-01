@@ -25,7 +25,7 @@ The root chooses the direction $z$. This is the price of the construction, and i
 
 The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
-**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant*; the frame is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, and the six subspaces as matrix conditions are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*.
+**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ e-basis Representation*; the frame is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, and the six subspaces as matrix conditions are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*.
 
 ## The Root and the Two Idempotents
 
@@ -194,10 +194,10 @@ $$
 L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*}),\qquad
 R^{P}(\tilde Q)^{\dagger}=R^{P}(\tilde Q^{*}).
 $$
-The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold because the four frame vectors are orthogonal and have the same norm,
+The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold for the Hermitian form $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ because the four frame vectors are orthogonal and have the same norm,
 $$
-\langle\tilde\Pi_+,\tilde\Pi_+\rangle=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle
-=\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle=\langle\tilde\Pi_-,\tilde\Pi_-\rangle=\tfrac12,
+\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle_*
+=\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,
 $$
 and all the cross products vanish. The frame is orthogonal with equal norms, so the adjoint in the frame is the conjugate transpose.
 
@@ -588,6 +588,7 @@ The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, a
 | $\mathsf P$ | the swap matrix, $\mathsf P(A\otimes B)\mathsf P=B\otimes A$ |
 | $C_L=\mathrm I_2\otimes\sigma_2$, $C_R=\sigma_2\otimes\mathrm I_2$ | the transpose dictionaries of the Peirce frame |
 | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
+| $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ | the Hermitian form on $\mathbb{B}$ |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
 | $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |
 
@@ -597,6 +598,6 @@ The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, a
 - [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations and the coordinate systems.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the canonical frame and the tensor displays of the two copies.
-- [$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant](m4c-e-basis-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same content in the coefficient basis and the sign stitch.
+- [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same content in the coefficient basis and the sign stitch.
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the six subspaces read in the coefficient basis.
 - [$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the same invariants in the matrix model.

@@ -4,7 +4,7 @@
 
 The algebra is read in matrices in two ways: the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries both. It assumes the base of *Algebra and Element Conventions* and the products of *Product and Form Conventions*.
 
-The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the gamma matrices are one basis of it, and the Clifford reading is its real-linear link to the even subalgebra.
+The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford structure closes the article: it is the algebra of the two-sided operators, the five frame cells are one basis of it, and the Clifford reading is its real-linear link to the even subalgebra.
 
 ## The Matrix Representations
 
@@ -219,23 +219,171 @@ The determinant is the square of the biquaternion norm and the trace is four tim
 
 **No entry is read without the frame.** Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in the canonical frame alone. The explicit matrices of the mathematics model articles are in the canonical frame unless an article names the coefficient basis; the Peirce change $C_{\Pi}$ carries the canonical display to the coefficient display, and the physics articles use the canonical frame. The copy and the element are what the frame does not change.
 
-### The Clifford Structure and the Gamma Matrices
+### The Clifford Structure and the Frame
 
 **The Clifford algebra is the two-sided operator algebra.** The sixteen cells $T_{\mu\nu}=L_\mu R_\nu$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
-The sixteen gamma products span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The full Clifford structure, odd part included, is a structure of the two-sided operators themselves. It is not an external tool, and the even part is not a limitation.
+The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The full Clifford structure, odd part included, is a structure of the two-sided operators themselves. It is not an external tool, and the even part is not a limitation.
 
-**The gamma set.** The five Dirac matrices are two-sided operators of the frame, built from the left and right multiplications of *Operator and Calculus Conventions*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
+**The five cells of the frame.** The five generators are two-sided operators of the frame, built from the left and right multiplications of *Operator and Calculus Conventions*, §*The Operators*: the left factor is a unit and the right factor a spatial unit,
 $$
-\boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
-\gamma_1=iL_xR_y=iT_{xy},\qquad
-\gamma_2=iL_yR_y=iT_{yy},\qquad
-\gamma_3=iL_zR_y=iT_{zy},\qquad
-\gamma_5=-iR_z=-iT_{tz}\;}
+\boxed{\;\mathsf C_0=iR_x=iT_{tx},\qquad
+\mathsf C_1=iL_xR_y=iT_{xy},\qquad
+\mathsf C_2=iL_yR_y=iT_{yy},\qquad
+\mathsf C_3=iL_zR_y=iT_{zy},\qquad
+\mathsf C_5=-iR_z=-iT_{tz}\;}
 $$
-In the canonical frame their matrices are
+In the canonical frame they are the monomial matrices listed in the appendix, with the Pauli evaluation. They satisfy
+$$
+\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\mathsf C_k)^2=-I_4,\qquad
+\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3,
+$$
+with $g=\operatorname{diag}(1,-1,-1,-1)$.
+
+**These are the generators of the $\mathbb{M}_-$ frame.** In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four generators that all square to $+I_4$ are
+$$
+\mathsf C_0(Q)=\mathsf C_0(x),\qquad \mathsf C_k(Q)=i\,\mathsf C_k(x),\quad k=1,2,3 .
+$$
+The printed matrices of the appendix are the ones of the $\mathbb{M}_-$ frame; the $\mathbb{B}$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.
+
+**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Frame Conventions*.
+
+- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.
+- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.
+
+The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $\mathsf C_\mu[\mathbb{B}]\partial/\partial Q_\mu$ or $i\mathsf C_\mu[\mathbb{M}_-]\partial/\partial x_\mu$; the mixed $\mathsf C_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither and is never written. A frame display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
+
+**The index is written low in both frames.** The notation is $\mathsf C_\mu$: the position is a label for the component, and the index is never raised or lowered, in either frame.
+
+**The sixteen products are the sixteen cells.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$:
+
+| grade | cells |
+|---|---|
+| $0$ | $T_{tt}$ |
+| $1$ | $T_{tx}$, $T_{xy}$, $T_{yy}$, $T_{zy}$ |
+| $2$ | $T_{xt}$, $T_{xz}$, $T_{yt}$, $T_{yz}$, $T_{zt}$, $T_{zz}$ |
+| $3$ | $T_{ty}$, $T_{xx}$, $T_{yx}$, $T_{zx}$ |
+| $4$ | $T_{tz}$ |
+
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The cells are labelled by the frame units, not by spacetime indices: $L_\mu R_\nu$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are in the appendix of *Matrix Representations : The Two-Sided Operators*. The frame is one frame among many: another orthogonal pair gives another five cells, the relations survive, and the cell labels do not.
+
+**A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\mathsf C_\mu S^{-1}$ with $S$ invertible. A change of frame is a change of basis, and the normal forms are those of *Matrix Representations : The Two-Sided Operators*, appendix. No statement of the corpus depends on the basis written.
+
+**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
+
+**The Clifford reading.** The eight real units of $\mathbb{B}$ read as even Clifford elements, and in cells the reading is
+$$
+e_t\mapsto T_{tt},\qquad
+\vec e_x\mapsto T_{xt},\qquad
+\vec e_y\mapsto T_{yt},\qquad
+\vec e_z\mapsto T_{zt},\qquad
+i\mapsto T_{tz}.
+$$
+The reading is $\mathbb{R}$-linear, its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$: $i\tilde Q$ reads as $T_{tz}$ times the image of $\tilde Q$, not as $i$ times that image. That is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the matrix literature. It is not a second representation of the complex algebra. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the reading carries no symbol of its own.
+
+**The basis, read in cells.** On the eight real units the reading is
+
+| $\tilde Q$ | cell |
+|---|---|
+| $e_t$ | $T_{tt}$ |
+| $\vec e_x$ | $T_{xt}$ |
+| $\vec e_y$ | $T_{yt}$ |
+| $\vec e_z$ | $T_{zt}$ |
+| $i$ | $T_{tz}$ |
+| $i\vec e_x$ | $T_{xz}$ |
+| $i\vec e_y$ | $T_{yz}$ |
+| $i\vec e_z$ | $T_{zz}$ |
+
+The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the reading sits on $i$ itself, $i\mapsto T_{tz}=-i\,\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
+
+**The odd part.** The reading lands in the even part. Multiplication by the fixed generator $\mathsf C_0$ reaches the odd part, and the two real sectors separate: $\mathsf C_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\mathsf C_0$ times the image of $\mathbb{M}_-$ the trivector space. So a four-vector is $\mathsf C_0$ times the image of $w\in\mathbb{M}_+$, and a trivector is $\mathsf C_0$ times the image of $w\in\mathbb{M}_-$. The generator $\mathsf C_0$ is the one choice in the odd half of the reading, and it is fixed by the representation.
+
+**Lorentz generators.** For $\mu\neq\nu$ the commutator is $\mathsf C_\mu\mathsf C_\nu-\mathsf C_\nu\mathsf C_\mu=2\mathsf C_\mu\mathsf C_\nu$, so
+
+$$
+\sigma_{\mu\nu}=\tfrac14[\mathsf C_\mu,\mathsf C_\nu]=\tfrac12\mathsf C_\mu\mathsf C_\nu
+$$
+
+is half a bivector. Read in cells and in biquaternions,
+
+| generator | cell | biquaternion |
+|---|---|---|
+| $\sigma_{23}$ | $\tfrac12T_{xt}$ | $\tfrac12\vec e_x$ |
+| $\sigma_{31}$ | $\tfrac12T_{yt}$ | $\tfrac12\vec e_y$ |
+| $\sigma_{12}$ | $\tfrac12T_{zt}$ | $\tfrac12\vec e_z$ |
+| $\sigma_{01}$ | $\tfrac12T_{xz}$ | $\tfrac12 i\vec e_x$ |
+| $\sigma_{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
+| $\sigma_{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
+
+The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\mathsf C_\mu\mathsf C_\nu$ is the bivector and the Lorentz generator is half of it.
+
+**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\mathsf C_{\mu_1}\cdots\mathsf C_{\mu_k})=\mathsf C_{\mu_k}\cdots\mathsf C_{\mu_1}$, is quaternion conjugation under the reading: reversing the image of $\tilde Q$ gives the image of $\tilde Q^{\natural}$, checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal: the image of $\tilde Q\tilde Q^{\natural}$ is the product of the image of $\tilde Q$ with its reversal.
+
+Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}_2$, and it equals twice the scalar part. The $4\times4$ trace of the image is twice the real part of that trace,
+
+$$
+2\,\mathrm{Re}\operatorname{Tr}_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
+$$
+
+The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
+
+**The slash is not used.** The Dirac slash is not part of the notation of this corpus.
+A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
+A derivative contraction is written in one frame and never across two: $i\mathsf C_\mu\partial/\partial x_\mu$ with the generators of the $\mathbb{M}_-$ frame,
+or $\mathsf C_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\mathsf C_0(Q)=\mathsf C_0$, $\mathsf C_k(Q)=i\mathsf C_k$.
+The mixed form $i\mathsf C_\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
+No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
+and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
+A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first.
+An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$.
+In the canonical frame the momentum contraction is a cell sum,
+$$
+\mathsf C_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+$$
+so the frame is visible in the formula.
+
+## Summary
+
+The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, and the three vector units to $-i$ times the Pauli matrices, with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace is twice the scalar part, the determinant is the biquaternion norm, and conjugating entries on their own is not an involution of the algebra. A bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
+
+The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_\mu$ and the four right matrices $R_\nu$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, the five frame cells are two-sided operators of that frame, and their sixteen products are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$, written out entry by entry and tabulated by grade. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
+
+The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are the cells $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$, $\mathsf C_5=-iT_{tz}$, and a change of frame is a change of basis. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen frame. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $e_\mu\mapsto T_{\mu t}$ and $i\mapsto T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\mathsf C_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\mathsf C_0$ times the image of $\mathbb{M}_-$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\mathsf C_\mu\mathsf C_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
+| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
+| $\rho_L,\rho_R$ | Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
+| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
+| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
+| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
+| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
+| $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $\mathsf C_0,\dots,\mathsf C_3,\mathsf C_5$ | The five frame cells, $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$, $\mathsf C_5=-iT_{tz}$ |
+| $\sigma_{\mu\nu}=\tfrac12\mathsf C_\mu\mathsf C_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
+
+## Further Reading
+
+- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the algebra and the element glyphs.
+- [Conventions of the Products and the Forms](conventions-of-the-products-and-the-forms.html), for the products the matrix product mirrors.
+- [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the left and right multiplications these matrices represent.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
+- [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html), for the change of frame between the coefficient basis and the canonical frame.
+- [Matrix Representations : The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
+
+## Appendix — The Gamma Formulation
+
+The gammas are the five frame cells of the body written as matrices; the body writes the cells.
+
+**The five gammas.** In the canonical frame their matrices are
 $$
 \gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
@@ -245,31 +393,15 @@ $$
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
-
-**These are the generators of the $\mathbb{M}_-$ frame.** In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four generators that all square to $+I_4$ are
-$$
-\gamma_0(Q)=\gamma_0(x),\qquad \gamma_k(Q)=i\,\gamma_k(x),\quad k=1,2,3 .
-$$
-The printed matrices above are the ones of the $\mathbb{M}_-$ frame; the $\mathbb{B}$-frame matrices are obtained from them by multiplying the three spatial entries by $i$.
-
-**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Frame Conventions*.
-
-- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.
-- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.
-
-The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$ or $i\gamma_\mu[\mathbb{M}_-]\partial/\partial x_\mu$; the mixed $\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither and is never written. A gamma display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
-
-**The gamma index is written low in both frames.** The notation is $\gamma_\mu$: the position is a label for the component, and the gamma index is never raised or lowered, in either frame.
-
-In the Pauli form the same five are
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
+The $\mathbb{M}_-$ frame carries these matrices; the $\mathbb{B}$-frame generators are $\gamma_0(Q)=\gamma_0$ and $\gamma_k(Q)=i\gamma_k$, all squaring to $+I_4$.
 
-**The sixteen products are the sixteen cells.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$:
+**The sixteen products.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells:
 
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
@@ -290,13 +422,9 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$. The cells are labelled by the frame units, not by spacetime indices: $L_\mu R_\nu$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are §*The Gamma Set, and the Choice Behind It* of *Matrix Representations : The Two-Sided Operators*. The gamma set is one set among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.
+Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
 
-**A gamma matrix is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\gamma_\mu S^{-1}$ with $S$ invertible. A change of gamma basis is a change of basis, and the normal forms are those of *Matrix Representations : The Two-Sided Operators*, §*The Gamma Set, and the Choice Behind It*. No statement of the corpus depends on the basis written.
-
-**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by the gamma matrices. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen $\gamma_0$. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The gamma algebra is recovered from these data; the data are not recovered from the gamma algebra.
-
-**The Clifford reading.** The eight real units of $\mathbb{B}$ read as gamma products:
+**The Clifford reading in gammas.**
 $$
 e_t\mapsto I_4,\qquad
 \vec e_x\mapsto\gamma_2\gamma_3,\qquad
@@ -304,99 +432,14 @@ e_t\mapsto I_4,\qquad
 \vec e_z\mapsto\gamma_1\gamma_2,\qquad
 i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
-The reading is $\mathbb{R}$-linear, and in the canonical frame it is read entirely in cells, $e_\mu\mapsto T_{\mu t}$ and $i\mapsto T_{tz}$, so its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$. It agrees with left multiplication on the four real units and sends the scalar imaginary to right multiplication by $\vec e_z$: $i\tilde Q$ reads as $T_{tz}$ times the image of $\tilde Q$, not as $i$ times that image. That is the one place where it differs from $\mathsf{M}_4^{L}$: it is $\mathbb{R}$-linear, not $\mathbb{C}$-linear. It is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, written for a reader of the gamma literature. It is not a second representation of the complex algebra, and no gamma relation is a reason to change a convention. A bare $\mathsf{M}_4$ is written for neither; the regular matrices carry $L$ or $R$, and the reading carries no symbol of its own.
+The only minus sits on $i$ itself, and it fixes the sign of the last four rows of the cell table. Multiplication by the fixed generator $\gamma_0$ reaches the odd part: $\gamma_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\gamma_0$ times the image of $\mathbb{M}_-$ the trivector space.
 
-**The basis, read in cells.** On the eight real units the reading is
-
-| $\tilde Q$ | Clifford image | cell |
-|---|---|---|
-| $e_t$ | $I_4$ | $T_{tt}$ |
-| $\vec e_x$ | $\gamma_2\gamma_3$ | $T_{xt}$ |
-| $\vec e_y$ | $\gamma_3\gamma_1$ | $T_{yt}$ |
-| $\vec e_z$ | $\gamma_1\gamma_2$ | $T_{zt}$ |
-| $i$ | $-\omega$ | $T_{tz}$ |
-| $i\vec e_x$ | $\gamma_0\gamma_1$ | $T_{xz}$ |
-| $i\vec e_y$ | $\gamma_0\gamma_2$ | $T_{yz}$ |
-| $i\vec e_z$ | $\gamma_0\gamma_3$ | $T_{zz}$ |
-
-The three quaternion units become the three spacelike bivectors and the three imaginary units the three timelike bivectors, all with positive coefficients. The only minus in the reading sits on $i$ itself, $i\mapsto-\omega$, and it is the freedom the correspondence carries: the sign of the pseudoscalar is a convention, and it fixes the sign of every entry in the last four rows.
-
-**The odd part.** The reading lands in the even part. Multiplication by the fixed generator $\gamma_0$ reaches the odd part, and the two real sectors separate: $\gamma_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\gamma_0$ times the image of $\mathbb{M}_-$ the trivector space. So a four-vector is $\gamma_0$ times the image of $w\in\mathbb{M}_+$, and a trivector is $\gamma_0$ times the image of $w\in\mathbb{M}_-$. The frame $\gamma_0$ is the one choice in the odd half of the reading, and it is fixed by the representation.
-
-**Lorentz generators.** For $\mu\neq\nu$ the commutator is $\gamma_\mu\gamma_\nu-\gamma_\nu\gamma_\mu=2\gamma_\mu\gamma_\nu$, so
-
+**Lorentz generators and reversal.**
 $$
-\sigma_{\mu\nu}=\tfrac14[\gamma_\mu,\gamma_\nu]=\tfrac12\gamma_\mu\gamma_\nu
+\sigma_{\mu\nu}=\tfrac14[\gamma_\mu,\gamma_\nu]=\tfrac12\gamma_\mu\gamma_\nu\quad(\mu\neq\nu),
 $$
+and Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading.
 
-is half a bivector. Read in cells and in biquaternions,
+**The contractions.** In gamma notation a momentum contraction is $\gamma_\mu p_\mu=i(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$, a derivative contraction is $i\gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu(Q)\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
 
-| generator | cell | biquaternion |
-|---|---|---|
-| $\sigma_{23}$ | $\tfrac12T_{xt}$ | $\tfrac12\vec e_x$ |
-| $\sigma_{31}$ | $\tfrac12T_{yt}$ | $\tfrac12\vec e_y$ |
-| $\sigma_{12}$ | $\tfrac12T_{zt}$ | $\tfrac12\vec e_z$ |
-| $\sigma_{01}$ | $\tfrac12T_{xz}$ | $\tfrac12 i\vec e_x$ |
-| $\sigma_{02}$ | $\tfrac12T_{yz}$ | $\tfrac12 i\vec e_y$ |
-| $\sigma_{03}$ | $\tfrac12T_{zz}$ | $\tfrac12 i\vec e_z$ |
-
-The spacelike generators are the half quaternion units and the boosts the half imaginary units, again with positive signs. The half is not removable: $\gamma_\mu\gamma_\nu$ is the bivector and the Lorentz generator is half of it.
-
-**Reversal, conjugation and the two traces.** Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading: reversing the image of $\tilde Q$ gives the image of $\tilde Q^{\natural}$, checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal: the image of $\tilde Q\tilde Q^{\natural}$ is the product of the image of $\tilde Q$ with its reversal.
-
-Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}_2$, and it equals twice the scalar part. The $4\times4$ trace of the image is twice the real part of that trace,
-
-$$
-2\,\mathrm{Re}\operatorname{Tr}_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
-$$
-
-The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula above. Both were checked on a general element with complex coefficients.
-
-**The slash is not used.** The Dirac slash is not part of the notation of this corpus.
-A contraction is written out with the index repeated in the same position, $\gamma_\mu p_\mu$ for a momentum.
-A derivative contraction is written in one frame and never across two: $i\gamma_\mu\partial/\partial x_\mu$ with the generators of the $\mathbb{M}_-$ frame,
-or $\gamma_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\gamma_0(Q)=\gamma_0$, $\gamma_k(Q)=i\gamma_k$.
-The mixed form $i\gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame and is not used.
-No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
-and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
-A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first.
-An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$.
-In the canonical frame the momentum contraction is a cell sum,
-$$
-\gamma_\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
-$$
-so the frame is visible in the formula.
-
-## Summary
-
-The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, and the three vector units to $-i$ times the Pauli matrices, with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace is twice the scalar part, the determinant is the biquaternion norm, and conjugating entries on their own is not an involution of the algebra. A bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
-
-The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_\mu$ and the four right matrices $R_\nu$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $T_{\mu\nu}=L_\mu R_\nu$, written out entry by entry and tabulated against the gamma products. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
-
-The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are cells of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$, and a change of gamma basis is a change of basis. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen gamma basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $e_\mu\mapsto T_{\mu t}$ and $i\mapsto T_{tz}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\gamma_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\gamma_0$ times the image of $\mathbb{M}_-$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
-| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
-| $\rho_L,\rho_R$ | Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
-| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
-| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
-| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
-| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
-| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
-| $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $\gamma_0,\dots,\gamma_3,\gamma_5$ | The five Dirac generators of the canonical frame, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
-| $\sigma_{\mu\nu}=\tfrac12\gamma_\mu\gamma_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
-
-## Further Reading
-
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the algebra and the element glyphs.
-- [Conventions of the Products and the Forms](conventions-of-the-products-and-the-forms.html), for the products the matrix product mirrors.
-- [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the left and right multiplications these matrices represent.
-- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
-- [Matrix Representations : The Product, the Trace and the Determinant](../articles_maths/matrix-representations-the-product-the-trace-and-the-determinant.html), for the change of frame between the coefficient basis and the canonical frame.
-- [Matrix Representations : The Two-Sided Operators](../articles_maths/matrix-representations-the-two-sided-operators.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
+Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

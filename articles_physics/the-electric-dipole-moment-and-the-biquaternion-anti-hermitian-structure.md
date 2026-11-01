@@ -31,7 +31,7 @@ with $\gamma_5=i\omega$, $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$, and $\sigma_
 The framework results used here are those of the companion articles:
 
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the Dirac module and the bilinears built on it.
-- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Gamma Matrices*, for the identification of the Clifford generators with the biquaternion basis.
+- Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the identification of the Clifford generators with the biquaternion basis.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the mass-term conventions and the real structure $\flat$.
 - Companion article *The Proton in Biquaternionic Form*, for the composite EDM and the framework's silence on its value.
 - Companion article *The Neutron in Biquaternionic Form*, for the composite EDM and the framework's silence on its value.

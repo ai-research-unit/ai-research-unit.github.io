@@ -66,10 +66,10 @@ where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real an
 The third ingredient is the interpretation of the mass. In the vector representation the mass term is
 
 $$
-\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N_\nu - B_\nu B_\nu\bigr) = \bar\Psi\, \sum_\mu K_\mu\gamma_\mu\Psi\;}
+\boxed{\;m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N_\nu - B_\nu B_\nu\bigr) = \bar\Psi\Bigl(i\,K_t\,e_t\,\Psi\,e_x + i\sum_{k=1}^{3}K_k\,e_k\,\Psi\,e_y\Bigr)\;}
 $$
 
-for a unit complex vector $K_\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
+for a unit complex vector $K_\mu$ built from the field, with $e_t^2=1$ and $e_k^2=-1$ the biquaternion units. Each term is one pair of multipliers: the time part acts on the left, and the three spatial terms act on the right and share the right multiplier. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
 
 ## What the Equivalence Is and Is Not
 
@@ -124,3 +124,17 @@ The mechanism is the standard first-order duality. The ingredients are three: th
 - E. Cremmer and J. Scherk, "Spontaneous dynamical breaking of gauge symmetry in dual models," *Nuclear Physics B* **72** (1974) 117–134, for the four-dimensional analogue, the $\varepsilon FF$-type mass of an antisymmetric tensor.
 - M. Kalb and P. Ramond, "Classical direct interstring action," *Physical Review D* **9** (1974) 2273–2284, for the antisymmetric-tensor (B-field) formulation of the same mass, and for the dual equivalence of the massive vector and the antisymmetric tensor.
 - The companion corpus articles: [The s-Vector Representation of the Dirac Spinor in Biquaternionic Form](the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html), [Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form](triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html), [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), [Anyons and Braid Statistics in Biquaternionic Form](anyons-and-braid-statistics-in-biquaternionic-form.html), and [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
