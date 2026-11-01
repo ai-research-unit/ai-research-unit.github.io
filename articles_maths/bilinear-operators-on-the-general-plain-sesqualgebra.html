@@ -103,7 +103,7 @@ $$</p>
 <p><em>Proof.</em> $\mathrm{Tr}(\mathsf{M}_2(e_t)^{\dagger}\mathsf{M}_2(e_t))=\mathrm{Tr}(I)=2$ and $\mathrm{Tr}(\mathsf{M}_2(\vec e_j)^{\dagger}\mathsf{M}_2(\vec e_k))=\mathrm{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$, so the corrected trace pairing is the standard pairing on the orthogonal basis $\{I,\sigma_1,\sigma_2,\sigma_3\}$; the coefficients follow.</p>
 <p><strong>Remark (completeness as the double centraliser).</strong> The Fierz identity and the double centraliser theorem are two readings of one fact. On the spinor module the action is onto, $L(\mathbb{B})=\mathrm{End}_{\mathbb{C}}(S)$, which is the statement that $\mathbb{B}$ is its own bicommutant there; on the regular module $\mathbb{B}$ the left multiplications have the right multiplications as commutant, as <em>One-Sided Operators on the General Plain Sesqualgebra</em> records. The endomorphisms of $\mathbb{B}$ used in the two-sided operators are the module-level operators of this article with the parameter running over the algebra.</p>
 <h2 id="the-covariants-by-grade">The Covariants by Grade</h2>
-<p><strong>Theorem (the dagger classification).</strong> The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $i\vec e_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_t$ is the identity and the three $\vec e_k$ are, up to sign, the bivectors of that structure, $\vec e_z=-\gamma_1\gamma_2$ with $\gamma_k=i\vec e_k$, so</p>
+<p><strong>Theorem (the dagger classification).</strong> The dagger of $\mathbb{B}$ is the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ whose vectors are the $i\vec e_k$; a blade of degree $d$ in that structure satisfies $e_A^{\dagger}=(-1)^{d(d-1)/2}e_A$. In the biquaternion algebra $e_t$ is the identity and the three $\vec e_k$ are, up to sign, the bivectors of that structure, $\vec e_z=-(i\vec e_x)(i\vec e_y)$, so</p>
 <p>$$
 \boxed{\; e_t^{\dagger}=e_t,\qquad \vec e_k^{\dagger}=-\vec e_k ,\qquad \text{the covariant } \mathfrak{b}_{\mu} \text{ is Hermitian} \iff \mu=t \;}.
 $$</p>
@@ -111,7 +111,7 @@ $$</p>
 <p>$$
 \mathfrak{b}_0(s,t)=s^{\dagger}t \ \text{(the module form)},\qquad \mathfrak{b}_k(s,t)=-i\,s^{\dagger}\sigma_k t .
 $$</p>
-<p><em>Proof.</em> Reversion reverses the order of a product, so it acts on a degree-$d$ blade by $(-1)^{d(d-1)/2}$: the identity (degree $0$) and the bivectors are fixed and negated respectively. On the basis $e_t=1$ and $\vec e_k=-\gamma_j\gamma_i$ with $\gamma_k=i\vec e_k$ of square $+1$, reversion fixes the $\gamma$'s and negates the bivectors, so $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$. The covariant inherits the type from the blade, $\mathfrak{b}_{\mu}^{*}=\mathfrak{b}_{\bar{\mu}}$, by the corollary of the completeness theorem.</p>
+<p><em>Proof.</em> Reversion reverses the order of a product, so it acts on a degree-$d$ blade by $(-1)^{d(d-1)/2}$: the identity (degree $0$) and the bivectors are fixed and negated respectively. On the basis $e_t=1$ and $\vec e_k=-(i\vec e_j)(i\vec e_i)$, with the vectors $i\vec e_k$ of square $+1$, reversion fixes those vectors and negates the bivectors, so $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$. The covariant inherits the type from the blade, $\mathfrak{b}_{\mu}^{*}=\mathfrak{b}_{\bar{\mu}}$, by the corollary of the completeness theorem.</p>
 <p><strong>Remark (the grade rule and its stability).</strong> The general theory states the classification by the grade of the blade, Hermitian for $|A|\equiv0,3$ and skew-Hermitian for $|A|\equiv1,2\pmod 4$. The biquaternion algebra carries two Clifford structures and the rule is stable across them: in the structure $\mathbb{B}\cong\mathrm{Cl}(\mathbb{C}^2)$ of the generators $\vec e_x,\vec e_y$ with $\vec e_z=\vec e_x \vec e_y$ the degrees are $0,1,1,2$, while in $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the three $\vec e_k$ are all bivectors of degree $2$; in both, $e_t$ is Hermitian and the three $\vec e_k$ are skew-Hermitian, and the three degrees $1,1,2$ and $2,2,2$ all satisfy $|A|\not\equiv0,3$. The classification is therefore a property of the blade and the dagger, not of the chosen Clifford presentation.</p>
 <p><strong>Theorem (the Hermitian forms are the Hermitian sector).</strong> The space of Hermitian forms on the spinor module is the real four-dimensional space</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 <p>with the covariant coefficients of a Hermitian form real in the scalar slot and <strong>purely imaginary</strong> in the three skew slots; under the matrix model the Hermitian forms are the Hermitian matrices, and the interval form and the cone of $\mathbb{M}_+$ are those of <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
 <p><em>Proof.</em> A Hermitian matrix has the expansion $a_0I+a_k\sigma_k$ with $a_0\in\mathbb{R}$ and $a_k\in\mathbb{R}$; in the blade basis $\sigma_k=i\mathsf{M}_2(\vec e_k)$ this reads $a_0\mathsf{M}_2(e_t)+i\sum_k a_k\mathsf{M}_2(\vec e_k)$, so the coefficients of $\mathfrak{b}_0$ are real and those of $\mathfrak{b}_k$ purely imaginary. Conversely a form with real scalar coefficient and imaginary skew coefficients is a real combination of $\mathfrak{b}_0$ and the $ib_k$, hence Hermitian.</p>
 <p><strong>Remark (the $1+3$ splitting).</strong> The splitting of the Hermitian forms into the scalar covariant and the three skew covariants is the splitting $\mathbb{M}_+=\mathbb{R}e_t\oplus i\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ of the Hermitian sector into its centre and its vector part. It is the covariant form of the decomposition $H_2(\mathbb{C})=\mathbb{R}\cdot\mathrm{id}\oplus\mathfrak{su}(2)$ used throughout the series for the Hermitian sector, and the positivity of the form — the cone — is the condition on the pair, not on either summand: the Hermitian form $a_0\mathfrak{b}_0+\sum_k a_k\,ib_k$ is <strong>positive semidefinite</strong> exactly when $a_0\ge\sqrt{\sum_k a_k^2}$.</p>
-<h2 id="invariance-under-the-math142-unitary-slice">Invariance Under the $*$-Unitary Slice</h2>
+<h2 id="invariance-under-the-math140-unitary-slice">Invariance Under the $*$-Unitary Slice</h2>
 <p><strong>Theorem (the slice permutes the covariants).</strong> For $\tilde Q_2$ in the $*$-unitary slice $U=\mathrm{U}(2)$ and every $\mu$,</p>
 <p>$$
 \mathfrak{b}_{\mu}(\tilde Q_2\cdot s,\tilde Q_2\cdot t)=\mathfrak{b}_{\,\tilde{Q}_2^{*}e_{\mu}\tilde Q_2}(s,t),
@@ -203,6 +203,13 @@ $$</p>
 <li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a full matrix algebra on its simple module.</li>
 <li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the spinor module, the invariant forms and the role of the Clifford action on the endomorphisms.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.</p>
+<p>$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$</p>
+<p>The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.</p>
       </div>
     </main>
   </div>

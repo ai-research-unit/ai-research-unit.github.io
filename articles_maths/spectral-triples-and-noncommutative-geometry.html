@@ -78,7 +78,7 @@
 <li>the commutators $[D,\pi(a)]$ extend to bounded operators on $H$ for all $a\in A$, and</li>
 <li>$D$ has compact resolvent, $(D-i)^{-1}$ compact.</li>
 </ol>
-<p>The triple is <strong>even</strong> if there is a $\mathbb{Z}/2$-grading $\gamma$ on $H$, $\gamma=\gamma_{}^{*}$, $\gamma_{2}=1$, with $\gamma D=-D\gamma$ and $\gamma\pi(a)=\pi(a)\gamma$ for all $a\in A$; and <strong>odd</strong> otherwise.</p>
+<p>The triple is <strong>even</strong> if there is a $\mathbb{Z}/2$-grading on $H$, that is, a self-adjoint involution $\Gamma$ with $\Gamma^{2}=1$, $\Gamma D=-D\Gamma$ and $\Gamma\pi(a)=\pi(a)\Gamma$ for all $a\in A$; and <strong>odd</strong> otherwise.</p>
 <p><strong>Definition.</strong> The <strong>dimension</strong> of a spectral triple is the number $p>0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(\exp(-tD^{2}))\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following <strong>axioms</strong>: <em>regularity</em>, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; <em>finiteness</em>, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; <em>reality</em>, the existence of a real structure (below); <em>first order</em>, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and <em>orientation</em>, that the Hochschild cycle representing the volume element maps to the chirality operator.</p>
 <p><strong>Remark.</strong> The axioms are the algebraic shadow of the properties of a first-order elliptic operator on a closed spin manifold. The boundedness of the commutators is the statement that $D$ is a first-order differential operator; the compactness of the resolvent is the statement that the manifold is closed, so that the spectrum of $D$ is discrete; the dimension is the growth rate of the spectrum; and the finiteness axiom makes the smooth domain a projective module, so that it can serve as the module of sections of a bundle.</p>
 <h2 id="the-operator-as-metric-datum">The Operator as Metric Datum</h2>
@@ -100,9 +100,9 @@ $$</p>
 <p>The supremum is at most the geodesic distance, since $|f(x)-f(y)|\leq\|\nabla f\|_\infty\cdot(\text{length of a shortest geodesic})$. It is at least the geodesic distance: the function $f(z)=\min\{\rho(x,z),\rho(x,y)\}$ is $1$-Lipschitz, vanishes at $x$ and equals $\rho(x,y)$ at $y$, and a mollification in local charts produces smooth functions agreeing with it at $x$ and at $y$ up to an arbitrarily small error and having no larger Lipschitz constant, so the constraint $\|\nabla f\|_{\infty}\leq1$ is met and the value $\rho(x,y)$ is approached. Hence equality.</p>
 <p><strong>Remark.</strong> The distance formula is the reason $D$ is called the metric datum: it is the operator, not a metric tensor, that encodes the geometry. The formula is manifestly algebraic — it uses only the representation and the commutators — so it makes sense for an arbitrary algebra, and it is the definition of the metric in the noncommutative case. In the finite example of the last section it computes the distance between the points of a two-point space, which is a noncommutative-geometric distance on a finite set.</p>
 <h2 id="the-real-structure-and-the-ko-dimension">The Real Structure and the KO-Dimension</h2>
-<p><strong>Definition.</strong> A <strong>real structure</strong> on an even spectral triple $(A,H,D,\gamma)$ is an antilinear isometry $J\colon H\to H$ with</p>
+<p><strong>Definition.</strong> A <strong>real structure</strong> on an even spectral triple $(A,H,D,\Gamma)$ is an antilinear isometry $J\colon H\to H$ with</p>
 <p>$$
-J^{2}=\varepsilon\,\mathrm{id}, \qquad JD=\varepsilon'\,DJ, \qquad J\gamma=\varepsilon''\,\gamma J, \qquad \varepsilon,\varepsilon',\varepsilon''\in\{\pm1\},
+J^{2}=\varepsilon\,\mathrm{id}, \qquad JD=\varepsilon'\,DJ, \qquad J\Gamma=\varepsilon''\,\Gamma J, \qquad \varepsilon,\varepsilon',\varepsilon''\in\{\pm1\},
 $$</p>
 <p>satisfying the <strong>order-zero</strong> and <strong>order-one</strong> conditions</p>
 <p>$$
@@ -115,7 +115,7 @@ $$</p>
 <th>$n\bmod8$</th>
 <th>$\varepsilon=J^{2}$</th>
 <th>$\varepsilon'$ in $JD=\varepsilon'DJ$</th>
-<th>$\varepsilon''$ in $J\gamma=\varepsilon''\gamma J$</th>
+<th>$\varepsilon''$ in $J\Gamma=\varepsilon''\Gamma J$</th>
 </tr>
 </thead>
 <tbody>
@@ -184,9 +184,9 @@ $$</p>
 <p><strong>Remark.</strong> The reconstruction theorem is the reason the axioms are chosen as they are: they are the minimal algebraic conditions that force the classical theory in the commutative case and remain meaningful in the noncommutative case. The condition of reality, in particular, is what makes the spin structure recoverable; without it the charge conjugation is unavailable and the orientation axioms fix only the oriented Riemannian geometry.</p>
 <h2 id="cyclic-cohomology-and-the-conneschern-character">Cyclic Cohomology and the Connes–Chern Character</h2>
 <p><strong>Definition.</strong> For a $*$-algebra $A$, the <strong>cyclic cohomology</strong> $HC^{\bullet}(A)$ is the cohomology of the complex of cyclic multilinear functionals: a cyclic $n$-cochain is a multilinear functional $\varphi\colon A^{n+1}\to\mathbb{C}$ satisfying the cyclicity $\varphi(a_0,\dots,a_n)=(-1)^{n}\varphi(a_n,a_0,\dots,a_{n-1})$, and the differential is the Hochschild coboundary restricted to cyclic cochains.</p>
-<p><strong>Definition.</strong> Let $(A,H,D)$ be an even spectral triple of finite dimension with grading $\gamma$. The <strong>Connes–Chern character</strong> is the cyclic cocycle</p>
+<p><strong>Definition.</strong> Let $(A,H,D)$ be an even spectral triple of finite dimension with chirality operator $\Gamma$. The <strong>Connes–Chern character</strong> is the cyclic cocycle</p>
 <p>$$
-\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}\bigl(\gamma\,a_0[D,a_1]\cdots[D,a_n]\,\exp(-D^{2})\bigr),
+\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}\bigl(\Gamma\,a_0[D,a_1]\cdots[D,a_n]\,\exp(-D^{2})\bigr),
 $$</p>
 <p>of even degree, a closed cyclic cocycle modulo coboundaries; the operator $\exp(-D^{2})$ regularises the trace, and the boundedness of the commutators makes each term trace-class.</p>
 <p><strong>Theorem (index pairing).</strong> Let $e\in M_N(A)$ be an idempotent representing a class $[e]\in K_0(A)$. Then the compression $eDe$ is a Fredholm operator on the range of $e$, the pairing of its index with the Connes–Chern character is</p>
@@ -194,7 +194,7 @@ $$</p>
 \boxed{\;\langle\operatorname{ch}(D),[e]\rangle=\operatorname{index}(eDe)\;},
 $$</p>
 <p>computed in the graded sense, and it depends only on the cyclic cohomology class of $\operatorname{ch}(D)$ and the $K$-theory class of $e$.</p>
-<p><strong>Proof sketch.</strong> The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,\exp(-(eDe)^{2})$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.</p>
+<p><strong>Proof sketch.</strong> The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\Gamma e\,\exp(-(eDe)^{2})$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.</p>
 <p><strong>Theorem (Connes–Moscovici local index formula).</strong> Let $(A,H,D)$ be a spectral triple with finite dimension spectrum. Then the Connes–Chern character is a sum of residues of zeta functions at the points of the dimension spectrum, each residue being a local expression in $D$ and the elements of $A$; in particular the character is computable from the small-time asymptotics of the heat kernel of $D$.</p>
 <p><strong>Proof sketch.</strong> This is the local index theorem of Connes–Moscovici. The zeta functions $\zeta(s)=\operatorname{Tr}(P|D|^{-s})$ have meromorphic continuations whose poles form the dimension spectrum; the coefficients of the heat kernel expansion are the residues, and assembling them into a cyclic cocycle gives the character.</p>
 <p><strong>Remark.</strong> The two theorems are the spectral analogues of the index theorem and its local form. The index pairing is the pairing of $K$-theory with cyclic cohomology that generalises the Chern character pairing of the manifold case, and the local index formula is the statement that the character is local, so that it can be computed from the asymptotics of $D$ rather than from global data. The reader will recognise in the local formula the spectral version of the heat-kernel proof of <em>The Atiyah–Singer Index Theorem and K-Theory</em>.</p>
@@ -223,16 +223,16 @@ d(\varphi_1,\varphi_2)=\sup\{|a-b|:m|a-b|\leq1\}=\frac{1}{m}.
 $$</p>
 <p>The two-point space is thus a metric space whose distance is the inverse of the off-diagonal entry of $D$, and the triple reconstructs a finite geometry from a matrix.</p>
 <p><strong>Example (matrix algebras).</strong> Let $A=M_n(\mathbb{C})$ act on $H=\mathbb{C}^n\oplus\mathbb{C}^n$ and let $D=\begin{pmatrix}0&M\\ M^{*}&0\end{pmatrix}$ for an invertible matrix $M$. The triple is even with grading $\operatorname{diag}(1,-1)$, the KO-dimension is determined by the signs of the reality structure if one is present, and the index pairing with the class of a projection $e\in M_n(\mathbb{C})$ computes the index of the compression of $D$.</p>
-<p><strong>Example (almost commutative geometry).</strong> Let $(A_M,H_M,D_M)$ be the commutative spectral triple of a closed spin manifold $M$ and let $(A_F,H_F,D_F)$ be a finite spectral triple. Then</p>
+<p><strong>Example (almost commutative geometry).</strong> Let $(A_M,H_M,D_M)$ be the commutative spectral triple of a closed spin manifold $M$, with $\Gamma_M$ its chirality operator, and let $(A_F,H_F,D_F)$ be a finite spectral triple. Then</p>
 <p>$$
-A=A_M\otimes A_F, \qquad H=H_M\otimes H_F, \qquad D=D_M\otimes1+\gamma_M\otimes D_F
+A=A_M\otimes A_F, \qquad H=H_M\otimes H_F, \qquad D=D_M\otimes1+\Gamma_M\otimes D_F
 $$</p>
 <p>is a spectral triple, the <strong>almost commutative</strong> geometry. Its dimension spectrum contains the dimension of $M$, and the fluctuations of the operator $D$ by the inner automorphisms of $A$, $D\mapsto D+\sum_ia_i[D,b_i]$, are the noncommutative generalisations of the passage from an operator to a twisted one, that is, of the connections of the classical geometry. The finite factor supplies the internal degrees of freedom, and the whole construction is an algebraic and purely mathematical generalisation of the spin geometry of $M$.</p>
 <p><strong>Remark.</strong> The finite examples show that the theory is non-vacuous in degree zero and that the metric information can be entirely discrete. They also exhibit the two roles of the operator: as the metric datum through the distance formula, and as the $K$-homology class through the index pairing. In the almost commutative case both roles are combined, and the operator is the sum of the geometric operator of $M$ and the internal operator of the finite factor.</p>
 <h2 id="summary">Summary</h2>
 <p>A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint operator of compact resolvent whose commutators with the algebra are bounded; it is even when a chirality grading is present, and it satisfies the axioms of dimension, regularity, finiteness, reality, first order and orientation. The operator is the metric datum: the Connes distance $d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$ recovers the geodesic distance in the commutative case, where the pure states are the points of a spin manifold and $[D,f]=c(df)$.</p>
-<p>A real structure is an antilinear $J$ with signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$ and $J\gamma=\varepsilon''\gamma J$, the order-zero and order-one conditions, and a KO-dimension that is periodic of period eight; for a spin manifold of dimension $m$ the KO-dimension is $m\bmod8$. By Connes' reconstruction theorem a commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, so the noncommutative theory generalises the classical one.</p>
-<p>The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}(\gamma a_0[D,a_1]\cdots[D,a_n]\exp(-D^{2}))$; its pairing with $K_0(A)$ is the index of the compressed operator $eDe$, and the Connes–Moscovici local index formula computes the character as a sum of residues at the points of the dimension spectrum. The spectral dimension is the growth exponent of the spectrum of $D$, the heat trace has the asymptotic expansion $\operatorname{Tr}(\exp(-tD^{2}))\sim\sum_ka_kt^{-(p-k)/2}$, and in the commutative case the leading coefficient is the volume. Finite-dimensional examples include the two-point space, where the distance is the inverse of the off-diagonal entry of $D$, and the almost commutative geometries $A_M\otimes A_F$, $D=D_M\otimes1+\gamma_M\otimes D_F$.</p>
+<p>A real structure is an antilinear $J$ with signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$ and $J\Gamma=\varepsilon''\Gamma J$, the order-zero and order-one conditions, and a KO-dimension that is periodic of period eight; for a spin manifold of dimension $m$ the KO-dimension is $m\bmod8$. By Connes' reconstruction theorem a commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, so the noncommutative theory generalises the classical one.</p>
+<p>The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}(\Gamma a_0[D,a_1]\cdots[D,a_n]\exp(-D^{2}))$; its pairing with $K_0(A)$ is the index of the compressed operator $eDe$, and the Connes–Moscovici local index formula computes the character as a sum of residues at the points of the dimension spectrum. The spectral dimension is the growth exponent of the spectrum of $D$, the heat trace has the asymptotic expansion $\operatorname{Tr}(\exp(-tD^{2}))\sim\sum_ka_kt^{-(p-k)/2}$, and in the commutative case the leading coefficient is the volume. Finite-dimensional examples include the two-point space, where the distance is the inverse of the off-diagonal entry of $D$, and the almost commutative geometries $A_M\otimes A_F$, $D=D_M\otimes1+\Gamma_M\otimes D_F$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -259,8 +259,8 @@ $$</p>
 <td>Compact-resolvent condition; closed geometry</td>
 </tr>
 <tr>
-<td>$\gamma$</td>
-<td>Chirality grading, $\gamma_{2}=1$, $\gamma D=-D\gamma$</td>
+<td>$\Gamma$</td>
+<td>Chirality operator, $\Gamma^{2}=1$, $\Gamma D=-D\Gamma$</td>
 </tr>
 <tr>
 <td>$d(\varphi,\psi)=\sup\{|\varphi(a)-\psi(a)|:\|[D,a]\|\leq1\}$</td>
@@ -276,7 +276,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\varepsilon,\varepsilon',\varepsilon''$</td>
-<td>Signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$, $J\gamma=\varepsilon''\gamma J$</td>
+<td>Signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$, $J\Gamma=\varepsilon''\Gamma J$</td>
 </tr>
 <tr>
 <td>$n\bmod8$</td>
@@ -315,7 +315,7 @@ $$</p>
 <td>Weyl law</td>
 </tr>
 <tr>
-<td>$A_M\otimes A_F$, $D=D_M\otimes1+\gamma_M\otimes D_F$</td>
+<td>$A_M\otimes A_F$, $D=D_M\otimes1+\Gamma_M\otimes D_F$</td>
 <td>Almost commutative geometry</td>
 </tr>
 </tbody>
@@ -329,6 +329,15 @@ $$</p>
 <li>Joseph C. Várilly, <em>An Introduction to Noncommutative Geometry</em> (European Mathematical Society, 2006), for a course-level treatment of spectral triples and their examples.</li>
 <li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the commutative case and the spinor geometry recovered by the axioms.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>

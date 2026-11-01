@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>and the two summands are orthogonal and $D$-invariant.</p>
 <p><strong>Proof.</strong> For a self-adjoint operator on a Hermitian space, $\overline{\operatorname{im}D} = (\ker D)^{\perp}$, because $s \perp \operatorname{im}D$ iff $(s, Dt) = 0$ for all $t$ iff $(Ds,t) = 0$ for all $t$ iff $Ds = 0$; in finite dimensions the orthogonal complement of the kernel is exactly the image, and both are invariant under $D$ because $D$ commutes with itself and preserves its kernel.</p>
-<p><strong>Corollary (the index is an obstruction of the kernel alone).</strong> If the module carries a chirality grading $\gamma$ with $\gamma_{2} = 1$, $\gamma_{}^{*} = \gamma$, and the operator is odd, $\gamma D = -D\gamma$, then $D$ interchanges the two chiral halves and the <strong>index</strong> $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.</p>
+<p><strong>Corollary (the index is an obstruction of the kernel alone).</strong> If the module carries a chirality operator $\Gamma$, with $\Gamma^{*} = \Gamma$ and $\Gamma^2 = 1$, and the operator is odd, $\Gamma D = -D\Gamma$, then $D$ interchanges the two chiral halves and the <strong>index</strong> $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\Gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.</p>
 <h2 id="the-finite-dimensional-model">The Finite-Dimensional Model</h2>
 <p><strong>Setting.</strong> Take $S = \mathrm{Cl}(V,\mathfrak{Q})$ with the regular form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$, and drop the derivative: the operator is the <strong>Dirac element</strong></p>
 <p>$$
@@ -160,8 +160,8 @@ $$</p>
 <td>Hodge splitting by the kernel</td>
 </tr>
 <tr>
-<td>$\gamma$, $\operatorname{ind}(D^{+})$</td>
-<td>Chirality grading and index</td>
+<td>$\Gamma$, $\operatorname{ind}(D^{+})$</td>
+<td>Chirality operator and index</td>
 </tr>
 <tr>
 <td>$D_{\mathrm{alg}} = \sum_jL_{e_j}$</td>
@@ -185,6 +185,15 @@ $$</p>
 <li>Richard S. Palais, <em>The Atiyah–Singer Index Theorem</em>, Lecture Notes in Mathematics 835 (Springer, 1995), for the index of the chiral part of a Dirac operator and its computation from the geometry.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Dirac element, its square and the explicit low-dimensional models.</li>
 </ul>
+<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>

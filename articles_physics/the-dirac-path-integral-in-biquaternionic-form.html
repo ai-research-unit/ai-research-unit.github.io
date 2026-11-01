@@ -78,7 +78,7 @@
 <p>The object the path integral must compute is the Feynman propagator for the spin-$\tfrac12$ field,</p>
 <p>$$
 S_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
-\frac{i\left(\mathsf C_{\mu} p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
+\frac{i\left(\mathsf C_\mu p_{\mu} + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
 \exp(-ip\cdot(x-x_2)),
 $$</p>
 <p>the matrix-valued Green's function of the pair, with $\mathbb{D}$ the pair operator of the conventions article, satisfying</p>
@@ -233,7 +233,7 @@ $$</p>
 <p>The worldline and the checkerboard are complementary descriptions of the same object, and the algebra shows why both work: a first-order operator can be realised as a sum over directed paths (the checkerboard, which builds in the chirality), or as a second-order path integral dressed by the Clifford-valued spin factor (the worldline, which builds in the square). The two agree because the odd variable and the mass term are the two faces of the same off-diagonal structure.</p>
 <h2 id="summary">Summary</h2>
 <p>The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(\mathbb{D} - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the <strong>proper-time</strong> way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (\mathbb{D} + mc/\hbar)\Delta_F$, the identity following from $\mathbb{D}^2=\Box$. In the <strong>spinning-worldline</strong> way, an odd Grassmann variable $\psi_\mu$ is added at each point with kinetic term $\frac{i}{2}\psi_\mu\,d\psi_{\mu}/d\tau$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 (g^{-1})_{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).</p>
-<p>In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\mathsf C_{\nu} p_{\nu} - \mu)(\mathsf C_{\rho} p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.</p>
+<p>In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part $\mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\mathsf C_\nu p_{\nu} - \mu)(\mathsf C_\rho p_{\rho} + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -280,7 +280,7 @@ $$</p>
 <td>Propagator equation</td>
 </tr>
 <tr>
-<td>$(\mathsf C_{\mu} p_{\mu} - mc/\hbar)(\mathsf C_{\nu} p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$</td>
+<td>$(\mathsf C_\mu p_{\mu} - mc/\hbar)(\mathsf C_\nu p_{\nu} + mc/\hbar) = p^2 - m^2c^2/\hbar^2$</td>
 <td>Dirac square (momentum space)</td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ $$</p>
 \gamma_0=iT_{e_t,\vec e_x},\quad \gamma_1=iT_{\vec e_x,\vec e_y},\quad \gamma_2=iT_{\vec e_y,\vec e_y},\quad \gamma_3=iT_{\vec e_z,\vec e_y},\quad \gamma_5=-iT_{e_t,\vec e_z} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>

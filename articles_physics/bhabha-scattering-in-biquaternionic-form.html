@@ -96,10 +96,10 @@ $$</p>
 <p>The two tree-level diagrams contribute</p>
 <p>$$
 \boxed{\;
-\mathcal M = -e^2\left(\bar v_k c_\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2} c_\mu w_p\right)
-\;+\; e^2\left(\bar v_k c_\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2} c_\nu v_{k_2}\right)\;},
+\mathcal M = -e^2\left(\bar v_k \mathsf C_\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2} \mathsf C_\mu w_p\right)
+\;+\; e^2\left(\bar v_k \mathsf C_\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2} \mathsf C_\nu v_{k_2}\right)\;},
 $$</p>
-<p>where the $c_\mu$ are the canonical frame's cells, $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$ for $k=1,2,3$. Here $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$, so each vertex is one two-sided multiplier and each spinor contraction is that cell between the two external states. The first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. <strong>The relative sign between the two diagrams is negative</strong>, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.</p>
+<p>where the $\mathsf C_\mu$ are the canonical frame's cells, $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ for $k=1,2,3$. Here $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$, so each vertex is one two-sided multiplier and each spinor contraction is that cell between the two external states. The first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. <strong>The relative sign between the two diagrams is negative</strong>, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.</p>
 <h2 id="the-cross-section">The Cross Section</h2>
 <p>Squaring the amplitude, averaging over the incoming spins and summing over the outgoing ones gives, at leading order and neglecting the electron mass, the spin-averaged differential cross section</p>
 <p>$$
@@ -200,8 +200,8 @@ $$</p>
 <td>Framework's material-sector current</td>
 </tr>
 <tr>
-<td>$c_\mu$</td>
-<td>Cells of the canonical frame; $c_0=iT_{e_t,e_x}$ and $c_k=iT_{e_k,e_y}$</td>
+<td>$\mathsf C_\mu$</td>
+<td>Cells of the canonical frame; $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$</td>
 </tr>
 <tr>
 <td>$\mathcal C$</td>
@@ -219,11 +219,12 @@ $$</p>
 </ul>
 <h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>

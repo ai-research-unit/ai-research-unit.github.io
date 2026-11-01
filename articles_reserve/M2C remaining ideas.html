@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ — Remaining Ideas — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-remaining-ideas"><strong>$M_2(\mathbb{C})$ — Remaining Ideas</strong></h1>
+<h2 id="what-this-note-is">What This Note Is</h2>
+<p><strong>The question.</strong> The 19 legacy <em>$M_2(\mathbb{C})$ Representation</em> articles are checked against the six live articles: <em>$M_4(\mathbb{C})$ e-basis Representation</em>, <em>$M_4(\mathbb{C})$ e-basis Representation : Operators</em>, <em>$M_4(\mathbb{C})$ Standard Peirce Representation</em>, <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, <em>$M_2(\mathbb{C})$ Standard Peirce Representation</em>, <em>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</em>. An item is listed only if none of the six states it.</p>
+<p><strong>The test.</strong> A bullet survives only if the six lack the statement, the display or the worked case. Where the six carry a neighbouring object that a reader might mistake for the item, the bullet says which object that is.</p>
+<p><strong>Status.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>no part of the legacy article is in the six</td>
+</tr>
+<tr>
+<td>partial</td>
+<td>a few results are in the six, the rest are not</td>
+</tr>
+<tr>
+<td>most</td>
+<td>only the extensions beyond the six are missing</td>
+</tr>
+<tr>
+<td>all</td>
+<td>nothing substantial remains</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Live elsewhere.</strong> Each legacy article has a live counterpart in <code>articles_maths/</code>, named in the table. A bullet marked <em>missing</em> is missing from the six, not from the corpus.</p>
+<h2 id="coverage">Coverage</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Legacy article</th>
+<th>In the six</th>
+<th>Live article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Product, the Trace and the Determinant</td>
+<td>most</td>
+<td><code>m2c-model-the-product-the-trace-and-the-determinant.md</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Six Subspaces as Matrix Conditions</td>
+<td>all</td>
+<td><code>m2c-model-the-six-subspaces-as-matrix-conditions.md</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Peirce Coordinates, Matrix Units and the Spinor Planes</td>
+<td>most</td>
+<td><code>m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.md</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Spectral Projectors</td>
+<td>none</td>
+<td><code>m2c-model-the-spectral-projectors.md</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Centraliser and the Double Centraliser</td>
+<td>none</td>
+<td><code>m2c-model-the-centraliser-and-the-double-centraliser.md</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Eigenbasis and the Diagonalising Matrix</td>
+<td>none</td>
+<td><code>m2c-model-the-eigenbasis-and-the-diagonalising-matrix.md</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Jordan Basis and the Jordanising Matrix</td>
+<td>none</td>
+<td><code>m2c-model-the-jordan-basis-and-the-jordanising-matrix.md</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Worked Examples</td>
+<td>partial</td>
+<td><code>m2c-representation-worked-examples.md</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>The Four Words and the Four Traces</td>
+<td>partial</td>
+<td><code>m2c-representation-the-four-words-and-the-four-traces.md</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Trace, Determinant and the Biquaternion Norm</td>
+<td>partial</td>
+<td><code>m2c-representation-trace-determinant-and-the-biquaternion-norm.md</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>The Polar Decomposition of a Matrix</td>
+<td>none</td>
+<td><code>m2c-representation-the-polar-decomposition-of-a-matrix.md</code></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Rank-One Matrices and the Determinantal Variety</td>
+<td>partial</td>
+<td><code>m2c-representation-rank-one-matrices-and-the-determinantal-variety.md</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Spin, Qubits and the Bloch Vector</td>
+<td>none</td>
+<td><code>m2c-representation-spin-qubits-and-the-bloch-vector.md</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td>The Conjugations and the Adjoints</td>
+<td>partial</td>
+<td><code>m2c-representation-the-conjugations-and-the-adjoints.md</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>$GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</td>
+<td>none</td>
+<td><code>m2c-representation-gl2-sl2-and-the-determinant.md</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td>The Projective Line and the Möbius Action</td>
+<td>partial</td>
+<td><code>m2c-representation-the-projective-line-and-the-mobius-action.md</code></td>
+</tr>
+<tr>
+<td>17</td>
+<td>The Killing Form</td>
+<td>none</td>
+<td><code>m2c-representation-the-killing-form.md</code></td>
+</tr>
+<tr>
+<td>18</td>
+<td>The Functional Calculus</td>
+<td>none</td>
+<td><code>m2c-representation-the-functional-calculus.md</code></td>
+</tr>
+<tr>
+<td>19</td>
+<td>The Hermitian Sandwich</td>
+<td>none</td>
+<td><code>the-sandwich-in-the-m2c-model.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Ten articles are absent from the six, six are partly there, two are reduced to one or two statements, and one is fully carried.</p>
+<h2 id="1-the-product-the-trace-and-the-determinant-most">1. The Product, the Trace and the Determinant (most)</h2>
+<p><strong>In the six.</strong> The model $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$; the product; the traces $2Q_t$ and $4Q_t$; the determinant as the norm $\langle\tilde Q\rangle_{\natural}$; multiplicativity; invariance under conjugation and transposition; the four basis matrices of determinant one, in $SL_2$; the characteristic polynomial $\lambda^2-2Q_t\lambda+\langle\tilde Q\rangle_{\natural}=(\lambda-Q_t)^2+B^2$; the eigenvalues $\lambda_\pm$; invertibility as $\langle\tilde Q\rangle_{\natural}\neq0$; the rank trichotomy; the compression $\det L=(\det A)^2$, $\operatorname{rank}L=2\operatorname{rank}A$; the trace of a product $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ and the trace pairing with Gram matrix $\mathrm E$; the statement that the trace is not the norm.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The adjugate $\operatorname{adj}A=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}=(\operatorname{tr}A)\mathrm I_2-A$, which is $\mathsf M_2(\tilde Q^{\natural})$, with $A\operatorname{adj}A=(\det A)\mathrm I_2$, the anti-automorphism $\operatorname{adj}(A_1A_2)=\operatorname{adj}A_2\operatorname{adj}A_1$, and $\operatorname{adj}(\operatorname{adj}A)=A$. The six never name the adjugate.</li>
+<li>The inverse as the adjugate over the determinant, $A^{-1}=\operatorname{adj}A/\det A=\mathsf M_2(\tilde Q^{\natural})/\langle\tilde Q\rangle_{\natural}$. The six give the inverse of a <em>pair</em>, not of an element.</li>
+</ul>
+<h2 id="2-the-six-subspaces-as-matrix-conditions-all">2. The Six Subspaces as Matrix Conditions (all)</h2>
+<p><strong>In the six.</strong> The six conditions on the matrix inside the image, the real dimensions $2,6,4,4,4,4$, the traces, the determinants of the entry matrix, the rule $\det M=(\det\mathsf M_2)^2$, the warning that the conditions hold only for matrices in the image, the three splits, the intersections and the closure. The table is also the strongest existing statement of the four involutions: each row is a fixed or anti-fixed space of $\natural$, $\overline{\,\cdot\,}$, $*$ or $\flat$.</p>
+<p><strong>Missing.</strong> Nothing. The only refinement left is the multiplication table of the four real forms read entry by entry; the six give the closure, not the table.</p>
+<h2 id="3-peirce-coordinates-matrix-units-and-the-spinor-planes-most">3. Peirce Coordinates, Matrix Units and the Spinor Planes (most)</h2>
+<p><strong>In the six.</strong> The two orders, the multiplication table, the matrix-unit table, the four coordinates by trace duality, the two ideal bases $S_\pm$ and $T_\pm$, the star $S_\pm^{*}=T_\pm$, the images of $\mathrm I_2$ and the three $\sigma_k$, the swap of the nilpotents, the compression of the corner matrix.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The reciprocal scaling $E_{12}\mapsto\mu E_{12}$, $E_{21}\mapsto\mu^{-1}E_{21}$, its identification with the torus $\{a\tilde\Pi_++b\tilde\Pi_-:a,b\in\mathbb{C}^{\times}\}$, and the statement that it is the only freedom of a system of matrix units once the idempotents are fixed.</li>
+<li>The theorem that every system of $2\times2$ matrix units is the image of the standard one under an inner automorphism, with the primitive idempotents as the only invariant.</li>
+</ul>
+<h2 id="4-the-spectral-projectors-none">4. The Spectral Projectors (none)</h2>
+<p><strong>In the six.</strong> The two standard idempotents, called the two projections belonging to the root, and the eigenvalues with their multiplicities. The projector of a general element is never formed.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The spectral direction $\vec\Xi=-i\vec Q/B$ and the projectors $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$, for a chosen square root $B$ of $B^2=Q_x^2+Q_y^2+Q_z^2$.</li>
+<li>The theorem $\rho_\pm^2=\rho_\pm$, $\operatorname{tr}\rho_\pm=1$, $\rho_+\rho_-=0$, $\rho_++\rho_-=\mathrm I_2$, $[\rho_\pm,A]=0$, and the spectral form $A=\lambda_+\rho_++\lambda_-\rho_-$.</li>
+<li>The explicit matrices, $\rho_+=\frac{1}{2B}\begin{pmatrix}B-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&B+Q_z\end{pmatrix}$ and $\rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}$.</li>
+<li>The signed projector $\rho_+-\rho_-=\mathsf M_2(\vec\Xi)$, and the Lagrange form $\rho_+=(A-\lambda_-\mathrm I_2)/(\lambda_+-\lambda_-)$.</li>
+<li>The residue formula $(z-A)^{-1}=\rho_+/(z-\lambda_+)+\rho_-/(z-\lambda_-)$ and the contour integral that returns the projectors, with the independence of the contour.</li>
+<li>The non-continuity at the scalar line: as $\vec Q\to0$ the projectors depend on the direction of approach.</li>
+<li>The statement that the standard pair is the case $\vec\Xi=\pm i\vec e_z$, and that every other direction gives a different pair.</li>
+</ul>
+<h2 id="5-the-centraliser-and-the-double-centraliser-none">5. The Centraliser and the Double Centraliser (none)</h2>
+<p><strong>In the six.</strong> The word <em>commutant</em> appears for the two regular copies: each one-sided copy is the centraliser of the other. The commutant of a single element is never formed.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The commutant $C(A)=\{X:XA=AX\}$, equal to $M_2(\mathbb{C})$ for a scalar and to the plane $\mathbb{C}[A]$ for a non-scalar, of complex dimension two.</li>
+<li>The three spectral types in the eigenbasis, with the value algebras $\mathbb{C}\times\mathbb{C}$ and the dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^2)$.</li>
+<li>The adjugate inside the commutant for every element, and the dagger inside it exactly on the normal locus.</li>
+<li>The double centraliser $C(C(A))=\mathbb{C}[A]$, and the chain that shows it does not enlarge the algebra.</li>
+<li>The minimal polynomial, its degree equal to $\dim\mathbb{C}[A]$, and its coincidence with the characteristic polynomial exactly off the scalar line.</li>
+<li>The eigenbasis ambiguity read as the diagonal group of complex dimension two acting on the two eigenvectors.</li>
+</ul>
+<h2 id="6-the-eigenbasis-and-the-diagonalising-matrix-none">6. The Eigenbasis and the Diagonalising Matrix (none)</h2>
+<p><strong>In the six.</strong> The eigenvalues with multiplicity, and the two Peirce orders. No eigenvector is named, and no matrix that displays one.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The eigenbasis $\mathcal{E}=(\rho_+,\rho_-)$ as a basis of the algebra, with the spectral matrix units $P_{ij}=\mathsf C_QE_{ij}\mathsf C_Q^{-1}$.</li>
+<li>The diagonalising matrix $\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix}$, the identity $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$, and $\det\mathsf C_Q=2B(B-Q_z)$.</li>
+<li>The second chart $\mathsf C_Q'$ with $\det\mathsf C_Q'=-2B(B+Q_z)$, and the proof that the two determinants cannot both vanish, so two charts cover the spectrally regular locus.</li>
+<li>The relabelling: $B\mapsto-B$ exchanges the eigenvalues, the columns and the diagonal entries; the pair is unordered and only the labelling is a choice.</li>
+<li>The coordinate model $\mathsf M_2^{Q}(\tilde X)=X_+\rho_++X_-\rho_-$, with the coordinates recovered by the trace pairings against $\rho_\pm$.</li>
+<li>The freedom: left multiplication by a scalar and right multiplication by $\operatorname{diag}(\mathbb{C}^{\times},\mathbb{C}^{\times})$, of complex dimension two after the scalar is removed.</li>
+<li>The normal case: $[\vec Q,\overline{\vec Q}]=0$, orthogonality of the two eigenvectors, and unitary diagonalisation up to $1/\sqrt{2B}$.</li>
+<li>The flags read from the eigenvalues, and the transitions $\mathsf C_Q^{-1}\mathsf C_{Q'}$ with their cocycle.</li>
+</ul>
+<h2 id="7-the-jordan-basis-and-the-jordanising-matrix-none">7. The Jordan Basis and the Jordanising Matrix (none)</h2>
+<p><strong>In the six.</strong> The nilpotent $\vec\Upsilon_-$ and the statement that it is square-zero. No Jordan basis, no Jordanising matrix, no defect.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The Jordan theorem at the entry size: for a non-scalar degenerate $\tilde Q$ there are unit vectors $u$ spanning the image of $\mathsf M_2(\vec Q)$ and $v$ orthogonal to it with $\mathsf M_2(\vec Q)v=su$, where $s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}$.</li>
+<li>The canonical Jordanising matrix $\mathsf S_Q=(u\ s^{-1}v)$ and the identities $\mathsf M_2(\vec\Upsilon_-)=suv^{\dagger}$, $\mathsf M_2(\vec\Upsilon_+)=s^{-1}vu^{\dagger}$, $\mathsf M_2(\tilde\Pi_\pm)=uu^{\dagger},vv^{\dagger}$, with $Q\mathsf S_Q=\mathsf S_QE_{12}$.</li>
+<li>The normal form $\mathsf S_Q^{-1}A\mathsf S_Q=J_2(Q_t)$, and the unitary form $\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$.</li>
+<li>The defect $\mathsf S_Q^{\dagger}\mathsf S_Q=\operatorname{diag}(1,s^{-2})$ and $\lvert\det\mathsf S_Q\rvert=1/s$; the modulus is invariant and the phase is not.</li>
+<li>The statement that no unitary change removes the superdiagonal, since a unitary diagonalisation would make the element normal and a normal element with one eigenvalue is scalar.</li>
+<li>The freedom: right multiplication by the upper triangular unipotent group; there is no second chart.</li>
+<li>The commutant in the Jordan frame, $\{a\mathrm I_2+bE_{12}\}$, whose only idempotents are $0$ and $\mathrm I_2$, and the defective locus as the null cone minus the scalars.</li>
+</ul>
+<h2 id="8-worked-examples-partial">8. Worked Examples (partial)</h2>
+<p><strong>In the six.</strong> Three worked cases in the operators article, of rank one, two and four for the rank formula, and the case $E_{11}$ in the $M_4$ articles, a rank-one projection of trace one and determinant zero.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The eight element types carried through the model: scalar, Jordan block, distinct eigenvalues, singular, rank one, $*$-unitary, Hermitian, normal, each with coefficients, trace, determinant, spectrum and minimal polynomial.</li>
+<li>The pattern table of diagonalisability, normality, Hermiticity and $*$-unitarity for the eight types, with the two converses that fail.</li>
+<li>The statement that a non-scalar Jordan block is never normal, and that the scalar is the only normal element among the degenerate types.</li>
+<li>The geometric reading of each type as a rotation, a boost, a null vector or a projector.</li>
+</ul>
+<h2 id="9-the-four-words-and-the-four-traces-partial">9. The Four Words and the Four Traces (partial)</h2>
+<p><strong>In the six.</strong> The plain form $\operatorname{Sc}(XY)$ with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$, the identities $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$ and $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$, and the six subspace conditions, which are the fixed spaces of $\natural$, $\overline{\,\cdot\,}$, $*$ and $\flat$.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The four words as bilinear pairings, $\operatorname{Sc}(XY)$, $\operatorname{Sc}(X^{\natural}Y)$, $\operatorname{Sc}(XY^{*})$, $\operatorname{Sc}(X^{\natural}Y^{*})$, and the four trace forms obtained from them, with the Gram matrix and the signature of each.</li>
+<li>The statement that only the Hermitian form is positive definite, and how the other three fail: the plain and the quaternionic forms are indefinite, the Krein form has signature $(2,6)$.</li>
+<li>The Klein relations among $\natural$, $\overline{\,\cdot\,}$ and $*$ and the definition $\flat=-*$; the six use the four symbols as conditions, never as a group of involutions.</li>
+<li>The four adjoints of a linear map at the entry size, and the statement that they are different objects from the four element-level words.</li>
+</ul>
+<h2 id="10-trace-determinant-and-the-biquaternion-norm-partial">10. Trace, Determinant and the Biquaternion Norm (partial)</h2>
+<p><strong>In the six.</strong> The trace, the determinant as the norm, multiplicativity, the characteristic polynomial, the realisation $\det M=(\det\mathsf M_2)^2$, and the Hilbert–Schmidt inner product used for the orthogonality of the sixteen products.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The four norms as matrix invariants: plain $Q_t^2-B^2$, quaternionic $\langle\tilde Q\rangle_{\natural}$, Hermitian $\tfrac12\operatorname{Tr}(A^{\dagger}A)$, Krein $\tfrac12\operatorname{Tr}(A^{\mathsf T}A^{\dagger})$, with the value ring and the definiteness of each.</li>
+<li>The identity $\operatorname{adj}A=\mathsf M_2(\tilde Q^{\natural})=A^{\mathsf T}$, which makes the Krein norm a pairing between the adjugate and the dagger.</li>
+<li>The signature $(2,6)$ of the Krein form on the real algebra, and the statement that it is the only one of the four positive on the centre and negative on the vector part.</li>
+<li>The Cayley–Hamilton identity $A^2-(\operatorname{tr}A)A+(\det A)\mathrm I_2=0$, and its consequence $\mathbb{C}[A]=\operatorname{span}\{\mathrm I_2,A\}$, which makes every polynomial in $A$ of degree at least two a linear combination of $\mathrm I_2$ and $A$. The six use only the null-cone case $A(A-2Q_t\mathrm I_2)=0$, inside the rank-two proof.</li>
+<li>The discriminant $-4B^2$ as the spectral criterion, and the inequality $\lvert\det A\rvert\le\tfrac12\operatorname{Tr}(A^{\dagger}A)$ with equality on the quaternionic unit sphere.</li>
+</ul>
+<h2 id="11-the-polar-decomposition-of-a-matrix-none">11. The Polar Decomposition of a Matrix (none)</h2>
+<p><strong>In the six.</strong> The word <em>polar</em> occurs once, for the polar form of the norm. The decomposition is absent.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The theorem $M=PV$ with $P$ positive semidefinite and $V$ a partial isometry, the uniqueness on the invertible locus, and $P=(MM^{\dagger})^{1/2}$, $V=P^{-1}M$.</li>
+<li>The closed form $P=(MM^{\dagger}+\lvert\det M\rvert\mathrm I_2)/\sqrt{\operatorname{tr}(MM^{\dagger})+2\lvert\det M\rvert}$, polynomial in the entries.</li>
+<li>The diffeomorphism $Herm^{>0}\times U(2)\to GL_2$, with $4+4=8$, and the reading of the factors as boost and rotor.</li>
+<li>The word $M=r\zeta M_bM_r$ with $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$, and the check $\det M=r^2\zeta^2$.</li>
+<li>The special linear case $SL_2=Herm^{>0}_1\cdot SU(2)$, the singular case with $V$ a partial isometry, and the singular values $s_{1,2}=re^{\pm\eta/2}$ with $s_1s_2=\lvert\det M\rvert$.</li>
+</ul>
+<h2 id="12-rank-one-matrices-and-the-determinantal-variety-partial">12. Rank-One Matrices and the Determinantal Variety (partial)</h2>
+<p><strong>In the six.</strong> The rank formula for a pair, the rank-one coefficient criterion, the length, the two one-sided boundaries, and the case $E_{11}$ as a rank-one projection with trace one and determinant zero. The six use <em>Segre</em> for a different object: the cone $\mathbb{P}^3\times\mathbb{P}^3$ of pure tensors in the operator space.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The factorisation $M=uv^{\mathsf T}$ of a nonzero rank-one matrix, its uniqueness up to the reciprocal scaling, and the four coefficients of the element in terms of $u$ and $v$.</li>
+<li>The two strata of the null cone: the pure stratum $v^{\mathsf T}u=0$, the nonzero nilpotents, of real dimension four, and the non-pure stratum of nonzero scaled idempotents, of real dimension six, the first as the boundary of the second.</li>
+<li>The rank-one idempotent $P=uv^{\mathsf T}/(v^{\mathsf T}u)$ with its image line and kernel line, as the projection onto one along the other.</li>
+<li>The determinantal variety as the zero set of the single quadratic $\det$, a complex cone of complex dimension three, and its projectivisation as the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with the two rulings given by image and kernel.</li>
+<li>The annihilators $\{X:XM=0\}=\{X:Xu=0\}$ and $\{X:MX=0\}=\{X:v^{\mathsf T}X=0\}$, and the two ideals they generate.</li>
+</ul>
+<h2 id="13-spin-qubits-and-the-bloch-vector-none">13. Spin, Qubits and the Bloch Vector (none)</h2>
+<p><strong>In the six.</strong> The Pauli matrices, in the display $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+\dots)$; the Hermitian subspace with its explicit matrix and indefinite quadratic determinant; the anti-Hermitian subspace. The state space is never formed.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The table $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, $\mathsf M_2(i\vec e_k)=\sigma_k$, with the reading of the third line as the Hermitian isomorphism $\mathbb{M}_+\to\operatorname{Herm}_2(\mathbb{C})$.</li>
+<li>The spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ and the commutator $[\tilde S_i,\tilde S_j]=i\hbar\varepsilon_{ijk}\tilde S_k$.</li>
+<li>The pure states $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$, the spinor $(\cos\tfrac\theta2,e^{i\varphi}\sin\tfrac\theta2)$, the complementarity $\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)=e_t$, and the statement that a pure state is a null vector and an idempotent, not a nilpotent.</li>
+<li>The Bloch ball: $\rho=\tfrac12(e_t+i\vec r)$ with $\det\rho=\tfrac14(1-\lvert\vec r\rvert^2)$ and $\operatorname{tr}\rho^2=\tfrac12(1+\lvert\vec r\rvert^2)$, the ball as the trace-one slice of the positive cone, the boundary as the pure states, the centre as the maximally mixed state.</li>
+<li>The Born rule $p_\pm=\tfrac12(1\pm\vec r\cdot\vec u)$, the affine expectation of an observable, and the Hopf fibration with the unobservable phase.</li>
+<li>The list of what the correspondence does not give: the real form, the three directions as space, and any dynamics.</li>
+</ul>
+<h2 id="14-the-conjugations-and-the-adjoints-partial">14. The Conjugations and the Adjoints (partial)</h2>
+<p><strong>In the six.</strong> The transpose and the dagger of the left and right matrices, the identity ${}^{*}=\natural\circ\overline{\,\cdot\,}$ in use, the symbols $\natural$, $\overline{\,\cdot\,}$, $*$ and $\flat$ as the conditions of the six subspaces, and the plain adjoint $\approx$ of a two-sided operator.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The table of the four words as involutions, with definition, fixed space, anti-fixed space and dimension for each; the six give the conditions but never the table.</li>
+<li>The Klein relations: $\natural$, $\overline{\,\cdot\,}$ and $*$ commute pairwise with $\flat=-*$, and the group they generate has order four.</li>
+<li>The adjugate as the matrix of $\natural$, $\operatorname{adj}M=\varepsilon M^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, which coincides with $(\operatorname{tr}M)\mathrm I_2-M$; at the entry size it is an involution, $\operatorname{adj}^2=\mathrm{id}$, and the sixth subspace table is the table of the four words it belongs to.</li>
+<li>The fixed locus of the adjugate on the invertible matrices, $M^2=(\det M)\mathrm I_2$, which contains every involution up to scale and every nilpotent of the fixed space.</li>
+<li>The fifth involution, conjugation by $\vec e_y$, as a symmetry of the display and not one of the four words of the algebra.</li>
+</ul>
+<h2 id="15-math194-math195-and-the-determinant-none">15. $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant (none)</h2>
+<p><strong>In the six.</strong> Invertible pairs give $GL_2(\mathbb{C})\times GL_2(\mathbb{C})$, eight complex parameters, with the scaling as kernel; the automorphism group is $PGL_2(\mathbb{C})$; $\mathbb{B}^{\times}$ is named and counted, of complex dimension four; the basis matrices lie in $SL_2(\mathbb{C})$. The determinant as a group homomorphism is never formed.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The sequence $1\to SL_2\to GL_2\xrightarrow{\det}\mathbb{C}^{\times}\to1$, its non-central splitting $s(\lambda)=\operatorname{diag}(\lambda,1)$ with $GL_2\cong SL_2\rtimes\mathbb{C}^{\times}$, and the absence of a central splitting, since $\mu(-1)^2$ would have to be both $1$ and $-1$.</li>
+<li>The twofold cover $GL_2\cong(\mathbb{C}^{\times}\times SL_2)/\{\pm1\}$ through $(\lambda,U)\mapsto\lambda U$, with $\det(\lambda U)=\lambda^2$.</li>
+<li>The level sets of the determinant, smooth of complex dimension three off zero and homogeneous under the action, and the descent of the determinant to $PGL_2$ only up to squares.</li>
+<li>The topology: $GL_2$ connected with $\pi_1=\mathbb{Z}$, $SL_2$ simply connected with the homotopy type of $S^3$.</li>
+<li>The Bruhat decomposition $GL_2=B\sqcup BwB$, with cells of complex dimensions three and four, read as the projective line cut into the affine line and the point at infinity.</li>
+<li>The three double covers with kernel $\{\pm\mathrm I_2\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^{+}(1,3)$, $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$, against the Hopf fibration, whose fibre is a circle.</li>
+<li>The Lorentz action $H\mapsto MHM^{\dagger}$ on the Hermitian matrices, preserving the determinant and the positive cone.</li>
+</ul>
+<h2 id="16-the-projective-line-and-the-mobius-action-partial">16. The Projective Line and the Möbius Action (partial)</h2>
+<p><strong>In the six.</strong> The two coordinate minimal left ideals $S_\pm$, the two minimal right ideals $T_\pm$, and $S_\pm^{*}=T_\pm$, with minimality asserted. The family over the line is never formed.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The family $I_L=\{M:\operatorname{im}M\subseteq L\}$ indexed by the projective line, the bijection $L\mapsto I_L$, and the proof of minimality by the column argument.</li>
+<li>The action $I_L\mapsto I_{ML}$, its kernel, its quotient $PGL_2(\mathbb{C})$, and the idempotent form $\Pi\mapsto M\Pi M^{-1}$.</li>
+<li>The chart $z=\xi_1/\xi_2$, the Möbius formula $z'=(az+b)/(cz+d)$, the composition law $\varphi_{M_1}\circ\varphi_{M_2}=\varphi_{M_1M_2}$, and the transitivity on ordered triples.</li>
+<li>The cross-ratio as the complete invariant of a quadruple of ideals.</li>
+<li>The real structure $z\mapsto-1/\bar z$, with no fixed point, and the statement that no minimal ideal is stable under coefficient conjugation.</li>
+<li>The compact picture $PU(2)\cong SO(3)$, with the projective line and its real structure as the two-sphere.</li>
+</ul>
+<h2 id="17-the-killing-form-none">17. The Killing Form (none)</h2>
+<p><strong>In the six.</strong> Nothing. The word does not occur, and no invariant bilinear form on the algebra is formed beyond the plain and Hilbert–Schmidt forms.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The adjoint representation $\operatorname{ad}_X(Y)=[X,Y]$ of $\mathfrak{gl}_2(\mathbb{C})$ read over $\mathbb{R}$, of real dimension eight, its derivation property, and its diagonal form in the matrix-unit basis with eigenvalues $0,x_1-x_2,x_2-x_1,0$.</li>
+<li>The complex form $\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}_2(XY)-2\operatorname{tr}_2X\operatorname{tr}_2Y$ as a trace of $\operatorname{ad}_X\operatorname{ad}_Y$, the real form $8\operatorname{Re}\operatorname{tr}_2(XY)-4\operatorname{Re}(\operatorname{tr}_2X\operatorname{tr}_2Y)$, and the coordinate form $-8\vec X\cdot\vec Y$, which does not see the scalar part.</li>
+<li>The radical equal to the centre, hence the degeneracy as the reductive character of $\mathfrak{gl}_2$, and the invariance $\kappa([X,Y],Z)+\kappa(Y,[X,Z])=0$.</li>
+<li>The three real forms with their signatures: $(0,3)$ on $\mathfrak{su}(2)$, $(2,1)$ on $\mathfrak{sl}_2(\mathbb{R})$, $(3,3)$ on $\mathfrak{sl}_2(\mathbb{C})$ read over $\mathbb{R}$, with the null directions of the split form.</li>
+<li>The comparison with the trace form: proportional on the trace-free part, different on the centre, where the Killing form vanishes and the trace form does not.</li>
+</ul>
+<h2 id="18-the-functional-calculus-none">18. The Functional Calculus (none)</h2>
+<p><strong>In the six.</strong> Polynomials are evaluated only through the characteristic polynomial. No integral, no exponential, no logarithm, no square root.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The Cauchy integral $f(X)=\frac{1}{2\pi i}\oint_\gamma f(z)(z\mathrm I-X)^{-1}dz$, its independence of the contour, and the two spectral forms $f(\lambda_+)\rho_++f(\lambda_-)\rho_-$ and $f(\lambda)\mathrm I+f'(\lambda)N$.</li>
+<li>The homomorphism property $f(X)g(X)=(fg)(X)$ and the spectral mapping theorem.</li>
+<li>The exponential $\exp X=e^{Q_t}\bigl(\cos B\,\mathrm I_2+\tfrac{\sin B}{B}\mathsf M_2(\vec Q)\bigr)$, with the three regimes.</li>
+<li>The theorem $\det(\exp X)=\exp(\operatorname{tr}X)$, the corollary $\exp(\mathfrak{sl}_2)=SL_2$, and $\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)$.</li>
+<li>The kernel of the exponential, the matrices with eigenvalues in $2\pi i\mathbb{Z}$, which is not a subgroup and meets the null cone.</li>
+<li>The logarithm on the invertible locus, with the $\mathbb{Z}^2$ family in the distinct case and the $\mathbb{Z}$ family in the repeated one.</li>
+<li>The square-root classification by eigenvalue type, and the closed form $X^{1/2}=(X+\sqrt N\mathrm I_2)/\sqrt{\operatorname{tr}X+2\sqrt N}$.</li>
+</ul>
+<h2 id="19-the-hermitian-sandwich-none">19. The Hermitian Sandwich (none)</h2>
+<p><strong>In the six.</strong> The sandwich is named once, as the subcone $\tilde P=\tilde Q^{*}$ of the cone of products, and deferred. Nothing else.</p>
+<p><strong>Missing.</strong></p>
+<ul>
+<li>The multiplicativity $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, the defect $\tilde Q^{*}\tilde Q$ in the non-Hermitian case, and the automorphism group the $*$-unitary slice $U(2)$.</li>
+<li>The invariance of the Hermitian and anti-Hermitian halves and of the centre for every parameter, and of the vector and quaternion subspaces exactly for central multiples of real unit quaternions.</li>
+<li>The Peirce matrix $\overline B\otimes B$, with trace $4\lvert Q_t\rvert^2$, determinant $\lvert N\rvert^4$, rank $\operatorname{rank}(B)^2\in\{4,1,0\}$ and eigenvalues $\lambda_i\overline{\lambda_j}$.</li>
+<li>The norm scaling $\lvert N\rvert^2$, hence the preservation of the null cone, and the count of four parameters against the seven of the general two-sided operator.</li>
+<li>The Lorentz action on the anti-Hermitian half, $\Lambda^{\mathsf T}g\Lambda=\lvert N\rvert^2g$, with $\Lambda\in SO^{+}(1,3)$ on the norm-one slice and $\det\Lambda=r^8$; the sandwich is conformal, not orthogonal.</li>
+<li>The positivity: the sandwich of a positive Hermitian element is positive, and its trace-one slice is the Bloch ball.</li>
+</ul>
+<h2 id="what-the-remainder-forms">What the Remainder Forms</h2>
+<p><strong>The normal forms (4 to 7).</strong> Spectral projectors, commutant, eigenbasis, Jordan basis. The six treat an element through its coefficients and its polynomial invariants, never through the frames that put it in normal form. This block is the largest, and the later articles use it.</p>
+<p><strong>The analysis (11, 18).</strong> Polar decomposition and functional calculus: the only two legacy articles that need a limit or an integral, and the two that give the algebra a topology.</p>
+<p><strong>The group and the geometry (15, 16, 19).</strong> The determinant sequence, the projective line, and the conformal action.</p>
+<p><strong>The forms (9, 10, 17).</strong> The four traces, the four norms, the Killing form: three readings of the same bilinear data, and the six carry only the plain form and the Hilbert–Schmidt product.</p>
+<p><strong>The readings (12, 13).</strong> The determinantal variety with its two rulings, and the Bloch ball.</p>
+<p><strong>The bookkeeping (1, 3, 8, 14).</strong> The adjugate and Cayley–Hamilton, the reciprocal scaling, the eight worked types, and the four-word table.</p>
+<p><strong>What is already there.</strong> The six subspaces are complete, and so is the operator side: the sixteen cells, the coefficient matrix, the length theorem, the plain adjoint with its four type criteria, the enveloping algebra and the Clifford appendix. Nothing in this note is needed for those.</p>
+<h2 id="suggestions-matching-extending-writing">Suggestions : Matching, Extending, Writing</h2>
+<p><strong>The rule.</strong> Three moves, cheapest first.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Move</th>
+<th>When it applies</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Match</td>
+<td>a live article already owns the object</td>
+<td>a cross-link</td>
+</tr>
+<tr>
+<td>Extend</td>
+<td>the host exists, the idea is absent or thin there</td>
+<td>one subsection</td>
+</tr>
+<tr>
+<td>Write</td>
+<td>the object crosses two hosts, or has none</td>
+<td>a new article</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why matching comes first.</strong> Each of the 19 legacy articles has a live counterpart in <code>articles_maths/</code>. This note records where the six stop, not where the corpus does. A new file that repeats a live article gives the same statement a second home, and the two homes drift.</p>
+<h3 id="1-the-match-table">1. The Match Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Idea</th>
+<th>Host</th>
+<th>What the host has</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjugate, inverse of an element</td>
+<td><code>m2c-model-the-product-the-trace-and-the-determinant</code></td>
+<td>the adjugate as the image of $\natural$, the inverse formula</td>
+<td>extend: the anti-automorphism and $\operatorname{adj}^2=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>Cayley–Hamilton</td>
+<td><code>m2c-representation-trace-determinant-and-the-biquaternion-norm</code></td>
+<td>the degree-two identity</td>
+<td>extend: the consequence $\mathbb{C}[A]=\operatorname{span}\{\mathrm I_2,A\}$</td>
+</tr>
+<tr>
+<td>Reciprocal scaling, matrix-unit systems</td>
+<td><code>m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes</code></td>
+<td>the torus, uniqueness up to conjugation</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Spectral projectors</td>
+<td><code>m2c-model-the-spectral-projectors</code></td>
+<td>$\rho_\pm$, the theorem, the Lagrange form, the residue</td>
+<td>none; add the contour reading only if the calculus article is to cite it</td>
+</tr>
+<tr>
+<td>Commutant, double centraliser</td>
+<td><code>m2c-model-the-centraliser-and-the-double-centraliser</code></td>
+<td>commutant, three types, minimal polynomial, chain</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Eigenbasis, diagonalising matrix</td>
+<td><code>m2c-model-the-eigenbasis-and-the-diagonalising-matrix</code></td>
+<td>$\mathsf C_Q$, the determinant, two charts, the freedom, the normal case</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Jordan basis</td>
+<td><code>m2c-model-the-jordan-basis-and-the-jordanising-matrix</code></td>
+<td>the normal form, $\mathsf S_Q$, the defect</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Worked types</td>
+<td><code>m2c-representation-worked-examples</code></td>
+<td>the eight types</td>
+<td>extend only if the pattern table is absent — check first</td>
+</tr>
+<tr>
+<td>Four words, Klein group</td>
+<td><code>m2c-representation-the-conjugations-and-the-adjoints</code></td>
+<td>the four involutions, the Klein relations, the adjugate</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Four norms, signatures</td>
+<td><code>m2c-representation-trace-determinant-and-the-biquaternion-norm</code></td>
+<td>the four forms, the signatures</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Polar decomposition</td>
+<td><code>m2c-representation-the-polar-decomposition-of-a-matrix</code></td>
+<td>$PV$, the closed form, the $SU(2)$ factor, the singular values</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Rank one, strata, Segre</td>
+<td><code>m2c-representation-rank-one-matrices-and-the-determinantal-variety</code></td>
+<td>$uv^{\mathsf T}$, the two strata, the quadric and the rulings</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Bloch vector</td>
+<td><code>m2c-representation-spin-qubits-and-the-bloch-vector</code></td>
+<td>states, Born rule, Hopf</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Groups and determinant</td>
+<td><code>m2c-representation-gl2-sl2-and-the-determinant</code></td>
+<td>the sequence, the cover, Bruhat, the three covers</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Projective line</td>
+<td><code>m2c-representation-the-projective-line-and-the-mobius-action</code></td>
+<td>the family, Möbius, cross-ratio, conic</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Killing form</td>
+<td><code>m2c-representation-the-killing-form</code></td>
+<td>adjoint, formula, radical, real forms</td>
+<td>extend: the Casimir, present only in the regular article</td>
+</tr>
+<tr>
+<td>Functional calculus</td>
+<td><code>m2c-representation-the-functional-calculus</code></td>
+<td>Cauchy, exponential, logarithm, roots</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Hermitian sandwich</td>
+<td><code>matrix-representations-the-hermitian-sandwich</code></td>
+<td>the sandwich, the defect, the Lorentz action</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> Most rows need nothing. Three need one paragraph each: the adjugate, the Cayley–Hamilton consequence, and the Casimir. One row needs a check before it is decided: whether the pattern table is already in the worked-types article. Nothing in this note needs a new entry-size article.</p>
+<h3 id="2-what-the-six-should-absorb">2. What the Six Should Absorb</h3>
+<p>Five subsections, in this order, because each is a prerequisite of the articles that follow.</p>
+<ol>
+<li><strong>Spectral projectors and the eigenbasis</strong>, into <code>m2c-standard-peirce-representation-...</code>: the six show the spectrum, the trace and the determinant, and never the frames that produce them. Two subsections, one for $\rho_\pm$ and one for $\mathsf C_Q$. Without them the phrase <em>the two spectral projections of the root</em> in the six has no definition.</li>
+<li><strong>The adjugate and the inverse of an element</strong>, into the determinant section of the same article. The six invert pairs and never elements. One subsection.</li>
+<li><strong>The four norms</strong>, into the same article: the six use the Hilbert–Schmidt product and never say that three other forms exist and that only one is positive definite. One paragraph each, with a pointer to the norm article.</li>
+<li><strong>The degree-two Cayley–Hamilton identity</strong>, into the determinant section. One paragraph. It is what makes $\mathbb{C}[A]$ two-dimensional, and the commutant article depends on it.</li>
+<li><strong>The reciprocal scaling and the inner-automorphism theorem</strong>, into the operators article, in the Peirce-basis section. One subsection.</li>
+</ol>
+<p><strong>Cost.</strong> Five subsections across two articles. <strong>Risk.</strong> Low: every statement is in a live article already, so the work is transcription and cross-linking, not proof.</p>
+<p><strong>Done.</strong> The five items are written, in this order.</p>
+<ul>
+<li>Item 1: <code>m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant</code>, new section <em>The Spectral Projectors</em>, with the subsections <em>The Two Projectors of an Element</em> and <em>The Diagonalising Matrix</em>.</li>
+<li>Item 2: the same article, new section <em>The Adjugate and the Inverse</em>.</li>
+<li>Item 3: the same article, new section <em>The Four Norms</em>.</li>
+<li>Item 4: the same article, §<em>The Determinant</em>, paragraph <em>Cayley–Hamilton</em>.</li>
+<li>Item 5: <code>m2c-standard-peirce-representation-operators</code>, §<em>The Pair as a Semigroup</em>, subsection <em>The System of Matrix Units</em>.</li>
+</ul>
+<p>Checked while writing: the adjugate is the image of $\natural$ and the transpose is the image of $\varrho$, so the entry formula is the adjugate and not the transpose; $\operatorname{adj}(\operatorname{adj}A)=A$; $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ with $\det\mathsf C_Q=2B(B-Q_z)$; $\tfrac12\operatorname{Tr}(A^2)=P$, $\det A=N$, $\tfrac12\operatorname{Tr}(A^{\dagger}A)=H$, $\tfrac12\operatorname{Tr}(\operatorname{adj}(A)A^{\dagger})=K$.</p>
+<h3 id="3-two-articles-worth-writing">3. Two Articles Worth Writing</h3>
+<p><strong>A. The Two Displays : $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$ Side by Side.</strong></p>
+<p><em>Thesis.</em> One element, two matrices, one invariant set, and a fixed translation between them.</p>
+<p><em>Why no host.</em> Each family writes its own conventions. The comparison appears only in the phrase <em>the $4\times4$ counterpart is ...</em>, scattered across a dozen articles. No article owns the dictionary, and none states where the doubling fails.</p>
+<p><em>Outline.</em> (1) The two assignments and the deflation that returns one from the other. (2) The table: trace, determinant, spectrum, rank, adjugate, projectors, commutant, minimal polynomial, length, with the rule for each — double, square, or leave alone. (3) The three places where the doubling is not uniform: the adjugate is an involution at the entry size and cubic at the regular size; the minimal polynomial has degree two at both sizes; the commutant goes from two to eight. (4) The halved trace as the single source of every difference in the closed formulas, with the polar decomposition as the worked case. (5) What a statement must say in order to be size-independent.</p>
+<p><em>Length and risk.</em> 2500 to 3000 words, no new theorem beyond the list in (3). Low risk. It pays for itself by removing the counterpart sentences from the other articles.</p>
+<p><strong>B. The Defect and the Singular Values.</strong></p>
+<p><em>Thesis.</em> The Jordan defect $s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}$ and the polar singular values $s_{1,2}=re^{\pm\eta/2}$ are one number read on two branches; the degenerate case is the limit in which the angle is absorbed by the nilpotent.</p>
+<p><em>Why no host.</em> The Jordan article computes $s$; the polar article computes the pair; neither compares.</p>
+<p><em>Outline.</em> (1) The two definitions and what each measures. (2) The common origin in the eigenvalues of $MM^{\dagger}$. (3) The limit: what becomes of $V$ when $P$ is singular, and why the angle survives as the defect. (4) The regular size, where both double. (5) The norm reading of $s$.</p>
+<p><em>Length and risk.</em> 1500 words, one proposition. <strong>Check the identification symbolically before writing</strong>: the two normalisations differ by a factor, and the degenerate limit needs the $\eta\to0$ expansion.</p>
+<h3 id="4-not-worth-writing">4. Not Worth Writing</h3>
+<ul>
+<li>A new entry-size Killing article. The live one is complete; the Casimir is one paragraph.</li>
+<li>A new Bloch article at either size.</li>
+<li>A fourth account of the four words: the material sits in the conjugations, the four-words and the six-subspaces articles already.</li>
+<li>A new "models and change of frame" article: the live one exists, and the six have their own switch sections.</li>
+</ul>
+<h3 id="5-order-of-work">5. Order of Work</h3>
+<ol>
+<li>Write A first. Composing the dictionary exposes the duplication that remains, and it is the one piece no live article can absorb.</li>
+<li>Fold the five subsections of §2 into the six, one at a time, cross-linking to the hosts.</li>
+<li>Write B last, after the symbolic check.</li>
+<li>Keep this note as the ledger. When an item moves into an article, change its status here; do not delete the line, or the audit has to be redone.</li>
+</ol>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
