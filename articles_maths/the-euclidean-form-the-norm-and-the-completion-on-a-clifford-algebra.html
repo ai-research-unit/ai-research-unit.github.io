@@ -86,11 +86,11 @@ $$</p>
 \boxed{\;\|xy\| \le 2^{n/2}\,\|x\|\,\|y\|\;} .
 $$</p>
 <p>For $x$ a blade the inequality holds with constant $1$: $\|e_Iy\| = \|y\|$, since left multiplication by a blade permutes the blade basis up to signs.</p>
-<p><strong>Proof.</strong> Each $e_I$ acts by a signed permutation of the blade basis, so $\|L_{e_I}\|_{\mathrm{op}} = 1$. For general $x = \sum_I a_Ie_I$, subadditivity of the operator norm gives</p>
+<p><strong>Proof.</strong> Each $e_I$ acts by a signed permutation of the blade basis, so $\|L_{e_I}\| = 1$. For general $x = \sum_I a_Ie_I$, subadditivity of the operator norm gives</p>
 <p>$$
-\|L_x\|_{\mathrm{op}} \le \sum_I |a_I| \le \Bigl(2^{n}\sum_I|a_I|^{2}\Bigr)^{1/2} = 2^{n/2}\|x\| ,
+\|L_x\| \le \sum_I |a_I| \le \Bigl(2^{n}\sum_I|a_I|^{2}\Bigr)^{1/2} = 2^{n/2}\|x\| ,
 $$</p>
-<p>by Cauchy–Schwarz on the $2^{n}$ coefficients. Then $\|xy\| = \|L_xy\| \le \|L_x\|_{\mathrm{op}}\|y\|$.</p>
+<p>by Cauchy–Schwarz on the $2^{n}$ coefficients. Then $\|xy\| = \|L_xy\| \le \|L_x\|\|y\|$.</p>
 <p><strong>Remark (the norm is not submultiplicative).</strong> The constant $2^{n/2}$ is not an accident of the proof: the Euclidean norm of a Clifford algebra is not submultiplicative. The bound $2^{n/2}$ is a Cauchy–Schwarz estimate: the ratio $\|xy\|/(\|x\|\|y\|)$ is at least $2^{1/2}$ in every dimension, the element $\tfrac12(1 + e_1)$, which is not a blade, satisfying $x^{2}=x$ with $\|x\|=2^{-1/2}$; in $\mathrm{Cl}_{1,0}$, where the bound equals $2^{1/2}$, this value is the bound itself, while in the higher dimensions the bound is not known to be attained. This is the reason the algebra is completed as a Hilbert space with a von Neumann or a Clifford algebra structure rather than as a Banach algebra in this norm.</p>
 <h2 id="cauchyschwarz-positivity-and-the-cone">Cauchy–Schwarz, Positivity and the Cone</h2>
 <p><strong>Proposition (Cauchy–Schwarz).</strong> For the Euclidean form, $|(x,y)|^{2} \le (x,x)(y,y)$ with equality exactly when $x$ and $y$ are proportional.</p>

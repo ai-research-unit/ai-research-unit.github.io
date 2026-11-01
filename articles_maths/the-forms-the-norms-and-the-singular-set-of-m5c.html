@@ -80,7 +80,7 @@ $$</p>
 $$</p>
 <p>and the operator norm</p>
 <p>$$
-\|A\|_{\mathrm{op}}=\sup_{\|x\|=1}\|Ax\| .
+\|A\|=\sup_{\|x\|=1}\|Ax\| .
 $$</p>
 <p>The article distinguishes the determinant <strong>form</strong> from the two <strong>norms</strong>, and it studies the <strong>singular set</strong></p>
 <p>$$
@@ -112,7 +112,7 @@ $$</p>
 <p><strong>Proof.</strong> The multiplicativity and homogeneity are above. The determinant of $iI$ is $i^5=i$, which is not real; the determinant of a nilpotent matrix is $0$ although the matrix is nonzero; the determinant of $I+(-I)=0$ is $0$, while $\det I+\det(-I)=1-1=0$, but $\det(I+I)=32\ne2$. The triangle inequality fails.</p>
 <p><strong>Corollary.</strong> The determinant norm is a <strong>multiplicative form</strong>: $N(AB)=N(A)N(B)$. It is not a quadratic form, so $M_5(\mathbb{C})$ is not a composition algebra in the classical sense (a composition algebra has a nondegenerate quadratic norm and dimension $1,2,4$ or $8$). The form is not positive definite and has nontrivial zeros; the algebra is not a division algebra.</p>
 <p><strong>Proof.</strong> The multiplicativity is the composition property; the form has degree $5$, not $2$, so it is not the quadratic norm of a composition algebra. The nilpotent matrices are nonzero with norm zero, so there are zero divisors.</p>
-<p><strong>Remark.</strong> <strong>The word "norm" has three meanings in this category.</strong> The determinant norm is the multiplicative form of degree $5$; the Frobenius norm is the Euclidean norm of the $25$ coordinates; the operator norm is the sup norm on the unit sphere. They agree only in special cases: for a scalar matrix $\lambda I$, $\det(\lambda I)=\lambda^5$, $\|\lambda I\|_F=\sqrt5|\lambda|$, $\|\lambda I\|_{\mathrm{op}}=|\lambda|$. The three must not be confused.</p>
+<p><strong>Remark.</strong> <strong>The word "norm" has three meanings in this category.</strong> The determinant norm is the multiplicative form of degree $5$; the Frobenius norm is the Euclidean norm of the $25$ coordinates; the operator norm is the sup norm on the unit sphere. They agree only in special cases: for a scalar matrix $\lambda I$, $\det(\lambda I)=\lambda^5$, $\|\lambda I\|_F=\sqrt5|\lambda|$, $\|\lambda I\|=|\lambda|$. The three must not be confused.</p>
 <h3 id="the-determinant-form-on-math57">The Determinant Form on $M_5$</h3>
 <p><strong>Definition.</strong> The <strong>polar forms</strong> of the determinant are the multilinear forms obtained by polarizing the homogeneous polynomial $\det$. The first polar form at $A$ in the direction $H$ is the derivative</p>
 <p>$$
@@ -139,16 +139,16 @@ $$</p>
 <h3 id="the-operator-norm">The Operator Norm</h3>
 <p><strong>Definition.</strong> The <strong>operator norm</strong> is</p>
 <p>$$
-\|A\|_{\mathrm{op}}=\sup_{\|x\|_2=1}\|Ax\|_2,
+\|A\|=\sup_{\|x\|_2=1}\|Ax\|_2,
 $$</p>
 <p>where $\|\cdot\|_2$ is the standard Hermitian norm on $\mathbb{C}^5$.</p>
 <p><strong>Proposition.</strong> The operator norm is a norm, and</p>
 <p>$$
-\|A\|_{\mathrm{op}}\le\|A\|_F\le\sqrt5\,\|A\|_{\mathrm{op}} .
+\|A\|\le\|A\|_F\le\sqrt5\,\|A\| .
 $$</p>
-<p><strong>Proof.</strong> The operator norm is the sup of the continuous function $x\mapsto\|Ax\|$ on the compact unit sphere; the triangle inequality and homogeneity are immediate. For the first inequality, $\|Ax\|_2^2=\sum_i|\sum_jA_{ij}x_j|^2\le\sum_i(\sum_j|A_{ij}|^2)(\sum_j|x_j|^2)=\|A\|_F^2\|x\|_2^2$ by Cauchy–Schwarz. For the second, $\|A\|_F^2=\sum_i\|Ae_i\|_2^2\le\sum_i\|A\|_{\mathrm{op}}^2=5\|A\|_{\mathrm{op}}^2$.</p>
-<p><strong>Corollary (Hadamard).</strong> $|\det A|\le\|A\|_{\mathrm{op}}^5$.</p>
-<p><strong>Proof.</strong> The determinant is the product of the norms of the columns times the volume of the parallelepiped, which is at most $1$; more directly, Hadamard's inequality gives $|\det A|\le\prod_i\|a_i\|_2\le\|A\|_{\mathrm{op}}^5$, because each column has norm at most the operator norm.</p>
+<p><strong>Proof.</strong> The operator norm is the sup of the continuous function $x\mapsto\|Ax\|$ on the compact unit sphere; the triangle inequality and homogeneity are immediate. For the first inequality, $\|Ax\|_2^2=\sum_i|\sum_jA_{ij}x_j|^2\le\sum_i(\sum_j|A_{ij}|^2)(\sum_j|x_j|^2)=\|A\|_F^2\|x\|_2^2$ by Cauchy–Schwarz. For the second, $\|A\|_F^2=\sum_i\|Ae_i\|_2^2\le\sum_i\|A\|^2=5\|A\|^2$.</p>
+<p><strong>Corollary (Hadamard).</strong> $|\det A|\le\|A\|^5$.</p>
+<p><strong>Proof.</strong> The determinant is the product of the norms of the columns times the volume of the parallelepiped, which is at most $1$; more directly, Hadamard's inequality gives $|\det A|\le\prod_i\|a_i\|_2\le\|A\|^5$, because each column has norm at most the operator norm.</p>
 <p><strong>Remark.</strong> <strong>The operator norm is not polynomial.</strong> It is the spectral norm, equal to the square root of the largest eigenvalue of $A^*A$; the spectral theorem for $A^*A$ is <em>Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$</em>. The inequality with the Frobenius norm is proved here without the spectral theorem, and it is the only comparison needed in this article.</p>
 <h2 id="the-singular-set">The Singular Set</h2>
 <h3 id="the-determinant-hypersurface">The Determinant Hypersurface</h3>
@@ -242,7 +242,7 @@ $$</p>
 <p><strong>Proof.</strong> The multiplicativity and the zeros are the determinant properties; the positivity of the analytic norms is the sum of squares.</p>
 <p><strong>Remark.</strong> <strong>The singular set is $\det=0$, of real codimension $2$, and it is not a null cone.</strong> The determinant norm is a multiplicative form of degree $5$; its zero set is the singular set. The positive definite forms have no null cone; the indefinite trace pairing has an isotropic cone, but that cone is a different object. The three notions — zeros of the determinant, isotropic vectors of the trace pairing, null vectors of the Frobenius form — must be kept apart.</p>
 <h2 id="summary">Summary</h2>
-<p>The determinant is a multiplicative form of degree $5$; it is the norm of the algebra, but it is not a norm in the analytic sense. The analytic norms are the Frobenius norm and the operator norm, related by $\|A\|_{\mathrm{op}}\le\|A\|_F\le\sqrt5\|A\|_{\mathrm{op}}$. The determinant is bounded by the operator norm, $|\det A|\le\|A\|_{\mathrm{op}}^5$ (Hadamard).</p>
+<p>The determinant is a multiplicative form of degree $5$; it is the norm of the algebra, but it is not a norm in the analytic sense. The analytic norms are the Frobenius norm and the operator norm, related by $\|A\|\le\|A\|_F\le\sqrt5\|A\|$. The determinant is bounded by the operator norm, $|\det A|\le\|A\|^5$ (Hadamard).</p>
 <p>$$
 \boxed{\ \det\text{ is a multiplicative form of degree }5;\quad \Sigma=\{\det=0\}\text{ has real codimension }2;\quad \text{no null cone.}\ }
 $$</p>
@@ -269,11 +269,11 @@ $$</p>
 </tr>
 <tr>
 <td>Norm comparison</td>
-<td>$\|A\|_{\mathrm{op}}\le\|A\|_F\le\sqrt5\|A\|_{\mathrm{op}}$</td>
+<td>$\|A\|\le\|A\|_F\le\sqrt5\|A\|$</td>
 </tr>
 <tr>
 <td>Hadamard</td>
-<td>$|\det A|\le\|A\|_{\mathrm{op}}^5$</td>
+<td>$|\det A|\le\|A\|^5$</td>
 </tr>
 <tr>
 <td>Singular set</td>
@@ -315,7 +315,7 @@ $$</p>
 <td>The Frobenius norm</td>
 </tr>
 <tr>
-<td>$\|A\|_{\mathrm{op}}$</td>
+<td>$\|A\|$</td>
 <td>The operator norm</td>
 </tr>
 <tr>

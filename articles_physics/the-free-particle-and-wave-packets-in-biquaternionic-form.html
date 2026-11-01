@@ -73,7 +73,7 @@
 <p>The free particle is the problem that fixes the representation. Every article in this subcategory — one-dimensional scattering, the semiclassical limit, the path integral, and the external-field problems — is built on the free solutions and on the conventions that the free problem makes explicit: the momentum operator, the kinetic term, the phase, the state module, and the norm that the probabilities are read from. This article treats the free biquaternion Schrödinger equation, its plane-wave solutions, their superpositions into wave packets, and the free propagator.</p>
 <p>The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,</p>
 <p>$$
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
 $$</p>
 <p>so it is <strong>central</strong>. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central $*$-unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a <strong>scalar</strong> wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.</p>
 <p>The article proceeds as follows. The next section writes the free equation and its Hamiltonian. The third section solves it by plane waves and records the dispersion relation, the normalisation, and the location of the wave four-vector in the material sector. The fourth constructs wave packets, obtains the exact Gaussian packet and its spreading, and derives the continuity equation from which the probability current is read. The fifth evaluates the free propagator, proves its composition property, and identifies it as a central $*$-unitary element. The sixth discusses what the module factor means for a spin-0 treatment, and the seventh states what the biquaternion form adds and what it does not. The closing sections are the summary, the notation table, and the external literature.</p>
@@ -91,18 +91,18 @@ $$</p>
 <p>The quaternion square of the momentum is computed with $\vec e_j \vec e_k + \vec e_k \vec e_j = -2\delta_{jk}e_t$, valid because the spatial components commute:</p>
 <p>$$
 \tilde p^2 = \sum_{j,k} \vec e_j \vec e_k p_j p_k
-= -\sum_k p_k^{\mathrm{op}2}\, e_t
-= -p^{\mathrm{op}2}\, e_t,
+= -\sum_k p_k^{2}\, e_t
+= -p^{2}\, e_t,
 $$</p>
 <p>the cross terms cancelling by antisymmetry of $\epsilon_{jkl}$ against the symmetric product $p_j p_k$. The biquaternion norm of the momentum is therefore</p>
 <p>$$
-\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = p^{\mathrm{op}2}\, e_t,
+\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = p^{2}\, e_t,
 \qquad
 \tilde p^{\natural} = -\tilde p,
 $$</p>
 <p>so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:</p>
 <p>$$
-T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{\mathrm{op}2}}{2m}\,e_t .
+T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{2}}{2m}\,e_t .
 $$</p>
 <p>This is the first instance of a pattern that recurs throughout the subcategory: <strong>the kinetic term is the biquaternion norm of the momentum</strong>, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.</p>
 <h3 id="the-equation">The equation</h3>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 \boxed{\;i\hbar\,\partial/\partial t' \psi = H \psi,
 \qquad
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
+H = \frac{p^{2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
 $$</p>
 <p>with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads</p>
 <p>$$
@@ -312,7 +312,7 @@ $$</p>
 <h3 id="the-free-evolution-operator-as-a-central-math159-unitary">The free evolution operator as a central $*$-unitary</h3>
 <p>The evolution operator is the exponential of the generator,</p>
 <p>$$
-\tilde Q(t') = \exp(-iH t'/\hbar) = \exp(-i p^{\mathrm{op}2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
+\tilde Q(t') = \exp(-iH t'/\hbar) = \exp(-i p^{2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
 $$</p>
 <p>a central $*$-unitary element in the framework's sense,</p>
 <p>$$
@@ -350,7 +350,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The free biquaternion Schrödinger equation is $i\hbar\partial/\partial t'\,\psi = H\psi$ with</p>
 <p>$$
-H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
 \qquad
 \tilde p = -i\hbar\nabla,
 $$</p>
@@ -407,11 +407,11 @@ $$</p>
 <td>Momentum component</td>
 </tr>
 <tr>
-<td>$\tilde p^2 = -p^{\mathrm{op}2} e_t$, $\tilde p\tilde p^{\natural} = p^{\mathrm{op}2} e_t$</td>
+<td>$\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$</td>
 <td>Quaternion square and biquaternion norm of the momentum</td>
 </tr>
 <tr>
-<td>$H = p^{\mathrm{op}2} e_t/2m$</td>
+<td>$H = p^{2} e_t/2m$</td>
 <td>Free Hamiltonian; central</td>
 </tr>
 <tr>

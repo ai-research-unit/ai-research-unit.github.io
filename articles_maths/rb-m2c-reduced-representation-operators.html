@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Reduced Representation : Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-reduced-representation-operators"><strong>$M_2(\mathbb{C})$ Reduced Representation : Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The carrier is a commutative semisimple algebra of complex dimension two, and every operator of the pair is a single multiplication, so the whole operator theory of this category is the theory of a two-dimensional subspace of a four-dimensional ambient.</strong></p>
+<p><strong>The three facts that shape the article.</strong> First, left and right multiplication coincide, so the envelope $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ acts through the product and its image is the <strong>algebra itself</strong>, a two-dimensional linear subspace of $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})=M_{2}(\mathbb{C})$ and not a cone: the family of two-sided operators is closed under sums. Second, the model is symmetric, $L_{\breve Q}^{\mathsf T}=L_{\breve Q}$, so the transpose leaves the family pointwise fixed and all three adjoints of the article — the transpose one, the Frobenius one and the $J$-conjugated one — stay inside it. Third, the algebra is reduced, so the family contains no nilpotent but zero, and the sandwich is injective.</p>
+<p><strong>What follows and what fails.</strong> There is no length ladder beyond one: $\ell\in\{0,1\}$ inside the family, and no length outside it, because sums of multiplications are multiplications. There is no Kronecker support beyond a two-block pattern: the Kronecker display is $M_{2}(\mathbb{C})^{\mathsf T}\otimes M_{2}(\mathbb{C})$ of rank in $\{0,1,2,4\}$, so the second rank is not vacuous even though the first is. There is no derivation and no nonzero skew-adjoint member for the transpose form; the isometry groups are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; and the normaliser of the family in $GL_{2}(\mathbb{C})$ induces only the identity and the tessarine sign, so the outer automorphism group is $\mathbb{Z}_{2}$.</p>
+<p><strong>The boundaries.</strong> The operator framework — the envelope, the two-sided operator, the sandwich, the Kronecker display, the coefficient matrix and the length — is set out in <em>Operators on the Biquaternions</em>, and this article uses its definitions without repeating them. The multiplication operators of the algebra, their kernels, their spectra and their semigroup, are <em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em>; the algebra side of the model is <em>$M_{2}(\mathbb{C})$ Reduced Representation</em>; the spectral operators are <em>Operators on the Reduced Biquaternions</em>. This article is the operator reading of the model, and it takes the model in the basis $(1,j)$ throughout.</p>
+<h2 id="the-carrier-the-ambient-and-the-rank-ladder">The Carrier, the Ambient and the Rank Ladder</h2>
+<p><strong>The carrier is two-dimensional over $\mathbb{C}$ and the ambient is four-dimensional; the family sits in the ambient as a maximal commutative unital subalgebra.</strong></p>
+<p><strong>The dimensions.</strong> The carrier is $\mathbb{B}_{\mathrm r}$, of complex dimension two and real dimension four. The ambient is
+$$
+\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})=M_{2}(\mathbb{C}),\qquad \dim_{\mathbb{C}}=4,\quad \dim_{\mathbb{R}}=8,
+$$
+and the realification doubles both numbers. The family of one-sided operators is
+$$
+L(\mathbb{B}_{\mathrm r})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm r}\}=\mathsf M(\mathbb{B}_{\mathrm r})=\mathbb{C}\{\mathrm I_{2},\sigma_{1}\},
+$$
+of complex dimension two: half of the ambient over $\mathbb{C}$ and half of it over $\mathbb{R}$, so the deficit is proportionally the same in the two readings and is larger in absolute terms over $\mathbb{R}$.</p>
+<p><strong>The carrier is not $M_{2}(\mathbb{C})$.</strong> The carrier is an algebra, but it is not the matrix algebra of the ambient, and this is the single sentence in which this category differs from the biquaternion category: there the carrier was $M_{2}(\mathbb{C})$ itself and the operators were the multiplication by matrices; here the carrier is a product of two fields and the operators are the multiplication by its elements. The consequence is the whole of the operator theory: a multiplication by an element of a commutative algebra is diagonalisable in a fixed basis, so no derived operator — commutator, derivation, Kronecker commutant — can leave the family in a nontrivial way.</p>
+<p><strong>The rank ladder.</strong> The operator rank is
+$$
+\operatorname{rank}L_{\breve Q}\in\{0,1,2\},\qquad \operatorname{rank}_{\mathbb{R}}L_{\breve Q}\in\{0,2,4\},
+$$
+with $0$ at the zero element, $1$ exactly on the two punctured ideals, that is on the zero divisors, and $2$ exactly on the units. Unlike the dual-number category, where the rank-one stratum was a single line, here there are <strong>two</strong> rank-one strata, the two ideals minus the origin, and they are disjoint: this is the rank statement of the two components of the singular locus.</p>
+<p><strong>The two-sided family.</strong> For the pair $(\breve Q,\breve P)$ the two-sided operator is
+$$
+T_{\breve Q,\breve P}(\breve X)=\breve Q\breve X\breve P=L_{\breve Q\breve P}(\breve X),
+$$
+so the family of two-sided operators is
+$$
+\{T_{\breve Q,\breve P}\}=\mathrm{im}\,\beta=\{L_{\breve R}:\breve R\in\mathbb{B}_{\mathrm r}\}=L(\mathbb{B}_{\mathrm r}),
+$$
+the same two-dimensional family. The image of the bilinear map $\beta$ is therefore a <strong>linear subspace</strong> and not a cone, and the phrase "the cone of the two-sided operators", which is the correct one in the biquaternion and dual-number categories, is the wrong one here. The reason is the same in both commutative categories: the product of two elements is an element, and the set of products of a subspace with itself is a subspace.</p>
+<p><strong>The commutativity of the family.</strong> For all $\breve Q,\breve P$,
+$$
+[L_{\breve Q},L_{\breve P}]=L_{[\breve Q,\breve P]}=0,
+$$
+so the image is a commutative subalgebra of the ambient. Its centraliser in $M_{2}(\mathbb{C})$ is itself, because it is maximal commutative, and the Lie algebra $\mathfrak{gl}_{2}(\mathbb{C})$ meets it in an abelian subalgebra. The derived operator $\operatorname{ad}_{L_{\breve Q}}$ therefore annihilates the family for every member, and the radical of the family read as a Lie algebra is the whole family. So no operator of this category is generated by a commutator, and no derivation of the ambient preserves the family except trivially; the derivations section gives the count.</p>
+<p><strong>The absence of nilpotents.</strong> A nonzero nilpotent operator of the family would be a nonzero $\breve Q$ with $L_{\breve Q}^{n}=L_{\breve Q^{n}}=0$, that is $\breve Q^{n}=0$, and the algebra is reduced. So the family contains no nilpotent but the zero operator, the sandwich is injective, no shear group exists, and the Jordan decomposition of a member has no nontrivial nilpotent part. In the dual-number category the rank-one stratum was a single nilpotent line whose square was zero; here the rank-one strata are projections and their squares are themselves up to the scalar.</p>
+<h2 id="the-one-sided-operator-and-its-three-adjoints">The One-Sided Operator and Its Three Adjoints</h2>
+<p><strong>The model is symmetric, so the transpose fixes the family; and the two conjugate-linear involutions of the algebra act inside the family, so all three adjoints remain inside it.</strong></p>
+<p><strong>The transpose.</strong> Since $L_{\breve Q}$ is represented by the symmetric matrix $\mathsf M(\breve Q)$,
+$$
+L_{\breve Q}^{\mathsf T}=L_{\breve Q},
+$$
+so every member of the family is self-adjoint for the bilinear form $\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y)$, and the transpose induces the identity on the algebra. That is a strong degeneracy: the operator $X\mapsto \mathsf M(\breve Q)^{\mathsf T}X$ is the operator $X\mapsto \mathsf M(\breve Q)X$ itself.</p>
+<p><strong>Why the transpose is trivial here and not in the dual-number category.</strong> The transpose of the model is the model of the element conjugated by the <strong>intrinsic</strong> conjugation of the trace form, and the trace form of this algebra is nondegenerate, so the conjugation it defines is an involution of the algebra. In the dual-number category the trace form was degenerate, $\operatorname{diag}(2,0)$, and the transpose of the upper triangular model was lower triangular and therefore not a multiplication: the transpose was an involution <em>leaving</em> the family. So the two facts are one: the trace form is nondegenerate exactly when the algebra is semisimple, and the transpose preserves the family exactly then.</p>
+<p><strong>The Frobenius adjoint.</strong> For the Hermitian form $\langle X,Y\rangle_{\mathrm{F}}=\operatorname{tr}(X^{\dagger}Y)$, the adjoint of $L_{\breve Q}$ is the multiplication by the bar-conjugate,
+$$
+L_{\breve Q}^{*}=L_{\bar{\breve Q}},\qquad \mathsf M(\breve Q)^{\dagger}=\mathsf M(\bar{\breve Q}),
+$$
+which belongs to the family: the entrywise conjugate of a matrix of the image is a matrix of the image. So the model is a <strong>$*$-representation</strong>,
+$$
+\mathsf M(\bar{\breve Q})=\mathsf M(\breve Q)^{\dagger},\qquad \mathsf M(\bar{\breve Q}\breve P)=\mathsf M(\bar{\breve Q})\mathsf M(\bar{\breve P}),
+$$
+the second identity being the multiplicativity of the bar. In the dual-number category this failed, and the failure was the reason the category had no $*$-representation; here the bar is an automorphism of the algebra, of the same kind as the quaternion conjugation, and the model carries it.</p>
+<p><strong>The $J$-adjoint.</strong> For the form $\langle X,Y\rangle_{\mathrm{ts}}=\operatorname{tr}(JX^{\mathsf T}JY)$ with $J=\operatorname{diag}(1,-1)$, the adjoint is the multiplication by the tessarine conjugate,
+$$
+L_{\breve Q}^{\star}=L_{\breve Q_{\mathrm{ts}}},\qquad J\mathsf M(\breve Q)^{\mathsf T}J=\mathsf M(\breve Q_{\mathrm{ts}}),
+$$
+again inside the family, because the tessarine sign is $\mathbb{C}$-linear and multiplicative.</p>
+<p><strong>The table of the three adjoints.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form on the ambient</th>
+<th>adjoint of $L_{\breve Q}$</th>
+<th>involution of the algebra</th>
+<th>inside the family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}(X^{\mathsf T}Y)$</td>
+<td>$L_{\breve Q}$</td>
+<td>identity</td>
+<td>yes, pointwise</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{\dagger}Y)$</td>
+<td>$L_{\bar{\breve Q}}$</td>
+<td>bar, $\mathbb{C}$-antilinear</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(JX^{\mathsf T}JY)$</td>
+<td>$L_{\breve Q_{\mathrm{ts}}}$</td>
+<td>tessarine sign, $\mathbb{C}$-linear</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the family is closed under all three adjoints, and the three involutions of the algebra of <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em> are exactly the three adjoint operations, the fourth element of the Klein group being the composite. There is no adjoint of the family that leaves it, which is the precise sense in which this category, unlike the dual-number one, is a good category for Hilbert-space methods.</p>
+<p><strong>The self-adjoint, the skew-adjoint and the normal members.</strong> For the transpose form every member is self-adjoint and the skew-adjoint sector is $\{0\}$. For the Frobenius form the self-adjoint members are those with $\bar{\breve Q}=\breve Q$, that is the plane $\mathbb{R}\{1,j\}$; the skew-adjoint ones those with $Q_{\blacktriangle},Q_{\blacktriangledown}$ purely imaginary, that is the plane $\mathbb{R}\{i,ij\}$; and every member is normal, because every member is normal as a symmetric matrix, $L_{\breve Q}^{\dagger}L_{\breve Q}=\bar{\mathsf M}\mathsf M=\mathsf M\mathsf M^{\dagger}=L_{\breve Q}L_{\breve Q}^{\dagger}$. So the family is a commutative $*$-algebra of normal operators, the smallest nontrivial one of the block, and it is the reason the spectral theory of the algebra is diagonal.</p>
+<p><strong>The isometries.</strong> For the Frobenius form,
+$$
+L_{\breve Q}^{*}L_{\breve Q}=\mathrm I\iff |Q_{+}|=|Q_{-}|=1,
+$$
+so the isometry group of the family is the <strong>two-torus</strong> $T^{2}$, of real dimension two, contained in the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ as its compact retract. For the transpose form,
+$$
+L_{\breve Q}^{\mathsf T}L_{\breve Q}=\mathrm I\iff Q_{\blacktriangle}Q_{\blacktriangledown}=0,\ Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}=1,
+$$
+so the orthogonal group of the family is the <strong>four-group</strong> $\{\pm1,\pm j\}$, of four elements. The two answers differ by the same amount as the transpose and the adjoint differ, and they are the two extremes of the block: a continuous group for the unitary reading and a finite one for the orthogonal reading.</p>
+<p><strong>The polar word in the model.</strong> Every element has the modulus–unit form
+$$
+\breve Q=\rho\,e^{\phi j}e^{i\alpha}e^{ij\beta}=\rho\,\breve r\,\breve u,
+$$
+with $\breve r=\cosh\phi+j\sinh\phi$ and $\breve u=e^{i\alpha}e^{ij\beta}$, and the model multiplies the three factors because it is multiplicative:
+$$
+\mathsf M(\breve Q)=\rho\,\mathsf M(\breve r)\,\mathsf M(\breve u).
+$$
+The three factors are read off in the frame. The modulus $\rho$ is the scalar. The boost factor is the <strong>symmetric positive definite</strong> matrix
+$$
+\mathsf M(\breve r)=\begin{pmatrix}\cosh\phi&\sinh\phi\\ \sinh\phi&\cosh\phi\end{pmatrix},\qquad \text{eigenvalues } e^{\phi},e^{-\phi},
+$$
+and the unit factor is the <strong>unitary</strong> matrix
+$$
+\mathsf M(\breve u)\ \text{of eigenvalues}\ e^{i(\alpha+\beta)}\ \text{and}\ e^{i(\alpha-\beta)},
+$$
+so the two circular components of the unit are the sum and the difference of the two phases. The display is the polar decomposition of the matrix, realised inside the family and not by a theorem about general matrices: the symmetric positive factor and the unitary factor are the models of two elements, and their product is the model of the product.</p>
+<p><strong>The full boost and the absent half-angle.</strong> The eigenvalues of $\mathsf M(\breve r)$ are $e^{\pm\phi}$ and not $e^{\pm\phi/2}$, so the model carries the boost with the <strong>full</strong> rapidity. That is not a convention: the map $\breve Q\mapsto\mathsf M(\breve Q)$ is faithful, so there is no sign ambiguity, no kernel $\{\pm\mathrm I_{2}\}$, and no double cover. The contrast is with the Lorentz spinor of the biquaternion category, where the element of $SL_{2}(\mathbb{C})$ carried the half-angle and the map to the proper orthochronous Lorentz group had the kernel $\{\pm\mathrm I_{2}\}$: here there is no spin, and the matrix models the transformation and not its two-fold cover. This is the operator form of the sentence that the category has an idempotent frame and a matrix model and no spin.</p>
+<p><strong>The cancelled phases.</strong> The modulus $\rho$ absorbs the product of the two circular components, $|Q_{+}||Q_{-}|=\rho^{2}$, and the boost absorbs their ratio, $|Q_{+}|/|Q_{-}|=e^{2\phi}$. So the two moduli carry one scale and one boost and no more, and the four real parameters of the element are the scale, the boost and the two phases. In the model the two phases are the arguments of $Q_{+}$ and $Q_{-}$, that is the two diagonal entries of the frame, and the boost and the scale are their moduli: the polar word is the polar decomposition of the diagonal matrix, read back in the basis $(1,j)$.</p>
+<h2 id="the-two-sided-operator-and-the-kernel-of-the-sandwich">The Two-Sided Operator and the Kernel of the Sandwich</h2>
+<p><strong>The pair collapses to a product, the collapse is injective on the products, and the zero operator is attained by pairs of nonzero elements.</strong></p>
+<p><strong>The map.</strong> The two-sided operator is the composite of two one-sided ones,
+$$
+T_{\breve Q,\breve P}=L_{\breve Q}R_{\breve P}=R_{\breve P}L_{\breve Q}=L_{\breve Q\breve P},
+$$
+so the bilinear map $\beta:\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})$ factors through the multiplication,
+$$
+\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\ \xrightarrow{\ \cdot\ }\ \mathbb{B}_{\mathrm r}\ \xrightarrow{\ L\ }\ \mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r}),
+$$
+and the first arrow is surjective. So the image of $\beta$ is the image of $L$, of complex dimension two, and the fibre of $\beta$ over a point of the image is the fibre of the multiplication over the corresponding element.</p>
+<p><strong>The zero operator.</strong> The multiplication is not injective, so the zero operator is attained by pairs of nonzero parameters:
+$$
+T_{\Pi_{+},\Pi_{-}}=0,\qquad T_{\Pi_{-},\Pi_{+}}=0,
+$$
+and more generally $T_{\breve Q,\breve P}=0$ exactly when
+$$
+Q_{+}P_{+}=0\quad\text{and}\quad Q_{-}P_{-}=0 .
+$$
+In each idempotent slot one of the two factors must vanish, and the two slots are independent, so the zero set of $\beta$ is the union of four pieces,
+$$
+\{Q_{+}P_{+}=0\}\cap\{Q_{-}P_{-}=0\}=\bigcup_{i,j}\bigl(\{Q_{+}=0\}\ \text{or}\ \{P_{+}=0\}\bigr)\cap\bigl(\{Q_{-}=0\}\ \text{or}\ \{P_{-}=0\}\bigr),
+$$
+each of complex dimension two, one hyperplane taken from each factor: $\{Q=0\}$, $\{P=0\}$, and the two pieces $\{Q_{+}=0,\ P_{-}=0\}$ and $\{P_{+}=0,\ Q_{-}=0\}$. This is the operator-theoretic face of the fact that the algebra is a product: the annihilator of the left ideal $\mathbb{C}\Pi_{+}$ is the right ideal $\mathbb{C}\Pi_{-}$, and the pair straddles the two.</p>
+<p><strong>The fibres.</strong> The fibre of $\beta$ over a nonzero element $\breve R$ is
+$$
+\beta^{-1}(\breve R)=\{(\breve Q,\breve P):\breve Q\breve P=\breve R\},
+$$
+which is a torsor over the unit group: if $(\breve Q_{0},\breve P_{0})$ is one solution then every solution is $(u\breve Q_{0},u^{-1}\breve P_{0})$ with $u$ a unit, so the fibre is a copy of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, of complex dimension two, retracting onto the torus $T^{2}$. The dimension count is
+$$
+4=\dim_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\bigr)=\dim_{\mathbb{C}}\operatorname{im}\beta+\dim_{\mathbb{C}}\text{fibre}=2+2,
+$$
+so the parameter space of dimension four maps onto a two-dimensional family with two-dimensional fibres. Over a zero divisor the fibre is larger and reducible, because the equation $Q_{+}P_{+}=0$ in one slot is satisfied by a pair of lines rather than by a single point, and the fibre then contains a piece of dimension three.</p>
+<p><strong>The spectrum of the pair.</strong> The eigenvalues of $T_{\breve Q,\breve P}$ are the two products of the idempotent coordinates,
+$$
+\operatorname{spec}T_{\breve Q,\breve P}=\{Q_{+}P_{+},\ Q_{-}P_{-}\},
+$$
+the two entries of the diagonal form in the frame, so the spectral theory of the two-sided operator is the spectral theory of the product. There is no cross term, and that absence is the multiplicative form of the identity $Q_{+}P_{+}$ in the first slot and $Q_{-}P_{-}$ in the second.</p>
+<p><strong>The composition.</strong> The two-sided operators compose by
+$$
+T_{\breve Q,\breve P}\,T_{\breve Q',\breve P'}=T_{\breve Q\breve P\breve Q',\breve P'}=T_{\breve Q,\breve P\breve Q'\breve P'},
+$$
+so the composite is again a two-sided operator, the family is a <strong>subalgebra</strong> of the ambient and not only a subspace, and the composition is associative because the multiplication is. The semigroup is commutative, has the identity $T_{1,1}=\mathrm I_{2}$, and contains the zero operator: it is a commutative monoid with zero, and its group of units is the unit group of the algebra.</p>
+<p><strong>The rank of the composite.</strong> Since $T_{\breve Q,\breve P}=L_{\breve Q\breve P}$,
+$$
+\operatorname{rank}\bigl(T_{\breve Q,\breve P}T_{\breve Q',\breve P'}\bigr)\le\operatorname{rank}T_{\breve Q,\breve P},
+$$
+with equality when $\breve Q'\breve P'$ is a unit; so the rank is nonincreasing along a product and drops exactly when the second parameter falls into a zero divisor. The two rank-one strata are the minimal nonzero ones, and the products that stay in them are products whose second parameter stays in the same ideal, which makes each ideal a two-sided semigroup of rank-one operators.</p>
+<h2 id="the-sandwich">The Sandwich</h2>
+<p><strong>Two sandwiches, the plain one and the modulus one, and the second is the one that produces a cone.</strong></p>
+<p><strong>The plain sandwich.</strong> For a parameter $\breve Q$ and a variable $\breve X$,
+$$
+\Theta_{\breve Q}(\breve X)=\breve Q\breve X\breve Q=\breve Q^{2}\breve X=L_{\breve Q^{2}}(\breve X),
+$$
+so the sandwich operators are exactly the left multiplications by the squares, and the map $\breve Q\mapsto\Theta_{\breve Q}$ is the composition of the squaring map with the model. It is <strong>injective</strong> on the algebra: $\Theta_{\breve Q}=0$ means $Q_{+}^{2}=Q_{-}^{2}=0$ means $\breve Q=0$. In the dual-number category the same map had the same kernel, because $q^{2}=0$ implies $q=0$ over a field in characteristic zero; the difference is not in the kernel but in the fact that here the squaring map is two-to-one on the units, so two different sandwiches can agree, with $\Theta_{\breve Q}=\Theta_{-\breve Q}$.</p>
+<p><strong>The image of the plain sandwich.</strong> The set $\{\Theta_{\breve Q}\}$ is $\{L_{\breve R}:\breve R\text{ a square}\}$, which is not a linear subspace: the squares of an algebra of the form $\mathbb{C}\times\mathbb{C}$ are the elements with both idempotent coordinates... every element is a square, because every complex number has a square root, so the squaring map is <strong>surjective</strong> and the image of the plain sandwich is the whole family. This is the semisimple face of the same fact that made the sandwich of the dual-number category a strict family: there $q^{2}$ could not reach the elements with a prescribed linear term.</p>
+<p><strong>The modulus sandwich.</strong> The bar-sandwich
+$$
+\Phi_{\breve Q}(\breve X)=\breve Q\breve X\bar{\breve Q}
+$$
+is the operator behind the modulus–unit polar decomposition. The element $\breve Q\bar{\breve Q}$ has the two idempotent coordinates $|Q_{+}|^{2}$ and $|Q_{-}|^{2}$, because the bar conjugates the two coordinates coefficientwise, so in the frame
+$$
+\Phi_{\breve Q}=L_{\breve Q\bar{\breve Q}}=\operatorname{diag}\bigl(|Q_{+}|^{2},|Q_{-}|^{2}\bigr),
+$$
+which is a <strong>positive</strong> diagonal matrix in the frame, that is a self-adjoint member of the family with nonnegative eigenvalues. As a map of parameters it is two coordinates of modulus, so
+$$
+\Phi_{\breve Q}=\Phi_{\breve Q'}\iff |Q_{\pm}|=|Q'_{\pm}|,
+$$
+its kernel is the torus $T^{2}$ of the two phases, and its image is the <strong>quadrant</strong> of the two nonnegative reals in the frame, of real dimension two with a two-dimensional fibre: $4=2+2$ again. It is not a ray, as in the dual-number category, where the image of the analogous map was $q^{2}\in[0,\infty)$ and the parameter was killed only up to sign, but a genuine quadrant, and the parameter is recovered from the operator up to the two phases.</p>
+<p><strong>The image of the modulus sandwich is a cone.</strong> The set $\{\Phi_{\breve Q}\}$ is a <strong>convex cone</strong> in the space of self-adjoint operators of the frame, closed under sums and under multiplication by nonnegative scalars, and it is the positive quadrant of the two idempotent coordinates. So this category has one cone of operators, the modulus cone, and it is the cone of the sandwich and not of the two-sided product: the two-sided product gives the subspace, the modulus sandwich gives the quadrant, and the two are different objects in the same ambient.</p>
+<p><strong>The nilpotent scale is absent.</strong> In the dual-number category the sandwich had a kernel of two parallel lines, $q=\pm1$, because the modulus was $q^{2}$ and the level set was $\pm1$; here the level set of a fixed operator is a torus $T^{2}$, of real dimension two, and the count $2+2=4$ is the dimension count of the parameter space. The change from two lines to a torus is the change from the dual numbers to the reduced biquaternions in a single line: a level set of a quadratic form of signature $(1,1)$ against a level set of a positive definite quartic.</p>
+<h2 id="the-kronecker-display-and-the-coefficient-matrix">The Kronecker Display and the Coefficient Matrix</h2>
+<p><strong>The Kronecker display of the pair is a two-block matrix of four blocks, of rank in $\{0,1,2,4\}$, and the coefficient array is degenerate of kernel two.</strong></p>
+<p><strong>The display.</strong> For the pair $(\breve Q,\breve P)$ the operator $T_{\breve Q,\breve P}$ on the four-dimensional space $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ has the matrix
+$$
+\mathsf K(\breve Q,\breve P)=\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q),
+$$
+which is the Kronecker product of two matrices of the image. Since each factor is symmetric, the transpose is immaterial, and the display is the honest Kronecker product.</p>
+<p><strong>The invariants.</strong> With $\mathsf M(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}$ and the same for $\breve P$,
+$$
+\operatorname{tr}\mathsf K=4Q_{\blacktriangle}P_{\blacktriangle},\qquad \det\mathsf K=\bigl(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}}\bigr)^{2},\qquad \operatorname{rank}\mathsf K\in\{0,1,2,4\},
+$$
+the trace being the product of the two traces, the determinant the square of the product of the two determinants because the Kronecker product of two $2\times2$ matrices has determinant $\det^{2}\det^{2}$, and the rank the product of the two ranks. The rank $4$ is attained exactly when the two parameters are units, the rank $1$ when both are on zero divisors, and the intermediate values $2$ when one is a unit and the other is not: four values, so the second rank of the article is not vacuous.</p>
+<p><strong>The multiplicative property.</strong> The display is a representation of the product semigroup,
+$$
+\mathsf K(\breve Q,\breve P)\,\mathsf K(\breve Q',\breve P')=\mathsf K(\breve Q\breve Q',\breve P\breve P'),
+$$
+and it is faithful on the pair, so the four-dimensional display encodes both parameters while the two-dimensional two-sided operator encodes only their product. That is the exact measure of what the Kronecker display adds: the product $\breve Q\breve P$ is one complex pair, the pair $(\breve Q,\breve P)$ is two, and the display is the faithful record of the second.</p>
+<p><strong>The coefficient matrix.</strong> Let $e_{1}=1$, $e_{2}=j$ be the basis of the carrier, and let
+$$
+T_{\mu\nu}=T_{e_{\mu},e_{\nu}},\qquad \mu,\nu\in\{1,2\},
+$$
+be the four basis products. The multiplication table of the basis, $e_{1}e_{1}=e_{1}$, $e_{1}e_{2}=e_{2}$, $e_{2}e_{1}=e_{2}$, $e_{2}e_{2}=e_{1}$, gives
+$$
+T_{11}=T_{22}=\mathrm I_{2},\qquad T_{12}=T_{21}=\sigma_{1},
+$$
+so the four basis operators span the two-dimensional family and satisfy two linear relations. The <strong>coefficient matrix</strong> of an operator is the array $c$ of its coordinates in the basis $T_{\mu\nu}$, and it is defined only up to the two-dimensional space of relations, which is
+$$
+\ker c=\left\{\begin{pmatrix}\alpha&\beta\\ \gamma&\delta\end{pmatrix}:\alpha+\delta=0,\ \beta+\gamma=0\right\}=\left\{\begin{pmatrix}\alpha&\beta\\ -\beta&-\alpha\end{pmatrix}\right\},
+$$
+a two-dimensional subspace of the four-dimensional $M_{2}(\mathbb{C})$. So the dictionary operator $\leftrightarrow$ coefficient matrix is two-to-one in the strong sense: two arrays give the same operator exactly when their difference is of that form.</p>
+<p><strong>The criterion.</strong> An operator of the ambient is a two-sided operator exactly when it is a multiple combination of $T_{11}$ and $T_{12}$, that is exactly when its coefficient array is at most one step away from the relation space, which in coordinates is the pair of linear conditions $a=d$ and $b=c$ of the general article. The criterion is <strong>linear</strong> and not determinantal, and this is the reason the family is a subspace: the coefficient array of a pair is a rank-one array $qp^{\mathsf T}$, and the quotient of the four-dimensional array space by the two-dimensional relation space is two-dimensional, so the rank-one locus maps onto the whole family and the determinantal criterion of the biquaternion category has nothing to test here.</p>
+<p><strong>The array of the pair.</strong> For the pair $(\breve Q,\breve P)$ the coefficient array is the rank-one matrix
+$$
+c=q\,p^{\mathsf T},\qquad q=(Q_{\blacktriangle},Q_{\blacktriangledown}),\quad p=(P_{\blacktriangle},P_{\blacktriangledown}),
+$$
+of rank one unless one of the two parameters vanishes, in which case it is zero. So the coefficient array of a two-sided operator is <strong>always of rank at most one</strong>, its rank is one on the complement of the four pieces of the zero set of the previous section, and the operator rank and the coefficient rank are as unrelated here as they are in the biquaternion category: the coefficient rank is one on the whole family except the zero operator, while the operator rank takes the three values $2,1,0$.</p>
+<h2 id="the-length-and-the-two-ranks">The Length and the Two Ranks</h2>
+<p><strong>The length is in $\{0,1\}$ inside the family and is not defined outside it, and the reason is that the family is a subspace.</strong></p>
+<p><strong>The definition.</strong> For an operator $M$ of the ambient, the length is
+$$
+\ell(M)=\min\{r:M=T_{\breve Q_{1},\breve P_{1}}+\dots+T_{\breve Q_{r},\breve P_{r}}\},
+$$
+the least number of two-sided operators whose sum is $M$, with $\ell(0)=0$.</p>
+<p><strong>The theorem.</strong> For every operator of the ambient,
+$$
+\ell(M)=1\iff M=L_{\breve R}\ \text{for some }\breve R\neq0,\qquad \ell(M)\ \text{undefined otherwise}.
+$$
+Hence the length takes the two values $0$ and $1$ on the family and has no value outside it.</p>
+<p><em>Proof.</em> Each term of a sum is a multiplication, and the family of multiplications is a linear subspace, so a sum of $r$ terms is a multiplication for every $r\ge1$; conversely every nonzero multiplication is one term, $L_{\breve R}=T_{1,\breve R}$. So the sums of any number of terms are exactly the family, and no operator outside it is a finite sum.</p>
+<p><strong>Why the ladder stops at one.</strong> In the biquaternion category the length ran over $1,4,7,16$, because the image of the two-sided operator was a <strong>cone</strong> and the sums of cone elements escaped the cone, producing a genuine ladder. Here the image is a subspace, so the ladder collapses at the first step, and the collapse is the operator-theoretic content of semisimplicity: a semisimple commutative algebra has a two-sided operator family which is closed under addition, and no additive theory of operators survives. The Cayley category of the block has the same collapse for the same reason, and the two articles agree word for word on the length.</p>
+<p><strong>What the second rank measures.</strong> The two ranks of the article are the operator rank $\operatorname{rank}L_{\breve Q}\in\{0,1,2\}$ and the Kronecker rank $\operatorname{rank}\mathsf K(\breve Q,\breve P)\in\{0,1,2,4\}$. The first is the rank of the multiplication, which is the number of nonvanishing idempotent coordinates; the second is the product of that number for the two parameters, so it is the rank of the multiplication by $\breve Q$ multiplied by the rank of the multiplication by $\breve P$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>operator rank</th>
+<th>Kronecker rank of the pair</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$L_{\Pi_{+}}$, $L_{\Pi_{-}}$, and their scalar multiples</td>
+<td>$1$</td>
+<td>$1$ inside</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$L_{\breve Q}$ with $\breve Q$ a unit</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\sigma_{3}$, the traceless diagonal</td>
+<td>—</td>
+<td>—</td>
+<td>no length</td>
+</tr>
+<tr>
+<td>$i\sigma_{2}$, the quarter turn</td>
+<td>—</td>
+<td>—</td>
+<td>no length</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the two ranks are proportional and not unrelated, which is the opposite of the quaternion category, where the operator rank was one or four and the coefficient rank ranged over $0,\dots,4$ independently. The proportionality is the semisimplicity again: the model is a direct sum of two scalar blocks, so every rank is a count of blocks.</p>
+<h2 id="the-automorphisms-the-derivations-and-the-normaliser">The Automorphisms, the Derivations and the Normaliser</h2>
+<p><strong>The algebra has no derivation and two automorphisms, and the ambient realises the nontrivial one by a conjugation with an element outside the family.</strong></p>
+<p><strong>The automorphisms.</strong> A $\mathbb{C}$-algebra automorphism of $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$ permutes the two factors, so
+$$
+\operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\bigr)=\{\mathrm{id},{}_{\mathrm{ts}}\}\cong\mathbb{Z}_{2},
+$$
+the nontrivial one being the tessarine sign. In the model,
+$$
+J\,\mathsf M(\breve Q)\,J=\mathsf M(\breve Q_{\mathrm{ts}}),\qquad J=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}\notin\mathsf M(\mathbb{B}_{\mathrm r}),
+$$
+so the automorphism is induced by a conjugation with an element of $GL_{2}(\mathbb{C})$ that is <strong>not</strong> in the family. The other conjugations by units of the family are trivial, because the family is commutative, so the map
+$$
+N\bigl(\mathsf M(\mathbb{B}_{\mathrm r})\bigr)/\mathsf M(\mathbb{B}_{\mathrm r}^{\times})\ \longrightarrow\ \operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\bigr)
+$$
+from the normaliser quotient onto the automorphism group is an isomorphism, and the normaliser is generated by the units of the family and $J$. The outer automorphism is therefore inner in the ambient and outer in the algebra — the same phenomenon as in the dual-number category, where the automorphisms were conjugation by diagonal matrices, with the difference that here the group is of order two and not a continuum.</p>
+<p><strong>The derivations.</strong> A derivation of $\mathbb{B}_{\mathrm r}$ is zero, because the algebra is a finite product of fields and an étale algebra has no derivations, and in the model
+$$
+\mathsf M\bigl(D(\breve Q)\bigr)=[N,\mathsf M(\breve Q)]\ \text{for all }\breve Q\ \Longrightarrow\ N\in\mathsf M(\mathbb{B}_{\mathrm r})',
+$$
+so a derivation of the ambient that preserves the family is a commutator with an element of its centraliser, which is the family, and the commutator with an element of a commutative family is zero. So the space of derivations of the family realised inside the ambient is zero, and the derivation slot of the category is empty.</p>
+<p><strong>The reading.</strong> The derivation slot of this category is empty, and it is empty for a reason that the algebra articles state in one word: the algebra is étale, a product of two copies of a field of characteristic zero, and such an algebra has no derivation. The dual-number category, whose maximal ideal was square-zero, carried a one-dimensional space of derivations and a one-parameter group of automorphisms and a shear group; the reduced biquaternion category carries none of the three, and the rigidity of the Peirce frame is the visible form of that emptiness.</p>
+<h2 id="the-ambient-against-the-image">The Ambient Against the Image</h2>
+<p><strong>The ambient splits into three pieces: the family, the traceless symmetric line and the skew line, and each carries one of the three structures of the article.</strong></p>
+<p><strong>The decomposition.</strong> Every matrix of $M_{2}(\mathbb{C})$ is the sum of a symmetric and a skew-symmetric part, and the symmetric part is the sum of a scalar multiple of the identity and an element of the image and a traceless symmetric matrix. Precisely,
+$$
+M_{2}(\mathbb{C})=\underbrace{\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}}_{\text{the family}}\ \oplus\ \underbrace{\mathbb{C}\sigma_{3}}_{\text{traceless symmetric}}\ \oplus\ \underbrace{\mathbb{C}\,i\sigma_{2}}_{\text{skew}},
+$$
+of dimensions $2+1+1=4$. The family is the image of the model; $\sigma_{3}$ realises the tessarine sign by conjugation; $i\sigma_{2}$ is the quarter turn, the unique skew-symmetric direction, and it is the element that the transpose leaves out.</p>
+<p><strong>The frame as an orthogonal change of basis.</strong> The matrix $P$ of the general article satisfies $P^{\mathsf T}P=2\,\mathrm I_{2}$, so $P/\sqrt2$ is a real orthogonal matrix and
+$$
+\tfrac12P^{\mathsf T}\mathsf M(\breve Q)P=\operatorname{diag}(Q_{+},Q_{-}),
+$$
+that is, the family is carried by an <strong>orthogonal</strong> change of basis to the diagonal subalgebra of $M_{2}(\mathbb{C})$. So the image is unitarily conjugate to the prototype of $\mathbb{C}\times\mathbb{C}$, and the whole operator theory of the category is the operator theory of the diagonal matrices read in a fixed rotated basis. The reader who knows the diagonal subalgebra knows this article; the content is that the diagonal form is reached by a fixed orthogonal matrix and not by a spectral theorem that depends on the element.</p>
+<p><strong>The three slots.</strong> The three pieces of the decomposition carry the three questions of the article. The family carries the two-sided operator, the sandwich and the length, and it is closed and commutative. The traceless symmetric line carries the automorphism, because $\sigma_{3}$ is the conjugating element of the tessarine sign. The skew line carries the failure of the transpose, because $i\sigma_{2}$ is the only direction the transpose sends out of the symmetric part. Nothing else exists: there is no nilpotent corner, no radical, no residue and no derivation, and the deficit of the ambient is exactly two lines.</p>
+<p><strong>The double centraliser.</strong> Two computations close the structure. The centraliser of the family is the family, and the double centraliser is the family again,
+$$
+\mathsf M(\mathbb{B}_{\mathrm r})'=\mathsf M(\mathbb{B}_{\mathrm r}),\qquad \mathsf M(\mathbb{B}_{\mathrm r})''=\mathsf M(\mathbb{B}_{\mathrm r}),
+$$
+so the bicommutant theorem holds for a reason that has nothing to do with finite-dimensionality: the family is maximal commutative. In the biquaternion category the corresponding computation gave the whole of $M_{2}(\mathbb{C})$ on both sides, and the difference between the two answers is the difference between a maximal commutative subalgebra and a simple algebra.</p>
+<h2 id="what-the-pair-buys-and-does-not">What the Pair Buys and Does Not</h2>
+<p><strong>The pair buys a canonical frame, a determinant and a $*$-structure, and it does not buy a cone, a length ladder or a spin.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>complex number</th>
+<th>reduced biquaternion</th>
+<th>biquaternion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the model</td>
+<td>$\mathbb{C}$, of dimension one</td>
+<td>the algebra in $\mathrm{End}$ of a two-dimensional space</td>
+<td>the whole of $M_{2}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>the image</td>
+<td>a line</td>
+<td>a two-dimensional subspace</td>
+<td>the ambient</td>
+</tr>
+<tr>
+<td>the two-sided family</td>
+<td>a subspace</td>
+<td>a subspace</td>
+<td>a cone</td>
+</tr>
+<tr>
+<td>the determinant</td>
+<td>a point of the plane</td>
+<td>two planes in a four-space</td>
+<td>a cone in a four-space</td>
+</tr>
+<tr>
+<td>idempotents</td>
+<td>two</td>
+<td>four</td>
+<td>two, of the frame</td>
+</tr>
+<tr>
+<td>the length</td>
+<td>$\{0,1\}$ inside the span</td>
+<td>$\{0,1\}$ inside the span</td>
+<td>$1,4,7,16$</td>
+</tr>
+<tr>
+<td>the adjoint</td>
+<td>inside</td>
+<td>inside, for all three forms</td>
+<td>inside, for the conjugation</td>
+</tr>
+<tr>
+<td>the spin</td>
+<td>none</td>
+<td>none</td>
+<td>two-fold cover</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What it buys.</strong> A frame that is fixed and canonical, so the spectral decomposition is the same for every element and Lagrange's formula is a convenience and not a theorem. A determinant that is multiplicative and complex-valued, so the singular locus is a pair of transverse planes and the zero divisors are semisimple. A $*$-structure for the bar, and a second one for the tessarine sign through the $J$-adjoint, so the family is closed under three adjoints and every member is normal. A rank theory of two independent slots, so the operator rank and the Kronecker rank are proportional and computable.</p>
+<p><strong>What it does not buy.</strong> A cone of two-sided operators: the image is closed under sums, so no additive theory survives and the length collapses at one. A derivation, a nilpotent, a shear group or a Jordan block: the algebra is reduced and rigid. A spin structure or a double cover: the model is faithful. An ambient larger than twice the family: the deficit of the ambient over the family is exactly two lines, the traceless symmetric and the skew, and nothing else.</p>
+<p><strong>The reading of the category.</strong> The reduced biquaternion pair sits between the complex and the quaternionic ones, and it is the only category of the block where the model is a <strong>proper subspace of the ambient defined by linear conditions</strong>, where the two-sided operator is a subspace, and where the algebra nevertheless has a genuine Peirce frame of order two. It is the category in which the matrix method is at its most transparent and least informative: everything holds, and everything holds because the algebra is a product of two fields.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The carrier is two-dimensional over $\mathbb{C}$ and the ambient four-dimensional; the family of one-sided operators is the two-dimensional subspace $\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}$, a maximal commutative unital subalgebra, and the carrier is an algebra but not the matrix algebra of the ambient.</li>
+<li>The two-sided operator is $T_{\breve Q,\breve P}=L_{\breve Q\breve P}$, so the image of the envelope is the algebra itself: a <strong>subspace</strong> and not a cone, closed under sums, with commutator zero and no nilpotent but zero.</li>
+<li>The model is symmetric, so the transpose is the identity on the family and every member is self-adjoint for $\operatorname{tr}(X^{\mathsf T}Y)$; the Frobenius adjoint is the multiplication by the bar-conjugate and the $J$-adjoint the multiplication by the tessarine conjugate, so all three adjoints stay inside and the model is a $*$-representation.</li>
+<li>The isometries are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; every member is normal.</li>
+<li>The zero operator is attained by pairs of nonzero parameters, $T_{\Pi_{+},\Pi_{-}}=0$, the zero set of $\beta$ is a union of four pieces, and the fibre over a nonzero element is a torsor over $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ retracting onto $T^{2}$.</li>
+<li>The plain sandwich is injective, the squaring map is surjective because the algebra is a product of two fields, and the modulus sandwich is an injective map onto a <strong>quadrant</strong>, the only cone of operators of the category.</li>
+<li>The Kronecker display is $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$, with trace $4Q_{\blacktriangle}P_{\blacktriangle}$, determinant $(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}})^{2}$ and rank in $\{0,1,2,4\}$: the four values are all attained, so the second rank is not vacuous.</li>
+<li>The coefficient array in the basis $T_{\mu\nu}$ is defined only modulo a two-dimensional space of relations, $T_{11}=T_{22}$ and $T_{12}=T_{21}$, and the array of a pair is always of rank at most one.</li>
+<li>The length is $0$ or $1$ on the family and undefined outside it, because the family is a subspace: the ladder of the biquaternion category collapses, and the collapse is the operator-theoretic content of semisimplicity.</li>
+<li>The automorphism group is $\mathbb{Z}_{2}$, realised by the conjugation with $\sigma_{3}$, which is outer in the algebra and inner in the ambient; there is no derivation; the ambient splits into the family, the traceless symmetric line and the skew line, and the frame is an orthogonal change of basis carrying the family to the diagonal subalgebra.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm r}$</td>
+<td>the carrier, of complex dimension two</td>
+<td><em>Reduced Biquaternion Space</em></td>
+</tr>
+<tr>
+<td>$L_{\breve Q},R_{\breve Q}$</td>
+<td>the left and right multiplications, equal because the algebra is commutative</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$T_{\breve Q,\breve P}$</td>
+<td>the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}=T_{e_{\mu},e_{\nu}}$</td>
+<td>the four basis products, with $T_{11}=T_{22}$ and $T_{12}=T_{21}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathsf K(\breve Q,\breve P)$</td>
+<td>the Kronecker display $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Theta_{\breve Q}$</td>
+<td>the plain sandwich, $=L_{\breve Q^{2}}$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\Phi_{\breve Q}$</td>
+<td>the modulus sandwich, $=\operatorname{diag}(\lvert Q_{+}\rvert^{2},\lvert Q_{-}\rvert^{2})$ in the frame</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\ell$</td>
+<td>the length, in $\{0,1\}$ inside the family and undefined outside</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$J=\operatorname{diag}(1,-1)$</td>
+<td>the conjugating element realising the tessarine sign</td>
+<td><em>$M_{2}(\mathbb{C})$ Reduced Representation</em></td>
+</tr>
+<tr>
+<td>$\sigma_{3},i\sigma_{2}$</td>
+<td>the traceless symmetric and skew directions of the ambient</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the operator reading of the Peirce decomposition and the rigidity of the frame of a semisimple algebra.</li>
+<li>Paul R. Halmos, <em>Finite-Dimensional Vector Spaces</em> (Springer, 1974), for the diagonal subalgebra of $M_{2}(\mathbb{C})$, its normaliser, and the bicommutant of a maximal commutative subalgebra.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for the Kronecker product, its trace, its determinant and the multiplicativity of its rank.</li>
+<li>Willi-Hans Steeb, <em>Kronecker Product of Matrices and Applications</em> (BI-Verlag, 1991), for the operator reading of the Kronecker display and its use in the two-sided product.</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices</em> (Chelsea, 1959), for the orthogonal diagonalisation of a commuting family and the orthogonal change of basis into the diagonal form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
