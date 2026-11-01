@@ -125,7 +125,7 @@ $$</p>
 <p>$$
 i\,\vec\mu = \mu_k\,i \vec e_k = \mu_1\,i \vec e_x + \mu_2\,i \vec e_y + \mu_3\,i \vec e_z \in \mathbb{M}_+ ,
 $$</p>
-<p>the imaginary pure quaternion being the informational-sector twin of the real pure quaternion $\vec\mu = \mu_k\vec e_k$. The two descriptions are exchanged by multiplication by $i$, exactly as the two sectors are; both describe the same physical moment, and the choice between them is a choice of which sector's representative is being written. For a moment tied to an intrinsic angular momentum $\vec S$, the coefficient is the gyromagnetic ratio,</p>
+<p>the imaginary pure quaternion being the informational-sector twin of the real pure quaternion $\vec\mu = \sum_k \mu_k\vec e_k$. The two descriptions are exchanged by multiplication by $i$, exactly as the two sectors are; both describe the same physical moment, and the choice between them is a choice of which sector's representative is being written. For a moment tied to an intrinsic angular momentum $\vec S$, the coefficient is the gyromagnetic ratio,</p>
 <p>$$
 \vec\mu = \gamma\,\vec S,
 $$</p>
@@ -202,8 +202,8 @@ $$</p>
 <h3 id="the-rotation-rotor">The Rotation Rotor</h3>
 <p>The rotor algebra is stated here explicitly, because the precession solution and the reciprocal effects of the following article are both written in it. A rotation through angle $\theta$ about the unit real axis $\vec u$ is produced by the <strong>unit real quaternion</strong></p>
 <p>$$
-\tilde u(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\;\vec u_k \vec e_k
-= \exp\!\left(\frac{\theta}{2}\,\vec u_k \vec e_k\right),
+\tilde u(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\;\sum_k \vec u_k \vec e_k
+= \exp\!\left(\frac{\theta}{2}\,\sum_k \vec u_k \vec e_k\right),
 $$</p>
 <p>acting on a pure real vector by <strong>rotor conjugation</strong>,</p>
 <p>$$
@@ -241,7 +241,7 @@ $$</p>
 <p>$$
 d\vec\mu/dt' = \tfrac{1}{2}\left[\vec\Omega,\vec\mu\right]
 + \tilde u_\Omega\left(d\vec\mu_{\rm rot}/dt'\right)\tilde u_\Omega^{*} ,
-\qquad \vec\Omega = \Omega_k \vec e_k .
+\qquad \vec\Omega = \sum_k \Omega_k \vec e_k .
 $$</p>
 <p>Substituting the Larmor equation $d\vec\mu/dt' = \tfrac{1}{2}[\vec\mu,\vec\omega_G]$ and collecting the generator of the frame's own motion gives</p>
 <p>$$
@@ -279,7 +279,7 @@ $$</p>
 <p>The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> and <em>Exercise: Spin Precession in a Magnetic Field</em>. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde{H} = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$ with $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_x\rangle=\langle\tilde{Ϛ},\tilde S_x\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{S}_x^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{S}_x^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde S_x\ge0$. The evolved Bloch vector is $\vec r(t') = \cos(\gamma B t')\vec e_x - \sin(\gamma B t')\vec e_y$, which is the precession derived here, with the same frequency and the same sense.</p>
 <p>The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{H}_{\mathbb{B}}$ as a real pure quaternion and is rotated by $\tilde u_L(t') = \exp(-\tfrac{1}{2}\gamma B t'\,\vec u_{B,k} \vec e_k)$; the quantum state lives in $\mathbb{M}_+$ and is rotated by $\tilde{U}(t')$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.</p>
 <h2 id="summary">Summary</h2>
-<p>The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,</p>
+<p>The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \sum_k \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = \sum_k B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,</p>
 <p>$$
 \vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B,
 $$</p>
@@ -332,7 +332,7 @@ $$</p>
 <td>Real-quaternion subspace, home of the rotation rotors</td>
 </tr>
 <tr>
-<td>$\vec\mu = \mu_k \vec e_k$</td>
+<td>$\vec\mu = \sum_k \mu_k \vec e_k$</td>
 <td>Classical magnetic moment (pure real quaternion)</td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ $$</p>
 <td>Intrinsic moment's informational-sector representative</td>
 </tr>
 <tr>
-<td>$\vec B = B_k \vec e_k = \mu\vec H$</td>
+<td>$\vec B = \sum_k B_k \vec e_k = \mu\vec H$</td>
 <td>Magnetic induction (pure real quaternion)</td>
 </tr>
 <tr>
@@ -380,7 +380,7 @@ $$</p>
 <td>Larmor generator (Larmor equation)</td>
 </tr>
 <tr>
-<td>$\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\vec u_k\vec e_k$</td>
+<td>$\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k$</td>
 <td>Rotation rotor (unit real quaternion)</td>
 </tr>
 <tr>
