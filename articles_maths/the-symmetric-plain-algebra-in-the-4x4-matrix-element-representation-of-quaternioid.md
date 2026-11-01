@@ -32,7 +32,7 @@ $$
 \det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2\;}.
 $$
 
-*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_t\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_t$ and the determinant is $(q_t^2+|\vec q|^2)^2=\langle\tilde q\rangle_{\natural}^2$; both are quoted from *The Quaternion Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*, §*The Invariants*.
+*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_t\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_t$ and the determinant is $(q_t^2+|\vec q|^2)^2=\langle\tilde q\rangle_{\natural}^2$; both are quoted from *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators*, §*The Invariants*.
 
 **Corollary.** The **Jordan inverse** is $\mathsf{M}_4(\tilde q^{-1})=(2q_t\mathrm I-\mathsf{M}_4(\tilde q))/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$; the invertibility criterion is $\det\neq0$, and the determinant being a square of the norm, it vanishes only at the origin.
 
@@ -58,7 +58,7 @@ $$
 
 and the two together generate the **full** matrix algebra, $\mathrm{alg}\{\mathsf{M}_4,\mathsf{M}_4'\}=M_4(\mathbb{R})$.
 
-*Proof.* Both sides applied to $\tilde q_3$ give $\tilde q_1\tilde q_3\tilde q_2$ by the associativity of the plain product, which is the commutativity; the fullness is the double centraliser statement of *The Quaternion Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*, §*The Double Centraliser*.
+*Proof.* Both sides applied to $\tilde q_3$ give $\tilde q_1\tilde q_3\tilde q_2$ by the associativity of the plain product, which is the commutativity; the fullness is the double centraliser statement of *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators*, §*The Double Centraliser*.
 
 **Remark (the commutant of the block's family).** The left multiplications alone generate every linear map of the space, as *The Multiplication Operators of the Symmetric Plain Algebra* records, so the block's family is irreducible and its commutant is the scalars; the commuting copy $\mathsf{M}_4'$ is the opposite algebra, and it is invisible to the Jordan product because the Jordan product is commutative. **The passage from the plain to the symmetric plain product forgets the right copy**, which is the matrix form of the one-operator statement $L^{\bullet}=R^{\bullet}$.
 
@@ -73,7 +73,7 @@ and the two together generate the **full** matrix algebra, $\mathrm{alg}\{\maths
 | the inverse | $\mathsf{M}_4(\tilde q)^{-1}=(2q_t\mathrm I-\mathsf{M}_4(\tilde q))/\langle\tilde q\rangle_{\natural}$ | the same formula |
 | the commuting copy | $\mathsf{M}_4'$ genuinely present | $\mathsf{M}_4'$ invisible to the product |
 
-**Remark (what the change of product changes).** As on the $2\times2$ model, the trace, the determinant, the trace form and the inverse formula are **shared**; the half-sum changes the product, replaces the associative product by the Jordan one, and **collapses the right copy into the left** because the product is commutative. The plain model is *The Quaternion Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the two models of the block, the $2\times2$ complex and the $4\times4$ real, read the same trace form, the same determinant and the same inverse, differing only in the coefficient that relates the matrix trace to $\tau$.
+**Remark (what the change of product changes).** As on the $2\times2$ model, the trace, the determinant, the trace form and the inverse formula are **shared**; the half-sum changes the product, replaces the associative product by the Jordan one, and **collapses the right copy into the left** because the product is commutative. The plain model is *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators*; the two models of the block, the $2\times2$ complex and the $4\times4$ real, read the same trace form, the same determinant and the same inverse, differing only in the coefficient that relates the matrix trace to $\tau$.
 
 ## Summary
 
@@ -93,7 +93,7 @@ The left regular representation $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mat
 ## Further Reading
 
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the product.
-- [The Quaternion Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$](the-quaternion-algebra-in-the-4x4-matrix-element-representation.html), for the regular matrices, the commuting copies and the double centraliser.
+- [$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators](h-m4r-regular-representation.html), for the regular matrices, the commuting copies and the double centraliser.
 - [The Multiplication Operators of the Symmetric Plain Algebra](the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternioid.html), for the fullness of the family generated by the left multiplications.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternioid.html), for the trace form.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the other model of the block.

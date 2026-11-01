@@ -1,5 +1,5 @@
 
-# __Split-Complex Element Representations__
+# __Split-Complex Linear Representations__
 
 ## Introduction
 

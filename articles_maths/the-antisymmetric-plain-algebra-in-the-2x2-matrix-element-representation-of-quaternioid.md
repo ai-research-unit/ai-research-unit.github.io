@@ -205,8 +205,8 @@ product, of the whole matrix algebra as image.
 
 ## Further Reading
 
-- [Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions](introduction-to-the-2x2-matrix-element-representation-of-quaternions.html), for the model, the basis images and the multiplicativity.
-- [The Quaternion Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$](the-quaternion-algebra-in-the-2x2-matrix-element-representation.html), for the plain product on the same model.
+- [Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions](h-m2c-standard-representation.html), for the model, the basis images and the multiplicativity.
+- [$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators](h-m2c-standard-representation.html), for the plain product on the same model.
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the identification with $\mathfrak{su}(2)$.
 - [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), below this article in this category, for the invariant form read here as the trace form.
 - [The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$](the-antisymmetric-plain-algebra-in-the-4x4-matrix-element-representation-of-quaternioid.html), below this article in this category, for the companion model.

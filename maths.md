@@ -5211,14 +5211,19 @@
 
 #### Element Representations
 
-<a href="articles_maths/complex-element-representations.html">Complex Element Representations</a>
+<a href="articles_maths/complex-element-representations.html">Complex Linear Representations</a>
 <!-- representations of $\mathbb{C}$ and their classification; the representation ring; the dual representation; tensor products; homomorphisms; comparison with the split complex case. -->
 
 <a href="articles_maths/complex-two-component-element-representation.html">Complex Two-Component Element Representation</a>
 <!-- the complex number read as its two real coordinates; the column and the dual row vector; multiplication in components and the rotation matrix; the conjugation in coordinates; the two fixed-point subspaces; the norm with its two signs. -->
 
-<a href="articles_maths/complex-regular-element-representation.html">Complex Regular Element Representation</a>
-<!-- the left regular representation and the Cayley matrix of multiplication by $z$; the identification of $\mathbb{C}$ with the algebra of conformal $2\times2$ real matrices; multiplicativity and the determinant as the norm; transposition as complex conjugation. -->
+#### Matrix Representations
+
+<a href="articles_maths/c-m2r-cayley-representation.html">$M_2(\mathbb{R})$ Cayley Representation</a>
+<!-- the left multiplication by $Q=q+iq'$ in the basis $(1,i)$, as the Cayley matrix $qI_2+q'J$ displayed entrywise; the image as the two-dimensional algebra of conformal matrices, characterised by $MJ=JM$ and by being the real matrices of the complex-linear maps; the left and right multiplications equal by commutativity, and the centraliser equal to the image; the trace $2q$ and the traceless imaginary line; the determinant equal to the norm $q^2+q'^2$, positive definite and with zero set a point; the absence of an idempotent but $0$ and $I_2$, and the two idempotents $\tfrac12(I_2\mp iJ)$ of the complexification, whose real and imaginary parts are the frame; the eigenvalues $q\pm iq'$ and the isotropic eigenlines; the adjugate, the transpose and the conjugate all one matrix; the trace form of signature $(1,1)$ against the definite determinant; the two distinguished subspaces against the six of the biquaternion algebra. -->
+
+<a href="articles_maths/c-m2r-cayley-representation-operators.html">$M_2(\mathbb{R})$ Cayley Representation : Operators</a>
+<!-- the carrier of dimension two against the ambient $M_2(\mathbb{R})$ of dimension four; the one-sided families equal, and the two-sided operator $X\mapsto QXP$ equal to the multiplication by $QP$, so that four parameters fall to two; the plain adjoint equal to the operator itself and the Frobenius adjoint equal to the operator of the conjugate; the Kronecker display $\mathsf{M}_2(P)^{\mathsf T}\otimes\mathsf{M}_2(Q)$ of rank four, of trace $4\operatorname{Re}Q\operatorname{Re}P$ and determinant $N(Q)^2N(P)^2$; the inner automorphisms trivial on the carrier and a rotation by $2\theta$ on the traceless symmetric plane, the smallest double cover $\mathrm{SO}(2)\to SO(3)$; the linear membership test $MJ=JM$; the span closed at the family itself, because $\mathbb{C}$ is simple but not central; the operator rank two against the coefficient rank one; the transpose as the one operator outside the family. -->
 
 ### Topology
 
@@ -5393,8 +5398,6 @@
 <a href="articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</a>
 <!-- the eigenvalue decomposition of a split-complex number: the spectrum $\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ from the invertibility criterion; the characteristic polynomial $p_Q(X)=X^2-2qX+\langle Q\rangle_{*}=(X-\lambda_+)(X-\lambda_-)$ and the discriminant $4q'^2$; the eigenprojections $\Pi_\pm=\tfrac12(1\pm j)$ with $Q\Pi_\pm=\lambda_\pm\Pi_\pm$ and the Lagrange–Sylvester formulas; the decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, its uniqueness up to the exchange of labels and its semisimplicity for $q'\neq0$; the Peirce decomposition relative to $\Pi_+$, with vanishing off-diagonal corners; the polynomial calculus, the powers, the inverse and the group isomorphism $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$; the algebraic fibre and the coordinate change; the hyperbolic polar form; the eigenbasis $(\Pi_+,\Pi_-)$ with the matrix of $L_Q$ diagonal, the two spinor spaces as the two columns, and the matrix reading in *Eigenbasis of a Split-Complex Number in Matrix Elements Representations*; and the degenerate regimes. -->
 
-<a href="articles_maths/eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html">Eigenbasis of a Split-Complex Number in Matrix Elements Representations</a>
-<!-- the eigenbasis in the matrix element representations: the 2x2 regular matrix and its invariants; the rank-one spectral projectors rho_pm; the diagonal model diag(lambda_+,lambda_-); the change C=1/2[[1,1],[1,-1]] and its inverse; the freedom of the change and the two normal forms; the two columns as the spinor spaces; and the 4x4 realification of the complexified model, with the two 2x2 eigenvalue blocks and the realified change. -->
 
 <a href="articles_maths/worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>
 <!-- the eight split-complex numbers of the polar worked examples read through the spectrum: $5+3j$, $3+5j$, $-5-3j$, $1-2j$, $j$, $2$, $-2$ and $1+j$; the coordinates $(q,q')$, the eigenvalues $\lambda_\pm=q\pm q'$, the fixed eigenprojections $\Pi_\pm=\tfrac12(1\pm j)$, the decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ and the diagonal form $C^{-1}M_QC=\operatorname{diag}(\lambda_+,\lambda_-)$ with $C$ the matrix of columns $(\tfrac12,\tfrac12)$ and $(\tfrac12,-\tfrac12)$; the eigenbasis, the two spinor spaces, the powers and the inverse in each case; the scalar regime with its repeated eigenvalue and every basis, and the zero divisor $1+j$ with distinct eigenvalues $(2,0)$, an existing eigenbasis and no inverse; the summary tables and the patterns across the components. -->
@@ -5407,14 +5410,19 @@
 
 #### Element Representations
 
-<a href="articles_maths/split-complex-element-representations.html">Split-Complex Element Representations</a>
+<a href="articles_maths/split-complex-element-representations.html">Split-Complex Linear Representations</a>
 <!-- representations of $\mathbb{D}$ and their classification; the representation ring; the idempotent decomposition; indecomposable representations; the dual representation; tensor products; comparison with the complex case. -->
 
 <a href="articles_maths/split-complex-two-component-element-representation.html">Split-Complex Two-Component Element Representation</a>
 <!-- the split complex number read as its two real coordinates; the column and the dual row vector; the hyperbolic multiplication in components; the conjugation in coordinates; the two fixed-point subspaces; the norm with its two signs; the two-dimensional opposite of the complex two-component representation. -->
 
-<a href="articles_maths/split-complex-regular-element-representation.html">Split-Complex Regular Element Representation</a>
-<!-- the left regular representation and the Cayley matrix of multiplication by $q+q'j$; the identification of $\mathbb{D}$ with the algebra of $2\times2$ real matrices of hyperbolic type; multiplicativity and the determinant as the norm; the idempotent diagonalisation; the relation to the hyperbolic rotations of the geometry slot. -->
+#### Matrix Representations
+
+<a href="articles_maths/d-m2r-hyperbolic-representation.html">$M_2(\mathbb{R})$ Hyperbolic Representation</a>
+<!-- the left multiplication by $Q=q+jq'$ in the basis $(1,j)$ as the hyperbolic Cayley matrix $qI_2+q'J$ with $J^2=+I_2$, displayed entrywise; the image as the algebra $\mathbb{R}[J]\cong\mathbb{R}\times\mathbb{R}$ of symmetric matrices with equal diagonal, characterised by $CJ=JC$, split semisimple and maximal commutative; the left and right multiplications equal, the centraliser equal to the image; the trace $2q$ and the definite trace form against the indefinite determinant $q^2-q'^2$ whose zero set is the two null lines, the two forms exchanging roles against the complex case; the two real idempotents $\rho_\pm=\mathsf{M}_2(\Pi_\pm)$, the fixed spectral frame and the orthogonal reflection $H$ of determinant $-1$ that diagonalises it; every element diagonalisable, including the zero divisors, and no nilpotent; the adjugate as the signed transpose $gM^{\mathsf T}g$, the conformality $M^{\mathsf T}gM=\langle Q\rangle_*g$ and the four components of $O(1,1)$; the four distinguished subspaces, the null lines and the idempotent lines; the complexified $4\times4$ model as a section. -->
+
+<a href="articles_maths/d-m2r-hyperbolic-representation-operators.html">$M_2(\mathbb{R})$ Hyperbolic Representation : Operators</a>
+<!-- the carrier of dimension two against the ambient of dimension four; the faithful one-sided operator, self-adjoint for both forms and conformal for the split form, of rank $2$, $1$, $0$; the polar word $Q=r\epsilon\exp(\phi j)$ read as $M_Q=rM_\epsilon\exp(\phi J)$ with the full hyperbolic angle and the four components; the two-sided operator equal to the multiplication by $QP$, and the sandwich $QX\bar Q=\langle Q\rangle_*X$ a scalar because the inner automorphisms of a commutative algebra are trivial; the Kronecker display $M_P\otimes M_Q$ of eigenvalues $\lambda_+^2$, $N$, $N$, $\lambda_-^2$, doubling the rapidity on the two pure corners and killing it on the two mixed ones; the rank ladder $\{0,1,2,4\}$ and the faithfulness ladder $\Theta\succ K\succ M$; the Galois twist inner in the ambient through the reflection $g$ and outer in the algebra; the linear membership test and the length in $\{0,1\}$. -->
 
 #### The Plain Algebraic Norm, a Contrast
 
@@ -5468,11 +5476,6 @@
 
 <a href="articles_maths/worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers</a>
 <!-- the eight split-complex numbers of the polar worked examples read in the eigenbasis $(\Pi_+,\Pi_-)$: the idempotents $\Pi_\pm=\tfrac12(1\pm j)$, the basis matrices $[L_1]$, $[L_j]$, $[L_{\Pi_\pm}]$, the two spinors $\xi_+=a_1\Pi_+$ and $\xi_-=a_2\Pi_-$, and the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ in each case -->
-
-#### Operators Representations
-
-<a href="articles_maths/operator-and-the-polar-decomposition-of-a-split-complex-number.html">Operator and the Polar Decomposition of a Split-Complex Number</a>
-<!-- the multiplication operator $M_Q(X)=QX$ and the two-sided operator $\Theta_Q(X)=QX\bar Q$ of the split-complex algebra, where the algebra is commutative and the left and right multiplications coincide: the faithful regular representation, the matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ in the basis $(1,j)$ and the diagonal form $\operatorname{diag}(\lambda_+,\lambda_-)$ in the fixed idempotent basis; the split-form identity $M_Q^{T}gM_Q=N(Q)g$ and the Lorentz reading of the boost and the reflection; the polar word $Q=r\epsilon\exp(\phi j)$ read as $M_Q=rM_\epsilon\exp(\phi M_j)$, with the scale as $r$, the boost as $e^{\pm\phi}$ and the discrete sign; the absence of a half-angle, of a spin double cover and of the nilpotent Peirce construction; the two-sided collapse $QX\bar Q=N(Q)X$, the inner automorphism of a commutative algebra, the image $\mathbb{R}^{\times}I$ and the kernel $\{N=1\}$; the null cone, the rank drop, and the reduced semisimple structure. -->
 
 ### Geometry
 
@@ -6100,20 +6103,16 @@
 <a href="articles_maths/quaternion-four-vector-element-representation.html">Quaternion Four-Vector Element Representation</a>
 <!-- the quaternion read as its four real coordinates; the column and the dual row vector; multiplication in components and the cross product term; the three involutions in coordinates; the scalar and vector subspaces; the norm with four positive signs. -->
 
-<a href="articles_maths/introduction-to-the-2x2-matrix-element-representation-of-quaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions</a>
-<!-- the embedding $\mathbb{H}\to M_2(\mathbb{C})$ and the images of the basis; the trace and the determinant; the images of the scalar and the vector subspaces; the conjugations in matrix form; the Hermitian form and the Euclidean norm; the worked image; and the absence of a real $2\times2$ representation. -->
-
-<a href="articles_maths/the-quaternion-algebra-in-the-2x2-matrix-element-representation.html">The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$</a>
-<!-- the plain product read on the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$: the product is the matrix product; the form is the trace pairing; the coefficient Gram matrix and its signature; the real and the complex dimension of the image; the units and the invariants trace and determinant; the inner automorphisms and the transpose as isometries. -->
-
-<a href="articles_maths/introduction-to-the-4x4-matrix-element-representation-of-quaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions</a>
-<!-- the left regular representation $\mathsf{M}_4(q)(r)=qr$ and the Cayley matrix of left multiplication in the basis $e_0,e_1,e_2,e_3$; the multiplicativity read from associativity; the determinant as the square of the norm and the trace; the images of the scalar and the vector subspaces; the left and right regular representations; transposition and the conjugations; the double centraliser; and a worked Cayley matrix. -->
-
-<a href="articles_maths/the-quaternion-algebra-in-the-4x4-matrix-element-representation.html">The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$</a>
-<!-- the plain product read on the left regular representation $\mathsf{M}_4(q)(r)=qr$: the product is the product of the regular matrices; the form is the trace pairing with the same Gram matrix; the two commuting copies of $\mathbb{H}$ and its opposite; the transposition relation; the invariants trace and determinant; the double centraliser; and the comparison with the complex case. -->
-
 <a href="articles_maths/quaternion-other-algebraic-element-representations.html">Quaternion Other Algebraic Element Representations</a>
 <!-- the role of choices. -->
+
+#### Matrix Representations
+
+<a href="articles_maths/h-m2c-standard-representation.html">$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation</a>
+<!-- the embedding $\mathbb{H}\to M_2(\mathbb{C})$ with image $\{A:A_{21}=-\overline{A_{12}},\ A_{22}=\overline{A_{11}}\}$ as a real form fixed by $A\mapsto J\overline{A}J^{-1}$; the absence of a real model of degree two; the left and right matrices as two commuting copies, related by the conjugate transpose; the trace $2q_t$ and the traceless part as the skew-Hermitian matrices; the determinant as the norm, positive definite and without a null cone; the discriminant $-4\lVert\vec v\rVert^{2}$ and the conjugate pair $q_t\pm i\lVert\vec v\rVert$; the Hermitian projectors $\tfrac12(I\pm i\mathsf{M}_2(u))$ as the images of the idempotents of the complexified algebra; the adjugate as the conjugate transpose and the conformal normality; the three forms of signatures $(4,0)$, $(1,3)$ and $(4,0)$; the Hermitian part as scalar. -->
+
+<a href="articles_maths/h-m4r-regular-representation.html">$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation</a>
+<!-- the left multiplication read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, as the Cayley matrix displayed entrywise; the minimal faithful real model, and the realification of the complex one, which squares the determinant and doubles the trace; the right multiplication as the signed transpose $D\mathsf{M}_4^{\mathsf T}D$; the trace $4q_t$ and the traceless pure part; the determinant $N^{2}$, positive and without a null cone; the characteristic polynomial $(\lambda^{2}-2q_t\lambda+N)^{2}$ and the two identical rotation-scaling blocks; the adjugate $N\mathsf{M}_4(\tilde q^{*})$; the three forms of signatures $(4,0)$, $(1,3)$, $(4,0)$; the symmetric part as scalar; the double centraliser; the dictionary with the complex model. -->
 
 #### Operators
 
@@ -6128,6 +6127,14 @@
 
 <a href="articles_maths/the-pin-and-spin-groups-of-the-quaternion-algebra.html">The Pin and Spin Groups of the Quaternion Algebra</a>
 <!-- the pin and spin groups of the plain form: the quadratic form $\mathrm{Sc}(q^2)$ is not multiplicative, so the shells are not groups and there is no pin group inside the algebra; what exists is the unit group acting by inner automorphisms, the two cosets $\pm\mathrm{Ad}_q$, the kernel of the action and its normalised section; the reflections; and the relation to the versors of *Quaternion Rotations and Reflections*. -->
+
+##### Matrix Operator Representations
+
+<a href="articles_maths/h-m2c-standard-representation-operators.html">$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators</a>
+<!-- the carrier of real dimension four against the ambient $M_4(\mathbb{R})$ of dimension sixteen; the two one-sided families of dimension four, commuting and meeting in the scalars, spanning seven dimensions; the two-sided operator $\tilde x\mapsto\tilde q\tilde x\tilde p$ of rank four, determinant $N(\tilde q)^{2}N(\tilde p)^{2}$ and trace $4q_tp_t$; the failure of the Kronecker display and the coefficient matrix that replaces it; the basis $L_{e_\mu}R_{e_\nu}$ and $c=\tilde q\tilde p^{\mathsf T}$ of rank one; the Segre cone of dimension seven and the membership test; the length as the coefficient rank with strata $0,7,12,15,16$; the rank-two sum $T_{e_t,e_t}+T_{\vec e_x,\vec e_x}$ that is not a product. -->
+
+<a href="articles_maths/h-m4r-regular-representation-operators.html">$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators</a>
+<!-- the same operators as the complex reading, in the Cayley frame; the two one-sided families as mutual centralisers meeting in the scalars; the sixteen products as signed permutation matrices of determinant one, and the thirty-two signed ones as a group of order $32$ inside $SO(4)$; the trace table $4\delta_{\mu t}\delta_{\nu t}$ and the rank-four products of determinant $N(\tilde q)^{2}N(\tilde p)^{2}$; the two arrays of one size, Cayley and coefficient, and the fixed linear map between them; the Segre cone smooth away from its vertex; the length with strata $0,7,12,15,16$; the cancellation $T_{e_t,e_t}+T_{\vec e_x,\vec e_x}=\operatorname{diag}(0,0,2,2)$; the absence of the Peirce frame and of the chirality, both for want of a system of matrix units. -->
 
 ### Topology
 
@@ -6480,9 +6487,6 @@
 <a href="articles_maths/split-quaternion-element-representations.html">Split-Quaternion Element Representations</a>
 <!-- the representations of $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ and their classification; semisimplicity and the irreducible representations; the representation ring; the relation to the representations of the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$; the double cover of the Lorentz group of signature $(2,1)$; comparison with the quaternion case. -->
 
-<a href="articles_maths/split-quaternion-matrix-element-representations.html">Split-Quaternion Matrix Element Representations</a>
-<!-- the faithful $2\times2$ real matrix representation, its existence and its uniqueness up to conjugacy; the determinant as norm and the trace as scalar part; the image of the algebra as a linear subspace of $M_2(\mathbb{R})$; comparison with $\mathbb{H}$ and with the absence of such a representation for $\mathbb{H}_{\mathbb{D}}$. -->
-
 <a href="articles_maths/split-quaternion-four-vector-element-representation.html">Split-Quaternion Four-Vector Element Representation</a>
 <!-- the split quaternion read as its four real coordinates; the column and the dual row vector; multiplication in components; the three involutions in coordinates; the scalar and vector subspaces; the norm with its signs; the analogue of the four-vector representation of $\mathbb{B}$. -->
 
@@ -6496,9 +6500,6 @@
 
 <a href="articles_maths/hs-m2r-standard-representation-operators.html">$M_2(\mathbb{R})$ Standard Representation : Operators</a>
 <!-- the one-sided operators and their adjoints for the trace and the Frobenius forms; the two-sided operator $X\mapsto AXB$, its determinant $\det(A)^2\det(B)^2\ge0$ and its rank $\operatorname{rank}A\cdot\operatorname{rank}B$; the composition as $M_2\times M_2^{\mathrm{opp}}$ and the conjugations as $\mathrm{PGL}_2(\mathbb{R})$; the Kronecker display and the coefficient matrix; the cone of single products as the Segre cone of dimension seven; the length as the coefficient rank with strata $0,7,12,15,16$; the independence of the operator rank and the length. -->
-
-
-#### Operators
 
 ### Topology
 

@@ -819,7 +819,7 @@ and in particular $Q^2=2Q=2+2j$. There is no inverse. The two spinor spaces read
 ## Further Reading
 
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
-- [Eigenbasis of a Split-Complex Number in Matrix Elements Representations](eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html), for the matrix model, the spectral projectors and the change of basis.
+- [$M_2(\mathbb{R})$ Hyperbolic Representation](d-m2r-hyperbolic-representation.html), for the matrix model, the spectral projectors and the change of basis.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the same eight elements read through the polar word.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the four-dimensional commutative companion.

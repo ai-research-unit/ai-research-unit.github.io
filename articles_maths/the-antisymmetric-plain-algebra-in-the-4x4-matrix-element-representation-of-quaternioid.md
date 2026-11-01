@@ -174,7 +174,7 @@ four-dimensional regular algebra as image.
 
 ## Further Reading
 
-- [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$ of Quaternions](introduction-to-the-4x4-matrix-element-representation-of-quaternions.html), for the model and its basis matrices, and for the plain product on the same model.
+- [*$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation*](h-m4r-regular-representation.html), for the model and its basis matrices, and for the plain product on the same model.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the two commuting regular copies and the two-sided operators.
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra-of-quaternioid.html) and [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.html), both below this article in this category, for the structure and the form read here on the model.
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), above this article in this category, for the companion model.

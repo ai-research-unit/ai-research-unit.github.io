@@ -176,5 +176,5 @@ The closures are $\mathbb{D}$, the null cone, the real axis and the origin. Ever
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the null lines and the annihilators.
 - [Split-Complex Algebra](split-complex-algebra.html), for the product and the idempotent decomposition.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the spectral decomposition.
-- [Eigenbasis of a Split-Complex Number in Matrix Elements Representations](eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html), for the matrix models.
+- [$M_2(\mathbb{R})$ Hyperbolic Representation](d-m2r-hyperbolic-representation.html), for the matrix models.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for explicit computations.

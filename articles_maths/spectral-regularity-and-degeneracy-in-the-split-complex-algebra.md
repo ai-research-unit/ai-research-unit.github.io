@@ -214,7 +214,7 @@ The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathb
 - [The Spectrum](the-spectrum.html), for the cone and its strata.
 - [Split-Quaternion Spectral Theory](split-quaternion-spectral-theory.html), for the cone and its defects.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the eigenprojections and the regimes.
-- [Eigenbasis of a Split-Complex Number in Matrix Elements Representations](eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html), for the matrix models.
+- [$M_2(\mathbb{R})$ Hyperbolic Representation](d-m2r-hyperbolic-representation.html), for the matrix models.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the eight cases.
 - [Relations between the Split Norm and Spectral Regularity and Degeneracy](relations-between-the-split-norm-and-spectral-regularity-and-degeneracy.html), for the two conditions.
 - [The Four Sectors of the Split-Complex Algebra](the-four-sectors-of-the-split-complex-algebra.html), for the four combinations.

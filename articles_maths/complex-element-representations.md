@@ -1,5 +1,5 @@
 
-# __Complex Element Representations__
+# __Complex Linear Representations__
 
 ## Introduction
 

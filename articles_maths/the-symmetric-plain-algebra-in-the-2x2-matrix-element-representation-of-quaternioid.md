@@ -19,7 +19,7 @@ $$
 \mathsf{M}_2(\tilde q_1\bullet\tilde q_2)=\tfrac12\bigl(\mathsf{M}_2(\tilde q_1)\mathsf{M}_2(\tilde q_2)+\mathsf{M}_2(\tilde q_2)\mathsf{M}_2(\tilde q_1)\bigr)\;}.
 $$
 
-*Proof.* Multiplicativity is *The Quaternion Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*, §*The Product*; the second identity is its linearity applied to the definition $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$.
+*Proof.* Multiplicativity is *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*, §*The Product*; the second identity is its linearity applied to the definition $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$.
 
 **Remark (the block is the Jordan image of a matrix algebra).** Because $\mathsf{M}_2$ is multiplicative and injective, the block is the image of the **symmetrised matrix algebra** $\mathsf{M}_2(\mathbb{H})^{+}$: the Jordan product $\bullet$ is transported to the anticommutator of the matrices. The block is therefore a **special** Jordan algebra realised concretely, and the *half-sum* is the whole content of the representation.
 
@@ -32,7 +32,7 @@ $$
 \det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2\;}.
 $$
 
-*Proof.* The trace is $2q_t$ on the embedding; the determinant is the multiplicativity of the norm, $\det\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})$ read as $\langle\tilde q\rangle_{\natural}$, by *The Quaternion Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*, §*The Units and the Invariants*.
+*Proof.* The trace is $2q_t$ on the embedding; the determinant is the multiplicativity of the norm, $\det\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})$ read as $\langle\tilde q\rangle_{\natural}$, by *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*, §*The Units and the Invariants*.
 
 **Corollary.** The **Jordan inverse** is the normalised conjugate, $\mathsf{M}_2(\tilde q^{-1})=(2q_t\mathrm I-\mathsf{M}_2(\tilde q))/\langle\tilde q\rangle_{\natural}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$; and the invertible elements are exactly those with $\det\neq0$, the nonzero elements.
 
@@ -60,7 +60,7 @@ $$
 | the trace form | $\tfrac12\operatorname{tr}(\;\cdot\;\cdot\;)$, signature $(1,3)$ | the same |
 | the inverse | $\mathsf{M}_2(\tilde q)^{-1}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$ | the same formula |
 
-**Remark (what the change of product changes).** The trace, the determinant, the trace form and the inverse formula are **shared**: they depend on the plain product and the unit, which the embedding preserves. What the half-sum changes is the **product**: the associative matrix product becomes the commutative Jordan product, the brackets $[\mathsf{M}_2(\tilde q_1),\mathsf{M}_2(\tilde q_2)]$ are traded for the anticommutator, and the group $\mathsf{M}_2(\mathbb{H})^{\times}$ of the plain model is replaced by the multiplicatively unclosed invertible set of the block. The plain model is *The Quaternion Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$*.
+**Remark (what the change of product changes).** The trace, the determinant, the trace form and the inverse formula are **shared**: they depend on the plain product and the unit, which the embedding preserves. What the half-sum changes is the **product**: the associative matrix product becomes the commutative Jordan product, the brackets $[\mathsf{M}_2(\tilde q_1),\mathsf{M}_2(\tilde q_2)]$ are traded for the anticommutator, and the group $\mathsf{M}_2(\mathbb{H})^{\times}$ of the plain model is replaced by the multiplicatively unclosed invertible set of the block. The plain model is *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*.
 
 ## Summary
 
@@ -79,6 +79,6 @@ The $2\times2$ matrix element representation $\mathsf{M}_2:\mathbb{H}\hookrighta
 ## Further Reading
 
 - [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the product.
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions](introduction-to-the-2x2-matrix-element-representation-of-quaternions.html), for the embedding, its multiplicativity and its invariants.
+- [*$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation*](h-m2c-standard-representation.html), for the embedding, its multiplicativity and its invariants.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternioid.html), for the trace form.
 - [Norm and Invertibility in the Symmetric Plain Algebra](norm-and-invertibility-in-the-symmetric-plain-algebra.html), for the norm, the inverse and the invertibility criterion.
