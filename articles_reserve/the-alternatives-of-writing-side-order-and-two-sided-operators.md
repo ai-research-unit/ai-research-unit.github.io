@@ -79,7 +79,7 @@ There are six ways to write a right action, and only one of them is used by the 
 | N0 | Bare juxtaposition | $\tilde\Psi\tilde\nabla$ | Nowhere; it is the ambiguous case |
 | N1 | Arrow | $\tilde\Psi\overleftarrow{\tilde\nabla}$ | Quantum field theory, anomalies, chiral perturbation theory |
 | N2 | Dot scope | $\vec A\,\dot{\vec\nabla}$ | Geometric algebra, calculus of variations |
-| N3 | Opposite-algebra name | $\tilde\Psi\,\tilde\nabla^{\mathrm{opp}}$ | Ring theory, module theory |
+| N3 | Named operator | $R_{\tilde\nabla}(\tilde\Psi)$, the corpus's own $R_{\tilde Q}$ | Ring theory puts the side in a superscript on the derivative; that superscript belongs to algebras, not to operators |
 | N4 | Bimodule subscripts | ${}_{\tilde\nabla}\tilde\Psi$ | Module theory, in running text only |
 | N5 | Row-vector flip | every field written as a row | Elementary matrix algebra |
 
@@ -89,9 +89,9 @@ There are six ways to write a right action, and only one of them is used by the 
 
 **N2 is exact but barred.** The dot says which factor carries the derivative, so it survives products of three or more factors, where the arrow cannot say which one is meant. But the corpus has removed the glyph: *Operator and Calculus Conventions* states that no derivative is written with a dot, and a scan of the four hundred and four articles finds no derivative dot at all, every instance of the dot token in the corpus being the ellipsis of $\dots$. Reintroducing it for scope would collide with a rule the corpus has already paid for.
 
-**N3 is exact and legal, and the corpus already owns the spelling.** $\tilde\nabla^{\mathrm{opp}}$ names the right-acting gradient and needs no glyph. The cost is that the side is fused into the name: a reader who does not know the convention reads $\tilde\nabla^{\mathrm{opp}}$ as a different operator rather than as the same operator acting from the other side. It is the natural choice for a reader coming from algebra and the unnatural one for a reader coming from physics.
+**N3 is exact and legal, and the corpus already owns the name.** The right action is $R_{\tilde\nabla}(\tilde\Psi)$, with the operator named and the side carried by the letter. Ring theory writes the same thing into a superscript on the derivative itself, and that spelling is not available here: $^{\mathrm{opp}}$ marks an algebra and never an operator, so it is written on $\mathbb{B}^{\mathrm{opp}}$ and on the tensor factor $e_\nu^{\mathrm{opp}}$, and on nothing that acts. The corpus's name is $L$, $R$ or $T$, with the element in the subscript. The cost of any name is that the side is fused into it: a reader who does not know it reads $R_{\tilde\nabla}(\tilde\Psi)$ as a different operator rather than as the same operator acting from the other side. It is the natural choice for a reader coming from algebra and the unnatural one for a reader coming from physics.
 
-**The letters matter, and the corpus has now decided all of them.** *Algebra and Element Conventions* and *Index and Notation Conventions* both state that the opposite algebra carries the three-letter superscript, $\mathbb{B}^{\mathrm{opp}}$ with $a\cdot_{\mathrm{opp}}b=ba$, and both now state that the two-letter $\mathrm{op}$ is not a token of the corpus at all. The reason is the distance between the two: one letter out of three, at superscript size, does not separate two meanings at reading speed, so a page carrying both would be undecidable. A scan of the two collections returns one thousand and ninety-five occurrences of $\mathrm{opp}$ in one hundred and seventy-eight articles, every one of them naming an opposite algebra, and nine occurrences of $\mathrm{op}$ in five articles, every one of them inside the sentence that forbids it.
+**The letters matter, and the corpus has now decided all of them.** *Algebra and Element Conventions* and *Index and Notation Conventions* both state that the opposite algebra carries the three-letter superscript, $\mathbb{B}^{\mathrm{opp}}$ with $a\cdot_{\mathrm{opp}}b=ba$, and both now state that the two-letter $\mathrm{op}$ is not a token of the corpus at all. The reason is the distance between the two: one letter out of three, at superscript size, does not separate two meanings at reading speed, so a page carrying both would be undecidable. A scan of the two collections returns one thousand one hundred and fifty-five occurrences of $\mathrm{opp}$ in one hundred and eighty-five articles, every one of them naming an opposite algebra, an opposite ring, an opposite category or the tensor factor of the multiplication map, and never an operator; and nine occurrences of $\mathrm{op}$ in five articles, every one of them inside the sentence that forbids it.
 
 | The two-letter form | Now |
 |---|---|
@@ -103,7 +103,7 @@ There are six ways to write a right action, and only one of them is used by the 
 
 Twenty-three articles of the two collections carried one or another of these, and none of them survives. The nearest survivor is a single character, the bare bar of the norm, which is what the functional-analysis articles already wrote throughout, and which the matrix articles now write where they once wrote the two-letter label.
 
-**So the spelling for the right-acting gradient is fixed twice over.** It cannot be $\tilde\nabla^{\mathrm{op}}$, because that token no longer exists. It can be $\tilde\nabla^{\mathrm{opp}}$, three letters, which is legal and correct under the corpus's rule. And it need not be either, because the arrow says the same thing in one glyph.
+**So the spelling for the right-acting gradient is fixed, and the arrow is not the only form.** The derivative carries no superscript of its own: the two-letter mark no longer exists, and the three-letter one names an algebra and not an operator, so neither may sit on a derivative. What remains is the name, $R_{\tilde\nabla}(\tilde\Psi)$, or the arrow, $\tilde\Psi\overleftarrow{\tilde\nabla}$. The two say the same thing; the name is longer and needs a family, the arrow is one glyph and needs no introduction.
 
 **N4 is exact and unreadable.** Subscripts state the module structure precisely and are unusable at display size. They are the right notation for a proof and the wrong notation for an equation.
 
@@ -174,6 +174,67 @@ It is the only one of the three routes that turns every right action into a left
 **R2 is blind on the mass.** The admixture $[\psi,b]$ vanishes exactly when $b$ is central, and the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, which is where the mass lives. A Lagrangian does not keep the commutator, it keeps the scalar part of a product, $\mathrm{Sc}(\bar\psi[\psi,b])$, and there the blindness is sharper. With the norm form $\bar\psi=\psi^{\natural}$ the term is zero exactly: $\psi^{\natural}\psi=\psi\psi^{\natural}=N(\psi)e_t$, both factors fixed by the natural sign, so $\psi^{\natural}[\psi,b]=N(\psi)(b-b)$. With a bar that is not the natural sign it is not zero: at $\psi=\vec e_x+i\vec e_y$ and $b=\vec e_z$ the product is $-4i\,e_t$ and the Lagrangian term is $-4i$. So R2 either deletes the term the corpus cares about or silently replaces it by another.
 
 **R3 is barred.** Same reason as N4.
+
+## The Element and the Operator
+
+The tables above sort the signs by what they mark. They do not sort them by where they live, and that is a second axis, independent of the first. Every sign in this note sits on one of two levels, and a sign from one level never replaces a sign from the other.
+
+| Level | What the operator is | The signs | What the level costs |
+|---|---|---|---|
+| Algebra | an element of $\mathbb{B}$, or a derivation on it | $\overrightarrow{\ }$, $\overleftarrow{\ }$, the dot, the sandwich $\operatorname{nat}\circ L\circ\operatorname{nat}$ | nothing: no basis, no frame, no coordinates |
+| Array | a matrix, $4\times4$ over $\mathbb{C}$ | $L_b$, $R_b$, $T_{a,b}$, the carrier matrix, the row-vector flip N5 | a basis, a frame, and four coordinates per element |
+
+The line between the two rows falls between the element and $L_b$, not inside either list. The superscript $\mathrm{opp}$ belongs to neither row: it names an algebra, never an operator, and it is written on $\mathbb{B}^{\mathrm{opp}}$ and on the tensor factor $e_\nu^{\mathrm{opp}}$ of the multiplication map, where no side is in question. **The arrow marks an element that has been put in the operator position, and it leaves the element in the algebra.** $L_b$ and $R_b$ are that element's two matrix representatives, and a reader needs them at all only because $\mathbb{B}\cong M_2(\mathbb{C})$: the same element has two, and the choice between them is the subject of this note. So the arrow and the matrix are not rival spellings of one sign. The arrow is the calculus's own writing, the matrix is its image; a display that needs a trace, a determinant or a rank must cross over, and a display that does not must not.
+
+**The same element is both.** Because $L_\psi(b)=\psi b=R_b(\psi)$, a display can put the arrow on either factor of a product and print the same element. With $\psi=e_t+2\vec e_y$ and $b=\vec e_x$,
+
+$$
+\overrightarrow{(e_t+2\vec e_y)}\,\vec e_x=(e_t+2\vec e_y)\overleftarrow{\vec e_x}=\vec e_x-2\vec e_z ,
+$$
+
+and the value is invariant for a reason that has nothing to do with biquaternions: it is associativity, and it holds in every associative algebra.
+
+**The operator is not invariant.** That is one element and two operators, acting on two different operands, and the difference between them is total:
+
+| | $\overrightarrow{\psi}$ on $b$ | $b$ rightward on $\psi$ |
+|---|---|---|
+| The operator | $L_\psi$ | $R_b$ |
+| Its value on $e_t$ | $e_t+2\vec e_y$ | $\vec e_x$ |
+| Its square, on $e_t$ | $-3e_t+4\vec e_y$ | $-e_t$ |
+| Distance to the other | $\lVert L_\psi-R_b\rVert=\sqrt{10}$, operator norm | |
+
+So the arrow may be moved, and the value survives; the computation does not. A chain written by moving the arrow is right in its first line and wrong from the second, and it is the one failure in this note that leaves no visible discontinuity, because the first line checks.
+
+**The centre is where the duality vanishes.** If $b$ is scalar then $L_b=R_b=\operatorname{ad}_b$, the two readings are one operator, and the placement carries no information. Off the centre it carries everything: for a unit frame element $\lVert L_b-R_b\rVert=2$, and $\lVert T_{a,b}-T_{b,a}\rVert=2$ for two distinct frame units, against $0$ for both on the centre. The mass sits on that zero, which is why it is written $m\,T_{e_t,e_t}$ and not $m$.
+
+**The position rule.** The arrow sits on the factor the display treats as the operator, on the side from which it acts, and every arrow in one display marks the same factor. Three consequences, which are the operational content of the section.
+
+1. On a derivation the arrow is compulsory and its position is forced, because a derivative has no element reading: $\psi\tilde\nabla$ is not a product of two elements, so nothing else fixes which factor acts.
+2. On an element it is free in value and fixed in consistency: one product can be read either way, but a page that reads it both ways in two consecutive lines has stopped being a computation.
+3. The arrow never migrates inside a display. If the operand must become the operator, that is a rewrite, and the rewrite is $\operatorname{nat}$ on a whole operator, not a relocation of the glyph.
+
+**The opposite algebra is a mark of an algebra, not of an operator.** $\mathbb{B}^{\mathrm{opp}}$ is the same carrier with the product reversed, $a\cdot_{\mathrm{opp}}b=ba$, and the corpus writes the superscript on algebras and on the tensor factor $e_\nu^{\mathrm{opp}}$ of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$. It is never written on an operator, and it cannot mark a side either, because the reversed product is entered from the other end and its glyph does not say so. With $\psi=e_t+2\vec e_y$ and $b=\vec e_x$, the two orders read
+
+$$
+b\cdot_{\mathrm{opp}}\psi=\psi b=\vec e_x-2\vec e_z,
+\qquad
+\psi\cdot_{\mathrm{opp}}b=b\psi=\vec e_x+2\vec e_z,
+$$
+
+which are the right action and the left one, and neither glyph announces which it is. A page written that way would have to remember, at every step, which multiplication is in force. A side is stated, not encoded in a product.
+
+**Why the arrow, and why nothing better exists.** For a two-sided operator the display is a pair, $\overrightarrow{a}\psi\overleftarrow{b}$, and each alternative fails at the one place it is needed.
+
+| Alternative | Exact? | Why it is not the display |
+|---|---|---|
+| $a\psi b$ | as a product, yes | N0: which of the two acts is not stated, and a coefficient prints alike |
+| $T_{a,b}$, $L_aR_b$ | yes | Matrices: a basis, a frame, four coordinates per element |
+| Dot scope $\vec a\dot{\vec\nabla}$ | yes | Scopes a derivative, not a side; the glyph is barred |
+| Pre- or subscript | yes | Unreadable at display size |
+| Row vectors | yes | Every matrix on every page transposes |
+| Components | yes | Barred with the index calculus |
+
+What is left is the arrow. It is the only sign that states a side, changes nothing else, and needs no frame; it is the only one of the six that a reader coming from physics already knows for this purpose. Its two limits are real and both are recorded above: it carries nothing but the side, and it cannot say which of three factors a derivative belongs to. Within those limits, **for a two-sided biquaternion operator the pair of arrows is the best available writing, and no more satisfying alternative exists in this corpus.**
 
 ## Why the Arrow and the Transposition Do Not Compete
 
@@ -290,7 +351,7 @@ $$
 | N0 | $\tilde\nabla\tilde\Psi_R$ | The corpus form, correct because the operator is written first; the systematic form adds the left arrow, $\overrightarrow{\tilde\nabla}\tilde\Psi_R$ |
 | N1 | — | Not applicable, the field is not to the left |
 | N2 | — | Not applicable |
-| N3 | $\tilde\nabla^{\mathrm{opp}}\tilde\Psi_R$ | Legal, and it would state a side that is already stated |
+| N3 | $L_{\tilde\nabla}(\tilde\Psi_R)$ | Legal, and it names a side that the position already fixes |
 | N4 | ${}_{\tilde\nabla}\tilde\Psi_R$ | Exact, noisy |
 | N5 | unchanged | The field is a biquaternion, not a row |
 
@@ -327,7 +388,7 @@ This is the only one of the twelve where the display choice actually decides whe
 | N0 | $\tilde\Psi\tilde\nabla$ | No: indistinguishable from a left action |
 | N1 | $\tilde\Psi\overleftarrow{\tilde\nabla}$ | Yes, and it is the corpus form |
 | N2 | $\vec\nabla$ acting on the previous factor, marked by a dot | Yes, and unambiguous for three factors |
-| N3 | $\tilde\Psi\,\tilde\nabla^{\mathrm{opp}}$ | Yes, at the price of a name to remember |
+| N3 | $R_{\tilde\nabla}(\tilde\Psi)$ | Yes, at the price of a name to remember |
 | N4 | ${}_{\tilde\nabla}\tilde\Psi$ | Exact, unreadable in a display |
 | N5 | transpose the field | Would change the whole article |
 
@@ -350,7 +411,7 @@ $$
 | N0 | $G^+\nabla$ | No |
 | N1 | $G^+\overleftarrow{\nabla}$, and with the tilde restored $G^+\overleftarrow{\tilde\nabla}$ | Yes, and it shows at a glance which of the two terms acts which way |
 | N2 | $g_m$ times a scoped derivative | Yes, and less legible in a four-term sum |
-| N3 | $G^+\nabla^{\mathrm{opp}}$ | Exact, and shorter than the arrow |
+| N3 | $R_{\nabla}(G^+)$ | Exact, and longer than the arrow |
 | N4 | subscripted | No, in a display |
 | N5 | transpose $G^+$ | Local only, and it hides the symmetry |
 
@@ -532,7 +593,7 @@ $$
 |---|---|---|
 | N0 | $\tilde\nabla\Gamma$ | Correct: the operator is on the left and acts on what follows |
 | N1 | — | Would add a side that the writing already fixes |
-| N3 | $\Gamma\tilde\nabla^{\mathrm{opp}}$ | Legal only if the convention were right-to-left |
+| N3 | $L_{\tilde\nabla}(\Gamma)$ | Legal only if the convention were right-to-left |
 | N4 | subscript | No |
 | N5 | transpose | No |
 
@@ -575,7 +636,7 @@ $$
 |---|---|---|
 | N1 | as written | Correct, and ambiguous about the operand |
 | N2 | dot scope on each factor | Clearer about which argument is differentiated |
-| N3 | $\partial^{\mathrm{opp}}$ | Exact, and hides that there are two operands |
+| N3 | $R_{\partial_1}$, $R_{\partial_2}$ | Exact, and hides that there are two operands |
 | N4 | subscripts on both arguments | Exact, unreadable |
 | N5 | — | No |
 
@@ -686,7 +747,7 @@ The corpus follows a rule. It has never been written down, and it is short enoug
 
 **Tier one: name the operator.** Left multiplication, right multiplication, two-sided operator, frame cell, chirality cell, mass-shell cell. No glyph, no arrow, no dot. This covers the ordinary language of the corpus and should be the default in every article.
 
-**Tier two: the arrow, for a side that needs marking.** $\overrightarrow{b}\psi$ for the left action and $\psi\overleftarrow{b}$ for the right one, on elements and on derivatives alike, always with the arrow on the operator and its tip on the operand, and above the tilde when the operator carries one, $\overrightarrow{\tilde\nabla}$. The tier is a ration and not a prohibition, and the ration is measured: marking every action prints twenty marks where the corpus prints four, and six of the twenty state nothing. It is chosen because it is shorter than the sandwich, not because the sandwich fails. For a derivative the arrow is not merely shorter but required, since a derivative has no cell form. Defined once, in the operator conventions, with two clauses fixed: that the arrow points at what the operator acts on, and that the double arrow means one derivative on each side with the sign convention stated.
+**Tier two: the arrow, for a side that needs marking.** The placement rule is in *The Element and the Operator*: the mark goes on the factor the display treats as the operator, and it never migrates within a display. $\overrightarrow{b}\psi$ for the left action and $\psi\overleftarrow{b}$ for the right one, on elements and on derivatives alike, always with the arrow on the operator and its tip on the operand, and above the tilde when the operator carries one, $\overrightarrow{\tilde\nabla}$. The tier is a ration and not a prohibition, and the ration is measured: marking every action prints twenty marks where the corpus prints four, and six of the twenty state nothing. It is chosen because it is shorter than the sandwich, not because the sandwich fails. For a derivative the arrow is not merely shorter but required, since a derivative has no cell form. Defined once, in the operator conventions, with two clauses fixed: that the arrow points at what the operator acts on, and that the double arrow means one derivative on each side with the sign convention stated.
 
 **Tier three: dot scope, for a product of three or more factors carrying derivatives.** The arrow cannot say which factor is meant when there are three. Dot scope can. It is currently barred by the no-dot rule, which is about $\dot x$ for $dx/dt$ and not about scope, and the ban could be narrowed to the case it was written for. Nothing in the corpus needs this tier yet; the Poisson bracket is the only expression that nearly does.
 
@@ -709,11 +770,11 @@ The principle, restated now that the side mark is allowed on any object: **the a
 
 The recommendation is therefore two-sided. Allow the pair $\overrightarrow{\ }$ and $\overleftarrow{\ }$ on any object that acts, elements included, because there the mark states a side that no other single glyph states. Keep it off names: the algebra's left action takes a prescript, $\mathbb{C}\otimes\mathbb{O}$ becoming ${}_{L}\mathbb{C}\otimes\mathbb{O}$, or the word. Two sentences in the operator conventions would fix it, one per mark, and the seven articles would need no rewriting today; only the four that quote the chain algebra would change a glyph.
 
-This note does not make the change. It records the decision, because a reserve note is the right place to argue it and the conventions article is the right place to state it.
+The decision is now stated where it belongs. *Operator and Calculus Conventions* carries it in §*The Operators*, under two headings: the mark of a side against the mark of a part, and the two arrows of a two-sided operator, with the alternatives listed and their costs. So the rule is no longer this note's proposal. What remains is its application: the four articles that decorate an algebra with the arrow still do, and they change a glyph when the prescript is adopted.
 
 ## Failure Modes
 
-Six failures are easy to produce, and each has been produced during the writing of this note.
+Seven failures are easy to produce, and each has been produced during the writing of this note.
 
 **Confusing the two transposes.** The plain array transpose and the corpus's $\operatorname{nat}$ differ on two of the four units, with residual $2$ on $\vec e_x$. A reader who transposes without the $\sigma_2$ in the matrix model gets $\vec e_y$ right and the other two wrong, which is the worst possible outcome: the formula looks like it works.
 
@@ -727,12 +788,14 @@ Six failures are easy to produce, and each has been produced during the writing 
 
 **Imposing one of two conditions in a check.** The spin resolution is idempotent only for a spin vector with both $s\cdot p=0$ and $s^2=-1$. A check that imposes one of the two reports a false failure, and a check that imposes neither reports a false success on the sum and a false failure on the square. Both happened here before the third attempt imposed both.
 
+**Moving the arrow to the other factor.** The right action $\psi\overleftarrow{b}$ and the left action $\overrightarrow{\psi}b$ print the same element, so a display can be made to check while its operator has changed underneath. $L_\psi$ is distance $\sqrt{10}$ from $R_b$ in the operator norm and its square on $e_t$ is $-3e_t+4\vec e_y$ against $-e_t$, so the error appears at the second application and nowhere earlier. The value is invariant, the operator is not, and only the operator composes.
+
 ## What Is Not Settled
 
 - **The relation between $P$ and $\mathsf C_5$.** It is exactly $P=-\mathsf C_5$, and no article states it. Two articles use the two names for the same object.
 - **Whether tier three is needed.** The corpus has one expression that would benefit and none that requires it. Until an article writes a three-factor derivative product, dot scope is available and unused.
 - **The double-arrow convention.** The corpus does not use the double arrow anywhere. If it ever does, the factor of $\tfrac12$ has to be fixed, because the literature is not unanimous.
-- **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. This note settles the case it can settle: the mark is allowed on any object that acts, and it is kept off names, so the algebra decoration takes a prescript. What remains open is the corpus-wide change, which belongs in the operator conventions.
+- **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. The rule is now in the operator conventions, in the sentence that keeps the mark off names, so the algebra decoration is already outside it; what is not done is the rewriting of the four articles, which takes a prescript and changes a glyph on each of them.
 - **The corpus has no settled name for the natural map.** It marks the value, $X^{\natural}$, and names the operator $X\mapsto X^{\natural}$ only by writing the same glyph bare in nine places. *Naming the Map* supplies one, $\operatorname{nat}$, and a sentence in *Product and Form Conventions* beside the $\bar{\cdot}$ row would make it official. The same sentence would fix the placeholder form $(\cdot)^{\natural}$.
 - **The summation sign, repaired.** *Operator and Calculus Conventions* says a repeated index is summed only where a $\sum$ names it, and the corpus kept that for a cell on a cell while breaking it for a cell on a derivative and for a cell on a component. One hundred and sixty-five marks in twenty-three articles is not a slip of the pen, it is the Einstein habit, and the articles read the same either way, which is why the repair is a mechanical one: one $\sum$ before the cell at each site, no equation rewritten, no result touched. The identity $D^2-2mD=(\sum_\mu p_\mu p_\mu-m^2)T_{e_t,e_t}$ is the same statement whether the sum is printed or read. The convention needed no new sentence, only to be applied; the unsummed form survives in two places, the twin sentences that declare the shorthand unused.
 - **Which side is the matter representation.** The minimal coupling article records the left and the right construction as two covariant mirrors and calls the choice open. The notation question is downstream of that choice and cannot settle it: a corpus that had chosen the right action would write N1 everywhere and the cells would change roles. Until the choice is made, the arrow is the only mark that keeps both forms printable without rewriting the other.
@@ -747,6 +810,10 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 **Algebraic right action needs no arrow.** $R_b=T_{e_t,b}$ is a cell of length one. The corpus writes it as $R_b$, and the three articles that use the arrow as a side mark all put it on a derivative.
 
+**The signs live on two levels, and the arrow stays in the algebra.** $L_b$, $R_b$ and $T_{a,b}$ are matrices: they need a basis, a frame and four coordinates per element. $\overrightarrow{\ }$, $\overleftarrow{\ }$, the dot and the sandwich are written in the algebra and need none. The arrow marks an element that has been put in the operator position and leaves it where it is, so the arrow and the matrix are not rival spellings of one sign.
+
+**The same element, two operators.** $L_\psi(b)=\psi b=R_b(\psi)$ holds in any associative algebra, so the arrow may be moved from one factor to the other and the printed value survives. The operator does not: $L_\psi$ and $R_b$ are distance $\sqrt{10}$ apart in the operator norm and disagree at their second application, $-3e_t+4\vec e_y$ against $-e_t$. The distance vanishes on the centre, which is where the mass sits.
+
 **Placed on the actor, the arrow makes the two sides one shape.** $\overrightarrow{\tilde\nabla}F$ and $G^+\overleftarrow{\tilde\nabla}$ are read by one rule, and a two-sided cell is a pair of arrows pointing inward. The arrow goes above the tilde, $\overrightarrow{\tilde\nabla}$, because the tilde is part of the operator's name: it is what separates the four-component biquaternionic gradient from the three-component spatial $\nabla$. Marking the field instead would put the two placements in one equation; the corpus never does, and its two arrow users both mark the operator.
 
 **Used without ration, the arrow prints twenty marks where the corpus prints four.** Six are left arrows on a forward-acting derivative, five restate a cell name, and nine carry information. The corpus already prints four of the nine. The arrow on the identity is the mark that turns out to be worth printing: it is how a central term and a one-sided operator are recognised. The pass found the fifth: the minimal-coupling sum marks the right action of the gradient and leaves the right action of the potential bare. Its real yield is elsewhere. Two arrows that agree mean a central operator, and the centre is where the mass sits; two arrows that disagree mean a frame term. Reversal duplicates an equation only at the centre, where the mass sits; chirality duplicates by sign, and the projector pair is one formula and its complement.
@@ -759,7 +826,9 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 **The map needs a name.** The corpus writes $X^{\natural}$ as a mark and the bare glyph as the map in nine places, so the same sign already means two things. $\operatorname{nat}$ is the cheapest name that does not collide, and one sentence in the conventions would settle it.
 
-**The arrow needs a decision, and this note takes it.** The pair $\overrightarrow{\ }$, $\overleftarrow{\ }$ is allowed on any object that acts, elements included, and it is always placed on the actor, never on the operand; the appendix uses it systematically so that the cost can be compared with the name and with the sandwich. It stays off names: the algebra's left-action decoration becomes a prescript.
+**The arrow needs a decision, and this note takes it.** The pair $\overrightarrow{\ }$, $\overleftarrow{\ }$ is allowed on any object that acts, elements included, and it is always placed on the actor, never on the operand; the appendix uses it systematically so that the cost can be compared with the name and with the sandwich. It stays off names: the algebra's left-action decoration becomes a prescript. Both sentences are now in *Operator and Calculus Conventions*, §*The Operators*.
+
+**No more satisfying alternative exists.** Every candidate is exact and pays elsewhere: a frame for $T_{a,b}$, the whole page for row vectors, readability for subscripts, and the no-dot rule for scoping a derivative. For a two-sided biquaternion operator the pair of arrows is the best writing available, and the alternatives are worse at the point where they are needed.
 
 ## Summary of Notation
 
@@ -1297,7 +1366,7 @@ $$
 
 says: flip the arrow, conjugate both entries, flip the arrow back, and the result is the other side. Nothing else in the identity is doing work.
 
-**Four: the arrows do retire one name, and only one.** The right-acting derivative had a candidate name, $\tilde\nabla^{\mathrm{opp}}$, and it is now unnecessary: with the arrow allowed on any object, $\tilde\Psi\overleftarrow{\tilde\nabla}$ says the same thing in one glyph and needs no convention. Nothing is lost, because that name was never used. A scan of the four hundred and four articles returns no occurrence of $\tilde\nabla^{\mathrm{opp}}$, $\partial^{\mathrm{opp}}$ or $\nabla^{\mathrm{opp}}$ outside this note: the option existed only as a candidate in the table.
+**Four: the arrows do retire one name, and only one.** The right-acting derivative had a candidate name, $R_{\tilde\nabla}$, and it is now unnecessary: with the arrow allowed on any object, $\tilde\Psi\overleftarrow{\tilde\nabla}$ says the same thing in one glyph and needs no convention. Nothing is lost, because that name was never used. A scan of the four hundred and four physics articles, and of the mathematics collection beside them, returns no derivative carrying that superscript: the option existed only as a candidate in the table, and it is now barred by the rule that the superscript names an algebra. The derivatives do carry superscripts, $\tilde\nabla^{\natural}$ and $\tilde\nabla^{*}$ and the rest, but every one of those marks a conjugation or an adjoint, and none of them names an algebra.
 
 **What the arrows do not retire is the algebra.** $\mathbb{B}^{\mathrm{opp}}$ is not an action, it is an object: it is the algebra with the product reversed, and it is what makes the multiplication map readable as a homomorphism,
 
@@ -1307,7 +1376,7 @@ $$
 \tilde Q\otimes\tilde P^{\mathrm{opp}}\longmapsto T_{\tilde Q,\tilde P},
 $$
 
-with the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ mapping to the sixteen cells $T_{\mu\nu}$. An arrow cannot do that job, because an arrow says which side an operator acts on and the enveloping algebra is not acting on anything. The two notations answer different questions, and the corpus needs both: one thousand one hundred and twenty-one occurrences of the algebra in one hundred and seventy-eight articles, against three articles that mark a side.
+with the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ mapping to the sixteen cells $T_{\mu\nu}$. An arrow cannot do that job, because an arrow says which side an operator acts on and the enveloping algebra is not acting on anything. The two notations answer different questions, and the corpus needs both: one thousand one hundred and fifty-five occurrences of the algebra in one hundred and eighty-five articles, against three articles that mark a side.
 
 **What the arrow still cannot do.** It states one side and nothing else, so it cannot carry a length, a rank or a name; those are the cells' job. It cannot scope a derivative across a product of three factors, which is tier three. And it cannot replace the sandwich in a proof, because the sandwich is the proof: the arrow is the display of the result, not the derivation of it.
 

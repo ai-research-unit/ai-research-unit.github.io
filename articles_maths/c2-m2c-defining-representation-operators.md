@@ -233,7 +233,7 @@ for every $M$.
 |---|---|---|
 | ambient of the operator | $M_2(\mathbb{C})$, complex dimension $4$ | $\operatorname{End}(\mathbb{B})$, complex dimension $16$ |
 | operator basis | $E_{jk}$ | $T_{\mu\nu}$ |
-| coefficient array | the matrix | a $16\times16$ array |
+| coefficient array | the matrix | a $4\times4$ array |
 | two ranks | equal | independent |
 | criterion | $\operatorname{rank}M\le1$ | $\operatorname{rank}c(M)\le1$ |
 | the length | $0,1,2$ | $0,\dots,4$ |
@@ -388,10 +388,10 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 | reach | complex dimension $3$ | complex dimension $7$ |
 | identity in the family | no | yes, $T_{e_t,e_t}$ |
 | inverses in the family | no | yes, for pairs of units |
-| isometries | none | a family, of dimension seven |
+| isometries | none | the group $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three |
 | the length | $0,1,2$ | $0,\dots,4$ |
 | the chain of nested sets | $0\subset\mathcal{C}\subset M_2(\mathbb{C})$, dimensions $0,3,4$ | $1,4,7,16$ |
-| rank constraint | rank $\le1$ | rank $\le4$, by the division algebra |
+| rank constraint | rank $\le1$ | rank $0$ or $4$, by the division algebra |
 | the second cone | the Hermitian cone, distinct | no second cone of the same kind |
 
 **The single sentence.** The pair is the cleanest operator theory of the corpus because the cone is thin and the composition is a scalar; it is also the poorest, because a rank-one family has no group of units, and **everything that the algebra pairs gain they gain by the identity being a product.**
