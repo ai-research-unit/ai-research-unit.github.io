@@ -18,7 +18,7 @@ The remaining realizations are the subjects of their own articles:
 | operator on the algebra | *Split-Quaternion Rotations and the Lorentz Group* |
 | polar | *Split-Quaternion Polar Decomposition* |
 
-and the technical representation theory is the subject of *Split-Quaternion Element Representations*. Each of those articles owns its realization; this article records only the relations that involve the three studied here.
+and the technical representation theory is the subject of *Split-Quaternion Linear Representations*. Each of those articles owns its realization; this article records only the relations that involve the three studied here.
 
 The word **representation** is used in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The word **algebraic** contrasts with **polar**: the realizations here use only the algebra operations and the underlying real vector space, not the exponential or the roots of $-1$.
 

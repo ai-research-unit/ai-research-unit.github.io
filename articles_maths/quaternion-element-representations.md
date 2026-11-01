@@ -1,4 +1,4 @@
-# __Introduction to Quaternion Element Representations__
+# __Quaternion Linear Representations__
 
 ## Introduction
 

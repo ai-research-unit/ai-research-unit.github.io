@@ -5681,6 +5681,14 @@
 <a href="articles_maths/the-tensor-square-of-the-duo-complex-numbers.html">The Tensor Square of $\mathbb{C}^2$</a>
 <!-- $\mathbb{C}^2\otimes_{\mathbb{C}}\mathbb{C}^2\cong\mathbb{C}^4$; the decomposition $\operatorname{Sym}^2\oplus\Lambda^2$ of dimensions $3+1$; the isomorphism with $M_2(\mathbb{C})$ only after a choice of bilinear form; the twisted product; and the relation to $\operatorname{End}(\mathbb{C}^2)$ and to the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. -->
 
+#### Matrix Representations
+
+<a href="articles_maths/c2-m2c-defining-representation.html">$M_2(\mathbb{C})$ Defining Representation</a>
+<!-- the space $\mathbb{C}^2$ as the defining module of $M_2(\mathbb{C})$: the column, the dual and the three structures; the three canonical forms and their isometry groups, $\mathrm{U}(2)$, $\mathrm{O}_2(\mathbb{C})$ and $\mathrm{SL}_2(\mathbb{C})$, with $A^{\mathsf T}J_2A=\det(A)J_2$; the realification and the six real forms; the lines, the rank-one Hermitian projectors and $\mathbb{P}^1\cong S^2$; the flags and $S^3$; the bilinear cone $u\phi^{\mathsf T}$, the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ and the determinant as a form of signature $(2,2)$; the Hermitian cone $uu^{\dagger}$ as the future light cone $t^2-|\vec x|^2=0$ in the Pauli coordinates; the spinor of type $(\tfrac12,0)$, its null vector and the double cover of the Lorentz group; the trace-one slice as the Bloch ball, the Bloch vector and the purity; and the Hopf fibration with the phase as the half-plane of the flag. The model is the same algebra as the biquaternion $M_2(\mathbb{C})$ pair and the subject is not: this entry reads the space, that pair reads the algebra. -->
+
+<a href="articles_maths/c2-m2c-defining-representation-operators.html">$M_2(\mathbb{C})$ Defining Representation : Operators</a>
+<!-- the two-sided operators of the carrier, $T_{u,\phi}(v)=\phi(v)u=u\phi^{\mathsf T}$, with a column and a row and without any product of two columns; the left side as the whole algebra $M_2(\mathbb{C})$ and the right side as the dual; the parametrisation by $V\times V^{*}$ modulo the scaling, the cone $\det=0$ and the two ranks; the composition $\phi(u')T_{u,\phi'}$, the powers $\phi(u)^{n-1}T$, the nilpotent and the idempotent members, and the semigroup with zero and without identity or inverses; the length $\ell=\operatorname{rank}$ with the values $0,1,2$ and the identity at length two; the two cones side by side and the dagger as the passage from one to the other; the transpose adjoint and the symmetric cone, the empty skew-adjoint family and the absence of isometries; the pointwise and the dual-number products on the carrier, which destroy the cone; and the comparison with the biquaternion sandwich $X\mapsto QXP$, its length ladder $1,4,7,16$ and its gauge. -->
+
 ### Topology
 
 <a href="articles_maths/the-topology-of-the-duo-complex-numbers.html">The Topology of $\mathbb{C}^2$</a>
@@ -6086,7 +6094,7 @@
 
 #### Element Representations
 
-<a href="articles_maths/quaternion-element-representations.html">Introduction to Quaternion Element Representations</a>
+<a href="articles_maths/quaternion-element-representations.html">Quaternion Linear Representations</a>
 <!-- representations of $\mathbb{H}$ and their classification; $\mathbb{H}$ as a simple algebra; the representation ring; indecomposable representations; the dual representation; tensor products; the category of representations. -->
 
 <a href="articles_maths/quaternion-four-vector-element-representation.html">Quaternion Four-Vector Element Representation</a>
@@ -6473,7 +6481,7 @@
 
 #### Element Representations
 
-<a href="articles_maths/split-quaternion-element-representations.html">Split-Quaternion Element Representations</a>
+<a href="articles_maths/split-quaternion-element-representations.html">Split-Quaternion Linear Representations</a>
 <!-- the representations of $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ and their classification; semisimplicity and the irreducible representations; the representation ring; the relation to the representations of the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$; the double cover of the Lorentz group of signature $(2,1)$; comparison with the quaternion case. -->
 
 <a href="articles_maths/split-quaternion-four-vector-element-representation.html">Split-Quaternion Four-Vector Element Representation</a>

@@ -24,7 +24,11 @@ $$
 P_\pm=\tfrac12\bigl(T_{e_t,e_t}\mp iT_{e_t,e_z}\bigr)=R_{\frac12(e_t\mp i\vec e_z)} .
 $$
 
-Writing them out as arrays, they are idempotent, orthogonal, complementary, and of rank two, and every one of those four facts is a fact about a right multiplication:
+Written with a side mark on each action, the same projectors are
+$$
+P_\pm\psi=\tfrac12\bigl(\psi\mp i\,e_t\overrightarrow{\psi}\overleftarrow{e_z}\bigr),
+$$
+and the two differ by the sign of the only arrowed term: one equation and its mirror. Writing them out as arrays, they are idempotent, orthogonal, complementary, and of rank two, and every one of those four facts is a fact about a right multiplication:
 
 $$
 P_+=\begin{pmatrix}
@@ -81,7 +85,7 @@ There are six ways to write a right action, and only one of them is used by the 
 
 **N0 is not an option.** If the operator is written after the field with no mark, the reader cannot tell whether it acts or whether it is a coefficient, and the physics prior is the opposite of what the corpus means. The corpus never does it: no article writes a right-acting gradient without a mark.
 
-**N1 is the corpus's choice.** The arrow states the side and nothing else. It is the only one of the six that is already standard in physics for exactly this purpose, and it is the only one that reads as a mark rather than as a name. In the corpus it is used only for differential operators, and nobody writes $\psi\overleftarrow{b}$. That is a fact about the corpus, not a limit of the mark: the appendix uses the pair $b\overrightarrow{\psi}$ and $\psi\overleftarrow{b}$ on elements without restriction, and it is the cheapest faithful display there. The limit of the arrow is not its reach. It is that the arrow says a side and nothing else, so it cannot carry a length, a rank or a name, and it cannot scope a derivative across three factors.
+**N1 is the corpus's choice.** The arrow states the side and nothing else. It is the only one of the six that is already standard in physics for exactly this purpose, and it is the only one that reads as a mark rather than as a name. In the corpus it is used only for differential operators, and nobody writes $\psi\overleftarrow{b}$. That is a fact about the corpus, not a limit of the mark: the appendix uses the pair $\overrightarrow{b}\psi$ and $\psi\overleftarrow{b}$ on elements without restriction, and *The Arrows Used Everywhere* renders all twelve of the equations below that way, so that the difference between four marks and twenty can be seen rather than argued. The limit of the arrow is not its reach. It is that the arrow says a side and nothing else, so it cannot carry a length, a rank or a name, and it cannot scope a derivative across three factors.
 
 **N2 is exact but barred.** The dot says which factor carries the derivative, so it survives products of three or more factors, where the arrow cannot say which one is meant. But the corpus has removed the glyph: *Operator and Calculus Conventions* states that no derivative is written with a dot, and a scan of the four hundred and four articles finds no derivative dot at all, every instance of the dot token in the corpus being the ellipsis of $\dots$. Reintroducing it for scope would collide with a rule the corpus has already paid for.
 
@@ -283,14 +287,16 @@ $$
 
 | Option | Writing | Verdict |
 |---|---|---|
-| N0 | $\tilde\nabla\tilde\Psi_R$ | Correct here, because the operator is written first |
+| N0 | $\tilde\nabla\tilde\Psi_R$ | The corpus form, correct because the operator is written first; the systematic form adds the left arrow, $\overrightarrow{\tilde\nabla}\tilde\Psi_R$ |
 | N1 | — | Not applicable, the field is not to the left |
 | N2 | — | Not applicable |
 | N3 | $\tilde\nabla^{\mathrm{opp}}\tilde\Psi_R$ | Legal, and it would state a side that is already stated |
 | N4 | ${}_{\tilde\nabla}\tilde\Psi_R$ | Exact, noisy |
 | N5 | unchanged | The field is a biquaternion, not a row |
 
-No option is needed. This is the ordinary case: a first-order left operator applied to a field, which is what the physics convention was built for, and it is the case the rest of this note does not concern.
+**With every action marked:** $\overrightarrow{\tilde\nabla}\tilde\Psi_R=\overrightarrow{m e_t}\tilde\Psi_L$, two left arrows, the second on the scalar multiple of the identity.
+
+Under systematic use the mass term is an action too, and it is the only term on the page whose arrow could be dropped: the operator is $me_t$, so its left action and its right action agree exactly, $\lVert L_b-R_b\rVert=0$ for every $b\in\mathbb{C}e_t$. Here that is invisible, because the term is written on the left and no right arrow is printed. It becomes visible the moment the mass is written on the right, which the second half of the pair does not do either. So the pair as printed states the ordinary case twice and the mass's centrality not at all.
 
 ### 2. The Massless Dirac Equation
 
@@ -300,7 +306,9 @@ $$
 \tilde\nabla\tilde\Psi=0 .
 $$
 
-No option changes the display. A homogeneous equation cannot show a side ambiguity, because there is no second object for the operator to act on.
+**With every action marked:** $\overrightarrow{\tilde\nabla}\tilde\Psi=0$, one left arrow.
+
+A homogeneous equation cannot show a side ambiguity, because there is no second object for the operator to act on. The systematic arrow adds one mark and one statement, that $\tilde\nabla$ acts from the left, which the writing already said.
 
 ### 3. The Right-Acting Gradient with a Connection
 
@@ -323,6 +331,10 @@ This is the only one of the twelve where the display choice actually decides whe
 | N4 | ${}_{\tilde\nabla}\tilde\Psi$ | Exact, unreadable in a display |
 | N5 | transpose the field | Would change the whole article |
 
+**With every action marked:** $\tilde\Psi\overleftarrow{\tilde\nabla}+\frac{i\varrho}{\hbar}\tilde\Psi\overleftarrow{\tilde A}$, two right arrows.
+
+The second arrow is the one the corpus leaves out, and it is a right action by an element: $\tilde\Psi\tilde A=T_{e_t,\tilde A}\overrightarrow{\tilde\Psi}$, a cell of length one, since $e_t$ is the identity and $T_{e_t,\tilde A}=R_{\tilde A}$. So the sum is two right actions in a row, one differential and one algebraic, and the printed form says that only the first is an action. This is the one repair the systematic pass finds in the twelve.
+
 N1 is right. R1 does not apply, since $\tilde\nabla$ is differential. The article itself supplies the reason the arrow matters: the left form and the right form are both gauge covariant, and the mixed form is not. A notation that cannot separate the left gradient from the right gradient cannot state the difference the article is about.
 
 ### 4. Maxwell's Theory in Quaternion Form
@@ -336,11 +348,17 @@ $$
 | Option | Writing | Verdict |
 |---|---|---|
 | N0 | $G^+\nabla$ | No |
-| N1 | $G^+\overleftarrow{\nabla}$ | Yes, and it shows at a glance which of the two terms acts which way |
+| N1 | $G^+\overleftarrow{\nabla}$, and with the tilde restored $G^+\overleftarrow{\tilde\nabla}$ | Yes, and it shows at a glance which of the two terms acts which way |
 | N2 | $g_m$ times a scoped derivative | Yes, and less legible in a four-term sum |
 | N3 | $G^+\nabla^{\mathrm{opp}}$ | Exact, and shorter than the arrow |
 | N4 | subscripted | No, in a display |
 | N5 | transpose $G^+$ | Local only, and it hides the symmetry |
+
+**With every action marked:** $\overrightarrow{\tilde\nabla}F+\tfrac12\bigl(\overrightarrow{\tilde\nabla}G+G^+\overleftarrow{\tilde\nabla}\bigr)=-J$, two left arrows and one right.
+
+Both left arrows are redundant by position. The right one is not, and it is the only mark in the equation that carries information.
+
+**The quotation drops the tilde, and the systematic form restores it.** The article prints $\nabla$ for what this series calls $\tilde\nabla$: *Operator and Calculus Conventions* fixes the biquaternionic gradient as $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$, four components, and reserves the bare $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial three-component gradient whose divergence and curl the series also uses. So the quoted line is a departure from the conventions and not a different operator, and the systematic form carries the tilde. This note states the departure and does not repair it: what a quotation prints is the quoted article's business.
 
 N1 is right, and this equation is the arrow's best case: the display is a sum of one left-acting and one right-acting term, and the arrow is the only mark that shows the difference without a name.
 
@@ -364,7 +382,35 @@ $$
 | N5 | impossible | A two-sided product is not a matrix times a column |
 | Cells | $\mathsf C_\mu p_\mu+mT_{e_t,e_t}$ | The only form that exists |
 
-The equation is the argument for the naming level. Every option at the display level fails, and the reason is not that the notation is poor but that the object is genuinely two-sided. Recomputed on the mass shell at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$: $\lVert D^2-2mD\rVert=4\times10^{-16}$, matrix rank two, length two, trace $4m=5.2$, and $\{\mathsf C_\mu,\mathsf C_\nu\}=2\operatorname{diag}(1,-1,-1,-1)$.
+**A summation sign is missing, and the omission is the corpus's.** The printed form repeats $\mu$ and does not sum it: $\mathsf C_\mu p_\mu$ is one cell against one component, and the object is a sum of four. *Operator and Calculus Conventions*, §*The Gradient*, states the rule without qualification — "an index that appears twice is summed only where a $\sum$ names it" — and applies it to the gradient, which is spelled $\tilde\nabla=\sum_{\mu}e_\mu\partial/\partial Q_\mu$ and never $\vec e_k\partial/\partial Q_k$. So the written form of the mass-shell cell is
+
+$$
+D(p)=\sum_{\mu\in\{t,x,y,z\}}\mathsf C_\mu p_\mu+m\,T_{e_t,e_t},
+$$
+
+and it is this form that carries the two facts below.
+
+**The sum is what makes the cell a shell.** With it, the Clifford relation gives one identity and no approximation:
+
+$$
+D^2-2mD=\bigl(p_\mu p_\mu-m^2\bigr)T_{e_t,e_t},
+$$
+
+residual $2.2\times10^{-16}$ at $m=1.3$ and $p=(1.7748,0.4,-0.7,0.9)$, where $p_\mu p_\mu=(p_t)^2-\lvert\vec p\rvert^2$. So $D$ is a shell cell exactly when the four-momentum is on shell, and the mass enters through the identity cell $T_{e_t,e_t}$, which is why it is written as a cell and not as the number $m$. Without the sum there is no identity at all, because a single term has nothing to square against.
+
+**The corpus's practice is mixed, and no article states it.** Counted over the physics and the mathematics articles, the momentum contraction $\mathsf C_\mu p_\mu$ is written without a sum twenty-nine times in eight articles, and with a sum twice, in one article, the Gordon decomposition, where the sum carries a weight $\varepsilon_\mu$ and is therefore a different object. The spin contraction $\mathsf C_\mu s_\mu$ is unsummed four times in one article and summed never. The derivative contraction $\mathsf C_\mu\partial/\partial Q_\mu$ splits evenly: five unsummed across four articles, five summed in one. The doubled cell $\mathsf C_\mu\mathsf C_\mu$ is summed in all three places it appears. So the sum arrives where both indices are cells, arrives half the time where one index is a derivative, and is dropped where one index is a component. The sentence in the conventions is general, and the practice keeps it only in the first case.
+
+**This note writes the sum wherever it uses the expression**, because the identity below is stated with it, and it leaves the corpus's habit alone: the repair belongs in the conventions and is the author's to make.
+
+**The mass term is outside the question.** It carries no index, so no sum can be missing from it, and it is written $m\,T_{e_t,e_t}$ rather than $m$ for a reason of its own: a length-zero cell is the identity, and writing it as a cell says that the mass enters on neither side. That is the fact the next paragraph uses.
+$$
+\mathsf C_k\psi=i\,\overrightarrow{\vec e_k}\psi\overleftarrow{\vec e_y},
+\qquad
+mT_{e_t,e_t}\psi=\overrightarrow{m e_t}\psi\overleftarrow{e_t}=m\psi ,
+$$
+with $\mathsf C_0$ the same two arrows, $e_t$ on the left and $\vec e_x$ on the right. Two arrows on each frame cell, and two on the mass, of which the second collapses: $e_t$ is the identity and $m$ is central, so the mass keeps its value when either arrow is dropped, residual $0$. The frame cells do not: $\lVert T_{\vec e_x,\vec e_y}-T_{\vec e_y,\vec e_x}\rVert=2$, so their two arrows are two different operators and the order between them is content.
+
+The equation is the argument for the naming level. Every option at the display level fails, and the reason is not that the notation is poor but that the object is genuinely two-sided. Recomputed on the mass shell at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$, with the sum written: $\lVert D^2-2mD\rVert=4\times10^{-16}$, matrix rank two, length two, trace $4m=5.2$, and $\{\mathsf C_\mu,\mathsf C_\nu\}=2\operatorname{diag}(1,-1,-1,-1)$.
 
 ### 6. The Chirality Cell
 
@@ -385,6 +431,12 @@ $$
 | N4 | subscript | No |
 | N5 | transpose | No |
 | Cells | $-iT_{e_t,e_z}$ | Yes |
+
+**With every action marked:** $-i\,\overrightarrow{e_t}\psi\overleftarrow{\vec e_z}$, and the left arrow sits on the identity. That is how a pure right multiplication looks under the rule: the left half of the cell is the unit, so its arrow is present and empty,
+$$
+-i\,\overrightarrow{e_t}\psi\overleftarrow{\vec e_z}=-i\,\psi\overleftarrow{\vec e_z},
+$$
+residual $0$. A one-sided operator is a two-sided one whose other side is $e_t$, and the rule prints that fact instead of hiding it. So the honest count for this equation is two arrows, one of which carries nothing.
 
 $\mathsf C_5$ is a *right multiplication* and it is not a left one: $R_{e_z}\neq L_a$ for any $a$, the best residual over three hundred trials being $1.14$, and the reason is that $R_b=L_a$ forces $b=a$ and $b$ central, while $\vec e_z$ is not central. So the chirality operator has no one-sided left form at all. It nevertheless has a cell form of length one. This is the sharpest case in the corpus of the cell names doing work that no display convention can do.
 
@@ -410,6 +462,8 @@ $$
 | Cells | $T_{e_t,i\vec e_z}$ | Yes, and it is $-\mathsf C_5$ |
 | N4, N5 | — | No |
 
+**With every action marked:** $s\overleftarrow{i\vec e_z}=\pm s$, one right arrow, and the arrow is what makes the sign law readable: the operator grades the module by acting on the right, and the two eigenvalues are the two sides of the Peirce split.
+
 The same object appears under two names in the corpus, and the relation between them is exact: $P=R_{i\vec e_z}=-\mathsf C_5$, residual $2$ against $\mathsf C_5$ itself. Both names are legitimate. The article that uses $P$ is about the module decomposition and wants the right multiplication visible; the article that uses $\mathsf C_5$ is about the trace and wants the sign fixed. A reader who meets one and then the other needs the identity, and no article currently states it.
 
 ### 8. The Chiral Projectors on a Field
@@ -432,7 +486,13 @@ $$
 | Cells | $-iT_{e_t,e_z}\Psi$ | Yes, compact, correct |
 | N4, N5 | — | No |
 
-The bare product $e_t\Psi e_z$ is right here, and it is the one place where N0 is the best answer rather than the worst: the field is visible between the two factors, which is what the projector formula is doing. Writing $T_{e_t,e_z}\Psi$ is equally correct and less immediate. This is worth stating, because it can look like an exception to the rule that the corpus never writes a bare product. It is not one: the corpus never writes a bare *operator*, and $e_t\Psi e_z$ is a product of three elements with the field among them.
+**With every action marked:** $-i\,\overrightarrow{e_t}\Psi\overleftarrow{e_z}$, one arrow on each side of the field, and the projectors
+$$
+P_\pm\Psi=\tfrac12\bigl(\Psi\mp i\,\overrightarrow{e_t}\Psi\overleftarrow{e_z}\bigr),
+$$
+which differ by the sign of the only arrowed term. The pair of arrows also shows the structure of the projector: the field sits between two operators, and the term that splits the halves is the one marked on both sides.
+
+The bare product $e_t\Psi e_z$ is right here, and it is the one place where N0 is the best answer rather than the worst: the field is visible between the two factors, which is what the projector formula is doing, and it is also what the two arrows say, since they point inward at the same field. Writing $T_{e_t,e_z}\Psi$ is equally correct and less immediate. This is worth stating, because it can look like an exception to the rule that the corpus never writes a bare product. It is not one: the corpus never writes a bare *operator*, and $e_t\Psi e_z$ is a product of three elements with the field among them.
 
 ### 9. The Spin Resolution
 
@@ -451,6 +511,14 @@ $$
 | N4 | nested subscripts | Exact and unreadable |
 | N5 | transpose | Would need the transposition theorem to see the sum is the same |
 | Cells | $\tfrac12D(p)(1+\mathsf C_5\mathsf C_\mu s_\mu)$ | The corpus form, and the only legible one |
+
+**The same missing sum, and here it is inside four factors.** The spin vector is contracted the same way and needs the same sign,
+$$
+D_s(p)=\tfrac12\,D(p)\Bigl(1+\mathsf C_5\sum_\mu\mathsf C_\mu s_\mu\Bigr),
+$$
+with the sum between the chirality cell and the second frame cell. The identity $\sum_{s=\pm}D_s(p)=D(p)$ presumes it: a single term on each side of the $\mathsf C_5$ would not sum to the mass-shell cell.
+
+**With every action marked:** no form. The product $\mathsf C_5\mathsf C_\mu s_\mu$ is a product of cells, and there is no field in it for an arrow to point at. A two-sided factor has two sides and the display has one operand, so the second arrow has nowhere to go.
 
 Recomputed on the mass shell with a spin vector satisfying both $s\cdot p=0$ and $s^2=-1$: $\lVert D_s^2-2mD_s\rVert=9\times10^{-16}$, the two spin cells are orthogonal to $8\times10^{-17}$, they sum to $D(p)$, $\frac{1}{2m}D_s$ has rank one and trace one, and $D_s$ has length four. The length is the point: the spin resolution doubles the length of the mass-shell cell, and no rewriting shortens it.
 
@@ -474,7 +542,9 @@ $$
 | N4 | subscript | No |
 | N5 | transpose | No |
 
-No option is needed, and the table is here to make a point: the left differential operator is not a special case of the two-sided one. It is the ordinary case, it has been the ordinary case since Newton, and the corpus's two-sided operators did not change it.
+**With every action marked:** $\tilde A_2=\tilde A-\overrightarrow{\tilde\nabla}\Gamma$, one left arrow, which states nothing new.
+
+The table is here to make a point: the left differential operator is not a special case of the two-sided one. It is the ordinary case, it has been the ordinary case since Newton, and the corpus's two-sided operators did not change it.
 
 The article records one thing about the right action and leaves it open: whether the physical matter representation is the left one or the right one. The mirror construction itself is written out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, not here, and the mirror is where N1 is needed. The pair is the content: the left and the right form are both covariant, the mixed form is not.
 
@@ -493,6 +563,8 @@ $$
 | N3 | $R_{\mu}$ names in place of cells | The same statement, with five names to track |
 | Cells | as written | Yes |
 | N5 | transpose | Would break the order inside the trace |
+
+**With every action marked:** no form. A trace has no operand, so nothing can be pointed at, and the order inside the product is stated by the order of the factors alone.
 
 The trace is where the order inside the product matters and where a row-vector convention would be actively wrong: $\operatorname{tr}(MN)$ is invariant under transposition of the whole product, but the individual factors are not invariant, and a display that transposes one of them changes the value. Recomputed: $-4i$ exactly, with $\mathsf C_5^2=1$ and $\{\mathsf C_5,\mathsf C_\mu\}=0$.
 
@@ -513,7 +585,64 @@ $$
 | N4 | subscripts on both arguments | Exact, unreadable |
 | N5 | — | No |
 
+**With every action marked:** as printed. It is the only one of the twelve that is already systematic, and the only one where systematic use changes nothing, because the two arrows are the expression.
+
 Here the arrow does its job and reaches its limit in the same expression. It says that the left derivative acts on what is to the left and the right derivative on what is to the right, which is exactly right. It cannot say what those two things are, because the bracket is written without arguments. This is the one equation in the corpus where the notation is genuinely under-determined, and it is under-determined for a reason outside the notation: the two arguments have been suppressed.
+
+## The Arrows Used Everywhere
+
+The twelve are quoted above as the corpus prints them. Each now carries its systematic form, and this section states what the pass returns, because four marks instead of twenty is a ration, not a law, and the difference has to be measured rather than assumed.
+
+| # | Every action marked | Marks |
+|---|---|---|
+| 1 | $\overrightarrow{\tilde\nabla}\tilde\Psi_R=\overrightarrow{m e_t}\tilde\Psi_L$ | $2$ left |
+| 2 | $\overrightarrow{\tilde\nabla}\tilde\Psi=0$ | $1$ left |
+| 3 | $\tilde\Psi\overleftarrow{\tilde\nabla}+\frac{i\varrho}{\hbar}\tilde\Psi\overleftarrow{\tilde A}$ | $2$ right |
+| 4 | $\overrightarrow{\tilde\nabla}F+\tfrac12\bigl(\overrightarrow{\tilde\nabla}G+G^+\overleftarrow{\tilde\nabla}\bigr)=-J$ | $2$ left, $1$ right |
+| 5 | $i\,\overrightarrow{\vec e_k}\psi\overleftarrow{\vec e_y}$ for a frame cell, $\overrightarrow{m e_t}\psi\overleftarrow{e_t}$ for the mass | $2$ left, $2$ right |
+| 6 | $-i\,\overrightarrow{e_t}\psi\overleftarrow{\vec e_z}$ | $1$ left, $1$ right |
+| 7 | $s\overleftarrow{i\vec e_z}=\pm s$ | $1$ right |
+| 8 | $-i\,\overrightarrow{e_t}\Psi\overleftarrow{e_z}$ | $1$ left, $1$ right |
+| 9 | no form: a product of cells has no operand | $0$ |
+| 10 | $\tilde A_2=\tilde A-\overrightarrow{\tilde\nabla}\Gamma$ | $1$ left |
+| 11 | no form: a trace has no operand | $0$ |
+| 12 | as printed, the two arrows are the expression | $2$ right |
+
+**Every arrow sits on the operator, and points at the operand.** That is the placement, and it is not a preference: it is what the corpus does in the two articles that use the mark. The Maxwell article writes $G^+\overleftarrow{\nabla}$, the Poisson bracket writes $\overleftarrow{\partial/\partial q_i}$ and $\overrightarrow{\partial/\partial p_i}$, and in each case the arrow is on the operator and the tip points at the field. Under one rule the two sides become the same shape, $\overrightarrow{\tilde\nabla}F$ and $G^+\overleftarrow{\tilde\nabla}$, and a two-sided operator is a pair of arrows pointing inward at the field between them, $\overrightarrow{e_t}\Psi\overleftarrow{e_z}$.
+
+**The arrow sits above the tilde, not instead of it.** In a biquaternion article the gradient is $\tilde\nabla$, and the tilde is part of its name and not a decoration: it is what separates the four-component element-valued operator from the three-component spatial $\nabla$. So the mark stacks, $\overrightarrow{\tilde\nabla}$ and $G^+\overleftarrow{\tilde\nabla}$, and the operator keeps its full spelling under the arrow. Stacking two marks is accepted in this note, exactly as an arrow is accepted above another arrow, $b_1\overrightarrow{b_2\overrightarrow{\psi}}$. The alternative — writing $\overrightarrow{\nabla}$ with the tilde dropped — would be worse than a stacked mark, because an arrow over a bare $\nabla$ is the shape of a vector accent and would read as $\vec\nabla$.
+
+**Marking the field instead splits one equation into two conventions.** A draft of this note wrote the left arrows on the fields, $\tilde\nabla\overrightarrow{F}$, and kept $G^+\overleftarrow{\tilde\nabla}$ on the operator, in the same line of the same equation. Both marks were defensible one at a time and the line was not: the reader had to learn that the arrow sits on the second symbol in one term and on the first in the next. The rule that survives is the one the corpus already follows — the actor takes the mark — and it is the same rule for an element, a derivative and a cell.
+
+**The placement has two costs, and both are visible.** An arrow over a frame unit stacks on the vector accent, $\overrightarrow{\vec e_x}$: heavy, and unambiguous, because the frame unit is one symbol under two marks. An arrow over the gradient stacks on the tilde, $\overrightarrow{\tilde\nabla}$: three levels on one base, and still unambiguous, because the tilde is there and a tilde'd gradient is never a vector accent. The heavy case is the honest one. What the two costs have in common is that both are paid on the operator and never on the field, and that is the reason the placement belongs in the operator conventions rather than in an example.
+
+**Twenty marks replace four.** The corpus prints four side marks across the twelve, all of them right arrows, in equations 3, 4 and 12. Marking every action prints twenty: ten left arrows and ten right ones.
+
+**The ten left arrows split, and the split is the sharper one.** Six sit on a derivative acting forward, and those six are pure cost, because juxtaposition already states it in an associative algebra read in order. Four sit on the identity up to a scalar, in equations 1, 5, 6 and 8, and those four are doing work: an arrow on $e_t$ is how this note writes a central term and a pure right action. So the empty-looking arrow carries the most. $me_t$ is the mass, and $e_t$ on the left of the chirality cell is the statement that the cell is one-sided.
+
+**The ten right arrows split in half, and the split is the corpus's own rule.** Five are carried by a name that already states the side: $\mathsf C_\mu$, $\mathsf C_5$, $P$, $T_{e_t,e_z}$, in equations 5 to 8. There the arrow restates the name. Five stand on a bare product with no name — the two terms of equation 3, the gradient of equation 4, the two derivatives of equation 12 — and the corpus marks four of those five. The pass finds the fifth.
+
+**The defect it finds is one term, and it is in equation 3.** The minimal-coupling sum marks the right action of the gradient and leaves the right action of the potential bare, in the same parenthesis. Both are multiplications of the field on the right; one is by a derivation and one by an element. The display as printed says that one is an action and the other is a coefficient, and nothing in the physics supports that reading. The repair is one glyph, $\tilde\Psi\overleftarrow{\tilde A}$, or the cell name $T_{e_t,\tilde A}\overrightarrow{\tilde\Psi}$, which is the tier-one form since $\tilde A$ is an element and the cell is of length one.
+
+**What the many arrows buy is a separation the matrices cannot show.** A left arrow and a right arrow are the same mark exactly when the operator is central, and different otherwise. Measured: $\lVert L_b-R_b\rVert=0$ for $b\in\mathbb{C}e_t$, on four samples including $1.3e_t$ and $(2-i)e_t$; $2$ for one frame unit; $4$ for $e_t+2\vec e_y$. So a term written with two arrows that agree is a mass term, and a term whose two arrows disagree is a frame term. In the matrix formulation that distinction is a distinction between a multiple of the identity and four matrices, which a reader sees only by looking at matrices. On the page it is a distinction between one mark and two, and it is visible at reading speed. This is the one place where the notation reports a physical fact that the gamma matrices keep implicit: **the mass is the central multiplicand, and centrality is exactly the licence to drop a side.**
+
+**Reversing the two arrows gives a different operator, not a copy.** $\lVert T_{\vec e_x,\vec e_y}-T_{\vec e_y,\vec e_x}\rVert=2$ exactly, and the same $2$ for $T_{e_t,e_z}$ against $T_{e_z,e_t}$. So a two-arrow term written in the other order is a different object, and the order between the arrows is content. The one exception is the centre: $T_{e_t,e_t}$ is the identity, $\lVert mT_{e_t,e_t}-m\rVert=0$, so $\overrightarrow{m e_t}\psi\overleftarrow{e_t}=m\psi$ and the second arrow restates the first. A two-sided mass is therefore the same statement written twice, and the reversal duplicates an equation exactly when the operator is central, which is where the mass sits.
+
+**Chirality duplicates by sign, and there the duplication is genuine.** The projector pair is one arrowed term and its complement,
+$$
+P_\pm\Psi=\tfrac12\bigl(\Psi\mp i\,\overrightarrow{e_t}\Psi\overleftarrow{e_z}\bigr),
+\qquad
+P_++P_-=1,
+$$
+so the two chiral equations are not independent: the second is the first subtracted from the identity. This is the duplication the two-sided calculus predicts, and it costs nothing to print twice, because the second is the first with one sign changed. It is also the place where the arrows earn their keep, since the sign that separates the halves sits on a term that carries a mark on both sides — the only term in the equation that does.
+
+**The chirality cell is the one object whose left half is empty.** Equation 6 has a right arrow, and its left arrow sits on $e_t$: $R_{\vec e_z}\neq L_a$ for any $a$, the best residual over three hundred trials being $1.14$, so no left arrow on a non-central element can replace it. Under the rule that is a visible fact rather than a remark — the cell is written $\overrightarrow{e_t}\psi\overleftarrow{\vec e_z}$, and the trivial factor is on the page. Chirality is a side, not a symmetric construction: the operator that splits the field into its chiral halves multiplies on the right and does nothing on the left, and the pair of arrows says so.
+
+**Where the arrows fail, they fail for want of an operand.** Equations 9 and 11 have no field: one is a product of cells, the other a trace. A two-sided factor has two sides and the display has one operand, so the second arrow has nowhere to go. Equation 12 is the third case, and the opposite one: it has two arrows and no operands, which is why it is under-determined. So systematic use covers nine of the twelve, and the three it cannot cover are the three that have no operand of their own.
+
+**What is lost is the warning.** In the corpus the arrow sits only on derivatives, so it doubles as a signal of the differential kind. Printed everywhere, it stops signalling anything but the side, and the reader who used it as a warning loses the warning. That is the whole trade: the mark becomes uniform and stops being informative about kind.
+
+**The pass audits; it does not legislate.** Of its twenty marks, six state nothing, five restate a cell name, and nine carry information: the four left arrows on the identity, and the five right arrows on a bare product. The corpus already prints four of those nine. So the corpus's ration is not arbitrary: it is very nearly the informative subset, and the systematic rendering's only contribution is the one omission it found. The recommendation is therefore unchanged and is now measured: tier one names, tier two marks the side where no name carries it, and universal marking is worth doing once, on a page, to see what it costs.
 
 ### What the Twelve Decide
 
@@ -525,7 +654,9 @@ The twelve fall into three classes, and the classes are the argument for the tie
 | The display level | 3, 4, 12 — minimal coupling, Maxwell, Poisson bracket | 3 |
 | Nothing | 1, 2, 10, 11 — Dirac pair, massless Dirac, gauge transformation, anomaly trace | 4 |
 
-The naming level decides the most equations and the display level the fewest, and the display equations are all differential. That is the empirical case for naming first: the corpus's hardest objects are already handled by names, and the display is needed only where a derivative acts on what precedes it. It is also the reason a notation reform should start at the naming level and stop there unless an equation forces it further.
+The naming level decides the most equations and the display level the fewest. That is the empirical case for naming first: the corpus's hardest objects are already handled by names, and the display is needed only where a derivative acts on what precedes it. It is also the reason a notation reform should start at the naming level and stop there unless an equation forces it further.
+
+The systematic rendering changes this count in one place only. Of the four equations that needed nothing, equations 1, 2 and 10 gain a left arrow that states nothing, and equation 11 gains nothing because it has no operand. Of the eight that needed a name or a mark, equation 3 gains a second right arrow, and it is the one mark in the twelve that the corpus was missing.
 
 ## The Measured Costs
 
@@ -561,7 +692,7 @@ The corpus follows a rule. It has never been written down, and it is short enoug
 
 **Tier one: name the operator.** Left multiplication, right multiplication, two-sided operator, frame cell, chirality cell, mass-shell cell. No glyph, no arrow, no dot. This covers the ordinary language of the corpus and should be the default in every article.
 
-**Tier two: the arrow, for a side that needs marking.** $b\overrightarrow{\psi}$ for the left action and $\psi\overleftarrow{b}$ for the right one, on elements and on derivatives alike, allowed without restriction in this note. It is chosen because it is shorter than the sandwich, not because the sandwich fails. For a derivative the arrow is not merely shorter but required, since a derivative has no cell form. Defined once, in the operator conventions, with two clauses fixed: that the arrow points at what the operator acts on, and that the double arrow means one derivative on each side with the sign convention stated.
+**Tier two: the arrow, for a side that needs marking.** $\overrightarrow{b}\psi$ for the left action and $\psi\overleftarrow{b}$ for the right one, on elements and on derivatives alike, always with the arrow on the operator and its tip on the operand, and above the tilde when the operator carries one, $\overrightarrow{\tilde\nabla}$. The tier is a ration and not a prohibition, and the ration is measured: marking every action prints twenty marks where the corpus prints four, and six of the twenty state nothing. It is chosen because it is shorter than the sandwich, not because the sandwich fails. For a derivative the arrow is not merely shorter but required, since a derivative has no cell form. Defined once, in the operator conventions, with two clauses fixed: that the arrow points at what the operator acts on, and that the double arrow means one derivative on each side with the sign convention stated.
 
 **Tier three: dot scope, for a product of three or more factors carrying derivatives.** The arrow cannot say which factor is meant when there are three. Dot scope can. It is currently barred by the no-dot rule, which is about $\dot x$ for $dx/dt$ and not about scope, and the ban could be narrowed to the case it was written for. Nothing in the corpus needs this tier yet; the Poisson bracket is the only expression that nearly does.
 
@@ -609,6 +740,7 @@ Six failures are easy to produce, and each has been produced during the writing 
 - **The double-arrow convention.** The corpus does not use the double arrow anywhere. If it ever does, the factor of $\tfrac12$ has to be fixed, because the literature is not unanimous.
 - **One glyph, two meanings.** The arrow is a side mark in three articles and a left-action decoration on an algebra symbol in four. The two uses never meet in a single equation today, because the octonionic constructions and the Dirac equations live in different articles. They would meet in any article that quoted both. This note settles the case it can settle: the mark is allowed on any object that acts, and it is kept off names, so the algebra decoration takes a prescript. What remains open is the corpus-wide change, which belongs in the operator conventions.
 - **The corpus has no settled name for the natural map.** It marks the value, $X^{\natural}$, and names the operator $X\mapsto X^{\natural}$ only by writing the same glyph bare in nine places. *Naming the Map* supplies one, $\operatorname{nat}$, and a sentence in *Product and Form Conventions* beside the $\bar{\cdot}$ row would make it official. The same sentence would fix the placeholder form $(\cdot)^{\natural}$.
+- **The summation sign, and the three contractions.** *Operator and Calculus Conventions* says a repeated index is summed only where a $\sum$ names it, and the corpus keeps that for a cell on a cell, half keeps it for a cell on a derivative, and does not keep it for a cell on a component. Twenty-nine unsummed momentum contractions against two summed is not a slip of the pen, it is the Einstein habit, and the nine articles that print $\mathsf C_\mu p_\mu$ or $\mathsf C_\mu s_\mu$ read the same either way. The repair is one sentence with three cases in it, and it changes no physics: the identity $D^2-2mD=(p_\mu p_\mu-m^2)T_{e_t,e_t}$ is the same statement whether the sum is printed or read.
 - **Which side is the matter representation.** The minimal coupling article records the left and the right construction as two covariant mirrors and calls the choice open. The notation question is downstream of that choice and cannot settle it: a corpus that had chosen the right action would write N1 everywhere and the cells would change roles. Until the choice is made, the arrow is the only mark that keeps both forms printable without rewriting the other.
 
 ## Summary
@@ -621,6 +753,10 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 **Algebraic right action needs no arrow.** $R_b=T_{e_t,b}$ is a cell of length one. The corpus writes it as $R_b$, and the three articles that use the arrow as a side mark all put it on a derivative.
 
+**Placed on the actor, the arrow makes the two sides one shape.** $\overrightarrow{\tilde\nabla}F$ and $G^+\overleftarrow{\tilde\nabla}$ are read by one rule, and a two-sided cell is a pair of arrows pointing inward. The arrow goes above the tilde, $\overrightarrow{\tilde\nabla}$, because the tilde is part of the operator's name: it is what separates the four-component biquaternionic gradient from the three-component spatial $\nabla$. Marking the field instead would put the two placements in one equation; the corpus never does, and its two arrow users both mark the operator.
+
+**Used without ration, the arrow prints twenty marks where the corpus prints four.** Six are left arrows on a forward-acting derivative, five restate a cell name, and nine carry information. The corpus already prints four of the nine. The arrow on the identity is the mark that turns out to be worth printing: it is how a central term and a one-sided operator are recognised. The pass found the fifth: the minimal-coupling sum marks the right action of the gradient and leaves the right action of the potential bare. Its real yield is elsewhere. Two arrows that agree mean a central operator, and the centre is where the mass sits; two arrows that disagree mean a frame term. Reversal duplicates an equation only at the centre, where the mass sits; chirality duplicates by sign, and the projector pair is one formula and its complement.
+
 **Of twelve equations, the display decides three.** They are the right-acting gradient, the Maxwell sum of a left and a right term, and the Poisson bracket. Five are decided by the naming level, because they are two-sided or purely right-sided and no display option exists for them. Four are decided by nothing, because the operator is written first.
 
 **The rule is four tiers.** Name the operator; arrow for either side, on elements and derivatives; dot scope for three factors with derivatives; $\operatorname{nat}$ only on whole operators. Never read integration by parts as a change of side.
@@ -629,7 +765,7 @@ The right action is written in the corpus in one way out of six, and the corpus 
 
 **The map needs a name.** The corpus writes $X^{\natural}$ as a mark and the bare glyph as the map in nine places, so the same sign already means two things. $\operatorname{nat}$ is the cheapest name that does not collide, and one sentence in the conventions would settle it.
 
-**The arrow needs a decision, and this note takes it.** The pair $\overrightarrow{\ }$, $\overleftarrow{\ }$ is allowed on any object that acts, elements included, and is used systematically in the appendix so that the cost can be compared with the name and with the sandwich. It stays off names: the algebra's left-action decoration becomes a prescript.
+**The arrow needs a decision, and this note takes it.** The pair $\overrightarrow{\ }$, $\overleftarrow{\ }$ is allowed on any object that acts, elements included, and it is always placed on the actor, never on the operand; the appendix uses it systematically so that the cost can be compared with the name and with the sandwich. It stays off names: the algebra's left-action decoration becomes a prescript.
 
 ## Summary of Notation
 
@@ -641,8 +777,11 @@ The right action is written in the corpus in one way out of six, and the corpus 
 | $X^{\natural}$ | The natural sign applied to an element: the corpus's usual form |
 | $\operatorname{nat}$ | The map $X\mapsto X^{\natural}$, which the corpus names only by writing the glyph bare |
 | $\natural$ in a subscript | A label, as in $\langle\cdot,\cdot\rangle_{\natural}$ |
-| $\overleftarrow{\partial}$ | The derivative acting on what precedes it |
-| $\overrightarrow{\partial}$ | The derivative acting on what follows it |
+| $\psi\overleftarrow{b}$, $\psi\overleftarrow{\partial}$ | The element, or the derivative, acting on what precedes it |
+| $\overrightarrow{b}\psi$, $\overrightarrow{\partial}\psi$ | The element, or the derivative, acting on what follows it |
+| $\overrightarrow{\tilde\nabla}$ | The biquaternionic gradient acting on what follows it: the arrow goes above the tilde, which is part of the name |
+| $\sum_\mu\mathsf C_\mu p_\mu$ | A repeated index, summed in writing: this note prints the sum where the corpus drops it |
+| $\vec\nabla$ | The spatial three-component gradient, which is not the operator above |
 | $M^{\mathsf T}$ | The plain transpose of the array |
 | $\mathsf S$ | The Peirce exchange; the matrix that carries the transpose in the canonical frame |
 | $\operatorname{nat}$ as a matrix | $\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis |
@@ -675,7 +814,7 @@ The tables above say which form is correct. This appendix shows the forms doing 
 
 | Example | The job | What it settles |
 |---|---|---|
-| 0 | The left action $b\overrightarrow{\psi}$, every step | The baseline: one glyph, one array product, no rewriting |
+| 0 | The left action $\overrightarrow{b}\psi$, every step | The baseline: one glyph, one array product, no rewriting |
 | 1 | The right action $\psi\overleftarrow{b}$, every step, from scratch | The three-step chain, and the two independent routes to it |
 | 2 | The two side by side | They differ by the sign of the frame term, and nothing else |
 | 3 | A mixed element $e_t+\vec e_z$ | How much rewriting an element needs, measured by its vector part |
@@ -695,12 +834,12 @@ Every matrix below was computed from the multiplication and checked against the 
 Both marks are used in this appendix, without restriction, on elements and on derivatives alike:
 
 $$
-b\overrightarrow{\psi}:=L_b(\psi)=b\psi,
+\overrightarrow{b}\psi:=L_b(\psi)=b\psi,
 \qquad
 \psi\overleftarrow{b}:=R_b(\psi)=\psi b .
 $$
 
-The arrow points at what the operator acts on. Read it as a preposition: $b\overrightarrow{\psi}$ is "$b$ acting on $\psi$", $\psi\overleftarrow{b}$ is "$\psi$ acted on by $b$". The mark states the side and carries nothing else. The names $L_b$ and $R_b$ remain available, and the cells $T_{a,b}$ remain available; the arrows are a display, not a definition.
+The arrow sits **on the operator** and points at what that operator acts on. Read it as a preposition: $\overrightarrow{b}\psi$ is "$b$ acting on $\psi$", $\psi\overleftarrow{b}$ is "$\psi$ acted on by $b$". The mark states the side and carries nothing else, and its placement is fixed: the operator takes the arrow, never the operand. That is the corpus's own practice — the Maxwell article writes $G^+\overleftarrow{\nabla}$, and the Poisson bracket writes both directions on the derivatives, $\overleftarrow{\partial/\partial q_i}$ and $\overrightarrow{\partial/\partial p_i}$, and no article writes the arrow on a field. The names $L_b$ and $R_b$ remain available, and the cells $T_{a,b}$ remain available; the arrows are a display, not a definition.
 
 The carrier arrays are the same objects written as matrices in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$:
 
@@ -720,7 +859,7 @@ since it fixes $e_t$ and negates the three frame units.
 
 ### Example 0: The Left Action, Every Step
 
-**The question.** Compute $b\overrightarrow{\psi}$ for $b=\vec e_x$ and $\psi=e_t+2\vec e_y$.
+**The question.** Compute $\overrightarrow{b}\psi$ for $b=\vec e_x$ and $\psi=e_t+2\vec e_y$.
 
 **The table.** Every number in this appendix comes from one product table, so it is stated once. The scalar unit is the identity, the three frame units square to minus it, two different frame units anticommute, and the triple is cyclic. Read a row label on the left against a column label on the top:
 
@@ -734,7 +873,7 @@ since it fixes $e_t$ and negates the three frame units.
 **Predict the answer before writing any array.** Left multiplication distributes over the sum, so
 
 $$
-\vec e_x\overrightarrow{(e_t+2\vec e_y)}=\vec e_x\overrightarrow{e_t}+2\,\vec e_x\overrightarrow{\vec e_y}
+\overrightarrow{\vec e_x}(e_t+2\vec e_y)=\overrightarrow{\vec e_x}e_t+2\,\overrightarrow{\vec e_x}\vec e_y
 =\vec e_x+2\vec e_z,
 $$
 
@@ -886,9 +1025,9 @@ extended to coefficients by $\operatorname{nat}\bigl(\sum_\mu a_\mu e_\mu\bigr)=
 The claim, to be checked rather than assumed, is
 
 $$
-\psi\overleftarrow{b}=\operatorname{nat}\Bigl(\operatorname{nat}(b)\overrightarrow{\operatorname{nat}(\psi)}\Bigr)
-=\operatorname{nat}\bigl(\operatorname{nat}(\vec e_x)\overrightarrow{\operatorname{nat}(\psi)}\bigr)
-=\operatorname{nat}\bigl(-\vec e_x\overrightarrow{\operatorname{nat}(\psi)}\bigr).
+\psi\overleftarrow{b}=\operatorname{nat}\Bigl(\overrightarrow{\operatorname{nat}(b)}\operatorname{nat}(\psi)\Bigr)
+=\operatorname{nat}\bigl(\overrightarrow{\operatorname{nat}(\vec e_x)}\operatorname{nat}(\psi)\bigr)
+=\operatorname{nat}\bigl(\overrightarrow{-\vec e_x}\operatorname{nat}(\psi)\bigr).
 $$
 
 Here $\operatorname{nat}(b)=\operatorname{nat}(\vec e_x)=-\vec e_x$, so the middle operator is left multiplication by $-\vec e_x$, and its array is $L_{-\vec e_x}=-L_{\vec e_x}$:
@@ -1012,7 +1151,7 @@ Fourteen entries agree and two do not. That is why the corpus can write $R_b$ an
 
 Examples 0 and 1 were computed independently and differ in one sign, which is the whole subject.
 
-| | Left action $b\overrightarrow{\psi}$ | Right action $\psi\overleftarrow{b}$ |
+| | Left action $\overrightarrow{b}\psi$ | Right action $\psi\overleftarrow{b}$ |
 |---|---|---|
 | Glyph cost | one | one if written with the arrow, eight cells as a sandwich |
 | Array | $L_{\vec e_x}$ | $R_{\vec e_x}$ |
@@ -1120,7 +1259,7 @@ What it does not do is get shorter. For an element the composite collapses to a 
 
 ### Example 7: The Arrows Used Systematically
 
-The decision taken above is that $\overrightarrow{\ }$ and $\overleftarrow{\ }$ may mark any action on any object. This example records what happens when they are used that way, because three things follow and two of them are not obvious.
+The decision taken above is that $\overrightarrow{\ }$ and $\overleftarrow{\ }$ may mark any action on any object, and *The Arrows Used Everywhere* applies it to all twelve equations. This example records what the pair does mechanically when used that way, because three things follow and two of them are not obvious.
 
 **One: the display collapses.** The chirality cell of equation 6 acts as $-iR_{\vec e_z}$, so on a field it is written
 
@@ -1135,7 +1274,7 @@ against eight cells for the same statement written as a sandwich. The arrow carr
 $$
 \psi\overleftarrow{b_1}\overleftarrow{b_2}=\psi\overleftarrow{b_1b_2},
 \qquad
-b_1\overrightarrow{b_2\overrightarrow{\psi}}=b_1b_2\overrightarrow{\psi},
+\overrightarrow{b_1}\bigl(\overrightarrow{b_2}\psi\bigr)=\overrightarrow{b_1b_2}\psi,
 $$
 
 so a chain of arrows is read straight off, left to right, with no reordering. The arrays do not behave the same way. Left multiplication is a homomorphism and right multiplication is an anti-homomorphism:
@@ -1151,9 +1290,9 @@ Both verified: first residual $2\times10^{-15}$, second $2.5\times10^{-15}$ over
 **Three: under the natural sign the arrow reverses.** Since $\operatorname{nat}$ is an anti-automorphism,
 
 $$
-\operatorname{nat}\bigl(b\overrightarrow{\psi}\bigr)=\operatorname{nat}(\psi)\overleftarrow{\operatorname{nat}(b)},
+\operatorname{nat}\bigl(\overrightarrow{b}\psi\bigr)=\operatorname{nat}(\psi)\overleftarrow{\operatorname{nat}(b)},
 \qquad
-\operatorname{nat}\bigl(\psi\overleftarrow{b}\bigr)=\operatorname{nat}(b)\overrightarrow{\operatorname{nat}(\psi)},
+\operatorname{nat}\bigl(\psi\overleftarrow{b}\bigr)=\overrightarrow{\operatorname{nat}(b)}\operatorname{nat}(\psi),
 $$
 
 residual $1.8\times10^{-15}$ over two hundred random pairs. Read that as a rule of the page: applying $\operatorname{nat}$ to a product flips its arrow and conjugates both entries. Then R1 stops being a formula and becomes a sentence. The sandwich
