@@ -79,7 +79,7 @@ $$
 and in the framework's operators the scalar coupling is
 
 $$
-\boxed{\;(L_k e_t)\tilde S_k = \frac{\hbar}{2}\,i\,\sum_k L_k \vec e_k \in \mathbb{M}_+\;}.
+\boxed{\;\sum_k (L_k e_t)\tilde S_k = \frac{\hbar}{2}\,i\,\sum_k L_k \vec e_k \in \mathbb{M}_+\;}.
 $$
 
 This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore **not central** — a central element lies in the complex line $\mathbb{C}_{\mathbb{B}}$, and $\sum_k L_k\tilde S_k$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_t$.

@@ -126,7 +126,7 @@ The two-dimensional identities on which the Thirring model's "one coupling" rest
 
 - the Clifford relations $\left(\gamma_0\right)^2 = I_2$, $\left(\gamma_1\right)^2 = -I_2$, $\{\gamma_0,\gamma_1\} = 0$ and $\gamma_5^2 = I_2$;
 - the current duality $A_\mu \propto \epsilon_{\mu\nu}V_\nu$ — the axial current is the Hodge dual of the vector current;
-- consequently $\sum_\mu A_\mu A_\mu = -V_\mu V_\mu$, so the vector–vector and axial–axial quartic terms differ only by sign, and a single coupling exhausts the local quartic interactions.
+- consequently $\sum_\mu A_\mu A_\mu = -\sum_\mu V_\mu V_\mu$, so the vector–vector and axial–axial quartic terms differ only by sign, and a single coupling exhausts the local quartic interactions.
 
 The duality is the exact reason the two-dimensional model has one coupling, and it is a property of the Clifford algebra and not of the framework.
 
@@ -146,7 +146,7 @@ The duality is the exact reason the two-dimensional model has one coupling, and 
 
 A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the spinor's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma_\mu\gamma_5\psi$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.
 
-The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction is a coupling in the channel conjugate to the mass — the channel in which a strong coupling restores the symmetry by generating a mass. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd $\gamma_0$ and $\gamma_5$, outside the even subalgebra $\mathbb{B}$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $\sum_\mu A_\mu A_\mu = -V_\mu V_\mu$ and the Thirring model has a single coupling.
+The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction is a coupling in the channel conjugate to the mass — the channel in which a strong coupling restores the symmetry by generating a mass. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd $\gamma_0$ and $\gamma_5$, outside the even subalgebra $\mathbb{B}$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $\sum_\mu A_\mu A_\mu = -\sum_\mu V_\mu V_\mu$ and the Thirring model has a single coupling.
 
 ## Summary of Notation
 
@@ -164,7 +164,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |
 | $\frac{3\kappa}{8}\left(\bar\psi\gamma_\mu\gamma_5\psi\right)^2$ | Hehl–Datta torsion-induced axial-axial interaction |
 | $X$, $M$ | Spinor–torsion coupling and torsion mass (propagating-torsion case) |
-| $\sum_\mu A_\mu A_\mu = -V_\mu V_\mu$ | Two-dimensional current duality (verified exactly) |
+| $\sum_\mu A_\mu A_\mu = -\sum_\mu V_\mu V_\mu$ | Two-dimensional current duality (verified exactly) |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational and material sectors |
 
 ## Further Reading

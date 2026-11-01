@@ -24,7 +24,7 @@ has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two 
 
 **What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
 
-**The result in one line.** The left matrix is the $2\times2$ image, $L^{2}(\tilde Q)=A$; the right matrix is its transpose, $R^{2}(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
+**The result in one line.** The left matrix is the $2\times2$ image, $L(\tilde Q)=A$; the right matrix is its transpose, $R(\tilde Q)=A^{\mathsf T}$. The trace is $2Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are $Q_t\pm iB$.
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put
 $$
@@ -181,7 +181,7 @@ $$
 $$
 In both bases the columns are $(P_+,X_+)$ and $(X_-,P_-)$, so
 $$
-L^{2}(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
+L(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}=A.
 $$
 The computation in the first basis is the proposition of *Peirce Coordinates, Matrix Units and the Spinor Planes*, §*The Left Action on a Couple*; the second basis repeats it.
 
@@ -197,7 +197,7 @@ $$
 $$
 In both bases the columns are $(P_+,X_-)$ and $(X_+,P_-)$, so
 $$
-R^{2}(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
+R(\tilde Q)=\begin{pmatrix}P_+&X_+\\X_-&P_-\end{pmatrix}=A^{\mathsf T}.
 $$
 The right matrix is the transpose of the left matrix. This is the whole content of the compression: the left action reads the columns of $A$, the right action reads the rows, and a row written as a column is the transpose.
 
@@ -217,60 +217,49 @@ $$
 
 **A note on the element.** The matrix $A$ is the matrix of the element itself, not a regular matrix on a larger space. The left action is the multiplication by $A$ on the column space of the left ideal; the right action is the multiplication by $A^{\mathsf T}$ on the row space of the right ideal. There is no ambient $4\times4$ space in the compressed model, and the two actions are not two operators on one space.
 
-## The L and R Bases
+## The Images of the Four Units
 
-**The left basis.** The four left matrices are
+**The left matrices.** The four left matrices are
 $$
-L_t^{2}=\mathrm I_2,\qquad
-L_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-L_y^{2}=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-L_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathrm I_2,\qquad
+-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+-i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+-i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
-Each is $\mathsf M_2(\vec e_\mu)$ for the three vector units, and the identity for the scalar unit. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are linearly independent and form a basis of $M_2(\mathbb{C})$.
+They are the images of the four units under $\mathsf M_2$: the identity for $e_t$ and $-i\sigma_k$ for $\vec e_k$. Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are linearly independent and form a basis of $M_2(\mathbb{C})$.
 
-**The right basis.** The four right matrices are the transposes,
+**The right matrices.** The four right matrices are the transposes,
 $$
-R_t^{2}=\mathrm I_2,\qquad
-R_x^{2}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-R_y^{2}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
-R_z^{2}=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathrm I_2,\qquad
+-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+-i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
-The matrices $L_x^{2}$ and $L_z^{2}$ are symmetric, and $L_y^{2}$ is antisymmetric, so
-$$
-R_x^{2}=L_x^{2},\qquad
-R_y^{2}=-L_y^{2},\qquad
-R_z^{2}=L_z^{2}.
-$$
-The right basis differs from the left by the sign of the $y$ matrix alone. Each has determinant $1$ and trace $2\delta_{\mu t}$; the four are a basis of $M_2(\mathbb{C})$.
+The matrices $\sigma_1$ and $\sigma_3$ are symmetric, and $\sigma_2$ is antisymmetric, so transposition fixes $\mathrm I_2$, $-i\sigma_1$ and $-i\sigma_3$ and negates $-i\sigma_2$. The right family differs from the left by the sign of the second matrix alone. Each has determinant $1$; the identity has trace $2$ and the three others trace $0$. The four are a basis of $M_2(\mathbb{C})$.
 
-**The two bases of one space.** In the $4\times4$ article the left and right bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left basis is read on $S_\pm$, the right basis on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.
+**The two families in one space.** In the $4\times4$ article the left and right families are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$. In the compressed model both are bases of the same space $M_2(\mathbb{C})$. This is not an identification of the two copies: the left family is read on $S_\pm$, the right family on $T_\pm$, and the two actions remain different. It is the compression of the two copies to the one algebra that carries both.
 
-**The products.** Write $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$. Then
+**The products.** The four left matrices multiply as the four units do, and the four right matrices multiply in the reverse order. For the left family,
 $$
-L_\mu^{2}L_\nu^{2}=\varepsilon L_{\mu\nu}^{2},\qquad
-R_\mu^{2}R_\nu^{2}=\varepsilon' R_{\nu\mu}^{2}.
+(-i\sigma_1)(-i\sigma_2)=-i\sigma_3,\qquad
+(-i\sigma_2)(-i\sigma_1)=i\sigma_3,\qquad
+(-i\sigma_3)(-i\sigma_1)=-i\sigma_2,
 $$
-The left product follows the order of the units; the right product reverses it. For example,
+and the three squares are $-\mathrm I_2$. For the right family the two factors are exchanged,
 $$
-(L_x^{2})^2=(R_x^{2})^2=-\mathrm I_2,\qquad
-L_x^{2}L_y^{2}=L_z^{2},\qquad
-L_y^{2}L_x^{2}=-L_z^{2},
+(-i\sigma_1)(i\sigma_2)=i\sigma_3,\qquad
+(i\sigma_2)(-i\sigma_1)=-i\sigma_3 .
 $$
-and on the right $R_x^{2}R_y^{2}=-R_z^{2}$, $R_y^{2}R_x^{2}=R_z^{2}$.
+The sign of $\sigma_2$ is the only difference between the two families, and it is the matrix form of the anti-automorphism.
 
-**Trace and determinant.** Every basis matrix is invertible, with
-$$
-\det L_\mu^{2}=\det R_\mu^{2}=1,\qquad
-\operatorname{Tr}L_\mu^{2}=\operatorname{Tr}R_\mu^{2}=2\delta_{\mu t}.
-$$
-The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+**Trace and determinant.** Every matrix of the two families is invertible, with determinant $1$; the identity has trace $2$ and the other matrices trace $0$. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
 
 ## The Stitch Between the Left and the Right
 
 **The transpose.** For every $\tilde Q$,
 $$
-R^{2}(\tilde Q)=L^{2}(\tilde Q)^{\mathsf T},\qquad
-L^{2}(\tilde Q)=R^{2}(\tilde Q)^{\mathsf T}.
+R(\tilde Q)=L(\tilde Q)^{\mathsf T},\qquad
+L(\tilde Q)=R(\tilde Q)^{\mathsf T}.
 $$
 The stitch is the plain transpose. There is no sign matrix and no swap matrix in the compressed formula.
 
@@ -384,17 +373,17 @@ is a trace over both factors; it does not descend to a trace of $A_1A_2^{\mathsf
 
 **The left product.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-L^{2}(\tilde Q_1\tilde Q_2)=L^{2}(\tilde Q_1)L^{2}(\tilde Q_2),\qquad
-L^{2}(\tilde Q^n)=L^{2}(\tilde Q)^n,\qquad
-L^{2}(\tilde Q^{-1})=L^{2}(\tilde Q)^{-1},
+L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2),\qquad
+L(\tilde Q^n)=L(\tilde Q)^n,\qquad
+L(\tilde Q^{-1})=L(\tilde Q)^{-1},
 $$
 the last when either side exists, that is when $\langle\tilde Q\rangle_{\natural}\neq0$. In the matrix model this is the multiplicativity of $\mathsf M_2$.
 
 **The right product.** The right action is anti-multiplicative:
 $$
-R^{2}(\tilde Q_1\tilde Q_2)=R^{2}(\tilde Q_2)R^{2}(\tilde Q_1),\qquad
-R^{2}(\tilde Q^n)=R^{2}(\tilde Q)^n,\qquad
-R^{2}(\tilde Q^{-1})=R^{2}(\tilde Q)^{-1}.
+R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
+R(\tilde Q^n)=R(\tilde Q)^n,\qquad
+R(\tilde Q^{-1})=R(\tilde Q)^{-1}.
 $$
 The reversal is the reversal of the order of the factors in the product $X\tilde Q$.
 
@@ -473,7 +462,7 @@ $$
 \det(PAP^{-1})=\det A,\qquad
 \det A^{\mathsf T}=\det A .
 $$
-Every basis matrix has determinant $1$, so the four left matrices and the four right matrices lie in $SL_2(\mathbb{C})$.
+Each matrix in the two families has determinant $1$, so the four left matrices and the four right matrices lie in $SL_2(\mathbb{C})$.
 
 **The characteristic polynomial.** The characteristic polynomial is
 $$
@@ -593,8 +582,8 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $T_\pm=\tilde\Pi_\pm\mathbb{B}$ | the minimal right ideals |
 | $P_\pm,X_\pm$ | the Peirce coordinates |
 | $A=\mathsf M_2(\tilde Q)=\begin{pmatrix}P_+&X_-\\X_+&P_-\end{pmatrix}$ | the $2\times2$ image |
-| $L^{2}(\tilde Q)=A$, $R^{2}(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |
-| $L_\mu^{2}$, $R_\mu^{2}$ | the left and right matrices of the four units |
+| $L(\tilde Q)=A$, $R(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |
+| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
 | $\varrho$ | the anti-automorphism fixing $e_t,e_x,e_z$ and negating $e_y$ |
 | $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |

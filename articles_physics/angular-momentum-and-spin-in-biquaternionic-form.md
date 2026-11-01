@@ -15,7 +15,7 @@ $$
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and $i$ on the right is the complex unit of $M_2(\mathbb{C})$. It follows that
 
 $$
-\mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_k h_k \vec e_k\bigr) = h_t I_2 + h_k \sigma_k .
+\mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_k h_k \vec e_k\bigr) = h_t I_2 + \sum_k h_k \sigma_k .
 $$
 
 The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_i,L_j]=i\epsilon_{ijk}L_k$, is the $\hbar=1$ form of the relations below.
@@ -81,7 +81,7 @@ $$
 This is the standard **anti-Hermitian** convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_k \leftrightarrow \tfrac{i}{2}\sigma_k$. Exponentiating a generator gives a group element:
 
 $$
-\exp\!\left(\theta\,\vec u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\sum_k \vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t - \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k ,
+\exp\!\left(\theta\,\sum_k \vec u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\sum_k \vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t - \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k ,
 $$
 
 where $\vec u$ is a unit real vector. This is a **unit real quaternion**: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\sum_k \vec u_k \vec e_k$ a pure real quaternion of square $-e_t$, so that the power series splits into the trigonometric series.
@@ -233,8 +233,8 @@ The operator $\tilde S_{\mathrm{tot},k}$ is Hermitian, its orbital part sitting 
 The **spin–orbit operator** is the scalar contraction of the two vector operators,
 
 $$
-(L_k e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,\sum_k L_k \vec e_k,
-\qquad \mathsf{M}_2\bigl((L_k e_t)\tilde{S}_k\bigr) = \tfrac{\hbar}{2}\,L_k\sigma_k = L\cdot\vec S.
+\sum_k (L_k e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,\sum_k L_k \vec e_k,
+\qquad \mathsf{M}_2\bigl(\sum_k (L_k e_t)\tilde{S}_k\bigr) = \tfrac{\hbar}{2}\,\sum_k L_k\sigma_k = L\cdot\vec S.
 $$
 
 Its eigenvalues follow from the Casimir identity $\vec L\cdot\vec S = \tfrac{1}{2}(S_{\mathrm{tot}}^2 - L^2 - S^2)$: on a state of definite $l$ and total $s_{\mathrm{tot}} = l\pm\tfrac12$,
@@ -252,8 +252,8 @@ For a general angular momentum the Casimir is $S_{\mathrm{tot}}^2=\sum_k S_{\mat
 
 $$
 \boxed{\;\tilde S_{\mathrm{tot}}^2 = \sum_{k=1}^{3}\tilde S_{\mathrm{tot},k}^2
-= L^2 e_t + \tilde{S}^2 + 2\,(L_k e_t)\tilde{S}_k
-= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,L_k \vec e_k\;},
+= L^2 e_t + \tilde{S}^2 + 2\,\sum_k (L_k e_t)\tilde{S}_k
+= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,\sum_k L_k \vec e_k\;},
 $$
 
 where the cross terms combine to $2\sum_k L_k\tilde S_k = i\hbar \sum_k L_k\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is **not** a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value

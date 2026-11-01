@@ -35,7 +35,7 @@ $$
 where $\bar u = u^\dagger\gamma_0$ is the Dirac conjugate. The vector and spinor units are tied together by
 
 $$
-u = j_\mu i\gamma_\mu v, \qquad \sum_\mu k_\mu\gamma_\mu u = u, \qquad \sum_\mu k_\mu\gamma_\mu v = -v .
+u = \sum_\mu j_\mu i\gamma_\mu v, \qquad \sum_\mu k_\mu\gamma_\mu u = u, \qquad \sum_\mu k_\mu\gamma_\mu v = -v .
 $$
 
 The two spinors are therefore the two eigenvectors of the Clifford element $\sum_\mu k_\mu\gamma_\mu$ with eigenvalues $+1$ and $-1$, and $j_\mu i\gamma_\mu$ exchanges them. In the Dirac representation and the coordinate system
@@ -63,7 +63,7 @@ $$
 and
 
 $$
-\sum_\mu k_\mu\gamma_\mu r = l, \qquad k_\mu^+\gamma_\mu r = 0, \qquad \sum_\mu k_\mu\gamma_\mu l = r, \qquad k_\mu^-\gamma_\mu l = 0 .
+\sum_\mu k_\mu\gamma_\mu r = l, \qquad \sum_\mu k_\mu^+\gamma_\mu r = 0, \qquad \sum_\mu k_\mu\gamma_\mu l = r, \qquad \sum_\mu k_\mu^-\gamma_\mu l = 0 .
 $$
 
 The names are the source's: $r$ is the right-handed and $l$ the left-handed *pure spinor* of the pair. The two null vectors $k_+$ and $k_-$ are the two null directions into which $k$ and $j$ resolve.
