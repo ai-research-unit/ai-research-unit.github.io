@@ -119,7 +119,7 @@ where $\bar{\cdot}$ on the left is the corpus's complex conjugation, the involut
 
 This is the article's central algebraic result. **Daviau's star conjugation is not a new operation on the biquaternion algebra; it is the corpus's complex conjugation $\bar{\cdot}$**, seen through the identification of the space Clifford algebra with $\mathbb B$. The corpus already uses $\bar{\cdot}$ as the involution that cuts the algebra into the real sector $\mathbb H_\mathbb B$ and the imaginary sector $i\mathbb H_\mathbb B$, and it already records the warning that entrywise conjugation of a matrix is not the image of any involution of the algebra (*Algebra and Element Conventions*). The star is the involution that **is** the image, and the factor $\sigma_2$ on each side is exactly the correction the warning demands.
 
-**Remark (the star is outer in the space algebra and inner in the full algebra).** The star is a conjugate-linear automorphism of $\mathcal P$; conjugation by a fixed element of $\mathcal P$ is linear, so the star is **not** the inner conjugation of the space Clifford algebra. Fauser's observation is that it becomes the conjugation by the Clifford-**odd** element $\gamma_0$ once the space algebra is injected into the full four-dimensional Clifford algebra, where $\gamma_0$ anticommutes with the space vectors. That is the same odd/even structure the corpus flags in *The Reflection and the Rotation in Biquaternionic Form* (the Pauli algebra cannot carry chirality on its own) and in the companion Dirac–Hestenes article (the mass and the adjoint need the odd $\gamma_0$). The article records the statement as Fauser's and does not reproduce the injection, which needs the full $\mathrm{Cl}_{1,3}$ conventions of the dictionary article.
+**Remark (the star is outer in the space algebra and inner in the full algebra).** The star is a conjugate-linear automorphism of $\mathcal P$; conjugation by a fixed element of $\mathcal P$ is linear, so the star is **not** the inner conjugation of the space Clifford algebra. Fauser's observation is that it becomes the conjugation by the Clifford-**odd** cell $iT_{e_t,e_x}$ once the space algebra is injected into the full four-dimensional Clifford algebra, where that odd cell anticommutes with the space vectors. That is the same odd/even structure the corpus flags in *The Reflection and the Rotation in Biquaternionic Form* (the Pauli algebra cannot carry chirality on its own) and in the companion Dirac–Hestenes article (the mass and the adjoint need the odd cell $iT_{e_t,e_x}$). The article records the statement as Fauser's and does not reproduce the injection, which needs the full $\mathrm{Cl}_{1,3}$ conventions of the dictionary article.
 
 ## The Daviau Equation
 
@@ -151,7 +151,7 @@ where $\mathfrak D = \partial/\partial x_0e_t + i \vec e_y\partial/\partial Q_x 
 
 *Proof.* The dictionary of the first section gives $\mathsf{M}_2(\mathfrak D)=\nabla$, $\mathsf{M}_2(\tilde A)=A$, $\mathsf{M}_2(-\vec e_x)=i\sigma_1$ and $\mathsf{M}_2(\varphi^{*})=\sigma_2\bar\varphi\sigma_2$ by the star theorem. Applying $\mathsf{M}_2$ to the corpus form reproduces the Daviau form term by term.
 
-**What the terms are.** The gradient $\mathfrak D$ has the corpus's Hermitian units on the space derivatives and the unit on the time derivative; under the space-Clifford interpretation these are the three vectors, in the cyclic order $i\vec e_y,i\vec e_z,i\vec e_x$ attached to $\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z$. The right factor $-\vec e_x$ is a single fixed element of the algebra multiplying every solution on the right — the structural feature the corpus meets again, in a different guise, in the spacetime-algebra formulation, where the fixed right multipliers are $I\sigma_3$ and $\gamma_0$. The mass term $m\varphi^{*}$ is **conjugate-linear**, because the star is: it is the antilinear structure of the corpus's *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, applied to the general-element spinor rather than to the chiral pair. The coupling $q\tilde A\varphi$ is the standard left multiplication by the connection, exactly the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
+**What the terms are.** The gradient $\mathfrak D$ has the corpus's Hermitian units on the space derivatives and the unit on the time derivative; under the space-Clifford interpretation these are the three vectors, in the cyclic order $i\vec e_y,i\vec e_z,i\vec e_x$ attached to $\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z$. The right factor $-\vec e_x$ is a single fixed element of the algebra multiplying every solution on the right — the structural feature the corpus meets again, in a different guise, in the spacetime-algebra formulation, where the fixed right multipliers are $I\sigma_3$ and the odd cell $iT_{e_t,e_x}$. The mass term $m\varphi^{*}$ is **conjugate-linear**, because the star is: it is the antilinear structure of the corpus's *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, applied to the general-element spinor rather than to the chiral pair. The coupling $q\tilde A\varphi$ is the standard left multiplication by the connection, exactly the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
 
 **Remark (right multiplication and the Clifford grading).** The right factor $i\sigma_1=-\vec e_x$ is, in the space Clifford algebra, the product of the pseudoscalar with a vector: it is a **Clifford-odd** element of $\mathrm{Cl}_{3,0}$. In the biquaternion interpretation $\vec e_x$ is a quaternion unit, a bivector of $\mathrm{Cl}_{1,3}$, hence **even**. The two gradings available on the same algebra (the space grading of $\mathrm{Cl}_{3,0}$ and the spacetime grading of $\mathrm{Cl}_{1,3}$) disagree on $\vec e_x$, and the corpus keeps them apart deliberately (*Biquaternion Versors and the Orthogonal Group*). The article states the right factor in whichever grading is in use at the point of use and does not assert the two agree.
 
@@ -218,6 +218,7 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $z\colon\sigma_k\mapsto\Sigma_{k-1}$ (cyclic) | The map relating the space and spacetime bases |
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra; equals $\mathcal P$ as a complex algebra |
 | $\mathsf{M}_2$ | The corpus's matrix representation, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $iT_{e_t,e_x}=iL_tR_x$ | The Clifford-odd cell of the Dirac frame; the left time multiplication times the right space multiplication |
 
 ## Further Reading
 
@@ -226,3 +227,19 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 - D. Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra formulation that the equivalence compares against.
 - B. Fauser, "Isospin from Spin by Compositeness," arXiv:hep-th/9908015, for the alternative to the iso-spin interpretation of the right action.
 - The companion articles of this series: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html), [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html), [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), and [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

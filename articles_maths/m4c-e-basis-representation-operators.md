@@ -646,6 +646,8 @@ c=\begin{pmatrix}1\\1\\0\\0\end{pmatrix}
 $$
 of rank one. It is a unit of determinant $16$ and length one. The two examples together show that neither matrix rank nor determinant decides the length.
 
+**Where the frame question is answered.** The coefficient array $c(M)$ is computed from the sixteen products of four *basis elements*, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* of *$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant*. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.
+
 ## The Plain Adjoint and the Types
 
 ### The Plain Form
@@ -803,10 +805,10 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 - The length stratification: which matrices have length two or three, and what are the e-basis equations cutting out each stratum? The length is the rank of $c(M)$, so the strata are the determinantal varieties of the coefficient matrix; their images under the inverse map $c^{-1}$ are the matrix strata.
 - The normal form of the cone under the automorphism group: the orbit of a pure tensor, its stabiliser, and the relation between the two tensor factors.
-- The coefficient matrix under a change of frame: how $c(M)$ transforms when the e-basis is replaced by another basis, which invariants besides the rank are frame-independent, and whether the length stratification is the same in every frame.
 - The real slice: the real Segre cone, the real length, and the real forms of the complex cone. Does every real matrix of length $r$ have a real decomposition of length $r$? The rank argument says yes, but the explicit factors are not classified.
-- The matrix units $E_{ij}$: their lengths, their minimal decompositions, and the pattern of the coefficient matrix. The example $E_{11}$ has length four; the other units may differ.
 - The physical operators of the corpus: which have length two or three, and whether the real structure of the e-basis makes their statements frame-independent.
+
+Two questions listed here in earlier editions are answered by §*The Coefficient Matrix and the Length* of *$M_4(\mathbb{C})$ e-basis Representation : The Matrix Product, the Trace and the Determinant*. The frame dependence of $c$ is §*The Change of Frame Is a Congruence* there, and the lengths of the sixteen units are §*The Sixteen Lengths* there. So only the identification of physical operators inside a stratum remains open.
 
 ## Summary
 
@@ -818,7 +820,7 @@ The sixteen products $T_{\mu\nu}^{e}=L_\mu^{e}R_\nu^{e}$ are real signed permuta
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $T_{\mu\nu}^{e}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((T_{\mu\nu}^{e})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
-The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and length one.
+The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $T^{e}_{e_t+e_x,e_t+e_y}$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
 
 The plain adjoint swaps the two parameters, and the type criteria are $\tilde P=\lambda\tilde Q$ for self-adjoint, $\tilde P\tilde Q=\pm e_t$ for isometry and $\tilde P\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 

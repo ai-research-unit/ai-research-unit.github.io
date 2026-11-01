@@ -407,6 +407,10 @@ Two corrections to the wording above, made while checking. The four matrix formu
 
 *Outline.* (1) The coefficient matrix and its frame dependence. (2) A change of algebra basis $C$ sends $T_{\mu\nu}=L_\mu R_\nu$ to $\sum C_{\mu\alpha}C_{\nu\beta}T_{\alpha\beta}$, hence $c$ to $C^{-1}c\,C^{-\mathsf T}$, whose rank is unchanged. (3) The two frames of the corpus as the two cases, with $C_\Pi$ and $S$. (4) The consequences: the length is an invariant of the matrix, the stratification by length is frame-free, and the open question in the e-basis article can be closed.
 
+**Done**, as §*The Coefficient Matrix and the Length* in both *matrix product, trace and determinant* articles — §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* inside it. The two operators articles keep a two-line pointer.
+
+Three corrections, made while writing. (i) The congruence is right and was checked numerically on $C_\Pi$: $c'=C_\Pi^{-1}c\,C_\Pi^{-\mathsf T}$, rank preserved across ranks one to four. But $C_\Pi$ is not the change between the two *displays*: both operator articles build the sixteen from the same four coefficient units $e_\mu$, so their abstract operator basis is identical and $c$ is literally unchanged — $T^{\mathcal P}_{\mu\nu}=C_\Pi^{-1}T^{\mathcal E}_{\mu\nu}C_\Pi$ and $M^{\mathcal P}=C_\Pi^{-1}M^{\mathcal E}C_\Pi$ move together. The congruence applies to a change of the *element basis* — for instance building the sixteen from the four Peirce elements instead — and that basis is not orthogonal, so its coefficients must be read with the dual basis. (ii) Only $\det C\ne0$ is used, so the non-orthogonality of $C_\Pi$ costs nothing. (iii) The sharper statement is negative: the same *array* read in two frames names two different operators, and its length may differ, as $E_{11}$ shows. So the length is an invariant of the operator, not of the matrix as an array.
+
 *Length and risk.* 1200 words, one proposition. **Verify the congruence before writing**: the claim is that the frame change acts on the *algebra* basis and hence by congruence on the *operator* basis, and this must be checked on $C_\Pi$ explicitly, since $C_\Pi$ is not orthogonal.
 
 **C. The Sixteen Lengths.**
@@ -416,6 +420,8 @@ Two corrections to the wording above, made while checking. The four matrix formu
 *Why no host.* The article states $\ell(E_{11})=4$ and adds that "the other units may differ". A finite computation settles it, and a table of sixteen numbers is not a section of a theorem-driven article.
 
 *The computation.* With $T_{\mu\nu}^{e}=L^{e}_\mu R^{e}_\nu$ and $c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((T^{e}_{\mu\nu})^{\mathsf T}M\bigr)$, all in the coefficient frame of the e-basis, the rank of $c$ is four for each of the sixteen units. The check is five lines of exact rational arithmetic. Two control values: $\ell(e_t)=1$, since $e_t=T^{e}_{tt}$ is a single product, and $\ell(E_{11})=4$, which matches the article.
+
+**Done.** This is now §*The Sixteen Lengths*, inside §*The Coefficient Matrix and the Length* of both *matrix product, trace and determinant* articles. In the e-basis all sixteen units have length four, and the table of sixteen fours is proved without a sixteen-fold computation: $c(E_{ij})_{\mu\nu}=\tfrac14(T_{\mu\nu})_{ij}$ is a quarter of a monomial matrix, because multiplication by a unit permutes the basis up to sign. In the Peirce frame all sixteen have length one, and the sixteen factorisations are tabulated; every factor has $\mathsf M_2$ a scalar multiple of a matrix unit. The two results are consistent because the arrays name different operators.
 
 *Length and risk.* 800 words, one table, one proposition. **Re-prove rather than cite the computation**, and state the frame: the result is a computation in the coefficient frame, and article B is what would make it a frame-free statement.
 

@@ -279,7 +279,7 @@ The corpus records, in *The Minimal Coupling of the Biquaternion Dirac Field to 
 
 **What the algebra does not say.** It does not say which physical degree of freedom is carried by which factor. The embedding of the left multiplications is $a\mapsto a\otimes\mathbb 1^{\mathrm{opp}}$ and of the right multiplications is $b\mapsto\mathbb 1\otimes b^{\mathrm{opp}}$; the two factors are algebraically distinct but no physical label attaches to either from the algebra alone. Fauser's caution on the same point is that the identification of the right multiplication with a specific internal symmetry — the iso-spin degree of freedom — is not warranted by the algebra. The corpus records the caution and leaves the physical assignment open.
 
-**The precise form of the remaining question.** In the enveloping algebra the question becomes: for the physical Dirac field, which factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers, and is the split forced by the requirement that the current be conserved? The corpus's observation that the conserved current needs the Clifford-odd $\gamma_0$ of the full algebra is a constraint of exactly this kind, and it is the natural place to look for the answer. The algebra alone closes the existence half of the question and leaves the assignment half open.
+**The precise form of the remaining question.** In the enveloping algebra the question becomes: for the physical Dirac field, which factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers, and is the split forced by the requirement that the current be conserved? The corpus's observation that the conserved current needs the Clifford-odd cell $iT_{e_t,e_x}=iL_tR_x$ of the full algebra is a constraint of exactly this kind, and it is the natural place to look for the answer. The algebra alone closes the existence half of the question and leaves the assignment half open.
 
 ## The Envelope as a Luxury of the Associative Unital Case
 
@@ -345,3 +345,19 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 - The companion articles of this series: [The Operators on an Algebra](the-operators-on-an-algebra.html), [The Category of Modules](the-category-of-modules.html), [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), [Matrix Representations : The Eigenbasis and the Diagonalising Matrix](matrix-representations-the-eigenbasis-and-the-diagonalising-matrix.html), and [Universal Enveloping Algebras](universal-enveloping-algebras.html) (the Lie-theoretic construction, distinct from this one).
 - The matrix articles of the group: [Matrix Representations : The Models and the Change of Frame](matrix-representations-the-models-and-the-change-of-frame.html), for the bracket $[F]_{\mathcal B}$; [Matrix Representations : The Two-Sided Operators](matrix-representations-the-two-sided-operators.html), for the coefficient matrix $c(T)$; [Matrix Representations : The Product, the Trace and the Determinant](matrix-representations-the-product-the-trace-and-the-determinant.html), for the element matrix.
 - The physics articles that use the reading: [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html), [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html), and [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html).
+
+## Appendix — The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
