@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{R})$ Standard Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-standard-representation"><strong>$M_2(\mathbb{R})$ Standard Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The model is the algebra.</strong> The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is four-dimensional over $\mathbb{R}$ and so is $M_2(\mathbb{R})$, and the defining map of this article is an isomorphism between them. Nothing is lost and nothing is added: every split quaternion is a $2\times2$ real matrix, every such matrix is a split quaternion, and the two products are the same product. This is the sharpest contrast in the whole family of models. The quaternions embed in $M_2(\mathbb{C})$ as a four-real-dimensional subspace of an eight-dimensional algebra; the split-biquaternions embed in the diagonal of $M_2(\mathbb{H})$ and leave the off-diagonal entries empty; here the image fills the target.</p>
+<p><strong>Why the split case is where the model is transparent.</strong> A matrix model of an algebra carries two structures at once, the algebra structure and the action on a plane. When the model is surjective the two coincide in the simplest possible way, because the plane is the algebra and the action is the product. Every invariant of the element becomes an invariant of its matrix with no remainder: the norm becomes the determinant, twice the scalar part becomes the trace, the conjugations become the adjugate and the transpose, the idempotents become the rank-one projections, and the zero divisors become the singular matrices. The article follows that correspondence section by section, and each section names what the correspondence does <strong>not</strong> preserve, since the exceptions are where the algebra differs from a generic matrix algebra.</p>
+<p><strong>What the model costs.</strong> Two properties of the algebra become less visible rather than more. The first is the trace: the matrix trace of an element is twice its scalar part, so the scalar part is half the trace and no matrix statement names the scalar part directly. The second is the signature: the determinant is a form of signature $(2,2)$, and a matrix algebra over $\mathbb{R}$ has no intrinsic reason to prefer it, so the model hides that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$. Both costs are paid once and are then harmless.</p>
+<p><strong>Boundaries.</strong> The algebra, its multiplication table, its centre, its simplicity and its units are <em>Split-Quaternion Algebra</em> and <em>Split-Quaternion Norm and Invertibility</em>; the element, its coordinates and its involutions are <em>Split-Quaternion Subspaces and the Involutions</em>. The zero divisors are <em>Split-Quaternion Zero Divisors</em>, the spectrum and its degeneracies are <em>Spectral Regularity and Degeneracy in the Split-Quaternion Algebra</em>, the modules are <em>Split-Quaternion Element Representations</em>, and the projective geometry of the null quadric is <em>Split-Quaternion Null Quadric and Projective Geometry</em>. The operators of the model, one-sided and two-sided, are the companion article <em>$M_2(\mathbb{R})$ Standard Representation : Operators</em>.</p>
+<p><strong>Conventions.</strong> The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with</p>
+<p>$$
+\vec e_x^2=-e_t,\qquad \vec e_y^2=\vec e_z^2=e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=-\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y,
+$$</p>
+<p>and the reversed products opposite, so $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_y=\vec e_x$, $\vec e_x\vec e_z=-\vec e_y$. An element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, its scalar part is $q_t$, its pure part is $\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and its natural norm is</p>
+<p>$$
+\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2-q_y^2-q_z^2 .
+$$</p>
+<p>The matrix units of $M_2(\mathbb{R})$ are $E_{ij}$, the identity is $I$, and $\operatorname{tr}$, $\det$, $\operatorname{adj}$ are the matrix trace, determinant and adjugate.</p>
+<h2 id="the-model">The Model</h2>
+<p><strong>Definition.</strong> The <strong>defining representation</strong> is the linear map $\mathsf{M}_2:\mathbb{H}_{\mathrm{s}}\to M_2(\mathbb{R})$ fixed on the basis by</p>
+<p>$$
+\mathsf{M}_2(e_t)=I,\qquad
+\mathsf{M}_2(\vec e_x)=J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=K=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=D=\begin{pmatrix}-1&0\\0&1\end{pmatrix}.
+$$</p>
+<p><strong>The dictionary.</strong> On a general element the map is</p>
+<p>$$
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_t-q_z & q_y-q_x\\ q_x+q_y & q_t+q_z\end{pmatrix},
+$$</p>
+<p>and it inverts by</p>
+<p>$$
+q_t=\tfrac12\operatorname{tr}\mathsf{M}_2(\tilde q),\qquad
+q_z=\tfrac12\bigl(M_{22}-M_{11}\bigr),\qquad
+q_x=\tfrac12\bigl(M_{21}-M_{12}\bigr),\qquad
+q_y=\tfrac12\bigl(M_{21}+M_{12}\bigr).
+$$</p>
+<p>The two off-diagonal entries mix $q_x$ and $q_y$ with opposite signs, and that crossing is the only thing the model does that a naive coordinate reading would miss.</p>
+<p><strong>The check.</strong> The four images multiply as the four generators do, and the verification is one line each. Squaring, $J^2=-I$ reproduces $\vec e_x^2=-e_t$, while $K^2=D^2=I$ reproduce $\vec e_y^2=\vec e_z^2=e_t$. Multiplying, $JK=D$ reproduces $\vec e_x\vec e_y=\vec e_z$, and $KD=-J$, $DJ=K$ reproduce the other two products.</p>
+<p><strong>Theorem (the model is an isomorphism).</strong> The map $\mathsf{M}_2$ is an isomorphism of real algebras,</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}}\;\cong\;M_2(\mathbb{R}),
+$$</p>
+<p>and in particular it is surjective.</p>
+<p><strong>Proof.</strong> Linearity is by definition, multiplicativity follows from the multiplication table as checked above, injectivity from the linear independence of the four images, and surjectivity from the equality of the dimensions, $4=4$.</p>
+<p><strong>Corollary (the least degree).</strong> The least degree of a faithful real matrix representation of $\mathbb{H}_{\mathrm{s}}$ is two.</p>
+<p><strong>Proof.</strong> A faithful representation of degree $n$ embeds a four-dimensional algebra into $M_n(\mathbb{R})$ of dimension $n^2$, so $n^2\ge4$; $n=1$ is excluded because $M_1(\mathbb{R})$ is commutative and $\mathbb{H}_{\mathrm{s}}$ is not; degree two is attained by $\mathsf{M}_2$.</p>
+<p><strong>Uniqueness up to conjugacy.</strong> Every unital algebra homomorphism $\Psi:\mathbb{H}_{\mathrm{s}}\to M_2(\mathbb{R})$ is an isomorphism, and there is $P\in GL_2(\mathbb{R})$ with $\Psi(\tilde q)=P\mathsf{M}_2(\tilde q)P^{-1}$ for every $\tilde q$. The kernel of $\Psi$ is a two-sided ideal, the algebra is simple, so the kernel is zero; then $\Psi\mathsf{M}_2^{-1}$ is an automorphism of $M_2(\mathbb{R})$, and by Skolem–Noether every such automorphism is inner. The consequence is the rule of the whole category: <strong>one model, and it is unique</strong>, so every statement below is a statement about the algebra and not about a choice.</p>
+<p><strong>The automorphisms.</strong> The same argument gives</p>
+<p>$$
+\operatorname{Aut}(\mathbb{H}_{\mathrm{s}})\cong\mathrm{PGL}_2(\mathbb{R}),
+\qquad \alpha_g(\tilde q)=g\tilde qg^{-1},\quad g\in\mathbb{H}_{\mathrm{s}}^{\times},
+$$</p>
+<p>with $g$ and $\lambda g$ inducing the same automorphism because the centre is $\mathbb{R}e_t$.</p>
+<p><strong>The dictionary of the four elements.</strong> The table collects the four basis elements, their images, their squares and their ranks.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>matrix</th>
+<th>square</th>
+<th>trace</th>
+<th>determinant</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$I$</td>
+<td>$I$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$J$</td>
+<td>$-I$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$K$</td>
+<td>$I$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$D$</td>
+<td>$I$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four are units, and the table already shows the two opposite behaviours the algebra mixes: $\vec e_x$ is a complex structure, of determinant $+1$, while $\vec e_y$ and $\vec e_z$ are reflections, of determinant $-1$.</p>
+<h2 id="the-left-and-the-right-matrices">The Left and the Right Matrices</h2>
+<p><strong>Definition.</strong> The algebra acts on itself by left and right multiplication, $L_{\tilde q}(\tilde x)=\tilde q\tilde x$ and $R_{\tilde q}(\tilde x)=\tilde x\tilde q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ these are $4\times4$ real matrices, and in the model they read</p>
+<p>$$
+L_{\tilde q}=M_{\tilde q}\otimes I_2,\qquad R_{\tilde q}=I_2\otimes M_{\tilde q}^{\mathsf T},
+$$</p>
+<p>where the tensor product is taken in the row-major vectorisation of $M_2(\mathbb{R})$, so that $\operatorname{vec}(AXB)=(A\otimes B^{\mathsf T})\operatorname{vec}X$.</p>
+<p><strong>The two copies.</strong> The maps $\tilde q\mapsto L_{\tilde q}$ and $\tilde q\mapsto R_{\tilde q}$ are two isomorphisms of $\mathbb{H}_{\mathrm{s}}$ onto two four-dimensional subalgebras of $M_4(\mathbb{R})$. They are different subalgebras, because the algebra is not commutative: $L_{\tilde q}=R_{\tilde q}$ holds exactly for the central elements, that is for the scalar multiples of $e_t$.</p>
+<p><strong>The product rule.</strong> For all $\tilde q,\tilde p,\tilde x$,</p>
+<p>$$
+L_{\tilde q}L_{\tilde p}=L_{\tilde q\tilde p},\qquad
+R_{\tilde q}R_{\tilde p}=R_{\tilde p\tilde q},\qquad
+L_{\tilde q}R_{\tilde p}=R_{\tilde p}L_{\tilde q}.
+$$</p>
+<p>The third identity is associativity, and it is the one that matters for the operators article: the two families commute, each is the centraliser of the other inside $M_4(\mathbb{R})$, and $M_4(\mathbb{R})=M_2(\mathbb{R})\otimes M_2(\mathbb{R})$ is the enveloping algebra of the pair.</p>
+<p><strong>The rank.</strong> By the rank rule for a Kronecker product,</p>
+<p>$$
+\operatorname{rank}L_{\tilde q}=2\operatorname{rank}M_{\tilde q},\qquad
+\operatorname{rank}R_{\tilde q}=2\operatorname{rank}M_{\tilde q},
+$$</p>
+<p>so the left and right matrices share the rank, and that rank is $4$ on the units, $2$ on the nonzero zero divisors and $0$ at the origin. The trace is $\operatorname{tr}L_{\tilde q}=2\operatorname{tr}M_{\tilde q}=4q_t$.</p>
+<p><strong>What the two copies buy.</strong> They give the two-sided operators for free: an operator $X\mapsto AXB$ is $L_AR_B$, and the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ is spanned by the sixteen products $L_{e_\mu}R_{e_\nu}$. The companion article develops that span, its cone of single products and its length; here only the two one-sided families are needed.</p>
+<h2 id="the-product">The Product</h2>
+<p><strong>Theorem (multiplicativity).</strong> For all $\tilde q,\tilde p$,</p>
+<p>$$
+\mathsf{M}_2(\tilde q\tilde p)=\mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\tilde p).
+$$</p>
+<p><strong>Proof.</strong> Both sides are bilinear, so it suffices to check the sixteen products of basis elements; the three checks of the previous section do that, and the reversed products follow from them because the matrices are known.</p>
+<p><strong>In coordinates.</strong> Writing $\tilde q=(t,x,y,z)$ and $\tilde p=(t',x',y',z')$ for the coefficient vectors, the product is</p>
+<p>$$
+\tilde q\tilde p=\bigl(tt'-xx'+yy'+zz'\bigr)e_t
++\bigl(tx'+xt'-yz'+zy'\bigr)\vec e_x
++\bigl(ty'+yt'-xz'+zx'\bigr)\vec e_y
++\bigl(tz'+zt'+xy'-yx'\bigr)\vec e_z .
+$$</p>
+<p>The four lines carry the whole non-commutativity of the algebra. The scalar line is symmetric in the two factors and has the signature $(+,-,+,+)$ of the norm. The three vector lines are not symmetric: each contains two terms with a plus sign, coming from the scalar part of one factor, and two with a minus sign, coming from the vector parts crossing.</p>
+<p><strong>The image.</strong> The image of $\mathsf{M}_2$ is all of $M_2(\mathbb{R})$. This is the structural difference from the quaternion category, where the image is a proper subspace: for $\mathbb{H}$ inside $M_2(\mathbb{C})$ the image has real dimension four in eight, and the missing four dimensions are the ones a matrix model of the quaternions can never reach. Here nothing is missing, and consequently every matrix statement about a split quaternion is a statement about the algebra and conversely.</p>
+<p><strong>The four corners.</strong> Take the idempotent $\tilde\pi_+=\tfrac12(e_t+\vec e_y)$, its complement $\tilde\pi_-=\tfrac12(e_t-\vec e_y)$, and the four Peirce corners $A_{\epsilon\delta}=\tilde\pi_\epsilon A\tilde\pi_\delta$. In the model they are the four matrix units of the basis of lines $L_\pm=\operatorname{span}(1,\pm1)$, with</p>
+<p>$$
+\mathsf{M}_2(\tilde\pi_+)=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+\mathsf{M}_2(\tilde\pi_-)=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+$$</p>
+<p>$$
+\mathsf{M}_2\bigl(\tfrac14(\vec e_x-\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&-1\\1&-1\end{pmatrix},\qquad
+\mathsf{M}_2\bigl(-\tfrac14(\vec e_x+\vec e_z)\bigr)=\tfrac14\begin{pmatrix}1&1\\-1&-1\end{pmatrix}.
+$$</p>
+<p>The two off-diagonal corners are the matrix units $E_{12}$ and $E_{21}$ of that basis, they are nilpotent, and their vanishing square is the matrix form of the Peirce relations. So the algebra has a full system of matrix units, which the quaternion algebra and the split-biquaternion algebra do not have; that absence is the reason those two categories need a separate discussion of what a matrix model can and cannot show.</p>
+<p><strong>What the product does not preserve.</strong> The model is multiplicative but it is not an isometry for any form used below: the determinant of a product is the product of the determinants, but the trace of a product is not the product of the traces, and the Frobenius inner product of a product is not the product of the Frobenius inner products. Multiplicativity is a statement about the algebra, and the forms of the section on norms are statements about the space.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>Theorem (the trace).</strong> For every split quaternion,</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_t=2\operatorname{Sc}(\tilde q).
+$$</p>
+<p><strong>Proof.</strong> The diagonal entries are $q_t-q_z$ and $q_t+q_z$, whose sum is $2q_t$.</p>
+<p><strong>The traceless part.</strong> The trace vanishes exactly on the pure elements, so</p>
+<p>$$
+\mathsf{M}_2(V)=\mathfrak{sl}_2(\mathbb{R})=\{X\in M_2(\mathbb{R}):\operatorname{tr}X=0\},
+$$</p>
+<p>the three-dimensional space of traceless matrices, spanned by $J$, $K$ and $D$. The scalar part is therefore recovered from the matrix as half the trace, and the projection onto the scalar line is $\tilde q\mapsto\tfrac12\operatorname{tr}\mathsf{M}_2(\tilde q)\,e_t$.</p>
+<p><strong>What the trace sees and does not see.</strong> The trace is insensitive to the sign of the vector part, and it cannot separate a zero divisor from a unit: $\operatorname{tr}\mathsf{M}_2(\vec e_y)=0$ and $\operatorname{tr}\mathsf{M}_2(\vec e_x+\vec e_y)=0$, although the first is a unit of norm $-1$ and the second is a zero divisor of norm $0$. The determinant, below, is the invariant that separates them.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>Theorem (the determinant).</strong> For every split quaternion,</p>
+<p>$$
+\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2-q_y^2-q_z^2 .
+$$</p>
+<p><strong>Proof.</strong> Expanding the determinant of the dictionary matrix,</p>
+<p>$$
+(q_t-q_z)(q_t+q_z)-(q_y-q_x)(q_x+q_y)=q_t^2-q_z^2-q_y^2+q_x^2 .
+$$</p>
+<p><strong>The signature.</strong> The form $\langle\cdot\rangle_{\natural}$ has signature $(2,2)$: positive on the plane $\operatorname{span}\{e_t,\vec e_x\}$ and negative on $\operatorname{span}\{\vec e_y,\vec e_z\}$. This is the invariant statement that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$, and it is the reason the model has real lightlike directions where a positive definite matrix algebra would have none.</p>
+<p><strong>The three strata.</strong> The rank of the matrix stratifies the algebra,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>stratum</th>
+<th>dimension</th>
+<th>elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\det\neq0$</td>
+<td>units</td>
+<td>$4$</td>
+<td>the invertible elements</td>
+</tr>
+<tr>
+<td>$\det=0$, $\tilde q\neq0$</td>
+<td>zero divisors</td>
+<td>$3$</td>
+<td>the rank-one matrices</td>
+</tr>
+<tr>
+<td>$\tilde q=0$</td>
+<td>the origin</td>
+<td>$0$</td>
+<td>the zero matrix</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the middle stratum is the null cone $\{\langle\tilde q\rangle_{\natural}=0\}\setminus\{0\}$, a cone over a doubly ruled quadric. The rank is the distance from invertibility: rank two exactly on the units, rank one exactly on the nonzero zero divisors.</p>
+<p><strong>Multiplicativity and the unit criterion.</strong> $\det(\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p))=\det\mathsf{M}_2(\tilde q)\det\mathsf{M}_2(\tilde p)$ because the model is multiplicative, and an element is a unit exactly when its matrix is invertible, that is exactly when $\det\neq0$ and $\langle\tilde q\rangle_{\natural}\neq0$. The equivalence is the matrix form of the theorem of <em>Split-Quaternion Norm and Invertibility</em>, and it is the reason the algebra has zero divisors at all: the form is indefinite, so it vanishes on a cone and not only at the origin.</p>
+<p><strong>The two rulings.</strong> A rank-one matrix is an outer product $uv^{\mathsf T}$ with $u,v\neq0$, and the pair $(u,v)$ is defined up to a common scalar. The zero divisors are therefore the projectivised pairs,</p>
+<p>$$
+\{uv^{\mathsf T}\}\;\cong\;\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R}),
+$$</p>
+<p>the Segre quadric, and its two families of lines are the two rulings. In algebra terms the two rulings are the minimal left ideals and the minimal right ideals, which the section on the projective line develops.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<p><strong>The discriminant.</strong> The characteristic polynomial of $\mathsf{M}_2(\tilde q)$ is $\lambda^2-2q_t\lambda+\langle\tilde q\rangle_{\natural}$, so the discriminant is</p>
+<p>$$
+\operatorname{tr}^2-4\det=4\bigl(q_y^2+q_z^2-q_x^2\bigr).
+$$</p>
+<p>The spectral type of the element is decided by the sign of the form $q_y^2+q_z^2-q_x^2$, which is of signature $(2,1)$ on the vector part: this is the form whose light cone is the cone of nilpotent directions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sign of $q_y^2+q_z^2-q_x^2$</th>
+<th>eigenvalues</th>
+<th>spectrum</th>
+<th>centraliser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$>0$</td>
+<td>two distinct reals, $q_t\pm\sqrt{q_y^2+q_z^2-q_x^2}$</td>
+<td>split</td>
+<td>$\mathbb{R}\times\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$=0$</td>
+<td>the double real $q_t$</td>
+<td>parabolic</td>
+<td>the dual numbers</td>
+</tr>
+<tr>
+<td>$<0$</td>
+<td>the conjugate pair $q_t\pm i\sqrt{q_x^2-q_y^2-q_z^2}$</td>
+<td>complex</td>
+<td>$\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The projectors.</strong> In the split case, with eigenvalues $\lambda_\pm=q_t\pm r$ and $r=\sqrt{q_y^2+q_z^2-q_x^2}\neq0$, the two spectral projectors are</p>
+<p>$$
+P_\pm=\frac{\mathsf{M}_2(\tilde q)-\lambda_\mp I}{\lambda_+-\lambda_-},
+\qquad
+P_+^2=P_+,\quad P_-^2=P_-,\quad P_+P_-=0,\quad P_++P_-=I,
+$$</p>
+<p>and they are rank-one, of trace one and determinant zero. They are the images of the two idempotents of the algebra constructed by the halving map: if $\tilde\xi^2=e_t$ then $\tilde\pi=\tfrac12(e_t+\tilde\xi)$ is idempotent, and every nontrivial idempotent arises this way from a pure root of one, $\tilde\xi=\vec v$ with $\langle\vec v\rangle_{\natural}=-1$. In the model the condition is $\det P=0$ with $\operatorname{tr}P=1$ and $P^2=P$, which is the same thing.</p>
+<p><strong>The idempotent hyperboloid.</strong> The pure roots of one satisfy $v_x^2-v_y^2-v_z^2=-1$, that is $v_y^2+v_z^2=v_x^2+1$, a connected one-sheeted hyperboloid inside $V$. Its image under the halving map is the connected two-dimensional family of nontrivial idempotents, and the model carries it to the connected family of rank-one projections of trace one.</p>
+<p><strong>The parabolic case.</strong> When $q_y^2+q_z^2=q_x^2$ the eigenvalue is double and the matrix is diagonalisable only when it is scalar. Otherwise it is a nontrivial Jordan block, the algebra contains a nonzero nilpotent commuting with the element, and the centraliser is the algebra of dual numbers. The nilpotent direction is the generator of the light cone of the form $q_y^2+q_z^2-q_x^2$, so the parabolic stratum is a cone and not a hypersurface in the vector part.</p>
+<p><strong>The centraliser.</strong> For a non-scalar element the centraliser is two-dimensional and equals the polynomial algebra $\mathbb{R}[\tilde q]$, the span of $I$ and $\mathsf{M}_2(\tilde q)$. The three spectral types give the three real algebras of dimension two: $\mathbb{R}\times\mathbb{R}$ in the split case, the dual numbers in the parabolic case and $\mathbb{C}$ in the complex case. These are exactly the three real Jordan forms of a $2\times2$ matrix, and the model makes the correspondence literal.</p>
+<h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
+<p><strong>Theorem (the adjugate is the conjugation).</strong> Let $\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ be the conjugation of the algebra. Then</p>
+<p>$$
+\operatorname{adj}\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q^{\natural}),
+$$</p>
+<p>and consequently $\mathsf{M}_2(\tilde q)^{-1}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$ on the units.</p>
+<p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ is $\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$, which on the dictionary matrix is $\begin{pmatrix}q_t+q_z&-(q_y-q_x)\\-(q_x+q_y)&q_t-q_z\end{pmatrix}$, and that is the dictionary matrix of $\tilde q^{\natural}$.</p>
+<p><strong>The identity is polynomial.</strong> The relation $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\langle\tilde q\rangle_{\natural}I$ holds for every element, invertible or not, because both sides are polynomial in the four coordinates. On the zero divisors it reads $AB=0$ with $A,B\neq0$, which is the matrix form of the zero-divisor cone.</p>
+<p><strong>The transpose.</strong> The transpose is not the conjugation. On the dictionary matrix,</p>
+<p>$$
+\mathsf{M}_2(\tilde q)^{\mathsf T}=\mathsf{M}_2\bigl(q_te_t-q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\bigr),
+$$</p>
+<p>so the transpose corresponds to the linear involution that negates the coefficient of $\vec e_x$ alone and fixes $\vec e_y$ and $\vec e_z$. That involution is an <strong>anti</strong>-automorphism, $\sigma(\tilde q\tilde p)=\sigma(\tilde p)\sigma(\tilde q)$, and not an automorphism, since $\sigma(\vec e_x)\sigma(\vec e_y)=-\vec e_z$ while $\sigma(\vec e_x\vec e_y)=\vec e_z$. The transpose is therefore the model of the reversal, and the three distinguished involutions of the algebra become three different matrix operations: the conjugation is the adjugate, the involution negating $\vec e_x$ is the transpose, and the involution negating all three vectors is the inverse up to the norm.</p>
+<p><strong>The shear of the inverse.</strong> On a unit the inverse is $\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$, and its determinant is $1/\langle\tilde q\rangle_{\natural}$, of either sign. So the units of the algebra form the group $\{X:\det X\neq0\}=GL_2(\mathbb{R})$, and the units of norm one form $SL_2(\mathbb{R})$, the double cover of the identity component of the Lorentz group that <em>Split-Quaternion Rotations and the Lorentz Group</em> develops.</p>
+<h2 id="the-norms">The Norms</h2>
+<p><strong>Four forms.</strong> The model carries four natural forms, and only one of them is the determinant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>definition</th>
+<th>signature</th>
+<th>invariant</th>
+<th>positive definite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>determinant form</td>
+<td>$\langle\tilde q\rangle_{\natural}=\det\mathsf{M}_2(\tilde q)$</td>
+<td>$(2,2)$</td>
+<td>under the product</td>
+<td>no</td>
+</tr>
+<tr>
+<td>trace form</td>
+<td>$\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$</td>
+<td>$(3,1)$</td>
+<td>under the product</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Frobenius form</td>
+<td>$\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$</td>
+<td>$(4,0)$</td>
+<td>under the orthogonal group only</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Killing form on $\mathfrak{sl}_2$</td>
+<td>$B(X,Y)=4\operatorname{tr}(XY)$</td>
+<td>$(2,1)$</td>
+<td>under the algebra automorphisms</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The trace form.</strong> $\operatorname{tr}(XY)$ is invariant under left and right multiplication by units, because $\operatorname{tr}(AXA^{-1}Y)=\operatorname{tr}(XY)$, and its Gram matrix on the basis $(I,J,K,D)$ is $\operatorname{diag}(2,-2,2,2)$, of signature $(3,1)$. It is not the determinant form: the two differ on the vector part, where the trace form is negative on $\vec e_x$ and positive on $\vec e_y,\vec e_z$, the opposite of the norm.</p>
+<p><strong>The Killing form.</strong> On the traceless part, which is $\mathfrak{sl}_2(\mathbb{R})$, the Killing form of the Lie algebra is $B(X,Y)=4\operatorname{tr}(XY)$, of signature $(2,1)$, negative on $J$ and positive on $K$ and $D$. Its light cone is the cone of nilpotent directions, which is the parabolic stratum of the spectral trichotomy read as a Lie-theoretic object.</p>
+<p><strong>The Frobenius form.</strong> $\operatorname{tr}(X^{\mathsf T}X)=\sum X_{ij}^2$ is positive definite and is the Euclidean structure of $\mathbb{R}^4$ under the vectorisation; it is invariant under conjugation by orthogonal matrices and under nothing else. It is the form a numerical computation uses, and it is not an invariant of the algebra.</p>
+<p><strong>The absence.</strong> There is no form that is both positive definite and multiplicative, and there cannot be: a multiplicative form vanishing only at the origin would make the algebra a division algebra, and the algebra has zero divisors. The signature $(2,2)$ of the determinant is the exact measure of that failure.</p>
+<h2 id="the-subspaces">The Subspaces</h2>
+<p><strong>The tabulation.</strong> Every subspace of the algebra is a subspace of $M_2(\mathbb{R})$, and the dictionary converts between the two descriptions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>algebra condition</th>
+<th>matrix condition</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar line</td>
+<td>$q_x=q_y=q_z=0$</td>
+<td>$X=\lambda I$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>vector part $V$</td>
+<td>$q_t=0$</td>
+<td>$\operatorname{tr}X=0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>complex plane</td>
+<td>$q_y=q_z=0$</td>
+<td>$X$ commutes with $J$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>split-complex plane</td>
+<td>$q_x=q_z=0$</td>
+<td>$X$ symmetric with equal diagonal entries</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>split-complex plane</td>
+<td>$q_x=q_y=0$</td>
+<td>$X$ diagonal</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>symmetric part</td>
+<td>$q_x=0$</td>
+<td>$X=X^{\mathsf T}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>skew part</td>
+<td>$q_t=q_y=q_z=0$</td>
+<td>$X=-X^{\mathsf T}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>centre</td>
+<td>$q_x=q_y=q_z=0$</td>
+<td>$X=\lambda I$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two isotropic planes.</strong> The complex plane $\operatorname{span}\{e_t,\vec e_x\}$ is a copy of $\mathbb{C}$ inside the algebra, spanned by $I$ and $J$, and it is the only two-dimensional subalgebra on which the norm is definite. The planes $\operatorname{span}\{e_t,\vec e_y\}$ and $\operatorname{span}\{e_t,\vec e_z\}$ are copies of the split-complex numbers, on which the norm is indefinite and the idempotents live. The model shows the difference at a glance: $J$ is a rotation, $K$ and $D$ are reflections.</p>
+<p><strong>The isotropic lines.</strong> The null cone of the norm meets $V$ in the cone $v_x^2=v_y^2+v_z^2$, of signature $(1,2)$, and the rank-one matrices of the algebra are its projectivisation together with the scalar multiples of the idempotents. The isotropic lines of the algebra are therefore the two rulings of the Segre quadric, and no isotropic line is a subalgebra: the product of two isotropic elements is not isotropic in general.</p>
+<p><strong>The idempotent hyperboloid.</strong> The idempotents other than $0$ and $e_t$ are the halved pure roots of one, $\tfrac12(e_t+\vec v)$ with $\langle\vec v\rangle_{\natural}=-1$, which is the one-sheeted hyperboloid $v_y^2+v_z^2=v_x^2+1$; under the model they are the rank-one projections of trace one. The two standard idempotents, from $\vec v=\pm\vec e_y$, are the projections onto the lines $\operatorname{span}(1,\pm1)$.</p>
+<h2 id="the-projective-line">The Projective Line</h2>
+<p><strong>The minimal left ideals.</strong> For a nonzero element $\tilde x$ the left ideal $\mathbb{H}_{\mathrm{s}}\tilde x$ is the set of all left multiples, and it is minimal exactly when $\tilde x$ is a zero divisor. In the model, multiplication on the left by arbitrary matrices gives every matrix whose image lies in the line spanned by the columns of $\mathsf{M}_2(\tilde x)$; so a minimal left ideal is the set of matrices with image in a fixed line,</p>
+<p>$$
+\mathbb{H}_{\mathrm{s}}\tilde x=\{X:\operatorname{Im}X\subseteq L\},
+$$</p>
+<p>and the line $L$ depends only on the ideal. Such a set is two-dimensional, spanned by $u\xi_1^{\mathsf T}$ and $u\xi_2^{\mathsf T}$ for a generator $u$ of $L$, so it is a minimal left ideal; the minimal left ideals are therefore parametrised by the lines of $\mathbb{R}^2$, that is by $\mathbb{P}^1(\mathbb{R})$, and the same argument on the right gives the minimal right ideals, parametrised by the lines of the dual, which is again $\mathbb{P}^1(\mathbb{R})$.</p>
+<p><strong>The action.</strong> The units act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of $\mathbb{H}_{\mathrm{s}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is</p>
+<p>$$
+\mathrm{PGL}_2(\mathbb{R})=\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}),
+$$</p>
+<p>and the action of the algebra's automorphism group on its minimal left ideals is faithful. This is the geometric content of the previous section's abstract statement that the automorphisms are inner.</p>
+<p><strong>The chart and the Möbius formula.</strong> On the chart $t=\xi_1/\xi_2$ of a line $[\xi]$ with $\xi_2\neq0$, a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts by</p>
+<p>$$
+t\longmapsto\frac{at+b}{ct+d},
+$$</p>
+<p>the Möbius transformation of the projective line, and the point $t=-d/c$ is sent to the line at infinity. The two fixed points of the transformation are the eigendirections of the matrix, which are real in the split case, double in the parabolic case and complex conjugate in the complex case; the trichotomy of the spectral projectors is therefore the trichotomy of Möbius transformations into hyperbolic, parabolic and elliptic.</p>
+<p><strong>The Lorentz reading.</strong> The subgroup $SL_2(\mathbb{R})$ of the units of norm one acts on $\mathbb{P}^1(\mathbb{R})$ through $\mathrm{PGL}_2(\mathbb{R})$, and this action is the action of the identity component of $SO(2,1)$ on the boundary circle of the hyperbolic plane. The three types of Möbius transformation are then the three conjugacy classes of Lorentz transformations in three dimensions, and the null cone of the algebra is the light cone of that group. This is the reason the split-quaternion algebra, and not the quaternion algebra, is the algebra of the Lorentz group in $2+1$ dimensions.</p>
+<p><strong>The cross-ratio.</strong> The action of $\mathrm{PGL}_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ preserves the cross-ratio of four points, and the cross-ratio is the complete invariant of a quadruple under the action. In the algebra, a quadruple of minimal left ideals is a quadruple of zero divisors up to scalar, and the cross-ratio is the invariant that no product and no norm can see.</p>
+<h2 id="summary">Summary</h2>
+<ol>
+<li>The model $\mathsf{M}_2$ is an isomorphism $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$, unique up to conjugacy, with $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}})\cong\mathrm{PGL}_2(\mathbb{R})$.</li>
+<li>The left and right matrices are the two commuting copies $M_{\tilde q}\otimes I$ and $I\otimes M_{\tilde q}^{\mathsf T}$ inside $M_4(\mathbb{R})$, of rank $2\operatorname{rank}M_{\tilde q}$ each.</li>
+<li>The product is the matrix product, the image is the whole matrix algebra, and the Peirce corners are a full system of matrix units.</li>
+<li>The trace is twice the scalar part, and the traceless part is $\mathfrak{sl}_2(\mathbb{R})$.</li>
+<li>The determinant is the norm $\langle\tilde q\rangle_{\natural}$, of signature $(2,2)$; the units are the nonsingular matrices and the zero divisors are the rank-one matrices, that is the Segre quadric.</li>
+<li>The spectral trichotomy is decided by the sign of $q_y^2+q_z^2-q_x^2$, and the centraliser is $\mathbb{R}\times\mathbb{R}$, the dual numbers or $\mathbb{C}$ accordingly.</li>
+<li>The conjugation is the adjugate, the transpose is the reversal, and the inverse is the conjugate divided by the norm.</li>
+<li>Four forms coexist: the determinant form of signature $(2,2)$, the trace form of signature $(3,1)$, the positive definite Frobenius form and the Killing form of signature $(2,1)$.</li>
+<li>The subspaces are matrix conditions, and the two isotropic planes are the copies of $\mathbb{C}$ and of the split-complex numbers.</li>
+<li>The minimal left ideals are the lines of $\mathbb{R}^2$, the units act by Möbius transformations, and $\mathrm{PGL}_2(\mathbb{R})$ acts faithfully.</li>
+</ol>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>the defining isomorphism $\mathbb{H}_{\mathrm{s}}\to M_2(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$J,K,D$</td>
+<td>the images of $\vec e_x,\vec e_y,\vec e_z$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\langle\tilde q\rangle_{\natural}$</td>
+<td>the natural norm $q_t^2+q_x^2-q_y^2-q_z^2$</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$\tilde q^{\natural}$</td>
+<td>the conjugation $q_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$</td>
+<td><em>Split-Quaternion Subspaces and the Involutions</em></td>
+</tr>
+<tr>
+<td>$L_{\tilde q},R_{\tilde q}$</td>
+<td>left and right multiplication, $4\times4$ matrices</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\tilde\pi_\pm$</td>
+<td>the idempotents $\tfrac12(e_t\pm\vec e_y)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$A_{\epsilon\delta}$</td>
+<td>the Peirce corner $\tilde\pi_\epsilon A\tilde\pi_\delta$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{R})$</td>
+<td>the traceless part $\mathsf{M}_2(V)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{R})$</td>
+<td>the space of lines of $\mathbb{R}^2$, the set of minimal left ideals</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix units of $M_2(\mathbb{R})$</td>
+<td>this article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition, the matrix units and the classification of the idempotents.</li>
+<li>Thomas Y. Lam, <em>The Algebraic Theory of Quadratic Forms</em> (Benjamin, 1973), for the norm of signature $(2,2)$ and the split-quaternion algebra as a Clifford algebra.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ and the Lorentz groups.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (Publish or Perish, 1974), for the action of $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$ on the projective line.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
