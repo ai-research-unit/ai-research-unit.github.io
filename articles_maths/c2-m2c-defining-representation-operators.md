@@ -14,7 +14,7 @@ with $u\in V$ a column and $\phi\in V^{*}$ a row.
 
 **Two cones and not one.** The space $M_2(\mathbb{C})$ carries two rank-one families, the bilinear one $u\phi^{\mathsf T}$ and the Hermitian one $uu^{\dagger}$, and both belong to this pair. The first is the Segre quadric and the second is the light cone, its projectivisation is one projective line and not a product, and the collapse is the quotient by the phase. **This is the only pair of the corpus where the two cones must be compared side by side**, because it is the only one where both are cones of operators on a module rather than of elements of an algebra.
 
-**Boundaries.** The space, the three forms and the two cones as point sets are *$M_2(\mathbb{C})$ Defining Representation*; the operators of the biquaternion algebra, with the sandwich $X\mapsto QXP$, its cone, its length $1,4,7,16$ and its gauge, are *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*; the general rank criterion and the determinantal variety at the size four are *$M_4(\mathbb{C})$ Standard Peirce Representation* and its operators companion; the endomorphism algebra, $\mathrm{GL}_2(\mathbb{C})$ and $\mathrm{PGL}_2(\mathbb{C})$ are *The Endomorphisms of $\mathbb{C}^2$*; the lattice and the incidence are *The Subspaces of $\mathbb{C}^2$*. The general theory of operators on a module, with the two-sided operators and the tensor form of the linear map, is *Modules*, and the vectorisation and the coefficient array are *The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$*.
+**Boundaries.** The space, the three forms and the two cones as point sets are *$M_2(\mathbb{C})$ Defining Representation*; the operators of the biquaternion algebra, with the sandwich $X\mapsto QXP$, its cone, its ladder $1,4,7,16$ and its gauge, are *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators*; the general rank criterion and the determinantal variety at the size four are *$M_4(\mathbb{C})$ Standard Peirce Representation* and its operators companion; the endomorphism algebra, $\mathrm{GL}_2(\mathbb{C})$ and $\mathrm{PGL}_2(\mathbb{C})$ are *The Endomorphisms of $\mathbb{C}^2$*; the lattice and the incidence are *The Subspaces of $\mathbb{C}^2$*. The general theory of operators on a module, with the two-sided operators and the tensor form of the linear map, is *Modules*, and the vectorisation and the coefficient array are *The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$*.
 
 **Conventions.** The carrier is $V=\mathbb{C}^{2}$ with the basis $e_1,e_2$, the dual is $V^{*}$ with the dual basis, $\phi(u)=\phi^{\mathsf T}u$ is the pairing with no conjugation, $E_{jk}=e_je_k^{\mathsf T}$ are the matrix units, $M^{\mathsf T}$ and $M^{\dagger}$ are the transpose and the conjugate transpose, and $J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$. The operator is written $T_{u,\phi}=u\phi^{\mathsf T}$ with the column on the left and the row on the right, and $\mathcal{C}$ is the set of all of them, the **bilinear cone**, with $\mathcal{C}_{H}$ the **Hermitian cone** of the matrices $uu^{\dagger}$.
 
@@ -149,7 +149,7 @@ and the map is onto the closed future cone.
 
 *Proof.* The determinant identity $\det M=t^{2}-\lvert\vec x\rvert^{2}$ on the Hermitian subspace and the vanishing of the determinant on $\mathcal{C}_{H}$ give the equation; the trace is $\lVert u\rVert^{2}=2t\ge0$; and every point of the cone is attained by a column of norm $\sqrt{2t}$ in the corresponding direction. The computation is in *$M_2(\mathbb{C})$ Defining Representation*, §*The Pauli Coordinates*.
 
-**Three involutions act on the one cone, and the three fixed loci are three families.** The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices, the conjugation $T\mapsto\bar T$ fixes the real ones and exchanges the two rulings, and the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. **The cone is closed under all three, and the three fixed loci are of three different sizes**: complex dimension two for the symmetric family, four for the real one and three for the Hermitian one.
+**Three involutions act on the one cone, and each fixes its own family.** The transposition $T\mapsto T^{\mathsf T}$ fixes the symmetric rank-one matrices $c\,uu^{\mathsf T}$ and **exchanges the two rulings**, because it swaps the column and the row; the conjugation $T\mapsto\bar T$ fixes the real matrices $u\phi^{\mathsf T}$ with $u,\phi$ real and acts on **each** ruling separately, sending $(u,\phi)$ to $(\bar u,\bar\phi)$ without exchanging them; the dagger $T\mapsto T^{\dagger}$ fixes the Hermitian ones. **The cone is closed under all three, and the three fixed loci have two distinct sizes**: the symmetric family is a complex cone of complex dimension two, that is real dimension four, because its scalar is complex, while the real family and the Hermitian family are both of real dimension three, $2+2-1$ for the pair of real columns modulo the real scaling and $2+1$ for the column modulo its phase times its modulus.
 
 ## The Composition
 
@@ -211,7 +211,7 @@ $$
 
 *Proof.* The first is the concatenation of two decompositions; the second is the homogeneity of the cone; the third is the rank inequality $\operatorname{rank}(MN)\le\min\{\operatorname{rank}M,\operatorname{rank}N\}$.
 
-**The length of the product is not the sum.** In the algebra categories the composed operator can need as many terms as the sum of the two lengths, because the two slots carry independent parameters. Here the composition is a single rank-one product and the length of a product is at most one. **The ladder of the biquaternion pair, $1,4,7,16$, collapses to $0,1,2$**, and the collapse is the collapse of the carrier from an algebra to a module.
+**The length of the product is not the sum.** In the algebra categories the composed operator can need as many terms as the sum of the two lengths, because the two slots carry independent parameters. Here the composition is a single rank-one product and the length of a product is at most one. **The length of the biquaternion pair runs over $0,1,2,3,4$, its chain of nested sets has dimensions $1,4,7,16$, and here the length collapses to $0,1,2$ and the chain to the three members $0\subset\mathcal{C}\subset M_2(\mathbb{C})$ of dimensions $0,3,4$**: the scalar line is not in the cone here, because $I_2$ has rank two, so the chain has no first member above the vertex, and the collapse is the collapse of the carrier from an algebra to a module.
 
 ## The Two Ranks
 
@@ -225,7 +225,7 @@ for every $M$.
 
 *Proof.* The coefficient array is the matrix, so the two ranks are the same number computed twice.
 
-**Why this is a statement and not a tautology.** In the algebra categories the operator space is not the algebra: the two-sided operator $T_{Q,P}$ acts on the algebra, of dimension sixteen in the reduced biquaternion case, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. **Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number**: which is why the criterion of §*The Cone and the Coefficient Matrix* can be stated as $\det M=0$ and still be exact.
+**Why this is a statement and not a tautology.** In the algebra categories the operator space is not the algebra: the two-sided operator $T_{Q,P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. **Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number**: which is why the criterion of §*The Cone and the Coefficient Matrix* can be stated as $\det M=0$ and still be exact.
 
 **The table of the comparison.**
 
@@ -236,7 +236,8 @@ for every $M$.
 | coefficient array | the matrix | a $16\times16$ array |
 | two ranks | equal | independent |
 | criterion | $\operatorname{rank}M\le1$ | $\operatorname{rank}c(M)\le1$ |
-| length | $0,1,2$ | $1,4,7,16$ |
+| the length | $0,1,2$ | $0,\dots,4$ |
+| the chain of nested sets | $0\subset\mathcal{C}\subset M_2(\mathbb{C})$, dimensions $0,3,4$ | $1,4,7,16$ |
 
 ## The Adjoints and the Types
 
@@ -272,8 +273,10 @@ that is $\phi u^{\mathsf T}$ in coordinates.
 
 **Definition.** With $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$, the **Hermitian adjoint** of $T_{u,\phi}$ is
 $$
-\bigl(T_{u,\phi}\bigr)^{\dagger}=T_{\bar\phi,u}=\bar\phi\,u^{\mathsf T}.
+\bigl(T_{u,\phi}\bigr)^{\dagger}=T_{\bar\phi,\bar u}=\bar\phi\,\bar u^{\mathsf T}.
 $$
+
+The conjugate is taken in **both** slots: the first because the row $\phi^{\mathsf T}$ becomes $\bar\phi^{\mathsf T}$, the second because $u$ is conjugated in the transpose, $(u\phi^{\mathsf T})^{\dagger}=\bar\phi\,\bar u^{\mathsf T}$. The transpose, by contrast, conjugates nothing and only exchanges the slots.
 
 **Proposition (the fixed points of the dagger).** $T^{\dagger}=T$ for a nonzero $T\in\mathcal{C}$ exactly when $T$ is a real multiple of a member of $\mathcal{C}_{H}$.
 
@@ -285,7 +288,7 @@ $$
 |---|---|---|
 | transposition | $T_{\phi,u}$ | the symmetric cone $c\,uu^{\mathsf T}$ |
 | conjugation | $T_{\bar u,\bar\phi}$ | the real cone |
-| dagger | $T_{\bar\phi,u}$ | the Hermitian cone $\mathcal{C}_{H}$ |
+| dagger | $T_{\bar\phi,\bar u}$ | the Hermitian cone $\mathcal{C}_{H}$ |
 
 **The anti-Hermitian members are in the cone and not in the Hermitian cone.** The matrix $i\,uu^{\dagger}$ is anti-Hermitian, it is a member of $\mathcal{C}$ since $i\,uu^{\dagger}=T_{u,i\bar u}$, and it is not in $\mathcal{C}_{H}$ because its trace is imaginary. **The cone is closed under multiplication by any complex scalar and the Hermitian cone is closed only under the real ones**, so the first is a complex object and the second a real one, and the anti-Hermitian members are what the complex scaling adds.
 
@@ -293,17 +296,21 @@ $$
 
 **Proposition (there is no nonzero isometry).** For every nonzero $T\in\mathcal{C}$ the two products $T^{\dagger}T$ and $T^{\mathsf T}T$ have rank at most one, so neither equals $I_2$.
 
-*Proof.* With $\sigma=u^{\mathsf T}u=\sum_ju_j^{2}$, a scalar that may vanish,
+*Proof.* Two scalars are in play and they must not be confused. The Hermitian one is the norm, $\lVert u\rVert^{2}=u^{\dagger}u=\sum_j\lvert u_j\rvert^{2}>0$ for $u\neq0$; the bilinear one is $\tau=u^{\mathsf T}u=\sum_ju_j^{2}$, which **can vanish for a nonzero $u$**, as it does for $u=(1,i)$. With the dagger,
 $$
-T^{\dagger}T=\bar\phi\,u^{\mathsf T}u\,\phi^{\mathsf T}=\sigma\,\bar\phi\bar\phi^{\dagger},
+T^{\dagger}T=\bar\phi\,(\bar u^{\mathsf T}u)\,\phi^{\mathsf T}=\lVert u\rVert^{2}\,\bar\phi\,\phi^{\mathsf T},
 $$
-a matrix of rank at most one, and the identity has rank two. The same computation with the transpose gives $T^{\mathsf T}T=\sigma\,\phi\phi^{\mathsf T}$.
+a matrix of rank at most one, and the identity has rank two. With the transpose,
+$$
+T^{\mathsf T}T=\phi\,(u^{\mathsf T}u)\,\phi^{\mathsf T}=\tau\,\phi\,\phi^{\mathsf T},
+$$
+of rank at most one as well, and of rank zero when $\tau=0$. Neither can be $I_2$.
 
 **The family therefore contains no isometry, no orthogonal member and no unitary member.** In the algebra categories the units of the algebra give isometries of the operator space, and the length ladder starts at one because the identity is a product; here the identity is not a product at all, and the isometry group of the family is empty.
 
 ## The Carrier with an Algebra Structure
 
-**Two products can be put on the carrier, and both destroy the cone: the pointwise product gives a subspace and the dual-number product gives a dense subset of a hyperplane.**
+**Two products can be put on the carrier, and neither reproduces the rank-one family: the pointwise product gives a subspace and the dual-number product a different quadric cone.**
 
 ### The Pointwise Product
 
@@ -321,27 +328,35 @@ and the image of the product is the whole two-dimensional subspace of diagonal m
 
 **Definition.** The **dual-number product** is $(a,b)(c,d)=(ac,ad+bc)$, with $\epsilon^{2}=0$.
 
-**Proposition (the image is dense in a hyperplane and is not the hyperplane).** The operator of the product is
+**Proposition (the image is a quadric cone, not a hyperplane).** The operator of the product is
 $$
-T=\begin{pmatrix}ac&ad\\ bc&ad+bc\end{pmatrix},
+T=L_{(a,b)}R_{(c,d)}=\begin{pmatrix}a&0\\ b&a\end{pmatrix}\begin{pmatrix}c&d\\ 0&c\end{pmatrix}
+=\begin{pmatrix}ac&ad\\ bc&ac+bd\end{pmatrix},
 $$
-so its coefficients satisfy the linear relation
+whose coefficients satisfy the **quadratic** relation
 $$
-w_{22}=w_{12}+w_{21},
+w_{11}w_{22}=w_{11}^{2}+w_{12}w_{21},
+\qquad\text{equivalently}\qquad \det T=w_{11}^{2},
 $$
-and the image is a three-dimensional subset of that hyperplane of $M_2(\mathbb{C})$. It is not the hyperplane: a matrix with $w_{11}=0$ and $w_{12}w_{21}\neq0$ is never attained, because $w_{11}=ac=0$ forces $a=0$, hence $w_{12}=ad=0$, or $c=0$, hence $w_{21}=bc=0$.
+and not a linear one. The image is therefore the quadric cone of complex dimension three cut by $\det T=w_{11}^{2}$, minus the punctured line $\{(0,0,0,w_{22}):w_{22}\neq0\}$.
 
-*Proof.* The relation is read off the four entries. The exclusion is the computation just given. The image is dense in the hyperplane because for $w_{11}=ac\neq0$ the entries $w_{12}$ and $w_{21}$ are free, $d=w_{12}/a$ and $b=w_{21}/c$.
+*Proof.* The four entries are read off the product of the two triangular factors. Eliminating $a$ and $c$ from $w_{11}=ac$ and $w_{12}=ad$ gives $d=w_{12}/a$, and from $w_{21}=bc$ gives $b=w_{21}/c$, whence $w_{22}=ac+bd=w_{11}+w_{12}w_{21}/w_{11}$; multiplied by $w_{11}$ this is the relation, and it is the expansion of $\det T=(ac)^{2}=w_{11}^{2}$. Conversely, a point of the quadric with $w_{11}\neq0$ is attained by those formulas.
+
+**The excluded line.** A matrix with $w_{11}=w_{12}=w_{21}=0$ and $w_{22}\neq0$ is on the quadric and is **not** attained: $w_{11}=ac=0$ forces $a=0$ or $c=0$, and then $w_{12}=ad=0$ and $w_{21}=bc=0$ force $b=0$ or $d=0$, which makes $w_{22}=ac+bd$ vanish. **So the operator $\operatorname{diag}(0,w_{22})$ is a rank-one matrix that the dual-number product does not produce**, although the rank-one matrices with both diagonal entries nonzero are all produced.
+
+**The determinant and the algebra.** The identity $\det T=w_{11}^{2}=(ac)^{2}$ is the two-dimensional case of the rule of the algebra pair: for the dual numbers the determinant of a two-sided operator is the square of the product of the two scalar parts (*$M_2(R)$ Triangular Representation : Operators*). **The scalar parts multiply, and the determinant sees only them**, exactly as the trace form of the dual numbers, $\operatorname{diag}(2,0)$, sees only the scalar part.
 
 ### Why the Module Reading Is the One to Take
 
-| Structure on $\mathbb{C}^{2}$ | Operator family | Dimension | Contains the cone? |
+| Structure on $\mathbb{C}^{2}$ | Operator family | Dimension | Is it the rank-one locus? |
 |---|---|---|---|
-| none, the module | $u\phi^{\mathsf T}$ | complex $3$ | is the cone |
-| $\mathbb{C}\times\mathbb{C}$ | $\operatorname{diag}(ac,bd)$ | complex $2$ | no, only the diagonal |
-| the dual numbers | the hyperplane $w_{22}=w_{12}+w_{21}$ minus a set | complex $3$ | no, and not even closed |
+| none, the module | $u\phi^{\mathsf T}$ | complex $3$ | yes, it is the cone $\det M=0$ |
+| $\mathbb{C}\times\mathbb{C}$ | $\operatorname{diag}(ac,bd)$ | complex $2$ | no, a subspace of the diagonal |
+| the dual numbers | the quadric $\det T=w_{11}^{2}$ minus a punctured line | complex $3$ | a cone, but not the rank-one locus |
 
-**In both algebra readings the family is a subspace, or almost one, and the Segre structure is lost.** A subspace has no rulings, no cone and no length; a family dense in a hyperplane has a closure that is a subspace. **The module reading is the only one that preserves the cone, and this is the reason the pair takes it**, even at the price of the identity, the inverses and the isometries.
+**The module reading is the only one whose family is exactly the rank-one locus.** The pointwise product gives a linear subspace of dimension two, all of whose members are diagonal and of rank at most one; the dual-number product gives a quadric cone of dimension three which is **not** made of rank-one matrices — the matrix $\begin{pmatrix}1&0\\1&1\end{pmatrix}$ is attained and has rank two — and which misses the rank-one matrix $\operatorname{diag}(0,w_{22})$. So the two algebra readings fail in opposite directions, by being too thin and by being too fat, and in neither does the family coincide with the determinantal variety $\{\det M=0\}$.
+
+**That coincidence is what the rest of the pair uses.** The length formula $\ell=\operatorname{rank}$, the two rulings of the Segre quadric, the fibre $\mathbb{C}^{\times}$ and the parametrisation by $\mathbb{P}^{1}\times\mathbb{P}^{1}$ are all statements about the rank-one locus and about nothing else, and they hold only in the reading in which the family *is* that locus. **The module reading is the one to take, and the price is the identity, the inverses and the isometries.**
 
 ## What the Pair Buys and Does Not
 
@@ -374,7 +389,8 @@ and the image is a three-dimensional subset of that hyperplane of $M_2(\mathbb{C
 | identity in the family | no | yes, $T_{e_t,e_t}$ |
 | inverses in the family | no | yes, for pairs of units |
 | isometries | none | a family, of dimension seven |
-| length | $0,1,2$ | $1,4,7,16$ |
+| the length | $0,1,2$ | $0,\dots,4$ |
+| the chain of nested sets | $0\subset\mathcal{C}\subset M_2(\mathbb{C})$, dimensions $0,3,4$ | $1,4,7,16$ |
 | rank constraint | rank $\le1$ | rank $\le4$, by the division algebra |
 | the second cone | the Hermitian cone, distinct | no second cone of the same kind |
 
@@ -386,7 +402,7 @@ The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so 
 
 The composition is $T_{u,\phi}T_{u',\phi'}=\phi(u')T_{u,\phi'}$, with powers $\phi(u)^{n-1}T_{u,\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $T_{\mu\nu}$ and the two separate.
 
-Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is skew-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier destroys the cone: the pointwise product gives the diagonal subspace and the dual-number product gives a set dense in the hyperplane $w_{22}=w_{12}+w_{21}$ and missing the matrices with $w_{11}=0$ and $w_{12}w_{21}\neq0$. **The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.**
+Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is skew-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier moves the cone: the pointwise product gives the two-dimensional diagonal subspace, and the dual-number product gives the quadric cone $\det T=w_{11}^{2}$ minus the punctured line of the matrices $\operatorname{diag}(0,w_{22})$, which is no longer the rank-one locus. **The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.**
 
 ## Summary of Notation
 
