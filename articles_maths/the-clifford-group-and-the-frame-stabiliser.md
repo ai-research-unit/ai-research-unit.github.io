@@ -10,12 +10,7 @@ This article fixes the stabilisers, proves the exact sequence, computes the Lie 
 
 ## The Action on Frames
 
-**The action.** Let $iR_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying
-$$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I,\qquad
-g=\operatorname{diag}(1,-1,-1,-1).
-$$
-The reference frame, the five cells written as two-sided operators, stands in the appendix.
+**The action.** Let $iR_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The reference frame, the five cells written as two-sided operators, stands in the appendix.
 For $U\in GL_4(\mathbb{C})$, put
 $$
 U\cdotiL_{e_\mu}R_{e_{\nu(\mu)}}=UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}.

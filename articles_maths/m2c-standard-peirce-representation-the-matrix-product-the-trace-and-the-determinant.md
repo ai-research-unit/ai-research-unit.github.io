@@ -592,21 +592,21 @@ The trace and the determinant of §*The Trace* and §*The Determinant* are the s
 
 **The eigenbasis.** The two projectors give two eigenvectors: every nonzero column of $\rho_+$ is an eigenvector for $\lambda_+$, and every nonzero column of $\rho_-$ for $\lambda_-$. The diagonalising matrix collects one column of each,
 $$
-\mathsf D_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
+\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
 $$
 the first column of $2B\rho_+$ and the second column of $2B\rho_-$.
 
 **The determinant.** Expanding,
 $$
-\det\mathsf D_Q=(B-Q_z)^2+Q_x^2+Q_y^2=2B(B-Q_z).
+\det\mathsf C_Q=(B-Q_z)^2+Q_x^2+Q_y^2=2B(B-Q_z).
 $$
 It vanishes exactly when $B=Q_z$, that is on the axis of the frame, where the two chosen columns both vanish and this chart degenerates.
 
 **Theorem (diagonalisation).**
 $$
-\mathsf D_Q^{-1}A\,\mathsf D_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+\mathsf C_Q^{-1}A\,\mathsf C_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
-\mathsf D_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
+\mathsf C_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
 $$
 whenever $B\neq Q_z$.
 
@@ -614,19 +614,19 @@ whenever $B\neq Q_z$.
 
 **The second chart.** When $B=Q_z$ the first chart is singular. The second chart is
 $$
-\mathsf D_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
+\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
 \qquad
-\det\mathsf D_Q'=-2B(B+Q_z),
+\det\mathsf C_Q'=-2B(B+Q_z),
 $$
 with the same diagonalisation whenever $B\neq-Q_z$. The two determinants cannot both vanish: $B\neq0$, and $B=Q_z$ with $B=-Q_z$ would give $B=0$.
 
 **The freedom.** The changes that keep the diagonalisation are
 $$
-\mathsf D_Q\mapsto\lambda\,\mathsf D_Q D,\qquad \lambda\neq0,\qquad D\text{ invertible and diagonal},
+\mathsf C_Q\mapsto\lambda\,\mathsf C_Q D,\qquad \lambda\neq0,\qquad D\text{ invertible and diagonal},
 $$
-because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf D_Q^{-1}A\mathsf D_Q$, so the freedom is the two parameters of $D$.
+because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf C_Q^{-1}A\mathsf C_Q$, so the freedom is the two parameters of $D$.
 
-**Not the frame change of this article.** The matrix $\mathsf D_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf D_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
+**Not the frame change of this article.** The matrix $\mathsf C_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
 
 ## The Adjugate and the Inverse
 
@@ -796,7 +796,7 @@ The $2\times2$ Standard Peirce representation is the compression of the $4\times
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
-The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf D_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
+The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
 
 ## Summary of Notation
 
@@ -823,7 +823,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
 | $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$ | the spectral projectors of the element, $\vec\Xi=-i\vec Q/B$ |
-| $\mathsf D_Q$ | the diagonalising matrix, $\mathsf D_Q^{-1}A\mathsf D_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
+| $\mathsf C_Q$ | the diagonalising matrix, $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
 | $\operatorname{adj}A=(\operatorname{Tr}A)\mathrm I_2-A$ | the adjugate, the image of $\tilde Q^{\natural}$ |
 | $P,N,H,K$ | the four norms: plain, quaternionic, Hermitian, Krein |
 | $E_{ij}$ | the matrix units |

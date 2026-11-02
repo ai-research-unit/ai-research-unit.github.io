@@ -234,11 +234,11 @@ $$
 Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
 
 **The Clifford relations.** They satisfy
-$$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\qquad
+$$,\qquad
 (iL_{e_k}R_{e_y})^2=-I_4,\qquad
--iL_{e_t}R_{e_z},
-$$
+-iL_{e_t}R_{e_z},$$
+
+The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
 
 **The sixteen products are the sixteen cells.** The five frame cells are five cells up to a factor $i$, and the sixteen products of the five are the sixteen cells:
@@ -259,14 +259,14 @@ Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The fr
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu$ with $x_0=q'_t$,
+A derivative contraction is $i\bigl(iR_{e_x}\partial/\partial x_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial x_k\bigr)$ with $x_0=q'_t$,
 in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $iR_{e_x}$ and $-L_{e_k}R_{e_y}$,
-and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(x)\partial/\partial Q_\mu$ belongs to neither frame.
+If the $\mathbb{B}$ frame is used, it is written $iR_{e_x}(Q)\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}(Q)\partial/\partial Q_k$ with the $\mathbb{B}$-frame generators $iR_{e_x}$ and $-L_{e_k}R_{e_y}$,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\bigl(iR_{e_x}(x)\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}(x)\partial/\partial Q_k\bigr)$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu=i\bigl(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z\bigr),
+\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)=i\bigl(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z\bigr),
 $$
 so the frame is visible in the formula.
 

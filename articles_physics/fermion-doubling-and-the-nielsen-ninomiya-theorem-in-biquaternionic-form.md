@@ -15,10 +15,10 @@ The article is organised as follows. The next section sets up the naive discreti
 The biquaternion field is Lorentzian. In the $x$ coordinates $x_0=ct'$, $x_k$, the frame is carried by the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$, the identity being $L_{e_t}R_{e_t}$; the generators are $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ and $-iL_{e_t}R_{e_z}$. The free continuum Dirac action, the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu - m\right)\psi(x),
-\qquad
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t},\quad g=\mathrm{diag}(+1,-1,-1,-1).
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(i\bigl(iR_{e_x}\partial/\partial x_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial x_k\bigr) - m\right)\psi(x),
 $$
+
+The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 
 The lattice path integral is defined on the Euclidean section, read in the $\mathbb{B}$-frame generators $iR_{e_x}$ and $-L_{e_k}R_{e_y}$; then $iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)^2=L_{e_t}R_{e_t}$ and $\{iL_{e_\mu}R_{e_{\nu(\mu)}}(Q),iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)\}=2\delta_{\mu\nu}L_{e_t}R_{e_t}$. These are the Wick-rotated Lorentz generators, a change of frame and not a change of algebra. The Euclidean action is
 

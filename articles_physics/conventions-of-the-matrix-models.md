@@ -236,11 +236,11 @@ iL_{e_z}R_{e_y}=iL_zR_y=iL_zR_y,\quad,\qquad
 -iR_{e_z}=-iR_z=-iL_tR_z\;}
 $$
 In the canonical frame they are the monomial matrices listed in the appendix, with the Pauli evaluation. They satisfy
-$$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\qquad
+$$,\qquad
 (iL_{e_k}R_{e_y})^2=-I_4,\qquad
--iL_{e_t}R_{e_z},
-$$
+-iL_{e_t}R_{e_z},$$
+
+The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
 **The bare cell and the scaled generator are two symbols, not one.** The basis cell is $L_{a}R_{b}$, written $L_{e_\mu}R_{e_\nu}$ for two unit indices, and the bare reference cell of the $\mu$-th generator is $L_{e_\mu}R_{e_{\nu(\mu)}}$ with $\nu(t)=x$ and $\nu(k)=y$. The generator cells above are those reference cells **scaled by $i$**, $iL_{e_\mu}R_{e_{\nu(\mu)}}=i\,L_{e_\mu}R_{e_{\nu(\mu)}}$, and the chirality cell is $-iR_{e_z}=-i\,L_{e_t}R_{e_z}$. The scaled symbol is the one the physics articles use for the generator throughout; the single-index form $T_\mu$ is retired, because it collided with the basis cells $L_{e_\mu}R_{e_\nu}$ and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles. The mathematics part of the corpus writes the bare reference cells $\mathsf T_\mu=L_{e_\mu}R_{e_{\nu(\mu)}}$ and $\mathsf T_5=L_{e_t}R_{e_z}$, in which the trace identities of *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System* are stated; the dictionary between the two parts is $iL_{e_\mu}R_{e_{\nu(\mu)}}=i\,\mathsf T_\mu$.
@@ -256,7 +256,7 @@ The printed matrices of the appendix are the ones of the $\mathbb{M}_-$ frame; t
 - The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every generator squares to $+I_4$.
 - The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.
 
-The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\partial/\partial Q_\mu$ or $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(x)\partial/\partial x_\mu$; the mixed $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(x)\partial/\partial Q_\mu$ belongs to neither and is never written. A frame display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
+The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Delta-\partial^2/\partial x_0^2$, and only its reading in the frame changes. A contraction stays inside one frame, $iR_{e_x}(Q)\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}(Q)\partial/\partial Q_k$ or $i\bigl(iR_{e_x}(x)\partial/\partial x_0-\sum_k iL_{e_k}R_{e_y}(x)\partial/\partial x_k\bigr)$; the mixed $iR_{e_x}(x)\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}(x)\partial/\partial Q_k$ belongs to neither and is never written. A frame display here is in the $\mathbb{M}_-$ frame unless it says otherwise. The other uses of the word are not coordinate frames: the five generators are the image of the Clifford map and are not a coordinate frame, the **canonical** and **Peirce** frames are bases that fix the matrix display, and a **rest frame** is a physical observer.
 
 **The index is written low in both frames.** The notation is $iL_{e_\mu}R_{e_{\nu(\mu)}}$: the position is a label for the component, and the index is never raised or lowered, in either frame.
 
@@ -334,16 +334,16 @@ The last equality uses $\operatorname{Tr}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$,
 
 **The slash is not used.** The Dirac slash is not part of the notation of this corpus.
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is written in one frame and never across two: $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu$ with the generators of the $\mathbb{M}_-$ frame,
-or $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $iR_{e_x}$, $-L_{e_k}R_{e_y}$.
-The mixed form $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial Q_\mu$ belongs to neither frame and is not used.
+A derivative contraction is written in one frame and never across two: $i\bigl(iR_{e_x}\partial/\partial x_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial x_k\bigr)$ with the generators of the $\mathbb{M}_-$ frame,
+or $iR_{e_x}(Q)\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}(Q)\partial/\partial Q_k$ with the $\mathbb{B}$-frame generators $iR_{e_x}$, $-L_{e_k}R_{e_y}$.
+The mixed form $i\bigl(iR_{e_x}\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial Q_k\bigr)$ belongs to neither frame and is not used.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product,
 and $Q_t=ict'$ is substituted only on the material sector $\mathbb{M}_-$.
 A multi-slot object is written with every slot low, in the order of its definition: row or output first, column or input second; a tetrad is frame first, world second, and a structure constant is output first.
 An inverse matrix is written $X^{-1}$, so the inverse metric is $(g^{-1})_{\mu\nu}$ and never a second symbol $g_{\mu\nu}$.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu=i\bigl(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z\bigr),
+\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)=i\bigl(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z\bigr),
 $$
 so the frame is visible in the formula.
 

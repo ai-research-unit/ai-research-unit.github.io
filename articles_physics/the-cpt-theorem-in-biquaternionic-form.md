@@ -21,11 +21,7 @@ The division between what is established and what is only transcribed is kept ex
 - **Gap, left visible.** The framework does not fix a $\mathbb{B}$-intrinsic form of $C$ and $P$: their internal matrices are odd Clifford elements, outside $\mathbb{B}$, so they are operations of the Clifford algebra or of the module, not inner operations of the biquaternion algebra. Whether they admit a $\mathbb{B}$-intrinsic realization is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose spinor representative is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
 
 We use the **cell frame** of the canonical-quantization and spin–statistics articles. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and the two-sided cell $L_{a}R_{b}$, so that $L_{a}R_{b}\psi=a\psi b$, the four generators are
-$$
-iL_{e_t}R_{e_x},\qquad iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y},\qquad iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y},\qquad iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y},\qquad
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t},\qquad g=\mathrm{diag}(+1,-1,-1,-1),
-$$
-which is unitarily equivalent to the Dirac basis used for the non-relativistic limit. These are the generators of the $\mathbb{M}_-$ frame, and every derivative in a cell display below is with respect to $x_\mu=(t',x,y,z)$. The $\mathbb{B}$-frame set is $iR_{e_x}$, $i\,iL_{e_k}R_{e_y}$ with $Q_t=ict'$; the two are not mixed. the spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
+The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The set is unitarily equivalent to the Dirac basis used for the non-relativistic limit. It is the generator set of the $\mathbb{M}_-$ frame, and every derivative in a cell display below is with respect to $x_\mu=(t',x,y,z)$. The $\mathbb{B}$-frame set is $iR_{e_x}$, $i\,iL_{e_k}R_{e_y}$ with $Q_t=ict'$; the two are not mixed. the spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
 $$
 -iR_{e_z}=i\,\omega=-iL_{e_t}R_{e_z},\qquad
 \omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}=-i\,-iR_{e_z},
@@ -145,10 +141,10 @@ Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not f
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
 $$
-\psi=(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
+\psi=(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)\chi\,\exp(-ip\cdot x)+(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)\chi_2\,\exp(+ip\cdot x),
 \qquad p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\quad E_{\vec p}^2=\vec p^2+m^2,
 $$
-with $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}=iR_{e_x}E_{\vec p}-\sum_k iL_{e_k}R_{e_y}p_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
+with $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}=iR_{e_x}E_{\vec p}-\sum_k iL_{e_k}R_{e_y}p_k$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
@@ -156,10 +152,10 @@ each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both fre
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The identity $\eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m)\chi$,
+- **$C$.** The identity $\eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)\chi$,
   $$
-  \eta_C\,w^{*}=i\,iL_{e_y}R_{e_y}(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu})^{\ast}+m)\chi^{*}=i(-\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}+m)iL_{e_y}R_{e_y}\chi^{*}
-  =-i\,(\sum_\rho iL_{e_\rho}R_{e_{\nu(\rho)}} p_{\rho}-m)\,iL_{e_y}R_{e_y}\chi^{*},
+  \eta_C\,w^{*}=i\,iL_{e_y}R_{e_y}(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k})^{\ast}+m)\chi^{*}=i(-\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)+m)iL_{e_y}R_{e_y}\chi^{*}
+  =-i\,(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)\,iL_{e_y}R_{e_y}\chi^{*},
   $$
   a negative-frequency amplitude. So $C$ exchanges the two branches; in the mode expansion it exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign. This was checked on the same three cases.
 - **$P$.** The commutator/anticommutator conditions on $\eta_P$ were verified for $\mu=0$ and $k=1,2,3$, and the reflected field was confirmed to solve the equation. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
@@ -325,7 +321,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(\mathbb{D}-m)\psi=0$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | Two-sided cells; identity $L_{e_t}R_{e_t}$, inverse $L_{a^{-1}}R_{b^{-1}}$, product $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ |
 | $iL_{e_\mu}R_{e_{\nu(\mu)}}$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Generator cells and Clifford metric; $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$; $\eta=-g$ |
-| $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}=iR_{e_x}E_{\vec p}-\sum_k iL_{e_k}R_{e_y}p_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
+| $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}=iR_{e_x}E_{\vec p}-\sum_k iL_{e_k}R_{e_y}p_k$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $-iR_{e_z}=i\omega=-iL_{e_t}R_{e_z}$, $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=-iR_{e_z}$ |
 | $P_{L,R}=\tfrac12(L_{e_t}R_{e_t}\mp\,-iR_{e_z})$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |

@@ -18,7 +18,7 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial Q_\mu+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $iL_{e_\mu}R_{e_{\nu(\mu)}}$ mutually anticommute with $(iR_{e_x})^2=+1$ and $(iL_{e_k}R_{e_y})^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $i\bigl(iR_{e_x}\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial Q_k\bigr)+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $iL_{e_\mu}R_{e_{\nu(\mu)}}$ mutually anticommute with $(iR_{e_x})^2=+1$ and $(iL_{e_k}R_{e_y})^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 - **The mass term is constrained.** The condition $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$ forces $B=c\,-iR_{e_z}$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
@@ -97,7 +97,7 @@ $$
 
 Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $(iL_{e_k}R_{e_y})^2=-I$, rather than by a raised label. On the plane wave the root $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial Q_\mu$ has symbol $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} k_\mu$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} k_\mu+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$, the spatial sign carried by the frame, $(iL_{e_k}R_{e_y})^2=-I$, rather than by a raised label. On the plane wave the root $i\bigl(iR_{e_x}\partial/\partial Q_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial Q_k\bigr)$ has symbol $iR_{e_x}k_{0}-\sum_k iL_{e_k}R_{e_y}k_{k}$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$. A first-order operator with symbol $iR_{e_x}k_{0}-\sum_k iL_{e_k}R_{e_y}k_{k}+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
@@ -130,17 +130,16 @@ $$
 D^2=\left(\Box-\mu^2\right)I_n
 $$
 
-gives three conditions:
-
+gives three conditions: the derivative part reproduces the Clifford relation, the mass anticommutes with every generator, and its magnitude is fixed,
 $$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_n,
-\qquad
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},B\}=0,
+\{iR_{e_x},B\}=\{iL_{e_k}R_{e_y},B\}=0,
 \qquad
 B^2=-\mu^2I_n .
 $$
 
-The first is the Clifford relation. The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
+The first is the Clifford relation. The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
+
+The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
 
 The signs are those of $\Box$ in the $x$ coordinates, where the metric is $g=\mathrm{diag}(+1,-1,-1,-1)$. The $Q$ coordinates carry the Euclidean transcription, in which all four generators square to $+1$ and the spatial ones acquire a factor $i$; that frame is not used here.
 
@@ -408,7 +407,7 @@ The identities were recomputed before they were written. The cell frame was buil
 | Anticommutant of all four generators is one-dimensional | rank $15$, nullity $1$ |
 | $\mathsf D_{\mathrm{ps},+}^2-(\Box-\mu^2)I$ on $100$ random $K$ | $2.4\times10^{-15}$ |
 | $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}-(\Box-\mu^2)I$ on $100$ random $K$ | $3.6\times10^{-15}$ |
-| $\left(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} k_\mu\right)^2-g_{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
+| $\left(iR_{e_x}k_{0}-\sum_k iL_{e_k}R_{e_y}k_{k}\right)^2-g_{\mu\nu}k_\mu k_\nu I$ | $2.5\times10^{-15}$ |
 | $\det\mathsf D_{\mathrm{ps},\pm}-(\Box-\mu^2)^2$ on $100$ random $K$ | $2.3\times10^{-13}$ |
 | Frame squares $(+1,-1,-1,-1)$ and anticommutators | $0$ (exact) |
 
@@ -442,8 +441,8 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
 | $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generators of the root, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
 | $-iL_{e_t}R_{e_z}$ | Pseudoscalar generator, $-iL_{e_t}R_{e_z}=\rho(\chi)$ |
-| $\mathsf D=i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
-| $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} k_\mu$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
+| $\mathsf D=i\bigl(iR_{e_x}\partial/\partial x_0-\sum_k iL_{e_k}R_{e_y}\partial/\partial x_k\bigr)$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
+| $iR_{e_x}k_{0}-\sum_k iL_{e_k}R_{e_y}k_{k}$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
 | $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\,-iR_{e_z}$ | Single-square roots |
 | $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
 | $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |

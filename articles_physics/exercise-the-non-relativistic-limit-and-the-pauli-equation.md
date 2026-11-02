@@ -14,12 +14,10 @@ Five problems are worked:
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
 
-The five frame cells are $iR_{e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$ the two-sided multiplication, and they carry the Clifford relation. In the Dirac basis, where the timelike cell is diagonal, the two operators of the Hamiltonian take their standard matrices, the odd $\beta=iR_{e_x}$ and the even $\alpha_k=iR_{e_x}\,iL_{e_k}R_{e_y}$,
+The five frame cells are $iR_{e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$ the two-sided multiplication. The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. In the Dirac basis, where the timelike cell is diagonal, the two operators of the Hamiltonian take their standard matrices, the odd $\beta=iR_{e_x}$ and the even $\alpha_k=iR_{e_x}\,iL_{e_k}R_{e_y}$,
 
-$$
-\beta=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix},\qquad
-\alpha_k=\begin{pmatrix} 0&\sigma_k\\ \sigma_k&0\end{pmatrix},
-\qquad \{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1).
+$$\beta=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix},\qquad
+\alpha_k=\begin{pmatrix} 0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
 $$
 
 The Clifford metric $g$ is carried by the generators; it is the negative of the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ that appears in the $ict'$ form of the biquaternionic gradient, $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\partial^2/\partial Q_t^2=-c^{-2}\,\partial^2/\partial {t'}^2$. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\phi_0$, and the potential energy of the charge in it is $V=ϙ\phi_0$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.

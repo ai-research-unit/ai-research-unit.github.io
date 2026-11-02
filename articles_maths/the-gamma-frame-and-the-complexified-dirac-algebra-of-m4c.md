@@ -86,13 +86,7 @@ $$
 iR_{e_x}=iL_tR_x,\qquad iL_{e_x}R_{e_y}=iL_xR_y,\qquad iL_{e_y}R_{e_y}=iL_yR_y,\qquad iL_{e_z}R_{e_y}=iL_zR_y,\qquad -iR_{e_z}=-iL_tR_z
 $$
 
-of $M_4(\mathbb{C})$, and the first four satisfy
-
-$$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I,
-$$
-
-with $g=\operatorname{diag}(1,-1,-1,-1)$.
+of $M_4(\mathbb{C})$, and the first four satisfy The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 
 **The existence.** The cells exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each $iL_{e_\mu}R_{e_{\nu(\mu)}}$ an explicit element of the two-sided basis, the anticommutation relations hold, and the four cells generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
 

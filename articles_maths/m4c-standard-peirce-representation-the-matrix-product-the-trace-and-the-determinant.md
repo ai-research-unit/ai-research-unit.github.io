@@ -229,8 +229,8 @@ Each is $\mathsf M_2(\vec e_k)^{\mathsf T}\otimes\mathrm I_2$. Each has determin
 
 **The product of two basis matrices.** Write the two orders of the quaternion product as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$, with $\varepsilon,\varepsilon'=\pm1$ and $e_{\mu\nu},e_{\nu\mu}$ units. Then
 $$
-L_\muL_\nu=\varepsilon L_{\mu\nu},\qquad
-R_\muR_\nu=\varepsilon' R_{\nu\mu}.
+L_\mu L_\nu=\varepsilon L_{\mu\nu},\qquad
+R_\mu R_\nu=\varepsilon' R_{\nu\mu}.
 $$
 The left product follows the order of the units; the right product reverses it, because $R_aR_b=R_{ba}$. For example,
 $$
@@ -450,7 +450,7 @@ The worked case $E_{11}$ of the operators article is therefore typical, and the 
 
 **The check.** The coefficient matrix of the right side is $[Q][P]^{\mathsf T}$, of rank one, and the expansion in the sixteen is unique, so each row is proved by the product it displays. The names are also visible in the compression: every factor above has $\mathsf M_2$ a scalar multiple of a matrix unit, so each product has one nonzero entry, and the entry sits where the row says.
 
-**Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=L_{e_t}R_{e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
+**Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=T_{e_t,e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
 
 **The other frame.** In the e-basis the same sixteen arrays have length four, not one. The arrays name different operators, and §*The Change of Frame Is a Congruence* is the reason both counts are right. There the products are signed permutations and the units are maximally long; here the products are monomial too, and every unit is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.
 
@@ -479,7 +479,7 @@ L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The identity is the associativity of the product, read on the two sides. It says that the left copy and the right copy are mutual commutants inside the ambient matrix algebra.
 
-**The product of a left and a right basis matrix.** The product $L_\muR_\nu$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
+**The product of a left and a right basis matrix.** The product $L_\mu R_\nu$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
 
 ## The Trace
 

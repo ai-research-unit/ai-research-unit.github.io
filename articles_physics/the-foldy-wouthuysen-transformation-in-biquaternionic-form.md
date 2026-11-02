@@ -14,7 +14,7 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $iR_{e_x}$, and set $\alpha_k = iR_{e_x}\,iL_{e_k}R_{e_y} = L_{\vec e_k}R_{\vec e_z}$, $\beta = iR_{e_x}$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\bigl(iR_{e_x}D_{0}-\sum_k iL_{e_k}R_{e_y}D_{k}\bigr) - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $iR_{e_x}$, and set $\alpha_k = iR_{e_x}\,iL_{e_k}R_{e_y} = L_{\vec e_k}R_{\vec e_z}$, $\beta = iR_{e_x}$. The result is
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
