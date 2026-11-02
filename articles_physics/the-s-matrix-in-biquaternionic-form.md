@@ -353,9 +353,9 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 | $\tilde S\tilde S^{*}=e_t$ | Matrix-$*$-unitary biquaternion $\Leftrightarrow \mathrm{U}(2)$ |
 | $\tilde S=\tilde A\tilde U$, $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ | Cartan pairing of the S-matrix; $\tilde A=e_t$ exactly when $\tilde S\tilde S^{*}=e_t$ |
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\tilde u\tilde u^{\natural}=e_t$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |
-| $\psi$, $\bar\psi=i\psi^\dagger T_{tx}$ | Spinor-module representative and its adjoint |
+| $\psi$, $\bar\psi=i\psi^\dagger L_tR_x$ | Spinor-module representative and its adjoint |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=-g$ | Clifford and $ict'$ metrics |
-| $iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ | Feynman contraction |
+| $iL_tR_xE-i(L_xR_yp_x+L_yR_yp_y+L_zR_yp_z)$ | Feynman contraction |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Particle and antiparticle mode operators (parent's notation) |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $S=T\exp(-i\int d^4x\,\mathcal{H}_I)$ | S-matrix; time-ordered exponential (Dyson series) |
@@ -391,10 +391,10 @@ Two gaps remain. The field S-matrix is an operator on an infinite-dimensional Fo
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
-Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $T_{a,b}=L_aR_b$ is a cell.
+Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
 
 $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z.
 $$
 
-The cell $T_{a,b}=L_aR_b$ is the primitive: a pair of multipliers. The Feynman contraction is the sum of four cells, one per derivative, not a product of matrices. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. The Feynman contraction is the sum of four cells, one per derivative, not a product of matrices. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

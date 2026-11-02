@@ -23,7 +23,7 @@ $$
 \boxed{\;L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha\;} ,
 $$
 
-so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.
+so that the ordinary sandwich satisfies $L_{a}R_{b}^{*}=L_{\hat a}R_{\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.
 
 **Proof.** The computation is that of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=x^{r}$ and the invariance of the scalar part under $\alpha$. The vector value is $\vec u=\alpha(u^{r})=-u$.
 
@@ -46,8 +46,8 @@ $$
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
-\Sigma^{\alpha}_{a,b}T_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} , \qquad
-T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db}\;} ,
+\Sigma^{\alpha}_{a,b}L_{c}R_{d}=\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} , \qquad
+L_{a}R_{b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db}\;} ,
 $$
 
 so the composite of two signed sandwiches is an **ordinary** sandwich, the two grade involutions cancelling.

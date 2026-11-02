@@ -139,10 +139,10 @@ The general sandwich $\mathcal{T}_{a,b}(x)=a\bar x b$ of *The Sesquilinear Sandw
 **Proposition (two decompositions).** The sandwich decomposes into a pair of one-sided multiplications and into an ordinary two-sided multiplication followed by the involution:
 
 $$
-\mathcal{T}_{Q_1,Q_2}=R_{Q_2}\circ L_{Q_1}=T_{Q_1,\bar Q_2}\circ{}^{*}, \qquad T_{Q_1,Q_2}(X)=Q_1XQ_2 .
+\mathcal{T}_{Q_1,Q_2}=R_{Q_2}\circ L_{Q_1}=L_{Q_1}R_{\bar Q_2}\circ{}^{*}, \qquad L_{Q_1}R_{Q_2}(X)=Q_1XQ_2 .
 $$
 
-**Proof.** $R_{Q_2}L_{Q_1}(X)=(Q_1\bar X)\bar Q_2=Q_1\bar X\bar Q_2$, and $T_{Q_1,\bar Q_2}(\bar X)=Q_1\bar X\bar Q_2$.
+**Proof.** $R_{Q_2}L_{Q_1}(X)=(Q_1\bar X)\bar Q_2=Q_1\bar X\bar Q_2$, and $L_{Q_1}R_{\bar Q_2}(\bar X)=Q_1\bar X\bar Q_2$.
 
 **Theorem (the adjoint with respect to $\langle\cdot,\cdot\rangle_{*}$).** Let the adjoint ${}^{\dagger}$ be taken with respect to the Hermitian form $\langle X,Y\rangle_{*}=X\bar Y$, in the convention $\langle TX,Y\rangle_{*}=\overline{\langle X,T^{\dagger}Y\rangle_{*}}$ for a conjugate-linear $T$ and $\langle TX,Y\rangle_{*}=\langle X,T^{\dagger}Y\rangle_{*}$ for a linear $T$. Then
 
@@ -204,7 +204,7 @@ The sesquilinear product $Q_1\star Q_2=Q_1\bar Q_2$ is $\mathbb{C}$-linear in th
 | $L_{Q}$, $R_{Q}$ | the sesquilinear left and right multiplications, $Q\bar X$ and $X\bar Q$ |
 | $L^{\mathrm{alg}}_{Q}$ | the ordinary left multiplication of the field, $L^{\mathrm{alg}}_{Q}(X)=QX$ |
 | $\mathcal{T}_{Q_1,Q_2}$ | the sesquilinear sandwich, $\mathcal{T}_{Q_1,Q_2}(X)=Q_1\bar X\bar Q_2$ |
-| $T_{Q_1,Q_2}$ | the ordinary two-sided multiplication, $T_{Q_1,Q_2}(X)=Q_1XQ_2$ |
+| $L_{Q_1}R_{Q_2}$ | the ordinary two-sided multiplication, $L_{Q_1}R_{Q_2}(X)=Q_1XQ_2$ |
 | $Q_1\star Q_2\star Q_3$ | the binary product iterated, $(Q_1\star Q_2)\star Q_3=Q_1\bar Q_2\bar Q_3$ |
 | $\{Q_1,Q_2,Q_3\}$ | the ternary product, $(Q_1\star Q_2)\star\bar Q_3=Q_1\bar Q_2 Q_3$ |
 | $[Q_1,Q_2,Q_3]$ | the associator, $(Q_1\star Q_2)\star Q_3-Q_1\star(Q_2\star Q_3)$ |

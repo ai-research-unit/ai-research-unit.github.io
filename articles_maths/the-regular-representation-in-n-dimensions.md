@@ -14,7 +14,7 @@ is the ladder of the category. At $n=2$ it is $1,4,7,16$, the ladder of the biqu
 
 **Boundaries.** The algebra itself, its units, its trace and its determinant are *The Matrix Algebra $M_n(\mathbb{C})$*. The one-sided families and their matrices are *The One-Sided Operators of $M_n(\mathbb{C})$*; the two-sided products and their cone are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*; the length is *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the adjoints, the sandwich and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the same objects in the Peirce frame are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the abstract family is *Two-Sided Operators on the Biquaternion Algebra*.
 
-**Conventions.** The algebra is $A$, of complex dimension $N$, associative, unital, over $\mathbb{C}$. An element is written $A$, $B$, $C$; the unit is $I$; the matrices of $M_{n}(\mathbb{C})$ are written with the letter $n$ in the subscript and the matrices of the operator space with the dimension $N$ of that space. The left multiplication is $L_{A}$, the right multiplication is $R_{B}$, the two-sided operator is $T_{A,B}=L_{A}R_{B}$, and $\operatorname{End}(A)=\operatorname{End}_{\mathbb{C}}(A)$. A matrix of an operator is written in the column-stacking basis, in which an element $X$ of $A$ is the column $\operatorname{vec}X$ of its $N$ coordinates and an operator is an $N\times N$ matrix. The trace of a matrix is $\operatorname{tr}$; the trace of an operator is the trace of its matrix.
+**Conventions.** The algebra is $A$, of complex dimension $N$, associative, unital, over $\mathbb{C}$. An element is written $A$, $B$, $C$; the unit is $I$; the matrices of $M_{n}(\mathbb{C})$ are written with the letter $n$ in the subscript and the matrices of the operator space with the dimension $N$ of that space. The left multiplication is $L_{A}$, the right multiplication is $R_{B}$, the two-sided operator is $L_{A}R_{B}$, and $\operatorname{End}(A)=\operatorname{End}_{\mathbb{C}}(A)$. A matrix of an operator is written in the column-stacking basis, in which an element $X$ of $A$ is the column $\operatorname{vec}X$ of its $N$ coordinates and an operator is an $N\times N$ matrix. The trace of a matrix is $\operatorname{tr}$; the trace of an operator is the trace of its matrix.
 
 ## The Two Multiplications
 
@@ -61,7 +61,7 @@ $$
 
 *Proof.* Both sides send $X$ to $AXB$, and the associativity makes the two readings equal.
 
-**The commutativity is the reason a two-sided product is a single operator and not a pair of successive actions.** The order of the factors does not matter, so the product $T_{A,B}=L_{A}R_{B}$ is well defined by the pair, and no extra datum of ordering is carried.
+**The commutativity is the reason a two-sided product is a single operator and not a pair of successive actions.** The order of the factors does not matter, so the product $L_{A}R_{B}$ is well defined by the pair, and no extra datum of ordering is carried.
 
 ## Faithfulness, the Commutant and the Ladder
 
@@ -99,13 +99,13 @@ for $A=M_{n}(\mathbb{C})$, whose centre is $\mathbb{C}I$.
 
 **The sum is not the union and is not the ambient.** The two copies meet in the scalars, so the sum has dimension $n^{2}+n^{2}-1=2n^{2}-1$, one more than either copy. The ambient has dimension $n^{4}$, and for $n\ge2$ the inequality $2n^{2}-1<n^{4}$ holds: at $n=2$ it reads $7<16$, at $n=3$ it reads $17<81$.
 
-**The two-sided products are not in the table as a subspace.** The set $\{L_{A}R_{B}\}$ is a cone of dimension $2n^{2}-1$, the same dimension as the sum of the two copies, and it is not a subspace. It contains both copies, since $T_{A,I}=L_{A}$ and $T_{I,B}=R_{B}$. It is not the sum: a generic product is neither a left nor a right multiplication, and it is not a sum of one of each either. **The cone and the sum have the same dimension and are different sets, and this is the reason the ladder has four rungs.**
+**The two-sided products are not in the table as a subspace.** The set $\{L_{A}R_{B}\}$ is a cone of dimension $2n^{2}-1$, the same dimension as the sum of the two copies, and it is not a subspace. It contains both copies, since $L_{A}R_{I}=L_{A}$ and $L_{I}R_{B}=R_{B}$. It is not the sum: a generic product is neither a left nor a right multiplication, and it is not a sum of one of each either. **The cone and the sum have the same dimension and are different sets, and this is the reason the ladder has four rungs.**
 
 ### The Two Slots
 
-**The pair is read in two slots, and the slots are not interchangeable.** The left slot carries an element of $A$ and the right slot an element of $A^{\mathrm{opp}}$; the product $T_{A,B}$ is bilinear in the pair and satisfies
+**The pair is read in two slots, and the slots are not interchangeable.** The left slot carries an element of $A$ and the right slot an element of $A^{\mathrm{opp}}$; the product $L_{A}R_{B}$ is bilinear in the pair and satisfies
 $$
-T_{\lambda A,B}=T_{A,\lambda B}=\lambda T_{A,B}
+L_{\lambda A}R_{B}=L_{A}R_{\lambda B}=\lambda L_{A}R_{B}
 $$
 for every scalar $\lambda$. **The scalar can be moved from one slot to the other, and this single freedom is the fibre of the parametrisation**, of complex dimension one. The effective number of parameters is therefore $2N-1$, and not $2N$.
 
@@ -119,7 +119,7 @@ A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}(A),\qquad A\otimes B^
 $$
 is a homomorphism of algebras, and for $A=M_{n}(\mathbb{C})$ it is an isomorphism.
 
-*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A^{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$; the image of each is the product $T_{E_{ij},E_{kl}}$, whose coefficient array is the elementary array with the single entry $1$ in the row $(i,j)$ and the column $(k,l)$. These $n^{4}$ elementary arrays are a basis of the space of $n^{2}\times n^{2}$ arrays, so the images are independent and the dimensions agree:
+*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A^{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$; the image of each is the product $L_{E_{ij}}R_{E_{kl}}$, whose coefficient array is the elementary array with the single entry $1$ in the row $(i,j)$ and the column $(k,l)$. These $n^{4}$ elementary arrays are a basis of the space of $n^{2}\times n^{2}$ arrays, so the images are independent and the dimensions agree:
 $$
 \dim\bigl(A\otimes A^{\mathrm{opp}}\bigr)=N^{2}=\dim\operatorname{End}(A).
 $$
@@ -153,7 +153,7 @@ $$
 
 ## Summary
 
-The left multiplications $L_{A}(X)=AX$ form a copy of the algebra $A$ inside $\operatorname{End}(A)$, faithful and of dimension $N=\dim A$; the right multiplications $R_{B}(X)=XB$ form a copy of the opposite algebra, and the two copies commute, each being the commutant of the other, with intersection the scalars. The product $T_{A,B}=L_{A}R_{B}$ is the single operator $X\mapsto AXB$, bilinear in the pair, constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$, and the set of products is a cone of dimension $2N-1$ inside the ambient space of dimension $N^{2}$.
+The left multiplications $L_{A}(X)=AX$ form a copy of the algebra $A$ inside $\operatorname{End}(A)$, faithful and of dimension $N=\dim A$; the right multiplications $R_{B}(X)=XB$ form a copy of the opposite algebra, and the two copies commute, each being the commutant of the other, with intersection the scalars. The product $L_{A}R_{B}$ is the single operator $X\mapsto AXB$, bilinear in the pair, constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$, and the set of products is a cone of dimension $2N-1$ inside the ambient space of dimension $N^{2}$.
 
 For $A=M_{n}(\mathbb{C})$ the numbers are $N=n^{2}$ and $N^{2}=n^{4}$, and the ladder is $1,n^{2},2n^{2}-1,n^{4}$: the scalars, the one-sided family, the cone, the ambient. At $n=2$ the ladder is $1,4,7,16$, the biquaternion ladder, and the two-sided products are the pure tensors of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 
@@ -169,7 +169,7 @@ The isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ holds exactl
 | $I$ | the unit of the algebra |
 | $L_{A}$ | the left multiplication $X\mapsto AX$ |
 | $R_{B}$ | the right multiplication $X\mapsto XB$ |
-| $T_{A,B}=L_{A}R_{B}$ | the two-sided operator $X\mapsto AXB$ |
+| $L_{A}R_{B}$ | the two-sided operator $X\mapsto AXB$ |
 | $\operatorname{End}_{L}(A)$ | the set of left multiplications, a copy of $A$ |
 | $\operatorname{End}_{R}(A)$ | the set of right multiplications, a copy of $A^{\mathrm{opp}}$ |
 | $A^{\mathrm{opp}}$ | the opposite algebra |

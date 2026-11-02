@@ -84,15 +84,15 @@ $$
 
 *Proof.* The three laws are those of the theorem above; the addition here is only their reading as a statement about the assignment $T\mapsto T^{\dagger}$, which they make a $\varsigma$-semilinear anti-automorphism. For $\varsigma=\mathrm{id}$ it is an ordinary involution of $\operatorname{End}_{R}(A)$; for $\varsigma\neq\mathrm{id}$ it is not $R$-linear, hence is a twisted involution of the kind treated in *Anti-Automorphisms Twisted by the Base Involution*, and it is not an involution of the algebra over $R$.
 
-**Proposition (the two-sided operators).** For $p,q\in A$ let $T_{p,q}(x)=pxq$. Then $T_{p,q}$ is $R$-linear and
+**Proposition (the two-sided operators).** For $p,q\in A$ let $L_{p}R_{q}(x)=pxq$. Then $L_{p}R_{q}$ is $R$-linear and
 
 $$
-T_{p,q}^{\dagger}=T_{p^{*},q^{*}} .
+L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}} .
 $$
 
 In particular the right multiplication $R_{b}(x)=xb^{*}$ has $R_{b}^{\dagger}=R_{b^{*}}$.
 
-**Proof.** $\varphi(T_{p,q}x,y)=\tau(pxqy^{*})$, while $\varphi(x,T_{p^{*},q^{*}}y)=\tau\bigl(x(p^{*}yq^{*})^{*}\bigr)=\tau(xqy^{*}p)=\tau(pxqy^{*})$, by the anti-multiplicativity of $*$ and the centrality of $\tau$. The particular case is $R_{b}=T_{1,b^{*}}$, and the formula gives $R_{b}^{\dagger}=T_{1,b}=R_{b^{*}}$, since $R_{b^{*}}x=x(b^{*})^{*}=xb$.
+**Proof.** $\varphi(L_{p}R_{q}x,y)=\tau(pxqy^{*})$, while $\varphi(x,L_{p^{*}}R_{q^{*}}y)=\tau\bigl(x(p^{*}yq^{*})^{*}\bigr)=\tau(xqy^{*}p)=\tau(pxqy^{*})$, by the anti-multiplicativity of $*$ and the centrality of $\tau$. The particular case is $R_{b}=L_{1}R_{b^{*}}$, and the formula gives $R_{b}^{\dagger}=L_{1}R_{b}=R_{b^{*}}$, since $R_{b^{*}}x=x(b^{*})^{*}=xb$.
 
 ### The Comparison with the Bilinear Case
 
@@ -178,7 +178,7 @@ The adjoint of a conjugate-linear one-sided multiplication is therefore a sandwi
 
 ### The Complex Matrices
 
-For $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ the adjoint of the two-sided multiplication is $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$ and that of the sandwich is $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$. In particular a **reflection** $\mathcal{T}_{u,u}$, with $u$ unitary, is self-adjoint, $\mathcal{T}_{u,u}^{\dagger}=\mathcal{T}_{u,u}$, so the sandwich family of *The Sesquilinear Sandwich Operator* is cut by the adjoint into the self-adjoint reflections and the rest. The involution $X\mapsto X^{*}$ is self-adjoint under the twisted rule and has no adjoint under the linear rule, by the parity obstruction, being conjugate-linear.
+For $A=M_{n}(\mathbb{C})$ with the conjugate transpose and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$ the adjoint of the two-sided multiplication is $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ and that of the sandwich is $\mathcal{T}_{A,B}^{\dagger}=\mathcal{T}_{B,A}$. In particular a **reflection** $\mathcal{T}_{u,u}$, with $u$ unitary, is self-adjoint, $\mathcal{T}_{u,u}^{\dagger}=\mathcal{T}_{u,u}$, so the sandwich family of *The Sesquilinear Sandwich Operator* is cut by the adjoint into the self-adjoint reflections and the rest. The involution $X\mapsto X^{*}$ is self-adjoint under the twisted rule and has no adjoint under the linear rule, by the parity obstruction, being conjugate-linear.
 
 ### The Field
 
@@ -186,11 +186,11 @@ For $A=\mathbb{C}$ over $R=\mathbb{C}$ with $\varsigma$ the conjugation, $\tau$ 
 
 ### The Quaternions
 
-For $A=\mathbb{H}$ over $R=\mathbb{R}$ with the quaternion conjugation, $\varsigma=\mathrm{id}$ and $\tau$ the real part, the pairing is the dot pairing, the adjoint is $\mathbb{R}$-linear, and the twisted rule is the linear rule. The adjoint of the left multiplication is $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, that of the right multiplication is $R_{b}^{\dagger}=R_{b^{*}}$, the conjugation is self-adjoint, and the two-sided multiplication obeys $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$. With $\varsigma=\mathrm{id}$ the twisted rule is the linear rule, and the statements are those of the twisted-pairing case of *The Adjoint in an Involutive Algebra*, read with $\sigma=*$.
+For $A=\mathbb{H}$ over $R=\mathbb{R}$ with the quaternion conjugation, $\varsigma=\mathrm{id}$ and $\tau$ the real part, the pairing is the dot pairing, the adjoint is $\mathbb{R}$-linear, and the twisted rule is the linear rule. The adjoint of the left multiplication is $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, that of the right multiplication is $R_{b}^{\dagger}=R_{b^{*}}$, the conjugation is self-adjoint, and the two-sided multiplication obeys $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$. With $\varsigma=\mathrm{id}$ the twisted rule is the linear rule, and the statements are those of the twisted-pairing case of *The Adjoint in an Involutive Algebra*, read with $\sigma=*$.
 
 ## Summary
 
-A sesqualgebra carries the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$, linear in the first slot, $\varsigma$-semilinear in the second, sesqui-symmetric, $\varphi(y,x)=\varsigma(\varphi(x,y))$, with the transposed pairing $\varphi^{t}$ of the opposite parity. The adjoint of an $R$-linear operator is defined by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, exists and is unique when the pairing is perfect, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ and $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$, an ordinary involution only when $\varsigma=\mathrm{id}$. For a conjugate-linear operator over a ring without zero divisors the linear rule is contradicted by the scalars, and the adjoint is defined by the twisted rule $\varphi(Sx,y)=\varsigma(\varphi(x,S^{\dagger}y))$, under which the adjoint is again conjugate-linear; the left adjoint, taken against the transposed pairing, exists as well, and the two coincide exactly because the pairing is sesqui-symmetric. The two-sided multiplication obeys $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, the right multiplication $R_{b}^{\dagger}=R_{b^{*}}$, the sandwich $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$, and the left multiplication $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, so the family of the one-sided multiplications is not stable under the adjoint, the right multiplications being stable and the left ones mapping to sandwiches, and the adjoints of the individual operators are computed in *The Adjoint of the Sesquilinear Sandwich* and *The Adjoint of the Conjugate Left Multiplication*. At $\varsigma=\mathrm{id}$ the whole theory reduces to the twisted-pairing case of the bilinear adjoint, read with $\sigma=*$.
+A sesqualgebra carries the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$, linear in the first slot, $\varsigma$-semilinear in the second, sesqui-symmetric, $\varphi(y,x)=\varsigma(\varphi(x,y))$, with the transposed pairing $\varphi^{t}$ of the opposite parity. The adjoint of an $R$-linear operator is defined by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, exists and is unique when the pairing is perfect, and the assignment $T\mapsto T^{\dagger}$ is a $\varsigma$-semilinear anti-automorphism of order two of the endomorphism algebra, $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ and $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$, an ordinary involution only when $\varsigma=\mathrm{id}$. For a conjugate-linear operator over a ring without zero divisors the linear rule is contradicted by the scalars, and the adjoint is defined by the twisted rule $\varphi(Sx,y)=\varsigma(\varphi(x,S^{\dagger}y))$, under which the adjoint is again conjugate-linear; the left adjoint, taken against the transposed pairing, exists as well, and the two coincide exactly because the pairing is sesqui-symmetric. The two-sided multiplication obeys $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$, the right multiplication $R_{b}^{\dagger}=R_{b^{*}}$, the sandwich $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$, and the left multiplication $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, so the family of the one-sided multiplications is not stable under the adjoint, the right multiplications being stable and the left ones mapping to sandwiches, and the adjoints of the individual operators are computed in *The Adjoint of the Sesquilinear Sandwich* and *The Adjoint of the Conjugate Left Multiplication*. At $\varsigma=\mathrm{id}$ the whole theory reduces to the twisted-pairing case of the bilinear adjoint, read with $\sigma=*$.
 
 ## Summary of Notation
 
@@ -207,7 +207,7 @@ A sesqualgebra carries the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$, lin
 | $(\lambda S)^{\dagger}=\lambda S^{\dagger}$ | and $R$-linear on the conjugate-linear ones |
 | $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ | the adjoint operation is an anti-automorphism |
 | ${}^{\dagger}S$ | the left adjoint, the adjoint for $\varphi^{t}$ |
-| $T_{p,q}(x)=pxq$, $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$ | the two-sided multiplication and its adjoint |
+| $L_{p}R_{q}(x)=pxq$, $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ | the two-sided multiplication and its adjoint |
 | $R_{b}(x)=xb^{*}$, $R_{b}^{\dagger}=R_{b^{*}}$ | the right multiplication and its adjoint |
 | $L_{a}(x)=ax^{*}$, $L_{a}^{\dagger}=\mathcal{T}_{1,a}$ | the left multiplication and its adjoint |
 | $\mathcal{T}_{a,b}(x)=ax^{*}b$, $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the sandwich and its adjoint |

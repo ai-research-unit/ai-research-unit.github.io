@@ -50,12 +50,12 @@ so the product of a signed left multiplication with an unsigned one is signed, a
 **Proposition (the signed product is unsigned).** For all $a,b \in A$,
 
 $$
-\ell_a\,\ell_b = L_{a\alpha(b)} , \qquad \varrho_b\,\varrho_a = R_{\alpha(b)a} , \qquad \ell_a\,\varrho_b = T_{a,\alpha(b)} , \qquad \varrho_b\,\ell_a = T_{\alpha(a),b} ,
+\ell_a\,\ell_b = L_{a\alpha(b)} , \qquad \varrho_b\,\varrho_a = R_{\alpha(b)a} , \qquad \ell_a\,\varrho_b = L_{a}R_{\alpha(b)} , \qquad \varrho_b\,\ell_a = L_{\alpha(a)}R_{b} ,
 $$
 
-where $T_{p,q}(x) = pxq$ is the unsigned sandwich. Hence the product of two signed one-sided multiplications is an unsigned one-sided multiplication, and the product of a signed left and a signed right multiplication is an unsigned two-sided sandwich; the signed family is not closed under composition unless $\alpha = \mathrm{id}$.
+where $L_{p}R_{q}(x) = pxq$ is the unsigned sandwich. Hence the product of two signed one-sided multiplications is an unsigned one-sided multiplication, and the product of a signed left and a signed right multiplication is an unsigned two-sided sandwich; the signed family is not closed under composition unless $\alpha = \mathrm{id}$.
 
-**Proof.** $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = a\,x\,\alpha(b) = T_{a,\alpha(b)}(x)$; the other two are the mirror images. Composition of two signed operators carries no twist on the argument, so the result is unsigned; when $\alpha = \mathrm{id}$ the signed and the unsigned families coincide.
+**Proof.** $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = a\,x\,\alpha(b) = L_{a}R_{\alpha(b)}(x)$; the other two are the mirror images. Composition of two signed operators carries no twist on the argument, so the result is unsigned; when $\alpha = \mathrm{id}$ the signed and the unsigned families coincide.
 
 **Theorem (the generated group).** The signed left multiplications with unit parameter are invertible with
 
@@ -106,12 +106,12 @@ so the signed family is the coset $L(A)\alpha$ and the unsigned family is the su
 **Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$. Then every signed left multiplication is an unsigned two-sided sandwich,
 
 $$
-\boxed{\;\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b}\;} ,
+\boxed{\;\ell_a = L_{az}R_{\,z^{-1}} , \qquad \varrho_b = L_{z}R_{\,z^{-1}b}\;} ,
 $$
 
 and the signed family carries no information beyond the unsigned family and the inner automorphism.
 
-**Proof.** $\ell_a(x) = a z x z^{-1} = (az)x(z^{-1}) = T_{az,z^{-1}}(x)$, and $\varrho_b(x) = zxz^{-1}b = T_{z,z^{-1}b}(x)$.
+**Proof.** $\ell_a(x) = a z x z^{-1} = (az)x(z^{-1}) = L_{az}R_{z^{-1}}(x)$, and $\varrho_b(x) = zxz^{-1}b = L_{z}R_{z^{-1}b}(x)$.
 
 **Remark (the boundary between the two order-two maps).** The map $\alpha$ of this article is the grade involution, an **automorphism** of order two. The **involution** in the sense of an anti-automorphism, denoted $\sigma$ in this category, is the structure of the `- * Theory` group and is not used here. On a commutative algebra the two coincide, on a non-commutative one they do not.
 
@@ -127,7 +127,7 @@ and the signed family carries no information beyond the unsigned family and the 
 
 ## Summary
 
-On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = \mathcal{T}_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = T_{a,\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the `- * Theory` group. The graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
+On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = \mathcal{T}_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = L_{a}R_{\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the `- * Theory` group. The graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
 
 ## Summary of Notation
 
@@ -139,11 +139,11 @@ On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade
 | $\ell_a = L_a\alpha = \mathcal{T}_{a,1}$ | Signed left multiplication, $\ell_a(x)=a\alpha(x)$ |
 | $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$ | Signed right multiplication, $\varrho_b(x)=\alpha(x)b$ |
 | $\ell_aL_b=\ell_{a\alpha(b)}$, $L_a\ell_b=\ell_{ab}$ | Mixed laws |
-| $\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=T_{a,\alpha(b)}$ | Signed products are unsigned |
+| $\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=L_{a}R_{\alpha(b)}$ | Signed products are unsigned |
 | $\ell_u^{-1}=\ell_{\alpha(u)^{-1}}$ | Inverse, for $u$ a unit |
 | $A^{\ell_a}=\{x:a\alpha(x)=x\}$ | Fixed set, closed |
 | $\alpha L_u\alpha=L_{\alpha(u)}$ | Normalisation; group $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$ |
-| $\alpha=c_z\Rightarrow\ell_a=T_{az,z^{-1}}$ | Degeneracy when $\alpha$ is inner |
+| $\alpha=c_z\Rightarrow\ell_a=L_{az}R_{z^{-1}}$ | Degeneracy when $\alpha$ is inner |
 
 ## Further Reading
 

@@ -182,7 +182,7 @@ $$
 **Proposition.** The gauge of the corner is
 
 $$
-T_{2,4}=\left(\mathbb{C}^\times\right)^2\times\left(\mathbb{C}^\times\right)^4/\mathbb{C}^\times
+L_{2}R_{4}=\left(\mathbb{C}^\times\right)^2\times\left(\mathbb{C}^\times\right)^4/\mathbb{C}^\times
 \cong\left(\mathbb{C}^\times\right)^5,
 $$
 

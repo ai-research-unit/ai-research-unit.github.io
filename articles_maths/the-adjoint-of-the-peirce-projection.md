@@ -26,7 +26,7 @@ $$
 \langle ax,y\rangle=\langle x,a^*y\rangle, \qquad \langle xa,y\rangle=\langle x,ya^*\rangle.
 $$
 
-The form is written bilinear; if it is sesquilinear over a field with a conjugation, the same identities hold with the scalar conjugation absorbed in the notation, and the operator adjoint is conjugate-linear in the operator. The article does not use the distinction. The idempotent is $e$, its complement is $f=1-e$, the corners are $A_{ij}=e_iAe_j$ with $e_0=e$, $e_1=f$, and the Peirce projections are $E_{ij}=T_{e_i,e_j}$. The operator adjoint is written $\dagger$; the algebra involution is written $*$. They are different maps: $*$ acts on $A$, and $\dagger$ acts on $\operatorname{End}_k(A)$.
+The form is written bilinear; if it is sesquilinear over a field with a conjugation, the same identities hold with the scalar conjugation absorbed in the notation, and the operator adjoint is conjugate-linear in the operator. The article does not use the distinction. The idempotent is $e$, its complement is $f=1-e$, the corners are $A_{ij}=e_iAe_j$ with $e_0=e$, $e_1=f$, and the Peirce projections are $E_{ij}=L_{e_i}R_{e_j}$. The operator adjoint is written $\dagger$; the algebra involution is written $*$. They are different maps: $*$ acts on $A$, and $\dagger$ acts on $\operatorname{End}_k(A)$.
 
 ## The Form and the Adjoint
 
@@ -96,11 +96,11 @@ It is an anti-involution of the operator algebra. If the form is sesquilinear, i
 
 **(b)** $R_a^\dagger=R_{a^*}$.
 
-**(c)** $T_{a,b}^\dagger=T_{a^*,b^*}$.
+**(c)** $L_{a}R_{b}^\dagger=L_{a^*}R_{b^*}$.
 
 **(d)** $P_e^\dagger=P_{e^*}$.
 
-*Proof.* (a) $\langle L_a x,y\rangle=\langle ax,y\rangle=\langle x,a^*y\rangle=\langle x,L_{a^*}y\rangle$. (b) $\langle R_a x,y\rangle=\langle xa,y\rangle=\langle x,ya^*\rangle=\langle x,R_{a^*}y\rangle$. (c) $T_{a,b}=L_aR_b$, so $T_{a,b}^\dagger=R_b^\dagger L_a^\dagger=R_{b^*}L_{a^*}=L_{a^*}R_{b^*}=T_{a^*,b^*}$, using the commutativity of left and right multiplication. (d) $P_e=T_{e,e}$, so $P_e^\dagger=T_{e^*,e^*}=P_{e^*}$.
+*Proof.* (a) $\langle L_a x,y\rangle=\langle ax,y\rangle=\langle x,a^*y\rangle=\langle x,L_{a^*}y\rangle$. (b) $\langle R_a x,y\rangle=\langle xa,y\rangle=\langle x,ya^*\rangle=\langle x,R_{a^*}y\rangle$. (c) $L_{a}R_{b}$, so $L_{a}R_{b}^\dagger=R_b^\dagger L_a^\dagger=R_{b^*}L_{a^*}=L_{a^*}R_{b^*}$, using the commutativity of left and right multiplication. (d) $P_e=L_{e}R_{e}$, so $P_e^\dagger=L_{e^*}R_{e^*}=P_{e^*}$.
 
 **Corollary.** The Peirce projection of $e$ is self-adjoint exactly when $e$ is Hermitian:
 
@@ -119,7 +119,7 @@ $$
 The Peirce projection is
 
 $$
-P_e=T_{e,e}:A\longrightarrow A, \qquad P_e(x)=exe.
+P_e=L_{e}R_{e}:A\longrightarrow A, \qquad P_e(x)=exe.
 $$
 
 It is the projection onto $A_{00}=eAe$ along $N=A_{01}\oplus A_{10}\oplus A_{11}$. Its adjoint is the Peirce projection of the adjoint idempotent:
@@ -154,7 +154,7 @@ The identity is the main theorem of the article, and it has three readings:
 
 **Theorem.** Suppose $e$ is Hermitian. Then:
 
-**(a)** Each Peirce projection $E_{ij}=T_{e_i,e_j}$ is self-adjoint.
+**(a)** Each Peirce projection $E_{ij}=L_{e_i}R_{e_j}$ is self-adjoint.
 
 **(b)** The four Peirce projections are pairwise orthogonal, and the four corners are pairwise orthogonal.
 
@@ -168,7 +168,7 @@ and the form restricts to a nondegenerate form on each corner.
 
 **(d)** $P_e=E_{00}$ is the orthogonal projection onto $eAe$, and $P_f=E_{11}$ is the orthogonal projection onto $fAf$.
 
-*Proof.* (a) $E_{ij}^\dagger=T_{e_i^*,e_j^*}=T_{e_i,e_j}=E_{ij}$, because $e$ and $f=1-e$ are Hermitian. (b) The $E_{ij}$ are idempotent and self-adjoint by (a), and they satisfy $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$; hence they are pairwise orthogonal projections. Their images are the corners, so the corners are pairwise orthogonal. (c) The sum of the $E_{ij}$ is the identity, so the corners span $A$; with (b) the sum is orthogonal. The restriction of a nondegenerate form to an orthogonal direct summand is nondegenerate, because a vector in the radical of the summand is orthogonal to the summand and to all the other summands, hence to $A$. (d) is the special case $(i,j)=(0,0)$ and $(1,1)$.
+*Proof.* (a) $E_{ij}^\dagger=L_{e_i^*}R_{e_j^*}=L_{e_i}R_{e_j}=E_{ij}$, because $e$ and $f=1-e$ are Hermitian. (b) The $E_{ij}$ are idempotent and self-adjoint by (a), and they satisfy $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$; hence they are pairwise orthogonal projections. Their images are the corners, so the corners are pairwise orthogonal. (c) The sum of the $E_{ij}$ is the identity, so the corners span $A$; with (b) the sum is orthogonal. The restriction of a nondegenerate form to an orthogonal direct summand is nondegenerate, because a vector in the radical of the summand is orthogonal to the summand and to all the other summands, hence to $A$. (d) is the special case $(i,j)=(0,0)$ and $(1,1)$.
 
 **Corollary (the orthogonal Peirce decomposition).** For a Hermitian idempotent $e$,
 
@@ -206,7 +206,7 @@ The form is hyperbolic on the pairs: $E_{11}$ and $E_{22}$ are isotropic and sat
 
 ## Summary
 
-Let $A$ be a finite-dimensional involutive algebra with a nondegenerate associative Hermitian form. The operator adjoint $\dagger$ satisfies $L_a^\dagger=L_{a^*}$, $R_a^\dagger=R_{a^*}$ and $T_{a,b}^\dagger=T_{a^*,b^*}$. For an idempotent $e$, the Peirce projection $P_e=T_{e,e}$ has adjoint \(P_e^\dagger=P_{e^*}\), the Peirce projection of the adjoint idempotent. Hence $P_e$ is self-adjoint exactly when $e$ is Hermitian. The kernel of $P_e$ is the orthogonal complement of the image of $P_{e^*}$, that is, $(e^*Ae^*)^\perp$; the image of $P_e$ is the orthogonal complement of the kernel of $P_{e^*}$. When $e$ is Hermitian, all four Peirce projections $E_{ij}$ are self-adjoint, the four corners are pairwise orthogonal, the Peirce decomposition is an orthogonal direct sum, and $P_e$ is the orthogonal projection onto $eAe$. When $e$ is not Hermitian, the Peirce projection is not self-adjoint, the corners need not be orthogonal, and the form pairs the corner of $e$ with the corner of $e^*$: the symplectic matrix algebra and the split algebra with the exchange involution are the models, with isotropic corners and hyperbolic pairings. The article uses no positivity and no topology.
+Let $A$ be a finite-dimensional involutive algebra with a nondegenerate associative Hermitian form. The operator adjoint $\dagger$ satisfies $L_a^\dagger=L_{a^*}$, $R_a^\dagger=R_{a^*}$ and $L_{a}R_{b}^\dagger=L_{a^*}R_{b^*}$. For an idempotent $e$, the Peirce projection $P_e=L_{e}R_{e}$ has adjoint \(P_e^\dagger=P_{e^*}\), the Peirce projection of the adjoint idempotent. Hence $P_e$ is self-adjoint exactly when $e$ is Hermitian. The kernel of $P_e$ is the orthogonal complement of the image of $P_{e^*}$, that is, $(e^*Ae^*)^\perp$; the image of $P_e$ is the orthogonal complement of the kernel of $P_{e^*}$. When $e$ is Hermitian, all four Peirce projections $E_{ij}$ are self-adjoint, the four corners are pairwise orthogonal, the Peirce decomposition is an orthogonal direct sum, and $P_e$ is the orthogonal projection onto $eAe$. When $e$ is not Hermitian, the Peirce projection is not self-adjoint, the corners need not be orthogonal, and the form pairs the corner of $e$ with the corner of $e^*$: the symplectic matrix algebra and the split algebra with the exchange involution are the models, with isotropic corners and hyperbolic pairings. The article uses no positivity and no topology.
 
 ## Summary of Notation
 
@@ -216,9 +216,9 @@ Let $A$ be a finite-dimensional involutive algebra with a nondegenerate associat
 | $\dagger$ | the operator adjoint, $T\mapsto T^\dagger$ |
 | $\langle-,-\rangle$ | the associative Hermitian form |
 | $L_a,R_a$ | left and right multiplication |
-| $T_{a,b}=L_aR_b$ | the sandwich $x\mapsto axb$ |
-| $P_e=T_{e,e}$ | the Peirce projection onto $eAe$ |
-| $E_{ij}=T_{e_i,e_j}$ | the Peirce projection onto $A_{ij}$ |
+| $L_{a}R_{b}$ | the sandwich $x\mapsto axb$ |
+| $P_e=L_{e}R_{e}$ | the Peirce projection onto $eAe$ |
+| $E_{ij}=L_{e_i}R_{e_j}$ | the Peirce projection onto $A_{ij}$ |
 | $e^*$ | the adjoint idempotent |
 | $P_e^\dagger=P_{e^*}$ | the adjoint Peirce projection |
 

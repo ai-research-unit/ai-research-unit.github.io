@@ -289,7 +289,7 @@ The Sylvester operator $\mathcal S_{A,B}(X)=AX-XB$ is a linear operator on the s
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectrum, the resolvent and the spectral projectors.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the Kronecker product and the two factors.
 - [The Centraliser](the-centraliser.html), for the commutant and its dimension.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators $L_A$, $R_B$ and $T_{A,B}$.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators $L_A$, $R_B$ and $L_{A}R_{B}$.
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4-and-sl4-of-m4c.html), for the root space decomposition and the derivations.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4$.
 - [The Hermitian Sylvester Equation with Hermitian Adjoint](the-hermitian-sylvester-equation-with-hermitian-adjoint.html), for the same equation on a Clifford algebra, with the dagger and the adjunction $L_a^*=L_{a^\dagger}$.

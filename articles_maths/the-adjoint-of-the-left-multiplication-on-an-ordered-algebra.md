@@ -9,7 +9,7 @@ $$
 (L_a)^{*} = L_{a^{*}} ,
 $$
 
-and its right-handed companion satisfies $(R_a)^{*} = R_{a^{*}}$; the article develops the consequences of this single computation. The two-sided **multiplication operator** $T_{a,b} = L_aR_b$, which sends $x$ to $axb$, has the adjoint $(T_{a,b})^{*} = T_{b^{*},a^{*}}$, so the adjoint of a two-sided multiplication is again a two-sided multiplication, with the parameters interchanged and conjugated. The **inner derivation** $\delta_a = L_a - R_a$ has the adjoint $\delta_a^{*} = \delta_{a^{*}}$, so an inner derivation is **self-adjoint** exactly when the deriving element is self-adjoint; and the derivation property is preserved by the adjoint involution. In all of this the order is the quadratic order of *Self-Adjoint Elements and the Order*: an element is positive if and only if its left multiplication is a positive operator, and the adjoint is order preserving, so the **adjoint and the order** are compatible in every form in which the one-sided multiplications appear.
+and its right-handed companion satisfies $(R_a)^{*} = R_{a^{*}}$; the article develops the consequences of this single computation. The two-sided **multiplication operator** $L_{a}R_{b}$, which sends $x$ to $axb$, has the adjoint $(L_{a}R_{b})^{*} = L_{b^{*}}R_{a^{*}}$, so the adjoint of a two-sided multiplication is again a two-sided multiplication, with the parameters interchanged and conjugated. The **inner derivation** $\delta_a = L_a - R_a$ has the adjoint $\delta_a^{*} = \delta_{a^{*}}$, so an inner derivation is **self-adjoint** exactly when the deriving element is self-adjoint; and the derivation property is preserved by the adjoint involution. In all of this the order is the quadratic order of *Self-Adjoint Elements and the Order*: an element is positive if and only if its left multiplication is a positive operator, and the adjoint is order preserving, so the **adjoint and the order** are compatible in every form in which the one-sided multiplications appear.
 
 The map $a\mapsto L_a$ is a **\*-homomorphism** of the algebra into the algebra of operators, and $a\mapsto R_a$ is a **\*-anti-homomorphism**; their combination produces the two-sided structure, the derivations, and the **multiplication algebra** $\{L_aR_b\}$. The article states these maps, computes their adjoints, and identifies the order-theoretic content: the positive cone of the algebra is carried isomorphically onto the cone of the positive one-sided multiplications, and the symmetrised combinations $L_a + R_a$ are the self-adjoint operators of the multiplication algebra.
 
@@ -27,15 +27,15 @@ so the left multiplications form a **\*-homomorphism** $a\mapsto L_a$ with $L_{a
 
 *Proof.* $\langle L_ax,y\rangle = \operatorname{tr}((ax)^{*}y) = \operatorname{tr}(x^{*}a^{*}y) = \langle x,L_{a^{*}}y\rangle$ and $\langle R_ax,y\rangle = \operatorname{tr}((xa)^{*}y) = \operatorname{tr}(a^{*}x^{*}y) = \operatorname{tr}(x^{*}ya^{*}) = \langle x,R_{a^{*}}y\rangle$. The homomorphism and anti-homomorphism properties are the associativity, $L_{ab} = L_aL_b$ and $R_{ab} = R_bR_a$, together with the adjoint identities.
 
-**Proposition (the two-sided multiplications).** For $a,b\in A$ let $T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$; then
+**Proposition (the two-sided multiplications).** For $a,b\in A$ let $L_{a}R_{b}$, $L_{a}R_{b}(x) = axb$; then
 
 $$
-\boxed{\;(T_{a,b})^{*} = T_{b^{*},a^{*}}\;} ,
+\boxed{\;(L_{a}R_{b})^{*} = L_{b^{*}}R_{a^{*}}\;} ,
 $$
 
-so the two-sided multiplications form a **bimodule** under the adjoint, the map $(a,b)\mapsto T_{a,b}$ is bilinear, and the identity $T_{a,b}T_{c,d} = T_{ac,db}$ holds by associativity; consequently the adjoint of a two-sided multiplication is again a two-sided multiplication, and the **self-adjoint** two-sided multiplications are the $T_{a,a^{*}}$ and their sums.
+so the two-sided multiplications form a **bimodule** under the adjoint, the map $(a,b)\mapsto L_{a}R_{b}$ is bilinear, and the identity $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ holds by associativity; consequently the adjoint of a two-sided multiplication is again a two-sided multiplication, and the **self-adjoint** two-sided multiplications are the $L_{a}R_{a^{*}}$ and their sums.
 
-*Proof.* $\langle T_{a,b}x,y\rangle = \operatorname{tr}((axb)^{*}y) = \operatorname{tr}(b^{*}x^{*}a^{*}y) = \operatorname{tr}(x^{*}a^{*}yb^{*}) = \langle x,T_{b^{*},a^{*}}y\rangle$, which is the adjoint formula; the composition identity is associativity, and the self-adjointness statement is the fixed-point condition $T_{a,b} = T_{b^{*},a^{*}}$.
+*Proof.* $\langle L_{a}R_{b}x,y\rangle = \operatorname{tr}((axb)^{*}y) = \operatorname{tr}(b^{*}x^{*}a^{*}y) = \operatorname{tr}(x^{*}a^{*}yb^{*}) = \langle x,L_{b^{*}}R_{a^{*}}y\rangle$, which is the adjoint formula; the composition identity is associativity, and the self-adjointness statement is the fixed-point condition $L_{a}R_{b} = L_{b^{*}}R_{a^{*}}$.
 
 **Corollary (the symmetrised two-sided multiplication).** The operator $L_a + R_a$, the **symmetrised two-sided multiplication**, is self-adjoint exactly when $a$ is self-adjoint, $(L_a + R_a)^{*} = L_{a^{*}} + R_{a^{*}}$, and it is the operator $x\mapsto ax + xa$; the **Jordan multiplication** of the algebra is its restriction to the self-adjoint part.
 
@@ -64,14 +64,14 @@ so $\delta_a$ is self-adjoint exactly when $a$ is self-adjoint, and it is **skew
 **Theorem (the order of the multiplications).** The map $a\mapsto L_a$ is an **order isomorphism** of the ordered involutive algebra onto the subalgebra of the left multiplications, and
 
 $$
-\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0\;} ,
+\boxed{\;a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff L_{a}R_{b}\geq0 \ \text{ for every } b\geq0\;} ,
 $$
 
 so the positive cone of the algebra is carried isomorphically onto the cone of the positive multiplications; the adjoint of a positive multiplication is positive, and the adjoint is therefore an **order automorphism** of the multiplication algebra.
 
-*Proof.* The first two equivalences are the theorem of *Self-Adjoint Elements and the Order*; the third is the two-sided statement $T_{a,b}(A_+) = L_aR_b(A_+)\subseteq L_a(A_+)\subseteq A_+$ for $a,b\geq0$, with the converse from the choice $b = 1$; the positivity of the adjoint is *The Adjoint of a Positive Operator*, and the order-automorphism statement is its consequence.
+*Proof.* The first two equivalences are the theorem of *Self-Adjoint Elements and the Order*; the third is the two-sided statement $L_{a}R_{b}(A_+) = L_aR_b(A_+)\subseteq L_a(A_+)\subseteq A_+$ for $a,b\geq0$, with the converse from the choice $b = 1$; the positivity of the adjoint is *The Adjoint of a Positive Operator*, and the order-automorphism statement is its consequence.
 
-**Corollary (the symmetrised multiplications and the order unit).** The symmetrised two-sided multiplication $L_a + R_a$ is positive if and only if $a\geq0$, and the **order unit** of the multiplication algebra is $L_1 = I$; the positive elements of the multiplication algebra are generated by the $L_aR_b$ with $a,b\geq0$, and the order interval at the identity is the set of the multiplications $T_{a,b}$ with $0\leq a,b$ and $T_{a,b}\leq I$.
+**Corollary (the symmetrised multiplications and the order unit).** The symmetrised two-sided multiplication $L_a + R_a$ is positive if and only if $a\geq0$, and the **order unit** of the multiplication algebra is $L_1 = I$; the positive elements of the multiplication algebra are generated by the $L_aR_b$ with $a,b\geq0$, and the order interval at the identity is the set of the multiplications $L_{a}R_{b}$ with $0\leq a,b$ and $L_{a}R_{b}\leq I$.
 
 *Proof.* The positivity of $L_a + R_a$ reduces to the positivity of $L_a$ and $R_a$, hence to $a\geq0$; the order unit is the identity multiplication; the generation statement is the additive closure of the cone; the interval statement is the definition of the order interval.
 
@@ -91,7 +91,7 @@ Let $A = C(X,\mathbb{C})$ with the pointwise order and the $L^{2}$ trace form. T
 
 ## Summary
 
-The **left multiplication** $L_a : x\mapsto ax$ has the adjoint $(L_a)^{*} = L_{a^{*}}$ for the trace form, the **right multiplication** has $(R_a)^{*} = R_{a^{*}}$, and $a\mapsto L_a$ (resp. $a\mapsto R_a$) is a **\*-homomorphism** (resp. a **\*-anti-homomorphism**). The **two-sided multiplication** $T_{a,b} = L_aR_b$ has $(T_{a,b})^{*} = T_{b^{*},a^{*}}$, so it is self-adjoint for the parameters $(a,a^{*})$; the **symmetrised** $L_a + R_a$ is self-adjoint exactly for the self-adjoint $a$ and is the Jordan multiplication. The **inner derivation** $\delta_a = L_a - R_a = [a,\cdot]$ has $(\delta_a)^{*} = \delta_{a^{*}}$, is self-adjoint exactly for the self-adjoint $a$ and skew-adjoint exactly for the skew-adjoint $a$, satisfies the **Leibniz rule**, and its kernel is the centre. The **order** is transported: $a\geq0\iff L_a\geq0\iff R_a\geq0\iff T_{a,b}\geq0$ for every $b\geq0$, the adjoint of a positive multiplication is positive, and the adjoint is an **order automorphism** of the multiplication algebra, whose order unit is $L_1 = I$ and whose interval at the identity is the set of the multiplications $T_{a,b}$ below $I$. The adjoint and the positivity are *The Adjoint of a Positive Operator*; the order is *Self-Adjoint Elements and the Order*; the functionals are *Positive Functionals and Self-Adjointness*; the automorphisms are *The Involution on the Order Automorphisms*; the signed adjoints are *The Signed Adjoint Sandwich on an Ordered Algebra*, *The Signed Adjoint of the Reflection on an Ordered Algebra* and *The Signed Adjoint of the Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Adjoint Action on a Module over an Ordered Algebra*; the forms are *Positive Definite Forms and the Order*; and the ordered involution is *Ordered Involutive Algebras*.
+The **left multiplication** $L_a : x\mapsto ax$ has the adjoint $(L_a)^{*} = L_{a^{*}}$ for the trace form, the **right multiplication** has $(R_a)^{*} = R_{a^{*}}$, and $a\mapsto L_a$ (resp. $a\mapsto R_a$) is a **\*-homomorphism** (resp. a **\*-anti-homomorphism**). The **two-sided multiplication** $L_{a}R_{b}$ has $(L_{a}R_{b})^{*} = L_{b^{*}}R_{a^{*}}$, so it is self-adjoint for the parameters $(a,a^{*})$; the **symmetrised** $L_a + R_a$ is self-adjoint exactly for the self-adjoint $a$ and is the Jordan multiplication. The **inner derivation** $\delta_a = L_a - R_a = [a,\cdot]$ has $(\delta_a)^{*} = \delta_{a^{*}}$, is self-adjoint exactly for the self-adjoint $a$ and skew-adjoint exactly for the skew-adjoint $a$, satisfies the **Leibniz rule**, and its kernel is the centre. The **order** is transported: $a\geq0\iff L_a\geq0\iff R_a\geq0\iff L_{a}R_{b}\geq0$ for every $b\geq0$, the adjoint of a positive multiplication is positive, and the adjoint is an **order automorphism** of the multiplication algebra, whose order unit is $L_1 = I$ and whose interval at the identity is the set of the multiplications $L_{a}R_{b}$ below $I$. The adjoint and the positivity are *The Adjoint of a Positive Operator*; the order is *Self-Adjoint Elements and the Order*; the functionals are *Positive Functionals and Self-Adjointness*; the automorphisms are *The Involution on the Order Automorphisms*; the signed adjoints are *The Signed Adjoint Sandwich on an Ordered Algebra*, *The Signed Adjoint of the Reflection on an Ordered Algebra* and *The Signed Adjoint of the Left Multiplication on an Ordered Algebra*; the graded action is *The Graded Adjoint Action on a Module over an Ordered Algebra*; the forms are *Positive Definite Forms and the Order*; and the ordered involution is *Ordered Involutive Algebras*.
 
 ## Summary of Notation
 
@@ -99,8 +99,8 @@ The **left multiplication** $L_a : x\mapsto ax$ has the adjoint $(L_a)^{*} = L_{
 |---|---|
 | $L_a x = ax$, $R_a x = xa$ | Left and right multiplications |
 | $(L_a)^{*} = L_{a^{*}}$, $(R_a)^{*} = R_{a^{*}}$ | Adjoints |
-| $T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$ | Two-sided multiplication |
-| $(T_{a,b})^{*} = T_{b^{*},a^{*}}$ | Adjoint of a two-sided multiplication |
+| $L_{a}R_{b}$, $L_{a}R_{b}(x) = axb$ | Two-sided multiplication |
+| $(L_{a}R_{b})^{*} = L_{b^{*}}R_{a^{*}}$ | Adjoint of a two-sided multiplication |
 | $L_a + R_a$ | Symmetrised, self-adjoint for self-adjoint $a$ |
 | $\delta_a = L_a - R_a = [a,\cdot]$ | Inner derivation |
 | $(\delta_a)^{*} = \delta_{a^{*}}$ | Adjoint of a derivation |

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The two-sided operator of a bimodule is the sandwich $T_{a,b}(x)=axb$, a left multiplication followed by a right one. This article computes its adjoint. The answer is that the adjoint acts on the parameters by the involution: $(T_{a,b})^{*}=T_{\sigma(a),\sigma(b)}$. The involution of the algebra and the involution of the module's endomorphism ring are therefore the same operation seen in two coordinates, and the self-adjoint and unitary sandwiches are read off immediately.
+The two-sided operator of a bimodule is the sandwich $L_{a}R_{b}(x)=axb$, a left multiplication followed by a right one. This article computes its adjoint. The answer is that the adjoint acts on the parameters by the involution: $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The involution of the algebra and the involution of the module's endomorphism ring are therefore the same operation seen in two coordinates, and the self-adjoint and unitary sandwiches are read off immediately.
 
-The article is the first of the `* Operator Theory` group of this category. It assumes the bimodule and sandwich of *The Signed Sandwich on a Bimodule over an Algebra* (in its unsigned, ungraded form), the one-sided multiplications of *Left and Right Multiplication of a Module*, the pairing and adjoint of *The Adjoint of a Module Homomorphism*, and the involution on the endomorphism ring of *The Involution on the Endomorphism Ring of a Module*. The signed version of the same computation, in which the grade involution is inserted in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, ${}_A M_A$ is an $(A,A)$-bimodule carrying a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, $L_a$ and $R_b$ are the one-sided multiplications, and $T_{a,b}=L_aR_b=R_bL_a$.
+The article is the first of the `* Operator Theory` group of this category. It assumes the bimodule and sandwich of *The Signed Sandwich on a Bimodule over an Algebra* (in its unsigned, ungraded form), the one-sided multiplications of *Left and Right Multiplication of a Module*, the pairing and adjoint of *The Adjoint of a Module Homomorphism*, and the involution on the endomorphism ring of *The Involution on the Endomorphism Ring of a Module*. The signed version of the same computation, in which the grade involution is inserted in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, ${}_A M_A$ is an $(A,A)$-bimodule carrying a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, $L_a$ and $R_b$ are the one-sided multiplications, and $L_{a}R_{b}=R_bL_a$.
 
 ## The Bimodule Pairing
 
@@ -42,48 +42,48 @@ Both one-sided multiplications therefore have adjoints obtained by applying the 
 **Theorem.** For all $a,b \in A$,
 
 $$
-\boxed{\;(T_{a,b})^{*}=T_{\sigma(a),\,\sigma(b)}\;} .
+\boxed{\;(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\,\sigma(b)}\;} .
 $$
 
-*Proof.* Since $T_{a,b}=L_aR_b$ and the adjoint is anti-multiplicative, $(T_{a,b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}=T_{\sigma(a),\sigma(b)}$.
+*Proof.* Since $L_{a}R_{b}$ and the adjoint is anti-multiplicative, $(L_{a}R_{b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}$.
 
-The parameters are transformed by $\sigma$ in place; equivalently, $(T_{a,b})^{*}=T_{\sigma(a),\sigma(b)}$ says that the diagram
+The parameters are transformed by $\sigma$ in place; equivalently, $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$ says that the diagram
 
 $$
-(a,b) \xrightarrow{\ (\sigma,\sigma)\ } (\sigma(a),\sigma(b)), \qquad T_{a,b} \xrightarrow{\ {}^{*}\ } T_{\sigma(a),\sigma(b)}
+(a,b) \xrightarrow{\ (\sigma,\sigma)\ } (\sigma(a),\sigma(b)), \qquad L_{a}R_{b} \xrightarrow{\ {}^{*}\ } L_{\sigma(a)}R_{\sigma(b)}
 $$
 
 commutes: applying the pair $(\sigma,\sigma)$ to the parameters and applying the operator involution to the sandwich are the same operation. This is the precise sense in which the involution of the bimodule is compatible with the involution of the algebra.
 
 ### Self-adjoint and skew-adjoint sandwiches
 
-**Corollary.** Suppose the sandwich map $(a,b)\mapsto T_{a,b}$ is injective. Then
+**Corollary.** Suppose the sandwich map $(a,b)\mapsto L_{a}R_{b}$ is injective. Then
 
 $$
-\boxed{\;(T_{a,b})^{*}=T_{a,b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (T_{a,b})^{*}=-T_{a,b} \iff \sigma(a)=-a,\ \sigma(b)=-b\;} .
+\boxed{\;(L_{a}R_{b})^{*}=L_{a}R_{b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (L_{a}R_{b})^{*}=-L_{a}R_{b} \iff \sigma(a)=-a,\ \sigma(b)=-b\;} .
 $$
 
 Thus the self-adjoint sandwiches are exactly those with both parameters symmetric, and the skew-adjoint sandwiches those with both parameters antisymmetric.
 
-*Proof.* $T_{\sigma(a),\sigma(b)}=T_{a,b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $T_{a,b}$ is linear in each parameter.
+*Proof.* $L_{\sigma(a)}R_{\sigma(b)}=L_{a}R_{b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $L_{a}R_{b}$ is linear in each parameter.
 
 ### Unitary sandwiches
 
-**Theorem.** If $a$ and $b$ are unitary elements of $A$, then $T_{a,b}$ is unitary:
+**Theorem.** If $a$ and $b$ are unitary elements of $A$, then $L_{a}R_{b}$ is unitary:
 
 $$
-\boxed{\;\sigma(a)a=a\sigma(a)=1 \text{ and } \sigma(b)b=b\sigma(b)=1 \implies (T_{a,b})^{*}T_{a,b}=T_{a,b}(T_{a,b})^{*}=\mathrm{id}\;} .
+\boxed{\;\sigma(a)a=a\sigma(a)=1 \text{ and } \sigma(b)b=b\sigma(b)=1 \implies (L_{a}R_{b})^{*}L_{a}R_{b}(L_{a}R_{b})^{*}=\mathrm{id}\;} .
 $$
 
 Conversely, for the regular bimodule with the regular pairing and an injective sandwich map, a unitary sandwich has unitary parameters.
 
-*Proof.* By the composition law $T_{x,y}T_{u,v}=T_{xu,vy}$ of the sandwich,
+*Proof.* By the composition law $L_{x}R_{y}L_{u}R_{v}=L_{xu}R_{vy}$ of the sandwich,
 
 $$
-(T_{a,b})^{*}T_{a,b}=T_{\sigma(a)a,\,b\sigma(b)}, \qquad T_{a,b}(T_{a,b})^{*}=T_{a\sigma(a),\,\sigma(b)b},
+(L_{a}R_{b})^{*}L_{a}R_{b}=L_{\sigma(a)a}R_{\,b\sigma(b)}, \qquad L_{a}R_{b}(L_{a}R_{b})^{*}=L_{a\sigma(a)}R_{\,\sigma(b)b},
 $$
 
-and these are $\mathrm{id}=T_{1,1}$ when $a,b$ are unitary. The converse is the same equalities read backwards.
+and these are $\mathrm{id}=L_{1}R_{1}$ when $a,b$ are unitary. The converse is the same equalities read backwards.
 
 The unitary sandwiches are the two-sided operators that preserve the pairing, in agreement with the isometry characterisation of *The Involution on the Endomorphism Ring of a Module*; the condition on the parameters is that each be unitary in the algebra, and the two sides of the sandwich are independent.
 
@@ -92,20 +92,20 @@ The unitary sandwiches are the two-sided operators that preserve the pairing, in
 **Corollary.** For all $a,b$, when the pairing is perfect,
 
 $$
-\ker (T_{a,b})^{*}=(\operatorname{im}T_{a,b})^{\mathrm{c}}, \qquad \operatorname{im}(T_{a,b})^{*}={}^{\mathrm{c}}(\ker T_{a,b}),
+\ker (L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}, \qquad \operatorname{im}(L_{a}R_{b})^{*}={}^{\mathrm{c}}(\ker L_{a}R_{b}),
 $$
 
 and the adjoint preserves the lengths of the kernel, the image and the cokernel.
 
-*Proof.* These are the general kernel and image identities of *The Adjoint of a Module Homomorphism*, applied to $T_{a,b}$.
+*Proof.* These are the general kernel and image identities of *The Adjoint of a Module Homomorphism*, applied to $L_{a}R_{b}$.
 
-The complement of the image of a sandwich is the set of $n$ killed by all $axb$, that is $(\operatorname{im}T_{a,b})^{\mathrm{c}}=\{n : \langle aMb,n\rangle=0\}$.
+The complement of the image of a sandwich is the set of $n$ killed by all $axb$, that is $(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}=\{n : \langle aMb,n\rangle=0\}$.
 
 ## The Sandwich Involution and the Parameter Involution
 
 ### The involution on the two-sided operators
 
-**Proposition.** Let $W$ be the $R$-submodule of $E=\operatorname{End}_A(M)$ spanned by the sandwiches $T_{a,b}$. Then $W$ is stable under the involution ${}^{*}$ of $E$, and the induced map on $W$ is the map $T_{a,b}\mapsto T_{\sigma(a),\sigma(b)}$.
+**Proposition.** Let $W$ be the $R$-submodule of $E=\operatorname{End}_A(M)$ spanned by the sandwiches $L_{a}R_{b}$. Then $W$ is stable under the involution ${}^{*}$ of $E$, and the induced map on $W$ is the map $L_{a}R_{b}\mapsto L_{\sigma(a)}R_{\sigma(b)}$.
 
 *Proof.* The adjoint of a sum is the sum of the adjoints, and the adjoint of a sandwich is again a sandwich by the theorem; hence $W$ is stable.
 
@@ -113,10 +113,10 @@ So the sandwich span is not merely a submodule of $E$ but an **involutive subalg
 
 ### Compatibility with the representation
 
-**Proposition.** The map $A\otimes_R A^{\mathrm{opp}}\to E$, $a\otimes b\mapsto T_{a,b}$ of *Left and Right Multiplication of a Module*, is compatible with the involutions: the involution $\sigma\otimes\sigma$ on the source and the involution ${}^{*}$ on the target satisfy
+**Proposition.** The map $A\otimes_R A^{\mathrm{opp}}\to E$, $a\otimes b\mapsto L_{a}R_{b}$ of *Left and Right Multiplication of a Module*, is compatible with the involutions: the involution $\sigma\otimes\sigma$ on the source and the involution ${}^{*}$ on the target satisfy
 
 $$
-(a\otimes b)^{*} \longmapsto (T_{a,b})^{*}=T_{\sigma(a),\sigma(b)} .
+(a\otimes b)^{*} \longmapsto (L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)} .
 $$
 
 *Proof.* Immediate from the theorem and the definition of the map.
@@ -127,15 +127,15 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 ### A pairing that is not balanced
 
-**Proposition.** If the pairing is compatible with the left action but not with the right, then $(L_a)^{*}=L_{\sigma(a)}$ but $R_b$ need not have an adjoint of the form $R_{\sigma(b)}$; the formula $(T_{a,b})^{*}=T_{\sigma(a),\sigma(b)}$ may fail, and the adjoint of $T_{a,b}$, when it exists, is an operator that is not a sandwich.
+**Proposition.** If the pairing is compatible with the left action but not with the right, then $(L_a)^{*}=L_{\sigma(a)}$ but $R_b$ need not have an adjoint of the form $R_{\sigma(b)}$; the formula $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$ may fail, and the adjoint of $L_{a}R_{b}$, when it exists, is an operator that is not a sandwich.
 
 *Proof.* The right-adjoint computation used the balanced identity $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$; without it the functional $n\mapsto\langle mb,n\rangle$ need not be represented by a right multiplication.
 
 ### A non-faithful module
 
-**Proposition.** If the sandwich map is not injective — for instance when the bimodule is not faithful and $T_{a,b}=T_{a',b'}$ for distinct parameters — then the self-adjointness and unitarity criteria are criteria on the operators, not on the parameters: the parameters of a self-adjoint sandwich are determined only up to the kernel of the sandwich map.
+**Proposition.** If the sandwich map is not injective — for instance when the bimodule is not faithful and $L_{a}R_{b}=L_{a'}R_{b'}$ for distinct parameters — then the self-adjointness and unitarity criteria are criteria on the operators, not on the parameters: the parameters of a self-adjoint sandwich are determined only up to the kernel of the sandwich map.
 
-*Proof.* $T_{a,b}$ depends only on the image of $(a,b)$ in the quotient by the kernel, and the adjoint depends only on the operator, so the criteria lift to the quotient.
+*Proof.* $L_{a}R_{b}$ depends only on the image of $(a,b)$ in the quotient by the kernel, and the adjoint depends only on the operator, so the criteria lift to the quotient.
 
 ### The degenerate pairing of the trivial module
 
@@ -145,17 +145,17 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 ## Examples
 
-**(a) The regular bimodule.** For $M={}_A A_A$ with the balanced pairing $\langle m,n\rangle=\sigma(m)n$, the adjoint of $T_{a,b}$ is $T_{\sigma(a),\sigma(b)}$; the sandwich span is all of $E\cong A^{\mathrm{opp}}$ when $A$ is a division ring, and the involution is $\sigma$.
+**(a) The regular bimodule.** For $M={}_A A_A$ with the balanced pairing $\langle m,n\rangle=\sigma(m)n$, the adjoint of $L_{a}R_{b}$ is $L_{\sigma(a)}R_{\sigma(b)}$; the sandwich span is all of $E\cong A^{\mathrm{opp}}$ when $A$ is a division ring, and the involution is $\sigma$.
 
-**(b) Matrix algebras.** For $A=M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $M=A$ the regular bimodule, $T_{A,B}(X)=AXB$ and $(T_{A,B})^{*}=T_{A^{*},B^{*}}$ with $A^{*}=\overline{A}^{\mathsf{T}}$; self-adjoint sandwiches are those with $A,B$ hermitian.
+**(b) Matrix algebras.** For $A=M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $M=A$ the regular bimodule, $L_{A}R_{B}(X)=AXB$ and $(L_{A}R_{B})^{*}=L_{A^{*}}R_{B^{*}}$ with $A^{*}=\overline{A}^{\mathsf{T}}$; self-adjoint sandwiches are those with $A,B$ hermitian.
 
-**(c) The group algebra of a finite group.** For $A=R[G]$ with $\sigma(g)=g^{-1}$ extended $R$-linearly, the sandwich by group elements is $T_{g,h}(x)=gxh^{-1}$; the adjoint is $T_{g^{-1},h}$: the inverse in the group plays the role of $\sigma$ on the parameters.
+**(c) The group algebra of a finite group.** For $A=R[G]$ with $\sigma(g)=g^{-1}$ extended $R$-linearly, the sandwich by group elements is $L_{g}R_{h}(x)=gxh^{-1}$; the adjoint is $L_{g^{-1}}R_{h}$: the inverse in the group plays the role of $\sigma$ on the parameters.
 
 **(d) A pairing that is not balanced.** For $M=A$ with the pairing $\langle m,n\rangle=\tau(m)n$ for a linear functional $\tau$ that is not $\sigma$-stable, the right action is not adjointable by right multiplication and the theorem fails.
 
 ## Summary
 
-On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the sandwich is $(T_{a,b})^{*}=T_{\sigma(a),\sigma(b)}$. The sandwich parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the sandwiches is an involutive submodule of $E$, and the map $A\otimes_RA^{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint sandwiches are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary sandwiches are the isometries; they are exactly the sandwiches with unitary parameters when the sandwich map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(T_{a,b})^{*}=(\operatorname{im}T_{a,b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*.
+On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the sandwich is $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The sandwich parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the sandwiches is an involutive submodule of $E$, and the map $A\otimes_RA^{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint sandwiches are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary sandwiches are the isometries; they are exactly the sandwiches with unitary parameters when the sandwich map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*.
 
 ## Summary of Notation
 
@@ -165,10 +165,10 @@ On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquil
 | ${}_A M_A$ | $(A,A)$-bimodule with balanced σ-sesquilinear pairing |
 | $\langle\cdot,\cdot\rangle$ | the pairing, $\langle am,n\rangle=\langle m,\sigma(a)n\rangle$ and $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$ |
 | $L_a$, $R_b$ | left and right multiplications |
-| $T_{a,b}=L_aR_b$ | the sandwich, $T_{a,b}(x)=axb$ |
-| $T_{x,y}T_{u,v}=T_{xu,vy}$ | composition of sandwiches |
-| $(T_{a,b})^{*}=T_{\sigma(a),\sigma(b)}$ | the adjoint of the sandwich |
-| $\operatorname{im}(T_{a,b})^{\mathrm{c}}$ | paired complement of the image |
+| $L_{a}R_{b}$ | the sandwich, $L_{a}R_{b}(x)=axb$ |
+| $L_{x}R_{y}L_{u}R_{v}=L_{xu}R_{vy}$ | composition of sandwiches |
+| $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$ | the adjoint of the sandwich |
+| $\operatorname{im}(L_{a}R_{b})^{\mathrm{c}}$ | paired complement of the image |
 | $A\otimes_RA^{\mathrm{opp}}\to E$ | the sandwich representation, compatible with $\sigma\otimes\sigma$ |
 
 ## Further Reading

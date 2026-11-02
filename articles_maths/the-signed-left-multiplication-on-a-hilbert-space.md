@@ -104,7 +104,7 @@ $$
 \mathcal{T}_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
 $$
 
-and the unsigned sandwich is $T_{U,V}=L_UR_V$. So the signed sandwich is the signed right multiplication followed by the left multiplication by $U$, or equivalently the signed left multiplication followed by the right multiplication by $\alpha(V)$.
+and the unsigned sandwich is $L_{U}R_{V}$. So the signed sandwich is the signed right multiplication followed by the left multiplication by $U$, or equivalently the signed left multiplication followed by the right multiplication by $\alpha(V)$.
 
 *Proof.* $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=\mathcal{T}_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.
 

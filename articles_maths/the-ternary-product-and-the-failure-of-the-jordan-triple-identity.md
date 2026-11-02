@@ -76,7 +76,7 @@ the **left model** of *Algebraic J\*-Algebras*, the product of the algebra with 
 **Proposition (the operator of a pair).** For fixed $\tilde Q_1$ and $\tilde Q_2$, the map $\Theta_{\tilde Q_1,\tilde Q_2} : \tilde Q_3 \mapsto \{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ is $\mathbb{C}$-linear, and it is the plain left multiplication
 
 $$
-\Theta_{\tilde Q_1,\tilde Q_2} = T_{\overline{\tilde Q_2}\tilde Q_1,\,e_t} , \qquad \Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \bigl(\overline{\tilde Q_2}\,\tilde Q_1\bigr)\tilde Q_3 ,
+\Theta_{\tilde Q_1,\tilde Q_2} = L_{\overline{\tilde Q_2}\tilde Q_1}R_{\,e_t} , \qquad \Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \bigl(\overline{\tilde Q_2}\,\tilde Q_1\bigr)\tilde Q_3 ,
 $$
 
 the operator attached to the pair $(\tilde Q_1,\tilde Q_2)$ in the sense of *The Ternary Product as an Operator*. The pair map $(\tilde Q_1,\tilde Q_2)\mapsto\Theta_{\tilde Q_1,\tilde Q_2}$ is $\mathbb{C}$-linear in $\tilde Q_1$ and conjugate-linear in $\tilde Q_2$.

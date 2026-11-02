@@ -27,7 +27,7 @@ Three of the four collapse as in the complex category, and the reason is the sam
 
 **Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate, the norms and the subspaces are *$M_2(\mathbb{R})$ Hyperbolic Representation*. The polar decomposition of the algebra is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the one-sided operators in the abstract setting are *One-Sided Operators on a Clifford Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, and the commutative complex companion of this article is *Operators on the Reduced Biquaternions*.
 
-**Conventions.** The carrier has the basis $(1,j)$; a column of two real numbers is read as $x+jx'$. The operator $M_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$, $J=\begin{pmatrix}0&1\\1&0\end{pmatrix}$; $M_Q=L_Q=R_Q$. The two-sided operator is $T_{Q,P}(X)=QXP$ on the carrier and $K_{Q,P}$ on the ambient. The split form is $g=\operatorname{diag}(1,-1)$; the idempotents are $\Pi_\pm$; the coordinates are $\lambda_\pm=q\pm q'$.
+**Conventions.** The carrier has the basis $(1,j)$; a column of two real numbers is read as $x+jx'$. The operator $M_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$, $J=\begin{pmatrix}0&1\\1&0\end{pmatrix}$; $M_Q=L_Q=R_Q$. The two-sided operator is $L_{Q}R_{P}(X)=QXP$ on the carrier and $K_{Q,P}$ on the ambient. The split form is $g=\operatorname{diag}(1,-1)$; the idempotents are $\Pi_\pm$; the coordinates are $\lambda_\pm=q\pm q'$.
 
 ## The One-Sided Operators
 
@@ -115,18 +115,18 @@ The first is the boost, the second the boost composed with the reflection $J$; t
 **Definition and collapse.** For a pair $(Q,P)$,
 
 $$
-T_{Q,P}(X)=QXP,\qquad T_{Q,P}=M_{QP}=L_QR_P .
+L_{Q}R_{P}(X)=QXP,\qquad L_{Q}R_{P}=M_{QP}=L_QR_P .
 $$
 
 **The reading.** The two slots are not independent: the operator depends on the pair only through the product, and since the algebra is commutative the map $(Q,P)\mapsto QP$ is the multiplication of the algebra. So the two-sided family is the one-sided family,
 
 $$
-\{T_{Q,P}\}=\{M_{QP}\}=M(\mathbb{D}),
+\{L_{Q}R_{P}\}=\{M_{QP}\}=M(\mathbb{D}),
 $$
 
 of dimension two, and the pair is a redundant parametrisation of the algebra.
 
-**The redundancy.** For $\lambda\neq0$, $T_{\lambda Q,P/\lambda}=T_{Q,P}$; so the four real parameters of the pair fall to the two of the product, and the map from the pair to the operator has two-dimensional fibres.
+**The redundancy.** For $\lambda\neq0$, $L_{\lambda Q}R_{P/\lambda}=L_{Q}R_{P}$; so the four real parameters of the pair fall to the two of the product, and the map from the pair to the operator has two-dimensional fibres.
 
 **The sandwich.** The sandwich is the case $P=\bar Q$:
 
@@ -226,7 +226,7 @@ a sum of two orthogonal rank-one projectors on the two ambient directions $u_+\o
 
 ## The Pair as a Semigroup
 
-**Composition.** $T_{Q,P}T_{Q',P'}=T_{QQ',P'P}$, and by commutativity this is $T_{QQ'PP'}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto T_{Q,P}$ is a homomorphism of the monoid $\mathbb{D}\times\mathbb{D}$ onto the monoid $(\mathbb{D},\cdot)$, with kernel the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$, and by commutativity this is $T_{QQ'PP'}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{D}\times\mathbb{D}$ onto the monoid $(\mathbb{D},\cdot)$, with kernel the rescaling.
 
 **The units.** The invertible members are those with $QP$ a unit, and the group is
 
@@ -285,7 +285,7 @@ of rank one for every non-zero pair. The operator is described by the coefficien
 **The statement.**
 
 $$
-\ell(T_{Q,P})\in\{0,1\},\qquad \operatorname{span}\{T_{Q,P}\}=M(\mathbb{D})\cup\{0\},
+\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=M(\mathbb{D})\cup\{0\},
 $$
 
 the value $0$ only for the zero operator, and the span equal to the algebra because the algebra is a subspace closed under products.
@@ -342,7 +342,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 1. The carrier is $\mathbb{D}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
 3. The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=rM_\epsilon\exp(\phi J)$, with eigenvalues $r\epsilon_\pm e^{\pm\phi}$; the angle is full, the sign is a discrete label, and no cover appears.
-4. The two-sided operator depends on the pair only through the product, $T_{Q,P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
+4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
 5. The sandwich is a scalar on the carrier, $\Theta_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
 6. On the ambient the same formula is not scalar: $K_{Q,\bar Q}$ has eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$, doubling the rapidity on the two pure corners and killing it on the two mixed ones.
 7. The display is symmetric, of trace $4qp$, of determinant $\langle Q\rangle_{*}^{2}\langle P\rangle_{*}^{2}$ and of rank $\operatorname{rank}M_Q\operatorname{rank}M_P$, so its ladder is $\{0,1,2,4\}$.
@@ -355,7 +355,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 | Symbol | Meaning | Article |
 |---|---|---|
 | $M_Q$ | the multiplication operator $X\mapsto QX$, equal to $L_Q$ and $R_Q$ | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
-| $T_{Q,P}$ | $X\mapsto QXP$, equal to $M_{QP}$ | this article |
+| $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $M_{QP}$ | this article |
 | $\Theta_Q$ | the sandwich $QX\bar Q=\langle Q\rangle_{*}X$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)\otimes\mathsf{M}_2(Q)$ | this article |
 | $g$ | the split form $\operatorname{diag}(1,-1)$, implementing the conjugation by congruence | *$M_2(\mathbb{R})$ Hyperbolic Representation* |

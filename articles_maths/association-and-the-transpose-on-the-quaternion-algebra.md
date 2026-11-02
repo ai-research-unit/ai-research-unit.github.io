@@ -32,7 +32,7 @@ $$
 
 **Corollary (the association is immaterial).** $A$ is unchanged when the two multiplications are associated in the other order, $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm{Sc}((\tilde q_1\tilde q_2)\tilde q_3)=\mathrm{Sc}(\tilde q_1(\tilde q_2\tilde q_3))$, by associativity alone; cyclic invariance is the additional statement that the two arguments can be moved without changing the value.
 
-**Definition.** The association functional defines the **sandwich operators** $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
+**Definition.** The association functional defines the **sandwich operators** $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
 
 ## The Transposes of the One-Sided Operators
 
@@ -48,11 +48,11 @@ $$
 
 ## The Transpose of a Two-Sided Operator
 
-**Theorem.** For the sandwich $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
+**Theorem.** For the sandwich $L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
 
-$$ \boxed{\; T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4} \;} .$$
+$$ \boxed{\; L_{\tilde q_4}R_{\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4} \;} .$$
 
-*Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $T_{\tilde q_4,\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $T_{\tilde q_5,\tilde q_4}$.
+*Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $L_{\tilde q_4}R_{\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $L_{\tilde q_5}R_{\tilde q_4}$.
 
 **Corollary.** The sandwich is self-transpose exactly when $\tilde q_5\in\mathbb{R}\tilde q_4$ or $\tilde q_4\in\mathbb{R}\tilde q_5$.
 

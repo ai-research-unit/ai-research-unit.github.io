@@ -48,10 +48,10 @@ $$
 **Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is a unit, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
 
 $$
-\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}} , \qquad \bigl(T_{a,a^{-1}}\bigr)^{*}=T_{a^{-1},a}\neq T_{a,a^{-1}}\;} .
+\boxed{\;\Sigma^{\alpha}_{a,a^{-1}}=L_{a}R_{a^{-1}} , \qquad \bigl(L_{a}R_{a^{-1}}\bigr)^{*}=L_{a^{-1}}R_{a}\neq L_{a}R_{a^{-1}}\;} .
 $$
 
-**Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the sandwich is not self-adjoint. The adjoint is $T_{a^{-1},a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
+**Proof.** For the even element $a$ one has $\alpha(a)=a$, so $\alpha(a)a=a^2$. The square is computed from $a^2=(1+e_1e_2)^2=1+2e_1e_2+(e_1e_2)^2=1+2e_1e_2-1=2e_1e_2$, which is not central in the central-simple algebra $\mathrm{Cl}_4$; by the criterion the sandwich is not self-adjoint. The adjoint is $L_{a^{-1}}R_{a}$ by the general formula, with $a^{-1}=(1-e_1e_2)/2$, and the two conjugations differ: on the vector $e_1$,
 
 $$
 a\,e_1\,a^{-1}=e_2 , \qquad a^{-1}\,e_1\,a=-e_2 .
@@ -93,7 +93,7 @@ For $\mathrm{Cl}\cong\mathbb{H}$ with the quaternionic conjugation $\hat x=\bar 
 
 ### The Failure: Conjugation by an Even Element
 
-In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2$, the conjugation $\Sigma^{\alpha}_{a,a^{-1}}=T_{a,a^{-1}}$ is not self-adjoint, as displayed; it is nevertheless an isometry by the general criterion, and its adjoint is the inverse conjugation $T_{a^{-1},a}$. On the $e_1$ direction the two maps send $e_1$ to $e_2$ and $-e_2$ respectively.
+In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2$, the conjugation $\Sigma^{\alpha}_{a,a^{-1}}=L_{a}R_{a^{-1}}$ is not self-adjoint, as displayed; it is nevertheless an isometry by the general criterion, and its adjoint is the inverse conjugation $L_{a^{-1}}R_{a}$. On the $e_1$ direction the two maps send $e_1$ to $e_2$ and $-e_2$ respectively.
 
 ## Summary
 

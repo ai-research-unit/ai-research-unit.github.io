@@ -8,7 +8,7 @@ $$
 \mathrm{Ad}_x(y) = x\,y\,x^{-1}, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times},
 $$
 
-the **inner conjugation**. It is the composite $T_{x,x^{-1}} = L_xR_{x^{-1}}$, and it is the only member of the two-parameter family that is a homomorphism of the multiplicative monoid as well as of the additive group: the sandwich with two independent parameters forgets the unit, the inner conjugation fixes it and is an algebra automorphism.
+the **inner conjugation**. It is the composite $L_{x}R_{x^{-1}} = L_xR_{x^{-1}}$, and it is the only member of the two-parameter family that is a homomorphism of the multiplicative monoid as well as of the additive group: the sandwich with two independent parameters forgets the unit, the inner conjugation fixes it and is an algebra automorphism.
 
 The inner conjugation alone, however, does not carry the orthogonal group correctly. On the quadratic space it realises the isometry $v \mapsto x\,v\,x^{-1}$, and for an odd versor this is the **negative** of the reflection; the central volume element of an odd-dimensional algebra is invisible to it. The action that repairs both defects is the **twisted action** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, which differs from the inner conjugation by the parity sign and returns the reflection itself. This article treats the two maps together: the algebraic operator and its kernel, the orthogonal action, and the two-sided operators that realise the automorphisms of the algebra.
 
@@ -16,7 +16,7 @@ The sandwich and its composition law are *The Sandwich on a Clifford Algebra*; t
 
 ## The Inner Conjugation as a Two-Sided Operator
 
-**Definition.** For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **inner conjugation** by $x$ is the $F$-linear map $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$. It is the sandwich $T_{x,x^{-1}}$, and it is defined on the unit group alone, because the right factor is the inverse.
+**Definition.** For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **inner conjugation** by $x$ is the $F$-linear map $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$. It is the sandwich $L_{x}R_{x^{-1}}$, and it is defined on the unit group alone, because the right factor is the inverse.
 
 **Proposition (the automorphism).** $\mathrm{Ad}_x$ is an algebra automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$: it is $F$-linear, bijective, multiplicative, and it fixes $1$.
 
@@ -82,7 +82,7 @@ $$
 
 ## The Two-Sided Operators Realising the Automorphisms
 
-**Proposition (the inner automorphisms are sandwiches).** The map $x \mapsto \mathrm{Ad}_x$ is a surjection $\mathrm{Cl}(V,\mathfrak{Q})^{\times} \to \mathrm{Inn}(\mathrm{Cl}(V,\mathfrak{Q}))$ with kernel the central units; in the operator notation of *The Two-Sided Operators and the Spin Group* it is the restriction of the parametrisation $(a,b) \mapsto T_{a,b}$ to the diagonal pairs $b = a^{-1}$.
+**Proposition (the inner automorphisms are sandwiches).** The map $x \mapsto \mathrm{Ad}_x$ is a surjection $\mathrm{Cl}(V,\mathfrak{Q})^{\times} \to \mathrm{Inn}(\mathrm{Cl}(V,\mathfrak{Q}))$ with kernel the central units; in the operator notation of *The Two-Sided Operators and the Spin Group* it is the restriction of the parametrisation $(a,b) \mapsto L_{a}R_{b}$ to the diagonal pairs $b = a^{-1}$.
 
 **Proof.** The first statement is the exact sequence above; the second is the definition of the restriction.
 

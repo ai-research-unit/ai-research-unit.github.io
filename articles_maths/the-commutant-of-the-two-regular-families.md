@@ -6,7 +6,7 @@
 
 **What the article proves.** Three statements, and they are exact. Every left multiplication commutes with every right multiplication, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$. The commutant of the left copy is the right copy, $L(\mathbb{B})'=R(\mathbb{B})$, and the commutant of the right copy is the left copy, $R(\mathbb{B})'=L(\mathbb{B})$. The two copies meet in the scalars, $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$.
 
-**What the article does not do.** It contains no two-sided operator $T_{\tilde Q,\tilde P}$, no adjoint, no form and no example. The generation statement for the two-sided family, with its proof, is *Two-Sided Operators on the Biquaternion Algebra*; the association of the two families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*. This article is exactly its title: the commutant, and nothing else.
+**What the article does not do.** It contains no two-sided operator $L_{\tilde Q}R_{\tilde P}$, no adjoint, no form and no example. The generation statement for the two-sided family, with its proof, is *Two-Sided Operators on the Biquaternion Algebra*; the association of the two families with the plain form is *The Four Adjoints of the Biquaternion Algebra in Examples*. This article is exactly its title: the commutant, and nothing else.
 
 **The letters.** The left operator is $L_{\tilde Q}$, the right operator is $R_{\tilde P}$, and the argument is $X$. The prime is the commutant: for a set $\mathcal{S}$ of operators, $\mathcal{S}'=\{T:TS=ST\ \text{for every}\ S\in\mathcal{S}\}$. The conventions of the four letters and the set names are *Operator Family Conventions*.
 

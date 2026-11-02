@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. In the companion article *The CPT Theorem in Biquaternionic Form* it is built explicitly on the spinor module, $C[\psi]=i\mathsf C_2\psi^{*}$, and its internal matrix is found to be an **odd** Clifford element with no representative in the biquaternion algebra. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that can be the identity on some representations is a symmetry that is not a symmetry of those states, and the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $\pi^0$, the $\eta$, the $\phi$, the $Z$ boson, and the neutral members of isomultiplets whose charge-conjugation phase is real.
+Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. In the companion article *The CPT Theorem in Biquaternionic Form* it is built explicitly on the spinor module, $C[\psi]=i\,iL_{e_y}R_{e_y}\psi^{*}$, and its internal matrix is found to be an **odd** Clifford element with no representative in the biquaternion algebra. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that can be the identity on some representations is a symmetry that is not a symmetry of those states, and the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $\pi^0$, the $\eta$, the $\phi$, the $Z$ boson, and the neutral members of isomultiplets whose charge-conjugation phase is real.
 
 The classification of the algebra literature answers the question with a single algebraic datum. Charge conjugation is the **pseudoautomorphism** $\bar{A}=\Pi A^{*}\Pi^{-1}$ of a real Clifford algebra $\mathrm{Cl}_{n,m}$, and the matrix $\Pi$ that implements it is fixed by the **division ring** $K$ of the algebra: over a real division ring $K\cong\mathbb{R}$ the matrix is proportional to the identity, so the map is trivial; over a quaternionic division ring $K\cong\mathbb{H}$ it is a genuine product of generators, so the map is the particle–antiparticle interchange. The division ring, in other words, is what decides whether a particle can be its own antiparticle.
 
 The article is organised as follows. A first section recalls the pseudoautomorphism and its matrix. A second states the division-ring trichotomy and computes $C^{2}$ in each case. A third reads the trichotomy as the three classes of particles, charged, neutral and truly neutral, and identifies the biquaternion algebra's place in it. A fourth section separates what the framework supplies from what it transcribes, and a closing section lists the open questions.
 
-- Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit $C[\psi]=i\mathsf C_2\psi^{*}$ and for the Clifford classification of the operations as the fundamental automorphisms and the charge-conjugation pseudoautomorphism.
+- Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit $C[\psi]=i\,iL_{e_y}R_{e_y}\psi^{*}$ and for the Clifford classification of the operations as the fundamental automorphisms and the charge-conjugation pseudoautomorphism.
 - The mathematics articles *Division Rings*, *Central Simple Algebras and the Brauer Group* and *The Brauer Wall Group and the Eightfold Way*, for the division ring as an isomorphism invariant of a real or complex algebra.
 - The mathematics article *List of Clifford Algebras and Spin Groups*, for the classification $\mathrm{Cl}_{n,m}$ by $n-m\bmod 8$ that the trichotomy below uses.
 - Companion article *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint*, for reality conditions and real structures on the algebra.
@@ -22,13 +22,13 @@ $$
 \boxed{\;A\;\longmapsto\;\bar{A}=\Pi\,A^{*}\,\Pi^{-1}\;},
 $$
 
-the complex conjugation of the algebra element followed by the inner automorphism by a matrix $\Pi$. Two features make it a pseudoautomorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. First, it is **conjugate-linear**: it contains $A^{*}$, and no automorphism of the real algebra does. Second, the matrix $\Pi$ does not preserve the real subalgebra; it conjugates the generators with a sign, $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ being the generators of the cell frame, with $T_{a,b}\psi=a\psi b$,
+the complex conjugation of the algebra element followed by the inner automorphism by a matrix $\Pi$. Two features make it a pseudoautomorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. First, it is **conjugate-linear**: it contains $A^{*}$, and no automorphism of the real algebra does. Second, the matrix $\Pi$ does not preserve the real subalgebra; it conjugates the generators with a sign, $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ being the generators of the cell frame, with $L_{a}R_{b}\psi=a\psi b$,
 
 $$
-\Pi\,\mathsf C_\mu\,\Pi^{-1}=-\mathsf C_\mu,
+\Pi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}},
 $$
 
-which is the property that distinguishes it from the inner automorphisms implementing $P$ and $T$. The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$, with $\Pi$ the algebra-level charge-conjugation matrix and $\eta_C=i\mathsf C_2=-T_{e_y,e_y}$ its module representative up to a phase; because $\Pi$ is determined only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
+which is the property that distinguishes it from the inner automorphisms implementing $P$ and $T$. The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$, with $\Pi$ the algebra-level charge-conjugation matrix and $\eta_C=i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ its module representative up to a phase; because $\Pi$ is determined only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
 
 ### The Action on Spinors
 
@@ -104,7 +104,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 **Established, and recomputed.**
 
-- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\mathsf C_\mu\Pi^{-1}=-\mathsf C_\mu$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
+- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\PiiL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
 - The twice-conjugated spinor is $\bar{\bar{\xi}}_{\alpha}=\pm\xi_{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
 - Over a real division ring the matrix is $\Pi\propto I$ and the pseudoautomorphism is the identity; the corresponding particles are truly neutral. The three charge classes $+1$, $0$, $\bar{0}$ are respectively the complex representations, the real quaternionic representations, and the real representations of real type.
 
@@ -145,12 +145,12 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
 | $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
-| $\Pi$ | Charge-conjugation matrix; $\Pi\mathsf C_\mu\Pi^{-1}=-\mathsf C_\mu$, fixed only up to a scalar |
-| $\mathsf C_0=iT_{e_t,e_x}$, $\mathsf C_k=iT_{e_k,e_y}$ | Generators of the cell frame, $\mathsf C_0^2=T_{e_t,e_t}$, $\mathsf C_k^2=-T_{e_t,e_t}$ |
-| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $T_{a,b}=L_aR_b$ | One-sided multipliers and two-sided cells; $T_{a,b}\psi=a\psi b$, $i\mathsf C_2=-T_{e_y,e_y}$ |
+| $\Pi$ | Charge-conjugation matrix; $\PiiL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, fixed only up to a scalar |
+| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Generators of the cell frame, $(iR_{e_x})^{2}=L_{e_t}R_{e_t}$, $(iL_{e_k}R_{e_y})^{2}=-L_{e_t}R_{e_t}$ |
+| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}$ | One-sided multipliers and two-sided cells; $L_{a}R_{b}\psi=a\psi b$, $i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ |
 | $\bar{\xi}_{\bar\alpha}=\sum_\alpha\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
 | $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
-| $C[\psi]=i\mathsf C_2\psi^{*}=-T_{e_y,e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
+| $C[\psi]=i\,iL_{e_y}R_{e_y}\psi^{*}=-L_{e_y}R_{e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
 | $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

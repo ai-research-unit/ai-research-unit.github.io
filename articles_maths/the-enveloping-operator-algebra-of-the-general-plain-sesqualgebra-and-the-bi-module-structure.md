@@ -6,7 +6,7 @@ An algebra acts on itself from the left and from the right, and the algebra in w
 
 The **general plain sesqualgebra** is one of those other structures, and the naive envelope of its multiplication is unavailable: the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ is neither associative nor left-unital, so the left regular map $\tilde Q_6\mapsto L_{\tilde Q_6}$, $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\star\tilde Q_3$, is not multiplicative and no algebra structure on the parameter space presents it. What the block does carry is a **sandwich**: the operator $\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2$ is unambiguous, because the plain product of $\mathbb{B}$ is associative, and pairs $(\tilde Q_1,\tilde Q_2)$ therefore parametrise $\mathbb{C}$-linear operators even though the product $\tilde Q_1\star\tilde Q_2$ does not. This article reads the block's operators through that sandwich, and its three results are the following.
 
-The first is that the block's **one-sided families generate the operator algebra in pairs**. A single left multiplication $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\tilde Q_3^{*}$ is conjugate-linear and lies outside the $\mathbb{C}$-linear operators, but the composite of two is the ordinary two-sided multiplication, $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$; the $\mathbb{C}$-linear operators produced by the block's own one-sided multiplications therefore fill the enveloping algebra of the underlying algebra, and it is $\mathbb{B}^{\mathrm e}$ again. The block does not add an algebra to the envelope; it adds a **reading** of it, and the reading is what the two other results make precise.
+The first is that the block's **one-sided families generate the operator algebra in pairs**. A single left multiplication $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\tilde Q_3^{*}$ is conjugate-linear and lies outside the $\mathbb{C}$-linear operators, but the composite of two is the ordinary two-sided multiplication, $L_{\tilde Q_6}L_{\tilde Q_4}=L_{\tilde Q_6}R_{\tilde Q_4^{*}}$; the $\mathbb{C}$-linear operators produced by the block's own one-sided multiplications therefore fill the enveloping algebra of the underlying algebra, and it is $\mathbb{B}^{\mathrm e}$ again. The block does not add an algebra to the envelope; it adds a **reading** of it, and the reading is what the two other results make precise.
 
 The second is the **sandwich monoid**. The conjugate-indexed parametrisation $(\tilde Q_1,\tilde Q_2)\mapsto W_{\tilde Q_1,\tilde Q_2}$, $W_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the **decomposable** operators, a proper submonoid of the endomorphism monoid whose **span** is the whole endomorphism algebra; the multiplication of the block is the value of the sandwich at the unit, $\tilde Q_1\star\tilde Q_2=W_{\tilde Q_1,\tilde Q_2}(e_t)$.
 
@@ -20,22 +20,22 @@ $$
 the block's one-sided multiplications, conjugate-linear and linear, and
 
 $$
-T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2,\qquad
+L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2,\qquad
 \mathcal{T}_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*},
 $$
 
-the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$, $R_{\tilde Q_6}R_{\tilde Q_4}=R_{\tilde Q_6\tilde Q_4}$, $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\tilde Q_6\tilde Q_4}$ and $R_{\tilde Q_4}L_{\tilde Q_6}=\mathcal{T}_{\tilde Q_6,\tilde Q_4}$ of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*. A Hermitian idempotent is an idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_t-\tilde\Pi$ is its complement, and $\tilde\Pi_+=\tilde\Pi$, $\tilde\Pi_-=\tilde\Pi^{\perp}$.
+the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde Q_6}L_{\tilde Q_4}=L_{\tilde Q_6}R_{\tilde Q_4^{*}}$, $R_{\tilde Q_6}R_{\tilde Q_4}=R_{\tilde Q_6\tilde Q_4}$, $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\tilde Q_6\tilde Q_4}$ and $R_{\tilde Q_4}L_{\tilde Q_6}=\mathcal{T}_{\tilde Q_6,\tilde Q_4}$ of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*. A Hermitian idempotent is an idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_t-\tilde\Pi$ is its complement, and $\tilde\Pi_+=\tilde\Pi$, $\tilde\Pi_-=\tilde\Pi^{\perp}$.
 
 ## The Sandwich and the Two-Sided Multiplications
 
 ### The Families and Their Parities
 
-The block's one-sided multiplications are of opposite $\mathbb{C}$-parity: $L_{\tilde Q_6}$ is conjugate-linear and $R_{\tilde Q_6}$ is linear, and a single one of them is therefore not an element of a complex-algebra representation of $\mathbb{B}$ (*The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Obstruction to a Single Linear Representation*). The two two-sided families are of one parity each without exception: $T_{\tilde Q_1,\tilde Q_2}$ is $\mathbb{C}$-linear and $\mathcal{T}_{\tilde Q_1,\tilde Q_2}$ is $\mathbb{C}$-conjugate-linear, and the difference between them is whether the involution acts.
+The block's one-sided multiplications are of opposite $\mathbb{C}$-parity: $L_{\tilde Q_6}$ is conjugate-linear and $R_{\tilde Q_6}$ is linear, and a single one of them is therefore not an element of a complex-algebra representation of $\mathbb{B}$ (*The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Obstruction to a Single Linear Representation*). The two two-sided families are of one parity each without exception: $L_{\tilde Q_1}R_{\tilde Q_2}$ is $\mathbb{C}$-linear and $\mathcal{T}_{\tilde Q_1,\tilde Q_2}$ is $\mathbb{C}$-conjugate-linear, and the difference between them is whether the involution acts.
 
 **Remark (which product uses which).** The block multiplies by the conjugate in the second slot, so its own two-sided operator carries the involution on the right factor, and the passage from $T$ to $S$ is the insertion of $\eta$:
 
 $$
-\mathcal{T}_{\tilde Q_1,\tilde Q_2}=W_{\tilde Q_1,\tilde Q_2}\circ\eta=\eta\circ T_{\tilde Q_2,\tilde Q_1^{*}},\qquad W_{\tilde Q_1,\tilde Q_2}=T_{\tilde Q_1,\tilde Q_2^{*}} .
+\mathcal{T}_{\tilde Q_1,\tilde Q_2}=W_{\tilde Q_1,\tilde Q_2}\circ\eta=\eta\circ L_{\tilde Q_2}R_{\tilde Q_1^{*}},\qquad W_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2^{*}} .
 $$
 
 So the block's family is the ordinary two-sided multiplication read with the conjugate in the second parameter.
@@ -45,11 +45,11 @@ So the block's family is the ordinary two-sided multiplication read with the con
 **Theorem.** For all $\tilde Q_1,\tilde Q_2,\tilde{Q}_5,\tilde Q_7$,
 
 $$
-\boxed{\; T_{\tilde Q_1,\tilde Q_2}\,T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2} , \qquad
-\mathcal{T}_{\tilde Q_1,\tilde Q_2}\,\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} \;}.
+\boxed{\; L_{\tilde Q_1}R_{\tilde Q_2}\,L_{\tilde{Q}_5}R_{\tilde Q_7}=L_{\tilde Q_1\tilde{Q}_5}R_{\tilde Q_7\tilde Q_2} , \qquad
+\mathcal{T}_{\tilde Q_1,\tilde Q_2}\,\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}=L_{\tilde Q_1\tilde Q_7}R_{(\tilde Q_2\tilde{Q}_5)^{*}}=W_{\tilde Q_1\tilde Q_7,\tilde Q_2\tilde{Q}_5} \;}.
 $$
 
-**Proof.** For the first, $T_{\tilde Q_1,\tilde Q_2}(T_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=\tilde Q_1(\tilde{Q}_5\tilde Q_3\tilde Q_7)\tilde Q_2=\tilde Q_1\tilde{Q}_5\,\tilde Q_3\,\tilde Q_7\tilde Q_2$. For the second, $\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})=\tilde Q_1(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})^{*}\tilde Q_2^{*}=\tilde Q_1\tilde Q_7\tilde Q_3\tilde{Q}_5^{*}\tilde Q_2^{*}=T_{\tilde Q_1\tilde Q_7,\tilde{Q}_5^{*}\tilde Q_2^{*}}(\tilde Q_3)$, and $\tilde{Q}_5^{*}\tilde Q_2^{*}=(\tilde Q_2\tilde{Q}_5)^{*}$.
+**Proof.** For the first, $L_{\tilde Q_1}R_{\tilde Q_2}(L_{\tilde{Q}_5}R_{\tilde Q_7}(\tilde Q_3))=\tilde Q_1(\tilde{Q}_5\tilde Q_3\tilde Q_7)\tilde Q_2=\tilde Q_1\tilde{Q}_5\,\tilde Q_3\,\tilde Q_7\tilde Q_2$. For the second, $\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}(\tilde Q_3))=\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})=\tilde Q_1(\tilde{Q}_5\tilde Q_3^{*}\tilde Q_7^{*})^{*}\tilde Q_2^{*}=\tilde Q_1\tilde Q_7\tilde Q_3\tilde{Q}_5^{*}\tilde Q_2^{*}=L_{\tilde Q_1\tilde Q_7}R_{\tilde{Q}_5^{*}\tilde Q_2^{*}}(\tilde Q_3)$, and $\tilde{Q}_5^{*}\tilde Q_2^{*}=(\tilde Q_2\tilde{Q}_5)^{*}$.
 
 **Remark (the reversal).** The first law multiplies the two first parameters in the forward order and the two second parameters in the **reverse** order. The reversal is forced by the association of the plain product, and it is the reason the second tensor factor of the enveloping algebra is written with an $\mathrm{opp}$: the two-sided multiplications are the elementary elements of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$. The block's own family, carrying the involution, is treated in §*The Conjugate-Indexed Family and the Sandwich Monoid*.
 
@@ -60,7 +60,7 @@ $$
 **Definition.** For $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ set
 
 $$
-W_{\tilde Q_1,\tilde Q_2}=T_{\tilde Q_1,\tilde Q_2^{*}},\qquad W_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\,\tilde Q_3\,\tilde Q_2^{*} .
+W_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2^{*}},\qquad W_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\,\tilde Q_3\,\tilde Q_2^{*} .
 $$
 
 The family is the ordinary two-sided multiplications read with the conjugate in the second parameter, and it is the family the block's product produces: $\tilde Q_1\star\tilde Q_2=W_{\tilde Q_1,\tilde Q_2}(e_t)$.
@@ -75,7 +75,7 @@ $$
 W_{\tilde Q_1,\tilde Q_2}\,W_{\tilde{Q}_5,\tilde Q_7}=W_{\tilde Q_1\tilde{Q}_5,\tilde Q_2\tilde Q_7} .
 $$
 
-**Proof.** $W_{\tilde Q_1,\tilde Q_2}W_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1,\tilde Q_2^{*}}T_{\tilde{Q}_5,\tilde Q_7^{*}}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7^{*}\tilde Q_2^{*}}=T_{\tilde Q_1\tilde{Q}_5,(\tilde Q_2\tilde Q_7)^{*}}=W_{\tilde Q_1\tilde{Q}_5,\tilde Q_2\tilde Q_7}$, by the law of §*The Composition of the Two-Sided Multiplications*.
+**Proof.** $W_{\tilde Q_1,\tilde Q_2}W_{\tilde{Q}_5,\tilde Q_7}=L_{\tilde Q_1}R_{\tilde Q_2^{*}}L_{\tilde{Q}_5}R_{\tilde Q_7^{*}}=L_{\tilde Q_1\tilde{Q}_5}R_{\tilde Q_7^{*}\tilde Q_2^{*}}=L_{\tilde Q_1\tilde{Q}_5}R_{(\tilde Q_2\tilde Q_7)^{*}}=W_{\tilde Q_1\tilde{Q}_5,\tilde Q_2\tilde Q_7}$, by the law of §*The Composition of the Two-Sided Multiplications*.
 
 **Remark (why the law is forward).** The involution in the second slot reverses the order once, and the composition of the plain two-sided multiplications reverses it once; the two reversals cancel. This is the operator form of the product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ read with the conjugate in the parameter: the antilinearity of $W$ in the second parameter absorbs exactly the reversal of the composition law.
 
@@ -107,7 +107,7 @@ D\colon\tilde Q_3\longmapsto\tilde\Pi_+\tilde Q_3\tilde\Pi_++\tilde\Pi_-\tilde Q
 $$
 is the sum of the two independent elementary tensors $E_{11}\otimes E_{11}^{\mathrm{opp}}+E_{22}\otimes E_{22}^{\mathrm{opp}}$, and it is not one of them. Indeed if $D(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$ for all $\tilde Q_3$, then $D(E_{11})=E_{11}$ forces the first column of $P$ and the first row of $Q$ to be nonzero, $D(E_{12})=0$ then forces the second row of $Q$ to vanish, and $D(E_{22})=E_{22}$ forces that row to be nonzero: a contradiction. The span of the image is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because the elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ over the basis are a basis of $\mathbb{B}^{\mathrm e}$, which is the dimension count of §*The Enveloping Algebra*. Finally $W_{\tilde Q_1,\tilde Q_2}$ is invertible exactly when $\tilde Q_1$ and $\tilde Q_2$ are, by the criterion of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*, transported to $W_{\tilde Q_1,\tilde Q_2}=\mathcal{T}_{\tilde Q_1,\tilde Q_2^{*}}$, so the units of the image are the classes of the pairs of units, the quotient displayed.
 
-**Remark (the same statement for the family $T$).** The two parametrisations are exchanged by the involution of the second factor, $W_{\tilde Q_1,\tilde Q_2}=T_{\tilde Q_1,\tilde Q_2^{*}}$, so the statement for $T$ is the same with the kernel $\{(\lambda e_t,\lambda^{-1}e_t)\}$, the two diagonals being exchanged by the involution of the second coordinate; the image is the same submonoid of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the quotient is the same monoid.
+**Remark (the same statement for the family $T$).** The two parametrisations are exchanged by the involution of the second factor, $W_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2^{*}}$, so the statement for $T$ is the same with the kernel $\{(\lambda e_t,\lambda^{-1}e_t)\}$, the two diagonals being exchanged by the involution of the second coordinate; the image is the same submonoid of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the quotient is the same monoid.
 
 **Remark (the value at the unit).** The multiplication is the diagonal of the sandwich evaluated at the unit, $\tilde Q_1\star\tilde Q_2=W_{\tilde Q_1,\tilde Q_2}(e_t)$, and the two terms of the associator are the two ways of composing the parameters before the evaluation,
 
@@ -131,7 +131,7 @@ $$
 with multiplication the tensor product of the plain multiplications, $(\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}})(\tilde{Q}_5\otimes\tilde Q_7^{\mathrm{opp}})=\tilde Q_1\tilde{Q}_5\otimes(\tilde Q_7\tilde Q_2)^{\mathrm{opp}}$, and unit $e_t\otimes e_t^{\mathrm{opp}}$. It has complex dimension $16$, and it acts on $\mathbb{B}$ by the **sandwich action**
 
 $$
-(\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}})\cdot\tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2=T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3).
+(\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}})\cdot\tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2=L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q_3).
 $$
 
 **Remark (why the envelope is the algebra's).** The block's multiplication is neither associative nor left-unital, so it produces no algebra structure on $\mathbb{B}$ and no envelope of its own; what it produces is the family of sandwich operators, and those operators are the elementary elements of the envelope of the underlying plain product. The block's own multiplication is recovered from the envelope together with the involution, $\star=m\circ(\mathrm{id}\otimes\eta)$, $m$ being the plain multiplication read as $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to\mathbb{B}$, and this is stated as the comparison of §*The Comparison with the Algebra*.
@@ -146,7 +146,7 @@ $$
 
 so that $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the left action of $\mathbb{B}^{\mathrm e}$ on $\mathbb{B}$ is faithful and exhausts all $\mathbb{C}$-linear operators.
 
-**Proof.** This is the theorem of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Enveloping Algebra*, whose algebra is the same $\mathbb{B}$ with the same plain product; the proof there runs on the matrix units of $\mathbb{B}\cong M_2(\mathbb{C})$ and applies here without change. In particular the two-sided multiplications $T_{\tilde Q_1,\tilde Q_2}$ are the elementary tensors, and they span the whole endomorphism algebra, which is the spanning statement used in §*The Sandwich Monoid*.
+**Proof.** This is the theorem of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Enveloping Algebra*, whose algebra is the same $\mathbb{B}$ with the same plain product; the proof there runs on the matrix units of $\mathbb{B}\cong M_2(\mathbb{C})$ and applies here without change. In particular the two-sided multiplications $L_{\tilde Q_1}R_{\tilde Q_2}$ are the elementary tensors, and they span the whole endomorphism algebra, which is the spanning statement used in §*The Sandwich Monoid*.
 
 ### The Block's Operators in the Envelope
 
@@ -162,7 +162,7 @@ where $\varphi(\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}})$ is the sandwich acti
 
 **Proof.** $\varphi(e_t\otimes(\tilde Q_6^{*})^{\mathrm{opp}})(\tilde Q_3)=e_t\tilde Q_3\tilde Q_6^{*}=\tilde Q_3\tilde Q_6^{*}=R_{\tilde Q_6}(\tilde Q_3)$, so the right multiplications are the envelope's right-sided elements with the conjugated parameter. The sandwich $\Theta_{\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}=\tilde Q_2\tilde Q_3\tilde Q_2^{*}$ is $\varphi(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}})$, the elementary tensor whose two parameters are conjugate. Finally $\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})(\tilde Q_3)=\tilde Q_6\tilde Q_3$, so $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\tilde Q_3^{*}=(\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})\circ\eta)(\tilde Q_3)$.
 
-**Remark (the pair generation).** The corollary explains the block's composition laws. The product of two right multiplications stays among the envelope's right-sided elements, $R_{\tilde Q_6}R_{\tilde Q_4}=\varphi(e_t\otimes(\tilde Q_4^{*}\tilde Q_6^{*})^{\mathrm{opp}})=R_{\tilde Q_6\tilde Q_4}$; the product of two left multiplications leaves the conjugate-linear operators and is the elementary tensor $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$, that is $\varphi(\tilde Q_6\otimes\tilde Q_4^{\mathrm{opp}})$ read with the conjugated parameter; and a mixed product is a left multiplication or a sandwich according to the order. So the even products of the block's own one-sided multiplications span the envelope, and a single one-sided multiplication never lies in it: a single one is not $\mathbb{C}$-linear, and the pairs are. In the notation of §*The Conjugate-Indexed Family and the Sandwich Monoid*, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$, $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$ and $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$.
+**Remark (the pair generation).** The corollary explains the block's composition laws. The product of two right multiplications stays among the envelope's right-sided elements, $R_{\tilde Q_6}R_{\tilde Q_4}=\varphi(e_t\otimes(\tilde Q_4^{*}\tilde Q_6^{*})^{\mathrm{opp}})=R_{\tilde Q_6\tilde Q_4}$; the product of two left multiplications leaves the conjugate-linear operators and is the elementary tensor $L_{\tilde Q_6}L_{\tilde Q_4}=L_{\tilde Q_6}R_{\tilde Q_4^{*}}$, that is $\varphi(\tilde Q_6\otimes\tilde Q_4^{\mathrm{opp}})$ read with the conjugated parameter; and a mixed product is a left multiplication or a sandwich according to the order. So the even products of the block's own one-sided multiplications span the envelope, and a single one-sided multiplication never lies in it: a single one is not $\mathbb{C}$-linear, and the pairs are. In the notation of §*The Conjugate-Indexed Family and the Sandwich Monoid*, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$, $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$ and $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$.
 
 ### The Base Field and the Real Dimension Count
 
@@ -265,16 +265,16 @@ The algebra records a question of which of the two regular actions carries a giv
 
 The claims of the article were recomputed on the model $\mathsf{M}_2$ at no more than one hundred samples per claim.
 
-- **The composition laws.** The laws $T_{\tilde Q_1,\tilde Q_2}T_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde{Q}_5,\tilde Q_7\tilde Q_2}$, $W_{\tilde Q_1,\tilde Q_2}W_{\tilde{Q}_5,\tilde Q_7}=W_{\tilde Q_1\tilde{Q}_5,\tilde Q_2\tilde Q_7}$, $\mathcal{T}_{\tilde Q_1,\tilde Q_2}\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}=T_{\tilde Q_1\tilde Q_7,(\tilde Q_2\tilde{Q}_5)^{*}}$ and the four laws of *The Left and Right Multiplications of the Biquaternion Sesqualgebra* were verified with residual at most $2\cdot10^{-13}$ on a hundred quadruples each.
+- **The composition laws.** The laws $L_{\tilde Q_1}R_{\tilde Q_2}L_{\tilde{Q}_5}R_{\tilde Q_7}=L_{\tilde Q_1\tilde{Q}_5}R_{\tilde Q_7\tilde Q_2}$, $W_{\tilde Q_1,\tilde Q_2}W_{\tilde{Q}_5,\tilde Q_7}=W_{\tilde Q_1\tilde{Q}_5,\tilde Q_2\tilde Q_7}$, $\mathcal{T}_{\tilde Q_1,\tilde Q_2}\mathcal{T}_{\tilde{Q}_5,\tilde Q_7}=L_{\tilde Q_1\tilde Q_7}R_{(\tilde Q_2\tilde{Q}_5)^{*}}$ and the four laws of *The Left and Right Multiplications of the Biquaternion Sesqualgebra* were verified with residual at most $2\cdot10^{-13}$ on a hundred quadruples each.
 - **The monoid kernel.** The scaling $(\tilde Q_1,\tilde Q_2)\mapsto(\lambda\tilde Q_1,\overline{\lambda}^{-1}\tilde Q_2)$ leaves $W_{\tilde Q_1,\tilde Q_2}$ unchanged on a hundred random pairs and scalars, with residual at most $5\cdot10^{-16}$, and the operator is the identity exactly on that set, as the theorem states.
-- **The span.** The complex span of the sixteen operators $T_{e_\mu,e_\nu}$ over the basis is all of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and the real span of the sandwich operators over the real basis is thirty-two.
+- **The span.** The complex span of the sixteen operators $L_{e_\mu}R_{e_\nu}$ over the basis is all of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and the real span of the sandwich operators over the real basis is thirty-two.
 - **The properness of the image.** The operator $D(\tilde Q_3)=E_{11}\tilde Q_3E_{11}+E_{22}\tilde Q_3E_{22}$ has coefficient matrix $\operatorname{diag}(1,0,0,1)$ of rank two in the tensor basis $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$, so it is not an elementary tensor; and the equations of the proof were checked on the matrix units, where $PE_{11}Q=E_{11}$ forces the first column of $P$ and the first row of $Q$ nonzero, $PE_{12}Q=0$ then forces the second row of $Q$ to vanish, and $PE_{22}Q=E_{22}$ forces it not to.
-- **The envelope axioms.** The sandwich action is a left action (residual zero on a hundred triples), the unit acts as the identity, the map $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, and the identity operator is $T_{e_t,e_t}$.
+- **The envelope axioms.** The sandwich action is a left action (residual zero on a hundred triples), the unit acts as the identity, the map $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, and the identity operator is $L_{e_t}R_{e_t}$.
 - **The block's operators in the envelope.** The identities $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$, $\Theta_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$, $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$ and the witness $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_z$, $R_{\vec e_y}L_{\vec e_x}(e_t)=-\vec e_z$ were each verified with residual zero.
 
 ## Summary
 
-The block's one-sided multiplications are of opposite $\mathbb{C}$-parity, and a single one lies outside the $\mathbb{C}$-linear operators, but the product of two lies inside: $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$, and the products of the block's own one-sided multiplications fill the enveloping algebra of the underlying plain product.
+The block's one-sided multiplications are of opposite $\mathbb{C}$-parity, and a single one lies outside the $\mathbb{C}$-linear operators, but the product of two lies inside: $L_{\tilde Q_6}L_{\tilde Q_4}=L_{\tilde Q_6}R_{\tilde Q_4^{*}}$, and the products of the block's own one-sided multiplications fill the enveloping algebra of the underlying plain product.
 
 The parametrisation $(\tilde Q_1,\tilde Q_2)\mapsto W_{\tilde Q_1,\tilde Q_2}$, $W_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the decomposable operators, a proper submonoid of the endomorphism monoid whose span is the whole endomorphism algebra; the block's product is the value of the sandwich at the unit, $\tilde Q_1\star\tilde Q_2=W_{\tilde Q_1,\tilde Q_2}(e_t)$. The parametrisation is $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so its envelope is $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$, the second factor conjugated and isomorphic to $\mathbb{B}^{\mathrm{opp}}$.
 
@@ -287,9 +287,9 @@ The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquilinear product, the multiplication of the block |
 | $\eta(\tilde Q_3)=\tilde Q_3^{*}$ | the involution as an operator |
 | $L_{\tilde Q_6},R_{\tilde Q_6}$ | the block's one-sided multiplications, conjugate-linear and linear |
-| $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$ | the ordinary two-sided multiplication, $\mathbb{C}$-linear |
+| $L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$ | the ordinary two-sided multiplication, $\mathbb{C}$-linear |
 | $\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*}$ | the sandwich, $\mathbb{C}$-conjugate-linear |
-| $W_{\tilde Q_1,\tilde Q_2}=T_{\tilde Q_1,\tilde Q_2^{*}}$ | the conjugate-indexed family, the block's own sandwich |
+| $W_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2^{*}}$ | the conjugate-indexed family, the block's own sandwich |
 | $\Theta_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$ | the two-sided operator $\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}$, the diagonal |
 | $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ | the enveloping algebra of the block, with the sandwich action |
 | $\overline{\mathbb{B}}$ | the conjugate algebra, $\overline{\mathbb{B}}\cong\mathbb{B}^{\mathrm{opp}}$ by $\tilde Q_2\mapsto\tilde Q_2^{*}$ |

@@ -25,7 +25,7 @@ The adjoint exchanges the two parameters and conjugates them; it is an involutio
 
 The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternion*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_3=\tilde Q\tilde Q_3^{*}$. The sandwich is $\mathcal{T}_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ and the ordinary two-sided multiplication is $T_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_3$.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_3=\tilde Q\tilde Q_3^{*}$. The sandwich is $\mathcal{T}_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ and the ordinary two-sided multiplication is $L_{\tilde Q}R_{\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_3$.
 
 ## The Hermitian Form and the Adjoint
 
@@ -63,7 +63,7 @@ for all $\tilde Q_1,\tilde Q_2$. For a linear operator $T$ the adjoint is define
 
 ### The General Theorem
 
-**Theorem.** For the standard model $a\star x\star b=ax^{*}b$ of *The Sesquilinear Adjoint Operator*, the adjoint of the sandwich $\mathcal{T}_{a,b}(x)=ax^{*}b$ is $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$; for the ordinary two-sided multiplication $T_{p,q}(x)=pxq$ the adjoint is $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$.
+**Theorem.** For the standard model $a\star x\star b=ax^{*}b$ of *The Sesquilinear Adjoint Operator*, the adjoint of the sandwich $\mathcal{T}_{a,b}(x)=ax^{*}b$ is $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$; for the ordinary two-sided multiplication $L_{p}R_{q}(x)=pxq$ the adjoint is $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$.
 
 **Proof.** These are the two computations of *The Sesquilinear Adjoint Operator*, §*The Sandwich and the Two-Sided Multiplication*, with the trace functional $\tau$ of that article read as the scalar part $\mathrm{Sc}$ here, the datum $(\mathbb{C},\varsigma)$ being the conjugation on the scalars; the compatibility $\mathrm{Sc}(\tilde Q_5^{*})=\overline{\mathrm{Sc}(\tilde Q_5)}$ and the centrality $\mathrm{Sc}(\tilde Q_5\tilde Q_4)=\mathrm{Sc}(\tilde Q_4\tilde Q_5)$ are the properties of the scalar part, and the pairings are perfect by §*The Form*.
 
@@ -136,10 +136,10 @@ $$
 **Theorem.** For the left multiplication, the right multiplication and the ordinary two-sided multiplication,
 
 $$
-\boxed{\;L_{\tilde Q}^{\dagger}=\mathcal{T}_{e_t,\tilde Q^{*}} , \qquad R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3} , \qquad T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}}\;}.
+\boxed{\;L_{\tilde Q}^{\dagger}=\mathcal{T}_{e_t,\tilde Q^{*}} , \qquad R_{\tilde Q_3}^{\dagger}=L_{e_t}R_{\tilde Q_3} , \qquad L_{\tilde Q}R_{\tilde Q_3}^{\dagger}=L_{\tilde Q^{*}}R_{\tilde Q_3^{*}}\;}.
 $$
 
-**Proof.** The left multiplication is the sandwich $\mathcal{T}_{\tilde Q,e_t}$, so the main identity gives $L_{\tilde Q}^{\dagger}=\mathcal{T}_{e_t,\tilde Q^{*}}$. The right multiplication is linear and equals $T_{e_t,\tilde Q_3^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
+**Proof.** The left multiplication is the sandwich $\mathcal{T}_{\tilde Q,e_t}$, so the main identity gives $L_{\tilde Q}^{\dagger}=\mathcal{T}_{e_t,\tilde Q^{*}}$. The right multiplication is linear and equals $L_{e_t}R_{\tilde Q_3^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
 
 **Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $\mathcal{T}_{e_t,\tilde Q^{*}}$ is the map $\tilde Q_1\mapsto\tilde Q_1^{*}\tilde Q$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde Q^{*}}L_{e_t}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
 
@@ -173,7 +173,7 @@ which is the sandwich of the adjoint parameters, the two matrices exchanged and 
 
 ## Summary
 
-With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the adjoint of the sandwich $\mathcal{T}_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ is $\mathcal{T}_{\tilde Q,\tilde Q_3}^{\dagger}=\mathcal{T}_{\tilde Q_3^{*},\tilde Q^{*}}$: the adjoint stars the two parameters and exchanges them, satisfies the identity $\varphi(\mathcal{T}_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,\mathcal{T}_{\tilde Q_3^{*},\tilde Q^{*}}\tilde Q_2)}$, and is an involution on the sandwich family. The self-adjoint sandwiches are the sandwiches with conjugate parameters, $\mathcal{T}_{\tilde Q,\tilde Q^{*}}=\tilde Q(\cdot)^{*}\tilde Q$, and the involution $\mathcal{T}_{e_t,e_t}={}^{*}$ and the quadratic representation $\mathcal{T}_{\tilde Q_3,\tilde Q_3^{*}}$ of the ternary product are the two distinguished cases. The left multiplication has the adjoint $\mathcal{T}_{e_t,\tilde Q^{*}}$, the right multiplication the adjoint $T_{e_t,\tilde Q_3}$, and the ordinary two-sided multiplication the adjoint $T_{\tilde Q^{*},\tilde Q_3^{*}}$. In the model the adjoint of $X\mapsto AX^{\dagger}B^{\dagger}$ is $X\mapsto B^{\dagger}X^{\dagger}A$, the two factors exchanged and conjugated, and the form is the trace pairing.
+With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the adjoint of the sandwich $\mathcal{T}_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ is $\mathcal{T}_{\tilde Q,\tilde Q_3}^{\dagger}=\mathcal{T}_{\tilde Q_3^{*},\tilde Q^{*}}$: the adjoint stars the two parameters and exchanges them, satisfies the identity $\varphi(\mathcal{T}_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,\mathcal{T}_{\tilde Q_3^{*},\tilde Q^{*}}\tilde Q_2)}$, and is an involution on the sandwich family. The self-adjoint sandwiches are the sandwiches with conjugate parameters, $\mathcal{T}_{\tilde Q,\tilde Q^{*}}=\tilde Q(\cdot)^{*}\tilde Q$, and the involution $\mathcal{T}_{e_t,e_t}={}^{*}$ and the quadratic representation $\mathcal{T}_{\tilde Q_3,\tilde Q_3^{*}}$ of the ternary product are the two distinguished cases. The left multiplication has the adjoint $\mathcal{T}_{e_t,\tilde Q^{*}}$, the right multiplication the adjoint $L_{e_t}R_{\tilde Q_3}$, and the ordinary two-sided multiplication the adjoint $L_{\tilde Q^{*}}R_{\tilde Q_3^{*}}$. In the model the adjoint of $X\mapsto AX^{\dagger}B^{\dagger}$ is $X\mapsto B^{\dagger}X^{\dagger}A$, the two factors exchanged and conjugated, and the form is the trace pairing.
 
 ## Summary of Notation
 
@@ -188,8 +188,8 @@ With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\
 | $\mathcal{T}_{e_t,e_t}={}^{*}$ | the involution, self-adjoint |
 | $\mathcal{T}_{\tilde Q_3,\tilde Q_3^{*}}(\tilde Q_2)=\tilde Q_3\tilde Q_2^{*}\tilde Q_3$ | the quadratic representation, self-adjoint |
 | $L_{\tilde Q}^{\dagger}=\mathcal{T}_{e_t,\tilde Q^{*}}$ | the adjoint of the left multiplication |
-| $R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3}$ | the adjoint of the right multiplication |
-| $T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}}$ | the adjoint of the ordinary two-sided multiplication |
+| $R_{\tilde Q_3}^{\dagger}=L_{e_t}R_{\tilde Q_3}$ | the adjoint of the right multiplication |
+| $L_{\tilde Q}R_{\tilde Q_3}^{\dagger}=L_{\tilde Q^{*}}R_{\tilde Q_3^{*}}$ | the adjoint of the ordinary two-sided multiplication |
 | $\mathcal{T}_{A,B}^{\dagger}(X)=B^{\dagger}X^{\dagger}A$ | the adjoint in the matrix model |
 
 ## Further Reading

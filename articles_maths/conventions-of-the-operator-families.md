@@ -20,7 +20,7 @@ The order follows the dependence. The four letters come first, because the names
 |---|---|---|---|
 | left | $L$ | $L_{\tilde Q}$ | one |
 | right | $R$ | $R_{\tilde Q}$ | one |
-| two-sided | $T$ | $T_{\tilde Q,\tilde P}$ | two |
+| two-sided | $T$ | $L_{\tilde Q}R_{\tilde P}$ | two |
 | sandwich | $\Theta$ | $\Theta_{\tilde Q}$ | one |
 
 **The letter is upright, the parameter is in the subscript.** The letter names the family and is a capital roman; the subscript names the element and keeps that element's own mark, the tilde included. $L_{\tilde Q}$ is read as one glyph: the operator of the left family whose parameter is $\tilde Q$. The tilde is never moved to the letter, and the letter never takes a tilde of its own.
@@ -33,15 +33,15 @@ The order follows the dependence. The four letters come first, because the names
 
 ### The Left Multiplier, the Right Multiplier, the Argument
 
-In $T_{\tilde Q,\tilde P}$ the first subscript is the left multiplier and the second the right multiplier, and the operator acts by $X\mapsto\tilde QX\tilde P$. For $L$ and $R$ the same rule holds with one subscript: $L_{\tilde Q}$ acts by $X\mapsto\tilde QX$ and $R_{\tilde P}$ by $X\mapsto X\tilde P$. The order of the subscripts is the order of the factors around the argument, left factor first.
+In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the second the right multiplier, and the operator acts by $X\mapsto\tilde QX\tilde P$. For $L$ and $R$ the same rule holds with one subscript: $L_{\tilde Q}$ acts by $X\mapsto\tilde QX$ and $R_{\tilde P}$ by $X\mapsto X\tilde P$. The order of the subscripts is the order of the factors around the argument, left factor first.
 
-**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $T_{\tilde Q,\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $T$ are always the two multipliers.
+**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $T$ are always the two multipliers.
 
-**The sandwich has one free slot.** The sandwich is $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $T_{\tilde Q,\tilde P}$, never $\Theta$.
+**The sandwich has one free slot.** The sandwich is $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde P}$, never $\Theta$.
 
 ### The Index of a Basis Operator
 
-A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ and $R_\nu=R_{e_\nu}$. A Greek pair on $T$ is the pair of its slots, $T_{\mu\nu}=L_\mu R_\nu$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_\mu=\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the index names the element and never a matrix entry, so $L_\mu$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
+A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ and $R_\nu=R_{e_\nu}$. A Greek pair on $T$ is the pair of its slots, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_\mu=\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the index names the element and never a matrix entry, so $L_\mu$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
 
 ## The Names of the Sets
 
@@ -53,7 +53,7 @@ A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ a
 |---|---|---|
 | $\operatorname{End}_L(\mathbb{B})$ | $L_{\tilde Q}$ | the left multipliers |
 | $\operatorname{End}_R(\mathbb{B})$ | $R_{\tilde Q}$ | the right multipliers |
-| $\operatorname{End}_{LR}(\mathbb{B})$ | $T_{\tilde Q,\tilde P}$ | the two-sided operators |
+| $\operatorname{End}_{LR}(\mathbb{B})$ | $L_{\tilde Q}R_{\tilde P}$ | the two-sided operators |
 | $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\Theta_{\tilde Q}$ | the sandwiches |
 
 **The subscript is the family's.** The subscript of a set repeats the letters of the family that populates it and is not a tensor slot. The star in $\operatorname{End}_{LR\ast}$ repeats the star of the sandwich's second slot; it is part of the name.
@@ -169,7 +169,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 ## Summary
 
-The four families are written $L$, $R$, $T$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The subscripts of $T$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index is the index of a basis element, $L_\mu=L_{e_\mu}$ and $T_{\mu\nu}=L_\mu R_\nu$, and it never names a matrix entry.
+The four families are written $L$, $R$, $T$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The subscripts of $T$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index is the index of a basis element, $L_\mu=L_{e_\mu}$ and $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. T=L_\mu R_\nu$, and it never names a matrix entry.
 
 The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries the family's letters in the superscript, $\mathsf M_4^{L}$, $\mathsf M_4^{R}$, $\mathsf M_4^{LR}$ and $\mathsf M_4^{LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 
@@ -182,9 +182,9 @@ The strata are labelled by two bits, the norm first and the square of the vector
 | Symbol | Meaning |
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde P}$ | The left and the right multiplier |
-| $T_{\tilde Q,\tilde P}$ | The two-sided operator, left multiplier first |
-| $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{\ast}}$ | The sandwich, with one free slot |
-| $L_\mu$, $R_\nu$, $T_{\mu\nu}$, $\Theta_\mu$ | The basis operators, $L_\mu=L_{e_\mu}$ and $T_{\mu\nu}=L_\mu R_\nu$ |
+| $L_{\tilde Q}R_{\tilde P}$ | The two-sided operator, left multiplier first |
+| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
+| $L_\mu$, $R_\nu$, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. T$, $\Theta_\mu$ | The basis operators, $L_\mu=L_{e_\mu}$ and $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. T=L_\mu R_\nu$ |
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |
 | $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$ | The sets of the left and the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the sandwiches |

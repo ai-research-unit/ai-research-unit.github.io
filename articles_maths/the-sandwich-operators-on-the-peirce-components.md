@@ -2,21 +2,21 @@
 
 ## Introduction
 
-The sandwich operator of an algebra is the two-sided multiplication $T_{a,b}(x)=axb$. An idempotent $e$ cuts the algebra into four Peirce corners,
+The sandwich operator of an algebra is the two-sided multiplication $L_{a}R_{b}(x)=axb$. An idempotent $e$ cuts the algebra into four Peirce corners,
 
 $$
 A=eAe\oplus eAf\oplus fAe\oplus fAf, \qquad f=1-e,
 $$
 
-and the sandwich is the operator that sees the four corners at once. The present article computes the block matrix of $T_{a,b}$ relative to the Peirce decomposition, identifies the elementary sandwiches $T_{e_i,e_j}$ as the Peirce projections, and reads the composition of two sandwiches as the multiplication in the enveloping algebra $A\otimes A^{\mathrm{opp}}$.
+and the sandwich is the operator that sees the four corners at once. The present article computes the block matrix of $L_{a}R_{b}$ relative to the Peirce decomposition, identifies the elementary sandwiches $L_{e_i}R_{e_j}$ as the Peirce projections, and reads the composition of two sandwiches as the multiplication in the enveloping algebra $A\otimes A^{\mathrm{opp}}$.
 
-The result is a matrix picture. If $a=\sum_{i,j}a_{ij}$ and $b=\sum_{k,l}b_{kl}$ are the Peirce components, then the block of $T_{a,b}$ from the source corner $A_{rs}$ to the target corner $A_{il}$ is
+The result is a matrix picture. If $a=\sum_{i,j}a_{ij}$ and $b=\sum_{k,l}b_{kl}$ are the Peirce components, then the block of $L_{a}R_{b}$ from the source corner $A_{rs}$ to the target corner $A_{il}$ is
 
 $$
 x\longmapsto a_{ir}\,x\,b_{sl},
 $$
 
-a sandwich of the two corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ therefore give a sandwich with a single nonzero block, from $A_{jk}$ to $A_{il}$; the pattern of the blocks is the Kronecker product of the two $2\times2$ block matrices of $a$ and $b^{\mathsf T}$. In the scalar case, when all four corners are one-dimensional, the $4\times4$ matrix of $T_{a,b}$ is literally $a\otimes b^{\mathsf T}$.
+a sandwich of the two corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ therefore give a sandwich with a single nonzero block, from $A_{jk}$ to $A_{il}$; the pattern of the blocks is the Kronecker product of the two $2\times2$ block matrices of $a$ and $b^{\mathsf T}$. In the scalar case, when all four corners are one-dimensional, the $4\times4$ matrix of $L_{a}R_{b}$ is literally $a\otimes b^{\mathsf T}$.
 
 The article is the Peirce companion of *The Sandwich Operator on an Algebra* and *Left and Right Multiplication*. The Peirce decomposition is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the off-diagonal part and the noncentral case are *Off-Diagonal Peirce Components and Noncentral Idempotents*; the diagonal part is *The Centraliser and the Diagonal Peirce Part*; and the operator space is *The Operators on an Algebra*. The enveloping algebra is \(A\otimes A^{\mathrm{opp}}\), with the action \(x\mapsto axb\). The article uses no form and no involution.
 
@@ -32,7 +32,7 @@ $$
 A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}.
 $$
 
-The sandwich is $T_{a,b}(x)=axb$, and $\mathcal{S}(A)$ is the sandwich space, the image of $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$, $a\otimes b\mapsto T_{a,b}$.
+The sandwich is $L_{a}R_{b}(x)=axb$, and $\mathcal{S}(A)$ is the sandwich space, the image of $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$, $a\otimes b\mapsto L_{a}R_{b}$.
 
 ## The Peirce Decomposition and the Sandwich
 
@@ -59,11 +59,11 @@ and when $j=r$ and $k=s$ the product lies in $A_{il}$.
 
 *Proof.* The product $a_{ij}x$ lies in $A_{ij}A_{rs}$, which is zero unless $j=r$, and then lies in $A_{is}$. Multiplying by $b_{kl}$, the product lies in $A_{is}A_{kl}$, which is zero unless $s=k$, and then lies in $A_{il}$.
 
-**Corollary (the elementary sandwich).** For homogeneous $a\in A_{ij}$ and $b\in A_{kl}$, the sandwich $T_{a,b}$ has a single nonzero block, from the source corner $A_{jk}$ to the target corner $A_{il}$:
+**Corollary (the elementary sandwich).** For homogeneous $a\in A_{ij}$ and $b\in A_{kl}$, the sandwich $L_{a}R_{b}$ has a single nonzero block, from the source corner $A_{jk}$ to the target corner $A_{il}$:
 
 $$
-\boxed{\;T_{a,b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
-T_{a,b}(A_{jk})\subseteq A_{il}\;}.
+\boxed{\;L_{a}R_{b}(A_{rs})=0 \quad\text{for }(r,s)\neq(j,k), \qquad
+L_{a}R_{b}(A_{jk})\subseteq A_{il}\;}.
 $$
 
 On the source corner the block is $x\mapsto axb$. Every sandwich is a sum of such elementary sandwiches, one for each pair of Peirce components of $a$ and $b$.
@@ -79,19 +79,19 @@ $$
 For $x\in A_{rs}$, the proposition applied to each pair of components gives
 
 $$
-T_{a,b}(x)=a x b=\sum_{i,j,k,l}a_{ij}\,x\,b_{kl}
+L_{a}R_{b}(x)=a x b=\sum_{i,j,k,l}a_{ij}\,x\,b_{kl}
 =\sum_{i,l}a_{ir}\,x\,b_{sl},
 $$
 
 the last sum using $j=r$ and $k=s$. The block from $A_{rs}$ to $A_{il}$ is therefore
 
 $$
-T_{(i,l),(r,s)}:A_{rs}\longrightarrow A_{il}, \qquad x\longmapsto a_{ir}\,x\,b_{sl}.
+L_{(i}R_{l),(r,s)}:A_{rs}\longrightarrow A_{il}, \qquad x\longmapsto a_{ir}\,x\,b_{sl}.
 $$
 
-**Definition.** The **block matrix** of $T_{a,b}$ relative to the Peirce decomposition is the $4\times4$ matrix whose rows are indexed by the target corners $A_{il}$ and whose columns are indexed by the source corners $A_{rs}$, with entry $T_{(i,l),(r,s)}$ as above.
+**Definition.** The **block matrix** of $L_{a}R_{b}$ relative to the Peirce decomposition is the $4\times4$ matrix whose rows are indexed by the target corners $A_{il}$ and whose columns are indexed by the source corners $A_{rs}$, with entry $L_{(i}R_{l),(r,s)}$ as above.
 
-**Theorem.** The operator $T_{a,b}$ is the direct sum of the sixteen blocks $T_{(i,l),(r,s)}$. The block $T_{(i,l),(r,s)}$ is identically zero whenever $a_{ir}=0$ or $b_{sl}=0$; conversely, for a matrix algebra and nonzero $a_{ir},b_{sl}$, the block is nonzero. In the scalar case, when all four corners are one-dimensional, the $4\times4$ matrix of $T_{a,b}$ is the Kronecker product
+**Theorem.** The operator $L_{a}R_{b}$ is the direct sum of the sixteen blocks $L_{(i}R_{l),(r,s)}$. The block $L_{(i}R_{l),(r,s)}$ is identically zero whenever $a_{ir}=0$ or $b_{sl}=0$; conversely, for a matrix algebra and nonzero $a_{ir},b_{sl}$, the block is nonzero. In the scalar case, when all four corners are one-dimensional, the $4\times4$ matrix of $L_{a}R_{b}$ is the Kronecker product
 
 $$
 a\otimes b^{\mathsf T},
@@ -101,7 +101,7 @@ with the row index $(i,l)$ and the column index $(r,s)$.
 
 *Proof.* The direct sum statement is the computation above, summed over $i,l$. The vanishing criterion is immediate from $x\mapsto a_{ir}xb_{sl}$. For the scalar case, the entry is $a_{ir}b_{sl}$, which is the $(i,l),(r,s)$ entry of $a\otimes b^{\mathsf T}$ because $(b^{\mathsf T})_{ls}=b_{sl}$.
 
-**Remark (the pattern, not the entries).** In a general algebra the block entries are operators between corner spaces, not scalars, and the block matrix is not a Kronecker product of two matrices of elements. What is always the Kronecker product is the **support pattern**: the block $(i,l),(r,s)$ can be nonzero only when $a_{ir}$ and $b_{sl}$ are both nonzero. The entries themselves are the sandwiches $T_{a_{ir},b_{sl}}$, and they carry the corner structure. In a matrix algebra with all corners one-dimensional, the pattern and the entries coincide with $a\otimes b^{\mathsf T}$.
+**Remark (the pattern, not the entries).** In a general algebra the block entries are operators between corner spaces, not scalars, and the block matrix is not a Kronecker product of two matrices of elements. What is always the Kronecker product is the **support pattern**: the block $(i,l),(r,s)$ can be nonzero only when $a_{ir}$ and $b_{sl}$ are both nonzero. The entries themselves are the sandwiches $L_{a_{ir}}R_{b_{sl}}$, and they carry the corner structure. In a matrix algebra with all corners one-dimensional, the pattern and the entries coincide with $a\otimes b^{\mathsf T}$.
 
 ### The diagonal and the off-diagonal cases
 
@@ -110,7 +110,7 @@ The block formula specializes to the two cases that matter most.
 **Corollary (diagonal parameters).** If $a,b\in D=A_{00}\oplus A_{11}$, then $a_{ir}=0$ unless $i=r$ and $b_{sl}=0$ unless $s=l$. The block from $A_{rs}$ to $A_{il}$ is therefore nonzero only for $(i,l)=(r,s)$, and on the corner $A_{rs}$ it is
 
 $$
-T_{a_{rr},b_{ss}}:x\longmapsto a_{rr}\,x\,b_{ss}.
+L_{a_{rr}}R_{b_{ss}}:x\longmapsto a_{rr}\,x\,b_{ss}.
 $$
 
 So a sandwich with diagonal parameters preserves each Peirce corner and acts on $A_{rs}$ by the sandwich of the corner elements $a_{rr}$ and $b_{ss}$.
@@ -144,7 +144,7 @@ The other pairs $(i,j)$ and $(k,l)$ give the other blocks of the $4\times4$ matr
 **Theorem.** For $i,j\in\{0,1\}$, the elementary sandwich
 
 $$
-E_{ij}:=T_{e_i,e_j}:A\longrightarrow A, \qquad E_{ij}(x)=e_i\,x\,e_j,
+E_{ij}:=L_{e_i}R_{e_j}:A\longrightarrow A, \qquad E_{ij}(x)=e_i\,x\,e_j,
 $$
 
 is the projection of $A$ onto the corner $A_{ij}$ along the other three corners. The four projections are orthogonal and complete:
@@ -169,22 +169,22 @@ $$
 
 Each $E_{ij}$ is the projection onto its corner $A_{ij}$ along the other three corners. When a mixed corner vanishes, the corresponding projection is zero, and the family degenerates; the relations remain true.
 
-**Remark.** The diagonal corner projection $P_e=T_{e,e}=E_{00}$ is the sandwich of $e$ with itself; it is not the projection onto the diagonal part $D=A_{00}\oplus A_{11}$, which is $E_{00}+E_{11}$. The four $E_{ij}$ are the finest Peirce projections; the sums $E_{00}+E_{01}=L_e$, $E_{00}+E_{10}=R_e$, $E_{00}+E_{11}$ and $E_{01}+E_{10}$ are the coarser operators of *Left and Right Multiplication on the Diagonal Peirce Part*.
+**Remark.** The diagonal corner projection $P_e=L_{e}R_{e}=E_{00}$ is the sandwich of $e$ with itself; it is not the projection onto the diagonal part $D=A_{00}\oplus A_{11}$, which is $E_{00}+E_{11}$. The four $E_{ij}$ are the finest Peirce projections; the sums $E_{00}+E_{01}=L_e$, $E_{00}+E_{10}=R_e$, $E_{00}+E_{11}$ and $E_{01}+E_{10}$ are the coarser operators of *Left and Right Multiplication on the Diagonal Peirce Part*.
 
 ### Composition
 
 **Proposition.** For all $a,b,c,d\in A$,
 
 $$
-\boxed{\;T_{a,b}\,T_{c,d}=T_{ac,\,db}\;}.
+\boxed{\;L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{\,db}\;}.
 $$
 
-*Proof.* $T_{a,b}(T_{c,d}(x))=a(cxd)b=(ac)x(db)$.
+*Proof.* $L_{a}R_{b}(L_{c}R_{d}(x))=a(cxd)b=(ac)x(db)$.
 
-**Corollary.** The assignment $(a,b)\mapsto T_{a,b}$ is a $k$-bilinear map $A\times A\to\operatorname{End}_k(A)$ that factors through the enveloping algebra,
+**Corollary.** The assignment $(a,b)\mapsto L_{a}R_{b}$ is a $k$-bilinear map $A\times A\to\operatorname{End}_k(A)$ that factors through the enveloping algebra,
 
 $$
-A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}_k(A), \qquad a\otimes b\longmapsto T_{a,b},
+A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}_k(A), \qquad a\otimes b\longmapsto L_{a}R_{b},
 $$
 
 and the multiplication in the image is $(a\otimes b)(c\otimes d)=ac\otimes db$. In particular the elementary sandwiches satisfy
@@ -207,17 +207,17 @@ and the summand $A_{ij}\otimes A_{kl}^{\mathrm{opp}}$ maps to the single block f
 
 The block matrix gives the kernel and the image without further computation.
 
-**Proposition.** Let $T=T_{a,b}$.
+**Proposition.** Let $T=L_{a}R_{b}$.
 
 **(a)** The image of $T$ is contained in the sum of the target corners $A_{il}$ for which the block row $(i,l)$ is nonzero, that is, for which there exist $r,s$ with $a_{ir}\neq0$, $b_{sl}\neq0$ and $A_{rs}\neq0$.
 
-**(b)** The kernel of $T$ contains the sum of the source corners $A_{rs}$ for which every block $T_{(i,l),(r,s)}$ vanishes; in the scalar case this is exactly the sum of the corners whose block column is zero.
+**(b)** The kernel of $T$ contains the sum of the source corners $A_{rs}$ for which every block $L_{(i}R_{l),(r,s)}$ vanishes; in the scalar case this is exactly the sum of the corners whose block column is zero.
 
-**(c)** $T_{a,b}=0$ exactly when $aAb=0$. In a prime algebra, in particular in $M_n(k)$, this is equivalent to $a=0$ or $b=0$.
+**(c)** $L_{a}R_{b}=0$ exactly when $aAb=0$. In a prime algebra, in particular in $M_n(k)$, this is equivalent to $a=0$ or $b=0$.
 
-*Proof.* (a) and (b) are the direct-sum form of the block matrix. (c) $T_{a,b}=0$ says $axb=0$ for every $x$, that is, $aAb=0$. If $A$ is prime and $a,b\neq0$, then $aAb\neq0$ by the definition of primeness, so $T\neq0$. The converse is immediate.
+*Proof.* (a) and (b) are the direct-sum form of the block matrix. (c) $L_{a}R_{b}=0$ says $axb=0$ for every $x$, that is, $aAb=0$. If $A$ is prime and $a,b\neq0$, then $aAb\neq0$ by the definition of primeness, so $T\neq0$. The converse is immediate.
 
-**Remark.** The evaluation $T_{a,b}(1)=ab$ shows that $ab=0$ is necessary for $T_{a,b}=0$, but it is not sufficient. In $M_2(k)$, the elements $a=b=E_{12}$ satisfy $ab=0$, while $T_{a,b}(E_{21})=E_{12}E_{21}E_{12}=E_{12}\neq0$. The kernel is a statement about the whole corner structure, not about the single product $ab$.
+**Remark.** The evaluation $L_{a}R_{b}(1)=ab$ shows that $ab=0$ is necessary for $L_{a}R_{b}=0$, but it is not sufficient. In $M_2(k)$, the elements $a=b=E_{12}$ satisfy $ab=0$, while $L_{a}R_{b}(E_{21})=E_{12}E_{21}E_{12}=E_{12}\neq0$. The kernel is a statement about the whole corner structure, not about the single product $ab$.
 
 ## Examples
 
@@ -236,7 +236,7 @@ a=\begin{pmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{pmatrix}, \qquad
 b=\begin{pmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\end{pmatrix},
 $$
 
-the block matrix of $T_{a,b}$ is $a\otimes b^{\mathsf T}$:
+the block matrix of $L_{a}R_{b}$ is $a\otimes b^{\mathsf T}$:
 
 $$
 \begin{pmatrix}
@@ -252,10 +252,10 @@ The rows are the target corners in the order $00,01,10,11$ and the columns are t
 **Example (a single block).** For $a=E_{12}\in A_{01}$ and $b=E_{12}\in A_{01}$, the sandwich has a single block from $A_{10}$ to $A_{01}$:
 
 $$
-T_{E_{12},E_{12}}(E_{21})=E_{12}E_{21}E_{12}=E_{12},
+L_{E_{12}}R_{E_{12}}(E_{21})=E_{12}E_{21}E_{12}=E_{12},
 $$
 
-and it kills the other three corners. The $4\times4$ matrix has a single $1$ at row $01$, column $10$. The product $ab=E_{12}E_{12}=0$, but the sandwich is nonzero; the example is the smallest witness of the difference between $ab$ and $T_{a,b}$.
+and it kills the other three corners. The $4\times4$ matrix has a single $1$ at row $01$, column $10$. The product $ab=E_{12}E_{12}=0$, but the sandwich is nonzero; the example is the smallest witness of the difference between $ab$ and $L_{a}R_{b}$.
 
 **Example (the Peirce projections).** The four elementary sandwiches are
 
@@ -266,7 +266,7 @@ E_{10}=\operatorname{diag}(0,0,1,0), \quad
 E_{11}=\operatorname{diag}(0,0,0,1)
 $$
 
-in the corner-adapted basis, and their orthogonality is visible. The sandwich $T_{E_{11},E_{22}}=E_{01}$ projects onto the line $kE_{12}$; the sandwich $T_{E_{11},E_{11}}=E_{00}$ projects onto $kE_{11}$.
+in the corner-adapted basis, and their orthogonality is visible. The sandwich $L_{E_{11}}R_{E_{22}}=E_{01}$ projects onto the line $kE_{12}$; the sandwich $L_{E_{11}}R_{E_{11}}=E_{00}$ projects onto $kE_{11}$.
 
 ### The split algebra $k\times k$
 
@@ -279,7 +279,7 @@ $$
 so the Peirce decomposition has only two nonzero corners. For $a=(a_0,a_1)$ and $b=(b_0,b_1)$, the sandwich is the diagonal operator
 
 $$
-T_{a,b}(x_0,x_1)=(a_0b_0x_0,\ a_1b_1x_1),
+L_{a}R_{b}(x_0,x_1)=(a_0b_0x_0,\ a_1b_1x_1),
 $$
 
 and its block matrix is diagonal with entries $a_0b_0$ and $a_1b_1$ on the two corners. The example is the scalar case in which the mixed corners vanish; the Kronecker formula degenerates to the two diagonal entries.
@@ -296,11 +296,11 @@ The block matrix has the zero row and column indexed by $A_{10}$; on the three r
 
 ### The biquaternion algebra
 
-Let $\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. Under the matrix model, the four corners are the four complex lines of the Peirce decomposition, and the block matrix of $T_{a,b}$ is $a\otimes b^{\mathsf T}$ as in the matrix case. The biquaternion labels of the four lines, and the Peirce table in the biquaternion basis, are those of *The Peirce Decomposition of the Biquaternion Algebra*; the sandwich operators are the same operators in the two coordinates, and the Peirce projections are the elementary sandwiches of the two idempotents. The example is the matrix case of *The Sandwich Operator on an Algebra*, §*The Quaternion Algebra*, read on the Peirce basis.
+Let $\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. Under the matrix model, the four corners are the four complex lines of the Peirce decomposition, and the block matrix of $L_{a}R_{b}$ is $a\otimes b^{\mathsf T}$ as in the matrix case. The biquaternion labels of the four lines, and the Peirce table in the biquaternion basis, are those of *The Peirce Decomposition of the Biquaternion Algebra*; the sandwich operators are the same operators in the two coordinates, and the Peirce projections are the elementary sandwiches of the two idempotents. The example is the matrix case of *The Sandwich Operator on an Algebra*, §*The Quaternion Algebra*, read on the Peirce basis.
 
 ## Summary
 
-The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $T_{a,b}(x)=axb$ into sixteen blocks. The block from the source corner $A_{rs}$ to the target corner $A_{il}$ is $x\mapsto a_{ir}xb_{sl}$, a sandwich of the corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ give a sandwich with a single block, from $A_{jk}$ to $A_{il}$; a diagonal $a,b$ give a block-diagonal sandwich that preserves each corner; a general sandwich is the sum of the elementary ones. The four elementary sandwiches $E_{ij}=T_{e_i,e_j}$ are the Peirce projections, and they form a complete family of pairwise orthogonal projections in $\operatorname{End}_k(A)$: $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$ and $\sum_{ij}E_{ij}=\mathrm{id}$. The composition law is $T_{a,b}T_{c,d}=T_{ac,db}$, the action of the enveloping algebra $A\otimes A^{\mathrm{opp}}$; the sandwich space is its image, and the Peirce decomposition of $A$ writes it block by block. In the scalar case the block matrix is the Kronecker product $a\otimes b^{\mathsf T}$; in general it is the same pattern of blocks with operator entries. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. No form, involution or topology is used.
+The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $L_{a}R_{b}(x)=axb$ into sixteen blocks. The block from the source corner $A_{rs}$ to the target corner $A_{il}$ is $x\mapsto a_{ir}xb_{sl}$, a sandwich of the corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ give a sandwich with a single block, from $A_{jk}$ to $A_{il}$; a diagonal $a,b$ give a block-diagonal sandwich that preserves each corner; a general sandwich is the sum of the elementary ones. The four elementary sandwiches $E_{ij}=L_{e_i}R_{e_j}$ are the Peirce projections, and they form a complete family of pairwise orthogonal projections in $\operatorname{End}_k(A)$: $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$ and $\sum_{ij}E_{ij}=\mathrm{id}$. The composition law is $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$, the action of the enveloping algebra $A\otimes A^{\mathrm{opp}}$; the sandwich space is its image, and the Peirce decomposition of $A$ writes it block by block. In the scalar case the block matrix is the Kronecker product $a\otimes b^{\mathsf T}$; in general it is the same pattern of blocks with operator entries. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. No form, involution or topology is used.
 
 ## Summary of Notation
 
@@ -309,9 +309,9 @@ The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $T_{a,b}(x)
 | $e,f$ | idempotent and complement $f=1-e$ |
 | $e_0,e_1$ | $e_0=e$, $e_1=f$ |
 | $A_{ij}$ | the corner $e_iAe_j$ |
-| $T_{a,b}$ | the sandwich $x\mapsto axb$ |
-| $T_{(i,l),(r,s)}$ | the block $A_{rs}\to A_{il}$, $x\mapsto a_{ir}xb_{sl}$ |
-| $E_{ij}$ | the Peirce projection $T_{e_i,e_j}$ |
+| $L_{a}R_{b}$ | the sandwich $x\mapsto axb$ |
+| $L_{(i}R_{l),(r,s)}$ | the block $A_{rs}\to A_{il}$, $x\mapsto a_{ir}xb_{sl}$ |
+| $E_{ij}$ | the Peirce projection $L_{e_i}R_{e_j}$ |
 | $\mathcal{S}(A)$ | the sandwich space, the image of $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$ |
 
 ## Further Reading

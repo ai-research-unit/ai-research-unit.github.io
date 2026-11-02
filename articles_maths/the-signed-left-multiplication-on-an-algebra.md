@@ -10,7 +10,7 @@ $$
 
 The twist converts the operator into the one-sided half of the signed sandwich: every signed sandwich is a signed left multiplication followed by a right multiplication, exactly as every unsigned sandwich is a left followed by a right. The signed left multiplication is therefore the one-sided atom of the signed operator theory, the way the left multiplication is the atom of the unsigned one.
 
-Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory is *Superalgebras and Graded Structures*. The unsigned left multiplication $L(a)$, the unsigned right multiplication $R(a)$ and the sandwich $T_{a,b}$ are those of *Left and Right Multiplication* and *The Sandwich Operator on an Algebra*, and the signed sandwich $\mathcal{T}_{a,b}$ is that of *The Signed Sandwich on an Algebra*.
+Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory is *Superalgebras and Graded Structures*. The unsigned left multiplication $L(a)$, the unsigned right multiplication $R(a)$ and the sandwich $L_{a}R_{b}$ are those of *Left and Right Multiplication* and *The Sandwich Operator on an Algebra*, and the signed sandwich $\mathcal{T}_{a,b}$ is that of *The Signed Sandwich on an Algebra*.
 
 ## The Signed Left Multiplication
 

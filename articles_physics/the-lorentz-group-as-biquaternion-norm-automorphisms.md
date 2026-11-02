@@ -111,7 +111,7 @@ The biquaternion norm **is the determinant**, and $\mathsf{M}_2$ is an isomorphi
 The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map
 
 $$
-T_{A,B}:\ \tilde{Q}\ \longmapsto A\,\tilde{Q}\,B^{*},
+L_{A}R_{B}:\ \tilde{Q}\ \longmapsto A\,\tilde{Q}\,B^{*},
 \qquad
 A,B\in GL_2(\mathbb{C}).
 $$
@@ -119,12 +119,12 @@ $$
 It is invertible and $\mathbb{C}$-linear, and its effect on the form is
 
 $$
-\langle T_{A,B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{*}\right)
+\langle L_{A}R_{B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{*}\right)
 = \det A\,\overline{\det B}\,\det\tilde{Q}
 = \det A\,\overline{\det B}\,\langle\tilde{Q}\rangle_{\natural}.
 $$
 
-Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto T_{A,B}$ is the set of pairs acting trivially, $T_{A,B} = \mathrm{id}$, which is
+Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto L_{A}R_{B}$ is the set of pairs acting trivially, $L_{A}R_{B} = \mathrm{id}$, which is
 
 $$
 \ker = \{\,(\lambda I_2,\mu I_2) : \lambda,\mu\in\mathbb{C}^\times,\ \lambda\bar\mu=1\,\},
@@ -283,13 +283,13 @@ A word on the relation between the complex and the real descriptions is in order
 
 The automorphisms used so far preserve the **form**. The algebra has a smaller automorphism group, the maps that also preserve the **product**, and the difference between the two is the subject of open question 1 below. That difference has a sharp algebraic description, and a neighbouring research programme — Kassandrov's biquaternionic *algebrodynamics*, in Further Reading — builds on it a derivation of Minkowski geometry and of its causal structure rather than treating it as a curiosity. The group-theoretic content of this section is standard; the construction and its consequences are the source's, and the checks are this article's.
 
-**The algebra automorphisms are the adjoint-inverse subfamily of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, and in the dagger parametrisation of the norm automorphisms it is $T_{A,B}$ with $AB^{*}=I$; the group is
+**The algebra automorphisms are the adjoint-inverse subfamily of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, and in the dagger parametrisation of the norm automorphisms it is $L_{A}R_{B}$ with $AB^{*}=I$; the group is
 
 $$
 \boxed{\ \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C})\ } ,
 $$
 
-of complex dimension three. In the parametrization $T_{A,B}\tilde{Q}=A\tilde{Q}B^{*}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A\,\overline{\det B}=1$ — this is the subfamily $AB^{*}=I$, and the determinant condition then holds automatically because $\det(AB^{*})=\det A\,\overline{\det B}=1$. The source calls it the **diagonal**, a name taken from the description in which the two chiral factors are equal; with the dagger the equality becomes the adjoint-inverse condition $AB^{*}=I$. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,
+of complex dimension three. In the parametrization $L_{A}R_{B}\tilde{Q}=A\tilde{Q}B^{*}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A\,\overline{\det B}=1$ — this is the subfamily $AB^{*}=I$, and the determinant condition then holds automatically because $\det(AB^{*})=\det A\,\overline{\det B}=1$. The source calls it the **diagonal**, a name taken from the description in which the two chiral factors are equal; with the dagger the equality becomes the adjoint-inverse condition $AB^{*}=I$. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,
 
 $$
 SO(3,\mathbb{C}) \;\cong\; \frac{SL(2,\mathbb{C})}{\{\pm e_t\}} \;\subset\; SO(4,\mathbb{C}),
@@ -557,7 +557,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $\langle\cdot\rangle_{\natural}$; its identity component |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
-| $T_{A,B}:\tilde{Q}\mapsto A\tilde{Q}B^{*}$, $\det A\,\overline{\det B}=1$ | General norm-preserving complex map |
+| $L_{A}R_{B}:\tilde{Q}\mapsto A\tilde{Q}B^{*}$, $\det A\,\overline{\det B}=1$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$ | Complex group |
 | $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ | Algebra automorphism group; the subfamily $AB^{*}=I$ of $SO(4,\mathbb{C})$; as a real group $SO^+(1,3)$ |
 | $\sigma=z_1^2+z_2^2+z_3^2$ | Complex 3-metric on the vector part; invariant of the algebra automorphisms |

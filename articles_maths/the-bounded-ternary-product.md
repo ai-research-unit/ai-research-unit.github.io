@@ -65,12 +65,12 @@ $$
 **Proposition (boundedness and the three readings).** The pair operator is $\mathbb{K}$-linear, bounded, and
 
 $$
-\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert , \qquad \Theta_{x,y} = T_{x \star y,\,1} , \qquad \Theta_{x,y}(z) = \mathcal{T}_{x,z}(y) = T_{1,\,y^{*}z}(x) .
+\lVert\Theta_{x,y}\rVert \leq \lVert x\rVert\lVert y\rVert , \qquad \Theta_{x,y} = L_{x \star y}R_{\,1} , \qquad \Theta_{x,y}(z) = \mathcal{T}_{x,z}(y) = L_{1}R_{\,y^{*}z}(x) .
 $$
 
 The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^{\varsigma} \to B(A)$ of norm at most one.
 
-*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $\mathcal{T}_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
+*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = L_{x \star y}R_{1}$, and it is also the sandwich $\mathcal{T}_{x,z}$ read in the middle slot and the right multiplication $L_{1}R_{y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
 
 **Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $\mathcal{T}_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
 
@@ -81,12 +81,12 @@ The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^
 **Theorem (the pair operators under the commutator).** For all $x,y,u,v,p,q$,
 
 $$
-\boxed{\;[\Theta_{x,y}, \Theta_{u,v}] = T_{[x \star y,\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = T_{[[x \star y,\,u \star v],\,p \star q],\,1}\;} ,
+\boxed{\;[\Theta_{x,y}, \Theta_{u,v}] = L_{[x \star y}R_{\,u \star v],\,1} , \qquad [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}] = L_{[[x \star y}R_{\,u \star v],\,p \star q],\,1}\;} ,
 $$
 
-where the brackets in the right-hand members are the commutators of the envelope. The operators $\Theta$ form a bounded Lie triple system: the bracket is bounded with $\lVert[\Theta_{x,y},\Theta_{u,v}]\rVert \leq 2\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert$, and the triple commutator is again a left multiplication of the same shape, $T_{b,1}$ with $b = [[x \star y, u \star v], p \star q]$, hence a pair operator $\Theta_{b,1}$ in the unital case, of norm at most $4\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert\lVert p\rVert\lVert q\rVert$.
+where the brackets in the right-hand members are the commutators of the envelope. The operators $\Theta$ form a bounded Lie triple system: the bracket is bounded with $\lVert[\Theta_{x,y},\Theta_{u,v}]\rVert \leq 2\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert$, and the triple commutator is again a left multiplication of the same shape, $L_{b}R_{1}$ with $b = [[x \star y, u \star v], p \star q]$, hence a pair operator $\Theta_{b,1}$ in the unital case, of norm at most $4\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert\lVert p\rVert\lVert q\rVert$.
 
-*Proof.* The two identities are the theorem of *The Ternary Product as an Operator*, §*The Bracket and the Lie Triple System*: with $\Theta_{x,y} = T_{a,1}$ for $a = x \star y$ and $\Theta_{u,v} = T_{c,1}$ for $c = u \star v$ one has $T_{a,1}T_{c,1} = T_{ac,1}$, so the commutator is $T_{ac-ca,1}$, and the second identity is the first applied twice. The bounds follow from $\lVert T_{b,1}\rVert \leq \lVert b\rVert$, from $\lVert[b,c]\rVert \leq 2\lVert b\rVert\lVert c\rVert$ and from the bound of the pair operator.
+*Proof.* The two identities are the theorem of *The Ternary Product as an Operator*, §*The Bracket and the Lie Triple System*: with $\Theta_{x,y} = L_{a}R_{1}$ for $a = x \star y$ and $\Theta_{u,v} = L_{c}R_{1}$ for $c = u \star v$ one has $L_{a}R_{1}L_{c}R_{1} = L_{ac}R_{1}$, so the commutator is $L_{ac-ca}R_{1}$, and the second identity is the first applied twice. The bounds follow from $\lVert L_{b}R_{1}\rVert \leq \lVert b\rVert$, from $\lVert[b,c]\rVert \leq 2\lVert b\rVert\lVert c\rVert$ and from the bound of the pair operator.
 
 **Proposition (the Lie companion).** For $x,y$ let
 
@@ -96,7 +96,7 @@ $$
 
 the bracket in $[x,y] = xy - yx$ being the commutator of the envelope. Then $\delta_{x,y}$ is a bounded derivation of the envelope, $\lVert\delta_{x,y}\rVert \leq 4\lVert x\rVert\lVert y\rVert$, and the family of the pairs is the family of the inner derivations of the commutator Lie algebra, which is the bounded form of *The Ternary Product as an Operator*, §*The Inner Derivation of a Pair*.
 
-*Proof.* The element $[x,y]$ has norm at most $2\lVert x\rVert\lVert y\rVert$, and $\mathrm{ad}_a = T_{a,1} - T_{1,a}$ is bounded with norm at most $2\lVert a\rVert$ by *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action* read in the ordinary product; the composition gives the bound. It is an inner derivation by the Leibniz rule.
+*Proof.* The element $[x,y]$ has norm at most $2\lVert x\rVert\lVert y\rVert$, and $\mathrm{ad}_a = L_{a}R_{1} - L_{1}R_{a}$ is bounded with norm at most $2\lVert a\rVert$ by *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action* read in the ordinary product; the composition gives the bound. It is an inner derivation by the Leibniz rule.
 
 ## The Bounded Triple Product and the Completion
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Peirce decomposition is acted on by four families of linear operators: the left multiplication $L_a$, the right multiplication $R_a$, the sandwich $T_{a,b}$ and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_3(\mathbb{C})$ are exactly the inner derivations, $\operatorname{Der}(M_3)\cong\mathfrak{sl}_3(\mathbb{C})$, of complex dimension $8$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_3)\cong PGL_3(\mathbb{C})$, of complex dimension $8$. The transpose, the conjugate transpose and the entrywise conjugation are not complex-linear automorphisms: they are anti-automorphisms or conjugate-linear maps.
+**The Peirce decomposition is acted on by four families of linear operators: the left multiplication $L_a$, the right multiplication $R_a$, the sandwich $L_{a}R_{b}$ and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_3(\mathbb{C})$ are exactly the inner derivations, $\operatorname{Der}(M_3)\cong\mathfrak{sl}_3(\mathbb{C})$, of complex dimension $8$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_3)\cong PGL_3(\mathbb{C})$, of complex dimension $8$. The transpose, the conjugate transpose and the entrywise conjugation are not complex-linear automorphisms: they are anti-automorphisms or conjugate-linear maps.
 
 The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition and the corners $A_{ij}=\mathbb{C}E_{ij}$ are *The Peirce Decomposition of $M_3(\mathbb{C})$*; the coarse split by a rank-one idempotent is *The Rank-Two Split of $M_3(\mathbb{C})$*; the conjugation action and its orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
@@ -13,16 +13,16 @@ The article defines the four operators, computes their matrices and their action
 $$
 L_a(X)=aX,\qquad
 R_a(X)=Xa,\qquad
-T_{a,b}(X)=aXb,\qquad
+L_{a}R_{b}(X)=aXb,\qquad
 \operatorname{ad}_a(X)=[a,X]=aX-Xa .
 $$
 
-The operator $T_{a,b}$ is the **sandwich**; $\operatorname{ad}_a$ is the **adjoint** or **inner derivation**.
+The operator $L_{a}R_{b}$ is the **sandwich**; $\operatorname{ad}_a$ is the **adjoint** or **inner derivation**.
 
 **Proposition.** The operators satisfy
 
 $$
-T_{a,b}=L_aR_b=R_bL_a,\qquad
+L_{a}R_{b}=R_bL_a,\qquad
 \operatorname{ad}_a=L_a-R_a,
 $$
 
@@ -41,7 +41,7 @@ $$
 $$
 L_a=a\otimes I_3,\qquad
 R_b=I_3\otimes b^{\mathsf T},\qquad
-T_{a,b}=a\otimes b^{\mathsf T},
+L_{a}R_{b}=a\otimes b^{\mathsf T},
 $$
 
 $$
@@ -50,19 +50,19 @@ $$
 
 **Proof.** The row vectorisation of $aX$ is $(a\otimes I_3)\operatorname{vec}X$, because the $(i,j)$ entry of $aX$ is $\sum_k a_{ik}X_{kj}$. The row vectorisation of $Xb$ is $(I_3\otimes b^{\mathsf T})\operatorname{vec}X$, because the $(i,j)$ entry of $Xb$ is $\sum_l X_{il}b_{lj}$. The sandwich is the composition, and the adjoint is the difference.
 
-**The eigenvalues and the trace.** Let $\lambda_1,\lambda_2,\lambda_3$ be the eigenvalues of $a$, counted with algebraic multiplicity, and $\mu_1,\mu_2,\mu_3$ those of $b$. The eigenvalues of $L_a$ are $\lambda_1,\lambda_2,\lambda_3$, each with multiplicity $3$; those of $R_b$ are $\mu_1,\mu_2,\mu_3$, each with multiplicity $3$; those of $T_{a,b}$ are the nine products $\lambda_i\mu_j$; and those of $\operatorname{ad}_a$ are the nine differences $\lambda_i-\lambda_j$. Hence
+**The eigenvalues and the trace.** Let $\lambda_1,\lambda_2,\lambda_3$ be the eigenvalues of $a$, counted with algebraic multiplicity, and $\mu_1,\mu_2,\mu_3$ those of $b$. The eigenvalues of $L_a$ are $\lambda_1,\lambda_2,\lambda_3$, each with multiplicity $3$; those of $R_b$ are $\mu_1,\mu_2,\mu_3$, each with multiplicity $3$; those of $L_{a}R_{b}$ are the nine products $\lambda_i\mu_j$; and those of $\operatorname{ad}_a$ are the nine differences $\lambda_i-\lambda_j$. Hence
 
 $$
 \operatorname{tr}L_a=3\operatorname{tr}a,\qquad
 \operatorname{tr}R_b=3\operatorname{tr}b,\qquad
-\operatorname{tr}T_{a,b}=\operatorname{tr}a\operatorname{tr}b,\qquad
+\operatorname{tr}L_{a}R_{b}=\operatorname{tr}a\operatorname{tr}b,\qquad
 \operatorname{tr}\operatorname{ad}_a=0,
 $$
 
 $$
 \det L_a=(\det a)^3,\qquad
 \det R_b=(\det b)^3,\qquad
-\det T_{a,b}=(\det a)^3(\det b)^3.
+\det L_{a}R_{b}=(\det a)^3(\det b)^3.
 $$
 
 **Proof.** The eigenvalues of $a\otimes b^{\mathsf T}$ are the pairwise products of the eigenvalues of $a$ and of $b^{\mathsf T}$, which are those of $b$; the trace is the sum of the products, $\operatorname{tr}a\operatorname{tr}b$, and the determinant is their product, $(\det a)^3(\det b)^3$. The assertions for $L_a$ and $R_b$ are the cases $b=I$ and $a=I$. For the adjoint, $a\otimes I$ and $I\otimes a^{\mathsf T}$ commute, and their eigenvalues on the common eigenbasis are $\lambda_i$ and $\lambda_j$, so the difference has eigenvalues $\lambda_i-\lambda_j$. The trace is $\sum_{i,j}(\lambda_i-\lambda_j)=3\operatorname{tr}a-3\operatorname{tr}a=0$.
@@ -83,15 +83,15 @@ For an element with three distinct eigenvalues the centraliser is the algebra of
 
 **Proof.** A matrix commuting with a Jordan block of size $d$ is upper triangular Toeplitz on that block; a block mapping one Jordan block to another with the same eigenvalue is Toeplitz of the smaller size. The count is the standard one, in Horn and Johnson, *Matrix Analysis*, Chapter 4. The rank is $9-\dim\ker$.
 
-**The rank of the sandwich.** The sandwich $T_{a,b}=a\otimes b^{\mathsf T}$ has rank
+**The rank of the sandwich.** The sandwich $L_{a}R_{b}=a\otimes b^{\mathsf T}$ has rank
 
 $$
-\operatorname{rank}T_{a,b}=\operatorname{rank}a\cdot\operatorname{rank}b .
+\operatorname{rank}L_{a}R_{b}=\operatorname{rank}a\cdot\operatorname{rank}b .
 $$
 
 Its kernel is the set of $X$ with $aXb=0$, and its image is the set of matrices whose columns lie in $\operatorname{im}a$ and whose rows lie in the row space of $b$.
 
-**Worked example: a diagonal element.** Take $a=\operatorname{diag}(1,2,4)$ and $b=\operatorname{diag}(3,5,7)$. Then $T_{a,b}$ is diagonal in the basis of matrix units, with the nine entries $3,5,7,6,10,14,12,20,28$; its trace is $105=7\cdot15$, and its determinant is $(\det a)^{3}(\det b)^{3}=8^{3}\cdot105^{3}=592\,704\,000$. The adjoint $\operatorname{ad}_a$ is diagonal with the nine entries
+**Worked example: a diagonal element.** Take $a=\operatorname{diag}(1,2,4)$ and $b=\operatorname{diag}(3,5,7)$. Then $L_{a}R_{b}$ is diagonal in the basis of matrix units, with the nine entries $3,5,7,6,10,14,12,20,28$; its trace is $105=7\cdot15$, and its determinant is $(\det a)^{3}(\det b)^{3}=8^{3}\cdot105^{3}=592\,704\,000$. The adjoint $\operatorname{ad}_a$ is diagonal with the nine entries
 
 $$
 0,\ -1,\ -3,\ 1,\ 0,\ -2,\ 3,\ 2,\ 0,
@@ -110,9 +110,9 @@ $$
 Then $aE_{12}=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}$ and
 
 $$
-T_{a,b}(E_{12})=aE_{12}b=E_{11},
+L_{a}R_{b}(E_{12})=aE_{12}b=E_{11},
 \qquad
-T_{a,b}(E_{13})=2E_{13}.
+L_{a}R_{b}(E_{13})=2E_{13}.
 $$
 
 The first identity is an elementary corner map: the unit $E_{12}$ is carried to $E_{11}$, not to a multiple of itself. The adjoint gives
@@ -146,7 +146,7 @@ The row index $i$ is fixed, and the column index is transformed by $b$. The righ
 **The sandwich.** On the matrix units,
 
 $$
-T_{a,b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{3}a_{ki}b_{jl}E_{kl}.
+L_{a}R_{b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{3}a_{ki}b_{jl}E_{kl}.
 $$
 
 The coefficient of $E_{kl}$ is $a_{ki}b_{jl}$: the row index is transformed by $a$ and the column index by $b$, independently. This is the **corner map**: the unit $E_{ij}$ is sent to a linear combination of the units $E_{kl}$, and the coefficient factorises into a row factor and a column factor.
@@ -154,7 +154,7 @@ The coefficient of $E_{kl}$ is $a_{ki}b_{jl}$: the row index is transformed by $
 **The elementary sandwich.** For $a=E_{ir}$ and $b=E_{sl}$,
 
 $$
-T_{a,b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
+L_{a}R_{b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
 $$
 
 The sandwich with two elementary matrices carries the corner $A_{rs}$ to the corner $A_{il}$:
@@ -260,37 +260,37 @@ These are real-linear or conjugate-linear maps, not elements of $\operatorname{A
 
 ## The Sandwich as a Map of Corners
 
-**The corner map.** The sandwich $T_{a,b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,
+**The corner map.** The sandwich $L_{a}R_{b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,
 
 $$
-T_{a,b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
+L_{a}R_{b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
 $$
 
 The coefficient of $A_{il}$ is the product of the $(i,r)$ entry of $a$ and the $(s,l)$ entry of $b$. The map is the tensor product of the row action and the column action; it sends the corner $(r,s)$ to a linear combination of the corners $(i,l)$.
 
-**The elementary corner maps.** The elementary sandwich $T_{E_{ir},E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:
+**The elementary corner maps.** The elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:
 
 $$
-T_{E_{ir},E_{sl}}(A_{rs})=A_{il}.
+L_{E_{ir}}R_{E_{sl}}(A_{rs})=A_{il}.
 $$
 
-The elementary corner maps are the matrix units of the space of corner maps; the general sandwich is a linear combination with coefficients $a_{ir}b_{sl}$. In the worked example above, $T_{a,b}(E_{12})=E_{11}$ is the elementary map with $i=1$, $r=1$, $s=2$, $l=1$ and coefficients $a_{11}=1$, $b_{21}=1$.
+The elementary corner maps are the matrix units of the space of corner maps; the general sandwich is a linear combination with coefficients $a_{ir}b_{sl}$. In the worked example above, $L_{a}R_{b}(E_{12})=E_{11}$ is the elementary map with $i=1$, $r=1$, $s=2$, $l=1$ and coefficients $a_{11}=1$, $b_{21}=1$.
 
 **The inner automorphism.** For $b=a^{-1}$,
 
 $$
-T_{a,a^{-1}}(X)=aXa^{-1}
+L_{a}R_{a^{-1}}(X)=aXa^{-1}
 $$
 
 is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners; it permutes the spectral lines only when $a$ is diagonal in the frame.
 
 **The sandwich and the coarse Peirce table.** For the rank-two split with $\Pi=Q$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $uv$ is carried to the corner determined by the row of $a$ and the column of $b$.
 
-**The operators span the endomorphisms.** The sandwiches $T_{a,b}$ span the space of linear maps $X\mapsto aXb$: the nine-by-nine matrix $a\otimes b^{\mathsf T}$ ranges over a space of dimension $81$, which is the whole $\operatorname{End}(M_3)$. The left and right multiplications alone span the subspace of maps that move only one index, of dimension $18$; the sandwiches add the mixed moves.
+**The operators span the endomorphisms.** The sandwiches $L_{a}R_{b}$ span the space of linear maps $X\mapsto aXb$: the nine-by-nine matrix $a\otimes b^{\mathsf T}$ ranges over a space of dimension $81$, which is the whole $\operatorname{End}(M_3)$. The left and right multiplications alone span the subspace of maps that move only one index, of dimension $18$; the sandwiches add the mixed moves.
 
 ## Summary
 
-The four operators on $M_3$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $T_{a,b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $T_{a,b}=L_aR_b=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I_3$, $R_b=I_3\otimes b^{\mathsf T}$, $T_{a,b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I_3-I_3\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, the products $\lambda_i\mu_j$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_3$ are exactly the inner derivations, $\operatorname{Der}(M_3)\cong\mathfrak{sl}_3$, of dimension $8$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_3)\cong PGL_3$, of dimension $8$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $T_{E_{ir},E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.
+The four operators on $M_3$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $L_{a}R_{b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $L_{a}R_{b}=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I_3$, $R_b=I_3\otimes b^{\mathsf T}$, $L_{a}R_{b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I_3-I_3\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, the products $\lambda_i\mu_j$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_3$ are exactly the inner derivations, $\operatorname{Der}(M_3)\cong\mathfrak{sl}_3$, of dimension $8$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_3)\cong PGL_3$, of dimension $8$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.
 
 $$
 \boxed{\ \operatorname{Der}(M_3)\cong\mathfrak{sl}_3,\ \dim=8;\qquad \operatorname{Aut}(M_3)\cong PGL_3,\ \dim=8;\qquad \operatorname{rank}\operatorname{ad}_a=9-\dim Z(a).\ }
@@ -300,7 +300,7 @@ $$
 |---|---|---|---|
 | $L_a$ | $a\otimes I_3$ | row index by $a$ | $3\operatorname{tr}a$ |
 | $R_b$ | $I_3\otimes b^{\mathsf T}$ | column index by $b$ | $3\operatorname{tr}b$ |
-| $T_{a,b}$ | $a\otimes b^{\mathsf T}$ | both indices | $\operatorname{tr}a\operatorname{tr}b$ |
+| $L_{a}R_{b}$ | $a\otimes b^{\mathsf T}$ | both indices | $\operatorname{tr}a\operatorname{tr}b$ |
 | $\operatorname{ad}_a$ | $a\otimes I_3-I_3\otimes a^{\mathsf T}$ | commutator | $0$ |
 
 ## Summary of Notation
@@ -309,7 +309,7 @@ $$
 |---|---|
 | $L_a$ | left multiplication $X\mapsto aX$ |
 | $R_a$ | right multiplication $X\mapsto Xa$ |
-| $T_{a,b}$ | sandwich $X\mapsto aXb$ |
+| $L_{a}R_{b}$ | sandwich $X\mapsto aXb$ |
 | $\operatorname{ad}_a$ | adjoint $X\mapsto[a,X]$ |
 | $\operatorname{Der}(M_3)$ | the derivation algebra, $\cong\mathfrak{sl}_3$ |
 | $\operatorname{Aut}(M_3)$ | the automorphism group, $\cong PGL_3$ |

@@ -24,7 +24,7 @@ Three of the four collapse as they did in the complex category, and the fourth d
 **The two facts the model article cannot state.** The carrier has one invariant line, $\mathrm M$, so the one-sided operator drops rank there and its kernel is its own image: the family is $\{q\,\mathrm{id}+q'L_\varepsilon\}$ with $L_\varepsilon^{2}=0$, the smallest faithful operator algebra that is not semisimple. And the two-sided parametrisation attains the zero operator at a pair of nonzero parameters,
 
 $$
-T_{\varepsilon,\varepsilon}(X)=\varepsilon X\varepsilon=\varepsilon^{2}X=0,
+L_{\varepsilon}R_{\varepsilon}(X)=\varepsilon X\varepsilon=\varepsilon^{2}X=0,
 $$
 
 whereas in the complex and split categories the zero operator was in the family only through a zero parameter. Both facts say the same thing: the algebra is not reduced, and neither is its operator layer.
@@ -39,7 +39,7 @@ is $R$-linear and square-zero, and it is not a multiplication: $L_A(1)=A$ always
 
 **Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate and the subspaces are *$M_2(R)$ Triangular Representation*. The algebra and its product are *Dual-Numbers Algebra*; the norm, the unit criterion and the inverse are *Dual-Numbers Norm and Invertibility*; the spectrum, the minimal polynomial and the Jordan form are *Spectral Regularity and Degeneracy in the Dual-Number Algebra*; the representation theory, the classification and the non-split extension are *Dual-Numbers Linear Representations*; the unit group, the shears and the parabolic angle are *Shears and Parabolic Rotations* and *Dual-Numbers Exponential and Lie Group Structure*; the automorphisms and the derivations are *Dual-Numbers Automorphisms and Derivations*; the polar decomposition is *Dual-Numbers Polar Decomposition*.
 
-**Conventions.** The carrier has the natural basis $(1,\varepsilon)$, and the model is $\mathsf{M}_2(Q)=qI_2+q'E$ with $E=E_{12}$, the matrix of $L_Q$ in the reversed basis $(\varepsilon,1)$. The two-sided operator is $T_{Q,P}(X)=QXP$. The coefficient array of an operator is its array of coordinates in the basis $\{T_1,T_\varepsilon\}=\{I_2,E\}$ of the family. The Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ and the plain form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$. The swap is $S$, the diagonal involution is $J=\operatorname{diag}(1,-1)$, and the residue is $\pi$.
+**Conventions.** The carrier has the natural basis $(1,\varepsilon)$, and the model is $\mathsf{M}_2(Q)=qI_2+q'E$ with $E=E_{12}$, the matrix of $L_Q$ in the reversed basis $(\varepsilon,1)$. The two-sided operator is $L_{Q}R_{P}(X)=QXP$. The coefficient array of an operator is its array of coordinates in the basis $\{T_1,T_\varepsilon\}=\{I_2,E\}$ of the family. The Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ and the plain form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$. The swap is $S$, the diagonal involution is $J=\operatorname{diag}(1,-1)$, and the residue is $\pi$.
 
 ## The One-Sided Operators
 
@@ -98,7 +98,7 @@ and the family is carried by the adjoint onto its conjugate by the swap, which i
 **Definition and collapse.** For a pair $(Q,P)$,
 
 $$
-T_{Q,P}(X)=QXP=L_{QP}=\mathsf{M}_2(QP),
+L_{Q}R_{P}(X)=QXP=L_{QP}=\mathsf{M}_2(QP),
 $$
 
 because the algebra is commutative. The pair is not a pair; it is the product.
@@ -106,7 +106,7 @@ because the algebra is commutative. The pair is not a pair; it is the product.
 **The zero operator is a product.** The parametrisation is not injective even after the rescaling is quotiented out, because a product of two nonzero elements can vanish:
 
 $$
-T_{\varepsilon,\varepsilon}=0,\qquad T_{\varepsilon,1}=L_\varepsilon\neq0,\qquad T_{1,\varepsilon}=L_\varepsilon .
+L_{\varepsilon}R_{\varepsilon}=0,\qquad L_{\varepsilon}R_{1}=L_\varepsilon\neq0,\qquad L_{1}R_{\varepsilon}=L_\varepsilon .
 $$
 
 So the fibre over the zero operator contains the pair $(\varepsilon,\varepsilon)$, and the zero operator has a description with both parameters nonzero: it *is* the product of two nilpotents, not merely a limit of such products. This is the operator form of the fact that $\mathrm{M}$ is a nilpotent ideal, and it has no analogue in the complex category, where the fibre over zero was the two axis pairs, and none in the quaternion category, where it was a single point.
@@ -114,17 +114,17 @@ So the fibre over the zero operator contains the pair $(\varepsilon,\varepsilon)
 **The invariants.** With $c=QP=qp+\varepsilon(qp'+q'p)$,
 
 $$
-\operatorname{rank}T_{Q,P}=\operatorname{rank}\mathsf{M}_2(c),\qquad
-\operatorname{tr}T_{Q,P}=2qp,\qquad
-\det T_{Q,P}=(qp)^{2},\qquad
-\lVert T_{Q,P}\rVert_F^{2}=2(qp)^{2}+(qp'+q'p)^{2}.
+\operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf{M}_2(c),\qquad
+\operatorname{tr}L_{Q}R_{P}=2qp,\qquad
+\det L_{Q}R_{P}=(qp)^{2},\qquad
+\lVert L_{Q}R_{P}\rVert_F^{2}=2(qp)^{2}+(qp'+q'p)^{2}.
 $$
 
-**Proof.** $T_{Q,P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are those of the model article read at the product.
+**Proof.** $L_{Q}R_{P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are those of the model article read at the product.
 
 **The trace, and what it is not.** The trace of the operator is $2qp$ and not $(2q)(2p)$: the trace of a product is not the product of the traces, and the two numbers belong to different operators. The trace of the display is $4qp$, and the difference between $2qp$ and $4qp$ is the difference between the two operators and not a discrepancy.
 
-**The inner automorphisms are trivial.** Since the algebra is commutative, $T_{Q,Q^{-1}}(X)=QXQ^{-1}=X$ for every unit $Q$: the inner automorphism group of the algebra is trivial, and the two-sided family with equal inverse parameters is the identity alone. The automorphisms of the algebra are nevertheless a one-parameter group, and they are reached by conjugation in the ambient and not by multiplication in the algebra; the section on the pair as a semigroup computes them.
+**The inner automorphisms are trivial.** Since the algebra is commutative, $L_{Q}R_{Q^{-1}}(X)=QXQ^{-1}=X$ for every unit $Q$: the inner automorphism group of the algebra is trivial, and the two-sided family with equal inverse parameters is the identity alone. The automorphisms of the algebra are nevertheless a one-parameter group, and they are reached by conjugation in the ambient and not by multiplication in the algebra; the section on the pair as a semigroup computes them.
 
 **The sandwich, and the ray.** The two-sided operator with the conjugate on the right is
 
@@ -206,17 +206,17 @@ and the nilpotent part is carried by the off-diagonal blocks. Its index is worth
 
 ## The Pair as a Semigroup
 
-**Composition.** $T_{Q,P}\circ T_{Q',P'}=T_{QQ',P'P}$, so the family is a monoid under composition, commutative, and the map $(Q,P)\mapsto T_{Q,P}$ is a homomorphism of monoids onto the multiplicative monoid of the algebra.
+**Composition.** $L_{Q}R_{P}\circ L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$, so the family is a monoid under composition, commutative, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of monoids onto the multiplicative monoid of the algebra.
 
 **The units.** The invertible members are the pairs of units, and the group of invertible operators is
 
 $$
-\{T_{Q,P}:Q,P\in(\mathbb{D}'_R)^{\times}\}\cong(\mathbb{D}'_R)^{\times}\cong R^{\times}\times(R,+),
+\{L_{Q}R_{P}:Q,P\in(\mathbb{D}'_R)^{\times}\}\cong(\mathbb{D}'_R)^{\times}\cong R^{\times}\times(R,+),
 $$
 
 the kernel of the map from the group of pairs onto it being the two-dimensional set $\{(Q,Q^{-1}):Q\in(\mathbb{D}'_R)^{\times}\}$ of pairs with product one. So the group of the two-sided operators is the unit group of the algebra, of dimension two, abelian, with two components over $\mathbb{R}$.
 
-**The monoid is not a group, for the right reason.** The zero operator belongs to the family, as $T_{\varepsilon,\varepsilon}$, and it is not invertible; so the monoid has a non-invertible member with both parameters nonzero, and it fails to be a group because of the zero divisors and not because of a sign. The temptation is to say that $-T_{Q,P}$ is not in the family; it is, since $-T_{Q,P}=T_{-Q,P}$, the family being a subspace, and the correct reason is the one just given.
+**The monoid is not a group, for the right reason.** The zero operator belongs to the family, as $L_{\varepsilon}R_{\varepsilon}$, and it is not invertible; so the monoid has a non-invertible member with both parameters nonzero, and it fails to be a group because of the zero divisors and not because of a sign. The temptation is to say that $-L_{Q}R_{P}$ is not in the family; it is, since $-L_{Q}R_{P}=L_{-Q}R_{P}$, the family being a subspace, and the correct reason is the one just given.
 
 **The automorphisms are inner in the ambient.** The automorphisms of the algebra are $\varphi_c(\varepsilon)=c\varepsilon$ with $c$ a unit, so $\operatorname{Aut}_R(\mathbb{D}'_R)\cong R^{\times}$, a one-parameter group. Each is realised by a conjugation in $M_2(R)$,
 
@@ -285,14 +285,14 @@ and it is the zero array when either factor vanishes. The pairs of nilpotents gi
 **The statement.** For an operator of the span,
 
 $$
-\ell(T_{Q,P})\in\{0,1\},\qquad \operatorname{span}\{T_{Q,P}\}=L(\mathbb{D}'_R)\cup\{0\},
+\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=L(\mathbb{D}'_R)\cup\{0\},
 $$
 
 the value $0$ only for the zero operator written with a zero parameter, and the span equal to the family because the family is a subspace closed under products.
 
 **The degenerate case of the length theorem.** The general theorem allows at most $n=2$ products and identifies the length with the rank of the coefficient array. Here the coefficient array of a single product has rank one and the span is closed, so no sum is ever needed and the bound is not attained. The nilpotent does not lengthen anything: $L_\varepsilon$ is one product, of length one, though its rank is one and its square is zero. So the length counts products and not ranks, exactly as in the other commutative categories, and the presence of a zero divisor changes nothing.
 
-**The zero operator has length zero and a nonzero description.** Both statements are true and they are not in contradiction. The length of the zero operator is zero, because $T_{0,0}=0$ is a product of a zero parameter. And the zero operator is also $T_{\varepsilon,\varepsilon}$, a product of two nonzero parameters. The length is a minimum over descriptions and the minimum is zero; the fibre over zero is the set of all descriptions, and it has a component of nonzero pairs. The complex category knows only the first statement; the second is the operator form of a nonzero nilpotent ideal, and it is the precise sense in which this category is not reduced.
+**The zero operator has length zero and a nonzero description.** Both statements are true and they are not in contradiction. The length of the zero operator is zero, because $L_{0}R_{0}=0$ is a product of a zero parameter. And the zero operator is also $L_{\varepsilon}R_{\varepsilon}$, a product of two nonzero parameters. The length is a minimum over descriptions and the minimum is zero; the fibre over zero is the set of all descriptions, and it has a component of nonzero pairs. The complex category knows only the first statement; the second is the operator form of a nonzero nilpotent ideal, and it is the precise sense in which this category is not reduced.
 
 **Why the span is closed.** The products are the compositions $L_Q\circ R_P=L_{QP}$, so the multiplication map sends $L\times R$ into $L$; the image is the family and it is a subspace. In the quaternion category the same map is an isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_R(A)$ and fills the sixteen-dimensional ambient; the difference is central simplicity, and $\mathbb{D}'_R$ is commutative and local. The failure is the same one as in the two previous categories, and it is inherited from the algebra and not from the dimension.
 
@@ -306,8 +306,8 @@ the value $0$ only for the zero operator written with a zero parameter, and the 
 
 | operator | operator rank | coefficient rank | comment |
 |---|---|---|---|
-| $0=T_{0,0}=T_{\varepsilon,\varepsilon}$ | $0$ | $0$ | the vertex, and a product of nonzero parameters |
-| $I_2=T_{1,0}$ | $2$ | $1$ | the identity, of length one |
+| $0=L_{0}R_{0}=L_{\varepsilon}R_{\varepsilon}$ | $0$ | $0$ | the vertex, and a product of nonzero parameters |
+| $I_2=L_{1}R_{0}$ | $2$ | $1$ | the identity, of length one |
 | $\mathsf{M}_2(1+s\varepsilon)=I_2+sE$ | $2$ | $1$ | every shear, invertible |
 | $q'L_\varepsilon$, $q'\neq0$ | $1$ | $1$ | the whole rank-one stratum, one line |
 | $\partial_\varepsilon$ | $1$ | — | not in the span, no length |
@@ -343,7 +343,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 1. The carrier is two-dimensional and the ambient four-dimensional; the one-sided families coincide, and the family is spanned by the identity and the square-zero operator $L_\varepsilon$, the smallest faithful operator algebra that is not semisimple.
 2. The rank ladder of the one-sided operator is $2,1,0$, with the rank-one stratum the single line $\mathbb{R}L_\varepsilon$ minus the origin, and there $\ker L_Q=\operatorname{im}L_Q=\mathrm{M}$, one Jordan block of size two.
 3. The plain adjoint is the operator itself, by commutativity; the Frobenius adjoint is the conjugate of the operator by the swap, and it leaves the family, so the model is a representation and not a $*$-representation.
-4. The two-sided operator is the multiplication by the product, and the zero operator is a product of nonzero parameters, $T_{\varepsilon,\varepsilon}=0$: the fibre over zero has a component of nilpotent pairs.
+4. The two-sided operator is the multiplication by the product, and the zero operator is a product of nonzero parameters, $L_{\varepsilon}R_{\varepsilon}=0$: the fibre over zero has a component of nilpotent pairs.
 5. The sandwich with the conjugate is $q^{2}\operatorname{id}$, so the sandwich family is the ray $[0,\infty)$ of the identity and the parameters giving the identity are the two parallel lines $q=\pm1$: the conic of the previous categories has degenerated.
 6. The Kronecker display is $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$, of trace $4pq$, determinant $p^{4}q^{4}$, and rank in $\{0,1,2,4\}$: the second rank is not vacuous, and the value $2$ marks the pairs with exactly one nilpotent parameter.
 7. The monoid of two-sided operators is commutative, its group of units is the unit group of the algebra, and it fails to be a group through the zero divisors and not through a sign.
@@ -357,7 +357,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 |---|---|---|
 | $L_Q,R_Q$ | left and right multiplication, equal by commutativity | *$M_2(R)$ Triangular Representation* |
 | $L_\varepsilon$ | the square-zero generator $E$ of the family | this article |
-| $T_{Q,P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
+| $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$ | this article |
 | $\Theta_Q$ | the sandwich $X\mapsto QX\bar Q=q^{2}X$ | this article |
 | $c(T_Q)=(q,q')$ | the coefficient array of a member, a vector of length two | this article |

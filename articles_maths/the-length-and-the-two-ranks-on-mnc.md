@@ -6,28 +6,28 @@
 
 **The result in one line.** The length is the rank of the coefficient array $c(M)$, its values are $0,1,\dots,n^{2}$, the set of arrays of length at most $r$ is the determinantal variety of dimension $2rn^{2}-r^{2}$, and the generic matrix has length $n^{2}$.
 
-**The one identity that carries everything.** With the $n^{4}$ basis products $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$ and an orthonormal basis of the algebra,
+**The one identity that carries everything.** With the $n^{4}$ basis products $L_{E_{\mu}}R_{E_{\nu}}$ and an orthonormal basis of the algebra,
 $$
-c(T_{A,B})=[A]\,[B]^{\mathsf T},
+c(L_{A}R_{B})=[A]\,[B]^{\mathsf T},
 $$
 so a product has a coefficient array of rank one and every array of rank one is a product. **The product condition becomes a rank condition, and the length becomes the rank of the array**; nothing else in the article is needed for the two theorems.
 
 **Boundaries.** The products and their cone are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*; the one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the abstract setting is *The Regular Representation in Dimension $n$*. At $n=2$ the same theorem with the sixteen Peirce-frame operators is *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the coefficient matrix there is the $4\times4$ array of that article. The general statement for an algebra of dimension $N$ is the tensor form of *The Regular Representation in Dimension $n$*.
 
-**Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the endomorphism algebra has complex dimension $N^{2}=n^{4}$. The matrix units are $E_{\mu}=E_{ij}$ with $\mu$ running over the $N$ pairs, and they are orthonormal for the Hilbert–Schmidt form, $\operatorname{tr}(E_{\mu}^{*}E_{\nu})=\delta_{\mu\nu}$. The basis products are $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$. The coefficient array of $M\in\operatorname{End}(A)$ is $c(M)$, an $N\times N$ array. The length is $\ell(M)$.
+**Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the endomorphism algebra has complex dimension $N^{2}=n^{4}$. The matrix units are $E_{\mu}=E_{ij}$ with $\mu$ running over the $N$ pairs, and they are orthonormal for the Hilbert–Schmidt form, $\operatorname{tr}(E_{\mu}^{*}E_{\nu})=\delta_{\mu\nu}$. The basis products are $L_{E_{\mu}}R_{E_{\nu}}$. The coefficient array of $M\in\operatorname{End}(A)$ is $c(M)$, an $N\times N$ array. The length is $\ell(M)$.
 
 ## The Coefficient Array
 
 ### The Basis of Products
 
-**Theorem.** The $N^{2}=n^{4}$ operators $T_{\mu\nu}$ are a basis of $\operatorname{End}(M_{n}(\mathbb{C}))$, and they are orthonormal for the Hilbert–Schmidt form:
+**Theorem.** The $N^{2}=n^{4}$ operators $L_{E_{\mu}}R_{E_{\nu}}$ are a basis of $\operatorname{End}(M_{n}(\mathbb{C}))$, and they are orthonormal for the Hilbert–Schmidt form:
 $$
-\operatorname{tr}\bigl(T_{\mu\nu}^{*}T_{\rho\sigma}\bigr)=\delta_{\mu\rho}\delta_{\nu\sigma}.
+\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}T_{\rho\sigma}\bigr)=\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 
-*Proof.* The matrix of $T_{\mu\nu}$ is $E_{\nu}^{\mathsf T}\otimes E_{\mu}$, so
+*Proof.* The matrix of $L_{E_{\mu}}R_{E_{\nu}}$ is $E_{\nu}^{\mathsf T}\otimes E_{\mu}$, so
 $$
-\operatorname{tr}\bigl(T_{\mu\nu}^{*}T_{\rho\sigma}\bigr)
+\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}T_{\rho\sigma}\bigr)
 =\operatorname{tr}\bigl(E_{\nu}^{\mathsf T*}E_{\sigma}^{\mathsf T}\bigr)\operatorname{tr}\bigl(E_{\mu}^{*}E_{\rho}\bigr)
 =\delta_{\nu\sigma}\delta_{\mu\rho},
 $$
@@ -35,25 +35,25 @@ using the orthonormality of the matrix units in each factor.
 
 **The consequence.** Every operator has the unique expansion
 $$
-M=\sum_{\mu,\nu}c(M)_{\mu\nu}T_{\mu\nu},\qquad c(M)_{\mu\nu}=\operatorname{tr}\bigl(T_{\mu\nu}^{*}M\bigr),
+M=\sum_{\mu,\nu}c(M)_{\mu\nu}L_{E_{\mu}}R_{E_{\nu}},\qquad c(M)_{\mu\nu}=\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}M\bigr),
 $$
 and the assignment $M\mapsto c(M)$ is a linear isomorphism of $\operatorname{End}(A)$ onto the space of $N\times N$ arrays.
 
-**The normalisation.** The normalisation is the one of an orthonormal basis of the algebra. In the biquaternion articles the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$ has $\operatorname{tr}(\mathsf M_{2}(e_{\mu})^{*}\mathsf M_{2}(e_{\nu}))=2\delta_{\mu\nu}$, so the products have Hilbert–Schmidt norm two, $\operatorname{tr}(T_{\mu\nu}^{*}T_{\mu\nu})=4$, and the coefficient is $\tfrac14$ of the scalar product. **The array is the same object in both normalisations; only the factor of $4$ differs.**
+**The normalisation.** The normalisation is the one of an orthonormal basis of the algebra. In the biquaternion articles the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$ has $\operatorname{tr}(\mathsf M_{2}(e_{\mu})^{*}\mathsf M_{2}(e_{\nu}))=2\delta_{\mu\nu}$, so the products have Hilbert–Schmidt norm two, $\operatorname{tr}(L_{E_{\mu}}R_{E_{\nu}}^{*}L_{E_{\mu}}R_{E_{\nu}})=4$, and the coefficient is $\tfrac14$ of the scalar product. **The array is the same object in both normalisations; only the factor of $4$ differs.**
 
 ### The Array of a Product
 
 **Theorem.** For every pair,
 $$
-c(T_{A,B})=[A]\,[B]^{\mathsf T},
+c(L_{A}R_{B})=[A]\,[B]^{\mathsf T},
 $$
 where $[A]$ is the column of coordinates of $A$ in the basis $E_{\mu}$, $[A]_{\mu}=\operatorname{tr}(E_{\mu}^{*}A)$.
 
-*Proof.* By definition $T_{A,B}=\sum_{\mu,\nu}A_{\mu}B_{\nu}T_{\mu\nu}$ with $A=\sum A_{\mu}E_{\mu}$ and $B=\sum B_{\nu}E_{\nu}$, since the map $(A,B)\mapsto T_{A,B}$ is bilinear and the basis products are the images of the basis pairs. The array of coefficients is therefore the outer product of the two coordinate columns.
+*Proof.* By definition $L_{A}R_{B}=\sum_{\mu,\nu}A_{\mu}B_{\nu}L_{E_{\mu}}R_{E_{\nu}}$ with $A=\sum A_{\mu}E_{\mu}$ and $B=\sum B_{\nu}E_{\nu}$, since the map $(A,B)\mapsto L_{A}R_{B}$ is bilinear and the basis products are the images of the basis pairs. The array of coefficients is therefore the outer product of the two coordinate columns.
 
 **Three readings of one identity.** The rank of $[A][B]^{\mathsf T}$ is one when both vectors are nonzero; the array is zero when either is; and the array determines the operator by the basis expansion. **The rank-one condition is therefore exactly the product condition, and it is a condition on an $N\times N$ array and not on the $N\times N$ matrix $M$.**
 
-**The array of a one-sided operator.** The array of $L_{A}=T_{A,I}$ is the outer product of $[A]$ with the coordinate column of the identity, which is the column of the diagonal units. Its rank is one unless $A=0$, so **every one-sided operator has length one**, as it must.
+**The array of a one-sided operator.** The array of $L_{A}=L_{A}R_{I}$ is the outer product of $[A]$ with the coordinate column of the identity, which is the column of the diagonal units. Its rank is one unless $A=0$, so **every one-sided operator has length one**, as it must.
 
 ## The Length
 
@@ -61,7 +61,7 @@ where $[A]$ is the column of coordinates of $A$ in the basis $E_{\mu}$, $[A]_{\m
 
 **Definition.** The **length** of $M$ is
 $$
-\ell(M)=\min\{r\ge0: M=T_{A_{1},B_{1}}+\cdots+T_{A_{r},B_{r}}\},
+\ell(M)=\min\{r\ge0: M=L_{A_{1}}R_{B_{1}}+\cdots+L_{A_{r}}R_{B_{r}}\},
 $$
 with $\ell(0)=0$.
 
@@ -70,7 +70,7 @@ $$
 \ell(M)=\operatorname{rank}c(M).
 $$
 
-*Proof.* If $M$ is a sum of $r$ products, then $c(M)=\sum_{i\le r}[A_{i}][B_{i}]^{\mathsf T}$ is a sum of $r$ arrays of rank one, so its rank is at most $r$; hence $\ell(M)\ge\operatorname{rank}c(M)$. Conversely let $c=c(M)$ have rank $r$ and factor it as $c=UV$ with $U$ of size $N\times r$ and $V$ of size $r\times N$. The $i$-th column of $U$ is the coordinate column of a matrix $A_{i}$ and the $i$-th row of $V$ is the transpose of the coordinate column of a matrix $B_{i}$, so $c=\sum_{i\le r}[A_{i}][B_{i}]^{\mathsf T}$ and $M=\sum_{i\le r}T_{A_{i},B_{i}}$; hence $\ell(M)\le r$.
+*Proof.* If $M$ is a sum of $r$ products, then $c(M)=\sum_{i\le r}[A_{i}][B_{i}]^{\mathsf T}$ is a sum of $r$ arrays of rank one, so its rank is at most $r$; hence $\ell(M)\ge\operatorname{rank}c(M)$. Conversely let $c=c(M)$ have rank $r$ and factor it as $c=UV$ with $U$ of size $N\times r$ and $V$ of size $r\times N$. The $i$-th column of $U$ is the coordinate column of a matrix $A_{i}$ and the $i$-th row of $V$ is the transpose of the coordinate column of a matrix $B_{i}$, so $c=\sum_{i\le r}[A_{i}][B_{i}]^{\mathsf T}$ and $M=\sum_{i\le r}L_{A_{i}}R_{B_{i}}$; hence $\ell(M)\le r$.
 
 **The values.** The length takes the values $0,1,\dots,n^{2}$. The value $0$ is the zero operator; the value $1$ is the cone of products; the value $n^{2}$ is the complement of the determinantal variety of the arrays of rank at most $n^{2}-1$, which is open and dense. **Every endomorphism of $M_{n}(\mathbb{C})$ is a sum of at most $n^{2}$ two-sided products, and a generic one needs exactly $n^{2}$.**
 
@@ -144,18 +144,18 @@ that is $N^{2}(N-1)^{2}/4$ polynomial conditions, which define a variety of codi
 
 *Proof.* Two counterexamples at $n=2$ suffice, and both generalise.
 
-**A product of rank one and of length one.** Take $A$ and $B$ of rank one; then $\operatorname{rank}T_{A,B}=1$ and $\ell=1$.
+**A product of rank one and of length one.** Take $A$ and $B$ of rank one; then $\operatorname{rank}L_{A}R_{B}=1$ and $\ell=1$.
 
 **A matrix of rank one and of length four.** Take $M=uv^{\mathsf T}$ with $u,v$ generic columns of length $4$; the array $c(M)$ has rank $4$ for generic $u,v$, so $\ell(M)=4$ while $\operatorname{rank}M=1$. The set is not small: the rank-one matrices of length four form a dense open subset of the rank-one variety, and the computation is the one of the worked case $M_{1}$ of the Peirce article. **At $n=3$ the same construction gives a matrix of rank one and length $n^{2}=9$**, and the phenomenon is not an accident of the small case.
 
-**A product of full rank and of length one.** Take $A$ and $B$ invertible; then $\operatorname{rank}T_{A,B}=n^{2}$ and $\ell=1$. So a matrix of the largest rank can have the smallest length.
+**A product of full rank and of length one.** Take $A$ and $B$ invertible; then $\operatorname{rank}L_{A}R_{B}=n^{2}$ and $\ell=1$. So a matrix of the largest rank can have the smallest length.
 
 **The table at $n=2$.**
 
 | $M$ | $\operatorname{rank}M$ | $\operatorname{rank}c(M)$ | $\ell(M)$ |
 |---|---|---|---|
-| $T_{A,B}$ with $A,B$ units | $4$ | $1$ | $1$ |
-| $T_{A,B}$ with $A,B$ of rank one | $1$ | $1$ | $1$ |
+| $L_{A}R_{B}$ with $A,B$ units | $4$ | $1$ | $1$ |
+| $L_{A}R_{B}$ with $A,B$ of rank one | $1$ | $1$ | $1$ |
 | a generic sum of three products | $4$ | $3$ | $3$ |
 | a generic sum of two products | $4$ | $2$ | $2$ |
 | a generic matrix of rank $1$ | $1$ | $4$ | $4$ |
@@ -167,7 +167,7 @@ that is $N^{2}(N-1)^{2}/4$ polynomial conditions, which define a variety of codi
 
 **Theorem.** For a product,
 $$
-\operatorname{rank}T_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B\in\{rs:0\le r,s\le n\}.
+\operatorname{rank}L_{A}R_{B}=\operatorname{rank}A\cdot\operatorname{rank}B\in\{rs:0\le r,s\le n\}.
 $$
 
 *Proof.* The matrix is $B^{\mathsf T}\otimes A$ and the rank of a Kronecker product is the product of the ranks.
@@ -189,7 +189,7 @@ $$
 
 ### The Commutative Case
 
-**The collapse.** Let $A$ be commutative. Then $A^{\mathrm{opp}}=A$ and $T_{A,B}=L_{AB}$, so the product set is the one-sided family of dimension $N$, and every nonzero member has length one. The theorem $\ell=\operatorname{rank}c$ survives in the form "the length is $0$ or $1$", and it becomes empty.
+**The collapse.** Let $A$ be commutative. Then $A^{\mathrm{opp}}=A$ and $L_{A}R_{B}=L_{AB}$, so the product set is the one-sided family of dimension $N$, and every nonzero member has length one. The theorem $\ell=\operatorname{rank}c$ survives in the form "the length is $0$ or $1$", and it becomes empty.
 
 **The array is not well defined.** In the commutative case the map $A\otimes A\to\operatorname{End}(A)$ has kernel of dimension $N^{2}-N$, so an operator has many coefficient arrays, of different ranks. The dual numbers give the example: $\varepsilon X\varepsilon=0$ for every $X$, so the tensor $\varepsilon\otimes\varepsilon$ lies in the kernel, and the operator $L_{1}$ has the array of $1\otimes1$, of rank one, and also the array of $1\otimes1+\varepsilon\otimes\varepsilon$, of rank two. **The rank of the array is then a property of the chosen expansion and not of the operator.**
 
@@ -205,7 +205,7 @@ $$
 
 ## Summary
 
-The $n^{4}$ products $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$ are an orthonormal basis of the endomorphism algebra, so every operator $M$ has a coefficient array $c(M)$ of size $n^{2}\times n^{2}$, and the array of a product is the outer product $[A][B]^{\mathsf T}$ of the two coordinate columns.
+The $n^{4}$ products $L_{E_{\mu}}R_{E_{\nu}}$ are an orthonormal basis of the endomorphism algebra, so every operator $M$ has a coefficient array $c(M)$ of size $n^{2}\times n^{2}$, and the array of a product is the outer product $[A][B]^{\mathsf T}$ of the two coordinate columns.
 
 The length, the least number of products in a decomposition, equals the rank of $c(M)$. It takes the values $0,\dots,n^{2}$; the set of length at most $r$ is the determinantal variety of dimension $2rn^{2}-r^{2}$; a product is exactly a matrix of coefficient rank one; and a generic matrix has length $n^{2}$.
 
@@ -217,7 +217,7 @@ The length and the ordinary rank are independent: a product of full rank has len
 |---|---|
 | $E_{\mu}$ | the matrix units, an orthonormal basis of the algebra |
 | $N=n^{2}$ | the dimension of the algebra |
-| $T_{\mu\nu}=L_{E_{\mu}}R_{E_{\nu}}$ | the orthonormal basis of products |
+| $L_{E_{\mu}}R_{E_{\nu}}$ | the orthonormal basis of products |
 | $c(M)$ | the coefficient array of $M$, of size $N\times N$ |
 | $[A]$ | the coordinate column of $A$ in the units |
 | $\ell(M)$ | the length, the least number of products |

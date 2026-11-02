@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The purpose.** This article carries out one coefficient computation in full. It takes a concrete $4\times4$ matrix, computes its sixteen coefficients in the basis $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, assembles the coefficient matrix, finds its rank, factors it, and reconstructs the matrix. Every step is written out, with the matrices displayed.
+**The purpose.** This article carries out one coefficient computation in full. It takes a concrete $4\times4$ matrix, computes its sixteen coefficients in the basis $L_{e_\mu}R_{e_\nu}$, assembles the coefficient matrix, finds its rank, factors it, and reconstructs the matrix. Every step is written out, with the matrices displayed.
 
 **The matrix.**
 $$
@@ -21,20 +21,20 @@ $$
 
 **The coefficient.** For $A\in M_4(\mathbb{C})$ and $\mu,\nu\in\{t,x,y,z\}$,
 $$
-c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr).
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}A\bigr).
 $$
 
-**Why the factor four.** The matrices $T_{\mu\nu}$ are orthogonal for the Hilbert–Schmidt form:
+**Why the factor four.** The matrices $L_{e_\mu}R_{e_\nu}$ are orthogonal for the Hilbert–Schmidt form:
 $$
-\operatorname{tr}\bigl(T_{\mu\nu}^{*}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 The square norm of each is four, so the coefficient carries the factor $\tfrac14$.
 
-**The matrices are real.** Every $T_{\mu\nu}$ is a real signed permutation matrix, so $T_{\mu\nu}^{*}=T_{\mu\nu}^{\mathsf T}$ and
+**The matrices are real.** Every $L_{e_\mu}R_{e_\nu}$ is a real signed permutation matrix, so $L_{e_\mu}R_{e_\nu}^{*}=L_{e_\mu}R_{e_\nu}^{\mathsf T}$ and
 $$
-\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr)=\sum_{i,j}(T_{\mu\nu})_{ij}A_{ij}.
+\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}A\bigr)=\sum_{i,j}(L_{e_\mu}R_{e_\nu})_{ij}A_{ij}.
 $$
-In practice: read the four nonzero positions of $T_{\mu\nu}$, add the corresponding entries of $A$ with their signs, divide by four. No matrix product is needed, though two are shown below as a check.
+In practice: read the four nonzero positions of $L_{e_\mu}R_{e_\nu}$, add the corresponding entries of $A$ with their signs, divide by four. No matrix product is needed, though two are shown below as a check.
 
 **The index order.** The labels $t,x,y,z$ correspond to the rows and columns $1,2,3,4$. The first index of $c_{\mu\nu}$ is the left parameter, the second the right parameter. The order is part of the definition; swapping it transposes the coefficient matrix and returns the wrong operator.
 
@@ -42,25 +42,25 @@ In practice: read the four nonzero positions of $T_{\mu\nu}$, add the correspond
 
 ### The four diagonal matrices
 
-**$T_{tt}=\mathrm{I}_4$.** The nonzero positions are the diagonal, all with sign $+1$:
+**$L_tR_t=\mathrm{I}_4$.** The nonzero positions are the diagonal, all with sign $+1$:
 $$
-\operatorname{tr}(T_{tt}^{\mathsf T}M)=M_{11}+M_{22}+M_{33}+M_{44}=1+1+1+1=4,
+\operatorname{tr}(L_tR_t^{\mathsf T}M)=M_{11}+M_{22}+M_{33}+M_{44}=1+1+1+1=4,
 \qquad c_{tt}=1 .
 $$
 
-**$T_{xx}=\operatorname{diag}(-1,-1,1,1)$.** The signs are $-,-,+,+$:
+**$L_xR_x=\operatorname{diag}(-1,-1,1,1)$.** The signs are $-,-,+,+$:
 $$
-\operatorname{tr}(T_{xx}^{\mathsf T}M)=-1-1+1+1=0,
+\operatorname{tr}(L_xR_x^{\mathsf T}M)=-1-1+1+1=0,
 \qquad c_{xx}=0 .
 $$
 
-**$T_{yy}=\operatorname{diag}(-1,1,-1,1)$:**
+**$L_yR_y=\operatorname{diag}(-1,1,-1,1)$:**
 $$
 -1+1-1+1=0,
 \qquad c_{yy}=0 .
 $$
 
-**$T_{zz}=\operatorname{diag}(-1,1,1,-1)$:**
+**$L_zR_z=\operatorname{diag}(-1,1,1,-1)$:**
 $$
 -1+1+1-1=0,
 \qquad c_{zz}=0 .
@@ -70,16 +70,16 @@ $$
 
 ### Two full matrix products
 
-**The matrix $T_{xt}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
+**The matrix $L_xR_t$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
 $$
-T_{xt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L_xR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 \qquad
-T_{xt}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
+L_xR_t^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
 $$
 
-**The product, row by row.** Row $1$ of $T_{xt}^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
+**The product, row by row.** Row $1$ of $L_xR_t^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
 $$
-T_{xt}^{\mathsf T}M=
+L_xR_t^{\mathsf T}M=
 \begin{pmatrix}
 0&1&0&0\\
 -1&-2&0&0\\
@@ -92,21 +92,21 @@ $$
 c_{xt}=\tfrac14(-4)=-1 .
 $$
 
-**The dot-product check.** The signed positions of $T_{xt}$ give
+**The dot-product check.** The signed positions of $L_xR_t$ give
 $$
 (-1)M_{12}+(+1)M_{21}+(-1)M_{34}+(+1)M_{43}
 =-2+0-2+0=-4 .
 $$
 
-**The matrix $T_{tx}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
+**The matrix $L_tR_x$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
 $$
-T_{tx}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+L_tR_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 \qquad
-T_{tx}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+L_tR_x^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
 $$
 The product is
 $$
-T_{tx}^{\mathsf T}M=
+L_tR_x^{\mathsf T}M=
 \begin{pmatrix}
 0&1&0&0\\
 -1&-2&0&0\\
@@ -119,26 +119,26 @@ $$
 c_{tx}=0 .
 $$
 
-**The trap.** The two matrices agree in the first two rows and differ in the last two, and the two coefficients are different: $c_{xt}=-1$ and $c_{tx}=0$. A computation that prints $T_{tx}$ and transposes $T_{xt}$ returns $c_{tx}=-1$, transposes the coefficient matrix, and then fails at the reconstruction. The labels are not symmetric.
+**The trap.** The two matrices agree in the first two rows and differ in the last two, and the two coefficients are different: $c_{xt}=-1$ and $c_{tx}=0$. A computation that prints $L_tR_x$ and transposes $L_xR_t$ returns $c_{tx}=-1$, transposes the coefficient matrix, and then fails at the reconstruction. The labels are not symmetric.
 
 ### The ten remaining off-diagonal matrices
 
-**The table.** Each row gives the signed positions of $T_{\mu\nu}$ and the resulting sum. Every corresponding entry of $M$ is zero except in the last row.
+**The table.** Each row gives the signed positions of $L_{e_\mu}R_{e_\nu}$ and the resulting sum. Every corresponding entry of $M$ is zero except in the last row.
 
 | Matrix | Signed positions | Sum | Coefficient |
 |---|---|---|---|
-| $T_{ty}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){+}1$ | $0$ | $0$ |
-| $T_{tz}$ | $(1,4){-}1$, $(2,3){+}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $T_{yt}$ | $(1,3){-}1$, $(2,4){+}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $T_{zt}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){+}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $T_{xy}$ | $(1,4){+}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $T_{xz}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){-}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $T_{yx}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){-}1$ | $0$ | $0$ |
-| $T_{yz}$ | $(1,2){+}1$, $(2,1){+}1$, $(3,4){-}1$, $(4,3){-}1$ | $+2+0-2+0=0$ | $0$ |
-| $T_{zx}$ | $(1,3){+}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $T_{zy}$ | $(1,2){-}1$, $(2,1){-}1$, $(3,4){-}1$, $(4,3){-}1$ | $-2-0-2-0=-4$ | $-1$ |
+| $L_tR_y$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){+}1$ | $0$ | $0$ |
+| $L_tR_z$ | $(1,4){-}1$, $(2,3){+}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_yR_t$ | $(1,3){-}1$, $(2,4){+}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_zR_t$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){+}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_xR_y$ | $(1,4){+}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_xR_z$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){-}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_yR_x$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){-}1$ | $0$ | $0$ |
+| $L_yR_z$ | $(1,2){+}1$, $(2,1){+}1$, $(3,4){-}1$, $(4,3){-}1$ | $+2+0-2+0=0$ | $0$ |
+| $L_zR_x$ | $(1,3){+}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_zR_y$ | $(1,2){-}1$, $(2,1){-}1$, $(3,4){-}1$, $(4,3){-}1$ | $-2-0-2-0=-4$ | $-1$ |
 
-**The two cancellations.** $T_{yz}$ and $T_{zy}$ are the only off-diagonal matrices whose signed positions meet nonzero entries of $M$, and they meet the same two entries with opposite signs. The sum is $+2-2=0$ for $T_{yz}$ and $-2-2=-4$ for $T_{zy}$. The cancellation in $T_{yz}$ is not an accident of this matrix: it is the sign difference between $L$ and $R$ on the same pair of indices.
+**The two cancellations.** $L_yR_z$ and $L_zR_y$ are the only off-diagonal matrices whose signed positions meet nonzero entries of $M$, and they meet the same two entries with opposite signs. The sum is $+2-2=0$ for $L_yR_z$ and $-2-2=-4$ for $L_zR_y$. The cancellation in $L_yR_z$ is not an accident of this matrix: it is the sign difference between $L$ and $R$ on the same pair of indices.
 
 ### The coefficient matrix
 
@@ -177,16 +177,16 @@ $$
 
 **The expansion.** Since the only nonzero coefficients are $c_{tt}=1$, $c_{xt}=-1$ and $c_{zy}=-1$,
 $$
-M=T_{tt}-T_{xt}-T_{zy}.
+M=L_tR_t-L_xR_t-L_zR_y.
 $$
 
 **The three matrices.**
 $$
-T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 \qquad
--T_{xt}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+-L_xR_t=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 \qquad
--T_{zy}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+-L_zR_y=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
 $$
 
 **The row sums.**
@@ -200,9 +200,9 @@ $$
 $$
 Each row is the row of $M$. The reconstruction is correct.
 
-**The wrong reconstruction.** With the transposed coefficient matrix one would write $M=T_{tt}-T_{tx}-T_{zy}$. The first two rows still agree, but the third and fourth do not:
+**The wrong reconstruction.** With the transposed coefficient matrix one would write $M=L_tR_t-L_tR_x-L_zR_y$. The first two rows still agree, but the third and fourth do not:
 $$
-T_{tt}-T_{tx}-T_{zy}
+L_tR_t-L_tR_x-L_zR_y
 =\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&0\\0&0&2&1\end{pmatrix},
 $$
 which is not $M$. The two entries $M_{34}=2$ and $M_{43}=0$ are exchanged. This is the visible cost of the index slip.
@@ -227,7 +227,7 @@ Hence
 $$
 M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
 =L_{e_t-e_x}-L_{e_z}R_{e_y}
-=T_{tt}-T_{xt}-T_{zy}.
+=L_tR_t-L_xR_t-L_zR_y.
 $$
 
 **The two matrices.**
@@ -235,7 +235,7 @@ $$
 L_{e_t-e_x}=\mathrm{I}_4-L_x=
 \begin{pmatrix}1&1&0&0\\-1&1&0&0\\0&0&1&1\\0&0&-1&1\end{pmatrix},
 \qquad
--L_{e_z}R_{e_y}=-T_{zy}=
+-L_{e_z}R_{e_y}=-L_zR_y=
 \begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
 $$
 Their sum is $M$.
@@ -265,7 +265,7 @@ $$
 
 1. Compute the sixteen traces
 $$
-c_{\mu\nu}=\tfrac14\sum_{i,j}(T_{\mu\nu})_{ij}M_{ij}.
+c_{\mu\nu}=\tfrac14\sum_{i,j}(L_{e_\mu}R_{e_\nu})_{ij}M_{ij}.
 $$
 2. Assemble the $4\times4$ coefficient matrix $c(M)$.
 3. Compute its rank, by $2\times2$ minors or by row reduction. That rank is the length.
@@ -274,7 +274,7 @@ $$
 a=\sum_\mu a_\mu e_\mu,\qquad b=\sum_\nu b_\nu e_\nu,\qquad M=L_aR_b .
 $$
 5. If the rank is $r\ge2$, factor $c=UV$ with $U,V$ of size $4\times r$; the $r$ products are $L_{u_k}R_{v_k}$ for the columns $u_k$ of $U$ and $v_k$ of $V$.
-6. Reconstruct $M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu}$ as a check.
+6. Reconstruct $M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}R_{e_\nu}$ as a check.
 
 **The single-product test.** It is step 3 with threshold one. It has nothing to do with the ordinary rank of $M$.
 
@@ -292,7 +292,7 @@ $$
 | length | $2$ |
 | ordinary rank | $4$ |
 | determinant | $1$ |
-| minimal decomposition | $M=L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}=T_{tt}-T_{xt}-T_{zy}$ |
+| minimal decomposition | $M=L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}=L_tR_t-L_xR_t-L_zR_y$ |
 
 **The punchline.** The ordinary rank is $4$, the maximal value, and the length is $2$. Ordinary rank gives no information about length; coefficient rank does.
 
@@ -305,11 +305,11 @@ $$
 | $e_t,e_x,e_y,e_z$ | the coefficient basis of $\mathbb{B}$, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$ |
 | $L_a$ | left multiplication $x\mapsto ax$ |
 | $R_b$ | right multiplication $x\mapsto xb$ |
-| $T_{\mu\nu}$ | $L_{e_\mu}R_{e_\nu}$, the sixteen basis matrices |
-| $c_{\mu\nu}(A)$ | $\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ |
+| $L_{e_\mu}R_{e_\nu}$ | $L_{e_\mu}R_{e_\nu}$, the sixteen basis matrices |
+| $c_{\mu\nu}(A)$ | $\tfrac14\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}A)$ |
 | $c(A)$ | the $4\times4$ coefficient matrix |
 | $\ell(A)$ | the length, $\operatorname{rank}c(A)$ |
-| $T_{xt}^{\mathsf T}$ | the transpose, equal to $T_{xt}^{*}$ because the matrix is real |
+| $L_xR_t^{\mathsf T}$ | the transpose, equal to $L_xR_t^{*}$ because the matrix is real |
 
 ## Further Reading
 

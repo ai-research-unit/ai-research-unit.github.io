@@ -9,7 +9,7 @@ $$
 T^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b ,
 $$
 
-where $\alpha$ is the grade involution of the algebra; it is the ordinary sandwich of the twisted element, $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha$, and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ it is exactly the reflection $\rho_u$ on $V$. This is the geometric reason the signed family exists: the reflections of the quadratic space are the elementary motions, and the signed sandwich carries them.
+where $\alpha$ is the grade involution of the algebra; it is the ordinary sandwich of the twisted element, $T^{\alpha}_{a,b}=L_{a}R_{b}\circ\alpha$, and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ it is exactly the reflection $\rho_u$ on $V$. This is the geometric reason the signed family exists: the reflections of the quadratic space are the elementary motions, and the signed sandwich carries them.
 
 The article treats the signed sandwich from the side of the geometry of the chosen form. The operator itself, its composition law and its coset structure belong to *Two-Sided Operators with the Signed Product*, and the one-sided factors to *One-Sided Operators with the Signed Product*; both are Part II's and are quoted. What is added here is the reading on $V$: the reflection formula, the hyperplane fixed by the reflection, the parities of the determinant, the generation of the orthogonal group by the reflections, the versor action and the relation to the two-sided operators of the category. A word of disambiguation is needed at the start, because the corpus uses "signed" in two senses: the **signed inner conjugation** $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$ of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* twists the **parameter**, while the signed sandwich twists the **argument**; only the second is the subject of this article.
 
@@ -23,18 +23,18 @@ $$
 \boxed{\;T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b\;} .
 $$
 
-**Proposition (the relation to the unsigned family).** $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha=\alpha\circ T_{\alpha(a),\alpha(b)}$, and $T^{\alpha}_{1,1}=\alpha$. The signed sandwich is the ordinary sandwich composed with the grade involution, and the map $T_{a,b}\mapsto T_{a,b}\alpha$ is a bijection from the ordinary two-sided operators onto the signed ones.
+**Proposition (the relation to the unsigned family).** $T^{\alpha}_{a,b}=L_{a}R_{b}\circ\alpha=\alpha\circ L_{\alpha(a)}R_{\alpha(b)}$, and $T^{\alpha}_{1,1}=\alpha$. The signed sandwich is the ordinary sandwich composed with the grade involution, and the map $L_{a}R_{b}\mapsto L_{a}R_{b}\alpha$ is a bijection from the ordinary two-sided operators onto the signed ones.
 
 **Proof.** Immediate from $\alpha(xb)=\alpha(x)\alpha(b)$ and the definition; the bijection has inverse $S\mapsto S\circ\alpha$. The statement and its consequences are *Two-Sided Operators with the Signed Product*, quoted.
 
 **Proposition (the composition law and the coset structure).** For all $a,b,c,d$,
 
 $$
-\boxed{\;T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\,\alpha(d)b},
+\boxed{\;T^{\alpha}_{a,b}T^{\alpha}_{c,d}=L_{a\alpha(c)}R_{\,\alpha(d)b},
 \qquad
-T^{\alpha}_{a,b}T_{c,d}=T^{\alpha}_{a\alpha(c),\,\alpha(d)b},
+T^{\alpha}_{a,b}L_{c}R_{d}=T^{\alpha}_{a\alpha(c),\,\alpha(d)b},
 \qquad
-T_{a,b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db}\;} .
+L_{a}R_{b}T^{\alpha}_{c,d}=T^{\alpha}_{ac,\,db}\;} .
 $$
 
 The composite of two signed sandwiches is an **ordinary** sandwich, the two grade involutions cancelling; the family of invertible signed sandwiches is the coset $\mathcal{T}\alpha$ of the group $\mathcal{T}$ of ordinary ones, contains no identity, and is a torsor and not a group.
@@ -43,7 +43,7 @@ The composite of two signed sandwiches is an **ordinary** sandwich, the two grad
 
 ### The Two Senses of "Signed"
 
-**Remark (parameter against argument).** The corpus has two families that carry the adjective signed. The **signed inner conjugation** is $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, where the grade involution is applied to the **parameter** $x$; the operator is $\varepsilon_x$ times the inner conjugation, and its geometry is the geometry of the versors. The **signed sandwich** applies the involution to the **argument** $x$; it is $T_{a,b}\circ\alpha$, and its geometry is the geometry of the reflections. The two coincide neither in definition nor in purpose, and the article treats only the second; the first is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and the distinction is the reason both names exist.
+**Remark (parameter against argument).** The corpus has two families that carry the adjective signed. The **signed inner conjugation** is $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, where the grade involution is applied to the **parameter** $x$; the operator is $\varepsilon_x$ times the inner conjugation, and its geometry is the geometry of the versors. The **signed sandwich** applies the involution to the **argument** $x$; it is $L_{a}R_{b}\circ\alpha$, and its geometry is the geometry of the reflections. The two coincide neither in definition nor in purpose, and the article treats only the second; the first is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, and the distinction is the reason both names exist.
 
 **Remark (the parity of the sign).** The two families satisfy different composition laws because an automorphism acts on the argument by pulling through a product, while it acts on the parameter by pushing forward; this is the asymmetry recorded in *One-Sided Operators with the Signed Product*, and it is the reason the arguments of the signed sandwich are the plain elements while the arguments of the signed inner conjugation are the versors.
 
@@ -59,7 +59,7 @@ $$
 
 **Proof.** A vector is odd, so $\alpha(v)=-v$ and $T^{\alpha}_{u,u^{-1}}(v)=-uvu^{-1}$. Since $uv+vu=2B(u,v)$ and $u^2=\mathfrak{Q}(u)$, the product $uvu=2B(u,v)u-\mathfrak{Q}(u)v$, and $u^{-1}=u\,\mathfrak{Q}(u)^{-1}$; substituting gives $-uvu^{-1}=(\mathfrak{Q}(u)v-2B(u,v)u)\mathfrak{Q}(u)^{-1}=\rho_u(v)$. The formula is the reflection of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, quoted in the form needed here.
 
-**Corollary (the ordinary sandwich gives the negative).** The ordinary sandwich by $(u,u^{-1})$ is the negative of the reflection, $T_{u,u^{-1}}(v)=uvu^{-1}=-\rho_u(v)$. The signed product inserts exactly the sign that repairs this, at the cost of the identity: the signed family has no identity because $\alpha$ is not the identity on the odd part. This is the trade recorded in *Two-Sided Operators with the Signed Product*.
+**Corollary (the ordinary sandwich gives the negative).** The ordinary sandwich by $(u,u^{-1})$ is the negative of the reflection, $L_{u}R_{u^{-1}}(v)=uvu^{-1}=-\rho_u(v)$. The signed product inserts exactly the sign that repairs this, at the cost of the identity: the signed family has no identity because $\alpha$ is not the identity on the odd part. This is the trade recorded in *Two-Sided Operators with the Signed Product*.
 
 ### The Geometry of a Reflection
 
@@ -101,7 +101,7 @@ For $x=e_1e_2$ the element is even and a unit with $x^{-1}=e_2e_1=-e_1e_2$; the 
 
 ## Summary
 
-The **signed sandwich** $T^{\alpha}_{a,b}(x)=a\alpha(x)b$ is the ordinary sandwich of the twisted argument, $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha$, and it satisfies $T^{\alpha}_{a,b}T^{\alpha}_{c,d}=T_{a\alpha(c),\alpha(d)b}$: two signed sandwiches compose to an ordinary one, the two grade involutions cancelling, so the invertible signed sandwiches form the **coset** $\mathcal{T}\alpha$, a torsor without identity. The corpus uses "signed" in two senses, and the article separates them: the signed **inner conjugation** twists the parameter and belongs to the versor theory, while the signed **sandwich** twists the argument and belongs to the reflection theory. The geometric content is the **reflection formula** $T^{\alpha}_{u,u^{-1}}(v)=u\alpha(v)u^{-1}=-uvu^{-1}=\rho_u(v)$ for a vector $u$ with $\mathfrak{Q}(u)\ne0$, where the ordinary sandwich gave the negative $-\rho_u$; the reflection fixes pointwise the hyperplane $u^{\perp}$ and negates $u$, it is an orthogonal involution of determinant $-1$, and the composition of $k$ of them has determinant $(-1)^k$. By Cartan–Dieudonné the reflections generate the whole orthogonal group $O(V,\mathfrak{Q})$, and the versor action of the Clifford group realises them through the signed sandwich, with kernel the central units. The operator and its composition law are *Two-Sided Operators with the Signed Product*, the factors are *One-Sided Operators with the Signed Product*, and the degenerate case is *Reflections as Signed Two-Sided Operators on a Clifford Algebra*.
+The **signed sandwich** $T^{\alpha}_{a,b}(x)=a\alpha(x)b$ is the ordinary sandwich of the twisted argument, $T^{\alpha}_{a,b}=L_{a}R_{b}\circ\alpha$, and it satisfies $T^{\alpha}_{a,b}T^{\alpha}_{c,d}=L_{a\alpha(c)}R_{\alpha(d)b}$: two signed sandwiches compose to an ordinary one, the two grade involutions cancelling, so the invertible signed sandwiches form the **coset** $\mathcal{T}\alpha$, a torsor without identity. The corpus uses "signed" in two senses, and the article separates them: the signed **inner conjugation** twists the parameter and belongs to the versor theory, while the signed **sandwich** twists the argument and belongs to the reflection theory. The geometric content is the **reflection formula** $T^{\alpha}_{u,u^{-1}}(v)=u\alpha(v)u^{-1}=-uvu^{-1}=\rho_u(v)$ for a vector $u$ with $\mathfrak{Q}(u)\ne0$, where the ordinary sandwich gave the negative $-\rho_u$; the reflection fixes pointwise the hyperplane $u^{\perp}$ and negates $u$, it is an orthogonal involution of determinant $-1$, and the composition of $k$ of them has determinant $(-1)^k$. By Cartan–Dieudonné the reflections generate the whole orthogonal group $O(V,\mathfrak{Q})$, and the versor action of the Clifford group realises them through the signed sandwich, with kernel the central units. The operator and its composition law are *Two-Sided Operators with the Signed Product*, the factors are *One-Sided Operators with the Signed Product*, and the degenerate case is *Reflections as Signed Two-Sided Operators on a Clifford Algebra*.
 
 ## Summary of Notation
 
@@ -109,10 +109,10 @@ The **signed sandwich** $T^{\alpha}_{a,b}(x)=a\alpha(x)b$ is the ordinary sandwi
 |---|---|
 | $\alpha$ | Grade involution, $\alpha(x)=(-1)^{\deg x}x$ on homogeneous $x$ |
 | $T^{\alpha}_{a,b}(x)=a\alpha(x)b$ | Signed sandwich |
-| $T^{\alpha}_{a,b}=T_{a,b}\circ\alpha$ | Relation to the ordinary sandwich |
+| $T^{\alpha}_{a,b}=L_{a}R_{b}\circ\alpha$ | Relation to the ordinary sandwich |
 | $\mathcal{T}\alpha$ | The signed coset of the ordinary two-sided group; a torsor |
 | $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u$ | Reflection in $u^{\perp}$ |
-| $T^{\alpha}_{u,u^{-1}}=\rho_u$, $T_{u,u^{-1}}=-\rho_u$ | The sign repaired by the signed product |
+| $T^{\alpha}_{u,u^{-1}}=\rho_u$, $L_{u}R_{u^{-1}}=-\rho_u$ | The sign repaired by the signed product |
 | $\mathfrak{Q}(u)=B(u,u)$, $uv+vu=2B(u,v)$ | Form and Clifford relation |
 | $O(V,\mathfrak{Q})$, $\Gamma$ | Orthogonal group and Clifford (versor) group |
 | Cartan–Dieudonné | Every isometry is a product of reflections |

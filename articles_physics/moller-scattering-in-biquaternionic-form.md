@@ -12,7 +12,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\mathsf C_\mu p_{i\mu} = m$ on shell, $m = m_e$. The $\mathsf C_\mu$ are the canonical frame's cells, $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ for $k=1,2,3$. Here $T_{a,b}=L_aR_b$ multiplies on the left by $a$ and on the right by $b$. The **Mandelstam variables** are
+Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $iL_{e_\mu}R_{e_{\nu(\mu)}} p_{i\mu} = m$ on shell, $m = m_e$. The $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are the canonical frame's cells, $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$. The **Mandelstam variables** are
 
 $$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
@@ -50,13 +50,13 @@ $$
 The $t$-channel diagram contributes
 
 $$
-i\mathcal M_t = (-ie)^2\,\bar w(p_3)\mathsf C_\mu w(p_1)\,\frac{-i}{t}\,\bar w(p_4)\mathsf C_\mu w(p_2),
+i\mathcal M_t = (-ie)^2\,\bar w(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}} w(p_1)\,\frac{-i}{t}\,\bar w(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}} w(p_2),
 $$
 
 and the $u$-channel diagram, obtained by exchanging the two final electrons, contributes
 
 $$
-i\mathcal M_u = (-ie)^2\,\bar w(p_3)\mathsf C_\mu w(p_2)\,\frac{-i}{u}\,\bar w(p_4)\mathsf C_\mu w(p_1).
+i\mathcal M_u = (-ie)^2\,\bar w(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}} w(p_2)\,\frac{-i}{u}\,\bar w(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}} w(p_1).
 $$
 
 Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,
@@ -70,20 +70,20 @@ the **Pauli exchange sign**. This single sign is the whole of the interference s
 
 ## The Spin-Summed Matrix Element
 
-Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_\mu \mathsf C_\mu+m\,T_{e_t,e_t}$ the cell of the momentum shell,
+Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}+m\,L_{e_t}R_{e_t}$ the cell of the momentum shell,
 
 $$
 \frac14\sum_{\mathrm{spins}}|\mathcal M|^2
-= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\mathsf C_\mu D(p_1)\mathsf C_\nu D(p_3)]\operatorname{Tr}[\mathsf C_\mu D(p_2)\mathsf C_\nu D(p_4)]
+= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}} D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}} D(p_4)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\mathsf C_\mu D(p_2)\mathsf C_\nu D(p_3)]\operatorname{Tr}[\mathsf C_\mu D(p_1)\mathsf C_\nu D(p_4)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}} D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}} D(p_4)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)\mathsf C_\mu D(p_1)\mathsf C_\nu D(p_4)\mathsf C_\mu D(p_2)\mathsf C_\nu] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}} D(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}} D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}] \Big\},
 $$
 
-using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the trace identity $\operatorname{Tr}[\mathsf C_\mu \mathsf C_\nu \mathsf C_\rho \mathsf C_\sigma] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
+using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the trace identity $\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}} iL_{e_\rho}R_{e_{\nu(\rho)}} iL_{e_\sigma}R_{e_{\nu(\sigma)}}] = 4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
 \boxed{\;
@@ -133,7 +133,7 @@ of a few hundred parts per billion. The asymmetry was measured at SLAC (E158) an
 
 ### The amplitude as a product of two material-sector currents
 
-The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the material-sector object $\tilde J\in\mathbb M_-$, with the Clifford-odd element that a pure biquaternion product does not supply. The Møller amplitude is the second-quantized version of that same structure: the two factors $\bar w(p_{\mathrm{out}})\mathsf C_\mu w(p_{\mathrm{in}})$ are the two electron currents $\tilde J_{1\mu}$ and $\tilde J_{2\mu}$ in the framework's variables, both material-sector objects, contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the propagator — its canonical-quantization article constructs the quantized Maxwell field and its two-point function — so the amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the material-sector object $\tilde J\in\mathbb M_-$, with the Clifford-odd element that a pure biquaternion product does not supply. The Møller amplitude is the second-quantized version of that same structure: the two factors $\bar w(p_{\mathrm{out}})iL_{e_\mu}R_{e_{\nu(\mu)}} w(p_{\mathrm{in}})$ are the two electron currents $\tilde J_{1\mu}$ and $\tilde J_{2\mu}$ in the framework's variables, both material-sector objects, contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the propagator — its canonical-quantization article constructs the quantized Maxwell field and its two-point function — so the amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -183,8 +183,8 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $G_{\mathrm F}$ | Fermi constant |
 | $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| $\mathsf C_\mu$ | Cells of the canonical frame; $\mathsf C_0=iT_{e_t,e_x}$ and $\mathsf C_k=iT_{e_k,e_y}$ |
-| $D(p)=p_\mu \mathsf C_\mu+m\,T_{e_t,e_t}$ | Cell of the momentum shell |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
+| $D(p)=p_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}+m\,L_{e_t}R_{e_t}$ | Cell of the momentum shell |
 
 ## Further Reading
 

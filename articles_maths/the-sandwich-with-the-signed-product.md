@@ -39,12 +39,12 @@ where $\mathrm{Ad}_x(y) = xyx^{-1}$ is the inner conjugation and $\chi_x(y) = xy
 **Proposition (the composition law and the cancellation).** For units $x, z$,
 
 $$
-\Sigma_x \circ \Sigma_z = T_{x\alpha(z),\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
+\Sigma_x \circ \Sigma_z = L_{x\alpha(z)}R_{\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
 $$
 
 So the composite of two signed sandwiches is an **ordinary inner conjugation**, with parameter $x\alpha(z)$; the two grade involutions cancel, exactly as for the general signed product.
 
-**Proof.** By the composition law of *Two-Sided Operators with the Signed Product*, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = T_{x\alpha(z),\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.
+**Proof.** By the composition law of *Two-Sided Operators with the Signed Product*, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.
 
 **Corollary (the group generated).** The signed sandwiches generate together with their products the group
 
@@ -82,7 +82,7 @@ and the map $x \mapsto \Sigma_x\big|_V$ is a homomorphism from the Clifford grou
 
 **Proof.** The reflections generate $O(V,\mathfrak{Q})$ and each is a $\Sigma_a$; their products are composites of signed sandwiches, which by the cancellation are inner conjugations of products of vectors.
 
-**Remark (the three sandwiches distinguished).** The ordinary sandwich $T_{x,x^{-1}} = \mathrm{Ad}_x$ is multiplicative and has value $1$ at the unit but gives $-\rho_a$ on a vector; the twisted conjugation $\chi_x$ gives $\rho_a$ but uses $\alpha(x)^{-1}$, not $x^{-1}$; the signed sandwich $\Sigma_a$ gives $\rho_a$ and uses $x^{-1}$, at the price of a family that is a coset and not a group. The three are related by $\chi_x = \varepsilon_x\mathrm{Ad}_x$ and $\Sigma_x = -\varepsilon_x\chi_x$ on $V$.
+**Remark (the three sandwiches distinguished).** The ordinary sandwich $L_{x}R_{x^{-1}} = \mathrm{Ad}_x$ is multiplicative and has value $1$ at the unit but gives $-\rho_a$ on a vector; the twisted conjugation $\chi_x$ gives $\rho_a$ but uses $\alpha(x)^{-1}$, not $x^{-1}$; the signed sandwich $\Sigma_a$ gives $\rho_a$ and uses $x^{-1}$, at the price of a family that is a coset and not a group. The three are related by $\chi_x = \varepsilon_x\mathrm{Ad}_x$ and $\Sigma_x = -\varepsilon_x\chi_x$ on $V$.
 
 ## Worked Cases
 
@@ -113,7 +113,7 @@ The **signed sandwich** $\Sigma_x(y) = x\alpha(y)x^{-1}$ is the inner conjugatio
 | $\Sigma_x^{2} = \mathrm{Ad}_{x\alpha(x)}$ | Square of a signed sandwich |
 | $\Sigma_1 = \alpha$ | Value at the unit |
 | $\Sigma_a = \rho_a$ | Reflection by a vector of nonzero norm |
-| $\mathrm{Ad}_x$, $\chi_x$, $T_{x,x^{-1}}$ | Inner conjugation; twisted conjugation; ordinary sandwich |
+| $\mathrm{Ad}_x$, $\chi_x$, $L_{x}R_{x^{-1}}$ | Inner conjugation; twisted conjugation; ordinary sandwich |
 
 ## Further Reading
 

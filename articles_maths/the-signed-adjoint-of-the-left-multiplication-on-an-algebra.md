@@ -38,7 +38,7 @@ so it is a `*`-map from the involutive algebra $(A,\delta)$ to the involutive al
 
 **Corollary (specialization).** For $\alpha=\mathrm{id}$ one has $\delta=\sigma$ and $\Lambda(a)=L(a)$, so the theorem reduces to $L(a)^{*_\sigma}=L(\sigma(a))$ of *The Adjoint of the Left Multiplication on an Algebra*; for the twisted pairing the signed adjoint of the signed left multiplication is the signed left multiplication by the $\delta$-image, and the unsigned adjoint of the unsigned one is the unsigned right multiplication.
 
-*Proof.* Both statements are the definitions read at $\alpha=\mathrm{id}$, where $\mathcal{T}_{a,b}=T_{a,b}$ and $\delta=\sigma$.
+*Proof.* Both statements are the definitions read at $\alpha=\mathrm{id}$, where $\mathcal{T}_{a,b}=L_{a}R_{b}$ and $\delta=\sigma$.
 
 ## The Plain Adjoint and the Two Sides
 
@@ -107,7 +107,7 @@ The unitary signed left multiplications are exactly the operators $\Lambda(a)$ w
 **Theorem.** The signed sandwich is the product of a signed left multiplication and a right multiplication,
 
 $$
-\mathcal{T}_{a,b}=\Lambda(a)\,R_{\alpha(b)}=\alpha\,T_{\alpha(a),\alpha(b)},
+\mathcal{T}_{a,b}=\Lambda(a)\,R_{\alpha(b)}=\alpha\,L_{\alpha(a)}R_{\alpha(b)},
 $$
 
 and the signed conjugation is the special case
@@ -116,9 +116,9 @@ $$
 \rho_u=\mathcal{T}_{u,u^{-1}}=\Lambda(u)\,R_{\alpha(u)^{-1}} .
 $$
 
-The one-sided signed operators therefore generate the two-sided ones, and the unsigned sandwich is recovered as $T_{a,b}=L(a)R(b)=\mathcal{T}_{a,b}\alpha$.
+The one-sided signed operators therefore generate the two-sided ones, and the unsigned sandwich is recovered as $L_{a}R_{b}=L(a)R(b)=\mathcal{T}_{a,b}\alpha$.
 
-*Proof.* $\Lambda(a)R_{\alpha(b)}(x)=\Lambda(a)(x\alpha(b))=a\alpha(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b$; the second form is the reading $\mathcal{T}_{a,b}=\alpha T_{\alpha(a),\alpha(b)}$ of *The Signed Sandwich on an Algebra*, since $\alpha(\alpha(a)x\alpha(b))=a\alpha(x)b$. The reflection is the case $b=u^{-1}$, and the last identity is $\mathcal{T}_{a,b}\alpha=\alpha T_{\alpha(a),\alpha(b)}\alpha=T_{a,b}$.
+*Proof.* $\Lambda(a)R_{\alpha(b)}(x)=\Lambda(a)(x\alpha(b))=a\alpha(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b$; the second form is the reading $\mathcal{T}_{a,b}=\alpha L_{\alpha(a)}R_{\alpha(b)}$ of *The Signed Sandwich on an Algebra*, since $\alpha(\alpha(a)x\alpha(b))=a\alpha(x)b$. The reflection is the case $b=u^{-1}$, and the last identity is $\mathcal{T}_{a,b}\alpha=\alpha L_{\alpha(a)}R_{\alpha(b)}\alpha=L_{a}R_{b}$.
 
 **Corollary (the one-sided reading of the reflections).** Every reflection is a signed left multiplication followed by the inverse right multiplication of the $\alpha$-image, and its adjoint is the signed left multiplication by $\delta(u)$ followed by the inverse right multiplication of $\alpha\delta(u)$; the side switch of the plain pairing is confined to the second factor, and the signed pairing keeps both factors on their sides.
 

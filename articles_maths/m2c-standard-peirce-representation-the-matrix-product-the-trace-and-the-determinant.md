@@ -4,11 +4,11 @@
 
 **The compression.** The $M_4(\mathbb{C})$ Standard Peirce Representation writes the two regular matrices of an element in the standard Peirce frame as
 $$
-L^{P}(\tilde Q)=\mathrm I_2\otimes A,\qquad
-R^{P}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2,\qquad
+L(\tilde Q)=\mathrm I_2\otimes A,\qquad
+R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2,\qquad
 A=\mathsf M_2(\tilde Q).
 $$
-The same $2\times2$ block $A$ occurs twice on the diagonal of $L^{P}$, and the same block $A^{\mathsf T}$ occurs twice on the diagonal of $R^{P}$ in the order that pairs the two nilpotents. The second block is a copy of the first. This article keeps one block.
+The same $2\times2$ block $A$ occurs twice on the diagonal of $L$, and the same block $A^{\mathsf T}$ occurs twice on the diagonal of $R$ in the order that pairs the two nilpotents. The second block is a copy of the first. This article keeps one block.
 
 The result is the $2\times2$ model of the algebra itself. It is not a smaller regular representation: the regular matrices act on the four-dimensional algebra, while the $2\times2$ matrices act on one Peirce plane. The compression is the reading of each action on one plane, and it is exact because the two planes of a copy carry the same matrix.
 
@@ -85,7 +85,7 @@ S_\pm^{*}=T_\pm,
 $$
 as in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Two Spinor Spaces*.
 
-**The two blocks.** The left action on $S_+$ and the left action on $S_-$ have the same matrix; these are the two diagonal blocks of $L^{P}$. The right action on $T_+$ and the right action on $T_-$ have the same matrix; these are the two diagonal blocks of $R^{P}$. Keeping one block from each copy gives the $2\times2$ model. The other block is a copy, and no information is lost.
+**The two blocks.** The left action on $S_+$ and the left action on $S_-$ have the same matrix; these are the two diagonal blocks of $L$. The right action on $T_+$ and the right action on $T_-$ have the same matrix; these are the two diagonal blocks of $R$. Keeping one block from each copy gives the $2\times2$ model. The other block is a copy, and no information is lost.
 
 ## The Peirce Basis and the Two Orders
 
@@ -319,21 +319,21 @@ The map $\varrho$ is an anti-automorphism, not an automorphism, and it is not th
 
 **The relation to the $4\times4$ stitch.** The $4\times4$ stitch is
 $$
-R^{P}(\tilde Q)=\mathsf P\,L^{P}(\tilde Q)^{\mathsf T}\mathsf P,
+R(\tilde Q)=\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P,
 $$
-with $\mathsf P$ the swap of the two nilpotents. The compression keeps one block from each tensor factor. On that block the swap $\mathsf P$ exchanges the two nilpotent labels, and the two labels index the row and the column of the block; the block of the stitched matrix is therefore the transpose of the block of $L^{P}$. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch have no separate $2\times2$ image: the e-basis display is not compressed, and the swap acts on the tensor factors, of which the block keeps one at a time. The only trace of the swap is the exchange $X_+\leftrightarrow X_-$.
+with $\mathsf P$ the swap of the two nilpotents. The compression keeps one block from each tensor factor. On that block the swap $\mathsf P$ exchanges the two nilpotent labels, and the two labels index the row and the column of the block; the block of the stitched matrix is therefore the transpose of the block of $L$. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch have no separate $2\times2$ image: the e-basis display is not compressed, and the swap acts on the tensor factors, of which the block keeps one at a time. The only trace of the swap is the exchange $X_+\leftrightarrow X_-$.
 
 ## The Compression and the Switch
 
 **The two blocks.** In the order $\mathcal{P}$,
 $$
-L^{P}(\tilde Q)=\mathrm I_2\otimes A,\qquad
-R^{P}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2 .
+L(\tilde Q)=\mathrm I_2\otimes A,\qquad
+R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2 .
 $$
 In the order $\mathcal{P}'$,
 $$
-L^{P}(\tilde Q)=A\otimes\mathrm I_2,\qquad
-R^{P}(\tilde Q)=\mathrm I_2\otimes A^{\mathsf T}.
+L(\tilde Q)=A\otimes\mathrm I_2,\qquad
+R(\tilde Q)=\mathrm I_2\otimes A^{\mathsf T}.
 $$
 The left copy is block diagonal in $\mathcal{P}$ with the block $A$ twice; the right copy is block diagonal in $\mathcal{P}'$ with the block $A^{\mathsf T}$ twice. The two orders differ by the swap of the nilpotents. Each copy therefore has one block, repeated twice, and the compression keeps one copy of it.
 
@@ -344,15 +344,15 @@ $$
 $$
 They are algebra isomorphisms onto the left and right copies. Their inverses on the copies are the compressions $\kappa_L$ and $\kappa_R$. Then
 $$
-\kappa_L\bigl(L^{P}(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)=A,\qquad
-\kappa_R\bigl(R^{P}(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)^{\mathsf T}=A^{\mathsf T}.
+\kappa_L\bigl(L(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)=A,\qquad
+\kappa_R\bigl(R(\tilde Q)\bigr)=\mathsf M_2(\tilde Q)^{\mathsf T}=A^{\mathsf T}.
 $$
 Equivalently,
 $$
-\kappa_L\circ L^{P}=\mathsf M_2,\qquad
-\kappa_R\circ R^{P}=\Theta\circ\mathsf M_2,
+\kappa_L\circ L=\mathsf M_2,\qquad
+\kappa_R\circ R=\Theta\circ\mathsf M_2,
 $$
-where $\Theta(A)=A^{\mathsf T}$. The first composition is an algebra isomorphism; the second is an anti-isomorphism, because $R^{P}$ is anti-multiplicative and $\Theta$ is an anti-automorphism.
+where $\Theta(A)=A^{\mathsf T}$. The first composition is an algebra isomorphism; the second is an anti-isomorphism, because $R$ is anti-multiplicative and $\Theta$ is an anti-automorphism.
 
 **The fixed-order extraction is not multiplicative.** The block extraction in a fixed order is not an algebra map on the ambient $M_4(\mathbb{C})$. Let $\kappa_0$ be the extraction of the block in rows and columns $1,2$ of the matrix-unit order, and let $F_{ij}$ be the $4\times4$ matrix units. Then $\kappa_0(F_{13})=\kappa_0(F_{31})=0$, while $F_{13}F_{31}=F_{11}$ has block $E_{11}$:
 $$
@@ -362,17 +362,17 @@ The compression is defined on the two copies, in their own orders, not on the am
 
 **The invariants under compression.** The tensor forms give
 $$
-\operatorname{Tr}L^{P}(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
-\det L^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
+\operatorname{Tr}L(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
+\det L(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
 $$
 $$
-\operatorname{Tr}R^{P}(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,\qquad
-\det R^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
+\operatorname{Tr}R(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,\qquad
+\det R(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,
 $$
 and
 $$
-\operatorname{rank}L^{P}(\tilde Q)=2\operatorname{rank}A,\qquad
-\operatorname{rank}R^{P}(\tilde Q)=2\operatorname{rank}A .
+\operatorname{rank}L(\tilde Q)=2\operatorname{rank}A,\qquad
+\operatorname{rank}R(\tilde Q)=2\operatorname{rank}A .
 $$
 The factors $2$ and the square are the only changes from the $2\times2$ invariants.
 
@@ -384,9 +384,9 @@ S=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 $$
 The matrix $S$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $S$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
 
-**What does not compress.** The two $4\times4$ families commute, $L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)=R^{P}(\tilde Q_2)L^{P}(\tilde Q_1)$, because they act on the two tensor factors. The two $2\times2$ matrices need not commute, and they are not operators on one space. The mixed trace
+**What does not compress.** The two $4\times4$ families commute, $L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1)$, because they act on the two tensor factors. The two $2\times2$ matrices need not commute, and they are not operators on one space. The mixed trace
 $$
-\operatorname{Tr}\bigl(L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)\bigr)=4Q_{1t}Q_{2t}
+\operatorname{Tr}\bigl(L(\tilde Q_1)R(\tilde Q_2)\bigr)=4Q_{1t}Q_{2t}
 $$
 is a trace over both factors; it does not descend to a trace of $A_1A_2^{\mathsf T}$. The two bases are two bases of the same $2\times2$ space, not bases of two different subspaces. These are the three places where the compression changes the statement, and they are the reason the $2\times2$ article is not a verbatim copy of the $4\times4$ one.
 
@@ -419,7 +419,7 @@ AA^{\mathsf T}=E_{22}\neq E_{11}=A^{\mathsf T}A .
 $$
 The two matrices are the left and right matrices of the same element, but they act on the two different planes $S_+$ and $T_+$. There is no product of the two actions in the compressed model, and no commutation theorem to state.
 
-**The mixed trace.** The product $A_1A_2^{\mathsf T}$ is a matrix product, not the compression of $L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)$. Its trace is
+**The mixed trace.** The product $A_1A_2^{\mathsf T}$ is a matrix product, not the compression of $L(\tilde Q_1)R(\tilde Q_2)$. Its trace is
 $$
 \operatorname{Tr}(A_1A_2^{\mathsf T})=2\operatorname{Sc}\bigl(\tilde Q_1\varrho(\tilde Q_2)\bigr),
 $$
@@ -455,8 +455,8 @@ and it is non-degenerate. The factor is $\tfrac12$ in the $2\times2$ model and $
 
 **The trace of the regular matrices.** The compression gives
 $$
-\operatorname{Tr}L^{P}(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
-\operatorname{Tr}R^{P}(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,
+\operatorname{Tr}L(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
+\operatorname{Tr}R(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,
 $$
 which is the $4Q_t$ of the $4\times4$ article. The factor $2$ is the number of blocks.
 
@@ -503,10 +503,10 @@ $$
 $$
 so the units of the algebra are the matrices of nonzero norm. The rank of $A$ is $2$ when $A$ is invertible, $1$ when $A$ is nonzero and singular, and $0$ when $A=0$. The compression gives
 $$
-\det L^{P}(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,\qquad
-\operatorname{rank}L^{P}(\tilde Q)=2\operatorname{rank}A,
+\det L(\tilde Q)=(\det A)^2=\langle\tilde Q\rangle_{\natural}^2,\qquad
+\operatorname{rank}L(\tilde Q)=2\operatorname{rank}A,
 $$
-and the same for $R^{P}$.
+and the same for $R$.
 
 **The square.** The determinant of the $2\times2$ matrix is the norm; the determinant of the $4\times4$ matrix is the square of the norm. The trace of the $2\times2$ matrix is half the trace of the $4\times4$ matrix. These two factors are the quantitative content of the compression.
 
@@ -592,21 +592,21 @@ The trace and the determinant of §*The Trace* and §*The Determinant* are the s
 
 **The eigenbasis.** The two projectors give two eigenvectors: every nonzero column of $\rho_+$ is an eigenvector for $\lambda_+$, and every nonzero column of $\rho_-$ for $\lambda_-$. The diagonalising matrix collects one column of each,
 $$
-\mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
+\mathsf D_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
 $$
 the first column of $2B\rho_+$ and the second column of $2B\rho_-$.
 
 **The determinant.** Expanding,
 $$
-\det\mathsf C_Q=(B-Q_z)^2+Q_x^2+Q_y^2=2B(B-Q_z).
+\det\mathsf D_Q=(B-Q_z)^2+Q_x^2+Q_y^2=2B(B-Q_z).
 $$
 It vanishes exactly when $B=Q_z$, that is on the axis of the frame, where the two chosen columns both vanish and this chart degenerates.
 
 **Theorem (diagonalisation).**
 $$
-\mathsf C_Q^{-1}A\,\mathsf C_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+\mathsf D_Q^{-1}A\,\mathsf D_Q=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 \qquad
-\mathsf C_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
+\mathsf D_Q^{-1}=\frac{1}{2B(B-Q_z)}\begin{pmatrix}B-Q_z&-(Q_x-iQ_y)\\Q_x+iQ_y&B-Q_z\end{pmatrix},
 $$
 whenever $B\neq Q_z$.
 
@@ -614,19 +614,19 @@ whenever $B\neq Q_z$.
 
 **The second chart.** When $B=Q_z$ the first chart is singular. The second chart is
 $$
-\mathsf C_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
+\mathsf D_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
 \qquad
-\det\mathsf C_Q'=-2B(B+Q_z),
+\det\mathsf D_Q'=-2B(B+Q_z),
 $$
 with the same diagonalisation whenever $B\neq-Q_z$. The two determinants cannot both vanish: $B\neq0$, and $B=Q_z$ with $B=-Q_z$ would give $B=0$.
 
 **The freedom.** The changes that keep the diagonalisation are
 $$
-\mathsf C_Q\mapsto\lambda\,\mathsf C_Q D,\qquad \lambda\neq0,\qquad D\text{ invertible and diagonal},
+\mathsf D_Q\mapsto\lambda\,\mathsf D_Q D,\qquad \lambda\neq0,\qquad D\text{ invertible and diagonal},
 $$
-because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf C_Q^{-1}A\mathsf C_Q$, so the freedom is the two parameters of $D$.
+because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf D_Q^{-1}A\mathsf D_Q$, so the freedom is the two parameters of $D$.
 
-**Not the frame change of this article.** The matrix $\mathsf C_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
+**Not the frame change of this article.** The matrix $\mathsf D_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf D_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
 
 ## The Adjugate and the Inverse
 
@@ -796,7 +796,7 @@ The $2\times2$ Standard Peirce representation is the compression of the $4\times
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
-The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
+The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf D_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
 
 ## Summary of Notation
 
@@ -823,7 +823,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
 | $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$ | the spectral projectors of the element, $\vec\Xi=-i\vec Q/B$ |
-| $\mathsf C_Q$ | the diagonalising matrix, $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
+| $\mathsf D_Q$ | the diagonalising matrix, $\mathsf D_Q^{-1}A\mathsf D_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
 | $\operatorname{adj}A=(\operatorname{Tr}A)\mathrm I_2-A$ | the adjugate, the image of $\tilde Q^{\natural}$ |
 | $P,N,H,K$ | the four norms: plain, quaternionic, Hermitian, Krein |
 | $E_{ij}$ | the matrix units |

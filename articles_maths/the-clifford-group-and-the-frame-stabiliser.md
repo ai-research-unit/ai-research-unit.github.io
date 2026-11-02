@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A frame is a choice. The Clifford relations fix the algebra, not the five frame cells (the four generators and their product): any conjugate $U\mathsf C_\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five cells; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
+A frame is a choice. The Clifford relations fix the algebra, not the five frame cells (the four generators and their product): any conjugate $UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The **stabiliser of the frame** is the set of $U$ that fix each of the five cells; it is the group of scalars $\mathbb{C}^{\times}I$. The **Clifford group** is the set of $U$ that preserve the span of the four generators up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.
 
 The distinction is the exact content of the phrase "the frame is not canonical". The Clifford relations are invariant under the Clifford group; the five-element subset is invariant only under the scalars. The spin group is the even part of Pin and the double cover of $SO(4,\mathbb{C})$; in the biquaternion picture its two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group of the two-sided matrices is a discrete subgroup of the Clifford group, of order $32$, and its image in the orthogonal group is the group of sign changes of the frame.
 
@@ -10,15 +10,15 @@ This article fixes the stabilisers, proves the exact sequence, computes the Lie 
 
 ## The Action on Frames
 
-**The action.** Let $\mathsf C_0,\mathsf C_1,\mathsf C_2,\mathsf C_3$ be a frame in $M_4(\mathbb{C})$, satisfying
+**The action.** Let $iR_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying
 $$
-\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I,\qquad
+\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I,\qquad
 g=\operatorname{diag}(1,-1,-1,-1).
 $$
 The reference frame, the five cells written as two-sided operators, stands in the appendix.
 For $U\in GL_4(\mathbb{C})$, put
 $$
-U\cdot\mathsf C_\mu=U\mathsf C_\mu U^{-1}.
+U\cdotiL_{e_\mu}R_{e_{\nu(\mu)}}=UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}.
 $$
 The conjugated matrices satisfy the same relations, because conjugation preserves anticommutators and the identity. The action is a left action of $GL_4(\mathbb{C})$ on the set of frames.
 
@@ -30,7 +30,7 @@ where $\operatorname{Stab}(\mathsf C)$ is the stabiliser of the ordered tuple.
 
 **The stabiliser of the tuple.** The five frame cells generate $M_4(\mathbb{C})$: the sixteen antisymmetrised products are a basis. If $U$ commutes with all five, it commutes with the whole algebra, hence lies in its centre:
 $$
-\operatorname{Stab}(\mathsf C_0,\dots,\mathsf C_3)
+\operatorname{Stab}(iR_{e_x},\dots,iL_{e_z}R_{e_y})
 =\mathbb{C}^{\times}I .
 $$
 This is the exact stabiliser. It has complex dimension one, and the frame space has dimension $16-1=15$.
@@ -41,12 +41,12 @@ This is the exact stabiliser. It has complex dimension one, and the frame space 
 
 **The definition.** The **Clifford group** of the frame is
 $$
-\Gamma=\{U\in GL_4(\mathbb{C}):U\mathsf C_\mu U^{-1}=\Lambda_{\mu\nu}\mathsf C_\nu
+\Gamma=\{U\in GL_4(\mathbb{C}):UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}=\Lambda_{\mu\nu}iL_{e_\nu}R_{e_{\nu(\nu)}}
 \text{ for some }\Lambda\in O(4,\mathbb{C})\}.
 $$
 It is the stabiliser of the **span**
 $$
-V=\operatorname{span}_{\mathbb{C}}\{\mathsf C_0,\mathsf C_1,\mathsf C_2,\mathsf C_3\},
+V=\operatorname{span}_{\mathbb{C}}\{iR_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y}\},
 $$
 not of the tuple.
 
@@ -86,7 +86,7 @@ The scalars are the kernel; the Pin group is the norm-$\pm1$ part. In the real L
 
 **The Lie algebra of the Clifford group.** An element $X\in\mathfrak{gl}_4(\mathbb{C})$ is in the Lie algebra of $\Gamma$ when
 $$
-[X,\mathsf C_\mu]\in V
+[X,iL_{e_\mu}R_{e_{\nu(\mu)}}]\in V
 $$
 for every $\mu$. The solutions are the scalars and the bivectors:
 $$
@@ -94,12 +94,12 @@ $$
 $$
 of dimension $1+6=7$.
 
-**The proof.** The bivectors $\mathsf C_{\mu\nu}=\tfrac12[\mathsf C_\mu,\mathsf C_\nu]$ satisfy
+**The proof.** The bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}}\nu}=\tfrac12[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ satisfy
 $$
-[\mathsf C_{\mu\nu},\mathsf C_\rho]
-=2\bigl(g_{\nu\rho}\mathsf C_\mu-g_{\mu\rho}\mathsf C_\nu\bigr)\in V,
+[iL_{e_\mu}R_{e_{\nu(\mu)}}\nu},iL_{e_\rho}R_{e_{\nu(\rho)}}]
+=2\bigl(g_{\nu\rho}iL_{e_\mu}R_{e_{\nu(\mu)}}-g_{\mu\rho}iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr)\in V,
 $$
-so $\Lambda^{2}V$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,\mathsf C_\mu]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,\mathsf C_\mu]$ is $2g(X_1,\mathsf C_\mu)$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators. $\square$
+so $\Lambda^{2}V$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,iL_{e_\mu}R_{e_{\nu(\mu)}}]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,iL_{e_\mu}R_{e_{\nu(\mu)}}]$ is $2g(X_1,iL_{e_\mu}R_{e_{\nu(\mu)}})$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators. $\square$
 
 **The structure.** The Lie algebra is the direct sum of the centre $\mathbb{C}I$ and the semisimple $\Lambda^{2}V\cong\mathfrak{so}(4,\mathbb{C})$. The bracket of two bivectors is a bivector, and the centre is central. The Lie algebra is reductive, not semisimple: the centre is one-dimensional.
 
@@ -169,8 +169,8 @@ The first fixes the five frame cells; the second fixes their span up to an ortho
 
 | group | condition | dimension |
 |---|---|---|
-| $\operatorname{Stab}(\mathsf C)$ | $U\mathsf C_\mu U^{-1}=\mathsf C_\mu$ | $1$ |
-| $\Gamma$ | $U\mathsf C_\mu U^{-1}=\Lambda_{\mu\nu}\mathsf C_\nu$ | $7$ |
+| $\operatorname{Stab}(\mathsf C)$ | $UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}=iL_{e_\mu}R_{e_{\nu(\mu)}}$ | $1$ |
+| $\Gamma$ | $UiL_{e_\mu}R_{e_{\nu(\mu)}} U^{-1}=\Lambda_{\mu\nu}iL_{e_\nu}R_{e_{\nu(\nu)}}$ | $7$ |
 | $GL_4(\mathbb{C})$ | — | $16$ |
 | $O(4,\mathbb{C})$ | $\Lambda$ orthogonal | $6$ |
 | $\mathrm{Spin}(4,\mathbb{C})$ | even part, norm one | $6$ |
@@ -230,8 +230,8 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf C_0,\dots,\mathsf C_3$ | the four frame cells, $\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I$ |
-| $\mathsf C_{\mu\nu}$ | the bivector products $\tfrac12[\mathsf C_\mu,\mathsf C_\nu]$ |
+| $iR_{e_x},\dots,iL_{e_z}R_{e_y}$ | the four frame cells, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}\nu}$ | the bivector products $\tfrac12[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ |
 | $V$ | the span of the four frame cells, $\Lambda^{2}V\cong\mathfrak{so}(4,\mathbb{C})$ |
 | $\Gamma$ | the Clifford group of the frame |
 | $\Gamma^{+}$ | its even part |

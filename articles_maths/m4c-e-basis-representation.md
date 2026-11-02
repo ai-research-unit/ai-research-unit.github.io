@@ -115,7 +115,7 @@ $$
 $$
 The matrix unit $E_{11}$ has rank one; it is not the left matrix of any element, and neither is any other matrix of rank one or three. A general $4\times4$ matrix is an endomorphism of the carrier, not an element of the algebra.
 
-**What is lost.** Every quantitative statement of this article is a statement about the four-dimensional image: the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the doubled eigenvalues and the six rows of matrix conditions hold there and fail on a general matrix. A reader who meets $M_4(\mathbb{C})$ in the operators articles meets all sixteen dimensions at once, and the twelve transverse ones belong to an endomorphism rather than to an element. The distance is measured below: a general matrix is a sum of at most four products $T_{\mu\nu}^{e}=L_\mu^{e}R_\nu^{e}$, and the number needed is its length (§*The Coefficient Matrix and the Length*).
+**What is lost.** Every quantitative statement of this article is a statement about the four-dimensional image: the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the doubled eigenvalues and the six rows of matrix conditions hold there and fail on a general matrix. A reader who meets $M_4(\mathbb{C})$ in the operators articles meets all sixteen dimensions at once, and the twelve transverse ones belong to an endomorphism rather than to an element. The distance is measured below: a general matrix is a sum of at most four products $L_\mu^{e}R_\nu^{e}$, and the number needed is its length (§*The Coefficient Matrix and the Length*).
 
 ## The L and R Bases
 

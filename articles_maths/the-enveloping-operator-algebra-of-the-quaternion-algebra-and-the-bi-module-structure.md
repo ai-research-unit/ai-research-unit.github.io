@@ -8,9 +8,9 @@ The left and right multiplications of $\mathbb{H}$ generate together an algebra 
 
 **Definition.** The **enveloping algebra** of $\mathbb{H}$ is $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$, the tensor product of the algebra with its opposite, of real dimension $16$.
 
-**Theorem (the sandwich action).** The assignment $\tilde q_1\otimes\tilde q_2^{\mathrm{opp}}\mapsto T_{\tilde q_1,\tilde q_2}$, where $T_{\tilde q_1,\tilde q_2}(\tilde q)=\tilde q_1\tilde q\tilde q_2$, extends uniquely to a representation of $\mathbb{H}^{\mathrm{e}}$ on the real vector space $\mathbb{H}$, and makes ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ a module over $\mathbb{H}^{\mathrm{e}}$.
+**Theorem (the sandwich action).** The assignment $\tilde q_1\otimes\tilde q_2^{\mathrm{opp}}\mapsto L_{\tilde q_1}R_{\tilde q_2}$, where $L_{\tilde q_1}R_{\tilde q_2}(\tilde q)=\tilde q_1\tilde q\tilde q_2$, extends uniquely to a representation of $\mathbb{H}^{\mathrm{e}}$ on the real vector space $\mathbb{H}$, and makes ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ a module over $\mathbb{H}^{\mathrm{e}}$.
 
-*Proof.* The sandwich $T_{\tilde q_1,\tilde q_2}$ is bilinear in $(\tilde q_1,\tilde q_2)$, so it defines a linear map on the tensor product $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$. It is multiplicative: $T_{\tilde q_1,\tilde q_2}T_{\tilde q_3,\tilde q_4}(\tilde q)=\tilde q_1\tilde q_3\,\tilde q\,\tilde q_4\tilde q_2=T_{\tilde q_1\tilde q_3,\tilde q_4\tilde q_2}(\tilde q)$, and $\tilde q_1\tilde q_3$ is the product in $\mathbb{H}$ while $\tilde q_4\tilde q_2$ is the product in $\mathbb{H}^{\mathrm{opp}}$ of $\tilde q_2^{\mathrm{opp}}$ and $\tilde q_4^{\mathrm{opp}}$; so the map is an algebra homomorphism, and the associative law of the algebra is exactly the compatibility of the two actions.
+*Proof.* The sandwich $L_{\tilde q_1}R_{\tilde q_2}$ is bilinear in $(\tilde q_1,\tilde q_2)$, so it defines a linear map on the tensor product $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$. It is multiplicative: $L_{\tilde q_1}R_{\tilde q_2}L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_1\tilde q_3\,\tilde q\,\tilde q_4\tilde q_2=L_{\tilde q_1\tilde q_3}R_{\tilde q_4\tilde q_2}(\tilde q)$, and $\tilde q_1\tilde q_3$ is the product in $\mathbb{H}$ while $\tilde q_4\tilde q_2$ is the product in $\mathbb{H}^{\mathrm{opp}}$ of $\tilde q_2^{\mathrm{opp}}$ and $\tilde q_4^{\mathrm{opp}}$; so the map is an algebra homomorphism, and the associative law of the algebra is exactly the compatibility of the two actions.
 
 ## The Identification with the Endomorphisms
 
@@ -80,7 +80,7 @@ Thus $\mathbb{H}^{\mathrm{e}}$ contains the two commuting copies $L(\mathbb{H})$
 
 *Proof.* The compatibility of the two actions is associativity, as in the sandwich theorem; faithfulness is injectivity of the representation, that is the identification. Simplicity and the module theory are *Modules over the Quaternion Algebra*, above this article in this category.
 
-**Corollary.** The enveloping algebra is the endomorphism algebra of its own standard module: $\mathbb{H}^{\mathrm{e}}=\operatorname{End}_\mathbb{R}({}_\mathbb{H}\mathbb{H}_\mathbb{H})$, and the centre of $\mathbb{H}^{\mathrm{e}}$ is the scalars acting by $T_{\lambda e_t,\lambda e_t}$, a one-dimensional space.
+**Corollary.** The enveloping algebra is the endomorphism algebra of its own standard module: $\mathbb{H}^{\mathrm{e}}=\operatorname{End}_\mathbb{R}({}_\mathbb{H}\mathbb{H}_\mathbb{H})$, and the centre of $\mathbb{H}^{\mathrm{e}}$ is the scalars acting by $L_{\lambda e_t}R_{\lambda e_t}$, a one-dimensional space.
 
 *Proof.* The identification with the endomorphisms; an operator commuting with all sandwiches is a scalar, since it must equal both a left and a right multiplication, and only the scalars are central.
 

@@ -12,7 +12,7 @@ $$
 h(x,y)=x^{*}y,
 $$
 
-and the derived product is $x\star y=xy^{*}$. The operator families are $L_{a}(x)=ax$, $R_{b}(x)=xb^{*}$, $T_{p,q}(x)=pxq$ and $\mathcal{T}_{a,b}(x)=ax^{*}b$. Here $L_{a}$ multiplies by the **associative** product; *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, following Part I, writes $L_{a}(x)=a\star x=ax^{*}$ for the multiplication by the derived product, which is the conjugate left multiplication $\mathcal{T}_{a,1}$ of the families above, and it is that operator, not $L_{a}$, which the trace formulas of Part I adjoint. A continuous functional $\tau:A\to\mathbb{K}$ is **central** when $\tau(uv)=\tau(vu)$ for all $u,v$ and **compatible** when $\tau(u^{*})=\varsigma(\tau(u))$.
+and the derived product is $x\star y=xy^{*}$. The operator families are $L_{a}(x)=ax$, $R_{b}(x)=xb^{*}$, $L_{p}R_{q}(x)=pxq$ and $\mathcal{T}_{a,b}(x)=ax^{*}b$. Here $L_{a}$ multiplies by the **associative** product; *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, following Part I, writes $L_{a}(x)=a\star x=ax^{*}$ for the multiplication by the derived product, which is the conjugate left multiplication $\mathcal{T}_{a,1}$ of the families above, and it is that operator, not $L_{a}$, which the trace formulas of Part I adjoint. A continuous functional $\tau:A\to\mathbb{K}$ is **central** when $\tau(uv)=\tau(vu)$ for all $u,v$ and **compatible** when $\tau(u^{*})=\varsigma(\tau(u))$.
 
 ## The Canonical Pairing
 
@@ -64,9 +64,9 @@ $$
 
 **Proof.** Suppose $T^{\dagger}$ exists. Replace $x$ by $xa$ in the defining identity: on the left, $h(T(xa),y)=(T(xa))^{*}y$, and on the right, $h(xa,T^{\dagger}y)=a^{*}h(x,T^{\dagger}y)=a^{*}\bigl((Tx)^{*}y\bigr)=a^{*}(Tx)^{*}y$. The two are equal for every $y$, so $(T(xa))^{*}=a^{*}(Tx)^{*}$ and, taking the involution, $T(xa)=(Tx)\,a$: the operator is right $A$-linear. Evaluating at $x=1$ gives $T(a)=T(1)a$, and replacing $a$ by $x$ gives $T=L_{T(1)}$. Conversely $L_{c}$ is bounded with $\lVert L_{c}\rVert=\lVert c\rVert$, and $h(L_{c}x,y)=(cx)^{*}y=x^{*}c^{*}y=x^{*}(c^{*}y)=h(x,L_{c^{*}}y)$, so $L_{c}$ is adjointable with adjoint $L_{c^{*}}$.
 
-**Corollary (the adjointable subalgebra).** The adjointable bounded linear operators are exactly $\{L_{c}:c\in A\}$, a closed subalgebra of $B(A)$ isometrically isomorphic to $A$; the right multiplications $R_{b}$ are adjointable exactly when $b$ is central, and the two-sided operators $T_{p,q}$ exactly when $q$ is central.
+**Corollary (the adjointable subalgebra).** The adjointable bounded linear operators are exactly $\{L_{c}:c\in A\}$, a closed subalgebra of $B(A)$ isometrically isomorphic to $A$; the right multiplications $R_{b}$ are adjointable exactly when $b$ is central, and the two-sided operators $L_{p}R_{q}$ exactly when $q$ is central.
 
-**Proof.** The set is the image of the isometry $c\mapsto L_{c}$ of *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, hence closed and isometric to $A$. For $R_{b}(x)=xb^{*}$ the defining identity evaluated at $x=1$ forces $R_{b}^{\dagger}=L_{b}$, and the remaining condition is $b x^{*}=x^{*}b$ for every $x$, that is the centrality of $b$; then $R_{b}^{\dagger}=L_{b}$. The case of $T_{p,q}=L_{p}R_{q^{*}}$ follows from the composite law below and the centrality of $q^{*}$.
+**Proof.** The set is the image of the isometry $c\mapsto L_{c}$ of *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, hence closed and isometric to $A$. For $R_{b}(x)=xb^{*}$ the defining identity evaluated at $x=1$ forces $R_{b}^{\dagger}=L_{b}$, and the remaining condition is $b x^{*}=x^{*}b$ for every $x$, that is the centrality of $b$; then $R_{b}^{\dagger}=L_{b}$. The case of $L_{p}R_{q}^{*}}$ follows from the composite law below and the centrality of $q^{*}$.
 
 **Remark (the contrast with Part I).** Over the trace pairing of *The Sesquilinear Adjoint Operator* every bounded operator is adjointable, because the pairing is perfect and cyclicity moves any parameter; over the canonical pairing only the left multiplications are, and the cyclicity is what the reduction to a scalar form restores. The characterisation is nonetheless the exact topological analogue of the Hilbert-module fact that the adjointable operators on the regular module of a Hilbert module are its module endomorphisms, the left multiplications being those of the algebra over itself.
 
@@ -129,7 +129,7 @@ the equality being the centrality of $\tau$.
 **Theorem (the adjoint exists after the reduction).** Let $\tau$ be a continuous central functional whose reduction $h_{\tau}$ is **perfect**, the map $y\mapsto h_{\tau}(\cdot,y)$ a bijection onto $A^{*}$, so that every bounded linear functional on $A$ is represented by a vector through $h_{\tau}$ — the hypothesis of *The Sesquilinear Adjoint Operator*, satisfied for instance when $A$ is a Hilbert space and $h_{\tau}$ its inner product. Then every bounded operator is adjointable for $h_{\tau}$, and in particular
 
 $$
-\boxed{\;L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=\mathcal{T}_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad T_{p,q}^{\dagger}=T_{p^{*},q^{*}},\qquad \mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}\;},
+\boxed{\;L_{a}^{\dagger}=L_{a^{*}},\qquad L^{\varsigma}_{a}{}^{\dagger}=\mathcal{T}_{1,a},\qquad R_{b}^{\dagger}=R_{b^{*}},\qquad L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}},\qquad \mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}\;},
 $$
 
 the formulas of *The Sesquilinear Adjoint Operator*, where $L_{a}(x)=ax$ is the linear left multiplication and $L^{\varsigma}_{a}(x)=ax^{*}$ the conjugate one.
@@ -167,7 +167,7 @@ The canonical pairing $h(x,y)=x^{*}y$ of a sesqualgebra is $A$-valued, conjugate
 | $T^{\dagger}$, $h(Tx,y)=h(x,T^{\dagger}y)$ | the adjoint of a bounded linear operator |
 | $S^{\dagger}$, $h(Sx,y)=h(x,S^{\dagger}y)^{*}$ | the adjoint of a bounded conjugate-linear operator, the twisted rule |
 | $T^{\dagger}=L_{c^{*}}\iff T=L_{c}$ | the adjointable linear operators are the left multiplications |
-| $R_{b}^{\dagger}=L_{b}$ ($b$ central), $T_{p,q}^{\dagger}=L_{(pq)^{*}}$ ($q$ central) | the degenerate adjointable one-sided and two-sided operators for the canonical pairing |
+| $R_{b}^{\dagger}=L_{b}$ ($b$ central), $L_{p}R_{q}^{\dagger}=L_{(pq)^{*}}$ ($q$ central) | the degenerate adjointable one-sided and two-sided operators for the canonical pairing |
 | $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$, $(\lambda T)^{\dagger}=\varsigma(\lambda)T^{\dagger}$ | the adjoint operation is a $\varsigma$-semilinear anti-automorphism |
 | $S=\mathcal{T}_{1,c}$, $S(x)=x^{*}c$ | an adjointable conjugate-linear operator is the right sandwich $\mathcal{T}_{1,c}$ |
 | $S^{\dagger}=\mathcal{T}_{1,c}=S\iff c^{*}[x,y]=0\ \forall x,y$ | the criterion; an adjointable conjugate-linear operator is self-adjoint |

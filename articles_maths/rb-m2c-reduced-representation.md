@@ -119,7 +119,7 @@ The kernel of a zero divisor is the *other* idempotent line and the image is its
 
 **The two-sided operator.** For a pair of elements,
 $$
-T_{\breve Q,\breve P}(\breve X)=\breve Q\breve X\breve P=\breve Q\breve P\,\breve X=L_{\breve Q\breve P}(\breve X),
+L_{\breve Q}R_{\breve P}(\breve X)=\breve Q\breve X\breve P=\breve Q\breve P\,\breve X=L_{\breve Q\breve P}(\breve X),
 $$
 so the pair collapses to the product, as in every commutative category of the block. The operators article computes the fibre of that collapse and the length; here the only fact needed is that the envelope $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ acts through the multiplication, with a two-dimensional image.
 

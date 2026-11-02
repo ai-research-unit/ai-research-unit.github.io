@@ -67,7 +67,7 @@ $$
 
 **This is the one-site Jordan–Wigner transformation**, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the *other* sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{m_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a *second* site is present.
 
-**A note on the identification.** The parent article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and the dictionary companion fix the module-level identification $i\vec e_k\mapsto T_{e_k,e_z}$, the cells $T_{a,b}=L_aR_b$ acting by $\psi\mapsto a\psi b$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* gives the two-dimensional representative $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:
+**A note on the identification.** The parent article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and the dictionary companion fix the module-level identification $i\vec e_k\mapsto L_{e_k}R_{e_z}$, the cells $L_{a}R_{b}$ acting by $\psi\mapsto a\psi b$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* gives the two-dimensional representative $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:
 
 $$
 \mathsf{M}_2(\vec\Upsilon_x)=\sigma_+ ,
@@ -228,7 +228,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 ## Companion Articles
 
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=i\vec e_z$.
-- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto T_{e_k,e_z}$ and the module action that fixes the one-site map.
+- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto L_{e_k}R_{e_z}$ and the module action that fixes the one-site map.
 
 ## Summary
 
@@ -267,7 +267,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $\sigma_{x,j}=(\prod_{k<j}\sigma_{z,k})(c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j)$ | Inverse map |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Both descriptions generate the full matrix algebra |
 | $(-1)^{F}=\prod_j\sigma_{z,j}$ | Whole-chain parity; boundary-condition sectors |
-| $i\vec e_k\mapsto T_{e_k,e_z}$ | Cell of the bivector $i\vec e_k$; its module action is the Pauli action |
+| $i\vec e_k\mapsto L_{e_k}R_{e_z}$ | Cell of the bivector $i\vec e_k$; its module action is the Pauli action |
 
 ## Further Reading
 

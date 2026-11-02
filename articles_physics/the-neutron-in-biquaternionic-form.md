@@ -46,7 +46,7 @@ D_\mu = \partial/\partial Q_\mu + \frac{i}{\hbar}A_\mu Ϙ,
 [D_\mu,D_\nu] = \frac{i}{\hbar}F_{\mu\nu}Ϙ,
 $$
 
-with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$). The operator $Ϙ$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to the chirality cell $\mathsf C_5=-iT_{e_t,e_z}$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. The cells act by $T_{a,b}\psi=a\psi b$, with $L_a\psi=a\psi$, $R_b\psi=\psi b$, so that $\mathsf C_5\psi=-i\,e_t\psi e_z$ and $\mathsf C_5^2=I_4$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
+with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$). The operator $Ϙ$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to the chirality cell $-iL_{e_t}R_{e_z}$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. The cells act by $L_{a}R_{b}\psi=a\psi b$, with $L_a\psi=a\psi$, $R_b\psi=\psi b$, so that $-iR_{e_z}\psi=-i\,e_t\psi e_z$ and $(-iR_{e_z})^{2}=I_4$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
 
 $$
 Ϙ \;=\; \mathrm{diag}\big(ϙ_L I_2,\ ϙ_R I_2\big) \;\cong\; \mathrm{diag}\big(ϙ_L,ϙ_L,ϙ_R,ϙ_R\big),
@@ -59,7 +59,7 @@ so its spectrum is $\{ϙ_L,ϙ_R\}$, each with multiplicity two. A single-particl
 - If $ϙ_R=0$ and $ϙ_L\neq0$, then $\ker Ϙ = \bar{S}$, the right-handed block.
 - If $ϙ_L=ϙ_R=0$ the whole module is neutral (the trivially uncoupled case).
 
-Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**. When $ϙ_L=0$ the neutral space is $S$, on which $\mathsf C_5=-1$; when $ϙ_R=0$ it is $\bar{S}$, with $\mathsf C_5=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**. When $ϙ_L=0$ the neutral space is $S$, on which $-iR_{e_z}=-1$; when $ϙ_R=0$ it is $\bar{S}$, with $-iR_{e_z}=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: on the module, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -161,9 +161,9 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field; anti-Hermitian conjugate |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module; unique simple left module |
-| $T_{a,b}=L_aR_b$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms; $\mathsf C_5=-iT_{e_t,e_z}$ |
-| $\mathsf C_5 = -iT_{e_t,e_z} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell, $\mathsf C_5\psi=-i\,e_t\psi e_z$, $\mathsf C_5^2=I_4$ |
-| $P_L = \tfrac12(I_4-\mathsf C_5)$, $P_R = \tfrac12(I_4+\mathsf C_5)$ | Chiral projectors |
+| $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms; $-iL_{e_t}R_{e_z}$ |
+| $-iR_{e_z} = -iL_{e_t}R_{e_z} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell, $-iR_{e_z}\psi=-i\,e_t\psi e_z$, $(-iR_{e_z})^{2}=I_4$ |
+| $P_L = \tfrac12(I_4iR_{e_z})$, $P_R = \tfrac12(I_4-iR_{e_z})$ | Chiral projectors |
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |

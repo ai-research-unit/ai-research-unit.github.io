@@ -9,7 +9,7 @@ The subject belongs to the operator theory of the sesqualgebras, and its point i
 Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*; the unit satisfies $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing is $\varphi(x,y)=\tau(xy^{*})$, $R$-linear in its first variable, $\varsigma$-semilinear in its second and perfect. The derived product is $x\star y=xy^{*}$, and the operators are
 
 $$
-L_{a}(x)=a\star x=ax^{*}, \qquad R_{b}(x)=x\star b=xb^{*}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
+L_{a}(x)=a\star x=ax^{*}, \qquad R_{b}(x)=x\star b=xb^{*}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad L_{p}R_{q}(x)=pxq .
 $$
 
 The adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$, and the adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$; both exist and are unique, as *The Sesquilinear Adjoint Operator* proves.
@@ -34,7 +34,7 @@ $$
 
 **Remark.** The failure of linearity is the scalar defect of the second slot: for $a\neq0$ the operator $L_{a}$ is $R$-linear if and only if $\varsigma=\mathrm{id}$. The general criterion of *Sesqualgebras* for the sesquilinear product keeps the alternative $(\lambda-\varsigma(\lambda))ax=0$ for all $\lambda$ and $x$; the hypotheses here remove it, because the evaluation at $x=1$ gives $(\varsigma(\lambda)-\lambda)a=0$, and a nonzero value of $\varsigma(\lambda)-\lambda$ would force $a=0$: the ring has no zero divisors, and the algebra is torsion-free, a torsion element of $A$ lying in the radical of the perfect pairing. The right multiplication $R_{b}(x)=xb^{*}$ is $R$-linear in every case, because the variable enters the first slot and the parameter the second; the asymmetry of the two slots of the product is therefore visible in the two operators already, before any adjoint is taken.
 
-**Remark.** The assignment $a\mapsto L_{a}$ is $R$-linear and injective, so the algebra $A$ sits as an $R$-submodule of the $\varsigma$-semilinear operators on $A$; it is not a subalgebra of the endomorphism algebra, because the composite of two conjugate-linear operators is $R$-linear, and the composite of two conjugate left multiplications is the plain two-sided operator $L_{a}L_{b}=T_{a,b^{*}}$, $x\mapsto axb^{*}$. The family of the left multiplications is a copy of $A$ as an $R$-module, and its composites leave the family for the plain two-sided operators.
+**Remark.** The assignment $a\mapsto L_{a}$ is $R$-linear and injective, so the algebra $A$ sits as an $R$-submodule of the $\varsigma$-semilinear operators on $A$; it is not a subalgebra of the endomorphism algebra, because the composite of two conjugate-linear operators is $R$-linear, and the composite of two conjugate left multiplications is the plain two-sided operator $L_{a}L_{b}=L_{a}R_{b^{*}}$, $x\mapsto axb^{*}$. The family of the left multiplications is a copy of $A$ as an $R$-module, and its composites leave the family for the plain two-sided operators.
 
 ### The Single-Slot Adjoint that it has not
 
@@ -91,10 +91,10 @@ The composite of a conjugate-linear operator with its adjoint is linear, so the 
 **Theorem (the products).** For all $a,b\in A$,
 
 $$
-L_{a}^{\dagger}L_{b}=R_{a^{*}b}, \qquad L_{b}L_{a}^{\dagger}=T_{ba^{*},1} .
+L_{a}^{\dagger}L_{b}=R_{a^{*}b}, \qquad L_{b}L_{a}^{\dagger}=L_{ba^{*}}R_{1} .
 $$
 
-**Proof.** For the first, $(L_{a}^{\dagger}L_{b})(x)=L_{a}^{\dagger}(bx^{*})=(bx^{*})^{*}a=xb^{*}a$, and the right multiplication with parameter $a^{*}b$ is $R_{a^{*}b}(x)=x(a^{*}b)^{*}=xb^{*}a$. For the second, $(L_{b}L_{a}^{\dagger})(x)=L_{b}(x^{*}a)=b(x^{*}a)^{*}=ba^{*}x=T_{ba^{*},1}(x)$.
+**Proof.** For the first, $(L_{a}^{\dagger}L_{b})(x)=L_{a}^{\dagger}(bx^{*})=(bx^{*})^{*}a=xb^{*}a$, and the right multiplication with parameter $a^{*}b$ is $R_{a^{*}b}(x)=x(a^{*}b)^{*}=xb^{*}a$. For the second, $(L_{b}L_{a}^{\dagger})(x)=L_{b}(x^{*}a)=b(x^{*}a)^{*}=ba^{*}x=L_{ba^{*}}R_{1}(x)$.
 
 **Remark.** The products are the plain one-sided operators: the derived product does not appear, because the two conjugate-linear factors contribute the star that cancels. The first product is a right multiplication and the second a plain left multiplication, so the composite of the adjoint pair fills the two one-sided families that the derived product itself does not produce from the pairs; the contrast with the conjugate left multiplication, which is derived and not plain, is the whole content of the two displays.
 
@@ -103,12 +103,12 @@ $$
 **Theorem (the two squares).** For every $a\in A$,
 
 $$
-\boxed{\;L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=T_{aa^{*},1}\;} .
+\boxed{\;L_{a}^{\dagger}L_{a}=R_{a^{*}a}, \qquad L_{a}L_{a}^{\dagger}=L_{aa^{*}}R_{1}\;} .
 $$
 
 Both squares are self-adjoint, and both are the identity when $a$ is unitary.
 
-**Proof.** The two identities are the theorem above at $b=a$. For the self-adjointness, $R_{c}^{\dagger}=R_{c^{*}}$, so $R_{a^{*}a}^{\dagger}=R_{(a^{*}a)^{*}}=R_{a^{*}a}$; and $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, so $T_{aa^{*},1}^{\dagger}=T_{(aa^{*})^{*},1}=T_{aa^{*},1}$, since $aa^{*}$ is Hermitian. If $aa^{*}=a^{*}a=1$ then $R_{a^{*}a}=R_{1}=\mathrm{id}$ and $T_{aa^{*},1}=T_{1,1}=\mathrm{id}$.
+**Proof.** The two identities are the theorem above at $b=a$. For the self-adjointness, $R_{c}^{\dagger}=R_{c^{*}}$, so $R_{a^{*}a}^{\dagger}=R_{(a^{*}a)^{*}}=R_{a^{*}a}$; and $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$, so $L_{aa^{*}}R_{1}^{\dagger}=L_{(aa^{*})^{*}}R_{1}=L_{aa^{*}}R_{1}$, since $aa^{*}$ is Hermitian. If $aa^{*}=a^{*}a=1$ then $R_{a^{*}a}=R_{1}=\mathrm{id}$ and $L_{aa^{*}}R_{1}=L_{1}R_{1}=\mathrm{id}$.
 
 **Remark.** The two squares are different operators, a right multiplication by $a^{*}a$ and a plain left multiplication by $aa^{*}$, and the difference is the noncommutativity of $A$; both parameters are Hermitian, which is why both squares are self-adjoint, and the two squares are the identity exactly for the unitary elements.
 
@@ -135,7 +135,7 @@ $$
 **The complex matrices.** Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, $\varsigma$ the conjugation, $\tau$ the trace and $\varphi(X,Y)=\operatorname{tr}(XY^{*})$. The conjugate left multiplication is $L_{A}(X)=AX^{*}$, and
 
 $$
-L_{A}^{\dagger}(Y)=Y^{*}A, \qquad L_{A}^{\dagger}L_{B}=R_{A^{*}B}, \qquad L_{B}L_{A}^{\dagger}=T_{BA^{*},1} .
+L_{A}^{\dagger}(Y)=Y^{*}A, \qquad L_{A}^{\dagger}L_{B}=R_{A^{*}B}, \qquad L_{B}L_{A}^{\dagger}=L_{BA^{*}}R_{1} .
 $$
 
 The criterion reads $L_{A}^{\dagger}=L_{A}$ if and only if $A=\lambda 1$ is a scalar matrix, and a unitary $U$ gives the antiunitary $L_{U}(X)=UX^{*}$ with $L_{U}^{\dagger}=L_{U}^{-1}$. For $n=2$ and $A=E_{12}$ the adjoint is $L_{A}^{\dagger}(Y)=Y^{*}E_{12}$, which sends $Y=E_{11}$ to $E_{11}E_{12}=E_{12}$ and $Y=E_{12}$ to $E_{21}E_{12}=E_{22}$, while $L_{A}$ sends $E_{11}$ to $0$ and $E_{12}$ to $E_{11}$; the two operators differ, and the element $E_{12}$ is not central.
@@ -162,7 +162,7 @@ so every left multiplication is self-adjoint, in agreement with the criterion, e
 
 ## Summary
 
-The conjugate left multiplication $L_{a}(x)=a\star x=ax^{*}$ is the one-sided operator that the sesquilinear product attaches to the first slot, and it is $\varsigma$-semilinear while the right multiplication is $R$-linear. For $\varsigma\neq\mathrm{id}$ it has no adjoint under the linear rule, the obstruction being the parity mismatch $\varsigma(\lambda)-\lambda$ tested at the unit through $\tau(a)$; the adjoint it does have is taken by the twisted rule and is the sandwich $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, $y\mapsto y^{*}a$, so that the family of the one-sided operators is not stable under the adjoint. The composite of the operator with its adjoint is linear and plainly one-sided: $L_{a}^{\dagger}L_{b}=R_{a^{*}b}$ is a right multiplication and $L_{b}L_{a}^{\dagger}=T_{ba^{*},1}$ a plain left multiplication, the derived product disappearing in the composition. The two squares $L_{a}^{\dagger}L_{a}=R_{a^{*}a}$ and $L_{a}L_{a}^{\dagger}=T_{aa^{*},1}$ are self-adjoint and are the identity exactly for the unitary elements, where $L_{a}$ is an antiunitary operator. The operator is self-adjoint if and only if the element is central; on a commutative algebra every one is; and in the two degenerations of the involution the article becomes the classical adjointness of the left and the right multiplication.
+The conjugate left multiplication $L_{a}(x)=a\star x=ax^{*}$ is the one-sided operator that the sesquilinear product attaches to the first slot, and it is $\varsigma$-semilinear while the right multiplication is $R$-linear. For $\varsigma\neq\mathrm{id}$ it has no adjoint under the linear rule, the obstruction being the parity mismatch $\varsigma(\lambda)-\lambda$ tested at the unit through $\tau(a)$; the adjoint it does have is taken by the twisted rule and is the sandwich $L_{a}^{\dagger}=\mathcal{T}_{1,a}$, $y\mapsto y^{*}a$, so that the family of the one-sided operators is not stable under the adjoint. The composite of the operator with its adjoint is linear and plainly one-sided: $L_{a}^{\dagger}L_{b}=R_{a^{*}b}$ is a right multiplication and $L_{b}L_{a}^{\dagger}=L_{ba^{*}}R_{1}$ a plain left multiplication, the derived product disappearing in the composition. The two squares $L_{a}^{\dagger}L_{a}=R_{a^{*}a}$ and $L_{a}L_{a}^{\dagger}=L_{aa^{*}}R_{1}$ are self-adjoint and are the identity exactly for the unitary elements, where $L_{a}$ is an antiunitary operator. The operator is self-adjoint if and only if the element is central; on a commutative algebra every one is; and in the two degenerations of the involution the article becomes the classical adjointness of the left and the right multiplication.
 
 ## Summary of Notation
 
@@ -171,12 +171,12 @@ The conjugate left multiplication $L_{a}(x)=a\star x=ax^{*}$ is the one-sided op
 | $L_{a}(x)=ax^{*}$ | the conjugate left multiplication by $a$, $\varsigma$-semilinear |
 | $R_{b}(x)=xb^{*}$ | the right multiplication by $b$, $R$-linear |
 | $\mathcal{T}_{a,b}(x)=ax^{*}b$ | the sandwich of the pair $(a,b)$ |
-| $T_{p,q}(x)=pxq$ | the plain two-sided operator |
+| $L_{p}R_{q}(x)=pxq$ | the plain two-sided operator |
 | $L_{a}^{\dagger}=\mathcal{T}_{1,a}$ | the adjoint of the conjugate left multiplication, $y\mapsto y^{*}a$ |
 | $L_{a}^{\dagger\dagger}=L_{a}$ | the adjoint operation is of order two |
 | $L_{a}^{\dagger}L_{b}=R_{a^{*}b}$ | the right regular family from the adjoint pair |
-| $L_{b}L_{a}^{\dagger}=T_{ba^{*},1}$ | the plain left regular family from the adjoint pair |
-| $L_{a}^{\dagger}L_{a}=R_{a^{*}a}$, $L_{a}L_{a}^{\dagger}=T_{aa^{*},1}$ | the two self-adjoint squares |
+| $L_{b}L_{a}^{\dagger}=L_{ba^{*}}R_{1}$ | the plain left regular family from the adjoint pair |
+| $L_{a}^{\dagger}L_{a}=R_{a^{*}a}$, $L_{a}L_{a}^{\dagger}=L_{aa^{*}}R_{1}$ | the two self-adjoint squares |
 | $L_{a}^{\dagger}=L_{a}\iff a\in Z(A)$ | the criterion of self-adjointness |
 | $a$ unitary $\Rightarrow$ $L_{a}$ antiunitary | the unitary case |
 

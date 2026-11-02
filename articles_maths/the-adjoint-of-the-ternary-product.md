@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $T_{x\star y,1}$ by the derived product, the middle slot the sandwich $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
+The ternary product $\{x,y,z\}=xy^{*}z$ has three slots, and each of them turns the ternary operator $\Theta_{x,y}$ of the pair $(x,y)$ into an operator of the earlier entries of the group: the third slot gives the plain left multiplication $L_{x\star y}R_{1}$ by the derived product, the middle slot the sandwich $\mathcal{T}_{x,z}$, and the first slot the plain right multiplication, as *The Ternary Product as an Operator* records. The present article takes the adjoint of the ternary operator for the sesquilinear pairing $\varphi(x,y)=\tau(xy^{*})$. The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule of *The Sesquilinear Adjoint Operator*, and the whole article turns on the single identity
 
 $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},
@@ -13,7 +13,7 @@ the adjoint of the ternary operator of a pair being the ternary operator of the 
 Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $1^{*}=1$, and the function $\tau:A\to R$ is $R$-linear, central and compatible with the involution, $\tau(ab)=\tau(ba)$ and $\tau(x^{*})=\varsigma(\tau(x))$, with the pairing $\varphi(x,y)=\tau(xy^{*})$ perfect. The derived product is $x\star y=xy^{*}$, the ternary product is $\{x,y,z\}=xy^{*}z$, and
 
 $$
-\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad T_{p,q}(x)=pxq .
+\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}, \qquad \mathcal{T}_{a,b}(x)=ax^{*}b, \qquad L_{p}R_{q}(x)=pxq .
 $$
 
 The adjoint of an $R$-linear operator $T$ is the operator $T^{\dagger}$ with $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, and the adjoint of a $\varsigma$-semilinear operator $S$ is the operator $S^{\dagger}$ with $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$; both exist and are unique by *The Sesquilinear Adjoint Operator*.
@@ -55,12 +55,12 @@ $$
 **Theorem (the quadratic representation is self-adjoint).** For every $x\in A$ the operator $\Theta_{x,x}$ is self-adjoint, and
 
 $$
-\boxed{\;\Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1}\;} .
+\boxed{\;\Theta_{x,x}=L_{x\star x}R_{1},\qquad \Theta_{x,x}^{\dagger}=L_{(x\star x)^{*}}R_{1}\;} .
 $$
 
-**Proof.** The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=T_{x\star x,1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$.
+**Proof.** The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=L_{x\star x}R_{1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$.
 
-**Remark.** The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint whatever the involution and whatever the algebra. In the degenerate case of a commutative algebra with $*=\mathrm{id}$ the operator $U_x=\Theta_{x,x}$ is $2T_{x,1}^{2}-T_{x^{2},1}$ of *The Ternary Product as an Operator*, and its self-adjointness is the classical self-adjointness of the quadratic representation; the general theorem recovers it.
+**Remark.** The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint whatever the involution and whatever the algebra. In the degenerate case of a commutative algebra with $*=\mathrm{id}$ the operator $U_x=\Theta_{x,x}$ is $2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}$ of *The Ternary Product as an Operator*, and its self-adjointness is the classical self-adjointness of the quadratic representation; the general theorem recovers it.
 
 ### The Hermitian Criterion
 
@@ -72,7 +72,7 @@ $$
 
 The operator of a pair is therefore self-adjoint exactly when the derived product of the pair is Hermitian.
 
-**Proof.** By the adjoint theorem, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two operators agree exactly when the derived products $x\star y$ and $y\star x$ agree, because the factorisation $\Theta_{p,q}=T_{p\star q,1}$ identifies the operator with its derived product and the left multiplication does not lose the element. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement of the two derived products is the Hermitian condition.
+**Proof.** By the adjoint theorem, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two operators agree exactly when the derived products $x\star y$ and $y\star x$ agree, because the factorisation $\Theta_{p,q}=L_{p\star q}R_{1}$ identifies the operator with its derived product and the left multiplication does not lose the element. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement of the two derived products is the Hermitian condition.
 
 **Corollary (the Hermitian pairs).** Every diagonal operator $\Theta_{x,x}$ is self-adjoint, since $x\star x=xx^{*}$ is Hermitian; more generally $\Theta_{x,y}$ is self-adjoint for the pairs whose derived product is Hermitian, for instance $y=cx$ with $c$ a central Hermitian element, where $x\star y=xx^{*}c$ and $y\star x=cxx^{*}$ agree. The condition is not automatic, and it is not met for $y=x^{*}$ in general: for $A=M_2(\mathbb{C})$ and $x=E_{11}+E_{12}$ the derived products $x\star x^{*}=x^{2}=E_{11}+E_{12}$ and $x^{*}\star x=(x^{*})^{2}=E_{11}+E_{21}$ differ, so the operator of that pair is not self-adjoint, while the diagonal $\Theta_{x,x}$ is.
 
@@ -85,15 +85,15 @@ The three readings of the ternary product each have an adjoint of the same group
 **Theorem (the readings and their adjoints).** For all $x,y,z\in A$,
 
 $$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
+\Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x}, \qquad L_{x\star y}R_{1}^{\dagger}=L_{(x\star y)^{*}}R_{1} .
 $$
 
-**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.
+**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=\mathcal{T}_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=L_{x\star y}R_{1}$ it reproduces the first identity.
 
 **Corollary (no new adjoint).** The adjoint of the ternary operator of a pair is the plain left multiplication by the star of its derived product,
 
 $$
-\Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}=T_{y\star x,1},
+\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}=L_{y\star x}R_{1},
 $$
 
 so the adjoint of the ternary operator is a ternary operator again, and the family of the pair operators is stable under the adjoint.
@@ -130,7 +130,7 @@ $$
 \Theta_{x,y}(z)=xyz=yxz=\Theta_{y,x}(z),
 $$
 
-so every operator of a pair is self-adjoint, in agreement with the criterion, and the quadratic representation $U_x=\Theta_{x,x}=2T_{x,1}^{2}-T_{x^{2},1}$ is self-adjoint. The two degenerations therefore meet in the commutative case, and there the reversal of the triple is the commutativity of the product.
+so every operator of a pair is self-adjoint, in agreement with the criterion, and the quadratic representation $U_x=\Theta_{x,x}=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}$ is self-adjoint. The two degenerations therefore meet in the commutative case, and there the reversal of the triple is the commutativity of the product.
 
 ## Worked Cases
 
@@ -150,7 +150,7 @@ Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the quaternioni
 
 ## Summary
 
-The ternary operator $\Theta_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is the ternary operator of the swapped pair, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$; equivalently $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$, the reversal of the triple. The adjoint operation is of order two and exchanges the two parities of the parameters, and it is the star on the derived product in the factorisation $\Theta_{x,y}=T_{x\star y,1}$, so that $\Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}$. The diagonal $\Theta_{x,x}$ is self-adjoint for every element, which is the self-adjointness of the quadratic representation of the Jordan theory, and the operator of a general pair is self-adjoint exactly when the derived product of the pair is Hermitian; the criterion is not automatic, the pair $(E_{11},E_{21})$ of $M_2(\mathbb{C})$ being the smallest witness. The adjoint permutes the three readings of the ternary product among themselves and leaves the family of the pair operators stable, in contrast with the conjugate left multiplication, whose adjoint does not stay in the one-sided family. In the two degenerations of the involution the article reduces to the bilinear case on the one hand and to the commutative case on the other, where every element is Hermitian and every operator of a pair is self-adjoint.
+The ternary operator $\Theta_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its adjoint for the pairing $\varphi(x,y)=\tau(xy^{*})$ is the ternary operator of the swapped pair, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$; equivalently $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$, the reversal of the triple. The adjoint operation is of order two and exchanges the two parities of the parameters, and it is the star on the derived product in the factorisation $\Theta_{x,y}=L_{x\star y}R_{1}$, so that $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}$. The diagonal $\Theta_{x,x}$ is self-adjoint for every element, which is the self-adjointness of the quadratic representation of the Jordan theory, and the operator of a general pair is self-adjoint exactly when the derived product of the pair is Hermitian; the criterion is not automatic, the pair $(E_{11},E_{21})$ of $M_2(\mathbb{C})$ being the smallest witness. The adjoint permutes the three readings of the ternary product among themselves and leaves the family of the pair operators stable, in contrast with the conjugate left multiplication, whose adjoint does not stay in the one-sided family. In the two degenerations of the involution the article reduces to the bilinear case on the one hand and to the commutative case on the other, where every element is Hermitian and every operator of a pair is self-adjoint.
 
 ## Summary of Notation
 
@@ -159,11 +159,11 @@ The ternary operator $\Theta_{x,y}(z)=xy^{*}z$ of a pair is $R$-linear, and its 
 | $\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\}$ | the ternary operator of the pair $(x,y)$, $R$-linear |
 | $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$ | the adjoint swaps the two parameters |
 | $\varphi(\{x,y,z\},w)=\varphi(z,\{y,x,w\})$ | the reversal of the triple |
-| $\Theta_{x,x}^{\dagger}=\Theta_{x,x}=T_{x\star x,1}$ | the diagonal is self-adjoint: the quadratic representation |
+| $\Theta_{x,x}^{\dagger}=\Theta_{x,x}=L_{x\star x}R_{1}$ | the diagonal is self-adjoint: the quadratic representation |
 | $\Theta_{x,y}^{\dagger}=\Theta_{x,y}\iff(x\star y)^{*}=x\star y$ | the Hermitian criterion |
 | $\mathcal{T}_{a,b}^{\dagger}=\mathcal{T}_{b,a}$ | the adjoint of the sandwich |
-| $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$ | the adjoint of the plain two-sided operator |
-| $\Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}=T_{y\star x,1}$ | the adjoint as a plain left multiplication |
+| $L_{p}R_{q}^{\dagger}=L_{p^{*}}R_{q^{*}}$ | the adjoint of the plain two-sided operator |
+| $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}=L_{y\star x}R_{1}$ | the adjoint as a plain left multiplication |
 
 ## Further Reading
 

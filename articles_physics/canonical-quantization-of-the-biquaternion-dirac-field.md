@@ -45,7 +45,7 @@ $$
 \mathcal{L}=\bar{\psi}\,(\mathbb{D}-m)\,\psi,
 $$
 
-a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\mathsf C_0$, the Hermitian conjugate followed by the timelike cell of the reference frame, $\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, with the spatial cells $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
+a real Lorentz scalar. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$, and variation with respect to $\psi$ returns its adjoint; the two are equivalent under $\bar\psi=\psi^\dagger\,iR_{e_x}$, the Hermitian conjugate followed by the timelike cell of the reference frame, $iR_{e_x}\psi=i\,e_t\,\psi\,e_x$, with the spatial cells $iL_{e_k}R_{e_y}\psi=i\,\vec e_k\,\psi\,e_y$. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
 
 ### The Conjugate Momentum and Its Constraint
 
@@ -113,8 +113,8 @@ $$
 $$
 
 $$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\sum_\mu \mathsf C_\mu p_\mu+m,\qquad
-\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\sum_\nu \mathsf C_\nu p_\nu-m .
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu+m,\qquad
+\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_\nu-m .
 $$
 
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
@@ -179,8 +179,8 @@ $$
 where $\vec\Delta=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y$. The two phases are **opposite**: the positive-frequency term carries $\exp(+i\vec p\cdot\vec\Delta)$ and the negative-frequency term $\exp(-i\vec p\cdot\vec\Delta)$. From the spin sums one obtains the two useful combinations
 
 $$
-\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\mathsf C_0+\mathsf C_0\sum_k \mathsf C_kp_k,\qquad
-\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\mathsf C_0+\mathsf C_0\sum_k \mathsf C_kp_k,
+\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\,iR_{e_x}+iR_{e_x}\sum_k iL_{e_k}R_{e_y}p_k,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\,iR_{e_x}+iR_{e_x}\sum_k iL_{e_k}R_{e_y}p_k,
 $$
 
 so that, with $\theta=\vec p\cdot\vec\Delta$,
@@ -188,8 +188,8 @@ so that, with $\theta=\vec p\cdot\vec\Delta$,
 $$
 \sum_r\Big[w^{(r)}w^{(r){}^{*}}\exp(+i\theta)+v^{(r)}v^{(r){}^{*}}\exp(-i\theta)\Big]
 =E_{\vec p}\cos\theta\,I_4\cdot 2
-+2\cos\theta\,\mathsf C_0\sum_k \mathsf C_kp_k
-+2im\sin\theta\,\mathsf C_0 .
++2\cos\theta\,iR_{e_x}\sum_k iL_{e_k}R_{e_y}p_k
++2im\sin\theta\,iR_{e_x} .
 $$
 
 The first term is even in $\vec p$ and gives $2E_{\vec p}\delta^{(3)}(\vec\Delta)$ after dividing by $2E_{\vec p}$; the second and third terms are odd in $\vec p$ and vanish under symmetric integration. Hence the equal-time relation holds. The identity was checked numerically for a representative momentum ($m=1.3$, $|\vec p|=0.9$, $\vec p$ along $\vec e_z$): the spin sums above and their two combinations reproduce the right-hand sides to a maximum absolute error of $4.4\times10^{-16}$. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
@@ -222,8 +222,8 @@ which is the Pauli exclusion principle as an algebraic identity: the square of a
 The conserved energy of the free Dirac field is
 
 $$
-H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\mathsf C_0\mathsf C_k\nabla_k+m\mathsf C_0\big)\psi^{\mathrm{fop}}
-=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\mathsf C_k\nabla_k+m\big)\psi^{\mathrm{fop}},
+H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\,iR_{e_x}\,iL_{e_k}R_{e_y}\nabla_k+m\,iR_{e_x}\big)\psi^{\mathrm{fop}}
+=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\,iL_{e_k}R_{e_y}\nabla_k+m\big)\psi^{\mathrm{fop}},
 $$
 
 the integrand being the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform of the Lagrangian of the preceding section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result
@@ -264,7 +264,7 @@ $$
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$
 
-and the normal-ordered electric charge, from $j_\mu=\bar\psi\mathsf C_\mu\psi$ with $j_0=\psi^\dagger\psi$, is
+and the normal-ordered electric charge, from $j_\mu=\bar\psiiL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ with $j_0=\psi^\dagger\psi$, is
 
 $$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
@@ -403,15 +403,15 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Classical biquaternion Dirac field |
 | $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\mathsf C_0$ | Dirac spinor (spinor module) and its adjoint |
-| $\mathsf C_0\psi=i\,e_t\,\psi\,e_x$, $\mathsf C_k\psi=i\,\vec e_k\,\psi\,e_y$ | Cells of the reference frame, acting on the spinor module |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\mathsf C_\mu$; $g=-\eta$ |
+| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\,iR_{e_x}$ | Dirac spinor (spinor module) and its adjoint |
+| $iR_{e_x}\psi=i\,e_t\,\psi\,e_x$, $iL_{e_k}R_{e_y}\psi=i\,\vec e_k\,\psi\,e_y$ | Cells of the reference frame, acting on the spinor module |
+| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $iL_{e_\mu}R_{e_{\nu(\mu)}}$; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p_\mu=(E_{\vec p},\vec p)$, $\sum_\mu \mathsf C_\mu p_\mu=\mathsf C_0E_{\vec p}-\sum_k \mathsf C_kp_k$ | Four-momentum and its contraction |
+| $p_\mu=(E_{\vec p},\vec p)$, $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu=iR_{e_x}E_{\vec p}-\sum_k iL_{e_k}R_{e_y}p_k$ | Four-momentum and its contraction |
 | $\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$ | Biquaternionic mass-shell condition |
 | $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |

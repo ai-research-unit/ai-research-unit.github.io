@@ -4,7 +4,7 @@
 
 Under the rule of *The Clifford Layer Is the Cell Layer*, the corpus writes its spinors and its Dirac operators in the algebra itself. A left multiplication, a right multiplication, or a product of the two acts on an element of $\mathbb{B}$, and the body of an article carries no array and no gamma. The same physics can be written with the five gamma matrices, and most of the literature writes it that way. The question of this article is why the corpus does not. The short answer is that the two are the same algebra: in the reference frame the sixteen gamma basis elements and the sixteen basis cells are the same operators, and the difference is in how the coefficients of an operator are written.
 
-The answer has two parts. The **first** is a fact about the algebra: the ambient is wider than the physics that uses it. The gamma frame generates $\operatorname{End}_\mathbb{C}(\mathbb{B})$, and so do the cells; a single physical operator is one term or a sum of a few terms, while the generic element is neither. The **second** is the reason for the choice of primitive: the physics supplies two multipliers per term, and the cell form names their product $T_{Q,P}$ as one object, with the rank-one constraint built in, while the gamma form names sixteen coefficients over fixed matrices and leaves the constraint implicit. The two formulations are the same algebra; the difference is what a page displays as the primitive.
+The answer has two parts. The **first** is a fact about the algebra: the ambient is wider than the physics that uses it. The gamma frame generates $\operatorname{End}_\mathbb{C}(\mathbb{B})$, and so do the cells; a single physical operator is one term or a sum of a few terms, while the generic element is neither. The **second** is the reason for the choice of primitive: the physics supplies two multipliers per term, and the cell form names their product $L_{Q}R_{P}$ as one object, with the rank-one constraint built in, while the gamma form names sixteen coefficients over fixed matrices and leaves the constraint implicit. The two formulations are the same algebra; the difference is what a page displays as the primitive.
 
 Neither part changes the physics. The two formulations are the same algebra over $\mathbb{C}$, and every identity of one is an identity of the other. What changes is the object a computation starts from, and therefore what a page puts in front of the reader.
 
@@ -20,7 +20,7 @@ The three formulations are one algebra read at three levels.
 $$
 \operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C}),
 $$
-with the sixteen basis cells $T_{a,b}=L_aR_b$. A general element is a sum of cells; a physical element is a sum of a few terms.
+with the sixteen basis cells $L_{a}R_{b}$. A general element is a sum of cells; a physical element is a sum of a few terms.
 
 **The action level.** The same element is written as what it does to $\psi\in\mathbb{B}$,
 $$
@@ -31,7 +31,7 @@ No symbol for the operator is needed when the operator is not the subject. This 
 | level | carrier | primitive | free complex parameters | product |
 |---|---|---|---|---|
 | coordinate | $\mathbb{C}^4$ | one gamma, a fixed array, plus a scalar coefficient | one per term | matrix product |
-| algebra | $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ | one product $T_{Q,P}$ | seven per product | $T_{Q,P}T_{R,S}=T_{QR,SP}$ |
+| algebra | $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ | one product $L_{Q}R_{P}$ | seven per product | $L_{Q}R_{P}L_{R}R_{S}=L_{QR}R_{SP}$ |
 | action | $\mathbb{B}$ | the pair $(Q,P)$ | seven per term | composition of actions |
 
 **The parameters of a product.** The pair $(Q,P)$ has eight complex parameters, and the scaling $(Q,P)\mapsto(\lambda Q,\lambda^{-1}P)$, $\lambda\in\mathbb{C}^{\times}$, leaves the operator unchanged. The map is therefore constant on the orbits of $\mathbb{C}^{\times}$, and a product has seven effective parameters. The ambient has sixteen complex dimensions. The five are not independent: four generate the algebra, and $\gamma_5$ is a scalar multiple of their product. The basis they induce by antisymmetrised products has sixteen elements.
@@ -44,7 +44,7 @@ No symbol for the operator is needed when the operator is not the subject. This 
 
 **The frame chosen by the corpus is one of a family.** For any orthogonal pair $(\beta,\delta)$ of spatial units,
 $$
-\gamma_0=iL_tR_\delta,\qquad \gamma_k=iL_{e_k}R_\beta,\qquad \gamma_5=iT_{t,\beta\delta},
+\gamma_0=iL_tR_\delta,\qquad \gamma_k=iL_{e_k}R_\beta,\qquad \gamma_5=iL_{t}R_{\beta\delta},
 $$
 and the Clifford relations hold for every pair. The reference frame is $(\beta,\delta)=(e_y,e_x)$. A change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra; it is a change of frame, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.
 
@@ -52,9 +52,9 @@ and the Clifford relations hold for every pair. The reference frame is $(\beta,\
 
 ## The Ambient Is Wider Than the Physics
 
-**The single products are a cone.** A single two-sided operator is $T_{Q,P}=L_QR_P$, and the map $(Q,P)\mapsto T_{Q,P}$ is complex-bilinear, not complex-linear. Its image is the affine cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension seven, and a matrix belongs to it exactly when its coefficient matrix $c(M)$, the matrix of $M$ in the cell basis, has rank at most one. The cone is closed under composition and under inversion on its units. It is not closed under addition.
+**The single products are a cone.** A single two-sided operator is $L_{Q}R_{P}$, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is complex-bilinear, not complex-linear. Its image is the affine cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension seven, and a matrix belongs to it exactly when its coefficient matrix $c(M)$, the matrix of $M$ in the cell basis, has rank at most one. The cone is closed under composition and under inversion on its units. It is not closed under addition.
 
-**This is not a defect of the gamma basis.** In the reference frame, the sixteen Clifford basis elements and the sixteen reference cells are the same operators, up to permutation and scalar; the dictionary is a bijection. The cone is therefore the same in both readings. What differs is what the notation displays. A single product $T_{Q,P}$ carries two free multipliers, seven effective parameters; a gamma basis element is a fixed matrix with a scalar coefficient. The physics supplies the multipliers, so the cell form makes the product the primitive; the gamma form makes the coefficient the primitive.
+**This is not a defect of the gamma basis.** In the reference frame, the sixteen Clifford basis elements and the sixteen reference cells are the same operators, up to permutation and scalar; the dictionary is a bijection. The cone is therefore the same in both readings. What differs is what the notation displays. A single product $L_{Q}R_{P}$ carries two free multipliers, seven effective parameters; a gamma basis element is a fixed matrix with a scalar coefficient. The physics supplies the multipliers, so the cell form makes the product the primitive; the gamma form makes the coefficient the primitive.
 
 **The bases coincide; the coefficients factor.** A general operator has sixteen coefficients in either form. A single product has a coefficient matrix of rank one, so its sixteen coefficients are not free: they factor as $c_{ab}=u_a v_b$, seven effective parameters. The gamma form displays the sixteen coefficients and leaves the rank-one constraint implicit; the cell form displays the two multipliers that produce them. The gain is the constraint made visible, not a shorter expansion.
 
@@ -66,11 +66,11 @@ A generic element has $\ell=4$, and the set $\det c(M)\neq0$ is open and dense.
 
 **A concrete failure.** The sum
 $$
-T_{tt}+T_{xx}
+L_tR_t+L_xR_x
 $$
 has coefficient matrix $\operatorname{diag}(1,1,0,0)$, of rank two. It is not a single product, and no change of frame by a decomposable $S$ makes it one: such a change acts on $c(M)$ by an invertible left and right multiplication and preserves its rank. A formalism that makes the generic matrix the primitive has no place to mark the rank-one subset that the physics uses; the cell form writes the same operator as a sum of two terms and leaves it there.
 
-**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(T_{tt}-iT_{tz})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
+**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_tR_t-iL_tR_z)$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
 
 **The physics uses few terms.** The chiral projector is one term. The Dirac operator, worked in the next section, has length two: the three spatial terms share a right multiplier and combine into one. The four-term display is a display, not a property of the operator. The operators displayed in the corpus sit at low length; the generic element is not one of them. The gamma frame makes the coefficient vector the object; the biquaternion reading makes the pair the object.
 
@@ -108,7 +108,7 @@ because $\gamma_0^2=1$, $\gamma_k^2=-1$, and distinct gammas anticommute. The ce
 
 **The mass.** The mass term is one cell, and in this frame that cell is the identity:
 $$
-m\,T_{tt}\psi=m\,e_t\psi e_t=m\psi,
+m\,L_tR_t\psi=m\,e_t\psi e_t=m\psi,
 $$
 because $e_t$ is central. In the gamma display the same term is $m\psi$, which is $m\gamma_0^2$, not a sixth gamma. The five-name list does not name the identity as a cell; the cell list does. This is the concrete case of the point above: the cell form names the mass block, the gamma form leaves it as the identity.
 
@@ -116,10 +116,10 @@ because $e_t$ is central. In the gamma display the same term is $m\psi$, which i
 
 | operator | cell display | length |
 |---|---|---|
-| mass | $mT_{tt}$ | 1 |
-| chirality | $-iT_{tz}$ | 1 |
-| chiral projector $P_+$ | $\tfrac12T_{e_t,\,e_t-i e_z}$ | 1 |
-| Dirac, minimal | $iT_{t,x}\partial_t+iT_{\nabla,e_y}$ | 2 |
+| mass | $mL_tR_t$ | 1 |
+| chirality | $-iL_tR_z$ | 1 |
+| chiral projector $P_+$ | $\tfrac12L_{e_t}R_{\,e_t-i e_z}$ | 1 |
+| Dirac, minimal | $iL_{t}R_{x}\partial_t+iL_{\nabla}R_{e_y}$ | 2 |
 | Dirac, expanded | four cells | 2 |
 | generic element | — | 4 |
 
@@ -133,7 +133,7 @@ The length is the number of products in the minimal sum, not the number of cells
 
 **Chirality separates cleanly.** In the reference frame the chirality is the single cell
 $$
-\Gamma=-iL_tR_z=-iT_{tz},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
+\Gamma=-iL_tR_z=-iL_tR_z,\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
 $$
 and the projectors are read as actions,
 $$
@@ -153,7 +153,7 @@ $$
 $$
 The pair $(e_y,e_x)$ is a choice. A formula written in it is a formula about that choice as much as about the operator, and the gamma notation gives the reader no mark that separates the two.
 
-**A frame change preserves the cone only when it is decomposable.** A change by $S=T_{a,b}$, with $a,b$ units, sends $T_{Q,P}$ to $T_{aQa^{-1},\,b^{-1}Pb}$ and stays inside the cone. A general change of gamma basis need not: it is itself a sum of a few cells, and it can turn one product into several. The gamma notation writes both changes with the same symbol $S(\cdot)S^{-1}$, and the difference between them — one preserves the class of physical operators, the other does not — is invisible.
+**A frame change preserves the cone only when it is decomposable.** A change by $S=L_{a}R_{b}$, with $a,b$ units, sends $L_{Q}R_{P}$ to $L_{aQa^{-1}}R_{\,b^{-1}Pb}$ and stays inside the cone. A general change of gamma basis need not: it is itself a sum of a few cells, and it can turn one product into several. The gamma notation writes both changes with the same symbol $S(\cdot)S^{-1}$, and the difference between them — one preserves the class of physical operators, the other does not — is invisible.
 
 **A statement the corpus can make and the frame notation does not.** The biquaternion form separates three things that the gamma form runs together: the algebra, the frame, and the grading. This is why the corpus's conventions articles can state the frame freedom once, in one place, and why an article that changes frame does not have to restate its physics.
 
@@ -163,17 +163,17 @@ The pair $(e_y,e_x)$ is a choice. A formula written in it is a formula about tha
 
 **Composition is a formula, not a product of arrays.** The product is
 $$
-T_{a,b}T_{c,d}=T_{ac,db},
+L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},
 $$
 with the second slot reversed. Powers, inverses and the adjoint follow in one line,
 $$
-(T_{a,b})^n=T_{a^n,b^n},\qquad T_{a,b}^{-1}=T_{a^{-1},b^{-1}},\qquad (T_{a,b})^{\approx}=T_{b,a},
+(L_{a}R_{b})^n=L_{a^n}R_{b^n},\qquad L_{a}R_{b}^{-1}=L_{a^{-1}}R_{b^{-1}},\qquad (L_{a}R_{b})^{\approx}=L_{b}R_{a},
 $$
 where $\approx$ is the adjoint for the plain form $\mathrm{Sc}(XY)$; it exchanges the two slots and conjugates neither parameter. The Hilbert–Schmidt dagger is a different involution, the conjugate transpose of the array.
 
 **Trace and determinant are scalars of the algebra.**
 $$
-\operatorname{Tr}T_{a,b}=4\,a_t b_t,\qquad \det T_{a,b}=\langle a\rangle_{\natural}^{2}\langle b\rangle_{\natural}^{2},
+\operatorname{Tr}L_{a}R_{b}=4\,a_t b_t,\qquad \det L_{a}R_{b}=\langle a\rangle_{\natural}^{2}\langle b\rangle_{\natural}^{2},
 $$
 with $a_t$ the scalar part and $\langle a\rangle_{\natural}$ the quaternionic norm. Both are read from the two multipliers and neither needs a basis.
 
@@ -189,7 +189,7 @@ with $a_t$ the scalar part and $\langle a\rangle_{\natural}$ the quaternionic no
 
 The rules that follow from the above are short.
 
-- **Write the action first.** $\psi\mapsto a\,\psi\,b$. If the operator is the subject, name it $L_a$, $R_b$ or $T_{a,b}$; otherwise leave it implicit.
+- **Write the action first.** $\psi\mapsto a\,\psi\,b$. If the operator is the subject, name it $L_a$, $R_b$ or $L_{a}R_{b}$; otherwise leave it implicit.
 - **One term is one line.** A sum is written term by term, one term per line, and each term is a pair.
 - **Never compress a sum into one symbol.** A sum is a single product only when $\operatorname{rank}c\le1$, and the test is silent, not displayed.
 - **Keep the coefficient matrix out of the page.** It is a diagnostic of the isomorphism, not a datum of the physics.
@@ -225,7 +225,7 @@ The rules that follow from the above are short.
 
 | question | gamma form | biquaternion form |
 |---|---|---|
-| what is the object? | a $4\times4$ matrix | a two-sided operator $T_{a,b}$ |
+| what is the object? | a $4\times4$ matrix | a two-sided operator $L_{a}R_{b}$ |
 | what is the primitive? | a fixed matrix with a scalar coefficient | a pair of multipliers, seven effective parameters |
 | what is a physical element? | a sum of a few fixed matrices, each with a scalar coefficient | a sum of a few pairs |
 | what is a spinor? | a column in a chosen basis | an element of $\mathbb{B}$ |
@@ -243,11 +243,11 @@ The rules that follow from the above are short.
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
 | $e_t,e_x,e_y,e_z$ | the units, $e_t^2=1$ and $e_k^2=-1$ |
 | $L_a$, $R_b$ | left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $T_{a,b}=L_aR_b$ | the two-sided operator, $T_{a,b}\psi=a\psi b$ |
-| $T_{a,b}T_{c,d}=T_{ac,db}$ | composition, with the second slot reversed |
+| $L_{a}R_{b}$ | the two-sided operator, $L_{a}R_{b}\psi=a\psi b$ |
+| $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | composition, with the second slot reversed |
 | $c(M)$ | the coefficient matrix of $M$ in the cell basis; a diagnostic, not a datum |
 | $\ell(M)=\operatorname{rank}c(M)$ | the length, the least number of products in a sum |
-| $\Gamma=-iT_{tz}$ | the chirality in the reference frame, $\Gamma^2=1$ |
+| $\Gamma=-iL_tR_z$ | the chirality in the reference frame, $\Gamma^2=1$ |
 | $P_\pm=\tfrac12(1\pm\Gamma)$ | the chiral projectors |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign, $\chi^2=e_t$; an operator, not multiplication by an element of $\mathbb{B}$ |
 | $(\beta,\delta)$ | the orthogonal pair of spatial units that fixes the frame |

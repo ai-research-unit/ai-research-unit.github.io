@@ -18,16 +18,16 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 |---|---|
 | left multiplication | $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$ |
 | right multiplication | $R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
-| two-sided | $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2=L_{\tilde Q_1}R_{\tilde Q_2}$ |
-| sandwich (default: bilinear) | $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
+| two-sided | $L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2=L_{\tilde Q_1}R_{\tilde Q_2}$ |
+| sandwich (default: bilinear) | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
 | inner derivation | $\operatorname{ad}_{\tilde Q_4}(\tilde Q_1)=[\tilde Q_4,\tilde Q_1]$ |
 | automorphism | $\operatorname{Ad}_{\tilde Q_4}$ |
 
-**The default sandwich.** *Sandwich* with no qualifier is the **bilinear sandwich** $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$. The qualifier separates it from the **sesquilinear sandwich** $\mathcal{T}_{a,b}=T_{a,b}\circ\varkappa$, $\mathcal{T}_{a,b}(\tilde X)=a\tilde X^{*}b$, whose star acts on the argument. The bilinear sandwich is quadratic in $\tilde Q$, not bilinear: $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The word *bilinear* names the family $T_{a,b}$ from which the sandwich is cut. The dagger is the adjoint of an operator and is never part of an operator's name.
+**The default sandwich.** *Sandwich* with no qualifier is the **bilinear sandwich** $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$. The qualifier separates it from the **sesquilinear sandwich** $\mathcal{T}_{a,b}=L_{a}R_{b}\circ\varkappa$, $\mathcal{T}_{a,b}(\tilde X)=a\tilde X^{*}b$, whose star acts on the argument. The bilinear sandwich is quadratic in $\tilde Q$, not bilinear: $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The word *bilinear* names the family $L_{a}R_{b}$ from which the sandwich is cut. The dagger is the adjoint of an operator and is never part of an operator's name.
 
-The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $T_{\tilde Q_1,\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
+The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $L_{\tilde Q_1}R_{\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
 
-**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iT_{tx}$, $\gamma_1=iT_{xy}$, $\gamma_2=iT_{yy}$, $\gamma_3=iT_{zy}$, $\gamma_5=-iT_{tz}$.
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_\muR_\nu=L_\mu R_\nu$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iL_tR_x$, $\gamma_1=iL_xR_y$, $\gamma_2=iL_yR_y$, $\gamma_3=iL_zR_y$, $\gamma_5=-iL_tR_z$.
 
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
@@ -41,7 +41,7 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 **What names a side where position is not enough.** Three signs, each of which the corpus needs for a purpose of its own.
 
 - $\natural$ marks the conjugation of an element, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$, and it is what carries a change of side, because it is an anti-automorphism: $(ab)^{\natural}=b^{\natural}a^{\natural}$, hence $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, and a right action on $\psi$ is a left action on $\psi^{\natural}$. The theorem is below, §*The Two Sides and the Renaming Theorem*.
-- $L_a$ and $R_a$ name a side outright when a statement is about operators rather than about fields, and the cell $T_{a,b}=L_aR_b$ prints both sides at once.
+- $L_a$ and $R_a$ name a side outright when a statement is about operators rather than about fields, and the cell $L_{a}R_{b}$ prints both sides at once.
 - The superscript $R$ marks the one case that position alone leaves genuinely ambiguous: a derivative that differentiates the factor written to its left, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$. It is used only inside a product of two distinct factors, which is where the theorem below does not reach.
 
 **The dagger.** The dagger is the general adjoint of an operator, never of an element: $(L_a)^{\dagger}=L_{a^{*}}$. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. It is not a fifth conjugation: it belongs to the operators and not to the algebra. Where a dagger is written on an element the writing is an abuse: the mark that was meant is the star for the Hermitian conjugation, or the natural sign for the quaternion conjugation, according to the conjugation in view. The dagger is added to the glyph and does not replace the element's mark: the arrow states purity, which the adjoint preserves; the tilde states a glyph read with its scalar part, which the adjoint also preserves. Where the adjoint in view is the formal algebraic one of the definite form, the two marks are written together, dagger first: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $\tilde\nabla^{\dagger}=\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The identification is formal: the $L^2$ adjoint of a derivative carries the sign of the integration by parts, and it is not the dagger of this convention.
@@ -366,7 +366,7 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 ## Summary
 
-An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $T_{\tilde Q_1,\tilde Q_2}$, the sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The sandwich with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the natural conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach.
+An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $L_{\tilde Q_1}R_{\tilde Q_2}$, the sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The sandwich with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the natural conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach.
 
 The **dagger** is the general adjoint of an operator, never of an element, and it is not a fifth conjugation: several adjoints arise at once, one for each form and one for each sandwich, and the dagger is the mark that covers them all. An operator written as an array — a linear map on a coordinate column, a matrix in the $2\times2$ image or a regular matrix — carries no tilde. The **Fock exception** is the one mark that says a glyph is an operator and not an element of the algebra, and its superscript $\mathrm{fop}$ is fixed in *Index, Notation and Corpus Conventions*.
 
@@ -381,8 +381,8 @@ The four products are read on the gradient: the plain bilinear product holds the
 | Symbol | Meaning |
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | Left and right multiplication by the element |
-| $T_{\tilde Q_1,\tilde Q_2}$ | The two-sided operator, $L_{\tilde Q_1}R_{\tilde Q_2}$ |
-| $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ | The bilinear sandwich; $\mathcal{T}_{a,b}$ the sesquilinear one |
+| $L_{\tilde Q_1}R_{\tilde Q_2}$ | The two-sided operator, $L_{\tilde Q_1}R_{\tilde Q_2}$ |
+| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | The bilinear sandwich; $\mathcal{T}_{a,b}$ the sesquilinear one |
 | $\operatorname{ad}_{\tilde Q}$, $\operatorname{Ad}_{\tilde Q}$ | The inner derivation and the automorphism |
 | ${}^{\dagger}$ | The general adjoint of an operator, never of an element |
 | $\partial/\partial Q_\mu$ | The unhalved coordinate derivative |

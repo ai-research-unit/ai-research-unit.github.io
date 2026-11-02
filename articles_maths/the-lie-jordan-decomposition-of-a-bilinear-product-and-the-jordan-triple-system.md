@@ -10,7 +10,7 @@ $$
 c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $T_{a,b}\psi=a\psi b$ are the cells, $\mathsf T_\mu=T_{a_\mu,b_\mu}$ is the reference cell of the $\mu$-th generator, with $(a_\mu,b_\mu)=(e_t,e_x),(e_x,e_y),(e_y,e_y),(e_z,e_y)$, and $\mathsf T_5=T_{e_t,e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ are the traces of four and five reference cells, the unit phases of the generators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled generators $\mathsf C_\mu = i\,\mathsf T_\mu$ and $\mathsf C_5=-i\,\mathsf T_5$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. The composition
+where $L_{a}R_{b}\psi=a\psi b$ are the cells, $\mathsf T_\mu=L_{a_\mu}R_{b_\mu}$ is the reference cell of the $\mu$-th generator, with $(a_\mu,b_\mu)=(e_t,e_x),(e_x,e_y),(e_y,e_y),(e_z,e_y)$, and $\mathsf T_5=L_{e_t}R_{e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ are the traces of four and five reference cells, the unit phases of the generators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled generators $iL_{e_\mu}R_{e_{\nu(\mu)}} = i\,\mathsf T_\mu$ and $-iR_{e_z}=-i\,\mathsf T_5$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. The composition
 
 $$
 (G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
@@ -142,7 +142,7 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
 | $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Symmetric trace of four reference cells |
 | $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Totally antisymmetric symbol, the trace of five reference cells |
-| $\mathsf T_\mu = T_{a_\mu,b_\mu}$, $\mathsf T_5=T_{e_t,e_z}$ | The reference cells of the four generators and of the chirality, in the units $e_t,e_x,e_y,e_z$ of $\mathbb{B}$; $T_{a,b}\psi=a\psi b$ |
+| $\mathsf T_\mu = L_{a_\mu}R_{b_\mu}$, $\mathsf T_5=L_{e_t}R_{e_z}$ | The reference cells of the four generators and of the chirality, in the units $e_t,e_x,e_y,e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$ |
 | $k_\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |

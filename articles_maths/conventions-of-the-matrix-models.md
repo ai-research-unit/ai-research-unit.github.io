@@ -6,7 +6,7 @@ The algebra is read in matrices in two ways, and the two answer different questi
 
 The algebra is $M_2(\mathbb{C})$ and it is never $M_4(\mathbb{C})$. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
 
-The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame with the four left matrices $L_\mu$, the four right matrices $R_\nu$ and the sixteen basis matrices $T_{\mu\nu}=L_\mu R_\nu$, and the Clifford structure of the cells that closes it. The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the frame.
+The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame with the four left matrices $L_\mu$, the four right matrices $R_\nu$ and the sixteen basis matrices $L_\muR_\nu=L_\mu R_\nu$, and the Clifford structure of the cells that closes it. The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the frame.
 
 ## The Matrix Models
 
@@ -139,68 +139,68 @@ The Pauli line is the evaluation of the $L$-based definition, never its replacem
 
 **The sixteen basis matrices.** The sixteen cells are the ordinary products
 $$
-T_{\mu\nu}=L_\mu R_\nu=L_\mu\,\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1},
+L_\muR_\nu=L_\mu R_\nu=L_\mu\,\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1},
 $$
 in four families,
 $$
-T_{tt}=L_tR_t=L_t,\qquad
-T_{tk}=L_tR_k=R_k,\qquad
-T_{kt}=L_kR_t=L_k,\qquad
-T_{jk}=L_jR_k ,
+L_tR_t=L_t,\qquad
+L_tR_k=R_k,\qquad
+L_kR_t=L_k,\qquad
+L_jR_k ,
 $$
-which is the $L\leftrightarrow R$ correspondence of the basis: the mixed cell with left unit $\mu$ and right unit $t$ is the left matrix of $\mu$, the mixed cell with left unit $t$ and right unit $\nu$ is the right matrix of $\nu$, and the purely spatial cells $T_{jk}$ are the only ones that are neither. In the Pauli form,
+which is the $L\leftrightarrow R$ correspondence of the basis: the mixed cell with left unit $\mu$ and right unit $t$ is the left matrix of $\mu$, the mixed cell with left unit $t$ and right unit $\nu$ is the right matrix of $\nu$, and the purely spatial cells $L_jR_k$ are the only ones that are neither. In the Pauli form,
 $$
-T_{tt}=I_4,\qquad
-T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes I_2,\qquad
-T_{kt}=-i\,I_2\otimes\sigma_k,\qquad
-T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
+L_tR_t=L_t,\qquad=I_4,\qquad
+L_tR_k=R_k,\qquad=-i\,\sigma_k^{\mathsf T}\otimes I_2,\qquad
+L_kR_t=L_k,\qquad=-i\,I_2\otimes\sigma_k,\qquad
+L_jR_k=-\sigma_k^{\mathsf T}\otimes\sigma_j .
 $$
 
 The sixteen, with their left and right factors, are
 $$
 \boxed{\;\begin{aligned}
-&T_{tt}=L_tR_t,\quad T_{tx}=L_tR_x,\quad T_{ty}=L_tR_y,\quad T_{tz}=L_tR_z,\\
-&T_{xt}=L_xR_t,\quad T_{xx}=L_xR_x,\quad T_{xy}=L_xR_y,\quad T_{xz}=L_xR_z,\\
-&T_{yt}=L_yR_t,\quad T_{yx}=L_yR_x,\quad T_{yy}=L_yR_y,\quad T_{yz}=L_yR_z,\\
-&T_{zt}=L_zR_t,\quad T_{zx}=L_zR_x,\quad T_{zy}=L_zR_y,\quad T_{zz}=L_zR_z.
+&L_tR_t=L_t,\qquad=L_tR_t,\quad L_tR_x,\quad L_tR_y,\quad L_tR_z,\\
+&L_xR_t,\quad L_xR_x,\quad L_xR_y,\quad L_xR_z,\\
+&L_yR_t,\quad L_yR_x,\quad L_yR_y,\quad L_yR_z,\\
+&L_zR_t,\quad L_zR_x,\quad L_zR_y,\quad L_zR_z.
 \end{aligned}\;}
 $$
 
 **The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
 $$
-T_{tt}=L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-T_{tx}=L_tR_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+L_tR_t=L_t,\qquad=L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_tR_x,\quad=L_tR_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-T_{ty}=L_tR_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-T_{tz}=L_tR_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+L_tR_y,\quad=L_tR_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_tR_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
 $$
 $$
-T_{xt}=L_xR_t=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-T_{xx}=L_xR_x=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+L_xR_t,\quad=L_xR_t=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+L_xR_x,\quad=L_xR_x=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-T_{xy}=L_xR_y=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
-T_{xz}=L_xR_z=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+L_xR_y,\quad=L_xR_y=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
+L_xR_z=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
 $$
 $$
-T_{yt}=L_yR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-T_{yx}=L_yR_x=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+L_yR_t,\quad=L_yR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_yR_x,\quad=L_yR_x=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
 $$
 $$
-T_{yy}=L_yR_y=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-T_{yz}=L_yR_z=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+L_yR_y,\quad=L_yR_y=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+L_yR_z=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
 $$
 $$
-T_{zt}=L_zR_t=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
-T_{zx}=L_zR_x=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+L_zR_t,\quad=L_zR_t=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+L_zR_x,\quad=L_zR_x=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
-T_{zy}=L_zR_y=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
-T_{zz}=L_zR_z=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L_zR_y,\quad=L_zR_y=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
+L_zR_z=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}\,T_{\mu\nu}\,C_{\Pi}^{-1}$.
+Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $L_\muR_\nu^{\mathrm{coef}}=C_{\Pi}\,L_\muR_\nu\,C_{\Pi}^{-1}$.
 
 **The invariants.** With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$, the block form gives
 $$
@@ -217,7 +217,7 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 
 ### The Clifford Structure
 
-**The Clifford algebra is the cell algebra.** The sixteen cells $T_{\mu\nu}=L_\mu R_\nu$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an algebra isomorphism
+**The Clifford algebra is the cell algebra.** The sixteen cells $L_\muR_\nu=L_\mu R_\nu$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by $L_\muR_\nuL_{e_\mu e_\rho}R_{\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\muR_\nu$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -225,19 +225,19 @@ The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra 
 
 **The five cells of the frame.** Write
 $$
-\boxed{\;\mathsf C_0=iR_x=iT_{tx},\qquad
-\mathsf C_1=iL_xR_y=iT_{xy},\qquad
-\mathsf C_2=iL_yR_y=iT_{yy},\qquad
-\mathsf C_3=iL_zR_y=iT_{zy},\qquad
-\mathsf C_5=-iR_z=-iT_{tz}\;}
+\boxed{\;iR_{e_x}=iR_x=iL_tR_x,\quad,\qquad
+iL_{e_x}R_{e_y}=iL_xR_y=iL_xR_y,\quad,\qquad
+iL_{e_y}R_{e_y}=iL_yR_y=iL_yR_y,\quad,\qquad
+iL_{e_z}R_{e_y}=iL_zR_y=iL_zR_y,\quad,\qquad
+-iR_{e_z}=-iR_z=-iL_tR_z\;}
 $$
 Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
 
 **The Clifford relations.** They satisfy
 $$
-\{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I_4,\qquad
-(\mathsf C_k)^2=-I_4,\qquad
-\mathsf C_5=i\mathsf C_0\mathsf C_1\mathsf C_2\mathsf C_3,
+\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\qquad
+(iL_{e_k}R_{e_y})^2=-I_4,\qquad
+-iL_{e_t}R_{e_z},
 $$
 with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
 
@@ -245,28 +245,28 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the met
 
 | grade | cells |
 |---|---|
-| $0$ | $T_{tt}$ |
-| $1$ | $T_{tx}$, $T_{xy}$, $T_{yy}$, $T_{zy}$ |
-| $2$ | $T_{xt}$, $T_{xz}$, $T_{yt}$, $T_{yz}$, $T_{zt}$, $T_{zz}$ |
-| $3$ | $T_{ty}$, $T_{xx}$, $T_{yx}$, $T_{zx}$ |
-| $4$ | $T_{tz}$ |
+| $0$ | $L_tR_t=L_t,\qquad$ |
+| $1$ | $L_tR_x,\quad$, $L_xR_y,\quad$, $L_yR_y,\quad$, $L_zR_y,\quad$ |
+| $2$ | $L_xR_t,\quad$, $L_xR_z$, $L_yR_t,\quad$, $L_yR_z$, $L_zR_t,\quad$, $L_zR_z$ |
+| $3$ | $L_tR_y,\quad$, $L_xR_x,\quad$, $L_yR_x,\quad$, $L_zR_x,\quad$ |
+| $4$ | $L_tR_z$ |
 
 Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in the appendix of *Two-Sided Operators on the Biquaternion Algebra*.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot_{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$; the reason is that one letter out of three, at superscript size, does not separate the two meanings (*Index, Notation and Corpus Conventions*, §*The Superscripts*). Every place in this series where $\mathrm{op}$ once marked a norm now writes the norm bare, and the competing norms keep their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=L_tR_z$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=L_tR_z\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is $i\sum_\mu \mathsf C_\mu\partial/\partial x_\mu$ with $x_0=q'_t$,
+A derivative contraction is $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu$ with $x_0=q'_t$,
 in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\sum_\mu \mathsf C_\mu(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $\mathsf C_0(Q)=\mathsf C_0(x)$ and $\mathsf C_k(Q)=i\mathsf C_k(x)$,
-and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu \mathsf C_\mu(x)\partial/\partial Q_\mu$ belongs to neither frame.
+If the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame generators $iR_{e_x}$ and $-L_{e_k}R_{e_y}$,
+and never with the generators of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}(x)\partial/\partial Q_\mu$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\sum_\mu \mathsf C_\mu p_\mu=i\bigl(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu=i\bigl(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z\bigr),
 $$
 so the frame is visible in the formula.
 
@@ -282,9 +282,9 @@ The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an a
 
 The **four left matrices** $L_\mu=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_\nu=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
 
-The **sixteen basis matrices** are the products $T_{\mu\nu}=L_\mu R_\nu$, in four families: $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$ and $T_{jk}=L_jR_k$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
+The **sixteen basis matrices** are the products $L_\muR_\nu=L_\mu R_\nu$, in four families: $L_tR_t=L_t,\qquad=L_t$, $L_tR_k=R_k,\qquad=R_k$, $L_kR_t=L_k,\qquad=L_k$ and $L_jR_k$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
 
-The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto T_{\mu\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators of the canonical frame are the cells $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$ and $\mathsf C_5=-iT_{tz}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$.
+The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\muR_\nu$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators of the canonical frame are the cells $iR_{e_x}=iL_tR_x,\quad$, $iL_{e_x}R_{e_y}=iL_xR_y,\quad$, $iL_{e_y}R_{e_y}=iL_yR_y,\quad$, $iL_{e_z}R_{e_y}=iL_zR_y,\quad$ and $-iR_{e_z}=-iL_tR_z$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=L_tR_z$.
 
 ## Summary of Notation
 
@@ -299,9 +299,9 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 | $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
-| $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $\mathsf C_\mu,\mathsf C_5$ | The five cells of the canonical frame, $\mathsf C_0=iT_{tx}$, $\mathsf C_1=iT_{xy}$, $\mathsf C_2=iT_{yy}$, $\mathsf C_3=iT_{zy}$, $\mathsf C_5=-iT_{tz}$ |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |
+| $L_\muR_\nu=L_\mu R_\nu$ | The sixteen basis matrices; $L_tR_t=L_t,\qquad=L_t$, $L_tR_k=R_k,\qquad=R_k$, $L_kR_t=L_k,\qquad=L_k$, $L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}},-iR_{e_z}$ | The five cells of the canonical frame, $iR_{e_x}=iL_tR_x,\quad$, $iL_{e_x}R_{e_y}=iL_xR_y,\quad$, $iL_{e_y}R_{e_y}=iL_yR_y,\quad$, $iL_{e_z}R_{e_y}=iL_zR_y,\quad$, $-iR_{e_z}=-iL_tR_z$ |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=L_tR_z$ |
 | $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
 
 ## Further Reading
@@ -317,11 +317,11 @@ The gammas are the five-cell frame of the body written as matrices; the body wri
 
 **The five gammas.** The five Dirac matrices are two-sided operators of the frame,
 $$
-\boxed{\;\gamma_0=iR_x=iT_{tx},\qquad
-\gamma_1=iL_xR_y=iT_{xy},\qquad
-\gamma_2=iL_yR_y=iT_{yy},\qquad
-\gamma_3=iL_zR_y=iT_{zy},\qquad
-\gamma_5=-iR_z=-iT_{tz}\;}
+\boxed{\;\gamma_0=iR_x=iL_tR_x,\quad,\qquad
+\gamma_1=iL_xR_y=iL_xR_y,\quad,\qquad
+\gamma_2=iL_yR_y=iL_yR_y,\quad,\qquad
+\gamma_3=iL_zR_y=iL_zR_y,\quad,\qquad
+\gamma_5=-iR_z=-iL_tR_z\;}
 $$
 In the canonical frame their matrices are
 $$
@@ -344,27 +344,27 @@ $$
 
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
-| $0$ | $1$ | $T_{tt}$ | $T_{tt}=I_4$ |
-| $1$ | $\gamma_0$ | $T_{tx}$ | $T_{tx}=-i\,\gamma_0$ |
-| $1$ | $\gamma_1$ | $T_{xy}$ | $T_{xy}=-i\,\gamma_1$ |
-| $1$ | $\gamma_2$ | $T_{yy}$ | $T_{yy}=-i\,\gamma_2$ |
-| $1$ | $\gamma_3$ | $T_{zy}$ | $T_{zy}=-i\,\gamma_3$ |
-| $2$ | $\gamma_0\gamma_1$ | $T_{xz}$ | $T_{xz}=\gamma_0\gamma_1$ |
-| $2$ | $\gamma_0\gamma_2$ | $T_{yz}$ | $T_{yz}=\gamma_0\gamma_2$ |
-| $2$ | $\gamma_0\gamma_3$ | $T_{zz}$ | $T_{zz}=\gamma_0\gamma_3$ |
-| $2$ | $\gamma_1\gamma_2$ | $T_{zt}$ | $T_{zt}=\gamma_1\gamma_2$ |
-| $2$ | $\gamma_1\gamma_3$ | $T_{yt}$ | $T_{yt}=-\gamma_1\gamma_3$ |
-| $2$ | $\gamma_2\gamma_3$ | $T_{xt}$ | $T_{xt}=\gamma_2\gamma_3$ |
-| $3$ | $\gamma_0\gamma_1\gamma_2$ | $T_{zx}$ | $T_{zx}=-i\,\gamma_0\gamma_1\gamma_2$ |
-| $3$ | $\gamma_0\gamma_1\gamma_3$ | $T_{yx}$ | $T_{yx}=i\,\gamma_0\gamma_1\gamma_3$ |
-| $3$ | $\gamma_0\gamma_2\gamma_3$ | $T_{xx}$ | $T_{xx}=-i\,\gamma_0\gamma_2\gamma_3$ |
-| $3$ | $\gamma_1\gamma_2\gamma_3$ | $T_{ty}$ | $T_{ty}=i\,\gamma_1\gamma_2\gamma_3$ |
-| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $T_{tz}$ | $T_{tz}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
+| $0$ | $1$ | $L_tR_t=L_t,\qquad$ | $L_tR_t=L_t,\qquad=I_4$ |
+| $1$ | $\gamma_0$ | $L_tR_x,\quad$ | $L_tR_x,\quad=-i\,\gamma_0$ |
+| $1$ | $\gamma_1$ | $L_xR_y,\quad$ | $L_xR_y,\quad=-i\,\gamma_1$ |
+| $1$ | $\gamma_2$ | $L_yR_y,\quad$ | $L_yR_y,\quad=-i\,\gamma_2$ |
+| $1$ | $\gamma_3$ | $L_zR_y,\quad$ | $L_zR_y,\quad=-i\,\gamma_3$ |
+| $2$ | $\gamma_0\gamma_1$ | $L_xR_z$ | $L_xR_z=\gamma_0\gamma_1$ |
+| $2$ | $\gamma_0\gamma_2$ | $L_yR_z$ | $L_yR_z=\gamma_0\gamma_2$ |
+| $2$ | $\gamma_0\gamma_3$ | $L_zR_z$ | $L_zR_z=\gamma_0\gamma_3$ |
+| $2$ | $\gamma_1\gamma_2$ | $L_zR_t,\quad$ | $L_zR_t,\quad=\gamma_1\gamma_2$ |
+| $2$ | $\gamma_1\gamma_3$ | $L_yR_t,\quad$ | $L_yR_t,\quad=-\gamma_1\gamma_3$ |
+| $2$ | $\gamma_2\gamma_3$ | $L_xR_t,\quad$ | $L_xR_t,\quad=\gamma_2\gamma_3$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $L_zR_x,\quad$ | $L_zR_x,\quad=-i\,\gamma_0\gamma_1\gamma_2$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $L_yR_x,\quad$ | $L_yR_x,\quad=i\,\gamma_0\gamma_1\gamma_3$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $L_xR_x,\quad$ | $L_xR_x,\quad=-i\,\gamma_0\gamma_2\gamma_3$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_tR_y,\quad$ | $L_tR_y,\quad=i\,\gamma_1\gamma_2\gamma_3$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_tR_z$ | $L_tR_z=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
+Each row reads $L_\muR_\nu$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$ of the body.
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=L_tR_z$ of the body.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(T_{tx}p_t+T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_tR_x,\quadp_t+L_xR_y,\quadp_x+L_yR_y,\quadp_y+L_zR_y,\quadp_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

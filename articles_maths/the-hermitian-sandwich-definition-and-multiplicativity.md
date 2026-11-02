@@ -8,11 +8,11 @@ $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
-It is the two-sided operator $T_{\tilde Q,\tilde Q^{*}}$: the second slot is tied to the first by the involution. The two-sided family is a complex cone of complex dimension seven; the sandwich is the graph of the involution inside it, a **real** cone of real dimension seven. The phase of the parameter cancels, $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for $|\omega|=1$, and the square of the modulus is the only scale. The image is not a complex subspace: the sandwich is quadratic in $\tilde Q$, and a complex rescaling of $\tilde Q$ rescales the operator by the square of the modulus, a positive real number.
+It is the two-sided operator $L_{\tilde Q}R_{\tilde Q^{*}}$: the second slot is tied to the first by the involution. The two-sided family is a complex cone of complex dimension seven; the sandwich is the graph of the involution inside it, a **real** cone of real dimension seven. The phase of the parameter cancels, $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for $|\omega|=1$, and the square of the modulus is the only scale. The image is not a complex subspace: the sandwich is quadratic in $\tilde Q$, and a complex rescaling of $\tilde Q$ rescales the operator by the square of the modulus, a positive real number.
 
 **The results.** The article states five things. The sandwich is multiplicative up to the order of the factors, $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
 
-**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Conventions of the Operator Families*: $\Theta_{\tilde Q}$ is the sandwich, $T_{\tilde Q,\tilde P}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{M}_+$ and $\mathbb{M}_-$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
+**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Conventions of the Operator Families*: $\Theta_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde P}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{M}_+$ and $\mathbb{M}_-$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
 
 **The real cone.** The set $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\Theta_{\tilde Q}:\tilde Q\in\mathbb{B}\}$ is a cone: it is closed under multiplication by nonnegative real numbers, and it is not closed under addition. It is a real cone of real dimension seven, not a complex cone. The two-sided cone $\operatorname{End}_{LR}(\mathbb{B})$ is complex of complex dimension seven, and the sandwich is a real slice of it, a proper subset, the slice on which the two parameters are conjugate.
 
@@ -45,12 +45,12 @@ $$
 
 because $(\lambda\tilde Q)^{*}=\bar\lambda\tilde Q^{*}$. The phase of $\lambda$ cancels and the modulus squared remains. In particular $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for every $\omega$ with $|\omega|=1$.
 
-### The Member $T_{\tilde Q,\tilde Q^{*}}$
+### The Member $L_{\tilde Q}R_{\tilde Q^{*}}$
 
 **The two-sided family.** The sandwich is the member of the two-sided family whose parameters are tied:
 
 $$
-\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}.
+\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}.
 $$
 
 The two-sided family is the set of decomposable tensors $\tilde Q\otimes\tilde P^{\mathrm{opp}}$, a complex cone of complex dimension seven in the complex sixteen-dimensional algebra. The sandwich is the graph of the involution $\tilde P=\tilde Q^{*}$ inside that cone.
@@ -194,7 +194,7 @@ The phase of $\tilde Q$ cancels in the operator, and the phase of the norm cance
 
 **The action.** The group $\mathrm{U}(1)=\{\omega e_t:|\omega|=1\}$ acts on the parameter by $\tilde Q\mapsto\omega\tilde Q$. The sandwich is invariant, by §*The Cancellation of the Phase*. The map $\tilde Q\mapsto\Theta_{\tilde Q}$ factors through the quotient $\mathbb{B}/\mathrm{U}(1)$.
 
-**The fibre.** Suppose $\Theta_{\tilde Q}=\Theta_{\tilde P}$ with $\tilde Q,\tilde P\neq0$. Then $T_{\tilde Q,\tilde Q^{*}}=T_{\tilde P,\tilde P^{*}}$. By the fibre theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Scaling Orbit*, the two pairs are proportional:
+**The fibre.** Suppose $\Theta_{\tilde Q}=\Theta_{\tilde P}$ with $\tilde Q,\tilde P\neq0$. Then $L_{\tilde Q}R_{\tilde Q^{*}}=L_{\tilde P}R_{\tilde P^{*}}$. By the fibre theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Scaling Orbit*, the two pairs are proportional:
 
 $$
 \tilde P=\lambda\tilde Q,\qquad \tilde P^{*}=\lambda^{-1}\tilde Q^{*}
@@ -224,7 +224,7 @@ The ray is the closed ray of nonnegative multiples of the identity; the identity
 
 **The ray is not a subspace.** The ray is a half-line, not a line: the negative multiples of the identity are not in the cone, because they would require $|\lambda|^{2}<0$. The ray is a boundary face of the cone along the central direction; it is the only part of the sandwich cone that is one-sided. The two intersections are the same ray.
 
-**The contrast.** The full product set of the two-sided family meets $L(\mathbb{B})$ in all of $L(\mathbb{B})$ and $R(\mathbb{B})$ in all of $R(\mathbb{B})$, because $T_{\tilde Q,e_t}=L_{\tilde Q}$ and $T_{e_t,\tilde P}=R_{\tilde P}$. The sandwich is the graph $\tilde P=\tilde Q^{*}$, and the graph meets the two axes only at the central ray. The two intersections of the product set are distinct; the two intersections of the sandwich are the same ray.
+**The contrast.** The full product set of the two-sided family meets $L(\mathbb{B})$ in all of $L(\mathbb{B})$ and $R(\mathbb{B})$ in all of $R(\mathbb{B})$, because $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$ and $L_{e_t}R_{\tilde P}=R_{\tilde P}$. The sandwich is the graph $\tilde P=\tilde Q^{*}$, and the graph meets the two axes only at the central ray. The two intersections of the product set are distinct; the two intersections of the sandwich are the same ray.
 
 ## The Spectrum
 
@@ -289,14 +289,14 @@ a twofold cover. The kernel is $\{\pm e_t\}$; the image is the identity componen
 
 ## Summary
 
-The Hermitian sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $T_{\tilde Q,\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
+The Hermitian sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
-| $T_{\tilde Q,\tilde P}$ | the two-sided operator; $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ |
+| $L_{\tilde Q}R_{\tilde P}$ | the two-sided operator; $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian halves, real dimension four each |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm; $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$ |
 | $\mathrm{U}(1)$ | the central phase $\{\omega e_t:|\omega|=1\}$ |

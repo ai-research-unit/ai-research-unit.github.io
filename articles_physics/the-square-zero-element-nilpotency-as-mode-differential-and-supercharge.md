@@ -595,7 +595,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H^0=\ker X$, $H^1=M/\mathrm{im}\,X$ | its cohomology |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its degree grading |
 | $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ | the biquaternion algebra as the even part |
-| $L_a,R_b$, $T_{a,b}=L_aR_b$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $T_{a,b}\psi=a\psi b$; a product is one pure tensor |
+| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $L_{a}R_{b}\psi=a\psi b$; a product is one pure tensor |
 | $\mathrm{Cl}^1=\mathbb{B}_Lu$ | the odd slot, a rank-one left module; $u$ the odd unit of the reference frame |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |

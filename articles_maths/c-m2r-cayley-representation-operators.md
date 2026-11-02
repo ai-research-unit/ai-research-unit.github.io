@@ -25,7 +25,7 @@ Three of the four collapse and the fourth survives in a form that shows the phen
 
 **Boundaries.** The model, the Cayley display, the trace, the determinant, the adjugate and the subspaces are *$M_2(\mathbb{R})$ Cayley Representation*. The abstract one-sided operators of the algebra are *The One-Sided Operators* of the complex algebra, and the two-sided ones are *Two-Sided Operators on the Complex Algebra*; this article does not replace them. The same operator layer for the other algebra of the block is *The Matrix Element Representations of the Complexoid*.
 
-**Conventions.** The carrier has the basis $(1,i)$; a column of two real numbers is read as $x+iy$. The operator $L_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$; $R_Q$ is the same. The two-sided operator is $T_{Q,P}(X)=QXP$. The coefficient array of an operator is its array of coordinates in the basis $\{T_1,T_i\}=\{I_2,J\}$ of the family. The Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ and the plain form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$.
+**Conventions.** The carrier has the basis $(1,i)$; a column of two real numbers is read as $x+iy$. The operator $L_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$; $R_Q$ is the same. The two-sided operator is $L_{Q}R_{P}(X)=QXP$. The coefficient array of an operator is its array of coordinates in the basis $\{T_1,T_i\}=\{I_2,J\}$ of the family. The Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ and the plain form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$.
 
 ## The One-Sided Operators
 
@@ -63,15 +63,15 @@ and the kernel is never a line, never a hyperplane, and never depends on $Q$. Th
 **Definition and collapse.** For a pair $(Q,P)$,
 
 $$
-T_{Q,P}(X)=QXP,\qquad T_{Q,P}=\mathsf{M}_2(QP)=L_{QP}.
+L_{Q}R_{P}(X)=QXP,\qquad L_{Q}R_{P}=\mathsf{M}_2(QP)=L_{QP}.
 $$
 
-**The reading.** The two-sided operator depends on the pair only through the product, so the parametrisation by two complex numbers has a two-real-dimensional redundancy: $T_{Q,P}=T_{Q',P'}$ exactly when $QP=Q'P'$. The pair is not a pair, and the notation $T_{Q,P}$ is kept only because the general formula has two slots.
+**The reading.** The two-sided operator depends on the pair only through the product, so the parametrisation by two complex numbers has a two-real-dimensional redundancy: $L_{Q}R_{P}=L_{Q'}R_{P'}$ exactly when $QP=Q'P'$. The pair is not a pair, and the notation $L_{Q}R_{P}$ is kept only because the general formula has two slots.
 
 **The scaling.** For $\lambda\neq0$,
 
 $$
-T_{\lambda Q,P/\lambda}=T_{Q,P},
+L_{\lambda Q}R_{P/\lambda}=L_{Q}R_{P},
 $$
 
 so the kernel of the parametrisation contains the one-dimensional group of rescalings, and the four real parameters of the pair fall to the two of the product. The picture of the general theory — a parameter count $2\dim$ falling to $2\dim-1$ — is here a count of four falling to two, because the two slots are not independent.
@@ -79,20 +79,20 @@ so the kernel of the parametrisation contains the one-dimensional group of resca
 **The invariants.**
 
 $$
-\operatorname{rank}T_{Q,P}=\begin{cases}2,&QP\neq0\\0,&QP=0,\end{cases}\qquad
-\operatorname{tr}T_{Q,P}=2\operatorname{Re}(QP),\qquad
-\det T_{Q,P}=N(QP),\qquad
-\lVert T_{Q,P}\rVert_F^{2}=2N(QP).
+\operatorname{rank}L_{Q}R_{P}=\begin{cases}2,&QP\neq0\\0,&QP=0,\end{cases}\qquad
+\operatorname{tr}L_{Q}R_{P}=2\operatorname{Re}(QP),\qquad
+\det L_{Q}R_{P}=N(QP),\qquad
+\lVert L_{Q}R_{P}\rVert_F^{2}=2N(QP).
 $$
 
-**Proof.** $T_{Q,P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are the trace, the determinant and the Frobenius norm of a Cayley matrix, read from the model article.
+**Proof.** $L_{Q}R_{P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are the trace, the determinant and the Frobenius norm of a Cayley matrix, read from the model article.
 
 **The trace, and what it is not.** The trace of the operator is $2\operatorname{Re}(QP)$ and not $(2\operatorname{Re}Q)(2\operatorname{Re}P)$: the trace of a product is not the product of the traces. The distinction becomes visible in the Kronecker display, whose trace is $4\operatorname{Re}Q\operatorname{Re}P$, and the two numbers are different operators' traces, not two computations of one.
 
-**The inner automorphisms.** The operator $T_{Q,Q^{-1}}$ is $X\mapsto QXQ^{-1}$, the conjugation by $Q$. On the carrier it is the identity, because the algebra is commutative:
+**The inner automorphisms.** The operator $L_{Q}R_{Q^{-1}}$ is $X\mapsto QXQ^{-1}$, the conjugation by $Q$. On the carrier it is the identity, because the algebra is commutative:
 
 $$
-T_{Q,Q^{-1}}=\mathsf{M}_2(QQ^{-1})=\mathsf{M}_2(1)=I_2 .
+L_{Q}R_{Q^{-1}}=\mathsf{M}_2(QQ^{-1})=\mathsf{M}_2(1)=I_2 .
 $$
 
 On the ambient it is not the identity. Writing $Q=\lvert Q\rvert e^{i\theta}$, the scalar cancels and the operator is $X\mapsto R_\theta XR_\theta^{-1}$, whose module structure on $M_2(\mathbb{R})$ is
@@ -159,7 +159,7 @@ the array of the bilinear map $(x,y)\mapsto Qx\cdot Py$, which is the coefficien
 
 ## The Pair as a Semigroup
 
-**Composition.** $T_{Q,P}T_{Q',P'}=T_{QQ',P'P}$, which is $T_{QQ'PP'}$ because the algebra is commutative. So the composition is the multiplication of the products, and the map $(Q,P)\mapsto T_{Q,P}$ is a homomorphism of the monoid $\mathbb{C}\times\mathbb{C}$ onto the monoid $(\mathbb{C},\cdot)$ whose kernel is the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$, which is $T_{QQ'PP'}$ because the algebra is commutative. So the composition is the multiplication of the products, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}\times\mathbb{C}$ onto the monoid $(\mathbb{C},\cdot)$ whose kernel is the rescaling.
 
 **The units.** The invertible members are those with $QP\neq0$, of group
 
@@ -234,13 +234,13 @@ So the "coefficient matrix" of the general theory, an array of size $n\times n$,
 **The statement.** For a member of the span,
 
 $$
-\ell(T_{Q,P})\in\{0,1\},
+\ell(L_{Q}R_{P})\in\{0,1\},
 $$
 
 with $\ell=0$ only for the zero operator; the value $2$ does not occur, and no member needs a sum. The span and the family coincide:
 
 $$
-\operatorname{span}\{T_{Q,P}\}=L(\mathbb{C})\cup\{0\}=\{L_c:c\in\mathbb{C}\}.
+\operatorname{span}\{L_{Q}R_{P}\}=L(\mathbb{C})\cup\{0\}=\{L_c:c\in\mathbb{C}\}.
 $$
 
 **Proof.** The span of a linear subspace that contains the zero operator is the subspace itself, and $L(\mathbb{C})$ is a linear subspace of the ambient containing $0$.
@@ -262,7 +262,7 @@ so the multiplication map $L(\mathbb{C})\times R(\mathbb{C})\to\operatorname{End
 **The two numbers.** The **operator rank** is the rank of the operator on the carrier; the **coefficient rank** is the rank of its coefficient array. Here
 
 $$
-\operatorname{rank}T_{Q,P}=2\ (QP\neq0),\qquad \operatorname{rank}c(T_{Q,P})=1,
+\operatorname{rank}L_{Q}R_{P}=2\ (QP\neq0),\qquad \operatorname{rank}c(L_{Q}R_{P})=1,
 $$
 
 so the two differ at every nonzero member.
@@ -295,7 +295,7 @@ so the two differ at every nonzero member.
 ## Summary
 
 1. The carrier is $\mathbb{C}$ of dimension two and the ambient is $M_2(\mathbb{R})$ of dimension four: four entries for two parameters.
-2. The one-sided families coincide, $L(\mathbb{C})=R(\mathbb{C})$, the sum is the family itself, and the two-sided operator depends on the pair only through the product, $T_{Q,P}=L_{QP}$.
+2. The one-sided families coincide, $L(\mathbb{C})=R(\mathbb{C})$, the sum is the family itself, and the two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=L_{QP}$.
 3. The operator is a bijection for every nonzero parameter: the kernel is trivial and the rank is two, with no rank drop anywhere.
 4. The plain adjoint is the operator itself, by commutativity; the Frobenius adjoint is the operator of the conjugate; so the model is a faithful $*$-representation of the involutive algebra.
 5. The parametrisation has a two-dimensional redundancy and a two-dimensional fibre, so four parameters fall to two, and the image is a linear subspace of the ambient.
@@ -310,7 +310,7 @@ so the two differ at every nonzero member.
 | Symbol | Meaning | Article |
 |---|---|---|
 | $L_Q,R_Q$ | left and right multiplication, equal by commutativity | *$M_2(\mathbb{R})$ Cayley Representation* |
-| $T_{Q,P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
+| $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)^{\mathsf T}\otimes\mathsf{M}_2(Q)$ | this article |
 | $c$ | the coefficient array, the pair $(Q,P)$ read as a rank-one array | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |

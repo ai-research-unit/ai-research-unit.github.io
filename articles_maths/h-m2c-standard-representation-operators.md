@@ -16,7 +16,7 @@ of dimension sixteen. The operator layer lives one size above the model, and eve
 
 **Boundaries.** The model, its dictionary, the trace, the determinant, the spectral projectors, the adjugate and the subspaces are the previous article, *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation*. The algebra is *Quaternion Algebra*, the norm is *Quaternion Norm and Invertibility*, the unit group is *Quaternion Exponential and Lie Group Structure*. The abstract operator articles, with no matrix in them, are *The One-Sided Operators*, *Two-Sided Operators* and *The Enveloping Operator Algebra*, which this article does not replace; the two-sided operator on the *matrix space* rather than on the carrier is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
-**Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically; the model is $\mathsf{M}_2$ with the image $M_2(\mathbb{H})$; the norm is $N$. The left and right multiplication matrices are written $L_{\tilde q},R_{\tilde q}\in M_4(\mathbb{R})$, in the real basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the carrier. The coefficient matrix $c(M)$ of an operator is its $4\times4$ array of coordinates in the basis $T_{e_\mu,e_\nu}=L_{e_\mu}R_{e_\nu}$.
+**Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically; the model is $\mathsf{M}_2$ with the image $M_2(\mathbb{H})$; the norm is $N$. The left and right multiplication matrices are written $L_{\tilde q},R_{\tilde q}\in M_4(\mathbb{R})$, in the real basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the carrier. The coefficient matrix $c(M)$ of an operator is its $4\times4$ array of coordinates in the basis $L_{e_\mu}R_{e_\nu}$.
 
 ## The One-Sided Operators
 
@@ -67,24 +67,24 @@ So the two-sidedness of the adjoint is a property of the indefinite form here as
 **Definition.** For a pair $(\tilde q,\tilde p)$,
 
 $$
-T_{\tilde q,\tilde p}=L_{\tilde q}R_{\tilde p},\qquad T_{\tilde q,\tilde p}(\tilde x)=\tilde q\,\tilde x\,\tilde p,
+L_{\tilde q}R_{\tilde p},\qquad L_{\tilde q}R_{\tilde p}(\tilde x)=\tilde q\,\tilde x\,\tilde p,
 $$
 
 a $4\times4$ real matrix. The pair has eight real parameters and the operator has sixteen entries; the map between them is bilinear and far from injective.
 
-**The scaling.** $T_{\lambda\tilde q,\lambda^{-1}\tilde p}=T_{\tilde q,\tilde p}$ for every $\lambda\neq0$, so the effective parameter count is seven. This is the only redundancy: the fibre of $(\tilde q,\tilde p)\mapsto T_{\tilde q,\tilde p}$ over a non-zero product is exactly the scaling orbit, a line.
+**The scaling.** $L_{\lambda\tilde q}R_{\lambda^{-1}\tilde p}=L_{\tilde q}R_{\tilde p}$ for every $\lambda\neq0$, so the effective parameter count is seven. This is the only redundancy: the fibre of $(\tilde q,\tilde p)\mapsto L_{\tilde q}R_{\tilde p}$ over a non-zero product is exactly the scaling orbit, a line.
 
 **Proof of the exactness of the fibre.** If $L_{\tilde q}R_{\tilde p}=L_{\tilde q'}R_{\tilde p'}$, then applying both sides to $e_t$ and using $L_{\tilde q'}^{-1}L_{\tilde q}R_{\tilde p}=R_{\tilde p'}$ gives a right multiplication equal to a left multiplication composed with a right one; acting on the identity and using that the two copies intersect in the scalars yields $\tilde q'=\lambda\tilde q$ and $\tilde p'=\lambda^{-1}\tilde p$.
 
 **The invariants.** For every pair,
 
 $$
-\operatorname{rank}T_{\tilde q,\tilde p}\in\{0,4\},\qquad
-\det T_{\tilde q,\tilde p}=N(\tilde q)^{2}N(\tilde p)^{2}>0\ \ (\tilde q,\tilde p\neq0),
+\operatorname{rank}L_{\tilde q}R_{\tilde p}\in\{0,4\},\qquad
+\det L_{\tilde q}R_{\tilde p}=N(\tilde q)^{2}N(\tilde p)^{2}>0\ \ (\tilde q,\tilde p\neq0),
 $$
 
 $$
-\operatorname{tr}T_{\tilde q,\tilde p}=4\,q_t\,p_t .
+\operatorname{tr}L_{\tilde q}R_{\tilde p}=4\,q_t\,p_t .
 $$
 
 The rank statement and the determinant statement are the same fact: the ambient is four-dimensional, $L_{\tilde q}$ and $R_{\tilde p}$ are both invertible when the parameters are non-zero, so their product is invertible. The trace statement is the surprise: the Gram matrix of the bilinear form $(q,p)\mapsto\operatorname{tr}(L_{\tilde q}R_{\tilde p})$ in the basis of the four units is
@@ -98,7 +98,7 @@ so the trace of a two-sided operator is four times the product of the two **scal
 **The conjugation.** The case $\tilde p=\tilde q^{-1}$ is the inner automorphism,
 
 $$
-T_{\tilde q,\tilde q^{-1}}(\tilde x)=\tilde q\tilde x\tilde q^{-1},
+L_{\tilde q}R_{\tilde q^{-1}}(\tilde x)=\tilde q\tilde x\tilde q^{-1},
 $$
 
 whose kernel on the pairs of units is $\mathbb{R}^{\times}e_t$, so the effective group is
@@ -120,7 +120,7 @@ of dimension three, acting on the pure part as the rotation group. In the split-
 **What replaces it.** The coefficient matrix. The sixteen operators
 
 $$
-T_{e_\mu,e_\nu}=L_{e_\mu}R_{e_\nu}\qquad(\mu,\nu\in\{t,x,y,z\})
+L_{e_\mu}R_{e_\nu}\qquad(\mu,\nu\in\{t,x,y,z\})
 $$
 
 form a basis of the ambient, because the map
@@ -132,7 +132,7 @@ $$
 is an isomorphism of sixteen-dimensional real spaces. Every operator $M$ therefore has coordinates $c_{\mu\nu}(M)$ in that basis, and for a single product
 
 $$
-c\bigl(T_{\tilde q,\tilde p}\bigr)=\tilde q\,\tilde p^{\,\mathsf T},
+c\bigl(L_{\tilde q}R_{\tilde p}\bigr)=\tilde q\,\tilde p^{\,\mathsf T},
 $$
 
 the outer product of the two coordinate vectors, a matrix of rank one. The array $c(M)$ is the object that decides every question of the rest of this article.
@@ -144,8 +144,8 @@ the outer product of the two coordinate vectors, a matrix of rank one. The array
 **Theorem (the rank never takes an intermediate value).** For every pair,
 
 $$
-\operatorname{rank}T_{\tilde q,\tilde p}=0\ \text{if }\tilde q=0\text{ or }\tilde p=0,\qquad
-\operatorname{rank}T_{\tilde q,\tilde p}=4\ \text{otherwise}.
+\operatorname{rank}L_{\tilde q}R_{\tilde p}=0\ \text{if }\tilde q=0\text{ or }\tilde p=0,\qquad
+\operatorname{rank}L_{\tilde q}R_{\tilde p}=4\ \text{otherwise}.
 $$
 
 **Proof.** $L_{\tilde q}$ is invertible exactly when $\tilde q\neq0$, because the algebra is a division algebra; the same holds for $R_{\tilde p}$; a product of invertible maps is invertible.
@@ -154,7 +154,7 @@ $$
 
 **The table.**
 
-| quantity | value for $T_{\tilde q,\tilde p}$ | depends on |
+| quantity | value for $L_{\tilde q}R_{\tilde p}$ | depends on |
 |---|---|---|
 | operator rank | $4$ if both parameters are non-zero, $0$ otherwise | nothing else |
 | trace | $4q_tp_t$ | the two scalar parts |
@@ -170,12 +170,12 @@ The first and last rows are constant on the cone, and the two middle rows are th
 **Composition.** For two products,
 
 $$
-T_{\tilde q,\tilde p}\,T_{\tilde q',\tilde p'}=T_{\tilde q\tilde q',\ \tilde p'\tilde p},
+L_{\tilde q}R_{\tilde p}\,L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\ \tilde p'\tilde p},
 $$
 
 so the family is a copy of $\mathbb{H}\times\mathbb{H}^{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $\mathbb{H}\times\mathbb{H}$: the second slot composes in the reverse order. The reversal is associativity showing through, and it is the same law as in the split category.
 
-**The units.** The invertible members are the products of two non-zero elements, with inverse $T_{\tilde q^{-1},\tilde p^{-1}}$, and they form the group
+**The units.** The invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, and they form the group
 
 $$
 \bigl(\mathbb{H}^{\times}\times\mathbb{H}^{\times}\bigr)/\mathbb{R}^{\times},
@@ -183,15 +183,15 @@ $$
 
 of dimension seven.
 
-**The automorphisms.** The inner automorphisms appear as $T_{\tilde q,\tilde q^{-1}}$ and form the subgroup $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$ of dimension three. The four dimensions between the two groups are the sandwiches with $\tilde q\tilde p\neq e_t$.
+**The automorphisms.** The inner automorphisms appear as $L_{\tilde q}R_{\tilde q^{-1}}$ and form the subgroup $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$ of dimension three. The four dimensions between the two groups are the sandwiches with $\tilde q\tilde p\neq e_t$.
 
-**The absence of matrix units.** The algebra has no idempotent, so it has no system of matrix units, and the sixteen basis operators $T_{e_\mu,e_\nu}$ are a basis of the ambient and not a system of units in the algebra. The Peirce frame of the split category has no counterpart, and the corner structure of that frame is replaced here by the single fact that the two copies intersect in the scalars.
+**The absence of matrix units.** The algebra has no idempotent, so it has no system of matrix units, and the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are a basis of the ambient and not a system of units in the algebra. The Peirce frame of the split category has no counterpart, and the corner structure of that frame is replaced here by the single fact that the two copies intersect in the scalars.
 
-**What survives from the semigroup.** The composition law, the units, the automorphisms, and the identity $T_{e_t,e_t}=I_4$, which is a product of length one. So the family is a semigroup with unit, closed under inversion on its units, and it does not contain the whole group $GL_4(\mathbb{R})$: it contains only the operators of the form $L_{\tilde q}R_{\tilde p}$, a seven-dimensional submanifold of the sixteen-dimensional group.
+**What survives from the semigroup.** The composition law, the units, the automorphisms, and the identity $L_{e_t}R_{e_t}=I_4$, which is a product of length one. So the family is a semigroup with unit, closed under inversion on its units, and it does not contain the whole group $GL_4(\mathbb{R})$: it contains only the operators of the form $L_{\tilde q}R_{\tilde p}$, a seven-dimensional submanifold of the sixteen-dimensional group.
 
 ## The Cone and the Coefficient Matrix
 
-**The map.** Put $\beta(\tilde q,\tilde p)=T_{\tilde q,\tilde p}$. It is bilinear, so its image is a cone with vertex at the zero operator and not a linear subspace:
+**The map.** Put $\beta(\tilde q,\tilde p)=L_{\tilde q}R_{\tilde p}$. It is bilinear, so its image is a cone with vertex at the zero operator and not a linear subspace:
 
 $$
 \beta:\mathbb{H}\times\mathbb{H}\longrightarrow M_4(\mathbb{R}).
@@ -205,7 +205,7 @@ $$
 
 the affine cone over the Segre variety $\mathbb{P}^{3}(\mathbb{R})\times\mathbb{P}^{3}(\mathbb{R})$, of real dimension $7$.
 
-**Proof.** A single product has $c=\tilde q\tilde p^{\,\mathsf T}$ of rank one by the display; conversely a rank-one array $c=uv^{\mathsf T}$ is the coefficient matrix of $T_{\tilde q,\tilde p}$ with $\tilde q=\sum u_\mu e_\mu$ and $\tilde p=\sum v_\nu e_\nu$, since the basis is a basis. The dimension is $3+3+1=7$, the dimension of the pair modulo the scaling.
+**Proof.** A single product has $c=\tilde q\tilde p^{\,\mathsf T}$ of rank one by the display; conversely a rank-one array $c=uv^{\mathsf T}$ is the coefficient matrix of $L_{\tilde q}R_{\tilde p}$ with $\tilde q=\sum u_\mu e_\mu$ and $\tilde p=\sum v_\nu e_\nu$, since the basis is a basis. The dimension is $3+3+1=7$, the dimension of the pair modulo the scaling.
 
 **The membership test.** An operator is a single product **if and only if** its coefficient matrix has rank exactly one, and then the two factors are the two singular vectors. The test is exact and needs no solving, and it is the reason the two-sided operator of this category is decidable: a given $4\times4$ matrix is or is not of the form $\tilde q\,\cdot\,\tilde p$.
 
@@ -220,7 +220,7 @@ the affine cone over the Segre variety $\mathbb{P}^{3}(\mathbb{R})\times\mathbb{
 **Definition.** The **length** of an operator is the least number of single products of which it is a sum,
 
 $$
-\ell(M)=\min\Bigl\{k:\ M=\sum_{i=1}^{k}T_{\tilde q_i,\tilde p_i}\Bigr\}.
+\ell(M)=\min\Bigl\{k:\ M=\sum_{i=1}^{k}L_{\tilde q_i}R_{\tilde p_i}\Bigr\}.
 $$
 
 **Theorem (the length is the coefficient rank).** For every operator of the ambient,
@@ -247,9 +247,9 @@ so four products always suffice, a generic operator needs exactly four, the sing
 
 **The two numbers.** The **operator rank** is the rank of the four-by-four matrix; the **length** is the coefficient rank. In this category the first takes two values and the second takes five, and neither determines the other. Three witnesses settle the question.
 
-**The identity.** $T_{e_t,e_t}=I_4$ has operator rank four and length one, so a maximal operator rank costs a single product. Every non-zero product has operator rank four, so this witness is generic in the rank and extremal in the length.
+**The identity.** $L_{e_t}R_{e_t}=I_4$ has operator rank four and length one, so a maximal operator rank costs a single product. Every non-zero product has operator rank four, so this witness is generic in the rank and extremal in the length.
 
-**A singular sum.** $T_{e_t,e_t}+T_{\vec e_x,\vec e_x}$ is the operator
+**A singular sum.** $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ is the operator
 
 $$
 \tilde x\longmapsto \tilde x+\vec e_x\tilde x\vec e_x ,
@@ -273,13 +273,13 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 
 1. The carrier is $\mathbb{H}$, of real dimension four, and the ambient is $M_4(\mathbb{R})$, of dimension sixteen; the model of size two over $\mathbb{C}$ plays no role in the operator layer.
 2. The two one-sided families are four-dimensional, commute, intersect in the scalars, and span a seven-dimensional subspace of the ambient.
-3. The two-sided operator $T_{\tilde q,\tilde p}(\tilde x)=\tilde q\tilde x\tilde p$ has rank four whenever both parameters are non-zero, determinant $N(\tilde q)^{2}N(\tilde p)^{2}>0$ and trace $4q_tp_t$.
+3. The two-sided operator $L_{\tilde q}R_{\tilde p}(\tilde x)=\tilde q\tilde x\tilde p$ has rank four whenever both parameters are non-zero, determinant $N(\tilde q)^{2}N(\tilde p)^{2}>0$ and trace $4q_tp_t$.
 4. The Kronecker display of the split category does not transfer, because a division algebra is not a tensor product of smaller real algebras; the coefficient matrix replaces it, and the display reappears over $\mathbb{C}$ in the biquaternion layer.
-5. The sixteen operators $L_{e_\mu}R_{e_\nu}$ form a basis, and $c(T_{\tilde q,\tilde p})=\tilde q\tilde p^{\,\mathsf T}$ has rank one.
+5. The sixteen operators $L_{e_\mu}R_{e_\nu}$ form a basis, and $c(L_{\tilde q}R_{\tilde p})=\tilde q\tilde p^{\,\mathsf T}$ has rank one.
 6. The cone of single products is the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$, of dimension seven, and the membership test is $\operatorname{rank}c\le1$.
-7. The composition is $T_{\tilde q,\tilde p}T_{\tilde q',\tilde p'}=T_{\tilde q\tilde q',\tilde p'\tilde p}$, the units form a group of dimension seven, and the inner automorphisms form $SO(3)$.
+7. The composition is $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, the units form a group of dimension seven, and the inner automorphisms form $SO(3)$.
 8. The length is the coefficient rank, in $\{0,\dots,4\}$, with strata of dimensions $0,7,12,15,16$; four products always suffice and generically are needed.
-9. The operator rank is two-valued and the length five-valued; the identity has rank four and length one, and the sum $T_{e_t,e_t}+T_{\vec e_x,\vec e_x}$ is a singular operator of rank two and length two.
+9. The operator rank is two-valued and the length five-valued; the identity has rank four and length one, and the sum $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ is a singular operator of rank two and length two.
 10. The operator algebra is strictly larger than the algebra, and the excess is the content of the category.
 
 ## Summary of Notation
@@ -287,8 +287,8 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 | Symbol | Meaning | Article |
 |---|---|---|
 | $L_{\tilde q},R_{\tilde q}$ | left and right multiplication on the carrier, $4\times4$ real matrices | this article |
-| $T_{\tilde q,\tilde p}$ | the product $L_{\tilde q}R_{\tilde p}$, that is $\tilde x\mapsto\tilde q\tilde x\tilde p$ | this article |
-| $T_{e_\mu,e_\nu}$ | the sixteen basis operators of the ambient | this article |
+| $L_{\tilde q}R_{\tilde p}$ | the product $L_{\tilde q}R_{\tilde p}$, that is $\tilde x\mapsto\tilde q\tilde x\tilde p$ | this article |
+| $L_{e_\mu}R_{e_\nu}$ | the sixteen basis operators of the ambient | this article |
 | $c(M)$ | the coefficient matrix of $M$ in that basis | this article |
 | $\ell(M)$ | the length, equal to $\operatorname{rank}c(M)$ | this article |
 | $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of signature $(1,3)$ | *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation* |

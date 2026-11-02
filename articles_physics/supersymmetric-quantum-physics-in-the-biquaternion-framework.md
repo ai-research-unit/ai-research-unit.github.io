@@ -14,7 +14,7 @@ This article argues that the biquaternion framework is the natural home of that 
 
 The article develops the correspondence in both directions. It first states the standard supersymmetric quantum physics and derives the partner potentials; it then identifies the biquaternionic first-order operator with the supercharge and the chiral pair with the superalgebra; it exhibits the 1+1-dimensional realisation, where the superpotential is a position-dependent mass and the two partner potentials are the two eigenvalues of a Hermitian element of $\mathbb{M}_+$; it reads the Dirac oscillator as the exactly solvable relativistic realisation of the partner structure; and it identifies the Witten index with the chirality imbalance of the zero modes. The quantised theory, the superfield formalism and the bona fide supersymmetric field theories are not treated; the subject here is the quantum physics, in the single-particle sense. The general graded-algebra framework behind the supercharges, the graded commutator and the boundary of what the biquaternion algebra supplies rather than imports is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the interpretation of the parity as the grading of the ambient algebra is *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*.
 
-The conventions are the series conventions. The frame is the cell frame: the five generators are the cells $iT_{e_t,e_x}$, $iT_{e_k,e_y}$ for $k=x,y,z$, and $-iT_{e_t,e_z}$, with $T_{a,b}=L_aR_b$ acting as $T_{a,b}\psi = a\psi b$ and $T_{e_t,e_t}$ the identity, so that the first squares to $+T_{e_t,e_t}$ and the three spatial ones to $-T_{e_t,e_t}$, distinct ones anticommute, that is $g = \mathrm{diag}(+1,-1,-1,-1)$ for the four vector generators, and the fifth anticommutes with all four and squares to $+T_{e_t,e_t}$; the chirality operator is $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$, whose cell is $-iT_{e_t,e_z}$, with $\Gamma^2=1$; the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$, with the sectors $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); and the mass pair is
+The conventions are the series conventions. The frame is the cell frame: the five generators are the cells $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ for $k=x,y,z$, and $-iL_{e_t}R_{e_z}$, with $L_{a}R_{b}$ acting as $L_{a}R_{b}\psi = a\psi b$ and $L_{e_t}R_{e_t}$ the identity, so that the first squares to $+L_{e_t}R_{e_t}$ and the three spatial ones to $-L_{e_t}R_{e_t}$, distinct ones anticommute, that is $g = \mathrm{diag}(+1,-1,-1,-1)$ for the four vector generators, and the fifth anticommutes with all four and squares to $+L_{e_t}R_{e_t}$; the chirality operator is $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$, whose cell is $-iL_{e_t}R_{e_z}$, with $\Gamma^2=1$; the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$, with the sectors $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); and the mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -260,12 +260,12 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathrm{Cl}_{1,3}^{+}$ | Biquaternion algebra |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
-| $T_{a,b}=L_aR_b$, $T_{a,b}\psi = a\psi b$ | The cell: multiply on the left by $a$, on the right by $b$ |
+| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | The cell: multiply on the left by $a$, on the right by $b$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient (the supercharge) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian (the Hamiltonian) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Mass pair (superalgebra) |
-| $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$ (cell $-iT_{e_t,e_z}$) | Chirality operator (the grading) |
+| $\Gamma:\psi\mapsto -i\,e_t\,\psi\,e_z$ (cell $-iL_{e_t}R_{e_z}$) | Chirality operator (the grading) |
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |

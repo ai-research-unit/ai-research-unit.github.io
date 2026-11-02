@@ -5,7 +5,7 @@
 Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic not $2$, let $q$ be a non-degenerate quadratic form on $V$ with polar form $B$, and let $\mathrm{Cl}(V,\mathfrak{Q})$ be its Clifford algebra. The **sandwich** attached to a pair $a, b \in \mathrm{Cl}(V,\mathfrak{Q})$ is the two-sided operator
 
 $$
-T_{a,b} : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad T_{a,b}(y) = a\,y\,b .
+L_{a}R_{b} : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad L_{a}R_{b}(y) = a\,y\,b .
 $$
 
 It is the most primitive two-sided operator the algebra carries: the left multiplication $L_a$ followed by the right multiplication $R_b$, the two composites agreeing because the product is associative. Everything later in the family is a restriction of it. Setting $b = a^{-1}$ gives the inner conjugation, setting $b = a^{\dagger}$ gives the Hermitian sandwich once the base carries an involution, and setting $b = a^{r}$ or $b = a^{\natural}$ gives the two intrinsic sandwiches.
@@ -20,15 +20,15 @@ The classification of all two-sided operators, with a left factor carrying an au
 
 ### Definition and Linearity
 
-**Definition.** For $a, b \in \mathrm{Cl}(V,\mathfrak{Q})$ the **sandwich** by the pair $(a,b)$ is $T_{a,b}(y) = a\,y\,b$. In terms of the one-sided multiplications,
+**Definition.** For $a, b \in \mathrm{Cl}(V,\mathfrak{Q})$ the **sandwich** by the pair $(a,b)$ is $L_{a}R_{b}(y) = a\,y\,b$. In terms of the one-sided multiplications,
 
 $$
-T_{a,b} = L_a \circ R_b = R_b \circ L_a .
+L_{a}R_{b} = L_a \circ R_b = R_b \circ L_a .
 $$
 
 The two composites agree because the product of the algebra is associative, so no parenthesis is needed.
 
-**Proposition.** $T_{a,b}$ is $F$-linear, and for a central scalar $\lambda \in F$ one has $T_{\lambda a, b} = T_{a, \lambda b} = \lambda T_{a,b}$. In particular $T_{1,1} = \mathrm{id}$ and $T_{0,b} = T_{a,0} = 0$.
+**Proposition.** $L_{a}R_{b}$ is $F$-linear, and for a central scalar $\lambda \in F$ one has $L_{\lambda a}R_{ b} = L_{a}R_{ \lambda b} = \lambda L_{a}R_{b}$. In particular $L_{1}R_{1} = \mathrm{id}$ and $L_{0}R_{b} = L_{a}R_{0} = 0$.
 
 **Proof.** Both one-sided multiplications are $F$-linear by the axioms of the algebra, and the scalar is central.
 
@@ -37,34 +37,34 @@ The two composites agree because the product of the algebra is associative, so n
 **Proposition (the composition law).** For all $a,b,c,d \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-\boxed{\;T_{a,b} \circ T_{c,d} = T_{ac,\,db}\;} .
+\boxed{\;L_{a}R_{b} \circ L_{c}R_{d} = L_{ac}R_{\,db}\;} .
 $$
 
-**Proof.** For every $y$, $T_{a,b}\bigl(T_{c,d}(y)\bigr) = a\,(c\,y\,d)\,b = (ac)\,y\,(db)$ by associativity.
+**Proof.** For every $y$, $L_{a}R_{b}\bigl(L_{c}R_{d}(y)\bigr) = a\,(c\,y\,d)\,b = (ac)\,y\,(db)$ by associativity.
 
 The law is the semi-direct product of the two one-sided families and it is worth reading off its two consequences. The parameters multiply on the left and on the right **independently and without reversal**: the left factors compose as $a c$ and the right factors as $d b$. So the set of sandwiches is a monoid isomorphic to the direct product of the multiplicative monoids of the algebra with the reverse order on the second factor,
 
 $$
-\{T_{a,b}\} \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q}) ,
+\{L_{a}R_{b}\} \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q}) ,
 $$
 
 where $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ has the reversed product.
 
-**Corollary (units).** $T_{a,b}$ is a bijection if and only if $a$ and $b$ are units; then $T_{a,b}^{-1} = T_{a^{-1}, b^{-1}}$.
+**Corollary (units).** $L_{a}R_{b}$ is a bijection if and only if $a$ and $b$ are units; then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$.
 
 **Proof.** If $a, b$ are units the inverse is the composition law applied twice. Conversely, if $L_aR_b$ is injective then $R_b$ is injective, and if it is surjective then $L_a$ is surjective; in a finite-dimensional algebra an injective right multiplication has $b$ a unit, and a surjective left multiplication has $a$ a unit, a one-sided inverse there being two-sided.
 
 ### The Kernel and the Value at the Unit
 
-**Proposition.** $T_{a,b}(1) = ab$; in particular the sandwich that is the identity map must have $ab = 1$, and the pairs that actually give the identity are determined below.
+**Proposition.** $L_{a}R_{b}(1) = ab$; in particular the sandwich that is the identity map must have $ab = 1$, and the pairs that actually give the identity are determined below.
 
-**Proposition (the indeterminacy).** Let $a, b, a', b'$ be units. Then $T_{a,b} = T_{a',b'}$ if and only if there is a unit $c$ in the centre $Z(\mathrm{Cl}(V,\mathfrak{Q}))$ with
+**Proposition (the indeterminacy).** Let $a, b, a', b'$ be units. Then $L_{a}R_{b} = L_{a'}R_{b'}$ if and only if there is a unit $c$ in the centre $Z(\mathrm{Cl}(V,\mathfrak{Q}))$ with
 
 $$
 a' = a\,c, \qquad b' = c^{-1} b .
 $$
 
-**Proof.** If $T_{a,b} = T_{a',b'}$, then evaluating at $y = 1$ gives $a'b' = ab$, so $a^{-1}a' = b\,b'^{-1} =: c$. For every $y$,
+**Proof.** If $L_{a}R_{b} = L_{a'}R_{b'}$, then evaluating at $y = 1$ gives $a'b' = ab$, so $a^{-1}a' = b\,b'^{-1} =: c$. For every $y$,
 
 $$
 a\,c\,y\,b' = a'\,y\,b' = a\,y\,b = a\,y\,b'\,c ,
@@ -75,7 +75,7 @@ so $c\,y = y\,c$ for every $y$, and $c$ is central. Conversely if $c$ is central
 **Corollary (the kernel).** The sandwiches that act as the identity are exactly the pairs $(c, c^{-1})$ with $c$ a unit of the centre,
 
 $$
-\boxed{\;\ker\bigl((a,b) \mapsto T_{a,b}\bigr) = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}\;}.
+\boxed{\;\ker\bigl((a,b) \mapsto L_{a}R_{b}\bigr) = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}\;}.
 $$
 
 In even dimension the centre is $F$, so the kernel is the scalars $F^{\times}$; in odd dimension the centre is $F \oplus F\omega$ with $\omega$ the volume element, so the kernel is $F^{\times} \cup F^{\times}\omega$ in the diagonal of the unit group.
@@ -101,7 +101,7 @@ where $\alpha$ is the grade involution. It is the sandwich by the pair $(x, \alp
 **Proposition (the relation to the sandwich).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x = (-1)^{k}$, so that $\alpha(x) = \varepsilon_x x$. Then for every $y$,
 
 $$
-\chi_x(y) = \varepsilon_x\, T_{x, x^{-1}}(y) = \varepsilon_x\, x\,y\,x^{-1}.
+\chi_x(y) = \varepsilon_x\, L_{x}R_{x^{-1}}(y) = \varepsilon_x\, x\,y\,x^{-1}.
 $$
 
 On the space of vectors the sandwich and the twisted conjugation therefore differ by the parity sign, and they agree exactly on the even part of $\Gamma(V,\mathfrak{Q})$.
@@ -122,13 +122,13 @@ Consequently $\chi_x\big|_{V} \in O(V,\mathfrak{Q})$, and the map $x \mapsto \ch
 
 **Proof.** For a vector, $\varepsilon_u = -1$, so $\chi_u(v) = -u v u^{-1}$, and the fundamental relation $uvu = 2B(u,v)u - \mathfrak{Q}(u)v$ gives $\chi_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u = \rho_u(v)$. The second statement is the same computation with $\varepsilon_x = 1$.
 
-**Remark (why the versor action and not the sandwich).** Both maps are defined on the algebra, both are bijections, and both preserve $V$ when $x$ is a versor. Only the twisted conjugation is orthogonal on every parity. The sandwich $T_{x,x^{-1}}$ agrees with it on the even part and is its negative on the odd part, which is why the reflections are carried by the twisted conjugation and the rotations by either.
+**Remark (why the versor action and not the sandwich).** Both maps are defined on the algebra, both are bijections, and both preserve $V$ when $x$ is a versor. Only the twisted conjugation is orthogonal on every parity. The sandwich $L_{x}R_{x^{-1}}$ agrees with it on the even part and is its negative on the odd part, which is why the reflections are carried by the twisted conjugation and the rotations by either.
 
 ## Worked Cases
 
 ### An Odd Versor in $\mathrm{Cl}_{0,3}(\mathbb{R})$
 
-With $e_j^{2} = -1$ let $x = e_1$. Then $x$ is a versor, $\varepsilon_x = -1$, $x^{-1} = -e_1$, and $T_{x,x^{-1}} = \mathrm{Ad}_{e_1}$ acts on the basis by $(e_1, -e_2, -e_3)$, while
+With $e_j^{2} = -1$ let $x = e_1$. Then $x$ is a versor, $\varepsilon_x = -1$, $x^{-1} = -e_1$, and $L_{x}R_{x^{-1}} = \mathrm{Ad}_{e_1}$ acts on the basis by $(e_1, -e_2, -e_3)$, while
 
 $$
 \chi_{e_1} = -\mathrm{Ad}_{e_1} \quad \text{acts by} \quad (-e_1, e_2, e_3),
@@ -144,7 +144,7 @@ The sandwich gives the negative $\mathrm{Ad}_{e_1} = -\rho_{e_1}$ and is the wro
 
 ### An Even Versor and a Rotation
 
-In the same algebra let $R = e_1e_2$. Then $R$ is even, $\varepsilon_R = 1$, so $\chi_R = T_{R,R^{-1}} = \mathrm{Ad}_R$, and with $R^{-1} = -e_1e_2$,
+In the same algebra let $R = e_1e_2$. Then $R$ is even, $\varepsilon_R = 1$, so $\chi_R = L_{R}R_{R^{-1}} = \mathrm{Ad}_R$, and with $R^{-1} = -e_1e_2$,
 
 $$
 \chi_R(e_1) = -e_1, \qquad \chi_R(e_2) = -e_2, \qquad \chi_R(e_3) = e_3 ,
@@ -157,7 +157,7 @@ the half-turn of the plane spanned by $e_1, e_2$. The value at the unit is $R R^
 In $\mathrm{Cl}_{0,3}$ the volume element $\omega = e_1e_2e_3$ is central and odd with $\omega^{2} = 1$, so $\omega$ is a unit of the centre and
 
 $$
-T_{\omega a, \omega^{-1} b} = T_{a, b}
+L_{\omega a}R_{\omega^{-1} b} = L_{a}R_{ b}
 $$
 
 for every pair. Taking the pair $(a,b) = (e_1, -e_1)$, whose operator is $\mathrm{Ad}_{e_1}$, the central unit $\omega$ gives the different pair
@@ -166,17 +166,17 @@ $$
 a' = \omega e_1 = -e_2e_3, \qquad b' = \omega^{-1}(-e_1) = -\omega e_1 = e_2e_3 ,
 $$
 
-and $T_{-e_2e_3,\,e_2e_3} = T_{e_1,-e_1}$, which is the worked form of the indeterminacy by a central unit.
+and $L_{-e_2e_3}R_{\,e_2e_3} = L_{e_1}R_{-e_1}$, which is the worked form of the indeterminacy by a central unit.
 
 ### A Non-Versor
 
-Let $x = 1 + e_1e_2e_3 = 1 + \omega$ in $\mathrm{Cl}_{0,3}$. Then $x^{2} = 1 + 2\omega + \omega^{2} = 2(1+\omega) = 2x$, so $x$ is not invertible and no sandwich with $b = \alpha(x)^{-1}$ is defined; the pair $(x, x)$ still gives the linear map $T_{x,x}$, whose value at the unit is $2x \notin F$. The example isolates invertibility, which is the only hypothesis the twisted conjugation shares with the sandwich.
+Let $x = 1 + e_1e_2e_3 = 1 + \omega$ in $\mathrm{Cl}_{0,3}$. Then $x^{2} = 1 + 2\omega + \omega^{2} = 2(1+\omega) = 2x$, so $x$ is not invertible and no sandwich with $b = \alpha(x)^{-1}$ is defined; the pair $(x, x)$ still gives the linear map $L_{x}R_{x}$, whose value at the unit is $2x \notin F$. The example isolates invertibility, which is the only hypothesis the twisted conjugation shares with the sandwich.
 
 ## Summary
 
-The **sandwich** $T_{a,b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $T_{a,b}T_{c,d} = T_{ac, db}$ with the left factors in the written order and the right factors reversed, and the sandwiches form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are units, with $T_{a,b}^{-1} = T_{a^{-1},b^{-1}}$. It remembers the product $ab$ and the value $T_{a,b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
+The **sandwich** $L_{a}R_{b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{ db}$ with the left factors in the written order and the right factors reversed, and the sandwiches form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are units, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. It remembers the product $ab$ and the value $L_{a}R_{b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
 
-Restricted to the quadratic space, the sandwich of a versor is the inner conjugation, and the correct action on $V$ is the **twisted conjugation** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the sandwich by $(x, \alpha(x)^{-1})$; the two differ by the parity sign, $\chi_x = \varepsilon_x T_{x,x^{-1}}$, so they agree on the even part of the Clifford group and are negatives on the odd part. The twisted conjugation of a versor is an isometry of $V$, a vector gives the reflection $\rho_u = \chi_u$, and an even versor gives a rotation; the map $x \mapsto \chi_x\big|_V$ is the homomorphism $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ on which the pin and spin groups are built. The article owns the two-parameter product and the versor action alone; the general operator family is *Two-Sided Operators on a Clifford Algebra*, and the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+Restricted to the quadratic space, the sandwich of a versor is the inner conjugation, and the correct action on $V$ is the **twisted conjugation** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the sandwich by $(x, \alpha(x)^{-1})$; the two differ by the parity sign, $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$, so they agree on the even part of the Clifford group and are negatives on the odd part. The twisted conjugation of a versor is an isometry of $V$, a vector gives the reflection $\rho_u = \chi_u$, and an even versor gives a rotation; the map $x \mapsto \chi_x\big|_V$ is the homomorphism $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ on which the pin and spin groups are built. The article owns the two-parameter product and the versor action alone; the general operator family is *Two-Sided Operators on a Clifford Algebra*, and the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## Summary of Notation
 
@@ -185,13 +185,13 @@ Restricted to the quadratic space, the sandwich of a versor is the inner conjuga
 | $V$, $q$, $B$ | Quadratic space, quadratic form and its polar form |
 | $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of $(V,\mathfrak{Q})$ |
 | $L_a$, $R_b$ | Left and right multiplication by $a$ and $b$ |
-| $T_{a,b}(y) = a\,y\,b$ | The two-parameter sandwich |
-| $T_{a,b}T_{c,d} = T_{ac,db}$ | Composition law |
-| $T_{a,b}(1) = ab$ | Value at the unit |
+| $L_{a}R_{b}(y) = a\,y\,b$ | The two-parameter sandwich |
+| $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ | Composition law |
+| $L_{a}R_{b}(1) = ab$ | Value at the unit |
 | $(ac, c^{-1}b)$, $c \in Z(\mathrm{Cl})^{\times}$ | The indeterminacy of the parametrisation |
 | $\alpha$, $\varepsilon_x = (-1)^{k}$ | Grade involution and the parity sign |
 | $\chi_x(y) = x\,y\,\alpha(x)^{-1}$ | Twisted conjugation |
-| $\chi_x = \varepsilon_x T_{x,x^{-1}}$ | Relation between the twisted conjugation and the sandwich |
+| $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$ | Relation between the twisted conjugation and the sandwich |
 | $\Gamma(V,\mathfrak{Q})$ | Clifford group, the versors |
 | $\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$ | Reflection in $u^{\perp}$ |
 | $\omega$ | Volume element |

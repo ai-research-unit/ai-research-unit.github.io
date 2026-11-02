@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The operators of a topological Clifford algebra are the multiplications and the sandwiches: the left multiplication $L_{x}(y)=xy$, the right multiplication $R_{x}(y)=yx$, the sandwich $T_{x,y}(z)=xzy$, the inner conjugation $T_{x,x^{-1}}$ of a unit, and the intrinsic anti-involutions of the algebra, the grade involution, the reversion and the Clifford conjugation. All of them are linear maps of the algebra into itself, and the layer consists of the statements that are topological about them: which are continuous, which are bounded with respect to a norm, what the operator norm of a multiplication is, and when the product of the algebra is jointly continuous. This article is the entry of the operator theory of the category; the companions are *The Bounded Left and Right Multiplication on a Clifford Algebra*, *The Bounded Sandwich and the Continuous Inner Conjugation* and *Bounded Clifford Modules and the Continuous Spin Representation*.
+The operators of a topological Clifford algebra are the multiplications and the sandwiches: the left multiplication $L_{x}(y)=xy$, the right multiplication $R_{x}(y)=yx$, the sandwich $L_{x}R_{y}(z)=xzy$, the inner conjugation $L_{x}R_{x^{-1}}$ of a unit, and the intrinsic anti-involutions of the algebra, the grade involution, the reversion and the Clifford conjugation. All of them are linear maps of the algebra into itself, and the layer consists of the statements that are topological about them: which are continuous, which are bounded with respect to a norm, what the operator norm of a multiplication is, and when the product of the algebra is jointly continuous. This article is the entry of the operator theory of the category; the companions are *The Bounded Left and Right Multiplication on a Clifford Algebra*, *The Bounded Sandwich and the Continuous Inner Conjugation* and *Bounded Clifford Modules and the Continuous Spin Representation*.
 
 The organising object is the algebra $\mathcal{B}(\mathrm{Cl}(V,\mathfrak{Q}))$ of **bounded** operators of the algebra with the operator norm, together with the embedding of the algebra into it by the left regular representation. That embedding is the reason the operator theory is not an appendix to the algebra: the map $x\mapsto L_{x}$ is an isometric algebra isomorphism onto its image when the norm of the algebra is submultiplicative and the unit has norm one, so the algebra and a subalgebra of its bounded operators are the same normed algebra; the sandwich is the product $L_{x}R_{y}$ of a left and a right multiplication, and the inner conjugation is the sandwich of a unit with its inverse. The two continua that occur in the layer are the continuity of the product in each variable separately, which is part of the definition of the algebra, and the **joint** continuity of the product, which is not assumed and which the companions characterise.
 
@@ -13,12 +13,12 @@ The article treats the operators of the layer, the algebra of bounded operators 
 **Definition.** The operators attached to the elements of the algebra are
 
 $$
-\boxed{\;L_{x}(y)=xy,\qquad R_{x}(y)=yx,\qquad T_{x,y}(z)=xzy,\qquad \chi_{x}=T_{x,\alpha(x)^{-1}}\;},
+\boxed{\;L_{x}(y)=xy,\qquad R_{x}(y)=yx,\qquad L_{x}R_{y}(z)=xzy,\qquad \chi_{x}=L_{x}R_{\alpha(x)^{-1}}\;},
 $$
 
 the **left multiplication**, the **right multiplication**, the **sandwich** and the **signed inner conjugation**, the last for $x$ a unit and $\alpha$ the grade involution; the **intrinsic anti-involutions** are the grade involution $\alpha$, the reversion $x\mapsto x^{r}$ and the Clifford conjugation $x^{\natural}=\alpha(x^{r})$ of *Topological Clifford Algebras*, §*The Conventions of the Category*, read as linear maps of the algebra into itself.
 
-**Proposition (the algebraic identities).** The maps are linear; $L_{x}L_{y}=L_{xy}$, $R_{x}R_{y}=R_{yx}$, $L_{x}R_{y}=R_{y}L_{x}$ and $T_{x,y}T_{u,v}=T_{xu,vy}$; $T_{x,y}=L_{x}R_{y}=R_{y}L_{x}$; and $T_{x,z}$ is the inner automorphism $y\mapsto xyx^{-1}$ when $z=x^{-1}$, with $\chi_{x}(v)=xv\alpha(x)^{-1}$ the twisted conjugation of the Part I entries.
+**Proposition (the algebraic identities).** The maps are linear; $L_{x}L_{y}=L_{xy}$, $R_{x}R_{y}=R_{yx}$, $L_{x}R_{y}=R_{y}L_{x}$ and $L_{x}R_{y}L_{u}R_{v}=L_{xu}R_{vy}$; $L_{x}R_{y}=R_{y}L_{x}$; and $L_{x}R_{z}$ is the inner automorphism $y\mapsto xyx^{-1}$ when $z=x^{-1}$, with $\chi_{x}(v)=xv\alpha(x)^{-1}$ the twisted conjugation of the Part I entries.
 
 *Proof.* Each is associativity of the product, together with the multiplicativity of $\alpha$ and of the reversion and conjugation as (anti-)automorphisms; the identities are those of *Two-Sided Operators on a Clifford Algebra* and *The Sandwich on a Clifford Algebra*, quoted and not re-derived.
 
@@ -34,9 +34,9 @@ with the operator norm, a normed algebra because $\lVert ST\rVert\le\lVert S\rVe
 
 *Proof.* Submultiplicativity gives $\lVert L_{x}y\rVert\le\lVert x\rVert\lVert y\rVert$, so $\lVert L_{x}\rVert\le\lVert x\rVert$; the reverse inequality follows from $\lVert L_{x}\rVert\ge\lVert L_{x}1\rVert/\lVert1\rVert=\lVert x\rVert$ when the unit has norm one. Multiplicativity of the representation is the proposition above, and an isometry of a complete space onto its image has closed image.
 
-**Theorem (the continuity of the operators).** Let the product of the algebra be continuous in each variable separately, as in the definition of the layer. Then $x\mapsto L_{x}$ and $x\mapsto R_{x}$ are continuous for the topology of pointwise convergence of the operators, the map $(x,y)\mapsto T_{x,y}$ is continuous in the same sense, and $x\mapsto T_{x,x^{-1}}$ is continuous on the open group of units into the invertible operators. If the algebra is normed and complete the maps take values in the bounded operators and are continuous for the operator norm when the norm is submultiplicative.
+**Theorem (the continuity of the operators).** Let the product of the algebra be continuous in each variable separately, as in the definition of the layer. Then $x\mapsto L_{x}$ and $x\mapsto R_{x}$ are continuous for the topology of pointwise convergence of the operators, the map $(x,y)\mapsto L_{x}R_{y}$ is continuous in the same sense, and $x\mapsto L_{x}R_{x^{-1}}$ is continuous on the open group of units into the invertible operators. If the algebra is normed and complete the maps take values in the bounded operators and are continuous for the operator norm when the norm is submultiplicative.
 
-*Proof.* For fixed $y$, the map $x\mapsto xy$ is continuous by the separate continuity of the product, and the pointwise limit of continuous maps is continuous for the topology of pointwise convergence; the sandwich is the composite of two such maps and the inner conjugation is the composite of the sandwich with the continuous inversion of the unit group. In the normed case the bound $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ gives the operator norm estimates $\lVert L_{x}\rVert\le\lVert x\rVert$ and $\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert$, whence continuity in the operator norm.
+*Proof.* For fixed $y$, the map $x\mapsto xy$ is continuous by the separate continuity of the product, and the pointwise limit of continuous maps is continuous for the topology of pointwise convergence; the sandwich is the composite of two such maps and the inner conjugation is the composite of the sandwich with the continuous inversion of the unit group. In the normed case the bound $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ gives the operator norm estimates $\lVert L_{x}\rVert\le\lVert x\rVert$ and $\lVert L_{x}R_{y}\rVert\le\lVert x\rVert\lVert y\rVert$, whence continuity in the operator norm.
 
 **Remark (what the layer does not assume).** The product of the layer is continuous in each variable separately and **not** jointly: joint continuity is an extra hypothesis, and the companions prove that it holds in the complete normed case, characterise it by a uniform bound, and show that it fails for the Euclidean norm of the definite case. Nothing in this entry uses an adjoint, a positivity or a Hilbert structure; those belong to the Hermitian layer of `Topology on Sesqualgebras with a degree-2 form`.
 
@@ -54,11 +54,11 @@ with the operator norm, a normed algebra because $\lVert ST\rVert\le\lVert S\rVe
 
 ### The Finite-Dimensional Case
 
-For a finite-dimensional algebra over a complete valued field every linear map is bounded and $\mathcal{B}(\mathrm{Cl}(V,\mathfrak{Q}))$ is the finite-dimensional algebra $\operatorname{End}(\mathrm{Cl}(V,\mathfrak{Q}))$; the operator norm is the unique norm up to equivalence, the group of units is open, and the sandwich map $(x,y)\mapsto T_{x,y}$ is continuous in both variables jointly, since it is bilinear on a finite product of finite-dimensional spaces. Every statement of the entry is therefore trivial here, and the content of the operator theory is in the infinite-dimensional case.
+For a finite-dimensional algebra over a complete valued field every linear map is bounded and $\mathcal{B}(\mathrm{Cl}(V,\mathfrak{Q}))$ is the finite-dimensional algebra $\operatorname{End}(\mathrm{Cl}(V,\mathfrak{Q}))$; the operator norm is the unique norm up to equivalence, the group of units is open, and the sandwich map $(x,y)\mapsto L_{x}R_{y}$ is continuous in both variables jointly, since it is bilinear on a finite product of finite-dimensional spaces. Every statement of the entry is therefore trivial here, and the content of the operator theory is in the infinite-dimensional case.
 
 ### The Exterior Algebra
 
-For the exterior algebra of a finite-dimensional space with the norm of the coefficient vector, the left multiplication is the exterior product, $\lVert L_{u}\rVert\le\lVert u\rVert$ with equality when the unit has norm one, and the sandwich $T_{u,v}(w)=u\wedge w\wedge v$ has norm at most $\lVert u\rVert\lVert v\rVert$; the products are universally bounded in the finite-dimensional case and the criterion of joint continuity of the companion article is automatic.
+For the exterior algebra of a finite-dimensional space with the norm of the coefficient vector, the left multiplication is the exterior product, $\lVert L_{u}\rVert\le\lVert u\rVert$ with equality when the unit has norm one, and the sandwich $L_{u}R_{v}(w)=u\wedge w\wedge v$ has norm at most $\lVert u\rVert\lVert v\rVert$; the products are universally bounded in the finite-dimensional case and the criterion of joint continuity of the companion article is automatic.
 
 ### The Infinite-Dimensional Case
 
@@ -66,21 +66,21 @@ Let the algebra be the completion of the Clifford algebra of a Hilbert space for
 
 ## Summary
 
-The operators of the layer are the **left and right multiplications** $L_{x},R_{x}$, the **sandwich** $T_{x,y}=L_{x}R_{y}=R_{y}L_{x}$, the **inner conjugation** $T_{x,x^{-1}}$ and the **signed inner conjugation** $\chi_{x}=T_{x,\alpha(x)^{-1}}$, together with the intrinsic anti-involutions. They satisfy $L_{x}L_{y}=L_{xy}$, $R_{x}R_{y}=R_{yx}$, $T_{x,y}T_{u,v}=T_{xu,vy}$ and the commutation $L_{x}R_{y}=R_{y}L_{x}$.
+The operators of the layer are the **left and right multiplications** $L_{x},R_{x}$, the **sandwich** $L_{x}R_{y}=R_{y}L_{x}$, the **inner conjugation** $L_{x}R_{x^{-1}}$ and the **signed inner conjugation** $\chi_{x}=L_{x}R_{\alpha(x)^{-1}}$, together with the intrinsic anti-involutions. They satisfy $L_{x}L_{y}=L_{xy}$, $R_{x}R_{y}=R_{yx}$, $L_{x}R_{y}L_{u}R_{v}=L_{xu}R_{vy}$ and the commutation $L_{x}R_{y}=R_{y}L_{x}$.
 
-When the algebra carries a submultiplicative norm with a unit of norm one, the left regular representation is an **isometric** algebra isomorphism onto its image, $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and $\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert$, and the image is a closed subalgebra of the bounded operators when the algebra is complete; the extension of $L_{x}$ to the completion preserves the norm. The **continuity** of $x\mapsto L_{x}$ and of $(x,y)\mapsto T_{x,y}$ is exactly the separate continuity of the product, which is a hypothesis of the layer; the **joint** continuity is an extra condition, characterised in *The Bounded Left and Right Multiplication on a Clifford Algebra*, and the modulus of a continuous action on a module is *Bounded Clifford Modules and the Continuous Spin Representation*. Nothing here uses an adjoint: the adjoints of these operators belong to the Hermitian layer.
+When the algebra carries a submultiplicative norm with a unit of norm one, the left regular representation is an **isometric** algebra isomorphism onto its image, $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and $\lVert L_{x}R_{y}\rVert\le\lVert x\rVert\lVert y\rVert$, and the image is a closed subalgebra of the bounded operators when the algebra is complete; the extension of $L_{x}$ to the completion preserves the norm. The **continuity** of $x\mapsto L_{x}$ and of $(x,y)\mapsto L_{x}R_{y}$ is exactly the separate continuity of the product, which is a hypothesis of the layer; the **joint** continuity is an extra condition, characterised in *The Bounded Left and Right Multiplication on a Clifford Algebra*, and the modulus of a continuous action on a module is *Bounded Clifford Modules and the Continuous Spin Representation*. Nothing here uses an adjoint: the adjoints of these operators belong to the Hermitian layer.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $L_{x}(y)=xy$, $R_{x}(y)=yx$ | the left and the right multiplication |
-| $T_{x,y}(z)=xzy$ | the sandwich, equal to $L_{x}R_{y}=R_{y}L_{x}$ |
-| $\chi_{x}=T_{x,\alpha(x)^{-1}}$ | the signed inner conjugation, $v\mapsto xv\alpha(x)^{-1}$ |
+| $L_{x}R_{y}(z)=xzy$ | the sandwich, equal to $L_{x}R_{y}=R_{y}L_{x}$ |
+| $\chi_{x}=L_{x}R_{\alpha(x)^{-1}}$ | the signed inner conjugation, $v\mapsto xv\alpha(x)^{-1}$ |
 | $\alpha,r,\natural$ | the grade involution, the reversion, the Clifford conjugation |
 | $\mathcal{B}(\mathrm{Cl}(V,\mathfrak{Q}))$ | the bounded operators with the operator norm |
 | $\lVert L_{x}\rVert=\lVert x\rVert$ | the isometry of the regular representation |
-| $\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert$ | the bound on the sandwich |
+| $\lVert L_{x}R_{y}\rVert\le\lVert x\rVert\lVert y\rVert$ | the bound on the sandwich |
 
 ## Further Reading
 

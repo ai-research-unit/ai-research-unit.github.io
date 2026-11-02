@@ -10,11 +10,11 @@
 
 **Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Two-Sided Operators on the Biquaternion Algebra*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
 
-**Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator space is $\operatorname{End}(A)$, of dimension $N^{2}=n^{4}$. The operator is $T_{A,B}=L_{A}R_{B}$, acting by $T_{A,B}(X)=AXB$. In the column-stacking basis $L_{A}=\mathrm I_{n}\otimes A$, $R_{B}=B^{\mathsf T}\otimes\mathrm I_{n}$ and therefore
+**Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator space is $\operatorname{End}(A)$, of dimension $N^{2}=n^{4}$. The operator is $L_{A}R_{B}$, acting by $L_{A}R_{B}(X)=AXB$. In the column-stacking basis $L_{A}=\mathrm I_{n}\otimes A$, $R_{B}=B^{\mathsf T}\otimes\mathrm I_{n}$ and therefore
 $$
-[T_{A,B}]=B^{\mathsf T}\otimes A .
+[L_{A}R_{B}]=B^{\mathsf T}\otimes A .
 $$
-The identity operator is $\mathrm I_{N}=[T_{I,I}]$. Rank is written of a matrix and of an operator; the length is written $\ell$.
+The identity operator is $\mathrm I_{N}=[L_{I}R_{I}]$. Rank is written of a matrix and of an operator; the length is written $\ell$.
 
 ## The Two-Sided Operator
 
@@ -22,43 +22,43 @@ The identity operator is $\mathrm I_{N}=[T_{I,I}]$. Rank is written of a matrix 
 
 **Definition.** The **two-sided operator** of the pair $(A,B)$ is
 $$
-T_{A,B}=L_{A}R_{B},\qquad T_{A,B}(X)=AXB .
+L_{A}R_{B},\qquad L_{A}R_{B}(X)=AXB .
 $$
 
 **Proposition (the Kronecker form).** In the column-stacking basis,
 $$
-[T_{A,B}]=B^{\mathsf T}\otimes A,
+[L_{A}R_{B}]=B^{\mathsf T}\otimes A,
 $$
 an $N\times N$ matrix of $n^{2}$ blocks of size $n$, the block $(i,j)$ being $B_{ji}A$, because the $i$-th row of $B^{\mathsf T}$ is the $i$-th column of $B$ read across.
 
 *Proof.* The product of the two matrices is $(B^{\mathsf T}\otimes\mathrm I_{n})(\mathrm I_{n}\otimes A)=B^{\mathsf T}\otimes A$, and the block form follows from the definition of the Kronecker product.
 
-**The order of the two factors is not a choice.** The two multiplications commute, so $T_{A,B}=L_{A}R_{B}=R_{B}L_{A}$, and the operator is well defined by the unordered pair. What the display records is a different fact: in the tensor slot the left parameter occupies the second factor and the right parameter the first, because the transpose of the right parameter is what reaches the column-stacking matrix. **The letter names the action and the slot names the position, and the two do not coincide.**
+**The order of the two factors is not a choice.** The two multiplications commute, so $L_{A}R_{B}=R_{B}L_{A}$, and the operator is well defined by the unordered pair. What the display records is a different fact: in the tensor slot the left parameter occupies the second factor and the right parameter the first, because the transpose of the right parameter is what reaches the column-stacking matrix. **The letter names the action and the slot names the position, and the two do not coincide.**
 
 **The two one-sided members.** With the other parameter the identity,
 $$
-T_{A,I}=L_{A},\qquad T_{I,B}=R_{B},
+L_{A}R_{I}=L_{A},\qquad L_{I}R_{B}=R_{B},
 $$
 so both one-sided families lie in the product set. This is the first of the two boundary cases, and it shows that the product set is not a small perturbation of the two copies but contains them.
 
 ### The Scaling and the Fibre
 
-**Bilinearity.** The map $(A,B)\mapsto T_{A,B}$ is complex-bilinear:
+**Bilinearity.** The map $(A,B)\mapsto L_{A}R_{B}$ is complex-bilinear:
 $$
-T_{\lambda A+\mu A',B}=\lambda T_{A,B}+\mu T_{A',B},\qquad
-T_{A,\lambda B+\mu B'}=\lambda T_{A,B}+\mu T_{A,B'}.
+L_{\lambda A+\mu A'}R_{B}=\lambda L_{A}R_{B}+\mu L_{A'}R_{B},\qquad
+L_{A}R_{\lambda B+\mu B'}=\lambda L_{A}R_{B}+\mu L_{A}R_{B'}.
 $$
 It is not complex-linear in the pair, and consequently its image is a cone and not a subspace.
 
 **The scaling orbit.** For $\lambda\in\mathbb{C}^{\times}$,
 $$
-T_{\lambda A,\lambda^{-1}B}=T_{A,B},
+L_{\lambda A}R_{\lambda^{-1}B}=L_{A}R_{B},
 $$
 because the two scalars cancel in the product $(\lambda A)X(\lambda^{-1}B)$. The group $\mathbb{C}^{\times}$ acts on the parameter space $M_{n}\times M_{n}$ without fixed points away from the origin, and the factorisation map is constant on the orbits.
 
 **Theorem (the fibre).** Let $A,B,C,D$ be nonzero. Then
 $$
-T_{A,B}=T_{C,D}\iff C=\lambda A,\ D=\lambda^{-1}B\ \text{for some }\lambda\in\mathbb{C}^{\times}.
+L_{A}R_{B}=L_{C}R_{D}\iff C=\lambda A,\ D=\lambda^{-1}B\ \text{for some }\lambda\in\mathbb{C}^{\times}.
 $$
 
 *Proof.* The implication from right to left is the scaling identity. For the other, $AXB=CXD$ for every $X$. Take $X=E_{ij}$: the entry $(k,l)$ of the identity reads $A_{ki}B_{jl}=C_{ki}D_{jl}$ for all $i,j,k,l$. Choose $(k_{0},i_{0})$ with $A_{k_{0}i_{0}}\ne0$ and $(j_{0},l_{0})$ with $B_{j_{0}l_{0}}\ne0$, and put $\lambda=C_{k_{0}i_{0}}/A_{k_{0}i_{0}}$. Fixing $k=k_{0}$ and $i=i_{0}$ gives $D_{jl}=\lambda^{-1}B_{jl}$ for all $j,l$, and fixing $j=j_{0}$ and $l=l_{0}$ gives $C_{ki}=\lambda A_{ki}$ for all $k,i$.
@@ -73,14 +73,14 @@ At $n=2$ this is $7$, at $n=3$ it is $17$, at $n=4$ it is $31$.
 
 **Proposition (the product vanishes exactly when a parameter does).**
 $$
-T_{A,B}=0\iff A=0\ \text{or}\ B=0 .
+L_{A}R_{B}=0\iff A=0\ \text{or}\ B=0 .
 $$
 
 *Proof.* One direction is immediate. For the other, suppose $A$ and $B$ are both nonzero; choose $(a,b)$ with $A_{ab}\ne0$ and $(c,d)$ with $B_{cd}\ne0$, and evaluate on $E_{bc}$. The entry $(a,d)$ of $A E_{bc}B$ is $A_{ab}B_{cd}\ne0$, so the operator is nonzero.
 
 **The vertex.** The zero operator is the image of every pair with a zero parameter, that is of the union of the two subspaces $A=0$ and $B=0$. It is the vertex of the cone, and it is the only point at which the fibre is not a scaling orbit: it is the whole union of the two $n^{2}$-dimensional subspaces.
 
-**The injectivity in each slot.** With one parameter fixed at the identity the map is injective in the other, by the faithfulness of the one-sided representations. The same holds for every nonzero fixed parameter: if $T_{A,B}=0$ with $B\ne0$, the zero-set proposition forces $A=0$, so the linear map $A\mapsto T_{A,B}$ has trivial kernel and is injective for every $B\ne0$, and symmetrically for every $A\ne0$. **The only degenerate fixed parameter is the zero one, where the map is identically zero.**
+**The injectivity in each slot.** With one parameter fixed at the identity the map is injective in the other, by the faithfulness of the one-sided representations. The same holds for every nonzero fixed parameter: if $L_{A}R_{B}=0$ with $B\ne0$, the zero-set proposition forces $A=0$, so the linear map $A\mapsto L_{A}R_{B}$ has trivial kernel and is injective for every $B\ne0$, and symmetrically for every $A\ne0$. **The only degenerate fixed parameter is the zero one, where the map is identically zero.**
 
 ## The Cone
 
@@ -88,13 +88,13 @@ $$
 
 **Proposition.** The product set
 $$
-\mathcal{C}=\{T_{A,B}:A,B\in M_{n}(\mathbb{C})\}
+\mathcal{C}=\{L_{A}R_{B}:A,B\in M_{n}(\mathbb{C})\}
 $$
 is a closed algebraic cone, stable under multiplication, and not a subspace.
 
-*Proof.* The cone property is the bilinearity. The closedness and the algebraic character are the rank condition of the companion article: $\mathcal{C}=\{M:\operatorname{rank}c(M)\le1\}$, cut out by the $2\times2$ minors of the coefficient array, which are polynomial. It is not a subspace because it is not closed under addition: for $n\ge2$ the sum $T_{I,I}+T_{E_{11},E_{11}}$ of two products is not one, its coefficient array being the sum of two independent rank-one arrays.
+*Proof.* The cone property is the bilinearity. The closedness and the algebraic character are the rank condition of the companion article: $\mathcal{C}=\{M:\operatorname{rank}c(M)\le1\}$, cut out by the $2\times2$ minors of the coefficient array, which are polynomial. It is not a subspace because it is not closed under addition: for $n\ge2$ the sum $L_{I}R_{I}+L_{E_{11}}R_{E_{11}}$ of two products is not one, its coefficient array being the sum of two independent rank-one arrays.
 
-**The cone is a set of pure tensors.** Under the isomorphism $M_{n}\otimes M_{n}^{\mathrm{opp}}\to\operatorname{End}(M_{n})$ the product $T_{A,B}$ is the image of the elementary tensor $A\otimes B^{\mathrm{opp}}$. Hence
+**The cone is a set of pure tensors.** Under the isomorphism $M_{n}\otimes M_{n}^{\mathrm{opp}}\to\operatorname{End}(M_{n})$ the product $L_{A}R_{B}$ is the image of the elementary tensor $A\otimes B^{\mathrm{opp}}$. Hence
 $$
 \mathcal{C}=\{A\otimes B^{\mathrm{opp}}\}=\text{the decomposable tensors of }M_{n}\otimes M_{n}^{\mathrm{opp}} .
 $$
@@ -120,7 +120,7 @@ r(2n-r)+s(2n-s)-1
 $$
 when both parameters are nonzero, the subtraction of one being the scaling. At $n=2$ the strata are $(1,1)$, $(1,2)$, $(2,1)$ and $(2,2)$, of complex dimensions $5,6,6,7$. **The stratum $(2,2)$ is open and dense, so the cone is the closure of the products of two units**; the smaller strata are the degenerations on which one parameter loses rank.
 
-**The singular locus is the vertex alone.** The Segre variety is smooth, so the cone over it is smooth away from the origin: at every point of the cone other than $0$ the derivative of the parametrisation $(A,B)\mapsto T_{A,B}$ has rank $2n^{2}-1$, the dimension of the cone. The two rulings are smooth subvarieties of a smooth open part, and the only singular point is the zero operator.
+**The singular locus is the vertex alone.** The Segre variety is smooth, so the cone over it is smooth away from the origin: at every point of the cone other than $0$ the derivative of the parametrisation $(A,B)\mapsto L_{A}R_{B}$ has rank $2n^{2}-1$, the dimension of the cone. The two rulings are smooth subvarieties of a smooth open part, and the only singular point is the zero operator.
 
 ## The Invariants
 
@@ -128,22 +128,22 @@ when both parameters are nonzero, the subtraction of one being the scaling. At $
 
 **Theorem.** For every pair,
 $$
-\operatorname{rank}T_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B,\qquad
-\operatorname{tr}T_{A,B}=\operatorname{tr}A\cdot\operatorname{tr}B,\qquad
-\det T_{A,B}=(\det A\cdot\det B)^{n}.
+\operatorname{rank}L_{A}R_{B}=\operatorname{rank}A\cdot\operatorname{rank}B,\qquad
+\operatorname{tr}L_{A}R_{B}=\operatorname{tr}A\cdot\operatorname{tr}B,\qquad
+\det L_{A}R_{B}=(\det A\cdot\det B)^{n}.
 $$
 
 *Proof.* The matrix is the Kronecker product $B^{\mathsf T}\otimes A$. The rank of a Kronecker product is the product of the ranks; the trace is the product of the traces; and for two matrices of size $n$ the determinant of the Kronecker product is $(\det B^{\mathsf T})^{n}(\det A)^{n}$.
 
 **The determinant is not a norm.** At $n=2$ the formula reads $\det T=(\det A\det B)^{2}$, which is the square of the product of the two norms. The fourth power of a complex number is not the biquaternion norm of anything, and this is why the article on the trace and the determinant of the biquaternion representation keeps the two notions apart. **The determinant of the operator is a multiplicative character of the pair and carries no positivity.**
 
-**The trace is the pairing of the two parameters.** The formula $\operatorname{tr}T_{A,B}=\operatorname{tr}A\operatorname{tr}B$ says that the trace of the two-sided operator is the product of the two scalar parts, and therefore that the trace sees only the scalar parts. The traceless parts of the two parameters are invisible to the trace and visible to the determinant and the rank.
+**The trace is the pairing of the two parameters.** The formula $\operatorname{tr}L_{A}R_{B}=\operatorname{tr}A\operatorname{tr}B$ says that the trace of the two-sided operator is the product of the two scalar parts, and therefore that the trace sees only the scalar parts. The traceless parts of the two parameters are invisible to the trace and visible to the determinant and the rank.
 
 ### The Attained Ranks
 
 **Theorem.** The rank of a product takes exactly the values
 $$
-\operatorname{rank}T_{A,B}=rs,\qquad 0\le r,s\le n .
+\operatorname{rank}L_{A}R_{B}=rs,\qquad 0\le r,s\le n .
 $$
 
 *Proof.* The rank of $A$ and the rank of $B$ each take every value from $0$ to $n$, independently, and the rank of the product is their product.
@@ -160,7 +160,7 @@ $$
 
 **Theorem (the composition law).** For all four parameters,
 $$
-T_{A,B}\,T_{C,D}=T_{AC,DB}.
+L_{A}R_{B}\,L_{C}R_{D}=L_{AC}R_{DB}.
 $$
 
 *Proof.* Apply the left side to $X$: $A(CXD)B=(AC)X(DB)$.
@@ -169,39 +169,39 @@ $$
 
 **Powers.** The composition gives
 $$
-(T_{A,B})^{k}=T_{A^{k},B^{k}},
+(L_{A}R_{B})^{k}=L_{A^{k}}R_{B^{k}},
 $$
-for $k\ge1$, and the identity operator is $T_{I,I}$. In particular the powers of a two-sided operator are two-sided, and the one-parameter family $\{T_{e^{tX},e^{tY}}\}$ is a one-parameter subgroup of the group of units.
+for $k\ge1$, and the identity operator is $L_{I}R_{I}$. In particular the powers of a two-sided operator are two-sided, and the one-parameter family $\{L_{e^{tX}}R_{e^{tY}}\}$ is a one-parameter subgroup of the group of units.
 
 ### The Group of Units
 
 **Theorem.** The set of invertible products is
 $$
-\{T_{A,B}:A,B\in\mathrm{GL}_{n}(\mathbb{C})\},
+\{L_{A}R_{B}:A,B\in\mathrm{GL}_{n}(\mathbb{C})\},
 $$
 and it is the image of $\mathrm{GL}_{n}(\mathbb{C})\times\mathrm{GL}_{n}(\mathbb{C})$; since the fibre of the parametrisation is the line of scalings it is isomorphic to the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
-*Proof.* The inverse of $T_{A,B}$ is $T_{A^{-1},B^{-1}}$, by the composition law, so the products of units are invertible and form a group. The pair $(A,B)$ is recovered from the operator by the fibre theorem up to scaling; the map $(A,B)\mapsto T_{A,B}$ restricted to units has kernel $\{(\lambda I,\lambda^{-1}I)\}$ of dimension one, so the group is the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$, the same count as the cone.
+*Proof.* The inverse of $L_{A}R_{B}$ is $L_{A^{-1}}R_{B^{-1}}$, by the composition law, so the products of units are invertible and form a group. The pair $(A,B)$ is recovered from the operator by the fibre theorem up to scaling; the map $(A,B)\mapsto L_{A}R_{B}$ restricted to units has kernel $\{(\lambda I,\lambda^{-1}I)\}$ of dimension one, so the group is the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$, the same count as the cone.
 
 **The two counts are the same number and different objects.** The cone has dimension $2n^{2}-1$ and contains non-invertible members; the group of units has dimension $2n^{2}-1$ and is open inside the cone. **The cone is the closure of the group of units, and the smaller strata are the degenerations in which one parameter loses rank; this is the precise sense in which the two-sided family is a group that has been allowed to degenerate.**
 
-**The monoid is not a group and the failure is the zero.** The product set contains the zero operator, which has no inverse, so the family is a monoid with zero. It is regular in the semigroup sense: every member has a generalised inverse, because $T_{A,B}T_{A^{-},B^{-}}T_{A,B}=T_{A,B}$ for a reflexive generalised inverse $A^{-}$ of $A$ and $B^{-}$ of $B$.
+**The monoid is not a group and the failure is the zero.** The product set contains the zero operator, which has no inverse, so the family is a monoid with zero. It is regular in the semigroup sense: every member has a generalised inverse, because $L_{A}R_{B}L_{A^{-}}R_{B^{-}}L_{A}R_{B}$ for a reflexive generalised inverse $A^{-}$ of $A$ and $B^{-}$ of $B$.
 
 ## The Two Boundaries and the Sandwich
 
 **The left and right boundaries.** The two copies are the boundary cases of the cone:
 $$
-T_{A,I}=L_{A},\qquad T_{I,B}=R_{B},
+L_{A}R_{I}=L_{A},\qquad L_{I}R_{B}=R_{B},
 $$
 of dimension $n^{2}$ each inside the cone of dimension $2n^{2}-1$. Their intersection is the scalars. A generic product lies in neither copy, and the generic product is not a one-sided operator.
 
 **The sandwich.** The **sandwich** is the member with the second parameter the conjugate transpose of the first,
 $$
-\Theta_{A}=T_{A,A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
+\Theta_{A}=L_{A}R_{A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
 $$
 It is a real subcone of the complex cone, of real dimension $2n^{2}-1$, and it is the subject of *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. The word *Hermitian* in the biquaternion articles refers to the same choice of the second slot, and the subcone is real and not complex because the star is antilinear.
 
-**The diagonal of the pair space.** The products with $A=B$ form the **diagonal subcone** $\{T_{A,A}\}$ of complex dimension $n^{2}$, on which the scaling acts by $\lambda^{2}$ and not by $\lambda$. The diagonal is not the sandwich: it is complex, of dimension $n^{2}$, and it is not the set of self-adjoint products either, since the dagger of $T_{A,A}$ is $T_{A^{*},A^{*}}$, again diagonal, and it equals $T_{A,A}$ only when $A$ is a scalar multiple of a normal matrix.
+**The diagonal of the pair space.** The products with $A=B$ form the **diagonal subcone** $\{L_{A}R_{A}\}$ of complex dimension $n^{2}$, on which the scaling acts by $\lambda^{2}$ and not by $\lambda$. The diagonal is not the sandwich: it is complex, of dimension $n^{2}$, and it is not the set of self-adjoint products either, since the dagger of $L_{A}R_{A}$ is $L_{A^{*}}R_{A^{*}}$, again diagonal, and it equals $L_{A}R_{A}$ only when $A$ is a scalar multiple of a normal matrix.
 
 ## The Case $n=2$
 
@@ -215,23 +215,23 @@ the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and 
 
 ## Summary
 
-The two-sided operator $T_{A,B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes A$, is bilinear in the pair, and is constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$. The products fill a closed algebraic cone of complex dimension $2n^{2}-1$ inside the $n^{4}$ dimensions of the endomorphism algebra; the cone is the set of pure tensors of $M_{n}\otimes M_{n}^{\mathrm{opp}}$, and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
+The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes A$, is bilinear in the pair, and is constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$. The products fill a closed algebraic cone of complex dimension $2n^{2}-1$ inside the $n^{4}$ dimensions of the endomorphism algebra; the cone is the set of pure tensors of $M_{n}\otimes M_{n}^{\mathrm{opp}}$, and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
 
-The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $T_{A,B}T_{C,D}=T_{AC,DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
+The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
-The two one-sided copies are the two rulings of the cone and meet in the scalars; the sandwich $\Theta_{A}=T_{A,A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{T_{A,A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
+The two one-sided copies are the two rulings of the cone and meet in the scalars; the sandwich $\Theta_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $T_{A,B}=L_{A}R_{B}$ | the two-sided operator $X\mapsto AXB$ |
-| $[T_{A,B}]=B^{\mathsf T}\otimes A$ | its matrix in the column-stacking basis |
+| $L_{A}R_{B}$ | the two-sided operator $X\mapsto AXB$ |
+| $[L_{A}R_{B}]=B^{\mathsf T}\otimes A$ | its matrix in the column-stacking basis |
 | $\mathcal{C}$ | the cone of products |
 | $N=n^{2}$ | the dimension of the algebra |
 | $2n^{2}-1$ | the complex dimension of the cone |
 | $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$ | the Segre variety of the projectivised cone |
-| $\Theta_{A}=T_{A,A^{*}}$ | the sandwich |
+| $\Theta_{A}=L_{A}R_{A^{*}}$ | the sandwich |
 | $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$ | the group of units of the monoid |
 | $\ell$ | the length, treated in the companion article |
 

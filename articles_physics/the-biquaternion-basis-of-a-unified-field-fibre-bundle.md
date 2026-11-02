@@ -111,7 +111,7 @@ $$
 
 attributed by the source to Majorana. It was verified to be $*$-unitary and involutive, $\tilde U^\dagger \tilde U = \tilde U^2 = I_4$, with a worst deviation of $2.2\times10^{-16}$.
 
-The source's own generators are printed in its Eq. (28): $\sigma_0\oplus\sigma_0$ in the timelike slot and $\begin{pmatrix} 0 & -\sigma_k \\ \sigma_k & 0\end{pmatrix}$ in the three spatial ones. As printed they are **not** a Clifford set: the anticommutator of the timelike generator with each spatial one is twice that spatial generator, which does not vanish, because the printed timelike matrix is the identity, the cell $T_{e_t,e_t}$, and the identity commutes with every cell. So the displayed timelike generator has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$. With that single correction the four generators satisfy the whole algebra for the metric $\mathrm{diag}(+1,-1,-1,-1)$ — every square and every anticommutator verified exactly. The correction does not touch $G$ itself, because the source assembles it from the identity in the timelike slot and the three spatial generators, not from its printed timelike one.
+The source's own generators are printed in its Eq. (28): $\sigma_0\oplus\sigma_0$ in the timelike slot and $\begin{pmatrix} 0 & -\sigma_k \\ \sigma_k & 0\end{pmatrix}$ in the three spatial ones. As printed they are **not** a Clifford set: the anticommutator of the timelike generator with each spatial one is twice that spatial generator, which does not vanish, because the printed timelike matrix is the identity, the cell $L_{e_t}R_{e_t}$, and the identity commutes with every cell. So the displayed timelike generator has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$. With that single correction the four generators satisfy the whole algebra for the metric $\mathrm{diag}(+1,-1,-1,-1)$ — every square and every anticommutator verified exactly. The correction does not touch $G$ itself, because the source assembles it from the identity in the timelike slot and the three spatial generators, not from its printed timelike one.
 
 **The verified effect.** The source's Eq. (34) is the transformation the corpus needs, and with it the source's stated purpose is achieved. Recomputing $G_2 = \tilde UG\tilde U^{-1}$ term by term and recomposing it gives
 
@@ -224,7 +224,7 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 | $\sigma_\alpha, \sigma_\beta, \sigma_\gamma$ | The source's $\mathrm{SL}(2,\mathbb{R})$ triple, the split real form of the Pauli triple |
 | $(2{+}2)$ signature | The source's second signature: $\sigma_\beta^2 = -1$ flips one sign in the coefficient sum, $a_0^2+a_1^2-a_2^2+a_3^2 = 1$, i.e. $p_0^2-p_1^2+p_2^2-p_3^2 = m^2$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, $M_2(\mathbb{H})\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$ | The corpus's interpretation of the source's "$\mathbb{H}_2$, whose complexification is the Dirac algebra" |
-| $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the two-sided cell $T_{a,b}\psi=a\psi b$; the cells of the appendix |
+| $L_a$, $R_b$, $L_{a}R_{b}$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the two-sided cell $L_{a}R_{b}\psi=a\psi b$; the cells of the appendix |
 
 ## Further Reading
 

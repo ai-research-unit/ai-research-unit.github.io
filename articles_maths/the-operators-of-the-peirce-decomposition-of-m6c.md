@@ -7,11 +7,11 @@ The Peirce decomposition of $M_6(\mathbb{C})$ is described by four families of l
 $$
 L_a(X)=aX,\qquad
 R_a(X)=Xa,\qquad
-T_{a,b}(X)=aXb,\qquad
+L_{a}R_{b}(X)=aXb,\qquad
 \operatorname{ad}_a(X)=aX-Xa .
 $$
 
-They are the left and right multiplications, the sandwich, and the inner derivation. Each is a $36\times36$ matrix in the basis of matrix units, and each acts on the Peirce corners $A_{rs}$ by carrying them to corners determined by the Peirce labels of $a$ and $b$. The sandwich $T_{a,b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$ and $b\in A_{kl}$ with $j=r$ and $s=k$.
+They are the left and right multiplications, the sandwich, and the inner derivation. Each is a $36\times36$ matrix in the basis of matrix units, and each acts on the Peirce corners $A_{rs}$ by carrying them to corners determined by the Peirce labels of $a$ and $b$. The sandwich $L_{a}R_{b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$ and $b\in A_{kl}$ with $j=r$ and $s=k$.
 
 The derivations of the algebra are the inner ones,
 
@@ -83,25 +83,25 @@ $$
 **Definition.** The **sandwich** is
 
 $$
-T_{a,b}=L_aR_b:M_6\longrightarrow M_6,\quad
+L_{a}R_{b}:M_6\longrightarrow M_6,\quad
 X\longmapsto aXb .
 $$
 
 **Theorem.** The sandwiches compose by
 
 $$
-T_{a,b}T_{c,d}=T_{ac,db},
+L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},
 $$
 
 and in the vectorised form
 
 $$
-T_{a,b}=b^{\mathsf T}\otimes a .
+L_{a}R_{b}=b^{\mathsf T}\otimes a .
 $$
 
 **Proof.** $a(cXd)b=(ac)X(db)$; $\operatorname{vec}(aXb)=(b^{\mathsf T}\otimes a)\operatorname{vec}X$.
 
-**Corollary (the sandwich monoid).** The set of sandwiches is a monoid under composition, with identity $T_{I_6,I_6}$; its group of units is
+**Corollary (the sandwich monoid).** The set of sandwiches is a monoid under composition, with identity $L_{I_6}R_{I_6}$; its group of units is
 
 $$
 (GL_6\times GL_6)/\mathbb{C}^\times,
@@ -109,7 +109,7 @@ $$
 
 where the scalar acts diagonally.
 
-**Proof.** $T_{a,b}$ is invertible iff $a$ and $b$ are invertible, with inverse $T_{a^{-1},b^{-1}}$. The pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich, and this is the only ambiguity.
+**Proof.** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible, with inverse $L_{a^{-1}}R_{b^{-1}}$. The pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich, and this is the only ambiguity.
 
 ### The Inner Derivation
 
@@ -139,7 +139,7 @@ $$
 $$
 \operatorname{tr}L_a=\operatorname{tr}R_a=6\operatorname{tr}a,
 \qquad
-\operatorname{tr}T_{a,b}=\operatorname{tr}(a)\operatorname{tr}(b),
+\operatorname{tr}L_{a}R_{b}=\operatorname{tr}(a)\operatorname{tr}(b),
 \qquad
 \operatorname{tr}\operatorname{ad}_a=0,
 $$
@@ -149,7 +149,7 @@ and
 $$
 \det L_a=\det R_a=(\det a)^6,
 \qquad
-\det T_{a,b}=(\det a\det b)^6,
+\det L_{a}R_{b}=(\det a\det b)^6,
 $$
 
 and
@@ -157,7 +157,7 @@ and
 $$
 \operatorname{rank}L_a=6\operatorname{rank}a,
 \qquad
-\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b),
+\operatorname{rank}L_{a}R_{b}=\operatorname{rank}(a)\operatorname{rank}(b),
 \qquad
 \operatorname{rank}\operatorname{ad}_a=36-\dim Z(a),
 $$
@@ -193,14 +193,14 @@ $$
 For the sandwich with $a\in A_{ij}$ and $b\in A_{kl}$,
 
 $$
-T_{a,b}(A_{rs})\subseteq A_{il}
+L_{a}R_{b}(A_{rs})\subseteq A_{il}
 \ \text{if }j=r\text{ and }s=k,\qquad
-T_{a,b}(A_{rs})=0\ \text{otherwise}.
+L_{a}R_{b}(A_{rs})=0\ \text{otherwise}.
 $$
 
 **Proof.** The product $A_{ij}A_{rs}$ is contained in $\delta_{jr}A_{is}$ by the Peirce multiplication rule; the right multiplication is the same on the other side; the sandwich is the composition.
 
-**Corollary (the corner matrix).** In the Peirce basis, $T_{a,b}$ has a single nonzero block, from the corner $A_{rs}$ to the corner $A_{il}$, whenever $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$. All other blocks vanish.
+**Corollary (the corner matrix).** In the Peirce basis, $L_{a}R_{b}$ has a single nonzero block, from the corner $A_{rs}$ to the corner $A_{il}$, whenever $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$. All other blocks vanish.
 
 **Proof.** The theorem gives the only nonzero corner map; the matrix is the corresponding block.
 
@@ -361,10 +361,10 @@ so $X\mapsto-X^{\mathsf T}$ is a Lie algebra automorphism. It is not inner for $
 
 ### The Corner Map
 
-**Theorem.** The sandwich $T_{a,b}$ restricts to a linear map
+**Theorem.** The sandwich $L_{a}R_{b}$ restricts to a linear map
 
 $$
-T_{a,b}:A_{rs}\longrightarrow A_{il},
+L_{a}R_{b}:A_{rs}\longrightarrow A_{il},
 \qquad
 a\in A_{ij},\quad b\in A_{kl},\quad j=r,\quad s=k,
 $$
@@ -384,25 +384,25 @@ $$
 $$
 A_{ij}\times A_{kl}\longrightarrow\operatorname{Hom}(A_{rs},A_{il}),
 \qquad
-(a,b)\longmapsto T_{a,b},
+(a,b)\longmapsto L_{a}R_{b},
 $$
 
 with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, and the sandwich is a scalar.
 
-**Proof.** The domain of $T_{a,b}$ is $A_{rs}$; the target is $A_{il}$; the map is bilinear in $(a,b)$.
+**Proof.** The domain of $L_{a}R_{b}$ is $A_{rs}$; the target is $A_{il}$; the map is bilinear in $(a,b)$.
 
 ### The Sandwich Matrix
 
 **Theorem.** In the basis of matrix units $E_{rs}$,
 
 $$
-T_{a,b}(E_{rs})=aE_{rs}b=\sum_{i,l}a_{ir}b_{sl}\,E_{il},
+L_{a}R_{b}(E_{rs})=aE_{rs}b=\sum_{i,l}a_{ir}b_{sl}\,E_{il},
 $$
 
-so the matrix of $T_{a,b}$ has entries
+so the matrix of $L_{a}R_{b}$ has entries
 
 $$
-(T_{a,b})_{(il),(rs)}=a_{ir}b_{sl}.
+(L_{a}R_{b})_{(il),(rs)}=a_{ir}b_{sl}.
 $$
 
 **Proof.** Expand $a$ and $b$ in the matrix units:
@@ -416,11 +416,11 @@ $$
 
 Hence the entry in the $(il),(rs)$ position is $a_{ir}b_{sl}$.
 
-**Corollary (the rank).** $\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b)$.
+**Corollary (the rank).** $\operatorname{rank}L_{a}R_{b}=\operatorname{rank}(a)\operatorname{rank}(b)$.
 
-**Proof.** $T_{a,b}=b^{\mathsf T}\otimes a$; the rank of a Kronecker product is the product of the ranks.
+**Proof.** $L_{a}R_{b}=b^{\mathsf T}\otimes a$; the rank of a Kronecker product is the product of the ranks.
 
-**Corollary (the invertible sandwiches).** $T_{a,b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible sandwiches is $(GL_6\times GL_6)/\mathbb{C}^\times$.
+**Corollary (the invertible sandwiches).** $L_{a}R_{b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible sandwiches is $(GL_6\times GL_6)/\mathbb{C}^\times$.
 
 **Proof.** The Kronecker product is invertible iff both factors are; the scalar ambiguity is the diagonal.
 
@@ -431,14 +431,14 @@ Hence the entry in the $(il),(rs)$ position is $a_{ir}b_{sl}$.
 $$
 M_6\times M_6\longrightarrow\operatorname{End}(M_6),
 \qquad
-(a,b)\longmapsto T_{a,b},
+(a,b)\longmapsto L_{a}R_{b},
 $$
 
 is a monoid homomorphism with kernel the diagonal scalars, and its image is the proper submonoid of the decomposable operators.
 
-**Proof.** The composition law $T_{a,b}T_{c,d}=T_{ac,db}$; the pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich. The image is not all of $\operatorname{End}(M_6)$: the sum of two decomposable operators need not be decomposable.
+**Proof.** The composition law $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich. The image is not all of $\operatorname{End}(M_6)$: the sum of two decomposable operators need not be decomposable.
 
-**Remark (the corner reading).** The sandwich is the only operator that sees two Peirce labels at once: $L_a$ sees the left label, $R_b$ the right label, and $T_{a,b}$ the pair. **The sandwich is the corner map of the Peirce decomposition.**
+**Remark (the corner reading).** The sandwich is the only operator that sees two Peirce labels at once: $L_a$ sees the left label, $R_b$ the right label, and $L_{a}R_{b}$ the pair. **The sandwich is the corner map of the Peirce decomposition.**
 
 ## Summary
 
@@ -447,7 +447,7 @@ The four operator families are
 $$
 L_a(X)=aX,\qquad
 R_a(X)=Xa,\qquad
-T_{a,b}(X)=aXb,\qquad
+L_{a}R_{b}(X)=aXb,\qquad
 \operatorname{ad}_a(X)=aX-Xa,
 $$
 
@@ -456,14 +456,14 @@ with matrices
 $$
 L_a=I_6\otimes a,\qquad
 R_a=a^{\mathsf T}\otimes I_6,\qquad
-T_{a,b}=b^{\mathsf T}\otimes a,\qquad
+L_{a}R_{b}=b^{\mathsf T}\otimes a,\qquad
 \operatorname{ad}_a=I_6\otimes a-a^{\mathsf T}\otimes I_6 .
 $$
 
-On the Peirce corners, $L_a$ carries $A_{rs}$ to $A_{is}$ when $a\in A_{ij}$ with $j=r$; $R_b$ carries $A_{rs}$ to $A_{rl}$ when $b\in A_{kl}$ with $s=k$; and $T_{a,b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$.
+On the Peirce corners, $L_a$ carries $A_{rs}$ to $A_{is}$ when $a\in A_{ij}$ with $j=r$; $R_b$ carries $A_{rs}$ to $A_{rl}$ when $b\in A_{kl}$ with $s=k$; and $L_{a}R_{b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$.
 
 $$
-\boxed{\ T_{a,b}:A_{rs}\to A_{il},\qquad \operatorname{Der}(M_6)=\mathfrak{sl}_6,\qquad \operatorname{Aut}(M_6)=PGL_6 .\ }
+\boxed{\ L_{a}R_{b}:A_{rs}\to A_{il},\qquad \operatorname{Der}(M_6)=\mathfrak{sl}_6,\qquad \operatorname{Aut}(M_6)=PGL_6 .\ }
 $$
 
 The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalars and image $\mathfrak{sl}_6$, of dimension $35$. The automorphisms are the inner conjugations $PGL_6$; the transpose is an anti-automorphism, and the negative transpose is the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.
@@ -472,7 +472,7 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 |---|---|---|
 | $L_a$ | $I_6\otimes a$ | $A_{rs}\to A_{is}$ if $a\in A_{ij}$, $j=r$ |
 | $R_b$ | $b^{\mathsf T}\otimes I_6$ | $A_{rs}\to A_{rl}$ if $b\in A_{kl}$, $s=k$ |
-| $T_{a,b}$ | $b^{\mathsf T}\otimes a$ | $A_{rs}\to A_{il}$ if $a\in A_{ij}$, $b\in A_{kl}$, $j=r$, $s=k$ |
+| $L_{a}R_{b}$ | $b^{\mathsf T}\otimes a$ | $A_{rs}\to A_{il}$ if $a\in A_{ij}$, $b\in A_{kl}$, $j=r$, $s=k$ |
 | $\operatorname{ad}_a$ | $I_6\otimes a-a^{\mathsf T}\otimes I_6$ | $\lambda_s-\lambda_t$ on $A_{st}$ for diagonal $a=\sum_k\lambda_kE_{kk}$ |
 
 ## Summary of Notation
@@ -481,7 +481,7 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 |---|---|
 | $L_a$ | left multiplication $X\mapsto aX$ |
 | $R_a$ | right multiplication $X\mapsto Xa$ |
-| $T_{a,b}$ | sandwich $X\mapsto aXb$ |
+| $L_{a}R_{b}$ | sandwich $X\mapsto aXb$ |
 | $\operatorname{ad}_a$ | inner derivation $X\mapsto aX-Xa$ |
 | $E_{rs}=L_{P_r}R_{P_s}$ | Peirce corner projector |
 | $\operatorname{Der}(M_6)$ | the derivations, isomorphic to $\mathfrak{sl}_6$ |

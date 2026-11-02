@@ -171,7 +171,7 @@ with reason $\exp(\mp 2\pi k t') = \exp\bigl(\mp 2\pi|k|t'\,\hat{g_k}\bigr)$ for
 Because $\Phi$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
 
 $$
-T_{\mathcal{C},\pm}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi (t'-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi (t'-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
 \tag{10}
 $$
 
@@ -185,30 +185,30 @@ and Plancherel's theorem turns the $k$-integral at each $s$ into $\|w(\cdot,s)\|
 
 ### The Right-Inverse Theorem
 
-The source's Theorem 10 states that $T_{\mathcal{C},\pm}[\mp i\,\cdot\,]$ is a right inverse of $D \pm i\partial/\partial t'$ on $L^2(\mathcal{C},\mathbb{B})$:
+The source's Theorem 10 states that $L_{\mathcal{C}}R_{\pm}[\mp i\,\cdot\,]$ is a right inverse of $D \pm i\partial/\partial t'$ on $L^2(\mathcal{C},\mathbb{B})$:
 
 $$
-\boxed{\;(D \pm i\partial/\partial t')\, T_{\mathcal{C},\pm}[\mp i\, w] = w\;}.
+\boxed{\;(D \pm i\partial/\partial t')\, L_{\mathcal{C}}R_{\pm}[\mp i\, w] = w\;}.
 \tag{11}
 $$
 
 The proof is the symbol computation. Acting on the multiplier, the space derivative brings down $2\pi i k$ and the time derivative brings down $\mp 2\pi k$, while the Leibniz rule in $t'$ contributes the boundary term $\exp(2\pi i\langle x,k\rangle)\mathcal{F}(w)(k,t')$ whose $k$-integral is $w(x,t')$ by inversion. The result is the operator identity
 
 $$
-\partial/\partial t' T_{\mathcal{C},\pm}[w] = w \pm i D T_{\mathcal{C},\pm}[w],
+\partial/\partial t' L_{\mathcal{C}}R_{\pm}[w] = w \pm i D L_{\mathcal{C}}R_{\pm}[w],
 $$
 
-which rearranges to $(D \pm i\partial/\partial t')T_{\mathcal{C},\pm}[w] = \pm i w$ and therefore to (11) once the factor $\mp i$ is inserted. The algebra of this step was verified exactly. The factor $\mp i$ in (11) is the price of the normalisation (10); it is not a defect, and the source is explicit that the inverse holds "up to a multiplicative factor".
+which rearranges to $(D \pm i\partial/\partial t')L_{\mathcal{C}}R_{\pm}[w] = \pm i w$ and therefore to (11) once the factor $\mp i$ is inserted. The algebra of this step was verified exactly. The factor $\mp i$ in (11) is the price of the normalisation (10); it is not a defect, and the source is explicit that the inverse holds "up to a multiplicative factor".
 
 ### The Correction of the Inverse's Scalar Part
 
-One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta + \partial^2/\partial {t'}^2)$ to $T_{\mathcal{C},\pm}[\mp i w]$ gives not $w$ but
+One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta + \partial^2/\partial {t'}^2)$ to $L_{\mathcal{C}}R_{\pm}[\mp i w]$ gives not $w$ but
 
 $$
-(-\Delta + \partial^2/\partial {t'}^2)T_{\mathcal{C},\pm}[\mp i w] = (D \mp i\partial/\partial t')w,
+(-\Delta + \partial^2/\partial {t'}^2)L_{\mathcal{C}}R_{\pm}[\mp i w] = (D \mp i\partial/\partial t')w,
 $$
 
-so the scalar part of $T_{\mathcal{C},\pm}[\mp i w]$ solves the homogeneous wave equation if and only if the scalar part of $(D \mp i\partial/\partial t')w$ vanishes, that is if and only if $\mathrm{div}\,\vec{w} \pm i\partial/\partial t' w_0 = 0$. In the time-independent case this is exactly the condition that the vector field be solenoidal, which is the class the heterogeneous div-curl literature requires. The vector part of the right-hand side need not vanish, so it is only the scalar part of the transform that is a wave solution without further correction; the correction itself is the completion (7) of the previous section.
+so the scalar part of $L_{\mathcal{C}}R_{\pm}[\mp i w]$ solves the homogeneous wave equation if and only if the scalar part of $(D \mp i\partial/\partial t')w$ vanishes, that is if and only if $\mathrm{div}\,\vec{w} \pm i\partial/\partial t' w_0 = 0$. In the time-independent case this is exactly the condition that the vector field be solenoidal, which is the class the heterogeneous div-curl literature requires. The vector part of the right-hand side need not vanish, so it is only the scalar part of the transform that is a wave solution without further correction; the correction itself is the completion (7) of the previous section.
 
 ## Explicit Vectorial Solutions of the Maxwell System
 
@@ -245,13 +245,13 @@ Comparison of (13) and (14) shows that the source's Proposition 12 and the corpu
 The source's constructive step is to push the source through the right inverse and then remove the scalar part. From (11) with the lower sign,
 
 $$
-(D - i\partial/\partial t') T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] = -4\pi(\rho - i\vec{\jmath}),
+(D - i\partial/\partial t') L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] = -4\pi(\rho - i\vec{\jmath}),
 $$
 
-so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,T_{\mathcal{C},-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves
+so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,L_{\mathcal{C}}R_{-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves
 
 $$
-\boxed{\;\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
+\boxed{\;\vec{\varphi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$
 
@@ -262,7 +262,7 @@ a **purely vectorial** solution of (13), whose real part is the electric field $
 The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial t'$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial t'$ replaced by $\lambda\partial/\partial t'$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform
 
 $$
-T_{\mathcal{C},\pm,\lambda}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(t'-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm,\lambda}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(t'-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
 \tag{16}
 $$
 
@@ -286,7 +286,7 @@ reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')
 
 ## Summary
 
-The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial Q_t = -i\partial/\partial t'$. The kernel of $D \pm i\partial/\partial t'$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial t')T_{\mathcal{C},\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial t' T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
+The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial Q_t = -i\partial/\partial t'$. The kernel of $D \pm i\partial/\partial t'$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial t')L_{\mathcal{C}}R_{\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial t' T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
 
 ## Summary of Notation
 
@@ -306,7 +306,7 @@ The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 =
 | $\mathcal{F}$ | Fourier transform in the space variables at fixed $t'$ |
 | $k$ | Frequency three-vector, read as the pure quaternion $\vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$ |
 | $\Phi_\pm$ | The source's kernel, $\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi kt')$ |
-| $T_{\mathcal{C},\pm}$, $T_{\mathcal{C},\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
+| $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
 | $\vec{\varphi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
 | $\tilde{F}, \tilde J, \tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box$ | Corpus field-strength biquaternion, four-current, biquaternionic gradient, its conjugate, d'Alembertian |

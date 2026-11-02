@@ -156,7 +156,7 @@ is therefore stable under $*$, and the spectral decomposition of $h$ is adapted 
 
 **Corollary.** If all the eigenvalues are fixed, the Peirce projections $E_{ij}(x)=e_ix e_j$ satisfy $E_{ij}^\dagger=E_{ij}$ with respect to any associative Hermitian form on $(A,*)$, and the Peirce decomposition is orthogonal in the sense that the idempotents $e_i$ are Hermitian and orthogonal.
 
-*Proof.* The identity for the Peirce projections is that of *The Adjoint of the Peirce Projection*: $T_{a,b}^\dagger=T_{a^*,b^*}$, and $e_i^*=e_i$, $e_j^*=e_j$, so $E_{ij}^\dagger=E_{ij}$. The idempotents are Hermitian and satisfy $e_ie_j=\delta_{ij}e_i$; this is the algebraic orthogonality. The form-orthogonality of the corners follows from $E_{ij}^\dagger=E_{ij}$ and is proved in that article.
+*Proof.* The identity for the Peirce projections is that of *The Adjoint of the Peirce Projection*: $L_{a}R_{b}^\dagger=L_{a^*}R_{b^*}$, and $e_i^*=e_i$, $e_j^*=e_j$, so $E_{ij}^\dagger=E_{ij}$. The idempotents are Hermitian and satisfy $e_ie_j=\delta_{ij}e_i$; this is the algebraic orthogonality. The form-orthogonality of the corners follows from $E_{ij}^\dagger=E_{ij}$ and is proved in that article.
 
 **Remark.** "Orthogonal" here has two readings, and the article keeps them apart. The algebraic reading is $e_ie_j=0$ for $i\neq j$, which always holds for an eigenvalue decomposition. The form-theoretic reading is $\langle A_{ij},A_{kl}\rangle=0$ for $(i,j)\neq(k,l)$, which needs a form and is the subject of *The Adjoint of the Peirce Projection* and *Hermitian Idempotents and the Peirce Decomposition*. The self-adjointness of $h$ alone gives the algebraic reading; it gives the form-theoretic reading only when a compatible form is present and the idempotents are Hermitian.
 

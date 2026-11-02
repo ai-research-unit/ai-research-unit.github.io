@@ -22,7 +22,7 @@ and the maps $x\mapsto L_{x}$ and $x\mapsto R_{x}$ are **isometric** algebra ant
 
 *Proof.* Submultiplicativity gives $\lVert L_{x}y\rVert\le\lVert x\rVert\lVert y\rVert$, whence $\lVert L_{x}\rVert\le\lVert x\rVert$; and $\lVert L_{x}\rVert\ge\lVert L_{x}1\rVert/\lVert1\rVert=\lVert x\rVert$, whence equality. The representation law $L_{x}L_{y}=L_{xy}$ makes $x\mapsto L_{x}$ multiplicative and hence an isomorphism onto its image, and $R_{x}R_{y}=R_{yx}$ makes $x\mapsto R_{x}$ an anti-isomorphism; an isometry onto its image is injective and its image is closed when the target is complete.
 
-**Proposition (the two representations commute).** For all $x,y$ one has $L_{x}R_{y}=R_{y}L_{x}$, the operator $L_{x}R_{y}$ is the sandwich $T_{x,y}$, and $\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert$.
+**Proposition (the two representations commute).** For all $x,y$ one has $L_{x}R_{y}=R_{y}L_{x}$, the operator $L_{x}R_{y}$ is the sandwich $L_{x}R_{y}$, and $\lVert L_{x}R_{y}\rVert\le\lVert x\rVert\lVert y\rVert$.
 
 *Proof.* Both sides send $z$ to $xzy$; the bound is $\lVert L_{x}R_{y}\rVert\le\lVert L_{x}\rVert\lVert R_{y}\rVert=\lVert x\rVert\lVert y\rVert$ by the theorem.
 
@@ -80,7 +80,7 @@ For the Euclidean algebra of an infinite-dimensional space the Euclidean norm fa
 
 ## Summary
 
-The **left** and the **right multiplication** of a normed Clifford algebra with a submultiplicative norm and a unit of norm one satisfy $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and commute, $L_{x}R_{y}=R_{y}L_{x}=T_{x,y}$; consequently the left regular representation is an **isometric isomorphism** of the algebra onto a closed subalgebra of its bounded operators and the algebra is the same normed algebra as that subalgebra.
+The **left** and the **right multiplication** of a normed Clifford algebra with a submultiplicative norm and a unit of norm one satisfy $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and commute, $L_{x}R_{y}=R_{y}L_{x}=L_{x}R_{y}$; consequently the left regular representation is an **isometric isomorphism** of the algebra onto a closed subalgebra of its bounded operators and the algebra is the same normed algebra as that subalgebra.
 
 The product is **jointly continuous** exactly when it is bounded on the product of the unit balls, equivalently when the operator norms of the multiplications are uniformly bounded, equivalently when the norm is equivalent to a submultiplicative one; and on a **complete** normed algebra on which the product is defined everywhere, separate continuity already implies joint continuity, by the **uniform boundedness principle**. That hypothesis — the product defined on the whole product of the complete space — cannot be dropped: for the **Euclidean norm** of the definite case the product is separately continuous on the algebraic algebra, each one-sided multiplication is bounded, and yet the bound $2^{n/2}$ grows without bound with the dimension, so there is no uniform bound and the product does not extend to the completion; the completion is the Fock space of the canonical anticommutation relations and not an algebra. The repair is the projective norm and the C*-norm of *The Completion of a Clifford Algebra*, for which the criterion holds at its fourth line and the completion is a Banach algebra.
 
@@ -91,7 +91,7 @@ The product is **jointly continuous** exactly when it is bounded on the product 
 | $L_{x}(y)=xy$, $R_{x}(y)=yx$ | the one-sided multiplications |
 | $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ | the isometry, for a submultiplicative norm with $\lVert1\rVert=1$ |
 | $L_{x}L_{y}=L_{xy}$, $R_{x}R_{y}=R_{yx}$ | the representation laws |
-| $L_{x}R_{y}=R_{y}L_{x}=T_{x,y}$ | the sandwich as a product of the two |
+| $L_{x}R_{y}=R_{y}L_{x}=L_{x}R_{y}$ | the sandwich as a product of the two |
 | $\sup_{\lVert x\rVert\le1}\lVert L_{x}\rVert<\infty$ | the criterion of joint continuity |
 | uniform boundedness principle | separate continuity $\Rightarrow$ joint, on a complete algebra |
 | Euclidean norm, Cauchy–Schwarz bound $2^{n/2}$ | the counterexample: separate yes, joint no, no extension |

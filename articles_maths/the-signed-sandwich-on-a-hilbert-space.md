@@ -12,7 +12,7 @@ Because $\Gamma$ is a self-adjoint unitary, $\alpha$ is an isometric $*$-automor
 
 The algebra $B(H)$ and its involution are *Bounded Operators on a Hilbert Space*; the unsigned sandwich and the multiplication operators are *The Left and Right Multiplication Operators on a Hilbert Space*; the algebraic signed sandwich and its coset structure are *The Signed Sandwich on a Banach Algebra* (Part II), of which this article is the Hilbert-space reading, and the signed left and right multiplications are *The Signed Left Multiplication on a Hilbert Space* below. The graded modules over the graded algebra $B(H)$ are *The Graded Action on a Module over a Hilbert Space*; the adjoints of the operators defined here are *The Signed Adjoint Sandwich on a Hilbert Space*.
 
-Throughout, $H=H^0\oplus H^1$ is a $\mathbb{Z}/2$-graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, the summands are orthogonal, $\Gamma=P^0-P^1$ is the parity operator, and $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)=\mathrm{End}(H)$; an element $T$ is **even** when $\alpha(T)=T$ and **odd** when $\alpha(T)=-T$, and every element is the sum of its even and odd parts. The unsigned sandwich is $T_{A,B}(T)=ATB$, the signed sandwich is $\mathcal{T}_{A,B}(T)=A\,\alpha(T)\,B$, and composition is read from right to left.
+Throughout, $H=H^0\oplus H^1$ is a $\mathbb{Z}/2$-graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, the summands are orthogonal, $\Gamma=P^0-P^1$ is the parity operator, and $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)=\mathrm{End}(H)$; an element $T$ is **even** when $\alpha(T)=T$ and **odd** when $\alpha(T)=-T$, and every element is the sum of its even and odd parts. The unsigned sandwich is $L_{A}R_{B}(T)=ATB$, the signed sandwich is $\mathcal{T}_{A,B}(T)=A\,\alpha(T)\,B$, and composition is read from right to left.
 
 ## The Signed Sandwich and Its Norm
 
@@ -22,7 +22,7 @@ $$
 \mathcal{T}_{A,B}:B(H)\longrightarrow B(H),\qquad \mathcal{T}_{A,B}(T)=A\,\alpha(T)\,B,
 $$
 
-and the **unsigned sandwich** is $T_{A,B}(T)=ATB$.
+and the **unsigned sandwich** is $L_{A}R_{B}(T)=ATB$.
 
 **Proposition (the grade involution).** The map $\alpha(T)=\Gamma T\Gamma$ is an involutive $*$-automorphism of $B(H)$: it is linear, multiplicative, $\alpha^2=\mathrm{id}$, and $\alpha(T^*)=\alpha(T)^*$. It is an isometry, $\|\alpha(T)\|=\|T\|$, and it preserves the Hilbert–Schmidt norm and the identity, $\alpha(I)=I$.
 
@@ -41,35 +41,35 @@ the norm being computed with respect to the operator norm; the same formula hold
 **Proposition (relation to the unsigned sandwich and the coset).** Every signed sandwich is the unsigned sandwich composed with the involution,
 
 $$
-\boxed{\;\mathcal{T}_{A,B}=T_{A,B}\circ\alpha\;} ,
+\boxed{\;\mathcal{T}_{A,B}=L_{A}R_{B}\circ\alpha\;} ,
 $$
 
-so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned ones inside $B(B(H))$, and the signed sandwich is the unsigned sandwich with the argument twisted. In particular $\mathcal{T}_{A,B}=T_{A,B}$ for all $A,B$ exactly when $\alpha=\mathrm{id}$, that is when $H^1=0$.
+so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned ones inside $B(B(H))$, and the signed sandwich is the unsigned sandwich with the argument twisted. In particular $\mathcal{T}_{A,B}=L_{A}R_{B}$ for all $A,B$ exactly when $\alpha=\mathrm{id}$, that is when $H^1=0$.
 
-*Proof.* $T_{A,B}(\alpha(T))=A\alpha(T)B=\mathcal{T}_{A,B}(T)$ is the definition; the identity of the two families on all arguments forces $\alpha=\mathrm{id}$, and $\alpha=\mathrm{id}$ means $\Gamma=I$ and $H^1=0$.
+*Proof.* $L_{A}R_{B}(\alpha(T))=A\alpha(T)B=\mathcal{T}_{A,B}(T)$ is the definition; the identity of the two families on all arguments forces $\alpha=\mathrm{id}$, and $\alpha=\mathrm{id}$ means $\Gamma=I$ and $H^1=0$.
 
 ## The Composition Table
 
 **Theorem (products of two-sided operators).** For $A,B,C,D\in B(H)$,
 
 $$
-\boxed{\;T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
-T_{A,B}\,\mathcal{T}_{C,D}=\mathcal{T}_{AC,\,DB},\qquad
-\mathcal{T}_{A,B}\,T_{C,D}=\mathcal{T}_{A\alpha(C),\,\alpha(D)B},\qquad
-\mathcal{T}_{A,B}\,\mathcal{T}_{C,D}=T_{A\alpha(C),\,\alpha(D)B}\;}.
+\boxed{\;L_{A}R_{B}\,L_{C}R_{D}=L_{AC}R_{\,DB},\qquad
+L_{A}R_{B}\,\mathcal{T}_{C,D}=\mathcal{T}_{AC,\,DB},\qquad
+\mathcal{T}_{A,B}\,L_{C}R_{D}=\mathcal{T}_{A\alpha(C),\,\alpha(D)B},\qquad
+\mathcal{T}_{A,B}\,\mathcal{T}_{C,D}=L_{A\alpha(C)}R_{\,\alpha(D)B}\;}.
 $$
 
 So the product of an even number of signed sandwiches is unsigned, the product of an odd number is signed, and the sign rule is the involution acting on the inner factors.
 
 *Proof.* Each identity is associativity and $\alpha^2=\mathrm{id}$: for the last, $\mathcal{T}_{A,B}(\mathcal{T}_{C,D}(X))=A\alpha(C\alpha(X)D)B=A\alpha(C)\alpha^2(X)\alpha(D)B=A\alpha(C)X\alpha(D)B$, and the three others are the same computation with the involution applied to any subset of the inner factors.
 
-**Corollary (the algebra generated by the two-sided operators).** The set of all two-sided operators $\{T_{A,B}\}\cup\{\mathcal{T}_{A,B}\}$ is the algebra generated by the unsigned and signed sandwiches; it contains the unsigned sandwiches as the subalgebra of index two formed by the elements of even signed length, and the quotient is $\mathbb{Z}/2$.
+**Corollary (the algebra generated by the two-sided operators).** The set of all two-sided operators $\{L_{A}R_{B}\}\cup\{\mathcal{T}_{A,B}\}$ is the algebra generated by the unsigned and signed sandwiches; it contains the unsigned sandwiches as the subalgebra of index two formed by the elements of even signed length, and the quotient is $\mathbb{Z}/2$.
 
 *Proof.* The product rules express every product as a two-sided operator, so the set is closed under multiplication and is an algebra; the parity of the number of signed factors is additive, by the same rules, and gives the stated quotient.
 
 **Proposition (the multiplication algebra comparison).** When $\alpha=\mathrm{id}$ the table reduces to the multiplication algebra of *The Left and Right Multiplication Operators on a Hilbert Space*, and when $\alpha$ is nontrivial the signed sandwiches are the extra operators obtained by first twisting the argument.
 
-*Proof.* At $\alpha=\mathrm{id}$ one has $\mathcal{T}_{A,B}=T_{A,B}$ and the first line is the composition of the multiplication algebra; the second statement is the definition of $\mathcal{T}_{A,B}$.
+*Proof.* At $\alpha=\mathrm{id}$ one has $\mathcal{T}_{A,B}=L_{A}R_{B}$ and the first line is the composition of the multiplication algebra; the second statement is the definition of $\mathcal{T}_{A,B}$.
 
 ## Invertibility and the Singular Elements
 
@@ -77,13 +77,13 @@ So the product of an even number of signed sandwiches is unsigned, the product o
 
 (i) $\mathcal{T}_{A,B}$ is invertible in $B(B(H))$;
 
-(ii) $T_{A,B}$ is invertible;
+(ii) $L_{A}R_{B}$ is invertible;
 
 (iii) $A$ and $B$ are invertible in $B(H)$.
 
 When these hold, $(\mathcal{T}_{A,B})^{-1}=\mathcal{T}_{A^{-1},B^{-1}}$ and $\mathcal{T}_{A,B}\mathcal{T}_{A^{-1},B^{-1}}=\mathcal{T}_{A^{-1},B^{-1}}\mathcal{T}_{A,B}=\mathrm{id}$.
 
-*Proof.* Composition with the invertible $\alpha$ does not change invertibility, giving (i) $\iff$ (ii); for the sandwich of a Banach algebra, $T_{A,B}=L_AR_B$ is invertible exactly when $A$ and $B$ are, because $L_A$ is invertible exactly when $A$ is and $R_B$ exactly when $B$ is, and the two commute; the inverse formula is $\mathcal{T}_{A,B}\mathcal{T}_{A^{-1},B^{-1}}(T)=A\alpha(A^{-1})\alpha^2(T)\alpha(B^{-1})B=T$, using $\alpha^2=\mathrm{id}$.
+*Proof.* Composition with the invertible $\alpha$ does not change invertibility, giving (i) $\iff$ (ii); for the sandwich of a Banach algebra, $L_{A}R_{B}$ is invertible exactly when $A$ and $B$ are, because $L_A$ is invertible exactly when $A$ is and $R_B$ exactly when $B$ is, and the two commute; the inverse formula is $\mathcal{T}_{A,B}\mathcal{T}_{A^{-1},B^{-1}}(T)=A\alpha(A^{-1})\alpha^2(T)\alpha(B^{-1})B=T$, using $\alpha^2=\mathrm{id}$.
 
 **Definition.** The **singular set** of the signed sandwich is the set of pairs $(A,B)$ with $A$ or $B$ non-invertible; the **critical elements** are the $T$ for which $\mathcal{T}_{A,B}$ or its adjoint annihilates $T$.
 
@@ -123,7 +123,7 @@ For $A$ the projection onto $H^0$ and $B=I$, the sandwich $\mathcal{T}_{A,I}(T)=
 
 ## Summary
 
-On a graded Hilbert space $H=H^0\oplus H^1$ with parity operator $\Gamma$ and grade involution $\alpha(T)=\Gamma T\Gamma$, the signed sandwich $\mathcal{T}_{A,B}(T)=A\alpha(T)B$ is a bounded operator on $B(H)$ of norm $\|A\|\|B\|$, equal to the unsigned sandwich composed with the involution, $\mathcal{T}_{A,B}=T_{A,B}\circ\alpha$. The products of two signs obey $T_{A,B}\mathcal{T}_{C,D}=\mathcal{T}_{AC,DB}$ and $\mathcal{T}_{A,B}\mathcal{T}_{C,D}=T_{A\alpha(C),\alpha(D)B}$, so the parity of the signed length is additive and the two-sided operators form an algebra with a $\mathbb{Z}/2$-quotient; the signed sandwich is invertible exactly when both factors are, with $\mathcal{T}_{A,B}^{-1}=\mathcal{T}_{A^{-1},B^{-1}}$, and the non-invertible sandwiches form the union of the left-singular and right-singular families. The signed sandwich $\mathcal{T}_{U,U^{-1}}$ is a reflection exactly when $U\alpha(U)=\pm I$, and its adjoint theory, the module structure and the reflections are the subjects of the companion articles of the group; in finite dimension the block-matrix model exhibits the sign reversal of the off-diagonal blocks directly.
+On a graded Hilbert space $H=H^0\oplus H^1$ with parity operator $\Gamma$ and grade involution $\alpha(T)=\Gamma T\Gamma$, the signed sandwich $\mathcal{T}_{A,B}(T)=A\alpha(T)B$ is a bounded operator on $B(H)$ of norm $\|A\|\|B\|$, equal to the unsigned sandwich composed with the involution, $\mathcal{T}_{A,B}=L_{A}R_{B}\circ\alpha$. The products of two signs obey $L_{A}R_{B}\mathcal{T}_{C,D}=\mathcal{T}_{AC,DB}$ and $\mathcal{T}_{A,B}\mathcal{T}_{C,D}=L_{A\alpha(C)}R_{\alpha(D)B}$, so the parity of the signed length is additive and the two-sided operators form an algebra with a $\mathbb{Z}/2$-quotient; the signed sandwich is invertible exactly when both factors are, with $\mathcal{T}_{A,B}^{-1}=\mathcal{T}_{A^{-1},B^{-1}}$, and the non-invertible sandwiches form the union of the left-singular and right-singular families. The signed sandwich $\mathcal{T}_{U,U^{-1}}$ is a reflection exactly when $U\alpha(U)=\pm I$, and its adjoint theory, the module structure and the reflections are the subjects of the companion articles of the group; in finite dimension the block-matrix model exhibits the sign reversal of the off-diagonal blocks directly.
 
 ## Summary of Notation
 
@@ -132,11 +132,11 @@ On a graded Hilbert space $H=H^0\oplus H^1$ with parity operator $\Gamma$ and gr
 | $H=H^0\oplus H^1$ | the graded Hilbert space, orthogonal summands |
 | $\Gamma=P^0-P^1$ | the parity operator, self-adjoint unitary |
 | $\alpha(T)=\Gamma T\Gamma$ | the grade involution of $B(H)$ |
-| $T_{A,B}(T)=ATB$ | the unsigned sandwich |
+| $L_{A}R_{B}(T)=ATB$ | the unsigned sandwich |
 | $\mathcal{T}_{A,B}(T)=A\alpha(T)B$ | the signed sandwich |
 | $\|\mathcal{T}_{A,B}\|=\|A\|\|B\|$ | the norm of a signed sandwich |
-| $\mathcal{T}_{A,B}=T_{A,B}\circ\alpha$ | signed as unsigned composed with the involution |
-| $\mathcal{T}_{A,B}\mathcal{T}_{C,D}=T_{A\alpha(C),\alpha(D)B}$ | product of two signed sandwiches |
+| $\mathcal{T}_{A,B}=L_{A}R_{B}\circ\alpha$ | signed as unsigned composed with the involution |
+| $\mathcal{T}_{A,B}\mathcal{T}_{C,D}=L_{A\alpha(C)}R_{\alpha(D)B}$ | product of two signed sandwiches |
 | $\mathcal{T}_{U,U^{-1}}$ | reflection candidate, involutive iff $U\alpha(U)$ central |
 
 ## Further Reading

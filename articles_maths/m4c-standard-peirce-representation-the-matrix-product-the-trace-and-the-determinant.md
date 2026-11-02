@@ -21,11 +21,11 @@ The root chooses the direction $z$. This is the price of the construction, and i
 
 **The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
 
-**The result in one line.** The left matrix is the $2\times2$ image taken twice, $L^{P}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$; the right matrix is the transposed image taken twice, $R^{P}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
+**The result in one line.** The left matrix is the $2\times2$ image taken twice, $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$; the right matrix is the transposed image taken twice, $R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
 
 The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
-**The one idea that is not in the two lists above.** The sixteen products $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coordinate matrix $c(M)$ in that basis. The product set is cut out by the rank of $c$, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and the rank survives a change of the algebra basis because $c$ transforms by a congruence. The content of §*The Coefficient Matrix and the Length* is that chain, and its punchline is negative: the same array can display two operators of different length, so the length belongs to the operator and not to the display.
+**The one idea that is not in the two lists above.** The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coordinate matrix $c(M)$ in that basis. The product set is cut out by the rank of $c$, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and the rank survives a change of the algebra basis because $c$ transforms by a congruence. The content of §*The Coefficient Matrix and the Length* is that chain, and its punchline is negative: the same array can display two operators of different length, so the length belongs to the operator and not to the display.
 
 **Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ e-basis Representation*; the frame is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, and the six subspaces as matrix conditions are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*.
 
@@ -97,7 +97,7 @@ $$
 $$
 The two mixed units are nilpotent, and each pair multiplies to one of the idempotents. The table is the Peirce table of the standard pair, written in the order above.
 
-**The two copies.** The Peirce frame is a basis of the algebra $\mathbb{B}$. Left multiplication by $\tilde Q$ is an operator on $\mathbb{B}$, and its matrix in the frame is the left matrix $L^{P}(\tilde Q)$. Right multiplication is another operator on the same space, and its matrix is the right matrix $R^{P}(\tilde Q)$. The images of the four basis elements under $\rho_L$ are the four matrices $L_\mu^{P}$; the images under $\rho_R$ are the four matrices $R_\mu^{P}$. Each family is a basis of its copy because $\rho_L$ and $\rho_R$ are injective and the four frame elements are a basis.
+**The two copies.** The Peirce frame is a basis of the algebra $\mathbb{B}$. Left multiplication by $\tilde Q$ is an operator on $\mathbb{B}$, and its matrix in the frame is the left matrix $L(\tilde Q)$. Right multiplication is another operator on the same space, and its matrix is the right matrix $R(\tilde Q)$. The images of the four basis elements under $\rho_L$ are the four matrices $L_\mu$; the images under $\rho_R$ are the four matrices $R_\mu$. Each family is a basis of its copy because $\rho_L$ and $\rho_R$ are injective and the four frame elements are a basis.
 
 **The coordinates.** An element written in the frame is
 $$
@@ -117,7 +117,7 @@ so the change from the coefficients $Q_\mu$ to the Peirce coordinates is the lin
 
 ## The Left and Right Matrices
 
-**The left matrix.** The left matrix $L^{P}(\tilde Q)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $\tilde Q$ times the $\mu$-th frame element, in the Peirce frame. Write
+**The left matrix.** The left matrix $L(\tilde Q)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $\tilde Q$ times the $\mu$-th frame element, in the Peirce frame. Write
 $$
 A=\mathsf M_2(\tilde Q)=
 \begin{pmatrix}
@@ -132,7 +132,7 @@ Q_t-iQ_z&-iQ_x-Q_y\\
 $$
 Then
 $$
-L^{P}(\tilde Q)=\mathrm I_2\otimes A=
+L(\tilde Q)=\mathrm I_2\otimes A=
 \begin{pmatrix}
 a&b&0&0\\
 c&d&0&0\\
@@ -142,9 +142,9 @@ c&d&0&0\\
 $$
 The matrix is block diagonal with two equal blocks. The first block acts on the pair $(\tilde\Pi_+,\vec\Upsilon_+)$ and the second on the pair $(\vec\Upsilon_-,\tilde\Pi_-)$. The sum of the first and fourth columns is the coordinate column of $\tilde Q$ in the Peirce frame, $(a,c,b,d)^{\mathsf T}$; neither column alone recovers the element.
 
-**The right matrix.** The right matrix $R^{P}(\tilde Q)$ has $\mu$-th column the coordinate column of the $\mu$-th frame element times $\tilde Q$. In the same frame,
+**The right matrix.** The right matrix $R(\tilde Q)$ has $\mu$-th column the coordinate column of the $\mu$-th frame element times $\tilde Q$. In the same frame,
 $$
-R^{P}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2=
+R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2=
 \begin{pmatrix}
 a&0&c&0\\
 0&a&0&c\\
@@ -154,15 +154,15 @@ b&0&d&0\\
 $$
 The right matrix is anti-multiplicative, and it commutes with the left matrix:
 $$
-R^{P}(\tilde Q_1\tilde Q_2)=R^{P}(\tilde Q_2)R^{P}(\tilde Q_1),\qquad
-L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)=R^{P}(\tilde Q_2)L^{P}(\tilde Q_1).
+R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
+L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The two identities are the two ways of reading the associative law.
 
 **An example.** For $\tilde Q=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$,
 $$
 A=\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix},\qquad
-L^{P}(\tilde Q)=
+L(\tilde Q)=
 \begin{pmatrix}
 3+i&-4-i&0&0\\
 2-i&1+i&0&0\\
@@ -172,7 +172,7 @@ L^{P}(\tilde Q)=
 $$
 The trace is $8+4i=4(2+i)$, and the determinant is $117+44i=(11+2i)^2$, with $\langle\tilde Q\rangle_{\natural}=11+2i$. The right matrix is the transposed block display,
 $$
-R^{P}(\tilde Q)=
+R(\tilde Q)=
 \begin{pmatrix}
 3+i&0&2-i&0\\
 0&3+i&0&2-i\\
@@ -188,15 +188,15 @@ C_R=\sigma_2\otimes\mathrm I_2,
 $$
 the transpose dictionaries are
 $$
-L^{P}(\tilde Q)^{\mathsf T}=C_L\,L^{P}(\tilde Q^{\natural})\,C_L,\qquad
-R^{P}(\tilde Q)^{\mathsf T}=C_R\,R^{P}(\tilde Q^{\natural})\,C_R,
+L(\tilde Q)^{\mathsf T}=C_L\,L(\tilde Q^{\natural})\,C_L,\qquad
+R(\tilde Q)^{\mathsf T}=C_R\,R(\tilde Q^{\natural})\,C_R,
 $$
 and the Hermitian adjoints are
 $$
-L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*}),\qquad
-R^{P}(\tilde Q)^{\dagger}=R^{P}(\tilde Q^{*}).
+L(\tilde Q)^{\dagger}=L(\tilde Q^{*}),\qquad
+R(\tilde Q)^{\dagger}=R(\tilde Q^{*}).
 $$
-The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L^{P}$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R^{P}$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold for the Hermitian form $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ because the four frame vectors are orthogonal and have the same norm,
+The two matrices differ because the transpose acts on the factor that carries the element: $C_L$ acts on the second tensor factor, where $A$ sits in $L$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor. The adjoint identities hold for the Hermitian form $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ because the four frame vectors are orthogonal and have the same norm,
 $$
 \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_+,\vec\Upsilon_+\rangle_*
 =\langle\vec\Upsilon_-,\vec\Upsilon_-\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,
@@ -205,47 +205,47 @@ and all the cross products vanish. The frame is orthogonal with equal norms, so 
 
 ## The L and R Bases
 
-**The left basis.** The four matrices $L_\mu^{P}=L^{P}(e_\mu)$ are
+**The left basis.** The four matrices $L_\mu=L(e_\mu)$ are
 $$
-L_t^{P}=\mathrm I_4,\qquad
-L_x^{P}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_t=\mathrm I_4,\qquad
+L_x=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_y^{P}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_z^{P}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
+L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathrm I_2\otimes\mathsf M_2(\vec e_k)$ with $\mathsf M_2(\vec e_k)=-i\sigma_k$. The matrices are not signed permutations; their entries are $0,\pm1,\pm i$. Each has determinant $1$; the identity has trace $4$, and the three vector matrices have trace $0$. Since $\rho_L$ is injective and the four units are a basis of $\mathbb{B}$, the four matrices are linearly independent and span $\mathbb{B}_L$: they are a basis of the left copy.
 
-**The right basis.** The four matrices $R_\mu^{P}=R^{P}(e_\mu)$ are
+**The right basis.** The four matrices $R_\mu=R(e_\mu)$ are
 $$
-R_t^{P}=\mathrm I_4,\qquad
-R_x^{P}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_t=\mathrm I_4,\qquad
+R_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_y^{P}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_z^{P}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathsf M_2(\vec e_k)^{\mathsf T}\otimes\mathrm I_2$. Each has determinant $1$ and trace $4\delta_{\mu t}$; the four are a basis of $\mathbb{B}_R$. The two bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space.
 
 **The product of two basis matrices.** Write the two orders of the quaternion product as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$, with $\varepsilon,\varepsilon'=\pm1$ and $e_{\mu\nu},e_{\nu\mu}$ units. Then
 $$
-L_\mu^{P}L_\nu^{P}=\varepsilon L_{\mu\nu}^{P},\qquad
-R_\mu^{P}R_\nu^{P}=\varepsilon' R_{\nu\mu}^{P}.
+L_\muL_\nu=\varepsilon L_{\mu\nu},\qquad
+R_\muR_\nu=\varepsilon' R_{\nu\mu}.
 $$
 The left product follows the order of the units; the right product reverses it, because $R_aR_b=R_{ba}$. For example,
 $$
-(L_x^{P})^2=(R_x^{P})^2=-\mathrm I_4,\qquad
-L_x^{P}L_y^{P}=L_z^{P},\qquad
-L_y^{P}L_x^{P}=-L_z^{P},
+(L_x)^2=(R_x)^2=-\mathrm I_4,\qquad
+L_xL_y=L_z,\qquad
+L_yL_x=-L_z,
 $$
-and on the right $R_x^{P}R_y^{P}=-R_z^{P}$, $R_y^{P}R_x^{P}=R_z^{P}$. The basis is closed under products up to sign, and the signs are the signs of the multiplication table. The set of the four left matrices together with their negatives is the quaternion group of order eight, and the same holds for the right matrices.
+and on the right $R_xR_y=-R_z$, $R_yR_x=R_z$. The basis is closed under products up to sign, and the signs are the signs of the multiplication table. The set of the four left matrices together with their negatives is the quaternion group of order eight, and the same holds for the right matrices.
 
 **Trace and determinant of a basis matrix.** Every basis matrix is invertible, with
 $$
-\det L_\mu^{P}=\det R_\mu^{P}=1,\qquad
-\operatorname{Tr}L_\mu^{P}=\operatorname{Tr}R_\mu^{P}=4\delta_{\mu t}.
+\det L_\mu=\det R_\mu=1,\qquad
+\operatorname{Tr}L_\mu=\operatorname{Tr}R_\mu=4\delta_{\mu t}.
 $$
-A sum of basis matrices need not be invertible: $L_x^{P}+R_x^{P}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+A sum of basis matrices need not be invertible: $L_x+R_x$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
 
 ## The Stitch Between the Left and the Right
 
@@ -266,13 +266,13 @@ The matrix is symmetric, and it is the exchange of the second and third coordina
 
 **The stitch.** The right matrix is obtained from the left by transposition and the swap:
 $$
-R^{P}(\tilde Q)=\mathsf P\,L^{P}(\tilde Q)^{\mathsf T}\mathsf P .
+R(\tilde Q)=\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P .
 $$
 The identity is the tensor identity $\mathsf P(\mathrm I_2\otimes A^{\mathsf T})\mathsf P=A^{\mathsf T}\otimes\mathrm I_2$.
 
 **The stitch in full.** The three steps are displayed on a general element. The transpose of the left matrix is
 $$
-L^{P}(\tilde Q)^{\mathsf T}=
+L(\tilde Q)^{\mathsf T}=
 \begin{pmatrix}
 a&c&0&0\\
 b&d&0&0\\
@@ -282,7 +282,7 @@ b&d&0&0\\
 $$
 the swap moves the two $2\times2$ blocks into the two tensor slots,
 $$
-\mathsf P\,L^{P}(\tilde Q)^{\mathsf T}=
+\mathsf P\,L(\tilde Q)^{\mathsf T}=
 \begin{pmatrix}
 a&c&0&0\\
 0&0&a&c\\
@@ -292,19 +292,19 @@ b&d&0&0\\
 $$
 and the second multiplication by $\mathsf P$ exchanges the second and third columns,
 $$
-\mathsf P\,L^{P}(\tilde Q)^{\mathsf T}\mathsf P=
+\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P=
 \begin{pmatrix}
 a&0&c&0\\
 0&a&0&c\\
 b&0&d&0\\
 0&b&0&d
 \end{pmatrix}
-=R^{P}(\tilde Q).
+=R(\tilde Q).
 $$
 The swap sends a block in the second tensor slot to the first slot, and conversely. The stitch is an involution, because $\mathsf P^2=\mathrm I_4$ and transposition is an involution. It preserves the trace and the determinant:
 $$
-\operatorname{Tr}R^{P}(\tilde Q)=\operatorname{Tr}L^{P}(\tilde Q),\qquad
-\det R^{P}(\tilde Q)=\det L^{P}(\tilde Q),
+\operatorname{Tr}R(\tilde Q)=\operatorname{Tr}L(\tilde Q),\qquad
+\det R(\tilde Q)=\det L(\tilde Q),
 $$
 since neither transposition nor conjugation by a fixed matrix changes them.
 
@@ -345,18 +345,18 @@ The determinant is the normalisation of the four frame vectors, not an invariant
 
 **The switch.** The two representations are the same operator read in two frames:
 $$
-L^{P}(\tilde Q)=S^{-1}L^{e}(\tilde Q)S,\qquad
-R^{P}(\tilde Q)=S^{-1}R^{e}(\tilde Q)S,
+L(\tilde Q)=S^{-1}L^{e}(\tilde Q)S,\qquad
+R(\tilde Q)=S^{-1}R^{e}(\tilde Q)S,
 $$
 and conversely
 $$
-L^{e}(\tilde Q)=S\,L^{P}(\tilde Q)\,S^{-1},\qquad
-R^{e}(\tilde Q)=S\,R^{P}(\tilde Q)\,S^{-1}.
+L^{e}(\tilde Q)=S\,L(\tilde Q)\,S^{-1},\qquad
+R^{e}(\tilde Q)=S\,R(\tilde Q)\,S^{-1}.
 $$
 On the four units,
 $$
-L_\mu^{P}=S^{-1}L_\mu^{e}S,\qquad
-R_\mu^{P}=S^{-1}R_\mu^{e}S .
+L_\mu=S^{-1}L_\mu^{e}S,\qquad
+R_\mu=S^{-1}R_\mu^{e}S .
 $$
 The coordinate columns change by
 $$
@@ -368,15 +368,15 @@ where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$ 
 
 ## The Coefficient Matrix and the Length
 
-**The sixteen products.** Write $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$. The sixteen are the monomial matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
+**The sixteen products.** Write $T_{\mu\nu}=L_\mu R_\nu$. The sixteen are the monomial matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
 $$
-\operatorname{Tr}\bigl((T^{P}_{\mu\nu})^{\dagger}T^{P}_{\rho\sigma}\bigr)
+\operatorname{Tr}\bigl((T_{\mu\nu})^{\dagger}T_{\rho\sigma}\bigr)
 =4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 Hence every matrix has a unique expansion
 $$
-M=\sum_{\mu,\nu}c_{\mu\nu}T^{P}_{\mu\nu},\qquad
-c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((T^{P}_{\mu\nu})^{\dagger}M\bigr).
+M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu},\qquad
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((T_{\mu\nu})^{\dagger}M\bigr).
 $$
 The array $c(M)=(c_{\mu\nu})$ is the **coefficient matrix** of $M$. It is not the matrix: $M$ is the display of an endomorphism in the frame, $c(M)$ is the array of that endomorphism's coordinates in the sixteen-dimensional basis. The map $c$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not an algebra map.
 
@@ -386,13 +386,13 @@ $$
 $$
 the values are $0,1,2,3,4$, and $\ell(M)=4$ exactly when $\det c(M)\neq0$.
 
-**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $T^{P}_{\mu\nu}$, which are built from the four *basis elements* $e_\mu$, so a different basis of $\mathbb{B}$ produces a different array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. The reason they do is a congruence.
+**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $T_{\mu\nu}$, which are built from the four *basis elements* $e_\mu$, so a different basis of $\mathbb{B}$ produces a different array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. The reason they do is a congruence.
 
 ### The Change of Frame Is a Congruence
 
 **The change.** Let $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$ be another basis of $\mathbb{B}$, with $C$ invertible, and put $B_{\alpha\beta}=L(f_\alpha)R(f_\beta)$.
 
-**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}T^{P}_{\mu\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
+**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}T_{\mu\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
 $$
 c'(M)=C^{-1}c(M)\,C^{-\mathsf T}.
 $$
@@ -400,9 +400,9 @@ $$
 
 *Proof.* (i) $L$ and $R$ are linear in the element, so $L(f_\alpha)=\sum_\mu C_{\mu\alpha}L(e_\mu)$ and $R(f_\beta)=\sum_\nu C_{\nu\beta}R(e_\nu)$. (ii) Expand the same $M$ in the two bases and substitute (i):
 $$
-\sum_{\mu\nu}c_{\mu\nu}T^{P}_{\mu\nu}
+\sum_{\mu\nu}c_{\mu\nu}T_{\mu\nu}
 =\sum_{\alpha\beta}c'_{\alpha\beta}B_{\alpha\beta}
-=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)T^{P}_{\mu\nu},
+=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)T_{\mu\nu},
 $$
 so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq0$, and multiplication on the left and on the right by invertible matrices preserves the rank.
 
@@ -410,8 +410,8 @@ so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq
 
 **The two displays of the corpus.** The operators of the corpus in the e-basis are built from the same four units $e_\mu$, in the same order, so the abstract basis is common and only the display moves:
 $$
-T^{e}_{\mu\nu}=S\,T^{P}_{\mu\nu}S^{-1},\qquad
-M^{e}=S\,M^{P}S^{-1}.
+T^{e}_{\mu\nu}=S\,T_{\mu\nu}S^{-1},\qquad
+M^{e}=S\,MS^{-1}.
 $$
 The coefficient matrix is therefore literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
 
@@ -427,7 +427,7 @@ $$
 $$
 The worked case $E_{11}$ of the operators article is therefore typical, and the sixteen units are the shortest matrices of their size class rather than the longest.
 
-**The table.** Each row gives $\tilde Q$ and $\tilde P$ by their coefficient columns $[Q]$ and $[P]$ in $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and reads $E_{ij}=T^{P}_{\tilde Q,\tilde P}$.
+**The table.** Each row gives $\tilde Q$ and $\tilde P$ by their coefficient columns $[Q]$ and $[P]$ in $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and reads $E_{ij}=T_{\tilde Q,\tilde P}$.
 
 | $ij$ | $[Q]$ | $[P]$ |
 |---|---|---|
@@ -450,7 +450,7 @@ The worked case $E_{11}$ of the operators article is therefore typical, and the 
 
 **The check.** The coefficient matrix of the right side is $[Q][P]^{\mathsf T}$, of rank one, and the expansion in the sixteen is unique, so each row is proved by the product it displays. The names are also visible in the compression: every factor above has $\mathsf M_2$ a scalar multiple of a matrix unit, so each product has one nonzero entry, and the entry sits where the row says.
 
-**Two controls.** The identity has length one, because $\mathrm I_4=L^{P}(e_t)=T^{P}_{e_t,e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
+**Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=L_{e_t}R_{e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
 
 **The other frame.** In the e-basis the same sixteen arrays have length four, not one. The arrays name different operators, and §*The Change of Frame Is a Congruence* is the reason both counts are right. There the products are signed permutations and the units are maximally long; here the products are monomial too, and every unit is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.
 
@@ -459,53 +459,53 @@ The worked case $E_{11}$ of the operators article is therefore typical, and the 
 
 **The left product.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-L^{P}(\tilde Q_1\tilde Q_2)=L^{P}(\tilde Q_1)L^{P}(\tilde Q_2),\qquad
-L^{P}(\tilde Q^n)=L^{P}(\tilde Q)^n,\qquad
-L^{P}(\tilde Q^{-1})=L^{P}(\tilde Q)^{-1},
+L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2),\qquad
+L(\tilde Q^n)=L(\tilde Q)^n,\qquad
+L(\tilde Q^{-1})=L(\tilde Q)^{-1},
 $$
-the last when $\tilde Q$ is invertible. The identity is the multiplicativity of $\rho_L$, read through the tensor display $L^{P}=\mathrm I_2\otimes\mathsf M_2$.
+the last when $\tilde Q$ is invertible. The identity is the multiplicativity of $\rho_L$, read through the tensor display $L=\mathrm I_2\otimes\mathsf M_2$.
 
 **The right product.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-R^{P}(\tilde Q_1\tilde Q_2)=R^{P}(\tilde Q_2)R^{P}(\tilde Q_1),\qquad
-R^{P}(\tilde Q^n)=R^{P}(\tilde Q)^n,\qquad
-R^{P}(\tilde Q^{-1})=R^{P}(\tilde Q)^{-1}.
+R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
+R(\tilde Q^n)=R(\tilde Q)^n,\qquad
+R(\tilde Q^{-1})=R(\tilde Q)^{-1}.
 $$
 The order is reversed because the right multiplication acts on the right factor; the powers and the inverse are not reversed, since they involve one element only.
 
 **The two families commute.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)=R^{P}(\tilde Q_2)L^{P}(\tilde Q_1).
+L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The identity is the associativity of the product, read on the two sides. It says that the left copy and the right copy are mutual commutants inside the ambient matrix algebra.
 
-**The product of a left and a right basis matrix.** The product $L_\mu^{P}R_\nu^{P}$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
+**The product of a left and a right basis matrix.** The product $L_\muR_\nu$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
 
 ## The Trace
 
 **The trace is the scalar part.** For every $\tilde Q$,
 $$
-\operatorname{Tr}L^{P}(\tilde Q)=\operatorname{Tr}R^{P}(\tilde Q)=4Q_t.
+\operatorname{Tr}L(\tilde Q)=\operatorname{Tr}R(\tilde Q)=4Q_t.
 $$
 The trace is the sum of the four diagonal entries, each pair contributing $2Q_t$; the factor $4$ is the dimension of $\mathbb{B}$. The trace sees the scalar part and no vector coefficient.
 
 **The trace of a basis matrix.** On the basis,
 $$
-\operatorname{Tr}L_t^{P}=\operatorname{Tr}R_t^{P}=4,\qquad
-\operatorname{Tr}L_x^{P}=\operatorname{Tr}L_y^{P}=\operatorname{Tr}L_z^{P}=0,
+\operatorname{Tr}L_t=\operatorname{Tr}R_t=4,\qquad
+\operatorname{Tr}L_x=\operatorname{Tr}L_y=\operatorname{Tr}L_z=0,
 \qquad
-\operatorname{Tr}R_x^{P}=\operatorname{Tr}R_y^{P}=\operatorname{Tr}R_z^{P}=0.
+\operatorname{Tr}R_x=\operatorname{Tr}R_y=\operatorname{Tr}R_z=0.
 $$
 The trace is $\mathbb{C}$-linear and additive. It is not multiplicative; the trace of a product is not the product of the traces.
 
 **The trace of a product.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-\operatorname{Tr}\bigl(L^{P}(\tilde Q_1)L^{P}(\tilde Q_2)\bigr)
+\operatorname{Tr}\bigl(L(\tilde Q_1)L(\tilde Q_2)\bigr)
 =4\operatorname{Sc}(\tilde Q_1\tilde Q_2),
 $$
 where $\operatorname{Sc}$ is the scalar part. The identity is the trace of the left matrix of the product, read through the preceding formula. The same identity holds for two right matrices. A left and a right matrix give
 $$
-\operatorname{Tr}\bigl(L^{P}(\tilde Q_1)R^{P}(\tilde Q_2)\bigr)=4Q_{1t}Q_{2t};
+\operatorname{Tr}\bigl(L(\tilde Q_1)R(\tilde Q_2)\bigr)=4Q_{1t}Q_{2t};
 $$
 the mixed trace sees the two scalar parts only.
 
@@ -513,36 +513,36 @@ the mixed trace sees the two scalar parts only.
 
 **The determinant is the square of the central scalar.** For every $\tilde Q$,
 $$
-\det L^{P}(\tilde Q)=\det R^{P}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2
+\det L(\tilde Q)=\det R(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2
 =(Q_t^2+B^2)^2.
 $$
 The determinant is the square of the $2\times2$ determinant, since the $2\times2$ image has determinant $\langle\tilde Q\rangle_{\natural}$ and the regular matrix is two copies of it. It is a quartic in the four coefficients, and it vanishes exactly on the null cone $\langle\tilde Q\rangle_{\natural}=0$.
 
-**The characteristic polynomial.** The characteristic polynomial of $L^{P}(\tilde Q)$ is
+**The characteristic polynomial.** The characteristic polynomial of $L(\tilde Q)$ is
 $$
-\chi_{L^{P}(\tilde Q)}(\lambda)
+\chi_{L(\tilde Q)}(\lambda)
 =\bigl(\lambda^2-2Q_t\lambda+\langle\tilde Q\rangle_{\natural}\bigr)^2
 =\bigl((\lambda-Q_t)^2+B^2\bigr)^2 .
 $$
-The eigenvalues are $\lambda_\pm=Q_t\pm iB$, where $B$ is a square root of $B^2=Q_x^2+Q_y^2+Q_z^2$, each with algebraic multiplicity two. Their sum is $4Q_t$, their product is $\langle\tilde Q\rangle_{\natural}^2$, and the two facts are the trace and the determinant. The same polynomial is the characteristic polynomial of $R^{P}(\tilde Q)$, because the two matrices are related by the swap and transposition.
+The eigenvalues are $\lambda_\pm=Q_t\pm iB$, where $B$ is a square root of $B^2=Q_x^2+Q_y^2+Q_z^2$, each with algebraic multiplicity two. Their sum is $4Q_t$, their product is $\langle\tilde Q\rangle_{\natural}^2$, and the two facts are the trace and the determinant. The same polynomial is the characteristic polynomial of $R(\tilde Q)$, because the two matrices are related by the swap and transposition.
 
 **The determinant is multiplicative.** For all $\tilde Q_1,\tilde Q_2$,
 $$
-\det L^{P}(\tilde Q_1\tilde Q_2)=\det L^{P}(\tilde Q_1)\det L^{P}(\tilde Q_2),
+\det L(\tilde Q_1\tilde Q_2)=\det L(\tilde Q_1)\det L(\tilde Q_2),
 $$
-and the same identity holds for $R^{P}$. The determinant is the multiplicative invariant of the algebra; the trace is the additive one.
+and the same identity holds for $R$. The determinant is the multiplicative invariant of the algebra; the trace is the additive one.
 
 **The basis determinants.** Every basis matrix has determinant $1$:
 $$
-\det L_\mu^{P}=\det R_\mu^{P}=1\qquad(\mu=t,x,y,z).
+\det L_\mu=\det R_\mu=1\qquad(\mu=t,x,y,z).
 $$
-The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L_x^{P}+R_x^{P}$ shows.
+The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L_x+R_x$ shows.
 
-**The invertibility and the rank.** The following are equivalent: $\tilde Q$ is invertible; $\langle\tilde Q\rangle_{\natural}\neq0$; $\mathsf M_2(\tilde Q)$ is invertible; $L^{P}(\tilde Q)$ is invertible; $R^{P}(\tilde Q)$ is invertible. When $\langle\tilde Q\rangle_{\natural}=0$, the rank of the regular matrix is $0$, $2$ or $4$, never $1$ or $3$, because the matrix is two equal copies of the $2\times2$ image. The rank is twice the rank of $\mathsf M_2(\tilde Q)$.
+**The invertibility and the rank.** The following are equivalent: $\tilde Q$ is invertible; $\langle\tilde Q\rangle_{\natural}\neq0$; $\mathsf M_2(\tilde Q)$ is invertible; $L(\tilde Q)$ is invertible; $R(\tilde Q)$ is invertible. When $\langle\tilde Q\rangle_{\natural}=0$, the rank of the regular matrix is $0$, $2$ or $4$, never $1$ or $3$, because the matrix is two equal copies of the $2\times2$ image. The rank is twice the rank of $\mathsf M_2(\tilde Q)$.
 
 ## The Six Subspaces
 
-**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the standard Peirce representation they become the conditions of the table. Write $A$ for the $2\times2$ block, so $M=L^{P}(\tilde Q)=\mathrm I_2\otimes A$, and put
+**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the standard Peirce representation they become the conditions of the table. Write $A$ for the $2\times2$ block, so $M=L(\tilde Q)=\mathrm I_2\otimes A$, and put
 $$
 A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},\qquad
 A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix}.
@@ -560,13 +560,13 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 
 **The determinant of $M$.** On every row the determinant of the $4\times4$ matrix is the square of the last column, $\det M=(\det\mathsf M_2(\tilde Q))^2$. The last column is the quadratic determinant of the $2\times2$ image; the determinant of the regular matrix is the quartic obtained by squaring it.
 
-**The warning.** Apart from the centre, the conditions in the third column are exact only inside the image. The Hermitian matrices of the ambient $M_4(\mathbb{C})$ form a real space of dimension $16$, the anti-Hermitian another, the traceless matrices a complex space of dimension $15$. The real form $\mathbb{H}_{\mathbb{B}}$ is not the space of entrywise real matrices in this frame: the frame vectors are complex, and the quaternion-shaped block $A_{\mathbb{H}}(a,b)$ is the correct condition. The conditions select the correct subspaces only when read on $M=L^{P}(\tilde Q)$.
+**The warning.** Apart from the centre, the conditions in the third column are exact only inside the image. The Hermitian matrices of the ambient $M_4(\mathbb{C})$ form a real space of dimension $16$, the anti-Hermitian another, the traceless matrices a complex space of dimension $15$. The real form $\mathbb{H}_{\mathbb{B}}$ is not the space of entrywise real matrices in this frame: the frame vectors are complex, and the quaternion-shaped block $A_{\mathbb{H}}(a,b)$ is the correct condition. The conditions select the correct subspaces only when read on $M=L(\tilde Q)$.
 
 ### The Centre Subspace
 
 **The scalar matrices.** For $\tilde Q=Q_te_t$,
 $$
-L^{P}(Q_te_t)=Q_t\mathrm I_4,\qquad
+L(Q_te_t)=Q_t\mathrm I_4,\qquad
 \operatorname{Tr}M=4Q_t,\qquad
 \det M=Q_t^4,\qquad
 \det\mathsf M_2(\tilde Q)=Q_t^2.
@@ -578,9 +578,9 @@ The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It
 **The traceless matrices.** For $\tilde Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$,
 $$
 A=\begin{pmatrix}-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&iQ_z\end{pmatrix},\qquad
-L^{P}(\tilde Q)=\mathrm I_2\otimes A .
+L(\tilde Q)=\mathrm I_2\otimes A .
 $$
-The block $A$ is traceless, and so is $M$. The image is the complex span of $L_x^{P},L_y^{P},L_z^{P}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the e-basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
+The block $A$ is traceless, and so is $M$. The image is the complex span of $L_x,L_y,L_z$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the e-basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
 
 ### The Quaternion Subspace
 
@@ -621,11 +621,11 @@ q_t+q'_z&q'_x-iq'_y\\
 q'_x+iq'_y&q_t-q'_z
 \end{pmatrix},
 \qquad
-L^{P}(\tilde Q)=L^{P}(\tilde Q)^{\dagger},\qquad
+L(\tilde Q)=L(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The image is the space of Hermitian matrices of the regular form, of real dimension $4$. The condition is exact inside the image because $L^{P}(\tilde Q)^{\dagger}=L^{P}(\tilde Q^{*})$ and $L^{P}$ is injective. The quadratic determinant is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.
+The image is the space of Hermitian matrices of the regular form, of real dimension $4$. The condition is exact inside the image because $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$ and $L$ is injective. The quadratic determinant is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.
 
 ### The Anti-Hermitian Subspace
 
@@ -636,7 +636,7 @@ i(q'_t-q_z)&-iq_x-q_y\\
 -iq_x+q_y&i(q'_t+q_z)
 \end{pmatrix},
 \qquad
-L^{P}(\tilde Q)=-L^{P}(\tilde Q)^{\dagger},\qquad
+L(\tilde Q)=-L(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-(q'_t)^2+\lvert\vec q\rvert^2 .
 $$
@@ -660,11 +660,11 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 The standard Peirce frame is built from the root $\vec\Xi=i\vec e_z$, whose square is $e_t$. The two idempotents are $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, and the two mixed units are $\vec\Upsilon_\pm=(i\vec e_x\pm\vec e_y)/2$; the frame is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The root chooses the direction $z$, and this is the difference from the e-basis, which chooses no direction.
 
-The left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matrix is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The four left matrices and the four right matrices have entries $0,\pm1,\pm i$, and they are not signed permutations; each family is a basis of its copy. The stitch between the two matrices is $R^{P}(\tilde Q)=\mathsf P L^{P}(\tilde Q)^{\mathsf T}\mathsf P$, a pure swap with no signs. The switch from the e-basis to the Peirce frame is $L^{P}=S^{-1}L^{e}S$, $R^{P}=S^{-1}R^{e}S$, with $\det S=-\tfrac14$.
+The left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matrix is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The four left matrices and the four right matrices have entries $0,\pm1,\pm i$, and they are not signed permutations; each family is a basis of its copy. The stitch between the two matrices is $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P$, a pure swap with no signs. The switch from the e-basis to the Peirce frame is $L=S^{-1}L^{e}S$, $R=S^{-1}R^{e}S$, with $\det S=-\tfrac14$.
 
 The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The six subspaces are the scalar, traceless, quaternion-shaped, anti-quaternion-shaped, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table.
 
-The sixteen products $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length one here while the same sixteen arrays have length four in the e-basis.
+The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length one here while the same sixteen arrays have length four in the e-basis.
 
 ## Summary of Notation
 
@@ -674,9 +674,9 @@ The sixteen products $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ are an orthogonal basi
 | $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the two idempotents |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the two mixed units |
-| $L_\mu^{P}$, $R_\mu^{P}$ | the left and right matrices of the four units |
-| $L^{P}(\tilde Q)$, $R^{P}(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
-| $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ image, the block of $L^{P}(\tilde Q)$ |
+| $L_\mu$, $R_\mu$ | the left and right matrices of the four units |
+| $L(\tilde Q)$, $R(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
+| $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ image, the block of $L(\tilde Q)$ |
 | $S$ | the change matrix, columns the frame vectors in the e-basis |
 | $\mathsf P$ | the swap matrix, $\mathsf P(A\otimes B)\mathsf P=B\otimes A$ |
 | $C_L=\mathrm I_2\otimes\sigma_2$, $C_R=\sigma_2\otimes\mathrm I_2$ | the transpose dictionaries of the Peirce frame |
@@ -684,8 +684,8 @@ The sixteen products $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ are an orthogonal basi
 | $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ | the Hermitian form on $\mathbb{B}$ |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
 | $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |
-| $T^{P}_{\mu\nu}=L^{P}_\mu R^{P}_\nu$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
-| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((T^{P}_{\mu\nu})^{\dagger}M)$ |
+| $T_{\mu\nu}=L_\mu R_\nu$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
+| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((T_{\mu\nu})^{\dagger}M)$ |
 | $\ell(M)$ | the length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $C$, $B_{\alpha\beta}$ | a change of algebra basis, $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$, and the products $L(f_\alpha)R(f_\beta)$ |
 

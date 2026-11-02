@@ -17,7 +17,7 @@
 | the spinor | the alternating form $\omega$ and the action of $\mathrm{SL}_2(\mathbb{C})$ | the Weyl spinor and its null vector | complex $2$ |
 | the qubit | the definite $H$ and the action of $\mathrm{SU}(2)$ | the state space, the Bloch ball and its sphere | real $3$ |
 
-**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their signatures and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the realification and the real and imaginary parts are *The Realification of $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $T_{u,\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
+**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their signatures and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the realification and the real and imaginary parts are *The Realification of $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
 
 **Conventions.** The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$ and the coordinates
 $$
@@ -35,7 +35,7 @@ B(u,v)=u_{\blacktriangle}v_{\blacktriangle}+u_{\blacktriangledown}v_{\blacktrian
 $$
 so that $H$ is **linear in the first slot and conjugate-linear in the second**, the convention of the whole corpus and the opposite of the physicists' one. The dagger is $M^{\dagger}=\overline{M}^{\mathsf T}$, the transpose is $M^{\mathsf T}$, and the matrix units are $E_{jk}=e_je_k^{\mathsf T}$. A rank-one operator with a column in the left slot and a row in the right is written
 $$
-T_{u,\phi}=u\phi^{\mathsf T},\qquad T_{u,\phi}(v)=\phi(v)\,u .
+L_{u}R_{\phi}=u\phi^{\mathsf T},\qquad L_{u}R_{\phi}(v)=\phi(v)\,u .
 $$
 
 ## The Column, the Dual and the Three Structures
@@ -215,7 +215,7 @@ whose Gram matrix has the eigenvalues $\pm\tfrac12$, each twice; the cone $\math
 
 **Definition.** The **isotropic lines** of $B$ are $\ell_{\pm}=\mathbb{C}(e_1\pm ie_2)$, and they are the only two: $u_{\blacktriangledown}^{2}=-u_{\blacktriangle}^{2}$ forces $u_{\blacktriangledown}=\pm iu_{\blacktriangle}$.
 
-**Proposition (the isotropic columns and the transpose square).** For $T=T_{u,\phi}=u\phi^{\mathsf T}$ and $\sigma=u^{\mathsf T}u$,
+**Proposition (the isotropic columns and the transpose square).** For $T=L_{u}R_{\phi}=u\phi^{\mathsf T}$ and $\sigma=u^{\mathsf T}u$,
 $$
 T^{\mathsf T}T=\sigma\,\phi\phi^{\mathsf T},\qquad TT^{\mathsf T}=\tau\,uu^{\mathsf T},\quad \tau=\phi^{\mathsf T}\phi ,
 $$
@@ -246,11 +246,11 @@ $$
 
 *Proof.* The determinant of a rank-one matrix is zero. The trace of $uu^{\dagger}$ is $\sum_{j,k}u_ju_k^{\dagger}\delta_{jk}=\sum_j\lvert u_j\rvert^{2}$.
 
-**Proposition (the cone is the fixed locus of the dagger inside the bilinear cone).** Let $T_{u,\phi}=u\phi^{\mathsf T}$ be a nonzero member of $\mathcal{C}$. Then
+**Proposition (the cone is the fixed locus of the dagger inside the bilinear cone).** Let $L_{u}R_{\phi}=u\phi^{\mathsf T}$ be a nonzero member of $\mathcal{C}$. Then
 $$
-T_{u,\phi}^{\dagger}=T_{u,\phi}\iff \phi=c\,\bar u\ \text{ with }c\in\mathbb{R},
+L_{u}R_{\phi}^{\dagger}=L_{u}R_{\phi}\iff \phi=c\,\bar u\ \text{ with }c\in\mathbb{R},
 $$
-and in that case $T_{u,\phi}=c\,uu^{\dagger}$. The fixed locus is therefore the real line through the Hermitian cone.
+and in that case $L_{u}R_{\phi}=c\,uu^{\dagger}$. The fixed locus is therefore the real line through the Hermitian cone.
 
 *Proof.* The adjoint is $\bar\phi u^{\mathsf T}$. Two rank-one matrices are equal exactly when their columns are proportional and their rows are proportional with the reciprocal scalar; the equality $u\phi^{\mathsf T}=\bar\phi u^{\mathsf T}$ gives $\phi=c\bar u$ and $\bar\phi=\alpha u$ for scalars $c,\alpha$, and the two displays $u\phi^{\mathsf T}=c\,u\bar u^{\mathsf T}$ and $\bar\phi u^{\mathsf T}=\alpha\,u\bar u^{\mathsf T}$ force $\alpha=c$, while conjugating $\phi=c\bar u$ gives $\alpha=\bar c$, so $c=\bar c$. Conversely, $c$ real gives $u(c\bar u)^{\mathsf T}=c\,u\bar u^{\mathsf T}=c\,uu^{\dagger}$, which is Hermitian.
 
@@ -305,7 +305,7 @@ and it is onto that cone; the trace is $\lVert u\rVert^{2}=2t$.
 | rulings | two, independent | one, the diagonal |
 | parameter | $(u,\phi)$ modulo the scaling | $u$ modulo the phase |
 | fixed by | nothing | the dagger |
-| adjoint family | $T_{\phi,u}$ | itself |
+| adjoint family | $L_{\phi}R_{u}$ | itself |
 
 **The collapse of the two rulings to one is the phase quotient.** In the bilinear cone the line of the column and the line of the row are independent, so the projectivisation has two factors. In the Hermitian cone the row is the conjugate of the column, $\phi=\bar u$, so the second factor is determined by the first up to the phase, and the diagonal $[\phi]=[\bar u]$ is a single $\mathbb{P}^{1}$. **The conjugation is what identifies the two rulings, and there is no other identification.**
 
@@ -467,7 +467,7 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 | $H$, $B$, $\omega$ | the Hermitian, the symmetric bilinear and the alternating forms |
 | $M^{\dagger}$, $M^{\mathsf T}$ | the conjugate transpose and the transpose |
 | $E_{jk}$ | the matrix units $e_je_k^{\mathsf T}$ |
-| $T_{u,\phi}=u\phi^{\mathsf T}$ | the rank-one operator with column $u$ and row $\phi$ |
+| $L_{u}R_{\phi}=u\phi^{\mathsf T}$ | the rank-one operator with column $u$ and row $\phi$ |
 | $\mathcal{C}$ | the bilinear rank-one cone |
 | $\mathcal{C}_{H}$ | the Hermitian rank-one cone |
 | $\pi_u$ | the projector $uu^{\dagger}/(u^{\dagger}u)$ |
@@ -484,4 +484,4 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 
 *Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their signatures and their isotropic sets. *The Realification of $\mathbb{C}^2$* gives the real picture, the six real forms and the decomposition of the real endomorphism algebra. *The Subspaces of $\mathbb{C}^2$* carries the lattice, the flag, the dual, the Grassmannians and the isotropic and Lagrangian subspaces. *The Endomorphisms of $\mathbb{C}^2$* carries the algebra $M_2(\mathbb{C})$, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$, the centraliser of $J$ and the biquaternion identification. *The Unit Sphere and the Hopf Fibration* carries the fibration, and *Grassmannians and Stiefel Manifolds* the general Grassmannian picture of which $\mathbb{P}^{1}$ is the first case.
 
-On the algebra side, *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $T_{u,\phi}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Standard Peirce Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.
+On the algebra side, *$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $L_{u}R_{\phi}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Standard Peirce Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.

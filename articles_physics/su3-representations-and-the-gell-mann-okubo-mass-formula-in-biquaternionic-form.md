@@ -16,7 +16,7 @@ The article is organised as follows. A section gives the representations as trac
 
 ## Representations of SU(3)
 
-An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $T_{a_1\dots a_n,\,b_1\dots b_m}$, with the first group fundamental and the second antifundamental, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its **degree** is
+An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $L_{a_1\dots a_n}R_{\,b_1\dots b_m}$, with the first group fundamental and the second antifundamental, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its **degree** is
 
 $$
 N(n,m) = \tfrac12\,(n+1)(m+1)(n+m+2).
@@ -258,7 +258,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 | Symbol | Meaning |
 |---|---|
 | $(n,m)$, $n,m\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
-| $T_{a_1\dots a_n,\,b_1\dots b_m}$ | Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental |
+| $L_{a_1\dots a_n}R_{\,b_1\dots b_m}$ | Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental |
 | $N(n,m)=\tfrac12(n+1)(m+1)(n+m+2)$ | Degree of the representation |
 | $A_{ik}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
 | $i,k,l$ | flavour representation slots of a 3×3 matrix: $i$ fundamental, $k$ antifundamental; not frame slots |

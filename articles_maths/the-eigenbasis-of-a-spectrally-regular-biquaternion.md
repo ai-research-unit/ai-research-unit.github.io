@@ -575,7 +575,7 @@ $$
 D_{\tilde Q,\tilde Q''}=D_{\tilde Q,\tilde Q'}\,D_{\tilde Q',\tilde Q''}.
 $$
 
-The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf C_Q$ of *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, and the cocycle is the same.
+The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf D_Q$ of *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, and the cocycle is the same.
 
 ## The Frame Attached to the Direction
 
@@ -900,7 +900,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
-- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf D_Q$ and the 4×4 regular matrices.
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the gauge of the general Peirce basis and its torsor.

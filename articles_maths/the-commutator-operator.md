@@ -67,10 +67,10 @@ $$
 so that as operators $\mathrm{ad}_a = L(a) - R(a)$; and the antisymmetrisation of the sandwich is the bracket,
 
 $$
-[T_{a,b} - T_{b,a}](1) = ab - ba = [a, b].
+[L_{a}R_{b} - L_{b}R_{a}](1) = ab - ba = [a, b].
 $$
 
-*Proof.* The first identity is the definition of the two multiplications. For the second, $T_{a,b}(1) = ab$ by the elementary proposition of *The Sandwich Operator on an Algebra*, and similarly $T_{b,a}(1) = ba$.
+*Proof.* The first identity is the definition of the two multiplications. For the second, $L_{a}R_{b}(1) = ab$ by the elementary proposition of *The Sandwich Operator on an Algebra*, and similarly $L_{b}R_{a}(1) = ba$.
 
 The operator identity $\mathrm{ad}_a = L(a) - R(a)$ is the reason the commutator belongs to the operator layer: the bracket is not a new operation on the algebra but the difference of the two operators that the product already provides. Its vanishing is the commutativity of $a$ with everything, and its size measures the difference between the two sides.
 
@@ -168,12 +168,12 @@ The commutator is the antisymmetrisation of the sandwich, and the antisymmetrisa
 **Proposition.** For all $a, b, c, d \in A$,
 
 $$
-T_{a,b}T_{c,d} - T_{c,d}T_{a,b} = T_{ac,\,db} - T_{ca,\,bd},
+L_{a}R_{b}L_{c}R_{d} - L_{c}R_{d}L_{a}R_{b} = L_{ac}R_{\,db} - L_{ca}R_{\,bd},
 $$
 
 and the right-hand side is a single sandwich exactly when the two index pairs agree, that is when $ac = ca$ and $db = bd$. In particular the antisymmetrisation vanishes for every pair on a commutative algebra.
 
-*Proof.* The composition rule $T_{a,b}T_{c,d} = T_{ac,db}$ is the theorem of *The Sandwich Operator on an Algebra*, and subtracting the transposed product gives the display. The two terms on the right coincide exactly when the pairs $(ac, db)$ and $(ca, bd)$ are equal.
+*Proof.* The composition rule $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ is the theorem of *The Sandwich Operator on an Algebra*, and subtracting the transposed product gives the display. The two terms on the right coincide exactly when the pairs $(ac, db)$ and $(ca, bd)$ are equal.
 
 **Remark.** The commutator of two multiplications and the antisymmetrisation of the sandwich are the same operation seen twice, and the order that emerges from the two readings is the standard one of the theory of the enveloping algebra of the commutator algebra. The reading is not developed here; the tensor construction of the enveloping algebra belongs to *Tensor Products of Algebras*, and the Lie theory of the bracket to *Lie Algebras*.
 
@@ -205,7 +205,7 @@ Let $A$ be commutative. Then $[a, b] = 0$ for all $a$ and $b$, the commutator al
 
 ## Summary
 
-The commutator $[a,b] = ab - ba$ is a $k$-bilinear antisymmetric operation satisfying the Jacobi identity, so that $A^{(-)} = (A, [\cdot,\cdot])$ is a Lie algebra. Fixing the first argument gives the **adjoint action** $\mathrm{ad}_a(x) = [a,x]$, an operator equal to $L(a) - R(a)$ and equal, on the unit, to the antisymmetrised sandwich, $[a,b] = T_{a,b}(1) - T_{b,a}(1)$. The map $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$ with $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$, whose kernel is the centre $Z(A)$ and whose image is the space of inner derivations; the kernel of a single $\mathrm{ad}_a$ is the centraliser $C_A(a)$, a subalgebra containing $a$ and the centre.
+The commutator $[a,b] = ab - ba$ is a $k$-bilinear antisymmetric operation satisfying the Jacobi identity, so that $A^{(-)} = (A, [\cdot,\cdot])$ is a Lie algebra. Fixing the first argument gives the **adjoint action** $\mathrm{ad}_a(x) = [a,x]$, an operator equal to $L(a) - R(a)$ and equal, on the unit, to the antisymmetrised sandwich, $[a,b] = L_{a}R_{b}(1) - L_{b}R_{a}(1)$. The map $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$ with $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$, whose kernel is the centre $Z(A)$ and whose image is the space of inner derivations; the kernel of a single $\mathrm{ad}_a$ is the centraliser $C_A(a)$, a subalgebra containing $a$ and the centre.
 
 Each $\mathrm{ad}_a$ is a derivation, by the Leibniz rule $[a,xy] = [a,x]y + x[a,y]$, and the inner derivations form a Lie ideal of $\operatorname{Der}_k(A)$ on which the outer derivations act by $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$. The commutators of the multiplication operators are $[L(a),L(b)] = L([a,b])$, $[R(a),R(b)] = -R([a,b])$ and $[L(a),R(b)] = -A_{a,b}$, the last being the associator; the left and the right multiplication spaces therefore commute exactly when the product is associative, and the two-sided operator is the sandwich of *The Sandwich Operator on an Algebra*. For $M_n(k)$ the bracket of two matrix units is a difference of two matrix units and the inner derivations have dimension $n^2 - 1$; for $\mathbb{H}$ the bracket on the pure imaginary part is twice the cross product and the derivations form a three-dimensional Lie algebra; and on a commutative algebra the operator is identically zero.
 

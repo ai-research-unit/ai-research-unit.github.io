@@ -34,11 +34,11 @@ with $0$ at the zero element, $1$ exactly on the two punctured ideals, that is o
 
 **The two-sided family.** For the pair $(\breve Q,\breve P)$ the two-sided operator is
 $$
-T_{\breve Q,\breve P}(\breve X)=\breve Q\breve X\breve P=L_{\breve Q\breve P}(\breve X),
+L_{\breve Q}R_{\breve P}(\breve X)=\breve Q\breve X\breve P=L_{\breve Q\breve P}(\breve X),
 $$
 so the family of two-sided operators is
 $$
-\{T_{\breve Q,\breve P}\}=\mathrm{im}\,\beta=\{L_{\breve R}:\breve R\in\mathbb{B}_{\mathrm r}\}=L(\mathbb{B}_{\mathrm r}),
+\{L_{\breve Q}R_{\breve P}\}=\mathrm{im}\,\beta=\{L_{\breve R}:\breve R\in\mathbb{B}_{\mathrm r}\}=L(\mathbb{B}_{\mathrm r}),
 $$
 the same two-dimensional family. The image of the bilinear map $\beta$ is therefore a **linear subspace** and not a cone, and the phrase "the cone of the two-sided operators", which is the correct one in the biquaternion and dual-number categories, is the wrong one here. The reason is the same in both commutative categories: the product of two elements is an element, and the set of products of a subspace with itself is a subspace.
 
@@ -128,7 +128,7 @@ so the two circular components of the unit are the sum and the difference of the
 
 **The map.** The two-sided operator is the composite of two one-sided ones,
 $$
-T_{\breve Q,\breve P}=L_{\breve Q}R_{\breve P}=R_{\breve P}L_{\breve Q}=L_{\breve Q\breve P},
+L_{\breve Q}R_{\breve P}=R_{\breve P}L_{\breve Q}=L_{\breve Q\breve P},
 $$
 so the bilinear map $\beta:\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})$ factors through the multiplication,
 $$
@@ -138,9 +138,9 @@ and the first arrow is surjective. So the image of $\beta$ is the image of $L$, 
 
 **The zero operator.** The multiplication is not injective, so the zero operator is attained by pairs of nonzero parameters:
 $$
-T_{\Pi_{+},\Pi_{-}}=0,\qquad T_{\Pi_{-},\Pi_{+}}=0,
+L_{\Pi_{+}}R_{\Pi_{-}}=0,\qquad L_{\Pi_{-}}R_{\Pi_{+}}=0,
 $$
-and more generally $T_{\breve Q,\breve P}=0$ exactly when
+and more generally $L_{\breve Q}R_{\breve P}=0$ exactly when
 $$
 Q_{+}P_{+}=0\quad\text{and}\quad Q_{-}P_{-}=0 .
 $$
@@ -160,21 +160,21 @@ $$
 $$
 so the parameter space of dimension four maps onto a two-dimensional family with two-dimensional fibres. Over a zero divisor the fibre is larger and reducible, because the equation $Q_{+}P_{+}=0$ in one slot is satisfied by a pair of lines rather than by a single point, and the fibre then contains a piece of dimension three.
 
-**The spectrum of the pair.** The eigenvalues of $T_{\breve Q,\breve P}$ are the two products of the idempotent coordinates,
+**The spectrum of the pair.** The eigenvalues of $L_{\breve Q}R_{\breve P}$ are the two products of the idempotent coordinates,
 $$
-\operatorname{spec}T_{\breve Q,\breve P}=\{Q_{+}P_{+},\ Q_{-}P_{-}\},
+\operatorname{spec}L_{\breve Q}R_{\breve P}=\{Q_{+}P_{+},\ Q_{-}P_{-}\},
 $$
 the two entries of the diagonal form in the frame, so the spectral theory of the two-sided operator is the spectral theory of the product. There is no cross term, and that absence is the multiplicative form of the identity $Q_{+}P_{+}$ in the first slot and $Q_{-}P_{-}$ in the second.
 
 **The composition.** The two-sided operators compose by
 $$
-T_{\breve Q,\breve P}\,T_{\breve Q',\breve P'}=T_{\breve Q\breve P\breve Q',\breve P'}=T_{\breve Q,\breve P\breve Q'\breve P'},
+L_{\breve Q}R_{\breve P}\,L_{\breve Q'}R_{\breve P'}=L_{\breve Q\breve P\breve Q'}R_{\breve P'}=L_{\breve Q}R_{\breve P\breve Q'\breve P'},
 $$
-so the composite is again a two-sided operator, the family is a **subalgebra** of the ambient and not only a subspace, and the composition is associative because the multiplication is. The semigroup is commutative, has the identity $T_{1,1}=\mathrm I_{2}$, and contains the zero operator: it is a commutative monoid with zero, and its group of units is the unit group of the algebra.
+so the composite is again a two-sided operator, the family is a **subalgebra** of the ambient and not only a subspace, and the composition is associative because the multiplication is. The semigroup is commutative, has the identity $L_{1}R_{1}=\mathrm I_{2}$, and contains the zero operator: it is a commutative monoid with zero, and its group of units is the unit group of the algebra.
 
-**The rank of the composite.** Since $T_{\breve Q,\breve P}=L_{\breve Q\breve P}$,
+**The rank of the composite.** Since $L_{\breve Q}R_{\breve P}=L_{\breve Q\breve P}$,
 $$
-\operatorname{rank}\bigl(T_{\breve Q,\breve P}T_{\breve Q',\breve P'}\bigr)\le\operatorname{rank}T_{\breve Q,\breve P},
+\operatorname{rank}\bigl(L_{\breve Q}R_{\breve P}L_{\breve Q'}R_{\breve P'}\bigr)\le\operatorname{rank}L_{\breve Q}R_{\breve P},
 $$
 with equality when $\breve Q'\breve P'$ is a unit; so the rank is nonincreasing along a product and drops exactly when the second parameter falls into a zero divisor. The two rank-one strata are the minimal nonzero ones, and the products that stay in them are products whose second parameter stays in the same ideal, which makes each ideal a two-sided semigroup of rank-one operators.
 
@@ -212,7 +212,7 @@ its kernel is the torus $T^{2}$ of the two phases, and its image is the **quadra
 
 **The Kronecker display of the pair is a two-block matrix of four blocks, of rank in $\{0,1,2,4\}$, and the coefficient array is degenerate of kernel two.**
 
-**The display.** For the pair $(\breve Q,\breve P)$ the operator $T_{\breve Q,\breve P}$ on the four-dimensional space $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ has the matrix
+**The display.** For the pair $(\breve Q,\breve P)$ the operator $L_{\breve Q}R_{\breve P}$ on the four-dimensional space $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ has the matrix
 $$
 \mathsf K(\breve Q,\breve P)=\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q),
 $$
@@ -232,13 +232,13 @@ and it is faithful on the pair, so the four-dimensional display encodes both par
 
 **The coefficient matrix.** Let $e_{1}=1$, $e_{2}=j$ be the basis of the carrier, and let
 $$
-T_{\mu\nu}=T_{e_{\mu},e_{\nu}},\qquad \mu,\nu\in\{1,2\},
+L_{e_{\mu}}R_{e_{\nu}},\qquad \mu,\nu\in\{1,2\},
 $$
 be the four basis products. The multiplication table of the basis, $e_{1}e_{1}=e_{1}$, $e_{1}e_{2}=e_{2}$, $e_{2}e_{1}=e_{2}$, $e_{2}e_{2}=e_{1}$, gives
 $$
 T_{11}=T_{22}=\mathrm I_{2},\qquad T_{12}=T_{21}=\sigma_{1},
 $$
-so the four basis operators span the two-dimensional family and satisfy two linear relations. The **coefficient matrix** of an operator is the array $c$ of its coordinates in the basis $T_{\mu\nu}$, and it is defined only up to the two-dimensional space of relations, which is
+so the four basis operators span the two-dimensional family and satisfy two linear relations. The **coefficient matrix** of an operator is the array $c$ of its coordinates in the basis $L_{e_{\mu}}R_{e_{\nu}},\qquad$, and it is defined only up to the two-dimensional space of relations, which is
 $$
 \ker c=\left\{\begin{pmatrix}\alpha&\beta\\ \gamma&\delta\end{pmatrix}:\alpha+\delta=0,\ \beta+\gamma=0\right\}=\left\{\begin{pmatrix}\alpha&\beta\\ -\beta&-\alpha\end{pmatrix}\right\},
 $$
@@ -258,7 +258,7 @@ of rank one unless one of the two parameters vanishes, in which case it is zero.
 
 **The definition.** For an operator $M$ of the ambient, the length is
 $$
-\ell(M)=\min\{r:M=T_{\breve Q_{1},\breve P_{1}}+\dots+T_{\breve Q_{r},\breve P_{r}}\},
+\ell(M)=\min\{r:M=L_{\breve Q_{1}}R_{\breve P_{1}}+\dots+L_{\breve Q_{r}}R_{\breve P_{r}}\},
 $$
 the least number of two-sided operators whose sum is $M$, with $\ell(0)=0$.
 
@@ -268,7 +268,7 @@ $$
 $$
 Hence the length takes the two values $0$ and $1$ on the family and has no value outside it.
 
-*Proof.* Each term of a sum is a multiplication, and the family of multiplications is a linear subspace, so a sum of $r$ terms is a multiplication for every $r\ge1$; conversely every nonzero multiplication is one term, $L_{\breve R}=T_{1,\breve R}$. So the sums of any number of terms are exactly the family, and no operator outside it is a finite sum.
+*Proof.* Each term of a sum is a multiplication, and the family of multiplications is a linear subspace, so a sum of $r$ terms is a multiplication for every $r\ge1$; conversely every nonzero multiplication is one term, $L_{\breve R}=L_{1}R_{\breve R}$. So the sums of any number of terms are exactly the family, and no operator outside it is a finite sum.
 
 **Why the ladder stops at one.** In the biquaternion category the length ran over $1,4,7,16$, because the image of the two-sided operator was a **cone** and the sums of cone elements escaped the cone, producing a genuine ladder. Here the image is a subspace, so the ladder collapses at the first step, and the collapse is the operator-theoretic content of semisimplicity: a semisimple commutative algebra has a two-sided operator family which is closed under addition, and no additive theory of operators survives. The Cayley category of the block has the same collapse for the same reason, and the two articles agree word for word on the length.
 
@@ -358,13 +358,13 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 ## Summary
 
 1. The carrier is two-dimensional over $\mathbb{C}$ and the ambient four-dimensional; the family of one-sided operators is the two-dimensional subspace $\mathbb{C}\{\mathrm I_{2},\sigma_{1}\}$, a maximal commutative unital subalgebra, and the carrier is an algebra but not the matrix algebra of the ambient.
-2. The two-sided operator is $T_{\breve Q,\breve P}=L_{\breve Q\breve P}$, so the image of the envelope is the algebra itself: a **subspace** and not a cone, closed under sums, with commutator zero and no nilpotent but zero.
+2. The two-sided operator is $L_{\breve Q}R_{\breve P}=L_{\breve Q\breve P}$, so the image of the envelope is the algebra itself: a **subspace** and not a cone, closed under sums, with commutator zero and no nilpotent but zero.
 3. The model is symmetric, so the transpose is the identity on the family and every member is self-adjoint for $\operatorname{tr}(X^{\mathsf T}Y)$; the Frobenius adjoint is the multiplication by the bar-conjugate and the $J$-adjoint the multiplication by the tessarine conjugate, so all three adjoints stay inside and the model is a $*$-representation.
 4. The isometries are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; every member is normal.
-5. The zero operator is attained by pairs of nonzero parameters, $T_{\Pi_{+},\Pi_{-}}=0$, the zero set of $\beta$ is a union of four pieces, and the fibre over a nonzero element is a torsor over $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ retracting onto $T^{2}$.
+5. The zero operator is attained by pairs of nonzero parameters, $L_{\Pi_{+}}R_{\Pi_{-}}=0$, the zero set of $\beta$ is a union of four pieces, and the fibre over a nonzero element is a torsor over $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ retracting onto $T^{2}$.
 6. The plain sandwich has trivial kernel and four-element fibres, the squaring map is surjective because the algebra is a product of two fields, and the modulus sandwich is onto a **quadrant** with the torus $T^{2}$ as fibre, the only cone of operators of the category.
 7. The Kronecker display is $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$, with trace $4Q_{\blacktriangle}P_{\blacktriangle}$, determinant $(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}})^{2}$ and rank in $\{0,1,2,4\}$: the four values are all attained, so the second rank is not vacuous.
-8. The coefficient array in the basis $T_{\mu\nu}$ is defined only modulo a two-dimensional space of relations, $T_{11}=T_{22}$ and $T_{12}=T_{21}$, and the array of a pair is always of rank at most one.
+8. The coefficient array in the basis $L_{e_{\mu}}R_{e_{\nu}},\qquad$ is defined only modulo a two-dimensional space of relations, $T_{11}=T_{22}$ and $T_{12}=T_{21}$, and the array of a pair is always of rank at most one.
 9. The length is $0$ or $1$ on the family and undefined outside it, because the family is a subspace: the ladder of the biquaternion category collapses, and the collapse is the operator-theoretic content of semisimplicity.
 10. The automorphism group is $\mathbb{Z}_{2}$, realised by the conjugation with $\sigma_{3}$, which is outer in the algebra and inner in the ambient; there is no derivation; the ambient splits into the family, the traceless symmetric line and the skew line, and the frame is an orthogonal change of basis carrying the family to the diagonal subalgebra.
 
@@ -374,8 +374,8 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 |---|---|---|
 | $\mathbb{B}_{\mathrm r}$ | the carrier, of complex dimension two | *Reduced Biquaternion Space* |
 | $L_{\breve Q},R_{\breve Q}$ | the left and right multiplications, equal because the algebra is commutative | this article |
-| $T_{\breve Q,\breve P}$ | the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$ | this article |
-| $T_{\mu\nu}=T_{e_{\mu},e_{\nu}}$ | the four basis products, with $T_{11}=T_{22}$ and $T_{12}=T_{21}$ | this article |
+| $L_{\breve Q}R_{\breve P}$ | the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$ | this article |
+| $L_{e_{\mu}}R_{e_{\nu}},\qquad=L_{e_{\mu}}R_{e_{\nu}}$ | the four basis products, with $T_{11}=T_{22}$ and $T_{12}=T_{21}$ | this article |
 | $\mathsf K(\breve Q,\breve P)$ | the Kronecker display $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$ | this article |
 | $\Theta_{\breve Q}$ | the plain sandwich, $=L_{\breve Q^{2}}$ | this article |
 | $\Phi_{\breve Q}$ | the modulus sandwich, $=\operatorname{diag}(\lvert Q_{+}\rvert^{2},\lvert Q_{-}\rvert^{2})$ in the frame | this article |

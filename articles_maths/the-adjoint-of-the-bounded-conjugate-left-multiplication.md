@@ -6,7 +6,7 @@ The conjugate left multiplication $L_{a}(x)=a\star x=ax^{*}$ is the odd one-side
 
 The answer separates two pairings, and the separation is the content of the article. For the **canonical pairing** $h(x,y)=x^{*}y$ of the layer the adjoint does not exist, and the obstruction is the same one that keeps the canonical form from adjointing any conjugate-linear operator: the form is $A$-valued and has no cyclicity, so the defining identity forces the adjoint to be the sandwich $\mathcal{T}_{1,a}$ and then demands $xa^{*}y=a^{*}yx$ for all $x,y$, which forces $a$ central and then $xy=yx$, failing as soon as $a\neq0$ in a full noncommutative algebra. The pairing that **makes it exist** is the reduction $h_{\tau}(x,y)=\tau(x^{*}y)$ of the canonical form by a continuous central functional $\tau$: the cyclicity of $\tau$ restores the identity, the adjoint is $\mathcal{T}_{1,a}$, and its norm is at most $\lVert a\rVert$, so the adjoint is again a bounded conjugate-linear operator. The **degeneracies** are the radicals: that of the canonical form is trivial and yet the form adjoints no conjugate-linear operator, and that of the reduction is the annihilator of $\tau$, nonzero exactly when $\tau$ is not faithful, in which case the adjoint is computed modulo the radical.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesqualgebra of *Banach Sesqualgebras*: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded $\varsigma$-semilinear operators are $B^{\varsigma}(A)$ and the bounded linear ones $B(A)$, both of *Bounded Operators on a Sesqualgebra*; the canonical pairing is $h(x,y)=x^{*}y$ and the operator families are $L_{a}(x)=ax^{*}$ (the conjugate left multiplication), $R_{a}(x)=xa^{*}$, $\mathcal{T}_{a,b}(x)=ax^{*}b$, $T_{p,q}(x)=pxq$. A continuous functional $\tau:A\to\mathbb{K}$ is **central** when $\tau(uv)=\tau(vu)$ and **compatible** when $\tau(u^{*})=\varsigma(\tau(u))$; the reduction of the canonical form by $\tau$ is $h_{\tau}(x,y)=\tau(x^{*}y)=\tau(yx^{*})$.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesqualgebra of *Banach Sesqualgebras*: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded $\varsigma$-semilinear operators are $B^{\varsigma}(A)$ and the bounded linear ones $B(A)$, both of *Bounded Operators on a Sesqualgebra*; the canonical pairing is $h(x,y)=x^{*}y$ and the operator families are $L_{a}(x)=ax^{*}$ (the conjugate left multiplication), $R_{a}(x)=xa^{*}$, $\mathcal{T}_{a,b}(x)=ax^{*}b$, $L_{p}R_{q}(x)=pxq$. A continuous functional $\tau:A\to\mathbb{K}$ is **central** when $\tau(uv)=\tau(vu)$ and **compatible** when $\tau(u^{*})=\varsigma(\tau(u))$; the reduction of the canonical form by $\tau$ is $h_{\tau}(x,y)=\tau(x^{*}y)=\tau(yx^{*})$.
 
 ## The Conjugate Left Multiplication
 
@@ -24,9 +24,9 @@ $$
 \boxed{\;L_{a}(\lambda x)=\varsigma(\lambda)L_{a}(x),\qquad \lVert L_{a}\rVert=\lVert a\rVert,\qquad L_{a}(1)=a\;},
 $$
 
-so $L_{a}=0$ if and only if $a=0$; the parameter map $a\mapsto L_{a}$ is $\varsigma$-semilinear and isometric onto its image. The composite of two of them is linear, $L_{a}L_{b}=T_{a,b^{*}}$, so the family is not closed under composition and its composites leave the one-sided operators.
+so $L_{a}=0$ if and only if $a=0$; the parameter map $a\mapsto L_{a}$ is $\varsigma$-semilinear and isometric onto its image. The composite of two of them is linear, $L_{a}L_{b}=L_{a}R_{b^{*}}$, so the family is not closed under composition and its composites leave the one-sided operators.
 
-**Proof.** The parity is the semilinearity of the involution in the second slot; the bound is $\lVert L_{a}x\rVert\le\lVert a\rVert\lVert x^{*}\rVert=\lVert a\rVert\lVert x\rVert$ by submultiplicativity and the isometry, with equality at $x=1$; injectivity is $L_{a}(1)=a$; the $\varsigma$-semilinearity of the parameter map is the first scalar rule of the product. The composite is $(L_{a}L_{b})(x)=a(bx^{*})^{*}=a x b^{*}=T_{a,b^{*}}(x)$, a two-sided operator of *Bounded Operators on a Sesqualgebra*, which is linear and not a one-sided operator.
+**Proof.** The parity is the semilinearity of the involution in the second slot; the bound is $\lVert L_{a}x\rVert\le\lVert a\rVert\lVert x^{*}\rVert=\lVert a\rVert\lVert x\rVert$ by submultiplicativity and the isometry, with equality at $x=1$; injectivity is $L_{a}(1)=a$; the $\varsigma$-semilinearity of the parameter map is the first scalar rule of the product. The composite is $(L_{a}L_{b})(x)=a(bx^{*})^{*}=a x b^{*}=L_{a}R_{b^{*}}(x)$, a two-sided operator of *Bounded Operators on a Sesqualgebra*, which is linear and not a one-sided operator.
 
 **Remark.** In the graded algebra $\mathcal{B}(A)$ of *Bounded Operators on a Sesqualgebra* the operator $L_{a}$ is odd and its square is even, $L_{a}L_{b}\in B(A)$; the involution itself is the case $a=1$, $L_{1}={}^{*}$, the fundamental odd operator. The article computes the adjoint of $L_{a}$ for the two pairings of the layer.
 
@@ -64,7 +64,7 @@ $$
 
 ### The Adjoint for the Reduced Form
 
-**Definition.** Let $\tau:A\to\mathbb{K}$ be a continuous central functional. The **reduction** of the canonical form by $\tau$ is the scalar form $h_{\tau}(x,y)=\tau(x^{*}y)=\tau(yx^{*})$. Throughout the article the symbol $L_{a}$ is the **conjugate** left multiplication $L_{a}(x)=ax^{*}$ of Part I; the plain left multiplication is written $T_{a,1}$.
+**Definition.** Let $\tau:A\to\mathbb{K}$ be a continuous central functional. The **reduction** of the canonical form by $\tau$ is the scalar form $h_{\tau}(x,y)=\tau(x^{*}y)=\tau(yx^{*})$. Throughout the article the symbol $L_{a}$ is the **conjugate** left multiplication $L_{a}(x)=ax^{*}$ of Part I; the plain left multiplication is written $L_{a}R_{1}$.
 
 **Theorem (the adjoint of the conjugate left multiplication).** Let $\tau$ be a continuous central functional whose reduction $h_{\tau}$ is perfect, the map $y\mapsto h_{\tau}(\cdot,y)$ a bijection onto $A^{*}$, so that every bounded functional on $A$ is represented through $h_{\tau}$. Then $L_{a}$ is adjointable for $h_{\tau}$ and
 
@@ -123,7 +123,7 @@ The bounded conjugate left multiplication $L_{a}(x)=a\star x=ax^{*}$ is $\varsig
 | symbol | meaning |
 |---|---|
 | $L_{a}(x)=ax^{*}$ | the bounded conjugate left multiplication, odd, $\lVert L_{a}\rVert=\lVert a\rVert$ |
-| $L_{a}L_{b}=T_{a,b^{*}}$ | the composite is a two-sided operator, hence linear; the family is not closed |
+| $L_{a}L_{b}=L_{a}R_{b^{*}}$ | the composite is a two-sided operator, hence linear; the family is not closed |
 | $h(x,y)=x^{*}y$ | the canonical pairing, $A$-valued, with no cyclicity |
 | $h(L_{a}x,y)=h(x,L_{a}^{\dagger}y)^{*}$ | the twisted defining rule of the adjoint |
 | $xa^{*}y=a^{*}yx$ | the condition forced by the canonical form, forcing $a$ central and then $a=0$ in the full case |
