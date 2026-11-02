@@ -245,6 +245,22 @@ The second short section writes four $4\times4$ matrices in biquaternion form an
 
 The following are recorded from the source and were **not** verified: the closed forms of $F(\rho)$ and $G(\rho)$ and their Laguerre arguments; the $2\times1$ and $1\times2$ transformations the source uses to pass between quaternions and columns, whose displayed forms do not extract cleanly; the intermediate reduction from the radial equation to the two coupled equations, whose printed terms carry the $1/r$ of the definition of $R$ and the $c$ of the derivative in a bookkeeping that does not close on the page; the Hodge-operator statement (31); and the four Dirac matrices of the last section, which are compared to the corpus's dictionary by their labels only.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion and a table of four evaluations of it; it builds the spin operators, the two spin states, the rotation operators, the ladder operators and the angular spinor functions on that table; and it uses the same substitution to write the relativistic one-electron wave function and its probability density in quaternion space. The table is exact on the four elements. The matrix is not multiplicative on those elements' products, in either the real or the complex quaternions, and it annihilates a three-real-dimensional subspace that contains the source's own spin-down state; it is not the Kravchenko–Shapiro matrix it is attributed to, and that matrix in turn represents the real quaternions but not the complex ones. The corpus's isomorphism $\mathsf{M}_2$ is the complex-linear map that does both. On the algebraic side the source's results are correct and the corpus's conventions read them as: a spin operator set equal to the corpus's with reversed axes and a sign, an up state equal to $\sqrt2$ times a pure-state idempotent of $\mathbb{M}_+$ and a down state equal to $\sqrt2$ times a nilpotent of the same ideal, both of vanishing algebra norm $\langle\cdot\rangle_{\natural}$ and unit Hilbert–Schmidt norm, and rotations that are unit-norm biquaternions acting correctly. On the physical side the source's quaternion hydrogen atom is the standard radial Dirac–Coulomb problem re-encoded, its system standard and its probability density standard, with one missing square in the printed spectrum; the restored spectrum is the Sommerfeld–Dirac formula. The result is the transcription of the corpus's notation gap and not the closure of its mathematical gap, and it is recorded as such.
@@ -287,19 +303,3 @@ The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion 
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard radial Dirac–Coulomb system, its Laguerre solutions and the Sommerfeld–Dirac spectrum against which the source's result is compared.
 - H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms* (Springer, 1957), for the exact Dirac–Coulomb spectrum and the two-electron problem the source names as its next step.
 - Companion articles: [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html); [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html); [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html); [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [Conventions of the Matrix Models](conventions-of-the-matrix-models.html); [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html); [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

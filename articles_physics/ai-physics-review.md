@@ -156,7 +156,7 @@ $$
 
 This is the trace reading of the Hermitian form, not a fifth form. It is used only at normalisation; the Born weight itself is stated in the quantum section as the normalised Hermitian form, and its trace reading is recorded there, last.
 
-**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde\varrho\tilde H^{*})=\operatorname{Tr}(\tilde\varrho^{1/2}\tilde H\tilde\varrho^{1/2})\ge0$ for $\tilde\varrho,\tilde H\ge0$; that non-negativity is the reason the star belongs in the probability reading.
+**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}^{1/2}\tilde H\tilde{Ϛ}^{1/2})\ge0$ for $\tilde{Ϛ},\tilde H\ge0$; that non-negativity is the reason the star belongs in the probability reading.
 
 ### One operation, three uses
 

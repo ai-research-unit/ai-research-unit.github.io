@@ -192,6 +192,18 @@ while for non-collinear velocities the vector part acquires the extra term that 
 
 The one genuinely new object in the source's programme is not a change of basis at all: the **electromagnetic plane wave as a rotation and a dilation**, which is an identity of the null cone and is treated in its own article (*The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*). The paravector interpretation is what makes that identity one line of algebra.
 
+## The Gamma Formulation
+
+The gammas are the vector generators of $\mathrm{Cl}_{3,0}$, elements of $\mathbb{B}$; they are not the Dirac frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, which is a frame of cells acting on $\mathbb{B}$.
+
+$$
+\gamma_k=i\vec e_k,\qquad k=x,y,z;\qquad \gamma_j\gamma_k+\gamma_k\gamma_j=2\delta_{jk}e_t;\qquad \gamma_1\gamma_2\gamma_3=i .
+$$
+
+A product of two generators is a quaternion unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$, so the eight products $e_t,\ \gamma_k,\ \gamma_j\gamma_k,\ i$ are the eight real dimensions of the algebra.
+
+The dictionary is exact over $\mathbb{R}$: the paravector is $p_te_t+p_x\gamma_1+p_y\gamma_2+p_z\gamma_3=p_te_t+i\vec p$, a Hermitian element of $\mathbb{B}$ with real components.
+
 ## Summary
 
 The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, with the imaginary vectors $i\vec e_k$ as its three vector directions; its paravector space is the four-dimensional real space $\{p_te_t + \vec p\}$, its Clifford conjugate is the quaternion conjugate, its reversion the Hermitian conjugation, and its Minkowski form $p\bar p = p_t^2 - \vec p^2$ is the negative of the corpus norm of $ip$. The proper velocity $\tilde V_{\mathrm p} = \gamma(e_t+\beta\vec u_v)$ is unimodular and equals the square of the boost rotor $L = \cosh\frac{w}{2}+\sinh\frac{w}{2}\vec u_v$. The boost of a paravector is the **rule** $p\mapsto \tilde V_{\mathrm p}\,p_\parallel+p_\perp$, which fixes the component orthogonal to the boost plane and multiplies the coplanar component by the proper velocity; in the series' conventions this is exactly the rotor conjugation of the Hermitian subspace. Biparavectors are spacetime planes, six in all, three timelike and generating boosts and three spacelike and generating rotations, and the field strength is a biparavector. The paravector interpretation is a presentation of the corpus's own algebra with a real time and a product rule for the boost; it introduces no new physics, and the one new identity of the source's programme is the boost of a plane wave.
@@ -224,16 +236,3 @@ The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$ and the paravector calculus.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of boosts, rotors and the Lorentz group.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra comparison, in which the paravectors of $\mathrm{Cl}_{3,0}$ are the even elements of $\mathrm{Cl}_{1,3}$.
-
-## Appendix — The Gamma Formulation
-
-The gammas are the vector generators of $\mathrm{Cl}_{3,0}$, elements of $\mathbb{B}$; they are not the Dirac frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, which is a frame of cells acting on $\mathbb{B}$.
-
-$$
-\gamma_k=i\vec e_k,\qquad k=x,y,z;\qquad \gamma_j\gamma_k+\gamma_k\gamma_j=2\delta_{jk}e_t;\qquad \gamma_1\gamma_2\gamma_3=i .
-$$
-
-A product of two generators is a quaternion unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$, so the eight products $e_t,\ \gamma_k,\ \gamma_j\gamma_k,\ i$ are the eight real dimensions of the algebra.
-
-The dictionary is exact over $\mathbb{R}$: the paravector is $p_te_t+p_x\gamma_1+p_y\gamma_2+p_z\gamma_3=p_te_t+i\vec p$, a Hermitian element of $\mathbb{B}$ with real components.
-

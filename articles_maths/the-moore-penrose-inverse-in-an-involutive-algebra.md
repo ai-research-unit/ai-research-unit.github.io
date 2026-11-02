@@ -31,7 +31,7 @@ $$
 aA=pA,\qquad Aa=Aq,\qquad a=pa=aq,\qquad a^{+}=qa^{+}p .
 $$
 
-*Proof.* The first equation of the definition gives $a=aa^{+}a=pa$, and the second gives $p^{2}=aa^{+}aa^{+}=a(a^{+}aa^{+})=aa^{+}=p$; the third gives $p^{*}=p$. Hence $p$ is a projection and $a=pa\in pA$, so $aA\subseteq pA$; conversely $p=aa^{+}\in aA$, so $pA\subseteq aA$ and the two right ideals are equal. The same computation with $a$ and $a^{+}$ exchanged gives $q^{2}=q=q^{*}$ and $Aa=Aq$. Then $a^{+}=a^{+}aa^{+}=qa^{+}$ and $a^{+}=a^{+}aa^{+}=a^{+}p$, so $a^{+}=qa^{+}p$. $\square$
+*Proof.* The first equation of the definition gives $a=aa^{+}a=pa$, and the second gives $p^{2}=aa^{+}aa^{+}=a(a^{+}aa^{+})=aa^{+}=p$; the third gives $p^{*}=p$. Hence $p$ is a projection and $a=pa\in pA$, so $aA\subseteq pA$; conversely $p=aa^{+}\in aA$, so $pA\subseteq aA$ and the two right ideals are equal. The same computation with $a$ and $a^{+}$ exchanged gives $q^{2}=q=q^{*}$ and $Aa=Aq$. Then $a^{+}=a^{+}aa^{+}=qa^{+}$ and $a^{+}=a^{+}aa^{+}=a^{+}p$, so $a^{+}=qa^{+}p$.
 
 **Remark (what the inverse reads).** Let $\ker a=\{x:ax=0\}$ and $\ker a^{+}=\{x:a^{+}x=0\}$, right ideals. The lemma gives
 
@@ -45,7 +45,7 @@ because $ax=0$ is equivalent to $qx=a^{+}ax=0$, and symmetrically. The element $
 
 **Lemma (the projection of an ideal).** Let $p$ and $q$ be projections. If $pA=qA$, then $p=q$.
 
-*Proof.* From $pA=qA$ one has $p\in qA$, so $p=qx$ for some $x$, and $qp=q^{2}x=qx=p$. Symmetrically $q\in pA$ gives $pq=q$. Starring the first identity, $p=p^{*}=(qp)^{*}=p^{*}q^{*}=pq=q$. $\square$
+*Proof.* From $pA=qA$ one has $p\in qA$, so $p=qx$ for some $x$, and $qp=q^{2}x=qx=p$. Symmetrically $q\in pA$ gives $pq=q$. Starring the first identity, $p=p^{*}=(qp)^{*}=p^{*}q^{*}=pq=q$.
 
 **Theorem (uniqueness).** An element of $A$ has at most one Moore–Penrose inverse.
 
@@ -55,7 +55,7 @@ $$
 b=bab=b\bigl(aa^{+}a\bigr)b=(ba)a^{+}(ab)=qa^{+}p=a^{+},
 $$
 
-the last equality by the lemma of §*The Four Conditions*. $\square$
+the last equality by the lemma of §*The Four Conditions*.
 
 The uniqueness is algebraic and uses neither a basis nor a norm. It also shows that the two projections are part of the data of $a$ alone: they are the projections that generate its two ideals, and no choice is made.
 
@@ -81,21 +81,21 @@ $$
 aba=pa=a,\qquad bab=qb=b,
 $$
 
-and the two products $ab=p$ and $ba=q$ are projections, so all four Penrose equations hold. $\square$
+and the two products $ab=p$ and $ba=q$ are projections, so all four Penrose equations hold.
 
 The proof also shows what the inverse is: the inverse of the isomorphism $a:qA\to pA$, extended by zero. Nothing else enters, and no positivity is used.
 
 **Corollary (the units).** If $a$ is invertible, then $a^{+}=a^{-1}$, with $p=q=1$.
 
-*Proof.* Take $p=q=1$; the restriction $a:A\to A$ is bijective. $\square$
+*Proof.* Take $p=q=1$; the restriction $a:A\to A$ is bijective.
 
 **Corollary (the projections).** If $p$ is a projection, then $p^{+}=p$.
 
-*Proof.* Take $p=q$ in the criterion; $p$ is the identity on $pA$. $\square$
+*Proof.* Take $p=q$ in the criterion; $p$ is the identity on $pA$.
 
 **Corollary (matrix algebras).** In $M_{n}(\mathbb{C})$ with the conjugate transpose, every element has a Moore–Penrose inverse.
 
-*Proof.* Let $p$ be the orthogonal projection onto the column space of $a$ and $q$ the orthogonal projection onto the row space. Both are projections of the algebra, $aA=pA$ and $Aa=Aq$, and $\ker a$ is the orthogonal complement of the row space, so $a$ is injective on $qA$. The criterion applies; the closed form is in *The Moore–Penrose Inverse of a Matrix*, which also treats the rectangular case, where the inverse leaves the algebra of square matrices. $\square$
+*Proof.* Let $p$ be the orthogonal projection onto the column space of $a$ and $q$ the orthogonal projection onto the row space. Both are projections of the algebra, $aA=pA$ and $Aa=Aq$, and $\ker a$ is the orthogonal complement of the row space, so $a$ is injective on $qA$. The criterion applies; the closed form is in *The Moore–Penrose Inverse of a Matrix*, which also treats the rectangular case, where the inverse leaves the algebra of square matrices.
 
 **Remark (existence is not automatic).** Let $A=\mathbb{C}[x]/(x^{2})$ with the identity involution, and $a=x$. Then $a^{2}=0$, and for every $b=u+vx$,
 
@@ -142,7 +142,7 @@ $$
 bxb=(a^{+})^{*}\bigl(a^{+}aa^{*}(a^{+})^{*}\bigr)a^{+}=(a^{+})^{*}(a^{+}a)(a^{+}a)^{*}a^{+}=(a^{+})^{*}a^{+}=b,
 $$
 
-and $xb=aa^{*}(a^{+})^{*}a^{+}=a(a^{+}a)a^{+}=aa^{+}$ and $bx=(a^{+})^{*}(a^{+}a)a^{*}=((a^{+})^{*}a^{*})^{2}=(aa^{+})^{2}=aa^{+}$ are projections. Hence $b=x^{+}$. The fourth identity follows from the third applied to $a^{*}$, with the second used to remove the stars. Finally $(a^{*}a)^{+}a^{*}=a^{+}(a^{+})^{*}a^{*}=a^{+}aa^{+}=a^{+}$, and symmetrically $a^{*}(aa^{*})^{+}=a^{+}$. $\square$
+and $xb=aa^{*}(a^{+})^{*}a^{+}=a(a^{+}a)a^{+}=aa^{+}$ and $bx=(a^{+})^{*}(a^{+}a)a^{*}=((a^{+})^{*}a^{*})^{2}=(aa^{+})^{2}=aa^{+}$ are projections. Hence $b=x^{+}$. The fourth identity follows from the third applied to $a^{*}$, with the second used to remove the stars. Finally $(a^{*}a)^{+}a^{*}=a^{+}(a^{+})^{*}a^{*}=a^{+}aa^{+}=a^{+}$, and symmetrically $a^{*}(aa^{*})^{+}=a^{+}$.
 
 **Proposition (unitary factors).** If $u$ is unitary, $u^{*}u=uu^{*}=1$, then
 
@@ -157,7 +157,7 @@ ua\,a^{+}u^{*}\,ua=uaa^{+}a=ua,\qquad
 a^{+}u^{*}\,ua\,a^{+}u^{*}=a^{+}aa^{+}u^{*}=a^{+}u^{*},
 $$
 
-and the two products are $uaa^{+}u^{*}$, which is the conjugate of the projection $aa^{+}$ by the unitary $u$, and $a^{+}a$, which is a projection. The second identity is the first applied to $a^{*}$ and conjugated. $\square$
+and the two products are $uaa^{+}u^{*}$, which is the conjugate of the projection $aa^{+}$ by the unitary $u$, and $a^{+}a$, which is a projection. The second identity is the first applied to $a^{*}$ and conjugated.
 
 **Remark (the product rule fails).** The identity $(ab)^{+}=b^{+}a^{+}$ does not hold in general. In $M_{2}(\mathbb{C})$, take
 

@@ -49,7 +49,7 @@ $$
 
 are subgroups isomorphic to the quaternion group $Q_8$.
 
-**Proof.** The left multiplications satisfy $L_{e_x}^{2}=L_{e_y}^{2}=L_{e_z}^{2}=-I$ and $L_{e_x}L_{e_y}=-L_{e_y}L_{e_x}$; with $L_{e_z}=L_{e_x}L_{e_y}$ up to the orientation sign, the eight elements $\{\pm I,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right. $\square$
+**Proof.** The left multiplications satisfy $L_{e_x}^{2}=L_{e_y}^{2}=L_{e_z}^{2}=-I$ and $L_{e_x}L_{e_y}=-L_{e_y}L_{e_x}$; with $L_{e_z}=L_{e_x}L_{e_y}$ up to the orientation sign, the eight elements $\{\pm I,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right.
 
 **The central product.** The two subgroups commute elementwise,
 
@@ -83,7 +83,7 @@ and the nontrivial commutators come from within each $Q_8$: $[L_{e_x},L_{e_y}]=-
 
 **Proposition.** The centre of $G$ is $\{\pm I\}$.
 
-**Proof.** An element $L_{e_\mu} R_{e_\nu}$ commutes with every $L_{e_\alpha}$ exactly when $L_{e_\mu}$ commutes with $L_{e_\alpha}$ for every $\alpha$, which forces $\mu=t$; and it commutes with every $R_{e_\beta}$ exactly when $\nu=t$. Hence the central elements are $\pm L_{e_t}R_{e_t}=\pm I$. $\square$
+**Proof.** An element $L_{e_\mu} R_{e_\nu}$ commutes with every $L_{e_\alpha}$ exactly when $L_{e_\mu}$ commutes with $L_{e_\alpha}$ for every $\alpha$, which forces $\mu=t$; and it commutes with every $R_{e_\beta}$ exactly when $\nu=t$. Hence the central elements are $\pm L_{e_t}R_{e_t}=\pm I$.
 
 **Proposition.** The exponent of $G$ is $4$: every element has order at most four, and some have order four.
 
@@ -93,7 +93,7 @@ $$
 g^{2}=L_{e_\mu}^{2}R_{e_\nu}^{2}=\pm I,
 $$
 
-because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ and $R_{e_x}$ have order four, because their squares are $-I\ne I$. $\square$
+because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ and $R_{e_x}$ have order four, because their squares are $-I\ne I$.
 
 **The order count.** The elements of order two are $-I$ and the eighteen products $L_{e_\mu} R_{e_\nu}$ with both $\mu\ne t$ and $\nu\ne t$, taken with both signs: $2+18=20$ elements satisfy $g^{2}=I$, of which nineteen have order exactly two. The remaining twelve elements, with exactly one index equal to $t$, have order four.
 
@@ -108,11 +108,11 @@ because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ an
 
 **Proposition.** $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$.
 
-**Proof.** The quotient has order $16$. Its elements are the classes of $L_{e_\mu} R_{e_\nu}$; the class of $L_{e_\mu} R_{e_\nu}$ has order two because its square is $\pm I$, and the quotient is abelian because the commutator of any two elements lies in $\{\pm I\}$. A group of order $16$ and exponent two is $(\mathbb{Z}/2)^{4}$. $\square$
+**Proof.** The quotient has order $16$. Its elements are the classes of $L_{e_\mu} R_{e_\nu}$; the class of $L_{e_\mu} R_{e_\nu}$ has order two because its square is $\pm I$, and the quotient is abelian because the commutator of any two elements lies in $\{\pm I\}$. A group of order $16$ and exponent two is $(\mathbb{Z}/2)^{4}$.
 
 **Theorem.** $G$ is extraspecial of order $2^{1+4}$: its centre has order $2$, its quotient by the centre is elementary abelian of order $16$, and its derived subgroup is the centre.
 
-**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_{e_x},L_{e_y}]=-I$; hence $G'=\{\pm I\}$. $\square$
+**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_{e_x},L_{e_y}]=-I$; hence $G'=\{\pm I\}$.
 
 **The commutator form.** Define
 
@@ -122,7 +122,7 @@ $$
 
 **Proposition.** $b$ is a well-defined alternating bilinear form on $G/\{\pm I\}$, and it is nondegenerate.
 
-**Proof.** The commutator depends only on the classes because the centre is central, and it is alternating because $[x,x]=I$; bilinearity is the identity $[xy,z]=[x,z]\,[y,z]$ in a class-two group. If $x\{\pm I\}$ is in the radical, then $[x,y]=I$ for all $y$, so $x$ is central and the class is the identity. $\square$
+**Proof.** The commutator depends only on the classes because the centre is central, and it is alternating because $[x,x]=I$; bilinearity is the identity $[xy,z]=[x,z]\,[y,z]$ in a class-two group. If $x\{\pm I\}$ is in the radical, then $[x,y]=I$ for all $y$, so $x$ is central and the class is the identity.
 
 **The type.** The nondegenerate alternating form on a four-dimensional symplectic space over $\mathbb{F}_2$ has a symplectic basis $e_1,f_1,e_2,f_2$ with $b(e_i,f_i)=1$ and all other pairings zero; the group is the extraspecial group of that form, of order $2^{1+4}$.
 
@@ -130,7 +130,7 @@ $$
 
 **Proposition.** The subgroup $\langle L_{e_x},R_{e_x}\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
 
-**Proof.** $L_{e_x}$ and $R_{e_x}$ commute, $L_{e_x}$ has order four, and $L_{e_x}R_{e_x}$ has order two, because $(L_{e_x}R_{e_x})^{2}=L_{e_x}^{2}R_{e_x}^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_{e_x}^{a}(L_{e_x}R_{e_x})^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$. $\square$
+**Proof.** $L_{e_x}$ and $R_{e_x}$ commute, $L_{e_x}$ has order four, and $L_{e_x}R_{e_x}$ has order two, because $(L_{e_x}R_{e_x})^{2}=L_{e_x}^{2}R_{e_x}^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_{e_x}^{a}(L_{e_x}R_{e_x})^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
 
 **The maximal abelian subgroups.** Every abelian subgroup $A$ has $A\cap\{\pm I\}$ of order at most two, and its image in $G/\{\pm I\}$ is a totally isotropic subspace for the commutator form, of dimension at most two. Hence $|A|\le 2\cdot4=8$, and the bound is attained. The maximal abelian subgroups are therefore the inverse images of the maximal totally isotropic planes of $G/\{\pm I\}$, of order $8$.
 
@@ -140,11 +140,11 @@ $$
 
 **Proposition.** $G$ has seventeen conjugacy classes: the two central classes $\{I\}$ and $\{-I\}$, and fifteen classes of size two.
 
-**Proof.** A non-central element has centraliser of order $16$: the centraliser is the inverse image in $G$ of the orthogonal complement of its class under the commutator form, a three-dimensional subspace of $G/\{\pm I\}$, of order $8$; together with the centre this gives $16$. The class therefore has $32/16=2$ elements. There are $30$ non-central elements, hence $15$ classes of size two. $\square$
+**Proof.** A non-central element has centraliser of order $16$: the centraliser is the inverse image in $G$ of the orthogonal complement of its class under the commutator form, a three-dimensional subspace of $G/\{\pm I\}$, of order $8$; together with the centre this gives $16$. The class therefore has $32/16=2$ elements. There are $30$ non-central elements, hence $15$ classes of size two.
 
 **Theorem.** $G$ has seventeen irreducible complex representations: sixteen of degree one and one of degree four, the defining representation on $\mathbb{C}^{4}$.
 
-**Proof.** The number of irreducible representations equals the number of conjugacy classes, seventeen. The sixteen characters of the abelian quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$ are sixteen representations of degree one. The sum of the squares of the degrees is $|G|=32$, so the remaining representation has degree $d$ with $d^{2}=32-16=16$, that is, $d=4$. The defining representation is irreducible: the algebra generated by $G$ is $M_4(\mathbb{C})$, because the sixteen $L_{e_\mu} R_{e_\nu}$ are a basis, so its commutant is $\mathbb{C}I$ and the module $\mathbb{C}^{4}$ is simple. $\square$
+**Proof.** The number of irreducible representations equals the number of conjugacy classes, seventeen. The sixteen characters of the abelian quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$ are sixteen representations of degree one. The sum of the squares of the degrees is $|G|=32$, so the remaining representation has degree $d$ with $d^{2}=32-16=16$, that is, $d=4$. The defining representation is irreducible: the algebra generated by $G$ is $M_4(\mathbb{C})$, because the sixteen $L_{e_\mu} R_{e_\nu}$ are a basis, so its commutant is $\mathbb{C}I$ and the module $\mathbb{C}^{4}$ is simple.
 
 **The character table.** The sixteen linear characters take values $\pm1$ on the classes of $L_{e_\mu} R_{e_\nu}$; the degree-four character is the trace of the defining representation: $\chi(I)=4$, $\chi(-I)=-4$, $\chi(L_{e_\mu} R_{e_\nu})=0$ for $\mu,\nu\ne t$, and $\chi(L_{e_\mu})=0$, $\chi(R_{e_\nu})=0$ for the elements of order four, whose trace vanishes because their eigenvalues are $\pm i$ in pairs.
 

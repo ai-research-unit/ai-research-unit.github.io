@@ -8,7 +8,7 @@ The biquaternion algebra is the even part. Its product sees the parity and nothi
 
 The sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_{e_t}R_{e_x},L_{e_x}R_{e_y},L_{e_y}R_{e_y},L_{e_z}R_{e_y}$, a staircase, not a row or a column. The frame is the choice of that staircase.
 
-The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the appendix. The two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
+The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the Gamma section. The two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
 
 ## The Two Gradings
 
@@ -110,7 +110,7 @@ for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the 
 $$
 e_t\mapsto I,\quad e_x\mapsto v_{2}v_{3},\quad e_y\mapsto v_{3}v_{1},\quad e_z\mapsto v_{1}v_{2},\quad i\mapsto i\omega.
 $$
-Each product $e_\mu x e_\nu$ is a signed basis element, and the scalar $i$ is the pseudoscalar. The signs are those of the quaternion multiplication table; a direct computation gives the sixteen entries. $\square$
+Each product $e_\mu x e_\nu$ is a signed basis element, and the scalar $i$ is the pseudoscalar. The signs are those of the quaternion multiplication table; a direct computation gives the sixteen entries.
 
 **The counts.** The table has one grade-0 entry, four grade-1 entries, six grade-2 entries, four grade-3 entries and one grade-4 entry:
 $$
@@ -172,6 +172,30 @@ up to the scalar $i$; its even part is the complexified even Clifford algebra $M
 
 **The invariant statement.** The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five cells are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.
 
+## The Gamma Formulation
+
+The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
+
+$$
+\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z},
+$$
+
+with $\gamma_\mu=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
+
+The grade table in the gamma basis is
+$$
+\begin{array}{c|cccc}
+ & t & x & y & z\\ \hline
+t & I & -i\gamma_0 & i\gamma_{123} & i\gamma_5\\
+x & \gamma_{23} & -i\gamma_{023} & -i\gamma_1 & \gamma_{01}\\
+y & -\gamma_{13} & i\gamma_{013} & -i\gamma_2 & \gamma_{02}\\
+z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
+\end{array}
+$$
+with the correspondence $e_t\mapsto I$, $e_x\mapsto\gamma_2\gamma_3$, $e_y\mapsto\gamma_3\gamma_1$, $e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
+
+Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The Clifford algebra of four dimensions is $\mathbb{Z}$-filtered, with associated graded $\Lambda^{\bullet}V$ of dimensions $1,4,6,4,1$; it is $\mathbb{Z}/2$-graded by parity, and that is the only grading on the algebra itself. The even part is $\mathbb{B}$; the odd part is a copy of $\mathbb{B}$ of real dimension eight, split as four vectors plus four trivectors. The split is not a $\mathbb{B}$-submodule split; it is recovered from the frame by Hodge duality. The sixteen two-sided operators are exactly the sixteen Clifford basis elements up to $\pm1,\pm i$, with the grade table
@@ -226,27 +250,3 @@ and the five cells of the frame are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the operation-level form of the odd generators.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality and its relation to the pseudoscalar.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.
-
-## Appendix — The Gamma Formulation
-
-The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
-
-$$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z},
-$$
-
-with $\gamma_\mu=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
-
-The grade table in the gamma basis is
-$$
-\begin{array}{c|cccc}
- & t & x & y & z\\ \hline
-t & I & -i\gamma_0 & i\gamma_{123} & i\gamma_5\\
-x & \gamma_{23} & -i\gamma_{023} & -i\gamma_1 & \gamma_{01}\\
-y & -\gamma_{13} & i\gamma_{013} & -i\gamma_2 & \gamma_{02}\\
-z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
-\end{array}
-$$
-with the correspondence $e_t\mapsto I$, $e_x\mapsto\gamma_2\gamma_3$, $e_y\mapsto\gamma_3\gamma_1$, $e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
-
-Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

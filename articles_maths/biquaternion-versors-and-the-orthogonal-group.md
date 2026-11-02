@@ -148,6 +148,22 @@ and off the slice the two differ.
 
 **What an object of the algebra can and cannot hold.** The objects of the algebra are the elements of $\mathbb{B}$ and the groups and sets built from them by multiplication, conjugation and the sandwich. The orthogonal group is such an object, read on the Hermitian sector. The Pin group is not, because it contains the odd versors, which are the reflections; the only part of it that is an object of the algebra is the even cover $\mathbb{B}^{\times}_1\cong\mathrm{Spin}(1,3)$.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The biquaternion algebra is the even part of the Clifford algebra of Lorentzian space, and the envelope is two copies of it, $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\xi$, the odd copy containing the space on which the orthogonal group acts. The parity of the length of a versor is its reflection count, so the odd versors are the reflections and lie outside the algebra, and the only part of $\mathrm{Pin}(1,3)$ that is an object of the algebra is $\mathrm{Spin}(1,3)=\mathbb{B}^{\times}_1$. The bilinear sandwich of a unit of norm one is an isometry of the Hermitian sector of determinant $+1$ and orthochronous, and with quaternion conjugation of the argument and the negation it generates the whole orthogonal group: the four operations give the four components, of determinants $\pm1$ and of the two time orientations. The volume element, which is the central scalar imaginary up to sign, anticommutes with every vector, so it acts on Lorentzian space as $-\mathrm{id}$, the product of parity and time reversal, through the inner automorphism, while its sandwich is the identity because the scalar imaginary is central and Hermitian-conjugates to its negative. The dagger of the algebra is the reversion of the Euclidean Clifford structure and not the Clifford conjugation of the Minkowski one; the two differ by the automorphism that conjugates the coefficients, they agree exactly on the real-quaternion slice, and there the sandwich is the inner automorphism scaled by the norm.
@@ -177,19 +193,3 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford algebra as the ambient object, the volume element and the parity grading.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the versor product, the reflection and the Cartan–Dieudonné theorem as they are used in the physical literature.
 - Within the corpus, the owner articles [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), [Versors, Rotors and the Sandwich Action with Signed Inner Conjugation](versors-rotors-and-the-sandwich-action-with-signed-inner-conjugation.html), [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

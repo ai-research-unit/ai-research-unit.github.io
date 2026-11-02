@@ -28,7 +28,7 @@ $$
 
 and $\operatorname{tr}E_{kl}=\delta_{kl}$.
 
-*Proof.* $E_{kl}E_{mn}=v_k\ell_l(v_m)\ell_n=\delta_{lm}v_k\ell_n=\delta_{lm}E_{kn}$. On $v_m$, $E_{kk}$ acts as $\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. $\square$
+*Proof.* $E_{kl}E_{mn}=v_k\ell_l(v_m)\ell_n=\delta_{lm}v_k\ell_n=\delta_{lm}E_{kn}$. On $v_m$, $E_{kk}$ acts as $\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$.
 
 **The frame is the choice of the $v_k$.** The root fixes the lines; the frame fixes the vectors. Different frames of the same flag give different matrices $E_{kl}$ and the same idempotents $E_{kk}=P_k$.
 

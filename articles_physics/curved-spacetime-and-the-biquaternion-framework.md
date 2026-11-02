@@ -223,7 +223,7 @@ What is not automatic is everything one would want. Metric compatibility and the
 
 The three routes above accept the article's premise and look for the map that attaches $\mathbb{B}$ to a manifold. There is a fourth position, and it is the only one that attacks the premise instead: **put the algebra in the coordinates**, so that the arena itself is not a manifold. It is worth naming here, because it is the sharpest existing answer to the sentence from which this article began — *the algebra has no points* — and because a reader who meets that sentence should know that the answer has been tried.
 
-The construction is *extended relativity in Clifford spaces*, whose principal review is by Castro and Pavšič (2004). The coordinates are themselves Clifford valued; for a four-dimensional base one writes, in the reference-frame cells the generator cell of the closing appendix,
+The construction is *extended relativity in Clifford spaces*, whose principal review is by Castro and Pavšič (2004). The coordinates are themselves Clifford valued; for a four-dimensional base one writes, in the reference-frame cells the generator cell of the Gamma section,
 
 $$
 X = \sigma\,1 + \bigl(x_0\,iR_{\vec e_x}-\sum_k x_k\,iL_{\vec e_k}R_{\vec e_y}\bigr) + \tfrac12 x_{\mu\nu}\sigma_{\mu\nu} + \bigl(\check x_0\,iR_{\vec e_x}-\sum_k \check x_k\,iL_{\vec e_k}R_{\vec e_y}\bigr) + \check\sigma I ,
@@ -351,11 +351,11 @@ while substituting the same replacement into the flat equation of motion gives
 
 the same operator with the product form $\tfrac{i}{2}e_{\mu a}\omega_{\mu cd}$ of the $a$-th generator and $S_{cd}$ in place of the anticommutator
 
-and the two do not differ by an anticommutator. With $S_{cd}$ the spin generator of the appendix, half the commutator of the $c$-th and $d$-th generators,
+and the two do not differ by an anticommutator. With $S_{cd}$ the spin generator of the Gamma section, half the commutator of the $c$-th and $d$-th generators,
 half the product of the $a$-th generator and $S_{cd}$ is a quarter of the anticommutator plus a quarter of the commutator
 so the substituted equation already carries the anticommutator term with the same coefficient $\tfrac{i}{4}$ that the variation produces. The difference is the vector term
 the difference of the two operators is minus the vector connection term minus the commutator term, and the commutator term reduces to minus the vector connection term
-where the second equality uses the commutator of a generator with $S_{cd}$ rotates it in the $c$–$d$ plane: it returns $g_{ac}$ times the $d$-th generator minus $g_{ad}$ times the $c$-th generator (appendix, $\gamma$ reading) and the antisymmetry of $\omega_{\mu cd}$. Both surviving terms are grade one: the trivector parts of the two equations agree, and the mismatch is a vector connection term — the derivative of the frame — not a trivector. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with the generator cell; gravity is exceptional, and the reason is that the Lorentz generator satisfies the commutator of the $c$-th generator with $S_{ab}$ is a linear combination of the four generators with coefficients $V_{abd}$ rather than commuting.
+where the second equality uses the commutator of a generator with $S_{cd}$ rotates it in the $c$–$d$ plane: it returns $g_{ac}$ times the $d$-th generator minus $g_{ad}$ times the $c$-th generator (Gamma section, $\gamma$ reading) and the antisymmetry of $\omega_{\mu cd}$. Both surviving terms are grade one: the trivector parts of the two equations agree, and the mismatch is a vector connection term — the derivative of the frame — not a trivector. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with the generator cell; gravity is exceptional, and the reason is that the Lorentz generator satisfies the commutator of the $c$-th generator with $S_{ab}$ is a linear combination of the four generators with coefficients $V_{abd}$ rather than commuting.
 
 The corpus's curved equation is the substitution form. The section above writes $\tilde F_{\mu} D_{\mu}\psi = 0$ and the chiral pair $\tilde F_{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde F_{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$ by replacing the rigid material frame and the partial derivative, and the article supplies no action for the coupled system whose variation could be compared with them. So this article does not take a side in the ambiguity. What the external source establishes is that the side matters: the corpus has been writing one of two inequivalent forms without saying which.
 
@@ -489,6 +489,44 @@ This article puts the biquaternion Dirac equation on an imported background $g$.
 
 Read further, the local complex structure is an **emergent metric** in the sense of the analogue-gravity programme — the wave cone is a property of the medium and not of a fixed background — and the construction is a **bundle of algebras** whose typical fibre is the biquaternion algebra, whose local complex structure is a section of the frame bundle and whose medium is a connection on it. The interpretation is labelled and bounded: it is the shape the framework's algebra takes when the complex structure is allowed to vary, and it is offered against the imported $g$, not as a derivation of Einstein's equations. The owner of the local construction is *The Local Complex Structure and the Speed of Light*.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
 ## Summary
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
@@ -562,41 +600,3 @@ What is missing is not a technical detail but the theory. Nothing determines the
 - C. Castro and M. Pavšič, "The Extended Relativity Theory in Clifford Spaces" (review, 8 July 2004), for the arena alternative of the section *The Arena Alternative: Algebra Valued Coordinates*: Clifford-valued coordinates, the generalized interval, the polyvector bosonic $p$-brane action, the relativity of signature, and the maximal-acceleration programme.
 - E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the external claim recorded in *An External Claim of One Tensor Language, and What It Does Not Supply*: one biquaternion tensor calculus carrying both the antisymmetric tensor dynamics of electrodynamics and the symmetric tensor dynamics of relativity. Cited as a representational result, with no field equation for the frame or the connection.
 - D. J. Cirilo-Lombardo, "Algebraic structures, physics and geometry from a Unified Field Theoretical framework," arXiv:1411.5493v3 [hep-th] (2015), for the external claim recorded in *An External Claim That the Bundle Basis Is Biquaternionic*: the principal fibre bundle $P(G,M)$ whose basis is biquaternionic, its structural group and its three fundamental tensors, and the dictionary that carries its $2\times2$ matrix $Q$ to the corpus's biquaternion. Cited for the claim that the basis is biquaternionic and for its translation; the bundle's geometry — the G-structure, the reduced tangent bundle, the torsion-induced signature — is recorded as a claim in *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*, and the source's invariant-metric assertion is not reproduced.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
-$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
-$$
-$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
-$$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

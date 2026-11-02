@@ -207,41 +207,7 @@ $$
 
 the Hermitian sandwich by the bosonic element $\vec e_z=iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}=L_{\vec e_z}R_{e_t}$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
 
-## Summary
-
-The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The operator of the article is the **Hermitian sandwich** $\Theta_x(y)=x\,y\,x^{*}$: the Hermitian adjoint on the right, one parameter, and no second factor. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
-
-The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$, so the two coincide exactly on the real-quaternion slice of unit norm and differ elsewhere by the coefficient-conjugated norm, and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}$, being an isometry exactly on the unit slice. The adjoint slice is a compact group, $\mathbb{B}\cong M_2(\mathbb{C})$ with $\mathcal{U}\cong \mathrm{U}(2)$, while the inverse slice is the group of units and the route to the Lorentz group.
-
-The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the grade involution is its conjugation by the volume element, $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$. It is **invisible on the algebra**, $\varepsilon_x=+1$ for $x\in\mathbb{B}$, so there is no signed sandwich on the bosonic sector and the composition $\Theta_x\Theta_z=\Theta_{xz}$ is exact. On the odd slot the sign is physical: on the vectors $\Theta_a=q(a)\rho_a$, so the time reflection is the sandwich exactly and the spatial reflections are minus it, with the sign carried by the signature $q(a)=\pm1$ and not by a parity factor of the operator.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ odd, $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$ even | Generator cells fermionic, bivectors bosonic |
-| $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
-| $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |
-| $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
-| $\mathcal{U}=\{x:x^{*}x=1\}$ | The unit slice; $\mathcal{U}\cong \mathrm{U}(2)$ in the matrix model, Lie algebra $\mathbb{M}_-$ |
-| $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$, $\varepsilon_x=(-1)^{\lvert x\rvert}$ | The grade involution as a scalar sign |
-| $\Theta_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
-| $\Theta_x\Theta_z=\Theta_{xz}$ | Exact composition; no sign correction |
-| $\Theta_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
-| $\mathrm{Cl}^1=\mathbb{B}u$, $\langle su,tu\rangle=-q(u)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
-| $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
-
-## Further Reading
-
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the parity grading, the volume element and the two conjugations.
-- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the grade involution, the reflection count and the split of the orthogonal group.
-- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the $*$-unitary groups they define and the norm factor.
-- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the chirality element, the bosonic/fermionic grading and its use in field theory.
-- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the adjoint of an anti-automorphism and the $*$-unitary group of an algebra with involution.
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -278,3 +244,37 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The operator of the article is the **Hermitian sandwich** $\Theta_x(y)=x\,y\,x^{*}$: the Hermitian adjoint on the right, one parameter, and no second factor. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
+
+The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$, so the two coincide exactly on the real-quaternion slice of unit norm and differ elsewhere by the coefficient-conjugated norm, and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}$, being an isometry exactly on the unit slice. The adjoint slice is a compact group, $\mathbb{B}\cong M_2(\mathbb{C})$ with $\mathcal{U}\cong \mathrm{U}(2)$, while the inverse slice is the group of units and the route to the Lorentz group.
+
+The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the grade involution is its conjugation by the volume element, $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$. It is **invisible on the algebra**, $\varepsilon_x=+1$ for $x\in\mathbb{B}$, so there is no signed sandwich on the bosonic sector and the composition $\Theta_x\Theta_z=\Theta_{xz}$ is exact. On the odd slot the sign is physical: on the vectors $\Theta_a=q(a)\rho_a$, so the time reflection is the sandwich exactly and the spatial reflections are minus it, with the sign carried by the signature $q(a)=\pm1$ and not by a parity factor of the operator.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ odd, $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$ even | Generator cells fermionic, bivectors bosonic |
+| $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
+| $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
+| $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |
+| $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
+| $\mathcal{U}=\{x:x^{*}x=1\}$ | The unit slice; $\mathcal{U}\cong \mathrm{U}(2)$ in the matrix model, Lie algebra $\mathbb{M}_-$ |
+| $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$, $\varepsilon_x=(-1)^{\lvert x\rvert}$ | The grade involution as a scalar sign |
+| $\Theta_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
+| $\Theta_x\Theta_z=\Theta_{xz}$ | Exact composition; no sign correction |
+| $\Theta_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
+| $\mathrm{Cl}^1=\mathbb{B}u$, $\langle su,tu\rangle=-q(u)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
+| $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
+
+## Further Reading
+
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the parity grading, the volume element and the two conjugations.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the grade involution, the reflection count and the split of the orthogonal group.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the $*$-unitary groups they define and the norm factor.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the chirality element, the bosonic/fermionic grading and its use in field theory.
+- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the adjoint of an anti-automorphism and the $*$-unitary group of an algebra with involution.

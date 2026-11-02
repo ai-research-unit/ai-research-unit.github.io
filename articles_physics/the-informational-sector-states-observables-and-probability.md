@@ -416,7 +416,7 @@ The open questions are concrete.
 
 ## Examples
 
-**The boost biquaternion.** $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde\varrho)=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.
+**The boost biquaternion.** $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.
 
 **A pure state.** $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, with $2\,\mathrm{Sc}(\tilde\Pi_+)=1$ (trace one), and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.
 
@@ -446,7 +446,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q_{\mathrm H}=c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
 - Its biquaternion norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the biquaternion norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
-- The state slice (normalised by $\langle\tilde\varrho,e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
+- The state slice (normalised by $\langle\tilde{Ϛ},e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
 - The Bloch ball is the state slice of the future light cone of the biquaternion norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
 - Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.

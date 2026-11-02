@@ -148,6 +148,22 @@ an eight-real-dimensional algebra whose two Peirce carriers, minimal left ideals
 
 This containment does not turn the Dirac–Kähler equation into a biquaternion equation. The operator $d-\delta$ is **odd**: the exterior derivative raises the degree and the codifferential lowers it, so $(d-\delta+m)\Phi=0$ couples the even and odd parts of $\Phi$ and does not restrict to either. A biquaternion-valued field alone does not satisfy the Dirac–Kähler equation; one must carry the odd components too. What the containment does give is a natural statement of *why* the framework's equation and the Dirac–Kähler equation are two readings of one geometric object: both are square roots of a Laplacian, and both are built from $\mathrm{Cl}_{1,3}$; the framework takes the Peirce carrier of the even part at a primitive idempotent, a minimal left ideal there, and calls it the Dirac field, while the Dirac–Kähler construction takes the whole multivector and recovers four Dirac fields from it by the basis change $Z$. The corpus's statement that spinors are elements of Peirce carriers, minimal left ideals in this case, and the Dirac–Kähler decomposition into four copies are the two extremes of the same Clifford structure, and their precise dictionary — which of the four Dirac–Kähler copies corresponds to the framework's field — is not fixed in the corpus and is collected among the open questions.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The Dirac–Kähler equation $(d-\delta+m)\Phi=0$ is the geometric analogue of the Dirac equation: it is an equation for a multivector field, defined on any pseudo-Riemannian manifold by the exterior calculus alone. The Laplace–de Rham operator $d-\delta$ is a square root of the Laplacian, $(d-\delta)^2=\square$, and the equation therefore implies the Klein–Gordon equation $(\square-m^2)\Phi=0$ componentwise. Equipping the exterior algebra with the Clifford product $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu + \delta_{\mu\nu}$ makes $d-\delta$ the Clifford multiplication $\sum_\mu dx_\mu\vee\partial/\partial x_\mu$.
@@ -182,19 +198,3 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 - S. I. Kruglov, "Dirac–Kähler equation," *International Journal of Theoretical Physics* **41** (2002) 653–687, for a review of the algebraic structure and the Lorentz mixing.
 - I. Montvay and G. Münster, *Quantum Fields on a Lattice* (Cambridge University Press, 1994), chapter 4, for the lattice construction in the standard notation.
 - The companion articles of this series: [Dirac Differential Operators](dirac-differential-operators.html), [Geometric Calculus and the Vector Derivative](geometric-calculus-and-the-vector-derivative.html), [The Volume Element, Duality and the Hodge Star](the-volume-element-duality-and-the-hodge-star.html), *Peirce Carriers and Inner Conjugation*, and [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

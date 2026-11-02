@@ -166,7 +166,7 @@ $$
 
 Taking the real part of the scalar part gives the box for $\theta$. Taking the norm of the vector part gives $\sin\frac{\theta}{2}=\lVert C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\rVert/|N|$, and $\vec u_{\mathrm r}=\mathrm{Vect}\tilde u_{\mathrm r}/\sin\frac{\theta}{2}$ is the box for $\vec u_{\mathrm r}$.
 
-**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/\Rho$, which is the word. $\square$
+**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/\Rho$, which is the word.
 
 **Check.** For
 
@@ -228,7 +228,7 @@ $$
 B^2=N-Q_t^2=N\Bigl(1-\bigl(\operatorname{Sc}\tilde U\bigr)^2\Bigr),
 $$
 
-so $B^2\neq0$ is equivalent to $\operatorname{Sc}\tilde U\notin\{1,-1\}$. $\square$
+so $B^2\neq0$ is equivalent to $\operatorname{Sc}\tilde U\notin\{1,-1\}$.
 
 The last description is the one that separates this article from its companion: the two sectors are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of units.
 
@@ -404,7 +404,7 @@ $$
 =Q_te_t+\vec Q.
 $$
 
-$\square$
+
 
 The two signs of $B$ exchange $\vec\Xi$ with $-\vec\Xi$, $\tilde\Pi_+$ with $\tilde\Pi_-$, and $\lambda_+$ with $\lambda_-$; the unordered pair is unchanged. The element is semisimple, its minimal polynomial is $X^2-2Q_tX+N$, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$.
 
@@ -468,7 +468,7 @@ $$
 \overline{\vec Q}\,\vec Q=-\vec Q\cdot\overline{\vec Q}-\vec Q\times\overline{\vec Q},
 $$
 
-so the commutator is $-2\vec Q\times\overline{\vec Q}$. $\square$
+so the commutator is $-2\vec Q\times\overline{\vec Q}$.
 
 **Theorem (the normal dichotomy).** For $\tilde Q\in\Sigma_{11}$ with word as above, the following are equivalent.
 
@@ -512,7 +512,7 @@ $$
 
 which gives 1. If 3 holds, both factors are functions of $\tilde U$, hence diagonal in its eigenbasis, so their axes are the two eigenlines, which are $\pm i\vec\Xi$; this gives 4. If 4 holds, the two exponents commute, so the product is the exponential of their sum, which gives 5. If 5 holds, $\tilde Q$ is a scalar multiple of the exponential of a complex multiple of a real pure vector, and such an exponential is normal; this gives 1.
 
-For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\psi}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\psi/2}e^{i\theta/2}$ and $e^{\psi/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\psi/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments. $\square$
+For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\psi}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\psi/2}e^{i\theta/2}$ and $e^{\psi/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\psi/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments.
 
 The display is the **amalgamation** of the four factors into one exponential. The complex angle is $\frac{\theta+i\psi}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.
 
@@ -532,7 +532,7 @@ $$
 
 and the axes are not the eigenlines. The eigenvalues $\mu_\pm$ still determine the unordered pair $\{\mu_+,\mu_-\}$, but they do not determine $\psi$, $\theta$, $\vec u_{\mathrm b}$ or $\vec u_{\mathrm r}$.
 
-*Proof.* The factors commute with $\tilde Q$ exactly when the element is normal, by the theorem. If they do not commute, they are not diagonal in the eigenbasis, so their axes cannot be the eigenlines. The eigenvalues of $\tilde U$ are functions of $U_t$ alone, by $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$; the word parameters also depend on the relative angle of the axes, through $\operatorname{Sc}\tilde U=c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. There are different triples $(\psi,\theta,c)$ with the same $U_t$, hence the same spectrum, and with different words. $\square$
+*Proof.* The factors commute with $\tilde Q$ exactly when the element is normal, by the theorem. If they do not commute, they are not diagonal in the eigenbasis, so their axes cannot be the eigenlines. The eigenvalues of $\tilde U$ are functions of $U_t$ alone, by $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$; the word parameters also depend on the relative angle of the axes, through $\operatorname{Sc}\tilde U=c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. There are different triples $(\psi,\theta,c)$ with the same $U_t$, hence the same spectrum, and with different words.
 
 The last sentence is the precise statement of the gap. In the normal case $c=\pm1$, and the pair $(\psi,\theta)$ is recovered from the spectrum. In the non-normal case $c$ is a third unknown, and the spectrum is one complex equation for three real unknowns.
 
@@ -598,7 +598,7 @@ P=\{\text{positive Hermitian of determinant }1\},
 K=SU(2),
 $$
 
-gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$
+gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
 
 The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the companion article can repeat the same theorem verbatim.
 
@@ -838,7 +838,7 @@ diverge, and the spectral decomposition has no limit. The eigenvalues $\lambda_\
 
 **Proposition (the word survives the spectral wall, the eigenbasis does not).** Let $\tilde Q_k\in\Sigma_{11}$ converge to $\tilde Q_0\in\Sigma_{10}$ with $N_0\neq0$ and $\vec Q_0\neq0$, so that the limit lies in the Jordan part. Then $\tilde U_k\to\tilde U_0$, $\tilde U_{\mathrm b,k}\to\tilde U_{\mathrm b,0}$ and $\tilde u_{\mathrm r,k}\to\tilde u_{\mathrm r,0}$, so the word converges to the word of $\tilde Q_0$. The root $\vec\Xi_k$ diverges in norm, and no spectral idempotent of $\tilde Q_k$ converges to a nonzero idempotent.
 
-*Proof.* The modulus is continuous in $N$ away from zero, and the Cartan factors are continuous functions of $\tilde U$; this gives the convergence of the word. The root satisfies $|\vec\Xi_k|=|\vec Q_k|/|B_k|\to\infty$ because $\vec Q_k\to\vec Q_0\neq0$ and $B_k\to0$. An idempotent of the form $(e_t\pm\vec\Xi_k)/2$ is unbounded, so it has no finite limit. $\square$
+*Proof.* The modulus is continuous in $N$ away from zero, and the Cartan factors are continuous functions of $\tilde U$; this gives the convergence of the word. The root satisfies $|\vec\Xi_k|=|\vec Q_k|/|B_k|\to\infty$ because $\vec Q_k\to\vec Q_0\neq0$ and $B_k\to0$. An idempotent of the form $(e_t\pm\vec\Xi_k)/2$ is unbounded, so it has no finite limit.
 
 At the scalar line the limit is different. If $\tilde Q_0=Q_0e_t$ is a nonzero scalar, then $\vec Q_0=0$, the root is $0/0$, and its limit depends on the path: the family $Q_k=1+\epsilon_k\vec e_x$ has $\vec\Xi_k=-i\vec e_x$, so the idempotents converge to nonzero idempotents of the ambient algebra even though the limit is scalar. The eigenvalues coalesce, but the eigenbasis need not diverge. The proposition is therefore stated for the Jordan part, which is the part of the wall that the sector meets transversally.
 

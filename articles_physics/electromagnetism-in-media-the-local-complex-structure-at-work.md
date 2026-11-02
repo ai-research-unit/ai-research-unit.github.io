@@ -855,6 +855,22 @@ The third case is realized by the non-commutative vacuum of *Maxwell's Theory on
 
 **An energy density exists only if the constitutive map is integrable.** For a non-linear medium the combination $\vec E\cdot\delta\vec D+\vec H\cdot\delta\vec B$ must be an exact one-form, and when it is, the energy density is fixed by it; the deformed vacuum is such a case, and the energy density it gives is quoted in that article. A linear medium satisfies the condition trivially, which is why this article has never had to state it, and the Brillouin energy of the dispersive case is the same requirement with the frequency carried inside the constitutive map. A non-linear medium whose constitutive map is not integrable would have **no** energy density, which is a real restriction on which non-linear media are physical and not a technicality.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading — the difference of the two central idempotents of the complexified algebra, so its square is $e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.
@@ -983,19 +999,3 @@ The equation that the reduction produces has a solution theory of its own, and i
 - L. Bers, *Theory of Pseudo-Analytic Functions* (New York University, 1952), the classical source of the $(F,G)$-pseudoanalytic functions and of the Vekua-type system with variable coefficients that the section *Arbitrary Inhomogeneous Media* identifies as the governing equation of Maxwell's system in an arbitrary medium, and the theory in which the one-dimensional series solution above is derived. The corpus carries the first layer of that theory — the generating quartet, the condition on the coefficients and the inverse of the reduction, in the section *The Generating Quartet, the Pseudoanalytic Equation, and the Inverse of the Reduction* — while the theory's own apparatus, its integral representations, its similarity principle and its Liouville-type theorems, is what the corpus does not yet develop; this is its primary reference.
 - K. V. Khmelnytskaya and V. V. Kravchenko, "Biquaternions for analytic and numerical solution of equations of electrodynamics", arXiv:0902.3490v1 [math-ph] (2009), for the survey of the programme that this article and *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* draw on: constant and variable coefficients, integral representations of solutions, the relations between the Maxwell, Schrödinger and conductivity operators, and a collocation numerical method built on the fundamental solutions. The survey is the "start here" pointer to the applied Kravchenko series; it is recorded here as the overview, it is the source through which the operator-relation theorems of $[29]$ and the generating-quartet material of *The Generating Quartet, the Pseudoanalytic Equation, and the Inverse of the Reduction* enter this article, and it is cited for the numerical method in the chiral article — the theorems themselves being cited to their primary papers.
 - C. Doran and A. Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of the field strength and its Lorentz transformations.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading — the difference of the two central idempotents of the complexified algebra, so its square is $e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

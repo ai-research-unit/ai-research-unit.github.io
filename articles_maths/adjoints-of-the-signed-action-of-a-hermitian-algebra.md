@@ -62,10 +62,10 @@ so the adjoint of a signed action is the sign times the adjoint of the ordinary 
 
 **Proof.** The theorem and $\Lambda^{\alpha}_x = \varepsilon_xL_x$ with $L_x^{*} = L_{x^{\dagger}}$.
 
-**Theorem (the graded commutator under adjunction).** For graded operators $S,T$ the adjoint reverses the graded commutator with the Koszul sign, $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$; in particular, for homogeneous $x,z$,
+**Theorem (the graded commutator under adjunction).** For graded operators $S,T$ the adjoint reverses the graded commutator with the Koszul sign, $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$; in particular, for homogeneous $x,z$,
 
 $$
-\boxed{\;\bigl[\Lambda^{\alpha}_x,\ \mathrm{P}^{\alpha}_z\bigr\}^{*} = -(-1)^{|x||z|}\,\bigl[\Lambda^{\alpha}_{x^{\dagger}},\ \mathrm{P}^{\alpha}_{z^{\dagger}}\bigr\}\;} ,
+\boxed{\;\bigl[\Lambda^{\alpha}_x,\ \mathrm{P}^{\alpha}_z\bigr]^{*} = -(-1)^{|x||z|}\,\bigl[\Lambda^{\alpha}_{x^{\dagger}},\ \mathrm{P}^{\alpha}_{z^{\dagger}}\bigr]\;} ,
 $$
 
 so the graded commutator of the two signed actions is adjoint to the graded commutator of the two signed actions of the involution.
@@ -168,7 +168,7 @@ $$
 \bigl(\Lambda^{\alpha}_x\bigr)^{*} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad \bigl(\mathrm{P}^{\alpha}_x\bigr)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}} ,
 $$
 
-the sign being preserved because the involution does not change the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$; so the adjoint of a signed action is the same sign times the adjoint of the ordinary action, and the graded commutator satisfies the Koszul rule $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$. The **Tomita operator** conjugates each signed action into the signed action of the involution on the other side, $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$ and $S\mathrm{P}^{\alpha}_xS = \Lambda^{\alpha}_{x^{\dagger}}$, whence $(\Lambda^{\alpha}_x)^{*} = S\mathrm{P}^{\alpha}_xS$; the **modular conjugation** does the same, $\jmath\Lambda^{\alpha}_x\jmath = \mathrm{P}^{\alpha}_{x^{\dagger}}$; and the **modular flow** acts by $\Delta^{it}\Lambda^{\alpha}_x\Delta^{-it} = \Lambda^{\alpha}_{\sigma_t(x)}$ with the parity and the adjoint operation preserved. The **criteria** are unsigned: self-adjoint exactly when $x = x^{\dagger}$, skew-adjoint exactly when $x^{\dagger} = -x$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $x^{\dagger}x = xx^{\dagger} = 1$, and positive for self-adjoint $x$ in the positive cone; the sign is visible in the value at the unit, $\Lambda^{\alpha}_x(1) = \alpha(x)$, and nowhere in the adjoint operation. The sign and the signed one-sided operators are *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, the graded adjoint rule is *Adjoints of the Graded Operators of a Hermitian Algebra*, the Two-sided adjoint is *The Signed Adjoint of the Sandwich on a Hermitian Algebra*, and the modular objects are *The Modular Operator and Tomita-Takesaki Theory*.
+the sign being preserved because the involution does not change the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$; so the adjoint of a signed action is the same sign times the adjoint of the ordinary action, and the graded commutator satisfies the Koszul rule $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$. The **Tomita operator** conjugates each signed action into the signed action of the involution on the other side, $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$ and $S\mathrm{P}^{\alpha}_xS = \Lambda^{\alpha}_{x^{\dagger}}$, whence $(\Lambda^{\alpha}_x)^{*} = S\mathrm{P}^{\alpha}_xS$; the **modular conjugation** does the same, $\jmath\Lambda^{\alpha}_x\jmath = \mathrm{P}^{\alpha}_{x^{\dagger}}$; and the **modular flow** acts by $\Delta^{it}\Lambda^{\alpha}_x\Delta^{-it} = \Lambda^{\alpha}_{\sigma_t(x)}$ with the parity and the adjoint operation preserved. The **criteria** are unsigned: self-adjoint exactly when $x = x^{\dagger}$, skew-adjoint exactly when $x^{\dagger} = -x$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $x^{\dagger}x = xx^{\dagger} = 1$, and positive for self-adjoint $x$ in the positive cone; the sign is visible in the value at the unit, $\Lambda^{\alpha}_x(1) = \alpha(x)$, and nowhere in the adjoint operation. The sign and the signed one-sided operators are *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, the graded adjoint rule is *Adjoints of the Graded Operators of a Hermitian Algebra*, the Two-sided adjoint is *The Signed Adjoint of the Sandwich on a Hermitian Algebra*, and the modular objects are *The Modular Operator and Tomita-Takesaki Theory*.
 
 ## Summary of Notation
 
@@ -178,7 +178,7 @@ the sign being preserved because the involution does not change the parity, $\va
 | $\Lambda^{\alpha}_x = \varepsilon_xL_x$, $\mathrm{P}^{\alpha}_x = \varepsilon_xR_x$ | Value on a homogeneous parameter |
 | $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$, $(\mathrm{P}^{\alpha}_x)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}}$ | The adjoints |
 | $\Lambda^{\alpha}_{xz} = \Lambda^{\alpha}_x\Lambda^{\alpha}_z$, $\mathrm{P}^{\alpha}_{xz} = \mathrm{P}^{\alpha}_z\mathrm{P}^{\alpha}_x$ | Composition laws |
-| $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$ | Koszul rule, sign preserved |
+| $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$ | Koszul rule, sign preserved |
 | $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$, $S\mathrm{P}^{\alpha}_xS = \Lambda^{\alpha}_{x^{\dagger}}$ | Conjugation by the Tomita operator |
 | $\jmath\Lambda^{\alpha}_x\jmath = \mathrm{P}^{\alpha}_{x^{\dagger}}$ | Conjugation by the modular conjugation |
 | $\Delta^{it}\Lambda^{\alpha}_x\Delta^{-it} = \Lambda^{\alpha}_{\sigma_t(x)}$ | The modular flow |

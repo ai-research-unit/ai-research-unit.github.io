@@ -148,6 +148,24 @@ Two constructions in the series adjoin the missing odd sector, and in the Hermit
 - **Nothing here is a measure or an integral.** The Grassmann and Berezin constructions are cited from their articles and are not used; the article is algebra, grading and adjointness.
 - **No supersymmetry algebra is claimed to be contained in $\mathbb{B}$.** The super-Poincaré algebra, if it is to be written, is written on an extension; the corpus's supersymmetry article states which superalgebra its construction realizes, and this article adds the general boundary and the Hermitian structure, not a second claim.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+$\gamma_\mu=v_\mu$: the four vector-indexed gammas are the vector generators, and the odd unit $u$ of the body is a non-isotropic vector among them, with $\mathrm{Cl}^1=\mathbb{B}u$ and $\mathbb{B}=\mathrm{Cl}^0$.
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 A **superalgebra** is a $\mathbb{Z}/2$-graded algebra with the grading as part of its structure, and on it the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ is the commutator for even or mixed pairs and the anticommutator for two odd elements. The biquaternion algebra is the **even part** of the graded Clifford algebra, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, so it is not by itself a superalgebra, and it must not be conflated with the chirality grading of the supersymmetry article or with the sector splitting by the dagger.
@@ -189,21 +207,3 @@ A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\math
 - Felix A. Berezin, *Introduction to Superanalysis* (Reidel, 1987), for the anticommuting coefficients and the algebra of the odd extension.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of a Clifford algebra, the adjoint of an anti-automorphism and the $*$-unitary groups they define.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the graded Clifford algebra, its even part and the parity of its elements.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-$\gamma_\mu=v_\mu$: the four vector-indexed gammas are the vector generators, and the odd unit $u$ of the body is a non-isotropic vector among them, with $\mathrm{Cl}^1=\mathbb{B}u$ and $\mathbb{B}=\mathrm{Cl}^0$.
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

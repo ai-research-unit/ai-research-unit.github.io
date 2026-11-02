@@ -103,7 +103,7 @@ $$
 $$
 The framework's real structure is therefore an antilinear **involution** with $\epsilon=+1$. This was verified on explicit matrices and is quoted in the established list below.
 
-**The standard four-dimensional sign.** For comparison, four-dimensional Euclidean spin geometry's charge conjugation $C$ satisfies $CE_\mu C^{-1}=\pm(E_\mu)^T$ and $C^2=-1$ in the standard normalisation, so the associated antilinear $J$ has $\epsilon=-1$. The verification uses the Euclidean frame, which is the reference frame of the appendix with the three spatial generators multiplied by $i$ so that all four square to $+1$ and with the timelike generator numbered fourth:
+**The standard four-dimensional sign.** For comparison, four-dimensional Euclidean spin geometry's charge conjugation $C$ satisfies $CE_\mu C^{-1}=\pm(E_\mu)^T$ and $C^2=-1$ in the standard normalisation, so the associated antilinear $J$ has $\epsilon=-1$. The verification uses the Euclidean frame, which is the reference frame of the Gamma section with the three spatial generators multiplied by $i$ so that all four square to $+1$ and with the timelike generator numbered fourth:
 $$
 E_4=iL_{e_t}R_{\vec e_x},\qquad E_k=-L_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),
 $$
@@ -223,6 +223,22 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 - Whether the finite geometry selected by the biquaternion algebra is physically interesting — and whether the series' gauge-group content can be recovered as inner fluctuations — is a gauge-field-category question and is not addressed.
 - The exact sense in which the module's quaternionic structure supplies the $\epsilon=-1$ real structure of the triple is stated qualitatively (via $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) and is not constructed explicitly.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The spectral triple of the biquaternion algebra is the candidate $(\mathbb{B}_{\mathbb{R}},\mathcal{H},\mathcal{D})$, with $\mathcal{H}$ the completion of the Dirac module $\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$ under the trace pairing $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ and $\mathcal{D}=\tilde\nabla+D_F$ the framework's Dirac operator with the off-diagonal mass $D_F=\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$. The algebra's real structure is $\flat=-{}^{*}$, and
@@ -269,19 +285,3 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 - N. Berline, E. Getzler, and M. Vergne, *Heat Kernels and Dirac Operators* (Springer, 1992), for the Dirac operator's spectrum and the index-theoretic structure.
 - D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* **388** (2003) 279–360, for the Seeley–DeWitt expansion shared with the determinant and anomaly articles.
 - Companion articles: [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the heat-kernel coefficients and the Seeley–DeWitt data; [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html), for the same data in its conformal interpretation; [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), for the spinor module and the Dirac operator; [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the Hilbert-space structure the triple requires; [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the real structure $\flat$, the quaternionic isomorphism $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, and the three metric levels.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

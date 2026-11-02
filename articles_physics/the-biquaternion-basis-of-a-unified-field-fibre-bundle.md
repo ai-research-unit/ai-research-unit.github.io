@@ -197,6 +197,22 @@ The value of the paper to the corpus is a single fact, and the article states it
 
 Two caveats belong with the record. The first is the word *QFT*: in the source's conclusion it denotes the author's own unified construction, not quantum field theory as the expression is normally used, and the corpus disambiguates before quoting. The second is the extraction itself: the automated summary of the paper carries fragments such as $\sigma_0$, $\sigma_2$, $-\sigma$ and $i$ whose layout is lost, and the transformed generators of Eqs. (35)–(37) come through as fragments of Kronecker products. The corpus quotes those three only after the recomputation has fixed them — the two scalars agree with the recomputed $i\,\mathrm{diag}(\sigma_3,\sigma_3)$ and $-i\,\mathrm{diag}(\sigma_1,\sigma_1)$ up to the order of the factors — and quotes no other matrix entry of the paper.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The source is a mainstream high-energy paper whose central algebraic claim is that the basis of the principal fibre bundle of a unified field theory carries a biquaternionic structure rather than a complex one. The article translates the algebra it displays into the corpus's dictionary and checks what can be checked, and the translation is exact in two places.
@@ -224,7 +240,7 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 | $\sigma_\alpha, \sigma_\beta, \sigma_\gamma$ | The source's $\mathrm{SL}(2,\mathbb{R})$ triple, the split real form of the Pauli triple |
 | $(2{+}2)$ signature | The source's second signature: $\sigma_\beta^2 = -1$ flips one sign in the coefficient sum, $a_0^2+a_1^2-a_2^2+a_3^2 = 1$, i.e. $p_0^2-p_1^2+p_2^2-p_3^2 = m^2$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, $M_2(\mathbb{H})\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$ | The corpus's interpretation of the source's "$\mathbb{H}_2$, whose complexification is the Dirac algebra" |
-| $L_a$, $R_b$, $L_{a}R_{b}$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the two-sided cell $L_{a}R_{b}\psi=a\psi b$; the cells of the appendix |
+| $L_a$, $R_b$, $L_{a}R_{b}$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the two-sided cell $L_{a}R_{b}\psi=a\psi b$; the cells of the Gamma section |
 
 ## Further Reading
 
@@ -238,19 +254,3 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the corpus's own principal bundle and the defining module as an associated bundle.
 - [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html) and the article on Clifford parity, for the corpus's $\mathbb{Z}/2$ grading, the fermionic half of the source's Clifford interlude.
 - [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html) and [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html), for the corpus's standing on the algebra as a construction and on what could count as evidence that it is more than a choice.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

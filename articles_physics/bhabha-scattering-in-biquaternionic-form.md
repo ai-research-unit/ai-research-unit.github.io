@@ -108,38 +108,7 @@ The framework supplies the two vertex currents, the photon propagator, the exter
 
 6. **Empirical contact.** The article carries the standard cross section and no framework-specific prediction; the standing disclaimer applies.
 
-## Summary
-
-Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[w^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale; it is dominated by $1/t^2$ at small angles and is used as the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, as the context file's numerical check confirms.
-
-In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The two structures the framework owns are the **relative sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ on the doubled module that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation, the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $e^+e^-\to e^+e^-$ | Bhabha scattering |
-| $k,k_2$ | Incoming, outgoing positron four-momenta |
-| $p,p_2$ | Incoming, outgoing electron four-momenta |
-| $s,t,w$ | Mandelstam variables; $s$ annihilation, $t$ transfer, $w$ crossed |
-| $t$-channel | Scattering diagram, coefficient $-e^2$ |
-| $s$-channel | Annihilation diagram, coefficient $+e^2$ |
-| $\theta$ | Scattering angle |
-| $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
-| $\alpha$ | Fine-structure constant |
-| $\tilde J\in\mathbb M_-$ | Framework's material-sector current |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
-| $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-
-## Further Reading
-
-- H. J. Bhabha, "The scattering of positrons by electrons with exchange on Dirac's theory of the positron," *Proceedings of the Royal Society A* **154** (1936) 195–206, for the original derivation.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the spinor algebra of electron–positron scattering.
-- M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the cross section, crossing symmetry and the annihilation channel.
-- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the relative sign of the exchange and annihilation diagrams.
-- The companion articles of this series: [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html), [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), and [Real Spinors and Reality Conditions with Inner Conjugation](../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html).
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -176,3 +145,34 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[w^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale; it is dominated by $1/t^2$ at small angles and is used as the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, as the context file's numerical check confirms.
+
+In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The two structures the framework owns are the **relative sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ on the doubled module that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation, the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $e^+e^-\to e^+e^-$ | Bhabha scattering |
+| $k,k_2$ | Incoming, outgoing positron four-momenta |
+| $p,p_2$ | Incoming, outgoing electron four-momenta |
+| $s,t,w$ | Mandelstam variables; $s$ annihilation, $t$ transfer, $w$ crossed |
+| $t$-channel | Scattering diagram, coefficient $-e^2$ |
+| $s$-channel | Annihilation diagram, coefficient $+e^2$ |
+| $\theta$ | Scattering angle |
+| $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
+| $\alpha$ | Fine-structure constant |
+| $\tilde J\in\mathbb M_-$ | Framework's material-sector current |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
+| $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+
+## Further Reading
+
+- H. J. Bhabha, "The scattering of positrons by electrons with exchange on Dirac's theory of the positron," *Proceedings of the Royal Society A* **154** (1936) 195–206, for the original derivation.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the spinor algebra of electron–positron scattering.
+- M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the cross section, crossing symmetry and the annihilation channel.
+- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the relative sign of the exchange and annihilation diagrams.
+- The companion articles of this series: [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html), [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), and [Real Spinors and Reality Conditions with Inner Conjugation](../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html).

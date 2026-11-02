@@ -186,6 +186,20 @@ of complex dimension $32$ and with a two-dimensional centre.
 
 The theorem shows that the two-sided structure of the algebra has two rungs. On the biquaternion algebra alone the left and the right actions generate $\mathbb{B}^{\mathrm{e}}\cong\mathrm{Cl}(4)_{\mathbb{C}}$, of dimension $16$; enlarging the left action from $\mathbb{B}$ to $\mathrm{Cl}(3)$ and keeping the right action of $\mathbb{B}$ raises the generated algebra to $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)_{\mathbb{C}}$, of dimension $32$. The right action of $\mathbb{B}$ alone is four-dimensional and is the Clifford algebra $\mathrm{Cl}(2)$; it is the pair of actions together that produces the next complex Clifford algebra. Both rungs were recorded by the source of the companion physics article, which writes the first as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathbb{C}\otimes\mathbb{H}$ gives $\mathrm{Cl}(4)$" and the second as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathrm{Cl}(3)$ gives $\mathrm{Cl}(5)$"; the source's reading of the second — that the enlargement supplies the parity-reversal operator that $\mathrm{Cl}(3)$ does not contain, and that $\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ is the second of the two complex octonionic chain algebras of the division-algebra approach, one carrying $\mathrm{SO}(4)$ and one carrying $\mathrm{SU}(3)\times\mathrm{U}(1)$ — belongs to the companion physics article and is not an algebraic statement of this one.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_\mu=iE_\mu=i\,j\vec e_\mu,\qquad
+\gamma_\mu\gamma_\nu=-E_\mu E_\nu,\qquad
+\gamma_1\gamma_2\gamma_3=ij .
+$$
+
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one cell of the two-sided family $L_aR_b$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
+
 ## Summary
 
 The complex split biquaternions are the complexification of the split biquaternion algebra,
@@ -232,18 +246,3 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 - Companion article [Split-Biquaternion Ideals and Peirce Decomposition](split-biquaternion-ideals-and-peirce-decomposition.html), for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
 - Companion article [The Biquaternion Algebra](the-biquaternion-algebra.html) and [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
 - Companion article [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
-
-$$
-\gamma_\mu=iE_\mu=i\,j\vec e_\mu,\qquad
-\gamma_\mu\gamma_\nu=-E_\mu E_\nu,\qquad
-\gamma_1\gamma_2\gamma_3=ij .
-$$
-
-The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one cell of the two-sided family $L_aR_b$.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec e_\mu$ span $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
-

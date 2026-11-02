@@ -157,6 +157,22 @@ The differential-geometric self-adjointness is the analytic shadow of the algebr
 
 **Example (the twisted operator and the vanishing).** For a line bundle $L$ of negative degree over a Riemann surface of genus $g$ the twisted operator has vanishing kernel, and its index is by Riemann–Roch the Euler characteristic $\deg L+1-g$; the adjoint's kernel is therefore of dimension $g-1-\deg L$. The example shows the chiral asymmetry of the two kernels and the role of the adjoint in computing the index.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of a spin manifold, classically the **Dirac operator**, is **formally self-adjoint**, $D^{*}=D$, because the Clifford multiplication is skew-adjoint for the spinor metric and the spin connection is compatible with it, and the divergence vanishes on a closed manifold; it is self-adjoint as an unbounded operator with discrete real spectrum, orthogonal eigenspinors and $D^{2}\geq0$. In even dimensions the chirality makes the operator odd, splitting it into the **mutually adjoint** halves $(D^{+})^{*}=D^{-}$, with $\operatorname{coker}D^{+}=\ker D^{-}$ and index $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\int_M\hat A(TM)$; the spectrum is symmetric about the origin and the index is carried by the chiral zero modes alone. The **twisted operator** $D_{E}$ is self-adjoint with the same identities, the index $\int_M\hat A\operatorname{ch}(E)$ and the Weitzenböck square $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{E})$; the **Lichnerowicz formula** $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ is self-adjoint and gives the Bochner identity and the vanishing theorem for positive scalar curvature. The differential-geometric adjoint is the curved form of the algebraic **Hermitian structure** of *Dirac Operators with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*: the spinor adjoint is the metric identification giving the $L^{2}$ inner product, the Dirac adjoint is the invariant pairing $\bar\psi\psi$ with the inserted vector, and the operator is self-adjoint for the module form in both cases.
@@ -184,19 +200,3 @@ The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of 
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators* (Springer, 1992), for the self-adjointness, the heat kernel and the local index theorem.
 - André Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963), 7–9, for the formula $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ and the vanishing of the harmonic spinors.
 - John Roe, *Elliptic Operators, Topology and Asymptotic Methods*, Pitman Research Notes in Mathematics 179 (Longman, 1988), for the differential-geometric adjoints, the domains and the elliptic theory.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

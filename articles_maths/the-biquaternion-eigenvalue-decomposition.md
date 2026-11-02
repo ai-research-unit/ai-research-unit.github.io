@@ -267,6 +267,18 @@ The Hermitian condition has a grade reading. The biquaternion star fixes the rea
 
 **Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec\Xi$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
+
+$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$
+
+The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu$ for $\mu=1,2,3$ and $\omega=\gamma_1\gamma_2\gamma_3$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.
+
 ## Summary
 
 The biquaternion algebra is the Clifford algebra $\mathrm{Cl}_{3,0}$: the quaternion units are the bivectors, the central imaginary unit is the volume element $\omega$, and the grade decomposition has dimensions $1,3,3,1$. A biquaternion $\tilde Q=Q_{t}+\vec Q$ has the eigenvalue decomposition
@@ -309,15 +321,3 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
 - The biquaternion articles of this corpus: *The Biquaternion Algebra*, *The Spectrum*, *Idempotents*, and *The Peirce Decomposition of the Biquaternion Algebra*.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the matrix model.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
-
-$$
-\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
-$$
-
-The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu$ for $\mu=1,2,3$ and $\omega=\gamma_1\gamma_2\gamma_3$.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

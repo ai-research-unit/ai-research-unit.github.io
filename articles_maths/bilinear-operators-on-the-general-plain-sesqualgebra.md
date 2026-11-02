@@ -116,6 +116,18 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{Q}_
 
 **A null spinor.** A nonzero spinor $s$ with $\langle s,s\rangle_{\natural}=0$ — a zero divisor of the algebra — has a **nonzero** scalar covariant, $\mathfrak{b}_0(s,s)=s^{\dagger}s>0$. The covariants of this article are built from the positive definite module form and not from the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, which is the distinction between the two forms of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; a spinor is null for the module form only when it vanishes, and the null cone of the algebra lives in the vector part of $\mathbb{M}_+$ and not on the spinor.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
+
+$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$
+
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.
+
 ## Summary
 
 A **form** on the biquaternion spinor module is given by a $2\times2$ matrix, $\mathfrak{b}_M(s,t)=s^{\dagger}Mt$, and is Hermitian exactly when the matrix is; the **bilinear operator** $s\mapsto \mathfrak{b}(s,\cdot)$ has the adjoint form as its adjoint, so the Hermitian forms are the self-adjoint operators, and the **Clifford-equivariant** Hermitian forms are the multiples of the module form by the commutant theorem. The action of the algebra on the spinor module is an **isomorphism** $L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(S)$ — the Fierz identity, exact because the biquaternion algebra is a full matrix algebra — so the four blades are a basis of the endomorphisms, the four **bilinear covariants** $\mathfrak{b}_{\mu}=\langle e_{\mu}t,s\rangle_{*}$ are a basis of the space of forms, and every form is a combination with the **Fierz coefficients** $c_{\mu}=\frac12\mathrm{Tr}(e_{\mu}^{\dagger}M)$, computed by the orthogonality $\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$ of the blades. The dagger is the reversion of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ at the vectors $i\vec e_k$, so the classification by grade gives $e_t$ Hermitian and $\vec e_x,\vec e_y,\vec e_z$ skew-Hermitian: **one Hermitian covariant, the module form, and three skew-Hermitian covariant ones**, a rule stable across the two Clifford structures the algebra carries. The Hermitian forms are the real four-dimensional space $\mathbb{R}\{\mathfrak{b}_0,ib_1,ib_2,ib_3\}\cong\mathbb{M}_+=H_2(\mathbb{C})$, with the positivity of $\mathbb{M}_+$ as its cone and the scalar-plus-triplet splitting as its centre-vector splitting. The **$*$-unitary slice** $\mathrm{U}(2)$ permutes the covariants by $\Gamma\mapsto \tilde{Q}_2^{*}\Gamma \tilde Q_2$, fixes the scalar covariant, and rotates the three skew covariants by the adjoint representation of $SO(3)$, so the invariants are the multiples of the module form; off the slice the permutation is the two-sided operator and its defect.
@@ -143,15 +155,3 @@ A **form** on the biquaternion spinor module is given by a $2\times2$ matrix, $\
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Fierz identity, the bilinear covariants and the classification by grade.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a full matrix algebra on its simple module.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the spinor module, the invariant forms and the role of the Clifford action on the endomorphisms.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
-
-$$
-\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
-$$
-
-The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

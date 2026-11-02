@@ -494,6 +494,41 @@ $$
 
 **The full computation.** *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.
 
+## The Gamma Formulation
+
+The gamma frame is one choice inside the method's basis; the body writes the cells.
+
+**The five matrices.** In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
+$$
+\gamma_0=iL_{e_t}R_{e_x},\qquad
+\gamma_1=iL_{e_x}R_{e_y},\qquad
+\gamma_2=iL_{e_y}R_{e_y},\qquad
+\gamma_3=iL_{e_z}R_{e_y},\qquad
+\gamma_5=-iL_{e_t}R_{e_z}.
+$$
+
+**The Clifford relations.** With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
+\qquad
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
+\qquad
+\{\gamma_5,\gamma_\mu\}=0.
+$$
+
+**The chirality projectors.**
+$$
+P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
+=\tfrac12\bigl(L_{e_t}R_{e_t}\mp iL_{e_t}R_{e_z}\bigr).
+$$
+Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two cells, not products themselves.
+
+**The reading.** The gammas are five of the sixteen cells up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.
+
+**The frame is not canonical.** The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{L_{e_\mu}R_{e_\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.
+
+Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{e_\rho}R_{e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four cells with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
@@ -533,39 +568,3 @@ $$
 - [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich on the sixteen-dimensional algebra.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Frame*.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
-
-
-## Appendix — The Gamma Formulation
-
-The gamma frame is one choice inside the method's basis; the body writes the cells.
-
-**The five matrices.** In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
-$$
-\gamma_0=iL_{e_t}R_{e_x},\qquad
-\gamma_1=iL_{e_x}R_{e_y},\qquad
-\gamma_2=iL_{e_y}R_{e_y},\qquad
-\gamma_3=iL_{e_z}R_{e_y},\qquad
-\gamma_5=-iL_{e_t}R_{e_z}.
-$$
-
-**The Clifford relations.** With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
-$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
-\qquad
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
-\qquad
-\{\gamma_5,\gamma_\mu\}=0.
-$$
-
-**The chirality projectors.**
-$$
-P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
-=\tfrac12\bigl(L_{e_t}R_{e_t}\mp iL_{e_t}R_{e_z}\bigr).
-$$
-Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two cells, not products themselves.
-
-**The reading.** The gammas are five of the sixteen cells up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.
-
-**The frame is not canonical.** The five displayed matrices are one choice among the gamma sets of the companion article. The basis $\{L_{e_\mu}R_{e_\nu}\}$ is canonical once the coefficient basis is fixed; the gamma set inside it is not.
-
-Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -122,6 +122,18 @@ The biquaternion algebra is the even part of a Clifford algebra of Lorentzian si
 
 Four limits must be stated. First, the type table of this article is the **commuting** normalisation, $Jc(v)=c(v)J$; the anticommuting normalisation of the physics corpus is the other one, and the two differ in the classes $d\equiv2,3,6,7$ and agree in $d\equiv0,1,4,5$. Statements about the real spinors of $(1,3)$ belong to the second normalisation and are cited, not re-derived. Second, the classification of the real forms and the sign table are taken from the general theory and the eightfold table (*Bott Periodicity and the Classification*); the article verifies the matrix models of the three three-dimensional forms, not the classification itself. Third, the absence of a reality structure is a statement about the module of the algebra and not about the existence of a real structure on the ambient module, which is a question for the physics corpus; the ambient module of the previous section is the passage from the one to the other. Fourth, $\kappa$ is an automorphism of the matrix model and is not one of the four conjugations of $\mathbb{B}$; the conjugate module $\bar S$ is **inequivalent** to $S$ as a complex module — that inequivalence is precisely the complex type — and the two are isomorphic only as real representations, with coordinate conjugation as antilinear intertwiner. The general source states exactly this inequivalence, in its dimension-three section, and the article agrees with it.
 
+## The Gamma Formulation
+
+The gammas are the generators $\gamma_k=ie_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
+
+On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
+$$
+\gamma_k=L_{ie_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
+$$
+and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(ie_x)(ie_y)(ie_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the generators $ie_k$ span $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$ and the basis $e_k$ spans $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
+
 ## Summary
 
 The complex spinor module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ of the biquaternion algebra has **complex type**: there is no antilinear $J$ with $J^2=\pm1$ commuting with the Clifford action. The reason is peculiar to the algebra and is one line: the volume element of $\mathrm{Cl}_{3,0}$ is central with $\omega=(ie_x)(ie_y)(ie_z)=ie_t$ and $\omega^2=-e_t$, and acts on $S$ as the scalar $i$, so the complex structure of the module is itself a Clifford element, and an antilinear map commuting with the Clifford action is annihilated by its own antilinearity acting on $i$. What exists in place of a reality structure is the **conjugate module** $\bar S$, produced by entrywise conjugation $\kappa$ of the matrix model: $\bar S$ is **inequivalent** to $S$ as a complex module, which is the complex type, and isomorphic to it only as a real representation, with coordinate conjugation as the antilinear intertwiner; the antisymmetric form $\varepsilon=i\sigma_2=\mathsf{M}_2(-\vec e_y)$ does not intertwine the two modules but realises the coefficient conjugation $\bar{\cdot}$ on the module, $\varepsilon\,\overline{c}(v)\,\varepsilon^{-1}=c(\bar v)$. The conjugate pair appears as two distinct simple factors in the complexification $\mathbb{C}\mathrm{l}_3\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$. The three real forms of $\mathbb{C}\mathrm{l}_3$ have the same complex module and different types — $\mathrm{Cl}_{3,0}$ complex, $\mathrm{Cl}_{2,1}$ real, $\mathrm{Cl}_{0,3}$ quaternionic — and the same basis realises two of them: with the generators $ie_k$ the type is complex, with the generators $e_k$ the type is quaternionic, with $J(s)=\sigma_2\bar s$ and $J^2=-1$; the two readings differ by the central $i$, which is exactly the competing labelling of the algebra. In the ambient dimension the two normalisations of the reality structure differ by the volume-element twist, and it is the anticommuting normalisation that gives the real structure in signature $(1,3)$, in agreement with the physics corpus. Internally there is no real or chiral spinor: the internal module is ungraded, and its two conjugate halves appear only on complexification.
@@ -159,15 +171,3 @@ The complex spinor module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ of the biqu
 - Michael F. Atiyah, Raoul Bott and Arnold Shapiro, "Clifford modules," *Topology* **3** (1964), supplement 1, 3–38, for the period-eight classification of the reality types.
 - Paolo Budinich and Andrzej Trautman, *The Spinorial Chessboard* (Springer, 1988), for the real, complex and quaternionic structures in each dimension modulo eight.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the real forms of a complex Clifford algebra and the competing labellings of a signature.
-
-## Appendix — The Gamma Formulation
-
-The gammas are the generators $\gamma_k=ie_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
-
-On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
-$$
-\gamma_k=L_{ie_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
-$$
-and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(ie_x)(ie_y)(ie_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the generators $ie_k$ span $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$ and the basis $e_k$ spans $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.

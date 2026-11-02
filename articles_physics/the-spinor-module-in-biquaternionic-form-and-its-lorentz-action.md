@@ -502,6 +502,22 @@ A natural candidate is the module action defined here; its compatibility with th
 5. **Curved spacetime.** The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
 6. **The indefinite pairing and the framework's own interpretation.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external interpretation cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — is not settled here, and the two articles are consistent but not yet joined.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac{1}{2}(e_t+i\vec e_z)$, which is the minimal left ideal here; its elements are the spinors, and the algebra acts by left multiplication, and the action is one-sided.
@@ -565,19 +581,3 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the modules of $M_2(\mathbb{C})$, the highest-weight classification, and the Clebsch–Gordan rule.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for simple modules, Schur's lemma, and the structure of matrix algebras.
 - J. D. Simão, "Biquaternions, Majorana spinors and time-like spin-foams," arXiv:2401.10324 [gr-qc] (2024), for the indefinite pairing $[u|v]$, the $\varsigma$ triple, the Weyl- and Majorana-spinor models of $S^2$, $H^\pm$ and $H^{sl}$, the symplectic form $\omega$ and the $\mathfrak{su}(1,1)$ closure of the bilinears. External; cited for the pairing and the bilinears only.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

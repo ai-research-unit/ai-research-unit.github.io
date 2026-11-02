@@ -189,10 +189,10 @@ An element $\tilde H\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matr
 The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde\varrho)\mathsf M_2(\tilde H)\bigr)=2\langle\tilde\varrho,\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde H)\bigr)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
 $$
 
-for the state $\tilde\varrho=\tfrac12(e_t+i\vec r)$ of trace one.
+for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
 
 The boundary is that the word *observable* uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb M_+$: it carries $\mathbb M_+$ and $\mathbb M_-$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.
 
@@ -213,9 +213,9 @@ The boundary is that the naming of the three directions is a choice of basis, an
 A state is a Hermitian element of trace one whose matrix is positive semidefinite:
 
 $$
-\tilde\varrho=\tfrac12(e_t+i\vec r),
+\tilde{Ϛ}=\tfrac12(e_t+i\vec r),
 \qquad
-\rho=\mathsf M_2(\tilde\varrho)=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
+\rho=\mathsf M_2(\tilde{Ϛ})=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
 \qquad
 \lvert\vec r\rvert\le1 .
 $$
@@ -225,7 +225,7 @@ The trace-one condition is the normalisation, the positivity is $\lvert\vec r\rv
 The determinant of the state matrix is
 
 $$
-\det\mathsf M_2(\tilde\varrho)=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\det\mathsf M_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 $$
 
 the product of the two eigenvalues $\tfrac12(1\pm\lvert\vec r\rvert)$. On the ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.
@@ -235,9 +235,9 @@ the product of the two eigenvalues $\tfrac12(1\pm\lvert\vec r\rvert)$. On the ba
 Three quantities read off the same determinant:
 
 $$
-\operatorname{Tr}(\tilde\varrho^{2})=1-2\det\mathsf M_2(\tilde\varrho),
+\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det\mathsf M_2(\tilde{Ϛ}),
 \qquad
-S_L=1-\operatorname{Tr}(\tilde\varrho^{2})=2\det\mathsf M_2(\tilde\varrho).
+S_L=1-\operatorname{Tr}(\tilde{Ϛ}^{2})=2\det\mathsf M_2(\tilde{Ϛ}).
 $$
 
 The first is the purity; the second is the linear entropy. At the centre the determinant is $\tfrac14$, the purity $\tfrac12$ and the linear entropy $\tfrac12$. On the sphere the determinant vanishes, the purity is one and the entropy is zero.
@@ -267,7 +267,7 @@ $$
 The norm of an amplitude is real and non-negative. The state inherits the singular values and loses the phase: with $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{\sigma_1^{2}+\sigma_2^{2}}$, the state is $\tilde Q_{\mathrm n}^{2}$, its eigenvalues are $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$, and its determinant is
 
 $$
-\det\mathsf M_2(\tilde\varrho_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
+\det\mathsf M_2(\tilde{Ϛ}_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
 $$
 
 The mixedness is the spread of the singular values. The boundary is that the singular values are not the moduli of the eigenvalues for a non-normal element; only for a normal element do the two coincide.
@@ -324,7 +324,7 @@ A $2\times2$ matrix has two scalar invariants, its determinant and its trace, an
 
 | matrix | determinant | eigenvalue pair | reading |
 | --- | --- | --- | --- |
-| $\mathsf M_2(\tilde\varrho)$ | $\tfrac14(1-r^{2})$ | $\tfrac12(1\pm r)$ | mixedness; the purity is affine in the determinant |
+| $\mathsf M_2(\tilde{Ϛ})$ | $\tfrac14(1-r^{2})$ | $\tfrac12(1\pm r)$ | mixedness; the purity is affine in the determinant |
 | $\mathsf M_2(\tilde B_\eta)$ | $1$ | $e^{\pm\eta/2}$ | half the rapidity |
 | $\mathsf M_2(\tilde R_\theta)$ | $1$ | $e^{\pm i\theta/2}$ | half the angle |
 | $\varsigma\varsigma^{\dagger}$ | $0$ | $1,0$ | a pure state; the fibre is the phase |
@@ -379,9 +379,9 @@ The correspondence does not say that nature is complex, and it does not derive t
 | $\mathsf M_2(\tilde Q)$ | the element image; $\det=N$, $\operatorname{Tr}=2Q_t$ |
 | $\mathsf M_4^{L}(\tilde Q)$ | the left regular image; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
 | $\operatorname{H}_{\tilde Q}$ | the sandwich; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
-| $\tilde\varrho=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
-| $\det\mathsf M_2(\tilde\varrho)=\tfrac14(1-r^{2})$ | the mixedness |
-| $S_L=2\det\mathsf M_2(\tilde\varrho)$ | the linear entropy |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
+| $\det\mathsf M_2(\tilde{Ϛ})=\tfrac14(1-r^{2})$ | the mixedness |
+| $S_L=2\det\mathsf M_2(\tilde{Ϛ})$ | the linear entropy |
 | $\tilde B_\eta$ | the boost rotor of rapidity $\eta$ |
 | $\tilde R_\theta$ | the rotation rotor of angle $\theta$ |
 | $\varsigma$ | a unit spinor of $S\cong\mathbb C^2$ |

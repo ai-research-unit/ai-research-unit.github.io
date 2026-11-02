@@ -278,6 +278,18 @@ The table is stated for a field of characteristic not $2$ in which $-1$ is not a
 
 Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong\mathbb{C}$ when $F=\mathbb{R}$; $\mathrm{Cl}_{3,0}\cong\mathbb{C}\mathrm{l}_2\cong M_2(\mathbb{C})\cong\mathbb{B}$, the biquaternion algebra; $\mathrm{Cl}_{1,1}$ is the four-dimensional algebra called the split quaternions in the classical literature; and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ is the quaternion algebra. The entries with centre larger than $F$ are exactly those of odd rank $n$, in agreement with the general rule that the volume element is central and nontrivial when $n$ is odd.
 
+## The Gamma Formulation
+
+The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_k\mapsto ie_k,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_j\gamma_k\mapsto-e_je_k .
+$$
+
+The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is, up to sign, the product of two of them.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.
+
 ## Summary
 
 The Clifford algebras of small non-degenerate quadratic forms are computed directly. In one dimension the sign of the form decides everything: $\mathrm{Cl}_{1,0}\cong F\times F=\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong F(\sqrt{-1})$. In two dimensions the negative definite form gives the quaternion algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, while $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(F)$ are split and isomorphic to one another. In three dimensions $\mathrm{Cl}_{3,0}\cong \mathsf{M}_2(F(\sqrt{-1}))$ is the complex $2\times2$ matrix algebra, identified with the biquaternion algebra $\mathbb{B}$ through the assignment of its generators to $ie_k$; $\mathrm{Cl}_{1,2}$ is the same matrix algebra; and the two algebras with a central volume element of square $+1$, namely $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ and $\mathrm{Cl}_{2,1}\cong M_2(F)\times M_2(F)$, split into two factors.
@@ -319,15 +331,3 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for explicit low-dimensional identifications and the Pauli-matrix model.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the algebra of quadratic spaces and the role of the discriminant in the low-dimensional classification.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for the behaviour of the classification under base change.
-
-## Appendix — The Gamma Formulation
-
-The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
-
-$$
-\gamma_k\mapsto ie_k,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_j\gamma_k\mapsto-e_je_k .
-$$
-
-The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is, up to sign, the product of two of them.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

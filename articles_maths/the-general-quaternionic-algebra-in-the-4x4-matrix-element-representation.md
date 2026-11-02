@@ -54,7 +54,7 @@ $$
 $$
 where $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$.
 
-*Proof.* The representation is multiplicative and carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$, so $\mathsf M_4^{L}(\tilde Q_1^{\natural}\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$. $\square$
+*Proof.* The representation is multiplicative and carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$, so $\mathsf M_4^{L}(\tilde Q_1^{\natural}\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$.
 
 **The square.** At $\tilde Q_1=\tilde Q_2=\tilde Q$ the theorem gives
 $$
@@ -74,7 +74,7 @@ $$
 $$
 so the trace pairing with the carrier in the second slot is twice the general quaternionic bilinear form of the algebra.
 
-*Proof.* The carrier identity gives $C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1}=\mathsf M_4^{L}(\tilde Q_2^{\natural})$, hence the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_4^{L}(\tilde Q_1\tilde Q_2^{\natural})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The scalar part is symmetric under ${}^{\natural}$ and cyclic, so $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. $\square$
+*Proof.* The carrier identity gives $C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1}=\mathsf M_4^{L}(\tilde Q_2^{\natural})$, hence the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_4^{L}(\tilde Q_1\tilde Q_2^{\natural})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The scalar part is symmetric under ${}^{\natural}$ and cyclic, so $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$.
 
 **The diagonal.** At $\tilde Q_1=\tilde Q_2=\tilde Q$,
 $$

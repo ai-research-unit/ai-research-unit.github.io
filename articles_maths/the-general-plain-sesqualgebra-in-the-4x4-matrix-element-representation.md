@@ -38,7 +38,7 @@ $$
 $$
 where $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$.
 
-*Proof.* The representation is multiplicative and carries ${}^{*}$ to the dagger, so the image of $\tilde Q\tilde Q_2^{*}$ is $XY^{\dagger}$. $\square$
+*Proof.* The representation is multiplicative and carries ${}^{*}$ to the dagger, so the image of $\tilde Q\tilde Q_2^{*}$ is $XY^{\dagger}$.
 
 **The square and the unit.** At $\tilde Q_2=\tilde Q$ the theorem gives $XY^{\dagger}=\mathsf M_4^{L}(\tilde Q\tilde Q^{*})$, a positive semidefinite matrix whatever $\tilde Q$ is, because $I_2\otimes A$ is positive semidefinite exactly when $A$ is. The identity matrix $I_4=\mathsf M_4^{L}(e_t)$ is a **right unit alone**: $Y\star I_4=Y$, while $I_4\star Y=Y^{\dagger}$.
 
@@ -51,7 +51,7 @@ $$
 $$
 so the Hilbert–Schmidt pairing of the regular matrices is twice the general plain sesquilinear form of the algebra, with the slots exchanged.
 
-*Proof.* The dagger gives $\mathsf M_4^{L}(\tilde Q_1^{*})$, so the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_4^{L}(\tilde Q_1^{*}\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$. The scalar part is invariant under cyclic permutation, so $\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})=\langle\tilde Q_2,\tilde Q_1\rangle_{*}$. $\square$
+*Proof.* The dagger gives $\mathsf M_4^{L}(\tilde Q_1^{*})$, so the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_4^{L}(\tilde Q_1^{*}\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$. The scalar part is invariant under cyclic permutation, so $\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})=\langle\tilde Q_2,\tilde Q_1\rangle_{*}$.
 
 **Theorem (the Frobenius norm).** On the diagonal,
 $$

@@ -63,20 +63,20 @@ so the sign absorbed in the definition of the super-adjoint leaves the multiplic
 **Proposition (the graded commutator under the ordinary adjoint).** For graded $S,T$,
 
 $$
-[S,T\}^{*} = -\,(-1)^{|S||T|}\,[S^{*},T^{*}\} ,
+[S,T]^{*} = -\,(-1)^{|S||T|}\,[S^{*},T^{*}] ,
 $$
 
 so the adjoint reverses the graded commutator and picks up the Koszul sign in doing so.
 
-**Proof.** $[S,T\}^{*} = (ST)^{*}-(-1)^{|S||T|}(TS)^{*} = T^{*}S^{*}-(-1)^{|S||T|}S^{*}T^{*}$, while $[S^{*},T^{*}\} = S^{*}T^{*}-(-1)^{|S||T|}T^{*}S^{*}$ with $|S^{*}| = |S|$ and $|T^{*}| = |T|$; multiplying the second by $-(-1)^{|S||T|}$ and using $(-1)^{2|S||T|} = 1$ gives the first.
+**Proof.** $[S,T]^{*} = (ST)^{*}-(-1)^{|S||T|}(TS)^{*} = T^{*}S^{*}-(-1)^{|S||T|}S^{*}T^{*}$, while $[S^{*},T^{*}] = S^{*}T^{*}-(-1)^{|S||T|}T^{*}S^{*}$ with $|S^{*}| = |S|$ and $|T^{*}| = |T|$; multiplying the second by $-(-1)^{|S||T|}$ and using $(-1)^{2|S||T|} = 1$ gives the first.
 
 **Proposition (the super-adjoint of the graded commutator).** For graded $S,T$,
 
 $$
-\boxed{\;[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\}\;} .
+\boxed{\;[S,T]^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}]\;} .
 $$
 
-**Proof.** By the previous proposition $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and $[S^{\star},T^{\star}\} = (-1)^{|S|+|T|}[S^{*},T^{*}\}$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.
+**Proof.** By the previous proposition $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$, and $[S^{\star},T^{\star}] = (-1)^{|S|+|T|}[S^{*},T^{*}]$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.
 
 **Definition.** A graded operator is **self-adjoint** when $T^{*} = T$ and **super-self-adjoint** when $T^{\star} = T$, that is when $T^{*} = (-1)^{|T|}T$.
 
@@ -160,7 +160,7 @@ $$
 (TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star} , \qquad T^{\star} = (-1)^{|T|}T^{*} ,
 $$
 
-with the **super-adjoint** $T^{\star}$ satisfying $T^{\star\star} = T$; the adjoint reverses the graded commutator with the Koszul sign, $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and the super-adjoint reverses it with the same Koszul sign, $[S,T\}^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}\}$. On the regular representation the super-adjoint is the signed family of the corpus,
+with the **super-adjoint** $T^{\star}$ satisfying $T^{\star\star} = T$; the adjoint reverses the graded commutator with the Koszul sign, $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$, and the super-adjoint reverses it with the same Koszul sign, $[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$. On the regular representation the super-adjoint is the signed family of the corpus,
 
 $$
 L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
@@ -176,8 +176,8 @@ so the **signed left multiplication, signed right multiplication and signed Herm
 | $\langle x,y\rangle = 0$, $x$ even, $y$ odd | Even-ness of the form, orthogonality of the sectors |
 | $T^{*}$, $T^{\star} = (-1)^{|T|}T^{*}$ | Hermitian adjoint, super-adjoint |
 | $(TS)^{\star} = S^{\star}T^{\star}$ | Multiplicativity of the super-adjoint |
-| $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$ | Graded commutator under the adjoint |
-| $[S,T\}^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}\}$ | Graded commutator under the super-adjoint |
+| $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$ | Graded commutator under the adjoint |
+| $[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$ | Graded commutator under the super-adjoint |
 | $T^{\star} = T$ | Super-self-adjointness |
 | $L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}}$, $R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}}$, $\Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}}$ | Super-adjoint of the regular representation |
 | $\jmath$, $\Delta^{it}$ even; $(T^{\sharp})^{\star} = (T^{\star})^{\sharp}$ | Modular compatibility |

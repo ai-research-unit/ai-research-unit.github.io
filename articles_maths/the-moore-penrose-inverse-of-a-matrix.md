@@ -20,7 +20,7 @@ Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ i
 
 **Theorem (existence and uniqueness).** Every matrix has exactly one Moore–Penrose inverse.
 
-*Proof.* Uniqueness is the theorem of *The Moore–Penrose Inverse in an Involutive Algebra*, §*Uniqueness*; existence is proved by the rank factorisation of the next section. $\square$
+*Proof.* Uniqueness is the theorem of *The Moore–Penrose Inverse in an Involutive Algebra*, §*Uniqueness*; existence is proved by the rank factorisation of the next section.
 
 **Theorem (the four subspaces).** The two products are the orthogonal projections onto the column and the row space, and their complements are the projections onto the two null spaces:
 
@@ -31,7 +31,7 @@ I_{m}-AA^{+}=\Pi_{\ker A^{*}},\qquad
 I_{n}-A^{+}A=\Pi_{\ker A}.
 $$
 
-*Proof.* By the lemma of *The Moore–Penrose Inverse in an Involutive Algebra*, §*The Four Conditions*, the product $AA^{+}$ is a projection whose range is the column space of $A$, and $A^{+}A$ is a projection whose range is the row space. A projection in the sense of the definition is self-adjoint, so it is the orthogonal projection onto its range. The complements follow from $\operatorname{col}A\oplus\ker A^{*}=\mathbb{C}^{m}$ and $\operatorname{row}A\oplus\ker A=\mathbb{C}^{n}$. $\square$
+*Proof.* By the lemma of *The Moore–Penrose Inverse in an Involutive Algebra*, §*The Four Conditions*, the product $AA^{+}$ is a projection whose range is the column space of $A$, and $A^{+}A$ is a projection whose range is the row space. A projection in the sense of the definition is self-adjoint, so it is the orthogonal projection onto its range. The complements follow from $\operatorname{col}A\oplus\ker A^{*}=\mathbb{C}^{m}$ and $\operatorname{row}A\oplus\ker A=\mathbb{C}^{n}$.
 
 **Corollary (the rank).** The four matrices $A$, $A^{+}$, $AA^{+}$ and $A^{+}A$ have the same rank,
 
@@ -41,7 +41,7 @@ $$
 
 and $\operatorname{rk}A^{+}$ is the number of nonzero singular values of $A$.
 
-*Proof.* The projection $AA^{+}$ has rank equal to the dimension of its range, the column space, and its trace is its rank; the same for $A^{+}A$. The matrix $A^{+}$ maps the column space isomorphically onto the row space, so its rank is the same. $\square$
+*Proof.* The projection $AA^{+}$ has rank equal to the dimension of its range, the column space, and its trace is its rank; the same for $A^{+}A$. The matrix $A^{+}$ maps the column space isomorphically onto the row space, so its rank is the same.
 
 The four equations therefore carry the whole subspace geometry of $A$: the column space, the row space and the two null spaces are read from the inverse and from the products.
 
@@ -71,13 +71,13 @@ $$
 AB=C\bigl(C^{*}C\bigr)^{-1}C^{*},\qquad BA=R^{*}\bigl(RR^{*}\bigr)^{-1}R,
 $$
 
-which are the orthogonal projections onto the column space of $C$ and the row space of $R$, hence self-adjoint. The four equations hold, and uniqueness gives $B=A^{+}$. $\square$
+which are the orthogonal projections onto the column space of $C$ and the row space of $R$, hence self-adjoint. The four equations hold, and uniqueness gives $B=A^{+}$.
 
 **Corollary (full column rank).** If $A$ has full column rank, $r=n$, then $A^{+}=(A^{*}A)^{-1}A^{*}$.
 
 **Corollary (full row rank).** If $A$ has full row rank, $r=m$, then $A^{+}=A^{*}(AA^{*})^{-1}$.
 
-*Proof.* If $r=n$, then $R$ is invertible and $R^{*}(RR^{*})^{-1}=R^{-1}$, so the formula reads $A^{+}=R^{-1}(C^{*}C)^{-1}C^{*}=(A^{*}A)^{-1}A^{*}$, since $A=CR$. If $r=m$, then $C$ is invertible and $(C^{*}C)^{-1}C^{*}=C^{-1}$, so the formula reads $A^{+}=R^{*}(RR^{*})^{-1}C^{-1}=A^{*}(AA^{*})^{-1}$. $\square$
+*Proof.* If $r=n$, then $R$ is invertible and $R^{*}(RR^{*})^{-1}=R^{-1}$, so the formula reads $A^{+}=R^{-1}(C^{*}C)^{-1}C^{*}=(A^{*}A)^{-1}A^{*}$, since $A=CR$. If $r=m$, then $C$ is invertible and $(C^{*}C)^{-1}C^{*}=C^{-1}$, so the formula reads $A^{+}=R^{*}(RR^{*})^{-1}C^{-1}=A^{*}(AA^{*})^{-1}$.
 
 **Corollary (rank one).** For nonzero $u\in\mathbb{C}^{m}$ and $v\in\mathbb{C}^{n}$,
 
@@ -85,7 +85,7 @@ $$
 \bigl(uv^{*}\bigr)^{+}=\frac{vu^{*}}{\lVert u\rVert^{2}\lVert v\rVert^{2}} .
 $$
 
-*Proof.* Take $C=u$ and $R=v^{*}$: $C^{*}C=\lVert u\rVert^{2}$ and $RR^{*}=\lVert v\rVert^{2}$. $\square$
+*Proof.* Take $C=u$ and $R=v^{*}$: $C^{*}C=\lVert u\rVert^{2}$ and $RR^{*}=\lVert v\rVert^{2}$.
 
 **Example.** For
 
@@ -123,7 +123,7 @@ $$
 
 with $D^{+}\in M_{n\times m}(\mathbb{C})$ the diagonal matrix with entries $1/\mu_{1},\dots,1/\mu_{r}$ and zeros elsewhere.
 
-*Proof.* The diagonal matrix $D^{+}$ satisfies $DD^{+}D=D$, $D^{+}DD^{+}=D^{+}$, and the two products $DD^{+}$ and $D^{+}D$ are real diagonal projections; the four equations for $A$ and $VD^{+}U^{*}$ follow by inserting $UU^{*}=I_{m}$ and $VV^{*}=I_{n}$. Uniqueness gives the formula. $\square$
+*Proof.* The diagonal matrix $D^{+}$ satisfies $DD^{+}D=D$, $D^{+}DD^{+}=D^{+}$, and the two products $DD^{+}$ and $D^{+}D$ are real diagonal projections; the four equations for $A$ and $VD^{+}U^{*}$ follow by inserting $UU^{*}=I_{m}$ and $VV^{*}=I_{n}$. Uniqueness gives the formula.
 
 **Corollary (diagonal matrices).** For a diagonal matrix $\Lambda=\operatorname{diag}(\lambda_{1},\dots,\lambda_{n})$,
 
@@ -141,7 +141,7 @@ $$
 
 with $\mu_{r}$ the smallest nonzero singular value; for $A=0$ both norms vanish.
 
-*Proof.* The nonzero singular values of $A^{+}$ are the reciprocals of those of $A$, and the norms are read on the diagonal. $\square$
+*Proof.* The nonzero singular values of $A^{+}$ are the reciprocals of those of $A$, and the norms are read on the diagonal.
 
 **Corollary (unitary invariance).** For unitary $U$ and $V$,
 
@@ -149,7 +149,7 @@ $$
 \bigl(UAV^{*}\bigr)^{+}=VA^{+}U^{*}.
 $$
 
-*Proof.* Insert the decomposition, or apply the unitary-factor proposition of *The Moore–Penrose Inverse in an Involutive Algebra*, §*The Algebra of the Inverse*, twice. $\square$
+*Proof.* Insert the decomposition, or apply the unitary-factor proposition of *The Moore–Penrose Inverse in an Involutive Algebra*, §*The Algebra of the Inverse*, twice.
 
 **Example.** For $A=\operatorname{diag}(3,0)$ one has $A^{+}=\operatorname{diag}(1/3,0)$, and for $A=\operatorname{diag}(3,2)$ one has $A^{+}=\operatorname{diag}(1/3,1/2)$.
 
@@ -169,7 +169,7 @@ $$
 \lVert Ax-b\rVert^{2}=\lVert Ax-b_{1}\rVert^{2}+\lVert b_{2}\rVert^{2},
 $$
 
-because $Ax-b_{1}\in\operatorname{col}A$ is orthogonal to $b_{2}$. The minimum is therefore attained exactly when $Ax=b_{1}$, and $x=A^{+}b$ is one such vector. Every solution is $A^{+}b+z$ with $Az=0$, that is with $z\in\ker A$, and $\ker A=(I_{n}-A^{+}A)\mathbb{C}^{n}$ by the theorem of §*The Four Conditions*; this gives the stated family. Finally $A^{+}b=A^{+}AA^{+}b$ lies in the range of $A^{+}A$, the row space, which is orthogonal to $\ker A$; hence $A^{+}b$ is orthogonal to every $z\in\ker A$ and is the minimiser of least norm. $\square$
+because $Ax-b_{1}\in\operatorname{col}A$ is orthogonal to $b_{2}$. The minimum is therefore attained exactly when $Ax=b_{1}$, and $x=A^{+}b$ is one such vector. Every solution is $A^{+}b+z$ with $Az=0$, that is with $z\in\ker A$, and $\ker A=(I_{n}-A^{+}A)\mathbb{C}^{n}$ by the theorem of §*The Four Conditions*; this gives the stated family. Finally $A^{+}b=A^{+}AA^{+}b$ lies in the range of $A^{+}A$, the row space, which is orthogonal to $\ker A$; hence $A^{+}b$ is orthogonal to every $z\in\ker A$ and is the minimiser of least norm.
 
 **Corollary (the normal equations).** The least-squares minimisers are the solutions of
 
@@ -179,11 +179,11 @@ $$
 
 and $A^{+}b$ is the solution of least norm.
 
-*Proof.* $Ax-b_{1}$ is orthogonal to the column space exactly when $A^{*}(Ax-b)=0$. $\square$
+*Proof.* $Ax-b_{1}$ is orthogonal to the column space exactly when $A^{*}(Ax-b)=0$.
 
 **Corollary (consistent systems).** The system $Ax=b$ is solvable exactly when $AA^{+}b=b$, and then its solutions are $A^{+}b+(I_{n}-A^{+}A)y$, with $A^{+}b$ the solution of least norm.
 
-*Proof.* The system is solvable exactly when $b=b_{1}$, that is when $AA^{+}b=b$; the rest is the theorem. $\square$
+*Proof.* The system is solvable exactly when $b=b_{1}$, that is when $AA^{+}b=b$; the rest is the theorem.
 
 ## The Limit Formula
 
@@ -208,7 +208,7 @@ $$
 =V\operatorname{diag}\Bigl(\frac{\mu_{i}}{\mu_{i}^{2}+\epsilon}\Bigr)U^{*},
 $$
 
-with zeros in the remaining diagonal entries, and each fraction tends to $1/\mu_{i}$ when $\mu_{i}>0$ and to $0$ when $\mu_{i}=0$. The limit is $VD^{+}U^{*}=A^{+}$. The second identity is the first applied to $A^{*}$, with $(A^{*})^{+}=(A^{+})^{*}$. $\square$
+with zeros in the remaining diagonal entries, and each fraction tends to $1/\mu_{i}$ when $\mu_{i}>0$ and to $0$ when $\mu_{i}=0$. The limit is $VD^{+}U^{*}=A^{+}$. The second identity is the first applied to $A^{*}$, with $(A^{*})^{+}=(A^{+})^{*}$.
 
 **Remark (what the limit says).** The formula is the Tikhonov regularisation of the least-squares problem: the minimiser of $\lVert Ax-b\rVert^{2}+\epsilon\lVert x\rVert^{2}$ is $(A^{*}A+\epsilon I)^{-1}A^{*}b$, and the Moore–Penrose solution is its limit as the regularisation is removed. **The inverse of a singular matrix is the limit of the inverses of its regularisations**, and the limit is taken after the solutions, not before.
 
@@ -224,7 +224,7 @@ $$
 \bigl\lVert A_{k}^{+}\bigr\rVert_{2}=\frac{1}{\mu_{r+1}(A_{k})}\longrightarrow\infty,
 $$
 
-while $\lVert A^{+}\rVert_{2}$ is finite. Hence $A_{k}^{+}$ does not converge to $A^{+}$, and the map is discontinuous at $A$. $\square$
+while $\lVert A^{+}\rVert_{2}$ is finite. Hence $A_{k}^{+}$ does not converge to $A^{+}$, and the map is discontinuous at $A$.
 
 **Example.** The family
 

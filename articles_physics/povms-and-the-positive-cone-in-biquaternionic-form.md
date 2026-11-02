@@ -236,7 +236,7 @@ which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination
 
 Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{M}_+$:
 
-- **States** are the elements of the cone $C_+$ normalised by $\langle\tilde\varrho,e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image); the cone is the future light cone of the biquaternion norm.
+- **States** are the elements of the cone $C_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image); the cone is the future light cone of the biquaternion norm.
 - **Effects** are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
 - **Probabilities** are the normalised Hermitian form $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, whose final reading at normalisation is the trace $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$; the pairing is the one under which the cone is self-dual.

@@ -40,7 +40,7 @@ $$
 
 and $HP_k=\zeta_kP_k$. Conversely, if a family with these properties is given, then $H=\sum_k\zeta_kP_k$ and the $P_k$ are recovered from $H$ by the formula above.
 
-*Proof.* On the eigenspace of $\zeta_m$, every factor $(H-\zeta_lI)/(\zeta_k-\zeta_l)$ with $l\ne k$ acts as $(\zeta_m-\zeta_l)/(\zeta_k-\zeta_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\zeta_k$ and as $0$ on the others. The three properties and $HP_k=\zeta_kP_k$ follow. For the converse, $\sum_k\zeta_kP_k$ acts as $\zeta_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$. $\square$
+*Proof.* On the eigenspace of $\zeta_m$, every factor $(H-\zeta_lI)/(\zeta_k-\zeta_l)$ with $l\ne k$ acts as $(\zeta_m-\zeta_l)/(\zeta_k-\zeta_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\zeta_k$ and as $0$ on the others. The three properties and $HP_k=\zeta_kP_k$ follow. For the converse, $\sum_k\zeta_kP_k$ acts as $\zeta_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$.
 
 **The projectors are canonical.** They are polynomials in $H$ with coefficients depending only on $n$, so they are fixed by $H$ alone. In particular they do not depend on any choice of basis, on any gauge, or on any second element.
 
@@ -66,7 +66,7 @@ $$
 M^{(r)}M^{(s)}\subseteq M^{(r+s)}.
 $$
 
-*Proof.* The operator $\operatorname{Ad}_H$ is diagonalisable, so the eigenspaces span and intersect only at $0$. If $X\in M^{(r)}$ and $Y\in M^{(s)}$ then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$. $\square$
+*Proof.* The operator $\operatorname{Ad}_H$ is diagonalisable, so the eigenspaces span and intersect only at $0$. If $X\in M^{(r)}$ and $Y\in M^{(s)}$ then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$.
 
 **The graded pieces in Peirce form.** Since $H P_k=\zeta_kP_k$ and $P_kH=\zeta_kP_k$, an element $X\in P_kM_nP_l$ satisfies
 

@@ -30,7 +30,7 @@ and every relation of $\mathrm{Cl}(V,\mathfrak{Q})$ holds in $\mathrm{End}(S)$ w
 **Definition.** The **graded commutator** of homogeneous operators $A,B\in\operatorname{End}(S)$ is
 
 $$
-\boxed{\;[A,B\} = AB - (-1)^{|A||B|}BA\;} .
+\boxed{\;[A,B] = AB - (-1)^{|A||B|}BA\;} .
 $$
 
 For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is the ordinary commutator.
@@ -38,7 +38,7 @@ For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is th
 **Proposition.** The Clifford relations are the statement that the Clifford multiplication is a **graded representation**: for homogeneous $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-\boxed{\;[c(a),c(b)\} = c([a,b\})\;} ,
+\boxed{\;[c(a),c(b)] = c([a,b])\;} ,
 $$
 
 where the bracket on the right is the graded commutator in the Clifford algebra; for vectors $u,v$ this is $c(u)c(v)+c(v)c(u)=2B(u,v)\operatorname{id}$, and for an even element with any element it is the ordinary commutator.
@@ -89,7 +89,7 @@ For $\dim V=1$ with $\mathfrak{Q}(u)\ne0$, the module $S=F\oplus F$ with $c(u)$ 
 
 ## Summary
 
-A **graded module** $S=S^0\oplus S^1$ over a Clifford algebra is a module whose multiplication respects the parity, $\mathrm{Cl}^iS^j\subseteq S^{i+j}$; the action is then a parity-preserving algebra homomorphism $c$ with $c(\mathrm{Cl}^i)\subseteq\mathrm{End}^i(S)$, and the Clifford relations hold in the graded form $[c(a),c(b)\}=c([a,b\})$, which for vectors is the anticommutator $c(u)c(v)+c(v)c(u)=2B(u,v)\operatorname{id}$. The **sign rule** is the compatibility of the grading with the maps: a homogeneous module map of parity $|f|$ satisfies $f(c(a)s)=(-1)^{|f||a|}c(a)f(s)$, the even intertwiners have the ordinary relation and the odd ones carry the Koszul sign; the same sign governs the graded tensor product. The geometric reading is the chirality grading of a spinor bundle: the multiplication by a vector is odd and exchanges the chiral halves, the Cauchy–Riemann operator is odd with $D=D^+\oplus D^-$, and its square is even with the two chiral Laplacians as summands. The twisting of the one-sided operators is *The Graded Multiplication Operators*; the module theory is *Left Multiplication and the Clifford Module Structure*; the chirality in geometry is *Spin Geometry* and *The Spinor Operator*.
+A **graded module** $S=S^0\oplus S^1$ over a Clifford algebra is a module whose multiplication respects the parity, $\mathrm{Cl}^iS^j\subseteq S^{i+j}$; the action is then a parity-preserving algebra homomorphism $c$ with $c(\mathrm{Cl}^i)\subseteq\mathrm{End}^i(S)$, and the Clifford relations hold in the graded form $[c(a),c(b)]=c([a,b])$, which for vectors is the anticommutator $c(u)c(v)+c(v)c(u)=2B(u,v)\operatorname{id}$. The **sign rule** is the compatibility of the grading with the maps: a homogeneous module map of parity $|f|$ satisfies $f(c(a)s)=(-1)^{|f||a|}c(a)f(s)$, the even intertwiners have the ordinary relation and the odd ones carry the Koszul sign; the same sign governs the graded tensor product. The geometric reading is the chirality grading of a spinor bundle: the multiplication by a vector is odd and exchanges the chiral halves, the Cauchy–Riemann operator is odd with $D=D^+\oplus D^-$, and its square is even with the two chiral Laplacians as summands. The twisting of the one-sided operators is *The Graded Multiplication Operators*; the module theory is *Left Multiplication and the Clifford Module Structure*; the chirality in geometry is *Spin Geometry* and *The Spinor Operator*.
 
 ## Summary of Notation
 
@@ -98,8 +98,8 @@ A **graded module** $S=S^0\oplus S^1$ over a Clifford algebra is a module whose 
 | $S=S^0\oplus S^1$ | Graded (super) Clifford module |
 | $\mathrm{Cl}^iS^j\subseteq S^{i+j}$ | Compatibility of the action with the grading |
 | $c(\mathrm{Cl}^i)\subseteq\mathrm{End}^i(S)$ | Parity of the action |
-| $[A,B\}=AB-(-1)^{\lvert A\rvert\lvert B\rvert}BA$ | Graded commutator |
-| $[c(a),c(b)\}=c([a,b\})$ | Graded representation property |
+| $[A,B]=AB-(-1)^{\lvert A\rvert\lvert B\rvert}BA$ | Graded commutator |
+| $[c(a),c(b)]=c([a,b])$ | Graded representation property |
 | $f(c(a)s)=(-1)^{\lvert f\rvert\lvert a\rvert}c(a)f(s)$ | Sign rule for a homogeneous module map |
 | $(x\hat\otimes y)(a\hat\otimes b)=(-1)^{\lvert y\rvert\lvert a\rvert}(xa)\hat\otimes(yb)$ | Koszul sign in the graded tensor product |
 | $c(v)=v^\flat\wedge-\iota_v$ on $\Lambda^\bullet V$ | Canonical odd example |

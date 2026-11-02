@@ -381,6 +381,18 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Basis-freedom interpretation.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and the state module no canonical idempotent, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the interpretation states its algebraic origin and does not address the selection rule (O19).
 - **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
+
+Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+
+The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. A single product is one cell up to a phase, a general element is a sum of at most four, and the length is $\ell(M)=\operatorname{rank}c(M)$. The identity is the cell $L_{e_t}R_{e_t}$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the structural spine of the non-relativistic theory, and this article has catalogued its algebraic obstructions in seven groups. In commutativity and the centre: there is no canonical maximal commutative subalgebra, no non-trivial central idempotent, no observable central data, and no internal determination of the theory's parameters, because the centre is the two-real-dimensional $\mathbb{C}e_t$ and it acts trivially on states. In the quadratic forms: the biquaternion norm is indefinite and vanishes on non-zero states, the Hermitian form is positive but trace-relative, no single form is both canonical and positive, and the statistically distinguished metric of mixed states is not the algebra's flat form; the invariance group of the biquaternion norm, $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, is strictly larger than the $*$-unitary group. In finite dimension and zero divisors: the algebra is not a division algebra, it carries no canonical commutation relation, it admits no internal tensor factorization, and a unit that preserves the norm for every Hermitian generator is forced into the centre, so no genuinely biquaternionic quantum physics with a uniform norm-preserving evolution exists. In the sector structure: the split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ grades the commutator but not the product, the Hermitian sector carries no intrinsic complex structure, and the state module depends on a non-canonical choice of idempotent. In dynamics and interpretation: the algebra contains no time, no Hamiltonian, no preferred basis, no scale, and no stable classical sector under a generic evolution. In the module action: every operation the algebra supplies is a multiplication, and a multiplication acts identically on the two chiral components of a Dirac module, so the framework's apparatus is vector-like by construction and the chiral structure, the discrete operations and the energy-sign split are external. In the brackets: the one Lie product of the twelve is the plain bracket, and the three brackets that carry a conjugation fail, so no bracket the framework's interference and quantum pairings need is a Lie algebra, and the failures are read as the first operations of a higher structure.
@@ -423,16 +435,3 @@ Each obstruction is proved from the defining relations and is stated with its co
 - S. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford University Press, 1995), for the quaternionic scalar-field programme, its unitarity conditions, and the obstructions it meets.
 - E. Artin, *Geometric Algebra* (Interscience, 1957), for the biquaternion norm, its multiplicativity, and the identification of the unit-norm group with the double cover of the Lorentz group.
 - M. A. Nielsen and I. L. Chuang, *Quantum Computation and Quantum Information* (Cambridge University Press, 2000), for composite systems, the tensor product of qubits, and the Bloch-ball picture of a single qubit.
-
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
-
-Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
-$$
-
-The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. A single product is one cell up to a phase, a general element is a sum of at most four, and the length is $\ell(M)=\operatorname{rank}c(M)$. The identity is the cell $L_{e_t}R_{e_t}$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

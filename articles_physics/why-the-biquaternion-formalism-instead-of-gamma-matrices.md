@@ -195,11 +195,11 @@ The rules that follow from the above are short.
 - **Keep the coefficient matrix out of the page.** It is a diagnostic of the isomorphism, not a datum of the physics.
 - **No arrays, no columns, no Kronecker products** in a physical formula. The algebra is four-dimensional and the action is written on it.
 - **The basis is named once.** A change of basis is a change of the pair of spatial units and is stated where it occurs.
-- **The gamma form goes to one closing appendix.** One display, the dictionary, the real-form caveat, no derivation. The body does not carry it, except in an article whose subject is the comparison, as this one.
+- **The gamma form goes to one closing section.** One display, the dictionary, the real-form caveat, no derivation. The body does not carry it, except in an article whose subject is the comparison, as this one.
 
 ## Where the Gamma Formalism Remains the Right Tool
 
-**The literature is written in it.** Textbooks, scattering amplitudes, the spinor-helicity formalism, gamma-trace technology, Fierz rearrangements, anomaly computations, index theorems and supergravity all use it. A reader who wants to compare with that literature needs the dictionary, and the appendix supplies it.
+**The literature is written in it.** Textbooks, scattering amplitudes, the spinor-helicity formalism, gamma-trace technology, Fierz rearrangements, anomaly computations, index theorems and supergravity all use it. A reader who wants to compare with that literature needs the dictionary, and the Gamma section supplies it.
 
 **Some computations are shorter in it.** A trace of many gammas is a contraction of indices; a Fierz rearrangement is a completeness relation of the sixteen products; a perturbative calculation is organised by the gamma basis. The biquaternion form does not forbid these; it declines to make them the default.
 
@@ -215,9 +215,9 @@ The rules that follow from the above are short.
 
 **What changes.** The default object, the default display, and the starting point of a computation. The biquaternion form begins from the pair the physics supplies; the gamma form begins from a gamma basis and a column.
 
-**What it costs.** A reader trained on gamma matrices must learn the dictionary, and a paper written in the corpus does not look like a paper written in the standard notation. The cost is paid once per reader and is repaid by the appendix.
+**What it costs.** A reader trained on gamma matrices must learn the dictionary, and a paper written in the corpus does not look like a paper written in the standard notation. The cost is paid once per reader and is repaid by the Gamma section.
 
-**What it does not cost.** No result is lost. A computation that needs the gamma basis can be recast in it at any point, and each article's appendix states how.
+**What it does not cost.** No result is lost. A computation that needs the gamma basis can be recast in it at any point, and each article's closing section states how.
 
 **Where the argument is proved.** *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states the frame in full and proves the dictionary, and *Frame Conventions* fixes the two coordinate frames, the metric each carries and the low index of the gamma. *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators* proves the cone, the length theorem and the product criterion. *Operator Family Conventions* fixes the family marks $L$, $R$, $LR$, $\Theta$. *The Clifford Layer Is the Cell Layer* states the withdrawal rule and the per-article counts, and *The Square-Zero Element* is the first article written under it.
 
@@ -232,7 +232,7 @@ The rules that follow from the above are short.
 | what is chirality? | $\gamma_5$, one symbol for two roles | a cell $\Gamma$ and the central sign $\chi$ |
 | what is the metric? | a tensor in the Clifford relation | the squares $e_t^2=e_t$, $\vec e_k^2=-e_t$ |
 | what fixes the basis? | $S\gamma_\mu S^{-1}$, unmarked | the pair of spatial units, named |
-| where does it live? | the body in the literature; the appendix in the corpus | the body |
+| where does it live? | the body in the literature; the Gamma section in the corpus | the body |
 
 **The one-sentence answer.** The gamma basis is a correct coordinate on the algebra, and the biquaternion form is the algebra's own action; the corpus writes the action because the physics supplies a pair of multipliers and a sum of a few terms, not the generic element.
 
@@ -252,7 +252,7 @@ The rules that follow from the above are short.
 | $P_\pm=\tfrac12(1\pm\Gamma)$ | the chiral projectors |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign, $\chi^2=e_t$; an operator, not multiplication by an element of $\mathbb{B}$ |
 | the spatial pair | the orthogonal pair of units that fixes the reference frame |
-| $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | the gamma set in the $\mathbb{M}_-$ frame, named in this article's exposition and in each article's appendix |
+| $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | the gamma set in the $\mathbb{M}_-$ frame, named in this article's exposition and in each article's closing section |
 
 ## Further Reading
 

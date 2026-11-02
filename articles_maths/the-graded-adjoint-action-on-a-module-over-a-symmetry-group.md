@@ -27,7 +27,7 @@ so that even elements act by parity-preserving operators and odd elements by par
 
 **Proposition.** A graded action decomposes as $\rho = \rho_0\oplus\rho_1$ with $\rho_0 : G_0 \to GL(M_0)\times GL(M_1)$ and $\rho_1 : G_1 \to \mathrm{Iso}(M_0,M_1)$; the endomorphism algebra is graded, $\operatorname{End}(M)_i = \{T : T(M_j)\subseteq M_{j+i}\}$, and the graded commutator
 $$
-\boxed{\;[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST\;}
+\boxed{\;[T, S] = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST\;}
 $$
 makes $\operatorname{End}(M)$ a graded Lie algebra, the **sign** $(-1)^{\lvert T\rvert\lvert S\rvert}$ being the Koszul sign.
 
@@ -71,7 +71,7 @@ $$
 
 restricted to the graded endomorphisms; it is a graded representation of $G$ on $\operatorname{End}(M)$, the parity of $\operatorname{Ad}_g(T)$ being the parity of $T$.
 
-**Proposition.** The adjoint action preserves the grading, $\operatorname{Ad}_g(\operatorname{End}(M)_i)\subseteq\operatorname{End}(M)_i$; it preserves the graded commutator, $\operatorname{Ad}_g[T,S\} = [\operatorname{Ad}_gT, \operatorname{Ad}_gS\}$; and it preserves the **supertrace** $\operatorname{str}(T) = \operatorname{tr}(T|_{M_0}) - \operatorname{tr}(T|_{M_1})$, so that the module carries the invariant graded trace form $\langle S, T\rangle = \operatorname{str}(S^{*}T)$.
+**Proposition.** The adjoint action preserves the grading, $\operatorname{Ad}_g(\operatorname{End}(M)_i)\subseteq\operatorname{End}(M)_i$; it preserves the graded commutator, $\operatorname{Ad}_g[T,S] = [\operatorname{Ad}_gT, \operatorname{Ad}_gS]$; and it preserves the **supertrace** $\operatorname{str}(T) = \operatorname{tr}(T|_{M_0}) - \operatorname{tr}(T|_{M_1})$, so that the module carries the invariant graded trace form $\langle S, T\rangle = \operatorname{str}(S^{*}T)$.
 
 **Proof.** The parity of $\rho(g)T\rho(g)^{-1}$ is $\lvert g\rvert + \lvert T\rvert + \lvert g\rvert = \lvert T\rvert$ since the parities are in $\mathbb{Z}/2$; the commutator is preserved because conjugation is an algebra automorphism and the Koszul sign is a function of the parities, which are preserved; the supertrace is invariant under the adjoint action because $\operatorname{str}(TS) = (-1)^{\lvert T\rvert\lvert S\rvert}\operatorname{str}(ST)$, the graded trace property, which gives $\operatorname{str}(\rho(g)T\rho(g)^{-1}) = \operatorname{str}(T)$ by the cyclicity with the sign. This is *Superalgebras and Graded Structures*.
 
@@ -107,7 +107,7 @@ with respect to $\langle S, T\rangle = \operatorname{str}(S^{*}T)$. For an odd e
 
 ## Summary
 
-A graded module $M = M_0\oplus M_1$ over a graded group carries a graded action, even elements acting by parity-preserving and odd elements by parity-reversing operators; the graded form is invariant under a graded isometry, and the **graded adjoint** of an operator satisfies $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ with the Koszul sign, has the parity of the operator, and inverts a graded isometry. The adjoint action $\operatorname{Ad}_g(T) = \rho(g)T\rho(g)^{-1}$ preserves the grading, the graded commutator $[T,S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ and the supertrace, so the module carries the invariant graded trace form $\langle S,T\rangle = \operatorname{str}(S^{*}T)$; its own adjoint is the adjoint action of the inverse for an even element, with the sign rule carried into the operator involution. The grade involution is a parity and not the involution of the group `- * Theory`, and the agreement of an involution on the elements with the adjoint on the operators is the two-structures criterion of *The Adjoint of a Symmetry Operator*, never assumed. The exterior algebra of a quadratic space, the Clifford module of the pin group and the supersymmetric module are the geometric instances, and the trivial grading recovers the ungraded theory.
+A graded module $M = M_0\oplus M_1$ over a graded group carries a graded action, even elements acting by parity-preserving and odd elements by parity-reversing operators; the graded form is invariant under a graded isometry, and the **graded adjoint** of an operator satisfies $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ with the Koszul sign, has the parity of the operator, and inverts a graded isometry. The adjoint action $\operatorname{Ad}_g(T) = \rho(g)T\rho(g)^{-1}$ preserves the grading, the graded commutator $[T,S] = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ and the supertrace, so the module carries the invariant graded trace form $\langle S,T\rangle = \operatorname{str}(S^{*}T)$; its own adjoint is the adjoint action of the inverse for an even element, with the sign rule carried into the operator involution. The grade involution is a parity and not the involution of the group `- * Theory`, and the agreement of an involution on the elements with the adjoint on the operators is the two-structures criterion of *The Adjoint of a Symmetry Operator*, never assumed. The exterior algebra of a quadratic space, the Clifford module of the pin group and the supersymmetric module are the geometric instances, and the trivial grading recovers the ungraded theory.
 
 ## Summary of Notation
 
@@ -116,7 +116,7 @@ A graded module $M = M_0\oplus M_1$ over a graded group carries a graded action,
 | $M = M_0\oplus M_1$ | the graded module; even and odd parts |
 | $\rho(g)(M_i)\subseteq M_{i+\lvert g\rvert}$ | the graded action |
 | $\lvert T\rvert$ | the parity of a graded endomorphism |
-| $[T,S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ | the graded commutator; the Koszul sign |
+| $[T,S] = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ | the graded commutator; the Koszul sign |
 | $B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$ | the graded symmetry of the form |
 | $T^{*}$ with $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ | the graded adjoint; the sign rule |
 | $\mathrm{U}(M,B)$ | the graded unitary group of the module |

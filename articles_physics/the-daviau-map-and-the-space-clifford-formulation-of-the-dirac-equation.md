@@ -197,6 +197,22 @@ The physical point the corpus records is that the left-versus-right question of 
 
 5. **Empirical contact.** None is claimed. The formulation is an equivalent rewriting, and the question, as everywhere, is whether it makes any structural fact of the framework easier to see, not whether it predicts anything new.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The space Clifford formulation writes the Dirac equation as a single equation for a **general element** $\varphi$ of the Pauli algebra $\mathcal P\cong M_2(\mathbb{C})$, $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi$, with a cyclically permuted gradient, a potential in the same basis and the **star conjugation** $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$. The spinor has the right eight real components, and the equation is a Dirac equation. Under the corpus's identification of the Pauli algebra with the biquaternion algebra $\mathbb B$, the star conjugation is the corpus's own **complex conjugation** $\bar{\cdot}$: the factor $\sigma_2$ on each side is precisely the correction that turns entrywise matrix conjugation into the involution that fixes $\mathbb H_\mathbb B$ and negates $i\mathbb H_\mathbb B$. This is the article's main algebraic point, and it is exact. The Daviau equation is equivalent to the Dirac–Hestenes equation of the spacetime algebra, the passage being the sign of the mass, a cyclic relabelling of the three space directions, and the star. The equation acts on the spinor from the left and from the right at once, which is the algebra's bi-module structure; the corpus develops that structure separately, and it is the algebraic form of the framework's recorded left-versus-right question. The formulation is an equivalent rewriting and carries no new physics; its value is the dictionary, which is exact and which locates the star, the odd element and the right action at their proper places in the corpus.
@@ -227,19 +243,3 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 - D. Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra formulation that the equivalence compares against.
 - B. Fauser, "Isospin from Spin by Compositeness," arXiv:hep-th/9908015, for the alternative to the iso-spin interpretation of the right action.
 - The companion articles of this series: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html), [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html), [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), and [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

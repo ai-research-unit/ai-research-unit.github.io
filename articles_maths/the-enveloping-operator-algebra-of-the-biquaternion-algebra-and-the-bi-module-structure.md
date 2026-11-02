@@ -309,6 +309,22 @@ The enveloping algebra is a **luxury of the associative unital case**. The const
 
 5. **Comparison with the universal enveloping algebra.** The corpus's *Universal Enveloping Algebras* is the Lie-theoretic $U(\mathfrak g)$ of a Lie algebra. The two "enveloping algebras" are different constructions sharing a name; the corpus should keep them apart and cross-link them, which this article does.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}$, with the sandwich action $(\tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}})\cdot \tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The word matrix names three objects — the $2\times2$ element matrix $\mathsf M_2(\tilde Q)$, the $4\times4$ operator matrix $[T]_{\mathcal B}$, and the $4\times4$ coefficient matrix $c(T)$ — and §*The Three Objects Called Matrices* keeps them apart; the isomorphism is proved by the basis route of §*The Two Routes Compared*. The Peirce decomposition of $\mathbb B$ tensors to one of $\mathbb B^{\mathrm e}$: the four idempotents $\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ are complete, orthogonal and primitive, they cut $\mathbb B^{\mathrm e}$ into sixteen one-dimensional corners spanned by the tensors $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ of the two Peirce bases, the reversal of the second index pair being the reversal of the composition rule quoted below, and they cut $\mathbb B$ itself, under the sandwich action, into the four Peirce spaces $\tilde\Pi_i\mathbb B\tilde\Pi_k$ of the algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(\tilde Q_3)=e_n\tilde Q_3 e_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types; a linear function carries a second involution, **association**, which is treated in *The Four Adjoints of the Biquaternion Algebra in Examples*. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{opp}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{opp}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once. The construction is also the luxury of the associative unital case: it needs the associativity that makes the sandwich unambiguous and the unit that places the two factors in one endomorphism algebra, and of the twelve structures of the corpus the general plain bilinear product alone supplies both. What is left when they are absent — the single operators, their adjoints for an invariant form, the derivations, the automorphisms and the structure and pin-spin groups — is the operator layer that the other eleven blocks carry, and the multiplication algebra generated by the operators is its associative companion in every block.
@@ -345,19 +361,3 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 - The companion articles of this series: [The Operators on an Algebra](the-operators-on-an-algebra.html), [The Category of Modules](the-category-of-modules.html), [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), and [Universal Enveloping Algebras](universal-enveloping-algebras.html) (the Lie-theoretic construction, distinct from this one).
 - The matrix articles of the group: [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the bracket $[F]_{\mathcal B}$; [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the coefficient matrix $c(T)$; [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the element matrix.
 - The physics articles that use the reading: [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html), [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html), and [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

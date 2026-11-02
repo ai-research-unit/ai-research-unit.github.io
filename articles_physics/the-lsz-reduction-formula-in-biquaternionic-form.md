@@ -230,6 +230,18 @@ The residue of the pole is thus the one-particle weight, and the continuum's thr
 - The framework has no independent derivation of the asymptotic conditions; they are assumed as in the standard theory.
 - Whether the sector block structure of the scalar reduction has observable consequences is a spin-0-article question; this article only identifies the block structure.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
+
+Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+
+The mass-shell operator is the sum of four cells, $\mathcal{D}(p)=iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$. The spin sums are the same cell plus or minus the mass, and the mass is the identity cell, not a fifth generator. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The LSZ reduction in biquaternionic form is the standard reduction with the framework's mass-shell symbol. The mass shell is the biquaternion-norm level set
@@ -281,15 +293,3 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford, 2002), for the reduction and the residue of the propagator.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the spinor module on which the matrix amputation acts.
 - Companion articles: [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the S-matrix and the external data whose reduction this article supplies; [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), for the wave biquaternion, the mass shell, and the spinors; [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the one-particle states and the one-mode truncation; [The Functional Integral in Biquaternionic Form](the-functional-integral-in-biquaternionic-form.html) and [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for the correlation functions being reduced; [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the biquaternion norm and the zero-divisor cone.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
-
-Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
-$$
-
-The mass-shell operator is the sum of four cells, $\mathcal{D}(p)=iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$. The spin sums are the same cell plus or minus the mass, and the mass is the identity cell, not a fifth generator. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -184,6 +184,18 @@ the constructions of the complex octonionic chain algebra and of the split bioct
 
 **Remark (the pattern).** The first and third examples are the same statement at the two rungs $\mathbb{C}\mathrm{l}_2$ and $\mathbb{C}\mathrm{l}_6$: a split system has an odd complex chain dimension, and its chain algebra doubles, whereas the definite system's chain algebra is even-dimensional and simple. The doubling is the algebraic content of a pair of chiralities, and it is the reason the split systems, rather than the biquaternion algebra, are the natural carriers of such a pair.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
+
+$$
+\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+$$
+
+The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.
+
 ## Summary
 
 The classical real number systems are the Clifford algebras of low-dimensional quadratic forms: $\mathbb{C}=\mathrm{Cl}_{0,1}$, the split complex numbers $\mathbb{D}=\mathrm{Cl}_{1,0}$, the dual numbers $\mathbb{D}'$ the degenerate one-dimensional Clifford algebra, the quaternions $\mathbb{H}=\mathrm{Cl}_{0,2}$, the four-dimensional split quaternions, which are the two two-dimensional Clifford algebras $\mathrm{Cl}_{1,1}\cong\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, the eight-dimensional $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}=\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$, and the biquaternions $\mathbb{B}=\mathrm{Cl}_{3,0}=\mathbb{C}\mathrm{l}_2\cong M_2(\mathbb{C})$. In each case the Clifford form is the negative of the composition norm on the generators, and the properties of the system follow from the sign of that form: a definite form gives a division algebra, an indefinite form gives an algebra with zero divisors, and a degenerate form gives a radical and the dual numbers.
@@ -226,15 +238,3 @@ The composition property of the norm — the multiplicativity $N(xy)=N(x)N(y)$ �
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the quadratic-form framework of the norms.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for the commuting-generator algebra it distinguishes from the Clifford algebra of two anticommuting generators.
 - Companion article [Complex Split Biquaternions and the Clifford Algebra Cl(3)](complex-split-biquaternions-and-the-clifford-algebra-cl3.html), for the complexification of the split biquaternion algebra and its splitting into two biquaternion summands.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
-
-$$
-\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
-$$
-
-The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is the product of two of them.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.

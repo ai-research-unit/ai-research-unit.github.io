@@ -254,6 +254,24 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 6. **Empirical content.** As everywhere, whether any of this yields a prediction distinguishing the framework from standard higher-spin theory. The transcription given here does not.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+In the gamma basis of the Gamma section the frame cell $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is $\gamma_\mu$, the antisymmetrized pair is $\gamma_{\mu\nu}$ and the antisymmetrized triple is $\gamma_{\mu\nu\rho}$, with $L_{a}R_{b}$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}}\partial/\partial x_\nu-m)\psi_\mu=0$ and the irreducibility constraint $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\psi_\mu=0$. Contracting the field equation with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ and using $iL_{e_\mu}R_{e_{\nu(\mu)}} \sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}=2p_\mu-\sum_\rho iL_{e_\rho}R_{e_{\nu(\rho)}} p_{\rho}iL_{e_\mu}R_{e_{\nu(\mu)}}$ gives the transversality condition $\sum_\mu p_\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit frame cells. The constraint is imposed by the projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$, which is idempotent and annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
@@ -296,21 +314,3 @@ In the biquaternion framework the field is the tensor product of the material ve
 - Marc Henneaux and Claudio Teitelboim, *Quantization of Gauge Systems* (Princeton, 1992), for first-class and second-class constraints and the Dirac bracket.
 - Stanley Deser, J. H. Kay and K. S. Stelle, "Renormalizability Properties of Supergravity," *Physical Review Letters* **38** (1977) 527–530, for the consistency of the spin-$\tfrac32$ field coupled to gravity.
 - G. Velo and D. Zwanziger, "Propagation and Quantization of Rarita–Schwinger Waves in an External Electromagnetic Potential," *Physical Review* **186** (1969) 1337–1341, for the loss of the constraint and the superluminal modes in a background.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-In the gamma basis of the appendix the frame cell $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is $\gamma_\mu$, the antisymmetrized pair is $\gamma_{\mu\nu}$ and the antisymmetrized triple is $\gamma_{\mu\nu\rho}$, with $L_{a}R_{b}$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

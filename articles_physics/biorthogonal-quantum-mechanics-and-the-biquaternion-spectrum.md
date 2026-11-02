@@ -182,11 +182,11 @@ The rule has a price. The metric $\eta$ depends on the element, because the left
 
 ## The Density Matrix as the Contrast Class
 
-A density matrix is the case in which the whole apparatus collapses. A state $\tilde\varrho$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,
+A density matrix is the case in which the whole apparatus collapses. A state $\tilde{Ϛ}$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,
 
 $$
 \boxed{\;p_\pm=\operatorname{tr}\left(\varrho P_\pm\right)
-=2\operatorname{Sc}\left(\tilde\varrho\tilde\Pi_\pm\right),
+=2\operatorname{Sc}\left(\tilde{Ϛ}\tilde\Pi_\pm\right),
 \qquad
 \tilde\Pi_\pm=\tilde\Pi_\pm^{*}\;}.
 $$
@@ -195,7 +195,7 @@ The contrast is the conceptual content of the article. The spectral decompositio
 
 | Case | Element | Metric | Weights |
 | --- | --- | --- | --- |
-| quantum state | $\tilde\varrho$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde\varrho\tilde\Pi_\pm)$ |
+| quantum state | $\tilde{Ϛ}$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}\tilde\Pi_\pm)$ |
 | normal observable | $\tilde H$ normal, distinct spectrum | $\eta=I$ on the eigenbasis | $p_\pm=\lvert c_\pm\rvert^{2}$ |
 | non-normal operator | $\tilde Q$ with $B\neq0$ | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | $p_\pm=\lvert c_\pm\rvert^{2}/\langle\psi,\eta\psi\rangle$ |
 | exceptional point | $B=0$, $\vec Q\neq0$ | no eigenbasis | no rule |
@@ -231,7 +231,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 - The Petermann factor $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^{*}\tilde\Pi_\pm)$ is at least one and equals one exactly when the element is normal.
 - The Petermann factor is the norm deficit, $\kappa=(1+\lVert\rho\rVert^2)/2=(\lVert\vec Q\rVert^2+\lvert B^2\rvert)/(2\lvert B^2\rvert)$ with $\rho=\vec Q/B$: the excess $\kappa-1$ is half the deficit $\lVert\rho\rVert^2-1$ of the flow, and the Gram form of the two projectors has eigenvalues $1$ and $\lVert\rho\rVert^2$.
 - The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\psi\rvert^{2}/\langle\psi,\eta\psi\rangle$ with $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\eta=I$.
-- A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde\varrho\tilde\Pi_\pm)$.
+- A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}\tilde\Pi_\pm)$.
 - At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.
 - The algebra supplies the decomposition and the projectors, not the metric, the dynamics or the arrow of time.
 
@@ -250,7 +250,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 | $P_\pm=r_\pm\ell_\pm^{\dagger}$ | the spectral projector, $\mathsf M_2(\tilde\Pi_\pm)$ |
 | $\kappa$ | the Petermann factor, the same for both projectors, $\operatorname{tr}(P_\pm^{\dagger}P_\pm)=(1+\lVert\rho\rVert^2)/2$ |
 | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | the metric of the biorthogonal basis |
-| $\tilde\varrho$ | a density matrix, Hermitian, positive, trace one |
+| $\tilde{Ϛ}$ | a density matrix, Hermitian, positive, trace one |
 
 ## Further Reading
 

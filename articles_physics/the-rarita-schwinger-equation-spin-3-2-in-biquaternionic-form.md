@@ -339,6 +339,22 @@ The conventions are those of three companion articles:
 - Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the translation of the frame cells and their antisymmetrized products into the algebra's units.
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part of the algebra and the four-vector representation from which the vector-spinor is built.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The Rarita–Schwinger field is a vector-spinor of sixteen complex components, with the massless equation $\epsilon_{\mu\nu\rho\sigma}\,(-iR_{\vec e_z})\,iL_{e_\nu}R_{e_{\nu(\nu)}}\partial/\partial x_\rho\,\psi_\sigma=0$ and the massive equation the same with the mass term $+m\tfrac12[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]\psi_\nu$, equivalently, in the trivector form, $(i\tfrac1{3!}\sum_{\mathrm{perms}}\pm iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\partial/\partial x_\rho-m\tfrac12[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}])\psi_\nu=0$. The two writings are related by the duality identity $\epsilon_{\mu\nu\rho\sigma}\,(-iR_{\vec e_z})\,iL_{e_\nu}R_{e_{\nu(\nu)}}\partial/\partial x_\rho\,\psi_\sigma=-i\tfrac1{3!}\sum_{\mathrm{perms}}\pm iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\partial/\partial x_\rho\,\psi_\sigma$, which fixes the relative sign of their mass terms; the overall sign is the free convention, because $\psi_\mu\to -iR_{\vec e_z}\psi_\mu$ exchanges the two possibilities. In the massive case the equation implies the algebraic trace $iL_{e_\mu}R_{e_{\nu(\mu)}}\psi_\mu=0$ and the divergence condition, and it is equivalent to the component Dirac equation together with the trace; the massless theory instead has the gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x_\mu\,\epsilon$ with a single Dirac-spinor parameter, under which the trace is a complete gauge choice while the divergence remains a consequence of the equation.
@@ -386,19 +402,3 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the Dirac equation, the trace constraints, and the reduction of vector-spinors in the rest frame.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the antisymmetrized products of a Clifford frame and the reduction of their representations.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the spacetime-algebra treatment of the Clifford algebra and the chiral structure of spinors.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

@@ -82,7 +82,7 @@ $$
 \qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}] \Big\},
 $$
 
-using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the appendix's trace identity, the trace of four generators is $4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
+using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the Gamma section's trace identity, the trace of four generators is $4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
 \boxed{\;
@@ -162,42 +162,7 @@ The framework supplies the two vertex currents, the photon propagator, the Fock 
 
 6. **Empirical contact.** The tree-level result is standard electrodynamics in the framework's variables; the parity-violating asymmetry is the one place the framework meets a measured number, and it is not a framework-specific prediction.
 
-## Summary
-
-Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of a few hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
-
-In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a^{\mathrm{fop}\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $e^-e^-\to e^-e^-$ | Møller scattering |
-| $p_1,p_2,p_3,p_4$ | Incoming and outgoing electron four-momenta |
-| $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
-| $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
-| $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
-| $\mathcal M = \mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
-| $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element |
-| $\alpha = e^2/4\pi$ | Fine-structure constant |
-| $A_{\mathrm{PV}}$ | Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle |
-| $G_{\mathrm F}$ | Fermi constant |
-| $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
-| $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| the generator cell | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
-| $D(p)=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$ | Cell of the momentum shell |
-
-## Further Reading
-
-- C. Møller, "Zur Theorie des Durchgangs schneller Elektronen durch Materie," *Annalen der Physik* **406** (1932) 531–585, for the original derivation.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the trace technology and the electron–electron cross section.
-- M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the tree-level amplitude, the Mandelstam variables and the cross section.
-- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the identical-fermion exchange sign.
-- P. L. Anthony *et al.*, "Precision measurement of the weak mixing angle in Møller scattering," *Physical Review Letters* **95** (2005) 081601, for the SLAC E158 measurement of the parity-violating asymmetry.
-- Ya. B. Zel'dovich, "Electron and positron scattering and the weak interaction" (1959), for the first discussion of the parity-violating asymmetry in Møller scattering.
-- The companion articles of this series: [Bhabha Scattering in Biquaternionic Form](bhabha-scattering-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), and [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html).
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -234,3 +199,38 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of a few hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
+
+In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a^{\mathrm{fop}\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $e^-e^-\to e^-e^-$ | Møller scattering |
+| $p_1,p_2,p_3,p_4$ | Incoming and outgoing electron four-momenta |
+| $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
+| $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
+| $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
+| $\mathcal M = \mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
+| $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element |
+| $\alpha = e^2/4\pi$ | Fine-structure constant |
+| $A_{\mathrm{PV}}$ | Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle |
+| $G_{\mathrm F}$ | Fermi constant |
+| $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
+| $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+| the generator cell | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
+| $D(p)=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$ | Cell of the momentum shell |
+
+## Further Reading
+
+- C. Møller, "Zur Theorie des Durchgangs schneller Elektronen durch Materie," *Annalen der Physik* **406** (1932) 531–585, for the original derivation.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the trace technology and the electron–electron cross section.
+- M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the tree-level amplitude, the Mandelstam variables and the cross section.
+- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the identical-fermion exchange sign.
+- P. L. Anthony *et al.*, "Precision measurement of the weak mixing angle in Møller scattering," *Physical Review Letters* **95** (2005) 081601, for the SLAC E158 measurement of the parity-violating asymmetry.
+- Ya. B. Zel'dovich, "Electron and positron scattering and the weak interaction" (1959), for the first discussion of the parity-violating asymmetry in Møller scattering.
+- The companion articles of this series: [Bhabha Scattering in Biquaternionic Form](bhabha-scattering-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), and [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html).

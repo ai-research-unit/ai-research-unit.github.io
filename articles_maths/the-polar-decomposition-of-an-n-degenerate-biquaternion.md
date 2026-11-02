@@ -112,7 +112,7 @@ $$
 =\tilde Q\tilde Q^{*},
 $$
 
-the third equality by $\lvert\vec W\rvert=2a^{2}$. The spectral values of $\tilde Q_H$ are $a\pm\lvert\vec W\rvert/(2a)=a\pm a$, that is, $0$ and $2a$, so the element is positive semidefinite of rank one. It is the unique square root of $\tilde Q\tilde Q^{*}$ in the cone, by the uniqueness of that root. $\square$
+the third equality by $\lvert\vec W\rvert=2a^{2}$. The spectral values of $\tilde Q_H$ are $a\pm\lvert\vec W\rvert/(2a)=a\pm a$, that is, $0$ and $2a$, so the element is positive semidefinite of rank one. It is the unique square root of $\tilde Q\tilde Q^{*}$ in the cone, by the uniqueness of that root.
 
 The scalar part of $\tilde Q_H$ is $a$, and its vector part is purely imaginary of length $\lvert\vec W\rvert/(2a)=a$. The factor is the sum of the central element $a e_t$ and a vector part of the same length; its two spectral values are $0$ and $2a$.
 
@@ -148,7 +148,7 @@ $$
 \tilde Q_H^{+}\tilde Q\tilde Q^{*}\tilde Q_H^{+}=\tilde Q_H^{+}\tilde Q_H^{2}\tilde Q_H^{+}=\tilde Q_H\tilde Q_H^{+}=\frac{\tilde Q_H}{2a},
 $$
 
-using $\tilde Q_H\tilde Q_H^{+}=\tilde Q_H/(2a)$, which is the final projection of the Hermitian factor. This product is a rank-one projection, so the first Penrose identity gives $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0$, and the second follows symmetrically. $\square$
+using $\tilde Q_H\tilde Q_H^{+}=\tilde Q_H/(2a)$, which is the final projection of the Hermitian factor. This product is a rank-one projection, so the first Penrose identity gives $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0$, and the second follows symmetrically.
 
 The factor $\tilde Q_0$ is not $*$-unitary: its product with its conjugate is the rank-one projection $\tilde Q_H/(2a)$, not $e_t$. At the origin, $\tilde Q_H=0$, $\tilde Q_H^{+}=0$ and $\tilde Q_0=0$.
 

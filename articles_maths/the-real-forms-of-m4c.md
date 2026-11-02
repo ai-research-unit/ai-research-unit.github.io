@@ -77,7 +77,7 @@ $$
 XJ=JX,\qquad YJ=-JY.
 $$
 
-The first says that $X$ commutes with the complex structure $J$, so $X$ lies in the commutant of $J$ in $M_4(\mathbb{R})$, of real dimension $8$; the second says that $Y$ anticommutes with $J$, so $Y=JZ$ with $Z$ commuting with $J$, again of real dimension $8$. Hence $\dim_\mathbb{R}M_4^{J}=16$. The algebra is the algebra of endomorphisms of $\mathbb{C}^{4}$ commuting with the quaternionic structure, that is, the quaternionic-linear endomorphisms of $\mathbb{H}^{2}$, which is $M_2(\mathbb{H})$. $\square$
+The first says that $X$ commutes with the complex structure $J$, so $X$ lies in the commutant of $J$ in $M_4(\mathbb{R})$, of real dimension $8$; the second says that $Y$ anticommutes with $J$, so $Y=JZ$ with $Z$ commuting with $J$, again of real dimension $8$. Hence $\dim_\mathbb{R}M_4^{J}=16$. The algebra is the algebra of endomorphisms of $\mathbb{C}^{4}$ commuting with the quaternionic structure, that is, the quaternionic-linear endomorphisms of $\mathbb{H}^{2}$, which is $M_2(\mathbb{H})$.
 
 **The check.** In the standard basis the two conditions have rank $8$ each, so the solution space is $16$-dimensional; the computation is the one displayed, with $J_0$ the block matrix above.
 
@@ -85,7 +85,7 @@ The first says that $X$ commutes with the complex structure $J$, so $X$ lies in 
 
 **Theorem.** Every real form of $M_4(\mathbb{C})$ is isomorphic to $M_4(\mathbb{R})$ or to $M_2(\mathbb{H})$.
 
-**Proof.** A real form $A$ is a real central simple algebra with $A\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$. By the Wedderburn theorem, $A\cong M_k(D)$ with $D$ a division algebra over $\mathbb{R}$; the only finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The real dimension is $k^{2}\dim_\mathbb{R}D=16$. The possibilities are $D=\mathbb{R}$ with $k=4$, giving $M_4(\mathbb{R})$; $D=\mathbb{H}$ with $k=2$, giving $M_2(\mathbb{H})$; and $D=\mathbb{C}$, giving $k^{2}\cdot2=16$, which has no integer solution. Hence the two forms. $\square$
+**Proof.** A real form $A$ is a real central simple algebra with $A\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$. By the Wedderburn theorem, $A\cong M_k(D)$ with $D$ a division algebra over $\mathbb{R}$; the only finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The real dimension is $k^{2}\dim_\mathbb{R}D=16$. The possibilities are $D=\mathbb{R}$ with $k=4$, giving $M_4(\mathbb{R})$; $D=\mathbb{H}$ with $k=2$, giving $M_2(\mathbb{H})$; and $D=\mathbb{C}$, giving $k^{2}\cdot2=16$, which has no integer solution. Hence the two forms.
 
 **The Brauer reading.** The Brauer group $Br(\mathbb{R})=\mathbb{Z}/2$ has two classes: the split class of $\mathbb{R}$ and the class of $\mathbb{H}$. The algebra $M_4(\mathbb{C})$ is split over $\mathbb{C}$; its real forms are the split algebra $M_4(\mathbb{R})$ and the quaternionic algebra $M_2(\mathbb{H})$, whose class is that of $\mathbb{H}$.
 
@@ -148,7 +148,7 @@ $$
 \operatorname{Aut}_\mathbb{R}(M_4)=PGL_4(\mathbb{C})\rtimes\mathbb{Z}/2.
 $$
 
-**Proof.** Composing $\theta$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\theta(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset. $\square$
+**Proof.** Composing $\theta$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\theta(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset.
 
 **The real structures on the algebra.** The antilinear involutions of $M_4$ fall into two classes, according to whether the square is the identity or an inner automorphism of order two. The first class gives the real form $M_4(\mathbb{R})$, the second the quaternionic form $M_2(\mathbb{H})$. The classification of the classes is the classification of the real forms, and the two are exchanged by no automorphism of the complex algebra: they are the two elements of $Br(\mathbb{R})$.
 

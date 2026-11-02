@@ -155,6 +155,22 @@ Fauser draws a structural conclusion from the four options. In the geometric-alg
 
 6. **Empirical contact.** None is claimed. The options are equivalent rewritings; the question, as everywhere, is whether isolating them makes a structural fact of the framework easier to see.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 Parra's four options are four inequivalent ways of reading the eight real Dirac equations as vector equations, arising from the four choices of which component's real part is declared scalar. They yield four equations differing only in the signs of the gradient and coupling terms, with the same mass term. Option $\{2\}$ is the Dirac–Hestenes equation and option $\{1\}$ is the Daviau space Clifford equation; the other two are new, and all four multiply the spinor on the right by the spin bivector and the velocity vector, so they share the bi-module structure. The options are permuted by the discrete quotient $D=\Gamma_{1,3}/\Gamma^{0}_{1,3}$, whose non-identity cosets are space inversion, time reversal and their product, and Parra labels the orbit by electron and positron, spin up and spin down. The matrix formalism cannot keep the options apart: a complex linear combination mixes them, which is the first-quantised shadow of the separate creation and annihilation operators per spin polarisation of quantum electrodynamics. The Parra spinors have a quaternion form, and they are general elements of the biquaternion algebra, exactly the corpus's Dirac field on eight real parameters. Fauser's structural conclusion is a refinement of the spin Clifford bundle to the **spin-particle Clifford bundle**, whose fibre is a set of even-equivalence classes of idempotents; in the corpus's terms this is the minimal-left-ideal picture of the spinor with the idempotent taken modulo the even group, and the four Parra types are the four classes. The article records the construction as Parra's and Fauser's, reproduces it in the corpus's conventions, and claims no new physics.
@@ -182,19 +198,3 @@ Parra's four options are four inequivalent ways of reading the eight real Dirac 
 - W. A. Rodrigues Jr., E. C. de Oliveira and others, on the spin Clifford bundle, referred to by Fauser for the comparison with the spin-particle bundle.
 - A. Crumeyrolle, *Orthogonal and Symplectic Clifford Algebras* (Kluwer, 1990), for the invariance of the Clifford structure under the odd transformations of the Clifford–Lipschitz group.
 - The companion articles of this series: [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html), [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html), [Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form](antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html), [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html), and [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

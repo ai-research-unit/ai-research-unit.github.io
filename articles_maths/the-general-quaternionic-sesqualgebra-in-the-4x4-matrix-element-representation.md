@@ -48,7 +48,7 @@ $$
 $$
 where $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$.
 
-*Proof.* The representation is multiplicative, carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$ and ${}^{*}$ to the dagger, so the image of $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is the displayed word. $\square$
+*Proof.* The representation is multiplicative, carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$ and ${}^{*}$ to the dagger, so the image of $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is the displayed word.
 
 **The fundamental symmetry.** The natural conjugation $J={}^{\natural}$ is an involution commuting with the complex coefficients. It is the fundamental symmetry of the Krein form: its $+1$ eigenspace is the complex scalar line, of real dimension $2$, and its $-1$ eigenspace is the vector subspace, of real dimension $6$. On the regular matrices the same involution is $X\mapsto C X^{\mathsf T}C^{-1}$, and the two eigenspaces are the scalar matrices and the traceless part of the left copy. The $J$-unitary operators are the isometries of the Krein form, the group $\mathrm U(1,3)$ of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
@@ -67,7 +67,7 @@ $$
 $$
 the general quaternionic sesquilinear form multiplied by twice the algebraic norm of the first factor.
 
-*Proof.* The adjugate is $\langle\tilde Q_1\rangle_{\natural}\mathsf M_4^{L}(\tilde Q_1^{\natural})$, and the dagger of the second factor is $\mathsf M_4^{L}(\tilde Q_2^{*})$. The product is $\langle\tilde Q_1\rangle_{\natural}\mathsf M_4^{L}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, whose trace is $4\langle\tilde Q_1\rangle_{\natural}\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=4\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. Half of it is the statement. $\square$
+*Proof.* The adjugate is $\langle\tilde Q_1\rangle_{\natural}\mathsf M_4^{L}(\tilde Q_1^{\natural})$, and the dagger of the second factor is $\mathsf M_4^{L}(\tilde Q_2^{*})$. The product is $\langle\tilde Q_1\rangle_{\natural}\mathsf M_4^{L}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, whose trace is $4\langle\tilde Q_1\rangle_{\natural}\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=4\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. Half of it is the statement.
 
 **Corollary (the norm-one slice).** On $\langle\tilde Q_1\rangle_{\natural}=1$ the adjugate is the natural conjugate and the identity is
 $$

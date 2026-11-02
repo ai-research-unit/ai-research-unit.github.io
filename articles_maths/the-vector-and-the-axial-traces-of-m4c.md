@@ -96,7 +96,7 @@ $$
 =\operatorname{Tr}_{\Delta}(b)+\operatorname{Tr}_{\Delta,5}(b)\; } .
 $$
 
-**Proof.** The two displayed values are $4a_0$ and $4ia'_0$, and $b_0=a_0+ia'_0$. $\square$
+**Proof.** The two displayed values are $4a_0$ and $4ia'_0$, and $b_0=a_0+ia'_0$.
 
 **The reading.** The identity is not a decomposition of the trace of an arbitrary $4\times4$ matrix. It holds on the image of $\mathbb{B}$, where the two traces are the real and imaginary parts of one complex number. For a general $A\in M_4(\mathbb{C})$, $\operatorname{tr}A$ and $\operatorname{tr}\bigl((-iL_{e_t}R_{e_z})A\bigr)$ are two independent complex functionals, and their sum is not $\operatorname{tr}A$. The identity is a statement about the **even Clifford subalgebra** and its real-linear parametrisation by $\mathbb{B}$.
 
@@ -132,7 +132,7 @@ $$
 $$
 because $L_{e_t}R_{e_t}=I$, $L_{e_t}R_{e_z}$ is the pseudoscalar cell, and every other $L_{e_\mu}R_{e_\nu}$ is a vector, bivector or trivector product.
 
-**Proof.** The table of *The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$* gives $L_{e_t}R_{e_t}=I$, the pseudoscalar $L_{e_t}R_{e_z}$, and the other fourteen as vectors, bivectors or trivectors. The trace of every graded cell other than $I$ and $L_{e_t}R_{e_z}$ is zero, and $L_{e_t}R_{e_z}$ times a vector, bivector or trivector is again one of those. Only $I$ and $L_{e_t}R_{e_z}$ survive: $\operatorname{tr}I=4$ and $\operatorname{tr}\bigl((-iL_{e_t}R_{e_z})L_{e_t}R_{e_z}\bigr)=4i$. $\square$
+**Proof.** The table of *The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$* gives $L_{e_t}R_{e_t}=I$, the pseudoscalar $L_{e_t}R_{e_z}$, and the other fourteen as vectors, bivectors or trivectors. The trace of every graded cell other than $I$ and $L_{e_t}R_{e_z}$ is zero, and $L_{e_t}R_{e_z}$ times a vector, bivector or trivector is again one of those. Only $I$ and $L_{e_t}R_{e_z}$ survive: $\operatorname{tr}I=4$ and $\operatorname{tr}\bigl((-iL_{e_t}R_{e_z})L_{e_t}R_{e_z}\bigr)=4i$.
 
 **The reading on the basis.** For
 $$
@@ -164,7 +164,7 @@ $$
 \operatorname{tr}\bigl((-iL_{e_t}R_{e_z})\mathsf{M}_4(X)\bigr)=0 .
 $$
 
-**Proof.** In the chiral basis the pseudoscalar cell reads $-iL_{e_t}R_{e_z}=\operatorname{diag}(I_2,-I_2)$; an odd element is off-diagonal, so its trace is zero. The product $(-iL_{e_t}R_{e_z})X$ is also off-diagonal, so its trace is zero. $\square$
+**Proof.** In the chiral basis the pseudoscalar cell reads $-iL_{e_t}R_{e_z}=\operatorname{diag}(I_2,-I_2)$; an odd element is off-diagonal, so its trace is zero. The product $(-iL_{e_t}R_{e_z})X$ is also off-diagonal, so its trace is zero.
 
 **The reading.** The odd sector is invisible to both traces. The vector and axial traces see the even part only, and within the even part they see only the scalar and the pseudoscalar. This is why a trace cannot detect the odd generator: the odd generator is not an element of the biquaternion algebra but an operation on the module, and its contribution to a closed trace vanishes.
 
@@ -185,6 +185,22 @@ $$
 \operatorname{tr}L_{e_t}R_{e_z}=0 .
 $$
 The axial trace of an element $b$ is not the trace of $L_{e_t}R_{e_z}$; it is the trace of the product $(-iL_{e_t}R_{e_z})\mathsf{M}_4(b)$. For $b=I$ it vanishes; for $b=i$ it is $4i$. The distinction is the reason the axial trace can be nonzero while the trace of the chirality is zero.
+
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
@@ -227,19 +243,3 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the trace form and the Hermitian structure.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the real-linear embedding and the explicit matrices, §*The Clifford Structure and the Frame*.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the bar, the star and the two Clifford dictionaries.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

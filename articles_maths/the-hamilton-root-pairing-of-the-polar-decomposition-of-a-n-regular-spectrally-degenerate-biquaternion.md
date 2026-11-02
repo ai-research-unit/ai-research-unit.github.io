@@ -70,7 +70,7 @@ The exponent has a nilpotent noncentral part $\vec\Upsilon$ and a central part $
 
 **Theorem (the degenerate Hamilton form).** Every element of $\Sigma_{10}$ is the product of its complex modulus $\Rho$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.
 
-*Proof.* The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\Rho$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\Rho=\operatorname{Log}\tilde U$, which is unique in the branch of *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*, §*The Exact Logarithm*. $\square$
+*Proof.* The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\Rho$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\Rho=\operatorname{Log}\tilde U$, which is unique in the branch of *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*, §*The Exact Logarithm*.
 
 The first factor is the complex modulus, as in the regular pairing. The second factor is not the exponential of a root times an angle; it is the exponential of a nilpotent, and its noncentral part is the logarithm of a unipotent element.
 

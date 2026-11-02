@@ -80,7 +80,7 @@ D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(
 (D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)(x,y).
 $$
 
-**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j}+L_{e_j}L_{e_i}=0$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
+**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j}+L_{e_j}L_{e_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
 
 **Corollary (explicit spectrum and positivity).** In the negative definite case, where the dagger is positive, $\sum_jq(e_j) = -m$ and
 
@@ -93,6 +93,22 @@ so $D_{\mathrm{alg}}$ is a skew-adjoint operator with purely imaginary spectrum 
 **Remark (the sign bookkeeping).** The sign of $\sum_jq(e_j)$ is the whole content of the positivity: the Dirac element squares to the **negative** of the sum of the squares of the frame, which is positive exactly in the definite case, and the Hermitian square $D^{*}D$ is the positive operator $-\sum_jq(e_j)\,\mathrm{id}$. For an indefinite form the sum can vanish — the isotropic case — and the Dirac element is then nilpotent up to the metric, which is the algebraic form of the failure of ellipticity.
 
 **Example (the biquaternion algebra).** In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$ with the frame $\vec e_x,\vec e_y,\vec e_z$ of square $-1$, the Dirac element $D_{\mathrm{alg}} = L_{\vec e_x}+L_{\vec e_y}+L_{\vec e_z}$ is skew-adjoint with $D_{\mathrm{alg}}^{2} = -3\,\mathrm{id}$ and $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = 3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and the eigen-spinors form an orthonormal basis of $\mathbb{B}$ for the form $\mathrm{Sc}(x^{\dagger}y)$. This is the smallest definite model with a non-abelian spin group, and it realises the spectral gap explicitly.
+
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
@@ -122,20 +138,3 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 - Mikio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for self-adjoint operators, their spectra and the positivity of $D^{*}D$.
 - Richard S. Palais, *The Atiyah–Singer Index Theorem*, Lecture Notes in Mathematics 835 (Springer, 1995), for the index of the chiral part of a Dirac operator and its computation from the geometry.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Dirac element, its square and the explicit low-dimensional models.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-

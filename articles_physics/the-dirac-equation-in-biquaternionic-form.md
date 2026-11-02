@@ -40,10 +40,15 @@ with $\Delta=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\par
 The dynamics of this article is the **chiral pair**
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;}
+\boxed{\;
+\begin{aligned}
+\tilde{\nabla}\tilde{\Psi}_R &= m\tilde{\Psi}_L,\\[4pt]
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L &= m\tilde{\Psi}_R,
+\end{aligned}
+\;}
 $$
 
-for a field of mass $m$, and the single equation
+for a field of mass $m$, in the natural units $\hbar=c=1$ used throughout, and the single equation
 
 $$
 \tilde{\nabla}\tilde{\Psi} = 0
@@ -85,19 +90,19 @@ $$
 L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_{a}R_{b}:=L_aR_b,\qquad L_{a}R_{b}\psi=a\,\psi\,b,\qquad L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},
 $$
 
-with identity $L_{e_t}R_{e_t}$ and inverse $(L_{a}R_{b})^{-1}=L_{a^{-1}}R_{b^{-1}}$. The bivectors of $\mathrm{Cl}_{1,3}^+$ span a 6-dimensional real space. Three of them are timelike-spacelike — the cells $L_{\vec e_x}R_{\vec e_z}$, $L_{\vec e_y}R_{\vec e_z}$, $L_{\vec e_z}R_{\vec e_z}$ in the frame of the appendix — and have square $+L_{e_t}R_{e_t}$. Three are spacelike-spacelike — the cells $L_{\vec e_x}R_{e_t}$, $L_{\vec e_y}R_{e_t}$, $L_{\vec e_z}R_{e_t}$ — and have square $-L_{e_t}R_{e_t}$. The three spacelike cells generate a copy of the quaternions $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$. The isomorphism is given by mapping the quaternion units to three mutually anticommuting spacelike cells, oriented so that $\vec e_x \vec e_y = \vec e_z$. Concretely, one valid assignment is
+with identity $L_{e_t}R_{e_t}$ and inverse $(L_{a}R_{b})^{-1}=L_{a^{-1}}R_{b^{-1}}$. The bivectors of $\mathrm{Cl}_{1,3}^+$ span a 6-dimensional real space. Three of them are timelike-spacelike — the cells $L_{\vec e_x}R_{\vec e_z}$, $L_{\vec e_y}R_{\vec e_z}$, $L_{\vec e_z}R_{\vec e_z}$ in the frame of the Gamma section — and have square $+L_{e_t}R_{e_t}$. Three are spacelike-spacelike — the cells $L_{\vec e_x}R_{e_t}$, $L_{\vec e_y}R_{e_t}$, $L_{\vec e_z}R_{e_t}$ — and have square $-L_{e_t}R_{e_t}$. The three spacelike cells generate a copy of the quaternions $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$. The isomorphism is given by mapping the quaternion units to three mutually anticommuting spacelike cells, oriented so that $\vec e_x \vec e_y = \vec e_z$. Concretely, one valid assignment is
 
 $$
 \vec e_x \mapsto L_{\vec e_x}R_{e_t}, \qquad \vec e_y \mapsto L_{\vec e_y}R_{e_t}, \qquad \vec e_z \mapsto L_{\vec e_z}R_{e_t},
 $$
 
-in the frame of the appendix. The choice of which cell corresponds to which quaternion unit is a convention; different choices are related by rotations of the spatial frame. With the mostly-minus generators the three signs can be taken positive simultaneously, since $L_{\vec e_x}R_{e_t}L_{\vec e_y}R_{e_t} = L_{\vec e_z}R_{e_t}$ and $\vec e_x \vec e_y = \vec e_z$; under the opposite sign of the metric that is impossible, and one of the three cells must be reversed.
+in the frame of the Gamma section. The choice of which cell corresponds to which quaternion unit is a convention; different choices are related by rotations of the spatial frame. With the mostly-minus generators the three signs can be taken positive simultaneously, since $L_{\vec e_x}R_{e_t}L_{\vec e_y}R_{e_t} = L_{\vec e_z}R_{e_t}$ and $\vec e_x \vec e_y = \vec e_z$; under the opposite sign of the metric that is impossible, and one of the three cells must be reversed.
 
 The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar of $\mathrm{Cl}_{1,3}$, the volume cell $-L_{e_t}R_{\vec e_z}$, up to a sign: the volume cell squares to $-L_{e_t}R_{e_t}$, as $i$ squares to $-1$, and $i$ times it is the chirality cell $-iL_{e_t}R_{\vec e_z}$. This correspondence is what makes the complexification of the quaternions inside $\mathbb{B}$ match the complexification of the even Clifford algebra.
 
 ### The Frame in the Cell Algebra
 
-A frame of the cell algebra is a set of five cells, not an element of $\mathbb{B}$ alone. The biquaternion algebra is $\mathrm{Cl}^+_{1,3}$; the cell algebra is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and its elements act on a state $\psi$ by $L_{a}R_{b}\psi=a\psi b$. The frame used in this article is one frame of that algebra, written once in the appendix; a different frame is related to it by a change of basis.
+A frame of the cell algebra is a set of five cells, not an element of $\mathbb{B}$ alone. The biquaternion algebra is $\mathrm{Cl}^+_{1,3}$; the cell algebra is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and its elements act on a state $\psi$ by $L_{a}R_{b}\psi=a\psi b$. The frame used in this article is one frame of that algebra, written once in the Gamma section; a different frame is related to it by a change of basis.
 
 The Clifford relations are then the quaternion relations in disguise. The square of a cell is the cell of the squares, $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$; since $e_t^2=e_t$, a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, $-L_{e_t}R_{e_t}$. From the multiplication table and $\vec e_k^2 = -e_t$,
 
@@ -277,7 +282,7 @@ $$
 
 which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies, in one object, the two helicities as the two minimal left ideals of the shifted pair — which is the framework's own statement (*The Biquaternion Vacuum as a Minimal Idempotent*) that a helicity state is a rank-one Hermitian idempotent of the algebra, here with the parameter's direction in place of the vacuum's.
 
-**Which pair, and which splitting.** The projectors $P_\pm$ are **not** the chirality projectors of the following subsection. The chirality pair is built from the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\tfrac12(e_t\pm\chi)$, and it is Hermitian and orthogonal; its representative on $\Delta$ is $\tfrac12(L_{e_t}R_{e_t}\mp iL_{e_t}R_{\vec e_z})$ in the frame of the appendix. The pair $P_\pm$ is built from the shift parameter and acts by right multiplication, so its elements are non-Hermitian and, as the algebra requires, not orthogonal. Helicity and chirality coincide only for a massless field; at $m\neq0$ the two pairs are genuinely different splittings of the same space, and the neutrino or antineutrino identification is a statement about the helicity pair and not about $\chi$. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary null idempotents, one for each sign of the frequency — and the name *neutrino* is the source's, not the algebra's.
+**Which pair, and which splitting.** The projectors $P_\pm$ are **not** the chirality projectors of the following subsection. The chirality pair is built from the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\tfrac12(e_t\pm\chi)$, and it is Hermitian and orthogonal; its representative on $\Delta$ is $\tfrac12(L_{e_t}R_{e_t}\mp iL_{e_t}R_{\vec e_z})$ in the frame of the Gamma section. The pair $P_\pm$ is built from the shift parameter and acts by right multiplication, so its elements are non-Hermitian and, as the algebra requires, not orthogonal. Helicity and chirality coincide only for a massless field; at $m\neq0$ the two pairs are genuinely different splittings of the same space, and the neutrino or antineutrino identification is a statement about the helicity pair and not about $\chi$. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary null idempotents, one for each sign of the frequency — and the name *neutrino* is the source's, not the algebra's.
 
 ### The Integral Representation of the Harmonic Spinor Field
 
@@ -341,7 +346,7 @@ in the frame of *The Frame in the Cell Algebra* above, where the timelike genera
 
 ## Relativistic Kinematics in Biquaternionic Form
 
-Before developing the biquaternionic Dirac equation, it is useful to collect the basic relativistic kinematic quantities in biquaternion form. These are the objects that appear in the Dirac equation and its solutions, and they are established physics rewritten in biquaternion notation.
+Before the solutions are written, it is useful to collect the basic relativistic kinematic quantities in biquaternion form. These are the objects that appear in the Dirac equation and its solutions, and they are established physics rewritten in biquaternion notation.
 
 ### The Four-Position
 
@@ -358,7 +363,7 @@ with $x_0 = ict'$. The scalar part is the complex time coordinate, and the vecto
 The invariant interval is the square of the biquaternion displacement:
 
 $$
-ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R} \circ \overline{d\tilde{R}} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2 d{t'}^2 +dx^2+dy^2+dz^2.
+ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = -c^2 d{t'}^2 +dx^2+dy^2+dz^2.
 $$
 
 This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $ict'$ convention.
@@ -418,7 +423,7 @@ The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{V}/d\tau$, where 
 | Quantity | Biquaternion | Constraint |
 |---|---|---|
 | Four-position | $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | — |
-| Interval | $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\circ\overline{d\tilde{R}}$ | $= -c^2 d{t'}^2 +dx^2+dy^2+dz^2$ |
+| Interval | $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural}$ | $= -c^2 d{t'}^2 +dx^2+dy^2+dz^2$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\, e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ |
 | Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | — |
@@ -438,12 +443,17 @@ $$
 For a field of mass $m$ the equation is **linear** in $\tilde{\Psi}$ and **off-diagonal in chirality**. Writing the field as a pair of chiral components, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ with $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, the massive equation is the pair
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R\;}.
+\boxed{\;
+\begin{aligned}
+\tilde{\nabla}\tilde{\Psi}_R &= m\tilde{\Psi}_L,\\[4pt]
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L &= m\tilde{\Psi}_R.
+\end{aligned}
+\;}.
 $$
 
-Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. On the spinor module the same statement is the pair equation $(\mathbb{D} - m)\psi = 0$ of the first section, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors and $\mathbb{D}$ the pair operator.
+Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. On the spinor module the same statement is the pair equation $(\mathbb{D} - mc/\hbar)\psi = 0$, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors and $\mathbb{D}$ the pair operator.
 
-A **single-string form** of the same pair is recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing the wave function in the light-cone coordinates and using that article's outer and inner products, the chiral pair becomes one expression, $F^- \odot \bar D + D \otimes F^+ = im\overset{⤺}{F}$, in which the two products carry the two chiralities and the cyclic conjugation $\overset{⤺}{\phantom{x}}$ carries the mass term. The equivalence of that expression with the Weyl system is verified row by row there. The pair above remains the definitional home of the biquaternionic Dirac equation; the single-string form is a repackaging in a different product, not a different equation.
+A **single-string form** of the same pair is recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing the wave function in the light-cone coordinates and using that article's outer and inner products, the chiral pair becomes one expression, $F^- \odot \bar D + D \otimes F^+ = im\overset{\curvearrowleft}{F}$, in which the two products carry the two chiralities and the cyclic conjugation $\overset{\curvearrowleft}{\phantom{x}}$ carries the mass term. The equivalence of that expression with the Weyl system is verified row by row there. The pair above remains the definitional home of the biquaternionic Dirac equation; the single-string form is a repackaging in a different product, not a different equation.
 
 The mass term is the term that breaks the exact correspondence between the biquaternionic Dirac equation and the biquaternionic Maxwell equation. It is linear in the field, the biquaternion transcription of the mass term $m\psi$ of the matrix Dirac equation.
 
@@ -504,7 +514,7 @@ $$
 and likewise for $\tilde{\Psi}_L$, so each chiral component satisfies the **Klein–Gordon equation**
 
 $$
-\left(\Box - m^2c^2/\hbar^2\right)\tilde{\Psi} = 0 ,
+\left(\Box - m^2\right)\tilde{\Psi} = 0 ,
 $$
 
 in agreement with the companion article on the Klein–Gordon equation, whose operator is $\Box - m^2c^2/\hbar^2$. This is the biquaternion form of the statement that the square of the first-order operator is the Klein–Gordon operator.
@@ -553,7 +563,7 @@ $$
 Eliminating $\tilde{\Psi}_0^L$ gives
 
 $$
-\tilde{P}\tilde{P}^{\natural}/\hbar^{2}\,\tilde{\Psi}_0^R = -m^2\,\tilde{\Psi}_0^R ,
+\frac{\tilde{P}\tilde{P}^{\natural}}{\hbar^{2}}\,\tilde{\Psi}_0^R = -m^2\,\tilde{\Psi}_0^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
@@ -692,7 +702,7 @@ $$
 \tilde{\nabla}\tilde Q_1 = m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = m\tilde Q_1,
 $$
 
-comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde Q_2$ acts back on the object that generates it, with the strength $m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
+comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde Q_2$ acts back on the object that generates it, with the strength $mc/\hbar$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
 The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split into the two chiral halves $S$ and $S^{\mathrm{c}}$ — not the two Peirce carriers, which are copies of $S$ — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
 
@@ -794,6 +804,20 @@ This interpretation is the origin of the *triality construction* recorded in the
 
 These questions are open.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
+
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The Dirac equation in biquaternionic form is the equation
@@ -810,7 +834,7 @@ $$
 
 for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component in each chiral half, $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, and the mass term is the linear off-diagonal pairing. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$; the chirality cell $-iL_{e_t}R_{\vec e_z}$ is its representative. The massless equation has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
 
-The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\circ\overline{d\tilde{R}}$.
+The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural}$.
 
 The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
 
@@ -887,17 +911,3 @@ The same construction has two consequences that belong to the equation rather th
 - V. G. Bagrov and D. M. Gitman, *Exact Solutions of Relativistic Wave Equations* (Kluwer, Dordrecht, 1990), for the encyclopaedic compendium and review of the known exact solutions of the Dirac equation up to the late 1980s.
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the same interpretation in the order-$\ell$ ding language, and for the parent-action duality recorded in *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

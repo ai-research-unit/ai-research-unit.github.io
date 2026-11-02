@@ -435,6 +435,18 @@ the curvature constant and the surface umbilic at every point, and the latitude 
 
 **Proof.** The frame is the sandwich of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
 
+## The Gamma Formulation
+
+The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
+
+$$
+\gamma_\mu=i\vec e_\mu,\qquad \gamma_\mu^2=+e_t,\qquad \gamma_\mu\gamma_\nu=-\gamma_\nu\gamma_\mu\quad(\mu\neq\nu).
+$$
+
+A single product is a grade-two unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$ for $j\neq k$, and the three products are the units $\vec e_x,\vec e_y,\vec e_z$ up to sign.
+
+The dictionary is exact inside $\mathbb{B}$; over $\mathbb{R}$ the three grade-one units generate $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})\cong\mathbb{B}$, and no complexification is needed.
+
 ## Summary
 
 A moving orthonormal frame in the three-dimensional Euclidean space is a rotor $r$ of the real quaternion subspace of $\mathbb{B}$, the frame is $v_k=r(i\vec e_k)r^{\dagger}$, and the whole infinitesimal displacement of the frame is the single $\mathbb{G}_2$-valued one-form
@@ -502,15 +514,3 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 - Manfredo P. do Carmo, *Differential Geometry of Curves and Surfaces* (Prentice-Hall, 1976), for the classical local theory of the Frenet frame, of the two fundamental forms and of the Gauss and Codazzi–Mainardi equations, against which the formulas of this article are read.
 - Wilhelm Klingenberg, *A Course in Differential Geometry* (Springer, 1978), for the moving-frame method and the structure equations of a surface in the classical form.
 - Élie Cartan, *Leçons sur la géométrie des espaces de Riemann* (Gauthier-Villars, Paris, 1928), for the method of moving frames and the connection forms as the general apparatus of which the construction here is the three-dimensional instance.
-
-## Appendix — The Gamma Formulation
-
-The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
-
-$$
-\gamma_\mu=i\vec e_\mu,\qquad \gamma_\mu^2=+e_t,\qquad \gamma_\mu\gamma_\nu=-\gamma_\nu\gamma_\mu\quad(\mu\neq\nu).
-$$
-
-A single product is a grade-two unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$ for $j\neq k$, and the three products are the units $\vec e_x,\vec e_y,\vec e_z$ up to sign.
-
-The dictionary is exact inside $\mathbb{B}$; over $\mathbb{R}$ the three grade-one units generate $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})\cong\mathbb{B}$, and no complexification is needed.

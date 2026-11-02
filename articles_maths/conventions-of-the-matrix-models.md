@@ -233,7 +233,7 @@ iL_{\vec e_y}R_{\vec e_y},\qquad
 iL_{\vec e_z}R_{\vec e_y},\qquad
 -iL_{e_t}R_{\vec e_z}\;}
 $$
-Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}$ and $-iR_{\vec e_z}$, and the two spellings are the same operator. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
+Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}$ and $-iR_{\vec e_z}$, and the two spellings are the same operator. In the canonical frame the five are monomial matrices, written out in the closing section together with the Pauli evaluation.
 
 **The Clifford relations.** They satisfy
 $$
@@ -253,7 +253,7 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the met
 | $3$ | $L_{e_t}R_{\vec e_y}$, $L_{\vec e_x}R_{\vec e_x}$, $L_{\vec e_y}R_{\vec e_x}$, $L_{\vec e_z}R_{\vec e_x}$ |
 | $4$ | $L_{e_t}R_{\vec e_z}$ |
 
-Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in the appendix of *Two-Sided Operators on the Biquaternion Algebra*.
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in section *Composition and the Two Closures* of *Two-Sided Operators on the Biquaternion Algebra*.
 
 **The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot^{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$; the reason is that one letter out of three, at superscript size, does not separate the two meanings (*Index, Notation and Corpus Conventions*, §*The Superscripts*). Every place in this series where $\mathrm{op}$ once marked a norm now writes the norm bare, and the competing norms keep their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$.
 
@@ -332,53 +332,7 @@ The determinant is the normalisation of the frame vectors and not an invariant o
 
 **What the frame buys and what it costs.** It buys the transpose dictionary: quaternion conjugation is transposition, so $M^{\natural}=M^{\mathsf T}$ entry by entry, and the eight unit matrices are real signed permutations, so a condition on an entry is a condition on a coefficient. It costs the block: no $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen products are all of one kind, so no five of them are singled out. The two articles of the frame are [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrices, the product, the trace, the determinant and the six subspaces as conditions on $M$, and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the operators, the sixteen cells and the coefficient matrix.
 
-## Summary
-
-The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
-
-The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
-
-The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
-
-The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
-
-The **four left matrices** $L_{e_\mu}=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_{e_\nu}=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
-
-The **sixteen basis matrices** are the products $L_{e_\mu}R_{e_\nu}$, in four families: $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$ and $L_{\vec e_j}R_{\vec e_k}$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
-
-The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame cells of the canonical frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$.
-
-The **axis-free frame** is the second display of the same operators, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its left matrix has the coefficients of $\tilde Q$ on the diagonal and the three vector directions entering by one rule, its eight unit matrices are real signed permutations of determinant $1$, and its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product. The change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$, and the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ are the same in both frames.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
-| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
-| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
-| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
-| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
-| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
-| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
-| $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$ |
-| $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
-| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The five cells of the canonical frame, timelike, three spatial, chirality |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$ |
-| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
-
-## Further Reading
-
-- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
-- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the coefficient basis read axis-free.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frame and the proof of the cell table.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the five-cell frame.
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are the five-cell frame of the body written as matrices; the body writes the cells.
 
@@ -457,3 +411,49 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
+
+The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
+
+The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
+
+The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
+
+The **four left matrices** $L_{e_\mu}=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_{e_\nu}=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
+
+The **sixteen basis matrices** are the products $L_{e_\mu}R_{e_\nu}$, in four families: $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$ and $L_{\vec e_j}R_{\vec e_k}$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
+
+The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame cells of the canonical frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$.
+
+The **axis-free frame** is the second display of the same operators, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its left matrix has the coefficients of $\tilde Q$ on the diagonal and the three vector directions entering by one rule, its eight unit matrices are real signed permutations of determinant $1$, and its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product. The change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$, and the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ are the same in both frames.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
+| $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
+| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
+| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
+| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
+| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
+| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$ |
+| $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
+| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The five cells of the canonical frame, timelike, three spatial, chirality |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$ |
+| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
+
+## Further Reading
+
+- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
+- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the coefficient basis read axis-free.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frame and the proof of the cell table.
+- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the comparison with the even subalgebra and the five-cell frame.

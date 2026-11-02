@@ -172,7 +172,7 @@ $$
 \psi'(t)=-\tilde X\exp(-t\tilde X)\varphi(t)+\exp(-t\tilde X)\tilde X\varphi(t)=0,
 $$
 
-because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$ is constant and $\varphi(t)=\exp(t\tilde X)$. The generator is recovered as $\varphi'(0)$, hence is unique. $\square$
+because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$ is constant and $\varphi(t)=\exp(t\tilde X)$. The generator is recovered as $\varphi'(0)$, hence is unique.
 
 **The subgroup depends on the line, the parametrisation on the vector.** Since $t$ ranges over $\mathbb{R}$, $\varphi_{\tilde X}$ and $\varphi_{\lambda\tilde X}$ have the same image for every real $\lambda\neq0$; the one-parameter subgroup, as a set, is the image of the real line $\mathbb{R}\tilde X$. The generator is fixed only once the parametrisation is fixed.
 
@@ -240,7 +240,7 @@ $$
 \kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}X\,\operatorname{tr}Y
 $$
 
-for all $X,Y$. Taking twice the real part gives the matrix formula, and the translation $\operatorname{tr}=2\operatorname{Sc}$ gives the algebra formula. $\square$
+for all $X,Y$. Taking twice the real part gives the matrix formula, and the translation $\operatorname{tr}=2\operatorname{Sc}$ gives the algebra formula.
 
 **The radical is the centre.** For $\tilde X=e_t$ the right-hand side vanishes, so $\kappa(e_t,\tilde Y)=0$ for every $\tilde Y$. Conversely write $\tilde X=a e_t+\tilde U$ with $\operatorname{Sc}\tilde U=0$; then $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}\operatorname{Sc}(\tilde U\tilde Y)$, and the plain form pairs the trace-free part nondegenerately with the whole algebra, so the vanishing for all $\tilde Y$ forces $\tilde U=0$. Hence
 

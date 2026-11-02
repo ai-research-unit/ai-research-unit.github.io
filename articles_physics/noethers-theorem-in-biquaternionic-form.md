@@ -294,6 +294,20 @@ the angular momentum of a free particle is a single biquaternion. This is the sa
 
 6. **Empirical content.** As everywhere in the framework, the currents derived here are the standard ones in new notation. Whether the biquaternion packaging imposes any constraint that the four-vector formulation does not is not established here.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,e_x\tilde{Q}e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,e_y\tilde{Q}e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,e_z\tilde{Q}e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}e_z .
+$$
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 Noether's theorem in biquaternionic form joins the action of *Relativistic Mechanics in Biquaternionic Form* to the conserved current of the same article. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is
@@ -374,17 +388,3 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the rotor whose conjugation carries the four-momentum between frames.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors that house the conserved objects.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, its conjugations, and the local complex structure.
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-$$
-\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,e_x\tilde{Q}e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,e_y\tilde{Q}e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,e_z\tilde{Q}e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}e_z .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

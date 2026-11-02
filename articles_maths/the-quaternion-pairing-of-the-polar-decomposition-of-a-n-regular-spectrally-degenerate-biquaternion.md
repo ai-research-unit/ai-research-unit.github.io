@@ -36,7 +36,7 @@ $$
 
 with $\tilde q$ a real quaternion of norm $r$ and $\tilde\Psi$ a real quaternion. The vector part of $\tilde\Psi$ is orthogonal to $\tilde q$.
 
-*Proof.* The factorisation is the regrouping of the four factors of the word, which exists on the sector. The orthogonality is the orthogonality of the axes, transported by the rotor conjugation. $\square$
+*Proof.* The factorisation is the regrouping of the four factors of the word, which exists on the sector. The orthogonality is the orthogonality of the axes, transported by the rotor conjugation.
 
 The pairing is a regrouping, not a new decomposition: the factors $\tilde q$ and $\exp(i\tilde\Psi)$ are the scale-times-rotor and the phase-times-boost of the unique word. Uniqueness is inherited from the word.
 

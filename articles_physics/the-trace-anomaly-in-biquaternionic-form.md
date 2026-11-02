@@ -207,6 +207,18 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 - The anomaly of a genuinely non-central biquaternion operator, and whether its eta-invariant part has a framework-specific form, is left to the $\theta$-vacuum article.
 - The scheme-independent coefficients of the biquaternion scalar and spinor fields are not computed here; only the counting that fixes them is identified.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
+
+Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+
+The metric is carried by the cells: $(iL_{e_t}R_{\vec e_x})^2=\mathbf 1$ and $(iL_kR_y)^2=-\mathbf 1$, and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}L_{a}R_{b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
@@ -246,16 +258,3 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 - D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* **388** (2003) 279–360, for the heat-kernel coefficients used in the anomaly.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford University Press, 2002), for the renormalisation of the effective action and the trace anomaly.
 - Companion articles: [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the regularised determinant whose variation is the anomaly; [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the $\beta$ function the anomaly is read against; [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the three metric levels and the trace pairing; [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html), for the phase of the non-central determinant; [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) and [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the sector interpretation of the component count.
-
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
-
-Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
-$$
-
-The metric is carried by the cells: $(iL_{e_t}R_{\vec e_x})^2=\mathbf 1$ and $(iL_kR_y)^2=-\mathbf 1$, and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}L_{a}R_{b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

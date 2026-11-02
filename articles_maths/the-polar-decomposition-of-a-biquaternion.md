@@ -146,11 +146,11 @@ $$
 =\tilde\Pi_{\mathrm i}(\tilde A)\,\tilde P'\,\tilde\Pi_{\mathrm f}(\tilde A).
 $$
 
-With the roles exchanged, $\tilde P'=\tilde\Pi_{\mathrm i}(\tilde A)\tilde P\tilde\Pi_{\mathrm f}(\tilde A)$; substituting this into the first display, and using $\tilde\Pi_{\mathrm i}^{2}=\tilde\Pi_{\mathrm i}$ and $\tilde\Pi_{\mathrm f}^{2}=\tilde\Pi_{\mathrm f}$, gives $\tilde P=\tilde P'$. $\square$
+With the roles exchanged, $\tilde P'=\tilde\Pi_{\mathrm i}(\tilde A)\tilde P\tilde\Pi_{\mathrm f}(\tilde A)$; substituting this into the first display, and using $\tilde\Pi_{\mathrm i}^{2}=\tilde\Pi_{\mathrm i}$ and $\tilde\Pi_{\mathrm f}^{2}=\tilde\Pi_{\mathrm f}$, gives $\tilde P=\tilde P'$.
 
 **Theorem (existence on the cone).** Every Hermitian positive semidefinite element has a Moore–Penrose inverse. For $\tilde Q_H$ it is the element of §*The Moore–Penrose Inverse of the Hermitian Factor*, given there in closed form.
 
-*Proof.* The three cases of that section check the four conditions by direct multiplication. $\square$
+*Proof.* The three cases of that section check the four conditions by direct multiplication.
 
 **Remark (general existence).** Every element of $\mathbb{B}$ has a Moore–Penrose inverse, but the fact is not used here: the polar decomposition needs only $\tilde Q_H^{+}$, and that is computed directly. For a general $\tilde A$ the computation also requires the spectral data of $\tilde A\tilde A^{*}$; the general theorem is *The Moore–Penrose Inverse in an Involutive Algebra*.
 
@@ -184,7 +184,7 @@ $$
 
 so $\lvert\vec W\rvert/(2a)\le a$. Hence $\tilde Q_H$ lies in the Hermitian cone. For $a=0$ the element $\tilde Q$ is $0$ and $\tilde Q_H=0$.
 
-The square root in the cone is unique: an element of the cone has exactly one square root in the cone (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition*). Since $\tilde Q\tilde Q^{*}$ is in the cone and $\tilde Q_H$ is a square root of it in the cone, $\tilde Q_H$ is that root. $\square$
+The square root in the cone is unique: an element of the cone has exactly one square root in the cone (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition*). Since $\tilde Q\tilde Q^{*}$ is in the cone and $\tilde Q_H$ is a square root of it in the cone, $\tilde Q_H$ is that root.
 
 **Remark (the scalar part).** The scalar part of $\tilde Q_H$ is $a$, and the vector part is $i\vec W/(2a)$, of length $\lvert\vec W\rvert/(2a)\le a$. The element is the sum of the central element $a e_t$ and the vector part $i\vec W/(2a)$, whose length is at most $a$. When $\vec W=0$ the factor is the central element $a e_t$.
 
@@ -198,7 +198,7 @@ $$
 \boxed{\;\tilde Q_H^{2}-2a\,\tilde Q_H+\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert\,e_t=0\;}.
 $$
 
-*Proof.* With $\tilde Q_H=a e_t+i\vec W/(2a)$ one has $\tilde Q_H^{2}=\langle\tilde Q\rangle_{*}e_t+i\vec W$ and $2a\tilde Q_H=2a^{2}e_t+i\vec W$. The difference is $\bigl(\langle\tilde Q\rangle_{*}-2a^{2}+\lvert\langle\tilde Q\rangle_{\natural}\rvert\bigr)e_t$, which vanishes by the definition of $a^{2}$. $\square$
+*Proof.* With $\tilde Q_H=a e_t+i\vec W/(2a)$ one has $\tilde Q_H^{2}=\langle\tilde Q\rangle_{*}e_t+i\vec W$ and $2a\tilde Q_H=2a^{2}e_t+i\vec W$. The difference is $\bigl(\langle\tilde Q\rangle_{*}-2a^{2}+\lvert\langle\tilde Q\rangle_{\natural}\rvert\bigr)e_t$, which vanishes by the definition of $a^{2}$.
 
 **Theorem (the Moore–Penrose inverse of the Hermitian factor).** The Moore–Penrose inverse of $\tilde Q_H$ is
 
@@ -225,7 +225,7 @@ $$
 
 and the two products $\tilde Q_H\tilde X=\tilde Q_H^{2}/(4a^{2})=\tilde Q_H/(2a)$ and $\tilde X\tilde Q_H=\tilde Q_H/(2a)$ are Hermitian. The four Penrose equations hold, and the Moore–Penrose inverse is unique (§*The Moore–Penrose Inverse*).
 
-If $\tilde Q=0$ then $\tilde Q_H=0$ and its Moore–Penrose inverse is $0$. $\square$
+If $\tilde Q=0$ then $\tilde Q_H=0$ and its Moore–Penrose inverse is $0$.
 
 **Remark (the value at the cone).** On $\langle\tilde Q\rangle_{\natural}=0$ the inverse is $\tilde Q_H/(4a^{2})=\tilde\Pi_{\mathrm f}(\tilde Q)/(2a)$: the factor is a scaled projection, and its inverse is the same projection with the reciprocal scale. The two formulas do not meet at the cone; the limit of the first is infinite, and the second is the value.
 
@@ -239,7 +239,7 @@ $$
 \tilde Q=\tilde Q\bigl(\tilde Q^{+}\tilde Q\bigr)=\tilde Q\bigl(\tilde Q^{+}\tilde Q\bigr)^{*}=\tilde Q\tilde Q^{*}\tilde Q^{+*}\in\tilde Q\tilde Q^{*}\mathbb{B}
 $$
 
-gives the other. Then $\tilde Q_H\mathbb{B}=\tilde Q_H^{2}\mathbb{B}$, since $\tilde Q_H^{2}\mathbb{B}\subseteq\tilde Q_H\mathbb{B}$ and $\tilde Q_H=\tilde Q_H^{2}\tilde Q_H^{+}\in\tilde Q_H^{2}\mathbb{B}$, the last because $\tilde Q_H\tilde Q_H^{+}$ is the projection onto $\tilde Q_H\mathbb{B}$. Since $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$, the three ideals coincide. $\square$
+gives the other. Then $\tilde Q_H\mathbb{B}=\tilde Q_H^{2}\mathbb{B}$, since $\tilde Q_H^{2}\mathbb{B}\subseteq\tilde Q_H\mathbb{B}$ and $\tilde Q_H=\tilde Q_H^{2}\tilde Q_H^{+}\in\tilde Q_H^{2}\mathbb{B}$, the last because $\tilde Q_H\tilde Q_H^{+}$ is the projection onto $\tilde Q_H\mathbb{B}$. Since $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$, the three ideals coincide.
 
 **Theorem (the isometry factor).** Put $\tilde Q_0=\tilde Q_H^{+}\tilde Q$. Then
 
@@ -258,7 +258,7 @@ Conversely $\tilde Q=\tilde Q_H\tilde Q_0\in\tilde Q_0\mathbb{B}$, so $\tilde\Pi
 
 The idempotence of $\tilde Q_0\tilde Q_0^{*}$ makes $\tilde Q_0$ a partial isometry: from $(\tilde Q_0\tilde Q_0^{*})^{2}=\tilde Q_0\tilde Q_0^{*}$ one gets $(\tilde Q_0^{*}\tilde Q_0)^{3}=(\tilde Q_0^{*}\tilde Q_0)^{2}$, so $\tilde Q_0^{*}\tilde Q_0$, which is Hermitian, is idempotent, and $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0$. Then $\tilde Q_0^{*}\tilde Q_0$ is the projection onto the left ideal $\mathbb{B}\tilde Q_0$. The inclusion $\mathbb{B}\tilde Q_0\subseteq\mathbb{B}\tilde Q$ follows from $\tilde Q_0=\tilde Q_H^{+}\tilde Q$, and $\mathbb{B}\tilde Q\subseteq\mathbb{B}\tilde Q_0$ from $\tilde Q=\tilde Q_H\tilde Q_0$; the left ideals are equal, so $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}(\tilde Q)$.
 
-Finally $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm f}(\tilde Q)\tilde Q_0=\tilde Q_0$, because $\tilde Q_0\in\tilde\Pi_{\mathrm f}(\tilde Q)\mathbb{B}$ and $\tilde\Pi_{\mathrm f}(\tilde Q)$ is the projection onto that ideal. $\square$
+Finally $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm f}(\tilde Q)\tilde Q_0=\tilde Q_0$, because $\tilde Q_0\in\tilde\Pi_{\mathrm f}(\tilde Q)\mathbb{B}$ and $\tilde\Pi_{\mathrm f}(\tilde Q)$ is the projection onto that ideal.
 
 **Remark (the three cases of the formula).** The factor $\tilde Q_0$ inherits the three cases of $\tilde Q_H^{+}$:
 
@@ -303,7 +303,7 @@ $$
 \tilde Q_H^{+}\tilde Q=\tilde Q_H^{+}\tilde Q_H\tilde Q_0^\prime=\tilde\Pi_{\mathrm f}(\tilde Q)\,\tilde Q_0^\prime=\tilde Q_0^\prime\tilde Q_0^{\prime*}\tilde Q_0^\prime=\tilde Q_0^\prime,
 $$
 
-the middle equality by condition 3 and the last by the partial-isometry identity, which condition 3 implies. Hence $\tilde Q_0^\prime=\tilde Q_H^{+}\tilde Q=\tilde Q_0$. $\square$
+the middle equality by condition 3 and the last by the partial-isometry identity, which condition 3 implies. Hence $\tilde Q_0^\prime=\tilde Q_H^{+}\tilde Q=\tilde Q_0$.
 
 **Remark (the two redundant conditions).** The natural statement has six conditions; two are consequences.
 
@@ -353,7 +353,7 @@ $$
 \bigl\langle\tilde Q_H\bigr\rangle_{\natural}^{2}=\bigl\langle\tilde Q_H^{2}\bigr\rangle_{\natural}=\bigl\langle\tilde Q\tilde Q^{*}\bigr\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\overline{\langle\tilde Q\rangle_{\natural}}=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^{2}.
 $$
 
-In the closed form of §*The Hermitian Factor*, for $a>0$, $\langle\tilde Q_H\rangle_{\natural}=a^{2}-\lvert\vec W\rvert^{2}/(4a^{2})=\lvert\langle\tilde Q\rangle_{\natural}\rvert\ge0$, so the square root is the non-negative one; for $\tilde Q=0$ both norms vanish. $\square$
+In the closed form of §*The Hermitian Factor*, for $a>0$, $\langle\tilde Q_H\rangle_{\natural}=a^{2}-\lvert\vec W\rvert^{2}/(4a^{2})=\lvert\langle\tilde Q\rangle_{\natural}\rvert\ge0$, so the square root is the non-negative one; for $\tilde Q=0$ both norms vanish.
 
 **Remark (what each norm sees).** The Hermitian norm passes to the positive factor unchanged; the quaternionic norm passes to it in modulus, and is real there. Neither norm determines the isometry factor: that factor is fixed by the two ideals.
 
@@ -361,7 +361,7 @@ In the closed form of §*The Hermitian Factor*, for $a>0$, $\langle\tilde Q_H\ra
 
 **Theorem (the positive factor is continuous).** The map $\tilde Q\mapsto\tilde Q_H$ is continuous on the whole algebra.
 
-*Proof.* The map $\tilde Q\mapsto\tilde Q\tilde Q^{*}$ is polynomial, hence continuous, and so are its scalar part $\langle\tilde Q\rangle_{*}$ and its vector part $\vec W$. The modulus $\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is continuous, so $a$ is continuous. For $a>0$ the factor is $a e_t+i\vec W/(2a)$, continuous in $a$ and $\vec W$. At $a=0$ one has $\tilde Q=0$ and $\tilde Q_H=0$, and the vector part of the factor has length $\lvert\vec W\rvert/(2a)\le a$, which tends to $0$ with the element. $\square$
+*Proof.* The map $\tilde Q\mapsto\tilde Q\tilde Q^{*}$ is polynomial, hence continuous, and so are its scalar part $\langle\tilde Q\rangle_{*}$ and its vector part $\vec W$. The modulus $\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is continuous, so $a$ is continuous. For $a>0$ the factor is $a e_t+i\vec W/(2a)$, continuous in $a$ and $\vec W$. At $a=0$ one has $\tilde Q=0$ and $\tilde Q_H=0$, and the vector part of the factor has length $\lvert\vec W\rvert/(2a)\le a$, which tends to $0$ with the element.
 
 **Theorem (the isometry factor is discontinuous).** The map $\tilde Q\mapsto\tilde Q_0$ is not continuous at the null cone and not continuous at the origin.
 
@@ -386,7 +386,7 @@ $$
 
 The factor has the limit $e_t$ along the family and the value $\tilde\Pi_{\vec u}$ at the cone. The two differ, so the map is discontinuous there.
 
-At the origin, the family $\tilde Q=\epsilon e_t$ with $\epsilon>0$ has $\tilde Q_H=\epsilon e_t$ and $\tilde Q_0=e_t$, while $\tilde Q_0=0$ at $\epsilon=0$. The factor jumps from $e_t$ to $0$. $\square$
+At the origin, the family $\tilde Q=\epsilon e_t$ with $\epsilon>0$ has $\tilde Q_H=\epsilon e_t$ and $\tilde Q_0=e_t$, while $\tilde Q_0=0$ at $\epsilon=0$. The factor jumps from $e_t$ to $0$.
 
 **Remark (the jump is the degeneration).** The positive factor is the part of the polar data that survives both degenerations; the isometry factor records the collapse. In the first family the positive factor has the continuous limit $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, while the isometry factor drops from the identity to the projection onto the line of $\vec u$. In the second the positive factor falls to $0$ and the isometry with it. No choice of the Moore–Penrose inverse removes the jump: the value at the cone is forced by the ideal and projection conditions of §*Uniqueness*, and those conditions are what make the pair unique.
 

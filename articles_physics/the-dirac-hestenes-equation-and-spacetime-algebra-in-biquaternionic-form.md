@@ -28,7 +28,7 @@ v_\mu v_\nu + v_\nu v_\mu = 2\eta_{\mu\nu},
 \eta = \mathrm{diag}(+,-,-,-),
 $$
 
-so that $v_0^2 = +1$ and $v_k^2 = -1$. It is $\mathrm{Cl}_{1,3}(\mathbb R)$, the real Clifford algebra of signature $(+,-,-,-)$; the matrix representation is a convenience, not part of the structure. The literature writes this frame with a set of matrices; the dictionary is collected in the appendix. A general element is a **multivector** with components of grades zero to four:
+so that $v_0^2 = +1$ and $v_k^2 = -1$. It is $\mathrm{Cl}_{1,3}(\mathbb R)$, the real Clifford algebra of signature $(+,-,-,-)$; the matrix representation is a convenience, not part of the structure. The literature writes this frame with a set of matrices; the dictionary is collected in the Gamma section. A general element is a **multivector** with components of grades zero to four:
 
 | Grade | Elements | Count |
 |---|---|---|
@@ -191,6 +191,18 @@ with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\
 
 6. **Empirical contact.** As everywhere, an equivalent rewriting carries no prediction. The question is whether the identification of $i$ with $\omega$ lets the framework import any of STA's structural results, and if so whether any of them is testable.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+
+Here $L_{a}R_{b}$ is the cell that multiplies on the left by $a$ and on the right by $b$; it is not the time-reversal operator $T$ of the body. The article's frame is $v_\mu=\gamma_\mu$ and its pseudoscalar is $\omega=-i\gamma_5$.
+
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 Spacetime algebra is the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb R)$ of Minkowski space, and the Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3 - eA\psi = m\psi v_0$ is the Dirac equation rewritten in it as a single real equation for an even multivector spinor. The spinor has eight real components; it decomposes as $\psi = R(\rho \exp(i\beta))^{1/2}$ into a Lorentz rotor, a density and an angle; and the current is the geometric vector $J_\mu = \bar\psi v_\mu\psi$. The matrix theory is recovered by mapping the even multivector to the spinor components and the pseudoscalar to $i$.
@@ -224,15 +236,3 @@ The correspondence with the biquaternion framework is the closest in this series
 - W. E. Baylis (ed.), *Clifford (Geometric) Algebras with Applications in Physics, Mathematics and Engineering* (Birkhäuser, 1996), for the broader context.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, for the equivalence of this formulation with the space Clifford and Parra formulations used in the new subsection above.
 - The companion articles of this series: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), [The Daviau Map and the Space Clifford Formulation of the Dirac Equation](the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html), [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html), [Zitterbewegung in Biquaternionic Form](zitterbewegung-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), and [The Dirac–Kähler Equation](../articles_maths/the-dirac-kahler-equation.html).
-
-## Appendix — The Gamma Formulation
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
-$$
-
-Here $L_{a}R_{b}$ is the cell that multiplies on the left by $a$ and on the right by $b$; it is not the time-reversal operator $T$ of the body. The article's frame is $v_\mu=\gamma_\mu$ and its pseudoscalar is $\omega=-i\gamma_5$.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

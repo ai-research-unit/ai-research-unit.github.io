@@ -139,7 +139,7 @@ $$
 B^2=-\mu^2I_n .
 $$
 
-The first is the Clifford relation. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
+The first is the Clifford relation. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the Gamma section.
 
 The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
 
@@ -415,56 +415,7 @@ The identities were recomputed before they were written. The cell frame was buil
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.
 
-## Summary
-
-The first-order root of the biquaternion Klein–Gordon operator exists, and its size is fixed by the norm form. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
-
-The mass term is constrained by $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$. The only single-operator solution is $B=\pm i\mu\,-iR_{\vec e_z}$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
-
-The scalar Klein–Gordon field, taken as a central scalar, has no first-order root. The results are a classification of form: no mass, no coupling, and no dynamics are predicted. The open questions are the gauged, curved, position-dependent, and real-structure extensions.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
-| $i$ | Central scalar imaginary, $i^2=-1$ |
-| $Q_\mu$ | Algebra coordinates, $Q_t=ict'$ on $\mathbb{M}_-$ |
-| $x_\mu$ | Lorentz coordinates, $x_0=ct'$, $x_k$ spatial |
-| $g_{\mu\nu}$ | Lorentz metric, $\mathrm{diag}(+1,-1,-1,-1)$ |
-| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu$ | d'Alembertian, series convention and Lorentz form |
-| $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $\mu=mc/\hbar$ | Mass parameter (inverse reduced Compton wavelength) |
-| $\tilde P=iE/c\,e_t+\vec p$ | Material four-momentum |
-| $\tilde K=\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Corpus four-wavevector |
-| $\tilde K_{\mathrm s}=i\tilde K$ | Symbol of the gradient; $K_\mu$ its components |
-| $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generators of the root, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
-| $-iL_{e_t}R_{\vec e_z}$ | Pseudoscalar generator, $-iL_{e_t}R_{\vec e_z}=\rho(\chi)$ |
-| $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
-| $iR_{\vec e_x}k_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}k_{k}$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
-| $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\,-iR_{\vec e_z}$ | Single-square roots |
-| $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
-| $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |
-| $L_a,R_b$ | Left and right multiplication operators |
-| $L_{a}R_{b}$ | Two-sided cell |
-
-## Further Reading
-
-- P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the first-order equation and its second-order consequence.
-- O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the identity $(\mathsf D-\mu)(\mathsf D+\mu)=\Box-\mu^2$ and the plane-wave spinors.
-- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Clifford algebra, the gamma matrices, and the mass shell.
-- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the classification of Clifford algebras, the minimal modules, and the square root of the wave operator.
-- H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the complex and real Clifford algebras and their irreducible modules.
-- I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the periodicity and the module dimensions.
-- V. V. Kravchenko, *Quaternionic Analysis and Its Applications* (Birkhäuser, 2003), for the quaternionic Dirac operator and its relation to the Euclidean Clifford algebra.
-- The corpus articles *The Klein–Gordon Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Biquaternion D'Alembertian and Its Green's Functions*, and *Algebra and Element Conventions* for the conventions and the results this article builds on.
-- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *Spinors as Peirce Coordinates in the Biquaternion Algebra* for the two-sided algebra, the nilpotent that swaps the minimal left ideals, and the $M_2$/$M_4$ dictionary.
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are the five cells of the body, written as matrices:
 $$
@@ -515,3 +466,52 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+The first-order root of the biquaternion Klein–Gordon operator exists, and its size is fixed by the norm form. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
+
+The mass term is constrained by $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$. The only single-operator solution is $B=\pm i\mu\,-iR_{\vec e_z}$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
+
+The scalar Klein–Gordon field, taken as a central scalar, has no first-order root. The results are a classification of form: no mass, no coupling, and no dynamics are predicted. The open questions are the gauged, curved, position-dependent, and real-structure extensions.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $i$ | Central scalar imaginary, $i^2=-1$ |
+| $Q_\mu$ | Algebra coordinates, $Q_t=ict'$ on $\mathbb{M}_-$ |
+| $x_\mu$ | Lorentz coordinates, $x_0=ct'$, $x_k$ spatial |
+| $g_{\mu\nu}$ | Lorentz metric, $\mathrm{diag}(+1,-1,-1,-1)$ |
+| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu$ | d'Alembertian, series convention and Lorentz form |
+| $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
+| $\mu=mc/\hbar$ | Mass parameter (inverse reduced Compton wavelength) |
+| $\tilde P=iE/c\,e_t+\vec p$ | Material four-momentum |
+| $\tilde K=\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Corpus four-wavevector |
+| $\tilde K_{\mathrm s}=i\tilde K$ | Symbol of the gradient; $K_\mu$ its components |
+| $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generators of the root, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
+| $-iL_{e_t}R_{\vec e_z}$ | Pseudoscalar generator, $-iL_{e_t}R_{\vec e_z}=\rho(\chi)$ |
+| $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
+| $iR_{\vec e_x}k_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}k_{k}$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
+| $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\,-iR_{\vec e_z}$ | Single-square roots |
+| $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors |
+| $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |
+| $L_a,R_b$ | Left and right multiplication operators |
+| $L_{a}R_{b}$ | Two-sided cell |
+
+## Further Reading
+
+- P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the first-order equation and its second-order consequence.
+- O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the identity $(\mathsf D-\mu)(\mathsf D+\mu)=\Box-\mu^2$ and the plane-wave spinors.
+- C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Clifford algebra, the gamma matrices, and the mass shell.
+- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the classification of Clifford algebras, the minimal modules, and the square root of the wave operator.
+- H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the complex and real Clifford algebras and their irreducible modules.
+- I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the periodicity and the module dimensions.
+- V. V. Kravchenko, *Quaternionic Analysis and Its Applications* (Birkhäuser, 2003), for the quaternionic Dirac operator and its relation to the Euclidean Clifford algebra.
+- The corpus articles *The Klein–Gordon Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Biquaternion D'Alembertian and Its Green's Functions*, and *Algebra and Element Conventions* for the conventions and the results this article builds on.
+- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *Spinors as Peirce Coordinates in the Biquaternion Algebra* for the two-sided algebra, the nilpotent that swaps the minimal left ideals, and the $M_2$/$M_4$ dictionary.

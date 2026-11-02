@@ -6,7 +6,8 @@ The antisymmetric plain algebra of $\mathbb{H}$ is the real Lie algebra
 $\mathfrak{g}=(\mathbb{H},\times)$ with the cross product
 $\tilde q_1\times\tilde q_2=\vec q_1\times\vec q_2$ of *The Lie Algebra of the Antisymmetric Plain
 Algebra*, below this article in this category. This article computes its Killing form, identifies the
-space of invariant bilinear forms, exhibits the Casimir element and compares the form with the
+space of invariant bilinear forms, exhibits the Casimir element and compares the form with the Euclidean form of that
+subspace.
 
 The result is simple and rigid: the form is the Euclidean form of the vector subspace up to the factor
 $-2$, with the scalar direction in its radical, so it is negative semidefinite, negative definite on

@@ -134,40 +134,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 5. **Truly neutral composites.** A truly neutral field is one on which $C$ is the identity. Is the same true of a *composite* colour singlet, such as a quark–antiquark state in the framework's gauge-invariant sector, and does the division-ring criterion survive the composition?
 
-## Summary
-
-Charge conjugation is the pseudoautomorphism $\bar{A}=\Pi A^{*}\Pi^{-1}$ of a real Clifford algebra, and the matrix $\Pi$ that implements it is fixed by the algebra's division ring. Over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity and the conjugation is trivial; over a quaternionic ring $K\cong\mathbb{H}$ it is a genuine product of generators and the conjugation interchanges particle and antiparticle; over the complex field it is a conjugation between conjugate representations. The three cases are the three charge classes: charged particles at $Ϙ=+1$, neutral particles with antiparticles at $Ϙ=0$, and truly neutral particles at $Ϙ=\bar{0}$. The twice-conjugated spinor is $\bar{\bar{\xi}}=\pm\xi$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ the sign is $+1$, so $C^{2}=1$, an invariant fact of the spinor structure and the algebraic expression of the standard requirement on charge conjugation.
-
-The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_{2}$, the charged case, and it contains the real forms $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$ that carry the neutral and truly neutral cases. The division ring therefore places the three charge classes in one algebra: the photon's real self-conjugacy is the case $K\cong\mathbb{R}$, the neutron's neutrality is the case $K\cong\mathbb{H}$, and the charged fields are the complexification. What is transcribed is the classification and the physical assignments; what is established is the algebra-level form of the pseudoautomorphism, the identity case over a real division ring, and the sign of $C^{2}$.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
-| $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
-| $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
-| $\Pi$ | Charge-conjugation matrix; $\Pi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, fixed only up to a scalar |
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Generators of the cell frame, $(iR_{e_x})^{2}=L_{e_t}R_{e_t}$, $(iL_{e_k}R_{e_y})^{2}=-L_{e_t}R_{e_t}$ |
-| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}$ | One-sided multipliers and two-sided cells; $L_{a}R_{b}\psi=a\psi b$, $i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ |
-| $\bar{\xi}_{\bar\alpha}=\sum_\alpha\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
-| $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
-| $C[\psi]=i\,iL_{e_y}R_{e_y}\psi^{*}=-L_{e_y}R_{e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
-| $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |
-| $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-
-## Further Reading
-
-- B. L. van der Waerden, *Group Theory and Quantum Mechanics* (Springer, 1974), and R. Brauer and H. Weyl, "Spinors in $n$ dimensions," *American Journal of Mathematics* **57** (1935) 425–449, for spinors over the division rings $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$.
-- M. F. Atiyah, R. Bott and A. Shapiro, "Clifford modules," *Topology* **3** (1964) 3–38, for the classification of real and complex Clifford algebras and their division rings.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the intrinsic order-two maps and the pseudoautomorphism of a Clifford algebra.
-- P. K. Rashevskii, "The theory of spinors," *Uspekhi Matematicheskikh Nauk* **10** (1955) 3–110 (*American Mathematical Society Translations* (2) **6** (1957) 1–110), for the classification of the fundamental automorphisms.
-- V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the division-ring trichotomy of the charge-conjugation pseudoautomorphism and the charged, neutral and truly neutral classes.
-- Yu. P. Stepanovsky and V. V. Varlamov, on the interpretation of the discrete symmetries through the automorphism groups of Clifford algebras, for the extension of the classification used here.
-- Companion articles: [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html); [The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form](the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html); [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html); [The Neutron in Biquaternionic Form](the-neutron-in-biquaternionic-form.html); [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html); *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint*; *Clifford Algebra Representation*; *The Brauer Wall Group and the Eightfold Way*.
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -204,3 +171,36 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+Charge conjugation is the pseudoautomorphism $\bar{A}=\Pi A^{*}\Pi^{-1}$ of a real Clifford algebra, and the matrix $\Pi$ that implements it is fixed by the algebra's division ring. Over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity and the conjugation is trivial; over a quaternionic ring $K\cong\mathbb{H}$ it is a genuine product of generators and the conjugation interchanges particle and antiparticle; over the complex field it is a conjugation between conjugate representations. The three cases are the three charge classes: charged particles at $Ϙ=+1$, neutral particles with antiparticles at $Ϙ=0$, and truly neutral particles at $Ϙ=\bar{0}$. The twice-conjugated spinor is $\bar{\bar{\xi}}=\pm\xi$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ the sign is $+1$, so $C^{2}=1$, an invariant fact of the spinor structure and the algebraic expression of the standard requirement on charge conjugation.
+
+The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_{2}$, the charged case, and it contains the real forms $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$ that carry the neutral and truly neutral cases. The division ring therefore places the three charge classes in one algebra: the photon's real self-conjugacy is the case $K\cong\mathbb{R}$, the neutron's neutrality is the case $K\cong\mathbb{H}$, and the charged fields are the complexification. What is transcribed is the classification and the physical assignments; what is established is the algebra-level form of the pseudoautomorphism, the identity case over a real division ring, and the sign of $C^{2}$.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
+| $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
+| $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
+| $\Pi$ | Charge-conjugation matrix; $\Pi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, fixed only up to a scalar |
+| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Generators of the cell frame, $(iR_{e_x})^{2}=L_{e_t}R_{e_t}$, $(iL_{e_k}R_{e_y})^{2}=-L_{e_t}R_{e_t}$ |
+| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}$ | One-sided multipliers and two-sided cells; $L_{a}R_{b}\psi=a\psi b$, $i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ |
+| $\bar{\xi}_{\bar\alpha}=\sum_\alpha\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
+| $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
+| $C[\psi]=i\,iL_{e_y}R_{e_y}\psi^{*}=-L_{e_y}R_{e_y}\psi^{*}$ | Module form of charge conjugation (CPT article) |
+| $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |
+| $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |
+| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+
+## Further Reading
+
+- B. L. van der Waerden, *Group Theory and Quantum Mechanics* (Springer, 1974), and R. Brauer and H. Weyl, "Spinors in $n$ dimensions," *American Journal of Mathematics* **57** (1935) 425–449, for spinors over the division rings $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$.
+- M. F. Atiyah, R. Bott and A. Shapiro, "Clifford modules," *Topology* **3** (1964) 3–38, for the classification of real and complex Clifford algebras and their division rings.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the intrinsic order-two maps and the pseudoautomorphism of a Clifford algebra.
+- P. K. Rashevskii, "The theory of spinors," *Uspekhi Matematicheskikh Nauk* **10** (1955) 3–110 (*American Mathematical Society Translations* (2) **6** (1957) 1–110), for the classification of the fundamental automorphisms.
+- V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the division-ring trichotomy of the charge-conjugation pseudoautomorphism and the charged, neutral and truly neutral classes.
+- Yu. P. Stepanovsky and V. V. Varlamov, on the interpretation of the discrete symmetries through the automorphism groups of Clifford algebras, for the extension of the classification used here.
+- Companion articles: [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html); [The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form](the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html); [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html); [The Neutron in Biquaternionic Form](the-neutron-in-biquaternionic-form.html); [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html); *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint*; *Clifford Algebra Representation*; *The Brauer Wall Group and the Eightfold Way*.

@@ -94,7 +94,7 @@ $$
 
 **Statement (the inversion theorem).** If $\xi$ is a fixed spinor with $\bar\psi\xi\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\xi/(4\bar\psi\xi)$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the **boomerang**.
 
-Both statements follow from the rank-one form, and the sixteen-cell expansion agrees with them to machine precision on generic spinors. The literature's expansion hides the metric in its bivectors, which is where its apparent sign differences come from; in the corpus's frame, with $\sigma_{\mu\nu}$ the bivector of the appendix, the axial identity reads $Z$(the generator)$(-iR_{e_z})Z=4K_0Z$ for the timelike and $4K_kZ$ for the spacelike, and reordering the two cells reverses its sign.
+Both statements follow from the rank-one form, and the sixteen-cell expansion agrees with them to machine precision on generic spinors. The literature's expansion hides the metric in its bivectors, which is where its apparent sign differences come from; in the corpus's frame, with $\sigma_{\mu\nu}$ the bivector of the Gamma section, the axial identity reads $Z$(the generator)$(-iR_{e_z})Z=4K_0Z$ for the timelike and $4K_kZ$ for the spacelike, and reordering the two cells reverses its sign.
 
 **Remark (why the classification is finite).** The aggregate form shows why there are only finitely many types. The sixteen coefficients of $Z$ are not free — they are the expansion of a rank-one operator — and the five relations above pin them to the signs and the vanishings of five objects, $\sigma$, $\omega$, $J$, $K$ and $S$. The FPK identities are exactly the compatibility conditions that a rank-one aggregate imposes on those signs, and they admit the six patterns of the table and no others.
 
@@ -159,37 +159,7 @@ $$
 
 4. **The fifteen-dimension count.** The covariants span the sixteen-dimensional space of sesquilinear forms; the classification is a statement about the image of the spinor under the sixteen covariants modulo the FPK relations. Is there a corpus statement about the dimension of that image — sixteen minus the number of independent FPK relations — that the classification would sharpen?
 
-## Summary
-
-A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor — which are not independent but satisfy the **Fierz–Kofink identities**. The scalar part of the system is $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$; the tensor part is $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, and both are displayed here in the corpus's own conventions. The identities are equivalently expressed through the **Fierz aggregate** $Z=4\psi\bar\psi$, the rank-one operator whose sixteen cell coefficients are the covariants; it satisfies $Z^2=4\sigma Z$ and its companions and returns the spinor as $\psi=Z\xi/(4\bar\psi\xi)$ — Lounesto's **boomerang**. The identities force the covariants into exactly **six classes**, three regular ($\sigma$ or $\omega$ nonzero) and three singular ($\sigma=\omega=0$, with the possible vanishings of $K$ and $S$): Dirac, the two other regular types, the **flag-dipole**, the flagpole and the dipole. All six classes were verified to be non-empty by explicit representatives. The flag-dipole is the type the usual list of Dirac, real and chiral spinors does not exhaust and the one the classification was introduced to expose. This article supplies the four-dimensional completion of the corpus's internal Fierz identity, which the bilinear article records as missing, and it states the classification in the corpus's signature, with every formula displayed here checked in that signature. It is pure Clifford-algebra mathematics, with no framework speculation, and it is the ambient companion of the two-dimensional Fierz identity the corpus already carries.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $\eta$, $\eta=\mathrm{diag}(+1,-1,-1,-1)$ |
-| $-iL_{e_t}R_{e_z}$ | The chirality cell (pseudoscalar) |
-| $\bar\psi=\psi^{\dagger}\,iR_{e_x}$ | Dirac adjoint |
-| $\sigma=\bar\psi\psi$, $\omega=i\bar\psi\,-iR_{e_z}\psi$ | Scalar and pseudoscalar densities |
-| $J_0=\bar\psi\,iR_{e_x}\psi$ and $J_k=\bar\psi\,iL_{e_k}R_{e_y}\psi$ | Vector |
-| $K_0=-\bar\psi\,(-iR_{e_z})iR_{e_x}\psi$ and $K_k=-\bar\psi\,(-iR_{e_z})iL_{e_k}R_{e_y}\psi$ | Axial vector |
-| $S_{\mu\nu}=\bar\psi\,\sigma_{\mu\nu}\psi$, $\sigma_{\mu\nu}$ the bivector of the appendix | Antisymmetric tensor |
-| $J^2=\sigma^2+\omega^2=-K^2$, $J\cdot K=0$ | The scalar FPK identities |
-| $Z=4\psi\bar\psi$ | Fierz aggregate (boomerang), rank one |
-| $Z^2=4\sigma Z$ | The aggregate form of the identities |
-| $\psi=Z\xi$ | The inversion theorem |
-| flag-dipole, flagpole, dipole | The three singular classes $4,5,6$ |
-
-## Further Reading
-
-- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed., 2001), for the classification of spinors by their bilinear covariants, the Fierz aggregate and the boomerang; the origin of the classification.
-- J. P. Crawford, "On the algebra of Dirac bispinor densities: factorization and inversion theorems," *Journal of Mathematical Physics* **26** (1985) 1439, and "Bispinor geometry for even-dimensional space-time," *Journal of Mathematical Physics* **31** (1990) 1991, for the Fierz identities and the inversion theorem.
-- M. Fierz, "Zur Fermischen Theorie des $\beta$-Zerfalls," *Zeitschrift für Physik* **104** (1937) 553, and W. Kofink, "Über die Bilinearformen der Diracmatrizen," *Annalen der Physik* **30** (1937) 91, for the original identities.
-- R. J. Bueno Rogerio, "Subliminal aspects concerning the Lounesto's classification," arXiv:1911.08506, and R. A. da Rocha and collaborators, "On the generalized spinor classification: beyond the Lounesto classification," arXiv:1906.11622, for the modern treatment of the six classes, the flag-dipole, the class-6 exceptional case and the aggregate form.
-- B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §3, for the pointer to Lounesto's programme and the "new unknown type of spinor".
-- The companion articles of this series: *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions* (the internal Fierz identity and its declared gap, filled here), [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), and [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html).
-
-## Appendix — The Gamma Formulation
+## The Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -226,3 +196,33 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## Summary
+
+A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor — which are not independent but satisfy the **Fierz–Kofink identities**. The scalar part of the system is $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$; the tensor part is $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, and both are displayed here in the corpus's own conventions. The identities are equivalently expressed through the **Fierz aggregate** $Z=4\psi\bar\psi$, the rank-one operator whose sixteen cell coefficients are the covariants; it satisfies $Z^2=4\sigma Z$ and its companions and returns the spinor as $\psi=Z\xi/(4\bar\psi\xi)$ — Lounesto's **boomerang**. The identities force the covariants into exactly **six classes**, three regular ($\sigma$ or $\omega$ nonzero) and three singular ($\sigma=\omega=0$, with the possible vanishings of $K$ and $S$): Dirac, the two other regular types, the **flag-dipole**, the flagpole and the dipole. All six classes were verified to be non-empty by explicit representatives. The flag-dipole is the type the usual list of Dirac, real and chiral spinors does not exhaust and the one the classification was introduced to expose. This article supplies the four-dimensional completion of the corpus's internal Fierz identity, which the bilinear article records as missing, and it states the classification in the corpus's signature, with every formula displayed here checked in that signature. It is pure Clifford-algebra mathematics, with no framework speculation, and it is the ambient companion of the two-dimensional Fierz identity the corpus already carries.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $\eta$, $\eta=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $-iL_{e_t}R_{e_z}$ | The chirality cell (pseudoscalar) |
+| $\bar\psi=\psi^{\dagger}\,iR_{e_x}$ | Dirac adjoint |
+| $\sigma=\bar\psi\psi$, $\omega=i\bar\psi\,-iR_{e_z}\psi$ | Scalar and pseudoscalar densities |
+| $J_0=\bar\psi\,iR_{e_x}\psi$ and $J_k=\bar\psi\,iL_{e_k}R_{e_y}\psi$ | Vector |
+| $K_0=-\bar\psi\,(-iR_{e_z})iR_{e_x}\psi$ and $K_k=-\bar\psi\,(-iR_{e_z})iL_{e_k}R_{e_y}\psi$ | Axial vector |
+| $S_{\mu\nu}=\bar\psi\,\sigma_{\mu\nu}\psi$, $\sigma_{\mu\nu}$ the bivector of the Gamma section | Antisymmetric tensor |
+| $J^2=\sigma^2+\omega^2=-K^2$, $J\cdot K=0$ | The scalar FPK identities |
+| $Z=4\psi\bar\psi$ | Fierz aggregate (boomerang), rank one |
+| $Z^2=4\sigma Z$ | The aggregate form of the identities |
+| $\psi=Z\xi$ | The inversion theorem |
+| flag-dipole, flagpole, dipole | The three singular classes $4,5,6$ |
+
+## Further Reading
+
+- P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed., 2001), for the classification of spinors by their bilinear covariants, the Fierz aggregate and the boomerang; the origin of the classification.
+- J. P. Crawford, "On the algebra of Dirac bispinor densities: factorization and inversion theorems," *Journal of Mathematical Physics* **26** (1985) 1439, and "Bispinor geometry for even-dimensional space-time," *Journal of Mathematical Physics* **31** (1990) 1991, for the Fierz identities and the inversion theorem.
+- M. Fierz, "Zur Fermischen Theorie des $\beta$-Zerfalls," *Zeitschrift für Physik* **104** (1937) 553, and W. Kofink, "Über die Bilinearformen der Diracmatrizen," *Annalen der Physik* **30** (1937) 91, for the original identities.
+- R. J. Bueno Rogerio, "Subliminal aspects concerning the Lounesto's classification," arXiv:1911.08506, and R. A. da Rocha and collaborators, "On the generalized spinor classification: beyond the Lounesto classification," arXiv:1906.11622, for the modern treatment of the six classes, the flag-dipole, the class-6 exceptional case and the aggregate form.
+- B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §3, for the pointer to Lounesto's programme and the "new unknown type of spinor".
+- The companion articles of this series: *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions* (the internal Fierz identity and its declared gap, filled here), [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), and [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html).
