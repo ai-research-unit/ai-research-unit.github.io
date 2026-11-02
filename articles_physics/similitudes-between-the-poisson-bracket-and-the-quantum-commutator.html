@@ -172,26 +172,26 @@ $$</p>
 <h2 id="angular-momentum-a-second-independent-check">Angular Momentum: A Second, Independent Check</h2>
 <p>The components of orbital angular momentum are</p>
 <p>$$
-L_i = \epsilon_{ijk}\,q_j\,p_k,
+L_i^{\mathrm{orb}} = \epsilon_{ijk}\,q_j\,p_k,
 $$</p>
-<p>with $\epsilon_{ijk}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_i$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.</p>
+<p>with $\epsilon_{ijk}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_i^{\mathrm{orb}}$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.</p>
 <p><strong>Classical side.</strong> From the definition of the Poisson bracket and $\{q_i,p_j\}=\delta_{ij}$ one computes</p>
 <p>$$
-\{L_i,L_j\} = \epsilon_{ijk}\,L_k,
+\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}\,L_k^{\mathrm{orb}},
 $$</p>
 <p>and, for the brackets with the coordinates and momenta,</p>
 <p>$$
-\{L_i,q_j\} = \epsilon_{ijk}\,q_k, \qquad \{L_i,p_j\} = \epsilon_{ijk}\,p_k.
+\{L_i^{\mathrm{orb}},q_j\} = \epsilon_{ijk}\,q_k, \qquad \{L_i^{\mathrm{orb}},p_j\} = \epsilon_{ijk}\,p_k.
 $$</p>
-<p><strong>Quantum side.</strong> With $L_i = \epsilon_{ijk}\,q_j\,p_k$ and the canonical commutators, the same computation gives</p>
+<p><strong>Quantum side.</strong> With $L_i^{\mathrm{orb}} = \epsilon_{ijk}\,q_j\,p_k$ and the canonical commutators, the same computation gives</p>
 <p>$$
-[L_i,L_j] = i\hbar\,\epsilon_{ijk}\,L_k,
+[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}] = i\hbar\,\epsilon_{ijk}\,L_k^{\mathrm{orb}},
 $$</p>
 <p>so that</p>
 <p>$$
-\frac{1}{i\hbar}[L_i,L_j] = \epsilon_{ijk}\,L_k,
+\frac{1}{i\hbar}[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}] = \epsilon_{ijk}\,L_k^{\mathrm{orb}},
 $$</p>
-<p>which is the operator image of $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The correspondence holds on this pair as well.</p>
+<p>which is the operator image of $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The correspondence holds on this pair as well.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -202,23 +202,23 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\{L_i,L_j\}=\epsilon_{ijk}L_k$</td>
-<td>$[L_i,L_j]=i\hbar\epsilon_{ijk}L_k$</td>
-<td>$\epsilon_{ijk}L_k$</td>
+<td>$\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
+<td>$[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\hbar\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
+<td>$\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
 </tr>
 <tr>
-<td>$\{L_i,q_j\}=\epsilon_{ijk}q_k$</td>
-<td>$[L_i,q_j]=i\hbar\epsilon_{ijk}q_k$</td>
+<td>$\{L_i^{\mathrm{orb}},q_j\}=\epsilon_{ijk}q_k$</td>
+<td>$[L_i^{\mathrm{orb}},q_j]=i\hbar\epsilon_{ijk}q_k$</td>
 <td>$\epsilon_{ijk}q_k$</td>
 </tr>
 <tr>
-<td>$\{L_i,p_j\}=\epsilon_{ijk}p_k$</td>
-<td>$[L_i,p_j]=i\hbar\epsilon_{ijk}p_k$</td>
+<td>$\{L_i^{\mathrm{orb}},p_j\}=\epsilon_{ijk}p_k$</td>
+<td>$[L_i^{\mathrm{orb}},p_j]=i\hbar\epsilon_{ijk}p_k$</td>
 <td>$\epsilon_{ijk}p_k$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>What the resemblance here is.</strong> Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_i$, and on the quantum side the commutator algebra of the $L_i$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_i,L_j\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.</p>
+<p><strong>What the resemblance here is.</strong> Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_i^{\mathrm{orb}}$, and on the quantum side the commutator algebra of the $L_i^{\mathrm{orb}}$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.</p>
 <h2 id="where-the-resemblance-holds">Where the Resemblance Holds</h2>
 <p>It is worth stating exactly what the two successful checks establish, because the resemblance is real and the article would be misleading if it were dismissed.</p>
 <p><strong>Both brackets are Lie brackets.</strong> Each is bilinear, antisymmetric, and satisfies Jacobi. In each theory the observables therefore form a Lie algebra, and the bracket of an observable with the Hamiltonian generates the dynamics: $df/dt'=\{f,H\}$ classically, $df/dt'=(1/i\hbar)[f,H]$ in the Heisenberg picture. The formal parallel between these two evolution equations is the dynamical core of the correspondence.</p>
@@ -332,7 +332,7 @@ $$
 \qquad\text{so}\qquad
 \frac{1}{i\hbar}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
 $$
-which is term for term the operator image of the classical bracket $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.</p>
+which is term for term the operator image of the classical bracket $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.</p>
 <p><strong>Where the framework breaks the correspondence.</strong> The canonical pair cannot be realized this way. The relation
 $$
 [\tilde H_1,\tilde H_2] = i\hbar\,e_t
@@ -344,7 +344,7 @@ has <strong>no solution</strong> with $\tilde H_1,\tilde H_2\in\mathbb{M}_+$: th
 $$
 \{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}[f,g]
 $$
-is correct as a <strong>leading-order correspondence</strong>. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=i\hbar\delta_{ij}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_i,L_j\}=\epsilon_{ijk}L_k$ against $[L_i,L_j]=i\hbar\epsilon_{ijk}L_k$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.</p>
+is correct as a <strong>leading-order correspondence</strong>. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=i\hbar\delta_{ij}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ against $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\hbar\epsilon_{ijk}L_k^{\mathrm{orb}}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.</p>
 <p>It is <strong>not an isomorphism</strong>, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\widehat q\,\widehat p-\widehat{qp}=i\hbar/2$, and in general $\widehat f\,\widehat g=\widehat{fg}+(i\hbar/2)\widehat{\{f,g\}}+O(\hbar^2)$. What replaces the isomorphism is a <strong>deformation</strong>: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
 $$
 \{\{f,g\}\} = \{f,g\} + O(\hbar^2).
@@ -381,7 +381,7 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 <td>Kronecker delta; Levi-Civita symbol</td>
 </tr>
 <tr>
-<td>$L_i=\epsilon_{ijk}q_jp_k$</td>
+<td>$L_i^{\mathrm{orb}}=\epsilon_{ijk}q_jp_k$</td>
 <td>Orbital angular momentum components</td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 <td>Quantization map (Weyl ordering)</td>
 </tr>
 <tr>
-<td>$\{L_i,L_j\}=\epsilon_{ijk}L_k$</td>
+<td>$\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
 <td>Classical angular-momentum Poisson algebra</td>
 </tr>
 <tr>

@@ -112,7 +112,7 @@ $$</p>
 <h3 id="angular-momentum">Angular Momentum</h3>
 <p>The centrality of the force conserves the angular momentum,</p>
 <p>$$
-\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i, H\} = 0 ,
+\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i^{\mathrm{orb}}, H\} = 0 ,
 $$</p>
 <p>with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.</p>
 <h3 id="the-rungelenz-vector">The Runge–Lenz Vector</h3>
@@ -135,7 +135,7 @@ $$</p>
 <h3 id="the-brackets">The Brackets</h3>
 <p>The Poisson brackets of the six generators close on themselves:</p>
 <p>$$
-\boxed{\;\{L_i, L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k\;}.
+\boxed{\;\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}\;}.
 $$</p>
 <p>The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.</p>
 <p>The appearance of $E$ in the third bracket is the reason the algebra has different forms in the bound and unbound cases.</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
 $$</p>
-<p>so that $\{D_i, D_j\} = \epsilon_{ijk}L_k$ and $\{L_i, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define</p>
+<p>so that $\{D_i, D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ and $\{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define</p>
 <p>$$
 \vec{\tilde S}^{\pm}_{\mathrm{tot}} = \frac{1}{2}\left(\vec L \pm \vec D\right) .
 $$</p>
@@ -160,10 +160,10 @@ $$</p>
 <h3 id="the-unbound-and-threshold-cases">The Unbound and Threshold Cases</h3>
 <p>For $E > 0$ the third bracket changes sign. Defining $\vec D = \vec A/\sqrt{2mE}$ gives</p>
 <p>$$
-\{D_i, D_j\} = -\epsilon_{ijk}L_k, \qquad \{L_i, D_j\} = \epsilon_{ijk}D_k ,
+\{D_i, D_j\} = -\epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k ,
 $$</p>
 <p>which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\vec L\cdot\vec D$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.</p>
-<p>At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i,D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.</p>
+<p>At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i^{\mathrm{orb}},D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -196,14 +196,14 @@ $$</p>
 </table></div>
 <p>The bound case is the one that bears on the hydrogen spectrum, and it is the case developed below.</p>
 <h3 id="numerical-checks">Numerical Checks</h3>
-<p>The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i,L_j\} = \epsilon_{ijk}L_k$, $\{L_i,A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.</p>
+<p>The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$, $\{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.</p>
 <p>The algebra statements of the closing sections were checked at the same time, in explicit complex-matrix form using the isomorphism $\vec e_\mu \mapsto -i\sigma_\mu$, $i \mapsto iI_2$ of $\mathbb{B}$ with $M_2(\mathbb{C})$. The material sector was confirmed closed under the commutator, with $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$ and every element of $[\mathbb{M}_-,\mathbb{M}_-]$ again anti-Hermitian; the traceless part was confirmed to close exactly on</p>
 <p>$$
 \left[\tfrac{\vec e_\mu}{2},\tfrac{\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2}, \qquad
 \left[\tfrac{\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = \epsilon_{\mu\nu\lambda}\tfrac{i\vec e_\lambda}{2}, \qquad
 \left[\tfrac{i\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = -\epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2} ;
 $$</p>
-<p>and the six operators $L_k, R_k$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_i,L_j] = 2\epsilon_{ijk}L_k$, $[R_i,R_j] = -2\epsilon_{ijk}R_k$, $[L_i,R_j] = 0$ and $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_t$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.</p>
+<p>and the six operators $L_{\vec e_k}, R_{\vec e_k}$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_{\vec e_i},L_{\vec e_j}] = 2\epsilon_{ijk}L_{\vec e_k}$, $[R_{\vec e_i},R_{\vec e_j}] = -2\epsilon_{ijk}R_{\vec e_k}$, $[L_{\vec e_i},R_{\vec e_j}] = 0$ and $\sum_kL_{\vec e_k}^2 = \sum_kR_{\vec e_k}^2 = -3\,e_t$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.</p>
 <h2 id="the-classical-origin-of-the-degeneracy">The Classical Origin of the Degeneracy</h2>
 <h3 id="balanced-representations">Balanced Representations</h3>
 <p>The group $SO(4)$ generated by $\vec{\tilde S}^+_{\mathrm{tot}}$ and $\vec{\tilde S}^-_{\mathrm{tot}}$ has double cover $SU(2)\times SU(2)$, and its irreducible representations are the tensor products $\mathcal{D}^{s_+}\otimes\mathcal{D}^{s_-}$ of dimensions $(2s_+ + 1)(2s_- + 1)$. A conserved quantity that commutes with the Hamiltonian is a function of the Casimirs, so the energy is a function of $(\vec{\tilde S}^+_{\mathrm{tot}})^2$ and $(\vec{\tilde S}^-_{\mathrm{tot}})^2$; and since the two Casimirs are <strong>equal</strong> for the Coulomb problem, the representations that occur have $s_+ = s_- = s$, with dimension</p>
@@ -242,14 +242,14 @@ $$</p>
 <h3 id="the-symmetry-of-the-algebra-on-itself">The Symmetry of the Algebra on Itself</h3>
 <p>There is one place where a six-dimensional rotation algebra arises from the algebra alone, and recording it fixes the boundary exactly. Left and right multiplication by the unit real quaternions are isometries of $\mathbb{H} \cong \mathbb{R}^4$, and the six operators</p>
 <p>$$
-L_k : q \mapsto \vec e_k q, \qquad R_k : q \mapsto q\vec e_k
+L_{\vec e_k} : q \mapsto \vec e_k q, \qquad R_{\vec e_k} : q \mapsto q\vec e_k
 $$</p>
 <p>are antisymmetric there. They close as</p>
 <p>$$
-[L_i,L_j] = 2\epsilon_{ijk}L_k, \qquad [R_i,R_j] = -2\epsilon_{ijk}R_k, \qquad [L_i,R_j] = 0 ,
+[L_{\vec e_i},L_{\vec e_j}] = 2\epsilon_{ijk}L_{\vec e_k}, \qquad [R_{\vec e_i},R_{\vec e_j}] = -2\epsilon_{ijk}R_{\vec e_k}, \qquad [L_{\vec e_i},R_{\vec e_j}] = 0 ,
 $$</p>
-<p>so that $\operatorname{span}\{L_1,L_2,L_3,R_1,R_2,R_3\}$ is six-dimensional and is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.</p>
-<p>Under this action $\mathbb{B}$ is a single balanced representation. Its two Casimirs are equal, $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_t$ on $\mathbb{H}$ — the balance condition that the bound-state multiplicity requires — and its complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.</p>
+<p>so that $\operatorname{span}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$ is six-dimensional and is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.</p>
+<p>Under this action $\mathbb{B}$ is a single balanced representation. Its two Casimirs are equal, $\sum_kL_{\vec e_k}^2 = \sum_kR_{\vec e_k}^2 = -3\,e_t$ on $\mathbb{H}$ — the balance condition that the bound-state multiplicity requires — and its complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.</p>
 <h3 id="what-the-algebra-does-not-contain">What the Algebra Does Not Contain</h3>
 <p><strong>The reciprocal length.</strong> The Runge–Lenz vector contains $\vec u_r = \vec r/|\vec r|$, and $|\vec r|^{-1}$ is not a polynomial in the components of $\vec r$. Normalization is a nonlinear operation, and the finite-dimensional algebra does not implement it. The same obstruction applies to the potential $-\kappa/r$, which is a central scalar function but not an element built from $\vec r$ by algebra operations; it is a function on the configuration space, inserted as data.</p>
 <p><strong>The phase space.</strong> The six generators and their brackets are functions on the six-dimensional space of pairs $(\vec r,\vec p)$. That space is not a module over $\mathbb{B}$; the algebra is a single copy of $M_2(\mathbb{C})$, and the space of functions on the phase space is infinite-dimensional. The hidden symmetry is a symmetry of the phase space.</p>
@@ -263,7 +263,7 @@ $$</p>
 <p>The particle is structureless and carries no intrinsic magnetic moment; its orbital motion's magnetic field is not an intrinsic magnetism.</p>
 <p>The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m|\kappa|e$. The six generators close under the Poisson bracket:</p>
 <p>$$
-\{L_i,L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i,A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k .
+\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}} .
 $$</p>
 <p>Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec{\tilde S}^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy</p>
 <p>$$
@@ -337,15 +337,15 @@ $$</p>
 <td>Magnitude identity</td>
 </tr>
 <tr>
-<td>$\{L_i,L_j\}=\epsilon_{ijk}L_k$</td>
+<td>$\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
 <td>Angular-momentum bracket</td>
 </tr>
 <tr>
-<td>$\{L_i,A_j\}=\epsilon_{ijk}A_k$</td>
+<td>$\{L_i^{\mathrm{orb}},A_j\}=\epsilon_{ijk}A_k$</td>
 <td>Vector transformation of $\vec A$</td>
 </tr>
 <tr>
-<td>$\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k$</td>
+<td>$\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
 <td>Energy-dependent bracket</td>
 </tr>
 <tr>
