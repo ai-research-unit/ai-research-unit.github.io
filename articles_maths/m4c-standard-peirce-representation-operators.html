@@ -194,7 +194,7 @@ $$
 L_{\vec e_y}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_{\vec e_z}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
-and a general element is $L(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z$. In the Pauli form $L_{e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.</p>
+and a general element is $L(\tilde Q)=Q_tL_{e_t}+Q_xL_{\vec e_x}+Q_yL_{\vec e_y}+Q_zL_{\vec e_z}$. In the Pauli form $L_{e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.</p>
 <p><strong>The right copy.</strong> The right matrix is
 $$
 R(\tilde P)=B^{\mathsf T}\otimes\mathrm I_2,\qquad
@@ -250,36 +250,36 @@ $$</p>
 <thead>
 <tr>
 <th>$L_{e_\mu}R_{e_\nu}$</th>
-<th>$\nu=t$</th>
-<th>$\nu=x$</th>
-<th>$\nu=y$</th>
-<th>$\nu=z$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\mu=t$</td>
+<td>$e_t$</td>
 <td>$L_{e_t}R_{e_t}=\mathrm I_4$</td>
 <td>$L_{e_t}R_{\vec e_x}=R_{\vec e_x}$</td>
 <td>$L_{e_t}R_{\vec e_y}=R_{\vec e_y}$</td>
 <td>$L_{e_t}R_{\vec e_z}=R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$\mu=x$</td>
+<td>$\vec e_x$</td>
 <td>$L_{\vec e_x}R_{e_t}=L_{\vec e_x}$</td>
 <td>$L_{\vec e_x}R_{\vec e_x}$</td>
 <td>$L_{\vec e_x}R_{\vec e_y}$</td>
 <td>$L_{\vec e_x}R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$\mu=y$</td>
+<td>$\vec e_y$</td>
 <td>$L_{\vec e_y}R_{e_t}=L_{\vec e_y}$</td>
 <td>$L_{\vec e_y}R_{\vec e_x}$</td>
 <td>$L_{\vec e_y}R_{\vec e_y}$</td>
 <td>$L_{\vec e_y}R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$\mu=z$</td>
+<td>$\vec e_z$</td>
 <td>$L_{\vec e_z}R_{e_t}=L_{\vec e_z}$</td>
 <td>$L_{\vec e_z}R_{\vec e_x}$</td>
 <td>$L_{\vec e_z}R_{\vec e_y}$</td>
@@ -287,7 +287,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first row is the right family, the first column the left family, the diagonal entry $L_{e_t}R_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Operator $L_{\tilde Q}R_{\tilde P}$</em>.</p>
+<p>Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{e_t}R_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Operator $L_{\tilde Q}R_{\tilde P}$</em>.</p>
 <h3 id="the-sixteen-entry-by-entry">The Sixteen, Entry by Entry</h3>
 <p><strong>The display.</strong> In the Peirce frame, grouped by the left index $\mu$,
 $$
