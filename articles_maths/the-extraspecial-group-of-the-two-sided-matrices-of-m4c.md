@@ -28,7 +28,7 @@ $$
 
 **Proposition.** $G$ has order $32$, and its elements are distinct up to sign: the sixteen products $L_\mu R_\nu$ are distinct, no one is the negative of another, and the two signs give thirty-two distinct matrices.
 
-**Proof.** The sixteen $L_\mu R_\nu$ are a basis of $M_4(\mathbb{C})$ by the method article, so they are linearly independent and in particular distinct; $-L_\mu R_\nu=T_{\mu'\nu'}$ would be a linear dependence. The unit is $L_tR_t=I$, and $-I=L_tR_t$ is a distinct element.
+**Proof.** The sixteen $L_\mu R_\nu$ are a basis of $M_4(\mathbb{C})$ by the method article, so they are linearly independent and in particular distinct; $-L_\mu R_\nu=L_{\mu'}R_{\nu'}$ would be a linear dependence. The unit is $L_tR_t=I$, and $-I=L_tR_t$ is a distinct element.
 
 **The product rule.** The product is read from the multiplication of the units:
 
@@ -36,7 +36,7 @@ $$
 (L_\mu R_\nu)(L_{\mu'}R_{\nu'})=L_\mu L_{\mu'}\,R_\nu R_{\nu'}
 $$
 
-because left and right multiplications commute. The left product $L_\mu L_{\mu'}$ is $\pm L_{\mu''}$ and the right product is $\pm R_{\nu''}$, with the signs fixed by the orientation convention of the units. Hence the product is $\pm T_{\mu''\nu''}$, and $G$ is closed under products and inverses.
+because left and right multiplications commute. The left product $L_\mu L_{\mu'}$ is $\pm L_{\mu''}$ and the right product is $\pm R_{\nu''}$, with the signs fixed by the orientation convention of the units. Hence the product is $\pm L_{\mu''}R_{\nu''}$, and $G$ is closed under products and inverses.
 
 ## The Two Quaternion Subgroups
 

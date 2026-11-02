@@ -22,12 +22,12 @@ so a product has a coefficient array of rank one and every array of rank one is 
 
 **Theorem.** The $N^{2}=n^{4}$ operators $L_{E_{\mu}}R_{E_{\nu}}$ are a basis of $\operatorname{End}(M_{n}(\mathbb{C}))$, and they are orthonormal for the Hilbert–Schmidt form:
 $$
-\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}T_{\rho\sigma}\bigr)=\delta_{\mu\rho}\delta_{\nu\sigma}.
+\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}L_{\rho}R_{\sigma}\bigr)=\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 
 *Proof.* The matrix of $L_{E_{\mu}}R_{E_{\nu}}$ is $E_{\nu}^{\mathsf T}\otimes E_{\mu}$, so
 $$
-\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}T_{\rho\sigma}\bigr)
+\operatorname{tr}\bigl(L_{E_{\mu}}R_{E_{\nu}}^{*}L_{\rho}R_{\sigma}\bigr)
 =\operatorname{tr}\bigl(E_{\nu}^{\mathsf T*}E_{\sigma}^{\mathsf T}\bigr)\operatorname{tr}\bigl(E_{\mu}^{*}E_{\rho}\bigr)
 =\delta_{\nu\sigma}\delta_{\mu\rho},
 $$

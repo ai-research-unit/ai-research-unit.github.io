@@ -113,12 +113,12 @@ are the chiral projectors. The square makes $-iR_{e_z}$ diagonalisable with eige
 **The trace orthogonality.** The sixteen two-sided cells $L_\mu R_\nu$, up to nonzero scalars, are the sixteen graded products: the identity $L_tR_t=I$, the four vector cells the generator cell, the six bivector products $\sigma_{\mu\nu}=\tfrac12$ times the commutator of the $\mu$-th and $\nu$-th generators, the four trivector products $\sigma_{\mu\nu\rho}=\tfrac16$ times the antisymmetrised triple product of the three generators and the pseudoscalar $-iR_{e_z}$. They satisfy
 
 $$
-\operatorname{tr}(L_\mu R_\nu T_{\rho\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
+\operatorname{tr}(L_\mu R_\nu L_{\rho}R_{\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
 $$
 
 where $\eta_{\mu\nu,\rho\sigma}=g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the signature. The sixteen cells are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
 
-**The expansion.** With the dual basis $\check L_\mu R_\nu=g_{\mu\mu}g_{\nu\nu}L_\mu R_\nu$ defined by $\operatorname{tr}(\check L_\mu R_\nu T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
+**The expansion.** With the dual basis $\check L_\mu R_\nu=g_{\mu\mu}g_{\nu\nu}L_\mu R_\nu$ defined by $\operatorname{tr}(\check L_\mu R_\nu L_{\rho}R_{\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
 
 $$
 A=\frac14\sum_{\mu,\nu}\operatorname{tr}(\check L_\mu R_\nu A)\,L_\mu R_\nu.

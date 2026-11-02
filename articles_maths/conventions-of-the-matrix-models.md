@@ -139,7 +139,7 @@ The Pauli line is the evaluation of the $L$-based definition, never its replacem
 
 **The sixteen basis matrices.** The sixteen cells are the ordinary products
 $$
-L_{\mu}R_{\nu}=L_\mu\,\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1},
+\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{\mu}R_{\nu}=L_\mu\,\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1},
 $$
 in four families,
 $$
@@ -166,7 +166,7 @@ $$
 \end{aligned}\;}
 $$
 
-**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
+**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$, each entry being $\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{\mu}R_{\nu}$,
 $$
 L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_tR_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},

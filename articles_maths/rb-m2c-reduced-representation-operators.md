@@ -236,15 +236,15 @@ L_{e_{\mu}}R_{e_{\nu}},\qquad \mu,\nu\in\{1,2\},
 $$
 be the four basis products. The multiplication table of the basis, $e_{1}e_{1}=e_{1}$, $e_{1}e_{2}=e_{2}$, $e_{2}e_{1}=e_{2}$, $e_{2}e_{2}=e_{1}$, gives
 $$
-T_{11}=T_{22}=\mathrm I_{2},\qquad T_{12}=T_{21}=\sigma_{1},
+L_{e_1}R_{e_1}=L_{e_2}R_{e_2}=\mathrm I_{2},\qquad L_{e_1}R_{e_2}=L_{e_2}R_{e_1}=\sigma_{1},
 $$
-so the four basis operators span the two-dimensional family and satisfy two linear relations. The **coefficient matrix** of an operator is the array $c$ of its coordinates in the basis $L_{e_{\mu}}R_{e_{\nu}},\qquad$, and it is defined only up to the two-dimensional space of relations, which is
+so the four basis operators span the two-dimensional family and satisfy two linear relations. The **coefficient matrix** of an operator is the array $c$ of its coordinates in the basis $L_{e_{\mu}}R_{e_{\nu}}$, and it is defined only up to the two-dimensional space of relations, which is
 $$
 \ker c=\left\{\begin{pmatrix}\alpha&\beta\\ \gamma&\delta\end{pmatrix}:\alpha+\delta=0,\ \beta+\gamma=0\right\}=\left\{\begin{pmatrix}\alpha&\beta\\ -\beta&-\alpha\end{pmatrix}\right\},
 $$
 a two-dimensional subspace of the four-dimensional $M_{2}(\mathbb{C})$. So the dictionary operator $\leftrightarrow$ coefficient matrix is two-to-one in the strong sense: two arrays give the same operator exactly when their difference is of that form.
 
-**The criterion.** An operator of the ambient is a two-sided operator exactly when it is a multiple combination of $T_{11}$ and $T_{12}$, that is exactly when its coefficient array is at most one step away from the relation space, which in coordinates is the pair of linear conditions $a=d$ and $b=c$ of the general article. The criterion is **linear** and not determinantal, and this is the reason the family is a subspace: the coefficient array of a pair is a rank-one array $qp^{\mathsf T}$, and the quotient of the four-dimensional array space by the two-dimensional relation space is two-dimensional, so the rank-one locus maps onto the whole family and the determinantal criterion of the biquaternion category has nothing to test here.
+**The criterion.** An operator of the ambient is a two-sided operator exactly when it is a multiple combination of $L_{e_1}R_{e_1}$ and $L_{e_1}R_{e_2}$, that is exactly when its coefficient array is at most one step away from the relation space, which in coordinates is the pair of linear conditions $a=d$ and $b=c$ of the general article. The criterion is **linear** and not determinantal, and this is the reason the family is a subspace: the coefficient array of a pair is a rank-one array $qp^{\mathsf T}$, and the quotient of the four-dimensional array space by the two-dimensional relation space is two-dimensional, so the rank-one locus maps onto the whole family and the determinantal criterion of the biquaternion category has nothing to test here.
 
 **The array of the pair.** For the pair $(\breve Q,\breve P)$ the coefficient array is the rank-one matrix
 $$
@@ -364,7 +364,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 5. The zero operator is attained by pairs of nonzero parameters, $L_{\Pi_{+}}R_{\Pi_{-}}=0$, the zero set of $\beta$ is a union of four pieces, and the fibre over a nonzero element is a torsor over $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ retracting onto $T^{2}$.
 6. The plain sandwich has trivial kernel and four-element fibres, the squaring map is surjective because the algebra is a product of two fields, and the modulus sandwich is onto a **quadrant** with the torus $T^{2}$ as fibre, the only cone of operators of the category.
 7. The Kronecker display is $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$, with trace $4Q_{\blacktriangle}P_{\blacktriangle}$, determinant $(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}})^{2}$ and rank in $\{0,1,2,4\}$: the four values are all attained, so the second rank is not vacuous.
-8. The coefficient array in the basis $L_{e_{\mu}}R_{e_{\nu}},\qquad$ is defined only modulo a two-dimensional space of relations, $T_{11}=T_{22}$ and $T_{12}=T_{21}$, and the array of a pair is always of rank at most one.
+8. The coefficient array in the basis $L_{e_{\mu}}R_{e_{\nu}}$ is defined only modulo a two-dimensional space of relations, $L_{e_1}R_{e_1}=L_{e_2}R_{e_2}$ and $L_{e_1}R_{e_2}=L_{e_2}R_{e_1}$, and the array of a pair is always of rank at most one.
 9. The length is $0$ or $1$ on the family and undefined outside it, because the family is a subspace: the ladder of the biquaternion category collapses, and the collapse is the operator-theoretic content of semisimplicity.
 10. The automorphism group is $\mathbb{Z}_{2}$, realised by the conjugation with $\sigma_{3}$, which is outer in the algebra and inner in the ambient; there is no derivation; the ambient splits into the family, the traceless symmetric line and the skew line, and the frame is an orthogonal change of basis carrying the family to the diagonal subalgebra.
 
@@ -375,7 +375,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 | $\mathbb{B}_{\mathrm r}$ | the carrier, of complex dimension two | *Reduced Biquaternion Space* |
 | $L_{\breve Q},R_{\breve Q}$ | the left and right multiplications, equal because the algebra is commutative | this article |
 | $L_{\breve Q}R_{\breve P}$ | the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$ | this article |
-| $L_{e_{\mu}}R_{e_{\nu}},\qquad=L_{e_{\mu}}R_{e_{\nu}}$ | the four basis products, with $T_{11}=T_{22}$ and $T_{12}=T_{21}$ | this article |
+| $L_{e_{\mu}}R_{e_{\nu}}$ | the four basis products, with $L_{e_1}R_{e_1}=L_{e_2}R_{e_2}$ and $L_{e_1}R_{e_2}=L_{e_2}R_{e_1}$ | this article |
 | $\mathsf K(\breve Q,\breve P)$ | the Kronecker display $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$ | this article |
 | $\Theta_{\breve Q}$ | the plain sandwich, $=L_{\breve Q^{2}}$ | this article |
 | $\Phi_{\breve Q}$ | the modulus sandwich, $=\operatorname{diag}(\lvert Q_{+}\rvert^{2},\lvert Q_{-}\rvert^{2})$ in the frame | this article |

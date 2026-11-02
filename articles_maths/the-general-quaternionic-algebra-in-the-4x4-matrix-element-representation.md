@@ -63,7 +63,7 @@ $$
 $$
 because $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. The square of the product is therefore the scalar matrix of the norm, and taking determinants gives $\det\mathsf M_4^{L}(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^{4}$, in agreement with $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$.
 
-**The two-sided structure.** The right multiplications commute with the left ones, so the sixteen products $T_{\mu\nu}=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu)$ need no ordering convention. In the canonical frame the left copy is the block-diagonal family $I_2\otimes A$ and the right copy the block-scalar family $A^{\mathsf T}\otimes I_2$; they are mutual commutants, and their intersection is the scalars.
+**The two-sided structure.** The right multiplications commute with the left ones, so the sixteen products $L_{\mu}R_{\nu}=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu)$ need no ordering convention. In the canonical frame the left copy is the block-diagonal family $I_2\otimes A$ and the right copy the block-scalar family $A^{\mathsf T}\otimes I_2$; they are mutual commutants, and their intersection is the scalars.
 
 ## The General Quaternionic Bilinear Form in the Regular Representation
 

@@ -410,7 +410,7 @@ so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq
 
 **The two displays of the corpus.** The operators of the corpus in the e-basis are built from the same four units $e_\mu$, in the same order, so the abstract basis is common and only the display moves:
 $$
-T^{e}_{\mu\nu}=S\,L_{\mu}R_{\nu}S^{-1},\qquad
+L^{e}_{\mu}R^{e}_{\nu}=S\,L_{\mu}R_{\nu}S^{-1},\qquad
 M^{e}=S\,MS^{-1}.
 $$
 The coefficient matrix is therefore literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).

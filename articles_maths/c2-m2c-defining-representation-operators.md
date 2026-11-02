@@ -215,24 +215,24 @@ $$
 
 ## The Two Ranks
 
-**Definition.** For $M\in M_2(\mathbb{C})$ let $\operatorname{rank}T_M$ be the rank of $M$ as an operator on $V$ and $\operatorname{rank}c(M)$ the rank of its coefficient array in the operator basis.
+**Definition.** For $M\in M_2(\mathbb{C})$ let $\operatorname{rank}_{\mathrm{op}}M$ be the rank of $M$ as an operator on $V$ and $\operatorname{rank}c(M)$ the rank of its coefficient array in the operator basis.
 
 **Proposition (the two ranks coincide identically).** In the matrix-unit basis,
 $$
-\operatorname{rank}T_M=\operatorname{rank}c(M)=\operatorname{rank}M ,
+\operatorname{rank}_{\mathrm{op}}M=\operatorname{rank}c(M)=\operatorname{rank}M ,
 $$
 for every $M$.
 
 *Proof.* The coefficient array is the matrix, so the two ranks are the same number computed twice.
 
-**Why this is a statement and not a tautology.** In the algebra categories the operator space is not the algebra: the two-sided operator $L_{Q}R_{P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. **Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number**: which is why the criterion of §*The Cone and the Coefficient Matrix* can be stated as $\det M=0$ and still be exact.
+**Why this is a statement and not a tautology.** In the algebra categories the operator space is not the algebra: the two-sided operator $L_{Q}R_{P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $L_{\mu}R_{\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. **Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number**: which is why the criterion of §*The Cone and the Coefficient Matrix* can be stated as $\det M=0$ and still be exact.
 
 **The table of the comparison.**
 
 | | this pair | the algebra pair |
 |---|---|---|
 | ambient of the operator | $M_2(\mathbb{C})$, complex dimension $4$ | $\operatorname{End}(\mathbb{B})$, complex dimension $16$ |
-| operator basis | $E_{jk}$ | $T_{\mu\nu}$ |
+| operator basis | $E_{jk}$ | $L_{\mu}R_{\nu}$ |
 | coefficient array | the matrix | a $4\times4$ array |
 | two ranks | equal | independent |
 | criterion | $\operatorname{rank}M\le1$ | $\operatorname{rank}c(M)\le1$ |
@@ -400,7 +400,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 
 The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so the two-sided operator of the pair is $L_{u}R_{\phi}(v)=\phi(v)u=u\phi^{\mathsf T}$, a rank-one matrix with a column and a row. The left side is the whole algebra $M_2(\mathbb{C})$ acting faithfully, of complex dimension four, and the right side is the dual $V^{*}$, of complex dimension two; the transpose adjoint of the right slot is the left slot and the Hermitian adjoint is not. The parametrisation by $V\times V^{*}$ has fibres the scaling orbits $\mathbb{C}^{\times}$ and image the determinantal cone of $\mathbb{P}^{3}$, that is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, of complex dimension three and real dimension six inside an ambient of real dimension eight; the coefficient array in the matrix-unit basis is the matrix itself, so the rank criterion and the determinant criterion are the same condition, and the cone spans the ambient although the identity is not a member.
 
-The composition is $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, with powers $\phi(u)^{n-1}L_{u}R_{\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $T_{\mu\nu}$ and the two separate.
+The composition is $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, with powers $\phi(u)^{n-1}L_{u}R_{\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $L_{\mu}R_{\nu}$ and the two separate.
 
 Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is skew-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier moves the cone: the pointwise product gives the two-dimensional diagonal subspace, and the dual-number product gives the quadric cone $\det T=w_{11}^{2}$ minus the punctured line of the matrices $\operatorname{diag}(0,w_{22})$, which is no longer the rank-one locus. **The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.**
 

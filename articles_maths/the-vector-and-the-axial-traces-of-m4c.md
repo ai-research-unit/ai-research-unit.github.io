@@ -55,7 +55,7 @@ $$
 \operatorname{tr}\mathsf{M}_4(a)=4a_0,\qquad
 \operatorname{tr}\bigl((-iL_tR_z)\mathsf{M}_4(a)\bigr)=0,
 $$
-because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(L_\mu R_\nu T_{\rho\sigma})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$, so the functional $\operatorname{tr}\bigl((-iL_tR_z)\,\cdot\bigr)$ reads only the $L_tR_z$ coordinate, and $\mathsf{M}_4(a)$ has none.
+because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(L_\mu R_\nu L_{\rho}R_{\sigma})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$, so the functional $\operatorname{tr}\bigl((-iL_tR_z)\,\cdot\bigr)$ reads only the $L_tR_z$ coordinate, and $\mathsf{M}_4(a)$ has none.
 
 **The imaginary part.** For the imaginary quaternion $ia'$,
 $$

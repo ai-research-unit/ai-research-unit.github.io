@@ -26,7 +26,7 @@ $$
 
 **Why the factor four.** The matrices $L_{e_\mu}R_{e_\nu}$ are orthogonal for the Hilbert–Schmidt form:
 $$
-\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 The square norm of each is four, so the coefficient carries the factor $\tfrac14$.
 

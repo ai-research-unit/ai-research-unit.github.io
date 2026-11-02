@@ -226,7 +226,7 @@ a sum of two orthogonal rank-one projectors on the two ambient directions $u_+\o
 
 ## The Pair as a Semigroup
 
-**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$, and by commutativity this is $T_{QQ'PP'}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{D}\times\mathbb{D}$ onto the monoid $(\mathbb{D},\cdot)$, with kernel the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{D}\times\mathbb{D}$ onto the monoid $(\mathbb{D},\cdot)$, with kernel the rescaling.
 
 **The units.** The invertible members are those with $QP$ a unit, and the group is
 

@@ -6,28 +6,28 @@ This article belongs to the nine conventions articles of the mathematical corpus
 
 **The article names, and it does not prove.** No dimension is stated here, no closure, no inclusion, no properness and no property of a family. A name is fixed once, so that the article which proves a property can write it once. Where a sentence below reads like a theorem, it is a rule for reading a glyph: it says what the symbol denotes, not what the object is.
 
-The order follows the dependence. The four letters come first, because the names of the sets and the superscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
+The order follows the dependence. The family letters come first, because the names of the sets and the superscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
 
 **Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight.
 
 ## The Four Families and Their Letters
 
-### $L$, $R$, $T$, $\Theta$
+### $L$, $R$, $LR$, $\Theta$
 
-**Four families, four letters.** The operator articles write four families, and an operator of one of them carries the letter of its family:
+**Four families, four marks.** The operator articles write four families, and an operator of one of them carries the letter, or the pair of letters, of its family:
 
 | Family | Letter | Glyph | Parameters |
 |---|---|---|---|
 | left | $L$ | $L_{\tilde Q}$ | one |
 | right | $R$ | $R_{\tilde Q}$ | one |
-| two-sided | $T$ | $L_{\tilde Q}R_{\tilde P}$ | two |
+| two-sided | $LR$ | $L_{\tilde Q}R_{\tilde P}$ | two |
 | sandwich | $\Theta$ | $\Theta_{\tilde Q}$ | one |
 
 **The letter is upright, the parameter is in the subscript.** The letter names the family and is a capital roman; the subscript names the element and keeps that element's own mark, the tilde included. $L_{\tilde Q}$ is read as one glyph: the operator of the left family whose parameter is $\tilde Q$. The tilde is never moved to the letter, and the letter never takes a tilde of its own.
 
 **The letters are actions, not slots.** $L$ names left multiplication and $R$ names right multiplication. The same two letters name the two copies of the algebra in *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, and the convention there holds here: the letter names the action, and a change of frame does not exchange the two actions even where it exchanges the two tensor slots.
 
-**No fifth letter is implied.** An involution, a change of frame and a derivation also occur in the operator articles, and each carries the letter that its own article gives it. The four letters are the vocabulary of the four families assembled from the multiplication; they do not assert that every operator belongs to one of the four.
+**No fifth letter is implied.** An involution, a change of frame and a derivation also occur in the operator articles, and each carries the letter that its own article gives it. The four marks are the vocabulary of the four families assembled from the multiplication; they do not assert that every operator belongs to one of the four.
 
 ## The Slots
 
@@ -35,13 +35,13 @@ The order follows the dependence. The four letters come first, because the names
 
 In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the second the right multiplier, and the operator acts by $X\mapsto\tilde QX\tilde P$. For $L$ and $R$ the same rule holds with one subscript: $L_{\tilde Q}$ acts by $X\mapsto\tilde QX$ and $R_{\tilde P}$ by $X\mapsto X\tilde P$. The order of the subscripts is the order of the factors around the argument, left factor first.
 
-**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $T$ are always the two multipliers.
+**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $L$ and $R$ are always the two multipliers.
 
 **The sandwich has one free slot.** The sandwich is $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde P}$, never $\Theta$.
 
 ### The Index of a Basis Operator
 
-A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ and $R_\nu=R_{e_\nu}$. A Greek pair on $T$ is the pair of its slots, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_\mu=\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the index names the element and never a matrix entry, so $L_\mu$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
+A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ and $R_\nu=R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_\mu=\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the index names the element and never a matrix entry, so $L_\mu$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
 
 ## The Names of the Sets
 
@@ -169,7 +169,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 ## Summary
 
-The four families are written $L$, $R$, $T$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The subscripts of $T$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index is the index of a basis element, $L_\mu=L_{e_\mu}$ and $T_{\mu\nu}=L_\mu R_\nu$, read in that order, the first index belonging to the left slot, and it never names a matrix entry.
+The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index is the index of a basis element, $L_\mu=L_{e_\mu}$, $R_\nu=R_{e_\nu}$, and $L_\mu R_\nu$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry.
 
 The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries the family's letters in the superscript, $\mathsf M_4^{L}$, $\mathsf M_4^{R}$, $\mathsf M_4^{LR}$ and $\mathsf M_4^{LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 

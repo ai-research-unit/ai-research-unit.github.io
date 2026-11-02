@@ -159,7 +159,7 @@ the array of the bilinear map $(x,y)\mapsto Qx\cdot Py$, which is the coefficien
 
 ## The Pair as a Semigroup
 
-**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$, which is $T_{QQ'PP'}$ because the algebra is commutative. So the composition is the multiplication of the products, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}\times\mathbb{C}$ onto the monoid $(\mathbb{C},\cdot)$ whose kernel is the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$ because the algebra is commutative. So the composition is the multiplication of the products, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}\times\mathbb{C}$ onto the monoid $(\mathbb{C},\cdot)$ whose kernel is the rescaling.
 
 **The units.** The invertible members are those with $QP\neq0$, of group
 

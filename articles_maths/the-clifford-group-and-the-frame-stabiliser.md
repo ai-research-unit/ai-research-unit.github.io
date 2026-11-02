@@ -176,7 +176,7 @@ P\Gamma=\Gamma/\mathbb{C}^{\times}I\cong O(4,\mathbb{C}),
 $$
 of dimension six. The projective frame stabiliser is trivial: a frame is a point of $GL_4/\mathbb{C}^{\times}I$. The projective spin group is $SO(4,\mathbb{C})$, and the spin group is its double cover.
 
-**The finite subgroup.** The thirty-two matrices $\pm T_{\mu\nu}$ form a finite subgroup
+**The finite subgroup.** The thirty-two matrices $\pm L_{\mu}R_{\nu}$ form a finite subgroup
 $$
 G\subset\Gamma,\qquad |G|=32,
 $$
@@ -204,7 +204,7 @@ The frame is a single orbit of $GL_4(\mathbb{C})$ with stabiliser $\mathbb{C}^{\
 $$
 1\longrightarrow\mathbb{C}^{\times}\longrightarrow\Gamma\longrightarrow O(4,\mathbb{C})\longrightarrow1,
 $$
-has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its even part is $\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$, and the spin group is $SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, the double cover of $SO(4,\mathbb{C})$, of dimension six. The two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group $G=\{\pm T_{\mu\nu}\}$ of order $32$ is a subgroup of $\Gamma$; its image in $O(4,\mathbb{C})$ is the sign group $(\mathbb{Z}/2)^4$ of order $16$, and its determinant is $1$. The frame stabiliser is the scalars; the even Clifford group is the scalars times the spin group, and the full Clifford group is the scalars times the Pin group; the spin group is the biquaternion versor group in the real case and the product of the two biquaternion factors in the complex case.
+has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its even part is $\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$, and the spin group is $SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, the double cover of $SO(4,\mathbb{C})$, of dimension six. The two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group $G=\{\pm L_{\mu}R_{\nu}\}$ of order $32$ is a subgroup of $\Gamma$; its image in $O(4,\mathbb{C})$ is the sign group $(\mathbb{Z}/2)^4$ of order $16$, and its determinant is $1$. The frame stabiliser is the scalars; the even Clifford group is the scalars times the spin group, and the full Clifford group is the scalars times the Pin group; the spin group is the biquaternion versor group in the real case and the product of the two biquaternion factors in the complex case.
 
 | object | value |
 |---|---|
@@ -217,7 +217,7 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 | spin group | $SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, dimension $6$ |
 | real spin group | $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$, dimension $6$ |
 | projective Clifford group | $O(4,\mathbb{C})$, dimension $6$ |
-| finite subgroup | $G=\{\pm T_{\mu\nu}\}$, order $32$ |
+| finite subgroup | $G=\{\pm L_{\mu}R_{\nu}\}$, order $32$ |
 | image of $G$ | $(\mathbb{Z}/2)^4$, order $16$ |
 | determinant of $G$ | $1$ |
 
@@ -233,8 +233,8 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 | $\mathrm{Spin}(4,\mathbb{C})$ | the spin group, the even part of Pin |
 | $\mathrm{Pin}(4,\mathbb{C})$ | the pin group of the complex space |
 | $O(4,\mathbb{C})$ | the complex orthogonal group |
-| $T_{\mu\nu}$ | the two-sided operator $L_\mu R_\nu$ |
-| $G$ | the finite group $\{\pm T_{\mu\nu}\}$ |
+| $L_{\mu}R_{\nu}$ | the two-sided operator $L_\mu R_\nu$ |
+| $G$ | the finite group $\{\pm L_{\mu}R_{\nu}\}$ |
 | $\mathbb{B}^{\times}_1$ | the norm-one biquaternion group |
 
 ## Further Reading
