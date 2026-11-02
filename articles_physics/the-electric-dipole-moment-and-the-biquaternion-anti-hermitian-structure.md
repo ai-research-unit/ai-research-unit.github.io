@@ -16,7 +16,7 @@ Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu
 
 The biquaternion framework makes a structural statement about the EDM operator that is the subject of this article. The insertion $\sigma_{\mu\nu}\,-iR_{e_z}$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma_{\mu\nu}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other, and the Hermiticity flips under the duality. The article establishes this and states what it does and does not buy.
 
-- **Established, and recomputed below.** The Hermiticity of the insertions, the Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}$, and the resulting sector placement. The $\vec E$-coupling insertion $\sigma_{0k}\,-iR_{e_z}$ is anti-Hermitian (recomputed), hence material; the $\vec B$-coupling insertion $\sigma_{ij}$ is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
+- **Established, and recomputed below.** The Hermiticity of the insertions, the Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=i(\sigma_{\mathrm D})_{\mu\nu}$, with $(\sigma_{\mathrm D})_{\mu\nu}$ the signature-weighted sum defined below, and the resulting sector placement. The $\vec E$-coupling insertion $\sigma_{0k}\,-iR_{e_z}$ is anti-Hermitian (recomputed), hence material; the $\vec B$-coupling insertion $\sigma_{ij}$ is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
 - **Standard, transcribed.** The definition of the EDM, its $\mathbf{P}$-, $\mathbf{T}$-, and $\mathbf{CP}$-odd character, the nonrelativistic limit, the form-factor decomposition of the electromagnetic vertex, the Standard Model prediction (CKM-suppressed and tiny), the $\theta$-term contribution, and the experimental bounds are standard. They are stated in the framework's notation.
 - **Gap, left visible.** The framework supplies the operator and its sector, and it does not supply the coefficient. It has no CP-violating phase of its own, no mechanism to generate one, and no prediction for the electron, neutron, or proton EDM. The value of $d$ is an empirical input, and the framework's statement is the structural one: a nonzero EDM is the presence of a coefficient on an anti-Hermitian, material-sector insertion.
 
@@ -24,7 +24,7 @@ The article is organised as follows. A section defines the EDM operator and its 
 
 The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 
-With $-iR_{e_z}=i\omega$ and $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon_{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma_{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
+With $-iR_{e_z}=i\omega$ and $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon_{0123}=+1$, with the frame metric $g=\mathrm{diag}(+1,-1,-1,-1)$, which is its own inverse, and the signature signs $\varepsilon_\rho=g_{\rho\rho}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 
 The framework results used here are those of the companion articles:
 
@@ -74,15 +74,15 @@ $$
 
 The pattern is the standard one: $iR_{e_x}$ is Hermitian and $iL_{e_k}R_{e_y}$ anti-Hermitian; the boost generators $\sigma_{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma_{ij}$ do not, and $-iR_{e_z}$, being Hermitian and anticommuting with each $iL_{e_\mu}R_{e_{\nu(\mu)}}$, commutes with the bilinear $\sigma_{\mu\nu}$ and so leaves its Hermiticity unchanged. **The $\vec E$-coupling insertion is the anti-Hermitian one.**
 
-**The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol, with the sum over the raised pair,
+**The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol, with the explicit sum over the pair and the two signature signs that an upper pair would carry,
 
 $$
-\boxed{\;\sigma_{\mu\nu}\,-iR_{e_z} = \frac{i}{2}\,\epsilon_{\mu\nu\rho\sigma}\,\sigma^{\rho\sigma},
+\boxed{\;\sigma_{\mu\nu}\,-iR_{e_z} = \frac{i}{2}\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\,\varepsilon_\rho\varepsilon_\sigma\,\sigma_{\rho\sigma},
 \qquad\text{i.e.}\qquad
-(\sigma_{\mathrm D})_{\mu\nu}:=\tfrac12\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma} = -\,i\,\sigma_{\mu\nu}\,-iR_{e_z}\;},
+(\sigma_{\mathrm D})_{\mu\nu}:=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\,\varepsilon_\rho\varepsilon_\sigma\,\sigma_{\rho\sigma} = -\,i\,\sigma_{\mu\nu}\,-iR_{e_z}\;},
 $$
 
-an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly zero. The duality exchanges the electric and magnetic components: $\sigma_{0k}\,-iR_{e_z}$ is dual to a combination of the $\sigma_{ij}$, and vice versa. Since the duality factor is $i$, it exchanges Hermitian with anti-Hermitian, which is exactly the flip recorded above.
+an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly zero. The two signature signs are not decoration: the plain contraction $\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$ agrees with the weighted one on the three pairs $(0,k)$ and has the opposite sign on the three pairs $(i,j)$, because the complementary pair is spatial in the first case and mixed in the second. The duality exchanges the electric and magnetic components: $\sigma_{0k}\,-iR_{e_z}$ is dual to a combination of the $\sigma_{ij}$, and vice versa. Since the duality factor is $i$, it exchanges Hermitian with anti-Hermitian, which is exactly the flip recorded above.
 
 **The sector placement.** The even Clifford algebra generated by the products of pairs of the generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$ — the unit, the $\sigma_{\mu\nu}$, and $-iR_{e_z}$ — is isomorphic to the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, and under this isomorphism the framework's sector split is the Hermiticity split: Hermitian generators lie in the informational sector $\mathbb{M}_+$ and anti-Hermitian generators in the material sector $\mathbb{M}_-$. The dictionary is that of the companion articles. Applied to the insertions:
 
@@ -182,7 +182,7 @@ $$
 
 so that the two coefficients are the form factors at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the $-iR_{e_z}$. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.
 
-**Why the dual is the CP-odd one.** The form-factor pair $(F_2,F_3)$ is the framework's Hermitian/anti-Hermitian pair, and the two differ by the insertion of the volume element. The magnetic term has $F_2$ and no $-iR_{e_z}$; the EDM term has $F_3$ and one $-iR_{e_z}$. Under the Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}$, the EDM insertion is the dual of the magnetic one with a factor of $i$; the factor is what makes the EDM's coefficient CP-odd and the magnetic moment's coefficient CP-even. The framework does not compute $F_3$; it places it in the anti-Hermitian sector, and the vanishing of $F_3$ leaves the pair $(F_2,F_3)$ wholly in the informational sector, which is the CP-even statement.
+**Why the dual is the CP-odd one.** The form-factor pair $(F_2,F_3)$ is the framework's Hermitian/anti-Hermitian pair, and the two differ by the insertion of the volume element. The magnetic term has $F_2$ and no $-iR_{e_z}$; the EDM term has $F_3$ and one $-iR_{e_z}$. Under the Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=i(\sigma_{\mathrm D})_{\mu\nu}$, the EDM insertion is the dual of the magnetic one with a factor of $i$; the factor is what makes the EDM's coefficient CP-odd and the magnetic moment's coefficient CP-even. The framework does not compute $F_3$; it places it in the anti-Hermitian sector, and the vanishing of $F_3$ leaves the pair $(F_2,F_3)$ wholly in the informational sector, which is the CP-even statement.
 
 **The magnetic moment as the calibration.** The anomalous magnetic moment $F_2$ is measured to extraordinary precision, and its theoretical value is the framework's testing ground for the fermion sector; the companion article on the anomalous magnetic moment computes the framework's contribution. The EDM is the dual observable, and its bound is many orders of magnitude tighter in its own units than the magnetic moment's precision. The two together are the complete CP-even and CP-odd content of the dimension-five electromagnetic couplings of a spin-$\tfrac12$ particle.
 
@@ -234,7 +234,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 | The even Clifford algebra as the biquaternion algebra, and the Hermiticity sector split | **Supplied**; the identification of Hermitian with $\mathbb{M}_+$ and anti-Hermitian with $\mathbb{M}_-$ |
 | The EDM insertion $\sigma_{0k}\,-iR_{e_z}$ as anti-Hermitian, material-sector | **Supplied**, recomputed entry by entry |
 | The magnetic-moment insertion $\sigma_{ij}$ as Hermitian, informational-sector | **Supplied**, recomputed |
-| The Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}$ | **Supplied**, recomputed for all pairs |
+| The Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=i(\sigma_{\mathrm D})_{\mu\nu}$, with $(\sigma_{\mathrm D})_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\sigma_{\rho\sigma}$ | **Supplied**, recomputed for all pairs |
 | The explicit $i$ in the EDM Lagrangian as the marker of the anti-Hermitian insertion | **Supplied** by the algebra |
 | The definition of the EDM and its $\mathbf{P}$-, $\mathbf{T}$-, $\mathbf{CP}$-odd character | **Transcribed**; standard |
 | The form-factor decomposition and the nonrelativistic limit | **Transcribed**; standard |
@@ -259,7 +259,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 The electric dipole moment is the CP-odd, dimension-five coupling of a spin-$\tfrac12$ particle to the electromagnetic field, $-\tfrac{i}{2}d\,\bar{\psi}\sigma_{\mu\nu}\,-iR_{e_z}\psi F_{\mu\nu}$, whose nonrelativistic limit is $-d\,\vec E\cdot\boldsymbol{\sigma}$. In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion $\sigma_{0k}\,-iR_{e_z}$ is **anti-Hermitian** and therefore lies in the material sector $\mathbb{M}_-$, while the $\vec B$-coupling magnetic-moment insertion $\sigma_{ij}$ is **Hermitian** and lies in the informational sector $\mathbb{M}_+$; both statements were recomputed entry by entry in the block basis. The two are Hodge duals,
 
 $$
-\boxed{\;\sigma_{\mu\nu}\,-iR_{e_z}=\frac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}\;},
+\boxed{\;\sigma_{\mu\nu}\,-iR_{e_z}=\frac{i}{2}\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\,\varepsilon_\rho\varepsilon_\sigma\,\sigma_{\rho\sigma}\;},
 $$
 
 verified for all pairs $(\mu,\nu)$ with residual exactly zero, and the $i$ of the duality exchanges Hermiticity between the pair. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian and is the algebra's marker of the CP-odd coefficient.
@@ -276,7 +276,8 @@ The form-factor decomposition $\Gamma_\mu=iL_{e_\mu}R_{e_{\nu(\mu)}} F_1+\tfrac{
 | $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$ | Frame cells; $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ |
 | $\sigma_{\mu\nu}=\tfrac{i}{2}[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ | Lorentz generators |
 | $-iR_{e_z}=i\omega$, $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$ | Chirality cell and volume element |
-| $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}$ | Hodge duality of the insertions |
+| $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\sigma_{\rho\sigma}$ | Hodge duality of the insertions |
+| $\varepsilon_\rho=g_{\rho\rho}$ | Signature sign of the index $\rho$; with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $\sigma_{0k},\sigma_{0k}\,-iR_{e_z}$ | Anti-Hermitian, $\mathbb{M}_-$ (EDM insertion) |
 | $\sigma_{ij},\sigma_{ij}\,-iR_{e_z}$ | Hermitian, $\mathbb{M}_+$ (magnetic insertion) |
 | $-\tfrac{i}{2}d\,\bar{\psi}\sigma_{\mu\nu}\,-iR_{e_z}\psi F_{\mu\nu}$ | EDM Lagrangian |
