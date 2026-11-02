@@ -185,14 +185,14 @@ L(\tilde Q)=\mathrm I_2\otimes A=\operatorname{diag}(A,A),\qquad
 A=\mathsf M_2(\tilde Q).
 $$
 Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde R)=L(\tilde Q\tilde R)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_\mu$ are the images of the four units, and they are the four matrices of the Standard Peirce article.</p>
-<p><strong>The four left matrices.</strong> With $L_\mu=L(e_\mu)$,
+<p><strong>The four left matrices.</strong> Each is the image of a unit under the left matrix map, in the canonical frame,
 $$
-L_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_x=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_t=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_x=\mathsf{M}_4^{L}(e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+L_y=\mathsf{M}_4^{L}(e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_z=\mathsf{M}_4^{L}(e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
 and a general element is $L(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z$. In the Pauli form $L_t=\mathrm I_2\otimes\mathrm I_2$ and $L_k=-i\,\mathrm I_2\otimes\sigma_k$.</p>
 <p><strong>The right copy.</strong> The right matrix is
@@ -201,14 +201,14 @@ R(\tilde P)=B^{\mathsf T}\otimes\mathrm I_2,\qquad
 B=\mathsf M_2(\tilde P),
 $$
 a block matrix whose four blocks are scalar multiples of $\mathrm I_2$. Its image is the four-dimensional subalgebra $\mathbb{B}_R$. The composition law is anti-multiplicative, $R(\tilde P)R(\tilde S)=R(\tilde S\tilde P)$, and the map $\tilde P\mapsto R(\tilde P)$ is injective. The rank is $2\operatorname{rank}B$, the trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde P\rangle_{\natural}^2$. The four basis matrices $R_\mu$ are the images of the four units.</p>
-<p><strong>The four right matrices.</strong> With $R_\nu=R(e_\nu)$,
+<p><strong>The four right matrices.</strong> Each is the image of a unit under the right matrix map,
 $$
-R_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-R_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_t=\mathsf{M}_4^{R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_x=\mathsf{M}_4^{R}(e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_y=\mathsf{M}_4^{R}(e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_z=\mathsf{M}_4^{R}(e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 In the Pauli form $R_t=\mathrm I_4$, $R_x=-i\,\sigma_1\otimes\mathrm I_2$, $R_y=+i\,\sigma_2\otimes\mathrm I_2$ and $R_z=-i\,\sigma_3\otimes\mathrm I_2$. The signs differ from those of the left family because the transpose exchanges $\sigma_2$ with $-\sigma_2$ and fixes $\sigma_1,\sigma_3$.</p>
 <p><strong>The exchange.</strong> The two copies are exchanged by the transpose and the permutation $\mathsf S$ of the second and third coordinates:
@@ -233,7 +233,7 @@ $$
 of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.</p>
 <p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of <em>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</em>.</p>
 <p><strong>The general level.</strong> A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.</p>
-<h2 id="the-sixteen-matrices-math136">The Sixteen Matrices $L_{\mu}R_{\nu}$</h2>
+<h2 id="the-sixteen-matrices-math134">The Sixteen Matrices $L_{\mu}R_{\nu}$</h2>
 <h3 id="the-table-in-four-families">The Table in Four Families</h3>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
@@ -398,7 +398,7 @@ L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)
 =\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
 $$</p>
 <p><strong>On the basis.</strong> The evaluation reproduces the four family formulas of §<em>The Table in Four Families</em>: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde P)$ written in the model.</p>
-<h3 id="why-the-math242-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
+<h3 id="why-the-math240-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
 <p><strong>The dimensions.</strong> $L(\tilde Q)$ and $R(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L(\tilde Q)\otimes R(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.</p>
 <p><strong>The correct product.</strong> The matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
 $$
@@ -473,7 +473,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-coefficient-matrix-math328">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math326">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>The Sixteen Matrices $L_{\mu}R_{\nu}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}L_{\mu}R_{\nu}.
@@ -489,7 +489,7 @@ $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mu}R_{\nu},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
-<h3 id="the-length-math344">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math342">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -593,7 +593,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="math469-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<h3 id="math467-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -900,7 +900,7 @@ $$
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
-<h4 id="the-normal-form-and-the-pair-math654">The normal form and the Pair $(\beta,\delta)$</h4>
+<h4 id="the-normal-form-and-the-pair-math652">The normal form and the Pair $(\beta,\delta)$</h4>
 <p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.

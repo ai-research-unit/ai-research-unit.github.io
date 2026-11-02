@@ -130,20 +130,20 @@ $$
 \mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
 $$
 The first factor is the multiplicity and the second the matrix of the element. The left copy is the set of matrices $I_2\otimes A$ and the right copy the set $B\otimes I_2$: in the $4\times4$ matrix of an element the four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$ on the left, and $M_{11}I_2$, $M_{21}I_2$, $M_{12}I_2$, $M_{22}I_2$ on the right, where $M_{ij}$ are the entries of $\mathsf{M}_2(\tilde Q)$.</p>
-<p><strong>The four left matrices.</strong> Write $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$ for the four units in the canonical frame. They are
+<p><strong>The four left matrices.</strong> Each is the image of a unit under the left matrix map, in the canonical frame,
 $$
-L_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{e_x}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_{e_t}=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_x}=\mathsf{M}_4^{L}(e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_{e_y}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{e_z}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+L_{e_y}=\mathsf{M}_4^{L}(e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{e_z}=\mathsf{M}_4^{L}(e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
 each equal to $I_2\otimes\mathsf M_2(\vec e_k)$, with $\mathsf M_2(\vec e_k)=-i\sigma_k$. A general element is their linear combination,
 $$
 \mathsf M_4^{L}(\tilde Q)=Q_tL_{e_t}+Q_xL_{e_x}+Q_yL_{e_y}+Q_zL_{e_z}=I_2\otimes\mathsf M_2(\tilde Q).
 $$</p>
-<p><strong>The four right matrices.</strong> Write $R_{e_\nu}=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
+<p><strong>The four right matrices.</strong> Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
@@ -160,12 +160,12 @@ R_{e_\nu}=\mathsf S\,L_{e_\nu}^{\mathsf T}\,\mathsf S^{-1}.
 $$
 Explicitly,
 $$
-R_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-R_{e_x}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_{e_t}=\mathsf{M}_4^{R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_{e_x}=\mathsf{M}_4^{R}(e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_{e_y}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{e_z}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+R_{e_y}=\mathsf{M}_4^{R}(e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_{e_z}=\mathsf{M}_4^{R}(e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
 $$
 and a general element is $\mathsf M_4^{R}(\tilde Q)=Q_tR_{e_t}+Q_xR_{e_x}+Q_yR_{e_y}+Q_zR_{e_z}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.</p>
 <p><strong>The Pauli form of the two families.</strong> With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
@@ -256,12 +256,12 @@ The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra 
 <p><strong>The five cells of the frame.</strong> The five generators are two-sided operators of the frame, built from the left and right multiplications of <em>Operator and Calculus Conventions</em>, §<em>The Operators</em>: the left factor is a unit and the right factor a spatial unit,
 $$
 \boxed{\;\mathsf C_0=iR_{e_x}=iL_{e_t}R_{e_x},\qquad
-\mathsf C_1=iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y},\qquad
-\mathsf C_2=iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y},\qquad
-\mathsf C_3=iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y},\qquad
+\mathsf C_1=iL_{e_x}R_{e_y},\qquad
+\mathsf C_2=iL_{e_y}R_{e_y},\qquad
+\mathsf C_3=iL_{e_z}R_{e_y},\qquad
 \mathsf C_5=-iR_{e_z}=-iL_{e_t}R_{e_z}\;}
 $$
-In the canonical frame they are the monomial matrices listed in the appendix, with the Pauli evaluation. They satisfy
+For $\mathsf C_0$ and $\mathsf C_5$ the left factor is $e_t$, so the cell collapses to a single right multiplication and the two spellings are the same operator. In the canonical frame they are the monomial matrices listed in the appendix, with the Pauli evaluation. They satisfy
 $$
 \{\mathsf C_\mu,\mathsf C_\nu\}=2g_{\mu\nu}I_4,\qquad
 (\mathsf C_k)^2=-I_4,\qquad
