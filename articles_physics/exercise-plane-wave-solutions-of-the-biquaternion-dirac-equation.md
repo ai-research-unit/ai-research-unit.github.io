@@ -157,7 +157,7 @@ $$
 $$
 $$
 iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,iR_{\vec e_x}=L_{i\vec e_k}\bigl(R_{i\vec e_z}+R_{-i\vec e_z}\bigr)=0,\qquad
-iL_{\vec e_j}R_{\vec e_y}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,iL_{\vec e_j}R_{\vec e_y}=L_{\vec e_j\vec e_k+\vec e_k\vec e_j}=0 .
+iL_{\vec e_j}R_{\vec e_y}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,iL_{\vec e_j}R_{\vec e_y}=L_{\vec e_j}L_{\vec e_k}+L_{\vec e_k}L_{\vec e_j}=0 .
 $$
 So $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, without a matrix.
 
@@ -469,9 +469,9 @@ $$
 and it anticommutes with every generator: with $iR_{\vec e_x}=R_{i\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$,
 
 $$
--iR_{\vec e_z}\,iR_{\vec e_x}+iR_{\vec e_x}\,-iR_{\vec e_z}=R_{-i\vec e_z i\vec e_x+i\vec e_x(-i\vec e_z)}=0,
+-iR_{\vec e_z}\,iR_{\vec e_x}+iR_{\vec e_x}\,-iR_{\vec e_z}=R_{i\vec e_x}R_{-i\vec e_z}+R_{-i\vec e_z}R_{i\vec e_x}=0,
 \qquad
--iR_{\vec e_z}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,-iR_{\vec e_z}=L_{i\vec e_k}\bigl(R_{-i\vec e_z\vec e_y+\vec e_y(-i\vec e_z)}\bigr)=0 .
+-iR_{\vec e_z}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,-iR_{\vec e_z}=L_{i\vec e_k}\bigl(R_{\vec e_y}R_{-i\vec e_z}+R_{-i\vec e_z}R_{\vec e_y}\bigr)=0 .
 $$
 
 The projectors are $P_L=R_{\tilde\Pi_+}$ and $P_R=R_{\tilde\Pi_-}$; they satisfy $P_L+P_R=1$, $P_LP_R=0$, and $P_L\,-iR_{\vec e_z}=-P_L$, $P_R\,-iR_{\vec e_z}=P_R$. They are the Peirce projectors of the algebra; in the Peirce basis they project onto the two chiral blocks.
@@ -502,7 +502,7 @@ The spatial generators are unchanged because $\tilde W^{-1}\vec e_y\tilde W=\vec
 
 $$
 S_{0k}=\frac i4[iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
-S_{jk}=\frac i4[iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}]=\frac i2\,L_{\vec e_j\vec e_k}.
+S_{jk}=\frac i4[iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}]=\frac i2\,L_{\vec e_j}L_{\vec e_k}.
 $$
 
 Both are block diagonal on the Peirce components, so $[S_{\mu\nu},-iR_{\vec e_z}]=0$. The rotations $S_{jk}$ carry no chirality factor and act with the same sign on the two components; the boosts $S_{0k}$ carry the chirality sign, since $R_{i\vec e_z}=iR_{\vec e_z}$ and
@@ -618,7 +618,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.
 3. **Spin sums.** The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}-m$ hold as operator identities on $\mathbb{B}$, and $(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}-m)=0$ on shell.
 4. **Massless limit.** Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.
-5. **Generators.** The Clifford algebra is the multiplication table: $iR_{\vec e_x}=R_{i\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$, $-iR_{\vec e_z}=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $iR_{\vec e_x}$ to $R_{i\vec e_z}$ and leaves $iL_{\vec e_k}R_{\vec e_y}$ unchanged; the Lorentz generators are $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.
+5. **Generators.** The Clifford algebra is the multiplication table: $iR_{\vec e_x}=R_{i\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$, $-iR_{\vec e_z}=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $iR_{\vec e_x}$ to $R_{i\vec e_z}$ and leaves $iL_{\vec e_k}R_{\vec e_y}$ unchanged; the Lorentz generators are $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j}L_{\vec e_k}$.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 7. **Helicity blocks.** The symbol squares to the interval, $S(p)^2=p^2\,\mathrm I$, and commutes with $L_\Xi$, $\Xi=-i\vec p/|\vec p|$, so it splits into two $2\times2$ blocks of determinant $m^2-p^2=\lambda_+\lambda_-+m^2$; the blocks are isospectral, $\det\mathcal D(p)=(m^2-p^2)^2$, and the mass shell is the vanishing of each block determinant, with a one-dimensional kernel per helicity.
 
@@ -641,7 +641,7 @@ Two objects are needed by the exercise and are not displayed in the parent: the 
 | $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^*\tilde\Phi\,i\vec e_x)$ | Dirac pairing in the chiral basis |
 | $iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space Dirac operator |
 | $\tilde W=(e_t+\vec e_y)/\sqrt2$ | Change of basis, chiral $\to$ Dirac |
-| $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
+| $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S_{jk}=\frac i2L_{\vec e_j}L_{\vec e_k}$ | Lorentz generators |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 | $p^2=E^2-\vec p^{\,2}$ | Interval of the four-momentum, $\hbar=c=1$ |

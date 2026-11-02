@@ -219,7 +219,7 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 
 ### The Clifford Structure
 
-**The Clifford algebra is the cell algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by $L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=L_{e_\mu e_\rho}R_{e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
+**The Clifford algebra is the cell algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together, $L_{e_\mu}R_{e_\nu}\,L_{e_\rho}R_{e_\sigma}=L_{e_\mu}L_{e_\rho}R_{e_\nu}R_{e_\sigma}$; the result is again a left multiplication and a right multiplication, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$

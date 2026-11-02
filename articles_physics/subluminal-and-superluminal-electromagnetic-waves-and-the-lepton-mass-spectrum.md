@@ -22,7 +22,7 @@ $$
 
 the **pseudoscalar**, which satisfies $\omega^2=-1$, and the source sets $i\equiv\omega$: the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is therefore the **duality operator**, the module representative of the corpus's central imaginary unit, and not a second imaginary number. Every $\exp(\omega\beta)$ below is the exponential of that cell, that is, a duality rotation.
 
-The source's fixed bivector, the product $iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}=-\vec e_z$, is the **spin plane**, the role played in the corpus's Dirac–Hestenes article by the fixed element $I\sigma_3$. It needs a left/right check, because its two readings are different cells: as the printed product of frame cells it is $L_{e_ye_x}R_{e_ye_y}=-L_{\vec e_z}$, a **left** multiplication, while the **right** multiplication by the same bivector is $R_{-\vec e_z}$, which is the volume element $\omega$ itself, since the biquaternion unit $-\vec e_z$ is the dictionary's pseudoscalar. The two cells differ on every element that does not commute with $\vec e_z$, and the spinorial equation is written below with the printed composition, the left one.
+The source's fixed bivector, the product $\gamma_2\gamma_1=-\vec e_z$, is the **spin plane**, the role played in the corpus's Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3$ by the fixed bivector $\omega\sigma_3$, and it multiplies the spinor on the **right** as it does there. The cell for that right multiplication is $R_{-\vec e_z}$, which is the volume element $\omega$ displayed just above: the spin plane and the duality generator of this article are the same cell.
 
 The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary. The source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
 
@@ -114,48 +114,36 @@ Substituting $F=-\psi\vec e_z\psi^{\mathrm{c}}$ into the generalised Maxwell equ
 
 $$
 \begin{aligned}
-\partial\psi\;iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}
+\partial\psi\,R_{-\vec e_z}
 &=\lambda\,\psi\,iR_{\vec e_x}\exp(\omega\beta)+\omega\kappa\,\psi\,iR_{\vec e_x}\exp(\omega\beta)\\
 &\quad+\frac{1}{2\rho}\exp(\omega\beta)J\,\psi ,
 \end{aligned}
 $$
 
-with $\lambda$ and $\kappa$ the two real scalars built from the bivector $\Omega=\sum_\mu g_{\mu\mu}\,v_\mu\Omega_\mu$. The source also prints the pair as $\Lambda$ and $K$ once the phase is factored; one spelling, $\lambda$ and $\kappa$, is kept here.
+with $\lambda$ and $\kappa$ the two real scalars built from the bivector $\Omega=\sum_\mu g_{\mu\mu}\,v_\mu\Omega_\mu$. The source prints the spin-plane factor as the pair of frame cells $iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}$, which is the appendix's spelling of the generator product $\gamma_2\gamma_1$; that product is the single bivector $-\vec e_z$, and because it multiplies the spinor on the right, its cell is $R_{-\vec e_z}$, the volume element $\omega$ of the introduction. The source also writes the coefficient pair as $\Lambda$ and $K$ once the phase is factored; one spelling, $\lambda$ and $\kappa$, is kept here.
 
-**Three checks, because this display is where a transcription of the source goes wrong.** Each is a one-line computation, and each decides a sign or a side.
-
-*The left side is one cell, not two.* Frame cells compose by $L_aR_bL_cR_d=L_{ac}R_{db}$, so
-
-$$
-iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}=L_{e_ye_x}R_{e_ye_y}=-L_{\vec e_z},
-$$
-
-the **left** multiplication by the spin-plane bivector. The **right** multiplication by the same bivector is a different cell, the pseudoscalar $R_{-\vec e_z}=\omega$, and $L_{-\vec e_z}\neq R_{-\vec e_z}$ on every element that does not commute with $\vec e_z$. The display keeps the printed composition, the left one. The choice is not cosmetic: with the right-hand cell the two sides of the linearisation below come out carrying opposite half-rotations and nothing cancels, so the printed side is the one the argument needs.
-
-*The phase is the pseudoscalar cell.* $\exp(\omega\beta)$ is the exponential of $R_{-\vec e_z}$, that is, right multiplication by $e^{-\beta\vec e_z}$: a duality rotation of angle $\beta$, the operator the source writes $e^{\beta\omega}$ with its $\omega$ the volume element. Two products with it are needed. It commutes with every right multiplication, hence with the phase cell $\exp(\omega\beta/2)$ of the decomposition, because $R_aR_b=R_{ba}$ and $\vec e_z$ commutes with itself. And it **anticommutes** with $iR_{\vec e_x}$, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$:
+Two facts carry the linearisation. The phase cell $\exp(\omega\beta)$ is a function of $-\vec e_z$, so it commutes with the spin-plane cell and with its own half-rotation. It **anticommutes** with the spin cell $iR_{\vec e_x}$, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$:
 
 $$
 \omega\,iR_{\vec e_x}=-iR_{\vec e_x}\,\omega .
 $$
 
-*The phase sits on all three terms.* The source prints it once, on the current; carried, it stands to the right of $iR_{\vec e_x}$ in the two scalar terms, which is where the next subsection cancels it. Attached to the current alone it would leave the two sides of the linearised equation carrying opposite half-rotations, and nothing would cancel.
+And the phase multiplies **every** term. Printed on the current alone, it would leave the two sides of the linearised equation carrying opposite half-rotations, and nothing would cancel.
 
 The free case $J=0$ is therefore
 
 $$
-\partial\psi\;iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}
-=\left(\lambda+\omega\kappa\right)\psi\,iR_{\vec e_x}\exp(\omega\beta),
+\partial\psi\,R_{-\vec e_z}=\left(\lambda+\omega\kappa\right)\psi\,iR_{\vec e_x}\exp(\omega\beta),
 $$
 
 which has the shape of the Dirac–Hestenes equation but with **two** scalar coefficients instead of one mass. The two-constraint condition forces their ratio to a constant, and after a duality rotation by that constant the relation becomes $\kappa/\lambda=\tan\beta$, i.e. the two coefficients are the single mass times the cosine and the sine of the Takabayasi angle.
 
 ### The non-linear Dirac–Hestenes equation
 
-The non-linearity is exactly the factor $\exp(\omega\beta)$: when $\beta$ is **constant** the factor is a constant duality rotation and the equation becomes linear. Concretely, put $\psi=\varphi\exp(\omega\beta/2)$ with $\varphi=\sqrt\rho\,R$. The phase of the decomposition passes $iR_{\vec e_x}$ with a change of sign, $\exp(\omega\beta/2)iR_{\vec e_x}=iR_{\vec e_x}\exp(-\omega\beta/2)$ — the anticommutation above — and then meets the full rotation $\exp(\omega\beta)$ of the equation, so that each side is left with the **same** half rotation on the right:
+The non-linearity is exactly the factor $\exp(\omega\beta)$: when $\beta$ is **constant** the factor is a constant duality rotation and the equation becomes linear. Concretely, put $\psi=\varphi\exp(\omega\beta/2)$ with $\varphi=\sqrt\rho\,R$. The half-rotation of the decomposition passes the spin cell with a change of sign, $\exp(\omega\beta/2)iR_{\vec e_x}=iR_{\vec e_x}\exp(-\omega\beta/2)$ — the anticommutation above — and then meets the full rotation $\exp(\omega\beta)$ of the equation, so that each side is left with the **same** half rotation on the right:
 
 $$
-\partial\psi\;iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}
-=\Bigl(\partial\varphi\;iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}\Bigr)\exp(\omega\beta/2),
+\partial\psi\,R_{-\vec e_z}=\Bigl(\partial\varphi\,R_{-\vec e_z}\Bigr)\exp(\omega\beta/2),
 $$
 
 $$
@@ -166,7 +154,7 @@ $$
 Cancelling that common right factor, and with the combination $\lambda+\omega\kappa$ reduced by the constant duality rotation to the real $m$, the free equation reduces to the **linear Dirac–Hestenes equation**
 
 $$
-\boxed{\;\partial\varphi\;iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}=m\,\varphi\,iR_{\vec e_x}\;}
+\boxed{\;\partial\varphi\,R_{-\vec e_z}=m\,\varphi\,iR_{\vec e_x}\;}
 $$
 
 with $m$ identified as the mass. The criterion is therefore sharp, and it is the source's key structural statement: **the Maxwell equation for the field is equivalent to the linear Dirac equation for the spinor exactly when the Takabayasi angle is constant**, and the particular values $\beta=0$ and $\beta=\pi$ select the electron and the positron. The plane-wave solutions of the corpus's own Dirac exercise have constant $\beta$ — zero for the positive-energy ones — so they sit on precisely this linearisable class, and the source supplies the general reason why.
@@ -241,7 +229,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Frame cells, $iR_{\vec e_x}=R_{i\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$ |
 | $L_a$, $R_b$ | Left and right multiplication of a spinor, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
 | $\omega=iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}=R_{-\vec e_z}$ | Volume element, the pseudoscalar; $\omega^2=-1$; the source's "$i$", which the corpus identifies with its central imaginary unit |
-| $iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}=L_{e_ye_x}R_{e_ye_y}=-L_{\vec e_z}$ | Fixed spin-plane bivector; the printed product is the left multiplication, the right one is the cell $\omega$ |
+| $\gamma_2\gamma_1=-\vec e_z$ | Fixed spin-plane bivector, multiplying the spinor on the right; its cell is $R_{-\vec e_z}=\omega$ |
 | $\partial=iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k$ | Dirac operator, a cell acting on the spinor; $\delta$ the coderivative, $d$ the exterior derivative |
 | $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |

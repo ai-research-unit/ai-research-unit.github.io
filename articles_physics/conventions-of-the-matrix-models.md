@@ -221,7 +221,7 @@ The determinant is the square of the biquaternion norm and the trace is four tim
 
 ### The Clifford Structure and the Frame
 
-**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by $L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\tau}=L_{e_\mu e_\rho}R_{e_\tau e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
+**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together, $L_{e_\mu}R_{e_\nu}\,L_{e_\rho}R_{e_\tau}=L_{e_\mu}L_{e_\rho}R_{e_\nu}R_{e_\tau}$; the result is again a left multiplication and a right multiplication, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -243,7 +243,7 @@ $$
 $$
 with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
-**A cell is written as its two multipliers, never as a letter.** The basis cell is $L_{e_\mu}R_{e_\nu}$, for two unit indices, and the frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}R_{e_{\nu(\mu)}}$ with $\nu(t)=x$ and $\nu(k)=y$; the chirality cell is $-iL_{e_t}R_{\vec e_z}$. No single letter stands for a frame cell in either part of the corpus: the letter collided with the basis cells $L_{e_\mu}R_{e_\nu}$ and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles, and it is retired. The factor $i$ belongs to the cell, so a product of two cells is a product of the two multiplier pairs, $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}=-L_{e_\mu e_\nu}R_{e_{\nu(\nu)}e_{\nu(\mu)}}$, and the sign is carried by the product, not by a symbol.
+**A cell is written as its two multipliers, never as a letter.** The basis cell is $L_{e_\mu}R_{e_\nu}$, for two unit indices, and the frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}R_{e_{\nu(\mu)}}$ with $\nu(t)=x$ and $\nu(k)=y$; the chirality cell is $-iL_{e_t}R_{\vec e_z}$. No single letter stands for a frame cell in either part of the corpus: the letter collided with the basis cells $L_{e_\mu}R_{e_\nu}$ and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles, and it is retired. The factor $i$ belongs to the cell, so a product of two cells multiplies the two multipliers on each side, $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}=-L_{e_\mu}L_{e_\nu}R_{e_{\nu(\mu)}}R_{e_{\nu(\nu)}}$, and the sign is carried by the product, not by a symbol.
 
 **The two frames differ by the sign of the three spatial cells.** In the $\mathbb{M}_-$ frame the five cells are the ones above, and the three spatial ones square to $-I_4$. In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four cells that all square to $+I_4$ are
 $$
@@ -305,10 +305,10 @@ The three quaternion units become the three spacelike bivectors and the three im
 
 **The odd part.** The reading lands in the even part. Multiplication by the fixed cell $iR_{\vec e_x}$ reaches the odd part, and the two real sectors separate: $iR_{\vec e_x}$ times the image of $\mathbb{M}_+$ is the vector space, and $iR_{\vec e_x}$ times the image of $\mathbb{M}_-$ the trivector space. So a four-vector is $iR_{\vec e_x}$ times the image of $w\in\mathbb{M}_+$, and a trivector is $iR_{\vec e_x}$ times the image of $w\in\mathbb{M}_-$. The cell $iR_{\vec e_x}$ is the one choice in the odd half of the reading, and it is fixed by the representation.
 
-**Lorentz generators.** For $\mu\neq\nu$ the two frame cells anticommute, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=0$, so the commutator is twice the product, $iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}-iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\mu}R_{e_{\nu(\mu)}}=-2L_{e_\mu e_\nu}R_{e_{\nu(\nu)}e_{\nu(\mu)}}$, and
+**Lorentz generators.** For $\mu\neq\nu$ the two frame cells anticommute, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=0$, so the commutator is twice the product, $iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}-iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\mu}R_{e_{\nu(\mu)}}=-2\,L_{e_\mu}L_{e_\nu}R_{e_{\nu(\mu)}}R_{e_{\nu(\nu)}}$, and
 
 $$
-\sigma_{\mu\nu}=\tfrac14\bigl[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]=\tfrac12\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}=-\tfrac12\,L_{e_\mu e_\nu}R_{e_{\nu(\nu)}e_{\nu(\mu)}}
+\sigma_{\mu\nu}=\tfrac14\bigl[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]=\tfrac12\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}=-\tfrac12\,L_{e_\mu}L_{e_\nu}R_{e_{\nu(\mu)}}R_{e_{\nu(\nu)}}
 $$
 
 is half a bivector. Read in cells and in biquaternions,

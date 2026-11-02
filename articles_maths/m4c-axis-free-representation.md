@@ -143,8 +143,8 @@ Each is a signed permutation matrix, of determinant $1$ and trace $4\delta_{\mu 
 
 **The product of two basis matrices.** Write the two orders of the quaternion product as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$, with $\varepsilon,\varepsilon'=\pm1$ and $e_{\mu\nu},e_{\nu\mu}$ units. Then
 $$
-L_{e_\mu}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}=\varepsilon L_{e_\mu e_\nu}^{\mathrm{axf}},\qquad
-R_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}=\varepsilon' R_{e_\nu e_\mu}^{\mathrm{axf}}.
+L_{e_\mu}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}=\varepsilon L_{e_{\mu\nu}}^{\mathrm{axf}},\qquad
+R_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}=\varepsilon' R_{e_{\nu\mu}}^{\mathrm{axf}}.
 $$
 The left product follows the order of the units; the right product reverses it, because $R_aR_b=R_{ba}$. For example,
 $$

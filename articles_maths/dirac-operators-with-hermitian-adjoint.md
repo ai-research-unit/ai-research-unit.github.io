@@ -80,7 +80,7 @@ D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(
 (D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)(x,y).
 $$
 
-**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j} + L_{e_j}L_{e_i} = L_{e_ie_j + e_je_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
+**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j}+L_{e_j}L_{e_i}=0$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
 
 **Corollary (explicit spectrum and positivity).** In the negative definite case, where the dagger is positive, $\sum_jq(e_j) = -m$ and
 

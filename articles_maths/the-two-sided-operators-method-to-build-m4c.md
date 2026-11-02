@@ -239,7 +239,7 @@ where $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$, and it has order $32$.
 
 **Proof.** Closure: the product of two elements of $\{\pm L_{e_\mu}R_{e_\nu}\}$ is
 $$
-(\pm L_{e_\mu}R_{e_\nu})(\pm L_{e_\rho}R_{e_\sigma})=\pm L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\pm L_{e_\mu e_\rho}R_{e_\sigma e_\nu},
+(\pm L_{e_\mu}R_{e_\nu})(\pm L_{e_\rho}R_{e_\sigma})=\pm L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\pm L_{e_\mu}L_{e_\rho}R_{e_\nu}R_{e_\sigma},
 $$
 by the composition law of §*The Two-Sided Matrices*. The result is again in $\{\pm L_{e_\mu}R_{e_\nu}\}$. The set is finite, contains $\mathrm{I}_4=L_{e_t}R_{e_t}$, and every element is invertible, so it is a group. Distinctness: $L_{e_\mu}R_{e_\nu}=L_{e_\rho}R_{e_\sigma}$ gives $L_{e_\mu}^{-1}L_{e_\rho}=R_{e_\nu}R_{e_\sigma}^{-1}$, an element of $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$; both sides are signed basis matrices, so both are $\mathrm{I}_4$, hence $\mu=\rho$ and $\nu=\sigma$. If $L_{e_\mu}R_{e_\nu}=-L_{e_\rho}R_{e_\sigma}$, the same argument gives $\mathrm{I}_4=-\mathrm{I}_4$, which is false. So the thirty-two are distinct.
 

@@ -267,7 +267,7 @@ $$
 
 $$
 \{iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}\}
-=L_{\vec e_j\vec e_k+\vec e_k\vec e_j}G^2=0 .
+=\bigl(L_{\vec e_j}L_{\vec e_k}+L_{\vec e_k}L_{\vec e_j}\bigr)G^2=0 .
 $$
 
 The mixed anticommutator is

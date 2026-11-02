@@ -233,8 +233,7 @@ $$
 For $j\neq k$,
 $$
 A_jA_k+A_kA_j
-=L_{e_je_k}+L_{e_ke_j}
-=L_{e_je_k+e_ke_j}=0,
+=L_{e_j}L_{e_k}+L_{e_k}L_{e_j}=0,
 $$
 because $e_j,e_k$ anticommute. The mixed anticommutator with $A_0$ is
 $$
@@ -254,7 +253,7 @@ The volume element of the real Clifford module is the central imaginary $i$, not
 $$
 A_0A_k=\bar{\cdot}\,\bar{\cdot}L_{-i e_k}=L_{-i e_k},
 \qquad
-A_jA_k=L_{e_j e_k},
+A_jA_k=L_{e_j}L_{e_k},
 \qquad
 A_5A_\mu=-A_\mu A_5 .
 $$
@@ -286,11 +285,11 @@ $$
 
 **Proof.** The square of $G_0$ is
 $$
-(G_0)^2=i^2\,L_{e_t}R_{e_x}L_{e_t}R_{e_x}=(-1)\,L_{e_te_t}R_{e_xe_x}=(-1)(-I)=I .
+(G_0)^2=i^2\,L_{e_t}R_{e_x}L_{e_t}R_{e_x}=(-1)\,L_{e_t}L_{e_t}R_{e_x}R_{e_x}=(-1)(-I)=I .
 $$
 The square of $G_k$ is
 $$
-(G_k)^2=i^2\,L_{\vec e_k}R_{e_y}L_{\vec e_k}R_{e_y}=(-1)\,L_{e_ke_k}R_{e_ye_y}=(-1)(-I)=-I .
+(G_k)^2=i^2\,L_{\vec e_k}R_{e_y}L_{\vec e_k}R_{e_y}=(-1)\,L_{\vec e_k}L_{\vec e_k}R_{e_y}R_{e_y}=(-1)(I)=-I .
 $$
 The mixed anticommutator is
 $$

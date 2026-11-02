@@ -238,7 +238,7 @@ whose first column is the coordinate column of $\vec e_x\tilde\Pi_+\vec e_y=i\ti
 
 **Composition.** The product of two basis matrices is a signed basis matrix:
 $$
-L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=L_{e_\mu e_\rho}R_{e_\sigma e_\nu}=\epsilon\epsilon'\,L_{e_\mu'}R_{e_\nu'},
+L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\epsilon\epsilon'\,L_{e_\mu'}R_{e_\nu'},
 $$
 where $e_\mu e_\rho=\epsilon e_{\mu'}$ and $e_\sigma e_\nu=\epsilon' e_{\nu'}$, with $\epsilon,\epsilon'\in\{\pm1\}$. For general parameters,
 $$
