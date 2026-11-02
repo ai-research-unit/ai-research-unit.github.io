@@ -123,5 +123,5 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 ## Further Reading
 
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the lines.
-- [The Peirce Basis of $M_4(\mathbb{C})$](the-peircaxis-free basis-of-m4c.html), for the units and the gauge.
+- [The Peirce Basis of $M_4(\mathbb{C})$](the-peirce-basis-of-m4c.html), for the units and the gauge.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the general statement.

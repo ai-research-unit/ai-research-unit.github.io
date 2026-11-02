@@ -319,7 +319,7 @@ A spinor is an element of one of the two Peirce spaces $S_{\pm}=\mathbb{B}\tilde
 ## Further Reading
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
-- [The Peirce Basis of the Biquaternion Algebra](the-peircaxis-free basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix picture of the two spaces.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the identification of the two spaces as minimal left ideals.
 - [The Commutator Operator](the-commutator-operator.html), for the right multiplication and the exchange as operators.

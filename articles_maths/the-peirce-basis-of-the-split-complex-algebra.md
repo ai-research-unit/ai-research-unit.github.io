@@ -97,4 +97,4 @@ The Peirce basis of the split-complex algebra is the pair $\{\Pi_{+},\Pi_{-}\}$,
 
 - [The Peirce Decomposition of the Split-Complex Algebra](the-peirce-decomposition-of-the-split-complex-algebra.html), for the lines and their multiplication.
 - [Spinors as Peirce Coordinates in the Split-Complex Algebra](spinors-as-peirce-coordinates-in-the-split-complex-algebra.html), for the degenerate spinor.
-- [The Peirce Basis in $n$ Dimensions](the-peircaxis-free basis-in-n-dimensions.html), for the nondegenerate case and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the nondegenerate case and the gauge.

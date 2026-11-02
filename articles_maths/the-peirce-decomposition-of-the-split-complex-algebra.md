@@ -151,6 +151,6 @@ The split-complex algebra $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=1$, has the complet
 
 - [The Split-Complex Algebra](split-complex-algebra.html), for the algebra, its conjugation and its geometry.
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), for the idempotents and the halving map.
-- [The Peirce Basis of the Split-Complex Algebra](the-peircaxis-free basis-of-the-split-complex-algebra.html), for the canonical basis.
+- [The Peirce Basis of the Split-Complex Algebra](the-peirce-basis-of-the-split-complex-algebra.html), for the canonical basis.
 - [Spinors as Peirce Coordinates in the Split-Complex Algebra](spinors-as-peirce-coordinates-in-the-split-complex-algebra.html), for the degenerate spinor.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the nondegenerate case.

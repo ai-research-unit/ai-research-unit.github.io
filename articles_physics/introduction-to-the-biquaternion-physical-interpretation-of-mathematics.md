@@ -103,7 +103,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Nilpotents](../articles_maths/nilpotents.html)
 - [Idempotents](../articles_maths/idempotents.html)
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
-- [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peircaxis-free basis-of-the-biquaternion-algebra.html)
+- [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 

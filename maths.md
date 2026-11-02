@@ -5365,7 +5365,7 @@
 <a href="articles_maths/the-peirce-decomposition-of-the-split-complex-algebra.html">The Peirce Decomposition of the Split-Complex Algebra</a>
 <!-- the family $\Pi_\pm=\tfrac12(1\pm j)$ of $\mathbb{D}=\mathbb{R}[j]$, $j^2=1$; the idempotents central, so the mixed components vanish; the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$ and the componentwise product; the roots $\pm1,\pm j$ and the family from $\pm j$; the product decomposition $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$; the degenerate case of the general construction. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-the-split-complex-algebra.html">The Peirce Basis of the Split-Complex Algebra</a>
+<a href="articles_maths/the-peirce-basis-of-the-split-complex-algebra.html">The Peirce Basis of the Split-Complex Algebra</a>
 <!-- the pair $\{\Pi_+,\Pi_-\}$ as the Peirce basis, forced because the mixed lines are zero; no gauge, the replacement $t_\sigma t_\sigma^{-1}$ acting trivially; the coordinates $Q_\pm=q\pm q'$ and the diagonal array; the dimension count $0=0+0$; the automorphism $j\mapsto-j$ swapping the two lines. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-the-split-complex-algebra.html">Spinors as Peirce Coordinates in the Split-Complex Algebra</a>
@@ -5777,7 +5777,7 @@
 <a href="articles_maths/the-peirce-decomposition-of-the-reduced-biquaternion-algebra.html">The Peirce Decomposition of the Reduced Biquaternion Algebra</a>
 <!-- the algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^2-1)$ of complex dimension $2$; the family $\Pi_\pm=\tfrac12(1\pm j)$, central, so the mixed components vanish; the two lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ and the componentwise product; the roots $\pm1,\pm j$; the product decomposition $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$; the degenerate case of the general construction. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-the-reduced-biquaternion-algebra.html">The Peirce Basis of the Reduced Biquaternion Algebra</a>
+<a href="articles_maths/the-peirce-basis-of-the-reduced-biquaternion-algebra.html">The Peirce Basis of the Reduced Biquaternion Algebra</a>
 <!-- the pair $\{\Pi_+,\Pi_-\}$ as the Peirce basis, forced because the mixed lines are zero; no gauge; the coordinates $\breve Q_\pm=u\pm v$ and the diagonal array; the dimension count $0=0+0$; the automorphism $j\mapsto-j$ swapping the two lines. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</a>
@@ -6602,7 +6602,7 @@
 <a href="articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>
 <!-- the complete family of two idempotents as the only input, with the three conditions; the complement and the four lines $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ of dimension one; the corner rule; the two Peirce indices; the two mixed components; the four real parameters of the family; the $\mathbb{Z}/2$ grading; what the family does not give, namely an element in a mixed line, a basis and a gauge -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>
+<a href="articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>
 <!-- the four units with the matrix-unit products and the forced diagonal; existence by the nilpotent route, the idempotent as a product of two nilpotents; the gauge group $G=(\mathbb{C}^{\times})^2/\mathbb{C}^{\times}$ and the torsor of bases, free and transitive; the stabiliser trivial in $G$ and the centre in the unit group; coordinates, product and determinant; the Hermitian gauge as $U(1)$; the dimensions $6=4+2$ -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>
@@ -7620,7 +7620,7 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>
 <!-- the complete family of $n$ idempotents of $M_n(\mathbb{C})$ and the rank-one lemma; the lines $A_{kl}=P_kM_nP_l$, one-dimensional and summing directly; the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$ and the square-zero mixed lines; the Peirce table and the canonical diagonal; the family from a root $H^n=I$ with simple spectrum, the Lagrange projectors and $A_{kl}=\mathbb{C}v_k\ell_l$; the spectral lines of $H$ set against the Peirce lines of the algebra; the family without a root. -->
 
-<a href="articles_maths/the-peircaxis-free basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>
+<a href="articles_maths/the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>
 <!-- one nonzero element per line with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; existence from a pair of dual bases, $E_{kl}=v_k\ell_l$; the coordinates and the matrix product; uniqueness up to the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the gauge $(\mathbb{C}^{\times})^{n-1}$ and the Hermitian $(S^1)^{n-1}$; the dimensions $n^2-n$, $n-1$, $n^2-1$ and the orbit-stabiliser count $8=6+2$ at $n=3$; at $n=2$ the count $6=4+2$ in real dimensions, the second root being a point of the gauge. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>
@@ -7679,7 +7679,7 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>
 <!-- the family of $3$ nonzero idempotents (not only a root); the rank-one lemma; the $9$ lines $A_{kl}=P_kM_3P_l$, the direct sum and the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$; the root $H^{3}=I$ and the Vandermonde eigenvectors $v_k$; the dimensions $6$, $2$ and $8$; no power of $H$ is an involution; a grading $\operatorname{Ad}_S$ has an unbalanced $1+2$ split. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-m3c.html">The Peirce Basis of $M_3(\mathbb{C})$</a>
+<a href="articles_maths/the-peirce-basis-of-m3c.html">The Peirce Basis of $M_3(\mathbb{C})$</a>
 <!-- the units $E_{kl}$ with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; the forced diagonal and the chosen mixed units; the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the coordinates $X_{kl}\mapsto t_k^{-1}t_lX_{kl}$; the torus $(\mathbb{C}^\times)^{2}$; the count $8=6+2$ as an orbit–stabiliser count; the projective-frame reading. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-m3c.html">Spinors as Peirce Coordinates in $M_3(\mathbb{C})$</a>
@@ -7798,7 +7798,7 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>
 <!-- the family of $4$ nonzero idempotents (not only a root); the rank-one lemma; the $16$ lines $A_{kl}=P_kM_4P_l$, the direct sum and the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$; the root $H^{4}=I$ and the Vandermonde eigenvectors $v_k$; the dimensions $12$, $3$ and $15$; $H^{2}=\operatorname{diag}(1,-1,1,-1)$; the $2+2$ split. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-m4c.html">The Peirce Basis of $M_4(\mathbb{C})$</a>
+<a href="articles_maths/the-peirce-basis-of-m4c.html">The Peirce Basis of $M_4(\mathbb{C})$</a>
 <!-- the units $E_{kl}$ with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; the forced diagonal and the chosen mixed units; the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the coordinates $X_{kl}\mapsto t_k^{-1}t_lX_{kl}$; the torus $(\mathbb{C}^\times)^{3}$; the count $15=12+3$ as an orbit–stabiliser count; the projective-frame reading. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-m4c.html">Spinors as Peirce Coordinates in $M_4(\mathbb{C})$</a>
@@ -7921,7 +7921,7 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-peirce-decomposition-of-m5c.html">The Peirce Decomposition of $M_5(\mathbb{C})$</a>
 <!-- the family of $5$ nonzero idempotents (not only a root); the rank-one lemma; the $25$ lines $A_{kl}=P_kM_5P_l$, the direct sum and the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$; the root $H^{5}=I$ and the Vandermonde eigenvectors $v_k$; the dimensions $20$, $4$ and $24$; no power of $H$ is an involution; a grading $\operatorname{Ad}_S$ has an unbalanced $2+3$ split. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-m5c.html">The Peirce Basis of $M_5(\mathbb{C})$</a>
+<a href="articles_maths/the-peirce-basis-of-m5c.html">The Peirce Basis of $M_5(\mathbb{C})$</a>
 <!-- the units $E_{kl}$ with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; the forced diagonal and the chosen mixed units; the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the coordinates $X_{kl}\mapsto t_k^{-1}t_lX_{kl}$; the torus $(\mathbb{C}^\times)^{4}$; the count $24=20+4$ as an orbit–stabiliser count; the projective-frame reading. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-m5c.html">Spinors as Peirce Coordinates in $M_5(\mathbb{C})$</a>
@@ -8012,7 +8012,7 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>
 <!-- the family of $6$ nonzero idempotents (not only a root); the rank-one lemma; the $36$ lines $A_{kl}=P_kM_6P_l$, the direct sum and the rule $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$; the root $H^{6}=I$ and the Vandermonde eigenvectors $v_k$; the dimensions $30$, $5$ and $35$; $H^{3}=\operatorname{diag}(1,-1,1,-1,1,-1)$; the $3+3$ split. -->
 
-<a href="articles_maths/the-peircaxis-free basis-of-m6c.html">The Peirce Basis of $M_6(\mathbb{C})$</a>
+<a href="articles_maths/the-peirce-basis-of-m6c.html">The Peirce Basis of $M_6(\mathbb{C})$</a>
 <!-- the units $E_{kl}$ with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$; the forced diagonal and the chosen mixed units; the gauge $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$; the coordinates $X_{kl}\mapsto t_k^{-1}t_lX_{kl}$; the torus $(\mathbb{C}^\times)^{5}$; the count $35=30+5$ as an orbit–stabiliser count; the projective-frame reading. -->
 
 <a href="articles_maths/spinors-as-peirce-coordinates-in-m6c.html">Spinors as Peirce Coordinates in $M_6(\mathbb{C})$</a>

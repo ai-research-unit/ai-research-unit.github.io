@@ -65,5 +65,5 @@ The Peirce coordinates of the reduced biquaternion algebra are $\breve Q_{\pm}=u
 ## Further Reading
 
 - [The Peirce Decomposition of the Reduced Biquaternion Algebra](the-peirce-decomposition-of-the-reduced-biquaternion-algebra.html), for the lines and the root of $1$.
-- [The Peirce Basis of the Reduced Biquaternion Algebra](the-peircaxis-free basis-of-the-reduced-biquaternion-algebra.html), for the canonical basis.
+- [The Peirce Basis of the Reduced Biquaternion Algebra](the-peirce-basis-of-the-reduced-biquaternion-algebra.html), for the canonical basis.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the nondegenerate case.

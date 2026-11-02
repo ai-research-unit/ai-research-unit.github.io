@@ -179,7 +179,7 @@ The corpus has the fermionic half of this and not the bosonic half. *Biquaternio
 
 ## A Constructed Biquaternionic Basis, from an Independent Source
 
-The bundlaxis-free basis idea recorded above is a **claim** about a basis, and it is worth setting beside it an independent source in which a biquaternionic basis is actually built and used. J. Fredsted, *Spinor fields without Lorentz frames in curved spacetime using complexified quaternions* (arXiv:0811.1357v4 [math-ph], 2009), abandons the manifold frame — "thus leaving the arena of Riemannian manifolds" — and takes as primitive a basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ of the biquaternion algebra itself, with the metric given by the algebra's bilinear form,
+The bundle-basis idea recorded above is a **claim** about a basis, and it is worth setting beside it an independent source in which a biquaternionic basis is actually built and used. J. Fredsted, *Spinor fields without Lorentz frames in curved spacetime using complexified quaternions* (arXiv:0811.1357v4 [math-ph], 2009), abandons the manifold frame — "thus leaving the arena of Riemannian manifolds" — and takes as primitive a basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ of the biquaternion algebra itself, with the metric given by the algebra's bilinear form,
 
 $$
 g_{\mu\nu} = \langle s_\mu, s_\nu\rangle ,
@@ -189,7 +189,7 @@ whose nondegeneracy follows from the linear independence of the four basis eleme
 
 The two external instances sit in **opposite sectors**, and that is the point of recording both. The source of this article builds its structural group from a matrix $Q = \mathsf{M}_2(\tilde Q)$ whose biquaternion $\tilde Q$ is Hermitian of unit norm — an element of $\mathbb{M}_+$, the informational sector — and its claimed invariant Lorentzian metric does not reproduce. Fredsted's basis is anti-Hermitian, $s_\mu \in \mathbb{M}_-$, the material sector, and his metric is real and Lorentzian by construction, its invariance under rotor conjugation being the identity the corpus's frame route already verified. So the biquaternionic-basis proposal has, in the material sector, a working instance in which the metric comes out of the algebra rather than being asserted of it.
 
-The instance does not build $P(G,M)$, and it does not supply dynamics. Fredsted's basis is a basis of the algebra over the manifold, not the basis of a principal bundle with a structural group; and there is no action for $s_\mu$ or for $\omega_\mu$, no field equation, and no curvature computed from the connection. The construction therefore raises the floor of the bundlaxis-free basis idea without touching the ceiling this article's source leaves in place: a biquaternionic basis, whether claimed or constructed, is a pointwise structure until a field equation attaches it to the manifold.
+The instance does not build $P(G,M)$, and it does not supply dynamics. Fredsted's basis is a basis of the algebra over the manifold, not the basis of a principal bundle with a structural group; and there is no action for $s_\mu$ or for $\omega_\mu$, no field equation, and no curvature computed from the connection. The construction therefore raises the floor of the bundle-basis idea without touching the ceiling this article's source leaves in place: a biquaternionic basis, whether claimed or constructed, is a pointwise structure until a field equation attaches it to the manifold.
 
 ## What the Source Shows, and What It Does Not
 

@@ -129,7 +129,7 @@ $$
 = \vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\,\boldsymbol\sigma\cdot\vec L.
 $$
 
-This is the load-bearing equation of the article. It was verified by direct matrix computation in a truncated three-dimensional oscillator basis: the identity held in the bulk of the basis to $1.8\times10^{-15}$ (the deviation in the outermost shell of the truncation is the expected finitaxis-free basis artefact of the commutator $[r_j,p_j] = i\hbar$, which a truncated basis realises only in the bulk). The representation used was the Cartesian three-mode Fock space with total excitation number up to $N_{\max} = 7$, restricted to states of excitation number at most $N_{\max}-2$.
+This is the load-bearing equation of the article. It was verified by direct matrix computation in a truncated three-dimensional oscillator basis: the identity held in the bulk of the basis to $1.8\times10^{-15}$ (the deviation in the outermost shell of the truncation is the expected finite-basis artefact of the commutator $[r_j,p_j] = i\hbar$, which a truncated basis realises only in the bulk). The representation used was the Cartesian three-mode Fock space with total excitation number up to $N_{\max} = 7$, restricted to states of excitation number at most $N_{\max}-2$.
 
 Two features of the right-hand side are worth separating. The first two terms are the **three-dimensional isotropic oscillator** in operator form,
 

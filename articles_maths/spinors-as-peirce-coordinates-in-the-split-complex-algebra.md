@@ -65,5 +65,5 @@ The Peirce coordinates of the split-complex algebra are $Q_{\pm}=q\pm q'$, and t
 ## Further Reading
 
 - [The Peirce Decomposition of the Split-Complex Algebra](the-peirce-decomposition-of-the-split-complex-algebra.html), for the lines and the root of $1$.
-- [The Peirce Basis of the Split-Complex Algebra](the-peircaxis-free basis-of-the-split-complex-algebra.html), for the canonical basis.
+- [The Peirce Basis of the Split-Complex Algebra](the-peirce-basis-of-the-split-complex-algebra.html), for the canonical basis.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the nondegenerate case.

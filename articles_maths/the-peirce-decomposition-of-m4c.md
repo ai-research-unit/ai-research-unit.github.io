@@ -129,5 +129,5 @@ A complete family of $4$ nonzero idempotents in $M_4(\mathbb{C})$ has rank one a
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and its matrix units.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the projectors of the root.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the flag and the orbits.
-- [The Peirce Basis of $M_4(\mathbb{C})$](the-peircaxis-free basis-of-m4c.html), for the selection of the units and the gauge.
+- [The Peirce Basis of $M_4(\mathbb{C})$](the-peirce-basis-of-m4c.html), for the selection of the units and the gauge.
 - [Spinors as Peirce Coordinates in $M_4(\mathbb{C})$](spinors-as-peirce-coordinates-in-m4c.html), for the columns of the array.

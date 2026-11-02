@@ -128,6 +128,6 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 ## Further Reading
 
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and the family.
-- [The Peirce Basis in $n$ Dimensions](the-peircaxis-free basis-in-n-dimensions.html), for the choice of the units and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of the units and the gauge.
 - [The Peirce Coordinates](peirce-coordinates-and-companion-nilpotents.html), for the coordinates in the one-idempotent case.
 - [The Two-Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chiral split at $n=4$.
