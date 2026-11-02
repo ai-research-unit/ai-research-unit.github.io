@@ -28,13 +28,13 @@ because the map $\tilde q_2\mapsto\tilde q_1\star\tilde q_2$ is linear and vanis
 
 **The coordinates, the norm and the remarkable subspaces.** In the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of the space $\mathbb{H}$, write $\tilde q_1=q_{1t}e_t+\vec q_1$ and likewise $\tilde q_2=q_{2t}e_t+\vec q_2$, with $\vec q_1=q_{1x}\vec e_x+q_{1y}\vec e_y+q_{1z}\vec e_z$; then $\tilde q_1^{\natural}=q_{1t}e_t-\vec q_1$. The **dot product** is $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$, the **cross product** is $\vec q_1\times\vec q_2$, and the **norm** is $\langle\tilde q_1\rangle_{\natural}=q_{1t}^{2}+(\vec q_1,\vec q_1)=q_{1t}^{2}+|\vec q_1|^{2}$, the positive definite form $\langle\tilde q_1,\tilde q_1\rangle_{\natural}$ of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, in coordinates of *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*. The **centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$; a **plane** is a real subspace of dimension two, written $\mathbb{R}\{u,v\}$ with its generators displayed, and a **line** is written $\mathbb{R}u$.
 
-**Two algebraic norms, and the one that decides.** The companion products carry two **algebraic norms** and no more (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, and the two antisymmetrisations carry none. They are the plain one, $\langle\tilde q\rangle=q_t^{2}-|\vec q|^{2}$, which is indefinite, carried by $\mathrm{spa}$; and the quaternion one, $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$, which is positive definite, carried by $\mathrm{gqa}$. The algebra product carries the plain norm as well, and that reading is owned by the *Quaternions* category. **The norm that decides every annihilating set below is $\langle\cdot\rangle_{\natural}$**, the positive definite one. The plain norm does not decide: at $\tilde q=e_t+\vec e_x$ its value is $\langle\cdot\rangle=0$ while $\langle\cdot\rangle_{\natural}=2$ and the element is invertible, $\tilde q^{-1}=\tfrac12(e_t-\vec e_x)$. **Every statement below names its norm**: the deciding norm is written $\langle\cdot\rangle_{\natural}$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by the positive definite norm $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$. The antisymmetrisation carries no algebraic norm, and its annihilating set is read from the vector part alone.
+**Two algebraic norms, and the one that decides.** The companion products carry two **algebraic norms** and no more (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, and the two antisymmetrisations carry none. They are the plain one, $\langle\tilde q\rangle=q_t^{2}-|\vec q|^{2}$, which is indefinite, carried by $\tilde Q_1\bullet\tilde Q_2$; and the quaternion one, $\langle\tilde q\rangle_{\natural}=q_t^{2}+|\vec q|^{2}$, which is positive definite, carried by $\tilde Q_1^{\natural}\tilde Q_2$. The algebra product carries the plain norm as well, and that reading is owned by the *Quaternions* category. **The norm that decides every annihilating set below is $\langle\cdot\rangle_{\natural}$**, the positive definite one. The plain norm does not decide: at $\tilde q=e_t+\vec e_x$ its value is $\langle\cdot\rangle=0$ while $\langle\cdot\rangle_{\natural}=2$ and the element is invertible, $\tilde q^{-1}=\tfrac12(e_t-\vec e_x)$. **Every statement below names its norm**: the deciding norm is written $\langle\cdot\rangle_{\natural}$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by the positive definite norm $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$. The antisymmetrisation carries no algebraic norm, and its annihilating set is read from the vector part alone.
 
 ## The Three Companion Structures and their Annihilators
 
 Each structure is read below with its product, the criterion and the annihilating set. The three are in the order of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde q_1^{\natural}\tilde q_2$. The first factor carries the natural conjugation, a bijection of $\mathbb{H}$ that fixes the centre, and the product is the algebra product composed with that anti-involution.
 
@@ -42,7 +42,7 @@ The product is $\tilde q_1^{\natural}\tilde q_2$. The first factor carries the n
 
 *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Introduction to the General Quaternionic Algebra* own the operator and its rank.
 
-### $\mathrm{spa}$, the symmetric plain algebra
+### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
 The product is the Jordan product
 
@@ -56,7 +56,7 @@ It is commutative, so the two one-sided sets are one set, and it carries the two
 
 *The Multiplication Operators of the Symmetric Plain Algebra* and *Introduction to the Symmetric Plain Algebra* own the operator and the shape of the annihilator of an element on the remarkable subspaces.
 
-### $\mathrm{apa}$, the antisymmetric plain algebra
+### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
 The product is the commutator
 
@@ -78,13 +78,13 @@ It is alternating, so it vanishes at the two equal arguments, $\tilde q\wedge\ti
 
 | structure | the product | the annihilating set, and why |
 |---|---|---|
-| $\mathrm{gqa}$ | $\tilde q_1^{\natural}\tilde q_2$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_t$ reads $\tilde q_1^{\natural}$, which vanishes only at the origin. |
-| $\mathrm{spa}$ | $\tilde q_1\bullet\tilde q_2$ | The set is $\{0\}$, because the unit $e_t$ is a partner of the product and reads the element itself, $\tilde q_1\bullet e_t=\tilde q_1$, which vanishes only at the origin. |
-| $\mathrm{apa}$ | $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde q_1^{\natural}\tilde q_2$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_t$ reads $\tilde q_1^{\natural}$, which vanishes only at the origin. |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde q_1\bullet\tilde q_2$ | The set is $\{0\}$, because the unit $e_t$ is a partner of the product and reads the element itself, $\tilde q_1\bullet e_t=\tilde q_1$, which vanishes only at the origin. |
+| $\tilde Q_1\wedge\tilde Q_2$ | $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
 
 **Theorem (the three annihilating sets).** Among the three companion structures the annihilating set is $\{0\}$ for the general quaternionic algebra and the symmetric plain algebra, and it is the scalar line $\mathbb{R}_{\mathbb{H}}$ for the antisymmetric plain algebra alone. The algebra product of the same space has the annihilating set $\{0\}$, as owned by *Annihilators of the Quaternion Algebra*.
 
-*Proof.* The two rows with $\{0\}$ are the two subsections above, and the row of $\mathrm{apa}$ completes the three.
+*Proof.* The two rows with $\{0\}$ are the two subsections above, and the row of $\tilde Q_1\wedge\tilde Q_2$ completes the three.
 
 Two of the three structures are faithful in the sense that no nonzero element kills the whole space, and the third fails: the cross product forgets the scalar slot. The failure is also the only place a nontrivial ideal appears, and it is one-dimensional. The count is worth stating plainly: the annihilating set separates the three companion structures into a pair and a single exception, and the exception is the only structure whose product ignores the scalar part of its first argument.
 
@@ -128,10 +128,10 @@ Three facts summarize the three structures.
 |---|---|
 | $\ell(\star)$, $r(\star)$ | left and right annihilating sets of the product $\star$ |
 | $\ell\cap r$ | the two-sided annihilating set, the radical of the product |
-| $\{0\}$ | the value for $\mathrm{gqa}$ and $\mathrm{spa}$, and for the algebra product |
+| $\{0\}$ | the value for $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$, and for the algebra product |
 | $\mathbb{R}_{\mathbb{H}}$ | the annihilating set of the cross product, the centre of the algebra |
 | $e_\mu$ | the four units, the diagonal test of the criterion |
-| $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ | the three companion structures of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* |
+| $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* |
 
 ## Further Reading
 

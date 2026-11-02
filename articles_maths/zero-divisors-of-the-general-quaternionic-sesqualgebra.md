@@ -11,7 +11,7 @@ $$
 $$
 
 whose rule, multiplication table and axioms are *Introduction to the General Quaternionic
-Sesqualgebra of Biquaternions*, and whose two halves, $\mathrm{sqs}$ and $\mathrm{aqs}$, are *The
+Sesqualgebra of Biquaternions*, and whose two halves, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, are *The
 Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
 A zero divisor is defined **by a product**, so the set belongs to the product and not to the space.

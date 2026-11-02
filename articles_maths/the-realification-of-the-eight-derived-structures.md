@@ -86,9 +86,9 @@ $$
 $$
 the extra coset conjugate-linear: the complex automorphisms are the elements of $G_H$ fixing $e_t$ (*The Multiplication Operators of the Symmetric Plain Sesqualgebra*), and the passage to $\mathbb{R}$ adds the Galois twist of $\mathbb{C}/\mathbb{R}$.
 
-**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{sqa}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
+**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\tilde Q_1\bullet_{\natural}\tilde Q_2$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
 $$
-\tilde Q_1\star\tilde Q_2=\mathrm{sqa}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
+\tilde Q_1\star\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
 $$
 because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ agrees with the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ and the vector part of the quaternionic product is antisymmetric, hence killed by the symmetrisation. Over $\mathbb{C}$ the two structures are distinct on the whole space; the real reading makes them meet on a real form, and the coincidence is a statement of the real reading and not of the products.
 
@@ -159,7 +159,7 @@ $$
 $$
 is kept inside itself, because $e_t$ pairs to zero with the two other generators and those two are isotropic and pair to zero with each other, so every product of two of the three generators is $0$ or in $\mathbb{R}e_t$; its real dimension is three, and it has no complex counterpart. The staying inside and the leaving of the six remarkable subspaces are tabulated in *Remarkable Subspaces under the Symmetric Quaternionic Algebra*.
 
-**The coincidence on the real part.** On the real subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ the symmetric quaternionic product and the symmetric plain sesquilinear product agree, $\mathrm{sqa}=\mathrm{sps}$, because on real elements the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ equals the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$; off that subspace they differ. The twelve operations of the complex space therefore collapse to ten on the real part, and the block is not distinguished there from the row $\mathrm{sps}$ (*Introduction to the Symmetric Quaternionic Algebra*, §*The Placement Among the Twelve*; *Introduction to the Symmetric Plain Sesqualgebra*).
+**The coincidence on the real part.** On the real subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ the symmetric quaternionic product and the symmetric plain sesquilinear product agree, $\tilde Q_1\bullet_{\natural}\tilde Q_2=\tilde Q_1\bullet_{*}\tilde Q_2$, because on real elements the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ equals the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$; off that subspace they differ. The twelve operations of the complex space therefore collapse to ten on the real part, and the block is not distinguished there from the row $\tilde Q_1\bullet_{*}\tilde Q_2$ (*Introduction to the Symmetric Quaternionic Algebra*, §*The Placement Among the Twelve*; *Introduction to the Symmetric Plain Sesqualgebra*).
 
 **The trace factor.** The complex trace of the multiplication is the scalar part $Q_{6t}$ and the real trace is $2\operatorname{Re}Q_{6t}$; the factor two is the doubling of the realification, and the absence of the factors four and eight that the regular representation of the plain algebra carries is the rank-one nature of the block, a feature that the real reading shows and the complex reading hides.
 
@@ -473,11 +473,11 @@ $$
 $$
 of real dimension four, the block coincides with the antisymmetric plain algebra: for two real vector parts the conjugation is the identity, so
 $$
-\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{apa}(\tilde Q_1,\tilde Q_2),
+\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\tilde Q_1\wedge\tilde Q_2(\tilde Q_1,\tilde Q_2),
 $$
 the ordinary cross product of the real vector parts. The coincidence holds because the conjugation of a real vector is the identity, and it disappears as soon as one argument leaves $\mathbb{H}_{\mathbb{B}}$ for a direction in $i\mathbb{R}^{3}$.
 
-**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *Symmetric and Antisymmetric Decomposition of the Four General Products* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{aqs},\mathrm{apa})$ and the pair $(\mathrm{sqa},\mathrm{sps})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
+**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *Symmetric and Antisymmetric Decomposition of the Four General Products* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\tilde Q_1\wedge_{\natural*}\tilde Q_2,\tilde Q_1\wedge\tilde Q_2)$ and the pair $(\tilde Q_1\bullet_{\natural}\tilde Q_2,\tilde Q_1\bullet_{*}\tilde Q_2)$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
 
 **Proposition (the closure criterion).** A real subspace $W$ of $\mathbb{R}^8$ is a subalgebra of the block exactly when $\tilde Q_1\diamond\tilde Q_2\in W$ for all $\tilde Q_1,\tilde Q_2\in W$. Every value of the block lies in the vector subspace, so the condition reads
 $$
@@ -598,4 +598,4 @@ Both operators vanish in real trace; for a non-central element both have real ra
 $$
 \kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)=\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=-2\operatorname{Re}(\vec Q_1,\overline{\vec Q_2}),\qquad \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
-is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde Q_1\diamond\tilde Q_2)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\mathrm{aqs},\mathrm{apa})$ there is part of the count of ten of the twelve operations.
+is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde Q_1\diamond\tilde Q_2)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\tilde Q_1\wedge_{\natural*}\tilde Q_2,\tilde Q_1\wedge\tilde Q_2)$ there is part of the count of ten of the twelve operations.

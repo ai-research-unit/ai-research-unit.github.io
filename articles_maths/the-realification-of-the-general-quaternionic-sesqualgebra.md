@@ -72,7 +72,7 @@ the commuting and the anticommuting endomorphisms, of real dimensions $32$ and $
 
 **Remark (the first slot of this block and of its sibling).** Inside the sesquilinear family the parity is carried by the second slot alone, and the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot does not move it: the left multiplications of the block and those of the general plain sesquilinear product are the same family of operators, indexed through the involution,
 $$
-L^{\mathrm{gqs}}_{\tilde Q_1}=L^{\mathrm{gps}}_{\natural(\tilde Q_1)},\qquad\natural(\tilde Q_1)=\tilde Q_1^{\natural},
+L_{\tilde Q_1}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=L_{\natural(\tilde Q_1)}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),\qquad\natural(\tilde Q_1)=\tilde Q_1^{\natural},
 $$
 so the two blocks differ in their elements, their tables and their forms, and not in the anticommuting family of operators they generate. The parity content of the block is carried by the star of its second slot alone, which is what *The Specificities of the General Quaternionic Sesqualgebra* records from the complex side.
 

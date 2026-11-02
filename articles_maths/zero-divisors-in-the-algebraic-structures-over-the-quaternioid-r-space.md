@@ -7,7 +7,7 @@ Let $\star$ be a product on the quaternion space $\mathbb{H}$. A nonzero $\tilde
 **The three companion structures.** Beside the algebra product $\tilde q_1\tilde q_2$ of the *Quaternions* category, the space carries the companion products of *The 6 Products of the Quaternioid Real Space*, which this category organises into three structures in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*:
 
 $$
-\mathrm{spa} , \qquad \mathrm{apa} , \qquad \mathrm{gqa} ,
+\tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
 the **symmetric plain algebra** of the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the **antisymmetric plain algebra** of the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$, and the **general quaternionic algebra** of the product $\tilde q_1^{\natural}\tilde q_2$. A zero divisor names its product, so the generic definition poses three questions, answered once here. The fourth structure of the space, the algebra product, is a division algebra and owns its element theory in the *Quaternions* category, in *Zero Divisors of the Quaternion Algebra*; the table below names it once for the contrast and cites it rather than restating it.
@@ -40,7 +40,7 @@ So an element is a unit exactly when it lies off the vanishing set of the norm, 
 
 The algebra product splits into its symmetric and antisymmetric halves, and the two halves together with the general quaternionic product are the three companion structures (*The 6 Products of the Quaternioid Real Space*). A zero divisor names its product, so each of the three carries a zero-divisor set of its own; the table of §*Results* records them, the product written by its defining formula.
 
-**Theorem (the empty set is the mark of the general quaternionic product).** Among the three companion structures the zero-divisor set is empty exactly for the general quaternionic product $\mathrm{gqa}$, and for no other. The two derived sets are strictly larger: the symmetric plain structure $\mathrm{spa}$ has the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ of real dimension three, and the antisymmetric plain structure $\mathrm{apa}$ has the whole punctured space $\mathbb{H}\setminus\{0\}$.
+**Theorem (the empty set is the mark of the general quaternionic product).** Among the three companion structures the zero-divisor set is empty exactly for the general quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$, and for no other. The two derived sets are strictly larger: the symmetric plain structure $\tilde Q_1\bullet\tilde Q_2$ has the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ of real dimension three, and the antisymmetric plain structure $\tilde Q_1\wedge\tilde Q_2$ has the whole punctured space $\mathbb{H}\setminus\{0\}$.
 
 The three structures are read one by one below; each names the product, its zero-divisor set and the reason. The general quaternionic product is read first, the two derived structures after it in §*Results*.
 
@@ -48,9 +48,9 @@ The three structures are read one by one below; each names the product, its zero
 
 *Proof.* Every row of the table of §*Results* contains the empty set; the general quaternionic row equals it, and the two derived rows are nonempty.
 
-The ring-theoretic picture breaks on the derived structures: the element $\vec e_x$, whose norm is $1$, is a zero divisor of $\mathrm{spa}$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=0$ for the Jordan product, and it is invertible, $\vec e_x\bullet(-\vec e_x)=\tfrac12(-\vec e_x^{2}-\vec e_x^{2})=e_t$. A zero divisor need not be a non-unit, and here the failure is not the absence of a unit, the element $e_t$ being a two-sided unit of $\mathrm{spa}$: it is the absence of associativity, which the equivalence of the two notions needs, and which the symmetrised and antisymmetrised products lack.
+The ring-theoretic picture breaks on the derived structures: the element $\vec e_x$, whose norm is $1$, is a zero divisor of $\tilde Q_1\bullet\tilde Q_2$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=0$ for the Jordan product, and it is invertible, $\vec e_x\bullet(-\vec e_x)=\tfrac12(-\vec e_x^{2}-\vec e_x^{2})=e_t$. A zero divisor need not be a non-unit, and here the failure is not the absence of a unit, the element $e_t$ being a two-sided unit of $\tilde Q_1\bullet\tilde Q_2$: it is the absence of associativity, which the equivalence of the two notions needs, and which the symmetrised and antisymmetrised products lack.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde q_1^{\natural}\tilde q_2$, its conjugate is $\tilde q_1^{\natural}$, and the form of the product is
 
@@ -74,9 +74,9 @@ Read against the empty set and against the whole space, the three sets are
 
 | structure | the product | the zero-divisor set |
 |---|---|---|
-| $\mathrm{gqa}$ | $\tilde q_1^{\natural}\tilde q_2$ | $\varnothing$ |
-| $\mathrm{spa}$ | $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ |
-| $\mathrm{apa}$ | $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$ | $\mathbb{H}\setminus\{0\}$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde q_1^{\natural}\tilde q_2$ | $\varnothing$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$ | $\mathbb{H}\setminus\{0\}$ |
 
 The general quaternionic product has the empty set. The symmetric plain structure has the punctured vector subspace, of real dimension three. The antisymmetric plain structure has the whole punctured space. The empty set is therefore the zero-divisor set of exactly one of the three companion structures, and it is contained in all three, so that it is the common core of the three. For the contrast, the algebra product of the same space has the empty zero-divisor set as well, and that statement is owned by *Zero Divisors of the Quaternion Algebra*. The sections that follow read the consequences.
 
@@ -92,12 +92,12 @@ $$
 
 | product | left condition | right condition | the set |
 |---|---|---|---|
-| $\mathrm{gqa}$, $\tilde q_1^{\natural}\tilde q_2$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\varnothing$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde q_1^{\natural}\tilde q_2$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\varnothing$ |
 | the algebra product, $\tilde q_1\tilde q_2$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\langle\tilde q_1\rangle_{\natural}=0$ | $\varnothing$ |
 
 The two rows are identical, and that is the theorem: the general quaternionic product and the algebra product select one and the same subset of $\mathbb{H}$, the empty one. The algebra row is owned by *Zero Divisors of the Quaternion Algebra* and is repeated here for the contrast only. **The word is *coincide*, not *independent*.** The zero divisor is defined by an equation that names a product, so the notion belongs to the product and the two products are two definitions, not one; what the theorem says is that in the quaternion space the two definitions select the same subset.
 
-### $\mathrm{spa}$ and $\mathrm{apa}$, the Two Derived Structures
+### $\tilde Q_1\bullet\tilde Q_2$ and $\tilde Q_1\wedge\tilde Q_2$, the Two Derived Structures
 
 **The symmetric plain algebra.** The product is the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)=(q_{1t}q_{2t}-(\vec q_1,\vec q_2))e_t+q_{1t}\vec q_2+q_{2t}\vec q_1$, the symmetrisation of the algebra product, so its form is the same,
 
@@ -139,9 +139,9 @@ On a pure element the Jordan criterion drops the scalar coordinate and becomes a
 
 | | pure, $q_t=0$ | non-pure, $q_t\neq0$ |
 |---|---|---|
-| the criterion of $\mathrm{spa}$ | a nonzero pure partner orthogonal to $\vec q$ | none |
+| the criterion of $\tilde Q_1\bullet\tilde Q_2$ | a nonzero pure partner orthogonal to $\vec q$ | none |
 | square in the algebra product | $\tilde q^{2}=-\langle\tilde q\rangle_{\natural}e_t$ | $\tilde q^{2}=2q_t\tilde q-\langle\tilde q\rangle_{\natural}e_t$ |
-| structure | the zero divisors of $\mathrm{spa}$ | the regular elements of $\mathrm{spa}$ |
+| structure | the zero divisors of $\tilde Q_1\bullet\tilde Q_2$ | the regular elements of $\tilde Q_1\bullet\tilde Q_2$ |
 | real dimension | $3$ | $4$ |
 
 The square of a pure element is a nonzero real multiple of $e_t$ and does not vanish, so the square does not detect the zero divisors of the symmetric structure; the vanishing is carried by the pair and not by the element. The two families are read in the remarkable subspaces in *Introduction to the Remarkable Subspaces of the Quaternions*: the pure family is the vector subspace, of real dimension three, and the non-pure family is its complement.
@@ -158,7 +158,7 @@ $$
 
 Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ still vanishes only at the origin, but the natural square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
 
-*Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The natural square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\mathrm{spa}$.
+*Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The natural square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\tilde Q_1\bullet\tilde Q_2$.
 
 **The cone over $\mathbb{R}$ belongs to the plain form, not to the norm.** The plain bilinear form
 
@@ -207,13 +207,13 @@ Read against the complex case, the emptiness has one cause. The norm is positive
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ | the plain bilinear form, of signature $(1,3)$ |
 | $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$ | the norm, the quaternion algebraic norm, the scalar of the central square $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ |
 | $\{N=0\}=\{0\}$ | the vanishing set of the norm, the apex alone; there is no cone |
-| $\varnothing$ | the zero-divisor set of $\mathrm{gqa}$ |
-| $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\mathrm{spa}$, the pure cone, of real dimension three |
-| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of $\mathrm{apa}$ |
-| $q_t^{2}\langle\tilde q\rangle_{\natural}$ | the determinant of the left multiplication operator of $\mathrm{spa}$ |
+| $\varnothing$ | the zero-divisor set of $\tilde Q_1^{\natural}\tilde Q_2$ |
+| $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\tilde Q_1\bullet\tilde Q_2$, the pure cone, of real dimension three |
+| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of $\tilde Q_1\wedge\tilde Q_2$ |
+| $q_t^{2}\langle\tilde q\rangle_{\natural}$ | the determinant of the left multiplication operator of $\tilde Q_1\bullet\tilde Q_2$ |
 | $(\tilde q^{-1})^{\natural}$ | the two-sided solution of the inverse equations in the general quaternionic product |
 | $(\vec q_1,\vec q_2)$ | the plain bilinear dot product of the two vector parts |
-| $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ | the three companion structures of the space |
+| $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of the space |
 
 ## Further Reading
 

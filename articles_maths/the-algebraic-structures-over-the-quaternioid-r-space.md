@@ -5,10 +5,10 @@
 The companion products of *The 6 Products of the Quaternioid Real Space* carry three structures on the same four-dimensional real space, and the three are named once here and cited by their abbreviations throughout the category:
 
 $$
-\boxed{\;\mathrm{spa} , \qquad \mathrm{apa} , \qquad \mathrm{gqa}\;}.
+\boxed{\;\tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2\;}.
 $$
 
-The **symmetric plain algebra** $\mathrm{spa}$ is the space with the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$; the **antisymmetric plain algebra** $\mathrm{apa}$ with the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$; and the **general quaternionic algebra** $\mathrm{gqa}$ with the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$. The algebra product $\tilde q_1\tilde q_2$ makes the space a fourth structure, the quaternionic division algebra, and that one belongs to the *Quaternions* category, cited from here and never restated. The same space carries the three companion structures, and the three are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the three.
+The **symmetric plain algebra** $\tilde Q_1\bullet\tilde Q_2$ is the space with the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$; the **antisymmetric plain algebra** $\tilde Q_1\wedge\tilde Q_2$ with the cross product $\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$; and the **general quaternionic algebra** $\tilde Q_1^{\natural}\tilde Q_2$ with the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$. The algebra product $\tilde q_1\tilde q_2$ makes the space a fourth structure, the quaternionic division algebra, and that one belongs to the *Quaternions* category, cited from here and never restated. The same space carries the three companion structures, and the three are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the three.
 
 The article assumes the products and their coordinate rules from *The 6 Products of the Quaternioid Real Space*, the article preceding this one, and the definitions of the vocabulary it uses from *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
 
@@ -16,9 +16,9 @@ The article assumes the products and their coordinate rules from *The 6 Products
 
 | abbreviation | name | product | structure |
 |---|---|---|---|
-| $\mathrm{spa}$ | symmetric plain algebra | $\tilde q_1\bullet\tilde q_2$ | commutative Jordan algebra with the two-sided unit $e_t$ |
-| $\mathrm{apa}$ | antisymmetric plain algebra | $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ | alternating Lie algebra, without unit |
-| $\mathrm{gqa}$ | general quaternionic algebra | $\tilde q_1^{\natural}\tilde q_2$ | non-associative algebra with a left unit |
+| $\tilde Q_1\bullet\tilde Q_2$ | symmetric plain algebra | $\tilde q_1\bullet\tilde q_2$ | commutative Jordan algebra with the two-sided unit $e_t$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | antisymmetric plain algebra | $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ | alternating Lie algebra, without unit |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | general quaternionic algebra | $\tilde q_1^{\natural}\tilde q_2$ | non-associative algebra with a left unit |
 
 The support of each is the whole space $\mathbb{H}$, of real dimension four; no structure has a smaller support, and each product is determined by its values on the pairs of the four units. The adjectives **symmetric** and **antisymmetric** name the half of the algebra product from which the product comes — its symmetric part or its antisymmetric part; the adjective **quaternionic** names the product with the conjugation read in the first slot.
 
@@ -28,11 +28,11 @@ The table lists, for each of the three, the symmetry or alternation of the produ
 
 | structure | symmetry | laws satisfied | laws failed | unit |
 |---|---|---|---|---|
-| $\mathrm{spa}$ | symmetric | commutative; Jordan; flexible; power-associative | associative; alternative | $e_t$ two-sided |
-| $\mathrm{apa}$ | antisymmetric, alternating | Jacobi; flexible; power-associative | associative; commutative; alternative; unit | none |
-| $\mathrm{gqa}$ | neither | left unit | associative; commutative; flexible; power-associative; alternative; right unit | $e_t$ left only |
+| $\tilde Q_1\bullet\tilde Q_2$ | symmetric | commutative; Jordan; flexible; power-associative | associative; alternative | $e_t$ two-sided |
+| $\tilde Q_1\wedge\tilde Q_2$ | antisymmetric, alternating | Jacobi; flexible; power-associative | associative; commutative; alternative; unit | none |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | neither | left unit | associative; commutative; flexible; power-associative; alternative; right unit | $e_t$ left only |
 
-Two rows of the table are read at once. **A symmetric product is flexible and power-associative**, because the two identities are read on the same argument twice and the symmetry interchanges the two readings; this gives the first row for $\mathrm{spa}$. **An antisymmetric product is alternating, flexible and power-associative**, because $f(\tilde q,\tilde q)=-f(\tilde q,\tilde q)=0$ makes every square zero and the flexibility reads the antisymmetry once on each side; this gives the second row for $\mathrm{apa}$, and it makes the cubes zero. The general quaternionic product has the left unit $e_t$ alone, since $e_t^{\natural}\tilde q=\tilde q$ while $\tilde q^{\natural}e_t=\tilde q^{\natural}$, and it fails the remaining laws.
+Two rows of the table are read at once. **A symmetric product is flexible and power-associative**, because the two identities are read on the same argument twice and the symmetry interchanges the two readings; this gives the first row for $\tilde Q_1\bullet\tilde Q_2$. **An antisymmetric product is alternating, flexible and power-associative**, because $f(\tilde q,\tilde q)=-f(\tilde q,\tilde q)=0$ makes every square zero and the flexibility reads the antisymmetry once on each side; this gives the second row for $\tilde Q_1\wedge\tilde Q_2$, and it makes the cubes zero. The general quaternionic product has the left unit $e_t$ alone, since $e_t^{\natural}\tilde q=\tilde q$ while $\tilde q^{\natural}e_t=\tilde q^{\natural}$, and it fails the remaining laws.
 
 ## The Two Laws of the Table
 
@@ -46,11 +46,11 @@ The two laws are the two rows of the menu that isolate two of the three companio
 
 The blocks that follow read each of the three structures in turn. The general quaternionic algebra is *Introduction to the General Quaternionic Algebra*; the symmetric plain algebra is *Introduction to the Symmetric Plain Algebra*; and the antisymmetric plain algebra is *Introduction to the Antisymmetric Plain Algebra*. The algebra product itself, with its unit, its norm and its element theory, is *Introduction to the Quaternion Algebra* in the *Quaternions* category. Each of the three articles reads the product of the structure as a multiplication, with its own units, its own zero divisors and its own classes of element, using the vocabulary of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
 
-**Remark (the same space, three times).** The three structures are not three algebras in the sense of three different vector spaces: they are one space with three companion products, and the vocabulary of the category is indexed by the product and not by the space. An element may be a unit for the algebra product and not for $\mathrm{spa}$, a zero divisor for $\mathrm{spa}$ and not for the algebra product, and every element is a square-zero element for $\mathrm{apa}$ and for it alone.
+**Remark (the same space, three times).** The three structures are not three algebras in the sense of three different vector spaces: they are one space with three companion products, and the vocabulary of the category is indexed by the product and not by the space. An element may be a unit for the algebra product and not for $\tilde Q_1\bullet\tilde Q_2$, a zero divisor for $\tilde Q_1\bullet\tilde Q_2$ and not for the algebra product, and every element is a square-zero element for $\tilde Q_1\wedge\tilde Q_2$ and for it alone.
 
 ## Summary
 
-The quaternion space carries three companion algebraic structures on the same four-dimensional real support, named once here: the symmetric plain algebra $\mathrm{spa}$ with the Jordan product, the antisymmetric plain algebra $\mathrm{apa}$ with the cross product and the general quaternionic algebra $\mathrm{gqa}$ with the quaternionic product. Their structures are a commutative Jordan algebra with the unit $e_t$, a Lie algebra without unit and a non-associative left-unital algebra. The algebra product that makes the space a division algebra is not one of the three companion structures; it belongs to the *Quaternions* category.
+The quaternion space carries three companion algebraic structures on the same four-dimensional real support, named once here: the symmetric plain algebra $\tilde Q_1\bullet\tilde Q_2$ with the Jordan product, the antisymmetric plain algebra $\tilde Q_1\wedge\tilde Q_2$ with the cross product and the general quaternionic algebra $\tilde Q_1^{\natural}\tilde Q_2$ with the quaternionic product. Their structures are a commutative Jordan algebra with the unit $e_t$, a Lie algebra without unit and a non-associative left-unital algebra. The algebra product that makes the space a division algebra is not one of the three companion structures; it belongs to the *Quaternions* category.
 
 The law table separates them: the symmetric product is commutative, flexible and power-associative; the antisymmetric product is alternating, flexible and power-associative, with cubes zero; the general quaternionic product has a left unit alone and fails associativity, commutativity, flexibility and power-associativity. The two laws of the table are that the symmetric plain algebra is the only commutative one and the antisymmetric plain algebra the only one satisfying Jacobi.
 
@@ -58,11 +58,11 @@ The law table separates them: the symmetric product is commutative, flexible and
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{spa}$ | symmetric plain algebra, the Jordan algebra of $\tilde q_1\bullet\tilde q_2$ |
-| $\mathrm{apa}$ | antisymmetric plain algebra, the Lie algebra of $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ |
-| $\mathrm{gqa}$ | general quaternionic algebra, the left-unital rule $\tilde q_1^{\natural}\tilde q_2$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | symmetric plain algebra, the Jordan algebra of $\tilde q_1\bullet\tilde q_2$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | antisymmetric plain algebra, the Lie algebra of $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | general quaternionic algebra, the left-unital rule $\tilde q_1^{\natural}\tilde q_2$ |
 | support | the space $\mathbb{H}$, of real dimension four, for all three |
-| the two laws | only $\mathrm{spa}$ commutative; only $\mathrm{apa}$ satisfying Jacobi |
+| the two laws | only $\tilde Q_1\bullet\tilde Q_2$ commutative; only $\tilde Q_1\wedge\tilde Q_2$ satisfying Jacobi |
 | $\tilde q_1\tilde q_2$ | the algebra product, of the *Quaternions* category |
 
 ## Further Reading

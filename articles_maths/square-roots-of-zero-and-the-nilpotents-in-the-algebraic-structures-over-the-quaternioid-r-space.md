@@ -15,7 +15,7 @@ The value $0$ is central, the centre of the quaternion space over $\mathbb{R}$ b
 **The three companion structures.** The companion products of *The 6 Products of the Quaternioid Real Space* carry three structures, named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*:
 
 $$
-\mathrm{spa} , \qquad \mathrm{apa} , \qquad \mathrm{gqa} ,
+\tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
 the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
@@ -26,9 +26,9 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structure | at the two equal arguments |
 |---|---|---|
-| the plain square | $\mathrm{spa}$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
-| the central square | $\mathrm{gqa}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
-| the vanishing square | $\mathrm{apa}$ | $0$ |
+| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
+| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
+| the vanishing square | $\tilde Q_1\wedge\tilde Q_2$ | $0$ |
 
 The algebra product of the space carries the plain square as well, and that reading is owned by the *Quaternions* category.
 
@@ -56,15 +56,15 @@ $$
 
 The three are read one by one below; each names the product, its square and its root set of $0$, and cites the article that owns it.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde\xi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the root equation is the single real equation $\langle\tilde\xi\rangle_{\natural}=0$. The norm is a sum of four real squares, so it vanishes at the origin alone. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
-### $\mathrm{spa}$, the symmetric plain algebra
+### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
 The product is the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, of scalar part $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_t\vec\xi$. The root equation is the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$: the second equation forces $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch gives $\xi_t^{2}=0$, so the origin alone solves. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
-### $\mathrm{apa}$, the antisymmetric plain algebra
+### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
 The product is the commutator $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, for every element. The root equation is satisfied identically, and the root set of $0$, the square-zero set, is the whole space $\mathbb{H}$. The nilpotents are all the nonzero elements. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
@@ -76,9 +76,9 @@ A nilpotent of index two is a nonzero root of $0$; the nilpotent set of the stru
 
 | the structure | the square-zero set | the nilpotents |
 |---|---|---|
-| $\mathrm{gqa}$ | $\{0\}$ | none |
-| $\mathrm{spa}$ | $\{0\}$ | none |
-| $\mathrm{apa}$ | $\mathbb{H}$ | every nonzero element |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\{0\}$ | none |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\{0\}$ | none |
+| $\tilde Q_1\wedge\tilde Q_2$ | $\mathbb{H}$ | every nonzero element |
 
 The two structures whose square vanishes only at the origin have no nilpotent; the antisymmetric plain structure, whose square vanishes identically, has every nonzero element for a nilpotent. The nilpotent, where it exists, is its own annihilating partner in its structure, and it is a zero divisor of that structure (*Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*).
 
@@ -90,9 +90,9 @@ The set is collected once below, with the two readings of the roots of $0$ and t
 
 | the structure | the square | the square-zero equation | the root set of $0$, the square-zero set | the nilpotents |
 |---|---|---|---|---|
-| $\mathrm{gqa}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | $\langle\tilde\xi\rangle_{\natural}=0$ | $\{0\}$ | none |
-| $\mathrm{spa}$ | $\tilde\xi^{2}$ | $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ | $\{0\}$ | none |
-| $\mathrm{apa}$ | $0$ | satisfied identically | $\mathbb{H}$ | every nonzero element |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | $\langle\tilde\xi\rangle_{\natural}=0$ | $\{0\}$ | none |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\xi^{2}$ | $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ | $\{0\}$ | none |
+| $\tilde Q_1\wedge\tilde Q_2$ | $0$ | satisfied identically | $\mathbb{H}$ | every nonzero element |
 
 Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for the two structures whose square is the plain square or the definite scalar $\langle\tilde\xi\rangle_{\natural}e_t$, and the whole space $\mathbb{H}$ for the one whose square vanishes identically. The origin is the common member, and it is square zero without being a nilpotent, the nilpotents being the nonzero members. The root set of $0$ is a cone in all three structures: the origin, a degenerate cone with the origin as apex, in the two, and the whole space, a cone with the origin as apex, in the third.
 
@@ -100,9 +100,9 @@ Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for t
 
 | structure | square-zero set | zero-divisor set | roots of $0$ | the three agree |
 |---|---|---|---|---|
-| $\mathrm{gqa}$ | $\{0\}$ | $\varnothing$ | $\{0\}$ | trivially, at the origin |
-| $\mathrm{spa}$ | $\{0\}$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | $\{0\}$ | no |
-| $\mathrm{apa}$ | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\}$ | $\mathbb{H}$ | yes, away from the origin |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\{0\}$ | $\varnothing$ | $\{0\}$ | trivially, at the origin |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\{0\}$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | $\{0\}$ | no |
+| $\tilde Q_1\wedge\tilde Q_2$ | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\}$ | $\mathbb{H}$ | yes, away from the origin |
 
 The two structures whose square-zero set is the origin alone have no nilpotent, and the antisymmetric plain structure, whose square vanishes identically, has the punctured space for nilpotent set. The three classes of the table coincide away from the origin exactly for the antisymmetric plain structure; for the two other structures the square-zero set is the origin alone while the zero-divisor set is empty for the general quaternionic structure and the punctured vector subspace for the symmetric plain structure.
 
@@ -121,14 +121,14 @@ The nilpotents are the nonzero members of the square-zero sets: none in the two 
 | $\tilde\xi\star\tilde\xi=0$ | the root equation of the value $0$ in the structure $\star$ |
 | $\mathcal R_0$ | the root set of $0$, which is the square-zero set |
 | $\tilde\nu$ | a square-zero element, or nilpotent of index two, the nonzero member of the set |
-| $\{0\}$ | the square-zero set of $\mathrm{gqa}$ and $\mathrm{spa}$, and their nilpotent set |
-| $\mathbb{H}$ | the square-zero set of $\mathrm{apa}$ |
-| $\mathbb{H}\setminus\{0\}$ | the nilpotent set, and the zero-divisor set, of $\mathrm{apa}$ |
+| $\{0\}$ | the square-zero set of $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$, and their nilpotent set |
+| $\mathbb{H}$ | the square-zero set of $\tilde Q_1\wedge\tilde Q_2$ |
+| $\mathbb{H}\setminus\{0\}$ | the nilpotent set, and the zero-divisor set, of $\tilde Q_1\wedge\tilde Q_2$ |
 | $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\mathrm{gqa}$, and the norm |
-| $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\mathrm{spa}$, for the comparison |
+| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
+| $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\tilde Q_1\bullet\tilde Q_2$, for the comparison |
 | cone, apex | a set that contains every real multiple of each of its elements, and its origin |
-| $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ | the three companion structures of the space |
+| $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of the space |
 
 ## Further Reading
 

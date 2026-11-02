@@ -218,7 +218,7 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $z\colon\sigma_k\mapsto\Sigma_{k-1}$ (cyclic) | The map relating the space and spacetime bases |
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra; equals $\mathcal P$ as a complex algebra |
 | $\mathsf{M}_2$ | The corpus's matrix representation, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $iL_{e_t}R_{\vec e_x}=iL_tR_x$ | The Clifford-odd cell of the Dirac frame; the left time multiplication times the right space multiplication |
+| $iL_{e_t}R_{\vec e_x}$ | The Clifford-odd cell of the Dirac frame; the left time multiplication times the right space multiplication |
 
 ## Further Reading
 
@@ -235,7 +235,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

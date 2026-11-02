@@ -182,7 +182,7 @@ one of the three with both properties.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic multiplication, the operation $\mathrm{gqa}$ |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic multiplication, the operation $\tilde Q_1^{\natural}\tilde Q_2$ |
 | $A_\star(\tilde Q_1),B_\star(\tilde Q_1)$ | the left and the right annihilator of $\tilde Q_1$ in the block, equal by the anti-automorphism ${}^{\natural}$ |
 | $L_{\tilde Q_1}$ | the left multiplication operator, $L_{\tilde Q_1}\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, whose kernel is the annihilator |
 | $\det L_{\tilde Q_1}=C(\tilde Q_1)^{2}$, $\operatorname{tr}L_{\tilde Q_1}=4Q_{1t}$ | the determinant and the trace of the operator |

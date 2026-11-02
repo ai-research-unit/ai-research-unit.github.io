@@ -42,7 +42,7 @@ so, separating the real phase gradient from the $\hbar$-suppressed amplitude ter
 $$
 \tilde p\,\psi = \Big[\,\nabla S - i\hbar\,\nabla\ln A\,\Big]\psi,
 \qquad
-\nabla S = \sum_\mu (\partial S/\partial Q_\mu)\,\vec e_\mu .
+\nabla S = \sum_k (\partial S/\partial Q_k)\,\vec e_k .
 $$
 
 The leading term $\nabla S$ is a **real quaternion**, an element of the algebra's spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$; the correction is imaginary-scalar times a real vector, and is the first term of the expansion in $\hbar$. At leading order the state is an approximate eigenstate of the momentum with the real eigenvalue $\nabla S$, which is the classical momentum of the trajectory through the point.

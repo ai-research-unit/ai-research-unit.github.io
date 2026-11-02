@@ -198,7 +198,7 @@ $$
 \tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}+\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
 $$
 
-the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{Q}_1\tilde{Q}_2^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{sps}$.
+the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{Q}_1\tilde{Q}_2^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\tilde Q_1\bullet_{*}\tilde Q_2$.
 
 ## Summary
 

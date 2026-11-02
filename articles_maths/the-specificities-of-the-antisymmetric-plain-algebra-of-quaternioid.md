@@ -140,7 +140,7 @@ class of nonzero nilpotents is the whole space for the two antisymmetric structu
 The following table, the law table of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* read on the identities, shows the isolation of the block. The entries are the structures that
 satisfy the identity.
 
-| identity | $\mathrm{spa}$ | $\mathrm{apa}$ | $\mathrm{gqa}$ |
+| identity | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde Q_1\wedge\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2$ |
 |---|---|---|---|
 | alternating | no | **yes** | no |
 | flexible | yes | yes | no |
@@ -149,11 +149,11 @@ satisfy the identity.
 | associative | no | no | no |
 | Jacobi identity | no | **yes** | no |
 
-**Remark (what isolates the block).** Two readings single the block out. First, $\mathrm{apa}$ is the
+**Remark (what isolates the block).** Two readings single the block out. First, $\tilde Q_1\wedge\tilde Q_2$ is the
 **only** structure that is both alternating and Jacobi, hence the only Lie structure of the companion
 products. Second, the block has no unit while the symmetric plain structure does, is not associative,
 and fails the norm while the symmetric plain structure carries one. The block is therefore
-$\mathrm{apa}$, the Lie bracket of the space.
+$\tilde Q_1\wedge\tilde Q_2$, the Lie bracket of the space.
 
 ## The Boundary of the Criterion
 
@@ -190,7 +190,7 @@ the Jacobi identity is the whole of the difference between them.
 | $\{0\}$ | the idempotents, folded here |
 | $\mathbb{H}$ | the nilpotent set, the whole space, folded here |
 | $\varnothing$ | the group of units, the algebraic norm taken as nonzero |
-| $\mathrm{apa}$ | the unique Lie structure of the companion products |
+| $\tilde Q_1\wedge\tilde Q_2$ | the unique Lie structure of the companion products |
 
 ## Further Reading
 

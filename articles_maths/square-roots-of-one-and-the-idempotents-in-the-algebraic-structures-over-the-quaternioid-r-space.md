@@ -21,7 +21,7 @@ The value $e_t$ is central, the centre of the quaternion space over $\mathbb{R}$
 **The three companion structures.** The companion products of *The 6 Products of the Quaternioid Real Space* carry three structures, named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*:
 
 $$
-\mathrm{spa} , \qquad \mathrm{apa} , \qquad \mathrm{gqa} ,
+\tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
 the **symmetric plain algebra** of the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, the **antisymmetric plain algebra** of the cross product $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
@@ -32,9 +32,9 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structure | at the two equal arguments |
 |---|---|---|
-| the plain square | $\mathrm{spa}$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
-| the central square | $\mathrm{gqa}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
-| the vanishing square | $\mathrm{apa}$ | $0$ |
+| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
+| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
+| the vanishing square | $\tilde Q_1\wedge\tilde Q_2$ | $0$ |
 
 The algebra product of the space carries the plain square as well, and that reading is owned by the *Quaternions* category.
 
@@ -64,15 +64,15 @@ with no zero-divisor term, the algebra product having no zero divisor at all (*Z
 
 The three are read one by one; each names the product, its square and its root set of $+1$, and cites the article that owns them.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde\xi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the root problem is the single real equation $\langle\tilde\xi\rangle_{\natural}=1$, whose solutions form the unit sphere $S^{3}$ of real dimension three, the group of the unit quaternions. The article is *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
 
-### $\mathrm{spa}$, the symmetric plain algebra
+### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
 The product is the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, so the root set of $+1$ is the plain one: the equation $\tilde\xi^{2}=e_t$ is the pair $\langle\tilde\xi\rangle=1$, $2\xi_t\vec\xi=0$. The second equation forces $\xi_t=0$ or $\vec\xi=0$; the pure branch gives $-\lvert\vec\xi\rvert^{2}=1$, which is empty over $\mathbb{R}$, and the central branch gives $\xi_t^{2}=1$ and the two roots $\tilde\xi=\pm e_t$. The root set of $+1$ is the pair $\pm e_t$, although the Jordan structure is not associative. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
-### $\mathrm{apa}$, the antisymmetric plain algebra
+### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
 The product is the commutator $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation reduces to $0=e_t$. The root set of $+1$ is empty. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
@@ -132,15 +132,15 @@ The classification is sharp, and it reads the two ways a square operator can be 
 
 The three are read one by one below; each names the product, its square and its idempotent set, and cites the article that owns them.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde\pi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\pi\rangle_{\natural}e_t$; an idempotent is therefore central, $\tilde\pi=se_t$, and the equation on the centre, $s^{2}=s$, leaves $s\in\{0,1\}$. The idempotent set is the trivial pair, the image under the halving map of the two central roots of $+1$. The article is *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
 
-### $\mathrm{spa}$, the symmetric plain algebra
+### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
 The product is the Jordan product $\tilde\pi\bullet\tilde q$, and its square is the plain square, $\tilde\pi\bullet\tilde\pi=\tilde\pi^{2}$; the idempotent set is $\{0,e_t\}$, the same two-point set as for the algebra product, although the Jordan structure is not associative. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
-### $\mathrm{apa}$, the antisymmetric plain algebra
+### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
 The product is the plain cross product $\tilde\pi\wedge\tilde q=\vec\pi\times\vec q$, alternating, so its square vanishes identically. The idempotent set is the origin alone, and $e_t$ is not an idempotent here. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
@@ -154,9 +154,9 @@ The two sets are collected below, the algebra product and the general quaternion
 
 | the structure | the square | the roots of $+1$ |
 |---|---|---|
-| $\mathrm{gqa}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | the sphere $S^{3}$ of the unit quaternions, real dimension $3$ |
-| $\mathrm{spa}$ | $\tilde\xi^{2}$ | the pair $\pm e_t$ |
-| $\mathrm{apa}$ | $0$ | none |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | the sphere $S^{3}$ of the unit quaternions, real dimension $3$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\xi^{2}$ | the pair $\pm e_t$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | $0$ | none |
 
 Two companion structures have a root of $+1$, the pair $\pm e_t$ for the symmetric plain algebra and the sphere $S^{3}$ for the general quaternionic algebra, and the failure of the third is the vanishing of its square: the alternating structure has no square to read, so no element is a root of a signed value. The pair $\pm e_t$ is the centre of the quaternionic sphere. The algebra product has the pair $\pm e_t$, as owned by *Square Roots of One and the Idempotents of the Quaternion Algebra*.
 
@@ -164,9 +164,9 @@ Two companion structures have a root of $+1$, the pair $\pm e_t$ for the symmetr
 
 | the structure | the square | the idempotents |
 |---|---|---|
-| $\mathrm{gqa}$ | $\langle\tilde\pi\rangle_{\natural}e_t$ | $\{0,e_t\}$ |
-| $\mathrm{spa}$ | $\tilde\pi^{2}$ | $\{0,e_t\}$ |
-| $\mathrm{apa}$ | $0$ | $\{0\}$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\pi\rangle_{\natural}e_t$ | $\{0,e_t\}$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\pi^{2}$ | $\{0,e_t\}$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | $0$ | $\{0\}$ |
 
 **Theorem (the two idempotent sets).** Among the three companion structures the idempotent set is $\{0,e_t\}$ for the two non-alternating structures and $\{0\}$ for the antisymmetric plain algebra.
 
@@ -192,14 +192,14 @@ The idempotents answer with two sets alone. The two non-alternating structures h
 | $\mathcal R_{+1}$ | the root set of $+1$ |
 | $\tilde\pi\star\tilde\pi=\tilde\pi$ | the idempotent equation of the structure $\star$ |
 | $\tilde\pi=\tfrac12(e_t+\tilde\xi)$, $\tilde\xi=2\tilde\pi-e_t$ | the halving map and its inverse |
-| $\pm e_t$ | the roots of $+1$ of $\mathrm{spa}$, and of the algebra product |
-| $S^{3}$ | the roots of $+1$ of $\mathrm{gqa}$, the unit sphere of the space, real dimension three |
+| $\pm e_t$ | the roots of $+1$ of $\tilde Q_1\bullet\tilde Q_2$, and of the algebra product |
+| $S^{3}$ | the roots of $+1$ of $\tilde Q_1^{\natural}\tilde Q_2$, the unit sphere of the space, real dimension three |
 | $S^{2}$ | the roots of $-1$ of the plain square, the sphere of the pure unit quaternions, real dimension two |
-| $\{0,e_t\}$ | the idempotents of $\mathrm{gqa}$ and $\mathrm{spa}$ |
-| $\{0\}$ | the idempotents of $\mathrm{apa}$ |
+| $\{0,e_t\}$ | the idempotents of $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$ |
+| $\{0\}$ | the idempotents of $\tilde Q_1\wedge\tilde Q_2$ |
 | $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\mathrm{gqa}$, and the norm |
-| $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ | the three companion structures of the space |
+| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
+| $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of the space |
 
 ## Further Reading
 

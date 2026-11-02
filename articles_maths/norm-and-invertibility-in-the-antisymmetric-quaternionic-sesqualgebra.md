@@ -9,7 +9,7 @@ $$
 =\vec Q_1\times\overline{\vec Q_2},
 $$
 
-the conjugate cross product, the antisymmetric half of the general quaternionic sesquilinear product, the operation $\mathrm{aqs}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
+the conjugate cross product, the antisymmetric half of the general quaternionic sesquilinear product, the operation $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
 A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
@@ -119,7 +119,7 @@ The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural})=\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric quaternionic sesqualgebra, the operation $\mathrm{aqs}$ |
+| $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural})=\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric quaternionic sesqualgebra, the operation $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the parent general quaternionic sesquilinear product |
 | $e_t$ | the unit of the parent algebra, a square-zero element of the block |
 | $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ | the scalar part of the block vanishes identically |

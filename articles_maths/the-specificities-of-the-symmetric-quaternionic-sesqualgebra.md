@@ -38,11 +38,11 @@ $$
 $$
 
 is the Krein form. The twelve structures are the four general products
-$\mathrm{gpa},\mathrm{gqa},\mathrm{gps},\mathrm{gqs}$, their four symmetric parts
-$\mathrm{spa},\mathrm{sqa},\mathrm{sps},\mathrm{sqs}$ and their four antisymmetric parts
-$\mathrm{apa},\mathrm{aqa},\mathrm{aps},\mathrm{aqs}$, with the two first rows bilinear and the two last
+$\tilde Q_1\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2,\tilde Q_1\tilde Q_2^{*},\tilde Q_1^{\natural}\tilde Q_2^{*}$, their four symmetric parts
+$\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\bullet_{\natural}\tilde Q_2,\tilde Q_1\bullet_{*}\tilde Q_2,\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and their four antisymmetric parts
+$\tilde Q_1\wedge\tilde Q_2,\tilde Q_1\wedge_{\natural}\tilde Q_2,\tilde Q_1\wedge_{*}\tilde Q_2,\tilde Q_1\wedge_{\natural*}\tilde Q_2$, with the two first rows bilinear and the two last
 rows sesquilinear, as in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
-Throughout, the block is $\mathrm{sqs}$, and the products of the twelve are written with their three-letter
+Throughout, the block is $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, and the products of the twelve are written with their three-letter
 names.
 
 ## The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian
@@ -82,7 +82,7 @@ part of $\tilde Q_1\star\tilde Q_2$. So $\overline{\tilde Q_2\star\tilde Q_1}=\t
 ## The Criterion
 
 **Theorem (the specificity).** Among the twelve structures of the biquaternion complex space, the block
-$\mathrm{sqs}$ is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian product.
+$\tilde Q_1\bullet_{\natural*}\tilde Q_2$ is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian product.
 
 *Proof.* The block is $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian by the theorem of §*The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian*; the other eleven are disposed of in
 §*The Isolation among the Twelve*, each failing at least one of the two clauses on a named pair.
@@ -134,19 +134,19 @@ class of an element of the block — regular, pure zero divisor, non-pure zero d
 the scalar coordinate $Q_t$ and the central square $C(\tilde Q)$, and not by the form $\langle\cdot,\cdot\rangle_{\natural*}$, as in *Zero
 Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
-**The boundary.** A product with the scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ but without the symmetry, such as $\mathrm{gqs}$, has a
+**The boundary.** A product with the scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ but without the symmetry, such as $\tilde Q_1^{\natural}\tilde Q_2^{*}$, has a
 diagonal whose vector part carries the cross product in addition to the mixed term; a product with the
-symmetry but without the scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, such as $\mathrm{sps}$, has a central diagonal. The block is the
+symmetry but without the scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, such as $\tilde Q_1\bullet_{*}\tilde Q_2$, has a central diagonal. The block is the
 unique product whose diagonal keeps the mixed term and the form at once, with neither the extra cross term
 of the first boundary nor the vanishing vector part of the second.
 
 ## Worked Examples
 
-**The block at the witness $(e_t,\vec e_x)$.** $\mathrm{sqs}(e_t,\vec e_x)=-\vec e_x$ and $\overline{\mathrm{sqs}(\vec e_x,e_t)}=\overline{-\vec e_x}=-\vec e_x$, so conjugate-symmetry holds; and $\mathrm{Sc}(\mathrm{sqs}(e_t,\vec e_x))=0=\langle e_t,\vec e_x\rangle_{\natural*}$, so the scalar-part identity holds.
+**The block at the witness $(e_t,\vec e_x)$.** $\tilde Q_1\bullet_{\natural*}\tilde Q_2(e_t,\vec e_x)=-\vec e_x$ and $\overline{\tilde Q_1\bullet_{\natural*}\tilde Q_2(\vec e_x,e_t)}=\overline{-\vec e_x}=-\vec e_x$, so conjugate-symmetry holds; and $\mathrm{Sc}(\tilde Q_1\bullet_{\natural*}\tilde Q_2(e_t,\vec e_x))=0=\langle e_t,\vec e_x\rangle_{\natural*}$, so the scalar-part identity holds.
 
-**The scalar-part identity at a complex element.** $\mathrm{Sc}(\mathrm{sqs}(i\vec e_x,i\vec e_x))=\langle i\vec e_x,i\vec e_x\rangle_{\natural*}=-1$, the Hermitian form reading the modulus of the complex coefficient; a bilinear product cannot see it. This is the clause that separates the block from the bilinear structures, and the reason the block's scalar part is $\langle\cdot,\cdot\rangle_{\natural*}$ and not the complex bilinear form.
+**The scalar-part identity at a complex element.** $\mathrm{Sc}(\tilde Q_1\bullet_{\natural*}\tilde Q_2(i\vec e_x,i\vec e_x))=\langle i\vec e_x,i\vec e_x\rangle_{\natural*}=-1$, the Hermitian form reading the modulus of the complex coefficient; a bilinear product cannot see it. This is the clause that separates the block from the bilinear structures, and the reason the block's scalar part is $\langle\cdot,\cdot\rangle_{\natural*}$ and not the complex bilinear form.
 
-**The two clauses at the boundaries.** The general quaternionic sesquilinear product $\mathrm{gqs}$ has scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ and fails conjugate-symmetry, and the symmetric plain sesquilinear part $\mathrm{sps}$ is conjugate-symmetric with a definite scalar part; the block is the one product that carries both, neither the extra cross term of the first nor the central diagonal of the second.
+**The two clauses at the boundaries.** The general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ has scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ and fails conjugate-symmetry, and the symmetric plain sesquilinear part $\tilde Q_1\bullet_{*}\tilde Q_2$ is conjugate-symmetric with a definite scalar part; the block is the one product that carries both, neither the extra cross term of the first nor the central diagonal of the second.
 
 ## Summary
 
@@ -156,8 +156,8 @@ $\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}$, and its scalar
 $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. The block satisfies both clauses; the eleven other
 structures each fail at least one, the failures being read at the pairs $(i\vec e_x,\vec e_x)$ and $(\vec e_x,\vec e_y)$ and at
 the elements $\vec e_x$ and $i\vec e_x$. The criterion is sharp: deleting the conjugate-symmetry admits the general quaternionic sesquilinear
-product $\mathrm{gqs}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
-$\mathrm{sps}$; the block is the meeting point of the two, with the scalar part of the first and the symmetry
+product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
+$\tilde Q_1\bullet_{*}\tilde Q_2$; the block is the meeting point of the two, with the scalar part of the first and the symmetry
 of the second. The law delivers the diagonal formula with the Krein form in its scalar part, the
 $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness of the left multiplications, $L^{\star}_{\tilde Q_3}{}^{\dagger}=L^{\star}_{\tilde Q_3^{\natural}}$,
 and the element theory in which the class of an element is decided by the scalar coordinate and the central
@@ -167,12 +167,12 @@ square.
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{sqs}$ | the block, the symmetric quaternionic sesquilinear product |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the block, the symmetric quaternionic sesquilinear product |
 | $\tilde Q_1\circ\tilde Q_2=\overline{\tilde Q_2\circ\tilde Q_1}$ | the clause (C1), conjugate-symmetry |
 | $\mathrm{Sc}(\tilde Q_1\circ\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the clause (C2), the scalar-part identity |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | the Krein form, the scalar part of the block |
-| $\mathrm{gqs}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
-| $\mathrm{sps}$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
+| $\tilde Q_1\bullet_{*}\tilde Q_2$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
 | $\langle L^{\star}_{\tilde Q_3}\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde Q_3^{\natural}}\tilde Q_2\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |
 
 ## Further Reading

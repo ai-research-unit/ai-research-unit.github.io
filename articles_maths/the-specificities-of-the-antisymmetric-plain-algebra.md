@@ -7,7 +7,7 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one carri
 theory of a **Lie algebra**: the **antisymmetric plain multiplication**
 $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$ of
 *Introduction to the Antisymmetric Plain Algebra*, the multiplication named
-$\mathrm{apa}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Every
+$\tilde Q_1\wedge\tilde Q_2$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Every
 structural result of the block belongs to it alone — the centre and the quotient, the derived
 algebra and its identification with $\mathfrak{sl}(2,\mathbb{C})$, the invariant form, the Cartan
 criteria and the Casimir element, the enveloping algebra and the matrix models — and this article
@@ -20,7 +20,7 @@ structures on which it holds at every element; equivalently, the block is the on
 among the twelve. Each of the eleven others is built from the four general products by twisting a
 slot with a conjugation or by (anti)symmetrising, and the ten non-alternating structures fail the
 identity directly, on a witness, the criterion of the alternating case being unavailable to them;
-the one other alternating structure, $\mathrm{aqa}$, fails it because it fails the Jacobi identity
+the one other alternating structure, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, fails it because it fails the Jacobi identity
 that the alternating case requires.
 
 The consequence is the point of the article. Only in the antisymmetric plain algebra are the centre
@@ -190,7 +190,7 @@ are the whole punctured space (*Norm and Invertibility in the Antisymmetric Plai
 companions).
 **The criterion** — the Jacobi identity, equivalently the Leibniz identity — is the further law
 that makes the bracket a Lie bracket, and it is what the specific theory of the block records. The
-two are independent: $\mathrm{aqa}$ is alternating and not Lie, and the associative general plain
+two are independent: $\tilde Q_1\wedge_{\natural}\tilde Q_2$ is alternating and not Lie, and the associative general plain
 product is Lie-admissible — its commutator is a Lie bracket — while being neither alternating nor
 a Lie product in the sense fixed here.
 
@@ -238,7 +238,7 @@ block — the centre and the quotient, the derived algebra isomorphic to $\mathf
 the Killing form of radical the centre, the Cartan criteria, the Casimir element, the enveloping
 algebra and the matrix models — is a theory and not a collection of examples: it holds at every
 element of the block. Among the twelve it is the block alone, the ten non-alternating structures
-failing the identity directly and the one other alternating structure, $\mathrm{aqa}$, through its
+failing the identity directly and the one other alternating structure, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, through its
 Jacobi defect at $(e_t,\vec e_x,\vec e_y)$; the isolation is a statement about the law and not about isolated
 elements.
 
@@ -252,7 +252,7 @@ elements.
 | $\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}=\tilde Q_1\wedge\cdot$ | the adjoint of the block's own bracket, the halved adjoint |
 | $L^{\star}_{\tilde Q_1}(\tilde Q_2\star\tilde Q_3)=(L^{\star}_{\tilde Q_1}\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(L^{\star}_{\tilde Q_1}\tilde Q_3)$ | the Leibniz identity, the criterion |
 | $\Lambda=-J$ | the Leibniz defect is the negative of the cyclic sum, for an alternating product |
-| $\mathrm{gpa}\dots\mathrm{aqs}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\tilde Q_1\tilde Q_2\dots\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the kernel of the adjoint representation, the centre of the bracket |
 | $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$ | the image of the adjoint representation, the inner derivations |
 

@@ -166,7 +166,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 | $\mathbb{M}_\pm$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
-| $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
 | $S^2$ | the real unit sphere of the parameter $\tilde\xi$ |
 
 ## Further Reading

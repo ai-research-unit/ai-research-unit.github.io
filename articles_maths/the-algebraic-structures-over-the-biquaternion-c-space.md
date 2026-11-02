@@ -6,7 +6,7 @@ This article reads the twelve products of *Symmetric and Antisymmetric Decomposi
 
 Every one of the twelve products equips the complex space with an **algebraic structure**: its operation is the multiplication of a structure of its own kind, and the structure is read off the laws of that operation, which the table of *Symmetric and Antisymmetric Decomposition of the Four General Products* collects. The general product of a family is the multiplication of the **algebra** or the **sesqualgebra** of that family — the two bilinear families are the two algebras over $\mathbb{C}$ and the two sesquilinear families the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$ — and the symmetric part of each product is the multiplication of a **commutative** structure and its antisymmetric part the multiplication of an **alternating** one, the symmetry being up to the coefficientwise conjugation in the two sesquilinear families.
 
-The name has three letters and is read as a code.
+The name is read from its marks: the two slots, their conjugations and the dot or the wedge.
 
 - The **first** letter says which of the three operations of a family is meant: $\mathrm g$ the **general** product, the multiplication itself, $\mathrm s$ its **symmetric** part, $\mathrm a$ its **antisymmetric** part.
 - The **second** letter says which of the two products of the family is meant: $\mathrm p$ the **plain** one and $\mathrm q$ the **quaternionic** one, in the sense of the first slot, read as it stands for $\mathrm p$ and through the natural conjugation ${}^{\natural}$ for $\mathrm q$.
@@ -16,20 +16,20 @@ The twelve names are these:
 
 | the family | general | symmetric | antisymmetric |
 |---|---|---|---|
-| the plain algebra | $\mathrm{gpa}$ | $\mathrm{spa}$ | $\mathrm{apa}$ |
-| the plain sesqualgebra | $\mathrm{gps}$ | $\mathrm{sps}$ | $\mathrm{aps}$ |
-| the quaternionic algebra | $\mathrm{gqa}$ | $\mathrm{sqa}$ | $\mathrm{aqa}$ |
-| the quaternionic sesqualgebra | $\mathrm{gqs}$ | $\mathrm{sqs}$ | $\mathrm{aqs}$ |
+| the plain algebra | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde Q_1\wedge\tilde Q_2$ |
+| the plain sesqualgebra | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\tilde Q_1\wedge_{*}\tilde Q_2$ |
+| the quaternionic algebra | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural}\tilde Q_2$ |
+| the quaternionic sesqualgebra | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ |
 
 Each row is one family — the two algebras over $\mathbb{C}$ and the two sesqualgebras — and the three names of a row are the three structures of the family: the general structure of the family and its symmetrisation and its antisymmetrisation.
 
-The four codes that begin with $\mathrm g$ name the four structures the corpus already names apart: $\mathrm{gpa}$ is the multiplication of *The Biquaternion Algebra*, $\mathrm{gps}$ of *Introduction to the General Plain Sesqualgebra*, $\mathrm{gqa}$ of *Introduction to the General Quaternionic Algebra*, and $\mathrm{gqs}$ of *Introduction to the General Quaternionic Sesqualgebra*. The other eight codes are the symmetrisations and the antisymmetrisations of those four, and the body of *Symmetric and Antisymmetric Decomposition of the Four General Products* is where they are read.
+The four general products name the four structures the corpus already names apart: $\tilde Q_1\tilde Q_2$ is the multiplication of *The Biquaternion Algebra*, $\tilde Q_1\tilde Q_2^{*}$ of *Introduction to the General Plain Sesqualgebra*, $\tilde Q_1^{\natural}\tilde Q_2$ of *Introduction to the General Quaternionic Algebra*, and $\tilde Q_1^{\natural}\tilde Q_2^{*}$ of *Introduction to the General Quaternionic Sesqualgebra*. The other eight are the symmetrisations and the antisymmetrisations of those four, and the body of *Symmetric and Antisymmetric Decomposition of the Four General Products* is where they are read.
 
-**What the last letter does and does not claim.** Only the six structures whose code ends in $\mathrm a$ are algebras over $\mathbb{C}$: the three operations of the plain row and the three of the quaternionic row are $\mathbb{C}$-bilinear, so each is an algebra multiplication in the broad sense. The six whose code ends in $\mathrm s$ are the six operations of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$: the two general ones, $\mathrm{gps}$ and $\mathrm{gqs}$, are the multiplications of the two sesqualgebras over $\mathbb{C}$, and their four parts $\mathrm{sps}$, $\mathrm{sqs}$, $\mathrm{aps}$ and $\mathrm{aqs}$ are sesquilinear again, because the exchange that splits them carries the conjugation of the value and keeps the class. The bare interchange of the two arguments, which returns a product of the **opposite** parity, has its own two halves — the symmetrised sesquilinear product and the sesquilinear commutator — and those are the only $\mathbb{R}$-bilinear operations of the family. The trailing $\mathrm s$ names the class of the operation, which is the class of the parent product, and it is read that way throughout. The twelve names are read against the class-preserving exchange; §*The Exchange Behind the Split* of *Symmetric and Antisymmetric Decomposition of the Four General Products* contrasts it with the bare interchange.
+**What the last letter does and does not claim.** Only the six $\mathbb{C}$-bilinear structures are algebras over $\mathbb{C}$: the three operations of the plain row and the three of the quaternionic row are $\mathbb{C}$-bilinear, so each is an algebra multiplication in the broad sense. The six sesquilinear ones are the six operations of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$: the two general ones, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$, are the multiplications of the two sesqualgebras over $\mathbb{C}$, and their four parts $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ are sesquilinear again, because the exchange that splits them carries the conjugation of the value and keeps the class. The bare interchange of the two arguments, which returns a product of the **opposite** parity, has its own two halves — the symmetrised sesquilinear product and the sesquilinear commutator — and those are the only $\mathbb{R}$-bilinear operations of the family. The subscript names the class of the operation, which is the class of the parent product, and it is read that way throughout. The twelve names are read against the class-preserving exchange; §*The Exchange Behind the Split* of *Symmetric and Antisymmetric Decomposition of the Four General Products* contrasts it with the bare interchange.
 
-**Remark (one collision).** In the physics part of the corpus the letters $\mathrm{aps}$ also denote the *algebra of physical space*, the paravector space $\mathrm{span}_{\mathbb{R}}\{e_t,\gamma_k\}$ of *Paravectors and the Geometry of Spacetime*. In this article and its siblings the same letters denote $\mathrm{aps}$, the antisymmetric plain sesqualgebra, and the two readings occur in different parts of the corpus.
+**Remark (one collision).** In the physics part of the corpus the letters $\tilde Q_1\wedge_{*}\tilde Q_2$ also denote the *algebra of physical space*, the paravector space $\mathrm{span}_{\mathbb{R}}\{e_t,\gamma_k\}$ of *Paravectors and the Geometry of Spacetime*. In this article and its siblings the same letters denote $\tilde Q_1\wedge_{*}\tilde Q_2$, the antisymmetric plain sesqualgebra, and the two readings occur in different parts of the corpus.
 
-The article of each structure is its own: *Introduction to the Symmetric Plain Algebra* for $\mathrm{spa}$, *Introduction to the Symmetric Plain Sesqualgebra* for $\mathrm{sps}$, *Introduction to the Symmetric Quaternionic Algebra* for $\mathrm{sqa}$ and *Introduction to the Symmetric Quaternionic Sesqualgebra* for $\mathrm{sqs}$; and *Introduction to the Antisymmetric Plain Algebra* for $\mathrm{apa}$, *Introduction to the Antisymmetric Plain Sesqualgebra* for $\mathrm{aps}$, *Introduction to the Antisymmetric Quaternionic Algebra* for $\mathrm{aqa}$ and *Introduction to the Antisymmetric Quaternionic Sesqualgebra* for $\mathrm{aqs}$. Each of those articles names the product of its structure in the same sentence.
+The article of each structure is its own: *Introduction to the Symmetric Plain Algebra* for $\tilde Q_1\bullet\tilde Q_2$, *Introduction to the Symmetric Plain Sesqualgebra* for $\tilde Q_1\bullet_{*}\tilde Q_2$, *Introduction to the Symmetric Quaternionic Algebra* for $\tilde Q_1\bullet_{\natural}\tilde Q_2$ and *Introduction to the Symmetric Quaternionic Sesqualgebra* for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; and *Introduction to the Antisymmetric Plain Algebra* for $\tilde Q_1\wedge\tilde Q_2$, *Introduction to the Antisymmetric Plain Sesqualgebra* for $\tilde Q_1\wedge_{*}\tilde Q_2$, *Introduction to the Antisymmetric Quaternionic Algebra* for $\tilde Q_1\wedge_{\natural}\tilde Q_2$ and *Introduction to the Antisymmetric Quaternionic Sesqualgebra* for $\tilde Q_1\wedge_{\natural*}\tilde Q_2$. Each of those articles names the product of its structure in the same sentence.
 
 ## The Twelve Structures, One by One
 
@@ -40,7 +40,7 @@ Each structure is read with its product and with its decomposition: the operatio
 Its product is the **general plain bilinear product**. Its decomposition is the scalar part $Q_{1,t}Q_{2,t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1,t}\vec Q_2+Q_{2,t}\vec Q_1+\vec Q_1\times\vec Q_2$, and it splits into its two parts:
 
 $$
-\boxed{\;\mathrm{gpa}=\mathrm{spa}+\mathrm{apa}\;}.
+\boxed{\;\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2\;}.
 $$
 
 The multiplication is associative, $e_t$ is a unit on both sides, and the values fill the whole space.
@@ -49,17 +49,17 @@ The multiplication is associative, $e_t$ is a unit on both sides, and the values
 
 Its product is the **general plain sesquilinear product**. Its decomposition is the scalar part $Q_{1,t}\overline{Q_{2,t}}+(\vec Q_1,\overline{\vec Q_2})$ and the vector part $-Q_{1,t}\overline{\vec Q_2}+\overline{Q_{2,t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, and it splits into its two parts,
 $$
-\boxed{\;\mathrm{gps}=\mathrm{sps}+\mathrm{aps}\;}
+\boxed{\;\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2\;}
 $$
 The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, $e_t$ is a unit on the right only, and the values fill the whole space.
 
 ### The General Quaternionic Algebra (gqa)
 
-Its product is the **general quaternionic bilinear product**. Its decomposition is the scalar part $Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2$, and it splits into its two parts, $\mathrm{gqa}=\mathrm{sqa}+\mathrm{aqa}$. The multiplication is not associative, $e_t$ is a unit on the left only, and the values fill the whole space.
+Its product is the **general quaternionic bilinear product**. Its decomposition is the scalar part $Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1,t}\vec Q_2-Q_{2,t}\vec Q_1-\vec Q_1\times\vec Q_2$, and it splits into its two parts, $\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2$. The multiplication is not associative, $e_t$ is a unit on the left only, and the values fill the whole space.
 
 ### The General Quaternionic Sesqualgebra (gqs)
 
-Its product is the **general quaternionic sesquilinear product**. Its decomposition is the scalar part $Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})$ and the vector part $-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$, and it splits into its two parts, $\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, it has a unit on neither side, and the values fill the whole space.
+Its product is the **general quaternionic sesquilinear product**. Its decomposition is the scalar part $Q_{1,t}\overline{Q_{2,t}}-(\vec Q_1,\overline{\vec Q_2})$ and the vector part $-Q_{1,t}\overline{\vec Q_2}-\overline{Q_{2,t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$, and it splits into its two parts, $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, it has a unit on neither side, and the values fill the whole space.
 
 ### The Symmetric Plain Algebra (spa)
 
@@ -97,29 +97,29 @@ Its product is the **antisymmetric quaternionic sesquilinear product**, the anti
 
 Of the twelve, exactly two structures carry the product of one of the two classical nonassociative algebras, and both belong to the plain family. A symmetrisation is a **Jordan** product only when it satisfies the Jordan identity, an antisymmetrisation a **Lie** product only when it satisfies the Jacobi identity, and of the twelve exactly one of each meets its identity. The two are these:
 
-- $\mathrm{apa}$ is alternating and satisfies the Jacobi identity, so its product is a **Lie** product; it is the Lie algebra of *The Unitary Lie Algebra*, with the vector subspace as a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the quaternion subspace as $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace as $\mathfrak{u}(2)$, whose derived algebra is $\mathfrak{su}(2)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*).
-- $\mathrm{spa}$ is commutative and satisfies the Jordan identity, so its product is a **Jordan** product; it is the special Jordan algebra of degree two, and its Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$.
+- $\tilde Q_1\wedge\tilde Q_2$ is alternating and satisfies the Jacobi identity, so its product is a **Lie** product; it is the Lie algebra of *The Unitary Lie Algebra*, with the vector subspace as a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, the quaternion subspace as $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace as $\mathfrak{u}(2)$, whose derived algebra is $\mathfrak{su}(2)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*).
+- $\tilde Q_1\bullet\tilde Q_2$ is commutative and satisfies the Jordan identity, so its product is a **Jordan** product; it is the special Jordan algebra of degree two, and its Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$.
 
 The other six parts fail the identity of their kind, and each failure is witnessed on a single triple or a single element:
 
 | name | identity | witness | failure |
 |---|---|---|---|
-| $\mathrm{sps}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
-| $\mathrm{sqa}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
-| $\mathrm{sqs}$ | Jordan | $x=y=\vec e_x$ | the sides are $-e_t$ and $e_t$ |
-| $\mathrm{aps}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $\vec e_z$ |
-| $\mathrm{aqa}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $-\vec e_z$ |
-| $\mathrm{aqs}$ | Jacobi | $(\vec e_x,\vec e_x,i\vec e_y)$ | $-2i\vec e_y$ |
+| $\tilde Q_1\bullet_{*}\tilde Q_2$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
+| $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | Jordan | $x=y=\vec e_x$ | the sides are $-e_t$ and $e_t$ |
+| $\tilde Q_1\wedge_{*}\tilde Q_2$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $\vec e_z$ |
+| $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $-\vec e_z$ |
+| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | Jacobi | $(\vec e_x,\vec e_x,i\vec e_y)$ | $-2i\vec e_y$ |
 
 The last column of the three Jacobi rows is the cyclic sum declared in the Conventions of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
-The three Jacobi failures have three different reasons. For $\mathrm{aqa}$ the culprit is the non-associativity of the product it comes from; for $\mathrm{aps}$ and $\mathrm{aqs}$ it is the obstruction of *Lie Algebras of Sesqualgebras*, where the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, which a genuine sesqualgebra forbids. The three Jordan failures are witnessed above, the first two on the same element $\vec e_x$ because the two products agree on the real basis. In the three Jordan rows the last column gives the two sides of the identity, $(x^{2}\bullet x)\bullet x$ and $x^{2}\bullet(x\bullet x)$: they differ by $e_t$ for $\mathrm{sps}$ and $\mathrm{sqa}$, whose symmetric square on $\vec e_x$ is $e_t$, and by $2e_t$ for $\mathrm{sqs}$, whose symmetric square on $\vec e_x$ is $-e_t$.
+The three Jacobi failures have three different reasons. For $\tilde Q_1\wedge_{\natural}\tilde Q_2$ the culprit is the non-associativity of the product it comes from; for $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ it is the obstruction of *Lie Algebras of Sesqualgebras*, where the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, which a genuine sesqualgebra forbids. The three Jordan failures are witnessed above, the first two on the same element $\vec e_x$ because the two products agree on the real basis. In the three Jordan rows the last column gives the two sides of the identity, $(x^{2}\bullet x)\bullet x$ and $x^{2}\bullet(x\bullet x)$: they differ by $e_t$ for $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$, whose symmetric square on $\vec e_x$ is $e_t$, and by $2e_t$ for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, whose symmetric square on $\vec e_x$ is $-e_t$.
 
-The four general products are neither symmetrisations nor antisymmetrisations, and neither identity is put to them: $\mathrm{gpa}$ is the one of the twelve whose product is associative, and the products of the other three are not associative.
+The four general products are neither symmetrisations nor antisymmetrisations, and neither identity is put to them: $\tilde Q_1\tilde Q_2$ is the one of the twelve whose product is associative, and the products of the other three are not associative.
 
 ## Left Alternativity and the Isolation among the Twelve
 
-**The plain product $\mathrm{gpa}$ is the only left-alternative one of the twelve, and left alternativity is the exact threshold of the associative theory.**
+**The plain product $\tilde Q_1\tilde Q_2$ is the only left-alternative one of the twelve, and left alternativity is the exact threshold of the associative theory.**
 
 A product $\circ$ is **left-alternative** when
 
@@ -127,20 +127,20 @@ $$
 \tilde Q_1\circ(\tilde Q_1\circ\tilde Q_2)=(\tilde Q_1\circ\tilde Q_1)\circ\tilde Q_2\qquad\text{for all }\tilde Q_1,\tilde Q_2 .
 $$
 
-**Theorem (the isolation).** Of the twelve structures, $\mathrm{gpa}$ is the only left-alternative one.
+**Theorem (the isolation).** Of the twelve structures, $\tilde Q_1\tilde Q_2$ is the only left-alternative one.
 
-*Proof.* Every other structure comes from the plain product by twisting the first slot with ${}^{\natural}$, twisting the second with ${}^{*}$, or (anti)symmetrising. Each destroys the law. The first twist demands $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1$ for every $\tilde Q_1$, false at $\vec e_x$. The second equates a linear with a conjugate-linear operation. The symmetrised and antisymmetrised plain products fail at $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_z$: the left side is $0$ for $\mathrm{spa}$ and $-\vec e_z$ for $\mathrm{apa}$, the right side is $-\vec e_z$ for $\mathrm{spa}$ and $0$ for $\mathrm{apa}$. The plain product is associative, hence left-alternative.
+*Proof.* Every other structure comes from the plain product by twisting the first slot with ${}^{\natural}$, twisting the second with ${}^{*}$, or (anti)symmetrising. Each destroys the law. The first twist demands $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\tilde Q_1^{\natural}\tilde Q_1$ for every $\tilde Q_1$, false at $\vec e_x$. The second equates a linear with a conjugate-linear operation. The symmetrised and antisymmetrised plain products fail at $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_z$: the left side is $0$ for $\tilde Q_1\bullet\tilde Q_2$ and $-\vec e_z$ for $\tilde Q_1\wedge\tilde Q_2$, the right side is $-\vec e_z$ for $\tilde Q_1\bullet\tilde Q_2$ and $0$ for $\tilde Q_1\wedge\tilde Q_2$. The plain product is associative, hence left-alternative.
 
 | family | structures | left-alternative |
 |---|---|---|
-| plain | $\mathrm{gpa}$ | **yes** |
-| symmetrised plain | $\mathrm{spa}$, $\mathrm{apa}$ | no |
-| first slot ${}^{\natural}$ | $\mathrm{gqa}$ | no |
-| from $\mathrm{gqa}$ | $\mathrm{sqa}$, $\mathrm{aqa}$ | no |
-| second slot ${}^{*}$ | $\mathrm{gps}$, $\mathrm{gqs}$ | no |
-| from the sesquilinear | $\mathrm{sps}$, $\mathrm{aps}$, $\mathrm{sqs}$, $\mathrm{aqs}$ | no |
+| plain | $\tilde Q_1\tilde Q_2$ | **yes** |
+| symmetrised plain | $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$ | no |
+| first slot ${}^{\natural}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | no |
+| from $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | no |
+| second slot ${}^{*}$ | $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | no |
+| from the sesquilinear | $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | no |
 
-The claim is about the law and not about single elements. The nearest case is $\mathrm{gqa}$, whose product is the plain product read through the natural conjugation of the first slot; it fails at $\vec e_x$, where $\vec e_x^{\natural}=-\vec e_x$.
+The claim is about the law and not about single elements. The nearest case is $\tilde Q_1^{\natural}\tilde Q_2$, whose product is the plain product read through the natural conjugation of the first slot; it fails at $\vec e_x$, where $\vec e_x^{\natural}=-\vec e_x$.
 
 
 ---
@@ -149,7 +149,7 @@ The claim is about the law and not about single elements. The nearest case is $\
 
 The twelve structures are the twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products* read as multiplications, and each name is three letters: the part, $\mathrm g$ general or $\mathrm s$ symmetric or $\mathrm a$ antisymmetric; the first slot, $\mathrm p$ plain or $\mathrm q$ quaternionic; the family, $\mathrm a$ the algebra over $\mathbb{C}$ or $\mathrm s$ the sesqualgebra over $\mathbb{C}$. The four names that begin with $\mathrm g$ are the four structures the corpus names apart, the multiplications of the four general products, and the other eight are their symmetrisations and antisymmetrisations.
 
-Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\mathrm{apa}=\vec Q_1\times\vec Q_2$ is the one Lie product and $\mathrm{spa}=\tilde{Q}_1\bullet\tilde{Q}_2$ the one Jordan product. Of the twelve, $\mathrm{gpa}$ alone is left-alternative, and left alternativity is the threshold that keeps the associative theory available. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm a$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm s$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
+Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ is the one Lie product and $\tilde Q_1\bullet\tilde Q_2=\tilde{Q}_1\bullet\tilde{Q}_2$ the one Jordan product. Of the twelve, $\tilde Q_1\tilde Q_2$ alone is left-alternative, and left alternativity is the threshold that keeps the associative theory available. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm a$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm s$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
 
 ## Summary of Notation
 
@@ -158,11 +158,11 @@ Of the twelve, two are the product of a classical nonassociative algebra and bot
 | $\mathrm g$, $\mathrm s$, $\mathrm a$ (first letter) | the general product, its symmetric part, its antisymmetric part |
 | $\mathrm p$, $\mathrm q$ (second letter) | the plain first slot, the quaternionic first slot |
 | $\mathrm a$, $\mathrm s$ (third letter) | the family: the algebra over $\mathbb{C}$, the sesqualgebra over $\mathbb{C}$ |
-| $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{spa}$, $\mathrm{sqa}$, $\mathrm{apa}$, $\mathrm{aqa}$ | the six structures of the two algebras over $\mathbb{C}$ |
-| $\mathrm{gps}$, $\mathrm{gqs}$, $\mathrm{sps}$, $\mathrm{sqs}$, $\mathrm{aps}$, $\mathrm{aqs}$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the scalar part of $\mathrm{sqa}$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | the six structures of the two algebras over $\mathbb{C}$ |
+| $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the scalar part of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | the centre, the vector subspace and the Hermitian and anti-Hermitian subspaces |
-| Jacobi, Jordan | the two identities that single out $\mathrm{apa}$ and $\mathrm{spa}$ |
+| Jacobi, Jordan | the two identities that single out $\tilde Q_1\wedge\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$ |
 | $\overline{\vec Q_2}$, $(\vec Q_1,\vec Q_2)$, $\vec Q_1\times\vec Q_2$ | the coefficientwise conjugate of the vector part, the bilinear dot product and the bilinear cross product |
 
 ## Further Reading

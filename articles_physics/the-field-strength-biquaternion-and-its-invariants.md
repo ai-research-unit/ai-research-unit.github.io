@@ -40,10 +40,10 @@ The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural one
 The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\phi/c + \vec A$ by differentiation. In the biquaternion algebra the construction is
 
 $$
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
+\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr),
 $$
 
-the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$, where $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ is the biquaternionic gradient and $\tilde{\nabla}^{\natural}$ its quaternion conjugate. In tensor language the same object is the antisymmetric rank-two tensor
+the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqrt\mu$ — in Heaviside–Lorentz units, where the two medium parameters are $1$, this is the familiar $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the companion articles, and in a medium with $\sqrt\mu\ne1$ the division is not optional, since $\tilde{F}$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ then differ in dimension — where $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ is the biquaternionic gradient and $\tilde{\nabla}^{\natural}$ its quaternion conjugate. In tensor language the same object is the antisymmetric rank-two tensor
 
 $$
 F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
@@ -57,7 +57,7 @@ F_{\mu\nu} =
 \end{pmatrix}.
 $$
 
-The tensor has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\mu$ of the pure-vector biquaternion. As the Maxwell article notes, the precise identification of $\vec F$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign convention for the fields; the unambiguous definition used here is the tensor formula together with the component combination $F_\mu = i\sqrt{\epsilon}E_\mu - \sqrt{\mu}H_\mu$.
+The tensor has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\mu$ of the pure-vector biquaternion. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically, since $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\phi/c$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$ and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The tensor formula and the component combination $F_\mu = i\sqrt{\epsilon}E_\mu - \sqrt{\mu}H_\mu$ are then the same statement read component by component, $F_{0k}=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -88,7 +88,7 @@ $$
 The electric part is therefore **Hermitian** and the magnetic part **anti-Hermitian**, and $\tilde{F}$ is neither. Explicitly,
 
 $$
-\tilde{F}^{*} = -\vec F^* = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H,
+\tilde{F}^{*} = -\overline{\vec F} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H,
 $$
 
 so that the Hermitian and anti-Hermitian parts of the field strength are
@@ -188,7 +188,7 @@ $$
 
 The biquaternion norm is a single complex number, and it carries exactly two real invariants. It is the *fully contracted* object built from the field strength with no derivatives and no extra vectors, so these are the only two independent invariants of the field; any other algebraic invariant is a function of $I_1$ and $I_2$.
 
-**The conjugate biquaternion norm.** The quaternion norm is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\tilde{F}^{\natural} = -\vec F$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \vec F^*$. For the biquaternion norm of the complex-conjugate field,
+**The conjugate biquaternion norm.** The quaternion norm is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\tilde{F}^{\natural} = -\vec F$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = -\overline{\vec F}$, the global minus being the one that every real vector carries under ${}^{*}$. For the biquaternion norm of the complex-conjugate field,
 
 $$
 \langle\tilde{F}^*\rangle_{\natural} = \langle\tilde{F}\rangle_{\natural}^*,
@@ -372,7 +372,7 @@ $$
 \vec N^* \mapsto \exp(+i\theta)\,\vec N^*,
 $$
 
-as one checks by expanding $\exp(-i\theta)(\vec E + ic\vec B)$. The object that transforms with $\exp(+i\theta)$ is the complex conjugate $\vec N^* = \vec E - ic\vec B$, not the quaternion conjugate $\bar{\vec N}$, which for a pure vector is $\bar{\vec N} = -\vec N$ and therefore transforms with $\exp(-i\theta)$. The special case $\theta = \pi/2$,
+as one checks by expanding $\exp(-i\theta)(\vec E + ic\vec B)$. The object that transforms with $\exp(+i\theta)$ is the complex conjugate $\vec N^* = \vec E - ic\vec B$, not the quaternion conjugate $\vec N^{\natural}$, which for a pure vector is $\vec N^{\natural} = -\vec N$ and therefore transforms with $\exp(-i\theta)$; the two symbols are distinct, ${}^{*}$ conjugating the coefficients of the complex vector and ${}^{\natural}$ negating it. The special case $\theta = \pi/2$,
 
 $$
 \vec E \mapsto c\,\vec B,
@@ -542,7 +542,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

@@ -9,7 +9,7 @@ $$
 =\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
 $$
 
-the **symmetric quaternionic sesquilinear product**, abbreviated $\mathrm{sqs}$. Its scalar part is the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ of the corpus and its vector part is the mixed term alone: the cross product $\vec Q_1\times\overline{\vec Q_2}$ that separates the two orders cancels in the half-sum, so the two parts of the value, scalar and vector, sit side by side in one element and neither annihilates the other. What distinguishes the block is the shape of this value: of the four symmetric parts the quaternionic bilinear one, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, and the plain sesquilinear one, whose diagonal is the positive Hermitian form times $e_t$, have central diagonals, while $\mathrm{spa}$, whose diagonal is the plain square and is $2\vec e_x$ at $e_t+\vec e_x$, and $\mathrm{sqs}$ keep a vector part; the block is the one whose scalar part is the form $\langle\cdot,\cdot\rangle_{\natural*}$ and whose vector part is the mixed term alone.
+the **symmetric quaternionic sesquilinear product**, abbreviated $\tilde Q_1\bullet_{\natural*}\tilde Q_2$. Its scalar part is the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ of the corpus and its vector part is the mixed term alone: the cross product $\vec Q_1\times\overline{\vec Q_2}$ that separates the two orders cancels in the half-sum, so the two parts of the value, scalar and vector, sit side by side in one element and neither annihilates the other. What distinguishes the block is the shape of this value: of the four symmetric parts the quaternionic bilinear one, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, and the plain sesquilinear one, whose diagonal is the positive Hermitian form times $e_t$, have central diagonals, while $\tilde Q_1\bullet\tilde Q_2$, whose diagonal is the plain square and is $2\vec e_x$ at $e_t+\vec e_x$, and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ keep a vector part; the block is the one whose scalar part is the form $\langle\cdot,\cdot\rangle_{\natural*}$ and whose vector part is the mixed term alone.
 
 The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; and the two halves of the split, with the antisymmetric part $\vec Q_1\times\overline{\vec Q_2}$, are *Symmetric and Antisymmetric Decomposition of the Four General Products*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
 
@@ -68,12 +68,12 @@ $$
 \qquad
 \tilde Q_2^{*}\tilde Q_1^{\natural}=(\tilde Q_1\overline{\tilde Q_2})^{\natural},
 \qquad
-\tilde Q_1\star\tilde Q_2=\bigl[\mathrm{spa}(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural},
+\tilde Q_1\star\tilde Q_2=\bigl[\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural},
 $$
 
-where $\mathrm{spa}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product.
+where $\tilde Q_1\bullet\tilde Q_2(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product.
 
-*Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q_2}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}(\overline{\tilde Q_2})^{\natural}=\tilde Q_1^{\natural}\tilde Q_2^{*}$, since $(\overline{\tilde Q_2})^{\natural}=\tilde Q_2^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde Q_1\star\tilde Q_2=\bigl[\tfrac12(\overline{\tilde Q_2}\tilde Q_1+\tilde Q_1\overline{\tilde Q_2})\bigr]^{\natural}=\bigl[\mathrm{spa}(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural}$.
+*Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q_2}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}(\overline{\tilde Q_2})^{\natural}=\tilde Q_1^{\natural}\tilde Q_2^{*}$, since $(\overline{\tilde Q_2})^{\natural}=\tilde Q_2^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde Q_1\star\tilde Q_2=\bigl[\tfrac12(\overline{\tilde Q_2}\tilde Q_1+\tilde Q_1\overline{\tilde Q_2})\bigr]^{\natural}=\bigl[\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_2},\tilde Q_1)\bigr]^{\natural}$.
 
 **Remark (the orders are not conjugate to each other).** The second order $\tilde Q_2^{*}\tilde Q_1^{\natural}$ is not $\overline{\tilde Q_1^{\natural}\tilde Q_2^{*}}$; the two differ by the cross product, $(\tilde Q_1^{\natural}\tilde Q_2^{*})-(\tilde Q_2^{*}\tilde Q_1^{\natural})=2\,\vec Q_1\times\overline{\vec Q_2}$, so the cross-product cancellation in the half-sum is not a conjugation but a genuine cancellation of two independent orders.
 
@@ -138,7 +138,7 @@ so the block is the sum of the polarisation of its square and the half-differenc
 
 *Proof.* Expand the square by additivity: $(\tilde Q_1+\tilde Q_2)\star(\tilde Q_1+\tilde Q_2)=\tilde Q_1\star\tilde Q_1+\tilde Q_1\star\tilde Q_2+\tilde Q_2\star\tilde Q_1+\tilde Q_2\star\tilde Q_2$. The first summand of the display is therefore $\tfrac12(\tilde Q_1\star\tilde Q_2+\tilde Q_2\star\tilde Q_1)$, and adding the half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$ recovers $\tilde Q_1\star\tilde Q_2$. Since $\tilde Q_2\star\tilde Q_1=\overline{\tilde Q_1\star\tilde Q_2}$ by conjugate-commutativity, the two parts are $\tfrac12(\tilde Q_1\star\tilde Q_2+\overline{\tilde Q_1\star\tilde Q_2})$ and $\tfrac12(\tilde Q_1\star\tilde Q_2-\overline{\tilde Q_1\star\tilde Q_2})$, the conjugate-even and conjugate-odd parts.
 
-**Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs}$ one reads $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\star\tilde Q_2+\vec Q_1\times\overline{\vec Q_2}$, the cross product $\vec Q_1\times\overline{\vec Q_2}$ being the product of Block 8 of the batch, and that reconstruction is the one of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+**Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2$ one reads $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\star\tilde Q_2+\vec Q_1\times\overline{\vec Q_2}$, the cross product $\vec Q_1\times\overline{\vec Q_2}$ being the product of Block 8 of the batch, and that reconstruction is the one of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Form and the Product
 
@@ -159,15 +159,15 @@ $$
 Explicitly,
 $$
 \langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}
-=\mathrm{Sc}\bigl(\mathrm{spa}(\overline{\tilde Q_1},\tilde Q_3)\,\mathrm{spa}(\tilde Q_2,\overline{\tilde Q_3})\bigr),
+=\mathrm{Sc}\bigl(\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_1},\tilde Q_3)\,\tilde Q_1\bullet\tilde Q_2(\tilde Q_2,\overline{\tilde Q_3})\bigr),
 $$
 and the defect is this value minus $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$.
 
 *Proof.* The two identities
 $$
-(\tilde Q_3\star\tilde Q_1)^{\natural}=\mathrm{spa}(\overline{\tilde Q_1},\tilde Q_3),
+(\tilde Q_3\star\tilde Q_1)^{\natural}=\tilde Q_1\bullet\tilde Q_2(\overline{\tilde Q_1},\tilde Q_3),
 \qquad
-(\tilde Q_3\star\tilde Q_1)^{*}=\mathrm{spa}(\tilde Q_1,\overline{\tilde Q_3})
+(\tilde Q_3\star\tilde Q_1)^{*}=\tilde Q_1\bullet\tilde Q_2(\tilde Q_1,\overline{\tilde Q_3})
 $$
 follow from the definition of the block and the anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3\star\tilde Q_1)^{\natural}(\tilde Q_3\star\tilde Q_2)^{*}\bigr)$, which is the displayed value. On $\tilde Q_3=\tilde Q_1=e_t+\vec e_x$ and $\tilde Q_2=\vec e_x$ one has $\tilde Q_3\star\tilde Q_1=-2\vec e_x$ and $\tilde Q_3\star\tilde Q_2=-e_t-\vec e_x$, so the value is $-2$ against $\langle e_t+\vec e_x,\vec e_x\rangle_{\natural*}=-1$: the defect is $-1$ and the invariance fails.
 
@@ -190,16 +190,16 @@ The natural conjugation carries the two summands of the first display onto the t
 
 **Remark (the four scalar parts).** The scalar parts of the four symmetric parts are
 $$
-\mathrm{Sc}(\mathrm{spa})=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
+\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 \qquad
-\mathrm{Sc}(\mathrm{sqa})=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
+\mathrm{Sc}(\tilde Q_1\bullet_{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 $$
-\mathrm{Sc}(\mathrm{sps})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{*},
+\mathrm{Sc}(\tilde Q_1\bullet_{*}\tilde Q_2)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{*},
 \qquad
-\mathrm{Sc}(\mathrm{sqs})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
+\mathrm{Sc}(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
 $$
-The first two are bilinear and the last two Hermitian, with opposite signs in the vector term; on a real element the Krein form coincides with the first bilinear form, $\mathrm{spa}$.
+The first two are bilinear and the last two Hermitian, with opposite signs in the vector term; on a real element the Krein form coincides with the first bilinear form, $\tilde Q_1\bullet\tilde Q_2$.
 
 
 ## The Failure of the Jordan Identity
@@ -216,23 +216,23 @@ and they differ by $-2e_t$. The product satisfies no Jordan identity.
 
 *Proof.* $\vec e_x\star \vec e_x=-e_t$ by the table. Then $x^{2}\star x=(-e_t)\star \vec e_x=-e_t^{\natural}\vec e_x^{*}$ composed as the half-sum: $-e_t^{\natural}=-e_t$ and $\vec e_x^{*}=-\vec e_x$, so $(-e_t)\star \vec e_x=\tfrac12\bigl((-e_t)(-\vec e_x)+(-\vec e_x)(-e_t)\bigr)=\vec e_x$; hence $(x^{2}\star x)\star x=\vec e_x\star \vec e_x=-e_t$. The right side is $x^{2}\star(x\star x)=(-e_t)\star(-e_t)=\tfrac12\bigl((-e_t)^{\natural}(-e_t)^{*}+(-e_t)^{*}(-e_t)^{\natural}\bigr)=\tfrac12(e_t+e_t)=e_t$.
 
-**Remark (the shape of the failure).** The failure of the block is a **central shift**: the two sides are $-e_t$ and $e_t$, and their difference $-2e_t$ lies in the centre. The sibling $\mathrm{sps}$ fails on the same witness differently: there one side vanishes and the other is $e_t$, so the failure is an outright vanishing rather than a shift. The two failures are the two ways a symmetric sesquilinear product can miss the Jordan identity, and they are recorded side by side in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+**Remark (the shape of the failure).** The failure of the block is a **central shift**: the two sides are $-e_t$ and $e_t$, and their difference $-2e_t$ lies in the centre. The sibling $\tilde Q_1\bullet_{*}\tilde Q_2$ fails on the same witness differently: there one side vanishes and the other is $e_t$, so the failure is an outright vanishing rather than a shift. The two failures are the two ways a symmetric sesquilinear product can miss the Jordan identity, and they are recorded side by side in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Block among the Twelve
 
-**Theorem (the placement).** The twelve operations of the biquaternion complex space are the four general products and their symmetric and antisymmetric parts. The block $\mathrm{sqs}$ is the symmetric part of the general quaternionic sesquilinear product $\mathrm{gqs}$ under the conjugate transpose, and
+**Theorem (the placement).** The twelve operations of the biquaternion complex space are the four general products and their symmetric and antisymmetric parts. The block $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ is the symmetric part of the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ under the conjugate transpose, and
 
 $$
-\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs},
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2,
 \qquad
-\mathrm{aqs}(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2},
+\tilde Q_1\wedge_{\natural*}\tilde Q_2(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2},
 $$
 
 the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, the first in no subspace of the remarkable subspaces and the second in the vector subspace.
 
-*Proof.* The split is the conjugate-transpose split of $\tilde Q_1^{\natural}\tilde Q_2^{*}$: the exchange of the product is $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$, and the fixed and negated halves are the two displayed operations. The value of $\mathrm{aqs}$ is the cross product by the vector-part computation of §*The Product*, and its image is the vector subspace by definition. The placement is the row $\mathrm{sqs}$ and the row $\mathrm{aqs}$ of the table of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+*Proof.* The split is the conjugate-transpose split of $\tilde Q_1^{\natural}\tilde Q_2^{*}$: the exchange of the product is $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$, and the fixed and negated halves are the two displayed operations. The value of $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ is the cross product by the vector-part computation of §*The Product*, and its image is the vector subspace by definition. The placement is the row $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ and the row $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ of the table of *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
-**Remark.** Together with $\mathrm{spa}$, $\mathrm{sqa}$ and $\mathrm{sps}$ the block is one of the four symmetric parts of the four general products. The two sesquilinear symmetric parts separate the block from the plain sesquilinear one: $\mathrm{sps}$ collapses to the centre, with the central diagonal that is the positive Hermitian form times $e_t$, while $\mathrm{sqs}$ images the whole algebra and has a non-central diagonal. Among the two bilinear symmetric parts $\mathrm{sqa}$ collapses to the centre too, while $\mathrm{spa}$ shares with the block the whole-algebra image and the non-central square, the plain square of $e_t+\vec e_x$ being $2\vec e_x$; the block is singled out by its value, the form $\langle\cdot,\cdot\rangle_{\natural*}$ in the scalar part and the mixed term alone in the vector part, the cross product having cancelled. The value of a general pair generates the whole algebra, a fact read in *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra*; the diagonal and the idempotents are read in *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
+**Remark.** Together with $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$ and $\tilde Q_1\bullet_{*}\tilde Q_2$ the block is one of the four symmetric parts of the four general products. The two sesquilinear symmetric parts separate the block from the plain sesquilinear one: $\tilde Q_1\bullet_{*}\tilde Q_2$ collapses to the centre, with the central diagonal that is the positive Hermitian form times $e_t$, while $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ images the whole algebra and has a non-central diagonal. Among the two bilinear symmetric parts $\tilde Q_1\bullet_{\natural}\tilde Q_2$ collapses to the centre too, while $\tilde Q_1\bullet\tilde Q_2$ shares with the block the whole-algebra image and the non-central square, the plain square of $e_t+\vec e_x$ being $2\vec e_x$; the block is singled out by its value, the form $\langle\cdot,\cdot\rangle_{\natural*}$ in the scalar part and the mixed term alone in the vector part, the cross product having cancelled. The value of a general pair generates the whole algebra, a fact read in *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra*; the diagonal and the idempotents are read in *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
 ## Worked Examples
 
@@ -250,16 +250,16 @@ the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, 
 
 ## Summary
 
-The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, with scalar part the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_t$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $\vec e_\mu\star \vec e_\mu=-e_t$ and $\vec e_\nu\star \vec e_\lambda=0$ for $\nu \neq \lambda$ among the vector directions. The square is $\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$, while the antisymmetric companion of the general product is the cross product $\vec Q_1\times\overline{\vec Q_2}$. The Jordan identity fails on the witness $x=y=\vec e_x$, with the two sides $-e_t$ and $e_t$: a central shift, where the sibling $\mathrm{sps}$ fails by an outright vanishing. The block is one of the twelve operations of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the only one whose value has the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders. The form is read as a product: its Gram matrix in the coefficient basis is $E=\mathrm{diag}(1,-1,-1,-1)$, its realification has signature $(2,6)$, and the product is not invariant under the block; the norm defect is the value of the form on the two products minus the value on the two factors. The adjoint relation $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ is the compatibility that survives.
+The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, with scalar part the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_t$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $\vec e_\mu\star \vec e_\mu=-e_t$ and $\vec e_\nu\star \vec e_\lambda=0$ for $\nu \neq \lambda$ among the vector directions. The square is $\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1)$, while the antisymmetric companion of the general product is the cross product $\vec Q_1\times\overline{\vec Q_2}$. The Jordan identity fails on the witness $x=y=\vec e_x$, with the two sides $-e_t$ and $e_t$: a central shift, where the sibling $\tilde Q_1\bullet_{*}\tilde Q_2$ fails by an outright vanishing. The block is one of the twelve operations of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and it is the only one whose value has the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders. The form is read as a product: its Gram matrix in the coefficient basis is $E=\mathrm{diag}(1,-1,-1,-1)$, its realification has signature $(2,6)$, and the product is not invariant under the block; the norm defect is the value of the form on the two products minus the value on the two factors. The adjoint relation $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ is the compatibility that survives.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ | the symmetric quaternionic sesquilinear product, the block $\mathrm{sqs}$ |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ | the symmetric quaternionic sesquilinear product, the block $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the scalar part of the value, the Krein form |
 | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ | the vector part of the value, the mixed term |
-| $\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric companion $\mathrm{aqs}$, the cross product |
+| $\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric companion $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the cross product |
 | $\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$ | the diagonal |
 | $e_t\star\tilde Q=\tilde Q^{*}$, $\tilde Q\star e_t=\tilde Q^{\natural}$ | the two one-sided actions of $e_t$; no unit |
 | $E=\mathrm{diag}(1,-1,-1,-1)$ | the Gram matrix of the form in the coefficient basis |

@@ -6,7 +6,7 @@ The symmetric quaternionic sesquilinear product of *Introduction to the Symmetri
 
 This article reads the algebraic norm as an element and not as a number. Its scalar part is the Krein form $\langle\tilde Q,\tilde Q\rangle_{\natural*}$, its vector part is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, and its vanishing is the criterion of centrality. The article then reads the two halves of the algebraic norm, the two orders $\tilde Q^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde Q^{\natural}$, whose sum is twice the algebraic norm and whose difference is twice the antisymmetric companion; it reads the elements of square zero and the idempotents, both families in full; and it reads the absence of a unit and the two one-sided actions that the algebraic norm carries. The reconstruction of the general quaternionic sesquilinear product from its two halves is the introduction's and is not repeated here.
 
-The product itself is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the general quaternionic sesquilinear product and its square are *Introduction to the General Quaternionic Sesqualgebra*; the antisymmetric companion $\mathrm{aqs}$ is Block 8 of the batch and is defined in *Symmetric and Antisymmetric Decomposition of the Four General Products*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and its isotropic elements are *K-Regularity and Degeneracy in the Biquaternion Algebra*; the zero divisors of the algebra are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the norm is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*.
+The product itself is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the general quaternionic sesquilinear product and its square are *Introduction to the General Quaternionic Sesqualgebra*; the antisymmetric companion $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ is Block 8 of the batch and is defined in *Symmetric and Antisymmetric Decomposition of the Four General Products*; the form $\langle\cdot,\cdot\rangle_{\natural*}$ is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and its isotropic elements are *K-Regularity and Degeneracy in the Biquaternion Algebra*; the zero divisors of the algebra are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the norm is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*.
 
 ## The Algebraic Norm as an Element
 
@@ -75,11 +75,11 @@ their sum is $2\,\tilde Q\star\tilde Q$, their difference is $2\vec Q\times\over
 **Worked witness pairs.** The two named pairs separate the halves.
 
 - On $\tilde Q_1=-i\vec e_z$, $\tilde Q_2=-ie_t$: both orders equal $-\vec e_z$, so the difference vanishes and $\tilde Q_1\star\tilde Q_2=-\vec e_z$ is the first half alone.
-- On $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x$: the first order is $-\vec e_z$ and the second is $\vec e_z$, so the sum vanishes and $\tilde Q_1\star\tilde Q_2=0$, while the two orders differ by $-2\vec e_z$, that is twice the antisymmetric companion $\mathrm{aqs}(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2}=-\vec e_z$.
+- On $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x$: the first order is $-\vec e_z$ and the second is $\vec e_z$, so the sum vanishes and $\tilde Q_1\star\tilde Q_2=0$, while the two orders differ by $-2\vec e_z$, that is twice the antisymmetric companion $\tilde Q_1\wedge_{\natural*}\tilde Q_2(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2}=-\vec e_z$.
 
 The two pairs show the two extreme cases of the split: the two orders coincident, and the two orders opposite.
 
-**Remark.** The half-difference is the algebraic norm of Block 8, $\mathrm{aqs}(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2}$; the reconstruction $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\star\tilde Q_2+\vec Q_1\times\overline{\vec Q_2}$ is the introduction's, and here only the case of two equal arguments is read.
+**Remark.** The half-difference is the algebraic norm of Block 8, $\tilde Q_1\wedge_{\natural*}\tilde Q_2(\tilde Q_1,\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2}$; the reconstruction $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\star\tilde Q_2+\vec Q_1\times\overline{\vec Q_2}$ is the introduction's, and here only the case of two equal arguments is read.
 
 ## The Named Classes, Carried by the Algebraic Norm
 

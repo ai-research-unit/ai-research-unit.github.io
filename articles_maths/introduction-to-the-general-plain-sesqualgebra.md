@@ -175,7 +175,7 @@ and they are the fixed and the anti-fixed subspaces of ${}^{*}$; in particular $
 
 The two halves above are the halves of the **involution** ${}^{*}$. The halves of the **exchange** of the two arguments are a second pair, and that exchange comes in two forms.
 
-The **plain exchange** swaps the two arguments, $\tilde Q_1\tilde Q_2^{*}\mapsto\tilde Q_2\tilde Q_1^{*}$, and the proposition above reads it on the value, $\tilde Q_2\tilde Q_1^{*}=(\tilde Q_1\tilde Q_2^{*})^{*}$: its symmetric part is the Hermitian part and its antisymmetric part the skew-Hermitian part of the value, valued in $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$. Those two halves are only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and they are the symmetrised sesquilinear product of *The Sesquilinear Symmetrised Product* and the sesquilinear commutator of *The Sesquilinear Commutator*; they are not the two parts named $\mathrm{sps}$ and $\mathrm{aps}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The **plain exchange** swaps the two arguments, $\tilde Q_1\tilde Q_2^{*}\mapsto\tilde Q_2\tilde Q_1^{*}$, and the proposition above reads it on the value, $\tilde Q_2\tilde Q_1^{*}=(\tilde Q_1\tilde Q_2^{*})^{*}$: its symmetric part is the Hermitian part and its antisymmetric part the skew-Hermitian part of the value, valued in $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$. Those two halves are only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and they are the symmetrised sesquilinear product of *The Sesquilinear Symmetrised Product* and the sesquilinear commutator of *The Sesquilinear Commutator*; they are not the two parts named $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{*}\tilde Q_2$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 The **exchange by the coefficientwise conjugation** $c=\overline{\cdot}$ composes the swap with $c$, $f^{c}(\tilde Q_1,\tilde Q_2)=\overline{f(\tilde Q_2,\tilde Q_1)}$, and it keeps the class: its two parts are sesquilinear over $\mathbb{C}$ again, and they are the scalar part and the vector part of the value,
 
@@ -184,7 +184,7 @@ $$
 \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*}),
 $$
 
-the first central and the second vector-valued. The two readings are the conjugate-symmetric ones of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*, and the biquaternion instance, with the two parts of the other sesqualgebra, is *Symmetric and Antisymmetric Decomposition of the Four General Products*, §*The Exchange Behind the Split*. This reading stays inside the class of this article, and it is the one the twelve names $\mathrm{sps}$ and $\mathrm{aps}$ belong to; the bare reading is the other, and it leaves the class.
+the first central and the second vector-valued. The two readings are the conjugate-symmetric ones of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*, and the biquaternion instance, with the two parts of the other sesqualgebra, is *Symmetric and Antisymmetric Decomposition of the Four General Products*, §*The Exchange Behind the Split*. This reading stays inside the class of this article, and it is the one the twelve names $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{*}\tilde Q_2$ belong to; the bare reading is the other, and it leaves the class.
 
 ### The Ternary Product
 

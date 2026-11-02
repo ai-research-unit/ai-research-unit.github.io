@@ -222,7 +222,7 @@ The symmetric plain product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\til
 | $T(\tilde Q)=2Q_t$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the generic trace and the generic norm |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the Jordan inverse, the algebra inverse |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic cone, the origin and the zero-divisor cone |
-| $\mathrm{gpa}\dots\mathrm{aqs}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\tilde Q_1\tilde Q_2\dots\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 

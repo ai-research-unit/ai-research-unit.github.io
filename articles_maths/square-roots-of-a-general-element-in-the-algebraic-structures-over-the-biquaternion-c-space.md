@@ -10,13 +10,13 @@ $$
 
 and the **root set** of the value is the set of its roots. The value is general here. Three values carry a name, $-1$, $0$ and $+1$, and they are the values of the element theory of the algebra: the spine is the value $+1$, the roots of $+1$ being the elements whose halving $\tfrac12(e_t+\tilde\Xi)$ are the idempotents of the plain product; the roots of $0$ are the square-zero elements, whose non-zero members are the nilpotents of index two; and the roots of $-1$ are deduced from the roots of $+1$ wherever the multiplication by $i$ flips the value of the square. The two readings are *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the companions of this article, which cite the present one for the general value. Here the value stays general, and the question is the one a general value asks: for which $\lambda$ does a root exist, and what is the root set.
 
-**The twelve names.** The space carries twelve products, so the general value poses twelve questions; this article answers them once for all twelve. Each product has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the product of the family, $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one, whose first factor is read through the natural conjugation; the third is the family, $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra, whose second factor carries the Hermitian conjugation. The twelve are read in the four families and the three operations of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+**The twelve names.** The space carries twelve products, so the general value poses twelve questions; this article answers them once for all twelve. Each product is written by its two slots and the conjugation each one carries: the plain family reads the first slot as it stands, the quaternionic one through ${}^{\natural}$, and the sesquilinear class reads the second slot through ${}^{*}$. A symmetric part carries the full dot $\bullet$ and an antisymmetric part the wedge $\wedge$, with the class of the exchange in the subscript. The twelve are the four families and the three operations of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the three operations of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 
 | the operation | the plain algebra | the plain sesqualgebra | the quaternionic algebra | the quaternionic sesqualgebra |
 |---|---|---|---|---|
-| the general | $\mathrm{gpa}$ | $\mathrm{gps}$ | $\mathrm{gqa}$ | $\mathrm{gqs}$ |
-| the symmetric | $\mathrm{spa}$ | $\mathrm{sps}$ | $\mathrm{sqa}$ | $\mathrm{sqs}$ |
-| the antisymmetric | $\mathrm{apa}$ | $\mathrm{aps}$ | $\mathrm{aqa}$ | $\mathrm{aqs}$ |
+| the general | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ |
+| the symmetric | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ |
+| the antisymmetric | $\tilde Q_1\wedge\tilde Q_2$ | $\tilde Q_1\wedge_{*}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ |
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
@@ -98,41 +98,41 @@ and every root of a non-zero central value is a unit of the algebra, while every
 
 So the general value separates the roots the same way the three named values do: a root of a non-zero value lies in the group of units, and a non-zero root of $0$ lies on the zero-divisor cone. For the four general products the relation reads $\mathcal R_{\lambda}\subseteq\mathbb{B}^{\times}$ for $\lambda\neq0$ and $\mathcal R_{0}\setminus\{0\}\subseteq\mathcal{C}$ with $\mathcal{C}=\{C=0\}$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*), and the inverting of a root is governed by the central square. The inverse equations that the roots of a non-zero value satisfy are *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Inverse Equations at One*.
 
-**Remark (the two structures outside the criterion).** The theorem is stated for the four general products. The two symmetric bilinear structures inherit it, their square being the square of their general partner, and the four antisymmetric structures are out of its reach at every non-zero value, their square taking no such value at all. But the two symmetric sesquilinear structures $\mathrm{sps}$ and $\mathrm{sqs}$ lose the rigidity of the square under the symmetrisation, and a root of a non-zero value there may lie on the cone. The element $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ is the witness on both: it is a root of $+1$ in $\mathrm{sps}$, a root of $-1$ in $\mathrm{sqs}$, and it has $C=0$, so it is a zero divisor of the algebra and not a unit.
+**Remark (the two structures outside the criterion).** The theorem is stated for the four general products. The two symmetric bilinear structures inherit it, their square being the square of their general partner, and the four antisymmetric structures are out of its reach at every non-zero value, their square taking no such value at all. But the two symmetric sesquilinear structures $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ lose the rigidity of the square under the symmetrisation, and a root of a non-zero value there may lie on the cone. The element $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ is the witness on both: it is a root of $+1$ in $\tilde Q_1\bullet_{*}\tilde Q_2$, a root of $-1$ in $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, and it has $C=0$, so it is a zero divisor of the algebra and not a unit.
 
 ## The Twelve Structures and the General Value
 
 The square of a structure is its operation read at the two equal arguments, and the equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$ is written in that operation, so each of the twelve carries a root problem of its own. The four general products are read above; the eight derived ones are their symmetrisations and antisymmetrisations, and all twelve are read here, one by one, each quoted from its owner.
 
-### $\mathrm{gpa}$, the general plain algebra
+### $\tilde Q_1\tilde Q_2$, the general plain algebra
 
 The product is $\tilde\Xi\tilde Q$ and its square is the plain square $\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ on the scalar line and $2\Xi_t\vec\Xi$ on the vector line. A root of $\lambda$ exists for **every** $\lambda$, and the root set is the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$, a four-real-parameter family; at $\lambda=0$ the two central roots coincide at the origin and the quadric is the pure null cone. The article is *Square Roots of an Element*.
 
-### $\mathrm{gps}$, the general plain sesqualgebra
+### $\tilde Q_1\tilde Q_2^{*}$, the general plain sesqualgebra
 
 The product is $\tilde\Xi\tilde Q^{*}$ and its square is Hermitian with scalar part the non-negative $H$. A root exists exactly for a real $\lambda\geq0$. The root set is the origin alone at $\lambda=0$, and the family $\{\exp(i\theta)w\}$ of real dimension four at $\lambda>0$, which is the $*$-unitary group $\mathrm{U}(2)$ at $\lambda=1$. The article is *Square Roots of a General Element in the General Plain Sesqualgebra*.
 
-### $\mathrm{gqa}$, the general quaternionic algebra
+### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
 The product is $\tilde\Xi^{\natural}\tilde Q$ and its square is the central element $C(\tilde\Xi)e_t$, so the equation is the single complex equation $C(\tilde\Xi)=\lambda$. A root exists for **every** $\lambda$, and the root set is the level set $\{C=\lambda\}$: the cone $C=0$ of real dimension six at $\lambda=0$, and the nondegenerate quadric of the same real dimension at a non-zero value. The article is *Square Roots of a General Element in the General Quaternionic Algebra*.
 
-### $\mathrm{gqs}$, the general quaternionic sesqualgebra
+### $\tilde Q_1^{\natural}\tilde Q_2^{*}$, the general quaternionic sesqualgebra
 
 The product is $\tilde\Xi^{\natural}\tilde Q^{*}$, and the scalar part of its square is the Krein value, real for every element, so a root exists exactly for a real $\lambda$, and every real value has roots. The root set is the family $\varrho(\vec u+it)$ with $(t^{2}-1)\lvert c\rvert^{2}=\lambda$, of real dimension four, together with the central circle $\lvert a\rvert^{2}=\lambda$ when $\lambda>0$; the three named values are the three ranges of the slope $t$. The article is *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
-### $\mathrm{spa}$, the symmetric plain algebra
+### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$, which is commutative, and its square is the plain square. The root set of every $\lambda$ is therefore the root set of $\mathrm{gpa}$, element for element, and the coincidence is the identity of the two squares (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Coincidence with the General Plain Algebra*).
+The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$, which is commutative, and its square is the plain square. The root set of every $\lambda$ is therefore the root set of $\tilde Q_1\tilde Q_2$, element for element, and the coincidence is the identity of the two squares (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Coincidence with the General Plain Algebra*).
 
-### $\mathrm{sps}$, the symmetric plain sesqualgebra
+### $\tilde Q_1\bullet_{*}\tilde Q_2$, the symmetric plain sesqualgebra
 
 The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q^{*}+\tilde Q\tilde\Xi^{*})$, and its square keeps only the scalar part of the Hermitian square, so the equation is the single real equation $\langle\tilde\Xi\rangle_{*}=\lambda$. A root exists exactly for a real $\lambda\geq0$; the root set is the origin alone at $\lambda=0$, and the quadric $H=\lambda$ of real dimension seven at $\lambda>0$, the sphere of $\mathbb{C}^{4}$. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{sqa}$, the symmetric quaternionic algebra
+### $\tilde Q_1\bullet_{\natural}\tilde Q_2$, the symmetric quaternionic algebra
 
 The product is the symmetrisation, and its square is the central square. The root set of every $\lambda$ is the same level set $\{C=\lambda\}$, non-empty for every value; at $\lambda=0$ the owner reads the cone without its origin. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{sqs}$, the symmetric quaternionic sesqualgebra
+### $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, the symmetric quaternionic sesqualgebra
 
 The product is the symmetrisation, and its square is the Hermitian part of the unsplit square, a real quaternion, so a root exists exactly for a real $\lambda$ and exists for every one of them: the fibre over a real value is empty for no value. The root set of $\lambda$ is the pure family, present only for $\lambda\leq0$, together with the non-pure family
 
@@ -144,19 +144,19 @@ $$
 
 of real dimension four: at $\lambda<0$ the pure sphere $\lVert\vec\Xi\rVert^{2}=-\lambda$ of real dimension five joins the family, at $\lambda=0$ the family is the nilpotent cone and the pure family shrinks to the origin, and at $\lambda>0$ the family alone remains, with $\lvert\alpha\rvert^{2}\geq\lambda$. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{apa}$, the antisymmetric plain algebra
+### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
 The product is the antisymmetrisation $\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)$, which is alternating, so its square vanishes identically and the equation reads $0=\lambda e_t$. The root of $0$ is every element of the space, and no other value has a root. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{aps}$, the antisymmetric plain sesqualgebra
+### $\tilde Q_1\wedge_{*}\tilde Q_2$, the antisymmetric plain sesqualgebra
 
 The product is the antisymmetrisation, whose square is the pure part of the Hermitian square, of vanishing scalar part, so no non-zero central value is ever reached. The only central value with a root is $0$, and its root set is the square-zero cone of real dimension five, containing the origin and the non-zero nilpotents of the block. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{aqa}$, the antisymmetric quaternionic algebra
+### $\tilde Q_1\wedge_{\natural}\tilde Q_2$, the antisymmetric quaternionic algebra
 
 The product is the antisymmetrisation, its square vanishes identically, and the equation reads $0=\lambda e_t$. The root of $0$ is every element of the space, and no other value has a root: each non-zero element is a square-zero element, a zero divisor of the block and its own annihilating partner. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{aqs}$, the antisymmetric quaternionic sesqualgebra
+### $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the antisymmetric quaternionic sesqualgebra
 
 The product is the antisymmetrisation, whose square takes its values in the real three-dimensional subspace $i\mathbb{R}^{3}$, so its intersection with the central line is the origin and no non-zero central value is ever reached. The only central value with a root is $0$, and its root set is the cone of the diagonal, of real dimension six: the elements whose vector part is a complex multiple of a real direction, lifted by a free complex scalar. The article is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -170,18 +170,18 @@ The twelve root sets of the central value $\lambda e_t$ are collected below. The
 
 | the structure | the square | $\lambda\notin\mathbb{R}$ | $\lambda<0$ | $\lambda=0$ | $\lambda>0$ |
 |---|---|---|---|---|---|
-| $\mathrm{gpa}$ | $\tilde\Xi^{2}$ | $\pm\sqrt\lambda\,e_t$ and the quadric $(\vec\Xi,\vec\Xi)=-\lambda$ | the same pair and the same quadric | the origin and the pure null cone, real dimension $4$ | the same pair and the same quadric |
-| $\mathrm{gps}$ | $\tilde\Xi\tilde\Xi^{*}$ | none | none | the origin alone | the family $\exp(i\theta)w$, real dimension $4$, the group $\mathrm{U}(2)$ at $\lambda=1$ |
-| $\mathrm{gqa}$ | $C(\tilde\Xi)e_t$ | the quadric $C=\lambda$, real dimension $6$ | the same quadric | the cone $C=0$, real dimension $6$ | the same quadric |
-| $\mathrm{gqs}$ | the Krein value | none | the family $\varrho(\vec u+it)$ at the slopes $\lvert t\rvert<1$, real dimension $4$ | the same family at the slopes $\lvert t\rvert=1$ | the same family at the slopes $\lvert t\rvert>1$ and the central circle, real dimension $4$ |
-| $\mathrm{spa}$ | $\tilde\Xi^{2}$ | the same as $\mathrm{gpa}$ | the same | the same | the same |
-| $\mathrm{sps}$ | $\langle\tilde\Xi\rangle_{*}e_t$ | none | none | the origin alone | the quadric $H=\lambda$, real dimension $7$ |
-| $\mathrm{sqa}$ | $C(\tilde\Xi)e_t$ | the same as $\mathrm{gqa}$ | the same | the same | the same |
-| $\mathrm{sqs}$ | the Hermitian part | none | the pure sphere and the family $\mathcal R_\lambda$, real dimension $4$ | the nilpotent cone, real dimension $4$ | the family $\mathcal R_\lambda$ with $\lvert\alpha\rvert^{2}\geq\lambda$, real dimension $4$ |
-| $\mathrm{apa}$ | $0$ | none | none | the whole space | none |
-| $\mathrm{aps}$ | the pure part | none | none | the square-zero cone, real dimension $5$ | none |
-| $\mathrm{aqa}$ | $0$ | none | none | the whole space | none |
-| $\mathrm{aqs}$ | the pure part | none | none | the cone of the diagonal, real dimension $6$ | none |
+| $\tilde Q_1\tilde Q_2$ | $\tilde\Xi^{2}$ | $\pm\sqrt\lambda\,e_t$ and the quadric $(\vec\Xi,\vec\Xi)=-\lambda$ | the same pair and the same quadric | the origin and the pure null cone, real dimension $4$ | the same pair and the same quadric |
+| $\tilde Q_1\tilde Q_2^{*}$ | $\tilde\Xi\tilde\Xi^{*}$ | none | none | the origin alone | the family $\exp(i\theta)w$, real dimension $4$, the group $\mathrm{U}(2)$ at $\lambda=1$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $C(\tilde\Xi)e_t$ | the quadric $C=\lambda$, real dimension $6$ | the same quadric | the cone $C=0$, real dimension $6$ | the same quadric |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the Krein value | none | the family $\varrho(\vec u+it)$ at the slopes $\lvert t\rvert<1$, real dimension $4$ | the same family at the slopes $\lvert t\rvert=1$ | the same family at the slopes $\lvert t\rvert>1$ and the central circle, real dimension $4$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\Xi^{2}$ | the same as $\tilde Q_1\tilde Q_2$ | the same | the same | the same |
+| $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\langle\tilde\Xi\rangle_{*}e_t$ | none | none | the origin alone | the quadric $H=\lambda$, real dimension $7$ |
+| $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $C(\tilde\Xi)e_t$ | the same as $\tilde Q_1^{\natural}\tilde Q_2$ | the same | the same | the same |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the Hermitian part | none | the pure sphere and the family $\mathcal R_\lambda$, real dimension $4$ | the nilpotent cone, real dimension $4$ | the family $\mathcal R_\lambda$ with $\lvert\alpha\rvert^{2}\geq\lambda$, real dimension $4$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | $0$ | none | none | the whole space | none |
+| $\tilde Q_1\wedge_{*}\tilde Q_2$ | the pure part | none | none | the square-zero cone, real dimension $5$ | none |
+| $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $0$ | none | none | the whole space | none |
+| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the pure part | none | none | the cone of the diagonal, real dimension $6$ | none |
 
 **Theorem (a root of $0$ exists for all twelve; quoted).** A root of $0$ exists for every one of the twelve structures, and it is the only central value with a root for the four antisymmetric structures. The root sets of the remaining values are governed by the table: the four bilateral structures read every central value, the two indefinite sesquilinear structures read every real value, and the two definite sesquilinear structures read the non-negative real values alone.
 
@@ -195,22 +195,22 @@ The twelve root sets of the central value $\lambda e_t$ are collected below. The
 
 | the product | a root exists for | the root set of $\lambda$ |
 |---|---|---|
-| $\mathrm{gpa}$, $\tilde\Xi\tilde Q$ | every $\lambda$ | the pair $\pm\sqrt\lambda\,e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$ |
-| $\mathrm{gps}$, $\tilde\Xi\tilde Q^{*}$ | every real $\lambda\geq0$ | the origin alone at $0$, the family $\exp(i\theta)w$ at $\lambda>0$ |
-| $\mathrm{gqa}$, $\tilde\Xi^{\natural}\tilde Q$ | every $\lambda$ | the level set $C(\tilde\Xi)=\lambda$ |
-| $\mathrm{gqs}$, $\tilde\Xi^{\natural}\tilde Q^{*}$ | every real $\lambda$ | the family $\varrho(\vec u+it)$, and the central circle at $\lambda>0$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde\Xi\tilde Q$ | every $\lambda$ | the pair $\pm\sqrt\lambda\,e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$ |
+| $\tilde Q_1\tilde Q_2^{*}$, $\tilde\Xi\tilde Q^{*}$ | every real $\lambda\geq0$ | the origin alone at $0$, the family $\exp(i\theta)w$ at $\lambda>0$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde\Xi^{\natural}\tilde Q$ | every $\lambda$ | the level set $C(\tilde\Xi)=\lambda$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde\Xi^{\natural}\tilde Q^{*}$ | every real $\lambda$ | the family $\varrho(\vec u+it)$, and the central circle at $\lambda>0$ |
 
 ### The Four Existence Classes
 
 The existence of a root separates the twelve structures into four classes, and the classes are read in the table of §*The Twelve Root Sets at a General Value*.
 
-**Theorem (the four existence classes).** Among the twelve structures of the biquaternion complex space the central-value root problem has a root of every $\lambda$ for the four **bilateral** structures $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{spa}$, $\mathrm{sqa}$; of every real $\lambda$ and of no other for the two **indefinite sesquilinear** structures $\mathrm{gqs}$, $\mathrm{sqs}$; of every real $\lambda\geq0$ and of no other for the two **definite sesquilinear** structures $\mathrm{gps}$, $\mathrm{sps}$; and of $\lambda=0$ alone for the four **antisymmetric** structures $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$.
+**Theorem (the four existence classes).** Among the twelve structures of the biquaternion complex space the central-value root problem has a root of every $\lambda$ for the four **bilateral** structures $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$; of every real $\lambda$ and of no other for the two **indefinite sesquilinear** structures $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; of every real $\lambda\geq0$ and of no other for the two **definite sesquilinear** structures $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$; and of $\lambda=0$ alone for the four **antisymmetric** structures $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
 
-*Proof.* The element $\sqrt{-\lambda}\,\vec e_x$ has plain square $\lambda e_t$ for every complex $\lambda$, and the element $\sqrt\lambda\,e_t$ has central square $\lambda$, so the plain square and the central square have a root of every $\lambda$; the symmetric plain square is the plain square and the symmetric quaternionic square the central square, so $\mathrm{spa}$ and $\mathrm{sqa}$ read the first class. The two sesquilinear squares have scalar part $H$ (the second product) or $\Delta$ (the fourth), real or non-negative respectively, so the fourth reads the real values and the second the non-negative ones alone; the symmetric sesquilinear squares keep the scalar part and the same class, so $\mathrm{gqs}$, $\mathrm{sqs}$ read the real values and $\mathrm{gps}$, $\mathrm{sps}$ the non-negative ones. On the antisymmetric structures the square of the sesquilinear pair is a pure element, of vanishing scalar part, and the square of the bilinear pair vanishes identically, so $\lambda=0$ is the only central value that can be read.
+*Proof.* The element $\sqrt{-\lambda}\,\vec e_x$ has plain square $\lambda e_t$ for every complex $\lambda$, and the element $\sqrt\lambda\,e_t$ has central square $\lambda$, so the plain square and the central square have a root of every $\lambda$; the symmetric plain square is the plain square and the symmetric quaternionic square the central square, so $\tilde Q_1\bullet\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$ read the first class. The two sesquilinear squares have scalar part $H$ (the second product) or $\Delta$ (the fourth), real or non-negative respectively, so the fourth reads the real values and the second the non-negative ones alone; the symmetric sesquilinear squares keep the scalar part and the same class, so $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ read the real values and $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$ the non-negative ones. On the antisymmetric structures the square of the sesquilinear pair is a pure element, of vanishing scalar part, and the square of the bilinear pair vanishes identically, so $\lambda=0$ is the only central value that can be read.
 
 The classification separates the twelve as nothing else in the group does: the bilateral structures answer like the general algebra, the indefinite sesquilinear structures refuse exactly the non-real values, the definite sesquilinear structures refuse the non-real values and the negative reals — they are the only structures of the twelve that refuse a real value — and the antisymmetric structures answer for $0$ alone, with the whole space as the root of $0$ for the bilinear pair and a proper subcone of it for the sesquilinear pair.
 
-**Remark (a sibling that keeps the scalar part).** Each sesquilinear structure has a symmetric sibling, $\mathrm{sps}$ of $\mathrm{gps}$ and $\mathrm{sqs}$ of $\mathrm{gqs}$, and the sibling keeps the scalar part of the square. The existence class is the same for the two, but the root sets are not: for $\mathrm{gps}$ the root of a positive $\lambda$ is the family $\tilde\Xi\tilde\Xi^{*}=\lambda e_t$ of real dimension four, while for $\mathrm{sps}$ it is the sphere $H=\lambda$ of real dimension seven. The symmetrisation forgets the vector part of the square, and the forgetting costs the equation its rigidity: the root set grows from a group to a sphere.
+**Remark (a sibling that keeps the scalar part).** Each sesquilinear structure has a symmetric sibling, $\tilde Q_1\bullet_{*}\tilde Q_2$ of $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ of $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and the sibling keeps the scalar part of the square. The existence class is the same for the two, but the root sets are not: for $\tilde Q_1\tilde Q_2^{*}$ the root of a positive $\lambda$ is the family $\tilde\Xi\tilde\Xi^{*}=\lambda e_t$ of real dimension four, while for $\tilde Q_1\bullet_{*}\tilde Q_2$ it is the sphere $H=\lambda$ of real dimension seven. The symmetrisation forgets the vector part of the square, and the forgetting costs the equation its rigidity: the root set grows from a group to a sphere.
 
 ### The Value in Coordinates and the Roots of Zero
 
@@ -227,14 +227,14 @@ The value $0$ is the row $\lambda=0$ of each equation, and it is the value every
 
 | the structure | the roots of $0$ | real dimension |
 |---|---|---|
-| $\mathrm{gpa}$, $\mathrm{spa}$ | the origin and the pure null cone $(\vec\Xi,\vec\Xi)=0$ | $4$ |
-| $\mathrm{gps}$, $\mathrm{sps}$ | the origin alone | $0$ |
-| $\mathrm{gqa}$, $\mathrm{sqa}$ | the cone $C=0$ | $6$ |
-| $\mathrm{gqs}$ | the family $\varrho(\vec u\pm i)$ | $4$ |
-| $\mathrm{sqs}$ | the nilpotent cone $\alpha(e_t+\tilde\Xi)$ | $4$ |
-| $\mathrm{aps}$ | the square-zero cone | $5$ |
-| $\mathrm{aqs}$ | the cone of the diagonal | $6$ |
-| $\mathrm{apa}$, $\mathrm{aqa}$ | the whole space | $8$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$ | the origin and the pure null cone $(\vec\Xi,\vec\Xi)=0$ | $4$ |
+| $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$ | the origin alone | $0$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | the cone $C=0$ | $6$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the family $\varrho(\vec u\pm i)$ | $4$ |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the nilpotent cone $\alpha(e_t+\tilde\Xi)$ | $4$ |
+| $\tilde Q_1\wedge_{*}\tilde Q_2$ | the square-zero cone | $5$ |
+| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the cone of the diagonal | $6$ |
+| $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | the whole space | $8$ |
 
 The two antisymmetric bilinear structures reach the value $0$ by vanishing, and their root of $0$ is the space itself; the two antisymmetric sesquilinear structures reach it on a proper subcone, because their square keeps the pure part of the Hermitian square; and the two definite sesquilinear structures reach it at the origin alone, because their scalar part $H$ vanishes only there. The six remaining structures carry the cone of their square.
 
@@ -271,7 +271,7 @@ The plain product has a root of every central value, its root set being the two 
 
 For all four general products the central square of a square is $C(\tilde\Xi)^{2}$ or $\lvert C(\tilde\Xi)\rvert^{2}$, so a root of a non-zero central value is a unit and a non-zero root of $0$ is a zero divisor; the two symmetric sesquilinear structures are the exception, and the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ is a root of a non-zero value with $C=0$ there.
 
-Read among the twelve structures the existence question has four answers and no more: a root of every central value for the four bilateral structures $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{spa}$, $\mathrm{sqa}$; a root of every real value for the two indefinite sesquilinear structures $\mathrm{gqs}$, $\mathrm{sqs}$; a root of every non-negative real value, and of no negative one, for the two definite sesquilinear structures $\mathrm{gps}$, $\mathrm{sps}$; and a root of $0$ alone for the four antisymmetric structures. A root of $0$ exists for every one of the twelve, and it is the cone of the square, the whole space where the square vanishes and the origin alone where the square is definite. The symmetrisation keeps the existence class of its general partner and loses the rigidity of the root set, and the scaling carries the root set of one value to the root set of another in the bilateral structures, leaving the cone of $0$ in place.
+Read among the twelve structures the existence question has four answers and no more: a root of every central value for the four bilateral structures $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$; a root of every real value for the two indefinite sesquilinear structures $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; a root of every non-negative real value, and of no negative one, for the two definite sesquilinear structures $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$; and a root of $0$ alone for the four antisymmetric structures. A root of $0$ exists for every one of the twelve, and it is the cone of the square, the whole space where the square vanishes and the origin alone where the square is definite. The symmetrisation keeps the existence class of its general partner and loses the rigidity of the root set, and the scaling carries the root set of one value to the root set of another in the bilateral structures, leaving the cone of $0$ in place.
 
 ## Summary of Notation
 
@@ -282,7 +282,7 @@ Read among the twelve structures the existence question has four answers and no 
 | $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi$ | the central square; $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, written $N$ by some owners |
 | $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the second product's square |
 | $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$ | the Krein value, the scalar part of the fourth product's square |
-| $\mathrm{gpa},\dots,\mathrm{aqs}$ | the twelve structures of the space, the four families of three |
+| $\tilde Q_1\tilde Q_2,\dots,\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures of the space, the four families of three |
 | $\mathcal R_\lambda$ | the root set of the central value $\lambda e_t$ |
 
 ## Further Reading

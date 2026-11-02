@@ -203,7 +203,7 @@ The four names are not attached to four unrelated structures. They are attached 
 
 **The four readings are one group.** The two insertions are commuting involutions, so the four settings are the four elements of $\mathbb{Z}_2\times\mathbb{Z}_2$. The grid is not a list of four constructions but one construction with two dials. The four products are the four elements of the group read on one rule, and the four jobs are the four readings of that group.
 
-**The collapse on the real part, and the ten-to-twelve distinction.** For real elements the coefficientwise conjugation is the identity, so $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural}$: the four forms become two. On the realification the twelve products become ten, the pairs $\mathrm{sps}=\mathrm{sqa}$ and $\mathrm{apa}=\mathrm{aqs}$ having collapsed, and the complex witness of the Jacobi failure of $\mathrm{aqs}$ disappears. The count of twelve is the count over $\mathbb{C}$. A real implementation must use the complex space, or must remember which of its ten operations stands for two. The difference of count is the algebraic size of the complex structure the grid carries, and it is a count of operations, not a measure of a physical complexification.
+**The collapse on the real part, and the ten-to-twelve distinction.** For real elements the coefficientwise conjugation is the identity, so $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural}$: the four forms become two. On the realification the twelve products become ten, the pairs $\tilde Q_1\bullet_{*}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2$ and $\tilde Q_1\wedge\tilde Q_2=\tilde Q_1\wedge_{\natural*}\tilde Q_2$ having collapsed, and the complex witness of the Jacobi failure of $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ disappears. The count of twelve is the count over $\mathbb{C}$. A real implementation must use the complex space, or must remember which of its ten operations stands for two. The difference of count is the algebraic size of the complex structure the grid carries, and it is a count of operations, not a measure of a physical complexification.
 
 ## Limits
 
@@ -243,7 +243,7 @@ The physical identification of the material sector with spacetime and of the inf
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic algebraic norm, the interval on $\mathbb{M}_-$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ | the material coordinate |
-| $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{apa}$, $\mathrm{aqs}$ | the symmetric plain sesquilinear, symmetric quaternionic bilinear, antisymmetric plain bilinear and antisymmetric quaternionic sesquilinear products |
+| $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the symmetric plain sesquilinear, symmetric quaternionic bilinear, antisymmetric plain bilinear and antisymmetric quaternionic sesquilinear products |
 
 ## Further Reading
 

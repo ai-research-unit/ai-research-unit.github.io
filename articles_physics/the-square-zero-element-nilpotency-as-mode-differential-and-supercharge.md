@@ -210,10 +210,10 @@ This is a genuine $\mathbb{Z}/2$ grading of $\mathbb{B}$ as an associative algeb
 $$
 u:\ \psi\mapsto i\,e_t\psi\,e_x,\qquad
 \Gamma:\ \psi\mapsto-i\,e_t\psi\,e_z,\qquad
-\Gamma^2=1 .
+\Gamma^2=e_t .
 $$
 
-Both are two-sided: $u=iL_tR_x$ and $\Gamma=-iL_tR_z$, so neither is a single left multiplication $L_a$. Both are single pure tensors, hence single two-sided operators and not sums, and the choice of $u$ is a frame choice, not a change of the algebra.
+Both are two-sided: $u=iL_{e_t}R_{\vec e_x}$ and $\Gamma=-iL_{e_t}R_{\vec e_z}$, so neither is a single left multiplication $L_a$. Both are single pure tensors, hence single two-sided operators and not sums, and the choice of $u$ is a frame choice, not a change of the algebra.
 
 The distinction is not a pedantic one. It is the reason the one-mode algebra can be an algebra of fermionic modes while every one of its elements is a bosonic (Clifford-even) element of the ambient algebra. The mode's fermionic character is carried by the inner automorphism, not by the degree. The differential below and the supercharge's odd extension are the cases in which the fermionic character must be carried by an outer grading instead.
 
@@ -303,8 +303,12 @@ is the off-diagonal term that the superalgebra reads as the superpotential. In b
 $$
 \mathcal{D}=\begin{pmatrix}0&\tilde\nabla^{\natural}\\ \tilde\nabla&0\end{pmatrix},
 \qquad
+\Psi=(\tilde\Psi_R,\tilde\Psi_L)^{\mathsf T},
+\qquad
 \mathcal{D}^2=\Box\,I .
 $$
+
+The ordering of the pair is the one that makes the two rows the two Dirac equations: the first row is $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ and the second $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$. With the opposite ordering the two blocks exchange places and the equation is the same pair read from the other side.
 
 The free theory has $H_+=H_-=\Box$; a position-dependent mass $m\to W(x)$ splits the partners, and the superpotential is the mass. The 1+1-dimensional reduction reproduces the standard partner potentials $V_\pm=W^2\mp dW/dx$, and the Witten index is the chirality imbalance of the Dirac zero modes.
 
@@ -318,7 +322,7 @@ The supercharge is the case in which the square-zero is paired with the Hamilton
 
 - **The cohomology is the zero-mode space.** For $H$ positive semidefinite and the complex elliptic, $\ker Q=\ker H\oplus\mathrm{im}\,Q$, so $\ker Q/\mathrm{im}\,Q\cong\ker H$. The cohomology is the space of zero modes, and the index is its graded dimension. The supercharge's content is not the whole spectrum but the part of it that the grading protects.
 - **The splitting is by the Hamiltonian.** The mode's anticommutator is the identity and splits the identity into two rungs; the supercharge's anticommutator is $H$, and the splitting is by the spectral projectors of $H$; the zero modes are the corner that survives.
-- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The operator is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(1\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
+- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The operator is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(e_t\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
 
 ## The Label
 
@@ -407,7 +411,7 @@ The label is odd, and the algebra $\mathbb{B}$ is even. The Grassmann algebra ge
 In the semiclassical approximation the leading-order momentum is the phase gradient, the real quaternion
 
 $$
-\nabla S=\sum_\mu\frac{\partial S}{\partial Q_\mu}\vec e_\mu .
+\nabla S=\sum_k\frac{\partial S}{\partial Q_k}\vec e_k ,
 $$
 
 The Hamilton–Jacobi equation fixes its norm to the energy defect,
@@ -631,7 +635,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

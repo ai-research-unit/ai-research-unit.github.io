@@ -312,7 +312,7 @@ G_5G_k+G_kG_5=L_{\vec e_k}R_{e_x}-L_{\vec e_k}R_{e_x}=0 .
 $$
 The product identity is the cell computation
 $$
-G_0G_1G_2G_3=L_{e_t}R_{e_x}L_{e_x}R_{e_y}L_yR_yL_zR_y=-L_{e_t}R_{e_z}=-iG_5 . \qquad\square
+G_0G_1G_2G_3=L_{e_t}R_{e_x}L_{e_x}R_{e_y}L_{\vec e_y}R_{\vec e_y}L_{\vec e_z}R_{\vec e_y}=-L_{e_t}R_{e_z}=-iG_5 . \qquad\square
 $$
 
 **The even part.** The even products of this dictionary generate the **complexified** even Clifford algebra

@@ -32,7 +32,7 @@ $$
 \tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr).
 $$
 
-The **antisymmetric plain algebra** of the biquaternions is the operation $\wedge$ on $\mathbb{B}$, and it is the block denoted $\mathrm{apa}$ in the table of the twelve.
+The **antisymmetric plain algebra** of the biquaternions is the operation $\wedge$ on $\mathbb{B}$, and it is the block denoted $\tilde Q_1\wedge\tilde Q_2$ in the table of the twelve.
 
 **Proposition (the cross product of the vector parts).** For all $\tilde Q_1,\tilde Q_2$,
 
@@ -99,13 +99,13 @@ with the two cyclic analogues. The six terms cancel in pairs, since $\vec Q_2(\v
 **Theorem (the only Lie product of the twelve).** Of the twelve operations $f_{+},f_{-}$ of the four general products of *Symmetric and Antisymmetric Decomposition of the Four General Products*, the antisymmetric plain algebra is the only one that satisfies the Jacobi identity.
 
 *Proof.* The verification is the table of that article, computed there on the basis. Of the four
-antisymmetric parts, $\mathrm{aqa}$, $\mathrm{aps}$ and $\mathrm{aqs}$ fail the identity, with the
+antisymmetric parts, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ fail the identity, with the
 witnesses $(e_t,\vec e_x,\vec e_y)$, $(e_t,\vec e_x,\vec e_y)$ and $(\vec e_x,\vec e_x,i\vec e_y)$ and the cyclic sums $-\vec e_z$, $\vec e_z$
-and $-2i\vec e_y$; the witnesses were recomputed here, and the first of them, $\mathrm{aqa}$, is the
-failure nearest to the present block. Of the four symmetric parts, $\mathrm{spa}$ alone satisfies
-the Jordan identity, and all four fail the cyclic sum, $\mathrm{spa}$ giving $3e_t$ at
+and $-2i\vec e_y$; the witnesses were recomputed here, and the first of them, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, is the
+failure nearest to the present block. Of the four symmetric parts, $\tilde Q_1\bullet\tilde Q_2$ alone satisfies
+the Jordan identity, and all four fail the cyclic sum, $\tilde Q_1\bullet\tilde Q_2$ giving $3e_t$ at
 $(e_t,e_t,e_t)$, where its unit sits, and the other three $e_t$ at $(e_t,\vec e_x,\vec e_x)$, so none of them
-is a Lie product. Only $\mathrm{apa}$ remains, and the cyclic sum of the previous theorem shows
+is a Lie product. Only $\tilde Q_1\wedge\tilde Q_2$ remains, and the cyclic sum of the previous theorem shows
 that it passes.
 
 **Remark.** The uniqueness is the reason the present block is the Lie Theory block of the row: the antisymmetric part of the plain product is the one place in the batch where a classical non-associative algebra, a Lie algebra, appears. The other three antisymmetric parts are brackets that fail their defining identity, and their failure is the subject of the corresponding blocks of the batch.
@@ -147,7 +147,7 @@ and the two halves determine one another's complement: the plain product is reco
 
 *Proof.* Adding the two halves gives $\tilde Q_1\tilde Q_2$. The two are the symmetrisation and the antisymmetrisation of the same product, and the uniqueness of the split, *The Symmetric and Antisymmetric Parts of an Algebra Product*, says that no other pair of a symmetric and an antisymmetric operation has the same sum.
 
-**Remark.** The two halves are the spa block and the apa block, and the reconstruction is the statement that the general plain algebra $\mathrm{gpa}$ is the sum $\mathrm{spa}+\mathrm{apa}$ of its two parts, read as operations on the same space.
+**Remark.** The two halves are the spa block and the apa block, and the reconstruction is the statement that the general plain algebra $\tilde Q_1\tilde Q_2$ is the sum $\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2$ of its two parts, read as operations on the same space.
 
 ### What the Square Sees
 
@@ -173,7 +173,7 @@ $$
 
 **A cyclic sum on the units.** For $\tilde Q_1=\vec e_x,\tilde Q_2=\vec e_y,\tilde Q_3=\vec e_z$ the three terms are $(\vec e_x\wedge \vec e_y)\wedge \vec e_z=\vec e_z\wedge \vec e_z=0$, $(\vec e_y\wedge \vec e_z)\wedge \vec e_x=\vec e_x\wedge \vec e_x=0$ and $(\vec e_z\wedge \vec e_x)\wedge \vec e_y=\vec e_y\wedge \vec e_y=0$: the cyclic sum is zero, the basis instance of the Jacobi identity.
 
-**A witness of the neighbouring failure.** For the antisymmetric quaternionic algebra $\mathrm{aqa}$ the same triple $(e_t,\vec e_x,\vec e_y)$ gives the cyclic sum $-\vec e_z$, as recomputed here from its definition $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$. On the pure units $\vec e_x,\vec e_y,\vec e_z$ the two brackets are the negatives of one another, since the natural conjugation reverses each factor and contributes a sign, while on $e_t$ they separate outright: $\mathrm{apa}(e_t,\vec e_x)=0$ and $\mathrm{aqa}(e_t,\vec e_x)=\vec e_x$. It is the scalar direction, invisible to the block and visible to its sibling, that carries the failure.
+**A witness of the neighbouring failure.** For the antisymmetric quaternionic algebra $\tilde Q_1\wedge_{\natural}\tilde Q_2$ the same triple $(e_t,\vec e_x,\vec e_y)$ gives the cyclic sum $-\vec e_z$, as recomputed here from its definition $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$. On the pure units $\vec e_x,\vec e_y,\vec e_z$ the two brackets are the negatives of one another, since the natural conjugation reverses each factor and contributes a sign, while on $e_t$ they separate outright: $\tilde Q_1\wedge\tilde Q_2(e_t,\vec e_x)=0$ and $\tilde Q_1\wedge_{\natural}\tilde Q_2(e_t,\vec e_x)=\vec e_x$. It is the scalar direction, invisible to the block and visible to its sibling, that carries the failure.
 
 ## The Placement of the Block among the Twelve
 
@@ -181,12 +181,12 @@ The twelve operations decompose by product and by half, and the present block is
 
 | product | symmetric half | antisymmetric half |
 |---|---|---|
-| plain $\tilde Q_1\tilde Q_2$ | $\mathrm{spa}$: the Jordan product on $\mathbb{B}$ | $\mathrm{apa}$: the bracket $\vec Q_1\times\vec Q_2$ |
-| quaternionic $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathrm{sqa}$ | $\mathrm{aqa}$, no Jacobi |
-| plain sesquilinear $\tilde Q_1\tilde Q_2^{*}$ | $\mathrm{sps}$ | $\mathrm{aps}$, no Jacobi |
-| quaternionic sesquilinear $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathrm{sqs}$ | $\mathrm{aqs}$, no Jacobi |
+| plain $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\bullet\tilde Q_2$: the Jordan product on $\mathbb{B}$ | $\tilde Q_1\wedge\tilde Q_2$: the bracket $\vec Q_1\times\vec Q_2$ |
+| quaternionic $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural}\tilde Q_2$, no Jacobi |
+| plain sesquilinear $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\tilde Q_1\wedge_{*}\tilde Q_2$, no Jacobi |
+| quaternionic sesquilinear $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, no Jacobi |
 
-**Remark.** The block is the second of the twelve blocks of the batch and it sits immediately after the spa block in the menu. Its own Lie structure is developed in the rest of the block; its relation to the symmetric half is the reconstruction above; and its relation to the other three antisymmetric parts is the table, in which it is the row that passes the identity the other three fail. **The block owns the reading of the plain product as a bracket, and nothing of the general plain product or of its operators, which remain with the $\mathrm{gpa}$ articles.**
+**Remark.** The block is the second of the twelve blocks of the batch and it sits immediately after the spa block in the menu. Its own Lie structure is developed in the rest of the block; its relation to the symmetric half is the reconstruction above; and its relation to the other three antisymmetric parts is the table, in which it is the row that passes the identity the other three fail. **The block owns the reading of the plain product as a bracket, and nothing of the general plain product or of its operators, which remain with the $\tilde Q_1\tilde Q_2$ articles.**
 
 The Lie algebra that the operation makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*: its centre is the centre $\mathbb{C}_{\mathbb{B}}$ of the algebra, its image $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and on the real forms the quaternion subspace carries $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace carries $\mathfrak{u}(2)$. The invariant form of the operation is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *Introduction to the Symmetric Plain Algebra*.
 
@@ -194,18 +194,18 @@ The element theory of the operation is the five articles that follow it along it
 
 ## Summary
 
-The antisymmetric part of the plain product of the biquaternions is the operation $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$, equal to the cross product $\vec Q_1\times\vec Q_2$ of the two vector parts, of scalar part zero, $\mathbb{C}$-bilinear and alternating, with image the vector subspace $\mathrm{Vect}(\mathbb{B})$ and without a unit. It is half the commutator, $[\tilde Q_1,\tilde Q_2]=2(\tilde Q_1\wedge\tilde Q_2)$, and it satisfies the Jacobi identity, with the cyclic sum recomputed as zero on the sixty-four triples of the units; of the twelve operations of the batch it is the only one that does, so it is the only Lie product among them. Its sixteen brackets on the basis have the seven vanishing entries of the identity row and column and, on $\vec e_x,\vec e_y,\vec e_z$, the cross-product table of $\mathbb{C}^3$ and hence of $\mathfrak{sl}(2,\mathbb{C})$. The plain product is reconstructed as $\mathrm{gpa}=\mathrm{spa}+\mathrm{apa}$, and the square map sees only the symmetric half, so the antisymmetric half is recovered from the product only through the commutator.
+The antisymmetric part of the plain product of the biquaternions is the operation $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$, equal to the cross product $\vec Q_1\times\vec Q_2$ of the two vector parts, of scalar part zero, $\mathbb{C}$-bilinear and alternating, with image the vector subspace $\mathrm{Vect}(\mathbb{B})$ and without a unit. It is half the commutator, $[\tilde Q_1,\tilde Q_2]=2(\tilde Q_1\wedge\tilde Q_2)$, and it satisfies the Jacobi identity, with the cyclic sum recomputed as zero on the sixty-four triples of the units; of the twelve operations of the batch it is the only one that does, so it is the only Lie product among them. Its sixteen brackets on the basis have the seven vanishing entries of the identity row and column and, on $\vec e_x,\vec e_y,\vec e_z$, the cross-product table of $\mathbb{C}^3$ and hence of $\mathfrak{sl}(2,\mathbb{C})$. The plain product is reconstructed as $\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2$, and the square map sees only the symmetric half, so the antisymmetric half is recovered from the product only through the commutator.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | the antisymmetric plain algebra, $\mathrm{apa}$, the operation of the block |
+| $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | the antisymmetric plain algebra, $\tilde Q_1\wedge\tilde Q_2$, the operation of the block |
 | $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | its value, the cross product of the vector parts |
 | $\operatorname{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$ | the scalar part of every value vanishes |
 | $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1=2(\tilde Q_1\wedge\tilde Q_2)$ | the commutator of the algebra, twice the operation |
-| $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the symmetric plain algebra, $\mathrm{spa}$, the other half |
-| $\mathrm{gpa}=\mathrm{spa}+\mathrm{apa}$ | the reconstruction of the plain product from its two halves |
+| $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the symmetric plain algebra, $\tilde Q_1\bullet\tilde Q_2$, the other half |
+| $\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2$ | the reconstruction of the plain product from its two halves |
 | $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$ | the image of the operation, the vector subspace |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the algebra, annihilated by the operation |
 | $\vec e_x\wedge \vec e_y=\vec e_z$, $\vec e_y\wedge \vec e_z=\vec e_x$, $\vec e_z\wedge \vec e_x=\vec e_y$ | the three non-trivial brackets of the units |

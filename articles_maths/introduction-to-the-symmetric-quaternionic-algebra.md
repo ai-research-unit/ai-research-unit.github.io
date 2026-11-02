@@ -8,7 +8,7 @@ $$
 \tilde Q_1\star\tilde Q_2 = \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2 + \tilde Q_2^{\natural}\tilde Q_1\bigr).
 $$
 
-The general construction of the splitting is *The Symmetric and Antisymmetric Parts of an Algebra Product*; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\mathrm{sqa}$ among the twelve. The name $\mathrm{sqa}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$.
+The general construction of the splitting is *The Symmetric and Antisymmetric Parts of an Algebra Product*; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\tilde Q_1\bullet_{\natural}\tilde Q_2$ among the twelve. The name $\tilde Q_1\bullet_{\natural}\tilde Q_2$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$.
 
 ## The Operation
 
@@ -30,7 +30,7 @@ $$
 \tilde Q_1^{\natural}\tilde Q_2 = \tilde Q_1\star\tilde Q_2 + \tfrac12[\tilde Q_1,\tilde Q_2]_{\natural},
 $$
 
-and the operation is the multiplication of the structure denoted $\mathrm{sqa}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Both slots are read linearly: the operation is $\mathbb{C}$-bilinear, the class of the parent product, and no conjugation is inserted in either slot of $\star$.
+and the operation is the multiplication of the structure denoted $\tilde Q_1\bullet_{\natural}\tilde Q_2$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Both slots are read linearly: the operation is $\mathbb{C}$-bilinear, the class of the parent product, and no conjugation is inserted in either slot of $\star$.
 
 **Theorem (the value is central and the coefficient is the quaternion form).** For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
@@ -38,7 +38,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{\n
 
 *Proof.* Write $\tilde Q_1^{\natural}\tilde Q_2$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$, vector part $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$. The exchange $\tilde Q_2^{\natural}\tilde Q_1$ has the same scalar part and the vector part $Q_{2t}\vec Q_1-Q_{1t}\vec Q_2-\vec Q_2\times\vec Q_1$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec Q_1\times\vec Q_2=-\vec Q_2\times\vec Q_1$.
 
-The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{sqa}$; its comparison with the other three forms is *The Four General Products and Their Relations over the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\tilde Q_1\bullet_{\natural}\tilde Q_2$; its comparison with the other three forms is *The Four General Products and Their Relations over the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,
 
@@ -46,7 +46,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1,\qquad [\tilde 
 
 *Proof.* Bilinearity is read on the definition, the two slots being linear; commutativity is read on the defining half-sum; centrality is the theorem; and the commutator vanishes because the product is commutative.
 
-**Remark (the value is central although neither summand is).** The two summands $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_2^{\natural}\tilde Q_1$ are exchanged by the natural conjugation, $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\mathrm{sqa}$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
+**Remark (the value is central although neither summand is).** The two summands $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_2^{\natural}\tilde Q_1$ are exchanged by the natural conjugation, $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\tilde Q_1\bullet_{\natural}\tilde Q_2$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
 
 ## The Multiplication Table
 
@@ -85,7 +85,7 @@ $$
 (Ae_t)\star(Be_t)=AB\,e_t .
 $$
 
-The operation carries no Lie structure; the antisymmetric half of the parent carries it instead, and that half is $\mathrm{aqa}$.
+The operation carries no Lie structure; the antisymmetric half of the parent carries it instead, and that half is $\tilde Q_1\wedge_{\natural}\tilde Q_2$.
 
 ### Associativity
 
@@ -184,19 +184,19 @@ $$
 The twelve operations are the four general products and their two parts each; $\star$ is the symmetric part of the general quaternionic product, and its antisymmetric half is the bracket $[\cdot,\cdot]_{\natural}$. The two halves reconstruct the parent,
 
 $$
-\mathrm{gqa}=\mathrm{sqa}+\mathrm{aqa},\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
 \tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\star\tilde Q_2+\tfrac12[\tilde Q_1,\tilde Q_2]_{\natural},
 $$
 
-with $\mathrm{sqa}$ one of the two central operations and $\mathrm{aqa}$ one of the four antisymmetric ones (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+with $\tilde Q_1\bullet_{\natural}\tilde Q_2$ one of the two central operations and $\tilde Q_1\wedge_{\natural}\tilde Q_2$ one of the four antisymmetric ones (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 | the reading | the value | the class |
 |---|---|---|
-| $\mathrm{gqa}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathbb{C}$-bilinear, no unit |
-| $\mathrm{sqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{C}$-bilinear, commutative, central values, no unit |
-| $\mathrm{aqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{C}$-bilinear, alternating, no unit |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathbb{C}$-bilinear, no unit |
+| $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{C}$-bilinear, commutative, central values, no unit |
+| $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{C}$-bilinear, alternating, no unit |
 
-**The two contrasts.** The operation differs from the symmetric part of the **plain** product, which is the Jordan product with the unit $e_t$, which is commutative and not central-valued, and which satisfies the Jordan identity; and it differs from the symmetric part of the **plain sesquilinear** product, which is central-valued like $\mathrm{sqa}$ but conjugate-commutative rather than commutative. On the real elements the two central operations coincide, $\mathrm{sqa}=\mathrm{sps}$, and the catalogue records ten distinct operations on the real part against twelve on the complex space (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The exclusive law that singles $\mathrm{sqa}$ out among the twelve is stated in *The Specificities of the Symmetric Quaternionic Algebra*; the element theory of the block is the subject of the six later Common Theory entries.
+**The two contrasts.** The operation differs from the symmetric part of the **plain** product, which is the Jordan product with the unit $e_t$, which is commutative and not central-valued, and which satisfies the Jordan identity; and it differs from the symmetric part of the **plain sesquilinear** product, which is central-valued like $\tilde Q_1\bullet_{\natural}\tilde Q_2$ but conjugate-commutative rather than commutative. On the real elements the two central operations coincide, $\tilde Q_1\bullet_{\natural}\tilde Q_2=\tilde Q_1\bullet_{*}\tilde Q_2$, and the catalogue records ten distinct operations on the real part against twelve on the complex space (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The exclusive law that singles $\tilde Q_1\bullet_{\natural}\tilde Q_2$ out among the twelve is stated in *The Specificities of the Symmetric Quaternionic Algebra*; the element theory of the block is the subject of the six later Common Theory entries.
 
 **Remark (the name and what it does not claim).** The trailing $\mathrm A$ records that the operation is $\mathbb{C}$-bilinear and not merely sesquilinear, since the general quaternionic product from which it is taken is $\mathbb{C}$-bilinear. The word *symmetric* refers to the symmetry of the two slots, and the word *quaternionic* to the conjugation inserted in the parent product; neither word is a claim about a further structure.
 
@@ -213,18 +213,18 @@ The symmetric part of the general quaternionic product $\tilde Q_1^{\natural}\ti
 | ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the natural, the star and the Hermitian conjugations, all fixing $e_t$ |
 | $i$ | the central scalar imaginary, $i^2=-1$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the parent product |
-| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the symmetric quaternionic multiplication, the operation $\mathrm{sqa}$ |
-| $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$ | the quaternionic bracket, the operation $\mathrm{aqa}$ |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the symmetric quaternionic multiplication, the operation $\tilde Q_1\bullet_{\natural}\tilde Q_2$ |
+| $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$ | the quaternionic bracket, the operation $\tilde Q_1\wedge_{\natural}\tilde Q_2$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the coefficient of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $\langle\cdot,\cdot\rangle_{\natural}$, the norm of the parent product |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the plain product, the image of $\star$ |
-| $\mathrm{gqa},\mathrm{sqa},\mathrm{aqa}$ | the three operations of the quaternionic row of the catalogue |
+| $\tilde Q_1^{\natural}\tilde Q_2,\tilde Q_1\bullet_{\natural}\tilde Q_2,\tilde Q_1\wedge_{\natural}\tilde Q_2$ | the three operations of the quaternionic row of the catalogue |
 
 ## Further Reading
 
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the splitting that produces the operation.
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the parent product and its scalar–vector form.
-- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the row of $\mathrm{sqa}$ in the catalogue.
+- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the row of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ in the catalogue.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the other half of the row.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent, the root and the laws of a product.

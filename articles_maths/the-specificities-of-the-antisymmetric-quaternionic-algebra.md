@@ -219,7 +219,7 @@ no Peirce calculus.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{aqa}$ |
+| $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\tilde Q_1\wedge_{\natural}\tilde Q_2$ |
 | $L_{\tilde Q_4}\tilde Q_1=\tilde Q_4\diamond\tilde Q_1$, $R_{\tilde Q_4}\tilde Q_1=\tilde Q_1\diamond\tilde Q_4$ | the left and the right multiplication of the block |
 | $L_{e_t}=P_{\mathrm{Vect}}$ | the criterion, the unit multiplying as the projection onto the vector subspace |
 | $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}$ | the projector equation; its solutions are $0$ and $e_t$ |
