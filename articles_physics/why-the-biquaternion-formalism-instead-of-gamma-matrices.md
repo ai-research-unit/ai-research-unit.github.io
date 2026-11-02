@@ -219,7 +219,7 @@ The rules that follow from the above are short.
 
 **What it does not cost.** No result is lost. A computation that needs the frame can be turned into the frame at any point, and each article's appendix states how.
 
-**Where the argument is proved.** *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states the frame in full and proves the dictionary. *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators* proves the cone, the length theorem and the product criterion. *Operator Family Conventions* fixes the letters $L$, $R$, $T$, $\Theta$. *The Clifford Layer Is the Cell Layer* states the withdrawal rule and the per-article counts, and *The Square-Zero Element* is the first article written under it.
+**Where the argument is proved.** *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states the frame in full and proves the dictionary. *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators* proves the cone, the length theorem and the product criterion. *Operator Family Conventions* fixes the family marks $L$, $R$, $LR$, $\Theta$. *The Clifford Layer Is the Cell Layer* states the withdrawal rule and the per-article counts, and *The Square-Zero Element* is the first article written under it.
 
 ## Summary
 

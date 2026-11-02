@@ -60,7 +60,7 @@ $$
 $$
 with $S^{(2)}$ the second variation of the classical action. Its response to a Weyl transformation is
 $$
-T_\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
+T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
 and the anomaly is the statement that this is non-zero for a classically Weyl-invariant theory. In the path-integral language the same statement is that the measure $\mathcal{D}\Phi$ is not invariant under the rescaling, or equivalently that the regularised determinant is not; the two languages agree, and both are standard (Capper and Duff 1974; Deser, Duff, and Isham 1976; Duff 1994).
 
@@ -131,7 +131,7 @@ The three levels of the word "metric" are the place where a spurious correction 
 
 **Level 2.** The $ict'$ coordinate metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is the level-1 form read on the material sector with the time coefficient written $ict'$. A Weyl rescaling acts on this interpretation too — the level-2 metric is rescaled along with the level-1 form — but the $ict'$ assignment is unchanged, and no minus sign in the anomaly formula is to be "corrected" on the basis of the level-1 form. The two levels are consistent by construction; the minus comes from $i^2$, not from the anomaly.
 
-**Level 3.** The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ of the five cells $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ and $-iT_{tz}$ is a tool adopted where an article translates into the gamma language, which here is the cell language $T_{\mu\nu}$. It enters the anomaly through the spin factor of a fermionic field's heat kernel — the Dirac operator's $a_{d/2}$ carries the spinor trace — and it does not dictate the framework's conventions. A calculation performed in the gamma-matrix language and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
+**Level 3.** The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ of the five cells $iL_tR_x$, $iL_xR_y$, $iL_yR_y$, $iL_zR_y$ and $-iL_tR_z$ is a tool adopted where an article translates into the gamma language, which here is the cell language $L_{\mu}R_{\nu}$. It enters the anomaly through the spin factor of a fermionic field's heat kernel — the Dirac operator's $a_{d/2}$ carries the spinor trace — and it does not dictate the framework's conventions. A calculation performed in the gamma-matrix language and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
 
 **What the transformation is not.** A Weyl rescaling is not a coordinate transformation (it changes distances without changing coordinates), not the Wick rotation (which is the identification of the material sector with the real-quaternion subspace and which changes the signature rather than the normalisation), and not a Lorentz transformation (which preserves the level-1 form). Keeping these apart is the content of the section.
 
@@ -211,7 +211,7 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 
 The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
 $$
-\boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
+\boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
 proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T_\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T_\mu{}_\mu=aE_4+cW^2+b\Box R$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$, the level-1 biquaternion norm with trace $4$, and the component count four complex and eight real; the two interpretations are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$, verified numerically. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.
 
@@ -258,4 +258,4 @@ $$
 \gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z.
 $$
 
-The metric is carried by the cells: $(iT_{tx})^2=\mathbf 1$ and $(iT_{ky})^2=-\mathbf 1$, and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}L_{a}R_{b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The metric is carried by the cells: $(iL_tR_x)^2=\mathbf 1$ and $(iL_kR_y)^2=-\mathbf 1$, and the same squares read on the other four. The trace of a product is a linear functional on cells, $\operatorname{tr}L_{a}R_{b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so a spinor trace is a product of scalar parts. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

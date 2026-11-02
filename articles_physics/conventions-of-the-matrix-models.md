@@ -136,7 +136,7 @@ and a general element is $\mathsf M_4^{R}(\tilde Q)=Q_tR_{e_t}+Q_xR_{e_x}+Q_yR_{
 **The Pauli form of the two families.** With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
 $$
 L_{e_t}=I_2\otimes I_2,\qquad
-L_k=-i\,I_2\otimes\sigma_k,\qquad
+L_{e_k}=-i\,I_2\otimes\sigma_k,\qquad
 R_{e_t}=L_{e_t},\qquad
 R_{e_x}=-i\,\sigma_1\otimes I_2,\quad
 R_{e_y}=+i\,\sigma_2\otimes I_2,\quad
@@ -151,16 +151,16 @@ $$
 in four families,
 $$
 L_{e_t}R_{e_t}=L_{e_t},\qquad
-L_{e_t}R_k=R_k,\qquad
-L_kR_{e_t}=L_k,\qquad
-L_jR_k ,
+L_{e_t}R_{e_k}=R_{e_k},\qquad
+L_{e_k}R_{e_t}=L_{e_k},\qquad
+L_{e_j}R_{e_k} ,
 $$
-which is the $L\leftrightarrow R$ correspondence of the basis: the mixed cell with left unit $\mu$ and right unit $t$ is the left matrix of $\mu$, the mixed cell with left unit $t$ and right unit $\nu$ is the right matrix of $\nu$, and the purely spatial cells $L_jR_k$ are the only ones that are neither. In the Pauli form,
+which is the $L\leftrightarrow R$ correspondence of the basis: the mixed cell with left unit $\mu$ and right unit $t$ is the left matrix of $\mu$, the mixed cell with left unit $t$ and right unit $\nu$ is the right matrix of $\nu$, and the purely spatial cells $L_{e_j}R_{e_k}$ are the only ones that are neither. In the Pauli form,
 $$
 L_{e_t}R_{e_t}=I_4,\qquad
-L_{e_t}R_k=-i\,\sigma_k^{\mathsf T}\otimes I_2,\qquad
-L_kR_{e_t}=-i\,I_2\otimes\sigma_k,\qquad
-L_jR_k=-\sigma_k^{\mathsf T}\otimes\sigma_j .
+L_{e_t}R_{e_k}=-i\,\sigma_k^{\mathsf T}\otimes I_2,\qquad
+L_{e_k}R_{e_t}=-i\,I_2\otimes\sigma_k,\qquad
+L_{e_j}R_{e_k}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
 $$
 
 The sixteen, with their left and right factors, are
@@ -221,7 +221,7 @@ The determinant is the square of the biquaternion norm and the trace is four tim
 
 ### The Clifford Structure and the Frame
 
-**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by $L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{\sigma}=L_{e_\mu e_\rho}R_{\,e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
+**The Clifford algebra is the two-sided operator algebra.** The sixteen cells $L_{e_\mu}R_{e_\nu}$ are linearly independent (the labels run over the four basis elements of $\mathbb{B}$, not over spacetime), and their complex span is all of $M_4(\mathbb{C})$. They multiply by $L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=L_{e_\mu e_\rho}R_{e_\sigma e_\nu}$, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -368,7 +368,7 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 | $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$ |
-| $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_k=R_k$, $L_kR_{e_t}=L_k$, $L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{e_k}=R_{e_k}$, $L_{e_k}R_{e_t}=L_{e_k}$, $L_{e_j}R_{e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $\mathsf C_0,\dots,\mathsf C_3,\mathsf C_5$ | The five frame cells, $\mathsf C_0=iL_{e_t}R_{e_x}$, $\mathsf C_1=iL_{e_x}R_{e_y}$, $\mathsf C_2=iL_{e_y}R_{e_y}$, $\mathsf C_3=iL_{e_z}R_{e_y}$, $\mathsf C_5=-iL_{e_t}R_{e_z}$ |
 | $\sigma_{\mu\nu}=\tfrac12\mathsf C_\mu\mathsf C_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 
