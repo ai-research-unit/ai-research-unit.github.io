@@ -72,46 +72,46 @@
 <h2 id="introduction-the-cone">Introduction: The Cone</h2>
 <p><strong>The subject.</strong> A left multiplication and a right multiplication can be composed. For a pair of elements $\tilde Q,\tilde P\in\mathbb{B}$, the composite is the map</p>
 <p>$$
-T_{\tilde Q,\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},\qquad T_{\tilde Q,\tilde P}(X)=\tilde Q\,X\,\tilde P ,
+L_{\tilde Q}R_{\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},\qquad L_{\tilde Q}R_{\tilde P}(X)=\tilde Q\,X\,\tilde P ,
 $$</p>
-<p>the <strong>two-sided operator</strong> of the pair. The first subscript is the left multiplier, the second the right multiplier, and the argument is the third slot. The definition is the product of the two one-sided operators, $T_{\tilde Q,\tilde P}=L_{\tilde Q}R_{\tilde P}$, and it contains them at the two boundary cases $\tilde P=e_t$ and $\tilde Q=e_t$.</p>
-<p><strong>The cone.</strong> The assignment $(\tilde Q,\tilde P)\mapsto T_{\tilde Q,\tilde P}$ is bilinear, so the set of two-sided operators is closed under multiplication by complex scalars but not under addition. It is a <strong>cone</strong>, the image of the bilinear map, and its projective image is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$ of the decomposable tensors. The two parameters are eight complex numbers; the cone has complex dimension seven, because the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged.</p>
+<p>the <strong>two-sided operator</strong> of the pair. The first subscript is the left multiplier, the second the right multiplier, and the argument is the third slot. The definition is the product of the two one-sided operators, $L_{\tilde Q}R_{\tilde P}$, and it contains them at the two boundary cases $\tilde P=e_t$ and $\tilde Q=e_t$.</p>
+<p><strong>The cone.</strong> The assignment $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}R_{\tilde P}$ is bilinear, so the set of two-sided operators is closed under multiplication by complex scalars but not under addition. It is a <strong>cone</strong>, the image of the bilinear map, and its projective image is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$ of the decomposable tensors. The two parameters are eight complex numbers; the cone has complex dimension seven, because the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged.</p>
 <p><strong>The basis operators.</strong> The sixteen <strong>basis operators</strong> are</p>
 <p>$$
 e_\mu[\,]e_\nu:\mathbb{B}\longrightarrow\mathbb{B},\qquad e_\mu[\,]e_\nu(X)=e_\mu Xe_\nu,
 $$</p>
 <p>with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the generation theorem uses them: they are a basis of the ambient operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and every two-sided operator is a linear combination of them. The bracket is the one of the elementary operators, and the two indices are the two slots.</p>
-<p><strong>What the article proves.</strong> The composition law $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde P\tilde Q=\pm e_t$ and $\tilde Q\tilde P=e_t$, the isometry group, and the absence of a pin group in the family.</p>
-<p><strong>What the article does not do.</strong> The matrix of $T_{\tilde Q,\tilde P}$ is <em>Two-Sided Operators on the Biquaternion Algebra</em>, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>.</p>
-<p><strong>The letters.</strong> The parameters are $\tilde Q,\tilde P,\tilde R,\tilde S$, the argument is $X$, and the operator is $T_{\tilde Q,\tilde P}$. The letter $T$ names the two-sided family; the sandwich $\Theta$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are <em>Operator Family Conventions</em>.</p>
+<p><strong>What the article proves.</strong> The composition law $L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\tilde S\tilde P}$, with the second slot reversed. The two closures: the family is closed under composition and not under addition. The generation theorem: the sixteen basis operators are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder $1,4,7,16$: the scalars, the one-sided families, the cone and the ambient space. The plain adjoint: $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$, the self-adjoint pairs and the empty skew sector. The isometries and the multiplicative members: the criteria $\tilde P\tilde Q=\pm e_t$ and $\tilde Q\tilde P=e_t$, the isometry group, and the absence of a pin group in the family.</p>
+<p><strong>What the article does not do.</strong> The matrix of $L_{\tilde Q}R_{\tilde P}$ is <em>Two-Sided Operators on the Biquaternion Algebra</em>, where the sixteen matrices, the coefficient matrix and the length are computed. The Hermitian sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is Part V: this article states no sandwich theorem. The enveloping algebra and the bi-module structure are <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; this article proves the generation statement on which that article's isomorphism rests. The association of the two one-sided families with the plain form is <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>.</p>
+<p><strong>The letters.</strong> The parameters are $\tilde Q,\tilde P,\tilde R,\tilde S$, the argument is $X$, and the operator is $L_{\tilde Q}R_{\tilde P}$. The letter $T$ names the two-sided family; the sandwich $\Theta$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are <em>Operator Family Conventions</em>.</p>
 <p><strong>Boundaries.</strong> The algebra is <em>The Biquaternion Algebra</em>; the ambient operator space is <em>The Endomorphisms of the Biquaternion Algebra</em>; the one-sided families are <em>The Left Regular Operators on the Biquaternion Algebra</em> and <em>The Right Regular Operators on the Biquaternion Algebra</em>; the commutant is <em>The Commutant of the Two Regular Families</em>; the matrix units are <em>Special Element and Peirce Conventions</em>; the form is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
-<h2 id="the-operator-math24">The Operator $T_{\tilde Q,\tilde P}$</h2>
+<h2 id="the-operator-math24">The Operator $L_{\tilde Q}R_{\tilde P}$</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> For $\tilde Q,\tilde P\in\mathbb{B}$, the <strong>two-sided operator of the pair</strong> is</p>
 <p>$$
-T_{\tilde Q,\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},\qquad T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P .
+L_{\tilde Q}R_{\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},\qquad L_{\tilde Q}R_{\tilde P}(X)=\tilde QX\tilde P .
 $$</p>
-<p><strong>Proposition (bilinearity).</strong> The assignment $(\tilde Q,\tilde P)\mapsto T_{\tilde Q,\tilde P}$ is complex-bilinear:</p>
+<p><strong>Proposition (bilinearity).</strong> The assignment $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}R_{\tilde P}$ is complex-bilinear:</p>
 <p>$$
-T_{\lambda\tilde Q+\mu\tilde Q',\tilde P}=\lambda T_{\tilde Q,\tilde P}+\mu T_{\tilde Q',\tilde P},\qquad
-T_{\tilde Q,\lambda\tilde P+\mu\tilde P'}=\lambda T_{\tilde Q,\tilde P}+\mu T_{\tilde Q,\tilde P'}.
+L_{\lambda\tilde Q+\mu\tilde Q'}R_{\tilde P}=\lambda L_{\tilde Q}R_{\tilde P}+\mu L_{\tilde Q'}R_{\tilde P},\qquad
+L_{\tilde Q}R_{\lambda\tilde P+\mu\tilde P'}=\lambda L_{\tilde Q}R_{\tilde P}+\mu L_{\tilde Q}R_{\tilde P'}.
 $$</p>
 <p><em>Proof.</em> Both displays are the distributivity and the complex bilinearity of the algebra product.</p>
 <p><strong>Proposition (the one-sided boundary).</strong> With the unit in one slot,</p>
 <p>$$
-T_{\tilde Q,e_t}=L_{\tilde Q},\qquad T_{e_t,\tilde P}=R_{\tilde P}.
+L_{\tilde Q}R_{e_t}=L_{\tilde Q},\qquad L_{e_t}R_{\tilde P}=R_{\tilde P}.
 $$</p>
 <p><em>Proof.</em> $Xe_t=X$ and $e_tX=X$.</p>
-<p><strong>Proposition (injectivity in each slot).</strong> For a fixed unit $\tilde P$, the map $\tilde Q\mapsto T_{\tilde Q,\tilde P}$ is injective; for a fixed unit $\tilde Q$, the map $\tilde P\mapsto T_{\tilde Q,\tilde P}$ is injective.</p>
-<p><em>Proof.</em> $T_{\tilde Q,\tilde P}(e_t)=\tilde Q\tilde P$, and $\tilde P$ is a unit, so $\tilde Q$ is recovered. The second statement is $T_{\tilde Q,\tilde P}(e_t)=\tilde Q\tilde P$ with $\tilde Q$ a unit.</p>
-<p><strong>The zero operator.</strong> $T_{\tilde Q,\tilde P}=0$ exactly when $\tilde Q=0$ or $\tilde P=0$. If one parameter is zero the operator is zero. Conversely, if both are nonzero, choose entries $Q_{ab}\neq0$ and $P_{cd}\neq0$ in the $2\times2$ model and put $X=E_{bc}$; then $(QXP)_{ad}=Q_{ab}P_{cd}\neq0$.</p>
+<p><strong>Proposition (injectivity in each slot).</strong> For a fixed unit $\tilde P$, the map $\tilde Q\mapsto L_{\tilde Q}R_{\tilde P}$ is injective; for a fixed unit $\tilde Q$, the map $\tilde P\mapsto L_{\tilde Q}R_{\tilde P}$ is injective.</p>
+<p><em>Proof.</em> $L_{\tilde Q}R_{\tilde P}(e_t)=\tilde Q\tilde P$, and $\tilde P$ is a unit, so $\tilde Q$ is recovered. The second statement is $L_{\tilde Q}R_{\tilde P}(e_t)=\tilde Q\tilde P$ with $\tilde Q$ a unit.</p>
+<p><strong>The zero operator.</strong> $L_{\tilde Q}R_{\tilde P}=0$ exactly when $\tilde Q=0$ or $\tilde P=0$. If one parameter is zero the operator is zero. Conversely, if both are nonzero, choose entries $Q_{ab}\neq0$ and $P_{cd}\neq0$ in the $2\times2$ model and put $X=E_{bc}$; then $(QXP)_{ad}=Q_{ab}P_{cd}\neq0$.</p>
 <h3 id="the-scaling-orbit">The Scaling Orbit</h3>
 <p><strong>Proposition (the scaling).</strong> For every $\lambda\in\mathbb{C}^{\times}$,</p>
 <p>$$
-T_{\lambda\tilde Q,\lambda^{-1}\tilde P}=T_{\tilde Q,\tilde P}.
+L_{\lambda\tilde Q}R_{\lambda^{-1}\tilde P}=L_{\tilde Q}R_{\tilde P}.
 $$</p>
 <p><em>Proof.</em> $(\lambda\tilde Q)X(\lambda^{-1}\tilde P)=\tilde QX\tilde P$.</p>
-<p><strong>The orbit.</strong> The group $\mathbb{C}^{\times}$ acts on the parameter space by $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, and the operator is constant on each orbit. For a pair with both parameters nonzero, the orbit is a complex line, and it is the whole set of pairs giving the same operator: if $T_{\tilde Q,\tilde P}=T_{\tilde R,\tilde S}$ with nonzero pairs, then $\tilde R=\lambda\tilde Q$ and $\tilde S=\lambda^{-1}\tilde P$. The proof is the injectivity of the tensor map, proved in §<em>The Sixteen Products as a Basis</em>.</p>
+<p><strong>The orbit.</strong> The group $\mathbb{C}^{\times}$ acts on the parameter space by $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, and the operator is constant on each orbit. For a pair with both parameters nonzero, the orbit is a complex line, and it is the whole set of pairs giving the same operator: if $L_{\tilde Q}R_{\tilde P}=L_{\tilde R}R_{\tilde S}$ with nonzero pairs, then $\tilde R=\lambda\tilde Q$ and $\tilde S=\lambda^{-1}\tilde P$. The proof is the injectivity of the tensor map, proved in §<em>The Sixteen Products as a Basis</em>.</p>
 <p><strong>The dimension.</strong> The parameter space has complex dimension eight. The generic orbit has dimension one, so the cone has complex dimension seven. The zero operator is the image of every pair with a zero parameter, and it is the vertex of the cone.</p>
 <p><strong>The normalisation.</strong> A pair with $\tilde Q$ a unit can be put in the normal form $(\tilde Q,e_t)$ by the scaling $\lambda=\tilde Q^{-1}$, which gives the left multiplication; a pair with $\tilde P$ a unit can be put in the form $(e_t,\tilde P)$, which gives the right multiplication. The scaling is therefore the reason the cone has a complex seven-dimensional body and a complex four-dimensional boundary on each side.</p>
 <h3 id="math62-and-math63-as-boundary-cases">$L_{\tilde Q}$ and $R_{\tilde Q}$ as Boundary Cases</h3>
@@ -119,35 +119,35 @@ $$</p>
 <p><strong>The intersection of the slices.</strong> The two slices meet in the scalars: $L_{\tilde Q}=R_{\tilde P}$ exactly when $\tilde Q=\tilde P$ is central, by <em>The Commutant of the Two Regular Families</em>, §<em>The Proof</em>. The intersection is the line $\mathbb{C}\cdot\mathrm I_4$, of complex dimension one.</p>
 <p><strong>The boundary is not the whole cone.</strong> A generic pair has neither parameter equal to the unit, and its operator is neither a left nor a right multiplication. The cone is complex seven-dimensional, the two boundary slices are complex four-dimensional each, and the difference is the two-parameter body.</p>
 <h2 id="composition-and-the-two-closures">Composition and the Two Closures</h2>
-<h3 id="math69">$T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$</h3>
+<h3 id="math69">$L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\tilde S\tilde P}$</h3>
 <p><strong>Theorem (composition).</strong> For all $\tilde Q,\tilde P,\tilde R,\tilde S\in\mathbb{B}$,</p>
 <p>$$
-T_{\tilde Q,\tilde P}\,T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\ \tilde S\tilde P}.
+L_{\tilde Q}R_{\tilde P}\,L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\ \tilde S\tilde P}.
 $$</p>
-<p><em>Proof.</em> For every $X$, $T_{\tilde Q,\tilde P}(T_{\tilde R,\tilde S}(X))=\tilde Q(\tilde RX\tilde S)\tilde P=(\tilde Q\tilde R)X(\tilde S\tilde P)$ by associativity.</p>
+<p><em>Proof.</em> For every $X$, $L_{\tilde Q}R_{\tilde P}(L_{\tilde R}R_{\tilde S}(X))=\tilde Q(\tilde RX\tilde S)\tilde P=(\tilde Q\tilde R)X(\tilde S\tilde P)$ by associativity.</p>
 <p><strong>The reversal.</strong> The first slot composes in the order of the composition, $\tilde Q\tilde R$; the second slot composes in the reverse order, $\tilde S\tilde P$. The reversal is the anti-representation of the right family, and it is the only place where the order of the two parameters is not the reading order.</p>
-<p><strong>The powers.</strong> By induction, $(T_{\tilde Q,\tilde P})^n=T_{\tilde Q^n,\tilde P^n}$ for every $n\geq1$.</p>
-<p><strong>The inverses.</strong> $T_{\tilde Q,\tilde P}$ is invertible exactly when both parameters are units, and then</p>
+<p><strong>The powers.</strong> By induction, $(L_{\tilde Q}R_{\tilde P})^n=L_{\tilde Q^n}R_{\tilde P^n}$ for every $n\geq1$.</p>
+<p><strong>The inverses.</strong> $L_{\tilde Q}R_{\tilde P}$ is invertible exactly when both parameters are units, and then</p>
 <p>$$
-(T_{\tilde Q,\tilde P})^{-1}=T_{\tilde Q^{-1},\tilde P^{-1}}.
+(L_{\tilde Q}R_{\tilde P})^{-1}=L_{\tilde Q^{-1}}R_{\tilde P^{-1}}.
 $$</p>
 <p><em>Proof.</em> The inverse is verified by the composition law. Conversely, if the operator is invertible it is injective; a nonzero kernel of $\tilde Q$ or of $\tilde P$ would give a nonzero kernel of the operator, so both are units.</p>
-<p><strong>The identity.</strong> $T_{\tilde Q,\tilde P}=\mathrm{id}$ exactly when $\tilde Q\tilde P=e_t$ and $\tilde Q$ is central. The proof is the evaluation at $e_t$ and then the commutation with every $X$; the central solutions are $\tilde Q=\lambda e_t$, $\tilde P=\lambda^{-1}e_t$.</p>
+<p><strong>The identity.</strong> $L_{\tilde Q}R_{\tilde P}=\mathrm{id}$ exactly when $\tilde Q\tilde P=e_t$ and $\tilde Q$ is central. The proof is the evaluation at $e_t$ and then the commutation with every $X$; the central solutions are $\tilde Q=\lambda e_t$, $\tilde P=\lambda^{-1}e_t$.</p>
 <h3 id="closed-under-multiplication-not-under-addition">Closed Under Multiplication, Not Under Addition</h3>
-<p><strong>Proposition (closure under composition).</strong> The set $\operatorname{End}_{LR}(\mathbb{B})=\{T_{\tilde Q,\tilde P}\}$ is closed under composition, by the composition law. It contains the identity $T_{e_t,e_t}$ and is closed under inversion on the units.</p>
+<p><strong>Proposition (closure under composition).</strong> The set $\operatorname{End}_{LR}(\mathbb{B})=\{L_{\tilde Q}R_{\tilde P}\}$ is closed under composition, by the composition law. It contains the identity $L_{e_t}R_{e_t}$ and is closed under inversion on the units.</p>
 <p><strong>Proposition (not closed under addition).</strong> The sum of two two-sided operators need not be a two-sided operator. The simplest example is</p>
 <p>$$
-\mathrm{id}+T_{\vec e_x,\vec e_x},
+\mathrm{id}+L_{\vec e_x}R_{\vec e_x},
 $$</p>
-<p>which is not of the form $T_{\tilde Q,\tilde P}$.</p>
-<p><em>Proof.</em> Suppose $\mathrm{id}+T_{\vec e_x,\vec e_x}=T_{\tilde Q,\tilde P}$. At $X=e_t$ the left side is $e_t+\vec e_x e_t\vec e_x=e_t-e_t=0$, so $\tilde Q\tilde P=0$. If $\tilde Q=0$ or $\tilde P=0$, the right side is zero, but the left side at $X=\vec e_y$ is $\vec e_y+\vec e_x\vec e_y\vec e_x=2\vec e_y\neq0$; so both parameters are nonzero. In the $2\times2$ model, $\tilde Q\tilde P=0$ with both factors nonzero forces both to have rank one. At $X=\vec e_y$ the left side is $2\vec e_y$, of rank two, while $\tilde Q\vec e_y\tilde P$ has rank at most one. Contradiction.</p>
+<p>which is not of the form $L_{\tilde Q}R_{\tilde P}$.</p>
+<p><em>Proof.</em> Suppose $\mathrm{id}+L_{\vec e_x}R_{\vec e_x}=L_{\tilde Q}R_{\tilde P}$. At $X=e_t$ the left side is $e_t+\vec e_x e_t\vec e_x=e_t-e_t=0$, so $\tilde Q\tilde P=0$. If $\tilde Q=0$ or $\tilde P=0$, the right side is zero, but the left side at $X=\vec e_y$ is $\vec e_y+\vec e_x\vec e_y\vec e_x=2\vec e_y\neq0$; so both parameters are nonzero. In the $2\times2$ model, $\tilde Q\tilde P=0$ with both factors nonzero forces both to have rank one. At $X=\vec e_y$ the left side is $2\vec e_y$, of rank two, while $\tilde Q\vec e_y\tilde P$ has rank at most one. Contradiction.</p>
 <p><strong>The two closures.</strong> The family is a multiplicative monoid and not an additive one. Its linear span is a subspace, and the span is the subject of §<em>The Generation Theorem</em>; the family itself is the cone inside that span, not the whole span.</p>
-<p><strong>The sum of two products.</strong> A sum $T_{\tilde Q,\tilde P}+T_{\tilde R,\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Criterion for a Single Product</em>.</p>
+<p><strong>The sum of two products.</strong> A sum $L_{\tilde Q}R_{\tilde P}+L_{\tilde R}R_{\tilde S}$ is a two-sided operator in special cases, for instance when the two pairs are proportional, but not in general. The criterion for a sum of two products to be one product is the rank condition of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Criterion for a Single Product</em>.</p>
 <h2 id="the-generation-theorem">The Generation Theorem</h2>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (the generation).</strong> The sixteen basis operators $e_\mu[\,]e_\nu$, $\mu,\nu\in\{t,x,y,z\}$, are linearly independent and span the ambient space:</p>
 <p>$$
-\operatorname{Span}_{\mathbb{C}}\{T_{\tilde Q,\tilde P}:\tilde Q,\tilde P\in\mathbb{B}\}=\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\operatorname{Span}_{\mathbb{C}}\{L_{\tilde Q}R_{\tilde P}:\tilde Q,\tilde P\in\mathbb{B}\}=\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
 \dim_{\mathbb{C}}\operatorname{End}_{\mathbb{C}}(\mathbb{B})=16 .
 $$</p>
 <p>In particular every complex-linear operator of $\mathbb{B}$ is a finite sum of two-sided operators, and the sum needs at most sixteen terms.</p>
@@ -185,7 +185,7 @@ $$</p>
 e_\mu[\,]e_\nu=\sum_{i,j,k,l}c_{\mu,ij}c_{\nu,kl}\,U_{ij}[\,]U_{kl}.
 $$</p>
 <p>The sixteen operators $U_{ij}[\,]U_{kl}$ are a basis, by §<em>The Matrix-Unit Computation</em>. The coefficient matrix of the display is the tensor product $c\otimes c$, and $c$ is invertible; hence $c\otimes c$ is invertible, and the sixteen products are a basis.</p>
-<p><strong>The span.</strong> Every two-sided operator is a linear combination of the sixteen products, and every operator of the ambient space is a linear combination of the sixteen products; the span is the whole space, of complex dimension sixteen. The bilinear map $(\tilde Q,\tilde P)\mapsto T_{\tilde Q,\tilde P}$ is therefore surjective onto $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and its image is the cone of the decomposable elements inside the complex sixteen-dimensional space.</p>
+<p><strong>The span.</strong> Every two-sided operator is a linear combination of the sixteen products, and every operator of the ambient space is a linear combination of the sixteen products; the span is the whole space, of complex dimension sixteen. The bilinear map $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}R_{\tilde P}$ is therefore surjective onto $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and its image is the cone of the decomposable elements inside the complex sixteen-dimensional space.</p>
 <p><strong>The parameters and the operators.</strong> The parameters are eight complex numbers, the operators they generate by linear combination are complex sixteen-dimensional, and the map is bilinear rather than linear. The count is not a contradiction: the eight parameters describe one decomposable tensor, and the sixteen complex dimensions are the span of all of them.</p>
 <h2 id="the-ladder-math150">The Ladder $1,4,7,16$</h2>
 <h3 id="the-chain">The Chain</h3>
@@ -197,12 +197,12 @@ $$</p>
 <p>$$
 1\ <\ 4\ <\ 7\ <\ 16 .
 $$</p>
-<p>The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $T_{\tilde Q,e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by <em>The Commutant of the Two Regular Families</em>.</p>
+<p>The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by <em>The Commutant of the Two Regular Families</em>.</p>
 <p><strong>The middle dimension.</strong> The complex dimension seven is the complex dimension of the cone: eight complex parameters minus the one-dimensional complex scaling orbit. The chain is a chain of sets, not of subspaces. The cone is not a subspace, and its linear span is the whole complex sixteen-dimensional space by §<em>The Generation Theorem</em>. The complex dimension seven is the dimension of the cone as an algebraic variety, not the dimension of a subspace containing it.</p>
 <p><strong>The two sevens.</strong> A second complex seven-dimensional object sits beside the cone: the linear sum $\operatorname{End}_L(\mathbb{B})+\operatorname{End}_R(\mathbb{B})$, of complex dimension $4+4-1=7$. The sum is a subspace and is not the cone; the cone is a monoid and is not a subspace. The two sevens are different objects with the same complex dimension, and they must not be identified.</p>
 <h3 id="the-sum-is-not-a-subalgebra">The Sum Is Not a Subalgebra</h3>
 <p><strong>Theorem (the sum).</strong> The subspace $\operatorname{End}_L(\mathbb{B})+\operatorname{End}_R(\mathbb{B})$ has complex dimension seven and is not a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</p>
-<p><em>Proof.</em> The complex dimension is $4+4-1=7$ by the intersection theorem of <em>The Commutant of the Two Regular Families</em>. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $T_{\vec e_x,\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.</p>
+<p><em>Proof.</em> The complex dimension is $4+4-1=7$ by the intersection theorem of <em>The Commutant of the Two Regular Families</em>. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $L_{\vec e_x}R_{\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.</p>
 <p>Suppose $\vec e_xX\vec e_x=\tilde AX+X\tilde B$ for all $X$. At $X=e_t$, $-\!e_t=\tilde A+\tilde B$. At $X=\vec e_x$,</p>
 <p>$$
 -\vec e_x=\tilde A\vec e_x+\vec e_x\tilde B
@@ -217,54 +217,54 @@ $$</p>
 <p>which cannot equal $\vec e_y$. Contradiction.</p>
 <p><strong>The reading.</strong> The two one-sided families generate, under addition, a complex seven-dimensional subspace, and under composition they generate the whole complex sixteen-dimensional algebra. The sum is the additive closure and is not a subalgebra; the cone is the multiplicative closure and is not a subspace. The generation theorem is the statement that the multiplicative closure, taken with linear combinations, reaches the whole ambient space.</p>
 <h2 id="the-plain-adjoint">The Plain Adjoint</h2>
-<h3 id="math180">$T_{\tilde Q,\tilde P}^{\approx}=T_{\tilde P,\tilde Q}$</h3>
+<h3 id="math180">$L_{\tilde Q}R_{\tilde P}^{\approx}=L_{\tilde P}R_{\tilde Q}$</h3>
 <p><strong>Theorem (the adjoint).</strong> For the general plain bilinear form $\langle X,Y\rangle=\mathrm{Sc}(XY)$,</p>
 <p>$$
-\bigl(T_{\tilde Q,\tilde P}\bigr)^{\approx}=T_{\tilde P,\tilde Q}.
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=L_{\tilde P}R_{\tilde Q}.
 $$</p>
 <p><em>Proof.</em> For all $X,Y$,</p>
 <p>$$
-\bigl\langle T_{\tilde Q,\tilde P}X,Y\bigr\rangle
+\bigl\langle L_{\tilde Q}R_{\tilde P}X,Y\bigr\rangle
 =\mathrm{Sc}\bigl(\tilde QX\tilde PY\bigr)
 =\mathrm{Sc}\bigl(X\tilde PY\tilde Q\bigr)
-=\bigl\langle X,T_{\tilde P,\tilde Q}Y\bigr\rangle,
+=\bigl\langle X,L_{\tilde P}R_{\tilde Q}Y\bigr\rangle,
 $$</p>
 <p>by the cyclicity of the scalar part. The adjoint is unique by the non-degeneracy of the form.</p>
 <p><strong>The swap.</strong> The adjoint exchanges the two parameters. It does not conjugate either of them, and it does not keep the side: the left multiplier of the adjoint is the right multiplier of the operator. The swap is the two-sided form of the one-sided identities $(L_{\tilde Q})^{\approx}=R_{\tilde Q}$ and $(R_{\tilde P})^{\approx}=L_{\tilde P}$ of <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>, §<em>Association as a Transpose</em>.</p>
-<p><strong>The involution.</strong> $(T_{\tilde Q,\tilde P})^{\approx\approx}=T_{\tilde Q,\tilde P}$, and $(T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S})^{\approx}=T_{\tilde S,\tilde R}T_{\tilde P,\tilde Q}$, the reversal of the composition.</p>
+<p><strong>The involution.</strong> $(L_{\tilde Q}R_{\tilde P})^{\approx\approx}=L_{\tilde Q}R_{\tilde P}$, and $(L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S})^{\approx}=L_{\tilde S}R_{\tilde R}L_{\tilde P}R_{\tilde Q}$, the reversal of the composition.</p>
 <h3 id="the-self-adjoint-pairs">The Self-Adjoint Pairs</h3>
-<p><strong>Theorem (the self-adjoint criterion).</strong> For $\tilde Q\neq0$, the operator $T_{\tilde Q,\tilde P}$ is self-adjoint exactly when the two parameters are proportional:</p>
+<p><strong>Theorem (the self-adjoint criterion).</strong> For $\tilde Q\neq0$, the operator $L_{\tilde Q}R_{\tilde P}$ is self-adjoint exactly when the two parameters are proportional:</p>
 <p>$$
-\bigl(T_{\tilde Q,\tilde P}\bigr)^{\approx}=T_{\tilde Q,\tilde P}
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=L_{\tilde Q}R_{\tilde P}
 \iff \tilde P=\lambda\tilde Q\quad\text{for some }\lambda\in\mathbb{C}.
 $$</p>
-<p>The self-adjoint two-sided operators are therefore the scalar multiples of the diagonal operators $T_{\tilde Q,\tilde Q}$, together with the zero operator.</p>
+<p>The self-adjoint two-sided operators are therefore the scalar multiples of the diagonal operators $L_{\tilde Q}R_{\tilde Q}$, together with the zero operator.</p>
 <p><em>Proof.</em> Write $A=\mathsf M_2(\tilde Q)\neq0$ and $B=\mathsf M_2(\tilde P)$. Self-adjointness is $AXB=BXA$ for every $X\in M_2(\mathbb{C})$. On the matrix units $X=E_{ij}$ this reads $A_{ik}B_{lj}=B_{ik}A_{lj}$ for all $i,j,k,l$. Choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\lambda=B_{k_0i_0}/A_{k_0i_0}$; taking $i=k_0$, $k=i_0$ gives $B_{lj}=\lambda A_{lj}$ for all $l,j$, so $B=\lambda A$ and $\tilde P=\lambda\tilde Q$. Conversely, $\tilde P=\lambda\tilde Q$ makes the two sides equal. The argument uses no inverse, so it covers the zero divisors.</p>
-<p><strong>The diagonal.</strong> The operator $T_{\tilde Q,\tilde Q}$ is self-adjoint for every $\tilde Q$, including the zero divisors; it is the operator $X\mapsto\tilde QX\tilde Q$, and it is not an inner automorphism unless $\tilde Q$ is a unit.</p>
+<p><strong>The diagonal.</strong> The operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint for every $\tilde Q$, including the zero divisors; it is the operator $X\mapsto\tilde QX\tilde Q$, and it is not an inner automorphism unless $\tilde Q$ is a unit.</p>
 <h3 id="the-skew-pairs">The Skew Pairs</h3>
 <p><strong>Theorem (the skew sector is trivial).</strong> No nonzero two-sided operator is skew-adjoint:</p>
 <p>$$
-\bigl(T_{\tilde Q,\tilde P}\bigr)^{\approx}=-T_{\tilde Q,\tilde P}
-\iff T_{\tilde Q,\tilde P}=0.
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=-L_{\tilde Q}R_{\tilde P}
+\iff L_{\tilde Q}R_{\tilde P}=0.
 $$</p>
 <p><em>Proof.</em> Skew-adjointness is $BXA=-AXB$ for all $X$. On the matrix units, $B_{ik}A_{lj}=-A_{ik}B_{lj}$. If $A=0$ the operator is zero. Otherwise choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\mu=-B_{k_0i_0}/A_{k_0i_0}$; then $B=\mu A$. Substituting back gives $2\mu AXA=0$ for all $X$, and $AXA$ is not identically zero for $A\neq0$, so $\mu=0$ and $B=0$. The zero operator is skew-adjoint.</p>
 <p><strong>The reading.</strong> The plain form has a self-adjoint sector and no skew sector among the nonzero two-sided operators. The asymmetry is the asymmetry of the swap: a self-adjoint pair is a pair of proportional parameters, and the proportionality is symmetric; a skew pair would need an antisymmetric proportionality, and the only antisymmetric scalar is zero.</p>
 <h2 id="isometries-and-multiplicative-members">Isometries and Multiplicative Members</h2>
 <h3 id="the-isometries-of-the-plain-form">The Isometries of the Plain Form</h3>
-<p><strong>Theorem (the isometries).</strong> The operator $T_{\tilde Q,\tilde P}$ preserves the plain form,</p>
+<p><strong>Theorem (the isometries).</strong> The operator $L_{\tilde Q}R_{\tilde P}$ preserves the plain form,</p>
 <p>$$
-\bigl\langle T_{\tilde Q,\tilde P}X,T_{\tilde Q,\tilde P}Y\bigr\rangle=\langle X,Y\rangle\qquad\text{for all }X,Y,
+\bigl\langle L_{\tilde Q}R_{\tilde P}X,L_{\tilde Q}R_{\tilde P}Y\bigr\rangle=\langle X,Y\rangle\qquad\text{for all }X,Y,
 $$</p>
 <p>exactly when</p>
 <p>$$
 \tilde P\tilde Q=\pm e_t .
 $$</p>
 <p>Equivalently, $\tilde Q$ is a unit and $\tilde P=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$.</p>
-<p><em>Proof.</em> If $T_{\tilde Q,\tilde P}$ preserves the form it is injective, because the form is non-degenerate, so both parameters are units. An invertible isometry has inverse its adjoint, so $T_{\tilde Q,\tilde P}T_{\tilde P,\tilde Q}=\mathrm{id}$. By the composition law the composite is $T_{\tilde Q\tilde P,\tilde Q\tilde P}$, and $T_{\tilde A,\tilde A}=\mathrm{id}$ exactly when $\tilde A$ is central with $\tilde A^2=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q\tilde P=\pm e_t$, and for units this is $\tilde P\tilde Q=\pm e_t$ and $\tilde P=\pm\tilde Q^{-1}$. Conversely, $\tilde P=\pm\tilde Q^{-1}$ makes $T_{\tilde Q,\tilde P}=\pm\mathrm{Ad}_{\tilde Q}$, and the inner automorphism and its negative preserve the form.</p>
+<p><em>Proof.</em> If $L_{\tilde Q}R_{\tilde P}$ preserves the form it is injective, because the form is non-degenerate, so both parameters are units. An invertible isometry has inverse its adjoint, so $L_{\tilde Q}R_{\tilde P}L_{\tilde P}R_{\tilde Q}=\mathrm{id}$. By the composition law the composite is $L_{\tilde Q\tilde P}R_{\tilde Q\tilde P}$, and $L_{\tilde A}R_{\tilde A}=\mathrm{id}$ exactly when $\tilde A$ is central with $\tilde A^2=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q\tilde P=\pm e_t$, and for units this is $\tilde P\tilde Q=\pm e_t$ and $\tilde P=\pm\tilde Q^{-1}$. Conversely, $\tilde P=\pm\tilde Q^{-1}$ makes $L_{\tilde Q}R_{\tilde P}=\pm\mathrm{Ad}_{\tilde Q}$, and the inner automorphism and its negative preserve the form.</p>
 <p><strong>The group.</strong> The isometries of the family are the two cosets</p>
 <p>$$
-T_{\tilde Q,\tilde Q^{-1}}=\mathrm{Ad}_{\tilde Q},\qquad
-T_{\tilde Q,-\tilde Q^{-1}}=-\mathrm{Ad}_{\tilde Q},
+L_{\tilde Q}R_{\tilde Q^{-1}}=\mathrm{Ad}_{\tilde Q},\qquad
+L_{\tilde Q}R_{-\tilde Q^{-1}}=-\mathrm{Ad}_{\tilde Q},
 $$</p>
 <p>with $\tilde Q$ a unit. The inner automorphism depends on $\tilde Q$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is</p>
 <p>$$
@@ -272,15 +272,15 @@ $$</p>
 $$</p>
 <p>of complex dimension three. It is not all of $O_4(\mathbb{C})$, which has dimension six. The kernel of the parametrisation is $\{(\lambda e_t,\lambda^{-1}e_t)\}\cong\mathbb{C}^{\times}$, and the two cosets are the two components of the group.</p>
 <h3 id="the-criterion-math254">The Criterion $\tilde Q\tilde P=e_t$</h3>
-<p><strong>Theorem (the multiplicative members).</strong> A nonzero operator $T_{\tilde Q,\tilde P}$ is multiplicative,</p>
+<p><strong>Theorem (the multiplicative members).</strong> A nonzero operator $L_{\tilde Q}R_{\tilde P}$ is multiplicative,</p>
 <p>$$
-T_{\tilde Q,\tilde P}(XY)=T_{\tilde Q,\tilde P}(X)\,T_{\tilde Q,\tilde P}(Y)\qquad\text{for all }X,Y,
+L_{\tilde Q}R_{\tilde P}(XY)=L_{\tilde Q}R_{\tilde P}(X)\,L_{\tilde Q}R_{\tilde P}(Y)\qquad\text{for all }X,Y,
 $$</p>
 <p>exactly when</p>
 <p>$$
 \tilde Q\tilde P=e_t .
 $$</p>
-<p>Then $\tilde P=\tilde Q^{-1}$ and $T_{\tilde Q,\tilde P}=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra for every unit $\tilde Q$.</p>
+<p>Then $\tilde P=\tilde Q^{-1}$ and $L_{\tilde Q}R_{\tilde P}=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra for every unit $\tilde Q$.</p>
 <p><em>Proof.</em> Multiplicativity reads</p>
 <p>$$
 \tilde QX\tilde P\,\tilde QY\tilde P=\tilde QXY\tilde P
@@ -290,7 +290,7 @@ $$</p>
 <p><strong>The zero exception.</strong> The zero operator is multiplicative, and its product of parameters is $0$, not $e_t$. The criterion is read on the nonzero operators.</p>
 <p><strong>The partial law.</strong> If the product $\tilde P\tilde Q$ is central, $\tilde P\tilde Q=\mu e_t$ with $\mu\in\mathbb{C}$, then</p>
 <p>$$
-T_{\tilde Q,\tilde P}(X)\,T_{\tilde Q,\tilde P}(Y)=\mu\,T_{\tilde Q,\tilde P}(XY)
+L_{\tilde Q}R_{\tilde P}(X)\,L_{\tilde Q}R_{\tilde P}(Y)=\mu\,L_{\tilde Q}R_{\tilde P}(XY)
 $$</p>
 <p>for all $X,Y$. The scalar is the central product of the parameters, not a norm. The genuine multiplicative case is $\mu=1$.</p>
 <p><strong>Multiplicative and isometric.</strong> A nonzero operator that is both multiplicative and an isometry is an inner automorphism $\mathrm{Ad}_{\tilde Q}$ with $\tilde Q$ a unit, without the minus: the isometry criterion allows $\tilde P\tilde Q=-e_t$, and the multiplicative criterion excludes it.</p>
@@ -306,23 +306,23 @@ $$</p>
 <p><strong>The reflections.</strong> A reflection of the plain form in a direction of the vector subspace acts on that subspace with determinant $-1$, whereas $\mathrm{Ad}_{\tilde Q}$ acts there with determinant $+1$; $-\mathrm{Ad}_{\tilde Q}$ acts there with determinant $-1$, but it negates the centre, while the reflection fixes the centre. A reflection in a central direction negates the centre and is not $\pm\mathrm{Ad}_{\tilde Q}$; a reflection in a mixed direction moves the centre line, which $\pm\mathrm{Ad}_{\tilde Q}$ preserves. In every case the reflection is outside the family. The improper isometries live in the Clifford algebra, where the reflection in a non-isotropic vector $u$ is $\rho_u(v)=-uvu^{-1}$.</p>
 <p><strong>The contrast.</strong> The quaternionic twin of the corpus has a multiplicative norm, so its sandwich is an isometry exactly on the level set of the norm, and that level set is a group. Here the form carries no norm, nothing is selected, and the level set is not a group. The difference has one source: the plain form is the scalar part of the algebra's own product, and the product does not preserve its own scalar part.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The identity and its multiples.</strong> $T_{e_t,e_t}=\mathrm{id}$ is self-adjoint, form preserving and multiplicative. The central multiples $\lambda\,\mathrm{id}=T_{\lambda e_t,e_t}$ are self-adjoint for every $\lambda$, preserve the form only for $\lambda=\pm1$, and are multiplicative only for $\lambda=1$. The three criteria are genuinely different, and the example separates them.</p>
-<p><strong>A mixed operator.</strong> The operator $T_{\vec e_x,\vec e_y}$ has $\tilde P\tilde Q=\vec e_y\vec e_x=-\vec e_z$, so it is neither self-adjoint (the parameters are not proportional), nor form preserving ($-\vec e_z\neq\pm e_t$), nor multiplicative. Its adjoint is $T_{\vec e_y,\vec e_x}$, the pair exchanged, and the two operators differ.</p>
+<p><strong>The identity and its multiples.</strong> $L_{e_t}R_{e_t}=\mathrm{id}$ is self-adjoint, form preserving and multiplicative. The central multiples $\lambda\,\mathrm{id}=L_{\lambda e_t}R_{e_t}$ are self-adjoint for every $\lambda$, preserve the form only for $\lambda=\pm1$, and are multiplicative only for $\lambda=1$. The three criteria are genuinely different, and the example separates them.</p>
+<p><strong>A mixed operator.</strong> The operator $L_{\vec e_x}R_{\vec e_y}$ has $\tilde P\tilde Q=\vec e_y\vec e_x=-\vec e_z$, so it is neither self-adjoint (the parameters are not proportional), nor form preserving ($-\vec e_z\neq\pm e_t$), nor multiplicative. Its adjoint is $L_{\vec e_y}R_{\vec e_x}$, the pair exchanged, and the two operators differ.</p>
 <p><strong>An inner automorphism.</strong> For the pure unit $\vec e_x$, one has $\vec e_x^{-1}=-\vec e_x$, so</p>
 <p>$$
-\mathrm{Ad}_{\vec e_x}=T_{\vec e_x,\vec e_x^{-1}}=T_{\vec e_x,-\vec e_x}.
+\mathrm{Ad}_{\vec e_x}=L_{\vec e_x}R_{\vec e_x^{-1}}=L_{\vec e_x}R_{-\vec e_x}.
 $$</p>
 <p>The three criteria hold at once: the parameters are proportional with $\lambda=-1$, so the operator is self-adjoint; $\tilde P\tilde Q=(-\vec e_x)\vec e_x=e_t$, so it preserves the form; and $\tilde P=\tilde Q^{-1}$, so it is multiplicative. It is the least degenerate two-sided operator after the identity.</p>
-<p><strong>A self-adjoint operator with a null parameter.</strong> For $\tilde Q=e_t+i\vec e_z$, a zero divisor with $\tilde Q^2=2\tilde Q$, the diagonal operator $T_{\tilde Q,\tilde Q}$ is self-adjoint by the criterion with $\lambda=1$, although the parameter is not a unit. Self-adjointness is a condition on the pair, not on invertibility; the form-preserving criterion, by contrast, forces both parameters to be units.</p>
+<p><strong>A self-adjoint operator with a null parameter.</strong> For $\tilde Q=e_t+i\vec e_z$, a zero divisor with $\tilde Q^2=2\tilde Q$, the diagonal operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint by the criterion with $\lambda=1$, although the parameter is not a unit. Self-adjointness is a condition on the pair, not on invertibility; the form-preserving criterion, by contrast, forces both parameters to be units.</p>
 <p><strong>A diagonal operator multiplicative up to sign.</strong> For the pure unit $\vec e_x$, the product of the parameters is $\vec e_x^2=-e_t$, central, so the partial law applies with the scalar $-1$:</p>
 <p>$$
-T_{\vec e_x,\vec e_x}(X)\,T_{\vec e_x,\vec e_x}(Y)=-T_{\vec e_x,\vec e_x}(XY).
+L_{\vec e_x}R_{\vec e_x}(X)\,L_{\vec e_x}R_{\vec e_x}(Y)=-L_{\vec e_x}R_{\vec e_x}(XY).
 $$</p>
 <p>The operator $X\mapsto\vec e_xX\vec e_x$ is anti-multiplicative, and it is the negative of the inner automorphism $\mathrm{Ad}_{\vec e_x}$. The example separates the central-product family from the genuinely multiplicative operators.</p>
 <h2 id="summary">Summary</h2>
-<p>The two-sided operators are the products $T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ of a left and a right multiplication with independent parameters. They contain the one-sided operators at the boundary cases $\tilde P=e_t$ and $\tilde Q=e_t$, and they form a cone of complex dimension seven: eight parameters modulo the scaling $(\lambda\tilde Q,\lambda^{-1}\tilde P)$. The composition law is $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, with the second slot reversed. The family is closed under composition and not under addition; the sum $\mathrm{id}+T_{\vec e_x,\vec e_x}$ is not a product.</p>
+<p>The two-sided operators are the products $L_{\tilde Q}R_{\tilde P}(X)=\tilde QX\tilde P$ of a left and a right multiplication with independent parameters. They contain the one-sided operators at the boundary cases $\tilde P=e_t$ and $\tilde Q=e_t$, and they form a cone of complex dimension seven: eight parameters modulo the scaling $(\lambda\tilde Q,\lambda^{-1}\tilde P)$. The composition law is $L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\tilde S\tilde P}$, with the second slot reversed. The family is closed under composition and not under addition; the sum $\mathrm{id}+L_{\vec e_x}R_{\vec e_x}$ is not a product.</p>
 <p>The sixteen basis operators $e_\mu[\,]e_\nu$ are a basis of the ambient space, so the span of the family is the whole $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The ladder is $1,4,7,16$: the scalars, the one-sided families, the cone, the ambient space. The chain is a chain of sets, not of subspaces; the cone is not a subspace, and its span is the whole space. The linear sum of the two one-sided families is a complex seven-dimensional subspace and is not a subalgebra.</p>
-<p>The plain adjoint exchanges the parameters, $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$. The self-adjoint operators are the scalar multiples of the diagonal operators, $\tilde P=\lambda\tilde Q$; no nonzero operator is skew-adjoint. The isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q}$, with $\tilde P\tilde Q=\pm e_t$, of complex dimension three; the multiplicative members are the inner automorphisms $\mathrm{Ad}_{\tilde Q}$, with $\tilde Q\tilde P=e_t$. The quadratic form is not multiplicative, so the family contains no pin group, and the reflections lie outside it.</p>
+<p>The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$. The self-adjoint operators are the scalar multiples of the diagonal operators, $\tilde P=\lambda\tilde Q$; no nonzero operator is skew-adjoint. The isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q}$, with $\tilde P\tilde Q=\pm e_t$, of complex dimension three; the multiplicative members are the inner automorphisms $\mathrm{Ad}_{\tilde Q}$, with $\tilde Q\tilde P=e_t$. The quadratic form is not multiplicative, so the family contains no pin group, and the reflections lie outside it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -333,7 +333,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$</td>
+<td>$L_{\tilde Q}R_{\tilde P}(X)=\tilde QX\tilde P$</td>
 <td>The two-sided operator of the pair; first subscript left, second right, argument third</td>
 </tr>
 <tr>
@@ -341,7 +341,7 @@ $$</p>
 <td>The sixteen basis operators</td>
 </tr>
 <tr>
-<td>$T_{\tilde Q,e_t}=L_{\tilde Q}$, $T_{e_t,\tilde P}=R_{\tilde P}$</td>
+<td>$L_{\tilde Q}R_{e_t}=L_{\tilde Q}$, $L_{e_t}R_{\tilde P}=R_{\tilde P}$</td>
 <td>The one-sided boundary cases</td>
 </tr>
 <tr>
@@ -349,15 +349,15 @@ $$</p>
 <td>The cone of the two-sided operators</td>
 </tr>
 <tr>
-<td>$T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$</td>
+<td>$L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\tilde S\tilde P}$</td>
 <td>The composition law; the second slot reverses</td>
 </tr>
 <tr>
-<td>$(T_{\tilde Q,\tilde P})^n=T_{\tilde Q^n,\tilde P^n}$</td>
+<td>$(L_{\tilde Q}R_{\tilde P})^n=L_{\tilde Q^n}R_{\tilde P^n}$</td>
 <td>The powers</td>
 </tr>
 <tr>
-<td>$(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$</td>
+<td>$(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$</td>
 <td>The plain adjoint swaps the parameters</td>
 </tr>
 <tr>
@@ -365,7 +365,7 @@ $$</p>
 <td>For $\tilde Q\neq0$; the diagonal operators and their multiples</td>
 </tr>
 <tr>
-<td>Skew-adjoint $\iff T_{\tilde Q,\tilde P}=0$</td>
+<td>Skew-adjoint $\iff L_{\tilde Q}R_{\tilde P}=0$</td>
 <td>The skew sector is trivial</td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@ $$</p>
 </tr>
 <tr>
 <td>Multiplicative, nonzero $\iff\tilde Q\tilde P=e_t$</td>
-<td>Then $T_{\tilde Q,\tilde P}=\mathrm{Ad}_{\tilde Q}$</td>
+<td>Then $L_{\tilde Q}R_{\tilde P}=\mathrm{Ad}_{\tilde Q}$</td>
 </tr>
 <tr>
 <td>$\tilde P\tilde Q$ central $\implies$ multiplicative up to $\tilde P\tilde Q$</td>

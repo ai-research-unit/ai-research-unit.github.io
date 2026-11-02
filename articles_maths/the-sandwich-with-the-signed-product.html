@@ -92,10 +92,10 @@ $$</p>
 <p><strong>Proof.</strong> $\Sigma_x$ is a composite of bijections; $\alpha(1) = 1$ and $x1x^{-1} = 1$; $\Sigma_1 = \alpha$; both $\alpha$ and $\mathrm{Ad}_x$ preserve the parity grading.</p>
 <p><strong>Proposition (the composition law and the cancellation).</strong> For units $x, z$,</p>
 <p>$$
-\Sigma_x \circ \Sigma_z = T_{x\alpha(z),\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
+\Sigma_x \circ \Sigma_z = L_{x\alpha(z)}R_{\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
 $$</p>
 <p>So the composite of two signed sandwiches is an <strong>ordinary inner conjugation</strong>, with parameter $x\alpha(z)$; the two grade involutions cancel, exactly as for the general signed product.</p>
-<p><strong>Proof.</strong> By the composition law of <em>Two-Sided Operators with the Signed Product</em>, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = T_{x\alpha(z),\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.</p>
+<p><strong>Proof.</strong> By the composition law of <em>Two-Sided Operators with the Signed Product</em>, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.</p>
 <p><strong>Corollary (the group generated).</strong> The signed sandwiches generate together with their products the group</p>
 <p>$$
 \{\, \mathrm{Ad}_y : y \in \mathrm{Cl}(V,\mathfrak{Q})^{\times} \,\} \cup \{\, \Sigma_x : x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times} \,\},
@@ -117,7 +117,7 @@ $$</p>
 <p><strong>Proof.</strong> $\Sigma_x$ is a bijection preserving $V$ because $\chi_x$ is and the two differ on $V$ by the nonzero scalar $-\varepsilon_x$; an isometry scaled by a nonzero scalar is an isometry. The value on the even and the odd part is the sign computation of the first proposition, together with $\chi_a = \rho_a$ and $\chi_R = \mathrm{Ad}_R$ for the twisted conjugation.</p>
 <p><strong>Corollary (Cartan–Dieudonné).</strong> Every orthogonal transformation of the quadratic space is a composite of signed sandwiches: in even dimension it is $\Sigma_{a_1}\cdots\Sigma_{a_{2k}} = \mathrm{Ad}_{a_1\cdots a_{2k}}$ for vectors of nonzero norm, an even product, and a reflection is a single $\Sigma_a$.</p>
 <p><strong>Proof.</strong> The reflections generate $O(V,\mathfrak{Q})$ and each is a $\Sigma_a$; their products are composites of signed sandwiches, which by the cancellation are inner conjugations of products of vectors.</p>
-<p><strong>Remark (the three sandwiches distinguished).</strong> The ordinary sandwich $T_{x,x^{-1}} = \mathrm{Ad}_x$ is multiplicative and has value $1$ at the unit but gives $-\rho_a$ on a vector; the twisted conjugation $\chi_x$ gives $\rho_a$ but uses $\alpha(x)^{-1}$, not $x^{-1}$; the signed sandwich $\Sigma_a$ gives $\rho_a$ and uses $x^{-1}$, at the price of a family that is a coset and not a group. The three are related by $\chi_x = \varepsilon_x\mathrm{Ad}_x$ and $\Sigma_x = -\varepsilon_x\chi_x$ on $V$.</p>
+<p><strong>Remark (the three sandwiches distinguished).</strong> The ordinary sandwich $L_{x}R_{x^{-1}} = \mathrm{Ad}_x$ is multiplicative and has value $1$ at the unit but gives $-\rho_a$ on a vector; the twisted conjugation $\chi_x$ gives $\rho_a$ but uses $\alpha(x)^{-1}$, not $x^{-1}$; the signed sandwich $\Sigma_a$ gives $\rho_a$ and uses $x^{-1}$, at the price of a family that is a coset and not a group. The three are related by $\chi_x = \varepsilon_x\mathrm{Ad}_x$ and $\Sigma_x = -\varepsilon_x\chi_x$ on $V$.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="a-reflection-in-math110">A Reflection in $\mathrm{Cl}_{0,3}(\mathbb{R})$</h3>
 <p>With $e_j^{2} = -1$ let $x = e_1$, so $x^{-1} = -e_1$ and $\alpha(e_j) = -e_j$. Then $\Sigma_{e_1}(v) = e_1\alpha(v)(-e_1) = e_1ve_1$, and on the basis $(-e_1, e_2, e_3)$: the reflection $\rho_{e_1}$. The square is $\Sigma_{e_1}^{2} = \mathrm{Ad}_{e_1\alpha(e_1)} = \mathrm{Ad}_{-e_1^{2}} = \mathrm{Ad}_1 = \mathrm{id}$, which is the reflection squared.</p>
@@ -165,7 +165,7 @@ $$</p>
 <td>Reflection by a vector of nonzero norm</td>
 </tr>
 <tr>
-<td>$\mathrm{Ad}_x$, $\chi_x$, $T_{x,x^{-1}}$</td>
+<td>$\mathrm{Ad}_x$, $\chi_x$, $L_{x}R_{x^{-1}}$</td>
 <td>Inner conjugation; twisted conjugation; ordinary sandwich</td>
 </tr>
 </tbody>

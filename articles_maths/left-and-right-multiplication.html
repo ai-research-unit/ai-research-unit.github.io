@@ -102,7 +102,7 @@ $$</p>
 <p>$$
 L(a)R(b)(x) = a x b, \qquad R(b)L(a)(x) = a x b
 $$</p>
-<p>with the same value on $x$, so that $L(a)R(b) = R(b)L(a) = T_{a,b}$, the sandwich of <em>The Sandwich Operator on an Algebra</em>.</p>
+<p>with the same value on $x$, so that $L(a)R(b) = R(b)L(a) = L_{a}R_{b}$, the sandwich of <em>The Sandwich Operator on an Algebra</em>.</p>
 <p><em>Proof.</em> $R(b)L(a)(x) = R(b)(ax) = (ax)b$ and $L(a)R(b)(x) = L(a)(xb) = a(xb)$; associativity makes the two equal.</p>
 <p>This is the sense in which the left and the right multiplications commute in an associative algebra: the identity $L(a)R(b) = R(b)L(a)$ is exactly the associativity of the product read on the two operators, and it holds for every pair precisely when the algebra is associative.</p>
 <h2 id="the-left-multiplications">The Left Multiplications</h2>
@@ -138,10 +138,10 @@ $$</p>
 <h3 id="the-two-regular-representations">The Two Regular Representations</h3>
 <p><strong>Corollary.</strong> The pair $(L, R)$ gives a homomorphism of algebras</p>
 <p>$$
-A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = T_{a,b},
+A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = L_{a}R_{b},
 $$</p>
 <p>whose image is the sandwich space $\mathcal{S}(A)$ of <em>The Sandwich Operator on an Algebra</em>; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$.</p>
-<p><em>Proof.</em> The left multiplications and the right multiplications commute by the two-sided product proposition, so the assignments $a \mapsto L(a)$ and $b \mapsto R(b)$ combine into a homomorphism on the tensor product, with the second factor read in the opposite order; the image is spanned by the products $L(a)R(b) = T_{a,b}$. The bimodule statement is the definition of a bimodule over $A$, and a left $A$-action commuting with a right $A$-action is a left $A^{\mathrm{e}}$-action by $(a \otimes b) \cdot x = a x b$.</p>
+<p><em>Proof.</em> The left multiplications and the right multiplications commute by the two-sided product proposition, so the assignments $a \mapsto L(a)$ and $b \mapsto R(b)$ combine into a homomorphism on the tensor product, with the second factor read in the opposite order; the image is spanned by the products $L(a)R(b) = L_{a}R_{b}$. The bimodule statement is the definition of a bimodule over $A$, and a left $A$-action commuting with a right $A$-action is a left $A^{\mathrm{e}}$-action by $(a \otimes b) \cdot x = a x b$.</p>
 <h2 id="the-intersection-and-the-sum">The Intersection and the Sum</h2>
 <h3 id="the-intersection">The Intersection</h3>
 <p><strong>Proposition.</strong> The two spaces of one-sided multiplications meet in the multiplications by the central elements:</p>
@@ -167,7 +167,7 @@ $$</p>
 <p><em>Proof.</em> Evaluate on $x$: $L(a)R(b)(x) - R(b)L(a)(x) = a(xb) - (ax)b = -((ax)b - a(xb)) = -A_{a,b}(x)$. The operator vanishes for all $a$, $b$ and $x$ exactly when every associator vanishes, which is associativity.</p>
 <h3 id="the-consequences">The Consequences</h3>
 <p>The identity has three consequences, and they are the reason the associator is stated both in the algebra and in the operator space.</p>
-<p><strong>Corollary.</strong> In an associative algebra the two subalgebras $L(A)$ and $R(A)$ of $\operatorname{End}_k(A)$ commute elementwise; equivalently, their sum $L(A) + R(A)$ is a commutative subalgebra of $\operatorname{End}_k(A)$, with product $L(a)R(b) = R(b)L(a) = T_{a,b}$.</p>
+<p><strong>Corollary.</strong> In an associative algebra the two subalgebras $L(A)$ and $R(A)$ of $\operatorname{End}_k(A)$ commute elementwise; equivalently, their sum $L(A) + R(A)$ is a commutative subalgebra of $\operatorname{End}_k(A)$, with product $L(a)R(b) = R(b)L(a) = L_{a}R_{b}$.</p>
 <p><strong>Corollary.</strong> The associators span the commutator space $[L(A), R(A)]$, which is the image of the operator $A_{(\cdot,\cdot)}$ and is a subspace of $\operatorname{End}_k(A)$ vanishing exactly when $A$ is associative; hence the deviation of $A$ from associativity is measured by the failure of the two one-sided multiplication algebras to commute.</p>
 <p><strong>Corollary.</strong> The map $A \otimes_k A^{\mathrm{opp}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the sandwich space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by <em>Central Simple Algebras and the Brauer Group</em>.</p>
 <p>The three corollaries are the operator form of the statement that associativity is not a property of the product alone but of the way the two sides of the product commute. The left and the right multiplications each know only one side; the associator is what happens when the two sides are brought together.</p>
@@ -179,7 +179,7 @@ $$</p>
 <h3 id="the-quaternions">The Quaternions</h3>
 <p>Let $A = \mathbb{H}$ over $\mathbb{R}$, of dimension $4$; the centre is $\mathbb{R}$, so the intersection $L(A) \cap R(A)$ is one-dimensional and the sum has dimension $7$ inside the space of dimension $16$. The four left multiplications and the four right multiplications are the two copies of the algebra and its opposite inside the operator space, and their products give the sandwich space, which is all of $\operatorname{End}_{\mathbb{R}}(\mathbb{H})$ because $\mathbb{H}$ is central simple over $\mathbb{R}$. The two three-dimensional pieces of the operator ladder of <em>The Operators on an Algebra</em> — the pure left multiplications and the derivations — are the further refinement of this picture.</p>
 <h2 id="summary">Summary</h2>
-<p>The left multiplication $L(a)$ and the right multiplication $R(a)$ are the two $k$-linear operators $x \mapsto ax$ and $x \mapsto xa$ on $A$; they are injective when $A$ is unital, and their images $L(A)$ and $R(A)$ are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each. The left multiplications compose as $L(a)L(b) = L(ab)$, so $L : A \to \operatorname{End}_k(A)$ is an algebra isomorphism onto $L(A)$; the right multiplications compose as $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and $R : A^{\mathrm{opp}} \to R(A)$ is an algebra isomorphism from the opposite algebra. The two families commute, $L(a)R(b) = R(b)L(a) = T_{a,b}$, exactly when the product is associative, and the obstruction is the associator,</p>
+<p>The left multiplication $L(a)$ and the right multiplication $R(a)$ are the two $k$-linear operators $x \mapsto ax$ and $x \mapsto xa$ on $A$; they are injective when $A$ is unital, and their images $L(A)$ and $R(A)$ are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each. The left multiplications compose as $L(a)L(b) = L(ab)$, so $L : A \to \operatorname{End}_k(A)$ is an algebra isomorphism onto $L(A)$; the right multiplications compose as $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and $R : A^{\mathrm{opp}} \to R(A)$ is an algebra isomorphism from the opposite algebra. The two families commute, $L(a)R(b) = R(b)L(a) = L_{a}R_{b}$, exactly when the product is associative, and the obstruction is the associator,</p>
 <p>$$
 L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad A_{a,b}(x) = (ax)b - a(xb);
 $$</p>
@@ -226,7 +226,7 @@ $$</p>
 <td>the enveloping algebra</td>
 </tr>
 <tr>
-<td>$T_{a,b} = L(a)R(b) = R(b)L(a)$</td>
+<td>$L_{a}R_{b} = L(a)R(b) = R(b)L(a)$</td>
 <td>the sandwich, the product of the two sides</td>
 </tr>
 <tr>

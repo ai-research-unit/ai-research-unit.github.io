@@ -98,9 +98,9 @@ $$</p>
 <p>The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$, a minimal left ideal here, and a position-space treatment extends this to a spinor field $\psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,</p>
 <p>$$
 i\hbar\,\partial/\partial t'\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
-\qquad \boldsymbol\alpha_k = T_{\vec e_k,\vec e_z}, \quad \beta = iT_{e_t,\vec e_x},
+\qquad \boldsymbol\alpha_k = L_{\vec e_k}R_{\vec e_z}, \quad \beta = iL_{e_t}R_{\vec e_x},
 $$</p>
-<p>with $V(r) = ϙ\phi = -\kappa/r$ and $T_{a,b}$ the two-sided multiplication, $T_{a,b}\psi = a\psi b$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation</p>
+<p>with $V(r) = ϙ\phi = -\kappa/r$ and $L_{a}R_{b}$ the two-sided multiplication, $L_{a}R_{b}\psi = a\psi b$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation</p>
 <p>$$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*} .
 $$</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 \sum_\mu\epsilon_\mu\,\partial/\partial Q_\mu j_{5\mu} = 2im\,\bar\psi\,\chi\,\psi ,
 $$</p>
-<p>with $\epsilon=(1,-1,-1,-1)$ the sign vector and $\chi=i\tilde\Xi_{\mathrm{ad}}$ the central grading ($\chi^2=e_t$), represented on the Dirac module by the chirality cell $-iT_{e_t,\vec e_z}$; the divergence vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).</p>
+<p>with $\epsilon=(1,-1,-1,-1)$ the sign vector and $\chi=i\tilde\Xi_{\mathrm{ad}}$ the central grading ($\chi^2=e_t$), represented on the Dirac module by the chirality cell $-iL_{e_t}R_{\vec e_z}$; the divergence vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).</p>
 <p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $p \to p - ϙ\vec A$ and $i\hbar\partial/\partial t' \to i\hbar\partial/\partial t' - ϙ\phi$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
 <h2 id="the-finite-basis-and-the-balance-of-the-two-components">The Finite Basis and the Balance of the Two Components</h2>
 <p>The transcription above is written for continuous fields, and a numerical realization of it needs an object the corpus does not carry: a <strong>finite basis</strong>. The four-component spinor is expanded in a finite set of functions, the matrix problem is assembled, and the levels are read from it. This section states the one condition the framework puts on the choice of basis, says which part of the condition is the framework's and which is input, and records what the condition does not give.</p>
@@ -407,12 +407,12 @@ $$</p>
 <td>Isomorphism with $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$T_{a,b}$, $T_{a,b}\psi = a\psi b$</td>
-<td>Two-sided multiplication by the pair $(a,b)$; $T_{a,b}T_{c,d} = T_{ac,db}$; $\boldsymbol\alpha_k = T_{\vec e_k,\vec e_z}$, $\beta = iT_{e_t,\vec e_x}$</td>
+<td>$L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$</td>
+<td>Two-sided multiplication by the pair $(a,b)$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$; $\boldsymbol\alpha_k = L_{\vec e_k}R_{\vec e_z}$, $\beta = iL_{e_t}R_{\vec e_x}$</td>
 </tr>
 <tr>
 <td>$\chi = i\tilde\Xi_{\mathrm{ad}}$, $\chi^2 = e_t$</td>
-<td>The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the Dirac module by the chirality cell $-iT_{e_t,\vec e_z}$</td>
+<td>The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the Dirac module by the chirality cell $-iL_{e_t}R_{\vec e_z}$</td>
 </tr>
 <tr>
 <td>$\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$</td>

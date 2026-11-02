@@ -81,7 +81,7 @@
 $$</p>
 <p>and the maps $x\mapsto L_{x}$ and $x\mapsto R_{x}$ are <strong>isometric</strong> algebra anti-isomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$ onto their images; their images are closed subalgebras of the bounded operators when the algebra is complete.</p>
 <p><em>Proof.</em> Submultiplicativity gives $\lVert L_{x}y\rVert\le\lVert x\rVert\lVert y\rVert$, whence $\lVert L_{x}\rVert\le\lVert x\rVert$; and $\lVert L_{x}\rVert\ge\lVert L_{x}1\rVert/\lVert1\rVert=\lVert x\rVert$, whence equality. The representation law $L_{x}L_{y}=L_{xy}$ makes $x\mapsto L_{x}$ multiplicative and hence an isomorphism onto its image, and $R_{x}R_{y}=R_{yx}$ makes $x\mapsto R_{x}$ an anti-isomorphism; an isometry onto its image is injective and its image is closed when the target is complete.</p>
-<p><strong>Proposition (the two representations commute).</strong> For all $x,y$ one has $L_{x}R_{y}=R_{y}L_{x}$, the operator $L_{x}R_{y}$ is the sandwich $T_{x,y}$, and $\lVert T_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert$.</p>
+<p><strong>Proposition (the two representations commute).</strong> For all $x,y$ one has $L_{x}R_{y}=R_{y}L_{x}$, the operator $L_{x}R_{y}$ is the sandwich $L_{x}R_{y}$, and $\lVert L_{x}R_{y}\rVert\le\lVert x\rVert\lVert y\rVert$.</p>
 <p><em>Proof.</em> Both sides send $z$ to $xzy$; the bound is $\lVert L_{x}R_{y}\rVert\le\lVert L_{x}\rVert\lVert R_{y}\rVert=\lVert x\rVert\lVert y\rVert$ by the theorem.</p>
 <p><strong>Corollary (the algebra is a subalgebra of its bounded operators).</strong> If the algebra is complete and the norm submultiplicative with a unit of norm one, the left regular representation identifies it isometrically with the closed subalgebra $\{L_{x}\}\subseteq\mathcal{B}(\mathrm{Cl}(V,\mathfrak{Q}))$, and the completion of the algebra is identified with the closure of that image.</p>
 <p><em>Proof.</em> The theorem gives the isometry and the closure; the completion of the algebra is isometric to the closure of the image because the image is dense in its own closure and isometric to the algebra, and an isometry between dense subspaces extends to an isometry of the completions.</p>
@@ -117,7 +117,7 @@ $$</p>
 <h3 id="the-completion-of-the-euclidean-algebra">The Completion of the Euclidean Algebra</h3>
 <p>For the Euclidean algebra of an infinite-dimensional space the Euclidean norm fails, with the bound $2^{n/2}$ of the finite-dimensional subalgebras growing without bound; the projective norm and the C<em>-norm succeed, and the two completions coincide exactly when the coefficient series converge absolutely in the appropriate sense, a comparison left to </em>The Completion of a Clifford Algebra*.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>left</strong> and the <strong>right multiplication</strong> of a normed Clifford algebra with a submultiplicative norm and a unit of norm one satisfy $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and commute, $L_{x}R_{y}=R_{y}L_{x}=T_{x,y}$; consequently the left regular representation is an <strong>isometric isomorphism</strong> of the algebra onto a closed subalgebra of its bounded operators and the algebra is the same normed algebra as that subalgebra.</p>
+<p>The <strong>left</strong> and the <strong>right multiplication</strong> of a normed Clifford algebra with a submultiplicative norm and a unit of norm one satisfy $\lVert L_{x}\rVert=\lVert R_{x}\rVert=\lVert x\rVert$ and commute, $L_{x}R_{y}=R_{y}L_{x}=L_{x}R_{y}$; consequently the left regular representation is an <strong>isometric isomorphism</strong> of the algebra onto a closed subalgebra of its bounded operators and the algebra is the same normed algebra as that subalgebra.</p>
 <p>The product is <strong>jointly continuous</strong> exactly when it is bounded on the product of the unit balls, equivalently when the operator norms of the multiplications are uniformly bounded, equivalently when the norm is equivalent to a submultiplicative one; and on a <strong>complete</strong> normed algebra on which the product is defined everywhere, separate continuity already implies joint continuity, by the <strong>uniform boundedness principle</strong>. That hypothesis — the product defined on the whole product of the complete space — cannot be dropped: for the <strong>Euclidean norm</strong> of the definite case the product is separately continuous on the algebraic algebra, each one-sided multiplication is bounded, and yet the bound $2^{n/2}$ grows without bound with the dimension, so there is no uniform bound and the product does not extend to the completion; the completion is the Fock space of the canonical anticommutation relations and not an algebra. The repair is the projective norm and the C<em>-norm of </em>The Completion of a Clifford Algebra*, for which the criterion holds at its fourth line and the completion is a Banach algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -141,7 +141,7 @@ $$</p>
 <td>the representation laws</td>
 </tr>
 <tr>
-<td>$L_{x}R_{y}=R_{y}L_{x}=T_{x,y}$</td>
+<td>$L_{x}R_{y}=R_{y}L_{x}=L_{x}R_{y}$</td>
 <td>the sandwich as a product of the two</td>
 </tr>
 <tr>

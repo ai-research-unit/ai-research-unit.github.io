@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The Clifford algebra of a four-dimensional space has sixteen basis elements, and they are usually grouped by <strong>grade</strong>: one scalar, four vectors, six bivectors, four trivectors, one pseudoscalar. The grouping is the visible form of the $\mathbb{Z}$-grading of the exterior algebra. The Clifford algebra itself is not $\mathbb{Z}$-graded: the product of two vectors has a scalar part and a bivector part, so the grade is not additive on the product. What the Clifford algebra has is a $\mathbb{Z}$-<strong>filtration</strong>, whose associated graded algebra is the exterior algebra; the parity is the only grading that survives on the algebra itself.</p>
 <p>The biquaternion algebra is the even part. Its product sees the parity and nothing finer: the product of two even elements is even, and the split of the even part into scalars, bivectors and pseudoscalars is not visible in the multiplication table of $\mathbb{B}$ alone. The odd slot is worse: it is a copy of $\mathbb{B}$, of real dimension eight, and the product of two odd elements is even, but the split of the odd slot into four vectors and four trivectors is not a submodule split. Left multiplication by an even element mixes the two.</p>
-<p>The sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $T_{tx},T_{xy},T_{yy},T_{zy}$, a staircase, not a row or a column. The frame is the choice of that staircase.</p>
+<p>The sixteen two-sided operators $L_\muR_\nu=L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_tR_x,L_xR_y,L_yR_y,L_zR_y$, a staircase, not a row or a column. The frame is the choice of that staircase.</p>
 <p>The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the appendix. The two-sided basis is <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>; the even slot and the odd slot are <em>Biquaternion Versors and the Orthogonal Group</em>; the traces that read the scalar and pseudoscalar coordinates are <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-two-gradings">The Two Gradings</h2>
 <p><strong>The parity grading.</strong> The Clifford algebra is
@@ -183,11 +183,11 @@ $$
 $$
 for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the bivectors that the vector $u$ defines; it is not the identity on the whole of $\mathbb{B}$, because an even element need not commute with $u$. The twisted rule is the multiplication of the Clifford algebra written over its even part. The product of two odd elements is even, and the product of an even and an odd element is odd; this is the parity grading in operation form.</p>
 <h2 id="the-sixteen-two-sided-operators">The Sixteen Two-Sided Operators</h2>
-<p><strong>The theorem.</strong> Each $T_{\mu\nu}=L_\mu R_\nu$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.</p>
+<p><strong>The theorem.</strong> Each $L_\muR_\nu=L_\mu R_\nu$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>$T_{\mu\nu}$</th>
+<th>$L_\muR_\nu$</th>
 <th>$\nu=t$</th>
 <th>$\nu=x$</th>
 <th>$\nu=y$</th>
@@ -237,23 +237,23 @@ $$
 The counts are the dimensions of the exterior algebra; the table is a bijection between the sixteen two-sided operators and the sixteen Clifford basis elements.</p>
 <p><strong>The five cells of the frame.</strong> The frame is the five entries
 $$
-iT_{tx},\qquad
-iT_{xy},\qquad
-iT_{yy},\qquad
-iT_{zy},\qquad
--iT_{tz}.
+iL_tR_x,\qquad
+iL_xR_y,\qquad
+iL_yR_y,\qquad
+iL_zR_y,\qquad
+-iL_tR_z.
 $$
 The first four have grade 1; the last has grade 4. The four vectors are the staircase
 $$
-T_{tx},\ T_{xy},\ T_{yy},\ T_{zy},
+L_tR_x,\ L_xR_y,\ L_yR_y,\ L_zR_y,
 $$
 not a row and not a column. This is the exact sense in which the frame is a choice, not a property of the index pair.</p>
 <p><strong>The Hodge pairs in the table.</strong> The four vector entries are paired with the four trivector entries:
 $$
-T_{tx}\leftrightarrow T_{ty},\qquad
-T_{xy}\leftrightarrow T_{xx},\qquad
-T_{yy}\leftrightarrow T_{yx},\qquad
-T_{zy}\leftrightarrow T_{zx}.
+L_tR_x\leftrightarrow L_tR_y,\qquad
+L_xR_y\leftrightarrow L_xR_x,\qquad
+L_yR_y\leftrightarrow L_yR_x,\qquad
+L_zR_y\leftrightarrow L_zR_x.
 $$
 Each pair is one Hodge pair $(v_\mu,v_{\nu\rho\sigma})$. The pattern is the frame written twice: the vector entry and its trivector partner differ by the exchange of the second index and the sign of the scalar $i$.</p>
 <h2 id="what-the-biquaternion-product-sees">What the Biquaternion Product Sees</h2>
@@ -268,14 +268,14 @@ $$
 in the real-linear dictionary. The grade of the operation is recovered from the frame, not from the biquaternion product. The operation-level statement is <em>The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>The two dictionaries.</strong> The complex-linear dictionary reads the same five cells as one-sided and two-sided operators,
 $$
-iT_{tx}=R_{i e_x},\qquad
-iT_{ky}=L_{i e_k}R_{e_y},\qquad
--iT_{tz}=R_{-i e_z},
+iL_tR_x=R_{i e_x},\qquad
+iL_{i e_k}R_{e_y},\qquad
+-iL_tR_z=R_{-i e_z},
 $$
 up to the scalar $i$; its even part is the complexified even Clifford algebra $M_2\oplus M_2$, not the left factor $\mathbb{B}$. The real-linear dictionary has the left factor as its even part. The grade table is the same in both, because it is a table of the same sixteen two-sided operators against the same abstract Clifford basis; the difference is which operators represent the frame, not the grades.</p>
 <h2 id="the-frame-dependence">The Frame Dependence</h2>
 <p><strong>The canonical part.</strong> The filtration and the parity are canonical: they are defined by the Clifford algebra and the vector space $V$, with no choice of frame. The dimensions $1,4,6,4,1$ are canonical.</p>
-<p><strong>The frame part.</strong> The assignment of a grade to a particular $T_{\mu\nu}$ is frame-dependent. A different frame $\tilde v_\mu=Uv_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.</p>
+<p><strong>The frame part.</strong> The assignment of a grade to a particular $L_\muR_\nu$ is frame-dependent. A different frame $\tilde v_\mu=Uv_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.</p>
 <p><strong>The invariant statement.</strong> The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five cells are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.</p>
 <h2 id="summary">Summary</h2>
 <p>The Clifford algebra of four dimensions is $\mathbb{Z}$-filtered, with associated graded $\Lambda^{\bullet}V$ of dimensions $1,4,6,4,1$; it is $\mathbb{Z}/2$-graded by parity, and that is the only grading on the algebra itself. The even part is $\mathbb{B}$; the odd part is a copy of $\mathbb{B}$ of real dimension eight, split as four vectors plus four trivectors. The split is not a $\mathbb{B}$-submodule split; it is recovered from the frame by Hodge duality. The sixteen two-sided operators are exactly the sixteen Clifford basis elements up to $\pm1,\pm i$, with the grade table
@@ -288,7 +288,7 @@ y & 2 & 3 & 1 & 2\\
 z & 2 & 3 & 1 & 2
 \end{array}
 $$
-and the five cells of the frame are $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ and $-iT_{tz}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.</p>
+and the five cells of the frame are $iL_tR_x$, $iL_xR_y$, $iL_yR_y$, $iL_zR_y$ and $-iL_tR_z$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -319,27 +319,27 @@ and the five cells of the frame are $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ a
 </tr>
 <tr>
 <td>five cells</td>
-<td>$iT_{tx},iT_{xy},iT_{yy},iT_{zy},-iT_{tz}$</td>
+<td>$iL_tR_x,iL_xR_y,iL_yR_y,iL_zR_y,-iL_tR_z$</td>
 </tr>
 <tr>
 <td>scalar</td>
-<td>$T_{tt}=I$</td>
+<td>$L_tR_t=I$</td>
 </tr>
 <tr>
 <td>pseudoscalar</td>
-<td>$T_{tz}$ up to $-i$</td>
+<td>$L_tR_z$ up to $-i$</td>
 </tr>
 <tr>
 <td>vectors</td>
-<td>$T_{tx},T_{xy},T_{yy},T_{zy}$</td>
+<td>$L_tR_x,L_xR_y,L_yR_y,L_zR_y$</td>
 </tr>
 <tr>
 <td>trivectors</td>
-<td>$T_{ty},T_{xx},T_{yx},T_{zx}$</td>
+<td>$L_tR_y,L_xR_x,L_yR_x,L_zR_x$</td>
 </tr>
 <tr>
 <td>bivectors</td>
-<td>$T_{xt},T_{xz},T_{yt},T_{yz},T_{zt},T_{zz}$</td>
+<td>$L_xR_t,L_xR_z,L_yR_t,L_yR_z,L_zR_t,L_zR_z$</td>
 </tr>
 </tbody>
 </table></div>
@@ -381,7 +381,7 @@ and the five cells of the frame are $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ a
 <td>the pseudoscalar, $v_0v_1v_2v_3$</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu}$</td>
+<td>$L_\muR_\nu$</td>
 <td>the two-sided operator $L_\mu R_\nu$</td>
 </tr>
 <tr>
@@ -401,10 +401,10 @@ and the five cells of the frame are $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ a
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five gammas, the Clifford basis and the set.</li>
-<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $T_{\mu\nu}$ and their multiplication table.</li>
-<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$ and $T_{a,b}$.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $L_\muR_\nu$ and their multiplication table.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$ and $L_{a}R_{b}$.</li>
 <li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the even and odd slots of the envelope.</li>
-<li><a href="the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a>, for the two coordinates $T_{tt}$ and $T_{tz}$ that the traces read.</li>
+<li><a href="the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a>, for the two coordinates $L_tR_t$ and $L_tR_z$ that the traces read.</li>
 <li><a href="the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a>, for the operation-level form of the odd generators.</li>
 <li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities of $M_4(\mathbb{C})$</a>, for the chirality and its relation to the pseudoscalar.</li>
 <li><a href="../articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>, for the explicit matrices and the even-part identification, §<em>The Clifford Structure and the Frame</em>.</li>
@@ -412,7 +412,7 @@ and the five cells of the frame are $iT_{tx}$, $iT_{xy}$, $iT_{yy}$, $iT_{zy}$ a
 <h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
 <p>The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.</p>
 <p>$$
-\gamma_0=iT_{tx},\quad \gamma_1=iT_{xy},\quad \gamma_2=iT_{yy},\quad \gamma_3=iT_{zy},\quad \gamma_5=-iT_{tz},
+\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z,
 $$</p>
 <p>with $\gamma_\mu=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.</p>
 <p>The grade table in the gamma basis is

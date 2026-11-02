@@ -70,18 +70,18 @@
       <div class="article-body">
         <h1 id="the-sandwich-the-difference-family-and-the-adjoints-of-math0"><strong>The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The three questions.</strong> Three constructions sit beside the two-sided products and are read through them: the <strong>adjoints</strong>, which are the two-sided products taken with respect to a form; the <strong>sandwich</strong> $\Theta_{A}=T_{A,A^{*}}$, which is the member whose second parameter is the star of the first; and the <strong>difference family</strong> $L_{A}-R_{B}$, which is the operator $X\mapsto AX-XB$ and is the general Sylvester operator. This article computes the three and relates them to the cone of products.</p>
+<p><strong>The three questions.</strong> Three constructions sit beside the two-sided products and are read through them: the <strong>adjoints</strong>, which are the two-sided products taken with respect to a form; the <strong>sandwich</strong> $\Theta_{A}=L_{A}R_{A^{*}}$, which is the member whose second parameter is the star of the first; and the <strong>difference family</strong> $L_{A}-R_{B}$, which is the operator $X\mapsto AX-XB$ and is the general Sylvester operator. This article computes the three and relates them to the cone of products.</p>
 <p><strong>The result in one line.</strong> The transpose, the plain adjoint and the Hilbert–Schmidt adjoint act on the parameters and never exchange the two slots; the sandwich is a monoid under composition, positive only on its Hermitian part, of rank $(\operatorname{rank}A)^{2}$; and the difference family is a subspace of dimension $2n^{2}-1$ whose members are the intertwiners of the pair.</p>
-<p><strong>The contrast that matters.</strong> For the quaternionic plain form at $n=2$ the plain adjoint <strong>exchanges the two slots</strong>, $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$, and the isometry group is the small $\{\pm\mathrm{Ad}_{\tilde Q}\}$ of complex dimension three. For the trace forms on $M_{n}(\mathbb{C})$ the adjoint <strong>conjugates each slot separately</strong> and the isometry group is the large $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars. <strong>The difference is the difference of the two bilinear forms, one indefinite of signature $(1,3)$ and one split or definite, and it is not a difference of dimension.</strong></p>
+<p><strong>The contrast that matters.</strong> For the quaternionic plain form at $n=2$ the plain adjoint <strong>exchanges the two slots</strong>, $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$, and the isometry group is the small $\{\pm\mathrm{Ad}_{\tilde Q}\}$ of complex dimension three. For the trace forms on $M_{n}(\mathbb{C})$ the adjoint <strong>conjugates each slot separately</strong> and the isometry group is the large $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars. <strong>The difference is the difference of the two bilinear forms, one indefinite of signature $(1,3)$ and one split or definite, and it is not a difference of dimension.</strong></p>
 <p><strong>Boundaries.</strong> The products and the cone are <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>; the one-sided families are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>; the length is <em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em>. At $n=2$ the plain adjoint and the types are <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, §<em>The Plain Adjoint and the Types</em>, and the Hermitian sandwich of the algebra is Part V. The Sylvester operator on $M_{4}(\mathbb{C})$ is <em>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator is $T_{A,B}(X)=AXB$ with matrix $B^{\mathsf T}\otimes A$. The transpose of a matrix is ${}^{\mathsf T}$, the conjugate transpose ${}^{*}$, the Hilbert–Schmidt adjoint of an operator ${}^{\dagger}$, the adjoint for the trace bilinear form ${}^{\approx}$. The trace form is $\langle X,Y\rangle_{\mathrm{tr}}=\operatorname{tr}(X^{\mathsf T}Y)$ and the Hilbert–Schmidt form is $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y)$; they are two different forms and are never exchanged.</p>
+<p><strong>Conventions.</strong> The algebra is $M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator is $L_{A}R_{B}(X)=AXB$ with matrix $B^{\mathsf T}\otimes A$. The transpose of a matrix is ${}^{\mathsf T}$, the conjugate transpose ${}^{*}$, the Hilbert–Schmidt adjoint of an operator ${}^{\dagger}$, the adjoint for the trace bilinear form ${}^{\approx}$. The trace form is $\langle X,Y\rangle_{\mathrm{tr}}=\operatorname{tr}(X^{\mathsf T}Y)$ and the Hilbert–Schmidt form is $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y)$; they are two different forms and are never exchanged.</p>
 <h2 id="the-transpose-and-the-trace-form">The Transpose and the Trace Form</h2>
 <h3 id="the-transpose">The Transpose</h3>
 <p><strong>Proposition.</strong> For every pair,
 $$
-\bigl(T_{A,B}\bigr)^{\mathsf T}=T_{A^{\mathsf T},B^{\mathsf T}}.
+\bigl(L_{A}R_{B}\bigr)^{\mathsf T}=L_{A^{\mathsf T}}R_{B^{\mathsf T}}.
 $$</p>
-<p><em>Proof.</em> The matrix of the operator is $B^{\mathsf T}\otimes A$, whose transpose is $B\otimes A^{\mathsf T}=(A^{\mathsf T})^{\mathsf T}\otimes A^{\mathsf T}$, the matrix of $T_{A^{\mathsf T},B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> The matrix of the operator is $B^{\mathsf T}\otimes A$, whose transpose is $B\otimes A^{\mathsf T}=(A^{\mathsf T})^{\mathsf T}\otimes A^{\mathsf T}$, the matrix of $L_{A^{\mathsf T}}R_{B^{\mathsf T}}$.</p>
 <p><strong>The transpose conjugates the two parameters and exchanges nothing.</strong> This is already a contrast with the quaternionic plain form, where the adjoint exchanges the slots; the reason is that the transpose acts on each tensor factor separately, while the quaternionic adjoint acts on the product of the two.</p>
 <p><strong>The transpose of the two one-sided families.</strong> The proposition specialises to $(L_{A})^{\mathsf T}=L_{A^{\mathsf T}}$ and $(R_{B})^{\mathsf T}=R_{B^{\mathsf T}}$, so each copy is carried to itself and not to the other copy. The exchange of the two copies is the flip of <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>, a different involution.</p>
 <h3 id="the-trace-bilinear-form">The Trace Bilinear Form</h3>
@@ -98,39 +98,39 @@ a form of signature $(n^{2},n^{2})$ on the $2n^{2}$ real dimensions; the isotrop
 <h3 id="the-plain-adjoint">The Plain Adjoint</h3>
 <p><strong>Theorem.</strong> The adjoint of a two-sided operator for the trace bilinear form is the transpose, and
 $$
-\bigl(T_{A,B}\bigr)^{\approx}=T_{A^{\mathsf T},B^{\mathsf T}}.
+\bigl(L_{A}R_{B}\bigr)^{\approx}=L_{A^{\mathsf T}}R_{B^{\mathsf T}}.
 $$</p>
 <p><em>Proof.</em> By the cyclicity of the trace,
 $$
-\bigl\langle T_{A,B}X,Y\bigr\rangle_{\mathrm{tr}}
+\bigl\langle L_{A}R_{B}X,Y\bigr\rangle_{\mathrm{tr}}
 =\operatorname{tr}\bigl((AXB)^{\mathsf T}Y\bigr)
 =\operatorname{tr}\bigl(X^{\mathsf T}A^{\mathsf T}YB^{\mathsf T}\bigr)
-=\bigl\langle X,T_{A^{\mathsf T},B^{\mathsf T}}Y\bigr\rangle_{\mathrm{tr}} .
+=\bigl\langle X,L_{A^{\mathsf T}}R_{B^{\mathsf T}}Y\bigr\rangle_{\mathrm{tr}} .
 $$</p>
 <p><strong>The self-adjoint products.</strong> A nonzero product is self-adjoint for the trace form exactly when its two parameters are symmetric or both skew-symmetric, in the same class:
 $$
-\bigl(T_{A,B}\bigr)^{\approx}=T_{A,B}\iff A^{\mathsf T}=\lambda A,\quad B^{\mathsf T}=\lambda^{-1}B,\quad\lambda=\pm1 .
+\bigl(L_{A}R_{B}\bigr)^{\approx}=L_{A}R_{B}\iff A^{\mathsf T}=\lambda A,\quad B^{\mathsf T}=\lambda^{-1}B,\quad\lambda=\pm1 .
 $$
 The sign is an invariant of the class, because the rescaling $(\mu A,\mu^{-1}B)$ leaves $\lambda$ unchanged; the classes with $\lambda=1$ contain a pair of symmetric matrices and the classes with $\lambda=-1$ a pair of skew-symmetric ones.</p>
-<p><strong>The skew classes are not empty, and they are not the Hermitian ones.</strong> At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex skew in both slots, so $T_{iJ,J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. <strong>The transpose sees the symmetric and the skew-symmetric parameters alike, and the star does not.</strong></p>
+<p><strong>The skew classes are not empty, and they are not the Hermitian ones.</strong> At $n=2$, with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, the pair $(iJ,J)$ is complex skew in both slots, so $L_{iJ}R_{J}$ is self-adjoint for the trace form; it is not self-adjoint for the Hilbert–Schmidt form, because $A^{*}=A$ and $B^{*}=-B$ carry incompatible signs. <strong>The transpose sees the symmetric and the skew-symmetric parameters alike, and the star does not.</strong></p>
 <p><strong>The isometries.</strong> The operator preserves the trace form exactly when the class of its pair contains two complex orthogonal matrices:
 $$
-\langle T_{A,B}X,T_{A,B}Y\rangle_{\mathrm{tr}}=\langle X,Y\rangle_{\mathrm{tr}}\iff A^{\mathsf T}A=\lambda\mathrm I_{n},\quad BB^{\mathsf T}=\lambda^{-1}\mathrm I_{n},\quad\lambda\ne0 .
+\langle L_{A}R_{B}X,L_{A}R_{B}Y\rangle_{\mathrm{tr}}=\langle X,Y\rangle_{\mathrm{tr}}\iff A^{\mathsf T}A=\lambda\mathrm I_{n},\quad BB^{\mathsf T}=\lambda^{-1}\mathrm I_{n},\quad\lambda\ne0 .
 $$</p>
-<p><em>Proof.</em> The left side is $\langle X,T_{A^{\mathsf T}A,\,BB^{\mathsf T}}Y\rangle_{\mathrm{tr}}$, which equals $\langle X,Y\rangle_{\mathrm{tr}}$ for all $X,Y$ exactly when the operator $T_{A^{\mathsf T}A,BB^{\mathsf T}}$ is the identity. The identity operator is $T_{\lambda\mathrm I_{n},\lambda^{-1}\mathrm I_{n}}$ and not only $T_{\mathrm I_{n},\mathrm I_{n}}$, by the fibre theorem, so the condition is $A^{\mathsf T}A=\lambda\mathrm I_{n}$ and $BB^{\mathsf T}=\lambda^{-1}\mathrm I_{n}$. Rescaling the pair by $\lambda^{-1/2}$ brings both parameters to the orthogonal group without changing the operator.</p>
+<p><em>Proof.</em> The left side is $\langle X,L_{A^{\mathsf T}A}R_{\,BB^{\mathsf T}}Y\rangle_{\mathrm{tr}}$, which equals $\langle X,Y\rangle_{\mathrm{tr}}$ for all $X,Y$ exactly when the operator $L_{A^{\mathsf T}A}R_{BB^{\mathsf T}}$ is the identity. The identity operator is $L_{\lambda\mathrm I_{n}}R_{\lambda^{-1}\mathrm I_{n}}$ and not only $L_{\mathrm I_{n}}R_{\mathrm I_{n}}$, by the fibre theorem, so the condition is $A^{\mathsf T}A=\lambda\mathrm I_{n}$ and $BB^{\mathsf T}=\lambda^{-1}\mathrm I_{n}$. Rescaling the pair by $\lambda^{-1/2}$ brings both parameters to the orthogonal group without changing the operator.</p>
 <p><strong>The count.</strong> The complex orthogonal group $\mathrm{O}(n,\mathbb{C})$ has complex dimension $n(n-1)/2$, so the isometry group of the trace form inside the family is $\mathrm{O}(n,\mathbb{C})\times\mathrm{O}(n,\mathbb{C})$ modulo the scalars, of complex dimension $n^{2}-n$. <strong>The trace form is the form whose isometries are the orthogonal pairs, and this is the exact analogue of the quaternionic case with the orthogonal group in place of the small group of inner automorphisms.</strong></p>
 <h2 id="the-hilbertschmidt-adjoint">The Hilbert–Schmidt Adjoint</h2>
 <h3 id="the-dagger">The Dagger</h3>
 <p><strong>Theorem.</strong> The adjoint of a two-sided operator for the Hilbert–Schmidt form is
 $$
-\bigl(T_{A,B}\bigr)^{\dagger}=T_{A^{*},B^{*}}.
+\bigl(L_{A}R_{B}\bigr)^{\dagger}=L_{A^{*}}R_{B^{*}}.
 $$</p>
 <p><em>Proof.</em> The form is $\operatorname{tr}(X^{*}Y)$, and
 $$
-\bigl\langle T_{A,B}X,Y\bigr\rangle_{\mathrm{HS}}
+\bigl\langle L_{A}R_{B}X,Y\bigr\rangle_{\mathrm{HS}}
 =\operatorname{tr}\bigl(B^{*}X^{*}A^{*}Y\bigr)
 =\operatorname{tr}\bigl(X^{*}A^{*}YB^{*}\bigr)
-=\bigl\langle X,T_{A^{*},B^{*}}Y\bigr\rangle_{\mathrm{HS}} .
+=\bigl\langle X,L_{A^{*}}R_{B^{*}}Y\bigr\rangle_{\mathrm{HS}} .
 $$</p>
 <p><strong>The dagger conjugates each slot and exchanges neither.</strong> The two parameters are conjugated separately and their order is kept, which is the operator form of the fact that the Hilbert–Schmidt form is the tensor product of the Hilbert–Schmidt forms of the two slots.</p>
 <p><strong>The composition with the length.</strong> The dagger preserves the cone and the length:
@@ -139,41 +139,41 @@ $$
 $$
 because the array of $M^{\dagger}$ is obtained from the array of $M$ by conjugating the entries and permuting the two index sets, and a permutation of the rows and of the columns preserves the rank. <strong>The length is a unitary invariant of the operator, and so are its strata $\mathcal{C}_{r}$.</strong></p>
 <h3 id="the-self-adjoint-and-the-skew-adjoint">The Self-Adjoint and the Skew-Adjoint</h3>
-<p><strong>Theorem (the types).</strong> Let $T=T_{A,B}$ be nonzero and put $\lambda$ the scalar of its class, $|\lambda|=1$.</p>
+<p><strong>Theorem (the types).</strong> Let $T=L_{A}R_{B}$ be nonzero and put $\lambda$ the scalar of its class, $|\lambda|=1$.</p>
 <ul>
 <li>$T$ is self-adjoint exactly when its class contains a pair of Hermitian matrices.</li>
 <li>$T$ is skew-adjoint exactly when its class contains a pair with $A$ skew-Hermitian and $B$ Hermitian.</li>
 </ul>
-<p><em>Proof.</em> The equation $T^{\dagger}=T$ reads $T_{A^{*},B^{*}}=T_{A,B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The skew case reads $T_{A^{*},B^{*}}=T_{-A,B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the skew-Hermitian and Hermitian case.</p>
+<p><em>Proof.</em> The equation $T^{\dagger}=T$ reads $L_{A^{*}}R_{B^{*}}=L_{A}R_{B}$, which by the fibre theorem is $A^{*}=\lambda A$, $B^{*}=\lambda^{-1}B$; taking adjoints again gives $|\lambda|=1$, and rescaling the pair by $\mu$ with $\mu/\bar\mu=\lambda$ brings both parameters to the Hermitian case. The skew case reads $L_{A^{*}}R_{B^{*}}=L_{-A}R_{B}$, that is $A^{*}=-\lambda A$ and $B^{*}=\lambda^{-1}B$, and the same rescaling brings the pair to the skew-Hermitian and Hermitian case.</p>
 <p><strong>The sign is carried by the first slot and not by the two.</strong> The asymmetry is not a convention: the two slots enter the product in opposite orders, so the sign of the adjoint equation reaches them with opposite signs, and only the first slot can carry the minus. <strong>At $n=2$ the quaternionic plain form has no skew sector at all among the nonzero products; the Hilbert–Schmidt form has a large one, of real dimension $2n^{2}-1$ in the cone.</strong></p>
 <p><strong>The count of the skew sector.</strong> The pairs $(A,B)$ with $A$ skew-Hermitian and $B$ Hermitian form a real space of dimension $n^{2}+n^{2}=2n^{2}$, and the scaling by the unit circle is one real parameter, so the skew-adjoint products form a real cone of real dimension $2n^{2}-1$: <strong>the count of the sandwich cone, because the condition is real-linear and replaces the complex freedom of a parameter by the real freedom of the anti-Hermitian one.</strong></p>
 <h3 id="the-isometries">The Isometries</h3>
-<p><strong>Theorem.</strong> The operator $T_{A,B}$ preserves the Hilbert–Schmidt form exactly when the class of its pair contains two unitary matrices:
+<p><strong>Theorem.</strong> The operator $L_{A}R_{B}$ preserves the Hilbert–Schmidt form exactly when the class of its pair contains two unitary matrices:
 $$
-T_{A,B}^{\dagger}T_{A,B}=\mathrm I_{N}\iff A^{*}A=\lambda\mathrm I_{n},\quad BB^{*}=\lambda^{-1}\mathrm I_{n},\quad\lambda>0 .
+L_{A}R_{B}^{\dagger}L_{A}R_{B}=\mathrm I_{N}\iff A^{*}A=\lambda\mathrm I_{n},\quad BB^{*}=\lambda^{-1}\mathrm I_{n},\quad\lambda>0 .
 $$</p>
-<p><em>Proof.</em> By the composition law, $T_{A^{*},B^{*}}T_{A,B}=T_{A^{*}A,\,BB^{*}}$, which is the identity exactly when $A^{*}A=\lambda\mathrm I_{n}$ and $BB^{*}=\lambda^{-1}\mathrm I_{n}$. The scalar is positive because $A^{*}A$ is positive semidefinite, and the rescaling by $\lambda^{-1/2}$, which is real and positive, brings both parameters to the unitary group without changing the operator.</p>
+<p><em>Proof.</em> By the composition law, $L_{A^{*}}R_{B^{*}}L_{A}R_{B}=L_{A^{*}A}R_{\,BB^{*}}$, which is the identity exactly when $A^{*}A=\lambda\mathrm I_{n}$ and $BB^{*}=\lambda^{-1}\mathrm I_{n}$. The scalar is positive because $A^{*}A$ is positive semidefinite, and the rescaling by $\lambda^{-1/2}$, which is real and positive, brings both parameters to the unitary group without changing the operator.</p>
 <p><strong>The group.</strong> The isometries of the family form the group
 $$
-\{T_{A,B}:A,B\in\mathrm{U}(n)\}\cong\frac{\mathrm{U}(n)\times\mathrm{U}(n)}{\mathrm{U}(1)},
+\{L_{A}R_{B}:A,B\in\mathrm{U}(n)\}\cong\frac{\mathrm{U}(n)\times\mathrm{U}(n)}{\mathrm{U}(1)},
 $$
 of real dimension $2n^{2}-1$. At $n=2$ the real dimension is $7$, equal to the complex dimension of the cone of products; the coincidence is numerical, since the cone read over the reals has real dimension $14$.</p>
-<p><strong>The unitary group of the algebra is smaller than the isometry group of one operator.</strong> The group $\mathrm{PU}(n)$ acts on the algebra by conjugation, $X\mapsto UXU^{*}$, and this is the subfamily $T_{U,U^{*}}$ with $B=A^{*}$: the sandwich of a unitary element. <strong>Every isometry of the family is a pair of unitaries acting on the two sides; only the diagonal of that group, the pairs $(U,U^{*})$, acts by automorphisms of the algebra.</strong></p>
+<p><strong>The unitary group of the algebra is smaller than the isometry group of one operator.</strong> The group $\mathrm{PU}(n)$ acts on the algebra by conjugation, $X\mapsto UXU^{*}$, and this is the subfamily $L_{U}R_{U^{*}}$ with $B=A^{*}$: the sandwich of a unitary element. <strong>Every isometry of the family is a pair of unitaries acting on the two sides; only the diagonal of that group, the pairs $(U,U^{*})$, acts by automorphisms of the algebra.</strong></p>
 <h3 id="the-contrast-with-the-biquaternion-form">The Contrast with the Biquaternion Form</h3>
 <p><strong>The three forms.</strong> At $n=2$ the algebra carries three forms that are easily confused: the quaternionic scalar-part form $\mathrm{Sc}(XY)$, of signature $(1,3)$; the trace bilinear form $\operatorname{tr}(X^{\mathsf T}Y)$; and the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$, definite. The operator articles of the biquaternion category use the first.</p>
-<p><strong>The three adjoints.</strong> The first gives the slot exchange $(T_{\tilde Q,\tilde P})^{\approx}=T_{\tilde P,\tilde Q}$; the second gives the double conjugation of the transpose $T_{A^{\mathsf T},B^{\mathsf T}}$; the third gives $T_{A^{*},B^{*}}$. <strong>The three formulas are three readings of the same cyclicity of the trace, applied to three different pairings, and none of them is the transpose of another.</strong></p>
+<p><strong>The three adjoints.</strong> The first gives the slot exchange $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$; the second gives the double conjugation of the transpose $L_{A^{\mathsf T}}R_{B^{\mathsf T}}$; the third gives $L_{A^{*}}R_{B^{*}}$. <strong>The three formulas are three readings of the same cyclicity of the trace, applied to three different pairings, and none of them is the transpose of another.</strong></p>
 <p><strong>The three isometry groups.</strong> They are $\{\pm\mathrm{Ad}_{\tilde Q}\}$ of complex dimension three, $\mathrm{O}(2,\mathbb{C})\times\mathrm{O}(2,\mathbb{C})$ modulo the scalars of complex dimension two, and $\mathrm{U}(2)\times\mathrm{U}(2)$ modulo the scalars of real dimension seven. <strong>The indefinite form has the smallest isometry group and the definite form the largest, and the count is a property of the form and not of the operator family.</strong></p>
 <h2 id="the-sandwich">The Sandwich</h2>
 <h3 id="the-definition-and-the-monoid">The Definition and the Monoid</h3>
 <p><strong>Definition.</strong> The <strong>sandwich</strong> by $A$ is
 $$
-\Theta_{A}=T_{A,A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
+\Theta_{A}=L_{A}R_{A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
 $$</p>
 <p><strong>Theorem (the sandwich family is a monoid).</strong> For all $A$ and $B$,
 $$
 \Theta_{A}\Theta_{B}=\Theta_{AB},\qquad \Theta_{\mathrm I_{n}}=\mathrm I_{N}.
 $$</p>
-<p><em>Proof.</em> By the composition law, $T_{A,A^{*}}T_{B,B^{*}}=T_{AB,\,B^{*}A^{*}}=T_{AB,(AB)^{*}}$. The identity is the sandwich of the identity.</p>
+<p><em>Proof.</em> By the composition law, $L_{A}R_{A^{*}}L_{B}R_{B^{*}}=L_{AB}R_{\,B^{*}A^{*}}=L_{AB}R_{(AB)^{*}}$. The identity is the sandwich of the identity.</p>
 <p><strong>The composition is not reversed.</strong> The sandwich is the subfamily on which the two slots are tied by the star, and the reversal of the second slot is exactly undone by the star: $(AB)^{*}=B^{*}A^{*}$. <strong>The sandwich family is the quotient of the multiplicative monoid of the algebra by the unit circle, inside the monoid of all products.</strong></p>
 <p><strong>The two-sided nature of the tie.</strong> The map $A\mapsto\Theta_{A}$ is not injective: $\Theta_{A}=\Theta_{B}$ for nonzero $A,B$ exactly when $B=\lambda A$ with $|\lambda|=1$, by the fibre theorem and the reality of the star. The image is therefore a real cone of real dimension $2n^{2}-1$, and it is the <strong>Hermitian subcone</strong> of the complex cone.</p>
 <h3 id="the-invariants">The Invariants</h3>
@@ -199,13 +199,13 @@ and the form is positive semidefinite exactly when the $a_{k}$ have one sign, th
 $$
 \ker\Theta_{A}=\{X:AXA^{*}=0\},\qquad \dim\ker\Theta_{A}=n^{2}-r^{2}.
 $$</p>
-<p><em>Proof.</em> The adjoint of $T_{A,B}$ is $T_{A^{*},B^{*}}$, so $(\Theta_{A})^{\dagger}=T_{A^{*},A}=\Theta_{A^{*}}$, and $T_{A^{*},A}=T_{A,A^{*}}$ requires $A^{*}=\lambda A$ with $|\lambda|=1$ by the fibre theorem, that is $A$ a scalar multiple of a Hermitian matrix. For a Hermitian $A$, diagonalise it; the entry $(k,i)$ of $\Theta_{A}X$ is $a_{k}X_{ki}a_{i}$ and the scalar product with $X$ gives the sum of the display, which is a sum of real terms of the sign of $a_{k}a_{i}$. If two eigenvalues have opposite signs the terms $a_{k}a_{i}|X_{ki}|^{2}$ take both signs, so the form is indefinite; if they have one sign it is semidefinite, and it vanishes only on the block of the support of $A$. The kernel is $\{X:AXA^{*}=0\}$, that is the set of $X$ carrying the row space of $A$ into the kernel of $A$; in the Hermitian case at hand it is $\{X:PXP=0\}$ for $P$ the support projection of $A$, and its dimension is $n^{2}-r^{2}$ by the rank formula above. In the semidefinite case it is also the isotropic set of the form, by the equality case of Cauchy–Schwarz.</p>
+<p><em>Proof.</em> The adjoint of $L_{A}R_{B}$ is $L_{A^{*}}R_{B^{*}}$, so $(\Theta_{A})^{\dagger}=L_{A^{*}}R_{A}=\Theta_{A^{*}}$, and $L_{A^{*}}R_{A}=L_{A}R_{A^{*}}$ requires $A^{*}=\lambda A$ with $|\lambda|=1$ by the fibre theorem, that is $A$ a scalar multiple of a Hermitian matrix. For a Hermitian $A$, diagonalise it; the entry $(k,i)$ of $\Theta_{A}X$ is $a_{k}X_{ki}a_{i}$ and the scalar product with $X$ gives the sum of the display, which is a sum of real terms of the sign of $a_{k}a_{i}$. If two eigenvalues have opposite signs the terms $a_{k}a_{i}|X_{ki}|^{2}$ take both signs, so the form is indefinite; if they have one sign it is semidefinite, and it vanishes only on the block of the support of $A$. The kernel is $\{X:AXA^{*}=0\}$, that is the set of $X$ carrying the row space of $A$ into the kernel of $A$; in the Hermitian case at hand it is $\{X:PXP=0\}$ for $P$ the support projection of $A$, and its dimension is $n^{2}-r^{2}$ by the rank formula above. In the semidefinite case it is also the isotropic set of the form, by the equality case of Cauchy–Schwarz.</p>
 <p><strong>The positivity is not a property of the family.</strong> The sandwich of a general element is not self-adjoint and the form $\langle\Theta_{A}X,X\rangle_{\mathrm{HS}}$ is not even real: the identity $\Theta_{A}^{\dagger}=\Theta_{A^{*}}$ shows that the sandwich of $A$ is the adjoint of the sandwich of $A^{*}$ and not of itself. <strong>Only the Hermitian part of the family is a family of positive operators, and the sandwich of a positive element is the operator of a positive quadratic form.</strong> The complex cone of products has no positivity at all.</p>
 <p><strong>The eigenstructure.</strong> Let $A$ be diagonalisable with eigenbasis $u_{1},\dots,u_{n}$ and eigenvalues $\lambda_{1},\dots,\lambda_{n}$. The $n^{2}$ rank-one matrices $u_{i}u_{j}^{*}$ are a basis of the algebra and satisfy
 $$
 \Theta_{A}\bigl(u_{i}u_{j}^{*}\bigr)=\lambda_{i}\bar\lambda_{j}\,u_{i}u_{j}^{*},
 $$
-so the spectrum of the sandwich is the $n^{2}$ numbers $\lambda_{i}\bar\lambda_{j}$ and the sandwich is diagonal in that basis. The eigenspace of $\Theta_{A}$ at the value $\lambda_{i}\bar\lambda_{j}$ is spanned by the $T_{P_{i},P_{j}}$ of the pairs with that product, and those operators are mutually orthogonal projectors, $T_{P_{i},P_{j}}T_{P_{k},P_{l}}=\delta_{ik}\delta_{jl}T_{P_{i},P_{j}}$; the spectral projector is their sum, and it is the single term $T_{P_{i},P_{j}}$ exactly when the products $\lambda_{i}\bar\lambda_{j}$ are distinct. <strong>The sandwich carries the spectral data of the element into the two-sided operators, with one index on each side.</strong></p>
+so the spectrum of the sandwich is the $n^{2}$ numbers $\lambda_{i}\bar\lambda_{j}$ and the sandwich is diagonal in that basis. The eigenspace of $\Theta_{A}$ at the value $\lambda_{i}\bar\lambda_{j}$ is spanned by the $L_{P_{i}}R_{P_{j}}$ of the pairs with that product, and those operators are mutually orthogonal projectors, $L_{P_{i}}R_{P_{j}}L_{P_{k}}R_{P_{l}}=\delta_{ik}\delta_{jl}L_{P_{i}}R_{P_{j}}$; the spectral projector is their sum, and it is the single term $L_{P_{i}}R_{P_{j}}$ exactly when the products $\lambda_{i}\bar\lambda_{j}$ are distinct. <strong>The sandwich carries the spectral data of the element into the two-sided operators, with one index on each side.</strong></p>
 <h2 id="the-difference-family">The Difference Family</h2>
 <h3 id="the-sylvester-operator">The Sylvester Operator</h3>
 <p><strong>Definition.</strong> The <strong>difference operator</strong> of the pair is
@@ -231,11 +231,11 @@ $$
 $$</p>
 <p><em>Proof.</em> The map $(A,B)\mapsto L_{A}-R_{B}$ is linear from $2n^{2}$ dimensions, and its kernel is the set of pairs with $L_{A}=R_{B}$. Such a pair satisfies $AX=XB$ for all $X$; with $X=I$ this gives $A=B$, and then $A$ is scalar, so the kernel is the line $\{(\lambda\mathrm I_{n},\lambda\mathrm I_{n})\}$. The image has dimension $2n^{2}-1$.</p>
 <p><strong>The same number as the cone, and a different object.</strong> The cone of products has dimension $2n^{2}-1$ and is not a subspace; the span of the differences has dimension $2n^{2}-1$ and is a subspace. <strong>The two meet exactly in the two one-sided copies and contain each other nowhere else.</strong> A product lies in the span exactly when one of its parameters is a scalar, and the reason is the behaviour of the tensor rank under a sum: if $B^{\mathsf T}\otimes A=\mathrm I\otimes C+D^{\mathsf T}\otimes\mathrm I$, the left side is a pure tensor and the right side a sum of two, so one of the two pairs $(B^{\mathsf T},\mathrm I)$ or $(\mathrm I,C)$ must be dependent; hence $B$ or $A$ is a scalar, and the product is a left or a right multiplication. At $n=4$ the dimension is $31$, which is the count of the Sylvester article for the algebra $M_{4}(\mathbb{C})$ read as an algebra of dimension sixteen.</p>
-<p><strong>The sum family is a subspace and not a subalgebra.</strong> The family $\{L_{A}+R_{B}\}$ is the same subspace, since $L_{A}+R_{B}=L_{A}-R_{-B}$. It is not closed under composition: $(L_{A}+R_{B})(L_{C}+R_{D})=L_{AC}+R_{DB}+T_{A,D}+T_{C,B}$, which contains two product terms and is not a difference in general. <strong>The product family is closed under multiplication and is not a subspace; the difference family is a subspace and is not closed under multiplication, and the two facts are the two halves of the same asymmetry.</strong></p>
+<p><strong>The sum family is a subspace and not a subalgebra.</strong> The family $\{L_{A}+R_{B}\}$ is the same subspace, since $L_{A}+R_{B}=L_{A}-R_{-B}$. It is not closed under composition: $(L_{A}+R_{B})(L_{C}+R_{D})=L_{AC}+R_{DB}+L_{A}R_{D}+L_{C}R_{B}$, which contains two product terms and is not a difference in general. <strong>The product family is closed under multiplication and is not a subspace; the difference family is a subspace and is not closed under multiplication, and the two facts are the two halves of the same asymmetry.</strong></p>
 <h3 id="the-polarisation">The Polarisation</h3>
 <p><strong>Theorem.</strong> For all $A$ and $B$,
 $$
-2T_{A,B}=\bigl(L_{A}+R_{B}\bigr)^{2}-L_{A^{2}}-R_{B^{2}}.
+2L_{A}R_{B}=\bigl(L_{A}+R_{B}\bigr)^{2}-L_{A^{2}}-R_{B^{2}}.
 $$</p>
 <p><em>Proof.</em> The two one-sided operators commute, so the square of the sum is $L_{A^{2}}+2L_{A}R_{B}+R_{B^{2}}$.</p>
 <p><strong>The cone is the quadratic image of the subspace.</strong> The polarisation writes every product as a quadratic expression in the difference family, and with it every operator of length $r$ as a quadratic expression in $2r$ one-sided operators. <strong>The two-sided products are not a linear object at all: they are the polarisation of the sum family, and this is the reason the cone is a cone and not a subspace.</strong></p>
@@ -243,11 +243,11 @@ $$</p>
 $$
 \operatorname{tr}(L_{A}+R_{B})^{2}=n\operatorname{tr}A^{2}+2\operatorname{tr}A\operatorname{tr}B+n\operatorname{tr}B^{2}.
 $$
-With $\operatorname{tr}L_{A^{2}}=n\operatorname{tr}A^{2}$ and $\operatorname{tr}R_{B^{2}}=n\operatorname{tr}B^{2}$ the polarisation gives $2\operatorname{tr}T_{A,B}=2\operatorname{tr}A\operatorname{tr}B$, which is the trace formula of the products recovered from the one-sided data.</p>
+With $\operatorname{tr}L_{A^{2}}=n\operatorname{tr}A^{2}$ and $\operatorname{tr}R_{B^{2}}=n\operatorname{tr}B^{2}$ the polarisation gives $2\operatorname{tr}L_{A}R_{B}=2\operatorname{tr}A\operatorname{tr}B$, which is the trace formula of the products recovered from the one-sided data.</p>
 <h2 id="summary">Summary</h2>
-<p>The transpose of a two-sided operator is $T_{A^{\mathsf T},B^{\mathsf T}}$ and is also its adjoint for the trace bilinear form; the Hilbert–Schmidt adjoint is $T_{A^{*},B^{*}}$. Both conjugate the two parameters and neither exchanges the slots, and this is the contrast with the quaternionic plain form, whose adjoint is the slot exchange. The isometry groups are $\mathrm{O}(n,\mathbb{C})\times\mathrm{O}(n,\mathbb{C})$ modulo the scalars for the trace form and $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars for the Hilbert–Schmidt form, of complex dimension $n^{2}-n$ and real dimension $2n^{2}-1$.</p>
-<p>The sandwich $\Theta_{A}=T_{A,A^{*}}$ is a monoid under composition, $\Theta_{A}\Theta_{B}=\Theta_{AB}$, of rank $r^{2}$, of trace $|\operatorname{tr}A|^{2}$, of determinant $|\det A|^{2n}$, and of kernel dimension $n^{2}-r^{2}$. Its image is the real cone of real dimension $2n^{2}-1$. <strong>It is self-adjoint only for $A$ a multiple of a Hermitian matrix, and positive semidefinite only for $A$ a multiple of a semidefinite one</strong>, since $\Theta_{A}^{\dagger}=\Theta_{A^{*}}$.</p>
-<p>The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kernel the intertwiners, invertible exactly for disjoint spectra, and spanning a subspace of dimension $2n^{2}-1$. The polarisation $2T_{A,B}=(L_{A}+R_{B})^{2}-L_{A^{2}}-R_{B^{2}}$ writes every product as a quadratic expression in the difference family. <strong>The products are a cone, the differences a subspace, the sandwiches a monoid with a positive part; the three objects carry the same dimension count and three different structures.</strong></p>
+<p>The transpose of a two-sided operator is $L_{A^{\mathsf T}}R_{B^{\mathsf T}}$ and is also its adjoint for the trace bilinear form; the Hilbert–Schmidt adjoint is $L_{A^{*}}R_{B^{*}}$. Both conjugate the two parameters and neither exchanges the slots, and this is the contrast with the quaternionic plain form, whose adjoint is the slot exchange. The isometry groups are $\mathrm{O}(n,\mathbb{C})\times\mathrm{O}(n,\mathbb{C})$ modulo the scalars for the trace form and $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars for the Hilbert–Schmidt form, of complex dimension $n^{2}-n$ and real dimension $2n^{2}-1$.</p>
+<p>The sandwich $\Theta_{A}=L_{A}R_{A^{*}}$ is a monoid under composition, $\Theta_{A}\Theta_{B}=\Theta_{AB}$, of rank $r^{2}$, of trace $|\operatorname{tr}A|^{2}$, of determinant $|\det A|^{2n}$, and of kernel dimension $n^{2}-r^{2}$. Its image is the real cone of real dimension $2n^{2}-1$. <strong>It is self-adjoint only for $A$ a multiple of a Hermitian matrix, and positive semidefinite only for $A$ a multiple of a semidefinite one</strong>, since $\Theta_{A}^{\dagger}=\Theta_{A^{*}}$.</p>
+<p>The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kernel the intertwiners, invertible exactly for disjoint spectra, and spanning a subspace of dimension $2n^{2}-1$. The polarisation $2L_{A}R_{B}=(L_{A}+R_{B})^{2}-L_{A^{2}}-R_{B^{2}}$ writes every product as a quadratic expression in the difference family. <strong>The products are a cone, the differences a subspace, the sandwiches a monoid with a positive part; the three objects carry the same dimension count and three different structures.</strong></p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -258,7 +258,7 @@ With $\operatorname{tr}L_{A^{2}}=n\operatorname{tr}A^{2}$ and $\operatorname{tr}
 </thead>
 <tbody>
 <tr>
-<td>$(T_{A,B})^{\mathsf T}=T_{A^{\mathsf T},B^{\mathsf T}}$</td>
+<td>$(L_{A}R_{B})^{\mathsf T}=L_{A^{\mathsf T}}R_{B^{\mathsf T}}$</td>
 <td>the transpose</td>
 </tr>
 <tr>
@@ -275,10 +275,10 @@ With $\operatorname{tr}L_{A^{2}}=n\operatorname{tr}A^{2}$ and $\operatorname{tr}
 </tr>
 <tr>
 <td>${}^{\dagger}$</td>
-<td>the Hilbert–Schmidt adjoint, $T_{A^{*},B^{*}}$</td>
+<td>the Hilbert–Schmidt adjoint, $L_{A^{*}}R_{B^{*}}$</td>
 </tr>
 <tr>
-<td>$\Theta_{A}=T_{A,A^{*}}$</td>
+<td>$\Theta_{A}=L_{A}R_{A^{*}}$</td>
 <td>the sandwich, $X\mapsto AXA^{*}$</td>
 </tr>
 <tr>

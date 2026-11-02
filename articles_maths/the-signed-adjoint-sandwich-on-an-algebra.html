@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The signed sandwich is the two-sided operator $\mathcal{T}_{a,b}(x)=a\,\alpha(x)\,b$ built from a left multiplication, a right multiplication and a grade involution $\alpha$; it is the algebraic home of the reflections and of the conjugation by a unit, and the two-sided companion of the signed left multiplication. Its <strong>signed adjoint</strong> with respect to the twisted pairing $\{x,y\}=\tau(x\sigma(y))$ is again a signed sandwich, $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{\delta(a),\delta(b)}$ with $\delta=\sigma\alpha$, and the parameters are <strong>not</strong> reversed: the twisted adjoint of the signed sandwich is the signed sandwich of the $\delta$-images, in the same order. The sandwich is unitary, $\mathcal{T}^{*_\sigma}\mathcal{T}=\mathcal{T}\mathcal{T}^{*_\sigma}=\mathrm{id}$, exactly when the two products $\delta(a)\alpha(a)$ and $\alpha(b)\delta(b)$ are central and mutually inverse; for the reflection $b=\alpha(a)^{-1}$ this is the single condition that $\sigma(a)a$ be central and fixed by $\alpha$, and for the one-sided operator $b=1$ it is $\delta(a)\alpha(a)=1$.</p>
 <p>This article computes the signed adjoint, the inverse and the composition of the sandwiched operators, derives the unitarity condition $u^{*}u=uu^{*}=1$ it defines, and prepares the reflection of <em>The Signed Adjoint of the Reflection on an Algebra</em>. It assumes <em>The Signed Sandwich on an Algebra</em> for the operator $\mathcal{T}_{a,b}$, the signed conjugation $\rho_u=\mathcal{T}_{u,u^{-1}}$ and the composition and inverse rules, <em>The Adjoint of the Left Multiplication on an Algebra</em> for the one-sided case, <em>Involutions of the Operator Algebra</em> and <em>The Adjoint in an Involutive Algebra</em> for the adjoint operation and the twisted pairing, <em>Frobenius Algebras</em> for the trace and the pairing, <em>Involutive Algebras</em> for the involution and the grade involution, and <em>Unitary Elements of an Involutive Algebra</em> for the unitary elements and the group they form. The graded version of the same computation is <em>The Graded Adjoint Action on a Module over an Algebra</em>; the analytic reading of the unitary operators is Part II. This article stays inside Part I: no distance, norm, form with a norm, topology or limit.</p>
-<p>Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, and $\alpha$ is an involutive automorphism of $A$ with $\alpha^{2}=\mathrm{id}$ commuting with $\sigma$ and preserving the trace, $\tau(\alpha(x))=\tau(x)$. The twist is $\delta=\sigma\alpha$, an anti-automorphism of order two; the twisted pairing is $\{x,y\}=\tau(x\sigma(y))$, the unsigned sandwich is $T_{a,b}(x)=axb$, the signed sandwich is $\mathcal{T}_{a,b}(x)=a\alpha(x)b$, and the adjoints for the two pairings are $T^{*_\sigma}$ and $T^{*}$.</p>
+<p>Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, and $\alpha$ is an involutive automorphism of $A$ with $\alpha^{2}=\mathrm{id}$ commuting with $\sigma$ and preserving the trace, $\tau(\alpha(x))=\tau(x)$. The twist is $\delta=\sigma\alpha$, an anti-automorphism of order two; the twisted pairing is $\{x,y\}=\tau(x\sigma(y))$, the unsigned sandwich is $L_{a}R_{b}(x)=axb$, the signed sandwich is $\mathcal{T}_{a,b}(x)=a\alpha(x)b$, and the adjoints for the two pairings are $T^{*_\sigma}$ and $T^{*}$.</p>
 <h2 id="the-signed-adjoint">The Signed Adjoint</h2>
 <p><strong>Theorem.</strong> With respect to the twisted pairing,</p>
 <p>$$
@@ -94,10 +94,10 @@ $$</p>
 <h2 id="the-inverse-and-the-composition">The Inverse and the Composition</h2>
 <p><strong>Theorem.</strong> The signed sandwich satisfies the composition rules of <em>The Signed Sandwich on an Algebra</em>,</p>
 <p>$$
-\boxed{\;\mathcal{T}_{a,b}\mathcal{T}_{c,d}=T_{a\alpha(c),\,\alpha(d)b}, \qquad \mathcal{T}_{a,b}^{-1}=\mathcal{T}_{\alpha(a)^{-1},\,\alpha(b)^{-1}}\;},
+\boxed{\;\mathcal{T}_{a,b}\mathcal{T}_{c,d}=L_{a\alpha(c)}R_{\,\alpha(d)b}, \qquad \mathcal{T}_{a,b}^{-1}=\mathcal{T}_{\alpha(a)^{-1},\,\alpha(b)^{-1}}\;},
 $$</p>
-<p>and the unsigned sandwich $T_{c,d}$ is the identity exactly when $c$ is a central unit and $d=c^{-1}$.</p>
-<p><em>Proof.</em> The composition and the inverse are read from <em>The Signed Sandwich on an Algebra</em>: the product of two signed sandwiches is an unsigned sandwich, and the sandwich $\mathcal{T}_{a,b}=T_{a,b}\alpha$ is invertible exactly when $a$ and $b$ are units. For the identity criterion, $T_{c,d}(x)=cxd=x$ for all $x$ gives $cd=1$ at $x=1$ and then $cx=xc$ for all $x$, that is $c$ central with $d=c^{-1}$; conversely a central $c$ with $d=c^{-1}$ gives $cxc^{-1}=x$.</p>
+<p>and the unsigned sandwich $L_{c}R_{d}$ is the identity exactly when $c$ is a central unit and $d=c^{-1}$.</p>
+<p><em>Proof.</em> The composition and the inverse are read from <em>The Signed Sandwich on an Algebra</em>: the product of two signed sandwiches is an unsigned sandwich, and the sandwich $\mathcal{T}_{a,b}=L_{a}R_{b}\alpha$ is invertible exactly when $a$ and $b$ are units. For the identity criterion, $L_{c}R_{d}(x)=cxd=x$ for all $x$ gives $cd=1$ at $x=1$ and then $cx=xc$ for all $x$, that is $c$ central with $d=c^{-1}$; conversely a central $c$ with $d=c^{-1}$ gives $cxc^{-1}=x$.</p>
 <p>The identity criterion is the reason a unitarity condition on a sandwich carries a central factor and not only $1$: the parameters $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ with $\lambda$ central determine the same sandwich, so the unitarity is a condition modulo this scaling.</p>
 <h2 id="the-unitarity-condition">The Unitarity Condition</h2>
 <p><strong>Theorem.</strong> The signed sandwich is <strong>unitary</strong> for the twisted pairing, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b}=\mathcal{T}_{a,b}\mathcal{T}_{a,b}^{*_\sigma}=\mathrm{id}$, exactly when</p>
@@ -105,7 +105,7 @@ $$</p>
 c=\delta(a)\alpha(a) \text{ is central}, \qquad \text{and} \qquad d=\alpha(b)\delta(b)=c^{-1} .
 $$</p>
 <p>Equivalently, $\mathcal{T}_{a,b}^{*_\sigma}=\mathcal{T}_{a,b}^{-1}$, and the two products agree because the operators are square matrices over $k$.</p>
-<p><em>Proof.</em> By the theorem and the composition rule, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b}=\mathcal{T}_{\delta(a),\delta(b)}\mathcal{T}_{a,b}=T_{c,d}$ with $c=\delta(a)\alpha(a)$ and $d=\alpha(b)\delta(b)$. The identity criterion of the preceding section says that $T_{c,d}=\mathrm{id}$ exactly when $c$ is central and $d=c^{-1}$, which is the displayed condition; the equivalence with $S^{*_\sigma}=S^{-1}$ is the inverse rule, and one of the two products being the identity suffices for the other because a one-sided inverse of a square matrix is two-sided.</p>
+<p><em>Proof.</em> By the theorem and the composition rule, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b}=\mathcal{T}_{\delta(a),\delta(b)}\mathcal{T}_{a,b}=L_{c}R_{d}$ with $c=\delta(a)\alpha(a)$ and $d=\alpha(b)\delta(b)$. The identity criterion of the preceding section says that $L_{c}R_{d}=\mathrm{id}$ exactly when $c$ is central and $d=c^{-1}$, which is the displayed condition; the equivalence with $S^{*_\sigma}=S^{-1}$ is the inverse rule, and one of the two products being the identity suffices for the other because a one-sided inverse of a square matrix is two-sided.</p>
 <p><strong>Corollary (the reflection).</strong> For the signed conjugation $\rho_u=\mathcal{T}_{u,u^{-1}}$ the unitarity condition is the single condition</p>
 <p>$$
 \rho_u \text{ is unitary} \iff \sigma(u)u \text{ is central and } \alpha\bigl(\sigma(u)u\bigr)=\sigma(u)u .
@@ -146,7 +146,7 @@ $$</p>
 <td>the signed sandwich</td>
 </tr>
 <tr>
-<td>$T_{a,b}(x)=axb$</td>
+<td>$L_{a}R_{b}(x)=axb$</td>
 <td>the unsigned sandwich</td>
 </tr>
 <tr>
@@ -166,7 +166,7 @@ $$</p>
 <td>the plain adjoint; reversal</td>
 </tr>
 <tr>
-<td>$\mathcal{T}_{a,b}\mathcal{T}_{c,d}=T_{a\alpha(c),\alpha(d)b}$</td>
+<td>$\mathcal{T}_{a,b}\mathcal{T}_{c,d}=L_{a\alpha(c)}R_{\alpha(d)b}$</td>
 <td>the composition rule</td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ $$</p>
 <td>the inverse</td>
 </tr>
 <tr>
-<td>$T_{c,d}=\mathrm{id}\iff c\in Z(A),\ d=c^{-1}$</td>
+<td>$L_{c}R_{d}=\mathrm{id}\iff c\in Z(A),\ d=c^{-1}$</td>
 <td>the identity criterion</td>
 </tr>
 <tr>

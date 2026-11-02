@@ -98,10 +98,10 @@ $$</p>
 <p><strong>Proof.</strong> $\ell_a L_b(x) = \ell_a(bx) = a\alpha(bx) = a\alpha(b)\alpha(x) = \ell_{a\alpha(b)}(x)$; $L_a\ell_b(x) = a\,b\alpha(x) = \ell_{ab}(x)$; the right-handed statements are the mirror images.</p>
 <p><strong>Proposition (the signed product is unsigned).</strong> For all $a,b \in A$,</p>
 <p>$$
-\ell_a\,\ell_b = L_{a\alpha(b)} , \qquad \varrho_b\,\varrho_a = R_{\alpha(b)a} , \qquad \ell_a\,\varrho_b = T_{a,\alpha(b)} , \qquad \varrho_b\,\ell_a = T_{\alpha(a),b} ,
+\ell_a\,\ell_b = L_{a\alpha(b)} , \qquad \varrho_b\,\varrho_a = R_{\alpha(b)a} , \qquad \ell_a\,\varrho_b = L_{a}R_{\alpha(b)} , \qquad \varrho_b\,\ell_a = L_{\alpha(a)}R_{b} ,
 $$</p>
-<p>where $T_{p,q}(x) = pxq$ is the unsigned sandwich. Hence the product of two signed one-sided multiplications is an unsigned one-sided multiplication, and the product of a signed left and a signed right multiplication is an unsigned two-sided sandwich; the signed family is not closed under composition unless $\alpha = \mathrm{id}$.</p>
-<p><strong>Proof.</strong> $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = a\,x\,\alpha(b) = T_{a,\alpha(b)}(x)$; the other two are the mirror images. Composition of two signed operators carries no twist on the argument, so the result is unsigned; when $\alpha = \mathrm{id}$ the signed and the unsigned families coincide.</p>
+<p>where $L_{p}R_{q}(x) = pxq$ is the unsigned sandwich. Hence the product of two signed one-sided multiplications is an unsigned one-sided multiplication, and the product of a signed left and a signed right multiplication is an unsigned two-sided sandwich; the signed family is not closed under composition unless $\alpha = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> $\ell_a\ell_b(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $\ell_a\varrho_b(x) = a\alpha(\alpha(x)b) = a\,x\,\alpha(b) = L_{a}R_{\alpha(b)}(x)$; the other two are the mirror images. Composition of two signed operators carries no twist on the argument, so the result is unsigned; when $\alpha = \mathrm{id}$ the signed and the unsigned families coincide.</p>
 <p><strong>Theorem (the generated group).</strong> The signed left multiplications with unit parameter are invertible with</p>
 <p>$$
 \boxed{\;\ell_u^{-1} = \ell_{\alpha(u)^{-1}} , \qquad \varrho_v^{-1} = \varrho_{\alpha(v)^{-1}}\;} ,
@@ -131,10 +131,10 @@ $$</p>
 <p><strong>Proof.</strong> The factorisations are the proposition above; $\ell_a = L_a$ means $a\alpha(x) = ax$ for all $x$, that is $a(\alpha(x)-x) = 0$, and for a unit $a$ this is $\alpha = \mathrm{id}$.</p>
 <p><strong>Theorem (degeneracy, the inner grade involution).</strong> Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$. Then every signed left multiplication is an unsigned two-sided sandwich,</p>
 <p>$$
-\boxed{\;\ell_a = T_{az,\,z^{-1}} , \qquad \varrho_b = T_{z,\,z^{-1}b}\;} ,
+\boxed{\;\ell_a = L_{az}R_{\,z^{-1}} , \qquad \varrho_b = L_{z}R_{\,z^{-1}b}\;} ,
 $$</p>
 <p>and the signed family carries no information beyond the unsigned family and the inner automorphism.</p>
-<p><strong>Proof.</strong> $\ell_a(x) = a z x z^{-1} = (az)x(z^{-1}) = T_{az,z^{-1}}(x)$, and $\varrho_b(x) = zxz^{-1}b = T_{z,z^{-1}b}(x)$.</p>
+<p><strong>Proof.</strong> $\ell_a(x) = a z x z^{-1} = (az)x(z^{-1}) = L_{az}R_{z^{-1}}(x)$, and $\varrho_b(x) = zxz^{-1}b = L_{z}R_{z^{-1}b}(x)$.</p>
 <p><strong>Remark (the boundary between the two order-two maps).</strong> The map $\alpha$ of this article is the grade involution, an <strong>automorphism</strong> of order two. The <strong>involution</strong> in the sense of an anti-automorphism, denoted $\sigma$ in this category, is the structure of the <code>- * Theory</code> group and is not used here. On a commutative algebra the two coincide, on a non-commutative one they do not.</p>
 <h2 id="the-banach-interpretation-and-examples">The Banach Interpretation and Examples</h2>
 <p><strong>Proposition (continuity and completion).</strong> The maps $a \mapsto \ell_a$ and $b \mapsto \varrho_b$ are bounded linear maps $A \to B(A)$ of norm at most $\lVert\alpha\rVert$, and they are isometric when $\alpha$ is isometric and $A$ is unital. They extend to the completion of $A$, and they are continuous for the norm, the strong and the weak operator topologies.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p><strong>Example (the matrix algebra).</strong> Let $A = M_n(\mathbb{K})$ and $\alpha(X) = DXD^{-1}$ with $D^2 = I$; the signed left multiplication is $\ell_A(X) = A(DXD^{-1}) = (AD)X D^{-1}$, an unsigned two-sided sandwich, in accordance with the degeneracy theorem since this $\alpha$ is inner.</p>
 <p><strong>Example (the superalgebra).</strong> Let $A = A^0\oplus A^1$ be a graded Banach algebra with grade involution $\alpha$. On homogeneous $x$, $\ell_a(x) = (-1)^{\lvert x\rvert}ax$: an odd element $a$ acts on the even part by $L_a$ and on the odd part by $-L_a$, and the fixed set of $\ell_a$ for $a = 1$ is the even part $A^0$.</p>
 <h2 id="summary">Summary</h2>
-<p>On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = \mathcal{T}_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = T_{a,\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the <code>- * Theory</code> group. The graded module action is <em>The Graded Action on a Module over an Involutive Banach Algebra</em>, and the adjoint is <em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>.</p>
+<p>On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade involution $\alpha$ — the signed left multiplication is $\ell_a(x) = a\alpha(x) = L_a\alpha = \mathcal{T}_{a,1}$, bounded with $\lVert\ell_a\rVert \leq \lVert a\rVert\lVert\alpha\rVert$, and the signed right multiplication is $\varrho_b = \alpha R_b$. The mixed laws $\ell_aL_b = \ell_{a\alpha(b)}$ and $L_a\ell_b = \ell_{ab}$ show that the signed left multiplications are the coset $L(A)\alpha$ of the unsigned ones, stable under composition with the unsigned family; the products $\ell_a\ell_b = L_{a\alpha(b)}$ and $\ell_a\varrho_b = L_{a}R_{\alpha(b)}$ are unsigned, so the signed family is closed under inversion, $\ell_u^{-1} = \ell_{\alpha(u)^{-1}}$, but not under composition. The two families generate the semidirect product $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$, with $\alpha L_u\alpha = L_{\alpha(u)}$. The fixed set of $\ell_a$ is the closed set $\{x : a\alpha(x) = x\}$, which is $A^\alpha$ for $a = 1$; when $\alpha$ is inner every signed left multiplication is an unsigned sandwich; and the operator $\alpha$ is the grade involution, an automorphism, distinct from the anti-automorphism involution $\sigma$ of the <code>- * Theory</code> group. The graded module action is <em>The Graded Action on a Module over an Involutive Banach Algebra</em>, and the adjoint is <em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -177,7 +177,7 @@ $$</p>
 <td>Mixed laws</td>
 </tr>
 <tr>
-<td>$\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=T_{a,\alpha(b)}$</td>
+<td>$\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=L_{a}R_{\alpha(b)}$</td>
 <td>Signed products are unsigned</td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ $$</p>
 <td>Normalisation; group $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$</td>
 </tr>
 <tr>
-<td>$\alpha=c_z\Rightarrow\ell_a=T_{az,z^{-1}}$</td>
+<td>$\alpha=c_z\Rightarrow\ell_a=L_{az}R_{z^{-1}}$</td>
 <td>Degeneracy when $\alpha$ is inner</td>
 </tr>
 </tbody>

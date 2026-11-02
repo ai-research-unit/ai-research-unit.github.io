@@ -70,9 +70,9 @@
       <div class="article-body">
         <h1 id="left-and-right-multiplication-on-the-diagonal-peirce-part"><strong>Left and Right Multiplication on the Diagonal Peirce Part</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Left and right multiplication by an element $a$ are the operators $L_a(x)=ax$ and $R_a(x)=xa$. They commute, and their product is the sandwich $T_{a,b}$:</p>
+<p>Left and right multiplication by an element $a$ are the operators $L_a(x)=ax$ and $R_a(x)=xa$. They commute, and their product is the sandwich $L_{a}R_{b}$:</p>
 <p>$$
-L_aR_b=R_bL_a=T_{a,b}.
+L_aR_b=R_bL_a=L_{a}R_{b}.
 $$</p>
 <p>An idempotent $e$ gives the two operators $L_e$ and $R_e$, and the Peirce decomposition of $A$ is the joint eigenspace decomposition of this commuting pair. The <strong>diagonal Peirce part</strong> is</p>
 <p>$$
@@ -95,7 +95,7 @@ $$</p>
 <p><strong>Proposition.</strong> For all $a,b\in A$:</p>
 <p><strong>(a)</strong> $L_{a+b}=L_a+L_b$ and $R_{a+b}=R_a+R_b$;</p>
 <p><strong>(b)</strong> $L_{ab}=L_aL_b$ and $R_{ab}=R_bR_a$;</p>
-<p><strong>(c)</strong> $L_aR_b=R_bL_a=T_{a,b}$;</p>
+<p><strong>(c)</strong> $L_aR_b=R_bL_a=L_{a}R_{b}$;</p>
 <p><strong>(d)</strong> $L_1=R_1=\mathrm{id}_A$;</p>
 <p><strong>(e)</strong> $L_a=0$ exactly when $a=0$, and $R_a=0$ exactly when $a=0$.</p>
 <p><em>Proof.</em> (a), (b) and (c) are associativity: $L_{ab}(x)=(ab)x=a(bx)=L_aL_b(x)$, $R_{ab}(x)=x(ab)=(xa)b=R_bR_a(x)$, and $L_aR_b(x)=a(xb)=(ax)b=R_bL_a(x)$. (d) is the unit. (e) $L_a=0$ gives $a=L_a(1)=0$, and $R_a=0$ gives $a=R_a(1)=0$.</p>
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-operators-of-an-idempotent">The operators of an idempotent</h3>
 <p><strong>Proposition.</strong> Let $e$ be an idempotent and $f=1-e$.</p>
 <p><strong>(a)</strong> $L_e$ and $R_e$ are idempotent operators: $L_e^2=L_e$, $R_e^2=R_e$.</p>
-<p><strong>(b)</strong> $L_e$ and $R_e$ commute, and $L_eR_e=R_eL_e=P_e=T_{e,e}$.</p>
+<p><strong>(b)</strong> $L_e$ and $R_e$ commute, and $L_eR_e=R_eL_e=P_e=L_{e}R_{e}$.</p>
 <p><strong>(c)</strong> $L_e+L_f=\mathrm{id}_A$ and $R_e+R_f=\mathrm{id}_A$.</p>
 <p><strong>(d)</strong> The images and kernels are</p>
 <p>$$
@@ -111,8 +111,8 @@ $$</p>
 \operatorname{im}R_e=Ae, \quad \ker R_e=Af\;}.
 $$</p>
 <p><strong>(e)</strong> The image of $P_e=L_eR_e$ is the corner $eAe$, and its kernel is $eAf\oplus fAe\oplus fAf$.</p>
-<p><em>Proof.</em> (a) $L_e^2=L_{e^2}=L_e$ and $R_e^2=R_{e^2}=R_e$. (b) $L_eR_e=T_{e,e}=R_eL_e$. (c) $L_e+L_f=L_{e+f}=L_1=\mathrm{id}$, and similarly for $R$. (d) $\operatorname{im}L_e=\{ex:x\in A\}=eA$, and the Peirce decomposition gives $\ker L_e=\{x:ex=0\}=fA$; the right-hand statements are $\operatorname{im}R_e=Ae$ and $\ker R_e=Af$. (e) $P_e(x)=exe$ lies in $eAe$, and $P_e$ fixes $eAe$; its kernel is the sum of the other three corners.</p>
-<p><strong>Remark (the two projections).</strong> $L_e$ is the projection onto the right ideal $eA$ along $fA$, and $R_e$ is the projection onto the left ideal $Ae$ along $Af$. They are not the Peirce projections: the Peirce corner $A_{00}=eAe$ is the intersection of their images, and the Peirce projection onto it is $P_e=L_eR_e$, not $L_e$ or $R_e$. The four Peirce projections are the elementary sandwiches $E_{ij}=T_{e_i,e_j}$ of <em>The Sandwich Operators on the Peirce Components</em>.</p>
+<p><em>Proof.</em> (a) $L_e^2=L_{e^2}=L_e$ and $R_e^2=R_{e^2}=R_e$. (b) $L_eR_e=L_{e}R_{e}=R_eL_e$. (c) $L_e+L_f=L_{e+f}=L_1=\mathrm{id}$, and similarly for $R$. (d) $\operatorname{im}L_e=\{ex:x\in A\}=eA$, and the Peirce decomposition gives $\ker L_e=\{x:ex=0\}=fA$; the right-hand statements are $\operatorname{im}R_e=Ae$ and $\ker R_e=Af$. (e) $P_e(x)=exe$ lies in $eAe$, and $P_e$ fixes $eAe$; its kernel is the sum of the other three corners.</p>
+<p><strong>Remark (the two projections).</strong> $L_e$ is the projection onto the right ideal $eA$ along $fA$, and $R_e$ is the projection onto the left ideal $Ae$ along $Af$. They are not the Peirce projections: the Peirce corner $A_{00}=eAe$ is the intersection of their images, and the Peirce projection onto it is $P_e=L_eR_e$, not $L_e$ or $R_e$. The four Peirce projections are the elementary sandwiches $E_{ij}=L_{e_i}R_{e_j}$ of <em>The Sandwich Operators on the Peirce Components</em>.</p>
 <h3 id="the-joint-eigenspaces">The joint eigenspaces</h3>
 <p>Because $L_e$ and $R_e$ commute and are idempotent, they are simultaneously diagonalisable, with eigenvalues in $\{0,1\}$. The joint eigenspaces are the four Peirce corners:</p>
 <div class="table-scroll"><table>
@@ -182,7 +182,7 @@ R_d=\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1})\;},
 $$</p>
 <p>where each entry is the left or right multiplication of the corresponding corner algebra.</p>
 <p><strong>(c)</strong> $L_d$ and $R_d$ preserve $D$ and $N$, and their restrictions to $D$ are the left and right regular representations of $D$; in particular the maps $d\mapsto L_d|_D$ and $d\mapsto R_d|_D$ are faithful.</p>
-<p><strong>(d)</strong> For $d,d'\in D$, the sandwich $T_{d,d'}$ preserves each corner and acts on $A_{ij}$ by the sandwich of the corner elements $d_i$ and $d'_j$.</p>
+<p><strong>(d)</strong> For $d,d'\in D$, the sandwich $L_{d}R_{d'}$ preserves each corner and acts on $A_{ij}$ by the sandwich of the corner elements $d_i$ and $d'_j$.</p>
 <p><em>Proof.</em> (a) For $x\in A_{ij}$, $d x=(d_0+d_1)x$; the term $d_0x$ is nonzero only when $i=0$, and $d_1x$ only when $i=1$, so $dx\in A_{ij}$. The same for $xd$. (b) On $A_{00}$ and $A_{01}$, the left factor is $d_0$; on $A_{10}$ and $A_{11}$, it is $d_1$. On $A_{00}$ and $A_{10}$, the right factor is $d_0$; on $A_{01}$ and $A_{11}$, it is $d_1$. (c) The preservation is (a); the restrictions are the regular representations because $D$ is a subalgebra with the same multiplication. Faithfulness follows from $L_d(1)=d$ and $R_d(1)=d$. (d) is the corner computation $d_i x d'_j$ for $x\in A_{ij}$.</p>
 <p><strong>Remark (the asymmetry).</strong> The left multiplication $L_d$ uses $d_0$ on the left of the two corners with first index $0$, and $d_1$ on the left of the two corners with first index $1$; the right multiplication $R_d$ uses $d_0$ on the right of the two corners with second index $0$, and $d_1$ on the right of the two corners with second index $1$. The two block matrices are not the same, and they differ exactly on the mixed corners: on $A_{01}$, $L_d$ uses $d_0$ and $R_d$ uses $d_1$; on $A_{10}$, $L_d$ uses $d_1$ and $R_d$ uses $d_0$. The diagonal corners see the same factor on both sides.</p>
 <h3 id="the-compression-of-a-general-multiplication">The compression of a general multiplication</h3>
@@ -230,7 +230,7 @@ $$</p>
 <h3 id="the-biquaternion-algebra">The biquaternion algebra</h3>
 <p>Let $A=\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. The diagonal part is $D=\mathbb{C}e\oplus\mathbb{C}f\cong\mathbb{C}\times\mathbb{C}$; the off-diagonal part is $N=\mathbb{C}E_{12}\oplus\mathbb{C}E_{21}$. The commutator $\operatorname{ad}_e$ has eigenvalues $0,\pm1$, and its kernel is $D$, the centraliser of $e$. The example is the biquaternion case of <em>The Centraliser and the Diagonal Peirce Part</em> and <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>, read through the left and right multiplications; the diagonal part is the algebra of the two complex lines, and the off-diagonal part is the complement. The quaternion division algebra $\mathbb{H}$ itself has no nontrivial idempotent, so it has no such decomposition; the biquaternion algebra is the matrix model in which the idempotent exists.</p>
 <h2 id="summary">Summary</h2>
-<p>Left and right multiplication commute, and their product is the sandwich: $L_aR_b=R_bL_a=T_{a,b}$. For an idempotent $e$, the operators $L_e$ and $R_e$ are commuting idempotents whose joint eigenspaces are the four Peirce corners: $A_{00}$ with $(1,1)$, $A_{01}$ with $(1,0)$, $A_{10}$ with $(0,1)$, and $A_{11}$ with $(0,0)$. The diagonal Peirce part $D=A_{00}\oplus A_{11}$ is the kernel of the commutator $\operatorname{ad}_e=L_e-R_e$, the centraliser of $e$, and a subalgebra with identity $1$ isomorphic to $A_{00}\times A_{11}$. The off-diagonal part $N=A_{01}\oplus A_{10}$ is the image of $\operatorname{ad}_e$; the commutator acts as $+1$ on $A_{01}$ and $-1$ on $A_{10}$, and $\operatorname{ad}_e^2=P_N$, $P_D=I-L_e-R_e+2L_eR_e$. The decomposition $A=D\oplus N$ is a $\mathbb{Z}/2$-grading: $D$ is a subalgebra, $N$ is a $D$-bimodule, and $N^2\subseteq D$. For $d=d_0+d_1\in D$, the operators $L_d$ and $R_d$ preserve each corner and have block matrices $\operatorname{diag}(L_{d_0},L_{d_0},L_{d_1},L_{d_1})$ and $\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1})$; their restrictions to $D$ are the faithful left and right regular representations of $D$. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. The article uses no form, involution or topology.</p>
+<p>Left and right multiplication commute, and their product is the sandwich: $L_aR_b=R_bL_a=L_{a}R_{b}$. For an idempotent $e$, the operators $L_e$ and $R_e$ are commuting idempotents whose joint eigenspaces are the four Peirce corners: $A_{00}$ with $(1,1)$, $A_{01}$ with $(1,0)$, $A_{10}$ with $(0,1)$, and $A_{11}$ with $(0,0)$. The diagonal Peirce part $D=A_{00}\oplus A_{11}$ is the kernel of the commutator $\operatorname{ad}_e=L_e-R_e$, the centraliser of $e$, and a subalgebra with identity $1$ isomorphic to $A_{00}\times A_{11}$. The off-diagonal part $N=A_{01}\oplus A_{10}$ is the image of $\operatorname{ad}_e$; the commutator acts as $+1$ on $A_{01}$ and $-1$ on $A_{10}$, and $\operatorname{ad}_e^2=P_N$, $P_D=I-L_e-R_e+2L_eR_e$. The decomposition $A=D\oplus N$ is a $\mathbb{Z}/2$-grading: $D$ is a subalgebra, $N$ is a $D$-bimodule, and $N^2\subseteq D$. For $d=d_0+d_1\in D$, the operators $L_d$ and $R_d$ preserve each corner and have block matrices $\operatorname{diag}(L_{d_0},L_{d_0},L_{d_1},L_{d_1})$ and $\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1})$; their restrictions to $D$ are the faithful left and right regular representations of $D$. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. The article uses no form, involution or topology.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -245,7 +245,7 @@ $$</p>
 <td>left and right multiplication by $a$</td>
 </tr>
 <tr>
-<td>$T_{a,b}=L_aR_b$</td>
+<td>$L_{a}R_{b}$</td>
 <td>the sandwich $x\mapsto axb$</td>
 </tr>
 <tr>

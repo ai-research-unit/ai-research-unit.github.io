@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-adjoint-of-the-bounded-ternary-product"><strong>The Adjoint of the Bounded Ternary Product</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The ternary product of a sesqualgebra is $\{x,y,z\}=xy^{*}z$, and its operator form is the <strong>pair operator</strong> $\Theta_{x,y}(z)=\{x,y,z\}$, bounded, linear in the variable and the ordinary left multiplication by the derived product, $\Theta_{x,y}=T_{x\star y,1}=L_{x\star y}$, as <em>The Bounded Ternary Product</em> records. The present article takes the adjoint of the pair operator for the canonical pairing $h(x,y)=x^{*}y$ of the layer, and the whole article turns on the single identity</p>
+<p>The ternary product of a sesqualgebra is $\{x,y,z\}=xy^{*}z$, and its operator form is the <strong>pair operator</strong> $\Theta_{x,y}(z)=\{x,y,z\}$, bounded, linear in the variable and the ordinary left multiplication by the derived product, $\Theta_{x,y}=L_{x\star y}R_{1}=L_{x\star y}$, as <em>The Bounded Ternary Product</em> records. The present article takes the adjoint of the pair operator for the canonical pairing $h(x,y)=x^{*}y$ of the layer, and the whole article turns on the single identity</p>
 <p>$$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},
 $$</p>
@@ -78,7 +78,7 @@ $$</p>
 <p>Three consequences are drawn, and they are the same three as in the algebraic layer. The diagonal $\Theta_{x,x}$ is self-adjoint for every element, because $x\star x=xx^{*}$ is Hermitian: this is the self-adjointness of the quadratic representation of the Jordan theory, now with a norm. The pair operator is self-adjoint exactly when its derived product is Hermitian, which ties the operator theory to the self-adjoint elements. And the adjoint operation permutes the three readings of the ternary product, so the family of the pair operators is stable under the adjoint and introduces no operator that the sandwich and the one-sided families had not already named; the identity is the operator form of the reversibility of the $J^{*}$-triple.</p>
 <p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ with the continuous involution $\varsigma$, and $A$ is a normed sesqualgebra of <em>Banach Sesqualgebras</em>: the standard example $x\star y=xy^{*}$, submultiplicative norm, isometric involution, $\lVert1\rVert=1$. The bounded linear operators are $B(A)$ and the bounded $\varsigma$-semilinear ones $B^{\varsigma}(A)$, of <em>Bounded Operators on a Sesqualgebra</em>; the canonical pairing is $h(x,y)=x^{*}y$, and the operator families are</p>
 <p>$$
-\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\},\qquad \mathcal{T}_{a,b}(x)=ax^{*}b,\qquad L_{c}(x)=cx,\qquad T_{p,q}(x)=pxq .
+\Theta_{x,y}(z)=xy^{*}z=\{x,y,z\},\qquad \mathcal{T}_{a,b}(x)=ax^{*}b,\qquad L_{c}(x)=cx,\qquad L_{p}R_{q}(x)=pxq .
 $$</p>
 <p>As in <em>Adjoints of Bounded Sesquilinear Operators</em>, the symbol $L_{c}$ is the <strong>plain</strong> left multiplication, the multiplication for the associative product; <em>The Bounded Left and Right Multiplication Operators of a Sesqualgebra</em> reserves $L_{c}$ for the multiplication $c\star x=cx^{*}$ by the derived product, which is $\mathcal{T}_{c,1}$ here.</p>
 <p>The adjoint of a bounded linear operator is defined by $h(Tx,y)=h(x,T^{\dagger}y)$ and that of a bounded conjugate-linear operator by the twisted rule $h(Sx,y)=h(x,S^{\dagger}y)^{*}$, both of <em>Adjoints of Bounded Sesquilinear Operators</em>, where the adjointable linear operators are characterised as the left multiplications.</p>
@@ -86,10 +86,10 @@ $$</p>
 <h3 id="the-boundedness-and-the-factorisation">The Boundedness and the Factorisation</h3>
 <p><strong>Theorem (the pair operator is a bounded left multiplication).</strong> For $x,y\in A$ the pair operator is linear in its variable and satisfies</p>
 <p>$$
-\Theta_{x,y}=T_{x\star y,1}=L_{x\star y},\qquad \lVert\Theta_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert,\qquad \Theta_{x,y}(1)=x\star y,
+\Theta_{x,y}=L_{x\star y}R_{1}=L_{x\star y},\qquad \lVert\Theta_{x,y}\rVert\le\lVert x\rVert\lVert y\rVert,\qquad \Theta_{x,y}(1)=x\star y,
 $$</p>
 <p>and the pair map $(x,y)\mapsto\Theta_{x,y}$ is linear in $x$ and $\varsigma$-semilinear in $y$.</p>
-<p><strong>Proof.</strong> The factorisation is <em>The Bounded Ternary Product</em>, $\Theta_{x,y}(z)=xy^{*}z=(x\star y)z=T_{x\star y,1}(z)$, which is the left multiplication by the derived product; the bound is the submultiplicative estimate $\lVert xy^{*}z\rVert\le\lVert x\rVert\lVert y\rVert\lVert z\rVert$ of that article, and the value at the unit is $xy^{*}=x\star y$. The parity of the pair map is the parity of the derived product, linear in the first factor and $\varsigma$-semilinear in the second.</p>
+<p><strong>Proof.</strong> The factorisation is <em>The Bounded Ternary Product</em>, $\Theta_{x,y}(z)=xy^{*}z=(x\star y)z=L_{x\star y}R_{1}(z)$, which is the left multiplication by the derived product; the bound is the submultiplicative estimate $\lVert xy^{*}z\rVert\le\lVert x\rVert\lVert y\rVert\lVert z\rVert$ of that article, and the value at the unit is $xy^{*}=x\star y$. The parity of the pair map is the parity of the derived product, linear in the first factor and $\varsigma$-semilinear in the second.</p>
 <p><strong>Remark.</strong> The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule and the parity obstruction of a conjugate-linear operator does not arise: the conjugate-linearity of the ternary product sits in the middle slot, which is a <strong>parameter</strong> of the operator and not its variable. A parameter may be conjugate-linear while the operator it names is linear, and the adjoint reads the operator and not the parameter.</p>
 <h3 id="the-adjoint-swaps-the-parameters">The Adjoint Swaps the Parameters</h3>
 <p><strong>Theorem (the adjoint of the pair operator).</strong> For all $x,y\in A$,</p>
@@ -107,7 +107,7 @@ $$</p>
 \Theta_{x,x}=L_{x\star x},\qquad \Theta_{x,x}^{\dagger}=L_{(x\star x)^{*}}=L_{x\star x}.
 $$</p>
 <p><strong>Proof.</strong> The diagonal is self-adjoint by the corollary of the adjoint theorem, and the second identity is the same factorisation read on the adjoint; it agrees with the first because the derived square is Hermitian, $(x\star x)^{*}=(xx^{*})^{*}=xx^{*}=x\star x$.</p>
-<p><strong>Remark.</strong> The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint for the canonical pairing whatever the involution and whatever the algebra. In the bilinear commutative case the operator is $U_{x}=\Theta_{x,x}=2T_{x,1}^{2}-T_{x^{2},1}$ of <em>The Ternary Product as an Operator</em>, and its self-adjointness is the classical one; the general theorem recovers it and gives it a norm.</p>
+<p><strong>Remark.</strong> The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint for the canonical pairing whatever the involution and whatever the algebra. In the bilinear commutative case the operator is $U_{x}=\Theta_{x,x}=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}$ of <em>The Ternary Product as an Operator</em>, and its self-adjointness is the classical one; the general theorem recovers it and gives it a norm.</p>
 <h3 id="the-hermitian-criterion">The Hermitian Criterion</h3>
 <p><strong>Theorem (when the pair operator is self-adjoint).</strong> For $x,y\in A$,</p>
 <p>$$
@@ -121,13 +121,13 @@ $$</p>
 <h3 id="the-three-interpretations-under-the-adjoint">The Three Interpretations under the Adjoint</h3>
 <p><strong>Theorem (the readings and their adjoints).</strong> For all $x,y,z\in A$,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x},\qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1},
+\Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad \mathcal{T}_{x,z}^{\dagger}=\mathcal{T}_{z,x},\qquad L_{x\star y}R_{1}^{\dagger}=L_{(x\star y)^{*}}R_{1},
 $$</p>
 <p>the last two being read modulo the reduction of the pairing by a central functional, where they are the sandwich adjoint and the two-sided adjoint of Part I.</p>
-<p><strong>Proof.</strong> The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of <em>Adjoints of Bounded Sesquilinear Operators</em>, §<em>The Reduction to a Scalar Form</em>, and there they are $\mathcal{T}_{b,a}$ and $T_{p^{*},q^{*}}$. With the factorisation $\Theta_{x,y}=T_{x\star y,1}$ the third reproduces the first.</p>
+<p><strong>Proof.</strong> The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of <em>Adjoints of Bounded Sesquilinear Operators</em>, §<em>The Reduction to a Scalar Form</em>, and there they are $\mathcal{T}_{b,a}$ and $L_{p^{*}}R_{q^{*}}$. With the factorisation $\Theta_{x,y}=L_{x\star y}R_{1}$ the third reproduces the first.</p>
 <p><strong>Corollary (no new adjoint).</strong> The adjoint of the pair operator of $(x,y)$ is a pair operator again,</p>
 <p>$$
-\Theta_{x,y}^{\dagger}=T_{(x\star y)^{*},1}=L_{y\star x}=\Theta_{y,x},
+\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}R_{1}=L_{y\star x}=\Theta_{y,x},
 $$</p>
 <p>so the family of the pair operators is stable under the adjoint and the ternary product introduces no adjoint that the left multiplications had not already named.</p>
 <p><strong>Remark.</strong> The stability is a genuine closure statement: the adjoint of the conjugate left multiplication does not stay in the one-sided family, as <em>The Adjoint of the Bounded Conjugate Left Multiplication</em> records, while the adjoint of the pair operator stays in the family of the pairs. The reason is that the pair operator is a <strong>plain</strong> left multiplication by a derived product, and the plain left multiplications are exactly the adjointable linear operators of the canonical pairing; the pairs therefore inherit the closure that the derived one-sided operators do not have.</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>$$
 \Theta_{x,y}(z)=xyz=yxz=\Theta_{y,x}(z),
 $$</p>
-<p>so every pair operator is self-adjoint, in agreement with the criterion, and the quadratic representation $U_{x}=\Theta_{x,x}=2T_{x,1}^{2}-T_{x^{2},1}$ is self-adjoint. The two degenerations meet in the commutative case, where the reversal of the triple is the commutativity of the product.</p>
+<p>so every pair operator is self-adjoint, in agreement with the criterion, and the quadratic representation $U_{x}=\Theta_{x,x}=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}$ is self-adjoint. The two degenerations meet in the commutative case, where the reversal of the triple is the commutativity of the product.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-complex-matrices">The Complex Matrices</h3>
 <p>Let $A=M_{n}(\mathbb{C})$ with the conjugate transpose, the operator norm, $\tau=\operatorname{tr}$ and the reduced pairing $h_{\tau}(X,Y)=\operatorname{tr}(X^{*}Y)$, the canonical $A$-valued form being $h(X,Y)=X^{*}Y$. The pair operator of $(X,Y)$ is $\Theta_{X,Y}(Z)=XY^{*}Z$, its adjoint is $\Theta_{X,Y}^{\dagger}=\Theta_{Y,X}$, and the criterion reads</p>
@@ -177,7 +177,7 @@ $$</p>
 <td>the trilinear bound, from <em>The Bounded Ternary Product</em></td>
 </tr>
 <tr>
-<td>$\Theta_{x,y}=T_{x\star y,1}=L_{x\star y}$</td>
+<td>$\Theta_{x,y}=L_{x\star y}R_{1}=L_{x\star y}$</td>
 <td>the factorisation through the derived product</td>
 </tr>
 <tr>

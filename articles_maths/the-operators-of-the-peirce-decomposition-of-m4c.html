@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-operators-of-the-peirce-decomposition-of-math0"><strong>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the sandwich $T_{a,b}$, and the derivation $\operatorname{ad}_a$.</strong> On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.</p>
+<p><strong>The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the sandwich $L_{a}R_{b}$, and the derivation $\operatorname{ad}_a$.</strong> On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.</p>
 <p>The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition is <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>; the adjoint action is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>; the frame and the gauge are <em>The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-four-operators">The Four Operators</h2>
 <p><strong>Definitions.</strong> For $a,b\in M_4(\mathbb{C})$, define</p>
@@ -81,15 +81,15 @@ $$</p>
 R_a:M_4\to M_4,\qquad R_a(X)=Xa,
 $$</p>
 <p>$$
-T_{a,b}:M_4\to M_4,\qquad T_{a,b}(X)=aXb,
+L_{a}R_{b}:M_4\to M_4,\qquad L_{a}R_{b}(X)=aXb,
 $$</p>
 <p>$$
 \operatorname{ad}_a:M_4\to M_4,\qquad \operatorname{ad}_a(X)=[a,X]=aX-Xa.
 $$</p>
-<p>The operator $T_{a,b}$ is the <strong>sandwich</strong>; $\operatorname{ad}_a$ is the <strong>adjoint</strong> or <strong>inner derivation</strong>.</p>
+<p>The operator $L_{a}R_{b}$ is the <strong>sandwich</strong>; $\operatorname{ad}_a$ is the <strong>adjoint</strong> or <strong>inner derivation</strong>.</p>
 <p><strong>Proposition.</strong> The operators satisfy</p>
 <p>$$
-T_{a,b}=L_aR_b=R_bL_a,\qquad
+L_{a}R_{b}=R_bL_a,\qquad
 \operatorname{ad}_a=L_a-R_a,
 $$</p>
 <p>and</p>
@@ -99,12 +99,12 @@ R_aR_b=R_{ba},\qquad
 L_aR_b=R_bL_a .
 $$</p>
 <p><strong>Proof.</strong> The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.</p>
-<p><strong>A note on the symbols.</strong> Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article <em>Two-Sided Operators on the Biquaternion Algebra</em> uses the letters $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ for the same two parameters, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$ there.</p>
+<p><strong>A note on the symbols.</strong> Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article <em>Two-Sided Operators on the Biquaternion Algebra</em> uses the letters $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ for the same two parameters, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det L_{a}R_{b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $\langle\tilde Q_1\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$ there.</p>
 <p><strong>The matrices.</strong> Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then</p>
 <p>$$
 L_a=a\otimes I_4,\qquad
 R_b=I_4\otimes b^{\mathsf T},\qquad
-T_{a,b}=a\otimes b^{\mathsf T},
+L_{a}R_{b}=a\otimes b^{\mathsf T},
 $$</p>
 <p>$$
 \operatorname{ad}_a=a\otimes I_4-I_4\otimes a^{\mathsf T}.
@@ -119,7 +119,7 @@ $$</p>
 <p>$$
 \det L_a=(\det a)^4,\qquad
 \det R_b=(\det b)^4,\qquad
-\det T_{a,b}=(\det a\det b)^4.
+\det L_{a}R_{b}=(\det a\det b)^4.
 $$</p>
 <p><strong>The rank of the adjoint.</strong> The kernel of $\operatorname{ad}_a$ is the centraliser</p>
 <p>$$
@@ -130,9 +130,9 @@ $$</p>
 \operatorname{rank}\operatorname{ad}_a=16-\sum_i m_i^2.
 $$</p>
 <p>For a generic $a$ with four distinct eigenvalues, the centraliser is the algebra of polynomials in $a$, of dimension $4$, and the rank is $12$.</p>
-<p><strong>The rank of the sandwich.</strong> The sandwich $T_{a,b}=a\otimes b^{\mathsf T}$ has rank</p>
+<p><strong>The rank of the sandwich.</strong> The sandwich $L_{a}R_{b}=a\otimes b^{\mathsf T}$ has rank</p>
 <p>$$
-\operatorname{rank}T_{a,b}=\operatorname{rank}a\cdot\operatorname{rank}b.
+\operatorname{rank}L_{a}R_{b}=\operatorname{rank}a\cdot\operatorname{rank}b.
 $$</p>
 <p>Its kernel is the set of $X$ with $aXb=0$, and its image is the set of matrices whose columns lie in $\operatorname{im}a$ and whose rows lie in $\operatorname{im}b^{\mathsf T}$.</p>
 <h2 id="the-action-on-the-matrix-units">The Action on the Matrix Units</h2>
@@ -148,12 +148,12 @@ $$</p>
 <p>The row index $i$ is fixed, and the column index is transformed by $b$. The right multiplication acts on the <strong>column index</strong> of the unit.</p>
 <p><strong>The sandwich.</strong> On the matrix units,</p>
 <p>$$
-T_{a,b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{4}a_{ki}b_{jl}E_{kl}.
+L_{a}R_{b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{4}a_{ki}b_{jl}E_{kl}.
 $$</p>
 <p>The coefficient of $E_{kl}$ is $a_{ki}b_{jl}$: the row index is transformed by $a$ and the column index by $b$, independently. This is the <strong>corner map</strong>: the unit $E_{ij}$ is sent to a linear combination of the units $E_{kl}$, and the coefficient factorises into a row factor and a column factor.</p>
 <p><strong>The elementary sandwich.</strong> For $a=E_{ir}$ and $b=E_{sl}$,</p>
 <p>$$
-T_{a,b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
+L_{a}R_{b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
 $$</p>
 <p>The sandwich with two elementary matrices carries the corner $A_{rs}$ to the corner $A_{il}$:</p>
 <p>$$
@@ -239,24 +239,24 @@ $$</p>
 <p>These are real-linear or conjugate-linear maps, not elements of $\operatorname{Aut}_\mathbb{C}(M_4)$. The real algebra $M_4(\mathbb{C})$ has the conjugation as an automorphism of the real algebra, and the transpose as an anti-automorphism; they are "outer" only in the real sense.</p>
 <p><strong>The Lie algebra.</strong> The automorphism group $PGL_4$ has Lie algebra $\mathfrak{sl}_4$, and the adjoint action of the group on $M_4$ is the exponentiation of the adjoint action of the Lie algebra. The orbit of an element is its conjugacy class; the orbit classification is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-sandwich-as-a-map-of-corners">The Sandwich as a Map of Corners</h2>
-<p><strong>The corner map.</strong> The sandwich $T_{a,b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,</p>
+<p><strong>The corner map.</strong> The sandwich $L_{a}R_{b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,</p>
 <p>$$
-T_{a,b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
+L_{a}R_{b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
 $$</p>
 <p>The coefficient of $A_{il}$ is the product of the $(i,r)$ entry of $a$ and the $(s,l)$ entry of $b$. The map is the tensor product of the row action and the column action; it sends the corner $(r,s)$ to a linear combination of the corners $(i,l)$.</p>
-<p><strong>The elementary corner maps.</strong> The elementary sandwich $T_{E_{ir},E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:</p>
+<p><strong>The elementary corner maps.</strong> The elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:</p>
 <p>$$
-T_{E_{ir},E_{sl}}(A_{rs})=A_{il}.
+L_{E_{ir}}R_{E_{sl}}(A_{rs})=A_{il}.
 $$</p>
 <p>The elementary corner maps are the matrix units of the space of corner maps; the general sandwich is a linear combination with coefficients $a_{ir}b_{sl}$.</p>
 <p><strong>The inner automorphism.</strong> For $b=a^{-1}$,</p>
 <p>$$
-T_{a,a^{-1}}(X)=aXa^{-1}
+L_{a}R_{a^{-1}}(X)=aXa^{-1}
 $$</p>
 <p>is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners in general: it preserves each corner line exactly when $a$ is diagonal in the frame, and a permutation matrix permutes the spectral lines.</p>
 <p><strong>The sandwich and the Peirce table.</strong> The sandwich acts on the two-sided Peirce table of <em>The Rank-Two Split of $M_4(\mathbb{C})$</em> by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.</p>
 <h2 id="summary">Summary</h2>
-<p>The four operators on $M_4$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $T_{a,b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $T_{a,b}=L_aR_b=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I$, $R_b=I\otimes b^{\mathsf T}$, $T_{a,b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I-I\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $T_{E_{ir},E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.</p>
+<p>The four operators on $M_4$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $L_{a}R_{b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $L_{a}R_{b}=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $L_{a}R_{b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I$, $R_b=I\otimes b^{\mathsf T}$, $L_{a}R_{b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I-I\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $L_{E_{ir}}R_{E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.</p>
 <p>$$
 \boxed{\ \operatorname{Der}(M_4)\cong\mathfrak{sl}_4,\ \dim=15;\qquad \operatorname{Aut}(M_4)\cong PGL_4,\ \dim=15;\qquad \operatorname{rank}\operatorname{ad}_a=16-\sum_i m_i^2. }
 $$</p>
@@ -283,7 +283,7 @@ $$</p>
 <td>$4\operatorname{tr}b$</td>
 </tr>
 <tr>
-<td>$T_{a,b}$</td>
+<td>$L_{a}R_{b}$</td>
 <td>$a\otimes b^{\mathsf T}$</td>
 <td>both indices</td>
 <td>$\operatorname{tr}a\operatorname{tr}b$</td>
@@ -314,7 +314,7 @@ $$</p>
 <td>right multiplication $X\mapsto Xa$</td>
 </tr>
 <tr>
-<td>$T_{a,b}$</td>
+<td>$L_{a}R_{b}$</td>
 <td>sandwich $X\mapsto aXb$</td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Kronecker product and the vectorisation of matrix equations.</li>
 <li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the corners and the multiplication rule.</li>
 <li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split of $M_4(\mathbb{C})$</a>, for the two-sided Peirce table.</li>
-<li><a href="the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>, for the field of values of $T_{a,b}$ and the product bound.</li>
+<li><a href="the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>, for the field of values of $L_{a}R_{b}$ and the product bound.</li>
 <li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the conjugation action and its orbits.</li>
 <li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the construction of the algebra from the sandwich map and the four-dimensional case.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the same construction on the four-dimensional carrier.</li>

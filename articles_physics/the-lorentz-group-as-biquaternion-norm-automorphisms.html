@@ -148,17 +148,17 @@ $$</p>
 <p>The biquaternion norm <strong>is the determinant</strong>, and $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\mathsf{M}_2(\tilde{Q})$ and $\langle\tilde{Q}\rangle_{\natural}$ agreeing to machine precision.</p>
 <p>The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map</p>
 <p>$$
-T_{A,B}:\ \tilde{Q}\ \longmapsto A\,\tilde{Q}\,B^{*},
+L_{A}R_{B}:\ \tilde{Q}\ \longmapsto A\,\tilde{Q}\,B^{*},
 \qquad
 A,B\in GL_2(\mathbb{C}).
 $$</p>
 <p>It is invertible and $\mathbb{C}$-linear, and its effect on the form is</p>
 <p>$$
-\langle T_{A,B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{*}\right)
+\langle L_{A}R_{B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{*}\right)
 = \det A\,\overline{\det B}\,\det\tilde{Q}
 = \det A\,\overline{\det B}\,\langle\tilde{Q}\rangle_{\natural}.
 $$</p>
-<p>Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto T_{A,B}$ is the set of pairs acting trivially, $T_{A,B} = \mathrm{id}$, which is</p>
+<p>Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A\,\overline{\det B} = 1$, and one may normalise both factors to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto L_{A}R_{B}$ is the set of pairs acting trivially, $L_{A}R_{B} = \mathrm{id}$, which is</p>
 <p>$$
 \ker = \{\,(\lambda I_2,\mu I_2) : \lambda,\mu\in\mathbb{C}^\times,\ \lambda\bar\mu=1\,\},
 \qquad
@@ -296,11 +296,11 @@ $$</p>
 <p>A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian sandwich with unit-norm elements.</p>
 <h2 id="the-algebra-automorphisms-the-diagonal-and-an-induced-causality">The Algebra Automorphisms: the Diagonal, and an Induced Causality</h2>
 <p>The automorphisms used so far preserve the <strong>form</strong>. The algebra has a smaller automorphism group, the maps that also preserve the <strong>product</strong>, and the difference between the two is the subject of open question 1 below. That difference has a sharp algebraic description, and a neighbouring research programme — Kassandrov's biquaternionic <em>algebrodynamics</em>, in Further Reading — builds on it a derivation of Minkowski geometry and of its causal structure rather than treating it as a curiosity. The group-theoretic content of this section is standard; the construction and its consequences are the source's, and the checks are this article's.</p>
-<p><strong>The algebra automorphisms are the adjoint-inverse subfamily of the form automorphisms.</strong> By Skolem–Noether (companion article <em>Biquaternion Automorphisms and Derivations</em>) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, and in the dagger parametrisation of the norm automorphisms it is $T_{A,B}$ with $AB^{*}=I$; the group is</p>
+<p><strong>The algebra automorphisms are the adjoint-inverse subfamily of the form automorphisms.</strong> By Skolem–Noether (companion article <em>Biquaternion Automorphisms and Derivations</em>) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, and in the dagger parametrisation of the norm automorphisms it is $L_{A}R_{B}$ with $AB^{*}=I$; the group is</p>
 <p>$$
 \boxed{\ \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C})\ } ,
 $$</p>
-<p>of complex dimension three. In the parametrization $T_{A,B}\tilde{Q}=A\tilde{Q}B^{*}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A\,\overline{\det B}=1$ — this is the subfamily $AB^{*}=I$, and the determinant condition then holds automatically because $\det(AB^{*})=\det A\,\overline{\det B}=1$. The source calls it the <strong>diagonal</strong>, a name taken from the description in which the two chiral factors are equal; with the dagger the equality becomes the adjoint-inverse condition $AB^{*}=I$. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,</p>
+<p>of complex dimension three. In the parametrization $L_{A}R_{B}\tilde{Q}=A\tilde{Q}B^{*}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A\,\overline{\det B}=1$ — this is the subfamily $AB^{*}=I$, and the determinant condition then holds automatically because $\det(AB^{*})=\det A\,\overline{\det B}=1$. The source calls it the <strong>diagonal</strong>, a name taken from the description in which the two chiral factors are equal; with the dagger the equality becomes the adjoint-inverse condition $AB^{*}=I$. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,</p>
 <p>$$
 SO(3,\mathbb{C}) \;\cong\; \frac{SL(2,\mathbb{C})}{\{\pm e_t\}} \;\subset\; SO(4,\mathbb{C}),
 \qquad
@@ -525,7 +525,7 @@ $$</p>
 <td>Matrix realization; biquaternion norm is the determinant</td>
 </tr>
 <tr>
-<td>$T_{A,B}:\tilde{Q}\mapsto A\tilde{Q}B^{*}$, $\det A\,\overline{\det B}=1$</td>
+<td>$L_{A}R_{B}:\tilde{Q}\mapsto A\tilde{Q}B^{*}$, $\det A\,\overline{\det B}=1$</td>
 <td>General norm-preserving complex map</td>
 </tr>
 <tr>

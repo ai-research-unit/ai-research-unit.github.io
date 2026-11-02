@@ -91,7 +91,7 @@ $$</p>
 <p>so it is a <code>*</code>-map from the involutive algebra $(A,\delta)$ to the involutive algebra $(E,*_\sigma)$; it is not a homomorphism of algebras, because $\Lambda(a)\Lambda(b)=L(a\alpha(b))$ is an unsigned left multiplication.</p>
 <p><em>Proof.</em> The intertwining is the theorem; the failure of multiplicativity is the composition computed below, and it is the reason the signed left regular map is a <code>*</code>-map and not a <code>*</code>-homomorphism.</p>
 <p><strong>Corollary (specialization).</strong> For $\alpha=\mathrm{id}$ one has $\delta=\sigma$ and $\Lambda(a)=L(a)$, so the theorem reduces to $L(a)^{*_\sigma}=L(\sigma(a))$ of <em>The Adjoint of the Left Multiplication on an Algebra</em>; for the twisted pairing the signed adjoint of the signed left multiplication is the signed left multiplication by the $\delta$-image, and the unsigned adjoint of the unsigned one is the unsigned right multiplication.</p>
-<p><em>Proof.</em> Both statements are the definitions read at $\alpha=\mathrm{id}$, where $\mathcal{T}_{a,b}=T_{a,b}$ and $\delta=\sigma$.</p>
+<p><em>Proof.</em> Both statements are the definitions read at $\alpha=\mathrm{id}$, where $\mathcal{T}_{a,b}=L_{a}R_{b}$ and $\delta=\sigma$.</p>
 <h2 id="the-plain-adjoint-and-the-two-sides">The Plain Adjoint and the Two Sides</h2>
 <p><strong>Proposition.</strong> With respect to the plain pairing,</p>
 <p>$$
@@ -132,14 +132,14 @@ $$</p>
 <h2 id="relation-to-the-sandwich-and-the-reflection">Relation to the Sandwich and the Reflection</h2>
 <p><strong>Theorem.</strong> The signed sandwich is the product of a signed left multiplication and a right multiplication,</p>
 <p>$$
-\mathcal{T}_{a,b}=\Lambda(a)\,R_{\alpha(b)}=\alpha\,T_{\alpha(a),\alpha(b)},
+\mathcal{T}_{a,b}=\Lambda(a)\,R_{\alpha(b)}=\alpha\,L_{\alpha(a)}R_{\alpha(b)},
 $$</p>
 <p>and the signed conjugation is the special case</p>
 <p>$$
 \rho_u=\mathcal{T}_{u,u^{-1}}=\Lambda(u)\,R_{\alpha(u)^{-1}} .
 $$</p>
-<p>The one-sided signed operators therefore generate the two-sided ones, and the unsigned sandwich is recovered as $T_{a,b}=L(a)R(b)=\mathcal{T}_{a,b}\alpha$.</p>
-<p><em>Proof.</em> $\Lambda(a)R_{\alpha(b)}(x)=\Lambda(a)(x\alpha(b))=a\alpha(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b$; the second form is the reading $\mathcal{T}_{a,b}=\alpha T_{\alpha(a),\alpha(b)}$ of <em>The Signed Sandwich on an Algebra</em>, since $\alpha(\alpha(a)x\alpha(b))=a\alpha(x)b$. The reflection is the case $b=u^{-1}$, and the last identity is $\mathcal{T}_{a,b}\alpha=\alpha T_{\alpha(a),\alpha(b)}\alpha=T_{a,b}$.</p>
+<p>The one-sided signed operators therefore generate the two-sided ones, and the unsigned sandwich is recovered as $L_{a}R_{b}=L(a)R(b)=\mathcal{T}_{a,b}\alpha$.</p>
+<p><em>Proof.</em> $\Lambda(a)R_{\alpha(b)}(x)=\Lambda(a)(x\alpha(b))=a\alpha(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b$; the second form is the reading $\mathcal{T}_{a,b}=\alpha L_{\alpha(a)}R_{\alpha(b)}$ of <em>The Signed Sandwich on an Algebra</em>, since $\alpha(\alpha(a)x\alpha(b))=a\alpha(x)b$. The reflection is the case $b=u^{-1}$, and the last identity is $\mathcal{T}_{a,b}\alpha=\alpha L_{\alpha(a)}R_{\alpha(b)}\alpha=L_{a}R_{b}$.</p>
 <p><strong>Corollary (the one-sided reading of the reflections).</strong> Every reflection is a signed left multiplication followed by the inverse right multiplication of the $\alpha$-image, and its adjoint is the signed left multiplication by $\delta(u)$ followed by the inverse right multiplication of $\alpha\delta(u)$; the side switch of the plain pairing is confined to the second factor, and the signed pairing keeps both factors on their sides.</p>
 <p><em>Proof.</em> The first identity is the theorem at $b=u^{-1}$; the adjoint statement is the same identity applied to $\delta(u)$, since $\rho_u^{*_\sigma}=\rho_{\delta(u)}$ by <em>The Signed Adjoint of the Reflection on an Algebra</em>.</p>
 <h2 id="examples">Examples</h2>

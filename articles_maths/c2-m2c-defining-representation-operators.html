@@ -72,14 +72,14 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The carrier is a module and not an algebra, and the whole article turns on that difference.</strong> In the algebra categories a two-sided operator is a sandwich $X\mapsto QXP$, with both slots elements of the algebra. Here there is no product of two elements of the carrier: $V=\mathbb{C}^{2}$ is a module, a sum of two columns is not a column of a product, and the second slot must be a covector. The two-sided operator is therefore
 $$
-T_{u,\phi}(v)=\phi(v)\,u=u\phi^{\mathsf T},
+L_{u}R_{\phi}(v)=\phi(v)\,u=u\phi^{\mathsf T},
 $$
 with $u\in V$ a column and $\phi\in V^{*}$ a row.</p>
 <p><strong>The result in one line.</strong> Every two-sided operator of the carrier is a rank-one matrix, that is a point of the determinantal cone $\{\det=0\}$ in $M_2(\mathbb{C})=\mathbb{C}^{4}$; the family is closed under composition, with the scalar absorbed; it has no identity, no inverses, no isometries and no nonzero skew-adjoint member; and its length equals its rank and is at most two. <strong>The pair is a semigroup with zero and not a group, and the reason is arithmetic: the identity has rank two and the cone has rank one.</strong></p>
 <p><strong>Why the pair is still worth having.</strong> Three things are gained. The parametrisation by $V\times V^{*}$ modulo scaling, which turns every statement about the cone into a statement about a point of $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The single quadratic criterion $\det M=0$, which at this size is the whole of the rank condition. And the length formula, which makes the rank of a matrix the number of elementary products it needs. <strong>What is lost is exactly the algebra: the identity, the inverses and the isometry group.</strong></p>
 <p><strong>Two cones and not one.</strong> The space $M_2(\mathbb{C})$ carries two rank-one families, the bilinear one $u\phi^{\mathsf T}$ and the Hermitian one $uu^{\dagger}$, and both belong to this pair. The first is the Segre quadric and the second is the light cone, its projectivisation is one projective line and not a product, and the collapse is the quotient by the phase. <strong>This is the only pair of the corpus where the two cones must be compared side by side</strong>, because it is the only one where both are cones of operators on a module rather than of elements of an algebra.</p>
 <p><strong>Boundaries.</strong> The space, the three forms and the two cones as point sets are <em>$M_2(\mathbb{C})$ Defining Representation</em>; the operators of the biquaternion algebra, with the sandwich $X\mapsto QXP$, its cone, its ladder $1,4,7,16$ and its gauge, are <em>$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators</em>; the general rank criterion and the determinantal variety at the size four are <em>$M_4(\mathbb{C})$ Standard Peirce Representation</em> and its operators companion; the endomorphism algebra, $\mathrm{GL}_2(\mathbb{C})$ and $\mathrm{PGL}_2(\mathbb{C})$ are <em>The Endomorphisms of $\mathbb{C}^2$</em>; the lattice and the incidence are <em>The Subspaces of $\mathbb{C}^2$</em>. The general theory of operators on a module, with the two-sided operators and the tensor form of the linear map, is <em>Modules</em>, and the vectorisation and the coefficient array are <em>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</em>.</p>
-<p><strong>Conventions.</strong> The carrier is $V=\mathbb{C}^{2}$ with the basis $e_1,e_2$, the dual is $V^{*}$ with the dual basis, $\phi(u)=\phi^{\mathsf T}u$ is the pairing with no conjugation, $E_{jk}=e_je_k^{\mathsf T}$ are the matrix units, $M^{\mathsf T}$ and $M^{\dagger}$ are the transpose and the conjugate transpose, and $J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$. The operator is written $T_{u,\phi}=u\phi^{\mathsf T}$ with the column on the left and the row on the right, and $\mathcal{C}$ is the set of all of them, the <strong>bilinear cone</strong>, with $\mathcal{C}_{H}$ the <strong>Hermitian cone</strong> of the matrices $uu^{\dagger}$.</p>
+<p><strong>Conventions.</strong> The carrier is $V=\mathbb{C}^{2}$ with the basis $e_1,e_2$, the dual is $V^{*}$ with the dual basis, $\phi(u)=\phi^{\mathsf T}u$ is the pairing with no conjugation, $E_{jk}=e_je_k^{\mathsf T}$ are the matrix units, $M^{\mathsf T}$ and $M^{\dagger}$ are the transpose and the conjugate transpose, and $J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$. The operator is written $L_{u}R_{\phi}=u\phi^{\mathsf T}$ with the column on the left and the row on the right, and $\mathcal{C}$ is the set of all of them, the <strong>bilinear cone</strong>, with $\mathcal{C}_{H}$ the <strong>Hermitian cone</strong> of the matrices $uu^{\dagger}$.</p>
 <h2 id="the-one-sided-operators">The One-Sided Operators</h2>
 <p><strong>The left side of the carrier is a full matrix algebra and the right side is a dual space, and the two sides are of different kinds.</strong></p>
 <h3 id="the-left-multiplication">The Left Multiplication</h3>
@@ -95,7 +95,7 @@ $$</p>
 $$
 \phi:V\longrightarrow\mathbb{C},\qquad v\longmapsto\phi(v)=\phi^{\mathsf T}v .
 $$
-The operator built from a functional is $T_{u_0,\phi}=u_0\phi^{\mathsf T}$, for a column $u_0$.</p>
+The operator built from a functional is $L_{u_0}R_{\phi}=u_0\phi^{\mathsf T}$, for a column $u_0$.</p>
 <p><strong>Proposition (there is no right multiplication by an element of the carrier).</strong> For $u\in V$ there is no linear map $v\mapsto vu$.</p>
 <p><em>Proof.</em> A product $vu$ would require an algebra structure on $V$, and the carrier has none: $V$ is a module and its only product is the action $Av$ of an endomorphism on a column. What the carrier has instead is the pairing with the dual, which is the functional $\phi$.</p>
 <p><strong>The asymmetry is the whole first section.</strong> The left side is a space of dimension four over $\mathbb{C}$ and the right side is a space of dimension two, that is four over $\mathbb{R}$; <strong>the two sides are of different complex dimensions and they are not interchangeable.</strong> The general theory of a two-sided operator on a module takes its second slot in the dual for exactly this reason (<em>Modules</em>).</p>
@@ -111,17 +111,17 @@ $$</p>
 <h2 id="the-two-sided-operator">The Two-Sided Operator</h2>
 <p><strong>Definition.</strong> The <strong>two-sided operator</strong> of the pair $(u,\phi)$ is
 $$
-T_{u,\phi}=u\phi^{\mathsf T},\qquad T_{u,\phi}(v)=\phi(v)\,u .
+L_{u}R_{\phi}=u\phi^{\mathsf T},\qquad L_{u}R_{\phi}(v)=\phi(v)\,u .
 $$</p>
 <p><strong>Proposition (the elementary properties).</strong> For all $u,u'\in V$, $\phi,\phi'\in V^{*}$ and $\lambda\in\mathbb{C}$:
 $$
-T_{u,\phi}+T_{u',\phi}=T_{u+u',\phi},\qquad
-T_{u,\phi}+T_{u,\phi'}=T_{u,\phi+\phi'},\qquad
-T_{\lambda u,\phi}=T_{u,\lambda\phi}=\lambda\,T_{u,\phi},
+L_{u}R_{\phi}+L_{u'}R_{\phi}=L_{u+u'}R_{\phi},\qquad
+L_{u}R_{\phi}+L_{u}R_{\phi'}=L_{u}R_{\phi+\phi'},\qquad
+L_{\lambda u}R_{\phi}=L_{u}R_{\lambda\phi}=\lambda\,L_{u}R_{\phi},
 $$
-and $T_{u,\phi}=0$ if and only if $u=0$ or $\phi=0$.</p>
+and $L_{u}R_{\phi}=0$ if and only if $u=0$ or $\phi=0$.</p>
 <p><em>Proof.</em> The three identities are the distributivity of the matrix product over the sum of rank-one factors. The last is the statement that a product of a nonzero column and a nonzero row is nonzero, entrywise.</p>
-<p><strong>Proposition (the fibre is exactly the scaling orbit).</strong> If $T_{u,\phi}=T_{u',\phi'}\neq0$ then $u'=\lambda u$ and $\phi'=\lambda^{-1}\phi$ for a unique $\lambda\in\mathbb{C}^{\times}$; the fibres of the parametrisation are therefore the orbits
+<p><strong>Proposition (the fibre is exactly the scaling orbit).</strong> If $L_{u}R_{\phi}=L_{u'}R_{\phi'}\neq0$ then $u'=\lambda u$ and $\phi'=\lambda^{-1}\phi$ for a unique $\lambda\in\mathbb{C}^{\times}$; the fibres of the parametrisation are therefore the orbits
 $$
 (u,\phi)\longmapsto(\lambda u,\lambda^{-1}\phi),
 $$
@@ -221,27 +221,27 @@ and the map is onto the closed future cone.</p>
 <p><strong>The family is closed under composition, the scalar is absorbed, and the trace records the absorption.</strong></p>
 <p><strong>Proposition (the composition rule).</strong> For all pairs,
 $$
-T_{u,\phi}\,T_{u',\phi'}=\phi(u')\,T_{u,\phi'} .
+L_{u}R_{\phi}\,L_{u'}R_{\phi'}=\phi(u')\,L_{u}R_{\phi'} .
 $$</p>
 <p><em>Proof.</em> $u\phi^{\mathsf T}u'\phi'^{\mathsf T}=u(\phi^{\mathsf T}u')\phi'^{\mathsf T}$ and $\phi^{\mathsf T}u'=\phi(u')$ is a scalar.</p>
 <p><strong>Corollary (the powers).</strong> For $n\ge1$,
 $$
-\bigl(T_{u,\phi}\bigr)^{n}=\phi(u)^{\,n-1}\,T_{u,\phi} .
+\bigl(L_{u}R_{\phi}\bigr)^{n}=\phi(u)^{\,n-1}\,L_{u}R_{\phi} .
 $$</p>
 <p><em>Proof.</em> Induction on the rule, the scalar being $\phi(u)$ at every step.</p>
-<p><strong>Proposition (the three types of member).</strong> For $T=T_{u,\phi}\neq0$,
+<p><strong>Proposition (the three types of member).</strong> For $T=L_{u}R_{\phi}\neq0$,
 $$
 T^{2}=0\iff\phi(u)=0,\qquad T^{2}=T\iff\phi(u)=1,
 $$
 and $T$ is invertible for no pair $(u,\phi)$.</p>
 <p><em>Proof.</em> The two equivalences are the corollary at $n=2$. Invertibility would require the rank to be two, since the inverse of a matrix has the rank of the matrix, and the rank is one.</p>
 <p><strong>The trace and the spectrum.</strong> The eigenvalues are $\phi(u)$ and $0$, so $\operatorname{tr}T=\phi(u)$ and $\det T=0$; the trace is the scalar that appears in the composition rule, and the Cayley–Hamilton identity degenerates to $T^{2}=\phi(u)T$. <strong>The whole spectral theory of the pair is the single number $\phi(u)$</strong>, and the two cases of the corollary are its two values.</p>
-<p><strong>The semigroup.</strong> The product is associative by the associativity of the matrix product. There is a zero, $T_{0,\phi}=0$, and there is no identity, because $I_2$ has rank two and every member has rank at most one. The family is thus a <strong>semigroup with zero and without identity</strong>, and the multiplicative structure is the one of $\mathbb{P}^{1}\times\mathbb{P}^{1}$ with the pairing as the structure scalar.</p>
-<p><strong>Remark (the comparison with the algebra family).</strong> The family of the biquaternion algebra contains $T_{e_t,e_t}$, the identity, and it contains inverses whenever both parameters are units (<em>$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators</em>). <strong>The module family contains neither</strong>, and the reason is not the choice of parametrisation but the rank: a rank-one operator can never be the identity of a two-dimensional space.</p>
+<p><strong>The semigroup.</strong> The product is associative by the associativity of the matrix product. There is a zero, $L_{0}R_{\phi}=0$, and there is no identity, because $I_2$ has rank two and every member has rank at most one. The family is thus a <strong>semigroup with zero and without identity</strong>, and the multiplicative structure is the one of $\mathbb{P}^{1}\times\mathbb{P}^{1}$ with the pairing as the structure scalar.</p>
+<p><strong>Remark (the comparison with the algebra family).</strong> The family of the biquaternion algebra contains $L_{e_t}R_{e_t}$, the identity, and it contains inverses whenever both parameters are units (<em>$M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation : Operators</em>). <strong>The module family contains neither</strong>, and the reason is not the choice of parametrisation but the rank: a rank-one operator can never be the identity of a two-dimensional space.</p>
 <h2 id="the-length">The Length</h2>
 <p><strong>Definition.</strong> The <strong>length</strong> of $M\in M_2(\mathbb{C})$ is
 $$
-\ell(M)=\min\Bigl\{r:M=\sum_{i=1}^{r}T_{u_i,\phi_i}\Bigr\},
+\ell(M)=\min\Bigl\{r:M=\sum_{i=1}^{r}L_{u_i}R_{\phi_i}\Bigr\},
 $$
 the least number of rank-one terms whose sum is $M$.</p>
 <p><strong>Theorem (the length is the rank).</strong> For every $M\in M_2(\mathbb{C})$,
@@ -268,7 +268,7 @@ $$
 $$
 for every $M$.</p>
 <p><em>Proof.</em> The coefficient array is the matrix, so the two ranks are the same number computed twice.</p>
-<p><strong>Why this is a statement and not a tautology.</strong> In the algebra categories the operator space is not the algebra: the two-sided operator $T_{Q,P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. <strong>Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number</strong>: which is why the criterion of §<em>The Cone and the Coefficient Matrix</em> can be stated as $\det M=0$ and still be exact.</p>
+<p><strong>Why this is a statement and not a tautology.</strong> In the algebra categories the operator space is not the algebra: the two-sided operator $L_{Q}R_{P}$ acts on the algebra, of complex dimension four in the biquaternion case, inside an ambient of complex dimension sixteen, and its coefficient array is taken in a basis $T_{\mu\nu}$ which is not the matrix-unit basis of the source. There the rank of the operator and the rank of the coefficient array separate, and the criterion $\operatorname{rank}c(M)\le1$ is stronger than the rank-one condition. <strong>Here the operator space and the ambient are the same space, the basis is the matrix-unit basis, and the two ranks are one number</strong>: which is why the criterion of §<em>The Cone and the Coefficient Matrix</em> can be stated as $\det M=0$ and still be exact.</p>
 <p><strong>The table of the comparison.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -322,7 +322,7 @@ for every $M$.</p>
 <p><strong>Definition.</strong> With the complex bilinear form $\langle X,Y\rangle=\operatorname{Tr}(X^{\mathsf T}Y)$ on $M_2(\mathbb{C})$, the <strong>transpose adjoint</strong> of $T$ is the unique $T^{\mathsf T}$ with $\langle TX,Y\rangle=\langle X,T^{\mathsf T}Y\rangle$.</p>
 <p><strong>Proposition (the transpose swaps the slots).</strong> For every pair,
 $$
-\bigl(T_{u,\phi}\bigr)^{\mathsf T}=T_{\phi,u},
+\bigl(L_{u}R_{\phi}\bigr)^{\mathsf T}=L_{\phi}R_{u},
 $$
 that is $\phi u^{\mathsf T}$ in coordinates.</p>
 <p><em>Proof.</em> $(u\phi^{\mathsf T})^{\mathsf T}=\phi u^{\mathsf T}$, the column becoming a row and the row a column.</p>
@@ -357,9 +357,9 @@ that is $\phi u^{\mathsf T}$ in coordinates.</p>
 <p><em>Proof.</em> A skew-symmetric matrix of size two is $\lambda J_2=\lambda\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, whose rank is two for $\lambda\neq0$ and which is therefore not in the cone; and $\lambda=0$ is the zero matrix.</p>
 <p><strong>The self-adjoint cone is the symmetric rank-one family.</strong> It is the set of matrices $c\,uu^{\mathsf T}$, of complex dimension two, and it is the <strong>complex</strong> analogue of the Hermitian cone: <strong>the same construction with the transpose in place of the dagger, and the two families are as different as a complex line is from a circle.</strong></p>
 <h3 id="the-hermitian-adjoint">The Hermitian Adjoint</h3>
-<p><strong>Definition.</strong> With $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$, the <strong>Hermitian adjoint</strong> of $T_{u,\phi}$ is
+<p><strong>Definition.</strong> With $\langle X,Y\rangle_{H}=\operatorname{Tr}(X^{\dagger}Y)$, the <strong>Hermitian adjoint</strong> of $L_{u}R_{\phi}$ is
 $$
-\bigl(T_{u,\phi}\bigr)^{\dagger}=T_{\bar\phi,\bar u}=\bar\phi\,\bar u^{\mathsf T}.
+\bigl(L_{u}R_{\phi}\bigr)^{\dagger}=L_{\bar\phi}R_{\bar u}=\bar\phi\,\bar u^{\mathsf T}.
 $$</p>
 <p>The conjugate is taken in <strong>both</strong> slots: the first because the row $\phi^{\mathsf T}$ becomes $\bar\phi^{\mathsf T}$, the second because $u$ is conjugated in the transpose, $(u\phi^{\mathsf T})^{\dagger}=\bar\phi\,\bar u^{\mathsf T}$. The transpose, by contrast, conjugates nothing and only exchanges the slots.</p>
 <p><strong>Proposition (the fixed points of the dagger).</strong> $T^{\dagger}=T$ for a nonzero $T\in\mathcal{C}$ exactly when $T$ is a real multiple of a member of $\mathcal{C}_{H}$.</p>
@@ -369,29 +369,29 @@ $$</p>
 <thead>
 <tr>
 <th>Involution</th>
-<th>Action on $T_{u,\phi}$</th>
+<th>Action on $L_{u}R_{\phi}$</th>
 <th>Fixed locus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>transposition</td>
-<td>$T_{\phi,u}$</td>
+<td>$L_{\phi}R_{u}$</td>
 <td>the symmetric cone $c\,uu^{\mathsf T}$</td>
 </tr>
 <tr>
 <td>conjugation</td>
-<td>$T_{\bar u,\bar\phi}$</td>
+<td>$L_{\bar u}R_{\bar\phi}$</td>
 <td>the real cone</td>
 </tr>
 <tr>
 <td>dagger</td>
-<td>$T_{\bar\phi,\bar u}$</td>
+<td>$L_{\bar\phi}R_{\bar u}$</td>
 <td>the Hermitian cone $\mathcal{C}_{H}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The anti-Hermitian members are in the cone and not in the Hermitian cone.</strong> The matrix $i\,uu^{\dagger}$ is anti-Hermitian, it is a member of $\mathcal{C}$ since $i\,uu^{\dagger}=T_{u,i\bar u}$, and it is not in $\mathcal{C}_{H}$ because its trace is imaginary. <strong>The cone is closed under multiplication by any complex scalar and the Hermitian cone is closed only under the real ones</strong>, so the first is a complex object and the second a real one, and the anti-Hermitian members are what the complex scaling adds.</p>
+<p><strong>The anti-Hermitian members are in the cone and not in the Hermitian cone.</strong> The matrix $i\,uu^{\dagger}$ is anti-Hermitian, it is a member of $\mathcal{C}$ since $i\,uu^{\dagger}=L_{u}R_{i\bar u}$, and it is not in $\mathcal{C}_{H}$ because its trace is imaginary. <strong>The cone is closed under multiplication by any complex scalar and the Hermitian cone is closed only under the real ones</strong>, so the first is a complex object and the second a real one, and the anti-Hermitian members are what the complex scaling adds.</p>
 <h3 id="the-isometries">The Isometries</h3>
 <p><strong>Proposition (there is no nonzero isometry).</strong> For every nonzero $T\in\mathcal{C}$ the two products $T^{\dagger}T$ and $T^{\mathsf T}T$ have rank at most one, so neither equals $I_2$.</p>
 <p><em>Proof.</em> Two scalars are in play and they must not be confused. The Hermitian one is the norm, $\lVert u\rVert^{2}=u^{\dagger}u=\sum_j\lvert u_j\rvert^{2}>0$ for $u\neq0$; the bilinear one is $\tau=u^{\mathsf T}u=\sum_ju_j^{2}$, which <strong>can vanish for a nonzero $u$</strong>, as it does for $u=(1,i)$. With the dagger,
@@ -410,10 +410,10 @@ of rank at most one as well, and of rank zero when $\tau=0$. Neither can be $I_2
 <p><strong>Definition.</strong> The <strong>pointwise product</strong> on $\mathbb{C}^{2}$ is $(a,b)(c,d)=(ac,bd)$, which makes the carrier the algebra $\mathbb{C}\times\mathbb{C}$.</p>
 <p><strong>Proposition (the pointwise product gives the diagonal).</strong> For $u=(a,b)$ and $v=(c,d)$ acting on $w=(y,z)$,
 $$
-T_{u,v}=\begin{pmatrix}ac&0\\0&bd\end{pmatrix},
+L_{u}R_{v}=\begin{pmatrix}ac&0\\0&bd\end{pmatrix},
 $$
 and the image of the product is the whole two-dimensional subspace of diagonal matrices.</p>
-<p><em>Proof.</em> The action is $y\mapsto acy$ and $z\mapsto bdz$, so the matrix is diagonal; conversely the diagonal matrix $\operatorname{diag}(r,s)$ is $T_{u,v}$ with $u=(r,s)$ and $v=(1,1)$.</p>
+<p><em>Proof.</em> The action is $y\mapsto acy$ and $z\mapsto bdz$, so the matrix is diagonal; conversely the diagonal matrix $\operatorname{diag}(r,s)$ is $L_{u}R_{v}$ with $u=(r,s)$ and $v=(1,1)$.</p>
 <h3 id="the-dual-number-product">The Dual-Number Product</h3>
 <p><strong>Definition.</strong> The <strong>dual-number product</strong> is $(a,b)(c,d)=(ac,ad+bc)$, with $\epsilon^{2}=0$.</p>
 <p><strong>Proposition (the image is a quadric cone, not a hyperplane).</strong> The operator of the product is
@@ -468,7 +468,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 <ul>
 <li>The <strong>parametrisation</strong> of the cone by $V\times V^{*}$ modulo the scaling, hence by $\mathbb{P}^{1}\times\mathbb{P}^{1}$, which turns every rank-one matrix into a pair of lines and every statement about the cone into a statement about the two rulings.</li>
 <li>The <strong>single criterion</strong> $\det M=0$, exact at this size and reducible to the rank inequality in general.</li>
-<li>The <strong>composition rule</strong> $T_{u,\phi}T_{u',\phi'}=\phi(u')T_{u,\phi'}$, whose scalar is the trace, and with it the whole spectral theory of the family in one number.</li>
+<li>The <strong>composition rule</strong> $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, whose scalar is the trace, and with it the whole spectral theory of the family in one number.</li>
 <li>The <strong>length formula</strong> $\ell=\operatorname{rank}$, the values $0,1,2$ and the identity at length two.</li>
 <li>The <strong>two cones</strong> and the dagger that relates them, which is the only place in the corpus where the bilinear and the Hermitian rank-one families are compared on the same carrier.</li>
 <li>The <strong>two adjoints</strong>, with the self-adjoint family, the empty skew-adjoint family and the Hermitian fixed locus.</li>
@@ -519,7 +519,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 <tr>
 <td>identity in the family</td>
 <td>no</td>
-<td>yes, $T_{e_t,e_t}$</td>
+<td>yes, $L_{e_t}R_{e_t}$</td>
 </tr>
 <tr>
 <td>inverses in the family</td>
@@ -555,8 +555,8 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 </table></div>
 <p><strong>The single sentence.</strong> The pair is the cleanest operator theory of the corpus because the cone is thin and the composition is a scalar; it is also the poorest, because a rank-one family has no group of units, and <strong>everything that the algebra pairs gain they gain by the identity being a product.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so the two-sided operator of the pair is $T_{u,\phi}(v)=\phi(v)u=u\phi^{\mathsf T}$, a rank-one matrix with a column and a row. The left side is the whole algebra $M_2(\mathbb{C})$ acting faithfully, of complex dimension four, and the right side is the dual $V^{*}$, of complex dimension two; the transpose adjoint of the right slot is the left slot and the Hermitian adjoint is not. The parametrisation by $V\times V^{*}$ has fibres the scaling orbits $\mathbb{C}^{\times}$ and image the determinantal cone of $\mathbb{P}^{3}$, that is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, of complex dimension three and real dimension six inside an ambient of real dimension eight; the coefficient array in the matrix-unit basis is the matrix itself, so the rank criterion and the determinant criterion are the same condition, and the cone spans the ambient although the identity is not a member.</p>
-<p>The composition is $T_{u,\phi}T_{u',\phi'}=\phi(u')T_{u,\phi'}$, with powers $\phi(u)^{n-1}T_{u,\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $T_{\mu\nu}$ and the two separate.</p>
+<p>The carrier is the module $V=\mathbb{C}^{2}$, and there is no product on it, so the two-sided operator of the pair is $L_{u}R_{\phi}(v)=\phi(v)u=u\phi^{\mathsf T}$, a rank-one matrix with a column and a row. The left side is the whole algebra $M_2(\mathbb{C})$ acting faithfully, of complex dimension four, and the right side is the dual $V^{*}$, of complex dimension two; the transpose adjoint of the right slot is the left slot and the Hermitian adjoint is not. The parametrisation by $V\times V^{*}$ has fibres the scaling orbits $\mathbb{C}^{\times}$ and image the determinantal cone of $\mathbb{P}^{3}$, that is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, of complex dimension three and real dimension six inside an ambient of real dimension eight; the coefficient array in the matrix-unit basis is the matrix itself, so the rank criterion and the determinant criterion are the same condition, and the cone spans the ambient although the identity is not a member.</p>
+<p>The composition is $L_{u}R_{\phi}L_{u'}R_{\phi'}=\phi(u')L_{u}R_{\phi'}$, with powers $\phi(u)^{n-1}L_{u}R_{\phi}$; the member is nilpotent exactly when $\phi(u)=0$ and idempotent exactly when $\phi(u)=1$; the trace is $\phi(u)$, the determinant is zero, and the Cayley–Hamilton identity is $T^{2}=\phi(u)T$. The family is a semigroup with zero and without identity, and no member is invertible. The length is the rank, with the values $0,1,2$: zero for the zero matrix, one on the cone, two on the complement, and two for the identity. The two ranks, of the operator and of its coefficient array, coincide identically here, in contrast with the algebra pairs, where the operator basis is $T_{\mu\nu}$ and the two separate.</p>
 <p>Two rank-one families live in the ambient: the bilinear cone, of real dimension six, with two rulings and fibres $\mathbb{C}^{\times}$, and the Hermitian cone $uu^{\dagger}$, of real dimension three, with one ruling, fibres $S^{1}$, and the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$ in the Pauli coordinates; the second is the fixed locus of the dagger in the first, up to real scale. The transpose adjoint swaps the slots and its fixed locus is the symmetric cone $c\,uu^{\mathsf T}$; the dagger's fixed locus is the Hermitian cone; no nonzero member of the cone is skew-adjoint, and no nonzero member is an isometry. Putting an algebra structure on the carrier moves the cone: the pointwise product gives the two-dimensional diagonal subspace, and the dual-number product gives the quadric cone $\det T=w_{11}^{2}$ minus the punctured line of the matrices $\operatorname{diag}(0,w_{22})$, which is no longer the rank-one locus. <strong>The pair buys the parametrisation, the single criterion, the composition rule, the length and the comparison of the two cones, and it pays with the identity, the inverses, the isometries and the ladder $1,4,7,16$.</strong></p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -588,12 +588,12 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 <td>the matrix units</td>
 </tr>
 <tr>
-<td>$T_{u,\phi}=u\phi^{\mathsf T}$</td>
+<td>$L_{u}R_{\phi}=u\phi^{\mathsf T}$</td>
 <td>the two-sided operator of the pair $(u,\phi)$</td>
 </tr>
 <tr>
 <td>$\mathcal{C}$</td>
-<td>the bilinear cone, the set of all $T_{u,\phi}$</td>
+<td>the bilinear cone, the set of all $L_{u}R_{\phi}$</td>
 </tr>
 <tr>
 <td>$\mathcal{C}_{H}$</td>
