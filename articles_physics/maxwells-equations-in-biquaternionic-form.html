@@ -134,17 +134,17 @@ $$</p>
 $$</p>
 <p>The product $\tilde{\nabla} \tilde{\nabla}^{\natural}$ is computed term by term:</p>
 <ul>
-<li>Time-time: $e_t \partial/\partial Q_t \cdot e_t \partial/\partial Q_t = \partial^2/\partial Q_t^2$.</li>
+<li>Time-time: $e_t \partial/\partial Q_t \cdot e_t \partial/\partial Q_t = \bigl(\partial^2/\partial Q_t^2\bigr)e_t$.</li>
 <li>Time-space cross terms: these vanish because $\partial/\partial Q_t$ commutes with $\partial/\partial Q_\mu$ and $e_t$ commutes with $\vec e_\mu$.</li>
-<li>Space-space: $\sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu \partial^2/\partial Q_\mu\partial Q_\nu = -\Delta e_t$, where $\Delta = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu} e_t + \epsilon_{\mu\nu\lambda} \vec e_\lambda$ and the symmetry of $\partial^2/\partial Q_\mu\partial Q_\nu$.</li>
+<li>Space-space: the second factor carries the minus, so $-\sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu \partial^2/\partial Q_\mu\partial Q_\nu = +\Delta e_t$, where $\Delta = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu} e_t + \epsilon_{\mu\nu\lambda} \vec e_\lambda$ and the symmetry of $\partial^2/\partial Q_\mu\partial Q_\nu$: the antisymmetric part drops out and the first term changes sign.</li>
 </ul>
 <p>Therefore</p>
 <p>$$
-\tilde{\nabla} \tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta e_t.
+\tilde{\nabla} \tilde{\nabla}^{\natural} = \Bigl(\frac{\partial^2}{\partial Q_t^2} + \Delta\Bigr)e_t .
 $$</p>
-<p>The same result holds in the opposite order, $\tilde{\nabla}^{\natural} \tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta e_t$. This is exactly the d'Alembertian:</p>
+<p>The same result holds in the opposite order, $\tilde{\nabla}^{\natural} \tilde{\nabla} = \bigl(\partial^2/\partial Q_t^2 + \Delta\bigr)e_t$: the two reversed factors differ only in the order of two quaternion units, which is compensated by the sign of the antisymmetric term, and that term vanishes against the symmetry of the mixed derivative. This is exactly the d'Alembertian:</p>
 <p>$$
-\Box = \tilde{\nabla} \tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural} \tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta.
+\Box = \tilde{\nabla} \tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural} \tilde{\nabla} = \frac{\partial^2}{\partial Q_t^2} + \Delta .
 $$</p>
 <p>So the d'Alembertian is the product of the biquaternionic gradient and its quaternion conjugate.</p>
 <h2 id="the-field-strength-biquaternion">The Field-Strength Biquaternion</h2>
@@ -153,11 +153,11 @@ $$</p>
 \tilde{F} = \vec F, \qquad \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H.
 $$</p>
 <p>Here $\vec F$ is a complex three-vector combining the electric and magnetic fields, with an <strong>imaginary</strong> electric part and a <strong>real</strong> magnetic part: the electric field carries a time index, and in the $ict'$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.</p>
-<p>The field-strength biquaternion is obtained from the potential biquaternion by differentiation. In the biquaternion algebra, the natural object constructed from $\tilde{A}$ is</p>
+<p>The field-strength biquaternion is obtained from the potential biquaternion by differentiation. In the biquaternion algebra the construction is</p>
 <p>$$
-\tilde{F} = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right),
+\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right)\Bigr),
 $$</p>
-<p>which is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. Equivalently, in tensor language,</p>
+<p>the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqrt\mu$; the exact component check is given below. Equivalently, in tensor language,</p>
 <p>$$
 F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
 $$</p>
@@ -175,8 +175,28 @@ $$</p>
 <p>$$
 F_{\mu\nu} = -F_{\nu\mu}.
 $$</p>
-<p><strong>A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.</strong> The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.</p>
-<p>The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by <strong>Ludwik Silberstein</strong> in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the <strong>Riemann–Silberstein vector</strong>; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.</p>
+<p><strong>The relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$ is exact, with one normalisation constant.</strong> Computing the four products term by term in $\tilde{\nabla}^{\natural}\tilde{A}=(e_t\partial/\partial Q_t-\vec e_k\partial/\partial Q_k)(A_0e_t+A_j\vec e_j)$ gives</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)=\frac{\partial A_0}{\partial Q_t}+\mathrm{div}\,\vec A,
+\qquad
+\mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)=\frac{\partial \vec A}{\partial Q_t}-\nabla A_0-\mathrm{rot}\,\vec A ,
+$$</p>
+<p>where the last term is the one that the antisymmetric part of $\vec e_k\vec e_j$ contributes. With $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ and $A_0=i\phi/c$ the vector part becomes</p>
+<p>$$
+\mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)
+=-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial t'}+\nabla\phi\Bigr)-\mathrm{rot}\,\vec A
+=\frac{i}{c}\vec E-\vec B ,
+$$</p>
+<p>by the two defining relations $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$. Since $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$ and $\mu\vec B=\mu^{2}\vec H$, multiplying by $\sqrt\mu$ turns this into $\mu\tilde F$:</p>
+<p>$$
+\boxed{\;\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)\Bigr)\;},
+$$</p>
+<p>that is, $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. In Heaviside–Lorentz units, where $\epsilon=\mu=1$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the form quoted in the companion articles; in a medium with $\sqrt{\mu}\neq1$ the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\phi/c$ fixes the imaginary electric part, and the opposite choice would reverse it. The same computation in tensor language is</p>
+<p>$$
+F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu,
+$$</p>
+<p>which reproduces the components below: $F_{0k}=-(i/c)(\partial_{t'}A_k+\partial_k\phi)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$.</p>
+<p>The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by <strong>Ludwik Silberstein</strong> in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the <strong>Riemann–Silberstein vector</strong>; the biquaternionic field strength is $i$ times that vector, an overall constant phase. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.</p>
 <h2 id="the-biquaternionic-source">The Biquaternionic Source</h2>
 <p>The source of the electromagnetic field is the <strong>four-current</strong></p>
 <p>$$
@@ -211,8 +231,9 @@ $$</p>
 <h2 id="the-retarded-greens-function">The Retarded Green's Function</h2>
 <p>The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a <strong>Green's function</strong> $\tilde{G}_{\tilde{\nabla}}(\tilde Q)$, which is the solution of the equation with a point source:</p>
 <p>$$
-\tilde{\nabla} \tilde{G}_{\tilde{\nabla}}(\tilde Q) = \delta(\tilde{Q}) e_t.
+\tilde{\nabla} \tilde{G}_{\tilde{\nabla}}(\tilde Q) = -\delta(\tilde{Q})\,e_t,
 $$</p>
+<p>with the sign convention of <em>The Biquaternion D'Alembertian and Its Green's Functions</em>, $\Box G_\Box=-\delta$.</p>
 <p>The physically relevant Green's function is the <strong>retarded</strong> one, which vanishes for $t' < 0$ and has support on the future light cone. It is the first-order kernel of the companion article <em>The Biquaternion D'Alembertian and Its Green's Functions</em>,</p>
 <p>$$
 \tilde{G}_{\tilde{\nabla}} = \tilde{\nabla}^{\natural}\,G_\Box
@@ -221,10 +242,10 @@ $$</p>
 <p>where $G_\Box(R,t') = (4\pi R)^{-1}\delta(t' - R/c)$ is the scalar retarded kernel of the wave operator, $R = \sqrt{x^2 + y^2 + z^2}$, $\vec u_R = (x \vec e_x + y \vec e_y + z \vec e_z)/R$ is the unit radial biquaternion, and $\frac{d\delta}{dx}$ is the derivative of the delta. It satisfies $\tilde{\nabla}\tilde{G}_{\tilde{\nabla}} = \Box G_\Box = -\delta(\tilde{Q})$, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\frac{d\delta}{dx}$ term is a <strong>double layer</strong> on the cone and the $\delta$ term a <strong>single layer</strong>, and it is the $\frac{d\delta}{dx}$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of <em>Shock Electromagnetic Waves</em> require. Its distributional layer calculus is that of <em>Distributions on Surfaces, Layers, and Jump Conditions</em>.</p>
 <p>The solution of the inhomogeneous equation is then the retarded convolution</p>
 <p>$$
-\boxed{\;\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4R_2\;},
+\boxed{\;\tilde{F}(\tilde{Q}) = +\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4R_2\;},
 $$</p>
 <p>where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.</p>
-<p>The retarded Green's function is distinct from the <strong>Cauchy kernel</strong> $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The Cauchy kernel is the fundamental solution of the elliptic d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ (with the same sign for all four directions), whereas the retarded Green's function is the fundamental solution of the hyperbolic wave operator $\Box = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$. The two are related by the <strong>Wick rotation</strong> $t' \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.</p>
+<p>The retarded Green's function is distinct from the <strong>Cauchy kernel</strong> $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{M}_-$, where $Q_t=ict'$ turns it into $\Delta-c^{-2}\partial^2/\partial t'^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the <strong>Wick rotation</strong> $t' \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.</p>
 <h2 id="the-three-vector-form">The Three-Vector Form</h2>
 <p>The field strength has a complex three-vector form. With</p>
 <p>$$
@@ -232,7 +253,7 @@ $$</p>
 \qquad
 \tilde F = \vec F,
 $$</p>
-<p>and $\partial/\partial Q_t = -c^{-1}\partial/\partial t'$, the biquaternionic Maxwell equation $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$ is the pair</p>
+<p>and $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, the biquaternionic Maxwell equation $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$ is the pair</p>
 <p>$$
 \partial/\partial Q_t\,\vec F + \mathrm{rot}\,\vec F = -\vec R,
 \qquad
@@ -272,8 +293,9 @@ $$</p>
 <p>where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form of the standard gauge transformation $A_\mu \to A_\mu - \partial/\partial Q_\mu \Gamma$.</p>
 <p>Under this transformation, the field-strength biquaternion is invariant:</p>
 <p>$$
-\tilde{F}_{\mathrm g} = \tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g}\right) = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right) = \tilde{F}.
+\tilde{F}_{\mathrm g} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}_{\mathrm g}\right)\Bigr) = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right)\Bigr) = \tilde{F},
 $$</p>
+<p>because the gradient of a gradient is central under $\tilde{\nabla}^{\natural}$ — the term $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma=\Box\Gamma$ is a scalar and drops out of the vector part.</p>
 <p>The scalar part of the potential is not invariant. Write</p>
 <p>$$
 S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right).
@@ -338,7 +360,7 @@ $$</p>
 <h2 id="relationship-between-the-two-formulations">Relationship Between the Two Formulations</h2>
 <p>The two formulations are related as follows:</p>
 <ul>
-<li>The field-strength biquaternion $\tilde{F}$ is obtained from the potential biquaternion $\tilde{A}$ by differentiation: $\tilde{F} = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{A})$.</li>
+<li>The field-strength biquaternion $\tilde{F}$ is obtained from the potential biquaternion $\tilde{A}$ by differentiation: $\tilde{F} = \frac{1}{\sqrt{\mu}}\bigl(\tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{A})\bigr)$.</li>
 <li>The first-order equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is equivalent to the second-order equation $\Box \tilde{A} = -\mu \tilde J$ in the Lorenz gauge.</li>
 <li>The source is the normalised four-current, $\sqrt{\mu}\,\tilde J = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\vec J$, with $\tilde J = ic\rho\,e_t + \vec J$.</li>
 </ul>

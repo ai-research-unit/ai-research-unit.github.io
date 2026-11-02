@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="product-and-form-conventions"><strong>Product and Form Conventions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra carries twelve products and four forms. This article fixes their names, their codes and the letters of the forms, and it stops at the form: the norm is the form read at its two equal arguments and is the subject of <em>Norm and Unitary Conventions</em>.</p>
-<p>The products come first because they are algebraic and need no form. Four general products answer the four choices of conjugation on the two slots, and each splits into a symmetric and an antisymmetric part. The three-letter code names the operation by its first letter and the two slots by the second and the third, and the same code is read on the reduced biquaternion space, where four of the twelve name no new operation.</p>
+<p>The algebra carries twelve products and four forms. This article fixes their names, their operators and the letters of the forms, and it stops at the form: the norm is the form read at its two equal arguments and is the subject of <em>Norm and Unitary Conventions</em>.</p>
+<p>The products come first because they are algebraic and need no form. Four general products answer the four choices of conjugation on the two slots, and each splits into a symmetric and an antisymmetric part. The operator names the operation by itself — the two slots, the conjugation each one carries, and the dot or the wedge for a symmetric or an antisymmetric part — and the same operator is read on the reduced biquaternion space, where four of the twelve coincide.</p>
 <p>The form comes second. A form is the scalar part of a product, with a conjugation named on each slot; the corpus writes a generic form $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, and the four brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name the four. The letters $P$, $N$, $H$ and $K$ name each form with two arguments and the corresponding norm with one, and the last section fixes how the names are read in a layer.</p>
 <p>The article assumes the base of <em>Algebra and Element Conventions</em>; the norm is read in the companion article, and the calculus that applies the forms to the gradient in <em>Operator and Calculus Conventions</em>.</p>
 <h2 id="the-twelve-products-and-their-names">The Twelve Products and Their Names</h2>
@@ -86,29 +86,29 @@
 </thead>
 <tbody>
 <tr>
-<td>The general plain bilinear product ($\mathrm{gpa}$)</td>
-<td>The symmetric plain bilinear product ($\mathrm{spa}$)</td>
-<td>The antisymmetric plain bilinear product ($\mathrm{apa}$)</td>
+<td>The general plain bilinear product ($\tilde Q_1\tilde Q_2$)</td>
+<td>The symmetric plain bilinear product ($\tilde Q_1\bullet\tilde Q_2$)</td>
+<td>The antisymmetric plain bilinear product ($\tilde Q_1\wedge\tilde Q_2$)</td>
 </tr>
 <tr>
-<td>The general quaternionic bilinear product ($\mathrm{gqa}$)</td>
-<td>The symmetric quaternionic bilinear product ($\mathrm{sqa}$)</td>
-<td>The antisymmetric quaternionic bilinear product ($\mathrm{aqa}$)</td>
+<td>The general quaternionic bilinear product ($\tilde Q_1^{\natural}\tilde Q_2$)</td>
+<td>The symmetric quaternionic bilinear product ($\tilde Q_1\bullet_{\natural}\tilde Q_2$)</td>
+<td>The antisymmetric quaternionic bilinear product ($\tilde Q_1\wedge_{\natural}\tilde Q_2$)</td>
 </tr>
 <tr>
-<td>The general plain sesquilinear product ($\mathrm{gps}$)</td>
-<td>The symmetric plain sesquilinear product ($\mathrm{sps}$)</td>
-<td>The antisymmetric plain sesquilinear product ($\mathrm{aps}$)</td>
+<td>The general plain sesquilinear product ($\tilde Q_1\tilde Q_2^{*}$)</td>
+<td>The symmetric plain sesquilinear product ($\tilde Q_1\bullet_{*}\tilde Q_2$)</td>
+<td>The antisymmetric plain sesquilinear product ($\tilde Q_1\wedge_{*}\tilde Q_2$)</td>
 </tr>
 <tr>
-<td>The general quaternionic sesquilinear product ($\mathrm{gqs}$)</td>
-<td>The symmetric quaternionic sesquilinear product ($\mathrm{sqs}$)</td>
-<td>The antisymmetric quaternionic sesquilinear product ($\mathrm{aqs}$)</td>
+<td>The general quaternionic sesquilinear product ($\tilde Q_1^{\natural}\tilde Q_2^{*}$)</td>
+<td>The symmetric quaternionic sesquilinear product ($\tilde Q_1\bullet_{\natural*}\tilde Q_2$)</td>
+<td>The antisymmetric quaternionic sesquilinear product ($\tilde Q_1\wedge_{\natural*}\tilde Q_2$)</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The code is read letter by letter.</strong> The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the one whose first slot carries the intrinsic conjugation, ${}^{\natural}$ in the quaternionic layers and ${}_{\mathrm{ts}}$ in $\mathbb{B}_{\mathrm{r}}$; and the third says the family — $\mathrm A$ the <strong>algebra</strong> over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the <strong>sesqualgebra</strong> over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
-<p><strong>The same code on the reduced biquaternion space.</strong> The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{gps}$ and $\mathrm{gqs}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is <strong>commutative</strong>, four of the twelve codes name no new operation there: $\mathrm{spa} = \mathrm{gpa}$ and $\mathrm{sqs} = \mathrm{gqs}$, while $\mathrm{apa} = 0$ and $\mathrm{aqs} = 0$. The space therefore carries <strong>eight distinct algebraic structures</strong> — $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{gps}$, $\mathrm{gqs}$ and the four live halves $\mathrm{sqa}$, $\mathrm{aqa}$, $\mathrm{sps}$, $\mathrm{aps}$ — and the twelve slots, the four that collapse and the eight that remain are <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>The Specificities of the Algebra of the Reduced Biquaternions</em>. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}_{\mathrm{ts}}$, the tessarine conjugation $j\mapsto-j$ (and $ij\mapsto-ij$) — as in the band above.</p>
+<p><strong>The operator is read from the two slots.</strong> A product is written by its slots and the conjugation each one carries, so the reader needs no code. The first slot is read as it stands or through the intrinsic conjugation ${}^{\natural}$ — the plain and the quaternionic families — and the second as it stands or through the Hermitian conjugation ${}^{*}$ — the bilinear and the sesquilinear families; the four combinations are the four general products. A symmetric part is the half-sum under the exchange that keeps the class of the product, written with the full dot $\bullet$, and an antisymmetric part is the half-difference, written with the wedge $\wedge$; the class is carried by the subscript, ${}_{*}$ for the plain sesquilinear product and ${}_{\natural*}$ for the quaternionic sesquilinear one. The four general products are the multiplications of the four general structures, the eight parts are the symmetric and antisymmetric products beside them, and the twelve operators together name the twelve algebraic structures of <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>The same construction on the reduced biquaternion space.</strong> The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is <strong>commutative</strong>, four of the twelve products coincide there: $\tilde Q_1\bullet\tilde Q_2 = \tilde Q_1\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, while $\tilde Q_1\wedge\tilde Q_2 = 0$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2 = 0$. The space therefore carries <strong>eight distinct algebraic structures</strong> — $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ and the four live halves $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$ — and the twelve slots, the four that collapse and the eight that remain are <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>The Specificities of the Algebra of the Reduced Biquaternions</em>. The intrinsic conjugation keeps its sense there — the first slot read through ${}_{\mathrm{ts}}$, the tessarine conjugation $j\mapsto-j$ (and $ij\mapsto-ij$) — as in the band above.</p>
 <p><strong>The definitions.</strong> Write the two elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$; $(\vec Q_1,\vec Q_2)$ is the Euclidean inner product, $\vec Q_1\times\vec Q_2$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q_2}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.</p>
 <p><strong>The four general products</strong>, one to each choice of the two slots.</p>
 <p><strong>The general plain bilinear product</strong>, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:</p>
@@ -238,7 +238,7 @@ $$</p>
 </table></div>
 <p><strong>The names are read in the layer where the map they mark exists.</strong> In $\mathbb{B}_{\mathrm{r}}$ the <strong>quaternionic</strong> name becomes the <strong>tessarine</strong> and the <strong>Krein</strong> name the <strong>tessarine-Hermitian</strong>, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$; the plain and the Hermitian keep their names.</p>
 <h2 id="summary">Summary</h2>
-<p>The algebra carries four general products, one to each choice of the conjugation on the two slots: the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear. Each splits into a symmetric and an antisymmetric part, so that the twelve names are the four general products, their four symmetric parts and their four antisymmetric parts. The code is read letter by letter: $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the operation, $\mathrm P$ or $\mathrm Q$ for the first slot, $\mathrm A$ or $\mathrm S$ for the second. On the reduced biquaternion space the algebra is commutative and four of the twelve collapse, leaving eight distinct structures.</p>
+<p>The algebra carries four general products, one to each choice of the conjugation on the two slots: the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear. Each splits into a symmetric and an antisymmetric part, so that the twelve names are the four general products, their four symmetric parts and their four antisymmetric parts. The operator is read from the two slots: the first read as it stands or through ${}^{\natural}$, the second as it stands or through ${}^{*}$, and the dot $\bullet$ or the wedge $\wedge$ for the symmetric and the antisymmetric part. On the reduced biquaternion space the algebra is commutative and four of the twelve collapse, leaving eight distinct structures.</p>
 <p>A form is the scalar part of a product, with a conjugation named on each slot, and the generic form is $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$; the generic norm is that form at its two equal arguments. A bracket names the form with two arguments and the algebraic norm with one, its subscript recording the pair of slots. The plain bracket is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the quaternionic $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the Hermitian $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and the Krein $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.</p>
 <p>The four letters are $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, each naming the form with two arguments and the norm with one. The bracket carries the mark that is not the identity in the layer, and the four collapse two-and-two wherever a mark degenerates. In the reduced biquaternions the quaternionic name becomes the tessarine and the Krein name the tessarine-Hermitian, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$.</p>
 <p>The distinction between the form and the norm is one of <strong>notation, not of substance</strong>: the pair is the form and the norm of the statement at hand. The norm reading of the four letters, the qualified regular and degenerate, and the layer-by-layer tables are the subject of <em>Norm and Unitary Conventions</em>.</p>
@@ -252,15 +252,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{gps}$, $\mathrm{gqs}$</td>
+<td>$\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
 <td>The four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear</td>
 </tr>
 <tr>
-<td>$\mathrm{spa}$, $\mathrm{sqa}$, $\mathrm{sps}$, $\mathrm{sqs}$</td>
+<td>$\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$</td>
 <td>Their four symmetric parts</td>
 </tr>
 <tr>
-<td>$\mathrm{apa}$, $\mathrm{aqa}$, $\mathrm{aps}$, $\mathrm{aqs}$</td>
+<td>$\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$</td>
 <td>Their four antisymmetric parts</td>
 </tr>
 <tr>
