@@ -10,7 +10,7 @@ Three boundaries are respected. The Klein–Gordon **path integral** and the sca
 
 The conventions are the series conventions. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; its component form is the standard Dirac equation on the spinor module, with generator cells $iR_{e_x}:\psi\mapsto i e_t\psi\vec e_x$ and $iL_{e_k}R_{e_y}:\psi\mapsto i\vec e_k\psi\vec e_y$, the pseudoscalar cell $-iR_{e_z}:\psi\mapsto -i e_t\psi\vec e_z$ (that is $-iL_{e_t}R_{e_z}$), and $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}\mathbf 1$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$, and the propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{R}\in\mathbb{M}_-$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## The Dirac Propagator and the Square
 

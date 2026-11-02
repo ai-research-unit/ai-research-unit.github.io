@@ -34,9 +34,9 @@ $$
 \{iL_{e_\mu}R_{e_{\nu(\mu)}}, iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
-
 the metric sign being the convention noted in the companion article. This frame is the **chiral (Weyl) representation**: the chirality $-iR_{e_z}$ acts as $-1$ on the left Peirce plane $\mathbb{B}\tilde\Pi_+$ and as $+1$ on the right plane $\mathbb{B}\tilde\Pi_-$, where $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, and $-iL_{e_t}R_{e_z}$, so the upper two-component block is left-handed and the lower is right-handed. We also use the **Dirac basis**, obtained by a $*$-unitary change of basis, in which $iR_{e_x}$ is diagonal, $+1$ on the upper two-component part and $-1$ on the lower, and the two chiralities are mixed; the non-relativistic limit is simplest there. In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation and in the Pauli equation.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 The two metric symbols used in this article must not be interchanged. The Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ belongs to the generators, through the anticommutator; the spacetime metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of the companion articles belongs to the $ict'$ gradient, through $\Box$. They are the negatives of one another, and that relative sign is exactly the freedom the companion article flags as convention. The reconciliation is that the massless equation squares to
 

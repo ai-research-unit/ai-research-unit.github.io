@@ -18,8 +18,6 @@ $$
 
 is associative and has $k$ as its unit; it is the biquaternion product in a particular basis. The point of this article is what that product *is*, algebraically: one bilinear map, three structures.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
-
 ## The Two Halves of One Product
 
 ### Definitions

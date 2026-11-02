@@ -55,7 +55,7 @@ $$
 
 and with $N_f$ massless flavours it enlarges to $SU(N_f)_L\times SU(N_f)_R\times \mathrm{U}(1)_V$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **The mass term and which phase it breaks.** The massive linear chiral pair is
 

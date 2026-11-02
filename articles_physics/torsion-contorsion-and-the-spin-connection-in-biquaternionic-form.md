@@ -110,7 +110,7 @@ called the **Weitzenböck connection**, was computed for that tetrad together wi
 
 **Where the algebra enters.** Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$, $\mu<\nu$, the products of the generator cells $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ defined by $L_{a}R_{b}\psi=a\psi b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial/\partial x_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## The Spin Tensor and the Torsion–Spin Relation
 

@@ -38,7 +38,7 @@ $$
 $$
 and the scalar imaginary to the volume element $\omega$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. (The ordering in the last entry is fixed by the metric $g=\mathrm{diag}(+1,-1,-1,-1)$ used here, under which $(iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y})(iL_{e_z}R_{e_y}\,iL_{e_x}R_{e_y})=iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}$; the parent Dirac article's opposite metric reverses the sign of the third bivector. What matters below is only that the map is a homomorphism, and with this ordering it is one, with each image squaring to $-e_t$.) The **odd part** — the span of the individual generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$ — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality operator $-iR_{e_z}$ anticommutes with every generator and hence commutes with every even element; it is a Lorentz-invariant label.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **The three conjugations of the algebra.** They are distinct maps, and they behave differently on the sectors and on the scalar imaginary:
 

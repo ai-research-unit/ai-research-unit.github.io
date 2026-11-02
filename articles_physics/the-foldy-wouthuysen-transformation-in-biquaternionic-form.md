@@ -16,8 +16,6 @@ $$
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\bigl(iR_{e_x}D_{0}-\sum_k iL_{e_k}R_{e_y}D_{k}\bigr) - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $iR_{e_x}$, and set $\alpha_k = iR_{e_x}\,iL_{e_k}R_{e_y} = L_{\vec e_k}R_{\vec e_z}$, $\beta = iR_{e_x}$. The result is
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
-
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
 H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA_0,
@@ -25,6 +23,8 @@ H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA_0,
 $$
 
 where $\vec p = -i\hbar\vec\nabla$, $A_0$ is the electrostatic potential, and we have used $(iR_{e_x})^2 = L_{e_t}R_{e_t}$. In the Dirac basis the matrices are
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},

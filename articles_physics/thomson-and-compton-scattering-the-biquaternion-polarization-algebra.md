@@ -246,7 +246,7 @@ $$
 $$
 with the covariant normalisation $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and the Dirac pairing $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x)$ of the companion Solutions article. Divided by $2m$ it is an idempotent of rank two, its complement is the negative-frequency projection $\frac{1}{2m}\bigl(m\,L_{e_t}R_{e_t}-\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)\bigr)$, and the two sum to the identity of the Dirac module. The averaged spin is therefore the mass shell's projector, and the projector is a sum of cells rather than a matrix: the mass enters as $m\,L_{e_t}R_{e_t}$ and the momentum as the four cells $iL_{e_\mu}R_{e_{\nu(\mu)}}$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 Second, **resolving the spin** replaces $D(p)$ by a pair of rank-one cells. With the spin four-vector $s$ of the target, $s\cdot p=0$ and $s^2=-1$,
 $$
