@@ -184,7 +184,7 @@ which measures the focusing of the ray congruence: $A^2$ is the density of traje
 The transport equation involves only the real amplitude and the real phase gradient, so it lives in the real-quaternion and central parts of the algebra. There is no non-central element anywhere in the leading semiclassical state:
 
 $$
-\psi_{\mathrm{wkb}} = A\,\exp(iS/\hbar)\,\chi,
+\psi^{\mathrm{wkb}} = A\,\exp(iS/\hbar)\,\chi,
 \qquad
 A\in\mathbb{C}_{\mathbb{B}}|_{\mathbb{R}}=\mathbb{R}e_t,
 \quad
@@ -235,7 +235,7 @@ $$
 \boxed{\;T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right)\;}
 $$
 
-whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{wkb}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
+whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T^{\mathrm{wkb}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
 
 ## The Quantum Potential
 

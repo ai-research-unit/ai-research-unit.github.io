@@ -157,7 +157,7 @@ Two properties of the solution matter for what follows. It is **static** and **s
 
 ### The Field of a Moving Source
 
-It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G_{\text{ret}}(x)={\delta(t'_2-t'+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
+It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(x)={\delta(t'_2-t'+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
 
 $$
 \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,

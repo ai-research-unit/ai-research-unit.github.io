@@ -8,7 +8,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t'_{\mathrm{ret}} = t' - \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t' + \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t'^{\mathrm{ret}} = t' - \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t' + \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t'_2 = (t'_1+t'_3)/2$, and the distance is $L = c(t'_3-t'_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
@@ -52,15 +52,15 @@ the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\m
 It is useful to package the two directions into the retarded and advanced coordinates
 
 $$
-t'_{\mathrm{ret}} = t' - \frac{\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c},
+t'^{\mathrm{ret}} = t' - \frac{\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c},
 \qquad
 t'_{\mathrm{adv}} = t' + \frac{\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}.
 $$
 
-Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $t'_{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $t'_{\mathrm{adv}}$ is constant. The verification is one line: if $x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + c(t'-t'_0)\vec u_{\mathrm s}$ then
+Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $t'^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $t'_{\mathrm{adv}}$ is constant. The verification is one line: if $x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + c(t'-t'_0)\vec u_{\mathrm s}$ then
 
 $$
-t'_{\mathrm{ret}}(t') = t' - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c} - (t'-t'_0) = t'_0 - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c},
+t'^{\mathrm{ret}}(t') = t' - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c} - (t'-t'_0) = t'_0 - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c},
 $$
 
 independent of $t'$, while $t'_{\mathrm{adv}}$ increases at rate $2$; and conversely for the incoming ray.
@@ -68,13 +68,13 @@ independent of $t'$, while $t'_{\mathrm{adv}}$ increases at rate $2$; and conver
 For a displacement whose spatial part is collinear with $\vec u_{\mathrm s}$ — which is the case for a signal along $\vec u_{\mathrm s}$ — the biquaternion norm factorizes in these coordinates:
 
 $$
-\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta t'_{\mathrm{ret}}\,\Delta t'_{\mathrm{adv}} .
+\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta t'^{\mathrm{ret}}\,\Delta t'_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta t'_{\mathrm{ret}} = 0$ or $\Delta t'_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta t'^{\mathrm{ret}} = 0$ or $\Delta t'_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t' = -\omega\left(t' - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t'_{\mathrm{ret}},
+\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t' = -\omega\left(t' - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t'^{\mathrm{ret}},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t'$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded coordinate $t'_{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t'_{\mathrm{ret}}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t'$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded coordinate $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t'^{\mathrm{ret}}$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt'$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
@@ -370,9 +370,9 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
-| $t'_{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t'+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
+| $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t'+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
 | $\tilde P = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $\Phi = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t'_{\mathrm{ret}}$ | Plane-wave phase |
+| $\Phi = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t'^{\mathrm{ret}}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |

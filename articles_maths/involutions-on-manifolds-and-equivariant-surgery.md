@@ -120,7 +120,7 @@ A locally linear involution of an $n$-manifold has a locally flat fixed set $F$ 
 | $M/T$, $\pi : M\to M/T$ | the quotient and the orbit map; $\pi(F)$ the mirror locus |
 | $M_{\mathbb{Z}/2} = M\times_{\mathbb{Z}/2}E\mathbb{Z}/2$ | the Borel construction; its homology the equivariant homology |
 | $H_n(\mathbb{Z}/2;H_q(M))\Rightarrow H^{G}_{n+m}(M)$ | the Borel spectral sequence |
-| $\mathbb{Z}[\mathbb{Z}/2] = \mathbb{Z}\oplus\mathbb{Z}_{\mathrm{sgn}}$ | the group ring split into the trivial and the sign summands |
+| $\mathbb{Z}[\mathbb{Z}/2] = \mathbb{Z}\oplus\mathbb{Z}^{\mathrm{sgn}}$ | the group ring split into the trivial and the sign summands |
 | $\sigma^{\mathbb{Z}/2}(f,b)\in L_n(\mathbb{Z}[\pi\times\mathbb{Z}/2])$ | the equivariant surgery obstruction |
 | multisignature, Arf invariants | the components of the obstruction in dimensions $4k$, $4k+2$ |
 | $L_n(\mathbb{Z}[\mathbb{Z}/2])$ | the obstruction group for a simply connected target |

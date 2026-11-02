@@ -23,11 +23,11 @@ The article is the last of the nine and the index of the notation: the table bel
 **A low mark is the exclusive carrier of those things:**
 
 - a numeric count, $Q_1$, $M_2$;
-- a coordinate or a component, $q_i$, $dq_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\xi_k$, $v_i$;
-- a frame or basis vector, a gamma, $\vec e_i$, $\gamma_i$;
-- a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$;
-- a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$;
-- a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$;
+- a coordinate or a component, $q_i$, $dq_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\xi_k$, $v_i$, for example
+- a frame or basis vector, a gamma, $\vec e_i$, $\gamma_i$,
+- a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$,
+- a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$,
+- a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$,
 - a differential, $dx_i$;
 - a label naming a part or a role, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, with the labels of §*The Three-Letter Labels* read in the two slots.
 
@@ -70,7 +70,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 **No three-letter token in the caret carries a capital.** The rule is total, and it reaches three families. A label, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$. An **operator name** written in the caret with its argument, $\gamma_n^{\operatorname{sym}}$ on a divided-power structure, and the fixed field $K^{\operatorname{gal}(K/F)}$ — here the caret carries the acting group as $K^{\sigma}$ carries an automorphism, so the word does not name a variant of $K$ and stays out of the table below. And the **twelve codes** of the algebraic structures, $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$, $\mathrm{spa}$, $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{sqs}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$, whose three letters are the initials of general, symmetric, antisymmetric, plain, quaternionic, algebra and sesqualgebra, fixed in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. A code is written in the caret, on the object and on the multiplication alike: $V^{\mathrm{gpa}}=V^{\mathrm{spa}}+V^{\mathrm{apa}}$, $V^{\mathrm{gqs}}(\tilde Q_1,\tilde Q_2)$, $\tilde Q_1\diamond^{\mathrm{aqa}}\tilde Q_2$. The low slot of a code is a defect, as a capital in the caret is. A capital in any of these three positions is a defect.
 
-**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $\chi_{\mathrm{reg}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$.
+**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $\chi_{\mathrm{reg}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Thirteen qualifiers that already named the same object on the caret were written low as well, and they are now on the caret: $\mathrm{ret}$, $\mathrm{odd}$, $\mathrm{sgn}$, $\mathrm{opp}$, $\mathrm{fix}$, $\mathrm{lin}$, $\mathrm{nil}$, $\mathrm{wkb}$, $\mathrm{rep}$, $\mathrm{exp}$, $\mathrm{pol}$, $\mathrm{new}$, $\mathrm{imp}$. Six keep the low slot because their two heights would spell two different words: $\mathrm{reg}$ regular and regularised, $\mathrm{top}$ topological and top, $\mathrm{per}$ perimeter and periodic, $\mathrm{def}$ defining and defective, $\mathrm{orb}$ orbifold and orbital, $\mathrm{adj}$ adjoint and adjugate.
 
 | Label | Names |
 |---|---|
@@ -240,7 +240,7 @@ ${}_{\~{n}}$, ${}_{\H{n}}$, ${}_{\vec{n}}$
 
 **Spacing.** The command ${}_{\ }$ draws no mark; it sets a space.
 
-Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{ret}}$; a text string, ${}_{\text{word}}$; a nested index, ${}_{i_1}$; and the compound ${}_{\natural*}$ that the biquaternion articles use.
+Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{tor}}$; a text string, ${}_{\text{word}}$; a nested index, ${}_{i_1}$; and the compound ${}_{\natural*}$ that the biquaternion articles use.
 
 ## Conventions of the Corpus Itself
 

@@ -289,7 +289,7 @@ Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, wi
 | $R$ | commutative ring with identity, the base ring |
 | $F$ | a field |
 | $A$ | unital associative $R$-algebra, generally noncommutative |
-| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{opp}} b=ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot^{\mathrm{opp}} b=ba$ |
 | $A^{\times}$ | group of units of $A$ |
 | $Z(A)$ | centre of $A$ |
 | $M$, $N$, $S$ | left $A$-modules; $S$ simple |

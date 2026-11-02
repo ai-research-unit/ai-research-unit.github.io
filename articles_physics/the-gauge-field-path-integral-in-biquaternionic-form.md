@@ -39,7 +39,7 @@ The integration measure is invariant as well, because the transformation is a sh
 $$
 Z = \left(\int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}])\right)
 = \left(\mathrm{Vol}(\mathcal{G})\right)\times
-\left(\int_{\text{orbits}}\mathcal{D}\tilde{A}_{\text{rep}}\;\exp(iS)\right),
+\left(\int_{\text{orbits}}\mathcal{D}\tilde{A}^{\mathrm{rep}}\;\exp(iS)\right),
 $$
 
 with $\mathrm{Vol}(\mathcal{G})$ the volume of the gauge group — an infinite factor, since there is one gauge transformation for every function $\Gamma$. The factor is not physical, but it is present, and the integral as written cannot be normalized or evaluated mode by mode. This is the pathology that gauge fixing removes, and it is worth noting that it is a property of the measure, not of the action: the same action, integrated over a space of fields in which the gauge orbit is represented once, is finite.

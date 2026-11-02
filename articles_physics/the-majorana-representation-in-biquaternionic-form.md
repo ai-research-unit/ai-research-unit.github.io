@@ -55,7 +55,7 @@ The relation was checked numerically: for $(\theta,\phi) = (0.7,0.3)$, $(2.1,1.4
 
 ### The Two-to-One Map
 
-The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\alpha)\psi$ leaves $\zeta$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
+The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\alpha)\psi$ leaves $\zeta$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega^{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
 
 ## The Majorana Polynomial
 
@@ -156,7 +156,7 @@ $$
 = -\sin^2\frac{\theta}{2}\,d\phi ,
 $$
 
-which is the expression of the preceding articles in the coordinate $\zeta = \tan(\theta/2)\exp(i\phi)$. Its integral around a loop of the star gives the geometric phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The star moves on the sphere, and the phase is the holonomy of the spinor that projects to it.
+which is the expression of the preceding articles in the coordinate $\zeta = \tan(\theta/2)\exp(i\phi)$. Its integral around a loop of the star gives the geometric phase $-\tfrac12\Omega^{\mathrm{sgn}}$. The star moves on the sphere, and the phase is the holonomy of the spinor that projects to it.
 
 ### What the Star Cannot See
 
@@ -282,7 +282,7 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 | $g = \begin{pmatrix}a&b\\-b^*&a^*\end{pmatrix}\in SU(2)$ | Rotation acting on the spinor |
 | $\zeta\mapsto\dfrac{a^*\zeta-b^*}{b\zeta+a}$ | Möbius action on the star |
 | $\mathcal{A} = -\sin^2\tfrac{\theta}{2}\,d\phi$ | Berry connection in stereographic coordinates |
-| $-\tfrac12\Omega_{\mathrm{sgn}}$ | Geometric phase discarded by the star map |
+| $-\tfrac12\Omega^{\mathrm{sgn}}$ | Geometric phase discarded by the star map |
 | $|W\rangle$, $|s,s_z\rangle$ | Symmetric multi-spin-1/2 states and Dicke states |
 
 ## Further Reading

@@ -141,7 +141,7 @@ $$
 HC_0(A)\cong A,\qquad HC_{2m}(A)\cong k\ (m\ge1),\qquad HC_{2m+1}(A)=0,
 $$
 
-and $HP_{\mathrm{even}}(A)\cong k$, $HP_{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.
+and $HP_{\mathrm{even}}(A)\cong k$, $HP^{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.
 
 ## Traces, the Chern Character and K-Theory
 

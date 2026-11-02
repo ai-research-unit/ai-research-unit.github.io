@@ -15,7 +15,7 @@ whose value over a closed loop is $-\hbar$ times one half the oriented solid ang
 This article establishes:
 
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|dz/dt'\rangle - \langle z|\tilde{H}|z\rangle)dt'$, and the measure.
-2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dt'\rangle\,dt' = -\Omega_{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
+2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dt'\rangle\,dt' = -\Omega^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dt' = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\bar\psi\psi = 1$; the two forms are related by the change of variables $\zeta = \psi_2/\psi_1$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.

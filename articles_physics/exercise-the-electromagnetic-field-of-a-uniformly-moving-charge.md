@@ -339,7 +339,7 @@ $$
 \qquad
 \Lambda(\theta) = \frac{1-\beta^2}{\left(1-\beta^2\sin^2\theta\right)^{3/2}} = \frac{(1-\beta^2)\,d^3}{D^3}.
 $$
-The scalar factor $\Lambda$ runs from $1/\gamma^2$ along the motion to $\gamma$ in the transverse plane, so the present-position Coulomb formula fails by an anisotropic factor that is not a small correction at relativistic speeds. Nor is the retarded-position Coulomb formula correct: $\vec E_C^{\text{ret}} = \frac{ϙ}{4\pi\epsilon}\vec u_R/R^2$ points along $\vec u_R$, not along $\vec d$, and its magnitude differs as well. The correct statement is the exact one of Problem 2: the field is radial *from the present position* with the Heaviside magnitude; neither the retarded nor the present position alone determines it.
+The scalar factor $\Lambda$ runs from $1/\gamma^2$ along the motion to $\gamma$ in the transverse plane, so the present-position Coulomb formula fails by an anisotropic factor that is not a small correction at relativistic speeds. Nor is the retarded-position Coulomb formula correct: $\vec E_C^{\mathrm{ret}} = \frac{ϙ}{4\pi\epsilon}\vec u_R/R^2$ points along $\vec u_R$, not along $\vec d$, and its magnitude differs as well. The correct statement is the exact one of Problem 2: the field is radial *from the present position* with the Heaviside magnitude; neither the retarded nor the present position alone determines it.
 
 **Solution (c).** With $\vec B = \frac{1}{c^2}\vec v\times\vec E$ one has $\vec E\perp\vec B$ and
 $$

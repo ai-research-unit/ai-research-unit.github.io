@@ -95,7 +95,7 @@ evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}
 If the dipole is transported adiabatically, the spin follows the instantaneous eigenstate of the effective Zeeman Hamiltonian $-\vec\mu\cdot\vec B_2$, and the acquired phase is the Berry phase of the effective-field loop. That phase is
 
 $$
-\gamma^{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}},
+\gamma^{\mathrm{geo}} = -\frac{1}{2}\,\Omega^{\mathrm{sgn}},
 $$
 
 one half the oriented solid angle traced by the direction of $\vec B_2$ on the Bloch sphere. The AC integral above and this solid-angle expression agree in the adiabatic limit; the AC form is the more primitive one, since it does not require adiabaticity to be defined, while the solid-angle form exposes the geometry.
@@ -286,7 +286,7 @@ $$
 = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r
 $$
 
-for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the Hermitian form of the state, read through the trace. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
+for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the Hermitian form of the state, read through the trace. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega^{\mathrm{sgn}}$ of non-relativistic spin.
 
 The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\phi_{AC} = -\lambda\mu_z/(\epsilon_0\hbar c^2)$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
 
@@ -307,7 +307,7 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\phi_{AB} = \tfrac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |
 | $\phi_{HMW} = \tfrac{1}{\hbar}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
 | $\lambda$ | Linear charge density of the line-charge geometry |
-| $\Omega_{\mathrm{sgn}}$ | Oriented solid angle (adiabatic limit) |
+| $\Omega^{\mathrm{sgn}}$ | Oriented solid angle (adiabatic limit) |
 
 ## Further Reading
 

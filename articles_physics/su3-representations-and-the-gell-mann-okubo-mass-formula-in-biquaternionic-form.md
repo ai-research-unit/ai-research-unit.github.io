@@ -169,7 +169,7 @@ the **linear** Gell-Mann–Okubo formula, valid when $\delta m^2/m_0^2\ll1$.
 
 For the baryon octet $F_{1/2}$ the hypercharge splitting gives the four masses
 
-| multiplet | $I$ | $Y$ | $m_{\text{exp}}$ (MeV) | $m_{\text{th}}$ |
+| multiplet | $I$ | $Y$ | $m^{\mathrm{exp}}$ (MeV) | $m_{\text{th}}$ |
 |---|---|---|---|---|
 | $\Xi$ | $\tfrac12$ | $-1$ | $1318$ | $m_0+\alpha-\beta+\tfrac12\gamma$ |
 | $\Sigma$ | $1$ | $0$ | $1192$ | $m_0+\alpha+2\gamma$ |

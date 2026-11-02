@@ -182,7 +182,7 @@ The endomorphism ring $E=\operatorname{End}_A(M)$ of a left $A$-module is a unit
 | $E=\operatorname{End}_A(M)$ | the endomorphism algebra of $M$ |
 | $Z(E)$ | the centre of $E$ |
 | $E'$ | the centralizer of $E$ in $\operatorname{End}_R(M)$ |
-| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{opp}} b = ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot^{\mathrm{opp}} b = ba$ |
 | $M_n(A^{\mathrm{opp}})$ | matrices over the opposite algebra, $=\operatorname{End}_A(A^n)$ |
 | $D=\operatorname{End}_A(S)$ | the division ring of a simple module |
 | $M_n(D)$ | matrix ring over $D$, $=\operatorname{End}_A(S^n)$ |

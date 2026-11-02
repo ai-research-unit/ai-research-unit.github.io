@@ -106,7 +106,7 @@ $$
 
 is a homomorphism of $k$-algebras onto the sandwich space.
 
-*Proof.* In $A \otimes_k A^{\mathrm{opp}}$ the product of generators is $(a \otimes b)(c \otimes d) = ac \otimes b \cdot_{\mathrm{opp}} d = ac \otimes db$, which is exactly the index pair of $L_{ac}R_{db}$, and the assignment is $k$-bilinear by construction.
+*Proof.* In $A \otimes_k A^{\mathrm{opp}}$ the product of generators is $(a \otimes b)(c \otimes d) = ac \otimes b \cdot^{\mathrm{opp}} d = ac \otimes db$, which is exactly the index pair of $L_{ac}R_{db}$, and the assignment is $k$-bilinear by construction.
 
 The sandwich space is therefore the image of the **enveloping algebra** $A \otimes_k A^{\mathrm{opp}}$ in $\operatorname{End}_k(A)$, and its dimension is that of $A \otimes_k A^{\mathrm{opp}}$ modulo the kernel. The kernel consists of the tensors $\sum_i a_i \otimes b_i$ whose two-sided action vanishes, that is with $\sum_i a_i x b_i = 0$ for every $x$.
 

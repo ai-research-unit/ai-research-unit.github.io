@@ -98,9 +98,9 @@ The retarded separation is therefore a **null** element of $\mathbb{M}_-$ — a 
 The second is the **four-velocity biquaternion**, written in coordinate form as the coordinate velocity divided by $\gamma$
 
 $$
-\tilde{V}/\gamma = ic\,e_t + \vec v(t'_r) = \frac{d\tilde{Q}_q}{dt'}\bigg|_{\text{ret}} \in \mathbb{M}_- ,
+\tilde{V}/\gamma = ic\,e_t + \vec v(t'_r) = \frac{d\tilde{Q}_q}{dt'}\bigg|^{\mathrm{ret}} \in \mathbb{M}_- ,
 \qquad
-\tilde{V} = \gamma\left(ic\,e_t + \vec v(t'_r)\right) = \frac{d\tilde{Q}_q}{d\tau}\bigg|_{\text{ret}} \in \mathbb{M}_- ,
+\tilde{V} = \gamma\left(ic\,e_t + \vec v(t'_r)\right) = \frac{d\tilde{Q}_q}{d\tau}\bigg|^{\mathrm{ret}} \in \mathbb{M}_- ,
 $$
 
 with biquaternion norms
@@ -401,7 +401,7 @@ $$
 Two special cases are standard and useful. For **linear acceleration**, $d\vec\beta/dt'_r\parallel\vec\beta$ and
 
 $$
-P_{\text{lin}} = \frac{ϙ^2\gamma^6\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
+P^{\mathrm{lin}} = \frac{ϙ^2\gamma^6\left(d\beta/dt'_r\right)^{2}}{6\pi\epsilon c},
 $$
 
 the well-known $\gamma^6$ enhancement. For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$ and

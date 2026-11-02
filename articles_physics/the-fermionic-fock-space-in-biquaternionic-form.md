@@ -117,11 +117,11 @@ and no state can be occupied twice. Pauli exclusion is not a dynamical accident 
 **The graded product and the number grading.** The degree operator $N^{\mathrm{fop}}$ assigns to a basis vector of $\Lambda^nS$ the eigenvalue $n$ and acts as degree multiplication. The wedge is compatible with it in the graded sense: $(\Lambda^m)\wedge(\Lambda^n)\subseteq\Lambda^{m+n}$. This is the $\mathbb{Z}$-grading, and by reduction modulo two the $\mathbb{Z}/2$-grading:
 
 $$
-\mathcal{F}=\mathcal{F}_{\text{even}}\oplus\mathcal{F}_{\text{odd}} ,
+\mathcal{F}=\mathcal{F}_{\text{even}}\oplus\mathcal{F}^{\mathrm{odd}} ,
 \qquad
 \mathcal{F}_{\text{even}}=\mathbb{C}\oplus\Lambda^2S ,
 \qquad
-\mathcal{F}_{\text{odd}}=S .
+\mathcal{F}^{\mathrm{odd}}=S .
 $$
 
 The even part is the state space of an even number of quanta; the odd part is the one-particle space. The field operators below are odd; the observables are even.

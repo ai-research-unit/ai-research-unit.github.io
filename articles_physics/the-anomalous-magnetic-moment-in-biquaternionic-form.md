@@ -152,7 +152,7 @@ $$
 for $\alpha=1/137.035999084$. The number is Schwinger's, the first radiative correction ever computed, and it sits above the measured electron anomaly
 
 $$
-a_e^{\text{exp}}=1.15965218073\times10^{-3}
+a_e^{\mathrm{exp}}=1.15965218073\times10^{-3}
 $$
 
 with a relative excess of $1.5156\times10^{-3}$. The leading term alone is about $1.5\times10^{-3}$ too large relative to the measurement, which is of the order of the two-loop correction.
@@ -280,7 +280,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $F_2(0)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(\Sigma-1)\frac{2m^2z(1-z)}{m^2(1-z)^2+xyk^2}$ | One-loop parameter representation |
 | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ | Leading (Schwinger) anomaly |
 | $A_2=-0.328478965579$ | Two-loop coefficient (recomputed) |
-| $a_e^{\text{exp}}=1.1596521807\times10^{-3}$ | Measured electron anomaly |
+| $a_e^{\mathrm{exp}}=1.1596521807\times10^{-3}$ | Measured electron anomaly |
 
 ## Further Reading
 

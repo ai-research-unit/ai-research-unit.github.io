@@ -25,14 +25,12 @@ On a four-manifold with a spin structure and a gauge bundle in a representation 
 **Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
 
 $$
-\mathcal{D}_R \;=\; C_\mu D_\mu ,
-\qquad
-C_0=iL_{e_t}R_{\vec e_x},\quad C_k=iL_{\vec e_k}R_{\vec e_y} ,
+\mathcal{D}_R \;=\; iL_{e_\mu}R_{e_{\nu(\mu)}} D_\mu ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
 
-with $C_\mu$ the frame cells acting by $\psi\mapsto i\,e_\mu\psi\,e_{\nu(\mu)}$, where $\nu(t)=x$ and $\nu(k)=y$, satisfying $\{C_\mu,C_\nu\}=2g_{\mu\nu}$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality $\psi\mapsto -i\psi\vec e_z$ into the positive and negative chirality zero-mode spaces,
+with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the frame cell of the coordinate $Q_\mu$, acting by $\psi\mapsto i\,e_\mu\psi\,e_{\nu(\mu)}$, where $\nu(t)=x$ and $\nu(k)=y$, satisfying $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality $\psi\mapsto -i\psi\vec e_z$ into the positive and negative chirality zero-mode spaces,
 
 $$
 \ker\mathcal{D}_R \;=\; \ker^+\!\mathcal{D}_R \oplus \ker^-\!\mathcal{D}_R ,
@@ -195,7 +193,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\mathcal{D}_R=C_\mu D_\mu$, $C_0=iL_{e_t}R_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$ | Twisted Dirac operator in representation $R$, in frame cells |
+| $\mathcal{D}_R=iL_{e_\mu}R_{e_{\nu(\mu)}}D_\mu$ | Twisted Dirac operator in representation $R$, in frame cells |
 | $\psi\mapsto-i\psi\vec e_z$ | Chirality; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
 | $\mathrm{ind}\,\mathcal{D}_R=n_+-n_-$ | Index of the Dirac operator |

@@ -19,7 +19,7 @@ $$
 
 the pair $(A,\sigma)$ is an **involutive algebra**.
 
-The definition, the elementary properties and the examples are those of *Involutive Algebras*; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{opp}}$ as well, since for the opposite product $a \cdot_{\mathrm{opp}} b=ba$ one has $\sigma(a \cdot_{\mathrm{opp}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{opp}} \sigma(a)$.
+The definition, the elementary properties and the examples are those of *Involutive Algebras*; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{opp}}$ as well, since for the opposite product $a \cdot^{\mathrm{opp}} b=ba$ one has $\sigma(a \cdot^{\mathrm{opp}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot^{\mathrm{opp}} \sigma(a)$.
 
 ### The twisted module
 
@@ -89,10 +89,10 @@ $$
 
 is an involution of the $R$-algebra $M_n(A^{\mathrm{opp}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.
 
-*Proof.* Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{opp}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has
+*Proof.* Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot^{\mathrm{opp}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has
 
 $$
-\Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{opp}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
+\Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot^{\mathrm{opp}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
 $$
 
 so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula.
@@ -154,7 +154,7 @@ An algebra with an involution $\sigma$ acts on the module category by twisting, 
 | $R$ | commutative ring with identity, the base ring |
 | $A$ | unital associative $R$-algebra |
 | $\sigma$ | involution of $A$: $\sigma^{2}=\mathrm{id}$, $\sigma(ab)=\sigma(b)\sigma(a)$ |
-| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{opp}} b=ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot^{\mathrm{opp}} b=ba$ |
 | $M$, $N$ | left $A$-modules |
 | $M^{\sigma}$ | twisted module, action $a \cdot_{\sigma} m=\sigma(a)m$ |
 | $f : M \to N$ | a homomorphism, also a homomorphism $M^{\sigma} \to N^{\sigma}$ |

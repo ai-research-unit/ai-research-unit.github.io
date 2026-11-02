@@ -242,9 +242,9 @@ For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathr
 
 $$
 \frac{1}{\sqrt{2\pi i\hbar}}\sqrt{\big|\det\nolimits\delta^2S\big|}
-=\frac{A_{\mathrm{wkb}}}{\sqrt{2\pi i\hbar}},
+=\frac{A^{\mathrm{wkb}}}{\sqrt{2\pi i\hbar}},
 \qquad
-A_{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
+A^{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
 $$
 
 so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
@@ -344,7 +344,7 @@ A non-central root $J$ fails as the phase's imaginary unit for the same reasons 
 
 The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is central, its phase the classical action over $\hbar$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $t'\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(iS/\hbar)=\exp(-S_E/\hbar)$; in the interpretation of the companion article this is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
-The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
+The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A^{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
 
 The canonical commutator is not visible in the commuting sum over paths, but its right-hand side is: the free trajectory is not differentiable, the forward and backward derivatives of its two-point function differ by the contact term $\hbar/m$ (checked to be exactly $1$ with $\hbar=m=1$, independent of the step), and the time order becomes the operator order, giving $[x,p]=i\hbar$. The algebra supplies $i\hbar$ as a **central** element of the **material sector** $\mathbb{M}_-$ — the same sector as the phase exponent — and not the ordering, which belongs to the operator algebra on the state module. In curved space two further external objects appear: the **operator ordering**, whose ambiguity is the curvature, $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ (checked numerically), and the **measure factor** $\prod_x\sqrt g$, one volume element per slice, needed to restore unitarity and of the same class as $\mathcal{D}x$. The algebra supplies the central $i\hbar$ and the determinant language; it supplies neither the curvature, the ordering, nor the volume element.
 
@@ -367,7 +367,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=m/2\pi\hbar T$ |
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
-| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
+| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A^{\mathrm{wkb}}$ |
 | $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
 | $\langle x_jx_k\rangle=(\hbar/m)\min(t'_j,t'_k)$ | Free Euclidean two-point function; contact term $\hbar/m$ |
 | $[x,p]=i\hbar$ | Canonical commutator; the value $i\hbar$ is central and in $\mathbb{M}_-$ |

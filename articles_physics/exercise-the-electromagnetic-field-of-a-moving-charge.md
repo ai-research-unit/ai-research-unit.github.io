@@ -116,9 +116,9 @@ The identities of (b) were verified numerically on accelerated worldlines: $|D -
 
 ## Problem 2: The Field Strength and the Velocity–Acceleration Split
 
-**Statement.** (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde K_{\mathrm{ret}}d\tilde{Q}/dt'_r$ with
+**Statement.** (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde K^{\mathrm{ret}}d\tilde{Q}/dt'_r$ with
 $$
-\tilde K_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
+\tilde K^{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
 \qquad
 N\!\left(-i\,e_t + \vec u_R\right) = 0 .
 $$
@@ -135,30 +135,30 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Q}
 = \left(\partial/\partial Q_t\,t'_r\,e_t - \sum_\mu \partial/\partial Q_\mu\,t'_r\,\vec e_\mu\right)d\tilde{Q}/dt'_r
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dt'_r
-= \tilde K_{\mathrm{ret}}d\tilde{Q}/dt'_r .
+= \tilde K^{\mathrm{ret}}d\tilde{Q}/dt'_r .
 $$
-The scalar coefficient of $\tilde K_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$ is $-\frac{i}{c\kappa}$, so
+The scalar coefficient of $\tilde K^{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$ is $-\frac{i}{c\kappa}$, so
 $$
 N\!\left(-ie_t+\vec u_R\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
 $$
-The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t'_r$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K_{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).
+The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t'_r$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K^{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).
 
 **Solution (b).** The denominator $D$ is *not* a function of $t'_r$ alone: at fixed $t'_r$ it still depends explicitly on $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $t'_r$ and its action through $t'_r$,
 $$
-\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde K_{\mathrm{ret}}dD/dt'_r ,
+\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde K^{\mathrm{ret}}dD/dt'_r ,
 \qquad
 \,dD/dt'_r = -c\,\vec u_R\cdot\vec\beta + c\beta^2 - \vec R\cdot\,d\vec\beta/dt'_r .
 $$
-Here $-\left(\vec u_R-\vec\beta\right)$ is the explicit part, since at fixed $t'_r$ one has $\partial/\partial Q_j|_{\text{exp}}D = \vec u_{R_j}-\beta_j$, and $dD/dt'_r$ is the retarded-time derivative. With $g = \frac{\mu ϙ}{4\pi}$ and $\tilde{A} = g\,(\tilde{V}/\gamma)/D$, the product rule (the gradient acts from the left, and $1/D$ is a scalar) gives
+Here $-\left(\vec u_R-\vec\beta\right)$ is the explicit part, since at fixed $t'_r$ one has $\partial/\partial Q_j|^{\mathrm{exp}}D = \vec u_{R_j}-\beta_j$, and $dD/dt'_r$ is the retarded-time derivative. With $g = \frac{\mu ϙ}{4\pi}$ and $\tilde{A} = g\,(\tilde{V}/\gamma)/D$, the product rule (the gradient acts from the left, and $1/D$ is a scalar) gives
 $$
 \tilde{F} = \tilde{\nabla}^{\natural}\frac{g\tilde{V}/\gamma}{D}
 = \frac{g}{D^2}\left[D\,\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) - \left(\tilde{\nabla}^{\natural}D\right)\tilde{V}/\gamma\right].
 $$
-Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K_{\mathrm{ret}}\,d\tilde{V}/\gamma/dt'_r$ with $d\tilde{V}/\gamma/dt'_r = cd\vec\beta/dt'_r$, and using $D\tilde K_{\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = \frac{R}{c}(-ie_t+\vec u_R) = -2\frac{R}{c}\tilde{\mathcal L}_{\mathrm{ret}}$, where $\tilde{\mathcal L}_{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
+Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K^{\mathrm{ret}}\,d\tilde{V}/\gamma/dt'_r$ with $d\tilde{V}/\gamma/dt'_r = cd\vec\beta/dt'_r$, and using $D\tilde K^{\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = \frac{R}{c}(-ie_t+\vec u_R) = -2\frac{R}{c}\tilde{\mathcal L}^{\mathrm{ret}}$, where $\tilde{\mathcal L}^{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
 $$
-\tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}\,d\vec\beta/dt'_r
+\tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}^{\mathrm{ret}}\,d\vec\beta/dt'_r
 + \left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma
-+ \frac{2\,dD/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma
++ \frac{2\,dD/dt'_r}{c\kappa}\,\tilde{\mathcal L}^{\mathrm{ret}}\,\tilde{V}/\gamma
 \right].
 $$
 The only $d\vec\beta/dt'_r$-dependence sits in the first term and in $dD/dt'_r$. Writing $dD/dt'_r = dD_{0}/dt'_r - \vec R\cdot\,d\vec\beta/dt'_r$ with
@@ -169,12 +169,12 @@ and separating,
 $$
 \boxed{\;
 \tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma
-+ \frac{2\,dD_{0}/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma\right],
++ \frac{2\,dD_{0}/dt'_r}{c\kappa}\,\tilde{\mathcal L}^{\mathrm{ret}}\,\tilde{V}/\gamma\right],
 \qquad
-\tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}\,d\vec\beta/dt'_r
-- \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\,\tilde{\mathcal L}_{\mathrm{ret}}\,\tilde{V}/\gamma\right]\;}.
+\tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}^{\mathrm{ret}}\,d\vec\beta/dt'_r
+- \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\,\tilde{\mathcal L}^{\mathrm{ret}}\,\tilde{V}/\gamma\right]\;}.
 $$
-The split is exact and structural: $\tilde{F}_v$ is independent of $d\vec\beta/dt'_r$ (it is what survives uniform motion), and $\tilde{F}_a$ is linear in $d\vec\beta/dt'_r$ (it vanishes for unaccelerated motion, $d\vec\beta/dt'_r = 0$). Note the ordering is not cosmetic — $\tilde{\mathcal L}_{\mathrm{ret}}$ multiplies on the left, up to the scalar $-2$ — and the two brackets are not merely "terms containing $d\vec\beta/dt'_r$"; they are the velocity and acceleration fields.
+The split is exact and structural: $\tilde{F}_v$ is independent of $d\vec\beta/dt'_r$ (it is what survives uniform motion), and $\tilde{F}_a$ is linear in $d\vec\beta/dt'_r$ (it vanishes for unaccelerated motion, $d\vec\beta/dt'_r = 0$). Note the ordering is not cosmetic — $\tilde{\mathcal L}^{\mathrm{ret}}$ multiplies on the left, up to the scalar $-2$ — and the two brackets are not merely "terms containing $d\vec\beta/dt'_r$"; they are the velocity and acceleration fields.
 
 **Solution (c).** Both brackets are pure vectors: their scalar parts vanish identically, which is the biquaternionic statement of the Lorenz condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$. Expanding the brackets in components gives
 $$
@@ -339,7 +339,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 ## Further Problems
 
-**1. Expand the brackets by hand.** The two biquaternion brackets of Problem 2 were verified here by finite differences and by matching to the component formulas, but the component expansion of $\tilde{F}_v$ and $\tilde{F}_a$ was not carried out symbolically in the article. Do it: expand $\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma$, $\tilde{\mathcal L}_{\mathrm{ret}}d\vec\beta/dt'_r$ (the scalar $-2$ aside), and $\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma$ into scalar and vector parts, and show that the vector part of $gD^{-2}\tilde{F}_v$ is $i\sqrt{\epsilon}\vec E_v-\sqrt{\mu}\vec H_v$. This is the one purely mechanical step left as an exercise. It is where the $\kappa^3$ and the factor $1-\beta^2$ are seen to emerge.
+**1. Expand the brackets by hand.** The two biquaternion brackets of Problem 2 were verified here by finite differences and by matching to the component formulas, but the component expansion of $\tilde{F}_v$ and $\tilde{F}_a$ was not carried out symbolically in the article. Do it: expand $\tilde{\mathcal L}^{\mathrm{ret}}\tilde{V}/\gamma$, $\tilde{\mathcal L}^{\mathrm{ret}}d\vec\beta/dt'_r$ (the scalar $-2$ aside), and $\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma$ into scalar and vector parts, and show that the vector part of $gD^{-2}\tilde{F}_v$ is $i\sqrt{\epsilon}\vec E_v-\sqrt{\mu}\vec H_v$. This is the one purely mechanical step left as an exercise. It is where the $\kappa^3$ and the factor $1-\beta^2$ are seen to emerge.
 
 **2. The present-position fallacy.** Compute the field of a uniformly moving charge using the *present* position $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$ in place of the retarded position, and show that the result differs from $\vec E_v$. Identify which of the two falloff laws fails and by how much. This makes quantitative why the field point and the source point must be distinguished.
 
@@ -355,11 +355,11 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$, built from the null retarded separation $iR\,e_t+\vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}(iR\,e_t+\vec R)^{\natural}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
 $$
-\tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma + \frac{2\,dD_{0}/dt'_r}{c\kappa}\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma\right],
+\tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma + \frac{2\,dD_{0}/dt'_r}{c\kappa}\tilde{\mathcal L}^{\mathrm{ret}}\tilde{V}/\gamma\right],
 \qquad
-\tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}d\vec\beta/dt'_r - \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma\right],
+\tilde{F}_a = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}^{\mathrm{ret}}d\vec\beta/dt'_r - \frac{2\,\vec R\cdot\,d\vec\beta/dt'_r}{c\kappa}\tilde{\mathcal L}^{\mathrm{ret}}\tilde{V}/\gamma\right],
 $$
-with $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$, $dD_{0}/dt'_r = -c\left(\vec u_R\cdot\vec\beta-\beta^2\right)$, and $g = \mu ϙ/4\pi$.
+with $\tilde{\mathcal L}^{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$, $dD_{0}/dt'_r = -c\left(\vec u_R\cdot\vec\beta-\beta^2\right)$, and $g = \mu ϙ/4\pi$.
 
 The velocity field falls as $1/R^2$, is of electric type, and is not null: $I_{1,v} = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2R^2}\right)^2>0$, $I_{2,v}=0$, $\langle\tilde{F}_v\rangle_{\natural}\ne0$. The acceleration field falls as $1/R$, is transverse and null, and is a zero divisor: $\vec u_R\cdot\vec E_a = 0$, $I_{1,a}=I_{2,a}=0$, $\tilde{F}_a^2 = 0$. The two falloffs were verified by holding the retarded configuration fixed and scaling the observation distance, and the far-zone dominance of $\vec E_a$ follows from the one-power difference: the ratio $|\vec E_v|/|\vec E_a|$ falls off as $1/R$. The retarded denominator $\kappa$ and the charge sign were checked on two independent cases, uniform motion (where $\vec E = \vec E_v$) and motion with acceleration (where both parts contribute); $\kappa$ can be less than or greater than $1$ and is not a $\gamma$-factor. Finally, the field is not a four-vector: under a boost it transforms by the similarity $\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, not by the rotor conjugation $\tilde U_{\mathrm{lor}}\tilde{F}\tilde U_{\mathrm{lor}}^{*}$, and the velocity field is recovered as the boost of the Coulomb field by that law.
 
@@ -392,8 +392,8 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right)$ | Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}/\gamma = ic\,e_t+\vec v(t'_r)$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{M}_-$ |
-| $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
-| $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$ |
+| $\tilde K^{\mathrm{ret}} = \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
+| $\tilde{\mathcal L}^{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K^{\mathrm{ret}}$ is $-2\tilde{\mathcal L}^{\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |

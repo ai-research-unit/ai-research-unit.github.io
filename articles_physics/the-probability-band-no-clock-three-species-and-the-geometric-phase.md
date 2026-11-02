@@ -297,11 +297,11 @@ The trace of the square and the linear entropy are the same two numbers read fro
 $$
 \mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)=\tfrac{1}{2}\bigl(1+\lvert\vec r\rvert^{2}\bigr)=2P,
 \qquad
-S_{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
+S^{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
 =\tfrac{1}{2}\bigl(1-\lvert\vec r\rvert^{2}\bigr)=2I .
 $$
 
-The gap is therefore $P-I=\tfrac{1}{2}-S_{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S_{\mathrm{lin}}$. The pure state has $S_{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S_{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.
+The gap is therefore $P-I=\tfrac{1}{2}-S^{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S^{\mathrm{lin}}$. The pure state has $S^{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S^{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.
 
 **The interpretation.** The probability norm is definite on the algebra; the interval is indefinite there and non-negative on the state slice. On a state their difference is the purity gap, an affine image of the trace purity; the half-difference is the information content, maximal for the pure states and vanishing at the maximally mixed element.
 
