@@ -17,13 +17,13 @@ The article is confined to a Lagrangian field theory with finitely many fields o
 **Definition.** The fields are $u_1,\dots,u_N$, functions of the coordinates $x_0,\dots,x_{m-1}$ of a flat space of dimension $m$, with coordinates written $x_\mu$ and partial derivatives written $\partial/\partial x_\mu$. The **Lagrangian density** is a function $\mathcal{L}(x,u,\partial u)$ of the coordinates, the fields and their first derivatives, and the **action** is the functional
 
 $$
-S[u] = \int_\Omega L\bigl(x,u(x),\partial u(x)\bigr)\,d^mx .
+S[u] = \int_\Omega \mathcal{L}\bigl(x,u(x),\partial u(x)\bigr)\,d^mx .
 $$
 
 **Definition.** The **Euler–Lagrange expression** of the $i$-th field is
 
 $$
-E_i = \frac{\partial L}{\partial u_i} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial L}{\partial u_{i,\mu}} ,
+E_i = \frac{\partial \mathcal{L}}{\partial u_i} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial \mathcal{L}}{\partial u_{i,\mu}} ,
 $$
 
 abbreviated $\mathcal{L}_{\mu i} = \partial \mathcal{L}/\partial u_{i,\mu}$ for the derivative with respect to the gradient. A field configuration is **on shell** when $E_i=0$ for every $i$, and **off shell** otherwise.
@@ -31,16 +31,16 @@ abbreviated $\mathcal{L}_{\mu i} = \partial \mathcal{L}/\partial u_{i,\mu}$ for 
 **Theorem (the fundamental variation identity).** For any variation $\delta u_i$, the variation of the density is
 
 $$
-\delta L = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\Theta_\mu ,
+\delta \mathcal{L} = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\Theta_\mu ,
 \qquad
-\Theta_\mu = \sum_i L_{\mu i}\,\delta u_i .
+\Theta_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i .
 $$
 
 *Proof.* Expanding the variation and inserting the definition of $E_i$,
 
 $$
-\delta L = \sum_i\frac{\partial L}{\partial u_i}\delta u_i + \sum_{i,\mu}L_{\mu i}\,\partial/\partial x_\mu\,\delta u_i
-= \sum_i\Bigl(\frac{\partial L}{\partial u_i} - \sum_\mu\partial/\partial x_\mu L_{\mu i}\Bigr)\delta u_i + \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i L_{\mu i}\,\delta u_i\bigr),
+\delta \mathcal{L} = \sum_i\frac{\partial \mathcal{L}}{\partial u_i}\delta u_i + \sum_{i,\mu}\mathcal{L}_{\mu i}\,\partial/\partial x_\mu\,\delta u_i
+= \sum_i\Bigl(\frac{\partial \mathcal{L}}{\partial u_i} - \sum_\mu\partial/\partial x_\mu \mathcal{L}_{\mu i}\Bigr)\delta u_i + \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i \mathcal{L}_{\mu i}\,\delta u_i\bigr),
 $$
 
 which is the stated identity.
@@ -52,7 +52,7 @@ The identity splits the change of the density into a piece that vanishes on shel
 **Definition.** A variation is a **symmetry of the action up to a divergence** when the density changes by a divergence,
 
 $$
-\delta L = \sum_\mu\partial/\partial x_\mu F_\mu ,
+\delta \mathcal{L} = \sum_\mu\partial/\partial x_\mu F_\mu ,
 $$
 
 for some $F_\mu$ depending on the fields and the variation. The divergence is allowed because it does not change the equations of motion: the two densities differ by a boundary term, and both give the same $E_i$.
@@ -70,7 +70,7 @@ with the parameter $\alpha$ a **constant**, and with $\delta_\alpha \mathcal{L} 
 **Theorem (Noether, first theorem).** Let $\delta u_i = \alpha\,\xi_i$ be a symmetry of the first kind, with $\delta \mathcal{L} = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$. Then the field
 
 $$
-j_\mu = \sum_i L_{\mu i}\,\xi_i - F_\mu
+j_\mu = \sum_i \mathcal{L}_{\mu i}\,\xi_i - F_\mu
 $$
 
 satisfies
@@ -84,7 +84,7 @@ and is therefore conserved, $\sum_\mu\partial/\partial x_\mu j_\mu=0$, on every 
 *Proof.* The fundamental identity for the variation $\delta u_i = \alpha\xi_i$ reads
 
 $$
-\alpha\sum_\mu\partial/\partial x_\mu F_\mu = \alpha\sum_i E_i\xi_i + \alpha\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i L_{\mu i}\xi_i\bigr),
+\alpha\sum_\mu\partial/\partial x_\mu F_\mu = \alpha\sum_i E_i\xi_i + \alpha\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i \mathcal{L}_{\mu i}\xi_i\bigr),
 $$
 
 and cancelling the common factor $\alpha$ gives $\sum_i E_i\xi_i = \sum_\mu\partial/\partial x_\mu(F_\mu - \sum_i \mathcal{L}_{\mu i}\xi_i) = -\sum_\mu\partial/\partial x_\mu j_\mu$.
@@ -102,9 +102,9 @@ is constant in time, because $\frac{d}{dt}Ϙ = \int\partial/\partial x_0\,j_0\,d
 **Translation invariance and the energy–momentum tensor.** Let the density contain no explicit dependence on the coordinates and let the fields transform with the coordinates, $\delta u_i = \sum_\nu\xi_\nu\partial/\partial x_\nu u_i$ under $x_\mu\mapsto x_\mu+\xi_\mu$ with $\xi_\mu$ constant. Then $\delta \mathcal{L} = \sum_\nu\xi_\nu\partial/\partial x_\nu \mathcal{L} = \sum_\nu\partial/\partial x_\nu(\xi_\nu \mathcal{L})$, so $F_\mu=\xi_\mu \mathcal{L}$, and
 
 $$
-j_\mu = \sum_i L_{\mu i}\,\sum_\nu\xi_\nu\partial/\partial x_\nu u_i - \xi_\mu L = \sum_\nu\xi_\nu\,T_{\mu\nu} ,
+j_\mu = \sum_i \mathcal{L}_{\mu i}\,\sum_\nu\xi_\nu\partial/\partial x_\nu u_i - \xi_\mu \mathcal{L} = \sum_\nu\xi_\nu\,T_{\mu\nu} ,
 \qquad
-T_{\mu\nu} = \sum_i L_{\mu i}\,\partial/\partial x_\nu u_i - \delta_{\mu\nu}\,L .
+T_{\mu\nu} = \sum_i \mathcal{L}_{\mu i}\,\partial/\partial x_\nu u_i - \delta_{\mu\nu}\,\mathcal{L} .
 $$
 
 The four conserved quantities are the components of the canonical four-vector, and $T_{\mu\nu}$ is the **canonical tensor**. It is conserved on shell, $\sum_\mu\partial/\partial x_\mu T_{\mu\nu}=0$, and it need not be symmetric; the symmetric tensor of the field-theoretic account is an improvement of it by a superpotential, which alters neither the conservation law nor the total charge.
@@ -114,7 +114,7 @@ The four conserved quantities are the components of the canonical four-vector, a
 **An internal symmetry and the electric-type current.** Let the density be invariant under the constant phase rotation of a complex field, $\delta\phi = i\alpha\phi$, $\delta\phi^* = -i\alpha\phi^*$. For the massless complex scalar with
 
 $$
-L = \sum_\mu\partial/\partial x_\mu\,\phi^*\,\partial/\partial x_\mu\phi ,
+\mathcal{L} = \sum_\mu\partial/\partial x_\mu\,\phi^*\,\partial/\partial x_\mu\phi ,
 $$
 
 the conjugate momentum is $\mathcal{L}_{\mu\phi} = \partial/\partial x_\mu\phi^*$ and $\mathcal{L}_{\mu\bar{\phi}} = \partial/\partial x_\mu\phi$, so the current is
@@ -186,7 +186,7 @@ The Maxwell field is the original illustration of the second theorem and the one
 **The variational problem.** Let the field be the four-potential $A_\nu$ and the density be
 
 $$
-L = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} ,
+\mathcal{L} = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} ,
 \qquad
 F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu .
 $$
@@ -194,7 +194,7 @@ $$
 The Euler–Lagrange expression is
 
 $$
-E_\nu = \frac{\partial L}{\partial A_\nu} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial L}{\partial(\partial/\partial x_\mu A_\nu)} = \sum_\mu\partial/\partial x_\mu F_{\mu\nu} ,
+E_\nu = \frac{\partial \mathcal{L}}{\partial A_\nu} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial \mathcal{L}}{\partial(\partial/\partial x_\mu A_\nu)} = \sum_\mu\partial/\partial x_\mu F_{\mu\nu} ,
 $$
 
 the source-free side of the inhomogeneous Maxwell equations.
@@ -232,7 +232,7 @@ The Maxwell local symmetry has no algebraic part, so it carries no charge at all
 **The variational problem.** Let the fields be $A_\mu$ and a scalar $B$, and let the density be
 
 $$
-L = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} + \frac{m^2}{2}\sum_\mu\bigl(A_\mu + \partial/\partial x_\mu B\bigr)\bigl(A_\mu + \partial/\partial x_\mu B\bigr),
+\mathcal{L} = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} + \frac{m^2}{2}\sum_\mu\bigl(A_\mu + \partial/\partial x_\mu B\bigr)\bigl(A_\mu + \partial/\partial x_\mu B\bigr),
 $$
 
 the Stueckelberg form of the massive vector field, in which the mass term is written so that a local symmetry survives.
