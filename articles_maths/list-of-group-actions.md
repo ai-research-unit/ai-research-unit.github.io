@@ -44,7 +44,7 @@ An action of $G$ on a vector space by linear maps is a **representation** of $G$
 |---|---|---|
 | Linear action of $GL(V)$ on $V$ | the defining representation; the orbit of a vector is its nonzero scalar multiples, and the stabiliser the stabiliser of a line | *The General Linear Group* |
 | Action of $GL(V)$ on the lines and Grassmannians | the orbits are the Grassmannians; the stabilisers the parabolic subgroups | *The General Linear Group* |
-| Regular representation of $G$ on $F[G]$ | $G$ acts on the group algebra; the character is $\chi_{\mathrm{reg}}(e) = |G|$ | *Group Algebras* |
+| Regular representation of $G$ on $F[G]$ | $G$ acts on the group algebra; the character is $\chi^{\mathrm{reg}}(e) = |G|$ | *Group Algebras* |
 | Permutation representation of a $G$-set | the linearisation of an action on a set; the character counts fixed points | *Representations of Groups* |
 | Tensor, dual, symmetric and exterior powers | the representations $V \otimes W$, $V^*$, $\operatorname{sym}^n V$ and $\Lambda^n V$ | *Representations of Groups* |
 | Adjoint action of a Lie algebra on itself | orbits the coadjoint orbits; the representation $\operatorname{ad} : \mathrm{G} \to \mathrm{GL}(\mathrm{G})$ | *Lie Algebras* |

@@ -33,7 +33,7 @@ $$
 
 (ii) The shift $\sigma$ is a homeomorphism of $\Sigma_d$, topologically transitive and topologically mixing; its periodic points are dense, and the fixed points of $\sigma^n$ are the sequences of period dividing $n$, of which there are $d^n$.
 
-(iii) The topological entropy of $\sigma$ is $h_{\mathrm{top}}(\sigma)=\log d$, and the Bernoulli measure $\mu$ with weights $p_0,\dots,p_{d-1}$ is $\sigma$-invariant and ergodic, with measure-theoretic entropy $-\sum_ip_i\log p_i$; the measure of maximal entropy is the uniform Bernoulli measure.
+(iii) The topological entropy of $\sigma$ is $h^{\mathrm{tpl}}(\sigma)=\log d$, and the Bernoulli measure $\mu$ with weights $p_0,\dots,p_{d-1}$ is $\sigma$-invariant and ergodic, with measure-theoretic entropy $-\sum_ip_i\log p_i$; the measure of maximal entropy is the uniform Bernoulli measure.
 
 *Proof.* The space $\Sigma_d$ is a product of compact spaces, hence compact by the Tychonoff theorem, and the metric induces the product topology; the perfectness and the total disconnectedness are immediate from the definition of the cylinders, and the Cantor–Bendixson analysis of *Topological Spaces* gives the homeomorphism with the middle-third Cantor set. The shift conjugates the cylinders, hence is a homeomorphism, and its mixing follows from the fact that for words $u,v$ and $n$ exceeding the length of $u$, the cylinder $[u]$ meets $\sigma^{-n}[v]$ in a nonempty clopen set. The density of the periodic points is the fact that every cylinder $[w]$ contains the periodic sequence $\overline{w}$ of period $|w|$, and the entropy is computed by the count $d^n$ of the words of length $n$; the Bernoulli statements are those of *Ergodic Theory*.
 
@@ -50,7 +50,7 @@ with $\mathcal L_n(X)=\mathcal L(X)\cap\mathcal A^n$; a subshift is **determined
 **Theorem (entropy and the language).** Let $X$ be a subshift. Then the topological entropy of the shift restricted to $X$ is
 
 $$
-\boxed{\;h_{\mathrm{top}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|\;},
+\boxed{\;h^{\mathrm{tpl}}(\sigma|_X)=\lim_{n\to\infty}\frac1n\log|\mathcal L_n(X)|\;},
 $$
 
 the exponential growth rate of the language.
@@ -60,7 +60,7 @@ the exponential growth rate of the language.
 **Example (the golden-mean shift).** Let $X$ be the subshift of $\Sigma_2$ whose forbidden word is $11$, so that $X$ consists of the sequences with no two consecutive ones. Its language of length $n$ is the set of binary words with no $11$, of cardinality the Fibonacci number $F_{n+2}$; a direct count gives $|\mathcal L_n(X)|=2,3,5,8,13,21,\dots$ and
 
 $$
-h_{\mathrm{top}}(\sigma|_X)=\lim_n\frac1n\log F_{n+2}=\log\varphi, \qquad \varphi=\frac{1+\sqrt5}{2}=1.618034\ldots
+h^{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log F_{n+2}=\log\varphi, \qquad \varphi=\frac{1+\sqrt5}{2}=1.618034\ldots
 $$
 
 the logarithm of the golden ratio, in agreement with the matrix computation of the next section.
@@ -79,7 +79,7 @@ equivalently the subshift whose forbidden words are the pairs $ij$ with $A_{ij}=
 
 **Theorem (entropy and zeta function of an SFT).** Let $X=\Sigma_A$ be an SFT with irreducible transition matrix $A$. Then
 
-(i) $h_{\mathrm{top}}(\sigma|_X)=\log\rho(A)$, where $\rho(A)$ is the spectral radius, and the entropy is realised by the measure corresponding to the Perron eigenvector of $A$;
+(i) $h^{\mathrm{tpl}}(\sigma|_X)=\log\rho(A)$, where $\rho(A)$ is the spectral radius, and the entropy is realised by the measure corresponding to the Perron eigenvector of $A$;
 
 (ii) the number of fixed points of $\sigma^n$ satisfies $p_n=\operatorname{tr}(A^n)$, and the **zeta function** of the subshift,
 
@@ -125,7 +125,7 @@ and a **block code** is the one-sided analogue. A **conjugacy** is a bijective s
 
 ### Markov Partitions and the Coding of Hyperbolic Systems
 
-**Theorem (coding of a hyperbolic set).** Let $\Lambda$ be a locally maximal hyperbolic set for a diffeomorphism $f$ with $f|_\Lambda$ topologically transitive, and let $\mathcal R$ be a Markov partition of $\Lambda$ with transition matrix $A$, as in *Hyperbolic Dynamics and Anosov Systems*. Then there is a continuous surjection $\pi:\Sigma_A\to\Lambda$ with $\pi\circ\sigma=f\circ\pi$ which is a sliding block code and is finite-to-one, one-to-one on a residual set, and injective on the periodic points; consequently $\Lambda$ is a factor of the SFT $\Sigma_A$, the topological entropy is $h_{\mathrm{top}}(f|_\Lambda)=\log\rho(A)$, and the periodic orbits of $f$ in $\Lambda$ are counted by $\operatorname{tr}(A^n)$. The coding is the bridge between the analysis of the hyperbolic system and the finite combinatorics of the transition matrix, and the horseshoe of *Chaos and Strange Attractors* is the special case in which $\pi$ is already a conjugacy onto the full two-shift.
+**Theorem (coding of a hyperbolic set).** Let $\Lambda$ be a locally maximal hyperbolic set for a diffeomorphism $f$ with $f|_\Lambda$ topologically transitive, and let $\mathcal R$ be a Markov partition of $\Lambda$ with transition matrix $A$, as in *Hyperbolic Dynamics and Anosov Systems*. Then there is a continuous surjection $\pi:\Sigma_A\to\Lambda$ with $\pi\circ\sigma=f\circ\pi$ which is a sliding block code and is finite-to-one, one-to-one on a residual set, and injective on the periodic points; consequently $\Lambda$ is a factor of the SFT $\Sigma_A$, the topological entropy is $h^{\mathrm{tpl}}(f|_\Lambda)=\log\rho(A)$, and the periodic orbits of $f$ in $\Lambda$ are counted by $\operatorname{tr}(A^n)$. The coding is the bridge between the analysis of the hyperbolic system and the finite combinatorics of the transition matrix, and the horseshoe of *Chaos and Strange Attractors* is the special case in which $\pi$ is already a conjugacy onto the full two-shift.
 
 ### Classification of the Shifts of Finite Type
 
@@ -151,9 +151,9 @@ and a **block code** is the one-sided analogue. A **conjugacy** is a bijective s
 
 ## Summary
 
-The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h_{\mathrm{top}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h_{\mathrm{top}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h_{\mathrm{top}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\zeta=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\varphi$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
+The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h^{\mathrm{tpl}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h^{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h^{\mathrm{tpl}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\zeta=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\varphi$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
 
-A **sliding block code** is a shift-commuting map given by a finite block rule, and the theorem of Curtis–Hedlund–Lyndon states that these are exactly the continuous shift-commuting maps; a **Markov partition** of a locally maximal hyperbolic set produces a sliding block code from an SFT onto the set which is finite-to-one and injective on the periodic points, giving $h_{\mathrm{top}}=\log\rho(A)$ and the periodic orbit counts. The classification of the shifts of finite type is by **strong shift equivalence**, with **shift equivalence** and the **dimension group** as a decidable invariant; conjugacy implies shift equivalence by Williams and Bowen–Franks, and the converse fails in general, so the shift equivalence conjecture is false. The **complexity** $p(n)$ of a subshift satisfies the Morse–Hedlund theorem — $p(n)\le n$ forces eventual periodicity — and the **Sturmian** words with $p(n)=n+1$ are the minimal zero-entropy codings of irrational rotations; the **substitution** subshifts, the $\beta$-shifts and the **horseshoe** and solenoid models are the standard examples, the arithmetic of the codings belonging.
+A **sliding block code** is a shift-commuting map given by a finite block rule, and the theorem of Curtis–Hedlund–Lyndon states that these are exactly the continuous shift-commuting maps; a **Markov partition** of a locally maximal hyperbolic set produces a sliding block code from an SFT onto the set which is finite-to-one and injective on the periodic points, giving $h^{\mathrm{tpl}}=\log\rho(A)$ and the periodic orbit counts. The classification of the shifts of finite type is by **strong shift equivalence**, with **shift equivalence** and the **dimension group** as a decidable invariant; conjugacy implies shift equivalence by Williams and Bowen–Franks, and the converse fails in general, so the shift equivalence conjecture is false. The **complexity** $p(n)$ of a subshift satisfies the Morse–Hedlund theorem — $p(n)\le n$ forces eventual periodicity — and the **Sturmian** words with $p(n)=n+1$ are the minimal zero-entropy codings of irrational rotations; the **substitution** subshifts, the $\beta$-shifts and the **horseshoe** and solenoid models are the standard examples, the arithmetic of the codings belonging.
 
 ## Summary of Notation
 

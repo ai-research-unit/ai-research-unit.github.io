@@ -227,7 +227,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 | $\mathrm{ind}\,\mathcal{D}_+$ | Index of the Dirac operator; equals $Ϙ$ |
 | $\mathrm{SF}(\mathcal{D})$ | Spectral flow; equals a charge difference |
 | $Z(\theta)=\sum_Ϙ \exp(i\theta Ϙ)Z_Ϙ$ | $\theta$-dependent partition function |
-| $\chi_{\text{top}}=\frac{1}{V}\partial^2/\partial \theta^2\log Z\vert_{\theta=0}$ | Topological susceptibility; the width of the sector distribution |
+| $\chi^{\mathrm{tpl}}=\frac{1}{V}\partial^2/\partial \theta^2\log Z\vert_{\theta=0}$ | Topological susceptibility; the width of the sector distribution |
 
 ## Further Reading
 

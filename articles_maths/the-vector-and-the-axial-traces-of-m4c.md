@@ -16,7 +16,7 @@ Hence $\operatorname{tr}\mathsf{M}_4(ib)\ne i\operatorname{tr}\mathsf{M}_4(b)$ i
 
 This article computes the two traces, proves the identity
 $$
-\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5},
+\operatorname{Tr}^{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5},
 $$
 identifies the two coordinates of the two-sided basis that carry them, and states the vanishing on the odd sector. The five frame cells $iL_{e_t}R_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y}$ and the pseudoscalar cell $-iL_{e_t}R_{e_z}$, and the $\mathsf{M}_4$ map, are those of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *Matrix Representations Conventions*; the two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*.
 
@@ -86,13 +86,13 @@ The vector trace is real; the axial trace is purely imaginary. Together they are
 
 **The regular trace.** The left regular representation of $\mathbb{B}$ on itself has trace
 $$
-\operatorname{Tr}_{\mathrm{reg}}(b)=4b_0 .
+\operatorname{Tr}^{\mathrm{reg}}(b)=4b_0 .
 $$
-This is the complex-linear trace: $\operatorname{Tr}_{\mathrm{reg}}(ib)=i\operatorname{Tr}_{\mathrm{reg}}(b)$.
+This is the complex-linear trace: $\operatorname{Tr}^{\mathrm{reg}}(ib)=i\operatorname{Tr}^{\mathrm{reg}}(b)$.
 
 **Theorem (the trace identity).** For every $b\in\mathbb{B}$,
 $$
-\boxed{\;\operatorname{Tr}_{\mathrm{reg}}(b)
+\boxed{\;\operatorname{Tr}^{\mathrm{reg}}(b)
 =\operatorname{Tr}_{\Delta}(b)+\operatorname{Tr}_{\Delta,5}(b)\; } .
 $$
 
@@ -104,7 +104,7 @@ $$
 $$
 \operatorname{Tr}_{\Delta}(i)=0,\qquad
 \operatorname{Tr}_{\Delta,5}(i)=4i,\qquad
-\operatorname{Tr}_{\mathrm{reg}}(i)=4i .
+\operatorname{Tr}^{\mathrm{reg}}(i)=4i .
 $$
 The vector trace does not see the central imaginary; the axial trace sees only the central imaginary. This is the sharpest illustration of the pair.
 
@@ -154,7 +154,7 @@ $$
 \operatorname{tr}\mathsf{M}_4(b)=4c_{tt},\qquad
 \operatorname{tr}\bigl((-iL_{e_t}R_{e_z})\mathsf{M}_4(b)\bigr)=4i\,c_{tz}.
 $$
-The identity $\operatorname{Tr}_{\mathrm{reg}}=4(c_{tt}+ic_{tz})$ is the coordinate form of the trace identity.
+The identity $\operatorname{Tr}^{\mathrm{reg}}=4(c_{tt}+ic_{tz})$ is the coordinate form of the trace identity.
 
 ## The Odd Sector
 
@@ -168,7 +168,7 @@ $$
 
 **The reading.** The odd sector is invisible to both traces. The vector and axial traces see the even part only, and within the even part they see only the scalar and the pseudoscalar. This is why a trace cannot detect the odd generator: the odd generator is not an element of the biquaternion algebra but an operation on the module, and its contribution to a closed trace vanishes.
 
-**The anomaly.** The chiral anomaly is a statement about the pair $(\operatorname{Tr}_{\Delta},\operatorname{Tr}_{\Delta,5})$, not about $\operatorname{Tr}_{\mathrm{reg}}$. The regular trace is their sum; using it as the axial trace adds the vector part $4\operatorname{Re}b_0$ to the axial part $4i\operatorname{Im}b_0$. The anomaly computation needs the two separately, and the odd operators have zero trace in either. The replacement of the Clifford layer by the biquaternion calculus therefore preserves the trace pair; it does not preserve a single regular trace as a substitute for the pair.
+**The anomaly.** The chiral anomaly is a statement about the pair $(\operatorname{Tr}_{\Delta},\operatorname{Tr}_{\Delta,5})$, not about $\operatorname{Tr}^{\mathrm{reg}}$. The regular trace is their sum; using it as the axial trace adds the vector part $4\operatorname{Re}b_0$ to the axial part $4i\operatorname{Im}b_0$. The anomaly computation needs the two separately, and the odd operators have zero trace in either. The replacement of the Clifford layer by the biquaternion calculus therefore preserves the trace pair; it does not preserve a single regular trace as a substitute for the pair.
 
 ## The Sign Conventions
 
@@ -178,7 +178,7 @@ $$
 (-iL_{e_t}R_{e_z})^2=I,\qquad
 P_{\pm}=\tfrac12(I\mp iL_{e_t}R_{e_z}),
 $$
-and the embedding $\mathsf{M}_4(i)=L_{e_t}R_{e_z}$. The opposite sign of $L_{e_t}R_{e_z}$ exchanges $P_+$ and $P_-$ and changes the sign of the axial trace; the identity $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5}$ is invariant under the exchange, because both the axial trace and the chiral difference change sign. The absolute statement is the pair, not the sign of either member.
+and the embedding $\mathsf{M}_4(i)=L_{e_t}R_{e_z}$. The opposite sign of $L_{e_t}R_{e_z}$ exchanges $P_+$ and $P_-$ and changes the sign of the axial trace; the identity $\operatorname{Tr}^{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,5}$ is invariant under the exchange, because both the axial trace and the chiral difference change sign. The absolute statement is the pair, not the sign of either member.
 
 **The trace of the pseudoscalar cell.** Its trace is zero:
 $$
@@ -200,7 +200,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 |---|---|---|
 | $\operatorname{Tr}_{\Delta}(b)$ | $4a_0$ | $4c_{tt}$ |
 | $\operatorname{Tr}_{\Delta,5}(b)$ | $4ia'_0$ | $4i\,c_{tz}$ |
-| $\operatorname{Tr}_{\mathrm{reg}}(b)$ | $4(a_0+ia'_0)$ | $4(c_{tt}+ic_{tz})$ |
+| $\operatorname{Tr}^{\mathrm{reg}}(b)$ | $4(a_0+ia'_0)$ | $4(c_{tt}+ic_{tz})$ |
 | $\operatorname{tr}(P_+\mathsf{M}_4(b))$ | $2b_0$ | — |
 | $\operatorname{tr}(P_-\mathsf{M}_4(b))$ | $2\bar b_0$ | — |
 | odd $X$ | $0,0$ | — |
@@ -215,7 +215,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 | $P_\pm$ | the chiral projectors $\tfrac12(I\mp iL_{e_t}R_{e_z})$ |
 | $\operatorname{Tr}_{\Delta}$ | the vector trace $\operatorname{tr}\mathsf{M}_4(\cdot)$ |
 | $\operatorname{Tr}_{\Delta,5}$ | the axial trace $\operatorname{tr}((-iL_{e_t}R_{e_z})\mathsf{M}_4(\cdot))$ |
-| $\operatorname{Tr}_{\mathrm{reg}}$ | the regular trace $4b_0$ |
+| $\operatorname{Tr}^{\mathrm{reg}}$ | the regular trace $4b_0$ |
 | $c_{\mu\nu}$ | the coordinates in the two-sided basis |
 
 ## Further Reading

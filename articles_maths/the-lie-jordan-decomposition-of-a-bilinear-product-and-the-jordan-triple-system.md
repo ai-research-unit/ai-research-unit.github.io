@@ -10,7 +10,7 @@ $$
 c_{\mu\nu\lambda} = \sum_\rho\bigl(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho}\bigr)k_\rho,
 $$
 
-where $L_{a}R_{b}\psi=a\psi b$ are the cells, $\mathsf T_\mu=L_{a_\mu}R_{b_\mu}$ is the reference cell of the $\mu$-th generator, with $(a_\mu,b_\mu)=(e_t,e_x),(e_x,e_y),(e_y,e_y),(e_z,e_y)$, and $\mathsf T_5=L_{e_t}R_{e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ are the traces of four and five reference cells, the unit phases of the generators cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled generators $iL_{e_\mu}R_{e_{\nu(\mu)}} = i\,\mathsf T_\mu$ and $-iR_{e_z}=-i\,\mathsf T_5$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. The composition
+where $L_{a}R_{b}\psi=a\psi b$ are the cells, $L_{e_\mu}R_{e_{\nu(\mu)}}$ is the reference cell of the $\mu$-th coordinate, with $\nu(t)=x$ and $\nu(k)=y$ for $k=1,2,3$, and $L_{e_t}R_{\vec e_z}$ is the chirality cell, so that $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{e_{\nu(\mu)}}L_{e_\nu}R_{e_{\nu(\nu)}}L_{e_\lambda}R_{e_{\nu(\lambda)}}L_{e_\rho}R_{e_{\nu(\rho)}})$ and $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{e_{\nu(\mu)}}L_{e_\nu}R_{e_{\nu(\nu)}}L_{e_\lambda}R_{e_{\nu(\lambda)}})$ are the traces of four and five reference cells, the unit phases of the cells cancelling in the trace, and $k_\mu$ is a neutral vector. The reference cells are the bare cells, of square $\pm1$; the physics articles of the relativistic quantum series use the scaled cells $iL_{e_\mu}R_{e_{\nu(\mu)}}$ and $-iL_{e_t}R_{\vec e_z}$, and every statement below is a statement about the bare cells, in which the $i$'s are absent by construction. No single letter stands for a reference cell: the cell is written as its two multipliers. The composition
 
 $$
 (G \star H)_\lambda = \sum_{\mu,\nu}G_\mu\, c_{\mu\lambda\nu} H_\nu
@@ -95,7 +95,7 @@ $$
 = \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}\;}.
 $$
 
-Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\bar\Psi \mathsf T_\mu\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
+Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\bar\Psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
 
 ### The Block Structure
 
@@ -140,9 +140,9 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $G, H, K$ | Elements of $V$ |
 | $G \star H$ | The composition, $(G\star H)_\lambda = \sum_{\mu,\nu}G_\mu c_{\mu\lambda\nu}H_\nu$ |
 | $c_{\mu\nu\lambda} = \sum_\rho(t_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants |
-| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Symmetric trace of four reference cells |
-| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\mathsf T_5 \mathsf T_\mu \mathsf T_\nu \mathsf T_\lambda \mathsf T_\rho)$ | Totally antisymmetric symbol, the trace of five reference cells |
-| $\mathsf T_\mu = L_{a_\mu}R_{b_\mu}$, $\mathsf T_5=L_{e_t}R_{e_z}$ | The reference cells of the four generators and of the chirality, in the units $e_t,e_x,e_y,e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$ |
+| $t_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_\mu}R_{e_{\nu(\mu)}}L_{e_\nu}R_{e_{\nu(\nu)}}L_{e_\lambda}R_{e_{\nu(\lambda)}}L_{e_\rho}R_{e_{\nu(\rho)}})$ | Symmetric trace of four reference cells |
+| $\varepsilon_{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(L_{e_t}R_{\vec e_z}L_{e_\mu}R_{e_{\nu(\mu)}}L_{e_\nu}R_{e_{\nu(\nu)}}L_{e_\lambda}R_{e_{\nu(\lambda)}})$ | Totally antisymmetric symbol, the trace of five reference cells |
+| $L_{e_\mu}R_{e_{\nu(\mu)}}$, $L_{e_t}R_{\vec e_z}$ | The reference cells of the four coordinates and of the chirality, in the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}$; $L_{a}R_{b}\psi=a\psi b$, and $\nu(t)=x$, $\nu(k)=y$ |
 | $k_\mu$ | Neutral vector, the unit of the composition |
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |

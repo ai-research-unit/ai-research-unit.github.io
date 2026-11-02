@@ -29,7 +29,7 @@ The two languages of this article — modules and representations — are theref
 
 ### The regular representation
 
-The **left regular representation** of $A$ is the action on $A$ by left multiplication, $\rho_{\mathrm{reg}}(a)b=ab$. It has dimension $\dim_F A$ when $A$ is finite-dimensional, and it is faithful, because $\rho_{\mathrm{reg}}(a)=\rho_{\mathrm{reg}}(a')$ implies $a=a'$ on evaluating at $1_A$. It is the representation on the regular module ${}_A A$, and its endomorphism ring is $A^{\mathrm{opp}}$ by the theorem on the regular module of *Modules over an Algebra*. Every representation is a quotient of a direct sum of copies of the regular representation, since every module is a quotient of a free module.
+The **left regular representation** of $A$ is the action on $A$ by left multiplication, $\rho^{\mathrm{reg}}(a)b=ab$. It has dimension $\dim_F A$ when $A$ is finite-dimensional, and it is faithful, because $\rho^{\mathrm{reg}}(a)=\rho^{\mathrm{reg}}(a')$ implies $a=a'$ on evaluating at $1_A$. It is the representation on the regular module ${}_A A$, and its endomorphism ring is $A^{\mathrm{opp}}$ by the theorem on the regular module of *Modules over an Algebra*. Every representation is a quotient of a direct sum of copies of the regular representation, since every module is a quotient of a free module.
 
 ### Basic operations
 
@@ -240,7 +240,7 @@ The structure of group algebras is the principal specialisation: over a field wh
 | $A$ | unital associative $F$-algebra |
 | $V$, $W$ | representations, i.e. left $A$-modules |
 | $\rho : A \to \operatorname{End}_F(V)$ | a representation |
-| $\rho_{\mathrm{reg}}$ | left regular representation of $A$ |
+| $\rho^{\mathrm{reg}}$ | left regular representation of $A$ |
 | $\operatorname{Rep}_F(A)\cong\operatorname{Mod}(A)$ | equivalence of representations with modules |
 | $\operatorname{End}_A(V)=\rho(A)'$ | intertwining operators, the commutant |
 | $\operatorname{Aut}_A(V)$ | invertible intertwining operators |

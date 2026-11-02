@@ -97,7 +97,7 @@ For the Hénon map, $\lambda(H_{a,c})=2$.
 
 **Theorem (the entropy).** The topological entropy of $H_{a,c}$ is
 $$
-h_{\mathrm{top}}(H_{a,c})=\log 2.
+h^{\mathrm{tpl}}(H_{a,c})=\log 2.
 $$
 
 *Proof.* For a polynomial automorphism of $\mathbb{C}^2$ the topological entropy is the logarithm of the dynamical degree, by the theorem of Bedford–Lyubich–Smillie; the dynamical degree is $2$ by the degree growth. The entropy is independent of $a$ and $c$.

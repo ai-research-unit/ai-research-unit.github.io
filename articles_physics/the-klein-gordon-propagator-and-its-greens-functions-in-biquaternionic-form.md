@@ -220,7 +220,7 @@ $$
 so that, writing $-x^2={t'}^2-r^2$ for the squared invariant (positive inside the future cone),
 
 $$
-G_R^{\,\mathrm{reg}}(t',r)
+G_R^{\,\mathrm{rgs}}(t',r)
 =-\theta(t')\,\frac{\mu}{4\pi\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right),
 \qquad
 -x^2={t'}^2-r^2>0 .
@@ -242,7 +242,7 @@ in natural units, with the Bessel term restricted to the interior of the cone by
 Three checks were carried out on this closed form.
 
 1. **Massless limit.** As $\mu\to0$ the Bessel term vanishes and only $\frac{\theta(t')}{2\pi}\delta(x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(t'-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(t'-R/c)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $\mu=10^{-3}$.
-2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-\mu^2)G_R^{\mathrm{reg}}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {t'}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-\mu^2$ by finite differences at six random interior points with $t'\in[2.5,4]$, $r/t'\in[0.2,0.85]$ and $\mu\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
+2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-\mu^2)G_R^{\mathrm{rgs}}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {t'}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-\mu^2$ by finite differences at six random interior points with $t'\in[2.5,4]$, $r/t'\in[0.2,0.85]$ and $\mu\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
 3. **The Bessel function.** The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.
 
 ### The light-cone Jacobian

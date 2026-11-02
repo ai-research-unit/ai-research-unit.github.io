@@ -59,10 +59,10 @@ This is the fundamental structural fact about representations of $\mathbb{D}'$: 
 The **regular representation** of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{D}'.
+\rho^{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{D}'.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
+This is the representation $\rho^{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho^{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
 
 ### The Trivial Representation
 
@@ -183,7 +183,7 @@ $$
 R(\mathbb{D}') \cong \mathbb{Z} \oplus \mathbb{Z},
 $$
 
-with generators $[\rho_{\mathrm{triv}}]$ and $[\rho_{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.
+with generators $[\rho_{\mathrm{triv}}]$ and $[\rho^{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.
 
 ### Ring Structure
 
@@ -241,7 +241,7 @@ $$
 
 **The dual of the trivial representation is the trivial representation.** $\rho_{\mathrm{triv}}^* \cong \rho_{\mathrm{triv}}$.
 
-**The dual of the regular representation is the regular representation.** $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.
+**The dual of the regular representation is the regular representation.** $\rho^{\mathrm{reg}}{}^* \cong \rho^{\mathrm{reg}}$.
 
 So duality acts trivially on the set of indecomposable representations.
 
@@ -294,7 +294,7 @@ The representations of $\mathbb{D}'$ form an abelian category $\mathrm{Rep}(\mat
 The fundamental non-split extension is
 
 $$
-0 \to \rho_{\mathrm{triv}} \to \rho_{\mathrm{reg}} \to \rho_{\mathrm{triv}} \to 0,
+0 \to \rho_{\mathrm{triv}} \to \rho^{\mathrm{reg}} \to \rho_{\mathrm{triv}} \to 0,
 $$
 
 where the first map is the inclusion of $\ker E$ and the second is the quotient by $\operatorname{im} E$. This sequence does not split, because the regular representation is not the direct sum of two copies of the trivial representation.
@@ -346,7 +346,7 @@ The article also records the representation ring $R(\mathbb{D}')$, the dual or c
 | $Q = q + \varepsilon q'$ | General dual number |
 | $V$ | Representation space |
 | $E = \rho(\varepsilon)$ | Square-zero endomorphism |
-| $\rho_{\mathrm{reg}}$ | Regular representation |
+| $\rho^{\mathrm{reg}}$ | Regular representation |
 | $\rho_{\mathrm{triv}}$ | Trivial representation |
 | $\operatorname{End}_{\mathbb{D}'}(V)$ | Endomorphism ring |
 | $\operatorname{Hom}_{\mathbb{D}'}(V, W)$ | Space of homomorphisms |

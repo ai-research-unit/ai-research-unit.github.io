@@ -59,7 +59,7 @@ where $M_{ij}$ is the determinant of the $(n-1)\times(n-1)$ matrix obtained by d
 
 *Proof.* (i) In the Leibniz sum only the identity permutation survives for a triangular matrix; for the block case expand successively or note the same. (ii) is alternation. (iii) Multilinearity and (ii). (iv) The determinant is an alternating polynomial in the $x_i$ of degree $\binom{n}{2}$; it vanishes when $x_i=x_j$, so it is divisible by $\prod_{i<j}(x_j-x_i)$; both sides have the same degree and the coefficient of $\prod x_j^{j-1}$ is $1$.
 
-**Definition.** The **adjugate** $A^{\mathrm{adj}}$ has entries $(-1)^{i+j}M_{ji}$, and $A A^{\mathrm{adj}}=(\det A)I$. Hence over a commutative ring, $A$ is invertible if and only if $\det A$ is a unit, with $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$; over a field this is the criterion $\det A \neq 0$.
+**Definition.** The **adjugate** $A^{\mathrm{adg}}$ has entries $(-1)^{i+j}M_{ji}$, and $A A^{\mathrm{adg}}=(\det A)I$. Hence over a commutative ring, $A$ is invertible if and only if $\det A$ is a unit, with $A^{-1}=(\det A)^{-1}A^{\mathrm{adg}}$; over a field this is the criterion $\det A \neq 0$.
 
 ### Cramer's Rule
 
@@ -71,7 +71,7 @@ $$
 
 where $A_i$ is the matrix obtained from $A$ by replacing column $i$ by $b$.
 
-*Proof.* From $AA^{\mathrm{adj}}=(\det A)I$ one gets $x=A^{-1}b=(\det A)^{-1}A^{\mathrm{adj}}b$. The $i$-th coordinate of $A^{\mathrm{adj}}b$ is $\sum_j(-1)^{i+j}M_{ji}b_j$, and this is exactly the Laplace expansion along the $i$-th column of the matrix $A_i$, whose $i$-th column is $b$ and whose other columns agree with those of $A$.
+*Proof.* From $AA^{\mathrm{adg}}=(\det A)I$ one gets $x=A^{-1}b=(\det A)^{-1}A^{\mathrm{adg}}b$. The $i$-th coordinate of $A^{\mathrm{adg}}b$ is $\sum_j(-1)^{i+j}M_{ji}b_j$, and this is exactly the Laplace expansion along the $i$-th column of the matrix $A_i$, whose $i$-th column is $b$ and whose other columns agree with those of $A$.
 
 Cramer's rule is an existence and uniqueness statement and a formal solution formula; it is not an efficient algorithm, since it evaluates $n+1$ determinants, and Gaussian elimination is used in practice.
 
@@ -199,7 +199,7 @@ This is the integral form of the generation theorem: the Euclidean algorithm con
 
 **Theorem.** Let $R$ be a commutative ring. The Leibniz formula defines a function $\det:M_n(R)\to R$, a polynomial with integer coefficients in the entries, satisfying $\det(AB)=\det A \det B$, $\det I=1$, and $\det A \in R^{\times}$ if and only if $A \in \operatorname{GL}_n(R)$.
 
-*Proof.* The Leibniz formula is a finite integer polynomial, so it makes sense over any commutative ring; multiplicativity is proved as over a field, since the argument uses only the uniqueness of the normalised alternating multilinear form, which holds formally over $R$. The invertibility criterion is the adjugate identity $AA^{\mathrm{adj}}=(\det A)I$ over $R$: if $\det A$ is a unit then $(\det A)^{-1}A^{\mathrm{adj}}$ is an inverse, and the converse follows by taking determinants.
+*Proof.* The Leibniz formula is a finite integer polynomial, so it makes sense over any commutative ring; multiplicativity is proved as over a field, since the argument uses only the uniqueness of the normalised alternating multilinear form, which holds formally over $R$. The invertibility criterion is the adjugate identity $AA^{\mathrm{adg}}=(\det A)I$ over $R$: if $\det A$ is a unit then $(\det A)^{-1}A^{\mathrm{adg}}$ is an inverse, and the converse follows by taking determinants.
 
 **Proposition (naturality).** For a ring homomorphism $\varphi:R \to S$ and $A \in M_n(R)$ one has $\det(\varphi(A))=\varphi(\det A)$, where $\varphi(A)$ has entries $\varphi(a_{ij})$. Consequently $\varphi$ restricts to a group homomorphism $\operatorname{GL}_n(R)\to\operatorname{GL}_n(S)$.
 
@@ -209,7 +209,7 @@ Naturality is what makes the determinant available over $\mathbb{Z}$ and then tr
 
 ## Summary
 
-The determinant is the unique normalised alternating multilinear form on $V^n$, given in coordinates by the Leibniz sum over permutations, and its value on the columns of a matrix defines $\det A$ and, for an operator, $\det T$ independent of any basis. It is multiplicative, $\det(AB)=\det A\det B$, which is exactly the statement that $\det$ is a group homomorphism $\operatorname{GL}(V)\to F^{\times}$; it can be computed by Laplace expansion along a row, it is the product of the diagonal entries for a triangular matrix, and it vanishes exactly when the columns are linearly dependent. The adjugate identity $AA^{\mathrm{adj}}=(\det A)I$ makes the determinant the criterion of invertibility over any commutative ring, and over $\mathbb{R}$ the absolute value of the determinant is the volume of the parallelepiped spanned by the columns, its sign recording orientation.
+The determinant is the unique normalised alternating multilinear form on $V^n$, given in coordinates by the Leibniz sum over permutations, and its value on the columns of a matrix defines $\det A$ and, for an operator, $\det T$ independent of any basis. It is multiplicative, $\det(AB)=\det A\det B$, which is exactly the statement that $\det$ is a group homomorphism $\operatorname{GL}(V)\to F^{\times}$; it can be computed by Laplace expansion along a row, it is the product of the diagonal entries for a triangular matrix, and it vanishes exactly when the columns are linearly dependent. The adjugate identity $AA^{\mathrm{adg}}=(\det A)I$ makes the determinant the criterion of invertibility over any commutative ring, and over $\mathbb{R}$ the absolute value of the determinant is the volume of the parallelepiped spanned by the columns, its sign recording orientation.
 
 The special linear group $\operatorname{SL}(V)=\ker\det$ is normal in $\operatorname{GL}(V)$, the quotient is $F^{\times}$, and its centre is the group $\mu_n$ of $n$-th roots of unity in $F$. For $n \ge 2$ over any field it is generated by the elementary matrices, which are transvections, and it coincides with the commutator subgroup of $\operatorname{GL}_n(F)$ except in the two exceptional cases $n=2$, $F=\mathbb{F}_2$, where $\operatorname{GL}_2(\mathbb{F}_2)=S_3$ and the commutator subgroup is $A_3$, and $n=2$, $F=\mathbb{F}_3$, where the commutator subgroup is $Q_8$. The group $\operatorname{SL}_n(F)$ is perfect except for $n=2$ with $F=\mathbb{F}_2$ or $\mathbb{F}_3$, the exceptions having commutator subgroups of orders $3$ and $8$; the projective quotients $\operatorname{PSL}_n(F)$ are simple outside the two exceptional cases.
 
@@ -225,7 +225,7 @@ The determinant is the unique invariant of a linear operator in the following se
 | $\det A$, $\det T$ | determinant of a matrix, of an operator |
 | $\operatorname{sgn}(\sigma)$ | sign of a permutation |
 | $S_n$ | symmetric group |
-| $A^{\mathrm{adj}}$ | adjugate, $AA^{\mathrm{adj}}=(\det A)I$ |
+| $A^{\mathrm{adg}}$ | adjugate, $AA^{\mathrm{adg}}=(\det A)I$ |
 | $M_{ij}$ | minor obtained by deleting row $i$ and column $j$ |
 | $V(x_1,\dots,x_n)$ | Vandermonde matrix, determinant $\prod_{i<j}(x_j-x_i)$ |
 | $\operatorname{GL}(V)$, $\operatorname{GL}_n(F)$ | general linear group |

@@ -70,11 +70,12 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 **No three-letter token in the caret carries a capital.** The rule is total, and it reaches three families. A label, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$. An **operator name** written in the caret with its argument, $\gamma_n^{\operatorname{sym}}$ on a divided-power structure, and the fixed field $K^{\operatorname{gal}(K/F)}$ — here the caret carries the acting group as $K^{\sigma}$ carries an automorphism, so the word does not name a variant of $K$ and stays out of the table below. And the **twelve codes** of the algebraic structures, $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$, $\mathrm{spa}$, $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{sqs}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$, whose three letters are the initials of general, symmetric, antisymmetric, plain, quaternionic, algebra and sesqualgebra, fixed in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. A code is written in the caret, on the object and on the multiplication alike: $V^{\mathrm{gpa}}=V^{\mathrm{spa}}+V^{\mathrm{apa}}$, $V^{\mathrm{gqs}}(\tilde Q_1,\tilde Q_2)$, $\tilde Q_1\diamond^{\mathrm{aqa}}\tilde Q_2$. The low slot of a code is a defect, as a capital in the caret is. A capital in any of these three positions is a defect.
 
-**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $\chi_{\mathrm{reg}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Thirteen qualifiers that already named the same object on the caret were written low as well, and they are now on the caret: $\mathrm{ret}$, $\mathrm{odd}$, $\mathrm{sgn}$, $\mathrm{opp}$, $\mathrm{fix}$, $\mathrm{lin}$, $\mathrm{nil}$, $\mathrm{wkb}$, $\mathrm{rep}$, $\mathrm{exp}$, $\mathrm{pol}$, $\mathrm{new}$, $\mathrm{imp}$. Six keep the low slot because their two heights would spell two different words: $\mathrm{reg}$ regular and regularised, $\mathrm{top}$ topological and top, $\mathrm{per}$ perimeter and periodic, $\mathrm{def}$ defining and defective, $\mathrm{orb}$ orbifold and orbital, $\mathrm{adj}$ adjoint and adjugate.
+**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $E_{\mathrm{vac}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Thirteen qualifiers that already named the same object on the caret were written low as well, and they are now on the caret: $\mathrm{ret}$, $\mathrm{odd}$, $\mathrm{sgn}$, $\mathrm{opp}$, $\mathrm{fix}$, $\mathrm{lin}$, $\mathrm{nil}$, $\mathrm{wkb}$, $\mathrm{rep}$, $\mathrm{exp}$, $\mathrm{pol}$, $\mathrm{new}$, $\mathrm{imp}$. Six more carried two English words on one spelling, and a height cannot separate two words: the rarer reading of each took a new code, and all six then rose. The codes are $\mathrm{rgs}$ for regularised against $\mathrm{reg}$ regular, $\mathrm{tpl}$ for topological against $\mathrm{top}$ the top degree, $\mathrm{prm}$ for perimeter against $\mathrm{per}$ periodic, $\mathrm{dfc}$ for defective against $\mathrm{def}$ defining, $\mathrm{obf}$ for orbifold against $\mathrm{orb}$ orbital, and $\mathrm{adg}$ for adjugate against $\mathrm{adj}$ adjoint.
 
 | Label | Names |
 |---|---|
-| $\mathrm{adj}$ | the adjugate matrix |
+| $\mathrm{adg}$ | the adjugate matrix, $A^{\mathrm{adg}}$, the reading that shared $\mathrm{adj}$ before the code was made |
+| $\mathrm{adj}$ | the adjoint spin of a representation |
 | $\mathrm{aff}$ | the affine Weyl group of a root system |
 | $\mathrm{alg}$ | the algebraic left multiplication |
 | $\mathrm{amp}$ | the amplitude of a forced solution |
@@ -87,7 +88,8 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{cop}$ | the coproduct of a Hopf algebra |
 | $\mathrm{cov}$ | the universal cover here, the covariant fundamental solution there |
 | $\mathrm{cts}$ | the continuous dual |
-| $\mathrm{def}$ | the deformation stratum |
+| $\mathrm{def}$ | the defining spin; the deformation stratum |
+| $\mathrm{dfc}$ | the defective part, $\Sigma_{10}^{\mathrm{dfc}}$ |
 | $\mathrm{dif}$ | the difference, or antisymmetrised, product |
 | $\mathrm{epr}$ | the value of the EPR steering parameter |
 | $\mathrm{est}$ | an unbiased estimator |
@@ -118,34 +120,38 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{mot}$ | the motional electric field |
 | $\mathrm{new}$ | the new subspace |
 | $\mathrm{nil}$ | the nilpotent direction |
+| $\mathrm{obf}$ | the orbifold Euler characteristic, $\chi^{\mathrm{obf}}$ |
 | $\mathrm{obs}$ | the observed frequency |
 | $\mathrm{odd}$ | the odd part of a graded algebra |
 | $\mathrm{old}$ | the old subspace |
 | $\mathrm{opp}$ | the opposite algebra |
-| $\mathrm{orb}$ | the orbifold group here, the orbital part there |
+| $\mathrm{orb}$ | the orbital generators |
 | $\mathrm{out}$ | the outgoing solution |
-| $\mathrm{per}$ | the periodic cyclic complex |
+| $\mathrm{per}$ | the periodic cyclic complex; the periodic integration domain |
 | $\mathrm{pol}$ | the polarisation vector |
 | $\mathrm{pot}$ | the potential energy |
 | $\mathrm{pre}$ | the presheaf |
+| $\mathrm{prm}$ | the perimeter coefficient, $\mu^{\mathrm{prm}}$ |
 | $\mathrm{red}$ | the reduced object |
-| $\mathrm{reg}$ | the regularised object |
+| $\mathrm{reg}$ | the regular representation, $\rho^{\mathrm{reg}}$, $\operatorname{Tr}^{\mathrm{reg}}$, $\chi^{\mathrm{reg}}$ |
 | $\mathrm{rel}$ | the relative transfer |
 | $\mathrm{rep}$ | the representing function |
 | $\mathrm{res}$ | the residual part; the residue field |
 | $\mathrm{ret}$ | the retarded field |
 | $\mathrm{rev}$ | the reversed process |
+| $\mathrm{rgs}$ | the regularised kernel, $G_R^{\mathrm{rgs}}$ |
 | $\mathrm{set}$ | the underlying set of a structure |
 | $\mathrm{sgn}$ | the sign |
 | $\mathrm{src}$ | the source point of a short-time kernel |
 | $\mathrm{str}$ | the structure group |
 | $\mathrm{sub}$ | the submultiplicative seminorm |
 | $\mathrm{sym}$ | the symmetrised form; on a divided-power structure, the symmetric one |
-| $\mathrm{top}$ | the top degree |
+| $\mathrm{top}$ | the top exterior power |
 | $\mathrm{tot}$ | the total tensor |
+| $\mathrm{tpl}$ | the topological entropy and susceptibility, $h^{\mathrm{tpl}}$ |
 | $\mathrm{wkb}$ | the WKB approximation |
 
-**A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and §*The Subscripts* rules on the low slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot either: $\mathrm{orb}$ and $\mathrm{cov}$ name one object in the mathematical corpus and another in the physical one, $\mathrm{res}$ already names two within the mathematics, the residual part and the residue field, and the article that writes a label says which object it names.
+**A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and §*The Subscripts* rules on the low slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.
 
 ## The Subscripts
 
@@ -303,6 +309,7 @@ The **category numbers** count the categories of the parts in menu order; the fr
 | $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ | The three-letter labels of a construction, a frame or a variant of an object; the full index is §*The Three-Letter Labels* |
 | $\operatorname{sym}$, $\operatorname{gal}$ | An operator name written in the caret with its argument, $\operatorname{sym}(P)$, $\gamma_n^{\operatorname{sym}}$, $K^{\operatorname{gal}(K/F)}$; lowercase, and read by its argument |
 | $^{\mathrm{gpa}}$ … $^{\mathrm{aqs}}$ | The twelve codes of the algebraic structures, the initials of general, symmetric, antisymmetric, plain, quaternionic, algebra and sesqualgebra; lowercase, and written in the caret, $V^{\mathrm{gqa}}=V^{\mathrm{sqa}}$, $\tilde Q_1\diamond^{\mathrm{aqa}}\tilde Q_2$ |
+| $^{\mathrm{rgs}}$, $^{\mathrm{tpl}}$, $^{\mathrm{prm}}$, $^{\mathrm{dfc}}$, $^{\mathrm{obf}}$, $^{\mathrm{adg}}$ | The six codes that separate two words sharing one spelling: regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint; a code is cheaper than a second meaning on the same letters |
 | $^{\mathrm{fn}}$ | A function from a domain into the algebra |
 | $^{\mathrm{spin}}$ | An element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |

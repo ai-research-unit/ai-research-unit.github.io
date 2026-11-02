@@ -14,15 +14,15 @@ $$
 $$
 A **(left) module** is a complex vector space $V$ with a multiplication $\mathbb{B}_{\mathrm{r}}\times V\to V$ that is bilinear and satisfies $1\cdot q=q$ and $(\breve Q_{1}\breve Q_{2})\cdot q=\breve Q_{1}\cdot(\breve Q_{2}\cdot q)$; a representation and a module are the same object, the map $\breve Q\cdot q=\rho(\breve Q)q$ passing from one to the other. A subspace $U\subset V$ is a **submodule** when $\breve Q\cdot U\subset U$ for every $\breve Q$. A module is **simple** when it has exactly two submodules, $0$ and $V$; **semisimple** when it is a direct sum of simple ones. The words **irreducible** and **completely reducible** say the same of a representation.
 
-**Definition (the regular representation).** The **regular representation** is $\rho_{\mathrm{reg}}(\breve Q)=L_{\breve Q}$, where $L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}$, acting on $\mathbb{B}_{\mathrm{r}}$ itself; the space is complex of dimension two on the basis $1,j$ and real of dimension four on the basis $1,i,j,ij$. The operator $L_{\breve Q}$ is read in coordinates in *Operators on the Reduced Biquaternions*.
+**Definition (the regular representation).** The **regular representation** is $\rho^{\mathrm{reg}}(\breve Q)=L_{\breve Q}$, where $L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}$, acting on $\mathbb{B}_{\mathrm{r}}$ itself; the space is complex of dimension two on the basis $1,j$ and real of dimension four on the basis $1,i,j,ij$. The operator $L_{\breve Q}$ is read in coordinates in *Operators on the Reduced Biquaternions*.
 
-**Theorem (the regular representation is faithful).** $L_{\breve Q}=0$ if and only if $\breve Q=0$, so $\rho_{\mathrm{reg}}$ is injective and its image is an algebra isomorphic to $\mathbb{B}_{\mathrm{r}}$,
+**Theorem (the regular representation is faithful).** $L_{\breve Q}=0$ if and only if $\breve Q=0$, so $\rho^{\mathrm{reg}}$ is injective and its image is an algebra isomorphic to $\mathbb{B}_{\mathrm{r}}$,
 $$
-\boxed{\;\rho_{\mathrm{reg}}(\mathbb{B}_{\mathrm{r}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{r}}\}\cong\mathbb{B}_{\mathrm{r}}\;},
+\boxed{\;\rho^{\mathrm{reg}}(\mathbb{B}_{\mathrm{r}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{r}}\}\cong\mathbb{B}_{\mathrm{r}}\;},
 $$
 a commutative two-dimensional subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})\cong M_{2}(\mathbb{C})$.
 
-*Proof.* $L_{\breve Q}(1)=\breve Q$, so $L_{\breve Q}=0$ forces $\breve Q=0$; and $\rho_{\mathrm{reg}}(\breve Q_{1}\breve Q_{2})=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{1}}L_{\breve Q_{2}}=\rho_{\mathrm{reg}}(\breve Q_{1})\rho_{\mathrm{reg}}(\breve Q_{2})$ is multiplicativity, because the multiplication is associative. The image is commutative because the multiplication is commutative, $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2}\breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}}$.
+*Proof.* $L_{\breve Q}(1)=\breve Q$, so $L_{\breve Q}=0$ forces $\breve Q=0$; and $\rho^{\mathrm{reg}}(\breve Q_{1}\breve Q_{2})=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{1}}L_{\breve Q_{2}}=\rho^{\mathrm{reg}}(\breve Q_{1})\rho^{\mathrm{reg}}(\breve Q_{2})$ is multiplicativity, because the multiplication is associative. The image is commutative because the multiplication is commutative, $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2}\breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}}$.
 
 ## The Algebra as a Module over Itself, over $\mathbb{C}$ and over $\mathbb{R}$
 
@@ -56,7 +56,7 @@ Each is a $\mathbb{C}$-algebra homomorphism into the one-dimensional algebra $\m
 
 **Theorem (complete reducibility).** Every module is a direct sum of copies of $\lambda_+$ and $\lambda_-$; the regular representation is
 $$
-\boxed{\;\rho_{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-\;},
+\boxed{\;\rho^{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-\;},
 $$
 each character with multiplicity one.
 
@@ -146,7 +146,7 @@ The reduced biquaternion algebra is commutative, associative and unital, and it 
 | Symbol | Meaning |
 |---|---|
 | $\rho$, $V$ | a representation and its module |
-| $L_{\breve Q}$, $\rho_{\mathrm{reg}}$ | left multiplication by $\breve Q$; the regular representation |
+| $L_{\breve Q}$, $\rho^{\mathrm{reg}}$ | left multiplication by $\breve Q$; the regular representation |
 | $\lambda_+,\lambda_-$ | the two characters, $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$, $\lambda_-=Q_{-}$ |
 | $\operatorname{Hom}_{\mathbb{B}_{\mathrm{r}}}(V,W)$ | the intertwiners between two modules |
 | $\mathbb{B}_{\mathrm{r}}^{\times}$ | the unit group, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |

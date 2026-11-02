@@ -211,7 +211,7 @@ Over a field, every matrix is equivalent by row and column operations to $\opera
 
 ### Invertibility
 
-Let $A$ be an $n \times n$ matrix over a commutative ring $R$. If $AB=I$ for some $B$, then taking determinants gives $\det A \cdot \det B=1$, so $\det A$ is a unit of $R$; conversely, if $\det A$ is a unit then the adjugate matrix $A^{\mathrm{adj}}$ satisfies $A\,A^{\mathrm{adj}}=\det(A)I$, so $A$ is invertible with $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$. Hence
+Let $A$ be an $n \times n$ matrix over a commutative ring $R$. If $AB=I$ for some $B$, then taking determinants gives $\det A \cdot \det B=1$, so $\det A$ is a unit of $R$; conversely, if $\det A$ is a unit then the adjugate matrix $A^{\mathrm{adg}}$ satisfies $A\,A^{\mathrm{adg}}=\det(A)I$, so $A$ is invertible with $A^{-1}=(\det A)^{-1}A^{\mathrm{adg}}$. Hence
 
 $$
 A \in \operatorname{GL}_n(R) \iff \det A \in R^{\times},
@@ -239,7 +239,7 @@ the sum running over the symmetric group $S_n$ and $\operatorname{sgn}$ being th
 
 **Proposition.** (i) $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, hence $\operatorname{tr}(P^{-1}AP)=\operatorname{tr}A$. (ii) $\det(AB)=\det A \det B$, hence $\det(P^{-1}AP)=\det A$. (iii) $A$ is invertible if and only if $\det A \neq 0$, and then $\det(A^{-1})=(\det A)^{-1}$. (iv) $\operatorname{rk}A$ is the largest $r$ for which some $r \times r$ minor of $A$ is nonzero.
 
-*Proof.* (i) Both sides are $\sum_{i,j}a_{ij}b_{ji}$. (ii) is proved in the article of this category on the special linear group, where the determinant is characterised as the unique alternating multilinear function of the columns normalised to $\det I=1$. (iii) If $AB=I$ then $\det A \det B=1$, so $\det A \neq 0$; conversely a nonzero determinant admits the adjugate formula $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$ with $A A^{\mathrm{adj}}=(\det A)I$. (iv) is the theorem on minors above.
+*Proof.* (i) Both sides are $\sum_{i,j}a_{ij}b_{ji}$. (ii) is proved in the article of this category on the special linear group, where the determinant is characterised as the unique alternating multilinear function of the columns normalised to $\det I=1$. (iii) If $AB=I$ then $\det A \det B=1$, so $\det A \neq 0$; conversely a nonzero determinant admits the adjugate formula $A^{-1}=(\det A)^{-1}A^{\mathrm{adg}}$ with $A A^{\mathrm{adg}}=(\det A)I$. (iv) is the theorem on minors above.
 
 Trace and determinant are therefore similarity invariants, unlike the individual matrix entries, and they are the first two coefficients of the characteristic polynomial $c_A(x)=\det(xI-A)=x^n-(\operatorname{tr}A)x^{n-1}+\cdots+(-1)^n\det A$. They are not complete invariants: the matrices $\operatorname{diag}(1,1)$ and $\operatorname{diag}(2,0)$ over $\mathbb{Q}$ have determinants $1$ and $0$ and are trivially different, while the Jordan block $\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$ and the scalar $\lambda I_2$ have the same trace and determinant and are not similar. Similarity classification requires the full characteristic and minimal polynomials and is not covered here and its applications.
 

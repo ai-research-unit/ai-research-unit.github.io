@@ -26,7 +26,7 @@ $$
 +b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by the cell $C_0$. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $C_\mu$ for the frame cells, $C_0=iL_{e_t}R_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$, so that $\{C_\mu,C_\nu\}=2g_{\mu\nu}\mathbf{1}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\mathbf{1}=L_{e_t}R_{e_t}$ the identity cell; the frame is written once in the appendix. The mode operators obey
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by the cell $iR_{\vec e_x}$. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the frame cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, so that $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}\mathbf{1}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\mathbf{1}=L_{e_t}R_{e_t}$ the identity cell; the frame is written once in the appendix. The mode operators obey
 
 $$
 \{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec k)\}
@@ -39,25 +39,25 @@ with all other anticommutators vanishing. The parent article's spinors satisfy
 $$
 \bar w^{(r)}w^{(s)}=2m\,\delta_{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta_{rs},
 \qquad
-\sum_{r=1}^2 w^{(r)}\bar w^{(r)}=C_{\mu} p_{\mu}+m,\qquad
-\sum_{r=1}^2 v^{(r)}\bar v^{(r)}=C_{\nu} p_{\nu}-m .
+\sum_{r=1}^2 w^{(r)}\bar w^{(r)}=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m,\qquad
+\sum_{r=1}^2 v^{(r)}\bar v^{(r)}=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m .
 $$
 
 Contracting the mode operators against the vacuum gives the two elementary two-point functions. The **positive-frequency** piece is
 
 $$
 W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(C_{\mu} p_{\mu}+m\big)\,\exp(-ip\cdot(x-y)),
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m\big)\,\exp(-ip\cdot(x-y)),
 $$
 
 in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
 W_-(x-y)\;=\;\langle 0|\,\bar{\psi^{\mathrm{fop}}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(C_{\mu} p_{\mu}-m\big)\,\exp(+ip\cdot(x-y)),
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m\big)\,\exp(+ip\cdot(x-y)),
 $$
 
-in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $C_{\mu} p_{\mu}$ is **on shell**, $C_{\mu} p_{\mu}=C_0E_{\vec p}-\sum_k C_k p_k$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
+in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu$ is **on shell**, $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu=iR_{\vec e_x}E_{\vec p}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
 
 Time ordering for a fermion field carries the anticommutation sign:
 
@@ -73,7 +73,7 @@ The two $\theta$ functions can be represented by a single four-dimensional integ
 
 $$
 \boxed{\;S_F(x-y)\;=\;i\int\!\frac{d^4p}{(2\pi)^4}\;
-\exp(-ip\cdot(x-y))\;\frac{C_{\mu} p_{\mu}+m}{p^2-m^2+i\epsilon},
+\exp(-ip\cdot(x-y))\;\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m}{p^2-m^2+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -96,22 +96,22 @@ The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}
 The residues are
 
 $$
-\operatorname*{Res}_{p_0=+E_{\vec p}}\frac{C_{\rho} p_{\rho}+m}{(p_0)^2-E_{\vec p}^2}
-=\frac{C_{\mu} (p_{+})_{\mu}+m}{2E_{\vec p}},
+\operatorname*{Res}_{p_0=+E_{\vec p}}\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m}{(p_0)^2-E_{\vec p}^2}
+=\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}(p_+)_\mu+m}{2E_{\vec p}},
 \qquad
-\operatorname*{Res}_{p_0=-E_{\vec p}}\frac{C_{\sigma} p_{\sigma}+m}{(p_0)^2-E_{\vec p}^2}
-=\frac{C_{\nu} (p_{-})_{\nu}+m}{-2E_{\vec p}},
+\operatorname*{Res}_{p_0=-E_{\vec p}}\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m}{(p_0)^2-E_{\vec p}^2}
+=\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}(p_-)_\mu+m}{-2E_{\vec p}},
 $$
 
-with $C_{\mu} (p_{+})_{\mu}=C_0E_{\vec p}-\sum_k C_k p_k$ and $C_{\mu} (p_{-})_{\mu}=-C_0E_{\vec p}-\sum_k C_k p_k$. Using the identity
+with $iL_{e_\mu}R_{e_{\nu(\mu)}}(p_+)_\mu=iR_{\vec e_x}E_{\vec p}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$ and $iL_{e_\mu}R_{e_{\nu(\mu)}}(p_-)_\mu=-iR_{\vec e_x}E_{\vec p}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$. Using the identity
 
 $$
-C_{\mu} (p_{-})_{\mu}+m=-\big(C_{\nu} (p_{+})_{\nu}(-\vec p)-m\big),
+iL_{e_\mu}R_{e_{\nu(\mu)}}(p_-)_\mu+m=-\big(iL_{e_\mu}R_{e_{\nu(\mu)}}(p_+)_\mu(-\vec p)-m\big),
 $$
 
 and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x_0-y_0>0$ and $-W_-$ for $x_0-y_0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
 
-**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(C_{\mu} p_{\mu}-m)w^{(r)}=0$ and $(C_{\mu} p_{\mu}+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=C_{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=C_{\mu} p_{\mu}-m$ gives a maximum deviation of $4.4\times10^{-16}$; the cell identity $(C_{\mu} p_{\mu}-m)(C_{\nu} p_{\nu}+m)=(p^2-m^2)\mathbf{1}$, which uses $(C_\mu p_\mu)^2=p^2\mathbf{1}$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p_0$ integral along the real axis reproduces the residue expressions for both signs of $x_0-y_0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x_0-y_0)W_+-\theta(y_0-x_0)W_-$.
+**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m)w^{(r)}=0$ and $(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m$ and $\sum_r v^{(r)}\bar v^{(r)}=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m$ gives a maximum deviation of $4.4\times10^{-16}$; the cell identity $(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m)(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)=(p^2-m^2)\mathbf{1}$, which uses $(iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu)^2=p^2\mathbf{1}$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p_0$ integral along the real axis reproduces the residue expressions for both signs of $x_0-y_0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x_0-y_0)W_+-\theta(y_0-x_0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -142,8 +142,8 @@ $$
 whose two frequency branches $E=\pm E_{\vec p}$ are the two poles above. Inverting the relation gives the biquaternion form of the momentum-space amplitude,
 
 $$
-\boxed{\;S_F(p)\;=\;\frac{i(C_{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}
-\;=\;-\,\frac{i(C_{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
+\boxed{\;S_F(p)\;=\;\frac{i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)}{p^2-m^2+i\epsilon}
+\;=\;-\,\frac{i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
 $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde{P})=\tilde{P}\tilde{P}^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
@@ -162,7 +162,7 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 
 ## The Propagator as a Distribution
 
-It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(C_{\mu} p_{\mu}+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $C_{\mu} p_{\mu}-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator on the spinor-module representative of the chiral pair, with $\mathbb{D}$ the pair operator of the conventions article satisfies
+It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator on the spinor-module representative of the chiral pair, with $\mathbb{D}$ the pair operator of the conventions article satisfies
 
 $$
 (\mathbb{D}-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y),
@@ -201,7 +201,7 @@ The honest summary of the algebra's role is the one we gave in the introduction.
 The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$. Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{C_{\mu} p_{\mu}+m}{p^2-m^2+i\epsilon}.
+S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m}{p^2-m^2+i\epsilon}.
 $$
 
 The $p_0$ integral has poles at $p_0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
@@ -209,7 +209,7 @@ The $p_0$ integral has poles at $p_0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the
 Writing the wave biquaternion $\tilde{P}=iE\,e_t+\vec p$, so that $\tilde{P}\tilde{P}^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
-S_F(p)=-\frac{i(C_{\mu} p_{\mu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
 $$
 
 and the prescription is a deformation of the mass-shell scalar. The deformation $-i\epsilon\,e_t$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and along the $ict'$ axis of the material sector $\mathbb{M}_-$. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the deformation but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
@@ -227,13 +227,13 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
-| $\psi$, $\bar\psi=\psi^\dagger C_0$ | Spinor-module representative and its adjoint |
-| $C_\mu$, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $\mathbf{1}=L_{e_t}R_{e_t}$ | Frame cells, $C_0=iL_{e_t}R_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$; the identity cell; and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $\psi$, $\bar\psi=\psi^\dagger iR_{\vec e_x}$ | Spinor-module representative and its adjoint |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $\mathbf{1}=L_{e_t}R_{e_t}$ | The frame cell, the two multiplications, the identity cell, and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict'$ gradient |
-| $p_\mu=(E,\vec p)$, $C_{\mu} p_{\mu}=C_0E-\sum_k C_k p_k$ | Four-momentum and its contraction |
+| $p_\mu=(E,\vec p)$, $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu=iR_{\vec e_x}E-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$ | Four-momentum and its contraction |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
-| $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=C_{\mu} p_{\mu}+m$, $\sum_r v\bar v=C_{\mu} p_{\mu}-m$ | Parent article's normalizations and spin sums |
+| $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m$, $\sum_r v\bar v=iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
 | $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
 | $\tilde{P}=iE\,e_t+\vec p$ | Wave biquaternion, $\tilde{P}\tilde{P}^{\natural}=-p^2$ |

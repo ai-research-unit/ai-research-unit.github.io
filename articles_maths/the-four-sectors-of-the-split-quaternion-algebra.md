@@ -67,7 +67,7 @@ On $\Sigma_{10}$ the norm is $t^2-S=t^2$, so the element is a unit exactly when 
 
 $$
 \Sigma_{10}^{\mathrm s}=\{q:t\neq0,\ \vec v=0\},\qquad
-\Sigma_{10}^{\mathrm{def}}=\{q:t\neq0,\ \vec v\neq0,\ S=0\}.
+\Sigma_{10}^{\mathrm{dfc}}=\{q:t\neq0,\ \vec v\neq0,\ S=0\}.
 $$
 
 The first is the punctured scalar line. On it $q=t$ and $L_q=t\,\mathrm{id}$; the minimal polynomial is $\lambda-t$, the Jordan type is $(1,1,1,1)$, and the element is semisimple. It has dimension $1$.
@@ -150,7 +150,7 @@ The sector $\Sigma_{01}$ consists of zero divisors with simple spectrum $\{0,2t\
 | $\mathcal C=\{S=0\}$ | the spectral cone |
 | $\Sigma_{ij}$ | the sector with norm index $i$ and spectral index $j$ |
 | $\Sigma_{10}^{\mathrm s}$ | the scalar part of $\Sigma_{10}$ |
-| $\Sigma_{10}^{\mathrm{def}}$ | the defective part of $\Sigma_{10}$ |
+| $\Sigma_{10}^{\mathrm{dfc}}$ | the defective part of $\Sigma_{10}$ |
 | $N_V=\{q_x^2=q_y^2+q_z^2\}$ | the nilpotent cone, equal to $\Sigma_{00}$ |
 
 ## Further Reading

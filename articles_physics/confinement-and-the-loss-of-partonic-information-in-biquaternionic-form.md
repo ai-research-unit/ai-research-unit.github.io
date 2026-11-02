@@ -41,7 +41,7 @@ Two asymptotic behaviours are possible for a large loop.
 
 - A **perimeter law**,
 $$
-\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{per}}\,\mathrm{perim}(C)),
+\langle W(C)\rangle \sim \exp(-\mu^{\mathrm{prm}}\,\mathrm{perim}(C)),
 $$
 is the behaviour of a theory in which the flux between two sources can spread: the cost is proportional to the length of the loop, and the sources are screened.
 
@@ -72,7 +72,7 @@ The definition reads the decay of the loop's modulus, so it is the **Euclidean**
 Then the two laws read
 
 $$
-I(C) \simeq \mu_{\mathrm{per}}\,\mathrm{perim}(C)
+I(C) \simeq \mu^{\mathrm{prm}}\,\mathrm{perim}(C)
 \qquad\text{or}\qquad
 I(C) \simeq \sigma\,\mathrm{area}(C),
 $$
@@ -82,7 +82,7 @@ and the two are distinguished not by the size of $I$ but by its **scaling**: the
 $$
 I(\Box_{L\times T}) \simeq
 \begin{cases}
-2\mu_{\mathrm{per}}(L+T), & \text{perimeter},\\[2pt]
+2\mu^{\mathrm{prm}}(L+T), & \text{perimeter},\\[2pt]
 \sigma\,LT, & \text{area},
 \end{cases}
 $$
@@ -93,12 +93,12 @@ $$
 \lim_{T\to\infty}\frac{I(\Box_{L\times T})}{T}
 =
 \begin{cases}
-2\mu_{\mathrm{per}}, & \text{perimeter},\\[2pt]
+2\mu^{\mathrm{prm}}, & \text{perimeter},\\[2pt]
 \sigma L, & \text{area}.
 \end{cases}
 $$
 
-With the area law at unit string tension, $I = LT$, the ratio $I/T$ took the values $1.000$, $2.000$, $4.000$ at $L = 1,2,4$ for both $T = 50$ and $T = 100$, reproducing $\sigma L$ exactly. With the perimeter law at $\mu_{\mathrm{per}} = 0.5$ per unit length, $I = 0.5\cdot2(L+T)$, the ratio took the values $1.020, 1.040, 1.080$ at $T = 50$ and $1.010, 1.020, 1.040$ at $T = 100$, approaching the constant $2\mu_{\mathrm{per}} = 1$ as $T$ grows and the $L/T$ correction vanishes. The two behaviours are therefore distinguishable by a single number extracted from the large-$T$ limit of the loop, and that number is either constant in $L$ or proportional to $L$.
+With the area law at unit string tension, $I = LT$, the ratio $I/T$ took the values $1.000$, $2.000$, $4.000$ at $L = 1,2,4$ for both $T = 50$ and $T = 100$, reproducing $\sigma L$ exactly. With the perimeter law at $\mu^{\mathrm{prm}} = 0.5$ per unit length, $I = 0.5\cdot2(L+T)$, the ratio took the values $1.020, 1.040, 1.080$ at $T = 50$ and $1.010, 1.020, 1.040$ at $T = 100$, approaching the constant $2\mu^{\mathrm{prm}} = 1$ as $T$ grows and the $L/T$ correction vanishes. The two behaviours are therefore distinguishable by a single number extracted from the large-$T$ limit of the loop, and that number is either constant in $L$ or proportional to $L$.
 
 Read information-theoretically, the area law says that the cost of maintaining the configuration is proportional to the **area swept** by the separation, not to its boundary. The flux configuration is non-local: the tube stores an amount of information per unit length that does not decay with separation, and the string tension $\sigma$ is the information cost per unit of separation per unit of time. A perimeter law, by contrast, is the behaviour of a short-ranged correlation: the cost is a boundary term and the sources are screened. Confinement is thus the statement that the loop's information cost is **extensive in the enclosed region rather than in its boundary**, and it is the signature that the coloured flux cannot be spread into the vacuum.
 
@@ -400,9 +400,9 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $T_a = ie_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
 | $U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; order parameter |
-| $\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{per}}\,\mathrm{perim})$ | Perimeter law (screening) |
+| $\langle W(C)\rangle \sim \exp(-\mu^{\mathrm{prm}}\,\mathrm{perim})$ | Perimeter law (screening) |
 | $\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area})$ | Area law (confinement) |
-| $\mu_{\mathrm{per}}$ | Perimeter coefficient |
+| $\mu^{\mathrm{prm}}$ | Perimeter coefficient |
 | $\sigma$ | String tension |
 | $\Box_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
