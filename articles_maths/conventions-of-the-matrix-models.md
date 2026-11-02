@@ -86,21 +86,21 @@ $$
 $$
 So the left copy is the set of matrices $I_2\otimes A$ and the right copy the set $B\otimes I_2$: in the $4\times4$ matrix of an element the four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$ on the left, and $M_{11}I_2$, $M_{21}I_2$, $M_{12}I_2$, $M_{22}I_2$ on the right, where $M_{ij}$ are the entries of $\mathsf{M}_2(\tilde Q)$. The regular matrix is the $2\times2$ matrix taken twice.
 
-**The four left matrices.** Write $L_\mu=\mathsf M_4^{L}(e_\mu)$ for the four units in the canonical frame. They are
+**The four left matrices.** Each is the image of a unit under the left matrix map, in the canonical frame,
 $$
-L_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_x=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_t=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_x=\mathsf{M}_4^{L}(e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+L_y=\mathsf{M}_4^{L}(e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_z=\mathsf{M}_4^{L}(e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
 each equal to $I_2\otimes\mathsf M_2(\vec e_k)$, with $\mathsf M_2(\vec e_k)=-i\sigma_k$. A general element is their linear combination,
 $$
 \mathsf M_4^{L}(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z=I_2\otimes\mathsf M_2(\tilde Q).
 $$
 
-**The four right matrices.** Write $R_\nu=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
+**The four right matrices.** Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
@@ -117,12 +117,12 @@ R_\nu=\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}.
 $$
 Explicitly,
 $$
-R_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-R_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_t=\mathsf{M}_4^{R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_x=\mathsf{M}_4^{R}(e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+R_y=\mathsf{M}_4^{R}(e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_z=\mathsf{M}_4^{R}(e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
 $$
 and a general element is $\mathsf M_4^{R}(\tilde Q)=Q_tR_t+Q_xR_x+Q_yR_y+Q_zR_z=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.
 
@@ -223,15 +223,15 @@ $$
 $$
 The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three presentations of the same complex algebra, related by a change of frame; a change of frame is a change of basis, not a change of object.
 
-**The five cells of the frame.** Write
+**The five cells of the frame.** The five generators are five cells,
 $$
 \boxed{\;\mathsf C_0=iR_x=iL_tR_x,\qquad
-\mathsf C_1=iL_xR_y=iL_xR_y,\qquad
-\mathsf C_2=iL_yR_y=iL_yR_y,\qquad
-\mathsf C_3=iL_zR_y=iL_zR_y,\qquad
+\mathsf C_1=iL_xR_y,\qquad
+\mathsf C_2=iL_yR_y,\qquad
+\mathsf C_3=iL_zR_y,\qquad
 \mathsf C_5=-iR_z=-iL_tR_z\;}
 $$
-Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
+Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For $\mathsf C_0$ and $\mathsf C_5$ the left factor is $e_t$, so the cell collapses to a single right multiplication and the two spellings are the same operator. In the canonical frame the five are monomial matrices, written out in the appendix together with the Pauli evaluation.
 
 **The Clifford relations.** They satisfy
 $$
@@ -318,9 +318,9 @@ The gammas are the five-cell frame of the body written as matrices; the body wri
 **The five gammas.** The five Dirac matrices are two-sided operators of the frame,
 $$
 \boxed{\;\gamma_0=iR_x=iL_tR_x,\qquad
-\gamma_1=iL_xR_y=iL_xR_y,\qquad
-\gamma_2=iL_yR_y=iL_yR_y,\qquad
-\gamma_3=iL_zR_y=iL_zR_y,\qquad
+\gamma_1=iL_xR_y,\qquad
+\gamma_2=iL_yR_y,\qquad
+\gamma_3=iL_zR_y,\qquad
 \gamma_5=-iR_z=-iL_tR_z\;}
 $$
 In the canonical frame their matrices are
